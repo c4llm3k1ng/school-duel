@@ -247,10 +247,21 @@
   .divider-or { text-align:center; color:var(--muted); font-size:.82rem; padding:12px 0; position:relative; }
   .divider-or::before, .divider-or::after { content:''; position:absolute; top:50%; width:42%; height:1px; background:var(--border); }
   .divider-or::before { left:0; } .divider-or::after { right:0; }
+
+  /* FLAG BUTTON */
+  .flag-btn { padding:5px 10px; border-radius:8px; border:1px solid var(--border); background:var(--surface2); color:var(--muted); font-size:.75rem; cursor:pointer; transition:all .15s; white-space:nowrap; }
+  .flag-btn:hover { border-color:var(--gold); color:var(--gold); }
+  .flag-btn.flagged { border-color:var(--gold); background:rgba(245,200,66,.12); color:var(--gold); }
+
+  /* REPORT MODAL */
+  .report-q { background:var(--surface2); border-radius:10px; padding:13px; font-size:.88rem; margin-bottom:14px; line-height:1.5; color:var(--text); }
+  .report-counter { font-size:.75rem; color:var(--muted); font-family:'Space Mono',monospace; margin-bottom:10px; }
 </style>
 <!-- Firebase Realtime Database SDK (compat) -->
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+<!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 <div class="app">
@@ -292,6 +303,54 @@
   </div>
 </div>
 
+<!-- ═══════════════════════════ SUPABASE CONFIG MODAL ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-supabase">
+  <div class="modal">
+    <h2>🟢 Supabase einrichten</h2>
+    <p>Für "Frage beanstanden" — kostenloser Supabase-Account nötig.</p>
+    <div class="form-field">
+      <label>Project URL</label>
+      <input class="form-input" id="sb-url" placeholder="https://xxxx.supabase.co">
+    </div>
+    <div class="form-field" style="margin-top:10px;">
+      <label>Anon Key</label>
+      <input class="form-input" id="sb-key" type="password" placeholder="eyJhbGci…">
+    </div>
+    <p class="modal-note" style="margin-top:12px;">
+      <strong>Setup:</strong><br>
+      1. <strong>supabase.com</strong> → New project<br>
+      2. SQL Editor → ausführen:<br>
+      <code style="font-size:.72rem;display:block;margin-top:4px;padding:6px;background:var(--surface2);border-radius:6px;">create table reports (id bigserial primary key, question text, problem text, correction text, subject text, grade text, created_at timestamptz default now());<br>alter table reports enable row level security;<br>create policy "allow insert" on reports for insert with check (true);</code><br>
+      3. Settings → API → URL und anon key kopieren
+    </p>
+    <div class="form-row" style="margin-top:16px;">
+      <button class="btn btn-secondary" onclick="closeSupabaseModal()">Abbrechen</button>
+      <button class="btn btn-primary" onclick="saveSupabaseModal()">Speichern ✓</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ REPORT MODAL ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-report">
+  <div class="modal">
+    <h2>⚑ Frage beanstanden</h2>
+    <div class="report-counter" id="report-counter"></div>
+    <div class="report-q" id="report-q-text"></div>
+    <div class="form-field">
+      <label>Was ist das Problem?</label>
+      <textarea class="form-input" id="report-problem" rows="2" placeholder="z.B. Antwort ist falsch, Frage ist unklar…"></textarea>
+    </div>
+    <div class="form-field" style="margin-top:10px;">
+      <label>Korrekturvorschlag (optional)</label>
+      <textarea class="form-input" id="report-correction" rows="2" placeholder="So sollte es richtig lauten…"></textarea>
+    </div>
+    <div class="form-row" style="margin-top:16px;">
+      <button class="btn btn-secondary" onclick="skipReport()">Überspringen</button>
+      <button class="btn btn-primary" onclick="submitReport()">Senden ✓</button>
+    </div>
+  </div>
+</div>
+
 <!-- ═══════════════════════════ FIREBASE CONFIG MODAL ═══════════════════════════ -->
 <div class="modal-backdrop hidden" id="modal-firebase">
   <div class="modal">
@@ -327,7 +386,8 @@
 <div class="screen active" id="screen-home">
   <div class="logo large"><span class="s">School</span> <span class="d">Duel</span></div>
   <div class="tagline">Lerne spielend – fordere dein Wissen heraus</div>
-  <div style="text-align:right;margin-bottom:8px;">
+  <div style="text-align:right;margin-bottom:8px;display:flex;gap:8px;justify-content:flex-end;">
+    <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="openSupabaseModal()">🟢 Supabase</button>
     <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="openApiKeyModal()">🔑 API-Key</button>
   </div>
 
@@ -645,6 +705,7 @@
 
   <div class="quiz-header">
     <div class="q-meta">Frage <strong id="q-current">1</strong> / <span id="q-total">8</span></div>
+    <button class="flag-btn" id="flag-btn" onclick="flagCurrentQuestion()">⚑ Beanstanden</button>
     <div class="timer-ring">
       <svg width="52" height="52" viewBox="0 0 52 52">
         <circle class="timer-track" cx="26" cy="26" r="22"/>
@@ -1022,6 +1083,7 @@ function stopLoadingMessages() {
 }
 
 async function startQuiz() {
+  resetFlagBtn();
   showScreen('screen-loading');
   startLoadingMessages();
   G.questions = []; G.current = 0;
@@ -1187,6 +1249,12 @@ function renderQuestion() {
   const q = G.questions[G.current];
   G.answered = false;
 
+  // Update flag button state for this question
+  const isFlagged = flaggedQuestions.some(f => f.idx === G.current);
+  const flagBtn = document.getElementById('flag-btn');
+  flagBtn.classList.toggle('flagged', isFlagged);
+  flagBtn.textContent = isFlagged ? '⚑ Vorgemerkt' : '⚑ Beanstanden';
+
   document.getElementById('q-current').textContent = G.current + 1;
   document.getElementById('progress-fill').style.width = (G.current / G.questions.length * 100) + '%';
   document.getElementById('q-topic').textContent = q.topic || 'Allgemein';
@@ -1283,9 +1351,9 @@ document.getElementById('next-btn').addEventListener('click', () => {
   if (G.mode === 'online') return;
   G.current++;
   if (G.current >= G.questions.length) {
-    if (G.mode === 'solo') { showSoloResult(); }
-    else if (G.currentPlayer === 1) { showHandover(2, false); }
-    else { showDuelResult(); }
+    if (G.mode === 'solo') { checkFlaggedThenShow(showSoloResult); }
+    else if (G.currentPlayer === 1) { checkFlaggedThenShow(() => showHandover(2, false)); }
+    else { checkFlaggedThenShow(showDuelResult); }
   } else { renderQuestion(); }
 });
 
@@ -1450,6 +1518,119 @@ function clearHistory() {
   localStorage.removeItem('sd_history');
   renderPracticeTab();
   showToast('Verlauf gelöscht', 'success');
+}
+
+// ═══════════════════════════════════════════════════════
+// SUPABASE
+// ═══════════════════════════════════════════════════════
+let sbClient = null;
+function getSupabaseConfig() { try { return JSON.parse(localStorage.getItem('sd_supabase')||'null'); } catch { return null; } }
+function initSupabase() {
+  if (sbClient) return true;
+  const cfg = getSupabaseConfig();
+  if (!cfg || !cfg.url || !cfg.key) return false;
+  try { sbClient = supabase.createClient(cfg.url, cfg.key); return true; } catch { return false; }
+}
+function openSupabaseModal() {
+  const cfg = getSupabaseConfig();
+  document.getElementById('sb-url').value = cfg?.url || '';
+  document.getElementById('sb-key').value = cfg?.key ? '••••••••••••' : '';
+  document.getElementById('modal-supabase').classList.remove('hidden');
+}
+function closeSupabaseModal() { document.getElementById('modal-supabase').classList.add('hidden'); }
+function saveSupabaseModal() {
+  const url = document.getElementById('sb-url').value.trim();
+  const key = document.getElementById('sb-key').value.trim();
+  if (!url || !key) { showToast('Bitte URL und Key eingeben', 'error'); return; }
+  const prev = getSupabaseConfig();
+  localStorage.setItem('sd_supabase', JSON.stringify({
+    url, key: key === '••••••••••••' ? prev?.key : key
+  }));
+  sbClient = null;
+  closeSupabaseModal();
+  showToast('Supabase konfiguriert ✓', 'success');
+}
+document.getElementById('modal-supabase').addEventListener('click', e => {
+  if (e.target === document.getElementById('modal-supabase')) closeSupabaseModal();
+});
+
+// ═══════════════════════════════════════════════════════
+// FLAG QUESTION
+// ═══════════════════════════════════════════════════════
+let flaggedQuestions = [];
+let pendingReports   = [];
+let reportResultFn   = null;
+
+function flagCurrentQuestion() {
+  const idx = G.current;
+  const already = flaggedQuestions.find(f => f.idx === idx);
+  if (already) {
+    flaggedQuestions = flaggedQuestions.filter(f => f.idx !== idx);
+    document.getElementById('flag-btn').classList.remove('flagged');
+    document.getElementById('flag-btn').textContent = '⚑ Beanstanden';
+    showToast('Markierung entfernt', '');
+  } else {
+    flaggedQuestions.push({ idx, q: G.questions[idx] });
+    document.getElementById('flag-btn').classList.add('flagged');
+    document.getElementById('flag-btn').textContent = '⚑ Vorgemerkt';
+    showToast('Frage vorgemerkt ✓', 'success');
+  }
+}
+
+function resetFlagBtn() {
+  flaggedQuestions = [];
+  const btn = document.getElementById('flag-btn');
+  if (btn) { btn.classList.remove('flagged'); btn.textContent = '⚑ Beanstanden'; }
+}
+
+function checkFlaggedThenShow(resultFn) {
+  if (!flaggedQuestions.length) { resultFn(); return; }
+  pendingReports = [...flaggedQuestions];
+  reportResultFn = resultFn;
+  showNextReport();
+}
+
+function showNextReport() {
+  if (!pendingReports.length) { reportResultFn && reportResultFn(); return; }
+  const { idx, q } = pendingReports[0];
+  const total = flaggedQuestions.length;
+  const done  = total - pendingReports.length;
+  document.getElementById('report-counter').textContent = 'Beanstandung ' + (done+1) + ' von ' + total;
+  document.getElementById('report-q-text').textContent = q.question;
+  document.getElementById('report-problem').value = '';
+  document.getElementById('report-correction').value = '';
+  document.getElementById('modal-report').classList.remove('hidden');
+}
+
+function skipReport() {
+  document.getElementById('modal-report').classList.add('hidden');
+  pendingReports.shift();
+  showNextReport();
+}
+
+async function submitReport() {
+  const problem    = document.getElementById('report-problem').value.trim();
+  const correction = document.getElementById('report-correction').value.trim();
+  if (!problem) { showToast('Bitte das Problem beschreiben', 'error'); return; }
+  const { q } = pendingReports[0];
+  document.getElementById('modal-report').classList.add('hidden');
+
+  if (initSupabase()) {
+    try {
+      await sbClient.from('reports').insert({
+        question: q.question,
+        problem,
+        correction,
+        subject: G.subject || G.dSubject || '',
+        grade:   String(G.grade || G.dGrade || '')
+      });
+      showToast('Bericht gesendet ✓', 'success');
+    } catch(e) { showToast('Supabase-Fehler: ' + e.message, 'error'); }
+  } else {
+    showToast('Supabase nicht konfiguriert — Bericht nicht gespeichert', 'error');
+  }
+  pendingReports.shift();
+  showNextReport();
 }
 
 // ── REVIEW ──
@@ -1735,9 +1916,8 @@ let onlineRoomCode = null;
 let onlineRole = null;          // 'host' | 'guest'
 let onlineRoomRef = null;
 let onlineLastRoom = null;
-let onlineAdvancing = false;
-let onlineLastQRendered = -1;
 let onlineMyAnswers = [];
+let onlineWaitingForOpponent = false;
 
 function getFirebaseConfig() {
   try { return JSON.parse(localStorage.getItem('sd_firebase') || 'null'); } catch { return null; }
@@ -1831,20 +2011,19 @@ async function createOnlineRoom() {
   onlineRoomCode = code;
   onlineRole = 'host';
   G.p1Name = myName;
-  onlineAdvancing = false;
-  onlineLastQRendered = -1;
   onlineMyAnswers = [];
+  onlineWaitingForOpponent = false;
 
   try {
     await fbDB.ref('rooms/' + code).set({
       status: 'waiting',
       hostName: myName, guestName: '',
-      grade: G.dGrade, subject: G.dSubject, difficulty: G.dDifficulty,
-      source: G.dSource, catalogId: G.dCatalogId || '',
-      questions: [], currentQuestion: 0,
-      hostAns: -99, guestAns: -99,
-      hostScore: {correct:0,points:0,timeBonus:0},
-      guestScore: {correct:0,points:0,timeBonus:0},
+      grade: G.dGrade, subject: G.dSubject, subcategory: G.dSubcategory || '',
+      difficulty: G.dDifficulty, source: G.dSource, catalogId: G.dCatalogId || '',
+      questions: [],
+      hostQ: 0, guestQ: 0, hostDone: false, guestDone: false,
+      hostScore: {correct:0,points:0},
+      guestScore: {correct:0,points:0},
       createdAt: firebase.database.ServerValue.TIMESTAMP
     });
     showOnlineWaitScreen();
@@ -1872,8 +2051,8 @@ async function joinOnlineRoom() {
     onlineRole = 'guest';
     G.p2Name = myName;
     G.p1Name = room.hostName;
-    onlineAdvancing = false;
-    onlineLastQRendered = -1;
+    onlineMyAnswers = [];
+    onlineWaitingForOpponent = false;
     await fbDB.ref('rooms/' + code + '/guestName').set(myName);
     showOnlineWaitScreen();
     startRoomListener();
@@ -1928,54 +2107,42 @@ function handleRoomUpdate(room) {
   }
 
   if (room.status === 'loading' && activeId !== 'screen-loading') {
-    showScreen('screen-loading');
-    startLoadingMessages();
-    return;
+    showScreen('screen-loading'); startLoadingMessages(); return;
   }
 
   if (room.status === 'playing') {
     if (activeId === 'screen-loading') stopLoadingMessages();
     if (activeId === 'screen-loading' || activeId === 'screen-online-wait') {
-      // First entry into quiz
       G.questions = room.questions;
       G.p1Name = room.hostName; G.p2Name = room.guestName;
       G.p1 = {...room.hostScore}; G.p2 = {...room.guestScore};
-      G.current = room.currentQuestion;
-      G.mode = 'online';
+      G.current = 0; G.mode = 'online';
       document.getElementById('q-total').textContent = G.questions.length;
-      setupQuizUI();
-      showScreen('screen-quiz');
-      renderOnlineQuestion(room);
-      return;
+      setupQuizUI(); showScreen('screen-quiz');
+      renderOnlineQuestion(room); return;
     }
     if (activeId === 'screen-quiz') {
-      // Live score update
-      document.getElementById('db-p1-score').textContent = room.hostScore.points;
-      document.getElementById('db-p2-score').textContent = room.guestScore.points;
+      // Live score: only own score visible
       G.p1 = {...room.hostScore}; G.p2 = {...room.guestScore};
-
-      // Opponent answered?
-      const oppAns = onlineRole === 'host' ? room.guestAns : room.hostAns;
+      if (onlineRole === 'host') {
+        document.getElementById('db-p1-score').textContent = room.hostScore.points;
+      } else {
+        document.getElementById('db-p2-score').textContent = room.guestScore.points;
+      }
+      // Update opponent progress indicator
+      const oppQ    = onlineRole === 'host' ? room.guestQ    : room.hostQ;
+      const oppDone = onlineRole === 'host' ? room.guestDone : room.hostDone;
       const oppName = onlineRole === 'host' ? room.guestName : room.hostName;
-      const oppEl = document.getElementById('opp-indicator');
-      if (oppEl && oppAns !== -99) {
-        oppEl.textContent = '✓ ' + oppName + ' hat geantwortet';
-        oppEl.className = 'opp-indicator done';
+      const oppEl   = document.getElementById('opp-indicator');
+      if (oppEl) {
+        if (oppDone) { oppEl.textContent = '✓ ' + oppName + ' fertig!'; oppEl.className = 'opp-indicator done'; }
+        else { oppEl.textContent = oppName + ': Frage ' + (oppQ + 1) + ' / ' + G.questions.length; oppEl.className = 'opp-indicator thinking'; }
       }
-
-      // Host advances question when both answered
-      if (!onlineAdvancing && onlineRole === 'host' && room.hostAns !== -99 && room.guestAns !== -99) {
-        onlineAdvancing = true;
-        setTimeout(() => advanceOnlineQuestion(room), 1200);
-      }
-
-      // Question advanced?
-      if (room.currentQuestion !== onlineLastQRendered) {
-        if (room.currentQuestion < G.questions.length) {
-          G.current = room.currentQuestion;
-          onlineAdvancing = false;
-          renderOnlineQuestion(room);
-        }
+      // Both done → show results
+      if (onlineWaitingForOpponent && room.hostDone && room.guestDone) {
+        clearInterval(G.timerInterval);
+        G.p1Name = room.hostName; G.p2Name = room.guestName;
+        checkFlaggedThenShow(showDuelResult);
       }
     }
     return;
@@ -1985,21 +2152,17 @@ function handleRoomUpdate(room) {
     clearInterval(G.timerInterval);
     G.p1 = {...room.hostScore}; G.p2 = {...room.guestScore};
     G.p1Name = room.hostName; G.p2Name = room.guestName;
-    showDuelResult();
+    checkFlaggedThenShow(showDuelResult);
   }
 }
 
 // ── render question (online) ──
 function renderOnlineQuestion(room) {
-  onlineLastQRendered = room.currentQuestion;
   G.answered = false;
-
-  // Reset my answer sentinel in Firebase
-  const myAnsField = onlineRole === 'host' ? 'hostAns' : 'guestAns';
-  fbDB.ref('rooms/' + onlineRoomCode + '/' + myAnsField).set(-99).catch(()=>{});
-
-  const q = G.questions[G.current];
+  onlineWaitingForOpponent = false;
+  const q       = G.questions[G.current];
   const oppName = onlineRole === 'host' ? room.guestName : room.hostName;
+  const oppQ    = onlineRole === 'host' ? (room.guestQ || 0) : (room.hostQ || 0);
 
   document.getElementById('q-current').textContent = G.current + 1;
   document.getElementById('progress-fill').style.width = (G.current / G.questions.length * 100) + '%';
@@ -2009,22 +2172,33 @@ function renderOnlineQuestion(room) {
   document.getElementById('next-btn').className = 'next-btn';
   document.getElementById('points-flash').textContent = '';
 
+  // Flag button
+  const isFlagged = flaggedQuestions.some(f => f.idx === G.current);
+  const flagBtn = document.getElementById('flag-btn');
+  flagBtn.classList.toggle('flagged', isFlagged);
+  flagBtn.textContent = isFlagged ? '⚑ Vorgemerkt' : '⚑ Beanstanden';
+
   document.getElementById('db-p1-name').textContent  = room.hostName;
   document.getElementById('db-p2-name').textContent  = room.guestName;
-  document.getElementById('db-p1-score').textContent = room.hostScore.points;
-  document.getElementById('db-p2-score').textContent = room.guestScore.points;
+  // Show own score, hide opponent's until end
+  if (onlineRole === 'host') {
+    document.getElementById('db-p1-score').textContent = room.hostScore.points;
+    document.getElementById('db-p2-score').textContent = '?';
+  } else {
+    document.getElementById('db-p1-score').textContent = '?';
+    document.getElementById('db-p2-score').textContent = room.guestScore.points;
+  }
   const badge = document.getElementById('duel-turn-badge');
-  badge.textContent = '🌐 Online-Duell · Frage ' + (G.current + 1);
+  badge.textContent = '🌐 Online-Duell';
   badge.className = 'duel-turn-badge p1';
 
-  // Opponent indicator
   let oppEl = document.getElementById('opp-indicator');
   if (!oppEl) {
     oppEl = document.createElement('div');
     oppEl.id = 'opp-indicator';
     document.getElementById('next-btn').insertAdjacentElement('afterend', oppEl);
   }
-  oppEl.textContent = oppName + ' denkt nach…';
+  oppEl.textContent = oppName + ': Frage ' + (oppQ + 1) + ' / ' + G.questions.length;
   oppEl.className = 'opp-indicator thinking';
 
   const container = document.getElementById('answers-container');
@@ -2044,13 +2218,12 @@ async function selectOnlineAnswer(idx) {
   if (G.answered) return;
   clearInterval(G.timerInterval);
   G.answered = true;
-
   const q    = G.questions[G.current];
   const btns = document.querySelectorAll('.answer-btn');
   btns.forEach(b => b.disabled = true);
 
   const isCorrect = idx === q.correct;
-  const gained = isCorrect ? 10 : 0;
+  const gained    = isCorrect ? 10 : 0;
   onlineMyAnswers.push(idx);
 
   if (isCorrect) {
@@ -2064,16 +2237,7 @@ async function selectOnlineAnswer(idx) {
     document.getElementById('points-flash').textContent = '';
   }
 
-  const myAnsField   = onlineRole === 'host' ? 'hostAns'   : 'guestAns';
-  const myScoreField = onlineRole === 'host' ? 'hostScore' : 'guestScore';
-  const prevScore    = onlineLastRoom ? onlineLastRoom[myScoreField] : {correct:0,points:0};
-  const newScore = {
-    correct: prevScore.correct + (isCorrect ? 1 : 0),
-    points:  prevScore.points + gained
-  };
-  try {
-    await fbDB.ref('rooms/' + onlineRoomCode).update({ [myAnsField]: idx, [myScoreField]: newScore });
-  } catch(e) { showToast('Verbindungsfehler', 'error'); }
+  await _advanceOnlinePlayer(isCorrect, gained);
 }
 
 // ── timeout (online) ──
@@ -2084,24 +2248,46 @@ async function onlineTimeOut() {
   document.querySelectorAll('.answer-btn').forEach(b => b.disabled = true);
   document.querySelectorAll('.answer-btn')[q.correct].classList.add('correct');
   showFeedback('timeout', '⏱ Zeit abgelaufen! ' + (q.explanation || ''));
-  const myAnsField = onlineRole === 'host' ? 'hostAns' : 'guestAns';
-  try { await fbDB.ref('rooms/' + onlineRoomCode + '/' + myAnsField).set(-1); } catch(e) {}
+  await _advanceOnlinePlayer(false, 0);
 }
 
-// ── advance question (host only) ──
-async function advanceOnlineQuestion(room) {
-  const next = room.currentQuestion + 1;
+// ── advance this player independently ──
+async function _advanceOnlinePlayer(isCorrect, gained) {
+  const myQField    = onlineRole === 'host' ? 'hostQ'     : 'guestQ';
+  const myDoneField = onlineRole === 'host' ? 'hostDone'  : 'guestDone';
+  const myScoreField= onlineRole === 'host' ? 'hostScore' : 'guestScore';
+  const prevScore   = onlineLastRoom ? onlineLastRoom[myScoreField] : {correct:0,points:0};
+  const newScore    = { correct: prevScore.correct + (isCorrect?1:0), points: prevScore.points + gained };
+  const nextQ       = G.current + 1;
+  const done        = nextQ >= G.questions.length;
+
   try {
-    if (next >= room.questions.length) {
-      await fbDB.ref('rooms/' + onlineRoomCode).update({
-        status: 'finished', currentQuestion: next, hostAns: -99, guestAns: -99
-      });
+    await fbDB.ref('rooms/' + onlineRoomCode).update({
+      [myScoreField]: newScore, [myQField]: nextQ, [myDoneField]: done
+    });
+  } catch(e) { showToast('Verbindungsfehler', 'error'); }
+
+  // Advance locally after feedback delay
+  setTimeout(() => {
+    if (done) {
+      // Finished — wait for opponent via Firebase listener
+      onlineWaitingForOpponent = true;
+      const oppDone = onlineRole === 'host' ? onlineLastRoom?.guestDone : onlineLastRoom?.hostDone;
+      if (oppDone) {
+        G.p1 = {...(onlineLastRoom?.hostScore || newScore)};
+        G.p2 = {...(onlineLastRoom?.guestScore || newScore)};
+        checkFlaggedThenShow(showDuelResult);
+      } else {
+        const oppEl = document.getElementById('opp-indicator');
+        if (oppEl) { oppEl.textContent = 'Warte auf Gegner…'; oppEl.className = 'opp-indicator thinking'; }
+        document.getElementById('feedback').className += ' show';
+        showToast('Fertig! Warte auf Gegner…', '');
+      }
     } else {
-      await fbDB.ref('rooms/' + onlineRoomCode).update({
-        currentQuestion: next, hostAns: -99, guestAns: -99
-      });
+      G.current = nextQ;
+      renderOnlineQuestion(onlineLastRoom || {hostName:G.p1Name,guestName:G.p2Name,hostScore:G.p1,guestScore:G.p2,hostQ:0,guestQ:0});
     }
-  } catch(e) { showToast('Verbindungsfehler beim Fortschritt', 'error'); }
+  }, 1500);
 }
 
 // ── start game (host) ──
@@ -2116,9 +2302,9 @@ async function startOnlineGame() {
     const questions = await loadQuestions();
     await fbDB.ref('rooms/' + onlineRoomCode).update({
       status: 'playing', questions,
-      currentQuestion: 0, hostAns: -99, guestAns: -99,
-      hostScore: {correct:0,points:0,timeBonus:0},
-      guestScore: {correct:0,points:0,timeBonus:0}
+      hostQ: 0, guestQ: 0, hostDone: false, guestDone: false,
+      hostScore: {correct:0,points:0},
+      guestScore: {correct:0,points:0}
     });
   } catch(e) {
     stopLoadingMessages();
