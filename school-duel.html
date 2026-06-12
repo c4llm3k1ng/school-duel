@@ -3365,7 +3365,7 @@ async function startQuiz() {
     renderQuestion();
   } catch(e) {
     stopLoadingMessages();
-    const isQuota = /quota|RESOURCE_EXHAUSTED|429|rate.?limit/i.test(e.message || '');
+    const isQuota = /quota|RESOURCE_EXHAUSTED|429|rate.?limit|no longer available|model.*not.*found|not.*available/i.test(e.message || '');
     const isNoKey = e.message === 'Kein API-Key gesetzt.';
     if (isQuota) {
       // AI quota hit → pick 8 random questions directly from in-memory arrays (no localStorage needed)
@@ -3481,7 +3481,7 @@ correct = 0-basierter Index der richtigen Antwort.`;
   let text;
   try {
   if (provider === 'gemini') {
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { maxOutputTokens: 4096 } })
@@ -3578,7 +3578,7 @@ Keine Erklärungen außerhalb des JSON!`;
 
   let text = '';
   if (provider === 'gemini' || !provider) {
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
       method:'POST', headers:{'Content-Type':'application/json'},
       body: JSON.stringify({ contents:[{parts:[{text: prompt}]}], generationConfig:{temperature:0.8,maxOutputTokens:3000} })
     });
