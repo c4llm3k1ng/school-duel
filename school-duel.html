@@ -248,6 +248,23 @@
   .divider-or::before, .divider-or::after { content:''; position:absolute; top:50%; width:42%; height:1px; background:var(--border); }
   .divider-or::before { left:0; } .divider-or::after { right:0; }
 
+  /* MULTI-PLAYER RANKING */
+  .rank-row { display:flex; align-items:center; gap:14px; padding:13px 0; border-bottom:1px solid var(--border); }
+  .rank-row:last-child { border-bottom:none; }
+  .rank-medal { font-size:1.5rem; width:32px; text-align:center; flex-shrink:0; }
+  .rank-name { flex:1; font-weight:700; font-size:.95rem; }
+  .rank-score { font-family:'Space Mono',monospace; font-size:1.2rem; font-weight:700; color:var(--accent); }
+  .rank-correct { font-size:.75rem; color:var(--muted); }
+  .rank-row.rank-1 .rank-score { color:var(--gold); }
+
+  /* MULTI-PLAYER DUEL BAR */
+  .duel-bar-multi { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+  .duel-player-card { flex:1; min-width:100px; background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:10px 12px; text-align:center; }
+  .duel-player-card.me { border-color:var(--accent); }
+  .dpc-name { font-size:.78rem; font-weight:700; margin-bottom:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .dpc-score { font-family:'Space Mono',monospace; font-size:1.1rem; font-weight:700; color:var(--accent); }
+  .dpc-q { font-size:.68rem; color:var(--muted); margin-top:2px; }
+
   /* FLAG BUTTON */
   .flag-btn { padding:5px 10px; border-radius:8px; border:1px solid var(--border); background:var(--surface2); color:var(--muted); font-size:.75rem; cursor:pointer; transition:all .15s; white-space:nowrap; }
   .flag-btn:hover { border-color:var(--gold); color:var(--gold); }
@@ -539,6 +556,12 @@
           <div class="label">Katalog wählen</div>
           <select id="online-catalog-select" class="form-input"></select>
         </div>
+        <div class="label">Anzahl Spieler</div>
+        <div class="pill-row" id="online-maxplayers-pills">
+          <div class="pill active" data-val="2">2 Spieler</div>
+          <div class="pill" data-val="3">3 Spieler</div>
+          <div class="pill" data-val="4">4 Spieler</div>
+        </div>
         <button class="btn btn-primary" id="online-create-btn" disabled onclick="createOnlineRoom()">Raum erstellen 🌐</button>
       </div>
 
@@ -769,6 +792,19 @@
   <button class="btn btn-primary" id="duel-replay-btn">Revanche ⚔️</button>
   <button class="btn btn-secondary" id="review-duel-btn">📖 Fragen überprüfen</button>
   <button class="btn btn-secondary" id="duel-home-btn">Zurück zur Auswahl</button>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: MULTI RESULT ═══════════════════════════ -->
+<div class="screen" id="screen-multi-result">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div class="card">
+    <div class="winner-banner" id="mr-banner"></div>
+    <div class="winner-sub" id="mr-sub" style="margin-bottom:16px;"></div>
+    <div id="mr-ranking"></div>
+    <div id="mr-stats" style="margin-top:12px;"></div>
+  </div>
+  <button class="btn btn-secondary" id="review-multi-btn">📖 Fragen überprüfen</button>
+  <button class="btn btn-secondary" id="mr-home-btn" style="margin-top:6px;">Zurück zur Auswahl</button>
 </div>
 
 <!-- ═══════════════════════════ SCREEN: REVIEW ═══════════════════════════ -->
@@ -1411,6 +1447,52 @@ function showDuelResult() {
   showScreen('screen-duel-result');
 }
 
+function showMultiResult(room) {
+  const players = room?.players || {};
+  const sorted = Object.values(players)
+    .filter(p => p.name)
+    .sort((a,b) => b.score.points - a.score.points || b.score.correct - a.score.correct);
+  const total = G.questions.length;
+  const medals = ['🥇','🥈','🥉','4️⃣'];
+  const winner = sorted[0];
+
+  document.getElementById('mr-banner').textContent = medals[0] + ' ' + winner.name + ' gewinnt!';
+  document.getElementById('mr-sub').textContent = winner.score.points + ' Punkte · ' + winner.score.correct + ' / ' + total + ' richtig';
+
+  let rankHtml = '';
+  sorted.forEach((p, i) => {
+    rankHtml += '<div class="rank-row' + (i === 0 ? ' rank-1' : '') + '">'
+      + '<div class="rank-medal">' + (medals[i] || (i+1)+'.') + '</div>'
+      + '<div class="rank-name">' + esc(p.name) + '</div>'
+      + '<div style="text-align:right;">'
+      + '<div class="rank-score">' + p.score.points + ' Pkt</div>'
+      + '<div class="rank-correct">' + p.score.correct + ' / ' + total + ' richtig</div>'
+      + '</div></div>';
+  });
+  document.getElementById('mr-ranking').innerHTML = rankHtml;
+  document.getElementById('mr-stats').innerHTML = row('Fragen gesamt', total);
+
+  // Save history for current player
+  const myPlayer = players[onlineMySlot];
+  if (myPlayer) {
+    saveGameToHistory(G.questions, onlineMyAnswers, room.subject || G.dSubject, room.subcategory || G.dSubcategory, room.grade || G.dGrade);
+  }
+
+  document.getElementById('review-multi-btn').onclick = () => {
+    reviewReturnScreen = 'screen-multi-result';
+    showReview(onlineMyAnswers, null, myPlayer?.name || '', null);
+  };
+  document.getElementById('mr-home-btn').onclick = () => {
+    if (onlineRoomRef) { onlineRoomRef.off('value'); onlineRoomRef = null; }
+    onlineRoomCode = null; onlineRole = null; onlineLastRoom = null; G.mode = 'solo';
+    // Clean up multi duel bar
+    const mbar = document.getElementById('multi-duel-bar');
+    if (mbar) mbar.remove();
+    showScreen('screen-home');
+  };
+  showScreen('screen-multi-result');
+}
+
 function row(label, val, color) {
   return '<div class="stat-row"><span>' + label + '</span><span class="val"' + (color ? ' style="color:' + color + '"' : '') + '>' + val + '</span></div>';
 }
@@ -1918,6 +2000,8 @@ let onlineRoomRef = null;
 let onlineLastRoom = null;
 let onlineMyAnswers = [];
 let onlineWaitingForOpponent = false;
+let onlineMySlot = 'p1';   // 'p1'|'p2'|'p3'|'p4'
+let onlineMaxPlayers = 2;
 
 function getFirebaseConfig() {
   try { return JSON.parse(localStorage.getItem('sd_firebase') || 'null'); } catch { return null; }
@@ -1945,6 +2029,15 @@ function switchDuelSubTab(tab) {
     document.getElementById('subtab-btn-' + t).classList.toggle('active', t === tab);
   });
 }
+
+// ── maxplayers pills ──
+document.querySelectorAll('#online-maxplayers-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#online-maxplayers-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    onlineMaxPlayers = parseInt(p.dataset.val);
+  });
+});
 
 // ── online pill setup ──
 setupPills('online-grade-pills',   'dGrade',      checkOnlineReady);
@@ -2010,20 +2103,24 @@ async function createOnlineRoom() {
   const code = generateRoomCode();
   onlineRoomCode = code;
   onlineRole = 'host';
+  onlineMySlot = 'p1';
+  onlineMaxPlayers = parseInt(document.querySelector('#online-maxplayers-pills .pill.active')?.dataset.val || '2');
   G.p1Name = myName;
   onlineMyAnswers = [];
   onlineWaitingForOpponent = false;
 
+  const players = {};
+  for (let i = 1; i <= onlineMaxPlayers; i++) {
+    players['p' + i] = { name: i === 1 ? myName : '', q: 0, done: false, score: {correct:0,points:0} };
+  }
+
   try {
     await fbDB.ref('rooms/' + code).set({
       status: 'waiting',
-      hostName: myName, guestName: '',
+      hostName: myName, maxPlayers: onlineMaxPlayers,
       grade: G.dGrade, subject: G.dSubject, subcategory: G.dSubcategory || '',
       difficulty: G.dDifficulty, source: G.dSource, catalogId: G.dCatalogId || '',
-      questions: [],
-      hostQ: 0, guestQ: 0, hostDone: false, guestDone: false,
-      hostScore: {correct:0,points:0},
-      guestScore: {correct:0,points:0},
+      questions: [], players,
       createdAt: firebase.database.ServerValue.TIMESTAMP
     });
     showOnlineWaitScreen();
@@ -2048,12 +2145,21 @@ async function joinOnlineRoom() {
     if (room.status !== 'waiting') { showToast('Spiel läuft bereits', 'error'); return; }
     if (room.guestName)         { showToast('Raum bereits voll', 'error'); return; }
     onlineRoomCode = code;
+    // Find first empty slot
+    const players = room.players || {};
+    const maxP = room.maxPlayers || 2;
+    let mySlot = null;
+    for (let i = 2; i <= maxP; i++) {
+      if (!players['p' + i] || !players['p' + i].name) { mySlot = 'p' + i; break; }
+    }
+    if (!mySlot) { showToast('Raum ist voll', 'error'); return; }
     onlineRole = 'guest';
-    G.p2Name = myName;
+    onlineMySlot = mySlot;
+    onlineMaxPlayers = maxP;
     G.p1Name = room.hostName;
     onlineMyAnswers = [];
     onlineWaitingForOpponent = false;
-    await fbDB.ref('rooms/' + code + '/guestName').set(myName);
+    await fbDB.ref('rooms/' + code + '/players/' + mySlot).update({ name: myName, q: 0, done: false, score: {correct:0,points:0} });
     showOnlineWaitScreen();
     startRoomListener();
   } catch(e) {
@@ -2096,12 +2202,17 @@ function handleRoomUpdate(room) {
   const activeId = document.querySelector('.screen.active')?.id || '';
 
   if (room.status === 'waiting' && activeId === 'screen-online-wait') {
-    if (onlineRole === 'host' && room.guestName) {
-      document.getElementById('ow-guest-joined').style.display = 'block';
-      document.getElementById('ow-guest-joined').textContent = '✓ ' + room.guestName + ' ist beigetreten!';
-      document.getElementById('ow-start-btn').style.display = 'block';
-      document.getElementById('ow-status').textContent = 'Bereit zum Starten';
-      document.getElementById('ow-status-box').className = 'wait-status joined';
+    const players = room.players || {};
+    const maxP = room.maxPlayers || 2;
+    const joined = Object.values(players).filter(p => p.name).length;
+    const names = Object.values(players).filter(p => p.name).map(p => p.name);
+    document.getElementById('ow-status').textContent = joined + ' / ' + maxP + ' Spieler beigetreten';
+    document.getElementById('ow-guest-joined').style.display = joined > 1 ? 'block' : 'none';
+    document.getElementById('ow-guest-joined').textContent = names.join(', ');
+    if (onlineRole === 'host') {
+      const allJoined = joined === maxP;
+      document.getElementById('ow-start-btn').style.display = allJoined ? 'block' : 'none';
+      document.getElementById('ow-status-box').className = 'wait-status' + (allJoined ? ' joined' : '');
     }
     return;
   }
@@ -2114,35 +2225,20 @@ function handleRoomUpdate(room) {
     if (activeId === 'screen-loading') stopLoadingMessages();
     if (activeId === 'screen-loading' || activeId === 'screen-online-wait') {
       G.questions = room.questions;
-      G.p1Name = room.hostName; G.p2Name = room.guestName;
-      G.p1 = {...room.hostScore}; G.p2 = {...room.guestScore};
       G.current = 0; G.mode = 'online';
+      onlineMaxPlayers = room.maxPlayers || 2;
       document.getElementById('q-total').textContent = G.questions.length;
       setupQuizUI(); showScreen('screen-quiz');
       renderOnlineQuestion(room); return;
     }
     if (activeId === 'screen-quiz') {
-      // Live score: only own score visible
-      G.p1 = {...room.hostScore}; G.p2 = {...room.guestScore};
-      if (onlineRole === 'host') {
-        document.getElementById('db-p1-score').textContent = room.hostScore.points;
-      } else {
-        document.getElementById('db-p2-score').textContent = room.guestScore.points;
-      }
-      // Update opponent progress indicator
-      const oppQ    = onlineRole === 'host' ? room.guestQ    : room.hostQ;
-      const oppDone = onlineRole === 'host' ? room.guestDone : room.hostDone;
-      const oppName = onlineRole === 'host' ? room.guestName : room.hostName;
-      const oppEl   = document.getElementById('opp-indicator');
-      if (oppEl) {
-        if (oppDone) { oppEl.textContent = '✓ ' + oppName + ' fertig!'; oppEl.className = 'opp-indicator done'; }
-        else { oppEl.textContent = oppName + ': Frage ' + (oppQ + 1) + ' / ' + G.questions.length; oppEl.className = 'opp-indicator thinking'; }
-      }
-      // Both done → show results
-      if (onlineWaitingForOpponent && room.hostDone && room.guestDone) {
+      updateMultiDuelBar(room);
+      // All done?
+      const players = room.players || {};
+      const allDone = Object.keys(players).every(k => players[k].done);
+      if (onlineWaitingForOpponent && allDone) {
         clearInterval(G.timerInterval);
-        G.p1Name = room.hostName; G.p2Name = room.guestName;
-        checkFlaggedThenShow(showDuelResult);
+        checkFlaggedThenShow(() => showMultiResult(room));
       }
     }
     return;
@@ -2150,19 +2246,31 @@ function handleRoomUpdate(room) {
 
   if (room.status === 'finished') {
     clearInterval(G.timerInterval);
-    G.p1 = {...room.hostScore}; G.p2 = {...room.guestScore};
-    G.p1Name = room.hostName; G.p2Name = room.guestName;
-    checkFlaggedThenShow(showDuelResult);
+    checkFlaggedThenShow(() => showMultiResult(room));
   }
+}
+
+// ── multi-player duel bar update ──
+function updateMultiDuelBar(room) {
+  const players = room.players || {};
+  const bar = document.getElementById('multi-duel-bar');
+  if (!bar) return;
+  Object.entries(players).forEach(([slot, p]) => {
+    if (!p.name) return;
+    const card = bar.querySelector('[data-slot="' + slot + '"]');
+    if (!card) return;
+    const isMe = slot === onlineMySlot;
+    card.querySelector('.dpc-score').textContent = isMe ? p.score.points : '?';
+    card.querySelector('.dpc-q').textContent = 'Frage ' + Math.min(p.q + 1, G.questions.length) + (p.done ? ' ✓' : '');
+  });
 }
 
 // ── render question (online) ──
 function renderOnlineQuestion(room) {
   G.answered = false;
   onlineWaitingForOpponent = false;
-  const q       = G.questions[G.current];
-  const oppName = onlineRole === 'host' ? room.guestName : room.hostName;
-  const oppQ    = onlineRole === 'host' ? (room.guestQ || 0) : (room.hostQ || 0);
+  const q = G.questions[G.current];
+  const players = room.players || {};
 
   document.getElementById('q-current').textContent = G.current + 1;
   document.getElementById('progress-fill').style.width = (G.current / G.questions.length * 100) + '%';
@@ -2172,34 +2280,34 @@ function renderOnlineQuestion(room) {
   document.getElementById('next-btn').className = 'next-btn';
   document.getElementById('points-flash').textContent = '';
 
-  // Flag button
   const isFlagged = flaggedQuestions.some(f => f.idx === G.current);
   const flagBtn = document.getElementById('flag-btn');
   flagBtn.classList.toggle('flagged', isFlagged);
   flagBtn.textContent = isFlagged ? '⚑ Vorgemerkt' : '⚑ Beanstanden';
 
-  document.getElementById('db-p1-name').textContent  = room.hostName;
-  document.getElementById('db-p2-name').textContent  = room.guestName;
-  // Show own score, hide opponent's until end
-  if (onlineRole === 'host') {
-    document.getElementById('db-p1-score').textContent = room.hostScore.points;
-    document.getElementById('db-p2-score').textContent = '?';
-  } else {
-    document.getElementById('db-p1-score').textContent = '?';
-    document.getElementById('db-p2-score').textContent = room.guestScore.points;
+  // Build multi-player duel bar
+  const duelBar = document.getElementById('duel-bar');
+  duelBar.style.display = 'none'; // hide original 2-player bar
+  let multiBar = document.getElementById('multi-duel-bar');
+  if (!multiBar) {
+    multiBar = document.createElement('div');
+    multiBar.id = 'multi-duel-bar';
+    multiBar.className = 'duel-bar-multi';
+    duelBar.insertAdjacentElement('afterend', multiBar);
   }
-  const badge = document.getElementById('duel-turn-badge');
-  badge.textContent = '🌐 Online-Duell';
-  badge.className = 'duel-turn-badge p1';
+  multiBar.innerHTML = Object.entries(players).filter(([,p]) => p.name).map(([slot, p]) => {
+    const isMe = slot === onlineMySlot;
+    return '<div class="duel-player-card' + (isMe ? ' me' : '') + '" data-slot="' + slot + '">'
+      + '<div class="dpc-name">' + esc(p.name) + (isMe ? ' (du)' : '') + '</div>'
+      + '<div class="dpc-score">' + (isMe ? p.score.points : '?') + '</div>'
+      + '<div class="dpc-q">Frage ' + (G.current + 1) + '</div>'
+      + '</div>';
+  }).join('');
 
-  let oppEl = document.getElementById('opp-indicator');
-  if (!oppEl) {
-    oppEl = document.createElement('div');
-    oppEl.id = 'opp-indicator';
-    document.getElementById('next-btn').insertAdjacentElement('afterend', oppEl);
-  }
-  oppEl.textContent = oppName + ': Frage ' + (oppQ + 1) + ' / ' + G.questions.length;
-  oppEl.className = 'opp-indicator thinking';
+  const badge = document.getElementById('duel-turn-badge');
+  badge.textContent = '🌐 Online · ' + Object.values(players).filter(p=>p.name).length + ' Spieler';
+  badge.style.display = 'block';
+  badge.className = 'duel-turn-badge p1';
 
   const container = document.getElementById('answers-container');
   container.innerHTML = '';
@@ -2253,39 +2361,32 @@ async function onlineTimeOut() {
 
 // ── advance this player independently ──
 async function _advanceOnlinePlayer(isCorrect, gained) {
-  const myQField    = onlineRole === 'host' ? 'hostQ'     : 'guestQ';
-  const myDoneField = onlineRole === 'host' ? 'hostDone'  : 'guestDone';
-  const myScoreField= onlineRole === 'host' ? 'hostScore' : 'guestScore';
-  const prevScore   = onlineLastRoom ? onlineLastRoom[myScoreField] : {correct:0,points:0};
-  const newScore    = { correct: prevScore.correct + (isCorrect?1:0), points: prevScore.points + gained };
-  const nextQ       = G.current + 1;
-  const done        = nextQ >= G.questions.length;
+  const prevScore = onlineLastRoom?.players?.[onlineMySlot]?.score || {correct:0,points:0};
+  const newScore  = { correct: prevScore.correct + (isCorrect?1:0), points: prevScore.points + gained };
+  const nextQ     = G.current + 1;
+  const done      = nextQ >= G.questions.length;
 
   try {
-    await fbDB.ref('rooms/' + onlineRoomCode).update({
-      [myScoreField]: newScore, [myQField]: nextQ, [myDoneField]: done
+    await fbDB.ref('rooms/' + onlineRoomCode + '/players/' + onlineMySlot).update({
+      score: newScore, q: nextQ, done
     });
   } catch(e) { showToast('Verbindungsfehler', 'error'); }
 
-  // Advance locally after feedback delay
   setTimeout(() => {
     if (done) {
-      // Finished — wait for opponent via Firebase listener
       onlineWaitingForOpponent = true;
-      const oppDone = onlineRole === 'host' ? onlineLastRoom?.guestDone : onlineLastRoom?.hostDone;
-      if (oppDone) {
-        G.p1 = {...(onlineLastRoom?.hostScore || newScore)};
-        G.p2 = {...(onlineLastRoom?.guestScore || newScore)};
-        checkFlaggedThenShow(showDuelResult);
+      // Check if all others already done
+      const players = onlineLastRoom?.players || {};
+      const allDone = Object.keys(players).every(k => k === onlineMySlot ? true : players[k].done);
+      if (allDone) {
+        clearInterval(G.timerInterval);
+        checkFlaggedThenShow(() => showMultiResult(onlineLastRoom));
       } else {
-        const oppEl = document.getElementById('opp-indicator');
-        if (oppEl) { oppEl.textContent = 'Warte auf Gegner…'; oppEl.className = 'opp-indicator thinking'; }
-        document.getElementById('feedback').className += ' show';
-        showToast('Fertig! Warte auf Gegner…', '');
+        showToast('Fertig! Warte auf andere…', '');
       }
     } else {
       G.current = nextQ;
-      renderOnlineQuestion(onlineLastRoom || {hostName:G.p1Name,guestName:G.p2Name,hostScore:G.p1,guestScore:G.p2,hostQ:0,guestQ:0});
+      renderOnlineQuestion(onlineLastRoom || {players:{},maxPlayers:onlineMaxPlayers});
     }
   }, 1500);
 }
@@ -2300,11 +2401,14 @@ async function startOnlineGame() {
     await fbDB.ref('rooms/' + onlineRoomCode + '/status').set('loading');
     G.mode = 'online';
     const questions = await loadQuestions();
+    const resetPlayers = {};
+    for (let i = 1; i <= onlineMaxPlayers; i++) {
+      const slot = 'p' + i;
+      const existing = onlineLastRoom?.players?.[slot] || {};
+      resetPlayers[slot] = { name: existing.name || '', q: 0, done: false, score: {correct:0,points:0} };
+    }
     await fbDB.ref('rooms/' + onlineRoomCode).update({
-      status: 'playing', questions,
-      hostQ: 0, guestQ: 0, hostDone: false, guestDone: false,
-      hostScore: {correct:0,points:0},
-      guestScore: {correct:0,points:0}
+      status: 'playing', questions, players: resetPlayers
     });
   } catch(e) {
     stopLoadingMessages();
@@ -2467,11 +2571,13 @@ function leaveOnlineRoom() {
     if (onlineRole === 'host') {
       fbDB.ref('rooms/' + onlineRoomCode).remove().catch(()=>{});
     } else {
-      fbDB.ref('rooms/' + onlineRoomCode + '/guestName').set('').catch(()=>{});
+      fbDB.ref('rooms/' + onlineRoomCode + '/players/' + onlineMySlot + '/name').set('').catch(()=>{});
     }
   }
   onlineRoomCode = null; onlineRole = null; onlineLastRoom = null;
   G.mode = 'solo';
+  const mbar = document.getElementById('multi-duel-bar');
+  if (mbar) mbar.remove();
   showScreen('screen-home');
 }
 </script>
