@@ -559,6 +559,7 @@
       <div class="pill" data-val="leicht">Leicht</div>
       <div class="pill active" data-val="mittel">Mittel</div>
       <div class="pill" data-val="schwer">Schwer</div>
+      <div class="pill pill-action mix" onclick="setMixedDiff('chal-diff-pills','_chalDiff')">∼ Mix</div>
     </div>
     <div class="form-row" style="margin-top:16px;">
       <button class="btn btn-secondary" onclick="closeChallengeModal()">Abbrechen</button>
@@ -680,6 +681,7 @@
         <div class="pill active" data-val="mittel">Mittel</div>
         <div class="pill" data-val="schwer">Schwer</div>
         <div class="pill pill-action dice" onclick="randomizePills('diff-pills','difficulty')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixedDiff('diff-pills','difficulty')">∼ Mix</div>
       </div>
       <div class="label">Fragenquelle</div>
       <div class="pill-row" id="source-pills">
@@ -745,6 +747,7 @@
         <div class="pill active" data-val="mittel">Mittel</div>
         <div class="pill" data-val="schwer">Schwer</div>
         <div class="pill pill-action dice" onclick="randomizePills('duel-diff-pills','dDifficulty')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixedDiff('duel-diff-pills','dDifficulty')">∼ Mix</div>
       </div>
       <div class="label">Fragenquelle</div>
       <div class="pill-row" id="duel-source-pills">
@@ -795,6 +798,7 @@
           <div class="pill active" data-val="mittel">Mittel</div>
           <div class="pill" data-val="schwer">Schwer</div>
           <div class="pill pill-action dice" onclick="randomizePills('online-diff-pills','dDifficulty')">🎲</div>
+          <div class="pill pill-action mix" onclick="setMixedDiff('online-diff-pills','dDifficulty')">∼ Mix</div>
         </div>
         <div class="label">Fragenquelle</div>
         <div class="pill-row" id="online-source-pills">
@@ -2519,7 +2523,7 @@ async function _fetchQuestions(grade, subj, subcat, diff, attempt = 1) {
   const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle 8 Multiple-Choice-Quizfragen:
 - Klassenstufe: ${grade}. Klasse
 - Fach: ${subj}
-${subcatLine}- Schwierigkeit: ${diff}
+${subcatLine}- Schwierigkeit: ${diff === 'gemischt' ? 'gemischt (variiere leicht/mittel/schwer über die 8 Fragen)' : diff}
 
 Regeln: 4 Antwortoptionen (A-D), nur eine korrekt. Lehrplangerecht. Kurze Erklärung. Themen variieren.
 Antworte NUR mit einem JSON-Array ohne Markdown:
@@ -2616,7 +2620,7 @@ async function generateMixedAI(subj, subcat, grade, diff) {
 - Fach: ${subjHint}
 - Klassenstufe: ${gradeHint}
 - Themenbereich: ${subcatHint}
-- Schwierigkeit: ${diff || 'mittel'}
+- Schwierigkeit: ${diff === 'gemischt' ? 'gemischt (variiere leicht/mittel/schwer über die 8 Fragen)' : (diff || 'mittel')}
 
 Antworte NUR mit einem JSON-Array. Jedes Objekt hat genau diese Felder:
 {"question":"...","options":["A","B","C","D"],"answer":0,"explanation":"...","topic":"...","_grade":"7","_subject":"Mathematik","_subcategory":"Algebra"}
@@ -3630,6 +3634,26 @@ function setMixed(pillsId, gKey) {
   G[gKey] = 'gemischt';
   if (gKey === 'grade')  checkSoloReady?.();
   if (gKey === 'dGrade') { checkDuelReady?.(); checkOnlineReady?.(); }
+}
+
+function setMixedDiff(pillsId, key) {
+  document.querySelectorAll('#' + pillsId + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active'));
+  let gPill = document.querySelector('#' + pillsId + ' .pill[data-val="gemischt"]');
+  if (!gPill) {
+    gPill = document.createElement('div');
+    gPill.className = 'pill';
+    gPill.dataset.val = 'gemischt';
+    gPill.textContent = '∼ Gemischt';
+    const firstAction = document.querySelector('#' + pillsId + ' .pill-action');
+    document.getElementById(pillsId).insertBefore(gPill, firstAction || null);
+    gPill.addEventListener('click', () => {
+      document.querySelectorAll('#' + pillsId + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active'));
+      gPill.classList.add('active');
+      G[key] = 'gemischt';
+    });
+  }
+  gPill.classList.add('active');
+  G[key] = 'gemischt';
 }
 
 function setMixedSubject(pillsId, key, mode) {
