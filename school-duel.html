@@ -3524,7 +3524,8 @@ correct = 0-basierter Index der richtigen Antwort.`;
     const cleaned = text.trim().replace(/```json|```/g,'').trim();
     const start = cleaned.indexOf('['), end = cleaned.lastIndexOf(']');
     const jsonStr = (start !== -1 && end !== -1) ? cleaned.slice(start, end + 1) : cleaned;
-    return JSON.parse(jsonStr);
+    const parsed = JSON.parse(jsonStr);
+    return parsed.map(q => ({ ...q, correct: Math.max(0, Math.min(3, parseInt(q.correct, 10) || 0)) }));
   } catch(e) {
     if (attempt < MAX_ATTEMPTS) {
       await new Promise(r => setTimeout(r, 1200 * attempt));
@@ -3576,7 +3577,8 @@ async function generateMixedAI(subj, subcat, grade, diff) {
 - Schwierigkeit: ${diff === 'gemischt' ? 'gemischt (variiere leicht/mittel/schwer über die 8 Fragen)' : (diff || 'mittel')}
 
 Antworte NUR mit einem JSON-Array. Jedes Objekt hat genau diese Felder:
-{"question":"...","options":["A","B","C","D"],"answer":0,"explanation":"...","topic":"...","_grade":"7","_subject":"Mathematik","_subcategory":"Algebra"}
+{"question":"...","options":["A","B","C","D"],"correct":0,"explanation":"...","topic":"...","_grade":"7","_subject":"Mathematik","_subcategory":"Algebra"}
+correct = 0-basierter Index der richtigen Antwort (0=A, 1=B, 2=C, 3=D).
 
 Passe _grade, _subject und _subcategory je Frage individuell an die tatsächliche Frage an.
 Keine Erklärungen außerhalb des JSON!`;
@@ -3601,8 +3603,11 @@ Keine Erklärungen außerhalb des JSON!`;
   const cleaned = text.trim().replace(/```json|```/g,'').trim();
   const start = cleaned.indexOf('['), end = cleaned.lastIndexOf(']');
   const qs = JSON.parse((start !== -1 && end !== -1) ? cleaned.slice(start, end+1) : cleaned);
-  // Ensure _subject fallback
-  return qs.map(q => ({ ...q, _subject: q._subject || subj, _grade: q._grade || grade, _subcategory: q._subcategory || subcat }));
+  return qs.map(q => ({
+    ...q,
+    correct: Math.max(0, Math.min(3, parseInt(q.answer ?? q.correct, 10) || 0)),
+    _subject: q._subject || subj, _grade: q._grade || grade, _subcategory: q._subcategory || subcat
+  }));
 }
 
 // ═══════════════════════════════════════════════════════
@@ -3703,7 +3708,7 @@ function selectAnswer(idx) {
     document.getElementById('points-flash').textContent = '+10 Punkte';
   } else {
     btns[idx].classList.add('wrong');
-    btns[q.correct].classList.add('correct');
+    if (btns[q.correct]) btns[q.correct].classList.add('correct');
     showFeedback('wrong', '✗ Falsch. ' + (q.explanation || ''));
     document.getElementById('points-flash').textContent = '';
   }
@@ -3716,7 +3721,8 @@ function timeOut() {
   const ps = G.mode === 'solo' ? G.solo : (G.currentPlayer === 1 ? G.p1 : G.p2);
   ps.answers.push(-1);
   document.querySelectorAll('.answer-btn').forEach(b => b.disabled = true);
-  document.querySelectorAll('.answer-btn')[q.correct].classList.add('correct');
+  const tBtns = document.querySelectorAll('.answer-btn');
+  if (tBtns[q.correct]) tBtns[q.correct].classList.add('correct');
   showFeedback('timeout', '⏱ Zeit abgelaufen! ' + (q.explanation || ''));
   document.getElementById('next-btn').classList.add('show');
 }
