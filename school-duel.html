@@ -255,6 +255,27 @@
   .divider-or::before, .divider-or::after { content:''; position:absolute; top:50%; width:42%; height:1px; background:var(--border); }
   .divider-or::before { left:0; } .divider-or::after { right:0; }
 
+  /* AUTH */
+  .auth-wrap { max-width:400px; margin:0 auto; }
+  .auth-input-wrap { margin-bottom:12px; }
+  .auth-input-wrap label { display:block; font-size:.75rem; color:var(--muted); font-family:'Space Mono',monospace; margin-bottom:6px; }
+  .auth-error { color:var(--red); font-size:.82rem; min-height:20px; text-align:center; margin:8px 0; }
+
+  /* USER BADGE */
+  .user-badge { display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:50px; background:var(--surface2); border:1px solid var(--border); font-size:.8rem; font-weight:600; cursor:pointer; transition:all .15s; }
+  .user-badge:hover { border-color:var(--accent); color:var(--accent); }
+
+  /* FRIENDS */
+  .friend-item { display:flex; align-items:center; gap:10px; padding:13px 0; border-bottom:1px solid var(--border); }
+  .friend-item:last-child { border-bottom:none; }
+  .friend-name { flex:1; font-weight:600; font-size:.93rem; }
+  .friend-grade { font-size:.75rem; color:var(--muted); margin-top:2px; }
+
+  /* CHALLENGE INCOMING */
+  .challenge-popup { background:var(--surface); border:2px solid var(--accent); border-radius:var(--radius); padding:28px; width:100%; max-width:400px; animation:fadeIn .3s ease; }
+  .challenge-popup h2 { font-size:1.2rem; margin-bottom:8px; }
+  .challenge-info-box { background:var(--surface2); border-radius:10px; padding:12px; margin:14px 0; font-size:.88rem; color:var(--muted); }
+
   /* MULTI-PLAYER RANKING */
   .rank-row { display:flex; align-items:center; gap:14px; padding:13px 0; border-bottom:1px solid var(--border); }
   .rank-row:last-child { border-bottom:none; }
@@ -281,9 +302,10 @@
   .report-q { background:var(--surface2); border-radius:10px; padding:13px; font-size:.88rem; margin-bottom:14px; line-height:1.5; color:var(--text); }
   .report-counter { font-size:.75rem; color:var(--muted); font-family:'Space Mono',monospace; margin-bottom:10px; }
 </style>
-<!-- Firebase Realtime Database SDK (compat) -->
+<!-- Firebase SDKs (compat) -->
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
 <!-- Supabase SDK -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
@@ -406,13 +428,130 @@
   </div>
 </div>
 
+<!-- ═══════════════════════════ MODAL: CHALLENGE INCOMING ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-challenge-incoming">
+  <div class="challenge-popup">
+    <h2>⚔️ Herausforderung!</h2>
+    <div id="inc-challenge-from" style="font-weight:700;font-size:1rem;margin-bottom:4px;"></div>
+    <div class="challenge-info-box" id="inc-challenge-info"></div>
+    <div class="form-row">
+      <button class="btn btn-secondary" onclick="declineChallenge()">Ablehnen</button>
+      <button class="btn btn-primary" onclick="acceptChallenge()">Annehmen →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ MODAL: CHALLENGE SEND ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-challenge-send">
+  <div class="modal" style="max-width:520px;">
+    <div style="font-size:1.1rem;font-weight:700;margin-bottom:16px;" id="challenge-target-text"></div>
+    <div class="label">Klassenstufe</div>
+    <div class="pill-row" id="chal-grade-pills">
+      <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
+      <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
+      <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
+      <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+    </div>
+    <div class="label">Fach</div>
+    <div class="pill-row" id="chal-subject-pills">
+      <div class="pill" data-val="Mathematik">📐 Mathe</div>
+      <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+      <div class="pill" data-val="Englisch">🌍 Englisch</div>
+      <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+      <div class="pill" data-val="Biologie">🌿 Biologie</div>
+      <div class="pill" data-val="Physik">⚡ Physik</div>
+      <div class="pill" data-val="Chemie">🧪 Chemie</div>
+      <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+    </div>
+    <div id="chal-subcat-wrap"></div>
+    <div class="label" style="margin-top:4px;">Schwierigkeit</div>
+    <div class="pill-row" id="chal-diff-pills">
+      <div class="pill" data-val="leicht">Leicht</div>
+      <div class="pill active" data-val="mittel">Mittel</div>
+      <div class="pill" data-val="schwer">Schwer</div>
+    </div>
+    <div class="form-row" style="margin-top:16px;">
+      <button class="btn btn-secondary" onclick="closeChallengeModal()">Abbrechen</button>
+      <button class="btn btn-primary" onclick="sendChallenge()">Herausfordern ⚔️</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: AUTH ═══════════════════════════ -->
+<div class="screen active" id="screen-auth">
+  <div class="auth-wrap">
+    <div class="logo large" style="margin-bottom:4px;"><span class="s">School</span> <span class="d">Duel</span></div>
+    <div class="tagline" style="margin-bottom:24px;">Lerne spielend – fordere dein Wissen heraus</div>
+    <div class="sub-tabs" id="auth-tabs">
+      <div class="sub-tab active" data-tab="login" onclick="switchAuthTab('login')">Anmelden</div>
+      <div class="sub-tab" data-tab="register" onclick="switchAuthTab('register')">Registrieren</div>
+    </div>
+    <!-- LOGIN -->
+    <div id="auth-login">
+      <div class="card">
+        <div class="auth-input-wrap"><label>Benutzername</label>
+          <input class="form-input" id="login-username" placeholder="Dein Benutzername" autocomplete="username"></div>
+        <div class="auth-input-wrap"><label>Passwort</label>
+          <input class="form-input" id="login-password" type="password" placeholder="Dein Passwort" autocomplete="current-password"></div>
+        <div class="auth-error" id="login-error"></div>
+        <button class="btn btn-primary" id="login-btn" onclick="doLogin()">Anmelden →</button>
+      </div>
+    </div>
+    <!-- REGISTER -->
+    <div id="auth-register" style="display:none;">
+      <div class="card">
+        <div class="auth-input-wrap"><label>Benutzername</label>
+          <input class="form-input" id="reg-username" placeholder="z.B. MaxMustermann" autocomplete="username">
+          <div style="font-size:.72rem;color:var(--muted);margin-top:4px;">Buchstaben, Zahlen, _ · min. 3 Zeichen</div></div>
+        <div class="auth-input-wrap" style="margin-top:10px;"><label>Passwort</label>
+          <input class="form-input" id="reg-password" type="password" placeholder="Mindestens 6 Zeichen" autocomplete="new-password"></div>
+        <div class="auth-input-wrap" style="margin-top:10px;"><label>Passwort wiederholen</label>
+          <input class="form-input" id="reg-password2" type="password" placeholder="Passwort bestätigen" autocomplete="new-password"></div>
+        <div class="label" style="margin-top:14px;">Deine Klasse</div>
+        <div class="pill-row" id="reg-grade-pills">
+          <div class="pill" data-val="5">5</div><div class="pill" data-val="6">6</div>
+          <div class="pill" data-val="7">7</div><div class="pill" data-val="8">8</div>
+          <div class="pill" data-val="9">9</div><div class="pill" data-val="10">10</div>
+          <div class="pill" data-val="11">11</div><div class="pill" data-val="12">12</div>
+        </div>
+        <div class="auth-error" id="reg-error"></div>
+        <button class="btn btn-primary" id="reg-btn" onclick="doRegister()">Registrieren →</button>
+      </div>
+    </div>
+    <button class="btn btn-secondary" onclick="continueAsGuest()" style="margin-top:6px;">Als Gast spielen</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: FRIENDS ═══════════════════════════ -->
+<div class="screen" id="screen-friends">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+    <h2 style="font-size:1.1rem;font-weight:700;">👥 Freunde</h2>
+    <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="showScreen('screen-home')">← Zurück</button>
+  </div>
+  <div class="card" style="margin-bottom:14px;">
+    <div class="label">Benutzername suchen</div>
+    <div style="display:flex;gap:8px;">
+      <input class="form-input" id="friend-search-input" placeholder="Benutzername eingeben" style="flex:1;">
+      <button class="btn btn-primary" style="width:auto;padding:10px 16px;" onclick="searchAndAddFriend()">Suchen</button>
+    </div>
+  </div>
+  <div id="friends-screen-content">
+    <div class="loading-state"><div class="spinner"></div>Laden…</div>
+  </div>
+</div>
+
 <!-- ═══════════════════════════ SCREEN: HOME ═══════════════════════════ -->
 <div class="screen active" id="screen-home">
   <div class="logo large"><span class="s">School</span> <span class="d">Duel</span></div>
   <div class="tagline">Lerne spielend – fordere dein Wissen heraus</div>
-  <div style="text-align:right;margin-bottom:8px;display:flex;gap:8px;justify-content:flex-end;">
-    <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="openSupabaseModal()">🟢 Supabase</button>
-    <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="openApiKeyModal()">🔑 API-Key</button>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <div id="user-badge" class="user-badge" style="display:none;" onclick="showScreen('screen-friends')">👤</div>
+    <div style="display:flex;gap:8px;margin-left:auto;">
+      <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="openSupabaseModal()">🟢 Supabase</button>
+      <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="openApiKeyModal()">🔑 API-Key</button>
+      <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" id="logout-btn" style="display:none;" onclick="doLogout()">Abmelden</button>
+    </div>
   </div>
 
   <div class="nav-tabs">
@@ -1985,8 +2124,358 @@ function showToast(msg, type) {
   toastTimer = setTimeout(() => t.classList.remove('show'), 2400);
 }
 
-// Init
-switchTab('solo');
+// Init — override showScreen to trigger friends list load
+const _showScreenBase = showScreen;
+function showScreen(id) {
+  _showScreenBase(id);
+  if (id === 'screen-friends') renderFriendsList();
+}
+
+// Start auth (will navigate to auth or home screen)
+switchTab('solo');  // prepare home screen tabs
+initAuth();         // auth state will call showScreen appropriately
+
+// ═══════════════════════════════════════════════════════
+// AUTH + USER SYSTEM
+// ═══════════════════════════════════════════════════════
+let fbAuth = null;
+let currentUser = null;  // { uid, username, grade }
+let challengeDbListener = null;
+let pendingChallenge = null;
+let chalTargetUid = null;
+let chalTargetUsername = null;
+
+function initAuth() {
+  if (!initFirebase()) return;
+  fbAuth = firebase.app('sd').auth();
+  fbAuth.onAuthStateChanged(async user => {
+    if (user) {
+      try {
+        const snap = await fbDB.ref('users/' + user.uid).once('value');
+        const profile = snap.val();
+        if (profile) {
+          currentUser = { uid: user.uid, ...profile };
+          onUserLoggedIn();
+        } else { fbAuth.signOut(); }
+      } catch { fbAuth.signOut(); }
+    } else {
+      currentUser = null;
+      onUserLoggedOut();
+    }
+  });
+}
+
+function onUserLoggedIn() {
+  const badge = document.getElementById('user-badge');
+  if (badge) { badge.textContent = '👤 ' + currentUser.username; badge.style.display = 'inline-flex'; }
+  const lb = document.getElementById('logout-btn');
+  if (lb) lb.style.display = 'inline-block';
+  startChallengeListener();
+  // Only navigate if still on auth screen
+  if (document.getElementById('screen-auth').classList.contains('active')) {
+    showScreen('screen-home'); switchTab('solo');
+  }
+}
+
+function onUserLoggedOut() {
+  const badge = document.getElementById('user-badge');
+  if (badge) badge.style.display = 'none';
+  const lb = document.getElementById('logout-btn');
+  if (lb) lb.style.display = 'none';
+  if (challengeDbListener) {
+    try { fbDB.ref('challenges/' + (currentUser?.uid || '')).off('child_added'); } catch {}
+    challengeDbListener = null;
+  }
+  showScreen('screen-auth');
+}
+
+function doLogout() { if (fbAuth) fbAuth.signOut(); }
+function continueAsGuest() { currentUser = null; showScreen('screen-home'); switchTab('solo'); }
+
+function switchAuthTab(tab) {
+  document.getElementById('auth-login').style.display    = tab === 'login'    ? 'block' : 'none';
+  document.getElementById('auth-register').style.display = tab === 'register' ? 'block' : 'none';
+  document.querySelectorAll('#auth-tabs .sub-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  document.getElementById('login-error').textContent = '';
+  document.getElementById('reg-error').textContent = '';
+}
+// reg grade pills
+setupPills('reg-grade-pills', '_regGrade', () => {});
+
+async function doRegister() {
+  const username = document.getElementById('reg-username').value.trim();
+  const pw1      = document.getElementById('reg-password').value;
+  const pw2      = document.getElementById('reg-password2').value;
+  const grade    = document.querySelector('#reg-grade-pills .pill.active')?.dataset.val;
+  const errEl    = document.getElementById('reg-error');
+  errEl.textContent = '';
+
+  if (!username || username.length < 3)              { errEl.textContent = 'Benutzername min. 3 Zeichen'; return; }
+  if (!/^[a-zA-Z0-9_\-.äöüÄÖÜß]+$/.test(username)) { errEl.textContent = 'Nur Buchstaben, Zahlen und _ erlaubt'; return; }
+  if (pw1.length < 6)                                { errEl.textContent = 'Passwort min. 6 Zeichen'; return; }
+  if (pw1 !== pw2)                                   { errEl.textContent = 'Passwörter stimmen nicht überein'; return; }
+  if (!grade)                                        { errEl.textContent = 'Bitte Klasse auswählen'; return; }
+  if (!initFirebase())                               { errEl.textContent = 'Firebase nicht verfügbar'; return; }
+
+  const btn = document.getElementById('reg-btn');
+  btn.disabled = true; btn.textContent = 'Bitte warten…';
+  try {
+    const snap = await fbDB.ref('usernames/' + username.toLowerCase()).once('value');
+    if (snap.exists()) throw new Error('Benutzername bereits vergeben');
+    const email = username.toLowerCase().replace(/[^a-z0-9]/g,'') + '@schoolduel.game';
+    const cred = await fbAuth.createUserWithEmailAndPassword(email, pw1);
+    const uid  = cred.user.uid;
+    await fbDB.ref('users/' + uid).set({ username, grade, createdAt: Date.now(), stats: {gamesPlayed:0,wins:0,correctAnswers:0} });
+    await fbDB.ref('usernames/' + username.toLowerCase()).set(uid);
+  } catch(e) {
+    errEl.textContent = e.message;
+    btn.disabled = false; btn.textContent = 'Registrieren →';
+  }
+}
+
+async function doLogin() {
+  const username = document.getElementById('login-username').value.trim();
+  const pw       = document.getElementById('login-password').value;
+  const errEl    = document.getElementById('login-error');
+  errEl.textContent = '';
+  if (!username || !pw) { errEl.textContent = 'Bitte alle Felder ausfüllen'; return; }
+  if (!initFirebase())  { errEl.textContent = 'Firebase nicht verfügbar'; return; }
+
+  const btn = document.getElementById('login-btn');
+  btn.disabled = true; btn.textContent = 'Anmelden…';
+  try {
+    const snap = await fbDB.ref('usernames/' + username.toLowerCase()).once('value');
+    if (!snap.exists()) throw new Error('Benutzername nicht gefunden');
+    const email = username.toLowerCase().replace(/[^a-z0-9]/g,'') + '@schoolduel.game';
+    await fbAuth.signInWithEmailAndPassword(email, pw);
+  } catch(e) {
+    const msg = e.code === 'auth/wrong-password'     ? 'Falsches Passwort'
+              : e.code === 'auth/too-many-requests'  ? 'Zu viele Versuche – kurz warten'
+              : e.message;
+    errEl.textContent = msg;
+    btn.disabled = false; btn.textContent = 'Anmelden →';
+  }
+}
+
+// ── Enter on input fields ──
+['login-username','login-password'].forEach(id => {
+  document.getElementById(id)?.addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+});
+['reg-username','reg-password','reg-password2'].forEach(id => {
+  document.getElementById(id)?.addEventListener('keydown', e => { if (e.key === 'Enter') doRegister(); });
+});
+
+// ═══════════════════════════════════════════════════════
+// FRIENDS
+// ═══════════════════════════════════════════════════════
+async function searchAndAddFriend() {
+  if (!currentUser) { showToast('Bitte erst anmelden', 'error'); return; }
+  const username = document.getElementById('friend-search-input').value.trim();
+  if (!username) return;
+  if (username.toLowerCase() === currentUser.username.toLowerCase()) { showToast('Das bist du!', 'error'); return; }
+  try {
+    const snap = await fbDB.ref('usernames/' + username.toLowerCase()).once('value');
+    if (!snap.exists()) { showToast('Nutzer nicht gefunden', 'error'); return; }
+    const targetUid = snap.val();
+    const alreadyFriend = await fbDB.ref('friends/' + currentUser.uid + '/' + targetUid).once('value');
+    if (alreadyFriend.exists()) { showToast('Bereits befreundet', 'error'); return; }
+    await fbDB.ref('friendRequests/' + targetUid + '/' + currentUser.uid).set({ username: currentUser.username, sentAt: Date.now() });
+    document.getElementById('friend-search-input').value = '';
+    showToast('Anfrage gesendet ✓', 'success');
+  } catch(e) { showToast('Fehler: ' + e.message, 'error'); }
+}
+
+async function acceptFriendRequest(fromUid) {
+  try {
+    await Promise.all([
+      fbDB.ref('friends/' + currentUser.uid + '/' + fromUid).set(true),
+      fbDB.ref('friends/' + fromUid + '/' + currentUser.uid).set(true),
+      fbDB.ref('friendRequests/' + currentUser.uid + '/' + fromUid).remove()
+    ]);
+    showToast('Freund hinzugefügt ✓', 'success');
+    renderFriendsList();
+  } catch { showToast('Fehler', 'error'); }
+}
+
+async function declineFriendRequest(fromUid) {
+  await fbDB.ref('friendRequests/' + currentUser.uid + '/' + fromUid).remove().catch(() => {});
+  renderFriendsList();
+}
+
+async function removeFriend(uid) {
+  if (!confirm('Freund entfernen?')) return;
+  await Promise.all([
+    fbDB.ref('friends/' + currentUser.uid + '/' + uid).remove(),
+    fbDB.ref('friends/' + uid + '/' + currentUser.uid).remove()
+  ]).catch(() => {});
+  renderFriendsList();
+}
+
+async function renderFriendsList() {
+  if (!currentUser) return;
+  const c = document.getElementById('friends-screen-content');
+  c.innerHTML = '<div class="loading-state"><div class="spinner"></div></div>';
+  try {
+    const [reqSnap, friendSnap] = await Promise.all([
+      fbDB.ref('friendRequests/' + currentUser.uid).once('value'),
+      fbDB.ref('friends/' + currentUser.uid).once('value')
+    ]);
+    const requests   = reqSnap.val()   || {};
+    const friendUids = Object.keys(friendSnap.val() || {});
+    const profiles   = await Promise.all(
+      friendUids.map(uid => fbDB.ref('users/' + uid).once('value').then(s => ({uid, ...(s.val()||{})})))
+    );
+
+    let html = '';
+    const reqArr = Object.entries(requests);
+    if (reqArr.length) {
+      html += '<div class="card" style="margin-bottom:12px;">'
+        + '<div style="font-weight:700;font-size:.88rem;color:var(--gold);margin-bottom:12px;">📬 Anfragen (' + reqArr.length + ')</div>';
+      reqArr.forEach(([fromUid, req]) => {
+        html += '<div class="friend-item"><div><div class="friend-name">' + esc(req.username) + '</div>'
+          + '<div class="friend-grade">möchte Freund werden</div></div>'
+          + '<div style="display:flex;gap:8px;">'
+          + '<div class="icon-btn play" onclick="acceptFriendRequest(\'' + fromUid + '\')">✓</div>'
+          + '<div class="icon-btn del" onclick="declineFriendRequest(\'' + fromUid + '\')">✗</div>'
+          + '</div></div>';
+      });
+      html += '</div>';
+    }
+
+    html += '<div class="card">'
+      + '<div style="font-weight:700;font-size:.88rem;margin-bottom:12px;">👥 Freunde (' + profiles.length + ')</div>';
+    if (!profiles.length) {
+      html += '<div class="empty-state" style="padding:16px 0;"><div class="es-icon">🤝</div>Noch keine Freunde.<br>Suche nach Benutzernamen!</div>';
+    } else {
+      profiles.forEach(f => {
+        if (!f.username) return;
+        html += '<div class="friend-item">'
+          + '<div style="flex:1;"><div class="friend-name">' + esc(f.username) + '</div>'
+          + '<div class="friend-grade">Klasse ' + (f.grade||'?') + '</div></div>'
+          + '<div style="display:flex;gap:8px;">'
+          + '<button class="btn btn-primary" style="width:auto;padding:7px 14px;font-size:.78rem;" onclick="openChallengeModal(\'' + f.uid + '\',\'' + esc(f.username) + '\')">⚔️ Herausfordern</button>'
+          + '<div class="icon-btn del" onclick="removeFriend(\'' + f.uid + '\')" title="Entfernen">🗑️</div>'
+          + '</div></div>';
+      });
+    }
+    html += '</div>';
+    c.innerHTML = html;
+  } catch(e) {
+    c.innerHTML = '<div class="empty-state"><div class="es-icon">⚠️</div>Fehler: ' + esc(e.message) + '</div>';
+  }
+}
+
+// Override showScreen to load friends when navigating there
+const _origShowScreen = showScreen;
+// (already defined above, we patch via the friends screen rendering)
+document.getElementById('screen-friends').addEventListener('animationend', () => {});
+
+// ═══════════════════════════════════════════════════════
+// CHALLENGE SEND
+// ═══════════════════════════════════════════════════════
+// Wire challenge send pills
+document.querySelectorAll('#chal-subject-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#chal-subject-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    renderSubcategoryPills('chal-subcat-wrap', p.dataset.val, '_chalSubcat', () => {});
+  });
+});
+setupPills('chal-grade-pills', '_chalGrade', () => {});
+setupPills('chal-diff-pills',  '_chalDiff',  () => {});
+
+function openChallengeModal(targetUid, targetUsername) {
+  chalTargetUid = targetUid;
+  chalTargetUsername = targetUsername;
+  document.getElementById('challenge-target-text').textContent = '⚔️ ' + targetUsername + ' herausfordern';
+  // Reset pills
+  ['chal-grade-pills','chal-diff-pills'].forEach(id => document.querySelectorAll('#' + id + ' .pill').forEach(p => p.classList.remove('active')));
+  document.querySelectorAll('#chal-diff-pills .pill').forEach(p => p.classList.toggle('active', p.dataset.val === 'mittel'));
+  document.getElementById('chal-subcat-wrap').innerHTML = '';
+  document.querySelectorAll('#chal-subject-pills .pill').forEach(x => x.classList.remove('active'));
+  document.getElementById('modal-challenge-send').classList.remove('hidden');
+}
+function closeChallengeModal() { document.getElementById('modal-challenge-send').classList.add('hidden'); }
+
+async function sendChallenge() {
+  const grade   = document.querySelector('#chal-grade-pills .pill.active')?.dataset.val;
+  const subject = document.querySelector('#chal-subject-pills .pill.active')?.dataset.val;
+  const subcat  = document.querySelector('#chal-subcat-wrap .pill.active')?.dataset.val;
+  const diff    = document.querySelector('#chal-diff-pills .pill.active')?.dataset.val || 'mittel';
+  if (!grade || !subject || !subcat) { showToast('Bitte Klasse, Fach und Themenbereich wählen', 'error'); return; }
+
+  const myName = currentUser?.username || 'Spieler 1';
+  const code   = generateRoomCode();
+  const players = {
+    p1: { name: myName, q:0, done:false, score:{correct:0,points:0} },
+    p2: { name: '', q:0, done:false, score:{correct:0,points:0} }
+  };
+  await fbDB.ref('rooms/' + code).set({
+    status:'waiting', hostName:myName, maxPlayers:2,
+    grade, subject, subcategory:subcat, difficulty:diff, source:'ai', catalogId:'',
+    questions:[], players, createdAt:firebase.database.ServerValue.TIMESTAMP
+  });
+  const cKey = fbDB.ref('challenges/' + chalTargetUid).push().key;
+  await fbDB.ref('challenges/' + chalTargetUid + '/' + cKey).set({
+    fromUid:currentUser?.uid, fromUsername:myName, roomCode:code,
+    grade, subject, subcategory:subcat, difficulty:diff, status:'pending', sentAt:Date.now()
+  });
+  closeChallengeModal();
+
+  onlineRoomCode=code; onlineRole='host'; onlineMySlot='p1'; onlineMaxPlayers=2;
+  onlineMyAnswers=[]; onlineWaitingForOpponent=false;
+  G.p1Name=myName; G.dGrade=grade; G.dSubject=subject; G.dSubcategory=subcat; G.dDifficulty=diff; G.dSource='ai';
+  showOnlineWaitScreen(); startRoomListener();
+  setTimeout(()=>fbDB.ref('rooms/'+code).remove().catch(()=>{}), 45*60*1000);
+  showToast('Herausforderung gesendet! Warte auf Antwort…', 'success');
+}
+
+// ═══════════════════════════════════════════════════════
+// CHALLENGE RECEIVE
+// ═══════════════════════════════════════════════════════
+function startChallengeListener() {
+  if (!currentUser || !initFirebase()) return;
+  if (challengeDbListener) { try { fbDB.ref('challenges/'+currentUser.uid).off('child_added'); } catch {} }
+  fbDB.ref('challenges/' + currentUser.uid).on('child_added', snap => {
+    const data = snap.val();
+    if (data?.status === 'pending') {
+      pendingChallenge = { key: snap.key, data };
+      document.getElementById('inc-challenge-from').textContent = data.fromUsername + ' fordert dich heraus!';
+      document.getElementById('inc-challenge-info').innerHTML =
+        '<strong>' + esc(data.subject) + '</strong> · ' + esc(data.subcategory) + ' · Klasse ' + data.grade + '<br>'
+        + '<span style="color:var(--muted);font-size:.82rem;">Schwierigkeit: ' + data.difficulty + '</span>';
+      document.getElementById('modal-challenge-incoming').classList.remove('hidden');
+    }
+  });
+}
+
+async function acceptChallenge() {
+  if (!pendingChallenge) return;
+  document.getElementById('modal-challenge-incoming').classList.add('hidden');
+  const { key, data } = pendingChallenge;
+  const myName = currentUser?.username || 'Spieler 2';
+  try {
+    await fbDB.ref('rooms/' + data.roomCode + '/players/p2').update({ name:myName, q:0, done:false, score:{correct:0,points:0} });
+    await fbDB.ref('challenges/' + currentUser.uid + '/' + key).remove();
+    onlineRoomCode=data.roomCode; onlineRole='guest'; onlineMySlot='p2'; onlineMaxPlayers=2;
+    onlineMyAnswers=[]; onlineWaitingForOpponent=false;
+    G.p2Name=myName; G.p1Name=data.fromUsername;
+    G.dGrade=data.grade; G.dSubject=data.subject; G.dSubcategory=data.subcategory;
+    G.dDifficulty=data.difficulty; G.dSource='ai';
+    pendingChallenge=null;
+    showOnlineWaitScreen(); startRoomListener();
+  } catch(e) { showToast('Fehler beim Beitreten: ' + e.message, 'error'); }
+}
+
+async function declineChallenge() {
+  if (!pendingChallenge) return;
+  document.getElementById('modal-challenge-incoming').classList.add('hidden');
+  const { key, data } = pendingChallenge;
+  await fbDB.ref('challenges/' + currentUser.uid + '/' + key).remove().catch(()=>{});
+  await fbDB.ref('rooms/' + data.roomCode).remove().catch(()=>{});
+  pendingChallenge = null;
+  showToast('Herausforderung abgelehnt', '');
+}
 
 // ── PWA Service Worker ──
 if ('serviceWorker' in navigator) {
@@ -2024,9 +2513,10 @@ function initFirebase() {
   const cfg = getFirebaseConfig() || DEFAULT_FB_CONFIG;
   try {
     try { fbApp = firebase.app('sd'); } catch { fbApp = firebase.initializeApp(cfg, 'sd'); }
-    fbDB = firebase.app('sd').database();
+    fbDB   = firebase.app('sd').database();
+    fbAuth = firebase.app('sd').auth();
     return true;
-  } catch(e) { fbApp = null; fbDB = null; console.error(e); return false; }
+  } catch(e) { fbApp = null; fbDB = null; fbAuth = null; console.error(e); return false; }
 }
 
 function generateRoomCode() {
