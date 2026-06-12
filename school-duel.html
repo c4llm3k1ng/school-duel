@@ -3484,7 +3484,7 @@ correct = 0-basierter Index der richtigen Antwort.`;
     const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { maxOutputTokens: 4096 } })
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { maxOutputTokens: 8192 } })
     });
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
@@ -3580,7 +3580,7 @@ Keine Erklärungen außerhalb des JSON!`;
   if (provider === 'gemini' || !provider) {
     const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
       method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ contents:[{parts:[{text: prompt}]}], generationConfig:{temperature:0.8,maxOutputTokens:3000} })
+      body: JSON.stringify({ contents:[{parts:[{text: prompt}]}], generationConfig:{temperature:0.8,maxOutputTokens:8192} })
     });
     const d = await res.json();
     if (d.error) throw new Error(d.error.message);
