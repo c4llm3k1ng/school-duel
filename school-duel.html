@@ -534,31 +534,48 @@
 <!-- ═══════════════════════════ MODAL: CHALLENGE SEND ═══════════════════════════ -->
 <div class="modal-backdrop hidden" id="modal-challenge-send">
   <div class="modal" style="max-width:520px;">
-    <div style="font-size:1.1rem;font-weight:700;margin-bottom:16px;" id="challenge-target-text"></div>
-    <div class="label">Klassenstufe</div>
-    <div class="pill-row" id="chal-grade-pills">
-      <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
-      <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
-      <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
-      <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+    <div style="font-size:1.1rem;font-weight:700;margin-bottom:12px;" id="challenge-target-text"></div>
+    <button class="all-random-btn" onclick="randomizeAll('chal')">🎲 Alles zufällig auswählen</button>
+    <div class="label">Fragenquelle</div>
+    <div class="pill-row" id="chal-source-pills">
+      <div class="pill active" data-val="ai">🤖 KI generiert</div>
+      <div class="pill" data-val="catalog">📚 Katalog</div>
     </div>
-    <div class="label">Fach</div>
-    <div class="pill-row" id="chal-subject-pills">
-      <div class="pill" data-val="Mathematik">📐 Mathe</div>
-      <div class="pill" data-val="Deutsch">📖 Deutsch</div>
-      <div class="pill" data-val="Englisch">🌍 Englisch</div>
-      <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
-      <div class="pill" data-val="Biologie">🌿 Biologie</div>
-      <div class="pill" data-val="Physik">⚡ Physik</div>
-      <div class="pill" data-val="Chemie">🧪 Chemie</div>
-      <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+    <div id="chal-catalog-wrap" style="display:none;margin-bottom:10px;">
+      <div class="label">Katalog wählen</div>
+      <select id="chal-catalog-select" class="form-input"></select>
     </div>
-    <div id="chal-subcat-wrap"></div>
+    <div id="chal-ai-wrap">
+      <div class="label">Klassenstufe</div>
+      <div class="pill-row" id="chal-grade-pills">
+        <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
+        <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
+        <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
+        <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+        <div class="pill pill-action dice" onclick="randomizePills('chal-grade-pills','_chalGrade')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixed('chal-grade-pills','_chalGrade')">∼ Mix</div>
+      </div>
+      <div class="label">Fach</div>
+      <div class="pill-row" id="chal-subject-pills">
+        <div class="pill" data-val="Mathematik">📐 Mathe</div>
+        <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+        <div class="pill" data-val="Englisch">🌍 Englisch</div>
+        <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+        <div class="pill" data-val="Biologie">🌿 Biologie</div>
+        <div class="pill" data-val="Physik">⚡ Physik</div>
+        <div class="pill" data-val="Chemie">🧪 Chemie</div>
+        <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+        <div class="pill pill-action dice" onclick="randomizePills('chal-subject-pills','_chalSubject')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixedSubject('chal-subject-pills','_chalSubject','chal')">∼ Mix</div>
+      </div>
+      <div id="chal-subcat-wrap"></div>
+    </div>
     <div class="label" style="margin-top:4px;">Schwierigkeit</div>
     <div class="pill-row" id="chal-diff-pills">
       <div class="pill" data-val="leicht">Leicht</div>
       <div class="pill active" data-val="mittel">Mittel</div>
       <div class="pill" data-val="schwer">Schwer</div>
+      <div class="pill pill-action dice" onclick="randomizePills('chal-diff-pills','_chalDiff')">🎲</div>
       <div class="pill pill-action mix" onclick="setMixedDiff('chal-diff-pills','_chalDiff')">∼ Mix</div>
     </div>
     <div class="form-row" style="margin-top:16px;">
@@ -2174,7 +2191,7 @@ function switchTab(tab) {
 // PILL SETUP
 // ═══════════════════════════════════════════════════════
 function setupPills(pid, key, cb) {
-  document.querySelectorAll('#' + pid + ' .pill').forEach(p => {
+  document.querySelectorAll('#' + pid + ' .pill:not(.pill-action)').forEach(p => {
     p.addEventListener('click', () => {
       document.querySelectorAll('#' + pid + ' .pill').forEach(x => x.classList.remove('active'));
       p.classList.add('active');
@@ -3609,6 +3626,7 @@ function randomizePills(pillsId, gKey) {
   if (pillsId === 'subject-pills')        renderSubcategoryPills('solo-subcategory-wrap', G[gKey], 'subcategory', checkSoloReady);
   if (pillsId === 'duel-subject-pills')   renderSubcategoryPills('duel-subcategory-wrap', G[gKey], 'dSubcategory', checkDuelReady);
   if (pillsId === 'online-subject-pills') renderSubcategoryPills('online-subcategory-wrap', G[gKey], 'dSubcategory', checkOnlineReady);
+  if (pillsId === 'chal-subject-pills')   renderSubcategoryPills('chal-subcat-wrap', G[gKey], '_chalSubcat', () => {});
   if (pillsId === 'grade-pills')          checkSoloReady?.();
   if (pillsId === 'duel-grade-pills')     checkDuelReady?.();
   if (pillsId === 'online-grade-pills')   checkOnlineReady?.();
@@ -3675,9 +3693,12 @@ function setMixedSubject(pillsId, key, mode) {
   gPill.classList.add('active');
   G[key] = 'gemischt';
   // hide subcategory row when mixed subjects
-  const scWrap = mode === 'solo' ? 'solo-subcategory-wrap' : (mode === 'online' ? 'online-subcategory-wrap' : 'duel-subcategory-wrap');
+  const scWrap = mode === 'solo' ? 'solo-subcategory-wrap'
+    : mode === 'online' ? 'online-subcategory-wrap'
+    : mode === 'chal'   ? 'chal-subcat-wrap'
+    : 'duel-subcategory-wrap';
   const el = document.getElementById(scWrap);
-  if (el) el.style.display = 'none';
+  if (el) { el.innerHTML = ''; el.style.display = 'none'; }
   if (mode === 'solo')   checkSoloReady?.();
   if (mode === 'duel')   checkDuelReady?.();
   if (mode === 'online') checkOnlineReady?.();
@@ -3716,6 +3737,16 @@ function setMixedSubcat(rowId, key) {
 }
 
 function randomizeAll(mode) {
+  if (mode === 'chal') {
+    randomizePills('chal-grade-pills', '_chalGrade');
+    randomizePills('chal-subject-pills', '_chalSubject');
+    randomizePills('chal-diff-pills', '_chalDiff');
+    setTimeout(() => {
+      const scRow = document.getElementById('chal-subcat-wrap-row');
+      if (scRow) randomizeSubcat('chal-subcat-wrap-row', '_chalSubcat');
+    }, 50);
+    return;
+  }
   const isOnline = mode === 'online';
   const isDuel   = mode === 'duel' || isOnline;
   const gPrefix  = isDuel ? (isOnline ? 'online-' : 'duel-') : '';
@@ -3851,35 +3882,73 @@ document.getElementById('screen-friends').addEventListener('animationend', () =>
 // CHALLENGE SEND
 // ═══════════════════════════════════════════════════════
 // Wire challenge send pills
-document.querySelectorAll('#chal-subject-pills .pill').forEach(p => {
+document.querySelectorAll('#chal-subject-pills .pill:not(.pill-action)').forEach(p => {
   p.addEventListener('click', () => {
     document.querySelectorAll('#chal-subject-pills .pill').forEach(x => x.classList.remove('active'));
     p.classList.add('active');
+    G._chalSubject = p.dataset.val;
     renderSubcategoryPills('chal-subcat-wrap', p.dataset.val, '_chalSubcat', () => {});
   });
 });
 setupPills('chal-grade-pills', '_chalGrade', () => {});
 setupPills('chal-diff-pills',  '_chalDiff',  () => {});
 
+// Source pills: toggle AI/Catalog sections
+document.querySelectorAll('#chal-source-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#chal-source-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    const isCat = p.dataset.val === 'catalog';
+    document.getElementById('chal-catalog-wrap').style.display = isCat ? '' : 'none';
+    document.getElementById('chal-ai-wrap').style.display      = isCat ? 'none' : '';
+  });
+});
+
 function openChallengeModal(targetUid, targetUsername) {
   chalTargetUid = targetUid;
   chalTargetUsername = targetUsername;
   document.getElementById('challenge-target-text').textContent = '⚔️ ' + targetUsername + ' herausfordern';
   // Reset pills
-  ['chal-grade-pills','chal-diff-pills'].forEach(id => document.querySelectorAll('#' + id + ' .pill').forEach(p => p.classList.remove('active')));
+  document.querySelectorAll('#chal-grade-pills .pill').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('#chal-subject-pills .pill').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('#chal-diff-pills .pill').forEach(p => p.classList.toggle('active', p.dataset.val === 'mittel'));
+  // Remove any injected gemischt pills from previous open
+  ['chal-grade-pills','chal-subject-pills','chal-diff-pills'].forEach(id => {
+    document.querySelectorAll('#' + id + ' .pill[data-val="gemischt"]').forEach(el => el.remove());
+  });
   document.getElementById('chal-subcat-wrap').innerHTML = '';
-  document.querySelectorAll('#chal-subject-pills .pill').forEach(x => x.classList.remove('active'));
+  G._chalGrade = ''; G._chalSubject = ''; G._chalSubcat = ''; G._chalDiff = 'mittel';
+  // Reset source to AI
+  document.querySelectorAll('#chal-source-pills .pill').forEach(p => p.classList.toggle('active', p.dataset.val === 'ai'));
+  document.getElementById('chal-catalog-wrap').style.display = 'none';
+  document.getElementById('chal-ai-wrap').style.display = '';
+  // Populate catalog select
+  const sel = document.getElementById('chal-catalog-select');
+  sel.innerHTML = '';
+  getCatalogs().forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c.id;
+    opt.textContent = c.name;
+    sel.appendChild(opt);
+  });
   document.getElementById('modal-challenge-send').classList.remove('hidden');
 }
 function closeChallengeModal() { document.getElementById('modal-challenge-send').classList.add('hidden'); }
 
 async function sendChallenge() {
-  const grade   = document.querySelector('#chal-grade-pills .pill.active')?.dataset.val;
-  const subject = document.querySelector('#chal-subject-pills .pill.active')?.dataset.val;
-  const subcat  = document.querySelector('#chal-subcat-wrap .pill.active')?.dataset.val;
-  const diff    = document.querySelector('#chal-diff-pills .pill.active')?.dataset.val || 'mittel';
-  if (!grade || !subject || !subcat) { showToast('Bitte Klasse, Fach und Themenbereich wählen', 'error'); return; }
+  const source    = document.querySelector('#chal-source-pills .pill.active')?.dataset.val || 'ai';
+  const grade     = document.querySelector('#chal-grade-pills .pill.active')?.dataset.val;
+  const subject   = document.querySelector('#chal-subject-pills .pill.active')?.dataset.val;
+  const subcat    = document.querySelector('#chal-subcat-wrap .pill.active')?.dataset.val;
+  const diff      = document.querySelector('#chal-diff-pills .pill.active')?.dataset.val || 'mittel';
+  const catalogId = document.getElementById('chal-catalog-select')?.value || '';
+
+  if (source === 'catalog') {
+    if (!catalogId) { showToast('Bitte einen Katalog wählen', 'error'); return; }
+  } else {
+    const subjectOk = subject === 'gemischt' || !!(subject && (subcat || grade === 'gemischt'));
+    if (!grade || !subjectOk) { showToast('Bitte Klasse und Fach (+ Thema) wählen', 'error'); return; }
+  }
 
   const myName = currentUser?.username || 'Spieler 1';
   const code   = generateRoomCode();
@@ -3889,19 +3958,22 @@ async function sendChallenge() {
   };
   await fbDB.ref('rooms/' + code).set({
     status:'waiting', hostName:myName, maxPlayers:2,
-    grade, subject, subcategory:subcat, difficulty:diff, source:'ai', catalogId:'',
+    grade: grade || '', subject: subject || '', subcategory: subcat || '',
+    difficulty: diff, source, catalogId,
     questions:[], players, createdAt:firebase.database.ServerValue.TIMESTAMP
   });
   const cKey = fbDB.ref('challenges/' + chalTargetUid).push().key;
   await fbDB.ref('challenges/' + chalTargetUid + '/' + cKey).set({
     fromUid:currentUser?.uid, fromUsername:myName, roomCode:code,
-    grade, subject, subcategory:subcat, difficulty:diff, status:'pending', sentAt:Date.now()
+    grade: grade || '', subject: subject || '', subcategory: subcat || '',
+    difficulty: diff, source, catalogId, status:'pending', sentAt:Date.now()
   });
   closeChallengeModal();
 
   onlineRoomCode=code; onlineRole='host'; onlineMySlot='p1'; onlineMaxPlayers=2;
   onlineMyAnswers=[]; onlineWaitingForOpponent=false;
-  G.p1Name=myName; G.dGrade=grade; G.dSubject=subject; G.dSubcategory=subcat; G.dDifficulty=diff; G.dSource='ai';
+  G.p1Name=myName; G.dGrade=grade||''; G.dSubject=subject||''; G.dSubcategory=subcat||'';
+  G.dDifficulty=diff; G.dSource=source; G.dCatalogId=catalogId;
   showOnlineWaitScreen(); startRoomListener();
   setTimeout(()=>fbDB.ref('rooms/'+code).remove().catch(()=>{}), 45*60*1000);
   showToast('Herausforderung gesendet! Warte auf Antwort…', 'success');
@@ -3918,9 +3990,17 @@ function startChallengeListener() {
     if (data?.status === 'pending') {
       pendingChallenge = { key: snap.key, data };
       document.getElementById('inc-challenge-from').textContent = data.fromUsername + ' fordert dich heraus!';
-      document.getElementById('inc-challenge-info').innerHTML =
-        '<strong>' + esc(data.subject) + '</strong> · ' + esc(data.subcategory) + ' · Klasse ' + data.grade + '<br>'
-        + '<span style="color:var(--muted);font-size:.82rem;">Schwierigkeit: ' + data.difficulty + '</span>';
+      if (data.source === 'catalog') {
+        const cat = getCatalogs().find(c => c.id === data.catalogId);
+        const catName = cat ? cat.name : (data.catalogId || 'Katalog');
+        document.getElementById('inc-challenge-info').innerHTML =
+          '📚 <strong>' + esc(catName) + '</strong><br>'
+          + '<span style="color:var(--muted);font-size:.82rem;">Schwierigkeit: ' + esc(data.difficulty) + '</span>';
+      } else {
+        document.getElementById('inc-challenge-info').innerHTML =
+          '<strong>' + esc(data.subject) + '</strong> · ' + esc(data.subcategory) + ' · Klasse ' + data.grade + '<br>'
+          + '<span style="color:var(--muted);font-size:.82rem;">Schwierigkeit: ' + esc(data.difficulty) + '</span>';
+      }
       document.getElementById('modal-challenge-incoming').classList.remove('hidden');
     }
   });
@@ -3937,8 +4017,8 @@ async function acceptChallenge() {
     onlineRoomCode=data.roomCode; onlineRole='guest'; onlineMySlot='p2'; onlineMaxPlayers=2;
     onlineMyAnswers=[]; onlineWaitingForOpponent=false;
     G.p2Name=myName; G.p1Name=data.fromUsername;
-    G.dGrade=data.grade; G.dSubject=data.subject; G.dSubcategory=data.subcategory;
-    G.dDifficulty=data.difficulty; G.dSource='ai';
+    G.dGrade=data.grade||''; G.dSubject=data.subject||''; G.dSubcategory=data.subcategory||'';
+    G.dDifficulty=data.difficulty; G.dSource=data.source||'ai'; G.dCatalogId=data.catalogId||'';
     pendingChallenge=null;
     showOnlineWaitScreen(); startRoomListener();
   } catch(e) { showToast('Fehler beim Beitreten: ' + e.message, 'error'); }
