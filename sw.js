@@ -1,4 +1,4 @@
-const CACHE = 'school-duel-v6';
+const CACHE = 'school-duel-v7';
 const CORE = [
   './school-duel.html',
   './manifest.json',

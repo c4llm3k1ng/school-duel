@@ -2205,16 +2205,8 @@ function showToast(msg, type) {
   toastTimer = setTimeout(() => t.classList.remove('show'), 2400);
 }
 
-// Init — override showScreen to trigger friends list load
-const _showScreenBase = showScreen;
-function showScreen(id) {
-  _showScreenBase(id);
-  if (id === 'screen-friends') renderFriendsList();
-}
-
-// Start auth (will navigate to auth or home screen)
-switchTab('solo');  // prepare home screen tabs
-initAuth();         // auth state will call showScreen appropriately
+// Init — tabs vorbereiten (Auth wird am Ende gestartet, nach allen let-Deklarationen)
+switchTab('solo');
 
 // ═══════════════════════════════════════════════════════
 // AUTH + USER SYSTEM
@@ -2653,6 +2645,16 @@ async function declineChallenge() {
   pendingChallenge = null;
   showToast('Herausforderung abgelehnt', '');
 }
+
+// ── showScreen override (nach allen Deklarationen) ──
+const _showScreenBase = showScreen;
+function showScreen(id) {
+  _showScreenBase(id);
+  if (id === 'screen-friends') renderFriendsList();
+}
+
+// ── App-Start (nach allen let-Deklarationen) ──
+initAuth();
 
 // ── PWA ──
 let pwaPrompt = null;
