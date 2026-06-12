@@ -102,12 +102,15 @@
   .topic-badge { display:inline-block; padding:4px 12px; border-radius:50px; background:rgba(108,99,255,.15); border:1px solid rgba(108,99,255,.3); color:var(--accent); font-size:.72rem; font-family:'Space Mono',monospace; margin-bottom:12px; }
   .origin-badge { display:inline-flex; gap:6px; flex-wrap:wrap; margin-bottom:10px; }
   .origin-chip { font-size:.68rem; font-family:'Space Mono',monospace; padding:3px 9px; border-radius:50px; background:var(--surface2); color:var(--muted); border:1px solid var(--border); }
-  .random-row { display:flex; align-items:center; gap:6px; margin-bottom:4px; }
-  .random-row .label { margin-bottom:0; flex:1; }
-  .dice-btn { border:none; background:var(--surface2); color:var(--text); border-radius:8px; padding:5px 10px; font-size:.8rem; cursor:pointer; border:1px solid var(--border); white-space:nowrap; }
-  .dice-btn:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
-  .pill[data-val="gemischt"] { border-color: var(--green); color: var(--green); }
-  .pill[data-val="gemischt"].active { background: var(--green); color: #fff; }
+  .pill-action { border-style:dashed !important; opacity:.75; font-size:.75rem !important; padding:5px 10px !important; }
+  .pill-action:hover { opacity:1; border-color:var(--accent) !important; color:var(--accent) !important; }
+  .pill-action.mix { border-color:var(--green) !important; color:var(--green) !important; }
+  .pill-action.mix:hover, .pill-action.mix.active { background:var(--green) !important; color:#fff !important; opacity:1; border-style:solid !important; }
+  .pill-action.dice:hover, .pill-action.dice.active { background:var(--accent) !important; color:#fff !important; border-style:solid !important; }
+  .pill[data-val="gemischt"] { border-color:var(--green); color:var(--green); }
+  .pill[data-val="gemischt"].active { background:var(--green); color:#fff; }
+  .all-random-btn { width:100%; background:none; border:1px dashed var(--border); color:var(--muted); border-radius:10px; padding:8px; font-size:.8rem; font-family:'Space Grotesk',sans-serif; cursor:pointer; margin-bottom:10px; transition:all .2s; }
+  .all-random-btn:hover { border-color:var(--accent); color:var(--accent); background:rgba(108,99,255,.07); }
   .question-text { font-size:1.15rem; font-weight:600; line-height:1.5; margin-bottom:22px; }
 
   /* ANSWERS */
@@ -647,23 +650,17 @@
   <!-- SOLO -->
   <div id="tab-solo">
     <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
-        <div class="label" style="margin-bottom:0;">Klassenstufe</div>
-        <div style="display:flex;gap:5px;">
-          <button class="dice-btn" onclick="randomizePills('grade-pills','grade')">🎲 Zufällig</button>
-          <button class="dice-btn" onclick="setMixed('grade-pills','grade')" title="Fragen aus verschiedenen Klassen">∼ Gemischt</button>
-        </div>
-      </div>
+      <button class="all-random-btn" onclick="randomizeAll('solo')">🎲 Alles zufällig auswählen</button>
+      <div class="label">Klassenstufe</div>
       <div class="pill-row" id="grade-pills">
         <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
         <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
         <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
         <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+        <div class="pill pill-action dice" onclick="randomizePills('grade-pills','grade')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixed('grade-pills','grade')">∼ Mix</div>
       </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;margin-top:10px;">
-        <div class="label" style="margin-bottom:0;">Fach</div>
-        <button class="dice-btn" onclick="randomizePills('subject-pills','subject')">🎲 Zufällig</button>
-      </div>
+      <div class="label">Fach</div>
       <div class="pill-row" id="subject-pills">
         <div class="pill" data-val="Mathematik">📐 Mathe</div>
         <div class="pill" data-val="Deutsch">📖 Deutsch</div>
@@ -673,6 +670,8 @@
         <div class="pill" data-val="Physik">⚡ Physik</div>
         <div class="pill" data-val="Chemie">🧪 Chemie</div>
         <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+        <div class="pill pill-action dice" onclick="randomizePills('subject-pills','subject')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixedSubject('subject-pills','subject','solo')">∼ Mix</div>
       </div>
       <div id="solo-subcategory-wrap" style="display:none;"></div>
       <div class="label">Schwierigkeitsgrad</div>
@@ -680,6 +679,7 @@
         <div class="pill" data-val="leicht">Leicht</div>
         <div class="pill active" data-val="mittel">Mittel</div>
         <div class="pill" data-val="schwer">Schwer</div>
+        <div class="pill pill-action dice" onclick="randomizePills('diff-pills','difficulty')">🎲</div>
       </div>
       <div class="label">Fragenquelle</div>
       <div class="pill-row" id="source-pills">
@@ -690,7 +690,6 @@
         <div class="label">Katalog wählen</div>
         <select id="solo-catalog-select" class="form-input"></select>
       </div>
-      <button class="btn btn-secondary" style="margin-bottom:8px;" onclick="randomizeAll('solo')">🎲 Alles zufällig</button>
       <button class="btn btn-primary" id="start-btn" disabled>Solo-Quiz starten →</button>
     </div>
   </div>
@@ -716,23 +715,17 @@
           <input class="name-input p2-input" id="p2-name" placeholder="z.B. Lisa" maxlength="16">
         </div>
       </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
-        <div class="label" style="margin-bottom:0;">Klassenstufe</div>
-        <div style="display:flex;gap:5px;">
-          <button class="dice-btn" onclick="randomizePills('duel-grade-pills','dGrade')">🎲 Zufällig</button>
-          <button class="dice-btn" onclick="setMixed('duel-grade-pills','dGrade')">∼ Gemischt</button>
-        </div>
-      </div>
+      <button class="all-random-btn" onclick="randomizeAll('duel')">🎲 Alles zufällig auswählen</button>
+      <div class="label">Klassenstufe</div>
       <div class="pill-row" id="duel-grade-pills">
         <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
         <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
         <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
         <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+        <div class="pill pill-action dice" onclick="randomizePills('duel-grade-pills','dGrade')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixed('duel-grade-pills','dGrade')">∼ Mix</div>
       </div>
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;margin-top:10px;">
-        <div class="label" style="margin-bottom:0;">Fach</div>
-        <button class="dice-btn" onclick="randomizePills('duel-subject-pills','dSubject')">🎲 Zufällig</button>
-      </div>
+      <div class="label">Fach</div>
       <div class="pill-row" id="duel-subject-pills">
         <div class="pill" data-val="Mathematik">📐 Mathe</div>
         <div class="pill" data-val="Deutsch">📖 Deutsch</div>
@@ -742,6 +735,8 @@
         <div class="pill" data-val="Physik">⚡ Physik</div>
         <div class="pill" data-val="Chemie">🧪 Chemie</div>
         <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+        <div class="pill pill-action dice" onclick="randomizePills('duel-subject-pills','dSubject')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixedSubject('duel-subject-pills','dSubject','duel')">∼ Mix</div>
       </div>
       <div id="duel-subcategory-wrap" style="display:none;"></div>
       <div class="label">Schwierigkeit</div>
@@ -749,6 +744,7 @@
         <div class="pill" data-val="leicht">Leicht</div>
         <div class="pill active" data-val="mittel">Mittel</div>
         <div class="pill" data-val="schwer">Schwer</div>
+        <div class="pill pill-action dice" onclick="randomizePills('duel-diff-pills','dDifficulty')">🎲</div>
       </div>
       <div class="label">Fragenquelle</div>
       <div class="pill-row" id="duel-source-pills">
@@ -759,7 +755,6 @@
         <div class="label">Katalog wählen</div>
         <select id="duel-catalog-select" class="form-input"></select>
       </div>
-      <button class="btn btn-secondary" style="margin-bottom:8px;" onclick="randomizeAll('duel')">🎲 Alles zufällig</button>
       <button class="btn btn-primary" id="duel-start-btn" disabled>Duell starten ⚔️</button>
     </div>
     </div><!-- /#duel-sub-local -->
@@ -770,12 +765,15 @@
         <div class="label">Dein Name</div>
         <input class="name-input" id="online-my-name" placeholder="z.B. Max" maxlength="16" style="width:100%;margin-bottom:18px;">
 
+        <button class="all-random-btn" onclick="randomizeAll('online')">🎲 Alles zufällig auswählen</button>
         <div class="label">Klassenstufe</div>
         <div class="pill-row" id="online-grade-pills">
           <div class="pill" data-val="5">Klasse 5</div><div class="pill" data-val="6">Klasse 6</div>
           <div class="pill" data-val="7">Klasse 7</div><div class="pill" data-val="8">Klasse 8</div>
           <div class="pill" data-val="9">Klasse 9</div><div class="pill" data-val="10">Klasse 10</div>
           <div class="pill" data-val="11">Klasse 11</div><div class="pill" data-val="12">Klasse 12</div>
+          <div class="pill pill-action dice" onclick="randomizePills('online-grade-pills','dGrade')">🎲</div>
+          <div class="pill pill-action mix" onclick="setMixed('online-grade-pills','dGrade')">∼ Mix</div>
         </div>
         <div class="label">Fach</div>
         <div class="pill-row" id="online-subject-pills">
@@ -787,6 +785,8 @@
           <div class="pill" data-val="Physik">⚡ Physik</div>
           <div class="pill" data-val="Chemie">🧪 Chemie</div>
           <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+          <div class="pill pill-action dice" onclick="randomizePills('online-subject-pills','dSubject')">🎲</div>
+          <div class="pill pill-action mix" onclick="setMixedSubject('online-subject-pills','dSubject','online')">∼ Mix</div>
         </div>
         <div id="online-subcategory-wrap" style="display:none;"></div>
         <div class="label">Schwierigkeit</div>
@@ -794,6 +794,7 @@
           <div class="pill" data-val="leicht">Leicht</div>
           <div class="pill active" data-val="mittel">Mittel</div>
           <div class="pill" data-val="schwer">Schwer</div>
+          <div class="pill pill-action dice" onclick="randomizePills('online-diff-pills','dDifficulty')">🎲</div>
         </div>
         <div class="label">Fragenquelle</div>
         <div class="pill-row" id="online-source-pills">
@@ -1298,13 +1299,15 @@ function triggerPrefetch(mode) {
 }
 
 function checkSoloReady() {
-  const aiOk  = G.source === 'ai' && !!(G.subject && G.subcategory);
+  const subjectOk = G.subject === 'gemischt' || !!(G.subject && G.subcategory);
+  const aiOk  = G.source === 'ai' && subjectOk;
   const catOk = G.source === 'catalog' && !!G.catalogId;
   const ready = !!(G.grade && (aiOk || catOk));
   document.getElementById('start-btn').disabled = !ready;
 }
 function checkDuelReady() {
-  const aiOk  = G.dSource === 'ai' && !!(G.dSubject && G.dSubcategory);
+  const subjectOk = G.dSubject === 'gemischt' || !!(G.dSubject && G.dSubcategory);
+  const aiOk  = G.dSource === 'ai' && subjectOk;
   const catOk = G.dSource === 'catalog' && !!G.dCatalogId;
   const ready = !!(G.dGrade && (aiOk || catOk));
   document.getElementById('duel-start-btn').disabled = !ready;
@@ -1543,8 +1546,9 @@ async function generateQuestionsAI() {
   // Handle mixed modes
   const gradeIsMixed  = grade  === 'gemischt';
   const subcatIsMixed = subcat === 'gemischt';
+  const subjIsMixed   = subj   === 'gemischt';
 
-  if (gradeIsMixed || subcatIsMixed) {
+  if (gradeIsMixed || subcatIsMixed || subjIsMixed) {
     return generateMixedAI(subj, subcat, grade, diff);
   }
 
@@ -1561,11 +1565,12 @@ async function generateMixedAI(subj, subcat, grade, diff) {
 
   const gradeIsMixed  = grade  === 'gemischt';
   const subcatIsMixed = subcat === 'gemischt';
-  const availSubs = SUBCATEGORIES[subj] || [];
+  const subjIsMixed   = subj   === 'gemischt';
+  const availSubs = subjIsMixed ? [] : (SUBCATEGORIES[subj] || []);
 
   let gradeHint  = gradeIsMixed  ? 'verschiedene Klassenstufen (5–12), je Frage passend'   : grade + '. Klasse';
-  let subcatHint = subcatIsMixed ? 'verschiedene Themenbereiche (' + availSubs.join(', ') + ')' : (subcat || 'Allgemein');
-  let subjHint   = subj === 'gemischt' ? 'verschiedene Schulfächer' : subj;
+  let subcatHint = subjIsMixed ? 'je Fach passend' : (subcatIsMixed ? 'verschiedene Themenbereiche (' + availSubs.join(', ') + ')' : (subcat || 'Allgemein'));
+  let subjHint   = subjIsMixed   ? 'verschiedene Schulfächer (' + SUBJECTS.join(', ') + ')' : subj;
 
   const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle 8 abwechslungsreiche Multiple-Choice-Quizfragen:
 - Fach: ${subjHint}
@@ -2557,10 +2562,12 @@ function randomizePills(pillsId, gKey) {
   pick.classList.add('active');
   G[gKey] = pick.dataset.val;
   // trigger subject subcategory update if needed
-  if (pillsId === 'subject-pills')       renderSubcategoryPills('solo-subcategory-wrap', G[gKey], 'subcategory', checkSoloReady);
-  if (pillsId === 'duel-subject-pills')  renderSubcategoryPills('duel-subcategory-wrap', G[gKey], 'dSubcategory', checkDuelReady);
-  if (pillsId === 'grade-pills')         checkSoloReady?.();
-  if (pillsId === 'duel-grade-pills')    checkDuelReady?.();
+  if (pillsId === 'subject-pills')        renderSubcategoryPills('solo-subcategory-wrap', G[gKey], 'subcategory', checkSoloReady);
+  if (pillsId === 'duel-subject-pills')   renderSubcategoryPills('duel-subcategory-wrap', G[gKey], 'dSubcategory', checkDuelReady);
+  if (pillsId === 'online-subject-pills') renderSubcategoryPills('online-subcategory-wrap', G[gKey], 'dSubcategory', checkOnlineReady);
+  if (pillsId === 'grade-pills')          checkSoloReady?.();
+  if (pillsId === 'duel-grade-pills')     checkDuelReady?.();
+  if (pillsId === 'online-grade-pills')   checkOnlineReady?.();
 }
 
 function setMixed(pillsId, gKey) {
@@ -2582,7 +2589,34 @@ function setMixed(pillsId, gKey) {
   gPill.classList.add('active');
   G[gKey] = 'gemischt';
   if (gKey === 'grade')  checkSoloReady?.();
-  if (gKey === 'dGrade') checkDuelReady?.();
+  if (gKey === 'dGrade') { checkDuelReady?.(); checkOnlineReady?.(); }
+}
+
+function setMixedSubject(pillsId, key, mode) {
+  document.querySelectorAll('#' + pillsId + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active'));
+  let gPill = document.querySelector('#' + pillsId + ' .pill[data-val="gemischt"]');
+  if (!gPill) {
+    gPill = document.createElement('div');
+    gPill.className = 'pill';
+    gPill.dataset.val = 'gemischt';
+    gPill.textContent = '∼ Gemischt';
+    const firstAction = document.querySelector('#' + pillsId + ' .pill-action');
+    document.getElementById(pillsId).insertBefore(gPill, firstAction || null);
+    gPill.addEventListener('click', () => {
+      document.querySelectorAll('#' + pillsId + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active'));
+      gPill.classList.add('active');
+      G[key] = 'gemischt';
+    });
+  }
+  gPill.classList.add('active');
+  G[key] = 'gemischt';
+  // hide subcategory row when mixed subjects
+  const scWrap = mode === 'solo' ? 'solo-subcategory-wrap' : (mode === 'online' ? 'online-subcategory-wrap' : 'duel-subcategory-wrap');
+  const el = document.getElementById(scWrap);
+  if (el) el.style.display = 'none';
+  if (mode === 'solo')   checkSoloReady?.();
+  if (mode === 'duel')   checkDuelReady?.();
+  if (mode === 'online') checkOnlineReady?.();
 }
 
 function randomizeSubcat(rowId, key) {
@@ -2618,14 +2652,18 @@ function setMixedSubcat(rowId, key) {
 }
 
 function randomizeAll(mode) {
-  const gPrefix = mode === 'duel' ? 'duel-' : '';
-  const gKey    = mode === 'duel' ? 'dGrade' : 'grade';
-  const sKey    = mode === 'duel' ? 'dSubject' : 'subject';
-  const scKey   = mode === 'duel' ? 'dSubcategory' : 'subcategory';
-  const scWrap  = mode === 'duel' ? 'duel-subcategory-wrap' : 'solo-subcategory-wrap';
+  const isOnline = mode === 'online';
+  const isDuel   = mode === 'duel' || isOnline;
+  const gPrefix  = isDuel ? (isOnline ? 'online-' : 'duel-') : '';
+  const gKey     = isDuel ? 'dGrade' : 'grade';
+  const sKey     = isDuel ? 'dSubject' : 'subject';
+  const scKey    = isDuel ? 'dSubcategory' : 'subcategory';
+  const scWrap   = isOnline ? 'online-subcategory-wrap' : (isDuel ? 'duel-subcategory-wrap' : 'solo-subcategory-wrap');
+  const readyCb  = isOnline ? checkOnlineReady : (isDuel ? checkDuelReady : checkSoloReady);
   randomizePills(gPrefix + 'grade-pills', gKey);
   randomizePills(gPrefix + 'subject-pills', sKey);
-  renderSubcategoryPills(scWrap, G[sKey], scKey, mode === 'duel' ? checkDuelReady : checkSoloReady);
+  if (isDuel || mode === 'solo') randomizePills(gPrefix + 'diff-pills', isDuel ? 'dDifficulty' : 'difficulty');
+  renderSubcategoryPills(scWrap, G[sKey], scKey, readyCb);
   setTimeout(() => {
     const scRow = document.getElementById(scWrap + '-row');
     if (scRow) randomizeSubcat(scWrap + '-row', scKey);
@@ -2937,7 +2975,8 @@ document.querySelectorAll('#online-source-pills .pill').forEach(p => {
 document.getElementById('online-catalog-select').addEventListener('change', e => { G.dCatalogId = e.target.value || null; checkOnlineReady(); });
 
 function checkOnlineReady() {
-  const aiOk  = G.dSource === 'ai' && !!(G.dSubject && G.dSubcategory);
+  const subjectOk = G.dSubject === 'gemischt' || !!(G.dSubject && G.dSubcategory);
+  const aiOk  = G.dSource === 'ai' && subjectOk;
   const catOk = G.dSource === 'catalog' && !!G.dCatalogId;
   document.getElementById('online-create-btn').disabled = !(G.dGrade && (aiOk || catOk));
 }
