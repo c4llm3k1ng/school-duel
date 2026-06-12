@@ -3083,7 +3083,8 @@ async function _advanceOnlinePlayer(isCorrect, gained) {
 // ── start game (host) ──
 async function startOnlineGame() {
   const room = onlineLastRoom;
-  if (!room || !room.guestName) { showToast('Kein Mitspieler verbunden', 'error'); return; }
+  const playerCount = Object.keys(room?.players || {}).length;
+  if (!room || playerCount < 2) { showToast('Kein Mitspieler verbunden', 'error'); return; }
   showScreen('screen-loading');
   startLoadingMessages();
   try {
