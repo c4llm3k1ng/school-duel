@@ -54,8 +54,9 @@
   .btn-secondary:hover { border-color:var(--accent); color:var(--accent); }
 
   /* NAV TABS */
-  .nav-tabs { display:flex; gap:6px; margin-bottom:20px; }
-  .nav-tab { flex:1; padding:10px; border-radius:10px; border:1px solid var(--border); background:var(--surface2); color:var(--muted); font-family:'Space Grotesk',sans-serif; font-size:.85rem; font-weight:600; cursor:pointer; transition:all .15s; text-align:center; }
+  .nav-tabs { display:flex; gap:6px; margin-bottom:20px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding-bottom:2px; }
+  .nav-tabs::-webkit-scrollbar { display:none; }
+  .nav-tab { flex-shrink:0; padding:10px 14px; border-radius:10px; border:1px solid var(--border); background:var(--surface2); color:var(--muted); font-family:'Space Grotesk',sans-serif; font-size:.85rem; font-weight:600; cursor:pointer; transition:all .15s; text-align:center; white-space:nowrap; }
   .nav-tab:hover { border-color:var(--accent); color:var(--text); }
   .nav-tab.active { background:rgba(108,99,255,.15); border-color:var(--accent); color:var(--accent); }
 
@@ -335,6 +336,7 @@
     <div class="nav-tab"        id="tab-btn-duel"    onclick="switchTab('duel')">⚔️ Duell</div>
     <div class="nav-tab"        id="tab-btn-catalog" onclick="switchTab('catalog')">📚 Kataloge</div>
     <div class="nav-tab"        id="tab-btn-library" onclick="switchTab('library')">📖 Bibliothek</div>
+    <div class="nav-tab"        id="tab-btn-practice" onclick="switchTab('practice')">🔁 Üben</div>
   </div>
 
   <!-- SOLO -->
@@ -517,6 +519,17 @@
     <div id="library-list-container">
       <div class="empty-state"><div class="es-icon">📡</div>Firebase öffnen und aktualisieren.</div>
     </div>
+  </div>
+
+  <!-- PRACTICE TAB -->
+  <div id="tab-practice" style="display:none;">
+    <div class="catalog-header">
+      <h2>🔁 Meine Übungsfragen</h2>
+      <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;color:var(--red);" onclick="clearHistory()">Verlauf löschen</button>
+    </div>
+    <div style="font-size:.82rem;color:var(--muted);margin-bottom:14px;">Falsch beantwortete Fragen — gespeichert in deinem Browser, nur für dich.</div>
+    <div id="practice-stats" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;"></div>
+    <div id="practice-list-container"></div>
   </div>
 </div>
 
@@ -755,12 +768,13 @@ function showScreen(id) {
 }
 
 function switchTab(tab) {
-  ['solo','duel','catalog','library'].forEach(t => {
+  ['solo','duel','catalog','library','practice'].forEach(t => {
     document.getElementById('tab-' + t).style.display = t === tab ? 'block' : 'none';
     document.getElementById('tab-btn-' + t).classList.toggle('active', t === tab);
   });
-  if (tab === 'catalog') renderCatalogList();
-  if (tab === 'library') refreshLibrary();
+  if (tab === 'catalog')  renderCatalogList();
+  if (tab === 'library')  refreshLibrary();
+  if (tab === 'practice') renderPracticeTab();
 }
 
 // ═══════════════════════════════════════════════════════
@@ -1289,6 +1303,7 @@ function showSoloResult() {
     row('Richtige Antworten', G.solo.correct + ' / ' + total) +
     row('Gesamtpunkte', G.solo.points) +
     row('Fazit', label, 'var(--gold)');
+  if (G.source !== 'practice') saveGameToHistory(G.questions, G.solo.answers, G.subject, G.subcategory, G.grade);
   showScreen('screen-result');
 }
 
@@ -1316,11 +1331,125 @@ function showDuelResult() {
     row('Fragen je Spieler', total) +
     row(G.p1Name + ' richtig', p1.correct + ' / ' + total) +
     row(G.p2Name + ' richtig', p2.correct + ' / ' + total);
+  const subj = G.mode === 'online' ? G.dSubject || G.subject : G.dSubject;
+  const subc = G.mode === 'online' ? G.dSubcategory || G.subcategory : G.dSubcategory;
+  const gr   = G.mode === 'online' ? G.dGrade || G.grade : G.dGrade;
+  if (G.mode === 'duel') {
+    saveGameToHistory(G.questions, G.p1.answers, subj, subc, gr);
+    saveGameToHistory(G.questions, G.p2.answers, subj, subc, gr);
+  } else if (G.mode === 'online') {
+    saveGameToHistory(G.questions, onlineMyAnswers, subj, subc, gr);
+  }
   showScreen('screen-duel-result');
 }
 
 function row(label, val, color) {
   return '<div class="stat-row"><span>' + label + '</span><span class="val"' + (color ? ' style="color:' + color + '"' : '') + '>' + val + '</span></div>';
+}
+
+// ── QUESTION HISTORY ──
+function getHistory() {
+  try { return JSON.parse(localStorage.getItem('sd_history') || '{}'); } catch { return {}; }
+}
+function saveHistory(h) { localStorage.setItem('sd_history', JSON.stringify(h)); }
+
+function saveGameToHistory(questions, answers, subject, subcategory, grade) {
+  if (!questions || !questions.length) return;
+  const h = getHistory();
+  const now = Date.now();
+  questions.forEach((q, i) => {
+    const key = q.question.slice(0, 80);
+    const wasCorrect = answers && answers[i] !== undefined && answers[i] === q.correct;
+    if (!h[key]) {
+      h[key] = { question: q.question, options: q.options, correct: q.correct,
+                 explanation: q.explanation || '', topic: q.topic || '',
+                 subject: subject || '', subcategory: subcategory || '', grade: grade || '',
+                 timesSeen: 0, timesWrong: 0, lastSeen: now };
+    }
+    h[key].timesSeen++;
+    if (!wasCorrect) h[key].timesWrong++;
+    h[key].lastSeen = now;
+  });
+  saveHistory(h);
+}
+
+function renderPracticeTab() {
+  const h = getHistory();
+  const all = Object.values(h);
+  const wrong = all.filter(q => q.timesWrong > 0).sort((a,b) => b.timesWrong - a.timesWrong);
+  const totalSeen = all.length;
+  const totalWrong = wrong.length;
+
+  // Stats cards
+  document.getElementById('practice-stats').innerHTML =
+    '<div class="card" style="text-align:center;padding:18px;">'
+    + '<div style="font-size:1.8rem;font-weight:700;color:var(--accent);">' + totalSeen + '</div>'
+    + '<div style="font-size:.8rem;color:var(--muted);">Fragen gesehen</div></div>'
+    + '<div class="card" style="text-align:center;padding:18px;">'
+    + '<div style="font-size:1.8rem;font-weight:700;color:var(--red);">' + totalWrong + '</div>'
+    + '<div style="font-size:.8rem;color:var(--muted);">davon falsch beantwortet</div></div>';
+
+  const c = document.getElementById('practice-list-container');
+  if (!wrong.length) {
+    c.innerHTML = '<div class="empty-state"><div class="es-icon">🎉</div>Noch keine falsch beantworteten Fragen gespeichert.<br>Spiele eine Runde um Fragen hier zu sammeln!</div>';
+    return;
+  }
+
+  // Group by subject
+  const bySubject = {};
+  wrong.forEach(q => {
+    const key = (q.subject || 'Sonstiges') + (q.subcategory ? ' · ' + q.subcategory : '');
+    if (!bySubject[key]) bySubject[key] = [];
+    bySubject[key].push(q);
+  });
+
+  let html = '';
+  Object.entries(bySubject).forEach(([subj, qs]) => {
+    html += '<div class="card" style="margin-bottom:12px;">'
+      + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">'
+      + '<div style="font-weight:700;font-size:.95rem;">' + esc(subj) + '</div>'
+      + '<div style="font-size:.78rem;color:var(--red);">' + qs.length + ' Fragen</div></div>'
+      + qs.slice(0,3).map(q =>
+          '<div style="font-size:.83rem;color:var(--muted);padding:6px 0;border-bottom:1px solid var(--border);">'
+          + '<span style="font-family:\'Space Mono\',monospace;font-size:.7rem;color:var(--red);margin-right:6px;">✗×' + q.timesWrong + '</span>'
+          + esc(q.question.slice(0,70)) + (q.question.length > 70 ? '…' : '') + '</div>'
+        ).join('')
+      + (qs.length > 3 ? '<div style="font-size:.78rem;color:var(--muted);padding-top:6px;">+ ' + (qs.length-3) + ' weitere…</div>' : '')
+      + '</div>';
+  });
+
+  html += '<button class="btn btn-primary" onclick="startPracticeSession()" style="margin-bottom:6px;">🔁 Übungsrunde starten (' + Math.min(8, wrong.length) + ' Fragen)</button>';
+  if (wrong.length > 8) {
+    html += '<div style="font-size:.78rem;color:var(--muted);text-align:center;margin-top:4px;">Fragen mit den meisten Fehlern werden bevorzugt</div>';
+  }
+  c.innerHTML = html;
+}
+
+function startPracticeSession() {
+  const h = getHistory();
+  const wrong = Object.values(h).filter(q => q.timesWrong > 0)
+    .sort((a,b) => b.timesWrong - a.timesWrong || b.lastSeen - a.lastSeen);
+  if (!wrong.length) { showToast('Keine Fragen zum Üben', 'error'); return; }
+  const pick = wrong.slice(0, Math.min(8, wrong.length));
+  G.mode = 'solo'; G.source = 'practice';
+  G.subject = 'Übung'; G.subcategory = null; G.grade = '–';
+  G.solo = { correct:0, points:0, answers:[] };
+  G.questions = pick.map(q => ({
+    question: q.question, options: q.options, correct: q.correct,
+    explanation: q.explanation, topic: q.topic || q.subject
+  }));
+  G.current = 0;
+  document.getElementById('q-total').textContent = G.questions.length;
+  setupQuizUI();
+  showScreen('screen-quiz');
+  renderQuestion();
+}
+
+function clearHistory() {
+  if (!confirm('Gesamten Fragenverlauf löschen?')) return;
+  localStorage.removeItem('sd_history');
+  renderPracticeTab();
+  showToast('Verlauf gelöscht', 'success');
 }
 
 // ── REVIEW ──
@@ -1592,6 +1721,14 @@ switchTab('solo');
 // ═══════════════════════════════════════════════════════
 // ONLINE DUEL — FIREBASE
 // ═══════════════════════════════════════════════════════
+const DEFAULT_FB_CONFIG = {
+  apiKey: "AIzaSyCGSqcQSKwU3JqcLfl7AXIIIbcShNOrjB8",
+  authDomain: "school-duel.firebaseapp.com",
+  databaseURL: "https://school-duel-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "school-duel",
+  storageBucket: "school-duel.appspot.com"
+};
+
 let fbApp = null;
 let fbDB  = null;
 let onlineRoomCode = null;
@@ -1608,8 +1745,7 @@ function getFirebaseConfig() {
 
 function initFirebase() {
   if (fbDB) return true;
-  const cfg = getFirebaseConfig();
-  if (!cfg) return false;
+  const cfg = getFirebaseConfig() || DEFAULT_FB_CONFIG;
   try {
     try { fbApp = firebase.app('sd'); } catch { fbApp = firebase.initializeApp(cfg, 'sd'); }
     fbDB = firebase.app('sd').database();
