@@ -3607,7 +3607,7 @@ function setupQuizUI() {
   const d = G.mode === 'duel' || G.mode === 'online';
   document.getElementById('duel-bar').style.display        = d ? 'grid'  : 'none';
   document.getElementById('duel-turn-badge').style.display = d ? 'block' : 'none';
-  document.getElementById('quiz-exit-btn').style.display   = d ? 'block' : 'none';
+  document.getElementById('quiz-exit-btn').style.display   = 'block';
 }
 
 function renderQuestion() {
