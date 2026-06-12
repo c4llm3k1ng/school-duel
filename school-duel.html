@@ -2442,13 +2442,31 @@ async function startQuiz() {
   }
 }
 
+function stripAnswerHint(q) {
+  // Remove trailing (hint) from question text if hint matches one of the answer options
+  const m = q.question.match(/^(.*?)\s*\(([^)]{1,90})\)(\s*\?)?$/);
+  if (!m) return q;
+  const hint = m[2].toLowerCase().trim();
+  const trailingQ = (m[3] || '').trim();
+  const isHint = q.options.some(opt => {
+    const o = opt.toLowerCase().trim();
+    const hFirst = hint.split(/[\s,]/)[0].trim();
+    return o === hint || hint.startsWith(o) || o.startsWith(hFirst) ||
+           (hFirst.length > 3 && (o.includes(hFirst) || hFirst.includes(o)));
+  });
+  if (!isHint) return q;
+  return { ...q, question: m[1].trim() + (trailingQ || '') };
+}
+
 async function loadQuestions() {
   const src   = G.mode === 'solo' ? G.source    : G.dSource;
   const catId = G.mode === 'solo' ? G.catalogId : G.dCatalogId;
   if (src === 'catalog') {
     const cat = getCatalogs().find(c => c.id === catId);
     if (!cat || !cat.questions.length) throw new Error('Katalog leer');
-    return [...cat.questions].sort(() => Math.random() - .5).slice(0, 8);
+    let qs = [...cat.questions].sort(() => Math.random() - .5).slice(0, 8);
+    if (cat.builtin) qs = qs.map(stripAnswerHint);
+    return qs;
   }
   // Check Firebase question bank first
   const grade  = G.mode === 'solo' ? G.grade       : G.dGrade;
