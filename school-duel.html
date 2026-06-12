@@ -1047,8 +1047,18 @@
 const TIMER_SEC = 20;
 const CIRC = 2 * Math.PI * 22;
 
-// ── Firebase / Online / Auth variables (declared early to avoid TDZ) ──
+// ── Constants + variables declared early to avoid TDZ ──
+const DEFAULT_FB_CONFIG = {
+  apiKey: "AIzaSyCGSqcQSKwU3JqcLfl7AXIIIbcShNOrjB8",
+  authDomain: "school-duel.firebaseapp.com",
+  databaseURL: "https://school-duel-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "school-duel",
+  storageBucket: "school-duel.appspot.com"
+};
+const QB_MAX = 504;
+
 let fbApp = null, fbDB = null, fbAuth = null;
+let libData = [];
 let onlineRoomCode = null, onlineRole = null, onlineMySlot = 'p1', onlineMaxPlayers = 2;
 let onlineRoomRef = null, onlineLastRoom = null;
 let onlineMyAnswers = [], onlineWaitingForOpponent = false;
@@ -2685,15 +2695,7 @@ if ('serviceWorker' in navigator) {
 // ═══════════════════════════════════════════════════════
 // ONLINE DUEL — FIREBASE
 // ═══════════════════════════════════════════════════════
-const DEFAULT_FB_CONFIG = {
-  apiKey: "AIzaSyCGSqcQSKwU3JqcLfl7AXIIIbcShNOrjB8",
-  authDomain: "school-duel.firebaseapp.com",
-  databaseURL: "https://school-duel-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "school-duel",
-  storageBucket: "school-duel.appspot.com"
-};
-
-// (firebase/online vars declared at top of script)
+// (DEFAULT_FB_CONFIG + firebase vars declared at top of script)
 
 function getFirebaseConfig() {
   try { return JSON.parse(localStorage.getItem('sd_firebase') || 'null'); } catch { return null; }
@@ -3169,8 +3171,7 @@ async function deleteFromQuestionBank(grade, subj, subcat) {
   try { await fbDB.ref(qbPath(grade, subj, subcat)).remove(); } catch(e) {}
 }
 
-const QB_MAX = 504;
-let libData = []; // indexed by button onclick
+// (QB_MAX + libData declared at top)
 
 // ── Library browser ──
 async function refreshLibrary() {
