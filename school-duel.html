@@ -3058,10 +3058,10 @@ function ensureBuiltinCatalogs() {
     { id:'cat_fussball_mittel',   name:'⚽ Fußball – Mittel',    desc:'Fortgeschrittenes Fußballwissen (334 Fragen)',         builtin:true, questions:FB_MITTEL },
     { id:'cat_fussball_schwer',   name:'⚽ Fußball – Schwer',    desc:'Experten- & Historikwissen (334 Fragen)',              builtin:true, questions:FB_SCHWER },
     { id:'cat_fussball_gemischt', name:'⚽ Fußball – Gemischt',  desc:'Alle Schwierigkeiten gemischt (1002 Fragen)',          builtin:true, questions:[...FB_LEICHT,...FB_MITTEL,...FB_SCHWER] },
-    { id:'cat_musik_leicht',      name:'🎵 Musik – Leicht',      desc:'Grundwissen Musik (280 Fragen)',                       builtin:true, questions:MU_LEICHT },
-    { id:'cat_musik_mittel',      name:'🎵 Musik – Mittel',      desc:'Musikwissen für Fortgeschrittene (280 Fragen)',        builtin:true, questions:MU_MITTEL },
-    { id:'cat_musik_schwer',      name:'🎵 Musik – Schwer',      desc:'Expertenwissen Musik (280 Fragen)',                    builtin:true, questions:MU_SCHWER },
-    { id:'cat_musik_gemischt',    name:'🎵 Musik – Gemischt',    desc:'Alle Schwierigkeiten gemischt (840 Fragen)',           builtin:true, questions:[...MU_LEICHT,...MU_MITTEL,...MU_SCHWER] },
+    { id:'cat_musik_leicht',      name:'🎵 Musik – Leicht',      desc:'Grundwissen Musik (273 Fragen)',                       builtin:true, questions:MU_LEICHT },
+    { id:'cat_musik_mittel',      name:'🎵 Musik – Mittel',      desc:'Musikwissen für Fortgeschrittene (286 Fragen)',        builtin:true, questions:MU_MITTEL },
+    { id:'cat_musik_schwer',      name:'🎵 Musik – Schwer',      desc:'Expertenwissen Musik (286 Fragen)',                    builtin:true, questions:MU_SCHWER },
+    { id:'cat_musik_gemischt',    name:'🎵 Musik – Gemischt',    desc:'Alle Schwierigkeiten gemischt (845 Fragen)',           builtin:true, questions:[...MU_LEICHT,...MU_MITTEL,...MU_SCHWER] },
   ];
   let cats = getCatalogs();
   const ids = BUILTIN.map(c => c.id);
@@ -4123,7 +4123,7 @@ function renderCatalogList() {
   c.innerHTML = '<div class="catalog-list">' + cats.map(cat =>
     '<div class="catalog-item">' +
       '<div><div class="ci-name">' + esc(cat.name) + (cat.builtin ? ' <span style="font-size:.65rem;background:rgba(108,99,255,.15);color:var(--accent);padding:1px 6px;border-radius:5px;vertical-align:middle;">eingebaut</span>' : '') + '</div>' +
-      '<div class="ci-meta">' + cat.questions.length + ' Frage' + (cat.questions.length !== 1 ? 'n' : '') + (cat.desc ? ' · ' + esc(cat.desc) : '') + '</div></div>' +
+      '<div class="ci-meta">' + (cat.desc ? esc(cat.desc) : cat.questions.length + ' Frage' + (cat.questions.length !== 1 ? 'n' : '')) + '</div></div>' +
       '<div class="catalog-item-actions">' +
         '<div class="icon-btn play" onclick="playCatalog(\'' + cat.id + '\')" title="Spielen">▶️</div>' +
         (cat.builtin ? '' : '<div class="icon-btn" onclick="editCatalog(\'' + cat.id + '\')" title="Bearbeiten">✏️</div>') +
