@@ -255,6 +255,24 @@
   .divider-or::before, .divider-or::after { content:''; position:absolute; top:50%; width:42%; height:1px; background:var(--border); }
   .divider-or::before { left:0; } .divider-or::after { right:0; }
 
+  /* SETTINGS / PROFILE */
+  .settings-section { margin-bottom:18px; padding-bottom:18px; border-bottom:1px solid var(--border); }
+  .settings-section:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+  .settings-section-title { font-size:.72rem; font-family:'Space Mono',monospace; color:var(--muted); letter-spacing:.08em; text-transform:uppercase; margin-bottom:12px; }
+
+  .stat-card-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:14px 0; }
+  .stat-card { background:var(--surface2); border-radius:10px; padding:14px; text-align:center; }
+  .stat-card-val { font-family:'Space Mono',monospace; font-size:1.6rem; font-weight:700; color:var(--accent); line-height:1; }
+  .stat-card-lbl { font-size:.72rem; color:var(--muted); margin-top:4px; }
+
+  .settings-btn { display:flex; align-items:center; gap:10px; width:100%; padding:11px 0; border:none; background:none; color:var(--text); font-family:'Space Grotesk',sans-serif; font-size:.9rem; cursor:pointer; border-bottom:1px solid var(--border); text-align:left; }
+  .settings-btn:last-child { border-bottom:none; }
+  .settings-btn:hover { color:var(--accent); }
+  .settings-btn .sb-icon { font-size:1.1rem; width:24px; }
+  .settings-btn .sb-label { flex:1; }
+  .settings-btn .sb-arrow { color:var(--muted); font-size:.8rem; }
+  .central-key-badge { font-size:.68rem; padding:2px 8px; border-radius:50px; background:rgba(62,207,142,.15); color:var(--green); border:1px solid rgba(62,207,142,.3); font-family:'Space Mono',monospace; }
+
   /* AUTH */
   .auth-wrap { max-width:400px; margin:0 auto; }
   .auth-input-wrap { margin-bottom:12px; }
@@ -428,6 +446,67 @@
   </div>
 </div>
 
+<!-- ═══════════════════════════ MODAL: PROFIL ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-profile">
+  <div class="modal">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;">
+      <div>
+        <div style="font-size:1.2rem;font-weight:700;" id="profile-username">–</div>
+        <div style="font-size:.75rem;color:var(--muted);font-family:'Space Mono',monospace;" id="profile-since"></div>
+      </div>
+      <button onclick="closeProfileModal()" style="border:none;background:none;color:var(--muted);font-size:1.2rem;cursor:pointer;">✕</button>
+    </div>
+    <div class="stat-card-grid" id="profile-stats-grid"></div>
+    <div style="font-size:.78rem;color:var(--muted);text-align:center;margin-bottom:14px;" id="profile-accuracy"></div>
+    <div class="settings-section">
+      <button class="settings-btn" onclick="closeProfileModal();showScreen('screen-friends')">
+        <span class="sb-icon">👥</span><span class="sb-label">Freunde</span><span class="sb-arrow">›</span>
+      </button>
+    </div>
+    <button class="btn btn-secondary" style="color:var(--red);border-color:var(--red);" onclick="doLogout();closeProfileModal()">Abmelden</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ MODAL: EINSTELLUNGEN ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-settings">
+  <div class="modal">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+      <h2 style="font-size:1.1rem;">⚙️ Einstellungen</h2>
+      <button onclick="closeSettingsModal()" style="border:none;background:none;color:var(--muted);font-size:1.2rem;cursor:pointer;">✕</button>
+    </div>
+
+    <!-- KI -->
+    <div class="settings-section">
+      <div class="settings-section-title">🤖 KI & Fragengeneration</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+        <div style="font-size:.85rem;">Zentraler API-Key
+          <span class="central-key-badge" id="central-key-badge" style="display:none;">Aktiv</span>
+        </div>
+        <button class="btn btn-secondary" style="width:auto;padding:6px 12px;font-size:.78rem;" onclick="openCentralKeySection()">Verwalten</button>
+      </div>
+      <div id="central-key-section" style="display:none;margin-bottom:10px;">
+        <div class="label">Gemini API-Key (für alle Nutzer)</div>
+        <input class="form-input" id="central-key-input" type="password" placeholder="AIza… (wird sicher in Firebase gespeichert)" style="margin-bottom:8px;">
+        <button class="btn btn-primary" style="padding:10px;" onclick="saveCentralKey()">Zentralen Key speichern ✓</button>
+      </div>
+      <button class="settings-btn" onclick="closeSettingsModal();openApiKeyModal()">
+        <span class="sb-icon">🔑</span><span class="sb-label">Persönlicher API-Key</span><span class="sb-arrow">›</span>
+      </button>
+    </div>
+
+    <!-- DIENSTE -->
+    <div class="settings-section">
+      <div class="settings-section-title">🔧 Dienste</div>
+      <button class="settings-btn" onclick="closeSettingsModal();openFirebaseModal()">
+        <span class="sb-icon">🔥</span><span class="sb-label">Firebase konfigurieren</span><span class="sb-arrow">›</span>
+      </button>
+      <button class="settings-btn" onclick="closeSettingsModal();openSupabaseModal()">
+        <span class="sb-icon">🟢</span><span class="sb-label">Supabase konfigurieren</span><span class="sb-arrow">›</span>
+      </button>
+    </div>
+  </div>
+</div>
+
 <!-- ═══════════════════════════ MODAL: CHALLENGE INCOMING ═══════════════════════════ -->
 <div class="modal-backdrop hidden" id="modal-challenge-incoming">
   <div class="challenge-popup">
@@ -542,12 +621,10 @@
 <div class="screen" id="screen-home">
   <div class="logo large"><span class="s">School</span> <span class="d">Duel</span></div>
   <div class="tagline">Lerne spielend – fordere dein Wissen heraus</div>
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-    <div id="user-badge" class="user-badge" style="display:none;" onclick="showScreen('screen-friends')">👤</div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+    <div id="user-badge" class="user-badge" style="display:none;" onclick="openProfileModal()">👤</div>
     <div style="display:flex;gap:8px;margin-left:auto;">
-      <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="openSupabaseModal()">🟢 Supabase</button>
-      <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="openApiKeyModal()">🔑 API-Key</button>
-      <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" id="logout-btn" style="display:none;" onclick="doLogout()">Abmelden</button>
+      <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.85rem;" onclick="openSettingsModal()">⚙️ Einstellungen</button>
     </div>
   </div>
 
@@ -1334,9 +1411,9 @@ async function loadQuestions() {
 }
 
 async function _fetchQuestions(grade, subj, subcat, diff, attempt = 1) {
-  const apiKey   = localStorage.getItem('sd_api_key');
-  const provider = localStorage.getItem('sd_provider') || 'gemini';
-  if (!apiKey) throw new Error('Kein API-Key gesetzt.');
+  const keyData = await getEffectiveApiKey();
+  if (!keyData) { openApiKeyModal(); throw new Error('Kein API-Key gesetzt.'); }
+  const apiKey = keyData.key, provider = keyData.provider;
   const MAX_ATTEMPTS = 3;
 
   const subcatLine = subcat && subcat !== 'Allgemein' ? `- Themenbereich: ${subcat}\n` : '';
@@ -1550,7 +1627,10 @@ function showSoloResult() {
     row('Richtige Antworten', G.solo.correct + ' / ' + total) +
     row('Gesamtpunkte', G.solo.points) +
     row('Fazit', label, 'var(--gold)');
-  if (G.source !== 'practice') saveGameToHistory(G.questions, G.solo.answers, G.subject, G.subcategory, G.grade);
+  if (G.source !== 'practice') {
+    saveGameToHistory(G.questions, G.solo.answers, G.subject, G.subcategory, G.grade);
+    updateStats(G.solo.correct, total, false);
+  }
   showScreen('screen-result');
 }
 
@@ -1584,8 +1664,12 @@ function showDuelResult() {
   if (G.mode === 'duel') {
     saveGameToHistory(G.questions, G.p1.answers, subj, subc, gr);
     saveGameToHistory(G.questions, G.p2.answers, subj, subc, gr);
+    updateStats(p1.correct, total, p1w);
   } else if (G.mode === 'online') {
     saveGameToHistory(G.questions, onlineMyAnswers, subj, subc, gr);
+    const myScore = onlineMySlot === 'p1' ? p1 : p2;
+    const isWin = p1w ? onlineMySlot === 'p1' : p2w ? onlineMySlot === 'p2' : false;
+    updateStats(myScore.correct, total, isWin);
   }
   showScreen('screen-duel-result');
 }
@@ -2165,8 +2249,6 @@ function initAuth() {
 function onUserLoggedIn() {
   const badge = document.getElementById('user-badge');
   if (badge) { badge.textContent = '👤 ' + currentUser.username; badge.style.display = 'inline-flex'; }
-  const lb = document.getElementById('logout-btn');
-  if (lb) lb.style.display = 'inline-block';
   startChallengeListener();
   // Only navigate if still on auth screen
   if (document.getElementById('screen-auth').classList.contains('active')) {
@@ -2177,8 +2259,6 @@ function onUserLoggedIn() {
 function onUserLoggedOut() {
   const badge = document.getElementById('user-badge');
   if (badge) badge.style.display = 'none';
-  const lb = document.getElementById('logout-btn');
-  if (lb) lb.style.display = 'none';
   if (challengeDbListener) {
     try { fbDB.ref('challenges/' + (currentUser?.uid || '')).off('child_added'); } catch {}
     challengeDbListener = null;
@@ -2250,6 +2330,103 @@ async function doLogin() {
     errEl.textContent = msg;
     btn.disabled = false; btn.textContent = 'Anmelden →';
   }
+}
+
+// ═══════════════════════════════════════════════════════
+// PROFIL MODAL
+// ═══════════════════════════════════════════════════════
+async function openProfileModal() {
+  if (!currentUser) { openSettingsModal(); return; }
+  document.getElementById('profile-username').textContent = '👤 ' + currentUser.username;
+  const since = currentUser.createdAt ? new Date(currentUser.createdAt).toLocaleDateString('de-DE',{month:'long',year:'numeric'}) : '';
+  document.getElementById('profile-since').textContent = since ? 'Dabei seit ' + since : '';
+  // Load fresh stats
+  try {
+    const snap = await fbDB.ref('users/' + currentUser.uid + '/stats').once('value');
+    const s = snap.val() || {gamesPlayed:0,duelWins:0,totalCorrect:0,totalQuestions:0};
+    const acc = s.totalQuestions > 0 ? Math.round(s.totalCorrect / s.totalQuestions * 100) : 0;
+    document.getElementById('profile-stats-grid').innerHTML =
+      statCard(s.gamesPlayed || 0, 'Spiele') +
+      statCard(s.duelWins || 0, 'Siege') +
+      statCard(s.totalCorrect || 0, 'Richtig') +
+      statCard(acc + '%', 'Genauigkeit');
+    document.getElementById('profile-accuracy').textContent =
+      s.totalQuestions > 0 ? s.totalCorrect + ' von ' + s.totalQuestions + ' Fragen richtig beantwortet' : 'Noch keine Spiele';
+  } catch {}
+  document.getElementById('modal-profile').classList.remove('hidden');
+}
+function statCard(val, lbl) {
+  return '<div class="stat-card"><div class="stat-card-val">' + val + '</div><div class="stat-card-lbl">' + lbl + '</div></div>';
+}
+function closeProfileModal() { document.getElementById('modal-profile').classList.add('hidden'); }
+document.getElementById('modal-profile').addEventListener('click', e => { if (e.target===document.getElementById('modal-profile')) closeProfileModal(); });
+
+// ═══════════════════════════════════════════════════════
+// SETTINGS MODAL
+// ═══════════════════════════════════════════════════════
+async function openSettingsModal() {
+  document.getElementById('central-key-section').style.display = 'none';
+  // Check if central key exists
+  try {
+    const snap = await fbDB.ref('config/geminiKey').once('value');
+    const hasCentral = !!(snap.val());
+    document.getElementById('central-key-badge').style.display = hasCentral ? 'inline' : 'none';
+  } catch { document.getElementById('central-key-badge').style.display = 'none'; }
+  document.getElementById('modal-settings').classList.remove('hidden');
+}
+function closeSettingsModal() { document.getElementById('modal-settings').classList.add('hidden'); }
+document.getElementById('modal-settings').addEventListener('click', e => { if (e.target===document.getElementById('modal-settings')) closeSettingsModal(); });
+
+function openCentralKeySection() {
+  const s = document.getElementById('central-key-section');
+  s.style.display = s.style.display === 'none' ? 'block' : 'none';
+}
+async function saveCentralKey() {
+  const key = document.getElementById('central-key-input').value.trim();
+  if (!key) { showToast('Bitte Key eingeben', 'error'); return; }
+  if (!initFirebase()) { showToast('Firebase Fehler', 'error'); return; }
+  try {
+    await fbDB.ref('config').set({ geminiKey: key, provider: 'gemini' });
+    document.getElementById('central-key-input').value = '';
+    document.getElementById('central-key-badge').style.display = 'inline';
+    document.getElementById('central-key-section').style.display = 'none';
+    showToast('Zentraler Key gespeichert ✓', 'success');
+  } catch(e) { showToast('Fehler: ' + e.message, 'error'); }
+}
+
+// ═══════════════════════════════════════════════════════
+// CENTRAL API KEY
+// ═══════════════════════════════════════════════════════
+async function getEffectiveApiKey() {
+  // Try central key in Firebase first
+  if (initFirebase()) {
+    try {
+      const snap = await fbDB.ref('config').once('value');
+      const cfg = snap.val();
+      if (cfg?.geminiKey) return { key: cfg.geminiKey, provider: cfg.provider || 'gemini' };
+    } catch {}
+  }
+  // Fall back to personal key
+  const key = localStorage.getItem('sd_api_key');
+  const provider = localStorage.getItem('sd_provider') || 'gemini';
+  return key ? { key, provider } : null;
+}
+
+// ═══════════════════════════════════════════════════════
+// STATS TRACKING
+// ═══════════════════════════════════════════════════════
+async function updateStats(correct, total, isWin) {
+  if (!currentUser || !initFirebase()) return;
+  try {
+    const snap = await fbDB.ref('users/' + currentUser.uid + '/stats').once('value');
+    const s = snap.val() || {gamesPlayed:0,duelWins:0,totalCorrect:0,totalQuestions:0};
+    await fbDB.ref('users/' + currentUser.uid + '/stats').set({
+      gamesPlayed:    (s.gamesPlayed    || 0) + 1,
+      duelWins:       (s.duelWins       || 0) + (isWin ? 1 : 0),
+      totalCorrect:   (s.totalCorrect   || 0) + correct,
+      totalQuestions: (s.totalQuestions || 0) + total
+    });
+  } catch {}
 }
 
 // ── Enter on input fields ──
