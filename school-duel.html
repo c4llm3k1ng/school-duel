@@ -2496,7 +2496,7 @@ async function removeFriend(uid) {
 }
 
 async function renderFriendsList() {
-  if (!currentUser) return;
+  if (!currentUser || !fbDB) return;
   const c = document.getElementById('friends-screen-content');
   c.innerHTML = '<div class="loading-state"><div class="spinner"></div></div>';
   try {
