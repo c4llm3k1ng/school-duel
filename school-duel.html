@@ -2277,7 +2277,7 @@ function switchAuthTab(tab) {
   document.getElementById('reg-error').textContent = '';
 }
 // reg grade pills
-setupPills('reg-grade-pills', '_regGrade', () => {});
+// (reg-grade-pills removed)
 
 async function doRegister() {
   const username = document.getElementById('reg-username').value.trim();
@@ -2292,6 +2292,7 @@ async function doRegister() {
   if (pw1 !== pw2)                                   { errEl.textContent = 'Passwörter stimmen nicht überein'; return; }
   if (!initFirebase())                               { errEl.textContent = 'Firebase nicht verfügbar'; return; }
 
+  if (!fbAuth) { errEl.textContent = 'Auth nicht geladen – Seite neu laden'; return; }
   const btn = document.getElementById('reg-btn');
   btn.disabled = true; btn.textContent = 'Bitte warten…';
   try {
@@ -2303,7 +2304,10 @@ async function doRegister() {
     await fbDB.ref('users/' + uid).set({ username, createdAt: Date.now(), stats: {gamesPlayed:0,wins:0,correctAnswers:0} });
     await fbDB.ref('usernames/' + username.toLowerCase()).set(uid);
   } catch(e) {
-    errEl.textContent = e.message;
+    const msg = e.code === 'auth/email-already-in-use' ? 'Benutzername bereits vergeben'
+              : e.code === 'auth/weak-password' ? 'Passwort zu schwach'
+              : e.message;
+    errEl.textContent = msg;
     btn.disabled = false; btn.textContent = 'Registrieren →';
   }
 }
