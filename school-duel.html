@@ -3367,29 +3367,27 @@ async function startQuiz() {
     stopLoadingMessages();
     const isQuota = /quota|RESOURCE_EXHAUSTED|429|rate.?limit/i.test(e.message || '');
     const isNoKey = e.message === 'Kein API-Key gesetzt.';
-    if (isQuota && (G.dSource === 'ai' || G.source === 'ai')) {
-      // AI quota hit → silently fall back to a random builtin catalog
-      const builtins = getCatalogs().filter(c => c.builtin && c.questions.length >= 8);
-      if (builtins.length) {
-        const fallback = builtins[Math.floor(Math.random() * builtins.length)];
-        if (G.mode === 'solo') { G.source = 'catalog'; G.catalogId = fallback.id; }
-        else                   { G.dSource = 'catalog'; G.dCatalogId = fallback.id; }
-        showToast('KI-Limit erreicht – spiele mit Katalog "' + fallback.name + '"', '');
-        try {
-          G.questions = await loadQuestions();
-          stopLoadingMessages();
-          document.getElementById('q-total').textContent = G.questions.length;
-          setupQuizUI();
-          showScreen('screen-quiz');
-          renderQuestion();
-          return;
-        } catch(_) {}
+    if (isQuota) {
+      // AI quota hit → pick 8 random questions directly from in-memory arrays (no localStorage needed)
+      const pool = [];
+      if (typeof FB_LEICHT !== 'undefined') pool.push(...FB_LEICHT);
+      if (typeof FB_MITTEL !== 'undefined') pool.push(...FB_MITTEL);
+      if (typeof MU_LEICHT !== 'undefined') pool.push(...MU_LEICHT);
+      if (typeof MU_MITTEL !== 'undefined') pool.push(...MU_MITTEL);
+      if (pool.length >= 8) {
+        G.questions = pool.sort(() => Math.random() - .5).slice(0, 8).map(stripAnswerHint);
+        showToast('KI-Limit erreicht – Fragen aus eingebautem Katalog', '');
+        document.getElementById('q-total').textContent = G.questions.length;
+        setupQuizUI();
+        showScreen('screen-quiz');
+        renderQuestion();
+        return;
       }
     }
     const msg = isNoKey
       ? 'Bitte zuerst API-Key setzen (🔑-Button).'
       : isQuota
-        ? 'API-Limit erreicht. Bitte morgen erneut versuchen oder Katalog-Modus nutzen.'
+        ? 'API-Limit erreicht. Bitte Katalog-Modus nutzen.'
         : 'Fehler: ' + (e.message || 'Bitte nochmal versuchen.');
     document.getElementById('loading-text').textContent = msg;
     setTimeout(() => showScreen('screen-home'), 3500);
