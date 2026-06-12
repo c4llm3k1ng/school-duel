@@ -5462,7 +5462,9 @@ async function loadFromQuestionBank(grade, subj, subcat) {
   try {
     const snap = await fbDB.ref(qbPath(grade, subj, subcat)).once('value');
     const data = snap.val();
-    if (data && Array.isArray(data.questions) && data.questions.length >= 8) return data.questions;
+    if (data && Array.isArray(data.questions) && data.questions.length >= 8) {
+      return data.questions.map(q => ({ ...q, correct: Math.max(0, Math.min(3, parseInt(q.answer ?? q.correct, 10) || 0)) }));
+    }
   } catch(e) {}
   return null;
 }
