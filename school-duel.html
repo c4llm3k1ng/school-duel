@@ -4515,7 +4515,11 @@ async function getEffectiveApiKey() {
       const snap = await fbDB.ref('config').once('value');
       const cfg = snap.val();
       if (cfg?.geminiKey) return { key: cfg.geminiKey, provider: cfg.provider || 'gemini' };
-    } catch {}
+    } catch(e) {
+      console.warn('Central key read failed:', e.message);
+      // Firebase rules likely block read – show hint
+      showToast('⚠️ Zentralkey nicht lesbar (Firebase-Regeln)', 'error');
+    }
   }
   // Fall back to personal key
   const key = localStorage.getItem('sd_api_key');
