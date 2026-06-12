@@ -1,0 +1,2157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Duel</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+  :root {
+    --bg: #0d0f1a; --surface: #161927; --surface2: #1e2235; --border: #2a2f48;
+    --accent: #6c63ff; --accent2: #ff6584; --gold: #f5c842;
+    --green: #3ecf8e; --red: #ff4757;
+    --p1: #6c63ff; --p2: #ff6584;
+    --text: #e8eaf6; --muted: #7b82a8; --radius: 14px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh; display: flex; align-items: center;
+    justify-content: center; padding: 20px;
+  }
+  .app { width: 100%; max-width: 720px; }
+  .screen { display: none; animation: fadeIn .3s ease; }
+  .screen.active { display: block; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+
+  /* LOGO */
+  .logo { font-family:'Space Mono',monospace; font-weight:700; letter-spacing:-1px; text-align:center; margin-bottom:6px; }
+  .logo.large { font-size:2.4rem; }
+  .logo.small { font-size:1.4rem; margin-bottom:20px; }
+  .logo .s { color:var(--accent); } .logo .d { color:var(--accent2); }
+  .tagline { text-align:center; color:var(--muted); font-size:.95rem; margin-bottom:32px; }
+
+  /* CARD */
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:28px; margin-bottom:14px; }
+
+  /* LABEL */
+  .label { font-size:.72rem; font-family:'Space Mono',monospace; color:var(--muted); letter-spacing:.08em; text-transform:uppercase; margin-bottom:10px; }
+
+  /* PILLS */
+  .pill-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+  .pill { padding:8px 16px; border-radius:50px; border:1.5px solid var(--border); background:var(--surface2); color:var(--muted); font-size:.88rem; font-weight:500; cursor:pointer; transition:all .15s; user-select:none; }
+  .pill:hover { border-color:var(--accent); color:var(--text); }
+  .pill.active { border-color:var(--accent); background:rgba(108,99,255,.15); color:var(--accent); }
+
+  /* BUTTONS */
+  .btn { display:block; width:100%; padding:14px; border:none; border-radius:var(--radius); font-family:'Space Grotesk',sans-serif; font-size:1rem; font-weight:700; cursor:pointer; transition:all .15s; text-align:center; }
+  .btn-primary { background:var(--accent); color:#fff; }
+  .btn-primary:hover:not(:disabled) { background:#5a52e0; transform:translateY(-1px); }
+  .btn-primary:disabled { opacity:.35; cursor:not-allowed; transform:none; }
+  .btn-secondary { background:var(--surface2); color:var(--text); border:1px solid var(--border); margin-top:10px; }
+  .btn-secondary:hover { border-color:var(--accent); color:var(--accent); }
+
+  /* NAV TABS */
+  .nav-tabs { display:flex; gap:6px; margin-bottom:20px; }
+  .nav-tab { flex:1; padding:10px; border-radius:10px; border:1px solid var(--border); background:var(--surface2); color:var(--muted); font-family:'Space Grotesk',sans-serif; font-size:.85rem; font-weight:600; cursor:pointer; transition:all .15s; text-align:center; }
+  .nav-tab:hover { border-color:var(--accent); color:var(--text); }
+  .nav-tab.active { background:rgba(108,99,255,.15); border-color:var(--accent); color:var(--accent); }
+
+  /* INPUTS */
+  .form-input { width:100%; background:var(--surface2); border:1.5px solid var(--border); border-radius:9px; padding:10px 13px; color:var(--text); font-family:'Space Grotesk',sans-serif; font-size:.9rem; outline:none; transition:border-color .15s; }
+  .form-input:focus { border-color:var(--accent); }
+  textarea.form-input { resize:vertical; }
+
+  /* NAME ROW */
+  .name-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px; }
+  .name-label { font-size:.78rem; color:var(--muted); margin-bottom:6px; font-family:'Space Mono',monospace; }
+  .name-label.p1 { color:var(--p1); } .name-label.p2 { color:var(--p2); }
+  .name-input { background:var(--surface2); border:1.5px solid var(--border); border-radius:10px; padding:11px 14px; color:var(--text); font-family:'Space Grotesk',sans-serif; font-size:.95rem; width:100%; outline:none; transition:border-color .15s; }
+  .name-input:focus { border-color:var(--accent); }
+  .name-input.p2-input:focus { border-color:var(--accent2); }
+
+  /* QUIZ HEADER */
+  .quiz-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; }
+  .q-meta { font-family:'Space Mono',monospace; font-size:.8rem; color:var(--muted); }
+  .q-meta strong { color:var(--accent); }
+
+  /* PROGRESS */
+  .progress-bar { height:4px; background:var(--border); border-radius:2px; overflow:hidden; margin-bottom:24px; }
+  .progress-fill { height:100%; background:linear-gradient(90deg, var(--accent), var(--accent2)); border-radius:2px; transition:width .4s ease; }
+
+  /* TIMER */
+  .timer-ring { position:relative; width:52px; height:52px; flex-shrink:0; }
+  .timer-ring svg { transform:rotate(-90deg); }
+  .timer-ring circle { fill:none; stroke-width:4; }
+  .timer-track { stroke:var(--border); }
+  .timer-fill { stroke:var(--accent); stroke-dasharray:138; stroke-dashoffset:0; transition:stroke-dashoffset .9s linear, stroke .3s; stroke-linecap:round; }
+  .timer-fill.urgent { stroke:var(--red); }
+  .timer-label { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'Space Mono',monospace; font-size:.85rem; font-weight:700; }
+
+  /* QUESTION */
+  .topic-badge { display:inline-block; padding:4px 12px; border-radius:50px; background:rgba(108,99,255,.15); border:1px solid rgba(108,99,255,.3); color:var(--accent); font-size:.72rem; font-family:'Space Mono',monospace; margin-bottom:12px; }
+  .question-text { font-size:1.15rem; font-weight:600; line-height:1.5; margin-bottom:22px; }
+
+  /* ANSWERS */
+  .answers { display:grid; gap:9px; }
+  .answer-btn { padding:13px 16px; border:1.5px solid var(--border); border-radius:var(--radius); background:var(--surface2); color:var(--text); font-family:'Space Grotesk',sans-serif; font-size:.93rem; font-weight:500; cursor:pointer; text-align:left; transition:all .12s; display:flex; align-items:center; gap:12px; }
+  .answer-btn:hover:not(:disabled) { border-color:var(--accent); background:rgba(108,99,255,.1); }
+  .answer-btn .ans-letter { font-family:'Space Mono',monospace; font-size:.72rem; color:var(--muted); width:20px; flex-shrink:0; }
+  .answer-btn.correct { border-color:var(--green); background:rgba(62,207,142,.12); color:var(--green); }
+  .answer-btn.correct .ans-letter { color:var(--green); }
+  .answer-btn.wrong { border-color:var(--red); background:rgba(255,71,87,.12); color:var(--red); }
+  .answer-btn.wrong .ans-letter { color:var(--red); }
+  .answer-btn:disabled { cursor:not-allowed; }
+
+  /* FEEDBACK */
+  .feedback { margin-top:14px; padding:13px 16px; border-radius:var(--radius); font-size:.88rem; line-height:1.5; display:none; }
+  .feedback.correct { background:rgba(62,207,142,.1); border:1px solid rgba(62,207,142,.3); color:var(--green); }
+  .feedback.wrong   { background:rgba(255,71,87,.1);  border:1px solid rgba(255,71,87,.3);  color:#ff8a95; }
+  .feedback.timeout { background:rgba(245,200,66,.1); border:1px solid rgba(245,200,66,.3); color:var(--gold); }
+  .feedback.show { display:block; }
+  .points-flash { font-family:'Space Mono',monospace; font-size:.82rem; color:var(--gold); text-align:right; min-height:20px; margin-top:6px; }
+  .next-btn { margin-top:12px; padding:12px; width:100%; border:none; border-radius:var(--radius); background:var(--accent); color:#fff; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:.93rem; cursor:pointer; display:none; transition:all .15s; }
+  .next-btn:hover { background:#5a52e0; }
+  .next-btn.show { display:block; }
+
+  /* DUEL BAR */
+  .duel-bar { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:12px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:14px 20px; margin-bottom:14px; }
+  .duel-player { display:flex; flex-direction:column; }
+  .duel-player.right { align-items:flex-end; }
+  .duel-player-name { font-weight:700; font-size:.9rem; }
+  .duel-player-score { font-family:'Space Mono',monospace; font-size:1.4rem; font-weight:700; }
+  .duel-player.p1 .duel-player-name, .duel-player.p1 .duel-player-score { color:var(--p1); }
+  .duel-player.p2 .duel-player-name, .duel-player.p2 .duel-player-score { color:var(--p2); }
+  .duel-vs { font-family:'Space Mono',monospace; font-size:.75rem; color:var(--muted); text-align:center; }
+  .duel-turn-badge { text-align:center; font-size:.8rem; font-weight:600; padding:6px 14px; border-radius:50px; margin-bottom:14px; }
+  .duel-turn-badge.p1 { background:rgba(108,99,255,.15); color:var(--p1); border:1px solid rgba(108,99,255,.3); }
+  .duel-turn-badge.p2 { background:rgba(255,101,132,.15); color:var(--p2); border:1px solid rgba(255,101,132,.3); }
+
+  /* HANDOVER */
+  .handover-card { text-align:center; padding:48px 28px; }
+  .handover-icon { font-size:3.5rem; margin-bottom:16px; }
+  .handover-title { font-size:1.4rem; font-weight:700; margin-bottom:8px; }
+  .handover-sub { color:var(--muted); font-size:.9rem; margin-bottom:28px; }
+
+  /* RESULTS */
+  .score-big { text-align:center; margin:20px 0; }
+  .score-number { font-family:'Space Mono',monospace; font-size:3.6rem; font-weight:700; color:var(--accent); line-height:1; }
+  .score-denom { color:var(--muted); font-size:1.4rem; }
+  .score-label { color:var(--muted); font-size:.88rem; margin-top:4px; }
+  .score-emoji { font-size:3rem; text-align:center; margin-bottom:12px; }
+  .stat-row { display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid var(--border); font-size:.88rem; }
+  .stat-row:last-child { border-bottom:none; }
+  .stat-row .val { font-family:'Space Mono',monospace; color:var(--accent); }
+
+  /* DUEL RESULT */
+  .duel-result-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:20px 0; }
+  .duel-result-card { background:var(--surface2); border:1.5px solid var(--border); border-radius:var(--radius); padding:20px; text-align:center; }
+  .duel-result-card.winner { border-color:var(--gold); background:rgba(245,200,66,.08); }
+  .dr-crown { font-size:1.6rem; min-height:2rem; }
+  .dr-name { font-weight:700; font-size:.9rem; margin-bottom:4px; }
+  .dr-score { font-family:'Space Mono',monospace; font-size:2rem; font-weight:700; margin:8px 0; }
+  .duel-result-card.p1 .dr-score { color:var(--p1); }
+  .duel-result-card.p2 .dr-score { color:var(--p2); }
+  .winner-banner { text-align:center; font-size:1.1rem; font-weight:700; margin-bottom:6px; }
+  .winner-sub { text-align:center; color:var(--muted); font-size:.85rem; margin-bottom:20px; }
+
+  /* CATALOG LIST */
+  .catalog-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
+  .catalog-header h2 { font-size:1.2rem; font-weight:700; }
+  .catalog-list { display:flex; flex-direction:column; gap:10px; margin-bottom:16px; }
+  .catalog-item { background:var(--surface2); border:1.5px solid var(--border); border-radius:var(--radius); padding:16px 18px; display:flex; justify-content:space-between; align-items:center; transition:border-color .15s; }
+  .catalog-item:hover { border-color:var(--accent); }
+  .ci-name { font-weight:700; font-size:.95rem; }
+  .ci-meta { font-size:.78rem; color:var(--muted); margin-top:3px; }
+  .catalog-item-actions { display:flex; gap:8px; }
+  .icon-btn { width:34px; height:34px; border-radius:8px; border:1px solid var(--border); background:var(--surface); color:var(--muted); display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:.95rem; transition:all .15s; user-select:none; }
+  .icon-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .icon-btn.del:hover { border-color:var(--red); color:var(--red); }
+  .icon-btn.play:hover { border-color:var(--green); color:var(--green); }
+  .empty-state { text-align:center; padding:40px 20px; color:var(--muted); font-size:.9rem; }
+  .empty-state .es-icon { font-size:2.5rem; margin-bottom:12px; }
+
+  /* CATALOG EDITOR */
+  .editor-q-list { display:flex; flex-direction:column; gap:10px; margin-bottom:14px; }
+  .editor-q-item { background:var(--surface2); border:1px solid var(--border); border-radius:10px; padding:14px 16px; display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+  .editor-q-text { font-size:.88rem; line-height:1.4; flex:1; }
+  .editor-q-answer { font-size:.75rem; color:var(--green); margin-top:4px; font-family:'Space Mono',monospace; }
+
+  /* QUESTION FORM */
+  .q-form { background:var(--surface2); border:1.5px solid var(--accent); border-radius:var(--radius); padding:20px; margin-bottom:14px; }
+  .q-form-title { font-weight:700; font-size:.9rem; margin-bottom:14px; color:var(--accent); }
+  .form-field { margin-bottom:12px; }
+  .form-field label { display:block; font-size:.75rem; color:var(--muted); font-family:'Space Mono',monospace; margin-bottom:6px; }
+  .options-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .option-row { display:flex; align-items:center; gap:8px; }
+  .option-letter { font-family:'Space Mono',monospace; font-size:.75rem; color:var(--muted); width:16px; flex-shrink:0; }
+  .correct-radio { accent-color:var(--green); width:16px; height:16px; cursor:pointer; flex-shrink:0; }
+  .form-row { display:flex; gap:10px; }
+  .form-row .btn { flex:1; padding:11px; margin:0; }
+
+  /* CATALOG SELECT */
+  .catalog-select-wrap { margin-bottom:16px; }
+
+  /* LOADING */
+  .loading-state { text-align:center; padding:40px 20px; color:var(--muted); }
+  .spinner { width:38px; height:38px; border:3px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin .8s linear infinite; margin:0 auto 14px; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+
+  /* TOAST */
+  .toast { position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(80px); background:var(--surface); border:1px solid var(--border); border-radius:50px; padding:10px 20px; font-size:.88rem; font-weight:600; color:var(--text); transition:transform .3s ease; z-index:999; white-space:nowrap; pointer-events:none; }
+  .toast.show { transform:translateX(-50%) translateY(0); }
+  .toast.success { border-color:var(--green); color:var(--green); }
+  .toast.error   { border-color:var(--red);   color:var(--red); }
+
+  /* API KEY MODAL */
+  .modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; z-index:1000; padding:20px; }
+  .modal-backdrop.hidden { display:none; }
+  .modal { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:28px; width:100%; max-width:460px; }
+  .modal h2 { font-size:1.1rem; font-weight:700; margin-bottom:8px; }
+  .modal p { font-size:.85rem; color:var(--muted); line-height:1.5; margin-bottom:16px; }
+  .modal-note { font-size:.75rem; color:var(--muted); margin-top:10px; line-height:1.4; }
+  .api-key-indicator { display:flex; align-items:center; gap:8px; font-size:.78rem; color:var(--muted); font-family:'Space Mono',monospace; }
+  .api-key-indicator.set { color:var(--green); }
+  .api-key-dot { width:8px; height:8px; border-radius:50%; background:var(--muted); flex-shrink:0; }
+  .api-key-dot.set { background:var(--green); }
+
+  @media (max-width:480px) {
+    .name-row, .duel-result-grid, .options-grid { grid-template-columns:1fr; }
+    .nav-tab { font-size:.75rem; padding:8px 6px; }
+  }
+
+  /* ── ONLINE DUEL ── */
+  .sub-tabs { display:flex; gap:6px; margin-bottom:16px; }
+  .sub-tab { flex:1; padding:9px; border-radius:10px; border:1px solid var(--border); background:var(--surface2); color:var(--muted); font-family:'Space Grotesk',sans-serif; font-size:.85rem; font-weight:600; cursor:pointer; transition:all .15s; text-align:center; }
+  .sub-tab:hover { border-color:var(--accent); color:var(--text); }
+  .sub-tab.active { background:rgba(108,99,255,.18); border-color:var(--accent); color:var(--accent); }
+
+  .room-code-box { text-align:center; padding:22px 20px; background:var(--surface2); border:2px dashed var(--border); border-radius:var(--radius); margin:16px 0; }
+  .room-code-big { font-family:'Space Mono',monospace; font-size:2.6rem; font-weight:700; letter-spacing:.18em; color:var(--accent); }
+  .room-code-hint { color:var(--muted); font-size:.78rem; margin-top:8px; }
+
+  .wait-status { text-align:center; padding:13px; background:var(--surface2); border-radius:var(--radius); color:var(--muted); font-size:.9rem; margin-bottom:12px; }
+  .wait-status.joined { color:var(--green); border:1px solid rgba(62,207,142,.3); background:rgba(62,207,142,.08); }
+  .wait-status.error { color:var(--red); border:1px solid rgba(255,71,87,.3); background:rgba(255,71,87,.08); }
+
+  .dot-anim::after { content:''; animation:dots 1.4s steps(3,end) infinite; }
+  @keyframes dots { 0%{content:''} 33%{content:'.'} 66%{content:'..'} 100%{content:'...'} }
+
+  .opp-indicator { text-align:center; font-size:.8rem; font-family:'Space Mono',monospace; padding:7px 12px; border-radius:8px; margin-top:10px; }
+  .opp-indicator.thinking { color:var(--gold); background:rgba(245,200,66,.08); border:1px solid rgba(245,200,66,.2); }
+  .opp-indicator.done { color:var(--green); background:rgba(62,207,142,.08); border:1px solid rgba(62,207,142,.2); }
+
+  .divider-or { text-align:center; color:var(--muted); font-size:.82rem; padding:12px 0; position:relative; }
+  .divider-or::before, .divider-or::after { content:''; position:absolute; top:50%; width:42%; height:1px; background:var(--border); }
+  .divider-or::before { left:0; } .divider-or::after { right:0; }
+</style>
+<!-- Firebase Realtime Database SDK (compat) -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+</head>
+<body>
+<div class="app">
+
+<!-- ═══════════════════════════ API KEY MODAL ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-apikey">
+  <div class="modal">
+    <h2>🔑 KI-Anbieter & API-Key</h2>
+    <div class="form-field" style="margin-bottom:14px;">
+      <label>Anbieter wählen</label>
+      <div class="pill-row" id="provider-pills" style="margin-bottom:0;">
+        <div class="pill active" data-val="gemini" onclick="selectProvider('gemini')">✨ Google Gemini <span style="font-size:.7rem;color:var(--green);">kostenlos</span></div>
+        <div class="pill" data-val="anthropic" onclick="selectProvider('anthropic')">🤖 Anthropic Claude</div>
+      </div>
+    </div>
+    <div class="form-field">
+      <label id="apikey-label">API-Key (Google AI Studio)</label>
+      <input class="form-input" id="apikey-input" type="password" placeholder="AIza…">
+    </div>
+    <p class="modal-note" id="apikey-hint">Kostenloser Key unter <strong>aistudio.google.com</strong> → „Get API key". Kein Kreditkarte nötig.</p>
+    <p class="modal-note" style="margin-top:6px;">⚠️ Nur auf eigenem Gerät nutzen – Key nicht teilen.</p>
+    <div class="form-row" style="margin-top:16px;">
+      <button class="btn btn-secondary" onclick="closeApiKeyModal()">Abbrechen</button>
+      <button class="btn btn-primary" onclick="saveApiKey()">Speichern ✓</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ EXIT-BESTÄTIGUNG MODAL ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-exit">
+  <div class="modal">
+    <h2>⚠️ Spiel verlassen?</h2>
+    <p>Möchtest du das laufende Spiel wirklich verlassen?</p>
+    <p class="modal-note" style="color:var(--red);">Achtung: Das Spiel gilt dann als <strong>verloren</strong>. Die in diesem Spiel erreichten Fortschritte werden <strong>nicht gespeichert</strong>.</p>
+    <div class="form-row" style="margin-top:16px;">
+      <button class="btn btn-secondary" onclick="closeExitModal()">Weiterspielen</button>
+      <button class="btn btn-primary" style="background:var(--red);" onclick="exitQuizToHome()">Verlassen</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ FIREBASE CONFIG MODAL ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-firebase">
+  <div class="modal">
+    <h2>🔥 Firebase einrichten</h2>
+    <p>Für den Online-Duell-Modus benötigst du ein <strong>kostenloses</strong> Firebase-Projekt mit Realtime Database.</p>
+    <div class="form-field">
+      <label>API-Key</label>
+      <input class="form-input" id="fb-api-key" type="password" placeholder="AIzaSy…">
+    </div>
+    <div class="form-field" style="margin-top:10px;">
+      <label>Projekt-ID</label>
+      <input class="form-input" id="fb-project-id" placeholder="mein-schulduell-12345">
+    </div>
+    <div class="form-field" style="margin-top:10px;">
+      <label>Database URL</label>
+      <input class="form-input" id="fb-db-url" placeholder="https://mein-schulduell-12345-default-rtdb.firebaseio.com">
+    </div>
+    <p class="modal-note" style="margin-top:12px;">
+      <strong>Einmalig einrichten (ca. 3 Min.):</strong><br>
+      1. <strong>console.firebase.google.com</strong> → Projekt erstellen<br>
+      2. Build → Realtime Database → Erstellen (Region: europe-west1)<br>
+      3. Regeln-Tab → <code>".read": true, ".write": true</code> → Veröffentlichen<br>
+      4. Projekteinstellungen → Allgemein → API-Key &amp; Projekt-ID kopieren
+    </p>
+    <div class="form-row" style="margin-top:16px;">
+      <button class="btn btn-secondary" onclick="closeFirebaseModal()">Abbrechen</button>
+      <button class="btn btn-primary" onclick="saveFirebaseModal()">Speichern ✓</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: HOME ═══════════════════════════ -->
+<div class="screen active" id="screen-home">
+  <div class="logo large"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div class="tagline">Lerne spielend – fordere dein Wissen heraus</div>
+  <div style="text-align:right;margin-bottom:8px;">
+    <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="openApiKeyModal()">🔑 API-Key</button>
+  </div>
+
+  <div class="nav-tabs">
+    <div class="nav-tab active" id="tab-btn-solo"    onclick="switchTab('solo')">🎯 Solo</div>
+    <div class="nav-tab"        id="tab-btn-duel"    onclick="switchTab('duel')">⚔️ Duell</div>
+    <div class="nav-tab"        id="tab-btn-catalog" onclick="switchTab('catalog')">📚 Kataloge</div>
+    <div class="nav-tab"        id="tab-btn-library" onclick="switchTab('library')">📖 Bibliothek</div>
+  </div>
+
+  <!-- SOLO -->
+  <div id="tab-solo">
+    <div class="card">
+      <div class="label">Klassenstufe</div>
+      <div class="pill-row" id="grade-pills">
+        <div class="pill" data-val="5">Klasse 5</div><div class="pill" data-val="6">Klasse 6</div>
+        <div class="pill" data-val="7">Klasse 7</div><div class="pill" data-val="8">Klasse 8</div>
+        <div class="pill" data-val="9">Klasse 9</div><div class="pill" data-val="10">Klasse 10</div>
+        <div class="pill" data-val="11">Klasse 11</div><div class="pill" data-val="12">Klasse 12</div>
+      </div>
+      <div class="label">Fach</div>
+      <div class="pill-row" id="subject-pills">
+        <div class="pill" data-val="Mathematik">📐 Mathe</div>
+        <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+        <div class="pill" data-val="Englisch">🌍 Englisch</div>
+        <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+        <div class="pill" data-val="Biologie">🌿 Biologie</div>
+        <div class="pill" data-val="Physik">⚡ Physik</div>
+        <div class="pill" data-val="Chemie">🧪 Chemie</div>
+        <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+      </div>
+      <div id="solo-subcategory-wrap" style="display:none;"></div>
+      <div class="label">Schwierigkeitsgrad</div>
+      <div class="pill-row" id="diff-pills">
+        <div class="pill" data-val="leicht">Leicht</div>
+        <div class="pill active" data-val="mittel">Mittel</div>
+        <div class="pill" data-val="schwer">Schwer</div>
+      </div>
+      <div class="label">Fragenquelle</div>
+      <div class="pill-row" id="source-pills">
+        <div class="pill active" data-val="ai">🤖 KI generiert</div>
+        <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
+      </div>
+      <div id="solo-catalog-wrap" style="display:none;" class="catalog-select-wrap">
+        <div class="label">Katalog wählen</div>
+        <select id="solo-catalog-select" class="form-input"></select>
+      </div>
+      <button class="btn btn-primary" id="start-btn" disabled>Solo-Quiz starten →</button>
+    </div>
+  </div>
+
+  <!-- DUEL -->
+  <div id="tab-duel" style="display:none;">
+    <div class="sub-tabs">
+      <div class="sub-tab active" id="subtab-btn-local" onclick="switchDuelSubTab('local')">⚔️ Lokal</div>
+      <div class="sub-tab" id="subtab-btn-online" onclick="switchDuelSubTab('online')">🌐 Online</div>
+    </div>
+
+    <!-- LOCAL DUEL (existing) -->
+    <div id="duel-sub-local">
+    <div class="card">
+      <div class="label">Spielernamen</div>
+      <div class="name-row">
+        <div>
+          <div class="name-label p1">⚔️ Spieler 1</div>
+          <input class="name-input" id="p1-name" placeholder="z.B. Max" maxlength="16">
+        </div>
+        <div>
+          <div class="name-label p2">🛡️ Spieler 2</div>
+          <input class="name-input p2-input" id="p2-name" placeholder="z.B. Lisa" maxlength="16">
+        </div>
+      </div>
+      <div class="label">Klassenstufe</div>
+      <div class="pill-row" id="duel-grade-pills">
+        <div class="pill" data-val="5">Klasse 5</div><div class="pill" data-val="6">Klasse 6</div>
+        <div class="pill" data-val="7">Klasse 7</div><div class="pill" data-val="8">Klasse 8</div>
+        <div class="pill" data-val="9">Klasse 9</div><div class="pill" data-val="10">Klasse 10</div>
+        <div class="pill" data-val="11">Klasse 11</div><div class="pill" data-val="12">Klasse 12</div>
+      </div>
+      <div class="label">Fach</div>
+      <div class="pill-row" id="duel-subject-pills">
+        <div class="pill" data-val="Mathematik">📐 Mathe</div>
+        <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+        <div class="pill" data-val="Englisch">🌍 Englisch</div>
+        <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+        <div class="pill" data-val="Biologie">🌿 Biologie</div>
+        <div class="pill" data-val="Physik">⚡ Physik</div>
+        <div class="pill" data-val="Chemie">🧪 Chemie</div>
+        <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+      </div>
+      <div id="duel-subcategory-wrap" style="display:none;"></div>
+      <div class="label">Schwierigkeit</div>
+      <div class="pill-row" id="duel-diff-pills">
+        <div class="pill" data-val="leicht">Leicht</div>
+        <div class="pill active" data-val="mittel">Mittel</div>
+        <div class="pill" data-val="schwer">Schwer</div>
+      </div>
+      <div class="label">Fragenquelle</div>
+      <div class="pill-row" id="duel-source-pills">
+        <div class="pill active" data-val="ai">🤖 KI generiert</div>
+        <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
+      </div>
+      <div id="duel-catalog-wrap" style="display:none;" class="catalog-select-wrap">
+        <div class="label">Katalog wählen</div>
+        <select id="duel-catalog-select" class="form-input"></select>
+      </div>
+      <button class="btn btn-primary" id="duel-start-btn" disabled>Duell starten ⚔️</button>
+    </div>
+    </div><!-- /#duel-sub-local -->
+
+    <!-- ONLINE DUEL -->
+    <div id="duel-sub-online" style="display:none;">
+      <div class="card">
+        <div class="label">Dein Name</div>
+        <input class="name-input" id="online-my-name" placeholder="z.B. Max" maxlength="16" style="width:100%;margin-bottom:18px;">
+
+        <div class="label">Klassenstufe</div>
+        <div class="pill-row" id="online-grade-pills">
+          <div class="pill" data-val="5">Klasse 5</div><div class="pill" data-val="6">Klasse 6</div>
+          <div class="pill" data-val="7">Klasse 7</div><div class="pill" data-val="8">Klasse 8</div>
+          <div class="pill" data-val="9">Klasse 9</div><div class="pill" data-val="10">Klasse 10</div>
+          <div class="pill" data-val="11">Klasse 11</div><div class="pill" data-val="12">Klasse 12</div>
+        </div>
+        <div class="label">Fach</div>
+        <div class="pill-row" id="online-subject-pills">
+          <div class="pill" data-val="Mathematik">📐 Mathe</div>
+          <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+          <div class="pill" data-val="Englisch">🌍 Englisch</div>
+          <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+          <div class="pill" data-val="Biologie">🌿 Biologie</div>
+          <div class="pill" data-val="Physik">⚡ Physik</div>
+          <div class="pill" data-val="Chemie">🧪 Chemie</div>
+          <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+        </div>
+        <div id="online-subcategory-wrap" style="display:none;"></div>
+        <div class="label">Schwierigkeit</div>
+        <div class="pill-row" id="online-diff-pills">
+          <div class="pill" data-val="leicht">Leicht</div>
+          <div class="pill active" data-val="mittel">Mittel</div>
+          <div class="pill" data-val="schwer">Schwer</div>
+        </div>
+        <div class="label">Fragenquelle</div>
+        <div class="pill-row" id="online-source-pills">
+          <div class="pill active" data-val="ai">🤖 KI generiert</div>
+          <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
+        </div>
+        <div id="online-catalog-wrap" style="display:none;" class="catalog-select-wrap">
+          <div class="label">Katalog wählen</div>
+          <select id="online-catalog-select" class="form-input"></select>
+        </div>
+        <button class="btn btn-primary" id="online-create-btn" disabled onclick="createOnlineRoom()">Raum erstellen 🌐</button>
+      </div>
+
+      <div class="divider-or">oder beitreten</div>
+
+      <div class="card">
+        <div class="label">Dein Name</div>
+        <input class="name-input" id="join-name-input" placeholder="z.B. Lisa" maxlength="16" style="width:100%;margin-bottom:12px;">
+        <div class="label">Raumcode</div>
+        <input class="form-input" id="join-code-input" placeholder="z.B. AB3X7K" maxlength="6"
+          style="text-transform:uppercase;font-family:'Space Mono',monospace;font-size:1.2rem;letter-spacing:.15em;margin-bottom:12px;">
+        <button class="btn btn-secondary" onclick="joinOnlineRoom()">Beitreten →</button>
+      </div>
+
+      <div style="text-align:right;margin-top:4px;">
+        <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.78rem;" onclick="openFirebaseModal()">🔥 Firebase konfigurieren</button>
+      </div>
+    </div><!-- /#duel-sub-online -->
+
+  </div><!-- /#tab-duel -->
+
+  <!-- CATALOG TAB -->
+  <div id="tab-catalog" style="display:none;">
+    <div class="catalog-header">
+      <h2>📚 Meine Kataloge</h2>
+      <button class="btn btn-primary" style="width:auto;padding:9px 18px;font-size:.88rem;" onclick="openNewCatalog()">+ Neu</button>
+    </div>
+    <div id="catalog-list-container"></div>
+  </div>
+
+  <!-- LIBRARY TAB -->
+  <div id="tab-library" style="display:none;">
+    <div class="catalog-header">
+      <h2>📖 Fragenbibliothek</h2>
+      <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="refreshLibrary()">↻ Aktualisieren</button>
+    </div>
+    <div style="font-size:.82rem;color:var(--muted);margin-bottom:14px;">Gespeicherte Fragen aus Firebase — werden automatisch nach KI-Generierung gespeichert.</div>
+    <div id="library-list-container">
+      <div class="empty-state"><div class="es-icon">📡</div>Firebase öffnen und aktualisieren.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: CATALOG EDITOR ═══════════════════════════ -->
+<div class="screen" id="screen-catalog-editor">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div class="card">
+    <div class="label">Katalogname</div>
+    <input class="form-input" id="editor-catalog-name" placeholder="z.B. Chemie Kl. 9 – Atombau" style="margin-bottom:14px;">
+    <div class="label">Beschreibung (optional)</div>
+    <input class="form-input" id="editor-catalog-desc" placeholder="Kurze Beschreibung">
+  </div>
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+    <div class="label" style="margin:0;">Fragen (<span id="editor-q-count">0</span>)</div>
+    <button class="btn btn-primary" style="width:auto;padding:8px 16px;font-size:.83rem;" onclick="showQuestionForm()">+ Frage</button>
+  </div>
+  <div class="editor-q-list" id="editor-q-list"></div>
+
+  <!-- Inline question form -->
+  <div class="q-form" id="q-form" style="display:none;">
+    <div class="q-form-title">Neue Frage hinzufügen</div>
+    <div class="form-field">
+      <label>Frage</label>
+      <textarea class="form-input" id="qf-question" rows="2" placeholder="Deine Frage hier…"></textarea>
+    </div>
+    <div class="form-field">
+      <label>Antwortoptionen – Kreis = richtige Antwort</label>
+      <div class="options-grid">
+        <div class="option-row"><span class="option-letter">A</span><input class="form-input" id="opt-0" placeholder="Option A"><input type="radio" name="correct" value="0" class="correct-radio"></div>
+        <div class="option-row"><span class="option-letter">B</span><input class="form-input" id="opt-1" placeholder="Option B"><input type="radio" name="correct" value="1" class="correct-radio"></div>
+        <div class="option-row"><span class="option-letter">C</span><input class="form-input" id="opt-2" placeholder="Option C"><input type="radio" name="correct" value="2" class="correct-radio"></div>
+        <div class="option-row"><span class="option-letter">D</span><input class="form-input" id="opt-3" placeholder="Option D"><input type="radio" name="correct" value="3" class="correct-radio"></div>
+      </div>
+    </div>
+    <div class="form-field">
+      <label>Erklärung (optional)</label>
+      <input class="form-input" id="qf-explanation" placeholder="Warum ist diese Antwort richtig?">
+    </div>
+    <div class="form-field">
+      <label>Unterthema (optional)</label>
+      <input class="form-input" id="qf-topic" placeholder="z.B. Kernmodell">
+    </div>
+    <div class="form-row">
+      <button class="btn btn-secondary" onclick="hideQuestionForm()">Abbrechen</button>
+      <button class="btn btn-primary" onclick="saveQuestion()">Frage speichern ✓</button>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" onclick="saveCatalog()">Katalog speichern ✓</button>
+  <button class="btn btn-secondary" onclick="cancelEditor()">Abbrechen</button>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: LOADING ═══════════════════════════ -->
+<div class="screen" id="screen-loading">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div class="card">
+    <div class="loading-state">
+      <div class="spinner"></div>
+      <div id="loading-text">Fragen werden generiert…</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: HANDOVER ═══════════════════════════ -->
+<div class="screen" id="screen-handover">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div class="card handover-card">
+    <div class="handover-icon" id="handover-icon">🎯</div>
+    <div class="handover-title" id="handover-title"></div>
+    <div class="handover-sub" id="handover-sub"></div>
+    <button class="btn btn-primary" id="handover-btn">Ich bin bereit →</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: ONLINE WAITING ═══════════════════════════ -->
+<div class="screen" id="screen-online-wait">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div class="card" style="text-align:center; padding:36px 28px;">
+    <div style="font-size:3rem; margin-bottom:14px;">🌐</div>
+    <div style="font-size:1.25rem; font-weight:700; margin-bottom:6px;" id="ow-title">Raum erstellt!</div>
+    <div id="ow-code-section">
+      <div class="room-code-box">
+        <div class="room-code-big" id="ow-code">------</div>
+        <div class="room-code-hint">Diesen Code deinem Mitspieler mitteilen</div>
+      </div>
+    </div>
+    <div class="wait-status" id="ow-status-box">
+      <span class="dot-anim" id="ow-status">Warte auf Mitspieler</span>
+    </div>
+    <div id="ow-guest-joined" style="display:none;" class="wait-status joined"></div>
+    <button class="btn btn-primary" id="ow-start-btn" style="display:none;" onclick="startOnlineGame()">Spiel starten ⚔️</button>
+    <button class="btn btn-secondary" style="margin-top:10px;" onclick="leaveOnlineRoom()">✕ Abbrechen</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: QUIZ ═══════════════════════════ -->
+<div class="screen" id="screen-quiz">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+
+  <div class="duel-bar" id="duel-bar" style="display:none;">
+    <div class="duel-player p1">
+      <span class="duel-player-name" id="db-p1-name">Spieler 1</span>
+      <span class="duel-player-score" id="db-p1-score">0</span>
+    </div>
+    <div class="duel-vs">VS</div>
+    <div class="duel-player p2 right">
+      <span class="duel-player-name" id="db-p2-name">Spieler 2</span>
+      <span class="duel-player-score" id="db-p2-score">0</span>
+    </div>
+  </div>
+  <div class="duel-turn-badge" id="duel-turn-badge" style="display:none;"></div>
+
+  <div class="quiz-header">
+    <div class="q-meta">Frage <strong id="q-current">1</strong> / <span id="q-total">8</span></div>
+    <div class="timer-ring">
+      <svg width="52" height="52" viewBox="0 0 52 52">
+        <circle class="timer-track" cx="26" cy="26" r="22"/>
+        <circle class="timer-fill" id="timer-circle" cx="26" cy="26" r="22"/>
+      </svg>
+      <div class="timer-label" id="timer-label">20</div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+
+  <div class="card">
+    <div class="topic-badge" id="q-topic"></div>
+    <div class="question-text" id="q-text"></div>
+    <div class="answers" id="answers-container"></div>
+    <div class="feedback" id="feedback"></div>
+    <div class="points-flash" id="points-flash"></div>
+    <button class="next-btn" id="next-btn">Weiter →</button>
+  </div>
+
+  <button class="btn btn-secondary" id="quiz-exit-btn" style="display:none;" onclick="confirmExitQuiz()">✕ Zurück zum Hauptmenü</button>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: SOLO RESULT ═══════════════════════════ -->
+<div class="screen" id="screen-result">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div class="card">
+    <div class="score-emoji" id="result-emoji"></div>
+    <div class="score-big">
+      <div class="score-number" id="result-score">0 <span class="score-denom">/ 8</span></div>
+      <div class="score-label">richtige Antworten</div>
+    </div>
+    <div id="result-stats"></div>
+  </div>
+  <button class="btn btn-primary" id="replay-btn">Nochmal spielen</button>
+  <button class="btn btn-secondary" id="review-solo-btn">📖 Fragen überprüfen</button>
+  <button class="btn btn-secondary" id="home-btn">Zurück zur Auswahl</button>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: DUEL RESULT ═══════════════════════════ -->
+<div class="screen" id="screen-duel-result">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div class="card">
+    <div class="winner-banner" id="dr-banner"></div>
+    <div class="winner-sub" id="dr-sub"></div>
+    <div class="duel-result-grid">
+      <div class="duel-result-card p1" id="dr-p1-card">
+        <div class="dr-crown" id="dr-p1-crown"></div>
+        <div class="dr-name" id="dr-p1-name"></div>
+        <div class="dr-score" id="dr-p1-score"></div>
+        <div style="font-size:.78rem;color:var(--muted);" id="dr-p1-correct"></div>
+      </div>
+      <div class="duel-result-card p2" id="dr-p2-card">
+        <div class="dr-crown" id="dr-p2-crown"></div>
+        <div class="dr-name" id="dr-p2-name"></div>
+        <div class="dr-score" id="dr-p2-score"></div>
+        <div style="font-size:.78rem;color:var(--muted);" id="dr-p2-correct"></div>
+      </div>
+    </div>
+    <div id="dr-stats"></div>
+  </div>
+  <button class="btn btn-primary" id="duel-replay-btn">Revanche ⚔️</button>
+  <button class="btn btn-secondary" id="review-duel-btn">📖 Fragen überprüfen</button>
+  <button class="btn btn-secondary" id="duel-home-btn">Zurück zur Auswahl</button>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: REVIEW ═══════════════════════════ -->
+<div class="screen" id="screen-review">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+    <div style="font-size:1.1rem;font-weight:700;">📖 Fragen &amp; Erklärungen</div>
+  </div>
+  <div id="review-list"></div>
+  <button class="btn btn-secondary" id="review-back-btn" style="margin-top:8px;">← Zurück zum Ergebnis</button>
+</div>
+
+</div><!-- /.app -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════
+const TIMER_SEC = 20;
+const CIRC = 2 * Math.PI * 22;
+
+let G = {
+  mode: 'solo',
+  // solo settings
+  grade: null, subject: null, subcategory: null, difficulty: 'mittel', source: 'ai', catalogId: null,
+  // duel settings
+  dGrade: null, dSubject: null, dSubcategory: null, dDifficulty: 'mittel', dSource: 'ai', dCatalogId: null,
+  p1Name: 'Spieler 1', p2Name: 'Spieler 2',
+  // runtime
+  questions: [], current: 0, answered: false,
+  timeLeft: TIMER_SEC, timerInterval: null,
+  // solo stats
+  solo: { correct: 0, points: 0, answers: [] },
+  // duel stats per player
+  p1: { correct: 0, points: 0, answers: [] },
+  p2: { correct: 0, points: 0, answers: [] },
+  currentPlayer: 1,
+};
+
+// ═══════════════════════════════════════════════════════
+// LOCALSTORAGE CATALOGS
+// ═══════════════════════════════════════════════════════
+function getCatalogs() {
+  try { return JSON.parse(localStorage.getItem('sd_catalogs') || '[]'); } catch { return []; }
+}
+function saveCatalogs(arr) { localStorage.setItem('sd_catalogs', JSON.stringify(arr)); }
+
+let editingCatalog = null;
+
+// ═══════════════════════════════════════════════════════
+// SCREEN / TAB HELPERS
+// ═══════════════════════════════════════════════════════
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function switchTab(tab) {
+  ['solo','duel','catalog','library'].forEach(t => {
+    document.getElementById('tab-' + t).style.display = t === tab ? 'block' : 'none';
+    document.getElementById('tab-btn-' + t).classList.toggle('active', t === tab);
+  });
+  if (tab === 'catalog') renderCatalogList();
+  if (tab === 'library') refreshLibrary();
+}
+
+// ═══════════════════════════════════════════════════════
+// PILL SETUP
+// ═══════════════════════════════════════════════════════
+function setupPills(pid, key, cb) {
+  document.querySelectorAll('#' + pid + ' .pill').forEach(p => {
+    p.addEventListener('click', () => {
+      document.querySelectorAll('#' + pid + ' .pill').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      G[key] = p.dataset.val;
+      if (cb) cb();
+    });
+  });
+}
+// ── SUBCATEGORIES ──
+const SUBCATEGORIES = {
+  'Mathematik':      ['Allgemein','Kopfrechnen','Algebra','Geometrie','Bruchrechnung','Gleichungen','Statistik'],
+  'Deutsch':         ['Allgemein','Grammatik','Rechtschreibung','Wortarten','Satzlehre','Literatur','Aufsatz'],
+  'Englisch':        ['Allgemein','Vokabeln','Grammatik','Zeitformen','Leseverstehen','Phrasen & Redewendungen'],
+  'Geschichte':      ['Allgemein','Antike','Mittelalter','Frühe Neuzeit','Industrialisierung','Weltkriege','Nachkriegszeit'],
+  'Biologie':        ['Allgemein','Zellbiologie','Ökologie','Genetik','Evolution','Körper & Gesundheit','Botanik'],
+  'Physik':          ['Allgemein','Mechanik','Elektrizität','Optik','Wärmelehre','Atomphysik'],
+  'Chemie':          ['Allgemein','Atombau','Chem. Bindungen','Reaktionen','Säuren & Basen','Organische Chemie'],
+  'Allgemeinwissen': ['Allgemein','Geographie','Sport','Musik & Kunst','Natur & Tiere','Technik','Essen & Kultur']
+};
+
+function renderSubcategoryPills(wrapId, subjectVal, key, checkFn) {
+  const wrap = document.getElementById(wrapId);
+  const subs = SUBCATEGORIES[subjectVal] || [];
+  if (!subs.length) { wrap.style.display = 'none'; wrap.innerHTML = ''; G[key] = null; return; }
+  wrap.style.display = 'block';
+  const rowId = wrapId + '-row';
+  wrap.innerHTML = '<div class="label" style="margin-top:4px;">Themenbereich</div>'
+                 + '<div class="pill-row" id="' + rowId + '"></div>';
+  const row = document.getElementById(rowId);
+  subs.forEach(s => {
+    const p = document.createElement('div');
+    p.className = 'pill';
+    p.dataset.val = s;
+    p.textContent = s;
+    p.addEventListener('click', () => {
+      row.querySelectorAll('.pill').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      G[key] = s;
+      if (checkFn) checkFn();
+    });
+    row.appendChild(p);
+  });
+  G[key] = null;
+  if (checkFn) checkFn();
+}
+
+setupPills('grade-pills',        'grade',       checkSoloReady);
+setupPills('diff-pills',         'difficulty',  checkSoloReady);
+setupPills('duel-grade-pills',   'dGrade',      checkDuelReady);
+setupPills('duel-diff-pills',    'dDifficulty', checkDuelReady);
+
+// Subject pills wired manually to also render subcategories
+document.querySelectorAll('#subject-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#subject-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    G.subject = p.dataset.val;
+    renderSubcategoryPills('solo-subcategory-wrap', p.dataset.val, 'subcategory', checkSoloReady);
+  });
+});
+document.querySelectorAll('#duel-subject-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#duel-subject-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    G.dSubject = p.dataset.val;
+    renderSubcategoryPills('duel-subcategory-wrap', p.dataset.val, 'dSubcategory', checkDuelReady);
+  });
+});
+document.querySelectorAll('#online-subject-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#online-subject-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    G.dSubject = p.dataset.val;
+    renderSubcategoryPills('online-subcategory-wrap', p.dataset.val, 'dSubcategory', checkOnlineReady);
+  });
+});
+
+// Source pills
+document.querySelectorAll('#source-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#source-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    G.source = p.dataset.val;
+    const wrap = document.getElementById('solo-catalog-wrap');
+    wrap.style.display = G.source === 'catalog' ? 'block' : 'none';
+    if (G.source === 'catalog') populateCatalogSelect('solo-catalog-select', 'catalogId');
+    checkSoloReady();
+  });
+});
+document.querySelectorAll('#duel-source-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#duel-source-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    G.dSource = p.dataset.val;
+    const wrap = document.getElementById('duel-catalog-wrap');
+    wrap.style.display = G.dSource === 'catalog' ? 'block' : 'none';
+    if (G.dSource === 'catalog') populateCatalogSelect('duel-catalog-select', 'dCatalogId');
+    checkDuelReady();
+  });
+});
+
+document.getElementById('solo-catalog-select').addEventListener('change', e => { G.catalogId = e.target.value || null; checkSoloReady(); });
+document.getElementById('duel-catalog-select').addEventListener('change', e => { G.dCatalogId = e.target.value || null; checkDuelReady(); });
+
+function populateCatalogSelect(selId, key) {
+  const cats = getCatalogs();
+  const sel = document.getElementById(selId);
+  sel.innerHTML = '<option value="">– Katalog wählen –</option>';
+  cats.forEach(c => {
+    const o = document.createElement('option');
+    o.value = c.id;
+    o.textContent = c.name + ' (' + c.questions.length + ' Fragen)';
+    sel.appendChild(o);
+  });
+  G[key] = null;
+}
+
+// Name inputs
+document.getElementById('p1-name').addEventListener('input', e => { G.p1Name = e.target.value.trim() || 'Spieler 1'; checkDuelReady(); });
+document.getElementById('p2-name').addEventListener('input', e => { G.p2Name = e.target.value.trim() || 'Spieler 2'; checkDuelReady(); });
+
+// ── PREFETCH ──
+let PF = { key: null, promise: null, result: null };
+
+function pfKey(mode) {
+  return mode === 'solo'
+    ? [G.grade, G.subject, G.difficulty, 'solo'].join('|')
+    : [G.dGrade, G.dSubject, G.dDifficulty, 'duel'].join('|');
+}
+
+function triggerPrefetch(mode) {
+  if (!localStorage.getItem('sd_api_key')) return;
+  const src = mode === 'solo' ? G.source : G.dSource;
+  if (src !== 'ai') return;
+  const grade = mode === 'solo' ? G.grade : G.dGrade;
+  const subj  = mode === 'solo' ? G.subject : G.dSubject;
+  if (!grade || !subj) return;
+  const key = pfKey(mode);
+  if (PF.key === key) return;
+  PF = { key, promise: generateQuestionsAI._forPrefetch(grade, subj, mode === 'solo' ? G.difficulty : G.dDifficulty), result: null };
+  PF.promise.then(q => { if (PF.key === key) PF.result = q; }).catch(() => {});
+}
+
+function checkSoloReady() {
+  const aiOk  = G.source === 'ai' && !!(G.subject && G.subcategory);
+  const catOk = G.source === 'catalog' && !!G.catalogId;
+  const ready = !!(G.grade && (aiOk || catOk));
+  document.getElementById('start-btn').disabled = !ready;
+}
+function checkDuelReady() {
+  const aiOk  = G.dSource === 'ai' && !!(G.dSubject && G.dSubcategory);
+  const catOk = G.dSource === 'catalog' && !!G.dCatalogId;
+  const ready = !!(G.dGrade && (aiOk || catOk));
+  document.getElementById('duel-start-btn').disabled = !ready;
+}
+
+// ═══════════════════════════════════════════════════════
+// START BUTTONS
+// ═══════════════════════════════════════════════════════
+document.getElementById('start-btn').addEventListener('click', () => {
+  G.mode = 'solo';
+  G.solo = { correct: 0, points: 0, answers: [] };
+  startQuiz();
+});
+
+document.getElementById('duel-start-btn').addEventListener('click', () => {
+  G.mode = 'duel';
+  G.p1Name = document.getElementById('p1-name').value.trim() || 'Spieler 1';
+  G.p2Name = document.getElementById('p2-name').value.trim() || 'Spieler 2';
+  G.p1 = { correct: 0, points: 0, answers: [] };
+  G.p2 = { correct: 0, points: 0, answers: [] };
+  G.currentPlayer = 1;
+  showHandover(1, true);
+});
+
+document.getElementById('replay-btn').addEventListener('click', () => { G.solo = { correct:0, points:0, answers:[] }; startQuiz(); });
+document.getElementById('home-btn').addEventListener('click', () => showScreen('screen-home'));
+
+document.getElementById('duel-replay-btn').addEventListener('click', () => {
+  if (G.mode === 'online') {
+    // Online: clean up and go back to duel/online tab
+    if (onlineRoomRef) { onlineRoomRef.off('value'); onlineRoomRef = null; }
+    onlineRoomCode = null; onlineRole = null; onlineLastRoom = null;
+    G.mode = 'solo';
+    showScreen('screen-home');
+    switchTab('duel');
+    switchDuelSubTab('online');
+    return;
+  }
+  G.p1 = { correct:0, points:0, answers:[] };
+  G.p2 = { correct:0, points:0, answers:[] };
+  G.currentPlayer = 1;
+  showHandover(1, true);
+});
+document.getElementById('duel-home-btn').addEventListener('click', () => {
+  if (G.mode === 'online') {
+    if (onlineRoomRef) { onlineRoomRef.off('value'); onlineRoomRef = null; }
+    onlineRoomCode = null; onlineRole = null; onlineLastRoom = null;
+    G.mode = 'solo';
+  }
+  showScreen('screen-home');
+});
+
+// ═══════════════════════════════════════════════════════
+// HANDOVER
+// ═══════════════════════════════════════════════════════
+function showHandover(player, isStart) {
+  const name = player === 1 ? G.p1Name : G.p2Name;
+  const other = player === 1 ? G.p2Name : G.p1Name;
+  document.getElementById('handover-icon').textContent = player === 1 ? '⚔️' : '🛡️';
+  document.getElementById('handover-title').textContent = isStart ? name + ' – du fängst an!' : 'Jetzt bist du dran, ' + name + '!';
+  document.getElementById('handover-sub').textContent = isStart
+    ? 'Gerät an die andere Person weitergeben, wenn du fertig bist.'
+    : other + ' hat gespielt – jetzt bist du dran!';
+  document.getElementById('handover-btn').onclick = () => { G.currentPlayer = player; startQuiz(); };
+  showScreen('screen-handover');
+}
+
+// ═══════════════════════════════════════════════════════
+// QUIZ START & LOAD
+// ═══════════════════════════════════════════════════════
+const LOADING_MSGS = [
+  'KI denkt nach…', 'Fragen werden erstellt…', 'Lehrplan wird durchforstet…',
+  'Aufgaben werden formuliert…', 'Fast fertig…', 'Antwortoptionen werden gemischt…',
+  'Schwierigkeit wird kalibriert…', 'Noch einen Moment…'
+];
+let loadingMsgInterval = null;
+function startLoadingMessages() {
+  let i = 0;
+  document.getElementById('loading-text').textContent = LOADING_MSGS[0];
+  loadingMsgInterval = setInterval(() => {
+    i = (i + 1) % LOADING_MSGS.length;
+    document.getElementById('loading-text').textContent = LOADING_MSGS[i];
+  }, 1800);
+}
+function stopLoadingMessages() {
+  clearInterval(loadingMsgInterval);
+}
+
+async function startQuiz() {
+  showScreen('screen-loading');
+  startLoadingMessages();
+  G.questions = []; G.current = 0;
+  try {
+    G.questions = await loadQuestions();
+    stopLoadingMessages();
+    document.getElementById('q-total').textContent = G.questions.length;
+    setupQuizUI();
+    showScreen('screen-quiz');
+    renderQuestion();
+  } catch(e) {
+    stopLoadingMessages();
+    const msg = e.message && e.message !== 'Kein API-Key gesetzt.'
+      ? 'Fehler: ' + e.message
+      : e.message === 'Kein API-Key gesetzt.'
+        ? 'Bitte zuerst API-Key setzen (🔑-Button).'
+        : 'Fehler beim Laden. Bitte nochmal versuchen.';
+    document.getElementById('loading-text').textContent = msg;
+    setTimeout(() => showScreen('screen-home'), 2800);
+  }
+}
+
+async function loadQuestions() {
+  const src   = G.mode === 'solo' ? G.source    : G.dSource;
+  const catId = G.mode === 'solo' ? G.catalogId : G.dCatalogId;
+  if (src === 'catalog') {
+    const cat = getCatalogs().find(c => c.id === catId);
+    if (!cat || !cat.questions.length) throw new Error('Katalog leer');
+    return [...cat.questions].sort(() => Math.random() - .5).slice(0, 8);
+  }
+  // Check Firebase question bank first
+  const grade  = G.mode === 'solo' ? G.grade       : G.dGrade;
+  const subj   = G.mode === 'solo' ? G.subject     : G.dSubject;
+  const subcat = G.mode === 'solo' ? G.subcategory : G.dSubcategory;
+  if (subcat) {
+    const banked = await loadFromQuestionBank(grade, subj, subcat);
+    const poolSize = banked ? banked.length : 0;
+    if (poolSize >= 8) {
+      document.getElementById('loading-text').textContent = '📖 Aus Bibliothek geladen…';
+
+      // Pick 8 unplayed questions first
+      const played = getPlayedSet(grade, subj, subcat);
+      const unplayed = banked.filter(q => !played.has(q.question.slice(0, 80)));
+      let toPlay;
+      if (unplayed.length >= 8) {
+        toPlay = unplayed.sort(() => Math.random() - .5).slice(0, 8);
+      } else {
+        // All played → reset and start over
+        resetPlayedSet(grade, subj, subcat);
+        toPlay = banked.sort(() => Math.random() - .5).slice(0, 8);
+        showToast('Alle ' + poolSize + ' Fragen gespielt – von vorne!', '');
+      }
+      addToPlayedSet(grade, subj, subcat, toPlay);
+
+      // Background: generate more if pool < 504
+      if (poolSize < QB_MAX) {
+        const diff = G.mode === 'solo' ? G.difficulty : G.dDifficulty;
+        setTimeout(() => {
+          _fetchQuestions(grade, subj, subcat, diff)
+            .then(qs => saveToQuestionBank(grade, subj, subcat, qs))
+            .catch(() => {});
+        }, 500);
+      }
+      return toPlay;
+    }
+  }
+  // No pool yet → generate with AI (blocking) and save
+  return generateQuestionsAI();
+}
+
+async function _fetchQuestions(grade, subj, subcat, diff, attempt = 1) {
+  const apiKey   = localStorage.getItem('sd_api_key');
+  const provider = localStorage.getItem('sd_provider') || 'gemini';
+  if (!apiKey) throw new Error('Kein API-Key gesetzt.');
+  const MAX_ATTEMPTS = 3;
+
+  const subcatLine = subcat && subcat !== 'Allgemein' ? `- Themenbereich: ${subcat}\n` : '';
+  const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle 8 Multiple-Choice-Quizfragen:
+- Klassenstufe: ${grade}. Klasse
+- Fach: ${subj}
+${subcatLine}- Schwierigkeit: ${diff}
+
+Regeln: 4 Antwortoptionen (A-D), nur eine korrekt. Lehrplangerecht. Kurze Erklärung. Themen variieren.
+Antworte NUR mit einem JSON-Array ohne Markdown:
+[{"question":"...","options":["A","B","C","D"],"correct":0,"explanation":"...","topic":"..."}]
+correct = 0-basierter Index der richtigen Antwort.`;
+
+  let text;
+  try {
+  if (provider === 'gemini') {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { maxOutputTokens: 4096 } })
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      const msg = err?.error?.message || 'Gemini-Fehler ' + res.status;
+      if (attempt < MAX_ATTEMPTS && (res.status >= 500 || res.status === 429)) {
+        await new Promise(r => setTimeout(r, 1500 * attempt));
+        return _fetchQuestions(grade, subj, subcat, diff, attempt + 1);
+      }
+      throw new Error(msg);
+    }
+    const data = await res.json();
+    text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    if (!text) throw new Error('Leere Antwort von Gemini');
+  } else {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-api-key": apiKey, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({ model: "claude-haiku-4-5", max_tokens: 2000, messages: [{ role: "user", content: prompt }] })
+    });
+    if (!res.ok) { const err = await res.json().catch(() => ({})); throw new Error(err?.error?.message || 'Anthropic-Fehler ' + res.status); }
+    const data = await res.json();
+    text = data.content.map(i => i.text || '').join('');
+  }
+  } catch(netErr) {
+    if (attempt < MAX_ATTEMPTS) {
+      await new Promise(r => setTimeout(r, 1500 * attempt));
+      return _fetchQuestions(grade, subj, subcat, diff, attempt + 1);
+    }
+    throw new Error('Verbindungsfehler: ' + netErr.message);
+  }
+  try {
+    const cleaned = text.trim().replace(/```json|```/g,'').trim();
+    const start = cleaned.indexOf('['), end = cleaned.lastIndexOf(']');
+    const jsonStr = (start !== -1 && end !== -1) ? cleaned.slice(start, end + 1) : cleaned;
+    return JSON.parse(jsonStr);
+  } catch(e) {
+    if (attempt < MAX_ATTEMPTS) {
+      await new Promise(r => setTimeout(r, 1200 * attempt));
+      return _fetchQuestions(grade, subj, subcat, diff, attempt + 1);
+    }
+    throw new Error('JSON-Fehler nach ' + MAX_ATTEMPTS + ' Versuchen: ' + e.message);
+  }
+}
+
+async function generateQuestionsAI() {
+  const apiKey = localStorage.getItem('sd_api_key');
+  if (!apiKey) { openApiKeyModal(); throw new Error('Kein API-Key gesetzt.'); }
+  const grade  = G.mode === 'solo' ? G.grade       : G.dGrade;
+  const subj   = G.mode === 'solo' ? G.subject     : G.dSubject;
+  const subcat = G.mode === 'solo' ? G.subcategory : G.dSubcategory;
+  const diff   = G.mode === 'solo' ? G.difficulty  : G.dDifficulty;
+  const questions = await _fetchQuestions(grade, subj, subcat, diff);
+  // Auto-save to Firebase question bank
+  if (subcat) saveToQuestionBank(grade, subj, subcat, questions);
+  return questions;
+}
+
+// ═══════════════════════════════════════════════════════
+// QUIZ UI
+// ═══════════════════════════════════════════════════════
+function setupQuizUI() {
+  const d = G.mode === 'duel' || G.mode === 'online';
+  document.getElementById('duel-bar').style.display        = d ? 'grid'  : 'none';
+  document.getElementById('duel-turn-badge').style.display = d ? 'block' : 'none';
+  document.getElementById('quiz-exit-btn').style.display   = d ? 'block' : 'none';
+}
+
+function renderQuestion() {
+  const q = G.questions[G.current];
+  G.answered = false;
+
+  document.getElementById('q-current').textContent = G.current + 1;
+  document.getElementById('progress-fill').style.width = (G.current / G.questions.length * 100) + '%';
+  document.getElementById('q-topic').textContent = q.topic || 'Allgemein';
+  document.getElementById('q-text').textContent  = q.question;
+  document.getElementById('feedback').className  = 'feedback';
+  document.getElementById('next-btn').className  = 'next-btn';
+  document.getElementById('points-flash').textContent = '';
+
+  if (G.mode === 'duel') {
+    const p    = G.currentPlayer;
+    const name = p === 1 ? G.p1Name : G.p2Name;
+    const badge = document.getElementById('duel-turn-badge');
+    badge.textContent = (p === 1 ? '⚔️ ' : '🛡️ ') + name + ' ist dran';
+    badge.className   = 'duel-turn-badge p' + p;
+    document.getElementById('db-p1-name').textContent  = G.p1Name;
+    document.getElementById('db-p2-name').textContent  = G.p2Name;
+    document.getElementById('db-p1-score').textContent = G.p1.points;
+    document.getElementById('db-p2-score').textContent = G.p2.points;
+  }
+
+  const container = document.getElementById('answers-container');
+  container.innerHTML = '';
+  ['A','B','C','D'].forEach((l, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'answer-btn';
+    btn.innerHTML = '<span class="ans-letter">' + l + '</span><span>' + esc(q.options[i]) + '</span>';
+    btn.addEventListener('click', () => selectAnswer(i));
+    container.appendChild(btn);
+  });
+  startTimer();
+}
+
+// ── TIMER ──
+function startTimer() {
+  clearInterval(G.timerInterval);
+  G.timeLeft = TIMER_SEC;
+  updateTimerUI();
+  G.timerInterval = setInterval(() => {
+    G.timeLeft--;
+    updateTimerUI();
+    if (G.timeLeft <= 0) { clearInterval(G.timerInterval); if (!G.answered) { if (G.mode === 'online') onlineTimeOut(); else timeOut(); } }
+  }, 1000);
+}
+function updateTimerUI() {
+  const pct = G.timeLeft / TIMER_SEC;
+  document.getElementById('timer-circle').style.strokeDashoffset = CIRC * (1 - pct);
+  document.getElementById('timer-circle').classList.toggle('urgent', G.timeLeft <= 5);
+  document.getElementById('timer-label').textContent = G.timeLeft;
+}
+
+// ── ANSWER ──
+function selectAnswer(idx) {
+  if (G.answered) return;
+  clearInterval(G.timerInterval);
+  G.answered = true;
+  const q    = G.questions[G.current];
+  const btns = document.querySelectorAll('.answer-btn');
+  btns.forEach(b => b.disabled = true);
+
+  const ps = G.mode === 'solo' ? G.solo : (G.currentPlayer === 1 ? G.p1 : G.p2);
+  ps.answers.push(idx);
+  if (idx === q.correct) {
+    btns[idx].classList.add('correct');
+    ps.correct++; ps.points += 10;
+    showFeedback('correct', '✓ Richtig! ' + (q.explanation || ''));
+    document.getElementById('points-flash').textContent = '+10 Punkte';
+  } else {
+    btns[idx].classList.add('wrong');
+    btns[q.correct].classList.add('correct');
+    showFeedback('wrong', '✗ Falsch. ' + (q.explanation || ''));
+    document.getElementById('points-flash').textContent = '';
+  }
+  document.getElementById('next-btn').classList.add('show');
+}
+
+function timeOut() {
+  G.answered = true;
+  const q  = G.questions[G.current];
+  const ps = G.mode === 'solo' ? G.solo : (G.currentPlayer === 1 ? G.p1 : G.p2);
+  ps.answers.push(-1);
+  document.querySelectorAll('.answer-btn').forEach(b => b.disabled = true);
+  document.querySelectorAll('.answer-btn')[q.correct].classList.add('correct');
+  showFeedback('timeout', '⏱ Zeit abgelaufen! ' + (q.explanation || ''));
+  document.getElementById('next-btn').classList.add('show');
+}
+
+function showFeedback(type, text) {
+  const fb = document.getElementById('feedback');
+  fb.className = 'feedback ' + type + ' show';
+  fb.textContent = text;
+}
+
+document.getElementById('next-btn').addEventListener('click', () => {
+  if (G.mode === 'online') return;
+  G.current++;
+  if (G.current >= G.questions.length) {
+    if (G.mode === 'solo') { showSoloResult(); }
+    else if (G.currentPlayer === 1) { showHandover(2, false); }
+    else { showDuelResult(); }
+  } else { renderQuestion(); }
+});
+
+// ═══════════════════════════════════════════════════════
+// RESULTS
+// ═══════════════════════════════════════════════════════
+function showSoloResult() {
+  const total = G.questions.length;
+  const pct   = G.solo.correct / total;
+  const emoji = pct >= .9 ? '🏆' : pct >= .7 ? '🎉' : pct >= .5 ? '👍' : '📚';
+  const label = pct >= .9 ? 'Hervorragend!' : pct >= .7 ? 'Sehr gut!' : pct >= .5 ? 'Guter Ansatz – weiter üben!' : 'Weiter üben – du schaffst das!';
+  document.getElementById('result-emoji').textContent = emoji;
+  document.getElementById('result-score').innerHTML = G.solo.correct + ' <span class="score-denom">/ ' + total + '</span>';
+  document.getElementById('result-stats').innerHTML =
+    row('Richtige Antworten', G.solo.correct + ' / ' + total) +
+    row('Gesamtpunkte', G.solo.points) +
+    row('Fazit', label, 'var(--gold)');
+  showScreen('screen-result');
+}
+
+function showDuelResult() {
+  const total = G.questions.length;
+  const p1 = G.p1, p2 = G.p2;
+  let banner, sub, p1w = false, p2w = false;
+  if (p1.points > p2.points)      { banner = '🏆 ' + G.p1Name + ' gewinnt!'; sub = p1.points + ' zu ' + p2.points + ' Punkten'; p1w = true; }
+  else if (p2.points > p1.points) { banner = '🏆 ' + G.p2Name + ' gewinnt!'; sub = p2.points + ' zu ' + p1.points + ' Punkten'; p2w = true; }
+  else                             { banner = '🤝 Unentschieden!'; sub = 'Beide mit ' + p1.points + ' Punkten – ein Duell auf Augenhöhe!'; }
+
+  document.getElementById('dr-banner').textContent = banner;
+  document.getElementById('dr-sub').textContent    = sub;
+  document.getElementById('dr-p1-crown').textContent   = p1w ? '👑' : '';
+  document.getElementById('dr-p2-crown').textContent   = p2w ? '👑' : '';
+  document.getElementById('dr-p1-name').textContent    = G.p1Name;
+  document.getElementById('dr-p2-name').textContent    = G.p2Name;
+  document.getElementById('dr-p1-score').textContent   = p1.points;
+  document.getElementById('dr-p2-score').textContent   = p2.points;
+  document.getElementById('dr-p1-correct').textContent = p1.correct + ' / ' + total + ' richtig';
+  document.getElementById('dr-p2-correct').textContent = p2.correct + ' / ' + total + ' richtig';
+  document.getElementById('dr-p1-card').classList.toggle('winner', p1w);
+  document.getElementById('dr-p2-card').classList.toggle('winner', p2w);
+  document.getElementById('dr-stats').innerHTML =
+    row('Fragen je Spieler', total) +
+    row(G.p1Name + ' richtig', p1.correct + ' / ' + total) +
+    row(G.p2Name + ' richtig', p2.correct + ' / ' + total);
+  showScreen('screen-duel-result');
+}
+
+function row(label, val, color) {
+  return '<div class="stat-row"><span>' + label + '</span><span class="val"' + (color ? ' style="color:' + color + '"' : '') + '>' + val + '</span></div>';
+}
+
+// ── REVIEW ──
+let reviewReturnScreen = 'screen-result';
+
+function showReview(answers1, answers2, p1name, p2name) {
+  const list = document.getElementById('review-list');
+  list.innerHTML = '';
+  const isDuel = answers2 !== null;
+
+  G.questions.forEach((q, i) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.style.marginBottom = '12px';
+
+    let html = '<div style="font-size:.72rem;color:var(--muted);font-family:\'Space Mono\',monospace;margin-bottom:6px;">Frage ' + (i+1) + ' / ' + G.questions.length + '</div>';
+    html += '<div style="font-weight:600;font-size:.95rem;line-height:1.45;margin-bottom:14px;">' + esc(q.question) + '</div>';
+    html += '<div style="display:grid;gap:7px;">';
+
+    q.options.forEach((opt, j) => {
+      const isCorrect  = j === q.correct;
+      const p1chose    = answers1 && answers1[i] === j;
+      const p2chose    = answers2 && answers2[i] === j;
+
+      let border = 'var(--border)';
+      let bg     = 'var(--surface2)';
+      let textC  = 'var(--text)';
+      if (isCorrect)              { border = 'var(--green)'; bg = 'rgba(62,207,142,.1)'; textC = 'var(--green)'; }
+      else if (p1chose || p2chose){ border = 'var(--red)';   bg = 'rgba(255,71,87,.1)'; textC = '#ff8a95'; }
+
+      let badges = '';
+      if (isDuel) {
+        if (p1chose) badges += '<span style="font-size:.65rem;padding:2px 7px;border-radius:4px;background:rgba(108,99,255,.2);color:var(--p1);margin-left:5px;">' + esc(p1name) + '</span>';
+        if (p2chose) badges += '<span style="font-size:.65rem;padding:2px 7px;border-radius:4px;background:rgba(255,101,132,.2);color:var(--p2);margin-left:5px;">' + esc(p2name) + '</span>';
+      } else {
+        if (p1chose && !isCorrect) badges += '<span style="font-size:.65rem;padding:2px 7px;border-radius:4px;background:rgba(255,71,87,.15);color:var(--red);margin-left:5px;">Deine Antwort</span>';
+      }
+
+      html += '<div style="border:1.5px solid ' + border + ';background:' + bg + ';color:' + textC + ';border-radius:10px;padding:10px 13px;font-size:.88rem;display:flex;align-items:center;gap:8px;">'
+            + '<span style="font-family:\'Space Mono\',monospace;font-size:.72rem;opacity:.6;width:16px;flex-shrink:0;">' + 'ABCD'[j] + '</span>'
+            + '<span style="flex:1;">' + esc(opt) + '</span>'
+            + badges
+            + (isCorrect ? '<span style="color:var(--green);font-size:.9rem;">✓</span>' : '')
+            + '</div>';
+    });
+    html += '</div>';
+
+    if (q.explanation) {
+      html += '<div style="margin-top:11px;padding:10px 13px;border-radius:9px;background:rgba(108,99,255,.07);border:1px solid rgba(108,99,255,.2);font-size:.83rem;color:var(--muted);line-height:1.5;">💡 ' + esc(q.explanation) + '</div>';
+    }
+
+    card.innerHTML = html;
+    list.appendChild(card);
+  });
+
+  document.getElementById('review-back-btn').onclick = () => showScreen(reviewReturnScreen);
+  showScreen('screen-review');
+}
+
+document.getElementById('review-solo-btn').addEventListener('click', () => {
+  reviewReturnScreen = 'screen-result';
+  showReview(G.solo.answers, null, null, null);
+});
+document.getElementById('review-duel-btn').addEventListener('click', () => {
+  reviewReturnScreen = 'screen-duel-result';
+  const a1 = G.mode === 'online' ? onlineMyAnswers : G.p1.answers;
+  const a2 = G.mode === 'online' ? null : G.p2.answers;
+  showReview(a1, a2, G.p1Name, G.p2Name);
+});
+
+// ═══════════════════════════════════════════════════════
+// CATALOG MANAGEMENT
+// ═══════════════════════════════════════════════════════
+function renderCatalogList() {
+  const cats = getCatalogs();
+  const c    = document.getElementById('catalog-list-container');
+  if (!cats.length) {
+    c.innerHTML = '<div class="empty-state"><div class="es-icon">📭</div>Noch keine Kataloge.<br>Erstelle deinen ersten!</div>';
+    return;
+  }
+  c.innerHTML = '<div class="catalog-list">' + cats.map(cat =>
+    '<div class="catalog-item">' +
+      '<div><div class="ci-name">' + esc(cat.name) + '</div>' +
+      '<div class="ci-meta">' + cat.questions.length + ' Frage' + (cat.questions.length !== 1 ? 'n' : '') + (cat.desc ? ' · ' + esc(cat.desc) : '') + '</div></div>' +
+      '<div class="catalog-item-actions">' +
+        '<div class="icon-btn play" onclick="playCatalog(\'' + cat.id + '\')" title="Spielen">▶️</div>' +
+        '<div class="icon-btn" onclick="editCatalog(\'' + cat.id + '\')" title="Bearbeiten">✏️</div>' +
+        '<div class="icon-btn del" onclick="deleteCatalog(\'' + cat.id + '\')" title="Löschen">🗑️</div>' +
+      '</div>' +
+    '</div>'
+  ).join('') + '</div>';
+}
+
+function playCatalog(id) {
+  const cat = getCatalogs().find(c => c.id === id);
+  if (!cat || !cat.questions.length) { showToast('Katalog ist leer', 'error'); return; }
+  G.mode = 'solo';
+  G.source = 'catalog';
+  G.catalogId = id;
+  G.solo = { correct: 0, points: 0, timeBonus: 0 };
+  startQuiz();
+}
+
+function openNewCatalog() {
+  editingCatalog = { id: 'cat_' + Date.now(), name: '', desc: '', questions: [] };
+  document.getElementById('editor-catalog-name').value = '';
+  document.getElementById('editor-catalog-desc').value = '';
+  renderEditorQList();
+  hideQuestionForm();
+  showScreen('screen-catalog-editor');
+}
+
+function editCatalog(id) {
+  const cat = getCatalogs().find(c => c.id === id);
+  if (!cat) return;
+  editingCatalog = JSON.parse(JSON.stringify(cat));
+  document.getElementById('editor-catalog-name').value = cat.name;
+  document.getElementById('editor-catalog-desc').value = cat.desc || '';
+  renderEditorQList();
+  hideQuestionForm();
+  showScreen('screen-catalog-editor');
+}
+
+function deleteCatalog(id) {
+  if (!confirm('Katalog wirklich löschen?')) return;
+  saveCatalogs(getCatalogs().filter(c => c.id !== id));
+  renderCatalogList();
+  showToast('Katalog gelöscht', 'error');
+}
+
+function cancelEditor() { showScreen('screen-home'); switchTab('catalog'); }
+
+function renderEditorQList() {
+  document.getElementById('editor-q-count').textContent = editingCatalog.questions.length;
+  const list = document.getElementById('editor-q-list');
+  if (!editingCatalog.questions.length) {
+    list.innerHTML = '<div class="empty-state" style="padding:20px 0;"><div class="es-icon">🤔</div>Noch keine Fragen. Füge die erste hinzu!</div>';
+    return;
+  }
+  list.innerHTML = editingCatalog.questions.map((q, i) =>
+    '<div class="editor-q-item">' +
+      '<div style="flex:1;">' +
+        '<div class="editor-q-text">' + (i+1) + '. ' + esc(q.question) + '</div>' +
+        '<div class="editor-q-answer">✓ ' + esc(q.options[q.correct]) + '</div>' +
+      '</div>' +
+      '<div class="icon-btn del" onclick="removeQuestion(' + i + ')">🗑️</div>' +
+    '</div>'
+  ).join('');
+}
+
+function removeQuestion(idx) { editingCatalog.questions.splice(idx, 1); renderEditorQList(); }
+
+function showQuestionForm() {
+  document.getElementById('q-form').style.display = 'block';
+  ['qf-question','qf-explanation','qf-topic'].forEach(id => document.getElementById(id).value = '');
+  ['opt-0','opt-1','opt-2','opt-3'].forEach(id => document.getElementById(id).value = '');
+  document.querySelectorAll('.correct-radio').forEach(r => r.checked = false);
+  document.getElementById('qf-question').focus();
+}
+function hideQuestionForm() { document.getElementById('q-form').style.display = 'none'; }
+
+function saveQuestion() {
+  const question = document.getElementById('qf-question').value.trim();
+  const opts     = ['opt-0','opt-1','opt-2','opt-3'].map(id => document.getElementById(id).value.trim());
+  const radio    = document.querySelector('.correct-radio:checked');
+  if (!question)           { showToast('Bitte eine Frage eingeben', 'error'); return; }
+  if (opts.some(o => !o)) { showToast('Bitte alle 4 Optionen ausfüllen', 'error'); return; }
+  if (!radio)              { showToast('Bitte die richtige Antwort markieren', 'error'); return; }
+  editingCatalog.questions.push({
+    question, options: opts, correct: parseInt(radio.value),
+    explanation: document.getElementById('qf-explanation').value.trim() || 'Keine Erklärung angegeben.',
+    topic: document.getElementById('qf-topic').value.trim() || 'Allgemein'
+  });
+  renderEditorQList();
+  hideQuestionForm();
+  showToast('Frage gespeichert ✓', 'success');
+}
+
+function saveCatalog() {
+  const name = document.getElementById('editor-catalog-name').value.trim();
+  if (!name)                             { showToast('Bitte einen Katalognamen eingeben', 'error'); return; }
+  if (!editingCatalog.questions.length)  { showToast('Mindestens eine Frage erforderlich', 'error'); return; }
+  editingCatalog.name = name;
+  editingCatalog.desc = document.getElementById('editor-catalog-desc').value.trim();
+  const cats = getCatalogs();
+  const idx  = cats.findIndex(c => c.id === editingCatalog.id);
+  if (idx >= 0) cats[idx] = editingCatalog; else cats.push(editingCatalog);
+  saveCatalogs(cats);
+  showToast('Katalog gespeichert ✓', 'success');
+  showScreen('screen-home');
+  switchTab('catalog');
+}
+
+// ═══════════════════════════════════════════════════════
+// API KEY MANAGEMENT
+// ═══════════════════════════════════════════════════════
+function selectProvider(val) {
+  document.querySelectorAll('#provider-pills .pill').forEach(p => p.classList.toggle('active', p.dataset.val === val));
+  document.getElementById('apikey-input').value = '';
+  if (val === 'gemini') {
+    document.getElementById('apikey-label').textContent = 'API-Key (Google AI Studio)';
+    document.getElementById('apikey-input').placeholder = 'AIza…';
+    document.getElementById('apikey-hint').innerHTML = 'Kostenloser Key unter <strong>aistudio.google.com</strong> → „Get API key". Keine Kreditkarte nötig.';
+  } else {
+    document.getElementById('apikey-label').textContent = 'API-Key (Anthropic)';
+    document.getElementById('apikey-input').placeholder = 'sk-ant-…';
+    document.getElementById('apikey-hint').innerHTML = 'Key unter <strong>console.anthropic.com</strong> → API Keys. Kostenpflichtig, aber sehr günstig.';
+  }
+}
+function openApiKeyModal() {
+  const stored   = localStorage.getItem('sd_api_key') || '';
+  const provider = localStorage.getItem('sd_provider') || 'gemini';
+  selectProvider(provider);
+  document.getElementById('apikey-input').value = stored ? '••••••••••••' : '';
+  document.getElementById('modal-apikey').classList.remove('hidden');
+}
+function closeApiKeyModal() {
+  document.getElementById('modal-apikey').classList.add('hidden');
+}
+function saveApiKey() {
+  const val      = document.getElementById('apikey-input').value.trim();
+  const provider = document.querySelector('#provider-pills .pill.active')?.dataset.val || 'gemini';
+  if (!val || val === '••••••••••••') { closeApiKeyModal(); return; }
+  localStorage.setItem('sd_provider', provider);
+  localStorage.setItem('sd_api_key', val);
+  closeApiKeyModal();
+  showToast('Einstellungen gespeichert ✓', 'success');
+}
+document.getElementById('modal-apikey').addEventListener('click', e => {
+  if (e.target === document.getElementById('modal-apikey')) closeApiKeyModal();
+});
+
+// ═══════════════════════════════════════════════════════
+// EXIT-BESTÄTIGUNG (laufendes Spiel verlassen)
+// ═══════════════════════════════════════════════════════
+function confirmExitQuiz() {
+  document.getElementById('modal-exit').classList.remove('hidden');
+}
+function closeExitModal() {
+  document.getElementById('modal-exit').classList.add('hidden');
+}
+function exitQuizToHome() {
+  clearInterval(G.timerInterval);
+  closeExitModal();
+  if (G.mode === 'online') { leaveOnlineRoom(); return; }
+  showScreen('screen-home');
+}
+document.getElementById('modal-exit').addEventListener('click', e => {
+  if (e.target === document.getElementById('modal-exit')) closeExitModal();
+});
+
+// ═══════════════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════════════
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+let toastTimer;
+function showToast(msg, type) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast ' + (type || '') + ' show';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2400);
+}
+
+// Init
+switchTab('solo');
+
+// ═══════════════════════════════════════════════════════
+// ONLINE DUEL — FIREBASE
+// ═══════════════════════════════════════════════════════
+let fbApp = null;
+let fbDB  = null;
+let onlineRoomCode = null;
+let onlineRole = null;          // 'host' | 'guest'
+let onlineRoomRef = null;
+let onlineLastRoom = null;
+let onlineAdvancing = false;
+let onlineLastQRendered = -1;
+let onlineMyAnswers = [];
+
+function getFirebaseConfig() {
+  try { return JSON.parse(localStorage.getItem('sd_firebase') || 'null'); } catch { return null; }
+}
+
+function initFirebase() {
+  if (fbDB) return true;
+  const cfg = getFirebaseConfig();
+  if (!cfg) return false;
+  try {
+    try { fbApp = firebase.app('sd'); } catch { fbApp = firebase.initializeApp(cfg, 'sd'); }
+    fbDB = firebase.app('sd').database();
+    return true;
+  } catch(e) { fbApp = null; fbDB = null; console.error(e); return false; }
+}
+
+function generateRoomCode() {
+  const C = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  return Array.from({length:6}, () => C[Math.floor(Math.random()*C.length)]).join('');
+}
+
+// ── sub-tab switch ──
+function switchDuelSubTab(tab) {
+  ['local','online'].forEach(t => {
+    document.getElementById('duel-sub-' + t).style.display = t === tab ? 'block' : 'none';
+    document.getElementById('subtab-btn-' + t).classList.toggle('active', t === tab);
+  });
+}
+
+// ── online pill setup ──
+setupPills('online-grade-pills',   'dGrade',      checkOnlineReady);
+setupPills('online-subject-pills', 'dSubject',    checkOnlineReady);
+setupPills('online-diff-pills',    'dDifficulty', checkOnlineReady);
+
+document.querySelectorAll('#online-source-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#online-source-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    G.dSource = p.dataset.val;
+    document.getElementById('online-catalog-wrap').style.display = G.dSource === 'catalog' ? 'block' : 'none';
+    if (G.dSource === 'catalog') populateCatalogSelect('online-catalog-select', 'dCatalogId');
+    checkOnlineReady();
+  });
+});
+document.getElementById('online-catalog-select').addEventListener('change', e => { G.dCatalogId = e.target.value || null; checkOnlineReady(); });
+
+function checkOnlineReady() {
+  const aiOk  = G.dSource === 'ai' && !!(G.dSubject && G.dSubcategory);
+  const catOk = G.dSource === 'catalog' && !!G.dCatalogId;
+  document.getElementById('online-create-btn').disabled = !(G.dGrade && (aiOk || catOk));
+}
+
+// ── Firebase config modal ──
+function openFirebaseModal() {
+  const cfg = getFirebaseConfig();
+  if (cfg) {
+    document.getElementById('fb-api-key').value = '••••••••••••';
+    document.getElementById('fb-project-id').value = cfg.projectId || '';
+    document.getElementById('fb-db-url').value = cfg.databaseURL || '';
+  }
+  document.getElementById('modal-firebase').classList.remove('hidden');
+}
+function closeFirebaseModal() { document.getElementById('modal-firebase').classList.add('hidden'); }
+function saveFirebaseModal() {
+  const apiKey    = document.getElementById('fb-api-key').value.trim();
+  const projectId = document.getElementById('fb-project-id').value.trim();
+  const dbUrl     = document.getElementById('fb-db-url').value.trim();
+  if (!projectId || !dbUrl) { showToast('Bitte Projekt-ID und Database URL ausfüllen', 'error'); return; }
+  if (!dbUrl.includes('firebaseio.com') && !dbUrl.includes('firebasedatabase.app')) { showToast('Ungültige Database URL', 'error'); return; }
+  const cfg = {
+    apiKey: (apiKey === '••••••••••••' ? (getFirebaseConfig()||{}).apiKey : apiKey) || '',
+    authDomain: projectId + '.firebaseapp.com',
+    databaseURL: dbUrl,
+    projectId,
+    storageBucket: projectId + '.appspot.com'
+  };
+  if (!cfg.apiKey) { showToast('Bitte API-Key eingeben', 'error'); return; }
+  localStorage.setItem('sd_firebase', JSON.stringify(cfg));
+  if (fbApp) { try { fbApp.delete(); } catch(e) {} fbApp = null; fbDB = null; }
+  closeFirebaseModal();
+  showToast('Firebase konfiguriert ✓', 'success');
+}
+document.getElementById('modal-firebase').addEventListener('click', e => {
+  if (e.target === document.getElementById('modal-firebase')) closeFirebaseModal();
+});
+
+// ── create room ──
+async function createOnlineRoom() {
+  if (!initFirebase()) { openFirebaseModal(); return; }
+  const myName = document.getElementById('online-my-name').value.trim() || 'Spieler 1';
+  const code = generateRoomCode();
+  onlineRoomCode = code;
+  onlineRole = 'host';
+  G.p1Name = myName;
+  onlineAdvancing = false;
+  onlineLastQRendered = -1;
+  onlineMyAnswers = [];
+
+  try {
+    await fbDB.ref('rooms/' + code).set({
+      status: 'waiting',
+      hostName: myName, guestName: '',
+      grade: G.dGrade, subject: G.dSubject, difficulty: G.dDifficulty,
+      source: G.dSource, catalogId: G.dCatalogId || '',
+      questions: [], currentQuestion: 0,
+      hostAns: -99, guestAns: -99,
+      hostScore: {correct:0,points:0,timeBonus:0},
+      guestScore: {correct:0,points:0,timeBonus:0},
+      createdAt: firebase.database.ServerValue.TIMESTAMP
+    });
+    showOnlineWaitScreen();
+    startRoomListener();
+    // Auto-delete after 45 min
+    setTimeout(() => fbDB.ref('rooms/' + code).remove().catch(()=>{}), 45*60*1000);
+  } catch(e) {
+    showToast('Firebase-Fehler: ' + e.message, 'error');
+  }
+}
+
+// ── join room ──
+async function joinOnlineRoom() {
+  if (!initFirebase()) { openFirebaseModal(); return; }
+  const code   = (document.getElementById('join-code-input').value.trim()).toUpperCase();
+  const myName = document.getElementById('join-name-input').value.trim() || 'Spieler 2';
+  if (code.length !== 6) { showToast('Bitte 6-stelligen Code eingeben', 'error'); return; }
+  try {
+    const snap = await fbDB.ref('rooms/' + code).once('value');
+    const room = snap.val();
+    if (!room)                  { showToast('Raum nicht gefunden', 'error'); return; }
+    if (room.status !== 'waiting') { showToast('Spiel läuft bereits', 'error'); return; }
+    if (room.guestName)         { showToast('Raum bereits voll', 'error'); return; }
+    onlineRoomCode = code;
+    onlineRole = 'guest';
+    G.p2Name = myName;
+    G.p1Name = room.hostName;
+    onlineAdvancing = false;
+    onlineLastQRendered = -1;
+    await fbDB.ref('rooms/' + code + '/guestName').set(myName);
+    showOnlineWaitScreen();
+    startRoomListener();
+  } catch(e) {
+    showToast('Fehler: ' + e.message, 'error');
+  }
+}
+
+// ── waiting screen ──
+function showOnlineWaitScreen() {
+  const isHost = onlineRole === 'host';
+  document.getElementById('ow-title').textContent = isHost ? 'Raum erstellt!' : 'Beigetreten!';
+  document.getElementById('ow-code-section').style.display = isHost ? 'block' : 'none';
+  if (isHost) document.getElementById('ow-code').textContent = onlineRoomCode;
+  document.getElementById('ow-status').textContent = isHost ? 'Warte auf Mitspieler' : 'Warte auf Host';
+  document.getElementById('ow-status-box').className = 'wait-status';
+  document.getElementById('ow-guest-joined').style.display = 'none';
+  document.getElementById('ow-start-btn').style.display = 'none';
+  showScreen('screen-online-wait');
+}
+
+// ── room listener ──
+function startRoomListener() {
+  if (onlineRoomRef) onlineRoomRef.off('value');
+  onlineRoomRef = fbDB.ref('rooms/' + onlineRoomCode);
+  onlineRoomRef.on('value', snap => {
+    const room = snap.val();
+    if (!room) { handleRoomGone(); return; }
+    onlineLastRoom = room;
+    handleRoomUpdate(room);
+  });
+}
+
+function handleRoomGone() {
+  if (onlineRoomRef) { onlineRoomRef.off('value'); onlineRoomRef = null; }
+  showToast('Raum nicht mehr verfügbar', 'error');
+  setTimeout(() => showScreen('screen-home'), 1400);
+}
+
+function handleRoomUpdate(room) {
+  const activeId = document.querySelector('.screen.active')?.id || '';
+
+  if (room.status === 'waiting' && activeId === 'screen-online-wait') {
+    if (onlineRole === 'host' && room.guestName) {
+      document.getElementById('ow-guest-joined').style.display = 'block';
+      document.getElementById('ow-guest-joined').textContent = '✓ ' + room.guestName + ' ist beigetreten!';
+      document.getElementById('ow-start-btn').style.display = 'block';
+      document.getElementById('ow-status').textContent = 'Bereit zum Starten';
+      document.getElementById('ow-status-box').className = 'wait-status joined';
+    }
+    return;
+  }
+
+  if (room.status === 'loading' && activeId !== 'screen-loading') {
+    showScreen('screen-loading');
+    startLoadingMessages();
+    return;
+  }
+
+  if (room.status === 'playing') {
+    if (activeId === 'screen-loading') stopLoadingMessages();
+    if (activeId === 'screen-loading' || activeId === 'screen-online-wait') {
+      // First entry into quiz
+      G.questions = room.questions;
+      G.p1Name = room.hostName; G.p2Name = room.guestName;
+      G.p1 = {...room.hostScore}; G.p2 = {...room.guestScore};
+      G.current = room.currentQuestion;
+      G.mode = 'online';
+      document.getElementById('q-total').textContent = G.questions.length;
+      setupQuizUI();
+      showScreen('screen-quiz');
+      renderOnlineQuestion(room);
+      return;
+    }
+    if (activeId === 'screen-quiz') {
+      // Live score update
+      document.getElementById('db-p1-score').textContent = room.hostScore.points;
+      document.getElementById('db-p2-score').textContent = room.guestScore.points;
+      G.p1 = {...room.hostScore}; G.p2 = {...room.guestScore};
+
+      // Opponent answered?
+      const oppAns = onlineRole === 'host' ? room.guestAns : room.hostAns;
+      const oppName = onlineRole === 'host' ? room.guestName : room.hostName;
+      const oppEl = document.getElementById('opp-indicator');
+      if (oppEl && oppAns !== -99) {
+        oppEl.textContent = '✓ ' + oppName + ' hat geantwortet';
+        oppEl.className = 'opp-indicator done';
+      }
+
+      // Host advances question when both answered
+      if (!onlineAdvancing && onlineRole === 'host' && room.hostAns !== -99 && room.guestAns !== -99) {
+        onlineAdvancing = true;
+        setTimeout(() => advanceOnlineQuestion(room), 1200);
+      }
+
+      // Question advanced?
+      if (room.currentQuestion !== onlineLastQRendered) {
+        if (room.currentQuestion < G.questions.length) {
+          G.current = room.currentQuestion;
+          onlineAdvancing = false;
+          renderOnlineQuestion(room);
+        }
+      }
+    }
+    return;
+  }
+
+  if (room.status === 'finished') {
+    clearInterval(G.timerInterval);
+    G.p1 = {...room.hostScore}; G.p2 = {...room.guestScore};
+    G.p1Name = room.hostName; G.p2Name = room.guestName;
+    showDuelResult();
+  }
+}
+
+// ── render question (online) ──
+function renderOnlineQuestion(room) {
+  onlineLastQRendered = room.currentQuestion;
+  G.answered = false;
+
+  // Reset my answer sentinel in Firebase
+  const myAnsField = onlineRole === 'host' ? 'hostAns' : 'guestAns';
+  fbDB.ref('rooms/' + onlineRoomCode + '/' + myAnsField).set(-99).catch(()=>{});
+
+  const q = G.questions[G.current];
+  const oppName = onlineRole === 'host' ? room.guestName : room.hostName;
+
+  document.getElementById('q-current').textContent = G.current + 1;
+  document.getElementById('progress-fill').style.width = (G.current / G.questions.length * 100) + '%';
+  document.getElementById('q-topic').textContent = q.topic || 'Allgemein';
+  document.getElementById('q-text').textContent = q.question;
+  document.getElementById('feedback').className = 'feedback';
+  document.getElementById('next-btn').className = 'next-btn';
+  document.getElementById('points-flash').textContent = '';
+
+  document.getElementById('db-p1-name').textContent  = room.hostName;
+  document.getElementById('db-p2-name').textContent  = room.guestName;
+  document.getElementById('db-p1-score').textContent = room.hostScore.points;
+  document.getElementById('db-p2-score').textContent = room.guestScore.points;
+  const badge = document.getElementById('duel-turn-badge');
+  badge.textContent = '🌐 Online-Duell · Frage ' + (G.current + 1);
+  badge.className = 'duel-turn-badge p1';
+
+  // Opponent indicator
+  let oppEl = document.getElementById('opp-indicator');
+  if (!oppEl) {
+    oppEl = document.createElement('div');
+    oppEl.id = 'opp-indicator';
+    document.getElementById('next-btn').insertAdjacentElement('afterend', oppEl);
+  }
+  oppEl.textContent = oppName + ' denkt nach…';
+  oppEl.className = 'opp-indicator thinking';
+
+  const container = document.getElementById('answers-container');
+  container.innerHTML = '';
+  ['A','B','C','D'].forEach((l, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'answer-btn';
+    btn.innerHTML = '<span class="ans-letter">' + l + '</span><span>' + esc(q.options[i]) + '</span>';
+    btn.addEventListener('click', () => selectOnlineAnswer(i));
+    container.appendChild(btn);
+  });
+  startTimer();
+}
+
+// ── answer (online) ──
+async function selectOnlineAnswer(idx) {
+  if (G.answered) return;
+  clearInterval(G.timerInterval);
+  G.answered = true;
+
+  const q    = G.questions[G.current];
+  const btns = document.querySelectorAll('.answer-btn');
+  btns.forEach(b => b.disabled = true);
+
+  const isCorrect = idx === q.correct;
+  const gained = isCorrect ? 10 : 0;
+  onlineMyAnswers.push(idx);
+
+  if (isCorrect) {
+    btns[idx].classList.add('correct');
+    showFeedback('correct', '✓ Richtig! ' + (q.explanation || ''));
+    document.getElementById('points-flash').textContent = '+10 Punkte';
+  } else {
+    btns[idx].classList.add('wrong');
+    btns[q.correct].classList.add('correct');
+    showFeedback('wrong', '✗ Falsch. ' + (q.explanation || ''));
+    document.getElementById('points-flash').textContent = '';
+  }
+
+  const myAnsField   = onlineRole === 'host' ? 'hostAns'   : 'guestAns';
+  const myScoreField = onlineRole === 'host' ? 'hostScore' : 'guestScore';
+  const prevScore    = onlineLastRoom ? onlineLastRoom[myScoreField] : {correct:0,points:0};
+  const newScore = {
+    correct: prevScore.correct + (isCorrect ? 1 : 0),
+    points:  prevScore.points + gained
+  };
+  try {
+    await fbDB.ref('rooms/' + onlineRoomCode).update({ [myAnsField]: idx, [myScoreField]: newScore });
+  } catch(e) { showToast('Verbindungsfehler', 'error'); }
+}
+
+// ── timeout (online) ──
+async function onlineTimeOut() {
+  G.answered = true;
+  const q = G.questions[G.current];
+  onlineMyAnswers.push(-1);
+  document.querySelectorAll('.answer-btn').forEach(b => b.disabled = true);
+  document.querySelectorAll('.answer-btn')[q.correct].classList.add('correct');
+  showFeedback('timeout', '⏱ Zeit abgelaufen! ' + (q.explanation || ''));
+  const myAnsField = onlineRole === 'host' ? 'hostAns' : 'guestAns';
+  try { await fbDB.ref('rooms/' + onlineRoomCode + '/' + myAnsField).set(-1); } catch(e) {}
+}
+
+// ── advance question (host only) ──
+async function advanceOnlineQuestion(room) {
+  const next = room.currentQuestion + 1;
+  try {
+    if (next >= room.questions.length) {
+      await fbDB.ref('rooms/' + onlineRoomCode).update({
+        status: 'finished', currentQuestion: next, hostAns: -99, guestAns: -99
+      });
+    } else {
+      await fbDB.ref('rooms/' + onlineRoomCode).update({
+        currentQuestion: next, hostAns: -99, guestAns: -99
+      });
+    }
+  } catch(e) { showToast('Verbindungsfehler beim Fortschritt', 'error'); }
+}
+
+// ── start game (host) ──
+async function startOnlineGame() {
+  const room = onlineLastRoom;
+  if (!room || !room.guestName) { showToast('Kein Mitspieler verbunden', 'error'); return; }
+  showScreen('screen-loading');
+  startLoadingMessages();
+  try {
+    await fbDB.ref('rooms/' + onlineRoomCode + '/status').set('loading');
+    G.mode = 'online';
+    const questions = await loadQuestions();
+    await fbDB.ref('rooms/' + onlineRoomCode).update({
+      status: 'playing', questions,
+      currentQuestion: 0, hostAns: -99, guestAns: -99,
+      hostScore: {correct:0,points:0,timeBonus:0},
+      guestScore: {correct:0,points:0,timeBonus:0}
+    });
+  } catch(e) {
+    stopLoadingMessages();
+    await fbDB.ref('rooms/' + onlineRoomCode + '/status').set('waiting').catch(()=>{});
+    document.getElementById('loading-text').textContent = 'Fehler: ' + e.message;
+    setTimeout(() => showScreen('screen-online-wait'), 2800);
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// PLAYED-QUESTION TRACKING (localStorage)
+// ═══════════════════════════════════════════════════════
+function playedKey(grade, subj, subcat) {
+  return 'sd_played_' + grade + '_' + subj.replace(/\W/g,'_') + '_' + (subcat||'').replace(/\W/g,'_');
+}
+function getPlayedSet(grade, subj, subcat) {
+  try { return new Set(JSON.parse(localStorage.getItem(playedKey(grade, subj, subcat)) || '[]')); }
+  catch { return new Set(); }
+}
+function addToPlayedSet(grade, subj, subcat, questions) {
+  const s = getPlayedSet(grade, subj, subcat);
+  questions.forEach(q => s.add(q.question.slice(0, 80)));
+  localStorage.setItem(playedKey(grade, subj, subcat), JSON.stringify([...s]));
+}
+function resetPlayedSet(grade, subj, subcat) {
+  localStorage.removeItem(playedKey(grade, subj, subcat));
+}
+
+// ═══════════════════════════════════════════════════════
+// FIREBASE QUESTION BANK
+// ═══════════════════════════════════════════════════════
+function qbPath(grade, subj, subcat) {
+  // Sanitize for Firebase keys (no . # $ [ ] /)
+  const safe = s => s.replace(/[.#$\[\]\/]/g, '_');
+  return 'questionBank/' + safe(subj) + '/' + safe(subcat) + '/klasse' + grade;
+}
+
+async function loadFromQuestionBank(grade, subj, subcat) {
+  if (!initFirebase()) return null;
+  try {
+    const snap = await fbDB.ref(qbPath(grade, subj, subcat)).once('value');
+    const data = snap.val();
+    if (data && Array.isArray(data.questions) && data.questions.length >= 8) return data.questions;
+  } catch(e) {}
+  return null;
+}
+
+async function saveToQuestionBank(grade, subj, subcat, newQuestions) {
+  if (!initFirebase()) return;
+  try {
+    const existing = await loadFromQuestionBank(grade, subj, subcat) || [];
+    const existingTexts = new Set(existing.map(q => q.question));
+    const toAdd = newQuestions.filter(q => !existingTexts.has(q.question));
+    const merged = [...existing, ...toAdd];
+    await fbDB.ref(qbPath(grade, subj, subcat)).set({
+      questions: merged,
+      subject: subj, subcategory: subcat, grade,
+      updatedAt: firebase.database.ServerValue.TIMESTAMP
+    });
+  } catch(e) { console.error('QB save error:', e); }
+}
+
+async function deleteFromQuestionBank(grade, subj, subcat) {
+  if (!initFirebase()) return;
+  try { await fbDB.ref(qbPath(grade, subj, subcat)).remove(); } catch(e) {}
+}
+
+const QB_MAX = 504;
+let libData = []; // indexed by button onclick
+
+// ── Library browser ──
+async function refreshLibrary() {
+  const c = document.getElementById('library-list-container');
+  if (!initFirebase()) {
+    c.innerHTML = '<div class="empty-state"><div class="es-icon">🔥</div>Bitte zuerst Firebase konfigurieren.</div>';
+    return;
+  }
+  c.innerHTML = '<div class="loading-state"><div class="spinner"></div>Bibliothek wird geladen…</div>';
+  try {
+    const snap = await fbDB.ref('questionBank').once('value');
+    const bank = snap.val();
+    if (!bank) {
+      c.innerHTML = '<div class="empty-state"><div class="es-icon">📭</div>Noch keine Fragen gespeichert.<br>Starte ein KI-Quiz, um die Bibliothek zu füllen!</div>';
+      return;
+    }
+    libData = [];
+    let html = '<div class="catalog-list">';
+    Object.entries(bank).forEach(([subj, subcats]) => {
+      Object.entries(subcats).forEach(([subcat, grades]) => {
+        Object.entries(grades).forEach(([gradeKey, entry]) => {
+          const grade = gradeKey.replace('klasse','');
+          const count = entry.questions ? entry.questions.length : 0;
+          const date  = entry.updatedAt ? new Date(entry.updatedAt).toLocaleDateString('de-DE') : '–';
+          const subcatDisplay = subcat.replace(/_/g,' ');
+          const maxed = count >= QB_MAX;
+          const idx = libData.length;
+          libData.push({ subj, subcat: subcatDisplay, grade });
+          const played = getPlayedSet(grade, subj, subcatDisplay);
+          const playedCount = played.size;
+          const remaining = Math.max(0, count - playedCount);
+          const progress = Math.min(100, Math.round(count / QB_MAX * 100));
+          html += '<div class="catalog-item" style="flex-direction:column;align-items:stretch;gap:8px;">'
+            + '<div style="display:flex;justify-content:space-between;align-items:center;">'
+            + '<div><div class="ci-name">' + esc(subj) + ' · ' + esc(subcatDisplay) + '</div>'
+            + '<div class="ci-meta">Klasse ' + grade + ' · ' + count + ' / ' + QB_MAX + ' im Pool'
+            + (maxed ? ' · <span style="color:var(--green);">✓ Voll</span>' : '')
+            + ' · ' + remaining + ' ungesehen · ' + date + '</div></div>'
+            + '<div class="catalog-item-actions">'
+            + '<div class="icon-btn play" title="8 zufällige spielen" onclick="playFromBank(' + idx + ')">▶️</div>'
+            + '<div class="icon-btn" title="8 neue Fragen hinzufügen" style="font-size:.8rem;" onclick="addToBank(' + idx + ')">➕</div>'
+            + '<div class="icon-btn del" title="Pool löschen" onclick="deleteFromBank(' + idx + ')">🗑️</div>'
+            + '</div></div>'
+            + '<div style="height:4px;background:var(--border);border-radius:2px;overflow:hidden;">'
+            + '<div style="height:100%;width:' + progress + '%;background:linear-gradient(90deg,var(--accent),var(--green));border-radius:2px;transition:width .4s;"></div>'
+            + '</div></div>';
+        });
+      });
+    });
+    html += '</div>';
+    c.innerHTML = html;
+  } catch(e) {
+    c.innerHTML = '<div class="empty-state"><div class="es-icon">⚠️</div>Fehler: ' + esc(e.message) + '</div>';
+  }
+}
+
+function playFromBank(idx) {
+  const { subj, subcat, grade } = libData[idx];
+  G.mode = 'solo'; G.source = 'ai';
+  G.subject = subj; G.subcategory = subcat; G.grade = grade; G.difficulty = 'mittel';
+  G.solo = { correct:0, points:0, answers:[] };
+  startQuiz();
+}
+
+async function addToBank(idx) {
+  const { subj, subcat, grade } = libData[idx];
+  const apiKey = localStorage.getItem('sd_api_key');
+  if (!apiKey) { openApiKeyModal(); return; }
+  showToast('KI generiert 8 neue Fragen…', '');
+  try {
+    const newQs = await _fetchQuestions(grade, subj, subcat, 'mittel');
+    await saveToQuestionBank(grade, subj, subcat, newQs);
+    showToast('8 Fragen zum Pool hinzugefügt ✓', 'success');
+    refreshLibrary();
+  } catch(e) { showToast('Fehler: ' + e.message, 'error'); }
+}
+
+async function deleteFromBank(idx) {
+  const { subj, subcat, grade } = libData[idx];
+  if (!confirm('Pool für ' + subj + ' · ' + subcat + ' (Kl. ' + grade + ') wirklich löschen?')) return;
+  await deleteFromQuestionBank(grade, subj, subcat);
+  showToast('Pool gelöscht ✓', 'success');
+  refreshLibrary();
+}
+
+// ── leave room ──
+function leaveOnlineRoom() {
+  clearInterval(G.timerInterval);
+  if (onlineRoomRef) { onlineRoomRef.off('value'); onlineRoomRef = null; }
+  if (onlineRoomCode) {
+    if (onlineRole === 'host') {
+      fbDB.ref('rooms/' + onlineRoomCode).remove().catch(()=>{});
+    } else {
+      fbDB.ref('rooms/' + onlineRoomCode + '/guestName').set('').catch(()=>{});
+    }
+  }
+  onlineRoomCode = null; onlineRole = null; onlineLastRoom = null;
+  G.mode = 'solo';
+  showScreen('screen-home');
+}
+</script>
+</body>
+</html>
