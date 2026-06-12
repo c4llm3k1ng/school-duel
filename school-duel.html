@@ -1047,6 +1047,15 @@
 const TIMER_SEC = 20;
 const CIRC = 2 * Math.PI * 22;
 
+// ── Firebase / Online / Auth variables (declared early to avoid TDZ) ──
+let fbApp = null, fbDB = null, fbAuth = null;
+let onlineRoomCode = null, onlineRole = null, onlineMySlot = 'p1', onlineMaxPlayers = 2;
+let onlineRoomRef = null, onlineLastRoom = null;
+let onlineMyAnswers = [], onlineWaitingForOpponent = false;
+let currentUser = null, challengeDbListener = null;
+let pendingChallenge = null, chalTargetUid = null, chalTargetUsername = null;
+let pwaPrompt = null;
+
 let G = {
   mode: 'solo',
   // solo settings
@@ -2211,12 +2220,7 @@ switchTab('solo');
 // ═══════════════════════════════════════════════════════
 // AUTH + USER SYSTEM
 // ═══════════════════════════════════════════════════════
-let fbAuth = null;
-let currentUser = null;  // { uid, username, grade }
-let challengeDbListener = null;
-let pendingChallenge = null;
-let chalTargetUid = null;
-let chalTargetUsername = null;
+// (auth vars declared at top of script)
 
 function initAuth() {
   if (!initFirebase()) return;
@@ -2657,7 +2661,7 @@ function showScreen(id) {
 initAuth();
 
 // ── PWA ──
-let pwaPrompt = null;
+// (pwaPrompt declared at top of script)
 window.addEventListener('beforeinstallprompt', e => {
   e.preventDefault();
   pwaPrompt = e;
@@ -2689,16 +2693,7 @@ const DEFAULT_FB_CONFIG = {
   storageBucket: "school-duel.appspot.com"
 };
 
-let fbApp = null;
-let fbDB  = null;
-let onlineRoomCode = null;
-let onlineRole = null;          // 'host' | 'guest'
-let onlineRoomRef = null;
-let onlineLastRoom = null;
-let onlineMyAnswers = [];
-let onlineWaitingForOpponent = false;
-let onlineMySlot = 'p1';   // 'p1'|'p2'|'p3'|'p4'
-let onlineMaxPlayers = 2;
+// (firebase/online vars declared at top of script)
 
 function getFirebaseConfig() {
   try { return JSON.parse(localStorage.getItem('sd_firebase') || 'null'); } catch { return null; }
