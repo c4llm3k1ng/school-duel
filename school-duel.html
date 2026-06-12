@@ -507,18 +507,15 @@
           <input class="form-input" id="reg-password" type="password" placeholder="Mindestens 6 Zeichen" autocomplete="new-password"></div>
         <div class="auth-input-wrap" style="margin-top:10px;"><label>Passwort wiederholen</label>
           <input class="form-input" id="reg-password2" type="password" placeholder="Passwort bestätigen" autocomplete="new-password"></div>
-        <div class="label" style="margin-top:14px;">Deine Klasse</div>
-        <div class="pill-row" id="reg-grade-pills">
-          <div class="pill" data-val="5">5</div><div class="pill" data-val="6">6</div>
-          <div class="pill" data-val="7">7</div><div class="pill" data-val="8">8</div>
-          <div class="pill" data-val="9">9</div><div class="pill" data-val="10">10</div>
-          <div class="pill" data-val="11">11</div><div class="pill" data-val="12">12</div>
-        </div>
         <div class="auth-error" id="reg-error"></div>
         <button class="btn btn-primary" id="reg-btn" onclick="doRegister()">Registrieren →</button>
       </div>
     </div>
     <button class="btn btn-secondary" onclick="continueAsGuest()" style="margin-top:6px;">Als Gast spielen</button>
+    <button class="btn btn-secondary" id="pwa-install-btn" style="display:none;margin-top:6px;border-color:var(--accent);color:var(--accent);" onclick="installPWA()">📲 App installieren</button>
+    <div id="pwa-ios-hint" style="display:none;text-align:center;font-size:.78rem;color:var(--muted);margin-top:10px;padding:10px;background:var(--surface2);border-radius:10px;">
+      📲 <strong>iPhone:</strong> Teilen-Symbol → "Zum Home-Bildschirm"
+    </div>
   </div>
 </div>
 
@@ -2206,15 +2203,13 @@ async function doRegister() {
   const username = document.getElementById('reg-username').value.trim();
   const pw1      = document.getElementById('reg-password').value;
   const pw2      = document.getElementById('reg-password2').value;
-  const grade    = document.querySelector('#reg-grade-pills .pill.active')?.dataset.val;
-  const errEl    = document.getElementById('reg-error');
+  const errEl = document.getElementById('reg-error');
   errEl.textContent = '';
 
   if (!username || username.length < 3)              { errEl.textContent = 'Benutzername min. 3 Zeichen'; return; }
   if (!/^[a-zA-Z0-9_\-.äöüÄÖÜß]+$/.test(username)) { errEl.textContent = 'Nur Buchstaben, Zahlen und _ erlaubt'; return; }
   if (pw1.length < 6)                                { errEl.textContent = 'Passwort min. 6 Zeichen'; return; }
   if (pw1 !== pw2)                                   { errEl.textContent = 'Passwörter stimmen nicht überein'; return; }
-  if (!grade)                                        { errEl.textContent = 'Bitte Klasse auswählen'; return; }
   if (!initFirebase())                               { errEl.textContent = 'Firebase nicht verfügbar'; return; }
 
   const btn = document.getElementById('reg-btn');
@@ -2225,7 +2220,7 @@ async function doRegister() {
     const email = username.toLowerCase().replace(/[^a-z0-9]/g,'') + '@schoolduel.game';
     const cred = await fbAuth.createUserWithEmailAndPassword(email, pw1);
     const uid  = cred.user.uid;
-    await fbDB.ref('users/' + uid).set({ username, grade, createdAt: Date.now(), stats: {gamesPlayed:0,wins:0,correctAnswers:0} });
+    await fbDB.ref('users/' + uid).set({ username, createdAt: Date.now(), stats: {gamesPlayed:0,wins:0,correctAnswers:0} });
     await fbDB.ref('usernames/' + username.toLowerCase()).set(uid);
   } catch(e) {
     errEl.textContent = e.message;
@@ -2477,7 +2472,24 @@ async function declineChallenge() {
   showToast('Herausforderung abgelehnt', '');
 }
 
-// ── PWA Service Worker ──
+// ── PWA ──
+let pwaPrompt = null;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  pwaPrompt = e;
+  document.getElementById('pwa-install-btn').style.display = 'block';
+});
+window.addEventListener('appinstalled', () => {
+  document.getElementById('pwa-install-btn').style.display = 'none';
+  pwaPrompt = null;
+});
+function installPWA() {
+  if (pwaPrompt) { pwaPrompt.prompt(); pwaPrompt.userChoice.then(() => { pwaPrompt = null; }); }
+}
+// iOS hint
+const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.navigator.standalone;
+if (isIOS) document.getElementById('pwa-ios-hint').style.display = 'block';
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').catch(() => {});
 }
