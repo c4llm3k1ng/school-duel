@@ -1,4 +1,4 @@
-const CACHE = 'school-duel-v5';
+const CACHE = 'school-duel-v6';
 const CORE = [
   './school-duel.html',
   './manifest.json',
@@ -20,7 +20,6 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-  // Network first for Firebase/Supabase/API calls, cache first for app shell
   const url = new URL(e.request.url);
   const isExternal = url.origin !== location.origin;
   if (isExternal) { e.respondWith(fetch(e.request).catch(() => caches.match(e.request))); return; }

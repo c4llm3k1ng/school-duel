@@ -2285,14 +2285,14 @@ async function doRegister() {
   const pw2      = document.getElementById('reg-password2').value;
   const errEl = document.getElementById('reg-error');
   errEl.textContent = '';
+  const showRegErr = msg => { errEl.textContent = msg; showToast(msg, 'error'); };
 
-  if (!username || username.length < 3)              { errEl.textContent = 'Benutzername min. 3 Zeichen'; return; }
-  if (!/^[a-zA-Z0-9_\-.äöüÄÖÜß]+$/.test(username)) { errEl.textContent = 'Nur Buchstaben, Zahlen und _ erlaubt'; return; }
-  if (pw1.length < 6)                                { errEl.textContent = 'Passwort min. 6 Zeichen'; return; }
-  if (pw1 !== pw2)                                   { errEl.textContent = 'Passwörter stimmen nicht überein'; return; }
-  if (!initFirebase())                               { errEl.textContent = 'Firebase nicht verfügbar'; return; }
-
-  if (!fbAuth) { errEl.textContent = 'Auth nicht geladen – Seite neu laden'; return; }
+  if (!username || username.length < 3)              { showRegErr('Benutzername min. 3 Zeichen'); return; }
+  if (!/^[a-zA-Z0-9_\-.äöüÄÖÜß]+$/.test(username)) { showRegErr('Nur Buchstaben, Zahlen und _ erlaubt'); return; }
+  if (pw1.length < 6)                                { showRegErr('Passwort min. 6 Zeichen'); return; }
+  if (pw1 !== pw2)                                   { showRegErr('Passwörter stimmen nicht überein'); return; }
+  if (!initFirebase())                               { showRegErr('Firebase nicht verfügbar'); return; }
+  if (!fbAuth)                                       { showRegErr('Bitte Seite neu laden (F5)'); return; }
   const btn = document.getElementById('reg-btn');
   btn.disabled = true; btn.textContent = 'Bitte warten…';
   try {
@@ -2308,6 +2308,7 @@ async function doRegister() {
               : e.code === 'auth/weak-password' ? 'Passwort zu schwach'
               : e.message;
     errEl.textContent = msg;
+    showToast(msg, 'error');
     btn.disabled = false; btn.textContent = 'Registrieren →';
   }
 }
