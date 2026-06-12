@@ -100,6 +100,14 @@
 
   /* QUESTION */
   .topic-badge { display:inline-block; padding:4px 12px; border-radius:50px; background:rgba(108,99,255,.15); border:1px solid rgba(108,99,255,.3); color:var(--accent); font-size:.72rem; font-family:'Space Mono',monospace; margin-bottom:12px; }
+  .origin-badge { display:inline-flex; gap:6px; flex-wrap:wrap; margin-bottom:10px; }
+  .origin-chip { font-size:.68rem; font-family:'Space Mono',monospace; padding:3px 9px; border-radius:50px; background:var(--surface2); color:var(--muted); border:1px solid var(--border); }
+  .random-row { display:flex; align-items:center; gap:6px; margin-bottom:4px; }
+  .random-row .label { margin-bottom:0; flex:1; }
+  .dice-btn { border:none; background:var(--surface2); color:var(--text); border-radius:8px; padding:5px 10px; font-size:.8rem; cursor:pointer; border:1px solid var(--border); white-space:nowrap; }
+  .dice-btn:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .pill[data-val="gemischt"] { border-color: var(--green); color: var(--green); }
+  .pill[data-val="gemischt"].active { background: var(--green); color: #fff; }
   .question-text { font-size:1.15rem; font-weight:600; line-height:1.5; margin-bottom:22px; }
 
   /* ANSWERS */
@@ -639,14 +647,23 @@
   <!-- SOLO -->
   <div id="tab-solo">
     <div class="card">
-      <div class="label">Klassenstufe</div>
-      <div class="pill-row" id="grade-pills">
-        <div class="pill" data-val="5">Klasse 5</div><div class="pill" data-val="6">Klasse 6</div>
-        <div class="pill" data-val="7">Klasse 7</div><div class="pill" data-val="8">Klasse 8</div>
-        <div class="pill" data-val="9">Klasse 9</div><div class="pill" data-val="10">Klasse 10</div>
-        <div class="pill" data-val="11">Klasse 11</div><div class="pill" data-val="12">Klasse 12</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+        <div class="label" style="margin-bottom:0;">Klassenstufe</div>
+        <div style="display:flex;gap:5px;">
+          <button class="dice-btn" onclick="randomizePills('grade-pills','grade')">🎲 Zufällig</button>
+          <button class="dice-btn" onclick="setMixed('grade-pills','grade')" title="Fragen aus verschiedenen Klassen">∼ Gemischt</button>
+        </div>
       </div>
-      <div class="label">Fach</div>
+      <div class="pill-row" id="grade-pills">
+        <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
+        <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
+        <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
+        <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;margin-top:10px;">
+        <div class="label" style="margin-bottom:0;">Fach</div>
+        <button class="dice-btn" onclick="randomizePills('subject-pills','subject')">🎲 Zufällig</button>
+      </div>
       <div class="pill-row" id="subject-pills">
         <div class="pill" data-val="Mathematik">📐 Mathe</div>
         <div class="pill" data-val="Deutsch">📖 Deutsch</div>
@@ -673,6 +690,7 @@
         <div class="label">Katalog wählen</div>
         <select id="solo-catalog-select" class="form-input"></select>
       </div>
+      <button class="btn btn-secondary" style="margin-bottom:8px;" onclick="randomizeAll('solo')">🎲 Alles zufällig</button>
       <button class="btn btn-primary" id="start-btn" disabled>Solo-Quiz starten →</button>
     </div>
   </div>
@@ -698,14 +716,23 @@
           <input class="name-input p2-input" id="p2-name" placeholder="z.B. Lisa" maxlength="16">
         </div>
       </div>
-      <div class="label">Klassenstufe</div>
-      <div class="pill-row" id="duel-grade-pills">
-        <div class="pill" data-val="5">Klasse 5</div><div class="pill" data-val="6">Klasse 6</div>
-        <div class="pill" data-val="7">Klasse 7</div><div class="pill" data-val="8">Klasse 8</div>
-        <div class="pill" data-val="9">Klasse 9</div><div class="pill" data-val="10">Klasse 10</div>
-        <div class="pill" data-val="11">Klasse 11</div><div class="pill" data-val="12">Klasse 12</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+        <div class="label" style="margin-bottom:0;">Klassenstufe</div>
+        <div style="display:flex;gap:5px;">
+          <button class="dice-btn" onclick="randomizePills('duel-grade-pills','dGrade')">🎲 Zufällig</button>
+          <button class="dice-btn" onclick="setMixed('duel-grade-pills','dGrade')">∼ Gemischt</button>
+        </div>
       </div>
-      <div class="label">Fach</div>
+      <div class="pill-row" id="duel-grade-pills">
+        <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
+        <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
+        <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
+        <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;margin-top:10px;">
+        <div class="label" style="margin-bottom:0;">Fach</div>
+        <button class="dice-btn" onclick="randomizePills('duel-subject-pills','dSubject')">🎲 Zufällig</button>
+      </div>
       <div class="pill-row" id="duel-subject-pills">
         <div class="pill" data-val="Mathematik">📐 Mathe</div>
         <div class="pill" data-val="Deutsch">📖 Deutsch</div>
@@ -732,6 +759,7 @@
         <div class="label">Katalog wählen</div>
         <select id="duel-catalog-select" class="form-input"></select>
       </div>
+      <button class="btn btn-secondary" style="margin-bottom:8px;" onclick="randomizeAll('duel')">🎲 Alles zufällig</button>
       <button class="btn btn-primary" id="duel-start-btn" disabled>Duell starten ⚔️</button>
     </div>
     </div><!-- /#duel-sub-local -->
@@ -960,6 +988,7 @@
   <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
 
   <div class="card">
+    <div class="origin-badge" id="q-origin" style="display:none;"></div>
     <div class="topic-badge" id="q-topic"></div>
     <div class="question-text" id="q-text"></div>
     <div class="answers" id="answers-container"></div>
@@ -1145,8 +1174,14 @@ function renderSubcategoryPills(wrapId, subjectVal, key, checkFn) {
   if (!subs.length) { wrap.style.display = 'none'; wrap.innerHTML = ''; G[key] = null; return; }
   wrap.style.display = 'block';
   const rowId = wrapId + '-row';
-  wrap.innerHTML = '<div class="label" style="margin-top:4px;">Themenbereich</div>'
-                 + '<div class="pill-row" id="' + rowId + '"></div>';
+  wrap.innerHTML =
+    '<div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;margin-bottom:4px;">'
+    + '<div class="label" style="margin-bottom:0;">Themenbereich</div>'
+    + '<div style="display:flex;gap:5px;">'
+    + '<button class="dice-btn" onclick="randomizeSubcat(\'' + rowId + '\',\'' + key + '\')">🎲 Zufällig</button>'
+    + '<button class="dice-btn" onclick="setMixedSubcat(\'' + rowId + '\',\'' + key + '\')">∼ Gemischt</button>'
+    + '</div></div>'
+    + '<div class="pill-row" id="' + rowId + '"></div>';
   const row = document.getElementById(rowId);
   subs.forEach(s => {
     const p = document.createElement('div');
@@ -1413,6 +1448,7 @@ async function loadQuestions() {
         showToast('Alle ' + poolSize + ' Fragen gespielt – von vorne!', '');
       }
       addToPlayedSet(grade, subj, subcat, toPlay);
+      toPlay = toPlay.map(q => ({ ...q, _grade: grade, _subject: subj, _subcategory: subcat }));
 
       // Background: generate more if pool < 504
       if (poolSize < QB_MAX) {
@@ -1499,16 +1535,72 @@ correct = 0-basierter Index der richtigen Antwort.`;
 }
 
 async function generateQuestionsAI() {
-  const apiKey = localStorage.getItem('sd_api_key');
-  if (!apiKey) { openApiKeyModal(); throw new Error('Kein API-Key gesetzt.'); }
   const grade  = G.mode === 'solo' ? G.grade       : G.dGrade;
   const subj   = G.mode === 'solo' ? G.subject     : G.dSubject;
   const subcat = G.mode === 'solo' ? G.subcategory : G.dSubcategory;
   const diff   = G.mode === 'solo' ? G.difficulty  : G.dDifficulty;
+
+  // Handle mixed modes
+  const gradeIsMixed  = grade  === 'gemischt';
+  const subcatIsMixed = subcat === 'gemischt';
+
+  if (gradeIsMixed || subcatIsMixed) {
+    return generateMixedAI(subj, subcat, grade, diff);
+  }
+
   const questions = await _fetchQuestions(grade, subj, subcat, diff);
-  // Auto-save to Firebase question bank
-  if (subcat) saveToQuestionBank(grade, subj, subcat, questions);
-  return questions;
+  const tagged = questions.map(q => ({ ...q, _grade: grade, _subject: subj, _subcategory: subcat }));
+  if (subcat && subcat !== 'gemischt') saveToQuestionBank(grade, subj, subcat, questions);
+  return tagged;
+}
+
+async function generateMixedAI(subj, subcat, grade, diff) {
+  const keyData = await getEffectiveApiKey();
+  if (!keyData) { openApiKeyModal(); throw new Error('Kein API-Key gesetzt.'); }
+  const { key: apiKey, provider } = keyData;
+
+  const gradeIsMixed  = grade  === 'gemischt';
+  const subcatIsMixed = subcat === 'gemischt';
+  const availSubs = SUBCATEGORIES[subj] || [];
+
+  let gradeHint  = gradeIsMixed  ? 'verschiedene Klassenstufen (5–12), je Frage passend'   : grade + '. Klasse';
+  let subcatHint = subcatIsMixed ? 'verschiedene Themenbereiche (' + availSubs.join(', ') + ')' : (subcat || 'Allgemein');
+  let subjHint   = subj === 'gemischt' ? 'verschiedene Schulfächer' : subj;
+
+  const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle 8 abwechslungsreiche Multiple-Choice-Quizfragen:
+- Fach: ${subjHint}
+- Klassenstufe: ${gradeHint}
+- Themenbereich: ${subcatHint}
+- Schwierigkeit: ${diff || 'mittel'}
+
+Antworte NUR mit einem JSON-Array. Jedes Objekt hat genau diese Felder:
+{"question":"...","options":["A","B","C","D"],"answer":0,"explanation":"...","topic":"...","_grade":"7","_subject":"Mathematik","_subcategory":"Algebra"}
+
+Passe _grade, _subject und _subcategory je Frage individuell an die tatsächliche Frage an.
+Keine Erklärungen außerhalb des JSON!`;
+
+  let text = '';
+  if (provider === 'gemini' || !provider) {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ contents:[{parts:[{text: prompt}]}], generationConfig:{temperature:0.8,maxOutputTokens:3000} })
+    });
+    const d = await res.json();
+    if (d.error) throw new Error(d.error.message);
+    text = d.candidates?.[0]?.content?.parts?.[0]?.text || '';
+  } else {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method:'POST', headers:{'x-api-key':apiKey,'anthropic-version':'2023-06-01','content-type':'application/json'},
+      body: JSON.stringify({ model:'claude-haiku-4-5-20251001', max_tokens:3000, messages:[{role:'user',content:prompt}] })
+    });
+    const d = await res.json();
+    text = d.content?.[0]?.text || '';
+  }
+  const cleaned = text.trim().replace(/```json|```/g,'').trim();
+  const start = cleaned.indexOf('['), end = cleaned.lastIndexOf(']');
+  const qs = JSON.parse((start !== -1 && end !== -1) ? cleaned.slice(start, end+1) : cleaned);
+  // Ensure _subject fallback
+  return qs.map(q => ({ ...q, _subject: q._subject || subj, _grade: q._grade || grade, _subcategory: q._subcategory || subcat }));
 }
 
 // ═══════════════════════════════════════════════════════
@@ -1535,6 +1627,16 @@ function renderQuestion() {
   document.getElementById('progress-fill').style.width = (G.current / G.questions.length * 100) + '%';
   document.getElementById('q-topic').textContent = q.topic || 'Allgemein';
   document.getElementById('q-text').textContent  = q.question;
+  // Show question origin (grade · subject · subcategory)
+  const originEl = document.getElementById('q-origin');
+  if (originEl) {
+    const parts = [];
+    if (q._grade)      parts.push('Klasse ' + q._grade);
+    if (q._subject)    parts.push(q._subject);
+    if (q._subcategory && q._subcategory !== 'Allgemein') parts.push(q._subcategory);
+    originEl.innerHTML = parts.map(p => '<span class="origin-chip">' + p + '</span>').join('');
+    originEl.style.display = parts.length ? 'flex' : 'none';
+  }
   document.getElementById('feedback').className  = 'feedback';
   document.getElementById('next-btn').className  = 'next-btn';
   document.getElementById('points-flash').textContent = '';
@@ -2439,6 +2541,95 @@ async function updateStats(correct, total, isWin) {
       totalQuestions: (s.totalQuestions || 0) + total
     });
   } catch {}
+}
+
+// ═══════════════════════════════════════════════════════
+// RANDOM / MIXED HELPERS
+// ═══════════════════════════════════════════════════════
+const GRADES = ['5','6','7','8','9','10','11','12'];
+const SUBJECTS = Object.keys(SUBCATEGORIES);
+
+function randomizePills(pillsId, gKey) {
+  const pills = document.querySelectorAll('#' + pillsId + ' .pill:not([data-val="gemischt"])');
+  if (!pills.length) return;
+  const pick = pills[Math.floor(Math.random() * pills.length)];
+  pills.forEach(p => p.classList.remove('active'));
+  pick.classList.add('active');
+  G[gKey] = pick.dataset.val;
+  // trigger subject subcategory update if needed
+  if (pillsId === 'subject-pills')       renderSubcategoryPills('solo-subcategory-wrap', G[gKey], 'subcategory', checkSoloReady);
+  if (pillsId === 'duel-subject-pills')  renderSubcategoryPills('duel-subcategory-wrap', G[gKey], 'dSubcategory', checkDuelReady);
+  if (pillsId === 'grade-pills')         checkSoloReady?.();
+  if (pillsId === 'duel-grade-pills')    checkDuelReady?.();
+}
+
+function setMixed(pillsId, gKey) {
+  document.querySelectorAll('#' + pillsId + ' .pill').forEach(p => p.classList.remove('active'));
+  // add gemischt pill if not exists
+  let gPill = document.querySelector('#' + pillsId + ' .pill[data-val="gemischt"]');
+  if (!gPill) {
+    gPill = document.createElement('div');
+    gPill.className = 'pill';
+    gPill.dataset.val = 'gemischt';
+    gPill.textContent = '∼ Gemischt';
+    document.getElementById(pillsId).appendChild(gPill);
+    gPill.addEventListener('click', () => {
+      document.querySelectorAll('#' + pillsId + ' .pill').forEach(p => p.classList.remove('active'));
+      gPill.classList.add('active');
+      G[gKey] = 'gemischt';
+    });
+  }
+  gPill.classList.add('active');
+  G[gKey] = 'gemischt';
+  if (gKey === 'grade')  checkSoloReady?.();
+  if (gKey === 'dGrade') checkDuelReady?.();
+}
+
+function randomizeSubcat(rowId, key) {
+  const pills = document.querySelectorAll('#' + rowId + ' .pill:not([data-val="gemischt"])');
+  if (!pills.length) return;
+  const pick = pills[Math.floor(Math.random() * pills.length)];
+  pills.forEach(p => p.classList.remove('active'));
+  pick.classList.add('active');
+  G[key] = pick.dataset.val;
+  if (key === 'subcategory')  checkSoloReady?.();
+  if (key === 'dSubcategory') checkDuelReady?.();
+}
+
+function setMixedSubcat(rowId, key) {
+  document.querySelectorAll('#' + rowId + ' .pill').forEach(p => p.classList.remove('active'));
+  let gPill = document.querySelector('#' + rowId + ' .pill[data-val="gemischt"]');
+  if (!gPill) {
+    gPill = document.createElement('div');
+    gPill.className = 'pill';
+    gPill.dataset.val = 'gemischt';
+    gPill.textContent = '∼ Gemischt';
+    document.getElementById(rowId).appendChild(gPill);
+    gPill.addEventListener('click', () => {
+      document.querySelectorAll('#' + rowId + ' .pill').forEach(p => p.classList.remove('active'));
+      gPill.classList.add('active');
+      G[key] = 'gemischt';
+    });
+  }
+  gPill.classList.add('active');
+  G[key] = 'gemischt';
+  if (key === 'subcategory')  checkSoloReady?.();
+  if (key === 'dSubcategory') checkDuelReady?.();
+}
+
+function randomizeAll(mode) {
+  const gPrefix = mode === 'duel' ? 'duel-' : '';
+  const gKey    = mode === 'duel' ? 'dGrade' : 'grade';
+  const sKey    = mode === 'duel' ? 'dSubject' : 'subject';
+  const scKey   = mode === 'duel' ? 'dSubcategory' : 'subcategory';
+  const scWrap  = mode === 'duel' ? 'duel-subcategory-wrap' : 'solo-subcategory-wrap';
+  randomizePills(gPrefix + 'grade-pills', gKey);
+  randomizePills(gPrefix + 'subject-pills', sKey);
+  renderSubcategoryPills(scWrap, G[sKey], scKey, mode === 'duel' ? checkDuelReady : checkSoloReady);
+  setTimeout(() => {
+    const scRow = document.getElementById(scWrap + '-row');
+    if (scRow) randomizeSubcat(scWrap + '-row', scKey);
+  }, 50);
 }
 
 // ── Enter on input fields ──
