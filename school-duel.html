@@ -3356,13 +3356,32 @@ function stopLoadingMessages() {
   clearInterval(loadingMsgInterval);
 }
 
+function shuffleOptions(questions) {
+  return questions.map(q => {
+    const idx = [0, 1, 2, 3];
+    for (let i = 3; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; }
+    return { ...q, options: idx.map(i => q.options[i]), correct: idx.indexOf(q.correct) };
+  });
+}
+
 async function startQuiz() {
   resetFlagBtn();
+  G.current = 0;
+
+  // Duel Player 2: reuse the exact same questions Player 1 answered
+  if (G.mode === 'duel' && G.currentPlayer === 2) {
+    document.getElementById('q-total').textContent = G.questions.length;
+    setupQuizUI();
+    showScreen('screen-quiz');
+    renderQuestion();
+    return;
+  }
+
   showScreen('screen-loading');
   startLoadingMessages();
-  G.questions = []; G.current = 0;
+  G.questions = [];
   try {
-    G.questions = await loadQuestions();
+    G.questions = shuffleOptions(await loadQuestions());
     stopLoadingMessages();
     document.getElementById('q-total').textContent = G.questions.length;
     setupQuizUI();
@@ -3380,7 +3399,7 @@ async function startQuiz() {
       if (typeof MU_LEICHT !== 'undefined') pool.push(...MU_LEICHT);
       if (typeof MU_MITTEL !== 'undefined') pool.push(...MU_MITTEL);
       if (pool.length >= 8) {
-        G.questions = pool.sort(() => Math.random() - .5).slice(0, 8).map(stripAnswerHint);
+        G.questions = shuffleOptions(pool.sort(() => Math.random() - .5).slice(0, 8).map(stripAnswerHint));
         showToast('KI-Limit erreicht – Fragen aus eingebautem Katalog', '');
         document.getElementById('q-total').textContent = G.questions.length;
         setupQuizUI();
