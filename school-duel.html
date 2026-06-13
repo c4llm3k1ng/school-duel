@@ -646,8 +646,18 @@
   <div class="card" style="margin-bottom:14px;">
     <div class="label">Benutzername suchen</div>
     <div style="display:flex;gap:8px;">
-      <input class="form-input" id="friend-search-input" placeholder="Benutzername eingeben" style="flex:1;">
-      <button class="btn btn-primary" style="width:auto;padding:10px 16px;" onclick="searchAndAddFriend()">Suchen</button>
+      <input class="form-input" id="friend-search-input" placeholder="Benutzername eingeben" style="flex:1;"
+        onkeydown="if(event.key==='Enter')searchFriend()">
+      <button class="btn btn-primary" style="width:auto;padding:10px 16px;" onclick="searchFriend()">Suchen</button>
+    </div>
+    <div id="friend-search-result" style="display:none;margin-top:12px;padding:10px 12px;background:var(--surface2);border-radius:10px;border:1px solid var(--border);display:none;">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <div>
+          <div style="font-weight:600;" id="fsr-name"></div>
+          <div style="font-size:.78rem;color:var(--muted);" id="fsr-status"></div>
+        </div>
+        <button class="btn btn-primary" style="width:auto;padding:7px 14px;font-size:.85rem;" id="fsr-add-btn" onclick="sendFriendRequest()">➕ Hinzufügen</button>
+      </div>
     </div>
   </div>
   <div id="friends-screen-content">
@@ -667,11 +677,12 @@
   </div>
 
   <div class="nav-tabs">
-    <div class="nav-tab active" id="tab-btn-solo"    onclick="switchTab('solo')">🎯 Solo</div>
-    <div class="nav-tab"        id="tab-btn-duel"    onclick="switchTab('duel')">⚔️ Duell</div>
-    <div class="nav-tab"        id="tab-btn-catalog" onclick="switchTab('catalog')">📚 Kataloge</div>
-    <div class="nav-tab"        id="tab-btn-library" onclick="switchTab('library')">📖 Bibliothek</div>
-    <div class="nav-tab"        id="tab-btn-practice" onclick="switchTab('practice')">🔁 Üben</div>
+    <div class="nav-tab active" id="tab-btn-solo"       onclick="switchTab('solo')">🎯 Solo</div>
+    <div class="nav-tab"        id="tab-btn-quickduel"  onclick="switchTab('quickduel')">⚡ Schnellduell</div>
+    <div class="nav-tab"        id="tab-btn-duel"       onclick="switchTab('duel')">⚔️ Duell</div>
+    <div class="nav-tab"        id="tab-btn-catalog"    onclick="switchTab('catalog')">📚 Kataloge</div>
+    <div class="nav-tab"        id="tab-btn-library"    onclick="switchTab('library')">📖 Bibliothek</div>
+    <div class="nav-tab"        id="tab-btn-practice"   onclick="switchTab('practice')">🔁 Üben</div>
   </div>
 
   <!-- SOLO -->
@@ -719,6 +730,35 @@
         <select id="solo-catalog-select" class="form-input"></select>
       </div>
       <button class="btn btn-primary" id="start-btn" disabled>Solo-Quiz starten →</button>
+    </div>
+  </div>
+
+  <!-- QUICK DUEL -->
+  <div id="tab-quickduel" style="display:none;">
+    <div class="card">
+      <div style="text-align:center;margin-bottom:16px;">
+        <div style="font-size:2rem;margin-bottom:6px;">⚡</div>
+        <div style="font-weight:700;font-size:1.05rem;margin-bottom:4px;">Schnellduell</div>
+        <div style="font-size:.85rem;color:var(--muted);">Alles wird automatisch zufällig gewählt – einfach Namen eingeben und losspielen.</div>
+      </div>
+      <div class="label">Spielernamen</div>
+      <div class="name-row">
+        <div>
+          <div class="name-label p1">⚔️ Spieler 1</div>
+          <input class="name-input" id="qd-p1-name" placeholder="z.B. Max" maxlength="16">
+        </div>
+        <div>
+          <div class="name-label p2">🛡️ Spieler 2</div>
+          <input class="name-input p2-input" id="qd-p2-name" placeholder="z.B. Lisa" maxlength="16">
+        </div>
+      </div>
+      <div class="label">Anzahl Runden</div>
+      <div class="pill-row" id="qd-rounds-pills">
+        <div class="pill active" data-val="1">1 Runde</div>
+        <div class="pill" data-val="3">3 Runden</div>
+        <div class="pill" data-val="5">5 Runden</div>
+      </div>
+      <button class="btn btn-primary" id="qd-start-btn" style="margin-top:6px;" onclick="startQuickDuel()">⚡ Schnellduell starten</button>
     </div>
   </div>
 
@@ -3191,13 +3231,39 @@ function showScreen(id) {
 }
 
 function switchTab(tab) {
-  ['solo','duel','catalog','library','practice'].forEach(t => {
+  ['solo','quickduel','duel','catalog','library','practice'].forEach(t => {
     document.getElementById('tab-' + t).style.display = t === tab ? 'block' : 'none';
     document.getElementById('tab-btn-' + t).classList.toggle('active', t === tab);
   });
   if (tab === 'catalog')  renderCatalogList();
   if (tab === 'library')  refreshLibrary();
   if (tab === 'practice') renderPracticeTab();
+}
+
+function startQuickDuel() {
+  const p1 = document.getElementById('qd-p1-name').value.trim() || 'Spieler 1';
+  const p2 = document.getElementById('qd-p2-name').value.trim() || 'Spieler 2';
+  const rounds = parseInt(document.querySelector('#qd-rounds-pills .pill.active')?.dataset.val || '1');
+
+  // Randomize all settings
+  const grades    = ['5','6','7','8','9','10','11','12','gemischt'];
+  const subjects  = Object.keys(SUBCATEGORIES);
+  const diffs     = ['leicht','mittel','schwer','gemischt'];
+  const grade   = grades[Math.floor(Math.random() * grades.length)];
+  const subject = subjects[Math.floor(Math.random() * subjects.length)];
+  const subs    = SUBCATEGORIES[subject] || [];
+  const subcat  = subs.length ? subs[Math.floor(Math.random() * subs.length)] : null;
+  const diff    = diffs[Math.floor(Math.random() * diffs.length)];
+
+  G.mode = 'duel';
+  G.p1Name = p1; G.p2Name = p2;
+  G.dGrade = grade; G.dSubject = subject; G.dSubcategory = subcat; G.dDifficulty = diff;
+  G.dSource = 'ai'; G.dCatalogId = null;
+  G.totalRounds = rounds; G.currentRound = 1; G.roundScores = [];
+  G.p1 = { correct:0, points:0, answers:[] };
+  G.p2 = { correct:0, points:0, answers:[] };
+  G.currentPlayer = 1;
+  showHandover(1, true);
 }
 
 // ═══════════════════════════════════════════════════════
@@ -3741,6 +3807,7 @@ function setupQuizUI() {
 }
 
 function renderQuestion() {
+  if (_autoAdvTimer) { clearTimeout(_autoAdvTimer); _autoAdvTimer = null; }
   const q = G.questions[G.current];
   G.answered = false;
 
@@ -3833,6 +3900,7 @@ function selectAnswer(idx) {
     document.getElementById('points-flash').textContent = '';
   }
   document.getElementById('next-btn').classList.add('show');
+  scheduleCatalogAutoAdvance(idx === q.correct);
 }
 
 function timeOut() {
@@ -3845,6 +3913,18 @@ function timeOut() {
   if (tBtns[q.correct]) tBtns[q.correct].classList.add('correct');
   showFeedback('timeout', '⏱ Zeit abgelaufen! ' + (q.explanation || ''));
   document.getElementById('next-btn').classList.add('show');
+  scheduleCatalogAutoAdvance(false);
+}
+
+let _autoAdvTimer = null;
+function scheduleCatalogAutoAdvance(wasCorrect) {
+  const src = G.mode === 'solo' ? G.source : G.dSource;
+  if (src !== 'catalog' || G.mode === 'online') return;
+  const delay = wasCorrect ? 1400 : 2500;
+  _autoAdvTimer = setTimeout(() => {
+    _autoAdvTimer = null;
+    document.getElementById('next-btn').click();
+  }, delay);
 }
 
 function showFeedback(type, text) {
@@ -4968,22 +5048,50 @@ function randomizeAll(mode) {
 // ═══════════════════════════════════════════════════════
 // FRIENDS
 // ═══════════════════════════════════════════════════════
-async function searchAndAddFriend() {
+let _friendSearchUid = null;
+
+async function searchFriend() {
   if (!currentUser) { showToast('Bitte erst anmelden', 'error'); return; }
   const username = document.getElementById('friend-search-input').value.trim();
   if (!username) return;
+  const resultEl = document.getElementById('friend-search-result');
+  resultEl.style.display = 'none';
+  _friendSearchUid = null;
   if (username.toLowerCase() === currentUser.username.toLowerCase()) { showToast('Das bist du!', 'error'); return; }
   try {
     const snap = await fbDB.ref('usernames/' + username.toLowerCase()).once('value');
     if (!snap.exists()) { showToast('Nutzer nicht gefunden', 'error'); return; }
     const targetUid = snap.val();
     const alreadyFriend = await fbDB.ref('friends/' + currentUser.uid + '/' + targetUid).once('value');
-    if (alreadyFriend.exists()) { showToast('Bereits befreundet', 'error'); return; }
-    await fbDB.ref('friendRequests/' + targetUid + '/' + currentUser.uid).set({ username: currentUser.username, sentAt: Date.now() });
+    const reqSent = await fbDB.ref('friendRequests/' + targetUid + '/' + currentUser.uid).once('value');
+    _friendSearchUid = targetUid;
+    document.getElementById('fsr-name').textContent = username;
+    if (alreadyFriend.exists()) {
+      document.getElementById('fsr-status').textContent = 'Bereits befreundet';
+      document.getElementById('fsr-add-btn').style.display = 'none';
+    } else if (reqSent.exists()) {
+      document.getElementById('fsr-status').textContent = 'Anfrage bereits gesendet';
+      document.getElementById('fsr-add-btn').style.display = 'none';
+    } else {
+      document.getElementById('fsr-status').textContent = 'Noch kein Freund';
+      document.getElementById('fsr-add-btn').style.display = '';
+    }
+    resultEl.style.display = 'block';
+  } catch(e) { showToast('Fehler: ' + e.message, 'error'); }
+}
+
+async function sendFriendRequest() {
+  if (!currentUser || !_friendSearchUid) return;
+  try {
+    await fbDB.ref('friendRequests/' + _friendSearchUid + '/' + currentUser.uid).set({ username: currentUser.username, sentAt: Date.now() });
     document.getElementById('friend-search-input').value = '';
+    document.getElementById('friend-search-result').style.display = 'none';
+    _friendSearchUid = null;
     showToast('Anfrage gesendet ✓', 'success');
   } catch(e) { showToast('Fehler: ' + e.message, 'error'); }
 }
+
+async function searchAndAddFriend() { searchFriend(); }
 
 async function acceptFriendRequest(fromUid) {
   try {
@@ -5086,6 +5194,7 @@ setupPills('chal-grade-pills', '_chalGrade', () => {});
 setupPills('chal-diff-pills',  '_chalDiff',  () => {});
 setupPills('chal-rounds-pills', '_chalRounds', () => {});
 setupPills('duel-rounds-pills', '_duelRounds', () => {});
+setupPills('qd-rounds-pills',   '_qdRounds',   () => {});
 setupPills('rp-grade-pills',  'dGrade',      () => {});
 setupPills('rp-diff-pills',   'dDifficulty', () => {});
 document.querySelectorAll('#rp-subject-pills .pill:not(.pill-action)').forEach(p => {
