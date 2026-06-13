@@ -5736,26 +5736,7 @@ function handleRoomUpdate(room) {
       const players = room.players || {};
       const allDone = Object.keys(players).every(k => players[k].done);
       if (onlineWaitingForOpponent && allDone) {
-        clearInterval(G.timerInterval);
-        const curRound  = room.currentRound  || 1;
-        const totRounds = room.totalRounds   || 1;
-        if (curRound < totRounds) {
-          if (onlineRole === 'host') {
-            const nextRound = curRound + 1;
-            const nextPickerSlot = nextRound % 2 === 0 ? 'p2' : 'p1';
-            const pl = room.players || {};
-            const newRoundScores = [...(room.roundScores || []), {
-              p1: pl.p1?.score || {correct:0,points:0},
-              p2: pl.p2?.score || {correct:0,points:0}
-            }];
-            fbDB.ref('rooms/' + onlineRoomCode).update({
-              status:'between_rounds', roundScores:newRoundScores, nextPickerSlot, pickerReady:false
-            }).catch(()=>{});
-          }
-          // Guest: waits for between_rounds status via handleRoomUpdate
-        } else {
-          checkFlaggedThenShow(() => showOnlineMultiRoundResult(room));
-        }
+        _handleAllDone(room);
       }
     }
     return;
@@ -6019,13 +6000,48 @@ async function onlineTimeOut() {
 }
 
 // ── advance this player independently ──
+function _handleAllDone(room) {
+  // Guard: only act if still on the quiz screen
+  if (document.querySelector('.screen.active')?.id !== 'screen-quiz') return;
+  clearInterval(G.timerInterval);
+  const curRound  = room?.currentRound || 1;
+  const totRounds = room?.totalRounds  || 1;
+  if (curRound < totRounds) {
+    if (onlineRole === 'host') {
+      const nextRound = curRound + 1;
+      const nextPickerSlot = nextRound % 2 === 0 ? 'p2' : 'p1';
+      const pl = room?.players || {};
+      const newRoundScores = [...(room?.roundScores || []), {
+        p1: pl.p1?.score || {correct:0,points:0},
+        p2: pl.p2?.score || {correct:0,points:0}
+      }];
+      fbDB.ref('rooms/' + onlineRoomCode).update({
+        status:'between_rounds', roundScores:newRoundScores, nextPickerSlot, pickerReady:false
+      }).catch(()=>{});
+      // handleRoomUpdate fires with between_rounds for both players
+    } else {
+      // Guest: handleRoomUpdate should fire with between_rounds soon.
+      // Fallback: re-read Firebase after 3s if still stuck on quiz screen.
+      setTimeout(async () => {
+        if (document.querySelector('.screen.active')?.id !== 'screen-quiz') return;
+        try {
+          const snap = await fbDB.ref('rooms/' + onlineRoomCode).once('value');
+          const fresh = snap.val();
+          if (fresh) { onlineLastRoom = fresh; handleRoomUpdate(fresh); }
+        } catch(e) {}
+      }, 3000);
+    }
+  } else {
+    checkFlaggedThenShow(() => showOnlineMultiRoundResult(room));
+  }
+}
+
 async function _advanceOnlinePlayer(isCorrect, gained) {
   const prevScore = onlineLastRoom?.players?.[onlineMySlot]?.score || {correct:0,points:0};
   const newScore  = { correct: prevScore.correct + (isCorrect?1:0), points: prevScore.points + gained };
   const nextQ     = G.current + 1;
   const done      = nextQ >= G.questions.length;
 
-  // Set flag BEFORE Firebase update so handleRoomUpdate sees it immediately
   if (done) onlineWaitingForOpponent = true;
 
   try {
@@ -6035,14 +6051,18 @@ async function _advanceOnlinePlayer(isCorrect, gained) {
   } catch(e) { showToast('Verbindungsfehler', 'error'); }
 
   setTimeout(() => {
-    if (done) {
-      // Show toast only if others are not yet done (all-done case handled by handleRoomUpdate)
-      const players = onlineLastRoom?.players || {};
-      const allDone = Object.keys(players).every(k => k === onlineMySlot ? true : players[k].done);
-      if (!allDone) showToast('Fertig! Warte auf andere…', '');
-    } else {
+    if (!done) {
       G.current = nextQ;
       renderOnlineQuestion(onlineLastRoom || {players:{},maxPlayers:onlineMaxPlayers});
+      return;
+    }
+    const players = onlineLastRoom?.players || {};
+    const allDone = Object.keys(players).every(k => k === onlineMySlot ? true : players[k].done);
+    if (allDone) {
+      // Backup path: handleRoomUpdate may have already handled this; _handleAllDone guards with screen check
+      _handleAllDone(onlineLastRoom);
+    } else {
+      showToast('Fertig! Warte auf andere…', '');
     }
   }, 1500);
 }
