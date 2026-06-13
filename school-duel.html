@@ -581,6 +581,12 @@
       <div class="pill pill-action dice" onclick="randomizePills('chal-diff-pills','_chalDiff')">🎲</div>
       <div class="pill pill-action mix" onclick="setMixedDiff('chal-diff-pills','_chalDiff')">∼ Mix</div>
     </div>
+    <div class="label" style="margin-top:4px;">Anzahl Runden</div>
+    <div class="pill-row" id="chal-rounds-pills">
+      <div class="pill active" data-val="1">1 Runde</div>
+      <div class="pill" data-val="3">3 Runden</div>
+      <div class="pill" data-val="5">5 Runden</div>
+    </div>
     <div class="form-row" style="margin-top:16px;">
       <button class="btn btn-secondary" onclick="closeChallengeModal()">Abbrechen</button>
       <button class="btn btn-primary" onclick="sendChallenge()">Herausfordern ⚔️</button>
@@ -736,6 +742,12 @@
           <div class="name-label p2">🛡️ Spieler 2</div>
           <input class="name-input p2-input" id="p2-name" placeholder="z.B. Lisa" maxlength="16">
         </div>
+      </div>
+      <div class="label">Anzahl Runden</div>
+      <div class="pill-row" id="duel-rounds-pills">
+        <div class="pill active" data-val="1">1 Runde</div>
+        <div class="pill" data-val="3">3 Runden</div>
+        <div class="pill" data-val="5">5 Runden</div>
       </div>
       <button class="all-random-btn" onclick="randomizeAll('duel')">🎲 Alles zufällig auswählen</button>
       <div class="label">Klassenstufe</div>
@@ -1068,6 +1080,88 @@
   <button class="btn btn-secondary" id="duel-home-btn">Zurück zur Auswahl</button>
 </div>
 
+<!-- ═══════════════════════════ SCREEN: ROUND INTERMEDIATE RESULT ═══════════════════════════ -->
+<div class="screen" id="screen-round-result">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div style="text-align:center;font-size:.85rem;color:var(--muted);margin-bottom:12px;" id="rr-label">Runde 1 von 3 – Zwischenergebnis</div>
+  <div class="card">
+    <div style="font-size:.75rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;">Diese Runde</div>
+    <div class="duel-result-grid">
+      <div class="duel-result-card p1" id="rr-p1-card">
+        <div class="dr-crown" id="rr-p1-crown"></div>
+        <div class="dr-name" id="rr-p1-name"></div>
+        <div class="dr-score" id="rr-p1-score"></div>
+        <div style="font-size:.78rem;color:var(--muted);" id="rr-p1-correct"></div>
+      </div>
+      <div class="duel-result-card p2" id="rr-p2-card">
+        <div class="dr-crown" id="rr-p2-crown"></div>
+        <div class="dr-name" id="rr-p2-name"></div>
+        <div class="dr-score" id="rr-p2-score"></div>
+        <div style="font-size:.78rem;color:var(--muted);" id="rr-p2-correct"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:8px;">
+    <div style="font-size:.75rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;">Gesamtstand</div>
+    <div id="rr-totals"></div>
+  </div>
+  <div id="rr-online-wait" style="display:none;text-align:center;color:var(--muted);font-size:.88rem;padding:10px 0;"></div>
+  <button class="btn btn-primary" id="rr-next-btn" onclick="startNextRound()">Runde <span id="rr-next-num">2</span> wählen →</button>
+</div>
+
+<!-- ═══════════════════════════ MODAL: ROUND CATEGORY PICKER ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-round-pick">
+  <div class="modal" style="max-width:520px;max-height:90vh;overflow-y:auto;">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:12px;" id="rp-title">Runde 2: Spieler 2 wählt</div>
+    <button class="all-random-btn" onclick="randomizeAll('rp')">🎲 Alles zufällig auswählen</button>
+    <div class="label">Fragenquelle</div>
+    <div class="pill-row" id="rp-source-pills">
+      <div class="pill active" data-val="ai">🤖 KI generiert</div>
+      <div class="pill" data-val="catalog">📚 Katalog</div>
+    </div>
+    <div id="rp-catalog-wrap" style="display:none;margin-bottom:10px;">
+      <div class="label">Katalog wählen</div>
+      <select id="rp-catalog-select" class="form-input"></select>
+    </div>
+    <div id="rp-ai-wrap">
+      <div class="label">Klassenstufe</div>
+      <div class="pill-row" id="rp-grade-pills">
+        <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
+        <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
+        <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
+        <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+        <div class="pill pill-action dice" onclick="randomizePills('rp-grade-pills','dGrade')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixed('rp-grade-pills','dGrade')">∼ Mix</div>
+      </div>
+      <div class="label">Fach</div>
+      <div class="pill-row" id="rp-subject-pills">
+        <div class="pill" data-val="Mathematik">📐 Mathe</div>
+        <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+        <div class="pill" data-val="Englisch">🌍 Englisch</div>
+        <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+        <div class="pill" data-val="Biologie">🌿 Biologie</div>
+        <div class="pill" data-val="Physik">⚡ Physik</div>
+        <div class="pill" data-val="Chemie">🧪 Chemie</div>
+        <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+        <div class="pill pill-action dice" onclick="randomizePills('rp-subject-pills','dSubject')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixedSubject('rp-subject-pills','dSubject','rp')">∼ Mix</div>
+      </div>
+      <div id="rp-subcategory-wrap"></div>
+      <div class="label">Schwierigkeit</div>
+      <div class="pill-row" id="rp-diff-pills">
+        <div class="pill" data-val="leicht">Leicht</div>
+        <div class="pill active" data-val="mittel">Mittel</div>
+        <div class="pill" data-val="schwer">Schwer</div>
+        <div class="pill pill-action dice" onclick="randomizePills('rp-diff-pills','dDifficulty')">🎲</div>
+        <div class="pill pill-action mix" onclick="setMixedDiff('rp-diff-pills','dDifficulty')">∼ Mix</div>
+      </div>
+    </div>
+    <div style="margin-top:16px;">
+      <button class="btn btn-primary" id="rp-confirm-btn" onclick="confirmNextRound()">Runde <span id="rp-num">2</span> starten ⚔️</button>
+    </div>
+  </div>
+</div>
+
 <!-- ═══════════════════════════ SCREEN: MULTI RESULT ═══════════════════════════ -->
 <div class="screen" id="screen-multi-result">
   <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
@@ -1127,6 +1221,8 @@ let G = {
   // duel settings
   dGrade: null, dSubject: null, dSubcategory: null, dDifficulty: 'mittel', dSource: 'ai', dCatalogId: null,
   p1Name: 'Spieler 1', p2Name: 'Spieler 2',
+  // multi-round
+  totalRounds: 1, currentRound: 1, roundScores: [],
   // runtime
   questions: [], current: 0, answered: false,
   timeLeft: TIMER_SEC, timerInterval: null,
@@ -3089,7 +3185,7 @@ function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   window.scrollTo(0, 0);
-  const noHomeBtn = ['screen-home','screen-auth','screen-loading','screen-handover','screen-quiz'];
+  const noHomeBtn = ['screen-home','screen-auth','screen-loading','screen-handover','screen-quiz','screen-round-result'];
   document.getElementById('global-home-btn').style.display = noHomeBtn.includes(id) ? 'none' : 'block';
   if (id === 'screen-friends') renderFriendsList();
 }
@@ -3286,6 +3382,9 @@ document.getElementById('duel-start-btn').addEventListener('click', () => {
   G.mode = 'duel';
   G.p1Name = document.getElementById('p1-name').value.trim() || 'Spieler 1';
   G.p2Name = document.getElementById('p2-name').value.trim() || 'Spieler 2';
+  G.totalRounds = parseInt(document.querySelector('#duel-rounds-pills .pill.active')?.dataset.val || '1');
+  G.currentRound = 1;
+  G.roundScores = [];
   G.p1 = { correct: 0, points: 0, answers: [] };
   G.p2 = { correct: 0, points: 0, answers: [] };
   G.currentPlayer = 1;
@@ -3308,6 +3407,8 @@ document.getElementById('duel-replay-btn').addEventListener('click', () => {
   }
   G.p1 = { correct:0, points:0, answers:[] };
   G.p2 = { correct:0, points:0, answers:[] };
+  G.currentRound = 1;
+  G.roundScores = [];
   G.currentPlayer = 1;
   showHandover(1, true);
 });
@@ -3758,7 +3859,7 @@ document.getElementById('next-btn').addEventListener('click', () => {
   if (G.current >= G.questions.length) {
     if (G.mode === 'solo') { checkFlaggedThenShow(showSoloResult); }
     else if (G.currentPlayer === 1) { checkFlaggedThenShow(() => showHandover(2, false)); }
-    else { checkFlaggedThenShow(showDuelResult); }
+    else { checkFlaggedThenShow(endDuelRound); }
   } else { renderQuestion(); }
 });
 
@@ -3784,8 +3885,12 @@ function showSoloResult() {
 }
 
 function showDuelResult() {
-  const total = G.questions.length;
-  const p1 = G.p1, p2 = G.p2;
+  // Cumulative totals across all rounds
+  const rs = G.roundScores;
+  const p1 = rs.length ? rs.reduce((a,r) => ({ correct:a.correct+r.p1.correct, points:a.points+r.p1.points }), {correct:0,points:0}) : G.p1;
+  const p2 = rs.length ? rs.reduce((a,r) => ({ correct:a.correct+r.p2.correct, points:a.points+r.p2.points }), {correct:0,points:0}) : G.p2;
+  const total = G.questions.length * Math.max(rs.length, 1);
+
   let banner, sub, p1w = false, p2w = false;
   if (p1.points > p2.points)      { banner = '🏆 ' + G.p1Name + ' gewinnt!'; sub = p1.points + ' zu ' + p2.points + ' Punkten'; p1w = true; }
   else if (p2.points > p1.points) { banner = '🏆 ' + G.p2Name + ' gewinnt!'; sub = p2.points + ' zu ' + p1.points + ' Punkten'; p2w = true; }
@@ -3803,16 +3908,26 @@ function showDuelResult() {
   document.getElementById('dr-p2-correct').textContent = p2.correct + ' / ' + total + ' richtig';
   document.getElementById('dr-p1-card').classList.toggle('winner', p1w);
   document.getElementById('dr-p2-card').classList.toggle('winner', p2w);
-  document.getElementById('dr-stats').innerHTML =
-    row('Fragen je Spieler', total) +
-    row(G.p1Name + ' richtig', p1.correct + ' / ' + total) +
-    row(G.p2Name + ' richtig', p2.correct + ' / ' + total);
+
+  let statsHtml = row('Runden gespielt', Math.max(rs.length, 1)) + row('Fragen gesamt', total) +
+    row(G.p1Name + ' richtig', p1.correct + ' / ' + total) + row(G.p2Name + ' richtig', p2.correct + ' / ' + total);
+  if (rs.length > 1) {
+    rs.forEach((r, i) => {
+      const rw = r.p1.points > r.p2.points ? G.p1Name : r.p2.points > r.p1.points ? G.p2Name : '–';
+      statsHtml += row('Runde ' + (i+1), rw + ' (' + r.p1.points + ' : ' + r.p2.points + ' Pkt)');
+    });
+  }
+  document.getElementById('dr-stats').innerHTML = statsHtml;
+
   const subj = G.mode === 'online' ? G.dSubject || G.subject : G.dSubject;
   const subc = G.mode === 'online' ? G.dSubcategory || G.subcategory : G.dSubcategory;
   const gr   = G.mode === 'online' ? G.dGrade || G.grade : G.dGrade;
-  if (G.mode === 'duel') {
+  if (G.mode === 'duel' && !rs.length) {
+    // single-round, no per-round saving done yet
     saveGameToHistory(G.questions, G.p1.answers, subj, subc, gr);
     saveGameToHistory(G.questions, G.p2.answers, subj, subc, gr);
+    updateStats(p1.correct, total, p1w);
+  } else if (G.mode === 'duel') {
     updateStats(p1.correct, total, p1w);
   } else if (G.mode === 'online') {
     saveGameToHistory(G.questions, onlineMyAnswers, subj, subc, gr);
@@ -3821,6 +3936,105 @@ function showDuelResult() {
     updateStats(myScore.correct, total, isWin);
   }
   showScreen('screen-duel-result');
+}
+
+// ═══════════════════════════════════════════════════════
+// MULTI-ROUND DUEL
+// ═══════════════════════════════════════════════════════
+function endDuelRound() {
+  // Save this round's scores to history before resetting
+  const subj = G.dSubject, subc = G.dSubcategory, gr = G.dGrade;
+  saveGameToHistory(G.questions, G.p1.answers, subj, subc, gr);
+  saveGameToHistory(G.questions, G.p2.answers, subj, subc, gr);
+
+  G.roundScores.push({ p1: { correct: G.p1.correct, points: G.p1.points }, p2: { correct: G.p2.correct, points: G.p2.points } });
+
+  if (G.currentRound < G.totalRounds) {
+    showRoundResult();
+  } else {
+    showDuelResult();
+  }
+}
+
+function showRoundResult() {
+  const r = G.currentRound;
+  const last = G.roundScores[G.roundScores.length - 1];
+  const qCount = G.questions.length;
+  const p1w = last.p1.points > last.p2.points;
+  const p2w = last.p2.points > last.p1.points;
+
+  document.getElementById('rr-label').textContent = 'Runde ' + r + ' von ' + G.totalRounds + ' – Zwischenergebnis';
+  document.getElementById('rr-p1-name').textContent    = G.p1Name;
+  document.getElementById('rr-p2-name').textContent    = G.p2Name;
+  document.getElementById('rr-p1-score').textContent   = last.p1.points;
+  document.getElementById('rr-p2-score').textContent   = last.p2.points;
+  document.getElementById('rr-p1-correct').textContent = last.p1.correct + ' / ' + qCount + ' richtig';
+  document.getElementById('rr-p2-correct').textContent = last.p2.correct + ' / ' + qCount + ' richtig';
+  document.getElementById('rr-p1-crown').textContent   = p1w ? '👑' : '';
+  document.getElementById('rr-p2-crown').textContent   = p2w ? '👑' : '';
+  document.getElementById('rr-p1-card').classList.toggle('winner', p1w);
+  document.getElementById('rr-p2-card').classList.toggle('winner', p2w);
+
+  const tot1 = G.roundScores.reduce((a,x) => ({ correct:a.correct+x.p1.correct, points:a.points+x.p1.points }), {correct:0,points:0});
+  const tot2 = G.roundScores.reduce((a,x) => ({ correct:a.correct+x.p2.correct, points:a.points+x.p2.points }), {correct:0,points:0});
+  const t1w  = tot1.points > tot2.points, t2w = tot2.points > tot1.points;
+  document.getElementById('rr-totals').innerHTML =
+    row(G.p1Name, tot1.points + ' Pkt · ' + tot1.correct + ' richtig', t1w ? 'var(--accent)' : '') +
+    row(G.p2Name, tot2.points + ' Pkt · ' + tot2.correct + ' richtig', t2w ? 'var(--accent)' : '');
+
+  const nextRound = r + 1;
+  document.getElementById('rr-next-num').textContent = nextRound;
+  document.getElementById('rr-next-btn').style.display = 'block';
+  document.getElementById('rr-next-btn').onclick = startNextRound;
+  document.getElementById('rr-online-wait').style.display = 'none';
+
+  showScreen('screen-round-result');
+}
+
+function startNextRound() {
+  const nextRound = G.currentRound + 1;
+  // Picker: odd round → P1, even round → P2
+  const pickerName = nextRound % 2 === 0 ? G.p2Name : G.p1Name;
+  document.getElementById('rp-title').textContent = 'Runde ' + nextRound + ': ' + pickerName + ' wählt die Kategorien';
+  document.getElementById('rp-num').textContent   = nextRound;
+
+  // Reset picker state
+  G.dGrade = null; G.dSubject = null; G.dSubcategory = null; G.dDifficulty = 'mittel'; G.dSource = 'ai'; G.dCatalogId = null;
+  ['rp-grade-pills','rp-subject-pills'].forEach(id =>
+    document.querySelectorAll('#' + id + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active')));
+  document.querySelectorAll('#rp-grade-pills .pill[data-val="gemischt"], #rp-subject-pills .pill[data-val="gemischt"]').forEach(el => el.remove());
+  document.querySelectorAll('#rp-diff-pills .pill').forEach(p => p.classList.toggle('active', p.dataset.val === 'mittel'));
+  document.getElementById('rp-subcategory-wrap').innerHTML = '';
+  document.getElementById('rp-ai-wrap').style.display = '';
+  document.getElementById('rp-catalog-wrap').style.display = 'none';
+  document.querySelectorAll('#rp-source-pills .pill').forEach(p => p.classList.toggle('active', p.dataset.val === 'ai'));
+
+  // Populate catalog select
+  const sel = document.getElementById('rp-catalog-select');
+  sel.innerHTML = '';
+  getCatalogs().forEach(c => { const o = document.createElement('option'); o.value = c.id; o.textContent = c.name; sel.appendChild(o); });
+
+  // Wire confirm for local duel
+  document.getElementById('rp-confirm-btn').onclick = confirmNextRound;
+  document.getElementById('modal-round-pick').classList.remove('hidden');
+}
+
+function confirmNextRound() {
+  const source = document.querySelector('#rp-source-pills .pill.active')?.dataset.val || 'ai';
+  if (source === 'catalog') {
+    const catId = document.getElementById('rp-catalog-select').value;
+    if (!catId) { showToast('Bitte einen Katalog wählen', 'error'); return; }
+    G.dSource = 'catalog'; G.dCatalogId = catId;
+  } else {
+    if (!G.dGrade || !G.dSubject) { showToast('Bitte Klasse und Fach wählen', 'error'); return; }
+    G.dSource = 'ai';
+  }
+  document.getElementById('modal-round-pick').classList.add('hidden');
+  G.currentRound++;
+  G.p1 = { correct: 0, points: 0, answers: [] };
+  G.p2 = { correct: 0, points: 0, answers: [] };
+  G.currentPlayer = 1;
+  showHandover(1, false);
 }
 
 function showMultiResult(room) {
@@ -4592,6 +4806,7 @@ function randomizePills(pillsId, gKey) {
   if (pillsId === 'duel-subject-pills')   renderSubcategoryPills('duel-subcategory-wrap', G[gKey], 'dSubcategory', checkDuelReady);
   if (pillsId === 'online-subject-pills') renderSubcategoryPills('online-subcategory-wrap', G[gKey], 'dSubcategory', checkOnlineReady);
   if (pillsId === 'chal-subject-pills')   renderSubcategoryPills('chal-subcat-wrap', G[gKey], '_chalSubcat', () => {});
+  if (pillsId === 'rp-subject-pills')     renderSubcategoryPills('rp-subcategory-wrap', G[gKey], 'dSubcategory', () => {});
   if (pillsId === 'grade-pills')          checkSoloReady?.();
   if (pillsId === 'duel-grade-pills')     checkDuelReady?.();
   if (pillsId === 'online-grade-pills')   checkOnlineReady?.();
@@ -4661,12 +4876,14 @@ function setMixedSubject(pillsId, key, mode) {
   const scWrap = mode === 'solo' ? 'solo-subcategory-wrap'
     : mode === 'online' ? 'online-subcategory-wrap'
     : mode === 'chal'   ? 'chal-subcat-wrap'
+    : mode === 'rp'     ? 'rp-subcategory-wrap'
     : 'duel-subcategory-wrap';
   const el = document.getElementById(scWrap);
   if (el) { el.innerHTML = ''; el.style.display = 'none'; }
   if (mode === 'solo')   checkSoloReady?.();
   if (mode === 'duel')   checkDuelReady?.();
   if (mode === 'online') checkOnlineReady?.();
+  // 'rp' mode: no ready-check needed
 }
 
 function randomizeSubcat(rowId, key) {
@@ -4709,6 +4926,16 @@ function randomizeAll(mode) {
     setTimeout(() => {
       const scRow = document.getElementById('chal-subcat-wrap-row');
       if (scRow) randomizeSubcat('chal-subcat-wrap-row', '_chalSubcat');
+    }, 50);
+    return;
+  }
+  if (mode === 'rp') {
+    randomizePills('rp-grade-pills', 'dGrade');
+    randomizePills('rp-subject-pills', 'dSubject');
+    randomizePills('rp-diff-pills', 'dDifficulty');
+    setTimeout(() => {
+      const scRow = document.getElementById('rp-subcategory-wrap-row');
+      if (scRow) randomizeSubcat('rp-subcategory-wrap-row', 'dSubcategory');
     }, 50);
     return;
   }
@@ -4857,6 +5084,27 @@ document.querySelectorAll('#chal-subject-pills .pill:not(.pill-action)').forEach
 });
 setupPills('chal-grade-pills', '_chalGrade', () => {});
 setupPills('chal-diff-pills',  '_chalDiff',  () => {});
+setupPills('chal-rounds-pills', '_chalRounds', () => {});
+setupPills('duel-rounds-pills', '_duelRounds', () => {});
+setupPills('rp-grade-pills',  'dGrade',      () => {});
+setupPills('rp-diff-pills',   'dDifficulty', () => {});
+document.querySelectorAll('#rp-subject-pills .pill:not(.pill-action)').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#rp-subject-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    G.dSubject = p.dataset.val;
+    renderSubcategoryPills('rp-subcategory-wrap', p.dataset.val, 'dSubcategory', () => {});
+  });
+});
+document.querySelectorAll('#rp-source-pills .pill').forEach(p => {
+  p.addEventListener('click', () => {
+    document.querySelectorAll('#rp-source-pills .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    const isCat = p.dataset.val === 'catalog';
+    document.getElementById('rp-catalog-wrap').style.display = isCat ? '' : 'none';
+    document.getElementById('rp-ai-wrap').style.display      = isCat ? 'none' : '';
+  });
+});
 
 // Source pills: toggle AI/Catalog sections
 document.querySelectorAll('#chal-source-pills .pill').forEach(p => {
@@ -4915,6 +5163,7 @@ async function sendChallenge() {
     if (!grade || !subjectOk) { showToast('Bitte Klasse und Fach (+ Thema) wählen', 'error'); return; }
   }
 
+  const totalRounds = parseInt(document.querySelector('#chal-rounds-pills .pill.active')?.dataset.val || '1');
   const myName = currentUser?.username || 'Spieler 1';
   const code   = generateRoomCode();
   const players = {
@@ -4924,14 +5173,14 @@ async function sendChallenge() {
   await fbDB.ref('rooms/' + code).set({
     status:'waiting', hostName:myName, maxPlayers:2,
     grade: grade || '', subject: subject || '', subcategory: subcat || '',
-    difficulty: diff, source, catalogId,
+    difficulty: diff, source, catalogId, totalRounds, currentRound:1, roundScores:[],
     questions:[], players, createdAt:firebase.database.ServerValue.TIMESTAMP
   });
   const cKey = fbDB.ref('challenges/' + chalTargetUid).push().key;
   await fbDB.ref('challenges/' + chalTargetUid + '/' + cKey).set({
     fromUid:currentUser?.uid, fromUsername:myName, roomCode:code,
     grade: grade || '', subject: subject || '', subcategory: subcat || '',
-    difficulty: diff, source, catalogId, status:'pending', sentAt:Date.now()
+    difficulty: diff, source, catalogId, totalRounds, status:'pending', sentAt:Date.now()
   });
   closeChallengeModal();
 
@@ -4939,6 +5188,7 @@ async function sendChallenge() {
   onlineMyAnswers=[]; onlineWaitingForOpponent=false;
   G.p1Name=myName; G.dGrade=grade||''; G.dSubject=subject||''; G.dSubcategory=subcat||'';
   G.dDifficulty=diff; G.dSource=source; G.dCatalogId=catalogId;
+  G.totalRounds=totalRounds; G.currentRound=1; G.roundScores=[];
   showOnlineWaitScreen(); startRoomListener();
   setTimeout(()=>fbDB.ref('rooms/'+code).remove().catch(()=>{}), 45*60*1000);
   showToast('Herausforderung gesendet! Warte auf Antwort…', 'success');
@@ -4984,6 +5234,7 @@ async function acceptChallenge() {
     G.p2Name=myName; G.p1Name=data.fromUsername;
     G.dGrade=data.grade||''; G.dSubject=data.subject||''; G.dSubcategory=data.subcategory||'';
     G.dDifficulty=data.difficulty; G.dSource=data.source||'ai'; G.dCatalogId=data.catalogId||'';
+    G.totalRounds=data.totalRounds||1; G.currentRound=1; G.roundScores=[];
     pendingChallenge=null;
     showOnlineWaitScreen(); startRoomListener();
   } catch(e) { showToast('Fehler beim Beitreten: ' + e.message, 'error'); }
@@ -5273,10 +5524,152 @@ function handleRoomUpdate(room) {
     return;
   }
 
+  if (room.status === 'between_rounds') {
+    // Host: if picker confirmed → apply settings and start next round
+    if (room.pickerReady && onlineRole === 'host') {
+      const rs = room.roundSettings || {};
+      G.dGrade=rs.grade||''; G.dSubject=rs.subject||''; G.dSubcategory=rs.subcategory||'';
+      G.dDifficulty=rs.difficulty||'mittel'; G.dSource=rs.source||'ai'; G.dCatalogId=rs.catalogId||'';
+      G.currentRound = (room.currentRound||1) + 1;
+      G.totalRounds  = room.totalRounds || 1;
+      G.roundScores  = room.roundScores || [];
+      startOnlineGame();
+      return;
+    }
+    // Show intermediate screen (once)
+    const activeId = document.querySelector('.screen.active')?.id || '';
+    if (activeId !== 'screen-round-result') {
+      clearInterval(G.timerInterval);
+      G.roundScores = room.roundScores || [];
+      G.currentRound = room.currentRound || 1;
+      G.totalRounds  = room.totalRounds || 1;
+      checkFlaggedThenShow(() => showOnlineRoundResult(room));
+    } else {
+      // Already showing – update wait message if picker just confirmed
+      const waitEl = document.getElementById('rr-online-wait');
+      if (room.pickerReady && waitEl) {
+        waitEl.style.display = 'block';
+        waitEl.textContent = '✓ Kategorien gesetzt – Runde ' + ((room.currentRound||1)+1) + ' startet gleich…';
+      }
+    }
+    return;
+  }
+
   if (room.status === 'finished') {
     clearInterval(G.timerInterval);
     checkFlaggedThenShow(() => showMultiResult(room));
   }
+}
+
+function showOnlineRoundResult(room) {
+  const scores = room.roundScores || [];
+  const last   = scores[scores.length-1] || {p1:{correct:0,points:0},p2:{correct:0,points:0}};
+  const pl     = room.players || {};
+  const p1Name = pl.p1?.name || G.p1Name || 'Spieler 1';
+  const p2Name = pl.p2?.name || G.p2Name || 'Spieler 2';
+  const curRound  = room.currentRound || 1;
+  const totRounds = room.totalRounds || 1;
+  const qCount    = G.questions?.length || 8;
+  const p1w = last.p1.points > last.p2.points, p2w = last.p2.points > last.p1.points;
+
+  document.getElementById('rr-label').textContent      = 'Runde ' + curRound + ' von ' + totRounds + ' – Zwischenergebnis';
+  document.getElementById('rr-p1-name').textContent    = p1Name;
+  document.getElementById('rr-p2-name').textContent    = p2Name;
+  document.getElementById('rr-p1-score').textContent   = last.p1.points;
+  document.getElementById('rr-p2-score').textContent   = last.p2.points;
+  document.getElementById('rr-p1-correct').textContent = last.p1.correct + ' / ' + qCount + ' richtig';
+  document.getElementById('rr-p2-correct').textContent = last.p2.correct + ' / ' + qCount + ' richtig';
+  document.getElementById('rr-p1-crown').textContent   = p1w ? '👑' : '';
+  document.getElementById('rr-p2-crown').textContent   = p2w ? '👑' : '';
+  document.getElementById('rr-p1-card').classList.toggle('winner', p1w);
+  document.getElementById('rr-p2-card').classList.toggle('winner', p2w);
+
+  const tot1 = scores.reduce((a,x)=>({correct:a.correct+x.p1.correct,points:a.points+x.p1.points}),{correct:0,points:0});
+  const tot2 = scores.reduce((a,x)=>({correct:a.correct+x.p2.correct,points:a.points+x.p2.points}),{correct:0,points:0});
+  document.getElementById('rr-totals').innerHTML =
+    row(p1Name, tot1.points+' Pkt · '+tot1.correct+' richtig', tot1.points>tot2.points?'var(--accent)':'') +
+    row(p2Name, tot2.points+' Pkt · '+tot2.correct+' richtig', tot2.points>tot1.points?'var(--accent)':'');
+
+  const isMyTurn = room.nextPickerSlot === onlineMySlot;
+  const pickerName = room.nextPickerSlot === 'p1' ? p1Name : p2Name;
+  const nextBtn = document.getElementById('rr-next-btn');
+  const waitEl  = document.getElementById('rr-online-wait');
+
+  if (isMyTurn) {
+    nextBtn.style.display = 'block';
+    nextBtn.textContent   = 'Kategorien für Runde ' + (curRound+1) + ' wählen →';
+    nextBtn.onclick = () => openOnlineRoundPicker(room);
+    waitEl.style.display = 'none';
+  } else {
+    nextBtn.style.display = 'none';
+    waitEl.style.display  = 'block';
+    waitEl.textContent    = '⌛ Warte auf ' + pickerName + 's Kategorieauswahl…';
+  }
+
+  showScreen('screen-round-result');
+}
+
+function openOnlineRoundPicker(room) {
+  const nextRound = (room.currentRound||1) + 1;
+  const pl = room.players || {};
+  const myName = onlineMySlot === 'p1' ? (pl.p1?.name||'Du') : (pl.p2?.name||'Du');
+  document.getElementById('rp-title').textContent = 'Runde ' + nextRound + ': ' + myName + ' wählt die Kategorien';
+  document.getElementById('rp-num').textContent   = nextRound;
+
+  G.dGrade=null; G.dSubject=null; G.dSubcategory=null; G.dDifficulty='mittel'; G.dSource='ai'; G.dCatalogId=null;
+  ['rp-grade-pills','rp-subject-pills'].forEach(id =>
+    document.querySelectorAll('#'+id+' .pill:not(.pill-action)').forEach(p => p.classList.remove('active')));
+  document.querySelectorAll('#rp-grade-pills .pill[data-val="gemischt"],#rp-subject-pills .pill[data-val="gemischt"]').forEach(el=>el.remove());
+  document.querySelectorAll('#rp-diff-pills .pill').forEach(p=>p.classList.toggle('active',p.dataset.val==='mittel'));
+  document.getElementById('rp-subcategory-wrap').innerHTML='';
+  document.getElementById('rp-ai-wrap').style.display='';
+  document.getElementById('rp-catalog-wrap').style.display='none';
+  document.querySelectorAll('#rp-source-pills .pill').forEach(p=>p.classList.toggle('active',p.dataset.val==='ai'));
+
+  const sel=document.getElementById('rp-catalog-select'); sel.innerHTML='';
+  getCatalogs().forEach(c=>{const o=document.createElement('option');o.value=c.id;o.textContent=c.name;sel.appendChild(o);});
+
+  document.getElementById('rp-confirm-btn').onclick = () => confirmOnlineRoundPick(room);
+  document.getElementById('modal-round-pick').classList.remove('hidden');
+}
+
+async function confirmOnlineRoundPick(room) {
+  const source = document.querySelector('#rp-source-pills .pill.active')?.dataset.val||'ai';
+  if (source==='catalog') {
+    const catId=document.getElementById('rp-catalog-select').value;
+    if (!catId){showToast('Bitte einen Katalog wählen','error');return;}
+    G.dSource='catalog'; G.dCatalogId=catId;
+  } else {
+    if (!G.dGrade||!G.dSubject){showToast('Bitte Klasse und Fach wählen','error');return;}
+    G.dSource='ai';
+  }
+  document.getElementById('modal-round-pick').classList.add('hidden');
+  const roundSettings={grade:G.dGrade||'',subject:G.dSubject||'',subcategory:G.dSubcategory||'',
+    difficulty:G.dDifficulty||'mittel',source:G.dSource,catalogId:G.dCatalogId||''};
+
+  if (onlineRole==='host') {
+    G.currentRound=(room.currentRound||1)+1; G.roundScores=room.roundScores||[];
+    startOnlineGame();
+  } else {
+    try {
+      await fbDB.ref('rooms/'+onlineRoomCode).update({roundSettings,pickerReady:true});
+      showToast('Kategorien gesetzt – Runde startet gleich…','');
+      document.getElementById('rr-online-wait').style.display='block';
+      document.getElementById('rr-online-wait').textContent='✓ Kategorien gesetzt – warte auf Rundenstart…';
+    } catch(e){showToast('Fehler: '+e.message,'error');}
+  }
+}
+
+function showOnlineMultiRoundResult(room) {
+  const scores = [...(room?.roundScores||[]), {
+    p1: room?.players?.p1?.score||{correct:0,points:0},
+    p2: room?.players?.p2?.score||{correct:0,points:0}
+  }];
+  const fakeRoom = { ...room, roundScores: scores, players: {
+    p1:{...room?.players?.p1, score: scores.reduce((a,r)=>({correct:a.correct+r.p1.correct,points:a.points+r.p1.points}),{correct:0,points:0})},
+    p2:{...room?.players?.p2, score: scores.reduce((a,r)=>({correct:a.correct+r.p2.correct,points:a.points+r.p2.points}),{correct:0,points:0})}
+  }};
+  showMultiResult(fakeRoom);
 }
 
 // ── multi-player duel bar update ──
@@ -5409,7 +5802,26 @@ async function _advanceOnlinePlayer(isCorrect, gained) {
       const allDone = Object.keys(players).every(k => k === onlineMySlot ? true : players[k].done);
       if (allDone) {
         clearInterval(G.timerInterval);
-        checkFlaggedThenShow(() => showMultiResult(onlineLastRoom));
+        const room = onlineLastRoom;
+        const curRound = room?.currentRound || 1;
+        const totRounds = room?.totalRounds || 1;
+        if (curRound < totRounds && onlineRole === 'host') {
+          // Host saves round scores and transitions to between_rounds
+          const nextRound = curRound + 1;
+          const nextPickerSlot = nextRound % 2 === 0 ? 'p2' : 'p1';
+          const pl = room?.players || {};
+          const newRoundScores = [...(room?.roundScores || []), {
+            p1: pl.p1?.score || {correct:0,points:0},
+            p2: pl.p2?.score || {correct:0,points:0}
+          }];
+          fbDB.ref('rooms/' + onlineRoomCode).update({
+            status:'between_rounds', roundScores:newRoundScores, nextPickerSlot, pickerReady:false
+          }).catch(()=>{});
+        } else if (curRound < totRounds) {
+          // Guest waits for host to transition – handleRoomUpdate handles the rest
+        } else {
+          checkFlaggedThenShow(() => showOnlineMultiRoundResult(room));
+        }
       } else {
         showToast('Fertig! Warte auf andere…', '');
       }
@@ -5438,7 +5850,11 @@ async function startOnlineGame() {
       resetPlayers[slot] = { name: existing.name || '', q: 0, done: false, score: {correct:0,points:0} };
     }
     await fbDB.ref('rooms/' + onlineRoomCode).update({
-      status: 'playing', questions, players: resetPlayers
+      status: 'playing', questions, players: resetPlayers,
+      totalRounds: G.totalRounds || 1,
+      currentRound: G.currentRound || 1,
+      roundScores: G.roundScores || [],
+      pickerReady: false, roundSettings: null
     });
   } catch(e) {
     stopLoadingMessages();
