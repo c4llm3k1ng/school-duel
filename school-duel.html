@@ -226,9 +226,9 @@
   .toast.error   { border-color:var(--red);   color:var(--red); }
 
   /* API KEY MODAL */
-  .modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; z-index:1000; padding:20px; }
+  .modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.6); display:flex; align-items:flex-start; justify-content:center; z-index:1000; padding:20px; overflow-y:auto; }
   .modal-backdrop.hidden { display:none; }
-  .modal { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:28px; width:100%; max-width:460px; }
+  .modal { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:28px; width:100%; max-width:460px; margin:auto; }
   .modal h2 { font-size:1.1rem; font-weight:700; margin-bottom:8px; }
   .modal p { font-size:.85rem; color:var(--muted); line-height:1.5; margin-bottom:16px; }
   .modal-note { font-size:.75rem; color:var(--muted); margin-top:10px; line-height:1.4; }
