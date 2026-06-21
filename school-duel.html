@@ -5525,17 +5525,37 @@ function saveGameToHistory(questions, answers, subject, subcategory, grade) {
   saveHistory(h);
 }
 
-// Themen-Icons für die Praxis-Gruppenansicht
 const SUBJECT_ICONS = {
   'Anime':'🎌','Fußball':'⚽','Musik':'🎵',
   'Mathematik':'📐','Deutsch':'📖','Englisch':'🌍',
   'Geschichte':'🏛️','Biologie':'🌿','Physik':'⚡',
-  'Chemie':'🧪','Allgemeinwissen':'🧠','Geographie':'🌍',
-  'Informatik':'💻','Sport':'🏃','Kunst':'🎨','Musik':'🎵'
+  'Chemie':'🧪','Allgemeinwissen':'🧠','Geographie':'🌏',
+  'Informatik':'💻','Sport':'🏃','Kunst':'🎨'
 };
 function getPracticeIcon(s) { return SUBJECT_ICONS[s] || '📚'; }
 
-let _practiceGroups = [];
+// ═══ ÜBEN – 3-stufige Navigation (Fach → Klasse → Thema) ═══
+
+// Datenspeicher: { subject → { grade → { topic → [questions] } } }
+let _pd = {};
+
+// Navigation-Stack: array of {view, subject, grade}
+let _pNav = 'subjects'; // 'subjects' | 'grades' | 'topics'
+let _pSel = { subject: '', grade: '' };
+
+function buildPracticeData(all) {
+  const d = {};
+  all.forEach(q => {
+    const subj  = q.subject || q.topic || 'Sonstiges';
+    const grade = (q.grade && q.grade !== '–') ? String(q.grade) : '';
+    const topic = q.topic || q.subcategory || 'Allgemein';
+    if (!d[subj])              d[subj] = {};
+    if (!d[subj][grade])       d[subj][grade] = {};
+    if (!d[subj][grade][topic]) d[subj][grade][topic] = [];
+    d[subj][grade][topic].push(q);
+  });
+  return d;
+}
 
 function renderPracticeTab() {
   const h   = getHistory();
@@ -5553,21 +5573,20 @@ function renderPracticeTab() {
 
   const cont = document.getElementById('practice-list-container');
   if (!all.length) {
-    cont.innerHTML = '<div class="empty-state"><div class="es-icon">🎮</div>Noch keine Fragen gespeichert.<br>Spiele eine Runde, um Fragen hier zu sammeln!</div>';
+    cont.innerHTML = '<div class="empty-state"><div class="es-icon">🎮</div>Noch keine Fragen gespeichert.<br>Spiele eine Runde, um Fragen zu sammeln!</div>';
     return;
   }
 
-  // Nach Subject gruppieren (Fallback: topic → 'Sonstiges')
-  const groups = {};
-  all.forEach(q => {
-    const key = q.subject || q.topic || 'Sonstiges';
-    if (!groups[key]) groups[key] = [];
-    groups[key].push(q);
-  });
+  _pd   = buildPracticeData(all);
+  _pNav = 'subjects';
+  _pSel = { subject: '', grade: '' };
+  _renderPracticeSubjects(cont, totalWrong);
+}
 
-  // Sortierung: bekannte Katalog-Themen zuerst, dann Rest
+// ── Level 1: Fächer ──────────────────────────────────────
+function _renderPracticeSubjects(cont, totalWrong) {
   const catalogOrder = TOPIC_GROUPS.map(t => t.label);
-  _practiceGroups = Object.keys(groups).sort((a, b) => {
+  const subjects = Object.keys(_pd).sort((a, b) => {
     const ai = catalogOrder.indexOf(a), bi = catalogOrder.indexOf(b);
     if (ai >= 0 && bi < 0) return -1;
     if (bi >= 0 && ai < 0) return 1;
@@ -5575,87 +5594,143 @@ function renderPracticeTab() {
     return a.localeCompare(b, 'de');
   });
 
-  let html = '';
-
-  // ── Level 1: Themenkarten ──────────────────────────────
-  html += '<div class="label" style="margin-bottom:10px;">Thema wählen</div>';
-  html += '<div class="topic-grid">';
-  _practiceGroups.forEach((key, i) => {
-    const qs        = groups[key];
-    const wrongCnt  = qs.filter(q => q.timesWrong > 0).length;
-    const icon      = getPracticeIcon(key);
-    html += `<div class="topic-card" onclick="togglePracticeGroup(${i},this)">
-      <span class="tc-icon">${icon}</span>
-      <span class="tc-label">${esc(key)}</span>
-      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${qs.length} Fragen${wrongCnt > 0 ? ` &nbsp;·&nbsp; <span style="color:var(--red);">${wrongCnt} falsch</span>` : ''}</div>
+  let html = '<div class="label" style="margin-bottom:10px;">Fach wählen</div><div class="topic-grid">';
+  subjects.forEach(subj => {
+    const allQs   = Object.values(_pd[subj]).flatMap(g => Object.values(g).flat());
+    const wc      = allQs.filter(q => q.timesWrong > 0).length;
+    html += `<div class="topic-card" onclick="practiceOpenSubject(${JSON.stringify(subj)})">
+      <span class="tc-icon">${getPracticeIcon(subj)}</span>
+      <span class="tc-label">${esc(subj)}</span>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${allQs.length} Fragen${wc > 0 ? ` &nbsp;·&nbsp; <span style="color:var(--red);">${wc} falsch</span>` : ''}</div>
     </div>`;
   });
   html += '</div>';
-
-  // ── Level 2: Fragen-Panels (per Thema, zunächst hidden) ──
-  _practiceGroups.forEach((key, i) => {
-    const qs       = groups[key].sort((a, b) => b.timesWrong - a.timesWrong || b.lastSeen - a.lastSeen);
-    const wrongQs  = qs.filter(q => q.timesWrong > 0);
-    const icon     = getPracticeIcon(key);
-
-    html += `<div id="prac-panel-${i}" style="display:none;margin-bottom:16px;">
-      <div style="font-weight:700;font-size:.95rem;margin-bottom:10px;">${icon} ${esc(key)}</div>`;
-
-    if (wrongQs.length > 0) {
-      html += `<button class="btn btn-primary" style="margin-bottom:14px;padding:11px;" onclick="startPracticeSessionFor(${i})">
-        🔁 Falsche Fragen üben (${Math.min(8, wrongQs.length)} von ${wrongQs.length})
-      </button>`;
-    }
-
-    html += '<div style="display:flex;flex-direction:column;gap:10px;">';
-    qs.forEach(q => {
-      const wrong = q.timesWrong > 0;
-      html += `<div style="background:var(--surface2);border:1.5px solid ${wrong ? 'rgba(255,71,87,.3)' : 'var(--border)'};border-radius:var(--radius);padding:14px 16px;">
-        <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;">
-          <span style="font-size:.72rem;font-weight:700;flex-shrink:0;margin-top:2px;${wrong ? 'color:var(--red)' : 'color:var(--green)'};">${wrong ? '✗×' + q.timesWrong : '✓'}</span>
-          <div style="font-size:.87rem;font-weight:600;line-height:1.45;">${esc(q.question)}</div>
-        </div>
-        <div style="font-size:.82rem;color:var(--green);margin-bottom:${q.explanation ? '6px' : '0'};">→ ${esc(q.options?.[q.correct] ?? '')}</div>
-        ${q.explanation ? `<div style="font-size:.78rem;color:var(--muted);line-height:1.45;">💡 ${esc(q.explanation)}</div>` : ''}
-      </div>`;
-    });
-    html += '</div></div>';
-  });
-
-  // Globaler "Alle falsch üben"-Button ganz unten
-  if (totalWrong > 0) {
-    html += `<button class="btn btn-secondary" style="margin-top:6px;" onclick="startPracticeSession()">
-      🔁 Alle falsch üben (${totalWrong} Fragen)
-    </button>`;
+  if ((totalWrong || 0) > 0) {
+    html += `<button class="btn btn-secondary" style="margin-top:8px;" onclick="startPracticeSession()">🔁 Alle falsch üben (${totalWrong})</button>`;
   }
-
   cont.innerHTML = html;
 }
 
-function togglePracticeGroup(i, cardEl) {
-  const panel  = document.getElementById('prac-panel-' + i);
-  if (!panel) return;
-  const wasOpen = panel.style.display !== 'none';
-  document.querySelectorAll('[id^="prac-panel-"]').forEach(p => p.style.display = 'none');
-  document.querySelectorAll('#practice-list-container .topic-card').forEach(c => c.classList.remove('tc-selected'));
-  if (!wasOpen) {
-    panel.style.display = 'block';
-    cardEl.classList.add('tc-selected');
-    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+// ── Level 2: Klassen ─────────────────────────────────────
+function practiceOpenSubject(subj) {
+  _pNav = 'grades'; _pSel.subject = subj;
+  const cont     = document.getElementById('practice-list-container');
+  const gradeMap = _pd[subj] || {};
+  const grades   = Object.keys(gradeMap).sort((a, b) => (Number(a) || 999) - (Number(b) || 999));
+
+  // Wenn nur eine Klasse (oder keine Klassenunterscheidung) → direkt zu Themen
+  const realGrades = grades.filter(g => g !== '');
+  if (realGrades.length <= 1) {
+    practiceOpenGrade(subj, grades[0] || '');
+    return;
   }
+
+  let html = `<span class="topic-diff-back" onclick="renderPracticeTab()">← Fach wechseln</span>
+    <div style="font-weight:700;margin-bottom:14px;">${getPracticeIcon(subj)} ${esc(subj)}</div>
+    <div class="label" style="margin-bottom:10px;">Klasse wählen</div>
+    <div class="topic-grid">`;
+  grades.forEach(g => {
+    const qs = Object.values(gradeMap[g]).flat();
+    const wc = qs.filter(q => q.timesWrong > 0).length;
+    const lbl = g ? 'Klasse ' + g : 'Allgemein';
+    html += `<div class="topic-card" onclick="practiceOpenGrade(${JSON.stringify(subj)},${JSON.stringify(g)})">
+      <span class="tc-icon">📚</span>
+      <span class="tc-label">${esc(lbl)}</span>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${qs.length} Fragen${wc > 0 ? ` &nbsp;·&nbsp; <span style="color:var(--red);">${wc} falsch</span>` : ''}</div>
+    </div>`;
+  });
+  html += '</div>';
+  cont.innerHTML = html;
 }
 
-function startPracticeSessionFor(i) {
-  const subject = _practiceGroups[i];
-  if (!subject) return;
+// ── Level 3: Themen + Fragen ──────────────────────────────
+function practiceOpenGrade(subj, grade) {
+  _pNav = 'topics'; _pSel = { subject: subj, grade };
+  const cont      = document.getElementById('practice-list-container');
+  const topicMap  = (_pd[subj] || {})[grade] || {};
+  const topics    = Object.keys(topicMap).sort((a, b) => a.localeCompare(b, 'de'));
+  const allWrong  = topics.flatMap(t => topicMap[t]).filter(q => q.timesWrong > 0);
+  const gradeLbl  = grade ? ' · Klasse ' + grade : '';
+
+  let back = Object.keys((_pd[subj] || {})).filter(g => g !== '').length > 1
+    ? `<span class="topic-diff-back" onclick="practiceOpenSubject(${JSON.stringify(subj)})">← Klasse wechseln</span>`
+    : `<span class="topic-diff-back" onclick="renderPracticeTab()">← Fach wechseln</span>`;
+
+  let html = `${back}
+    <div style="font-weight:700;margin-bottom:10px;">${getPracticeIcon(subj)} ${esc(subj)}${esc(gradeLbl)}</div>`;
+
+  if (allWrong.length > 0) {
+    html += `<button class="btn btn-primary" style="margin-bottom:14px;padding:11px;"
+      onclick="startPracticeFiltered(${JSON.stringify(subj)},${JSON.stringify(grade)},null)">
+      🔁 Alle falschen üben (${Math.min(8, allWrong.length)} von ${allWrong.length})
+    </button>`;
+  }
+
+  html += '<div style="display:flex;flex-direction:column;gap:10px;">';
+  topics.forEach((topic, ti) => {
+    const qs  = topicMap[topic].sort((a, b) => b.timesWrong - a.timesWrong);
+    const wc  = qs.filter(q => q.timesWrong > 0).length;
+    const pid = 'pt_' + ti;
+    html += `<div style="background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px;cursor:pointer;"
+           onclick="togglePracticeTopic('${pid}',this)">
+        <div>
+          <div style="font-weight:600;font-size:.88rem;">${esc(topic)}</div>
+          <div style="font-size:.73rem;color:var(--muted);margin-top:2px;">${qs.length} Fragen${wc > 0 ? ` &nbsp;·&nbsp; <span style="color:var(--red);">${wc} falsch</span>` : ''}</div>
+        </div>
+        <span style="color:var(--muted);" class="pt-arrow">›</span>
+      </div>
+      <div id="${pid}" style="display:none;">
+        ${wc > 0 ? `<div style="padding:0 14px 10px;">
+          <button class="btn btn-secondary" style="padding:8px;font-size:.8rem;"
+            onclick="startPracticeFiltered(${JSON.stringify(subj)},${JSON.stringify(grade)},${JSON.stringify(topic)})">
+            🔁 Falsche üben (${wc})
+          </button></div>` : ''}
+        <div style="padding:0 14px 14px;display:flex;flex-direction:column;gap:8px;">
+          ${qs.map(q => {
+            const w = q.timesWrong > 0;
+            return `<div style="background:var(--surface);border:1.5px solid ${w ? 'rgba(255,71,87,.25)' : 'var(--border)'};border-radius:10px;padding:11px 13px;">
+              <div style="display:flex;gap:7px;margin-bottom:7px;">
+                <span style="font-size:.7rem;font-weight:700;flex-shrink:0;margin-top:2px;${w ? 'color:var(--red)' : 'color:var(--green)'};">${w ? '✗×' + q.timesWrong : '✓'}</span>
+                <div style="font-size:.84rem;font-weight:600;line-height:1.4;">${esc(q.question)}</div>
+              </div>
+              <div style="font-size:.8rem;color:var(--green)${q.explanation ? ';margin-bottom:5px' : ''};">→ ${esc(q.options?.[q.correct] ?? '')}</div>
+              ${q.explanation ? `<div style="font-size:.76rem;color:var(--muted);line-height:1.4;">💡 ${esc(q.explanation)}</div>` : ''}
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+    </div>`;
+  });
+  html += '</div>';
+  cont.innerHTML = html;
+}
+
+function togglePracticeTopic(id, header) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const open = el.style.display !== 'none';
+  el.style.display = open ? 'none' : 'block';
+  const arr = header.querySelector('.pt-arrow');
+  if (arr) arr.textContent = open ? '›' : '⌃';
+}
+
+function startPracticeFiltered(subj, grade, topic) {
   const h = getHistory();
-  const wrong = Object.values(h)
-    .filter(q => q.timesWrong > 0 && (q.subject || q.topic || 'Sonstiges') === subject)
-    .sort((a, b) => b.timesWrong - a.timesWrong);
-  if (!wrong.length) { showToast('Keine falsch beantworteten Fragen in diesem Thema', 'error'); return; }
+  let wrong = Object.values(h).filter(q => {
+    if (!q.timesWrong) return false;
+    const qs = q.subject || q.topic || 'Sonstiges';
+    const qg = (q.grade && q.grade !== '–') ? String(q.grade) : '';
+    const qt = q.topic || q.subcategory || 'Allgemein';
+    if (qs !== subj)  return false;
+    if (qg !== grade) return false;
+    if (topic && qt !== topic) return false;
+    return true;
+  }).sort((a, b) => b.timesWrong - a.timesWrong);
+  if (!wrong.length) { showToast('Keine falschen Fragen in diesem Bereich', 'error'); return; }
   const pick = wrong.slice(0, 8);
   G.mode = 'solo'; G.source = 'practice';
-  G.subject = subject; G.subcategory = null; G.grade = '–';
+  G.subject = subj; G.subcategory = topic || null; G.grade = grade || '–';
   G.solo = { correct:0, points:0, answers:[] };
   G.questions = pick.map(q => ({
     question:q.question, options:q.options, correct:q.correct,
