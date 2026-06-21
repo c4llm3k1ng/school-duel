@@ -68,6 +68,18 @@
   .nav-tab:hover { border-color:var(--accent); color:var(--text); }
   .nav-tab.active { background:rgba(108,99,255,.15); border-color:var(--accent); color:var(--accent); }
 
+  /* MODE CARDS (Spielen-Landing) */
+  .mode-card { display:flex; align-items:center; gap:16px; background:var(--surface2); border:2px solid var(--border); border-radius:var(--radius); padding:22px 18px; cursor:pointer; transition:all .18s; margin-bottom:14px; }
+  .mode-card:hover { border-color:var(--accent); transform:translateY(-2px); box-shadow:0 4px 20px rgba(108,99,255,.1); }
+  .mode-card .mc-icon { font-size:2rem; flex-shrink:0; width:40px; text-align:center; }
+  .mode-card .mc-body { flex:1; }
+  .mode-card .mc-title { font-size:1.05rem; font-weight:700; margin-bottom:3px; }
+  .mode-card .mc-desc { font-size:.82rem; color:var(--muted); line-height:1.4; }
+  .mode-card .mc-arrow { color:var(--muted); font-size:1.2rem; flex-shrink:0; }
+  .mode-back { display:none; align-items:center; gap:6px; margin-bottom:18px; cursor:pointer; color:var(--muted); font-size:.88rem; font-weight:600; width:fit-content; }
+  .mode-back:hover { color:var(--accent); }
+  .mode-back.visible { display:flex; }
+
   /* INPUTS */
   .form-input { width:100%; background:var(--surface2); border:1.5px solid var(--border); border-radius:9px; padding:10px 13px; color:var(--text); font-family:'Space Grotesk',sans-serif; font-size:.9rem; outline:none; transition:border-color .15s; }
   .form-input:focus { border-color:var(--accent); }
@@ -702,16 +714,50 @@
   </div>
 
   <div class="nav-tabs">
-    <div class="nav-tab active" id="tab-btn-solo"       onclick="switchTab('solo')">🎯 Solo</div>
-    <div class="nav-tab"        id="tab-btn-quickduel"  onclick="switchTab('quickduel')">⚡ Schnellduell</div>
-    <div class="nav-tab"        id="tab-btn-duel"       onclick="switchTab('duel')">⚔️ Duell</div>
-    <div class="nav-tab"        id="tab-btn-catalog"    onclick="switchTab('catalog')">📚 Kataloge</div>
-    <div class="nav-tab"        id="tab-btn-library"    onclick="switchTab('library')">📖 Bibliothek</div>
-    <div class="nav-tab"        id="tab-btn-practice"   onclick="switchTab('practice')">🔁 Üben</div>
+    <div class="nav-tab active" id="tab-btn-spielen" onclick="switchTab('spielen')">🎮 Spielen</div>
+    <div class="nav-tab"        id="tab-btn-catalog"  onclick="switchTab('catalog')">📚 Kataloge</div>
+    <div class="nav-tab"        id="tab-btn-library"  onclick="switchTab('library')">📖 Bibliothek</div>
+  </div>
+
+  <!-- SPIELEN LANDING -->
+  <div id="tab-spielen">
+    <div class="mode-card" onclick="showModeSetup('duel')">
+      <div class="mc-icon">⚔️</div>
+      <div class="mc-body">
+        <div class="mc-title">Duell</div>
+        <div class="mc-desc">Konfiguriertes Duell lokal oder online gegen einen Freund</div>
+      </div>
+      <div class="mc-arrow">›</div>
+    </div>
+    <div class="mode-card" onclick="showModeSetup('quickduel')">
+      <div class="mc-icon">⚡</div>
+      <div class="mc-body">
+        <div class="mc-title">Schnellduell</div>
+        <div class="mc-desc">Schnelle Runde gegen einen Freund – ohne lange Einstellungen</div>
+      </div>
+      <div class="mc-arrow">›</div>
+    </div>
+    <div class="mode-card" onclick="showModeSetup('solo')">
+      <div class="mc-icon">🎯</div>
+      <div class="mc-body">
+        <div class="mc-title">Einzelspiel</div>
+        <div class="mc-desc">Spiele alleine und teste dein Wissen</div>
+      </div>
+      <div class="mc-arrow">›</div>
+    </div>
+    <div class="mode-card" onclick="showModeSetup('practice')">
+      <div class="mc-icon">🔁</div>
+      <div class="mc-body">
+        <div class="mc-title">Üben</div>
+        <div class="mc-desc">Falsch beantwortete Fragen nochmal wiederholen</div>
+      </div>
+      <div class="mc-arrow">›</div>
+    </div>
   </div>
 
   <!-- SOLO -->
-  <div id="tab-solo">
+  <div id="tab-solo" style="display:none;">
+    <div class="mode-back" id="back-solo" onclick="showSpielenLanding()">← Zurück</div>
     <div class="card">
       <button class="all-random-btn" onclick="randomizeAll('solo')">🎲 Alles zufällig auswählen</button>
       <div class="label">Klassenstufe</div>
@@ -775,6 +821,7 @@
 
   <!-- QUICK DUEL -->
   <div id="tab-quickduel" style="display:none;">
+    <div class="mode-back" id="back-quickduel" onclick="showSpielenLanding()">← Zurück</div>
     <div class="sub-tabs">
       <div class="sub-tab active" id="qd-subtab-btn-local"  onclick="switchQdSubTab('local')">🏠 Lokal</div>
       <div class="sub-tab"        id="qd-subtab-btn-online" onclick="switchQdSubTab('online')">🌐 Online</div>
@@ -816,6 +863,7 @@
 
   <!-- DUEL -->
   <div id="tab-duel" style="display:none;">
+    <div class="mode-back" id="back-duel" onclick="showSpielenLanding()">← Zurück</div>
     <div class="sub-tabs">
       <div class="sub-tab active" id="subtab-btn-local" onclick="switchDuelSubTab('local')">⚔️ Lokal</div>
       <div class="sub-tab" id="subtab-btn-online" onclick="switchDuelSubTab('online')">🌐 Online</div>
@@ -1019,6 +1067,7 @@
 
   <!-- PRACTICE TAB -->
   <div id="tab-practice" style="display:none;">
+    <div class="mode-back" id="back-practice" onclick="showSpielenLanding()">← Zurück</div>
     <div class="catalog-header">
       <h2>🔁 Meine Übungsfragen</h2>
       <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;color:var(--red);" onclick="clearHistory()">Verlauf löschen</button>
@@ -4259,15 +4308,44 @@ function showScreen(id) {
   if (id === 'screen-friends') renderFriendsList();
 }
 
+const MODE_TABS = ['solo','quickduel','duel','practice'];
+
 function switchTab(tab) {
-  ['solo','quickduel','duel','catalog','library','practice'].forEach(t => {
-    document.getElementById('tab-' + t).style.display = t === tab ? 'block' : 'none';
-    document.getElementById('tab-btn-' + t).classList.toggle('active', t === tab);
+  // Main nav tabs
+  ['spielen','catalog','library'].forEach(t => {
+    const el    = document.getElementById('tab-' + t);
+    const btn   = document.getElementById('tab-btn-' + t);
+    if (el)  el.style.display  = t === tab ? 'block' : 'none';
+    if (btn) btn.classList.toggle('active', t === tab);
   });
-  if (tab === 'catalog')   renderCatalogList();
-  if (tab === 'library')   refreshLibrary();
-  if (tab === 'practice')  renderPracticeTab();
-  if (tab === 'quickduel') renderQuickDuelFriends();
+  // Always hide mode sub-views when switching main tabs
+  MODE_TABS.forEach(t => {
+    const el = document.getElementById('tab-' + t);
+    if (el) el.style.display = 'none';
+  });
+  if (tab === 'catalog') renderCatalogList();
+  if (tab === 'library') refreshLibrary();
+}
+
+function showModeSetup(mode) {
+  // Hide landing, show mode
+  document.getElementById('tab-spielen').style.display = 'none';
+  MODE_TABS.forEach(t => {
+    const el   = document.getElementById('tab-' + t);
+    const back = document.getElementById('back-' + t);
+    if (el)   el.style.display = t === mode ? 'block' : 'none';
+    if (back) back.classList.toggle('visible', t === mode);
+  });
+  if (mode === 'quickduel') renderQuickDuelFriends();
+  if (mode === 'practice')  renderPracticeTab();
+}
+
+function showSpielenLanding() {
+  MODE_TABS.forEach(t => {
+    const el = document.getElementById('tab-' + t);
+    if (el) el.style.display = 'none';
+  });
+  document.getElementById('tab-spielen').style.display = 'block';
 }
 
 function switchQdSubTab(sub) {
@@ -4665,7 +4743,8 @@ document.getElementById('duel-replay-btn').addEventListener('click', () => {
     onlineRoomCode = null; onlineRole = null; onlineLastRoom = null;
     G.mode = 'solo';
     showScreen('screen-home');
-    switchTab('duel');
+    switchTab('spielen');
+    showModeSetup('duel');
     switchDuelSubTab('online');
     return;
   }
@@ -5921,7 +6000,7 @@ function showToast(msg, type) {
 }
 
 // Init — tabs vorbereiten (Auth wird am Ende gestartet, nach allen let-Deklarationen)
-switchTab('solo');
+switchTab('spielen');
 
 // ═══════════════════════════════════════════════════════
 // AUTH + USER SYSTEM
@@ -5954,7 +6033,7 @@ function onUserLoggedIn() {
   startChallengeListener();
   // Only navigate if still on auth screen
   if (document.getElementById('screen-auth').classList.contains('active')) {
-    showScreen('screen-home'); switchTab('solo');
+    showScreen('screen-home'); switchTab('spielen');
   }
 }
 
@@ -5969,7 +6048,7 @@ function onUserLoggedOut() {
 }
 
 function doLogout() { if (fbAuth) fbAuth.signOut(); }
-function continueAsGuest() { currentUser = null; showScreen('screen-home'); switchTab('solo'); }
+function continueAsGuest() { currentUser = null; showScreen('screen-home'); switchTab('spielen'); }
 
 function switchAuthTab(tab) {
   document.getElementById('auth-login').style.display    = tab === 'login'    ? 'block' : 'none';
