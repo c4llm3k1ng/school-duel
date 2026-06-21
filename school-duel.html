@@ -4690,10 +4690,10 @@ function pickTopic(mode, topicId, el) {
         p.classList.add('active');
         const topic = TOPIC_GROUPS.find(t => t.id === topicId);
         G[PICKER_CAT_KEY[mode]] = topic ? topic.cats[p.dataset.diff] : null;
-        // Subject für History-Gruppierung setzen
+        // Subject + Difficulty für History-Gruppierung setzen
         if (topic) {
-          if (mode === 'solo') G.subject = topic.label;
-          else if (mode === 'duel' || mode === 'online') G.dSubject = topic.label;
+          if (mode === 'solo') { G.subject = topic.label; G.difficulty = p.dataset.diff; }
+          else if (mode === 'duel' || mode === 'online') { G.dSubject = topic.label; G.dDifficulty = p.dataset.diff; }
         }
         PICKER_CHECK[mode]();
       };
@@ -5290,7 +5290,7 @@ function showSoloResult() {
     row('Gesamtpunkte', G.solo.points) +
     row('Fazit', label, 'var(--gold)');
   if (G.source !== 'practice') {
-    saveGameToHistory(G.questions, G.solo.answers, G.subject, G.subcategory, G.grade);
+    saveGameToHistory(G.questions, G.solo.answers, G.subject, G.subcategory, G.grade, G.difficulty);
     updateStats(G.solo.correct, total, false);
   }
   showScreen('screen-result');
@@ -5334,15 +5334,16 @@ function showDuelResult() {
   const subj = G.mode === 'online' ? G.dSubject || G.subject : G.dSubject;
   const subc = G.mode === 'online' ? G.dSubcategory || G.subcategory : G.dSubcategory;
   const gr   = G.mode === 'online' ? G.dGrade || G.grade : G.dGrade;
+  const diff = G.dDifficulty || G.difficulty || '';
   if (G.mode === 'duel' && !rs.length) {
     // single-round, no per-round saving done yet
-    saveGameToHistory(G.questions, G.p1.answers, subj, subc, gr);
-    saveGameToHistory(G.questions, G.p2.answers, subj, subc, gr);
+    saveGameToHistory(G.questions, G.p1.answers, subj, subc, gr, diff);
+    saveGameToHistory(G.questions, G.p2.answers, subj, subc, gr, diff);
     updateStats(p1.correct, total, p1w);
   } else if (G.mode === 'duel') {
     updateStats(p1.correct, total, p1w);
   } else if (G.mode === 'online') {
-    saveGameToHistory(G.questions, onlineMyAnswers, subj, subc, gr);
+    saveGameToHistory(G.questions, onlineMyAnswers, subj, subc, gr, diff);
     const myScore = onlineMySlot === 'p1' ? p1 : p2;
     const isWin = p1w ? onlineMySlot === 'p1' : p2w ? onlineMySlot === 'p2' : false;
     updateStats(myScore.correct, total, isWin);
@@ -5355,9 +5356,9 @@ function showDuelResult() {
 // ═══════════════════════════════════════════════════════
 function endDuelRound() {
   // Save this round's scores to history before resetting
-  const subj = G.dSubject, subc = G.dSubcategory, gr = G.dGrade;
-  saveGameToHistory(G.questions, G.p1.answers, subj, subc, gr);
-  saveGameToHistory(G.questions, G.p2.answers, subj, subc, gr);
+  const subj = G.dSubject, subc = G.dSubcategory, gr = G.dGrade, diff = G.dDifficulty || '';
+  saveGameToHistory(G.questions, G.p1.answers, subj, subc, gr, diff);
+  saveGameToHistory(G.questions, G.p2.answers, subj, subc, gr, diff);
 
   G.roundScores.push({ p1: { correct: G.p1.correct, points: G.p1.points }, p2: { correct: G.p2.correct, points: G.p2.points } });
 
@@ -5477,7 +5478,7 @@ function showMultiResult(room) {
   // Save history for current player
   const myPlayer = players[onlineMySlot];
   if (myPlayer) {
-    saveGameToHistory(G.questions, onlineMyAnswers, room.subject || G.dSubject, room.subcategory || G.dSubcategory, room.grade || G.dGrade);
+    saveGameToHistory(G.questions, onlineMyAnswers, room.subject || G.dSubject, room.subcategory || G.dSubcategory, room.grade || G.dGrade, room.difficulty || G.dDifficulty || '');
   }
 
   document.getElementById('review-multi-btn').onclick = () => {
@@ -5505,7 +5506,7 @@ function getHistory() {
 }
 function saveHistory(h) { localStorage.setItem('sd_history', JSON.stringify(h)); }
 
-function saveGameToHistory(questions, answers, subject, subcategory, grade) {
+function saveGameToHistory(questions, answers, subject, subcategory, grade, difficulty) {
   if (!questions || !questions.length) return;
   const h = getHistory();
   const now = Date.now();
@@ -5516,8 +5517,11 @@ function saveGameToHistory(questions, answers, subject, subcategory, grade) {
       h[key] = { question: q.question, options: q.options, correct: q.correct,
                  explanation: q.explanation || '', topic: q.topic || '',
                  subject: subject || '', subcategory: subcategory || '', grade: grade || '',
+                 difficulty: difficulty || '',
                  timesSeen: 0, timesWrong: 0, lastSeen: now };
     }
+    // Fehlende Felder bei alten Einträgen ergänzen
+    if (!h[key].difficulty && difficulty) h[key].difficulty = difficulty;
     h[key].timesSeen++;
     if (!wasCorrect) h[key].timesWrong++;
     h[key].lastSeen = now;
@@ -5534,27 +5538,364 @@ const SUBJECT_ICONS = {
 };
 function getPracticeIcon(s) { return SUBJECT_ICONS[s] || '📚'; }
 
-// ═══ ÜBEN – 3-stufige Navigation (Fach → Klasse → Thema) ═══
+// ═══ ÜBEN – Navigation ═══════════════════════════════════════
 
-// Datenspeicher: { subject → { grade → { topic → [questions] } } }
-let _pd = {};
+const CATALOG_SUBJECTS = new Set(TOPIC_GROUPS.map(t => t.label));
+function _isCatQ(q) { return CATALOG_SUBJECTS.has(q.subject); }
 
-// Navigation-Stack: array of {view, subject, grade}
-let _pNav = 'subjects'; // 'subjects' | 'grades' | 'topics'
-let _pSel = { subject: '', grade: '' };
+const DIFF_ORDER  = ['leicht','mittel','schwer','gemischt',''];
+const DIFF_LABELS = { leicht:'🟢 Leicht', mittel:'🟡 Mittel', schwer:'🔴 Schwer', gemischt:'🌈 Gemischt', '':'❓ Ältere Fragen' };
 
-function buildPracticeData(all) {
-  const d = {};
-  all.forEach(q => {
-    const subj  = q.subject || q.topic || 'Sonstiges';
-    const grade = (q.grade && q.grade !== '–') ? String(q.grade) : '';
-    const topic = q.topic || q.subcategory || 'Allgemein';
-    if (!d[subj])              d[subj] = {};
-    if (!d[subj][grade])       d[subj][grade] = {};
-    if (!d[subj][grade][topic]) d[subj][grade][topic] = [];
-    d[subj][grade][topic].push(q);
+// Navigation-State (Index-basiert, kein Encoding-Problem)
+let _pv = 'landing';                  // view name
+let _pSubjects = [], _pGrades = [], _pTopics = [];  // aktuelle Listen
+let _pSelDiff = '', _pSelSubj = '', _pSelGrade = '', _pSelTopic = '';
+let _pKatalogTopicIdx = -1, _pKatalogDiff = '';
+
+// ── Fragen filtern ─────────────────────────────────────────────
+function _wrongQ(isCat, diff, subj, grade, topic) {
+  return Object.values(getHistory()).filter(q => {
+    if (!q.timesWrong) return false;
+    if (_isCatQ(q) !== isCat) return false;
+    if (diff  !== undefined && diff  !== '' && (q.difficulty || '') !== diff)  return false;
+    if (subj  !== undefined && q.subject !== subj)  return false;
+    if (grade !== undefined) {
+      const qg = (q.grade && q.grade !== '–') ? String(q.grade) : '';
+      if (qg !== grade) return false;
+    }
+    if (topic !== undefined) {
+      const qt = q.topic || q.subcategory || 'Allgemein';
+      if (qt !== topic) return false;
+    }
+    return true;
+  }).sort((a,b) => b.timesWrong - a.timesWrong);
+}
+
+// ── Gemeinsame Render-Helper ───────────────────────────────────
+function _pCont() { return document.getElementById('practice-list-container'); }
+
+function _pBack(label, fn) {
+  return `<span class="topic-diff-back" onclick="${fn}">${label}</span>`;
+}
+
+function _qCard(q) {
+  const w = q.timesWrong > 0;
+  return `<div style="background:var(--surface);border:1.5px solid ${w?'rgba(255,71,87,.25)':'var(--border)'};border-radius:10px;padding:11px 13px;margin-bottom:8px;">
+    <div style="display:flex;gap:7px;margin-bottom:7px;">
+      <span style="font-size:.7rem;font-weight:700;flex-shrink:0;margin-top:2px;${w?'color:var(--red)':'color:var(--green)'};">${w?'✗×'+q.timesWrong:'✓'}</span>
+      <div style="font-size:.84rem;font-weight:600;line-height:1.4;">${esc(q.question)}</div>
+    </div>
+    <div style="font-size:.8rem;color:var(--green)${q.explanation?';margin-bottom:5px':''};">→ ${esc(q.options?.[q.correct]??'')}</div>
+    ${q.explanation?`<div style="font-size:.76rem;color:var(--muted);line-height:1.4;">💡 ${esc(q.explanation)}</div>`:''}
+  </div>`;
+}
+
+function _topicAccordion(items) { // items: [{topic, qs}]
+  return items.map((it,i) => {
+    const wc = it.qs.filter(q=>q.timesWrong>0).length;
+    const pid = 'pti_'+i;
+    return `<div style="background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:8px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:11px 14px;cursor:pointer;"
+           onclick="togglePracticeTopic('${pid}',this)">
+        <div>
+          <div style="font-weight:600;font-size:.88rem;">${esc(it.topic)}</div>
+          <div style="font-size:.73rem;color:var(--muted);margin-top:2px;">${it.qs.length} Fragen${wc>0?` · <span style="color:var(--red);">${wc} falsch</span>`:''}</div>
+        </div>
+        <span style="color:var(--muted);" class="pt-arrow">›</span>
+      </div>
+      <div id="${pid}" style="display:none;padding:0 14px 14px;">
+        ${wc>0?`<button class="btn btn-secondary" style="padding:8px;font-size:.8rem;margin-bottom:10px;" onclick="_startPQ(_wrongQ(${_isCatQ(it.qs[0])},_pSelDiff,_pSelSubj,_pSelGrade,${JSON.stringify(it.topic)}))">🔁 Falsche üben (${wc})</button>`:''}
+        ${it.qs.map(_qCard).join('')}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Landing ───────────────────────────────────────────────────
+function renderPracticeTab() {
+  const h = getHistory();
+  const all = Object.values(h);
+  const totalSeen  = all.length;
+  const totalWrong = all.filter(q=>q.timesWrong>0).length;
+
+  document.getElementById('practice-stats').innerHTML =
+    '<div class="card" style="text-align:center;padding:18px;">'
+    +'<div style="font-size:1.8rem;font-weight:700;color:var(--accent);">'+totalSeen+'</div>'
+    +'<div style="font-size:.8rem;color:var(--muted);">Fragen gesehen</div></div>'
+    +'<div class="card" style="text-align:center;padding:18px;">'
+    +'<div style="font-size:1.8rem;font-weight:700;color:var(--red);">'+totalWrong+'</div>'
+    +'<div style="font-size:.8rem;color:var(--muted);">falsch beantwortet</div></div>';
+
+  const cont = _pCont();
+  if (!all.length) {
+    cont.innerHTML = '<div class="empty-state"><div class="es-icon">🎮</div>Noch keine Fragen gespeichert.<br>Spiele eine Runde!</div>';
+    return;
+  }
+  _pv = 'landing';
+  const catWrong  = all.filter(q=>q.timesWrong>0 && _isCatQ(q)).length;
+  const schulWrong = all.filter(q=>q.timesWrong>0 && !_isCatQ(q)).length;
+
+  cont.innerHTML = `
+    <div class="mode-card" onclick="openSchulPractice()">
+      <div class="mc-icon">🏫</div>
+      <div class="mc-body">
+        <div class="mc-title">Schulfragen üben</div>
+        <div class="mc-desc">KI-generierte Fragen nach Schwierigkeit · Fach · Klasse</div>
+        ${schulWrong>0?`<div style="font-size:.76rem;color:var(--red);margin-top:4px;">${schulWrong} falsch beantwortet</div>`:''}
+      </div><div class="mc-arrow">›</div>
+    </div>
+    <div class="mode-card" onclick="openKatalogPractice()">
+      <div class="mc-icon">📚</div>
+      <div class="mc-body">
+        <div class="mc-title">Kataloge üben</div>
+        <div class="mc-desc">Fußball · Musik · Anime nach Thema &amp; Schwierigkeit</div>
+        ${catWrong>0?`<div style="font-size:.76rem;color:var(--red);margin-top:4px;">${catWrong} falsch beantwortet</div>`:''}
+      </div><div class="mc-arrow">›</div>
+    </div>
+    ${totalWrong>0?`<button class="btn btn-secondary" style="margin-top:4px;" onclick="startPracticeSession()">🔁 Alle falsch üben (${totalWrong})</button>`:''}`;
+}
+
+// ══ SCHULFRAGEN ══════════════════════════════════════════════
+// Level 1: Schwierigkeit
+function openSchulPractice() {
+  _pv = 'schulDiff'; _pSelDiff = '';
+  const cont = _pCont();
+  const diffs = DIFF_ORDER.filter(d => {
+    return Object.values(getHistory()).some(q => !_isCatQ(q) && (q.difficulty||'') === d);
   });
-  return d;
+  if (!diffs.length) { cont.innerHTML = '<div class="empty-state"><div class="es-icon">📭</div>Noch keine Schulfragen gespielt.</div>'; return; }
+
+  let html = _pBack('← Zurück','renderPracticeTab()');
+  html += '<div class="label" style="margin-bottom:10px;">Schwierigkeit wählen</div><div class="topic-grid">';
+  diffs.forEach((d,i) => {
+    const wc = _wrongQ(false,d).length;
+    html += `<div class="topic-card" onclick="openSchulSubjects(${i})">
+      <span class="tc-icon">${DIFF_LABELS[d].split(' ')[0]}</span>
+      <span class="tc-label">${(DIFF_LABELS[d]||d).replace(/^.+ /,'')}</span>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${wc>0?`<span style="color:var(--red);">${wc} falsch</span>`:'Keine Fehler'}</div>
+    </div>`;
+  });
+  html += '</div>';
+  cont.innerHTML = html;
+  // Store diffs list so index works
+  _pSubjects = diffs; // reuse array for diffs here
+}
+
+// Level 2: Fach
+function openSchulSubjects(diffIdx) {
+  const diff = _pSubjects[diffIdx]; _pSelDiff = diff;
+  const cont = _pCont();
+  const qs = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== diff);
+  const subjSet = {};
+  qs.forEach(q => { const s = q.subject||'Sonstiges'; if(!subjSet[s]) subjSet[s]=[]; subjSet[s].push(q); });
+  const subjs = Object.keys(subjSet).sort((a,b)=>a.localeCompare(b,'de'));
+  _pSubjects = subjs;
+
+  let html = _pBack('← Schwierigkeit','openSchulPractice()');
+  html += `<div style="font-weight:700;margin-bottom:14px;">${DIFF_LABELS[diff]||diff}</div>`;
+  html += '<div class="label" style="margin-bottom:10px;">Fach wählen</div><div class="topic-grid">';
+  subjs.forEach((s,i) => {
+    const wc = subjSet[s].filter(q=>q.timesWrong>0).length;
+    html += `<div class="topic-card" onclick="openSchulGrades(${i})">
+      <span class="tc-icon">${getPracticeIcon(s)}</span>
+      <span class="tc-label">${esc(s)}</span>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${subjSet[s].length} Fragen${wc>0?` · <span style="color:var(--red);">${wc} falsch</span>`:''}</div>
+    </div>`;
+  });
+  html += '</div>'; cont.innerHTML = html;
+}
+
+// Level 3: Klasse
+function openSchulGrades(subjIdx) {
+  const subj = _pSubjects[subjIdx]; _pSelSubj = subj;
+  const cont = _pCont();
+  const qs = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== _pSelDiff && q.subject===subj);
+  const gradeSet = {};
+  qs.forEach(q => { const g=(q.grade&&q.grade!=='–')?String(q.grade):''; if(!gradeSet[g]) gradeSet[g]=[]; gradeSet[g].push(q); });
+  const grades = Object.keys(gradeSet).sort((a,b)=>(Number(a)||999)-(Number(b)||999));
+  _pGrades = grades;
+
+  // Nur eine Klasse? Direkt zu Themen
+  if (grades.length === 1) { openSchulTopics(0); return; }
+
+  let html = _pBack('← Fach','openSchulSubjects(-1)'); // -1: re-render from stored state
+  html += `<div style="font-weight:700;margin-bottom:14px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff} · ${getPracticeIcon(subj)} ${esc(subj)}</div>`;
+  html += '<div class="label" style="margin-bottom:10px;">Klasse wählen</div><div class="topic-grid">';
+  grades.forEach((g,i) => {
+    const wc = gradeSet[g].filter(q=>q.timesWrong>0).length;
+    const lbl = g?'Klasse '+g:'Allgemein';
+    html += `<div class="topic-card" onclick="openSchulTopics(${i})">
+      <span class="tc-icon">📚</span><span class="tc-label">${esc(lbl)}</span>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${gradeSet[g].length} Fragen${wc>0?` · <span style="color:var(--red);">${wc} falsch</span>`:''}</div>
+    </div>`;
+  });
+  html += '</div>'; cont.innerHTML = html;
+}
+
+// Level 4: Themen + Fragen
+function openSchulTopics(gradeIdx) {
+  const grade = _pGrades[gradeIdx]; _pSelGrade = grade;
+  const cont  = _pCont();
+  const qs    = _wrongQ(false, _pSelDiff, _pSelSubj, grade);
+  const all   = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== _pSelDiff && q.subject===_pSelSubj && ((q.grade&&q.grade!=='–')?String(q.grade):'')===grade);
+
+  const topicMap = {};
+  all.forEach(q => { const t=q.topic||q.subcategory||'Allgemein'; if(!topicMap[t]) topicMap[t]=[]; topicMap[t].push(q); });
+  const topicItems = Object.keys(topicMap).sort((a,b)=>a.localeCompare(b,'de')).map(t=>({topic:t,qs:topicMap[t]}));
+
+  const backFn = _pGrades.length>1 ? `openSchulGrades(-1)` : `openSchulSubjects(-1)`;
+  const gradeLbl = grade?(' · Klasse '+grade):'';
+
+  let html = _pBack('← Zurück', backFn);
+  html += `<div style="font-weight:700;margin-bottom:10px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff} · ${getPracticeIcon(_pSelSubj)} ${esc(_pSelSubj)}${esc(gradeLbl)}</div>`;
+  if (qs.length>0) html += `<button class="btn btn-primary" style="margin-bottom:14px;padding:11px;" onclick="_startPQ(_wrongQ(false,_pSelDiff,_pSelSubj,_pSelGrade))">🔁 Alle falschen üben (${Math.min(8,qs.length)} von ${qs.length})</button>`;
+  html += _topicAccordion(topicItems);
+  cont.innerHTML = html;
+}
+
+// ══ KATALOGE ═════════════════════════════════════════════════
+// Level 1: Thema (Fußball/Musik/Anime)
+function openKatalogPractice() {
+  _pv = 'katTopic'; _pKatalogTopicIdx = -1;
+  const cont = _pCont();
+  let html = _pBack('← Zurück','renderPracticeTab()');
+  html += '<div class="label" style="margin-bottom:10px;">Thema wählen</div><div class="topic-grid">';
+  TOPIC_GROUPS.forEach((t,i) => {
+    const wc = _wrongQ(true, undefined, t.label).length;
+    const total = Object.values(getHistory()).filter(q=>q.subject===t.label).length;
+    if (!total) return;
+    html += `<div class="topic-card" onclick="openKatalogDiffs(${i})">
+      <span class="tc-icon">${t.icon}</span><span class="tc-label">${esc(t.label)}</span>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${total} Fragen${wc>0?` · <span style="color:var(--red);">${wc} falsch</span>`:''}</div>
+    </div>`;
+  });
+  html += '</div>'; cont.innerHTML = html;
+}
+
+// Level 2: Schwierigkeit
+function openKatalogDiffs(topicIdx) {
+  _pKatalogTopicIdx = topicIdx;
+  const t    = TOPIC_GROUPS[topicIdx];
+  const cont = _pCont();
+  const diffs = DIFF_ORDER.filter(d => {
+    return Object.values(getHistory()).some(q => q.subject===t.label && (q.difficulty||'')=== d);
+  });
+
+  let html = _pBack('← Thema','openKatalogPractice()');
+  html += `<div style="font-weight:700;margin-bottom:14px;">${t.icon} ${esc(t.label)}</div>`;
+  html += '<div class="label" style="margin-bottom:10px;">Schwierigkeit wählen</div><div class="topic-grid">';
+  diffs.forEach((d,i) => {
+    const all = Object.values(getHistory()).filter(q=>q.subject===t.label&&(q.difficulty||'')=== d);
+    const wc  = all.filter(q=>q.timesWrong>0).length;
+    html += `<div class="topic-card" onclick="openKatalogQuestions(${topicIdx},${i})">
+      <span class="tc-icon">${DIFF_LABELS[d].split(' ')[0]}</span>
+      <span class="tc-label">${(DIFF_LABELS[d]||d).replace(/^.+ /,'')}</span>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${all.length} Fragen${wc>0?` · <span style="color:var(--red);">${wc} falsch</span>`:''}</div>
+    </div>`;
+  });
+  html += '</div>'; cont.innerHTML = html;
+  // Store diffs for index lookup
+  _pSubjects = diffs;
+}
+
+// Level 3: Fragen-Liste
+function openKatalogQuestions(topicIdx, diffIdx) {
+  const t    = TOPIC_GROUPS[topicIdx];
+  const diff = _pSubjects[diffIdx]; _pKatalogDiff = diff; _pSelDiff = diff;
+  const cont = _pCont();
+  const all  = Object.values(getHistory()).filter(q=>q.subject===t.label&&(q.difficulty||'')=== diff);
+  const topicMap = {};
+  all.forEach(q => { const tp=q.topic||'Allgemein'; if(!topicMap[tp]) topicMap[tp]=[]; topicMap[tp].push(q); });
+  const topicItems = Object.keys(topicMap).sort((a,b)=>a.localeCompare(b,'de')).map(tp=>({topic:tp,qs:topicMap[tp]}));
+  const wc = all.filter(q=>q.timesWrong>0).length;
+
+  let html = _pBack('← Schwierigkeit',`openKatalogDiffs(${topicIdx})`);
+  html += `<div style="font-weight:700;margin-bottom:10px;">${t.icon} ${esc(t.label)} · ${(DIFF_LABELS[diff]||diff).replace(/^.+ /,'')}</div>`;
+  if (wc>0) html += `<button class="btn btn-primary" style="margin-bottom:14px;padding:11px;"
+    onclick="_startPQ(_wrongQ(true,${JSON.stringify(diff)},${JSON.stringify(t.label)}))">
+    🔁 Falsche üben (${Math.min(8,wc)} von ${wc})</button>`;
+  html += _topicAccordion(topicItems);
+  cont.innerHTML = html;
+}
+
+// ── Üben-Session starten ─────────────────────────────────────
+function _startPQ(questions) {
+  const pick = questions.slice(0,8);
+  if (!pick.length) { showToast('Keine falschen Fragen', 'error'); return; }
+  G.mode='solo'; G.source='practice';
+  G.subject = _pSelSubj||'Übung'; G.subcategory=null; G.grade=_pSelGrade||'–';
+  G.solo={correct:0,points:0,answers:[]};
+  G.questions = pick.map(q=>({question:q.question,options:q.options,correct:q.correct,explanation:q.explanation,topic:q.topic||q.subject}));
+  G.current=0;
+  document.getElementById('q-total').textContent=G.questions.length;
+  setupQuizUI(); showScreen('screen-quiz'); renderQuestion();
+}
+
+// Re-navigation Helpers (für Back-Buttons mit -1 Index)
+function openSchulSubjects(i) {
+  if (i === -1) {
+    // Rebuild aus gespeichertem State
+    const cont = _pCont();
+    const qs = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== _pSelDiff);
+    const subjSet = {};
+    qs.forEach(q => { const s=q.subject||'Sonstiges'; if(!subjSet[s]) subjSet[s]=[]; subjSet[s].push(q); });
+    _pSubjects = Object.keys(subjSet).sort((a,b)=>a.localeCompare(b,'de'));
+    let html = _pBack('← Schwierigkeit','openSchulPractice()');
+    html += `<div style="font-weight:700;margin-bottom:14px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff}</div>`;
+    html += '<div class="label" style="margin-bottom:10px;">Fach wählen</div><div class="topic-grid">';
+    _pSubjects.forEach((s,i) => {
+      const qs2 = qs.filter(q=>q.subject===s);
+      const wc = qs2.filter(q=>q.timesWrong>0).length;
+      html += `<div class="topic-card" onclick="openSchulGrades(${i})"><span class="tc-icon">${getPracticeIcon(s)}</span><span class="tc-label">${esc(s)}</span><div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${qs2.length} Fragen${wc>0?` · <span style="color:var(--red);">${wc} falsch</span>`:''}</div></div>`;
+    });
+    html += '</div>'; cont.innerHTML = html; return;
+  }
+  openSchulGrades(i);
+}
+
+function openSchulGrades(i) {
+  if (i === -1) {
+    // Re-show grades for current _pSelSubj
+    const cont  = _pCont();
+    const qs    = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== _pSelDiff && q.subject===_pSelSubj);
+    const gradeSet = {};
+    qs.forEach(q => { const g=(q.grade&&q.grade!=='–')?String(q.grade):''; if(!gradeSet[g]) gradeSet[g]=[]; gradeSet[g].push(q); });
+    _pGrades = Object.keys(gradeSet).sort((a,b)=>(Number(a)||999)-(Number(b)||999));
+    if (_pGrades.length===1) { openSchulTopics(0); return; }
+    let html = _pBack('← Fach','openSchulSubjects(-1)');
+    html += `<div style="font-weight:700;margin-bottom:14px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff} · ${getPracticeIcon(_pSelSubj)} ${esc(_pSelSubj)}</div>`;
+    html += '<div class="label" style="margin-bottom:10px;">Klasse wählen</div><div class="topic-grid">';
+    _pGrades.forEach((g,i) => {
+      const wc = gradeSet[g].filter(q=>q.timesWrong>0).length;
+      html += `<div class="topic-card" onclick="openSchulTopics(${i})"><span class="tc-icon">📚</span><span class="tc-label">${esc(g?'Klasse '+g:'Allgemein')}</span><div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${gradeSet[g].length} Fragen${wc>0?` · <span style="color:var(--red);">${wc} falsch</span>`:''}</div></div>`;
+    });
+    html += '</div>'; cont.innerHTML = html; return;
+  }
+  // Normal: find subject from _pSubjects[i]
+  _pSelSubj = _pSubjects[i];
+  const cont = _pCont();
+  const qs = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== _pSelDiff && q.subject===_pSelSubj);
+  const gradeSet = {};
+  qs.forEach(q => { const g=(q.grade&&q.grade!=='–')?String(q.grade):''; if(!gradeSet[g]) gradeSet[g]=[]; gradeSet[g].push(q); });
+  _pGrades = Object.keys(gradeSet).sort((a,b)=>(Number(a)||999)-(Number(b)||999));
+  if (_pGrades.length===1) { openSchulTopics(0); return; }
+  let html = _pBack('← Fach','openSchulSubjects(-1)');
+  html += `<div style="font-weight:700;margin-bottom:14px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff} · ${getPracticeIcon(_pSelSubj)} ${esc(_pSelSubj)}</div>`;
+  html += '<div class="label" style="margin-bottom:10px;">Klasse wählen</div><div class="topic-grid">';
+  _pGrades.forEach((g,i) => {
+    const wc = gradeSet[g].filter(q=>q.timesWrong>0).length;
+    html += `<div class="topic-card" onclick="openSchulTopics(${i})"><span class="tc-icon">📚</span><span class="tc-label">${esc(g?'Klasse '+g:'Allgemein')}</span><div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${gradeSet[g].length} Fragen${wc>0?` · <span style="color:var(--red);">${wc} falsch</span>`:''}</div></div>`;
+  });
+  html += '</div>'; cont.innerHTML = html;
+}
+
+function togglePracticeTopic(id, header) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const open = el.style.display !== 'none';
+  el.style.display = open ? 'none' : 'block';
+  const arr = header.querySelector('.pt-arrow');
+  if (arr) arr.textContent = open ? '›' : '⌃';
 }
 
 function renderPracticeTab() {
@@ -5583,184 +5924,11 @@ function renderPracticeTab() {
   _renderPracticeSubjects(cont, totalWrong);
 }
 
-// ── Level 1: Fächer ──────────────────────────────────────
-function _renderPracticeSubjects(cont, totalWrong) {
-  const catalogOrder = TOPIC_GROUPS.map(t => t.label);
-  const subjects = Object.keys(_pd).sort((a, b) => {
-    const ai = catalogOrder.indexOf(a), bi = catalogOrder.indexOf(b);
-    if (ai >= 0 && bi < 0) return -1;
-    if (bi >= 0 && ai < 0) return 1;
-    if (ai >= 0 && bi >= 0) return ai - bi;
-    return a.localeCompare(b, 'de');
-  });
-
-  let html = '<div class="label" style="margin-bottom:10px;">Fach wählen</div><div class="topic-grid">';
-  subjects.forEach(subj => {
-    const allQs   = Object.values(_pd[subj]).flatMap(g => Object.values(g).flat());
-    const wc      = allQs.filter(q => q.timesWrong > 0).length;
-    html += `<div class="topic-card" onclick="practiceOpenSubject(${JSON.stringify(subj)})">
-      <span class="tc-icon">${getPracticeIcon(subj)}</span>
-      <span class="tc-label">${esc(subj)}</span>
-      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${allQs.length} Fragen${wc > 0 ? ` &nbsp;·&nbsp; <span style="color:var(--red);">${wc} falsch</span>` : ''}</div>
-    </div>`;
-  });
-  html += '</div>';
-  if ((totalWrong || 0) > 0) {
-    html += `<button class="btn btn-secondary" style="margin-top:8px;" onclick="startPracticeSession()">🔁 Alle falsch üben (${totalWrong})</button>`;
-  }
-  cont.innerHTML = html;
-}
-
-// ── Level 2: Klassen ─────────────────────────────────────
-function practiceOpenSubject(subj) {
-  _pNav = 'grades'; _pSel.subject = subj;
-  const cont     = document.getElementById('practice-list-container');
-  const gradeMap = _pd[subj] || {};
-  const grades   = Object.keys(gradeMap).sort((a, b) => (Number(a) || 999) - (Number(b) || 999));
-
-  // Wenn nur eine Klasse (oder keine Klassenunterscheidung) → direkt zu Themen
-  const realGrades = grades.filter(g => g !== '');
-  if (realGrades.length <= 1) {
-    practiceOpenGrade(subj, grades[0] || '');
-    return;
-  }
-
-  let html = `<span class="topic-diff-back" onclick="renderPracticeTab()">← Fach wechseln</span>
-    <div style="font-weight:700;margin-bottom:14px;">${getPracticeIcon(subj)} ${esc(subj)}</div>
-    <div class="label" style="margin-bottom:10px;">Klasse wählen</div>
-    <div class="topic-grid">`;
-  grades.forEach(g => {
-    const qs = Object.values(gradeMap[g]).flat();
-    const wc = qs.filter(q => q.timesWrong > 0).length;
-    const lbl = g ? 'Klasse ' + g : 'Allgemein';
-    html += `<div class="topic-card" onclick="practiceOpenGrade(${JSON.stringify(subj)},${JSON.stringify(g)})">
-      <span class="tc-icon">📚</span>
-      <span class="tc-label">${esc(lbl)}</span>
-      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${qs.length} Fragen${wc > 0 ? ` &nbsp;·&nbsp; <span style="color:var(--red);">${wc} falsch</span>` : ''}</div>
-    </div>`;
-  });
-  html += '</div>';
-  cont.innerHTML = html;
-}
-
-// ── Level 3: Themen + Fragen ──────────────────────────────
-function practiceOpenGrade(subj, grade) {
-  _pNav = 'topics'; _pSel = { subject: subj, grade };
-  const cont      = document.getElementById('practice-list-container');
-  const topicMap  = (_pd[subj] || {})[grade] || {};
-  const topics    = Object.keys(topicMap).sort((a, b) => a.localeCompare(b, 'de'));
-  const allWrong  = topics.flatMap(t => topicMap[t]).filter(q => q.timesWrong > 0);
-  const gradeLbl  = grade ? ' · Klasse ' + grade : '';
-
-  let back = Object.keys((_pd[subj] || {})).filter(g => g !== '').length > 1
-    ? `<span class="topic-diff-back" onclick="practiceOpenSubject(${JSON.stringify(subj)})">← Klasse wechseln</span>`
-    : `<span class="topic-diff-back" onclick="renderPracticeTab()">← Fach wechseln</span>`;
-
-  let html = `${back}
-    <div style="font-weight:700;margin-bottom:10px;">${getPracticeIcon(subj)} ${esc(subj)}${esc(gradeLbl)}</div>`;
-
-  if (allWrong.length > 0) {
-    html += `<button class="btn btn-primary" style="margin-bottom:14px;padding:11px;"
-      onclick="startPracticeFiltered(${JSON.stringify(subj)},${JSON.stringify(grade)},null)">
-      🔁 Alle falschen üben (${Math.min(8, allWrong.length)} von ${allWrong.length})
-    </button>`;
-  }
-
-  html += '<div style="display:flex;flex-direction:column;gap:10px;">';
-  topics.forEach((topic, ti) => {
-    const qs  = topicMap[topic].sort((a, b) => b.timesWrong - a.timesWrong);
-    const wc  = qs.filter(q => q.timesWrong > 0).length;
-    const pid = 'pt_' + ti;
-    html += `<div style="background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;">
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px;cursor:pointer;"
-           onclick="togglePracticeTopic('${pid}',this)">
-        <div>
-          <div style="font-weight:600;font-size:.88rem;">${esc(topic)}</div>
-          <div style="font-size:.73rem;color:var(--muted);margin-top:2px;">${qs.length} Fragen${wc > 0 ? ` &nbsp;·&nbsp; <span style="color:var(--red);">${wc} falsch</span>` : ''}</div>
-        </div>
-        <span style="color:var(--muted);" class="pt-arrow">›</span>
-      </div>
-      <div id="${pid}" style="display:none;">
-        ${wc > 0 ? `<div style="padding:0 14px 10px;">
-          <button class="btn btn-secondary" style="padding:8px;font-size:.8rem;"
-            onclick="startPracticeFiltered(${JSON.stringify(subj)},${JSON.stringify(grade)},${JSON.stringify(topic)})">
-            🔁 Falsche üben (${wc})
-          </button></div>` : ''}
-        <div style="padding:0 14px 14px;display:flex;flex-direction:column;gap:8px;">
-          ${qs.map(q => {
-            const w = q.timesWrong > 0;
-            return `<div style="background:var(--surface);border:1.5px solid ${w ? 'rgba(255,71,87,.25)' : 'var(--border)'};border-radius:10px;padding:11px 13px;">
-              <div style="display:flex;gap:7px;margin-bottom:7px;">
-                <span style="font-size:.7rem;font-weight:700;flex-shrink:0;margin-top:2px;${w ? 'color:var(--red)' : 'color:var(--green)'};">${w ? '✗×' + q.timesWrong : '✓'}</span>
-                <div style="font-size:.84rem;font-weight:600;line-height:1.4;">${esc(q.question)}</div>
-              </div>
-              <div style="font-size:.8rem;color:var(--green)${q.explanation ? ';margin-bottom:5px' : ''};">→ ${esc(q.options?.[q.correct] ?? '')}</div>
-              ${q.explanation ? `<div style="font-size:.76rem;color:var(--muted);line-height:1.4;">💡 ${esc(q.explanation)}</div>` : ''}
-            </div>`;
-          }).join('')}
-        </div>
-      </div>
-    </div>`;
-  });
-  html += '</div>';
-  cont.innerHTML = html;
-}
-
-function togglePracticeTopic(id, header) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const open = el.style.display !== 'none';
-  el.style.display = open ? 'none' : 'block';
-  const arr = header.querySelector('.pt-arrow');
-  if (arr) arr.textContent = open ? '›' : '⌃';
-}
-
-function startPracticeFiltered(subj, grade, topic) {
-  const h = getHistory();
-  let wrong = Object.values(h).filter(q => {
-    if (!q.timesWrong) return false;
-    const qs = q.subject || q.topic || 'Sonstiges';
-    const qg = (q.grade && q.grade !== '–') ? String(q.grade) : '';
-    const qt = q.topic || q.subcategory || 'Allgemein';
-    if (qs !== subj)  return false;
-    if (qg !== grade) return false;
-    if (topic && qt !== topic) return false;
-    return true;
-  }).sort((a, b) => b.timesWrong - a.timesWrong);
-  if (!wrong.length) { showToast('Keine falschen Fragen in diesem Bereich', 'error'); return; }
-  const pick = wrong.slice(0, 8);
-  G.mode = 'solo'; G.source = 'practice';
-  G.subject = subj; G.subcategory = topic || null; G.grade = grade || '–';
-  G.solo = { correct:0, points:0, answers:[] };
-  G.questions = pick.map(q => ({
-    question:q.question, options:q.options, correct:q.correct,
-    explanation:q.explanation, topic:q.topic || q.subject
-  }));
-  G.current = 0;
-  document.getElementById('q-total').textContent = G.questions.length;
-  setupQuizUI();
-  showScreen('screen-quiz');
-  renderQuestion();
-}
-
 function startPracticeSession() {
-  const h = getHistory();
-  const wrong = Object.values(h).filter(q => q.timesWrong > 0)
+  const wrong = Object.values(getHistory()).filter(q => q.timesWrong > 0)
     .sort((a,b) => b.timesWrong - a.timesWrong || b.lastSeen - a.lastSeen);
   if (!wrong.length) { showToast('Keine Fragen zum Üben', 'error'); return; }
-  const pick = wrong.slice(0, Math.min(8, wrong.length));
-  G.mode = 'solo'; G.source = 'practice';
-  G.subject = 'Übung'; G.subcategory = null; G.grade = '–';
-  G.solo = { correct:0, points:0, answers:[] };
-  G.questions = pick.map(q => ({
-    question: q.question, options: q.options, correct: q.correct,
-    explanation: q.explanation, topic: q.topic || q.subject
-  }));
-  G.current = 0;
-  document.getElementById('q-total').textContent = G.questions.length;
-  setupQuizUI();
-  showScreen('screen-quiz');
-  renderQuestion();
+  _startPQ(wrong);
 }
 
 function clearHistory() {
@@ -6188,10 +6356,12 @@ function playCatalog(id) {
   if (!cat || !cat.questions.length) { showToast('Katalog ist leer', 'error'); return; }
   // Subject für History-Gruppierung aus Katalog-ID ableiten
   const group = TOPIC_GROUPS.find(t => Object.values(t.cats).includes(id));
+  const diffMatch = id.match(/_(leicht|mittel|schwer|gemischt)$/);
   G.mode = 'solo';
   G.source = 'catalog';
   G.catalogId = id;
-  G.subject = group ? group.label : (cat.name || '');
+  G.subject    = group ? group.label : (cat.name || '');
+  G.difficulty = diffMatch ? diffMatch[1] : '';
   G.subcategory = null;
   G.grade = '–';
   G.solo = { correct: 0, points: 0, answers: [] };
