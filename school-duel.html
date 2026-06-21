@@ -5898,32 +5898,6 @@ function togglePracticeTopic(id, header) {
   if (arr) arr.textContent = open ? '›' : '⌃';
 }
 
-function renderPracticeTab() {
-  const h   = getHistory();
-  const all = Object.values(h);
-  const totalSeen  = all.length;
-  const totalWrong = all.filter(q => q.timesWrong > 0).length;
-
-  document.getElementById('practice-stats').innerHTML =
-    '<div class="card" style="text-align:center;padding:18px;">'
-    + '<div style="font-size:1.8rem;font-weight:700;color:var(--accent);">' + totalSeen + '</div>'
-    + '<div style="font-size:.8rem;color:var(--muted);">Fragen gesehen</div></div>'
-    + '<div class="card" style="text-align:center;padding:18px;">'
-    + '<div style="font-size:1.8rem;font-weight:700;color:var(--red);">' + totalWrong + '</div>'
-    + '<div style="font-size:.8rem;color:var(--muted);">falsch beantwortet</div></div>';
-
-  const cont = document.getElementById('practice-list-container');
-  if (!all.length) {
-    cont.innerHTML = '<div class="empty-state"><div class="es-icon">🎮</div>Noch keine Fragen gespeichert.<br>Spiele eine Runde, um Fragen zu sammeln!</div>';
-    return;
-  }
-
-  _pd   = buildPracticeData(all);
-  _pNav = 'subjects';
-  _pSel = { subject: '', grade: '' };
-  _renderPracticeSubjects(cont, totalWrong);
-}
-
 function startPracticeSession() {
   const wrong = Object.values(getHistory()).filter(q => q.timesWrong > 0)
     .sort((a,b) => b.timesWrong - a.timesWrong || b.lastSeen - a.lastSeen);
