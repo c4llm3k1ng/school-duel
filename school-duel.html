@@ -79,6 +79,14 @@
   .mode-back { display:none; align-items:center; gap:6px; margin-bottom:18px; cursor:pointer; color:var(--muted); font-size:.88rem; font-weight:600; width:fit-content; }
   .mode-back:hover { color:var(--accent); }
   .mode-back.visible { display:flex; }
+  .duel-type-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:8px; }
+  .duel-type-card { background:var(--surface2); border:2px solid var(--border); border-radius:var(--radius); padding:24px 14px 20px; text-align:center; cursor:pointer; transition:all .18s; }
+  .duel-type-card:hover { border-color:var(--accent); transform:translateY(-2px); box-shadow:0 4px 20px rgba(108,99,255,.12); }
+  .duel-type-card .dtc-icon { font-size:2rem; margin-bottom:10px; }
+  .duel-type-card .dtc-title { font-size:.95rem; font-weight:700; margin-bottom:5px; }
+  .duel-type-card .dtc-desc { font-size:.75rem; color:var(--muted); line-height:1.4; }
+  .duel-type-back { display:inline-flex; align-items:center; gap:5px; margin-bottom:14px; cursor:pointer; color:var(--muted); font-size:.85rem; font-weight:600; }
+  .duel-type-back:hover { color:var(--accent); }
   .accordion-section { border-radius:10px; background:var(--surface2); margin-bottom:8px; overflow:hidden; }
   .accordion-header { display:flex; align-items:center; padding:11px 14px; cursor:pointer; user-select:none; gap:8px; }
   .accordion-header:active { opacity:.8; }
@@ -960,162 +968,79 @@
   <!-- DUEL -->
   <div id="tab-duel" style="display:none;">
     <div class="mode-back" id="back-duel" onclick="showSpielenLanding()">← Zurück</div>
-    <div class="sub-tabs">
-      <div class="sub-tab active" id="subtab-btn-online" onclick="switchDuelSubTab('online')">🌐 Online</div>
-      <div class="sub-tab" id="subtab-btn-local" onclick="switchDuelSubTab('local')">⚔️ Lokal</div>
+
+    <!-- TYPE LANDING -->
+    <div id="duel-type-landing">
+      <div class="duel-type-grid">
+        <div class="duel-type-card" onclick="showDuelType('schul')">
+          <div class="dtc-icon">🏫</div>
+          <div class="dtc-title">Schulfragen-Duell</div>
+          <div class="dtc-desc">Klasse, Fach &amp; Schwierigkeit wählen</div>
+        </div>
+        <div class="duel-type-card" onclick="showDuelType('catalog')">
+          <div class="dtc-icon">📚</div>
+          <div class="dtc-title">Katalog-Duell</div>
+          <div class="dtc-desc">Thema &amp; Schwierigkeit aus Katalogen wählen</div>
+        </div>
+      </div>
     </div>
 
-    <!-- LOCAL DUEL (existing) -->
-    <div id="duel-sub-local" style="display:none;">
-    <div class="card">
-      <div class="label">Spielernamen</div>
-      <div class="name-row">
-        <div>
-          <div class="name-label p1">⚔️ Spieler 1</div>
-          <input class="name-input" id="p1-name" placeholder="z.B. Max" maxlength="16">
-        </div>
-        <div>
-          <div class="name-label p2">🛡️ Spieler 2</div>
-          <input class="name-input p2-input" id="p2-name" placeholder="z.B. Lisa" maxlength="16">
-        </div>
-      </div>
-      <div class="label">Anzahl Runden</div>
-      <div class="pill-row" id="duel-rounds-pills">
-        <div class="pill active" data-val="1">1 Runde</div>
-        <div class="pill" data-val="3">3 Runden</div>
-        <div class="pill" data-val="5">5 Runden</div>
-      </div>
-      <button class="all-random-btn" onclick="randomizeAll('duel')">🎲 Alles zufällig auswählen</button>
-
-      <div class="accordion-section" id="acc-duel-grade">
-        <div class="accordion-header" onclick="toggleAccordion('acc-duel-grade')">
-          <span class="accordion-label">Klassenstufe</span>
-          <span class="accordion-value" id="acc-duel-grade-val">–</span>
-          <span class="accordion-arrow">›</span>
-        </div>
-        <div class="accordion-body">
-          <div class="pill-row" id="duel-grade-pills">
-            <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
-            <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
-            <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
-            <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
-            <div class="pill pill-action dice" onclick="randomizePills('duel-grade-pills','dGrade')">🎲</div>
-            <div class="pill pill-action mix" onclick="setMixed('duel-grade-pills','dGrade')">∼ Mix</div>
-          </div>
-        </div>
+    <!-- SCHULFRAGEN DUEL -->
+    <div id="duel-schul" style="display:none;">
+      <div class="duel-type-back" onclick="showDuelLanding()">← Zurück zur Auswahl</div>
+      <div class="sub-tabs">
+        <div class="sub-tab active" id="subtab-btn-online" onclick="switchDuelSubTab('online')">🌐 Online</div>
+        <div class="sub-tab" id="subtab-btn-local" onclick="switchDuelSubTab('local')">⚔️ Lokal</div>
       </div>
 
-      <div class="accordion-section" id="acc-duel-subject">
-        <div class="accordion-header" onclick="toggleAccordion('acc-duel-subject')">
-          <span class="accordion-label">Fach</span>
-          <span class="accordion-value" id="acc-duel-subject-val">–</span>
-          <span class="accordion-arrow">›</span>
-        </div>
-        <div class="accordion-body">
-          <div class="pill-row" id="duel-subject-pills">
-            <div class="pill" data-val="Mathematik">📐 Mathe</div>
-            <div class="pill" data-val="Deutsch">📖 Deutsch</div>
-            <div class="pill" data-val="Englisch">🌍 Englisch</div>
-            <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
-            <div class="pill" data-val="Biologie">🌿 Biologie</div>
-            <div class="pill" data-val="Physik">⚡ Physik</div>
-            <div class="pill" data-val="Chemie">🧪 Chemie</div>
-            <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
-            <div class="pill pill-action dice" onclick="randomizePills('duel-subject-pills','dSubject')">🎲</div>
-            <div class="pill pill-action mix" onclick="setMixedSubject('duel-subject-pills','dSubject','duel')">∼ Mix</div>
-          </div>
-          <div id="duel-subcategory-wrap" style="display:none;"></div>
-        </div>
-      </div>
-
-      <div class="accordion-section" id="acc-duel-diff">
-        <div class="accordion-header" onclick="toggleAccordion('acc-duel-diff')">
-          <span class="accordion-label">Schwierigkeit</span>
-          <span class="accordion-value" id="acc-duel-diff-val">Mittel</span>
-          <span class="accordion-arrow">›</span>
-        </div>
-        <div class="accordion-body">
-          <div class="pill-row" id="duel-diff-pills">
-            <div class="pill" data-val="leicht">Leicht</div>
-            <div class="pill active" data-val="mittel">Mittel</div>
-            <div class="pill" data-val="schwer">Schwer</div>
-            <div class="pill pill-action dice" onclick="randomizePills('duel-diff-pills','dDifficulty')">🎲</div>
-            <div class="pill pill-action mix" onclick="setMixedDiff('duel-diff-pills','dDifficulty')">∼ Mix</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-section" id="acc-duel-source">
-        <div class="accordion-header" onclick="toggleAccordion('acc-duel-source')">
-          <span class="accordion-label">Fragenquelle</span>
-          <span class="accordion-value" id="acc-duel-source-val">🤖 KI generiert</span>
-          <span class="accordion-arrow">›</span>
-        </div>
-        <div class="accordion-body">
-          <div class="pill-row" id="duel-source-pills">
-            <div class="pill active" data-val="ai">🤖 KI generiert</div>
-            <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
-          </div>
-          <div id="duel-catalog-picker" style="display:none;">
-            <div class="label">Thema wählen</div>
-            <div class="topic-grid" id="duel-topic-grid"></div>
-            <div id="duel-topic-diff" style="display:none;">
-              <span class="topic-diff-back" onclick="resetTopicPicker('duel')">← Thema wechseln</span>
-              <div class="label" id="duel-topic-diff-label">Schwierigkeit</div>
-              <div class="pill-row" id="duel-topic-diff-pills">
-                <div class="pill" data-diff="leicht">Leicht</div>
-                <div class="pill" data-diff="mittel">Mittel</div>
-                <div class="pill" data-diff="schwer">Schwer</div>
-                <div class="pill" data-diff="gemischt">Gemischt</div>
-              </div>
-            </div>
-            <div id="duel-topic-custom" style="display:none;">
-              <span class="topic-diff-back" onclick="resetTopicPicker('duel')">← Thema wechseln</span>
-              <div class="label">Eigener Katalog</div>
-              <select id="duel-catalog-select" class="form-input"></select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="btn btn-primary" id="duel-start-btn" disabled>Duell starten ⚔️</button>
-    </div>
-    </div><!-- /#duel-sub-local -->
-
-    <!-- ONLINE DUEL -->
-    <div id="duel-sub-online">
+      <!-- LOCAL DUEL -->
+      <div id="duel-sub-local" style="display:none;">
       <div class="card">
-        <div class="label">Dein Name</div>
-        <input class="name-input" id="online-my-name" placeholder="z.B. Max" maxlength="16" style="width:100%;margin-bottom:18px;">
+        <div class="label">Spielernamen</div>
+        <div class="name-row">
+          <div>
+            <div class="name-label p1">⚔️ Spieler 1</div>
+            <input class="name-input" id="p1-name" placeholder="z.B. Max" maxlength="16">
+          </div>
+          <div>
+            <div class="name-label p2">🛡️ Spieler 2</div>
+            <input class="name-input p2-input" id="p2-name" placeholder="z.B. Lisa" maxlength="16">
+          </div>
+        </div>
+        <div class="label">Anzahl Runden</div>
+        <div class="pill-row" id="duel-rounds-pills">
+          <div class="pill active" data-val="1">1 Runde</div>
+          <div class="pill" data-val="3">3 Runden</div>
+          <div class="pill" data-val="5">5 Runden</div>
+        </div>
+        <button class="all-random-btn" onclick="randomizeAll('duel')">🎲 Alles zufällig auswählen</button>
 
-        <button class="all-random-btn" onclick="randomizeAll('online')">🎲 Alles zufällig auswählen</button>
-
-        <div class="accordion-section" id="acc-online-grade">
-          <div class="accordion-header" onclick="toggleAccordion('acc-online-grade')">
+        <div class="accordion-section" id="acc-duel-grade">
+          <div class="accordion-header" onclick="toggleAccordion('acc-duel-grade')">
             <span class="accordion-label">Klassenstufe</span>
-            <span class="accordion-value" id="acc-online-grade-val">–</span>
+            <span class="accordion-value" id="acc-duel-grade-val">–</span>
             <span class="accordion-arrow">›</span>
           </div>
           <div class="accordion-body">
-            <div class="pill-row" id="online-grade-pills">
-              <div class="pill" data-val="5">Klasse 5</div><div class="pill" data-val="6">Klasse 6</div>
-              <div class="pill" data-val="7">Klasse 7</div><div class="pill" data-val="8">Klasse 8</div>
-              <div class="pill" data-val="9">Klasse 9</div><div class="pill" data-val="10">Klasse 10</div>
-              <div class="pill" data-val="11">Klasse 11</div><div class="pill" data-val="12">Klasse 12</div>
-              <div class="pill pill-action dice" onclick="randomizePills('online-grade-pills','dGrade')">🎲</div>
-              <div class="pill pill-action mix" onclick="setMixed('online-grade-pills','dGrade')">∼ Mix</div>
+            <div class="pill-row" id="duel-grade-pills">
+              <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
+              <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
+              <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
+              <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+              <div class="pill pill-action dice" onclick="randomizePills('duel-grade-pills','dGrade')">🎲</div>
+              <div class="pill pill-action mix" onclick="setMixed('duel-grade-pills','dGrade')">∼ Mix</div>
             </div>
           </div>
         </div>
 
-        <div class="accordion-section" id="acc-online-subject">
-          <div class="accordion-header" onclick="toggleAccordion('acc-online-subject')">
+        <div class="accordion-section" id="acc-duel-subject">
+          <div class="accordion-header" onclick="toggleAccordion('acc-duel-subject')">
             <span class="accordion-label">Fach</span>
-            <span class="accordion-value" id="acc-online-subject-val">–</span>
+            <span class="accordion-value" id="acc-duel-subject-val">–</span>
             <span class="accordion-arrow">›</span>
           </div>
           <div class="accordion-body">
-            <div class="pill-row" id="online-subject-pills">
+            <div class="pill-row" id="duel-subject-pills">
               <div class="pill" data-val="Mathematik">📐 Mathe</div>
               <div class="pill" data-val="Deutsch">📖 Deutsch</div>
               <div class="pill" data-val="Englisch">🌍 Englisch</div>
@@ -1124,93 +1049,219 @@
               <div class="pill" data-val="Physik">⚡ Physik</div>
               <div class="pill" data-val="Chemie">🧪 Chemie</div>
               <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
-              <div class="pill pill-action dice" onclick="randomizePills('online-subject-pills','dSubject')">🎲</div>
-              <div class="pill pill-action mix" onclick="setMixedSubject('online-subject-pills','dSubject','online')">∼ Mix</div>
+              <div class="pill pill-action dice" onclick="randomizePills('duel-subject-pills','dSubject')">🎲</div>
+              <div class="pill pill-action mix" onclick="setMixedSubject('duel-subject-pills','dSubject','duel')">∼ Mix</div>
             </div>
-            <div id="online-subcategory-wrap" style="display:none;"></div>
+            <div id="duel-subcategory-wrap" style="display:none;"></div>
           </div>
         </div>
 
-        <div class="accordion-section" id="acc-online-diff">
-          <div class="accordion-header" onclick="toggleAccordion('acc-online-diff')">
+        <div class="accordion-section" id="acc-duel-diff">
+          <div class="accordion-header" onclick="toggleAccordion('acc-duel-diff')">
             <span class="accordion-label">Schwierigkeit</span>
-            <span class="accordion-value" id="acc-online-diff-val">Mittel</span>
+            <span class="accordion-value" id="acc-duel-diff-val">Mittel</span>
             <span class="accordion-arrow">›</span>
           </div>
           <div class="accordion-body">
-            <div class="pill-row" id="online-diff-pills">
+            <div class="pill-row" id="duel-diff-pills">
               <div class="pill" data-val="leicht">Leicht</div>
               <div class="pill active" data-val="mittel">Mittel</div>
               <div class="pill" data-val="schwer">Schwer</div>
-              <div class="pill pill-action dice" onclick="randomizePills('online-diff-pills','dDifficulty')">🎲</div>
-              <div class="pill pill-action mix" onclick="setMixedDiff('online-diff-pills','dDifficulty')">∼ Mix</div>
+              <div class="pill pill-action dice" onclick="randomizePills('duel-diff-pills','dDifficulty')">🎲</div>
+              <div class="pill pill-action mix" onclick="setMixedDiff('duel-diff-pills','dDifficulty')">∼ Mix</div>
             </div>
           </div>
         </div>
 
-        <div class="accordion-section" id="acc-online-source">
-          <div class="accordion-header" onclick="toggleAccordion('acc-online-source')">
-            <span class="accordion-label">Fragenquelle</span>
-            <span class="accordion-value" id="acc-online-source-val">🤖 KI generiert</span>
-            <span class="accordion-arrow">›</span>
-          </div>
-          <div class="accordion-body">
-            <div class="pill-row" id="online-source-pills">
-              <div class="pill active" data-val="ai">🤖 KI generiert</div>
-              <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
-            </div>
-            <div id="online-catalog-picker" style="display:none;">
-              <div class="label">Thema wählen</div>
-              <div class="topic-grid" id="online-topic-grid"></div>
-              <div id="online-topic-diff" style="display:none;">
-                <span class="topic-diff-back" onclick="resetTopicPicker('online')">← Thema wechseln</span>
-                <div class="label" id="online-topic-diff-label">Schwierigkeit</div>
-                <div class="pill-row" id="online-topic-diff-pills">
-                  <div class="pill" data-diff="leicht">Leicht</div>
-                  <div class="pill" data-diff="mittel">Mittel</div>
-                  <div class="pill" data-diff="schwer">Schwer</div>
-                  <div class="pill" data-diff="gemischt">Gemischt</div>
-                </div>
-              </div>
-              <div id="online-topic-custom" style="display:none;">
-                <span class="topic-diff-back" onclick="resetTopicPicker('online')">← Thema wechseln</span>
-                <div class="label">Eigener Katalog</div>
-                <select id="online-catalog-select" class="form-input"></select>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="label">Anzahl Runden</div>
-        <div class="pill-row" id="online-rounds-pills">
-          <div class="pill active" data-val="1">1 Runde</div>
-          <div class="pill" data-val="3">3 Runden</div>
-          <div class="pill" data-val="5">5 Runden</div>
-        </div>
-        <div class="label">Anzahl Spieler</div>
-        <div class="pill-row" id="online-maxplayers-pills">
-          <div class="pill active" data-val="2">2 Spieler</div>
-          <div class="pill" data-val="3">3 Spieler</div>
-          <div class="pill" data-val="4">4 Spieler</div>
-        </div>
-        <button class="btn btn-primary" id="online-create-btn" disabled onclick="createOnlineRoom()">Raum erstellen 🌐</button>
+        <button class="btn btn-primary" id="duel-start-btn" disabled>Duell starten ⚔️</button>
       </div>
+      </div><!-- /#duel-sub-local -->
 
-      <div class="divider-or">oder beitreten</div>
+      <!-- ONLINE DUEL -->
+      <div id="duel-sub-online">
+        <div class="card">
+          <div class="label">Dein Name</div>
+          <input class="name-input" id="online-my-name" placeholder="z.B. Max" maxlength="16" style="width:100%;margin-bottom:18px;">
+          <button class="all-random-btn" onclick="randomizeAll('online')">🎲 Alles zufällig auswählen</button>
 
+          <div class="accordion-section" id="acc-online-grade">
+            <div class="accordion-header" onclick="toggleAccordion('acc-online-grade')">
+              <span class="accordion-label">Klassenstufe</span>
+              <span class="accordion-value" id="acc-online-grade-val">–</span>
+              <span class="accordion-arrow">›</span>
+            </div>
+            <div class="accordion-body">
+              <div class="pill-row" id="online-grade-pills">
+                <div class="pill" data-val="5">Klasse 5</div><div class="pill" data-val="6">Klasse 6</div>
+                <div class="pill" data-val="7">Klasse 7</div><div class="pill" data-val="8">Klasse 8</div>
+                <div class="pill" data-val="9">Klasse 9</div><div class="pill" data-val="10">Klasse 10</div>
+                <div class="pill" data-val="11">Klasse 11</div><div class="pill" data-val="12">Klasse 12</div>
+                <div class="pill pill-action dice" onclick="randomizePills('online-grade-pills','dGrade')">🎲</div>
+                <div class="pill pill-action mix" onclick="setMixed('online-grade-pills','dGrade')">∼ Mix</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-section" id="acc-online-subject">
+            <div class="accordion-header" onclick="toggleAccordion('acc-online-subject')">
+              <span class="accordion-label">Fach</span>
+              <span class="accordion-value" id="acc-online-subject-val">–</span>
+              <span class="accordion-arrow">›</span>
+            </div>
+            <div class="accordion-body">
+              <div class="pill-row" id="online-subject-pills">
+                <div class="pill" data-val="Mathematik">📐 Mathe</div>
+                <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+                <div class="pill" data-val="Englisch">🌍 Englisch</div>
+                <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+                <div class="pill" data-val="Biologie">🌿 Biologie</div>
+                <div class="pill" data-val="Physik">⚡ Physik</div>
+                <div class="pill" data-val="Chemie">🧪 Chemie</div>
+                <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+                <div class="pill pill-action dice" onclick="randomizePills('online-subject-pills','dSubject')">🎲</div>
+                <div class="pill pill-action mix" onclick="setMixedSubject('online-subject-pills','dSubject','online')">∼ Mix</div>
+              </div>
+              <div id="online-subcategory-wrap" style="display:none;"></div>
+            </div>
+          </div>
+
+          <div class="accordion-section" id="acc-online-diff">
+            <div class="accordion-header" onclick="toggleAccordion('acc-online-diff')">
+              <span class="accordion-label">Schwierigkeit</span>
+              <span class="accordion-value" id="acc-online-diff-val">Mittel</span>
+              <span class="accordion-arrow">›</span>
+            </div>
+            <div class="accordion-body">
+              <div class="pill-row" id="online-diff-pills">
+                <div class="pill" data-val="leicht">Leicht</div>
+                <div class="pill active" data-val="mittel">Mittel</div>
+                <div class="pill" data-val="schwer">Schwer</div>
+                <div class="pill pill-action dice" onclick="randomizePills('online-diff-pills','dDifficulty')">🎲</div>
+                <div class="pill pill-action mix" onclick="setMixedDiff('online-diff-pills','dDifficulty')">∼ Mix</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="label">Anzahl Runden</div>
+          <div class="pill-row" id="online-rounds-pills">
+            <div class="pill active" data-val="1">1 Runde</div>
+            <div class="pill" data-val="3">3 Runden</div>
+            <div class="pill" data-val="5">5 Runden</div>
+          </div>
+          <div class="label">Anzahl Spieler</div>
+          <div class="pill-row" id="online-maxplayers-pills">
+            <div class="pill active" data-val="2">2 Spieler</div>
+            <div class="pill" data-val="3">3 Spieler</div>
+            <div class="pill" data-val="4">4 Spieler</div>
+          </div>
+          <button class="btn btn-primary" id="online-create-btn" disabled onclick="createOnlineRoom()">Raum erstellen 🌐</button>
+        </div>
+
+        <div class="divider-or">oder beitreten</div>
+
+        <div class="card">
+          <div class="label">Dein Name</div>
+          <input class="name-input" id="join-name-input" placeholder="z.B. Lisa" maxlength="16" style="width:100%;margin-bottom:12px;">
+          <div class="label">Raumcode</div>
+          <input class="form-input" id="join-code-input" placeholder="z.B. AB3X7K" maxlength="6"
+            style="text-transform:uppercase;font-family:'Space Mono',monospace;font-size:1.2rem;letter-spacing:.15em;margin-bottom:12px;">
+          <button class="btn btn-secondary" onclick="joinOnlineRoom()">Beitreten →</button>
+        </div>
+
+        <div style="text-align:right;margin-top:4px;">
+          <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.78rem;" onclick="openFirebaseModal()">🔥 Firebase konfigurieren</button>
+        </div>
+      </div><!-- /#duel-sub-online -->
+    </div><!-- /#duel-schul -->
+
+    <!-- KATALOG DUEL -->
+    <div id="duel-catalog-type" style="display:none;">
+      <div class="duel-type-back" onclick="showDuelLanding()">← Zurück zur Auswahl</div>
       <div class="card">
-        <div class="label">Dein Name</div>
-        <input class="name-input" id="join-name-input" placeholder="z.B. Lisa" maxlength="16" style="width:100%;margin-bottom:12px;">
-        <div class="label">Raumcode</div>
-        <input class="form-input" id="join-code-input" placeholder="z.B. AB3X7K" maxlength="6"
-          style="text-transform:uppercase;font-family:'Space Mono',monospace;font-size:1.2rem;letter-spacing:.15em;margin-bottom:12px;">
-        <button class="btn btn-secondary" onclick="joinOnlineRoom()">Beitreten →</button>
+        <div class="label">Thema wählen</div>
+        <div class="topic-grid" id="duel-topic-grid"></div>
+        <div id="duel-topic-diff" style="display:none;">
+          <span class="topic-diff-back" onclick="resetTopicPicker('duel')">← Thema wechseln</span>
+          <div class="label" id="duel-topic-diff-label">Schwierigkeit</div>
+          <div class="pill-row" id="duel-topic-diff-pills">
+            <div class="pill" data-diff="leicht">Leicht</div>
+            <div class="pill" data-diff="mittel">Mittel</div>
+            <div class="pill" data-diff="schwer">Schwer</div>
+            <div class="pill" data-diff="gemischt">Gemischt</div>
+          </div>
+        </div>
+        <div id="duel-topic-custom" style="display:none;">
+          <span class="topic-diff-back" onclick="resetTopicPicker('duel')">← Thema wechseln</span>
+          <div class="label">Eigener Katalog</div>
+          <select id="duel-catalog-select" class="form-input"></select>
+        </div>
       </div>
 
-      <div style="text-align:right;margin-top:4px;">
-        <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.78rem;" onclick="openFirebaseModal()">🔥 Firebase konfigurieren</button>
+      <div id="duel-cat-player-section" style="display:none;">
+        <div class="sub-tabs">
+          <div class="sub-tab active" id="dcat-subtab-btn-local" onclick="switchDCatSubTab('local')">⚔️ Lokal</div>
+          <div class="sub-tab" id="dcat-subtab-btn-online" onclick="switchDCatSubTab('online')">🌐 Online</div>
+        </div>
+
+        <div id="dcat-sub-local">
+          <div class="card">
+            <div class="label">Spielernamen</div>
+            <div class="name-row">
+              <div>
+                <div class="name-label p1">⚔️ Spieler 1</div>
+                <input class="name-input" id="dcat-p1-name" placeholder="z.B. Max" maxlength="16">
+              </div>
+              <div>
+                <div class="name-label p2">🛡️ Spieler 2</div>
+                <input class="name-input p2-input" id="dcat-p2-name" placeholder="z.B. Lisa" maxlength="16">
+              </div>
+            </div>
+            <div class="label">Anzahl Runden</div>
+            <div class="pill-row" id="dcat-rounds-pills">
+              <div class="pill active" data-val="1">1 Runde</div>
+              <div class="pill" data-val="3">3 Runden</div>
+              <div class="pill" data-val="5">5 Runden</div>
+            </div>
+            <button class="btn btn-primary" onclick="startCatalogLocal()">Duell starten ⚔️</button>
+          </div>
+        </div>
+
+        <div id="dcat-sub-online" style="display:none;">
+          <div class="card">
+            <div class="label">Dein Name</div>
+            <input class="name-input" id="dcat-online-name" placeholder="z.B. Max" maxlength="16" style="width:100%;margin-bottom:18px;">
+            <div class="label">Anzahl Runden</div>
+            <div class="pill-row" id="dcat-online-rounds-pills">
+              <div class="pill active" data-val="1">1 Runde</div>
+              <div class="pill" data-val="3">3 Runden</div>
+              <div class="pill" data-val="5">5 Runden</div>
+            </div>
+            <div class="label">Anzahl Spieler</div>
+            <div class="pill-row" id="dcat-online-players-pills">
+              <div class="pill active" data-val="2">2 Spieler</div>
+              <div class="pill" data-val="3">3 Spieler</div>
+              <div class="pill" data-val="4">4 Spieler</div>
+            </div>
+            <button class="btn btn-primary" onclick="startCatalogOnline()">Raum erstellen 🌐</button>
+          </div>
+
+          <div class="divider-or">oder beitreten</div>
+
+          <div class="card">
+            <div class="label">Dein Name</div>
+            <input class="name-input" id="dcat-join-name" placeholder="z.B. Lisa" maxlength="16" style="width:100%;margin-bottom:12px;">
+            <div class="label">Raumcode</div>
+            <input class="form-input" id="dcat-join-code" placeholder="z.B. AB3X7K" maxlength="6"
+              style="text-transform:uppercase;font-family:'Space Mono',monospace;font-size:1.2rem;letter-spacing:.15em;margin-bottom:12px;">
+            <button class="btn btn-secondary" onclick="joinCatalogRoom()">Beitreten →</button>
+          </div>
+
+          <div style="text-align:right;margin-top:4px;">
+            <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.78rem;" onclick="openFirebaseModal()">🔥 Firebase konfigurieren</button>
+          </div>
+        </div>
       </div>
-    </div><!-- /#duel-sub-online -->
+    </div><!-- /#duel-catalog-type -->
 
   </div><!-- /#tab-duel -->
 
@@ -4795,7 +4846,7 @@ const TOPIC_GROUPS = [
 ];
 
 const PICKER_CAT_KEY = { solo:'catalogId', duel:'dCatalogId', online:'dCatalogId', chal:'_chalCatalogId' };
-const PICKER_CHECK   = { solo: ()=>checkSoloReady(), duel: ()=>checkDuelReady(), online: ()=>checkOnlineReady(), chal: ()=>{} };
+const PICKER_CHECK   = { solo: ()=>checkSoloReady(), duel: ()=>{ checkDuelReady(); checkCatDuelReady(); }, online: ()=>checkOnlineReady(), chal: ()=>{} };
 
 function initCatalogPicker(mode) {
   const grid = document.getElementById(`${mode}-topic-grid`);
@@ -4917,6 +4968,64 @@ function triggerPrefetch(mode) {
   PF.promise.then(q => { if (PF.key === key) PF.result = q; }).catch(() => {});
 }
 
+// ── DUEL TYPE LANDING ──
+function showDuelLanding() {
+  document.getElementById('duel-type-landing').style.display = '';
+  document.getElementById('duel-schul').style.display = 'none';
+  document.getElementById('duel-catalog-type').style.display = 'none';
+  G.dSource = null; G.dCatalogId = null;
+}
+function showDuelType(type) {
+  document.getElementById('duel-type-landing').style.display = 'none';
+  document.getElementById('duel-schul').style.display = type === 'schul' ? '' : 'none';
+  document.getElementById('duel-catalog-type').style.display = type === 'catalog' ? '' : 'none';
+  if (type === 'schul') {
+    G.dSource = 'ai';
+    switchDuelSubTab('online');
+  } else {
+    G.dSource = 'catalog';
+    G.dCatalogId = null;
+    document.getElementById('duel-cat-player-section').style.display = 'none';
+    initCatalogPicker('duel');
+  }
+}
+function switchDCatSubTab(tab) {
+  ['local','online'].forEach(t => {
+    document.getElementById('dcat-sub-' + t).style.display = t === tab ? '' : 'none';
+    document.getElementById('dcat-subtab-btn-' + t).classList.toggle('active', t === tab);
+  });
+}
+function checkCatDuelReady() {
+  const has = !!G.dCatalogId;
+  const sec = document.getElementById('duel-cat-player-section');
+  if (sec) sec.style.display = has ? '' : 'none';
+}
+function startCatalogLocal() {
+  G.mode = 'duel';
+  G.dSource = 'catalog';
+  G.p1Name = document.getElementById('dcat-p1-name').value.trim() || 'Spieler 1';
+  G.p2Name = document.getElementById('dcat-p2-name').value.trim() || 'Spieler 2';
+  G.totalRounds = parseInt(document.querySelector('#dcat-rounds-pills .pill.active')?.dataset.val || '1');
+  G.currentRound = 1; G.roundScores = [];
+  G.p1 = { correct:0, points:0, answers:[] };
+  G.p2 = { correct:0, points:0, answers:[] };
+  G.currentPlayer = 1;
+  showHandover(1, true);
+}
+async function startCatalogOnline() {
+  if (!initFirebase()) { openFirebaseModal(); return; }
+  const myName = document.getElementById('dcat-online-name').value.trim() || 'Spieler 1';
+  const rounds = parseInt(document.querySelector('#dcat-online-rounds-pills .pill.active')?.dataset.val || '1');
+  const maxP   = parseInt(document.querySelector('#dcat-online-players-pills .pill.active')?.dataset.val || '2');
+  G.dSource = 'catalog';
+  await createOnlineRoom({ myName, rounds, maxPlayers: maxP });
+}
+async function joinCatalogRoom() {
+  const code   = (document.getElementById('dcat-join-code').value.trim()).toUpperCase();
+  const myName = document.getElementById('dcat-join-name').value.trim() || 'Spieler 2';
+  await doJoinRoom(code, myName);
+}
+
 function toggleAccordion(id) {
   const sec = document.getElementById(id);
   if (sec) sec.classList.toggle('open');
@@ -4938,11 +5047,9 @@ function refreshAllAccordionVals() {
     ['acc-duel-grade',    'duel-grade-pills'],
     ['acc-duel-subject',  'duel-subject-pills'],
     ['acc-duel-diff',     'duel-diff-pills'],
-    ['acc-duel-source',   'duel-source-pills'],
     ['acc-online-grade',  'online-grade-pills'],
     ['acc-online-subject','online-subject-pills'],
     ['acc-online-diff',   'online-diff-pills'],
-    ['acc-online-source', 'online-source-pills'],
   ].forEach(([a, p]) => refreshAccordionVal(a, p));
 }
 
@@ -7688,14 +7795,14 @@ document.getElementById('modal-firebase').addEventListener('click', e => {
 });
 
 // ── create room ──
-async function createOnlineRoom() {
+async function createOnlineRoom(opts = {}) {
   if (!initFirebase()) { openFirebaseModal(); return; }
-  const myName = document.getElementById('online-my-name').value.trim() || 'Spieler 1';
+  const myName = opts.myName || document.getElementById('online-my-name').value.trim() || 'Spieler 1';
   const code = generateRoomCode();
   onlineRoomCode = code;
   onlineRole = 'host';
   onlineMySlot = 'p1';
-  onlineMaxPlayers = parseInt(document.querySelector('#online-maxplayers-pills .pill.active')?.dataset.val || '2');
+  onlineMaxPlayers = opts.maxPlayers || parseInt(document.querySelector('#online-maxplayers-pills .pill.active')?.dataset.val || '2');
   G.p1Name = myName;
   onlineMyAnswers = [];
   onlineWaitingForOpponent = false;
@@ -7706,7 +7813,7 @@ async function createOnlineRoom() {
   }
 
   try {
-    const totalRounds = parseInt(document.querySelector('#online-rounds-pills .pill.active')?.dataset.val || '1');
+    const totalRounds = opts.rounds || parseInt(document.querySelector('#online-rounds-pills .pill.active')?.dataset.val || '1');
     G.totalRounds = totalRounds; G.currentRound = 1; G.roundScores = [];
     await fbDB.ref('rooms/' + code).set({
       status: 'waiting',
@@ -7727,10 +7834,8 @@ async function createOnlineRoom() {
 }
 
 // ── join room ──
-async function joinOnlineRoom() {
+async function doJoinRoom(code, myName) {
   if (!initFirebase()) { openFirebaseModal(); return; }
-  const code   = (document.getElementById('join-code-input').value.trim()).toUpperCase();
-  const myName = document.getElementById('join-name-input').value.trim() || 'Spieler 2';
   if (code.length !== 6) { showToast('Bitte 6-stelligen Code eingeben', 'error'); return; }
   try {
     const snap = await fbDB.ref('rooms/' + code).once('value');
@@ -7739,7 +7844,6 @@ async function joinOnlineRoom() {
     if (room.status !== 'waiting') { showToast('Spiel läuft bereits', 'error'); return; }
     if (room.guestName)         { showToast('Raum bereits voll', 'error'); return; }
     onlineRoomCode = code;
-    // Find first empty slot
     const players = room.players || {};
     const maxP = room.maxPlayers || 2;
     let mySlot = null;
@@ -7759,6 +7863,11 @@ async function joinOnlineRoom() {
   } catch(e) {
     showToast('Fehler: ' + e.message, 'error');
   }
+}
+async function joinOnlineRoom() {
+  const code   = (document.getElementById('join-code-input').value.trim()).toUpperCase();
+  const myName = document.getElementById('join-name-input').value.trim() || 'Spieler 2';
+  await doJoinRoom(code, myName);
 }
 
 // ── waiting screen ──
