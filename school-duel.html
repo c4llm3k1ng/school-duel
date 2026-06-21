@@ -79,6 +79,17 @@
   .mode-back { display:none; align-items:center; gap:6px; margin-bottom:18px; cursor:pointer; color:var(--muted); font-size:.88rem; font-weight:600; width:fit-content; }
   .mode-back:hover { color:var(--accent); }
   .mode-back.visible { display:flex; }
+  .accordion-section { border-radius:10px; background:var(--surface2); margin-bottom:8px; overflow:hidden; }
+  .accordion-header { display:flex; align-items:center; padding:11px 14px; cursor:pointer; user-select:none; gap:8px; }
+  .accordion-header:active { opacity:.8; }
+  .accordion-label { font-size:.72rem; font-family:'Space Mono',monospace; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; flex:0 0 auto; }
+  .accordion-value { flex:1; font-size:.86rem; color:var(--text); text-align:right; padding-right:6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .accordion-arrow { font-size:1rem; color:var(--muted); transition:transform .2s; flex-shrink:0; }
+  .accordion-section.open .accordion-arrow { transform:rotate(90deg); }
+  .accordion-body { display:none; padding:0 12px 10px; }
+  .accordion-section.open .accordion-body { display:block; }
+  .accordion-body .pill-row { margin-bottom:6px; }
+  .accordion-body .label { margin-bottom:6px; }
 
   /* INPUTS */
   .form-input { width:100%; background:var(--surface2); border:1.5px solid var(--border); border-radius:9px; padding:10px 13px; color:var(--text); font-family:'Space Grotesk',sans-serif; font-size:.9rem; outline:none; transition:border-color .15s; }
@@ -808,61 +819,98 @@
     <div class="mode-back" id="back-solo" onclick="showSpielenLanding()">← Zurück</div>
     <div class="card">
       <button class="all-random-btn" onclick="randomizeAll('solo')">🎲 Alles zufällig auswählen</button>
-      <div class="label">Klassenstufe</div>
-      <div class="pill-row" id="grade-pills">
-        <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
-        <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
-        <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
-        <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
-        <div class="pill pill-action dice" onclick="randomizePills('grade-pills','grade')">🎲</div>
-        <div class="pill pill-action mix" onclick="setMixed('grade-pills','grade')">∼ Mix</div>
-      </div>
-      <div class="label">Fach</div>
-      <div class="pill-row" id="subject-pills">
-        <div class="pill" data-val="Mathematik">📐 Mathe</div>
-        <div class="pill" data-val="Deutsch">📖 Deutsch</div>
-        <div class="pill" data-val="Englisch">🌍 Englisch</div>
-        <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
-        <div class="pill" data-val="Biologie">🌿 Biologie</div>
-        <div class="pill" data-val="Physik">⚡ Physik</div>
-        <div class="pill" data-val="Chemie">🧪 Chemie</div>
-        <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
-        <div class="pill pill-action dice" onclick="randomizePills('subject-pills','subject')">🎲</div>
-        <div class="pill pill-action mix" onclick="setMixedSubject('subject-pills','subject','solo')">∼ Mix</div>
-      </div>
-      <div id="solo-subcategory-wrap" style="display:none;"></div>
-      <div class="label">Schwierigkeitsgrad</div>
-      <div class="pill-row" id="diff-pills">
-        <div class="pill" data-val="leicht">Leicht</div>
-        <div class="pill active" data-val="mittel">Mittel</div>
-        <div class="pill" data-val="schwer">Schwer</div>
-        <div class="pill pill-action dice" onclick="randomizePills('diff-pills','difficulty')">🎲</div>
-        <div class="pill pill-action mix" onclick="setMixedDiff('diff-pills','difficulty')">∼ Mix</div>
-      </div>
-      <div class="label">Fragenquelle</div>
-      <div class="pill-row" id="source-pills">
-        <div class="pill active" data-val="ai">🤖 KI generiert</div>
-        <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
-      </div>
-      <div id="solo-catalog-picker" style="display:none;">
-        <div class="label">Thema wählen</div>
-        <div class="topic-grid" id="solo-topic-grid"></div>
-        <div id="solo-topic-diff" style="display:none;">
-          <span class="topic-diff-back" onclick="resetTopicPicker('solo')">← Thema wechseln</span>
-          <div class="label" id="solo-topic-diff-label">Schwierigkeit</div>
-          <div class="pill-row" id="solo-topic-diff-pills">
-            <div class="pill" data-diff="leicht">Leicht</div>
-            <div class="pill" data-diff="mittel">Mittel</div>
-            <div class="pill" data-diff="schwer">Schwer</div>
-            <div class="pill" data-diff="gemischt">Gemischt</div>
+
+      <div class="accordion-section" id="acc-solo-grade">
+        <div class="accordion-header" onclick="toggleAccordion('acc-solo-grade')">
+          <span class="accordion-label">Klassenstufe</span>
+          <span class="accordion-value" id="acc-solo-grade-val">–</span>
+          <span class="accordion-arrow">›</span>
+        </div>
+        <div class="accordion-body">
+          <div class="pill-row" id="grade-pills">
+            <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
+            <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
+            <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
+            <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+            <div class="pill pill-action dice" onclick="randomizePills('grade-pills','grade')">🎲</div>
+            <div class="pill pill-action mix" onclick="setMixed('grade-pills','grade')">∼ Mix</div>
           </div>
         </div>
-        <div id="solo-topic-custom" style="display:none;">
-          <span class="topic-diff-back" onclick="resetTopicPicker('solo')">← Thema wechseln</span>
-          <div class="label">Eigener Katalog</div>
-          <select id="solo-catalog-select" class="form-input"></select>
+      </div>
+
+      <div class="accordion-section" id="acc-solo-subject">
+        <div class="accordion-header" onclick="toggleAccordion('acc-solo-subject')">
+          <span class="accordion-label">Fach</span>
+          <span class="accordion-value" id="acc-solo-subject-val">–</span>
+          <span class="accordion-arrow">›</span>
+        </div>
+        <div class="accordion-body">
+          <div class="pill-row" id="subject-pills">
+            <div class="pill" data-val="Mathematik">📐 Mathe</div>
+            <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+            <div class="pill" data-val="Englisch">🌍 Englisch</div>
+            <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+            <div class="pill" data-val="Biologie">🌿 Biologie</div>
+            <div class="pill" data-val="Physik">⚡ Physik</div>
+            <div class="pill" data-val="Chemie">🧪 Chemie</div>
+            <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+            <div class="pill pill-action dice" onclick="randomizePills('subject-pills','subject')">🎲</div>
+            <div class="pill pill-action mix" onclick="setMixedSubject('subject-pills','subject','solo')">∼ Mix</div>
+          </div>
+          <div id="solo-subcategory-wrap" style="display:none;"></div>
         </div>
       </div>
+
+      <div class="accordion-section" id="acc-solo-diff">
+        <div class="accordion-header" onclick="toggleAccordion('acc-solo-diff')">
+          <span class="accordion-label">Schwierigkeit</span>
+          <span class="accordion-value" id="acc-solo-diff-val">Mittel</span>
+          <span class="accordion-arrow">›</span>
+        </div>
+        <div class="accordion-body">
+          <div class="pill-row" id="diff-pills">
+            <div class="pill" data-val="leicht">Leicht</div>
+            <div class="pill active" data-val="mittel">Mittel</div>
+            <div class="pill" data-val="schwer">Schwer</div>
+            <div class="pill pill-action dice" onclick="randomizePills('diff-pills','difficulty')">🎲</div>
+            <div class="pill pill-action mix" onclick="setMixedDiff('diff-pills','difficulty')">∼ Mix</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-section" id="acc-solo-source">
+        <div class="accordion-header" onclick="toggleAccordion('acc-solo-source')">
+          <span class="accordion-label">Fragenquelle</span>
+          <span class="accordion-value" id="acc-solo-source-val">🤖 KI generiert</span>
+          <span class="accordion-arrow">›</span>
+        </div>
+        <div class="accordion-body">
+          <div class="pill-row" id="source-pills">
+            <div class="pill active" data-val="ai">🤖 KI generiert</div>
+            <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
+          </div>
+          <div id="solo-catalog-picker" style="display:none;">
+            <div class="label">Thema wählen</div>
+            <div class="topic-grid" id="solo-topic-grid"></div>
+            <div id="solo-topic-diff" style="display:none;">
+              <span class="topic-diff-back" onclick="resetTopicPicker('solo')">← Thema wechseln</span>
+              <div class="label" id="solo-topic-diff-label">Schwierigkeit</div>
+              <div class="pill-row" id="solo-topic-diff-pills">
+                <div class="pill" data-diff="leicht">Leicht</div>
+                <div class="pill" data-diff="mittel">Mittel</div>
+                <div class="pill" data-diff="schwer">Schwer</div>
+                <div class="pill" data-diff="gemischt">Gemischt</div>
+              </div>
+            </div>
+            <div id="solo-topic-custom" style="display:none;">
+              <span class="topic-diff-back" onclick="resetTopicPicker('solo')">← Thema wechseln</span>
+              <div class="label">Eigener Katalog</div>
+              <select id="solo-catalog-select" class="form-input"></select>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <button class="btn btn-primary" id="start-btn" disabled>Solo-Quiz starten →</button>
     </div>
   </div>
@@ -938,61 +986,98 @@
         <div class="pill" data-val="5">5 Runden</div>
       </div>
       <button class="all-random-btn" onclick="randomizeAll('duel')">🎲 Alles zufällig auswählen</button>
-      <div class="label">Klassenstufe</div>
-      <div class="pill-row" id="duel-grade-pills">
-        <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
-        <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
-        <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
-        <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
-        <div class="pill pill-action dice" onclick="randomizePills('duel-grade-pills','dGrade')">🎲</div>
-        <div class="pill pill-action mix" onclick="setMixed('duel-grade-pills','dGrade')">∼ Mix</div>
-      </div>
-      <div class="label">Fach</div>
-      <div class="pill-row" id="duel-subject-pills">
-        <div class="pill" data-val="Mathematik">📐 Mathe</div>
-        <div class="pill" data-val="Deutsch">📖 Deutsch</div>
-        <div class="pill" data-val="Englisch">🌍 Englisch</div>
-        <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
-        <div class="pill" data-val="Biologie">🌿 Biologie</div>
-        <div class="pill" data-val="Physik">⚡ Physik</div>
-        <div class="pill" data-val="Chemie">🧪 Chemie</div>
-        <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
-        <div class="pill pill-action dice" onclick="randomizePills('duel-subject-pills','dSubject')">🎲</div>
-        <div class="pill pill-action mix" onclick="setMixedSubject('duel-subject-pills','dSubject','duel')">∼ Mix</div>
-      </div>
-      <div id="duel-subcategory-wrap" style="display:none;"></div>
-      <div class="label">Schwierigkeit</div>
-      <div class="pill-row" id="duel-diff-pills">
-        <div class="pill" data-val="leicht">Leicht</div>
-        <div class="pill active" data-val="mittel">Mittel</div>
-        <div class="pill" data-val="schwer">Schwer</div>
-        <div class="pill pill-action dice" onclick="randomizePills('duel-diff-pills','dDifficulty')">🎲</div>
-        <div class="pill pill-action mix" onclick="setMixedDiff('duel-diff-pills','dDifficulty')">∼ Mix</div>
-      </div>
-      <div class="label">Fragenquelle</div>
-      <div class="pill-row" id="duel-source-pills">
-        <div class="pill active" data-val="ai">🤖 KI generiert</div>
-        <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
-      </div>
-      <div id="duel-catalog-picker" style="display:none;">
-        <div class="label">Thema wählen</div>
-        <div class="topic-grid" id="duel-topic-grid"></div>
-        <div id="duel-topic-diff" style="display:none;">
-          <span class="topic-diff-back" onclick="resetTopicPicker('duel')">← Thema wechseln</span>
-          <div class="label" id="duel-topic-diff-label">Schwierigkeit</div>
-          <div class="pill-row" id="duel-topic-diff-pills">
-            <div class="pill" data-diff="leicht">Leicht</div>
-            <div class="pill" data-diff="mittel">Mittel</div>
-            <div class="pill" data-diff="schwer">Schwer</div>
-            <div class="pill" data-diff="gemischt">Gemischt</div>
+
+      <div class="accordion-section" id="acc-duel-grade">
+        <div class="accordion-header" onclick="toggleAccordion('acc-duel-grade')">
+          <span class="accordion-label">Klassenstufe</span>
+          <span class="accordion-value" id="acc-duel-grade-val">–</span>
+          <span class="accordion-arrow">›</span>
+        </div>
+        <div class="accordion-body">
+          <div class="pill-row" id="duel-grade-pills">
+            <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
+            <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
+            <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
+            <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+            <div class="pill pill-action dice" onclick="randomizePills('duel-grade-pills','dGrade')">🎲</div>
+            <div class="pill pill-action mix" onclick="setMixed('duel-grade-pills','dGrade')">∼ Mix</div>
           </div>
         </div>
-        <div id="duel-topic-custom" style="display:none;">
-          <span class="topic-diff-back" onclick="resetTopicPicker('duel')">← Thema wechseln</span>
-          <div class="label">Eigener Katalog</div>
-          <select id="duel-catalog-select" class="form-input"></select>
+      </div>
+
+      <div class="accordion-section" id="acc-duel-subject">
+        <div class="accordion-header" onclick="toggleAccordion('acc-duel-subject')">
+          <span class="accordion-label">Fach</span>
+          <span class="accordion-value" id="acc-duel-subject-val">–</span>
+          <span class="accordion-arrow">›</span>
+        </div>
+        <div class="accordion-body">
+          <div class="pill-row" id="duel-subject-pills">
+            <div class="pill" data-val="Mathematik">📐 Mathe</div>
+            <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+            <div class="pill" data-val="Englisch">🌍 Englisch</div>
+            <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+            <div class="pill" data-val="Biologie">🌿 Biologie</div>
+            <div class="pill" data-val="Physik">⚡ Physik</div>
+            <div class="pill" data-val="Chemie">🧪 Chemie</div>
+            <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+            <div class="pill pill-action dice" onclick="randomizePills('duel-subject-pills','dSubject')">🎲</div>
+            <div class="pill pill-action mix" onclick="setMixedSubject('duel-subject-pills','dSubject','duel')">∼ Mix</div>
+          </div>
+          <div id="duel-subcategory-wrap" style="display:none;"></div>
         </div>
       </div>
+
+      <div class="accordion-section" id="acc-duel-diff">
+        <div class="accordion-header" onclick="toggleAccordion('acc-duel-diff')">
+          <span class="accordion-label">Schwierigkeit</span>
+          <span class="accordion-value" id="acc-duel-diff-val">Mittel</span>
+          <span class="accordion-arrow">›</span>
+        </div>
+        <div class="accordion-body">
+          <div class="pill-row" id="duel-diff-pills">
+            <div class="pill" data-val="leicht">Leicht</div>
+            <div class="pill active" data-val="mittel">Mittel</div>
+            <div class="pill" data-val="schwer">Schwer</div>
+            <div class="pill pill-action dice" onclick="randomizePills('duel-diff-pills','dDifficulty')">🎲</div>
+            <div class="pill pill-action mix" onclick="setMixedDiff('duel-diff-pills','dDifficulty')">∼ Mix</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-section" id="acc-duel-source">
+        <div class="accordion-header" onclick="toggleAccordion('acc-duel-source')">
+          <span class="accordion-label">Fragenquelle</span>
+          <span class="accordion-value" id="acc-duel-source-val">🤖 KI generiert</span>
+          <span class="accordion-arrow">›</span>
+        </div>
+        <div class="accordion-body">
+          <div class="pill-row" id="duel-source-pills">
+            <div class="pill active" data-val="ai">🤖 KI generiert</div>
+            <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
+          </div>
+          <div id="duel-catalog-picker" style="display:none;">
+            <div class="label">Thema wählen</div>
+            <div class="topic-grid" id="duel-topic-grid"></div>
+            <div id="duel-topic-diff" style="display:none;">
+              <span class="topic-diff-back" onclick="resetTopicPicker('duel')">← Thema wechseln</span>
+              <div class="label" id="duel-topic-diff-label">Schwierigkeit</div>
+              <div class="pill-row" id="duel-topic-diff-pills">
+                <div class="pill" data-diff="leicht">Leicht</div>
+                <div class="pill" data-diff="mittel">Mittel</div>
+                <div class="pill" data-diff="schwer">Schwer</div>
+                <div class="pill" data-diff="gemischt">Gemischt</div>
+              </div>
+            </div>
+            <div id="duel-topic-custom" style="display:none;">
+              <span class="topic-diff-back" onclick="resetTopicPicker('duel')">← Thema wechseln</span>
+              <div class="label">Eigener Katalog</div>
+              <select id="duel-catalog-select" class="form-input"></select>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <button class="btn btn-primary" id="duel-start-btn" disabled>Duell starten ⚔️</button>
     </div>
     </div><!-- /#duel-sub-local -->
@@ -1004,61 +1089,98 @@
         <input class="name-input" id="online-my-name" placeholder="z.B. Max" maxlength="16" style="width:100%;margin-bottom:18px;">
 
         <button class="all-random-btn" onclick="randomizeAll('online')">🎲 Alles zufällig auswählen</button>
-        <div class="label">Klassenstufe</div>
-        <div class="pill-row" id="online-grade-pills">
-          <div class="pill" data-val="5">Klasse 5</div><div class="pill" data-val="6">Klasse 6</div>
-          <div class="pill" data-val="7">Klasse 7</div><div class="pill" data-val="8">Klasse 8</div>
-          <div class="pill" data-val="9">Klasse 9</div><div class="pill" data-val="10">Klasse 10</div>
-          <div class="pill" data-val="11">Klasse 11</div><div class="pill" data-val="12">Klasse 12</div>
-          <div class="pill pill-action dice" onclick="randomizePills('online-grade-pills','dGrade')">🎲</div>
-          <div class="pill pill-action mix" onclick="setMixed('online-grade-pills','dGrade')">∼ Mix</div>
-        </div>
-        <div class="label">Fach</div>
-        <div class="pill-row" id="online-subject-pills">
-          <div class="pill" data-val="Mathematik">📐 Mathe</div>
-          <div class="pill" data-val="Deutsch">📖 Deutsch</div>
-          <div class="pill" data-val="Englisch">🌍 Englisch</div>
-          <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
-          <div class="pill" data-val="Biologie">🌿 Biologie</div>
-          <div class="pill" data-val="Physik">⚡ Physik</div>
-          <div class="pill" data-val="Chemie">🧪 Chemie</div>
-          <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
-          <div class="pill pill-action dice" onclick="randomizePills('online-subject-pills','dSubject')">🎲</div>
-          <div class="pill pill-action mix" onclick="setMixedSubject('online-subject-pills','dSubject','online')">∼ Mix</div>
-        </div>
-        <div id="online-subcategory-wrap" style="display:none;"></div>
-        <div class="label">Schwierigkeit</div>
-        <div class="pill-row" id="online-diff-pills">
-          <div class="pill" data-val="leicht">Leicht</div>
-          <div class="pill active" data-val="mittel">Mittel</div>
-          <div class="pill" data-val="schwer">Schwer</div>
-          <div class="pill pill-action dice" onclick="randomizePills('online-diff-pills','dDifficulty')">🎲</div>
-          <div class="pill pill-action mix" onclick="setMixedDiff('online-diff-pills','dDifficulty')">∼ Mix</div>
-        </div>
-        <div class="label">Fragenquelle</div>
-        <div class="pill-row" id="online-source-pills">
-          <div class="pill active" data-val="ai">🤖 KI generiert</div>
-          <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
-        </div>
-        <div id="online-catalog-picker" style="display:none;">
-          <div class="label">Thema wählen</div>
-          <div class="topic-grid" id="online-topic-grid"></div>
-          <div id="online-topic-diff" style="display:none;">
-            <span class="topic-diff-back" onclick="resetTopicPicker('online')">← Thema wechseln</span>
-            <div class="label" id="online-topic-diff-label">Schwierigkeit</div>
-            <div class="pill-row" id="online-topic-diff-pills">
-              <div class="pill" data-diff="leicht">Leicht</div>
-              <div class="pill" data-diff="mittel">Mittel</div>
-              <div class="pill" data-diff="schwer">Schwer</div>
-              <div class="pill" data-diff="gemischt">Gemischt</div>
+
+        <div class="accordion-section" id="acc-online-grade">
+          <div class="accordion-header" onclick="toggleAccordion('acc-online-grade')">
+            <span class="accordion-label">Klassenstufe</span>
+            <span class="accordion-value" id="acc-online-grade-val">–</span>
+            <span class="accordion-arrow">›</span>
+          </div>
+          <div class="accordion-body">
+            <div class="pill-row" id="online-grade-pills">
+              <div class="pill" data-val="5">Klasse 5</div><div class="pill" data-val="6">Klasse 6</div>
+              <div class="pill" data-val="7">Klasse 7</div><div class="pill" data-val="8">Klasse 8</div>
+              <div class="pill" data-val="9">Klasse 9</div><div class="pill" data-val="10">Klasse 10</div>
+              <div class="pill" data-val="11">Klasse 11</div><div class="pill" data-val="12">Klasse 12</div>
+              <div class="pill pill-action dice" onclick="randomizePills('online-grade-pills','dGrade')">🎲</div>
+              <div class="pill pill-action mix" onclick="setMixed('online-grade-pills','dGrade')">∼ Mix</div>
             </div>
           </div>
-          <div id="online-topic-custom" style="display:none;">
-            <span class="topic-diff-back" onclick="resetTopicPicker('online')">← Thema wechseln</span>
-            <div class="label">Eigener Katalog</div>
-            <select id="online-catalog-select" class="form-input"></select>
+        </div>
+
+        <div class="accordion-section" id="acc-online-subject">
+          <div class="accordion-header" onclick="toggleAccordion('acc-online-subject')">
+            <span class="accordion-label">Fach</span>
+            <span class="accordion-value" id="acc-online-subject-val">–</span>
+            <span class="accordion-arrow">›</span>
+          </div>
+          <div class="accordion-body">
+            <div class="pill-row" id="online-subject-pills">
+              <div class="pill" data-val="Mathematik">📐 Mathe</div>
+              <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+              <div class="pill" data-val="Englisch">🌍 Englisch</div>
+              <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+              <div class="pill" data-val="Biologie">🌿 Biologie</div>
+              <div class="pill" data-val="Physik">⚡ Physik</div>
+              <div class="pill" data-val="Chemie">🧪 Chemie</div>
+              <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+              <div class="pill pill-action dice" onclick="randomizePills('online-subject-pills','dSubject')">🎲</div>
+              <div class="pill pill-action mix" onclick="setMixedSubject('online-subject-pills','dSubject','online')">∼ Mix</div>
+            </div>
+            <div id="online-subcategory-wrap" style="display:none;"></div>
           </div>
         </div>
+
+        <div class="accordion-section" id="acc-online-diff">
+          <div class="accordion-header" onclick="toggleAccordion('acc-online-diff')">
+            <span class="accordion-label">Schwierigkeit</span>
+            <span class="accordion-value" id="acc-online-diff-val">Mittel</span>
+            <span class="accordion-arrow">›</span>
+          </div>
+          <div class="accordion-body">
+            <div class="pill-row" id="online-diff-pills">
+              <div class="pill" data-val="leicht">Leicht</div>
+              <div class="pill active" data-val="mittel">Mittel</div>
+              <div class="pill" data-val="schwer">Schwer</div>
+              <div class="pill pill-action dice" onclick="randomizePills('online-diff-pills','dDifficulty')">🎲</div>
+              <div class="pill pill-action mix" onclick="setMixedDiff('online-diff-pills','dDifficulty')">∼ Mix</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-section" id="acc-online-source">
+          <div class="accordion-header" onclick="toggleAccordion('acc-online-source')">
+            <span class="accordion-label">Fragenquelle</span>
+            <span class="accordion-value" id="acc-online-source-val">🤖 KI generiert</span>
+            <span class="accordion-arrow">›</span>
+          </div>
+          <div class="accordion-body">
+            <div class="pill-row" id="online-source-pills">
+              <div class="pill active" data-val="ai">🤖 KI generiert</div>
+              <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
+            </div>
+            <div id="online-catalog-picker" style="display:none;">
+              <div class="label">Thema wählen</div>
+              <div class="topic-grid" id="online-topic-grid"></div>
+              <div id="online-topic-diff" style="display:none;">
+                <span class="topic-diff-back" onclick="resetTopicPicker('online')">← Thema wechseln</span>
+                <div class="label" id="online-topic-diff-label">Schwierigkeit</div>
+                <div class="pill-row" id="online-topic-diff-pills">
+                  <div class="pill" data-diff="leicht">Leicht</div>
+                  <div class="pill" data-diff="mittel">Mittel</div>
+                  <div class="pill" data-diff="schwer">Schwer</div>
+                  <div class="pill" data-diff="gemischt">Gemischt</div>
+                </div>
+              </div>
+              <div id="online-topic-custom" style="display:none;">
+                <span class="topic-diff-back" onclick="resetTopicPicker('online')">← Thema wechseln</span>
+                <div class="label">Eigener Katalog</div>
+                <select id="online-catalog-select" class="form-input"></select>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="label">Anzahl Runden</div>
         <div class="pill-row" id="online-rounds-pills">
           <div class="pill active" data-val="1">1 Runde</div>
@@ -4751,11 +4873,41 @@ function triggerPrefetch(mode) {
   PF.promise.then(q => { if (PF.key === key) PF.result = q; }).catch(() => {});
 }
 
+function toggleAccordion(id) {
+  const sec = document.getElementById(id);
+  if (sec) sec.classList.toggle('open');
+}
+function refreshAccordionVal(accId, pillRowId) {
+  const valEl = document.getElementById(accId + '-val');
+  if (!valEl) return;
+  const active = [...document.querySelectorAll('#' + pillRowId + ' .pill:not(.pill-action).active')];
+  if (!active.length) { valEl.textContent = '–'; return; }
+  if (active.length === 1) { valEl.textContent = active[0].textContent.trim(); return; }
+  valEl.textContent = active.length + ' gewählt';
+}
+function refreshAllAccordionVals() {
+  [
+    ['acc-solo-grade',    'grade-pills'],
+    ['acc-solo-subject',  'subject-pills'],
+    ['acc-solo-diff',     'diff-pills'],
+    ['acc-solo-source',   'source-pills'],
+    ['acc-duel-grade',    'duel-grade-pills'],
+    ['acc-duel-subject',  'duel-subject-pills'],
+    ['acc-duel-diff',     'duel-diff-pills'],
+    ['acc-duel-source',   'duel-source-pills'],
+    ['acc-online-grade',  'online-grade-pills'],
+    ['acc-online-subject','online-subject-pills'],
+    ['acc-online-diff',   'online-diff-pills'],
+    ['acc-online-source', 'online-source-pills'],
+  ].forEach(([a, p]) => refreshAccordionVal(a, p));
+}
+
 function checkSoloReady() {
   const subjectOk = G.subject === 'gemischt' || !!(G.subject && G.subcategory);
   const aiOk  = G.source === 'ai' && !!G.grade && subjectOk;
   const catOk = G.source === 'catalog' && !!G.catalogId;
   document.getElementById('start-btn').disabled = !(aiOk || catOk);
+  refreshAllAccordionVals();
 }
 function checkDuelReady() {
   const subjectOk = G.dSubject === 'gemischt' || !!(G.dSubject && G.dSubcategory);
@@ -4763,6 +4915,7 @@ function checkDuelReady() {
   const catOk = G.dSource === 'catalog' && !!G.dCatalogId;
   const ready = !!(aiOk || catOk);
   document.getElementById('duel-start-btn').disabled = !ready;
+  refreshAllAccordionVals();
 }
 
 // ═══════════════════════════════════════════════════════
@@ -7037,6 +7190,7 @@ function randomizeAll(mode) {
   setTimeout(() => {
     const scRow = document.getElementById(scWrap + '-row');
     if (scRow) randomizeSubcat(scWrap + '-row', scKey);
+    refreshAllAccordionVals?.();
   }, 50);
 }
 
@@ -7446,6 +7600,7 @@ function checkOnlineReady() {
   const aiOk  = G.dSource === 'ai' && !!G.dGrade && subjectOk;
   const catOk = G.dSource === 'catalog' && !!G.dCatalogId;
   document.getElementById('online-create-btn').disabled = !(aiOk || catOk);
+  refreshAllAccordionVals();
 }
 
 // ── Firebase config modal ──
