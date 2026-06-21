@@ -6379,6 +6379,7 @@ function setCachedUser(u) { if (u) localStorage.setItem('sd_cached_user', JSON.s
 function clearCachedUser(){ localStorage.removeItem('sd_cached_user'); }
 
 function startOfflineSession() {
+  guestMode = true; // Schützt gegen spätes Firebase-onAuthStateChanged
   const cached = getCachedUser();
   currentUser = cached || null;
   if (cached) {
@@ -6404,7 +6405,16 @@ function initAuth() {
   }
 
   fbAuth = firebase.app('sd').auth();
+
+  // Fallback: Wenn Firebase nach 5 Sek. nicht antwortet → Offline-Session
+  const authTimeout = setTimeout(() => {
+    if (document.getElementById('screen-auth').classList.contains('active')) {
+      startOfflineSession();
+    }
+  }, 5000);
+
   fbAuth.onAuthStateChanged(async user => {
+    clearTimeout(authTimeout);
     if (user) {
       try {
         const snap = await fbDB.ref('users/' + user.uid).once('value');
@@ -6432,6 +6442,7 @@ function initAuth() {
 }
 
 function onUserLoggedIn() {
+  guestMode = false; // Echter Login – Gast-Modus beenden
   const badge = document.getElementById('user-badge');
   if (badge) { badge.textContent = '👤 ' + currentUser.username; badge.style.display = 'inline-flex'; }
   startChallengeListener();
@@ -6441,6 +6452,10 @@ function onUserLoggedIn() {
   }
 }
 
+// Verhindert, dass Firebase's async onAuthStateChanged eine laufende
+// Gast- oder Offline-Session überschreibt
+let guestMode = false;
+
 function onUserLoggedOut() {
   const badge = document.getElementById('user-badge');
   if (badge) badge.style.display = 'none';
@@ -6448,11 +6463,25 @@ function onUserLoggedOut() {
     try { fbDB.ref('challenges/' + (currentUser?.uid || '')).off('child_added'); } catch {}
     challengeDbListener = null;
   }
+  // Gast- oder Offline-Modus schützen – nicht zurück zum Auth-Screen
+  if (guestMode) return;
+  if (isOffline()) { startOfflineSession(); return; }
   showScreen('screen-auth');
 }
 
-function doLogout() { clearCachedUser(); if (fbAuth) fbAuth.signOut(); else { currentUser = null; onUserLoggedOut(); } }
-function continueAsGuest() { currentUser = null; showScreen('screen-home'); switchTab('spielen'); }
+function doLogout() {
+  guestMode = false;
+  clearCachedUser();
+  if (fbAuth) fbAuth.signOut();
+  else { currentUser = null; onUserLoggedOut(); }
+}
+
+function continueAsGuest() {
+  guestMode = true;
+  currentUser = null;
+  showScreen('screen-home');
+  switchTab('spielen');
+}
 
 function switchAuthTab(tab) {
   document.getElementById('auth-login').style.display    = tab === 'login'    ? 'block' : 'none';
