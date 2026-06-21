@@ -226,6 +226,16 @@
   /* CATALOG SELECT */
   .catalog-select-wrap { margin-bottom:16px; }
 
+  /* OFFLINE MODE */
+  .offline-banner { display:none; align-items:center; justify-content:center; gap:8px; background:rgba(255,138,56,.1); border:1.5px solid rgba(255,138,56,.3); color:#ff8a38; font-size:.82rem; font-weight:600; padding:10px 14px; border-radius:10px; margin-bottom:16px; text-align:center; }
+  .offline-banner.show { display:flex; }
+  .toggle-switch { width:46px; height:26px; border-radius:13px; background:var(--border); cursor:pointer; transition:background .2s; position:relative; flex-shrink:0; }
+  .toggle-switch.on { background:var(--accent); }
+  .toggle-switch::after { content:''; position:absolute; width:20px; height:20px; border-radius:10px; background:#fff; top:3px; left:3px; transition:left .2s; box-shadow:0 1px 4px rgba(0,0,0,.2); }
+  .toggle-switch.on::after { left:23px; }
+  .pill.pill-disabled { opacity:.35; cursor:not-allowed !important; pointer-events:none; }
+  .sub-tab.sub-tab-disabled { opacity:.35; cursor:not-allowed !important; pointer-events:none; }
+
   /* TOPIC CARD PICKER */
   .topic-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-bottom:12px; }
   .topic-card { background:var(--surface2); border:2px solid var(--border); border-radius:var(--radius); padding:18px 10px 14px; text-align:center; cursor:pointer; transition:all .15s; user-select:none; }
@@ -530,6 +540,18 @@
       </button>
     </div>
 
+    <!-- VERBINDUNG -->
+    <div class="settings-section">
+      <div class="settings-section-title">📡 Verbindung</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0;">
+        <div>
+          <div style="font-size:.88rem;font-weight:500;">Offline-Modus</div>
+          <div style="font-size:.76rem;color:var(--muted);margin-top:2px;">KI &amp; Online-Features deaktiviert</div>
+        </div>
+        <div class="toggle-switch" id="offline-toggle" onclick="toggleManualOffline()"></div>
+      </div>
+    </div>
+
     <!-- DIENSTE -->
     <div class="settings-section">
       <div class="settings-section-title">🔧 Dienste</div>
@@ -706,6 +728,7 @@
 <div class="screen" id="screen-home">
   <div class="logo large"><span class="s">School</span> <span class="d">Duel</span></div>
   <div class="tagline">Lerne spielend – fordere dein Wissen heraus</div>
+  <div id="offline-banner" class="offline-banner">✈️ Offline-Modus – nur Kataloge &amp; lokale Spiele verfügbar</div>
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
     <div id="user-badge" class="user-badge" style="display:none;" onclick="openProfileModal()">👤</div>
     <div style="display:flex;gap:8px;margin-left:auto;">
@@ -4338,6 +4361,7 @@ function showModeSetup(mode) {
   });
   if (mode === 'quickduel') renderQuickDuelFriends();
   if (mode === 'practice')  renderPracticeTab();
+  updateOfflineUI?.();
 }
 
 function showSpielenLanding() {
@@ -4999,6 +5023,7 @@ correct = 0-basierter Index der richtigen Antwort.`;
 }
 
 async function generateQuestionsAI() {
+  if (isOffline?.()) { showToast('✈️ Offline – bitte einen Katalog verwenden', 'error'); throw new Error('offline'); }
   const grade  = G.mode === 'solo' ? G.grade       : G.dGrade;
   const subj   = G.mode === 'solo' ? G.subject     : G.dSubject;
   const subcat = G.mode === 'solo' ? G.subcategory : G.dSubcategory;
@@ -5999,8 +6024,81 @@ function showToast(msg, type) {
   toastTimer = setTimeout(() => t.classList.remove('show'), 2400);
 }
 
+// ═══════════════════════════════════════════════════════
+// OFFLINE MODE
+// ═══════════════════════════════════════════════════════
+let manualOffline = JSON.parse(localStorage.getItem('sd_manual_offline') || 'false');
+
+function isOffline() { return manualOffline || !navigator.onLine; }
+
+function updateOfflineUI() {
+  const offline = isOffline();
+
+  // Banner
+  const banner = document.getElementById('offline-banner');
+  if (banner) banner.classList.toggle('show', offline);
+
+  // Settings-Toggle
+  const tog = document.getElementById('offline-toggle');
+  if (tog) tog.classList.toggle('on', manualOffline);
+
+  // AI-Source-Pills in allen Modi deaktivieren
+  ['source-pills','duel-source-pills','online-source-pills'].forEach(rowId => {
+    const row = document.getElementById(rowId);
+    if (!row) return;
+    const aiPill  = row.querySelector('.pill[data-val="ai"]');
+    const catPill = row.querySelector('.pill[data-val="catalog"]');
+    if (!aiPill) return;
+    if (offline) {
+      aiPill.classList.add('pill-disabled');
+      if (aiPill.classList.contains('active')) {
+        aiPill.classList.remove('active');
+        if (catPill) { catPill.classList.add('active'); catPill.click(); }
+      }
+    } else {
+      aiPill.classList.remove('pill-disabled');
+    }
+  });
+
+  // Online-Sub-Tabs in Duell & Schnellduell deaktivieren
+  ['subtab-btn-online','qd-subtab-btn-online'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (offline) {
+      el.classList.add('sub-tab-disabled');
+      // Falls gerade auf Online-Tab → zurück zu Lokal
+      if (el.classList.contains('active')) {
+        if (id === 'subtab-btn-online')    switchDuelSubTab('local');
+        if (id === 'qd-subtab-btn-online') switchQdSubTab('local');
+      }
+    } else {
+      el.classList.remove('sub-tab-disabled');
+    }
+  });
+}
+
+function toggleManualOffline() {
+  manualOffline = !manualOffline;
+  localStorage.setItem('sd_manual_offline', JSON.stringify(manualOffline));
+  updateOfflineUI();
+  showToast(manualOffline ? '✈️ Offline-Modus aktiviert' : '🌐 Online-Modus aktiv', manualOffline ? '' : 'success');
+}
+
+// Automatische Erkennung bei Netzwerkwechsel
+window.addEventListener('offline', () => {
+  updateOfflineUI();
+  showToast('📡 Keine Verbindung – Offline-Modus aktiv', 'error');
+});
+window.addEventListener('online', () => {
+  if (!manualOffline) {
+    updateOfflineUI();
+    showToast('🌐 Verbindung wiederhergestellt', 'success');
+  }
+});
+
 // Init — tabs vorbereiten (Auth wird am Ende gestartet, nach allen let-Deklarationen)
 switchTab('spielen');
+updateOfflineUI();
 
 // ═══════════════════════════════════════════════════════
 // AUTH + USER SYSTEM
