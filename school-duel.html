@@ -5656,22 +5656,96 @@ document.getElementById('review-duel-btn').addEventListener('click', () => {
 // ═══════════════════════════════════════════════════════
 function renderCatalogList() {
   const cats = getCatalogs();
-  const c    = document.getElementById('catalog-list-container');
-  if (!cats.length) {
-    c.innerHTML = '<div class="empty-state"><div class="es-icon">📭</div>Noch keine Kataloge.<br>Erstelle deinen ersten!</div>';
-    return;
+  const cont = document.getElementById('catalog-list-container');
+
+  const diffLabel = { leicht:'Leicht', mittel:'Mittel', schwer:'Schwer', gemischt:'Gemischt' };
+
+  // Built-in groups based on TOPIC_GROUPS
+  const builtinGroups = TOPIC_GROUPS.map(t => ({
+    ...t,
+    items: Object.fromEntries(
+      Object.entries(t.cats).map(([d, id]) => [d, cats.find(c => c.id === id)])
+    )
+  })).filter(g => Object.values(g.items).some(Boolean));
+
+  const customCats = cats.filter(c => !c.builtin);
+
+  let html = '';
+
+  // ── Integrierte Themenkarten ──────────────────────────
+  if (builtinGroups.length) {
+    html += '<div class="label" style="margin-bottom:10px;">Integrierte Inhalte</div>';
+    html += '<div class="topic-grid">';
+    builtinGroups.forEach(g => {
+      const total = g.items.gemischt?.questions?.length || 0;
+      html += `<div class="topic-card" onclick="toggleTopicGroup('tg-${g.id}',this)">
+        <span class="tc-icon">${g.icon}</span>
+        <span class="tc-label">${g.label}</span>
+        <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${total} Fragen</div>
+      </div>`;
+    });
+    html += '</div>';
+
+    // Aufklapp-Panels pro Thema
+    builtinGroups.forEach(g => {
+      html += `<div id="tg-${g.id}" style="display:none;margin-bottom:16px;">
+        <div style="font-size:.8rem;font-weight:600;margin-bottom:10px;">${g.icon} ${g.label}</div>
+        <div class="catalog-list">`;
+      ['leicht','mittel','schwer','gemischt'].forEach(d => {
+        const cat = g.items[d];
+        if (!cat) return;
+        html += `<div class="catalog-item">
+          <div>
+            <div class="ci-name">${diffLabel[d]}</div>
+            <div class="ci-meta">${cat.questions?.length || 0} Fragen</div>
+          </div>
+          <div class="catalog-item-actions">
+            <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen">▶️</div>
+          </div>
+        </div>`;
+      });
+      html += '</div></div>';
+    });
   }
-  c.innerHTML = '<div class="catalog-list">' + cats.map(cat =>
-    '<div class="catalog-item">' +
-      '<div><div class="ci-name">' + esc(cat.name) + (cat.builtin ? ' <span style="font-size:.65rem;background:rgba(108,99,255,.15);color:var(--accent);padding:1px 6px;border-radius:5px;vertical-align:middle;">eingebaut</span>' : '') + '</div>' +
-      '<div class="ci-meta">' + (cat.desc ? esc(cat.desc) : cat.questions.length + ' Frage' + (cat.questions.length !== 1 ? 'n' : '')) + '</div></div>' +
-      '<div class="catalog-item-actions">' +
-        '<div class="icon-btn play" onclick="playCatalog(\'' + cat.id + '\')" title="Spielen">▶️</div>' +
-        (cat.builtin ? '' : '<div class="icon-btn" onclick="editCatalog(\'' + cat.id + '\')" title="Bearbeiten">✏️</div>') +
-        (cat.builtin ? '' : '<div class="icon-btn del" onclick="deleteCatalog(\'' + cat.id + '\')" title="Löschen">🗑️</div>') +
-      '</div>' +
-    '</div>'
-  ).join('') + '</div>';
+
+  // ── Eigene Kataloge ───────────────────────────────────
+  if (customCats.length) {
+    html += '<div class="label" style="margin-top:20px;margin-bottom:10px;">Eigene Kataloge</div>';
+    html += '<div class="catalog-list">';
+    customCats.forEach(cat => {
+      html += `<div class="catalog-item">
+        <div>
+          <div class="ci-name">${esc(cat.name)}</div>
+          <div class="ci-meta">${cat.desc ? esc(cat.desc) : cat.questions.length + ' Frage' + (cat.questions.length !== 1 ? 'n' : '')}</div>
+        </div>
+        <div class="catalog-item-actions">
+          <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen">▶️</div>
+          <div class="icon-btn" onclick="editCatalog('${cat.id}')" title="Bearbeiten">✏️</div>
+          <div class="icon-btn del" onclick="deleteCatalog('${cat.id}')" title="Löschen">🗑️</div>
+        </div>
+      </div>`;
+    });
+    html += '</div>';
+  }
+
+  if (!builtinGroups.length && !customCats.length) {
+    html = '<div class="empty-state"><div class="es-icon">📭</div>Noch keine Kataloge.<br>Erstelle deinen ersten!</div>';
+  }
+
+  cont.innerHTML = html;
+}
+
+function toggleTopicGroup(id, cardEl) {
+  const panel   = document.getElementById(id);
+  if (!panel) return;
+  const wasOpen = panel.style.display !== 'none';
+  // Alle anderen schließen
+  document.querySelectorAll('[id^="tg-"]').forEach(p => { p.style.display = 'none'; });
+  document.querySelectorAll('#catalog-list-container .topic-card').forEach(c => c.classList.remove('tc-selected'));
+  if (!wasOpen) {
+    panel.style.display = 'block';
+    cardEl.classList.add('tc-selected');
+  }
 }
 
 function playCatalog(id) {
