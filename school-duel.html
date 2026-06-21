@@ -961,12 +961,12 @@
   <div id="tab-duel" style="display:none;">
     <div class="mode-back" id="back-duel" onclick="showSpielenLanding()">← Zurück</div>
     <div class="sub-tabs">
-      <div class="sub-tab active" id="subtab-btn-local" onclick="switchDuelSubTab('local')">⚔️ Lokal</div>
-      <div class="sub-tab" id="subtab-btn-online" onclick="switchDuelSubTab('online')">🌐 Online</div>
+      <div class="sub-tab active" id="subtab-btn-online" onclick="switchDuelSubTab('online')">🌐 Online</div>
+      <div class="sub-tab" id="subtab-btn-local" onclick="switchDuelSubTab('local')">⚔️ Lokal</div>
     </div>
 
     <!-- LOCAL DUEL (existing) -->
-    <div id="duel-sub-local">
+    <div id="duel-sub-local" style="display:none;">
     <div class="card">
       <div class="label">Spielernamen</div>
       <div class="name-row">
@@ -1083,7 +1083,7 @@
     </div><!-- /#duel-sub-local -->
 
     <!-- ONLINE DUEL -->
-    <div id="duel-sub-online" style="display:none;">
+    <div id="duel-sub-online">
       <div class="card">
         <div class="label">Dein Name</div>
         <input class="name-input" id="online-my-name" placeholder="z.B. Max" maxlength="16" style="width:100%;margin-bottom:18px;">
@@ -4637,9 +4637,14 @@ function startQuickDuel() {
 function setupPills(pid, key, cb) {
   document.querySelectorAll('#' + pid + ' .pill:not(.pill-action)').forEach(p => {
     p.addEventListener('click', () => {
+      const wasActive = p.classList.contains('active');
       document.querySelectorAll('#' + pid + ' .pill').forEach(x => x.classList.remove('active'));
-      p.classList.add('active');
-      G[key] = p.dataset.val;
+      if (wasActive) {
+        G[key] = null;
+      } else {
+        p.classList.add('active');
+        G[key] = p.dataset.val;
+      }
       if (cb) cb();
     });
   });
@@ -4696,49 +4701,88 @@ setupPills('duel-diff-pills',    'dDifficulty', checkDuelReady);
 // Subject pills wired manually to also render subcategories
 document.querySelectorAll('#subject-pills .pill').forEach(p => {
   p.addEventListener('click', () => {
+    const wasActive = p.classList.contains('active');
     document.querySelectorAll('#subject-pills .pill').forEach(x => x.classList.remove('active'));
-    p.classList.add('active');
-    G.subject = p.dataset.val;
-    renderSubcategoryPills('solo-subcategory-wrap', p.dataset.val, 'subcategory', checkSoloReady);
+    if (wasActive) {
+      G.subject = null;
+      const w = document.getElementById('solo-subcategory-wrap');
+      w.style.display = 'none'; w.innerHTML = '';
+      G.subcategory = null;
+    } else {
+      p.classList.add('active');
+      G.subject = p.dataset.val;
+      renderSubcategoryPills('solo-subcategory-wrap', p.dataset.val, 'subcategory', checkSoloReady);
+    }
+    checkSoloReady();
   });
 });
 document.querySelectorAll('#duel-subject-pills .pill').forEach(p => {
   p.addEventListener('click', () => {
+    const wasActive = p.classList.contains('active');
     document.querySelectorAll('#duel-subject-pills .pill').forEach(x => x.classList.remove('active'));
-    p.classList.add('active');
-    G.dSubject = p.dataset.val;
-    renderSubcategoryPills('duel-subcategory-wrap', p.dataset.val, 'dSubcategory', checkDuelReady);
+    if (wasActive) {
+      G.dSubject = null;
+      const w = document.getElementById('duel-subcategory-wrap');
+      w.style.display = 'none'; w.innerHTML = '';
+      G.dSubcategory = null;
+    } else {
+      p.classList.add('active');
+      G.dSubject = p.dataset.val;
+      renderSubcategoryPills('duel-subcategory-wrap', p.dataset.val, 'dSubcategory', checkDuelReady);
+    }
+    checkDuelReady();
   });
 });
 document.querySelectorAll('#online-subject-pills .pill').forEach(p => {
   p.addEventListener('click', () => {
+    const wasActive = p.classList.contains('active');
     document.querySelectorAll('#online-subject-pills .pill').forEach(x => x.classList.remove('active'));
-    p.classList.add('active');
-    G.dSubject = p.dataset.val;
-    renderSubcategoryPills('online-subcategory-wrap', p.dataset.val, 'dSubcategory', checkOnlineReady);
+    if (wasActive) {
+      G.dSubject = null;
+      const w = document.getElementById('online-subcategory-wrap');
+      w.style.display = 'none'; w.innerHTML = '';
+      G.dSubcategory = null;
+    } else {
+      p.classList.add('active');
+      G.dSubject = p.dataset.val;
+      renderSubcategoryPills('online-subcategory-wrap', p.dataset.val, 'dSubcategory', checkOnlineReady);
+    }
+    checkOnlineReady();
   });
 });
 
 // Source pills
 document.querySelectorAll('#source-pills .pill').forEach(p => {
   p.addEventListener('click', () => {
+    const wasActive = p.classList.contains('active');
     document.querySelectorAll('#source-pills .pill').forEach(x => x.classList.remove('active'));
-    p.classList.add('active');
-    G.source = p.dataset.val;
-    const picker = document.getElementById('solo-catalog-picker');
-    picker.style.display = G.source === 'catalog' ? 'block' : 'none';
-    if (G.source === 'catalog') initCatalogPicker('solo');
+    if (wasActive) {
+      G.source = null;
+      document.getElementById('solo-catalog-picker').style.display = 'none';
+    } else {
+      p.classList.add('active');
+      G.source = p.dataset.val;
+      const picker = document.getElementById('solo-catalog-picker');
+      picker.style.display = G.source === 'catalog' ? 'block' : 'none';
+      if (G.source === 'catalog') initCatalogPicker('solo');
+    }
     checkSoloReady();
   });
 });
 document.querySelectorAll('#duel-source-pills .pill').forEach(p => {
   p.addEventListener('click', () => {
+    const wasActive = p.classList.contains('active');
     document.querySelectorAll('#duel-source-pills .pill').forEach(x => x.classList.remove('active'));
-    p.classList.add('active');
-    G.dSource = p.dataset.val;
-    const picker = document.getElementById('duel-catalog-picker');
-    picker.style.display = G.dSource === 'catalog' ? 'block' : 'none';
-    if (G.dSource === 'catalog') initCatalogPicker('duel');
+    if (wasActive) {
+      G.dSource = null;
+      document.getElementById('duel-catalog-picker').style.display = 'none';
+    } else {
+      p.classList.add('active');
+      G.dSource = p.dataset.val;
+      const picker = document.getElementById('duel-catalog-picker');
+      picker.style.display = G.dSource === 'catalog' ? 'block' : 'none';
+      if (G.dSource === 'catalog') initCatalogPicker('duel');
+    }
     checkDuelReady();
   });
 });
@@ -7585,11 +7629,17 @@ setupPills('online-diff-pills',    'dDifficulty', checkOnlineReady);
 
 document.querySelectorAll('#online-source-pills .pill').forEach(p => {
   p.addEventListener('click', () => {
+    const wasActive = p.classList.contains('active');
     document.querySelectorAll('#online-source-pills .pill').forEach(x => x.classList.remove('active'));
-    p.classList.add('active');
-    G.dSource = p.dataset.val;
-    document.getElementById('online-catalog-picker').style.display = G.dSource === 'catalog' ? 'block' : 'none';
-    if (G.dSource === 'catalog') initCatalogPicker('online');
+    if (wasActive) {
+      G.dSource = null;
+      document.getElementById('online-catalog-picker').style.display = 'none';
+    } else {
+      p.classList.add('active');
+      G.dSource = p.dataset.val;
+      document.getElementById('online-catalog-picker').style.display = G.dSource === 'catalog' ? 'block' : 'none';
+      if (G.dSource === 'catalog') initCatalogPicker('online');
+    }
     checkOnlineReady();
   });
 });
