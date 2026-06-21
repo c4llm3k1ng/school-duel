@@ -1096,7 +1096,7 @@
       <h2>🔁 Meine Übungsfragen</h2>
       <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;color:var(--red);" onclick="clearHistory()">Verlauf löschen</button>
     </div>
-    <div style="font-size:.82rem;color:var(--muted);margin-bottom:14px;">Falsch beantwortete Fragen — gespeichert in deinem Browser, nur für dich.</div>
+    <div style="font-size:.82rem;color:var(--muted);margin-bottom:14px;">Gespielte Fragen nach Thema — falsch beantwortete hervorgehoben. Nur lokal gespeichert.</div>
     <div id="practice-stats" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;"></div>
     <div id="practice-list-container"></div>
   </div>
@@ -4666,6 +4666,11 @@ function pickTopic(mode, topicId, el) {
         p.classList.add('active');
         const topic = TOPIC_GROUPS.find(t => t.id === topicId);
         G[PICKER_CAT_KEY[mode]] = topic ? topic.cats[p.dataset.diff] : null;
+        // Subject für History-Gruppierung setzen
+        if (topic) {
+          if (mode === 'solo') G.subject = topic.label;
+          else if (mode === 'duel' || mode === 'online') G.dSubject = topic.label;
+        }
         PICKER_CHECK[mode]();
       };
     });
@@ -5496,56 +5501,147 @@ function saveGameToHistory(questions, answers, subject, subcategory, grade) {
   saveHistory(h);
 }
 
-function renderPracticeTab() {
-  const h = getHistory();
-  const all = Object.values(h);
-  const wrong = all.filter(q => q.timesWrong > 0).sort((a,b) => b.timesWrong - a.timesWrong);
-  const totalSeen = all.length;
-  const totalWrong = wrong.length;
+// Themen-Icons für die Praxis-Gruppenansicht
+const SUBJECT_ICONS = {
+  'Anime':'🎌','Fußball':'⚽','Musik':'🎵',
+  'Mathematik':'📐','Deutsch':'📖','Englisch':'🌍',
+  'Geschichte':'🏛️','Biologie':'🌿','Physik':'⚡',
+  'Chemie':'🧪','Allgemeinwissen':'🧠','Geographie':'🌍',
+  'Informatik':'💻','Sport':'🏃','Kunst':'🎨','Musik':'🎵'
+};
+function getPracticeIcon(s) { return SUBJECT_ICONS[s] || '📚'; }
 
-  // Stats cards
+let _practiceGroups = [];
+
+function renderPracticeTab() {
+  const h   = getHistory();
+  const all = Object.values(h);
+  const totalSeen  = all.length;
+  const totalWrong = all.filter(q => q.timesWrong > 0).length;
+
   document.getElementById('practice-stats').innerHTML =
     '<div class="card" style="text-align:center;padding:18px;">'
     + '<div style="font-size:1.8rem;font-weight:700;color:var(--accent);">' + totalSeen + '</div>'
     + '<div style="font-size:.8rem;color:var(--muted);">Fragen gesehen</div></div>'
     + '<div class="card" style="text-align:center;padding:18px;">'
     + '<div style="font-size:1.8rem;font-weight:700;color:var(--red);">' + totalWrong + '</div>'
-    + '<div style="font-size:.8rem;color:var(--muted);">davon falsch beantwortet</div></div>';
+    + '<div style="font-size:.8rem;color:var(--muted);">falsch beantwortet</div></div>';
 
-  const c = document.getElementById('practice-list-container');
-  if (!wrong.length) {
-    c.innerHTML = '<div class="empty-state"><div class="es-icon">🎉</div>Noch keine falsch beantworteten Fragen gespeichert.<br>Spiele eine Runde um Fragen hier zu sammeln!</div>';
+  const cont = document.getElementById('practice-list-container');
+  if (!all.length) {
+    cont.innerHTML = '<div class="empty-state"><div class="es-icon">🎮</div>Noch keine Fragen gespeichert.<br>Spiele eine Runde, um Fragen hier zu sammeln!</div>';
     return;
   }
 
-  // Group by subject
-  const bySubject = {};
-  wrong.forEach(q => {
-    const key = (q.subject || 'Sonstiges') + (q.subcategory ? ' · ' + q.subcategory : '');
-    if (!bySubject[key]) bySubject[key] = [];
-    bySubject[key].push(q);
+  // Nach Subject gruppieren (Fallback: topic → 'Sonstiges')
+  const groups = {};
+  all.forEach(q => {
+    const key = q.subject || q.topic || 'Sonstiges';
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(q);
+  });
+
+  // Sortierung: bekannte Katalog-Themen zuerst, dann Rest
+  const catalogOrder = TOPIC_GROUPS.map(t => t.label);
+  _practiceGroups = Object.keys(groups).sort((a, b) => {
+    const ai = catalogOrder.indexOf(a), bi = catalogOrder.indexOf(b);
+    if (ai >= 0 && bi < 0) return -1;
+    if (bi >= 0 && ai < 0) return 1;
+    if (ai >= 0 && bi >= 0) return ai - bi;
+    return a.localeCompare(b, 'de');
   });
 
   let html = '';
-  Object.entries(bySubject).forEach(([subj, qs]) => {
-    html += '<div class="card" style="margin-bottom:12px;">'
-      + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">'
-      + '<div style="font-weight:700;font-size:.95rem;">' + esc(subj) + '</div>'
-      + '<div style="font-size:.78rem;color:var(--red);">' + qs.length + ' Fragen</div></div>'
-      + qs.slice(0,3).map(q =>
-          '<div style="font-size:.83rem;color:var(--muted);padding:6px 0;border-bottom:1px solid var(--border);">'
-          + '<span style="font-family:\'Space Mono\',monospace;font-size:.7rem;color:var(--red);margin-right:6px;">✗×' + q.timesWrong + '</span>'
-          + esc(q.question.slice(0,70)) + (q.question.length > 70 ? '…' : '') + '</div>'
-        ).join('')
-      + (qs.length > 3 ? '<div style="font-size:.78rem;color:var(--muted);padding-top:6px;">+ ' + (qs.length-3) + ' weitere…</div>' : '')
-      + '</div>';
+
+  // ── Level 1: Themenkarten ──────────────────────────────
+  html += '<div class="label" style="margin-bottom:10px;">Thema wählen</div>';
+  html += '<div class="topic-grid">';
+  _practiceGroups.forEach((key, i) => {
+    const qs        = groups[key];
+    const wrongCnt  = qs.filter(q => q.timesWrong > 0).length;
+    const icon      = getPracticeIcon(key);
+    html += `<div class="topic-card" onclick="togglePracticeGroup(${i},this)">
+      <span class="tc-icon">${icon}</span>
+      <span class="tc-label">${esc(key)}</span>
+      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${qs.length} Fragen${wrongCnt > 0 ? ` &nbsp;·&nbsp; <span style="color:var(--red);">${wrongCnt} falsch</span>` : ''}</div>
+    </div>`;
+  });
+  html += '</div>';
+
+  // ── Level 2: Fragen-Panels (per Thema, zunächst hidden) ──
+  _practiceGroups.forEach((key, i) => {
+    const qs       = groups[key].sort((a, b) => b.timesWrong - a.timesWrong || b.lastSeen - a.lastSeen);
+    const wrongQs  = qs.filter(q => q.timesWrong > 0);
+    const icon     = getPracticeIcon(key);
+
+    html += `<div id="prac-panel-${i}" style="display:none;margin-bottom:16px;">
+      <div style="font-weight:700;font-size:.95rem;margin-bottom:10px;">${icon} ${esc(key)}</div>`;
+
+    if (wrongQs.length > 0) {
+      html += `<button class="btn btn-primary" style="margin-bottom:14px;padding:11px;" onclick="startPracticeSessionFor(${i})">
+        🔁 Falsche Fragen üben (${Math.min(8, wrongQs.length)} von ${wrongQs.length})
+      </button>`;
+    }
+
+    html += '<div style="display:flex;flex-direction:column;gap:10px;">';
+    qs.forEach(q => {
+      const wrong = q.timesWrong > 0;
+      html += `<div style="background:var(--surface2);border:1.5px solid ${wrong ? 'rgba(255,71,87,.3)' : 'var(--border)'};border-radius:var(--radius);padding:14px 16px;">
+        <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;">
+          <span style="font-size:.72rem;font-weight:700;flex-shrink:0;margin-top:2px;${wrong ? 'color:var(--red)' : 'color:var(--green)'};">${wrong ? '✗×' + q.timesWrong : '✓'}</span>
+          <div style="font-size:.87rem;font-weight:600;line-height:1.45;">${esc(q.question)}</div>
+        </div>
+        <div style="font-size:.82rem;color:var(--green);margin-bottom:${q.explanation ? '6px' : '0'};">→ ${esc(q.options?.[q.correct] ?? '')}</div>
+        ${q.explanation ? `<div style="font-size:.78rem;color:var(--muted);line-height:1.45;">💡 ${esc(q.explanation)}</div>` : ''}
+      </div>`;
+    });
+    html += '</div></div>';
   });
 
-  html += '<button class="btn btn-primary" onclick="startPracticeSession()" style="margin-bottom:6px;">🔁 Übungsrunde starten (' + Math.min(8, wrong.length) + ' Fragen)</button>';
-  if (wrong.length > 8) {
-    html += '<div style="font-size:.78rem;color:var(--muted);text-align:center;margin-top:4px;">Fragen mit den meisten Fehlern werden bevorzugt</div>';
+  // Globaler "Alle falsch üben"-Button ganz unten
+  if (totalWrong > 0) {
+    html += `<button class="btn btn-secondary" style="margin-top:6px;" onclick="startPracticeSession()">
+      🔁 Alle falsch üben (${totalWrong} Fragen)
+    </button>`;
   }
-  c.innerHTML = html;
+
+  cont.innerHTML = html;
+}
+
+function togglePracticeGroup(i, cardEl) {
+  const panel  = document.getElementById('prac-panel-' + i);
+  if (!panel) return;
+  const wasOpen = panel.style.display !== 'none';
+  document.querySelectorAll('[id^="prac-panel-"]').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('#practice-list-container .topic-card').forEach(c => c.classList.remove('tc-selected'));
+  if (!wasOpen) {
+    panel.style.display = 'block';
+    cardEl.classList.add('tc-selected');
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
+function startPracticeSessionFor(i) {
+  const subject = _practiceGroups[i];
+  if (!subject) return;
+  const h = getHistory();
+  const wrong = Object.values(h)
+    .filter(q => q.timesWrong > 0 && (q.subject || q.topic || 'Sonstiges') === subject)
+    .sort((a, b) => b.timesWrong - a.timesWrong);
+  if (!wrong.length) { showToast('Keine falsch beantworteten Fragen in diesem Thema', 'error'); return; }
+  const pick = wrong.slice(0, 8);
+  G.mode = 'solo'; G.source = 'practice';
+  G.subject = subject; G.subcategory = null; G.grade = '–';
+  G.solo = { correct:0, points:0, answers:[] };
+  G.questions = pick.map(q => ({
+    question:q.question, options:q.options, correct:q.correct,
+    explanation:q.explanation, topic:q.topic || q.subject
+  }));
+  G.current = 0;
+  document.getElementById('q-total').textContent = G.questions.length;
+  setupQuizUI();
+  showScreen('screen-quiz');
+  renderQuestion();
 }
 
 function startPracticeSession() {
@@ -5856,9 +5952,14 @@ function toggleTopicGroup(id, cardEl) {
 function playCatalog(id) {
   const cat = getCatalogs().find(c => c.id === id);
   if (!cat || !cat.questions.length) { showToast('Katalog ist leer', 'error'); return; }
+  // Subject für History-Gruppierung aus Katalog-ID ableiten
+  const group = TOPIC_GROUPS.find(t => Object.values(t.cats).includes(id));
   G.mode = 'solo';
   G.source = 'catalog';
   G.catalogId = id;
+  G.subject = group ? group.label : (cat.name || '');
+  G.subcategory = null;
+  G.grade = '–';
   G.solo = { correct: 0, points: 0, answers: [] };
   startQuiz();
 }
