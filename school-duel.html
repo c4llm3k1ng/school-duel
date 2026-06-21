@@ -688,6 +688,7 @@
       </div>
     </div>
     <button class="btn btn-secondary" onclick="continueAsGuest()" style="margin-top:6px;">Als Gast spielen</button>
+    <button class="btn btn-secondary" id="offline-play-btn" onclick="startOfflineSession()" style="display:none;margin-top:6px;border-color:#ff8a38;color:#ff8a38;">✈️ Offline spielen</button>
     <button class="btn btn-secondary" id="pwa-install-btn" style="display:none;margin-top:6px;border-color:var(--accent);color:var(--accent);" onclick="installPWA()">📲 App installieren</button>
     <div id="pwa-ios-hint" style="display:none;text-align:center;font-size:.78rem;color:var(--muted);margin-top:10px;padding:10px;background:var(--surface2);border-radius:10px;">
       📲 <strong>iPhone:</strong> Teilen-Symbol → "Zum Home-Bildschirm"
@@ -6034,9 +6035,13 @@ function isOffline() { return manualOffline || !navigator.onLine; }
 function updateOfflineUI() {
   const offline = isOffline();
 
-  // Banner
+  // Banner im Home-Screen
   const banner = document.getElementById('offline-banner');
   if (banner) banner.classList.toggle('show', offline);
+
+  // "Offline spielen"-Button im Auth-Screen
+  const offBtn = document.getElementById('offline-play-btn');
+  if (offBtn) offBtn.style.display = offline ? 'block' : 'none';
 
   // Settings-Toggle
   const tog = document.getElementById('offline-toggle');
@@ -6093,6 +6098,8 @@ window.addEventListener('online', () => {
   if (!manualOffline) {
     updateOfflineUI();
     showToast('🌐 Verbindung wiederhergestellt', 'success');
+    // Firebase-Auth nachholen, falls noch nicht initialisiert
+    if (!fbAuth) initAuth();
   }
 });
 
@@ -6105,8 +6112,36 @@ updateOfflineUI();
 // ═══════════════════════════════════════════════════════
 // (auth vars declared at top of script)
 
+// Cached user für Offline-Betrieb
+function getCachedUser()  { try { return JSON.parse(localStorage.getItem('sd_cached_user') || 'null'); } catch { return null; } }
+function setCachedUser(u) { if (u) localStorage.setItem('sd_cached_user', JSON.stringify(u)); }
+function clearCachedUser(){ localStorage.removeItem('sd_cached_user'); }
+
+function startOfflineSession() {
+  const cached = getCachedUser();
+  currentUser = cached || null;
+  if (cached) {
+    const badge = document.getElementById('user-badge');
+    if (badge) { badge.textContent = '👤 ' + cached.username; badge.style.display = 'inline-flex'; }
+  }
+  if (document.getElementById('screen-auth').classList.contains('active')) {
+    showScreen('screen-home');
+    switchTab('spielen');
+    showToast(cached ? '👤 ' + cached.username + ' (Offline)' : '✈️ Gast-Modus (Offline)', '');
+  }
+}
+
 function initAuth() {
-  if (!initFirebase()) return;
+  // Offline beim Start → Firebase überspringen, Offline-Session starten
+  if (isOffline()) { startOfflineSession(); return; }
+
+  if (!initFirebase()) {
+    // Firebase nicht konfiguriert – Auth-Screen bleibt, Gast-Button verfügbar
+    // Falls trotzdem offline → Gast
+    if (isOffline()) startOfflineSession();
+    return;
+  }
+
   fbAuth = firebase.app('sd').auth();
   fbAuth.onAuthStateChanged(async user => {
     if (user) {
@@ -6115,9 +6150,19 @@ function initAuth() {
         const profile = snap.val();
         if (profile) {
           currentUser = { uid: user.uid, ...profile };
+          setCachedUser(currentUser); // für Offline cachen
           onUserLoggedIn();
         } else { fbAuth.signOut(); }
-      } catch { fbAuth.signOut(); }
+      } catch {
+        // DB-Read fehlgeschlagen (z.B. gerade offline gegangen)
+        const cached = getCachedUser();
+        if (cached && cached.uid === user.uid) {
+          currentUser = cached;
+          onUserLoggedIn();
+        } else {
+          fbAuth.signOut();
+        }
+      }
     } else {
       currentUser = null;
       onUserLoggedOut();
@@ -6145,7 +6190,7 @@ function onUserLoggedOut() {
   showScreen('screen-auth');
 }
 
-function doLogout() { if (fbAuth) fbAuth.signOut(); }
+function doLogout() { clearCachedUser(); if (fbAuth) fbAuth.signOut(); else { currentUser = null; onUserLoggedOut(); } }
 function continueAsGuest() { currentUser = null; showScreen('screen-home'); switchTab('spielen'); }
 
 function switchAuthTab(tab) {
