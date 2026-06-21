@@ -461,6 +461,21 @@
   </div>
 </div>
 
+<!-- ═══════════════════════════ BERICHTE MODAL ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-berichte">
+  <div class="modal" style="max-height:85vh;overflow-y:auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;position:sticky;top:0;background:var(--surface);padding-bottom:10px;border-bottom:1px solid var(--border);">
+      <h2 style="font-size:1.05rem;">📋 Gemeldete Fragen</h2>
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-secondary" style="width:auto;padding:6px 12px;font-size:.78rem;" onclick="copyAllReports()">Alle kopieren</button>
+        <button onclick="closeBerichteModal()" style="border:none;background:none;color:var(--muted);font-size:1.2rem;cursor:pointer;">✕</button>
+      </div>
+    </div>
+    <div id="berichte-list"></div>
+    <button class="btn btn-secondary" style="margin-top:14px;color:var(--red);border-color:var(--red);font-size:.82rem;" onclick="clearLocalReports()">🗑️ Alle löschen</button>
+  </div>
+</div>
+
 <!-- ═══════════════════════════ FIREBASE CONFIG MODAL ═══════════════════════════ -->
 <div class="modal-backdrop hidden" id="modal-firebase">
   <div class="modal">
@@ -560,6 +575,15 @@
       </button>
       <button class="settings-btn" onclick="closeSettingsModal();openSupabaseModal()">
         <span class="sb-icon">🟢</span><span class="sb-label">Supabase konfigurieren</span><span class="sb-arrow">›</span>
+      </button>
+    </div>
+
+    <!-- BERICHTE (versteckt, nur sichtbar wenn Einträge vorhanden) -->
+    <div class="settings-section" id="berichte-settings-section" style="display:none;margin-bottom:0;padding-bottom:0;border-bottom:none;">
+      <button class="settings-btn" onclick="closeSettingsModal();openBerichteModal()" style="color:var(--gold);">
+        <span class="sb-icon">📋</span>
+        <span class="sb-label">Gemeldete Fragen</span>
+        <span id="berichte-badge" style="font-size:.7rem;background:rgba(245,200,66,.2);color:var(--gold);padding:2px 8px;border-radius:50px;font-weight:700;"></span>
       </button>
     </div>
   </div>
@@ -5759,6 +5783,137 @@ function skipReport() {
   showNextReport();
 }
 
+// ── LOKALE BERICHTE ────────────────────────────────────────────
+function getLocalReports()  { try { return JSON.parse(localStorage.getItem('sd_reports') || '[]'); } catch { return []; } }
+function saveLocalReports(r){ localStorage.setItem('sd_reports', JSON.stringify(r)); }
+
+function saveReportLocally(q, problem, correction) {
+  const entry = {
+    id:          Date.now(),
+    reportedAt:  new Date().toLocaleString('de-DE'),
+    question:    q.question,
+    options:     q.options,
+    correct:     q.correct,
+    explanation: q.explanation || '',
+    topic:       q.topic || '',
+    subject:     G.subject || G.dSubject || '',
+    grade:       String(G.grade || G.dGrade || ''),
+    problem,
+    correction
+  };
+  // Lokal speichern
+  const r = getLocalReports();
+  r.unshift(entry);
+  saveLocalReports(r);
+  updateBerichteBadge();
+  // In Firebase speichern (für geräteübergreifenden Zugriff)
+  try {
+    if (fbDB) fbDB.ref('reports/' + entry.id).set(entry).catch(() => {});
+  } catch {}
+}
+
+function updateBerichteBadge() {
+  const count   = getLocalReports().length;
+  const section = document.getElementById('berichte-settings-section');
+  const badge   = document.getElementById('berichte-badge');
+  if (section) section.style.display = count > 0 ? '' : 'none';
+  if (badge)   badge.textContent     = count > 0 ? count + ' offen' : '';
+}
+
+async function openBerichteModal() {
+  document.getElementById('modal-berichte').classList.remove('hidden');
+  const list = document.getElementById('berichte-list');
+  list.innerHTML = '<div style="text-align:center;padding:20px;color:var(--muted);">Lade Berichte…</div>';
+
+  // Lokale Berichte
+  let reports = getLocalReports();
+
+  // Firebase-Berichte laden und zusammenführen (nur wenn verfügbar)
+  if (fbDB) {
+    try {
+      const snap = await fbDB.ref('reports').orderByChild('id').once('value');
+      const fbReports = [];
+      snap.forEach(child => { fbReports.push(child.val()); });
+      // Zusammenführen: Firebase hat Vorrang, lokale Duplikate filtern
+      const localIds = new Set(reports.map(r => r.id));
+      fbReports.forEach(r => { if (!localIds.has(r.id)) reports.push(r); });
+      // Auch lokal cachen
+      saveLocalReports(reports);
+      updateBerichteBadge();
+    } catch {}
+  }
+
+  // Nach Datum sortieren (neueste zuerst)
+  reports = reports.sort((a, b) => b.id - a.id);
+
+  if (!reports.length) {
+    list.innerHTML = '<div class="empty-state" style="padding:20px 0;"><div class="es-icon">✅</div>Keine offenen Berichte.</div>';
+  } else {
+    list.innerHTML = reports.map((r, i) => `
+      <div style="border:1.5px solid var(--border);border-radius:var(--radius);padding:14px;margin-bottom:12px;position:relative;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:8px;">
+          <div style="font-size:.7rem;color:var(--muted);font-family:'Space Mono',monospace;">${esc(r.reportedAt)}${r.subject ? ' · ' + esc(r.subject) : ''}${r.grade && r.grade !== '–' ? ' · Kl. ' + esc(r.grade) : ''}</div>
+          <button onclick="copyOneReport(${i})" style="border:1px solid var(--border);background:var(--surface2);border-radius:6px;padding:3px 8px;font-size:.72rem;cursor:pointer;flex-shrink:0;color:var(--muted);">📋 Kopieren</button>
+        </div>
+        <div style="font-weight:600;font-size:.9rem;margin-bottom:8px;line-height:1.45;">${esc(r.question)}</div>
+        <div style="font-size:.8rem;margin-bottom:4px;">
+          ${r.options ? r.options.map((o, j) => `<span style="${j === r.correct ? 'color:var(--green);font-weight:600;' : 'color:var(--muted);'}">${'ABCD'[j]}) ${esc(o)}</span>`).join(' &nbsp; ') : ''}
+        </div>
+        <div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border);font-size:.83rem;">
+          <div style="color:var(--red);margin-bottom:4px;"><strong>Problem:</strong> ${esc(r.problem)}</div>
+          ${r.correction ? `<div style="color:var(--accent);"><strong>Korrektur:</strong> ${esc(r.correction)}</div>` : ''}
+        </div>
+      </div>`).join('');
+  }
+
+  document.getElementById('modal-berichte').classList.remove('hidden');
+}
+
+function closeBerichteModal() { document.getElementById('modal-berichte').classList.add('hidden'); }
+document.getElementById('modal-berichte').addEventListener('click', e => {
+  if (e.target === document.getElementById('modal-berichte')) closeBerichteModal();
+});
+
+function copyOneReport(i) {
+  const r = getLocalReports()[i];
+  if (!r) return;
+  const text = formatReportText(r);
+  navigator.clipboard?.writeText(text).then(() => showToast('Kopiert ✓', 'success'))
+    .catch(() => showToast('Kopieren fehlgeschlagen', 'error'));
+}
+
+function copyAllReports() {
+  const reports = getLocalReports();
+  if (!reports.length) { showToast('Keine Berichte vorhanden', 'error'); return; }
+  const text = reports.map(formatReportText).join('\n' + '─'.repeat(40) + '\n');
+  navigator.clipboard?.writeText(text).then(() => showToast('Alle kopiert ✓', 'success'))
+    .catch(() => showToast('Kopieren fehlgeschlagen', 'error'));
+}
+
+function formatReportText(r) {
+  const opts = r.options ? r.options.map((o, j) => `${' ABCD'[j]}) ${o}${j === r.correct ? ' ✓' : ''}`).join('\n') : '';
+  return [
+    `Frage: ${r.question}`,
+    opts ? `Optionen:\n${opts}` : '',
+    r.explanation ? `Erklärung: ${r.explanation}` : '',
+    r.topic   ? `Thema: ${r.topic}` : '',
+    r.subject ? `Fach: ${r.subject}` : '',
+    `Problem: ${r.problem}`,
+    r.correction ? `Korrekturvorschlag: ${r.correction}` : '',
+    `Gemeldet: ${r.reportedAt}`
+  ].filter(Boolean).join('\n');
+}
+
+function clearLocalReports() {
+  if (!confirm('Alle Berichte wirklich löschen (lokal + Firebase)?')) return;
+  saveLocalReports([]);
+  updateBerichteBadge();
+  try { if (fbDB) fbDB.ref('reports').remove().catch(() => {}); } catch {}
+  openBerichteModal();
+  showToast('Berichte gelöscht', '');
+}
+// ───────────────────────────────────────────────────────────────
+
 async function submitReport() {
   const problem    = document.getElementById('report-problem').value.trim();
   const correction = document.getElementById('report-correction').value.trim();
@@ -5766,6 +5921,10 @@ async function submitReport() {
   const { q } = pendingReports[0];
   document.getElementById('modal-report').classList.add('hidden');
 
+  // Immer lokal speichern
+  saveReportLocally(q, problem, correction);
+
+  // Zusätzlich an Supabase senden (wenn konfiguriert)
   if (initSupabase()) {
     try {
       await sbClient.from('reports').insert({
@@ -5775,10 +5934,10 @@ async function submitReport() {
         subject: G.subject || G.dSubject || '',
         grade:   String(G.grade || G.dGrade || '')
       });
-      showToast('Bericht gesendet ✓', 'success');
-    } catch(e) { showToast('Supabase-Fehler: ' + e.message, 'error'); }
+      showToast('Bericht gespeichert ✓', 'success');
+    } catch(e) { showToast('Lokal gespeichert (Supabase: ' + e.message + ')', ''); }
   } else {
-    showToast('Supabase nicht konfiguriert — Bericht nicht gespeichert', 'error');
+    showToast('Bericht lokal gespeichert ✓', 'success');
   }
   pendingReports.shift();
   showNextReport();
@@ -6207,6 +6366,7 @@ window.addEventListener('online', () => {
 // Init — tabs vorbereiten (Auth wird am Ende gestartet, nach allen let-Deklarationen)
 switchTab('spielen');
 updateOfflineUI();
+updateBerichteBadge();
 
 // ═══════════════════════════════════════════════════════
 // AUTH + USER SYSTEM
@@ -6396,12 +6556,12 @@ document.getElementById('modal-profile').addEventListener('click', e => { if (e.
 // ═══════════════════════════════════════════════════════
 async function openSettingsModal() {
   document.getElementById('central-key-section').style.display = 'none';
-  // Check if central key exists
   try {
     const snap = await fbDB.ref('config/geminiKey').once('value');
     const hasCentral = !!(snap.val());
     document.getElementById('central-key-badge').style.display = hasCentral ? 'inline' : 'none';
   } catch { document.getElementById('central-key-badge').style.display = 'none'; }
+  updateBerichteBadge();
   document.getElementById('modal-settings').classList.remove('hidden');
 }
 function closeSettingsModal() { document.getElementById('modal-settings').classList.add('hidden'); }
