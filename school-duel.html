@@ -7421,7 +7421,7 @@ const GRADES = ['5','6','7','8','9','10','11','12'];
 const SUBJECTS = Object.keys(SUBCATEGORIES);
 
 function randomizePills(pillsId, gKey) {
-  const pills = document.querySelectorAll('#' + pillsId + ' .pill:not([data-val="gemischt"])');
+  const pills = document.querySelectorAll('#' + pillsId + ' .pill:not([data-val="gemischt"]):not(.pill-action)');
   if (!pills.length) return;
   const pick = pills[Math.floor(Math.random() * pills.length)];
   pills.forEach(p => p.classList.remove('active'));
@@ -7970,7 +7970,6 @@ document.querySelectorAll('#online-maxplayers-pills .pill').forEach(p => {
 
 // ── online pill setup ──
 setupPills('online-grade-pills',   'dGrade',      checkOnlineReady);
-setupPills('online-subject-pills', 'dSubject',    checkOnlineReady);
 setupPills('online-diff-pills',    'dDifficulty', checkOnlineReady);
 
 document.querySelectorAll('#online-source-pills .pill').forEach(p => {
