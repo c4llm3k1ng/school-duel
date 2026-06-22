@@ -1833,6 +1833,8 @@ const DEFAULT_FB_CONFIG = {
   storageBucket: "school-duel.appspot.com"
 };
 const QB_MAX = 800;
+const PER_ROUND = 5;   // gespielte Fragen pro Runde
+const GEN_COUNT = 10;  // pro KI-Generierung erzeugte Fragen (Pool wächst schneller)
 
 let fbApp = null, fbDB = null, fbAuth = null;
 let libData = [];
@@ -5672,8 +5674,8 @@ async function startQuiz() {
       if (typeof FB_MITTEL !== 'undefined') pool.push(...FB_MITTEL);
       if (typeof MU_LEICHT !== 'undefined') pool.push(...MU_LEICHT);
       if (typeof MU_MITTEL !== 'undefined') pool.push(...MU_MITTEL);
-      if (pool.length >= 8) {
-        G.questions = shuffleOptions(pool.sort(() => Math.random() - .5).slice(0, 8).map(stripAnswerHint));
+      if (pool.length >= PER_ROUND) {
+        G.questions = shuffleOptions(pool.sort(() => Math.random() - .5).slice(0, PER_ROUND).map(stripAnswerHint));
         showToast('KI-Limit erreicht – Fragen aus eingebautem Katalog', '');
         document.getElementById('q-total').textContent = G.questions.length;
         setupQuizUI();
@@ -5714,7 +5716,7 @@ async function loadQuestions() {
   if (src === 'catalog') {
     const cat = getCatalogs().find(c => c.id === catId);
     if (!cat || !cat.questions.length) throw new Error('Katalog leer');
-    let qs = [...cat.questions].sort(() => Math.random() - .5).slice(0, 8);
+    let qs = [...cat.questions].sort(() => Math.random() - .5).slice(0, PER_ROUND);
     if (cat.builtin) qs = qs.map(stripAnswerHint);
     return qs;
   }
@@ -5725,19 +5727,19 @@ async function loadQuestions() {
   if (subcat) {
     const banked = await loadFromQuestionBank(grade, subj, subcat);
     const poolSize = banked ? banked.length : 0;
-    if (poolSize >= 8) {
+    if (poolSize >= PER_ROUND) {
       document.getElementById('loading-text').textContent = '📖 Aus Bibliothek geladen…';
 
       // Pick 8 unplayed questions first
       const played = getPlayedSet(grade, subj, subcat);
       const unplayed = banked.filter(q => !played.has(q.question.slice(0, 80)));
       let toPlay;
-      if (unplayed.length >= 8) {
-        toPlay = unplayed.sort(() => Math.random() - .5).slice(0, 8);
+      if (unplayed.length >= PER_ROUND) {
+        toPlay = unplayed.sort(() => Math.random() - .5).slice(0, PER_ROUND);
       } else {
         // All played → reset and start over
         resetPlayedSet(grade, subj, subcat);
-        toPlay = banked.sort(() => Math.random() - .5).slice(0, 8);
+        toPlay = banked.sort(() => Math.random() - .5).slice(0, PER_ROUND);
         showToast('Alle ' + poolSize + ' Fragen gespielt – von vorne!', '');
       }
       addToPlayedSet(grade, subj, subcat, toPlay);
@@ -5763,8 +5765,8 @@ async function loadQuestions() {
   } catch (e) {
     if (/^Gast-Modus:/.test(e.message || '')) throw e; // Gast-Hinweis erhalten
     for (const f of [{ subj, grade }, { subj }, {}]) {
-      const mix = await loadMixFromBank(8, f);
-      if (mix && mix.length >= 8) {
+      const mix = await loadMixFromBank(PER_ROUND, f);
+      if (mix && mix.length >= PER_ROUND) {
         showToast('KI gerade ausgelastet – Fragen aus der Bibliothek', '');
         return mix;
       }
@@ -5780,10 +5782,10 @@ async function _fetchQuestions(grade, subj, subcat, diff, attempt = 1) {
   const MAX_ATTEMPTS = 3;
 
   const subcatLine = subcat && subcat !== 'Allgemein' ? `- Themenbereich: ${subcat}\n` : '';
-  const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle 8 Multiple-Choice-Quizfragen:
+  const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle ${GEN_COUNT} Multiple-Choice-Quizfragen:
 - Klassenstufe: ${grade}. Klasse
 - Fach: ${subj}
-${subcatLine}- Schwierigkeit: ${diff === 'gemischt' ? 'gemischt (variiere leicht/mittel/schwer über die 8 Fragen)' : diff}
+${subcatLine}- Schwierigkeit: ${diff === 'gemischt' ? 'gemischt (variiere leicht/mittel/schwer über die ' + GEN_COUNT + ' Fragen)' : diff}
 
 Regeln: 4 Antwortoptionen (A-D), nur eine korrekt. Lehrplangerecht. Kurze Erklärung. Themen variieren.
 Antworte NUR mit einem JSON-Array ohne Markdown:
@@ -5866,8 +5868,8 @@ async function generateQuestionsAI() {
   // zusammenstellen. Das braucht keinen API-Key – funktioniert also auch für Gäste
   // und ist für alle sofort & kostenlos.
   if (isMixed || isMulti) {
-    const fromBank = await loadMixFromBank(8, { subj, grade, subcat });
-    if (fromBank && fromBank.length >= 8) return fromBank;
+    const fromBank = await loadMixFromBank(PER_ROUND, { subj, grade, subcat });
+    if (fromBank && fromBank.length >= PER_ROUND) return fromBank;
   }
 
   // Ab hier wäre Live-Generierung nötig – das können Gäste nicht (Zentralkey geschützt).
@@ -5887,7 +5889,7 @@ async function generateQuestionsAI() {
   const questions = await _fetchQuestions(grade[0], subj[0], subcat[0], diff[0]);
   const tagged = questions.map(q => ({ ...q, _grade: grade[0], _subject: subj[0], _subcategory: subcat[0] }));
   if (subcat[0] && subcat[0] !== 'gemischt') saveToQuestionBank(grade[0], subj[0], subcat[0], questions);
-  return tagged;
+  return tagged.slice(0, PER_ROUND);
 }
 
 async function generateMultiAI(grades, subjects, subcats, diffs) {
@@ -5898,9 +5900,9 @@ async function generateMultiAI(grades, subjects, subcats, diffs) {
   const gradeList = grades.join(', ') + '. Klasse';
   const subjList = subjects.join(', ');
   const subcatList = subcats.length > 1 ? 'verschiedene Themenbereiche (' + subcats.join(', ') + ')' : (subcats[0] || 'Allgemein');
-  const diffList = diffs.length > 1 ? 'gemischt (variiere ' + diffs.join(', ') + ' über die 8 Fragen)' : diffs[0];
+  const diffList = diffs.length > 1 ? 'gemischt (variiere ' + diffs.join(', ') + ' über die ' + PER_ROUND + ' Fragen)' : diffs[0];
 
-  const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle 8 abwechslungsreiche Multiple-Choice-Quizfragen:
+  const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle ${PER_ROUND} abwechslungsreiche Multiple-Choice-Quizfragen:
 - Fach: ${subjList}
 - Klassenstufe: ${gradeList}
 - Themenbereich: ${subcatList}
@@ -5965,11 +5967,11 @@ async function generateMixedAI(subj, subcat, grade, diff) {
   let subcatHint = subjIsMixed ? 'je Fach passend' : (subcatIsMixed ? 'verschiedene Themenbereiche (' + availSubs.join(', ') + ')' : (subcatArray[0] || 'Allgemein'));
   let subjHint   = subjIsMixed   ? 'verschiedene Schulfächer (' + SUBJECTS.join(', ') + ')' : subjArray.join(', ');
 
-  const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle 8 abwechslungsreiche Multiple-Choice-Quizfragen:
+  const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle ${PER_ROUND} abwechslungsreiche Multiple-Choice-Quizfragen:
 - Fach: ${subjHint}
 - Klassenstufe: ${gradeHint}
 - Themenbereich: ${subcatHint}
-- Schwierigkeit: ${diffArray.includes('gemischt') || diffArray[0] === 'gemischt' ? 'gemischt (variiere leicht/mittel/schwer über die 8 Fragen)' : (diffArray.length > 1 ? 'variiere: ' + diffArray.join(', ') : (diffArray[0] || 'mittel'))}
+- Schwierigkeit: ${diffArray.includes('gemischt') || diffArray[0] === 'gemischt' ? 'gemischt (variiere leicht/mittel/schwer über die ' + PER_ROUND + ' Fragen)' : (diffArray.length > 1 ? 'variiere: ' + diffArray.join(', ') : (diffArray[0] || 'mittel'))}
 
 Antworte NUR mit einem JSON-Array. Jedes Objekt hat genau diese Felder:
 {"question":"...","options":["A","B","C","D"],"correct":0,"explanation":"...","topic":"...","_grade":"7","_subject":"Mathematik","_subcategory":"Algebra"}
@@ -6775,7 +6777,7 @@ function openKatalogQuestions(topicIdx, diffIdx) {
 
 // ── Üben-Session starten ─────────────────────────────────────
 function _startPQ(questions) {
-  const pick = questions.slice(0,8);
+  const pick = questions.slice(0, PER_ROUND);
   if (!pick.length) { showToast('Keine falschen Fragen', 'error'); return; }
   G.mode='solo'; G.source='practice';
   G.subject = _pSelSubj||'Übung'; G.subcategory=null; G.grade=_pSelGrade||'–';
@@ -9113,7 +9115,7 @@ async function loadFromQuestionBank(grade, subj, subcat) {
   try {
     const snap = await fbDB.ref(qbPath(grade, subj, subcat)).once('value');
     const data = snap.val();
-    if (data && Array.isArray(data.questions) && data.questions.length >= 8) {
+    if (data && Array.isArray(data.questions) && data.questions.length >= PER_ROUND) {
       return data.questions.map(q => ({ ...q, correct: Math.max(0, Math.min(3, parseInt(q.answer ?? q.correct, 10) || 0)) }));
     }
   } catch(e) {}
@@ -9184,8 +9186,8 @@ function _renderLibrary() {
           +   ' · ' + remaining + ' ungesehen'
           + '</div>'
           + '<div class="catalog-item-actions" style="display:flex;gap:6px;flex:none;">'
-          +   '<div class="icon-btn play" title="8 zufällige spielen" onclick="playFromBank(' + idx + ')"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>'
-          +   '<div class="icon-btn" title="8 neue Fragen hinzufügen" style="font-size:.8rem;" onclick="addToBank(' + idx + ')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>'
+          +   '<div class="icon-btn play" title="5 zufällige spielen" onclick="playFromBank(' + idx + ')"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>'
+          +   '<div class="icon-btn" title="10 neue Fragen hinzufügen" style="font-size:.8rem;" onclick="addToBank(' + idx + ')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>'
           +   '<div class="icon-btn del" title="Pool löschen" onclick="deleteFromBank(' + idx + ')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>'
           + '</div></div>';
       });
@@ -9244,11 +9246,11 @@ async function addToBank(idx) {
   const { subj, subcat, grade } = libData[idx];
   const apiKey = localStorage.getItem('sd_api_key');
   if (!apiKey) { openApiKeyModal(); return; }
-  showToast('KI generiert 8 neue Fragen…', '');
+  showToast('KI generiert ' + GEN_COUNT + ' neue Fragen…', '');
   try {
     const newQs = await _fetchQuestions(grade, subj, subcat, 'mittel');
     await saveToQuestionBank(grade, subj, subcat, newQs);
-    showToast('8 Fragen zum Pool hinzugefügt ✓', 'success');
+    showToast(newQs.length + ' Fragen generiert ✓', 'success');
     refreshLibrary();
   } catch(e) { showToast('Fehler: ' + e.message, 'error'); }
 }
