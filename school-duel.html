@@ -5623,24 +5623,90 @@ correct = 0-basierter Index der richtigen Antwort.`;
 
 async function generateQuestionsAI() {
   if (isOffline?.()) { showToast('✈️ Offline – bitte einen Katalog verwenden', 'error'); throw new Error('offline'); }
-  const grade  = G.mode === 'solo' ? G.grade       : G.dGrade;
-  const subj   = G.mode === 'solo' ? G.subject     : G.dSubject;
-  const subcat = G.mode === 'solo' ? G.subcategory : G.dSubcategory;
-  const diff   = G.mode === 'solo' ? G.difficulty  : G.dDifficulty;
+  let grade  = G.mode === 'solo' ? G.grade       : G.dGrade;
+  let subj   = G.mode === 'solo' ? G.subject     : G.dSubject;
+  let subcat = G.mode === 'solo' ? G.subcategory : G.dSubcategory;
+  let diff   = G.mode === 'solo' ? G.difficulty  : G.dDifficulty;
 
-  // Handle mixed modes
-  const gradeIsMixed  = grade  === 'gemischt';
-  const subcatIsMixed = subcat === 'gemischt';
-  const subjIsMixed   = subj   === 'gemischt';
+  // Normalize to arrays
+  grade = Array.isArray(grade) ? grade : [grade];
+  subj = Array.isArray(subj) ? subj : [subj];
+  subcat = Array.isArray(subcat) ? subcat : [subcat];
+  diff = Array.isArray(diff) ? diff : [diff];
+
+  // Check for gemischt
+  const gradeIsMixed  = grade.includes('gemischt');
+  const subcatIsMixed = subcat.includes('gemischt');
+  const subjIsMixed   = subj.includes('gemischt');
 
   if (gradeIsMixed || subcatIsMixed || subjIsMixed) {
     return generateMixedAI(subj, subcat, grade, diff);
   }
 
-  const questions = await _fetchQuestions(grade, subj, subcat, diff);
-  const tagged = questions.map(q => ({ ...q, _grade: grade, _subject: subj, _subcategory: subcat }));
-  if (subcat && subcat !== 'gemischt') saveToQuestionBank(grade, subj, subcat, questions);
+  // If multiple options, use generateMultiAI
+  if (grade.length > 1 || subj.length > 1 || subcat.length > 1 || diff.length > 1) {
+    return generateMultiAI(grade, subj, subcat, diff);
+  }
+
+  const questions = await _fetchQuestions(grade[0], subj[0], subcat[0], diff[0]);
+  const tagged = questions.map(q => ({ ...q, _grade: grade[0], _subject: subj[0], _subcategory: subcat[0] }));
+  if (subcat[0] && subcat[0] !== 'gemischt') saveToQuestionBank(grade[0], subj[0], subcat[0], questions);
   return tagged;
+}
+
+async function generateMultiAI(grades, subjects, subcats, diffs) {
+  const keyData = await getEffectiveApiKey();
+  if (!keyData) { openApiKeyModal(); throw new Error('Kein API-Key gesetzt.'); }
+  const { key: apiKey, provider } = keyData;
+
+  const gradeList = grades.join(', ') + '. Klasse';
+  const subjList = subjects.join(', ');
+  const subcatList = subcats.length > 1 ? 'verschiedene Themenbereiche (' + subcats.join(', ') + ')' : (subcats[0] || 'Allgemein');
+  const diffList = diffs.length > 1 ? 'gemischt (variiere ' + diffs.join(', ') + ' über die 8 Fragen)' : diffs[0];
+
+  const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle 8 abwechslungsreiche Multiple-Choice-Quizfragen:
+- Fach: ${subjList}
+- Klassenstufe: ${gradeList}
+- Themenbereich: ${subcatList}
+- Schwierigkeit: ${diffList}
+
+Verteile die Fragen gleichmäßig über die verschiedenen Optionen. Antworte NUR mit einem JSON-Array. Jedes Objekt hat genau diese Felder:
+{"question":"...","options":["A","B","C","D"],"correct":0,"explanation":"...","topic":"...","_grade":"7","_subject":"Mathematik","_subcategory":"Algebra"}
+correct = 0-basierter Index der richtigen Antwort (0=A, 1=B, 2=C, 3=D).
+
+Passe _grade, _subject und _subcategory je Frage individuell an die tatsächliche Frage an.
+Keine Erklärungen außerhalb des JSON!`;
+
+  let text = '';
+  if (provider === 'gemini' || !provider) {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ contents:[{parts:[{text: prompt}]}], generationConfig:{temperature:0.8,maxOutputTokens:8192} })
+    });
+    const d = await res.json();
+    if (d.error) throw new Error(d.error.message);
+    text = d.candidates?.[0]?.content?.parts?.[0]?.text || '';
+  } else {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method:'POST',
+      headers:{ 'Content-Type':'application/json', 'x-api-key':apiKey, 'anthropic-version':'2023-06-01' },
+      body: JSON.stringify({ model:'claude-3-5-sonnet-20241022', max_tokens:8192, messages:[{role:'user',content:prompt}] })
+    });
+    const d = await res.json();
+    if (d.error) throw new Error(d.error.message);
+    text = d.content?.[0]?.text || '';
+  }
+
+  const jsonStr = text.match(/\[[\s\S]*\]/)?.[0] || text;
+  let questions = [];
+  try {
+    questions = JSON.parse(jsonStr);
+    if (!Array.isArray(questions)) throw new Error('keine array');
+    questions.forEach((q, i) => { if (!q.question || !q.options || q.correct === undefined) throw new Error('invalid q'); });
+  } catch(e) {
+    throw new Error('JSON-Fehler: ' + e.message);
+  }
+  return questions;
 }
 
 async function generateMixedAI(subj, subcat, grade, diff) {
@@ -5648,20 +5714,26 @@ async function generateMixedAI(subj, subcat, grade, diff) {
   if (!keyData) { openApiKeyModal(); throw new Error('Kein API-Key gesetzt.'); }
   const { key: apiKey, provider } = keyData;
 
-  const gradeIsMixed  = grade  === 'gemischt';
-  const subcatIsMixed = subcat === 'gemischt';
-  const subjIsMixed   = subj   === 'gemischt';
-  const availSubs = subjIsMixed ? [] : (SUBCATEGORIES[subj] || []);
+  const gradeIsMixed  = Array.isArray(grade) ? grade.includes('gemischt') : grade === 'gemischt';
+  const subcatIsMixed = Array.isArray(subcat) ? subcat.includes('gemischt') : subcat === 'gemischt';
+  const subjIsMixed   = Array.isArray(subj) ? subj.includes('gemischt') : subj === 'gemischt';
+  const subjVal = Array.isArray(subj) ? subj[0] : subj;
+  const availSubs = subjIsMixed ? [] : (SUBCATEGORIES[subjVal] || []);
 
-  let gradeHint  = gradeIsMixed  ? 'verschiedene Klassenstufen (5–12), je Frage passend'   : grade + '. Klasse';
-  let subcatHint = subjIsMixed ? 'je Fach passend' : (subcatIsMixed ? 'verschiedene Themenbereiche (' + availSubs.join(', ') + ')' : (subcat || 'Allgemein'));
-  let subjHint   = subjIsMixed   ? 'verschiedene Schulfächer (' + SUBJECTS.join(', ') + ')' : subj;
+  const gradeArray = Array.isArray(grade) ? grade : [grade];
+  const subcatArray = Array.isArray(subcat) ? subcat : [subcat];
+  const subjArray = Array.isArray(subj) ? subj : [subj];
+  const diffArray = Array.isArray(diff) ? diff : [diff];
+
+  let gradeHint  = gradeIsMixed  ? 'verschiedene Klassenstufen (5–12), je Frage passend'   : gradeArray.join(', ') + '. Klasse';
+  let subcatHint = subjIsMixed ? 'je Fach passend' : (subcatIsMixed ? 'verschiedene Themenbereiche (' + availSubs.join(', ') + ')' : (subcatArray[0] || 'Allgemein'));
+  let subjHint   = subjIsMixed   ? 'verschiedene Schulfächer (' + SUBJECTS.join(', ') + ')' : subjArray.join(', ');
 
   const prompt = `Du bist ein Lehrer für deutsche Schulen. Erstelle 8 abwechslungsreiche Multiple-Choice-Quizfragen:
 - Fach: ${subjHint}
 - Klassenstufe: ${gradeHint}
 - Themenbereich: ${subcatHint}
-- Schwierigkeit: ${diff === 'gemischt' ? 'gemischt (variiere leicht/mittel/schwer über die 8 Fragen)' : (diff || 'mittel')}
+- Schwierigkeit: ${diffArray.includes('gemischt') || diffArray[0] === 'gemischt' ? 'gemischt (variiere leicht/mittel/schwer über die 8 Fragen)' : (diffArray.length > 1 ? 'variiere: ' + diffArray.join(', ') : (diffArray[0] || 'mittel'))}
 
 Antworte NUR mit einem JSON-Array. Jedes Objekt hat genau diese Felder:
 {"question":"...","options":["A","B","C","D"],"correct":0,"explanation":"...","topic":"...","_grade":"7","_subject":"Mathematik","_subcategory":"Algebra"}
