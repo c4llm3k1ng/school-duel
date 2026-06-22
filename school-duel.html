@@ -844,8 +844,6 @@
     <div id="solo-schul" style="display:none;">
       <div class="duel-type-back" onclick="showSoloLanding()">← Zurück zur Auswahl</div>
       <div class="card">
-        <button class="all-random-btn" onclick="randomizeAll('solo')">🎲 Alles zufällig auswählen</button>
-
         <div class="accordion-section" id="acc-solo-grade">
           <div class="accordion-header" onclick="toggleAccordion('acc-solo-grade')">
             <span class="accordion-label">Klassenstufe</span>
@@ -902,6 +900,11 @@
               <div class="pill pill-action mix" onclick="setMixedDiff('diff-pills','difficulty')">∼ Mix</div>
             </div>
           </div>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;">
+          <div></div>
+          <button class="all-random-btn" onclick="randomizeAll('solo')">🎲 Zufallsauswahl</button>
         </div>
 
         <button class="btn btn-primary" id="start-btn" disabled>Solo-Quiz starten →</button>
@@ -1125,7 +1128,6 @@
           <div class="pill" data-val="3">3 Runden</div>
           <div class="pill" data-val="5">5 Runden</div>
         </div>
-        <button class="all-random-btn" onclick="randomizeAll('duel')">🎲 Alles zufällig auswählen</button>
 
         <div class="accordion-section" id="acc-duel-grade">
           <div class="accordion-header" onclick="toggleAccordion('acc-duel-grade')">
@@ -1185,6 +1187,11 @@
           </div>
         </div>
 
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;">
+          <div></div>
+          <button class="all-random-btn" onclick="randomizeAll('duel')">🎲 Zufallsauswahl</button>
+        </div>
+
         <button class="btn btn-primary" id="duel-start-btn" disabled>Duell starten ⚔️</button>
       </div>
       </div><!-- /#duel-sub-local -->
@@ -1194,7 +1201,6 @@
         <div class="card">
           <div class="label">Dein Name</div>
           <input class="name-input" id="online-my-name" placeholder="z.B. Max" maxlength="16" style="width:100%;margin-bottom:18px;">
-          <button class="all-random-btn" onclick="randomizeAll('online')">🎲 Alles zufällig auswählen</button>
 
           <div class="accordion-section" id="acc-online-grade">
             <div class="accordion-header" onclick="toggleAccordion('acc-online-grade')">
@@ -1252,6 +1258,11 @@
                 <div class="pill pill-action mix" onclick="setMixedDiff('online-diff-pills','dDifficulty')">∼ Mix</div>
               </div>
             </div>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;">
+            <div></div>
+            <button class="all-random-btn" onclick="randomizeAll('online')">🎲 Zufallsauswahl</button>
           </div>
 
           <div class="label">Anzahl Runden</div>
