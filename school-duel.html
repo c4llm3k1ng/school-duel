@@ -1834,6 +1834,7 @@ const QB_MAX = 504;
 let fbApp = null, fbDB = null, fbAuth = null;
 let libData = [];
 let onlineRoomCode = null, onlineRole = null, onlineMySlot = 'p1', onlineMaxPlayers = 2;
+let onlineOpponentUid = null, onlineH2HRecorded = false;
 let onlineRoomRef = null, onlineLastRoom = null;
 let onlineMyAnswers = [], onlineWaitingForOpponent = false;
 let currentUser = null, challengeDbListener = null;
@@ -5027,6 +5028,7 @@ async function renderQuickDuelFriends(containerId = 'qd-friends-list', qdType = 
 async function sendQuickCatalogChallenge(targetUid, targetUsername) {
   if (!currentUser) { showToast('Bitte erst anmelden', 'error'); return; }
   if (!initFirebase()) { openFirebaseModal(); return; }
+  onlineOpponentUid = targetUid; onlineH2HRecorded = false;
   const catalogId = G.qdCatalogId;
   if (!catalogId) { showToast('Bitte erst ein Thema wählen', 'error'); return; }
   const totalRounds = parseInt(document.querySelector('#qd-cat-online-rounds-pills .pill.active')?.dataset.val || '1');
@@ -5063,6 +5065,7 @@ async function sendQuickChallenge(targetUid, targetUsername, roundsArg) {
   if (!currentUser) { showToast('Bitte erst anmelden', 'error'); return; }
   if (!initFirebase()) { openFirebaseModal(); return; }
 
+  onlineOpponentUid = targetUid; onlineH2HRecorded = false;
   const totalRounds = parseInt(roundsArg, 10) || 1;
   const grades   = ['5','6','7','8','9','10','11','12','gemischt'];
   const subjects = Object.keys(SUBCATEGORIES);
@@ -6323,14 +6326,37 @@ function confirmNextRound() {
   showHandover(1, false);
 }
 
+// Head-to-Head-Bilanz gegen einen Freund hochzählen (unter dem eigenen Nutzer gespeichert)
+function recordH2H(oppUid, result) { // result: 'win' | 'draw' | 'loss'
+  if (!currentUser || !oppUid || !initFirebase()) return;
+  const field = result === 'win' ? 'wins' : result === 'loss' ? 'losses' : 'draws';
+  fbDB.ref('users/' + currentUser.uid + '/h2h/' + oppUid).transaction(cur => {
+    cur = cur || { wins:0, draws:0, losses:0 };
+    cur[field] = (cur[field] || 0) + 1;
+    cur.lastPlayed = Date.now();
+    return cur;
+  }).catch(()=>{});
+}
+
 function showMultiResult(room) {
   const players = room?.players || {};
   const sorted = Object.values(players)
     .filter(p => p.name)
     .sort((a,b) => b.score.points - a.score.points || b.score.correct - a.score.correct);
-  const total = G.questions.length;
+  const total = G.questions.length * (room?.totalRounds || 1);
   const medals = ['🥇','🥈','🥉','4️⃣'];
   const winner = sorted[0];
+
+  // Bilanz gegen den Freund festhalten (nur 2-Spieler-Duelle, einmal pro Spiel)
+  if (!onlineH2HRecorded && onlineOpponentUid && Object.values(players).filter(p => p.name).length === 2) {
+    const me  = players[onlineMySlot];
+    const opp = players[onlineMySlot === 'p1' ? 'p2' : 'p1'];
+    if (me && opp) {
+      const myPts = me.score?.points || 0, oppPts = opp.score?.points || 0;
+      recordH2H(onlineOpponentUid, myPts > oppPts ? 'win' : myPts < oppPts ? 'loss' : 'draw');
+      onlineH2HRecorded = true;
+    }
+  }
 
   document.getElementById('mr-banner').textContent = medals[0] + ' ' + winner.name + ' gewinnt!';
   document.getElementById('mr-sub').textContent = winner.score.points + ' Punkte · ' + winner.score.correct + ' / ' + total + ' richtig';
@@ -8100,10 +8126,12 @@ async function renderFriendsList() {
   const c = document.getElementById('friends-screen-content');
   c.innerHTML = '<div class="loading-state"><div class="spinner"></div></div>';
   try {
-    const [reqSnap, friendSnap] = await Promise.all([
+    const [reqSnap, friendSnap, h2hSnap] = await Promise.all([
       fbDB.ref('friendRequests/' + currentUser.uid).once('value'),
-      fbDB.ref('friends/' + currentUser.uid).once('value')
+      fbDB.ref('friends/' + currentUser.uid).once('value'),
+      fbDB.ref('users/' + currentUser.uid + '/h2h').once('value')
     ]);
+    const h2hMap = h2hSnap.val() || {};
     const requests   = reqSnap.val()   || {};
     const friendUids = Object.keys(friendSnap.val() || {});
     const profiles   = await Promise.all(
@@ -8133,9 +8161,15 @@ async function renderFriendsList() {
     } else {
       profiles.forEach(f => {
         if (!f.username) return;
+        const h = h2hMap[f.uid] || {};
+        const w = h.wins||0, dr = h.draws||0, l = h.losses||0;
+        const bilanz = (w+dr+l) > 0
+          ? '<div class="friend-grade" style="margin-top:3px;">⚔️ Bilanz: <strong style="color:var(--green);">' + w + 'S</strong> · ' + dr + 'U · <strong style="color:var(--red);">' + l + 'N</strong></div>'
+          : '';
         html += '<div class="friend-item">'
           + '<div style="flex:1;"><div class="friend-name">' + esc(f.username) + '</div>'
-          + '<div class="friend-grade">Klasse ' + (f.grade||'?') + '</div></div>'
+          + '<div class="friend-grade">Klasse ' + (f.grade||'?') + '</div>'
+          + bilanz + '</div>'
           + '<div style="display:flex;gap:8px;">'
           + '<button class="btn btn-primary" style="width:auto;padding:7px 14px;font-size:.78rem;" onclick="openChallengeModal(\'' + f.uid + '\',\'' + esc(f.username) + '\')">⚔️ Herausfordern</button>'
           + '<div class="icon-btn del" onclick="removeFriend(\'' + f.uid + '\')" title="Entfernen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>'
@@ -8260,6 +8294,7 @@ async function sendChallenge() {
     difficulty: diff, source, catalogId, totalRounds, currentRound:1, roundScores:[],
     questions:[], players, createdAt:firebase.database.ServerValue.TIMESTAMP
   });
+  onlineOpponentUid = chalTargetUid; onlineH2HRecorded = false;
   const cKey = fbDB.ref('challenges/' + chalTargetUid).push().key;
   await fbDB.ref('challenges/' + chalTargetUid + '/' + cKey).set({
     fromUid:currentUser?.uid, fromUsername:myName, roomCode:code,
@@ -8316,6 +8351,7 @@ async function acceptChallenge() {
     onlineRoomCode=data.roomCode; onlineRole='guest'; onlineMySlot='p2'; onlineMaxPlayers=2;
     onlineMyAnswers=[]; onlineWaitingForOpponent=false;
     G.p2Name=myName; G.p1Name=data.fromUsername;
+    onlineOpponentUid = data.fromUid; onlineH2HRecorded = false;
     G.dGrade=data.grade||''; G.dSubject=data.subject||''; G.dSubcategory=data.subcategory||'';
     G.dDifficulty=data.difficulty; G.dSource=data.source||'ai'; G.dCatalogId=data.catalogId||'';
     G.totalRounds=data.totalRounds||1; G.currentRound=1; G.roundScores=[];
@@ -8478,6 +8514,7 @@ function myDisplayName() {
 
 async function createOnlineRoom(opts = {}) {
   if (!initFirebase()) { openFirebaseModal(); return; }
+  onlineOpponentUid = null; onlineH2HRecorded = false; // Code-Raum: kein fester Freund-Gegner
   const myName = opts.myName || myDisplayName();
   const code = generateRoomCode();
   onlineRoomCode = code;
@@ -8518,6 +8555,7 @@ async function createOnlineRoom(opts = {}) {
 async function doJoinRoom(code, myName) {
   if (!initFirebase()) { openFirebaseModal(); return; }
   if (code.length !== 6) { showToast('Bitte 6-stelligen Code eingeben', 'error'); return; }
+  onlineOpponentUid = null; onlineH2HRecorded = false; // Code-Beitritt: kein fester Freund-Gegner
   try {
     const snap = await fbDB.ref('rooms/' + code).once('value');
     const room = snap.val();
