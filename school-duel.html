@@ -5430,6 +5430,8 @@ async function startQuiz() {
   }
 
   showScreen('screen-loading');
+  const _spinner = document.querySelector('#screen-loading .spinner');
+  if (_spinner) _spinner.style.display = '';
   startLoadingMessages();
   G.questions = [];
   try {
@@ -5443,6 +5445,8 @@ async function startQuiz() {
     stopLoadingMessages();
     // Gast hat eine noch nicht gefüllte / gemischte Kategorie gewählt → freundlich abfangen
     if (/^Gast-Modus:/.test(e.message || '')) {
+      const sp = document.querySelector('#screen-loading .spinner');
+      if (sp) sp.style.display = 'none';
       document.getElementById('loading-text').textContent =
         'Diese Kategorie ist noch nicht verfügbar. Wähle ein bereits gefülltes Thema – oder melde dich an, um neue Fragen zu generieren.';
       setTimeout(() => showScreen('screen-home'), 4000);
@@ -5615,11 +5619,6 @@ correct = 0-basierter Index der richtigen Antwort.`;
 
 async function generateQuestionsAI() {
   if (isOffline?.()) { showToast('✈️ Offline – bitte einen Katalog verwenden', 'error'); throw new Error('offline'); }
-  // Gäste können keine Live-Fragen generieren (Zentralkey ist geschützt) –
-  // sie spielen nur aus der bereits gefüllten Bibliothek.
-  if (guestMode && !localStorage.getItem('sd_api_key')) {
-    throw new Error('Gast-Modus: Diese Kategorie ist noch nicht verfügbar.');
-  }
   let grade  = G.mode === 'solo' ? G.grade       : G.dGrade;
   let subj   = G.mode === 'solo' ? G.subject     : G.dSubject;
   let subcat = G.mode === 'solo' ? G.subcategory : G.dSubcategory;
@@ -5635,13 +5634,28 @@ async function generateQuestionsAI() {
   const gradeIsMixed  = grade.includes('gemischt');
   const subcatIsMixed = subcat.includes('gemischt');
   const subjIsMixed   = subj.includes('gemischt');
+  const isMixed = gradeIsMixed || subcatIsMixed || subjIsMixed;
+  const isMulti = grade.length > 1 || subj.length > 1 || subcat.length > 1 || diff.length > 1;
 
-  if (gradeIsMixed || subcatIsMixed || subjIsMixed) {
+  // Mix/Mehrfachauswahl: zuerst aus den BEREITS generierten Schulfragen
+  // zusammenstellen. Das braucht keinen API-Key – funktioniert also auch für Gäste
+  // und ist für alle sofort & kostenlos.
+  if (isMixed || isMulti) {
+    const fromBank = await loadMixFromBank(8, { subj, grade, subcat });
+    if (fromBank && fromBank.length >= 8) return fromBank;
+  }
+
+  // Ab hier wäre Live-Generierung nötig – das können Gäste nicht (Zentralkey geschützt).
+  if (guestMode && !localStorage.getItem('sd_api_key')) {
+    throw new Error('Gast-Modus: Diese Kategorie ist noch nicht verfügbar.');
+  }
+
+  if (isMixed) {
     return generateMixedAI(subj, subcat, grade, diff);
   }
 
   // If multiple options, use generateMultiAI
-  if (grade.length > 1 || subj.length > 1 || subcat.length > 1 || diff.length > 1) {
+  if (isMulti) {
     return generateMultiAI(grade, subj, subcat, diff);
   }
 
@@ -8708,6 +8722,41 @@ function qbPath(grade, subj, subcat) {
   // Sanitize for Firebase keys (no . # $ [ ] /)
   const safe = s => s.replace(/[.#$\[\]\/]/g, '_');
   return 'questionBank/' + safe(subj) + '/' + safe(subcat) + '/klasse' + grade;
+}
+
+// Stellt einen zufälligen Mix aus den BEREITS generierten Schulfragen der
+// Bibliothek zusammen (ohne KI/API-Key – funktioniert auch für Gäste).
+// filt: {subj, grade, subcat} – Werte 'gemischt' oder leer = kein Filter auf dieser Dimension.
+async function loadMixFromBank(n, filt = {}) {
+  if (!initFirebase()) return null;
+  let snap;
+  try { snap = await fbDB.ref('questionBank').once('value'); } catch(e) { return null; }
+  const bank = snap.val();
+  if (!bank) return null;
+
+  const norm = v => (Array.isArray(v) ? v : [v]).filter(x => x && x !== 'gemischt');
+  const subjSel   = norm(filt.subj).map(String);
+  const gradeSel  = norm(filt.grade).map(String);
+  const subcatSel = norm(filt.subcat).map(String);
+
+  const pool = [];
+  Object.values(bank).forEach(subcats => {
+    Object.values(subcats || {}).forEach(grades => {
+      Object.values(grades || {}).forEach(entry => {
+        if (!entry || !Array.isArray(entry.questions)) return;
+        if (subjSel.length   && !subjSel.includes(String(entry.subject)))       return;
+        if (gradeSel.length  && !gradeSel.includes(String(entry.grade)))        return;
+        if (subcatSel.length && !subcatSel.includes(String(entry.subcategory))) return;
+        entry.questions.forEach(q => pool.push({
+          ...q,
+          correct: Math.max(0, Math.min(3, parseInt(q.answer ?? q.correct, 10) || 0)),
+          _grade: entry.grade, _subject: entry.subject, _subcategory: entry.subcategory
+        }));
+      });
+    });
+  });
+  if (pool.length < n) return null;
+  return pool.sort(() => Math.random() - .5).slice(0, n);
 }
 
 async function loadFromQuestionBank(grade, subj, subcat) {
