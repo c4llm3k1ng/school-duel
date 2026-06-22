@@ -1832,7 +1832,7 @@ const DEFAULT_FB_CONFIG = {
   projectId: "school-duel",
   storageBucket: "school-duel.appspot.com"
 };
-const QB_MAX = 504;
+const QB_MAX = 800;
 
 let fbApp = null, fbDB = null, fbAuth = null;
 let libData = [];
@@ -5743,7 +5743,7 @@ async function loadQuestions() {
       addToPlayedSet(grade, subj, subcat, toPlay);
       toPlay = toPlay.map(q => ({ ...q, _grade: grade, _subject: subj, _subcategory: subcat }));
 
-      // Background: generate more if pool < 504
+      // Background: generate more if pool < 800
       if (poolSize < QB_MAX) {
         const diff = G.mode === 'solo' ? G.difficulty : G.dDifficulty;
         setTimeout(() => {
