@@ -947,7 +947,7 @@
 
     <!-- TYPE LANDING -->
     <div id="qd-type-landing" style="display:none;">
-      <div class="duel-type-back" onclick="showQdModeLanding()">← Zurück</div>
+      <div class="duel-type-back" onclick="showQdModeLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="duel-type-grid">
         <div class="duel-type-card" onclick="showQdType('schul')">
           <div class="dtc-icon">🏫</div>
@@ -1074,7 +1074,7 @@
 
     <!-- TYPE LANDING -->
     <div id="duel-type-landing" style="display:none;">
-      <div class="duel-type-back" onclick="showDuelModeLanding()">← Zurück</div>
+      <div class="duel-type-back" onclick="showDuelModeLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="duel-type-grid">
         <div class="duel-type-card" onclick="showDuelType('schul')">
           <div class="dtc-icon">🏫</div>
@@ -6283,7 +6283,7 @@ function openSchulPractice() {
   });
   if (!diffs.length) { cont.innerHTML = '<div class="empty-state"><div class="es-icon">📭</div>Noch keine Schulfragen gespielt.</div>'; return; }
 
-  let html = _pBack('← Zurück','renderPracticeTab()');
+  let html = _pBack('← Zurück zum vorherigen Punkt','renderPracticeTab()');
   html += '<div class="label" style="margin-bottom:10px;">Schwierigkeit wählen</div><div class="topic-grid">';
   diffs.forEach((d,i) => {
     const wc = _wrongQ(false,d).length;
@@ -6364,7 +6364,7 @@ function openSchulTopics(gradeIdx) {
   const backFn = _pGrades.length>1 ? `openSchulGrades(-1)` : `openSchulSubjects(-1)`;
   const gradeLbl = grade?(' · Klasse '+grade):'';
 
-  let html = _pBack('← Zurück', backFn);
+  let html = _pBack('← Zurück zum vorherigen Punkt', backFn);
   html += `<div style="font-weight:700;margin-bottom:10px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff} · ${getPracticeIcon(_pSelSubj)} ${esc(_pSelSubj)}${esc(gradeLbl)}</div>`;
   if (qs.length>0) html += `<button class="btn btn-primary" style="margin-bottom:14px;padding:11px;" onclick="_startPQ(_wrongQ(false,_pSelDiff,_pSelSubj,_pSelGrade))">🔁 Alle falschen üben (${Math.min(8,qs.length)} von ${qs.length})</button>`;
   html += _topicAccordion(topicItems);
@@ -6376,7 +6376,7 @@ function openSchulTopics(gradeIdx) {
 function openKatalogPractice() {
   _pv = 'katTopic'; _pKatalogTopicIdx = -1;
   const cont = _pCont();
-  let html = _pBack('← Zurück','renderPracticeTab()');
+  let html = _pBack('← Zurück zum vorherigen Punkt','renderPracticeTab()');
   html += '<div class="label" style="margin-bottom:10px;">Thema wählen</div><div class="topic-grid">';
   TOPIC_GROUPS.forEach((t,i) => {
     const wc = _wrongQ(true, undefined, t.label).length;
