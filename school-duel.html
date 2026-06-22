@@ -7520,7 +7520,7 @@ function randomizeSubcat(rowId, key) {
   pick.classList.add('active');
   G[key] = pick.dataset.val;
   if (key === 'subcategory')  checkSoloReady?.();
-  if (key === 'dSubcategory') checkDuelReady?.();
+  if (key === 'dSubcategory') { checkDuelReady?.(); checkOnlineReady?.(); }
 }
 
 function setMixedSubcat(rowId, key) {
@@ -7581,6 +7581,7 @@ function randomizeAll(mode) {
     const scRow = document.getElementById(scWrap + '-row');
     if (scRow) randomizeSubcat(scWrap + '-row', scKey);
     refreshAllAccordionVals?.();
+    readyCb?.();
   }, 50);
 }
 
