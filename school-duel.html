@@ -5441,6 +5441,13 @@ async function startQuiz() {
     renderQuestion();
   } catch(e) {
     stopLoadingMessages();
+    // Gast hat eine noch nicht gefüllte / gemischte Kategorie gewählt → freundlich abfangen
+    if (/^Gast-Modus:/.test(e.message || '')) {
+      document.getElementById('loading-text').textContent =
+        'Diese Kategorie ist noch nicht verfügbar. Wähle ein bereits gefülltes Thema – oder melde dich an, um neue Fragen zu generieren.';
+      setTimeout(() => showScreen('screen-home'), 4000);
+      return;
+    }
     const isQuota = /quota|RESOURCE_EXHAUSTED|429|rate.?limit|no longer available|model.*not.*found|not.*available|JSON|parse.*error|unexpected.*token|SyntaxError/i.test(e.message || '');
     const isNoKey = e.message === 'Kein API-Key gesetzt.';
     if (isQuota) {
@@ -5608,6 +5615,11 @@ correct = 0-basierter Index der richtigen Antwort.`;
 
 async function generateQuestionsAI() {
   if (isOffline?.()) { showToast('✈️ Offline – bitte einen Katalog verwenden', 'error'); throw new Error('offline'); }
+  // Gäste können keine Live-Fragen generieren (Zentralkey ist geschützt) –
+  // sie spielen nur aus der bereits gefüllten Bibliothek.
+  if (guestMode && !localStorage.getItem('sd_api_key')) {
+    throw new Error('Gast-Modus: Diese Kategorie ist noch nicht verfügbar.');
+  }
   let grade  = G.mode === 'solo' ? G.grade       : G.dGrade;
   let subj   = G.mode === 'solo' ? G.subject     : G.dSubject;
   let subcat = G.mode === 'solo' ? G.subcategory : G.dSubcategory;
@@ -7465,8 +7477,11 @@ async function getEffectiveApiKey() {
       if (cfg?.geminiKey) return { key: cfg.geminiKey, provider: cfg.provider || 'gemini' };
     } catch(e) {
       console.warn('Central key read failed:', e.message);
-      // Firebase rules likely block read – show hint
-      showToast('⚠️ Zentralkey nicht lesbar (Firebase-Regeln)', 'error');
+      // Für Gäste ist der gesperrte Zentralkey gewollt (Firebase-Regeln) –
+      // nur eingeloggte Nutzer warnen, bei denen es ein echtes Problem wäre.
+      if (!guestMode && currentUser) {
+        showToast('⚠️ Zentralkey nicht lesbar (Firebase-Regeln)', 'error');
+      }
     }
   }
   // Fall back to personal key
