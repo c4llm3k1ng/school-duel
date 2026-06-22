@@ -1,5 +1,5 @@
-const CACHE = 'school-duel-v24';
-const CORE = ['./school-duel.html','./manifest.json','./icon.svg'];
+const CACHE = 'school-duel-v25';
+const CORE = ['./school-duel.html','./manifest.json','./icon.jpg'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {
