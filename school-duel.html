@@ -819,7 +819,10 @@
 
   <!-- SOLO -->
   <div id="tab-solo" style="display:none;">
-    <div class="mode-back" id="back-solo" onclick="showSpielenLanding()">← Zurück zur Startseite</div>
+    <div style="display:flex;gap:2px;margin-bottom:16px;">
+      <div class="mode-back" id="back-solo" onclick="showSpielenLanding()">← Zurück zur Startseite</div>
+      <div class="duel-type-back" id="solo-type-back-top" onclick="showSoloLanding()" style="display:none;">← Zurück zum vorherigen Punkt</div>
+    </div>
 
     <div id="solo-type-landing">
       <div class="duel-type-grid">
@@ -837,7 +840,6 @@
     </div>
 
     <div id="solo-schul" style="display:none;">
-      <div class="duel-type-back" onclick="showSoloLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="card">
         <div class="accordion-section" id="acc-solo-grade">
           <div class="accordion-header" onclick="toggleAccordion('acc-solo-grade')">
@@ -901,7 +903,6 @@
     </div>
 
     <div id="solo-catalog-type" style="display:none;">
-      <div class="duel-type-back" onclick="showSoloLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="card">
         <div class="label">Thema wählen</div>
         <div class="topic-grid" id="solo-topic-grid"></div>
@@ -927,7 +928,10 @@
 
   <!-- QUICK DUEL -->
   <div id="tab-quickduel" style="display:none;">
-    <div class="mode-back" id="back-quickduel" onclick="showSpielenLanding()">← Zurück zur Startseite</div>
+    <div style="display:flex;gap:2px;margin-bottom:16px;">
+      <div class="mode-back" id="back-quickduel" onclick="showSpielenLanding()">← Zurück zur Startseite</div>
+      <div class="duel-type-back" id="qd-type-back-top" onclick="showQdModeLanding()" style="display:none;">← Zurück zum vorherigen Punkt</div>
+    </div>
 
     <!-- MODE LANDING -->
     <div id="qd-mode-landing">
@@ -947,7 +951,6 @@
 
     <!-- TYPE LANDING -->
     <div id="qd-type-landing" style="display:none;">
-      <div class="duel-type-back" onclick="showQdModeLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="duel-type-grid">
         <div class="duel-type-card" onclick="showQdType('schul')">
           <div class="dtc-icon">🏫</div>
@@ -964,7 +967,6 @@
 
     <!-- SCHULFRAGEN LOKAL -->
     <div id="qd-schul-local" style="display:none;">
-      <div class="duel-type-back" onclick="showQdTypeLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="card">
         <div style="font-size:.85rem;color:var(--muted);margin-bottom:14px;">Alles wird automatisch zufällig gewählt – einfach Namen eingeben und losspielen.</div>
         <div class="label">Spielernamen</div>
@@ -984,7 +986,6 @@
 
     <!-- SCHULFRAGEN ONLINE -->
     <div id="qd-schul-online" style="display:none;">
-      <div class="duel-type-back" onclick="showQdTypeLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="card">
         <div style="font-size:.85rem;color:var(--muted);margin-bottom:14px;">Fordere einen Freund online heraus – Klasse, Fach und Schwierigkeit werden zufällig gewählt.</div>
         <div class="label">Anzahl Runden</div>
@@ -999,7 +1000,6 @@
 
     <!-- KATALOG (lokal + online) -->
     <div id="qd-catalog-section" style="display:none;">
-      <div class="duel-type-back" onclick="showQdTypeLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="card">
         <div class="label">Thema wählen</div>
         <div class="topic-grid" id="qd-topic-grid"></div>
@@ -1054,7 +1054,10 @@
 
   <!-- DUEL -->
   <div id="tab-duel" style="display:none;">
-    <div class="mode-back" id="back-duel" onclick="showSpielenLanding()">← Zurück zur Startseite</div>
+    <div style="display:flex;gap:2px;margin-bottom:16px;">
+      <div class="mode-back" id="back-duel" onclick="showSpielenLanding()">← Zurück zur Startseite</div>
+      <div class="duel-type-back" id="duel-type-back-top" onclick="showDuelModeLanding()" style="display:none;">← Zurück zum vorherigen Punkt</div>
+    </div>
 
     <!-- MODE LANDING -->
     <div id="duel-mode-landing">
@@ -1074,7 +1077,6 @@
 
     <!-- TYPE LANDING -->
     <div id="duel-type-landing" style="display:none;">
-      <div class="duel-type-back" onclick="showDuelModeLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="duel-type-grid">
         <div class="duel-type-card" onclick="showDuelType('schul')">
           <div class="dtc-icon">🏫</div>
@@ -1091,7 +1093,6 @@
 
     <!-- SCHULFRAGEN DUEL -->
     <div id="duel-schul" style="display:none;">
-      <div class="duel-type-back" onclick="showDuelTypeLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="sub-tabs">
         <div class="sub-tab active" id="subtab-btn-online" onclick="switchDuelSubTab('online')">🌐 Online</div>
         <div class="sub-tab" id="subtab-btn-local" onclick="switchDuelSubTab('local')">⚔️ Lokal</div>
@@ -1276,7 +1277,6 @@
 
     <!-- KATALOG DUEL -->
     <div id="duel-catalog-type" style="display:none;">
-      <div class="duel-type-back" onclick="showDuelTypeLanding()">← Zurück zum vorherigen Punkt</div>
       <div class="card">
         <div class="label">Thema wählen</div>
         <div class="topic-grid" id="duel-topic-grid"></div>
@@ -4680,11 +4680,13 @@ function showSoloLanding() {
   document.getElementById('solo-type-landing').style.display = '';
   document.getElementById('solo-schul').style.display = 'none';
   document.getElementById('solo-catalog-type').style.display = 'none';
+  document.getElementById('solo-type-back-top').style.display = 'none';
 }
 function showSoloType(type) {
   document.getElementById('solo-type-landing').style.display = 'none';
   document.getElementById('solo-schul').style.display = type === 'schul' ? '' : 'none';
   document.getElementById('solo-catalog-type').style.display = type === 'catalog' ? '' : 'none';
+  document.getElementById('solo-type-back-top').style.display = '';
   if (type === 'schul') {
     G.source = 'ai';
   } else {
@@ -4700,6 +4702,7 @@ function showDuelModeLanding() {
   document.getElementById('duel-type-landing').style.display = 'none';
   document.getElementById('duel-schul').style.display = 'none';
   document.getElementById('duel-catalog-type').style.display = 'none';
+  document.getElementById('duel-type-back-top').style.display = 'none';
   G.dSource = null; G.dCatalogId = null;
 }
 function pickDuelConnMode(mode) {
@@ -4711,11 +4714,13 @@ function showDuelTypeLanding() {
   document.getElementById('duel-type-landing').style.display = '';
   document.getElementById('duel-schul').style.display = 'none';
   document.getElementById('duel-catalog-type').style.display = 'none';
+  document.getElementById('duel-type-back-top').style.display = '';
 }
 function showDuelType(type) {
   document.getElementById('duel-type-landing').style.display = 'none';
   document.getElementById('duel-schul').style.display = type === 'schul' ? '' : 'none';
   document.getElementById('duel-catalog-type').style.display = type === 'catalog' ? '' : 'none';
+  document.getElementById('duel-type-back-top').style.display = '';
   if (type === 'schul') {
     G.dSource = 'ai';
     switchDuelSubTab(_duelConnMode === 'online' ? 'online' : 'local');
@@ -4735,6 +4740,7 @@ function showQdModeLanding() {
   document.getElementById('qd-schul-local').style.display = 'none';
   document.getElementById('qd-schul-online').style.display = 'none';
   document.getElementById('qd-catalog-section').style.display = 'none';
+  document.getElementById('qd-type-back-top').style.display = 'none';
 }
 function pickQdMode(mode) {
   _qdConnMode = mode;
@@ -4746,9 +4752,11 @@ function showQdTypeLanding() {
   document.getElementById('qd-schul-local').style.display = 'none';
   document.getElementById('qd-schul-online').style.display = 'none';
   document.getElementById('qd-catalog-section').style.display = 'none';
+  document.getElementById('qd-type-back-top').style.display = '';
 }
 function showQdType(type) {
   document.getElementById('qd-type-landing').style.display = 'none';
+  document.getElementById('qd-type-back-top').style.display = '';
   if (type === 'schul') {
     const isOnline = _qdConnMode === 'online';
     document.getElementById('qd-schul-local').style.display = isOnline ? 'none' : '';
