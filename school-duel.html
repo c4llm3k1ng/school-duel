@@ -128,7 +128,7 @@
   .mode-card:hover .mc-arrow { opacity:1; transform:translateX(3px); }
   .mode-back { display:none; align-items:center; gap:6px; margin-bottom:18px; cursor:pointer; color:var(--muted); font-size:.88rem; font-weight:600; width:fit-content; }
   .mode-back:hover { color:var(--accent); }
-  .mode-back.visible { display:flex; }
+  .mode-back.visible { display:none; }
   .duel-type-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:8px; }
   .duel-type-card { background:radial-gradient(120% 120% at 50% 0%, rgba(45,212,191,.08), transparent 50%), linear-gradient(180deg, rgba(255,255,255,.06), transparent 40%), var(--glass);
     border:1px solid rgba(125,165,225,.22); border-radius:var(--radius); padding:24px 14px 20px; text-align:center; cursor:pointer;
@@ -143,8 +143,14 @@
   .duel-type-card:hover .dtc-icon { box-shadow:inset 0 0 18px rgba(45,212,191,.3), 0 0 24px rgba(45,212,191,.4); }
   .duel-type-card .dtc-title { font-size:.98rem; font-weight:700; letter-spacing:-.01em; color:var(--text); margin-bottom:5px; }
   .duel-type-card .dtc-desc { font-size:.75rem; color:var(--muted); line-height:1.4; }
-  .duel-type-back { display:inline-flex; align-items:center; gap:5px; margin-bottom:14px; cursor:pointer; color:var(--muted); font-size:.85rem; font-weight:600; }
-  .duel-type-back:hover { color:var(--accent); }
+  .duel-type-back { display:none; }
+  /* Einheitliche Navigation: oberer Zurück-Pfeil (ein Schritt) + unterer Startseite-Button */
+  .nav-back-arrow { display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:50%; border:1px solid var(--glass-border); background:linear-gradient(180deg, rgba(255,255,255,.06), transparent), var(--glass); color:var(--text); cursor:pointer; transition:transform .18s, box-shadow .2s, border-color .18s, color .18s; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:inset 0 1px 0 rgba(255,255,255,.06), 0 4px 12px rgba(0,0,0,.25); margin-bottom:16px; }
+  .nav-back-arrow svg { width:20px; height:20px; }
+  .nav-back-arrow:hover { border-color:rgba(45,212,191,.55); color:var(--accent); transform:translateX(-2px); box-shadow:0 0 16px rgba(45,212,191,.3); }
+  .home-bottom-btn { display:flex; align-items:center; justify-content:center; gap:7px; width:100%; margin-top:22px; padding:13px; border-radius:var(--radius); border:1px solid var(--glass-border); background:var(--glass); color:var(--muted); font-family:'Poppins',sans-serif; font-size:.85rem; font-weight:600; cursor:pointer; transition:border-color .18s, color .18s, box-shadow .2s; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); }
+  .home-bottom-btn svg { width:15px; height:15px; }
+  .home-bottom-btn:hover { border-color:rgba(45,212,191,.5); color:var(--accent); box-shadow:0 0 16px rgba(45,212,191,.2); }
   .accordion-section { border-radius:12px; background:linear-gradient(180deg, rgba(255,255,255,.04), transparent 50%), var(--glass); border:1px solid var(--glass-border); margin-bottom:8px; overflow:hidden; backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); box-shadow:inset 0 1px 0 rgba(255,255,255,.06), 0 4px 14px rgba(0,0,0,.22); transition:border-color .2s, box-shadow .2s; }
   .accordion-section.open { border-color:rgba(45,212,191,.45); box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 0 18px rgba(45,212,191,.15); }
   .accordion-section.open .accordion-arrow { color:var(--accent); }
@@ -171,6 +177,8 @@
   .name-input { background:var(--surface2); border:1.5px solid var(--border); border-radius:10px; padding:11px 14px; color:var(--text); font-family:'Poppins',sans-serif; font-size:.95rem; width:100%; outline:none; transition:border-color .15s; }
   .name-input:focus { border-color:var(--accent); }
   .name-input.p2-input:focus { border-color:var(--accent2); }
+  /* Online-Name wird automatisch übernommen (Nutzername/Gast) – Eingabefelder ausgeblendet */
+  #online-my-name, #join-name-input, #dcat-online-name, #dcat-join-name { display:none; }
 
   /* QUIZ HEADER */
   .quiz-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; }
@@ -886,6 +894,8 @@
     <div class="nav-tab"        id="tab-btn-library"  onclick="switchTab('library')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Bibliothek</div>
   </div>
 
+  <div id="spielen-back-arrow" class="nav-back-arrow" style="display:none;" onclick="goBackOneStep()" title="Einen Schritt zurück"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></div>
+
   <!-- SPIELEN LANDING -->
   <div id="tab-spielen">
     <div class="mode-card" onclick="showModeSetup('duel')">
@@ -1299,7 +1309,7 @@
       <!-- ONLINE DUEL -->
       <div id="duel-sub-online">
         <div class="card">
-          <div class="label">Dein Name</div>
+          <div class="label" style="display:none;">Dein Name</div>
           <input class="name-input" id="online-my-name" placeholder="z.B. Max" maxlength="16" style="width:100%;margin-bottom:18px;">
 
           <div class="accordion-section" id="acc-online-grade">
@@ -1377,7 +1387,7 @@
         <div class="divider-or">oder beitreten</div>
 
         <div class="card">
-          <div class="label">Dein Name</div>
+          <div class="label" style="display:none;">Dein Name</div>
           <input class="name-input" id="join-name-input" placeholder="z.B. Lisa" maxlength="16" style="width:100%;margin-bottom:12px;">
           <div class="label">Raumcode</div>
           <input class="form-input" id="join-code-input" placeholder="z.B. AB3X7K" maxlength="6"
@@ -1444,7 +1454,7 @@
 
         <div id="dcat-sub-online" style="display:none;">
           <div class="card">
-            <div class="label">Dein Name</div>
+            <div class="label" style="display:none;">Dein Name</div>
             <input class="name-input" id="dcat-online-name" placeholder="z.B. Max" maxlength="16" style="width:100%;margin-bottom:18px;">
             <div class="label">Anzahl Runden</div>
             <div class="pill-row" id="dcat-online-rounds-pills">
@@ -1464,7 +1474,7 @@
           <div class="divider-or">oder beitreten</div>
 
           <div class="card">
-            <div class="label">Dein Name</div>
+            <div class="label" style="display:none;">Dein Name</div>
             <input class="name-input" id="dcat-join-name" placeholder="z.B. Lisa" maxlength="16" style="width:100%;margin-bottom:12px;">
             <div class="label">Raumcode</div>
             <input class="form-input" id="dcat-join-code" placeholder="z.B. AB3X7K" maxlength="6"
@@ -1513,6 +1523,8 @@
     <div id="practice-stats" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;"></div>
     <div id="practice-list-container"></div>
   </div>
+
+  <button id="spielen-home-btn" class="home-bottom-btn" style="display:none;" onclick="showSpielenLanding()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Zur Startseite</button>
 </div>
 
 <!-- ═══════════════════════════ SCREEN: CATALOG EDITOR ═══════════════════════════ -->
@@ -4762,6 +4774,8 @@ function switchTab(tab) {
   });
   if (tab === 'catalog') renderCatalogList();
   if (tab === 'library') refreshLibrary();
+  const _ba = document.getElementById('spielen-back-arrow'); if (_ba) _ba.style.display = 'none';
+  const _hb = document.getElementById('spielen-home-btn'); if (_hb) _hb.style.display = 'none';
 }
 
 function showModeSetup(mode) {
@@ -4777,6 +4791,8 @@ function showModeSetup(mode) {
   if (mode === 'quickduel') { showQuickDuelDirect(); }
   if (mode === 'solo')      showSoloLanding();
   if (mode === 'practice')  renderPracticeTab();
+  document.getElementById('spielen-back-arrow').style.display = 'inline-flex';
+  document.getElementById('spielen-home-btn').style.display = 'block';
   updateOfflineUI?.();
 }
 
@@ -4786,6 +4802,26 @@ function showSpielenLanding() {
     if (el) el.style.display = 'none';
   });
   document.getElementById('tab-spielen').style.display = 'block';
+  document.getElementById('spielen-back-arrow').style.display = 'none';
+  document.getElementById('spielen-home-btn').style.display = 'none';
+}
+
+// Oberer Zurück-Pfeil: genau EINEN Schritt zurück, je nach aktivem Mode-Tab & Unterebene
+function goBackOneStep() {
+  const active = MODE_TABS.find(t => {
+    const el = document.getElementById('tab-' + t);
+    return el && el.style.display !== 'none';
+  });
+  if (active === 'duel') {
+    const deep = document.getElementById('duel-schul').style.display !== 'none'
+              || document.getElementById('duel-catalog-type').style.display !== 'none';
+    if (deep) { showDuelTypeLanding(); return; }
+  } else if (active === 'solo') {
+    const deep = document.getElementById('solo-schul').style.display !== 'none'
+              || document.getElementById('solo-catalog-type').style.display !== 'none';
+    if (deep) { showSoloLanding(); return; }
+  }
+  showSpielenLanding();
 }
 
 // ── LOKAL: Einzelspiel oder lokales Duell (auf einem Gerät) ──
@@ -4801,6 +4837,8 @@ function openLokalDuel() {
   });
   _duelConnMode = 'local';
   showDuelTypeLanding();
+  document.getElementById('spielen-back-arrow').style.display = 'inline-flex';
+  document.getElementById('spielen-home-btn').style.display = 'block';
   updateOfflineUI?.();
 }
 
@@ -4992,7 +5030,7 @@ async function sendQuickCatalogChallenge(targetUid, targetUsername) {
   const catalogId = G.qdCatalogId;
   if (!catalogId) { showToast('Bitte erst ein Thema wählen', 'error'); return; }
   const totalRounds = parseInt(document.querySelector('#qd-cat-online-rounds-pills .pill.active')?.dataset.val || '1');
-  const myName = currentUser.username || 'Spieler 1';
+  const myName = myDisplayName();
   const code   = generateRoomCode();
   const players = {
     p1: { name: myName, q:0, done:false, score:{correct:0,points:0} },
@@ -5035,7 +5073,7 @@ async function sendQuickChallenge(targetUid, targetUsername, roundsArg) {
   const subcat  = subs.length ? subs[Math.floor(Math.random() * subs.length)] : '';
   const diff    = diffs[Math.floor(Math.random() * diffs.length)];
 
-  const myName = currentUser.username || 'Spieler 1';
+  const myName = myDisplayName();
   const code   = generateRoomCode();
   const players = {
     p1: { name: myName, q:0, done:false, score:{correct:0,points:0} },
@@ -5415,7 +5453,7 @@ function startCatalogLocal() {
 }
 async function startCatalogOnline() {
   if (!initFirebase()) { openFirebaseModal(); return; }
-  const myName = document.getElementById('dcat-online-name').value.trim() || 'Spieler 1';
+  const myName = myDisplayName();
   const rounds = parseInt(document.querySelector('#dcat-online-rounds-pills .pill.active')?.dataset.val || '1');
   const maxP   = parseInt(document.querySelector('#dcat-online-players-pills .pill.active')?.dataset.val || '2');
   G.dSource = 'catalog';
@@ -5423,7 +5461,7 @@ async function startCatalogOnline() {
 }
 async function joinCatalogRoom() {
   const code   = (document.getElementById('dcat-join-code').value.trim()).toUpperCase();
-  const myName = document.getElementById('dcat-join-name').value.trim() || 'Spieler 2';
+  const myName = myDisplayName();
   await doJoinRoom(code, myName);
 }
 
@@ -6111,6 +6149,8 @@ function showSoloResult() {
   if (G.source !== 'practice') {
     saveGameToHistory(G.questions, G.solo.answers, G.subject, G.subcategory, G.grade, G.difficulty);
     updateStats(G.solo.correct, total, false);
+  } else {
+    recordPracticeResult(G.questions, G.solo.answers);
   }
   showScreen('screen-result');
 }
@@ -6342,10 +6382,44 @@ function saveGameToHistory(questions, answers, subject, subcategory, grade, diff
     // Fehlende Felder bei alten Einträgen ergänzen
     if (!h[key].difficulty && difficulty) h[key].difficulty = difficulty;
     h[key].timesSeen++;
-    if (!wasCorrect) h[key].timesWrong++;
+    if (!wasCorrect) {
+      h[key].timesWrong++;
+      h[key].correctStreak = 0;
+    } else {
+      h[key].correctStreak = (h[key].correctStreak || 0) + 1;
+      // 3× hintereinander richtig → gemeistert: fällt aus den Übungsfragen heraus
+      if (h[key].timesWrong > 0 && h[key].correctStreak >= 3) {
+        h[key].timesWrong = 0;
+        h[key].correctStreak = 0;
+      }
+    }
     h[key].lastSeen = now;
   });
   saveHistory(h);
+}
+
+// Üben-Session: nur Richtig-Streak/Meistern aktualisieren (kein timesSeen/timesWrong-Aufblähen)
+function recordPracticeResult(questions, answers) {
+  const h = getHistory();
+  let changed = false;
+  questions.forEach((q, i) => {
+    const key = q.question.slice(0, 80);
+    if (!h[key]) return;
+    const wasCorrect = answers && answers[i] !== undefined && answers[i] === q.correct;
+    if (wasCorrect) {
+      h[key].correctStreak = (h[key].correctStreak || 0) + 1;
+      // 3× hintereinander richtig → gemeistert: fällt aus den Übungsfragen heraus
+      if (h[key].timesWrong > 0 && h[key].correctStreak >= 3) {
+        h[key].timesWrong = 0;
+        h[key].correctStreak = 0;
+      }
+    } else {
+      h[key].correctStreak = 0;
+    }
+    h[key].lastSeen = Date.now();
+    changed = true;
+  });
+  if (changed) saveHistory(h);
 }
 
 const SUBJECT_ICONS = {
@@ -6399,9 +6473,11 @@ function _pBack(label, fn) {
 
 function _qCard(q) {
   const w = q.timesWrong > 0;
+  const streak = q.correctStreak || 0;
   return `<div style="background:var(--surface);border:1.5px solid ${w?'rgba(255,71,87,.25)':'var(--border)'};border-radius:10px;padding:11px 13px;margin-bottom:8px;">
-    <div style="display:flex;gap:7px;margin-bottom:7px;">
+    <div style="display:flex;gap:7px;margin-bottom:7px;align-items:flex-start;">
       <span style="font-size:.7rem;font-weight:700;flex-shrink:0;margin-top:2px;${w?'color:var(--red)':'color:var(--green)'};">${w?'✗×'+q.timesWrong:'✓'}</span>
+      ${w&&streak>0?`<span style="font-size:.66rem;font-weight:700;flex-shrink:0;margin-top:2px;color:var(--green);" title="Noch ${3-streak}× richtig bis gemeistert">${streak}/3 ✓</span>`:''}
       <div style="font-size:.84rem;font-weight:600;line-height:1.4;">${esc(q.question)}</div>
     </div>
     <div style="font-size:.8rem;color:var(--green)${q.explanation?';margin-bottom:5px':''};">→ ${esc(q.options?.[q.correct]??'')}</div>
@@ -7096,7 +7172,7 @@ function renderCatalogList() {
             <div class="ci-meta">${cat.questions?.length || 0} Fragen</div>
           </div>
           <div class="catalog-item-actions">
-            <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen"<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>
+            <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>
           </div>
         </div>`;
       });
@@ -7115,9 +7191,9 @@ function renderCatalogList() {
           <div class="ci-meta">${cat.desc ? esc(cat.desc) : cat.questions.length + ' Frage' + (cat.questions.length !== 1 ? 'n' : '')}</div>
         </div>
         <div class="catalog-item-actions">
-          <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen"<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>
-          <div class="icon-btn" onclick="editCatalog('${cat.id}')" title="Bearbeiten"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
-          <div class="icon-btn del" onclick="deleteCatalog('${cat.id}')" title="Löschen"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+          <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="icon-btn" onclick="editCatalog('${cat.id}')" title="Bearbeiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
+          <div class="icon-btn del" onclick="deleteCatalog('${cat.id}')" title="Löschen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
         </div>
       </div>`;
     });
@@ -7203,21 +7279,40 @@ function renderEditorQList() {
         '<div class="editor-q-text">' + (i+1) + '. ' + esc(q.question) + '</div>' +
         '<div class="editor-q-answer">✓ ' + esc(q.options[q.correct]) + '</div>' +
       '</div>' +
-      '<div class="icon-btn del" onclick="removeQuestion(' + i + ')"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>' +
+      '<div class="catalog-item-actions" style="display:flex;gap:6px;flex-shrink:0;">' +
+        '<div class="icon-btn" onclick="editQuestion(' + i + ')" title="Bearbeiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>' +
+        '<div class="icon-btn del" onclick="removeQuestion(' + i + ')" title="Löschen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>' +
+      '</div>' +
     '</div>'
   ).join('');
 }
 
 function removeQuestion(idx) { editingCatalog.questions.splice(idx, 1); renderEditorQList(); }
 
+let editingQuestionIdx = null;
 function showQuestionForm() {
+  editingQuestionIdx = null;
+  const _t = document.querySelector('#q-form .q-form-title'); if (_t) _t.textContent = 'Neue Frage hinzufügen';
   document.getElementById('q-form').style.display = 'block';
   ['qf-question','qf-explanation','qf-topic'].forEach(id => document.getElementById(id).value = '');
   ['opt-0','opt-1','opt-2','opt-3'].forEach(id => document.getElementById(id).value = '');
   document.querySelectorAll('.correct-radio').forEach(r => r.checked = false);
   document.getElementById('qf-question').focus();
 }
-function hideQuestionForm() { document.getElementById('q-form').style.display = 'none'; }
+function editQuestion(idx) {
+  const q = editingCatalog.questions[idx];
+  if (!q) return;
+  editingQuestionIdx = idx;
+  const _t = document.querySelector('#q-form .q-form-title'); if (_t) _t.textContent = 'Frage bearbeiten';
+  document.getElementById('q-form').style.display = 'block';
+  document.getElementById('qf-question').value = q.question || '';
+  document.getElementById('qf-explanation').value = (q.explanation && q.explanation !== 'Keine Erklärung angegeben.') ? q.explanation : '';
+  document.getElementById('qf-topic').value = (q.topic && q.topic !== 'Allgemein') ? q.topic : '';
+  ['opt-0','opt-1','opt-2','opt-3'].forEach((id, j) => { document.getElementById(id).value = q.options[j] || ''; });
+  document.querySelectorAll('.correct-radio').forEach((r, j) => { r.checked = (j === q.correct); });
+  document.getElementById('qf-question').focus();
+}
+function hideQuestionForm() { document.getElementById('q-form').style.display = 'none'; editingQuestionIdx = null; }
 
 function saveQuestion() {
   const question = document.getElementById('qf-question').value.trim();
@@ -7226,11 +7321,13 @@ function saveQuestion() {
   if (!question)           { showToast('Bitte eine Frage eingeben', 'error'); return; }
   if (opts.some(o => !o)) { showToast('Bitte alle 4 Optionen ausfüllen', 'error'); return; }
   if (!radio)              { showToast('Bitte die richtige Antwort markieren', 'error'); return; }
-  editingCatalog.questions.push({
+  const newQ = {
     question, options: opts, correct: parseInt(radio.value),
     explanation: document.getElementById('qf-explanation').value.trim() || 'Keine Erklärung angegeben.',
     topic: document.getElementById('qf-topic').value.trim() || 'Allgemein'
-  });
+  };
+  if (editingQuestionIdx != null) editingCatalog.questions[editingQuestionIdx] = newQ;
+  else editingCatalog.questions.push(newQ);
   renderEditorQList();
   hideQuestionForm();
   showToast('Frage gespeichert ✓', 'success');
@@ -8027,7 +8124,7 @@ async function renderFriendsList() {
           + '<div class="friend-grade">Klasse ' + (f.grade||'?') + '</div></div>'
           + '<div style="display:flex;gap:8px;">'
           + '<button class="btn btn-primary" style="width:auto;padding:7px 14px;font-size:.78rem;" onclick="openChallengeModal(\'' + f.uid + '\',\'' + esc(f.username) + '\')">⚔️ Herausfordern</button>'
-          + '<div class="icon-btn del" onclick="removeFriend(\'' + f.uid + '\')" title="Entfernen"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>'
+          + '<div class="icon-btn del" onclick="removeFriend(\'' + f.uid + '\')" title="Entfernen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>'
           + '</div></div>';
       });
     }
@@ -8137,7 +8234,7 @@ async function sendChallenge() {
   }
 
   const totalRounds = parseInt(document.querySelector('#chal-rounds-pills .pill.active')?.dataset.val || '1');
-  const myName = currentUser?.username || 'Spieler 1';
+  const myName = myDisplayName();
   const code   = generateRoomCode();
   const players = {
     p1: { name: myName, q:0, done:false, score:{correct:0,points:0} },
@@ -8198,7 +8295,7 @@ async function acceptChallenge() {
   if (!pendingChallenge) return;
   document.getElementById('modal-challenge-incoming').classList.add('hidden');
   const { key, data } = pendingChallenge;
-  const myName = currentUser?.username || 'Spieler 2';
+  const myName = myDisplayName();
   try {
     await fbDB.ref('rooms/' + data.roomCode + '/players/p2').update({ name:myName, q:0, done:false, score:{correct:0,points:0} });
     await fbDB.ref('challenges/' + currentUser.uid + '/' + key).remove();
@@ -8360,9 +8457,14 @@ document.getElementById('modal-firebase').addEventListener('click', e => {
 });
 
 // ── create room ──
+// Eigener Anzeigename für Online-Spiele: Nutzername, sonst "Gast"
+function myDisplayName() {
+  return (currentUser && currentUser.username) ? currentUser.username : 'Gast';
+}
+
 async function createOnlineRoom(opts = {}) {
   if (!initFirebase()) { openFirebaseModal(); return; }
-  const myName = opts.myName || document.getElementById('online-my-name').value.trim() || 'Spieler 1';
+  const myName = opts.myName || myDisplayName();
   const code = generateRoomCode();
   onlineRoomCode = code;
   onlineRole = 'host';
@@ -8431,7 +8533,7 @@ async function doJoinRoom(code, myName) {
 }
 async function joinOnlineRoom() {
   const code   = (document.getElementById('join-code-input').value.trim()).toUpperCase();
-  const myName = document.getElementById('join-name-input').value.trim() || 'Spieler 2';
+  const myName = myDisplayName();
   await doJoinRoom(code, myName);
 }
 
@@ -9008,9 +9110,9 @@ async function refreshLibrary() {
             +   ' · ' + remaining + ' ungesehen'
             + '</div>'
             + '<div class="catalog-item-actions" style="display:flex;gap:6px;flex:none;">'
-            +   '<div class="icon-btn play" title="8 zufällige spielen" onclick="playFromBank(' + idx + ')"<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>'
-            +   '<div class="icon-btn" title="8 neue Fragen hinzufügen" style="font-size:.8rem;" onclick="addToBank(' + idx + ')"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>'
-            +   '<div class="icon-btn del" title="Pool löschen" onclick="deleteFromBank(' + idx + ')"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>'
+            +   '<div class="icon-btn play" title="8 zufällige spielen" onclick="playFromBank(' + idx + ')"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>'
+            +   '<div class="icon-btn" title="8 neue Fragen hinzufügen" style="font-size:.8rem;" onclick="addToBank(' + idx + ')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>'
+            +   '<div class="icon-btn del" title="Pool löschen" onclick="deleteFromBank(' + idx + ')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>'
             + '</div></div>';
         });
       });
