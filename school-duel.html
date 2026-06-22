@@ -141,7 +141,7 @@
   .pill-action.dice:hover, .pill-action.dice.active { background:var(--accent) !important; color:#fff !important; border-style:solid !important; }
   .pill[data-val="gemischt"] { border-color:var(--green); color:var(--green); }
   .pill[data-val="gemischt"].active { background:var(--green); color:#fff; }
-  .all-random-btn { width:100%; background:none; border:1px dashed var(--border); color:var(--muted); border-radius:10px; padding:8px; font-size:.8rem; font-family:'Space Grotesk',sans-serif; cursor:pointer; margin-bottom:10px; transition:all .2s; }
+  .all-random-btn { width:auto; background:none; border:1px solid var(--border); color:var(--muted); border-radius:6px; padding:6px 12px; font-size:.75rem; font-family:'Space Grotesk',sans-serif; cursor:pointer; transition:all .2s; }
   .all-random-btn:hover { border-color:var(--accent); color:var(--accent); background:rgba(108,99,255,.07); }
   .question-text { font-size:1.15rem; font-weight:600; line-height:1.5; margin-bottom:22px; }
 
@@ -625,7 +625,7 @@
 <div class="modal-backdrop hidden" id="modal-challenge-send">
   <div class="modal" style="max-width:520px;">
     <div style="font-size:1.1rem;font-weight:700;margin-bottom:12px;" id="challenge-target-text"></div>
-    <button class="all-random-btn" onclick="randomizeAll('chal')">🎲 Alles zufällig auswählen</button>
+    <button class="all-random-btn" onclick="randomizeAll('chal')">Zufall</button>
     <div class="label">Fragenquelle</div>
     <div class="pill-row" id="chal-source-pills">
       <div class="pill active" data-val="ai">🤖 KI generiert</div>
@@ -904,7 +904,7 @@
 
         <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;">
           <div></div>
-          <button class="all-random-btn" onclick="randomizeAll('solo')">🎲 Zufallsauswahl</button>
+          <button class="all-random-btn" onclick="randomizeAll('solo')">Zufall</button>
         </div>
 
         <button class="btn btn-primary" id="start-btn" disabled>Solo-Quiz starten →</button>
@@ -1189,7 +1189,7 @@
 
         <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;">
           <div></div>
-          <button class="all-random-btn" onclick="randomizeAll('duel')">🎲 Zufallsauswahl</button>
+          <button class="all-random-btn" onclick="randomizeAll('duel')">Zufall</button>
         </div>
 
         <button class="btn btn-primary" id="duel-start-btn" disabled>Duell starten ⚔️</button>
@@ -1262,7 +1262,7 @@
 
           <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px;">
             <div></div>
-            <button class="all-random-btn" onclick="randomizeAll('online')">🎲 Zufallsauswahl</button>
+            <button class="all-random-btn" onclick="randomizeAll('online')">Zufall</button>
           </div>
 
           <div class="label">Anzahl Runden</div>
@@ -1634,7 +1634,7 @@
 <div class="modal-backdrop hidden" id="modal-round-pick">
   <div class="modal" style="max-width:520px;max-height:90vh;overflow-y:auto;">
     <div style="font-size:1rem;font-weight:700;margin-bottom:12px;" id="rp-title">Runde 2: Spieler 2 wählt</div>
-    <button class="all-random-btn" onclick="randomizeAll('rp')">🎲 Alles zufällig auswählen</button>
+    <button class="all-random-btn" onclick="randomizeAll('rp')">Zufall</button>
     <div class="label">Fragenquelle</div>
     <div class="pill-row" id="rp-source-pills">
       <div class="pill active" data-val="ai">🤖 KI generiert</div>
