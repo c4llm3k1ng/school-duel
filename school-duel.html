@@ -4658,7 +4658,7 @@ function showModeSetup(mode) {
     if (back) back.classList.toggle('visible', t === mode);
   });
   if (mode === 'duel')      showDuelModeLanding();
-  if (mode === 'quickduel') showQdModeLanding();
+  if (mode === 'quickduel') { _qdConnMode = 'online'; showQdType('schul'); }
   if (mode === 'solo')      showSoloLanding();
   if (mode === 'practice')  renderPracticeTab();
   updateOfflineUI?.();
