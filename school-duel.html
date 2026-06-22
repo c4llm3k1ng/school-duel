@@ -85,9 +85,21 @@
   /* NAV TABS */
   .nav-tabs { display:flex; gap:6px; margin-bottom:20px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding-bottom:2px; }
   .nav-tabs::-webkit-scrollbar { display:none; }
-  .nav-tab { flex-shrink:0; padding:10px 14px; border-radius:10px; border:1px solid var(--border); background:var(--surface2); color:var(--muted); font-family:'Poppins',sans-serif; font-size:.85rem; font-weight:600; cursor:pointer; transition:all .15s; text-align:center; white-space:nowrap; }
-  .nav-tab:hover { border-color:var(--accent); color:var(--text); }
-  .nav-tab.active { background:rgba(45,212,191,.15); border-color:var(--accent); color:var(--accent); box-shadow:var(--glow-accent-soft); }
+  .nav-tab { flex-shrink:0; display:inline-flex; align-items:center; gap:7px; padding:10px 15px; border-radius:12px;
+    border:1px solid var(--glass-border);
+    background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0) 55%), var(--glass);
+    color:var(--muted); font-family:'Poppins',sans-serif; font-size:.86rem; font-weight:600; cursor:pointer;
+    transition:transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .2s, border-color .18s, color .18s, background .18s;
+    text-align:center; white-space:nowrap; backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 6px 16px rgba(0,0,0,.28); }
+  .nav-tab svg { width:16px; height:16px; flex-shrink:0; }
+  .nav-tab:hover { border-color:rgba(45,212,191,.5); color:var(--text); transform:translateY(-1px);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.12), 0 0 18px rgba(45,212,191,.2), 0 8px 20px rgba(0,0,0,.35); }
+  .nav-tab.active { color:var(--accent);
+    background:linear-gradient(180deg, rgba(45,212,191,.2), rgba(45,212,191,.06)), var(--glass);
+    border-color:rgba(45,212,191,.65);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.14), inset 0 0 16px rgba(45,212,191,.14), 0 0 0 1px rgba(45,212,191,.4), 0 0 24px rgba(45,212,191,.4); }
+  .nav-tab.active svg { filter:drop-shadow(0 0 6px rgba(45,212,191,.7)); }
 
   /* MODE CARDS (Spielen-Landing) */
   .mode-card { display:flex; align-items:center; gap:16px;
@@ -125,7 +137,9 @@
   .duel-type-card:hover { border-color:rgba(45,212,191,.55); transform:translateY(-3px);
     box-shadow:inset 0 1px 0 rgba(255,255,255,.16), 0 0 0 1px rgba(45,212,191,.4), 0 0 30px rgba(45,212,191,.4), 0 16px 36px rgba(0,0,0,.5);
     animation:cardGlowPulse 1.8s ease-in-out infinite; }
-  .duel-type-card .dtc-icon { font-size:1.9rem; margin-bottom:10px; filter:drop-shadow(0 0 8px rgba(45,212,191,.45)); }
+  .duel-type-card .dtc-icon { width:52px; height:52px; margin:0 auto 12px; display:flex; align-items:center; justify-content:center; color:var(--accent); border-radius:14px; background:linear-gradient(180deg, rgba(45,212,191,.16), rgba(45,212,191,.04)); border:1px solid rgba(45,212,191,.3); box-shadow:inset 0 0 14px rgba(45,212,191,.18), 0 0 16px rgba(45,212,191,.15); transition:box-shadow .25s; }
+  .duel-type-card .dtc-icon svg { width:28px; height:28px; filter:drop-shadow(0 0 6px rgba(45,212,191,.6)); }
+  .duel-type-card:hover .dtc-icon { box-shadow:inset 0 0 18px rgba(45,212,191,.3), 0 0 24px rgba(45,212,191,.4); }
   .duel-type-card .dtc-title { font-size:.98rem; font-weight:700; letter-spacing:-.01em; color:var(--text); margin-bottom:5px; }
   .duel-type-card .dtc-desc { font-size:.75rem; color:var(--muted); line-height:1.4; }
   .duel-type-back { display:inline-flex; align-items:center; gap:5px; margin-bottom:14px; cursor:pointer; color:var(--muted); font-size:.85rem; font-weight:600; }
@@ -270,10 +284,11 @@
   .ci-name { font-weight:700; font-size:.95rem; }
   .ci-meta { font-size:.78rem; color:var(--muted); margin-top:3px; }
   .catalog-item-actions { display:flex; gap:8px; }
-  .icon-btn { width:34px; height:34px; border-radius:8px; border:1px solid var(--border); background:var(--surface); color:var(--muted); display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:.95rem; transition:all .15s; user-select:none; }
-  .icon-btn:hover { border-color:var(--accent); color:var(--accent); }
-  .icon-btn.del:hover { border-color:var(--red); color:var(--red); }
-  .icon-btn.play:hover { border-color:var(--green); color:var(--green); }
+  .icon-btn { width:36px; height:36px; border-radius:10px; border:1px solid var(--glass-border); background:linear-gradient(180deg, rgba(255,255,255,.05), transparent), var(--glass); color:var(--muted); display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:.95rem; transition:transform .18s, box-shadow .2s, border-color .18s, color .18s; user-select:none; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:inset 0 1px 0 rgba(255,255,255,.06), 0 4px 12px rgba(0,0,0,.25); }
+  .icon-btn svg { width:17px; height:17px; }
+  .icon-btn:hover { border-color:var(--accent); color:var(--accent); transform:translateY(-1px); box-shadow:0 0 16px rgba(45,212,191,.3), 0 6px 16px rgba(0,0,0,.3); }
+  .icon-btn.del:hover { border-color:var(--red); color:var(--red); box-shadow:0 0 16px rgba(255,90,106,.3), 0 6px 16px rgba(0,0,0,.3); }
+  .icon-btn.play:hover { border-color:var(--green); color:var(--green); box-shadow:0 0 16px rgba(62,207,142,.3), 0 6px 16px rgba(0,0,0,.3); }
   .empty-state { text-align:center; padding:40px 20px; color:var(--muted); font-size:.9rem; }
   .empty-state .es-icon { font-size:2.5rem; margin-bottom:12px; }
 
@@ -310,11 +325,11 @@
 
   /* TOPIC CARD PICKER */
   .topic-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-bottom:12px; }
-  .topic-card { background:var(--surface2); border:2px solid var(--border); border-radius:var(--radius); padding:18px 10px 14px; text-align:center; cursor:pointer; transition:all .15s; user-select:none; }
-  .topic-card:hover { border-color:var(--accent); transform:translateY(-3px); box-shadow:0 12px 32px rgba(45,212,191,.2); }
-  .topic-card.tc-selected { border-color:var(--accent); background:color-mix(in srgb, var(--accent) 12%, var(--surface2)); }
-  .topic-card .tc-icon { font-size:2rem; display:block; margin-bottom:5px; }
-  .topic-card .tc-label { font-size:.82rem; font-weight:600; }
+  .topic-card { background:linear-gradient(180deg, rgba(255,255,255,.05), transparent 45%), var(--glass); border:1px solid var(--glass-border); border-radius:var(--radius); padding:18px 10px 14px; text-align:center; cursor:pointer; transition:transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .25s, border-color .2s; user-select:none; backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 8px 22px rgba(0,0,0,.3); }
+  .topic-card:hover { border-color:rgba(45,212,191,.55); transform:translateY(-3px); box-shadow:inset 0 1px 0 rgba(255,255,255,.12), 0 0 0 1px rgba(45,212,191,.35), 0 0 26px rgba(45,212,191,.35), 0 14px 32px rgba(0,0,0,.45); }
+  .topic-card.tc-selected { border-color:rgba(45,212,191,.7); background:linear-gradient(180deg, rgba(45,212,191,.18), rgba(45,212,191,.05)), var(--glass); box-shadow:inset 0 0 16px rgba(45,212,191,.14), 0 0 0 1px rgba(45,212,191,.45), 0 0 26px rgba(45,212,191,.4); }
+  .topic-card .tc-icon { font-size:2rem; display:block; margin-bottom:5px; filter:drop-shadow(0 0 6px rgba(45,212,191,.25)); }
+  .topic-card .tc-label { font-size:.82rem; font-weight:600; color:var(--text); }
   .topic-diff-back { font-size:.8rem; color:var(--muted); cursor:pointer; margin-bottom:8px; display:inline-block; }
   .topic-diff-back:hover { color:var(--accent); }
 
@@ -343,7 +358,8 @@
 
   @media (max-width:480px) {
     .name-row, .duel-result-grid, .options-grid { grid-template-columns:1fr; }
-    .nav-tab { font-size:.75rem; padding:8px 6px; }
+    .nav-tab { font-size:.78rem; padding:9px 11px; gap:6px; }
+    .nav-tab svg { width:15px; height:15px; }
   }
 
   /* ── ONLINE DUEL ── */
@@ -396,8 +412,23 @@
   .auth-error { color:var(--red); font-size:.82rem; min-height:20px; text-align:center; margin:8px 0; }
 
   /* USER BADGE */
-  .user-badge { display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:50px; background:var(--surface2); border:1px solid var(--border); font-size:.8rem; font-weight:600; cursor:pointer; transition:all .15s; }
-  .user-badge:hover { border-color:var(--accent); color:var(--accent); }
+  .user-badge { display:inline-flex; align-items:center; gap:7px; padding:8px 14px; border-radius:50px;
+    background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0) 55%), var(--glass);
+    border:1px solid var(--glass-border); font-size:.82rem; font-weight:600; color:var(--text); cursor:pointer;
+    transition:transform .18s, box-shadow .2s, border-color .18s, color .18s;
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.1), 0 6px 16px rgba(0,0,0,.3); }
+  .user-badge:hover { border-color:rgba(45,212,191,.55); color:var(--accent); transform:translateY(-1px);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.12), 0 0 20px rgba(45,212,191,.3), 0 8px 20px rgba(0,0,0,.35); }
+  .top-set-btn { display:inline-flex; align-items:center; gap:7px; padding:8px 15px; border-radius:50px;
+    background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0) 55%), var(--glass);
+    border:1px solid var(--glass-border); color:var(--text); font-family:'Poppins',sans-serif; font-size:.84rem; font-weight:600; cursor:pointer;
+    transition:transform .18s, box-shadow .2s, border-color .18s, color .18s;
+    backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.1), 0 6px 16px rgba(0,0,0,.3); }
+  .top-set-btn svg, .user-badge svg { width:16px; height:16px; flex-shrink:0; }
+  .top-set-btn:hover { border-color:rgba(45,212,191,.55); color:var(--accent); transform:translateY(-1px);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.12), 0 0 20px rgba(45,212,191,.3), 0 8px 20px rgba(0,0,0,.35); }
 
   /* FRIENDS */
   .friend-item { display:flex; align-items:center; gap:10px; padding:13px 0; border-bottom:1px solid var(--border); }
@@ -743,6 +774,23 @@
   </div>
 </div>
 
+<div class="modal-backdrop hidden" id="modal-qd-rounds">
+  <div class="modal" style="max-width:380px;">
+    <div style="font-size:1.05rem;font-weight:700;margin-bottom:6px;">⚡ Herausfordern</div>
+    <div style="font-size:.85rem;color:var(--muted);margin-bottom:16px;" id="qdr-sub">Wie viele Runden?</div>
+    <div class="label">Anzahl Runden</div>
+    <div class="pill-row" id="qdr-rounds-pills">
+      <div class="pill active" data-val="1">1 Runde</div>
+      <div class="pill" data-val="3">3 Runden</div>
+      <div class="pill" data-val="5">5 Runden</div>
+    </div>
+    <div class="form-row" style="margin-top:16px;">
+      <button class="btn btn-secondary" onclick="closeQdRounds()">Abbrechen</button>
+      <button class="btn btn-primary" onclick="confirmQdRounds()">Herausfordern ⚔️</button>
+    </div>
+  </div>
+</div>
+
 <!-- ═══════════════════════════ SCREEN: AUTH ═══════════════════════════ -->
 <div class="screen active" id="screen-auth">
   <div class="auth-wrap">
@@ -821,16 +869,16 @@
   <div class="tagline">Lerne spielend – fordere dein Wissen heraus</div>
   <div id="offline-banner" class="offline-banner">✈️ Offline-Modus – nur Kataloge &amp; lokale Spiele verfügbar</div>
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-    <div id="user-badge" class="user-badge" style="display:none;" onclick="openProfileModal()">👤</div>
+    <div id="user-badge" class="user-badge" style="display:none;" onclick="openProfileModal()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
     <div style="display:flex;gap:8px;margin-left:auto;">
-      <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.85rem;" onclick="openSettingsModal()">⚙️ Einstellungen</button>
+      <button class="top-set-btn" onclick="openSettingsModal()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Einstellungen</button>
     </div>
   </div>
 
   <div class="nav-tabs">
-    <div class="nav-tab active" id="tab-btn-spielen" onclick="switchTab('spielen')">🎮 Spielen</div>
-    <div class="nav-tab"        id="tab-btn-catalog"  onclick="switchTab('catalog')">📚 Kataloge</div>
-    <div class="nav-tab"        id="tab-btn-library"  onclick="switchTab('library')">📖 Bibliothek</div>
+    <div class="nav-tab active" id="tab-btn-spielen" onclick="switchTab('spielen')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.544-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.152A4 4 0 0 0 17.32 5z"/></svg>Spielen</div>
+    <div class="nav-tab"        id="tab-btn-catalog"  onclick="switchTab('catalog')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Kataloge</div>
+    <div class="nav-tab"        id="tab-btn-library"  onclick="switchTab('library')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Bibliothek</div>
   </div>
 
   <!-- SPIELEN LANDING -->
@@ -879,12 +927,12 @@
     <div id="solo-type-landing">
       <div class="duel-type-grid">
         <div class="duel-type-card" onclick="showSoloType('schul')">
-          <div class="dtc-icon">🏫</div>
+          <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <div class="dtc-title">Schulfragen</div>
           <div class="dtc-desc">Klasse, Fach &amp; Schwierigkeit wählen</div>
         </div>
         <div class="duel-type-card" onclick="showSoloType('catalog')">
-          <div class="dtc-icon">📚</div>
+          <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
           <div class="dtc-title">Katalog</div>
           <div class="dtc-desc">Thema &amp; Schwierigkeit aus Katalogen wählen</div>
         </div>
@@ -989,12 +1037,12 @@
     <div id="qd-mode-landing">
       <div class="duel-type-grid">
         <div class="duel-type-card" onclick="pickQdMode('online')">
-          <div class="dtc-icon">🌐</div>
+          <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <div class="dtc-title">Online</div>
           <div class="dtc-desc">Gegen Freunde online spielen</div>
         </div>
         <div class="duel-type-card" onclick="pickQdMode('local')">
-          <div class="dtc-icon">⚔️</div>
+          <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" y1="19" x2="19" y2="13"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="19" y1="21" x2="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" y1="14" x2="9" y2="18"/><line x1="7" y1="17" x2="4" y2="20"/><line x1="3" y1="19" x2="5" y2="21"/></svg></div>
           <div class="dtc-title">Lokal</div>
           <div class="dtc-desc">Auf einem Gerät spielen</div>
         </div>
@@ -1005,12 +1053,12 @@
     <div id="qd-type-landing" style="display:none;">
       <div class="duel-type-grid">
         <div class="duel-type-card" onclick="showQdType('schul')">
-          <div class="dtc-icon">🏫</div>
+          <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <div class="dtc-title">Schulfragen</div>
           <div class="dtc-desc">Zufällige Schulfragen</div>
         </div>
         <div class="duel-type-card" onclick="showQdType('catalog')">
-          <div class="dtc-icon">📚</div>
+          <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
           <div class="dtc-title">Katalog</div>
           <div class="dtc-desc">Thema &amp; Schwierigkeit wählen</div>
         </div>
@@ -1038,15 +1086,7 @@
 
     <!-- SCHULFRAGEN ONLINE -->
     <div id="qd-schul-online" style="display:none;">
-      <div class="card">
-        <div style="font-size:.85rem;color:var(--muted);margin-bottom:14px;">Fordere einen Freund online heraus – Klasse, Fach und Schwierigkeit werden zufällig gewählt.</div>
-        <div class="label">Anzahl Runden</div>
-        <div class="pill-row" id="qd-online-rounds-pills">
-          <div class="pill active" data-val="1">1 Runde</div>
-          <div class="pill" data-val="3">3 Runden</div>
-          <div class="pill" data-val="5">5 Runden</div>
-        </div>
-      </div>
+      <div style="font-size:.85rem;color:var(--muted);margin-bottom:14px;">Fordere einen Freund online heraus – Klasse, Fach und Schwierigkeit werden zufällig gewählt. Die Rundenzahl wählst du beim Herausfordern.</div>
       <div id="qd-friends-list"><div class="loading-state"><div class="spinner"></div>Lade Freunde…</div></div>
     </div>
 
@@ -1115,12 +1155,12 @@
     <div id="duel-mode-landing">
       <div class="duel-type-grid">
         <div class="duel-type-card" onclick="pickDuelConnMode('online')">
-          <div class="dtc-icon">🌐</div>
+          <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <div class="dtc-title">Online</div>
           <div class="dtc-desc">Gegen Freunde online spielen</div>
         </div>
         <div class="duel-type-card" onclick="pickDuelConnMode('local')">
-          <div class="dtc-icon">⚔️</div>
+          <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" y1="19" x2="19" y2="13"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="19" y1="21" x2="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" y1="14" x2="9" y2="18"/><line x1="7" y1="17" x2="4" y2="20"/><line x1="3" y1="19" x2="5" y2="21"/></svg></div>
           <div class="dtc-title">Lokal</div>
           <div class="dtc-desc">Auf einem Gerät spielen</div>
         </div>
@@ -1131,12 +1171,12 @@
     <div id="duel-type-landing" style="display:none;">
       <div class="duel-type-grid">
         <div class="duel-type-card" onclick="showDuelType('schul')">
-          <div class="dtc-icon">🏫</div>
+          <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <div class="dtc-title">Schulfragen-Duell</div>
           <div class="dtc-desc">Klasse, Fach &amp; Schwierigkeit wählen</div>
         </div>
         <div class="duel-type-card" onclick="showDuelType('catalog')">
-          <div class="dtc-icon">📚</div>
+          <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
           <div class="dtc-title">Katalog-Duell</div>
           <div class="dtc-desc">Thema &amp; Schwierigkeit aus Katalogen wählen</div>
         </div>
@@ -4710,7 +4750,7 @@ function showModeSetup(mode) {
     if (back) back.classList.toggle('visible', t === mode);
   });
   if (mode === 'duel')      showDuelModeLanding();
-  if (mode === 'quickduel') { _qdConnMode = 'online'; showQdType('schul'); }
+  if (mode === 'quickduel') { showQuickDuelDirect(); }
   if (mode === 'solo')      showSoloLanding();
   if (mode === 'practice')  renderPracticeTab();
   updateOfflineUI?.();
@@ -4826,6 +4866,30 @@ function showQdType(type) {
     initCatalogPicker('qd');
   }
 }
+// Schnellduell: direkt zur Online-Freundesliste (kein Online/Lokal, kein Typ, keine Vorab-Runden)
+function showQuickDuelDirect() {
+  _qdConnMode = 'online';
+  document.getElementById('qd-mode-landing').style.display = 'none';
+  document.getElementById('qd-type-landing').style.display = 'none';
+  document.getElementById('qd-schul-local').style.display = 'none';
+  document.getElementById('qd-catalog-section').style.display = 'none';
+  document.getElementById('qd-schul-online').style.display = '';
+  document.getElementById('qd-type-back-top').style.display = 'none';
+  renderQuickDuelFriends('qd-friends-list', 'schul');
+}
+let _qdPendingUid = null, _qdPendingName = null;
+function openQdRounds(uid, name) {
+  _qdPendingUid = uid; _qdPendingName = name;
+  document.getElementById('qdr-sub').textContent = name + ' herausfordern – wie viele Runden?';
+  document.querySelectorAll('#qdr-rounds-pills .pill').forEach(p => p.classList.toggle('active', p.dataset.val === '1'));
+  document.getElementById('modal-qd-rounds').classList.remove('hidden');
+}
+function closeQdRounds() { document.getElementById('modal-qd-rounds').classList.add('hidden'); }
+function confirmQdRounds() {
+  const rounds = parseInt(document.querySelector('#qdr-rounds-pills .pill.active')?.dataset.val || '1', 10);
+  closeQdRounds();
+  sendQuickChallenge(_qdPendingUid, _qdPendingName, rounds);
+}
 function checkQdCatalogReady() {
   const has = !!G.qdCatalogId;
   const isOnline = _qdConnMode === 'online';
@@ -4868,7 +4932,7 @@ async function renderQuickDuelFriends(containerId = 'qd-friends-list', qdType = 
     profiles.filter(f => f.username).forEach(f => {
       const fn = qdType === 'catalog'
         ? `sendQuickCatalogChallenge('${f.uid}','${esc(f.username)}')`
-        : `sendQuickChallenge('${f.uid}','${esc(f.username)}')`;
+        : `openQdRounds('${f.uid}','${esc(f.username)}')`;
       html += '<div class="friend-item">'
         + '<div style="flex:1;"><div class="friend-name">' + esc(f.username) + '</div>'
         + '<div class="friend-grade">Klasse ' + (f.grade||'?') + '</div></div>'
@@ -4917,11 +4981,11 @@ async function sendQuickCatalogChallenge(targetUid, targetUsername) {
   } catch(e) { showToast('Fehler: ' + e.message, 'error'); }
 }
 
-async function sendQuickChallenge(targetUid, targetUsername) {
+async function sendQuickChallenge(targetUid, targetUsername, roundsArg) {
   if (!currentUser) { showToast('Bitte erst anmelden', 'error'); return; }
   if (!initFirebase()) { openFirebaseModal(); return; }
 
-  const totalRounds = parseInt(document.querySelector('#qd-online-rounds-pills .pill.active')?.dataset.val || '1');
+  const totalRounds = parseInt(roundsArg, 10) || 1;
   const grades   = ['5','6','7','8','9','10','11','12','gemischt'];
   const subjects = Object.keys(SUBCATEGORIES);
   const diffs    = ['leicht','mittel','schwer','gemischt'];
@@ -5004,6 +5068,17 @@ function setupPills(pid, key, cb) {
         p.classList.add('active');
       }
       if (cb) cb();
+    });
+  });
+}
+// Einzelauswahl: genau EINE aktive Pill (z.B. Rundenanzahl) – keine Mehrfachauswahl
+function setupSingleSelect(pid) {
+  const row = document.getElementById(pid);
+  if (!row) return;
+  row.querySelectorAll('.pill:not(.pill-action)').forEach(p => {
+    p.addEventListener('click', () => {
+      row.querySelectorAll('.pill').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
     });
   });
 }
@@ -6981,7 +7056,7 @@ function renderCatalogList() {
             <div class="ci-meta">${cat.questions?.length || 0} Fragen</div>
           </div>
           <div class="catalog-item-actions">
-            <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen">▶️</div>
+            <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen"<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>
           </div>
         </div>`;
       });
@@ -7000,9 +7075,9 @@ function renderCatalogList() {
           <div class="ci-meta">${cat.desc ? esc(cat.desc) : cat.questions.length + ' Frage' + (cat.questions.length !== 1 ? 'n' : '')}</div>
         </div>
         <div class="catalog-item-actions">
-          <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen">▶️</div>
-          <div class="icon-btn" onclick="editCatalog('${cat.id}')" title="Bearbeiten">✏️</div>
-          <div class="icon-btn del" onclick="deleteCatalog('${cat.id}')" title="Löschen">🗑️</div>
+          <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen"<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="icon-btn" onclick="editCatalog('${cat.id}')" title="Bearbeiten"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
+          <div class="icon-btn del" onclick="deleteCatalog('${cat.id}')" title="Löschen"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
         </div>
       </div>`;
     });
@@ -7088,7 +7163,7 @@ function renderEditorQList() {
         '<div class="editor-q-text">' + (i+1) + '. ' + esc(q.question) + '</div>' +
         '<div class="editor-q-answer">✓ ' + esc(q.options[q.correct]) + '</div>' +
       '</div>' +
-      '<div class="icon-btn del" onclick="removeQuestion(' + i + ')">🗑️</div>' +
+      '<div class="icon-btn del" onclick="removeQuestion(' + i + ')"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>' +
     '</div>'
   ).join('');
 }
@@ -7302,7 +7377,7 @@ function startOfflineSession() {
   currentUser = cached || null;
   if (cached) {
     const badge = document.getElementById('user-badge');
-    if (badge) { badge.textContent = '👤 ' + cached.username; badge.style.display = 'inline-flex'; }
+    if (badge) { badge.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>' + esc(cached.username) + '</span>'; badge.style.display = 'inline-flex'; }
   }
   if (document.getElementById('screen-auth').classList.contains('active')) {
     showScreen('screen-home');
@@ -7362,7 +7437,7 @@ function initAuth() {
 function onUserLoggedIn() {
   guestMode = false; // Echter Login – Gast-Modus beenden
   const badge = document.getElementById('user-badge');
-  if (badge) { badge.textContent = '👤 ' + currentUser.username; badge.style.display = 'inline-flex'; }
+  if (badge) { badge.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>' + esc(currentUser.username) + '</span>'; badge.style.display = 'inline-flex'; }
   startChallengeListener();
   // Only navigate if still on auth screen
   if (document.getElementById('screen-auth').classList.contains('active')) {
@@ -7474,7 +7549,7 @@ async function doLogin() {
 // ═══════════════════════════════════════════════════════
 async function openProfileModal() {
   if (!currentUser) { openSettingsModal(); return; }
-  document.getElementById('profile-username').textContent = '👤 ' + currentUser.username;
+  document.getElementById('profile-username').innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;vertical-align:-3px;margin-right:6px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>' + esc(currentUser.username);
   const since = currentUser.createdAt ? new Date(currentUser.createdAt).toLocaleDateString('de-DE',{month:'long',year:'numeric'}) : '';
   document.getElementById('profile-since').textContent = since ? 'Dabei seit ' + since : '';
   // Load fresh stats
@@ -7912,7 +7987,7 @@ async function renderFriendsList() {
           + '<div class="friend-grade">Klasse ' + (f.grade||'?') + '</div></div>'
           + '<div style="display:flex;gap:8px;">'
           + '<button class="btn btn-primary" style="width:auto;padding:7px 14px;font-size:.78rem;" onclick="openChallengeModal(\'' + f.uid + '\',\'' + esc(f.username) + '\')">⚔️ Herausfordern</button>'
-          + '<div class="icon-btn del" onclick="removeFriend(\'' + f.uid + '\')" title="Entfernen">🗑️</div>'
+          + '<div class="icon-btn del" onclick="removeFriend(\'' + f.uid + '\')" title="Entfernen"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>'
           + '</div></div>';
       });
     }
@@ -7942,11 +8017,16 @@ document.querySelectorAll('#chal-subject-pills .pill:not(.pill-action)').forEach
 });
 setupPills('chal-grade-pills', '_chalGrade', () => {});
 setupPills('chal-diff-pills',  '_chalDiff',  () => {});
-setupPills('chal-rounds-pills', '_chalRounds', () => {});
-setupPills('duel-rounds-pills', '_duelRounds', () => {});
-setupPills('qd-rounds-pills',         '_qdRounds',       () => {});
-setupPills('qd-online-rounds-pills',  '_qdOnlineRounds', () => {});
-setupPills('online-rounds-pills',     '_onlineRounds',   () => {});
+// Rundenanzahl = Einzelauswahl (keine Mehrfachauswahl) in ALLEN Spielmodi
+setupSingleSelect('chal-rounds-pills');
+setupSingleSelect('duel-rounds-pills');
+setupSingleSelect('online-rounds-pills');
+setupSingleSelect('qd-rounds-pills');
+setupSingleSelect('qd-cat-rounds-pills');
+setupSingleSelect('qd-cat-online-rounds-pills');
+setupSingleSelect('dcat-rounds-pills');
+setupSingleSelect('dcat-online-rounds-pills');
+setupSingleSelect('qdr-rounds-pills');
 setupPills('rp-grade-pills',  'dGrade',      () => {});
 setupPills('rp-diff-pills',   'dDifficulty', () => {});
 document.querySelectorAll('#rp-subject-pills .pill:not(.pill-action)').forEach(p => {
@@ -8888,9 +8968,9 @@ async function refreshLibrary() {
             +   ' · ' + remaining + ' ungesehen'
             + '</div>'
             + '<div class="catalog-item-actions" style="display:flex;gap:6px;flex:none;">'
-            +   '<div class="icon-btn play" title="8 zufällige spielen" onclick="playFromBank(' + idx + ')">▶️</div>'
-            +   '<div class="icon-btn" title="8 neue Fragen hinzufügen" style="font-size:.8rem;" onclick="addToBank(' + idx + ')">➕</div>'
-            +   '<div class="icon-btn del" title="Pool löschen" onclick="deleteFromBank(' + idx + ')">🗑️</div>'
+            +   '<div class="icon-btn play" title="8 zufällige spielen" onclick="playFromBank(' + idx + ')"<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>'
+            +   '<div class="icon-btn" title="8 neue Fragen hinzufügen" style="font-size:.8rem;" onclick="addToBank(' + idx + ')"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>'
+            +   '<div class="icon-btn del" title="Pool löschen" onclick="deleteFromBank(' + idx + ')"<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>'
             + '</div></div>';
         });
       });
