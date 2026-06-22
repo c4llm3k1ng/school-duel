@@ -4956,13 +4956,15 @@ function startQuickDuel() {
 function setupPills(pid, key, cb) {
   document.querySelectorAll('#' + pid + ' .pill:not(.pill-action)').forEach(p => {
     p.addEventListener('click', () => {
-      const wasActive = p.classList.contains('active');
-      document.querySelectorAll('#' + pid + ' .pill').forEach(x => x.classList.remove('active'));
-      if (wasActive) {
-        G[key] = null;
-      } else {
+      const val = p.dataset.val;
+      if (!Array.isArray(G[key])) G[key] = [];
+      const idx = G[key].indexOf(val);
+      if (idx !== -1) {
+        G[key].splice(idx, 1);
+        p.classList.remove('active');
+      } else if (G[key].length < 3) {
+        G[key].push(val);
         p.classList.add('active');
-        G[key] = p.dataset.val;
       }
       if (cb) cb();
     });
@@ -5306,8 +5308,12 @@ function startSoloCatalog() {
   startQuiz();
 }
 function checkSoloReady() {
-  const subjectOk = G.subject === 'gemischt' || !!(G.subject && G.subcategory);
-  const aiOk  = G.source !== 'catalog' && !!G.grade && subjectOk;
+  const hasGrade = Array.isArray(G.grade) ? G.grade.length > 0 : !!G.grade;
+  const hasSubject = Array.isArray(G.subject) ? G.subject.length > 0 : !!G.subject;
+  const hasSubcat = Array.isArray(G.subcategory) ? G.subcategory.length > 0 : !!G.subcategory;
+  const hasMixed = Array.isArray(G.subject) && G.subject.includes('gemischt') || G.subject === 'gemischt';
+  const subjectOk = hasMixed || (hasSubject && hasSubcat);
+  const aiOk  = G.source !== 'catalog' && hasGrade && subjectOk;
   const catOk = G.source === 'catalog' && !!G.catalogId;
   const startBtn = document.getElementById('start-btn');
   if (startBtn) startBtn.disabled = !aiOk;
@@ -5316,8 +5322,12 @@ function checkSoloReady() {
   refreshAllAccordionVals();
 }
 function checkDuelReady() {
-  const subjectOk = G.dSubject === 'gemischt' || !!(G.dSubject && G.dSubcategory);
-  const aiOk  = G.dSource === 'ai' && !!G.dGrade && subjectOk;
+  const hasGrade = Array.isArray(G.dGrade) ? G.dGrade.length > 0 : !!G.dGrade;
+  const hasSubject = Array.isArray(G.dSubject) ? G.dSubject.length > 0 : !!G.dSubject;
+  const hasSubcat = Array.isArray(G.dSubcategory) ? G.dSubcategory.length > 0 : !!G.dSubcategory;
+  const hasMixed = Array.isArray(G.dSubject) && G.dSubject.includes('gemischt') || G.dSubject === 'gemischt';
+  const subjectOk = hasMixed || (hasSubject && hasSubcat);
+  const aiOk  = G.dSource === 'ai' && hasGrade && subjectOk;
   const catOk = G.dSource === 'catalog' && !!G.dCatalogId;
   const ready = !!(aiOk || catOk);
   document.getElementById('duel-start-btn').disabled = !ready;
@@ -7437,13 +7447,14 @@ function randomizePills(pillsId, gKey) {
   const pick = pills[Math.floor(Math.random() * pills.length)];
   pills.forEach(p => p.classList.remove('active'));
   pick.classList.add('active');
-  G[gKey] = pick.dataset.val;
+  G[gKey] = [pick.dataset.val];
+  const subj = Array.isArray(G[gKey]) ? G[gKey][0] : G[gKey];
   // trigger subject subcategory update if needed
-  if (pillsId === 'subject-pills')        renderSubcategoryPills('solo-subcategory-wrap', G[gKey], 'subcategory', checkSoloReady);
-  if (pillsId === 'duel-subject-pills')   renderSubcategoryPills('duel-subcategory-wrap', G[gKey], 'dSubcategory', checkDuelReady);
-  if (pillsId === 'online-subject-pills') renderSubcategoryPills('online-subcategory-wrap', G[gKey], 'dSubcategory', checkOnlineReady);
-  if (pillsId === 'chal-subject-pills')   renderSubcategoryPills('chal-subcat-wrap', G[gKey], '_chalSubcat', () => {});
-  if (pillsId === 'rp-subject-pills')     renderSubcategoryPills('rp-subcategory-wrap', G[gKey], 'dSubcategory', () => {});
+  if (pillsId === 'subject-pills')        renderSubcategoryPills('solo-subcategory-wrap', subj, 'subcategory', checkSoloReady);
+  if (pillsId === 'duel-subject-pills')   renderSubcategoryPills('duel-subcategory-wrap', subj, 'dSubcategory', checkDuelReady);
+  if (pillsId === 'online-subject-pills') renderSubcategoryPills('online-subcategory-wrap', subj, 'dSubcategory', checkOnlineReady);
+  if (pillsId === 'chal-subject-pills')   renderSubcategoryPills('chal-subcat-wrap', subj, '_chalSubcat', () => {});
+  if (pillsId === 'rp-subject-pills')     renderSubcategoryPills('rp-subcategory-wrap', subj, 'dSubcategory', () => {});
   if (pillsId === 'grade-pills')          checkSoloReady?.();
   if (pillsId === 'duel-grade-pills')     checkDuelReady?.();
   if (pillsId === 'online-grade-pills')   checkOnlineReady?.();
@@ -7462,11 +7473,13 @@ function setMixed(pillsId, gKey) {
     gPill.addEventListener('click', () => {
       document.querySelectorAll('#' + pillsId + ' .pill').forEach(p => p.classList.remove('active'));
       gPill.classList.add('active');
-      G[gKey] = 'gemischt';
+      G[gKey] = ['gemischt'];
+      if (gKey === 'grade')  checkSoloReady?.();
+      if (gKey === 'dGrade') { checkDuelReady?.(); checkOnlineReady?.(); }
     });
   }
   gPill.classList.add('active');
-  G[gKey] = 'gemischt';
+  G[gKey] = ['gemischt'];
   if (gKey === 'grade')  checkSoloReady?.();
   if (gKey === 'dGrade') { checkDuelReady?.(); checkOnlineReady?.(); }
 }
@@ -7484,11 +7497,11 @@ function setMixedDiff(pillsId, key) {
     gPill.addEventListener('click', () => {
       document.querySelectorAll('#' + pillsId + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active'));
       gPill.classList.add('active');
-      G[key] = 'gemischt';
+      G[key] = ['gemischt'];
     });
   }
   gPill.classList.add('active');
-  G[key] = 'gemischt';
+  G[key] = ['gemischt'];
 }
 
 function setMixedSubject(pillsId, key, mode) {
@@ -7504,11 +7517,11 @@ function setMixedSubject(pillsId, key, mode) {
     gPill.addEventListener('click', () => {
       document.querySelectorAll('#' + pillsId + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active'));
       gPill.classList.add('active');
-      G[key] = 'gemischt';
+      G[key] = ['gemischt'];
     });
   }
   gPill.classList.add('active');
-  G[key] = 'gemischt';
+  G[key] = ['gemischt'];
   // hide subcategory row when mixed subjects
   const scWrap = mode === 'solo' ? 'solo-subcategory-wrap'
     : mode === 'online' ? 'online-subcategory-wrap'
@@ -7546,11 +7559,11 @@ function setMixedSubcat(rowId, key) {
     gPill.addEventListener('click', () => {
       document.querySelectorAll('#' + rowId + ' .pill').forEach(p => p.classList.remove('active'));
       gPill.classList.add('active');
-      G[key] = 'gemischt';
+      G[key] = ['gemischt'];
     });
   }
   gPill.classList.add('active');
-  G[key] = 'gemischt';
+  G[key] = ['gemischt'];
   if (key === 'subcategory')  checkSoloReady?.();
   if (key === 'dSubcategory') checkDuelReady?.();
 }
@@ -8003,8 +8016,12 @@ document.querySelectorAll('#online-source-pills .pill').forEach(p => {
 // online-catalog-select change is handled by initCatalogPicker/pickTopic
 
 function checkOnlineReady() {
-  const subjectOk = G.dSubject === 'gemischt' || !!(G.dSubject && G.dSubcategory);
-  const aiOk  = G.dSource === 'ai' && !!G.dGrade && subjectOk;
+  const hasGrade = Array.isArray(G.dGrade) ? G.dGrade.length > 0 : !!G.dGrade;
+  const hasSubject = Array.isArray(G.dSubject) ? G.dSubject.length > 0 : !!G.dSubject;
+  const hasSubcat = Array.isArray(G.dSubcategory) ? G.dSubcategory.length > 0 : !!G.dSubcategory;
+  const hasMixed = Array.isArray(G.dSubject) && G.dSubject.includes('gemischt') || G.dSubject === 'gemischt';
+  const subjectOk = hasMixed || (hasSubject && hasSubcat);
+  const aiOk  = G.dSource === 'ai' && hasGrade && subjectOk;
   const catOk = G.dSource === 'catalog' && !!G.dCatalogId;
   document.getElementById('online-create-btn').disabled = !(aiOk || catOk);
   refreshAllAccordionVals();
