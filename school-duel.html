@@ -825,114 +825,154 @@
   <!-- SOLO -->
   <div id="tab-solo" style="display:none;">
     <div class="mode-back" id="back-solo" onclick="showSpielenLanding()">← Zurück</div>
-    <div class="card">
-      <button class="all-random-btn" onclick="randomizeAll('solo')">🎲 Alles zufällig auswählen</button>
 
-      <div class="accordion-section" id="acc-solo-grade">
-        <div class="accordion-header" onclick="toggleAccordion('acc-solo-grade')">
-          <span class="accordion-label">Klassenstufe</span>
-          <span class="accordion-value" id="acc-solo-grade-val">–</span>
-          <span class="accordion-arrow">›</span>
+    <div id="solo-type-landing">
+      <div class="duel-type-grid">
+        <div class="duel-type-card" onclick="showSoloType('schul')">
+          <div class="dtc-icon">🏫</div>
+          <div class="dtc-title">Schulfragen</div>
+          <div class="dtc-desc">Klasse, Fach &amp; Schwierigkeit wählen</div>
         </div>
-        <div class="accordion-body">
-          <div class="pill-row" id="grade-pills">
-            <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
-            <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
-            <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
-            <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
-            <div class="pill pill-action dice" onclick="randomizePills('grade-pills','grade')">🎲</div>
-            <div class="pill pill-action mix" onclick="setMixed('grade-pills','grade')">∼ Mix</div>
-          </div>
+        <div class="duel-type-card" onclick="showSoloType('catalog')">
+          <div class="dtc-icon">📚</div>
+          <div class="dtc-title">Katalog</div>
+          <div class="dtc-desc">Thema &amp; Schwierigkeit aus Katalogen wählen</div>
         </div>
       </div>
+    </div>
 
-      <div class="accordion-section" id="acc-solo-subject">
-        <div class="accordion-header" onclick="toggleAccordion('acc-solo-subject')">
-          <span class="accordion-label">Fach</span>
-          <span class="accordion-value" id="acc-solo-subject-val">–</span>
-          <span class="accordion-arrow">›</span>
-        </div>
-        <div class="accordion-body">
-          <div class="pill-row" id="subject-pills">
-            <div class="pill" data-val="Mathematik">📐 Mathe</div>
-            <div class="pill" data-val="Deutsch">📖 Deutsch</div>
-            <div class="pill" data-val="Englisch">🌍 Englisch</div>
-            <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
-            <div class="pill" data-val="Biologie">🌿 Biologie</div>
-            <div class="pill" data-val="Physik">⚡ Physik</div>
-            <div class="pill" data-val="Chemie">🧪 Chemie</div>
-            <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
-            <div class="pill pill-action dice" onclick="randomizePills('subject-pills','subject')">🎲</div>
-            <div class="pill pill-action mix" onclick="setMixedSubject('subject-pills','subject','solo')">∼ Mix</div>
-          </div>
-          <div id="solo-subcategory-wrap" style="display:none;"></div>
-        </div>
-      </div>
+    <div id="solo-schul" style="display:none;">
+      <div class="duel-type-back" onclick="showSoloLanding()">← Zurück zur Auswahl</div>
+      <div class="card">
+        <button class="all-random-btn" onclick="randomizeAll('solo')">🎲 Alles zufällig auswählen</button>
 
-      <div class="accordion-section" id="acc-solo-diff">
-        <div class="accordion-header" onclick="toggleAccordion('acc-solo-diff')">
-          <span class="accordion-label">Schwierigkeit</span>
-          <span class="accordion-value" id="acc-solo-diff-val">Mittel</span>
-          <span class="accordion-arrow">›</span>
-        </div>
-        <div class="accordion-body">
-          <div class="pill-row" id="diff-pills">
-            <div class="pill" data-val="leicht">Leicht</div>
-            <div class="pill active" data-val="mittel">Mittel</div>
-            <div class="pill" data-val="schwer">Schwer</div>
-            <div class="pill pill-action dice" onclick="randomizePills('diff-pills','difficulty')">🎲</div>
-            <div class="pill pill-action mix" onclick="setMixedDiff('diff-pills','difficulty')">∼ Mix</div>
+        <div class="accordion-section" id="acc-solo-grade">
+          <div class="accordion-header" onclick="toggleAccordion('acc-solo-grade')">
+            <span class="accordion-label">Klassenstufe</span>
+            <span class="accordion-value" id="acc-solo-grade-val">–</span>
+            <span class="accordion-arrow">›</span>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-section" id="acc-solo-source">
-        <div class="accordion-header" onclick="toggleAccordion('acc-solo-source')">
-          <span class="accordion-label">Fragenquelle</span>
-          <span class="accordion-value" id="acc-solo-source-val">🤖 KI generiert</span>
-          <span class="accordion-arrow">›</span>
-        </div>
-        <div class="accordion-body">
-          <div class="pill-row" id="source-pills">
-            <div class="pill active" data-val="ai">🤖 KI generiert</div>
-            <div class="pill" data-val="catalog">📚 Eigener Katalog</div>
-          </div>
-          <div id="solo-catalog-picker" style="display:none;">
-            <div class="label">Thema wählen</div>
-            <div class="topic-grid" id="solo-topic-grid"></div>
-            <div id="solo-topic-diff" style="display:none;">
-              <span class="topic-diff-back" onclick="resetTopicPicker('solo')">← Thema wechseln</span>
-              <div class="label" id="solo-topic-diff-label">Schwierigkeit</div>
-              <div class="pill-row" id="solo-topic-diff-pills">
-                <div class="pill" data-diff="leicht">Leicht</div>
-                <div class="pill" data-diff="mittel">Mittel</div>
-                <div class="pill" data-diff="schwer">Schwer</div>
-                <div class="pill" data-diff="gemischt">Gemischt</div>
-              </div>
-            </div>
-            <div id="solo-topic-custom" style="display:none;">
-              <span class="topic-diff-back" onclick="resetTopicPicker('solo')">← Thema wechseln</span>
-              <div class="label">Eigener Katalog</div>
-              <select id="solo-catalog-select" class="form-input"></select>
+          <div class="accordion-body">
+            <div class="pill-row" id="grade-pills">
+              <div class="pill" data-val="5">Kl. 5</div><div class="pill" data-val="6">Kl. 6</div>
+              <div class="pill" data-val="7">Kl. 7</div><div class="pill" data-val="8">Kl. 8</div>
+              <div class="pill" data-val="9">Kl. 9</div><div class="pill" data-val="10">Kl. 10</div>
+              <div class="pill" data-val="11">Kl. 11</div><div class="pill" data-val="12">Kl. 12</div>
+              <div class="pill pill-action dice" onclick="randomizePills('grade-pills','grade')">🎲</div>
+              <div class="pill pill-action mix" onclick="setMixed('grade-pills','grade')">∼ Mix</div>
             </div>
           </div>
         </div>
-      </div>
 
-      <button class="btn btn-primary" id="start-btn" disabled>Solo-Quiz starten →</button>
+        <div class="accordion-section" id="acc-solo-subject">
+          <div class="accordion-header" onclick="toggleAccordion('acc-solo-subject')">
+            <span class="accordion-label">Fach</span>
+            <span class="accordion-value" id="acc-solo-subject-val">–</span>
+            <span class="accordion-arrow">›</span>
+          </div>
+          <div class="accordion-body">
+            <div class="pill-row" id="subject-pills">
+              <div class="pill" data-val="Mathematik">📐 Mathe</div>
+              <div class="pill" data-val="Deutsch">📖 Deutsch</div>
+              <div class="pill" data-val="Englisch">🌍 Englisch</div>
+              <div class="pill" data-val="Geschichte">🏛️ Geschichte</div>
+              <div class="pill" data-val="Biologie">🌿 Biologie</div>
+              <div class="pill" data-val="Physik">⚡ Physik</div>
+              <div class="pill" data-val="Chemie">🧪 Chemie</div>
+              <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
+              <div class="pill pill-action dice" onclick="randomizePills('subject-pills','subject')">🎲</div>
+              <div class="pill pill-action mix" onclick="setMixedSubject('subject-pills','subject','solo')">∼ Mix</div>
+            </div>
+            <div id="solo-subcategory-wrap" style="display:none;"></div>
+          </div>
+        </div>
+
+        <div class="accordion-section" id="acc-solo-diff">
+          <div class="accordion-header" onclick="toggleAccordion('acc-solo-diff')">
+            <span class="accordion-label">Schwierigkeit</span>
+            <span class="accordion-value" id="acc-solo-diff-val">Mittel</span>
+            <span class="accordion-arrow">›</span>
+          </div>
+          <div class="accordion-body">
+            <div class="pill-row" id="diff-pills">
+              <div class="pill" data-val="leicht">Leicht</div>
+              <div class="pill active" data-val="mittel">Mittel</div>
+              <div class="pill" data-val="schwer">Schwer</div>
+              <div class="pill pill-action dice" onclick="randomizePills('diff-pills','difficulty')">🎲</div>
+              <div class="pill pill-action mix" onclick="setMixedDiff('diff-pills','difficulty')">∼ Mix</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="start-btn" disabled>Solo-Quiz starten →</button>
+      </div>
+    </div>
+
+    <div id="solo-catalog-type" style="display:none;">
+      <div class="duel-type-back" onclick="showSoloLanding()">← Zurück zur Auswahl</div>
+      <div class="card">
+        <div class="label">Thema wählen</div>
+        <div class="topic-grid" id="solo-topic-grid"></div>
+        <div id="solo-topic-diff" style="display:none;">
+          <span class="topic-diff-back" onclick="resetTopicPicker('solo')">← Thema wechseln</span>
+          <div class="label" id="solo-topic-diff-label">Schwierigkeit</div>
+          <div class="pill-row" id="solo-topic-diff-pills">
+            <div class="pill" data-diff="leicht">Leicht</div>
+            <div class="pill" data-diff="mittel">Mittel</div>
+            <div class="pill" data-diff="schwer">Schwer</div>
+            <div class="pill" data-diff="gemischt">Gemischt</div>
+          </div>
+        </div>
+        <div id="solo-topic-custom" style="display:none;">
+          <span class="topic-diff-back" onclick="resetTopicPicker('solo')">← Thema wechseln</span>
+          <div class="label">Eigener Katalog</div>
+          <select id="solo-catalog-select" class="form-input"></select>
+        </div>
+        <button class="btn btn-primary" id="solo-cat-start-btn" disabled onclick="startSoloCatalog()">Solo-Quiz starten →</button>
+      </div>
     </div>
   </div>
 
   <!-- QUICK DUEL -->
   <div id="tab-quickduel" style="display:none;">
     <div class="mode-back" id="back-quickduel" onclick="showSpielenLanding()">← Zurück</div>
-    <div class="sub-tabs">
-      <div class="sub-tab active" id="qd-subtab-btn-local"  onclick="switchQdSubTab('local')">🏠 Lokal</div>
-      <div class="sub-tab"        id="qd-subtab-btn-online" onclick="switchQdSubTab('online')">🌐 Online</div>
+
+    <!-- MODE LANDING -->
+    <div id="qd-mode-landing">
+      <div class="duel-type-grid">
+        <div class="duel-type-card" onclick="pickQdMode('online')">
+          <div class="dtc-icon">🌐</div>
+          <div class="dtc-title">Online</div>
+          <div class="dtc-desc">Gegen Freunde online spielen</div>
+        </div>
+        <div class="duel-type-card" onclick="pickQdMode('local')">
+          <div class="dtc-icon">⚔️</div>
+          <div class="dtc-title">Lokal</div>
+          <div class="dtc-desc">Auf einem Gerät spielen</div>
+        </div>
+      </div>
     </div>
 
-    <!-- Lokal -->
-    <div id="qd-sub-local">
+    <!-- TYPE LANDING -->
+    <div id="qd-type-landing" style="display:none;">
+      <div class="duel-type-back" onclick="showQdModeLanding()">← Zurück</div>
+      <div class="duel-type-grid">
+        <div class="duel-type-card" onclick="showQdType('schul')">
+          <div class="dtc-icon">🏫</div>
+          <div class="dtc-title">Schulfragen</div>
+          <div class="dtc-desc">Zufällige Schulfragen</div>
+        </div>
+        <div class="duel-type-card" onclick="showQdType('catalog')">
+          <div class="dtc-icon">📚</div>
+          <div class="dtc-title">Katalog</div>
+          <div class="dtc-desc">Thema &amp; Schwierigkeit wählen</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCHULFRAGEN LOKAL -->
+    <div id="qd-schul-local" style="display:none;">
+      <div class="duel-type-back" onclick="showQdTypeLanding()">← Zurück zur Auswahl</div>
       <div class="card">
         <div style="font-size:.85rem;color:var(--muted);margin-bottom:14px;">Alles wird automatisch zufällig gewählt – einfach Namen eingeben und losspielen.</div>
         <div class="label">Spielernamen</div>
@@ -950,8 +990,9 @@
       </div>
     </div>
 
-    <!-- Online gegen Freund -->
-    <div id="qd-sub-online" style="display:none;">
+    <!-- SCHULFRAGEN ONLINE -->
+    <div id="qd-schul-online" style="display:none;">
+      <div class="duel-type-back" onclick="showQdTypeLanding()">← Zurück zur Auswahl</div>
       <div class="card">
         <div style="font-size:.85rem;color:var(--muted);margin-bottom:14px;">Fordere einen Freund online heraus – Klasse, Fach und Schwierigkeit werden zufällig gewählt.</div>
         <div class="label">Anzahl Runden</div>
@@ -963,14 +1004,85 @@
       </div>
       <div id="qd-friends-list"><div class="loading-state"><div class="spinner"></div>Lade Freunde…</div></div>
     </div>
+
+    <!-- KATALOG (lokal + online) -->
+    <div id="qd-catalog-section" style="display:none;">
+      <div class="duel-type-back" onclick="showQdTypeLanding()">← Zurück zur Auswahl</div>
+      <div class="card">
+        <div class="label">Thema wählen</div>
+        <div class="topic-grid" id="qd-topic-grid"></div>
+        <div id="qd-topic-diff" style="display:none;">
+          <span class="topic-diff-back" onclick="resetTopicPicker('qd')">← Thema wechseln</span>
+          <div class="label" id="qd-topic-diff-label">Schwierigkeit</div>
+          <div class="pill-row" id="qd-topic-diff-pills">
+            <div class="pill" data-diff="leicht">Leicht</div>
+            <div class="pill" data-diff="mittel">Mittel</div>
+            <div class="pill" data-diff="schwer">Schwer</div>
+            <div class="pill" data-diff="gemischt">Gemischt</div>
+          </div>
+        </div>
+        <div id="qd-topic-custom" style="display:none;">
+          <span class="topic-diff-back" onclick="resetTopicPicker('qd')">← Thema wechseln</span>
+          <div class="label">Eigener Katalog</div>
+          <select id="qd-catalog-select" class="form-input"></select>
+        </div>
+      </div>
+
+      <div id="qd-cat-local-setup" style="display:none;">
+        <div class="card">
+          <div class="label">Spielernamen</div>
+          <div class="name-row">
+            <div><div class="name-label p1">⚔️ Spieler 1</div><input class="name-input" id="qd-cat-p1-name" placeholder="z.B. Max" maxlength="16"></div>
+            <div><div class="name-label p2">🛡️ Spieler 2</div><input class="name-input p2-input" id="qd-cat-p2-name" placeholder="z.B. Lisa" maxlength="16"></div>
+          </div>
+          <div class="label">Anzahl Runden</div>
+          <div class="pill-row" id="qd-cat-rounds-pills">
+            <div class="pill active" data-val="1">1 Runde</div>
+            <div class="pill" data-val="3">3 Runden</div>
+            <div class="pill" data-val="5">5 Runden</div>
+          </div>
+          <button class="btn btn-primary" style="margin-top:6px;" onclick="startQuickCatalogLocal()">⚡ Schnellduell starten</button>
+        </div>
+      </div>
+
+      <div id="qd-cat-online-setup" style="display:none;">
+        <div class="card">
+          <div style="font-size:.85rem;color:var(--muted);margin-bottom:14px;">Fordere einen Freund online heraus.</div>
+          <div class="label">Anzahl Runden</div>
+          <div class="pill-row" id="qd-cat-online-rounds-pills">
+            <div class="pill active" data-val="1">1 Runde</div>
+            <div class="pill" data-val="3">3 Runden</div>
+            <div class="pill" data-val="5">5 Runden</div>
+          </div>
+        </div>
+        <div id="qd-cat-friends-list"><div class="loading-state"><div class="spinner"></div>Lade Freunde…</div></div>
+      </div>
+    </div>
   </div>
 
   <!-- DUEL -->
   <div id="tab-duel" style="display:none;">
     <div class="mode-back" id="back-duel" onclick="showSpielenLanding()">← Zurück</div>
 
+    <!-- MODE LANDING -->
+    <div id="duel-mode-landing">
+      <div class="duel-type-grid">
+        <div class="duel-type-card" onclick="pickDuelConnMode('online')">
+          <div class="dtc-icon">🌐</div>
+          <div class="dtc-title">Online</div>
+          <div class="dtc-desc">Gegen Freunde online spielen</div>
+        </div>
+        <div class="duel-type-card" onclick="pickDuelConnMode('local')">
+          <div class="dtc-icon">⚔️</div>
+          <div class="dtc-title">Lokal</div>
+          <div class="dtc-desc">Auf einem Gerät spielen</div>
+        </div>
+      </div>
+    </div>
+
     <!-- TYPE LANDING -->
-    <div id="duel-type-landing">
+    <div id="duel-type-landing" style="display:none;">
+      <div class="duel-type-back" onclick="showDuelModeLanding()">← Zurück</div>
       <div class="duel-type-grid">
         <div class="duel-type-card" onclick="showDuelType('schul')">
           <div class="dtc-icon">🏫</div>
@@ -987,7 +1099,7 @@
 
     <!-- SCHULFRAGEN DUEL -->
     <div id="duel-schul" style="display:none;">
-      <div class="duel-type-back" onclick="showDuelLanding()">← Zurück zur Auswahl</div>
+      <div class="duel-type-back" onclick="showDuelTypeLanding()">← Zurück zur Auswahl</div>
       <div class="sub-tabs">
         <div class="sub-tab active" id="subtab-btn-online" onclick="switchDuelSubTab('online')">🌐 Online</div>
         <div class="sub-tab" id="subtab-btn-local" onclick="switchDuelSubTab('local')">⚔️ Lokal</div>
@@ -1176,7 +1288,7 @@
 
     <!-- KATALOG DUEL -->
     <div id="duel-catalog-type" style="display:none;">
-      <div class="duel-type-back" onclick="showDuelLanding()">← Zurück zur Auswahl</div>
+      <div class="duel-type-back" onclick="showDuelTypeLanding()">← Zurück zur Auswahl</div>
       <div class="card">
         <div class="label">Thema wählen</div>
         <div class="topic-grid" id="duel-topic-grid"></div>
@@ -4557,7 +4669,9 @@ function showModeSetup(mode) {
     if (el)   el.style.display = t === mode ? 'block' : 'none';
     if (back) back.classList.toggle('visible', t === mode);
   });
-  if (mode === 'quickduel') renderQuickDuelFriends();
+  if (mode === 'duel')      showDuelModeLanding();
+  if (mode === 'quickduel') showQdModeLanding();
+  if (mode === 'solo')      showSoloLanding();
   if (mode === 'practice')  renderPracticeTab();
   updateOfflineUI?.();
 }
@@ -4570,16 +4684,121 @@ function showSpielenLanding() {
   document.getElementById('tab-spielen').style.display = 'block';
 }
 
-function switchQdSubTab(sub) {
-  document.getElementById('qd-sub-local').style.display  = sub === 'local'  ? '' : 'none';
-  document.getElementById('qd-sub-online').style.display = sub === 'online' ? '' : 'none';
-  document.getElementById('qd-subtab-btn-local').classList.toggle('active',  sub === 'local');
-  document.getElementById('qd-subtab-btn-online').classList.toggle('active', sub === 'online');
-  if (sub === 'online') renderQuickDuelFriends();
+let _qdConnMode = 'online';
+let _duelConnMode = 'online';
+
+// ── SOLO NAVIGATION ──
+function showSoloLanding() {
+  document.getElementById('solo-type-landing').style.display = '';
+  document.getElementById('solo-schul').style.display = 'none';
+  document.getElementById('solo-catalog-type').style.display = 'none';
+}
+function showSoloType(type) {
+  document.getElementById('solo-type-landing').style.display = 'none';
+  document.getElementById('solo-schul').style.display = type === 'schul' ? '' : 'none';
+  document.getElementById('solo-catalog-type').style.display = type === 'catalog' ? '' : 'none';
+  if (type === 'schul') {
+    G.source = 'ai';
+  } else {
+    G.source = 'catalog';
+    G.catalogId = null;
+    initCatalogPicker('solo');
+  }
 }
 
-async function renderQuickDuelFriends() {
-  const c = document.getElementById('qd-friends-list');
+// ── DUEL NAVIGATION ──
+function showDuelModeLanding() {
+  document.getElementById('duel-mode-landing').style.display = '';
+  document.getElementById('duel-type-landing').style.display = 'none';
+  document.getElementById('duel-schul').style.display = 'none';
+  document.getElementById('duel-catalog-type').style.display = 'none';
+  G.dSource = null; G.dCatalogId = null;
+}
+function pickDuelConnMode(mode) {
+  _duelConnMode = mode;
+  showDuelTypeLanding();
+}
+function showDuelTypeLanding() {
+  document.getElementById('duel-mode-landing').style.display = 'none';
+  document.getElementById('duel-type-landing').style.display = '';
+  document.getElementById('duel-schul').style.display = 'none';
+  document.getElementById('duel-catalog-type').style.display = 'none';
+}
+function showDuelType(type) {
+  document.getElementById('duel-type-landing').style.display = 'none';
+  document.getElementById('duel-schul').style.display = type === 'schul' ? '' : 'none';
+  document.getElementById('duel-catalog-type').style.display = type === 'catalog' ? '' : 'none';
+  if (type === 'schul') {
+    G.dSource = 'ai';
+    switchDuelSubTab(_duelConnMode === 'online' ? 'online' : 'local');
+  } else {
+    G.dSource = 'catalog';
+    G.dCatalogId = null;
+    document.getElementById('duel-cat-player-section').style.display = 'none';
+    initCatalogPicker('duel');
+    switchDCatSubTab(_duelConnMode === 'online' ? 'online' : 'local');
+  }
+}
+
+// ── QUICKDUEL NAVIGATION ──
+function showQdModeLanding() {
+  document.getElementById('qd-mode-landing').style.display = '';
+  document.getElementById('qd-type-landing').style.display = 'none';
+  document.getElementById('qd-schul-local').style.display = 'none';
+  document.getElementById('qd-schul-online').style.display = 'none';
+  document.getElementById('qd-catalog-section').style.display = 'none';
+}
+function pickQdMode(mode) {
+  _qdConnMode = mode;
+  showQdTypeLanding();
+}
+function showQdTypeLanding() {
+  document.getElementById('qd-mode-landing').style.display = 'none';
+  document.getElementById('qd-type-landing').style.display = '';
+  document.getElementById('qd-schul-local').style.display = 'none';
+  document.getElementById('qd-schul-online').style.display = 'none';
+  document.getElementById('qd-catalog-section').style.display = 'none';
+}
+function showQdType(type) {
+  document.getElementById('qd-type-landing').style.display = 'none';
+  if (type === 'schul') {
+    const isOnline = _qdConnMode === 'online';
+    document.getElementById('qd-schul-local').style.display = isOnline ? 'none' : '';
+    document.getElementById('qd-schul-online').style.display = isOnline ? '' : 'none';
+    document.getElementById('qd-catalog-section').style.display = 'none';
+    if (isOnline) renderQuickDuelFriends('qd-friends-list', 'schul');
+  } else {
+    document.getElementById('qd-schul-local').style.display = 'none';
+    document.getElementById('qd-schul-online').style.display = 'none';
+    document.getElementById('qd-catalog-section').style.display = '';
+    const isOnline = _qdConnMode === 'online';
+    document.getElementById('qd-cat-local-setup').style.display = 'none';
+    document.getElementById('qd-cat-online-setup').style.display = 'none';
+    G.qdCatalogId = null;
+    initCatalogPicker('qd');
+  }
+}
+function checkQdCatalogReady() {
+  const has = !!G.qdCatalogId;
+  const isOnline = _qdConnMode === 'online';
+  document.getElementById('qd-cat-local-setup').style.display = has && !isOnline ? '' : 'none';
+  document.getElementById('qd-cat-online-setup').style.display = has && isOnline ? '' : 'none';
+  if (has && isOnline) renderQuickDuelFriends('qd-cat-friends-list', 'catalog');
+}
+function startQuickCatalogLocal() {
+  G.mode = 'duel'; G.dSource = 'catalog'; G.dCatalogId = G.qdCatalogId;
+  G.p1Name = document.getElementById('qd-cat-p1-name').value.trim() || 'Spieler 1';
+  G.p2Name = document.getElementById('qd-cat-p2-name').value.trim() || 'Spieler 2';
+  G.totalRounds = parseInt(document.querySelector('#qd-cat-rounds-pills .pill.active')?.dataset.val || '1');
+  G.currentRound = 1; G.roundScores = [];
+  G.p1 = { correct:0, points:0, answers:[] };
+  G.p2 = { correct:0, points:0, answers:[] };
+  G.currentPlayer = 1;
+  showHandover(1, true);
+}
+
+async function renderQuickDuelFriends(containerId = 'qd-friends-list', qdType = 'schul') {
+  const c = document.getElementById(containerId);
   if (!c) return;
   if (!currentUser) {
     c.innerHTML = '<div class="empty-state"><div class="es-icon">🔒</div>Bitte erst anmelden.</div>';
@@ -4599,17 +4818,55 @@ async function renderQuickDuelFriends() {
     const profiles = await Promise.all(friendUids.map(uid => fbDB.ref('users/' + uid).once('value').then(s => ({ uid, ...s.val() }))));
     let html = '';
     profiles.filter(f => f.username).forEach(f => {
+      const fn = qdType === 'catalog'
+        ? `sendQuickCatalogChallenge('${f.uid}','${esc(f.username)}')`
+        : `sendQuickChallenge('${f.uid}','${esc(f.username)}')`;
       html += '<div class="friend-item">'
         + '<div style="flex:1;"><div class="friend-name">' + esc(f.username) + '</div>'
         + '<div class="friend-grade">Klasse ' + (f.grade||'?') + '</div></div>'
         + '<button class="btn btn-primary" style="width:auto;padding:7px 14px;font-size:.78rem;" '
-        + 'onclick="sendQuickChallenge(\'' + f.uid + '\',\'' + esc(f.username) + '\')">⚡ Herausfordern</button>'
+        + 'onclick="' + fn + '">⚡ Herausfordern</button>'
         + '</div>';
     });
     c.innerHTML = html || '<div class="empty-state"><div class="es-icon">🤝</div>Noch keine Freunde.</div>';
   } catch(e) {
     c.innerHTML = '<div class="empty-state"><div class="es-icon">⚠️</div>Fehler: ' + esc(e.message) + '</div>';
   }
+}
+
+async function sendQuickCatalogChallenge(targetUid, targetUsername) {
+  if (!currentUser) { showToast('Bitte erst anmelden', 'error'); return; }
+  if (!initFirebase()) { openFirebaseModal(); return; }
+  const catalogId = G.qdCatalogId;
+  if (!catalogId) { showToast('Bitte erst ein Thema wählen', 'error'); return; }
+  const totalRounds = parseInt(document.querySelector('#qd-cat-online-rounds-pills .pill.active')?.dataset.val || '1');
+  const myName = currentUser.username || 'Spieler 1';
+  const code   = generateRoomCode();
+  const players = {
+    p1: { name: myName, q:0, done:false, score:{correct:0,points:0} },
+    p2: { name: '', q:0, done:false, score:{correct:0,points:0} }
+  };
+  try {
+    await fbDB.ref('rooms/' + code).set({
+      status:'waiting', hostName:myName, maxPlayers:2,
+      grade:'', subject:'', subcategory:'', difficulty:'', source:'catalog', catalogId,
+      totalRounds, currentRound:1, roundScores:[],
+      questions:[], players, createdAt:firebase.database.ServerValue.TIMESTAMP
+    });
+    const cKey = fbDB.ref('challenges/' + targetUid).push().key;
+    await fbDB.ref('challenges/' + targetUid + '/' + cKey).set({
+      fromUid:currentUser.uid, fromUsername:myName, roomCode:code,
+      grade:'', subject:'', subcategory:'', difficulty:'', source:'catalog', catalogId,
+      totalRounds, status:'pending', sentAt:Date.now()
+    });
+    onlineRoomCode=code; onlineRole='host'; onlineMySlot='p1'; onlineMaxPlayers=2;
+    onlineMyAnswers=[]; onlineWaitingForOpponent=false;
+    G.p1Name=myName; G.dSource='catalog'; G.dCatalogId=catalogId;
+    G.totalRounds=totalRounds; G.currentRound=1; G.roundScores=[];
+    showOnlineWaitScreen(); startRoomListener();
+    setTimeout(()=>fbDB.ref('rooms/'+code).remove().catch(()=>{}), 45*60*1000);
+    showToast('⚡ Herausforderung an ' + targetUsername + ' gesendet!', 'success');
+  } catch(e) { showToast('Fehler: ' + e.message, 'error'); }
 }
 
 async function sendQuickChallenge(targetUid, targetUsername) {
@@ -4845,8 +5102,8 @@ const TOPIC_GROUPS = [
   { id:'anime',    label:'Anime',   icon:'🎌', cats:{ leicht:'cat_anime_leicht',    mittel:'cat_anime_mittel',    schwer:'cat_anime_schwer',    gemischt:'cat_anime_gemischt' }},
 ];
 
-const PICKER_CAT_KEY = { solo:'catalogId', duel:'dCatalogId', online:'dCatalogId', chal:'_chalCatalogId' };
-const PICKER_CHECK   = { solo: ()=>checkSoloReady(), duel: ()=>{ checkDuelReady(); checkCatDuelReady(); }, online: ()=>checkOnlineReady(), chal: ()=>{} };
+const PICKER_CAT_KEY = { solo:'catalogId', duel:'dCatalogId', online:'dCatalogId', chal:'_chalCatalogId', qd:'qdCatalogId' };
+const PICKER_CHECK   = { solo: ()=>checkSoloReady(), duel: ()=>{ checkDuelReady(); checkCatDuelReady(); }, online: ()=>checkOnlineReady(), chal: ()=>{}, qd: ()=>checkQdCatalogReady() };
 
 function initCatalogPicker(mode) {
   const grid = document.getElementById(`${mode}-topic-grid`);
@@ -4910,7 +5167,7 @@ function pickTopic(mode, topicId, el) {
         // Subject + Difficulty für History-Gruppierung setzen
         if (topic) {
           if (mode === 'solo') { G.subject = topic.label; G.difficulty = p.dataset.diff; }
-          else if (mode === 'duel' || mode === 'online') { G.dSubject = topic.label; G.dDifficulty = p.dataset.diff; }
+          else if (mode === 'duel' || mode === 'online' || mode === 'qd') { G.dSubject = topic.label; G.dDifficulty = p.dataset.diff; }
         }
         PICKER_CHECK[mode]();
       };
@@ -4968,27 +5225,6 @@ function triggerPrefetch(mode) {
   PF.promise.then(q => { if (PF.key === key) PF.result = q; }).catch(() => {});
 }
 
-// ── DUEL TYPE LANDING ──
-function showDuelLanding() {
-  document.getElementById('duel-type-landing').style.display = '';
-  document.getElementById('duel-schul').style.display = 'none';
-  document.getElementById('duel-catalog-type').style.display = 'none';
-  G.dSource = null; G.dCatalogId = null;
-}
-function showDuelType(type) {
-  document.getElementById('duel-type-landing').style.display = 'none';
-  document.getElementById('duel-schul').style.display = type === 'schul' ? '' : 'none';
-  document.getElementById('duel-catalog-type').style.display = type === 'catalog' ? '' : 'none';
-  if (type === 'schul') {
-    G.dSource = 'ai';
-    switchDuelSubTab('online');
-  } else {
-    G.dSource = 'catalog';
-    G.dCatalogId = null;
-    document.getElementById('duel-cat-player-section').style.display = 'none';
-    initCatalogPicker('duel');
-  }
-}
 function switchDCatSubTab(tab) {
   ['local','online'].forEach(t => {
     document.getElementById('dcat-sub-' + t).style.display = t === tab ? '' : 'none';
@@ -5053,11 +5289,19 @@ function refreshAllAccordionVals() {
   ].forEach(([a, p]) => refreshAccordionVal(a, p));
 }
 
+function startSoloCatalog() {
+  G.mode = 'solo';
+  G.solo = { correct:0, points:0, answers:[] };
+  startQuiz();
+}
 function checkSoloReady() {
   const subjectOk = G.subject === 'gemischt' || !!(G.subject && G.subcategory);
-  const aiOk  = G.source === 'ai' && !!G.grade && subjectOk;
+  const aiOk  = G.source !== 'catalog' && !!G.grade && subjectOk;
   const catOk = G.source === 'catalog' && !!G.catalogId;
-  document.getElementById('start-btn').disabled = !(aiOk || catOk);
+  const startBtn = document.getElementById('start-btn');
+  if (startBtn) startBtn.disabled = !aiOk;
+  const catBtn = document.getElementById('solo-cat-start-btn');
+  if (catBtn) catBtn.disabled = !catOk;
   refreshAllAccordionVals();
 }
 function checkDuelReady() {
@@ -6848,21 +7092,16 @@ function updateOfflineUI() {
     }
   });
 
-  // Online-Sub-Tabs in Duell & Schnellduell deaktivieren
-  ['subtab-btn-online','qd-subtab-btn-online'].forEach(id => {
-    const el = document.getElementById(id);
-    if (!el) return;
+  // Online-Sub-Tabs im Duell-Schulfragen-Bereich deaktivieren
+  const duelOnlineBtn = document.getElementById('subtab-btn-online');
+  if (duelOnlineBtn) {
     if (offline) {
-      el.classList.add('sub-tab-disabled');
-      // Falls gerade auf Online-Tab → zurück zu Lokal
-      if (el.classList.contains('active')) {
-        if (id === 'subtab-btn-online')    switchDuelSubTab('local');
-        if (id === 'qd-subtab-btn-online') switchQdSubTab('local');
-      }
+      duelOnlineBtn.classList.add('sub-tab-disabled');
+      if (duelOnlineBtn.classList.contains('active')) switchDuelSubTab('local');
     } else {
-      el.classList.remove('sub-tab-disabled');
+      duelOnlineBtn.classList.remove('sub-tab-disabled');
     }
-  });
+  }
 }
 
 function toggleManualOffline() {
