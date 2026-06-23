@@ -653,7 +653,7 @@
     </div>
 
     <!-- KI -->
-    <div class="settings-section">
+    <div class="settings-section owner-only" style="display:none;">
       <div class="settings-section-title">🤖 KI & Fragengeneration</div>
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
         <div style="font-size:.85rem;">Zentraler API-Key
@@ -684,7 +684,7 @@
     </div>
 
     <!-- DIENSTE -->
-    <div class="settings-section">
+    <div class="settings-section owner-only" style="display:none;">
       <div class="settings-section-title">🔧 Dienste</div>
       <button class="settings-btn" onclick="closeSettingsModal();openFirebaseModal()">
         <span class="sb-icon">🔥</span><span class="sb-label">Firebase konfigurieren</span><span class="sb-arrow">›</span>
@@ -1396,7 +1396,7 @@
         </div>
 
         <div style="text-align:right;margin-top:4px;">
-          <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.78rem;" onclick="openFirebaseModal()">🔥 Firebase konfigurieren</button>
+          <button class="btn btn-secondary owner-only" style="width:auto;padding:7px 14px;font-size:.78rem;display:none;" onclick="openFirebaseModal()">🔥 Firebase konfigurieren</button>
         </div>
       </div><!-- /#duel-sub-online -->
     </div><!-- /#duel-schul -->
@@ -1483,7 +1483,7 @@
           </div>
 
           <div style="text-align:right;margin-top:4px;">
-            <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.78rem;" onclick="openFirebaseModal()">🔥 Firebase konfigurieren</button>
+            <button class="btn btn-secondary owner-only" style="width:auto;padding:7px 14px;font-size:.78rem;display:none;" onclick="openFirebaseModal()">🔥 Firebase konfigurieren</button>
           </div>
         </div>
       </div>
@@ -7577,6 +7577,7 @@ function startOfflineSession() {
   guestMode = true; // Schützt gegen spätes Firebase-onAuthStateChanged
   const cached = getCachedUser();
   currentUser = cached || null;
+  applyOwnerVisibility();
   if (cached) {
     const badge = document.getElementById('user-badge');
     if (badge) { badge.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>' + esc(cached.username) + '</span>'; badge.style.display = 'inline-flex'; }
@@ -7638,6 +7639,7 @@ function initAuth() {
 
 function onUserLoggedIn() {
   guestMode = false; // Echter Login – Gast-Modus beenden
+  applyOwnerVisibility();
   const badge = document.getElementById('user-badge');
   if (badge) { badge.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>' + esc(currentUser.username) + '</span>'; badge.style.display = 'inline-flex'; }
   startChallengeListener();
@@ -7652,6 +7654,7 @@ function onUserLoggedIn() {
 let guestMode = false;
 
 function onUserLoggedOut() {
+  applyOwnerVisibility();
   const badge = document.getElementById('user-badge');
   if (badge) badge.style.display = 'none';
   if (challengeDbListener) {
@@ -7778,13 +7781,21 @@ document.getElementById('modal-profile').addEventListener('click', e => { if (e.
 // ═══════════════════════════════════════════════════════
 // SETTINGS MODAL
 // ═══════════════════════════════════════════════════════
+// Besitzer-Erkennung: sensible Einstellungen (Keys, Firebase/Supabase) nur für den Owner sichtbar
+function isOwner() { return !!(currentUser && currentUser.username === 'neroesnaj'); }
+function applyOwnerVisibility() {
+  const show = isOwner();
+  document.querySelectorAll('.owner-only').forEach(el => { el.style.display = show ? '' : 'none'; });
+}
 async function openSettingsModal() {
+  applyOwnerVisibility();
   document.getElementById('central-key-section').style.display = 'none';
-  try {
-    const snap = await fbDB.ref('config/geminiKey').once('value');
-    const hasCentral = !!(snap.val());
-    document.getElementById('central-key-badge').style.display = hasCentral ? 'inline' : 'none';
-  } catch { document.getElementById('central-key-badge').style.display = 'none'; }
+  if (isOwner()) {
+    try {
+      const snap = await fbDB.ref('config/geminiKey').once('value');
+      document.getElementById('central-key-badge').style.display = snap.val() ? 'inline' : 'none';
+    } catch { document.getElementById('central-key-badge').style.display = 'none'; }
+  }
   updateBerichteBadge();
   document.getElementById('modal-settings').classList.remove('hidden');
 }
