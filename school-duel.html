@@ -301,6 +301,8 @@
   .icon-btn.del:hover { border-color:var(--red); color:var(--red); box-shadow:0 0 16px rgba(255,90,106,.3), 0 6px 16px rgba(0,0,0,.3); }
   .icon-btn.play:hover { border-color:var(--green); color:var(--green); box-shadow:0 0 16px rgba(62,207,142,.3), 0 6px 16px rgba(0,0,0,.3); }
   .empty-state { text-align:center; padding:40px 20px; color:var(--muted); font-size:.9rem; }
+  .catalog-group-header { font-size:.75rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.07em; margin:18px 0 8px; padding-bottom:6px; border-bottom:1px solid var(--border); }
+  .topic-group-sep { grid-column:1/-1; font-size:.72rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; padding:8px 0 4px; border-top:1px solid var(--border); margin-top:4px; }
   .empty-state .es-icon { font-size:2.5rem; margin-bottom:12px; }
 
   /* CATALOG EDITOR */
@@ -5308,7 +5310,7 @@ document.querySelectorAll('#duel-source-pills .pill').forEach(p => {
 
 // ─── TOPIC CARD PICKER ─────────────────────────────────────────
 const TOPIC_GROUPS = [
-  { id:'fussball', label:'Fußball', icon:'⚽', cats:{ leicht:'cat_fussball_leicht', mittel:'cat_fussball_mittel', schwer:'cat_fussball_schwer', gemischt:'cat_fussball_gemischt' }},
+  { id:'fussball', label:'Fußball', icon:'⚽', group:'Sport', cats:{ leicht:'cat_fussball_leicht', mittel:'cat_fussball_mittel', schwer:'cat_fussball_schwer', gemischt:'cat_fussball_gemischt' }},
   { id:'musik',    label:'Musik',   icon:'🎵', cats:{ leicht:'cat_musik_leicht',    mittel:'cat_musik_mittel',    schwer:'cat_musik_schwer',    gemischt:'cat_musik_gemischt' }},
   { id:'anime',    label:'Anime',   icon:'🎌', cats:{ leicht:'cat_anime_leicht',    mittel:'cat_anime_mittel',    schwer:'cat_anime_schwer',    gemischt:'cat_anime_gemischt' }},
 ];
@@ -5321,13 +5323,30 @@ function initCatalogPicker(mode) {
   if (!grid) return;
   grid.innerHTML = '';
 
-  TOPIC_GROUPS.forEach(t => {
+  const _ungrouped = TOPIC_GROUPS.filter(t => !t.group);
+  const _byGroup   = {};
+  TOPIC_GROUPS.filter(t => t.group).forEach(t => {
+    if (!_byGroup[t.group]) _byGroup[t.group] = [];
+    _byGroup[t.group].push(t);
+  });
+
+  const _addTopicCard = (t) => {
     const d = document.createElement('div');
     d.className = 'topic-card';
     d.dataset.topicId = t.id;
     d.innerHTML = `<span class="tc-icon">${t.icon}</span><span class="tc-label">${t.label}</span>`;
     d.addEventListener('click', () => pickTopic(mode, t.id, d));
     grid.appendChild(d);
+  };
+
+  _ungrouped.forEach(_addTopicCard);
+
+  Object.entries(_byGroup).forEach(([groupName, topics]) => {
+    const sep = document.createElement('div');
+    sep.className = 'topic-group-sep';
+    sep.textContent = groupName;
+    grid.appendChild(sep);
+    topics.forEach(_addTopicCard);
   });
 
   const customCats = getCatalogs().filter(c => !c.builtin);
@@ -7196,40 +7215,48 @@ function renderCatalogList() {
   const diffLabel = { leicht:'Leicht', mittel:'Mittel', schwer:'Schwer', gemischt:'Gemischt' };
 
   // Built-in groups based on TOPIC_GROUPS
-  const builtinGroups = TOPIC_GROUPS.map(t => ({
+  const allBuiltin = TOPIC_GROUPS.map(t => ({
     ...t,
     items: Object.fromEntries(
       Object.entries(t.cats).map(([d, id]) => [d, cats.find(c => c.id === id)])
     )
-  })).filter(g => Object.values(g.items).some(Boolean) && (!q || g.label.toLowerCase().includes(q)));
+  })).filter(g => Object.values(g.items).some(Boolean) && (!q || g.label.toLowerCase().includes(q) || (g.group||'').toLowerCase().includes(q)));
+
+  const ungroupedBuiltin = allBuiltin.filter(g => !g.group);
+  const builtinByGroup   = {};
+  allBuiltin.filter(g => g.group).forEach(g => {
+    if (!builtinByGroup[g.group]) builtinByGroup[g.group] = [];
+    builtinByGroup[g.group].push(g);
+  });
 
   const customCats = cats.filter(c => !c.builtin && (!q || (c.name||'').toLowerCase().includes(q) || (c.desc||'').toLowerCase().includes(q)));
 
   let html = '';
 
-  // ── Integrierte Themenkarten ──────────────────────────
-  if (builtinGroups.length) {
-    html += '<div class="label" style="margin-bottom:10px;">Integrierte Inhalte</div>';
-    html += '<div class="topic-grid">';
-    builtinGroups.forEach(g => {
+  const _renderTopicCards = (groups) => {
+    let h = '<div class="topic-grid">';
+    groups.forEach(g => {
       const total = g.items.gemischt?.questions?.length || 0;
-      html += `<div class="topic-card" onclick="toggleTopicGroup('tg-${g.id}',this)">
+      h += `<div class="topic-card" onclick="toggleTopicGroup('tg-${g.id}',this)">
         <span class="tc-icon">${g.icon}</span>
         <span class="tc-label">${g.label}</span>
         <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${total} Fragen</div>
       </div>`;
     });
-    html += '</div>';
+    h += '</div>';
+    return h;
+  };
 
-    // Aufklapp-Panels pro Thema
-    builtinGroups.forEach(g => {
-      html += `<div id="tg-${g.id}" style="display:none;margin-bottom:16px;">
+  const _renderTopicPanels = (groups) => {
+    let h = '';
+    groups.forEach(g => {
+      h += `<div id="tg-${g.id}" style="display:none;margin-bottom:16px;">
         <div style="font-size:.8rem;font-weight:600;margin-bottom:10px;">${g.icon} ${g.label}</div>
         <div class="catalog-list">`;
       ['leicht','mittel','schwer','gemischt'].forEach(d => {
         const cat = g.items[d];
         if (!cat) return;
-        html += `<div class="catalog-item">
+        h += `<div class="catalog-item">
           <div>
             <div class="ci-name">${diffLabel[d]}</div>
             <div class="ci-meta">${cat.questions?.length || 0} Fragen</div>
@@ -7239,7 +7266,24 @@ function renderCatalogList() {
           </div>
         </div>`;
       });
-      html += '</div></div>';
+      h += '</div></div>';
+    });
+    return h;
+  };
+
+  // ── Integrierte Themenkarten ──────────────────────────
+  if (allBuiltin.length) {
+    html += '<div class="label" style="margin-bottom:10px;">Integrierte Inhalte</div>';
+
+    if (ungroupedBuiltin.length) {
+      html += _renderTopicCards(ungroupedBuiltin);
+      html += _renderTopicPanels(ungroupedBuiltin);
+    }
+
+    Object.entries(builtinByGroup).forEach(([groupName, groups]) => {
+      html += `<div class="catalog-group-header">${groupName}</div>`;
+      html += _renderTopicCards(groups);
+      html += _renderTopicPanels(groups);
     });
   }
 
@@ -7263,7 +7307,7 @@ function renderCatalogList() {
     html += '</div>';
   }
 
-  if (!builtinGroups.length && !customCats.length) {
+  if (!allBuiltin.length && !customCats.length) {
     html = q
       ? '<div class="empty-state"><div class="es-icon">🔍</div>Keine Treffer für „' + esc(q) + '".</div>'
       : '<div class="empty-state"><div class="es-icon">📭</div>Noch keine Kataloge.<br>Erstelle deinen ersten!</div>';
