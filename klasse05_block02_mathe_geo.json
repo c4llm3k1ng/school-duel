@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist der Umfang eines Rechtecks mit Länge 8 cm und Breite 5 cm?",
+    "options": [
+      "26 cm",
+      "40 cm",
+      "13 cm",
+      "30 cm"
+    ],
+    "correct": 0,
+    "explanation": "Umfang Rechteck = 2 × (Länge + Breite) = 2 × (8 + 5) = 2 × 13 = 26 cm.",
+    "topic": "Rechteck"
+  },
+  {
+    "question": "Was ist der Flächeninhalt eines Rechtecks mit Länge 9 cm und Breite 4 cm?",
+    "options": [
+      "26 cm²",
+      "36 cm²",
+      "32 cm²",
+      "40 cm²"
+    ],
+    "correct": 1,
+    "explanation": "Flächeninhalt Rechteck = Länge × Breite = 9 × 4 = 36 cm².",
+    "topic": "Rechteck"
+  },
+  {
+    "question": "Was ist der Umfang eines Quadrats mit Seitenlänge 7 cm?",
+    "options": [
+      "14 cm",
+      "28 cm",
+      "49 cm",
+      "21 cm"
+    ],
+    "correct": 1,
+    "explanation": "Umfang Quadrat = 4 × Seite = 4 × 7 = 28 cm. Alle vier Seiten eines Quadrats sind gleich lang.",
+    "topic": "Quadrat"
+  },
+  {
+    "question": "Was ist der Flächeninhalt eines Quadrats mit Seitenlänge 6 cm?",
+    "options": [
+      "24 cm²",
+      "12 cm²",
+      "36 cm²",
+      "30 cm²"
+    ],
+    "correct": 2,
+    "explanation": "Flächeninhalt Quadrat = Seite × Seite = 6 × 6 = 36 cm².",
+    "topic": "Quadrat"
+  },
+  {
+    "question": "Wie viele Ecken hat ein Dreieck?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1,
+    "explanation": "Ein Dreieck hat genau 3 Ecken (Eckpunkte) und 3 Seiten. Der Name 'Dreieck' verrät es: drei Ecken.",
+    "topic": "Dreieck"
+  },
+  {
+    "question": "Was ist ein rechter Winkel?",
+    "options": [
+      "Ein Winkel von 45°",
+      "Ein Winkel von 90°",
+      "Ein Winkel von 180°",
+      "Ein Winkel von 60°"
+    ],
+    "correct": 1,
+    "explanation": "Ein rechter Winkel beträgt genau 90°. Er wird mit einem kleinen Quadrat im Eck markiert. Beispiel: Ecken eines Rechtecks.",
+    "topic": "Winkel"
+  },
+  {
+    "question": "Wie nennt man einen Winkel, der kleiner als 90° ist?",
+    "options": [
+      "stumpfer Winkel",
+      "rechter Winkel",
+      "spitzer Winkel",
+      "gestreckter Winkel"
+    ],
+    "correct": 2,
+    "explanation": "Spitzer Winkel: kleiner als 90°. Stumpfer Winkel: größer als 90°, kleiner als 180°. Gestreckter Winkel: genau 180°.",
+    "topic": "Winkel"
+  },
+  {
+    "question": "Was ist ein gleichseitiges Dreieck?",
+    "options": [
+      "Ein Dreieck mit einem rechten Winkel",
+      "Ein Dreieck, bei dem alle drei Seiten gleich lang sind (und alle Winkel 60° betragen)",
+      "Ein Dreieck mit zwei gleichen Seiten",
+      "Ein Dreieck mit einem stumpfen Winkel"
+    ],
+    "correct": 1,
+    "explanation": "Gleichseitig: alle Seiten gleich lang → alle Winkel gleich groß → 3 × 60° = 180°.",
+    "topic": "Dreieck"
+  },
+  {
+    "question": "Welche Form hat eine Münze?",
+    "options": [
+      "Rechteck",
+      "Dreieck",
+      "Kreis",
+      "Quadrat"
+    ],
+    "correct": 2,
+    "explanation": "Münzen sind kreisförmig (rund). Ein Kreis hat keinen Eckpunkt und keine Kante – nur einen Mittelpunkt und einen Radius.",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Was ist der Radius eines Kreises?",
+    "options": [
+      "Der Abstand zwischen zwei Punkten auf dem Kreisbogen",
+      "Der Abstand vom Mittelpunkt zum Kreisbogen (halber Durchmesser)",
+      "Der gesamte Rand des Kreises",
+      "Der Flächeninhalt"
+    ],
+    "correct": 1,
+    "explanation": "Radius r = Abstand Mittelpunkt → Kreislinie. Durchmesser d = 2r (ganzer Weg durch den Mittelpunkt).",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Was ist der Umfang eines Dreiecks mit den Seiten 5 cm, 7 cm und 9 cm?",
+    "options": [
+      "21 cm",
+      "11 cm",
+      "63 cm",
+      "26 cm"
+    ],
+    "correct": 0,
+    "explanation": "Umfang Dreieck = Summe aller Seiten = 5 + 7 + 9 = 21 cm.",
+    "topic": "Dreieck"
+  },
+  {
+    "question": "Wie heißt eine viereckige Figur, bei der gegenüberliegende Seiten gleich lang und parallel sind?",
+    "options": [
+      "Trapez",
+      "Parallelogramm",
+      "Raute",
+      "Drachen"
+    ],
+    "correct": 1,
+    "explanation": "Parallelogramm: gegenüberliegende Seiten gleich lang und parallel. Rechteck und Quadrat sind Sonderfälle des Parallelogramms.",
+    "topic": "Vierecke"
+  },
+  {
+    "question": "Was ist ein Würfel?",
+    "options": [
+      "Ein dreidimensionaler Körper mit 6 gleichen quadratischen Flächen",
+      "Ein Körper mit einer runden Fläche",
+      "Ein Körper mit 4 Flächen",
+      "Ein Körper mit 12 gleichen Flächen"
+    ],
+    "correct": 0,
+    "explanation": "Würfel: 6 Flächen (alle Quadrate), 8 Ecken, 12 Kanten. Alle Kanten gleich lang.",
+    "topic": "Körper"
+  },
+  {
+    "question": "Was ist ein Quader?",
+    "options": [
+      "Ein Körper mit nur quadratischen Flächen",
+      "Ein Körper mit 6 rechteckigen Flächen (gegenüberliegende Flächen gleich), 8 Ecken, 12 Kanten",
+      "Ein dreidimensionaler Körper mit 4 Flächen",
+      "Ein Zylinder"
+    ],
+    "correct": 1,
+    "explanation": "Quader: Verallgemeinerung des Würfels. Alle Winkel rechte Winkel, aber Seiten können unterschiedlich lang sein.",
+    "topic": "Körper"
+  },
+  {
+    "question": "Wie viele Flächen hat eine Pyramide mit quadratischer Grundfläche?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "Quadratische Pyramide: 1 Grundfläche (Quadrat) + 4 Dreiecksflächen = 5 Flächen insgesamt.",
+    "topic": "Körper"
+  },
+  {
+    "question": "Was bedeutet 'parallel'?",
+    "options": [
+      "Zwei Linien, die sich schneiden",
+      "Zwei Linien, die den gleichen Abstand haben und sich niemals schneiden",
+      "Zwei Linien, die senkrecht aufeinander stehen",
+      "Zwei Linien, die verschieden lang sind"
+    ],
+    "correct": 1,
+    "explanation": "Parallele Geraden: gleicher Abstand, treffen sich nie (auch wenn verlängert). Symbol: || (z.B. a || b).",
+    "topic": "Geometrische Begriffe"
+  },
+  {
+    "question": "Was bedeutet 'senkrecht' (orthogonal)?",
+    "options": [
+      "Zwei Linien verlaufen nebeneinander",
+      "Zwei Linien stehen unter einem rechten Winkel (90°) aufeinander",
+      "Zwei Linien sind gleich lang",
+      "Zwei Linien schneiden sich unter 45°"
+    ],
+    "correct": 1,
+    "explanation": "Senkrecht: Schnittwinkel = 90°. Symbol: ⊥ (z.B. a ⊥ b). Höhen in Dreiecken stehen senkrecht auf den Grundlinien.",
+    "topic": "Geometrische Begriffe"
+  },
+  {
+    "question": "Wie viele Achsen der Symmetrie hat ein Rechteck (kein Quadrat)?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct": 2,
+    "explanation": "Ein Rechteck hat 2 Symmetrieachsen: eine horizontale und eine vertikale Mittellinie. (Ein Quadrat hat 4 Achsen.)",
+    "topic": "Symmetrie"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Fläche und Volumen?",
+    "options": [
+      "Es gibt keinen Unterschied",
+      "Fläche misst zweidimensionale Ausdehnung (cm²), Volumen misst dreidimensionale Ausdehnung (cm³)",
+      "Volumen ist immer kleiner",
+      "Fläche ist immer größer"
+    ],
+    "correct": 1,
+    "explanation": "Fläche: Ausdehnung einer Ebene (m², cm²). Volumen: Inhalt eines Körpers (m³, cm³, Liter). Fläche 2D, Volumen 3D.",
+    "topic": "Fläche und Volumen"
+  },
+  {
+    "question": "Was ist das Volumen eines Würfels mit Kantenlänge 3 cm?",
+    "options": [
+      "9 cm³",
+      "18 cm³",
+      "27 cm³",
+      "12 cm³"
+    ],
+    "correct": 2,
+    "explanation": "Volumen Würfel = Kante³ = 3 × 3 × 3 = 27 cm³.",
+    "topic": "Körper"
+  },
+  {
+    "question": "Was ist ein Netz eines Würfels?",
+    "options": [
+      "Ein Würfel ohne Flächen",
+      "Die Abwicklung (Auffaltung) aller 6 Flächen des Würfels in einer Ebene – kann zum Würfel zusammengefaltet werden",
+      "Ein Muster auf dem Würfel",
+      "Ein 3D-Modell"
+    ],
+    "correct": 1,
+    "explanation": "Würfelnetz: 11 mögliche verschiedene Netze. Beim Zusammenfalten entsteht der Würfel. Wichtig: gegenüberliegende Flächen beachten.",
+    "topic": "Körper"
+  },
+  {
+    "question": "In welcher Einheit misst man Flächeninhalte?",
+    "options": [
+      "cm",
+      "cm²",
+      "cm³",
+      "m"
+    ],
+    "correct": 1,
+    "explanation": "Fläche: cm² (Quadratzentimeter), m² (Quadratmeter). Längen in cm oder m, Volumen in cm³ oder m³.",
+    "topic": "Einheiten"
+  },
+  {
+    "question": "Wie viele Grad hat die Winkelsumme im Dreieck?",
+    "options": [
+      "90°",
+      "180°",
+      "270°",
+      "360°"
+    ],
+    "correct": 1,
+    "explanation": "Winkelsumme Dreieck = immer 180°. Beweis: Winkel eines Dreiecks an einer Geraden anlegen → gestreckte Linie = 180°.",
+    "topic": "Dreieck"
+  },
+  {
+    "question": "Was ist ein stumpfwinkliges Dreieck?",
+    "options": [
+      "Ein Dreieck mit drei spitzen Winkeln",
+      "Ein Dreieck mit einem Winkel größer als 90°",
+      "Ein Dreieck mit einem rechten Winkel",
+      "Ein gleichseitiges Dreieck"
+    ],
+    "correct": 1,
+    "explanation": "Stumpfwinklig: ein Winkel > 90°. Dann sind die anderen beiden Winkel automatisch spitz (Winkelsumme = 180°).",
+    "topic": "Dreieck"
+  },
+  {
+    "question": "Was ist die Diagonale eines Rechtecks?",
+    "options": [
+      "Die Seiten des Rechtecks",
+      "Eine gerade Linie, die zwei nicht benachbarte Ecken verbindet",
+      "Die Höhe des Rechtecks",
+      "Die Breite des Rechtecks"
+    ],
+    "correct": 1,
+    "explanation": "Diagonale: Verbindungslinie gegenüberliegender Ecken. Im Rechteck sind beide Diagonalen gleich lang. Im Quadrat stehen sie senkrecht aufeinander.",
+    "topic": "Rechteck"
+  },
+  {
+    "question": "Was ist der Durchmesser eines Kreises mit Radius 5 cm?",
+    "options": [
+      "5 cm",
+      "2,5 cm",
+      "10 cm",
+      "25 cm"
+    ],
+    "correct": 2,
+    "explanation": "Durchmesser = 2 × Radius = 2 × 5 = 10 cm. Der Durchmesser geht durch den Mittelpunkt und verbindet zwei Punkte des Kreises.",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Wie nennt man einen Viereck mit genau einem Paar paralleler Seiten?",
+    "options": [
+      "Parallelogramm",
+      "Trapez",
+      "Raute",
+      "Rechteck"
+    ],
+    "correct": 1,
+    "explanation": "Trapez: genau ein Paar paralleler Seiten (die 'Grundlinien'). Parallelogramm hat zwei Paare paralleler Seiten.",
+    "topic": "Vierecke"
+  },
+  {
+    "question": "Was ist ein Zylinder?",
+    "options": [
+      "Ein Körper mit zwei quadratischen Grundflächen",
+      "Ein runder Körper mit zwei kreisförmigen Grundflächen und einer Mantelfläche",
+      "Ein Körper mit 6 Flächen",
+      "Ein Körper mit einer Spitze"
+    ],
+    "correct": 1,
+    "explanation": "Zylinder: 2 kreisförmige Grundflächen + 1 Mantelfläche. Beispiele: Dose, Rolle Klopapier.",
+    "topic": "Körper"
+  },
+  {
+    "question": "Wie viele Kanten hat ein Würfel?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct": 3,
+    "explanation": "Würfel: 6 Flächen, 8 Ecken, 12 Kanten. Merkformel (Euler): Ecken – Kanten + Flächen = 2 → 8 – 12 + 6 = 2 ✓.",
+    "topic": "Körper"
+  },
+  {
+    "question": "Was ist der Flächeninhalt eines Dreiecks mit Grundlinie 10 cm und Höhe 6 cm?",
+    "options": [
+      "60 cm²",
+      "30 cm²",
+      "16 cm²",
+      "20 cm²"
+    ],
+    "correct": 1,
+    "explanation": "Flächeninhalt Dreieck = (Grundlinie × Höhe) ÷ 2 = (10 × 6) ÷ 2 = 60 ÷ 2 = 30 cm².",
+    "topic": "Dreieck"
+  },
+  {
+    "question": "Was ist eine Gerade?",
+    "options": [
+      "Eine Linie, die an zwei Punkten endet",
+      "Eine unendlich lange, gerade Linie ohne Anfang und Ende",
+      "Ein Strahl mit einem Anfangspunkt",
+      "Ein Linienstück"
+    ],
+    "correct": 1,
+    "explanation": "Gerade: unendlich in beide Richtungen. Strahl: hat einen Anfangspunkt, endet nicht. Strecke: hat Anfangs- und Endpunkt.",
+    "topic": "Geometrische Grundbegriffe"
+  },
+  {
+    "question": "Wie viele Ecken hat ein Sechseck (Hexagon)?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "Sechseck (Hexagon): 6 Ecken und 6 Seiten. Hexagon stammt vom griechischen 'hex' (sechs). Beispiel: Bienenwaben.",
+    "topic": "Vielecke"
+  },
+  {
+    "question": "Was bedeutet kongruent?",
+    "options": [
+      "Ähnlich aber unterschiedlich groß",
+      "Deckungsgleich – zwei Figuren sind kongruent, wenn sie gleiche Form und gleiche Größe haben",
+      "Spiegelbildlich",
+      "Vergrößert"
+    ],
+    "correct": 1,
+    "explanation": "Kongruenz: Figuren die sich durch Verschiebung, Drehung oder Spiegelung zur Deckung bringen lassen. Kongruent ≠ ähnlich (ähnlich heißt nur gleiche Form).",
+    "topic": "Kongruenz"
+  },
+  {
+    "question": "Was ist ein Koordinatensystem?",
+    "options": [
+      "Ein Kompass",
+      "Ein System aus zwei senkrecht aufeinander stehenden Zahlengeraden (x-Achse, y-Achse) zur Ortsbestimmung von Punkten",
+      "Ein Lineal",
+      "Eine Tabelle"
+    ],
+    "correct": 1,
+    "explanation": "Koordinatensystem: Punkt P(3; 5) bedeutet x=3 (rechts), y=5 (oben). Schnittpunkt der Achsen = Ursprung O(0;0).",
+    "topic": "Koordinatensystem"
+  },
+  {
+    "question": "In welchem Quadrant liegt der Punkt P(–2; 3)?",
+    "options": [
+      "1. Quadrant",
+      "2. Quadrant",
+      "3. Quadrant",
+      "4. Quadrant"
+    ],
+    "correct": 1,
+    "explanation": "2. Quadrant: x negativ, y positiv (links oben). 1. Quadrant: x,y positiv. 3. Quadrant: x,y negativ. 4. Quadrant: x positiv, y negativ.",
+    "topic": "Koordinatensystem"
+  },
+  {
+    "question": "Was ist der Umfang eines gleichseitigen Dreiecks mit Seitenlänge 8 cm?",
+    "options": [
+      "16 cm",
+      "24 cm",
+      "32 cm",
+      "8 cm"
+    ],
+    "correct": 1,
+    "explanation": "Gleichseitiges Dreieck: alle 3 Seiten gleich lang. Umfang = 3 × 8 = 24 cm.",
+    "topic": "Dreieck"
+  },
+  {
+    "question": "Was ist Spiegelsymmetrie?",
+    "options": [
+      "Wenn eine Figur gedreht werden kann",
+      "Wenn eine Figur durch eine Achse so gespiegelt werden kann, dass beide Hälften deckungsgleich sind",
+      "Wenn eine Figur mehrfach vorkommt",
+      "Wenn eine Figur verkleinert wird"
+    ],
+    "correct": 1,
+    "explanation": "Spiegelsymmetrie: Achsensymmetrie. Beispiele: Buchstabe A, Schmetterling, Herz. Die Spiegelachse teilt die Figur in zwei gleiche Hälften.",
+    "topic": "Symmetrie"
+  },
+  {
+    "question": "Was ist das Volumen eines Quaders mit L=5 cm, B=3 cm, H=4 cm?",
+    "options": [
+      "24 cm³",
+      "60 cm³",
+      "12 cm³",
+      "47 cm³"
+    ],
+    "correct": 1,
+    "explanation": "Volumen Quader = Länge × Breite × Höhe = 5 × 3 × 4 = 60 cm³.",
+    "topic": "Körper"
+  },
+  {
+    "question": "Was ist eine Maßstabszeichnung?",
+    "options": [
+      "Eine ungenaue Skizze",
+      "Eine verkleinerte oder vergrößerte Darstellung eines Objekts in einem bestimmten Verhältnis (z.B. 1:100 bedeutet 1 cm = 1 m in der Realität)",
+      "Eine Freihandzeichnung",
+      "Eine Körperdarstellung"
+    ],
+    "correct": 1,
+    "explanation": "Maßstab 1:100: 1 cm auf der Karte = 100 cm = 1 m in der Realität. Stadtpläne, Baupläne, Landkarten nutzen Maßstäbe.",
+    "topic": "Maßstab"
+  },
+  {
+    "question": "Was ist Achsensymmetrie?",
+    "options": [
+      "Eine Drehung",
+      "Eine Spiegelung: Eine Figur ist achsensymmetrisch, wenn sie durch eine Spiegelachse in zwei deckungsgleiche Hälften geteilt werden kann – z.B. Buchstabe A, Herz, gleichschenkliges Dreieck",
+      "Eine Verschiebung",
+      "Eine Streckung"
+    ],
+    "correct": 1,
+    "explanation": "Achsensymmetrie: Spiegelachse = Symmetrielinie. Spiegelt man die Figur an dieser Achse, entsteht dieselbe Figur. Reguläre Vielecke: viele Symmetrieachsen (Quadrat: 4, gleichseitiges Dreieck: 3).",
+    "topic": "Symmetrie"
+  }
+]

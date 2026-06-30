@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist ein Bruch?",
+    "options": [
+      "Eine Zahl größer als 1",
+      "Eine Zahl, die einen Teil eines Ganzen beschreibt: Zähler/Nenner (z.B. 3/4 bedeutet 3 von 4 gleichen Teilen)",
+      "Eine negative Zahl",
+      "Eine sehr große Zahl"
+    ],
+    "correct": 1,
+    "explanation": "Bruch: Nenner (unten) sagt, in wie viele Teile das Ganze geteilt ist. Zähler (oben) sagt, wie viele Teile gemeint sind. 3/4 = drei Viertel.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist ein gleichnamiger Bruch?",
+    "options": [
+      "Ein Bruch mit gleichem Zähler",
+      "Zwei Brüche mit demselben Nenner: 2/7 und 5/7 sind gleichnamig (können direkt addiert werden)",
+      "Ein Bruch mit Zähler=Nenner",
+      "Ein echter Bruch"
+    ],
+    "correct": 1,
+    "explanation": "Gleichnamige Brüche: selber Nenner. 2/7 + 5/7 = 7/7 = 1. Ungleichnamige Brüche müssen erst gleichnamig gemacht werden (Hauptnenner finden).",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist der Kehrwert eines Bruchs?",
+    "options": [
+      "Der Bruch minus 1",
+      "Zähler und Nenner vertauschen: Kehrwert von 3/4 ist 4/3 – Bruch × Kehrwert = 1",
+      "Der Bruch hoch 2",
+      "Der negative Bruch"
+    ],
+    "correct": 1,
+    "explanation": "Kehrwert: 3/4 → 4/3. Nötig bei der Division von Brüchen: 3/4 ÷ 2/5 = 3/4 × 5/2. Man multipliziert mit dem Kehrwert des Divisors.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Wie addiert man Brüche mit verschiedenen Nennern?",
+    "options": [
+      "Zähler und Nenner getrennt addieren",
+      "Erst gleichnamig machen (Hauptnenner finden), dann Zähler addieren: 1/3 + 1/4 = 4/12 + 3/12 = 7/12",
+      "Brüche einfach nebeneinander schreiben",
+      "Nenner addieren und Zähler addieren"
+    ],
+    "correct": 1,
+    "explanation": "Hauptnenner von 3 und 4: kgV(3,4)=12. 1/3 = 4/12, 1/4 = 3/12. Summe: 7/12. Nimm nie einfach Zähler+Zähler und Nenner+Nenner!",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist ein echter Bruch?",
+    "options": [
+      "Ein Bruch mit Zähler > Nenner",
+      "Ein Bruch, bei dem der Zähler kleiner als der Nenner ist: 3/5, 1/4, 7/8 – Wert liegt zwischen 0 und 1",
+      "Ein Bruch mit Zähler = Nenner",
+      "Ein unechter Bruch"
+    ],
+    "correct": 1,
+    "explanation": "Echter Bruch: Zähler < Nenner → Wert < 1. Unechter Bruch: Zähler ≥ Nenner → Wert ≥ 1 (z.B. 7/4 = 1 3/4). Gemischte Zahl: 1 3/4.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Wie kürzt man einen Bruch?",
+    "options": [
+      "Zähler und Nenner addieren",
+      "Zähler und Nenner durch denselben Faktor dividieren (ggT): 12/18 ÷ 6/6 = 2/3",
+      "Nur den Zähler halbieren",
+      "Nur den Nenner verdoppeln"
+    ],
+    "correct": 1,
+    "explanation": "Kürzen: 12/18: ggT(12,18)=6. 12÷6=2, 18÷6=3 → 2/3. Vollständig gekürzt, wenn ggT von Zähler und Nenner = 1.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist 1/2 + 1/4?",
+    "options": [
+      "2/6",
+      "1/2",
+      "3/4",
+      "2/4"
+    ],
+    "correct": 2,
+    "explanation": "Hauptnenner: 4. 1/2 = 2/4. 2/4 + 1/4 = 3/4.",
+    "topic": "Brüche addieren"
+  },
+  {
+    "question": "Was ist 3/4 – 1/2?",
+    "options": [
+      "2/2",
+      "1/4",
+      "1/2",
+      "3/8"
+    ],
+    "correct": 1,
+    "explanation": "Hauptnenner: 4. 1/2 = 2/4. 3/4 – 2/4 = 1/4.",
+    "topic": "Brüche subtrahieren"
+  },
+  {
+    "question": "Was ist 2/3 × 3/4?",
+    "options": [
+      "5/7",
+      "6/12 = 1/2",
+      "2/4",
+      "3/3"
+    ],
+    "correct": 1,
+    "explanation": "Brüche multiplizieren: Zähler × Zähler, Nenner × Nenner: 2×3/3×4 = 6/12 = 1/2 (gekürzt durch 6).",
+    "topic": "Brüche multiplizieren"
+  },
+  {
+    "question": "Was ist 3/4 ÷ 3/8?",
+    "options": [
+      "9/32",
+      "1/2",
+      "2",
+      "3/1"
+    ],
+    "correct": 2,
+    "explanation": "Division: mit Kehrwert multiplizieren: 3/4 × 8/3 = 24/12 = 2.",
+    "topic": "Brüche dividieren"
+  },
+  {
+    "question": "Was ist eine Dezimalzahl?",
+    "options": [
+      "Eine Zahl mit Bruchstrich",
+      "Eine Zahl mit einem Komma, die Anteile kleiner als 1 ausdrückt: 0,5 = 5/10 = 1/2; 0,25 = 25/100 = 1/4",
+      "Eine negative Zahl",
+      "Eine Zahl ohne Komma"
+    ],
+    "correct": 1,
+    "explanation": "Dezimalzahlen: 0,1 = ein Zehntel, 0,01 = ein Hundertstel, 0,001 = ein Tausendstel. Einfaches Rechnen mit dem Dezimalsystem.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 0,5 als Bruch?",
+    "options": [
+      "5/100",
+      "1/5",
+      "1/2",
+      "5/1"
+    ],
+    "correct": 2,
+    "explanation": "0,5 = 5/10 = 1/2 (gekürzt durch 5). 0,25 = 25/100 = 1/4. 0,1 = 1/10. 0,75 = 3/4.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 1/4 als Dezimalzahl?",
+    "options": [
+      "0,14",
+      "0,4",
+      "0,25",
+      "4,0"
+    ],
+    "correct": 2,
+    "explanation": "1/4 = 25/100 = 0,25. Andere wichtige Umrechnungen: 1/2=0,5; 1/5=0,2; 1/10=0,1; 3/4=0,75.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 0,7 × 10?",
+    "options": [
+      "0,07",
+      "7",
+      "0,70",
+      "70"
+    ],
+    "correct": 1,
+    "explanation": "Mal 10: Komma eine Stelle nach rechts rücken: 0,7 → 7,0 = 7. Mal 100: zwei Stellen. Geteilt durch 10: Komma nach links.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 3,6 + 2,8?",
+    "options": [
+      "5,14",
+      "6,4",
+      "5,4",
+      "6,14"
+    ],
+    "correct": 1,
+    "explanation": "3,6 + 2,8: Kommas untereinander, dann addieren: 6+8=14 (4 hinschreiben, 1 merken), 3+2+1=6 → 6,4.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Zähler und Nenner?",
+    "options": [
+      "Kein Unterschied",
+      "Zähler: obere Zahl (wie viele Teile). Nenner: untere Zahl (in wie viele Teile ist das Ganze geteilt)",
+      "Zähler ist immer kleiner",
+      "Nenner ist oben"
+    ],
+    "correct": 1,
+    "explanation": "Eselsbrücke: 'Der Nenner nennt, in wie viele Teile geteilt wird.' 'Der Zähler zählt, wie viele Teile wir haben.' Zähler oben, Nenner unten.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist 50% als Bruch und Dezimalzahl?",
+    "options": [
+      "50/100 = 5, als Dezimal: 50",
+      "1/2 = 0,5",
+      "50/1 = 5,0",
+      "1/5 = 0,2"
+    ],
+    "correct": 1,
+    "explanation": "50% = 50/100 = 1/2 = 0,5. Prozent bedeutet 'von hundert'. 100% = Ganzes. 25% = 1/4 = 0,25. 10% = 1/10 = 0,1.",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was bedeutet 'Prozent' (%)?",
+    "options": [
+      "Von tausend",
+      "Von hundert: 1% = 1/100. 'Prozent' kommt vom Lateinischen 'per centum' (von hundert)",
+      "Von zehn",
+      "Ein Hundertstel von einem Meter"
+    ],
+    "correct": 1,
+    "explanation": "Prozent: 45% = 45/100 = 0,45. Drei Darstellungsformen: Bruch (45/100), Dezimal (0,45), Prozent (45%). Umrechnen wichtig!",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was ist 10% von 200?",
+    "options": [
+      "10",
+      "20",
+      "2",
+      "200"
+    ],
+    "correct": 1,
+    "explanation": "10% von 200: 200 × 10/100 = 200 × 0,1 = 20. Oder: 200 ÷ 10 = 20 (10% = ein Zehntel).",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Welcher Bruch ist größer: 2/3 oder 3/5?",
+    "options": [
+      "3/5",
+      "2/3",
+      "Beide gleich groß",
+      "Nicht vergleichbar"
+    ],
+    "correct": 1,
+    "explanation": "Hauptnenner: kgV(3,5)=15. 2/3=10/15, 3/5=9/15. 10/15 > 9/15 → 2/3 > 3/5.",
+    "topic": "Brüche vergleichen"
+  },
+  {
+    "question": "Was ist eine gemischte Zahl?",
+    "options": [
+      "Ein Bruch mit zwei Strichen",
+      "Eine Zahl aus einer ganzen Zahl und einem echten Bruch: 2 3/4 = 2 + 3/4 = 11/4",
+      "Ein unechter Bruch",
+      "Eine negative Zahl"
+    ],
+    "correct": 1,
+    "explanation": "Gemischte Zahl umwandeln: 2 3/4 = (2×4+3)/4 = 11/4. Rückwandlung: 11÷4=2 Rest 3 → 2 3/4.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist 1/3 als Dezimalzahl?",
+    "options": [
+      "0,13",
+      "0,3",
+      "0,333... (periodisch)",
+      "3,0"
+    ],
+    "correct": 2,
+    "explanation": "1/3 = 0,3333... (Periode: 3). Periodische Dezimalzahlen entstehen, wenn der Nenner (nach Kürzen) andere Primfaktoren als 2 und 5 enthält.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Wie subtrahiert man Dezimalzahlen?",
+    "options": [
+      "Ohne Komma rechnen",
+      "Komma untereinander schreiben und dann wie bei ganzen Zahlen rechnen: 5,7 – 2,3 = 3,4",
+      "Komma ignorieren",
+      "Zuerst in Brüche umwandeln"
+    ],
+    "correct": 1,
+    "explanation": "Dezimalrechnung: Kommas untereinander ausrichten, ggf. Nullen anhängen. 5,70 – 2,35 = 3,35. Dann wie schriftliche Subtraktion.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 25% von 80?",
+    "options": [
+      "25",
+      "20",
+      "40",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "25% von 80 = 80 × 25/100 = 80 × 0,25 = 20. Oder: 25% = 1/4, also 80 ÷ 4 = 20.",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was ist ein Stammbruch?",
+    "options": [
+      "Ein Bruch mit dem Zähler 1",
+      "Ein Bruch mit dem Nenner 1",
+      "Ein gekürzter Bruch",
+      "Ein Kehrwert"
+    ],
+    "correct": 0,
+    "explanation": "Stammbruch: Zähler = 1, also 1/2, 1/3, 1/4, 1/5... Sie sind die 'Bausteine' aller Brüche. Benannt nach dem Strich im Bruchzeichen.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist 0,25 × 4?",
+    "options": [
+      "0,1",
+      "0,5",
+      "1",
+      "2,5"
+    ],
+    "correct": 2,
+    "explanation": "0,25 × 4 = 1. Denn 0,25 = 1/4, und 1/4 × 4 = 1. Oder: 0,25 × 4 = 1,00 = 1.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Wie erweitert man einen Bruch?",
+    "options": [
+      "Zähler und Nenner durch dieselbe Zahl teilen",
+      "Zähler und Nenner mit derselben Zahl multiplizieren: 1/3 × 2/2 = 2/6 (gleichwertiger Bruch)",
+      "Zähler verdoppeln",
+      "Nenner addieren"
+    ],
+    "correct": 1,
+    "explanation": "Erweitern: 1/3 = 2/6 = 3/9 = 4/12 (alle gleichwertig). Gegenteil: Kürzen. Erweitern nötig um Hauptnenner herzustellen.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist 3,14 gerundet auf eine Nachkommastelle?",
+    "options": [
+      "3",
+      "3,1",
+      "3,2",
+      "3,14"
+    ],
+    "correct": 1,
+    "explanation": "Runden: die 4 (zweite Nachkommastelle) ist < 5 → abrunden → 3,1. Wäre es 3,15, würde man auf 3,2 aufrunden (5 oder mehr → aufrunden).",
+    "topic": "Runden"
+  },
+  {
+    "question": "Was ist 1/2 × 1/2?",
+    "options": [
+      "1",
+      "1/4",
+      "2/4",
+      "1/2"
+    ],
+    "correct": 1,
+    "explanation": "1/2 × 1/2 = 1×1 / 2×2 = 1/4. Visualisierung: Hälfte einer Hälfte = ein Viertel.",
+    "topic": "Brüche multiplizieren"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen 0,3 und 0,30?",
+    "options": [
+      "0,30 ist größer",
+      "Kein Unterschied im Wert – angehängte Nullen nach dem letzten Komma ändern den Wert nicht (0,3 = 0,30 = 0,300)",
+      "0,3 ist größer",
+      "0,30 = 3,0"
+    ],
+    "correct": 1,
+    "explanation": "0,3 = 0,30 = 0,300 (gleichwertig). Aber: 0,3 ≠ 0,03 (0,03 = drei Hundertstel, viel kleiner als 0,3 = drei Zehntel).",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 15% von 60?",
+    "options": [
+      "15",
+      "6",
+      "9",
+      "10"
+    ],
+    "correct": 2,
+    "explanation": "15% von 60 = 60 × 15/100. Rechenweg: 10% von 60 = 6; 5% = 3; zusammen 15% = 9. Oder: 60 × 0,15 = 9.",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was ist der Hauptnenner von 1/4 und 1/6?",
+    "options": [
+      "24",
+      "10",
+      "12",
+      "8"
+    ],
+    "correct": 2,
+    "explanation": "Hauptnenner = kgV(4,6) = 12. Vielfache von 4: 4,8,12... Vielfache von 6: 6,12... Kleinstes gemeinsames: 12.",
+    "topic": "Hauptnenner"
+  },
+  {
+    "question": "Was ist 7/7?",
+    "options": [
+      "7",
+      "0",
+      "1",
+      "1/7"
+    ],
+    "correct": 2,
+    "explanation": "7/7 = 1 (Zähler = Nenner). Allgemein: n/n = 1 für jedes n ≠ 0. Anschaulich: 7 von 7 Teilen = das Ganze = 1.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist 100% von einer Zahl?",
+    "options": [
+      "Doppelt die Zahl",
+      "Die Zahl selbst – 100% bedeutet das Ganze, also der vollständige Wert",
+      "Die Hälfte der Zahl",
+      "Zehn mal die Zahl"
+    ],
+    "correct": 1,
+    "explanation": "100% = 1 (als Dezimalzahl) = Ganzes. 200% wäre das Doppelte. 50% die Hälfte. 100% von 45 = 45.",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was ist 2,5 – 1,8?",
+    "options": [
+      "0,7",
+      "1,7",
+      "0,3",
+      "1,3"
+    ],
+    "correct": 0,
+    "explanation": "2,5 – 1,8: Einer: 5<8, borgen: 15–8=7. Einerstellen: 1 (geborgt) → 1–1=0 – aber wir hatten 2–1=1 minus das geborgte 1 = 0+... 2,5–1,8=0,7. Probe: 1,8+0,7=2,5 ✓.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was bedeutet es, wenn der Nenner größer wird (bei gleichem Zähler)?",
+    "options": [
+      "Der Bruch wird größer",
+      "Der Bruch wird kleiner: 1/2 > 1/4 > 1/8 – je mehr Teile, desto kleiner der einzelne Teil",
+      "Der Bruch bleibt gleich",
+      "Der Bruch wird negativ"
+    ],
+    "correct": 1,
+    "explanation": "Größerer Nenner = kleinere Teile. 1/2 = eine Hälfte; 1/8 = ein Achtel (viel kleiner). Je mehr man die Pizza teilt, desto kleiner jedes Stück.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist 4/5 als Prozentzahl?",
+    "options": [
+      "45%",
+      "80%",
+      "40%",
+      "4,5%"
+    ],
+    "correct": 1,
+    "explanation": "4/5 × 100% = 400/5 % = 80%. Oder: 4/5 = 0,8 = 80%.",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was ist 3/8 als Dezimalzahl?",
+    "options": [
+      "3,8",
+      "0,38",
+      "0,375",
+      "0,3"
+    ],
+    "correct": 2,
+    "explanation": "3/8 = 3 ÷ 8 = 0,375. Rechenweg: 3,000 ÷ 8 = 0,375. Probe: 0,375 × 8 = 3 ✓.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist ein unechter Bruch?",
+    "options": [
+      "Ein Bruch mit negativem Zähler",
+      "Ein Bruch mit Zähler größer oder gleich Nenner: 5/4, 7/3, 8/8 – Wert ist 1 oder größer",
+      "Ein Stammbruch",
+      "Ein periodischer Bruch"
+    ],
+    "correct": 1,
+    "explanation": "Unechter Bruch → umwandeln in gemischte Zahl: 7/3 = 2 Rest 1 → 2 1/3. Umgekehrt: 2 1/3 = (2×3+1)/3 = 7/3.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Was ist ein gemischter Bruch (gemischte Zahl)?",
+    "options": [
+      "Ein echter Bruch",
+      "Eine Zahl bestehend aus einer ganzen Zahl und einem echten Bruch: z.B. 2½ = 2 + ½. Umrechnung: 2½ = 5/2 (Nenner × ganze Zahl + Zähler = neuer Zähler)",
+      "Ein unechter Bruch",
+      "Eine Dezimalzahl"
+    ],
+    "correct": 1,
+    "explanation": "Gemischte Zahl: 2½, 3¾, 1⅓. In unechten Bruch umrechnen: 2½ → (2×2+1)/2 = 5/2. Zurück: 5÷2 = 2 Rest 1 → 2½. Gemischte Zahlen sind im Alltag häufig (Rezepte, Maße).",
+    "topic": "Brüche"
+  }
+]
