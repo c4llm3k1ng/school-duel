@@ -1,41 +1,482 @@
 [
-  {"question":"Was ist organische Chemie?","options":["Die Chemie der Kohlenstoffverbindungen","Die Chemie aller natürlichen Stoffe","Die Chemie ohne Metalle","Die Chemie der Salze"],"correct":0,"explanation":"Organische Chemie befasst sich mit Kohlenstoffverbindungen (ausgenommen CO₂, Carbonate, CO).","topic":"Grundlagen"},
-  {"question":"Was sind Alkane?","options":["Gesättigte Kohlenwasserstoffe mit Einfachbindungen; allgemeine Formel CₙH₂ₙ₊₂","Kohlenwasserstoffe mit Doppelbindung","Kohlenwasserstoffe mit Dreifachbindung","Ringförmige Aromaten"],"correct":0,"explanation":"Alkane: CₙH₂ₙ₊₂ (Methan CH₄, Ethan C₂H₆, Propan C₃H₈...). Gesättigt = nur Einfachbindungen.","topic":"Kohlenwasserstoffe"},
-  {"question":"Was sind Alkene?","options":["Kohlenwasserstoffe mit mindestens einer C=C-Doppelbindung; allgemeine Formel CₙH₂ₙ","Gesättigte Kohlenwasserstoffe","Kohlenwasserstoffe mit Dreifachbindung","Aromatische Verbindungen"],"correct":0,"explanation":"Alkene: CₙH₂ₙ. Einfachstes Alken: Ethen (C₂H₄) mit einer C=C-Doppelbindung.","topic":"Kohlenwasserstoffe"},
-  {"question":"Was sind Alkine?","options":["Kohlenwasserstoffe mit mindestens einer C≡C-Dreifachbindung; allgemeine Formel CₙH₂ₙ₋₂","Kohlenwasserstoffe mit Doppelbindung","Gesättigte Kohlenwasserstoffe","Cyclische Kohlenwasserstoffe"],"correct":0,"explanation":"Alkine: CₙH₂ₙ₋₂. Einfachstes Alkin: Ethin (C₂H₂) mit einer Dreifachbindung.","topic":"Kohlenwasserstoffe"},
-  {"question":"Was ist die homologe Reihe der Alkane?","options":["Methan, Ethan, Propan, Butan… – jedes Glied unterscheidet sich um CH₂","Methanol, Ethanol, Propanol…","Methan, Ethen, Propin…","Benzol, Toluol, Xylol…"],"correct":0,"explanation":"In der homologen Reihe steigen C-Atome um je 1 (+ CH₂); physikalische Eigenschaften ändern sich graduell.","topic":"Nomenklatur"},
-  {"question":"Was ist IUPAC-Nomenklatur in der organischen Chemie?","options":["Ein internationales Regelsystem zur systematischen Benennung organischer Verbindungen","Ein Abkürzungssystem für Laborformeln","Ein Messverfahren","Ein Sicherheitsstandard"],"correct":0,"explanation":"IUPAC-Namen basieren auf der längsten C-Kette (Stamm) plus Substituenten und funktionellen Gruppen.","topic":"Nomenklatur"},
-  {"question":"Was ist Strukturisomerie?","options":["Verbindungen mit gleicher Summenformel, aber unterschiedlichem Strukturaufbau","Verbindungen mit identischer Struktur","Verbindungen mit gleicher Raumstruktur","Verbindungen ohne C-Atome"],"correct":0,"explanation":"Butanisomere C₄H₁₀: n-Butan (Kette) und Isobutan (verzweigt) – gleiche Formel, verschiedene Struktur.","topic":"Isomerie"},
-  {"question":"Was ist die Hydroxylgruppe –OH?","options":["Die funktionelle Gruppe der Alkohole","Die funktionelle Gruppe der Aldehyde","Eine Estergruppe","Eine Aminogruppe"],"correct":0,"explanation":"–OH ist die charakteristische Gruppe der Alkohole; Ethanol (C₂H₅OH) ist das bekannteste Beispiel.","topic":"Funktionelle Gruppen"},
-  {"question":"Welche funktionelle Gruppe haben Aldehyde?","options":["–CHO (Carbonylgruppe am Kettenende)","–OH","–COOH","–NH₂"],"correct":0,"explanation":"Aldehyde besitzen eine Aldehydgruppe –CHO am Ende der Kohlenstoffkette; Methanal (Formaldehyd) ist das einfachste.","topic":"Funktionelle Gruppen"},
-  {"question":"Was sind Ketone?","options":["Verbindungen mit einer C=O-Gruppe innerhalb der Kohlenstoffkette (nicht am Ende)","Verbindungen mit –CHO am Ende","Säuren mit –COOH","Verbindungen mit –OH"],"correct":0,"explanation":"Ketone: C=O inmitten der Kette. Einfachstes Keton: Propanon (Aceton, CH₃COCH₃).","topic":"Funktionelle Gruppen"},
-  {"question":"Was sind Carbonsäuren?","options":["Verbindungen mit der Carboxylgruppe –COOH","Verbindungen mit –CHO","Alkohole mit –OH","Ester mit –COO–"],"correct":0,"explanation":"–COOH ist sauer; einfachste Carbonsäure: Methansäure (Ameisensäure, HCOOH).","topic":"Funktionelle Gruppen"},
-  {"question":"Wie entstehen Ester?","options":["Durch Reaktion einer Carbonsäure mit einem Alkohol unter Abspaltung von Wasser (Veresterung)","Durch Reaktion zweier Alkohole","Durch Oxidation von Alkanen","Durch Addition an Alkene"],"correct":0,"explanation":"Veresterung: R-COOH + R'-OH ⇌ R-COO-R' + H₂O (Gleichgewichtsreaktion, Katalysator: H⁺).","topic":"Reaktionstypen"},
-  {"question":"Was ist Verseifung?","options":["Die Hydrolyse von Fetten (Triglyceriden) mit NaOH zu Glycerin und Natrium-Fettsäuresalz (Seife)","Die Herstellung von Estern","Die Oxidation von Alkoholen","Die Reduktion von Aldehyden"],"correct":0,"explanation":"Verseifung: Triglycerid + 3 NaOH → Glycerin + 3 Natrium-Carboxylate (Seifen).","topic":"Reaktionstypen"},
-  {"question":"Was ist eine Additionsreaktion?","options":["Zwei Moleküle verbinden sich; typisch für Verbindungen mit Mehrfachbindungen","Eine Verbindung zerfällt in zwei Teile","Ein Atom ersetzt ein anderes","Abspaltung von H₂O"],"correct":0,"explanation":"Addition an Alkene: z. B. Brom addiert sich an Ethen (Br₂ + C₂H₄ → C₂H₄Br₂). Doppelbindung wird aufgebrochen.","topic":"Reaktionstypen"},
-  {"question":"Was ist eine Substitutionsreaktion?","options":["Ein Atom oder eine Gruppe ersetzt ein anderes Atom oder eine andere Gruppe","Zwei Moleküle vereinigen sich","Ein Molekül zerfällt","Eine Doppelbindung entsteht"],"correct":0,"explanation":"Typisch für Alkane: radikalische Substitution (z. B. Chlorierung von Methan: CH₄ + Cl₂ → CH₃Cl + HCl).","topic":"Reaktionstypen"},
-  {"question":"Wofür dient der Bromwasser-Test?","options":["Nachweis von C=C-Doppelbindungen: Bromwasser wird entfärbt","Nachweis von Alkoholen","Nachweis von Aldehyden","Nachweis von Carbonsäuren"],"correct":0,"explanation":"Alkene entfärben Bromwasser durch Addition: C=C + Br₂ → Dibromid (farblos).","topic":"Nachweisreaktionen"},
-  {"question":"Was ist die Struktur von Benzol?","options":["Ein cyclischer, aromatischer Ring aus 6 C-Atomen mit delokalisierten π-Elektronen","Ein cyclisches Alkan mit 6 C-Atomen","Ein lineares Molekül mit 6 C-Atomen","Ein Molekül mit 6 Doppelbindungen"],"correct":0,"explanation":"Benzol (C₆H₆): planarer Ring, π-Elektronen über alle 6 C delokalisiert; besondere Stabilität.","topic":"Aromaten"},
-  {"question":"Was ist Cracken (Erdöl)?","options":["Thermisches oder katalytisches Aufbrechen langer Kohlenwasserstoffketten in kürzere, wertvollere Produkte","Destillation von Erdöl","Verbrennung von Erdöl","Verflüssigung von Erdgas"],"correct":0,"explanation":"Beim Cracken werden langkettige Alkane in Ethen, Propen und kurzkettige Alkane zerlegt (Grundstoff für Kunststoffe).","topic":"Erdöl"},
-  {"question":"Was ist Polymerisation?","options":["Verknüpfung vieler gleichartiger Monomere zu langen Polymerketten","Zerlegung von Polymeren","Addition eines Moleküls","Esterbildung"],"correct":0,"explanation":"Polyethylen entsteht durch Polymerisation von Ethen: n(CH₂=CH₂) → –[CH₂–CH₂]ₙ–.","topic":"Kunststoffe"},
-  {"question":"Was sind Thermoplaste?","options":["Kunststoffe, die beim Erwärmen schmelzen und formbar sind (z. B. PE, PP, PET)","Kunststoffe, die nicht schmelzen","Elastische Gummis","Biologisch abbaubare Kunststoffe"],"correct":0,"explanation":"Thermoplaste haben keine Quervernetzung; sie können mehrfach geschmolzen und neu geformt werden.","topic":"Kunststoffe"},
-  {"question":"Was ist Glucose?","options":["Ein Monosaccharid (Einfachzucker) mit der Formel C₆H₁₂O₆","Ein Disaccharid","Ein Polysaccharid","Eine Aminosäure"],"correct":0,"explanation":"Glucose ist der wichtigste Energielieferant der Zellen; sie wird in der Zellatmung zu CO₂ und H₂O oxidiert.","topic":"Biomoleküle"},
-  {"question":"Was sind Fette chemisch?","options":["Triglyceride: Ester aus Glycerin und drei Fettsäuren","Polysaccharide","Aminosäurenketten","Wachse aus langen Alkoholen"],"correct":0,"explanation":"Fette: ein Glycerinmolekül verestert mit drei Fettsäuren. Gesättigte Fette sind bei Raumtemperatur fest.","topic":"Biomoleküle"},
-  {"question":"Was sind Aminosäuren?","options":["Organische Verbindungen mit einer Aminogruppe (–NH₂) und einer Carboxylgruppe (–COOH)","Verbindungen nur mit –NH₂","Verbindungen nur mit –COOH","Ester mit Stickstoff"],"correct":0,"explanation":"Aminosäuren sind die Bausteine der Proteine; sie verknüpfen sich über Peptidbindungen.","topic":"Biomoleküle"},
-  {"question":"Was ist eine Peptidbindung?","options":["Die Amidbindung –CO–NH– zwischen Aminosäuren im Protein","Eine Esterbindung","Eine ionische Bindung","Eine Wasserstoffbrücke"],"correct":0,"explanation":"Peptidbindung: –COOH + H₂N– → –CO–NH– + H₂O (Kondensationsreaktion).","topic":"Biomoleküle"},
-  {"question":"Was ist Hydrolyse?","options":["Spaltung einer Bindung durch Reaktion mit Wasser","Entzug von Wasser aus einem Molekül","Addition von H₂","Oxidation mit O₂"],"correct":0,"explanation":"Hydrolyse: z. B. Ester + H₂O → Alkohol + Carbonsäure; Proteine + H₂O → Aminosäuren.","topic":"Reaktionstypen"},
-  {"question":"Was ist eine Kondensationsreaktion?","options":["Reaktion unter Abspaltung eines kleinen Moleküls (meist H₂O)","Addition ohne Nebenprodukt","Spaltung durch Wasser","Substitution durch Halogen"],"correct":0,"explanation":"Beispiele: Veresterung, Peptidbindungsbildung – beide setzen H₂O frei.","topic":"Reaktionstypen"},
-  {"question":"Warum steigen die Siedepunkte in der homologen Alkan-Reihe?","options":["Mit steigender Kettenlänge wachsen die Van-der-Waals-Kräfte","Wegen stärkerer Wasserstoffbrücken","Weil mehr Sauerstoff enthalten ist","Wegen ionischer Wechselwirkungen"],"correct":0,"explanation":"Längere Alkane haben größere Oberflächen und stärkere London-Dispersionskräfte, daher höhere Siedepunkte.","topic":"Eigenschaften"},
-  {"question":"Was ist eine Eliminierungsreaktion?","options":["Abspaltung kleiner Moleküle (z. B. H₂O oder HX) unter Bildung einer Doppelbindung","Addition an Doppelbindungen","Substitution von Halogenen","Oxidation von Alkoholen"],"correct":0,"explanation":"Eliminierung: z. B. Alkohol + H₂SO₄ → Alken + H₂O. Dehydratation (Wasserabspaltung).","topic":"Reaktionstypen"},
-  {"question":"Was entsteht bei der Oxidation eines primären Alkohols?","options":["Erst Aldehyd, dann (bei weiterer Oxidation) Carbonsäure","Keton","Ester","Alkan"],"correct":0,"explanation":"Primärer Alkohol → Aldehyd (milde Oxidation) → Carbonsäure (starke Oxidation).","topic":"Oxidation"},
-  {"question":"Was entsteht bei der Oxidation eines sekundären Alkohols?","options":["Keton","Aldehyd","Carbonsäure","Ester"],"correct":0,"explanation":"Sekundäre Alkohole (R₂CHOH) werden zu Ketonen (R₂C=O) oxidiert; weitere Oxidation ist schwieriger.","topic":"Oxidation"},
-  {"question":"Was ist das Fehling-Reagenz?","options":["Ein Nachweis für Aldehyde: Cu²⁺ (blau) wird zu Cu₂O (ziegelrot) reduziert","Ein Nachweis für Doppelbindungen","Ein Nachweis für Alkohole","Ein Nachweis für Carbonsäuren"],"correct":0,"explanation":"Aldehyde reduzieren Fehling-Lösung; Ketone reagieren nicht (wichtige Unterscheidung).","topic":"Nachweisreaktionen"},
-  {"question":"Wie lautet der IUPAC-Name von CH₃CH₂OH?","options":["Ethanol","Methanol","Propanol","Ethan"],"correct":0,"explanation":"2 C-Atome → 'Eth-'; Alkohol (–OH) → '-ol'; Ethanol.","topic":"Nomenklatur"},
-  {"question":"Was ist der IUPAC-Name von CH₃COCH₃?","options":["Propan-2-on (Aceton)","Propan-2-al","Propan-1-on","Ethanon"],"correct":0,"explanation":"3 C-Atome, C=O in Position 2 → Propan-2-on. Trivialname: Aceton.","topic":"Nomenklatur"},
-  {"question":"Was ist Stärke chemisch?","options":["Ein Polysaccharid aus α-Glucose-Einheiten","Ein Monosaccharid","Ein Disaccharid","Ein Fett"],"correct":0,"explanation":"Stärke (Amylose + Amylopektin) ist ein Polysaccharid aus vielen Glucose-Einheiten; Speicherkohlenhydrat der Pflanzen.","topic":"Biomoleküle"},
-  {"question":"Was ist ein Duroplast?","options":["Ein Kunststoff mit starker Quervernetzung, der nicht mehr schmelzbar ist (z. B. Bakelit)","Ein schmelzbarer Kunststoff","Ein Elastomer","Ein biologisch abbaubarer Kunststoff"],"correct":0,"explanation":"Duromere (Duroplaste) sind dauerhaft vernetzt; sie werden durch Hitze nicht verformbar, sondern zersetzen sich.","topic":"Kunststoffe"},
-  {"question":"Was versteht man unter 'funktioneller Gruppe'?","options":["Ein Atom oder eine Atomgruppe, die die charakteristischen Eigenschaften und Reaktionen einer organischen Verbindung bestimmt","Ein einzelnes C-Atom","Die Kohlenstoffkette","Ein Reaktionskatalysator"],"correct":0,"explanation":"Funktionelle Gruppen (–OH, –COOH, –CHO, –NH₂...) bestimmen Reaktivität, Siedepunkt und Löslichkeit.","topic":"Grundlagen"},
-  {"question":"Wie nennt man die Verbindungsklasse mit der allgemeinen Formel R–NH₂?","options":["Amine","Alkohole","Aldehyde","Ester"],"correct":0,"explanation":"Amine tragen eine Aminogruppe –NH₂; sie sind schwach basisch (Lewis-Base durch freies Elektronenpaar am N).","topic":"Funktionelle Gruppen"},
-  {"question":"Was ist eine Etherbindung?","options":["Eine C–O–C-Bindung zwischen zwei Kohlenstoffatomen","Eine C=O-Bindung","Eine –OH-Gruppe","Eine Doppelbindung zwischen C und O"],"correct":0,"explanation":"Ether: R–O–R'. Bekanntes Beispiel: Diethylether (C₂H₅–O–C₂H₅). Wenig reaktiv.","topic":"Funktionelle Gruppen"},
-  {"question":"Was ist cis-trans-Isomerie (geometrische Isomerie)?","options":["Verbindungen mit gleicher Formel und identischer Struktur","Isomere mit unterschiedlicher räumlicher Anordnung der Substituenten an einer C=C-Doppelbindung (cis = gleiche Seite, trans = gegenüber)","Eine Form der Kettenisomerie","Verbindungen mit verschiedener Summenformel"],"correct":1,"explanation":"Cis-trans-Isomere haben dieselbe Strukturformel, unterscheiden sich aber räumlich – die eingeschränkte Rotation um die Doppelbindung verhindert freie Umwandlung.","topic":"Isomerie"}
+  {
+    "question": "Was ist organische Chemie?",
+    "options": [
+      "Die Chemie der Kohlenstoffverbindungen",
+      "Die Chemie aller natürlichen Stoffe",
+      "Die Chemie ohne Metalle",
+      "Die Chemie der Salze"
+    ],
+    "correct": 0,
+    "explanation": "Organische Chemie befasst sich mit Kohlenstoffverbindungen (ausgenommen CO₂, Carbonate, CO).",
+    "topic": "Grundlagen"
+  },
+  {
+    "question": "Was sind Alkane?",
+    "options": [
+      "Gesättigte Kohlenwasserstoffe mit Einfachbindungen; allgemeine Formel CₙH₂ₙ₊₂",
+      "Kohlenwasserstoffe mit Doppelbindung",
+      "Kohlenwasserstoffe mit Dreifachbindung",
+      "Ringförmige Aromaten"
+    ],
+    "correct": 0,
+    "explanation": "Alkane: CₙH₂ₙ₊₂ (Methan CH₄, Ethan C₂H₆, Propan C₃H₈...). Gesättigt = nur Einfachbindungen.",
+    "topic": "Kohlenwasserstoffe"
+  },
+  {
+    "question": "Was sind Alkene?",
+    "options": [
+      "Kohlenwasserstoffe mit mindestens einer C=C-Doppelbindung; allgemeine Formel CₙH₂ₙ",
+      "Gesättigte Kohlenwasserstoffe",
+      "Kohlenwasserstoffe mit Dreifachbindung",
+      "Aromatische Verbindungen"
+    ],
+    "correct": 0,
+    "explanation": "Alkene: CₙH₂ₙ. Einfachstes Alken: Ethen (C₂H₄) mit einer C=C-Doppelbindung.",
+    "topic": "Kohlenwasserstoffe"
+  },
+  {
+    "question": "Was sind Alkine?",
+    "options": [
+      "Kohlenwasserstoffe mit mindestens einer C≡C-Dreifachbindung; allgemeine Formel CₙH₂ₙ₋₂",
+      "Kohlenwasserstoffe mit Doppelbindung",
+      "Gesättigte Kohlenwasserstoffe",
+      "Cyclische Kohlenwasserstoffe"
+    ],
+    "correct": 0,
+    "explanation": "Alkine: CₙH₂ₙ₋₂. Einfachstes Alkin: Ethin (C₂H₂) mit einer Dreifachbindung.",
+    "topic": "Kohlenwasserstoffe"
+  },
+  {
+    "question": "Was ist die homologe Reihe der Alkane?",
+    "options": [
+      "Methan, Ethan, Propan, Butan… – jedes Glied unterscheidet sich um CH₂",
+      "Methanol, Ethanol, Propanol…",
+      "Methan, Ethen, Propin…",
+      "Benzol, Toluol, Xylol…"
+    ],
+    "correct": 0,
+    "explanation": "In der homologen Reihe steigen C-Atome um je 1 (+ CH₂); physikalische Eigenschaften ändern sich graduell.",
+    "topic": "Nomenklatur"
+  },
+  {
+    "question": "Was ist IUPAC-Nomenklatur in der organischen Chemie?",
+    "options": [
+      "Ein internationales Regelsystem zur systematischen Benennung organischer Verbindungen",
+      "Ein Abkürzungssystem für Laborformeln",
+      "Ein Messverfahren",
+      "Ein Sicherheitsstandard"
+    ],
+    "correct": 0,
+    "explanation": "IUPAC-Namen basieren auf der längsten C-Kette (Stamm) plus Substituenten und funktionellen Gruppen.",
+    "topic": "Nomenklatur"
+  },
+  {
+    "question": "Was ist Strukturisomerie?",
+    "options": [
+      "Verbindungen mit gleicher Summenformel, aber unterschiedlichem Strukturaufbau",
+      "Verbindungen mit identischer Struktur",
+      "Verbindungen mit gleicher Raumstruktur",
+      "Verbindungen ohne C-Atome"
+    ],
+    "correct": 0,
+    "explanation": "Butanisomere C₄H₁₀: n-Butan (Kette) und Isobutan (verzweigt) – gleiche Formel, verschiedene Struktur.",
+    "topic": "Isomerie"
+  },
+  {
+    "question": "Was ist die Hydroxylgruppe –OH?",
+    "options": [
+      "Die funktionelle Gruppe der Alkohole",
+      "Die funktionelle Gruppe der Aldehyde",
+      "Eine Estergruppe",
+      "Eine Aminogruppe"
+    ],
+    "correct": 0,
+    "explanation": "–OH ist die charakteristische Gruppe der Alkohole; Ethanol (C₂H₅OH) ist das bekannteste Beispiel.",
+    "topic": "Funktionelle Gruppen"
+  },
+  {
+    "question": "Welche funktionelle Gruppe haben Aldehyde?",
+    "options": [
+      "–CHO (Carbonylgruppe am Kettenende)",
+      "–OH",
+      "–COOH",
+      "–NH₂"
+    ],
+    "correct": 0,
+    "explanation": "Aldehyde besitzen eine Aldehydgruppe –CHO am Ende der Kohlenstoffkette; Methanal (Formaldehyd) ist das einfachste.",
+    "topic": "Funktionelle Gruppen"
+  },
+  {
+    "question": "Was sind Ketone?",
+    "options": [
+      "Verbindungen mit einer C=O-Gruppe innerhalb der Kohlenstoffkette (nicht am Ende)",
+      "Verbindungen mit –CHO am Ende",
+      "Säuren mit –COOH",
+      "Verbindungen mit –OH"
+    ],
+    "correct": 0,
+    "explanation": "Ketone: C=O inmitten der Kette. Einfachstes Keton: Propanon (Aceton, CH₃COCH₃).",
+    "topic": "Funktionelle Gruppen"
+  },
+  {
+    "question": "Was sind Carbonsäuren?",
+    "options": [
+      "Verbindungen mit der Carboxylgruppe –COOH",
+      "Verbindungen mit –CHO",
+      "Alkohole mit –OH",
+      "Ester mit –COO–"
+    ],
+    "correct": 0,
+    "explanation": "–COOH ist sauer; einfachste Carbonsäure: Methansäure (Ameisensäure, HCOOH).",
+    "topic": "Funktionelle Gruppen"
+  },
+  {
+    "question": "Wie entstehen Ester?",
+    "options": [
+      "Durch Reaktion einer Carbonsäure mit einem Alkohol unter Abspaltung von Wasser (Veresterung)",
+      "Durch Reaktion zweier Alkohole",
+      "Durch Oxidation von Alkanen",
+      "Durch Addition an Alkene"
+    ],
+    "correct": 0,
+    "explanation": "Veresterung: R-COOH + R'-OH ⇌ R-COO-R' + H₂O (Gleichgewichtsreaktion, Katalysator: H⁺).",
+    "topic": "Reaktionstypen"
+  },
+  {
+    "question": "Was ist Verseifung?",
+    "options": [
+      "Die Hydrolyse von Fetten (Triglyceriden) mit NaOH zu Glycerin und Natrium-Fettsäuresalz (Seife)",
+      "Die Herstellung von Estern",
+      "Die Oxidation von Alkoholen",
+      "Die Reduktion von Aldehyden"
+    ],
+    "correct": 0,
+    "explanation": "Verseifung: Triglycerid + 3 NaOH → Glycerin + 3 Natrium-Carboxylate (Seifen).",
+    "topic": "Reaktionstypen"
+  },
+  {
+    "question": "Was ist eine Additionsreaktion?",
+    "options": [
+      "Zwei Moleküle verbinden sich; typisch für Verbindungen mit Mehrfachbindungen",
+      "Eine Verbindung zerfällt in zwei Teile",
+      "Ein Atom ersetzt ein anderes",
+      "Abspaltung von H₂O"
+    ],
+    "correct": 0,
+    "explanation": "Addition an Alkene: z. B. Brom addiert sich an Ethen (Br₂ + C₂H₄ → C₂H₄Br₂). Doppelbindung wird aufgebrochen.",
+    "topic": "Reaktionstypen"
+  },
+  {
+    "question": "Was ist eine Substitutionsreaktion?",
+    "options": [
+      "Ein Atom oder eine Gruppe ersetzt ein anderes Atom oder eine andere Gruppe",
+      "Zwei Moleküle vereinigen sich",
+      "Ein Molekül zerfällt",
+      "Eine Doppelbindung entsteht"
+    ],
+    "correct": 0,
+    "explanation": "Typisch für Alkane: radikalische Substitution (z. B. Chlorierung von Methan: CH₄ + Cl₂ → CH₃Cl + HCl).",
+    "topic": "Reaktionstypen"
+  },
+  {
+    "question": "Wofür dient der Bromwasser-Test?",
+    "options": [
+      "Nachweis von C=C-Doppelbindungen: Bromwasser wird entfärbt",
+      "Nachweis von Alkoholen",
+      "Nachweis von Aldehyden",
+      "Nachweis von Carbonsäuren"
+    ],
+    "correct": 0,
+    "explanation": "Alkene entfärben Bromwasser durch Addition: C=C + Br₂ → Dibromid (farblos).",
+    "topic": "Nachweisreaktionen"
+  },
+  {
+    "question": "Was ist die Struktur von Benzol?",
+    "options": [
+      "Ein cyclischer, aromatischer Ring aus 6 C-Atomen mit delokalisierten π-Elektronen",
+      "Ein cyclisches Alkan mit 6 C-Atomen",
+      "Ein lineares Molekül mit 6 C-Atomen",
+      "Ein Molekül mit 6 Doppelbindungen"
+    ],
+    "correct": 0,
+    "explanation": "Benzol (C₆H₆): planarer Ring, π-Elektronen über alle 6 C delokalisiert; besondere Stabilität.",
+    "topic": "Aromaten"
+  },
+  {
+    "question": "Was ist Cracken (Erdöl)?",
+    "options": [
+      "Thermisches oder katalytisches Aufbrechen langer Kohlenwasserstoffketten in kürzere, wertvollere Produkte",
+      "Destillation von Erdöl",
+      "Verbrennung von Erdöl",
+      "Verflüssigung von Erdgas"
+    ],
+    "correct": 0,
+    "explanation": "Beim Cracken werden langkettige Alkane in Ethen, Propen und kurzkettige Alkane zerlegt (Grundstoff für Kunststoffe).",
+    "topic": "Erdöl"
+  },
+  {
+    "question": "Was ist Polymerisation?",
+    "options": [
+      "Verknüpfung vieler gleichartiger Monomere zu langen Polymerketten",
+      "Zerlegung von Polymeren",
+      "Addition eines Moleküls",
+      "Esterbildung"
+    ],
+    "correct": 0,
+    "explanation": "Polyethylen entsteht durch Polymerisation von Ethen: n(CH₂=CH₂) → –[CH₂–CH₂]ₙ–.",
+    "topic": "Kunststoffe"
+  },
+  {
+    "question": "Was sind Thermoplaste?",
+    "options": [
+      "Kunststoffe, die beim Erwärmen schmelzen und formbar sind (z. B. PE, PP, PET)",
+      "Kunststoffe, die nicht schmelzen",
+      "Elastische Gummis",
+      "Biologisch abbaubare Kunststoffe"
+    ],
+    "correct": 0,
+    "explanation": "Thermoplaste haben keine Quervernetzung; sie können mehrfach geschmolzen und neu geformt werden.",
+    "topic": "Kunststoffe"
+  },
+  {
+    "question": "Was ist Glucose?",
+    "options": [
+      "Ein Monosaccharid (Einfachzucker) mit der Formel C₆H₁₂O₆",
+      "Ein Disaccharid",
+      "Ein Polysaccharid",
+      "Eine Aminosäure"
+    ],
+    "correct": 0,
+    "explanation": "Glucose ist der wichtigste Energielieferant der Zellen; sie wird in der Zellatmung zu CO₂ und H₂O oxidiert.",
+    "topic": "Biomoleküle"
+  },
+  {
+    "question": "Was sind Fette chemisch?",
+    "options": [
+      "Triglyceride: Ester aus Glycerin und drei Fettsäuren",
+      "Polysaccharide",
+      "Aminosäurenketten",
+      "Wachse aus langen Alkoholen"
+    ],
+    "correct": 0,
+    "explanation": "Fette: ein Glycerinmolekül verestert mit drei Fettsäuren. Gesättigte Fette sind bei Raumtemperatur fest.",
+    "topic": "Biomoleküle"
+  },
+  {
+    "question": "Was sind Aminosäuren?",
+    "options": [
+      "Organische Verbindungen mit einer Aminogruppe (–NH₂) und einer Carboxylgruppe (–COOH)",
+      "Verbindungen nur mit –NH₂",
+      "Verbindungen nur mit –COOH",
+      "Ester mit Stickstoff"
+    ],
+    "correct": 0,
+    "explanation": "Aminosäuren sind die Bausteine der Proteine; sie verknüpfen sich über Peptidbindungen.",
+    "topic": "Biomoleküle"
+  },
+  {
+    "question": "Was ist eine Peptidbindung?",
+    "options": [
+      "Die Amidbindung –CO–NH– zwischen Aminosäuren im Protein",
+      "Eine Esterbindung",
+      "Eine ionische Bindung",
+      "Eine Wasserstoffbrücke"
+    ],
+    "correct": 0,
+    "explanation": "Peptidbindung: –COOH + H₂N– → –CO–NH– + H₂O (Kondensationsreaktion).",
+    "topic": "Biomoleküle"
+  },
+  {
+    "question": "Was ist Hydrolyse?",
+    "options": [
+      "Spaltung einer Bindung durch Reaktion mit Wasser",
+      "Entzug von Wasser aus einem Molekül",
+      "Addition von H₂",
+      "Oxidation mit O₂"
+    ],
+    "correct": 0,
+    "explanation": "Hydrolyse: z. B. Ester + H₂O → Alkohol + Carbonsäure; Proteine + H₂O → Aminosäuren.",
+    "topic": "Reaktionstypen"
+  },
+  {
+    "question": "Was ist eine Kondensationsreaktion?",
+    "options": [
+      "Reaktion unter Abspaltung eines kleinen Moleküls (meist H₂O)",
+      "Addition ohne Nebenprodukt",
+      "Spaltung durch Wasser",
+      "Substitution durch Halogen"
+    ],
+    "correct": 0,
+    "explanation": "Beispiele: Veresterung, Peptidbindungsbildung – beide setzen H₂O frei.",
+    "topic": "Reaktionstypen"
+  },
+  {
+    "question": "Warum steigen die Siedepunkte in der homologen Alkan-Reihe?",
+    "options": [
+      "Mit steigender Kettenlänge wachsen die Van-der-Waals-Kräfte",
+      "Wegen stärkerer Wasserstoffbrücken",
+      "Weil mehr Sauerstoff enthalten ist",
+      "Wegen ionischer Wechselwirkungen"
+    ],
+    "correct": 0,
+    "explanation": "Längere Alkane haben größere Oberflächen und stärkere London-Dispersionskräfte, daher höhere Siedepunkte.",
+    "topic": "Eigenschaften"
+  },
+  {
+    "question": "Was ist eine Eliminierungsreaktion?",
+    "options": [
+      "Abspaltung kleiner Moleküle (z. B. H₂O oder HX) unter Bildung einer Doppelbindung",
+      "Addition an Doppelbindungen",
+      "Substitution von Halogenen",
+      "Oxidation von Alkoholen"
+    ],
+    "correct": 0,
+    "explanation": "Eliminierung: z. B. Alkohol + H₂SO₄ → Alken + H₂O. Dehydratation (Wasserabspaltung).",
+    "topic": "Reaktionstypen"
+  },
+  {
+    "question": "Was entsteht bei der Oxidation eines primären Alkohols?",
+    "options": [
+      "Erst Aldehyd, dann (bei weiterer Oxidation) Carbonsäure",
+      "Keton",
+      "Ester",
+      "Alkan"
+    ],
+    "correct": 0,
+    "explanation": "Primärer Alkohol → Aldehyd (milde Oxidation) → Carbonsäure (starke Oxidation).",
+    "topic": "Oxidation"
+  },
+  {
+    "question": "Was entsteht bei der Oxidation eines sekundären Alkohols?",
+    "options": [
+      "Keton",
+      "Aldehyd",
+      "Carbonsäure",
+      "Ester"
+    ],
+    "correct": 0,
+    "explanation": "Sekundäre Alkohole (R₂CHOH) werden zu Ketonen (R₂C=O) oxidiert; weitere Oxidation ist schwieriger.",
+    "topic": "Oxidation"
+  },
+  {
+    "question": "Was ist das Fehling-Reagenz?",
+    "options": [
+      "Ein Nachweis für Aldehyde: Cu²⁺ (blau) wird zu Cu₂O (ziegelrot) reduziert",
+      "Ein Nachweis für Doppelbindungen",
+      "Ein Nachweis für Alkohole",
+      "Ein Nachweis für Carbonsäuren"
+    ],
+    "correct": 0,
+    "explanation": "Aldehyde reduzieren Fehling-Lösung; Ketone reagieren nicht (wichtige Unterscheidung).",
+    "topic": "Nachweisreaktionen"
+  },
+  {
+    "question": "Wie lautet der IUPAC-Name von CH₃CH₂OH?",
+    "options": [
+      "Ethanol",
+      "Methanol",
+      "Propanol",
+      "Ethan"
+    ],
+    "correct": 0,
+    "explanation": "2 C-Atome → 'Eth-'; Alkohol (–OH) → '-ol'; Ethanol.",
+    "topic": "Nomenklatur"
+  },
+  {
+    "question": "Was ist der IUPAC-Name von CH₃COCH₃?",
+    "options": [
+      "Propan-2-on (Aceton)",
+      "Propan-2-al",
+      "Propan-1-on",
+      "Ethanon"
+    ],
+    "correct": 0,
+    "explanation": "3 C-Atome, C=O in Position 2 → Propan-2-on. Trivialname: Aceton.",
+    "topic": "Nomenklatur"
+  },
+  {
+    "question": "Was ist Stärke chemisch?",
+    "options": [
+      "Ein Polysaccharid aus α-Glucose-Einheiten",
+      "Ein Monosaccharid",
+      "Ein Disaccharid",
+      "Ein Fett"
+    ],
+    "correct": 0,
+    "explanation": "Stärke (Amylose + Amylopektin) ist ein Polysaccharid aus vielen Glucose-Einheiten; Speicherkohlenhydrat der Pflanzen.",
+    "topic": "Biomoleküle"
+  },
+  {
+    "question": "Was ist ein Duroplast?",
+    "options": [
+      "Ein Kunststoff mit starker Quervernetzung, der nicht mehr schmelzbar ist (z. B. Bakelit)",
+      "Ein schmelzbarer Kunststoff",
+      "Ein Elastomer",
+      "Ein biologisch abbaubarer Kunststoff"
+    ],
+    "correct": 0,
+    "explanation": "Duromere (Duroplaste) sind dauerhaft vernetzt; sie werden durch Hitze nicht verformbar, sondern zersetzen sich.",
+    "topic": "Kunststoffe"
+  },
+  {
+    "question": "Was versteht man unter 'funktioneller Gruppe'?",
+    "options": [
+      "Ein Atom oder eine Atomgruppe, die die charakteristischen Eigenschaften und Reaktionen einer organischen Verbindung bestimmt",
+      "Ein einzelnes C-Atom",
+      "Die Kohlenstoffkette",
+      "Ein Reaktionskatalysator"
+    ],
+    "correct": 0,
+    "explanation": "Funktionelle Gruppen (–OH, –COOH, –CHO, –NH₂...) bestimmen Reaktivität, Siedepunkt und Löslichkeit.",
+    "topic": "Grundlagen"
+  },
+  {
+    "question": "Wie nennt man die Verbindungsklasse mit der allgemeinen Formel R–NH₂?",
+    "options": [
+      "Amine",
+      "Alkohole",
+      "Aldehyde",
+      "Ester"
+    ],
+    "correct": 0,
+    "explanation": "Amine tragen eine Aminogruppe –NH₂; sie sind schwach basisch (Lewis-Base durch freies Elektronenpaar am N).",
+    "topic": "Funktionelle Gruppen"
+  },
+  {
+    "question": "Was ist eine Etherbindung?",
+    "options": [
+      "Eine C–O–C-Bindung zwischen zwei Kohlenstoffatomen",
+      "Eine C=O-Bindung",
+      "Eine –OH-Gruppe",
+      "Eine Doppelbindung zwischen C und O"
+    ],
+    "correct": 0,
+    "explanation": "Ether: R–O–R'. Bekanntes Beispiel: Diethylether (C₂H₅–O–C₂H₅). Wenig reaktiv.",
+    "topic": "Funktionelle Gruppen"
+  },
+  {
+    "question": "Was ist cis-trans-Isomerie (geometrische Isomerie)?",
+    "options": [
+      "Verbindungen mit gleicher Formel und identischer Struktur",
+      "Isomere mit unterschiedlicher räumlicher Anordnung der Substituenten an einer C=C-Doppelbindung (cis = gleiche Seite, trans = gegenüber)",
+      "Eine Form der Kettenisomerie",
+      "Verbindungen mit verschiedener Summenformel"
+    ],
+    "correct": 1,
+    "explanation": "Cis-trans-Isomere haben dieselbe Strukturformel, unterscheiden sich aber räumlich – die eingeschränkte Rotation um die Doppelbindung verhindert freie Umwandlung.",
+    "topic": "Isomerie"
+  },
+  {
+    "question": "Was ist eine Veresterung in der organischen Chemie?",
+    "options": [
+      "Eine Oxidation",
+      "Reaktion einer Carbonsaeure mit einem Alkohol unter Abspaltung von Wasser zu einem Ester. Umkehrreaktion: Esterhydrolyse (Verseifung). Ester haben oft angenehme Gerueche (Fruchtester).",
+      "Eine Reduktion",
+      "Eine Addition"
+    ],
+    "correct": 1,
+    "explanation": "Veresterung: R-COOH + R-OH -> R-COO-R + H2O. Gleichgewichtsreaktion. Beschleunigt durch saure Katalyse. Fette sind Triester des Glycerins mit Fettsauren. Aspirin: Ester der Salicylsaure. Parfums nutzen Fruchtester.",
+    "topic": "Funktionelle Gruppen"
+  }
 ]

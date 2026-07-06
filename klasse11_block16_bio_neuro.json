@@ -1,40 +1,482 @@
 [
-  {"question":"Was ist ein Neuron (Nervenzelle)?","options":["Eine Muskelzelle","Die Grundbaueinheit des Nervensystems: besteht aus Zellkörper (Soma), Dendriten (Eingang) und Axon (Ausgang)","Eine Drüsenzelle","Eine Blutzelle"],"correct":1,"explanation":"Neuronen sind spezialisierte Zellen zur Aufnahme, Verarbeitung und Weiterleitung elektrischer Signale (Aktionspotenziale).","topic":"Nervensystem"},
-  {"question":"Was ist das Ruhepotenzial einer Nervenzelle?","options":["0 mV","Der Spannungsunterschied von ca. –70 mV zwischen Innen- und Außenseite der Zellmembran im Ruhezustand","Ein positiver Wert von +70 mV","Ein Potenzial, das nur bei Erregung auftritt"],"correct":1,"explanation":"Das Ruhepotenzial (ca. –70 mV) entsteht durch unterschiedliche Ionenverteilung (K⁺ innen, Na⁺ außen) und selektive Membrandurchlässigkeit.","topic":"Membranpotenziale"},
-  {"question":"Was ist ein Aktionspotenzial?","options":["Das dauerhaft stabile Ruhepotenzial","Ein kurzer, standardisierter Spannungsimpuls (Depolarisation → +30 mV, dann Repolarisation) bei Überschreiten des Schwellenwerts","Ein chemischer Botenstoff","Ein Dauerreiz auf die Zellmembran"],"correct":1,"explanation":"Aktionspotenzial: Na⁺-Kanäle öffnen (Depolarisation), dann K⁺-Kanäle (Repolarisation). Alles-oder-Nichts-Prinzip – es gibt keine kleinen Aktionspotenziale.","topic":"Membranpotenziale"},
-  {"question":"Was ist das 'Alles-oder-Nichts-Prinzip'?","options":["Neuronen feuern immer unterschiedlich stark","Ein Aktionspotenzial wird entweder vollständig ausgelöst (bei Überschreiten des Schwellenwerts) oder gar nicht","Aktionspotenziale häufen sich an","Nur bestimmte Neuronen reagieren auf Reize"],"correct":1,"explanation":"Die Stärke eines Reizes wird nicht durch die Amplitude des Aktionspotenzials codiert, sondern durch die Frequenz (Häufigkeit) der Aktionspotenziale.","topic":"Membranpotenziale"},
-  {"question":"Was ist saltatorische Erregungsleitung?","options":["Langsame Fortleitung entlang der gesamten Axonmembran","Sprunghafte Fortleitung von Ranvier-Schnürring zu Ranvier-Schnürring bei myelinisierten Axonen – schneller und energieeffizienter","Erregungsleitung im Herzmuskel","Erregungsleitung ohne Myelin"],"correct":1,"explanation":"Myelin isoliert das Axon; das Aktionspotenzial 'springt' zwischen den unbemyelinisierten Ranvier-Schnürringen. Geschwindigkeit: bis 120 m/s.","topic":"Erregungsleitung"},
-  {"question":"Was ist eine Synapse?","options":["Eine Verbindung zwischen zwei Muskeln","Die Kontaktstelle zwischen zwei Neuronen (oder Neuron und Muskel), an der Signale durch Neurotransmitter chemisch übertragen werden","Ein Blutgefäß im Gehirn","Ein Sinnesorgan"],"correct":1,"explanation":"Synapse: präsynaptische Membran → synaptischer Spalt → postsynaptische Membran. Neurotransmitter (z.B. Acetylcholin) überbrücken den Spalt.","topic":"Synapsen"},
-  {"question":"Was sind Neurotransmitter?","options":["Elektrische Ladungsträger","Chemische Botenstoffe, die an Synapsen ausgeschüttet werden und das Signal auf die nächste Zelle übertragen","Enzyme im Blut","Strukturproteine des Neurons"],"correct":1,"explanation":"Wichtige Neurotransmitter: Acetylcholin (Muskelsteuerung), Dopamin (Belohnung), Serotonin (Stimmung), GABA (Hemmung), Glutamat (Erregung).","topic":"Synapsen"},
-  {"question":"Was ist der Unterschied zwischen exzitatorischen und inhibitorischen Synapsen?","options":["Kein Unterschied","Exzitatorisch: Neurotransmitter erhöhen die Wahrscheinlichkeit eines Aktionspotenzials (Depolarisation); inhibitorisch: sie verringern sie (Hyperpolarisation)","Exzitatorisch ist schneller","Inhibitorisch hat mehr Neurotransmitter"],"correct":1,"explanation":"GABA und Glycin wirken meist inhibitorisch; Glutamat und Acetylcholin (je nach Rezeptor) exzitatorisch. Das Gleichgewicht reguliert Erregbarkeit.","topic":"Synapsen"},
-  {"question":"Was ist das zentrale Nervensystem (ZNS)?","options":["Alle Nerven außerhalb des Gehirns","Gehirn und Rückenmark – Verarbeitungszentrum des Nervensystems","Das vegetative Nervensystem","Alle Sinnesorgane"],"correct":1,"explanation":"Das ZNS verarbeitet Informationen; das periphere Nervensystem (PNS) verbindet ZNS mit Körperperipherie.","topic":"Nervensystem"},
-  {"question":"Was ist das vegetative (autonome) Nervensystem?","options":["Das willkürliche Nervensystem","Der Teil des peripheren Nervensystems, der unwillkürliche Körperfunktionen (Herzschlag, Verdauung, Atmung) steuert – Sympathikus und Parasympathikus","Das somatische Nervensystem","Das zentrale Nervensystem"],"correct":1,"explanation":"Sympathikus ('Kampf oder Flucht'): Herzfrequenz ↑, Verdauung ↓. Parasympathikus ('Ruhe und Verdauung'): Herzfrequenz ↓, Verdauung ↑.","topic":"Nervensystem"},
-  {"question":"Was ist ein Reflexbogen?","options":["Eine Gehirnreaktion","Der neuronale Schaltkreis eines Reflexes: Rezeptor → afferentes Neuron → (Interneuron im Rückenmark) → efferentes Neuron → Effektor","Eine Reflexion im Gehirn","Ein Sehvorgang"],"correct":1,"explanation":"Reflexe sind angeborene, schnelle Reaktionen ohne Bewusstseinsbeteiligung (z.B. Patellarsehnenreflex). Das Rückenmark schaltet, das Gehirn erfährt es nachher.","topic":"Reflexe"},
-  {"question":"Was sind die drei Hauptteile des menschlichen Gehirns?","options":["Cortex, Hypothalamus, Stamm","Großhirn (Kortex), Kleinhirn (Koordination und Gleichgewicht) und Hirnstamm (Vitalfunktionen)","Frontallappen, Parietallappen, Temporallappen","Limbisches System, Amygdala, Hippocampus"],"correct":1,"explanation":"Großhirn: höhere kognitive Funktionen. Kleinhirn: Motorkoordination. Hirnstamm (Medulla oblongata, Pons, Mesenzephalon): Atmung, Herzschlag, Schlaf-Wach.","topic":"Gehirn"},
-  {"question":"Was ist das limbische System?","options":["Das motorische System des Kleinhirns","Eine Gruppe von Hirnstrukturen (Amygdala, Hippocampus), die Emotionen, Gedächtnis und Motivation regulieren","Das visuelle Verarbeitungszentrum","Ein Abschnitt des Rückenmarks"],"correct":1,"explanation":"Das limbische System verbindet emotionale Verarbeitung (Amygdala) mit Gedächtnisbildung (Hippocampus) und Motivationssteuerung.","topic":"Gehirn"},
-  {"question":"Was ist die Funktion des Hippocampus?","options":["Gleichgewichtskontrolle","Entscheidende Rolle bei der Bildung neuer Gedächtnisinhalte (Langzeitgedächtnis) und räumlicher Navigation","Verarbeitung von Schmerz","Steuerung des Herzschlags"],"correct":1,"explanation":"Der Hippocampus konsolidiert Kurzzeitgedächtnis zu Langzeitgedächtnis. Bei Zerstörung (z.B. Patient H.M.) können keine neuen Erinnerungen gebildet werden.","topic":"Gehirn"},
-  {"question":"Was ist die Amygdala?","options":["Ein Bereich des Kleinhirns","Eine mandelförmige Hirnstruktur im limbischen System, die Emotionen – besonders Angst – verarbeitet","Ein Teil des Hirnstamms","Ein motorischer Kortexbereich"],"correct":1,"explanation":"Die Amygdala bewertet emotionale Bedeutung von Reizen, aktiviert Stressreaktionen und ist an der Konditionierung von Angst beteiligt.","topic":"Gehirn"},
-  {"question":"Was ist die Neuroplastizität?","options":["Die Starrheit neuronaler Strukturen","Die Fähigkeit des Gehirns, sich durch Erfahrung, Lernen und nach Schäden durch Umorganisation von Verbindungen anzupassen","Die Wachstumsrate von Neuronen","Die elektrische Leitfähigkeit von Axonen"],"correct":1,"explanation":"Neuroplastizität ermöglicht Lernen (Verstärkung synapt. Verbindungen – Langzeitpotenzierung, LTP) und Erholung nach Hirnverletzungen.","topic":"Gehirn"},
-  {"question":"Was ist Habituation?","options":["Eine Form des Lernens durch Belohnung","Die einfachste Form des Lernens: Abnahme der Reaktionsstärke auf einen wiederholten, harmlosen Reiz","Eine Form der Prägung","Ein angeborenes Verhalten"],"correct":1,"explanation":"Habituation: ein Tier ignoriert einen Reiz zunehmend, wenn er wiederholt aufritt und keine Konsequenzen hat (z.B. Schreckreiz bei Schnecken).","topic":"Lernen und Verhalten"},
-  {"question":"Was ist klassische Konditionierung (nach Pawlow)?","options":["Lernen durch Versuch und Irrtum","Verknüpfung eines neutralen Reizes mit einem biologisch bedeutsamen Reiz, sodass der neutrale Reiz allein die Reaktion auslöst","Lernen durch Beobachtung","Lernen durch Bestrafung"],"correct":1,"explanation":"Pawlow: Glocke (neutral) + Futter (unbedingter Reiz) → Speichelfluss; nach Konditionierung: Glocke allein → Speichelfluss (bedingter Reflex).","topic":"Lernen und Verhalten"},
-  {"question":"Was ist operante Konditionierung (nach Skinner)?","options":["Verknüpfung zweier Reize","Lernen durch Konsequenzen: Belohnung erhöht Verhaltenshäufigkeit (positive Verstärkung), Bestrafung senkt sie","Lernen durch Beobachtung","Angeborenes Instinktverhalten"],"correct":1,"explanation":"Skinner-Box: Ratte drückt Hebel → Futter (Belohnung) → Verhalten wird häufiger. Operante Konditionierung erklärt viel menschliches Lernverhalten.","topic":"Lernen und Verhalten"},
-  {"question":"Was ist Prägung (Imprinting)?","options":["Eine Form der Langzeitkonditionierung","Einmaliges, zeitlich begrenztes Lernen in einer sensiblen Phase – ohne Belohnung, dauerhaft und kaum korrigierbar (z.B. Graugänse bei Lorenz)","Lernen durch Wiederholung","Instinktverhalten"],"correct":1,"explanation":"Prägung (Lorenz): Graugansküken folgen in der sensiblen Phase dem ersten bewegten Objekt – normalerweise der Mutter. Dauerhaft, nicht reversibel.","topic":"Lernen und Verhalten"},
-  {"question":"Was ist Einsichtslernen?","options":["Lernen durch Konditionierung","Plötzliche Problemlösung durch Erkennen von Zusammenhängen, ohne vorheriges Ausprobieren ('Aha-Erlebnis') – Köhler: Schimpansen","Lernen durch Beobachtung","Habituationslernen"],"correct":1,"explanation":"Köhlers Schimpanse Sultan stapelte Kisten, um eine Banane zu erreichen – ohne vorherige Versuche: Einsicht in die Beziehung Kiste–Höhe–Banane.","topic":"Lernen und Verhalten"},
-  {"question":"Was ist ein Instinkt?","options":["Erlerntes Verhalten","Angeborenes, artspezifisches Verhaltens- und Handlungsprogramm, das durch einen Auslösereiz (Schlüsselreiz) aktiviert wird","Konditioniertes Verhalten","Bewusste Entscheidung"],"correct":1,"explanation":"Instinktbewegungen laufen stereotyp ab und sind genetisch programmiert; z.B. Saugreflex beim Säugling, Nestbau bei Vögeln.","topic":"Verhalten"},
-  {"question":"Was ist ein angeborener Auslösemechanismus (AAM)?","options":["Ein gelerntes Reaktionsmuster","Ein angeborenes neuronales Filtermuster, das auf bestimmte Schlüsselreize reagiert und eine Instinkthandlung auslöst","Ein Gehirnbereich für Sprache","Eine Reflexkette"],"correct":1,"explanation":"Der AAM filtert relevante Reize heraus (z.B. rote Bauchfarbe als Schlüsselreiz für Aggressionsverhalten beim Stichling).","topic":"Verhalten"},
-  {"question":"Was ist eine Taxis?","options":["Ein Fahrzeug im Nervensystem","Eine gerichtete Bewegung eines Organismus auf einen Reiz zu (Topotaxis) oder von ihm weg","Ein Instinktverhalten ohne Richtung","Eine Form der Habituation"],"correct":1,"explanation":"Taxis: Phototaxis (Licht), Chemotaxis (Chemikalien), Gravitaxis (Schwerkraft) – der Organismus bewegt sich gezielt zum oder vom Reiz weg.","topic":"Verhalten"},
-  {"question":"Was ist der Unterschied zwischen Hormone und Neurotransmitter als Signalmoleküle?","options":["Kein Unterschied","Hormone: Fernbotenstoffe über Blutbahn (langsam, langwirkend); Neurotransmitter: lokale Signalübertragung an Synapsen (schnell, kurzwirkend)","Hormone sind schneller","Neurotransmitter wirken systemisch"],"correct":1,"explanation":"Hormone (z.B. Insulin, Adrenalin) werden in Drüsen produziert und über das Blut transportiert. Neurotransmitter (Acetylcholin) wirken lokal an Synapsen.","topic":"Nervensystem"},
-  {"question":"Was ist die Funktion von Dopamin?","options":["Muskelkontraktion","Neurotransmitter im Belohnungssystem des Gehirns – beteiligt an Motivation, Freude und motorischer Kontrolle","Schlafregulation","Stressreaktion"],"correct":1,"explanation":"Dopaminmangel: Parkinson-Krankheit (motorische Störungen). Dopaminüberschuss: assoziiert mit Schizophrenie. Dopamin ist zentral für das Belohnungssystem.","topic":"Neurotransmitter"},
-  {"question":"Was ist die Funktion von Serotonin?","options":["Stimulation des Herzmuskels","Neurotransmitter, der Stimmung, Schlaf, Appetit und Schmerzempfinden reguliert; Mangel korreliert mit Depression","Gedächtnisbildung im Hippocampus","Bewegungskoordination"],"correct":1,"explanation":"SSRI (Selektive Serotonin-Wiederaufnahmehemmer) sind Antidepressiva, die Serotoninverfügbarkeit erhöhen – Beleg für Serotonins Rolle bei Depression.","topic":"Neurotransmitter"},
-  {"question":"Was ist ein Rezeptorpotenzial in Sinnesorganen?","options":["Ein Aktionspotenzial im Gehirn","Eine graduelle, reizstärkenabhängige Depolarisation in Sinneszellen, die (bei ausreichender Stärke) Aktionspotenziale im afferenten Neuron auslöst","Ein Ruhepotenzial","Ein Neurotransmitter"],"correct":1,"explanation":"Rezeptorpotenziale sind keine Alles-oder-Nichts-Reaktionen; ihre Stärke codiert die Reizintensität; sie werden in Aktionspotenzial-Frequenz umgewandelt.","topic":"Sinnesphysiologie"},
-  {"question":"Was ist Adaptation in der Sinnesphysiologie?","options":["Evolutionäre Anpassung","Abnahme der Empfindlichkeit eines Sinnesrezeptors bei anhaltend gleichem Reiz (z.B. Geruch gewöhnen)","Zunahme der Empfindlichkeit","Ein Lernprozess"],"correct":1,"explanation":"Adaptation: Rezeptoren 'ermüden' bei Dauerreiz; nach Wegfall des Reizes regeneriert die Empfindlichkeit. Wichtig: Gefahrenreize wie Schmerz adaptieren kaum.","topic":"Sinnesphysiologie"},
-  {"question":"Was ist das Prinzip der adäquaten Reize?","options":["Jeder Reiz kann jedes Sinnesorgan aktivieren","Jedes Sinnesorgan ist auf eine bestimmte Reizqualität spezialisiert (adäquater Reiz) und reagiert darauf mit der geringsten Reizschwelle","Reize müssen immer stark sein","Alle Sinne haben dieselbe Schwelle"],"correct":1,"explanation":"Das Auge reagiert optimal auf Licht (adäquater Reiz); Druck auf das Auge kann auch ein Lichterlebnis erzeugen (inadäquater Reiz) – aber mit viel höherer Schwelle.","topic":"Sinnesphysiologie"},
-  {"question":"Was ist Melatonin?","options":["Ein Neurotransmitter an Synapsen","Ein in der Zirbeldrüse produziertes Hormon, das den Schlaf-Wach-Rhythmus (circadianen Rhythmus) reguliert","Ein Stresshormon","Ein Wachstumshormon"],"correct":1,"explanation":"Melatonin wird bei Dunkelheit ausgeschüttet und fördert Schlaf; Licht (besonders Blaulicht) unterdrückt die Melatoninproduktion – relevanz für Bildschirmnutzung.","topic":"Hormone"},
-  {"question":"Was ist Cortisol?","options":["Ein Schlafhormon","Ein Stresshormon der Nebennierenrinde: erhöht Blutdruck, Blutzucker und Entzündungshemmung – kurzfristig nützlich, chronisch schädlich","Ein Wachstumshormon","Ein Sexualhormon"],"correct":1,"explanation":"Cortisol aktiviert bei Stress den Körper; chronisch erhöhte Cortisolspiegel schädigen Hippocampus, schwächen Immunsystem und fördern Herzerkrankungen.","topic":"Hormone"},
-  {"question":"Was ist das Prinzip der summativen Erregung an Synapsen?","options":["Ein Neuron kann nur ein Aktionspotenzial auslösen","Ein Aktionspotenzial im Nachfolgeneuron entsteht, wenn die Summe der erregenden und hemmenden postsynaptischen Potenziale den Schwellenwert überschreitet","Aktionspotenziale werden nicht summiert","Hemmung überwacht immer Erregung"],"correct":1,"explanation":"Räumliche Summation: mehrere Synapsen gleichzeitig. Zeitliche Summation: ein Präsynapton wiederholt schnell. Beide erhöhen die Chance, den Schwellenwert zu erreichen.","topic":"Synapsen"},
-  {"question":"Was ist ein Reflexbogen beim Dehnungsreflex (Eigenreflex)?","options":["Ein Reflex über drei Neuronen","Ein monosynaptischer Reflex: Muskelspindel → afferentes Neuron → Motoneuron (direkt, ohne Interneuron) → Muskel (z.B. Kniesehnenreflex)","Ein Reflex mit Schmerzbeteiligung","Ein konditionierter Reflex"],"correct":1,"explanation":"Der Eigenreflex (monosynaptisch) dient der Muskeltonuskontrolle; der Patellarsehnenreflex ist das klassische klinische Beispiel.","topic":"Reflexe"},
-  {"question":"Was ist Langzeitpotenzierung (LTP)?","options":["Eine Abschwächung synaptischer Verbindungen","Eine langanhaltende Verstärkung synaptischer Übertragung nach hochfrequenter Stimulation – zelluläre Grundlage des Lernens und Gedächtnisses","Eine Form der Habituation","Ein Neurotransmitterabbau"],"correct":1,"explanation":"LTP: häufig aktive Synapsen werden dauerhaft stärker (Hebbsche Regel: 'Neurons that fire together, wire together'). Grundlage für Gedächtnisbildung.","topic":"Lernen und Verhalten"},
-  {"question":"Was ist der Unterschied zwischen Kurz- und Langzeitgedächtnis?","options":["Kein Unterschied","Kurzzeitgedächtnis: begrenzte Kapazität (7±2 Einheiten), kurze Dauer (Sekunden–Minuten); Langzeitgedächtnis: nahezu unbegrenzt, dauerhaft","Kurzzeitgedächtnis ist umfangreicher","Langzeitgedächtnis liegt im Kleinhirn"],"correct":1,"explanation":"Konsolidierung (Hippocampus): Kurzzeitinhalte werden durch Schlaf und Wiederholung ins Langzeitgedächtnis überführt.","topic":"Gedächtnis"},
-  {"question":"Was ist das somatosensorische System?","options":["Das visuelle System","Das System zur Wahrnehmung von Berührungs-, Druck-, Temperatur- und Schmerzreizen aus dem Körper – verarbeitet im somatosensorischen Kortex","Das auditive System","Das olfaktorische System"],"correct":1,"explanation":"Somatosensorischer Kortex (Parietallappen): die Repräsentation verschiedener Körperregionen ist proportional zur Rezeptordichte (Homunculus).","topic":"Sinnesphysiologie"},
-  {"question":"Was unterscheidet das periphere vom zentralen Nervensystem?","options":["Das PNS ist größer","PNS: alle Nerven außerhalb von Gehirn und Rückenmark (Hirnnerven, Spinalnerven); ZNS: Gehirn und Rückenmark","ZNS besteht nur aus Neuronen","PNS ist das Bewusstsein"],"correct":1,"explanation":"Das PNS verbindet das ZNS mit Sinnesorganen und Effektoren; es umfasst somatisches (willkürlich) und vegetatives (unwillkürlich) Nervensystem.","topic":"Nervensystem"}
+  {
+    "question": "Was ist ein Neuron (Nervenzelle)?",
+    "options": [
+      "Eine Muskelzelle",
+      "Die Grundbaueinheit des Nervensystems: besteht aus Zellkörper (Soma), Dendriten (Eingang) und Axon (Ausgang)",
+      "Eine Drüsenzelle",
+      "Eine Blutzelle"
+    ],
+    "correct": 1,
+    "explanation": "Neuronen sind spezialisierte Zellen zur Aufnahme, Verarbeitung und Weiterleitung elektrischer Signale (Aktionspotenziale).",
+    "topic": "Nervensystem"
+  },
+  {
+    "question": "Was ist das Ruhepotenzial einer Nervenzelle?",
+    "options": [
+      "0 mV",
+      "Der Spannungsunterschied von ca. –70 mV zwischen Innen- und Außenseite der Zellmembran im Ruhezustand",
+      "Ein positiver Wert von +70 mV",
+      "Ein Potenzial, das nur bei Erregung auftritt"
+    ],
+    "correct": 1,
+    "explanation": "Das Ruhepotenzial (ca. –70 mV) entsteht durch unterschiedliche Ionenverteilung (K⁺ innen, Na⁺ außen) und selektive Membrandurchlässigkeit.",
+    "topic": "Membranpotenziale"
+  },
+  {
+    "question": "Was ist ein Aktionspotenzial?",
+    "options": [
+      "Das dauerhaft stabile Ruhepotenzial",
+      "Ein kurzer, standardisierter Spannungsimpuls (Depolarisation → +30 mV, dann Repolarisation) bei Überschreiten des Schwellenwerts",
+      "Ein chemischer Botenstoff",
+      "Ein Dauerreiz auf die Zellmembran"
+    ],
+    "correct": 1,
+    "explanation": "Aktionspotenzial: Na⁺-Kanäle öffnen (Depolarisation), dann K⁺-Kanäle (Repolarisation). Alles-oder-Nichts-Prinzip – es gibt keine kleinen Aktionspotenziale.",
+    "topic": "Membranpotenziale"
+  },
+  {
+    "question": "Was ist das 'Alles-oder-Nichts-Prinzip'?",
+    "options": [
+      "Neuronen feuern immer unterschiedlich stark",
+      "Ein Aktionspotenzial wird entweder vollständig ausgelöst (bei Überschreiten des Schwellenwerts) oder gar nicht",
+      "Aktionspotenziale häufen sich an",
+      "Nur bestimmte Neuronen reagieren auf Reize"
+    ],
+    "correct": 1,
+    "explanation": "Die Stärke eines Reizes wird nicht durch die Amplitude des Aktionspotenzials codiert, sondern durch die Frequenz (Häufigkeit) der Aktionspotenziale.",
+    "topic": "Membranpotenziale"
+  },
+  {
+    "question": "Was ist saltatorische Erregungsleitung?",
+    "options": [
+      "Langsame Fortleitung entlang der gesamten Axonmembran",
+      "Sprunghafte Fortleitung von Ranvier-Schnürring zu Ranvier-Schnürring bei myelinisierten Axonen – schneller und energieeffizienter",
+      "Erregungsleitung im Herzmuskel",
+      "Erregungsleitung ohne Myelin"
+    ],
+    "correct": 1,
+    "explanation": "Myelin isoliert das Axon; das Aktionspotenzial 'springt' zwischen den unbemyelinisierten Ranvier-Schnürringen. Geschwindigkeit: bis 120 m/s.",
+    "topic": "Erregungsleitung"
+  },
+  {
+    "question": "Was ist eine Synapse?",
+    "options": [
+      "Eine Verbindung zwischen zwei Muskeln",
+      "Die Kontaktstelle zwischen zwei Neuronen (oder Neuron und Muskel), an der Signale durch Neurotransmitter chemisch übertragen werden",
+      "Ein Blutgefäß im Gehirn",
+      "Ein Sinnesorgan"
+    ],
+    "correct": 1,
+    "explanation": "Synapse: präsynaptische Membran → synaptischer Spalt → postsynaptische Membran. Neurotransmitter (z.B. Acetylcholin) überbrücken den Spalt.",
+    "topic": "Synapsen"
+  },
+  {
+    "question": "Was sind Neurotransmitter?",
+    "options": [
+      "Elektrische Ladungsträger",
+      "Chemische Botenstoffe, die an Synapsen ausgeschüttet werden und das Signal auf die nächste Zelle übertragen",
+      "Enzyme im Blut",
+      "Strukturproteine des Neurons"
+    ],
+    "correct": 1,
+    "explanation": "Wichtige Neurotransmitter: Acetylcholin (Muskelsteuerung), Dopamin (Belohnung), Serotonin (Stimmung), GABA (Hemmung), Glutamat (Erregung).",
+    "topic": "Synapsen"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen exzitatorischen und inhibitorischen Synapsen?",
+    "options": [
+      "Kein Unterschied",
+      "Exzitatorisch: Neurotransmitter erhöhen die Wahrscheinlichkeit eines Aktionspotenzials (Depolarisation); inhibitorisch: sie verringern sie (Hyperpolarisation)",
+      "Exzitatorisch ist schneller",
+      "Inhibitorisch hat mehr Neurotransmitter"
+    ],
+    "correct": 1,
+    "explanation": "GABA und Glycin wirken meist inhibitorisch; Glutamat und Acetylcholin (je nach Rezeptor) exzitatorisch. Das Gleichgewicht reguliert Erregbarkeit.",
+    "topic": "Synapsen"
+  },
+  {
+    "question": "Was ist das zentrale Nervensystem (ZNS)?",
+    "options": [
+      "Alle Nerven außerhalb des Gehirns",
+      "Gehirn und Rückenmark – Verarbeitungszentrum des Nervensystems",
+      "Das vegetative Nervensystem",
+      "Alle Sinnesorgane"
+    ],
+    "correct": 1,
+    "explanation": "Das ZNS verarbeitet Informationen; das periphere Nervensystem (PNS) verbindet ZNS mit Körperperipherie.",
+    "topic": "Nervensystem"
+  },
+  {
+    "question": "Was ist das vegetative (autonome) Nervensystem?",
+    "options": [
+      "Das willkürliche Nervensystem",
+      "Der Teil des peripheren Nervensystems, der unwillkürliche Körperfunktionen (Herzschlag, Verdauung, Atmung) steuert – Sympathikus und Parasympathikus",
+      "Das somatische Nervensystem",
+      "Das zentrale Nervensystem"
+    ],
+    "correct": 1,
+    "explanation": "Sympathikus ('Kampf oder Flucht'): Herzfrequenz ↑, Verdauung ↓. Parasympathikus ('Ruhe und Verdauung'): Herzfrequenz ↓, Verdauung ↑.",
+    "topic": "Nervensystem"
+  },
+  {
+    "question": "Was ist ein Reflexbogen?",
+    "options": [
+      "Eine Gehirnreaktion",
+      "Der neuronale Schaltkreis eines Reflexes: Rezeptor → afferentes Neuron → (Interneuron im Rückenmark) → efferentes Neuron → Effektor",
+      "Eine Reflexion im Gehirn",
+      "Ein Sehvorgang"
+    ],
+    "correct": 1,
+    "explanation": "Reflexe sind angeborene, schnelle Reaktionen ohne Bewusstseinsbeteiligung (z.B. Patellarsehnenreflex). Das Rückenmark schaltet, das Gehirn erfährt es nachher.",
+    "topic": "Reflexe"
+  },
+  {
+    "question": "Was sind die drei Hauptteile des menschlichen Gehirns?",
+    "options": [
+      "Cortex, Hypothalamus, Stamm",
+      "Großhirn (Kortex), Kleinhirn (Koordination und Gleichgewicht) und Hirnstamm (Vitalfunktionen)",
+      "Frontallappen, Parietallappen, Temporallappen",
+      "Limbisches System, Amygdala, Hippocampus"
+    ],
+    "correct": 1,
+    "explanation": "Großhirn: höhere kognitive Funktionen. Kleinhirn: Motorkoordination. Hirnstamm (Medulla oblongata, Pons, Mesenzephalon): Atmung, Herzschlag, Schlaf-Wach.",
+    "topic": "Gehirn"
+  },
+  {
+    "question": "Was ist das limbische System?",
+    "options": [
+      "Das motorische System des Kleinhirns",
+      "Eine Gruppe von Hirnstrukturen (Amygdala, Hippocampus), die Emotionen, Gedächtnis und Motivation regulieren",
+      "Das visuelle Verarbeitungszentrum",
+      "Ein Abschnitt des Rückenmarks"
+    ],
+    "correct": 1,
+    "explanation": "Das limbische System verbindet emotionale Verarbeitung (Amygdala) mit Gedächtnisbildung (Hippocampus) und Motivationssteuerung.",
+    "topic": "Gehirn"
+  },
+  {
+    "question": "Was ist die Funktion des Hippocampus?",
+    "options": [
+      "Gleichgewichtskontrolle",
+      "Entscheidende Rolle bei der Bildung neuer Gedächtnisinhalte (Langzeitgedächtnis) und räumlicher Navigation",
+      "Verarbeitung von Schmerz",
+      "Steuerung des Herzschlags"
+    ],
+    "correct": 1,
+    "explanation": "Der Hippocampus konsolidiert Kurzzeitgedächtnis zu Langzeitgedächtnis. Bei Zerstörung (z.B. Patient H.M.) können keine neuen Erinnerungen gebildet werden.",
+    "topic": "Gehirn"
+  },
+  {
+    "question": "Was ist die Amygdala?",
+    "options": [
+      "Ein Bereich des Kleinhirns",
+      "Eine mandelförmige Hirnstruktur im limbischen System, die Emotionen – besonders Angst – verarbeitet",
+      "Ein Teil des Hirnstamms",
+      "Ein motorischer Kortexbereich"
+    ],
+    "correct": 1,
+    "explanation": "Die Amygdala bewertet emotionale Bedeutung von Reizen, aktiviert Stressreaktionen und ist an der Konditionierung von Angst beteiligt.",
+    "topic": "Gehirn"
+  },
+  {
+    "question": "Was ist die Neuroplastizität?",
+    "options": [
+      "Die Starrheit neuronaler Strukturen",
+      "Die Fähigkeit des Gehirns, sich durch Erfahrung, Lernen und nach Schäden durch Umorganisation von Verbindungen anzupassen",
+      "Die Wachstumsrate von Neuronen",
+      "Die elektrische Leitfähigkeit von Axonen"
+    ],
+    "correct": 1,
+    "explanation": "Neuroplastizität ermöglicht Lernen (Verstärkung synapt. Verbindungen – Langzeitpotenzierung, LTP) und Erholung nach Hirnverletzungen.",
+    "topic": "Gehirn"
+  },
+  {
+    "question": "Was ist Habituation?",
+    "options": [
+      "Eine Form des Lernens durch Belohnung",
+      "Die einfachste Form des Lernens: Abnahme der Reaktionsstärke auf einen wiederholten, harmlosen Reiz",
+      "Eine Form der Prägung",
+      "Ein angeborenes Verhalten"
+    ],
+    "correct": 1,
+    "explanation": "Habituation: ein Tier ignoriert einen Reiz zunehmend, wenn er wiederholt aufritt und keine Konsequenzen hat (z.B. Schreckreiz bei Schnecken).",
+    "topic": "Lernen und Verhalten"
+  },
+  {
+    "question": "Was ist klassische Konditionierung (nach Pawlow)?",
+    "options": [
+      "Lernen durch Versuch und Irrtum",
+      "Verknüpfung eines neutralen Reizes mit einem biologisch bedeutsamen Reiz, sodass der neutrale Reiz allein die Reaktion auslöst",
+      "Lernen durch Beobachtung",
+      "Lernen durch Bestrafung"
+    ],
+    "correct": 1,
+    "explanation": "Pawlow: Glocke (neutral) + Futter (unbedingter Reiz) → Speichelfluss; nach Konditionierung: Glocke allein → Speichelfluss (bedingter Reflex).",
+    "topic": "Lernen und Verhalten"
+  },
+  {
+    "question": "Was ist operante Konditionierung (nach Skinner)?",
+    "options": [
+      "Verknüpfung zweier Reize",
+      "Lernen durch Konsequenzen: Belohnung erhöht Verhaltenshäufigkeit (positive Verstärkung), Bestrafung senkt sie",
+      "Lernen durch Beobachtung",
+      "Angeborenes Instinktverhalten"
+    ],
+    "correct": 1,
+    "explanation": "Skinner-Box: Ratte drückt Hebel → Futter (Belohnung) → Verhalten wird häufiger. Operante Konditionierung erklärt viel menschliches Lernverhalten.",
+    "topic": "Lernen und Verhalten"
+  },
+  {
+    "question": "Was ist Prägung (Imprinting)?",
+    "options": [
+      "Eine Form der Langzeitkonditionierung",
+      "Einmaliges, zeitlich begrenztes Lernen in einer sensiblen Phase – ohne Belohnung, dauerhaft und kaum korrigierbar (z.B. Graugänse bei Lorenz)",
+      "Lernen durch Wiederholung",
+      "Instinktverhalten"
+    ],
+    "correct": 1,
+    "explanation": "Prägung (Lorenz): Graugansküken folgen in der sensiblen Phase dem ersten bewegten Objekt – normalerweise der Mutter. Dauerhaft, nicht reversibel.",
+    "topic": "Lernen und Verhalten"
+  },
+  {
+    "question": "Was ist Einsichtslernen?",
+    "options": [
+      "Lernen durch Konditionierung",
+      "Plötzliche Problemlösung durch Erkennen von Zusammenhängen, ohne vorheriges Ausprobieren ('Aha-Erlebnis') – Köhler: Schimpansen",
+      "Lernen durch Beobachtung",
+      "Habituationslernen"
+    ],
+    "correct": 1,
+    "explanation": "Köhlers Schimpanse Sultan stapelte Kisten, um eine Banane zu erreichen – ohne vorherige Versuche: Einsicht in die Beziehung Kiste–Höhe–Banane.",
+    "topic": "Lernen und Verhalten"
+  },
+  {
+    "question": "Was ist ein Instinkt?",
+    "options": [
+      "Erlerntes Verhalten",
+      "Angeborenes, artspezifisches Verhaltens- und Handlungsprogramm, das durch einen Auslösereiz (Schlüsselreiz) aktiviert wird",
+      "Konditioniertes Verhalten",
+      "Bewusste Entscheidung"
+    ],
+    "correct": 1,
+    "explanation": "Instinktbewegungen laufen stereotyp ab und sind genetisch programmiert; z.B. Saugreflex beim Säugling, Nestbau bei Vögeln.",
+    "topic": "Verhalten"
+  },
+  {
+    "question": "Was ist ein angeborener Auslösemechanismus (AAM)?",
+    "options": [
+      "Ein gelerntes Reaktionsmuster",
+      "Ein angeborenes neuronales Filtermuster, das auf bestimmte Schlüsselreize reagiert und eine Instinkthandlung auslöst",
+      "Ein Gehirnbereich für Sprache",
+      "Eine Reflexkette"
+    ],
+    "correct": 1,
+    "explanation": "Der AAM filtert relevante Reize heraus (z.B. rote Bauchfarbe als Schlüsselreiz für Aggressionsverhalten beim Stichling).",
+    "topic": "Verhalten"
+  },
+  {
+    "question": "Was ist eine Taxis?",
+    "options": [
+      "Ein Fahrzeug im Nervensystem",
+      "Eine gerichtete Bewegung eines Organismus auf einen Reiz zu (Topotaxis) oder von ihm weg",
+      "Ein Instinktverhalten ohne Richtung",
+      "Eine Form der Habituation"
+    ],
+    "correct": 1,
+    "explanation": "Taxis: Phototaxis (Licht), Chemotaxis (Chemikalien), Gravitaxis (Schwerkraft) – der Organismus bewegt sich gezielt zum oder vom Reiz weg.",
+    "topic": "Verhalten"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Hormone und Neurotransmitter als Signalmoleküle?",
+    "options": [
+      "Kein Unterschied",
+      "Hormone: Fernbotenstoffe über Blutbahn (langsam, langwirkend); Neurotransmitter: lokale Signalübertragung an Synapsen (schnell, kurzwirkend)",
+      "Hormone sind schneller",
+      "Neurotransmitter wirken systemisch"
+    ],
+    "correct": 1,
+    "explanation": "Hormone (z.B. Insulin, Adrenalin) werden in Drüsen produziert und über das Blut transportiert. Neurotransmitter (Acetylcholin) wirken lokal an Synapsen.",
+    "topic": "Nervensystem"
+  },
+  {
+    "question": "Was ist die Funktion von Dopamin?",
+    "options": [
+      "Muskelkontraktion",
+      "Neurotransmitter im Belohnungssystem des Gehirns – beteiligt an Motivation, Freude und motorischer Kontrolle",
+      "Schlafregulation",
+      "Stressreaktion"
+    ],
+    "correct": 1,
+    "explanation": "Dopaminmangel: Parkinson-Krankheit (motorische Störungen). Dopaminüberschuss: assoziiert mit Schizophrenie. Dopamin ist zentral für das Belohnungssystem.",
+    "topic": "Neurotransmitter"
+  },
+  {
+    "question": "Was ist die Funktion von Serotonin?",
+    "options": [
+      "Stimulation des Herzmuskels",
+      "Neurotransmitter, der Stimmung, Schlaf, Appetit und Schmerzempfinden reguliert; Mangel korreliert mit Depression",
+      "Gedächtnisbildung im Hippocampus",
+      "Bewegungskoordination"
+    ],
+    "correct": 1,
+    "explanation": "SSRI (Selektive Serotonin-Wiederaufnahmehemmer) sind Antidepressiva, die Serotoninverfügbarkeit erhöhen – Beleg für Serotonins Rolle bei Depression.",
+    "topic": "Neurotransmitter"
+  },
+  {
+    "question": "Was ist ein Rezeptorpotenzial in Sinnesorganen?",
+    "options": [
+      "Ein Aktionspotenzial im Gehirn",
+      "Eine graduelle, reizstärkenabhängige Depolarisation in Sinneszellen, die (bei ausreichender Stärke) Aktionspotenziale im afferenten Neuron auslöst",
+      "Ein Ruhepotenzial",
+      "Ein Neurotransmitter"
+    ],
+    "correct": 1,
+    "explanation": "Rezeptorpotenziale sind keine Alles-oder-Nichts-Reaktionen; ihre Stärke codiert die Reizintensität; sie werden in Aktionspotenzial-Frequenz umgewandelt.",
+    "topic": "Sinnesphysiologie"
+  },
+  {
+    "question": "Was ist Adaptation in der Sinnesphysiologie?",
+    "options": [
+      "Evolutionäre Anpassung",
+      "Abnahme der Empfindlichkeit eines Sinnesrezeptors bei anhaltend gleichem Reiz (z.B. Geruch gewöhnen)",
+      "Zunahme der Empfindlichkeit",
+      "Ein Lernprozess"
+    ],
+    "correct": 1,
+    "explanation": "Adaptation: Rezeptoren 'ermüden' bei Dauerreiz; nach Wegfall des Reizes regeneriert die Empfindlichkeit. Wichtig: Gefahrenreize wie Schmerz adaptieren kaum.",
+    "topic": "Sinnesphysiologie"
+  },
+  {
+    "question": "Was ist das Prinzip der adäquaten Reize?",
+    "options": [
+      "Jeder Reiz kann jedes Sinnesorgan aktivieren",
+      "Jedes Sinnesorgan ist auf eine bestimmte Reizqualität spezialisiert (adäquater Reiz) und reagiert darauf mit der geringsten Reizschwelle",
+      "Reize müssen immer stark sein",
+      "Alle Sinne haben dieselbe Schwelle"
+    ],
+    "correct": 1,
+    "explanation": "Das Auge reagiert optimal auf Licht (adäquater Reiz); Druck auf das Auge kann auch ein Lichterlebnis erzeugen (inadäquater Reiz) – aber mit viel höherer Schwelle.",
+    "topic": "Sinnesphysiologie"
+  },
+  {
+    "question": "Was ist Melatonin?",
+    "options": [
+      "Ein Neurotransmitter an Synapsen",
+      "Ein in der Zirbeldrüse produziertes Hormon, das den Schlaf-Wach-Rhythmus (circadianen Rhythmus) reguliert",
+      "Ein Stresshormon",
+      "Ein Wachstumshormon"
+    ],
+    "correct": 1,
+    "explanation": "Melatonin wird bei Dunkelheit ausgeschüttet und fördert Schlaf; Licht (besonders Blaulicht) unterdrückt die Melatoninproduktion – relevanz für Bildschirmnutzung.",
+    "topic": "Hormone"
+  },
+  {
+    "question": "Was ist Cortisol?",
+    "options": [
+      "Ein Schlafhormon",
+      "Ein Stresshormon der Nebennierenrinde: erhöht Blutdruck, Blutzucker und Entzündungshemmung – kurzfristig nützlich, chronisch schädlich",
+      "Ein Wachstumshormon",
+      "Ein Sexualhormon"
+    ],
+    "correct": 1,
+    "explanation": "Cortisol aktiviert bei Stress den Körper; chronisch erhöhte Cortisolspiegel schädigen Hippocampus, schwächen Immunsystem und fördern Herzerkrankungen.",
+    "topic": "Hormone"
+  },
+  {
+    "question": "Was ist das Prinzip der summativen Erregung an Synapsen?",
+    "options": [
+      "Ein Neuron kann nur ein Aktionspotenzial auslösen",
+      "Ein Aktionspotenzial im Nachfolgeneuron entsteht, wenn die Summe der erregenden und hemmenden postsynaptischen Potenziale den Schwellenwert überschreitet",
+      "Aktionspotenziale werden nicht summiert",
+      "Hemmung überwacht immer Erregung"
+    ],
+    "correct": 1,
+    "explanation": "Räumliche Summation: mehrere Synapsen gleichzeitig. Zeitliche Summation: ein Präsynapton wiederholt schnell. Beide erhöhen die Chance, den Schwellenwert zu erreichen.",
+    "topic": "Synapsen"
+  },
+  {
+    "question": "Was ist ein Reflexbogen beim Dehnungsreflex (Eigenreflex)?",
+    "options": [
+      "Ein Reflex über drei Neuronen",
+      "Ein monosynaptischer Reflex: Muskelspindel → afferentes Neuron → Motoneuron (direkt, ohne Interneuron) → Muskel (z.B. Kniesehnenreflex)",
+      "Ein Reflex mit Schmerzbeteiligung",
+      "Ein konditionierter Reflex"
+    ],
+    "correct": 1,
+    "explanation": "Der Eigenreflex (monosynaptisch) dient der Muskeltonuskontrolle; der Patellarsehnenreflex ist das klassische klinische Beispiel.",
+    "topic": "Reflexe"
+  },
+  {
+    "question": "Was ist Langzeitpotenzierung (LTP)?",
+    "options": [
+      "Eine Abschwächung synaptischer Verbindungen",
+      "Eine langanhaltende Verstärkung synaptischer Übertragung nach hochfrequenter Stimulation – zelluläre Grundlage des Lernens und Gedächtnisses",
+      "Eine Form der Habituation",
+      "Ein Neurotransmitterabbau"
+    ],
+    "correct": 1,
+    "explanation": "LTP: häufig aktive Synapsen werden dauerhaft stärker (Hebbsche Regel: 'Neurons that fire together, wire together'). Grundlage für Gedächtnisbildung.",
+    "topic": "Lernen und Verhalten"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Kurz- und Langzeitgedächtnis?",
+    "options": [
+      "Kein Unterschied",
+      "Kurzzeitgedächtnis: begrenzte Kapazität (7±2 Einheiten), kurze Dauer (Sekunden–Minuten); Langzeitgedächtnis: nahezu unbegrenzt, dauerhaft",
+      "Kurzzeitgedächtnis ist umfangreicher",
+      "Langzeitgedächtnis liegt im Kleinhirn"
+    ],
+    "correct": 1,
+    "explanation": "Konsolidierung (Hippocampus): Kurzzeitinhalte werden durch Schlaf und Wiederholung ins Langzeitgedächtnis überführt.",
+    "topic": "Gedächtnis"
+  },
+  {
+    "question": "Was ist das somatosensorische System?",
+    "options": [
+      "Das visuelle System",
+      "Das System zur Wahrnehmung von Berührungs-, Druck-, Temperatur- und Schmerzreizen aus dem Körper – verarbeitet im somatosensorischen Kortex",
+      "Das auditive System",
+      "Das olfaktorische System"
+    ],
+    "correct": 1,
+    "explanation": "Somatosensorischer Kortex (Parietallappen): die Repräsentation verschiedener Körperregionen ist proportional zur Rezeptordichte (Homunculus).",
+    "topic": "Sinnesphysiologie"
+  },
+  {
+    "question": "Was unterscheidet das periphere vom zentralen Nervensystem?",
+    "options": [
+      "Das PNS ist größer",
+      "PNS: alle Nerven außerhalb von Gehirn und Rückenmark (Hirnnerven, Spinalnerven); ZNS: Gehirn und Rückenmark",
+      "ZNS besteht nur aus Neuronen",
+      "PNS ist das Bewusstsein"
+    ],
+    "correct": 1,
+    "explanation": "Das PNS verbindet das ZNS mit Sinnesorganen und Effektoren; es umfasst somatisches (willkürlich) und vegetatives (unwillkürlich) Nervensystem.",
+    "topic": "Nervensystem"
+  },
+  {
+    "question": "Was ist ein Aktionspotenzial?",
+    "options": [
+      "Ein Ruhepotenzial",
+      "Kurzfristige elektrische Signalweiterleitung entlang eines Neurons: Depolarisation (Na+ einstroemend), Repolarisation (K+ ausstroemend), Hyperpolarisation. Alles-oder-Nichts-Prinzip.",
+      "Chemische Synapse",
+      "Ionenpumpe"
+    ],
+    "correct": 1,
+    "explanation": "Aktionspotenzial: Ruhepotenzial ca. -70mV. Bei Erregung oeffnen Na+-Kanaele: Einstrom -> Depolarisation bis +30mV. Dann K+-Ausstrom: Repolarisation. Saltatorische Erregungsleitung an myelinisierten Fasern bis 120 m/s.",
+    "topic": "Neurobiologie"
+  },
+  {
+    "question": "Was ist die Blut-Hirn-Schranke?",
+    "options": [
+      "Ein Knochen des Schaedels",
+      "Selektive Barriere zwischen Blutkreislauf und Gehirn: Endothelzellen der Hirnkapillaren sind durch enge Verbindungen (Tight Junctions) abgedichtet. Schuetzt Gehirn vor Schadstoffen und Erregern.",
+      "Eine Hirnhaut",
+      "Ein Teil des Rueckenmarks"
+    ],
+    "correct": 1,
+    "explanation": "Blut-Hirn-Schranke: laesst fettloesliche Substanzen (Alkohol, Nikotin, viele Medikamente) leichter durch als wasserloesliche. Problem bei Gehirninfektionen (z.B. Meningitis): Antibiotika muessen Schranke ueberwinden koennen.",
+    "topic": "Neurobiologie"
+  }
 ]

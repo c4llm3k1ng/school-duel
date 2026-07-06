@@ -1,40 +1,482 @@
 [
-  {"question":"Was ist eine eukaryotische Zelle?","options":["Eine Zelle ohne Zellkern","Eine Zelle mit echtem Zellkern (durch Membran begrenzt) und Membranorganellen – Tiere, Pflanzen, Pilze, Protisten","Eine Bakterienzelle","Eine Virushülle"],"correct":1,"explanation":"Eukaryoten: Zellkern, Mitochondrien, ER, Golgi-Apparat, Ribosomen am ER. Prokaryoten (Bakterien) haben keinen Membran-umhüllten Kern.","topic":"Zellbiologie"},
-  {"question":"Was ist die Funktion der Mitochondrien?","options":["Proteinbiosynthese","ATP-Produktion durch Zellatmung (oxidative Phosphorylierung); 'Kraftwerke der Zelle'","Lipidsynthese","Zellkommunikation"],"correct":1,"explanation":"Mitochondrien: innere Membran (Cristae) trägt Atmungskette und ATP-Synthase. Eigene DNA → Endosymbiontentheorie (ehemals Bakterium).","topic":"Zellbiologie"},
-  {"question":"Was ist die Funktion des endoplasmatischen Retikulums (ER)?","options":["ATP-Produktion","Raues ER: Proteinsynthese und -transport (Ribosomen auf Membran); Glattes ER: Lipidsynthese, Entgiftung","DNA-Replikation","Zellteilung"],"correct":1,"explanation":"Raues ER: Ribosomen synthetisieren Sekretionsproteine. Glattes ER: Membranlipide, Steroidhormone, Calciumspeicher.","topic":"Zellbiologie"},
-  {"question":"Was ist der Golgi-Apparat?","options":["Die Energiezentrale der Zelle","Stapel von Membransäcken (Zisternen) zur Sortierung, Modifikation und Verpackung von Proteinen für den Transport zur Zellmembran oder Lysosom","Der Ort der DNA","Ein Proteinkomplex in der Mitochondrienmembran"],"correct":1,"explanation":"Golgi-Apparat: 'Postamt der Zelle'. Proteine kommen vom ER (cis), werden modifiziert (trans) und in Vesikel verpackt zur Zielregion geschickt.","topic":"Zellbiologie"},
-  {"question":"Was ist Osmose?","options":["Aktiver Transport von Ionen","Die Diffusion von Wasser durch eine selektiv permeable Membran vom Bereich niedriger Konzentration gelöster Stoffe zu höherer Konzentration","Transport gegen den Konzentrationsgradienten","Diffusion von Ionen"],"correct":1,"explanation":"Osmose: Wasser wandert vom hypotonischen (weniger Salz) in den hypertonischen (mehr Salz) Bereich. In Pflanzenzellen: Turgordruck, Plasmolyse bei Wassermangel.","topic":"Zellbiologie"},
-  {"question":"Was ist aktiver Transport?","options":["Diffusion durch die Membran","Transport von Stoffen gegen den Konzentrationsgradienten unter ATP-Verbrauch – z.B. Natrium-Kalium-Pumpe","Osmose durch Proteine","Erleichterte Diffusion"],"correct":1,"explanation":"Na⁺/K⁺-ATPase: pumpt 3 Na⁺ raus und 2 K⁺ rein pro ATP – erzeugt Membranpotenzial, wichtig für Nerven und Muskeln.","topic":"Zellbiologie"},
-  {"question":"Was ist Mitose?","options":["Geschlechtliche Zellteilung","Normale Zellteilung: eine Mutterzelle → zwei genetisch identische Tochterzellen; Phasen: Prophase, Metaphase, Anaphase, Telophase + Zytokinese","Bildung von Gameten","Verschmelzung von Zellen"],"correct":1,"explanation":"Mitose: Chromosomen verdoppeln (S-Phase) und werden gleichmäßig auf Tochterzellen verteilt. Wichtig für Wachstum und Reparatur. Kein Chromosomensatz-Wechsel.","topic":"Zellbiologie"},
-  {"question":"Was ist Apoptose?","options":["Unkontrollierter Zelltod (Nekrose)","Programmierter Zelltod: geordneter Abbau der Zelle durch zelleigene Enzyme – wichtig für Entwicklung (Fingerbildung) und Immunabwehr","Zellteilung","Mutation"],"correct":1,"explanation":"Apoptose: Zelle schrumpft, DNA wird fragmentiert, Membran bleibt intakt – keine Entzündungsreaktion. Störung → Krebs (Apoptoseausfall) oder Autoimmunerkrankung.","topic":"Zellbiologie"},
-  {"question":"Was ist ein Ökosystem?","options":["Eine Tierart und ihr Lebensraum","Die Gesamtheit aller Lebewesen (Biozönose) eines Lebensraums (Biotop) und ihre abiotischen Umweltfaktoren sowie die Wechselwirkungen","Nur die Pflanzen eines Gebiets","Eine Nahrungskette"],"correct":1,"explanation":"Ökosystem = Biotop (Lebensraum) + Biozönose (Lebensgemeinschaft) + Wechselwirkungen. Energie- und Stoffkreisläufe verbinden alle Komponenten.","topic":"Ökologie"},
-  {"question":"Was ist eine Nahrungskette?","options":["Eine Symbiose zweier Arten","Eine lineare Reihe von Organismen, bei der jeder den vorherigen frisst: Produzent → Primärkonsument → Sekundärkonsument → Tertiärkonsument","Ein Räuber-Beute-Zyklus","Ein Parasit-Wirt-Verhältnis"],"correct":1,"explanation":"Energiefluss in Nahrungsketten: nur ~10% der Energie gelangt je Stufe weiter (ökologische Pyramide). Nahrungsnetze sind realistischer (mehrere Verbindungen).","topic":"Ökologie"},
-  {"question":"Was sind Produzenten im Ökosystem?","options":["Tiere, die andere fressen","Autotrophe Organismen (Pflanzen, Cyanobakterien), die durch Fotosynthese organische Stoffe aus anorganischen aufbauen – Basis aller Nahrungsketten","Zersetzer (Destruenten)","Sekundärkonsumenten"],"correct":1,"explanation":"Produzenten fixieren Sonnenenergie; Konsumenten (Herbivore, Karnivore) geben Energie weiter; Destruenten (Pilze, Bakterien) zersetzen tote Biomasse.","topic":"Ökologie"},
-  {"question":"Was ist der Kohlenstoffkreislauf?","options":["Nur die Fotosynthese","Der globale Kreislauf des Kohlenstoffs durch Fotosynthese (CO₂ → organisch), Zellatmung (organisch → CO₂), Verbrennung, Verwitterung und Ozean-Austausch","Nur die Verbrennung fossiler Brennstoffe","Nur der Stickstoffkreislauf"],"correct":1,"explanation":"Anthropogene Störung: Verbrennung fossiler Brennstoffe erhöht CO₂-Konzentration → Treibhauseffekt. C-Senken: Wälder, Ozeane.","topic":"Ökologie"},
-  {"question":"Was ist Fotosynthese (Gleichung)?","options":["6CO₂ + 6H₂O + Licht → C₆H₁₂O₆ + 6O₂","6O₂ + C₆H₁₂O₆ → 6CO₂ + 6H₂O + Energie","CO₂ + H₂O → CH₄ + O₂","C₆H₁₂O₆ → 6CO₂ + 6H₂O"],"correct":0,"explanation":"Fotosynthese: Lichtreaktion (Chloroplastenthylakoide) + Dunkelreaktion/Calvin-Zyklus (Stroma). Sauerstoff ist Nebenprodukt der Wasserspaltung (Photolyse).","topic":"Zellbiologie"},
-  {"question":"Was ist Zellatmung (aerob)?","options":["C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP","6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂","C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂","Nur Glykolyse"],"correct":0,"explanation":"Aerobe Atmung: Glykolyse (Cytoplasma) → Pyruvat-Decarboxylierung → Citratzyklus → Atmungskette. Ertrag: ~30–32 ATP pro Glucose.","topic":"Zellbiologie"},
-  {"question":"Was ist das Räuber-Beute-Verhältnis?","options":["Eine Symbiose","Eine Wechselbeziehung, bei der Räuberbestand und Beutepopulation zyklisch schwanken (Volterra-Lotka-Gleichungen): mehr Beute → mehr Räuber → weniger Beute → weniger Räuber","Eine Parasitenbeziehung","Ein Konkurrenzprinzip"],"correct":1,"explanation":"Klassisches Beispiel: Schneehase und Kanadischer Luchs – Populationen schwingen mit leichtem Versatz. Regulation ohne Eingriff des Menschen.","topic":"Ökologie"},
-  {"question":"Was ist ökologische Nische?","options":["Der Lebensraum einer Art","Die Gesamtheit aller biotischen und abiotischen Faktoren, die eine Art zum Überleben benötigt (Fundamental- vs. Realisierte Nische)","Nur die Ernährung einer Art","Der geographische Verbreitungsbereich"],"correct":1,"explanation":"Fundamentalnische: theoretisch möglicher Bereich. Realisierte Nische: tatsächlich genutzt unter Konkurrenzdruck. Konkurrenzausschlussprinzip (Gause): keine zwei Arten können exakt dieselbe Nische belegen.","topic":"Ökologie"},
-  {"question":"Was ist Sukzession in der Ökologie?","options":["Ein Gleichgewichtszustand","Die gerichtete zeitliche Abfolge von Lebensgemeinschaften auf einem Standort bis zum Klimax (z.B. Rohboden → Pionierpflanzen → Wald)","Populationsschwankungen","Migration von Arten"],"correct":1,"explanation":"Primärsukzession: unbesiedelter Boden. Sekundärsukzession: nach Störung (Waldbrand). Klimaxgesellschaft: stabiles Endstadium (z.B. Buchenwald in Mitteleuropa).","topic":"Ökologie"},
-  {"question":"Was ist Biodiversität?","options":["Die Zahl der Pflanzenarten","Die Vielfalt des Lebens auf drei Ebenen: genetische Vielfalt, Artenvielfalt, Ökosystemvielfalt","Nur die Säugetiervielfalt","Die Anzahl aller Individuen"],"correct":1,"explanation":"Biodiversität ist wichtig für Ökosystemstabilität und -leistungen. Derzeit 6. Massenaussterben durch Habitatverlust, Klimawandel, invasive Arten, Übernutzung.","topic":"Ökologie"},
-  {"question":"Was ist Kompartimentierung in der Zelle?","options":["Die Teilung des Zellkerns","Die räumliche Trennung verschiedener Stoffwechselprozesse durch Membranen in Organellen – ermöglicht gleichzeitig ablaufende, unvereinbare Reaktionen","Die Zellwand","Die Zellform"],"correct":1,"explanation":"Kompartimentierung: z.B. Lysosom (pH 5, saure Hydrolasen) isoliert von Cytoplasma (pH 7). Eukaryoten deutlich stärker kompartimentiert als Prokaryoten.","topic":"Zellbiologie"},
-  {"question":"Was ist die Endosymbiontentheorie?","options":["Theorie über Parasiten","Theorie, dass Mitochondrien und Chloroplasten aus ehemals freilebenden Bakterien entstanden, die von Wirtszellen aufgenommen wurden (Lynn Margulis)","Theorie der Zellkernentwicklung","Theorie über Viren"],"correct":1,"explanation":"Belege: eigene DNA (ringförmig wie Bakterien), eigene Ribosomen (70S), Doppelmembran, binäre Teilung unabhängig.","topic":"Zellbiologie"},
-  {"question":"Was ist ein Chloroplast?","options":["Ein Mitochondrium in Pflanzen","Ein Organell in Pflanzenzellen, das Fotosynthese betreibt; enthält Thylakoide (Lichtreaktion) und Stroma (Calvin-Zyklus); eigene DNA","Ein Zellkern in Algen","Ein Ribosomenkomplex"],"correct":1,"explanation":"Chloroplasten: grüne Farbe durch Chlorophyll a/b in Thylakoidmembranen. Pigmente absorbieren Rot und Blau, reflektieren Grün.","topic":"Zellbiologie"},
-  {"question":"Was ist Glykolyse?","options":["Abbau von Fetten","Anaerober Abbau von Glucose (6C) zu zwei Pyruvat-Molekülen (3C) im Cytoplasma; Nettogewinn: 2 ATP + 2 NADH","Aufbau von Glucose","Die Lichtreaktion der Fotosynthese"],"correct":1,"explanation":"Glykolyse: 10 Enzymschritte, erster Schritt der Zellatmung. Auch bei Gärung (Milchsäure- oder Ethanolgärung) wird Glykolyse durchlaufen.","topic":"Zellbiologie"},
-  {"question":"Was sind Lysosomen?","options":["Organellen zur Proteinsynthese","Membranumhüllte Organellen mit sauren Hydrolasen (pH~5): bauen Makromoleküle, alte Organellen und eingedrungene Partikel ab (Autophagie, Phagozytose)","Organellen zur ATP-Synthese","Organellen zur Lipidproduktion"],"correct":1,"explanation":"Lysosomen: 'Recycling-Zentrum der Zelle'. Erbkrankheiten durch Lysosom-Defekte: Tay-Sachs (Gangliosid-Abbaudefekt), Pompe (Glykogen).","topic":"Zellbiologie"},
-  {"question":"Was ist ökologischer Fußabdruck?","options":["Die Fläche eines Ökosystems","Die Gesamtfläche, die ein Mensch oder eine Gesellschaft benötigt, um ihren Ressourcenverbrauch und ihre Abfälle aufzunehmen","Der CO₂-Ausstoß allein","Die Biodiversität eines Gebiets"],"correct":1,"explanation":"Ökologischer Fußabdruck (Wackernagel/Rees): Verbrauch wird in Hektar 'biologisch produktiver Fläche' umgerechnet. Deutschland: ca. 4,9 gha/Kopf (nachhaltig wären ~1,7 gha).","topic":"Ökologie"},
-  {"question":"Was ist der Stickstoffkreislauf?","options":["Nur die Photosynthese","Der Kreislauf des Stickstoffs: N₂ (Luft) → Fixierung (Bakterien/Blitz/Haber-Bosch) → NH₃/NH₄⁺ → Nitrit → Nitrat (Pflanzen) → organisch → Denitrifikation → N₂","Nur die Nitrifikation","Nur der Abbau von Proteinen"],"correct":1,"explanation":"N-Fixierung: Rhizobium (Leguminosen), Blaugrünalgen. Nitrifikation: Nitrosomonas (NH₄⁺→NO₂⁻), Nitrobacter (NO₂⁻→NO₃⁻). Denitrifikation: Pseudomonas.","topic":"Ökologie"},
-  {"question":"Was ist interspecifische Konkurrenz?","options":["Konkurrenz innerhalb einer Art","Konkurrenz zwischen verschiedenen Arten um dieselbe Ressource – führt entweder zu Koexistenz (Nischendifferenzierung) oder Verdrängung (Konkurrenzausschluss)","Symbiose zweier Arten","Räuber-Beute-Beziehung"],"correct":1,"explanation":"Gause-Prinzip: Zwei Arten mit identischer Nische können nicht dauerhaft koexistieren – eine verdrängt die andere. Nischendifferenzierung ermöglicht Koexistenz.","topic":"Ökologie"},
-  {"question":"Was ist Parasitismus?","options":["Eine Beziehung, die für beide nützlich ist","Eine Wechselbeziehung, bei der ein Organismus (Parasit) auf Kosten des Wirts lebt – Wirt wird geschwächt, aber meist nicht sofort getötet","Symbiose","Kommensalismus"],"correct":1,"explanation":"Parasiten: Zecken, Bandwürmer, Malaria-Erreger (Plasmodium). Koevolution Parasit/Wirt führt zu Wettrüsten (arms race).","topic":"Ökologie"},
-  {"question":"Was ist das Gesetz des Minimums (Liebig)?","options":["Das Wachstum wird durch den Faktor bestimmt, von dem es am meisten gibt","Das Wachstum wird durch den im Minimum vorhandenen Wachstumsfaktor (Limitierungsfaktor) bestimmt – der 'Engpass' begrenzt die Produktivität","Alle Faktoren sind gleich wichtig","Wachstum ist unbegrenzt wenn Wasser vorhanden"],"correct":1,"explanation":"Liebigisches Minimumgesetz: z.B. fehlendes Phosphor stoppt Pflanzenwachstum auch wenn N und K ausreichend. Übertragen auf Ökosysteme und Landwirtschaft.","topic":"Ökologie"},
-  {"question":"Was ist biologische Schädlingsbekämpfung?","options":["Einsatz von Pestiziden","Nutzung natürlicher Feinde, Parasiten oder Krankheiten zur Regulierung von Schädlingspopulationen ohne chemische Pestizide","Gentechnik gegen Schädlinge","Mechanische Bekämpfung"],"correct":1,"explanation":"Beispiel: Marienkäfer gegen Blattläuse, Schlupfwespen gegen Raupen. Vorteile: keine Pestizid-Rückstände, keine Resistenzbildung, Ökosystem-schonend.","topic":"Ökologie"},
-  {"question":"Was ist Biomagnifikation?","options":["Wachstum von Biomasse","Anreicherung von schwer abbaubaren Substanzen (z.B. DDT, Quecksilber) in der Nahrungskette – Konzentration steigt mit jeder trophischen Stufe","Abbau organischer Substanz","Zunahme der Artenvielfalt"],"correct":1,"explanation":"Biomagnifikation: DDT-Konzentration in Spitzenprädatoren (Adler, Mensch) ist 10⁶× höher als im Wasser. Grund für Rückgang von Adlerpopulationen in den 1960ern.","topic":"Ökologie"},
-  {"question":"Was ist ein Ribosom?","options":["Ein Membranorganell","Ein Proteinkomplex (rRNA + Proteine) der Proteinsynthese; findet sich in allen Zellen; eukaryot.: 80S (am ER oder frei); prokaryot.: 70S","Ein Lysosom-Enzym","Ein Teil des Golgi-Apparats"],"correct":1,"explanation":"Ribosomen: 'Proteinfabrik'. rRNA katalysiert Peptidbindungsbildung (Ribozym). Antibiotika können prokaryotische 70S-Ribosomen hemmen (Tetracyclin, Streptomycin).","topic":"Zellbiologie"},
-  {"question":"Was ist der Calvin-Zyklus?","options":["Die Lichtreaktion der Fotosynthese","Der lichtunabhängige Teil der Fotosynthese (Dunkelreaktion) im Stroma: CO₂ wird mit ATP und NADPH zu Glucose (G3P) fixiert – via RuBisCO","Die Glykolyse","Der Citratzyklus"],"correct":1,"explanation":"Calvin-Zyklus: CO₂ + RuBP (5C) → 2×3PGA (3C) → G3P (Glucose-Vorstufe). Drei Umdrehungen pro Glucose-Äquivalent.","topic":"Zellbiologie"},
-  {"question":"Was ist eine invasive Art?","options":["Eine ausgestorbene Art","Eine nicht-heimische Art, die in einem neuen Ökosystem eingebürgert wird und dort heimische Arten verdrängt oder Ökosystemleistungen beeinträchtigt","Eine seltene endemische Art","Eine migratorische Art"],"correct":1,"explanation":"Beispiele: Nilbarsch im Victoriasee (Fischsterben), Signalkrebs in Europa (verdrängt Edelkrebs). Einschleppung oft durch Handel, Schiffsbalastwasser, Aquaristik.","topic":"Ökologie"},
-  {"question":"Was ist Eutrophierung?","options":["Verarmung eines Gewässers","Überdüngung eines Gewässers durch Stickstoff und Phosphor → Algenblüte → O₂-Mangel durch Algenabbau → Fischsterben","Versalzung von Böden","Erhöhung der Artenvielfalt"],"correct":1,"explanation":"Eutrophierung: landwirtschaftliche Einträge (Gülle, Dünger) gelangen ins Wasser. Sauerstoffzehrung beim bakteriellen Abbau der Algenmasse (Faulschlammbildung).","topic":"Ökologie"},
-  {"question":"Was ist ökologische Toleranz?","options":["Die Fähigkeit von Pflanzen zu wachsen","Der Bereich von Umweltfaktoren (z.B. Temperatur, pH, Feuchte), in dem ein Organismus überleben und sich reproduzieren kann; Optimum in der Mitte","Die maximale Populationsgröße","Die Resistenz gegen Parasiten"],"correct":1,"explanation":"Toleranzkurve (Gauß-Kurve): Organismus hat Minimum, Optimum und Maximum für jeden Faktor. Stenöke Arten: enge Toleranz. Euryöke Arten: breite Toleranz.","topic":"Ökologie"},
-  {"question":"Was ist die Kapazitätsgrenze K einer Population?","options":["Die minimale Populationsgröße","Die maximale Populationsgröße, die ein Ökosystem dauerhaft tragen kann; beim logistischen Wachstum nähert sich die Population K asymptotisch an","Die Wachstumsrate","Die Sterberate"],"correct":1,"explanation":"Logistisches Wachstum: dN/dt = rN(1–N/K). Für N<<K: exponentielles Wachstum; für N→K: Wachstum verlangsamt sich bis K.","topic":"Ökologie"},
-  {"question":"Was ist epigenetische Regulation?","options":["Mutationen der DNA-Sequenz","Veränderungen der Genaktivität ohne Änderung der DNA-Sequenz (z.B. DNA-Methylierung, Histon-Modifikation) – vererbbar, reversibel","Rekombination der Gene","Transkription von mRNA"],"correct":1,"explanation":"Epigenetik: Umwelteinflüsse (Ernährung, Stress) können Genexpression steuern. Manche epigenetischen Muster werden an Nachkommen weitergegeben (transgenerationale Epigenetik).","topic":"Genetik"},
-  {"question":"Was ist RNA-Interferenz (RNAi)?","options":["Eine Form der DNA-Replikation","Ein zellulärer Mechanismus, bei dem kurze doppelsträngige RNA (siRNA/miRNA) die Genexpression posttranskriptional hemmt – schützt gegen Viren, reguliert Gene","Eine Proteinmodifikation","Eine Form der Transduktion"],"correct":1,"explanation":"RNAi: siRNA bindet mRNA-Ziel → Abbau oder Translationsstop. Biotechnologische Anwendung: Gene gezielt ausschalten (Knockdown), Therapieansätze.","topic":"Genetik"}
+  {
+    "question": "Was ist eine eukaryotische Zelle?",
+    "options": [
+      "Eine Zelle ohne Zellkern",
+      "Eine Zelle mit echtem Zellkern (durch Membran begrenzt) und Membranorganellen – Tiere, Pflanzen, Pilze, Protisten",
+      "Eine Bakterienzelle",
+      "Eine Virushülle"
+    ],
+    "correct": 1,
+    "explanation": "Eukaryoten: Zellkern, Mitochondrien, ER, Golgi-Apparat, Ribosomen am ER. Prokaryoten (Bakterien) haben keinen Membran-umhüllten Kern.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist die Funktion der Mitochondrien?",
+    "options": [
+      "Proteinbiosynthese",
+      "ATP-Produktion durch Zellatmung (oxidative Phosphorylierung); 'Kraftwerke der Zelle'",
+      "Lipidsynthese",
+      "Zellkommunikation"
+    ],
+    "correct": 1,
+    "explanation": "Mitochondrien: innere Membran (Cristae) trägt Atmungskette und ATP-Synthase. Eigene DNA → Endosymbiontentheorie (ehemals Bakterium).",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist die Funktion des endoplasmatischen Retikulums (ER)?",
+    "options": [
+      "ATP-Produktion",
+      "Raues ER: Proteinsynthese und -transport (Ribosomen auf Membran); Glattes ER: Lipidsynthese, Entgiftung",
+      "DNA-Replikation",
+      "Zellteilung"
+    ],
+    "correct": 1,
+    "explanation": "Raues ER: Ribosomen synthetisieren Sekretionsproteine. Glattes ER: Membranlipide, Steroidhormone, Calciumspeicher.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist der Golgi-Apparat?",
+    "options": [
+      "Die Energiezentrale der Zelle",
+      "Stapel von Membransäcken (Zisternen) zur Sortierung, Modifikation und Verpackung von Proteinen für den Transport zur Zellmembran oder Lysosom",
+      "Der Ort der DNA",
+      "Ein Proteinkomplex in der Mitochondrienmembran"
+    ],
+    "correct": 1,
+    "explanation": "Golgi-Apparat: 'Postamt der Zelle'. Proteine kommen vom ER (cis), werden modifiziert (trans) und in Vesikel verpackt zur Zielregion geschickt.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist Osmose?",
+    "options": [
+      "Aktiver Transport von Ionen",
+      "Die Diffusion von Wasser durch eine selektiv permeable Membran vom Bereich niedriger Konzentration gelöster Stoffe zu höherer Konzentration",
+      "Transport gegen den Konzentrationsgradienten",
+      "Diffusion von Ionen"
+    ],
+    "correct": 1,
+    "explanation": "Osmose: Wasser wandert vom hypotonischen (weniger Salz) in den hypertonischen (mehr Salz) Bereich. In Pflanzenzellen: Turgordruck, Plasmolyse bei Wassermangel.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist aktiver Transport?",
+    "options": [
+      "Diffusion durch die Membran",
+      "Transport von Stoffen gegen den Konzentrationsgradienten unter ATP-Verbrauch – z.B. Natrium-Kalium-Pumpe",
+      "Osmose durch Proteine",
+      "Erleichterte Diffusion"
+    ],
+    "correct": 1,
+    "explanation": "Na⁺/K⁺-ATPase: pumpt 3 Na⁺ raus und 2 K⁺ rein pro ATP – erzeugt Membranpotenzial, wichtig für Nerven und Muskeln.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist Mitose?",
+    "options": [
+      "Geschlechtliche Zellteilung",
+      "Normale Zellteilung: eine Mutterzelle → zwei genetisch identische Tochterzellen; Phasen: Prophase, Metaphase, Anaphase, Telophase + Zytokinese",
+      "Bildung von Gameten",
+      "Verschmelzung von Zellen"
+    ],
+    "correct": 1,
+    "explanation": "Mitose: Chromosomen verdoppeln (S-Phase) und werden gleichmäßig auf Tochterzellen verteilt. Wichtig für Wachstum und Reparatur. Kein Chromosomensatz-Wechsel.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist Apoptose?",
+    "options": [
+      "Unkontrollierter Zelltod (Nekrose)",
+      "Programmierter Zelltod: geordneter Abbau der Zelle durch zelleigene Enzyme – wichtig für Entwicklung (Fingerbildung) und Immunabwehr",
+      "Zellteilung",
+      "Mutation"
+    ],
+    "correct": 1,
+    "explanation": "Apoptose: Zelle schrumpft, DNA wird fragmentiert, Membran bleibt intakt – keine Entzündungsreaktion. Störung → Krebs (Apoptoseausfall) oder Autoimmunerkrankung.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist ein Ökosystem?",
+    "options": [
+      "Eine Tierart und ihr Lebensraum",
+      "Die Gesamtheit aller Lebewesen (Biozönose) eines Lebensraums (Biotop) und ihre abiotischen Umweltfaktoren sowie die Wechselwirkungen",
+      "Nur die Pflanzen eines Gebiets",
+      "Eine Nahrungskette"
+    ],
+    "correct": 1,
+    "explanation": "Ökosystem = Biotop (Lebensraum) + Biozönose (Lebensgemeinschaft) + Wechselwirkungen. Energie- und Stoffkreisläufe verbinden alle Komponenten.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist eine Nahrungskette?",
+    "options": [
+      "Eine Symbiose zweier Arten",
+      "Eine lineare Reihe von Organismen, bei der jeder den vorherigen frisst: Produzent → Primärkonsument → Sekundärkonsument → Tertiärkonsument",
+      "Ein Räuber-Beute-Zyklus",
+      "Ein Parasit-Wirt-Verhältnis"
+    ],
+    "correct": 1,
+    "explanation": "Energiefluss in Nahrungsketten: nur ~10% der Energie gelangt je Stufe weiter (ökologische Pyramide). Nahrungsnetze sind realistischer (mehrere Verbindungen).",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was sind Produzenten im Ökosystem?",
+    "options": [
+      "Tiere, die andere fressen",
+      "Autotrophe Organismen (Pflanzen, Cyanobakterien), die durch Fotosynthese organische Stoffe aus anorganischen aufbauen – Basis aller Nahrungsketten",
+      "Zersetzer (Destruenten)",
+      "Sekundärkonsumenten"
+    ],
+    "correct": 1,
+    "explanation": "Produzenten fixieren Sonnenenergie; Konsumenten (Herbivore, Karnivore) geben Energie weiter; Destruenten (Pilze, Bakterien) zersetzen tote Biomasse.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist der Kohlenstoffkreislauf?",
+    "options": [
+      "Nur die Fotosynthese",
+      "Der globale Kreislauf des Kohlenstoffs durch Fotosynthese (CO₂ → organisch), Zellatmung (organisch → CO₂), Verbrennung, Verwitterung und Ozean-Austausch",
+      "Nur die Verbrennung fossiler Brennstoffe",
+      "Nur der Stickstoffkreislauf"
+    ],
+    "correct": 1,
+    "explanation": "Anthropogene Störung: Verbrennung fossiler Brennstoffe erhöht CO₂-Konzentration → Treibhauseffekt. C-Senken: Wälder, Ozeane.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist Fotosynthese (Gleichung)?",
+    "options": [
+      "6CO₂ + 6H₂O + Licht → C₆H₁₂O₆ + 6O₂",
+      "6O₂ + C₆H₁₂O₆ → 6CO₂ + 6H₂O + Energie",
+      "CO₂ + H₂O → CH₄ + O₂",
+      "C₆H₁₂O₆ → 6CO₂ + 6H₂O"
+    ],
+    "correct": 0,
+    "explanation": "Fotosynthese: Lichtreaktion (Chloroplastenthylakoide) + Dunkelreaktion/Calvin-Zyklus (Stroma). Sauerstoff ist Nebenprodukt der Wasserspaltung (Photolyse).",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist Zellatmung (aerob)?",
+    "options": [
+      "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP",
+      "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂",
+      "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂",
+      "Nur Glykolyse"
+    ],
+    "correct": 0,
+    "explanation": "Aerobe Atmung: Glykolyse (Cytoplasma) → Pyruvat-Decarboxylierung → Citratzyklus → Atmungskette. Ertrag: ~30–32 ATP pro Glucose.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist das Räuber-Beute-Verhältnis?",
+    "options": [
+      "Eine Symbiose",
+      "Eine Wechselbeziehung, bei der Räuberbestand und Beutepopulation zyklisch schwanken (Volterra-Lotka-Gleichungen): mehr Beute → mehr Räuber → weniger Beute → weniger Räuber",
+      "Eine Parasitenbeziehung",
+      "Ein Konkurrenzprinzip"
+    ],
+    "correct": 1,
+    "explanation": "Klassisches Beispiel: Schneehase und Kanadischer Luchs – Populationen schwingen mit leichtem Versatz. Regulation ohne Eingriff des Menschen.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist ökologische Nische?",
+    "options": [
+      "Der Lebensraum einer Art",
+      "Die Gesamtheit aller biotischen und abiotischen Faktoren, die eine Art zum Überleben benötigt (Fundamental- vs. Realisierte Nische)",
+      "Nur die Ernährung einer Art",
+      "Der geographische Verbreitungsbereich"
+    ],
+    "correct": 1,
+    "explanation": "Fundamentalnische: theoretisch möglicher Bereich. Realisierte Nische: tatsächlich genutzt unter Konkurrenzdruck. Konkurrenzausschlussprinzip (Gause): keine zwei Arten können exakt dieselbe Nische belegen.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist Sukzession in der Ökologie?",
+    "options": [
+      "Ein Gleichgewichtszustand",
+      "Die gerichtete zeitliche Abfolge von Lebensgemeinschaften auf einem Standort bis zum Klimax (z.B. Rohboden → Pionierpflanzen → Wald)",
+      "Populationsschwankungen",
+      "Migration von Arten"
+    ],
+    "correct": 1,
+    "explanation": "Primärsukzession: unbesiedelter Boden. Sekundärsukzession: nach Störung (Waldbrand). Klimaxgesellschaft: stabiles Endstadium (z.B. Buchenwald in Mitteleuropa).",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist Biodiversität?",
+    "options": [
+      "Die Zahl der Pflanzenarten",
+      "Die Vielfalt des Lebens auf drei Ebenen: genetische Vielfalt, Artenvielfalt, Ökosystemvielfalt",
+      "Nur die Säugetiervielfalt",
+      "Die Anzahl aller Individuen"
+    ],
+    "correct": 1,
+    "explanation": "Biodiversität ist wichtig für Ökosystemstabilität und -leistungen. Derzeit 6. Massenaussterben durch Habitatverlust, Klimawandel, invasive Arten, Übernutzung.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist Kompartimentierung in der Zelle?",
+    "options": [
+      "Die Teilung des Zellkerns",
+      "Die räumliche Trennung verschiedener Stoffwechselprozesse durch Membranen in Organellen – ermöglicht gleichzeitig ablaufende, unvereinbare Reaktionen",
+      "Die Zellwand",
+      "Die Zellform"
+    ],
+    "correct": 1,
+    "explanation": "Kompartimentierung: z.B. Lysosom (pH 5, saure Hydrolasen) isoliert von Cytoplasma (pH 7). Eukaryoten deutlich stärker kompartimentiert als Prokaryoten.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist die Endosymbiontentheorie?",
+    "options": [
+      "Theorie über Parasiten",
+      "Theorie, dass Mitochondrien und Chloroplasten aus ehemals freilebenden Bakterien entstanden, die von Wirtszellen aufgenommen wurden (Lynn Margulis)",
+      "Theorie der Zellkernentwicklung",
+      "Theorie über Viren"
+    ],
+    "correct": 1,
+    "explanation": "Belege: eigene DNA (ringförmig wie Bakterien), eigene Ribosomen (70S), Doppelmembran, binäre Teilung unabhängig.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist ein Chloroplast?",
+    "options": [
+      "Ein Mitochondrium in Pflanzen",
+      "Ein Organell in Pflanzenzellen, das Fotosynthese betreibt; enthält Thylakoide (Lichtreaktion) und Stroma (Calvin-Zyklus); eigene DNA",
+      "Ein Zellkern in Algen",
+      "Ein Ribosomenkomplex"
+    ],
+    "correct": 1,
+    "explanation": "Chloroplasten: grüne Farbe durch Chlorophyll a/b in Thylakoidmembranen. Pigmente absorbieren Rot und Blau, reflektieren Grün.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist Glykolyse?",
+    "options": [
+      "Abbau von Fetten",
+      "Anaerober Abbau von Glucose (6C) zu zwei Pyruvat-Molekülen (3C) im Cytoplasma; Nettogewinn: 2 ATP + 2 NADH",
+      "Aufbau von Glucose",
+      "Die Lichtreaktion der Fotosynthese"
+    ],
+    "correct": 1,
+    "explanation": "Glykolyse: 10 Enzymschritte, erster Schritt der Zellatmung. Auch bei Gärung (Milchsäure- oder Ethanolgärung) wird Glykolyse durchlaufen.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was sind Lysosomen?",
+    "options": [
+      "Organellen zur Proteinsynthese",
+      "Membranumhüllte Organellen mit sauren Hydrolasen (pH~5): bauen Makromoleküle, alte Organellen und eingedrungene Partikel ab (Autophagie, Phagozytose)",
+      "Organellen zur ATP-Synthese",
+      "Organellen zur Lipidproduktion"
+    ],
+    "correct": 1,
+    "explanation": "Lysosomen: 'Recycling-Zentrum der Zelle'. Erbkrankheiten durch Lysosom-Defekte: Tay-Sachs (Gangliosid-Abbaudefekt), Pompe (Glykogen).",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist ökologischer Fußabdruck?",
+    "options": [
+      "Die Fläche eines Ökosystems",
+      "Die Gesamtfläche, die ein Mensch oder eine Gesellschaft benötigt, um ihren Ressourcenverbrauch und ihre Abfälle aufzunehmen",
+      "Der CO₂-Ausstoß allein",
+      "Die Biodiversität eines Gebiets"
+    ],
+    "correct": 1,
+    "explanation": "Ökologischer Fußabdruck (Wackernagel/Rees): Verbrauch wird in Hektar 'biologisch produktiver Fläche' umgerechnet. Deutschland: ca. 4,9 gha/Kopf (nachhaltig wären ~1,7 gha).",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist der Stickstoffkreislauf?",
+    "options": [
+      "Nur die Photosynthese",
+      "Der Kreislauf des Stickstoffs: N₂ (Luft) → Fixierung (Bakterien/Blitz/Haber-Bosch) → NH₃/NH₄⁺ → Nitrit → Nitrat (Pflanzen) → organisch → Denitrifikation → N₂",
+      "Nur die Nitrifikation",
+      "Nur der Abbau von Proteinen"
+    ],
+    "correct": 1,
+    "explanation": "N-Fixierung: Rhizobium (Leguminosen), Blaugrünalgen. Nitrifikation: Nitrosomonas (NH₄⁺→NO₂⁻), Nitrobacter (NO₂⁻→NO₃⁻). Denitrifikation: Pseudomonas.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist interspecifische Konkurrenz?",
+    "options": [
+      "Konkurrenz innerhalb einer Art",
+      "Konkurrenz zwischen verschiedenen Arten um dieselbe Ressource – führt entweder zu Koexistenz (Nischendifferenzierung) oder Verdrängung (Konkurrenzausschluss)",
+      "Symbiose zweier Arten",
+      "Räuber-Beute-Beziehung"
+    ],
+    "correct": 1,
+    "explanation": "Gause-Prinzip: Zwei Arten mit identischer Nische können nicht dauerhaft koexistieren – eine verdrängt die andere. Nischendifferenzierung ermöglicht Koexistenz.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist Parasitismus?",
+    "options": [
+      "Eine Beziehung, die für beide nützlich ist",
+      "Eine Wechselbeziehung, bei der ein Organismus (Parasit) auf Kosten des Wirts lebt – Wirt wird geschwächt, aber meist nicht sofort getötet",
+      "Symbiose",
+      "Kommensalismus"
+    ],
+    "correct": 1,
+    "explanation": "Parasiten: Zecken, Bandwürmer, Malaria-Erreger (Plasmodium). Koevolution Parasit/Wirt führt zu Wettrüsten (arms race).",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist das Gesetz des Minimums (Liebig)?",
+    "options": [
+      "Das Wachstum wird durch den Faktor bestimmt, von dem es am meisten gibt",
+      "Das Wachstum wird durch den im Minimum vorhandenen Wachstumsfaktor (Limitierungsfaktor) bestimmt – der 'Engpass' begrenzt die Produktivität",
+      "Alle Faktoren sind gleich wichtig",
+      "Wachstum ist unbegrenzt wenn Wasser vorhanden"
+    ],
+    "correct": 1,
+    "explanation": "Liebigisches Minimumgesetz: z.B. fehlendes Phosphor stoppt Pflanzenwachstum auch wenn N und K ausreichend. Übertragen auf Ökosysteme und Landwirtschaft.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist biologische Schädlingsbekämpfung?",
+    "options": [
+      "Einsatz von Pestiziden",
+      "Nutzung natürlicher Feinde, Parasiten oder Krankheiten zur Regulierung von Schädlingspopulationen ohne chemische Pestizide",
+      "Gentechnik gegen Schädlinge",
+      "Mechanische Bekämpfung"
+    ],
+    "correct": 1,
+    "explanation": "Beispiel: Marienkäfer gegen Blattläuse, Schlupfwespen gegen Raupen. Vorteile: keine Pestizid-Rückstände, keine Resistenzbildung, Ökosystem-schonend.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist Biomagnifikation?",
+    "options": [
+      "Wachstum von Biomasse",
+      "Anreicherung von schwer abbaubaren Substanzen (z.B. DDT, Quecksilber) in der Nahrungskette – Konzentration steigt mit jeder trophischen Stufe",
+      "Abbau organischer Substanz",
+      "Zunahme der Artenvielfalt"
+    ],
+    "correct": 1,
+    "explanation": "Biomagnifikation: DDT-Konzentration in Spitzenprädatoren (Adler, Mensch) ist 10⁶× höher als im Wasser. Grund für Rückgang von Adlerpopulationen in den 1960ern.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist ein Ribosom?",
+    "options": [
+      "Ein Membranorganell",
+      "Ein Proteinkomplex (rRNA + Proteine) der Proteinsynthese; findet sich in allen Zellen; eukaryot.: 80S (am ER oder frei); prokaryot.: 70S",
+      "Ein Lysosom-Enzym",
+      "Ein Teil des Golgi-Apparats"
+    ],
+    "correct": 1,
+    "explanation": "Ribosomen: 'Proteinfabrik'. rRNA katalysiert Peptidbindungsbildung (Ribozym). Antibiotika können prokaryotische 70S-Ribosomen hemmen (Tetracyclin, Streptomycin).",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist der Calvin-Zyklus?",
+    "options": [
+      "Die Lichtreaktion der Fotosynthese",
+      "Der lichtunabhängige Teil der Fotosynthese (Dunkelreaktion) im Stroma: CO₂ wird mit ATP und NADPH zu Glucose (G3P) fixiert – via RuBisCO",
+      "Die Glykolyse",
+      "Der Citratzyklus"
+    ],
+    "correct": 1,
+    "explanation": "Calvin-Zyklus: CO₂ + RuBP (5C) → 2×3PGA (3C) → G3P (Glucose-Vorstufe). Drei Umdrehungen pro Glucose-Äquivalent.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was ist eine invasive Art?",
+    "options": [
+      "Eine ausgestorbene Art",
+      "Eine nicht-heimische Art, die in einem neuen Ökosystem eingebürgert wird und dort heimische Arten verdrängt oder Ökosystemleistungen beeinträchtigt",
+      "Eine seltene endemische Art",
+      "Eine migratorische Art"
+    ],
+    "correct": 1,
+    "explanation": "Beispiele: Nilbarsch im Victoriasee (Fischsterben), Signalkrebs in Europa (verdrängt Edelkrebs). Einschleppung oft durch Handel, Schiffsbalastwasser, Aquaristik.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist Eutrophierung?",
+    "options": [
+      "Verarmung eines Gewässers",
+      "Überdüngung eines Gewässers durch Stickstoff und Phosphor → Algenblüte → O₂-Mangel durch Algenabbau → Fischsterben",
+      "Versalzung von Böden",
+      "Erhöhung der Artenvielfalt"
+    ],
+    "correct": 1,
+    "explanation": "Eutrophierung: landwirtschaftliche Einträge (Gülle, Dünger) gelangen ins Wasser. Sauerstoffzehrung beim bakteriellen Abbau der Algenmasse (Faulschlammbildung).",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist ökologische Toleranz?",
+    "options": [
+      "Die Fähigkeit von Pflanzen zu wachsen",
+      "Der Bereich von Umweltfaktoren (z.B. Temperatur, pH, Feuchte), in dem ein Organismus überleben und sich reproduzieren kann; Optimum in der Mitte",
+      "Die maximale Populationsgröße",
+      "Die Resistenz gegen Parasiten"
+    ],
+    "correct": 1,
+    "explanation": "Toleranzkurve (Gauß-Kurve): Organismus hat Minimum, Optimum und Maximum für jeden Faktor. Stenöke Arten: enge Toleranz. Euryöke Arten: breite Toleranz.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist die Kapazitätsgrenze K einer Population?",
+    "options": [
+      "Die minimale Populationsgröße",
+      "Die maximale Populationsgröße, die ein Ökosystem dauerhaft tragen kann; beim logistischen Wachstum nähert sich die Population K asymptotisch an",
+      "Die Wachstumsrate",
+      "Die Sterberate"
+    ],
+    "correct": 1,
+    "explanation": "Logistisches Wachstum: dN/dt = rN(1–N/K). Für N<<K: exponentielles Wachstum; für N→K: Wachstum verlangsamt sich bis K.",
+    "topic": "Ökologie"
+  },
+  {
+    "question": "Was ist epigenetische Regulation?",
+    "options": [
+      "Mutationen der DNA-Sequenz",
+      "Veränderungen der Genaktivität ohne Änderung der DNA-Sequenz (z.B. DNA-Methylierung, Histon-Modifikation) – vererbbar, reversibel",
+      "Rekombination der Gene",
+      "Transkription von mRNA"
+    ],
+    "correct": 1,
+    "explanation": "Epigenetik: Umwelteinflüsse (Ernährung, Stress) können Genexpression steuern. Manche epigenetischen Muster werden an Nachkommen weitergegeben (transgenerationale Epigenetik).",
+    "topic": "Genetik"
+  },
+  {
+    "question": "Was ist RNA-Interferenz (RNAi)?",
+    "options": [
+      "Eine Form der DNA-Replikation",
+      "Ein zellulärer Mechanismus, bei dem kurze doppelsträngige RNA (siRNA/miRNA) die Genexpression posttranskriptional hemmt – schützt gegen Viren, reguliert Gene",
+      "Eine Proteinmodifikation",
+      "Eine Form der Transduktion"
+    ],
+    "correct": 1,
+    "explanation": "RNAi: siRNA bindet mRNA-Ziel → Abbau oder Translationsstop. Biotechnologische Anwendung: Gene gezielt ausschalten (Knockdown), Therapieansätze.",
+    "topic": "Genetik"
+  },
+  {
+    "question": "Was ist Apoptose?",
+    "options": [
+      "Zellteilung",
+      "Programmierter Zelltod: genetisch gesteuerter, geordneter Abbau von Zellen ohne Entzuendung. Notwendig in Entwicklung (z.B. Fingerausbildung beim Embryo) und Krebsabwehr. Gegenteil: Nekrose (unkontrolliert).",
+      "Zellwachstum",
+      "Zelldifferenzierung"
+    ],
+    "correct": 1,
+    "explanation": "Apoptose: griechisch apo = ab, ptosis = Fall. Aktivierung durch Caspasen. Zelle schrumpft, DNA fragmentiert, Zellreste werden von Makrophagen abgeraeumt. Deregulierung: zu wenig Apoptose -> Krebs; zu viel -> neurodegenerative Erkrankungen.",
+    "topic": "Zellbiologie"
+  },
+  {
+    "question": "Was sind sekundaere Pflanzenstoffe?",
+    "options": [
+      "Chlorophyll und Carotine",
+      "Organische Verbindungen in Pflanzen ohne direkte Funktion im Primaerstoffwechsel: Alkaloide (Koffein, Morphin), Flavonoide, Terpene, Phenole. Schutz gegen Frassfeinde, UV, Pathogene; oft medizinisch genutzt.",
+      "Proteine und Fette",
+      "Staerke und Zucker"
+    ],
+    "correct": 1,
+    "explanation": "Sekundaere Pflanzenstoffe: Bitterstoffe (Frassschutz), Duftstoffe (Bestaeuber anlocken), Farbstoffe (Tiersignale), Toxine (Verteidigung). Mensch nutzt sie: Aspirin aus Weidenrinde, Koffein aus Kaffeepflanze, Penicillin aus Schimmelpilz.",
+    "topic": "Oekologie"
+  }
 ]
