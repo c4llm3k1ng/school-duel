@@ -1,0 +1,494 @@
+[
+  {
+    "question": "Was ist 4,7 + 3,8?",
+    "options": [
+      "7,5",
+      "8,5",
+      "8,3",
+      "7,15"
+    ],
+    "correct": 1,
+    "explanation": "4,7 + 3,8 = 8,5. Kommazahlen addiert man wie ganze Zahlen, der Punkt steht untereinander.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 12,6 - 5,9?",
+    "options": [
+      "6,3",
+      "7,3",
+      "6,7",
+      "7,7"
+    ],
+    "correct": 2,
+    "explanation": "12,6 - 5,9 = 6,7. Man rechnet: 12,6 - 6,0 = 6,6; dann +0,1 = 6,7.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 0,4 x 0,3?",
+    "options": [
+      "1,2",
+      "0,12",
+      "0,012",
+      "12"
+    ],
+    "correct": 1,
+    "explanation": "0,4 x 0,3 = 0,12. Beide Faktoren haben je 1 Nachkommastelle, also hat das Produkt 2 Nachkommastellen: 4x3=12, ergibt 0,12.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 6,4 : 0,8?",
+    "options": [
+      "0,8",
+      "8",
+      "0,08",
+      "80"
+    ],
+    "correct": 1,
+    "explanation": "6,4 : 0,8 = 8. Man multipliziert Dividend und Divisor mit 10: 64 : 8 = 8.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Wie schreibt man 3/4 als Dezimalzahl?",
+    "options": [
+      "0,34",
+      "0,43",
+      "0,75",
+      "3,4"
+    ],
+    "correct": 2,
+    "explanation": "3/4 = 3 geteilt durch 4 = 0,75. Alternativ: 3/4 = 75/100 = 0,75.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Wie schreibt man 0,6 als Bruch?",
+    "options": [
+      "6/100",
+      "6/10",
+      "1/6",
+      "3/5"
+    ],
+    "correct": 3,
+    "explanation": "0,6 = 6/10 = 3/5 (gek&uuml;rzt). Beide Zahlen durch 2 teilen ergibt den gek&uuml;rzten Bruch.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist der groesste gemeinsame Teiler (ggT) von 12 und 18?",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "12"
+    ],
+    "correct": 1,
+    "explanation": "Teiler von 12: 1,2,3,4,6,12. Teiler von 18: 1,2,3,6,9,18. Groesster gemeinsamer Teiler: 6.",
+    "topic": "Teilbarkeit"
+  },
+  {
+    "question": "Was ist das kleinste gemeinsame Vielfache (kgV) von 4 und 6?",
+    "options": [
+      "8",
+      "12",
+      "24",
+      "2"
+    ],
+    "correct": 1,
+    "explanation": "Vielfache von 4: 4,8,12... Vielfache von 6: 6,12... Kleinstes gemeinsames Vielfaches: 12.",
+    "topic": "Teilbarkeit"
+  },
+  {
+    "question": "Ist 2457 durch 3 teilbar?",
+    "options": [
+      "Nein",
+      "Ja, weil Quersumme 18 durch 3 teilbar ist",
+      "Ja, weil sie durch 9 teilbar ist",
+      "Nein, weil 7 nicht durch 3 teilbar ist"
+    ],
+    "correct": 1,
+    "explanation": "Teilbarkeit durch 3: Quersumme muss durch 3 teilbar sein. 2+4+5+7 = 18, 18:3 = 6. Also ja.",
+    "topic": "Teilbarkeit"
+  },
+  {
+    "question": "Was ist eine Primzahl?",
+    "options": [
+      "Eine Zahl die durch sich selbst teilbar ist",
+      "Eine natuerliche Zahl groesser als 1, die nur durch 1 und sich selbst teilbar ist",
+      "Eine ungerade Zahl",
+      "Eine Zahl mit vielen Teilern"
+    ],
+    "correct": 1,
+    "explanation": "Primzahlen: 2, 3, 5, 7, 11, 13... Achtung: 2 ist die einzige gerade Primzahl. 1 ist keine Primzahl.",
+    "topic": "Primzahlen"
+  },
+  {
+    "question": "Welche der folgenden Zahlen ist KEINE Primzahl?",
+    "options": [
+      "17",
+      "23",
+      "27",
+      "31"
+    ],
+    "correct": 2,
+    "explanation": "27 = 3 x 9 = 3 x 3 x 3. Somit ist 27 durch 3 teilbar und keine Primzahl.",
+    "topic": "Primzahlen"
+  },
+  {
+    "question": "Was ist -3 + (-5)?",
+    "options": [
+      "2",
+      "-2",
+      "-8",
+      "8"
+    ],
+    "correct": 2,
+    "explanation": "-3 + (-5) = -3 - 5 = -8. Negative Zahlen addiert man, indem man den Betrag addiert und das Minuszeichen behalt.",
+    "topic": "Negative Zahlen"
+  },
+  {
+    "question": "Was ist -4 - (-7)?",
+    "options": [
+      "-11",
+      "3",
+      "-3",
+      "11"
+    ],
+    "correct": 1,
+    "explanation": "-4 - (-7) = -4 + 7 = 3. Minus mal Minus ergibt Plus: man subtrahiert eine negative Zahl, indem man sie addiert.",
+    "topic": "Negative Zahlen"
+  },
+  {
+    "question": "Was ist (-3) x (-4)?",
+    "options": [
+      "-12",
+      "12",
+      "-7",
+      "7"
+    ],
+    "correct": 1,
+    "explanation": "(-3) x (-4) = +12. Minus mal Minus ergibt Plus. Generell: zwei negative Faktoren ergeben ein positives Produkt.",
+    "topic": "Negative Zahlen"
+  },
+  {
+    "question": "Was ist (-15) : 3?",
+    "options": [
+      "5",
+      "-5",
+      "45",
+      "-45"
+    ],
+    "correct": 1,
+    "explanation": "(-15) : 3 = -5. Positiv geteilt durch negativ (oder umgekehrt) ergibt negativ.",
+    "topic": "Negative Zahlen"
+  },
+  {
+    "question": "Auf welcher Zahl liegt -3 auf dem Zahlenstrahl?",
+    "options": [
+      "Rechts von 0",
+      "Links von 0, zwischen -4 und -2",
+      "Links von -4",
+      "Auf der 3"
+    ],
+    "correct": 1,
+    "explanation": "Negative Zahlen liegen links von der 0 auf dem Zahlenstrahl. -3 liegt zwischen -4 (links) und -2 (rechts).",
+    "topic": "Negative Zahlen"
+  },
+  {
+    "question": "Was ist 2 hoch 5 (2^5)?",
+    "options": [
+      "10",
+      "25",
+      "32",
+      "64"
+    ],
+    "correct": 2,
+    "explanation": "2^5 = 2x2x2x2x2 = 4x2x2x2 = 8x2x2 = 16x2 = 32.",
+    "topic": "Potenzen"
+  },
+  {
+    "question": "Was ist 3^3?",
+    "options": [
+      "6",
+      "9",
+      "27",
+      "81"
+    ],
+    "correct": 2,
+    "explanation": "3^3 = 3x3x3 = 9x3 = 27.",
+    "topic": "Potenzen"
+  },
+  {
+    "question": "Was ist 10^4?",
+    "options": [
+      "40",
+      "1000",
+      "10000",
+      "100000"
+    ],
+    "correct": 2,
+    "explanation": "10^4 = 10x10x10x10 = 10000. Bei Zehnerpotenzen gibt die Hochzahl an, wie viele Nullen folgen.",
+    "topic": "Potenzen"
+  },
+  {
+    "question": "Was ist die Wurzel aus 144?",
+    "options": [
+      "12",
+      "14",
+      "11",
+      "13"
+    ],
+    "correct": 0,
+    "explanation": "Wurzel aus 144 = 12, da 12 x 12 = 144.",
+    "topic": "Wurzeln"
+  },
+  {
+    "question": "Was ist die Wurzel aus 25?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": 2,
+    "explanation": "Wurzel aus 25 = 5, da 5 x 5 = 25.",
+    "topic": "Wurzeln"
+  },
+  {
+    "question": "Was ist 15% von 200?",
+    "options": [
+      "15",
+      "20",
+      "30",
+      "25"
+    ],
+    "correct": 2,
+    "explanation": "15% von 200 = 200 x 15/100 = 200 x 0,15 = 30.",
+    "topic": "Prozentrechnung"
+  },
+  {
+    "question": "Ein Artikel kostet 80 Euro und wird um 25% reduziert. Was kostet er?",
+    "options": [
+      "55 Euro",
+      "60 Euro",
+      "65 Euro",
+      "20 Euro"
+    ],
+    "correct": 1,
+    "explanation": "25% von 80 = 20 Euro Rabatt. 80 - 20 = 60 Euro.",
+    "topic": "Prozentrechnung"
+  },
+  {
+    "question": "Welche Zahl ist 40% von 150?",
+    "options": [
+      "40",
+      "50",
+      "60",
+      "75"
+    ],
+    "correct": 2,
+    "explanation": "40% von 150 = 150 x 40/100 = 150 x 0,4 = 60.",
+    "topic": "Prozentrechnung"
+  },
+  {
+    "question": "Ein Gegenstand kostet 120 Euro nach 20% Rabatt. Was war der urspruengliche Preis?",
+    "options": [
+      "144 Euro",
+      "150 Euro",
+      "140 Euro",
+      "96 Euro"
+    ],
+    "correct": 1,
+    "explanation": "Nach 20% Rabatt zahlt man 80% des Preises. 80% = 120 Euro, also 1% = 1,5 Euro, 100% = 150 Euro.",
+    "topic": "Prozentrechnung"
+  },
+  {
+    "question": "Was ist eine Proportion?",
+    "options": [
+      "Eine Gleichung mit nur einer Unbekannten",
+      "Die Gleichheit zweier Verhaeltnisse: a/b = c/d",
+      "Eine Prozentzahl",
+      "Eine Ungleichung"
+    ],
+    "correct": 1,
+    "explanation": "Proportion: a/b = c/d. Beispiel: 2/3 = 4/6. Wichtig: Wenn a und b in einer Proportion stehen, gilt auch a*d = b*c (Kreuzregel).",
+    "topic": "Proportionen"
+  },
+  {
+    "question": "Was ist direkte Proportionalitaet?",
+    "options": [
+      "Wenn das Produkt zweier Groessen konstant ist",
+      "Wenn zwei Groessen im gleichen Verhaeltnis wachsen oder abnehmen",
+      "Wenn eine Groesse steigt und die andere sinkt",
+      "Wenn zwei Groessen immer gleich sind"
+    ],
+    "correct": 1,
+    "explanation": "Direkte Proportionalitaet: y = k*x (k = Konstante). Beispiel: 2 kg Aepfel kosten 3 Euro, 4 kg kosten 6 Euro. Verdoppeln eine Groesse verdoppelt auch die andere.",
+    "topic": "Proportionen"
+  },
+  {
+    "question": "Was ist indirekte (umgekehrte) Proportionalitaet?",
+    "options": [
+      "Wenn beide Groessen abnehmen",
+      "Wenn eine Groesse steigt und die andere proportional sinkt",
+      "Wenn beide Groessen gleich sind",
+      "Wenn keine Abhaengigkeit besteht"
+    ],
+    "correct": 1,
+    "explanation": "Indirekte Proportionalitaet: y = k/x. Beispiel: 4 Arbeiter brauchen 6 Stunden, 8 Arbeiter brauchen 3 Stunden. Mehr Arbeiter = weniger Zeit.",
+    "topic": "Proportionen"
+  },
+  {
+    "question": "Ein Auto faehrt 120 km in 2 Stunden. Wie weit kommt es in 3 Stunden (konstante Geschwindigkeit)?",
+    "options": [
+      "150 km",
+      "160 km",
+      "180 km",
+      "200 km"
+    ],
+    "correct": 2,
+    "explanation": "120 km in 2 h = 60 km/h. In 3 Stunden: 60 x 3 = 180 km.",
+    "topic": "Proportionen"
+  },
+  {
+    "question": "Was versteht man unter einem Koordinatensystem?",
+    "options": [
+      "Eine Tabelle",
+      "Zwei senkrechte Zahlengeraden (x-Achse und y-Achse), die sich im Ursprung (0,0) schneiden",
+      "Ein Messinstrument",
+      "Ein Dreiecksystem"
+    ],
+    "correct": 1,
+    "explanation": "Koordinatensystem: x-Achse (waagerecht) und y-Achse (senkrecht). Punkte werden als (x,y) angegeben. Ursprung = (0,0).",
+    "topic": "Koordinatensystem"
+  },
+  {
+    "question": "In welchem Quadranten liegt der Punkt (3, -2)?",
+    "options": [
+      "1. Quadrant (oben rechts)",
+      "2. Quadrant (oben links)",
+      "3. Quadrant (unten links)",
+      "4. Quadrant (unten rechts)"
+    ],
+    "correct": 3,
+    "explanation": "x=3 (positiv) liegt rechts, y=-2 (negativ) liegt unten. Rechts unten = 4. Quadrant.",
+    "topic": "Koordinatensystem"
+  },
+  {
+    "question": "Was ist 5! (Fakultaet von 5)?",
+    "options": [
+      "25",
+      "15",
+      "60",
+      "120"
+    ],
+    "correct": 3,
+    "explanation": "5! = 5 x 4 x 3 x 2 x 1 = 120. Die Fakultaet multipliziert alle Zahlen von 1 bis n.",
+    "topic": "Kombinatorik"
+  },
+  {
+    "question": "Wie viele Moeglichkeiten gibt es, 3 Buecher aus 5 in einer Reihe anzuordnen?",
+    "options": [
+      "10",
+      "15",
+      "60",
+      "125"
+    ],
+    "correct": 2,
+    "explanation": "P(5,3) = 5 x 4 x 3 = 60. Fuer den ersten Platz 5 Moeglichkeiten, dann 4, dann 3.",
+    "topic": "Kombinatorik"
+  },
+  {
+    "question": "Was ist eine Variable in der Mathematik?",
+    "options": [
+      "Eine feste Zahl",
+      "Ein Buchstabe oder Symbol fuer eine unbekannte oder veraenderliche Zahl",
+      "Eine Rechenoperation",
+      "Ein Ergebnis"
+    ],
+    "correct": 1,
+    "explanation": "Variable: haeufig x, y, z oder a, b, c. Beispiel: In 2x + 3 = 9 ist x die Variable (Loesung: x=3).",
+    "topic": "Terme"
+  },
+  {
+    "question": "Was ist der Wert des Terms 3x + 2 fuer x = 4?",
+    "options": [
+      "12",
+      "14",
+      "10",
+      "9"
+    ],
+    "correct": 1,
+    "explanation": "3x + 2 fuer x=4: 3 x 4 + 2 = 12 + 2 = 14.",
+    "topic": "Terme"
+  },
+  {
+    "question": "Wie vereinfacht man den Term 2x + 3x?",
+    "options": [
+      "6x^2",
+      "5x",
+      "5x^2",
+      "6x"
+    ],
+    "correct": 1,
+    "explanation": "Gleichartige Terme (gleiche Variable, gleicher Exponent) werden addiert: 2x + 3x = 5x.",
+    "topic": "Terme"
+  },
+  {
+    "question": "Was ist das Ergebnis von (x + 3)(x - 3)?",
+    "options": [
+      "x^2 - 9",
+      "x^2 + 9",
+      "x^2 - 6x + 9",
+      "2x"
+    ],
+    "correct": 0,
+    "explanation": "(x+3)(x-3) = x^2 - 3x + 3x - 9 = x^2 - 9. Das ist die 3. binomische Formel: (a+b)(a-b) = a^2 - b^2.",
+    "topic": "Terme"
+  },
+  {
+    "question": "Was ist die Loesung der Gleichung 2x - 4 = 10?",
+    "options": [
+      "x=3",
+      "x=5",
+      "x=7",
+      "x=4"
+    ],
+    "correct": 2,
+    "explanation": "2x - 4 = 10. +4 auf beiden Seiten: 2x = 14. Beide Seiten durch 2: x = 7.",
+    "topic": "Gleichungen"
+  },
+  {
+    "question": "Was ist die Loesung von 3x + 6 = 0?",
+    "options": [
+      "x=2",
+      "x=-2",
+      "x=6",
+      "x=-6"
+    ],
+    "correct": 1,
+    "explanation": "3x + 6 = 0. -6: 3x = -6. :3: x = -2.",
+    "topic": "Gleichungen"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Gleichung und Ungleichung?",
+    "options": [
+      "Es gibt keinen Unterschied",
+      "Gleichung: linke Seite = rechte Seite (=). Ungleichung: kleiner/groesser als (<, >, <=, >=).",
+      "Gleichungen haben keine Loesung",
+      "Ungleichungen haben immer eine Loesung"
+    ],
+    "correct": 1,
+    "explanation": "Gleichung: 2x = 8 (Loesung: x=4). Ungleichung: 2x > 8 (Loesung: x > 4, also alle Zahlen groesser als 4).",
+    "topic": "Gleichungen"
+  },
+  {
+    "question": "Wie lautet die Loesung von x/3 = 5?",
+    "options": [
+      "x=5/3",
+      "x=15",
+      "x=8",
+      "x=2"
+    ],
+    "correct": 1,
+    "explanation": "x/3 = 5. Beide Seiten mal 3: x = 15.",
+    "topic": "Gleichungen"
+  }
+]

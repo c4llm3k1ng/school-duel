@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist 13 x 13?",
+    "options": [
+      "156",
+      "169",
+      "144",
+      "196"
+    ],
+    "correct": 1,
+    "explanation": "13 x 13 = 169. Merkhilfe: (10+3)^2 = 100 + 60 + 9 = 169.",
+    "topic": "Quadratzahlen"
+  },
+  {
+    "question": "Was ist 15 x 15?",
+    "options": [
+      "215",
+      "225",
+      "235",
+      "175"
+    ],
+    "correct": 1,
+    "explanation": "15 x 15 = 225. Trick: 15^2 = (10+5)^2 = 100 + 100 + 25 = 225.",
+    "topic": "Quadratzahlen"
+  },
+  {
+    "question": "Was ist 7 x 8 x 9?",
+    "options": [
+      "454",
+      "504",
+      "486",
+      "523"
+    ],
+    "correct": 1,
+    "explanation": "7 x 8 = 56; 56 x 9 = 504.",
+    "topic": "Multiplizieren"
+  },
+  {
+    "question": "Was ist 999 + 456?",
+    "options": [
+      "1444",
+      "1455",
+      "1446",
+      "1365"
+    ],
+    "correct": 1,
+    "explanation": "999 + 456 = 1000 + 456 - 1 = 1455.",
+    "topic": "Addieren"
+  },
+  {
+    "question": "Was ist 1001 - 347?",
+    "options": [
+      "654",
+      "664",
+      "654",
+      "763"
+    ],
+    "correct": 0,
+    "explanation": "1001 - 347 = 1000 - 347 + 1 = 653 + 1 = 654.",
+    "topic": "Subtrahieren"
+  },
+  {
+    "question": "Was ist 125 x 8?",
+    "options": [
+      "900",
+      "975",
+      "1000",
+      "1050"
+    ],
+    "correct": 2,
+    "explanation": "125 x 8 = 125 x 4 x 2 = 500 x 2 = 1000.",
+    "topic": "Multiplizieren"
+  },
+  {
+    "question": "Was ist 4800 : 12?",
+    "options": [
+      "40",
+      "400",
+      "4",
+      "4000"
+    ],
+    "correct": 1,
+    "explanation": "4800 : 12 = 4800 : 4 : 3 = 1200 : 3 = 400.",
+    "topic": "Dividieren"
+  },
+  {
+    "question": "Was ist 3/4 von 400?",
+    "options": [
+      "100",
+      "200",
+      "300",
+      "150"
+    ],
+    "correct": 2,
+    "explanation": "3/4 von 400 = 400 : 4 x 3 = 100 x 3 = 300.",
+    "topic": "Bruchrechnen"
+  },
+  {
+    "question": "Was ist 17^2?",
+    "options": [
+      "289",
+      "279",
+      "289",
+      "319"
+    ],
+    "correct": 0,
+    "explanation": "17^2 = (20-3)^2 = 400 - 120 + 9 = 289.",
+    "topic": "Quadratzahlen"
+  },
+  {
+    "question": "Was ist 25 x 16?",
+    "options": [
+      "350",
+      "400",
+      "375",
+      "425"
+    ],
+    "correct": 1,
+    "explanation": "25 x 16 = 25 x 4 x 4 = 100 x 4 = 400.",
+    "topic": "Multiplizieren"
+  },
+  {
+    "question": "Was ist 200 - 37 - 63?",
+    "options": [
+      "90",
+      "100",
+      "110",
+      "80"
+    ],
+    "correct": 1,
+    "explanation": "37 + 63 = 100. 200 - 100 = 100.",
+    "topic": "Subtrahieren"
+  },
+  {
+    "question": "Was ist 0,5 x 0,5?",
+    "options": [
+      "0,10",
+      "0,25",
+      "1",
+      "2,5"
+    ],
+    "correct": 1,
+    "explanation": "0,5 x 0,5 = 1/2 x 1/2 = 1/4 = 0,25.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 10% von 350?",
+    "options": [
+      "3,5",
+      "35",
+      "3500",
+      "350"
+    ],
+    "correct": 1,
+    "explanation": "10% = 1/10. 350 : 10 = 35.",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was ist 50% von 86?",
+    "options": [
+      "43",
+      "86",
+      "172",
+      "50"
+    ],
+    "correct": 0,
+    "explanation": "50% = 1/2. 86 : 2 = 43.",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was ist 1% von 2500?",
+    "options": [
+      "25",
+      "250",
+      "2,5",
+      "2500"
+    ],
+    "correct": 0,
+    "explanation": "1% = 1/100. 2500 : 100 = 25.",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was ist 6^2 + 8^2?",
+    "options": [
+      "100",
+      "196",
+      "20",
+      "200"
+    ],
+    "correct": 0,
+    "explanation": "6^2 = 36, 8^2 = 64. 36 + 64 = 100. (Bekanntes pythagoraeisches Tripel: 6, 8, 10.)",
+    "topic": "Quadratzahlen"
+  },
+  {
+    "question": "Was ist 35 x 12?",
+    "options": [
+      "390",
+      "420",
+      "450",
+      "350"
+    ],
+    "correct": 1,
+    "explanation": "35 x 12 = 35 x 10 + 35 x 2 = 350 + 70 = 420.",
+    "topic": "Multiplizieren"
+  },
+  {
+    "question": "Was ist 144 : 12?",
+    "options": [
+      "10",
+      "12",
+      "13",
+      "14"
+    ],
+    "correct": 1,
+    "explanation": "144 : 12 = 12. (12 x 12 = 144.)",
+    "topic": "Dividieren"
+  },
+  {
+    "question": "Was ist die Wurzel aus 196?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "correct": 2,
+    "explanation": "Wurzel aus 196 = 14. (14 x 14 = 196.)",
+    "topic": "Wurzeln"
+  },
+  {
+    "question": "Was ist 99 x 11?",
+    "options": [
+      "999",
+      "1089",
+      "1099",
+      "1019"
+    ],
+    "correct": 1,
+    "explanation": "99 x 11 = 100 x 11 - 11 = 1100 - 11 = 1089.",
+    "topic": "Multiplizieren"
+  },
+  {
+    "question": "Was ist 48 + 52 + 48 + 52?",
+    "options": [
+      "200",
+      "190",
+      "210",
+      "180"
+    ],
+    "correct": 0,
+    "explanation": "(48 + 52) x 2 = 100 x 2 = 200.",
+    "topic": "Addieren"
+  },
+  {
+    "question": "Was ist 750 : 0,5?",
+    "options": [
+      "375",
+      "750",
+      "1500",
+      "150"
+    ],
+    "correct": 2,
+    "explanation": "750 : 0,5 = 750 x 2 = 1500.",
+    "topic": "Dividieren"
+  },
+  {
+    "question": "Was ist 5! (Fakultaet 5)?",
+    "options": [
+      "25",
+      "60",
+      "120",
+      "5"
+    ],
+    "correct": 2,
+    "explanation": "5! = 5 x 4 x 3 x 2 x 1 = 120.",
+    "topic": "Kombinatorik"
+  },
+  {
+    "question": "Was ist 1/8 von 240?",
+    "options": [
+      "20",
+      "30",
+      "40",
+      "24"
+    ],
+    "correct": 1,
+    "explanation": "240 : 8 = 30.",
+    "topic": "Bruchrechnen"
+  },
+  {
+    "question": "Was ist 2,5 x 4?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "correct": 2,
+    "explanation": "2,5 x 4 = 10. (Wie 5/2 x 4 = 20/2 = 10.)",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Was ist 3 x 4 x 5 x 0?",
+    "options": [
+      "60",
+      "12",
+      "0",
+      "120"
+    ],
+    "correct": 2,
+    "explanation": "Jede Zahl mit 0 multipliziert ergibt 0.",
+    "topic": "Multiplizieren"
+  },
+  {
+    "question": "Was ist 2^10?",
+    "options": [
+      "20",
+      "100",
+      "512",
+      "1024"
+    ],
+    "correct": 3,
+    "explanation": "2^10 = 1024. Merke: 2^10 = 1024 (wichtig in Informatik/Computer: 1 KB).",
+    "topic": "Potenzen"
+  },
+  {
+    "question": "Was ist 15% von 60?",
+    "options": [
+      "9",
+      "6",
+      "10",
+      "12"
+    ],
+    "correct": 0,
+    "explanation": "15% = 10% + 5% = 6 + 3 = 9.",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was ist (-5)^2?",
+    "options": [
+      "-25",
+      "25",
+      "-10",
+      "10"
+    ],
+    "correct": 1,
+    "explanation": "(-5)^2 = (-5) x (-5) = +25. Eine negative Zahl zum Quadrat ist immer positiv.",
+    "topic": "Potenzen"
+  },
+  {
+    "question": "Wie viele Minuten hat ein Tag?",
+    "options": [
+      "1000",
+      "1200",
+      "1440",
+      "1400"
+    ],
+    "correct": 2,
+    "explanation": "1 Tag = 24 Stunden x 60 Minuten = 1440 Minuten.",
+    "topic": "Masseinheiten"
+  },
+  {
+    "question": "Was ist 37 x 3?",
+    "options": [
+      "99",
+      "111",
+      "101",
+      "121"
+    ],
+    "correct": 1,
+    "explanation": "37 x 3 = 30x3 + 7x3 = 90 + 21 = 111.",
+    "topic": "Multiplizieren"
+  },
+  {
+    "question": "Was ist 1000 - 234?",
+    "options": [
+      "766",
+      "776",
+      "666",
+      "876"
+    ],
+    "correct": 0,
+    "explanation": "1000 - 234 = 766.",
+    "topic": "Subtrahieren"
+  },
+  {
+    "question": "Was ist 6 x 7 x 8?",
+    "options": [
+      "224",
+      "288",
+      "336",
+      "384"
+    ],
+    "correct": 2,
+    "explanation": "6 x 7 = 42; 42 x 8 = 336.",
+    "topic": "Multiplizieren"
+  },
+  {
+    "question": "Was ist 175 + 225?",
+    "options": [
+      "390",
+      "400",
+      "410",
+      "350"
+    ],
+    "correct": 1,
+    "explanation": "175 + 225 = 400. (175 + 25 = 200, 200 + 200 = 400.)",
+    "topic": "Addieren"
+  },
+  {
+    "question": "Was ist 240 : 16?",
+    "options": [
+      "12",
+      "14",
+      "15",
+      "16"
+    ],
+    "correct": 2,
+    "explanation": "240 : 16 = 240 : 2 : 8 = 120 : 8 = 15.",
+    "topic": "Dividieren"
+  },
+  {
+    "question": "Was ist 11 x 11?",
+    "options": [
+      "111",
+      "121",
+      "112",
+      "110"
+    ],
+    "correct": 1,
+    "explanation": "11 x 11 = 121. Merke: 11^2 = 121, 11^3 = 1331.",
+    "topic": "Quadratzahlen"
+  },
+  {
+    "question": "Was ist die Wurzel aus 81?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct": 2,
+    "explanation": "Wurzel aus 81 = 9. (9 x 9 = 81.)",
+    "topic": "Wurzeln"
+  },
+  {
+    "question": "Was ist 75% von 120?",
+    "options": [
+      "80",
+      "85",
+      "90",
+      "95"
+    ],
+    "correct": 2,
+    "explanation": "75% = 3/4. 120 : 4 x 3 = 30 x 3 = 90.",
+    "topic": "Prozent"
+  },
+  {
+    "question": "Was ist 0,1 x 3000?",
+    "options": [
+      "30",
+      "300",
+      "3000",
+      "30000"
+    ],
+    "correct": 1,
+    "explanation": "0,1 x 3000 = 1/10 x 3000 = 300.",
+    "topic": "Dezimalzahlen"
+  },
+  {
+    "question": "Wie gross ist der Restbetrag, wenn man von 500 Euro drei mal 89 Euro abzieht?",
+    "options": [
+      "233 Euro",
+      "223 Euro",
+      "243 Euro",
+      "303 Euro"
+    ],
+    "correct": 0,
+    "explanation": "3 x 89 = 267. 500 - 267 = 233 Euro.",
+    "topic": "Multiplizieren"
+  }
+]

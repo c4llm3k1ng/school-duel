@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist der Flaecheninhalt eines Rechtecks mit a=8cm und b=5cm?",
+    "options": [
+      "26 cm^2",
+      "40 cm^2",
+      "13 cm^2",
+      "20 cm^2"
+    ],
+    "correct": 1,
+    "explanation": "Flaecheninhalt Rechteck = a x b = 8 x 5 = 40 cm^2.",
+    "topic": "Flaecheninhalte"
+  },
+  {
+    "question": "Was ist der Umfang eines Quadrats mit Seitenlaenge 7cm?",
+    "options": [
+      "14 cm",
+      "21 cm",
+      "28 cm",
+      "49 cm"
+    ],
+    "correct": 2,
+    "explanation": "Umfang Quadrat = 4 x a = 4 x 7 = 28 cm.",
+    "topic": "Umfang"
+  },
+  {
+    "question": "Was ist der Flaecheninhalt eines Dreiecks mit Grundlinie g=10cm und Hoehe h=6cm?",
+    "options": [
+      "60 cm^2",
+      "30 cm^2",
+      "16 cm^2",
+      "48 cm^2"
+    ],
+    "correct": 1,
+    "explanation": "Flaeche Dreieck = (g x h) / 2 = (10 x 6) / 2 = 60 / 2 = 30 cm^2.",
+    "topic": "Flaecheninhalte"
+  },
+  {
+    "question": "Was ist der Flaecheninhalt eines Parallelogramms mit g=9cm und h=4cm?",
+    "options": [
+      "36 cm^2",
+      "18 cm^2",
+      "26 cm^2",
+      "13 cm^2"
+    ],
+    "correct": 0,
+    "explanation": "Flaeche Parallelogramm = g x h = 9 x 4 = 36 cm^2.",
+    "topic": "Flaecheninhalte"
+  },
+  {
+    "question": "Was ist der Flaecheninhalt einer Raute mit den Diagonalen d1=8cm und d2=6cm?",
+    "options": [
+      "48 cm^2",
+      "24 cm^2",
+      "14 cm^2",
+      "48 cm"
+    ],
+    "correct": 1,
+    "explanation": "Flaeche Raute = (d1 x d2) / 2 = (8 x 6) / 2 = 48 / 2 = 24 cm^2.",
+    "topic": "Flaecheninhalte"
+  },
+  {
+    "question": "Wie lautet die Formel fuer den Flaecheninhalt eines Trapezes?",
+    "options": [
+      "(a+b) x h",
+      "(a+b)/2 x h",
+      "a x b x h",
+      "a+b+c+d"
+    ],
+    "correct": 1,
+    "explanation": "Flaeche Trapez = (a+c) / 2 x h, wobei a und c die parallelen Seiten und h die Hoehe sind.",
+    "topic": "Flaecheninhalte"
+  },
+  {
+    "question": "Was ist Kreiszahl Pi ungefaehr?",
+    "options": [
+      "3",
+      "3,14",
+      "3,1416",
+      "alle Antworten sind richtig, je nach Genauigkeit"
+    ],
+    "correct": 3,
+    "explanation": "Pi = 3,14159... Die gebraeuchlichsten Naeherungswerte sind 3,14 oder 22/7. Je mehr Nachkommastellen, desto genauer.",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Was ist der Umfang eines Kreises mit Radius r=5cm?",
+    "options": [
+      "10 cm",
+      "15,7 cm",
+      "31,4 cm",
+      "78,5 cm"
+    ],
+    "correct": 2,
+    "explanation": "Umfang Kreis = 2 x pi x r = 2 x 3,14 x 5 = 31,4 cm.",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Was ist der Flaecheninhalt eines Kreises mit Radius r=4cm?",
+    "options": [
+      "12,56 cm^2",
+      "25,12 cm^2",
+      "50,24 cm^2",
+      "16 cm^2"
+    ],
+    "correct": 2,
+    "explanation": "Flaeche Kreis = pi x r^2 = 3,14 x 16 = 50,24 cm^2.",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Was ist der Durchmesser eines Kreises mit Radius r=7cm?",
+    "options": [
+      "3,5 cm",
+      "7 cm",
+      "14 cm",
+      "21,98 cm"
+    ],
+    "correct": 2,
+    "explanation": "Durchmesser d = 2 x r = 2 x 7 = 14 cm.",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Was ist ein Sehne in einem Kreis?",
+    "options": [
+      "Der Abstand vom Mittelpunkt zum Rand",
+      "Eine Strecke, die zwei Punkte auf dem Kreisbogen verbindet",
+      "Der halbe Umfang",
+      "Eine Tangente"
+    ],
+    "correct": 1,
+    "explanation": "Sehne: Verbindungslinie zweier Kreispunkte. Laengste Sehne = Durchmesser (geht durch den Mittelpunkt).",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Was versteht man unter einem Zylinder?",
+    "options": [
+      "Ein dreidimensionaler Koerper mit sechs rechteckigen Flaechen",
+      "Ein Koerper mit kreisfoermiger Grundflaeche, kreisfoermiger Deckflaeche und rechteckiger Mantelflaeche",
+      "Ein Koerper mit einer Spitze",
+      "Ein Koerper mit fuenf Flaechen"
+    ],
+    "correct": 1,
+    "explanation": "Zylinder: zwei gleiche Kreise (Boden und Deckel) verbunden durch den rechteckigen Mantel. Formel Volumen: V = pi x r^2 x h.",
+    "topic": "Koerper"
+  },
+  {
+    "question": "Was ist das Volumen eines Quaders mit l=5cm, b=3cm, h=4cm?",
+    "options": [
+      "12 cm^3",
+      "24 cm^3",
+      "60 cm^3",
+      "47 cm^3"
+    ],
+    "correct": 2,
+    "explanation": "V = l x b x h = 5 x 3 x 4 = 60 cm^3.",
+    "topic": "Volumen"
+  },
+  {
+    "question": "Was ist das Volumen eines Wuerfels mit Kantenlaenge a=3cm?",
+    "options": [
+      "9 cm^3",
+      "18 cm^3",
+      "27 cm^3",
+      "81 cm^3"
+    ],
+    "correct": 2,
+    "explanation": "V = a^3 = 3^3 = 27 cm^3.",
+    "topic": "Volumen"
+  },
+  {
+    "question": "Wie viele Symmetrieachsen hat ein gleichseitiges Dreieck?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct": 2,
+    "explanation": "Ein gleichseitiges Dreieck hat 3 Symmetrieachsen - je eine von jedem Eckpunkt zur gegenueberliegenden Seite.",
+    "topic": "Symmetrie"
+  },
+  {
+    "question": "Wie viele Symmetrieachsen hat ein Rechteck (kein Quadrat)?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct": 2,
+    "explanation": "Ein Rechteck hat 2 Symmetrieachsen: eine waagerecht und eine senkrecht durch die Mittelpunkte der Seiten. Keine Diagonale ist Symmetrieachse.",
+    "topic": "Symmetrie"
+  },
+  {
+    "question": "Was ist ein Prisma?",
+    "options": [
+      "Ein Koerper mit kreisfoermiger Grundflaeche",
+      "Ein Koerper mit zwei gleichen, parallelen Vieleck-Grundflaechen und rechteckigen Seitenflaechen",
+      "Ein Koerper mit nur einer Grundflaeche und Dreiecksseitenflaechen",
+      "Ein Koerper mit 5 dreieckigen Flaechen"
+    ],
+    "correct": 1,
+    "explanation": "Prisma: zwei gleiche und parallele Vielecke als Grund- und Deckflaeche. Seitenflaechen sind Rechtecke. Quader und Wuerfel sind spezielle Prismen.",
+    "topic": "Koerper"
+  },
+  {
+    "question": "Was ist eine Pyramide?",
+    "options": [
+      "Ein Koerper mit kreisfoermiger Grundflaeche und Spitze",
+      "Ein Koerper mit einer Vieleck-Grundflaeche und dreieeckigen Seitenflaechen, die in einer Spitze enden",
+      "Ein Koerper ohne Kanten",
+      "Ein Koerper mit 8 Flaechen"
+    ],
+    "correct": 1,
+    "explanation": "Pyramide: Vieleck als Grundflaeche, Dreiecke als Seitenflaechen. Saemtliche Seitenflaechen treffen sich in einer Spitze. Quadratische Pyramide: 4 dreieckige Seitenflaechen.",
+    "topic": "Koerper"
+  },
+  {
+    "question": "Wie viele Kanten hat ein Wuerfel?",
+    "options": [
+      "6",
+      "8",
+      "12",
+      "24"
+    ],
+    "correct": 2,
+    "explanation": "Wuerfel: 12 Kanten (4 unten, 4 oben, 4 verbindend). Ausserdem: 6 Flaechen, 8 Ecken.",
+    "topic": "Koerper"
+  },
+  {
+    "question": "Was besagt der Satz des Pythagoras?",
+    "options": [
+      "Die Summe aller Winkel im Dreieck betraegt 180 Grad",
+      "In einem rechtwinkligen Dreieck gilt: a^2 + b^2 = c^2 (c = Hypotenuse)",
+      "Der Umfang eines Kreises ist 2 x pi x r",
+      "Gegenueberliegende Winkel sind gleich gross"
+    ],
+    "correct": 1,
+    "explanation": "Pythagoras: a^2 + b^2 = c^2 fuer rechtwinklige Dreiecke. a und b sind die Katheten, c die Hypotenuse (laengste Seite).",
+    "topic": "Pythagoras"
+  },
+  {
+    "question": "Was ist die Hypotenuse eines rechtwinkligen Dreiecks mit Katheten a=3 und b=4?",
+    "options": [
+      "5",
+      "7",
+      "25",
+      "12"
+    ],
+    "correct": 0,
+    "explanation": "c^2 = a^2 + b^2 = 9 + 16 = 25. c = Wurzel(25) = 5. Das bekannte 3-4-5-Dreieck.",
+    "topic": "Pythagoras"
+  },
+  {
+    "question": "Was ist ein spitzwinkliges Dreieck?",
+    "options": [
+      "Ein Dreieck mit einem Winkel groesser 90 Grad",
+      "Ein Dreieck, bei dem alle drei Winkel kleiner als 90 Grad sind",
+      "Ein Dreieck mit genau einem 90-Grad-Winkel",
+      "Ein gleichseitiges Dreieck"
+    ],
+    "correct": 1,
+    "explanation": "Spitzwinklig: alle drei Winkel sind kleiner als 90 Grad. Stumpfwinklig: ein Winkel groesser 90 Grad. Rechtwinklig: genau ein 90-Grad-Winkel.",
+    "topic": "Dreiecke"
+  },
+  {
+    "question": "Was ist der Innenwinkel eines gleichseitigen Dreiecks?",
+    "options": [
+      "45 Grad",
+      "60 Grad",
+      "90 Grad",
+      "72 Grad"
+    ],
+    "correct": 1,
+    "explanation": "Alle drei Winkel eines gleichseitigen Dreiecks sind gleich gross. Summe = 180 Grad, also je 60 Grad.",
+    "topic": "Dreiecke"
+  },
+  {
+    "question": "Was sind Scheitelwinkel?",
+    "options": [
+      "Winkel auf einer Geraden",
+      "Gegenueberliegende Winkel bei sich schneidenden Geraden - sie sind immer gleich gross",
+      "Winkel in einem Dreieck",
+      "Rechte Winkel"
+    ],
+    "correct": 1,
+    "explanation": "Scheitelwinkel: entstehen wenn zwei Geraden sich schneiden. Die gegenueberliegenden (nicht benachbarten) Winkel sind Scheitelwinkel und gleich gross.",
+    "topic": "Winkel"
+  },
+  {
+    "question": "Was sind Stufenwinkel (auch F-Winkel oder Z-Winkel)?",
+    "options": [
+      "Winkel in einem Dreieck",
+      "Gleich grosse Winkel, die beim Schnitt einer Geraden mit zwei parallelen Geraden entstehen",
+      "Supplementaere Winkel",
+      "Komplementaere Winkel"
+    ],
+    "correct": 1,
+    "explanation": "Stufenwinkel (Wechselwinkel): entstehen bei zwei parallelen Geraden, die von einer Geraden geschnitten werden. Stufenwinkel (F-Form) und Wechselwinkel (Z-Form) sind gleich gross.",
+    "topic": "Winkel"
+  },
+  {
+    "question": "Was sind komplementaere Winkel?",
+    "options": [
+      "Zwei Winkel die zusammen 90 Grad ergeben",
+      "Zwei Winkel die zusammen 180 Grad ergeben",
+      "Zwei Winkel die gleich gross sind",
+      "Zwei Winkel in einem gleichseitigen Dreieck"
+    ],
+    "correct": 0,
+    "explanation": "Komplementaerwinkel: ergeben zusammen 90 Grad. Beispiel: 30 Grad und 60 Grad.",
+    "topic": "Winkel"
+  },
+  {
+    "question": "Was sind supplementaere Winkel?",
+    "options": [
+      "Zwei Winkel die zusammen 90 Grad ergeben",
+      "Zwei Winkel die zusammen 180 Grad ergeben",
+      "Zwei gleich grosse Winkel",
+      "Zwei Winkel in einem Viereck"
+    ],
+    "correct": 1,
+    "explanation": "Supplementaerwinkel: ergeben zusammen 180 Grad. Sie liegen auf einer Geraden nebeneinander.",
+    "topic": "Winkel"
+  },
+  {
+    "question": "Was ist ein Netz eines Quaders?",
+    "options": [
+      "Ein dreidimensionales Modell",
+      "Die Abwicklung des Quaders in die Ebene - alle 6 Rechtecksflaechen aneinandergelegt",
+      "Ein Gitter aus Linien",
+      "Die Summe aller Flaechen"
+    ],
+    "correct": 1,
+    "explanation": "Netz: wenn man einen Koerper auffaltet und flachlegt, erhaelt man das Netz. Ein Quader hat mehrere verschiedene Netze (11 verschiedene Moeglichkeiten fuer einen Wuerfel).",
+    "topic": "Netze"
+  },
+  {
+    "question": "Was ist die Oberflaeche eines Quaders mit l=4, b=3, h=2?",
+    "options": [
+      "24",
+      "26",
+      "52",
+      "48"
+    ],
+    "correct": 2,
+    "explanation": "O = 2 x (l*b + l*h + b*h) = 2 x (12 + 8 + 6) = 2 x 26 = 52 Flaecheneinheiten.",
+    "topic": "Oberflaeche"
+  },
+  {
+    "question": "Was ist ein Kreissektor?",
+    "options": [
+      "Der Rand des Kreises",
+      "Ein Abschnitt des Kreises zwischen zwei Radien (Tortenstueck-Form)",
+      "Eine Sehne",
+      "Der Kreismittelpunkt"
+    ],
+    "correct": 1,
+    "explanation": "Kreissektor: der Bereich zwischen zwei Radien und dem Kreisbogen dazwischen - sieht aus wie ein Stueck Torte oder Tortenstueck.",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Ein Rechteck hat einen Umfang von 24 cm und eine Seite ist 8 cm lang. Wie lang ist die andere Seite?",
+    "options": [
+      "3 cm",
+      "4 cm",
+      "8 cm",
+      "16 cm"
+    ],
+    "correct": 1,
+    "explanation": "U = 2(a+b). 24 = 2(8+b), 12 = 8+b, b = 4 cm.",
+    "topic": "Umfang"
+  },
+  {
+    "question": "Was versteht man unter einem Massstab 1:50000?",
+    "options": [
+      "1 cm in der Realitaet = 50000 cm auf der Karte",
+      "1 cm auf der Karte = 50000 cm in der Realitaet",
+      "Beide Laengen sind gleich",
+      "1 m auf der Karte = 50 m in der Realitaet"
+    ],
+    "correct": 1,
+    "explanation": "Massstab 1:50000: 1 cm Karte = 50000 cm = 500 m in der Realitaet. Bei Karten: je groesser die Zahl, desto kleiner der Massstab.",
+    "topic": "Massstab"
+  },
+  {
+    "question": "Auf einer Karte (Massstab 1:25000) sind zwei Orte 4 cm voneinander entfernt. Wie weit ist das in der Realitaet?",
+    "options": [
+      "100 m",
+      "1 km",
+      "25 km",
+      "1,5 km"
+    ],
+    "correct": 1,
+    "explanation": "4 cm x 25000 = 100000 cm = 1000 m = 1 km.",
+    "topic": "Massstab"
+  },
+  {
+    "question": "Was ist ein Mittelpunkt eines Kreises?",
+    "options": [
+      "Ein Punkt auf dem Kreisbogen",
+      "Der Punkt, der von allen Punkten des Kreises gleich weit entfernt ist",
+      "Der tiefste Punkt eines Kreises",
+      "Ein Schnittpunkt zweier Sehnen"
+    ],
+    "correct": 1,
+    "explanation": "Mittelpunkt: der Zentralpunkt, von dem aus alle Punkte des Kreises gleich weit entfernt sind (Abstand = Radius).",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Was ist ein Durchmesser?",
+    "options": [
+      "Der Radius x 2",
+      "Die laengste Strecke innerhalb des Kreises, die durch den Mittelpunkt geht",
+      "Eine Sehne, die nicht durch den Mittelpunkt geht",
+      "Der Umfang geteilt durch pi"
+    ],
+    "correct": 1,
+    "explanation": "Durchmesser d = 2r. Er ist die laengste Sehne und geht durch den Mittelpunkt.",
+    "topic": "Kreis"
+  },
+  {
+    "question": "Was ist ein Kegelstumpf?",
+    "options": [
+      "Ein halber Kegel",
+      "Ein Kegel, bei dem die Spitze abgeschnitten wurde, sodass eine kleine Kreisflaeche oben entsteht",
+      "Ein umgekehrter Kegel",
+      "Ein Kegel ohne Grundflaeche"
+    ],
+    "correct": 1,
+    "explanation": "Kegelstumpf: entsteht, wenn man einen Kegel parallel zur Grundflaeche abschneidet. Hat zwei Kreisflaechen (unterschiedlich gross) und eine kegelfoermige Mantelflaeche.",
+    "topic": "Koerper"
+  },
+  {
+    "question": "Was ist ein kongruentes Dreieck?",
+    "options": [
+      "Ein ahnliches aber groesseres Dreieck",
+      "Ein Dreieck mit gleichen Flaechen aber anderer Form",
+      "Ein Dreieck gleicher Groesse und Form (deckungsgleich)",
+      "Ein gleichschenkliges Dreieck"
+    ],
+    "correct": 2,
+    "explanation": "Kongruente Dreiecke: gleiche Form und gleiche Groesse - man kann eines auf das andere legen und sie decken sich exakt. Ahnliche Dreiecke: gleiche Form aber verschiedene Groesse.",
+    "topic": "Kongruenz"
+  },
+  {
+    "question": "Was bedeutet aehnliche Dreiecke?",
+    "options": [
+      "Dreiecke mit gleichen Winkeln und gleicher Groesse",
+      "Dreiecke mit gleichen Winkeln, aber verschiedenen Seitenlaengen (proportional skaliert)",
+      "Dreiecke mit gleicher Grundlinie",
+      "Dreiecke mit gleichen Seitenlaengen"
+    ],
+    "correct": 1,
+    "explanation": "Aehnliche Dreiecke: gleiche Winkel, Seiten im selben Verhaeltnis. Beispiel: 3-4-5 und 6-8-10 sind aehnlich (Faktor 2).",
+    "topic": "Aehnlichkeit"
+  },
+  {
+    "question": "Was ist ein Lot?",
+    "options": [
+      "Eine schiefe Linie",
+      "Eine senkrechte Linie zu einer anderen Geraden oder Ebene",
+      "Eine Parallele",
+      "Eine Winkelhalbierendes"
+    ],
+    "correct": 1,
+    "explanation": "Lot: senkrechte Strecke von einem Punkt auf eine Gerade. Das Lot steht im 90-Grad-Winkel auf der Geraden.",
+    "topic": "Geometrische Grundbegriffe"
+  },
+  {
+    "question": "Was ist der Flaecheninhalt eines gleichseitigen Dreiecks mit Seitenlaenge a=6cm?",
+    "options": [
+      "9 cm^2",
+      "15,6 cm^2",
+      "18 cm^2",
+      "36 cm^2"
+    ],
+    "correct": 1,
+    "explanation": "Hoehe h = a * Wurzel(3)/2 = 6 * 0,866 = 5,196 cm. Flaeche = a*h/2 = 6*5,196/2 = 15,6 cm^2.",
+    "topic": "Flaecheninhalte"
+  }
+]
