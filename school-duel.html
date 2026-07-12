@@ -1650,7 +1650,7 @@
         <circle class="timer-track" cx="26" cy="26" r="22"/>
         <circle class="timer-fill" id="timer-circle" cx="26" cy="26" r="22"/>
       </svg>
-      <div class="timer-label" id="timer-label">20</div>
+      <div class="timer-label" id="timer-label">45</div>
     </div>
   </div>
   <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
@@ -1823,7 +1823,7 @@
 // ═══════════════════════════════════════════════════════
 // STATE
 // ═══════════════════════════════════════════════════════
-const TIMER_SEC = 20;
+const TIMER_SEC = 45;
 const CIRC = 2 * Math.PI * 22;
 
 // ── Constants + variables declared early to avoid TDZ ──
@@ -6034,6 +6034,11 @@ function setupQuizUI() {
   document.getElementById('duel-bar').style.display        = d ? 'grid'  : 'none';
   document.getElementById('duel-turn-badge').style.display = d ? 'block' : 'none';
   document.getElementById('quiz-exit-btn').style.display   = 'block';
+  // Clear any leftover answer colors before the screen becomes visible
+  document.getElementById('answers-container').innerHTML = '';
+  document.getElementById('feedback').className  = 'feedback';
+  document.getElementById('next-btn').className  = 'next-btn';
+  document.getElementById('points-flash').textContent = '';
 }
 
 function renderQuestion() {
@@ -6148,8 +6153,7 @@ function timeOut() {
 
 let _autoAdvTimer = null;
 function scheduleCatalogAutoAdvance(wasCorrect) {
-  const src = G.mode === 'solo' ? G.source : G.dSource;
-  if (src !== 'catalog' || G.mode === 'online') return;
+  if (G.mode === 'online') return;
   const delay = wasCorrect ? 1400 : 2500;
   _autoAdvTimer = setTimeout(() => {
     _autoAdvTimer = null;
@@ -6161,6 +6165,7 @@ function showFeedback(type, text) {
   const fb = document.getElementById('feedback');
   fb.className = 'feedback ' + type + ' show';
   fb.textContent = text;
+  fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 document.getElementById('next-btn').addEventListener('click', () => {
