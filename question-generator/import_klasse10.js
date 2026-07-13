@@ -28,6 +28,16 @@ const BLOCK_MAP = {
   'block13_geographie':          ['Geographie', 'Allgemein',      '10'],
   'block14_politik_wirtschaft':  ['Politik',    'Wirtschaft',     '10'],
   'block15_mathe_analysis':      ['Mathematik', 'Analysis',       '10'],
+  'block16_geschichte_kalterkrieg': ['Geschichte', 'Kalter Krieg',  '10'],
+  'block17_bio_oekologie':       ['Biologie',   'Ökologie',       '10'],
+  'block18_deutsch_sprache_medien': ['Deutsch',  'Sprache & Medien', '10'],
+  'block19_mathe_trig_vektoren': ['Mathematik', 'Trigonometrie',  '10'],
+  'block20_ethik_philosophie':   ['Ethik',      'Philosophie',    '10'],
+  'block21_chemie_organisch':    ['Chemie',     'Organische Chemie', '10'],
+  'block22_physik_optik':        ['Physik',     'Optik',          '10'],
+  'block23_informatik':          ['Informatik', 'Allgemein',      '10'],
+  'block24_geschichte_wk2':      ['Geschichte', 'Zweiter Weltkrieg', '10'],
+  'block25_bio_evolution':       ['Biologie',   'Evolution',      '10'],
 };
 
 // ── Firebase Auth ──
