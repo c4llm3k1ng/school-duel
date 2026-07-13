@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist Newtons erstes Gesetz (Trägheitsgesetz)?",
+    "options": [
+      "Kraft = Masse × Beschleunigung",
+      "Ein Körper bleibt in Ruhe oder gleichförmig-geradliniger Bewegung, solange keine resultierende Kraft auf ihn wirkt",
+      "Jede Kraft hat eine gleich große Gegenkraft",
+      "Energie ist erhaltungsgehend"
+    ],
+    "correct": 1,
+    "explanation": "Trägheit: Körper widersetzen sich Änderungen ihres Bewegungszustands. Folge: Sicherheitsgurt (Trägheit bei Unfall). Reibungslose Fläche: kein Abbremsen ohne Gegenkraft. Grundlage der klassischen Mechanik.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Newtons zweites Gesetz?",
+    "options": [
+      "Trägheitsgesetz",
+      "F = m · a: Die auf einen Körper wirkende Kraft ist gleich dem Produkt aus Masse und Beschleunigung",
+      "Actio = Reactio",
+      "Gravitationsgesetz"
+    ],
+    "correct": 1,
+    "explanation": "F = m·a. Einheit: 1 N = 1 kg·m/s². Größere Masse → kleinere Beschleunigung bei gleicher Kraft. Ableitung: Impulsänderungsrate dp/dt = F.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Newtons drittes Gesetz (Actio = Reactio)?",
+    "options": [
+      "Trägheitsgesetz",
+      "Zu jeder Kraft (Actio) gibt es eine gleich große, entgegengesetzt gerichtete Gegenkraft (Reactio) am anderen Körper",
+      "Energieerhaltung",
+      "Gravitationsgesetz"
+    ],
+    "correct": 1,
+    "explanation": "Actio = Reactio: Kräfte wirken paarweise auf verschiedene Körper. Boot: Ruder drückt Wasser zurück → Wasser drückt Boot vorwärts. Rakete: Triebwerk stößt Gas aus → Gas drückt Rakete vorwärts.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Arbeit in der Physik?",
+    "options": [
+      "Anstrengung",
+      "W = F · s · cos(α): Arbeit = Kraft mal Weg mal Kosinus des Winkels. Einheit: Joule (J)",
+      "Leistung",
+      "Energie"
+    ],
+    "correct": 1,
+    "explanation": "Arbeit wird nur verrichtet, wenn Kraft und Weg in dieselbe Richtung haben (cos α). Hubarbeit: W = m·g·h. 1 J = 1 N·m = 1 kg·m²/s². Keine Arbeit: Kraft senkrecht zur Bewegung (z.B. Zentripetalkraft).",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Leistung in der Physik?",
+    "options": [
+      "Energie",
+      "P = W/t: Leistung = Arbeit pro Zeit. Einheit: Watt (W = J/s)",
+      "Kraft",
+      "Geschwindigkeit"
+    ],
+    "correct": 1,
+    "explanation": "1 W = 1 J/s. P = F·v (Leistung = Kraft × Geschwindigkeit). PS: 1 PS = 735,5 W (historisch). Leistung eines Motors: 100 kW = 136 PS. Elektrische Leistung: P = U·I.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist kinetische Energie?",
+    "options": [
+      "Lageenergie",
+      "Bewegungsenergie: Ekin = ½·m·v². Einheit: Joule (J)",
+      "Wärmeenergie",
+      "Elektrische Energie"
+    ],
+    "correct": 1,
+    "explanation": "Ekin = ½mv². Verdopplung der Geschwindigkeit: 4-fache Energie. Bremsweg quadratisch abhängig von Geschwindigkeit (Unfallrisiko). Bei 50 km/h: Bremsweg ~14 m; bei 100 km/h: ~56 m (4-fach).",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist potenzielle Energie?",
+    "options": [
+      "Bewegungsenergie",
+      "Lageenergie im Gravitationsfeld: Epot = m·g·h (g = 9,81 m/s²)",
+      "Wärmeenergie",
+      "Kernenergie"
+    ],
+    "correct": 1,
+    "explanation": "Epot = mgh: Masse × Erdbeschleunigung × Höhe. Hydroelektrische Energie: Wasser in Höhe → fließt nach unten → Turbine. Feder: Spannenergie Espan = ½·D·x².",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was besagt der Energieerhaltungssatz?",
+    "options": [
+      "Energie kann verloren gehen",
+      "Energie kann weder erzeugt noch vernichtet, nur in andere Formen umgewandelt werden: Eges = const",
+      "Arbeit = Energie",
+      "Kraft ist erhaltungsgehend"
+    ],
+    "correct": 1,
+    "explanation": "Ekin + Epot = const (ohne Reibung). Beispiel: Pendel schwingt zwischen vollständig potentieller (oben) und vollständig kinetischer (unten) Energie. Mit Reibung: Umwandlung in Wärme.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Impuls?",
+    "options": [
+      "Kraft",
+      "p = m·v: Impuls = Masse × Geschwindigkeit. Einheit: kg·m/s",
+      "Energie",
+      "Beschleunigung"
+    ],
+    "correct": 1,
+    "explanation": "Impulserhaltungssatz: In einem abgeschlossenen System bleibt der Gesamtimpuls konstant. Stoß: p₁+p₂ = p₁′+p₂′ (elastisch) oder gleiche Endgeschwindigkeit (vollkommen unelastisch). Raketenantrieb.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Reibung?",
+    "options": [
+      "Anziehungskraft",
+      "Kraft, die einer Bewegung entgegenwirkt. Haftreibung > Gleitreibung > Rollreibung. Reibungskraft: FR = μ·FN",
+      "Magnetismus",
+      "Luftwiderstand"
+    ],
+    "correct": 1,
+    "explanation": "Reibungskoeffizient μ: Gummi auf Asphalt ~0,7; Eis ~0,05. Haftreibung: bewegt sich noch nicht. Gleitreibung: bewegt sich schon. Vorteile: Bremsen, Gehen. Nachteile: Energieverlust in Motoren.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Druck?",
+    "options": [
+      "Kraft allein",
+      "p = F/A: Druck = Kraft dividiert durch Fläche. Einheit: Pascal (Pa = N/m²)",
+      "Masse pro Volumen",
+      "Energie pro Zeit"
+    ],
+    "correct": 1,
+    "explanation": "Kleiner Nagel: große Druckwirkung (kleine Fläche). Schneeschuhe: gleiche Gewicht, größere Fläche → weniger Druck. Luftdruck: 101.325 Pa = 1 atm. Wasserdruck: p = ρ·g·h (steigt mit Tiefe).",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Licht (in der Optik)?",
+    "options": [
+      "Nur Teilchen",
+      "Elektromagnetische Welle mit Wellenlänge 380-780 nm (sichtbar), die sich im Vakuum mit c = 3·10⁸ m/s fortbewegt",
+      "Schallwelle",
+      "Magnetfeld"
+    ],
+    "correct": 1,
+    "explanation": "Wellen-Teilchen-Dualismus: Licht verhält sich je nach Experiment wie Welle (Beugung, Interferenz) oder Teilchen (Photoeffekt: Photonen). Wellenlänge bestimmt Farbe: Rot (~700 nm), Violett (~400 nm).",
+    "topic": "Optik"
+  },
+  {
+    "question": "Was ist Reflexion?",
+    "options": [
+      "Brechung",
+      "Zurückwerfen von Licht an einer Oberfläche: Einfallswinkel = Ausfallswinkel (Reflexionsgesetz)",
+      "Beugung",
+      "Absorption"
+    ],
+    "correct": 1,
+    "explanation": "Reguläre Reflexion: glatte Oberflächen (Spiegel). Diffuse Reflexion: raue Oberflächen (Papier). Anwendung: Spiegel, Retroreflektoren (Straßenmarkierungen). Totale Innenreflexion: Glasfaserkabel.",
+    "topic": "Optik"
+  },
+  {
+    "question": "Was ist Brechung (Refraktion)?",
+    "options": [
+      "Reflexion",
+      "Ablenkung von Licht beim Übergang zwischen Medien mit verschiedener Lichtgeschwindigkeit (Brechungsindex): Snellius: n₁·sin(α₁) = n₂·sin(α₂)",
+      "Absorption",
+      "Beugung"
+    ],
+    "correct": 1,
+    "explanation": "Brechungsindex n = c/v. Luft ≈ 1; Wasser ≈ 1,33; Glas ≈ 1,5. Licht bricht zum Lot hin (dichtes Medium). Anwendungen: Linsen, Brillen, Mikroskop, Regenbogen.",
+    "topic": "Optik"
+  },
+  {
+    "question": "Was ist Totalreflexion?",
+    "options": [
+      "Totale Absorption",
+      "Reflexion des Lichts an der Grenzfläche bei Übergang vom optisch dichteren ins dünnere Medium, wenn Einfallswinkel > kritischer Winkel αg",
+      "Vollständige Brechung",
+      "Normaler Spiegel"
+    ],
+    "correct": 1,
+    "explanation": "Kritischer Winkel: sin(αg) = n₂/n₁. Glasfaserkabel: Licht wird durch Totalreflexion geleitet (kein Signalverlust). Diamant: sehr hoher n → starke Totalreflexion → Glanz.",
+    "topic": "Optik"
+  },
+  {
+    "question": "Was ist eine Sammellinse?",
+    "options": [
+      "Streulinse",
+      "Konvexe Linse, die parallele Lichtstrahlen im Brennpunkt bündelt: Anwendung in Brille (Weitsichtigkeit), Lupe, Projektor",
+      "Planarspiegel",
+      "Zerstreuungslinse"
+    ],
+    "correct": 1,
+    "explanation": "Sammellinse (konvex): Lupe, Kamera, Auge (Linse). Bildentstehung: Gegenstand vor F → virtuelles, vergrößertes Bild (Lupe); hinter 2F → reales, verkleiniertes Bild (Kamera). Brechkraft D = 1/f in Dioptrien.",
+    "topic": "Optik"
+  },
+  {
+    "question": "Was ist elektrischer Strom?",
+    "options": [
+      "Spannung",
+      "Gerichtete Bewegung von Ladungsträgern (Elektronen in Metallen): I = ΔQ/Δt. Einheit: Ampere (A)",
+      "Widerstand",
+      "Magnetfeld"
+    ],
+    "correct": 1,
+    "explanation": "Konventionelle Stromrichtung: + nach – (historisch). Elektronenfluss: – nach +. Gleichstrom (DC): konstante Richtung. Wechselstrom (AC): periodisch wechselnde Richtung (Haushalt: 50 Hz).",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist elektrische Spannung?",
+    "options": [
+      "Stromstärke",
+      "U = W/Q: Spannung = Energie pro Ladung. Einheit: Volt (V). Treibt den elektrischen Strom an",
+      "Widerstand",
+      "Leistung"
+    ],
+    "correct": 1,
+    "explanation": "Spannung: Potentialdifferenz zwischen zwei Punkten. Batterie: 1,5 V; Steckdose: 230 V. Körperschaden: ab ~50 V DC gefährlich. 1 V = 1 J/C (Joule pro Coulomb).",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist das Ohmsche Gesetz?",
+    "options": [
+      "F = m·a",
+      "U = R·I: Spannung = Widerstand × Stromstärke",
+      "P = U·I",
+      "E = mc²"
+    ],
+    "correct": 1,
+    "explanation": "Georg Simon Ohm (1827). R in Ohm (Ω). Gilt für Ohmsche Widerstände (R = const bei gleicher T). Nicht-Ohmsch: Glühlampe (R steigt mit T), Dioden. Berechnung: R = U/I; I = U/R.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist elektrischer Widerstand?",
+    "options": [
+      "Stromstärke",
+      "R = U/I: Maß für den Widerstand eines Leiters gegen elektrischen Strom. Einheit: Ohm (Ω)",
+      "Spannung",
+      "Leistung"
+    ],
+    "correct": 1,
+    "explanation": "Abhängig von Material (Widerstandsbeiwert ρ), Länge l, Querschnitt A: R = ρ·l/A. Guter Leiter: geringes ρ (Cu, Ag, Au). Isolator: hohes ρ. Temperaturabhängig: Metalle: R steigt mit T; Halbleiter: R sinkt.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist elektrische Leistung?",
+    "options": [
+      "Spannung mal Zeit",
+      "P = U·I = I²·R = U²/R. Einheit: Watt (W)",
+      "Strom mal Zeit",
+      "Widerstand mal Strom"
+    ],
+    "correct": 1,
+    "explanation": "P = U·I. Glühlampe 60 W bei 230 V: I = 60/230 ≈ 0,26 A. Elektrische Energie W = P·t = U·I·t. 1 kWh = 3,6·10⁶ J. Stromrechnung: W in kWh × Preis.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist ein Stromkreis?",
+    "options": [
+      "Offene Leiterschleife",
+      "Geschlossener Weg, den der elektrische Strom zurücklegt: Quelle, Leitung, Verbraucher, Schalter",
+      "Nur Batterie",
+      "Nur Leitung"
+    ],
+    "correct": 1,
+    "explanation": "Reihe (Serienschaltung): gleicher Strom, Spannungen addieren sich. Parallel: gleiche Spannung, Ströme addieren sich. Kurzschluss: kein Widerstand → sehr hoher Strom → Überhitzung/Sicherung.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist ein Magnet?",
+    "options": [
+      "Elektrisch geladenes Objekt",
+      "Körper, der ein Magnetfeld erzeugt: Nord- und Südpol untrennbar (magnetischer Dipol)",
+      "Isolator",
+      "Reaktiver Stoff"
+    ],
+    "correct": 1,
+    "explanation": "Permanentmagnet: ferromagnetisches Material (Fe, Co, Ni, Neodym). Magnetfeld-Feldlinien: von N zu S. Gleiche Pole: abstoßend. Ungleiche Pole: anziehend. Erdmagnetfeld schützt vor Teilchenstrahlung.",
+    "topic": "Elektromagnetismus"
+  },
+  {
+    "question": "Was ist elektromagnetische Induktion?",
+    "options": [
+      "Dauermagnet",
+      "Erzeugung einer elektrischen Spannung durch Änderung des magnetischen Flusses (Faraday, 1831)",
+      "Elektrolyse",
+      "Statische Elektrizität"
+    ],
+    "correct": 1,
+    "explanation": "Faradaysches Induktionsgesetz: U = -dΦ/dt. Anwendungen: Generator (Strom aus Bewegung), Transformator (Spannungsumwandlung), Induktionsherd. Basis der modernen Energieversorgung.",
+    "topic": "Elektromagnetismus"
+  },
+  {
+    "question": "Was ist ein Transformator?",
+    "options": [
+      "Elektromotor",
+      "Gerät zur Änderung der Wechselspannung durch elektromagnetische Induktion: U₁/U₂ = N₁/N₂ (Wicklungsverhältnis)",
+      "Gleichstromgenerator",
+      "Kondensator"
+    ],
+    "correct": 1,
+    "explanation": "Kernprinzip: Wechselstrom in Primärspule → wechselndes Magnetfeld im Kern → induzierte Spannung in Sekundärspule. Verlustleistung minimal. Hochspannungsübertragung (400 kV) senkt Verluste.",
+    "topic": "Elektromagnetismus"
+  },
+  {
+    "question": "Was ist Schall?",
+    "options": [
+      "Elektromagnetische Welle",
+      "Mechanische Longitudinalwelle: Druckschwankungen im Medium (Luft, Wasser, Festkörper). Frequenz 20 Hz – 20 kHz (hörbar)",
+      "Teilchenstrahlung",
+      "Licht"
+    ],
+    "correct": 1,
+    "explanation": "Schall braucht Medium (kein Schall im Vakuum!). Schallgeschwindigkeit: Luft ~340 m/s; Wasser ~1500 m/s; Stahl ~5000 m/s. Infra-Schall < 20 Hz; Ultra-Schall > 20 kHz. Doppler-Effekt: Frequenzänderung bei Bewegung.",
+    "topic": "Schwingungen und Wellen"
+  },
+  {
+    "question": "Was ist Wärme in der Physik?",
+    "options": [
+      "Temperatur",
+      "Energie, die aufgrund eines Temperaturunterschieds übertragen wird. Übertragungsmechanismen: Wärmeleitung, Konvektion, Strahlung",
+      "Masse",
+      "Druck"
+    ],
+    "correct": 1,
+    "explanation": "Wärme Q in Joule. Wärmekapazität: Q = m·c·ΔT (c: spezifische Wärmekapazität). Wasser: c = 4186 J/(kg·K). Thermodynamik: 1. Hauptsatz: ΔU = Q + W (Energieerhaltung).",
+    "topic": "Thermodynamik"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Temperatur und Wärme?",
+    "options": [
+      "Kein Unterschied",
+      "Temperatur: Maß für mittlere kinetische Energie der Teilchen (°C, K). Wärme: übertragene Energie aufgrund von Temperaturunterschied (J)",
+      "Temperatur ist größer",
+      "Wärme wird in Kelvin gemessen"
+    ],
+    "correct": 1,
+    "explanation": "0°C = 273,15 K (Kelvin = absolute Temperatur). Absoluter Nullpunkt: 0 K = -273,15°C. Wärme fließt stets vom wärmeren zum kälteren Körper (2. Hauptsatz).",
+    "topic": "Thermodynamik"
+  },
+  {
+    "question": "Was ist das Gravitationsgesetz (Newton)?",
+    "options": [
+      "F = m·a",
+      "F = G·m₁·m₂/r²: Zwei Massen ziehen sich an, Kraft proportional zu Massen, umgekehrt proportional zum Abstandsquadrat",
+      "Energie = mc²",
+      "Druck = Kraft/Fläche"
+    ],
+    "correct": 1,
+    "explanation": "G = 6,674·10⁻¹¹ N·m²/kg². Erdbeschleunigung: g = G·M_E/R_E² ≈ 9,81 m/s². Mond: g ≈ 1,62 m/s². Keplersches Gesetz (3.): T² ∝ r³. Begründet Planetenbahnen und Gezeiten.",
+    "topic": "Gravitation"
+  },
+  {
+    "question": "Was ist Kreisbewegung und Zentripetalkraft?",
+    "options": [
+      "Geradlinige Bewegung",
+      "Gleichförmige Kreisbewegung: konstante Geschwindigkeit, aber ständig ändernde Richtung → Beschleunigung zur Mitte (Zentripetalbeschleunigung). Fz = m·v²/r",
+      "Freier Fall",
+      "Gleichförmige geradlinige Bewegung"
+    ],
+    "correct": 1,
+    "explanation": "Zentripetalkraft: notwendige Kraft zur Kreisbewegung, zeigt zum Mittelpunkt. Bereitgestellt durch: Seil (Fahrrad), Gravitation (Planetenbahn), Normalkraft (Looping). Scheinbar entgegenwirkend: Zentrifugalkraft (Trägheitskraft im rotierenden System).",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Relativitätstheorie (spezielle)?",
+    "options": [
+      "Theorie der Schwerkraft",
+      "Einsteins Theorie (1905): Lichtgeschwindigkeit c konstant für alle Beobachter; keine Masse kann c erreichen; E = mc²",
+      "Quantenmechanik",
+      "Atomtheorie"
+    ],
+    "correct": 1,
+    "explanation": "Folgerungen: Zeitdilatation (bewegte Uhren gehen langsamer), Längenkontraktion. E = mc²: Masse als Energieform. GPS-Satelliten: Relativitätskorrekturen notwendig. Bestätigt durch Atomuhrexperimente und GPS.",
+    "topic": "Relativität"
+  },
+  {
+    "question": "Was ist Quantenmechanik?",
+    "options": [
+      "Klassische Mechanik",
+      "Physik des subatomaren Bereichs: Energie ist gequantelt, Heisenbergsche Unschärferelation, Welle-Teilchen-Dualismus, Wahrscheinlichkeitsinterpretation",
+      "Relativitätstheorie",
+      "Thermodynamik"
+    ],
+    "correct": 1,
+    "explanation": "Planck (1900): E = h·f (Quantelung). Bohr (1913): Atomhüllen. de Broglie: Materiewellen. Heisenberg: Δx·Δp ≥ ℏ/2 (Ort und Impuls nicht gleichzeitig genau messbar). Schrödinger-Gleichung. Anwendung: Laser, Halbleiter, MRI.",
+    "topic": "Quantenmechanik"
+  },
+  {
+    "question": "Was ist Doppler-Effekt?",
+    "options": [
+      "Reflexion von Schall",
+      "Änderung der wahrgenommenen Frequenz (von Schall oder Licht) durch Relativbewegung zwischen Quelle und Beobachter",
+      "Beugung von Licht",
+      "Brechung"
+    ],
+    "correct": 1,
+    "explanation": "Quelle nähert sich: höhere Frequenz (höherer Ton). Quelle entfernt sich: niedrigere Frequenz (tieferer Ton). Beispiel: Martinhorn. Licht: Rotverschiebung (entfernendes Objekt) → Beweis für Expansion des Universums. Radar-Geschwindigkeitsmessung.",
+    "topic": "Schwingungen und Wellen"
+  },
+  {
+    "question": "Was ist Radioaktiver Zerfall und wofür wird er genutzt?",
+    "options": [
+      "Nur gefährlich, ohne Nutzen",
+      "Spontaner Zerfall instabiler Kerne: Nuklearmedizin (PET, Szintigraphie), Strahlentherapie (Krebs), Datierung (C-14), Kernenergie, Rauchmelder (Am-241)",
+      "Nur zur Energiegewinnung",
+      "Nur in Kernkraftwerken"
+    ],
+    "correct": 1,
+    "explanation": "Medizin: ¹³¹I (Schilddrüse), ¹⁸F (PET). C-14-Datierung: bis 50.000 Jahre. Uranspaltung: Kernenergie. Rauchmelder: α-Strahler Am-241. Kontroverse: Kernenergie (CO₂-arm, aber Atommüll).",
+    "topic": "Kernphysik"
+  },
+  {
+    "question": "Was ist ein elektrisches Feld?",
+    "options": [
+      "Ein Magnetfeld",
+      "Der Bereich um eine elektrische Ladung, in dem eine Kraft auf andere Ladungen wirkt: E = F/q. Einheit: V/m",
+      "Ein Gravitationsfeld",
+      "Eine Wärmequelle"
+    ],
+    "correct": 1,
+    "explanation": "Elektrisches Feld E = F/q (N/C = V/m). Feldlinien: von + nach –. Plattenkondensator: homogenes Feld E = U/d. Ladungen: gleiche stoßen ab, ungleiche ziehen an (Coulomb-Gesetz: F = k·q₁·q₂/r²).",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist ein Kondensator?",
+    "options": [
+      "Ein Widerstand",
+      "Bauelement, das elektrische Energie in einem elektrischen Feld speichert: C = Q/U. Einheit: Farad (F)",
+      "Eine Induktionsspule",
+      "Ein Generator"
+    ],
+    "correct": 1,
+    "explanation": "Plattenkondensator: C = ε₀·εr·A/d. Ladung Q = C·U. Energie W = ½·C·U². Anwendungen: Blitzgerät, Ladungsausgleich, Filter in Schaltkreisen. Im Wechselstromkreis: kein Gleichstromdurchgang, Wechselstrom wird geleitet.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist ein Atom in der Physik?",
+    "options": [
+      "Kleinste Einheit der Materie, nicht weiter teilbar",
+      "Kleinstes Teilchen eines Elements, bestehend aus Kern (Protonen + Neutronen) und Elektronenhülle – kann durch Kernreaktionen weiter zerlegt werden",
+      "Nur Elektronen",
+      "Ein Molekül"
+    ],
+    "correct": 1,
+    "explanation": "Rutherford-Experiment (1911): Streuversuch → kleiner, schwerer Kern + große leere Hülle. Kerndurchmesser: ~10⁻¹⁵ m. Atomdurchmesser: ~10⁻¹⁰ m. Bindungsenergie im Kern: Kernkräfte (stark, kurzreichweitig).",
+    "topic": "Atomphysik"
+  },
+  {
+    "question": "Was ist Wärmeausdehnung?",
+    "options": [
+      "Stoffe werden bei Erwärmung kleiner",
+      "Die meisten Stoffe dehnen sich bei Erwärmung aus: Längenausdehnung ΔL = α·L₀·ΔT",
+      "Nur Gase dehnen sich aus",
+      "Wärme und Ausdehnung haben nichts miteinander zu tun"
+    ],
+    "correct": 1,
+    "explanation": "Längenausdehnungskoeffizient α: Stahl ~12·10⁻⁶/K; Al ~23·10⁻⁶/K. Bimetall: zwei Metalle mit versch. α → Biegen bei Erwärmung (Thermostat). Dehnungsfugen in Brücken. Anomalie des Wassers: größte Dichte bei 4°C.",
+    "topic": "Thermodynamik"
+  },
+  {
+    "question": "Was ist der Aggregatzustand und wie wechselt man ihn?",
+    "options": [
+      "Nur fest oder flüssig",
+      "Physikalischer Zustand eines Stoffs: fest, flüssig, gasförmig (+ Plasma). Wechsel durch Energiezufuhr/-abgabe: Schmelzen, Erstarren, Verdampfen, Kondensieren, Sublimieren, Resublimieren",
+      "Nur Flüssigkeiten haben Aggregatzustände",
+      "Aggregatzustand ist chemische Eigenschaft"
+    ],
+    "correct": 1,
+    "explanation": "Schmelzpunkt/Siedepunkt: stoffspezifisch. Wasser: Schmelzpunkt 0°C, Siedepunkt 100°C (bei 1 atm). Sublimation: fest → Gas (Trockenes Eis: CO₂). Energiebilanz: Schmelzwärme, Verdampfungswärme (H₂O: 2260 kJ/kg) – viel Energie nötig.",
+    "topic": "Thermodynamik"
+  },
+  {
+    "question": "Was ist Schwingung und Welle?",
+    "options": [
+      "Dasselbe wie Strom",
+      "Schwingung: periodische Bewegung um eine Ruhelage. Welle: räumliche Ausbreitung einer Schwingung. Kenngrößen: Frequenz f, Wellenlänge λ, Amplitude A, Ausbreitungsgeschwindigkeit c = f·λ",
+      "Nur Schall",
+      "Nur Licht"
+    ],
+    "correct": 1,
+    "explanation": "Frequenz f in Hz. Periodendauer T = 1/f. Transversalwelle: Schwingung senkrecht zur Ausbreitung (Licht, Wasser). Longitudinalwelle: Schwingung parallel zur Ausbreitung (Schall). Stehende Welle: Überlagerung gleicher Wellen. Resonanz: Eigenfrequenz.",
+    "topic": "Schwingungen und Wellen"
+  }
+]

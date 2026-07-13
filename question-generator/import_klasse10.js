@@ -18,6 +18,16 @@ const BLOCK_MAP = {
   'block03_deutsch_literatur':   ['Deutsch',    'Literatur',      '10'],
   'block04_deutsch_grammatik':   ['Deutsch',    'Grammatik',      '10'],
   'block05_englisch_komm':       ['Englisch',   'Kommunikation',  '10'],
+  'block06_geschichte_wk1':      ['Geschichte', 'Erster Weltkrieg', '10'],
+  'block07_geschichte_ns':       ['Geschichte', 'NS-Zeit',        '10'],
+  'block08_bio_genetik':         ['Biologie',   'Genetik',        '10'],
+  'block09_chemie':              ['Chemie',     'Allgemein',      '10'],
+  'block10_physik':              ['Physik',     'Allgemein',      '10'],
+  'block11_mathe_stochastik':    ['Mathematik', 'Stochastik',     '10'],
+  'block12_englisch_grammatik':  ['Englisch',   'Grammatik',      '10'],
+  'block13_geographie':          ['Geographie', 'Allgemein',      '10'],
+  'block14_politik_wirtschaft':  ['Politik',    'Wirtschaft',     '10'],
+  'block15_mathe_analysis':      ['Mathematik', 'Analysis',       '10'],
 };
 
 // ── Firebase Auth ──

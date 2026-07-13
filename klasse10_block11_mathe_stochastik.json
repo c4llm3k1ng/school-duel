@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist ein Zufallsexperiment?",
+    "options": [
+      "Ein geplantes Experiment mit sicherem Ausgang",
+      "Ein Experiment, dessen Ergebnis nicht vorhersagbar ist, aber alle möglichen Ergebnisse bekannt sind",
+      "Eine mathematische Formel",
+      "Eine Statistik"
+    ],
+    "correct": 1,
+    "explanation": "Zufallsexperiment: Voraussetzungen sind bekannt, Ergebnis ist zufällig. Ergebnismenge Omega: alle möglichen Ergebnisse. Ereignis: Teilmenge von Omega. Beispiele: Würfeln, Münzwurf, Glücksrad.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist die Laplace-Wahrscheinlichkeit?",
+    "options": [
+      "Immer 0,5",
+      "P(A) = Anzahl der günstigen Ergebnisse / Anzahl aller gleichwahrscheinlichen Ergebnisse",
+      "Summe aller Wahrscheinlichkeiten",
+      "Produkt zweier Wahrscheinlichkeiten"
+    ],
+    "correct": 1,
+    "explanation": "Laplace-Experiment: alle Elementarereignisse gleichwahrscheinlich. P(A) = |A| / |Omega|. Beispiel: Würfel, P(gerade) = 3/6 = 0,5. Nicht anwendbar wenn Ergebnisse unterschiedlich wahrscheinlich sind.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was gilt für die Summe aller Wahrscheinlichkeiten eines Zufallsexperiments?",
+    "options": [
+      "Sie ist immer 0",
+      "Sie ist immer 1",
+      "Sie hängt vom Experiment ab",
+      "Sie ist mindestens 2"
+    ],
+    "correct": 1,
+    "explanation": "Axiom (Kolmogorov): Summe aller Wahrscheinlichkeiten der Elementarereignisse = 1. Konsequenz: P(nicht A) = 1 - P(A). Beispiel: Würfel: 6 × (1/6) = 1.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist das Gegenereignis?",
+    "options": [
+      "Ein unmögliches Ereignis",
+      "Das Ereignis, dass A nicht eintritt: P(nicht A) = 1 - P(A)",
+      "Das sicherste Ereignis",
+      "Das häufigste Ereignis"
+    ],
+    "correct": 1,
+    "explanation": "Gegenereignis (Komplement): nicht-A oder A-quer. P(nicht A) = 1 - P(A). Nützliche Strategie: manchmal ist P(nicht A) leichter zu berechnen als P(A). Beispiel: P(mind. eine 6 bei 2 Würfen) = 1 - P(keine 6).",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist ein Baumdiagramm in der Stochastik?",
+    "options": [
+      "Ein Diagramm für Bäume in der Natur",
+      "Grafische Darstellung mehrstufiger Zufallsexperimente: Äste zeigen Ergebnisse und Wahrscheinlichkeiten, Pfadregeln ermöglichen Berechnung",
+      "Ein Histogramm",
+      "Ein Kreisdiagramm"
+    ],
+    "correct": 1,
+    "explanation": "Baumdiagramm: jede Stufe = ein Schritt im Experiment. Pfadregel 1: Wahrscheinlichkeit eines Pfades = Produkt der Astwahrscheinlichkeiten. Pfadregel 2: Wahrscheinlichkeit eines Ereignisses = Summe der Pfadwahrscheinlichkeiten.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist die Pfadregel (Multiplikationsregel)?",
+    "options": [
+      "Addition der Wahrscheinlichkeiten",
+      "Die Wahrscheinlichkeit eines Pfades in einem Baumdiagramm ist das Produkt der Wahrscheinlichkeiten auf dem Pfad",
+      "Division der Wahrscheinlichkeiten",
+      "Subtraktion der Wahrscheinlichkeiten"
+    ],
+    "correct": 1,
+    "explanation": "P(A und B) = P(A) · P(B|A). Für unabhängige Ereignisse: P(A und B) = P(A) · P(B). Beispiel: 2× Münze, P(Kopf und Kopf) = 0,5 × 0,5 = 0,25.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was sind unabhängige Ereignisse?",
+    "options": [
+      "Ereignisse, die nie zusammen auftreten",
+      "Ereignisse, bei denen das Eintreten des einen die Wahrscheinlichkeit des anderen nicht beeinflusst: P(B|A) = P(B)",
+      "Ereignisse mit gleicher Wahrscheinlichkeit",
+      "Gegenereignisse"
+    ],
+    "correct": 1,
+    "explanation": "Unabhängigkeit: P(A und B) = P(A) · P(B). Beispiel: Münzwurf und Würfelwurf sind unabhängig. Abhängig: Karten ziehen ohne Zurücklegen. Test: gilt P(A∩B) = P(A)·P(B)?",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist bedingte Wahrscheinlichkeit?",
+    "options": [
+      "Immer 0,5",
+      "P(B|A): Wahrscheinlichkeit von B, wenn A bereits eingetreten ist: P(B|A) = P(A und B) / P(A)",
+      "Die Wahrscheinlichkeit beider Ereignisse",
+      "Das Gegenereignis"
+    ],
+    "correct": 1,
+    "explanation": "P(B|A) = P(A∩B) / P(A). Beispiel: Urne 3 rote, 2 blaue Kugeln. P(2. rot | 1. rot, ohne Zurücklegen) = 2/4 = 0,5. Wichtig für Baumdiagramme mit Abhängigkeit.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist Ziehen mit Zurücklegen?",
+    "options": [
+      "Gezogenes Objekt bleibt heraus",
+      "Gezogenes Objekt wird zurückgelegt: alle Ziehungen unabhängig, Wahrscheinlichkeiten bleiben konstant",
+      "Nur für Urnen",
+      "Nur für Karten"
+    ],
+    "correct": 1,
+    "explanation": "Mit Zurücklegen: unabhängige Ereignisse, P konstant. Ohne Zurücklegen: Abhängigkeit, Gesamtmenge verändert sich. Beispiel Urne 10 Kugeln (3 rot): P(rot) = 3/10 bei jeder Ziehung MIT Zurücklegen.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist die Binomialverteilung?",
+    "options": [
+      "Verteilung bei unendlich vielen Ergebnissen",
+      "Wahrscheinlichkeitsverteilung für die Anzahl k der Treffer bei n unabhängigen Versuchen mit je gleicher Trefferwahrscheinlichkeit p",
+      "Normalverteilung",
+      "Gleichverteilung"
+    ],
+    "correct": 1,
+    "explanation": "Voraussetzungen: n Versuche, unabhängig, p konstant, nur 2 Ergebnisse (Treffer/Niete). Formel: P(X=k) = C(n,k) · p^k · (1-p)^(n-k). B(n;p) als Schreibweise.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist der Binomialkoeffizient \"n über k\" (C(n,k))?",
+    "options": [
+      "n dividiert durch k",
+      "Anzahl der Möglichkeiten, k Objekte aus n auszuwählen (ohne Reihenfolge): n! / (k! · (n-k)!)",
+      "n mal k",
+      "n hoch k"
+    ],
+    "correct": 1,
+    "explanation": "C(n,k) = n! / (k! · (n-k)!). Auch: Pascalsches Dreieck. Beispiel: C(4,2) = 4!/(2!·2!) = 6. Bedeutung bei Binomialverteilung: Anzahl der Möglichkeiten, genau k Treffer zu erhalten.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist der Erwartungswert einer Zufallsgröße?",
+    "options": [
+      "Der häufigste Wert",
+      "Der durchschnittliche Wert einer Zufallsgröße über viele Versuche: E(X) = Summe aller x_i · P(X=x_i)",
+      "Der Median",
+      "Der Maximalwert"
+    ],
+    "correct": 1,
+    "explanation": "E(X) = Summe(x_i · P(X=x_i)). Bei Binomialverteilung: E(X) = n · p. Beispiel: fairer Würfel E(X) = 1·(1/6)+2·(1/6)+...+6·(1/6) = 3,5. Gesetz der großen Zahlen: Mittelwert nähert sich E(X).",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist die Varianz einer Zufallsgröße?",
+    "options": [
+      "Der Erwartungswert",
+      "Maß für die Streuung um den Erwartungswert: Var(X) = E((X-E(X))²). Bei Binomialverteilung: Var(X) = n·p·(1-p)",
+      "Der Median",
+      "Die Standardabweichung selbst"
+    ],
+    "correct": 1,
+    "explanation": "Varianz: mittlere quadratische Abweichung vom Erwartungswert. Standardabweichung sigma = Wurzel(Var(X)) in der gleichen Einheit wie X. Kleine sigma: geringe Streuung; große sigma: starke Streuung.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist der Median?",
+    "options": [
+      "Der Mittelwert",
+      "Der mittlere Wert einer geordneten Datenreihe: 50% der Werte liegen darunter, 50% darüber",
+      "Die Standardabweichung",
+      "Der häufigste Wert"
+    ],
+    "correct": 1,
+    "explanation": "Median: bei ungerader Anzahl n der mittlere Wert; bei gerader Anzahl Mittelwert der beiden mittleren Werte. Robuster als Mittelwert gegenüber Ausreißern. Beispiel: Einkommen – Median fairer als Durchschnitt.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist der Modus in der Statistik?",
+    "options": [
+      "Der Mittelwert",
+      "Der am häufigsten vorkommende Wert in einer Datenmenge",
+      "Der Median",
+      "Die Varianz"
+    ],
+    "correct": 1,
+    "explanation": "Modus (Modalwert): häufigster Wert. Kann mehrere geben (bimodal). Beispiel: Schuhgrößen 42 kommt am häufigsten vor → Modus = 42. Nützlich bei nominalen Daten (z.B. Lieblingsfarbe).",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist das arithmetische Mittel?",
+    "options": [
+      "Häufigster Wert",
+      "Summe aller Werte dividiert durch die Anzahl der Werte: x-quer = (x₁+x₂+...+xₙ)/n",
+      "Mittlerer Wert",
+      "Wurzel der Varianz"
+    ],
+    "correct": 1,
+    "explanation": "Arithmetisches Mittel: empfindlich gegenüber Ausreißern. Beispiel: Temperaturen 10, 12, 11, 9, 100 → Mittel = 28,4 (aber Ausreißer verzerrt). Median wäre 11 (robuster).",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist ein Histogramm?",
+    "options": [
+      "Ein Kreisdiagramm",
+      "Grafische Darstellung von Häufigkeitsverteilungen: Rechtecke, deren Fläche die Häufigkeit einer Klasse angibt",
+      "Ein Punktediagramm",
+      "Ein Liniendiagramm"
+    ],
+    "correct": 1,
+    "explanation": "Histogramm: x-Achse = Merkmalsausprägung (Klassen), y-Achse = Häufigkeitsdichte (Häufigkeit/Klassenbreite). Fläche jedes Balkens = relative Häufigkeit. Unterschied zum Balkendiagramm: Klassen zusammenhängend.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist die relative Häufigkeit?",
+    "options": [
+      "Absolute Anzahl eines Merkmals",
+      "Anteil eines Merkmals an der Gesamtzahl: h(A) = Anzahl(A) / n (0 ≤ h ≤ 1)",
+      "Summe der Häufigkeiten",
+      "Mittelwert"
+    ],
+    "correct": 1,
+    "explanation": "Relative Häufigkeit: h = k/n. Beispiel: 30 Schüler, 12 haben Brille → h = 12/30 = 0,4 = 40%. Gesetz der großen Zahlen: relative Häufigkeit nähert sich der Wahrscheinlichkeit bei vielen Versuchen.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist eine Normalverteilung?",
+    "options": [
+      "Gleichverteilung",
+      "Glockenförmige Wahrscheinlichkeitsverteilung, symmetrisch um den Mittelwert mu: Standardnormalverteilung mit mu=0 und sigma=1",
+      "Binomialverteilung",
+      "Gleichmäßige Verteilung"
+    ],
+    "correct": 1,
+    "explanation": "Normalverteilung N(mu; sigma²): 68% der Werte in [mu-sigma; mu+sigma], 95% in [mu-2sigma; mu+2sigma], 99,7% in [mu-3sigma; mu+3sigma] (Sigma-Regeln). Wichtigste Verteilung in der Statistik (Zentraler Grenzwertsatz).",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist das Gesetz der großen Zahlen?",
+    "options": [
+      "Je mehr Versuche, desto ungenauer wird das Ergebnis",
+      "Mit wachsender Versuchsanzahl n nähert sich die relative Häufigkeit eines Ereignisses seiner Wahrscheinlichkeit an",
+      "Ein mathematisches Axiom",
+      "Eine Näherungsregel für Polynome"
+    ],
+    "correct": 1,
+    "explanation": "Beispiel: Münzwurf. Bei 10 Würfen kann es 3× Kopf geben (30%); bei 10.000 Würfen nähert sich die relative Häufigkeit 50%. Basis für Versicherungsmathematik und statistische Schlüsse.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist Kombinatorik?",
+    "options": [
+      "Lehre der Wahrscheinlichkeiten",
+      "Teilgebiet der Mathematik, das sich mit dem Zählen von Anordnungen und Auswahlen befasst: Permutationen, Kombinationen, Variationen",
+      "Statistik",
+      "Differentialrechnung"
+    ],
+    "correct": 1,
+    "explanation": "Grundprinzip: k Entscheidungen mit n₁,...,nk Möglichkeiten → n₁·n₂·...·nk Gesamtmöglichkeiten. Permutation n Elemente: n! Anordnungen. Kombination: C(n,k) Auswahlen ohne Reihenfolge.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist eine Permutation?",
+    "options": [
+      "Auswahl ohne Reihenfolge",
+      "Anordnung von n verschiedenen Elementen in einer bestimmten Reihenfolge: n! Möglichkeiten",
+      "Auswahl mit Reihenfolge",
+      "Kombination"
+    ],
+    "correct": 1,
+    "explanation": "Permutation von n Elementen: n! = n·(n-1)·...·2·1. Beispiel: 4 Bücher auf Regal: 4! = 24 Anordnungen. Permutation mit Wiederholung: n!/(n₁!·n₂!·...) wenn gleiche Elemente vorhanden.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist eine Kombination (ohne Reihenfolge)?",
+    "options": [
+      "Anordnung aller Elemente",
+      "Auswahl von k aus n Elementen ohne Beachtung der Reihenfolge: C(n,k) = n!/(k!·(n-k)!) Möglichkeiten",
+      "Anordnung mit Wiederholung",
+      "Permutation"
+    ],
+    "correct": 1,
+    "explanation": "Kombination ohne Wiederholung: Lotto 6 aus 49: C(49,6) = 13.983.816 Möglichkeiten. Mit Wiederholung: C(n+k-1, k). Reihenfolge spielt keine Rolle (anders als bei Variationen).",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was versteht man unter einer Zufallsvariable?",
+    "options": [
+      "Eine beliebige Variable",
+      "Eine Variable, die jedem Ergebnis eines Zufallsexperiments eine Zahl zuordnet: diskret (abzählbar) oder stetig (alle reellen Werte in einem Intervall)",
+      "Eine Konstante",
+      "Ein Parameter"
+    ],
+    "correct": 1,
+    "explanation": "Diskrete ZV: Würfelzahl, Münzanzahl. Stetige ZV: Körpergröße, Zeit. Wahrscheinlichkeitsverteilung: welche Werte mit welcher Wahrscheinlichkeit. Erwartungswert E(X) und Varianz Var(X) beschreiben die Verteilung.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Wie berechnet man die kumulative Wahrscheinlichkeit P(X ≤ k) bei der Binomialverteilung?",
+    "options": [
+      "Nur P(X=k)",
+      "Summe aller P(X=i) für i von 0 bis k: P(X≤k) = P(X=0) + P(X=1) + ... + P(X=k)",
+      "Produkt aller Wahrscheinlichkeiten",
+      "Differenz zweier Wahrscheinlichkeiten"
+    ],
+    "correct": 1,
+    "explanation": "Kumulierte Wahrscheinlichkeit: P(X≤k) = Summe der Einzelwahrscheinlichkeiten. Aus Tabellen oder Taschenrechner. P(X<k) = P(X≤k-1). P(X≥k) = 1 - P(X≤k-1).",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist Signifikanztests in der Statistik?",
+    "options": [
+      "Eine Formel zur Kurvendiskussion",
+      "Statistisches Verfahren zum Überprüfen einer Hypothese: Wird die Nullhypothese H₀ abgelehnt, wenn das Testergebnis unwahrscheinlich ist?",
+      "Eine Maßzahl",
+      "Eine Wahrscheinlichkeitsverteilung"
+    ],
+    "correct": 1,
+    "explanation": "Signifikanzniveau alpha (oft 5%): Ablehnungsbereich, in dem H₀ verworfen wird. Fehler 1. Art: H₀ fälschlicherweise abgelehnt. Fehler 2. Art: H₀ fälschlicherweise beibehalten. p-Wert: tatsächliche Wahrscheinlichkeit des Testergebnisses.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist ein Boxplot?",
+    "options": [
+      "Ein Balkendiagramm",
+      "Grafische Darstellung mit Minimum, unterem Quartil, Median, oberem Quartil und Maximum",
+      "Ein Histogramm",
+      "Ein Kreisdiagramm"
+    ],
+    "correct": 1,
+    "explanation": "Boxplot: Box = Interquartilsabstand IQR (Q3-Q1), enthält 50% der Daten. Whisker bis zu Ausreißergrenze (Q1-1,5·IQR und Q3+1,5·IQR). Ausreißer als Punkte. Guter Vergleich mehrerer Datensätze.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist der Interquartilsabstand (IQR)?",
+    "options": [
+      "Differenz von Maximum und Minimum",
+      "Differenz zwischen dem oberen Quartil (Q3) und dem unteren Quartil (Q1): IQR = Q3 - Q1",
+      "Standardabweichung",
+      "Varianz"
+    ],
+    "correct": 1,
+    "explanation": "IQR = Q3 - Q1: enthält die mittleren 50% der Daten. Robustes Streuungsmaß (nicht anfällig für Ausreißer). Q1 = 25%-Quantil, Q3 = 75%-Quantil. Ausreißer: Werte außerhalb [Q1-1,5·IQR, Q3+1,5·IQR].",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist eine Stichprobe?",
+    "options": [
+      "Die Gesamtheit aller Merkmalsobjekte",
+      "Eine Teilmenge der Grundgesamtheit, die untersucht wird, um Rückschlüsse auf die Gesamtheit zu ziehen",
+      "Eine Wahrscheinlichkeitsverteilung",
+      "Ein Zufallsexperiment"
+    ],
+    "correct": 1,
+    "explanation": "Stichprobe: Zufällig ausgewählt, repräsentativ. Grundgesamtheit: alle zu untersuchenden Objekte. Stichprobenumfang n. Schluss von Stichprobe auf Grundgesamtheit: Induktive Statistik.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was versteht man unter dem Satz von Bayes?",
+    "options": [
+      "Formel für Binomialkoeffizient",
+      "Formel zur Berechnung bedingter Wahrscheinlichkeiten: P(A|B) = P(B|A)·P(A) / P(B)",
+      "Formel für Normalverteilung",
+      "Formel für Erwartungswert"
+    ],
+    "correct": 1,
+    "explanation": "Bayes: P(A|B) = P(B|A)·P(A) / [P(B|A)·P(A)+P(B|nicht-A)·P(nicht-A)]. Anwendung: Medizintests (positiver Test ≠ krank, wenn Grundrate gering). Spam-Filter.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist ein fairer Würfel im stochastischen Sinne?",
+    "options": [
+      "Nur ein 6-seitiger Würfel",
+      "Würfel, bei dem alle Seiten gleich wahrscheinlich sind: P(i) = 1/6 für i = 1,...,6",
+      "Würfel nur für Laplace-Experimente",
+      "Würfel mit festem Ergebnis"
+    ],
+    "correct": 1,
+    "explanation": "Fairer Würfel: Laplace-Experiment. Unfair (gezinkt): verschiedene Wahrscheinlichkeiten. Empirischer Test der Fairness: sehr viele Würfe → relative Häufigkeiten sollten alle nahe 1/6 sein.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist ein vollständiges Ereignissystem?",
+    "options": [
+      "Alle Ereignisse mit P=0",
+      "Eine Menge paarweise disjunkter Ereignisse, deren Vereinigung die gesamte Ergebnismenge ergibt und deren Wahrscheinlichkeiten sich zu 1 summieren",
+      "Nur das sichere Ereignis",
+      "Alle möglichen Ereignispaare"
+    ],
+    "correct": 1,
+    "explanation": "Vollständiges Ereignissystem: A₁, A₂,..., An paarweise disjunkt, A₁∪A₂∪...∪An = Omega. Konsequenz: Satz der totalen Wahrscheinlichkeit: P(B) = Summe P(B|Ai)·P(Ai). Basis für Baumdiagramme.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was beschreibt die Streuung einer Datenreihe?",
+    "options": [
+      "Nur den Mittelwert",
+      "Wie weit die Werte um einen zentralen Wert verteilt sind: Maße sind Varianz, Standardabweichung, IQR, Spannweite",
+      "Den häufigsten Wert",
+      "Die Summe der Werte"
+    ],
+    "correct": 1,
+    "explanation": "Streuungsmaße: Spannweite R = Max-Min (empfindlich für Ausreißer), IQR (robust), Varianz s² und Standardabweichung s (am häufigsten genutzt). Kleine Streuung = homogene Daten.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist das Additionsgesetz für Wahrscheinlichkeiten?",
+    "options": [
+      "P(A oder B) = P(A) · P(B)",
+      "P(A oder B) = P(A) + P(B) - P(A und B) für beliebige Ereignisse A und B",
+      "P(A oder B) = P(A) + P(B) immer",
+      "P(A oder B) = P(A) - P(B)"
+    ],
+    "correct": 1,
+    "explanation": "Allgemeines Additionsgesetz: P(A∪B) = P(A)+P(B)-P(A∩B). Für disjunkte Ereignisse (A∩B = leer): P(A∪B) = P(A)+P(B). Venn-Diagramm hilft zur Visualisierung.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Welche Wahrscheinlichkeit hat das sichere Ereignis?",
+    "options": [
+      "0",
+      "1",
+      "0,5",
+      "Hängt vom Experiment ab"
+    ],
+    "correct": 1,
+    "explanation": "Sicheres Ereignis Omega: tritt immer ein, P(Omega) = 1. Unmögliches Ereignis (leere Menge): tritt nie ein, P(leer) = 0. Axiome der Kolmogorovschen Wahrscheinlichkeitstheorie.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was versteht man unter Regression in der Statistik?",
+    "options": [
+      "Rückgang der Daten",
+      "Methode zur Beschreibung eines Zusammenhangs zwischen Variablen durch eine Funktion (z.B. Gerade): Minimierung des Abstands der Datenpunkte",
+      "Wahrscheinlichkeitsrechnung",
+      "Median-Berechnung"
+    ],
+    "correct": 1,
+    "explanation": "Lineare Regression: y = a·x + b. Methode der kleinsten Quadrate: minimiert Summe der quadratischen Abweichungen. Korrelationskoeffizient r (-1 bis 1): Stärke des linearen Zusammenhangs.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist der Korrelationskoeffizient?",
+    "options": [
+      "Immer positiv",
+      "Maß für die Stärke und Richtung des linearen Zusammenhangs zweier Variablen: r = 1 (perfekt positiv), r = 0 (kein linearer Zusammenhang), r = -1 (perfekt negativ)",
+      "Immer 1",
+      "Die Steigung der Regressionsgeraden"
+    ],
+    "correct": 1,
+    "explanation": "Pearson-Korrelation r. Achtung: Korrelation ≠ Kausalität. Scheinkorrelation: beide Variablen von einer dritten beeinflusst. |r| > 0,7 gilt oft als starker Zusammenhang.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist diskriptive (beschreibende) Statistik?",
+    "options": [
+      "Schlüsse über die Grundgesamtheit",
+      "Methoden zur Beschreibung und Zusammenfassung von Datensätzen: Häufigkeiten, Mittelwert, Median, Diagramme",
+      "Wahrscheinlichkeitsrechnung",
+      "Signifikanztests"
+    ],
+    "correct": 1,
+    "explanation": "Deskriptive Statistik: Beschreibt vorhandene Daten ohne Schlüsse. Induktive (schließende) Statistik: zieht Schlüsse von Stichprobe auf Grundgesamtheit (Konfidenzintervalle, Tests).",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist eine Vierfeldertafel?",
+    "options": [
+      "Ein Diagramm mit vier Feldern",
+      "Tabellarische Darstellung von zwei Merkmalen mit je zwei Ausprägungen: ermöglicht schnelle Berechnung von bedingten Wahrscheinlichkeiten und Vergleich von Gruppen",
+      "Eine statistische Verteilung",
+      "Ein Baumdiagramm"
+    ],
+    "correct": 1,
+    "explanation": "Vierfeldertafel: Spalten = Merkmal 1 (z.B. krank/gesund), Zeilen = Merkmal 2 (z.B. Test positiv/negativ). Randwahrscheinlichkeiten und bedingte Wahrscheinlichkeiten ablesbar. Wichtig bei Medizintests.",
+    "topic": "Stochastik"
+  },
+  {
+    "question": "Was ist Stochastik?",
+    "options": [
+      "Geometrie",
+      "Teilgebiet der Mathematik, das Wahrscheinlichkeitsrechnung und Statistik umfasst",
+      "Differentialrechnung",
+      "Lineare Algebra"
+    ],
+    "correct": 1,
+    "explanation": "Stochastik = Wahrscheinlichkeitstheorie + Statistik. Wahrscheinlichkeitsrechnung: theoretische Modelle. Statistik: Analyse realer Daten. Anwendungen: Medizin, Wirtschaft, Physik, Informatik, Versicherungen.",
+    "topic": "Stochastik"
+  }
+]

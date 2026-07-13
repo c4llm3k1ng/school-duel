@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist eine Funktion in der Mathematik?",
+    "options": [
+      "Eine Tabelle",
+      "Eine eindeutige Zuordnung: Jedem x aus dem Definitionsbereich wird genau ein y aus dem Wertebereich zugeordnet: y = f(x)",
+      "Eine Gleichung",
+      "Eine Menge"
+    ],
+    "correct": 1,
+    "explanation": "Funktion f: D → W. Definitionsbereich D (zulässige x-Werte), Wertebereich W (mögliche y-Werte). Graph: Menge aller Punkte (x; f(x)). Senkrechter Geradentest: jede senkrechte Linie schneidet Graph max. einmal.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist der Differenzenquotient?",
+    "options": [
+      "Ableitung an einem Punkt",
+      "Mittlere Änderungsrate zwischen zwei Punkten: [f(x+h) - f(x)] / h – beschreibt die Steigung einer Sekante",
+      "Integral einer Funktion",
+      "Extremstelle"
+    ],
+    "correct": 1,
+    "explanation": "Mittlere Änderungsrate = Differenzenquotient = Sekantensteigung. [f(b)-f(a)] / (b-a). Beispiel: f(x) = x², von x=1 bis x=3: [9-1]/[3-1] = 4. Limit h→0 ergibt Differentialquotient.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die Ableitung (Differentialquotient)?",
+    "options": [
+      "Durchschnittliche Änderungsrate",
+      "Grenzwert des Differenzenquotienten für h→0: f(x) = lim[h→0] [f(x+h)-f(x)]/h. Gibt die momentane Änderungsrate (Tangentensteigung) an",
+      "Integral",
+      "Summe einer Folge"
+    ],
+    "correct": 1,
+    "explanation": "Ableitung f(x): Grenzwert des Differenzenquotienten. Geometrisch: Tangentensteigung am Punkt (x; f(x)). Schreibweisen: f(x), y, df/dx, Df(x). Basis der Differentialrechnung.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die Potenzregel zur Ableitung?",
+    "options": [
+      "f(x) = x^n → f(x) = x^(n+1)",
+      "f(x) = x^n → f(x) = n · x^(n-1)",
+      "f(x) = x^n → f(x) = x^n",
+      "f(x) = x^n → f(x) = (1/n) · x^(n-1)"
+    ],
+    "correct": 1,
+    "explanation": "Potenzregel: f(x) = x^n → f(x) = n·x^(n-1). Beispiele: f(x)=x³ → f(x)=3x². f(x)=x → f(x)=1. f(x)=1 (x^0) → f(x)=0. f(x)=x^(-1)=1/x → f(x)=-x^(-2)=-1/x².",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die Summenregel der Ableitung?",
+    "options": [
+      "Produkt der Ableitungen",
+      "Die Ableitung einer Summe ist die Summe der Ableitungen: [f(x)+g(x)] = f(x) + g(x)",
+      "Quotient der Ableitungen",
+      "Verkettung"
+    ],
+    "correct": 1,
+    "explanation": "Summenregel: [f+g](x) = f(x) + g(x). Faktorregel: [c·f](x) = c·f(x). Beispiel: f(x) = 3x² + 2x + 5 → f(x) = 6x + 2. Gilt auch für Differenz: [f-g](x) = f(x) - g(x).",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die Produktregel der Ableitung?",
+    "options": [
+      "f(x)·g(x) = f(x)·g(x)",
+      "[f·g](x) = f(x)·g(x) + f(x)·g(x): Ableitung eines Produkts",
+      "f(x)·g(x) = f(x) + g(x)",
+      "f(x)·g(x) = f(g(x))"
+    ],
+    "correct": 1,
+    "explanation": "Produktregel: [f·g] = f·g + f·g (erste ableiten mal zweite + erste mal zweite ableiten). Eselsbrücke: \"Strich mal Nostrich plus Nostrich mal Strich\". Beispiel: f(x) = x²·sin(x) → f = 2x·sin(x) + x²·cos(x).",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die Kettenregel?",
+    "options": [
+      "Ableitung eines Produkts",
+      "Ableitung einer verketteten Funktion f(g(x)): [f(g(x))] = f(g(x)) · g(x). Äußere Ableitung mal innere Ableitung.",
+      "Ableitung eines Quotienten",
+      "Summenregel"
+    ],
+    "correct": 1,
+    "explanation": "Kettenregel: [f(g(x))] = f(g(x)) · g(x). Beispiel: h(x) = (3x+1)^5. Äußere: 5u^4, innere: 3. Also h(x) = 5(3x+1)^4 · 3 = 15(3x+1)^4. Wichtig: erst äußere ableiten (inneres stehen lassen), dann mal innere Ableitung.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was sagt die erste Ableitung über eine Funktion?",
+    "options": [
+      "Krümmung",
+      "Steigung der Funktion: f(x) > 0 → Funktion steigt; f(x) < 0 → Funktion fällt; f(x) = 0 → mögliches Extremum",
+      "Wendepunkte",
+      "Grenzverhalten"
+    ],
+    "correct": 1,
+    "explanation": "f(x) > 0: monoton steigend. f(x) < 0: monoton fallend. f(x) = 0: Kandidat für Extremum (Hochpunkt oder Tiefpunkt) oder Sattelpunkt. Vorzeichen wechsel von f beim Nulldurchgang: Extremum liegt vor.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was sagt die zweite Ableitung über eine Funktion?",
+    "options": [
+      "Steigung",
+      "Krümmung: f(x) > 0 → Linkskrümmung (konvex); f(x) < 0 → Rechtskrümmung (konkav); f(x) = 0 → möglicher Wendepunkt",
+      "Monotonieverhalten",
+      "Extremum"
+    ],
+    "correct": 1,
+    "explanation": "f(x) > 0: Kurve ist nach oben gewölbt (Linkskrümmung / konvex). f(x) < 0: Kurve ist nach unten gewölbt (Rechtskrümmung / konkav). Wendepunkt: f(x) = 0 und Vorzeichenwechsel von f.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist ein Extremum (Hoch- oder Tiefpunkt)?",
+    "options": [
+      "Jeder Punkt auf dem Graphen",
+      "Lokales Maximum oder Minimum: f(x₀) = 0 und f(x₀) ≠ 0. Hochpunkt: f(x₀) < 0. Tiefpunkt: f(x₀) > 0. Alternativ: Vorzeichenwechsel von f.",
+      "Nur globales Maximum",
+      "Ein Wendepunkt"
+    ],
+    "correct": 1,
+    "explanation": "Notwendige Bedingung: f(x₀) = 0 (stationärer Punkt). Hinreichend: f(x₀) < 0 → Hochpunkt; f(x₀) > 0 → Tiefpunkt. Oder: Vorzeichenwechsel f von + nach - → Hochpunkt; von - nach + → Tiefpunkt.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist ein Wendepunkt?",
+    "options": [
+      "Ein Extremum",
+      "Punkt, an dem die Krümmungsrichtung wechselt: f(x₀) = 0 mit Vorzeichenwechsel von f. Am Wendepunkt ist die Steigung extremal.",
+      "Ein Sattelpunkt immer",
+      "Nullstelle der Funktion"
+    ],
+    "correct": 1,
+    "explanation": "Notwendig: f(x₀) = 0. Hinreichend: Vorzeichenwechsel von f. Geometrisch: Kurve wechselt von links- zu rechtsgekrümmt oder umgekehrt. Sattelpunkt: Wendepunkt mit f(x₀) = 0 (Steigung 0, aber kein Extremum).",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist Kurvendiskussion?",
+    "options": [
+      "Nur Extrempunkte",
+      "Systematische Untersuchung einer Funktion: Definitionsbereich, Symmetrie, Nullstellen, Extrema, Wendepunkte, Monotonie, Krümmung, Grenzverhalten, Graph",
+      "Nur Ableitungen",
+      "Nur Nullstellen"
+    ],
+    "correct": 1,
+    "explanation": "Schritte: 1. D, Symmetrie. 2. Nullstellen (f(x)=0). 3. Extrema (f=0, f≠0). 4. Wendepunkte (f=0, Vzw). 5. Monotonie (f>0 / f<0). 6. Krümmung (f>0 / f<0). 7. Asymptoten. 8. Graph.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine Nullstelle einer Funktion?",
+    "options": [
+      "Ein Hochpunkt",
+      "Ein x-Wert, für den f(x) = 0 gilt: Schnittpunkt des Graphen mit der x-Achse",
+      "Ein Extrempunkt",
+      "Ein Wendepunkt"
+    ],
+    "correct": 1,
+    "explanation": "Nullstellen bestimmen: Gleichung f(x)=0 lösen. Methoden: Faktorisieren, quadratische Formel (abc-Formel), numerisch (Newton-Verfahren). Mehrfache Nullstellen: f und f haben gleiche Nullstelle → Graph berührt x-Achse.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die quadratische Formel (Mitternachtsformel)?",
+    "options": [
+      "Potenzregel",
+      "x = [-b ± Wurzel(b²-4ac)] / (2a): löst jede quadratische Gleichung ax² + bx + c = 0",
+      "Ableitungsregel",
+      "Integralformel"
+    ],
+    "correct": 1,
+    "explanation": "Diskriminante D = b²-4ac: D > 0: zwei reelle Nullstellen. D = 0: eine Nullstelle (Doppelwurzel). D < 0: keine reellen Nullstellen. Alternativ: Scheitelform f(x) = a(x-d)² + e; Nullstellen durch Umformen.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine ganzrationale Funktion?",
+    "options": [
+      "Bruchfunktion",
+      "Polynom: f(x) = aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ... + a₁x + a₀. Definiert für alle reellen Zahlen. Grad n bestimmt grundlegendes Verhalten.",
+      "Trigonometrische Funktion",
+      "Exponentialfunktion"
+    ],
+    "correct": 1,
+    "explanation": "Polynom n-ten Grades: n Nullstellen (in C). Ganzrationale Funktionen: stetig und differenzierbar auf ganz R. Grad bestimmt: Anzahl möglicher Extrema (max. n-1) und Wendepunkte (max. n-2).",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine Exponentialfunktion?",
+    "options": [
+      "Polynomfunktion",
+      "Funktion der Form f(x) = a · b^x (b > 0, b ≠ 1). Ableitung: [e^x] = e^x (e ist einzige Funktion, die ihre eigene Ableitung ist)",
+      "Wurzelfunktion",
+      "Logarithmusfunktion"
+    ],
+    "correct": 1,
+    "explanation": "Exponentiell: f(x) = e^x → f(x) = e^x. f(x) = a·e^(kx) → f(x) = k·a·e^(kx). Eulersche Zahl e ≈ 2,718. Wachstum/Zerfall: N(t) = N₀·e^(kt). k > 0: Wachstum. k < 0: Zerfall.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist der Logarithmus (ln)?",
+    "options": [
+      "Umkehrfunktion der Potenz",
+      "Umkehrfunktion der Exponentialfunktion: ln(x) = y ⟺ e^y = x. Ableitungsregel: [ln(x)] = 1/x",
+      "Quadratwurzel",
+      "Kehrwert"
+    ],
+    "correct": 1,
+    "explanation": "ln(e) = 1, ln(1) = 0. Rechenregeln: ln(a·b) = ln(a)+ln(b), ln(a/b) = ln(a)-ln(b), ln(a^n) = n·ln(a). Ableitung: [ln(x)] = 1/x, [ln(g(x))] = g(x)/g(x) (Kettenregel).",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist das Integral (Flächeninhalt)?",
+    "options": [
+      "Ableitung",
+      "Fläche zwischen dem Graphen einer Funktion und der x-Achse: Bestimmtes Integral von a bis b = Stammfunktion(b) - Stammfunktion(a) (Hauptsatz der Differentialrechnung)",
+      "Extremum",
+      "Wendepunkt"
+    ],
+    "correct": 1,
+    "explanation": "Integral als Summe unendlich vieler infinitesimaler Rechtecke (Riemann-Summe). Stammfunktion F(x): F(x) = f(x). Hauptsatz: Integral von a bis b = F(b)-F(a). Einheit: x-Einheit mal y-Einheit.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was sind Stammfunktionen?",
+    "options": [
+      "Ableitungen",
+      "Funktionen F(x), deren Ableitung die gegebene Funktion f(x) ist: F(x) = f(x). Unbestimmtes Integral: F(x) = Integral f(x) dx + C",
+      "Extrema",
+      "Nullstellen"
+    ],
+    "correct": 1,
+    "explanation": "Stammfunktionsregeln: Integral x^n dx = x^(n+1)/(n+1) + C (n ≠ -1). Integral 1/x dx = ln|x| + C. Integral e^x dx = e^x + C. Integral k dx = kx + C. Konstante C: Integrationskonstante (Familie von Stammfunktionen).",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die Tangentengleichung an einer Stelle x₀?",
+    "options": [
+      "Normalengleichung",
+      "Gerade mit Steigung f(x₀) durch Punkt (x₀; f(x₀)): y = f(x₀) · (x - x₀) + f(x₀)",
+      "Sekante",
+      "Asymptote"
+    ],
+    "correct": 1,
+    "explanation": "Tangente an f im Punkt P(x₀; f(x₀)): Steigung m = f(x₀). Tangentengleichung: t(x) = m·(x-x₀) + f(x₀) = m·x + (f(x₀)-m·x₀). Anwendung: lineare Näherung, Newton-Verfahren.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine Asymptote?",
+    "options": [
+      "Ein Extrempunkt",
+      "Gerade, der sich der Graph einer Funktion unbegrenzt annähert: waagerechte (lim x→±∞ f(x) = c), senkrechte (Polstelle), schiefe Asymptote",
+      "Ein Wendepunkt",
+      "Eine Nullstelle"
+    ],
+    "correct": 1,
+    "explanation": "Waagerechte Asymptote y=c: lim[x→∞] f(x) = c. Senkrechte Asymptote x=a: Polstelle (Nenner = 0 bei gebrochenem Ausdruck). Schiefe Asymptote: Polynomdivision bei gebrochenrationaler Funktion.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine gebrochenrationale Funktion?",
+    "options": [
+      "Polynom",
+      "Quotient zweier Polynome f(x) = g(x)/h(x): Polstellen bei Nullstellen des Nenners (h(x) = 0), Asymptoten",
+      "Exponentialfunktion",
+      "Trigonometrische Funktion"
+    ],
+    "correct": 1,
+    "explanation": "Definitionsbereich: alle x mit h(x) ≠ 0. Polstellen: h(x₀) = 0 und g(x₀) ≠ 0. Hebbare Unstetigkeiten: g(x₀) = 0 und h(x₀) = 0 (kürzen). Waagerechte Asymptote: Vergleich Grad Zähler und Nenner.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist Monotonie einer Funktion?",
+    "options": [
+      "Krümmung",
+      "Verhalten der Funktion bezüglich Zu- oder Abnehmen: streng monoton steigend (x₁ < x₂ → f(x₁) < f(x₂)), streng monoton fallend. Ableitungskriterium: f > 0 steigend, f < 0 fallend.",
+      "Periodizität",
+      "Symmetrie"
+    ],
+    "correct": 1,
+    "explanation": "Monotonie: Intervalle angeben! f(x) = x²: fallend auf (-∞; 0), steigend auf (0; ∞). Monotoniestellen finden: Nullstellen von f berechnen, Vorzeichen von f zwischen Nullstellen prüfen.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist Symmetrie eines Funktionsgraphen?",
+    "options": [
+      "Keine Bedeutung",
+      "Achsensymmetrie zur y-Achse (gerade Funktion): f(-x) = f(x). Punktsymmetrie zum Ursprung (ungerade Funktion): f(-x) = -f(x).",
+      "Nur bei Parabeln",
+      "Nur bei trigonometrischen Funktionen"
+    ],
+    "correct": 1,
+    "explanation": "Achsensymmetrie: nur gerade Potenzen (x², x⁴...). Punktsymmetrie: nur ungerade Potenzen (x, x³, x⁵...). Gemischt: keine Symmetrie. Spart Arbeit bei Kurvendiskussion: nur halben Bereich untersuchen.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine lineare Funktion?",
+    "options": [
+      "Parabel",
+      "f(x) = m·x + b: gerade Linie. m: Steigung (Änderungsrate). b: y-Achsenabschnitt. Graph: Gerade. Keine Krümmung.",
+      "Quadratische Funktion",
+      "Exponentialfunktion"
+    ],
+    "correct": 1,
+    "explanation": "Lineare Funktion: f(x) = mx + b. f(x) = m (konstante Ableitung = Steigung). m > 0: steigend; m < 0: fallend; m = 0: konstant. Zwei Punkte bestimmen die Gerade eindeutig.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine quadratische Funktion (Parabel)?",
+    "options": [
+      "Gerade",
+      "f(x) = ax² + bx + c (a ≠ 0): Parabel. a > 0: nach oben geöffnet. a < 0: nach unten geöffnet. Scheitel: x₀ = -b/(2a), y₀ = f(x₀).",
+      "Exponentialfunktion",
+      "Wurzelfunktion"
+    ],
+    "correct": 1,
+    "explanation": "Parabel: Symmetrieachse x = -b/(2a). Scheitelform: f(x) = a(x-d)² + e. Nullstellen: Mitternachtsformel oder Scheitelform. Ableitung: f(x) = 2ax + b. Extremum am Scheitel.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine trigonometrische Funktion?",
+    "options": [
+      "Potenzfunktion",
+      "Funktionen wie Sinus, Kosinus, Tangens: periodisch, definiert durch Einheitskreis. f(x)=sin(x): Periode 2π. f(x)=cos(x): Periode 2π.",
+      "Exponentialfunktion",
+      "Logarithmusfunktion"
+    ],
+    "correct": 1,
+    "explanation": "sin(x): Ableitung cos(x). cos(x): Ableitung -sin(x). tan(x) = sin(x)/cos(x): Ableitung 1/cos²(x). Periodisch: sin(x+2π) = sin(x). Werte: sin(0)=0, sin(π/2)=1, cos(0)=1, cos(π)=-1.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist der Grenzwert einer Funktion?",
+    "options": [
+      "Der Funktionswert an einer Stelle",
+      "Der Wert, dem sich f(x) annähert, wenn x gegen einen bestimmten Wert oder gegen ±∞ geht: lim[x→a] f(x) = L",
+      "Ein Extremum",
+      "Eine Nullstelle"
+    ],
+    "correct": 1,
+    "explanation": "Grenzwert: lim[x→a] f(x) = L. Wichtig für: Stetigkeit (lim = Funktionswert), Asymptoten (lim x→∞), Ableitungsdefinition. Regeln: lim(f+g) = lim f + lim g. L'Hôpital für 0/0 oder ∞/∞.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine zusammengesetzte Funktion (Verkettung)?",
+    "options": [
+      "Produkt zweier Funktionen",
+      "h(x) = f(g(x)): erst g anwenden, dann f auf das Ergebnis. Ableitung mit Kettenregel.",
+      "Summe zweier Funktionen",
+      "Quotient zweier Funktionen"
+    ],
+    "correct": 1,
+    "explanation": "Verkettung: h(x) = f(g(x)). g: innere Funktion, f: äußere Funktion. Beispiel: h(x) = sin(x²). g(x)=x² (innen), f(u)=sin(u) (außen). Kettenregel: h(x) = cos(x²) · 2x.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die Fläche zwischen zwei Funktionen?",
+    "options": [
+      "Integral einer Funktion",
+      "Integral von a bis b über |f(x) - g(x)|: Fläche zwischen den Graphen von f und g. Schnittpunkte als Grenzen.",
+      "Summe zweier Integrale",
+      "Differenz zweier Ableitungen"
+    ],
+    "correct": 1,
+    "explanation": "Fläche zwischen f und g von a bis b: Integral[a→b] |f(x)-g(x)| dx. Vorgehen: Schnittpunkte bestimmen, Vorzeichen prüfen (welche Funktion liegt oben?), ggf. Teilintegrale mit Betrag.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist Newton-Verfahren (Newtonsche Iteration)?",
+    "options": [
+      "Ableitungsregel",
+      "Numerisches Verfahren zur Nullstellenannäherung: x_{n+1} = x_n - f(x_n)/f(x_n). Startpunkt x₀, dann iterativ verbessern.",
+      "Integrationsregel",
+      "Extremwertverfahren"
+    ],
+    "correct": 1,
+    "explanation": "Newton-Verfahren: schnelle Konvergenz (quadratisch) wenn Startpunkt nahe der Nullstelle. Tangente an aktuellem Punkt → Schnittpunkt mit x-Achse = neuer Punkt. Anwendung: numerisches Lösen von Gleichungen.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine Optimierungsaufgabe in der Analysis?",
+    "options": [
+      "Nullstellen berechnen",
+      "Suche nach dem Maximum oder Minimum einer Funktion unter Nebenbedingungen: Definitionsbereich beachten, Randwerte prüfen, Extremstellen in D suchen",
+      "Integralrechnung",
+      "Asymptoten bestimmen"
+    ],
+    "correct": 1,
+    "explanation": "Vorgehen: Zielfunktion aufstellen (was wird optimiert?), Nebenbedingung einsetzen, Funktion ableiten, Extrema suchen, Randbedingungen prüfen. Anwendung: Maximaler Ertrag, minimaler Materialverbrauch.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die Integralrechnung (Stammfunktion) das Gegenteil von?",
+    "options": [
+      "Algebra",
+      "Differentialrechnung: Integration ist die Umkehroperation der Differentiation (Hauptsatz der Differentialrechnung)",
+      "Geometrie",
+      "Stochastik"
+    ],
+    "correct": 1,
+    "explanation": "Hauptsatz der Differentialrechnung: F(x) = f(x) (Stammfunktion). Integral von a bis b = F(b)-F(a). Verbindet Ableitung und Integral. Newton und Leibniz entwickelten Differenzial- und Integralrechnung unabhängig.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine kubische Funktion?",
+    "options": [
+      "Parabel (Grad 2)",
+      "Polynom dritten Grades: f(x) = ax³ + bx² + cx + d (a ≠ 0). Hat genau einen Wendepunkt, max. 2 Extrema und 1-3 Nullstellen.",
+      "Grad 4",
+      "Grad 1"
+    ],
+    "correct": 1,
+    "explanation": "Kubische Funktion: typische S-Form, punktsymmetrisch zum Wendepunkt. f(x) = ax³: f(x) = 3ax². f(x) = 6ax. Wendepunkt immer vorhanden (bei x = -b/(3a) bei Normalform). Eingeschränkt monoton.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die Kettenregel für e^(g(x))?",
+    "options": [
+      "e^(g(x)) bleibt unverändert",
+      "[e^(g(x))] = e^(g(x)) · g(x): äußere Ableitung (e^... bleibt) mal innere Ableitung g(x)",
+      "[e^(g(x))] = g(x) · e^(g(x)-1)",
+      "[e^(g(x))] = e^(g(x))"
+    ],
+    "correct": 1,
+    "explanation": "Beispiel: f(x) = e^(3x²). g(x) = 3x², g(x) = 6x. f(x) = e^(3x²) · 6x. Merke: e^x bleibt bei Ableitung immer e^x. Nur der Exponent wird abgeleitet (mal multipliziert).",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was bedeutet f(x₀) = 0 und f(x₀) = 0?",
+    "options": [
+      "Extremum",
+      "Sattelpunkt (Flachpunkt): weder Maximum noch Minimum, obwohl f = 0. Beispiel: f(x) = x³ bei x=0.",
+      "Wendepunkt ohne Steigung 0",
+      "Nullstelle der Funktion"
+    ],
+    "correct": 1,
+    "explanation": "Sattelpunkt: f(x₀) = 0 und f(x₀) = 0. Notwendige Bedingungen für Extremum erfüllt, aber hinreichende nicht. Prüfung mit Vorzeichenwechsel von f: kein Wechsel → Sattelpunkt. f(x)=x³: f(0)=0, f(0)=0, kein Extremum.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist die Umkehrfunktion?",
+    "options": [
+      "Die Ableitung",
+      "Funktion f⁻¹, die die Zuordnung von f umkehrt: y = f(x) → x = f⁻¹(y). Graph: Spiegelung an der Winkelhalbierenden y=x.",
+      "Die Stammfunktion",
+      "Das Integral"
+    ],
+    "correct": 1,
+    "explanation": "Umkehrfunktion existiert nur bei bijektiven (eineindeutigen) Funktionen. Monotone Funktionen sind bijektiv auf ihrem Monotonie-Intervall. Beispiele: ln(x) ist Umkehrfunktion von e^x. arcsin ist Umkehrfunktion von sin.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist der Grenzwert für f(x)/g(x) wenn f→0 und g→0 (oder ∞/∞)?",
+    "options": [
+      "Immer 0",
+      "Unbestimmte Form 0/0 oder ∞/∞: kann mit Regel von L'Hopital gelöst werden: lim f/g = lim f/g",
+      "Immer 1",
+      "Immer ∞"
+    ],
+    "correct": 1,
+    "explanation": "Regel von L'Hôpital (de l'Hôpital): bei 0/0 oder ∞/∞ → Zähler und Nenner separat ableiten und Grenzwert neu berechnen. Beispiel: lim[x→0] sin(x)/x = lim cos(x)/1 = 1.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist das Monotonie-Intervall?",
+    "options": [
+      "Jede Stelle einer Funktion",
+      "Das Intervall, auf dem eine Funktion durchgehend steigt oder fällt: Grenzen sind Extremstellen oder Randpunkte des Definitionsbereichs",
+      "Nullstellen-Intervall",
+      "Wertebereich"
+    ],
+    "correct": 1,
+    "explanation": "Monotonie-Intervalle: durch Nullstellen der Ableitung f in Teilintervalle zerlegen. In jedem Teilintervall Vorzeichen von f prüfen (Testpunkt einsetzen). Streng monoton steigend: f(x) > 0 im Intervall.",
+    "topic": "Analysis"
+  },
+  {
+    "question": "Was ist eine implizite Funktion?",
+    "options": [
+      "Eine explizit gegebene Funktion",
+      "Eine Funktion, die nicht explizit als y = f(x) gegeben ist, sondern durch eine Gleichung F(x, y) = 0 definiert wird: z.B. x² + y² = r² (Kreis)",
+      "Eine Parameterdarstellung",
+      "Eine Vektorfunktion"
+    ],
+    "correct": 1,
+    "explanation": "Implizite Funktion: Kreis x² + y² = 4 definiert y nicht als explizite Funktion (zwei Halbkreise). Implizite Differentiation: beide Seiten nach x ableiten, y als Funktion von x behandeln (Kettenregel). Ergibt dy/dx.",
+    "topic": "Analysis"
+  }
+]

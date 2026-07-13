@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Woraus besteht ein Atom?",
+    "options": [
+      "Nur aus Elektronen",
+      "Atomkern (Protonen + Neutronen) und Elektronenhülle",
+      "Nur aus Protonen",
+      "Molekülen"
+    ],
+    "correct": 1,
+    "explanation": "Kern: Protonen (positiv, bestimmen Element/Ordnungszahl Z) + Neutronen (neutral, bestimmen Isotop). Hülle: Elektronen (negativ, Z viele). Masse fast ausschließlich im Kern. Größe: Atom ~10⁻¹⁰ m, Kern ~10⁻¹⁵ m.",
+    "topic": "Atombau"
+  },
+  {
+    "question": "Was ist die Ordnungszahl (Protonenzahl)?",
+    "options": [
+      "Anzahl der Neutronen",
+      "Anzahl der Protonen im Atomkern – bestimmt das chemische Element eindeutig",
+      "Masse des Atoms",
+      "Anzahl der Elektronen in der äußersten Schale"
+    ],
+    "correct": 1,
+    "explanation": "Z = Protonenzahl. Im neutralen Atom: Z = Elektronenzahl. Periodensystem: Elemente nach steigender Z geordnet. C: Z=6; O: Z=8; Fe: Z=26; Au: Z=79.",
+    "topic": "Atombau"
+  },
+  {
+    "question": "Was ist die Massenzahl (A)?",
+    "options": [
+      "Protonenzahl",
+      "Summe aus Protonen und Neutronen im Atomkern",
+      "Nur Neutronenzahl",
+      "Atomgewicht in Gramm"
+    ],
+    "correct": 1,
+    "explanation": "A = Z + N (Neutronen). ¹²C: Z=6, N=6, A=12. ¹⁴C: Z=6, N=8, A=14 (radioaktives Isotop). Atommasse in u (atomare Masseeinheit): ¹²C = exakt 12 u per Definition.",
+    "topic": "Atombau"
+  },
+  {
+    "question": "Was sind Isotope?",
+    "options": [
+      "Verschiedene Elemente",
+      "Atome desselben Elements mit gleicher Protonenzahl, aber verschiedener Neutronenzahl (also verschiedener Massenzahl)",
+      "Ionen eines Elements",
+      "Moleküle"
+    ],
+    "correct": 1,
+    "explanation": "¹H, ²H (Deuterium), ³H (Tritium): alle Wasserstoff (Z=1), aber N = 0, 1, 2. Radioaktive Isotope zerfallen (¹⁴C für Datierung). Stabile Isotope: z.B. ¹²C, ¹³C.",
+    "topic": "Atombau"
+  },
+  {
+    "question": "Was ist das Bohrsche Atommodell?",
+    "options": [
+      "Elektronen zufällig verteilt",
+      "Elektronen kreisen auf festen Bahnen (Schalen) um den Kern; Energieaufnahme → Sprung in höhere Schale, Emission → Rückfall mit Lichtaussendung",
+      "Kern umgeben von Elektronenwolke",
+      "Atomkern aus Elektronen"
+    ],
+    "correct": 1,
+    "explanation": "Bohr (1913): Quantenbedingung. Erklärte Wasserstoff-Spektrum. Schalen K, L, M (n=1,2,3...). Valenzschale: äußerste Schale. Orbitalmodell (Quantenmechanik) präziser, aber Bohr-Modell für Klasse 10 ausreichend.",
+    "topic": "Atombau"
+  },
+  {
+    "question": "Was sind Edelgase und warum sind sie unreaktiv?",
+    "options": [
+      "Metalle mit vielen Elektronen",
+      "Gruppe 18 des PSE: vollständig besetzte Valenzschale (Edelgaskonfiguration, Oktettregel) → kein Bestreben, Elektronen abzugeben oder aufzunehmen",
+      "Radioaktive Elemente",
+      "Flüssige Metalle"
+    ],
+    "correct": 1,
+    "explanation": "He: 2 Elektronen (vollständig); Ne, Ar, Kr, Xe, Rn: 8 Valenzelektronen. Edelgase: kaum Verbindungen (Xenonfluoride als Ausnahme). Oktettregel: Atome streben nach 8 Valenzelektronen.",
+    "topic": "Atombau"
+  },
+  {
+    "question": "Was ist eine Ionenbindung?",
+    "options": [
+      "Bindung durch gemeinsame Elektronen",
+      "Elektrostatische Anziehung zwischen positiv und negativ geladenen Ionen: Metall gibt Elektronen ab → Kation; Nichtmetall nimmt Elektronen auf → Anion",
+      "Bindung durch Elektronenpaare",
+      "Kovalente Bindung"
+    ],
+    "correct": 1,
+    "explanation": "Beispiel: NaCl. Na (Metall): gibt 1 e⁻ ab → Na⁺. Cl (Nichtmetall): nimmt 1 e⁻ auf → Cl⁻. Ionengitter: hohe Schmelzpunkte, leitend im geschmolzenen Zustand oder in Lösung.",
+    "topic": "Chemische Bindungen"
+  },
+  {
+    "question": "Was ist eine kovalente (Atombindung)?",
+    "options": [
+      "Ionenübertragung",
+      "Gemeinsame Elektronen: zwei Atome teilen ein oder mehrere Elektronenpaare",
+      "Metallbindung",
+      "Wasserstoffbrücke"
+    ],
+    "correct": 1,
+    "explanation": "Einfachbindung (H-H), Doppelbindung (O=O), Dreifachbindung (N≡N). Polar wenn Elektronegativitätsdifferenz: H₂O, HCl. Unpolar: H₂, Cl₂. Lewis-Struktur zeigt bindende und freie Elektronenpaare.",
+    "topic": "Chemische Bindungen"
+  },
+  {
+    "question": "Was ist Elektronegativität?",
+    "options": [
+      "Ladung des Elektrons",
+      "Maß für die Fähigkeit eines Atoms, Elektronen in einer Bindung zu sich zu ziehen (Skala: Pauling)",
+      "Anzahl der Valenzelektronen",
+      "Ionisierungsenergie"
+    ],
+    "correct": 1,
+    "explanation": "EN-Skala (Pauling): F = 4,0 (höchste), O = 3,5, N = 3,0, H = 2,1, Na = 0,9. ΔEN > 1,7: ionisch; 0,4–1,7: polar kovalent; < 0,4: unpolar kovalent. Trend: steigt von links nach rechts und von unten nach oben im PSE.",
+    "topic": "Chemische Bindungen"
+  },
+  {
+    "question": "Was ist eine Metallbindung?",
+    "options": [
+      "Ionenbindung",
+      "Delokalisierte Elektronen bilden ein \"Elektronensee\" zwischen Metallkationen – erklärt elektrische Leitfähigkeit, Wärmeleitfähigkeit, Duktilität",
+      "Kovalente Bindung",
+      "Dipolbindung"
+    ],
+    "correct": 1,
+    "explanation": "Metallgitter: Kationen in fester Gitterstruktur; Elektronen frei beweglich. Eigenschaften: Leitfähigkeit, Wärmeleitung, Glanz, Formbarkeit. Bsp: Cu, Fe, Al.",
+    "topic": "Chemische Bindungen"
+  },
+  {
+    "question": "Was ist eine chemische Reaktion?",
+    "options": [
+      "Physikalischer Phasenwechsel",
+      "Umwandlung von Ausgangsstoffen (Reaktanten/Edukte) in neue Stoffe (Produkte) durch Umordnung von Atomen/Ionen/Molekülen",
+      "Auflösen eines Salzes",
+      "Verdampfen von Wasser"
+    ],
+    "correct": 1,
+    "explanation": "Merkmale: Farbänderung, Gasentwicklung, Niederschlag, Energieänderung (exotherm/endotherm). Massenerhaltungssatz (Lavoisier): Masse der Edukte = Masse der Produkte.",
+    "topic": "Chemische Reaktionen"
+  },
+  {
+    "question": "Was ist ein Katalysator?",
+    "options": [
+      "Ein Reaktant, der verbraucht wird",
+      "Stoff, der die Aktivierungsenergie einer Reaktion herabsetzt und die Reaktion beschleunigt, ohne selbst verbraucht zu werden",
+      "Ein Produkt",
+      "Ein Lösungsmittel"
+    ],
+    "correct": 1,
+    "explanation": "Katalysatoren: senken Aktivierungsenergie (Ea) → mehr Moleküle überwinden Barriere → schnellere Reaktion. Homogene Katalyse (gleiche Phase), heterogene Katalyse (verschiedene Phasen, z.B. Kat im Auto). Enzymatische Katalyse in Lebewesen.",
+    "topic": "Chemische Reaktionen"
+  },
+  {
+    "question": "Was ist die Oxidationszahl?",
+    "options": [
+      "Ladung des Atoms",
+      "Fiktive Ladung, die einem Atom in einer Verbindung zugewiesen wird, um Redoxvorgänge zu analysieren",
+      "Protonenzahl",
+      "Elektronenzahl"
+    ],
+    "correct": 1,
+    "explanation": "Regeln: Reines Element: 0. Einatomiges Ion: Ladung. O meist -2, H meist +1, Halogene meist -1. Summe der OZ = Ladung des Moleküls/Ions. Oxidation: OZ steigt; Reduktion: OZ sinkt.",
+    "topic": "Redoxreaktionen"
+  },
+  {
+    "question": "Was ist eine Redoxreaktion?",
+    "options": [
+      "Nur Säure-Base-Reaktion",
+      "Gleichzeitige Oxidation (Elektronenabgabe) und Reduktion (Elektronenaufnahme): Was oxidiert, reduziert das andere Teilchen",
+      "Ausfällung",
+      "Hydrolyse"
+    ],
+    "correct": 1,
+    "explanation": "OIL RIG: Oxidation Is Loss, Reduction Is Gain (of electrons). Reduktionsmittel: gibt Elektronen ab → wird selbst oxidiert. Oxidationsmittel: nimmt Elektronen auf → wird selbst reduziert.",
+    "topic": "Redoxreaktionen"
+  },
+  {
+    "question": "Was ist eine Säure nach Arrhenius?",
+    "options": [
+      "Protonenempfänger",
+      "Stoff, der in wässriger Lösung H⁺-Ionen (Protonen) abgibt",
+      "Elektronenpaardonator",
+      "Stoff, der OH⁻-Ionen abgibt"
+    ],
+    "correct": 1,
+    "explanation": "Arrhenius-Säure: HCl → H⁺ + Cl⁻. HCl: starke Säure (vollständig dissoziiert). CH₃COOH: schwache Säure (teilweise). Brønsted-Lowry: Säure = Protonendonator. Lewis: Elektronenpaarakzeptor.",
+    "topic": "Säuren und Basen"
+  },
+  {
+    "question": "Was ist eine Base (Lauge)?",
+    "options": [
+      "Protonendonator",
+      "Stoff, der in wässriger Lösung OH⁻-Ionen abgibt oder Protonen aufnimmt",
+      "Elektronendonator",
+      "Säure"
+    ],
+    "correct": 1,
+    "explanation": "Arrhenius: NaOH → Na⁺ + OH⁻. Brønsted-Lowry: Base = Protonenakzeptor. Starke Basen: NaOH, KOH (vollständige Dissoziation). Schwache Base: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻.",
+    "topic": "Säuren und Basen"
+  },
+  {
+    "question": "Was ist der pH-Wert?",
+    "options": [
+      "Maß für Temperatur",
+      "Maß für den Säure-/Basencharakter: pH = -log[H₃O⁺]. pH < 7: sauer; pH = 7: neutral; pH > 7: basisch",
+      "Elektrische Leitfähigkeit",
+      "Salzgehalt"
+    ],
+    "correct": 1,
+    "explanation": "pH-Skala: 0-14. pH 0: stark sauer (z.B. HCl konz.); pH 7: reines Wasser; pH 14: stark basisch (z.B. NaOH konz.). pH-Wert 1 Einheit Unterschied = 10-facher Unterschied in [H₃O⁺]. Messung: Indikator, pH-Meter.",
+    "topic": "Säuren und Basen"
+  },
+  {
+    "question": "Was ist Neutralisation?",
+    "options": [
+      "Oxidation",
+      "Reaktion zwischen Säure und Base: H₃O⁺ + OH⁻ → 2H₂O → Salz + Wasser; pH → 7",
+      "Fällung",
+      "Elektrolyse"
+    ],
+    "correct": 1,
+    "explanation": "HCl + NaOH → NaCl + H₂O. Exotherm. Produkt: Salz. Titration: Neutralisation zur Konzentrationsbestimmung. Indikator (z.B. Phenolphthalein) zeigt Äquivalenzpunkt an.",
+    "topic": "Säuren und Basen"
+  },
+  {
+    "question": "Was ist das Periodensystem der Elemente (PSE)?",
+    "options": [
+      "Alphabetische Liste der Elemente",
+      "Anordnung der Elemente nach steigender Ordnungszahl in Perioden (Zeilen) und Gruppen (Spalten) mit ähnlichen chemischen Eigenschaften",
+      "Tabelle der Verbindungen",
+      "Liste der Isotope"
+    ],
+    "correct": 1,
+    "explanation": "Mendeleev (1869): ordnete nach Atommasse + Eigenschaften. Modern: nach Ordnungszahl. Perioden: gleiche Schalenzahl. Gruppen: gleiche Valenzelektronenzahl → ähnliche Reaktivität. 118 Elemente bekannt.",
+    "topic": "Atombau"
+  },
+  {
+    "question": "Was ist eine exotherme Reaktion?",
+    "options": [
+      "Reaktion die Wärme aufnimmt",
+      "Reaktion, bei der Energie (Wärme) freigesetzt wird: Enthalpieänderung ΔH < 0",
+      "Reaktion ohne Energieänderung",
+      "Elektrochemische Reaktion"
+    ],
+    "correct": 1,
+    "explanation": "Exotherm: Produkte energieärmer als Edukte → Energie wird freigesetzt. Beispiel: Verbrennung von CH₄: CH₄ + 2O₂ → CO₂ + 2H₂O + Energie. Endotherm: ΔH > 0, Energie wird aufgenommen (z.B. Fotosynthese).",
+    "topic": "Chemische Reaktionen"
+  },
+  {
+    "question": "Was ist Molmasse?",
+    "options": [
+      "Masse eines Atoms",
+      "Masse von 1 Mol eines Stoffs (6,022·10²³ Teilchen) in g/mol; numerisch gleich der relativen Atommasse",
+      "Volumen eines Mols",
+      "Dichte"
+    ],
+    "correct": 1,
+    "explanation": "Avogadro-Zahl: Nₐ = 6,022·10²³/mol. H₂O: M = 2·1 + 16 = 18 g/mol. Molmasse ermöglicht Umrechnung zwischen Massen und Molzahlen: n = m/M. Wichtig für stöchiometrische Berechnungen.",
+    "topic": "Stöchiometrie"
+  },
+  {
+    "question": "Was ist Stöchiometrie?",
+    "options": [
+      "Messung der Temperatur",
+      "Berechnung der Mengenverhältnisse bei chemischen Reaktionen auf Basis der Reaktionsgleichung",
+      "Messung des Drucks",
+      "Elektrochemie"
+    ],
+    "correct": 1,
+    "explanation": "Reaktionsgleichung: 2H₂ + O₂ → 2H₂O. 2 mol H₂ reagiert mit 1 mol O₂ → 2 mol H₂O. Molmassen einsetzen → Massenverhältnisse. Limitierender Reaktionspartner: der zuerst verbrauchte.",
+    "topic": "Stöchiometrie"
+  },
+  {
+    "question": "Was ist eine Fällungsreaktion?",
+    "options": [
+      "Elektrolyse",
+      "Bildung eines unlöslichen Niederschlags beim Mischen zweier Lösungen: z.B. BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl",
+      "Säure-Base-Reaktion",
+      "Oxidation"
+    ],
+    "correct": 1,
+    "explanation": "Fällung: Löslichkeitsprodukt überschritten → unlösliches Salz fällt aus. Ba²⁺ + SO₄²⁻ → BaSO₄ (weißer Niederschlag, Nachweis für Sulfat). Ag⁺ + Cl⁻ → AgCl (weißer Niederschlag, Nachweis für Chlorid).",
+    "topic": "Chemische Reaktionen"
+  },
+  {
+    "question": "Was ist Elektrolyse?",
+    "options": [
+      "Spontane Redoxreaktion",
+      "Erzwungene Redoxreaktion durch elektrischen Strom: Kationen wandern zur Kathode (Reduktion), Anionen zur Anode (Oxidation)",
+      "Neutralisation",
+      "Fällung"
+    ],
+    "correct": 1,
+    "explanation": "Elektrolyse von Wasser: Kathode: 2H₂O + 2e⁻ → H₂ + 2OH⁻; Anode: 2H₂O → O₂ + 4H⁺ + 4e⁻. Schmelzflusselektrolyse: Na aus NaCl. Galvanisierung: Kupferüberzug durch Elektrolyse.",
+    "topic": "Elektrochemie"
+  },
+  {
+    "question": "Was ist eine galvanische Zelle?",
+    "options": [
+      "Elektrolysezelle",
+      "Elektrochemische Zelle, die eine spontane Redoxreaktion in elektrischen Strom umwandelt (Batterie/Akkumulator)",
+      "Brennstoffzelle",
+      "Solarzelle"
+    ],
+    "correct": 1,
+    "explanation": "Daniell-Element: Zn (Anode, Oxidation) | ZnSO₄ || CuSO₄ | Cu (Kathode, Reduktion). Spannung: 1,1 V. Prinzip der Batterie. Standardpotentiale: Redoxreihe der Metalle bestimmt Zellspannung.",
+    "topic": "Elektrochemie"
+  },
+  {
+    "question": "Was sind organische Verbindungen?",
+    "options": [
+      "Nur natürlich vorkommende Stoffe",
+      "Kohlenstoffverbindungen (außer CO, CO₂, Carbonate, Cyanide): Kohlenwasserstoffe und ihre Derivate",
+      "Alle Verbindungen",
+      "Ionenverbindungen"
+    ],
+    "correct": 1,
+    "explanation": "Organische Chemie: C kann 4 Bindungen eingehen (Kohlenstoffketten). Alkane (CₙH₂ₙ₊₂), Alkene (CₙH₂ₙ), Alkine (CₙH₂ₙ₋₂). Funktionelle Gruppen: -OH (Alkohol), -COOH (Carbonsäure), -NH₂ (Amin).",
+    "topic": "Organische Chemie"
+  },
+  {
+    "question": "Was ist ein Alkohol?",
+    "options": [
+      "Kohlenwasserstoff ohne Heteroatome",
+      "Organische Verbindung mit Hydroxylgruppe (-OH): R-OH. Primär, sekundär, tertiär nach Position der OH-Gruppe",
+      "Säure",
+      "Ester"
+    ],
+    "correct": 1,
+    "explanation": "Ethanol (C₂H₅OH): Trinkalkohol, Lösungsmittel. Methanol (CH₃OH): giftig. Herstellung: Gärung (Zucker → Ethanol + CO₂ durch Hefe). Oxidation von Alkohol → Aldehyd → Carbonsäure.",
+    "topic": "Organische Chemie"
+  },
+  {
+    "question": "Was sind Kohlenwasserstoffe?",
+    "options": [
+      "Verbindungen aus C, H und O",
+      "Verbindungen aus nur Kohlenstoff und Wasserstoff: Alkane (gesättigt), Alkene (C=C), Alkine (C≡C), Aromaten (Benzol)",
+      "Verbindungen aus C und N",
+      "Salze"
+    ],
+    "correct": 1,
+    "explanation": "Alkane: CₙH₂ₙ₊₂. Methan (CH₄), Ethan (C₂H₆), Propan... Nomenklatur: meth-, eth-, prop-, but-, pent-, hex-. Alkene: mind. eine Doppelbindung. Alkine: Dreifachbindung. Aromate: Benzolring (delokalisierte π-Elektronen).",
+    "topic": "Organische Chemie"
+  },
+  {
+    "question": "Was ist ein Polymer?",
+    "options": [
+      "Ein kleines Molekül",
+      "Großes Makromolekül aus vielen Wiederholungseinheiten (Monomere): z.B. Polyethylen (PE), Polypropylen (PP), PVC, Nylon, DNA",
+      "Ein Salz",
+      "Ein Ion"
+    ],
+    "correct": 1,
+    "explanation": "Polymerisation: Monomere verbinden sich. Addition (Alkene → Polyethylen). Kondensation (Aminosäuren → Protein; Nuklotide → DNA). Kunststoffe, Naturstoffe (Cellulose, Stärke, Proteine).",
+    "topic": "Organische Chemie"
+  },
+  {
+    "question": "Was ist Verbrennung (Oxidation)?",
+    "options": [
+      "Reduktion eines Metalls",
+      "Exotherme Reaktion mit Sauerstoff: vollständige Verbrennung von Kohlenwasserstoffen → CO₂ + H₂O",
+      "Elektrolyse",
+      "Neutralisation"
+    ],
+    "correct": 1,
+    "explanation": "Vollständige Verbrennung: CH₄ + 2O₂ → CO₂ + 2H₂O. Unvollständig (Sauerstoffmangel) → CO (Kohlenmonoxid, giftig) + Ruß (C). Verbrennungsenthalpie: freigesetzte Energie pro Mol.",
+    "topic": "Chemische Reaktionen"
+  },
+  {
+    "question": "Was ist Löslichkeit?",
+    "options": [
+      "Fähigkeit eines Stoffs zu schmelzen",
+      "Fähigkeit eines Stoffs, sich in einem Lösungsmittel zu lösen: \"Gleiches löst Gleiches\" – polare Stoffe in polaren LM (Wasser), unpolare in unpolaren (Benzin)",
+      "Dichte eines Stoffs",
+      "Viskosität"
+    ],
+    "correct": 1,
+    "explanation": "\"Like dissolves like\": Ionenverbindungen in Wasser (Hydratation). Fette in Benzol. Löslichkeit temperaturabhängig: meist steigt sie mit Temperatur (Feststoffe), Gase sinken bei höherer T. Sättigungskonzentration.",
+    "topic": "Lösungen"
+  },
+  {
+    "question": "Was ist Konzentration einer Lösung?",
+    "options": [
+      "Menge des Lösungsmittels",
+      "Menge an gelöstem Stoff pro Volumeneinheit der Lösung: c = n/V (mol/L) oder Massenkonzentration ρ = m/V (g/L)",
+      "Temperatur der Lösung",
+      "pH-Wert"
+    ],
+    "correct": 1,
+    "explanation": "Molare Konzentration c in mol/L (= molar, M). 1 M NaCl: 58,44 g/L. Verdünnung: c₁·V₁ = c₂·V₂. Molalität b = n/m(Lösungsmittel) [mol/kg] – temperaturunabhängig.",
+    "topic": "Lösungen"
+  },
+  {
+    "question": "Was ist das chemische Gleichgewicht?",
+    "options": [
+      "Vollständige Reaktion bis zum Ende",
+      "Zustand, bei dem Hin- und Rückreaktion gleich schnell ablaufen: Konzentrationen ändern sich nicht mehr (aber Reaktion läuft weiter)",
+      "Kein Reaktionsfortschritt",
+      "Gleichgewicht nur bei Neutralisation"
+    ],
+    "correct": 1,
+    "explanation": "Dynamisches Gleichgewicht: N₂ + 3H₂ ⇌ 2NH₃ (Haber-Bosch). Gleichgewichtskonstante K. Le-Chatelier-Prinzip: System weicht Störung aus (Druck, Temperatur, Konzentration). Haber-Bosch: Kompromiss aus T und P.",
+    "topic": "Chemische Reaktionen"
+  },
+  {
+    "question": "Was ist Haber-Bosch-Verfahren?",
+    "options": [
+      "Elektrolyse von Wasser",
+      "Industrielle Synthese von Ammoniak aus N₂ und H₂: N₂ + 3H₂ ⇌ 2NH₃, Eisenkatalysator, 400-500°C, 150-300 bar",
+      "Herstellung von Schwefelsäure",
+      "Destillation von Erdöl"
+    ],
+    "correct": 1,
+    "explanation": "Bosch und Haber (Nobelpreise 1918 und 1931). Ammoniakproduktion: Stickstoffdünger. Größte chemische Reaktion der Menschheitsgeschichte: Hälfte der Weltbevölkerung ernährt sich durch N-Dünger aus Haber-Bosch.",
+    "topic": "Chemische Reaktionen"
+  },
+  {
+    "question": "Was ist Radioaktivität?",
+    "options": [
+      "Elektrische Leitfähigkeit",
+      "Spontaner Zerfall instabiler Atomkerne unter Aussendung von Strahlung: α-, β-, γ-Strahlung",
+      "Magnetismus",
+      "Chemische Reaktion"
+    ],
+    "correct": 1,
+    "explanation": "α-Zerfall: ⁴He-Kern (Reichweite cm, durch Papier gestoppt). β-Zerfall: Elektron (β⁻) oder Positron (β⁺), durch Aluminium gestoppt. γ-Strahlung: energiereiche EM-Wellen, durch Blei abgeschirmt. Halbwertszeit: charakteristisch pro Isotop.",
+    "topic": "Atombau"
+  },
+  {
+    "question": "Was ist Halbwertszeit?",
+    "options": [
+      "Zeit bis zum vollständigen Zerfall",
+      "Zeit, nach der die Hälfte der Atome eines radioaktiven Isotops zerfallen ist – typisch für jedes Nuklid",
+      "Reaktionszeit",
+      "Verdoppelungszeit"
+    ],
+    "correct": 1,
+    "explanation": "¹⁴C: T½ = 5730 a (C-14-Datierung organischer Materialien). ²³⁸U: T½ = 4,5·10⁹ a (Gesteinsalterung). ¹³¹I: 8 Tage (medizinisch). Exponentieller Zerfall: N(t) = N₀ · (1/2)^(t/T½).",
+    "topic": "Atombau"
+  },
+  {
+    "question": "Was ist Kernspaltung?",
+    "options": [
+      "Zusammenschmelzen von Kernen",
+      "Spaltung schwerer Kerne (z.B. ²³⁵U) durch Neutronenbeschuss in leichtere Kerne + Neutronen + enorme Energie (E=mc²)",
+      "Radioaktiver Zerfall",
+      "Elektrolyse"
+    ],
+    "correct": 1,
+    "explanation": "Entdeckung: Hahn, Strassmann, Meitner (1938). Kettenreaktion: freie Neutronen spalten weitere U-235-Kerne. Kernkraftwerk: kontrollierte Kettenreaktion, Moderator. Atombombe: unkontrolliert. Bindungsenergie nach Massendefekt.",
+    "topic": "Kernphysik"
+  },
+  {
+    "question": "Was ist Kernfusion?",
+    "options": [
+      "Kernspaltung",
+      "Vereinigung leichter Kerne (z.B. D + T → He + n) unter enormer Energiefreisetzung – Prinzip der Sonne und der Wasserstoffbombe",
+      "Radioaktivität",
+      "Chemische Verbrennung"
+    ],
+    "correct": 1,
+    "explanation": "Sonne: 4H → He + Energie (Proton-Proton-Kette). Auf der Erde noch nicht kontrolliert nutzbar (ITER-Projekt). Vorteile gegenüber Spaltung: mehr Energie/kg, kein langlebiger Abfall, Brennstoff (Deuterium) reichlich vorhanden.",
+    "topic": "Kernphysik"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen exotherm und endotherm?",
+    "options": [
+      "Beide bedeuten dasselbe",
+      "Exotherm: Energie wird freigesetzt (ΔH < 0). Endotherm: Energie wird aufgenommen (ΔH > 0)",
+      "Exotherm: Reaktion mit Säuren. Endotherm: Reaktion mit Basen",
+      "Exotherm: mit Wasser. Endotherm: ohne Wasser"
+    ],
+    "correct": 1,
+    "explanation": "Exotherm (ΔH < 0): Verbrennung, Neutralisation. Endotherm (ΔH > 0): Fotosynthese, thermische Zersetzung (z.B. Kalkbrennen: CaCO₃ → CaO + CO₂). Aktivierungsenergie: Mindestenergie zum Starten der Reaktion.",
+    "topic": "Chemische Reaktionen"
+  },
+  {
+    "question": "Was versteht man unter einem Oxidationsmittel?",
+    "options": [
+      "Ein Stoff, der Elektronen abgibt",
+      "Ein Stoff, der Elektronen aufnimmt und dabei selbst reduziert wird",
+      "Ein Katalysator",
+      "Eine Säure"
+    ],
+    "correct": 1,
+    "explanation": "Oxidationsmittel: nimmt Elektronen auf → wird reduziert. Starke Oxidationsmittel: F₂, O₂, Cl₂, KMnO₄, H₂O₂. Reduktionsmittel: gibt Elektronen ab → wird oxidiert. Beispiel: Zn + CuSO₄ → ZnSO₄ + Cu. Zn: Reduktionsmittel; Cu²⁺: Oxidationsmittel.",
+    "topic": "Redoxreaktionen"
+  }
+]
