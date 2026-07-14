@@ -1563,28 +1563,7 @@
   <div id="tab-challenger" style="display:none;">
     <div class="mode-back" id="back-challenger" onclick="showSpielenLanding()">← Zurück zur Startseite</div>
     <h2 style="font-size:1.25rem;font-weight:700;margin-bottom:4px;color:var(--gold);">⭐ Challenger-Modus</h2>
-    <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;">Wähle deinen Modus. 2 Leben. Kein Timer. Game Over wenn du beide verlierst.</p>
-
-    <div style="font-size:.72rem;font-family:'Space Mono',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Allgemein</div>
-    <div class="chal-submode-grid" style="margin-bottom:20px;">
-      <div class="mode-card" onclick="startChallenger('general-class',null,null)" style="border-color:rgba(245,200,66,.25);">
-        <div class="mc-body">
-          <div class="mc-title" style="font-size:.95rem;color:var(--gold);">Klassenstufen</div>
-          <div class="mc-desc" style="font-size:.75rem;">Stufen 1–15: Kl. 6 · 16–30: Kl. 7 · 31–45: Kl. 10 · 46+: Kl. 11</div>
-        </div>
-      </div>
-      <div class="mode-card" onclick="startChallenger('general-weighted',null,null)" style="border-color:rgba(245,200,66,.15);">
-        <div class="mc-body">
-          <div class="mc-title" style="font-size:.95rem;color:var(--gold);">Gewichtung</div>
-          <div class="mc-desc" style="font-size:.75rem;">Sanfter Übergang: früh leicht, später schwer – alles gemischt</div>
-        </div>
-      </div>
-    </div>
-
-    <div style="font-size:.72rem;font-family:'Space Mono',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Nach Fach</div>
-    <div id="chal-subject-list" style="margin-bottom:20px;"></div>
-
-    <div style="font-size:.72rem;font-family:'Space Mono',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Nach Katalog</div>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;">Wähle einen Katalog. 2 Leben. Kein Timer. Fragen werden mit steigendem Level schwerer.</p>
     <div class="chal-submode-grid" id="chal-grade-list"></div>
   </div>
 
@@ -9542,16 +9521,21 @@ function chalPickQuestion() {
 
   let candidates;
 
-  if (CH.mode === 'general-class') {
+  if (CH.mode === 'catalog') {
+    // Progressive difficulty: unlock questions in thirds as level rises
+    const n = CH.pool.length;
+    const third = Math.ceil(n / 3);
+    const unlocked = CH.level <= third ? third : CH.level <= third * 2 ? third * 2 : n;
+    candidates = CH.pool.slice(0, unlocked);
+  } else if (CH.mode === 'general-class') {
     const targetGrade = chalGradeForLevel(CH.level);
     candidates = CH.pool.filter(q => q._grade === targetGrade);
-    if (candidates.length === 0) candidates = CH.pool; // fallback
+    if (candidates.length === 0) candidates = CH.pool;
   } else if (CH.mode === 'general-weighted') {
     const targetGrade = chalWeightedGrade(CH.level);
     candidates = CH.pool.filter(q => q._grade === targetGrade);
     if (candidates.length === 0) candidates = CH.pool;
   } else {
-    // subject or catalog: all in pool, prefer not recently used
     candidates = CH.pool;
   }
 
@@ -9787,32 +9771,8 @@ function showChallengerSetup() {
 }
 
 // Populate subject buttons and grade buttons dynamically
-async function chalPopulateSetup() {
-  if (!fbDB) return;
+function chalPopulateSetup() {
   try {
-    const snap = await fbDB.ref('questionBank').once('value');
-    const bank = snap.val();
-    if (!bank) return;
-
-    // Subjects
-    const subjects = Object.keys(bank).sort();
-    const subjEl = document.getElementById('chal-subject-list');
-    if (subjEl) {
-      const grid = document.createElement('div');
-      grid.className = 'chal-submode-grid';
-      subjects.forEach(subj => {
-        const card = document.createElement('div');
-        card.className = 'mode-card';
-        card.style.cssText = 'border-color:rgba(45,212,191,.2);cursor:pointer;';
-        card.onclick = () => startChallenger('subject', subj, null);
-        card.innerHTML = `<div class="mc-body"><div class="mc-title" style="font-size:.9rem;">${subj}</div></div>`;
-        grid.appendChild(card);
-      });
-      subjEl.innerHTML = '';
-      subjEl.appendChild(grid);
-    }
-
-    // Local catalogs
     const gradeEl = document.getElementById('chal-grade-list');
     if (gradeEl) {
       gradeEl.innerHTML = '';
