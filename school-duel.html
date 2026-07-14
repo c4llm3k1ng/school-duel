@@ -9522,11 +9522,10 @@ function chalPickQuestion() {
   let candidates;
 
   if (CH.mode === 'catalog') {
-    // Progressive difficulty: unlock questions in thirds as level rises
-    const n = CH.pool.length;
-    const third = Math.ceil(n / 3);
-    const unlocked = CH.level <= third ? third : CH.level <= third * 2 ? third * 2 : n;
-    candidates = CH.pool.slice(0, unlocked);
+    // Tier 1 (Leicht) bis Level 10, ab 11 auch Mittel, ab 21 auch Schwer
+    const maxTier = CH.level <= 10 ? 1 : CH.level <= 20 ? 2 : 3;
+    candidates = CH.pool.filter(q => (q._tier || 1) <= maxTier);
+    if (candidates.length === 0) candidates = CH.pool;
   } else if (CH.mode === 'general-class') {
     const targetGrade = chalGradeForLevel(CH.level);
     candidates = CH.pool.filter(q => q._grade === targetGrade);
@@ -9729,13 +9728,13 @@ async function startChallenger(mode, subject, grade) {
 
   try {
     if (mode === 'catalog') {
-      // Load from localStorage catalog
-      const cat = getCatalogs().find(c => c.id === grade);
-      if (!cat || !cat.questions || cat.questions.length === 0) {
-        showToast('Katalog leer oder nicht gefunden.', 'error');
-        showChallengerSetup(); return;
-      }
-      CH.pool = cat.questions.map(q => ({ ...q, _subj: cat.name, _subcat: '', _grade: '?' }));
+      const group = chalGroupCatalogs().find(g => g.name === grade);
+      if (!group) { showToast('Katalog nicht gefunden.', 'error'); showChallengerSetup(); return; }
+      CH.pool = [
+        ...group.leicht.map(q => ({ ...q, _subj: group.name, _subcat: '', _grade: '?', _tier: 1 })),
+        ...group.mittel.map(q => ({ ...q, _subj: group.name, _subcat: '', _grade: '?', _tier: 2 })),
+        ...group.schwer.map(q => ({ ...q, _subj: group.name, _subcat: '', _grade: '?', _tier: 3 })),
+      ];
     } else {
       let gradeFilter = null;
       let subjFilter  = null;
@@ -9770,26 +9769,48 @@ function showChallengerSetup() {
   showModeSetup('challenger');
 }
 
-// Populate subject buttons and grade buttons dynamically
+// Group catalogs by prefix before " – " (e.g. "Fußball – Leicht" → group "Fußball")
+function chalGroupCatalogs() {
+  const cats = getCatalogs();
+  const groups = new Map();
+  cats.forEach(cat => {
+    const m = cat.name.match(/^(.+?)\s*[–-]\s*(Leicht|Mittel|Schwer|Gemischt)$/i);
+    if (m) {
+      const prefix = m[1].trim();
+      const diff   = m[2].toLowerCase();
+      if (!groups.has(prefix)) groups.set(prefix, { name: prefix, leicht: [], mittel: [], schwer: [] });
+      const g = groups.get(prefix);
+      if      (diff === 'leicht')   g.leicht.push(...(cat.questions || []));
+      else if (diff === 'mittel')   g.mittel.push(...(cat.questions || []));
+      else if (diff === 'schwer')   g.schwer.push(...(cat.questions || []));
+      // Gemischt wird ignoriert – wir bauen die Progression selbst
+    } else {
+      // Katalog ohne Schwierigkeitsangabe → alles als "leicht"
+      if (!groups.has(cat.name)) groups.set(cat.name, { name: cat.name, leicht: cat.questions || [], mittel: [], schwer: [] });
+    }
+  });
+  return [...groups.values()];
+}
+
 function chalPopulateSetup() {
   try {
     const gradeEl = document.getElementById('chal-grade-list');
-    if (gradeEl) {
-      gradeEl.innerHTML = '';
-      const cats = getCatalogs();
-      if (cats.length === 0) {
-        gradeEl.innerHTML = '<div style="color:var(--muted);font-size:.82rem;grid-column:1/-1;">Noch keine Kataloge erstellt.</div>';
-      } else {
-        cats.forEach(cat => {
-          const card = document.createElement('div');
-          card.className = 'mode-card';
-          card.style.cssText = 'border-color:rgba(45,212,191,.2);cursor:pointer;';
-          card.onclick = () => startChallenger('catalog', null, cat.id);
-          card.innerHTML = `<div class="mc-body"><div class="mc-title" style="font-size:.9rem;">${cat.name}</div><div class="mc-desc" style="font-size:.75rem;">${cat.questions ? cat.questions.length : 0} Fragen</div></div>`;
-          gradeEl.appendChild(card);
-        });
-      }
+    if (!gradeEl) return;
+    gradeEl.innerHTML = '';
+    const groups = chalGroupCatalogs();
+    if (groups.length === 0) {
+      gradeEl.innerHTML = '<div style="color:var(--muted);font-size:.82rem;grid-column:1/-1;">Noch keine Kataloge erstellt.</div>';
+      return;
     }
+    groups.forEach(g => {
+      const total = g.leicht.length + g.mittel.length + g.schwer.length;
+      const card = document.createElement('div');
+      card.className = 'mode-card';
+      card.style.cssText = 'border-color:rgba(45,212,191,.2);cursor:pointer;';
+      card.onclick = () => startChallenger('catalog', null, g.name);
+      card.innerHTML = `<div class="mc-body"><div class="mc-title" style="font-size:.9rem;">${g.name}</div><div class="mc-desc" style="font-size:.75rem;">${total} Fragen · Leicht → Mittel → Schwer</div></div>`;
+      gradeEl.appendChild(card);
+    });
   } catch(e) { /* non-fatal */ }
 }
 
