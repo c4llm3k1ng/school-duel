@@ -1584,7 +1584,7 @@
     <div style="font-size:.72rem;font-family:'Space Mono',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Nach Fach</div>
     <div id="chal-subject-list" style="margin-bottom:20px;"></div>
 
-    <div style="font-size:.72rem;font-family:'Space Mono',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Nach Katalog (Klassenstufe)</div>
+    <div style="font-size:.72rem;font-family:'Space Mono',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Nach Katalog</div>
     <div class="chal-submode-grid" id="chal-grade-list"></div>
   </div>
 
@@ -9452,7 +9452,7 @@ function chalModeKey() {
   if (CH.mode === 'general-class')    return 'general_class';
   if (CH.mode === 'general-weighted') return 'general_weighted';
   if (CH.mode === 'subject')          return 'subject_' + (CH.subject || '').replace(/[^a-zA-Z0-9]/g, '_');
-  if (CH.mode === 'catalog')          return 'catalog_klasse' + CH.grade;
+  if (CH.mode === 'catalog')          return 'catalog_' + (CH.grade || '').replace(/[^a-zA-Z0-9]/g, '_');
   return 'general_class';
 }
 
@@ -9460,7 +9460,10 @@ function chalModeBadgeLabel() {
   if (CH.mode === 'general-class')    return 'KLASSENSTUFEN';
   if (CH.mode === 'general-weighted') return 'GEWICHTUNG';
   if (CH.mode === 'subject')          return (CH.subject || '').toUpperCase();
-  if (CH.mode === 'catalog')          return 'KLASSE ' + CH.grade;
+  if (CH.mode === 'catalog') {
+    const cat = getCatalogs().find(c => c.id === CH.grade);
+    return (cat ? cat.name : 'Katalog').toUpperCase();
+  }
   return 'CHALLENGER';
 }
 
@@ -9591,7 +9594,10 @@ function chalShowQuestion() {
   document.getElementById('chal-next-btn').style.display = 'none';
 
   const gradeInfo = document.getElementById('chal-grade-info');
-  if (gradeInfo) gradeInfo.textContent = q._subj + ' · ' + q._subcat + ' · Kl. ' + q._grade;
+  if (gradeInfo) {
+    const parts = [q._subj, q._subcat, q._grade !== '?' ? 'Kl. ' + q._grade : ''].filter(Boolean);
+    gradeInfo.textContent = parts.join(' · ');
+  }
 
   const answersEl = document.getElementById('chal-answers');
   answersEl.innerHTML = '';
@@ -9738,33 +9744,33 @@ async function startChallenger(mode, subject, grade) {
   document.getElementById('chal-mode-badge').textContent = chalModeBadgeLabel();
 
   try {
-    let gradeFilter = null;
-    let subjFilter  = null;
-
-    if (mode === 'general-class' || mode === 'general-weighted') {
-      gradeFilter = CHAL_GRADE_ORDER;
-    } else if (mode === 'subject') {
-      subjFilter  = subject;
-      gradeFilter = CHAL_GRADE_ORDER;
-    } else if (mode === 'catalog') {
-      gradeFilter = [grade];
+    if (mode === 'catalog') {
+      // Load from localStorage catalog
+      const cat = getCatalogs().find(c => c.id === grade);
+      if (!cat || !cat.questions || cat.questions.length === 0) {
+        showToast('Katalog leer oder nicht gefunden.', 'error');
+        showChallengerSetup(); return;
+      }
+      CH.pool = cat.questions.map(q => ({ ...q, _subj: cat.name, _subcat: '', _grade: '?' }));
+    } else {
+      let gradeFilter = null;
+      let subjFilter  = null;
+      if (mode === 'general-class' || mode === 'general-weighted') {
+        gradeFilter = CHAL_GRADE_ORDER;
+      } else if (mode === 'subject') {
+        subjFilter  = subject;
+        gradeFilter = CHAL_GRADE_ORDER;
+      }
+      await chalLoadBank(gradeFilter, subjFilter);
     }
-
-    await chalLoadBank(gradeFilter, subjFilter);
 
     if (CH.pool.length === 0) {
       showToast('Keine Fragen gefunden – bitte zuerst Fragen in die Bibliothek laden.', 'error');
-      showScreen('screen-home');
-      switchTab('spielen');
-      showChallengerSetup();
-      return;
+      showChallengerSetup(); return;
     }
   } catch(e) {
     showToast('Fehler beim Laden: ' + e.message, 'error');
-    showScreen('screen-home');
-    switchTab('spielen');
-    showChallengerSetup();
-    return;
+    showChallengerSetup(); return;
   }
 
   document.getElementById('chal-loading').style.display = 'none';
@@ -9806,18 +9812,23 @@ async function chalPopulateSetup() {
       subjEl.appendChild(grid);
     }
 
-    // Grades
+    // Local catalogs
     const gradeEl = document.getElementById('chal-grade-list');
     if (gradeEl) {
       gradeEl.innerHTML = '';
-      CHAL_GRADE_ORDER.forEach(g => {
-        const card = document.createElement('div');
-        card.className = 'mode-card';
-        card.style.cssText = 'border-color:rgba(45,212,191,.2);cursor:pointer;';
-        card.onclick = () => startChallenger('catalog', null, g);
-        card.innerHTML = `<div class="mc-body"><div class="mc-title" style="font-size:.9rem;">Klasse ${g}</div><div class="mc-desc" style="font-size:.75rem;">Alle Fächer · Kl. ${g}</div></div>`;
-        gradeEl.appendChild(card);
-      });
+      const cats = getCatalogs();
+      if (cats.length === 0) {
+        gradeEl.innerHTML = '<div style="color:var(--muted);font-size:.82rem;grid-column:1/-1;">Noch keine Kataloge erstellt.</div>';
+      } else {
+        cats.forEach(cat => {
+          const card = document.createElement('div');
+          card.className = 'mode-card';
+          card.style.cssText = 'border-color:rgba(45,212,191,.2);cursor:pointer;';
+          card.onclick = () => startChallenger('catalog', null, cat.id);
+          card.innerHTML = `<div class="mc-body"><div class="mc-title" style="font-size:.9rem;">${cat.name}</div><div class="mc-desc" style="font-size:.75rem;">${cat.questions ? cat.questions.length : 0} Fragen</div></div>`;
+          gradeEl.appendChild(card);
+        });
+      }
     }
   } catch(e) { /* non-fatal */ }
 }
