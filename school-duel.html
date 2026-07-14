@@ -481,6 +481,28 @@
   /* REPORT MODAL */
   .report-q { background:var(--surface2); border-radius:10px; padding:13px; font-size:.88rem; margin-bottom:14px; line-height:1.5; color:var(--text); }
   .report-counter { font-size:.75rem; color:var(--muted); font-family:'Space Mono',monospace; margin-bottom:10px; }
+
+  /* ── CHALLENGER MODE ── */
+  .chal-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; }
+  .chal-level-wrap { text-align:center; }
+  .chal-level-lbl { font-size:.68rem; font-family:'Space Mono',monospace; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; }
+  .chal-level-num { font-family:'Space Mono',monospace; font-size:2.2rem; font-weight:700; line-height:1; background:var(--accent-grad); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  .chal-lives { display:flex; gap:8px; align-items:center; }
+  .chal-heart { font-size:1.6rem; transition:opacity .35s, transform .35s; line-height:1; }
+  .chal-heart.lost { opacity:.18; transform:scale(.8) rotate(-10deg); filter:grayscale(1); }
+  .chal-mode-badge { display:inline-block; font-size:.7rem; font-family:'Space Mono',monospace; padding:3px 11px; border-radius:50px; background:rgba(245,200,66,.12); border:1px solid rgba(245,200,66,.28); color:var(--gold); margin-bottom:14px; }
+  .chal-submode-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:4px; }
+  .chal-gameover-wrap { text-align:center; }
+  .chal-gameover-icon { font-size:4rem; margin-bottom:10px; }
+  .chal-gameover-title { font-size:1.6rem; font-weight:700; margin-bottom:6px; }
+  .chal-gameover-level { font-family:'Space Mono',monospace; font-size:3.6rem; font-weight:700; background:var(--accent-grad); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; line-height:1.1; }
+  .chal-lb-row { display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid var(--border); }
+  .chal-lb-row:last-child { border-bottom:none; }
+  .chal-lb-rank { font-family:'Space Mono',monospace; font-size:.85rem; color:var(--muted); width:28px; flex-shrink:0; text-align:center; }
+  .chal-lb-name { flex:1; font-weight:600; font-size:.9rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .chal-lb-level { font-family:'Space Mono',monospace; font-size:1rem; font-weight:700; color:var(--accent); flex-shrink:0; }
+  .chal-lb-row.chal-lb-me .chal-lb-name { color:var(--accent); }
+  .chal-lb-row.chal-lb-me .chal-lb-rank { color:var(--gold); font-weight:700; }
 </style>
 <!-- Firebase SDKs (compat) -->
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
@@ -931,6 +953,14 @@
         <div class="mc-desc">Falsch beantwortete Fragen nochmal wiederholen</div>
       </div>
       <div class="mc-arrow">›</div>
+    </div>
+    <div class="mode-card" onclick="showModeSetup('challenger')" style="border-color:rgba(245,200,66,.25);background:radial-gradient(120% 120% at 0% 0%, rgba(245,200,66,.08), transparent 45%), linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,0) 40%), var(--glass);">
+      <div class="mc-icon" style="color:var(--gold);background:linear-gradient(180deg, rgba(245,200,66,.16), rgba(245,200,66,.04));border-color:rgba(245,200,66,.3);box-shadow:inset 0 0 14px rgba(245,200,66,.18), 0 0 16px rgba(245,200,66,.15);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+      <div class="mc-body">
+        <div class="mc-title" style="color:var(--gold);">Challenger</div>
+        <div class="mc-desc">Endlos-Modus – steige Level für Level auf. 2 Leben. Bis zum Game Over.</div>
+      </div>
+      <div class="mc-arrow" style="color:var(--gold);">›</div>
     </div>
   </div>
 
@@ -1529,6 +1559,35 @@
     <div id="practice-list-container"></div>
   </div>
 
+  <!-- CHALLENGER SETUP TAB -->
+  <div id="tab-challenger" style="display:none;">
+    <div class="mode-back" id="back-challenger" onclick="showSpielenLanding()">← Zurück zur Startseite</div>
+    <h2 style="font-size:1.25rem;font-weight:700;margin-bottom:4px;color:var(--gold);">⭐ Challenger-Modus</h2>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;">Wähle deinen Modus. 2 Leben. Kein Timer. Game Over wenn du beide verlierst.</p>
+
+    <div style="font-size:.72rem;font-family:'Space Mono',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Allgemein</div>
+    <div class="chal-submode-grid" style="margin-bottom:20px;">
+      <div class="mode-card" onclick="startChallenger('general-class',null,null)" style="border-color:rgba(245,200,66,.25);">
+        <div class="mc-body">
+          <div class="mc-title" style="font-size:.95rem;color:var(--gold);">Klassenstufen</div>
+          <div class="mc-desc" style="font-size:.75rem;">Stufen 1–15: Kl. 6 · 16–30: Kl. 7 · 31–45: Kl. 10 · 46+: Kl. 11</div>
+        </div>
+      </div>
+      <div class="mode-card" onclick="startChallenger('general-weighted',null,null)" style="border-color:rgba(245,200,66,.15);">
+        <div class="mc-body">
+          <div class="mc-title" style="font-size:.95rem;color:var(--gold);">Gewichtung</div>
+          <div class="mc-desc" style="font-size:.75rem;">Sanfter Übergang: früh leicht, später schwer – alles gemischt</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="font-size:.72rem;font-family:'Space Mono',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Nach Fach</div>
+    <div id="chal-subject-list" style="margin-bottom:20px;"></div>
+
+    <div style="font-size:.72rem;font-family:'Space Mono',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Nach Katalog (Klassenstufe)</div>
+    <div class="chal-submode-grid" id="chal-grade-list"></div>
+  </div>
+
   <button id="spielen-home-btn" class="home-bottom-btn" style="display:none;" onclick="showSpielenLanding()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Zur Startseite</button>
 </div>
 
@@ -1814,6 +1873,53 @@
   </div>
   <div id="review-list"></div>
   <button class="btn btn-secondary" id="review-back-btn" style="margin-top:8px;">← Zurück zum Ergebnis</button>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: CHALLENGER GAME ═══════════════════════════ -->
+<div class="screen" id="screen-challenger-game">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+
+  <!-- Loading -->
+  <div id="chal-loading" class="loading-state" style="display:none;">
+    <div class="spinner"></div>
+    <div>Lade Fragen…</div>
+  </div>
+
+  <!-- Question area -->
+  <div id="chal-question-wrap" style="display:none;">
+    <div class="chal-header">
+      <div class="chal-level-wrap">
+        <div class="chal-level-lbl">LEVEL</div>
+        <div class="chal-level-num" id="chal-level-num">1</div>
+      </div>
+      <div class="chal-mode-badge" id="chal-mode-badge" style="margin-bottom:0;"></div>
+      <div class="chal-lives" id="chal-lives">
+        <span class="chal-heart" id="chal-heart-1">❤️</span>
+        <span class="chal-heart" id="chal-heart-2">❤️</span>
+      </div>
+    </div>
+    <div class="card">
+      <span class="topic-badge" id="chal-topic" style="display:none;"></span>
+      <div class="question-text" id="chal-question-text"></div>
+      <div class="answers" id="chal-answers"></div>
+      <div class="feedback" id="chal-feedback" style="display:none;"></div>
+      <button class="next-btn" id="chal-next-btn" onclick="chalNextBtn()" style="display:none;">Weiter →</button>
+      <div style="font-size:.7rem;color:var(--muted);text-align:right;margin-top:8px;" id="chal-grade-info"></div>
+    </div>
+  </div>
+
+  <!-- Game Over -->
+  <div id="chal-gameover-wrap" class="chal-gameover-wrap" style="display:none;">
+    <div class="chal-gameover-icon">💀</div>
+    <div class="chal-gameover-title">Game Over</div>
+    <div class="chal-mode-badge" id="chal-go-mode"></div>
+    <div id="chal-go-msg" style="font-size:.85rem;color:var(--muted);margin-bottom:18px;"></div>
+    <div style="font-size:.75rem;color:var(--muted);font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:.06em;">Erreichtes Level</div>
+    <div class="chal-gameover-level" id="chal-go-level">0</div>
+    <div id="chal-leaderboard" style="margin:20px 0;text-align:left;"></div>
+    <button class="btn btn-primary" onclick="showChallengerSetup()" style="margin-bottom:10px;">Nochmal spielen</button>
+    <button class="btn btn-secondary" onclick="showScreen('screen-home');switchTab('spielen')">Zum Hauptmenü</button>
+  </div>
 </div>
 
 </div><!-- /.app -->
@@ -4760,12 +4866,12 @@ function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   window.scrollTo(0, 0);
-  const noHomeBtn = ['screen-home','screen-auth','screen-loading','screen-handover','screen-quiz','screen-round-result'];
+  const noHomeBtn = ['screen-home','screen-auth','screen-loading','screen-handover','screen-quiz','screen-round-result','screen-challenger-game'];
   document.getElementById('global-home-btn').style.display = noHomeBtn.includes(id) ? 'none' : 'block';
   if (id === 'screen-friends') renderFriendsList();
 }
 
-const MODE_TABS = ['solo','quickduel','duel','practice','lokal'];
+const MODE_TABS = ['solo','quickduel','duel','practice','lokal','challenger'];
 
 function switchTab(tab) {
   // Main nav tabs
@@ -4795,10 +4901,11 @@ function showModeSetup(mode) {
     if (el)   el.style.display = t === mode ? 'block' : 'none';
     if (back) back.classList.toggle('visible', t === mode);
   });
-  if (mode === 'duel')      { _duelConnMode = 'online'; showDuelTypeLanding(); }
-  if (mode === 'quickduel') { showQuickDuelDirect(); }
-  if (mode === 'solo')      showSoloLanding();
-  if (mode === 'practice')  renderPracticeTab();
+  if (mode === 'duel')        { _duelConnMode = 'online'; showDuelTypeLanding(); }
+  if (mode === 'quickduel')   { showQuickDuelDirect(); }
+  if (mode === 'solo')        showSoloLanding();
+  if (mode === 'practice')    renderPracticeTab();
+  if (mode === 'challenger')  chalPopulateSetup();
   document.getElementById('spielen-back-arrow').style.display = 'inline-flex';
   document.getElementById('spielen-home-btn').style.display = 'block';
   updateOfflineUI?.();
@@ -9321,6 +9428,398 @@ async function deleteFromBank(idx) {
   await deleteFromQuestionBank(grade, subj, subcat);
   showToast('Pool gelöscht ✓', 'success');
   refreshLibrary();
+}
+
+// ═══════════════════════════════════════════════════════
+// CHALLENGER MODE
+// ═══════════════════════════════════════════════════════
+
+const CH = {
+  mode: null,       // 'general-class' | 'general-weighted' | 'subject' | 'catalog'
+  subject: null,    // for mode='subject'
+  grade: null,      // for mode='catalog'
+  level: 1,
+  lives: 2,
+  pool: [],         // flat array of all loaded questions
+  usedSet: new Set(),
+  currentQ: null,
+  answered: false,
+};
+
+const CHAL_GRADE_ORDER = ['6','7','10','11'];
+
+function chalModeKey() {
+  if (CH.mode === 'general-class')    return 'general_class';
+  if (CH.mode === 'general-weighted') return 'general_weighted';
+  if (CH.mode === 'subject')          return 'subject_' + (CH.subject || '').replace(/[^a-zA-Z0-9]/g, '_');
+  if (CH.mode === 'catalog')          return 'catalog_klasse' + CH.grade;
+  return 'general_class';
+}
+
+function chalModeBadgeLabel() {
+  if (CH.mode === 'general-class')    return 'KLASSENSTUFEN';
+  if (CH.mode === 'general-weighted') return 'GEWICHTUNG';
+  if (CH.mode === 'subject')          return (CH.subject || '').toUpperCase();
+  if (CH.mode === 'catalog')          return 'KLASSE ' + CH.grade;
+  return 'CHALLENGER';
+}
+
+// Grade weights for weighted mode: shifts from easy (kl6) to hard (kl11) as level increases
+function chalGradeWeights(level) {
+  const p = Math.min(1, (level - 1) / 55);
+  return {
+    '6':  Math.max(0, 1 - p * 1.4),
+    '7':  Math.max(0, Math.min(0.6, p * 2.5 - 0.4)),
+    '10': Math.max(0, Math.min(0.6, p * 2.5 - 1.1)),
+    '11': Math.max(0, p * 1.4 - 0.8),
+  };
+}
+
+// Grade bracket for class-based mode
+function chalGradeForLevel(level) {
+  if (level <= 15) return '6';
+  if (level <= 30) return '7';
+  if (level <= 45) return '10';
+  return '11';
+}
+
+// Pick a random grade according to weights
+function chalWeightedGrade(level) {
+  const w = chalGradeWeights(level);
+  const total = Object.values(w).reduce((a, b) => a + b, 0);
+  if (total <= 0) return '11';
+  let r = Math.random() * total;
+  for (const g of CHAL_GRADE_ORDER) {
+    r -= w[g];
+    if (r <= 0) return g;
+  }
+  return '11';
+}
+
+// Load all questions from Firebase questionBank into CH.pool
+// gradeFilter: array of grade strings, or null for all grades
+// subjFilter: string or null
+async function chalLoadBank(gradeFilter, subjFilter) {
+  const db = fbDB;
+  if (!db) throw new Error('Firebase nicht verbunden');
+
+  const snap = await db.ref('questionBank').once('value');
+  const bank = snap.val();
+  if (!bank) return;
+
+  CH.pool = [];
+  for (const [subj, subcats] of Object.entries(bank)) {
+    if (subjFilter && subj !== subjFilter) continue;
+    for (const [subcat, grades] of Object.entries(subcats)) {
+      for (const [gradeKey, data] of Object.entries(grades)) {
+        const gradeNum = gradeKey.replace('klasse', '');
+        if (gradeFilter && !gradeFilter.includes(gradeNum)) continue;
+
+        let questions;
+        if (Array.isArray(data)) {
+          questions = data;
+        } else if (data && Array.isArray(data.questions)) {
+          questions = data.questions;
+        } else {
+          continue;
+        }
+        for (const q of questions) {
+          if (q && q.question && Array.isArray(q.options)) {
+            CH.pool.push({ ...q, _subj: subj, _subcat: subcat, _grade: gradeNum });
+          }
+        }
+      }
+    }
+  }
+}
+
+// Pick next question based on current mode and level
+function chalPickQuestion() {
+  if (CH.pool.length === 0) return null;
+
+  let candidates;
+
+  if (CH.mode === 'general-class') {
+    const targetGrade = chalGradeForLevel(CH.level);
+    candidates = CH.pool.filter(q => q._grade === targetGrade);
+    if (candidates.length === 0) candidates = CH.pool; // fallback
+  } else if (CH.mode === 'general-weighted') {
+    const targetGrade = chalWeightedGrade(CH.level);
+    candidates = CH.pool.filter(q => q._grade === targetGrade);
+    if (candidates.length === 0) candidates = CH.pool;
+  } else {
+    // subject or catalog: all in pool, prefer not recently used
+    candidates = CH.pool;
+  }
+
+  // Remove already-used questions first
+  const unused = candidates.filter(q => !CH.usedSet.has(q.question));
+  const bucket = unused.length > 0 ? unused : candidates; // recycle if exhausted
+
+  const q = bucket[Math.floor(Math.random() * bucket.length)];
+  CH.usedSet.add(q.question);
+  return q;
+}
+
+// Update the lives display
+function chalRenderLives() {
+  const h1 = document.getElementById('chal-heart-1');
+  const h2 = document.getElementById('chal-heart-2');
+  if (h1) h1.classList.toggle('lost', CH.lives < 1);
+  if (h2) h2.classList.toggle('lost', CH.lives < 2);
+}
+
+// Show one question
+function chalShowQuestion() {
+  const q = chalPickQuestion();
+  if (!q) {
+    showToast('Keine Fragen geladen', 'error');
+    return;
+  }
+  CH.currentQ = q;
+  CH.answered = false;
+
+  document.getElementById('chal-level-num').textContent = CH.level;
+  chalRenderLives();
+
+  const topicEl = document.getElementById('chal-topic');
+  if (q.topic) { topicEl.textContent = q.topic; topicEl.style.display = 'inline-block'; }
+  else          { topicEl.style.display = 'none'; }
+
+  document.getElementById('chal-question-text').textContent = q.question;
+  document.getElementById('chal-feedback').style.display = 'none';
+  document.getElementById('chal-next-btn').style.display = 'none';
+
+  const gradeInfo = document.getElementById('chal-grade-info');
+  if (gradeInfo) gradeInfo.textContent = q._subj + ' · ' + q._subcat + ' · Kl. ' + q._grade;
+
+  const answersEl = document.getElementById('chal-answers');
+  answersEl.innerHTML = '';
+  const letters = ['A','B','C','D'];
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'answer-btn';
+    btn.innerHTML = '<span class="ans-letter">' + letters[i] + '</span><span>' + opt + '</span>';
+    btn.onclick = () => chalAnswer(i);
+    answersEl.appendChild(btn);
+  });
+}
+
+function chalAnswer(idx) {
+  if (CH.answered) return;
+  CH.answered = true;
+
+  const q = CH.currentQ;
+  const correct = idx === q.correct;
+  const btns = document.querySelectorAll('#chal-answers .answer-btn');
+
+  btns.forEach((b, i) => {
+    b.disabled = true;
+    if (i === q.correct) b.classList.add('correct');
+    else if (i === idx && !correct) b.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('chal-feedback');
+  fb.style.display = 'block';
+
+  if (correct) {
+    fb.className = 'feedback correct';
+    fb.innerHTML = '✓ Richtig!';
+    CH.level++;
+    document.getElementById('chal-next-btn').style.display = 'block';
+  } else {
+    CH.lives--;
+    chalRenderLives();
+    fb.className = 'feedback wrong';
+    let msg = '✗ Falsch.';
+    if (q.explanation) msg += ' ' + q.explanation;
+    fb.innerHTML = msg;
+
+    if (CH.lives <= 0) {
+      setTimeout(chalGameOver, 1400);
+    } else {
+      document.getElementById('chal-next-btn').style.display = 'block';
+    }
+  }
+}
+
+function chalNextBtn() {
+  if (!CH.answered) return;
+  chalShowQuestion();
+}
+
+async function chalGameOver() {
+  const level = CH.level - 1; // last successfully completed level
+  document.getElementById('chal-question-wrap').style.display = 'none';
+
+  const goWrap = document.getElementById('chal-gameover-wrap');
+  goWrap.style.display = 'block';
+
+  document.getElementById('chal-go-level').textContent = level;
+  document.getElementById('chal-go-mode').textContent = chalModeBadgeLabel();
+
+  const msg = level <= 0
+    ? 'Schade! Beim nächsten Mal klappt es besser.'
+    : level <= 10 ? 'Nicht schlecht für den Anfang!'
+    : level <= 25 ? 'Solide! Du kennst dich aus.'
+    : level <= 50 ? 'Stark! Du bist ein echter Herausforderer.'
+    : 'LEGENDÄR! Du bist kaum zu stoppen.';
+  document.getElementById('chal-go-msg').textContent = msg;
+
+  await chalSaveHighscore(level);
+  await chalRenderLeaderboard(level);
+}
+
+async function chalSaveHighscore(level) {
+  if (!currentUser || !fbDB) return;
+  try {
+    const key = chalModeKey();
+    const ref = fbDB.ref('challengerScores/' + key + '/' + currentUser.uid);
+    const snap = await ref.once('value');
+    const existing = snap.val();
+    if (!existing || existing.level < level) {
+      await ref.set({
+        level,
+        name: currentUser.displayName || currentUser.email || 'Anonym',
+        ts: Date.now(),
+      });
+    }
+  } catch(e) { /* score saving is best-effort */ }
+}
+
+async function chalRenderLeaderboard(myLevel) {
+  const lb = document.getElementById('chal-leaderboard');
+  if (!lb || !fbDB) return;
+
+  try {
+    const key = chalModeKey();
+    const snap = await fbDB.ref('challengerScores/' + key).orderByChild('level').limitToLast(10).once('value');
+    const data = snap.val();
+    if (!data) { lb.innerHTML = '<div style="color:var(--muted);font-size:.82rem;">Noch keine Einträge.</div>'; return; }
+
+    const entries = Object.entries(data)
+      .map(([uid, v]) => ({ uid, ...v }))
+      .sort((a, b) => b.level - a.level)
+      .slice(0, 10);
+
+    const medals = ['🥇','🥈','🥉'];
+    let html = '<div style="font-size:.72rem;font-family:\'Space Mono\',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;">Bestenliste</div>';
+    entries.forEach((e, i) => {
+      const isMe = currentUser && e.uid === currentUser.uid;
+      const rank = medals[i] || (i + 1 + '.');
+      html += `<div class="chal-lb-row${isMe ? ' chal-lb-me' : ''}">
+        <div class="chal-lb-rank">${rank}</div>
+        <div class="chal-lb-name">${e.name || 'Anonym'}${isMe ? ' (du)' : ''}</div>
+        <div class="chal-lb-level">Lv. ${e.level}</div>
+      </div>`;
+    });
+    lb.innerHTML = html;
+  } catch(e) {
+    lb.innerHTML = '<div style="color:var(--muted);font-size:.82rem;">Bestenliste nicht verfügbar.</div>';
+  }
+}
+
+async function startChallenger(mode, subject, grade) {
+  CH.mode    = mode;
+  CH.subject = subject;
+  CH.grade   = grade;
+  CH.level   = 1;
+  CH.lives   = 2;
+  CH.pool    = [];
+  CH.usedSet = new Set();
+  CH.currentQ = null;
+  CH.answered  = false;
+
+  showScreen('screen-challenger-game');
+  document.getElementById('chal-loading').style.display = 'block';
+  document.getElementById('chal-question-wrap').style.display = 'none';
+  document.getElementById('chal-gameover-wrap').style.display = 'none';
+
+  document.getElementById('chal-mode-badge').textContent = chalModeBadgeLabel();
+
+  try {
+    let gradeFilter = null;
+    let subjFilter  = null;
+
+    if (mode === 'general-class' || mode === 'general-weighted') {
+      gradeFilter = CHAL_GRADE_ORDER;
+    } else if (mode === 'subject') {
+      subjFilter  = subject;
+      gradeFilter = CHAL_GRADE_ORDER;
+    } else if (mode === 'catalog') {
+      gradeFilter = [grade];
+    }
+
+    await chalLoadBank(gradeFilter, subjFilter);
+
+    if (CH.pool.length === 0) {
+      showToast('Keine Fragen gefunden – bitte zuerst Fragen in die Bibliothek laden.', 'error');
+      showScreen('screen-home');
+      switchTab('spielen');
+      showChallengerSetup();
+      return;
+    }
+  } catch(e) {
+    showToast('Fehler beim Laden: ' + e.message, 'error');
+    showScreen('screen-home');
+    switchTab('spielen');
+    showChallengerSetup();
+    return;
+  }
+
+  document.getElementById('chal-loading').style.display = 'none';
+  document.getElementById('chal-question-wrap').style.display = 'block';
+
+  chalRenderLives();
+  chalShowQuestion();
+}
+
+function showChallengerSetup() {
+  showScreen('screen-home');
+  switchTab('spielen');
+  showModeSetup('challenger');
+}
+
+// Populate subject buttons and grade buttons dynamically
+async function chalPopulateSetup() {
+  if (!fbDB) return;
+  try {
+    const snap = await fbDB.ref('questionBank').once('value');
+    const bank = snap.val();
+    if (!bank) return;
+
+    // Subjects
+    const subjects = Object.keys(bank).sort();
+    const subjEl = document.getElementById('chal-subject-list');
+    if (subjEl) {
+      const grid = document.createElement('div');
+      grid.className = 'chal-submode-grid';
+      subjects.forEach(subj => {
+        const card = document.createElement('div');
+        card.className = 'mode-card';
+        card.style.cssText = 'border-color:rgba(45,212,191,.2);cursor:pointer;';
+        card.onclick = () => startChallenger('subject', subj, null);
+        card.innerHTML = `<div class="mc-body"><div class="mc-title" style="font-size:.9rem;">${subj}</div></div>`;
+        grid.appendChild(card);
+      });
+      subjEl.innerHTML = '';
+      subjEl.appendChild(grid);
+    }
+
+    // Grades
+    const gradeEl = document.getElementById('chal-grade-list');
+    if (gradeEl) {
+      gradeEl.innerHTML = '';
+      CHAL_GRADE_ORDER.forEach(g => {
+        const card = document.createElement('div');
+        card.className = 'mode-card';
+        card.style.cssText = 'border-color:rgba(45,212,191,.2);cursor:pointer;';
+        card.onclick = () => startChallenger('catalog', null, g);
+        card.innerHTML = `<div class="mc-body"><div class="mc-title" style="font-size:.9rem;">Klasse ${g}</div><div class="mc-desc" style="font-size:.75rem;">Alle Fächer · Kl. ${g}</div></div>`;
+        gradeEl.appendChild(card);
+      });
+    }
+  } catch(e) { /* non-fatal */ }
 }
 
 // ── leave room ──
