@@ -1883,6 +1883,7 @@
       <div class="answers" id="chal-answers"></div>
       <div class="feedback" id="chal-feedback" style="display:none;"></div>
       <div style="font-size:.7rem;color:var(--muted);text-align:right;margin-top:8px;" id="chal-grade-info"></div>
+      <button class="flag-btn" id="chal-report-btn" onclick="chalOpenReport()" style="display:none;margin-top:10px;width:auto;align-self:flex-start;font-size:.78rem;padding:5px 11px;">⚑ Frage melden</button>
     </div>
   </div>
 
@@ -7062,6 +7063,7 @@ function showNextReport() {
 
 function skipReport() {
   document.getElementById('modal-report').classList.add('hidden');
+  if (CH.reporting) { CH.reporting = false; return; }
   pendingReports.shift();
   showNextReport();
 }
@@ -7201,8 +7203,22 @@ async function submitReport() {
   const problem    = document.getElementById('report-problem').value.trim();
   const correction = document.getElementById('report-correction').value.trim();
   if (!problem) { showToast('Bitte das Problem beschreiben', 'error'); return; }
-  const { q } = pendingReports[0];
   document.getElementById('modal-report').classList.add('hidden');
+
+  // Challenger-Modus: direkt aus CH.currentQ speichern
+  if (CH.reporting) {
+    CH.reporting = false;
+    const q = CH.currentQ;
+    const savedSubj = G.subject, savedGrade = G.grade;
+    G.subject = q._subcat || CH.subject || 'Challenger';
+    G.grade = 'Challenger';
+    saveReportLocally(q, problem, correction);
+    G.subject = savedSubj; G.grade = savedGrade;
+    showToast('Frage gemeldet ✓', 'success');
+    return;
+  }
+
+  const { q } = pendingReports[0];
 
   // Immer lokal speichern
   saveReportLocally(q, problem, correction);
@@ -9422,6 +9438,7 @@ const CH = {
   usedSet: new Set(),
   currentQ: null,
   answered: false,
+  reporting: false, // true while report modal is open from Challenger
 };
 
 const CHAL_GRADE_ORDER = ['6','7','10','11'];
@@ -9595,6 +9612,9 @@ function chalShowQuestion() {
     btn.onclick = () => chalAnswer(i);
     answersEl.appendChild(btn);
   });
+
+  const rBtn = document.getElementById('chal-report-btn');
+  if (rBtn) rBtn.style.display = 'inline-block';
 }
 
 function chalAnswer(idx) {
@@ -9635,9 +9655,23 @@ function chalAnswer(idx) {
   }
 }
 
+function chalOpenReport() {
+  if (!CH.currentQ) return;
+  const q = CH.currentQ;
+  document.getElementById('report-counter').textContent =
+    'Challenger – ' + (q._subcat || CH.subject || CH.mode || 'Katalog');
+  document.getElementById('report-q-text').textContent = chalCleanQuestion(q.question);
+  document.getElementById('report-problem').value = '';
+  document.getElementById('report-correction').value = '';
+  CH.reporting = true;
+  document.getElementById('modal-report').classList.remove('hidden');
+}
+
 async function chalGameOver() {
   const level = CH.level - 1; // last successfully completed level
   document.getElementById('chal-question-wrap').style.display = 'none';
+  const rBtn = document.getElementById('chal-report-btn');
+  if (rBtn) rBtn.style.display = 'none';
 
   const goWrap = document.getElementById('chal-gameover-wrap');
   goWrap.style.display = 'block';
