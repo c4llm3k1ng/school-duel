@@ -1882,7 +1882,6 @@
       <div class="question-text" id="chal-question-text"></div>
       <div class="answers" id="chal-answers"></div>
       <div class="feedback" id="chal-feedback" style="display:none;"></div>
-      <button class="next-btn" id="chal-next-btn" onclick="chalNextBtn()" style="display:none;">Weiter →</button>
       <div style="font-size:.7rem;color:var(--muted);text-align:right;margin-top:8px;" id="chal-grade-info"></div>
     </div>
   </div>
@@ -9547,6 +9546,11 @@ function chalPickQuestion() {
   return q;
 }
 
+// Strip trailing parenthetical hints from question text, e.g. "Frage? (Antwort)" → "Frage?"
+function chalCleanQuestion(text) {
+  return text.replace(/\s*\([^)]{1,120}\)\s*[.?!]?\s*$/, '').replace(/\s+([?!.])$/, '$1').trim();
+}
+
 // Update the lives display
 function chalRenderLives() {
   const h1 = document.getElementById('chal-heart-1');
@@ -9572,9 +9576,8 @@ function chalShowQuestion() {
   if (q.topic) { topicEl.textContent = q.topic; topicEl.style.display = 'inline-block'; }
   else          { topicEl.style.display = 'none'; }
 
-  document.getElementById('chal-question-text').textContent = q.question;
+  document.getElementById('chal-question-text').textContent = chalCleanQuestion(q.question);
   document.getElementById('chal-feedback').style.display = 'none';
-  document.getElementById('chal-next-btn').style.display = 'none';
 
   const gradeInfo = document.getElementById('chal-grade-info');
   if (gradeInfo) {
@@ -9615,7 +9618,7 @@ function chalAnswer(idx) {
     fb.className = 'feedback correct';
     fb.innerHTML = '✓ Richtig!';
     CH.level++;
-    document.getElementById('chal-next-btn').style.display = 'block';
+    setTimeout(chalShowQuestion, 1400);
   } else {
     CH.lives--;
     chalRenderLives();
@@ -9625,16 +9628,11 @@ function chalAnswer(idx) {
     fb.innerHTML = msg;
 
     if (CH.lives <= 0) {
-      setTimeout(chalGameOver, 1400);
+      setTimeout(chalGameOver, 2500);
     } else {
-      document.getElementById('chal-next-btn').style.display = 'block';
+      setTimeout(chalShowQuestion, 2500);
     }
   }
-}
-
-function chalNextBtn() {
-  if (!CH.answered) return;
-  chalShowQuestion();
 }
 
 async function chalGameOver() {
