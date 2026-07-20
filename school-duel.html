@@ -581,6 +581,25 @@
 </div>
 
 <!-- ═══════════════════════════ REPORT MODAL ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-quickedit">
+  <div class="modal" style="max-width:500px;">
+    <h2 style="margin-bottom:16px;">✏️ Frage bearbeiten</h2>
+    <div class="form-field">
+      <label>Frage</label>
+      <textarea class="form-input" id="qe-question" rows="3"></textarea>
+    </div>
+    <div id="qe-options-container" style="margin-bottom:12px;"></div>
+    <div class="form-field">
+      <label>Erklärung</label>
+      <textarea class="form-input" id="qe-explanation" rows="2"></textarea>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:16px;">
+      <button class="btn btn-primary" onclick="saveQuickEdit()">Speichern</button>
+      <button class="btn btn-secondary" onclick="closeQuickEdit()">Abbrechen</button>
+    </div>
+  </div>
+</div>
+
 <div class="modal-backdrop hidden" id="modal-report">
   <div class="modal">
     <h2>⚑ Frage beanstanden</h2>
@@ -1683,6 +1702,7 @@
   <div class="quiz-header">
     <div class="q-meta">Frage <strong id="q-current">1</strong> / <span id="q-total">8</span></div>
     <button class="flag-btn" id="flag-btn" onclick="flagCurrentQuestion()">⚑ Beanstanden</button>
+    <button class="flag-btn" id="quiz-edit-btn" onclick="openQuickEdit()" style="display:none;border-color:var(--accent);color:var(--accent);">✏️ Editieren</button>
     <div class="timer-ring">
       <svg width="52" height="52" viewBox="0 0 52 52">
         <circle class="timer-track" cx="26" cy="26" r="22"/>
@@ -1884,6 +1904,7 @@
       <div class="feedback" id="chal-feedback" style="display:none;"></div>
       <div style="font-size:.7rem;color:var(--muted);text-align:right;margin-top:8px;" id="chal-grade-info"></div>
       <button class="flag-btn" id="chal-report-btn" onclick="chalOpenReport()" style="display:none;margin-top:10px;width:auto;align-self:flex-start;font-size:.78rem;padding:5px 11px;">⚑ Frage melden</button>
+      <button class="flag-btn" id="chal-edit-btn" onclick="openQuickEdit()" style="display:none;margin-top:6px;width:auto;align-self:flex-start;font-size:.78rem;padding:5px 11px;border-color:var(--accent);color:var(--accent);">✏️ Editieren</button>
     </div>
   </div>
 
@@ -6137,6 +6158,8 @@ function renderQuestion() {
   const flagBtn = document.getElementById('flag-btn');
   flagBtn.classList.toggle('flagged', isFlagged);
   flagBtn.textContent = isFlagged ? '⚑ Vorgemerkt' : '⚑ Beanstanden';
+  const editBtn = document.getElementById('quiz-edit-btn');
+  if (editBtn) editBtn.style.display = isOwner() ? 'inline-flex' : 'none';
 
   document.getElementById('q-current').textContent = G.current + 1;
   document.getElementById('progress-fill').style.width = (G.current / G.questions.length * 100) + '%';
@@ -9616,6 +9639,8 @@ function chalShowQuestion() {
 
   const rBtn = document.getElementById('chal-report-btn');
   if (rBtn) rBtn.style.display = 'inline-block';
+  const eBtn = document.getElementById('chal-edit-btn');
+  if (eBtn) eBtn.style.display = isOwner() ? 'inline-block' : 'none';
 }
 
 function chalAnswer(idx) {
@@ -9654,6 +9679,87 @@ function chalAnswer(idx) {
       setTimeout(chalShowQuestion, 2500);
     }
   }
+}
+
+// ── Quick-Edit (nur für isOwner()) ──────────────────────────────────
+let _qeOriginalQuestion = null; // Originaltext zum Wiederfinden im Katalog
+let _qeInChallenger     = false;
+
+function openQuickEdit() {
+  if (!isOwner()) return;
+  _qeInChallenger = !!CH.currentQ && document.getElementById('screen-challenger-game')?.classList.contains('active');
+  const q = _qeInChallenger ? CH.currentQ : G.questions?.[G.current];
+  if (!q) return;
+  _qeOriginalQuestion = q.question;
+
+  // Timer pausieren
+  clearInterval(G.timerInterval);
+
+  document.getElementById('qe-question').value    = q.question;
+  document.getElementById('qe-explanation').value = q.explanation || '';
+  document.getElementById('qe-options-container').innerHTML = q.options.map((opt, i) =>
+    `<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+      <input type="radio" name="qe-correct" value="${i}" ${i === q.correct ? 'checked' : ''} style="accent-color:var(--green);width:16px;height:16px;flex-shrink:0;cursor:pointer;">
+      <input class="form-input" id="qe-opt-${i}" value="${esc(opt)}" style="margin:0;flex:1;">
+      <span style="font-family:'Space Mono',monospace;font-size:.75rem;color:var(--muted);width:18px;flex-shrink:0;">${'ABCD'[i]}</span>
+    </div>`
+  ).join('');
+  document.getElementById('modal-quickedit').classList.remove('hidden');
+}
+
+function saveQuickEdit() {
+  const newQ    = document.getElementById('qe-question').value.trim();
+  const newOpts = [0,1,2,3].map(i => document.getElementById('qe-opt-' + i).value.trim());
+  const radio   = document.querySelector('input[name="qe-correct"]:checked');
+  if (!newQ || newOpts.some(o => !o) || !radio) { showToast('Bitte alle Felder ausfüllen', 'error'); return; }
+  const newCorrect = parseInt(radio.value);
+  const newExpl    = document.getElementById('qe-explanation').value.trim();
+
+  const updated = { question: newQ, options: newOpts, correct: newCorrect, explanation: newExpl };
+
+  // Im Arbeitsspeicher aktualisieren
+  if (_qeInChallenger) {
+    CH.currentQ = Object.assign({}, CH.currentQ, updated);
+    document.getElementById('chal-question-text').textContent = chalCleanQuestion(newQ);
+    const spans = document.querySelectorAll('#chal-answers .answer-btn span:last-child');
+    newOpts.forEach((o, i) => { if (spans[i]) spans[i].textContent = o; });
+  } else if (G.questions?.[G.current]) {
+    G.questions[G.current] = Object.assign({}, G.questions[G.current], updated);
+    document.getElementById('q-text').textContent = newQ;
+    const spans = document.querySelectorAll('#answers-container .answer-btn span:last-child');
+    newOpts.forEach((o, i) => { if (spans[i]) spans[i].textContent = o; });
+  }
+
+  // Im Katalog persistieren
+  const catId = _qeInChallenger
+    ? (CH.currentQ?._catId || null)
+    : (G.mode === 'solo' ? G.catalogId : G.dCatalogId);
+  if (catId) {
+    const cats = getCatalogs();
+    const cat  = cats.find(c => c.id === catId);
+    if (cat) {
+      const idx = cat.questions.findIndex(cq => cq.question === _qeOriginalQuestion);
+      if (idx >= 0) { cat.questions[idx] = Object.assign({}, cat.questions[idx], updated); saveCatalogs(cats); }
+    }
+  } else {
+    // Challenger: alle Kataloge durchsuchen
+    const cats = getCatalogs();
+    let saved  = false;
+    for (const cat of cats) {
+      const idx = cat.questions.findIndex(cq => cq.question === _qeOriginalQuestion);
+      if (idx >= 0) { cat.questions[idx] = Object.assign({}, cat.questions[idx], updated); saved = true; break; }
+    }
+    if (saved) saveCatalogs(cats);
+  }
+
+  closeQuickEdit();
+  showToast('Frage gespeichert ✓', 'success');
+}
+
+function closeQuickEdit() {
+  document.getElementById('modal-quickedit').classList.add('hidden');
+  // Timer nur im regulären Quiz fortsetzen, wenn Frage noch nicht beantwortet
+  if (!_qeInChallenger && G.questions && !G.answered) startTimer();
 }
 
 function chalOpenReport() {
