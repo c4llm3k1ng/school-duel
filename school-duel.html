@@ -935,6 +935,7 @@
     <div class="nav-tab active" id="tab-btn-spielen" onclick="switchTab('spielen')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.544-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.152A4 4 0 0 0 17.32 5z"/></svg>Spielen</div>
     <div class="nav-tab"        id="tab-btn-catalog"  onclick="switchTab('catalog')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Kataloge</div>
     <div class="nav-tab"        id="tab-btn-library"  onclick="switchTab('library')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Bibliothek</div>
+    <div class="nav-tab"        id="tab-btn-practice" onclick="switchTab('practice')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>Üben</div>
   </div>
 
   <div id="spielen-back-arrow" class="nav-back-arrow" style="display:none;" onclick="goBackOneStep()" title="Einen Schritt zurück"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></div>
@@ -962,14 +963,6 @@
       <div class="mc-body">
         <div class="mc-title">Lokal</div>
         <div class="mc-desc">Einzelspiel oder lokales Duell auf einem Gerät</div>
-      </div>
-      <div class="mc-arrow">›</div>
-    </div>
-    <div class="mode-card" onclick="showModeSetup('practice')">
-      <div class="mc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
-      <div class="mc-body">
-        <div class="mc-title">Üben</div>
-        <div class="mc-desc">Falsch beantwortete Fragen nochmal wiederholen</div>
       </div>
       <div class="mc-arrow">›</div>
     </div>
@@ -1567,7 +1560,6 @@
 
   <!-- PRACTICE TAB -->
   <div id="tab-practice" style="display:none;">
-    <div class="mode-back" id="back-practice" onclick="showSpielenLanding()">← Zurück zur Startseite</div>
     <div class="catalog-header">
       <h2>🔁 Meine Übungsfragen</h2>
       <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;color:var(--red);" onclick="clearHistory()">Verlauf löschen</button>
@@ -4871,11 +4863,11 @@ function showScreen(id) {
   if (id === 'screen-friends') renderFriendsList();
 }
 
-const MODE_TABS = ['solo','quickduel','duel','practice','lokal','challenger'];
+const MODE_TABS = ['solo','quickduel','duel','lokal','challenger'];
 
 function switchTab(tab) {
   // Main nav tabs
-  ['spielen','catalog','library'].forEach(t => {
+  ['spielen','catalog','library','practice'].forEach(t => {
     const el    = document.getElementById('tab-' + t);
     const btn   = document.getElementById('tab-btn-' + t);
     if (el)  el.style.display  = t === tab ? 'block' : 'none';
@@ -4886,8 +4878,9 @@ function switchTab(tab) {
     const el = document.getElementById('tab-' + t);
     if (el) el.style.display = 'none';
   });
-  if (tab === 'catalog') renderCatalogList();
-  if (tab === 'library') refreshLibrary();
+  if (tab === 'catalog')  renderCatalogList();
+  if (tab === 'library')  refreshLibrary();
+  if (tab === 'practice') renderPracticeTab();
   const _ba = document.getElementById('spielen-back-arrow'); if (_ba) _ba.style.display = 'none';
   const _hb = document.getElementById('spielen-home-btn'); if (_hb) _hb.style.display = 'none';
 }
