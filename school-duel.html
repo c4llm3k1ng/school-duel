@@ -1572,10 +1572,31 @@
 
   <!-- CHALLENGER SETUP TAB -->
   <div id="tab-challenger" style="display:none;">
-    <div class="mode-back" id="back-challenger" onclick="showSpielenLanding()">← Zurück zur Startseite</div>
+    <div class="mode-back" id="back-challenger" onclick="chalHandleBack()">← Zurück</div>
     <h2 style="font-size:1.25rem;font-weight:700;margin-bottom:4px;color:var(--gold);">⭐ Challenger-Modus</h2>
-    <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;">Wähle einen Katalog. 2 Leben. Kein Timer. Fragen werden mit steigendem Level schwerer.</p>
-    <div class="chal-submode-grid" id="chal-grade-list"></div>
+
+    <!-- Schritt 1: Modus wählen -->
+    <div id="chal-mode-select">
+      <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;">2 Leben. Kein Timer. Wähle deinen Modus.</p>
+      <div class="chal-submode-grid">
+        <div class="mode-card" onclick="chalSelectMode(false)" style="border-color:rgba(245,200,66,.25);background:radial-gradient(120% 120% at 0% 0%, rgba(245,200,66,.08), transparent 45%), linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,0) 40%), var(--glass);cursor:pointer;">
+          <div style="font-size:1.6rem;margin-bottom:6px;">⭐</div>
+          <div class="mc-title" style="color:var(--gold);">Challenger</div>
+          <div class="mc-desc">Fragen werden mit steigendem Level schwerer</div>
+        </div>
+        <div class="mode-card" onclick="chalSelectMode(true)" style="border-color:rgba(239,68,68,.35);background:radial-gradient(120% 120% at 0% 0%, rgba(239,68,68,.1), transparent 45%), linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,0) 40%), var(--glass);cursor:pointer;">
+          <div style="font-size:1.6rem;margin-bottom:6px;">🔥</div>
+          <div class="mc-title" style="color:#f87171;">Hard</div>
+          <div class="mc-desc">Nur Schwer-Fragen – ab der ersten Frage</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Schritt 2: Katalog wählen -->
+    <div id="chal-catalog-section" style="display:none;">
+      <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;" id="chal-catalog-desc">Wähle einen Katalog.</p>
+      <div class="chal-submode-grid" id="chal-grade-list"></div>
+    </div>
   </div>
 
   <button id="spielen-home-btn" class="home-bottom-btn" style="display:none;" onclick="showSpielenLanding()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>Zur Startseite</button>
@@ -9932,6 +9953,28 @@ function chalGroupCatalogs() {
 }
 
 function chalPopulateSetup() {
+  document.getElementById('chal-mode-select').style.display = '';
+  document.getElementById('chal-catalog-section').style.display = 'none';
+}
+
+function chalSelectMode(hardMode) {
+  CH._pendingHard = hardMode;
+  document.getElementById('chal-catalog-desc').textContent =
+    hardMode ? '🔥 Hard – Wähle einen Katalog.' : '⭐ Challenger – Wähle einen Katalog.';
+  chalPopulateCatalogList();
+  document.getElementById('chal-mode-select').style.display = 'none';
+  document.getElementById('chal-catalog-section').style.display = '';
+}
+
+function chalHandleBack() {
+  if (document.getElementById('chal-catalog-section').style.display !== 'none') {
+    chalPopulateSetup();
+  } else {
+    showSpielenLanding();
+  }
+}
+
+function chalPopulateCatalogList() {
   try {
     const gradeEl = document.getElementById('chal-grade-list');
     if (!gradeEl) return;
@@ -9941,22 +9984,25 @@ function chalPopulateSetup() {
       gradeEl.innerHTML = '<div style="color:var(--muted);font-size:.82rem;grid-column:1/-1;">Noch keine Kataloge erstellt.</div>';
       return;
     }
+    const hardMode = !!CH._pendingHard;
     groups.forEach(g => {
       const total = g.leicht.length + g.mittel.length + g.schwer.length;
       const card = document.createElement('div');
       card.className = 'mode-card';
-      card.style.cssText = 'border-color:rgba(45,212,191,.2);cursor:default;';
-      card.innerHTML = `
-        <div class="mc-body" style="margin-bottom:12px;">
-          <div class="mc-title" style="font-size:.9rem;">${esc(g.name)}</div>
-          <div class="mc-desc" style="font-size:.75rem;">${total} Fragen</div>
-        </div>
-        <div style="display:flex;gap:8px;">
-          <button class="btn btn-primary" style="flex:1;padding:9px 8px;font-size:.8rem;"
-            onclick="startChallenger('catalog',null,${JSON.stringify(g.name)})">⭐ Challenger</button>
-          <button class="btn" style="flex:1;padding:9px 8px;font-size:.8rem;background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.5);color:#f87171;"
-            onclick="startChallenger('catalog',null,${JSON.stringify(g.name)},true)">🔥 Hard</button>
-        </div>`;
+      card.style.cssText = 'border-color:rgba(45,212,191,.2);';
+      const body = document.createElement('div');
+      body.className = 'mc-body';
+      body.style.marginBottom = '12px';
+      body.innerHTML = `<div class="mc-title" style="font-size:.9rem;">${esc(g.name)}</div>
+        <div class="mc-desc" style="font-size:.75rem;">${total} Fragen</div>`;
+      card.appendChild(body);
+      const btn = document.createElement('button');
+      btn.className = 'btn btn-primary';
+      btn.style.cssText = 'width:100%;padding:9px 8px;font-size:.8rem;';
+      btn.textContent = hardMode ? '🔥 Spielen' : '⭐ Spielen';
+      const catName = g.name;
+      btn.addEventListener('click', () => startChallenger('catalog', null, catName, hardMode));
+      card.appendChild(btn);
       gradeEl.appendChild(card);
     });
   } catch(e) { /* non-fatal */ }
