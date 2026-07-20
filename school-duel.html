@@ -4823,9 +4823,9 @@ function ensureBuiltinCatalogs() {
     { id:'cat_anime_gemischt',    name:'🎌 Anime – Gemischt',    desc:'Alle Schwierigkeiten gemischt (841 Fragen)',          builtin:true, questions:[...AN_LEICHT,...AN_MITTEL,...AN_SCHWER] },
   ];
   let cats = getCatalogs();
-  const ids = BUILTIN.map(c => c.id);
-  cats = cats.filter(c => !ids.includes(c.id));
-  BUILTIN.forEach(c => cats.push(c));
+  const existingIds = new Set(cats.map(c => c.id));
+  // Nur fehlende Kataloge hinzufügen – vorhandene (z.B. gepatchte oder editierte) bleiben erhalten
+  BUILTIN.forEach(c => { if (!existingIds.has(c.id)) cats.push(c); });
   saveCatalogs(cats);
 }
 // ═══════════════════════════════════════════════════════
@@ -7369,6 +7369,7 @@ function renderCatalogList() {
           </div>
           <div class="catalog-item-actions">
             <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>
+            <div class="icon-btn" onclick="editCatalog('${cat.id}')" title="Bearbeiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
           </div>
         </div>`;
       });
