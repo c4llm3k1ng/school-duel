@@ -1723,7 +1723,24 @@ Deutschland</p>
       </div>
     </div>
 
-    <!-- Schritt 2: Katalog wählen -->
+    <!-- Schritt 2: Fragenquelle wählen -->
+    <div id="chal-source-select" style="display:none;">
+      <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;" id="chal-source-desc">Welche Fragen möchtest du spielen?</p>
+      <div class="chal-submode-grid">
+        <div class="mode-card" onclick="chalSelectSource('school')" style="border-color:rgba(99,102,241,.35);background:radial-gradient(120% 120% at 0% 0%, rgba(99,102,241,.1), transparent 45%), linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,0) 40%), var(--glass);cursor:pointer;">
+          <div style="font-size:1.6rem;margin-bottom:6px;">🏫</div>
+          <div class="mc-title" style="color:#818cf8;">Schulfragen</div>
+          <div class="mc-desc">Bereits generierte Fragen aus der Bibliothek</div>
+        </div>
+        <div class="mode-card" onclick="chalSelectSource('catalog')" style="border-color:rgba(45,212,191,.35);background:radial-gradient(120% 120% at 0% 0%, rgba(45,212,191,.08), transparent 45%), linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,0) 40%), var(--glass);cursor:pointer;">
+          <div style="font-size:1.6rem;margin-bottom:6px;">📚</div>
+          <div class="mc-title" style="color:rgb(45,212,191);">Katalog</div>
+          <div class="mc-desc">Aus eigenen oder eingebauten Katalogen</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Schritt 3: Katalog wählen (nur bei Katalog-Quelle) -->
     <div id="chal-catalog-section" style="display:none;">
       <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;" id="chal-catalog-desc">Wähle einen Katalog.</p>
       <div class="chal-submode-grid" id="chal-grade-list"></div>
@@ -10935,6 +10952,7 @@ function chalModeKey() {
   if (CH.mode === 'general-weighted') return 'general_weighted';
   if (CH.mode === 'subject')          return 'subject_' + (CH.subject || '').replace(/[^a-zA-Z0-9]/g, '_');
   if (CH.mode === 'catalog')          return 'catalog_' + (CH.grade || '').replace(/[^a-zA-Z0-9]/g, '_');
+  if (CH.mode === 'school')           return CH.hardMode ? 'school_hard' : 'school_normal';
   return 'general_class';
 }
 
@@ -10946,6 +10964,7 @@ function chalModeBadgeLabel() {
     const label = (CH.grade || 'Katalog').toUpperCase();
     return CH.hardMode ? label + ' · HARD' : label;
   }
+  if (CH.mode === 'school')           return CH.hardMode ? 'SCHULFRAGEN · HARD' : 'SCHULFRAGEN';
   return 'CHALLENGER';
 }
 
@@ -11033,6 +11052,14 @@ function chalPickQuestion() {
       // Tier 1 (Leicht) bis Level 10, ab 11 auch Mittel, ab 21 auch Schwer
       const maxTier = CH.level <= 10 ? 1 : CH.level <= 20 ? 2 : 3;
       candidates = CH.pool.filter(q => (q._tier || 1) <= maxTier);
+      if (candidates.length === 0) candidates = CH.pool;
+    }
+  } else if (CH.mode === 'school') {
+    if (CH.hardMode) {
+      candidates = CH.pool; // bereits auf Kl. 10+11 gefiltert
+    } else {
+      const targetGrade = chalGradeForLevel(CH.level);
+      candidates = CH.pool.filter(q => q._grade === targetGrade);
       if (candidates.length === 0) candidates = CH.pool;
     }
   } else if (CH.mode === 'general-class') {
@@ -11493,7 +11520,10 @@ async function startChallenger(mode, subject, grade, hardMode) {
     } else {
       let gradeFilter = null;
       let subjFilter  = null;
-      if (mode === 'general-class' || mode === 'general-weighted') {
+      if (mode === 'school') {
+        // Hard: nur Kl. 10+11 (schwierigere Inhalte); Normal: alle Klassen
+        gradeFilter = hardMode ? ['10', '11'] : CHAL_GRADE_ORDER;
+      } else if (mode === 'general-class' || mode === 'general-weighted') {
         gradeFilter = CHAL_GRADE_ORDER;
       } else if (mode === 'subject') {
         subjFilter  = subject;
@@ -11549,20 +11579,35 @@ function chalGroupCatalogs() {
 
 function chalPopulateSetup() {
   document.getElementById('chal-mode-select').style.display = '';
+  document.getElementById('chal-source-select').style.display = 'none';
   document.getElementById('chal-catalog-section').style.display = 'none';
 }
 
 function chalSelectMode(hardMode) {
   CH._pendingHard = hardMode;
-  document.getElementById('chal-catalog-desc').textContent =
-    hardMode ? '🔥 Hard – Wähle einen Katalog.' : '⭐ Challenger – Wähle einen Katalog.';
-  chalPopulateCatalogList();
+  document.getElementById('chal-source-desc').textContent =
+    hardMode ? '🔥 Hard – Welche Fragen?' : '⭐ Challenger – Welche Fragen?';
   document.getElementById('chal-mode-select').style.display = 'none';
-  document.getElementById('chal-catalog-section').style.display = '';
+  document.getElementById('chal-source-select').style.display = '';
+}
+
+function chalSelectSource(source) {
+  if (source === 'school') {
+    startChallenger('school', null, null, !!CH._pendingHard);
+  } else {
+    document.getElementById('chal-catalog-desc').textContent =
+      CH._pendingHard ? '🔥 Hard – Wähle einen Katalog.' : '⭐ Challenger – Wähle einen Katalog.';
+    chalPopulateCatalogList();
+    document.getElementById('chal-source-select').style.display = 'none';
+    document.getElementById('chal-catalog-section').style.display = '';
+  }
 }
 
 function chalHandleBack() {
   if (document.getElementById('chal-catalog-section').style.display !== 'none') {
+    document.getElementById('chal-catalog-section').style.display = 'none';
+    document.getElementById('chal-source-select').style.display = '';
+  } else if (document.getElementById('chal-source-select').style.display !== 'none') {
     chalPopulateSetup();
   } else {
     showSpielenLanding();
