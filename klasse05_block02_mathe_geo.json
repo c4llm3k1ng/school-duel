@@ -122,10 +122,10 @@
   {
     "question": "Was trifft auf zwei Geraden zu, die zueinander parallel sind?",
     "options": [
-      "Sie schneiden sich immer in einem Punkt.",
-      "Sie stehen in einem rechten Winkel zueinander.",
+      "Sie schneiden sich immer in genau einem gemeinsamen Schnittpunkt.",
+      "Sie verlaufen senkrecht zueinander und bilden dabei überall rechte Winkel.",
       "Sie haben immer den gleichen Abstand zueinander und schneiden sich nie.",
-      "Sie bilden immer einen spitzen Winkel."
+      "Sie nähern sich langsam an und treffen sich schließlich in großer Ferne."
     ],
     "correct": 2,
     "explanation": "Parallele Geraden verlaufen immer im gleichen Abstand zueinander und schneiden sich niemals, egal wie weit man sie verlängert.",
@@ -242,10 +242,10 @@
   {
     "question": "Was ist der Hauptunterschied zwischen einer Geraden und einer Strecke in der Geometrie?",
     "options": [
-      "Eine Gerade hat eine feste Länge, eine Strecke nicht.",
-      "Eine Strecke ist unendlich lang, eine Gerade nicht.",
+      "Eine Gerade hat immer eine messbare, feste Länge, eine Strecke dagegen nicht.",
+      "Eine Strecke verläuft in beide Richtungen unendlich, eine Gerade hat Endpunkte.",
       "Eine Gerade hat keinen Anfangs- und Endpunkt, eine Strecke hat beides.",
-      "Eine Strecke kann gebogen sein, eine Gerade nicht."
+      "Eine Strecke kann leicht gebogen oder gekrümmt verlaufen, eine Gerade nicht."
     ],
     "correct": 2,
     "explanation": "Eine Gerade ist eine unendlich lange, unbegrenzte Linie ohne Anfangs- oder Endpunkt. Eine Strecke hingegen ist ein Teil einer Geraden, der durch zwei Endpunkte begrenzt wird und somit eine bestimmte Länge hat.",
@@ -254,10 +254,10 @@
   {
     "question": "Welche Beschreibung passt am besten zu einem rechten Winkel?",
     "options": [
-      "Er ist immer spitzer als ein stumpfer Winkel.",
+      "Er misst immer zwischen 90 und 180 Grad und entspricht damit dem stumpfen Winkel.",
       "Er hat genau 90 Grad und sieht aus wie die Ecke eines Quadrats.",
-      "Er ist immer größer als 180 Grad.",
-      "Er ist immer kleiner als ein spitzer Winkel."
+      "Er ist genau 180 Grad groß und wird daher als gestreckter Winkel bezeichnet.",
+      "Er misst weniger als 45 Grad und gehört damit zur Gruppe der spitzen Winkel."
     ],
     "correct": 1,
     "explanation": "Ein rechter Winkel misst genau 90 Grad. Er ist charakteristisch für die Ecken von Rechtecken oder Quadraten und wird oft mit einem kleinen Quadrat in der Winkelspitze gekennzeichnet.",
@@ -290,10 +290,10 @@
   {
     "question": "Was bedeutet der Nenner (die untere Zahl) in einem Bruch wie 3/5?",
     "options": [
-      "Die Anzahl der Teile, die man hat.",
+      "Die Gesamtzahl der Teile, die man bei einer Bruchrechnung zusammenzählt.",
       "Die Anzahl der gleich großen Teile, in die das Ganze geteilt wurde.",
-      "Die Gesamtzahl der Brüche.",
-      "Die obere Zahl des Bruches."
+      "Die Anzahl der Teile, die man bereits vom Ganzen genommen oder verbraucht hat.",
+      "Die obere Zahl des Bruches, die angibt, wie viele Teile gemeint sind."
     ],
     "correct": 1,
     "explanation": "Der Nenner zeigt immer an, in wie viele gleich große Teile ein Ganzes aufgeteilt wurde. Die obere Zahl (Zähler) zeigt an, wie viele dieser Teile gemeint sind.",
@@ -386,10 +386,10 @@
   {
     "question": "Was zeigt der Nenner (die Zahl unter dem Bruchstrich) eines Bruches an?",
     "options": [
-      "Die Anzahl der Ganzen.",
+      "Die Gesamtanzahl der Teile, die beim Rechnen mit Brüchen zusammenkommen.",
       "Die Anzahl der gleich großen Teile, aus denen das Ganze besteht.",
-      "Die Anzahl der Teile, die man vom Ganzen hat.",
-      "Das Ergebnis der Division."
+      "Die Anzahl der Teile, die man insgesamt vom Ganzen genommen oder verbraucht hat.",
+      "Das Ergebnis, wenn man den Zähler durch die Gesamtzahl der Teile teilt."
     ],
     "correct": 1,
     "explanation": "Der Nenner gibt an, in wie viele gleich große Teile ein Ganzes zerlegt wurde. Er steht unter dem Bruchstrich.",

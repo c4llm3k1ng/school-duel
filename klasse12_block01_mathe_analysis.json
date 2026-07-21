@@ -122,10 +122,10 @@
   {
     "question": "Wann hat eine Funktion einen Wendepunkt an der Stelle x₀?",
     "options": [
-      "f'(x₀) = 0",
+      "f'(x₀) = 0 und f'' wechselt von positiv zu negativ – das wäre Bedingung für ein Hochpunkt",
       "f''(x₀) = 0 und Vorzeichenwechsel von f'' (hinreichend: f'''(x₀) ≠ 0)",
-      "f(x₀) = 0",
-      "f''(x₀) > 0"
+      "f(x₀) = 0 und f wechselt das Vorzeichen – das wäre eine Nullstelle mit Vorzeichenwechsel",
+      "f''(x₀) > 0 und gleichzeitig f'(x₀) = 0 – das ist hinreichend für ein lokales Minimum"
     ],
     "correct": 1,
     "explanation": "Ein Wendepunkt liegt vor, wenn f'' das Vorzeichen wechselt. Notwendig: f''(x₀) = 0; hinreichend: f'''(x₀) ≠ 0.",
@@ -134,10 +134,10 @@
   {
     "question": "Was ist ein Sattelpunkt (Terrassenpunkt)?",
     "options": [
-      "Ein Punkt mit f(x₀) = 0",
+      "Ein Punkt mit f(x₀) = 0 und Vorzeichenwechsel von f – also eine gewöhnliche Nullstelle",
       "Ein Punkt mit f'(x₀) = 0, aber ohne Vorzeichenwechsel von f' – kein Extrempunkt (z.B. f(x)=x³ bei x=0)",
-      "Ein Hochpunkt der Funktion",
-      "Der Schnittpunkt mit der y-Achse"
+      "Ein lokaler Hochpunkt, an dem f'(x₀) = 0 und f''(x₀) < 0 gilt",
+      "Der y-Achsen-Schnittpunkt des Graphen, berechnet durch Einsetzen von x₀ = 0"
     ],
     "correct": 1,
     "explanation": "Bei einem Sattelpunkt gilt f'(x₀) = 0 und auch f''(x₀) = 0, aber f' wechselt nicht das Vorzeichen – die Monotonie ändert sich nicht.",
@@ -158,10 +158,10 @@
   {
     "question": "Was ist eine Stammfunktion F(x) von f(x)?",
     "options": [
-      "F(x) mit F(x) = f'(x)",
+      "F(x) mit F(x) = f'(x) – eine Funktion, deren Wert gleich der Ableitung von f ist",
       "F(x) mit F'(x) = f(x) – die Ableitung von F ergibt f",
-      "F(x) = f(x)²",
-      "F(x) = ∫f'(x)dx"
+      "F(x) = f(x) · x – Produkt von f mit der Variablen x",
+      "F(x) mit F''(x) = f(x) – zweite Ableitung von F liefert f"
     ],
     "correct": 1,
     "explanation": "F ist Stammfunktion von f, wenn F'(x) = f(x). Das unbestimmte Integral ∫f(x)dx = F(x) + C beschreibt alle Stammfunktionen.",
@@ -206,10 +206,10 @@
   {
     "question": "Was berechnet das bestimmte Integral ∫ₐᵇ f(x)dx geometrisch?",
     "options": [
-      "Die Ableitung von f an der Stelle a",
+      "Die momentane Änderungsrate von f an der Stelle a (Steigung der Tangente im Punkt a)",
       "Den orientierten Flächeninhalt zwischen dem Graphen und der x-Achse im Intervall [a,b]",
-      "Den Mittelwert der Funktion",
-      "Die Bogenlänge des Graphen"
+      "Den arithmetischen Mittelwert der Funktionswerte im Intervall [a,b]",
+      "Die Länge des Kurvenstücks des Graphen von f zwischen den Punkten a und b"
     ],
     "correct": 1,
     "explanation": "Das bestimmte Integral ergibt den orientierten Flächeninhalt: Flächen über der x-Achse positiv, darunter negativ.",
@@ -266,10 +266,10 @@
   {
     "question": "Was gilt für die Exponentialfunktion f(x) = eˣ besonders?",
     "options": [
-      "Sie ist nur für x > 0 definiert",
+      "Sie ist nur für x > 0 definiert, hat bei x = 0 den Wert 0 und wächst dann unbegrenzt",
       "Sie ist ihre eigene Ableitung und Stammfunktion, stets positiv und hat keinen Schnittpunkt mit der x-Achse",
-      "Sie hat ein Maximum bei x = 0",
-      "Sie ist eine gerade Funktion"
+      "Sie hat ein globales Maximum bei x = 0 mit dem Wert 1 und fällt für x → ±∞ gegen null",
+      "Sie ist eine gerade Funktion mit Spiegelsymmetrie zur y-Achse, also f(−x) = f(x)"
     ],
     "correct": 1,
     "explanation": "eˣ ist für alle x ∈ ℝ definiert, stets positiv, und es gilt (eˣ)' = eˣ sowie ∫eˣdx = eˣ + C.",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist der natürliche Logarithmus ln(x)?",
     "options": [
-      "Der Logarithmus zur Basis 10",
+      "Der Logarithmus zur Basis 10 (dekadischer Logarithmus, Notation: lg oder log₁₀)",
       "Die Umkehrfunktion von eˣ (Logarithmus zur Basis e ≈ 2,718)",
-      "Die Ableitung von eˣ",
-      "Der Logarithmus zur Basis 2"
+      "Die Ableitung von eˣ (diese ist wiederum eˣ, da eˣ ihre eigene Ableitung ist)",
+      "Der Logarithmus zur Basis 2 (binärer Logarithmus, Notation: lb oder log₂)"
     ],
     "correct": 1,
     "explanation": "ln(x) = logₑ(x) ist die Umkehrfunktion der natürlichen Exponentialfunktion. Es gilt ln(eˣ) = x und e^(ln x) = x.",
@@ -302,10 +302,10 @@
   {
     "question": "Was ist ein Vektor im mathematischen Sinne?",
     "options": [
-      "Eine einzelne Zahl mit Vorzeichen",
+      "Eine einzelne reelle Zahl mit Vorzeichen, die als skalare Größe ohne Richtungsangabe vorliegt",
       "Eine gerichtete Größe mit Betrag und Richtung, dargestellt als geordnetes Tupel von Komponenten",
-      "Ein Punkt im Koordinatensystem",
-      "Eine Gerade im Raum"
+      "Ein fester Punkt P(x₁, x₂) im Koordinatensystem mit bestimmten Koordinaten",
+      "Eine Gerade im Raum, beschrieben durch einen Aufpunkt und einen Richtungsvektor"
     ],
     "correct": 1,
     "explanation": "Ein Vektor hat Betrag (Länge) und Richtung. Im ℝⁿ wird er als Spalte oder Zeile mit n Komponenten geschrieben.",
@@ -314,10 +314,10 @@
   {
     "question": "Was ist das Skalarprodukt zweier Vektoren a und b?",
     "options": [
-      "Ein neuer Vektor senkrecht zu a und b",
+      "Ein neuer Vektor senkrecht zu a und b mit dem Betrag |a|·|b|·sinα (das Kreuzprodukt)",
       "Eine skalare Zahl: a·b = |a|·|b|·cos(α) (α = Winkel zwischen beiden)",
-      "Die Summe aller Komponenten von a und b",
-      "Das Produkt der Beträge ohne Winkelberücksichtigung"
+      "Die komponentenweise Summe: (a₁+b₁, a₂+b₂, a₃+b₃) – also der Summenvektor a + b",
+      "Das Produkt der Beträge |a|·|b|, ohne Berücksichtigung des Winkels zwischen beiden"
     ],
     "correct": 1,
     "explanation": "Das Skalarprodukt a·b = a₁b₁ + a₂b₂ + … = |a|·|b|·cosα ist ein Skalar. Es wird für Winkelberechnungen und Orthogonalitätsprüfungen genutzt.",
@@ -338,10 +338,10 @@
   {
     "question": "Was ist das Kreuzprodukt a × b zweier Vektoren im ℝ³?",
     "options": [
-      "Ein Skalar gleich |a|·|b|·cosα",
+      "Ein Skalar gleich |a|·|b|·cosα – das ist das Skalarprodukt, kein Kreuzprodukt",
       "Ein Vektor senkrecht zu a und b mit Betrag |a|·|b|·sinα",
-      "Die komponentenweise Summe von a und b",
-      "Das Skalarprodukt mit umgekehrtem Vorzeichen"
+      "Die komponentenweise Summe der Vektoren a und b, also a + b",
+      "Das Negative des Skalarprodukts: −(a·b) = −|a|·|b|·cosα (kein Vektor, sondern ein Skalar)"
     ],
     "correct": 1,
     "explanation": "Das Kreuzprodukt a × b steht senkrecht auf beiden Ausgangsvektoren. Sein Betrag |a×b| = |a|·|b|·sinα entspricht der Fläche des Parallelogramms.",
@@ -351,9 +351,9 @@
     "question": "Wie lautet die Parametergleichung einer Geraden g im Raum?",
     "options": [
       "g: x = p + t·u, t ∈ ℝ (p = Stützvektor, u = Richtungsvektor)",
-      "g: ax + by + cz = d",
-      "g: x² + y² + z² = r²",
-      "g: n·x = d"
+      "g: ax + by + cz = d (Koordinatenform einer Ebene, keine Geradendarstellung)",
+      "g: x² + y² + z² = r² (Gleichung einer Kugel mit Radius r um den Ursprung)",
+      "g: n·x = d (Normalenform einer Ebene mit Normalenvektor n)"
     ],
     "correct": 0,
     "explanation": "Parameterdarstellung: x = p + t·u. Für jeden Parameterwert t ergibt sich ein Punkt auf der Geraden. p ist ein Aufpunkt, u gibt die Richtung an.",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist die Koordinatenform einer Ebene im Raum?",
     "options": [
-      "E: x = p + s·u + t·v",
-      "E: nur als Normalenform",
+      "E: x = p + s·u + t·v, mit Aufpunkt p und zwei Richtungsvektoren u, v (Parameterform)",
+      "E: n · (x − p) = 0, wobei n der Normalenvektor und p ein Aufpunkt ist (Normalenform)",
       "E: ax + by + cz = d, wobei (a,b,c) der Normalenvektor der Ebene ist",
-      "E: |x − p| = r"
+      "E: |x − p| = r, die Gleichung einer Kugel mit Mittelpunkt p und Radius r"
     ],
     "correct": 2,
     "explanation": "Koordinatenform: ax + by + cz = d. Der Vektor n = (a,b,c) ist der Normalenvektor. Man gewinnt ihn aus der Parameterform durch Kreuzprodukt der Richtungsvektoren.",
@@ -374,10 +374,10 @@
   {
     "question": "Was beschreibt der Differenzenquotient [f(x+h) − f(x)] / h für h → 0?",
     "options": [
-      "Den Mittelwert von f auf [x, x+h]",
+      "Den arithmetischen Mittelwert aller Funktionswerte von f im Intervall [x, x+h]",
       "Die momentane Änderungsrate – die Ableitung f'(x) an der Stelle x",
-      "Das bestimmte Integral von f",
-      "Die zweite Ableitung von f"
+      "Das bestimmte Integral von f über das Intervall [x, x+h]",
+      "Die zweite Ableitung f''(x) als Maß für die Krümmung des Graphen"
     ],
     "correct": 1,
     "explanation": "Der Grenzwert des Differenzenquotienten für h→0 ist die Definition der Ableitung f'(x) – die momentane Änderungsrate (Tangentensteigung).",
@@ -387,9 +387,9 @@
     "question": "Was besagt die Regel von L'Hôpital?",
     "options": [
       "Bei unbestimmten Ausdrücken der Form 0/0 oder ∞/∞ darf man Zähler und Nenner separat ableiten und dann den Grenzwert bestimmen",
-      "Man multipliziert Zähler und Nenner mit der konjugierten Größe",
-      "Man setzt x = 0 direkt ein",
-      "Man integriert Zähler und Nenner"
+      "Man erweitert Zähler und Nenner mit dem konjugierten Ausdruck, um irrationale Terme zu vereinfachen",
+      "Man setzt x direkt in den vereinfachten Ausdruck ein, ohne weitere Umformungen durchzuführen",
+      "Man integriert Zähler und Nenner getrennt und bildet den Quotienten der Integrale"
     ],
     "correct": 0,
     "explanation": "L'Hôpital: Ergibt sich ein Grenzwert in der unbestimmten Form 0/0 oder ∞/∞, gilt lim f/g = lim f'/g' (unter geeigneten Bedingungen).",
@@ -398,10 +398,10 @@
   {
     "question": "Was sind die Nullstellen einer Funktion f?",
     "options": [
-      "Die Stellen, an denen f'(x) = 0",
+      "Die Stellen x₀, an denen f'(x₀) = 0 gilt – also die Extremstellen und Sattelpunkte",
       "Die x-Werte x₀ mit f(x₀) = 0 (Schnittpunkte mit der x-Achse)",
-      "Die Extremstellen der Funktion",
-      "Die Schnittpunkte mit der y-Achse"
+      "Die Stellen x₀, an denen f seinen größten oder kleinsten Wert annimmt",
+      "Die Schnittpunkte des Graphen mit der y-Achse bei x = 0"
     ],
     "correct": 1,
     "explanation": "Nullstellen sind x-Werte, bei denen der Funktionswert gleich null ist – der Graph schneidet oder berührt die x-Achse.",
@@ -410,10 +410,10 @@
   {
     "question": "Was ist eine waagerechte Asymptote des Graphen für x → ∞?",
     "options": [
-      "Ein Schnittpunkt mit der x-Achse",
+      "Ein Schnittpunkt des Graphen mit der x-Achse, also eine Nullstelle der Funktion",
       "Eine waagerechte Gerade y = c, der sich der Graph für x → ±∞ beliebig nähert",
-      "Ein Extrempunkt bei sehr großem x",
-      "Die Tangente im Wendepunkt"
+      "Ein lokaler Extrempunkt bei sehr großem |x|, an dem die Steigung gegen null geht",
+      "Die Tangente an den Graphen im Wendepunkt mit der Steigung f'(x_W)"
     ],
     "correct": 1,
     "explanation": "Waagerechte Asymptoten y = c entstehen, wenn lim_{x→∞} f(x) = c existiert. Senkrechte Asymptoten treten an Polstellen auf.",
@@ -422,10 +422,10 @@
   {
     "question": "Was ist das Wachstumsgesetz f(t) = A · e^(k·t) und wie erkennt man exponentielles Wachstum?",
     "options": [
-      "Das Wachstum ist proportional zu t",
+      "Das Wachstum ist proportional zur Zeit t, also f(t) = A + k·t (lineares Wachstum)",
       "Die Änderungsrate ist proportional zur momentanen Größe: f'(t) = k·f(t)",
-      "Das Wachstum ist periodisch",
-      "Die Funktion nimmt immer ab"
+      "Das Wachstum ist periodisch, also f(t) = A·sin(k·t) (schwingungsförmig)",
+      "Die Funktion nimmt stets ab, da k zwingend negativ sein muss"
     ],
     "correct": 1,
     "explanation": "Charakteristikum exponentiellen Wachstums: f'(t) = k·f(t) – die Änderungsrate ist proportional zur momentanen Größe. Für k > 0 wächst f, für k < 0 nimmt f ab.",
@@ -434,10 +434,10 @@
   {
     "question": "Was ist ein uneigentliches Integral und wann konvergiert es?",
     "options": [
-      "Ein Integral mit negativen Grenzen",
+      "Ein Integral mit negativen Grenzen a < b < 0, das wie ein gewöhnliches Integral berechnet wird",
       "Ein Integral mit mindestens einer unendlichen Grenze oder Definitionslücke, das als Grenzwert berechnet wird – konvergiert, wenn der Grenzwert endlich ist",
-      "Ein Integral, dessen Wert negativ ist",
-      "Ein Integral ohne Stammfunktion"
+      "Ein Integral, dessen Wert negativ ist, weil f(x) unter der x-Achse liegt",
+      "Ein Integral, für das keine Stammfunktion existiert und das numerisch gelöst werden muss"
     ],
     "correct": 1,
     "explanation": "Uneigentliche Integrale (z.B. ∫₁^∞ 1/x² dx = 1) werden als Grenzwert berechnet. Sie konvergieren (endlicher Wert) oder divergieren (Grenzwert ∞).",

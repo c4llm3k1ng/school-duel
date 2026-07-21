@@ -26,10 +26,10 @@
   {
     "question": "Was ist der Brechungsindex n eines Mediums?",
     "options": [
-      "n = c_Medium / c_Vakuum",
+      "n = c_Medium / c_Vakuum (Lichtgeschwindigkeit im Medium geteilt durch Vakuumlichtgeschwindigkeit)",
       "n = c_Vakuum / c_Medium (Lichtgeschwindigkeit im Vakuum geteilt durch Lichtgeschwindigkeit im Medium)",
-      "n = Wellenlänge / Frequenz",
-      "n = Reflexionswinkel / Einfallswinkel"
+      "n = Wellenlänge / Frequenz (Quotient aus Wellenlänge und Frequenz des Lichts im Medium)",
+      "n = Reflexionswinkel / Einfallswinkel (Verhältnis der Winkel an der Grenzfläche)"
     ],
     "correct": 1,
     "explanation": "Der Brechungsindex n = c/c_Medium gibt an, um welchen Faktor die Lichtgeschwindigkeit im Medium gegenüber dem Vakuum reduziert ist. Glas: n ≈ 1,5; Wasser: n ≈ 1,33.",
@@ -38,10 +38,10 @@
   {
     "question": "Was passiert mit dem Lichtstrahl, wenn er von Luft (optisch dünn) in Glas (optisch dicht) übergeht?",
     "options": [
-      "Er wird von der Normalen weggebrochen (Winkel wird größer)",
+      "Er wird von der Normalen weggebrochen, sodass der Winkel zur Normalen größer wird",
       "Er wird zur Normalen hin gebrochen (Winkel wird kleiner)",
-      "Er wird total reflektiert",
-      "Er breitet sich unverändert aus"
+      "Er wird vollständig an der Grenzfläche reflektiert ohne in das Glas einzudringen",
+      "Er breitet sich ohne Richtungsänderung unverändert mit gleicher Geschwindigkeit aus"
     ],
     "correct": 1,
     "explanation": "Beim Übergang von optisch dünnerem zu dichterem Medium (n₁ < n₂) wird der Strahl zur Normalen hin gebrochen: sinα₂ = (n₁/n₂)·sinα₁ < sinα₁.",
@@ -50,10 +50,10 @@
   {
     "question": "Was ist Totalreflexion und unter welcher Bedingung tritt sie auf?",
     "options": [
-      "Vollständige Absorption an einer Grenzfläche",
+      "Vollständige Absorption des Lichts an einer undurchsichtigen Grenzfläche ohne Reflexion",
       "Vollständige Reflexion beim Übergang von optisch dichterem zu dünnerem Medium, wenn der Einfallswinkel den Grenzwinkel überschreitet",
-      "Reflexion, wenn Licht senkrecht auf eine Fläche trifft",
-      "Beugung an einem Gitter"
+      "Reflexion eines Lichtstrahls, der senkrecht auf eine Fläche auftrifft und vollständig zurückgeworfen wird",
+      "Beugung an einem optischen Gitter mit vielen parallelen Spalten gleicher Breite"
     ],
     "correct": 1,
     "explanation": "Totalreflexion tritt auf beim Übergang vom optisch dichteren ins dünnere Medium (n₁ > n₂), wenn der Einfallswinkel α ≥ αₘₐₓ = arcsin(n₂/n₁) ist.",
@@ -62,10 +62,10 @@
   {
     "question": "Was ist eine Sammellinse und was macht sie mit parallelen Lichtstrahlen?",
     "options": [
-      "Eine Konkavlinse mit negativer Brennweite, die Strahlen zerstreut",
+      "Eine Konkavlinse mit negativer Brennweite, die parallele Strahlen nach außen zerstreut",
       "Eine konvexe Linse mit positiver Brennweite, die parallele Strahlen in einem Brennpunkt F bündelt",
-      "Ein ebener Spiegel, der Strahlen parallelisiert",
-      "Eine Linse ohne optische Wirkung"
+      "Ein ebener Spiegel, der einfallende Strahlen parallelisiert und ohne Ablenkung reflektiert",
+      "Eine Linse ohne optische Wirkung, die Licht unverändert hindurchlässt"
     ],
     "correct": 1,
     "explanation": "Eine Sammellinse (Konvexlinse) hat eine positive Brennweite f > 0. Alle parallel zur optischen Achse einfallenden Strahlen werden im Brennpunkt F vereinigt.",
@@ -86,10 +86,10 @@
   {
     "question": "Was ist der Abbildungsmaßstab m einer Linse?",
     "options": [
-      "m = f / g",
+      "m = f / g (Brennweite geteilt durch Gegenstandsweite)",
       "m = b / g (Bildgröße / Gegenstandsgröße = Bildweite / Gegenstandsweite)",
-      "m = g / b",
-      "m = f · g"
+      "m = g / b (Gegenstandsweite geteilt durch Bildweite)",
+      "m = f · g (Produkt aus Brennweite und Gegenstandsweite)"
     ],
     "correct": 1,
     "explanation": "Abbildungsmaßstab: m = B/G = b/g. Für m > 1 ist das Bild vergrößert; für m < 1 verkleinert. Bei reellen Bildern einer Sammellinse ist das Bild umgekehrt (m negativ).",
@@ -98,10 +98,10 @@
   {
     "question": "Was ist eine Zerstreuungslinse?",
     "options": [
-      "Eine Linse, die Lichtstrahlen in einem Brennpunkt sammelt",
+      "Eine Linse, die einfallende Lichtstrahlen in einem reellen Brennpunkt auf der Bildseite sammelt",
       "Eine Konkavlinse mit negativer Brennweite, die parallele Strahlen auseinander streut",
-      "Ein ebener Spiegel",
-      "Eine Linse für Teleskope"
+      "Ein ebener Spiegel, der das einfallende Licht diffus in alle Richtungen reflektiert",
+      "Eine Linse für astronomische Teleskope mit sehr langer positiver Brennweite"
     ],
     "correct": 1,
     "explanation": "Eine Zerstreuungslinse (Konkavlinse) hat eine negative Brennweite f < 0. Parallele Strahlen werden nach der Linse gestreut – die Verlängerungen scheinen aus einem virtuellen Brennpunkt zu kommen.",
@@ -110,10 +110,10 @@
   {
     "question": "Was ist ein virtuelles Bild in der Optik?",
     "options": [
-      "Ein Bild, das auf einem Schirm aufgefangen werden kann",
+      "Ein reelles Bild, das auf einem Schirm hinter der Linse aufgefangen werden kann",
       "Ein Bild, das nicht auf einem Schirm aufgefangen werden kann, da die Lichtstrahlen nur scheinbar aus einem Punkt zu kommen scheinen",
-      "Ein vergrößertes reelles Bild",
-      "Ein umgekehrtes Bild hinter einer Linse"
+      "Ein besonders vergrößertes reelles Bild, das auf der Seite des Gegenstands entsteht",
+      "Ein umgekehrtes reelles Bild, das hinter einer Sammellinse auf einem Schirm erscheint"
     ],
     "correct": 1,
     "explanation": "Virtuelle Bilder entstehen, wenn die Lichtstrahlen selbst nicht konvergieren (z.B. Lupe, Zerstreuungslinse, Konkavspiegel jenseits des Brennpunkts). Man kann sie nicht auf einem Schirm auffangen.",
@@ -122,10 +122,10 @@
   {
     "question": "Was zeigte das Doppelspaltexperiment (Young, 1801)?",
     "options": [
-      "Licht besteht ausschließlich aus Teilchen",
+      "Licht besteht ausschließlich aus Teilchen, die wie Billardkugeln geradlinig durch Spalten fliegen",
       "Licht verhält sich wie eine Welle – es entstehen Interferenzmuster mit hellen und dunklen Streifen",
-      "Licht wird an zwei Spalten total reflektiert",
-      "Licht bricht beim Durchgang durch Spalten"
+      "Licht wird an zwei Spalten vollständig total reflektiert ohne das System zu passieren",
+      "Licht bricht beim Durchgang durch enge Spalten gemäß dem Snelliusschen Brechungsgesetz"
     ],
     "correct": 1,
     "explanation": "Youngs Doppelspaltexperiment ist der klassische Beweis für die Wellennatur des Lichts: Hinter zwei kohärenten Spalten entsteht ein Interferenzmuster aus hellen (konstruktiv) und dunklen (destruktiv) Streifen.",
@@ -134,10 +134,10 @@
   {
     "question": "Wann tritt konstruktive Interferenz (Helligkeitsmaximum) beim Doppelspalt auf?",
     "options": [
-      "Wenn der Gangunterschied ein ungerades Vielfaches von λ/2 ist",
+      "Wenn der Gangunterschied ein ungerades Vielfaches von λ/2 ist (λ/2, 3λ/2, …)",
       "Wenn der Gangunterschied Δ ein ganzzahliges Vielfaches der Wellenlänge λ ist (Δ = n·λ)",
-      "Wenn beide Wellen senkrecht zueinander polarisiert sind",
-      "Wenn die Wellen verschiedene Frequenzen haben"
+      "Wenn beide Wellen senkrecht zueinander polarisiert sind und senkrecht auf den Spalt treffen",
+      "Wenn die beiden Wellen verschiedene Frequenzen besitzen und sich zeitlich überlagern"
     ],
     "correct": 1,
     "explanation": "Konstruktive Interferenz: Gangunterschied Δ = n·λ (n = 0, 1, 2, …). Die Wellenberge und -täler beider Wellen überlagern sich – maximale Verstärkung.",
@@ -146,10 +146,10 @@
   {
     "question": "Wann tritt destruktive Interferenz (Dunkelstreifen) beim Doppelspalt auf?",
     "options": [
-      "Gangunterschied = n·λ",
+      "Gangunterschied = n·λ (n = 0, 1, 2, …), also ganzzahlige Wellenlängenmultiple",
       "Gangunterschied = (n + ½)·λ (n = 0, 1, 2, …)",
-      "Wenn beide Spalte gleich breit sind",
-      "Wenn die Wellenlänge sehr groß ist"
+      "Wenn beide Spalte gleich breit sind und der Schirmabstand der Wellenlänge entspricht",
+      "Wenn die Wellenlänge des Lichts sehr groß im Vergleich zum Spaltabstand ist"
     ],
     "correct": 1,
     "explanation": "Destruktive Interferenz: Gangunterschied Δ = (n + ½)·λ. Ein Wellenberg trifft auf ein Wellental – vollständige Auslöschung.",
@@ -158,10 +158,10 @@
   {
     "question": "Was ist Beugung (Diffraktion) von Licht?",
     "options": [
-      "Die Reflexion an einem Spiegel",
+      "Die gesetzmäßige Reflexion von Licht an einem ebenen Spiegel nach dem Reflexionsgesetz",
       "Das Ablenken von Licht an Hindernissen oder Öffnungen – Licht breitet sich auch in den geometrischen Schattenraum aus",
-      "Die Brechung an einer Linse",
-      "Die Absorption durch schwarze Körper"
+      "Die Brechung von Licht an einer gewölbten Linsenoberfläche nach dem Snelliusschen Gesetz",
+      "Die Absorption bestimmter Wellenlängen durch selektiv absorbierende schwarze Körper"
     ],
     "correct": 1,
     "explanation": "Beugung ist ein Wellenphänomen: Trifft Licht auf ein Hindernis oder einen Spalt ähnlicher Größe wie seine Wellenlänge, krümmt es sich in den Schattenraum – erklärbar nur durch die Wellennatur.",
@@ -170,10 +170,10 @@
   {
     "question": "Was ist Polarisation von Licht?",
     "options": [
-      "Die Aufspaltung in Spektralfarben durch ein Prisma",
+      "Die Aufspaltung von weißem Licht durch ein Prisma in seine Spektralfarben (Dispersion)",
       "Die Einschränkung der Schwingungsebene transversaler Lichtwellen auf eine bestimmte Ebene",
-      "Die Überlagerung zweier kohärenter Wellen",
-      "Die Totalreflexion an einer Grenzfläche"
+      "Die Überlagerung zweier kohärenter Lichtwellen gleicher Frequenz und Amplitude",
+      "Die Totalreflexion an einer Grenzfläche beim Übergang ins optisch dünnere Medium"
     ],
     "correct": 1,
     "explanation": "Licht ist eine transversale elektromagnetische Welle. Polarisation schränkt die Schwingungsrichtung des E-Feldes auf eine Ebene ein (z.B. durch Polarisationsfilter).",
@@ -182,10 +182,10 @@
   {
     "question": "Was ist Dispersion von Licht?",
     "options": [
-      "Die Reflexion weißen Lichts an einem Gitter",
+      "Die gleichmäßige Reflexion von weißem Licht an einem Metallgitter ohne Wellenlängentrennung",
       "Die wellenlängenabhängige Brechung: Verschiedene Farben haben verschiedene Brechungsindizes und werden unterschiedlich stark abgelenkt",
-      "Die Interferenz zweier Lichtquellen",
-      "Die Polarisation durch ein Kalkspatprisma"
+      "Die konstruktive Interferenz zweier kohärenter Lichtquellen derselben Wellenlänge",
+      "Die Erzeugung von linear polarisiertem Licht durch ein Kalkspat-Doppelbrecher-Prisma"
     ],
     "correct": 1,
     "explanation": "Dispersion: Der Brechungsindex n hängt von der Wellenlänge ab – violettes Licht wird stärker gebrochen als rotes. So entsteht das Farbspektrum im Prisma und der Regenbogen.",
@@ -218,10 +218,10 @@
   {
     "question": "Was ist kohärentes Licht und warum ist es Voraussetzung für Interferenz?",
     "options": [
-      "Sehr intensives Licht beliebiger Art",
+      "Besonders intensives Licht beliebiger Herkunft und Wellenlänge, das alle Objekte beleuchtet",
       "Licht, dessen Wellen eine feste Phasenbeziehung und dieselbe Frequenz besitzen – Voraussetzung für stabile Interferenzmuster",
-      "Licht jeglicher Art kann interferieren",
-      "Licht mit sehr kurzer Wellenlänge"
+      "Licht jeglicher Art, das durch eine kleine Öffnung tritt und sich dabei beugt",
+      "Licht mit sehr kurzer Wellenlänge im UV-Bereich unterhalb von 400 Nanometern"
     ],
     "correct": 1,
     "explanation": "Kohärenz: Zwei Wellenzüge interferieren nur stabil, wenn ihre Phasenbeziehung konstant bleibt (zeitliche und räumliche Kohärenz). Normale Lichtquellen emittieren inkohärent.",
@@ -230,10 +230,10 @@
   {
     "question": "Was ist ein Laser und was macht sein Licht besonders?",
     "options": [
-      "Eine sehr helle Glühbirne",
+      "Eine sehr helle Glühbirne mit hoher Strahlintensität und breitem Farbspektrum",
       "Eine Lichtquelle, die kohärentes, monochromatisches und scharf gebündeltes Licht durch stimulierte Emission erzeugt",
-      "Ein Spiegel, der Licht verstärkt",
-      "Ein Prisma für bestimmte Wellenlängen"
+      "Ein konkaver Spiegel, der Licht verstärkt und in eine parallele Bündel fokussiert",
+      "Ein optisches Prisma, das weißes Licht in bestimmte Wellenlängen auftrennt"
     ],
     "correct": 1,
     "explanation": "Laser (Light Amplification by Stimulated Emission of Radiation) erzeugt kohärentes (feste Phase), monochromatisches (eine Wellenlänge) und kollimatiertes (paralleles) Licht.",
@@ -242,10 +242,10 @@
   {
     "question": "Was beschreibt der Welle-Teilchen-Dualismus des Lichts?",
     "options": [
-      "Licht ist nur eine elektromagnetische Welle",
-      "Licht ist nur aus Photonen (Teilchen) aufgebaut",
+      "Licht ist ausschließlich eine elektromagnetische Welle und zeigt keinerlei Teilcheneigenschaften",
+      "Licht ist ausschließlich aus Photonen (Teilchen) aufgebaut und zeigt keine Welleneigenschaften",
       "Je nach Experiment zeigt Licht Wellen- oder Teilchencharakter – beide Beschreibungen sind gleichzeitig gültig",
-      "Licht hat weder Wellen- noch Teilchencharakter"
+      "Licht hat weder Wellen- noch Teilchencharakter, sondern ist eine reine Felderscheinung"
     ],
     "correct": 2,
     "explanation": "Welle-Teilchen-Dualismus: Bei Interferenz und Beugung verhält sich Licht als Welle; beim Photoeffekt als Teilchen (Photon). Beide Modelle sind komplementär – keines allein ist vollständig.",
@@ -254,10 +254,10 @@
   {
     "question": "Was zeigt der Photoeffekt über die Natur des Lichts?",
     "options": [
-      "Licht hat rein wellenartige Eigenschaften",
+      "Licht hat rein wellenartige Eigenschaften, da höhere Intensität mehr Elektronen herauslöst",
       "Licht besteht aus Teilchen (Photonen) mit Energie E = h·f – nur wenn die Photonenenergie die Austrittsarbeit überschreitet, werden Elektronen herausgelöst",
-      "Licht kann keine Energie übertragen",
-      "Alle Wellenlängen erzeugen den Photoeffekt gleich stark"
+      "Licht kann keinerlei Energie auf Elektronen in Metallen übertragen, egal welche Wellenlänge",
+      "Alle Wellenlängen des Lichts erzeugen den Photoeffekt gleich stark bei gleicher Intensität"
     ],
     "correct": 1,
     "explanation": "Der Photoeffekt (Einstein 1905): Die Frequenz des Lichts, nicht seine Intensität, entscheidet, ob Elektronen aus Metall ausgelöst werden. Beweis für den Teilchencharakter des Lichts (Photonen mit E = h·f).",
@@ -266,10 +266,10 @@
   {
     "question": "Warum ist UV-Licht für den Photoeffekt effektiver als rotes Licht?",
     "options": [
-      "Weil UV-Licht intensiver ist",
+      "Weil UV-Licht viel intensiver ist und daher mehr Elektronen gleichzeitig trifft",
       "Weil UV-Photonen mit höherer Frequenz mehr Energie E = h·f tragen und die Austrittsarbeit leichter überwinden",
-      "Weil rotes Licht stärker reflektiert wird",
-      "Weil UV-Licht stärker gebeugt wird"
+      "Weil rotes Licht stärker an der Metalloberfläche reflektiert wird als UV-Licht",
+      "Weil UV-Licht an Metallgittern stärker gebeugt wird und so mehr Elektronen erreicht"
     ],
     "correct": 1,
     "explanation": "E = h·f: UV-Licht hat höhere Frequenz → höhere Photonenenergie. Rotes Licht kann selbst bei hoher Intensität keine Elektronen herauslösen, wenn E < Austrittsarbeit.",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist das Funktionsprinzip eines Glasfaserkabels?",
     "options": [
-      "Reflexion an aufgedampften Silberschichten",
+      "Reflexion an aufgedampften Silberschichten auf der Außenseite der Glasfaser",
       "Totalreflexion hält das Licht im Glaskern – Licht wird durch wiederholte Totalreflexion verlustarm weitergeleitet",
-      "Beugung an regelmäßigen Gitterstrukturen",
-      "Brechung an Mikrolinsen innerhalb der Faser"
+      "Beugung an regelmäßigen Gitterstrukturen im Inneren der Glasfaser",
+      "Brechung an Mikrolinsen innerhalb der Faser, die den Strahl immer wieder bündeln"
     ],
     "correct": 1,
     "explanation": "In Glasfasern tritt Licht unter einem Winkel > Grenzwinkel auf die Kern-Mantel-Grenzfläche – Totalreflexion leitet es ohne Intensitätsverlust über weite Strecken.",
@@ -290,10 +290,10 @@
   {
     "question": "Was ist monochromatisches Licht?",
     "options": [
-      "Licht mit einem breiten Farbspektrum (weißes Licht)",
+      "Licht mit einem breiten Farbspektrum (weißes Licht), das alle sichtbaren Wellenlängen enthält",
       "Licht mit einer einzigen (oder sehr engen) Wellenlänge – daher eine einzige Farbe",
-      "Polarisiertes Licht",
-      "Sehr intensives Licht"
+      "Linear polarisiertes Licht, dessen Schwingungsebene auf eine Richtung beschränkt ist",
+      "Besonders intensives Licht, das durch Bündelung in einem Spiegel erzeugt wird"
     ],
     "correct": 1,
     "explanation": "Monochromatisches Licht (griech. mono = einzeln, chroma = Farbe) besteht aus nur einer Wellenlänge. Laser emittieren monochromatisches Licht. Es zeigt klare Interferenzmuster.",
@@ -302,10 +302,10 @@
   {
     "question": "Wie ändert sich der Abstand Δy zwischen zwei Helligkeitsmaxima beim Doppelspalt?",
     "options": [
-      "Er hängt nicht von der Wellenlänge ab",
+      "Er ist völlig unabhängig von der Wellenlänge und hängt nur vom Schirmabstand ab",
       "Δy = λ·L/d – er nimmt zu, wenn die Wellenlänge λ größer oder der Spaltabstand d kleiner wird",
-      "Er nimmt zu, wenn der Schirmabstand L kleiner wird",
-      "Er ist immer konstant unabhängig von der Geometrie"
+      "Er nimmt zu, wenn der Schirmabstand L kleiner wird oder der Spaltabstand d größer wird",
+      "Er ist immer konstant und ändert sich nicht mit Wellenlänge, Spaltabstand oder Schirmabstand"
     ],
     "correct": 1,
     "explanation": "Formel für Doppelspalt: Δy ≈ λ·L/d. Größere Wellenlänge oder kleinerer Spaltabstand → weiteres Auseinanderliegen der Maxima. Anwendung: Bestimmung der Lichtwellenlänge.",
@@ -314,10 +314,10 @@
   {
     "question": "Wie bildet eine Sammellinse einen reellen Gegenstand ab, wenn die Gegenstandsweite g > 2f?",
     "options": [
-      "Aufrecht und vergrößert auf derselben Seite wie der Gegenstand",
+      "Aufrecht und vergrößert auf derselben Seite wie der Gegenstand (wie bei einer Lupe)",
       "Umgekehrt und verkleinert auf der anderen Seite der Linse",
-      "Aufrecht und unverändert groß",
-      "Kein reelles Bild entsteht"
+      "Aufrecht und unverändert groß genau in der Brennebene der Linse",
+      "Es entsteht kein reelles Bild, sondern nur ein virtuelles auf der Gegenstandsseite"
     ],
     "correct": 1,
     "explanation": "g > 2f: reelles, umgekehrtes, verkleinertes Bild. g = 2f: reelles, umgekehrtes, gleich großes Bild. f < g < 2f: reelles, umgekehrtes, vergrößertes Bild. g < f: virtuelles, aufrechtes, vergrößertes Bild (Lupe).",
@@ -326,10 +326,10 @@
   {
     "question": "Was ist die Funktion einer Lupe?",
     "options": [
-      "Sie erzeugt ein reelles verkleinertes Bild auf einem Schirm",
+      "Sie erzeugt ein reelles, verkleinertes Bild auf einem dahinterliegenden Schirm",
       "Sie ist eine Sammellinse, die ein aufrechtes, vergrößertes, virtuelles Bild erzeugt, wenn der Gegenstand innerhalb der Brennweite liegt",
-      "Sie funktioniert wie ein Hohlspiegel",
-      "Sie erzeugt stets ein umgekehrtes Bild"
+      "Sie funktioniert wie ein Hohlspiegel und erzeugt reelle Bilder vor der Linse",
+      "Sie erzeugt stets ein umgekehrtes, vergrößertes Bild auf der Rückseite der Linse"
     ],
     "correct": 1,
     "explanation": "Lupe (Sammellinse, g < f): virtuelles, aufrechtes, vergrößertes Bild auf derselben Seite wie der Gegenstand. Vergrößerung V = 25 cm / f (bei deutlicher Sehweite 25 cm).",
@@ -338,10 +338,10 @@
   {
     "question": "Was unterscheidet Teleskop und Mikroskop in ihrer Grundfunktion?",
     "options": [
-      "Beide vergrößern identische Objekttypen gleich",
+      "Beide vergrößern identische Objekttypen auf exakt dieselbe Weise mit denselben Linsen",
       "Teleskop: vergrößert weit entfernte Objekte (zwei Sammellinsen: Objektiv mit langer, Okular mit kurzer Brennweite); Mikroskop: vergrößert sehr kleine nahe Objekte (Objektiv mit kurzer Brennweite)",
-      "Teleskop nutzt ausschließlich Spiegel",
-      "Mikroskop arbeitet mit Radiowellen"
+      "Das Teleskop nutzt ausschließlich Hohlspiegel, während das Mikroskop nur Linsen verwendet",
+      "Das Mikroskop arbeitet mit Radiowellen, während das Teleskop sichtbares Licht verwendet"
     ],
     "correct": 1,
     "explanation": "Teleskop: Objektiv (große f) erzeugt reelles Bild ferner Objekte → Okular (kleine f) vergrößert es wie eine Lupe. Mikroskop: Objektiv (kleine f) erzeugt stark vergrößertes reelles Zwischenbild → Okular vergrößert weiter.",
@@ -350,10 +350,10 @@
   {
     "question": "Was versteht man unter dem Grenzwinkel der Totalreflexion?",
     "options": [
-      "Der Winkel, bei dem Licht vollständig absorbiert wird",
+      "Der Winkel, bei dem Licht vollständig von einer Oberfläche absorbiert und in Wärme umgewandelt wird",
       "Der kritische Einfallswinkel αₘₐₓ = arcsin(n₂/n₁), ab dem beim Übergang zu einem optisch dünneren Medium Totalreflexion einsetzt",
-      "Der Winkel zwischen einfallendem und reflektiertem Strahl",
-      "Der Brewster-Winkel der Polarisation"
+      "Der Winkel zwischen einfallendem und reflektiertem Strahl gemäß dem Reflexionsgesetz",
+      "Der Brewster-Winkel, bei dem das reflektierte Licht vollständig linear polarisiert ist"
     ],
     "correct": 1,
     "explanation": "Grenzwinkel: sin(αₘₐₓ) = n₂/n₁ (n₁ > n₂). Ab α > αₘₐₓ gibt es keinen gebrochenen Strahl mehr – vollständige Reflexion.",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist die Brennweite f einer Sammellinse?",
     "options": [
-      "Der Durchmesser der Linse",
+      "Der Durchmesser der Linse, angegeben als optische Apertur in Millimetern",
       "Der Abstand zwischen Linse und Brennpunkt, in dem parallele Strahlen nach der Linse gebündelt werden",
-      "Der Abstand zwischen Linse und Bild",
-      "Der Abstand zwischen Gegenstand und Bild"
+      "Der Abstand zwischen der Linse und dem entstehenden Bild eines Gegenstands",
+      "Der Abstand zwischen dem Gegenstand und dem entstehenden Bild hinter der Linse"
     ],
     "correct": 1,
     "explanation": "Die Brennweite f ist der Abstand zwischen Linsenmittelpunkt und Brennpunkt F. Für eine Sammellinse ist f > 0; für eine Zerstreuungslinse f < 0. Brechkraft D = 1/f in Dioptrien.",
@@ -374,10 +374,10 @@
   {
     "question": "Was ist Brechkraft D einer Linse und in welcher Einheit wird sie gemessen?",
     "options": [
-      "D = f, gemessen in Metern",
+      "D = f, gemessen in Metern (längere Brennweite = höhere Brechkraft)",
       "D = 1/f, gemessen in Dioptrien (dpt = 1/m)",
-      "D = f², gemessen in m²",
-      "D = n·f, gemessen in Dioptrien"
+      "D = f², gemessen in Quadratmetern (quadratische Abhängigkeit von der Brennweite)",
+      "D = n·f, gemessen in Dioptrien (Brechungsindex mal Brennweite)"
     ],
     "correct": 1,
     "explanation": "Brechkraft D = 1/f (in Dioptrien, dpt). Eine Sammellinse mit f = 0,5 m hat D = +2 dpt; eine Zerstreuungslinse mit f = −0,25 m hat D = −4 dpt (Brillengläser).",
@@ -386,10 +386,10 @@
   {
     "question": "Was unterscheidet Spiegel- und Streuungsreflexion?",
     "options": [
-      "Kein Unterschied – Reflexionsgesetz gilt für beide gleich",
+      "Es gibt keinen Unterschied – das Reflexionsgesetz gilt für beide Fälle in völlig identischer Weise",
       "Spiegelreflexion (glattes Material): parallele Strahlen werden parallel reflektiert; Streuungsreflexion (raues Material): Strahlen werden in alle Richtungen verteilt",
-      "Streuungsreflexion tritt nur bei Metallen auf",
-      "Spiegelreflexion setzt Totalreflexion voraus"
+      "Streuungsreflexion tritt ausschließlich an blanken Metalloberflächen auf, nicht an anderen Materialien",
+      "Spiegelreflexion setzt immer Totalreflexion voraus und tritt nur bei bestimmten Einfallswinkeln auf"
     ],
     "correct": 1,
     "explanation": "Spiegelreflexion: glatte Oberfläche (λ >> Unebenheiten) → gerichtete Reflexion. Streuungsreflexion: raue Oberfläche → Licht wird diffus in alle Richtungen gestreut.",
@@ -398,10 +398,10 @@
   {
     "question": "Warum erscheint der Himmel blau?",
     "options": [
-      "Weil Sauerstoff blaues Licht emittiert",
+      "Weil Sauerstoffmoleküle in der Atmosphäre blaues Licht selbst emittieren und abstrahlen",
       "Weil kurzwelliges (blaues) Licht stärker an Luftmolekülen gestreut wird als langwelliges rotes Licht (Rayleigh-Streuung, Streuung ∝ 1/λ⁴)",
-      "Weil die Atmosphäre rotes Licht absorbiert",
-      "Weil die Sonne blaues Licht stärker abstrahlt"
+      "Weil die Atmosphäre rotes und gelbes Licht selektiv absorbiert und nur blaues durchlässt",
+      "Weil die Sonne blaues Licht wesentlich stärker abstrahlt als rotes Licht"
     ],
     "correct": 1,
     "explanation": "Rayleigh-Streuung: Die Streuintensität ist proportional zu 1/λ⁴ – blaues Licht (kurze λ) wird viel stärker gestreut als rotes. Daher erscheint der Himmel blau, Sonnenuntergänge rot.",
@@ -410,10 +410,10 @@
   {
     "question": "Was ist der Unterschied zwischen Absorption und Streuung von Licht in einem Medium?",
     "options": [
-      "Es gibt keinen Unterschied",
+      "Es gibt keinen physikalischen Unterschied – beide Begriffe beschreiben denselben Vorgang",
       "Absorption: Lichtenergie wird vom Material aufgenommen und in Wärme/andere Formen umgewandelt; Streuung: Licht wird in andere Richtungen umgelenkt, ohne Energieverlust ins Medium",
-      "Absorption tritt nur bei schwarzen Oberflächen auf",
-      "Streuung tritt nur im Vakuum auf"
+      "Absorption tritt ausschließlich an vollständig schwarzen Oberflächen auf, nicht an anderen Materialien",
+      "Streuung tritt ausschließlich im Vakuum auf, da sie ein Medium mit Teilchen voraussetzt"
     ],
     "correct": 1,
     "explanation": "Absorption: Photonen werden absorbiert und ihre Energie als Wärme/Fluoreszenz abgegeben. Streuung: Richtungsänderung der Photonen ohne dauerhafte Energieaufnahme durch das Medium.",
@@ -423,9 +423,9 @@
     "question": "Was beschreibt die Formel E = h · f für Photonen?",
     "options": [
       "E = Photonenenergie, h = Planck-Konstante (6,626·10⁻³⁴ J·s), f = Frequenz – höhere Frequenz bedeutet höhere Energie",
-      "E = Feldenergie, h = Lichtgeschwindigkeit, f = Frequenz",
-      "E = Intensität des Lichts, h = Wellenlänge",
-      "E = kinetische Energie der Elektronen"
+      "E = Feldenergie des Lichts, h = Lichtgeschwindigkeit im Medium, f = Frequenz der Welle",
+      "E = Intensität des Lichts in Watt, h = Wellenlänge in Metern, f = Brechungsindex",
+      "E = kinetische Energie der herausgelösten Elektronen minus der Austrittsarbeit"
     ],
     "correct": 0,
     "explanation": "Einstein: E = h·f. Jedes Photon trägt eine diskrete Energiemenge proportional zur Frequenz. Das erklärt den Photoeffekt und den Welle-Teilchen-Dualismus.",
@@ -434,10 +434,10 @@
   {
     "question": "Was ist Lumineszenz und was unterscheidet Fluoreszenz von Phosphoreszenz?",
     "options": [
-      "Lumineszenz ist dasselbe wie Glühen durch Hitze",
+      "Lumineszenz ist dasselbe wie Glühen durch Hitze; Fluoreszenz und Phosphoreszenz sind identisch",
       "Lumineszenz ist Licht ohne Hitzeursache; Fluoreszenz hört beim Abschalten der Anregung sofort auf; Phosphoreszenz leuchtet noch nach (Energiespeicherung)",
-      "Beide Begriffe bedeuten dasselbe",
-      "Nur Phosphoreszenz hat praktische Anwendungen"
+      "Fluoreszenz und Phosphoreszenz sind beide thermische Effekte mit unterschiedlicher Temperatur",
+      "Nur Phosphoreszenz hat praktische Anwendungen, Fluoreszenz kommt in der Natur nicht vor"
     ],
     "correct": 1,
     "explanation": "Lumineszenz: Licht durch Energiezufuhr (nicht Wärme). Fluoreszenz: sofortige Emission, hört sofort auf (z.B. Leuchtstoffröhre). Phosphoreszenz: verzögerte Emission (Nachleuchtfarben).",
@@ -446,10 +446,10 @@
   {
     "question": "Wie funktioniert ein Beugungsgitter?",
     "options": [
-      "Es reflektiert Licht wie ein Spiegel",
+      "Es reflektiert Licht wie ein Spiegel und bündelt parallele Strahlen in einem Brennpunkt",
       "Es zerlegt Licht durch Interferenz an vielen regelmäßigen Spalten in seine Spektralfarben – jede Wellenlänge wird in einen anderen Winkel gebeugt",
-      "Es bricht Licht wie ein Prisma durch unterschiedliche Brechungsindizes",
-      "Es absorbiert bestimmte Wellenlängen"
+      "Es bricht Licht wie ein Prisma durch wellenlängenabhängige Brechungsindizes des Materials",
+      "Es absorbiert bestimmte Wellenlängen und lässt nur bestimmte Farben hindurch"
     ],
     "correct": 1,
     "explanation": "Ein Beugungsgitter hat viele gleichmäßig beabstandete Spalten (z.B. 600/mm). Durch Interferenz der Beugungsordnungen wird jede Wellenlänge in einen bestimmten Winkel gemäß d·sinα = n·λ abgelenkt.",
@@ -458,10 +458,10 @@
   {
     "question": "Was ist optische Weglänge n·l und warum ist sie in der Interferenzrechnung wichtig?",
     "options": [
-      "Sie ist identisch mit der geometrischen Weglänge l",
+      "Sie ist identisch mit der geometrischen Weglänge l und hat keinen Einfluss auf den Gangunterschied",
       "Sie ist das Produkt aus Brechungsindex n und geometrischer Länge l – in optisch dichteren Medien entspricht eine geometrische Länge einem größeren Gangunterschied",
-      "Sie beschreibt die Lichtgeschwindigkeit",
-      "Sie gibt die Wellenlänge im Medium an"
+      "Sie beschreibt die Lichtgeschwindigkeit im Medium und hat die Einheit Meter pro Sekunde",
+      "Sie gibt die Wellenlänge des Lichts im Medium an, nicht den zurückgelegten Weg"
     ],
     "correct": 1,
     "explanation": "Die optische Weglänge n·l berücksichtigt, dass Licht in Medien (n > 1) eine größere Phase pro Wegstrecke ansammelt. Für Interferenzberechnungen ist der optische Gangunterschied Δ = n₂·l₂ − n₁·l₁ entscheidend.",
@@ -470,10 +470,10 @@
   {
     "question": "Was ist der Brewster-Winkel?",
     "options": [
-      "Der Grenzwinkel der Totalreflexion",
+      "Der Grenzwinkel der Totalreflexion, ab dem kein Licht mehr in das dünnere Medium eintritt",
       "Der Einfallswinkel, bei dem das reflektierte Licht vollständig linear polarisiert ist (gilt: tan α_B = n₂/n₁)",
-      "Der Winkel maximaler Brechung",
-      "Der Winkel für konstruktive Interferenz"
+      "Der Winkel maximaler Brechung, bei dem der Brechungswinkel 90° beträgt",
+      "Der Winkel, bei dem konstruktive Interferenz am Beugungsgitter auftritt (erste Ordnung)"
     ],
     "correct": 1,
     "explanation": "Beim Brewster-Winkel α_B (mit tan α_B = n₂/n₁) ist der reflektierte Strahl vollständig polarisiert (senkrecht zur Einfallsebene). Anwendung: reflexionsmindernde Brillengläser, Polarisationsfilter.",

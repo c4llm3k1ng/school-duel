@@ -26,10 +26,10 @@
   {
     "question": "Was ist elektrische Spannung U?",
     "options": [
-      "Die Anzahl der Ladungsträger pro Zeiteinheit",
+      "Die Anzahl der Ladungsträger, die pro Sekunde einen Leiterquerschnitt passieren",
       "Die potenzielle Energie pro Ladungseinheit (Arbeit pro Ladung: U = W/Q)",
-      "Die Geschwindigkeit der Elektronen",
-      "Die Stärke des Magnetfelds"
+      "Die kinetische Energie der Elektronen im Leiter, ausgedrückt in Joule pro Meter",
+      "Die magnetische Feldstärke um einen stromdurchflossenen Leiter, gemessen in Tesla"
     ],
     "correct": 1,
     "explanation": "Elektrische Spannung U = W/Q beschreibt die Energie (Arbeit), die pro Coulomb Ladung zwischen zwei Punkten verrichtet wird. Einheit: Volt (V).",
@@ -38,10 +38,10 @@
   {
     "question": "Was ist elektrische Stromstärke I?",
     "options": [
-      "Die Spannung geteilt durch den Widerstand",
+      "Die Spannung geteilt durch den Widerstand, beschreibt die Feldstärke im Leiter",
       "Die pro Zeiteinheit durch einen Querschnitt fließende Ladung (I = Q/t)",
-      "Die Energie eines Stromkreises",
-      "Die Anzahl der Elektronen im Leiter"
+      "Die gesamte in einem Stromkreis gespeicherte elektrische Energie in Joule",
+      "Die Gesamtzahl der Elektronen im Leiter, gemessen pro Kubikmeter"
     ],
     "correct": 1,
     "explanation": "Stromstärke I = Q/t gibt an, wie viel Ladung pro Sekunde durch einen Leiterquerschnitt fließt. Einheit: Ampere (A).",
@@ -134,10 +134,10 @@
   {
     "question": "Was ist ein elektrisches Feld?",
     "options": [
-      "Das Magnetfeld um einen Leiter",
+      "Das Magnetfeld um einen stromdurchflossenen Leiter, erzeugt durch bewegte Ladungen",
       "Der Bereich, in dem eine elektrische Ladung eine Kraft erfährt (E = F/q)",
-      "Die Spannung zwischen zwei Punkten",
-      "Der Stromfluss in einem Leiter"
+      "Die Potenzialdifferenz zwischen zwei Punkten eines Leiters in Volt",
+      "Der gerichtete Stromfluss durch einen metallischen Leiter bei angelegter Spannung"
     ],
     "correct": 1,
     "explanation": "Ein elektrisches Feld ist der Bereich, in dem auf eine Probeladung q eine Kraft F wirkt. Die Feldstärke E = F/q, Einheit: V/m.",
@@ -158,10 +158,10 @@
   {
     "question": "Was ist die Kapazität C eines Kondensators?",
     "options": [
-      "C = U · Q",
+      "C = U · Q (Produkt aus Spannung und Ladung, in Joule)",
       "C = Q / U (gespeicherte Ladung pro Volt)",
-      "C = I · t",
-      "C = P / U"
+      "C = I · t (Strom mal Zeit, in Coulomb)",
+      "C = P / U (Leistung geteilt durch Spannung, in Ampere)"
     ],
     "correct": 1,
     "explanation": "Die Kapazität C = Q/U gibt an, wie viel Ladung ein Kondensator pro Volt Spannung speichern kann. Einheit: Farad (F).",
@@ -182,10 +182,10 @@
   {
     "question": "Was ist ein Magnetfeld?",
     "options": [
-      "Das elektrische Feld um eine Ladung",
+      "Das elektrische Feld um eine ruhende Ladung, beschrieben durch die Feldstärke E in V/m",
       "Der Bereich, in dem magnetische Kräfte wirken – erzeugt durch Permanentmagnete oder bewegte Ladungen (Strom)",
-      "Die Spannung in einem Spulenkreis",
-      "Die Kapazität eines Kondensators"
+      "Die elektrische Spannung in einer Induktionsspule, gemessen in Volt pro Windung",
+      "Die Speicherfähigkeit eines Kondensators für elektrische Ladung in Farad"
     ],
     "correct": 1,
     "explanation": "Ein Magnetfeld entsteht um Permanentmagnete und stromdurchflossene Leiter. Magnetische Feldlinien verlaufen von Nord- zu Südpol (außen).",
@@ -194,10 +194,10 @@
   {
     "question": "Was besagt die Rechte-Hand-Regel (Daumenregel) für einen stromdurchflossenen geradlinigen Leiter?",
     "options": [
-      "Der Daumen zeigt in Richtung des Magnetfelds, die Finger in Richtung des Stroms",
+      "Der Daumen zeigt in Richtung des Magnetfelds, die Finger geben die Richtung des Stroms an",
       "Der Daumen zeigt in Stromrichtung, die Finger geben die Richtung des Magnetfelds an",
-      "Die Hand zeigt immer nach oben",
-      "Die Finger zeigen in Richtung der Kraft"
+      "Die Handinnenfläche zeigt in Richtung der Lorentzkraft auf bewegte Ladungen",
+      "Die Finger zeigen in Richtung der auf den Leiter wirkenden mechanischen Kraft"
     ],
     "correct": 1,
     "explanation": "Rechte-Hand-Regel: Daumen in konventionelle Stromrichtung → die gekrümmten Finger zeigen die Richtung der Magnetfeldlinien um den Leiter.",
@@ -206,10 +206,10 @@
   {
     "question": "Was ist elektromagnetische Induktion (Faradaysches Gesetz)?",
     "options": [
-      "Der Aufbau eines elektrischen Feldes durch ruhende Ladungen",
+      "Der Aufbau eines elektrischen Feldes durch ruhende Ladungen an der Oberfläche von Leitern",
       "Die Erzeugung einer elektrischen Spannung (EMK) durch Änderung des magnetischen Flusses",
-      "Der Transport von Elektronen in Metallen",
-      "Die Abstoßung gleichartiger Ladungen"
+      "Der Transport von Elektronen durch metallische Leiter bei konstanter Feldstärke",
+      "Die Abstoßung gleichartiger Ladungen gemäß dem Coulombschen Gesetz"
     ],
     "correct": 1,
     "explanation": "Elektromagnetische Induktion: Ändert sich der magnetische Fluss Φ durch eine Leiterschleife, wird eine Spannung (EMK) induziert: U_ind = −ΔΦ/Δt.",
@@ -218,10 +218,10 @@
   {
     "question": "Was besagt die Lenz'sche Regel?",
     "options": [
-      "Der induzierte Strom verstärkt immer die Ursache der Induktion",
+      "Der induzierte Strom verstärkt immer die Ursache der Induktion, um mehr Energie zu gewinnen",
       "Der induzierte Strom wirkt seiner Ursache entgegen (Energieerhaltung)",
-      "Der induzierte Strom fließt immer in Stromrichtung des Induktors",
-      "Der magnetische Fluss wird durch Induktion verdoppelt"
+      "Der induzierte Strom fließt stets in derselben Richtung wie der Strom im Induktor",
+      "Der magnetische Fluss wird durch Induktion um den Faktor der Windungszahl verdoppelt"
     ],
     "correct": 1,
     "explanation": "Die Lenz'sche Regel ist eine Konsequenz der Energieerhaltung: Der induzierte Strom erzeugt ein Magnetfeld, das der Flussänderung entgegenwirkt.",
@@ -230,10 +230,10 @@
   {
     "question": "Wie funktioniert ein elektrischer Generator?",
     "options": [
-      "Er wandelt elektrische Energie in Bewegungsenergie um",
+      "Er wandelt elektrische Energie durch die Lorentzkraft in mechanische Rotationsenergie um",
       "Er wandelt Bewegungsenergie durch elektromagnetische Induktion in elektrische Energie um",
-      "Er speichert elektrische Energie im Magnetfeld",
-      "Er erhöht die Spannung eines Gleichstroms"
+      "Er speichert elektrische Energie im Magnetfeld einer Spule ohne Energieverlust",
+      "Er erhöht die Spannung von Gleichstrom durch ein Transformatorprinzip"
     ],
     "correct": 1,
     "explanation": "Im Generator rotiert eine Spule im Magnetfeld (oder umgekehrt) – die Änderung des magnetischen Flusses induziert eine Wechselspannung.",
@@ -242,10 +242,10 @@
   {
     "question": "Wie funktioniert ein Transformator?",
     "options": [
-      "Er wandelt Gleichstrom in Wechselstrom um",
+      "Er wandelt Gleichstrom in Wechselstrom durch Kommutatorwirkung der Wicklungen um",
       "Er überträgt Energie durch elektromagnetische Induktion zwischen zwei Spulen und ändert die Spannung",
-      "Er speichert elektrische Ladung",
-      "Er misst elektrische Spannung"
+      "Er speichert elektrische Ladung im Kondensator und gibt sie kontrolliert wieder ab",
+      "Er misst elektrische Spannungen durch magnetische Flussmessung im Eisenkern"
     ],
     "correct": 1,
     "explanation": "Ein Transformator koppelt Primär- und Sekundärspule über einen gemeinsamen Eisenkern. Das Spannungsverhältnis entspricht dem Windungszahlverhältnis: U₁/U₂ = N₁/N₂.",
@@ -266,10 +266,10 @@
   {
     "question": "Warum wird elektrische Energie im Hochspannungsnetz übertragen?",
     "options": [
-      "Weil Hochspannung sicherer ist",
+      "Weil Hochspannung für Menschen sicherer ist als Niederspannung bei gleichem Strom",
       "Weil bei hoher Spannung der Strom (und damit die Verluste P = I²·R) gering sind",
-      "Weil Hochspannungsleitungen billiger sind",
-      "Weil Wechselstrom nicht anders transportiert werden kann"
+      "Weil Hochspannungsleitungen leichter und kostengünstiger zu installieren sind",
+      "Weil Wechselstrom bei Niederspannung physikalisch nicht über weite Strecken transportierbar ist"
     ],
     "correct": 1,
     "explanation": "Hochspannungsübertragung reduziert den Strom bei gleicher Leistung (P = U·I = const.) – die ohmschen Verluste (I²·R) sinken drastisch.",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist der Unterschied zwischen Gleich- und Wechselstrom?",
     "options": [
-      "Gleichstrom kann transformiert werden, Wechselstrom nicht",
+      "Gleichstrom kann mit einem Transformator in höhere Spannungen umgewandelt werden, Wechselstrom nicht",
       "Gleichstrom hat konstante Richtung; Wechselstrom wechselt periodisch die Richtung",
-      "Wechselstrom fließt nur in Leitern, Gleichstrom nur in Halbleitern",
-      "Beide sind identisch"
+      "Wechselstrom fließt ausschließlich in metallischen Leitern, Gleichstrom auch in Halbleitern",
+      "Beide sind physikalisch identisch und unterscheiden sich nur in der Bezeichnung"
     ],
     "correct": 1,
     "explanation": "Gleichstrom (DC) fließt immer in dieselbe Richtung; Wechselstrom (AC) wechselt periodisch die Richtung – in Europa mit 50 Hz.",
@@ -302,10 +302,10 @@
   {
     "question": "Was ist der Effektivwert (RMS) einer Wechselspannung?",
     "options": [
-      "Der Maximalwert der Spannung",
+      "Der Maximalwert (Scheitelwert) der Spannung, also die Amplitude der Sinusschwingung",
       "Die Spannung, die dieselbe Heizwirkung wie die entsprechende Gleichspannung hat (U_eff = U_max / √2)",
-      "Der Mittelwert über eine Periode",
-      "Die halbe Amplitude"
+      "Der arithmetische Mittelwert der Spannung über eine volle Periode der Wechselspannung",
+      "Die halbe Amplitude der Wechselspannung, gemessen zwischen Null und Scheitelwert"
     ],
     "correct": 1,
     "explanation": "Der Effektivwert U_eff = U_max/√2 gibt an, welche Gleichspannung die gleiche Leistung (Heizwirkung) erzeugen würde. Die Steckdose liefert 230 V als Effektivwert.",
@@ -314,10 +314,10 @@
   {
     "question": "Was ist die Lorentzkraft auf einen stromdurchflossenen Leiter im Magnetfeld?",
     "options": [
-      "F = q · E",
+      "F = q · E (Kraft auf eine ruhende Ladung q im elektrischen Feld E)",
       "F = I · l · B · sin α (Kraft auf einen Leiter der Länge l im Magnetfeld B)",
-      "F = m · g",
-      "F = U / R"
+      "F = m · g (Gewichtskraft eines Körpers der Masse m im Schwerefeld)",
+      "F = U / R (Strom gemäß dem Ohmschen Gesetz, nicht eine Kraft)"
     ],
     "correct": 1,
     "explanation": "Die Lorentzkraft auf einen Leiter: F = I · l · B · sin α, wobei α der Winkel zwischen Strom und Magnetfeld ist. Sie ist die Grundlage des Elektromotors.",
@@ -326,10 +326,10 @@
   {
     "question": "Wie funktioniert ein Elektromotor?",
     "options": [
-      "Durch elektromagnetische Induktion wird Strom erzeugt",
+      "Durch elektromagnetische Induktion wird in einer rotierenden Spule Wechselstrom erzeugt",
       "Stromführende Leiter im Magnetfeld erfahren die Lorentzkraft – diese bewirkt eine Drehbewegung",
-      "Durch Temperaturunterschiede entsteht Bewegung",
-      "Durch Kondensatorentladung wird Bewegung erzeugt"
+      "Durch Temperaturunterschiede zwischen Rotor und Stator entsteht eine mechanische Bewegung",
+      "Durch Kondensatorentladung wird ein elektrostatisches Drehmoment auf den Anker übertragen"
     ],
     "correct": 1,
     "explanation": "Im Elektromotor erzeugt die Lorentzkraft auf eine stromdurchflossene Spule im Magnetfeld ein Drehmoment – elektrische Energie wird in mechanische umgewandelt.",
@@ -338,10 +338,10 @@
   {
     "question": "Was ist Selbstinduktion?",
     "options": [
-      "Die Induktion von Strom durch äußere Magnetfelder",
+      "Die Induktion einer Spannung in einer Spule durch das veränderliche Magnetfeld einer benachbarten Spule",
       "Die Erzeugung einer der Stromänderung entgegenwirkenden Spannung in einer Spule durch Änderung des eigenen Stroms",
-      "Die Induktion in einem Kondensator",
-      "Die Aufladung eines Kondensators durch einen Transformator"
+      "Die Induktion eines Stroms in einem Kondensator durch anliegende Wechselspannung",
+      "Die Aufladung eines Kondensators durch die in einer Spule gespeicherte magnetische Energie"
     ],
     "correct": 1,
     "explanation": "Bei Selbstinduktion erzeugt die Änderung des eigenen Stroms in einer Spule ein veränderliches Magnetfeld, das eine entgegenwirkende Spannung (Selbstinduktionsspannung) induziert.",
@@ -350,10 +350,10 @@
   {
     "question": "Was ist Induktivität L einer Spule?",
     "options": [
-      "L = U / I",
+      "L = U / I (Spannung geteilt durch Strom, entspricht dem ohmschen Widerstand)",
       "L = N · Φ / I (magnetischer Fluss pro Ampere)",
-      "L = R · t",
-      "L = C · U"
+      "L = R · t (Widerstand mal Zeit, Einheit Ohm-Sekunden)",
+      "L = C · U (Kapazität mal Spannung, entspricht der gespeicherten Ladung)"
     ],
     "correct": 1,
     "explanation": "Die Induktivität L = N·Φ/I gibt an, wie stark eine Spule auf Stromänderungen reagiert. Einheit: Henry (H). Je mehr Windungen und je stärker der Kern, desto größer L.",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist elektrischer Widerstand und von welchen Faktoren hängt er ab?",
     "options": [
-      "Er hängt nur vom Material ab",
+      "Er hängt nur vom verwendeten Material ab, nicht von Geometrie oder Temperatur",
       "R = ρ · l / A (spezifischer Widerstand × Länge / Querschnittsfläche)",
-      "Er hängt nur von der Temperatur ab",
-      "Er ist bei allen Materialien gleich"
+      "Er hängt nur von der Betriebstemperatur ab, nicht von Länge oder Querschnitt",
+      "Er ist bei allen metallischen Materialien gleich groß und daher universell konstant"
     ],
     "correct": 1,
     "explanation": "R = ρ·l/A: Der Widerstand steigt mit der Länge l, dem spezifischen Widerstand ρ (materialabhängig) und sinkt mit zunehmendem Querschnitt A.",
@@ -374,10 +374,10 @@
   {
     "question": "Was ist ein Halbleiter und wofür wird er verwendet?",
     "options": [
-      "Ein schlecht leitender Isolator ohne praktischen Nutzen",
+      "Ein schlecht leitender Isolator ohne praktischen Nutzen in der modernen Elektronik",
       "Ein Material mit mittlerer Leitfähigkeit, die durch Dotierung und Temperatur steuerbar ist – Basis von Transistoren und Dioden",
-      "Ein Material, das bei tiefen Temperaturen nicht leitet",
-      "Ein Material, das nur Wechselstrom leitet"
+      "Ein Material, das bei tiefen Temperaturen seinen elektrischen Widerstand vollständig verliert",
+      "Ein Material, das ausschließlich Wechselstrom leitet, Gleichstrom jedoch blockiert"
     ],
     "correct": 1,
     "explanation": "Halbleiter (z.B. Silicium) haben eine zwischen Leitern und Isolatoren liegende Leitfähigkeit, die durch Dotierung (z.B. n- oder p-Typ) gezielt eingestellt werden kann – Grundlage aller modernen Elektronik.",
@@ -386,10 +386,10 @@
   {
     "question": "Was ist Supraleitung?",
     "options": [
-      "Extrem hoher elektrischer Widerstand bei tiefen Temperaturen",
+      "Extrem hoher elektrischer Widerstand bei tiefen Temperaturen durch Gitterstörungen",
       "Das Verschwinden des elektrischen Widerstands unterhalb einer kritischen Temperatur",
-      "Erhöhte Leitfähigkeit durch Dotierung",
-      "Die maximale Stromtragfähigkeit eines Leiters"
+      "Erhöhte Leitfähigkeit durch gezieltes Einbringen von Fremdatomen (Dotierung)",
+      "Die maximale Stromtragfähigkeit eines Leiters bei Raumtemperatur"
     ],
     "correct": 1,
     "explanation": "Supraleiter verlieren unterhalb einer kritischen Temperatur (meist nahe dem absoluten Nullpunkt) ihren elektrischen Widerstand vollständig – Strom fließt ohne Verluste.",
@@ -398,10 +398,10 @@
   {
     "question": "Was ist das kirchhoffsche Knotengesetz (1. Kirchhoffsches Gesetz)?",
     "options": [
-      "Die Summe aller Spannungen in einem Maschenstrom ist null",
+      "Die Summe aller Spannungsabfälle in einer geschlossenen Masche ist gleich null",
       "Die Summe aller Ströme in einem Knoten ist null (Σ I_zu = Σ I_ab)",
-      "Die Widerstände addieren sich in Reihe",
-      "Die Kapazitäten addieren sich parallel"
+      "Die Widerstände in einer Reihenschaltung addieren sich zu einem Gesamtwiderstand",
+      "Die Kapazitäten parallelgeschalteter Kondensatoren addieren sich direkt auf"
     ],
     "correct": 1,
     "explanation": "Das Knotengesetz: In einem Knoten ist die Summe der zufließenden Ströme gleich der Summe der abfließenden Ströme (Ladungserhaltung).",
@@ -410,10 +410,10 @@
   {
     "question": "Was ist das kirchhoffsche Maschengesetz (2. Kirchhoffsches Gesetz)?",
     "options": [
-      "Die Summe aller Ströme in einem Knoten ist null",
+      "Die Summe aller zufließenden Ströme in einem Knoten ist gleich null",
       "Die Summe aller Spannungen in einer geschlossenen Masche ist null (ΣU = 0)",
-      "Alle Widerstände in einer Masche sind gleich",
-      "Spannungen addieren sich in Parallelschaltungen"
+      "Alle Widerstände in einer Masche sind gleich groß, wenn der Strom konstant ist",
+      "Spannungen addieren sich bei Parallelschaltungen zu einer Gesamtspannung auf"
     ],
     "correct": 1,
     "explanation": "Das Maschengesetz: Die Summe aller Spannungsabfälle in einer geschlossenen Masche ist null (Energieerhaltung). Quelle: +U; Verbraucher: −U.",
@@ -422,10 +422,10 @@
   {
     "question": "Was ist ein Oszillatorkreis (Schwingkreis)?",
     "options": [
-      "Eine Schaltung aus Widerstand und Kondensator",
+      "Eine Schaltung aus Widerstand und Kondensator, die eine exponentiell abklingende Entladung erzeugt",
       "Eine Schaltung aus Spule (L) und Kondensator (C), in der elektrische und magnetische Energie periodisch ineinander umgewandelt werden",
-      "Ein Kreis aus Widerständen in Reihe",
-      "Ein Transformatorkreis"
+      "Ein Kreis aus mehreren Widerständen in Reihe mit periodisch wechselnder Stromrichtung",
+      "Ein Transformatorkreis mit zwei magnetisch gekoppelten Spulen unterschiedlicher Windungszahl"
     ],
     "correct": 1,
     "explanation": "Im Schwingkreis (LC-Kreis) schwingt Energie zwischen dem Kondensator (elektrisches Feld) und der Spule (magnetisches Feld) hin und her – analog zum mechanischen Pendel.",
@@ -434,10 +434,10 @@
   {
     "question": "Was ist elektromagnetische Strahlung?",
     "options": [
-      "Nur sichtbares Licht",
+      "Ausschließlich sichtbares Licht im Wellenlängenbereich von 380 bis 780 Nanometern",
       "Eine Welle aus gekoppelten elektrischen und magnetischen Feldern, die sich mit Lichtgeschwindigkeit ausbreitet",
-      "Nur Röntgenstrahlung",
-      "Der Stromfluss in Freiluftleitungen"
+      "Ausschließlich ionisierende Röntgenstrahlung aus radioaktivem Zerfall von Atomkernen",
+      "Der gerichtete Stromfluss durch Freiluftleitungen im Hochspannungsnetz"
     ],
     "correct": 1,
     "explanation": "Elektromagnetische Strahlung umfasst Radiowellen, Mikrowellen, Infrarot, sichtbares Licht, UV, Röntgen- und Gammastrahlung – alle breiten sich mit c ≈ 3·10⁸ m/s aus.",
@@ -446,10 +446,10 @@
   {
     "question": "Was versteht man unter elektrischer Arbeit W in einem Stromkreis?",
     "options": [
-      "W = U · I",
+      "W = U · I (Leistung als Produkt von Spannung und Strom, ohne Zeitanteil)",
       "W = U · I · t (Spannung × Strom × Zeit)",
-      "W = I² · t",
-      "W = U / t"
+      "W = I² · t (Strom zum Quadrat mal Zeit, ohne Widerstandsanteil)",
+      "W = U / t (Spannung geteilt durch Zeit, ohne Stromstärke)"
     ],
     "correct": 1,
     "explanation": "Elektrische Arbeit W = U · I · t = P · t beschreibt die in der Zeit t umgesetzte elektrische Energie.",
@@ -458,10 +458,10 @@
   {
     "question": "Was ist der photoelektrische Effekt?",
     "options": [
-      "Die Erzeugung von Licht durch elektrischen Strom (Glühbirne)",
+      "Die Erzeugung von Licht durch elektrischen Strom in einem Glühfaden (Glühbirne)",
       "Das Herauslösen von Elektronen aus einer Metalloberfläche durch Photonen, wenn deren Energie die Austrittsarbeit überschreitet",
-      "Die Ablenkung von Licht durch ein elektrisches Feld",
-      "Die Speicherung von Lichtenergie im Kondensator"
+      "Die Ablenkung eines Lichtstrahls durch ein starkes elektrisches Feld (Kerr-Effekt)",
+      "Die Speicherung von Lichtenergie in einem Kondensator durch Einstrahlung von UV-Licht"
     ],
     "correct": 1,
     "explanation": "Der photoelektrische Effekt (erklärt von Einstein 1905) zeigt den Teilchencharakter des Lichts: Photonen mit E = h·f können Elektronen aus Metall herauslösen, wenn E > Austrittsarbeit.",

@@ -2,10 +2,10 @@
   {
     "question": "Was ist ein Vektor in der Mathematik?",
     "options": [
-      "Eine Zahl mit Vorzeichen (skalare Größe)",
+      "Eine Zahl mit Vorzeichen (skalare Größe) ohne Richtungsangabe, z.B. Temperatur oder Masse",
       "Ein mathematisches Objekt mit Betrag UND Richtung (z.B. Verschiebung, Kraft, Geschwindigkeit)",
-      "Eine Folge von Zahlen ohne geometrische Bedeutung",
-      "Ein einzelner Punkt im Koordinatensystem"
+      "Eine geordnete Folge von Zahlen ohne Richtungseigenschaft, vergleichbar einer Zahlenreihe",
+      "Ein einzelner Punkt P(x₁, x₂) im Koordinatensystem mit fest bestimmten Koordinaten"
     ],
     "correct": 1,
     "explanation": "Vektoren besitzen Betrag (Länge) und Richtung. Im Gegensatz dazu haben Skalare (z.B. Temperatur, Masse) nur einen Betrag. Vektoren werden als Pfeil oder als Spaltenvektor dargestellt.",
@@ -26,10 +26,10 @@
   {
     "question": "Was ist ein Einheitsvektor?",
     "options": [
-      "Ein Vektor mit Betrag 0 (Nullvektor)",
+      "Ein Vektor mit Betrag 0 (Nullvektor), der keine Richtung besitzt",
       "Ein Vektor mit Betrag 1 – zeigt nur die Richtung an, ohne eine Länge zu haben",
-      "Der kürzeste Vektor in einem Raum",
-      "Ein Vektor mit ganzzahligen Komponenten"
+      "Der kürzeste Verbindungsvektor zwischen zwei gegebenen Punkten im Raum",
+      "Ein Vektor mit ausschließlich ganzzahligen Komponenten, wie z.B. (1, 2, 3)"
     ],
     "correct": 1,
     "explanation": "Einheitsvektor: |e| = 1. Jeder Vektor v ≠ 0 lässt sich normieren: e = v / |v|. Basiseinheitsvektoren: e₁ = (1,0,0), e₂ = (0,1,0), e₃ = (0,0,1).",
@@ -50,10 +50,10 @@
   {
     "question": "Was ist das Skalarprodukt (inneres Produkt) zweier Vektoren a und b?",
     "options": [
-      "Ein Vektor senkrecht zu beiden (das ist das Kreuzprodukt)",
+      "Ein Vektor senkrecht zu a und b mit Betrag |a|·|b|·sinα – das ist das Kreuzprodukt, kein Skalarprodukt",
       "a · b = a₁·b₁ + a₂·b₂ + a₃·b₃ – komponentenweise Multiplikation, aufsummiert; das Ergebnis ist eine Zahl (Skalar)",
-      "a · b = |a| · |b| (ohne Winkelterm)",
-      "a · b = a₁·b₁ · a₂·b₂ · a₃·b₃ (Produkt der Produkte)"
+      "a · b = |a| · |b| – das Produkt der Beträge ohne Berücksichtigung des Winkels zwischen a und b",
+      "a · b = a₁·b₁ · a₂·b₂ · a₃·b₃ – Produkt aller Komponentenprodukte statt ihrer Summe"
     ],
     "correct": 1,
     "explanation": "Skalarprodukt: a · b = Σ aᵢ·bᵢ = |a|·|b|·cos(φ). Ergibt einen Skalar, keine Richtung. Anwendungen: Winkelberechnung, Orthogonalitätsprüfung, Projektion.",
@@ -62,10 +62,10 @@
   {
     "question": "Was bedeutet es, wenn das Skalarprodukt zweier Vektoren gleich 0 ist?",
     "options": [
-      "Die Vektoren sind parallel zueinander",
+      "Die Vektoren sind parallel zueinander, weil das Skalarprodukt bei Parallelität maximal wird",
       "Die Vektoren stehen senkrecht aufeinander (orthogonal) – da cos(90°) = 0",
-      "Mindestens einer der Vektoren ist der Nullvektor",
-      "Die Vektoren haben denselben Betrag"
+      "Mindestens einer der Vektoren ist der Nullvektor, der mit jedem anderen Vektor null ergibt",
+      "Die Vektoren haben denselben Betrag, also |a| = |b|, sind aber nicht notwendig senkrecht"
     ],
     "correct": 1,
     "explanation": "a · b = 0 ↔ a ⊥ b (bei a ≠ 0 und b ≠ 0). Grundlage für Senkrechtigkeitsprüfungen und die Bestimmung von Normalenvektoren.",
@@ -86,10 +86,10 @@
   {
     "question": "Was ist der Ortsvektor eines Punktes P(x₁, x₂, x₃)?",
     "options": [
-      "Der Verbindungsvektor von P zu einem anderen Punkt",
+      "Der Verbindungsvektor von P zu einem beliebigen anderen Punkt Q, also OQ − OP",
       "Der Vektor vom Ursprung O(0,0,0) zum Punkt P – hat dieselben Komponenten wie die Koordinaten von P",
-      "Die Summe der Koordinaten von P",
-      "Der Betrag der Koordinaten von P"
+      "Die Summe der Koordinaten von P, also x₁ + x₂ + x₃ (ein Skalar, kein Vektor)",
+      "Der Betrag der Koordinaten, also |x₁| + |x₂| + |x₃| – eine skalare Größe"
     ],
     "correct": 1,
     "explanation": "Ortsvektor OP = (x₁, x₂, x₃). Er zeigt vom Ursprung zum Punkt P. Im Unterschied zum freien Vektor (ortsunabhängig) ist der Ortsvektor an den Ursprung gebunden.",
@@ -110,10 +110,10 @@
   {
     "question": "Wann sind zwei Vektoren a und b linear abhängig?",
     "options": [
-      "Wenn ihr Skalarprodukt 0 ist (das heißt senkrecht)",
+      "Wenn ihr Skalarprodukt 0 ist – das bedeutet Orthogonalität (senkrecht), nicht lineare Abhängigkeit",
       "Wenn b = k · a für ein reelles k (ein Vektor ist ein Vielfaches des anderen) – sie sind dann parallel",
-      "Wenn |a| = |b| (gleicher Betrag)",
-      "Wenn a + b = 0 (entgegengesetzt gleich)"
+      "Wenn |a| = |b| gilt, also beide Vektoren dieselbe Länge haben, unabhängig von ihrer Richtung",
+      "Wenn a + b = 0, also die Vektoren entgegengesetzt gleich sind – das ist ein Sonderfall mit k = −1"
     ],
     "correct": 1,
     "explanation": "Linear abhängig: a = k · b. Das Kreuzprodukt a × b ist dann der Nullvektor. Geometrisch: die Vektoren zeigen in dieselbe oder entgegengesetzte Richtung (parallel/antiparallel).",
@@ -122,10 +122,10 @@
   {
     "question": "Wie lautet die Parameterform einer Geraden g durch Punkt A mit Richtungsvektor v?",
     "options": [
-      "g: x = A × v (Kreuzprodukt)",
+      "g: x = A × v – das Kreuzprodukt liefert einen Vektor, keinen gültigen Geradenausdruck",
       "g: x = A + t · v, t ∈ R (Aufpunkt plus Vielfaches des Richtungsvektors)",
-      "g: x = t · A + v",
-      "g: x = A · t · v"
+      "g: x = t · A + v – der Parameter skaliert den Aufpunkt, nicht den Richtungsvektor",
+      "g: x = A · t · v – skalares Produkt aller drei Größen, mathematisch nicht korrekt"
     ],
     "correct": 1,
     "explanation": "Geradengleichung: x = A + t · v. t ist der reelle Parameter; für jeden Wert von t liegt x auf der Geraden. v ≠ 0 ist der Richtungsvektor.",
@@ -134,10 +134,10 @@
   {
     "question": "Wie prüft man, ob ein Punkt P auf der Geraden g: x = A + t · v liegt?",
     "options": [
-      "Man berechnet das Skalarprodukt von P und v",
+      "Man berechnet das Skalarprodukt von P und v und prüft, ob es null ergibt (Orthogonalitätsprüfung)",
       "Man setzt P = A + t · v und löst nach t – bei eindeutiger, widerspruchsfreier Lösung liegt P auf g",
-      "Man prüft, ob |P| = |A|",
-      "Man prüft, ob P · v = 0"
+      "Man prüft, ob |P| = |A|, also ob P und A gleich weit vom Ursprung entfernt sind",
+      "Man prüft, ob P · v = 0, also ob der Ortsvektor von P senkrecht auf dem Richtungsvektor steht"
     ],
     "correct": 1,
     "explanation": "Einsetzen und lösen: P − A = t · v. Falls alle drei Komponenten dasselbe t liefern, liegt P auf g. Falls das Gleichungssystem widersprüchlich ist, liegt P nicht auf g.",
@@ -146,10 +146,10 @@
   {
     "question": "Was ist ein Normalvektor einer Ebene?",
     "options": [
-      "Ein Vektor, der in der Ebene liegt",
+      "Ein Vektor, der in der Ebene liegt und eine beliebige Richtung innerhalb der Ebene haben kann",
       "Ein Vektor, der senkrecht auf der Ebene steht (auf allen Vektoren in der Ebene senkrecht)",
-      "Der längste Vektor in der Ebene",
-      "Der Richtungsvektor der Schnittgeraden zweier Ebenen"
+      "Der längste Richtungsvektor innerhalb der Ebene, der zur Parametrisierung genutzt wird",
+      "Der Richtungsvektor der Schnittgeraden zweier Ebenen, berechnet als Kreuzprodukt ihrer Normalvektoren"
     ],
     "correct": 1,
     "explanation": "Normalenvektor n steht senkrecht auf allen Vektoren, die in der Ebene liegen. Bei der Normalenform gilt: n · (x − A) = 0. Das Kreuzprodukt zweier Spannvektoren liefert n.",
@@ -158,10 +158,10 @@
   {
     "question": "Wie lautet die Normalenform einer Ebene E mit Normalenvektor n und Aufpunkt A?",
     "options": [
-      "E: n × (x − A) = 0 (Kreuzprodukt)",
+      "E: n × (x − A) = 0 – das Kreuzprodukt wäre ein Vektor, keine sinnvolle Ebenengleichung",
       "E: n · (x − A) = 0 (Skalarprodukt aus n und dem Verbindungsvektor ist gleich 0)",
-      "E: n + x = A",
-      "E: x = A + n"
+      "E: n + x = A – Addition von Normalenvektor und Ortsvektor, kein gültiger Ebenenausdruck",
+      "E: x = A + n – der Ortsvektor plus Normalenvektor ergibt einen Punkt über der Ebene"
     ],
     "correct": 1,
     "explanation": "Normalenform: n · (x − A) = 0, wobei A ein beliebiger Punkt der Ebene ist. Jeder Punkt x der Ebene erfüllt diese Gleichung (der Verbindungsvektor von A zu x steht senkrecht auf n).",
@@ -170,10 +170,10 @@
   {
     "question": "Wie lautet die Koordinatenform (allgemeine Darstellung) einer Ebene?",
     "options": [
-      "E: n₁·x₁ − n₂·x₂ − n₃·x₃ = d",
+      "E: n₁·x₁ − n₂·x₂ − n₃·x₃ = d (falsche Vorzeichen für die zweite und dritte Komponente)",
       "E: n₁·x₁ + n₂·x₂ + n₃·x₃ = d, wobei d = n · A (Aufpunkt eingesetzt)",
-      "E: x₁ + x₂ + x₃ = 1 (Achsenabschnittsform nur im Spezialfall)",
-      "E: n₁·x₁ + n₂·x₂ = d (nur 2D)"
+      "E: x₁ + x₂ + x₃ = 1 (Achsenabschnittsform – gilt nur im Spezialfall, kein allgemeiner Ausdruck)",
+      "E: n₁·x₁ + n₂·x₂ = d (gilt nur für 2D-Geraden, nicht für Ebenen im dreidimensionalen Raum)"
     ],
     "correct": 1,
     "explanation": "Koordinatenform: n₁x₁ + n₂x₂ + n₃x₃ = d. Aus der Normalenform durch Ausmultiplizieren hergeleitet. Ermöglicht einfaches Einsetzen von Punkten zur Lageprüfung.",
@@ -182,10 +182,10 @@
   {
     "question": "Wie berechnet man den Abstand eines Punktes P von einer Ebene E: n · x = d?",
     "options": [
-      "d = |n × (P − A)| / |n|",
+      "d = |n × (P − A)| / |n| – das Kreuzprodukt liefert einen Vektor, nicht den Abstand",
       "d = |n · P − d| / |n| (Betrag des Zählers der Hesseschen Normalform)",
-      "d = |P − A|",
-      "d = n · P"
+      "d = |P − A| – der Abstand des Punktes P zum Aufpunkt A, nicht zur Ebene selbst",
+      "d = n · P – das Skalarprodukt ohne Normierung und ohne den Ebenenparameter d"
     ],
     "correct": 1,
     "explanation": "Abstandsformel (Hessesche Normalform): dist = |n · OP − d| / |n|. Für den normierten Normalenvektor n₀ = n/|n| vereinfacht sich die Formel zu dist = |n₀ · OP − d₀|.",
@@ -194,10 +194,10 @@
   {
     "question": "Was ist das Kreuzprodukt (Vektorprodukt) a × b?",
     "options": [
-      "Eine Zahl (Skalar) – das Ergebnis des Skalarprodukts",
+      "Eine Zahl (Skalar) – das ist das Ergebnis des Skalarprodukts a·b = |a|·|b|·cosα",
       "Ein Vektor, der senkrecht auf beiden Ausgangsvektoren a und b steht; Betrag = Fläche des aufgespannten Parallelogramms",
-      "Der Winkel zwischen den beiden Vektoren",
-      "Das Skalarprodukt der beiden Vektoren"
+      "Der Winkel zwischen den beiden Vektoren, berechnet aus cos(α) = (a·b)/(|a|·|b|)",
+      "Das Skalarprodukt a·b, das einen Skalar und keinen Vektor liefert"
     ],
     "correct": 1,
     "explanation": "a × b ist ein Vektor senkrecht zu a und b. |a × b| = |a| · |b| · sin(φ). Das Kreuzprodukt ist nicht kommutativ: b × a = −(a × b). Anwendung: Normalenvektorberechnung, Flächeninhalte.",
@@ -218,10 +218,10 @@
   {
     "question": "Was ist das Spatprodukt [a, b, c]?",
     "options": [
-      "Das Skalarprodukt dreier Vektoren (nicht definiert)",
+      "Das Skalarprodukt dreier Vektoren – für drei Vektoren ist das Skalarprodukt nicht definiert (nur für zwei)",
       "a · (b × c) – das Ergebnis ist ein Skalar; sein Betrag ist das Volumen des von a, b, c aufgespannten Parallelflachs (Spat)",
-      "Das Kreuzprodukt dreier Vektoren (nicht definiert)",
-      "Die Summe der Beträge dreier Vektoren"
+      "Das Kreuzprodukt dreier Vektoren – auch das Kreuzprodukt ist nur für genau zwei Vektoren definiert",
+      "Die Summe der Beträge |a| + |b| + |c| der drei Vektoren – ein Skalar ohne geometrischen Volumenbezug"
     ],
     "correct": 1,
     "explanation": "Spatprodukt: V = |a · (b × c)|. Ist das Spatprodukt = 0, sind die drei Vektoren linear abhängig (komplanar). Volumen Tetraeder = (1/6) · |Spatprodukt|.",
@@ -230,10 +230,10 @@
   {
     "question": "Wie lautet die Parameterform einer Ebene durch Punkt A mit Spannvektoren u und v?",
     "options": [
-      "E: x = A + u × v (Kreuzprodukt)",
+      "E: x = A + u × v – das Kreuzprodukt liefert einen Vektor, keinen zweiparametrigen Ausdruck",
       "E: x = A + s·u + t·v mit s, t ∈ R (zwei unabhängige Parameter)",
-      "E: x = s·A + t·u + v",
-      "E: x = A · s · t"
+      "E: x = s·A + t·u + v – alle drei Größen mit Parametern belegt, kein gültiger Ebenenausdruck",
+      "E: x = A · s · t – Multiplikation des Aufpunkts mit zwei Parametern, mathematisch nicht korrekt"
     ],
     "correct": 1,
     "explanation": "Parameterform der Ebene: x = A + s·u + t·v. u und v müssen linear unabhängig sein (nicht parallel). Für jeden Wert von s und t liegt x in der Ebene.",
@@ -242,10 +242,10 @@
   {
     "question": "Wie prüft man, ob zwei Geraden g₁ und g₂ parallel, identisch, schneidend oder windschief sind?",
     "options": [
-      "Nur durch Vergleich der Beträge der Richtungsvektoren",
+      "Nur durch Vergleich der Beträge |v₁| und |v₂| der Richtungsvektoren, ohne deren Richtungen zu vergleichen",
       "Erst prüfen ob Richtungsvektoren parallel (linear abhängig); falls ja: Aufpunkt einsetzen (identisch oder parallel); falls nein: Gleichungssystem lösen – konsistent (schneidend) oder inkonsistent (windschief)",
-      "Durch Berechnung des Skalarprodukts der Richtungsvektoren",
-      "Durch Vergleich der Aufpunkte"
+      "Durch Berechnung des Skalarprodukts der Richtungsvektoren – das prüft nur Orthogonalität, nicht Lage",
+      "Durch Vergleich der Aufpunkte A₁ und A₂, ohne die Richtungsvektoren zu berücksichtigen"
     ],
     "correct": 1,
     "explanation": "Vorgehen: 1) v₁ und v₂ linear abhängig? → parallel oder identisch. 2) Falls nicht parallel: g₁ = g₂ lösen. Falls lösbar: schneidend. Falls widersprüchlich: windschief.",
@@ -254,10 +254,10 @@
   {
     "question": "Wann sind zwei Geraden im Raum windschief?",
     "options": [
-      "Wenn sie denselben Richtungsvektor haben (das sind parallele Geraden)",
+      "Wenn sie denselben Richtungsvektor haben – das macht sie parallel zueinander, nicht windschief",
       "Wenn sie weder parallel noch schneidend sind – im Raum liegen sie auf verschiedenen Ebenen",
-      "Wenn ihr Skalarprodukt der Richtungsvektoren 0 ist",
-      "Wenn einer der Richtungsvektoren der Nullvektor ist"
+      "Wenn das Skalarprodukt ihrer Richtungsvektoren null ist – das bedeutet nur senkrechte Richtungen",
+      "Wenn einer der Richtungsvektoren der Nullvektor ist – dann wäre keine sinnvolle Gerade definiert"
     ],
     "correct": 1,
     "explanation": "Windschiefe Geraden: kein gemeinsamer Schnittpunkt, aber auch nicht parallel. Nur im Raum (R³) möglich, nicht in der Ebene (R²). Abstand > 0.",
@@ -266,10 +266,10 @@
   {
     "question": "Wie berechnet man den Flächeninhalt eines Dreiecks mit Eckpunkten A, B, C?",
     "options": [
-      "F = |AB + AC|",
+      "F = |AB + AC| – der Betrag des Vektors AB + AC ist eine Länge, keine Fläche",
       "F = (1/2) · |AB × AC| (halber Betrag des Kreuzprodukts der Seiten)",
-      "F = |AB| · |AC|",
-      "F = (1/2) · (AB · AC) (halbes Skalarprodukt)"
+      "F = |AB| · |AC| – das Produkt der Seitenlängen ohne Winkelberücksichtigung",
+      "F = (1/2) · (AB · AC) – das halbe Skalarprodukt ergibt keinen Flächeninhalt"
     ],
     "correct": 1,
     "explanation": "Dreiecksflächenformel im Raum: F = (1/2) · |AB × AC|. Das Kreuzprodukt liefert den Normalenvektor und sein Betrag die Parallelogrammfläche; das Dreieck ist die Hälfte davon.",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist die Mittelpunktsformel zweier Punkte A und B?",
     "options": [
-      "M = OA + OB (Summe der Ortsvektoren)",
+      "M = OA + OB – die Summe der Ortsvektoren führt auf den doppelten Mittelpunkt",
       "M = (1/2) · (OA + OB) = ((a₁+b₁)/2, (a₂+b₂)/2, (a₃+b₃)/2)",
-      "M = OB − OA",
-      "M = |OA − OB| / 2"
+      "M = OB − OA – das ist der Verbindungsvektor von A nach B, kein Mittelpunkt",
+      "M = |OA − OB| / 2 – der halbe Betrag des Verbindungsvektors ist ein Skalar, kein Punkt"
     ],
     "correct": 1,
     "explanation": "Mittelpunkt M = (A + B) / 2 (komponentenweise). Verallgemeinerung: Schwerpunkt von n Punkten = arithmetisches Mittel aller Ortsvektoren.",
@@ -290,10 +290,10 @@
   {
     "question": "Was ist der Schwerpunkt S eines Dreiecks mit Eckpunkten A, B, C?",
     "options": [
-      "S = OA + OB + OC (Summe der Ortsvektoren)",
+      "S = OA + OB + OC – die Summe der Ortsvektoren, dreifach so groß wie der Schwerpunkt",
       "S = (1/3) · (OA + OB + OC) (arithmetisches Mittel der drei Ortsvektoren)",
-      "S = (OA + OB) / 2",
-      "S = OA · OB · OC"
+      "S = (OA + OB) / 2 – der Mittelpunkt nur zweier Eckpunkte, nicht des ganzen Dreiecks",
+      "S = OA · OB · OC – das Produkt dreier Ortsvektoren ist nicht definiert"
     ],
     "correct": 1,
     "explanation": "Schwerpunkt Dreieck: S = (A + B + C) / 3. Er liegt auf jeder Seitenhalbierenden (Median) und teilt diese im Verhältnis 2:1 vom Eckpunkt aus.",
@@ -302,10 +302,10 @@
   {
     "question": "Was bedeutet Kollinearität dreier Punkte A, B, C?",
     "options": [
-      "Die drei Punkte bilden ein Dreieck",
+      "Die drei Punkte bilden ein Dreieck – das ist gerade das Gegenteil von Kollinearität",
       "A, B, C liegen auf einer gemeinsamen Geraden – die Verbindungsvektoren AB und AC sind dann linear abhängig",
-      "Die Abstände AB, BC und AC sind gleich",
-      "Das Skalarprodukt AB · AC = 0 (das bedeutet nur Orthogonalität)"
+      "Die Abstände AB, BC und AC sind alle gleich lang – das wäre ein gleichseitiges Dreieck",
+      "Das Skalarprodukt AB · AC = 0, was nur bedeutet, dass AB und AC senkrecht aufeinander stehen"
     ],
     "correct": 1,
     "explanation": "Kollinear: AB = k · AC für ein reelles k. Equivalently: AB × AC = 0 (Kreuzprodukt ist Nullvektor). Dreipunkte spannen kein Dreieck auf.",
@@ -314,10 +314,10 @@
   {
     "question": "Was ist die Hessesche Normalform einer Ebene und wozu dient sie?",
     "options": [
-      "Eine Ebenenform ohne Normalenvektor",
+      "Eine Ebenengleichung ohne Normalenvektor, nur aus den Koordinaten der drei Aufpunkte gebildet",
       "E: n₀ · x = d₀, wobei n₀ = n/|n| der normierte Normalenvektor ist – ermöglicht direktes Ablesen des Abstands: dist(P, E) = |n₀ · OP − d₀|",
-      "Eine Parameterform der Ebene",
-      "Eine Form mit zwei Parametern"
+      "Eine Parameterform der Ebene der Art E: x = A + s·u + t·v mit zwei Richtungsparametern",
+      "Eine Darstellung mit zwei freien Parametern s und t für je eine Richtung in der Ebene"
     ],
     "correct": 1,
     "explanation": "HNF: normierter Normalenvektor n₀. Abstand eines Punktes P: d = |n₀ · OP − d₀|. Vorteil: kein Dividieren durch |n| nötig, da n₀ bereits Länge 1 hat.",
@@ -326,10 +326,10 @@
   {
     "question": "Wie berechnet man den Schnittwinkel zweier Ebenen E₁ (Normalenvektor n₁) und E₂ (Normalenvektor n₂)?",
     "options": [
-      "cos(φ) = |n₁ + n₂| / (|n₁| · |n₂|)",
+      "cos(φ) = |n₁ + n₂| / (|n₁| · |n₂|) – der Betrag der Vektorsumme ergibt keinen Winkel",
       "cos(φ) = |n₁ · n₂| / (|n₁| · |n₂|) (Betrag des normierten Skalarprodukts der Normalenvektoren)",
-      "sin(φ) = n₁ · n₂",
-      "φ = n₁ × n₂"
+      "sin(φ) = n₁ · n₂ – falscher Winkelausdruck mit sin statt cos und ohne Normierung",
+      "φ = n₁ × n₂ – das Kreuzprodukt liefert einen Vektor, keinen Winkelwert"
     ],
     "correct": 1,
     "explanation": "Schnittwinkel zweier Ebenen = Winkel zwischen ihren Normalenvektoren (oder der Supplementwinkel). Formel: cos(φ) = |n₁ · n₂| / (|n₁| · |n₂|). Betrag, weil Winkel zwischen 0° und 90°.",
@@ -338,10 +338,10 @@
   {
     "question": "Wie berechnet man den Schnittpunkt einer Geraden g: x = A + t·v mit einer Ebene E: n·x = d?",
     "options": [
-      "Man berechnet das Kreuzprodukt von Richtungsvektor und Normalenvektor",
+      "Man berechnet das Kreuzprodukt von Richtungsvektor v und Normalenvektor n – ergibt einen Vektor, keinen Schnittpunkt",
       "Man setzt die Geradengleichung in die Ebenengleichung ein: n·(A + t·v) = d → t lösen → t in g einsetzen",
-      "Man addiert die Gleichungen von Gerade und Ebene",
-      "Man setzt die Normalenvektoren gleich"
+      "Man addiert die Gleichungen von Gerade und Ebene komponentenweise – führt auf keine verwertbare Lösung",
+      "Man setzt die Normalenvektoren von Gerade und Ebene gleich – Geraden haben keinen Normalenvektor"
     ],
     "correct": 1,
     "explanation": "Einsetzen: n·A + t·(n·v) = d → t = (d − n·A) / (n·v). Achtung: falls n·v = 0, ist die Gerade parallel zur Ebene (kein Schnittpunkt, außer wenn sie in der Ebene liegt).",
@@ -350,10 +350,10 @@
   {
     "question": "Wie erhält man den Richtungsvektor der Schnittgeraden zweier Ebenen E₁ (Normalenvektor n₁) und E₂ (Normalenvektor n₂)?",
     "options": [
-      "Durch Addition der Normalenvektoren n₁ + n₂",
+      "Durch Addition der Normalenvektoren n₁ + n₂ – ihre Summe liegt nicht zwingend in beiden Ebenen",
       "Durch das Kreuzprodukt n₁ × n₂ (steht senkrecht auf beiden Normalenvektoren, also in beiden Ebenen)",
-      "Durch das Skalarprodukt n₁ · n₂",
-      "Durch Subtraktion n₁ − n₂"
+      "Durch das Skalarprodukt n₁ · n₂ – das liefert einen Skalar, keinen Richtungsvektor",
+      "Durch Subtraktion n₁ − n₂ – die Differenz der Normalenvektoren hat keine direkte geometrische Bedeutung"
     ],
     "correct": 1,
     "explanation": "Richtungsvektor der Schnittgeraden: r = n₁ × n₂. Er liegt in beiden Ebenen (senkrecht auf beiden Normalenvektoren). Einen Aufpunkt erhält man durch simultanes Lösen beider Ebenengleichungen.",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist die orthogonale Projektion des Vektors b auf den Vektor a?",
     "options": [
-      "b_a = (a · b / |b|²) · b (Division durch falschen Betrag)",
+      "b_a = (a · b / |b|²) · b – hier wird durch |b|² statt |a|² dividiert (Projektion in b-Richtung)",
       "b_a = (a · b / |a|²) · a (Skalarprodukt dividiert durch |a|², mal Richtungsvektor a)",
-      "b_a = a × b / |a|",
-      "b_a = b − a"
+      "b_a = a × b / |a| – das Kreuzprodukt ergibt einen Vektor senkrecht zu beiden, keine Projektion",
+      "b_a = b − a – die Differenz beider Vektoren, nicht ihre orthogonale Projektion"
     ],
     "correct": 1,
     "explanation": "Orthogonalprojektion: b_a = (a · b / |a|²) · a. Alternativ: b_a = (a · b / |a|) · (a/|a|) = skalarer Projektionswert × Einheitsvektor. Anwendung: Lotfußpunkt, Abstandsberechnung.",
@@ -374,10 +374,10 @@
   {
     "question": "Wie berechnet man den Abstand des Punktes P von der Geraden g: x = A + t·v?",
     "options": [
-      "d = |PA × v| / |v²|",
+      "d = |PA × v| / |v²| – Division durch |v|² statt |v| liefert nicht den gesuchten Abstand",
       "d = |PA × v| / |v| (Betrag des Kreuzprodukts des Verbindungsvektors PA mit dem Richtungsvektor, dividiert durch |v|)",
-      "d = (PA · v) / |v|",
-      "d = |PA| / |v|"
+      "d = (PA · v) / |v| – das ist die skalare Projektion von PA auf v, kein Abstand zur Geraden",
+      "d = |PA| / |v| – Betrag des Verbindungsvektors dividiert durch |v| ohne Kreuzprodukt"
     ],
     "correct": 1,
     "explanation": "Abstand Punkt–Gerade: d = |AP × v| / |v|. Geometrisch: Fläche des Parallelogramms (|AP × v|) geteilt durch die Basis (|v|) ergibt die Höhe = Abstand.",
@@ -386,10 +386,10 @@
   {
     "question": "Was ist das Vektorprodukt a × b, wenn a und b parallel sind?",
     "options": [
-      "Ein Einheitsvektor mit Betrag 1",
+      "Ein Einheitsvektor mit Betrag 1 in Richtung des gemeinsamen parallelen Vektors",
       "Der Nullvektor – da sin(0°) = 0 und das aufgespannte Parallelogramm die Fläche 0 hat",
-      "Ein Vektor der Länge |a| · |b|",
-      "Derselbe Vektor wie a"
+      "Ein Vektor der Länge |a| · |b|, entsprechend dem maximalen Kreuzproduktbetrag",
+      "Derselbe Vektor wie a, da Parallelität keine Richtungsänderung erfordert"
     ],
     "correct": 1,
     "explanation": "Parallele Vektoren: φ = 0° oder 180°, daher sin(φ) = 0 → |a × b| = 0 → a × b = 0. Folgt auch aus der linearen Abhängigkeit: komplanare Vektoren haben Spatprodukt 0.",
@@ -410,10 +410,10 @@
   {
     "question": "Wann sind zwei Vektoren a und b parallel?",
     "options": [
-      "Wenn ihr Skalarprodukt 0 ist (das bedeutet orthogonal, nicht parallel)",
+      "Wenn ihr Skalarprodukt 0 ist – das bedeutet Orthogonalität (senkrecht), das Gegenteil von Parallelität",
       "Wenn a = k · b für ein reelles k ≠ 0 – linear abhängig; das Kreuzprodukt a × b ist dann der Nullvektor",
-      "Wenn |a| = |b| (gleicher Betrag)",
-      "Wenn a + b = 0 (das bedeutet entgegengesetzt gleich, ist Spezialfall k = −1)"
+      "Wenn |a| = |b| gilt, also beide Vektoren gleich lang sind, ohne Aussage über ihre Richtung",
+      "Wenn a + b = 0, also a = −b (Spezialfall k = −1) – das ist antiparallel, nicht beliebig parallel"
     ],
     "correct": 1,
     "explanation": "Parallelität: a = k · b. Praktische Prüfung: Sind die Komponenten proportional? a₁/b₁ = a₂/b₂ = a₃/b₃ = k. Oder: a × b = 0.",
@@ -422,10 +422,10 @@
   {
     "question": "Was ist eine Schnittkante zweier Ebenen?",
     "options": [
-      "Ein Punkt, in dem sich zwei Ebenen treffen (das wäre ein Schnittpunkt)",
+      "Ein einziger Punkt, in dem sich zwei Ebenen treffen – Ebenen schneiden sich in einer Geraden, nicht einem Punkt",
       "Die Gerade, die entsteht, wenn sich zwei nicht-parallele Ebenen schneiden – ihr Richtungsvektor ist n₁ × n₂",
-      "Der Normalenvektor einer Ebene",
-      "Die Parallele, die zwei Ebenen trennt"
+      "Der Normalenvektor einer der beiden Ebenen, der senkrecht auf allen Richtungen in der Ebene steht",
+      "Eine parallele Ebene, die zwischen zwei gegebenen Ebenen liegt und beide voneinander trennt"
     ],
     "correct": 1,
     "explanation": "Schnitt zweier Ebenen: Schnittkante = eine Gerade. Richtungsvektor: n₁ × n₂. Aufpunkt: durch simultanes Lösen der beiden Ebenengleichungen bestimmen.",
@@ -434,10 +434,10 @@
   {
     "question": "Wie berechnet man das Volumen eines Tetraeders mit Eckpunkten A, B, C, D?",
     "options": [
-      "V = |AB × AC|",
+      "V = |AB × AC| – das Kreuzprodukt liefert die Parallelogrammfläche (2D), kein räumliches Volumen",
       "V = (1/6) · |AB · (AC × AD)| (ein Sechstel des Betrags des Spatprodukts der Kantenvektoren)",
-      "V = (1/3) · Grundfläche · Höhe (ohne Spatprodukt nicht direkt)",
-      "V = (1/4) · |AB × AC| · |AD|"
+      "V = (1/3) · Grundfläche · Höhe – die geometrische Formel, die die Grundfläche separat berechnet",
+      "V = (1/4) · |AB × AC| · |AD| – falscher Faktor: für ein Tetraeder gilt 1/6, nicht 1/4"
     ],
     "correct": 1,
     "explanation": "Tetraedervolumen: V = (1/6) · |a · (b × c)|, wobei a = AB, b = AC, c = AD. Das Spatprodukt liefert das Spat-Volumen, das Tetraeder ist 1/6 davon.",
@@ -446,10 +446,10 @@
   {
     "question": "Was ist eine lineare Abbildung und wie hängt sie mit Matrizen zusammen?",
     "options": [
-      "Eine Abbildung, die Abstände erhält",
+      "Eine Abbildung, die Abstände erhält (isometrische Abbildung), z.B. Spiegelungen und Drehungen",
       "Eine Abbildung, die Linearkombinationen erhält (f(λa + µb) = λf(a) + µf(b)) – jede lineare Abbildung lässt sich durch Matrizenmultiplikation darstellen",
-      "Eine Abbildung, die nur Rotationen beschreibt",
-      "Eine Abbildung ohne algebraische Darstellung"
+      "Eine Abbildung, die ausschließlich Drehungen um einen festen Punkt ohne Streckung beschreibt",
+      "Eine Abbildung ohne algebraische Darstellung, die nur geometrisch beschrieben werden kann"
     ],
     "correct": 1,
     "explanation": "Lineare Abbildung f: Rⁿ → Rᵐ; darstellbar als f(x) = M · x mit Abbildungsmatrix M. Beispiele: Rotation, Spiegelung, Streckung. Erhält den Ursprung und Linearkombinationen.",
@@ -458,7 +458,7 @@
   {
     "question": "Was versteht man geometrisch unter dem Betrag eines Vektors?",
     "options": [
-      "Den Richtungswinkel des Vektors",
+      "Den Richtungswinkel des Vektors zur positiven x-Achse",
       "Die Länge des Pfeils, der den Vektor darstellt",
       "Die Summe der Komponenten",
       "Den Winkel zur positiven x-Achse"
@@ -470,10 +470,10 @@
   {
     "question": "Wie lauten die Kosinussätze für den Schnittwinkel zweier Geraden g₁ und g₂ mit Richtungsvektoren v₁ und v₂?",
     "options": [
-      "cos(φ) = v₁ · v₂",
+      "cos(φ) = v₁ · v₂ – ohne Normierung durch die Beträge kein echter Winkelausdruck",
       "cos(φ) = |v₁ · v₂| / (|v₁| · |v₂|) – Betrag des Skalarprodukts, dividiert durch das Produkt der Beträge; Betrag wegen φ ∈ [0°, 90°]",
-      "cos(φ) = v₁ × v₂",
-      "cos(φ) = (v₁ + v₂) / |v₁ + v₂|"
+      "cos(φ) = v₁ × v₂ – das Kreuzprodukt ergibt einen Vektor, keinen Kosinuswert",
+      "cos(φ) = (v₁ + v₂) / |v₁ + v₂| – der Einheitsvektor der Summe ergibt keinen Winkel"
     ],
     "correct": 1,
     "explanation": "Schnittwinkel zweier Geraden: cos(φ) = |v₁ · v₂| / (|v₁| · |v₂|). Das Betragszeichen stellt sicher, dass φ zwischen 0° und 90° liegt (stumpf → spitz nehmen).",

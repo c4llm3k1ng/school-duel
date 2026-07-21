@@ -2,10 +2,10 @@
   {
     "question": "Was ist ein Diagramm?",
     "options": [
-      "Text",
+      "Schriftliche Beschreibung von Daten in Sätzen",
       "Grafische Darstellung von Daten",
-      "Tabelle",
-      "Formel"
+      "Auflistung von Werten in Tabellenform",
+      "Mathematische Gleichung zur Berechnung"
     ],
     "correct": 1,
     "explanation": "Diagramme zeigen Daten grafisch: Balken-, Kreis-, Liniendiagramm.",
@@ -14,10 +14,10 @@
   {
     "question": "Was ist ein Balkendiagramm?",
     "options": [
-      "Kreisförmige Darstellung",
+      "Diagramm das Anteile als Kreissektoren darstellt",
       "Diagramm mit rechteckigen Balken die Werte vergleichen",
-      "Liniendiagramm",
-      "Punktdiagramm"
+      "Diagramm das Werte durch verbundene Punkte zeigt",
+      "Diagramm das Datenpunkte ohne Verbindung zeigt"
     ],
     "correct": 1,
     "explanation": "Balkendiagramm: vergleicht Werte durch unterschiedlich lange Balken.",
@@ -26,10 +26,10 @@
   {
     "question": "Was ist ein Kreisdiagramm?",
     "options": [
-      "Ringförmige Darstellung",
+      "Ringförmige Darstellung mit konzentrischen Kreisen",
       "Kreis aufgeteilt in Sektoren die Anteile zeigen",
-      "Balkendiagramm",
-      "Liniendiagramm"
+      "Diagramm mit senkrechten Balken zum Wertvergleich",
+      "Diagramm das Verläufe über Zeit durch Linien zeigt"
     ],
     "correct": 1,
     "explanation": "Kreisdiagramm: der ganze Kreis = 100%, Sektoren = Anteile.",
@@ -38,10 +38,10 @@
   {
     "question": "Was ist der Mittelwert?",
     "options": [
-      "Häufigster Wert",
+      "Wert der in einer Datenmenge am häufigsten vorkommt",
       "Summe aller Werte geteilt durch ihre Anzahl",
-      "Kleinster Wert",
-      "Mittlerer Wert bei Sortierung"
+      "Niedrigster Wert in einer Datenmenge",
+      "Mittlerer Wert wenn alle Daten der Größe nach sortiert sind"
     ],
     "correct": 1,
     "explanation": "Mittelwert (Durchschnitt) = Summe / Anzahl.",
@@ -62,10 +62,10 @@
   {
     "question": "Was ist der Modus?",
     "options": [
-      "Mittelwert",
+      "Summe aller Werte geteilt durch ihre Anzahl",
       "Häufigster Wert in einer Datenmenge",
-      "Mittlerer Wert",
-      "Kleinster Wert"
+      "Mittlerer Wert bei geordneter Datenmenge",
+      "Niedrigster Wert in einer Datenmenge"
     ],
     "correct": 1,
     "explanation": "Modus: der am häufigsten vorkommende Wert.",
@@ -74,10 +74,10 @@
   {
     "question": "Was ist der Median?",
     "options": [
-      "Mittelwert",
+      "Summe aller Werte geteilt durch ihre Anzahl",
       "Mittlerer Wert einer geordneten Datenmenge",
-      "Häufigster Wert",
-      "Größter Wert"
+      "Wert der am häufigsten in der Datenmenge vorkommt",
+      "Größter Wert in einer Datenmenge"
     ],
     "correct": 1,
     "explanation": "Median: mittlerer Wert wenn alle Daten der Größe nach sortiert sind.",
@@ -98,10 +98,10 @@
   {
     "question": "Was bedeutet Häufigkeit?",
     "options": [
-      "Wie laut",
+      "Wie laut ein Ereignis gemessen in Dezibel ist",
       "Wie oft ein Wert in einer Datenmenge vorkommt",
-      "Wie groß",
-      "Wie schwer"
+      "Wie groß ein Datenwert im Vergleich zu anderen ist",
+      "Wie schwer ein Objekt in einer Messung ist"
     ],
     "correct": 1,
     "explanation": "Häufigkeit: absolute Häufigkeit = Anzahl des Auftretens.",
@@ -110,10 +110,10 @@
   {
     "question": "Was ist relative Häufigkeit?",
     "options": [
-      "Absolute Häufigkeit",
+      "Anzahl wie oft ein Wert in den Daten auftaucht",
       "Anteil (Häufigkeit / Gesamtzahl) z.B. als Dezimalzahl oder Prozent",
-      "Häufigster Wert",
-      "Mittelwert"
+      "Wert der in einer Datenmenge am häufigsten vorkommt",
+      "Durchschnittswert aller Messwerte in einer Datenmenge"
     ],
     "correct": 1,
     "explanation": "Relative Häufigkeit = absolute Häufigkeit / Gesamtzahl.",
@@ -134,10 +134,10 @@
   {
     "question": "Was ist eine Urliste?",
     "options": [
-      "Sortierte Liste",
+      "Nach der Größe sortierte Aufzeichnung aller Messwerte",
       "Ungeordnete Aufzeichnung aller Rohdaten",
-      "Häufigkeitstabelle",
-      "Diagramm"
+      "Tabellarische Übersicht über Häufigkeiten aller Werte",
+      "Grafische Darstellung der Daten in Balkenform"
     ],
     "correct": 1,
     "explanation": "Urliste: ungeordnete Aufzeichnung aller Daten.",
@@ -146,10 +146,10 @@
   {
     "question": "Was ist eine Häufigkeitstabelle?",
     "options": [
-      "Diagramm",
+      "Grafische Darstellung mit Balken oder Kreisen",
       "Tabelle die Häufigkeiten aller Werte zeigt",
-      "Urliste",
-      "Kreisdiagramm"
+      "Rohe ungeordnete Aufzeichnung aller Messwerte",
+      "Kreisdiagramm das Anteile als Sektoren zeigt"
     ],
     "correct": 1,
     "explanation": "Häufigkeitstabelle: listet Wert und seine Häufigkeit.",
@@ -158,10 +158,10 @@
   {
     "question": "Was ist eine Strichliste?",
     "options": [
-      "Tabelle",
+      "Tabellarische Übersicht über alle Messwerte",
       "Methode zum Zählen mit Strichen (IIII)",
-      "Diagramm",
-      "Grafik"
+      "Grafische Darstellung von Werten als Balken",
+      "Liniendiagramm das Verläufe zeigt"
     ],
     "correct": 1,
     "explanation": "Strichliste: Daten werden mit Strichen gezählt – 5. Strich quert die anderen.",
@@ -182,10 +182,10 @@
   {
     "question": "Was ist Wahrscheinlichkeit?",
     "options": [
-      "Sicherheit",
+      "Gewissheit dass ein Ereignis auf jeden Fall eintritt",
       "Maß dafür wie wahrscheinlich ein Ereignis eintritt (0 bis 1)",
-      "Häufigkeit",
-      "Zufall"
+      "Anzahl wie oft ein Ereignis in der Vergangenheit aufgetreten ist",
+      "Zufälliges Ereignis das nicht berechnet werden kann"
     ],
     "correct": 1,
     "explanation": "Wahrscheinlichkeit: zwischen 0 (unmöglich) und 1 (sicher).",
@@ -230,10 +230,10 @@
   {
     "question": "Was ist ein Liniendiagramm?",
     "options": [
-      "Balkendiagramm",
+      "Diagramm mit senkrechten Balken zum Vergleich von Werten",
       "Diagramm mit Punkten die durch Linien verbunden werden – zeigt Verläufe",
-      "Kreisdiagramm",
-      "Streudiagramm"
+      "Diagramm das Anteile als Kreissektoren darstellt",
+      "Diagramm das einzelne Datenpunkte ohne Verbindung zeigt"
     ],
     "correct": 1,
     "explanation": "Liniendiagramm: gut für Verläufe über Zeit.",
@@ -254,10 +254,10 @@
   {
     "question": "Was sind Ausreißer?",
     "options": [
-      "Häufige Werte",
+      "Werte die sehr oft in einer Datenmenge vorkommen",
       "Extreme Werte die weit von anderen abweichen",
-      "Mittelwerte",
-      "Häufigste Werte"
+      "Berechnete Durchschnittswerte einer Datenmenge",
+      "Werte die am häufigsten in den Daten auftreten"
     ],
     "correct": 1,
     "explanation": "Ausreißer: abweichende Extremwerte.",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist die Spannweite?",
     "options": [
-      "Mittelwert",
+      "Summe aller Werte geteilt durch ihre Anzahl",
       "Differenz zwischen größtem und kleinstem Wert",
-      "Modus",
-      "Median"
+      "Häufigster Wert in einer Datenmenge",
+      "Mittlerer Wert einer sortierten Datenmenge"
     ],
     "correct": 1,
     "explanation": "Spannweite = Maximum − Minimum.",
@@ -302,10 +302,10 @@
   {
     "question": "Was zeigt ein Säulendiagramm?",
     "options": [
-      "Zeitverlauf",
+      "Veränderungen eines Wertes über einen Zeitraum",
       "Vergleich von Größen durch senkrechte Säulen",
-      "Teile eines Ganzen",
-      "Streuung"
+      "Anteile verschiedener Kategorien am Gesamtwert",
+      "Streuung von Datenpunkten um einen Mittelwert"
     ],
     "correct": 1,
     "explanation": "Säulendiagramm = Balkendiagramm vertikal – Vergleich von Werten.",
@@ -314,10 +314,10 @@
   {
     "question": "Was ist ein Zufallsexperiment?",
     "options": [
-      "Geplantes Ergebnis",
+      "Versuch mit von vornherein feststehendem Ergebnis",
       "Vorgang mit unbekanntem Ausgang (Münzwurf, Würfel)",
-      "Berechnung",
-      "Sicheres Ereignis"
+      "Mathematische Berechnung eines Wahrscheinlichkeitswerts",
+      "Ereignis das immer und mit Sicherheit eintritt"
     ],
     "correct": 1,
     "explanation": "Zufallsexperiment: Ausgang unbekannt.",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist Datenschutz?",
     "options": [
-      "Sicherung von Computerfiles",
+      "Technische Sicherung von Computerdateien vor Datenverlust",
       "Recht auf den Schutz persönlicher Daten vor unbefugter Nutzung",
-      "Statistisches Verfahren",
-      "Computertechnik"
+      "Statistisches Verfahren zur Auswertung erhobener Daten",
+      "Technologie zur Verarbeitung großer Datenmengen"
     ],
     "correct": 1,
     "explanation": "Datenschutz: persönliche Daten dürfen nicht ohne Erlaubnis genutzt werden.",
@@ -374,10 +374,10 @@
   {
     "question": "Was ist eine Erhebung?",
     "options": [
-      "Diagramm",
+      "Grafische Darstellung bereits gesammelter Daten",
       "Sammlung von Daten (Befragung, Zählung)",
-      "Auswertung",
-      "Wahrscheinlichkeit"
+      "Statistische Auswertung bereits vorhandener Daten",
+      "Berechnung von Wahrscheinlichkeiten aus Daten"
     ],
     "correct": 1,
     "explanation": "Erhebung: systematisches Sammeln von Daten.",
@@ -386,10 +386,10 @@
   {
     "question": "Was ist eine Stichprobe?",
     "options": [
-      "Gesamte Gruppe",
+      "Gesamtheit aller möglichen Elemente einer Untersuchung",
       "Teilmenge einer Grundgesamtheit",
-      "Urliste",
-      "Median"
+      "Rohe ungeordnete Aufzeichnung aller Messwerte",
+      "Mittlerer Wert einer sortierten Datenmenge"
     ],
     "correct": 1,
     "explanation": "Stichprobe: Auswahl aus der Grundgesamtheit.",
@@ -398,10 +398,10 @@
   {
     "question": "Was ist die Grundgesamtheit?",
     "options": [
-      "Zufällige Auswahl",
+      "Zufällig ausgewählte Teilmenge der Untersuchungsobjekte",
       "Alle Elemente die untersucht werden könnten",
-      "Mittelwert",
-      "Häufigkeit"
+      "Berechneter Durchschnittswert aller Messwerte",
+      "Anzahl wie oft ein Wert in den Daten vorkommt"
     ],
     "correct": 1,
     "explanation": "Grundgesamtheit: alle möglichen Elemente einer Untersuchung.",
@@ -410,10 +410,10 @@
   {
     "question": "Was zeigt ein Histogramm?",
     "options": [
-      "Kategorien",
+      "Vergleich einzelner benannter Kategorien",
       "Häufigkeitsverteilung kontinuierlicher Daten",
-      "Einzelne Werte",
-      "Zeitreihe"
+      "Werte einzelner Datenpunkte ohne Zusammenhang",
+      "Verlauf eines Messwerts über einen Zeitraum"
     ],
     "correct": 1,
     "explanation": "Histogramm: zeigt Häufigkeitsverteilung mit Balken ohne Lücken.",
@@ -434,10 +434,10 @@
   {
     "question": "Was ist kumulative Häufigkeit?",
     "options": [
-      "Einzelhäufigkeit",
+      "Häufigkeit eines einzelnen Wertes in den Daten",
       "Aufaddierte Häufigkeit bis zu einem Wert",
-      "Relative Häufigkeit",
-      "Modus"
+      "Anteil eines Wertes bezogen auf die Gesamtzahl",
+      "Wert der in einer Datenmenge am häufigsten vorkommt"
     ],
     "correct": 1,
     "explanation": "Kumulative Häufigkeit: Summe der Häufigkeiten bis zu einem bestimmten Wert.",
@@ -458,10 +458,10 @@
   {
     "question": "Was ist der Unterschied Merkmal/Merkmalsausprägung?",
     "options": [
-      "Kein Unterschied",
+      "Es gibt keinen Unterschied – beide Begriffe sind gleichbedeutend",
       "Merkmal ist die Eigenschaft; Merkmalsausprägung ist der konkrete Wert",
-      "Merkmal ist der Wert",
-      "Merkmalsausprägung ist die Eigenschaft"
+      "Das Merkmal ist der gemessene Wert der Eigenschaft",
+      "Die Merkmalsausprägung beschreibt die Eigenschaft selbst"
     ],
     "correct": 1,
     "explanation": "Merkmal: Haarfarbe. Merkmalsausprägung: braun.",
@@ -470,10 +470,10 @@
   {
     "question": "Was ist Arithmetisches Mittel?",
     "options": [
-      "Häufigster Wert",
+      "Wert der am häufigsten in einer Datenmenge vorkommt",
       "Summe aller Werte durch Anzahl (= Durchschnitt)",
-      "Mittlerer Wert",
-      "Kleinster Wert"
+      "Mittlerer Wert einer nach Größe geordneten Datenmenge",
+      "Niedrigster Wert in einer Datenmenge"
     ],
     "correct": 1,
     "explanation": "Arithmetisches Mittel = Durchschnitt = Summe / Anzahl.",

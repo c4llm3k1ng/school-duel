@@ -2,10 +2,10 @@
   {
     "question": "Was unterscheidet Prokaryoten von Eukaryoten?",
     "options": [
-      "Prokaryoten haben einen Zellkern, Eukaryoten nicht",
+      "Prokaryoten haben einen membranumhüllten Zellkern; Eukaryoten besitzen keinen Zellkern",
       "Prokaryoten besitzen keinen echten Zellkern (DNA frei im Cytoplasma); Eukaryoten haben einen membranumhüllten Zellkern und Membranorganellen",
-      "Prokaryoten sind immer größer als Eukaryoten",
-      "Prokaryoten können keine Fotosynthese betreiben"
+      "Prokaryoten sind immer größer als Eukaryoten und haben mehr Organellen",
+      "Prokaryoten können keine Fotosynthese betreiben, Eukaryoten immer schon"
     ],
     "correct": 1,
     "explanation": "Prokaryoten (Bakterien, Archaeen): kein Zellkern, keine Membranorganellen, oft kleinere Zellen. Eukaryoten (Tiere, Pflanzen, Pilze, Protisten): echter Zellkern, zahlreiche Membranorganellen.",
@@ -14,10 +14,10 @@
   {
     "question": "Was ist die Funktion des Zellkerns (Nucleus)?",
     "options": [
-      "Energieproduktion durch Zellatmung",
+      "Energieproduktion durch aerobe Zellatmung mithilfe der Atmungskette",
       "Speicherung der Erbinformation (DNA) und Kontrolle aller Zellfunktionen durch Steuerung der Genexpression",
-      "Proteinabbau",
-      "Lipidsynthese"
+      "Abbau von Proteinen und beschädigten Zellbestandteilen im sauren Milieu",
+      "Synthese von Lipiden und Steroiden für die Zellmembran"
     ],
     "correct": 1,
     "explanation": "Der Zellkern enthält die DNA (verpackt in Chromosomen) und steuert die Zellfunktionen über Transkription (mRNA-Synthese). Die Kernhülle trennt Kern und Cytoplasma; Kernporen regulieren den Transport.",
@@ -26,10 +26,10 @@
   {
     "question": "Was sind Mitochondrien und welche Funktion erfüllen sie?",
     "options": [
-      "Organellen, die Fotosynthese betreiben",
+      "Organellen, die Fotosynthese betreiben und Lichtenergie in Glukose umwandeln",
       "Organellen ('Kraftwerke der Zelle'), die durch aerobe Zellatmung ATP aus Nährstoffen und Sauerstoff gewinnen",
-      "Organellen zur Proteinsynthese",
-      "Organellen des Zellabbaus"
+      "Organellen, an denen Proteine am rauen ER synthetisiert werden",
+      "Organellen, in denen Makromoleküle durch Hydrolasen abgebaut werden"
     ],
     "correct": 1,
     "explanation": "Mitochondrien (Doppelmembran) betreiben aerobe Zellatmung: Glukose + O₂ → CO₂ + H₂O + ATP. Sie besitzen eigene DNA und Ribosomen – Hinweis auf endosymbiontischen Ursprung.",
@@ -38,10 +38,10 @@
   {
     "question": "Was sind Chloroplasten und in welchen Zellen kommen sie vor?",
     "options": [
-      "Energieorganellen aller eukaryotischen Zellen",
+      "Energieorganellen aller eukaryotischen Zellen, die ATP durch Zellatmung produzieren",
       "Plastiden in Pflanzenzellen und Algen, die Fotosynthese betreiben – Lichtenergie wird in chemische Energie (Glukose) umgewandelt",
-      "Organellen der tierischen Verdauung",
-      "Organellen der Erbinformationsspeicherung"
+      "Verdauungsorganellen in tierischen Zellen, die Nahrungspartikel abbauen",
+      "Organellen, in denen die genetische Information aller eukaryotischen Zellen gespeichert wird"
     ],
     "correct": 1,
     "explanation": "Chloroplasten (Doppelmembran + Thylakoide) sind die Orte der Fotosynthese in Pflanzen und Algen. Sie enthalten Chlorophyll und eigene DNA (endosymbiontischer Ursprung).",
@@ -50,10 +50,10 @@
   {
     "question": "Was ist die Funktion der Ribosomen?",
     "options": [
-      "ATP-Synthese",
+      "ATP-Synthese durch oxidative Phosphorylierung an der inneren Mitochondrienmembran",
       "Proteinsynthese (Translation): Ribosomen lesen die mRNA und verknüpfen Aminosäuren zur Polypeptidkette",
-      "Lipidabbau",
-      "DNA-Replikation"
+      "Abbau von Fettsäuren durch β-Oxidation im Cytoplasma",
+      "Replikation der DNA in der S-Phase des Zellzyklus"
     ],
     "correct": 1,
     "explanation": "Ribosomen (aus rRNA und Proteinen) sind die Orte der Proteinsynthese (Translation). Sie kommen frei im Cytoplasma oder gebunden am rauen ER vor – in Prokaryoten kleiner (70S) als in Eukaryoten (80S).",
@@ -62,10 +62,10 @@
   {
     "question": "Was ist das endoplasmatische Retikulum (ER) und wie unterscheiden sich raues und glattes ER?",
     "options": [
-      "Es gibt keinen Unterschied",
+      "Es gibt keinen funktionellen Unterschied – beide Formen haben dieselbe Aufgabe",
       "Raues ER: mit Ribosomen besetzt, Proteinsynthese und -transport; glattes ER: ohne Ribosomen, Lipidsynthese und Entgiftung",
-      "Raues ER: Lipidsynthese; glattes ER: Proteinsynthese",
-      "Das ER ist nur in Prokaryoten vorhanden"
+      "Raues ER: Zentrum der Lipidsynthese; glattes ER: Zentrum der Proteinsynthese mit Ribosomen",
+      "Das ER ist ausschließlich in Prokaryoten vorhanden und bei Eukaryoten nicht nachweisbar"
     ],
     "correct": 1,
     "explanation": "Das ER ist ein membranöses Kanalsystem. Raues ER (mit Ribosomen): Synthese und Modifikation sekretorischer Proteine. Glattes ER: Lipid- und Steroidbiosynthese, Calciumspeicher, Entgiftung.",
@@ -74,10 +74,10 @@
   {
     "question": "Was ist der Golgi-Apparat?",
     "options": [
-      "Das Energieorganell der Zelle",
+      "Das wichtigste Energieorganell der Zelle, das ATP durch Substratkettenphosphorylierung erzeugt",
       "Eine Stapel von Membranzisternen, die Proteine modifizieren, sortieren und für Transport oder Sekretion verpacken",
-      "Ein Ort der DNA-Replikation",
-      "Ein Abbauorganell für Zellbestandteile"
+      "Ein Bereich des Zellkerns, in dem die DNA-Replikation stattfindet",
+      "Ein Abbauorganell, das zelleigene Bestandteile durch Autophagie zerstört"
     ],
     "correct": 1,
     "explanation": "Der Golgi-Apparat empfängt Proteine vom ER (cis-Seite), modifiziert sie (Glykosylierung) und versendet sie in Vesikeln zur Zellmembran, zu Lysosomen oder nach außen (trans-Seite).",
@@ -86,10 +86,10 @@
   {
     "question": "Was sind Lysosomen und welche Funktion haben sie?",
     "options": [
-      "Organellen der Fotosynthese",
+      "Organellen der Fotosynthese, die Chlorophyll enthalten und Lichtenergie nutzen",
       "Membranöse Vesikel mit Verdauungsenzymen, die zelleigenes Material und aufgenommene Substanzen abbauen (saures Milieu, pH ~5)",
-      "Organellen der ATP-Synthese",
-      "Orte der Ribosomenproduktion"
+      "Organellen der ATP-Synthese durch oxidative Phosphorylierung",
+      "Orte der Ribosomenproduktion im Nucleolus des Zellkerns"
     ],
     "correct": 1,
     "explanation": "Lysosomen enthalten Hydrolasen (Proteasen, Lipasen, Nukleasen), die im sauren Milieu Makromoleküle abbauen. Sie sind wichtig für Autophagie und Pathogenabwehr.",
@@ -98,10 +98,10 @@
   {
     "question": "Was ist die Funktion der zentralen Vakuole in Pflanzenzellen?",
     "options": [
-      "Fotosynthese und Energieproduktion",
+      "Fotosynthese und Energieproduktion durch Chlorophyll im Zellsaft",
       "Speicherung von Wasser, Ionen und Stoffwechselprodukten; Regulation des Zellturgors; nimmt bis zu 90 % des Zellvolumens ein",
-      "Proteinsynthese",
-      "Zellatmung"
+      "Synthese und Modifikation von Proteinen für die Sekretion",
+      "Zellatmung und ATP-Produktion für die Pflanzenzelle"
     ],
     "correct": 1,
     "explanation": "Die Zentralvakuole nimmt bei ausgewachsenen Pflanzenzellen den Großteil des Volumens ein. Sie reguliert den Turgor (Füllungsdruck), der die Stabilität nicht-verholzter Pflanzenteile ermöglicht.",
@@ -110,10 +110,10 @@
   {
     "question": "Was ist das Flüssig-Mosaik-Modell der Zellmembran (Singer & Nicolson, 1972)?",
     "options": [
-      "Ein starres Gerüst aus Proteinen",
+      "Ein Modell, das die Membran als starres Gerüst aus Proteinen ohne Beweglichkeit beschreibt",
       "Ein dynamisches Modell: die Membran besteht aus einer fluiden Phospholipid-Doppelschicht, in die Proteine mosaikartig eingebettet sind und sich lateral bewegen können",
-      "Eine einzelne Lipidschicht mit aufgelagerten Proteinen",
-      "Ein Modell, das nur für tierische Zellen gilt"
+      "Ein Modell, das eine einzelne Lipidschicht mit aufgelagerten Proteinen beschreibt",
+      "Ein Modell, das ausschließlich für tierische Zellen gilt und Pflanzenzellen ausschließt"
     ],
     "correct": 1,
     "explanation": "Das Flüssig-Mosaik-Modell erklärt Membranfunktionen: amphiphile Phospholipide bilden eine Doppelschicht (Kopf hydrophil, Schwanz hydrophob); Integralproteine durchspannen die Membran; Periphere Proteine liegen außen.",
@@ -122,10 +122,10 @@
   {
     "question": "Was ist Diffusion?",
     "options": [
-      "Aktiver, energieverbrauchender Transport gegen den Konzentrationsgradienten",
+      "Aktiver, energieverbrauchender Transport gegen den Konzentrationsgradienten durch Pumpen",
       "Passiver Transport von Teilchen von einem Ort höherer zu niedrigerer Konzentration (entlang des Konzentrationsgradienten) ohne Energieaufwand",
-      "Transport durch Vesikel",
-      "Transport nur von Ionen"
+      "Transport von Makromolekülen durch Vesikelfusion mit der Zellmembran",
+      "Transport von Ionen ausschließlich durch spezifische Ionenkanäle"
     ],
     "correct": 1,
     "explanation": "Diffusion: Spontane Bewegung von Teilchen entlang ihres Konzentrationsgradienten (von hoher zu niedriger Konzentration) – ohne ATP-Verbrauch. Beispiel: O₂ in Zellen, CO₂ aus Zellen.",
@@ -134,10 +134,10 @@
   {
     "question": "Was ist Osmose?",
     "options": [
-      "Diffusion von gelösten Stoffen durch eine semipermeable Membran",
+      "Diffusion von gelösten Stoffen durch eine semipermeable Membran von hoch nach niedrig konzentriert",
       "Diffusion von Wasser durch eine selektiv permeable Membran von einem Ort niedrigerer zu einem Ort höherer Osmolarität (Gelöststoffkonzentration)",
-      "Aktiver Transport von Wasser",
-      "Transport von Ionen gegen den Konzentrationsgradienten"
+      "Aktiver Transport von Wasser gegen den Gradienten unter ATP-Verbrauch",
+      "Transport von Ionen gegen den Konzentrationsgradienten durch Kanalproteine"
     ],
     "correct": 1,
     "explanation": "Osmose: Wasser diffundiert durch eine Membran in Richtung höherer Konzentration gelöster Stoffe. Der resultierende osmotische Druck ist wichtig für Turgor (Pflanzen) und Zellvolumenkontrolle.",
@@ -146,10 +146,10 @@
   {
     "question": "Was ist aktiver Transport?",
     "options": [
-      "Transport entlang des Konzentrationsgradienten ohne Energie",
+      "Transport entlang des Konzentrationsgradienten ohne Energieverbrauch durch Kanalproteine",
       "Transport gegen den Konzentrationsgradienten unter ATP-Verbrauch durch spezifische Transportproteine (Pumpen)",
-      "Diffusion durch Kanalproteine",
-      "Osmoregulation durch Wasserverlust"
+      "Diffusion von kleinen Molekülen durch Kanalproteine ohne ATP-Verbrauch",
+      "Osmoregulation durch kontrollierten Wasserverlust über Aquaporine"
     ],
     "correct": 1,
     "explanation": "Aktiver Transport erfordert ATP, da er gegen den Gradienten arbeitet. Beispiel: Na⁺/K⁺-ATPase pumpt 3 Na⁺ aus und 2 K⁺ in die Zelle – wichtig für Ruhepotenzial und Nervenimpulse.",
@@ -158,22 +158,22 @@
   {
     "question": "Was unterscheidet die Pflanzenzelle von der Tierzelle?",
     "options": [
-      "Pflanzenzellen haben keine Mitochondrien",
+      "Pflanzenzellen haben keine Mitochondrien und gewinnen Energie ausschließlich durch Fotosynthese",
       "Pflanzenzellen haben Zellwand (Cellulose), Chloroplasten und eine zentrale Vakuole; Tierzellen fehlen diese Strukturen",
-      "Tierzellen haben keinen Zellkern",
-      "Pflanzenzellen haben kleinere Ribosomen"
+      "Tierzellen haben keinen Zellkern und die DNA liegt frei im Cytoplasma",
+      "Pflanzenzellen haben kleinere Ribosomen (70S) als Tierzellen (80S)"
     ],
     "correct": 1,
-    "explanation": "Pflanzenzellen besitzen zusätzlich zur normalen Zellausstattung: Zellwand (Cellulose), Chloroplasten (Fotosynthese) und Zentralvakuole. Tierzellen haben stattdessen Centriolen und kein Centriolen (meist).",
+    "explanation": "Pflanzenzellen besitzen zusätzlich zur normalen Zellausstattung: Zellwand (Cellulose), Chloroplasten (Fotosynthese) und Zentralvakuole. Tierzellen haben stattdessen Centriolen.",
     "topic": "Zelltypen"
   },
   {
     "question": "Was ist die Zellwand bei Pflanzen und woraus besteht sie?",
     "options": [
-      "Eine flexible Lipidmembran außen an der Zellmembran",
+      "Eine flexible Lipidmembran außen an der Zellmembran, die Signalübertragung ermöglicht",
       "Eine starre, poröse Schutzhülle aus Cellulose-Mikrofibrillen außerhalb der Zellmembran, die Form und Stabilität gibt",
-      "Eine Schicht aus Proteinen zur Signalübertragung",
-      "Eine Schicht aus Chitin wie bei Pilzen"
+      "Eine Proteinschicht für die Zell-Zell-Kommunikation und Signalübertragung",
+      "Eine Schicht aus Chitin wie bei Pilzen und Insekten"
     ],
     "correct": 1,
     "explanation": "Die pflanzliche Zellwand besteht hauptsächlich aus Cellulose (β-1,4-Glucan-Ketten). Sie gibt mechanische Stabilität, ermöglicht Turgor und schützt die Zelle. Plasmodesmata verbinden Zellen durch Poren.",
@@ -182,22 +182,22 @@
   {
     "question": "Was ist Turgor in Pflanzenzellen?",
     "options": [
-      "Das Austrocknen einer Pflanzenzelle",
+      "Das Austrocknen einer Pflanzenzelle bei Wassermangel (Plasmorrhoe)",
       "Der Füllungsdruck der Vakuole, der die Zellmembran gegen die Zellwand drückt und die Zelle straff hält",
-      "Die osmotische Konzentration des Zellsafts",
-      "Der Druck durch die Zellwand nach innen"
+      "Die osmotische Konzentration des Zellsafts in mol/L",
+      "Der Druck, den die Zellwand von außen auf das Cytoplasma ausübt"
     ],
     "correct": 1,
-    "explanation": "Turgor: Durch Wasseraufnahme (Osmose) erhöht sich der Druck der Vakuole auf die Zellwand. Hoher Turgor = steifen Pflanzenteile; Turgerverlust = Welken. Grundlage der Standfestigkeit krautiger Pflanzen.",
+    "explanation": "Turgor: Durch Wasseraufnahme (Osmose) erhöht sich der Druck der Vakuole auf die Zellwand. Hoher Turgor = steife Pflanzenteile; Turgerverlust = Welken. Grundlage der Standfestigkeit krautiger Pflanzen.",
     "topic": "Pflanzenzelle"
   },
   {
     "question": "Was ist Plasmolyse?",
     "options": [
-      "Das Aufquellen einer Zelle durch Wasseraufnahme",
+      "Das Aufquellen einer Zelle durch Wasseraufnahme in hypotonischer Lösung (Deplasmolyse)",
       "Das Ablösen des Protoplasten von der Zellwand bei Wasserverlust durch hypertone Lösung",
-      "Die Verschmelzung zweier Zellen",
-      "Die Auflösung der Zellmembran"
+      "Die Verschmelzung zweier Pflanzenzellen bei der Befruchtung (Karyogamie)",
+      "Die vollständige Auflösung der Zellmembran durch osmotischen Druck"
     ],
     "correct": 1,
     "explanation": "Plasmolyse: In einer hypertonischen Lösung verliert die Pflanzenzelle Wasser (Osmose), die Vakuole schrumpft und der Protoplast zieht sich von der Zellwand zurück. Meist reversibel durch Rückgabe in hypotonisches Milieu.",
@@ -218,10 +218,10 @@
   {
     "question": "Was passiert in der Prophase der Mitose?",
     "options": [
-      "Die Chromosomen ordnen sich in der Äquatorialplatte an",
+      "Die Chromosomen ordnen sich präzise in der Äquatorialplatte (Metaphasenplatte) an",
       "Chromosomen kondensieren (werden sichtbar), die Kernhülle löst sich auf, Spindelfasern (Mikrotubuli) beginnen sich zu bilden",
-      "Schwesterchromatiden trennen sich zu den Polen",
-      "Zwei neue Kerne bilden sich"
+      "Schwesterchromatiden trennen sich und wandern zu den entgegengesetzten Zellpolen",
+      "An beiden Polen bilden sich neue Kernhüllen und Chromosomen dekondensieren"
     ],
     "correct": 1,
     "explanation": "Prophase: DNA wird zu kompakten Chromosomen (je 2 Schwesterchromatiden) kondensiert, Kernhülle löst sich auf, Spindel aus Mikrotubuli bildet sich von den Centrosomen.",
@@ -230,10 +230,10 @@
   {
     "question": "Was passiert in der Metaphase der Mitose?",
     "options": [
-      "Die Spindel löst sich auf",
+      "Die Mitosespindel löst sich auf und die Chromosomen beginnen zu dekondensieren",
       "Chromosomen ordnen sich in der Äquatorialebene (Metaphasenplatte) an, Spindelfasern binden an Kinetochore",
-      "Chromosomen werden dupliziert",
-      "Zwei Tochterkerne entstehen"
+      "Chromosomen werden in der S-Phase des Zellzyklus dupliziert",
+      "Zwei vollständige Tochterkerne entstehen durch Bildung neuer Kernhüllen"
     ],
     "correct": 1,
     "explanation": "Metaphase: Alle Chromosomen sind maximal kondensiert und ordnen sich an der Zellmitte (Äquatorialplatte) an. Spindelfasern verbinden Kinetochore (beider Chromatide) mit den Zellpolen.",
@@ -242,10 +242,10 @@
   {
     "question": "Was passiert in der Anaphase der Mitose?",
     "options": [
-      "Chromosomen kondensieren erstmals",
+      "Chromosomen kondensieren erstmals aus dem lockeren Chromatin",
       "Schwesterchromatiden trennen sich und wandern zu den entgegengesetzten Zellpolen",
-      "Neue Kernhüllen bilden sich",
-      "Die Zelle teilt sich in zwei"
+      "Neue Kernhüllen bilden sich um die Chromosomensätze beider Pole",
+      "Die Zelle teilt sich durch Einschnürung in zwei Tochterzellen (Cytokinese)"
     ],
     "correct": 1,
     "explanation": "Anaphase: Die Verbindung zwischen Schwesterchromatiden wird getrennt (Cohesin wird gespalten). Spindelfasern ziehen die Einzelchromosomen zu den Zellpolen – jeder Pol erhält einen vollständigen Chromosomensatz.",
@@ -254,10 +254,10 @@
   {
     "question": "Was passiert in der Telophase der Mitose?",
     "options": [
-      "Chromosomen kondensieren stärker",
+      "Chromosomen kondensieren stärker und die Spindel bildet sich vollständig aus",
       "An beiden Zellpolen bilden sich neue Kernhüllen um die Chromosomen, die sich wieder dekondensieren",
-      "Chromosomen wandern zur Äquatorialplatte",
-      "Replikation der DNA findet statt"
+      "Chromosomen wandern erstmals zur Äquatorialplatte in der Zellmitte",
+      "Die DNA-Replikation findet als Vorbereitung für die nächste Zellteilung statt"
     ],
     "correct": 1,
     "explanation": "Telophase: Spindel löst sich auf, Kernhüllen bilden sich neu um die Chromosomensätze beider Pole. Chromosomen dekondensieren. Danach folgt die Cytokinese (Zellteilung).",
@@ -266,10 +266,10 @@
   {
     "question": "Was ist Meiose und wozu dient sie?",
     "options": [
-      "Eine Form der Zellteilung, die identische Tochterzellen erzeugt",
+      "Eine Form der Zellteilung, die genetisch identische Tochterzellen für Wachstum erzeugt",
       "Eine Reduktionsteilung: Eine diploide Zelle teilt sich in vier haploide Geschlechtszellen (Gameten) – gleichzeitig werden Rekombinationen erzeugt",
-      "Eine Reparaturmechanismus der DNA",
-      "Eine Teilung in zwei identische Zellen ohne Chromosomenreduktion"
+      "Ein Reparaturmechanismus für beschädigte DNA in der G2-Phase des Zellzyklus",
+      "Eine Teilung in zwei genetisch identische Zellen ohne Chromosomenreduktion"
     ],
     "correct": 1,
     "explanation": "Meiose besteht aus zwei Teilungen: Meiose I (Homologe trennen sich, haploider Satz) + Meiose II (Schwesterchromatiden trennen sich, wie Mitose). Ergebnis: 4 haploide Gameten mit rekombinierter DNA.",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist der Unterschied zwischen Mitose und Meiose?",
     "options": [
-      "Es gibt keinen Unterschied",
+      "Es gibt keinen wesentlichen Unterschied – beide Teilungsarten erzeugen identische Tochterzellen",
       "Mitose: 1 Teilung → 2 diploide Tochterzellen (genetisch identisch); Meiose: 2 Teilungen → 4 haploide Gameten (genetisch verschieden durch Rekombination)",
-      "Meiose erzeugt mehr Zellen",
-      "Mitose ist nur in Geschlechtszellen möglich"
+      "Meiose erzeugt mehr Tochterzellen, aber diese sind immer diploid",
+      "Mitose findet ausschließlich in Geschlechtszellen statt, Meiose in somatischen Zellen"
     ],
     "correct": 1,
     "explanation": "Mitose: Wachstum und Regeneration, diploid → diploid, genetisch identisch. Meiose: Geschlechtszellenbildung, diploid → haploid, genetische Vielfalt durch Crossing-over und Zufallstrennung.",
@@ -290,10 +290,10 @@
   {
     "question": "Was ist aerobe Zellatmung und wo findet sie statt?",
     "options": [
-      "Energiegewinnung ohne Sauerstoff im Cytoplasma",
+      "Energiegewinnung ohne Sauerstoff durch Milchsäuregärung im Cytoplasma",
       "Energiegewinnung (ATP) aus Glukose + O₂ in Mitochondrien: Glukose → CO₂ + H₂O + ~38 ATP",
-      "Energiegewinnung aus Licht in Chloroplasten",
-      "Abbau von Proteinen im Lysosom"
+      "Energiegewinnung aus Lichtenergie in Chloroplasten durch Fotosynthese",
+      "Abbau von Proteinen durch lysosomale Enzyme im sauren Milieu"
     ],
     "correct": 1,
     "explanation": "Aerobe Zellatmung: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP. Ablauf in 3 Phasen: Glycolyse (Cytoplasma) → Citratzyklus (Mitochondrienmatrix) → Atmungskette (innere Mitochondrienmembran).",
@@ -302,10 +302,10 @@
   {
     "question": "Was ist die Glycolyse?",
     "options": [
-      "Der erste Schritt der Fotosynthese",
+      "Der erste Schritt der Fotosynthese, der Lichtenergie in ATP umwandelt",
       "Der erste Schritt der Zellatmung: Spaltung von Glukose (6C) in zwei Pyruvat-Moleküle (3C) im Cytoplasma unter Gewinn von 2 ATP und 2 NADH",
-      "Abbau von Fettsäuren",
-      "Synthese von Glukose aus CO₂"
+      "Der Abbau von Fettsäuren durch β-Oxidation in den Mitochondrien",
+      "Die Synthese von Glukose aus CO₂ im Calvin-Zyklus der Fotosynthese"
     ],
     "correct": 1,
     "explanation": "Glycolyse (Cytoplasma): Glukose → 2 Pyruvat. Nettobilanz: 2 ATP, 2 NADH. Läuft auch anaerob ab (dann: Pyruvat → Laktat oder Ethanol).",
@@ -314,10 +314,10 @@
   {
     "question": "Was ist der Citratzyklus (Krebs-Zyklus)?",
     "options": [
-      "Ein Zyklus der Fotosynthese",
+      "Ein Zyklus der Fotosynthese, der CO₂ in Zucker umwandelt (Calvin-Zyklus)",
       "Ein Reaktionszyklus in der Mitochondrienmatrix, der Pyruvat vollständig zu CO₂ oxidiert und NADH/FADH₂ für die Atmungskette liefert",
-      "Ein Zyklus des Fettabbaus im Lysosom",
-      "Der Zyklus der DNA-Replikation"
+      "Ein Zyklus des Fettabbaus durch Lipasen im Lysosom",
+      "Der Zyklus der DNA-Replikation und Chromatinkondensation"
     ],
     "correct": 1,
     "explanation": "Der Citratzyklus (Mitochondrienmatrix): Acetyl-CoA (aus Pyruvat) wird schrittweise zu CO₂ oxidiert. Hauptprodukte: NADH, FADH₂ (Elektronen für Atmungskette) und GTP. Pro Glukose: 2 Durchläufe.",
@@ -326,10 +326,10 @@
   {
     "question": "Was ist die Atmungskette (oxidative Phosphorylierung)?",
     "options": [
-      "Der erste Schritt der Zellatmung im Cytoplasma",
+      "Der erste Schritt der Zellatmung, die Glycolyse, im Cytoplasma",
       "Ein Proteinkomplex in der inneren Mitochondrienmembran, der NADH/FADH₂ oxidiert, einen Protonengradienten aufbaut und ATP synthetisiert",
-      "Ein Schritt der Fotosynthese in den Thylakoiden",
-      "Ein Abbauweg im Lysosom"
+      "Ein Schritt der Fotosynthese in den Thylakoidmembranen der Chloroplasten",
+      "Ein Abbauweg für Proteine im Lysosom durch saure Hydrolasen"
     ],
     "correct": 1,
     "explanation": "Atmungskette: Elektronen aus NADH/FADH₂ fließen durch Proteinkomplexe (I–IV); Protonen werden in den Intermembranraum gepumpt. ATP-Synthase nutzt den Protonengradienten zur ATP-Synthese (~34 ATP pro Glukose).",
@@ -338,10 +338,10 @@
   {
     "question": "Was ist ATP und welche Rolle spielt es in der Zelle?",
     "options": [
-      "Ein Speicher für genetische Information",
+      "Ein Speichermolekül für genetische Information (Desoxyribonukleinsäure)",
       "Adenosintriphosphat – der universelle Energieträger der Zelle; seine Hydrolyse (ATP → ADP + Pᵢ) liefert Energie für alle zellulären Prozesse",
-      "Ein Strukturprotein der Membran",
-      "Ein Katalysator der DNA-Replikation"
+      "Ein Strukturprotein der Zellmembran (Integralprotein)",
+      "Ein Katalysator (Enzym) der DNA-Replikation"
     ],
     "correct": 1,
     "explanation": "ATP (Adenosintriphosphat) ist die 'Energiewährung' der Zelle. Die Hydrolyse der energiereichen Phosphatbindung (ATP → ADP + Pᵢ, −30 kJ/mol) treibt Muskeln, Ionenpumpen, Biosynthesen an.",
@@ -350,10 +350,10 @@
   {
     "question": "Was ist die endosymbiontische Theorie (Lynn Margulis)?",
     "options": [
-      "Alle Organellen entstanden durch Faltung der Plasmamembran",
+      "Alle Membranorganellen entstanden durch Faltung und Einstülpung der Plasmamembran",
       "Mitochondrien und Chloroplasten entstanden aus freilebenden Prokaryoten, die von einer Wirtszelle aufgenommen wurden und in einer dauerhaften Symbiose verblieben",
-      "Organellen können frei zwischen Zellen wandern",
-      "Die Theorie erklärt die Entstehung des Zellkerns"
+      "Organellen können frei zwischen benachbarten Zellen wandern und übertragen werden",
+      "Die Theorie erklärt ausschließlich die Entstehung des membranumhüllten Zellkerns"
     ],
     "correct": 1,
     "explanation": "Die endosymbiontische Theorie erklärt, warum Mitochondrien und Chloroplasten eigene DNA (ringförmig, wie Bakterien), eigene Ribosomen (70S) und eine Doppelmembran besitzen – Eigenschaften freilebender Prokaryoten.",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist Apoptose?",
     "options": [
-      "Eine unkontrollierte Zerstörung von Zellen (Nekrose)",
+      "Eine unkontrollierte Zerstörung von Zellen durch Schwellung und Lyse (Nekrose)",
       "Programmierter Zelltod: Zellen aktivieren ein genetisch kodiertes Selbstzerstörungsprogramm – wichtig für Entwicklung, Immunabwehr und Tumorsuppression",
-      "Eine Sonderform der Zellteilung",
-      "Der Abbau von Proteinen durch Lysosomen"
+      "Eine Sonderform der Zellteilung bei Stammzellen",
+      "Der Abbau von fehlgefalteten Proteinen durch das Proteasom"
     ],
     "correct": 1,
     "explanation": "Apoptose ist der kontrollierte Zelltod: Zelle schrumpft, DNA wird fragmentiert, Zellmembran bleibt intakt, Makrophagen räumen auf. Wichtig z.B. in der Embryonalentwicklung (Fingerbildung) und Krebsabwehr.",
@@ -374,10 +374,10 @@
   {
     "question": "Was ist das Cytoskelett und welche Funktion hat es?",
     "options": [
-      "Eine starre Hülle um die Zelle",
+      "Eine starre, unveränderliche Hülle um die Zelle (wie eine Zellwand)",
       "Ein dynamisches Netzwerk aus Proteinfasern (Mikrotubuli, Mikrofilamente, Intermediärfilamente) im Cytoplasma, das Zellform, Transport und Bewegung ermöglicht",
-      "Ein fester Rahmen nur in Knochenzellen",
-      "Das Gerüst des Zellkerns"
+      "Ein festes Strukturgerüst ausschließlich in Knochen- und Muskelzellen",
+      "Das Proteinnetzwerk der Kernlamina direkt unter der Kernhülle"
     ],
     "correct": 1,
     "explanation": "Cytoskelett: Mikrotubuli (aus Tubulin, Chromosomentransport, Cilienmotilität), Aktinfilamente (Zellbewegung, Cytokinese), Intermediärfilamente (mechanische Stabilität). Hochdynamisch – ständig auf- und abgebaut.",
@@ -386,10 +386,10 @@
   {
     "question": "Was sind Plasmodesmata?",
     "options": [
-      "Zellkernporen in Pflanzenzellen",
+      "Kernporen in der Hülle des Pflanzenzellkerns für den Molekültransport",
       "Cytoplasmakanäle durch die Zellwände angrenzender Pflanzenzellen – ermöglichen direkten Austausch von Wasser, Ionen und kleinen Molekülen zwischen Nachbarzellen",
-      "Vakuolen benachbarter Zellen",
-      "Membrankanäle für Ionentransport"
+      "Vakuolen in benachbarten Pflanzenzellen, die Wasser speichern",
+      "Membrankanäle (Aquaporine) für den erleichterten Wassertransport"
     ],
     "correct": 1,
     "explanation": "Plasmodesmata sind membranöse Kanäle (Durchmesser ~30–60 nm), die Pflanzen-Nachbarzellen verbinden. Sie bilden das Symplasten-System und ermöglichen Signalübertragung und Stofftransport.",
@@ -398,10 +398,10 @@
   {
     "question": "Was sind Zentriolen und welche Funktion haben sie?",
     "options": [
-      "Organellen der Proteinsynthese",
+      "Organellen der Proteinsynthese, die gebunden am rauen ER Proteine herstellen",
       "Paarige Zylinderstrukturen (aus Mikrotubuli-Tripletts) im Centrosom, die als Organisatoren der Mitosespindel fungieren – hauptsächlich in tierischen Zellen",
-      "Organellen der Lipidsynthese",
-      "Bestandteile der Kernhülle"
+      "Organellen der Lipidsynthese im glatten ER",
+      "Bestandteile der Kernhülle, die Kernporen bilden und regulieren"
     ],
     "correct": 1,
     "explanation": "Zentriolen (im Centrosom) organisieren die Mitosespindel in tierischen Zellen. Pflanzenzellen haben meist keine Zentriolen, bilden aber trotzdem funktionsfähige Spindeln. Zentriolen bilden auch die Basalkörper von Cilien und Flagellen.",
@@ -410,10 +410,10 @@
   {
     "question": "Was sind Chromosomen und aus welchen Molekülen bestehen sie?",
     "options": [
-      "Aus Lipiden und Polysacchariden",
+      "Aus Lipiden und Polysacchariden, die die Zellmembran aufbauen",
       "Aus DNA-Molekülen, die mit Histonproteinen zu Nukleosomen und schließlich zu kompakten Chromatinfasern verpackt sind",
-      "Nur aus RNA",
-      "Aus Proteinen ohne DNA"
+      "Ausschließlich aus ribosomaler RNA ohne Proteinanteil",
+      "Aus Proteinen ohne DNA – die DNA liegt frei im Cytoplasma"
     ],
     "correct": 1,
     "explanation": "Chromosomen = DNA + Histonproteine (Chromatin). Im Ruhezustand: lockeres Euchromatin (aktiv) oder dichtes Heterochromatin. In der Mitose maximal kondensiert und sichtbar. Mensch: 46 Chromosomen (23 Paare).",
@@ -422,10 +422,10 @@
   {
     "question": "Was ist die Zelltheorie (Schleiden, Schwann, Virchow)?",
     "options": [
-      "Alle Organismen bestehen aus einer einzigen universellen Zelle",
+      "Alle Organismen bestehen aus einer einzigen universellen Urzelle",
       "1. Alle Lebewesen bestehen aus Zellen. 2. Die Zelle ist die kleinste Lebenseinheit. 3. Jede Zelle entsteht aus einer Zelle (omnis cellula e cellula).",
-      "Zellen können spontan aus unbelebter Materie entstehen",
-      "Nur Tiere bestehen aus Zellen"
+      "Zellen können spontan aus unbelebter Materie entstehen (Urzeugung)",
+      "Nur tierische Organismen bestehen aus Zellen; Pflanzen haben Zelloid-Strukturen"
     ],
     "correct": 1,
     "explanation": "Zelltheorie (19. Jh.): Schleiden (Pflanzen, 1838) + Schwann (Tiere, 1839) + Virchow ('omnis cellula e cellula', 1855). Sie legte die Grundlage der Zellbiologie und widerlegte die Urzeugungslehre.",
@@ -434,10 +434,10 @@
   {
     "question": "Was ist selektive Permeabilität der Zellmembran?",
     "options": [
-      "Die Zellmembran ist für alle Moleküle gleich durchlässig",
+      "Die Zellmembran ist für alle Moleküle und Ionen gleich durchlässig",
       "Die Eigenschaft der Zellmembran, bestimmte Stoffe passieren zu lassen (kleine, unpolare Moleküle leicht; große oder geladene Moleküle schwer oder gar nicht)",
-      "Die Membran ist völlig undurchlässig",
-      "Nur Wasser kann die Membran passieren"
+      "Die Membran ist für alle Substanzen vollständig undurchlässig",
+      "Ausschließlich Wassermoleküle können die Membran durch Osmose passieren"
     ],
     "correct": 1,
     "explanation": "Selektive Permeabilität: Kleine, hydrophobe Moleküle (O₂, CO₂, Steroide) passieren leicht. Wasser passiert durch Aquaporine. Ionen und große Moleküle brauchen Kanal- oder Transportproteine.",
@@ -446,10 +446,10 @@
   {
     "question": "Was ist Exocytose und was ist Endocytose?",
     "options": [
-      "Beides bezeichnet die Aufnahme von Stoffen in die Zelle",
+      "Beides bezeichnet die Aufnahme von Substanzen in das Zellinnere durch Membraneinbuchtung",
       "Exocytose: Vesikel verschmelzen mit der Membran und setzen Inhalt frei; Endocytose: Membran stülpt sich ein und umschließt Material (z.B. Phagocytose, Pinocytose)",
-      "Exocytose findet nur in Drüsenzellen statt",
-      "Endocytose verbraucht kein ATP"
+      "Exocytose findet ausschließlich in sekretorischen Drüsenzellen statt",
+      "Endocytose verbraucht kein ATP und ist ein passiver Prozess"
     ],
     "correct": 1,
     "explanation": "Exocytose (Sekretion): Exportvesikel fusionieren mit Plasmamembran → Inhalt wird nach außen abgegeben (z.B. Hormone, Enzyme). Endocytose: Aufnahme von Material durch Membraneinbuchtung → Vesikelbildung (ATP-verbrauchend).",
@@ -458,10 +458,10 @@
   {
     "question": "Was ist ein Nukleosom?",
     "options": [
-      "Eine freie DNA-Schlaufe im Cytoplasma",
+      "Eine freie DNA-Schlaufe im Cytoplasma prokaryotischer Zellen",
       "Die Grundeinheit des Chromatins: DNA-Doppelhelix (~147 bp) um einen Histone-Oktamerkomplex gewickelt, durch Linker-DNA mit dem nächsten Nukleosom verbunden",
-      "Ein einzelnes Chromosom in seiner kompaktesten Form",
-      "Die Kernhülle des Zellkerns"
+      "Ein einzelnes Chromosom in seiner maximal kompaktierten Mitoseform",
+      "Die gesamte Kernhülle des Zellkerns mit ihren Kernporen"
     ],
     "correct": 1,
     "explanation": "Nukleosomen sind die erste Verpackungsstufe der DNA: ~147 Basenpaare wickeln sich 1,65-mal um einen Oktamer aus je 2 H2A, H2B, H3, H4. Das Ergebnis sieht im Elektronenmikroskop wie 'Perlen auf einer Schnur' aus.",
@@ -470,10 +470,10 @@
   {
     "question": "Was ist der Zellzyklus?",
     "options": [
-      "Die Lebensdauer einer Zelle ohne Teilung",
+      "Die gesamte Lebensdauer einer Zelle von ihrer Entstehung bis zu ihrem Tod",
       "Der geordnete Ablauf von Wachstum und Teilung: Interphase (G1, S, G2) + Mitose + Cytokinese; kontrolliert durch Cycline und CDKs",
-      "Nur die Phase der Zellteilung (Mitose)",
-      "Ein Zyklus, der nur in Stammzellen vorkommt"
+      "Ausschließlich die Phase der Zellteilung (Mitose und Cytokinese)",
+      "Ein Zyklus, der nur in pluripotenten Stammzellen vorkommt"
     ],
     "correct": 1,
     "explanation": "Zellzyklus: Interphase (G1: Wachstum, S: DNA-Replikation, G2: Vorbereitung) + M-Phase (Mitose + Cytokinese). Checkpoints (G1/S, G2/M) prüfen DNA-Integrität und stoppen Zellen bei Schäden.",
