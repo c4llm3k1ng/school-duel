@@ -737,6 +737,14 @@
       </button>
     </div>
 
+    <!-- EDITS EXPORTIEREN (nur neroesnaj) -->
+    <div class="settings-section owner-only" style="display:none;margin-bottom:0;">
+      <div class="settings-section-title">🔍 Fragen-Edits</div>
+      <button class="settings-btn" onclick="closeSettingsModal();exportEditedQuestions()">
+        <span class="sb-icon">📤</span><span class="sb-label">Editierte Fragen exportieren</span><span class="sb-arrow">›</span>
+      </button>
+    </div>
+
     <!-- BERICHTE (versteckt, nur sichtbar wenn Einträge vorhanden) -->
     <div class="settings-section" id="berichte-settings-section" style="display:none;margin-bottom:0;padding-bottom:0;border-bottom:none;">
       <button class="settings-btn" onclick="closeSettingsModal();openBerichteModal()" style="color:var(--gold);">
@@ -7972,6 +7980,67 @@ document.getElementById('modal-profile').addEventListener('click', e => { if (e.
 // ═══════════════════════════════════════════════════════
 // Besitzer-Erkennung: sensible Einstellungen (Keys, Firebase/Supabase) nur für den Owner sichtbar
 function isOwner() { return !!(currentUser && currentUser.username === 'neroesnaj'); }
+
+function exportEditedQuestions() {
+  const BUILTIN_IDS = {
+    cat_fussball_leicht: FB_LEICHT, cat_fussball_mittel: FB_MITTEL, cat_fussball_schwer: FB_SCHWER,
+    cat_musik_leicht: MU_LEICHT,   cat_musik_mittel: MU_MITTEL,   cat_musik_schwer: MU_SCHWER,
+    cat_anime_leicht: AN_LEICHT,   cat_anime_mittel: AN_MITTEL,   cat_anime_schwer: AN_SCHWER,
+  };
+  const cats = getCatalogs();
+  const diffs = [];
+  for (const cat of cats) {
+    const src = BUILTIN_IDS[cat.id];
+    if (!src) continue;
+    const srcMap = new Map(src.map(q => [q.question, q]));
+    for (const q of (cat.questions || [])) {
+      const orig = srcMap.get(q.question);
+      if (!orig) continue; // neue Frage aus dem Katalog – nicht editiert
+      const changed =
+        q.correct !== orig.correct ||
+        JSON.stringify(q.options) !== JSON.stringify(orig.options) ||
+        (q.explanation || '') !== (orig.explanation || '');
+      if (changed) diffs.push({ katalog: cat.id, original: orig, editiert: q });
+    }
+    // Fragen suchen, deren Text selbst geändert wurde (Originaltext nicht mehr vorhanden)
+    const srcTexts = new Set(src.map(q => q.question));
+    for (const q of (cat.questions || [])) {
+      if (!srcTexts.has(q.question)) {
+        // Prüfen ob es eine ähnliche Frage in src gibt (kein Match → Text geändert)
+        diffs.push({ katalog: cat.id, original: null, editiert: q, hinweis: 'Fragetext evtl. geändert' });
+      }
+    }
+  }
+  const modal = document.createElement('div');
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:9999;overflow-y:auto;padding:20px;box-sizing:border-box;';
+  const inner = document.createElement('div');
+  inner.style.cssText = 'background:var(--card);border-radius:16px;padding:20px;max-width:600px;margin:0 auto;';
+  if (diffs.length === 0) {
+    inner.innerHTML = '<h3 style="margin-bottom:12px;">📤 Editierte Fragen</h3><p style="color:var(--muted);font-size:.85rem;">Keine Unterschiede zur Quelldatei gefunden.</p>';
+  } else {
+    const lines = diffs.map((d, i) => {
+      const e = d.editiert;
+      const o = d.original;
+      return `[${i+1}] Katalog: ${d.katalog}\n` +
+        (o ? `ALT Frage:   ${o.question}\n    Antwort: ${o.options[o.correct]}\n` : '') +
+        `NEU Frage:   ${e.question}\n    Antwort: ${e.options[e.correct]}\n` +
+        (d.hinweis ? `    Hinweis: ${d.hinweis}\n` : '');
+    }).join('\n');
+    inner.innerHTML = `<h3 style="margin-bottom:8px;">📤 Editierte Fragen (${diffs.length})</h3>
+      <textarea readonly style="width:100%;height:320px;background:rgba(0,0,0,.3);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:10px;font-size:.72rem;font-family:monospace;box-sizing:border-box;">${lines}</textarea>
+      <button class="btn btn-primary" style="margin-top:12px;" onclick="navigator.clipboard.writeText(${JSON.stringify(lines)}).then(()=>showToast('Kopiert!','success'))">📋 Kopieren</button>`;
+  }
+  const close = document.createElement('button');
+  close.className = 'btn btn-secondary';
+  close.textContent = 'Schließen';
+  close.style.marginTop = '10px';
+  close.onclick = () => modal.remove();
+  inner.appendChild(close);
+  modal.appendChild(inner);
+  modal.addEventListener('click', e => { if (e.target === modal) modal.remove(); });
+  document.body.appendChild(modal);
+}
+
 function applyOwnerVisibility() {
   const show = isOwner();
   document.querySelectorAll('.owner-only').forEach(el => { el.style.display = show ? '' : 'none'; });
