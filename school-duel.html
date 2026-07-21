@@ -1740,7 +1740,13 @@ Deutschland</p>
       </div>
     </div>
 
-    <!-- Schritt 3: Katalog wählen (nur bei Katalog-Quelle) -->
+    <!-- Schritt 3a: Klassenauswahl (nur bei Schulfragen) -->
+    <div id="chal-school-grade-select" style="display:none;">
+      <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;" id="chal-school-grade-desc">Welche Klasse?</p>
+      <div class="chal-submode-grid" id="chal-school-grade-list"></div>
+    </div>
+
+    <!-- Schritt 3b: Katalog wählen (nur bei Katalog-Quelle) -->
     <div id="chal-catalog-section" style="display:none;">
       <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;" id="chal-catalog-desc">Wähle einen Katalog.</p>
       <div class="chal-submode-grid" id="chal-grade-list"></div>
@@ -11274,7 +11280,7 @@ function chalConfirmQuit() {
 }
 function chalDoQuit() {
   document.getElementById('modal-chal-quit').classList.add('hidden');
-  showSpielenLanding();
+  showChallengerSetup();
 }
 
 // ─── Datenschutz: Account löschen ───────────────────────────
@@ -11521,8 +11527,8 @@ async function startChallenger(mode, subject, grade, hardMode) {
       let gradeFilter = null;
       let subjFilter  = null;
       if (mode === 'school') {
-        // Hard: nur Kl. 10+11 (schwierigere Inhalte); Normal: alle Klassen
-        gradeFilter = hardMode ? ['10', '11'] : CHAL_GRADE_ORDER;
+        // gradeFilter kommt vom Nutzer-Pick (chalSelectSchoolGrade); grade = Array
+        gradeFilter = Array.isArray(grade) ? grade : (hardMode ? ['10','11'] : CHAL_GRADE_ORDER);
       } else if (mode === 'general-class' || mode === 'general-weighted') {
         gradeFilter = CHAL_GRADE_ORDER;
       } else if (mode === 'subject') {
@@ -11580,6 +11586,7 @@ function chalGroupCatalogs() {
 function chalPopulateSetup() {
   document.getElementById('chal-mode-select').style.display = '';
   document.getElementById('chal-source-select').style.display = 'none';
+  document.getElementById('chal-school-grade-select').style.display = 'none';
   document.getElementById('chal-catalog-section').style.display = 'none';
 }
 
@@ -11593,7 +11600,12 @@ function chalSelectMode(hardMode) {
 
 function chalSelectSource(source) {
   if (source === 'school') {
-    startChallenger('school', null, null, !!CH._pendingHard);
+    const hard = !!CH._pendingHard;
+    document.getElementById('chal-school-grade-desc').textContent =
+      hard ? '🔥 Hard – Welche Klasse?' : '⭐ Challenger – Welche Klasse?';
+    chalPopulateSchoolGradeList(hard);
+    document.getElementById('chal-source-select').style.display = 'none';
+    document.getElementById('chal-school-grade-select').style.display = '';
   } else {
     document.getElementById('chal-catalog-desc').textContent =
       CH._pendingHard ? '🔥 Hard – Wähle einen Katalog.' : '⭐ Challenger – Wähle einen Katalog.';
@@ -11603,9 +11615,38 @@ function chalSelectSource(source) {
   }
 }
 
+function chalPopulateSchoolGradeList(hard) {
+  const grades = hard ? ['10','11'] : CHAL_GRADE_ORDER;
+  const gradeLabels = { '6':'Klasse 6','7':'Klasse 7','10':'Klasse 10','11':'Klasse 11' };
+  const list = document.getElementById('chal-school-grade-list');
+  list.innerHTML = '';
+  grades.forEach(g => {
+    const card = document.createElement('div');
+    card.className = 'mode-card';
+    card.style.cssText = 'border-color:rgba(99,102,241,.35);background:radial-gradient(120% 120% at 0% 0%, rgba(99,102,241,.08), transparent 45%), var(--glass);cursor:pointer;';
+    card.innerHTML = `<div style="font-size:1.4rem;margin-bottom:6px;">📖</div><div class="mc-title" style="color:#818cf8;">${gradeLabels[g]||g}</div>`;
+    card.onclick = () => chalSelectSchoolGrade([g]);
+    list.appendChild(card);
+  });
+  // Querbeet-Karte
+  const all = document.createElement('div');
+  all.className = 'mode-card';
+  all.style.cssText = 'border-color:rgba(250,204,21,.35);background:radial-gradient(120% 120% at 0% 0%, rgba(250,204,21,.08), transparent 45%), var(--glass);cursor:pointer;';
+  all.innerHTML = `<div style="font-size:1.4rem;margin-bottom:6px;">🎲</div><div class="mc-title" style="color:#fbbf24;">Querbeet</div><div class="mc-desc">Alle ${hard ? 'schweren ' : ''}Klassen gemischt</div>`;
+  all.onclick = () => chalSelectSchoolGrade(grades);
+  list.appendChild(all);
+}
+
+function chalSelectSchoolGrade(gradeFilter) {
+  startChallenger('school', null, gradeFilter, !!CH._pendingHard);
+}
+
 function chalHandleBack() {
   if (document.getElementById('chal-catalog-section').style.display !== 'none') {
     document.getElementById('chal-catalog-section').style.display = 'none';
+    document.getElementById('chal-source-select').style.display = '';
+  } else if (document.getElementById('chal-school-grade-select').style.display !== 'none') {
+    document.getElementById('chal-school-grade-select').style.display = 'none';
     document.getElementById('chal-source-select').style.display = '';
   } else if (document.getElementById('chal-source-select').style.display !== 'none') {
     chalPopulateSetup();
