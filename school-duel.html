@@ -5847,7 +5847,8 @@ function stripAnswerHint(q) {
            (hFirst.length > 3 && (o.includes(hFirst) || hFirst.includes(o)));
   });
   if (!isHint) return q;
-  return { ...q, question: m[1].trim() + (trailingQ || '') };
+  const stripped = m[1].trim() + (trailingQ || '');
+  return { ...q, question: /[?!.]$/.test(stripped) ? stripped : stripped + '?' };
 }
 
 async function loadQuestions() {
@@ -9609,7 +9610,8 @@ function chalPickQuestion() {
 
 // Strip trailing parenthetical hints from question text, e.g. "Frage? (Antwort)" → "Frage?"
 function chalCleanQuestion(text) {
-  return text.replace(/\s*\([^)]{1,120}\)\s*[.?!]?\s*$/, '').replace(/\s+([?!.])$/, '$1').trim();
+  const cleaned = text.replace(/\s*\([^)]{1,120}\)\s*[.?!]?\s*$/, '').replace(/\s+([?!.])$/, '$1').trim();
+  return /[?!.]$/.test(cleaned) ? cleaned : cleaned + '?';
 }
 
 // Update the lives display
