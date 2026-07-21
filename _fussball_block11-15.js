@@ -52,7 +52,7 @@ const FUSSBALL_NEU_LEICHT = [
 
   // --- Rekorde (13) ---
   {question:"Welches Land hat die meisten Fußball-Weltmeisterschaften gewonnen?",options:["Deutschland","Argentinien","Brasilien","Italien"],correct:2,explanation:"Brasilien hat mit fünf WM-Titeln (1958, 1962, 1970, 1994, 2002) die meisten Weltmeisterschaften gewonnen.",topic:"Rekorde"},
-  {question:"Wer ist der Rekordtorschütze bei Fußball-Weltmeisterschaften aller Zeiten?",options:["Pelé","Ronaldo","Miroslav Klose","Gerd Müller"],correct:2,explanation:"Miroslav Klose erzielte bei Weltmeisterschaften 16 Tore und ist damit Rekordtorschütze aller Zeiten.",topic:"Rekorde"},
+  {question:"Wer ist der Rekordtorschütze bei Fußball-Weltmeisterschaften aller Zeiten?",options:["Pelé","Ronaldo","Kylian Mbappé","Gerd Müller"],correct:2,explanation:"Kylian Mbappé erzielte bei Weltmeisterschaften 22 Tore und ist damit Rekordtorschütze aller Zeiten.",topic:"Rekorde"},
   {question:"Wer hat die meisten Ballon-d'Or-Auszeichnungen gewonnen?",options:["Cristiano Ronaldo","Zinedine Zidane","Ronaldo Nazário","Lionel Messi"],correct:3,explanation:"Lionel Messi hat bis 2024 acht Ballon-d'Or-Auszeichnungen gewonnen und ist damit klarer Rekordhalter.",topic:"Rekorde"},
   {question:"In welchem Land fand die erste Fußball-Weltmeisterschaft 1930 statt?",options:["Brasilien","England","Uruguay","Argentinien"],correct:2,explanation:"Die erste Fußball-WM fand 1930 in Uruguay statt. Das Gastgeberland gewann auch den Titel.",topic:"Rekorde"},
   {question:"Wie viele Tore erzielte Ronaldo (Nazário) bei der WM 2002?",options:["5","6","7","8"],correct:3,explanation:"Ronaldo erzielte bei der WM 2002 in Japan und Südkorea 8 Tore und wurde zum besten Spieler des Turniers gewählt.",topic:"Rekorde"},
@@ -129,7 +129,7 @@ const FUSSBALL_NEU_MITTEL = [
   {question:"In welcher Stadt fand das CL-Finale 2019 statt?",options:["Amsterdam","Lyon","Madrid","Lissabon"],correct:2,explanation:"Das CL-Finale 2019 zwischen Liverpool und Tottenham fand im Estadio Metropolitano in Madrid statt.",topic:"Champions League"},
 
   // --- Rekorde (14) ---
-  {question:"Wie viele WM-Tore erzielte Miroslav Klose insgesamt?",options:["12","14","16","18"],correct:2,explanation:"Miroslav Klose erzielte bei vier Weltmeisterschaften (2002, 2006, 2010, 2014) insgesamt 16 Tore.",topic:"Rekorde"},
+  {question:"Wie viele WM-Tore erzielte Miroslav Klose insgesamt?",options:["12","14","16","18"],correct:2,explanation:"Miroslav Klose erzielte bei vier Weltmeisterschaften 16 WM-Tore – ein Rekord, der später von Kylian Mbappé übertroffen wurde.",topic:"Rekorde"},
   {question:"Welcher Spieler gewann als Feldspieler die meisten Bundesliga-Meisterschaften?",options:["Karl-Heinz Rummenigge","Franck Ribéry","Gerd Müller","Phillip Lahm"],correct:1,explanation:"Franck Ribéry gewann mit Bayern München acht Bundesliga-Titel und ist damit Rekordspieler unter den Feldspielern.",topic:"Rekorde"},
   {question:"Wie viele Ballon-d'Or-Preise hat Cristiano Ronaldo gewonnen?",options:["3","4","5","6"],correct:2,explanation:"Cristiano Ronaldo hat bis 2024 fünf Ballon-d'Or-Auszeichnungen gewonnen (2008, 2013, 2014, 2016, 2017).",topic:"Rekorde"},
   {question:"Welcher Torwart hält den WM-Rekord für die meisten gehaltenen Elfmeter?",options:["Gianluigi Buffon","Peter Schmeichel","Manuel Neuer","Ricardo"],correct:3,explanation:"Ricardo hielt für Portugal bei der WM 2006 mehrere Elfmeter und ist für seine spektakulären WM-Paraden bekannt.",topic:"Rekorde"},
