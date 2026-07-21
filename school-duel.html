@@ -682,6 +682,9 @@
       <button class="settings-btn" onclick="closeProfileModal();showScreen('screen-friends')">
         <span class="sb-icon">👥</span><span class="sb-label">Freunde</span><span class="sb-arrow">›</span>
       </button>
+      <button class="settings-btn" onclick="closeProfileModal();openChangePwModal()">
+        <span class="sb-icon">🔑</span><span class="sb-label">Passwort ändern</span><span class="sb-arrow">›</span>
+      </button>
     </div>
     <button class="btn btn-secondary" style="color:var(--red);border-color:var(--red);" onclick="doLogout();closeProfileModal()">Abmelden</button>
   </div>
@@ -830,6 +833,33 @@ Deutschland</p>
       </p>
       <p><strong>8. Kontakt</strong><br>Bei Fragen zum Datenschutz wende dich an:<br>Jan-Sören Ehmann, janehmann97@web.de</p>
       <p style="color:var(--muted);font-size:.76rem;margin-top:12px;">Stand: Juli 2026</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ MODAL: PASSWORT ÄNDERN ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-change-pw">
+  <div class="modal" style="max-width:320px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+      <h2 style="margin:0;font-size:1.1rem;">Passwort ändern</h2>
+      <button onclick="document.getElementById('modal-change-pw').classList.add('hidden')" style="border:none;background:none;color:var(--muted);font-size:1.2rem;cursor:pointer;">✕</button>
+    </div>
+    <div class="form-field">
+      <label>Aktuelles Passwort</label>
+      <input class="form-input" id="cpw-current" type="password" placeholder="Aktuelles Passwort">
+    </div>
+    <div class="form-field" style="margin-top:10px;">
+      <label>Neues Passwort</label>
+      <input class="form-input" id="cpw-new" type="password" placeholder="Neues Passwort (min. 8 Zeichen)">
+    </div>
+    <div class="form-field" style="margin-top:10px;">
+      <label>Neues Passwort bestätigen</label>
+      <input class="form-input" id="cpw-confirm" type="password" placeholder="Passwort wiederholen">
+    </div>
+    <p id="cpw-error" style="color:#f87171;font-size:.78rem;min-height:1.2em;margin:8px 0 4px;"></p>
+    <div style="display:flex;gap:10px;margin-top:4px;">
+      <button class="btn btn-secondary" style="flex:1;" onclick="document.getElementById('modal-change-pw').classList.add('hidden')">Abbrechen</button>
+      <button class="btn btn-primary" style="flex:1;" onclick="doChangePassword()">Ändern</button>
     </div>
   </div>
 </div>
@@ -11006,6 +11036,40 @@ function chalDoQuit() {
 }
 
 // ─── Datenschutz: Account löschen ───────────────────────────
+function openChangePwModal() {
+  ['cpw-current','cpw-new','cpw-confirm'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('cpw-error').textContent = '';
+  document.getElementById('modal-change-pw').classList.remove('hidden');
+}
+
+async function doChangePassword() {
+  const currentPw = document.getElementById('cpw-current').value;
+  const newPw     = document.getElementById('cpw-new').value;
+  const confirmPw = document.getElementById('cpw-confirm').value;
+  const errEl     = document.getElementById('cpw-error');
+  errEl.textContent = '';
+
+  if (!currentPw)        { errEl.textContent = 'Aktuelles Passwort eingeben'; return; }
+  if (newPw.length < 8)  { errEl.textContent = 'Neues Passwort muss mindestens 8 Zeichen haben'; return; }
+  if (newPw !== confirmPw){ errEl.textContent = 'Passwörter stimmen nicht überein'; return; }
+
+  try {
+    const user = fbAuth.currentUser;
+    const credential = firebase.auth.EmailAuthProvider.credential(user.email, currentPw);
+    await user.reauthenticateWithCredential(credential);
+    await user.updatePassword(newPw);
+    document.getElementById('modal-change-pw').classList.add('hidden');
+    showToast('Passwort erfolgreich geändert ✓', 'success');
+  } catch(e) {
+    errEl.textContent =
+      (e.code === 'auth/wrong-password' || e.code === 'auth/invalid-credential')
+        ? 'Aktuelles Passwort ist falsch'
+      : e.code === 'auth/too-many-requests'
+        ? 'Zu viele Versuche – kurz warten'
+      : e.message;
+  }
+}
+
 function confirmDeleteAccount() {
   document.getElementById('delete-confirm-input').value = '';
   document.getElementById('modal-delete-account').classList.remove('hidden');
