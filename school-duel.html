@@ -4878,6 +4878,28 @@ function getCatalogs() {
 }
 function saveCatalogs(arr) { localStorage.setItem('sd_catalogs', JSON.stringify(arr)); }
 
+async function applyFirebaseCorrections() {
+  if (!fbDB) return;
+  try {
+    const snap = await fbDB.ref('questionCorrections').once('value');
+    const allCorrections = snap.val();
+    if (!allCorrections) return;
+    const cats = getCatalogs();
+    let changed = false;
+    for (const [catId, corrections] of Object.entries(allCorrections)) {
+      const cat = cats.find(c => c.id === catId);
+      if (!cat) continue;
+      for (const correction of Object.values(corrections)) {
+        const { originalQuestion, editedAt, ...updated } = correction;
+        if (!originalQuestion) continue;
+        const idx = cat.questions.findIndex(q => q.question === originalQuestion);
+        if (idx >= 0) { cat.questions[idx] = Object.assign({}, cat.questions[idx], updated); changed = true; }
+      }
+    }
+    if (changed) saveCatalogs(cats);
+  } catch { /* ignorieren */ }
+}
+
 let editingCatalog = null;
 
 // ═══════════════════════════════════════════════════════
@@ -7840,6 +7862,7 @@ function onUserLoggedIn() {
   const badge = document.getElementById('user-badge');
   if (badge) { badge.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>' + esc(currentUser.username) + '</span>'; badge.style.display = 'inline-flex'; }
   startChallengeListener();
+  applyFirebaseCorrections();
   // Only navigate if still on auth screen
   if (document.getElementById('screen-auth').classList.contains('active')) {
     showScreen('screen-home'); switchTab('spielen');
@@ -9825,6 +9848,7 @@ function saveQuickEdit() {
   const catId = _qeInChallenger
     ? (CH.currentQ?._catId || null)
     : (G.mode === 'solo' ? G.catalogId : G.dCatalogId);
+  let effectiveCatId = catId;
   if (catId) {
     const cats = getCatalogs();
     const cat  = cats.find(c => c.id === catId);
@@ -9838,9 +9862,17 @@ function saveQuickEdit() {
     let saved  = false;
     for (const cat of cats) {
       const idx = cat.questions.findIndex(cq => cq.question === _qeOriginalQuestion);
-      if (idx >= 0) { cat.questions[idx] = Object.assign({}, cat.questions[idx], updated); saved = true; break; }
+      if (idx >= 0) { cat.questions[idx] = Object.assign({}, cat.questions[idx], updated); saved = true; effectiveCatId = cat.id; break; }
     }
     if (saved) saveCatalogs(cats);
+  }
+
+  // Firebase-Sync: Korrektur global für alle Nutzer speichern
+  if (isOwner() && fbDB && effectiveCatId) {
+    const qKey = _qeOriginalQuestion.replace(/[.#$[\]/]/g, '_').substring(0, 150);
+    fbDB.ref('questionCorrections/' + effectiveCatId + '/' + qKey).set(
+      Object.assign({ originalQuestion: _qeOriginalQuestion, editedAt: Date.now() }, updated)
+    ).catch(() => {});
   }
 
   closeQuickEdit();
