@@ -11101,17 +11101,22 @@ async function chalRenderLeaderboard(myLevel) {
 
   try {
     const key = chalModeKey();
-    const [scoresSnap, friendsSnap] = await Promise.all([
-      fbDB.ref('challengerScores/' + key).orderByChild('level').limitToLast(100).once('value'),
-      currentUser ? fbDB.ref('friends/' + currentUser.uid).once('value') : Promise.resolve({ val: () => ({}) }),
-    ]);
+
+    // Scores und Freunde getrennt laden – Freunde-Fehler bricht nicht die ganze Liste
+    const scoresSnap = await fbDB.ref('challengerScores/' + key).orderByChild('level').limitToLast(100).once('value');
+
+    let friendUids = new Set();
+    if (currentUser) {
+      try {
+        const fSnap = await fbDB.ref('friends/' + currentUser.uid).once('value');
+        Object.keys(fSnap.val() || {}).forEach(uid => friendUids.add(uid));
+      } catch { /* Freunde nicht verfügbar – nur eigener Score im Freunde-Tab */ }
+      friendUids.add(currentUser.uid);
+    }
 
     const allEntries = Object.entries(scoresSnap.val() || {})
       .map(([uid, v]) => ({ uid, ...v }))
       .sort((a, b) => b.level - a.level);
-
-    const friendUids = new Set(Object.keys(friendsSnap.val() || {}));
-    if (currentUser) friendUids.add(currentUser.uid);
 
     // State für Tab-Wechsel merken
     lb._all     = allEntries;
@@ -11133,7 +11138,8 @@ async function chalRenderLeaderboard(myLevel) {
 
     chalLbTab('friends');
   } catch(e) {
-    lb.innerHTML = '<div style="color:var(--muted);font-size:.82rem;">Bestenliste nicht verfügbar.</div>';
+    console.error('Bestenliste Fehler:', e);
+    lb.innerHTML = '<div style="color:var(--muted);font-size:.82rem;text-align:center;">Bestenliste nicht verfügbar.<br><span style="font-size:.74rem;">(' + (e.message || e) + ')</span></div>';
   }
 }
 
