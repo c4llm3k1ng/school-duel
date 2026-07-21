@@ -746,12 +746,104 @@
     </div>
 
     <!-- BERICHTE (versteckt, nur sichtbar wenn Einträge vorhanden) -->
-    <div class="settings-section" id="berichte-settings-section" style="display:none;margin-bottom:0;padding-bottom:0;border-bottom:none;">
+    <div class="settings-section" id="berichte-settings-section" style="display:none;padding-bottom:0;border-bottom:none;">
       <button class="settings-btn" onclick="closeSettingsModal();openBerichteModal()" style="color:var(--gold);">
         <span class="sb-icon">📋</span>
         <span class="sb-label">Gemeldete Fragen</span>
         <span id="berichte-badge" style="font-size:.7rem;background:rgba(245,200,66,.2);color:var(--gold);padding:2px 8px;border-radius:50px;font-weight:700;"></span>
       </button>
+    </div>
+
+    <!-- RECHTLICHES & ACCOUNT -->
+    <div class="settings-section" style="margin-bottom:0;">
+      <div class="settings-section-title">⚖️ Rechtliches & Account</div>
+      <button class="settings-btn" onclick="closeSettingsModal();document.getElementById('modal-impressum').classList.remove('hidden')">
+        <span class="sb-icon">📋</span><span class="sb-label">Impressum</span><span class="sb-arrow">›</span>
+      </button>
+      <button class="settings-btn" onclick="closeSettingsModal();document.getElementById('modal-datenschutz').classList.remove('hidden')">
+        <span class="sb-icon">🔒</span><span class="sb-label">Datenschutzerklärung</span><span class="sb-arrow">›</span>
+      </button>
+      <button class="settings-btn" onclick="closeSettingsModal();confirmDeleteAccount()" style="color:#f87171;">
+        <span class="sb-icon">🗑️</span><span class="sb-label">Account löschen</span><span class="sb-arrow">›</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ MODAL: CHALLENGER QUIT ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-chal-quit">
+  <div class="modal" style="max-width:300px;text-align:center;">
+    <div style="font-size:2rem;margin-bottom:8px;">🏳️</div>
+    <h2 style="font-size:1rem;margin-bottom:8px;">Spiel beenden?</h2>
+    <p style="font-size:.85rem;color:var(--muted);margin-bottom:20px;">Dein Fortschritt geht verloren.</p>
+    <div style="display:flex;gap:10px;">
+      <button class="btn btn-secondary" style="flex:1;" onclick="document.getElementById('modal-chal-quit').classList.add('hidden')">Weiterspielen</button>
+      <button class="btn btn-primary" style="flex:1;background:#f87171;border-color:#f87171;" onclick="chalDoQuit()">Aufgeben</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ MODAL: IMPRESSUM ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-impressum">
+  <div class="modal" style="max-width:480px;max-height:80vh;overflow-y:auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+      <h2 style="font-size:1.1rem;">📋 Impressum</h2>
+      <button onclick="document.getElementById('modal-impressum').classList.add('hidden')" style="border:none;background:none;color:var(--muted);font-size:1.2rem;cursor:pointer;">✕</button>
+    </div>
+    <div style="font-size:.85rem;line-height:1.7;color:var(--text);">
+      <p><strong>Angaben gemäß § 5 TMG</strong></p>
+      <p id="impressum-name-addr" style="white-space:pre-line;">[Name des Betreibers]
+[Straße und Hausnummer]
+[PLZ Ort]</p>
+      <p><strong>Kontakt</strong><br>E-Mail: <span id="impressum-email">[E-Mail-Adresse]</span></p>
+      <p style="color:var(--muted);font-size:.78rem;margin-top:16px;">School Duel ist ein privates, nicht-kommerzielles Projekt und dient ausschließlich Lern- und Unterhaltungszwecken.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ MODAL: DATENSCHUTZ ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-datenschutz">
+  <div class="modal" style="max-width:520px;max-height:82vh;overflow-y:auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+      <h2 style="font-size:1.1rem;">🔒 Datenschutzerklärung</h2>
+      <button onclick="document.getElementById('modal-datenschutz').classList.add('hidden')" style="border:none;background:none;color:var(--muted);font-size:1.2rem;cursor:pointer;">✕</button>
+    </div>
+    <div style="font-size:.83rem;line-height:1.7;color:var(--text);">
+      <p><strong>1. Verantwortlicher</strong><br>Verantwortlich für die Datenverarbeitung ist der Betreiber dieser App (siehe Impressum).</p>
+      <p><strong>2. Welche Daten werden erhoben?</strong><br>
+        – Frei gewählter Nutzername (kein Klarname erforderlich)<br>
+        – Spielstatistiken (gespielte Spiele, Siege, richtige Antworten)<br>
+        – Freundesliste (Nutzer-IDs deiner Freunde)<br>
+        – Fragen-Korrekturen (falls du Fragen bearbeitest)<br>
+        – Technische Verbindungsdaten (IP-Adresse, über Firebase/Google)
+      </p>
+      <p><strong>3. Zweck der Verarbeitung</strong><br>Die Daten werden ausschließlich für den Betrieb des Multiplayer-Spiels verwendet (Duell-Modus, Freundeslisten, Highscores).</p>
+      <p><strong>4. Rechtsgrundlage</strong><br>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) – die Daten sind für den Spielbetrieb notwendig.</p>
+      <p><strong>5. Auftragsverarbeiter</strong><br>Die App nutzt <strong>Google Firebase</strong> (Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Irland) zur Datenspeicherung. Google verarbeitet Daten ggf. auf Servern in den USA (Standardvertragsklauseln gemäß Art. 46 DSGVO).</p>
+      <p><strong>6. Speicherdauer</strong><br>Deine Daten werden gespeichert, solange dein Account existiert. Du kannst deinen Account jederzeit in den Einstellungen löschen.</p>
+      <p><strong>7. Deine Rechte</strong><br>
+        – Auskunft über gespeicherte Daten (Art. 15 DSGVO)<br>
+        – Berichtigung unrichtiger Daten (Art. 16 DSGVO)<br>
+        – Löschung deiner Daten (Art. 17 DSGVO) – direkt über „Account löschen" in den Einstellungen<br>
+        – Beschwerderecht bei einer Aufsichtsbehörde
+      </p>
+      <p><strong>8. Kontakt</strong><br>Bei Fragen zum Datenschutz wende dich per E-Mail an den Betreiber (siehe Impressum).</p>
+      <p style="color:var(--muted);font-size:.76rem;margin-top:12px;">Stand: Juli 2026</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ MODAL: ACCOUNT LÖSCHEN ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-delete-account">
+  <div class="modal" style="max-width:320px;text-align:center;">
+    <div style="font-size:2rem;margin-bottom:8px;">⚠️</div>
+    <h2 style="font-size:1rem;margin-bottom:8px;color:#f87171;">Account wirklich löschen?</h2>
+    <p style="font-size:.83rem;color:var(--muted);margin-bottom:6px;">Dein Profil, alle Statistiken und die Freundesliste werden <strong>unwiderruflich</strong> gelöscht.</p>
+    <p style="font-size:.78rem;color:var(--muted);margin-bottom:20px;">Tippe zur Bestätigung deinen Nutzernamen ein:</p>
+    <input class="form-input" id="delete-confirm-input" placeholder="Nutzername" style="margin-bottom:14px;text-align:center;">
+    <div style="display:flex;gap:10px;">
+      <button class="btn btn-secondary" style="flex:1;" onclick="document.getElementById('modal-delete-account').classList.add('hidden');document.getElementById('delete-confirm-input').value=''">Abbrechen</button>
+      <button class="btn btn-primary" style="flex:1;background:#f87171;border-color:#f87171;" onclick="deleteAccount()">Löschen</button>
     </div>
   </div>
 </div>
@@ -1907,6 +1999,9 @@
 
   <!-- Question area -->
   <div id="chal-question-wrap" style="display:none;">
+    <div style="display:flex;justify-content:flex-start;margin-bottom:6px;">
+      <button onclick="chalConfirmQuit()" style="background:none;border:none;color:var(--muted);font-size:.8rem;cursor:pointer;padding:4px 0;display:flex;align-items:center;gap:5px;opacity:.7;">← Aufgeben</button>
+    </div>
     <div class="chal-header">
       <div class="chal-level-wrap">
         <div class="chal-level-lbl">LEVEL</div>
@@ -10898,6 +10993,50 @@ function closeQuickEdit() {
   document.getElementById('modal-quickedit').classList.add('hidden');
   // Timer nur im regulären Quiz fortsetzen, wenn Frage noch nicht beantwortet
   if (!_qeInChallenger && G.questions && !G.answered) startTimer();
+}
+
+// ─── Challenger: Aufgeben ───────────────────────────────────
+function chalConfirmQuit() {
+  document.getElementById('modal-chal-quit').classList.remove('hidden');
+}
+function chalDoQuit() {
+  document.getElementById('modal-chal-quit').classList.add('hidden');
+  showSpielenLanding();
+}
+
+// ─── Datenschutz: Account löschen ───────────────────────────
+function confirmDeleteAccount() {
+  document.getElementById('delete-confirm-input').value = '';
+  document.getElementById('modal-delete-account').classList.remove('hidden');
+}
+
+async function deleteAccount() {
+  if (!currentUser || !fbDB) return;
+  const input = document.getElementById('delete-confirm-input').value.trim();
+  if (input.toLowerCase() !== (currentUser.username || '').toLowerCase()) {
+    showToast('Nutzername stimmt nicht überein', 'error'); return;
+  }
+  document.getElementById('modal-delete-account').classList.add('hidden');
+  showToast('Account wird gelöscht…', '');
+  try {
+    const uid = currentUser.uid;
+    const uname = (currentUser.username || '').toLowerCase();
+    await Promise.all([
+      fbDB.ref('users/' + uid).remove(),
+      uname ? fbDB.ref('usernames/' + uname).remove() : Promise.resolve(),
+      fbDB.ref('friends/' + uid).remove(),
+      fbDB.ref('friendRequests/' + uid).remove(),
+      fbDB.ref('challenges/' + uid).remove(),
+    ]);
+    try { await fbAuth.currentUser?.delete(); } catch { /* Re-Auth nicht möglich – DB-Daten bereits gelöscht */ }
+    localStorage.removeItem('sd_cached_user');
+    localStorage.removeItem('sd_catalogs');
+    currentUser = null;
+    showToast('Account wurde gelöscht', 'success');
+    setTimeout(() => onUserLoggedOut(), 1200);
+  } catch(e) {
+    showToast('Fehler: ' + e.message, 'error');
+  }
 }
 
 function chalOpenReport() {
