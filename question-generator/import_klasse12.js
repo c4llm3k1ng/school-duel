@@ -1,6 +1,6 @@
 'use strict';
-// Einmalig-Skript: importiert alle 25 klasse05_block*.json Dateien nach Firebase
-// Pfad-Schema: questionBank/<subject>/<subcategory>/klasse5
+// Importiert alle klasse12_block*.json Dateien nach Firebase
+// Pfad-Schema: questionBank/<subject>/<subcategory>/klasse12
 
 const fs   = require('fs');
 const path = require('path');
@@ -9,35 +9,34 @@ const FIREBASE_DB_URL      = 'https://school-duel-default-rtdb.europe-west1.fire
 const FIREBASE_WEB_API_KEY = 'AIzaSyCGSqcQSKwU3JqcLfl7AXIIIbcShNOrjB8';
 
 const fbSafe = s => s.replace(/[.#$\[\]\/]/g, '_');
-const qbPath = (subj, subcat) => 'questionBank/' + fbSafe(subj) + '/' + fbSafe(subcat) + '/klasse5';
+const qbPath = (subj, subcat) => 'questionBank/' + fbSafe(subj) + '/' + fbSafe(subcat) + '/klasse12';
 
-// Mapping: Dateiname-Präfix → [subject, subcategory]
 const BLOCK_MAP = {
-  'block01_mathe_zahlen':           ['Mathematik',        'Allgemein'],
-  'block02_mathe_geo':              ['Mathematik',        'Geometrie'],
-  'block03_deutsch_grammatik':      ['Deutsch',           'Grammatik'],
-  'block04_deutsch_rechtschreibung':['Deutsch',           'Rechtschreibung'],
-  'block05_englisch':               ['Englisch',          'Allgemein'],
-  'block06_erdkunde_deutschland':   ['Allgemeinwissen',   'Geographie'],
-  'block07_geschichte_antike':      ['Geschichte',        'Antike'],
-  'block08_bio_tiere':              ['Biologie',          'Allgemein'],
-  'block09_mathe_brueche':          ['Mathematik',        'Bruchrechnung'],
-  'block10_deutsch_texte':          ['Deutsch',           'Literatur'],
-  'block11_erdkunde_europa':        ['Allgemeinwissen',   'Geographie'],
-  'block12_mathe_groessen':         ['Mathematik',        'Allgemein'],
-  'block13_geschichte_mittelalter': ['Geschichte',        'Mittelalter'],
-  'block14_bio_mensch':             ['Biologie',          'Körper & Gesundheit'],
-  'block15_physik_grundlagen':       ['Physik',            'Allgemein'],
-  'block16_deutsch_schreiben':      ['Deutsch',           'Aufsatz'],
-  'block17_englisch_vertiefung':    ['Englisch',          'Allgemein'],
-  'block18_geschichte_frueheneuzeit':['Geschichte',       'Frühe Neuzeit'],
-  'block19_mathe_statistik':        ['Mathematik',        'Statistik'],
-  'block20_erdkunde_klima':         ['Allgemeinwissen',   'Natur & Tiere'],
-  'block21_bio_oekosystem':         ['Biologie',          'Ökologie'],
-  'block22_musik_grundlagen':       ['Allgemeinwissen',   'Musik & Kunst'],
-  'block23_kunst_grundlagen':       ['Allgemeinwissen',   'Musik & Kunst'],
-  'block24_natur_technik':          ['Allgemeinwissen',   'Technik'],
-  'block25_gemischt':               ['Allgemeinwissen',   'Allgemein'],
+  'block01_mathe_analysis':         ['Mathematik',      'Analysis'],
+  'block02_mathe_stochastik':       ['Mathematik',      'Stochastik'],
+  'block03_mathe_vektoren':         ['Mathematik',      'Vektoren'],
+  'block04_bio_evolution':          ['Biologie',        'Evolution'],
+  'block05_bio_genetik':            ['Biologie',        'Genetik'],
+  'block06_bio_oekologie':          ['Biologie',        'Ökologie'],
+  'block07_bio_zellbiologie':       ['Biologie',        'Zellbiologie'],
+  'block08_chemie_atombau':         ['Chemie',          'Atombau'],
+  'block09_chemie_elektrochemie':   ['Chemie',          'Elektrochemie'],
+  'block10_chemie_organik':         ['Chemie',          'Organische Chemie'],
+  'block11_chemie_saeuren':         ['Chemie',          'Säuren & Basen'],
+  'block12_physik_atom':            ['Physik',          'Atomphysik'],
+  'block13_physik_elektrizitaet':   ['Physik',          'Elektrizität'],
+  'block14_physik_mechanik':        ['Physik',          'Mechanik'],
+  'block15_physik_optik':           ['Physik',          'Optik'],
+  'block16_physik_waerme':          ['Physik',          'Wärmelehre'],
+  'block17_geschichte_industrie':   ['Geschichte',      'Industrialisierung'],
+  'block18_geschichte_nachkrieg':   ['Geschichte',      'Nachkriegszeit'],
+  'block19_geschichte_weltkriege':  ['Geschichte',      'Weltkriege'],
+  'block20_deutsch_grammatik':      ['Deutsch',         'Grammatik'],
+  'block21_deutsch_literatur':      ['Deutsch',         'Literatur'],
+  'block22_englisch_grammatik':     ['Englisch',        'Grammatik'],
+  'block23_englisch_zeitformen':    ['Englisch',        'Zeitformen'],
+  'block24_aw_geographie':          ['Allgemeinwissen', 'Geographie'],
+  'block25_aw_politik':             ['Allgemeinwissen', 'Politik'],
 };
 
 // ── Firebase Auth ──
@@ -94,7 +93,7 @@ async function fbLoad(subj, subcat) {
 
 async function fbSave(subj, subcat, questions) {
   const url = FIREBASE_DB_URL + '/' + qbPath(subj, subcat) + '.json' + (await authQuery());
-  const body = { questions, subject: subj, subcategory: subcat, grade: '5', updatedAt: Date.now() };
+  const body = { questions, subject: subj, subcategory: subcat, grade: '12', updatedAt: Date.now() };
   const res = await fetch(url, {
     method: 'PUT', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body)
   });
@@ -118,17 +117,12 @@ async function main() {
   console.log('Eingeloggt. Starte Upload…\n');
 
   const rootDir = path.join(__dirname, '..');
-  const files = fs.readdirSync(rootDir).filter(f => f.startsWith('klasse05_block') && f.endsWith('.json'));
+  const files = fs.readdirSync(rootDir).filter(f => f.startsWith('klasse12_block') && f.endsWith('.json'));
   files.sort();
 
   let totalAdded = 0, ok = 0, failed = 0;
   for (const filename of files) {
-    // Schlüssel aus Dateiname extrahieren: klasse05_blockNN_xxx → blockNN_xxx
-    const key = filename.replace('klasse05_','').replace('.json','')
-      // Normalize: block18_geschichte_früh... → block18_geschichte_fruehzeit
-      .replace(/ü/g,'ue').replace(/ä/g,'ae').replace(/ö/g,'oe')
-      .replace(/ß/g,'ss');
-
+    const key = filename.replace('klasse12_','').replace('.json','');
     const mapping = BLOCK_MAP[key];
     if (!mapping) {
       console.log('Kein Mapping fuer: ' + filename + ' (key=' + key + ') – uebersprungen');

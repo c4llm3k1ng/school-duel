@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist Energie?",
+    "options": [
+      "Ein Stoff",
+      "Die Fähigkeit Arbeit zu verrichten",
+      "Ein Werkzeug",
+      "Eine Kraft"
+    ],
+    "correct": 1,
+    "explanation": "Energie: Fähigkeit Arbeit zu leisten. Einheit: Joule (J).",
+    "topic": "Energie"
+  },
+  {
+    "question": "Was ist die Einheit der Kraft?",
+    "options": [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Meter"
+    ],
+    "correct": 2,
+    "explanation": "Kraft wird in Newton (N) gemessen.",
+    "topic": "Kraft"
+  },
+  {
+    "question": "Was ist Schwerkraft?",
+    "options": [
+      "Magnet",
+      "Kraft mit der die Erde alle Massen anzieht",
+      "Reibung",
+      "Auftrieb"
+    ],
+    "correct": 1,
+    "explanation": "Schwerkraft (Gravitation): zieht Körper zur Erde. g = 9,81 m/s².",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Geschwindigkeit?",
+    "options": [
+      "Masse × Kraft",
+      "Zurückgelegter Weg pro Zeit",
+      "Kraft × Energie",
+      "Gewicht des Körpers"
+    ],
+    "correct": 1,
+    "explanation": "Geschwindigkeit v = Weg / Zeit. Einheit: km/h oder m/s.",
+    "topic": "Bewegung"
+  },
+  {
+    "question": "Was ist Reibung?",
+    "options": [
+      "Anziehungskraft",
+      "Kraft die Bewegung zwischen zwei sich berührenden Flächen bremst",
+      "Auftriebskraft",
+      "Federkraft"
+    ],
+    "correct": 1,
+    "explanation": "Reibung: bremst Bewegung, erzeugt Wärme.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist ein Hebel?",
+    "options": [
+      "Schraube",
+      "Starrer Stab der um einen Drehpunkt dreht und Kräfte vergrößert",
+      "Zahnrad",
+      "Rad"
+    ],
+    "correct": 1,
+    "explanation": "Hebel: Kraft × Kraftarm = Last × Lastarm.",
+    "topic": "Maschinen"
+  },
+  {
+    "question": "Was ist Strom?",
+    "options": [
+      "Fließendes Wasser",
+      "Gerichtete Bewegung von Elektronen (elektrischer Strom)",
+      "Hitze",
+      "Schall"
+    ],
+    "correct": 1,
+    "explanation": "Elektrischer Strom: gerichtete Bewegung von Elektronen. Einheit: Ampere (A).",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist Spannung?",
+    "options": [
+      "Mechanische Kraft",
+      "Elektrische Spannung: Antrieb für Strom. Einheit: Volt (V)",
+      "Geschwindigkeit",
+      "Druck"
+    ],
+    "correct": 1,
+    "explanation": "Spannung (V): elektrische Triebkraft – bewegt Elektronen durch Leiter.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist ein Magnet?",
+    "options": [
+      "Lichtquelle",
+      "Körper der andere Metalle anzieht",
+      "Elektrischer Leiter",
+      "Wärmequelle"
+    ],
+    "correct": 1,
+    "explanation": "Magneten: haben Nord- und Südpol, ziehen Eisen an.",
+    "topic": "Magnetismus"
+  },
+  {
+    "question": "Was ist Auftrieb?",
+    "options": [
+      "Schwerkraft",
+      "Nach oben gerichtete Kraft auf eingetauchte Körper (Archimedisches Prinzip)",
+      "Reibung",
+      "Federkraft"
+    ],
+    "correct": 1,
+    "explanation": "Auftrieb: Flüssigkeiten und Gase üben Auftrieb auf eingetauchte Körper aus.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist der Aggregatzustand fest?",
+    "options": [
+      "Hat keine Form",
+      "Beibehält Form und Volumen",
+      "Fließend",
+      "Gasförmig"
+    ],
+    "correct": 1,
+    "explanation": "Feste Körper: feste Form und festes Volumen (z.B. Eis, Stein).",
+    "topic": "Aggregatzustände"
+  },
+  {
+    "question": "Was passiert beim Schmelzen?",
+    "options": [
+      "Fest → Gasförmig",
+      "Fest → Flüssig",
+      "Flüssig → Gasförmig",
+      "Gasförmig → Flüssig"
+    ],
+    "correct": 1,
+    "explanation": "Schmelzen: Übergang von fest → flüssig durch Wärmezufuhr.",
+    "topic": "Aggregatzustände"
+  },
+  {
+    "question": "Was passiert beim Verdampfen?",
+    "options": [
+      "Fest → Flüssig",
+      "Flüssig → Gasförmig",
+      "Fest → Gasförmig",
+      "Gasförmig → Flüssig"
+    ],
+    "correct": 1,
+    "explanation": "Verdampfen: Flüssig → gasförmig durch Wärme.",
+    "topic": "Aggregatzustände"
+  },
+  {
+    "question": "Was ist Wärme?",
+    "options": [
+      "Eine Kraft",
+      "Form von Energie die durch Temperaturunterschiede übertragen wird",
+      "Schall",
+      "Licht"
+    ],
+    "correct": 1,
+    "explanation": "Wärme: Energieform, Einheit Joule; Temperatur in °C oder Kelvin.",
+    "topic": "Wärme"
+  },
+  {
+    "question": "Was ist ein Leiter (elektrisch)?",
+    "options": [
+      "Material das keinen Strom leitet",
+      "Material das Strom leitet (Metalle, Wasser)",
+      "Glas",
+      "Gummi"
+    ],
+    "correct": 1,
+    "explanation": "Elektrische Leiter: Metalle (Kupfer, Aluminium) leiten Strom gut.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist ein Isolator?",
+    "options": [
+      "Stromleiter",
+      "Material das Strom nicht leitet (Gummi, Plastik, Glas)",
+      "Magnet",
+      "Schalter"
+    ],
+    "correct": 1,
+    "explanation": "Isolatoren: leiten keinen Strom – Gummi, Plastik, Glas.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist Schall?",
+    "options": [
+      "Sichtbares Licht",
+      "Mechanische Schwingungen die sich in Luft ausbreiten und gehört werden",
+      "Elektrischer Strom",
+      "Magnetfeld"
+    ],
+    "correct": 1,
+    "explanation": "Schall: Druckwellen in Luft (oder anderen Medien). Schallgeschwindigkeit ≈ 343 m/s.",
+    "topic": "Schall"
+  },
+  {
+    "question": "Was ist Licht?",
+    "options": [
+      "Schall",
+      "Elektromagnetische Strahlung die sichtbar ist",
+      "Elektrischer Strom",
+      "Gravitationswelle"
+    ],
+    "correct": 1,
+    "explanation": "Licht: elektromagnetische Strahlung. Lichtgeschwindigkeit ≈ 300.000 km/s.",
+    "topic": "Licht"
+  },
+  {
+    "question": "Was sind erneuerbare Energien?",
+    "options": [
+      "Kohle und Öl",
+      "Energiequellen die sich natürlich erneuern (Sonne, Wind, Wasser)",
+      "Atomkraft",
+      "Gas"
+    ],
+    "correct": 1,
+    "explanation": "Erneuerbare Energien: Solar, Wind, Wasser, Biomasse – nachhaltig.",
+    "topic": "Energie"
+  },
+  {
+    "question": "Was ist eine Glühbirne?",
+    "options": [
+      "Speicher für Strom",
+      "Gerät das elektrische Energie in Licht und Wärme umwandelt",
+      "Elektromotor",
+      "Schaltkreis"
+    ],
+    "correct": 1,
+    "explanation": "Glühbirne: Strom erhitzt Glühfaden bis er leuchtet.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist Schwingung?",
+    "options": [
+      "Geradlinige Bewegung",
+      "Hin-und-Her-Bewegung um eine Ruhelage",
+      "Kreisbewegung",
+      "Ruhezustand"
+    ],
+    "correct": 1,
+    "explanation": "Schwingung: periodische Hin-und-Her-Bewegung (Pendel, Saite).",
+    "topic": "Schwingungen"
+  },
+  {
+    "question": "Was ist ein Kreislauf?",
+    "options": [
+      "Einmalige Bewegung",
+      "Sich wiederholender Ablauf (Wasserkreislauf, Blutkreislauf)",
+      "Zufällige Bewegung",
+      "Gradlinige Bewegung"
+    ],
+    "correct": 1,
+    "explanation": "Kreislauf: z.B. Wasserkreislauf – Verdunstung, Wolken, Regen, Flüsse.",
+    "topic": "Kreisläufe"
+  },
+  {
+    "question": "Was ist ein Thermometer?",
+    "options": [
+      "Druckmesser",
+      "Gerät zum Messen der Temperatur",
+      "Kraftmesser",
+      "Strommesser"
+    ],
+    "correct": 1,
+    "explanation": "Thermometer: misst Temperatur in °C.",
+    "topic": "Messung"
+  },
+  {
+    "question": "Was ist Druck?",
+    "options": [
+      "Kraft allein",
+      "Kraft geteilt durch Fläche (F/A). Einheit: Pascal (Pa)",
+      "Energie",
+      "Masse"
+    ],
+    "correct": 1,
+    "explanation": "Druck p = F/A. Einheit: Pascal (Pa).",
+    "topic": "Druck"
+  },
+  {
+    "question": "Was ist Masse?",
+    "options": [
+      "Gewichtskraft",
+      "Menge an Materie in einem Körper. Einheit: kg",
+      "Volumen",
+      "Dichte"
+    ],
+    "correct": 1,
+    "explanation": "Masse: Menge an Materie. Einheit: Kilogramm (kg).",
+    "topic": "Grundgrößen"
+  },
+  {
+    "question": "Was ist Volumen?",
+    "options": [
+      "Fläche",
+      "Raum den ein Körper einnimmt. Einheit: m³ oder Liter",
+      "Masse",
+      "Kraft"
+    ],
+    "correct": 1,
+    "explanation": "Volumen: Raum den ein Körper einnimmt. 1 Liter = 1 dm³.",
+    "topic": "Grundgrößen"
+  },
+  {
+    "question": "Was ist der Unterschied Masse/Gewicht?",
+    "options": [
+      "Kein Unterschied",
+      "Masse ist konstant (kg), Gewicht ist Gravitationskraft (Newton)",
+      "Gewicht in kg",
+      "Masse in Newton"
+    ],
+    "correct": 1,
+    "explanation": "Masse (kg): konstant. Gewicht (N): Schwerkraft auf die Masse.",
+    "topic": "Grundgrößen"
+  },
+  {
+    "question": "Was ist Reflexion?",
+    "options": [
+      "Lichtbrechung",
+      "Zurückwurf von Licht oder Schall an einer Fläche",
+      "Lichtabsorption",
+      "Beugung"
+    ],
+    "correct": 1,
+    "explanation": "Reflexion: Licht oder Schall prallt von einer Fläche zurück (Spiegel, Echo).",
+    "topic": "Licht und Schall"
+  },
+  {
+    "question": "Was ist Brechung (Licht)?",
+    "options": [
+      "Licht wird absorbiert",
+      "Richtungsänderung von Licht beim Übergang zwischen zwei Medien",
+      "Licht wird reflektiert",
+      "Licht verschwindet"
+    ],
+    "correct": 1,
+    "explanation": "Brechung: Licht ändert Richtung beim Wechsel z.B. von Luft zu Wasser.",
+    "topic": "Licht"
+  },
+  {
+    "question": "Was ist ein Magnet-Pol?",
+    "options": [
+      "Ende eines Stromkabels",
+      "Nord- oder Südpol eines Magneten – gegensätzliche ziehen an",
+      "Mitte des Magneten",
+      "Metallkern"
+    ],
+    "correct": 1,
+    "explanation": "Magnete haben Nord- und Südpol. Gleiche Pole stoßen ab, ungleiche ziehen an.",
+    "topic": "Magnetismus"
+  },
+  {
+    "question": "Was ist eine chemische Reaktion?",
+    "options": [
+      "Physikalischer Vorgang",
+      "Vorgang bei dem Stoffe sich in neue Stoffe umwandeln",
+      "Schmelzen",
+      "Lösung"
+    ],
+    "correct": 1,
+    "explanation": "Chemische Reaktion: neue Stoffe entstehen. Verbrennung = Reaktion mit Sauerstoff.",
+    "topic": "Chemie Grundlagen"
+  },
+  {
+    "question": "Was ist Verbrennung?",
+    "options": [
+      "Lösung in Wasser",
+      "Reaktion eines Stoffes mit Sauerstoff unter Wärmeentwicklung",
+      "Schmelzvorgang",
+      "Verdampfen"
+    ],
+    "correct": 1,
+    "explanation": "Verbrennung: Stoff + O2 → CO2 + H2O + Energie (Wärme und Licht).",
+    "topic": "Chemie Grundlagen"
+  },
+  {
+    "question": "Was sind fossile Brennstoffe?",
+    "options": [
+      "Holz",
+      "Kohle, Öl und Erdgas – aus fossilem organischem Material",
+      "Atomkraft",
+      "Biogas"
+    ],
+    "correct": 1,
+    "explanation": "Fossile Brennstoffe: Kohle, Erdöl, Erdgas – endlich und CO2-Ausstoß.",
+    "topic": "Energie"
+  },
+  {
+    "question": "Was ist der Aggregatzustand gasförmig?",
+    "options": [
+      "Hat feste Form",
+      "Hat keine feste Form oder festes Volumen (dehnt sich aus)",
+      "Fließt",
+      "Ist kalt"
+    ],
+    "correct": 1,
+    "explanation": "Gase: haben weder feste Form noch festes Volumen – dehnen sich aus.",
+    "topic": "Aggregatzustände"
+  },
+  {
+    "question": "Was passiert bei Kondensation?",
+    "options": [
+      "Flüssig → Gasförmig",
+      "Gasförmig → Flüssig (Wasserdampf → Wasser)",
+      "Fest → Flüssig",
+      "Flüssig → Fest"
+    ],
+    "correct": 1,
+    "explanation": "Kondensation: Gas kühlt ab und wird flüssig (Tau, Wolken).",
+    "topic": "Aggregatzustände"
+  },
+  {
+    "question": "Was ist Energie-Umwandlung?",
+    "options": [
+      "Energie geht verloren",
+      "Energie wechselt Form (z.B. elektrisch → Licht, chemisch → Wärme)",
+      "Energie entsteht neu",
+      "Energie wird gespeichert"
+    ],
+    "correct": 1,
+    "explanation": "Energie kann nicht entstehen oder vergehen – nur die Form wechseln (Energieerhaltungssatz).",
+    "topic": "Energie"
+  },
+  {
+    "question": "Was ist ein Schalter?",
+    "options": [
+      "Energiespeicher",
+      "Gerät das einen Stromkreis öffnet oder schließt",
+      "Widerstand",
+      "Glühbirne"
+    ],
+    "correct": 1,
+    "explanation": "Schalter: unterbricht oder verbindet einen Stromkreis.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist ein Experiment?",
+    "options": [
+      "Theoretische Überlegung",
+      "Durchführung unter kontrollierten Bedingungen um eine Hypothese zu testen",
+      "Beschreibung",
+      "Beobachtung ohne Test"
+    ],
+    "correct": 1,
+    "explanation": "Experiment: systematisches Testen einer Hypothese mit Messungen.",
+    "topic": "Naturwissenschaft"
+  },
+  {
+    "question": "Was ist die SI-Einheit der Länge?",
+    "options": [
+      "Zentimeter",
+      "Millimeter",
+      "Meter",
+      "Kilometer"
+    ],
+    "correct": 2,
+    "explanation": "SI-Einheit der Länge: Meter (m).",
+    "topic": "Maßeinheiten"
+  },
+  {
+    "question": "Was ist ein Umwandlungsprozess?",
+    "options": [
+      "Materialveränderung ohne Eigenschaftsveränderung",
+      "Änderung von Stoff oder Energie in eine andere Form",
+      "Bewegung eines Körpers",
+      "Messung eines Körpers"
+    ],
+    "correct": 1,
+    "explanation": "Umwandlungsprozesse: physikalisch (Aggregatzustand) oder chemisch (neue Stoffe).",
+    "topic": "Grundkonzepte"
+  }
+]

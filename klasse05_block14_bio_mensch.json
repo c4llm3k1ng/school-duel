@@ -1,42 +1,482 @@
 [
-  {"question":"Welches Organ pumpt das Blut durch den Körper?","options":["Lunge","Niere","Herz","Leber"],"correct":2,"explanation":"Das Herz ist ein Muskel und pumpt Blut durch den Blutkreislauf. Es schlägt ca. 70–80 Mal pro Minute in Ruhe (~100 000 Mal am Tag). Liegt leicht links in der Brust.","topic":"Organe"},
-  {"question":"Was macht die Lunge?","options":["Blut pumpen","Sauerstoff aus der Luft ins Blut aufnehmen und Kohlendioxid abgeben (Atmung) – zwei Lungenflügel, bestehen aus Millionen winziger Lungenbläschen (Alveolen)","Nahrung verdauen","Blut filtern"],"correct":1,"explanation":"Lunge: Sauerstoff (O₂) → Blut; CO₂ → Ausatemluft. Alveolen: sehr große Oberfläche (~70 m²!) für Gasaustausch. Rauchen schädigt die Alveolen dauerhaft.","topic":"Organe"},
-  {"question":"Was macht der Magen?","options":["Blut filtern","Nahrung speichern und mit Magensäure und Enzymen einweichen und zerkleinern – erste Station der chemischen Verdauung","Sauerstoff transportieren","Hormone produzieren"],"correct":1,"explanation":"Magen: Magensäure (pH ~2) tötet Keime und denaturiert Proteine. Magenbewegungen zerkleinern Nahrung. Magensaft enthält Enzyme (Pepsin für Proteine).","topic":"Organe"},
-  {"question":"Was macht die Leber?","options":["Sie pumpt Blut","Sie ist die 'Chemiefabrik' des Körpers: entgiftet Blut, produziert Galle (für Fettverdauung), speichert Zucker (Glykogen), baut Proteine ab","Sie filtert Urin","Sie produziert Insulin"],"correct":1,"explanation":"Leber: größte innere Drüse (ca. 1,5 kg). Entgiftet Alkohol, Medikamente. Gallenflüssigkeit → Darm → Fett emulgieren. Speichert Glukose als Glykogen-Puffer.","topic":"Organe"},
-  {"question":"Was macht die Niere?","options":["Sie produziert Blut","Sie filtert das Blut und produziert Urin – entfernt Harnstoff und andere Abfallprodukte; zwei Nieren, je eine Bohnenform","Sie verdaut Nahrung","Sie pumpt Blut"],"correct":1,"explanation":"Niere: filtert täglich ~200 Liter Blut. Davon werden 1,5–2 Liter Urin produziert. Reguliert auch Blutdruck und Wasserhaushalt. Bei Nierenversagen: Dialyse nötig.","topic":"Organe"},
-  {"question":"Was ist das Skelett?","options":["Das Nervensystem","Das Gerüst des Körpers aus ~206 Knochen – gibt Form, schützt Organe (Rippen schützen Lunge/Herz, Schädel schützt Gehirn), ermöglicht Bewegung","Die Muskulatur","Die Haut"],"correct":1,"explanation":"Skelett: 206 Knochen beim Erwachsenen (Babys: ~300, viele verwachsen). Knochen aus Kalziumphosphat – sehr hart und leicht. Knochen enthalten Knochenmark (Blutzellenproduktion).","topic":"Körperbau"},
-  {"question":"Was sind Muskeln?","options":["Knochen, die sich bewegen","Gewebe aus Muskelfasern, die sich zusammenziehen und so Bewegungen ermöglichen – anhängt an Knochen über Sehnen","Nerven","Blutgefäße"],"correct":1,"explanation":"Muskeln: ~650 Muskeln im menschlichen Körper. Antagonistenprinzip: Bizeps (Arm beugen) und Trizeps (Arm strecken). Herzmuskel: einziger unwillkürliche Muskel, der Herzschlag produziert.","topic":"Körperbau"},
-  {"question":"Was macht das Gehirn?","options":["Es pumpt Blut","Es ist die Steuerzentrale des Körpers: verarbeitet Sinneseindrücke, steuert Bewegungen, ermöglicht Denken, Fühlen, Sprechen, Erinnern","Es produziert Hormone","Es filtert Blut"],"correct":1,"explanation":"Gehirn: ~1,3 kg, ca. 86 Milliarden Nervenzellen. Teile: Großhirn (Denken), Kleinhirn (Koordination), Hirnstamm (Lebensfunktionen). Braucht ~20% des gesamten Energiebedarfs.","topic":"Organe"},
-  {"question":"Was sind rote Blutkörperchen?","options":["Zellen die Abwehr übernehmen","Zellen im Blut (Erythrozyten), die Sauerstoff durch den Körper transportieren – enthalten Hämoglobin (eisenhaltiger roter Farbstoff)","Blutplättchen","Plasma"],"correct":1,"explanation":"Rote Blutkörperchen (Erythrozyten): ~5 Mio./mm³ Blut. Kein Zellkern, prall gefüllt mit Hämoglobin. Lebenszeit: ca. 120 Tage. Gebildet im Knochenmark.","topic":"Blut"},
-  {"question":"Was machen weiße Blutkörperchen?","options":["Sauerstoff transportieren","Krankmachende Erreger (Bakterien, Viren) erkennen und bekämpfen – das Immunsystem","Blutgerinnung","Nährstoffe transportieren"],"correct":1,"explanation":"Weiße Blutkörperchen (Leukozyten): Abwehrzellen. Granulozyten fressen Bakterien. Lymphozyten bilden Antikörper. Bei Infektion steigt ihre Zahl stark an.","topic":"Blut"},
-  {"question":"Was ist die Pubertät?","options":["Eine Kinderkrankheit","Die Phase der körperlichen und seelischen Entwicklung vom Kind zum Erwachsenen (ca. 10–16 Jahre): Wachstum, Hormonveränderungen, Entwicklung der Geschlechtsorgane","Eine Schlafstörung","Eine Erkrankung"],"correct":1,"explanation":"Pubertät: Hypophyse produziert mehr Hormone → Testosteron (Jungen), Östrogen (Mädchen). Körperliche Veränderungen, Stimmungsschwankungen, erste Verliebtheit. Normal und gesund.","topic":"Entwicklung"},
-  {"question":"Was sind Sinnesorgane?","options":["Nur die Augen","Organe, die Reize aus der Umwelt aufnehmen: Augen (Sehen), Ohren (Hören), Nase (Riechen), Zunge (Schmecken), Haut (Tasten, Temperatur, Schmerz)","Nur Augen und Ohren","Die Muskeln"],"correct":1,"explanation":"5 Sinne: Sehen, Hören, Riechen, Schmecken, Tasten. Reize werden von Nerven ans Gehirn geleitet. Gleichgewichtssinn (Innenohr) und Tiefensensibilität als weitere Sinne.","topic":"Sinne"},
-  {"question":"Wie viele Knochen hat ein erwachsener Mensch?","options":["100","150","206","300"],"correct":2,"explanation":"Erwachsener: ca. 206 Knochen. Baby: ~300 (viele knorpelig, verwachsen später). Größter Knochen: Oberschenkelknochen (Femur). Kleinster: Steigbügel im Ohr (ca. 3 mm).","topic":"Körperbau"},
-  {"question":"Was ist die Verdauung?","options":["Die Aufnahme von Luft","Der Prozess, durch den Nahrung in kleinste Nährstoffe zerlegt wird, die ins Blut aufgenommen werden können – Mund → Speiseröhre → Magen → Dünndarm → Dickdarm","Die Atmung","Die Blutbildung"],"correct":1,"explanation":"Verdauungsweg: Mund (kauen, Amylase), Speiseröhre, Magen (Magensäure), Dünndarm (Aufnahme der Nährstoffe), Dickdarm (Wasserrückgewinnung), After (Ausscheidung).","topic":"Verdauung"},
-  {"question":"Was ist DNA?","options":["Ein Protein","Der Träger der Erbinformation in jeder Zelle – eine Doppelhelix aus Nukleotiden, die den 'Bauplan' für alle Proteine des Körpers enthält","Ein Fettmolekül","Ein Zucker"],"correct":1,"explanation":"DNA (Desoxyribonukleinsäure): liegt im Zellkern auf Chromosomen. Menschen haben 46 Chromosomen (23 Paare). DNA-Länge einer Zelle: ca. 2 m – aufgerollt auf ~6 Mikrometer Kern.","topic":"Genetik"},
-  {"question":"Was ist Hygiene?","options":["Sport treiben","Maßnahmen zum Schutz der Gesundheit: Händewaschen, Körperpflege, sauberes Trinkwasser – verhindert die Verbreitung von Krankheitserregern","Nur Zähneputzen","Eine Vitamingabe"],"correct":1,"explanation":"Hygiene: Händewaschen ist die wirksamste einzelne Maßnahme zur Infektionsprävention. Zähneputzen, Duschen, sauberes Trinkwasser – in Industrieländern selbstverständlich, weltweit nicht.","topic":"Gesundheit"},
-  {"question":"Was ist der Unterschied zwischen Bakterien und Viren?","options":["Kein Unterschied","Bakterien: eigene Zellen (Prokaryoten), können sich selbst vermehren, oft durch Antibiotika bekämpfbar. Viren: kein eigener Stoffwechsel, nutzen Wirtszellen zur Vermehrung, Antibiotika helfen nicht","Viren sind größer","Bakterien verursachen keine Krankheiten"],"correct":1,"explanation":"Bakterien: Zellen ohne Zellkern. Viele nützlich (Darmflora, Joghurt). Krankheitserreger: Salmonellen, Tuberkulose. Viren: DNA/RNA in Proteinhülle. Erkältung, Grippe, COVID = Viren.","topic":"Krankheitserreger"},
-  {"question":"Was ist ein Impfstoff?","options":["Ein Antibiotikum","Ein Präparat, das abgeschwächte oder tote Erreger (oder deren Teile) enthält und das Immunsystem trainiert, echte Erreger zu bekämpfen, ohne krank zu werden","Ein Schmerzmittel","Ein Vitamintablette"],"correct":1,"explanation":"Impfung: Körper bildet Gedächtniszellen und Antikörper gegen den Erreger. Bei Kontakt mit echtem Erreger: schnelle Abwehr. Pocken weltweit ausgerottet durch Impfung.","topic":"Gesundheit"},
-  {"question":"Was sind Hormone?","options":["Nährstoffe","Chemische Botenstoffe, die von Drüsen ins Blut abgegeben werden und Körperfunktionen steuern: Insulin (Blutzucker), Adrenalin (Stressreaktion), Wachstumshormon","Enzyme","Vitamine"],"correct":1,"explanation":"Hormone: wirken an Zielorganen. Insulin (Bauchspeicheldrüse): senkt Blutzucker. Adrenalin (Nebenniere): Kampf-oder-Flucht. Östrogen/Testosteron: Sexualhormone.","topic":"Hormone"},
-  {"question":"Was passiert beim Schlucken?","options":["Nährstoffe werden aufgenommen","Nahrung/Getränk wird aus dem Mund durch Kehlkopf (Kehldeckel schließt Atemweg) in die Speiseröhre transportiert – automatischer Reflex","Verdauung beginnt","Luft wird aufgenommen"],"correct":1,"explanation":"Schluckreflex: Kehldeckel (Epiglottis) verschließt Luftröhre beim Schlucken. Deshalb kann man nicht gleichzeitig atmen und schlucken. 'In die falsche Kehle geraten': Nahrung in Luftröhre.","topic":"Verdauung"},
-  {"question":"Was ist der Blutkreislauf?","options":["Ein Organ","Das System, durch das das Herz Blut durch den gesamten Körper pumpt: großer Kreislauf (Herz → Körper → Herz) und kleiner Kreislauf (Herz → Lunge → Herz)","Ein Sinn","Das Lymphsystem"],"correct":1,"explanation":"Blutkreislauf: Herz pumpt sauerstoffreiches Blut in die Arterien. Venen bringen sauerstoffarmes Blut zurück. Kleine Gefäße: Kapillaren (Ort des Nährstoffaustauschs).","topic":"Blutkreislauf"},
-  {"question":"Was sind Vitamine?","options":["Makronährstoffe wie Fette","Lebenswichtige organische Verbindungen, die der Körper meist nicht selbst herstellen kann und durch Nahrung aufnehmen muss: Vitamin C (Obst), Vitamin D (Sonne, Fisch)","Mineralstoffe","Kohlenhydrate"],"correct":1,"explanation":"Vitamine: A (Sehen, Haut), B-Gruppe (Energie, Nerven), C (Immunsystem, Bindegewebe), D (Knochen, Calcium), K (Blutgerinnung). Mangel führt zu Mangelkrankheiten (Skorbut = Vit. C).","topic":"Ernährung"},
-  {"question":"Was sind Kohlenhydrate?","options":["Bausteine von Eiweißen","Energielieferanten: Zucker (schnell verfügbar) und Stärke (langsam) – in Brot, Nudeln, Reis, Kartoffeln, Obst. Hauptbrennstoff für Muskeln und Gehirn","Fette","Vitamine"],"correct":1,"explanation":"Kohlenhydrate: 4 kcal/g. Schnelle KH: Traubenzucker sofort verfügbar. Langsame KH: Vollkorn (Stärke + Ballaststoffe) → länger satt. Gehirn braucht täglich ~140 g Glukose.","topic":"Ernährung"},
-  {"question":"Was ist eine ausgewogene Ernährung?","options":["Nur Salat essen","Eine Ernährung, die alle notwendigen Nährstoffe in der richtigen Menge enthält: viel Gemüse/Obst, Vollkorn, Hülsenfrüchte, Milchprodukte, wenig Zucker und Fett","Viel Fleisch täglich","Nur Bio-Produkte"],"correct":1,"explanation":"Ernährungspyramide: Basis = Wasser, viel Gemüse/Obst, Getreide/Brot, Milchprodukte, wenig Fleisch/Süßes. 5 Mahlzeiten täglich, nicht zu viel auf einmal.","topic":"Ernährung"},
-  {"question":"Was sind Eiweißstoffe (Proteine)?","options":["Energiespeicher wie Fett","Bausteine von Muskeln, Enzymen, Hormonen und Zellen – in Fleisch, Fisch, Eiern, Hülsenfrüchten, Milchprodukten; wichtig für Wachstum und Reparatur","Vitamine","Zucker"],"correct":1,"explanation":"Proteine: aus Aminosäuren aufgebaut. 20 Aminosäuren, 8 essentiell (müssen durch Nahrung aufgenommen werden). Tagesbedarf: ca. 0,8 g/kg Körpergewicht.","topic":"Ernährung"},
-  {"question":"Was sind Fette?","options":["Nur schädlich","Energiedichte Nährstoffe (9 kcal/g): wichtig für Zellmembranen, Nerven, fettlösliche Vitamine (A,D,E,K). Ungesättigte Fettsäuren (Öle, Fisch) besser als gesättigte (Butter, Fleisch)","Nur in Butter enthalten","Ein Abfallprodukt"],"correct":1,"explanation":"Fette: 9 kcal/g (mehr als KH oder Eiweiß mit je 4 kcal/g). Ungesättigte FS: Pflanzenöle, Nüsse, Fisch → herzgesund. Gesättigte FS: tierisches Fett → in Maßen.","topic":"Ernährung"},
-  {"question":"Wie funktioniert das Auge?","options":["Wie eine Kamera mit Film","Licht trifft auf die Hornhaut, wird durch Linse fokussiert und auf die Netzhaut (Retina) projiziert – Rezeptoren wandeln Licht in Nervenimpulse um, Gehirn verarbeitet das Bild","Wie ein Mikrofon","Es gibt Licht ab"],"correct":1,"explanation":"Auge: Stäbchen (Schwarzweiß, Dämmerung) und Zapfen (Farben) in der Netzhaut. Sehnerv → Gehirn (Sehrinde). Linse verändert ihre Form zum Fokussieren (Akkommodation).","topic":"Sinne"},
-  {"question":"Wie funktioniert das Ohr?","options":["Es sendet Schallwellen aus","Schallwellen bringen das Trommelfell zum Schwingen → Gehörknöchelchen (Hammer, Amboss, Steigbügel) verstärken → Cochlea wandelt in Nervenimpulse um","Es filtert Luft","Es regelt Temperatur"],"correct":1,"explanation":"Ohr: Außenohr (fängt Schall), Mittelohr (Trommelfell + Gehörknöchelchen), Innenohr (Cochlea = Hörschnecke; Gleichgewichtsorgan). Gehörschutz wichtig bei Lärm.","topic":"Sinne"},
-  {"question":"Was ist ein Reflex?","options":["Eine bewusste Reaktion","Eine unwillkürliche, automatische Reaktion des Körpers auf einen Reiz ohne Beteiligung des Gehirns (über Rückenmark): Kniescheibenreflex, Lichtreflex der Pupille","Eine Denkaufgabe","Ein Lernprozess"],"correct":1,"explanation":"Reflex: Reiz → Sinnesorgan → Rückenmark → Muskel. Schnell weil kein Umweg über Gehirn. Schutzreflexe: Hand zurückziehen beim Verbrennen. Kniescheibenreflex beim Arzt testen.","topic":"Nervensystem"},
-  {"question":"Was ist der Unterschied zwischen Arterie und Vene?","options":["Kein Unterschied","Arterien führen Blut vom Herzen weg (meist sauerstoffreich), Venen führen Blut zum Herzen hin (meist sauerstoffarm) – Arterien haben dickere Wände","Venen führen vom Herzen weg","Arterien führen nur sauerstoffarmes Blut"],"correct":1,"explanation":"Arterien: dickwandig, elastisch (Blutdruck!). Venen: dünner, Venenklappen verhindern Rückfluss. Ausnahme: Lungenschlagader = Arterie mit sauerstoffarmem Blut.","topic":"Blutkreislauf"},
-  {"question":"Was macht die Haut?","options":["Nur zum Tasten","Schutzorgan: schützt vor Austrocknung, UV-Strahlung, Keimen; regelt Körpertemperatur (Schwitzen, Gänsehaut); größtes Organ des Körpers (~1,8 m²)","Nur Wärmeregulierung","Nur Tastsinn"],"correct":1,"explanation":"Haut: Epidermis (Oberhaut), Dermis (Lederhaut mit Nerven, Gefäßen), Subcutis (Unterhaut mit Fett). Enthält: Schweißdrüsen, Haarfollikel, Talgdrüsen, Meissner-Körperchen (Tasten).","topic":"Organe"},
-  {"question":"Was ist das Zwerchfell?","options":["Ein Knochen","Ein großer Muskel zwischen Brust- und Bauchraum, der die Atmung steuert – zieht sich beim Einatmen zusammen (flacht ab) und entspannt sich beim Ausatmen (wölbt sich nach oben)","Ein Sinnesorgan","Ein Teil des Gehirns"],"correct":1,"explanation":"Zwerchfell (Diaphragma): wichtigster Atemmuskel. Beim Einatmen: zieht sich zusammen, Brustraum vergrößert sich, Luft strömt in die Lunge. Schluckauf: unwillkürliches Zucken des Zwerchfells.","topic":"Organe"},
-  {"question":"Was ist Insulin?","options":["Ein Vitamin","Ein Hormon, das die Bauchspeicheldrüse produziert und den Blutzuckerspiegel senkt, indem es Zellen hilft, Zucker aus dem Blut aufzunehmen","Ein Enzym im Magen","Ein Mineral"],"correct":1,"explanation":"Insulin: bei Diabetes (Zuckerkrankheit) funktioniert die Insulinproduktion oder -wirkung nicht richtig. Typ-1-Diabetiker müssen Insulin spritzen. Gegenspieler: Glukagon (erhöht Blutzucker).","topic":"Hormone"},
-  {"question":"Was sind die vier Blutgruppen beim Menschen?","options":["1, 2, 3, 4","A, B, AB, 0 – bestimmt durch bestimmte Merkmale (Antigene) auf den roten Blutkörperchen; wichtig bei Bluttransfusionen, da nicht jede Blutgruppe mit jeder verträglich ist","X, Y, Z, W","Rot, Blau, Grün, Gelb"],"correct":1,"explanation":"Blutgruppen: A, B, AB, 0 plus Rhesusfaktor (positiv/negativ). Blutgruppe 0 negativ: 'Universalspender'. AB positiv: 'Universalempfänger'. Bei falscher Transfusion: gefährliche Verklumpung des Blutes.","topic":"Blut"},
-  {"question":"Was ist die Wirbelsäule?","options":["Ein Muskel","Die Kette aus 33–34 Wirbelknochen entlang des Rückens, die den Körper stützt, das Rückenmark schützt und Beweglichkeit ermöglicht","Ein Organ","Ein Nerv"],"correct":1,"explanation":"Wirbelsäule: Halswirbel (7), Brustwirbel (12), Lendenwirbel (5), Kreuzbein, Steißbein. S-Form: federt Stöße ab (aufrechter Gang). Bandscheiben zwischen den Wirbeln: wirken wie Stoßdämpfer.","topic":"Körperbau"},
-  {"question":"Was ist das Rückenmark?","options":["Ein Knochen","Ein Nervenstrang, der durch die Wirbelsäule verläuft und Gehirn mit dem restlichen Körper verbindet – leitet Nervenimpulse und steuert Reflexe","Ein Muskel","Ein Blutgefäß"],"correct":1,"explanation":"Rückenmark: Teil des zentralen Nervensystems (zusammen mit Gehirn). Gut geschützt durch die Wirbelsäule. Verletzungen können zu Lähmungen führen, da Nervensignale nicht mehr durchkommen.","topic":"Nervensystem"},
-  {"question":"Wie viele Zähne hat ein erwachsener Mensch normalerweise?","options":["20","32","28","40"],"correct":1,"explanation":"Erwachsener: 32 Zähne (inkl. 4 Weisheitszähne). Milchgebiss (Kinder): 20 Zähne. Zahnarten: Schneidezähne (Abbeißen), Eckzähne (Reißen), Backenzähne/Mahlzähne (Zermahlen).","topic":"Körperbau"},
-  {"question":"Was ist Schweiß und wozu dient er?","options":["Ein Abfallprodukt ohne Funktion","Eine wässrige Flüssigkeit, die von Schweißdrüsen abgesondert wird und beim Verdunsten den Körper kühlt – wichtig zur Regulierung der Körpertemperatur","Ein Hormon","Ein Verdauungssaft"],"correct":1,"explanation":"Schweiß: über 2 Mio. Schweißdrüsen am Körper. Verdunstungskälte kühlt die Haut. Bei großer Hitze oder Anstrengung kann der Körper bis zu 2-3 Liter Schweiß pro Stunde produzieren.","topic":"Organe"},
-  {"question":"Was ist die Körpertemperatur eines gesunden Menschen?","options":["Ca. 30°C","Ca. 36,5–37°C – wird durch das Gehirn (Hypothalamus) reguliert; Abweichungen können auf Krankheit (Fieber) oder Unterkühlung hinweisen","Ca. 40°C","Ca. 25°C"],"correct":1,"explanation":"Normaltemperatur: 36,5–37°C. Fieber: über 38°C, Abwehrreaktion des Körpers gegen Krankheitserreger. Unterkühlung: unter 35°C, gefährlich. Der Hypothalamus im Gehirn ist die Körper-'Klimaanlage'.","topic":"Organe"},
-  {"question":"Was ist eine Allergie?","options":["Eine Infektion","Eine Überreaktion des Immunsystems auf eigentlich harmlose Stoffe (Allergene) wie Pollen, Tierhaare, bestimmte Lebensmittel oder Hausstaubmilben","Eine Verletzung","Ein Vitaminmangel"],"correct":1,"explanation":"Allergie: Immunsystem bekämpft fälschlicherweise harmlose Stoffe. Heuschnupfen: häufigste Allergie (Pollen). Symptome: Niesen, Juckreiz, Hautausschlag. Schwere Form: anaphylaktischer Schock (lebensgefährlich).","topic":"Gesundheit"}
+  {
+    "question": "Was ist die Aufgabe des Herzens?",
+    "options": [
+      "Nahrung verdauen",
+      "Blut durch den Körper pumpen",
+      "Sauerstoff aufnehmen",
+      "Hormone produzieren"
+    ],
+    "correct": 1,
+    "explanation": "Das Herz ist eine Pumpe – pumpt Blut durch Arterien und Venen.",
+    "topic": "Organe"
+  },
+  {
+    "question": "Was ist das Skelett?",
+    "options": [
+      "Muskeln",
+      "Knöchernes Gerüst das Körper stützt, schützt und Bewegung ermöglicht",
+      "Innere Organe",
+      "Nervensystem"
+    ],
+    "correct": 1,
+    "explanation": "Das Skelett: 206 Knochen, Stützgerüst, Schutz für Organe.",
+    "topic": "Körperbau"
+  },
+  {
+    "question": "Wie viele Knochen hat ein Erwachsener?",
+    "options": [
+      "100",
+      "150",
+      "206",
+      "300"
+    ],
+    "correct": 2,
+    "explanation": "Erwachsene haben 206 Knochen.",
+    "topic": "Körperbau"
+  },
+  {
+    "question": "Was ist der Blutkreislauf?",
+    "options": [
+      "Weg des Essens",
+      "System von Herz und Blutgefäßen das Blut durch den Körper transportiert",
+      "Lymphsystem",
+      "Nervensystem"
+    ],
+    "correct": 1,
+    "explanation": "Blutkreislauf: Herz pumpt Blut durch Arterien und Venen.",
+    "topic": "Herz-Kreislauf"
+  },
+  {
+    "question": "Was sind Arterien?",
+    "options": [
+      "Blutgefäße die Blut vom Herz weg führen",
+      "Blutgefäße die Blut zum Herz führen",
+      "Blutplättchen",
+      "Muskeln"
+    ],
+    "correct": 0,
+    "explanation": "Arterien: führen Blut vom Herzen weg (meist sauerstoffreich).",
+    "topic": "Blutgefäße"
+  },
+  {
+    "question": "Was sind Venen?",
+    "options": [
+      "Blutgefäße die Blut vom Herz weg führen",
+      "Blutgefäße die Blut zum Herz zurückführen",
+      "Nerven",
+      "Muskeln"
+    ],
+    "correct": 1,
+    "explanation": "Venen: führen Blut zum Herzen zurück (meist sauerstoffarm).",
+    "topic": "Blutgefäße"
+  },
+  {
+    "question": "Was ist der Magen?",
+    "options": [
+      "Lunge",
+      "Organ wo Nahrung durch Magensäure vorverdaut wird",
+      "Darm",
+      "Leber"
+    ],
+    "correct": 1,
+    "explanation": "Magen: zerkleinert und vorverdaut Nahrung chemisch.",
+    "topic": "Verdauung"
+  },
+  {
+    "question": "Was ist der Darm?",
+    "options": [
+      "Lunge",
+      "Langer Schlauch wo Nährstoffe aus der Nahrung ins Blut aufgenommen werden",
+      "Magen",
+      "Niere"
+    ],
+    "correct": 1,
+    "explanation": "Dünndarm: Nährstoffe → Blut. Dickdarm: Wasserentzug, Ausscheidung.",
+    "topic": "Verdauung"
+  },
+  {
+    "question": "Was ist die Leber?",
+    "options": [
+      "Pumpt Blut",
+      "Wichtigstes Stoffwechselorgan: entgiftet Blut, produziert Galle",
+      "Lunge",
+      "Niere"
+    ],
+    "correct": 1,
+    "explanation": "Leber: entgiftet, Galleproduktion, Stoffwechsel – größtes inneres Organ.",
+    "topic": "Organe"
+  },
+  {
+    "question": "Was machen Nieren?",
+    "options": [
+      "Pumpen Blut",
+      "Filtern Abfallstoffe aus dem Blut und produzieren Urin",
+      "Verdauen Nahrung",
+      "Produzieren Sauerstoff"
+    ],
+    "correct": 1,
+    "explanation": "Nieren: filtern Blut, produzieren Urin, regulieren Flüssigkeitshaushalt.",
+    "topic": "Organe"
+  },
+  {
+    "question": "Was ist das Gehirn?",
+    "options": [
+      "Herz des Körpers",
+      "Steuerungszentrale des Nervensystems, kontrolliert alles",
+      "Magen",
+      "Lunge"
+    ],
+    "correct": 1,
+    "explanation": "Gehirn: Steuerzentrale für Denken, Fühlen, Bewegung, Körperfunktionen.",
+    "topic": "Nervensystem"
+  },
+  {
+    "question": "Was sind Nerven?",
+    "options": [
+      "Muskeln",
+      "Leitungsbahnen die Signale zwischen Gehirn und Körper übertragen",
+      "Blutgefäße",
+      "Sehnen"
+    ],
+    "correct": 1,
+    "explanation": "Nerven: übertragen elektrische Signale (Reize und Befehle).",
+    "topic": "Nervensystem"
+  },
+  {
+    "question": "Was sind Muskeln?",
+    "options": [
+      "Knochen",
+      "Gewebe das sich zusammenziehen kann um Bewegung zu erzeugen",
+      "Nerven",
+      "Organe"
+    ],
+    "correct": 1,
+    "explanation": "Muskeln: kontrahieren sich und ermöglichen so Bewegung.",
+    "topic": "Bewegungsapparat"
+  },
+  {
+    "question": "Was ist Hygiene?",
+    "options": [
+      "Sport",
+      "Maßnahmen zur Sauberkeit und Krankheitsvorbeugung",
+      "Ernährung",
+      "Schlaf"
+    ],
+    "correct": 1,
+    "explanation": "Hygiene: Körperpflege, Händewaschen, Sauberkeit um Krankheiten zu vermeiden.",
+    "topic": "Gesundheit"
+  },
+  {
+    "question": "Was passiert beim Einatmen?",
+    "options": [
+      "Luft wird ausgepresst",
+      "Sauerstoff wird aufgenommen, Lungen weiten sich",
+      "Lungen kollabieren",
+      "Blut wird gefiltert"
+    ],
+    "correct": 1,
+    "explanation": "Einatmen: Zwerchfell senkt sich, Lungen weiten sich, Sauerstoff hinein.",
+    "topic": "Atmung"
+  },
+  {
+    "question": "Was ist ein Gelenk?",
+    "options": [
+      "Muskel",
+      "Verbindung zwischen zwei Knochen die Bewegung ermöglicht",
+      "Sehne",
+      "Nerv"
+    ],
+    "correct": 1,
+    "explanation": "Gelenke: Knie, Ellenbogen – erlauben Bewegung der Knochen gegeneinander.",
+    "topic": "Körperbau"
+  },
+  {
+    "question": "Was ist die Pubertät?",
+    "options": [
+      "Kindheit",
+      "Phase der körperlichen und geistigen Reifung im Jugendalter",
+      "Alter",
+      "Schwangerschaft"
+    ],
+    "correct": 1,
+    "explanation": "Pubertät: Wachstum, Hormonveränderungen, Reifung zum Erwachsenen.",
+    "topic": "Entwicklung"
+  },
+  {
+    "question": "Was sind Hormone?",
+    "options": [
+      "Vitamine",
+      "Chemische Botenstoffe die Körperfunktionen steuern",
+      "Nährstoffe",
+      "Nervenzellen"
+    ],
+    "correct": 1,
+    "explanation": "Hormone: Adrenalin, Insulin, Östrogen – steuern Wachstum, Stoffwechsel, Stimmung.",
+    "topic": "Hormonsystem"
+  },
+  {
+    "question": "Was ist Insulin?",
+    "options": [
+      "Verdauungsenzym",
+      "Hormon das den Blutzucker reguliert",
+      "Vitamin",
+      "Antibiotikum"
+    ],
+    "correct": 1,
+    "explanation": "Insulin: von der Bauchspeicheldrüse produziert – senkt Blutzucker.",
+    "topic": "Hormonsystem"
+  },
+  {
+    "question": "Was ist Diabetes?",
+    "options": [
+      "Knochenkrankheit",
+      "Stoffwechselerkrankung mit zu hohem Blutzucker",
+      "Lungenerkrankung",
+      "Herzerkrankung"
+    ],
+    "correct": 1,
+    "explanation": "Diabetes: Körper kann Blutzucker nicht regulieren (fehlendes Insulin).",
+    "topic": "Krankheiten"
+  },
+  {
+    "question": "Was ist eine Sehne?",
+    "options": [
+      "Nerv",
+      "Verbindungsgewebe zwischen Muskel und Knochen",
+      "Gelenk",
+      "Blutgefäß"
+    ],
+    "correct": 1,
+    "explanation": "Sehnen: verbinden Muskeln mit Knochen.",
+    "topic": "Körperbau"
+  },
+  {
+    "question": "Was ist Kalzium wichtig für?",
+    "options": [
+      "Muskeln",
+      "Knochen und Zähne",
+      "Blut",
+      "Nerven"
+    ],
+    "correct": 1,
+    "explanation": "Kalzium: stärkt Knochen und Zähne.",
+    "topic": "Nährstoffe"
+  },
+  {
+    "question": "Was ist Vitamin C?",
+    "options": [
+      "Mineral",
+      "Vitamin das Immunsystem stärkt und in Obst vorkommt",
+      "Fett",
+      "Kohlenhydrat"
+    ],
+    "correct": 1,
+    "explanation": "Vitamin C: in Zitrusfrüchten, stärkt Immunsystem, verhindert Skorbut.",
+    "topic": "Vitamine"
+  },
+  {
+    "question": "Was macht das Immunsystem?",
+    "options": [
+      "Blut pumpen",
+      "Körper gegen Krankheitserreger verteidigen",
+      "Nahrung verdauen",
+      "Knochen stärken"
+    ],
+    "correct": 1,
+    "explanation": "Immunsystem: Abwehr von Viren, Bakterien, Pilzen.",
+    "topic": "Immunsystem"
+  },
+  {
+    "question": "Was ist eine Impfung?",
+    "options": [
+      "Medikament gegen Bakterien",
+      "Einführung abgeschwächter Erreger um Immunsystem zu trainieren",
+      "Operation",
+      "Diät"
+    ],
+    "correct": 1,
+    "explanation": "Impfung: trainiert das Immunsystem vorab – Schutz gegen echte Infektion.",
+    "topic": "Immunsystem"
+  },
+  {
+    "question": "Was ist der Unterschied Viren/Bakterien?",
+    "options": [
+      "Kein Unterschied",
+      "Viren sind kleiner und brauchen Wirt zum Vermehren; Bakterien sind eigenständige Zellen",
+      "Viren sind größer",
+      "Bakterien brauchen Wirt"
+    ],
+    "correct": 1,
+    "explanation": "Viren: kleiner, brauchen lebende Zelle. Bakterien: eigenständige Organismen.",
+    "topic": "Krankheitserreger"
+  },
+  {
+    "question": "Was ist ein Antibiotikum?",
+    "options": [
+      "Medikament gegen Viren",
+      "Medikament gegen Bakterien",
+      "Vitamin",
+      "Impfstoff"
+    ],
+    "correct": 1,
+    "explanation": "Antibiotika: töten oder hemmen Bakterien. Gegen Viren wirkungslos!",
+    "topic": "Medizin"
+  },
+  {
+    "question": "Was ist ein gesunder Lebensstil?",
+    "options": [
+      "Viel sitzen",
+      "Ausgewogene Ernährung, Sport, Schlaf und kein Rauchen",
+      "Nur Sport",
+      "Nur gutes Essen"
+    ],
+    "correct": 1,
+    "explanation": "Gesunder Lebensstil: Bewegung, ausgewogene Ernährung, ausreichend Schlaf.",
+    "topic": "Gesundheit"
+  },
+  {
+    "question": "Was tut das Zwerchfell?",
+    "options": [
+      "Pumpt Blut",
+      "Trennmuskel zwischen Brust und Bauch der beim Atmen hilft",
+      "Verdaut Nahrung",
+      "Filtert Blut"
+    ],
+    "correct": 1,
+    "explanation": "Zwerchfell: Hauptmuskel der Atmung – senkt sich beim Einatmen.",
+    "topic": "Atmung"
+  },
+  {
+    "question": "Was ist der Herzschlag?",
+    "options": [
+      "Nervensignal",
+      "Zusammenziehen des Herzens das Blut pumpt",
+      "Lungenbewegung",
+      "Magenbewegung"
+    ],
+    "correct": 1,
+    "explanation": "Herzschlag: Systole (Kontraktion) und Diastole (Entspannung) – ca. 70/min.",
+    "topic": "Herz"
+  },
+  {
+    "question": "Was ist Bluthochdruck?",
+    "options": [
+      "Zu niedriger Blutdruck",
+      "Dauerhaft erhöhter Druck in den Blutgefäßen – Risikofaktor für Herzinfarkt",
+      "Blutarmut",
+      "Zuckerkrankheit"
+    ],
+    "correct": 1,
+    "explanation": "Bluthochdruck: belastet Herz und Gefäße – Risiko für Herzinfarkt/Schlaganfall.",
+    "topic": "Krankheiten"
+  },
+  {
+    "question": "Was sind Kohlenhydrate?",
+    "options": [
+      "Fette",
+      "Nährstoffe die schnell Energie liefern (Brot, Nudeln, Zucker)",
+      "Proteine",
+      "Vitamine"
+    ],
+    "correct": 1,
+    "explanation": "Kohlenhydrate: wichtigste Energiequelle. In Brot, Nudeln, Zucker, Obst.",
+    "topic": "Ernährung"
+  },
+  {
+    "question": "Was sind Proteine?",
+    "options": [
+      "Kohlenhydrate",
+      "Nährstoffe aus Aminosäuren – Bausteine für Zellen, Muskeln, Enzyme",
+      "Fette",
+      "Vitamine"
+    ],
+    "correct": 1,
+    "explanation": "Proteine: in Fleisch, Fisch, Hülsenfrüchten – Bausteine des Körpers.",
+    "topic": "Ernährung"
+  },
+  {
+    "question": "Was ist das zentrale Nervensystem?",
+    "options": [
+      "Nur das Gehirn",
+      "Gehirn und Rückenmark als Steuerzentrale des Körpers",
+      "Alle Nerven im Körper",
+      "Nur das Rückenmark"
+    ],
+    "correct": 1,
+    "explanation": "ZNS = Gehirn + Rückenmark – Steuerung aller Körperfunktionen.",
+    "topic": "Nervensystem"
+  },
+  {
+    "question": "Was ist der Tastsinn?",
+    "options": [
+      "Sehen",
+      "Fühlen durch Hautrezeptoren (Druck, Wärme, Schmerz)",
+      "Hören",
+      "Riechen"
+    ],
+    "correct": 1,
+    "explanation": "Tastsinn: Hautrezeptoren nehmen Berührung, Temperatur und Schmerz wahr.",
+    "topic": "Sinnesorgane"
+  },
+  {
+    "question": "Was ist der Sehvorgang?",
+    "options": [
+      "Licht geht durch Ohr",
+      "Licht trifft Netzhaut im Auge, Signal geht an Gehirn",
+      "Licht geht durch Haut",
+      "Licht wird reflektiert"
+    ],
+    "correct": 1,
+    "explanation": "Auge: Linse fokussiert Licht auf Netzhaut → Nervensignal → Gehirn.",
+    "topic": "Sinnesorgane"
+  },
+  {
+    "question": "Was macht die Bauchspeicheldrüse?",
+    "options": [
+      "Pumpt Blut",
+      "Produziert Verdauungsenzyme und Insulin",
+      "Filtert Blut",
+      "Speichert Galle"
+    ],
+    "correct": 1,
+    "explanation": "Bauchspeicheldrüse: Verdauungsenzyme in Darm + Insulin ins Blut.",
+    "topic": "Organe"
+  },
+  {
+    "question": "Was ist ein Knochenbruch?",
+    "options": [
+      "Muskelriss",
+      "Bruch eines Knochens durch zu starke Krafteinwirkung",
+      "Gelenkverletzung",
+      "Nervenschaden"
+    ],
+    "correct": 1,
+    "explanation": "Knochenbruch: Knochen reißt – heilt in 6–8 Wochen nach Ruhigstellung.",
+    "topic": "Verletzungen"
+  },
+  {
+    "question": "Was ist Ernährungsumstellung?",
+    "options": [
+      "Sport",
+      "Andere Zusammensetzung der täglichen Kost um gesünder zu leben",
+      "Impfung",
+      "Schlaf"
+    ],
+    "correct": 1,
+    "explanation": "Ernährungsumstellung: z.B. weniger Zucker, mehr Gemüse für gesünderes Leben.",
+    "topic": "Gesundheit"
+  },
+  {
+    "question": "Was ist die Wirbelsäule?",
+    "options": [
+      "Ein einziger Knochen",
+      "Kette aus Wirbeln die Rücken stützt und Rückenmark schützt",
+      "Schulterblatt",
+      "Hüftknochen"
+    ],
+    "correct": 1,
+    "explanation": "Wirbelsäule: 33-34 Wirbel, Stütze und Schutz des Rückenmarks.",
+    "topic": "Körperbau"
+  }
 ]

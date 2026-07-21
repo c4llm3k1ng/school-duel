@@ -1,42 +1,482 @@
 [
-  {"question":"Was ist ein Aufsatz?","options":["Ein Gedicht","Ein längerer schriftlicher Text, der ein Thema strukturiert darstellt – Einleitung (Einstieg), Hauptteil (Inhalt, Argumente), Schluss (Fazit, Abschluss)","Ein Brief","Ein Tagebucheintrag"],"correct":1,"explanation":"Aufsatz: Grundstruktur Einleitung–Hauptteil–Schluss gilt für fast alle Textsorten. Einleitung: neugierig machen, Thema vorstellen. Hauptteil: ausführlich, gegliedert. Schluss: Zusammenfassung, eigene Meinung.","topic":"Textsorten"},
-  {"question":"Was ist eine Erzählung?","options":["Eine sachliche Beschreibung","Ein Text, der Ereignisse in einer bestimmten Reihenfolge schildert – hat Personen, Ort, Zeit, Handlung; oft mit Spannung, Höhepunkt und Auflösung","Eine Tabelle","Eine Liste"],"correct":1,"explanation":"Erzählung: zeigt, was passiert. Unterschied Beschreibung: zeigt, wie etwas aussieht. Handlungsaufbau: Einleitung → Komplikation → Höhepunkt → Auflösung → Abschluss.","topic":"Textsorten"},
-  {"question":"Was ist eine Beschreibung?","options":["Eine Geschichte","Ein Text, der das Aussehen, die Eigenschaften oder den Ablauf von etwas genau darstellt – Personenbeschreibung, Tierbeschreibung, Vorgangsbeschreibung (z.B. Rezept)","Eine Meinung","Ein Brief"],"correct":1,"explanation":"Beschreibung: sachlich, präzise, im Präsens. Personenbeschreibung: äußere Merkmale (Größe, Haare, Kleidung). Vorgangsbeschreibung: Schritte in richtiger Reihenfolge, oft nummeriert.","topic":"Textsorten"},
-  {"question":"Was ist ein Gedicht?","options":["Ein sachlicher Text","Ein literarischer Text mit oft rhythmischer Sprache, Reimen, Strophen und Zeilen – nutzt Sprachbilder (Metaphern, Vergleiche) und erzeugt durch Klang und Rhythmus Wirkung","Eine Inhaltsangabe","Ein Bericht"],"correct":1,"explanation":"Gedicht: Zeilen (Verse), Strophen. Reim: aabb (Paarreim), abab (Kreuzreim), abba (umarmender Reim). Freie Gedichte: kein Reim. Klangfiguren: Alliteration, Assonanz.","topic":"Textsorten"},
-  {"question":"Was ist ein Reimschema?","options":["Eine Grammatikregel","Die Anordnung der Reime in einem Gedicht – Paarreim (aa bb), Kreuzreim (ab ab), umarmender Reim (ab ba)","Die Strophenlänge","Der Rhythmus"],"correct":1,"explanation":"Reimschema: man kennzeichnet jede Reimzeile mit einem Buchstaben. Gleiche Buchstaben = gleichlautende Endsilben. aa bb cc = Paarreim. Einfachstes Schema zum Erkennen und Schreiben.","topic":"Gedichte"},
-  {"question":"Was ist eine Strophe?","options":["Ein einzelnes Wort","Ein Abschnitt in einem Gedicht, ähnlich wie ein Absatz in einem Text – mehrere Verse (Zeilen) bilden eine Strophe, danach Leerzeile","Ein Reim","Ein Vers"],"correct":1,"explanation":"Strophe: Gliederungseinheit im Gedicht. Vers = einzelne Zeile. Sonnett: 4 Strophen (4+4+3+3 Verse). Haiku: 3 Zeilen (5-7-5 Silben). Ballade: längeres erzählendes Gedicht mit Strophen.","topic":"Gedichte"},
-  {"question":"Was ist eine Metapher?","options":["Ein Reim","Ein Sprachbild, das etwas mit etwas anderem gleichsetzt, ohne 'wie' – 'Das Leben ist eine Reise' oder 'Zähne des Kamms'","Ein wörtliches Bild","Ein Adjektiv"],"correct":1,"explanation":"Metapher: übertragene Bedeutung ohne Vergleichspartikel. 'Das Herz aus Stein' (kalt, gefühllos). Unterschied Vergleich: 'Er läuft wie ein Pferd' (mit 'wie') vs. Metapher: 'Er ist ein Pfeil' (ohne 'wie').","topic":"Stilmittel"},
-  {"question":"Was ist ein Vergleich (Simile)?","options":["Eine Metapher","Ein Sprachbild, das zwei Dinge mithilfe von 'wie' oder 'als' gegenüberstellt: 'Er ist stark wie ein Ochse', 'Sie ist schnell wie der Wind'","Eine Personifikation","Eine Alliteration"],"correct":1,"explanation":"Vergleich: mit Vergleichspartikel 'wie' oder 'als'. Metapher: ohne 'wie'/'als'. Vergleiche machen Texte anschaulicher. Übertriebene Vergleiche = Hyperbel.","topic":"Stilmittel"},
-  {"question":"Was ist eine Personifikation?","options":["Ein Vergleich","Ein Stilmittel, bei dem Dingen oder Tieren menschliche Eigenschaften gegeben werden: 'Der Wind flüstert', 'Die Bäume tanzen im Wind'","Eine Alliteration","Eine Metapher"],"correct":1,"explanation":"Personifikation: Natur/Gegenstände werden vermenschlicht. In Märchen und Gedichten häufig. 'Die Sonne lacht', 'Der Tod klopft an'. Wirkung: macht Beschreibungen lebendig.","topic":"Stilmittel"},
-  {"question":"Was ist eine Alliteration?","options":["Ein Reim am Zeilenende","Die Wiederholung des gleichen Anfangslauts bei mehreren aufeinanderfolgenden Wörtern: 'Milch macht müde Männer munter'","Ein Rhythmus","Eine Metapher"],"correct":1,"explanation":"Alliteration: gleiche Anlautbuchstaben. Werbung nutzt sie oft (McDonalds). In Gedichten für Klang. Beispiele: 'Fisch, Fleisch, Fett', 'Wald und Wiesen', 'Peter Piper picked a peck...'.","topic":"Stilmittel"},
-  {"question":"Was ist Synonyme?","options":["Wörter mit gegenteiliger Bedeutung","Wörter mit gleicher oder ähnlicher Bedeutung: 'schön', 'hübsch', 'attraktiv', 'ansehnlich' – machen Texte abwechslungsreicher","Wörter die gleich klingen aber unterschiedliche Bedeutung haben","Verkleinerte Wörter"],"correct":1,"explanation":"Synonyme: wichtig für Texte (Wiederholung vermeiden). Thesaurus: Wörterbuch für Synonyme. Achtung: Synonyme sind nie 100% gleich – Nuancen beachten! 'gehen' ≠ 'schlendern' ≠ 'stapfen'.","topic":"Wortschatz"},
-  {"question":"Was sind Antonyme?","options":["Synonyme","Wörter mit entgegengesetzter Bedeutung: 'groß – klein', 'hell – dunkel', 'schnell – langsam', 'kalt – warm'","Oberbegriffe","Verkleinerungsformen"],"correct":1,"explanation":"Antonyme (Gegenwörter): nützlich für Vergleiche und Kontraste in Texten. Nicht alle Wörter haben Antonyme (Tisch, Stift). Stilmittel des Kontrasts: 'Die Nacht ist hell, der Tag ist dunkel' (Oxymoron).","topic":"Wortschatz"},
-  {"question":"Was ist die Einleitung eines Aufsatzes?","options":["Das Ende","Der Beginn eines Textes, der das Thema vorstellt und den Leser neugierig macht – kann mit einer Frage, einem Zitat, einer überraschenden Aussage oder einem Erlebnis beginnen","Die Zusammenfassung","Die Argumente"],"correct":1,"explanation":"Einleitung: 3–5 Sätze, nicht zu lang. Aufgaben: Leser ansprechen, Thema einführen, auf Hauptteil überleiten. Gute Einstiege: Frage stellen, überraschendes Bild, Sprichwort, eigenes Erlebnis.","topic":"Aufsatz"},
-  {"question":"Was ist der Hauptteil eines Aufsatzes?","options":["Die Einleitung","Der längste Teil, in dem das Thema ausführlich behandelt wird – bei Erzählungen: Handlung; bei Berichten: Fakten; bei Erörterungen: Argumente (Pros und Cons)","Der Schluss","Das Inhaltsverzeichnis"],"correct":1,"explanation":"Hauptteil: Absätze mit Übergängen ('Zunächst...', 'Außerdem...', 'Schließlich...'). Klare Struktur wichtig. Jeder Absatz ein Gedanke. Zeilenumbrüche/Einrückungen als Signale.","topic":"Aufsatz"},
-  {"question":"Was ist der Schluss eines Aufsatzes?","options":["Der Anfang","Der letzte Abschnitt, der das Thema abrundet – Zusammenfassung der wichtigsten Punkte, eigene Meinung/Fazit, Ausblick oder abschließender Gedanke","Der Hauptteil","Die Einleitung"],"correct":1,"explanation":"Schluss: 2–4 Sätze. Nicht: 'Ich habe fertig' oder 'Das war mein Aufsatz'. Besser: Fazit, eigene Meinung, offene Frage oder Verbindung zur Einleitung (Rahmen). Schluss macht Gesamteindruck.","topic":"Aufsatz"},
-  {"question":"Was ist direkte Rede?","options":["Indirekte Rede","Die wörtliche Wiedergabe des Gesprochenen in Anführungszeichen: Peter sagte: »Ich komme morgen.« – mit Doppelpunkt und Komma beim Abschluss der Redeeinleitung","Eine Beschreibung","Ein Monolog"],"correct":1,"explanation":"Direkte Rede: »...«  oder \"...\". Satzzeichen: Doppelpunkt vor der wörtlichen Rede. Redebegleitsatz kann vor, nach oder mitten in der wörtl. Rede stehen. Komma statt Punkt wenn Redebegleitsatz folgt.","topic":"Satzzeichen"},
-  {"question":"Was ist indirekte Rede?","options":["Wörtliche Rede","Die sinngemäße Wiedergabe von Gesagtem ohne Anführungszeichen – oft mit Konjunktiv I: Peter sagte, er komme morgen / Peter sagte, dass er morgen komme","Direktes Gespräch","Eine Frage"],"correct":1,"explanation":"Indirekte Rede: in Berichten, Zeitungsartikeln. Konjunktiv I: sei, habe, werde, komme... Oder: er sagte, dass er kommt (Indikativ auch möglich in der Umgangssprache).","topic":"Grammatik"},
-  {"question":"Was ist ein Tagebucheintrag?","options":["Ein Brief","Ein persönlicher Text, der täglich (oder regelmäßig) eigene Erlebnisse, Gedanken und Gefühle festhält – in der Ich-Form, informell, mit Datum, ehrlich und privat","Eine Inhaltsangabe","Ein Gedicht"],"correct":1,"explanation":"Tagebuch: Ich-Perspektive, Datum, persönlich. Berühmte Tagebücher: Anne Frank, Käthe Kollwitz. Kein festes Schema, aber: Datum, Ansprache (Liebe Tagebuch...), Erlebnisse, Gefühle.","topic":"Textsorten"},
-  {"question":"Was ist ein persönlicher Brief?","options":["Ein offizieller Brief","Ein informeller Brief an eine vertraute Person – Absender, Ort/Datum, Anrede ('Liebe Emma,'), Hauptteil, Grußformel ('Viele Grüße, ...'), Unterschrift","Ein Bericht","Ein Märchen"],"correct":1,"explanation":"Persönlicher Brief: lockerer Ton, 'du'-Form. Formeller Brief: Sie-Form, Betreff. E-Mails haben weitgehend Briefe ersetzt. Im Deutschen: nach Anrede Komma, dann klein weiterschreiben.","topic":"Textsorten"},
-  {"question":"Was ist ein Inhaltsverzeichnis?","options":["Eine Zusammenfassung","Eine Übersicht am Anfang eines Buches oder Heftes, die Kapitel und Seitenzahlen auflistet – hilft beim schnellen Finden von Inhalten","Ein Register","Ein Glossar"],"correct":1,"explanation":"Inhaltsverzeichnis: nach vorne (Buch) oder am Ende (Sachbuch). Unterschied Register: alphabetische Stichwortliste. Glossar: Erklärungen von Fachbegriffen. Alle helfen beim Navigieren.","topic":"Lesekompetenz"},
-  {"question":"Was ist ein Absatz?","options":["Ein Satz","Ein Textabschnitt, der einen Gedanken oder ein Thema behandelt – beginnt mit einer neuen Zeile (Einrückung oder Leerzeile); macht Texte übersichtlicher","Ein Kapitel","Ein Wort"],"correct":1,"explanation":"Absatz: Grundeinheit der Textgliederung. Beginnt mit neuem Gedanken, endet wenn Gedanke abgeschlossen. Zu kurze Absätze (ein Satz): zerhackt. Zu lange: unübersichtlich. Übergänge: 'Außerdem', 'Jedoch', 'Schließlich'.","topic":"Textstruktur"},
-  {"question":"Was ist ein Schreibplan (Gliederung)?","options":["Der fertige Text","Eine Vorplanung vor dem Schreiben: Sammeln von Ideen (Brainstorming, Mindmap), Ordnen nach Wichtigkeit, Skizzieren von Einleitung, Hauptteil und Schluss","Eine Zusammenfassung","Ein Inhaltsverzeichnis"],"correct":1,"explanation":"Gliederung: spart Zeit, verbessert Qualität. Methoden: Mindmap (Assoziationen), Stichworte, Clustern. Dann sortieren: was kommt zuerst, was ist wichtiger? So vermeidet man Vergessen.","topic":"Schreibprozess"},
-  {"question":"Was ist Kreatives Schreiben?","options":["Sachliche Berichte","Schreiben, bei dem Fantasie und eigene Ideen im Vordergrund stehen – Geschichten erfinden, Gedichte schreiben, Weitererzählen, aus fremder Perspektive erzählen","Abschreiben","Inhaltsangaben"],"correct":1,"explanation":"Kreatives Schreiben: keine festen Regeln, aber: lebendige Sprache, Details, Dialoge, Sinneseindrücke (Was sieht/hört/riecht der Protagonist?). Wichtig: Show, don't tell – zeigen statt sagen.","topic":"Schreibprozess"},
-  {"question":"Was bedeutet 'Show, don't tell'?","options":["Bilder zeichnen statt schreiben","Beim Schreiben Szenen und Details zeigen statt direkt zu sagen, was man meint: nicht 'Er war traurig' sondern 'Tränen liefen über seine Wangen'","Bilder einfügen","Laut vorlesen"],"correct":1,"explanation":"Show, don't tell: wichtigstes Prinzip im Kreativschreiben. Leser sollen selbst schlussfolgern. Statt 'Sie war glücklich': 'Sie hüpfte durch den Regen und sang.' Detailreicher und lebendiger.","topic":"Schreibprozess"},
-  {"question":"Was ist eine Inhaltsangabe?","options":["Eine ausführliche Nacherzählung","Eine kurze, sachliche Zusammenfassung des wesentlichen Inhalts eines Textes – im Präsens, in eigenen Worten, ohne persönliche Meinung","Eine Beschreibung","Eine Kritik"],"correct":1,"explanation":"Inhaltsangabe: Präsens! ('Der König befiehlt...'), keine wörtlichen Zitate, kein Kommentar. Aufbau: Wer? Was? Wie? Warum? Ergebnis? So kurz wie möglich, so ausführlich wie nötig.","topic":"Textsorten"},
-  {"question":"Was ist ein Märchen?","options":["Ein Sachtext","Eine Erzählung, die in einer fantastischen Welt spielt, mit magischen Elementen, oft Gut gegen Böse, mit glücklichem Ende – Gebrüder Grimm: Rotkäppchen, Hänsel und Gretel","Ein Bericht","Ein Brief"],"correct":1,"explanation":"Märchen: oft beginnt mit 'Es war einmal...'. Typisch: Königreiche, Hexen, Feen, sprechende Tiere, Zauberei, 3 als Zahl (3 Wünsche, 3 Söhne), gerechte Strafe für Böse, Belohnung für Gute.","topic":"Textsorten"},
-  {"question":"Was ist eine Fabel?","options":["Ein Märchen","Eine kurze Erzählung mit Tieren als Hauptfiguren, die menschliche Eigenschaften haben – lehrt eine Moral (Lehrsatz am Schluss). Bekannt: Äsop, La Fontaine, Lessing","Ein Rätsel","Ein Gedicht"],"correct":1,"explanation":"Fabel: Tiere = Symbole für Menschentypen. Fuchs = listig, Löwe = stark/majestätisch, Esel = dumm. Moral am Ende ('Die Moral von der Geschicht...'). Äsop (ca. 600 v.Chr.) berühmtester Fabeldichter.","topic":"Textsorten"},
-  {"question":"Was sind Übergangswörter (Konnektoren)?","options":["Adjektive","Wörter oder Phrasen, die Sätze und Absätze logisch verbinden: 'außerdem', 'jedoch', 'deshalb', 'trotzdem', 'zunächst', 'schließlich', 'im Gegensatz dazu'","Substantive","Verben"],"correct":1,"explanation":"Übergänge: machen Texte flüssig und logisch. Kausal: 'deshalb', 'daher', 'weil'. Adversativ: 'aber', 'jedoch', 'trotzdem'. Temporal: 'zunächst', 'dann', 'schließlich'. Additiv: 'außerdem', 'zudem'.","topic":"Textstruktur"},
-  {"question":"Was ist Korrekturlesen?","options":["Erst schreiben, dann fertig","Das sorgfältige Überprüfen eines Textes nach dem Schreiben auf Rechtschreibfehler, Grammatikfehler, Zeichensetzung und inhaltliche Fehler – vor der Abgabe immer!","Schnell lesen","Das Abschreiben"],"correct":1,"explanation":"Korrekturlesen: lieber einmal mehr als einmal weniger. Tipps: laut lesen, von hinten nach vorne, frischer Blick nach Pause, andere lesen lassen. Häufige Fehler: ss/ß, Groß-/Kleinschreibung, Komma.","topic":"Schreibprozess"},
-  {"question":"Was ist ein Erzählanfang?","options":["Der Schluss einer Geschichte","Der Beginn einer Geschichte, der Leser neugierig macht – gute Anfänge setzen sofort mit Aktion/Dialog/Spannung ein, beschreiben eine interessante Situation oder Figur","Eine Zusammenfassung","Das Ende"],"correct":1,"explanation":"Erzählanfang: vermeide 'Es war einmal' (langweilig). Besser: mitten in die Handlung einsteigen (in medias res), spannende Frage aufwerfen, interessante Figur vorstellen, ungewöhnliche Situation.","topic":"Schreibprozess"},
-  {"question":"Was ist ein Erzählhöhepunkt?","options":["Der Anfang einer Geschichte","Der spannendste Moment einer Erzählung, an dem sich die Handlung entscheidend wendet – meist kurz vor der Auflösung des Konflikts","Die Einleitung","Eine Nebenhandlung"],"correct":1,"explanation":"Spannungskurve: Einleitung → steigende Handlung → Höhepunkt → fallende Handlung → Auflösung. Der Höhepunkt ist der dramatischste Punkt, an dem alles auf dem Spiel steht.","topic":"Schreibprozess"},
-  {"question":"Was ist ein Protagonist?","options":["Der Gegenspieler","Die Hauptfigur einer Geschichte, um die sich die Handlung dreht – der Leser verfolgt meist ihre Perspektive und ihr Schicksal","Eine Nebenfigur","Der Erzähler"],"correct":1,"explanation":"Protagonist: griech. 'erster Kämpfer'. Gegenspieler heißt Antagonist. In Märchen: oft klar (Held vs. Bösewicht). In moderner Literatur: oft komplexer, Protagonist kann auch fehlerhaft sein.","topic":"Erzähltechnik"},
-  {"question":"Was ist die Erzählperspektive?","options":["Der Ort der Handlung","Der Blickwinkel, aus dem eine Geschichte erzählt wird – Ich-Erzähler (aus Sicht einer Figur), Er/Sie-Erzähler (außenstehend), allwissender Erzähler (kennt alle Gedanken)","Die Zeitform","Das Thema"],"correct":1,"explanation":"Ich-Erzähler: persönlich, subjektiv, begrenztes Wissen. Er/Sie-Erzähler (3. Person): kann neutral oder personal (auf eine Figur fokussiert) sein. Allwissender Erzähler: kennt Gedanken und Gefühle aller Figuren.","topic":"Erzähltechnik"},
-  {"question":"Was ist Spannung in einer Geschichte?","options":["Langeweile","Das Gefühl der Ungewissheit und Erwartung beim Leser – erzeugt durch Konflikte, Geheimnisse, Gefahren oder offene Fragen, die zum Weiterlesen anregen","Eine Zusammenfassung","Ein Beschreibungstext"],"correct":1,"explanation":"Spannungsmittel: Cliffhanger (Kapitelende mit offener Frage), Zeitdruck, Geheimnisse, unerwartete Wendungen (Plot Twist), kurze Sätze in actionreichen Szenen für Tempo.","topic":"Schreibprozess"},
-  {"question":"Was ist ein Dialog in einer Geschichte?","options":["Ein Monolog","Ein Gespräch zwischen zwei oder mehr Figuren, meist in direkter Rede wiedergegeben – macht Geschichten lebendiger und zeigt Charaktereigenschaften","Eine Beschreibung","Eine Inhaltsangabe"],"correct":1,"explanation":"Dialog: zeigt Charaktere 'in Aktion', macht Texte abwechslungsreicher als reine Beschreibung. Neue Zeile bei Sprecherwechsel. Redebegleitsätze: variieren ('sagte', 'flüsterte', 'rief').","topic":"Erzähltechnik"},
-  {"question":"Was ist ein Konflikt in einer Geschichte?","options":["Ein Happy End","Ein Problem, ein Hindernis oder ein Gegensatz, den die Hauptfigur überwinden muss – treibt die Handlung an und sorgt für Spannung","Eine Beschreibung","Eine Zusammenfassung"],"correct":1,"explanation":"Konfliktarten: Mensch gegen Mensch (Streit), Mensch gegen Natur (Überleben), Mensch gegen sich selbst (innerer Konflikt), Mensch gegen Gesellschaft. Ohne Konflikt: meist langweilige Geschichte.","topic":"Erzähltechnik"},
-  {"question":"Was bedeutet 'wörtliche Rede' richtig zu kennzeichnen?","options":["Keine besonderen Zeichen nötig","Anführungszeichen »...« oder \"...\" setzen, vor der Rede einen Doppelpunkt, am Satzende das Satzzeichen innerhalb der Anführungszeichen","Nur Kommas verwenden","Großschreibung am Satzanfang reicht"],"correct":1,"explanation":"Regel: Er sagte: »Ich komme.« Satzzeichen (Punkt, Ausrufezeichen, Fragezeichen) stehen innerhalb der Anführungszeichen. Bei Redebegleitsatz danach: Komma statt Punkt: »Ich komme«, sagte er.","topic":"Satzzeichen"},
-  {"question":"Was ist eine Charakterisierung?","options":["Eine Inhaltsangabe","Eine schriftliche Beschreibung der Eigenschaften, des Aussehens und des Verhaltens einer Figur – unterscheidet äußere Merkmale und innere Eigenschaften (Charakter)","Eine Zusammenfassung der Handlung","Ein Gedicht"],"correct":1,"explanation":"Charakterisierung: direkte (Erzähler beschreibt explizit: 'Er war mutig') vs. indirekte (zeigt durch Handlungen, Sprache, Reaktionen anderer Figuren). Wichtig für Aufsätze über literarische Figuren.","topic":"Textsorten"},
-  {"question":"Was ist eine Pointe?","options":["Der Anfang einer Geschichte","Der überraschende, oft witzige Schlusseffekt einer Geschichte oder eines Witzes – kommt meist unerwartet und rundet die Erzählung ab","Eine Inhaltsangabe","Ein Reim"],"correct":1,"explanation":"Pointe: aus dem Französischen 'point' (Spitze, Höhepunkt). Typisch für Witze, Kurzgeschichten, Fabeln (Pointe = Moral). Guter Schluss überrascht oder bringt die Geschichte zum Höhepunkt.","topic":"Erzähltechnik"},
-  {"question":"Was ist ein roter Faden in einer Geschichte?","options":["Ein Satzzeichen","Der durchgehende, logische Zusammenhang einer Erzählung, der alle Handlungsteile sinnvoll miteinander verbindet – ohne ihn wirkt eine Geschichte sprunghaft und verwirrend","Eine Überschrift","Ein Reimschema"],"correct":1,"explanation":"Roter Faden: hilft Lesern, der Handlung zu folgen. Wichtig beim Planen eines Aufsatzes: Schreibplan erstellen, damit jeder Abschnitt logisch zum nächsten führt und nichts Wichtiges fehlt oder unklar bleibt.","topic":"Erzähltechnik"}
+  {
+    "question": "Was ist ein Erlebnisaufsatz?",
+    "options": [
+      "Sachlicher Bericht",
+      "Bericht über ein selbst Erlebtes in der Ich-Perspektive",
+      "Märchen",
+      "Inhaltsangabe"
+    ],
+    "correct": 1,
+    "explanation": "Erlebnisaufsatz: persönliches Erlebnis lebhaft schildern, Ich-Perspektive.",
+    "topic": "Aufsatzformen"
+  },
+  {
+    "question": "Was ist wichtig beim Schreiben einer Geschichte?",
+    "options": [
+      "Nur der Schluss",
+      "Spannungsaufbau, Einleitung, Wendepunkt, Schluss",
+      "Nur die Länge",
+      "Viele Fachbegriffe"
+    ],
+    "correct": 1,
+    "explanation": "Gute Geschichte: spannende Einleitung, Konflikt, Wendepunkt, Schluss.",
+    "topic": "Kreatives Schreiben"
+  },
+  {
+    "question": "Was ist ein Konflikt in einer Geschichte?",
+    "options": [
+      "Beschreibung des Ortes",
+      "Problem oder Spannung zwischen Figuren oder Zielen",
+      "Schlussfolgerung",
+      "Einleitung"
+    ],
+    "correct": 1,
+    "explanation": "Konflikt: Kern der Spannung in einer Geschichte.",
+    "topic": "Erzählen"
+  },
+  {
+    "question": "Was ist eine Einleitung?",
+    "options": [
+      "Letzter Abschnitt",
+      "Erster Teil der Leser hineinzieht",
+      "Hauptteil",
+      "Quellenangabe"
+    ],
+    "correct": 1,
+    "explanation": "Einleitung: führt ins Thema ein, weckt Interesse.",
+    "topic": "Aufsatzformen"
+  },
+  {
+    "question": "Was ist direktes Rede?",
+    "options": [
+      "Beschreibung",
+      "Wörtlich wiedergegebene Aussage einer Person in Anführungszeichen",
+      "Zusammenfassung",
+      "Metapher"
+    ],
+    "correct": 1,
+    "explanation": "Direkte Rede: Maria sagte: \"Ich komme morgen.\"",
+    "topic": "Grammatik"
+  },
+  {
+    "question": "Was ist indirekte Rede?",
+    "options": [
+      "Wörtliches Zitat",
+      "Wiedergabe des Gesagten ohne Anführungszeichen (Maria sagte, sie komme morgen)",
+      "Beschreibung",
+      "Metapher"
+    ],
+    "correct": 1,
+    "explanation": "Indirekte Rede: Maria sagte, sie komme morgen.",
+    "topic": "Grammatik"
+  },
+  {
+    "question": "Was ist ein Adverb?",
+    "options": [
+      "Hauptwort",
+      "Eigenschaftswort",
+      "Umstandswort – beschreibt Ort, Zeit, Art (schnell, heute, hier)",
+      "Tunwort"
+    ],
+    "correct": 2,
+    "explanation": "Adverb: Umstandswort – wie, wann, wo, warum.",
+    "topic": "Wortarten"
+  },
+  {
+    "question": "Was ist eine Präposition?",
+    "options": [
+      "Verb",
+      "Vorwort das Verhältnisse ausdrückt (auf, in, unter, mit)",
+      "Adjektiv",
+      "Konjunktion"
+    ],
+    "correct": 1,
+    "explanation": "Präposition: auf, in, unter, über, mit, von, zu – gibt Beziehungen an.",
+    "topic": "Wortarten"
+  },
+  {
+    "question": "Was ist eine Konjunktion?",
+    "options": [
+      "Verb",
+      "Bindewort das Sätze oder Wörter verbindet (und, aber, weil)",
+      "Adjektiv",
+      "Artikel"
+    ],
+    "correct": 1,
+    "explanation": "Konjunktionen: und, aber, oder, weil, obwohl – verbinden Satzteile.",
+    "topic": "Wortarten"
+  },
+  {
+    "question": "Was ist ein Pronomen?",
+    "options": [
+      "Hauptwort",
+      "Fürwort – steht für ein Nomen (er, sie, es, ich, du)",
+      "Verb",
+      "Adjektiv"
+    ],
+    "correct": 1,
+    "explanation": "Pronomen: ich, du, er, sie, es – ersetzen Nomen.",
+    "topic": "Wortarten"
+  },
+  {
+    "question": "Was ist ein Synonym?",
+    "options": [
+      "Gegenteil eines Wortes",
+      "Wort mit gleicher oder ähnlicher Bedeutung",
+      "Reimwort",
+      "Fachwort"
+    ],
+    "correct": 1,
+    "explanation": "Synonyme: schön = hübsch = attraktiv.",
+    "topic": "Wortschatz"
+  },
+  {
+    "question": "Was ist ein Antonym?",
+    "options": [
+      "Synonym",
+      "Wort mit entgegengesetzter Bedeutung",
+      "Reimwort",
+      "Fremdwort"
+    ],
+    "correct": 1,
+    "explanation": "Antonym: heiß ↔ kalt, groß ↔ klein, schnell ↔ langsam.",
+    "topic": "Wortschatz"
+  },
+  {
+    "question": "Was ist ein Homonym?",
+    "options": [
+      "Synonym",
+      "Wort das gleich klingt aber verschiedene Bedeutungen hat (Bank = Sitzgelegenheit / Geldinstitut)",
+      "Antonym",
+      "Fremdwort"
+    ],
+    "correct": 1,
+    "explanation": "Homonyme: Bank, Mutter, Schloss – klingen gleich, bedeuten Verschiedenes.",
+    "topic": "Wortschatz"
+  },
+  {
+    "question": "Was ist ein Satzgefüge?",
+    "options": [
+      "Ein einfacher Satz",
+      "Kombination aus Hauptsatz und Nebensatz",
+      "Zwei nebengeordnete Hauptsätze",
+      "Aufzählung"
+    ],
+    "correct": 1,
+    "explanation": "Satzgefüge: Hauptsatz + Nebensatz (weil, obwohl, dass).",
+    "topic": "Satzlehre"
+  },
+  {
+    "question": "Was ist ein Hauptsatz?",
+    "options": [
+      "Abhängiger Satz",
+      "Vollständiger Satz der alleine stehen kann",
+      "Nebensatz",
+      "Fragesatz"
+    ],
+    "correct": 1,
+    "explanation": "Hauptsatz: kann alleine stehen. Er hat Subjekt und Prädikat.",
+    "topic": "Satzlehre"
+  },
+  {
+    "question": "Was ist ein Nebensatz?",
+    "options": [
+      "Vollständiger selbstständiger Satz",
+      "Abhängiger Satz der nicht alleine stehen kann (weil, obwohl, dass)",
+      "Ausrufesatz",
+      "Fragesatz"
+    ],
+    "correct": 1,
+    "explanation": "Nebensatz: hängt am Hauptsatz, beginnt oft mit Konjunktion.",
+    "topic": "Satzlehre"
+  },
+  {
+    "question": "Was ist Präteritum?",
+    "options": [
+      "Gegenwart",
+      "Einfache Vergangenheit (ich ging, er sah)",
+      "Zukunft",
+      "Futur"
+    ],
+    "correct": 1,
+    "explanation": "Präteritum: einfache Vergangenheit – in Erzählungen verwendet.",
+    "topic": "Zeitformen"
+  },
+  {
+    "question": "Was ist Plusquamperfekt?",
+    "options": [
+      "Zukunft",
+      "Vorvergangenheit – was vor etwas Vergangenem geschah (ich hatte gegessen)",
+      "Gegenwart",
+      "Perfekt"
+    ],
+    "correct": 1,
+    "explanation": "Plusquamperfekt: Vorvergangenheit. Als er ankam, hatte sie schon gegessen.",
+    "topic": "Zeitformen"
+  },
+  {
+    "question": "Was ist ein Adjektivattribut?",
+    "options": [
+      "Verb",
+      "Adjektiv das direkt vor einem Nomen steht und es beschreibt",
+      "Pronomen",
+      "Adverb"
+    ],
+    "correct": 1,
+    "explanation": "Adjektivattribut: das schöne Haus, der kluge Schüler.",
+    "topic": "Grammatik"
+  },
+  {
+    "question": "Was bedeutet 'sprachlich ausschmücken'?",
+    "options": [
+      "Kürzer machen",
+      "Mit Adjektiven, Vergleichen, Metaphern lebhafter gestalten",
+      "Sachlich bleiben",
+      "Fehler korrigieren"
+    ],
+    "correct": 1,
+    "explanation": "Sprachliche Ausschmückung macht Texte lebendiger und interessanter.",
+    "topic": "Kreatives Schreiben"
+  },
+  {
+    "question": "Was ist ein Tempus (Grammatik)?",
+    "options": [
+      "Kasus",
+      "Zeitform des Verbs (Präsens, Präteritum, Perfekt, Futur)",
+      "Genus",
+      "Modus"
+    ],
+    "correct": 1,
+    "explanation": "Tempus: Zeitform des Verbs.",
+    "topic": "Grammatik"
+  },
+  {
+    "question": "Was ist ein Kompositum?",
+    "options": [
+      "Fremdwort",
+      "Zusammengesetztes Wort aus zwei oder mehr Teilen (Hausaufgabe, Schulbuch)",
+      "Abkürzung",
+      "Pronomen"
+    ],
+    "correct": 1,
+    "explanation": "Kompositum: Zusammensetzung (Hausaufgabe = Haus + Aufgabe).",
+    "topic": "Wortbildung"
+  },
+  {
+    "question": "Was ist ein Präfix?",
+    "options": [
+      "Nachsilbe",
+      "Vorsilbe die an den Wortstamm gesetzt wird (un-, ver-, be-)",
+      "Mittelsilbe",
+      "Wortstamm"
+    ],
+    "correct": 1,
+    "explanation": "Präfix: Vorsilbe. verfahren, benutzen, ungern.",
+    "topic": "Wortbildung"
+  },
+  {
+    "question": "Was ist ein Suffix?",
+    "options": [
+      "Vorsilbe",
+      "Nachsilbe die an den Wortstamm gesetzt wird (-heit, -keit, -ung)",
+      "Wortstamm",
+      "Artikel"
+    ],
+    "correct": 1,
+    "explanation": "Suffix: Nachsilbe. Freiheit, Schönheit, Wohnung.",
+    "topic": "Wortbildung"
+  },
+  {
+    "question": "Was ist ein Personalpronomen?",
+    "options": [
+      "Er, sie, es, ich, du, wir, ihr, sie – für Personen und Dinge",
+      "Demonstrativpronomen",
+      "Relativpronomen",
+      "Fragepronomen"
+    ],
+    "correct": 0,
+    "explanation": "Personalpronomen: ich, du, er, sie, es, wir, ihr, Sie.",
+    "topic": "Pronomen"
+  },
+  {
+    "question": "Was ist der Imperativ?",
+    "options": [
+      "Frageform",
+      "Befehlsform (Komm! Geht! Nehmen Sie!)",
+      "Vergangenheit",
+      "Konjunktiv"
+    ],
+    "correct": 1,
+    "explanation": "Imperativ: Aufforderung oder Befehl. Komm! Schreib! Hört zu!",
+    "topic": "Grammatik"
+  },
+  {
+    "question": "Was ist ein Relativsatz?",
+    "options": [
+      "Hauptsatz",
+      "Nebensatz der ein Nomen näher bestimmt (die Frau, die singt)",
+      "Fragesatz",
+      "Bedingungssatz"
+    ],
+    "correct": 1,
+    "explanation": "Relativsatz: Das Buch, das ich lese, ist spannend.",
+    "topic": "Satzlehre"
+  },
+  {
+    "question": "Was ist ein Schreibplan?",
+    "options": [
+      "Rohentwurf ohne Struktur",
+      "Vorüberlegung zu Aufbau und Inhalt vor dem Schreiben",
+      "Quellenangabe",
+      "Reinschrift"
+    ],
+    "correct": 1,
+    "explanation": "Schreibplan: Gliederung vor dem Schreiben – spart Zeit und strukturiert.",
+    "topic": "Schreibprozess"
+  },
+  {
+    "question": "Was ist ein Entwurf?",
+    "options": [
+      "Fertigprodukt",
+      "Erste Fassung eines Textes die noch überarbeitet wird",
+      "Quellenangabe",
+      "Inhaltsverzeichnis"
+    ],
+    "correct": 1,
+    "explanation": "Entwurf: erste Fassung – dann überarbeiten und Reinschrift schreiben.",
+    "topic": "Schreibprozess"
+  },
+  {
+    "question": "Was ist Überarbeitung?",
+    "options": [
+      "Erstes Schreiben",
+      "Verbessern des Entwurfs bezüglich Inhalt, Sprache und Rechtschreibung",
+      "Rohentwurf",
+      "Abschrift"
+    ],
+    "correct": 1,
+    "explanation": "Überarbeitung: Entwurf kritisch durchlesen und verbessern.",
+    "topic": "Schreibprozess"
+  },
+  {
+    "question": "Was ist Zeichensetzung?",
+    "options": [
+      "Wortbedeutung",
+      "Regeln für Satzzeichen (Komma, Punkt, Fragezeichen)",
+      "Rechtschreibung",
+      "Grammatik"
+    ],
+    "correct": 1,
+    "explanation": "Zeichensetzung: Komma, Punkt, Ausrufezeichen, Fragezeichen richtig setzen.",
+    "topic": "Rechtschreibung"
+  },
+  {
+    "question": "Wann setzt man ein Komma?",
+    "options": [
+      "Nie zwischen Hauptsatz und Nebensatz",
+      "Vor Nebensatz (weil, dass, obwohl) und bei Aufzählungen",
+      "Immer vor 'und'",
+      "Nur am Satzende"
+    ],
+    "correct": 1,
+    "explanation": "Komma: vor Nebensätzen, bei Aufzählungen, bei eingeschobenen Satzteilen.",
+    "topic": "Zeichensetzung"
+  },
+  {
+    "question": "Was ist eine Beschreibung?",
+    "options": [
+      "Geschichte erfinden",
+      "Sachlicher Text der ein Objekt oder eine Person genau darstellt",
+      "Märchen",
+      "Zusammenfassung"
+    ],
+    "correct": 1,
+    "explanation": "Beschreibung: präzise, sachlich – Eigenschaften in Reihenfolge.",
+    "topic": "Aufsatzformen"
+  },
+  {
+    "question": "Was ist ein Vorgangspassiv?",
+    "options": [
+      "Aktiv",
+      "Verb-Form bei der das Objekt im Vordergrund steht (Das Buch wird gelesen)",
+      "Zukunft",
+      "Konjunktiv"
+    ],
+    "correct": 1,
+    "explanation": "Passiv: Das Buch wird gelesen / wurde gelesen.",
+    "topic": "Grammatik"
+  },
+  {
+    "question": "Was ist der Satzbau SVO?",
+    "options": [
+      "Verb-Objekt-Subjekt",
+      "Subjekt-Verb-Objekt – normale Satzstruktur im Deutschen",
+      "Objekt-Subjekt-Verb",
+      "Adjektiv-Verb-Nomen"
+    ],
+    "correct": 1,
+    "explanation": "Im Deutschen meist: Subjekt – Verb – Objekt. Ich lese ein Buch.",
+    "topic": "Satzlehre"
+  },
+  {
+    "question": "Was macht ein guter Aufsatz aus?",
+    "options": [
+      "Viele Fehler",
+      "Klare Struktur, abwechslungsreiche Sprache und roter Faden",
+      "Langer Text",
+      "Viele Fremdwörter"
+    ],
+    "correct": 1,
+    "explanation": "Guter Aufsatz: Struktur (Einleitung-HT-Schluss), abwechslungsreiche Sprache, Logik.",
+    "topic": "Schreiben allgemein"
+  },
+  {
+    "question": "Was ist ein Erzählanfang?",
+    "options": [
+      "Schluss der Geschichte",
+      "Einstieg in eine Geschichte der Leser neugierig macht",
+      "Zusammenfassung",
+      "Charakterbeschreibung"
+    ],
+    "correct": 1,
+    "explanation": "Guter Erzählanfang: direkt ins Geschehen einsteigen, Spannung aufbauen.",
+    "topic": "Kreatives Schreiben"
+  },
+  {
+    "question": "Was ist ein rhetorisches Stilmittel?",
+    "options": [
+      "Grammatikregel",
+      "Sprachliches Mittel das Texte wirkungsvoller macht (Wiederholung, Metapher)",
+      "Rechtschreibregel",
+      "Zeitform"
+    ],
+    "correct": 1,
+    "explanation": "Rhetorische Mittel: Metapher, Vergleich, Personifikation, Alliteration.",
+    "topic": "Stilmittel"
+  },
+  {
+    "question": "Was ist eine Personifikation?",
+    "options": [
+      "Personenbeschreibung",
+      "Zuschreibung menschlicher Eigenschaften an Tiere/Gegenstände (Die Sonne lacht)",
+      "Metapher",
+      "Vergleich"
+    ],
+    "correct": 1,
+    "explanation": "Personifikation: Der Wind heulte. Die Zeit läuft davon.",
+    "topic": "Stilmittel"
+  },
+  {
+    "question": "Was ist eine Alliteration?",
+    "options": [
+      "Reimschema",
+      "Gleichklang des Anfangsbuchstabens in aufeinanderfolgenden Wörtern (Milch macht müde Männer munter)",
+      "Metapher",
+      "Wiederholung"
+    ],
+    "correct": 1,
+    "explanation": "Alliteration: Fischer Fritz fischt frische Fische.",
+    "topic": "Stilmittel"
+  }
 ]

@@ -1,482 +1,482 @@
 [
   {
-    "question": "Wie viele Zentimeter sind 1 Meter?",
+    "question": "Was ist das Ergebnis von 35 + 48?",
     "options": [
-      "10 cm",
-      "100 cm",
-      "1000 cm",
-      "50 cm"
+      "73",
+      "83",
+      "85",
+      "93"
     ],
     "correct": 1,
-    "explanation": "1 m = 100 cm. Weitere Längenmaße: 1 km = 1 000 m; 1 m = 100 cm = 1 000 mm; 1 cm = 10 mm.",
-    "topic": "Längen"
+    "explanation": "Du kannst zuerst die Zehner addieren: 30 + 40 = 70. Dann die Einer: 5 + 8 = 13. Zum Schluss addierst du beides: 70 + 13 = 83.",
+    "topic": "Addition zweistelliger Zahlen"
   },
   {
-    "question": "Wie viele Meter sind 3,5 km?",
+    "question": "Berechne 123 - 40.",
     "options": [
-      "350 m",
-      "3 500 m",
-      "35 m",
-      "3 050 m"
-    ],
-    "correct": 1,
-    "explanation": "1 km = 1 000 m → 3,5 km = 3,5 × 1 000 m = 3 500 m.",
-    "topic": "Längen"
-  },
-  {
-    "question": "Wie viele Gramm sind 2,5 kg?",
-    "options": [
-      "250 g",
-      "2 050 g",
-      "2 500 g",
-      "25 g"
-    ],
-    "correct": 2,
-    "explanation": "1 kg = 1 000 g → 2,5 kg = 2,5 × 1 000 g = 2 500 g.",
-    "topic": "Gewichte"
-  },
-  {
-    "question": "Wie viele Milliliter sind 1 Liter?",
-    "options": [
-      "100 ml",
-      "10 ml",
-      "1 000 ml",
-      "500 ml"
-    ],
-    "correct": 2,
-    "explanation": "1 L = 1 000 ml. Weitere Hohlmaße: 1 L = 10 dl = 100 cl = 1 000 ml. Eine Getränkeflasche: meist 0,5 L = 500 ml.",
-    "topic": "Hohlmaße"
-  },
-  {
-    "question": "Wie rechnet man Minuten in Stunden um?",
-    "options": [
-      "Mit 100 multiplizieren",
-      "Durch 60 teilen: 120 Minuten = 120 ÷ 60 = 2 Stunden",
-      "Mit 60 multiplizieren",
-      "Durch 100 teilen"
-    ],
-    "correct": 1,
-    "explanation": "1 Stunde = 60 Minuten. 90 Minuten = 90 ÷ 60 = 1,5 Stunden = 1 Stunde 30 Minuten. 75 Minuten = 1 Stunde 15 Minuten.",
-    "topic": "Zeit"
-  },
-  {
-    "question": "Wie viele Sekunden hat eine Stunde?",
-    "options": [
-      "600",
-      "3 600",
-      "360",
-      "6 000"
-    ],
-    "correct": 1,
-    "explanation": "1 Stunde = 60 Minuten × 60 Sekunden = 3 600 Sekunden.",
-    "topic": "Zeit"
-  },
-  {
-    "question": "Was ist 2 h 30 min + 1 h 45 min?",
-    "options": [
-      "3 h 75 min = 4 h 15 min",
-      "4 h 75 min",
-      "3 h 15 min",
-      "4 h 30 min"
+      "83",
+      "73",
+      "93",
+      "63"
     ],
     "correct": 0,
-    "explanation": "2 h 30 min + 1 h 45 min: Minuten: 30+45=75 min = 1 h 15 min. Stunden: 2+1+1=4 h. Ergebnis: 4 h 15 min.",
-    "topic": "Zeit"
+    "explanation": "Ziehe die Zehner von den Zehnern ab: 12 Zehner minus 4 Zehner sind 8 Zehner, also 80. Die 3 Einer bleiben bestehen. Das Ergebnis ist 83.",
+    "topic": "Subtraktion dreistelliger Zahlen"
   },
   {
-    "question": "Wie viele Tage hat ein Jahr?",
+    "question": "Wie viel ist 6 mal 7?",
     "options": [
-      "364",
-      "365 (366 im Schaltjahr)",
-      "360",
-      "367"
-    ],
-    "correct": 1,
-    "explanation": "Normaljahr: 365 Tage. Schaltjahr: 366 Tage (Februar hat dann 29 statt 28 Tage). Schaltjahr: durch 4 teilbar (Ausnahme: Jahrhunderte müssen durch 400 teilbar sein).",
-    "topic": "Zeit"
-  },
-  {
-    "question": "Was ist 5 km – 800 m in Metern?",
-    "options": [
-      "4 200 m",
-      "4 800 m",
-      "5 200 m",
-      "4 020 m"
-    ],
-    "correct": 0,
-    "explanation": "5 km = 5 000 m. 5 000 m – 800 m = 4 200 m.",
-    "topic": "Längen"
-  },
-  {
-    "question": "Wie viel wiegt ein 3-Liter-Behälter Wasser? (1 Liter Wasser = 1 kg)",
-    "options": [
-      "300 g",
-      "3 000 g = 3 kg",
-      "30 kg",
-      "0,3 kg"
-    ],
-    "correct": 1,
-    "explanation": "1 Liter Wasser = 1 kg. 3 Liter = 3 kg = 3 000 g. Diese Gleichheit (1 L Wasser = 1 kg) gilt nur für Wasser bei 4°C, ist aber für Klasse 5 so zu merken.",
-    "topic": "Gewichte"
-  },
-  {
-    "question": "Was ist die Einheit für Flächeninhalte?",
-    "options": [
-      "m",
-      "m²",
-      "m³",
-      "km"
-    ],
-    "correct": 1,
-    "explanation": "Fläche: m² (Quadratmeter) oder cm² (Quadratzentimeter). 1 m² = 10 000 cm². Acker-/Landmaße: 1 Hektar (ha) = 10 000 m². 1 km² = 100 ha = 1 000 000 m².",
-    "topic": "Fläche"
-  },
-  {
-    "question": "Was ist 1 Hektar (ha) in m²?",
-    "options": [
-      "100 m²",
-      "1 000 m²",
-      "10 000 m²",
-      "100 000 m²"
-    ],
-    "correct": 2,
-    "explanation": "1 ha = 10 000 m² (100 m × 100 m). 1 km² = 100 ha. Hektar wird für Grundstücke, Felder, Wälder verwendet.",
-    "topic": "Fläche"
-  },
-  {
-    "question": "Wie viel kostet 1,5 kg Äpfel, wenn 1 kg 2,40 € kostet?",
-    "options": [
-      "3,00 €",
-      "3,60 €",
-      "2,40 €",
-      "4,80 €"
-    ],
-    "correct": 1,
-    "explanation": "1 kg = 2,40 €. 1,5 kg = 1,5 × 2,40 € = 3,60 €. Oder: 0,5 kg = 1,20 €, dann 2,40 + 1,20 = 3,60 €.",
-    "topic": "Sachaufgaben"
-  },
-  {
-    "question": "Was bedeutet km/h?",
-    "options": [
-      "Kilometer mal Stunde",
-      "Kilometer pro Stunde – Maß für die Geschwindigkeit",
-      "Kilometer hoch h",
-      "Kilo mal Stunde"
-    ],
-    "correct": 1,
-    "explanation": "km/h: Geschwindigkeit = Weg pro Zeit. 100 km/h = in einer Stunde 100 km zurückgelegt. Formel: v = s/t (Geschwindigkeit = Weg ÷ Zeit).",
-    "topic": "Geschwindigkeit"
-  },
-  {
-    "question": "Wie weit fährt ein Auto in 2 Stunden mit 80 km/h?",
-    "options": [
-      "40 km",
-      "80 km",
-      "160 km",
-      "200 km"
-    ],
-    "correct": 2,
-    "explanation": "Weg = Geschwindigkeit × Zeit = 80 km/h × 2 h = 160 km.",
-    "topic": "Sachaufgaben"
-  },
-  {
-    "question": "Was ist die Maßeinheit für Temperatur?",
-    "options": [
-      "Grad Kelvin (K) allein",
-      "Grad Celsius (°C) im Alltag; Kelvin (K) in der Wissenschaft. 0°C = 273 K. Körpertemperatur: 37°C. Gefrierpunkt: 0°C. Siedepunkt: 100°C",
-      "Grad Fahrenheit allein",
-      "Grad Celsius = Kelvin"
-    ],
-    "correct": 1,
-    "explanation": "Im Alltag: Celsius (°C). In Physik/Chemie: Kelvin (0 K = absoluter Nullpunkt = –273°C). In USA: Fahrenheit (°F). 100°F ≈ 38°C (Fieber).",
-    "topic": "Temperatur"
-  },
-  {
-    "question": "Wie viele Millimeter sind 1 Zentimeter?",
-    "options": [
-      "1 mm",
-      "5 mm",
-      "10 mm",
-      "100 mm"
-    ],
-    "correct": 2,
-    "explanation": "1 cm = 10 mm. Daher: 1 m = 100 cm = 1 000 mm. 1 km = 1 000 m = 1 000 000 mm.",
-    "topic": "Längen"
-  },
-  {
-    "question": "Was ist der Unterschied zwischen Masse (kg) und Gewicht (N)?",
-    "options": [
-      "Kein Unterschied",
-      "Masse (kg): Menge der Materie, überall gleich. Gewicht (Newton, N): Kraft durch Schwerkraft – auf dem Mond ist das Gewicht kleiner, die Masse gleich",
-      "Masse ist in Gramm, Gewicht in kg",
-      "Masse ändert sich mit dem Ort"
-    ],
-    "correct": 1,
-    "explanation": "Alltagssprache sagt 'wiegen' und meint meist Masse. Physikalisch: Gewicht = Masse × Gravitationsbeschleunigung (F = m × g). Auf dem Mond: g = 1,6 m/s² statt 9,81 m/s².",
-    "topic": "Physikalische Größen"
-  },
-  {
-    "question": "Was ist 2,75 € in Cent?",
-    "options": [
-      "275 Cent",
-      "27,5 Cent",
-      "2 750 Cent",
-      "200 Cent"
-    ],
-    "correct": 0,
-    "explanation": "1 € = 100 Cent. 2,75 € = 2 × 100 Cent + 75 Cent = 275 Cent. Rückrechnung: 275 Cent ÷ 100 = 2,75 €.",
-    "topic": "Geld"
-  },
-  {
-    "question": "Was ist 45 Minuten als Bruchteil einer Stunde?",
-    "options": [
-      "0,6 h",
-      "45/100 h",
-      "3/4 Stunde (0,75 h)",
-      "1/2 Stunde"
-    ],
-    "correct": 2,
-    "explanation": "45 Minuten / 60 Minuten = 45/60 = 3/4 = 0,75 Stunden. 30 min = 1/2 h; 15 min = 1/4 h; 45 min = 3/4 h.",
-    "topic": "Zeit"
-  },
-  {
-    "question": "Wie berechnet man den Umfang eines Rechtecks?",
-    "options": [
-      "U = a × b",
-      "U = 2 × (a + b)",
-      "U = a + b",
-      "U = 4 × a"
-    ],
-    "correct": 1,
-    "explanation": "Umfang Rechteck: U = 2 × (Länge + Breite). Beispiel: 8 cm × 5 cm → U = 2 × (8+5) = 2 × 13 = 26 cm.",
-    "topic": "Geometrie"
-  },
-  {
-    "question": "Was ist der Flächeninhalt eines Quadrats mit Seite 5 m?",
-    "options": [
-      "20 m²",
-      "10 m²",
-      "25 m²",
-      "50 m²"
-    ],
-    "correct": 2,
-    "explanation": "Fläche Quadrat = Seite² = 5² = 25 m².",
-    "topic": "Geometrie"
-  },
-  {
-    "question": "Wie rechnet man Stundenkilometer in Meter pro Sekunde um?",
-    "options": [
-      "× 3,6",
-      "÷ 3,6",
-      "× 1 000",
-      "÷ 60"
-    ],
-    "correct": 1,
-    "explanation": "km/h ÷ 3,6 = m/s. Beispiel: 36 km/h ÷ 3,6 = 10 m/s. Merke: 1 m/s = 3,6 km/h. Formel: (km/h × 1000 m) / (3600 s) = m/s.",
-    "topic": "Geschwindigkeit"
-  },
-  {
-    "question": "Was ist das Volumen eines Würfels mit Kantenlänge 4 cm?",
-    "options": [
-      "16 cm³",
-      "48 cm³",
-      "64 cm³",
-      "12 cm³"
-    ],
-    "correct": 2,
-    "explanation": "Volumen Würfel = Kante³ = 4³ = 4 × 4 × 4 = 64 cm³.",
-    "topic": "Volumen"
-  },
-  {
-    "question": "Wie viele Wochen hat ein Jahr?",
-    "options": [
+      "36",
+      "42",
       "48",
-      "50",
-      "52",
       "54"
     ],
-    "correct": 2,
-    "explanation": "1 Jahr = 365 Tage ÷ 7 = 52 Wochen + 1 Tag (im Schaltjahr + 2 Tage). Kalenderwochen: 52 oder 53 (wenn 1. Januar auf Donnerstag, Freitag oder Samstag).",
-    "topic": "Zeit"
+    "correct": 1,
+    "explanation": "Diese Aufgabe ist Teil des kleinen Einmaleins. 6 multipliziert mit 7 ergibt 42.",
+    "topic": "Kleines Einmaleins (Multiplikation)"
   },
   {
-    "question": "Was ist 3 kg 400 g in Gramm?",
+    "question": "Was ist 72 geteilt durch 9?",
     "options": [
-      "340 g",
-      "3 004 g",
-      "3 400 g",
-      "34 000 g"
+      "7",
+      "8",
+      "9",
+      "6"
     ],
-    "correct": 2,
-    "explanation": "3 kg = 3 000 g. Plus 400 g = 3 400 g.",
-    "topic": "Gewichte"
+    "correct": 1,
+    "explanation": "Du suchst die Zahl, die mit 9 multipliziert 72 ergibt. Das ist die 8 (9 * 8 = 72).",
+    "topic": "Kleines Einmaleins (Division)"
   },
   {
-    "question": "Wie weit ist 1 Lichtjahr?",
+    "question": "Rechne im Kopf: 50 + 25 - 15 + 30",
     "options": [
-      "Die Strecke, die Licht in einem Jahr zurücklegt: ca. 9,46 Billionen km (9 460 000 000 000 km)",
-      "1 Milliarde km",
-      "Die Entfernung zur Sonne",
-      "1 Billion km"
+      "90",
+      "80",
+      "70",
+      "60"
     ],
     "correct": 0,
-    "explanation": "Lichtjahr: Astronomische Längeneinheit. Licht fährt ca. 300 000 km/s. In einem Jahr: 300 000 × 86 400 × 365 ≈ 9,46 × 10¹² km. Nächster Stern: 4,2 Lichtjahre.",
-    "topic": "Astronomie"
+    "explanation": "Arbeite die Aufgabe Schritt für Schritt ab: 50 + 25 = 75. Dann 75 - 15 = 60. Und zum Schluss 60 + 30 = 90.",
+    "topic": "Kettenrechnung mit Addition und Subtraktion"
   },
   {
-    "question": "Was ist ein Taschenrechner nicht erlaubt beim Hauptschulabschluss?",
+    "question": "Ein Bäcker verkauft Brötchen. Ein Brötchen kostet 40 Cent. Wie viel kosten 5 Brötchen zusammen?",
     "options": [
-      "Nie erlaubt",
-      "In den meisten Bundesländern in bestimmten Aufgabenteilen nicht erlaubt – um Kopfrechnen und schriftliche Rechenverfahren zu testen",
-      "Immer erlaubt",
-      "Nur beim schriftlichen Rechnen nicht erlaubt"
+      "1 Euro 50 Cent",
+      "2 Euro",
+      "2 Euro 40 Cent",
+      "2 Euro 50 Cent"
     ],
     "correct": 1,
-    "explanation": "Kopfrechnen und schriftliches Rechnen ohne Taschenrechner: Test grundlegender Fähigkeiten. In Klasse 5 Taschenrechner meist noch gar nicht eingeführt.",
-    "topic": "Schule"
+    "explanation": "Du rechnest 5 Brötchen mal 40 Cent. 5 * 40 = 200 Cent. Da 100 Cent = 1 Euro sind, sind 200 Cent = 2 Euro.",
+    "topic": "Sachrechnen mit Multiplikation (Geld)"
   },
   {
-    "question": "Wie rechnet man Dezimalzahlen in Einheiten um? Beispiel: 4,5 km in m",
+    "question": "Berechne 15 * 60 im Kopf.",
     "options": [
-      "÷ 1 000",
-      "× 1 000",
-      "+ 1 000",
-      "– 500"
-    ],
-    "correct": 1,
-    "explanation": "4,5 km × 1 000 = 4 500 m. Allgemein: von großer Einheit zu kleiner → multiplizieren. Von kleiner zu großer → dividieren.",
-    "topic": "Einheiten"
-  },
-  {
-    "question": "Was sind 250 ml in Liter?",
-    "options": [
-      "2,5 L",
-      "25 L",
-      "0,25 L",
-      "0,025 L"
-    ],
-    "correct": 2,
-    "explanation": "250 ml ÷ 1 000 = 0,25 L. Ein Glas Saft (250 ml) = 0,25 L = 1/4 Liter. Ein Tetrapak (0,5 L) = 500 ml.",
-    "topic": "Hohlmaße"
-  },
-  {
-    "question": "Was kostet 3 Brötchen, wenn 1 Brötchen 0,35 € kostet?",
-    "options": [
-      "1,05 €",
-      "0,35 €",
-      "3,50 €",
-      "1,35 €"
+      "900",
+      "750",
+      "800",
+      "1000"
     ],
     "correct": 0,
-    "explanation": "3 × 0,35 € = 1,05 €. (3 × 35 Cent = 105 Cent = 1,05 €).",
-    "topic": "Sachaufgaben"
+    "explanation": "Multipliziere zuerst 15 mit 6: 15 * 6 = 90. Da 60 eine Null hat, fügst du diese Null an das Ergebnis an: 900.",
+    "topic": "Multiplikation mit Zehnerzahlen"
   },
   {
-    "question": "Was ist das Gewicht von 3 Kartons à 2,5 kg?",
+    "question": "Was ist das Ergebnis von 120 - 3 * 20?",
     "options": [
-      "5 kg",
-      "6 kg",
-      "7,5 kg",
-      "8 kg"
-    ],
-    "correct": 2,
-    "explanation": "3 × 2,5 kg = 7,5 kg. Oder: 3 × 2 = 6, 3 × 0,5 = 1,5, zusammen 7,5 kg.",
-    "topic": "Sachaufgaben"
-  },
-  {
-    "question": "Was ist größer: 1,5 m oder 145 cm?",
-    "options": [
-      "145 cm",
-      "1,5 m (= 150 cm > 145 cm)",
-      "Beide gleich groß",
-      "Nicht vergleichbar"
-    ],
-    "correct": 1,
-    "explanation": "1,5 m = 150 cm. 150 cm > 145 cm → 1,5 m ist größer. Immer in gleiche Einheit umwandeln zum Vergleich.",
-    "topic": "Vergleiche"
-  },
-  {
-    "question": "Was ist die Einheit des Volumens?",
-    "options": [
-      "m²",
-      "m",
-      "m³",
-      "cm"
-    ],
-    "correct": 2,
-    "explanation": "Volumen: m³ (Kubikmeter), cm³ (Kubikzentimeter), Liter (L). 1 L = 1 dm³. 1 m³ = 1 000 L = 1 000 000 cm³.",
-    "topic": "Volumen"
-  },
-  {
-    "question": "Wie lange dauert es, um 60 km mit 20 km/h zu fahren?",
-    "options": [
-      "1 h",
-      "2 h",
-      "3 h",
-      "4 h"
-    ],
-    "correct": 2,
-    "explanation": "Zeit = Weg ÷ Geschwindigkeit = 60 km ÷ 20 km/h = 3 h.",
-    "topic": "Sachaufgaben"
-  },
-  {
-    "question": "Was ist 1 t (Tonne) in kg?",
-    "options": [
-      "100 kg",
-      "500 kg",
-      "1 000 kg",
-      "10 000 kg"
-    ],
-    "correct": 2,
-    "explanation": "1 t (Tonne) = 1 000 kg. 1 kg = 1 000 g. 1 mg (Milligramm) = 0,001 g. Beispiel: LKW-Gewicht oft in Tonnen angegeben.",
-    "topic": "Gewichte"
-  },
-  {
-    "question": "Was ist das Ergebnis von 100 m × 50 m (Flächeninhalt eines Schulhofs)?",
-    "options": [
-      "150 m²",
-      "500 m²",
-      "5 000 m²",
-      "1 500 m²"
-    ],
-    "correct": 2,
-    "explanation": "Fläche = Länge × Breite = 100 m × 50 m = 5 000 m² = 0,5 ha.",
-    "topic": "Sachaufgaben"
-  },
-  {
-    "question": "Was ist 08:45 Uhr plus 1 Stunde 30 Minuten?",
-    "options": [
-      "09:75 Uhr",
-      "10:15 Uhr",
-      "10:45 Uhr",
-      "09:15 Uhr"
-    ],
-    "correct": 1,
-    "explanation": "08:45 + 1:30: Minuten: 45+30=75 min = 1 h 15 min. Stunden: 8+1+1=10 h. Ergebnis: 10:15 Uhr.",
-    "topic": "Zeit"
-  },
-  {
-    "question": "Wie viel Wechselgeld bekommt man bei 10 € für einen Einkauf von 6,85 €?",
-    "options": [
-      "3,15 €",
-      "4,15 €",
-      "3,25 €",
-      "2,85 €"
+      "60",
+      "90",
+      "100",
+      "114"
     ],
     "correct": 0,
-    "explanation": "10 € – 6,85 € = 3,15 €. Rechenhilfe: 6,85 + 0,15 = 7,00; 7,00 + 3,00 = 10,00 → Wechselgeld: 3,15 €.",
-    "topic": "Sachaufgaben"
+    "explanation": "Merke dir die Regel 'Punktrechnung vor Strichrechnung'. Zuerst multiplizierst du 3 * 20 = 60. Dann subtrahierst du: 120 - 60 = 60.",
+    "topic": "Punkt- vor Strichrechnung"
   },
   {
-    "question": "Wie rechnet man Gramm in Kilogramm um?",
+    "question": "Was ist das Ergebnis von 30 + 45?",
     "options": [
-      "Durch 100 dividieren",
-      "Durch 1000 dividieren: 1000 g = 1 kg; also 500 g = 0,5 kg, 2500 g = 2,5 kg",
-      "Durch 10 dividieren",
-      "Durch 100 multiplizieren"
+      "A) 65",
+      "B) 70",
+      "C) 75",
+      "D) 80"
+    ],
+    "correct": 2,
+    "explanation": "Du rechnest zuerst die Zehner zusammen: 30 + 40 = 70. Dann addierst du die Einer: 70 + 5 = 75.",
+    "topic": "Addition zweistelliger Zahlen"
+  },
+  {
+    "question": "Berechne: 87 - 23",
+    "options": [
+      "A) 54",
+      "B) 64",
+      "C) 66",
+      "D) 74"
     ],
     "correct": 1,
-    "explanation": "Gewichtseinheiten: 1 t (Tonne) = 1000 kg. 1 kg = 1000 g. 1 g = 1000 mg. Umrechnen: größere Einheit nach kleinerer → Mal 1000. Kleinere Einheit nach größerer → Durch 1000. Beispiel: 3,5 kg = 3500 g.",
-    "topic": "Gewichte"
+    "explanation": "Du subtrahierst zuerst die Zehner: 80 - 20 = 60. Dann subtrahierst du die Einer: 7 - 3 = 4. Zum Schluss addierst du die Ergebnisse: 60 + 4 = 64.",
+    "topic": "Subtraktion zweistelliger Zahlen"
+  },
+  {
+    "question": "Multipliziere: 7 * 8",
+    "options": [
+      "A) 49",
+      "B) 54",
+      "C) 56",
+      "D) 63"
+    ],
+    "correct": 2,
+    "explanation": "Die Multiplikation von 7 mit 8 ergibt 56. Es ist wichtig, das kleine Einmaleins auswendig zu kennen.",
+    "topic": "Multiplikation (Kleines Einmaleins)"
+  },
+  {
+    "question": "Teile 63 durch 9. Was ist das Ergebnis?",
+    "options": [
+      "A) 6",
+      "B) 7",
+      "C) 8",
+      "D) 9"
+    ],
+    "correct": 1,
+    "explanation": "Du suchst eine Zahl, die mit 9 multipliziert 63 ergibt. 7 * 9 = 63. Also ist 63 geteilt durch 9 gleich 7.",
+    "topic": "Division"
+  },
+  {
+    "question": "Addiere im Kopf: 25 + 15 + 30",
+    "options": [
+      "A) 60",
+      "B) 65",
+      "C) 70",
+      "D) 75"
+    ],
+    "correct": 2,
+    "explanation": "Rechne zuerst 25 + 15 = 40. Dann addiere 40 + 30 = 70.",
+    "topic": "Addition von drei Zahlen"
+  },
+  {
+    "question": "Was ist 6 * 40?",
+    "options": [
+      "A) 120",
+      "B) 180",
+      "C) 200",
+      "D) 240"
+    ],
+    "correct": 3,
+    "explanation": "Multipliziere zuerst die Zahlen ohne die Null: 6 * 4 = 24. Hänge dann die Null der 40 wieder an das Ergebnis: 240.",
+    "topic": "Multiplikation mit Zehnerzahlen"
+  },
+  {
+    "question": "Berechne im Kopf: 130 - 50",
+    "options": [
+      "A) 70",
+      "B) 80",
+      "C) 90",
+      "D) 100"
+    ],
+    "correct": 1,
+    "explanation": "Du kannst zuerst 13 Zehner minus 5 Zehner rechnen, das sind 8 Zehner, also 80. Oder du rechnest 130 - 30 = 100, und dann 100 - 20 = 80.",
+    "topic": "Subtraktion über Hundertergrenze"
+  },
+  {
+    "question": "Was ist das Ergebnis von 5 + 3 * 6?",
+    "options": [
+      "A) 33",
+      "B) 48",
+      "C) 18",
+      "D) 23"
+    ],
+    "correct": 3,
+    "explanation": "Bei gemischten Rechenarten gilt 'Punkt vor Strich'. Zuerst rechnest du die Multiplikation: 3 * 6 = 18. Dann addierst du die 5: 5 + 18 = 23.",
+    "topic": "Gemischte Rechenarten (Punkt vor Strich)"
+  },
+  {
+    "question": "Du möchtest herausfinden, welche Farbe die meisten Autos in deiner Straße haben. Welche Methode wäre am besten, um diese Information zu sammeln?",
+    "options": [
+      "A) Deine Eltern fragen",
+      "B) Die Autos in deiner Straße zählen und ihre Farben notieren",
+      "C) Eine Umfrage bei allen Autofahrern in Deutschland machen",
+      "D) Ein Buch über Farben lesen"
+    ],
+    "correct": 1,
+    "explanation": "Um Daten zu sammeln, muss man die Informationen direkt beobachten oder erfragen. Das Zählen und Notieren der Farben der Autos in deiner Straße ist die beste Methode, um diese spezifische Frage zu beantworten.",
+    "topic": "Datenerhebung"
+  },
+  {
+    "question": "In einer Schulklasse sind 26 Kinder. 12 Kinder haben blonde Haare, 8 Kinder haben braune Haare und der Rest hat schwarze Haare. Wie viele Kinder haben schwarze Haare?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 10"
+    ],
+    "correct": 1,
+    "explanation": "Zuerst zählst du die Kinder mit blonden und braunen Haaren zusammen: 12 + 8 = 20. Dann ziehst du diese Zahl von der Gesamtzahl der Kinder ab: 26 - 20 = 6. Also haben 6 Kinder schwarze Haare.",
+    "topic": "Absolute Häufigkeit"
+  },
+  {
+    "question": "Nach einer Abstimmung über Lieblingshaustiere hast du viele Zettel mit Namen und Haustieren gesammelt. Was ist der nächste logische Schritt, um die Ergebnisse übersichtlich zu machen?",
+    "options": [
+      "A) Alle Zettel in einen Karton werfen",
+      "B) Eine Strichliste oder eine Tabelle erstellen",
+      "C) Neue Haustiere kaufen",
+      "D) Die Zettel in alphabetischer Reihenfolge sortieren"
+    ],
+    "correct": 1,
+    "explanation": "Um gesammelte Daten zu verstehen und auszuwerten, ist es wichtig, sie zu ordnen. Eine Strichliste oder eine Tabelle hilft dabei, die Häufigkeit jeder Antwort schnell zu erfassen.",
+    "topic": "Datenorganisation"
+  },
+  {
+    "question": "Nach dem Sammeln und Ordnen von Daten kann man diese oft in einem Diagramm darstellen. Was ist der Hauptgrund, warum man Daten in Diagrammen zeigt?",
+    "options": [
+      "A) Damit man die Daten verstecken kann",
+      "B) Damit die Daten künstlerisch aussehen",
+      "C) Um große Mengen von Daten leichter zu verstehen und zu vergleichen",
+      "D) Um die Daten zu löschen"
+    ],
+    "correct": 2,
+    "explanation": "Diagramme sind visuelle Darstellungen, die es einfacher machen, komplexe Informationen oder große Datenmengen schnell zu erfassen, Muster zu erkennen und verschiedene Werte miteinander zu vergleichen.",
+    "topic": "Zweck von Diagrammen"
+  },
+  {
+    "question": "Bei einer Umfrage nach Lieblingsfrüchten wurden folgende Antworten gesammelt: Apfel, Banane, Apfel, Kirsche, Birne, Apfel, Banane. Welche Frucht ist der 'Modus' in dieser Sammlung?",
+    "options": [
+      "A) Banane",
+      "B) Kirsche",
+      "C) Apfel",
+      "D) Birne"
+    ],
+    "correct": 2,
+    "explanation": "Der Modus (auch Modalwert genannt) ist der Wert, der in einer Datenreihe am häufigsten vorkommt. Der Apfel kommt hier dreimal vor, Banane zweimal, Kirsche und Birne je einmal.",
+    "topic": "Modus (Modalwert)"
+  },
+  {
+    "question": "Drei Freunde haben in einem Monat Bücher gelesen. Lena hat 5 Bücher gelesen, Max hat 3 Bücher gelesen und Emma hat 7 Bücher gelesen. Wie viele Bücher haben sie im Durchschnitt pro Person gelesen?",
+    "options": [
+      "A) 3 Bücher",
+      "B) 4 Bücher",
+      "C) 5 Bücher",
+      "D) 6 Bücher"
+    ],
+    "correct": 2,
+    "explanation": "Um den Durchschnitt zu berechnen, addierst du alle gelesenen Bücher und teilst die Summe durch die Anzahl der Freunde: (5 + 3 + 7) = 15 Bücher. Dann 15 : 3 = 5 Bücher pro Person.",
+    "topic": "Mittelwert (Durchschnitt)"
+  },
+  {
+    "question": "Eine Sportlehrerin hat die Weitsprungleistungen ihrer Schüler gemessen (in cm): 180, 210, 175, 205, 190. Was ist der größte Wert in dieser Messreihe?",
+    "options": [
+      "A) 175 cm",
+      "B) 180 cm",
+      "C) 190 cm",
+      "D) 210 cm"
+    ],
+    "correct": 3,
+    "explanation": "Der größte Wert, auch Maximum genannt, ist einfach die höchste Zahl in der gegebenen Zahlenreihe. In diesem Fall ist 210 cm die höchste gemessene Weitsprungleistung.",
+    "topic": "Maximum"
+  },
+  {
+    "question": "Die Außentemperaturen an einem Tag wurden gemessen: morgens 10°C, mittags 22°C, abends 15°C, nachts 8°C. Was ist die Spannweite der Temperaturen an diesem Tag?",
+    "options": [
+      "A) 7°C",
+      "B) 12°C",
+      "C) 14°C",
+      "D) 22°C"
+    ],
+    "correct": 2,
+    "explanation": "Die Spannweite ist der Unterschied zwischen dem höchsten und dem niedrigsten Wert in einer Datenreihe. Der höchste Wert ist 22°C, der niedrigste Wert ist 8°C. Die Spannweite ist 22°C - 8°C = 14°C.",
+    "topic": "Spannweite"
+  },
+  {
+    "question": "Was ist in der Statistik der erste Schritt, wenn man Informationen zu einem bestimmten Thema sammeln möchte?",
+    "options": [
+      "Eine Schlussfolgerung ziehen",
+      "Daten sammeln",
+      "Ein Diagramm zeichnen",
+      "Den Durchschnitt berechnen"
+    ],
+    "correct": 1,
+    "explanation": "Bevor man Daten auswerten oder darstellen kann, muss man sie zuerst sammeln. Das ist der grundlegende erste Schritt jeder statistischen Untersuchung.",
+    "topic": "Datensammlung"
+  },
+  {
+    "question": "Du zählst, wie oft deine Freunde ihr Lieblingsessen nennen. Wenn 7 Freunde 'Pizza' sagen, wie würdest du das mit einer Strichliste korrekt darstellen?",
+    "options": [
+      "|||| | |",
+      "|||| ||",
+      "||||| ||",
+      "|||| |||"
+    ],
+    "correct": 2,
+    "explanation": "In Strichlisten werden Fünfergruppen gebildet, um das Zählen zu erleichtern. Eine volle Fünfergruppe wird mit vier senkrechten Strichen und einem Querstrich (|||||) dargestellt. Für 7 wären das eine Fünfergruppe und zwei einzelne Striche (||).",
+    "topic": "Strichlisten und Häufigkeit"
+  },
+  {
+    "question": "Fünf Schüler haben ihre gesammelten Kastanien gezählt: 23, 18, 30, 25, 20. Was ist die kleinste Anzahl (Minimum) der gesammelten Kastanien?",
+    "options": [
+      "23",
+      "18",
+      "30",
+      "20"
+    ],
+    "correct": 1,
+    "explanation": "Das Minimum ist der kleinste Wert in einer Zahlenreihe. Hier ist 18 die kleinste Zahl.",
+    "topic": "Minimum"
+  },
+  {
+    "question": "Für die Kastanienzahlen aus der vorherigen Frage (23, 18, 30, 25, 20), wie groß ist die Spannweite dieser Daten? (Die Spannweite ist der Unterschied zwischen dem größten und dem kleinsten Wert.)",
+    "options": [
+      "7",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct": 2,
+    "explanation": "Die Spannweite berechnet sich aus dem größten Wert (Maximum) minus dem kleinsten Wert (Minimum). Hier: 30 (Maximum) - 18 (Minimum) = 12.",
+    "topic": "Spannweite"
+  },
+  {
+    "question": "Eine Klasse hat abgestimmt, welches Tier sie am liebsten mag: Hund, Katze, Hase, Hund, Katze, Hund, Fisch, Hund. Welches Tier ist der Modalwert (das häufigste Tier)?",
+    "options": [
+      "Katze",
+      "Hund",
+      "Hase",
+      "Fisch"
+    ],
+    "correct": 1,
+    "explanation": "Der Modalwert ist der Wert, der am häufigsten in einer Datenreihe vorkommt. 'Hund' wurde viermal genannt, während 'Katze' zweimal, 'Hase' einmal und 'Fisch' einmal genannt wurden.",
+    "topic": "Modalwert"
+  },
+  {
+    "question": "Vier Kinder haben folgende Anzahlen an Murmeln: Kind A hat 12, Kind B hat 8, Kind C hat 10 und Kind D hat 14 Murmeln. Wie viele Murmeln haben sie im Durchschnitt (Mittelwert) pro Kind?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct": 1,
+    "explanation": "Der Mittelwert wird berechnet, indem man alle Werte addiert und die Summe durch die Anzahl der Werte teilt. (12 + 8 + 10 + 14) / 4 = 44 / 4 = 11.",
+    "topic": "Mittelwert (Durchschnitt)"
+  },
+  {
+    "question": "Was zeigt dir eine Häufigkeitstabelle an?",
+    "options": [
+      "Nur die größten Werte einer Messung",
+      "Die Reihenfolge, in der Daten gesammelt wurden",
+      "Wie oft jeder einzelne Wert in einer Datensammlung vorkommt",
+      "Die Meinungen von Leuten zu einem Thema"
+    ],
+    "correct": 2,
+    "explanation": "Eine Häufigkeitstabelle ordnet die gesammelten Daten und zeigt genau, wie oft (die 'Häufigkeit') jeder unterschiedliche Wert auftritt.",
+    "topic": "Häufigkeitstabelle"
+  },
+  {
+    "question": "Du hast aufgeschrieben, welche Farben die Autos haben, die in 10 Minuten an deinem Fenster vorbeifahren. Was wäre der sinnvollste nächste Schritt, um diese Daten klar und übersichtlich darzustellen?",
+    "options": [
+      "Die Farben der nächsten Autos erraten",
+      "Eine Frequenz-Tabelle oder eine sortierte Liste erstellen",
+      "Die Autos eine weitere Stunde lang zählen",
+      "Die Summe aller Farben berechnen"
+    ],
+    "correct": 1,
+    "explanation": "Nach dem Sammeln der Daten ist der nächste logische Schritt, sie zu organisieren und aufzubereiten. Eine Frequenz-Tabelle oder eine sortierte Liste macht die Häufigkeit jeder Farbe sofort erkennbar und leicht verständlich für andere.",
+    "topic": "Datenorganisation und -darstellung"
+  },
+  {
+    "question": "Welche Zahl macht die Gleichung 7 + □ = 15 wahr?",
+    "options": [
+      "A) 6",
+      "B) 7",
+      "C) 8",
+      "D) 9"
+    ],
+    "correct": 2,
+    "explanation": "Um die Gleichung wahr zu machen, musst du von 15 die 7 subtrahieren: 15 - 7 = 8. Also gehört die 8 in das Kästchen.",
+    "topic": "Platzhalter in Gleichungen (einfach)"
+  },
+  {
+    "question": "Wenn 3 * x = 24 ist, welchen Wert hat x?",
+    "options": [
+      "A) 6",
+      "B) 7",
+      "C) 8",
+      "D) 9"
+    ],
+    "correct": 2,
+    "explanation": "Um den Wert für x zu finden, musst du die 24 durch 3 teilen: 24 : 3 = 8. Der Wert von x ist 8.",
+    "topic": "Einfache Gleichungen mit Multiplikation"
+  },
+  {
+    "question": "Ein Zahlenautomat verwandelt Eingabezahlen. Wenn du 5 eingibst, kommt 10 heraus. Wenn du 7 eingibst, kommt 12 heraus. Welche Regel benutzt der Automat?",
+    "options": [
+      "A) Zahl + 5",
+      "B) Zahl * 2",
+      "C) Zahl + 7",
+      "D) Zahl + 3"
+    ],
+    "correct": 0,
+    "explanation": "Prüfe die Regel: Für 5 ist 5 + 5 = 10. Für 7 ist 7 + 5 = 12. Die Regel 'Zahl + 5' passt für beide Beispiele.",
+    "topic": "Muster und Regeln erkennen"
+  },
+  {
+    "question": "Anna hatte eine unbekannte Anzahl an Stiften. Sie bekommt 4 Stifte von ihrer Freundin und hat jetzt insgesamt 11 Stifte. Wie viele Stifte hatte Anna zuerst?",
+    "options": [
+      "A) 5",
+      "B) 6",
+      "C) 7",
+      "D) 8"
+    ],
+    "correct": 2,
+    "explanation": "Nennen wir die ursprüngliche Anzahl der Stifte 'x'. Dann ist x + 4 = 11. Um 'x' zu finden, rechnest du 11 - 4 = 7. Anna hatte zuerst 7 Stifte.",
+    "topic": "Textaufgaben in Gleichungen übersetzen"
+  },
+  {
+    "question": "Welches ist die nächste Zahl in dieser Zahlenfolge: 3, 6, 12, 24, ____?",
+    "options": [
+      "A) 30",
+      "B) 36",
+      "C) 42",
+      "D) 48"
+    ],
+    "correct": 3,
+    "explanation": "In dieser Zahlenfolge wird jede Zahl mit 2 multipliziert, um die nächste Zahl zu erhalten (3*2=6, 6*2=12, 12*2=24). Die nächste Zahl ist also 24 * 2 = 48.",
+    "topic": "Zahlenfolgen und Muster erkennen"
+  },
+  {
+    "question": "Welchen Wert hat der Ausdruck 2 * y + 3, wenn y = 5 ist?",
+    "options": [
+      "A) 10",
+      "B) 12",
+      "C) 13",
+      "D) 15"
+    ],
+    "correct": 2,
+    "explanation": "Setze den Wert von y = 5 in den Ausdruck ein: 2 * 5 + 3. Zuerst wird multipliziert: 2 * 5 = 10. Dann wird addiert: 10 + 3 = 13.",
+    "topic": "Terme mit Variablen berechnen"
+  },
+  {
+    "question": "Welche Gleichung hat das gleiche Ergebnis wie 8 + 5?",
+    "options": [
+      "A) 8 - 5",
+      "B) 5 * 8",
+      "C) 5 + 8",
+      "D) 8 : 5"
+    ],
+    "correct": 2,
+    "explanation": "Beim Addieren spielt die Reihenfolge der Zahlen keine Rolle. 8 + 5 ergibt dasselbe wie 5 + 8 (beides ist 13). Dies ist eine Eigenschaft der Addition.",
+    "topic": "Rechengesetze (Kommutativgesetz der Addition)"
+  },
+  {
+    "question": "Eine Tüte Gummibärchen enthält 30 Stück. Wenn Markus doppelt so viele Gummibärchen bekommt wie Lea, wie viele Gummibärchen bekommt Lea?",
+    "options": [
+      "A) 5",
+      "B) 10",
+      "C) 15",
+      "D) 20"
+    ],
+    "correct": 1,
+    "explanation": "Nennen wir Leas Gummibärchen 'x'. Markus bekommt doppelt so viele, also '2x'. Zusammen haben sie x + 2x = 3x Gummibärchen. Die Gesamtzahl ist 30, also 3x = 30. Um 'x' zu finden, rechnest du 30 : 3 = 10. Lea bekommt 10 Gummibärchen.",
+    "topic": "Textaufgaben mit Verhältnissen und Gleichungen"
   }
 ]

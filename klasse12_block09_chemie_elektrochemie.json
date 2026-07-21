@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was versteht man unter Oxidation in der Elektrochemie?",
+    "options": [
+      "Aufnahme von Elektronen (Reduktion)",
+      "Abgabe von Elektronen – die Oxidationszahl des Atoms erhöht sich",
+      "Aufnahme von Protonen (Säure-Base)",
+      "Abgabe von Protonen (Säure-Base)"
+    ],
+    "correct": 1,
+    "explanation": "Merkhilfe OIL RIG: Oxidation Is Loss (of electrons), Reduction Is Gain. Oxidation: Atom/Ion gibt Elektronen ab → Oxidationszahl steigt. Gegenreaktion: Reduktion.",
+    "topic": "Redoxreaktionen"
+  },
+  {
+    "question": "Was ist Reduktion in der Elektrochemie?",
+    "options": [
+      "Abgabe von Elektronen (das ist Oxidation)",
+      "Aufnahme von Elektronen – die Oxidationszahl des Atoms sinkt",
+      "Abgabe von Protonen",
+      "Aufnahme von Sauerstoffatomen"
+    ],
+    "correct": 1,
+    "explanation": "Reduktion: Atom/Ion nimmt Elektronen auf → Oxidationszahl sinkt. Beispiel: Cu²⁺ + 2e⁻ → Cu⁰. Oxidation und Reduktion laufen immer gleichzeitig ab (Redoxreaktion).",
+    "topic": "Redoxreaktionen"
+  },
+  {
+    "question": "Was sind Oxidationszahlen?",
+    "options": [
+      "Die tatsächlichen Ladungen der Atome in einer Verbindung",
+      "Formale Ladungen, die Atomen zugewiesen werden, um Elektronenübertragungen bei Redoxreaktionen zu verfolgen – sie werden durch feste Regeln berechnet",
+      "Die Anzahl der Protonen im Kern",
+      "Die Anzahl der Valenz-Elektronen"
+    ],
+    "correct": 1,
+    "explanation": "Oxidationszahlen: Rechenregeln. O meist −2 (Ausnahme: Peroxide −1), H meist +1 (Ausnahme: Metallhydride −1). Summe in Verbindung = Gesamtladung. Hilft Redoxvorgänge zu erkennen.",
+    "topic": "Redoxreaktionen"
+  },
+  {
+    "question": "Was ist ein Oxidationsmittel?",
+    "options": [
+      "Ein Stoff, der Elektronen abgibt und dabei selbst oxidiert wird",
+      "Ein Stoff, der Elektronen aufnimmt und dabei selbst reduziert wird – es oxidiert den Reaktionspartner",
+      "Ein Stoff mit hohem pH-Wert",
+      "Ein Stoff, der Sauerstoff abgibt (Spezialfall, nicht allgemein)"
+    ],
+    "correct": 1,
+    "explanation": "Oxidationsmittel: akzeptiert Elektronen → wird selbst reduziert. Starke Oxidationsmittel: F₂, O₂, KMnO₄, Cl₂, H₂O₂, konzentrierte H₂SO₄. Sie haben hohes Standardpotential.",
+    "topic": "Redoxreaktionen"
+  },
+  {
+    "question": "Was ist ein galvanisches Element?",
+    "options": [
+      "Eine Vorrichtung zur erzwungenen Elektrolyse",
+      "Ein elektrochemisches System, das eine freiwillig ablaufende Redoxreaktion nutzt, um elektrische Energie zu erzeugen (chemische → elektrische Energie)",
+      "Ein Gerät zur pH-Messung",
+      "Ein elektrischer Transformator"
+    ],
+    "correct": 1,
+    "explanation": "Galvanisches Element: spontane Redoxreaktion liefert Strom. Anode: Oxidation (negative Elektrode). Kathode: Reduktion (positive Elektrode). Beispiel: Daniell-Element, Batterie.",
+    "topic": "Galvanische Elemente"
+  },
+  {
+    "question": "Wie ist das Daniell-Element aufgebaut?",
+    "options": [
+      "Zwei Kupferelektroden in verdünnter Schwefelsäure",
+      "Zink-Elektrode in ZnSO₄-Lösung und Kupfer-Elektrode in CuSO₄-Lösung, verbunden durch eine Salzbrücke – Standardspannung ca. 1,10 V",
+      "Zwei Platin-Elektroden in Salzsäure",
+      "Zink-Elektrode in CuSO₄ und Kupfer-Elektrode in ZnSO₄"
+    ],
+    "correct": 1,
+    "explanation": "Daniell-Element: Zn | ZnSO₄ || CuSO₄ | Cu. Anode: Zn → Zn²⁺ + 2e⁻. Kathode: Cu²⁺ + 2e⁻ → Cu. Elektronen fließen von Zn (unedler) zu Cu (edler). ΔE° = 1,10 V.",
+    "topic": "Galvanische Elemente"
+  },
+  {
+    "question": "Welche Funktion hat die Salzbrücke in einer galvanischen Zelle?",
+    "options": [
+      "Sie überträgt Elektronen zwischen den Halbzellen (Elektronen fließen durch den Außenstromkreis)",
+      "Sie ermöglicht Ionenfluss zwischen den Halbzellen und erhält die elektrische Neutralität aufrecht, ohne die Lösungen zu vermischen",
+      "Sie erhöht die Zellspannung",
+      "Sie wandelt Gleichstrom in Wechselstrom"
+    ],
+    "correct": 1,
+    "explanation": "Salzbrücke (z.B. mit KCl-Gel): Ionen wandern zwischen den Halbzellen, um Ladungsneutralität herzustellen. Ohne Salzbrücke: Ladungsanhäufung → Reaktion stoppt.",
+    "topic": "Galvanische Elemente"
+  },
+  {
+    "question": "Was ist das Standardpotential (E°) einer Halbzelle?",
+    "options": [
+      "Das Potential bei beliebiger Ionenkonzentration",
+      "Das elektrochemische Potential einer Halbzelle, gemessen gegen die Standardwasserstoffelektrode (SWE) bei Standardbedingungen (T = 298 K, c = 1 mol/L, p = 1 bar)",
+      "Die maximale Spannung, die eine Batterie erreicht",
+      "Das Potential ohne Salzbrücke"
+    ],
+    "correct": 1,
+    "explanation": "E° wird gegen die SWE (E° = 0 V per Definition) gemessen. Positives E°: edler als H₂. Negatives E°: unedler als H₂. Beispiele: Li⁺/Li: −3,04 V; Cu²⁺/Cu: +0,34 V; F₂/F⁻: +2,87 V.",
+    "topic": "Elektrochemische Spannungsreihe"
+  },
+  {
+    "question": "Was ist die elektrochemische Spannungsreihe?",
+    "options": [
+      "Eine Tabelle der Reaktionsgeschwindigkeiten von Metallen in Säuren",
+      "Eine geordnete Liste von Redoxpaaren nach ihrem Standardpotential – von stark reduktiv (niedrigstes E°) bis stark oxidativ (höchstes E°)",
+      "Eine Tabelle der Elektronegativitäten der Elemente",
+      "Eine Liste der Löslichkeiten von Metallsalzen"
+    ],
+    "correct": 1,
+    "explanation": "Spannungsreihe: unedle Metalle (negative E°, gute Reduktionsmittel) links/unten; edle Metalle (positive E°, gute Oxidationsmittel) rechts/oben. Zn < Fe < Cu < Ag < Au.",
+    "topic": "Elektrochemische Spannungsreihe"
+  },
+  {
+    "question": "Wie berechnet man die Zellspannung (EMK) eines galvanischen Elements?",
+    "options": [
+      "U = E°(Kathode) + E°(Anode)",
+      "U = E°(Kathode) − E°(Anode) (Standardpotential der positiven Elektrode minus der negativen)",
+      "U = E°(Anode) − E°(Kathode)",
+      "U = E°(Kathode) × E°(Anode)"
+    ],
+    "correct": 1,
+    "explanation": "EMK = E°(Kathode) − E°(Anode). Kathode: höheres (positiveres) Potential. Anode: niedrigeres Potential. Beispiel Daniell: 0,34 V − (−0,76 V) = 1,10 V.",
+    "topic": "Elektrochemische Spannungsreihe"
+  },
+  {
+    "question": "Was beschreibt die Nernst-Gleichung?",
+    "options": [
+      "Die Abhängigkeit der Reaktionsgeschwindigkeit von der Temperatur (das ist Arrhenius)",
+      "Die Abhängigkeit des Elektrodenpotentials von der Ionenkonzentration: E = E° + (RT/nF) · ln([Ox]/[Red])",
+      "Den Wirkungsgrad einer Brennstoffzelle",
+      "Die Menge abgeschiedener Masse bei der Elektrolyse"
+    ],
+    "correct": 1,
+    "explanation": "Nernst: E = E° + (0,059/n) · lg([Ox]/[Red]) (bei 25 °C). Bei Standardkonzentrationen (1 mol/L) gilt E = E°. Höhere Ox-Konzentration → höheres Potential.",
+    "topic": "Nernst-Gleichung"
+  },
+  {
+    "question": "Was ist Elektrolyse?",
+    "options": [
+      "Eine spontane Redoxreaktion, die Strom erzeugt (galvanisches Element)",
+      "Ein durch äußere elektrische Energie erzwungener, nicht-spontaner Prozess zur Durchführung einer Redoxreaktion",
+      "Eine Neutralisationsreaktion",
+      "Eine Fällungsreaktion im wässrigen Medium"
+    ],
+    "correct": 1,
+    "explanation": "Elektrolyse: elektrische Energie wird in chemische Energie umgewandelt. Voraussetzung: ΔG > 0 (nicht-spontan). Anwendungen: Aluminiumgewinnung, Galvanisierung, Wasserstoffproduktion.",
+    "topic": "Elektrolyse"
+  },
+  {
+    "question": "Was passiert an der Kathode bei der Elektrolyse?",
+    "options": [
+      "Oxidation (Elektronenabgabe der Ionen)",
+      "Reduktion (Elektronenaufnahme) – Kationen aus der Lösung werden zu neutralen Atomen reduziert und abgeschieden",
+      "Auflösung des Elektrodenmaterials",
+      "Freisetzung von Sauerstoff (das passiert meist an der Anode)"
+    ],
+    "correct": 1,
+    "explanation": "Kathode (−): Reduktion. Kationen wandern zur Kathode, nehmen Elektronen auf. Beispiel Kupfergewinnung: Cu²⁺ + 2e⁻ → Cu. Abscheidung von Metall auf der Kathode.",
+    "topic": "Elektrolyse"
+  },
+  {
+    "question": "Was passiert an der Anode bei der Elektrolyse?",
+    "options": [
+      "Reduktion (Elektronenaufnahme)",
+      "Oxidation (Elektronenabgabe) – Anionen werden oxidiert, oder das Anodenmaterial selbst löst sich auf (aktive Anode)",
+      "Abscheidung von Metall",
+      "Bildung von Wasserstoffgas"
+    ],
+    "correct": 1,
+    "explanation": "Anode (+): Oxidation. Anionen wandern zur Anode, geben Elektronen ab. Beispiel: 2Cl⁻ → Cl₂ + 2e⁻ (Chlor-Alkali-Elektrolyse). Aktive Anode: Cu(Anode) → Cu²⁺ + 2e⁻.",
+    "topic": "Elektrolyse"
+  },
+  {
+    "question": "Was besagt das 1. Faraday'sche Gesetz?",
+    "options": [
+      "Die Zellspannung ist proportional zur Stromstärke",
+      "Die abgeschiedene oder aufgelöste Stoffmenge m ist proportional zur geflossenen Ladungsmenge Q: m = M · Q / (n · F)",
+      "Die Reaktionsgeschwindigkeit ist proportional zur Temperatur",
+      "Der Strom ist proportional zur Konzentration des Elektrolyten"
+    ],
+    "correct": 1,
+    "explanation": "1. Faradaysches Gesetz: m = M · I · t / (n · F). m: Masse, M: molare Masse, I: Strom, t: Zeit, n: Ladungszahl, F = 96 485 C/mol. Mehr Ladung → mehr abgeschiedene Masse.",
+    "topic": "Faradaysche Gesetze"
+  },
+  {
+    "question": "Was ist die Faraday-Konstante F?",
+    "options": [
+      "F = 8,314 J/(mol·K) (das ist die Gaskonstante R)",
+      "F = 96 485 C/mol – die elektrische Ladung, die einem Mol einfach geladener Ionen entspricht",
+      "F = 6,022 · 10²³ mol⁻¹ (das ist die Avogadro-Konstante)",
+      "F = 1,602 · 10⁻¹⁹ C (das ist die Elementarladung e)"
+    ],
+    "correct": 1,
+    "explanation": "F = Nₐ · e = 6,022 · 10²³ · 1,602 · 10⁻¹⁹ C ≈ 96 485 C/mol. Gibt an: Um 1 mol einwertiger Ionen abzuscheiden, muss die Ladungsmenge F fließen.",
+    "topic": "Faradaysche Gesetze"
+  },
+  {
+    "question": "Was ist ein Akkumulator (Sekundärelement)?",
+    "options": [
+      "Ein galvanisches Element, das einmalig Strom liefert und dann entsorgt wird (Primärelement)",
+      "Ein galvanisches Element, das durch Zufuhr elektrischer Energie wieder aufgeladen werden kann – die Elektrodenreaktionen sind reversibel",
+      "Eine Brennstoffzelle mit Wasserstoff",
+      "Ein Kondensator zur Energiespeicherung"
+    ],
+    "correct": 1,
+    "explanation": "Akkumulator: reversibles galvanisches Element. Entladen: chemisch → elektrisch. Laden: elektrisch → chemisch (Elektrolyse). Beispiele: Blei-Akku (Auto), Li-Ionen-Akku (Handy).",
+    "topic": "Batterien"
+  },
+  {
+    "question": "Was ist eine Brennstoffzelle?",
+    "options": [
+      "Ein Akkumulator mit Wasserstoffelektroden",
+      "Eine galvanische Zelle, der kontinuierlich Brennstoff (z.B. H₂) und Oxidationsmittel (O₂) zugeführt werden – sie erzeugt Strom und Wärme; Reaktionsprodukt bei H₂/O₂-Zelle: Wasser",
+      "Eine Batterie ohne Elektrolyt",
+      "Eine Elektrolyseanlage für Wasserstoff"
+    ],
+    "correct": 1,
+    "explanation": "Brennstoffzelle H₂/O₂: Anode: H₂ → 2H⁺ + 2e⁻. Kathode: O₂ + 4H⁺ + 4e⁻ → 2H₂O. Wirkungsgrad bis 60 % (Verbrennungsmotor: ~30 %). Emissionsarm.",
+    "topic": "Batterien"
+  },
+  {
+    "question": "Was ist Korrosion und wie entsteht Rosten bei Eisen?",
+    "options": [
+      "Die gewollte Oxidation von Metallen zur Stromerzeugung",
+      "Die unerwünschte Zersetzung von Metallen durch elektrochemische oder chemische Oxidation; Rosten: Fe reagiert mit O₂ und H₂O zu Eisenhydroxid (Fe(OH)₃), das zu Rost (Fe₂O₃·nH₂O) verwittert",
+      "Die Reduktion von Metalloberflächen",
+      "Galvanische Abscheidung von Eisen"
+    ],
+    "correct": 1,
+    "explanation": "Korrosion: Metall wird oxidiert. Rosten: elektrochemischer Prozess unter Beteiligung von Wasser und Sauerstoff (Lokalelemente). Volkswirtschaftlicher Schaden durch Korrosion enorm.",
+    "topic": "Korrosion"
+  },
+  {
+    "question": "Was ist Kontaktkorrosion (galvanische Korrosion)?",
+    "options": [
+      "Korrosion durch Temperatureinwirkung allein",
+      "Beschleunigter Korrosionsprozess am unedleren Metall, wenn es in Kontakt mit einem edleren Metall in einem Elektrolyten steht – es entsteht ein galvanisches Element, das unedlere Metall wird zur Anode",
+      "Korrosion durch Säureneinwirkung ohne elektrischen Kontakt",
+      "Passivierung durch Bildung einer Oxidschicht"
+    ],
+    "correct": 1,
+    "explanation": "Beispiel: Zink und Kupfer in Salzwasser → Zink korrodiert schneller als allein. Folgerung: Nicht unterschiedliche Metalle in Kontakt (z.B. Schrauben) ohne Schutzmaßnahmen.",
+    "topic": "Korrosion"
+  },
+  {
+    "question": "Was ist kathodischer Korrosionsschutz?",
+    "options": [
+      "Man überzieht das Metall mit einer isolierenden Lackschicht",
+      "Das zu schützende Metall wird zur Kathode gemacht, indem man eine Opferanode (unedleres Metall) anschließt oder eine negative Schutzspannung anlegt – Kathode korrodiert nicht",
+      "Man erhöht den pH-Wert des Elektrolyten",
+      "Man isoliert das Metall vollständig von Feuchtigkeit"
+    ],
+    "correct": 1,
+    "explanation": "Opferanode: z.B. Zink oder Magnesium an Schiffsrümpfen, Pipelines. Das unedle Metall (Opferanode) korrodiert anstelle des zu schützenden Metalls (Stahl). Muss regelmäßig ersetzt werden.",
+    "topic": "Korrosionsschutz"
+  },
+  {
+    "question": "Was ist Passivierung?",
+    "options": [
+      "Die Auflösung eines Metalls in konzentrierter Säure",
+      "Die Bildung einer dichten, stabilen Oxidschicht auf der Metalloberfläche, die das Metall vor weiterer Korrosion schützt – z.B. Al₂O₃ auf Aluminium, Cr₂O₃ auf Edelstahl",
+      "Die galvanische Vergoldung einer Oberfläche",
+      "Die Reduktion von Metallionen an der Kathode"
+    ],
+    "correct": 1,
+    "explanation": "Passivierung: Schutzschicht aus Metalloxid. Aluminium bildet spontan Al₂O₃. Eloxieren: kontrollierte Verdickung der Schicht durch Elektrolyse. Chrom in Edelstahl: Cr₂O₃-Schicht.",
+    "topic": "Korrosionsschutz"
+  },
+  {
+    "question": "Was sind die Oxidationszahlen von Sauerstoff und Wasserstoff in typischen Verbindungen?",
+    "options": [
+      "O: +2, H: −1",
+      "O: −2, H: +1 (Ausnahmen: O in Peroxiden −1; H in Metallhydriden −1)",
+      "O: −1, H: +2",
+      "O: 0, H: 0 (nur im elementaren Zustand)"
+    ],
+    "correct": 1,
+    "explanation": "Standardregeln: O meist −2 (Ausnahme: Na₂O₂, H₂O₂ → O: −1; OF₂ → O: +2). H meist +1 (Ausnahme: NaH, CaH₂ → H: −1). Elementarer Zustand (O₂, H₂): 0.",
+    "topic": "Oxidationszahlen"
+  },
+  {
+    "question": "Was ist Galvanisierung?",
+    "options": [
+      "Elektrolytische Korrosion von Metalloberflächen",
+      "Das elektrolytische Aufbringen einer dünnen Metallschicht auf ein Substrat (z.B. Versilberung von Besteck, Vergoldung, Verzinkung von Stahl zum Korrosionsschutz)",
+      "Die thermische Behandlung von Metallen",
+      "Die Passivierung von Aluminiumoberflächen"
+    ],
+    "correct": 1,
+    "explanation": "Galvanisierung: Werkstück = Kathode im Elektrolysebad mit Metallsalzlösung. Metallatome scheiden sich auf der Kathode ab. Anwendung: Verchromung, Vernicklung, Verzinkung.",
+    "topic": "Elektrolyse"
+  },
+  {
+    "question": "Welche Produkte entstehen an Kathode und Anode bei der Elektrolyse von Wasser?",
+    "options": [
+      "H₂ und O₃ (Ozon)",
+      "Kathode: H₂ (Reduktion: 2H⁺ + 2e⁻ → H₂); Anode: O₂ (Oxidation: 2H₂O → O₂ + 4H⁺ + 4e⁻); Volumenverhältnis H₂:O₂ = 2:1",
+      "Nur H₂ an beiden Elektroden",
+      "O₂ an der Kathode und H₂ an der Anode (umgekehrt)"
+    ],
+    "correct": 1,
+    "explanation": "Wasserelektrolyse: Kathode (−): Reduktion von H⁺ zu H₂. Anode (+): Oxidation von H₂O zu O₂. H₂:O₂ = 2:1 (Volumenverhältnis, entspricht 4:2 Mol Elektronen).",
+    "topic": "Elektrolyse"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Primärelement und Sekundärelement?",
+    "options": [
+      "Beides sind aufladbare Batterien",
+      "Primärelement: einmalig nutzbar, nicht aufladbar (z.B. Zink-Kohle-Batterie); Sekundärelement (Akkumulator): wiederaufladbar durch Umkehrung der Elektrodenreaktionen",
+      "Primärelemente sind leistungsstärker als Sekundärelemente",
+      "Beide bezeichnen dasselbe"
+    ],
+    "correct": 1,
+    "explanation": "Primär (lat. primus): erste und einmalige Entladung. Sekundär: zweite und weitere Nutzung durch Laden. Li-Ionen-Akku: Sekundärelement. Alkaline-Batterie: Primärelement.",
+    "topic": "Batterien"
+  },
+  {
+    "question": "Was ist das Prinzip des Blei-Akkumulators?",
+    "options": [
+      "Zink und Kupfer in Schwefelsäure (Daniell)",
+      "Blei (Pb) als Anode und Bleidioxid (PbO₂) als Kathode in konzentrierter H₂SO₄; beim Entladen entstehen an beiden Elektroden PbSO₄; Nennspannung: ca. 2 V/Zelle",
+      "Lithium und Kobaltoxid in organischem Elektrolyt (Li-Ionen)",
+      "Nickel und Cadmium in KOH-Lösung (NiCd)"
+    ],
+    "correct": 1,
+    "explanation": "Blei-Akku: robust, günstig, hohe Startströme → Kfz-Batterie. Nachteil: schwer (Pb), begrenzte Zyklenanzahl. Gesamt-6-Zellen-Batterie: 12 V. Recycling wichtig (giftiges Blei).",
+    "topic": "Batterien"
+  },
+  {
+    "question": "Was ist die Ladungsmenge Q und wie berechnet man sie?",
+    "options": [
+      "Q = U · R (das ist das ohmsche Gesetz umgestellt: I = U/R)",
+      "Q = I · t (Stromstärke in Ampere mal Zeit in Sekunden; Einheit: Coulomb C)",
+      "Q = P · t (das ist Energie, Einheit: Joule)",
+      "Q = n · F (das gilt für die Faraday-Rechnung, aber Q = I · t ist die Grundformel)"
+    ],
+    "correct": 1,
+    "explanation": "Ladungsmenge Q = I · t. 1 C = 1 A · 1 s. Verknüpfung mit Faraday: n(Mol Elektronen) = Q / F. Beispiel: 10 A für 1000 s → Q = 10 000 C = 10 000 / 96 485 mol e⁻ ≈ 0,104 mol e⁻.",
+    "topic": "Faradaysche Gesetze"
+  },
+  {
+    "question": "Was ist ein Elektrolyt?",
+    "options": [
+      "Ein Stoff, der elektrische Energie speichert (Kondensator)",
+      "Ein Stoff, der in wässriger Lösung oder in der Schmelze Ionen bildet und dadurch elektrisch leitend ist",
+      "Ein elektrischer Isolator",
+      "Ein Halbleiter für Transistoren"
+    ],
+    "correct": 1,
+    "explanation": "Elektrolyt: Ionen als Ladungsträger. Starke Elektrolyte: vollständig dissoziiert (NaCl, HCl, NaOH). Schwache Elektrolyte: teilweise dissoziiert (CH₃COOH, NH₃). Leitfähigkeit steigt mit Konzentration.",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "question": "Was besagt das 2. Faraday'sche Gesetz?",
+    "options": [
+      "Bei gleicher Ladungsmenge ist die Masse proportional zur Stromstärke",
+      "Bei gleicher Ladungsmenge ist die abgeschiedene Masse proportional zur molaren Masse und umgekehrt proportional zur Wertigkeit (Ladungszahl n) des Ions",
+      "Die Spannung ist unabhängig von der Konzentration",
+      "Die Elektrolyserate ist temperaturunabhängig"
+    ],
+    "correct": 1,
+    "explanation": "2. Faradaysches Gesetz: gleiche Q → m₁/m₂ = (M₁/n₁)/(M₂/n₂). Die elektrochemische Äquivalentmasse M/n (g/mol Elektronen) bestimmt die abgeschiedene Masse.",
+    "topic": "Faradaysche Gesetze"
+  },
+  {
+    "question": "Was ist die Standardwasserstoffelektrode (SWE)?",
+    "options": [
+      "Eine Elektrode aus reinem Wasserstoffgas ohne Katalysator",
+      "Die Referenzelektrode der elektrochemischen Spannungsreihe: Pt|H₂(1 bar)|H⁺(1 mol/L); E° = 0 V per Definition",
+      "Die negativste Elektrode aller Elemente in der Spannungsreihe",
+      "Eine Elektrode aus Platinschwarz in destilliertem Wasser"
+    ],
+    "correct": 1,
+    "explanation": "SWE: Platinblech in H⁺-Lösung (1 mol/L), umspült von H₂-Gas (1 bar). Alle Standardpotentiale werden gegen die SWE gemessen. E° < 0: unedler als H₂; E° > 0: edler als H₂.",
+    "topic": "Elektrochemische Spannungsreihe"
+  },
+  {
+    "question": "Was ist die Schmelzflusselektrolyse und wann wird sie eingesetzt?",
+    "options": [
+      "Elektrolyse einer wässrigen Lösung bei hoher Temperatur",
+      "Elektrolyse eines geschmolzenen Salzes ohne Wasser – wird eingesetzt, um sehr reaktive Metalle zu gewinnen, die Wasser zersetzen würden (z.B. Na aus NaCl-Schmelze, Al aus Al₂O₃-Schmelze)",
+      "Galvanisierung bei hohen Temperaturen",
+      "Elektrolyse mit geschmolzenen Elektroden aus Blei"
+    ],
+    "correct": 1,
+    "explanation": "Schmelzflusselektrolyse: kein Wasser (H₂O würde bei reaktiven Metallen reduziert). Al-Gewinnung (Hall-Héroult-Prozess): Al₂O₃ in kryolitischer Schmelze. Na: Downs-Prozess mit NaCl-Schmelze.",
+    "topic": "Elektrolyse"
+  },
+  {
+    "question": "Was ist die Chlor-Alkali-Elektrolyse?",
+    "options": [
+      "Elektrolyse von Chlorwasser zur Gewinnung von Alkoholen",
+      "Elektrolyse von Natriumchlorid-Lösung (Sole): Kathode: H₂ und NaOH; Anode: Cl₂ – wichtigstes Industrieverfahren zur gleichzeitigen Herstellung von Chlor, Wasserstoff und Natronlauge",
+      "Herstellung von Natriumchlorid durch Elektrolyse",
+      "Elektrolyse von Aluminiumchlorid zur Gewinnung von Aluminium"
+    ],
+    "correct": 1,
+    "explanation": "Chlor-Alkali-Prozess: Kernreaktion: 2NaCl + 2H₂O → 2NaOH + H₂ + Cl₂. Diaphragma oder Membran trennt Anoden- und Kathodenraum. Chlor: Basis für PVC, Desinfektionsmittel.",
+    "topic": "Elektrolyse"
+  },
+  {
+    "question": "Wie lautet die Kathodenreaktion beim Daniell-Element?",
+    "options": [
+      "Zn → Zn²⁺ + 2e⁻ (das ist die Anodenreaktion, Oxidation)",
+      "Cu²⁺ + 2e⁻ → Cu (Reduktion von Kupferionen, Abscheidung von Kupfer an der Kathode)",
+      "Zn²⁺ + 2e⁻ → Zn (Reduktion von Zink)",
+      "Cu → Cu²⁺ + 2e⁻ (Oxidation von Kupfer, würde nicht spontan ablaufen)"
+    ],
+    "correct": 1,
+    "explanation": "Kathode (Kupfer): Cu²⁺ + 2e⁻ → Cu. Anode (Zink): Zn → Zn²⁺ + 2e⁻. Elektronen fließen über den Außenstromkreis von Zink zu Kupfer. Ionen fließen durch Salzbrücke.",
+    "topic": "Galvanische Elemente"
+  },
+  {
+    "question": "Was ist ein Redoxpaar (konjugiertes Redoxpaar)?",
+    "options": [
+      "Zwei Stoffe, die eine Säure-Base-Reaktion eingehen",
+      "Ein oxidierter Stoff und sein korrespondierender reduzierter Stoff, die durch Elektronen-Aufnahme oder -Abgabe ineinander übergehen (z.B. Cu²⁺/Cu; Zn²⁺/Zn)",
+      "Zwei Ionen mit gleicher Ladungszahl",
+      "Ein Ionenpaar in einem Ionengitter"
+    ],
+    "correct": 1,
+    "explanation": "Redoxpaar: Ox/Red. Beispiele: Cu²⁺/Cu (E° = +0,34 V), Zn²⁺/Zn (E° = −0,76 V), Fe³⁺/Fe²⁺ (E° = +0,77 V). In der Spannungsreihe sind alle Redoxpaare gelistet.",
+    "topic": "Elektrochemische Spannungsreihe"
+  },
+  {
+    "question": "Was passiert beim Aufladen eines Akkumulators?",
+    "options": [
+      "Der Akkumulator gibt elektrische Energie ab (das ist die Entladung)",
+      "Die Elektrodenreaktionen werden umgekehrt – der Akkumulator verhält sich wie eine Elektrolysezelle; elektrische Energie wird in chemische Energie gespeichert",
+      "Es findet keine chemische Reaktion statt, nur Erwärmung",
+      "Die Elektroden werden physisch ausgetauscht"
+    ],
+    "correct": 1,
+    "explanation": "Laden: externe Spannungsquelle erzwingt die Umkehrreaktion. Blei-Akku: PbSO₄ → Pb (Kathode) und PbSO₄ → PbO₂ (Anode). Energie wird als chemische Bindungsenergie gespeichert.",
+    "topic": "Batterien"
+  },
+  {
+    "question": "Wie verändert sich das Elektrodenpotential laut Nernst-Gleichung, wenn die Konzentration der oxidierten Form steigt?",
+    "options": [
+      "Das Potential sinkt (höhere Reduktionsmittelmenge würde senken)",
+      "Das Potential steigt – eine höhere Konzentration des Oxidationsmittels erhöht den Antrieb zur Reduktion (mehr zu reduzierende Ionen verfügbar)",
+      "Das Potential bleibt exakt konstant (Standardpotential gilt immer)",
+      "Das Potential wird null"
+    ],
+    "correct": 1,
+    "explanation": "Nernst: E = E° + (0,059/n) · lg([Ox]/[Red]). Steigt [Ox], steigt lg([Ox]/[Red]) → E steigt. Fällt [Ox], sinkt E. Erklärt, warum Batterien beim Entladen Spannung verlieren.",
+    "topic": "Nernst-Gleichung"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen galvanischer Zelle und Elektrolysezelle energetisch?",
+    "options": [
+      "Beide verbrauchen elektrische Energie",
+      "Galvanische Zelle: spontan (ΔG < 0), erzeugt elektrische Energie; Elektrolysezelle: nicht-spontan (ΔG > 0), verbraucht elektrische Energie zur Erzwingung der Reaktion",
+      "Beide erzeugen elektrische Energie",
+      "Kein energetischer Unterschied"
+    ],
+    "correct": 1,
+    "explanation": "Galvanisch: freiwillig, ΔG = −n·F·ΔE < 0. Elektrolyse: erzwungen, ΔG > 0, externe Spannungsquelle nötig. Spannung der Quelle muss größer als die Gegenspannung der Zelle sein.",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "question": "Was ist Kupferraffination und wie nutzt sie elektrolytische Prinzipien?",
+    "options": [
+      "Gewinnung von Kupfer aus Erz durch Schmelzen (Verhüttung)",
+      "Elektrolytische Reinigung von Rohkupfer: Rohkupfer (Anode) löst sich auf, reines Kupfer scheidet sich auf der Reinkupfer-Kathode ab – Verunreinigungen fallen als Anodenschlamm aus",
+      "Galvanische Beschichtung anderer Metalle mit Kupfer",
+      "Schmelzflusselektrolyse von Kupfersulfat"
+    ],
+    "correct": 1,
+    "explanation": "Kupferraffination: Anode: Cu (roh) + Verunreinigungen. Elektrolyt: CuSO₄. Kathode: reines Cu scheidet sich ab. Edle Metalle (Au, Ag) im Anodenschlamm: wirtschaftlich wertvoll.",
+    "topic": "Elektrolyse"
+  },
+  {
+    "question": "Was ist ein Diaphragma (Membran) bei der Elektrolyse und wozu dient es?",
+    "options": [
+      "Eine Elektrode aus porösem Material, die Ionen bindet",
+      "Eine semipermeable Trennschicht zwischen Anoden- und Kathodenraum, die Ionenfluss erlaubt, aber die Reaktionsprodukte trennt und Produktvermischung verhindert",
+      "Ein Katalysator zur Reaktionsbeschleunigung",
+      "Eine zusätzliche Stromquelle im System"
+    ],
+    "correct": 1,
+    "explanation": "Diaphragma (porös) oder Ionenaustauschermembran (Nafion): trennt Cl₂ (Anode) von H₂ und NaOH (Kathode) in der Chlor-Alkali-Elektrolyse. Membranverfahren: sauberste Produkttrennung.",
+    "topic": "Elektrolyse"
+  }
+]

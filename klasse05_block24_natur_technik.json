@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist ein Atom?",
+    "options": [
+      "Molekül",
+      "Kleinstes Teilchen eines Elements",
+      "Zelle",
+      "Ion"
+    ],
+    "correct": 1,
+    "explanation": "Atom: kleinste Einheit eines chemischen Elements.",
+    "topic": "Chemie"
+  },
+  {
+    "question": "Was ist ein Molekül?",
+    "options": [
+      "Atom",
+      "Verbindung aus zwei oder mehr Atomen",
+      "Element",
+      "Ion"
+    ],
+    "correct": 1,
+    "explanation": "Molekül: mehrere Atome zusammen (H2O = 2 H + 1 O).",
+    "topic": "Chemie"
+  },
+  {
+    "question": "Was ist H2O?",
+    "options": [
+      "Kohlendioxid",
+      "Sauerstoff",
+      "Wasser",
+      "Stickstoff"
+    ],
+    "correct": 2,
+    "explanation": "H2O = Wasser: 2 Wasserstoff-Atome + 1 Sauerstoff-Atom.",
+    "topic": "Chemie"
+  },
+  {
+    "question": "Was ist CO2?",
+    "options": [
+      "Sauerstoff",
+      "Stickstoff",
+      "Kohlendioxid",
+      "Wasser"
+    ],
+    "correct": 2,
+    "explanation": "CO2 = Kohlendioxid: 1 Kohlenstoff + 2 Sauerstoff.",
+    "topic": "Chemie"
+  },
+  {
+    "question": "Was ist das Periodensystem?",
+    "options": [
+      "Geschichtliche Tabelle",
+      "Tabelle aller chemischen Elemente geordnet nach Ordnungszahl",
+      "Biologietabelle",
+      "Mathematiktabelle"
+    ],
+    "correct": 1,
+    "explanation": "Periodensystem: alle Elemente – H, He, Li, ... Mendeleev 1869.",
+    "topic": "Chemie"
+  },
+  {
+    "question": "Was ist ein Element?",
+    "options": [
+      "Chemische Verbindung",
+      "Reiner Stoff aus gleichen Atomen (Eisen, Sauerstoff, Gold)",
+      "Mischung",
+      "Molekül"
+    ],
+    "correct": 1,
+    "explanation": "Element: Reinststoff aus einem Atomtyp.",
+    "topic": "Chemie"
+  },
+  {
+    "question": "Was ist Magnetismus?",
+    "options": [
+      "Schwerkraft",
+      "Kraft die Eisen und andere Metalle anzieht/abstößt",
+      "Reibung",
+      "Auftrieb"
+    ],
+    "correct": 1,
+    "explanation": "Magnetismus: Magnete haben Nord- und Südpol.",
+    "topic": "Physik"
+  },
+  {
+    "question": "Was ist ein Generator?",
+    "options": [
+      "Verbraucher",
+      "Maschine die mechanische Energie in elektrische Energie umwandelt",
+      "Motor",
+      "Akku"
+    ],
+    "correct": 1,
+    "explanation": "Generator: Turbine dreht sich → erzeugt Strom (Kraftwerk).",
+    "topic": "Technik"
+  },
+  {
+    "question": "Was ist ein Motor?",
+    "options": [
+      "Generator",
+      "Maschine die Energie (elektrisch, chemisch) in Bewegung umwandelt",
+      "Speicher",
+      "Schalter"
+    ],
+    "correct": 1,
+    "explanation": "Motor: Energie → Bewegung. Elektromotor, Verbrennungsmotor.",
+    "topic": "Technik"
+  },
+  {
+    "question": "Was ist ein Hebel?",
+    "options": [
+      "Zahnrad",
+      "Einfache Maschine: starrer Stab um Drehpunkt – vervielfacht Kraft",
+      "Schraube",
+      "Welle"
+    ],
+    "correct": 1,
+    "explanation": "Hebel: Schaukel, Wippe, Brecheisen.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist eine schiefe Ebene?",
+    "options": [
+      "Senkrechte Wand",
+      "Geneigte Fläche die Kraft verringert (Rampe)",
+      "Hebel",
+      "Pulley"
+    ],
+    "correct": 1,
+    "explanation": "Schiefe Ebene: Rampe – weniger Kraft nötig über längeren Weg.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist ein Rad und Achse?",
+    "options": [
+      "Hebel",
+      "Einfache Maschine: Rad dreht Achse und vervielfacht Kraft (Steuer, Schraubenzieher)",
+      "schiefe Ebene",
+      "Keil"
+    ],
+    "correct": 1,
+    "explanation": "Rad und Achse: Lenkrad, Schraubendreher – vervielfacht Kraft.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Solarzelle?",
+    "options": [
+      "Windrad",
+      "Zelle die Sonnenlicht direkt in elektrischen Strom umwandelt",
+      "Batterie",
+      "Generator"
+    ],
+    "correct": 1,
+    "explanation": "Solarzelle: Fotovoltaik – Sonnenlicht → Strom (Silizium).",
+    "topic": "Energie"
+  },
+  {
+    "question": "Was ist ein Windrad?",
+    "options": [
+      "Motor",
+      "Anlage die Windenergie in Strom umwandelt",
+      "Solarzelle",
+      "Pumpe"
+    ],
+    "correct": 1,
+    "explanation": "Windkraftanlage: Rotorblätter drehen sich → Generator → Strom.",
+    "topic": "Energie"
+  },
+  {
+    "question": "Was ist eine Batterie?",
+    "options": [
+      "Generator",
+      "Speicher der chemische Energie in elektrische Energie umwandelt",
+      "Motor",
+      "Solarzelle"
+    ],
+    "correct": 1,
+    "explanation": "Batterie: speichert Energie chemisch.",
+    "topic": "Energie"
+  },
+  {
+    "question": "Was ist ein Stromkreis?",
+    "options": [
+      "Einzelnes Kabel",
+      "Geschlossener Weg für elektrischen Strom (Quelle, Leiter, Verbraucher)",
+      "Batterie allein",
+      "Magnet"
+    ],
+    "correct": 1,
+    "explanation": "Stromkreis: Batterie + Kabel + Glühbirne – muss geschlossen sein.",
+    "topic": "Elektrizität"
+  },
+  {
+    "question": "Was ist eine Schutzbrille?",
+    "options": [
+      "Modeaccessoire",
+      "Schutzausrüstung für die Augen im Labor",
+      "Messinstrument",
+      "Computerbedienung"
+    ],
+    "correct": 1,
+    "explanation": "Schutzbrille: Pflicht im Labor zum Schutz vor Chemikalien und Splittern.",
+    "topic": "Sicherheit"
+  },
+  {
+    "question": "Was ist ein Experiment?",
+    "options": [
+      "Theoretisches Modell",
+      "Praktische Untersuchung unter kontrollierten Bedingungen",
+      "Beobachtung ohne Messung",
+      "Beschreibung"
+    ],
+    "correct": 1,
+    "explanation": "Experiment: systematischer Test einer Hypothese.",
+    "topic": "Wissenschaftsmethode"
+  },
+  {
+    "question": "Was ist eine Hypothese?",
+    "options": [
+      "Bewiesene Tatsache",
+      "Vermutung die durch Experiment überprüft werden soll",
+      "Gesetz",
+      "Formel"
+    ],
+    "correct": 1,
+    "explanation": "Hypothese: Annahme die überprüft wird.",
+    "topic": "Wissenschaftsmethode"
+  },
+  {
+    "question": "Was ist ein Modell in der Naturwissenschaft?",
+    "options": [
+      "Spielzeug",
+      "Vereinfachte Darstellung der Realität (Atommodel, Erdglobus)",
+      "Experiment",
+      "Messung"
+    ],
+    "correct": 1,
+    "explanation": "Modell: vereinfachtes Abbild für besseres Verständnis.",
+    "topic": "Wissenschaftsmethode"
+  },
+  {
+    "question": "Was ist Recycling?",
+    "options": [
+      "Verbrennung",
+      "Wiederverwendung von Materialien zur Ressourcenschonung",
+      "Deponierung",
+      "Herstellung"
+    ],
+    "correct": 1,
+    "explanation": "Recycling: Glas, Papier, Metall, Plastik wiederverwenden.",
+    "topic": "Umwelt"
+  },
+  {
+    "question": "Was ist Aggregatzustand?",
+    "options": [
+      "Chemische Verbindung",
+      "Zustand eines Stoffes: fest, flüssig oder gasförmig",
+      "Element",
+      "Verbindung"
+    ],
+    "correct": 1,
+    "explanation": "Aggregatzustände: fest (Eis), flüssig (Wasser), gasförmig (Dampf).",
+    "topic": "Physik"
+  },
+  {
+    "question": "Was ist Kristall?",
+    "options": [
+      "Flüssigkeit",
+      "Fester Stoff mit regelmäßiger atomarer Struktur (Salz, Eis, Quarz)",
+      "Gas",
+      "Plasma"
+    ],
+    "correct": 1,
+    "explanation": "Kristall: regelmäßige Gitterstruktur der Atome.",
+    "topic": "Chemie"
+  },
+  {
+    "question": "Was ist Luft hauptsächlich?",
+    "options": [
+      "Reiner Sauerstoff",
+      "Mischung: 78% Stickstoff, 21% Sauerstoff, 1% andere",
+      "Kohlendioxid",
+      "Wasserdampf"
+    ],
+    "correct": 1,
+    "explanation": "Luft: N2 (78%), O2 (21%), Ar (0,9%), CO2 (0,04%).",
+    "topic": "Chemie"
+  },
+  {
+    "question": "Was ist Dichte?",
+    "options": [
+      "Volumen",
+      "Masse pro Volumen – gibt an wie schwer ein Stoff pro Kubikzentimeter ist",
+      "Druck",
+      "Kraft"
+    ],
+    "correct": 1,
+    "explanation": "Dichte ρ = m/V. Wasser: 1 g/cm³, Eisen: 7,87 g/cm³.",
+    "topic": "Physik"
+  },
+  {
+    "question": "Was schwimmt auf Wasser?",
+    "options": [
+      "Alles",
+      "Körper mit geringerer Dichte als Wasser (< 1 g/cm³)",
+      "Nichts",
+      "Nur Holz"
+    ],
+    "correct": 1,
+    "explanation": "Objekte schwimmen wenn ihre Dichte kleiner ist als die von Wasser.",
+    "topic": "Physik"
+  },
+  {
+    "question": "Was ist ein Thermometer?",
+    "options": [
+      "Druckmesser",
+      "Messinstrument für Temperatur",
+      "Waage",
+      "Kraftmesser"
+    ],
+    "correct": 1,
+    "explanation": "Thermometer: misst Temperatur in Grad Celsius (°C) oder Kelvin (K).",
+    "topic": "Messung"
+  },
+  {
+    "question": "Was misst ein Barometer?",
+    "options": [
+      "Temperatur",
+      "Luftdruck",
+      "Strommenge",
+      "Feuchtigkeit"
+    ],
+    "correct": 1,
+    "explanation": "Barometer: misst Luftdruck (hPa oder mbar).",
+    "topic": "Messung"
+  },
+  {
+    "question": "Was ist ein Mikroskop?",
+    "options": [
+      "Fernglas",
+      "Instrument das kleine Objekte stark vergrößert",
+      "Teleskop",
+      "Lupe"
+    ],
+    "correct": 1,
+    "explanation": "Mikroskop: vergrößert Objekte bis zu 1000-fach.",
+    "topic": "Messung"
+  },
+  {
+    "question": "Was ist ein Teleskop?",
+    "options": [
+      "Mikroskop",
+      "Instrument zum Beobachten weit entfernter Objekte (Sterne)",
+      "Lupe",
+      "Brennglas"
+    ],
+    "correct": 1,
+    "explanation": "Teleskop: Sterne, Planeten, Galaxien beobachten.",
+    "topic": "Astronomie"
+  },
+  {
+    "question": "Was ist Astronomie?",
+    "options": [
+      "Geologie",
+      "Wissenschaft von Sternen, Planeten und dem Universum",
+      "Meteorologie",
+      "Biologie"
+    ],
+    "correct": 1,
+    "explanation": "Astronomie: Erforschung von Himmelskörpern und dem Universum.",
+    "topic": "Astronomie"
+  },
+  {
+    "question": "Was ist das Sonnensystem?",
+    "options": [
+      "Galaxie",
+      "System mit der Sonne und allen sie umkreisenden Körpern",
+      "Planetoid",
+      "Sternenhaufen"
+    ],
+    "correct": 1,
+    "explanation": "Sonnensystem: Sonne + 8 Planeten + Monde, Asteroiden, Kometen.",
+    "topic": "Astronomie"
+  },
+  {
+    "question": "Was ist ein Planet?",
+    "options": [
+      "Stern",
+      "Großer Himmelskörper der eine Sonne umkreist",
+      "Mond",
+      "Asteroid"
+    ],
+    "correct": 1,
+    "explanation": "Planet: umkreist einen Stern. Erdähnlich oder Gasplanet.",
+    "topic": "Astronomie"
+  },
+  {
+    "question": "Wie viele Planeten hat unser Sonnensystem?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct": 1,
+    "explanation": "8 Planeten: Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus, Neptun.",
+    "topic": "Astronomie"
+  },
+  {
+    "question": "Was ist die Sonne?",
+    "options": [
+      "Planet",
+      "Stern – heiße Gaskugel die Energie durch Kernfusion erzeugt",
+      "Mond",
+      "Asteroid"
+    ],
+    "correct": 1,
+    "explanation": "Sonne: Stern – leuchtet durch Kernfusion (Wasserstoff → Helium).",
+    "topic": "Astronomie"
+  },
+  {
+    "question": "Was ist das Internet?",
+    "options": [
+      "Einzelner Computer",
+      "Weltweites Netzwerk verbundener Computer",
+      "Betriebssystem",
+      "Software"
+    ],
+    "correct": 1,
+    "explanation": "Internet: globales Netzwerk aus Millionen von Computern.",
+    "topic": "Informatik"
+  },
+  {
+    "question": "Was ist eine CPU?",
+    "options": [
+      "Bildschirm",
+      "Prozessor – Recheneinheit des Computers",
+      "Festplatte",
+      "Grafikkarte"
+    ],
+    "correct": 1,
+    "explanation": "CPU (Central Processing Unit): Gehirn des Computers.",
+    "topic": "Informatik"
+  },
+  {
+    "question": "Was ist ein Algorithmus?",
+    "options": [
+      "Virus",
+      "Schrittweise Anleitung zur Lösung eines Problems",
+      "Betriebssystem",
+      "Netzwerk"
+    ],
+    "correct": 1,
+    "explanation": "Algorithmus: klare Abfolge von Schritten zur Problemlösung.",
+    "topic": "Informatik"
+  },
+  {
+    "question": "Was ist Programmierung?",
+    "options": [
+      "Computerreparatur",
+      "Schreiben von Befehlen die ein Computer ausführt",
+      "Netzwerkverwaltung",
+      "Datenspeicherung"
+    ],
+    "correct": 1,
+    "explanation": "Programmierung: Code schreiben in Python, Java, Scratch usw.",
+    "topic": "Informatik"
+  },
+  {
+    "question": "Was ist eine App?",
+    "options": [
+      "Hardware",
+      "Anwendungsprogramm auf Smartphone oder Computer",
+      "Betriebssystem",
+      "Datenbank"
+    ],
+    "correct": 1,
+    "explanation": "App (Anwendung): Software für bestimmte Aufgaben (Instagram, WhatsApp).",
+    "topic": "Informatik"
+  }
+]

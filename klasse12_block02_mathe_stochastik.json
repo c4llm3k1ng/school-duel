@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Ein fairer Würfel wird einmal geworfen. Wie groß ist die Wahrscheinlichkeit, eine 6 zu würfeln?",
+    "options": [
+      "1/3",
+      "1/6",
+      "1/2",
+      "5/6"
+    ],
+    "correct": 1,
+    "explanation": "Eine von sechs gleich wahrscheinlichen Augenzahlen: 1/6.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Wie groß ist die Wahrscheinlichkeit, mit einem fairen Würfel eine gerade Zahl zu würfeln?",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "correct": 2,
+    "explanation": "Gerade Zahlen: 2, 4, 6 – also 3 von 6 = 1/2.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Eine Münze wird zweimal geworfen. Wie viele mögliche Ergebnisse gibt es?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "correct": 2,
+    "explanation": "2 · 2 = 4 mögliche Ergebnisse (KK, KZ, ZK, ZZ).",
+    "topic": "Kombinatorik"
+  },
+  {
+    "question": "Wie groß ist die Wahrscheinlichkeit, beim zweimaligen Münzwurf zweimal Kopf zu werfen?",
+    "options": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/3"
+    ],
+    "correct": 1,
+    "explanation": "1/2 · 1/2 = 1/4.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Wie groß ist die Summe aller Wahrscheinlichkeiten eines Zufallsexperiments?",
+    "options": [
+      "0",
+      "0,5",
+      "1",
+      "100"
+    ],
+    "correct": 2,
+    "explanation": "Die Wahrscheinlichkeiten aller Ergebnisse addieren sich zu 1.",
+    "topic": "Grundlagen"
+  },
+  {
+    "question": "Ein Ereignis mit der Wahrscheinlichkeit 0 ist …",
+    "options": [
+      "sicher",
+      "unmöglich",
+      "wahrscheinlich",
+      "fair"
+    ],
+    "correct": 1,
+    "explanation": "P = 0 bedeutet ein unmögliches Ereignis.",
+    "topic": "Grundlagen"
+  },
+  {
+    "question": "Ein Ereignis mit der Wahrscheinlichkeit 1 ist …",
+    "options": [
+      "unmöglich",
+      "sicher",
+      "unwahrscheinlich",
+      "zufällig"
+    ],
+    "correct": 1,
+    "explanation": "P = 1 bedeutet ein sicheres Ereignis.",
+    "topic": "Grundlagen"
+  },
+  {
+    "question": "Wie viele verschiedene Anordnungen (Permutationen) gibt es für 3 verschiedene Objekte?",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "27"
+    ],
+    "correct": 1,
+    "explanation": "3! = 3 · 2 · 1 = 6.",
+    "topic": "Kombinatorik"
+  },
+  {
+    "question": "Wie viel ist 5! (5 Fakultät)?",
+    "options": [
+      "25",
+      "60",
+      "120",
+      "720"
+    ],
+    "correct": 2,
+    "explanation": "5! = 5 · 4 · 3 · 2 · 1 = 120.",
+    "topic": "Kombinatorik"
+  },
+  {
+    "question": "Beim Ziehen MIT Zurücklegen bleibt die Wahrscheinlichkeit von Zug zu Zug …",
+    "options": [
+      "sie steigt",
+      "sie sinkt",
+      "gleich",
+      "null"
+    ],
+    "correct": 2,
+    "explanation": "Da die Kugel zurückgelegt wird, ändert sich die Zusammensetzung nicht.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "In einer Urne sind 3 rote und 2 blaue Kugeln. Wie groß ist die Wahrscheinlichkeit, eine rote zu ziehen?",
+    "options": [
+      "2/5",
+      "3/5",
+      "1/2",
+      "3/2"
+    ],
+    "correct": 1,
+    "explanation": "3 von 5 Kugeln sind rot: 3/5.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Das Gegenereignis zu mindestens eine 6 (bei mehreren Würfen) ist …",
+    "options": [
+      "genau eine 6",
+      "keine 6",
+      "alle 6",
+      "höchstens eine 6"
+    ],
+    "correct": 1,
+    "explanation": "Das Gegenteil von mindestens eine 6 ist keine einzige 6.",
+    "topic": "Grundlagen"
+  },
+  {
+    "question": "Wie berechnet man die Wahrscheinlichkeit des Gegenereignisses?",
+    "options": [
+      "P(A)",
+      "1 − P(A)",
+      "1 + P(A)",
+      "P(A)²"
+    ],
+    "correct": 1,
+    "explanation": "P(Gegenereignis) = 1 − P(A).",
+    "topic": "Grundlagen"
+  },
+  {
+    "question": "Welche Verteilung beschreibt die Anzahl der Treffer bei n unabhängigen Versuchen mit gleicher Trefferwahrscheinlichkeit p?",
+    "options": [
+      "Normalverteilung",
+      "Binomialverteilung",
+      "Poisson-Verteilung",
+      "Gleichverteilung"
+    ],
+    "correct": 1,
+    "explanation": "Die Binomialverteilung zählt Treffer bei n Bernoulli-Versuchen.",
+    "topic": "Verteilungen"
+  },
+  {
+    "question": "Wie lautet der Erwartungswert einer Binomialverteilung mit Parametern n und p?",
+    "options": [
+      "n · p",
+      "p / n",
+      "n + p",
+      "n · p · (1 − p)"
+    ],
+    "correct": 0,
+    "explanation": "Der Erwartungswert ist E(X) = n · p.",
+    "topic": "Verteilungen"
+  },
+  {
+    "question": "Wie lautet die Varianz einer Binomialverteilung?",
+    "options": [
+      "n · p",
+      "n · p · (1 − p)",
+      "p",
+      "n² · p"
+    ],
+    "correct": 1,
+    "explanation": "Die Varianz ist Var(X) = n · p · (1 − p).",
+    "topic": "Verteilungen"
+  },
+  {
+    "question": "Wie viele mögliche Ausgänge hat ein Bernoulli-Experiment?",
+    "options": [
+      "einen",
+      "zwei",
+      "drei",
+      "unendlich viele"
+    ],
+    "correct": 1,
+    "explanation": "Ein Bernoulli-Experiment hat genau zwei Ausgänge (Treffer/Niete).",
+    "topic": "Verteilungen"
+  },
+  {
+    "question": "Wann heißen zwei Ereignisse unabhängig?",
+    "options": [
+      "wenn P(A∩B) = P(A) · P(B)",
+      "wenn P(A) = P(B)",
+      "wenn sie sich ausschließen",
+      "wenn P(A) + P(B) = 1"
+    ],
+    "correct": 0,
+    "explanation": "Unabhängigkeit: P(A∩B) = P(A) · P(B).",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Wie nennt man zwei Ereignisse, die nicht gleichzeitig eintreten können?",
+    "options": [
+      "unabhängig",
+      "unvereinbar (disjunkt)",
+      "sicher",
+      "gleich wahrscheinlich"
+    ],
+    "correct": 1,
+    "explanation": "Sich gegenseitig ausschließende Ereignisse heißen unvereinbar (disjunkt).",
+    "topic": "Grundlagen"
+  },
+  {
+    "question": "Was beschreibt der Erwartungswert E(X) anschaulich?",
+    "options": [
+      "den häufigsten Wert",
+      "den im Mittel zu erwartenden Wert",
+      "den größten Wert",
+      "die Streuung"
+    ],
+    "correct": 1,
+    "explanation": "Der Erwartungswert ist der durchschnittlich zu erwartende Wert.",
+    "topic": "Verteilungen"
+  },
+  {
+    "question": "Wie groß ist das arithmetische Mittel von 2, 4 und 6?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "12"
+    ],
+    "correct": 1,
+    "explanation": "(2 + 4 + 6) / 3 = 12 / 3 = 4.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Wie lautet der Median von 1, 3, 7, 9, 100?",
+    "options": [
+      "7",
+      "9",
+      "24",
+      "100"
+    ],
+    "correct": 0,
+    "explanation": "Der Median ist der mittlere Wert der geordneten Daten: 7.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Wie lautet der Modus (häufigster Wert) von 2, 3, 3, 5, 7?",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "7"
+    ],
+    "correct": 1,
+    "explanation": "Der Wert 3 kommt am häufigsten vor.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Wie groß ist die Wahrscheinlichkeit, mit zwei Würfeln die Augensumme 7 zu erzielen?",
+    "options": [
+      "1/6",
+      "1/12",
+      "5/36",
+      "1/9"
+    ],
+    "correct": 0,
+    "explanation": "6 von 36 Kombinationen ergeben 7: 6/36 = 1/6.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist die Spannweite eines Datensatzes?",
+    "options": [
+      "der Mittelwert",
+      "größter Wert minus kleinster Wert",
+      "der Median",
+      "die Summe"
+    ],
+    "correct": 1,
+    "explanation": "Spannweite = Maximum − Minimum.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Welche Werte kann eine Wahrscheinlichkeit P(A) annehmen?",
+    "options": [
+      "zwischen −1 und 1",
+      "zwischen 0 und 1",
+      "zwischen 0 und 100",
+      "zwischen 1 und 10"
+    ],
+    "correct": 1,
+    "explanation": "Eine Wahrscheinlichkeit liegt immer zwischen 0 und 1.",
+    "topic": "Grundlagen"
+  },
+  {
+    "question": "Was gilt für die Ergebnisse eines Laplace-Experiments?",
+    "options": [
+      "sie sind unmöglich",
+      "sie sind alle gleich wahrscheinlich",
+      "sie sind voneinander abhängig",
+      "sie sind unbekannt"
+    ],
+    "correct": 1,
+    "explanation": "Beim Laplace-Experiment sind alle Ergebnisse gleich wahrscheinlich.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Wie berechnet man die Laplace-Wahrscheinlichkeit?",
+    "options": [
+      "günstige Ergebnisse / mögliche Ergebnisse",
+      "mögliche / günstige",
+      "günstige · mögliche",
+      "günstige + mögliche"
+    ],
+    "correct": 0,
+    "explanation": "P = Anzahl günstiger Ergebnisse / Anzahl möglicher Ergebnisse.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Wie viele Möglichkeiten gibt es, aus 4 Personen 2 auszuwählen (ohne Reihenfolge)?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct": 1,
+    "explanation": "C(4,2) = 6.",
+    "topic": "Kombinatorik"
+  },
+  {
+    "question": "Was gibt der Binomialkoeffizient n über k an?",
+    "options": [
+      "die Anzahl der Anordnungen mit Reihenfolge",
+      "die Anzahl der Auswahlen ohne Reihenfolge",
+      "die Fakultät von n",
+      "eine Wahrscheinlichkeit"
+    ],
+    "correct": 1,
+    "explanation": "Der Binomialkoeffizient zählt Auswahlen von k aus n ohne Beachtung der Reihenfolge.",
+    "topic": "Kombinatorik"
+  },
+  {
+    "question": "Wobei hilft ein Baumdiagramm?",
+    "options": [
+      "beim Messen von Längen",
+      "beim Darstellen mehrstufiger Zufallsexperimente",
+      "beim Lösen von Gleichungen",
+      "beim Zeichnen von Funktionen"
+    ],
+    "correct": 1,
+    "explanation": "Baumdiagramme veranschaulichen mehrstufige Zufallsexperimente.",
+    "topic": "Mehrstufige Experimente"
+  },
+  {
+    "question": "Wie werden die Wahrscheinlichkeiten entlang eines Pfades im Baumdiagramm verrechnet?",
+    "options": [
+      "addiert",
+      "multipliziert",
+      "subtrahiert",
+      "ignoriert"
+    ],
+    "correct": 1,
+    "explanation": "Pfadregel 1: entlang eines Pfades werden die Wahrscheinlichkeiten multipliziert.",
+    "topic": "Mehrstufige Experimente"
+  },
+  {
+    "question": "Wie verrechnet man die Wahrscheinlichkeiten mehrerer Pfade, die zum selben Ereignis führen?",
+    "options": [
+      "multiplizieren",
+      "addieren",
+      "subtrahieren",
+      "dividieren"
+    ],
+    "correct": 1,
+    "explanation": "Pfadregel 2: Wahrscheinlichkeiten verschiedener günstiger Pfade werden addiert.",
+    "topic": "Mehrstufige Experimente"
+  },
+  {
+    "question": "Wie ist die bedingte Wahrscheinlichkeit P(A|B) definiert?",
+    "options": [
+      "P(A∩B) / P(B)",
+      "P(A) · P(B)",
+      "P(A) + P(B)",
+      "P(B) / P(A)"
+    ],
+    "correct": 0,
+    "explanation": "P(A|B) = P(A∩B) / P(B).",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Welche Verteilung hat die typische Glockenform?",
+    "options": [
+      "Binomialverteilung",
+      "Normalverteilung (Gauß)",
+      "Gleichverteilung",
+      "Poisson-Verteilung"
+    ],
+    "correct": 1,
+    "explanation": "Die Normalverteilung hat die glockenförmige Gaußkurve.",
+    "topic": "Verteilungen"
+  },
+  {
+    "question": "Welche Parameter hat die Standardnormalverteilung?",
+    "options": [
+      "μ = 0 und σ = 1",
+      "μ = 1 und σ = 0",
+      "μ = 0 und σ = 0",
+      "μ = 1 und σ = 1"
+    ],
+    "correct": 0,
+    "explanation": "Die Standardnormalverteilung hat Erwartungswert 0 und Standardabweichung 1.",
+    "topic": "Verteilungen"
+  },
+  {
+    "question": "Was bedeutet eine kleine Standardabweichung?",
+    "options": [
+      "die Werte streuen stark",
+      "die Werte liegen eng um den Mittelwert",
+      "die Werte sind alle 0",
+      "die Werte werden größer"
+    ],
+    "correct": 1,
+    "explanation": "Eine kleine Standardabweichung bedeutet geringe Streuung um den Mittelwert.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Wie viele Elemente hat der Ergebnisraum beim einmaligen Werfen eines Würfels?",
+    "options": [
+      "1",
+      "6",
+      "12",
+      "36"
+    ],
+    "correct": 1,
+    "explanation": "Der Ergebnisraum ist {1,2,3,4,5,6} mit 6 Elementen.",
+    "topic": "Grundlagen"
+  },
+  {
+    "question": "Wie groß ist die Wahrscheinlichkeit, bei drei Münzwürfen dreimal Kopf zu werfen?",
+    "options": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16"
+    ],
+    "correct": 2,
+    "explanation": "(1/2)³ = 1/8.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Welcher Größe nähert sich die relative Häufigkeit bei sehr vielen Versuchen an (Gesetz der großen Zahlen)?",
+    "options": [
+      "der Varianz",
+      "der Wahrscheinlichkeit",
+      "der Spannweite",
+      "der Summe"
+    ],
+    "correct": 1,
+    "explanation": "Nach dem Gesetz der großen Zahlen nähert sich die relative Häufigkeit der Wahrscheinlichkeit an.",
+    "topic": "Wahrscheinlichkeit"
+  }
+]

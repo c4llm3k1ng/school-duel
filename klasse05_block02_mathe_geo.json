@@ -1,339 +1,111 @@
 [
   {
-    "question": "Was ist der Umfang eines Rechtecks mit Länge 8 cm und Breite 5 cm?",
+    "question": "Was ist die kürzeste Verbindung zwischen zwei Punkten?",
     "options": [
-      "26 cm",
-      "40 cm",
-      "13 cm",
-      "30 cm"
-    ],
-    "correct": 0,
-    "explanation": "Umfang Rechteck = 2 × (Länge + Breite) = 2 × (8 + 5) = 2 × 13 = 26 cm.",
-    "topic": "Rechteck"
-  },
-  {
-    "question": "Was ist der Flächeninhalt eines Rechtecks mit Länge 9 cm und Breite 4 cm?",
-    "options": [
-      "26 cm²",
-      "36 cm²",
-      "32 cm²",
-      "40 cm²"
-    ],
-    "correct": 1,
-    "explanation": "Flächeninhalt Rechteck = Länge × Breite = 9 × 4 = 36 cm².",
-    "topic": "Rechteck"
-  },
-  {
-    "question": "Was ist der Umfang eines Quadrats mit Seitenlänge 7 cm?",
-    "options": [
-      "14 cm",
-      "28 cm",
-      "49 cm",
-      "21 cm"
-    ],
-    "correct": 1,
-    "explanation": "Umfang Quadrat = 4 × Seite = 4 × 7 = 28 cm. Alle vier Seiten eines Quadrats sind gleich lang.",
-    "topic": "Quadrat"
-  },
-  {
-    "question": "Was ist der Flächeninhalt eines Quadrats mit Seitenlänge 6 cm?",
-    "options": [
-      "24 cm²",
-      "12 cm²",
-      "36 cm²",
-      "30 cm²"
+      "Eine Gerade",
+      "Ein Strahl",
+      "Eine Strecke",
+      "Eine Linie"
     ],
     "correct": 2,
-    "explanation": "Flächeninhalt Quadrat = Seite × Seite = 6 × 6 = 36 cm².",
-    "topic": "Quadrat"
+    "explanation": "Eine Strecke hat immer einen Anfangspunkt und einen Endpunkt und ist die direkte Verbindung zwischen diesen beiden Punkten.",
+    "topic": "Grundbegriffe der Geometrie"
   },
   {
-    "question": "Wie viele Ecken hat ein Dreieck?",
+    "question": "Wie viele Millimeter (mm) sind in einem Zentimeter (cm) enthalten?",
     "options": [
-      "2",
-      "3",
-      "4",
-      "5"
+      "100",
+      "10",
+      "1000",
+      "1"
     ],
     "correct": 1,
-    "explanation": "Ein Dreieck hat genau 3 Ecken (Eckpunkte) und 3 Seiten. Der Name 'Dreieck' verrät es: drei Ecken.",
-    "topic": "Dreieck"
+    "explanation": "Ein Zentimeter besteht aus 10 Millimetern. Das kannst du gut auf deinem Lineal sehen.",
+    "topic": "Längeneinheiten"
   },
   {
-    "question": "Was ist ein rechter Winkel?",
+    "question": "Wie nennt man einen Winkel, der genau 90 Grad groß ist?",
     "options": [
-      "Ein Winkel von 45°",
-      "Ein Winkel von 90°",
-      "Ein Winkel von 180°",
-      "Ein Winkel von 60°"
-    ],
-    "correct": 1,
-    "explanation": "Ein rechter Winkel beträgt genau 90°. Er wird mit einem kleinen Quadrat im Eck markiert. Beispiel: Ecken eines Rechtecks.",
-    "topic": "Winkel"
-  },
-  {
-    "question": "Wie nennt man einen Winkel, der kleiner als 90° ist?",
-    "options": [
-      "stumpfer Winkel",
-      "rechter Winkel",
-      "spitzer Winkel",
-      "gestreckter Winkel"
+      "Ein spitzer Winkel",
+      "Ein stumpfer Winkel",
+      "Ein rechter Winkel",
+      "Ein gestreckter Winkel"
     ],
     "correct": 2,
-    "explanation": "Spitzer Winkel: kleiner als 90°. Stumpfer Winkel: größer als 90°, kleiner als 180°. Gestreckter Winkel: genau 180°.",
-    "topic": "Winkel"
+    "explanation": "Ein rechter Winkel bildet eine perfekte Ecke, wie z.B. die Ecke eines Buches oder einer Wand.",
+    "topic": "Winkelarten"
   },
   {
-    "question": "Was ist ein gleichseitiges Dreieck?",
+    "question": "Welches dieser Vierecke hat vier gleich lange Seiten und vier rechte Winkel?",
     "options": [
-      "Ein Dreieck mit einem rechten Winkel",
-      "Ein Dreieck, bei dem alle drei Seiten gleich lang sind (und alle Winkel 60° betragen)",
-      "Ein Dreieck mit zwei gleichen Seiten",
-      "Ein Dreieck mit einem stumpfen Winkel"
+      "Ein Dreieck",
+      "Ein Kreis",
+      "Ein Rechteck",
+      "Ein Quadrat"
     ],
-    "correct": 1,
-    "explanation": "Gleichseitig: alle Seiten gleich lang → alle Winkel gleich groß → 3 × 60° = 180°.",
-    "topic": "Dreieck"
+    "correct": 3,
+    "explanation": "Ein Quadrat ist ein besonderes Rechteck, bei dem alle vier Seiten die gleiche Länge haben und alle Winkel rechte Winkel sind.",
+    "topic": "Eigenschaften von Vierecken"
   },
   {
-    "question": "Welche Form hat eine Münze?",
-    "options": [
-      "Rechteck",
-      "Dreieck",
-      "Kreis",
-      "Quadrat"
-    ],
-    "correct": 2,
-    "explanation": "Münzen sind kreisförmig (rund). Ein Kreis hat keinen Eckpunkt und keine Kante – nur einen Mittelpunkt und einen Radius.",
-    "topic": "Kreis"
-  },
-  {
-    "question": "Was ist der Radius eines Kreises?",
-    "options": [
-      "Der Abstand zwischen zwei Punkten auf dem Kreisbogen",
-      "Der Abstand vom Mittelpunkt zum Kreisbogen (halber Durchmesser)",
-      "Der gesamte Rand des Kreises",
-      "Der Flächeninhalt"
-    ],
-    "correct": 1,
-    "explanation": "Radius r = Abstand Mittelpunkt → Kreislinie. Durchmesser d = 2r (ganzer Weg durch den Mittelpunkt).",
-    "topic": "Kreis"
-  },
-  {
-    "question": "Was ist der Umfang eines Dreiecks mit den Seiten 5 cm, 7 cm und 9 cm?",
-    "options": [
-      "21 cm",
-      "11 cm",
-      "63 cm",
-      "26 cm"
-    ],
-    "correct": 0,
-    "explanation": "Umfang Dreieck = Summe aller Seiten = 5 + 7 + 9 = 21 cm.",
-    "topic": "Dreieck"
-  },
-  {
-    "question": "Wie heißt eine viereckige Figur, bei der gegenüberliegende Seiten gleich lang und parallel sind?",
-    "options": [
-      "Trapez",
-      "Parallelogramm",
-      "Raute",
-      "Drachen"
-    ],
-    "correct": 1,
-    "explanation": "Parallelogramm: gegenüberliegende Seiten gleich lang und parallel. Rechteck und Quadrat sind Sonderfälle des Parallelogramms.",
-    "topic": "Vierecke"
-  },
-  {
-    "question": "Was ist ein Würfel?",
-    "options": [
-      "Ein dreidimensionaler Körper mit 6 gleichen quadratischen Flächen",
-      "Ein Körper mit einer runden Fläche",
-      "Ein Körper mit 4 Flächen",
-      "Ein Körper mit 12 gleichen Flächen"
-    ],
-    "correct": 0,
-    "explanation": "Würfel: 6 Flächen (alle Quadrate), 8 Ecken, 12 Kanten. Alle Kanten gleich lang.",
-    "topic": "Körper"
-  },
-  {
-    "question": "Was ist ein Quader?",
-    "options": [
-      "Ein Körper mit nur quadratischen Flächen",
-      "Ein Körper mit 6 rechteckigen Flächen (gegenüberliegende Flächen gleich), 8 Ecken, 12 Kanten",
-      "Ein dreidimensionaler Körper mit 4 Flächen",
-      "Ein Zylinder"
-    ],
-    "correct": 1,
-    "explanation": "Quader: Verallgemeinerung des Würfels. Alle Winkel rechte Winkel, aber Seiten können unterschiedlich lang sein.",
-    "topic": "Körper"
-  },
-  {
-    "question": "Wie viele Flächen hat eine Pyramide mit quadratischer Grundfläche?",
+    "question": "Wie viele Ecken (Eckpunkte) hat ein Würfel?",
     "options": [
       "4",
-      "5",
       "6",
-      "8"
-    ],
-    "correct": 1,
-    "explanation": "Quadratische Pyramide: 1 Grundfläche (Quadrat) + 4 Dreiecksflächen = 5 Flächen insgesamt.",
-    "topic": "Körper"
-  },
-  {
-    "question": "Was bedeutet 'parallel'?",
-    "options": [
-      "Zwei Linien, die sich schneiden",
-      "Zwei Linien, die den gleichen Abstand haben und sich niemals schneiden",
-      "Zwei Linien, die senkrecht aufeinander stehen",
-      "Zwei Linien, die verschieden lang sind"
-    ],
-    "correct": 1,
-    "explanation": "Parallele Geraden: gleicher Abstand, treffen sich nie (auch wenn verlängert). Symbol: || (z.B. a || b).",
-    "topic": "Geometrische Begriffe"
-  },
-  {
-    "question": "Was bedeutet 'senkrecht' (orthogonal)?",
-    "options": [
-      "Zwei Linien verlaufen nebeneinander",
-      "Zwei Linien stehen unter einem rechten Winkel (90°) aufeinander",
-      "Zwei Linien sind gleich lang",
-      "Zwei Linien schneiden sich unter 45°"
-    ],
-    "correct": 1,
-    "explanation": "Senkrecht: Schnittwinkel = 90°. Symbol: ⊥ (z.B. a ⊥ b). Höhen in Dreiecken stehen senkrecht auf den Grundlinien.",
-    "topic": "Geometrische Begriffe"
-  },
-  {
-    "question": "Wie viele Achsen der Symmetrie hat ein Rechteck (kein Quadrat)?",
-    "options": [
-      "0",
-      "1",
-      "2",
-      "4"
+      "8",
+      "12"
     ],
     "correct": 2,
-    "explanation": "Ein Rechteck hat 2 Symmetrieachsen: eine horizontale und eine vertikale Mittellinie. (Ein Quadrat hat 4 Achsen.)",
-    "topic": "Symmetrie"
+    "explanation": "Ein Würfel hat 8 Ecken. Stell dir einen ganz normalen Spielwürfel vor.",
+    "topic": "Eigenschaften von Körpern"
   },
   {
-    "question": "Was ist der Unterschied zwischen Fläche und Volumen?",
+    "question": "Welcher dieser Buchstaben ist NICHT achsensymmetrisch?",
     "options": [
-      "Es gibt keinen Unterschied",
-      "Fläche misst zweidimensionale Ausdehnung (cm²), Volumen misst dreidimensionale Ausdehnung (cm³)",
-      "Volumen ist immer kleiner",
-      "Fläche ist immer größer"
-    ],
-    "correct": 1,
-    "explanation": "Fläche: Ausdehnung einer Ebene (m², cm²). Volumen: Inhalt eines Körpers (m³, cm³, Liter). Fläche 2D, Volumen 3D.",
-    "topic": "Fläche und Volumen"
-  },
-  {
-    "question": "Was ist das Volumen eines Würfels mit Kantenlänge 3 cm?",
-    "options": [
-      "9 cm³",
-      "18 cm³",
-      "27 cm³",
-      "12 cm³"
+      "A",
+      "H",
+      "F",
+      "M"
     ],
     "correct": 2,
-    "explanation": "Volumen Würfel = Kante³ = 3 × 3 × 3 = 27 cm³.",
-    "topic": "Körper"
+    "explanation": "Wenn du den Buchstaben F in der Mitte falten würdest, würden die beiden Hälften nicht genau aufeinander passen.",
+    "topic": "Achsensymmetrie"
   },
   {
-    "question": "Was ist ein Netz eines Würfels?",
+    "question": "Welches Werkzeug benutzt du, um eine gerade Linie zu zeichnen und Längen in Zentimetern zu messen?",
     "options": [
-      "Ein Würfel ohne Flächen",
-      "Die Abwicklung (Auffaltung) aller 6 Flächen des Würfels in einer Ebene – kann zum Würfel zusammengefaltet werden",
-      "Ein Muster auf dem Würfel",
-      "Ein 3D-Modell"
+      "Ein Zirkel",
+      "Ein Geodreieck",
+      "Ein Bleistift",
+      "Eine Schere"
     ],
     "correct": 1,
-    "explanation": "Würfelnetz: 11 mögliche verschiedene Netze. Beim Zusammenfalten entsteht der Würfel. Wichtig: gegenüberliegende Flächen beachten.",
-    "topic": "Körper"
+    "explanation": "Mit dem Geodreieck kannst du sehr gut gerade Linien ziehen und Längen abmessen. Es hat auch eine Winkelskala.",
+    "topic": "Geometrische Werkzeuge"
   },
   {
-    "question": "In welcher Einheit misst man Flächeninhalte?",
+    "question": "Ein Rechteck ist 5 cm lang und 3 cm breit. Welchen Umfang hat es?",
     "options": [
-      "cm",
-      "cm²",
-      "cm³",
-      "m"
-    ],
-    "correct": 1,
-    "explanation": "Fläche: cm² (Quadratzentimeter), m² (Quadratmeter). Längen in cm oder m, Volumen in cm³ oder m³.",
-    "topic": "Einheiten"
-  },
-  {
-    "question": "Wie viele Grad hat die Winkelsumme im Dreieck?",
-    "options": [
-      "90°",
-      "180°",
-      "270°",
-      "360°"
-    ],
-    "correct": 1,
-    "explanation": "Winkelsumme Dreieck = immer 180°. Beweis: Winkel eines Dreiecks an einer Geraden anlegen → gestreckte Linie = 180°.",
-    "topic": "Dreieck"
-  },
-  {
-    "question": "Was ist ein stumpfwinkliges Dreieck?",
-    "options": [
-      "Ein Dreieck mit drei spitzen Winkeln",
-      "Ein Dreieck mit einem Winkel größer als 90°",
-      "Ein Dreieck mit einem rechten Winkel",
-      "Ein gleichseitiges Dreieck"
-    ],
-    "correct": 1,
-    "explanation": "Stumpfwinklig: ein Winkel > 90°. Dann sind die anderen beiden Winkel automatisch spitz (Winkelsumme = 180°).",
-    "topic": "Dreieck"
-  },
-  {
-    "question": "Was ist die Diagonale eines Rechtecks?",
-    "options": [
-      "Die Seiten des Rechtecks",
-      "Eine gerade Linie, die zwei nicht benachbarte Ecken verbindet",
-      "Die Höhe des Rechtecks",
-      "Die Breite des Rechtecks"
-    ],
-    "correct": 1,
-    "explanation": "Diagonale: Verbindungslinie gegenüberliegender Ecken. Im Rechteck sind beide Diagonalen gleich lang. Im Quadrat stehen sie senkrecht aufeinander.",
-    "topic": "Rechteck"
-  },
-  {
-    "question": "Was ist der Durchmesser eines Kreises mit Radius 5 cm?",
-    "options": [
-      "5 cm",
-      "2,5 cm",
-      "10 cm",
-      "25 cm"
+      "8 cm",
+      "15 cm",
+      "16 cm",
+      "24 cm"
     ],
     "correct": 2,
-    "explanation": "Durchmesser = 2 × Radius = 2 × 5 = 10 cm. Der Durchmesser geht durch den Mittelpunkt und verbindet zwei Punkte des Kreises.",
-    "topic": "Kreis"
+    "explanation": "Der Umfang eines Rechtecks berechnet sich als 2 * (Länge + Breite). Also: 2 * (5 cm + 3 cm) = 2 * 8 cm = 16 cm.",
+    "topic": "Umfangsberechnung"
   },
   {
-    "question": "Wie nennt man einen Viereck mit genau einem Paar paralleler Seiten?",
+    "question": "Welches geometrische Element hat einen Anfangspunkt, aber keinen Endpunkt und verläuft nur in eine Richtung unendlich weiter?",
     "options": [
-      "Parallelogramm",
-      "Trapez",
-      "Raute",
-      "Rechteck"
+      "Eine Strecke",
+      "Eine Gerade",
+      "Ein Strahl",
+      "Ein Punkt"
     ],
-    "correct": 1,
-    "explanation": "Trapez: genau ein Paar paralleler Seiten (die 'Grundlinien'). Parallelogramm hat zwei Paare paralleler Seiten.",
-    "topic": "Vierecke"
-  },
-  {
-    "question": "Was ist ein Zylinder?",
-    "options": [
-      "Ein Körper mit zwei quadratischen Grundflächen",
-      "Ein runder Körper mit zwei kreisförmigen Grundflächen und einer Mantelfläche",
-      "Ein Körper mit 6 Flächen",
-      "Ein Körper mit einer Spitze"
-    ],
-    "correct": 1,
-    "explanation": "Zylinder: 2 kreisförmige Grundflächen + 1 Mantelfläche. Beispiele: Dose, Rolle Klopapier.",
-    "topic": "Körper"
+    "correct": 2,
+    "explanation": "Ein Strahl (auch Halbgerade genannt) beginnt an einem Punkt und läuft von dort aus unendlich in eine Richtung. Eine Strecke hat zwei Endpunkte, eine Gerade hat keine Endpunkte und verläuft in beide Richtungen unendlich. Ein Punkt hat keine Ausdehnung.",
+    "topic": "Grundbegriffe (Strahl)"
   },
   {
     "question": "Wie viele Kanten hat ein Würfel?",
@@ -344,139 +116,367 @@
       "12"
     ],
     "correct": 3,
-    "explanation": "Würfel: 6 Flächen, 8 Ecken, 12 Kanten. Merkformel (Euler): Ecken – Kanten + Flächen = 2 → 8 – 12 + 6 = 2 ✓.",
-    "topic": "Körper"
+    "explanation": "Ein Würfel ist ein geometrischer Körper mit 6 gleich großen quadratischen Flächen, 8 Ecken und 12 Kanten.",
+    "topic": "Körper (Würfel, Kanten)"
   },
   {
-    "question": "Was ist der Flächeninhalt eines Dreiecks mit Grundlinie 10 cm und Höhe 6 cm?",
+    "question": "Was trifft auf zwei Geraden zu, die zueinander parallel sind?",
     "options": [
-      "60 cm²",
-      "30 cm²",
-      "16 cm²",
-      "20 cm²"
+      "Sie schneiden sich immer in einem Punkt.",
+      "Sie stehen in einem rechten Winkel zueinander.",
+      "Sie haben immer den gleichen Abstand zueinander und schneiden sich nie.",
+      "Sie bilden immer einen spitzen Winkel."
+    ],
+    "correct": 2,
+    "explanation": "Parallele Geraden verlaufen immer im gleichen Abstand zueinander und schneiden sich niemals, egal wie weit man sie verlängert.",
+    "topic": "Lagebeziehungen (Parallelität)"
+  },
+  {
+    "question": "Welche der folgenden ebenen Figuren hat vier gleich lange Seiten und vier rechte Winkel?",
+    "options": [
+      "Ein Rechteck",
+      "Ein Dreieck",
+      "Ein Quadrat",
+      "Ein Kreis"
+    ],
+    "correct": 2,
+    "explanation": "Ein Quadrat ist eine spezielle Art von Rechteck, bei dem alle vier Seiten gleich lang sind. Es hat, wie jedes Rechteck, vier rechte Winkel.",
+    "topic": "Flächen (Quadrat, Eigenschaften)"
+  },
+  {
+    "question": "Ein Körper hat 6 Flächen, 12 Kanten und 8 Eckpunkte. Um welchen Körper handelt es sich höchstwahrscheinlich?",
+    "options": [
+      "Eine Pyramide",
+      "Ein Zylinder",
+      "Ein Würfel oder Quader",
+      "Eine Kugel"
+    ],
+    "correct": 2,
+    "explanation": "Sowohl ein Würfel als auch ein Quader haben genau 6 Flächen, 12 Kanten und 8 Eckpunkte. Pyramiden, Zylinder und Kugeln haben andere Anzahlen von Flächen, Kanten und Eckpunkten.",
+    "topic": "Körper (Eigenschaften, Würfel/Quader)"
+  },
+  {
+    "question": "Wie viele Symmetrieachsen besitzt ein Quadrat?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 3,
+    "explanation": "Ein Quadrat hat vier Symmetrieachsen: zwei, die durch die Mittelpunkte gegenüberliegender Seiten verlaufen, und zwei, die durch gegenüberliegende Eckpunkte verlaufen (die Diagonalen).",
+    "topic": "Symmetrie (Achsensymmetrie, Quadrat)"
+  },
+  {
+    "question": "Wie nennt man einen Winkel, der genau 90 Grad misst?",
+    "options": [
+      "Spitzer Winkel",
+      "Stumpfer Winkel",
+      "Rechter Winkel",
+      "Gestreckter Winkel"
+    ],
+    "correct": 2,
+    "explanation": "Ein rechter Winkel misst genau 90 Grad. Ein spitzer Winkel ist kleiner als 90 Grad, ein stumpfer Winkel ist größer als 90 Grad, aber kleiner als 180 Grad. Ein gestreckter Winkel misst 180 Grad.",
+    "topic": "Winkel (Rechter Winkel)"
+  },
+  {
+    "question": "Welches geometrische Grundelement hat keine Ausdehnung, also weder Länge, Breite noch Höhe?",
+    "options": [
+      "Eine Strecke",
+      "Eine Ebene",
+      "Ein Punkt",
+      "Eine Gerade"
+    ],
+    "correct": 2,
+    "explanation": "Ein Punkt ist ein nulldimensionales Objekt. Er gibt nur eine Position an, hat aber selbst keine Ausdehnung. Eine Strecke und eine Gerade haben Länge (eine Dimension), eine Ebene hat Länge und Breite (zwei Dimensionen).",
+    "topic": "Grundbegriffe (Punkt, Dimension)"
+  },
+  {
+    "question": "Welches der folgenden Merkmale trifft immer auf ein Quadrat zu?",
+    "options": [
+      "Es hat immer drei Ecken.",
+      "Alle vier Seiten sind gleich lang.",
+      "Es hat keine rechten Winkel.",
+      "Es hat nur zwei Seiten."
     ],
     "correct": 1,
-    "explanation": "Flächeninhalt Dreieck = (Grundlinie × Höhe) ÷ 2 = (10 × 6) ÷ 2 = 60 ÷ 2 = 30 cm².",
-    "topic": "Dreieck"
+    "explanation": "Ein Quadrat ist eine besondere Art von Viereck. Es hat vier gleich lange Seiten und vier rechte Winkel.",
+    "topic": "Eigenschaften von Grundformen"
   },
   {
-    "question": "Was ist eine Gerade?",
+    "question": "Wie viele Eckpunkte (Vertices) hat ein Dreieck?",
     "options": [
-      "Eine Linie, die an zwei Punkten endet",
-      "Eine unendlich lange, gerade Linie ohne Anfang und Ende",
-      "Ein Strahl mit einem Anfangspunkt",
-      "Ein Linienstück"
+      "2",
+      "3",
+      "4",
+      "5"
     ],
     "correct": 1,
-    "explanation": "Gerade: unendlich in beide Richtungen. Strahl: hat einen Anfangspunkt, endet nicht. Strecke: hat Anfangs- und Endpunkt.",
-    "topic": "Geometrische Grundbegriffe"
+    "explanation": "Ein Dreieck ist eine geometrische Figur, die durch drei Seiten, drei Winkel und drei Eckpunkte begrenzt wird.",
+    "topic": "Eigenschaften von Figuren"
   },
   {
-    "question": "Wie viele Ecken hat ein Sechseck (Hexagon)?",
+    "question": "Wie nennt man einen geometrischen Körper, der vollständig rund ist, keine Kanten und keine Eckpunkte hat?",
     "options": [
-      "5",
+      "Würfel",
+      "Quader",
+      "Kugel",
+      "Zylinder"
+    ],
+    "correct": 2,
+    "explanation": "Eine Kugel ist ein perfekt runder Körper, bei dem alle Punkte auf seiner Oberfläche den gleichen Abstand zum Mittelpunkt haben. Sie besitzt weder Kanten noch Eckpunkte.",
+    "topic": "Geometrische Körper"
+  },
+  {
+    "question": "Aus wie vielen Flächen besteht die Oberfläche eines Würfels?",
+    "options": [
+      "4",
       "6",
-      "7",
-      "8"
+      "8",
+      "12"
     ],
     "correct": 1,
-    "explanation": "Sechseck (Hexagon): 6 Ecken und 6 Seiten. Hexagon stammt vom griechischen 'hex' (sechs). Beispiel: Bienenwaben.",
-    "topic": "Vielecke"
+    "explanation": "Ein Würfel ist ein besonderer Quader, dessen Oberfläche aus sechs quadratischen Flächen besteht. Diese Flächen nennt man Begrenzungsflächen oder Seitenflächen.",
+    "topic": "Eigenschaften von Körpern"
   },
   {
-    "question": "Was bedeutet kongruent?",
+    "question": "Was ist der Hauptunterschied zwischen einer Geraden und einer Strecke in der Geometrie?",
     "options": [
-      "Ähnlich aber unterschiedlich groß",
-      "Deckungsgleich – zwei Figuren sind kongruent, wenn sie gleiche Form und gleiche Größe haben",
-      "Spiegelbildlich",
-      "Vergrößert"
+      "Eine Gerade hat eine feste Länge, eine Strecke nicht.",
+      "Eine Strecke ist unendlich lang, eine Gerade nicht.",
+      "Eine Gerade hat keinen Anfangs- und Endpunkt, eine Strecke hat beides.",
+      "Eine Strecke kann gebogen sein, eine Gerade nicht."
     ],
-    "correct": 1,
-    "explanation": "Kongruenz: Figuren die sich durch Verschiebung, Drehung oder Spiegelung zur Deckung bringen lassen. Kongruent ≠ ähnlich (ähnlich heißt nur gleiche Form).",
-    "topic": "Kongruenz"
+    "correct": 2,
+    "explanation": "Eine Gerade ist eine unendlich lange, unbegrenzte Linie ohne Anfangs- oder Endpunkt. Eine Strecke hingegen ist ein Teil einer Geraden, der durch zwei Endpunkte begrenzt wird und somit eine bestimmte Länge hat.",
+    "topic": "Linien und Strecken"
   },
   {
-    "question": "Was ist ein Koordinatensystem?",
+    "question": "Welche Beschreibung passt am besten zu einem rechten Winkel?",
     "options": [
-      "Ein Kompass",
-      "Ein System aus zwei senkrecht aufeinander stehenden Zahlengeraden (x-Achse, y-Achse) zur Ortsbestimmung von Punkten",
-      "Ein Lineal",
-      "Eine Tabelle"
+      "Er ist immer spitzer als ein stumpfer Winkel.",
+      "Er hat genau 90 Grad und sieht aus wie die Ecke eines Quadrats.",
+      "Er ist immer größer als 180 Grad.",
+      "Er ist immer kleiner als ein spitzer Winkel."
     ],
     "correct": 1,
-    "explanation": "Koordinatensystem: Punkt P(3; 5) bedeutet x=3 (rechts), y=5 (oben). Schnittpunkt der Achsen = Ursprung O(0;0).",
-    "topic": "Koordinatensystem"
+    "explanation": "Ein rechter Winkel misst genau 90 Grad. Er ist charakteristisch für die Ecken von Rechtecken oder Quadraten und wird oft mit einem kleinen Quadrat in der Winkelspitze gekennzeichnet.",
+    "topic": "Winkel"
   },
   {
-    "question": "In welchem Quadrant liegt der Punkt P(–2; 3)?",
+    "question": "Welcher der folgenden Großbuchstaben des Alphabets besitzt mindestens eine Symmetrieachse?",
     "options": [
-      "1. Quadrant",
-      "2. Quadrant",
-      "3. Quadrant",
-      "4. Quadrant"
+      "F",
+      "P",
+      "Z",
+      "A"
     ],
-    "correct": 1,
-    "explanation": "2. Quadrant: x negativ, y positiv (links oben). 1. Quadrant: x,y positiv. 3. Quadrant: x,y negativ. 4. Quadrant: x positiv, y negativ.",
-    "topic": "Koordinatensystem"
+    "correct": 3,
+    "explanation": "Der Buchstabe 'A' besitzt eine vertikale Symmetrieachse. Wenn man ihn entlang dieser Achse faltet, passen beide Hälften exakt aufeinander. Die Buchstaben F, P und Z haben in ihrer üblichen Form keine Symmetrieachse.",
+    "topic": "Achsensymmetrie"
   },
   {
-    "question": "Was ist der Umfang eines gleichseitigen Dreiecks mit Seitenlänge 8 cm?",
+    "question": "Welche Aussage trifft immer auf ein Rechteck zu?",
     "options": [
-      "16 cm",
-      "24 cm",
-      "32 cm",
-      "8 cm"
+      "Alle vier Seiten sind gleich lang.",
+      "Es hat genau zwei Paare paralleler Seiten.",
+      "Es hat mindestens einen spitzen Winkel.",
+      "Die Diagonalen stehen immer senkrecht aufeinander."
     ],
     "correct": 1,
-    "explanation": "Gleichseitiges Dreieck: alle 3 Seiten gleich lang. Umfang = 3 × 8 = 24 cm.",
-    "topic": "Dreieck"
+    "explanation": "Ein Rechteck hat immer zwei Paare von gegenüberliegenden Seiten, die parallel zueinander sind. Alle Winkel eines Rechtecks sind rechte Winkel (90 Grad). Die Aussage, dass alle vier Seiten gleich lang sind, trifft nur auf ein Quadrat zu, welches eine spezielle Art von Rechteck ist.",
+    "topic": "Eigenschaften von Vierecken"
   },
   {
-    "question": "Was ist Spiegelsymmetrie?",
+    "question": "Was bedeutet der Nenner (die untere Zahl) in einem Bruch wie 3/5?",
     "options": [
-      "Wenn eine Figur gedreht werden kann",
-      "Wenn eine Figur durch eine Achse so gespiegelt werden kann, dass beide Hälften deckungsgleich sind",
-      "Wenn eine Figur mehrfach vorkommt",
-      "Wenn eine Figur verkleinert wird"
+      "Die Anzahl der Teile, die man hat.",
+      "Die Anzahl der gleich großen Teile, in die das Ganze geteilt wurde.",
+      "Die Gesamtzahl der Brüche.",
+      "Die obere Zahl des Bruches."
     ],
     "correct": 1,
-    "explanation": "Spiegelsymmetrie: Achsensymmetrie. Beispiele: Buchstabe A, Schmetterling, Herz. Die Spiegelachse teilt die Figur in zwei gleiche Hälften.",
-    "topic": "Symmetrie"
+    "explanation": "Der Nenner zeigt immer an, in wie viele gleich große Teile ein Ganzes aufgeteilt wurde. Die obere Zahl (Zähler) zeigt an, wie viele dieser Teile gemeint sind.",
+    "topic": "Bruchbegriffe verstehen (Nenner)"
   },
   {
-    "question": "Was ist das Volumen eines Quaders mit L=5 cm, B=3 cm, H=4 cm?",
+    "question": "Eine Pizza wird in 8 gleich große Stücke geschnitten. Anna isst 3 Stücke davon. Welcher Bruch beschreibt den Anteil, den Anna gegessen hat?",
     "options": [
-      "24 cm³",
-      "60 cm³",
-      "12 cm³",
-      "47 cm³"
+      "3/8",
+      "8/3",
+      "3/11",
+      "5/8"
     ],
-    "correct": 1,
-    "explanation": "Volumen Quader = Länge × Breite × Höhe = 5 × 3 × 4 = 60 cm³.",
-    "topic": "Körper"
+    "correct": 0,
+    "explanation": "Die Pizza wurde in 8 gleiche Teile geteilt (Nenner = 8). Anna hat 3 dieser Teile gegessen (Zähler = 3).",
+    "topic": "Brüche benennen und darstellen"
   },
   {
-    "question": "Was ist eine Maßstabszeichnung?",
+    "question": "Eine Klasse hat 24 Schüler. Die Hälfte der Schüler sind Mädchen. Wie viele Mädchen sind in der Klasse?",
     "options": [
-      "Eine ungenaue Skizze",
-      "Eine verkleinerte oder vergrößerte Darstellung eines Objekts in einem bestimmten Verhältnis (z.B. 1:100 bedeutet 1 cm = 1 m in der Realität)",
-      "Eine Freihandzeichnung",
-      "Eine Körperdarstellung"
+      "6",
+      "12",
+      "18",
+      "24"
     ],
     "correct": 1,
-    "explanation": "Maßstab 1:100: 1 cm auf der Karte = 100 cm = 1 m in der Realität. Stadtpläne, Baupläne, Landkarten nutzen Maßstäbe.",
-    "topic": "Maßstab"
+    "explanation": "Die Hälfte bedeutet 1/2. Um die Hälfte von 24 zu finden, teilst du 24 durch 2. Das Ergebnis ist 12.",
+    "topic": "Bruchteile von Größen berechnen"
   },
   {
-    "question": "Was ist Achsensymmetrie?",
+    "question": "Welcher Bruch ist kleiner: 1/4 oder 1/2?",
     "options": [
-      "Eine Drehung",
-      "Eine Spiegelung: Eine Figur ist achsensymmetrisch, wenn sie durch eine Spiegelachse in zwei deckungsgleiche Hälften geteilt werden kann – z.B. Buchstabe A, Herz, gleichschenkliges Dreieck",
-      "Eine Verschiebung",
-      "Eine Streckung"
+      "1/4",
+      "1/2",
+      "Sie sind gleich groß.",
+      "Das kann man nicht eindeutig sagen."
+    ],
+    "correct": 0,
+    "explanation": "Wenn der Zähler gleich ist (hier 1), dann ist der Bruch mit dem größeren Nenner (hier 4) der kleinere Bruch, weil das Ganze in mehr Teile geteilt wurde und die einzelnen Teile somit kleiner sind.",
+    "topic": "Brüche vergleichen"
+  },
+  {
+    "question": "Welcher Bruch ist gleichwertig zu 1/3?",
+    "options": [
+      "2/3",
+      "2/6",
+      "3/6",
+      "1/6"
     ],
     "correct": 1,
-    "explanation": "Achsensymmetrie: Spiegelachse = Symmetrielinie. Spiegelt man die Figur an dieser Achse, entsteht dieselbe Figur. Reguläre Vielecke: viele Symmetrieachsen (Quadrat: 4, gleichseitiges Dreieck: 3).",
-    "topic": "Symmetrie"
+    "explanation": "Gleichwertige Brüche erhältst du, indem du Zähler und Nenner mit derselben Zahl multiplizierst oder dividierst. Wenn du 1/3 mit 2 erweiterst (Zähler × 2, Nenner × 2), erhältst du 2/6.",
+    "topic": "Gleichwertige Brüche (Erweitern)"
+  },
+  {
+    "question": "Tim isst 1/8 eines Kuchens und Lea isst weitere 3/8 des gleichen Kuchens. Welchen Anteil des Kuchens haben sie zusammen gegessen?",
+    "options": [
+      "4/16",
+      "3/8",
+      "4/8",
+      "1/24"
+    ],
+    "correct": 2,
+    "explanation": "Um Brüche mit gleichem Nenner zu addieren, addierst du nur die Zähler und behältst den Nenner bei: 1/8 + 3/8 = (1+3)/8 = 4/8.",
+    "topic": "Brüche addieren (gleicher Nenner)"
+  },
+  {
+    "question": "Eine Tafel Schokolade besteht aus 10 Rippchen. Es wurden bereits 3/10 der Schokolade gegessen. Welcher Bruchteil der Schokolade ist noch übrig?",
+    "options": [
+      "3/10",
+      "7/10",
+      "10/7",
+      "13/10"
+    ],
+    "correct": 1,
+    "explanation": "Die ganze Tafel Schokolade entspricht 10/10. Wenn 3/10 gegessen wurden, rechnest du 10/10 - 3/10 = (10-3)/10 = 7/10.",
+    "topic": "Brüche subtrahieren (gleicher Nenner)"
+  },
+  {
+    "question": "Ein Saftkrug ist zu 1/5 gefüllt. Um den Krug ganz zu füllen, welchen Bruchteil müsste man noch hinzufügen?",
+    "options": [
+      "1/5",
+      "2/5",
+      "3/5",
+      "4/5"
+    ],
+    "correct": 3,
+    "explanation": "Ein ganzer Krug ist 5/5 gefüllt. Wenn bereits 1/5 gefüllt ist, fehlen noch 5/5 - 1/5 = 4/5, um ihn ganz zu füllen.",
+    "topic": "Brüche zum Ganzen ergänzen"
+  },
+  {
+    "question": "Was zeigt der Nenner (die Zahl unter dem Bruchstrich) eines Bruches an?",
+    "options": [
+      "Die Anzahl der Ganzen.",
+      "Die Anzahl der gleich großen Teile, aus denen das Ganze besteht.",
+      "Die Anzahl der Teile, die man vom Ganzen hat.",
+      "Das Ergebnis der Division."
+    ],
+    "correct": 1,
+    "explanation": "Der Nenner gibt an, in wie viele gleich große Teile ein Ganzes zerlegt wurde. Er steht unter dem Bruchstrich.",
+    "topic": "Grundverständnis Bruch – Nenner"
+  },
+  {
+    "question": "Eine Tafel Schokolade hat insgesamt 10 Reihen. Lisa isst 3 Reihen. Welcher Bruch beschreibt den Anteil der Schokolade, den Lisa gegessen hat?",
+    "options": [
+      "10/3",
+      "3/10",
+      "7/10",
+      "1/3"
+    ],
+    "correct": 1,
+    "explanation": "Die Tafel hat 10 Reihen (Nenner). Lisa isst 3 Reihen (Zähler). Der Anteil ist also 3/10.",
+    "topic": "Bruchdarstellung"
+  },
+  {
+    "question": "Welcher der folgenden Brüche ist der größte?",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/4",
+      "1/5"
+    ],
+    "correct": 0,
+    "explanation": "Je kleiner der Nenner bei gleichem Zähler ist, desto größer sind die einzelnen Teile und somit der Bruchwert. Ein halbes Stück ist größer als ein Drittel, Viertel oder Fünftel.",
+    "topic": "Brüche vergleichen"
+  },
+  {
+    "question": "Welcher Bruch ist gleichwertig (hat den gleichen Wert) wie 1/2?",
+    "options": [
+      "2/3",
+      "3/4",
+      "2/4",
+      "1/4"
+    ],
+    "correct": 2,
+    "explanation": "Um einen gleichwertigen Bruch zu finden, kannst du Zähler und Nenner mit derselben Zahl multiplizieren (erweitern). Wenn du 1/2 mit 2 erweiterst, erhältst du (1*2)/(2*2) = 2/4.",
+    "topic": "Erweitern von Brüchen / Gleichwertige Brüche"
+  },
+  {
+    "question": "Marie hat 2/7 einer Pizza gegessen. Ihr Bruder isst danach noch 3/7 derselben Pizza. Welchen Anteil der Pizza haben sie zusammen gegessen?",
+    "options": [
+      "5/7",
+      "1/7",
+      "5/14",
+      "6/7"
+    ],
+    "correct": 0,
+    "explanation": "Beim Addieren von Brüchen mit gleichem Nenner addiert man nur die Zähler und behält den Nenner bei: 2/7 + 3/7 = (2+3)/7 = 5/7.",
+    "topic": "Brüche addieren"
+  },
+  {
+    "question": "In einer Klasse sind 20 Schüler. 1/4 (ein Viertel) der Schüler sind Mädchen. Wie viele Mädchen sind in der Klasse?",
+    "options": [
+      "4",
+      "5",
+      "10",
+      "20"
+    ],
+    "correct": 1,
+    "explanation": "Um ein Viertel von 20 zu finden, teilst du 20 durch 4: 20 : 4 = 5. Es sind 5 Mädchen in der Klasse.",
+    "topic": "Bruchteil einer Menge"
+  },
+  {
+    "question": "Ordne die folgenden Brüche der Größe nach, beginnend mit dem kleinsten Bruch: 1/5, 1/2, 1/10.",
+    "options": [
+      "1/2, 1/5, 1/10",
+      "1/10, 1/5, 1/2",
+      "1/5, 1/10, 1/2",
+      "1/2, 1/10, 1/5"
+    ],
+    "correct": 1,
+    "explanation": "Bei Brüchen mit gleichem Zähler ist der Bruch mit dem größten Nenner der kleinste. Ein Zehntel ist kleiner als ein Fünftel, und ein Fünftel ist kleiner als ein Halbes. Also: 1/10 < 1/5 < 1/2.",
+    "topic": "Brüche ordnen"
+  },
+  {
+    "question": "Ein Kuchen wurde in 12 gleich große Stücke geteilt. Wenn noch 3/4 des Kuchens übrig sind, wie viele Stücke sind das?",
+    "options": [
+      "3 Stücke",
+      "4 Stücke",
+      "9 Stücke",
+      "12 Stücke"
+    ],
+    "correct": 2,
+    "explanation": "Um 3/4 von 12 Stücken zu berechnen, teilst du die Gesamtanzahl (12) durch den Nenner (4) und multiplizierst das Ergebnis mit dem Zähler (3): (12 : 4) * 3 = 3 * 3 = 9 Stücke.",
+    "topic": "Bruch als Teil eines Ganzen / Sachaufgabe"
   }
 ]

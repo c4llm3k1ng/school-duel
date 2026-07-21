@@ -1,66 +1,54 @@
 [
   {
-    "question": "Auf welchem Kontinent liegt Deutschland?",
-    "options": [
-      "Asien",
-      "Amerika",
-      "Europa",
-      "Afrika"
-    ],
-    "correct": 2,
-    "explanation": "Deutschland liegt in Mitteleuropa. Europa ist der zweitkleinste Kontinent der Erde. Europas Grenzen: im Westen Atlantik, im Norden Arktis, im Süden Mittelmeer, im Osten Ural (Grenze zu Asien).",
-    "topic": "Europa"
-  },
-  {
-    "question": "Was ist die Hauptstadt von Frankreich?",
+    "question": "Was ist die Hauptstadt Frankreichs?",
     "options": [
       "Lyon",
       "Marseille",
       "Paris",
-      "Bordeaux"
+      "Nizza"
     ],
     "correct": 2,
-    "explanation": "Paris ist die Hauptstadt und größte Stadt Frankreichs, an der Seine gelegen. Bekannt: Eiffelturm, Louvre, Notre-Dame. Frankreich grenzt im Westen an Deutschland.",
-    "topic": "Europa"
+    "explanation": "Paris ist die Hauptstadt Frankreichs.",
+    "topic": "Hauptstädte"
   },
   {
-    "question": "Welches Land hat die meisten Einwohner in Europa (ohne Russland)?",
+    "question": "Welches Land gehört NICHT zu Europa?",
     "options": [
-      "Frankreich",
-      "Deutschland",
-      "Großbritannien",
+      "Schweden",
+      "Spanien",
+      "Ägypten",
       "Polen"
     ],
-    "correct": 1,
-    "explanation": "Deutschland: ca. 84 Mio. Einwohner – bevölkerungsreichstes Land der EU. Gefolgt von Frankreich (~68 Mio.) und Italien (~60 Mio.).",
-    "topic": "Europa"
+    "correct": 2,
+    "explanation": "Ägypten liegt in Nordafrika.",
+    "topic": "Erdteile"
   },
   {
-    "question": "Was ist die EU (Europäische Union)?",
+    "question": "Welches ist der längste Fluss Europas?",
     "options": [
-      "Eine Militärorganisation",
-      "Ein politisch-wirtschaftlicher Zusammenschluss europäischer Staaten (27 Mitglieder, 2024) mit gemeinsamen Regeln, Euro als Währung und freiem Warenverkehr",
-      "Ein Geheimbund europäischer Länder",
-      "Eine Wirtschaftszone nur für den Handel"
-    ],
-    "correct": 1,
-    "explanation": "EU: 1993 gegründet (Vertrag von Maastricht). Kernprinzipien: freier Warenverkehr, Personenfreizügigkeit, gemeinsame Währung (Euro, nicht alle Mitglieder). Hauptsitz: Brüssel.",
-    "topic": "Europa"
-  },
-  {
-    "question": "Welche Währung wird in den meisten EU-Ländern verwendet?",
-    "options": [
-      "Dollar",
-      "Pfund",
-      "Euro",
-      "Franken"
+      "Rhein",
+      "Donau",
+      "Wolga",
+      "Elbe"
     ],
     "correct": 2,
-    "explanation": "Euro: Währung von 20 EU-Ländern (Eurozone). Eingeführt 2002 (Scheine und Münzen). Länder ohne Euro in der EU: Polen, Tschechien, Schweden, Dänemark (und andere).",
-    "topic": "Europa"
+    "explanation": "Die Wolga (3.692 km) ist der längste Fluss Europas.",
+    "topic": "Gewässer"
   },
   {
-    "question": "Was ist die Hauptstadt von Italien?",
+    "question": "Wo liegt die Alpen?",
+    "options": [
+      "Nordeuropa",
+      "Südosteuropa",
+      "Mitteleuropa/Südeuropa (Schweiz, Österreich, Italien)",
+      "Westeuropa"
+    ],
+    "correct": 2,
+    "explanation": "Die Alpen liegen in Mittel- und Südeuropa.",
+    "topic": "Gebirge"
+  },
+  {
+    "question": "Was ist die Hauptstadt Italiens?",
     "options": [
       "Mailand",
       "Venedig",
@@ -68,415 +56,427 @@
       "Rom"
     ],
     "correct": 3,
-    "explanation": "Rom ist die Hauptstadt Italiens (ca. 2,8 Mio. Einwohner) und Sitz des Vatikans. Bekannt für Kolosseum, Forum Romanum, Vatikanische Museen, Trevi-Brunnen.",
-    "topic": "Europa"
+    "explanation": "Rom ist die Hauptstadt Italiens.",
+    "topic": "Hauptstädte"
   },
   {
-    "question": "Was ist die Hauptstadt von Spanien?",
+    "question": "Welches Meer liegt zwischen Europa und Afrika?",
+    "options": [
+      "Nordsee",
+      "Ostsee",
+      "Mittelmeer",
+      "Atlantik"
+    ],
+    "correct": 2,
+    "explanation": "Das Mittelmeer trennt Europa von Afrika.",
+    "topic": "Gewässer"
+  },
+  {
+    "question": "Was ist die Hauptstadt Spaniens?",
     "options": [
       "Barcelona",
       "Sevilla",
-      "Valencia",
-      "Madrid"
+      "Madrid",
+      "Valencia"
     ],
-    "correct": 3,
-    "explanation": "Madrid ist die Hauptstadt und größte Stadt Spaniens. Barcelona ist bekannt für Gaudí-Architektur. Spanien liegt auf der Iberischen Halbinsel im Südwesten Europas.",
-    "topic": "Europa"
+    "correct": 2,
+    "explanation": "Madrid ist die Hauptstadt Spaniens.",
+    "topic": "Hauptstädte"
   },
   {
-    "question": "Was ist das Mittelmeer?",
+    "question": "Welches Land ist kein EU-Mitglied?",
     "options": [
-      "Ein Fluss in Europa",
-      "Ein Binnenmeer zwischen Europa, Afrika und Asien – umgeben von Mittelmeer-Ländern wie Italien, Spanien, Frankreich, Griechenland, Türkei, Ägypten",
-      "Ein künstlicher Kanal",
-      "Ein Teil des Atlantiks"
+      "Deutschland",
+      "Frankreich",
+      "Norwegen",
+      "Österreich"
     ],
-    "correct": 1,
-    "explanation": "Mittelmeer: verbindet über Straße von Gibraltar mit dem Atlantik. Wichtige Handelsroute seit Antike. Typisches Mittelmeerklima: heiße trockene Sommer, milde feuchte Winter.",
-    "topic": "Meere"
+    "correct": 2,
+    "explanation": "Norwegen ist nicht in der EU, aber im EWR.",
+    "topic": "Europa politisch"
   },
   {
-    "question": "Was ist die längste Gebirgskette Europas?",
+    "question": "Welches Gebirge liegt zwischen Frankreich und Spanien?",
     "options": [
-      "Pyrenäen",
-      "Karpaten",
       "Alpen",
+      "Karpaten",
+      "Pyrenäen",
       "Apennin"
     ],
     "correct": 2,
-    "explanation": "Alpen: höchste und bekannteste Gebirgskette Mitteleuropas. Höchster Gipfel: Mont Blanc (4 808 m, Frankreich/Italien). Verlaufen durch 8 Länder: CH, A, D, F, IT, LI, SL, MC.",
-    "topic": "Europa"
+    "explanation": "Die Pyrenäen bilden die natürliche Grenze zwischen Frankreich und Spanien.",
+    "topic": "Gebirge"
   },
   {
-    "question": "Welches Land liegt auf einer Insel im Nordwesten Europas?",
+    "question": "Was ist die größte Stadt Europas (nach Einwohnern)?",
     "options": [
-      "Irland allein",
-      "Großbritannien – umfasst England, Schottland, Wales auf der Insel Großbritannien plus Nordirland",
-      "Frankreich",
-      "Portugal"
+      "Paris",
+      "Berlin",
+      "Moskau",
+      "London"
+    ],
+    "correct": 2,
+    "explanation": "Moskau mit ca. 12 Mio. Einwohnern ist Europas größte Stadt.",
+    "topic": "Städte"
+  },
+  {
+    "question": "Was ist die Hauptstadt Griechenlands?",
+    "options": [
+      "Thessaloniki",
+      "Athen",
+      "Kreta",
+      "Sparta"
     ],
     "correct": 1,
-    "explanation": "Vereinigtes Königreich (UK): England, Schottland, Wales (Insel Großbritannien) + Nordirland. Hauptstadt: London. Seit 2020 nicht mehr EU-Mitglied (Brexit).",
-    "topic": "Europa"
+    "explanation": "Athen ist die Hauptstadt Griechenlands.",
+    "topic": "Hauptstädte"
   },
   {
-    "question": "Was ist die Hauptstadt von Österreich?",
+    "question": "Welcher Strom fließt durch Deutschland, Österreich und Ungarn?",
+    "options": [
+      "Rhein",
+      "Elbe",
+      "Donau",
+      "Main"
+    ],
+    "correct": 2,
+    "explanation": "Die Donau fließt durch 10 Länder, darunter Deutschland, Österreich, Ungarn.",
+    "topic": "Gewässer"
+  },
+  {
+    "question": "Was ist die Hauptstadt Großbritanniens?",
+    "options": [
+      "Manchester",
+      "Birmingham",
+      "Edinburgh",
+      "London"
+    ],
+    "correct": 3,
+    "explanation": "London ist die Hauptstadt des Vereinigten Königreichs.",
+    "topic": "Hauptstädte"
+  },
+  {
+    "question": "Was ist die Halbinsel wo Spanien und Portugal liegen?",
+    "options": [
+      "Apennin-Halbinsel",
+      "Iberische Halbinsel",
+      "Skandinavische Halbinsel",
+      "Balkanhalbinsel"
+    ],
+    "correct": 1,
+    "explanation": "Die Iberische Halbinsel ist die Heimat von Spanien und Portugal.",
+    "topic": "Halbinseln"
+  },
+  {
+    "question": "Welches Gebirge liegt in Skandinavien?",
+    "options": [
+      "Alpen",
+      "Karpaten",
+      "Pyrenäen",
+      "Skandinavische Gebirge"
+    ],
+    "correct": 3,
+    "explanation": "Die Skandinavischen Gebirge (Scandes) verlaufen durch Norwegen und Schweden.",
+    "topic": "Gebirge"
+  },
+  {
+    "question": "Was ist die Hauptstadt Polens?",
+    "options": [
+      "Krakau",
+      "Breslau",
+      "Warschau",
+      "Danzig"
+    ],
+    "correct": 2,
+    "explanation": "Warschau ist die Hauptstadt Polens.",
+    "topic": "Hauptstädte"
+  },
+  {
+    "question": "Welches Meer grenzt an Nordeuropa?",
+    "options": [
+      "Mittelmeer",
+      "Atlantik",
+      "Nordsee und Ostsee",
+      "Schwarzes Meer"
+    ],
+    "correct": 2,
+    "explanation": "Nordsee und Ostsee grenzen an die Länder Nordeuropas.",
+    "topic": "Gewässer"
+  },
+  {
+    "question": "Zu welchem Erdteil gehört die Türkei?",
+    "options": [
+      "Nur Asien",
+      "Nur Europa",
+      "Teils Asien, teils Europa",
+      "Naher Osten (eigener Erdteil)"
+    ],
+    "correct": 2,
+    "explanation": "Die Türkei liegt zu einem kleinen Teil in Europa (Ostthrakien), größtenteils in Asien.",
+    "topic": "Lage"
+  },
+  {
+    "question": "Was ist die Hauptstadt der Niederlande?",
+    "options": [
+      "Rotterdam",
+      "Den Haag",
+      "Utrecht",
+      "Amsterdam"
+    ],
+    "correct": 3,
+    "explanation": "Amsterdam ist die Hauptstadt der Niederlande.",
+    "topic": "Hauptstädte"
+  },
+  {
+    "question": "Was sind Skandinavische Länder?",
+    "options": [
+      "Dänemark, Schweden, Norwegen",
+      "Finnland, Estland, Lettland",
+      "Deutschland, Österreich, Schweiz",
+      "Frankreich, Belgien, Niederlande"
+    ],
+    "correct": 0,
+    "explanation": "Skandinavien: Dänemark, Schweden, Norwegen (oft auch Finnland).",
+    "topic": "Regionen"
+  },
+  {
+    "question": "Welcher Fluss fließt durch Paris?",
+    "options": [
+      "Rhein",
+      "Loire",
+      "Seine",
+      "Rhône"
+    ],
+    "correct": 2,
+    "explanation": "Die Seine fließt durch Paris.",
+    "topic": "Gewässer"
+  },
+  {
+    "question": "Was ist die Hauptstadt Russlands?",
+    "options": [
+      "St. Petersburg",
+      "Moskau",
+      "Kiew",
+      "Minsk"
+    ],
+    "correct": 1,
+    "explanation": "Moskau ist die Hauptstadt Russlands.",
+    "topic": "Hauptstädte"
+  },
+  {
+    "question": "Welches Land ist die Insel?",
+    "options": [
+      "Österreich",
+      "Portugal",
+      "Island",
+      "Ungarn"
+    ],
+    "correct": 2,
+    "explanation": "Island ist ein Inselstaat im Nordatlantik.",
+    "topic": "Inseln"
+  },
+  {
+    "question": "Was ist der höchste Berg der Alpen?",
+    "options": [
+      "Zugspitze",
+      "Mont Blanc",
+      "Matterhorn",
+      "Eiger"
+    ],
+    "correct": 1,
+    "explanation": "Mont Blanc (4.808 m) ist der höchste Gipfel der Alpen.",
+    "topic": "Gebirge"
+  },
+  {
+    "question": "Welcher Strom bildet die Grenze zwischen Deutschland und Frankreich?",
+    "options": [
+      "Elbe",
+      "Mosel",
+      "Main",
+      "Rhein"
+    ],
+    "correct": 3,
+    "explanation": "Der Rhein bildet die Grenze zwischen Deutschland und Frankreich.",
+    "topic": "Gewässer"
+  },
+  {
+    "question": "Was ist die Hauptstadt Österreichs?",
     "options": [
       "Salzburg",
+      "Innsbruck",
       "Graz",
-      "Linz",
       "Wien"
     ],
     "correct": 3,
-    "explanation": "Wien ist die Hauptstadt Österreichs und liegt an der Donau. War Hauptstadt des Habsburgerreichs. Bekannt für Oper, Prater, Schönbrunn. Ca. 1,9 Mio. Einwohner.",
-    "topic": "Europa"
+    "explanation": "Wien ist die Hauptstadt Österreichs.",
+    "topic": "Hauptstädte"
   },
   {
-    "question": "Welcher Kontinent ist der größte?",
+    "question": "Was ist die Balkanhalbinsel?",
     "options": [
-      "Amerika",
-      "Europa",
-      "Asien",
-      "Afrika"
-    ],
-    "correct": 2,
-    "explanation": "Asien: größter Kontinent (44,5 Mio. km²) mit mehr als der Hälfte der Weltbevölkerung (~60%). Gefolgt von Afrika, Amerika, Antarktis, Europa, Australien.",
-    "topic": "Kontinente"
-  },
-  {
-    "question": "Wie viele Kontinente gibt es auf der Erde?",
-    "options": [
-      "5",
-      "6",
-      "7",
-      "8"
-    ],
-    "correct": 2,
-    "explanation": "7 Kontinente: Afrika, Antarktis, Asien, Australien (Ozeanien), Europa, Nordamerika, Südamerika. (In manchen Systemen werden Kontinente anders gezählt, z.B. 5 oder 6.)",
-    "topic": "Kontinente"
-  },
-  {
-    "question": "Was ist der größte Ozean der Erde?",
-    "options": [
-      "Atlantik",
-      "Indischer Ozean",
-      "Arktischer Ozean",
-      "Pazifik"
-    ],
-    "correct": 3,
-    "explanation": "Pazifischer Ozean: größter Ozean (ca. 165 Mio. km² – mehr als alle Landmassen zusammen). Liegt zwischen Amerika und Asien/Australien. Enthält Marianengraben (tiefste Stelle der Erde).",
-    "topic": "Ozeane"
-  },
-  {
-    "question": "Was ist der Äquator?",
-    "options": [
-      "Ein Gebirge in Südamerika",
-      "Der imaginäre Kreis um die Erde, der gleich weit von Nord- und Südpol entfernt ist – bei 0° Breite",
-      "Die Datumsgrenze",
-      "Der Nullmeridian"
+      "Westeuropa",
+      "Südosteuropa (Serbien, Bulgarien, Griechenland…)",
+      "Skandinavien",
+      "Irland+UK"
     ],
     "correct": 1,
-    "explanation": "Äquator: teilt Erde in Nord- und Südhalbkugel. Längster Breitenkreis (ca. 40 075 km). Direkte Sonnenstrahlen → tropisches Klima. Länder: Brasilien, Kongo, Indonesien, Kenya.",
-    "topic": "Globus"
-  },
-  {
-    "question": "Was ist die Hauptstadt von Griechenland?",
-    "options": [
-      "Thessaloniki",
-      "Kreta",
-      "Athen",
-      "Sparta"
-    ],
-    "correct": 2,
-    "explanation": "Athen ist die Hauptstadt Griechenlands (ca. 3,5 Mio. Einwohner in der Agglomeration). Wiege der Demokratie und westlichen Zivilisation. Bekannt für Akropolis, Parthenon.",
-    "topic": "Europa"
-  },
-  {
-    "question": "Was sind die Benelux-Staaten?",
-    "options": [
-      "Belgien, Niederlande, Luxemburg",
-      "Österreich, Schweiz, Liechtenstein",
-      "Schweden, Norwegen, Dänemark",
-      "Portugal, Spanien, Gibraltar"
-    ],
-    "correct": 0,
-    "explanation": "Benelux: Belgien, Niederlande (Holland), Luxemburg. Wirtschaftliche Union seit 1944. Alle EU-Mitglieder. Brüssel (Belgien) ist Hauptsitz vieler EU-Institutionen.",
-    "topic": "Europa"
-  },
-  {
-    "question": "Was ist die Sahara?",
-    "options": [
-      "Ein Regenwald in Afrika",
-      "Die größte heiße Wüste der Erde, im Norden Afrikas – erstreckt sich über ca. 9 Mio. km²",
-      "Ein Fluss in Nordafrika",
-      "Eine Steppe in Südafrika"
-    ],
-    "correct": 1,
-    "explanation": "Sahara: 9 Mio. km² (fast so groß wie die USA). Kaum Niederschlag (< 25 mm/Jahr). Tagsüber extrem heiß, nachts kalt. Hauptsächlich Sandwüste, aber auch Felswüste und Kiesebenen.",
-    "topic": "Wüsten"
-  },
-  {
-    "question": "Was ist der Amazonas?",
-    "options": [
-      "Ein Regenwald in Asien",
-      "Der längste (oder zweite) und wasserreichste Fluss der Welt in Südamerika, fließt durch Brasilien in den Atlantik – umgeben vom Amazonas-Regenwald",
-      "Ein See in Südamerika",
-      "Ein Gebirge in Brasilien"
-    ],
-    "correct": 1,
-    "explanation": "Amazonas: 6 448 km lang (je nach Messung). Wasserreichster Fluss der Welt (20% des gesamten Süßwassers der Erde). Umgebung: größter tropischer Regenwald.",
-    "topic": "Flüsse der Welt"
-  },
-  {
-    "question": "Was ist der Mount Everest?",
-    "options": [
-      "Höchster Berg in Europa",
-      "Höchster Berg der Erde (8 849 m) im Himalaya-Gebirge, an der Grenze zwischen Nepal und China (Tibet)",
-      "Höchster Berg in Amerika",
-      "Ein Vulkan in Island"
-    ],
-    "correct": 1,
-    "explanation": "Mount Everest: höchster Punkt der Erde. Im Himalaya (Asien). Erstbesteigung 1953: Edmund Hillary und Tenzing Norgay. Jedes Jahr versuchen Hunderte die Besteigung.",
-    "topic": "Berge der Welt"
+    "explanation": "Die Balkanhalbinsel liegt in Südosteuropa.",
+    "topic": "Halbinseln"
   },
   {
     "question": "Was ist die Hauptstadt der Schweiz?",
     "options": [
       "Zürich",
-      "Genf",
       "Basel",
+      "Genf",
       "Bern"
     ],
     "correct": 3,
-    "explanation": "Bern ist die Bundeshauptstadt der Schweiz. Zürich ist die größte Stadt. Schweiz hat 4 Amtssprachen: Deutsch, Französisch, Italienisch, Rätoromanisch. Kein EU-Mitglied.",
-    "topic": "Europa"
+    "explanation": "Bern ist die Bundesstadt (Hauptstadt) der Schweiz.",
+    "topic": "Hauptstädte"
   },
   {
-    "question": "Was ist die längste Mauer der Welt?",
+    "question": "Welcher Ozean liegt westlich von Europa?",
     "options": [
-      "Berliner Mauer",
-      "Mauer Hadrians",
-      "Chinesische Mauer (über 20 000 km)",
-      "Israelische Sicherheitsmauer"
+      "Indischer Ozean",
+      "Pazifik",
+      "Atlantischer Ozean",
+      "Arktischer Ozean"
     ],
     "correct": 2,
-    "explanation": "Chinesische Mauer: mehrere Teilmauern, insgesamt über 20 000 km. Beginn ca. 7. Jh. v.Chr., große Ausbauphase unter Ming-Dynastie (14.–17. Jh.). UNESCO-Weltkulturerbe.",
-    "topic": "Welt-Geographie"
+    "explanation": "Der Atlantische Ozean liegt westlich von Europa.",
+    "topic": "Gewässer"
   },
   {
-    "question": "Wie heißen die Himmelsrichtungen auf Englisch?",
+    "question": "Was ist die Fläche Europas im Vergleich zu anderen Kontinenten?",
     "options": [
-      "Never, Over, South, What",
-      "North, East, South, West",
-      "No, Ost, Süd, West",
-      "North, Over, Sun, Winter"
-    ],
-    "correct": 1,
-    "explanation": "Englische Himmelsrichtungen: North (Nord), East (Ost), South (Süd), West (West). Merksatz: Never Eat Shredded Wheat. Auf Karten: N oben, S unten, O rechts, W links.",
-    "topic": "Orientierung"
-  },
-  {
-    "question": "Was ist die Hauptstadt von Russland?",
-    "options": [
-      "St. Petersburg",
-      "Kiew",
-      "Moskau",
-      "Minsk"
+      "Der größte",
+      "Der zweitgrößte",
+      "Der zweitkleinste",
+      "Der drittgrößte"
     ],
     "correct": 2,
-    "explanation": "Moskau ist die Hauptstadt Russlands und größte Stadt Europas (ca. 12 Mio. Einwohner). Russland ist flächenmäßig das größte Land der Erde und liegt in Europa und Asien.",
-    "topic": "Europa"
+    "explanation": "Europa ist mit ca. 10 Mio. km² nach Australien der zweitkleinste Kontinent.",
+    "topic": "Europa allgemein"
   },
   {
-    "question": "Was ist der Nordpol?",
+    "question": "Was ist die Hauptstadt Portugals?",
     "options": [
-      "Ein Kontinent wie die Antarktis",
-      "Der nördlichste Punkt der Erde, im Arktischen Ozean – kein Land darunter, nur Eis. Breitengrad 90° N",
-      "Eine Insel",
-      "Ein Gebirge in Norwegen"
+      "Porto",
+      "Coimbra",
+      "Braga",
+      "Lissabon"
+    ],
+    "correct": 3,
+    "explanation": "Lissabon ist die Hauptstadt Portugals.",
+    "topic": "Hauptstädte"
+  },
+  {
+    "question": "Was ist die Europäische Union?",
+    "options": [
+      "Militärpakt",
+      "Wirtschafts- und Staatenbund von europäischen Ländern",
+      "Geheimgesellschaft",
+      "Wettbewerb"
     ],
     "correct": 1,
-    "explanation": "Nordpol: 90° N. Kein Land – nur Meereseis auf dem Arktischen Ozean. Klimawandel lässt das Eis schrumpfen. Gegenteil: Südpol liegt auf dem Kontinent Antarktis.",
-    "topic": "Pole"
+    "explanation": "Die EU ist ein Wirtschafts- und Staatenbund mit derzeit 27 Mitgliedsländern.",
+    "topic": "Europa politisch"
   },
   {
-    "question": "Was ist der Unterschied zwischen Nordsee und Ostsee?",
+    "question": "Wie viele Länder hat Europa ungefähr?",
     "options": [
-      "Sie sind dasselbe Meer",
-      "Nordsee: an der Westküste Deutschlands (Niederlande, Dänemark), offenes Meer, starke Gezeiten, Salzgehalt hoch. Ostsee: an der Ostküste, Binnenmeer, wenig Gezeiten, geringer Salzgehalt",
-      "Ostsee liegt weiter westlich",
-      "Nordsee ist kleiner"
-    ],
-    "correct": 1,
-    "explanation": "Nordsee: verbindet über Ärmelkanal mit Atlantik. Ostsee: fast umschlossen, Süßwasserzuflüsse → geringer Salzgehalt (~8‰ vs. Nordsee ~35‰). Beide für Deutschland wichtig.",
-    "topic": "Meere"
-  },
-  {
-    "question": "Welches Land liegt östlich von Deutschland?",
-    "options": [
-      "Frankreich",
-      "Polen",
-      "Dänemark",
-      "Österreich"
-    ],
-    "correct": 1,
-    "explanation": "Im Osten grenzt Deutschland an Polen und Tschechien. Im Norden: Dänemark. Im Westen: Frankreich, Luxemburg, Belgien, Niederlande. Im Süden: Österreich, Schweiz.",
-    "topic": "Deutschland"
-  },
-  {
-    "question": "Was ist der Nil?",
-    "options": [
-      "Ein Fluss in Asien",
-      "Der längste Fluss Afrikas (6 650 km), der durch Sudan und Ägypten in das Mittelmeer mündet – Lebensader der ägyptischen Zivilisation",
-      "Ein See in Afrika",
-      "Ein Gebirge in Nordafrika"
-    ],
-    "correct": 1,
-    "explanation": "Nil: traditionell als längster Fluss der Welt bekannt (heute umstritten – Amazonas ähnlich lang). Der jährliche Nilüberschwemmung hat jahrtausendlang Ägypten befruchtet.",
-    "topic": "Flüsse der Welt"
-  },
-  {
-    "question": "Was ist ein Globus?",
-    "options": [
-      "Eine flache Karte der Erde",
-      "Ein kugelförmiges Modell der Erde – zeigt Kontinente und Ozeane ohne Verzerrungen (im Gegensatz zur flachen Karte)",
-      "Ein Kompass",
-      "Ein Fernrohr"
-    ],
-    "correct": 1,
-    "explanation": "Globus: einzige maßstabsgetreue Darstellung der Erde (keine Verzerrungen wie auf flachen Karten). Nachteil: klein, schwer zu transportieren, nicht detailliert.",
-    "topic": "Karten und Globus"
-  },
-  {
-    "question": "Was ist der Unterschied zwischen einem Land und einem Kontinent?",
-    "options": [
-      "Kein Unterschied",
-      "Kontinent: große zusammenhängende Landmasse (7 Kontinente). Land (Staat): politisch abgegrenztes Territorium – auf einem Kontinent können viele Länder sein",
-      "Länder sind immer klein",
-      "Kontinente haben keine Bewohner"
-    ],
-    "correct": 1,
-    "explanation": "Asien ist ein Kontinent, aber China, Japan, Indien usw. sind Länder auf diesem Kontinent. Europa ist ein Kontinent mit 44 Ländern.",
-    "topic": "Grundbegriffe"
-  },
-  {
-    "question": "Was ist die Meerestiefe des Marianengrabens?",
-    "options": [
-      "Ca. 4 000 m",
-      "Ca. 7 000 m",
-      "Ca. 11 000 m (tiefste Stelle der Erde im Pazifik)",
-      "Ca. 2 000 m"
+      "25",
+      "36",
+      "44",
+      "55"
     ],
     "correct": 2,
-    "explanation": "Marianengraben (Challenger Deep): ca. 11 034 m unter dem Meeresspiegel – tiefste bekannte Stelle der Erde. Liegt im westlichen Pazifik, östlich der Marianeninseln.",
-    "topic": "Ozeane"
+    "explanation": "Europa hat etwa 44 Länder (abhängig von Definition).",
+    "topic": "Europa allgemein"
   },
   {
-    "question": "Was ist die Hauptstadt von Polen?",
+    "question": "Was ist die Hauptstadt Belgiens?",
     "options": [
-      "Krakau",
-      "Warschau",
-      "Danzig",
-      "Breslau"
+      "Antwerpen",
+      "Gent",
+      "Lüttich",
+      "Brüssel"
     ],
-    "correct": 1,
-    "explanation": "Warschau (polnisch: Warszawa) ist die Hauptstadt Polens (ca. 1,8 Mio. Einwohner). Polen grenzt im Westen an Deutschland (Oder-Neiße-Linie). EU-Mitglied seit 2004.",
-    "topic": "Europa"
+    "correct": 3,
+    "explanation": "Brüssel ist die Hauptstadt Belgiens und Sitz vieler EU-Institutionen.",
+    "topic": "Hauptstädte"
   },
   {
-    "question": "Was ist ein Klimadiagramm?",
+    "question": "Welcher Berg ist der höchste in Deutschland?",
     "options": [
-      "Eine Tabelle",
-      "Ein Diagramm, das Durchschnittstemperaturen und Niederschlagsmengen eines Ortes über das Jahr darstellt – zum Ablesen des Klimas",
-      "Eine Wetterkarte",
-      "Ein Bodenatlas"
-    ],
-    "correct": 1,
-    "explanation": "Klimadiagramm: Balken = Niederschlag (mm), Linie = Temperatur (°C). Monat für Monat über 12 Monate. Zeigt: Wann ist Regenzeit? Wann ist es am wärmsten?",
-    "topic": "Klima"
-  },
-  {
-    "question": "Was ist ein Atlas?",
-    "options": [
-      "Ein Grieche aus der Mythologie",
-      "Eine Sammlung von Landkarten verschiedener Orte, Regionen oder Themen in Buchform",
-      "Ein Lexikon",
-      "Ein Globus im Buch"
-    ],
-    "correct": 1,
-    "explanation": "Atlas: nach dem Titanen Atlas benannt (der die Erde auf seinen Schultern trägt). Enthält physische, politische, thematische Karten. Wichtiges Nachschlagewerk für Erdkunde.",
-    "topic": "Karten"
-  },
-  {
-    "question": "Welcher Fluss ist der längste in Deutschland?",
-    "options": [
-      "Elbe",
-      "Main",
-      "Rhein",
-      "Donau"
+      "Feldberg",
+      "Brocken",
+      "Zugspitze",
+      "Watzmann"
     ],
     "correct": 2,
-    "explanation": "Rhein: ca. 865 km in Deutschland (Gesamtlänge 1 230 km). In Deutschland von Süd nach Nord. Mündet in Niederlande in die Nordsee. Wichtigste Wasserstraße Deutschlands.",
-    "topic": "Flüsse"
+    "explanation": "Die Zugspitze (2.962 m) ist der höchste Berg Deutschlands.",
+    "topic": "Gebirge"
   },
   {
-    "question": "Was ist der Polarkreis?",
+    "question": "Was ist die Hauptstadt Schwedens?",
     "options": [
-      "Der Äquator",
-      "Ein Breitenkreis bei 66,5° Nord (Arktischer Polarkreis) oder Süd: nördlich davon gibt es Mitternachtssonne im Sommer und Polarnacht im Winter",
-      "Der Nullmeridian",
-      "Ein Gebirge in der Arktis"
+      "Göteborg",
+      "Malmö",
+      "Uppsala",
+      "Stockholm"
     ],
-    "correct": 1,
-    "explanation": "Polarkreis: nördlich davon geht die Sonne im Sommer nicht unter (Mitternachtssonne) und im Winter nicht auf (Polarnacht). Norwegen, Schweden, Finnland, Alaska liegen teilweise nördlich davon.",
-    "topic": "Globus"
-  },
-  {
-    "question": "Was ist die EU (Europäische Union)?",
-    "options": [
-      "Ein einzelner Staat",
-      "Ein politischer und wirtschaftlicher Zusammenschluss von 27 europäischen Ländern – gemeinsamer Binnenmarkt, gemeinsame Währung (Euro in vielen Ländern), freier Personenverkehr",
-      "Ein Verteidigungsbündnis",
-      "Eine Währungsunion allein"
-    ],
-    "correct": 1,
-    "explanation": "EU: gegründet durch Maastrichter Vertrag (1992). Vorläufer: EWG (1957). 27 Mitglieder (nach Brexit ohne UK). Euro: 20 EU-Länder. Sitz: Brüssel. Europaparlament: Straßburg/Brüssel. Rat: Brüssel.",
-    "topic": "Europa"
-  },
-  {
-    "question": "Was ist die Alpenregion?",
-    "options": [
-      "Eine Tiefebene",
-      "Das höchste Gebirge Europas, das sich über Deutschland, Österreich, Schweiz, Frankreich, Italien, Liechtenstein, Monaco und Slowenien erstreckt – höchster Gipfel: Mont Blanc (4808 m)",
-      "Eine Meeresregion",
-      "Eine Wüste"
-    ],
-    "correct": 1,
-    "explanation": "Alpen: entstanden durch Kollision der afrikanischen und eurasischen Platte. Wichtige Pässe: Brenner, Gotthard. Wasserquellen: Rhein, Inn, Donau, Po entstammen den Alpen. Skigebiete, Tourismus.",
-    "topic": "Berge der Welt"
+    "correct": 3,
+    "explanation": "Stockholm ist die Hauptstadt Schwedens.",
+    "topic": "Hauptstädte"
   },
   {
     "question": "Was ist das Mittelmeer?",
     "options": [
-      "Ein Ozean",
-      "Das Binnenmeer zwischen Europa, Afrika und Asien – verbindet die Kulturen Europas, Nordafrikas und des Nahen Ostens; wichtige Handelsroute seit der Antike",
-      "Ein Fluss",
-      "Ein See"
+      "See in Süddeutschland",
+      "Nebenmeer des Atlantiks zwischen Europa, Afrika und Asien",
+      "Binnensee",
+      "Küste in Frankreich"
     ],
     "correct": 1,
-    "explanation": "Mittelmeer: nahezu geschlossenes Meer, nur Verbindung zum Atlantik durch Straße von Gibraltar. Klimatisch: Mittelmeerklima (heiß-trockene Sommer). Historisch: Zentrum griechischer, römischer und arabischer Kulturen.",
-    "topic": "Meere"
+    "explanation": "Das Mittelmeer liegt zwischen Europa, Afrika und dem Nahen Osten.",
+    "topic": "Gewässer"
   },
   {
-    "question": "Was ist die Donau?",
+    "question": "Was ist die Hauptstadt Dänemarks?",
     "options": [
-      "Ein Fluss in Deutschland allein",
-      "Der zweitlängste Fluss Europas (2850 km), der von Deutschland durch 10 Länder bis zum Schwarzen Meer fließt – wichtiger Handels- und Reiseweg",
-      "Ein See",
-      "Ein Gebirge"
+      "Aalborg",
+      "Odense",
+      "Kopenhagen",
+      "Aarhus"
+    ],
+    "correct": 2,
+    "explanation": "Kopenhagen ist die Hauptstadt Dänemarks.",
+    "topic": "Hauptstädte"
+  },
+  {
+    "question": "Was ist die Hauptstadt der Tschechischen Republik?",
+    "options": [
+      "Brünn",
+      "Pilsen",
+      "Olmütz",
+      "Prag"
+    ],
+    "correct": 3,
+    "explanation": "Prag ist die Hauptstadt der Tschechischen Republik.",
+    "topic": "Hauptstädte"
+  },
+  {
+    "question": "Was ist ein Kontinent?",
+    "options": [
+      "Ein Meer",
+      "Einer der großen zusammenhängenden Landmassen der Erde",
+      "Eine Insel",
+      "Eine Region"
     ],
     "correct": 1,
-    "explanation": "Donau: entspringt im Schwarzwald, fließt durch Wien, Budapest, Belgrad zum Schwarzen Meer. Wichtige Städte: Ulm, Regensburg, Passau (D), Wien (A), Budapest (H). 2. Länge nach Wolga (3530 km).",
-    "topic": "Flüsse der Welt"
+    "explanation": "Kontinente: Europa, Asien, Afrika, Amerika (N+S), Australien, Antarktis.",
+    "topic": "Geographie allgemein"
   }
 ]

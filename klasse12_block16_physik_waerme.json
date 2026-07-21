@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist der Unterschied zwischen Temperatur und Wärme?",
+    "options": [
+      "Es gibt keinen Unterschied – beide Begriffe bezeichnen dasselbe",
+      "Temperatur: Maß für die mittlere kinetische Energie der Teilchen; Wärme: Energiemenge Q, die zwischen Körpern übertragen wird",
+      "Wärme ist immer größer als die Temperatur",
+      "Temperatur ist eine Energiemenge, Wärme ein Intensitätsmaß"
+    ],
+    "correct": 1,
+    "explanation": "Temperatur (T) misst, wie 'heiß' etwas ist (intensive Größe). Wärme (Q) ist Energie, die aufgrund einer Temperaturdifferenz übertragen wird (extensive Größe, in Joule).",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "question": "Was ist die SI-Einheit der Temperatur?",
+    "options": [
+      "Grad Celsius (°C)",
+      "Kelvin (K)",
+      "Fahrenheit (°F)",
+      "Joule (J)"
+    ],
+    "correct": 1,
+    "explanation": "Die SI-Einheit der Temperatur ist Kelvin (K). Celsius und Fahrenheit sind abgeleitete Einheiten; Kelvin startet beim absoluten Nullpunkt (0 K = −273,15 °C).",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "question": "Was ist der absolute Nullpunkt?",
+    "options": [
+      "0 °C",
+      "−100 K",
+      "0 K (= −273,15 °C) – tiefste erreichbare Temperatur; unterhalb davon gibt es keine negativen Temperaturen in Kelvin",
+      "−273,15 °F"
+    ],
+    "correct": 2,
+    "explanation": "Beim absoluten Nullpunkt (0 K) ist die thermische Bewegung der Teilchen minimal. Er kann laut dem 3. Hauptsatz der Thermodynamik nie exakt erreicht werden.",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "question": "Wie rechnet man von Grad Celsius in Kelvin um?",
+    "options": [
+      "T(K) = T(°C) − 273,15",
+      "T(K) = T(°C) + 273,15",
+      "T(K) = T(°C) × 1,8 + 32",
+      "T(K) = T(°C) / 273,15"
+    ],
+    "correct": 1,
+    "explanation": "T(K) = T(°C) + 273,15. Beispiel: Raumtemperatur 20 °C = 293,15 K. Die Kelvin-Skala startet beim absoluten Nullpunkt.",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "question": "Was ist die spezifische Wärmekapazität c?",
+    "options": [
+      "Die Gesamtenergie, die ein Körper speichern kann",
+      "Die Wärme, die nötig ist, um 1 kg eines Stoffs um 1 K zu erwärmen (Einheit: J/(kg·K))",
+      "Die Wärme, die ein Körper pro Sekunde abstrahlt",
+      "Die Energie bei Phasenübergängen"
+    ],
+    "correct": 1,
+    "explanation": "c = Q / (m · ΔT). Wasser hat c = 4186 J/(kg·K) – sehr hohe Wärmekapazität. Eisen: c ≈ 450 J/(kg·K). Wichtig für Heiz- und Kühlsysteme.",
+    "topic": "Wärmekapazität"
+  },
+  {
+    "question": "Wie berechnet man die zugeführte Wärme Q?",
+    "options": [
+      "Q = m / (c · ΔT)",
+      "Q = m · c · ΔT",
+      "Q = c · ΔT",
+      "Q = m · c / ΔT"
+    ],
+    "correct": 1,
+    "explanation": "Q = m · c · ΔT. m = Masse (kg), c = spezifische Wärmekapazität (J/(kg·K)), ΔT = Temperaturänderung (K). Grundformel der Kalorimetrie.",
+    "topic": "Wärmekapazität"
+  },
+  {
+    "question": "Was sind die drei Arten der Wärmeübertragung?",
+    "options": [
+      "Strahlung, Induktion, Konvektion",
+      "Wärmeleitung (Konduktion), Konvektion und Wärmestrahlung",
+      "Konduktion, Diffusion, Absorption",
+      "Strahlung, Reflexion, Transmission"
+    ],
+    "correct": 1,
+    "explanation": "Wärmeleitung: Teilchenkontakt (z.B. Metall). Konvektion: Strömung (z.B. Warmluft). Wärmestrahlung: elektromagnetische Wellen (z.B. Sonnenwärme) – braucht kein Medium.",
+    "topic": "Wärmeübertragung"
+  },
+  {
+    "question": "Was ist Wärmeleitung (Konduktion)?",
+    "options": [
+      "Wärmetransport durch Strömung (Massetransport)",
+      "Wärmetransport durch direkte Teilchenwechselwirkung ohne Massetransport – gut in Metallen, schlecht in Isolatoren",
+      "Wärmetransport durch elektromagnetische Strahlung",
+      "Wärmetransport durch Konvektion in Gasen"
+    ],
+    "correct": 1,
+    "explanation": "Konduktion: Energie wird von Atom zu Atom weitergegeben. Metalle: gute Wärmeleiter (freie Elektronen). Gase/Kunststoffe: schlechte Wärmeleiter (wenig Kontakt).",
+    "topic": "Wärmeübertragung"
+  },
+  {
+    "question": "Was ist Konvektion?",
+    "options": [
+      "Wärmetransport durch Teilchenschwingungen ohne Massetransport",
+      "Wärmetransport durch Strömung (Massetransport) in Flüssigkeiten und Gasen",
+      "Wärmetransport durch elektromagnetische Strahlung",
+      "Wärmetransport in Festkörpern durch Gitterschwingungen"
+    ],
+    "correct": 1,
+    "explanation": "Konvektion: warme Materie steigt auf (geringere Dichte), kältere sinkt ab – natürliche Konvektion. Erzwungene Konvektion: Pumpe, Ventilator. Beispiel: Zentralheizung, Meeresströmungen.",
+    "topic": "Wärmeübertragung"
+  },
+  {
+    "question": "Was ist Wärmestrahlung und was unterscheidet sie von den anderen Übertragungsarten?",
+    "options": [
+      "Wärmetransport durch Teilchenbewegung, braucht ein Medium",
+      "Elektromagnetische Strahlung (hauptsächlich Infrarot), die jeder Körper über 0 K aussendet – einzige Übertragungsart, die kein Medium braucht",
+      "Wärmetransport nur in Flüssigkeiten durch Konvektion",
+      "Wärmetransport durch Schallwellen"
+    ],
+    "correct": 1,
+    "explanation": "Wärmestrahlung: elektromagnetische Wellen (IR-Bereich). Braucht kein Medium – daher Wärme von der Sonne durch das Vakuum des Weltalls. Intensität ∝ T⁴ (Stefan-Boltzmann).",
+    "topic": "Wärmeübertragung"
+  },
+  {
+    "question": "Was besagt das Boyle-Mariotte-Gesetz?",
+    "options": [
+      "Bei konstanter Temperatur ist das Produkt aus Druck und Volumen konstant: p · V = const.",
+      "Bei konstantem Druck ist das Volumen proportional zur Temperatur",
+      "Bei konstantem Volumen ist der Druck proportional zur Temperatur",
+      "Das Volumen eines Gases ist temperaturunabhängig"
+    ],
+    "correct": 0,
+    "explanation": "Boyle-Mariotte (T = const., isotherme Zustandsänderung): p · V = const. → p₁ · V₁ = p₂ · V₂. Druckerhöhung verringert das Volumen proportional.",
+    "topic": "Gasgesetze"
+  },
+  {
+    "question": "Was besagt das Gesetz von Gay-Lussac (isochore Zustandsänderung)?",
+    "options": [
+      "p · V = const. bei konstanter Temperatur",
+      "Bei konstantem Volumen ist der Druck proportional zur absoluten Temperatur: p/T = const.",
+      "Bei konstantem Druck ist das Volumen proportional zur Temperatur",
+      "Gase haben immer denselben Druck"
+    ],
+    "correct": 1,
+    "explanation": "Gay-Lussac (V = const., isochor): p₁/T₁ = p₂/T₂. Erhöht man die Temperatur bei konstantem Volumen, steigt der Druck proportional (z.B. Druckbehälter im Feuer).",
+    "topic": "Gasgesetze"
+  },
+  {
+    "question": "Was besagt das Gesetz von Charles (isobare Zustandsänderung)?",
+    "options": [
+      "p · V = const. bei konstanter Temperatur",
+      "Bei konstantem Druck ist das Volumen proportional zur absoluten Temperatur: V/T = const.",
+      "Bei konstantem Volumen ist der Druck proportional zur Temperatur",
+      "Das Volumen ist immer konstant"
+    ],
+    "correct": 1,
+    "explanation": "Charles/Gay-Lussac (p = const., isobar): V₁/T₁ = V₂/T₂. Ein Ballon, der erwärmt wird, dehnt sich aus. Wichtig: T in Kelvin!",
+    "topic": "Gasgesetze"
+  },
+  {
+    "question": "Wie lautet das allgemeine ideale Gasgesetz?",
+    "options": [
+      "p + V = n · R · T",
+      "p · V = n · R · T",
+      "p · V² = n · R · T",
+      "p / V = n · R · T"
+    ],
+    "correct": 1,
+    "explanation": "p · V = n · R · T. p = Druck (Pa), V = Volumen (m³), n = Stoffmenge (mol), R = 8,314 J/(mol·K), T = Temperatur (K). Verbindet alle drei Gasgesetze.",
+    "topic": "Gasgesetze"
+  },
+  {
+    "question": "Was ist die universelle Gaskonstante R?",
+    "options": [
+      "R = 8,314 J/(mol·K)",
+      "R = 6,022 · 10²³ mol⁻¹ (Avogadro-Konstante)",
+      "R = 1,381 · 10⁻²³ J/K (Boltzmann-Konstante)",
+      "R = 9,81 m/s² (Erdbeschleunigung)"
+    ],
+    "correct": 0,
+    "explanation": "R = 8,314 J/(mol·K) = universelle Gaskonstante. Zusammenhang: R = Nₐ · k_B (Avogadro × Boltzmann-Konstante). Gilt für alle idealen Gase.",
+    "topic": "Gasgesetze"
+  },
+  {
+    "question": "Was beschreibt der 1. Hauptsatz der Thermodynamik?",
+    "options": [
+      "Wärme fließt spontan immer von kalt nach warm",
+      "Die innere Energie eines Systems ändert sich um zugeführte Wärme minus geleistete Arbeit: ΔU = Q − W (Energieerhaltung für thermodynamische Systeme)",
+      "In abgeschlossenen Systemen nimmt die Entropie immer zu",
+      "Der absolute Nullpunkt kann nie vollständig erreicht werden"
+    ],
+    "correct": 1,
+    "explanation": "1. Hauptsatz: ΔU = Q − W (oder ΔU = Q + W je nach Vorzeichenkonvention). Energie kann weder erzeugt noch vernichtet werden – ein Perpetuum mobile 1. Art ist unmöglich.",
+    "topic": "Hauptsätze"
+  },
+  {
+    "question": "Was beschreibt der 2. Hauptsatz der Thermodynamik?",
+    "options": [
+      "Energie ist immer erhalten (das ist der 1. Hauptsatz)",
+      "In abgeschlossenen Systemen nimmt die Entropie nicht ab; Wärme fließt spontan nur von warm nach kalt; kein Perpetuum mobile zweiter Art ist möglich",
+      "Wärme kann vollständig in Arbeit umgewandelt werden",
+      "Der absolute Nullpunkt ist bei −273,15 °C erreichbar"
+    ],
+    "correct": 1,
+    "explanation": "2. Hauptsatz: Entropie nimmt in abgeschlossenen Systemen zu oder bleibt gleich (ΔS ≥ 0). Wärme fließt nie spontan von kalt nach warm. Kein Prozess ist vollständig reversibel.",
+    "topic": "Hauptsätze"
+  },
+  {
+    "question": "Was ist Entropie S?",
+    "options": [
+      "Eine Form mechanischer Energie",
+      "Ein Maß für die Unordnung (Anzahl der Mikrozustände) eines Systems – in abgeschlossenen Systemen nimmt sie zu oder bleibt konstant",
+      "Die spezifische Wärme eines Stoffs",
+      "Der Wirkungsgrad einer Wärmekraftmaschine"
+    ],
+    "correct": 1,
+    "explanation": "Entropie: S = k_B · ln(Ω), wobei Ω die Anzahl der Mikrozustände ist. Je ungeordneter, desto höher die Entropie. Gase haben mehr Entropie als Festkörper.",
+    "topic": "Entropie"
+  },
+  {
+    "question": "Was ist der Carnot-Wirkungsgrad η_C?",
+    "options": [
+      "η_C = 1 − T_kalt/T_warm (Temperaturen in Kelvin) – maximal möglicher Wirkungsgrad einer Wärmekraftmaschine zwischen zwei Temperaturen",
+      "η_C = T_warm/T_kalt",
+      "η_C = 100 % minus Verluste",
+      "η_C = Q_nutz/T_warm"
+    ],
+    "correct": 0,
+    "explanation": "η_C = 1 − T_kalt/T_warm (in Kelvin). Beispiel: T_warm = 600 K, T_kalt = 300 K → η_C = 0,5 = 50 %. Kein realer Motor kann diesen Wirkungsgrad erreichen – er gilt für reversible Carnot-Prozesse.",
+    "topic": "Wirkungsgrad"
+  },
+  {
+    "question": "Was ist eine Wärmekraftmaschine?",
+    "options": [
+      "Eine Maschine, die nur Wärme erzeugt",
+      "Eine Maschine, die Wärmeenergie (Temperaturdifferenz) in mechanische Arbeit umwandelt (z.B. Dampfmaschine, Verbrennungsmotor, Turbine)",
+      "Eine Maschine, die elektrische Energie in Wärme wandelt",
+      "Eine Pumpe, die Warmwasser verteilt"
+    ],
+    "correct": 1,
+    "explanation": "Wärmekraftmaschine: Nimmt Wärme Q_warm vom heißen Reservoir, wandelt Teil davon in Arbeit W um, gibt Rest Q_kalt an kältes Reservoir ab. η = W/Q_warm ≤ η_Carnot.",
+    "topic": "Wirkungsgrad"
+  },
+  {
+    "question": "Was ist eine Wärmepumpe?",
+    "options": [
+      "Eine Maschine, die Wärme spontan von warm nach kalt pumpt",
+      "Eine Maschine, die unter Energiezufuhr Wärme von einem kälteren auf ein wärmeres Reservoir überträgt (Umkehrung der Wärmekraftmaschine)",
+      "Eine Maschine, die ohne Strom auskommt",
+      "Eine Art Kühlmaschine im umgekehrten Betrieb für Wohnraum-Heizung – identisch mit Kühlschrank, nur umgekehrter Nutzen"
+    ],
+    "correct": 1,
+    "explanation": "Wärmepumpe: leistet Arbeit W, entzieht Q_kalt aus kaltem Reservoir (Außenluft, Erde) und gibt Q_warm = Q_kalt + W an Wohnraum ab. Leistungszahl (COP) = Q_warm/W > 1.",
+    "topic": "Wärmemaschinen"
+  },
+  {
+    "question": "Was versteht man unter einem Phasenübergang?",
+    "options": [
+      "Den Übergang zwischen verschiedenen Energieformen",
+      "Die Änderung des Aggregatzustands eines Stoffs (fest ↔ flüssig ↔ gasförmig) bei konstanter Temperatur unter Wärmeaufnahme oder -abgabe",
+      "Die Temperaturänderung beim Abkühlen",
+      "Den Verbrennungsvorgang"
+    ],
+    "correct": 1,
+    "explanation": "Phasenübergänge: Schmelzen, Erstarren, Verdampfen, Kondensieren, Sublimieren, Resublimieren. Während des Übergangs bleibt die Temperatur konstant (Wärme wird für Strukturänderung verwendet).",
+    "topic": "Aggregatzustände"
+  },
+  {
+    "question": "Was ist Schmelzwärme (Schmelzenthalpie)?",
+    "options": [
+      "Die Wärme, die einem Stoff beim Abkühlen entzogen wird",
+      "Die Wärme, die nötig ist, um 1 kg eines Stoffs bei konstanter Temperatur vom festen in den flüssigen Zustand zu überführen",
+      "Die Wärme, die beim Kondensieren freiwird",
+      "Die Wärme zum Aufheizen bis zum Schmelzpunkt"
+    ],
+    "correct": 1,
+    "explanation": "Schmelzwärme: Q = m · L_S (L_S = spezifische Schmelzwärme). Wasser: L_S = 334 kJ/kg. Beim Erstarren wird dieselbe Wärme wieder frei (Erstarrungswärme).",
+    "topic": "Aggregatzustände"
+  },
+  {
+    "question": "Was ist Verdampfungswärme und warum ist sie größer als die Schmelzwärme?",
+    "options": [
+      "Sie ist kleiner, weil das Gas weniger Energie benötigt",
+      "Die Wärme, um 1 kg einer Flüssigkeit bei konstanter Temperatur vollständig zu verdampfen – deutlich größer als Schmelzwärme, da Moleküle den Zusammenhalt vollständig überwinden müssen",
+      "Die Wärme beim Kondensieren (Gegenteil, gleiche Größe)",
+      "Die Wärme beim Sublimieren von Eis"
+    ],
+    "correct": 1,
+    "explanation": "Verdampfungswärme Wasser: L_V = 2257 kJ/kg (bei 100 °C). Sehr hoch, weil bei Verdampfung alle zwischenmolekularen Bindungen gelöst werden müssen – nutzen wir z.B. beim Schwitzen.",
+    "topic": "Aggregatzustände"
+  },
+  {
+    "question": "Was beschreibt die kinetische Gastheorie?",
+    "options": [
+      "Gase bestehen aus ruhenden Teilchen in einem festen Gitter",
+      "Gase bestehen aus vielen schnell bewegten Teilchen ohne Anziehungskräfte untereinander; Druck entsteht durch Stöße gegen die Behälterwand; Temperatur entspricht mittlerer kinetischer Energie",
+      "Gasdruck ist unabhängig von der Temperatur",
+      "Gase haben feste Bindungen wie Kristalle"
+    ],
+    "correct": 1,
+    "explanation": "Kinetische Gastheorie: Grundannahmen – viele punktförmige Teilchen, vollkommen elastische Stöße, keine gegenseitigen Kräfte zwischen den Stößen. Liefert p = (1/3)·ρ·v̄² und E_kin = (3/2)·k_B·T.",
+    "topic": "Kinetische Gastheorie"
+  },
+  {
+    "question": "Was ist die Brownsche Bewegung?",
+    "options": [
+      "Die geordnete Strömung von Gasmolekülen in eine Richtung",
+      "Die zufällige, ungeordnete Bewegung kleiner Teilchen in einem Fluid durch statistische Stöße mit den Fluidmolekülen – direkter Nachweis der Existenz von Atomen/Molekülen",
+      "Die geordnete Wärmeströmung durch Konvektion",
+      "Die Ausbreitung von Wärme durch Strahlung"
+    ],
+    "correct": 1,
+    "explanation": "Brownsche Bewegung: Beobachtet von Robert Brown (1827) an Pollenkörnchen. Einstein erklärte sie 1905 quantitativ. Belegt die atomistische Struktur der Materie.",
+    "topic": "Kinetische Gastheorie"
+  },
+  {
+    "question": "Was ist Sublimation?",
+    "options": [
+      "Der Übergang von flüssig zu gasförmig (Verdampfung)",
+      "Der direkte Übergang vom festen in den gasförmigen Zustand ohne flüssige Zwischenphase (z.B. Trockeneis CO₂, Naphthalin, Iod)",
+      "Der Übergang von gasförmig zu fest (Resublimation)",
+      "Der Übergang von flüssig zu fest (Erstarren)"
+    ],
+    "correct": 1,
+    "explanation": "Sublimation: CO₂ (Trockeneis) sublimiert bei −78,5 °C (bei Normaldruck). Gefriertrocknung nutzt Sublimation. Das Gegenteil (gasförmig → fest) heißt Resublimation oder Desublimation.",
+    "topic": "Aggregatzustände"
+  },
+  {
+    "question": "Was ist der Tripelpunkt eines Stoffs?",
+    "options": [
+      "Der Punkt, bei dem Sublimation beginnt",
+      "Der spezifische Druck- und Temperaturzustand, bei dem alle drei Aggregatzustände gleichzeitig im Gleichgewicht existieren",
+      "Der Siedepunkt bei Normaldruck",
+      "Die Temperatur, bei der ein Stoff besonders gut leitet"
+    ],
+    "correct": 1,
+    "explanation": "Tripelpunkt Wasser: T = 273,16 K (0,01 °C), p = 611,7 Pa. Er dient als Fixpunkt der Kelvin-Skala. Am Tripelpunkt koexistieren Eis, Wasser und Wasserdampf.",
+    "topic": "Aggregatzustände"
+  },
+  {
+    "question": "Was beschreibt die innere Energie U in der Thermodynamik?",
+    "options": [
+      "Die kinetische Energie des gesamten Körpers (Schwerpunktbewegung)",
+      "Die Gesamtheit aller kinetischen und potenziellen Energien der Teilchen eines Systems (Translationsenergie, Rotations-, Schwingungsenergie)",
+      "Nur die Wärme, die einem System zugeführt wurde",
+      "Die Arbeit, die ein System nach außen verrichtet hat"
+    ],
+    "correct": 1,
+    "explanation": "Innere Energie U: Summe aller Mikrozustandsenergien. Sie ändert sich durch Wärmezufuhr und durch Arbeit: ΔU = Q + W (oder ΔU = Q − W je nach Konvention). Zustandsgröße.",
+    "topic": "Thermodynamik"
+  },
+  {
+    "question": "Was besagt das Stefan-Boltzmann-Gesetz?",
+    "options": [
+      "Die abgestrahlte Leistung ist proportional zur zweiten Potenz der absoluten Temperatur",
+      "Die abgestrahlte Leistung eines schwarzen Körpers ist proportional zur vierten Potenz der absoluten Temperatur: P = σ · A · T⁴ (σ = 5,67 · 10⁻⁸ W/(m²·K⁴))",
+      "Die Wärmeübertragung durch Leitung ist proportional zur Temperaturdifferenz",
+      "Das Gasvolumen ist proportional zur dritten Potenz der Temperatur"
+    ],
+    "correct": 1,
+    "explanation": "Stefan-Boltzmann: P = ε · σ · A · T⁴ (ε = Emissionsgrad). Für schwarzen Körper: ε = 1. Wichtig für Astronomie (Sterntemperaturen) und Wärmedämmung.",
+    "topic": "Wärmestrahlung"
+  },
+  {
+    "question": "Was sind isotherme, isobare und isochore Zustandsänderungen?",
+    "options": [
+      "Alle drei bedeuten dasselbe: keine Temperaturänderung",
+      "Isotherm: T = const.; isobar: p = const.; isochor: V = const. – drei Spezialfälle des allgemeinen Gasgesetzes",
+      "Isobar: T = const.; isotherm: p = const.; isochor: V = const.",
+      "Isochor: T = const.; isobar: V = const.; isotherm: p = const."
+    ],
+    "correct": 1,
+    "explanation": "Isotherme Änderung (T = const.): Boyle-Mariotte. Isobare (p = const.): Charles-Gesetz. Isochore (V = const.): Gay-Lussac. Vierte wichtige Änderung: adiabatisch (Q = 0).",
+    "topic": "Gasgesetze"
+  },
+  {
+    "question": "Was ist ein adiabatischer Prozess?",
+    "options": [
+      "Ein Prozess bei konstanter Temperatur (isotherme Änderung)",
+      "Ein Prozess ohne Wärmeaustausch mit der Umgebung (Q = 0) – die innere Energie ändert sich nur durch geleistete Arbeit",
+      "Ein Prozess bei konstantem Druck (isobare Änderung)",
+      "Ein Prozess bei konstantem Volumen (isochore Änderung)"
+    ],
+    "correct": 1,
+    "explanation": "Adiabatisch: Q = 0, daher ΔU = −W. Schnelle Prozesse sind oft näherungsweise adiabatisch (keine Zeit für Wärmeaustausch). Beispiel: schnelle Kompression einer Luftpumpe → Erwärmung.",
+    "topic": "Thermodynamik"
+  },
+  {
+    "question": "Was ist thermisches Gleichgewicht?",
+    "options": [
+      "Der Zustand, wenn alle Teilchen dieselbe Bewegungsrichtung haben",
+      "Der Zustand, wenn zwei Körper/Systeme dieselbe Temperatur haben und kein Nettowärmetransfer mehr stattfindet",
+      "Der Zustand maximaler Entropie",
+      "Der Zustand, wenn ein Körper maximal erhitzt ist"
+    ],
+    "correct": 1,
+    "explanation": "Thermisches Gleichgewicht: Keine Temperaturdifferenz → kein Wärmefluss. Grundlage des 0. Hauptsatzes: Wenn A und B je mit C im Gleichgewicht sind, sind A und B auch untereinander im Gleichgewicht.",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "question": "Was beschreibt das Fouriersche Gesetz der Wärmeleitung formal?",
+    "options": [
+      "Q = m · c · ΔT (Wärmemenge beim Erwärmen)",
+      "Der Wärmestrom ist proportional zum Temperaturgradienten: Q̇ = λ · A · ΔT/d (λ = Wärmeleitfähigkeit, A = Querschnittsfläche, d = Dicke)",
+      "Q = σ · A · T⁴ (Wärmestrahlung)",
+      "Q = p · V / (n · R) (ideales Gas)"
+    ],
+    "correct": 1,
+    "explanation": "Fourier: Q̇ = λ · A · ΔT/d. λ = Wärmeleitfähigkeit (W/(m·K)). Kupfer: λ ≈ 400; Holz: λ ≈ 0,13; Glas-Wolle: λ ≈ 0,04. Grundlage der Gebäudedämmung.",
+    "topic": "Wärmeübertragung"
+  },
+  {
+    "question": "Was ist lineare Wärmeausdehnung bei Festkörpern?",
+    "options": [
+      "ΔL = L₀ · α · ΔV",
+      "ΔL = L₀ · α · ΔT (α = linearer Ausdehnungskoeffizient in K⁻¹, ΔT = Temperaturänderung)",
+      "ΔL = α / (L₀ · ΔT)",
+      "ΔL = L₀ · γ · ΔT (γ = Volumenausdehnungskoeffizient)"
+    ],
+    "correct": 1,
+    "explanation": "ΔL = L₀ · α · ΔT. Für Stahl: α ≈ 12 · 10⁻⁶ K⁻¹. Bei einer 1000 m langen Stahlbrücke und ΔT = 50 K: ΔL = 0,6 m → Dehnungsfugen sind notwendig.",
+    "topic": "Wärmeausdehnung"
+  },
+  {
+    "question": "Was ist der 0. Hauptsatz der Thermodynamik?",
+    "options": [
+      "Entropie nimmt in abgeschlossenen Systemen immer zu (das ist der 2. Hauptsatz)",
+      "Wenn zwei Körper je im thermischen Gleichgewicht mit einem dritten Körper sind, befinden sie sich auch untereinander im thermischen Gleichgewicht – Grundlage der Temperaturmessung",
+      "Energie ist immer erhalten (das ist der 1. Hauptsatz)",
+      "Wärme fließt spontan von warm nach kalt (Teil des 2. Hauptsatzes)"
+    ],
+    "correct": 1,
+    "explanation": "0. Hauptsatz: Formuliert den Begriff der Temperatur als transitive Eigenschaft. Basis für alle Thermometer: Das Thermometer ist im Gleichgewicht mit dem Messobjekt → zeigt dessen Temperatur.",
+    "topic": "Hauptsätze"
+  },
+  {
+    "question": "Was ist ein schwarzer Körper (Schwarzkörperstrahler)?",
+    "options": [
+      "Ein Körper, der nur schwarze Strahlung emittiert",
+      "Ein idealer Körper, der jede einfallende Strahlung vollständig absorbiert (Absorptionsgrad α = 1) und gleichzeitig maximal Wärmestrahlung bei seiner Temperatur aussendet",
+      "Ein Körper am absoluten Nullpunkt",
+      "Ein Körper ohne Wärmekapazität"
+    ],
+    "correct": 1,
+    "explanation": "Schwarzer Körper: perfekter Absorber und Emitter. Reale Körper haben α < 1 (Emissionsgrad ε ≤ 1). Wichtig für Astronomie, Klimaphysik und Infrarot-Messtechnik.",
+    "topic": "Wärmestrahlung"
+  },
+  {
+    "question": "Was ist ein Perpetuum Mobile zweiter Art und warum ist es unmöglich?",
+    "options": [
+      "Eine Maschine ohne Energiezufuhr (1. Art) – unmöglich wegen Energieerhaltung",
+      "Eine Maschine, die Wärme eines einzigen Reservoirs vollständig in Arbeit umwandelt – unmöglich laut 2. Hauptsatz, da immer Wärme an ein kälteres Reservoir abgegeben werden muss",
+      "Eine Maschine mit mehr als 100 % Wirkungsgrad",
+      "Eine Maschine, die Reibung erzeugt"
+    ],
+    "correct": 1,
+    "explanation": "Perpetuum Mobile 2. Art: 2. Hauptsatz verbietet es. Jede Wärmekraftmaschine braucht zwei Reservoirs (T_warm und T_kalt). η < η_Carnot < 100 % ist unüberwindlich.",
+    "topic": "Hauptsätze"
+  },
+  {
+    "question": "Was ist die molare Wärmekapazität eines einatomigen idealen Gases bei konstantem Volumen (C_V)?",
+    "options": [
+      "C_V = R",
+      "C_V = (3/2) · R",
+      "C_V = (5/2) · R (zweiatomiges Gas bei konstantem Volumen)",
+      "C_V = 3 R"
+    ],
+    "correct": 1,
+    "explanation": "Einatomiges Gas (z.B. Edelgase): 3 Freiheitsgrade (Translation). C_V = (3/2)R ≈ 12,5 J/(mol·K). Zweiatomiges Gas: 5 Freiheitsgrade → C_V = (5/2)R. Basis: Äquipartitionstheorem.",
+    "topic": "Kinetische Gastheorie"
+  },
+  {
+    "question": "Was beschreibt die Wärmedehnungs-Formel für das Volumen (Volumenausdehnung)?",
+    "options": [
+      "ΔV = V₀ · α · ΔT (α = linearer Ausdehnungskoeffizient)",
+      "ΔV = V₀ · γ · ΔT, wobei γ ≈ 3α der Volumenausdehnungskoeffizient ist",
+      "ΔV = V₀ · α² · ΔT",
+      "ΔV = V₀ · (γ + ΔT)"
+    ],
+    "correct": 1,
+    "explanation": "Volumenausdehnung: ΔV = V₀ · γ · ΔT, γ ≈ 3α (für isotrope Stoffe). Wichtig z.B. bei Flüssigkeiten in Thermometern oder Ausdehnungsgefäßen in Heizsystemen.",
+    "topic": "Wärmeausdehnung"
+  }
+]

@@ -1,6 +1,6 @@
 [
   {
-    "question": "Was ist die Hauptstadt von Deutschland?",
+    "question": "Hauptstadt Deutschlands?",
     "options": [
       "Hamburg",
       "München",
@@ -8,8 +8,20 @@
       "Frankfurt"
     ],
     "correct": 2,
-    "explanation": "Berlin ist die Hauptstadt und größte Stadt Deutschlands (ca. 3,7 Mio. Einwohner). Berlin ist Bundesland und Stadt zugleich (Stadtstaat).",
+    "explanation": "Berlin ist die Hauptstadt Deutschlands.",
     "topic": "Deutschland"
+  },
+  {
+    "question": "Welcher Fluss fließt durch Köln?",
+    "options": [
+      "Elbe",
+      "Donau",
+      "Rhein",
+      "Main"
+    ],
+    "correct": 2,
+    "explanation": "Der Rhein fließt durch Köln.",
+    "topic": "Flüsse"
   },
   {
     "question": "Wie viele Bundesländer hat Deutschland?",
@@ -20,463 +32,451 @@
       "18"
     ],
     "correct": 2,
-    "explanation": "Deutschland hat 16 Bundesländer. Drei Stadtstaaten: Berlin, Hamburg, Bremen. 13 Flächenländer, darunter Bayern (größtes) und Saarland (kleinstes Flächenland).",
-    "topic": "Deutschland"
-  },
-  {
-    "question": "Welcher Fluss fließt durch Köln?",
-    "options": [
-      "Elbe",
-      "Rhein",
-      "Main",
-      "Donau"
-    ],
-    "correct": 1,
-    "explanation": "Der Rhein fließt durch Köln (und auch durch Bonn, Düsseldorf, Basel). Er ist der längste Fluss Deutschlands und wichtigste Wasserstraße.",
-    "topic": "Flüsse"
-  },
-  {
-    "question": "Was ist der höchste Berg Deutschlands?",
-    "options": [
-      "Feldberg",
-      "Brocken",
-      "Zugspitze",
-      "Watzmann"
-    ],
-    "correct": 2,
-    "explanation": "Die Zugspitze (2 962 m) ist der höchste Berg Deutschlands, liegt in Bayern an der Grenze zu Österreich (Alpen).",
-    "topic": "Berge"
-  },
-  {
-    "question": "Welches Bundesland hat München als Hauptstadt?",
-    "options": [
-      "Baden-Württemberg",
-      "Sachsen",
-      "Bayern",
-      "Hessen"
-    ],
-    "correct": 2,
-    "explanation": "Bayern ist das flächenmäßig größte Bundesland Deutschlands, Hauptstadt ist München (ca. 1,5 Mio. Einwohner). Bekannt für Oktoberfest, Alpen, Seen.",
+    "explanation": "Deutschland hat 16 Bundesländer.",
     "topic": "Bundesländer"
   },
   {
-    "question": "Welches Meer liegt im Norden Deutschlands?",
+    "question": "Größtes Bundesland nach Fläche?",
     "options": [
-      "Mittelmeer",
-      "Schwarzes Meer",
-      "Nord- und Ostsee",
-      "Kaspisches Meer"
+      "Bayern",
+      "NRW",
+      "Baden-Württemberg",
+      "Niedersachsen"
     ],
-    "correct": 2,
-    "explanation": "Im Norden Deutschlands liegen Nordsee (Westen) und Ostsee (Osten). Dazwischen liegt Schleswig-Holstein mit vielen Inseln (Sylt, Föhr, Helgoland).",
-    "topic": "Meere und Küsten"
+    "correct": 0,
+    "explanation": "Bayern (70.550 km²) ist das größte Bundesland.",
+    "topic": "Bundesländer"
   },
   {
-    "question": "Was ist der Schwarzwald?",
+    "question": "Wo liegt Hamburg?",
     "options": [
-      "Ein Meer",
-      "Ein Gebirge mit dichten Wäldern in Baden-Württemberg",
-      "Ein Fluss",
-      "Eine Stadt"
+      "An der Ostsee",
+      "An der Nordsee",
+      "Am Rhein",
+      "Im Binnenland"
     ],
     "correct": 1,
-    "explanation": "Der Schwarzwald ist ein Mittelgebirge in Baden-Württemberg (Höchstpunkt: Feldberg 1 493 m). Bekannt für dichte Wälder, Kuckucksuhren, Schwarzwälder Kirschtorte.",
-    "topic": "Landschaften"
+    "explanation": "Hamburg liegt an der Elbe nahe der Nordsee.",
+    "topic": "Meere"
   },
   {
-    "question": "Welche Stadt ist das größte Bundesland Deutschlands (nach Einwohnern)?",
+    "question": "Höchster Berg Deutschlands?",
+    "options": [
+      "Brocken",
+      "Zugspitze",
+      "Feldberg",
+      "Watzmann"
+    ],
+    "correct": 1,
+    "explanation": "Die Zugspitze (2962 m) ist Deutschlands höchster Berg.",
+    "topic": "Berge"
+  },
+  {
+    "question": "Welcher Fluss mündet in die Nordsee?",
+    "options": [
+      "Isar",
+      "Spree",
+      "Elbe",
+      "Neckar"
+    ],
+    "correct": 2,
+    "explanation": "Die Elbe mündet bei Cuxhaven in die Nordsee.",
+    "topic": "Flüsse"
+  },
+  {
+    "question": "Landeshauptstadt Bayerns?",
+    "options": [
+      "Nürnberg",
+      "Augsburg",
+      "München",
+      "Würzburg"
+    ],
+    "correct": 2,
+    "explanation": "München ist die Landeshauptstadt von Bayern.",
+    "topic": "Bundesländer"
+  },
+  {
+    "question": "Gebirge im Süden Deutschlands?",
+    "options": [
+      "Harz",
+      "Alpen",
+      "Eifel",
+      "Schwarzwald"
+    ],
+    "correct": 1,
+    "explanation": "Die Alpen bilden den südlichen Abschluss Deutschlands.",
+    "topic": "Gebirge"
+  },
+  {
+    "question": "Was ist ein Stadtstaat?",
+    "options": [
+      "München",
+      "Köln",
+      "Hamburg",
+      "Düsseldorf"
+    ],
+    "correct": 2,
+    "explanation": "Hamburg, Bremen und Berlin sind Stadtstaaten.",
+    "topic": "Bundesländer"
+  },
+  {
+    "question": "Rostock liegt an der:",
+    "options": [
+      "Nordsee",
+      "Mittelmeer",
+      "Ostsee",
+      "Elbe"
+    ],
+    "correct": 2,
+    "explanation": "Rostock liegt an der Ostsee.",
+    "topic": "Meere"
+  },
+  {
+    "question": "Bevölkerungsreichste Stadt Deutschlands?",
     "options": [
       "Hamburg",
       "München",
-      "Berlin",
-      "Köln"
+      "Frankfurt",
+      "Berlin"
     ],
-    "correct": 2,
-    "explanation": "Berlin ist das einwohnerstärkste Bundesland (ca. 3,7 Mio.). Als Stadtstaaten zählen Berlin, Hamburg und Bremen sowohl als Stadt als auch als Bundesland.",
-    "topic": "Deutschland"
+    "correct": 3,
+    "explanation": "Berlin hat ca. 3,7 Mio. Einwohner.",
+    "topic": "Städte"
   },
   {
-    "question": "Welcher Fluss entspringt im Schwarzwald und mündet ins Schwarze Meer?",
+    "question": "Welcher Fluss fließt durch Berlin?",
+    "options": [
+      "Rhein",
+      "Elbe",
+      "Spree",
+      "Donau"
+    ],
+    "correct": 2,
+    "explanation": "Die Spree fließt durch Berlin.",
+    "topic": "Flüsse"
+  },
+  {
+    "question": "Wo liegt der Schwarzwald?",
+    "options": [
+      "Bayern",
+      "Hessen",
+      "Baden-Württemberg",
+      "Rheinland-Pfalz"
+    ],
+    "correct": 2,
+    "explanation": "Der Schwarzwald liegt in Baden-Württemberg.",
+    "topic": "Gebirge"
+  },
+  {
+    "question": "Längster Fluss Deutschlands?",
     "options": [
       "Rhein",
       "Elbe",
       "Donau",
       "Weser"
     ],
-    "correct": 2,
-    "explanation": "Die Donau entspringt bei Donaueschingen im Schwarzwald (Baden-Württemberg) und fließt durch 10 Länder, bevor sie ins Schwarze Meer mündet (2 860 km lang).",
+    "correct": 0,
+    "explanation": "Der Rhein ist Deutschlands längster Fluss.",
     "topic": "Flüsse"
   },
   {
-    "question": "Was sind Koordinaten auf einer Karte?",
+    "question": "Nördlichstes Bundesland (grenzt an Dänemark)?",
     "options": [
-      "Die Legende der Karte",
-      "Angaben aus Längen- und Breitengrad, die einen genauen Ort auf der Erde beschreiben",
-      "Die Maßstabsangabe",
-      "Die Farben der Karte"
+      "Niedersachsen",
+      "Schleswig-Holstein",
+      "Mecklenburg-Vorpommern",
+      "Hamburg"
     ],
     "correct": 1,
-    "explanation": "Koordinaten: Breitengrad (Nord/Süd, 0°–90°) + Längengrad (Ost/West, 0°–180°). Berlin liegt bei ca. 52°N / 13°O.",
-    "topic": "Karten und Orientierung"
-  },
-  {
-    "question": "Was ist der Maßstab einer Karte?",
-    "options": [
-      "Die Farbe der Karte",
-      "Das Verhältnis zwischen der Entfernung auf der Karte und der tatsächlichen Entfernung: z.B. 1:100 000 (1 cm = 1 km)",
-      "Die Legende",
-      "Der Nordpfeil"
-    ],
-    "correct": 1,
-    "explanation": "Maßstab 1:100 000: 1 cm auf der Karte = 100 000 cm = 1 km in der Realität. Stadtpläne haben großen Maßstab (z.B. 1:10 000), Länderkarten kleinen (z.B. 1:1 000 000).",
-    "topic": "Karten"
-  },
-  {
-    "question": "Was ist die Legende einer Karte?",
-    "options": [
-      "Der Name der Karte",
-      "Eine Erklärung der verwendeten Symbole und Farben auf der Karte",
-      "Die Koordinaten",
-      "Der Maßstab"
-    ],
-    "correct": 1,
-    "explanation": "Legende (Kartenzeichen): erklärt Symbole (Straßen, Wälder, Seen, Gebäude, Grenzen). Ohne Legende kann man eine Karte nicht lesen.",
-    "topic": "Karten"
-  },
-  {
-    "question": "Was ist der Breitengrad (Äquator)?",
-    "options": [
-      "Eine senkrechte Linie auf dem Globus",
-      "Der Äquator ist der Breitenkreis 0°, der die Erde in Nord- und Südhalbkugel teilt; Breitengrade verlaufen waagrecht",
-      "Die Nullmeridian-Linie",
-      "Der Nordpol"
-    ],
-    "correct": 1,
-    "explanation": "Breitengrad: 0° = Äquator, 90°N = Nordpol, 90°S = Südpol. Deutschland liegt zwischen ca. 47°N und 55°N (nördliche Halbkugel, gemäßigte Zone).",
-    "topic": "Globus und Koordinaten"
-  },
-  {
-    "question": "Welche Himmelsrichtungen gibt es?",
-    "options": [
-      "Links, rechts, vorne, hinten",
-      "Nord, Süd, Ost, West (und Zwischenrichtungen: NO, NW, SO, SW)",
-      "Oben, unten, links, rechts",
-      "Nur Nord und Süd"
-    ],
-    "correct": 1,
-    "explanation": "Haupthimmelsrichtungen: N, S, O, W. Merkspruch: 'Nie Ohne Seife Waschen' (N-O-S-W im Uhrzeigersinn). Zwischenrichtungen: Nordost (NO), Südwest (SW) usw.",
-    "topic": "Orientierung"
-  },
-  {
-    "question": "Was ist ein Flusseinzugsgebiet?",
-    "options": [
-      "Das Gebiet um die Quelle",
-      "Das gesamte Gebiet, aus dem ein Fluss und seine Zuflüsse ihr Wasser sammeln (begrenzt durch Wasserscheiden)",
-      "Ein Hafengebiet",
-      "Ein Überschwemmungsgebiet"
-    ],
-    "correct": 1,
-    "explanation": "Einzugsgebiet: alles Wasser, das in Richtung eines bestimmten Flusses fließt. Das Einzugsgebiet des Rheins ist sehr groß (Deutschland, Schweiz, Frankreich, Niederlande).",
-    "topic": "Flüsse"
-  },
-  {
-    "question": "Was ist die Metropolregion Ruhr?",
-    "options": [
-      "Eine einzige Großstadt",
-      "Ein dicht besiedelter Ballungsraum im Westen von NRW mit vielen Städten (Dortmund, Essen, Bochum, Duisburg) – ehemaliges Industriezentrum",
-      "Ein Gebirge",
-      "Ein Nationalpark"
-    ],
-    "correct": 1,
-    "explanation": "Ruhrgebiet: früher Zentrum von Kohle- und Stahlproduktion. Heute Strukturwandel zu Dienstleistungen, Kultur (Zeche Zollverein). Größter Ballungsraum Deutschlands.",
-    "topic": "Regionen"
-  },
-  {
-    "question": "Welches Bundesland ist das kleinste?",
-    "options": [
-      "Saarland",
-      "Hamburg",
-      "Bremen",
-      "Berlin"
-    ],
-    "correct": 2,
-    "explanation": "Bremen ist das kleinste Bundesland (404 km²). Es besteht aus zwei Städten: Bremen und Bremerhaven. Stadtstaaten sind flächenmäßig die kleinsten Bundesländer.",
+    "explanation": "Schleswig-Holstein grenzt an Dänemark.",
     "topic": "Bundesländer"
   },
   {
-    "question": "Was ist der Unterschied zwischen Mittelmeer- und Nordseeklima?",
+    "question": "Was ist die Donau?",
     "options": [
-      "Kein Unterschied",
-      "Mittelmeerklima: heiße trockene Sommer, milde feuchte Winter. Nordsee: kühle Sommer, milde Winter (ozeanisch), viel Wind und Regen",
-      "Mittelmeerklima ist kälter",
-      "Nordseeküste hat keine Niederschläge"
-    ],
-    "correct": 1,
-    "explanation": "Deutschland hat überwiegend gemäßigtes ozeanisches Klima (von Westen geprägt). Im Osten kontinentaler (kältere Winter). Im Süden alpines Klima.",
-    "topic": "Klima"
-  },
-  {
-    "question": "Was ist ein Nationalpark?",
-    "options": [
-      "Ein Freizeitpark",
-      "Ein großes Schutzgebiet, in dem Natur möglichst ungestört gelassen wird und Eingriffe des Menschen stark eingeschränkt sind",
-      "Ein Wald ohne besonderen Schutz",
-      "Ein staatlicher Park in Städten"
-    ],
-    "correct": 1,
-    "explanation": "Deutschland hat 16 Nationalparks, z.B. Berchtesgaden (Alpen), Wattenmeer (Nordsee/Ostsee), Eifel. Ziel: natürliche Prozesse ungestört ablaufen lassen.",
-    "topic": "Naturschutz"
-  },
-  {
-    "question": "Welcher Fluss trennt Deutschland von Polen?",
-    "options": [
-      "Elbe",
-      "Rhein",
-      "Oder",
-      "Donau"
+      "Ein Gebirge",
+      "Ein See",
+      "Ein Fluss",
+      "Eine Region"
     ],
     "correct": 2,
-    "explanation": "Oder (mit Neiße) bildet die Grenze zwischen Deutschland und Polen. Die Oder-Neiße-Linie wurde nach dem 2. Weltkrieg als Ostgrenze Deutschlands festgelegt.",
-    "topic": "Flüsse und Grenzen"
-  },
-  {
-    "question": "Was ist das Wattenmeer?",
-    "options": [
-      "Ein Fluss im Norden",
-      "Das flache Küstenmeer zwischen dem Festland und den Nordseeinseln, das bei Ebbe trocken fällt – UNESCO-Weltnaturerbe",
-      "Ein See in Süddeutschland",
-      "Ein Gebirge an der Küste"
-    ],
-    "correct": 1,
-    "explanation": "Wattenmeer: einzigartiges Ökosystem, Heimat für Millionen Zugvögel, Seehunde, Austern. Bei Ebbe zu Fuß begehbar (Wattwandern). Nationalpark und UNESCO-Welterbe.",
-    "topic": "Küsten"
-  },
-  {
-    "question": "Wo liegt der Bodensee?",
-    "options": [
-      "Im Norden an der Ostsee",
-      "Im Süden Deutschlands an der Grenze zu Österreich und der Schweiz",
-      "In der Mitte Deutschlands",
-      "In Bayern an der Alpengrenze"
-    ],
-    "correct": 1,
-    "explanation": "Bodensee: größter See Deutschlands (Dreiländereck: D, A, CH). Liegt in Baden-Württemberg/Bayern. Bekannt für Apfelanbau, Tourismus, milde Klimazone.",
-    "topic": "Seen"
-  },
-  {
-    "question": "Was ist eine Landkarte?",
-    "options": [
-      "Ein Foto der Erde",
-      "Eine maßstabsgetreue, vereinfachte Darstellung der Erdoberfläche oder eines Teils davon",
-      "Ein Satellitenfilm",
-      "Ein Globus"
-    ],
-    "correct": 1,
-    "explanation": "Landkarte: zweidimensionale Darstellung. Unterschied zum Globus: Karte ist flach (Verzerrungen), Globus ist rund (maßstabsgetreu). Topographische Karte zeigt Gelände.",
-    "topic": "Karten"
-  },
-  {
-    "question": "Welche Stadt liegt an der Elbe?",
-    "options": [
-      "Köln",
-      "Hamburg",
-      "Düsseldorf",
-      "Hannover"
-    ],
-    "correct": 1,
-    "explanation": "Hamburg liegt an der Elbe und ist Deutschlands zweitgrößte Stadt und wichtigster Seehafen. Weitere Städte an der Elbe: Dresden, Magdeburg.",
+    "explanation": "Die Donau ist Europas zweitlängster Fluss.",
     "topic": "Flüsse"
   },
   {
-    "question": "Was ist ein Gebirge?",
+    "question": "Landeshauptstadt von NRW?",
     "options": [
-      "Eine flache Ebene",
-      "Eine größere Gruppe von Bergen mit Tälern, Gipfeln und Pässen; in Deutschland: Alpen, Schwarzwald, Harz, Eifel, Thüringer Wald",
-      "Ein einzelner Berg",
-      "Eine Hügelkette unter 100 m"
-    ],
-    "correct": 1,
-    "explanation": "Deutsche Mittelgebirge: Harz (Brocken 1142m), Schwarzwald (Feldberg 1493m), Eifel, Thüringer Wald, Bayerischer Wald. Hochgebirge: Alpen (Zugspitze 2962m).",
-    "topic": "Landschaften"
-  },
-  {
-    "question": "Was ist eine Klimazone?",
-    "options": [
-      "Ein einzelner Ort mit bestimmtem Wetter",
-      "Ein Gebiet der Erde mit ähnlichem Langzeit-Klima (Temperatur, Niederschlag): tropisch, subtropisch, gemäßigt, polar",
-      "Eine Wetterstation",
-      "Ein Hochdruckgebiet"
-    ],
-    "correct": 1,
-    "explanation": "Klimazonen: tropisch (0°–23,5°), subtropisch, gemäßigt (23,5°–66,5°, hier liegt Deutschland), polar (66,5°–90°). Bestimmt von Sonneneinfall und Lage.",
-    "topic": "Klima"
-  },
-  {
-    "question": "Was ist der Unterschied zwischen Wetter und Klima?",
-    "options": [
-      "Wetter ist langfristig, Klima kurzfristig",
-      "Wetter: kurzfristiger Zustand der Atmosphäre (heute regnerisch). Klima: langfristiger Durchschnitt des Wetters über mindestens 30 Jahre",
-      "Kein Unterschied",
-      "Klima ist nur in tropischen Gebieten"
-    ],
-    "correct": 1,
-    "explanation": "Wetter: was heute/diese Woche passiert. Klima: Durchschnitt über Jahrzehnte. Klimaänderung = Verschiebung des langfristigen Durchschnitts.",
-    "topic": "Wetter und Klima"
-  },
-  {
-    "question": "Was ist eine Quelle?",
-    "options": [
-      "Das Ende eines Flusses",
-      "Der Ort, an dem ein Fluss oder Bach aus dem Boden tritt und beginnt zu fließen",
-      "Ein See",
-      "Ein Wasserfall"
-    ],
-    "correct": 1,
-    "explanation": "Quelle: Anfang eines Gewässers. Fließweg: Quelle → Oberlauf → Mittellauf → Unterlauf → Mündung (ins Meer oder anderen Fluss).",
-    "topic": "Gewässer"
-  },
-  {
-    "question": "Was ist eine Mündung?",
-    "options": [
-      "Der Anfang eines Flusses",
-      "Die Stelle, an der ein Fluss in ein Meer, einen See oder einen anderen Fluss fließt",
-      "Eine Flussbiegung",
-      "Eine Engstelle im Fluss"
-    ],
-    "correct": 1,
-    "explanation": "Mündung: Ende eines Flusses. Der Rhein mündet in die Nordsee (Niederlande/Flussdelta). Die Elbe mündet bei Cuxhaven in die Nordsee.",
-    "topic": "Gewässer"
-  },
-  {
-    "question": "Welches Land grenzt im Süden an Deutschland?",
-    "options": [
-      "Frankreich",
-      "Polen",
-      "Österreich und die Schweiz",
-      "Tschechien"
+      "Köln",
+      "Essen",
+      "Düsseldorf",
+      "Dortmund"
     ],
     "correct": 2,
-    "explanation": "Im Süden grenzt Deutschland an Österreich und die Schweiz (Alpengrenze). Deutschland hat 9 Nachbarländer: F, L, B, NL, DK, PL, CZ, A, CH.",
-    "topic": "Deutschland"
+    "explanation": "Düsseldorf ist Landeshauptstadt von Nordrhein-Westfalen.",
+    "topic": "Bundesländer"
   },
   {
-    "question": "Was ist eine topographische Karte?",
+    "question": "Was ist der Harz?",
     "options": [
-      "Eine Karte der Bevölkerung",
-      "Eine Karte, die das Gelände (Höhen, Täler, Berge) durch Höhenlinien und Farben darstellt",
-      "Eine Karte des Verkehrsnetzes",
-      "Eine politische Karte"
+      "Ein Fluss",
+      "Mittelgebirge in Norddeutschland",
+      "Eine Stadt",
+      "Eine Küste"
     ],
     "correct": 1,
-    "explanation": "Topographische Karte: Höhenlinien verbinden Punkte gleicher Höhe. Enge Höhenlinien = steiles Gelände. Weite Höhenlinien = flaches Gelände.",
-    "topic": "Karten"
+    "explanation": "Der Harz ist ein Mittelgebirge (Sachsen-Anhalt, Niedersachsen).",
+    "topic": "Gebirge"
   },
   {
-    "question": "Welche Stadt ist das Zentrum der deutschen Automobilindustrie?",
+    "question": "Nachbarländer im Norden Deutschlands?",
     "options": [
-      "Hamburg",
-      "München",
-      "Stuttgart",
-      "Frankfurt"
-    ],
-    "correct": 2,
-    "explanation": "Stuttgart ist das Zentrum der deutschen Automobilindustrie. Hier haben Mercedes-Benz und Porsche ihren Sitz. Auch wichtig: Wolfsburg (VW), München (BMW), Ingolstadt (Audi).",
-    "topic": "Wirtschaft"
-  },
-  {
-    "question": "Was ist ein Stadtstaat?",
-    "options": [
-      "Eine Stadt mit eigenem König",
-      "Ein Bundesland, das nur aus einer Stadt (und kleinem Umland) besteht: Berlin, Hamburg, Bremen",
-      "Eine mittelalterliche Stadtmauer",
-      "Eine besonders große Stadt"
+      "Frankreich und Polen",
+      "Dänemark und Niederlande",
+      "Österreich und Schweiz",
+      "Tschechien und Belgien"
     ],
     "correct": 1,
-    "explanation": "Stadtstaaten: Berlin, Hamburg, Bremen. Sie sind gleichzeitig Stadt und Bundesland. Gegenteil: Flächenland (z.B. Bayern, NRW) mit ländlichen und städtischen Gebieten.",
-    "topic": "Deutschland"
-  },
-  {
-    "question": "Was ist die Bevölkerungsdichte?",
-    "options": [
-      "Die Gesamtbevölkerung",
-      "Einwohnerzahl pro Quadratkilometer (E/km²) – Maß für die Besiedlung eines Gebiets",
-      "Die Bevölkerungsanzahl einer Stadt",
-      "Die Wachstumsrate der Bevölkerung"
-    ],
-    "correct": 1,
-    "explanation": "Bevölkerungsdichte: Deutschland ca. 234 E/km². Dicht besiedelt: Ruhrgebiet (~1000 E/km²). Dünn besiedelt: Mecklenburg-Vorpommern (~69 E/km²).",
-    "topic": "Bevölkerung"
-  },
-  {
-    "question": "Was ist der Schwarzwald für ein Gebirgstyp?",
-    "options": [
-      "Hochgebirge",
-      "Mittelgebirge – Höhen zwischen 500 und 1500 m, typisch abgerundete Gipfel, dichte Wälder",
-      "Tieflandgebiet",
-      "Vulkangebirge"
-    ],
-    "correct": 1,
-    "explanation": "Mittelgebirge: charakteristisch für Deutschland. Höhen 500–1500 m, bewaldete Hänge, Täler mit Siedlungen. Beispiele: Schwarzwald, Harz, Eifel, Rhön, Fichtelgebirge.",
-    "topic": "Landschaften"
-  },
-  {
-    "question": "Welcher Kanal verbindet Nordsee und Ostsee?",
-    "options": [
-      "Rhein-Main-Donau-Kanal",
-      "Nord-Ostsee-Kanal",
-      "Elbe-Weser-Kanal",
-      "Kaiser-Wilhelm-Kanal"
-    ],
-    "correct": 1,
-    "explanation": "Nord-Ostsee-Kanal (offiziell Kaiser-Wilhelm-Kanal, 1895 eröffnet): 98 km lang, Schleswig-Holstein. Meistbefahrener künstlicher Kanal der Welt – Abkürzung um Skagerrak.",
-    "topic": "Gewässer"
-  },
-  {
-    "question": "Was ist der Unterschied zwischen einem Fluss und einem Bach?",
-    "options": [
-      "Ein Bach ist ein See",
-      "Ein Bach ist kleiner als ein Fluss – es gibt keine feste Definition, aber Bäche sind schmaler, flacher und führen weniger Wasser",
-      "Flüsse fließen nur ins Meer",
-      "Bäche fließen bergauf"
-    ],
-    "correct": 1,
-    "explanation": "Faustregel: Bäche sind schmal und seicht (man kann drübersteigen). Flüsse größer. Ströme: sehr große Flüsse (Rhein, Donau). Reihenfolge: Rinnsal → Bach → Fluss → Strom.",
-    "topic": "Gewässer"
-  },
-  {
-    "question": "Was ist ein Delta?",
-    "options": [
-      "Ein einzelner Flusslauf",
-      "Eine fächerförmige Aufspaltung eines Flusses an der Mündung in viele Arme (z.B. Rhein-Delta in den Niederlanden, Nil-Delta in Ägypten)",
-      "Eine Quelle",
-      "Ein Wasserfall"
-    ],
-    "correct": 1,
-    "explanation": "Delta: entststeht, wenn der Fluss an der Mündung so langsam wird, dass er Sedimente ablagert und sich in viele Arme aufteilt. Dreieckige Form (wie griechischer Buchstabe Δ).",
-    "topic": "Gewässer"
-  },
-  {
-    "question": "Wo liegt der Harz?",
-    "options": [
-      "In Bayern",
-      "Im mitteldeutschen Raum (Niedersachsen/Sachsen-Anhalt/Thüringen) – höchster Punkt: Brocken (1 141 m)",
-      "In Baden-Württemberg",
-      "Im Ruhrgebiet"
-    ],
-    "correct": 1,
-    "explanation": "Harz: Mittelgebirge in Norddeutschland, zwischen Göttingen, Halberstadt und Nordhausen. Brocken: höchster Berg Norddeutschlands. DDR-Grenze verlief durch den Harz.",
-    "topic": "Landschaften"
+    "explanation": "Norden: Dänemark und Niederlande.",
+    "topic": "Nachbarländer"
   },
   {
     "question": "Was ist das Ruhrgebiet?",
     "options": [
-      "Ein Gebirge",
-      "Die größte Industrieregion Deutschlands im Bundesland Nordrhein-Westfalen – früher bekannt für Kohle- und Stahlindustrie, heute im Wandel zu Dienstleistung, Kultur und Technologie",
-      "Ein Nationalpark",
-      "Eine Inselgruppe"
+      "Küstenregion",
+      "Gebirge",
+      "Dicht besiedeltes Industriegebiet in NRW",
+      "Waldgebiet"
+    ],
+    "correct": 2,
+    "explanation": "Ruhrgebiet: Essen, Dortmund, Bochum.",
+    "topic": "Regionen"
+  },
+  {
+    "question": "Welcher See liegt in Bayern?",
+    "options": [
+      "Schweriner See",
+      "Chiemsee",
+      "Müritz",
+      "Bodensee"
     ],
     "correct": 1,
-    "explanation": "Ruhrgebiet: Städte Dortmund, Essen, Duisburg, Bochum. Ehemals Schwerindustrie (Zechen, Stahlwerke), jetzt Strukturwandel. Das Revier ist eine der am dichtesten besiedelten Regionen Europas.",
+    "explanation": "Der Chiemsee liegt in Bayern.",
+    "topic": "Seen"
+  },
+  {
+    "question": "Bodensee – welche Länder?",
+    "options": [
+      "D, A, CH",
+      "D, F, CH",
+      "D, A, I",
+      "D, PL, CZ"
+    ],
+    "correct": 0,
+    "explanation": "Der Bodensee liegt zwischen Deutschland, Österreich und der Schweiz.",
+    "topic": "Seen"
+  },
+  {
+    "question": "Flächenkleinste Bundesland?",
+    "options": [
+      "Saarland",
+      "Bremen",
+      "Berlin",
+      "Hamburg"
+    ],
+    "correct": 1,
+    "explanation": "Bremen ist das flächenkleinste Bundesland.",
+    "topic": "Bundesländer"
+  },
+  {
+    "question": "Was ist die Norddeutsche Tiefebene?",
+    "options": [
+      "Hohes Gebirge",
+      "Flaches weites Land im Norden",
+      "Vulkangebiet",
+      "Enge Täler"
+    ],
+    "correct": 1,
+    "explanation": "Die Norddeutsche Tiefebene ist durch flaches Land geprägt.",
     "topic": "Landschaften"
+  },
+  {
+    "question": "Durch Frankfurt fließt:",
+    "options": [
+      "Rhein",
+      "Lahn",
+      "Main",
+      "Neckar"
+    ],
+    "correct": 2,
+    "explanation": "Frankfurt am Main liegt am Fluss Main.",
+    "topic": "Flüsse"
+  },
+  {
+    "question": "Brocken ist:",
+    "options": [
+      "Ein Fluss im Harz",
+      "Höchster Berg im Harz (1141 m)",
+      "Eine Stadt in Sachsen",
+      "Ein See"
+    ],
+    "correct": 1,
+    "explanation": "Der Brocken ist der höchste Berg im Harz.",
+    "topic": "Gebirge"
+  },
+  {
+    "question": "Bundesland das an Polen grenzt:",
+    "options": [
+      "Sachsen-Anhalt",
+      "Brandenburg",
+      "Thüringen",
+      "Bayern"
+    ],
+    "correct": 1,
+    "explanation": "Brandenburg grenzt im Osten an Polen.",
+    "topic": "Bundesländer"
+  },
+  {
+    "question": "Landeshauptstadt von Sachsen?",
+    "options": [
+      "Leipzig",
+      "Chemnitz",
+      "Dresden",
+      "Zwickau"
+    ],
+    "correct": 2,
+    "explanation": "Dresden ist die Landeshauptstadt von Sachsen.",
+    "topic": "Städte"
+  },
+  {
+    "question": "Fluss an der Grenze zu Polen?",
+    "options": [
+      "Elbe",
+      "Oder",
+      "Rhein",
+      "Weser"
+    ],
+    "correct": 1,
+    "explanation": "Die Oder bildet mit der Neiße die Grenze zu Polen.",
+    "topic": "Flüsse"
+  },
+  {
+    "question": "Bevölkerungsreichstes Bundesland?",
+    "options": [
+      "Bayern",
+      "Baden-Württemberg",
+      "Nordrhein-Westfalen",
+      "Niedersachsen"
+    ],
+    "correct": 2,
+    "explanation": "NRW hat ca. 18 Mio. Einwohner.",
+    "topic": "Bundesländer"
+  },
+  {
+    "question": "Was ist das Wattenmeer?",
+    "options": [
+      "Gebirgspark",
+      "Küstenschutzgebiet an der Nordsee",
+      "Waldgebiet",
+      "Flussdelta"
+    ],
+    "correct": 1,
+    "explanation": "Das Wattenmeer ist UNESCO-Weltnaturerbe an der Nordsee.",
+    "topic": "Naturräume"
+  },
+  {
+    "question": "Hamburg liegt am Fluss:",
+    "options": [
+      "Rhein",
+      "Weser",
+      "Elbe",
+      "Spree"
+    ],
+    "correct": 2,
+    "explanation": "Hamburg liegt an der Elbe.",
+    "topic": "Flüsse"
+  },
+  {
+    "question": "Landeshauptstadt von Thüringen?",
+    "options": [
+      "Gera",
+      "Jena",
+      "Weimar",
+      "Erfurt"
+    ],
+    "correct": 3,
+    "explanation": "Erfurt ist Landeshauptstadt von Thüringen.",
+    "topic": "Städte"
+  },
+  {
+    "question": "Was ist die Lüneburger Heide?",
+    "options": [
+      "Mittelgebirge",
+      "Heidelandschaft in Niedersachsen",
+      "Flussdelta",
+      "Küste"
+    ],
+    "correct": 1,
+    "explanation": "Die Lüneburger Heide ist eine weite Heidelandschaft.",
+    "topic": "Landschaften"
+  },
+  {
+    "question": "Freistaat unter den Bundesländern:",
+    "options": [
+      "Hessen und NRW",
+      "Bayern und Sachsen",
+      "NRW und Bayern",
+      "Sachsen und Niedersachsen"
+    ],
+    "correct": 1,
+    "explanation": "Bayern und Sachsen tragen den Titel Freistaat.",
+    "topic": "Bundesländer"
+  },
+  {
+    "question": "Landeshauptstadt von Rheinland-Pfalz?",
+    "options": [
+      "Koblenz",
+      "Trier",
+      "Kaiserslautern",
+      "Mainz"
+    ],
+    "correct": 3,
+    "explanation": "Mainz ist Landeshauptstadt von Rheinland-Pfalz.",
+    "topic": "Bundesländer"
+  },
+  {
+    "question": "Was ist die Elbphilharmonie?",
+    "options": [
+      "Schloss in Dresden",
+      "Konzerthaus in Hamburg",
+      "Rathaus in Berlin",
+      "Museum in München"
+    ],
+    "correct": 1,
+    "explanation": "Die Elbphilharmonie ist ein Konzerthaus in Hamburg.",
+    "topic": "Sehenswürdigkeiten"
+  },
+  {
+    "question": "Wie heißt das Brandenburger Tor?",
+    "options": [
+      "Ein Museum in München",
+      "Ein historisches Stadttor in Berlin",
+      "Eine Kirche in Hamburg",
+      "Ein Schloss in Potsdam"
+    ],
+    "correct": 1,
+    "explanation": "Das Brandenburger Tor ist Berlins bekanntestes Wahrzeichen.",
+    "topic": "Sehenswürdigkeiten"
+  },
+  {
+    "question": "Bundesland mit Kiel als Landeshauptstadt:",
+    "options": [
+      "Niedersachsen",
+      "Mecklenburg-Vorpommern",
+      "Schleswig-Holstein",
+      "Hamburg"
+    ],
+    "correct": 2,
+    "explanation": "Kiel ist die Landeshauptstadt von Schleswig-Holstein.",
+    "topic": "Bundesländer"
   }
 ]

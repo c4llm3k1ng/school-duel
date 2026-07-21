@@ -1,42 +1,482 @@
 [
-  {"question":"Was ist ein Diagramm?","options":["Ein Bild","Eine grafische Darstellung von Daten und Zahlen – macht Informationen übersichtlich und leicht verständlich; Arten: Säulendiagramm, Kreisdiagramm, Liniendiagramm, Balkendiagramm","Ein Text","Eine Tabelle"],"correct":1,"explanation":"Diagramme: visualisieren Zahlen. Wann welches? Säule: Vergleiche. Linie: Zeitverlauf (Temperatur). Kreis: Anteile (Prozente). Balken: wie Säule, aber waagerecht. Wichtig: Achsenbeschriftung, Titel, Legende!","topic":"Diagramme"},
-  {"question":"Was ist ein Säulendiagramm?","options":["Ein Kreisdiagramm","Ein Diagramm mit senkrechten Rechtecken (Säulen), deren Höhe die Häufigkeit oder den Wert darstellt – gut für Vergleiche zwischen Kategorien","Ein Liniendiagramm","Eine Tabelle"],"correct":1,"explanation":"Säulendiagramm: X-Achse (waagerecht) = Kategorien (Monate, Klassen). Y-Achse (senkrecht) = Werte (Anzahl, Punkte). Säulenhöhe = Wert. Balkendiagramm: dasselbe, aber um 90° gedreht.","topic":"Diagramme"},
-  {"question":"Was ist ein Kreisdiagramm?","options":["Ein Tortendiagramm","Ein Diagramm in Form eines Kreises (Torte), das Anteile (in Prozent oder Brüchen) zeigt – alle Sektoren zusammen ergeben 100%; gut für 'Wie viel Prozent...?'-Fragen","Ein Balkendiagramm","Ein Punktediagramm"],"correct":1,"explanation":"Kreisdiagramm: Gesamtkreis = 100%. Sektorgröße proportional zum Anteil. 50% = Halbkreis (180°). 25% = Viertelkreis (90°). Vorteil: Anteile auf einen Blick. Nachteil: viele kleine Anteile schwer lesbar.","topic":"Diagramme"},
-  {"question":"Was ist ein Liniendiagramm?","options":["Eine Kurve ohne Bedeutung","Ein Diagramm, bei dem Datenpunkte durch Linien verbunden werden – besonders geeignet für Verläufe über die Zeit (z.B. Temperaturkurve im Jahresverlauf)","Ein Säulendiagramm","Ein Kreisdiagramm"],"correct":1,"explanation":"Liniendiagramm: X-Achse = Zeit (Monate, Jahre). Y-Achse = Wert. Ansteigende Linie: Wert nimmt zu. Absinkende Linie: Wert nimmt ab. Mehrere Linien: mehrere Kategorien vergleichen.","topic":"Diagramme"},
-  {"question":"Was ist eine Häufigkeitstabelle?","options":["Eine Einkaufsliste","Eine Tabelle, in der gezählt wird, wie oft jeder Wert in einer Datenmenge vorkommt – erste Spalte: Werte; zweite Spalte: Häufigkeit (Anzahl)","Ein Diagramm","Eine Mathematikaufgabe"],"correct":1,"explanation":"Häufigkeitstabelle: Strichliste zählen, dann eintragen. Absolute Häufigkeit: Anzahl. Relative Häufigkeit: Anteil (z.B. 3 von 20 = 0,15 = 15%). Kumulative Häufigkeit: Summe bis zu einem Wert.","topic":"Statistik"},
-  {"question":"Was ist der Mittelwert (Durchschnitt)?","options":["Der häufigste Wert","Die Summe aller Werte dividiert durch die Anzahl der Werte: (3 + 5 + 7 + 1 + 4) ÷ 5 = 20 ÷ 5 = 4","Der mittlere Wert in einer Reihe","Der größte Wert"],"correct":1,"explanation":"Mittelwert (arithmetisches Mittel): alle Werte addieren, durch Anzahl dividieren. Beispiel: Noten 2, 3, 4, 1, 5 → Summe 15 ÷ 5 = 3,0. Nachteil: Ausreißer verzerren den Mittelwert stark.","topic":"Statistik"},
-  {"question":"Was ist der Median?","options":["Der Mittelwert","Der mittlere Wert einer sortierten Datenreihe – bei gerader Anzahl: Mittelwert der beiden mittleren Werte. Beispiel: 1, 3, 5, 7, 9 → Median = 5","Der häufigste Wert","Der größte Wert"],"correct":1,"explanation":"Median: Daten sortieren → mittlerer Wert. 7 Werte → 4. Wert. 6 Werte → Mittelwert der 3. und 4. Robuster als Mittelwert bei Ausreißern. Beispiel Gehälter: Median oft sinnvoller als Mittel.","topic":"Statistik"},
-  {"question":"Was ist der Modus (Modalwert)?","options":["Der Mittelwert","Der Wert, der in einer Datenmenge am häufigsten vorkommt. Beispiel: 2, 3, 3, 4, 5, 3, 7 → Modus = 3 (kommt dreimal vor)","Der Median","Der größte Wert"],"correct":1,"explanation":"Modus (Modalwert): häufigster Wert. Datenmenge kann keinen, einen oder mehrere Modi haben. Beispiel: Lieblingsfarbe blau: 12 mal, rot: 8 mal → Modus = blau. Nützlich bei qualitativen Daten.","topic":"Statistik"},
-  {"question":"Was ist die Spannweite?","options":["Der Mittelwert","Der Unterschied zwischen dem größten und dem kleinsten Wert einer Datenmenge: Spannweite = Maximum − Minimum. Beispiel: 2, 5, 8, 12 → 12 − 2 = 10","Der Median","Die Häufigkeit"],"correct":1,"explanation":"Spannweite: Maß für die Streuung der Daten. Kleine Spannweite: Werte liegen nah beieinander. Große Spannweite: Werte sehr verteilt. Beispiel Temperaturen: Max. 35°C, Min. 2°C → Spannweite 33°C.","topic":"Statistik"},
-  {"question":"Wie liest man ein Säulendiagramm ab?","options":["Man schaut auf die Breite","Man liest die Höhe der Säule an der Y-Achse ab – dazu schaut man auf die Oberkante der Säule und verfolgt sie waagerecht bis zur Y-Achse","Man zählt die Säulen","Man schaut auf die Farbe"],"correct":1,"explanation":"Diagramm lesen: 1. Titel lesen. 2. Achsenbeschriftung lesen. 3. Skala prüfen (beginnt bei 0?). 4. Säulenhöhe = Wert ablesen. Wichtig: Skala kann irreführend sein wenn sie nicht bei 0 beginnt!","topic":"Diagramme"},
-  {"question":"Was ist eine Strichliste?","options":["Eine Tabelle","Eine einfache Methode zum Zählen: für jeden Wert macht man einen Strich (||||), der 5. Strich geht diagonal durch die 4 – macht das Abzählen in Fünfergruppen einfach","Ein Diagramm","Eine Formel"],"correct":1,"explanation":"Strichliste (Strichdiagramm): Zählhilfe. Einzelstriche: I, II, III, IV, IIII (5. diagonal). Leicht abzählen: Fünfergruppen × Anzahl + Rest. Ergebnis dann in Häufigkeitstabelle eintragen.","topic":"Statistik"},
-  {"question":"Was bedeutet 'Daten erheben'?","options":["Daten löschen","Daten sammeln durch Befragung, Beobachtung oder Experimente – Methoden: Umfrage (Fragebogen), Zählung, Messung, Experiment","Daten anzeigen","Daten auswerten"],"correct":1,"explanation":"Datenerhebung: Grundlage der Statistik. Stichprobe (Teilmenge) vs. Vollerhebung (alle). Fragen: Klar formulieren, nicht suggestiv. Zählung: Tiere, Fahrzeuge. Messung: Temperatur, Länge.","topic":"Statistik"},
-  {"question":"Ein Schüler misst die Körpergrößen seiner Klasse: 155, 162, 148, 155, 170 cm. Was ist der Mittelwert?","options":["155 cm","158 cm","165 cm","160 cm"],"correct":1,"explanation":"Mittelwert: (155 + 162 + 148 + 155 + 170) ÷ 5 = 790 ÷ 5 = 158 cm. Schritte: 1. Alle addieren. 2. Durch Anzahl dividieren. Hier: 5 Werte, Summe = 790, 790 ÷ 5 = 158.","topic":"Berechnung"},
-  {"question":"Was ist der Median von: 3, 7, 1, 9, 5?","options":["5","7","3","9"],"correct":0,"explanation":"Median: Zuerst sortieren: 1, 3, 5, 7, 9. Dann mittleren Wert finden. 5 Werte → 3. Wert = 5. Also Median = 5. Mittelwert wäre: (1+3+5+7+9)÷5 = 25÷5 = 5 (hier gleich, aber das ist selten).","topic":"Berechnung"},
-  {"question":"In einer Klasse mit 25 Schülern haben 10 einen Hund. Wie groß ist die relative Häufigkeit?","options":["10%","40%","50%","25%"],"correct":1,"explanation":"Relative Häufigkeit = Anzahl ÷ Gesamtzahl = 10 ÷ 25 = 0,4 = 40%. Merke: Relative Häufigkeit immer zwischen 0 und 1 (oder 0% und 100%). 0,4 = 40% = 2/5.","topic":"Berechnung"},
-  {"question":"Was bedeutet 'Ausreißer' in der Statistik?","options":["Der Mittelwert","Ein Wert, der deutlich von den anderen Werten einer Datenmenge abweicht und das Ergebnis (besonders den Mittelwert) stark beeinflussen kann","Der Modus","Die Häufigkeit"],"correct":1,"explanation":"Ausreißer: sehr hohe oder sehr niedrige Werte. Beispiel: Gehälter 2000, 2200, 2100, 1900, 50 000 → Mittelwert verzerrt durch Gehalt 50 000. Lösung: Median statt Mittelwert verwenden.","topic":"Statistik"},
-  {"question":"Was ist eine Skala auf einer Achse?","options":["Ein Lineal","Die Einteilung der Achse in gleichmäßige Abstände mit Beschriftung der Werte – zeigt an, welcher Wert wo auf der Achse liegt","Der Titel des Diagramms","Die Legende"],"correct":1,"explanation":"Skala: gleichmäßige Abstände! 0, 10, 20, 30... oder 0, 5, 10, 15... Abstand immer gleich groß. Vorsicht: Skala beginnt manchmal nicht bei 0 → kann Diagramm optisch verzerren (statistische Manipulation).","topic":"Diagramme"},
-  {"question":"Welche Art von Diagramm wäre am besten für 'Durchschnittstemperaturen der Monate Januar bis Dezember'?","options":["Kreisdiagramm","Liniendiagramm – weil die Temperatur sich über die Zeit verändert (Verlauf, Trend sichtbar)","Säulendiagramm","Balkendiagramm"],"correct":1,"explanation":"Liniendiagramm für zeitliche Verläufe. Kreisdiagramm: Anteile (100%). Säulendiagramm: Vergleich verschiedener Kategorien. Balken: wie Säule, waagerecht (gut für Rangfolgen, lange Kategorienamen).","topic":"Diagramme"},
-  {"question":"Welche Art von Diagramm für 'Lieblingsfächer von 30 Schülern'?","options":["Liniendiagramm","Säulendiagramm oder Kreisdiagramm – Säule für absoluten Vergleich (wie viele pro Fach), Kreis für relative Anteile (wie viel Prozent pro Fach)","Punktediagramm","Histogramm"],"correct":1,"explanation":"Kategorialer Vergleich: Säulen- oder Balkendiagramm (absolut) oder Kreisdiagramm (relativ). Kein Liniendiagramm (kein zeitlicher Verlauf!). Frage entscheidet: 'Wie viele?' → Säule. 'Wie viel Prozent?' → Kreis.","topic":"Diagramme"},
-  {"question":"Was bedeutet 100% im Kreisdiagramm?","options":["Die Hälfte","Das Gesamte (Ganzes) – alle Werte zusammen. Jeder Sektor zeigt den Anteil am Ganzen. 50% = Halbkreis. 25% = Viertelkreis. Alle Prozente müssen zusammen 100% ergeben","Der Mittelwert","Der häufigste Wert"],"correct":1,"explanation":"Kreisdiagramm: Summe aller Sektoren = 100%. Kontrollrechnung: Alle Prozentwerte addieren → muss 100 ergeben. Winkel berechnen: 1% = 3,6°; 50% = 180°; 25% = 90°; 10% = 36°.","topic":"Diagramme"},
-  {"question":"Die Noten einer Klasse: 1, 2, 2, 3, 3, 3, 4, 4, 5. Was ist der Modus?","options":["2","4","3","2 und 3"],"correct":2,"explanation":"Modus = häufigster Wert. 1: einmal; 2: zweimal; 3: dreimal; 4: zweimal; 5: einmal. → Note 3 kommt am häufigsten vor → Modus = 3.","topic":"Berechnung"},
-  {"question":"Was zeigt ein Diagramm-Titel?","options":["Die Formel","Worum es in dem Diagramm geht – was dargestellt wird, z.B. 'Lieblingssportarten der Klasse 5a', 'Temperaturen in Berlin 2024'. Immer mit Titel! Sonst weiß man nicht was gemeint ist","Die Skala","Die Quelle"],"correct":1,"explanation":"Pflichtbestandteile eines Diagramms: Titel, beschriftete Achsen (mit Einheit!), Skala mit gleichmäßigen Abständen, Legende (wenn mehrere Datenreihen). Quelle angeben wenn Daten von woanders.","topic":"Diagramme"},
-  {"question":"Was ist eine Umfrage?","options":["Eine Beobachtung","Eine Methode der Datenerhebung, bei der Personen gezielt befragt werden – durch Fragebögen, Interviews oder Online-Abstimmungen; Ergebnisse werden dann statistisch ausgewertet","Ein Experiment","Eine Messung"],"correct":1,"explanation":"Umfrage: wichtig für Marktforschung, Wahlen (Wählerbefragung), Wissenschaft. Fragebogen: geschlossene Fragen (ja/nein, Skala) leichter auszuwerten als offene. Stichprobe: repräsentativ?","topic":"Statistik"},
-  {"question":"Was bedeutet 'Daten auswerten'?","options":["Daten löschen","Daten analysieren und interpretieren – Mittelwert, Median, Modus berechnen, Häufigkeiten bestimmen, Diagramme erstellen, Schlussfolgerungen ziehen","Daten erheben","Daten darstellen"],"correct":1,"explanation":"Auswertung: nach Erhebung (Rohdaten) → sortieren, rechnen (Mittelwert, Median...) → darstellen (Diagramm) → interpretieren (Was bedeuten die Daten? Auffälligkeiten? Ausreißer?).","topic":"Statistik"},
-  {"question":"Was ist die Gesamtzahl/Grundgesamtheit?","options":["Ein Ausreißer","Die Menge ALLER Objekte oder Personen, über die eine Aussage gemacht werden soll – Stichprobe ist ein Teil davon. Beispiel: alle Schüler Deutschlands = Grundgesamtheit; 500 befragte = Stichprobe","Der Mittelwert","Die Häufigkeit"],"correct":1,"explanation":"Grundgesamtheit: oft zu groß für Vollerhebung. Deshalb: Stichprobe (Teilmenge) → Rückschluss auf Grundgesamtheit. Je größer und repräsentativer die Stichprobe, desto genauer die Aussage.","topic":"Statistik"},
-  {"question":"8 von 40 Schülern kommen mit dem Fahrrad. Wie groß ist der Anteil in Prozent?","options":["8%","20%","25%","40%"],"correct":1,"explanation":"Anteil in Prozent: (8 ÷ 40) × 100 = 0,2 × 100 = 20%. Merke: Anteil = Teilmenge ÷ Gesamtmenge. Dann × 100 für Prozent. Auch: 8/40 = 1/5 = 20%.","topic":"Berechnung"},
-  {"question":"Wofür ist Statistik wichtig?","options":["Nur für Mathematiker","Für viele Bereiche des Lebens: Wissenschaft (Studien), Wirtschaft (Verkaufszahlen), Politik (Wahlen), Medizin (Krankheitsverläufe), Wetter (Prognosen), Sport (Leistungsanalyse)","Nur für Wahlen","Nur für Schulen"],"correct":1,"explanation":"Statistik: 'Wissenschaft der Zahlen'. Ziel: aus Daten Erkenntnisse gewinnen. Statistiken können auch manipuliert werden (irreführende Diagramme, schlechte Stichproben). Kritisch lesen!","topic":"Statistik"},
-  {"question":"Was sind Rohdaten?","options":["Ausgewertete Daten","Daten in ihrer ursprünglichen, unbearbeiteten Form – direkt nach der Erhebung, noch nicht sortiert, berechnet oder in Diagrammen dargestellt","Fertige Diagramme","Berechnete Mittelwerte"],"correct":1,"explanation":"Rohdaten (Urliste): z.B. alle eingetragenen Messwerte hintereinander. Schritte: Rohdaten → sortieren → Häufigkeitstabelle → statistische Kennwerte (Mittelwert, Median, Modus) → Diagramm.","topic":"Statistik"},
-  {"question":"Die Temperaturen einer Woche: 18, 20, 22, 19, 21, 23, 17. Was ist der Mittelwert?","options":["19°C","20°C","21°C","22°C"],"correct":1,"explanation":"Mittelwert: (18+20+22+19+21+23+17) ÷ 7 = 140 ÷ 7 = 20°C. Tipp: Erst alle addieren (= 140), dann durch Anzahl teilen (= 7). Ergebnis: 20°C.","topic":"Berechnung"},
-  {"question":"Was bedeutet 'repräsentativ' bei einer Stichprobe?","options":["Sehr groß","Die Stichprobe spiegelt die Eigenschaften der Grundgesamtheit gut wider – z.B. Alter, Geschlecht, Wohnort verteilt wie in der gesamten Bevölkerung","Zufällig ausgewählt ohne Bedeutung","Immer 100 Personen"],"correct":1,"explanation":"Repräsentative Stichprobe: wichtig für verlässliche Aussagen. Beispiel: Wahlumfrage nur unter Studierenden ist NICHT repräsentativ für alle Wähler. Gute Umfragen wählen Teilnehmer sorgfältig aus.","topic":"Statistik"},
-  {"question":"Was ist eine irreführende Darstellung in Diagrammen?","options":["Eine korrekte Darstellung","Wenn z.B. die Y-Achse nicht bei 0 beginnt oder die Skala ungleichmäßig ist, kann ein kleiner Unterschied riesig wirken – wichtig, Diagramme kritisch zu lesen","Eine Tabelle ohne Werte","Ein Diagramm mit Titel"],"correct":1,"explanation":"Manipulation: abgeschnittene Y-Achse lässt kleine Unterschiede riesig erscheinen. Werbung und Politik nutzen das manchmal bewusst. Immer prüfen: Beginnt die Achse bei 0? Ist die Skala gleichmäßig?","topic":"Statistik"},
-  {"question":"In einer Klasse sind 12 Jungen und 18 Mädchen. Wie groß ist der Anteil der Jungen in Prozent?","options":["12%","40%","60%","18%"],"correct":1,"explanation":"Gesamtzahl: 12+18 = 30. Anteil Jungen: 12 ÷ 30 = 0,4 = 40%. Probe: Mädchenanteil müsste 60% sein (18÷30=0,6). 40%+60%=100% ✓.","topic":"Berechnung"},
-  {"question":"Was ist eine Klasseneinteilung (Klassenbreite) bei großen Datenmengen?","options":["Eine Schulklasse","Das Zusammenfassen von Werten in Gruppen (z.B. 0–10, 11–20, 21–30), um große Datenmengen übersichtlicher darzustellen","Der Mittelwert","Der Median"],"correct":1,"explanation":"Klasseneinteilung: bei vielen unterschiedlichen Werten (z.B. Körpergrößen von 200 Schülern) sinnvoll. Statt jeden einzelnen Wert zu zeigen, fasst man Bereiche zusammen → übersichtlicheres Histogramm.","topic":"Statistik"},
-  {"question":"Was ist ein Histogramm?","options":["Ein Kreisdiagramm","Ein Säulendiagramm für klasseneingeteilte (gruppierte) Daten, bei dem die Säulen direkt aneinander angrenzen (keine Lücken) – zeigt Häufigkeitsverteilungen","Ein Liniendiagramm","Eine Tabelle"],"correct":1,"explanation":"Histogramm: Säulen ohne Zwischenraum (im Gegensatz zum normalen Säulendiagramm). Zeigt Verteilung kontinuierlicher Daten, z.B. Notenverteilung, Körpergrößen. Säulenbreite = Klassenbreite.","topic":"Diagramme"},
-  {"question":"5 Schüler haben folgende Punktzahlen: 8, 6, 10, 4, 7. Was ist die Spannweite?","options":["4","6","8","10"],"correct":1,"explanation":"Spannweite = Maximum − Minimum = 10 − 4 = 6. Die Spannweite zeigt, wie weit die Werte auseinander liegen – ein Maß für die Streuung der Daten.","topic":"Berechnung"},
-  {"question":"Was zeigt die Legende in einem Diagramm?","options":["Den Titel","Eine Erklärung der verwendeten Farben, Symbole oder Muster, wenn ein Diagramm mehrere Datenreihen enthält","Die Skala","Die Quelle der Daten"],"correct":1,"explanation":"Legende: notwendig wenn mehrere Datensätze im selben Diagramm dargestellt werden (z.B. Temperaturen mehrerer Städte). Ohne Legende: nicht klar, welche Farbe/Linie wofür steht.","topic":"Diagramme"},
-  {"question":"Was bedeutet es, wenn der Mittelwert größer als der Median ist?","options":["Die Daten sind symmetrisch verteilt","Es gibt vermutlich einige besonders hohe Ausreißerwerte, die den Mittelwert nach oben ziehen","Es gibt einen Fehler in der Berechnung","Der Median ist falsch"],"correct":1,"explanation":"Wenn Mittelwert > Median: rechtsschiefe Verteilung, hohe Ausreißer ziehen den Mittelwert hoch. Beispiel: Gehälter – wenige sehr hohe Gehälter heben den Mittelwert über den 'typischen' (Median-)Wert.","topic":"Statistik"},
-  {"question":"Was ist eine Strichprobe (Stichprobe) im Unterschied zur Vollerhebung?","options":["Kein Unterschied","Stichprobe: nur ein Teil der Grundgesamtheit wird befragt/gemessen. Vollerhebung: alle Mitglieder der Grundgesamtheit werden erfasst (z.B. Volkszählung)","Stichprobe ist immer größer","Vollerhebung ist immer ungenau"],"correct":1,"explanation":"Vollerhebung: z.B. Zensus (Volkszählung) – aufwendig, aber vollständig genau. Stichprobe: günstiger, schneller, aber Unsicherheit durch Schätzung. Die meisten Umfragen nutzen Stichproben.","topic":"Statistik"},
-  {"question":"Welche grafische Darstellung eignet sich am besten, um die Bevölkerungsverteilung nach Altersgruppen zu zeigen?","options":["Liniendiagramm","Säulendiagramm oder Balkendiagramm – zum Vergleich der Anzahl von Personen in verschiedenen Altersgruppen (Kategorien)","Punktdiagramm","Kreisdiagramm allein"],"correct":1,"explanation":"Altersgruppen = Kategorien (kein zeitlicher Verlauf einer einzelnen Größe). Säulen-/Balkendiagramm zeigt Vergleich am übersichtlichsten. Eine Bevölkerungspyramide (spezielle Form) zeigt zudem Geschlecht und Alter zusammen.","topic":"Diagramme"},
-  {"question":"Was ist eine Korrelation in der Statistik?","options":["Ein Diagrammtyp","Ein Zusammenhang zwischen zwei Merkmalen – wenn ein Wert steigt, verändert sich oft auch der andere (z.B. mehr Übung → bessere Note); zeigt aber nicht automatisch eine Ursache","Ein Durchschnittswert","Eine Stichprobengröße"],"correct":1,"explanation":"Korrelation: positiv (beide steigen gemeinsam) oder negativ (einer steigt, der andere sinkt). Wichtig: Korrelation bedeutet nicht automatisch Kausalität (Ursache-Wirkung) – es könnte Zufall oder ein dritter Faktor dahinterstecken.","topic":"Statistik"}
+  {
+    "question": "Was ist ein Diagramm?",
+    "options": [
+      "Text",
+      "Grafische Darstellung von Daten",
+      "Tabelle",
+      "Formel"
+    ],
+    "correct": 1,
+    "explanation": "Diagramme zeigen Daten grafisch: Balken-, Kreis-, Liniendiagramm.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist ein Balkendiagramm?",
+    "options": [
+      "Kreisförmige Darstellung",
+      "Diagramm mit rechteckigen Balken die Werte vergleichen",
+      "Liniendiagramm",
+      "Punktdiagramm"
+    ],
+    "correct": 1,
+    "explanation": "Balkendiagramm: vergleicht Werte durch unterschiedlich lange Balken.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Was ist ein Kreisdiagramm?",
+    "options": [
+      "Ringförmige Darstellung",
+      "Kreis aufgeteilt in Sektoren die Anteile zeigen",
+      "Balkendiagramm",
+      "Liniendiagramm"
+    ],
+    "correct": 1,
+    "explanation": "Kreisdiagramm: der ganze Kreis = 100%, Sektoren = Anteile.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Was ist der Mittelwert?",
+    "options": [
+      "Häufigster Wert",
+      "Summe aller Werte geteilt durch ihre Anzahl",
+      "Kleinster Wert",
+      "Mittlerer Wert bei Sortierung"
+    ],
+    "correct": 1,
+    "explanation": "Mittelwert (Durchschnitt) = Summe / Anzahl.",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Berechne den Mittelwert von 4, 6, 8:",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "(4+6+8) / 3 = 18/3 = 6.",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Was ist der Modus?",
+    "options": [
+      "Mittelwert",
+      "Häufigster Wert in einer Datenmenge",
+      "Mittlerer Wert",
+      "Kleinster Wert"
+    ],
+    "correct": 1,
+    "explanation": "Modus: der am häufigsten vorkommende Wert.",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Was ist der Median?",
+    "options": [
+      "Mittelwert",
+      "Mittlerer Wert einer geordneten Datenmenge",
+      "Häufigster Wert",
+      "Größter Wert"
+    ],
+    "correct": 1,
+    "explanation": "Median: mittlerer Wert wenn alle Daten der Größe nach sortiert sind.",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Bestimme den Median von 3, 5, 7, 9, 11:",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "5 Werte sortiert: 3,5,7,9,11 – mittlerer Wert ist 7.",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Was bedeutet Häufigkeit?",
+    "options": [
+      "Wie laut",
+      "Wie oft ein Wert in einer Datenmenge vorkommt",
+      "Wie groß",
+      "Wie schwer"
+    ],
+    "correct": 1,
+    "explanation": "Häufigkeit: absolute Häufigkeit = Anzahl des Auftretens.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist relative Häufigkeit?",
+    "options": [
+      "Absolute Häufigkeit",
+      "Anteil (Häufigkeit / Gesamtzahl) z.B. als Dezimalzahl oder Prozent",
+      "Häufigster Wert",
+      "Mittelwert"
+    ],
+    "correct": 1,
+    "explanation": "Relative Häufigkeit = absolute Häufigkeit / Gesamtzahl.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "In einer Klasse von 25 Schülern mögen 10 Sport. Wie hoch ist die relative Häufigkeit?",
+    "options": [
+      "25%",
+      "40%",
+      "50%",
+      "10%"
+    ],
+    "correct": 1,
+    "explanation": "10/25 = 0,4 = 40%.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist eine Urliste?",
+    "options": [
+      "Sortierte Liste",
+      "Ungeordnete Aufzeichnung aller Rohdaten",
+      "Häufigkeitstabelle",
+      "Diagramm"
+    ],
+    "correct": 1,
+    "explanation": "Urliste: ungeordnete Aufzeichnung aller Daten.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist eine Häufigkeitstabelle?",
+    "options": [
+      "Diagramm",
+      "Tabelle die Häufigkeiten aller Werte zeigt",
+      "Urliste",
+      "Kreisdiagramm"
+    ],
+    "correct": 1,
+    "explanation": "Häufigkeitstabelle: listet Wert und seine Häufigkeit.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist eine Strichliste?",
+    "options": [
+      "Tabelle",
+      "Methode zum Zählen mit Strichen (IIII)",
+      "Diagramm",
+      "Grafik"
+    ],
+    "correct": 1,
+    "explanation": "Strichliste: Daten werden mit Strichen gezählt – 5. Strich quert die anderen.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Ein Würfel wird 60× geworfen. Wie oft erwartet man die 3?",
+    "options": [
+      "6",
+      "10",
+      "15",
+      "20"
+    ],
+    "correct": 1,
+    "explanation": "Erwartete Häufigkeit = 60 × (1/6) = 10.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist Wahrscheinlichkeit?",
+    "options": [
+      "Sicherheit",
+      "Maß dafür wie wahrscheinlich ein Ereignis eintritt (0 bis 1)",
+      "Häufigkeit",
+      "Zufall"
+    ],
+    "correct": 1,
+    "explanation": "Wahrscheinlichkeit: zwischen 0 (unmöglich) und 1 (sicher).",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist die Wahrscheinlichkeit 'Kopf' beim Münzwurf?",
+    "options": [
+      "1/4",
+      "1/2",
+      "1/3",
+      "1"
+    ],
+    "correct": 1,
+    "explanation": "Faire Münze: P(Kopf) = 1/2 = 50%.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Wie viele Seiten hat ein fairer Würfel?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct": 2,
+    "explanation": "Standardwürfel: 6 Seiten (1–6).",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist P(6) beim fairen Würfelwurf?",
+    "options": [
+      "1/3",
+      "1/4",
+      "1/5",
+      "1/6"
+    ],
+    "correct": 3,
+    "explanation": "P(6) = 1/6 ≈ 16,7%.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist ein Liniendiagramm?",
+    "options": [
+      "Balkendiagramm",
+      "Diagramm mit Punkten die durch Linien verbunden werden – zeigt Verläufe",
+      "Kreisdiagramm",
+      "Streudiagramm"
+    ],
+    "correct": 1,
+    "explanation": "Liniendiagramm: gut für Verläufe über Zeit.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "In einem Kreisdiagramm: 90° entspricht:",
+    "options": [
+      "10%",
+      "20%",
+      "25%",
+      "50%"
+    ],
+    "correct": 2,
+    "explanation": "90° / 360° = 1/4 = 25%.",
+    "topic": "Kreisdiagramm"
+  },
+  {
+    "question": "Was sind Ausreißer?",
+    "options": [
+      "Häufige Werte",
+      "Extreme Werte die weit von anderen abweichen",
+      "Mittelwerte",
+      "Häufigste Werte"
+    ],
+    "correct": 1,
+    "explanation": "Ausreißer: abweichende Extremwerte.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Berechne den Mittelwert von 2, 4, 6, 8, 10:",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "(2+4+6+8+10)/5 = 30/5 = 6.",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Was ist die Spannweite?",
+    "options": [
+      "Mittelwert",
+      "Differenz zwischen größtem und kleinstem Wert",
+      "Modus",
+      "Median"
+    ],
+    "correct": 1,
+    "explanation": "Spannweite = Maximum − Minimum.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Spannweite von 3, 7, 2, 9, 5?",
+    "options": [
+      "6",
+      "7",
+      "5",
+      "4"
+    ],
+    "correct": 1,
+    "explanation": "Max=9, Min=2 → 9−2=7.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was zeigt ein Säulendiagramm?",
+    "options": [
+      "Zeitverlauf",
+      "Vergleich von Größen durch senkrechte Säulen",
+      "Teile eines Ganzen",
+      "Streuung"
+    ],
+    "correct": 1,
+    "explanation": "Säulendiagramm = Balkendiagramm vertikal – Vergleich von Werten.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Was ist ein Zufallsexperiment?",
+    "options": [
+      "Geplantes Ergebnis",
+      "Vorgang mit unbekanntem Ausgang (Münzwurf, Würfel)",
+      "Berechnung",
+      "Sicheres Ereignis"
+    ],
+    "correct": 1,
+    "explanation": "Zufallsexperiment: Ausgang unbekannt.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist ein sicheres Ereignis?",
+    "options": [
+      "P=0",
+      "P=0,5",
+      "P=1",
+      "P>1"
+    ],
+    "correct": 2,
+    "explanation": "Sicheres Ereignis: tritt immer ein, P=1.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist ein unmögliches Ereignis?",
+    "options": [
+      "P=0",
+      "P=0,5",
+      "P=1",
+      "P=0,1"
+    ],
+    "correct": 0,
+    "explanation": "Unmögliches Ereignis: tritt nie ein, P=0.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist bei einer fairen Münze P(Wappen oder Zahl)?",
+    "options": [
+      "1/2",
+      "1/4",
+      "0",
+      "1"
+    ],
+    "correct": 3,
+    "explanation": "Wappen oder Zahl = alle Möglichkeiten → P=1.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist Datenschutz?",
+    "options": [
+      "Sicherung von Computerfiles",
+      "Recht auf den Schutz persönlicher Daten vor unbefugter Nutzung",
+      "Statistisches Verfahren",
+      "Computertechnik"
+    ],
+    "correct": 1,
+    "explanation": "Datenschutz: persönliche Daten dürfen nicht ohne Erlaubnis genutzt werden.",
+    "topic": "Allgemein"
+  },
+  {
+    "question": "Was ist eine Erhebung?",
+    "options": [
+      "Diagramm",
+      "Sammlung von Daten (Befragung, Zählung)",
+      "Auswertung",
+      "Wahrscheinlichkeit"
+    ],
+    "correct": 1,
+    "explanation": "Erhebung: systematisches Sammeln von Daten.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist eine Stichprobe?",
+    "options": [
+      "Gesamte Gruppe",
+      "Teilmenge einer Grundgesamtheit",
+      "Urliste",
+      "Median"
+    ],
+    "correct": 1,
+    "explanation": "Stichprobe: Auswahl aus der Grundgesamtheit.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist die Grundgesamtheit?",
+    "options": [
+      "Zufällige Auswahl",
+      "Alle Elemente die untersucht werden könnten",
+      "Mittelwert",
+      "Häufigkeit"
+    ],
+    "correct": 1,
+    "explanation": "Grundgesamtheit: alle möglichen Elemente einer Untersuchung.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was zeigt ein Histogramm?",
+    "options": [
+      "Kategorien",
+      "Häufigkeitsverteilung kontinuierlicher Daten",
+      "Einzelne Werte",
+      "Zeitreihe"
+    ],
+    "correct": 1,
+    "explanation": "Histogramm: zeigt Häufigkeitsverteilung mit Balken ohne Lücken.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Wenn ein Würfel 600× geworfen wird, wie oft erwartet man eine gerade Zahl?",
+    "options": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "correct": 2,
+    "explanation": "P(gerade) = 3/6 = 1/2 → 600 × 1/2 = 300.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist kumulative Häufigkeit?",
+    "options": [
+      "Einzelhäufigkeit",
+      "Aufaddierte Häufigkeit bis zu einem Wert",
+      "Relative Häufigkeit",
+      "Modus"
+    ],
+    "correct": 1,
+    "explanation": "Kumulative Häufigkeit: Summe der Häufigkeiten bis zu einem bestimmten Wert.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Welches Diagramm eignet sich für Anteile am Ganzen?",
+    "options": [
+      "Liniendiagramm",
+      "Balkendiagramm",
+      "Kreisdiagramm",
+      "Streudiagramm"
+    ],
+    "correct": 2,
+    "explanation": "Kreisdiagramm: perfekt um Anteile am Ganzen darzustellen.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Was ist der Unterschied Merkmal/Merkmalsausprägung?",
+    "options": [
+      "Kein Unterschied",
+      "Merkmal ist die Eigenschaft; Merkmalsausprägung ist der konkrete Wert",
+      "Merkmal ist der Wert",
+      "Merkmalsausprägung ist die Eigenschaft"
+    ],
+    "correct": 1,
+    "explanation": "Merkmal: Haarfarbe. Merkmalsausprägung: braun.",
+    "topic": "Statistik"
+  },
+  {
+    "question": "Was ist Arithmetisches Mittel?",
+    "options": [
+      "Häufigster Wert",
+      "Summe aller Werte durch Anzahl (= Durchschnitt)",
+      "Mittlerer Wert",
+      "Kleinster Wert"
+    ],
+    "correct": 1,
+    "explanation": "Arithmetisches Mittel = Durchschnitt = Summe / Anzahl.",
+    "topic": "Mittelwerte"
+  }
 ]

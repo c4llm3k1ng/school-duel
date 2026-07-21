@@ -1,42 +1,482 @@
 [
-  {"question":"Was ist 347 + 285?","options":["622","632","612","642"],"correct":1,"explanation":"347 + 285: Einer: 7+5=12 (1 merken), Zehner: 4+8+1=13 (1 merken), Hunderter: 3+2+1=6. Ergebnis: 632.","topic":"Addition"},
-  {"question":"Was ist 503 – 178?","options":["325","335","315","345"],"correct":0,"explanation":"503 – 178 = 325. Einer: 3<8, borgen → 13–8=5. Zehner: 0–1 geht nicht, borgen → 9–7=2 (nach Borgen). Hunderter: 4–1=3. Ergebnis: 325.","topic":"Subtraktion"},
-  {"question":"Was ist 24 × 6?","options":["124","144","134","154"],"correct":1,"explanation":"24 × 6: 4×6=24 (4 hinschreiben, 2 merken), 2×6=12, +2=14. Ergebnis: 144.","topic":"Multiplikation"},
-  {"question":"Was ist 96 ÷ 8?","options":["11","12","13","14"],"correct":1,"explanation":"96 ÷ 8 = 12, denn 8 × 12 = 96. Probe: 8 × 10 = 80, 8 × 2 = 16, zusammen 96. ✓","topic":"Division"},
-  {"question":"Welche Zahl ist die größte?","options":["3 047","3 074","3 470","3 407"],"correct":2,"explanation":"Beim Vergleich vierstelliger Zahlen zuerst die Tausenderstelle (alle gleich: 3), dann Hunderterstelle: 0, 0, 4, 4 → 3 470 und 3 407. Zehnerstelle: 7 > 0 → 3 470 ist am größten.","topic":"Zahlen vergleichen"},
-  {"question":"Was ist der Vorgänger von 1 000?","options":["999","1 001","1 010","990"],"correct":0,"explanation":"Der Vorgänger einer Zahl ist die Zahl direkt davor, also 1 000 – 1 = 999.","topic":"Zahlenfolge"},
-  {"question":"Was ist 5 × 5 × 5?","options":["15","25","125","55"],"correct":2,"explanation":"5 × 5 = 25, dann 25 × 5 = 125. Das schreibt man auch als 5³ = 125.","topic":"Multiplikation"},
-  {"question":"Wie viele Ziffern hat die Zahl 12 345?","options":["4","5","6","3"],"correct":1,"explanation":"12 345 hat die Ziffern 1, 2, 3, 4 und 5 – also 5 Ziffern. Es ist eine fünfstellige Zahl.","topic":"Stellenwerte"},
-  {"question":"Was ist das Ergebnis von 7 × 8?","options":["54","56","58","64"],"correct":1,"explanation":"7 × 8 = 56. Merkregel: 5, 6, 7, 8 – fünf mal sechs ist achtunddreißig... Nein: 7 × 8 = 56. Oder: 7 × 7 = 49, +7 = 56.","topic":"Einmaleins"},
-  {"question":"Welche Zahl steht an der Hunderterstelle von 4 728?","options":["4","7","2","8"],"correct":1,"explanation":"4 728: Tausender=4, Hunderter=7, Zehner=2, Einer=8. Die 7 steht an der Hunderterstelle.","topic":"Stellenwerte"},
-  {"question":"Was ist 1 000 – 364?","options":["636","646","626","664"],"correct":0,"explanation":"1 000 – 364 = 636. Ergänzungsrechnung: 364 + 636 = 1 000. Oder: 1 000 – 300 = 700, 700 – 64 = 636.","topic":"Subtraktion"},
-  {"question":"Was ist das Ergebnis von 9 × 9?","options":["72","81","90","79"],"correct":1,"explanation":"9 × 9 = 81. Trick: 10 × 9 = 90, minus 9 = 81.","topic":"Einmaleins"},
-  {"question":"Welche Aussage über gerade Zahlen ist richtig?","options":["Sie sind durch 3 teilbar","Sie enden auf 0, 2, 4, 6 oder 8","Sie sind immer größer als 10","Sie haben immer zwei Stellen"],"correct":1,"explanation":"Gerade Zahlen enden immer auf 0, 2, 4, 6 oder 8 und sind durch 2 teilbar. Beispiele: 14, 28, 50, 102.","topic":"Gerade und ungerade Zahlen"},
-  {"question":"Was ist 450 ÷ 9?","options":["40","45","50","55"],"correct":2,"explanation":"450 ÷ 9 = 50, denn 9 × 50 = 450. Oder: 45 ÷ 9 = 5, also 450 ÷ 9 = 50.","topic":"Division"},
-  {"question":"Ordne die Zahlen der Größe nach: 2 345, 2 435, 2 354, 2 543","options":["2 543 > 2 435 > 2 354 > 2 345","2 345 > 2 354 > 2 435 > 2 543","2 543 > 2 354 > 2 435 > 2 345","2 435 > 2 543 > 2 354 > 2 345"],"correct":0,"explanation":"Hunderterstelle: 5, 4, 3, 3 → 2 543 > 2 435. Bei 2 354 und 2 345: Zehnerstelle 5>4 → 2 354 > 2 345.","topic":"Zahlen vergleichen"},
-  {"question":"Was ist 13 × 4?","options":["48","52","56","44"],"correct":1,"explanation":"13 × 4: 10 × 4 = 40, 3 × 4 = 12. Zusammen: 40 + 12 = 52.","topic":"Multiplikation"},
-  {"question":"Was versteht man unter dem Begriff 'Teiler'?","options":["Das Ergebnis einer Division","Eine Zahl, die eine andere ohne Rest teilt (z.B. 3 ist Teiler von 12, da 12 ÷ 3 = 4)","Die Quersumme","Der Rest bei der Division"],"correct":1,"explanation":"Teiler: 3 teilt 12 ohne Rest → 3 ist ein Teiler von 12. Weitere Teiler von 12: 1, 2, 3, 4, 6, 12.","topic":"Teilbarkeit"},
-  {"question":"Welche Zahl ist durch 5 teilbar?","options":["123","245","231","347"],"correct":1,"explanation":"Durch 5 teilbar: Zahl muss auf 0 oder 5 enden. 245 endet auf 5 → teilbar durch 5. 245 ÷ 5 = 49.","topic":"Teilbarkeit"},
-  {"question":"Was ist der größte gemeinsame Teiler (ggT) von 12 und 18?","options":["3","4","6","9"],"correct":2,"explanation":"Teiler von 12: 1,2,3,4,6,12. Teiler von 18: 1,2,3,6,9,18. Gemeinsame Teiler: 1,2,3,6. Größter: 6.","topic":"ggT"},
-  {"question":"Was ist das kleinste gemeinsame Vielfache (kgV) von 4 und 6?","options":["8","12","18","24"],"correct":1,"explanation":"Vielfache von 4: 4,8,12,16,20... Vielfache von 6: 6,12,18,24... Kleinstes gemeinsames: 12.","topic":"kgV"},
-  {"question":"Wie schreibt man 4 765 in Worten?","options":["Viertausendsiebenhundertfünfundsechzig","Viersiebensechsfünf","Vierhundertsiebenzigfünf","Vierzigtausendsiebenhundert"],"correct":0,"explanation":"4 765 = 4 Tausend + 7 Hundert + 6 Zehner + 5 Einer = viertausendsiebenhundertfünfundsechzig.","topic":"Zahlen in Worten"},
-  {"question":"Was ist 25 × 4?","options":["90","100","80","120"],"correct":1,"explanation":"25 × 4 = 100. Merktrick: 25 × 4 = 100 (wie 4 Vierteldollar = 1 Dollar). Oder: 25 × 2 = 50, × 2 = 100.","topic":"Multiplikation"},
-  {"question":"Welche Zahl ist durch 2 UND durch 3 teilbar?","options":["14","21","18","25"],"correct":2,"explanation":"Durch 2 teilbar: gerade Zahl (endet auf 0,2,4,6,8). Durch 3 teilbar: Quersumme durch 3 teilbar. 18: gerade ✓, Quersumme 1+8=9, 9÷3=3 ✓.","topic":"Teilbarkeit"},
-  {"question":"Was ist 300 × 7?","options":["2 000","2 100","2 700","2 800"],"correct":1,"explanation":"300 × 7 = 2 100. Erst: 3 × 7 = 21, dann zwei Nullen dran: 2 100.","topic":"Multiplikation"},
-  {"question":"Was ergibt 5 000 – 2 348?","options":["2 752","2 642","2 652","2 762"],"correct":2,"explanation":"5 000 – 2 348 = 2 652. Ergänzung: 2 348 + 2 652 = 5 000. Probe: 2348+2000=4348, +300=4648, +52=4700... nochmal: 2348+652=3000, 3000+2000=5000. ✓","topic":"Subtraktion"},
-  {"question":"Was ist eine Primzahl?","options":["Eine Zahl, die durch 2 teilbar ist","Eine Zahl, die genau zwei Teiler hat: 1 und sich selbst (z.B. 2, 3, 5, 7, 11, 13)","Eine gerade Zahl","Eine Zahl mit der Quersumme 7"],"correct":1,"explanation":"Primzahlen: genau 2 Teiler. 2 (kleinste Primzahl), 3, 5, 7, 11, 13, 17, 19, 23... 1 ist KEINE Primzahl (nur ein Teiler).","topic":"Primzahlen"},
-  {"question":"Welche der folgenden Zahlen ist eine Primzahl?","options":["9","15","17","21"],"correct":2,"explanation":"17: Teiler nur 1 und 17 → Primzahl. 9=3×3, 15=3×5, 21=3×7 – alle haben mehr als 2 Teiler.","topic":"Primzahlen"},
-  {"question":"Was ist 72 ÷ 6?","options":["10","11","12","13"],"correct":2,"explanation":"72 ÷ 6 = 12, denn 6 × 12 = 72. Probe: 6 × 10 = 60, 6 × 2 = 12, 60+12=72 ✓.","topic":"Division"},
-  {"question":"Was ist der Rest bei 29 ÷ 4?","options":["Rest 0","Rest 1","Rest 2","Rest 3"],"correct":1,"explanation":"29 ÷ 4: 4 × 7 = 28, 29 – 28 = 1. Ergebnis: 7 Rest 1.","topic":"Division mit Rest"},
-  {"question":"Welche Zahl liegt genau in der Mitte zwischen 40 und 60?","options":["48","50","52","45"],"correct":1,"explanation":"Mittelwert: (40 + 60) ÷ 2 = 100 ÷ 2 = 50. Die 50 liegt genau in der Mitte.","topic":"Mittelwert"},
-  {"question":"Was ist 15² (15 zum Quadrat)?","options":["30","150","225","125"],"correct":2,"explanation":"15² = 15 × 15 = 225. Trick: (10+5)² = 100 + 100 + 25 = 225. Oder: 15 × 15 = 15 × 10 + 15 × 5 = 150 + 75 = 225.","topic":"Quadratzahlen"},
-  {"question":"Was bedeutet das Zeichen '>' ?","options":["kleiner als","gleich","größer als","ungleich"],"correct":2,"explanation":"'>' bedeutet 'größer als': 8 > 5 heißt '8 ist größer als 5'. Merktrick: Der 'Mund' des Zeichens öffnet sich zur größeren Zahl.","topic":"Vergleichszeichen"},
-  {"question":"Was ist 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10?","options":["50","55","60","45"],"correct":1,"explanation":"Gaußsche Summenformel: Paare bilden: 1+10=11, 2+9=11, 3+8=11, 4+7=11, 5+6=11. Fünf Paare × 11 = 55.","topic":"Rechenstrategien"},
-  {"question":"Was ist das Ergebnis von 6 × 7?","options":["42","48","36","40"],"correct":0,"explanation":"6 × 7 = 42. Merkhilfe: 5 × 7 = 35, +7 = 42. Oder: 6 × 6 = 36, +6 = 42.","topic":"Einmaleins"},
-  {"question":"Wie viele Minuten hat ein Tag?","options":["1 200","1 440","1 440","720"],"correct":1,"explanation":"1 Tag = 24 Stunden × 60 Minuten = 1 440 Minuten.","topic":"Größen & Einheiten"},
-  {"question":"Was ist 48 ÷ 4 × 3?","options":["4","36","16","144"],"correct":1,"explanation":"Punkt vor Strich – hier nur Punktrechnungen, von links nach rechts: 48 ÷ 4 = 12, dann 12 × 3 = 36.","topic":"Rechenregeln"},
-  {"question":"Was ist das Ergebnis von 100 – 37 + 15?","options":["48","78","52","88"],"correct":1,"explanation":"Von links nach rechts: 100 – 37 = 63, dann 63 + 15 = 78.","topic":"Grundrechenarten"},
-  {"question":"Welche Zahl hat die Quersumme 9?","options":["1 234","1 332","1 125","1 239"],"correct":1,"explanation":"Quersumme: alle Ziffern addieren. 1+3+3+2=9 ✓. Quersumme 9 → durch 9 (und durch 3) teilbar.","topic":"Quersumme"},
-  {"question":"Was ist 4 × 25 + 4 × 75?","options":["300","400","360","440"],"correct":1,"explanation":"Distributivgesetz: 4 × (25 + 75) = 4 × 100 = 400. Klammer zuerst ausrechnen ist schneller!","topic":"Distributivgesetz"},
-  {"question":"Ein Schüler spart jeden Tag 3 €. Nach wie vielen Tagen hat er 42 €?","options":["12","14","13","15"],"correct":1,"explanation":"42 ÷ 3 = 14 Tage. Probe: 14 × 3 = 42 ✓.","topic":"Sachaufgaben"}
+  {
+    "question": "Welchen Wert hat die Ziffer 4 in der Zahl 14.325?",
+    "options": [
+      "40",
+      "400",
+      "4.000",
+      "40.000"
+    ],
+    "correct": 2,
+    "explanation": "Die Ziffer 4 steht in dieser Zahl an der Tausenderstelle, daher hat sie den Wert 4.000.",
+    "topic": "Stellenwerte"
+  },
+  {
+    "question": "Was ist das Ergebnis von 357 + 123?",
+    "options": [
+      "470",
+      "480",
+      "490",
+      "500"
+    ],
+    "correct": 1,
+    "explanation": "Die Summe aus 357 und 123 ist 480.",
+    "topic": "Addition"
+  },
+  {
+    "question": "Ein Quadrat hat eine Seitenlänge von 5 cm. Wie groß ist sein Umfang?",
+    "options": [
+      "10 cm",
+      "15 cm",
+      "20 cm",
+      "25 cm"
+    ],
+    "correct": 2,
+    "explanation": "Der Umfang eines Quadrats berechnet sich als 4 mal die Seitenlänge. 4 * 5 cm = 20 cm.",
+    "topic": "Geometrie - Umfang"
+  },
+  {
+    "question": "Wie viele Zentimeter sind 3 Meter?",
+    "options": [
+      "30 cm",
+      "300 cm",
+      "3.000 cm",
+      "0,03 cm"
+    ],
+    "correct": 1,
+    "explanation": "1 Meter sind 100 Zentimeter. Also sind 3 Meter = 3 * 100 cm = 300 cm.",
+    "topic": "Maßeinheiten - Länge"
+  },
+  {
+    "question": "Runde die Zahl 278 auf den nächsten Zehner.",
+    "options": [
+      "270",
+      "275",
+      "280",
+      "300"
+    ],
+    "correct": 2,
+    "explanation": "Da die Einerziffer (8) 5 oder größer ist, wird auf den nächsten Zehner aufgerundet. 278 wird zu 280.",
+    "topic": "Runden von Zahlen"
+  },
+  {
+    "question": "Was ist 6 * 15?",
+    "options": [
+      "60",
+      "75",
+      "90",
+      "100"
+    ],
+    "correct": 2,
+    "explanation": "Das Produkt von 6 und 15 ist 90.",
+    "topic": "Multiplikation"
+  },
+  {
+    "question": "Welches Ergebnis hat 84 : 4?",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "24"
+    ],
+    "correct": 1,
+    "explanation": "84 geteilt durch 4 ergibt 21.",
+    "topic": "Division"
+  },
+  {
+    "question": "Berechne: 7 + 3 * 2",
+    "options": [
+      "10",
+      "13",
+      "14",
+      "20"
+    ],
+    "correct": 1,
+    "explanation": "Nach der Regel 'Punktrechnung vor Strichrechnung' wird zuerst 3 * 2 = 6 gerechnet. Dann 7 + 6 = 13.",
+    "topic": "Rechenregeln (Punkt vor Strich)"
+  },
+  {
+    "question": "Wie liest man die Zahl 23.456.789 richtig?",
+    "options": [
+      "Zweiunddreißig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig",
+      "Dreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig",
+      "Zweiunddreißig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunzig",
+      "Dreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunzig"
+    ],
+    "correct": 1,
+    "explanation": "Die Zahl 23.456.789 wird gelesen als 'Dreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig'. Man liest die Zahl von links nach rechts in Dreierblöcken (Millionen, Tausender, Einer).",
+    "topic": "Zahlen lesen und schreiben (Stellenwert)"
+  },
+  {
+    "question": "Ein Bauer hat 345 Hühner und kauft weitere 187 Hühner dazu. Wie viele Hühner hat er nun insgesamt?",
+    "options": [
+      "422",
+      "532",
+      "522",
+      "432"
+    ],
+    "correct": 1,
+    "explanation": "Um die Gesamtzahl zu finden, addiert man die beiden Mengen: 345 + 187 = 532. Die schriftliche Addition hilft hierbei.",
+    "topic": "Schriftliche Addition"
+  },
+  {
+    "question": "Ein Kino hat 8 Reihen mit jeweils 15 Sitzen. Wie viele Sitzplätze hat das Kino insgesamt?",
+    "options": [
+      "110",
+      "120",
+      "130",
+      "100"
+    ],
+    "correct": 1,
+    "explanation": "Die Gesamtzahl der Sitzplätze berechnet man durch Multiplikation der Anzahl der Reihen mit der Anzahl der Sitze pro Reihe: 8 * 15 = 120. Hier hilft das kleine Einmaleins, erweitert für größere Zahlen.",
+    "topic": "Multiplikation"
+  },
+  {
+    "question": "Berechne den Wert des Ausdrucks: 20 + 5 * (12 - 4)",
+    "options": [
+      "60",
+      "100",
+      "200",
+      "300"
+    ],
+    "correct": 0,
+    "explanation": "Zuerst werden die Klammern berechnet: (12 - 4) = 8. Dann folgt die Multiplikation (Punktrechnung vor Strichrechnung): 5 * 8 = 40. Zum Schluss die Addition: 20 + 40 = 60.",
+    "topic": "Rechengesetze (Klammer, Punkt vor Strich)"
+  },
+  {
+    "question": "Ein Rechteck hat eine Länge von 10 cm und eine Breite von 5 cm. Welchen Umfang hat das Rechteck?",
+    "options": [
+      "15 cm",
+      "20 cm",
+      "30 cm",
+      "50 cm"
+    ],
+    "correct": 2,
+    "explanation": "Der Umfang eines Rechtecks berechnet sich mit der Formel U = 2 * (Länge + Breite). Also U = 2 * (10 cm + 5 cm) = 2 * 15 cm = 30 cm.",
+    "topic": "Geometrie (Rechteck, Umfang)"
+  },
+  {
+    "question": "Wie viele Minuten sind 3 Stunden und 15 Minuten?",
+    "options": [
+      "180 Minuten",
+      "195 Minuten",
+      "215 Minuten",
+      "245 Minuten"
+    ],
+    "correct": 1,
+    "explanation": "Eine Stunde hat 60 Minuten. Also sind 3 Stunden = 3 * 60 Minuten = 180 Minuten. Dazu kommen die weiteren 15 Minuten: 180 + 15 = 195 Minuten.",
+    "topic": "Maßeinheiten (Zeit)"
+  },
+  {
+    "question": "Frau Müller kauft 3 Bücher zu je 12 Euro und 2 Hefte zu je 3 Euro. Sie bezahlt mit einem 50-Euro-Schein. Wie viel Wechselgeld bekommt sie zurück?",
+    "options": [
+      "24 Euro",
+      "14 Euro",
+      "8 Euro",
+      "10 Euro"
+    ],
+    "correct": 2,
+    "explanation": "Zuerst die Kosten für die Bücher berechnen: 3 * 12 Euro = 36 Euro. Dann die Kosten für die Hefte: 2 * 3 Euro = 6 Euro. Die Gesamtkosten betragen 36 Euro + 6 Euro = 42 Euro. Das Wechselgeld ist 50 Euro - 42 Euro = 8 Euro.",
+    "topic": "Sachaufgaben (Mehrschrittig)"
+  },
+  {
+    "question": "Welche der folgenden Zahlen ist sowohl durch 2, durch 3 als auch durch 5 teilbar?",
+    "options": [
+      "230",
+      "345",
+      "420",
+      "550"
+    ],
+    "correct": 2,
+    "explanation": "Eine Zahl ist durch 2 teilbar, wenn ihre letzte Ziffer gerade ist (endet auf 0, 2, 4, 6, 8). Eine Zahl ist durch 3 teilbar, wenn ihre Quersumme (Summe der Ziffern) durch 3 teilbar ist. Eine Zahl ist durch 5 teilbar, wenn sie auf 0 oder 5 endet. Nur 420 erfüllt alle Kriterien: Endet auf 0 (durch 2 und 5 teilbar); Quersumme 4+2+0=6 (durch 3 teilbar).",
+    "topic": "Teilbarkeitsregeln"
+  },
+  {
+    "question": "Was ist die Summe aus 2345 und 1000?",
+    "options": [
+      "A) 3345",
+      "B) 2445",
+      "C) 3355",
+      "D) 1345"
+    ],
+    "correct": 0,
+    "explanation": "Um die Summe zu finden, addiert man 2345 und 1000. 2345 + 1000 = 3345.",
+    "topic": "Grundrechenarten (Addition)"
+  },
+  {
+    "question": "Welches Ergebnis hat die Multiplikation 7 mal 8?",
+    "options": [
+      "A) 49",
+      "B) 56",
+      "C) 63",
+      "D) 72"
+    ],
+    "correct": 1,
+    "explanation": "Die Multiplikation von 7 mal 8 ergibt 56. Dies ist eine grundlegende Aufgabe aus dem kleinen Einmaleins.",
+    "topic": "Grundrechenarten (Multiplikation)"
+  },
+  {
+    "question": "Welche Ziffer steht in der Hunderterstelle der Zahl 45.678?",
+    "options": [
+      "A) 4",
+      "B) 5",
+      "C) 6",
+      "D) 7"
+    ],
+    "correct": 2,
+    "explanation": "Bei der Zahl 45.678 ist die 8 die Einerziffer, die 7 die Zehnerziffer und die 6 die Hunderterziffer.",
+    "topic": "Stellenwertsystem"
+  },
+  {
+    "question": "Wie viele Seiten von gleicher Länge hat ein Quadrat?",
+    "options": [
+      "A) 2",
+      "B) 3",
+      "C) 4",
+      "D) 5"
+    ],
+    "correct": 2,
+    "explanation": "Ein Quadrat ist ein Viereck, bei dem alle vier Seiten gleich lang sind und alle Winkel 90 Grad betragen.",
+    "topic": "Geometrie (Flächen)"
+  },
+  {
+    "question": "Berechne: 12 + 8 : 4",
+    "options": [
+      "A) 5",
+      "B) 14",
+      "C) 20",
+      "D) 16"
+    ],
+    "correct": 1,
+    "explanation": "Nach den Regeln 'Punkt vor Strich' rechnet man zuerst die Division: 8 : 4 = 2. Dann addiert man: 12 + 2 = 14.",
+    "topic": "Rechenregeln (Punkt vor Strich)"
+  },
+  {
+    "question": "Wie viele Zentimeter sind in 2 Metern enthalten?",
+    "options": [
+      "A) 20 cm",
+      "B) 200 cm",
+      "C) 2000 cm",
+      "D) 0,2 cm"
+    ],
+    "correct": 1,
+    "explanation": "Ein Meter entspricht 100 Zentimetern. Daher sind 2 Meter das Doppelte, also 2 x 100 cm = 200 cm.",
+    "topic": "Maßeinheiten (Längen)"
+  },
+  {
+    "question": "Lisa kauft 3 Hefte für je 2 Euro und einen Stift für 1 Euro. Sie bezahlt mit einem 10-Euro-Schein. Wie viel Wechselgeld bekommt sie zurück?",
+    "options": [
+      "A) 3 Euro",
+      "B) 4 Euro",
+      "C) 5 Euro",
+      "D) 7 Euro"
+    ],
+    "correct": 0,
+    "explanation": "Zuerst berechnet man die Kosten für die Hefte: 3 Hefte * 2 Euro/Heft = 6 Euro. Dann addiert man die Kosten für den Stift: 6 Euro + 1 Euro = 7 Euro Gesamtkosten. Schließlich berechnet man das Wechselgeld: 10 Euro - 7 Euro = 3 Euro.",
+    "topic": "Sachaufgaben"
+  },
+  {
+    "question": "Welche römische Zahl entspricht der Zahl 9?",
+    "options": [
+      "A) VII",
+      "B) IX",
+      "C) XI",
+      "D) IV"
+    ],
+    "correct": 1,
+    "explanation": "In römischen Zahlen steht I für 1, V für 5 und X für 10. Wenn ein kleinerer Wert (I) vor einem größeren (X) steht, wird er abgezogen (z.B. IX = 10 - 1 = 9).",
+    "topic": "Römische Zahlen"
+  },
+  {
+    "question": "Was ist das Ergebnis von 340 + 280?",
+    "options": [
+      "620",
+      "520",
+      "610",
+      "720"
+    ],
+    "correct": 0,
+    "explanation": "Addiere zuerst die Hunderter (340 + 200 = 540) und dann die restlichen Zehner (540 + 80 = 620).",
+    "topic": "Addition"
+  },
+  {
+    "question": "Berechne im Kopf: 70 * 60",
+    "options": [
+      "420",
+      "4200",
+      "42000",
+      "42"
+    ],
+    "correct": 1,
+    "explanation": "Rechne zuerst 7 * 6 = 42 und hänge die zwei Nullen der Faktoren an das Ergebnis an.",
+    "topic": "Multiplikation"
+  },
+  {
+    "question": "Was ergibt 450 : 9?",
+    "options": [
+      "50",
+      "5",
+      "500",
+      "45"
+    ],
+    "correct": 0,
+    "explanation": "Teile 45 durch 9 (ergibt 5) und hänge die Null wieder an.",
+    "topic": "Division"
+  },
+  {
+    "question": "Beachte die Vorrangregeln: 15 + 5 * 4",
+    "options": [
+      "80",
+      "24",
+      "35",
+      "45"
+    ],
+    "correct": 2,
+    "explanation": "Es gilt 'Punkt vor Strich'. Berechne zuerst 5 * 4 = 20 und addiere dann 15 + 20 = 35.",
+    "topic": "Rechengesetze"
+  },
+  {
+    "question": "Wie viel fehlt von 455 bis zur 1000?",
+    "options": [
+      "555",
+      "545",
+      "645",
+      "535"
+    ],
+    "correct": 1,
+    "explanation": "Schrittweise: 455 + 5 = 460, 460 + 40 = 500, 500 + 500 = 1000. Ergibt zusammen 545.",
+    "topic": "Subtraktion"
+  },
+  {
+    "question": "Verdopple die Zahl 125 und ziehe anschließend 50 ab.",
+    "options": [
+      "200",
+      "250",
+      "150",
+      "300"
+    ],
+    "correct": 0,
+    "explanation": "Das Doppelte von 125 ist 250. Wenn man 50 abzieht, erhält man 200.",
+    "topic": "Kombiniertes Rechnen"
+  },
+  {
+    "question": "Was ist das Ergebnis von 14 * 5?",
+    "options": [
+      "60",
+      "70",
+      "80",
+      "50"
+    ],
+    "correct": 1,
+    "explanation": "Zerlege die Rechnung in (10 * 5) + (4 * 5) = 50 + 20 = 70.",
+    "topic": "Multiplikation"
+  },
+  {
+    "question": "Berechne: 720 : 80",
+    "options": [
+      "9",
+      "90",
+      "8",
+      "80"
+    ],
+    "correct": 0,
+    "explanation": "Beim Dividieren durch Zehnerzahlen kann man an beiden Stellen eine Null streichen: 72 : 8 = 9.",
+    "topic": "Division"
+  },
+  {
+    "question": "Was ist die Summe aus 340 und 170?",
+    "options": [
+      "A: 410",
+      "B: 510",
+      "C: 500",
+      "D: 520"
+    ],
+    "correct": 1,
+    "explanation": "Um 340 und 170 zu addieren, kannst du erst 340 + 100 = 440 rechnen und dann 440 + 70 = 510.",
+    "topic": "Addition"
+  },
+  {
+    "question": "Rechne: 630 - 280",
+    "options": [
+      "A: 350",
+      "B: 370",
+      "C: 450",
+      "D: 420"
+    ],
+    "correct": 0,
+    "explanation": "Du kannst 630 - 200 = 430 rechnen und dann 430 - 80 = 350. Oder 630 - 300 + 20 = 350.",
+    "topic": "Subtraktion"
+  },
+  {
+    "question": "Was ist das Produkt von 6 und 40?",
+    "options": [
+      "A: 240",
+      "B: 204",
+      "C: 2400",
+      "D: 640"
+    ],
+    "correct": 0,
+    "explanation": "Rechne zuerst 6 mal 4, das ist 24. Hänge dann die Null von der 40 an, um 240 zu erhalten.",
+    "topic": "Multiplikation"
+  },
+  {
+    "question": "Teile 320 durch 8.",
+    "options": [
+      "A: 40",
+      "B: 4",
+      "C: 32",
+      "D: 80"
+    ],
+    "correct": 0,
+    "explanation": "Wenn du 32 durch 8 teilst, erhältst du 4. Da 320 die Null am Ende hat, ist das Ergebnis 40.",
+    "topic": "Division"
+  },
+  {
+    "question": "Berechne: 50 * 7 - 50",
+    "options": [
+      "A: 300",
+      "B: 350",
+      "C: 250",
+      "D: 400"
+    ],
+    "correct": 0,
+    "explanation": "Zuerst multiplizierst du: 50 * 7 = 350. Dann subtrahierst du: 350 - 50 = 300.",
+    "topic": "Gemischte Operationen"
+  },
+  {
+    "question": "Runde die Zahl 783 auf den nächsten Zehner.",
+    "options": [
+      "A: 780",
+      "B: 790",
+      "C: 700",
+      "D: 800"
+    ],
+    "correct": 0,
+    "explanation": "Da die Einerstelle (3) kleiner als 5 ist, rundest du ab. Die Zahl wird zu 780.",
+    "topic": "Runden"
+  },
+  {
+    "question": "Welche Zahl muss in die Lücke passen: 45 + ___ = 120?",
+    "options": [
+      "A: 65",
+      "B: 75",
+      "C: 85",
+      "D: 95"
+    ],
+    "correct": 1,
+    "explanation": "Um die fehlende Zahl zu finden, subtrahierst du 45 von 120: 120 - 45 = 75.",
+    "topic": "Lückenaufgaben / Ergänzen"
+  },
+  {
+    "question": "Welche der folgenden Zahlen ist ein Vielfaches von 9?",
+    "options": [
+      "A: 48",
+      "B: 54",
+      "C: 65",
+      "D: 70"
+    ],
+    "correct": 1,
+    "explanation": "Ein Vielfaches von 9 ist eine Zahl, die man durch 9 teilen kann, ohne einen Rest zu haben. 54 geteilt durch 9 ist 6.",
+    "topic": "Vielfache"
+  }
 ]

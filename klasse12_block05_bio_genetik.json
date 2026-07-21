@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Welche Stickstoffbase kommt in der DNA vor, nicht aber in der RNA?",
+    "options": [
+      "Adenin",
+      "Thymin",
+      "Uracil",
+      "Guanin"
+    ],
+    "correct": 1,
+    "explanation": "In der RNA ist Thymin durch Uracil ersetzt.",
+    "topic": "Molekulargenetik"
+  },
+  {
+    "question": "Mit welcher Base paart sich Guanin in der DNA?",
+    "options": [
+      "Adenin",
+      "Thymin",
+      "Cytosin",
+      "Uracil"
+    ],
+    "correct": 2,
+    "explanation": "Guanin und Cytosin paaren sich über drei Wasserstoffbrücken.",
+    "topic": "Molekulargenetik"
+  },
+  {
+    "question": "Wie viele Chromosomen besitzt eine normale menschliche Körperzelle?",
+    "options": [
+      "23",
+      "44",
+      "46",
+      "48"
+    ],
+    "correct": 2,
+    "explanation": "Der Mensch hat 46 Chromosomen (23 Paare).",
+    "topic": "Cytogenetik"
+  },
+  {
+    "question": "Wie viele Chromosomen enthält eine menschliche Keimzelle (Gamet)?",
+    "options": [
+      "23",
+      "46",
+      "22",
+      "92"
+    ],
+    "correct": 0,
+    "explanation": "Gameten sind haploid und besitzen 23 Chromosomen.",
+    "topic": "Meiose"
+  },
+  {
+    "question": "Wie heißt der Vorgang, bei dem mRNA am Ribosom in ein Protein übersetzt wird?",
+    "options": [
+      "Transkription",
+      "Translation",
+      "Replikation",
+      "Mutation"
+    ],
+    "correct": 1,
+    "explanation": "Bei der Translation wird die mRNA in eine Aminosäuresequenz übersetzt.",
+    "topic": "Proteinbiosynthese"
+  },
+  {
+    "question": "Wie nennt man das Umschreiben von DNA in mRNA?",
+    "options": [
+      "Translation",
+      "Replikation",
+      "Transkription",
+      "Konjugation"
+    ],
+    "correct": 2,
+    "explanation": "Die Transkription erzeugt mRNA als Abschrift eines Gens.",
+    "topic": "Proteinbiosynthese"
+  },
+  {
+    "question": "Aus wie vielen Basen besteht ein Codon (Basentriplett)?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correct": 1,
+    "explanation": "Ein Codon besteht aus drei aufeinanderfolgenden Basen.",
+    "topic": "Genetischer Code"
+  },
+  {
+    "question": "Welches Enzym synthetisiert bei der Transkription die mRNA?",
+    "options": [
+      "DNA-Polymerase",
+      "RNA-Polymerase",
+      "Helikase",
+      "Ligase"
+    ],
+    "correct": 1,
+    "explanation": "Die RNA-Polymerase baut die mRNA entlang des Matrizenstrangs auf.",
+    "topic": "Proteinbiosynthese"
+  },
+  {
+    "question": "Welches Enzym entwindet bei der Replikation die DNA-Doppelhelix?",
+    "options": [
+      "Ligase",
+      "Helikase",
+      "Primase",
+      "Polymerase"
+    ],
+    "correct": 1,
+    "explanation": "Die Helikase trennt die beiden DNA-Stränge.",
+    "topic": "Replikation"
+  },
+  {
+    "question": "Wie verläuft die DNA-Replikation?",
+    "options": [
+      "konservativ",
+      "semikonservativ",
+      "dispersiv",
+      "vollständig neu"
+    ],
+    "correct": 1,
+    "explanation": "Jeder Tochterstrang enthält einen alten und einen neuen Strang (Meselson-Stahl-Experiment).",
+    "topic": "Replikation"
+  },
+  {
+    "question": "Wie heißt Mendels 1. Regel (Kreuzung zweier reinerbiger Eltern)?",
+    "options": [
+      "Spaltungsregel",
+      "Uniformitätsregel",
+      "Unabhängigkeitsregel",
+      "Koppelungsregel"
+    ],
+    "correct": 1,
+    "explanation": "Die F1-Generation reinerbiger Eltern ist einheitlich (uniform).",
+    "topic": "Klassische Genetik"
+  },
+  {
+    "question": "In welchem Verhältnis spalten sich die Merkmale eines dominant-rezessiven Erbgangs in der F2-Generation phänotypisch auf?",
+    "options": [
+      "1:1",
+      "9:3:3:1",
+      "3:1",
+      "1:2:1"
+    ],
+    "correct": 2,
+    "explanation": "Beim monohybriden Erbgang ist das Phänotyp-Verhältnis 3:1.",
+    "topic": "Klassische Genetik"
+  },
+  {
+    "question": "Wie lautet das genotypische Spaltungsverhältnis in der F2 eines monohybriden Erbgangs?",
+    "options": [
+      "3:1",
+      "1:2:1",
+      "1:1",
+      "9:3:3:1"
+    ],
+    "correct": 1,
+    "explanation": "Genotypisch ergibt sich 1 (reinerbig dominant) : 2 (mischerbig) : 1 (reinerbig rezessiv).",
+    "topic": "Klassische Genetik"
+  },
+  {
+    "question": "Wie bezeichnet man ein Lebewesen mit zwei gleichen Allelen für ein Merkmal?",
+    "options": [
+      "heterozygot",
+      "homozygot",
+      "hemizygot",
+      "polyploid"
+    ],
+    "correct": 1,
+    "explanation": "Homozygot (reinerbig) bedeutet zwei identische Allele.",
+    "topic": "Klassische Genetik"
+  },
+  {
+    "question": "Welches Phänotyp-Verhältnis erwartet man in der F2 eines dihybriden Erbgangs (zwei unabhängige Merkmale)?",
+    "options": [
+      "3:1",
+      "1:2:1",
+      "9:3:3:1",
+      "1:1:1:1"
+    ],
+    "correct": 2,
+    "explanation": "Bei zwei unabhängig vererbten Merkmalen ergibt sich 9:3:3:1.",
+    "topic": "Klassische Genetik"
+  },
+  {
+    "question": "Wie heißt die Reduktionsteilung, bei der haploide Keimzellen entstehen?",
+    "options": [
+      "Mitose",
+      "Meiose",
+      "Zytokinese",
+      "Replikation"
+    ],
+    "correct": 1,
+    "explanation": "Die Meiose halbiert den Chromosomensatz.",
+    "topic": "Meiose"
+  },
+  {
+    "question": "Bei welcher Teilung entstehen zwei genetisch identische Tochterzellen?",
+    "options": [
+      "Meiose I",
+      "Meiose II",
+      "Mitose",
+      "Befruchtung"
+    ],
+    "correct": 2,
+    "explanation": "Die Mitose erzeugt zwei erbgleiche Tochterzellen.",
+    "topic": "Zellteilung"
+  },
+  {
+    "question": "Wodurch wird beim Menschen das Geschlecht bestimmt?",
+    "options": [
+      "durch die Autosomen",
+      "durch die Gonosomen X und Y",
+      "durch Plasmide",
+      "durch die Chromosomenzahl"
+    ],
+    "correct": 1,
+    "explanation": "Die Geschlechtschromosomen (Gonosomen) X und Y legen das Geschlecht fest.",
+    "topic": "Humangenetik"
+  },
+  {
+    "question": "Welche Gonosomen-Kombination hat ein Mann?",
+    "options": [
+      "XX",
+      "XY",
+      "X0",
+      "YY"
+    ],
+    "correct": 1,
+    "explanation": "Männer besitzen ein X- und ein Y-Chromosom.",
+    "topic": "Humangenetik"
+  },
+  {
+    "question": "Wie wird die Bluterkrankheit (Hämophilie A) vererbt?",
+    "options": [
+      "autosomal-dominant",
+      "X-chromosomal-rezessiv",
+      "Y-chromosomal",
+      "mitochondrial"
+    ],
+    "correct": 1,
+    "explanation": "Hämophilie A wird X-chromosomal-rezessiv vererbt, daher sind Männer häufiger betroffen.",
+    "topic": "Humangenetik"
+  },
+  {
+    "question": "Wie nennt man eine dauerhafte Veränderung der DNA-Sequenz?",
+    "options": [
+      "Modifikation",
+      "Mutation",
+      "Selektion",
+      "Replikation"
+    ],
+    "correct": 1,
+    "explanation": "Eine Mutation ist eine vererbbare Veränderung des Erbguts.",
+    "topic": "Mutationen"
+  },
+  {
+    "question": "Wie heißt eine Mutation, die nur eine einzelne Base betrifft?",
+    "options": [
+      "Genommutation",
+      "Chromosomenmutation",
+      "Punktmutation",
+      "Polyploidie"
+    ],
+    "correct": 2,
+    "explanation": "Eine Punktmutation verändert ein einzelnes Basenpaar.",
+    "topic": "Mutationen"
+  },
+  {
+    "question": "Das Down-Syndrom (Trisomie 21) ist ein Beispiel für welche Mutationsart?",
+    "options": [
+      "Genmutation",
+      "Punktmutation",
+      "Genommutation",
+      "stille Mutation"
+    ],
+    "correct": 2,
+    "explanation": "Bei einer Genommutation ist die Chromosomenzahl verändert (hier ein zusätzliches Chromosom 21).",
+    "topic": "Mutationen"
+  },
+  {
+    "question": "Wie heißt eine Mutation, die trotz Basenaustausch dieselbe Aminosäure codiert?",
+    "options": [
+      "Missense-Mutation",
+      "Nonsense-Mutation",
+      "stille (stumme) Mutation",
+      "Rasterschub"
+    ],
+    "correct": 2,
+    "explanation": "Wegen des degenerierten Codes kann ein Basenaustausch ohne Folge bleiben (stille Mutation).",
+    "topic": "Mutationen"
+  },
+  {
+    "question": "Was bedeutet es, dass der genetische Code degeneriert ist?",
+    "options": [
+      "Eine Aminosäure wird von mehreren Codons codiert",
+      "Ein Codon codiert mehrere Aminosäuren",
+      "Der Code ist nicht universell",
+      "Die Codons überlappen sich"
+    ],
+    "correct": 0,
+    "explanation": "Mehrere verschiedene Codons können für dieselbe Aminosäure stehen.",
+    "topic": "Genetischer Code"
+  },
+  {
+    "question": "Wie lautet das Start-Codon der Proteinbiosynthese (codiert Methionin)?",
+    "options": [
+      "UAA",
+      "AUG",
+      "UGA",
+      "GGG"
+    ],
+    "correct": 1,
+    "explanation": "AUG ist das Startcodon und codiert Methionin.",
+    "topic": "Genetischer Code"
+  },
+  {
+    "question": "Welches der folgenden ist ein Stopp-Codon?",
+    "options": [
+      "AUG",
+      "UAA",
+      "GCU",
+      "AAA"
+    ],
+    "correct": 1,
+    "explanation": "UAA, UAG und UGA sind Stopp-Codons und beenden die Translation.",
+    "topic": "Genetischer Code"
+  },
+  {
+    "question": "Welche Moleküle transportieren bei der Translation die Aminosäuren zum Ribosom?",
+    "options": [
+      "mRNA",
+      "rRNA",
+      "tRNA",
+      "DNA"
+    ],
+    "correct": 2,
+    "explanation": "tRNA-Moleküle bringen passende Aminosäuren entsprechend dem Codon heran.",
+    "topic": "Proteinbiosynthese"
+  },
+  {
+    "question": "In welcher Phase des Zellzyklus wird die DNA verdoppelt?",
+    "options": [
+      "G1-Phase",
+      "S-Phase",
+      "M-Phase",
+      "G0-Phase"
+    ],
+    "correct": 1,
+    "explanation": "Die DNA-Replikation findet in der S-Phase (Synthese-Phase) statt.",
+    "topic": "Zellzyklus"
+  },
+  {
+    "question": "Wie nennt man genetisch identische Nachkommen aus ungeschlechtlicher Vermehrung?",
+    "options": [
+      "Hybriden",
+      "Klone",
+      "Mutanten",
+      "Chimären"
+    ],
+    "correct": 1,
+    "explanation": "Klone sind erbgleiche Nachkommen.",
+    "topic": "Gentechnik"
+  },
+  {
+    "question": "Welche Werkzeuge der Gentechnik schneiden DNA an bestimmten Sequenzen?",
+    "options": [
+      "Ligasen",
+      "Restriktionsenzyme",
+      "Polymerasen",
+      "Helikasen"
+    ],
+    "correct": 1,
+    "explanation": "Restriktionsenzyme zerschneiden DNA an spezifischen Erkennungssequenzen.",
+    "topic": "Gentechnik"
+  },
+  {
+    "question": "Welches Enzym verknüpft (verklebt) DNA-Fragmente miteinander?",
+    "options": [
+      "Helikase",
+      "DNA-Ligase",
+      "RNA-Polymerase",
+      "Restriktase"
+    ],
+    "correct": 1,
+    "explanation": "Die DNA-Ligase verbindet DNA-Enden durch Knüpfen von Bindungen.",
+    "topic": "Gentechnik"
+  },
+  {
+    "question": "Wozu dient die Polymerase-Kettenreaktion (PCR)?",
+    "options": [
+      "zur Herstellung von Proteinen",
+      "zur Vervielfältigung von DNA",
+      "zum Abbau von RNA",
+      "zum Schneiden von DNA"
+    ],
+    "correct": 1,
+    "explanation": "Die PCR vervielfältigt gezielt DNA-Abschnitte.",
+    "topic": "Gentechnik"
+  },
+  {
+    "question": "Wie heißen die ringförmigen DNA-Moleküle in Bakterien, die oft als Vektoren genutzt werden?",
+    "options": [
+      "Plasmide",
+      "Ribosomen",
+      "Lysosomen",
+      "Chromatiden"
+    ],
+    "correct": 0,
+    "explanation": "Plasmide sind ringförmige DNA-Moleküle und dienen in der Gentechnik als Genfähren.",
+    "topic": "Gentechnik"
+  },
+  {
+    "question": "Wie nennt man das Ablesen eines Gens und die Bildung seines Genprodukts?",
+    "options": [
+      "Genexpression",
+      "Genmutation",
+      "Genkartierung",
+      "Gendrift"
+    ],
+    "correct": 0,
+    "explanation": "Genexpression umfasst Transkription und Translation eines Gens.",
+    "topic": "Molekulargenetik"
+  },
+  {
+    "question": "Wo liegt beim Menschen das Erbgut hauptsächlich vor?",
+    "options": [
+      "im Zellkern",
+      "in den Ribosomen",
+      "in der Zellmembran",
+      "im Golgi-Apparat"
+    ],
+    "correct": 0,
+    "explanation": "Der Großteil der DNA liegt im Zellkern (ein kleiner Teil in den Mitochondrien).",
+    "topic": "Cytogenetik"
+  },
+  {
+    "question": "Wie bezeichnet man die gesamte Erbinformation (DNA) eines Organismus?",
+    "options": [
+      "Genom",
+      "Phänotyp",
+      "Allel",
+      "Codon"
+    ],
+    "correct": 0,
+    "explanation": "Das Genom umfasst die gesamte Erbinformation eines Organismus.",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "question": "Wie nennt man das äußere Erscheinungsbild eines Organismus?",
+    "options": [
+      "Genotyp",
+      "Phänotyp",
+      "Karyotyp",
+      "Genom"
+    ],
+    "correct": 1,
+    "explanation": "Der Phänotyp ist die Ausprägung der Merkmale; der Genotyp ist die genetische Ausstattung.",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "question": "Wie heißen die verschiedenen Zustandsformen eines Gens?",
+    "options": [
+      "Allele",
+      "Codons",
+      "Genorte",
+      "Gameten"
+    ],
+    "correct": 0,
+    "explanation": "Allele sind unterschiedliche Varianten desselben Gens.",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "question": "Von welchem Elternteil werden die Mitochondrien (und ihre DNA) überwiegend vererbt?",
+    "options": [
+      "vom Vater",
+      "von der Mutter",
+      "von beiden gleich",
+      "gar nicht"
+    ],
+    "correct": 1,
+    "explanation": "Mitochondrien werden maternal, also über die Eizelle der Mutter, vererbt.",
+    "topic": "Humangenetik"
+  }
+]

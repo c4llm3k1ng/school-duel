@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Wie ändert sich die Schwingungsdauer eines Federpendels, wenn man die schwingende Masse vervierfacht (bei gleicher Federkonstante)?",
+    "options": [
+      "Sie halbiert sich",
+      "Sie bleibt gleich",
+      "Sie verdoppelt sich",
+      "Sie vervierfacht sich"
+    ],
+    "correct": 2,
+    "explanation": "Die Schwingungsdauer T=2π√(m/k) ist proportional zur Wurzel der Masse. Bei vierfacher Masse gilt √4=2, also verdoppelt sich T.",
+    "topic": "Schwingungen"
+  },
+  {
+    "question": "Von welcher Größe hängt die Schwingungsdauer eines mathematischen Pendels (bei kleinen Auslenkungen) NICHT ab?",
+    "options": [
+      "Fadenlänge",
+      "Erdbeschleunigung",
+      "Masse des Pendelkörpers",
+      "Ort auf der Erde"
+    ],
+    "correct": 2,
+    "explanation": "Die Schwingungsdauer T=2π√(L/g) hängt nur von Fadenlänge L und Erdbeschleunigung g ab – die Masse des Pendelkörpers hat keinen Einfluss.",
+    "topic": "Schwingungen"
+  },
+  {
+    "question": "Was versteht man unter Resonanz bei einem schwingenden System?",
+    "options": [
+      "Die maximale Dämpfung der Schwingung",
+      "Die Überlagerung zweier gegenphasiger Wellen",
+      "Die Erregerfrequenz stimmt mit der Eigenfrequenz überein – die Amplitude wird maximal",
+      "Den vollständigen Stillstand der Schwingung"
+    ],
+    "correct": 2,
+    "explanation": "Resonanz tritt auf, wenn die Erregerfrequenz mit der Eigenfrequenz des Systems übereinstimmt – die Amplitude wird dann maximal.",
+    "topic": "Schwingungen"
+  },
+  {
+    "question": "Was ist ein harmonischer Oszillator?",
+    "options": [
+      "Ein System, das sich mit konstanter Geschwindigkeit bewegt",
+      "Ein System, dessen Rückstellkraft proportional zur Auslenkung ist (F = −k·x)",
+      "Ein System mit zunehmender Amplitude ohne Dämpfung",
+      "Ein Pendel mit sehr großen Ausschlägen"
+    ],
+    "correct": 1,
+    "explanation": "Beim harmonischen Oszillator ist die Rückstellkraft proportional zur Auslenkung (F = −k·x) – dies führt zu sinusförmiger Schwingung.",
+    "topic": "Schwingungen"
+  },
+  {
+    "question": "Was passiert bei einer gedämpften Schwingung?",
+    "options": [
+      "Die Frequenz nimmt zu",
+      "Die Amplitude nimmt mit der Zeit ab",
+      "Die Amplitude nimmt zu",
+      "Die Periode wird kürzer"
+    ],
+    "correct": 1,
+    "explanation": "Bei einer gedämpften Schwingung wird Energie dissipiert (z.B. durch Reibung) – die Amplitude nimmt mit der Zeit ab.",
+    "topic": "Schwingungen"
+  },
+  {
+    "question": "Welche Beziehung besteht zwischen Wellengeschwindigkeit c, Frequenz f und Wellenlänge λ?",
+    "options": [
+      "c = f + λ",
+      "c = f · λ",
+      "c = f / λ",
+      "c = λ / f"
+    ],
+    "correct": 1,
+    "explanation": "Die Grundgleichung der Wellenlehre lautet c = f · λ.",
+    "topic": "Wellen"
+  },
+  {
+    "question": "Was versteht man unter konstruktiver Interferenz?",
+    "options": [
+      "Zwei Wellen löschen sich gegenseitig aus",
+      "Zwei gleichphasige Wellen überlagern sich und die Amplituden addieren sich",
+      "Eine Welle wird an einer Wand reflektiert",
+      "Eine Welle ändert ihre Frequenz"
+    ],
+    "correct": 1,
+    "explanation": "Konstruktive Interferenz tritt auf, wenn zwei Wellen gleicher Phase überlagern – die Amplituden addieren sich.",
+    "topic": "Wellen"
+  },
+  {
+    "question": "Was ist die Bedingung für destruktive Interferenz?",
+    "options": [
+      "Beide Wellen haben gleiche Phase",
+      "Der Gangunterschied beträgt ein ganzzahliges Vielfaches der Wellenlänge",
+      "Der Gangunterschied beträgt ein ungerades Vielfaches der halben Wellenlänge",
+      "Die Frequenzen der beiden Wellen sind verschieden"
+    ],
+    "correct": 2,
+    "explanation": "Destruktive Interferenz tritt bei Gangunterschied Δs = (2n+1)·λ/2, also λ/2, 3λ/2, … auf.",
+    "topic": "Wellen"
+  },
+  {
+    "question": "Wie ändert sich die wahrgenommene Frequenz, wenn sich eine Schallquelle auf einen Beobachter zubewegt (Dopplereffekt)?",
+    "options": [
+      "Sie bleibt gleich",
+      "Sie nimmt ab",
+      "Sie nimmt zu",
+      "Sie schwankt periodisch"
+    ],
+    "correct": 2,
+    "explanation": "Bewegt sich die Schallquelle auf den Beobachter zu, werden die Wellenfronten gestaucht – die wahrgenommene Frequenz steigt.",
+    "topic": "Wellen"
+  },
+  {
+    "question": "Was sind stehende Wellen?",
+    "options": [
+      "Wellen, die sich mit konstanter Geschwindigkeit ausbreiten",
+      "Überlagerung zweier gleichfrequenter, gegenläufiger Wellen gleicher Amplitude",
+      "Wellen, die nur in Festkörpern auftreten",
+      "Wellen mit unendlicher Wellenlänge"
+    ],
+    "correct": 1,
+    "explanation": "Stehende Wellen entstehen durch Überlagerung zweier gegenläufiger Wellen gleicher Frequenz und Amplitude; es bilden sich Schwingungsknoten und -bäuche.",
+    "topic": "Wellen"
+  },
+  {
+    "question": "Was unterscheidet Transversalwellen von Longitudinalwellen?",
+    "options": [
+      "Bei Transversalwellen liegt die Schwingungsrichtung parallel zur Ausbreitung",
+      "Bei Transversalwellen liegt die Schwingungsrichtung senkrecht zur Ausbreitung",
+      "Longitudinalwellen können sich nicht in Gasen ausbreiten",
+      "Transversalwellen haben keine Wellenlänge"
+    ],
+    "correct": 1,
+    "explanation": "Bei Transversalwellen (z.B. Lichtwellen) schwingt das Medium senkrecht zur Ausbreitungsrichtung; bei Longitudinalwellen (z.B. Schall) parallel dazu.",
+    "topic": "Wellen"
+  },
+  {
+    "question": "Was gilt für den Gesamtimpuls eines abgeschlossenen Systems?",
+    "options": [
+      "Er wächst mit der Zeit",
+      "Er nimmt ab, wenn Reibung wirkt",
+      "Er bleibt konstant (Impulserhaltungssatz)",
+      "Er ist immer null"
+    ],
+    "correct": 2,
+    "explanation": "In einem abgeschlossenen System (keine äußeren Kräfte) ist der Gesamtimpuls konstant – das ist der Impulserhaltungssatz.",
+    "topic": "Impuls"
+  },
+  {
+    "question": "Ein Körper mit m = 2 kg bewegt sich mit v = 3 m/s. Wie groß ist sein Impuls?",
+    "options": [
+      "1,5 kg·m/s",
+      "5 kg·m/s",
+      "6 kg·m/s",
+      "9 kg·m/s"
+    ],
+    "correct": 2,
+    "explanation": "p = m · v = 2 kg · 3 m/s = 6 kg·m/s.",
+    "topic": "Impuls"
+  },
+  {
+    "question": "Was bleibt bei einem vollkommen elastischen Stoß erhalten?",
+    "options": [
+      "Nur der Impuls",
+      "Nur die kinetische Energie",
+      "Sowohl Impuls als auch kinetische Energie",
+      "Nur die potenzielle Energie"
+    ],
+    "correct": 2,
+    "explanation": "Beim elastischen Stoß sind sowohl der Gesamtimpuls als auch die gesamte kinetische Energie erhalten.",
+    "topic": "Stöße"
+  },
+  {
+    "question": "Bei welchem Stoßtyp vereinigen sich beide Körper nach dem Zusammenprall?",
+    "options": [
+      "Elastischer Stoß",
+      "Teilelastischer Stoß",
+      "Vollkommen unelastischer Stoß",
+      "Gerader zentraler Stoß"
+    ],
+    "correct": 2,
+    "explanation": "Beim vollkommen unelastischen Stoß verbinden sich die Körper und bewegen sich danach gemeinsam – dabei geht kinetische Energie verloren.",
+    "topic": "Stöße"
+  },
+  {
+    "question": "Welche Formel beschreibt die Zentripetalkraft bei gleichförmiger Kreisbewegung?",
+    "options": [
+      "F = m · v",
+      "F = m · v² / r",
+      "F = m · r · ω",
+      "F = m · g"
+    ],
+    "correct": 1,
+    "explanation": "Die Zentripetalkraft ist F = m·v²/r = m·ω²·r und wirkt stets zur Kreismitte hin.",
+    "topic": "Kreisbewegung"
+  },
+  {
+    "question": "Was ist die Winkelgeschwindigkeit ω eines Körpers mit der Umlaufdauer T?",
+    "options": [
+      "ω = T / (2π)",
+      "ω = 2π · T",
+      "ω = 2π / T",
+      "ω = T² / (2π)"
+    ],
+    "correct": 2,
+    "explanation": "Die Winkelgeschwindigkeit ω = 2π / T gibt an, wie viel Bogenmaß pro Sekunde zurückgelegt wird.",
+    "topic": "Kreisbewegung"
+  },
+  {
+    "question": "Wie lautet Newtons Gravitationsgesetz für den Betrag der Kraft zwischen zwei Massen?",
+    "options": [
+      "F = G · m₁ · m₂ / r",
+      "F = G · m₁ · m₂ / r²",
+      "F = G · (m₁ + m₂) / r²",
+      "F = G · m₁ / r²"
+    ],
+    "correct": 1,
+    "explanation": "Newtons Gravitationsgesetz: F = G·m₁·m₂/r², wobei G die Gravitationskonstante und r der Abstand der Massen ist.",
+    "topic": "Gravitation"
+  },
+  {
+    "question": "Wie ändert sich die Gravitationskraft zwischen zwei Körpern, wenn der Abstand verdoppelt wird?",
+    "options": [
+      "Sie halbiert sich",
+      "Sie verdoppelt sich",
+      "Sie wird viermal kleiner",
+      "Sie wird viermal größer"
+    ],
+    "correct": 2,
+    "explanation": "Da F ∝ 1/r², bewirkt doppelter Abstand eine Verringerung der Kraft auf ein Viertel.",
+    "topic": "Gravitation"
+  },
+  {
+    "question": "Was ist die Fluchtgeschwindigkeit von der Erdoberfläche?",
+    "options": [
+      "7,9 km/s",
+      "11,2 km/s",
+      "29,8 km/s",
+      "300 000 km/s"
+    ],
+    "correct": 1,
+    "explanation": "Die Fluchtgeschwindigkeit der Erde beträgt ca. 11,2 km/s – mit dieser Mindestgeschwindigkeit kann ein Körper dem Erdgravitationsfeld entkommen.",
+    "topic": "Gravitation"
+  },
+  {
+    "question": "Was beschreibt das Hookesche Gesetz?",
+    "options": [
+      "F = m · a",
+      "F = k · x (Rückstellkraft proportional zur Auslenkung)",
+      "F = p · V",
+      "F = E · A · Δl / L"
+    ],
+    "correct": 1,
+    "explanation": "Das Hookesche Gesetz F = k·x besagt, dass die Rückstellkraft einer Feder proportional zur Auslenkung x ist; k ist die Federkonstante.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist das Drehmoment M einer Kraft F mit senkrechtem Hebelarm r?",
+    "options": [
+      "M = F / r",
+      "M = F · r",
+      "M = F · r²",
+      "M = F + r"
+    ],
+    "correct": 1,
+    "explanation": "Das Drehmoment M = F · r ist das Produkt aus Kraft und ihrem senkrechten Abstand zur Drehachse.",
+    "topic": "Rotation"
+  },
+  {
+    "question": "Wie lautet das Trägheitsmoment einer Punktmasse m im Abstand r von der Drehachse?",
+    "options": [
+      "I = m / r",
+      "I = m · r",
+      "I = m · r²",
+      "I = m² · r"
+    ],
+    "correct": 2,
+    "explanation": "Das Trägheitsmoment einer Punktmasse ist I = m·r² – es ist das rotatorische Äquivalent zur trägen Masse.",
+    "topic": "Rotation"
+  },
+  {
+    "question": "Was bleibt bei einem rotierenden abgeschlossenen System erhalten?",
+    "options": [
+      "Drehmoment",
+      "Drehimpuls L = I · ω",
+      "Winkelgeschwindigkeit",
+      "Trägheitsmoment"
+    ],
+    "correct": 1,
+    "explanation": "Der Drehimpuls L = I·ω bleibt in einem abgeschlossenen System konstant (Drehimpulserhaltungssatz).",
+    "topic": "Rotation"
+  },
+  {
+    "question": "Warum dreht sich eine Eiskunstläuferin schneller, wenn sie die Arme anzieht?",
+    "options": [
+      "Die Schwerkraft nimmt ab",
+      "Das Trägheitsmoment sinkt, daher muss die Winkelgeschwindigkeit steigen (L = I·ω = const.)",
+      "Sie bekommt mehr Antriebskraft vom Eis",
+      "Ihre Masse verringert sich"
+    ],
+    "correct": 1,
+    "explanation": "L = I·ω = const. Zieht sie die Arme ein, sinkt I; damit muss ω zunehmen, damit L konstant bleibt.",
+    "topic": "Rotation"
+  },
+  {
+    "question": "Welche kinetische Energie hat ein Körper der Masse m mit Geschwindigkeit v?",
+    "options": [
+      "E = m · v",
+      "E = m · v²",
+      "E = ½ · m · v²",
+      "E = 2 · m · v"
+    ],
+    "correct": 2,
+    "explanation": "Die kinetische Energie beträgt E_kin = ½·m·v².",
+    "topic": "Energie"
+  },
+  {
+    "question": "Was besagt der Energieerhaltungssatz?",
+    "options": [
+      "Energie kann beliebig erzeugt werden",
+      "Energie wird bei jedem Prozess weniger",
+      "Die Gesamtenergie eines abgeschlossenen Systems bleibt konstant",
+      "Kinetische Energie ist immer gleich der potenziellen Energie"
+    ],
+    "correct": 2,
+    "explanation": "In einem abgeschlossenen System ist die Gesamtenergie konstant – Energie kann weder erzeugt noch vernichtet, nur umgewandelt werden.",
+    "topic": "Energie"
+  },
+  {
+    "question": "Welche potenzielle Energie hat ein Körper der Masse m auf der Höhe h?",
+    "options": [
+      "E = m · g",
+      "E = m · h",
+      "E = m · g · h",
+      "E = ½ · m · g · h"
+    ],
+    "correct": 2,
+    "explanation": "Die Lageenergie im homogenen Schwerefeld ist E_pot = m·g·h.",
+    "topic": "Energie"
+  },
+  {
+    "question": "Ein 60-kg-Körper fällt reibungsfrei aus 10 m Höhe (g = 10 m/s²). Wie groß ist seine kinetische Energie kurz vor dem Aufprall?",
+    "options": [
+      "600 J",
+      "6 000 J",
+      "60 000 J",
+      "300 J"
+    ],
+    "correct": 1,
+    "explanation": "E_kin = E_pot = m·g·h = 60 kg · 10 m/s² · 10 m = 6 000 J.",
+    "topic": "Energie"
+  },
+  {
+    "question": "Wie ist mechanische Arbeit W definiert (Kraft F parallel zum Weg s)?",
+    "options": [
+      "W = F / s",
+      "W = F + s",
+      "W = F · s",
+      "W = F · s²"
+    ],
+    "correct": 2,
+    "explanation": "Mechanische Arbeit W = F · s (bei paralleler Kraft; allgemein W = F · s · cos α).",
+    "topic": "Arbeit und Leistung"
+  },
+  {
+    "question": "Wie ist Leistung P definiert?",
+    "options": [
+      "P = F · t",
+      "P = W / t (verrichtete Arbeit pro Zeit)",
+      "P = m · v",
+      "P = F · m"
+    ],
+    "correct": 1,
+    "explanation": "Leistung ist die pro Zeiteinheit verrichtete Arbeit: P = W/t = F·v.",
+    "topic": "Arbeit und Leistung"
+  },
+  {
+    "question": "Was versteht man unter dem Wirkungsgrad η einer Maschine?",
+    "options": [
+      "η = Eingangsleistung / Ausgangsleistung",
+      "η = Nutzenergie / zugeführte Energie",
+      "η = Verlustenergie / Nutzenergie",
+      "η = Ausgangsleistung · Eingangsleistung"
+    ],
+    "correct": 1,
+    "explanation": "Der Wirkungsgrad η = W_nutz / W_zu gibt an, welcher Anteil der zugeführten Energie als Nutzenergie anfällt. Er ist immer ≤ 1.",
+    "topic": "Arbeit und Leistung"
+  },
+  {
+    "question": "Welche Aussage zur speziellen Relativitätstheorie Einsteins ist korrekt?",
+    "options": [
+      "Die Lichtgeschwindigkeit ist vom Beobachter abhängig",
+      "Alle Inertialsysteme sind gleichwertig und die Lichtgeschwindigkeit ist konstant",
+      "Masse und Energie sind vollständig unabhängig voneinander",
+      "Zeit ist für alle Beobachter absolut gleich"
+    ],
+    "correct": 1,
+    "explanation": "Die SRT beruht auf zwei Postulaten: Relativitätsprinzip (alle Inertialsysteme gleichwertig) und Konstanz der Lichtgeschwindigkeit c im Vakuum.",
+    "topic": "Relativität"
+  },
+  {
+    "question": "Was besagt Einsteins Formel E = m · c²?",
+    "options": [
+      "Masse und Energie sind voneinander unabhängig",
+      "Masse ist eine Form von Energie und kann in diese umgewandelt werden",
+      "c steht für die Schallgeschwindigkeit",
+      "Energie ist immer größer als die entsprechende Masse"
+    ],
+    "correct": 1,
+    "explanation": "E = mc² zeigt, dass Masse und Energie äquivalent sind; c ist die Lichtgeschwindigkeit im Vakuum.",
+    "topic": "Relativität"
+  },
+  {
+    "question": "Was beschreibt die Zeitdilatation in der speziellen Relativitätstheorie?",
+    "options": [
+      "Für schnell bewegte Systeme vergeht die Zeit langsamer als für den ruhenden Beobachter",
+      "Für schnell bewegte Systeme vergeht die Zeit schneller",
+      "Die Zeit ist für alle Beobachter exakt gleich",
+      "Zeit existiert nicht in bewegten Bezugssystemen"
+    ],
+    "correct": 0,
+    "explanation": "Zeitdilatation: Ein bewegtes System zeigt aus Sicht des ruhenden Beobachters eine verlangsamte Uhr – je schneller die Bewegung, desto stärker.",
+    "topic": "Relativität"
+  },
+  {
+    "question": "Wie nennt man die relativistische Verkürzung von Längen in Bewegungsrichtung?",
+    "options": [
+      "Zeitdilatation",
+      "Lorentzkontraktion",
+      "Massendefekt",
+      "Dopplerverschiebung"
+    ],
+    "correct": 1,
+    "explanation": "Die Lorentzkontraktion beschreibt die Verkürzung eines Objekts in seiner Bewegungsrichtung bei relativistischen Geschwindigkeiten.",
+    "topic": "Relativität"
+  },
+  {
+    "question": "Wie lautet Newtons zweites Gesetz (Grundgesetz der Mechanik)?",
+    "options": [
+      "F = m · a",
+      "F = m · v",
+      "F = m · s",
+      "F = p / t"
+    ],
+    "correct": 0,
+    "explanation": "Das zweite Newtonsche Gesetz F = m·a (Kraft = Masse × Beschleunigung) ist das zentrale Grundgesetz der klassischen Mechanik.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Ein Körper bewegt sich mit konstanter Geschwindigkeit. Was gilt für die auf ihn wirkende Gesamtkraft?",
+    "options": [
+      "Eine Kraft in Bewegungsrichtung",
+      "Eine Kraft entgegen der Bewegungsrichtung",
+      "Die resultierende Kraft ist null (Kräftegleichgewicht)",
+      "Nur die Schwerkraft wirkt"
+    ],
+    "correct": 2,
+    "explanation": "Gemäß dem ersten Newtonschen Gesetz (Trägheitsprinzip) bleibt ein Körper in gleichförmiger Bewegung, wenn keine resultierende Kraft wirkt.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist die Dritte Newtonsche Axiom (actio = reactio)?",
+    "options": [
+      "Jede Kraft erzeugt eine Beschleunigung",
+      "Zu jeder Kraft existiert eine gleich große, entgegengesetzt gerichtete Gegenkraft",
+      "Die Masse bleibt bei allen Kräften konstant",
+      "Kräfte können sich nicht aufheben"
+    ],
+    "correct": 1,
+    "explanation": "Actio = reactio: Übt Körper A auf Körper B eine Kraft aus, wirkt auf A eine gleich große, entgegengesetzte Kraft von B.",
+    "topic": "Mechanik"
+  },
+  {
+    "question": "Was ist Impuls p einer Kraft F, die über die Zeit Δt wirkt (Kraftstoß)?",
+    "options": [
+      "p = F · Δt",
+      "p = F / Δt",
+      "p = F + Δt",
+      "p = F · Δt²"
+    ],
+    "correct": 0,
+    "explanation": "Der Kraftstoß F·Δt entspricht der Impulsänderung: Δp = F·Δt. Der Gesamtimpuls p = m·v eines Körpers ist das Produkt aus Masse und Geschwindigkeit.",
+    "topic": "Impuls"
+  }
+]

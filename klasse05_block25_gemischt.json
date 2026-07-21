@@ -1,42 +1,482 @@
 [
-  {"question":"Wie viel ist 7 × 8?","options":["54","56","58","64"],"correct":1,"explanation":"7 × 8 = 56. Das kleine Einmaleins sollte man bis Klasse 5 sicher beherrschen – wichtige Grundlage für alle weiteren Rechnungen.","topic":"Mathematik"},
-  {"question":"Was ist die Hauptstadt von Deutschland?","options":["München","Berlin","Hamburg","Frankfurt"],"correct":1,"explanation":"Berlin: Hauptstadt seit der Wiedervereinigung 1990 (offiziell seit 1991 Regierungssitz). Größte Stadt Deutschlands mit ca. 3,7 Mio. Einwohnern. Sitz von Bundestag und Bundesregierung.","topic":"Erdkunde"},
-  {"question":"Welches Wort ist ein Nomen (Substantiv)?","options":["laufen","schnell","Tisch","und"],"correct":2,"explanation":"Nomen (Substantiv): bezeichnet Personen, Tiere, Dinge, Begriffe. Immer großgeschrieben im Deutschen! 'Tisch' ist ein Nomen. 'laufen' = Verb, 'schnell' = Adjektiv, 'und' = Konjunktion.","topic":"Deutsch"},
-  {"question":"Wie heißt der größte Ozean der Erde?","options":["Atlantik","Pazifik","Indischer Ozean","Arktischer Ozean"],"correct":1,"explanation":"Pazifik: größter und tiefster Ozean (ca. 165 Mio. km², über 30% der Erdoberfläche). Tiefste Stelle: Marianengraben (~11 000 m). Grenzt an Asien, Australien und Amerika.","topic":"Erdkunde"},
-  {"question":"Welches Tier legt Eier und säugt trotzdem seine Jungen?","options":["Känguru","Schnabeltier – ein Säugetier, das Eier legt, aber seine Jungen mit Milch säugt; lebt in Australien","Delfin","Pinguin"],"correct":1,"explanation":"Schnabeltier: gehört zu den Kloakentieren (Monotremata), einer urtümlichen Säugetiergruppe. Hat Schnabel wie eine Ente, legt Eier wie ein Vogel, säugt aber wie ein Säugetier. Nur in Australien.","topic":"Biologie"},
-  {"question":"Was ist 1/2 + 1/4?","options":["2/6","3/4","1/3","2/4"],"correct":1,"explanation":"1/2 + 1/4: gemeinsamen Nenner finden (4). 1/2 = 2/4. 2/4 + 1/4 = 3/4. Merke: Brüche kann man nur addieren, wenn sie den gleichen Nenner haben!","topic":"Mathematik"},
-  {"question":"In welchem Jahrhundert begann die Antike?","options":["Im 20. Jahrhundert","Etwa im 8. Jahrhundert v.Chr. (Gründung Roms, erste Olympische Spiele in Griechenland 776 v.Chr.) – endete mit dem Untergang des Weströmischen Reiches 476 n.Chr.","Im Mittelalter","Im 1. Jahrhundert n.Chr."],"correct":1,"explanation":"Antike: ca. 800 v.Chr. bis 476 n.Chr. Wichtige Daten: Gründung Roms 753 v.Chr. (Legende), Olympische Spiele 776 v.Chr., Untergang Westroms 476 n.Chr. (Ende der Antike, Beginn Mittelalter).","topic":"Geschichte"},
-  {"question":"Wie sagt man 'Katze' auf Englisch?","options":["dog","cat","bird","fish"],"correct":1,"explanation":"cat = Katze. dog = Hund. bird = Vogel. fish = Fisch. Grundwortschatz Tiere: wichtig für den Englischunterricht ab Klasse 5.","topic":"Englisch"},
-  {"question":"Was ist ein Vulkan?","options":["Ein Gebirge aus Eis","Eine Öffnung in der Erdkruste, aus der heiße Lava, Gase und Asche austreten können – entsteht meist an den Rändern von Kontinentalplatten","Ein See","Ein Fluss"],"correct":1,"explanation":"Vulkan: Magma aus dem Erdinnern steigt auf und tritt als Lava aus. Bekannte Vulkane: Vesuv (zerstörte Pompeji 79 n.Chr.), Ätna, Kilauea (Hawaii). Vulkane entstehen oft an Plattengrenzen.","topic":"Erdkunde"},
-  {"question":"Wie viele Beine hat eine Spinne?","options":["6","8","10","4"],"correct":1,"explanation":"Spinnen: 8 Beine, gehören zu den Spinnentieren (Arachniden), NICHT zu den Insekten (die haben 6 Beine). Weitere Unterschiede: Spinnen haben 2 statt 3 Körperteile und keine Fühler.","topic":"Biologie"},
-  {"question":"Wie viel ist 144 ÷ 12?","options":["10","12","14","16"],"correct":1,"explanation":"144 ÷ 12 = 12. Probe: 12 × 12 = 144. Das Quadrat von 12 zu kennen hilft bei vielen Rechnungen (Geometrie, Flächen).","topic":"Mathematik"},
-  {"question":"Wer schrieb das Drama 'Romeo und Julia'?","options":["Johann Wolfgang von Goethe","William Shakespeare – ein englischer Dramatiker (1564–1616), der zu den bedeutendsten Schriftstellern der Weltliteratur zählt","Friedrich Schiller","Thomas Mann"],"correct":1,"explanation":"Shakespeare: schrieb auch Hamlet, Macbeth, Othello, Der Sommernachtstraum. Romeo und Julia: tragische Liebesgeschichte, Verona, verfeindete Familien. Bis heute weltweit aufgeführt und verfilmt.","topic":"Literatur"},
-  {"question":"Was ist die größte Wüste der Welt (Heißwüste)?","options":["Gobi","Sahara – mit ca. 9,2 Millionen km² die größte Heißwüste der Erde, liegt in Nordafrika","Kalahari","Atacama"],"correct":1,"explanation":"Sahara: erstreckt sich über mehrere Länder Nordafrikas. Größte Kältewüste der Welt ist hingegen die Antarktis. Gobi (Asien) und Kalahari (Südafrika) sind deutlich kleiner.","topic":"Erdkunde"},
-  {"question":"Was bedeutet 'Photosynthese'?","options":["Tieratmung","Der Prozess, bei dem Pflanzen mit Hilfe von Sonnenlicht aus Wasser und CO₂ Zucker und Sauerstoff herstellen","Wasserkreislauf","Bodenbildung"],"correct":1,"explanation":"Fotosynthese: findet in den grünen Blättern statt (Chlorophyll). Lebensgrundlage für fast alles Leben auf der Erde, da sie Sauerstoff produziert und die Basis der Nahrungskette bildet.","topic":"Biologie"},
-  {"question":"Welches Land hat die meisten Einwohner der Welt?","options":["USA","Indien – mit über 1,4 Milliarden Einwohnern (Stand 2023) das bevölkerungsreichste Land der Welt, knapp vor China","Russland","Brasilien"],"correct":1,"explanation":"Indien: überholte 2023 China als bevölkerungsreichstes Land. China: ebenfalls über 1,4 Milliarden. USA: ca. 330 Millionen (drittgrößte Bevölkerung). Beide asiatischen Länder zusammen: über 1/3 der Weltbevölkerung.","topic":"Erdkunde"},
-  {"question":"Was ist ein Sonett?","options":["Eine Erzählung","Eine feste Gedichtform mit 14 Versen, meist aufgeteilt in zwei Quartette (4 Verse) und zwei Terzette (3 Verse) – berühmt durch Shakespeare und Petrarca","Ein Roman","Eine Fabel"],"correct":1,"explanation":"Sonett: strenge Form mit festem Reimschema. Petrarca (Italien, 14. Jh.): Begründer. Shakespeare: eigene Form (3 Quartette + Schlusscouplet). Auch deutsche Dichter nutzten diese Form (Rilke, Hofmannsthal).","topic":"Literatur"},
-  {"question":"Wie viel Grad hat ein rechter Winkel?","options":["45°","90°","180°","360°"],"correct":1,"explanation":"Rechter Winkel: 90°. Gestreckter Winkel: 180°. Vollwinkel: 360°. Spitzer Winkel: kleiner als 90°. Stumpfer Winkel: zwischen 90° und 180°.","topic":"Mathematik"},
-  {"question":"Was ist die kleinste Einheit des Lebens?","options":["Das Atom","Die Zelle – die kleinste strukturelle und funktionelle Einheit aller Lebewesen; manche Organismen bestehen nur aus einer Zelle (Bakterien), andere aus Billionen (Mensch)","Das Molekül","Das Organ"],"correct":1,"explanation":"Zelle: Grundbaustein des Lebens. Zelltheorie: alle Lebewesen bestehen aus Zellen. Einzeller (Bakterien, Amöben) vs. Vielzeller (Pflanzen, Tiere, Pilze). Menschlicher Körper: ca. 37 Billionen Zellen.","topic":"Biologie"},
-  {"question":"Wann begann der Erste Weltkrieg?","options":["1900","1914 – ausgelöst durch das Attentat von Sarajevo (Ermordung des österreichischen Thronfolgers Franz Ferdinand) am 28. Juni 1914","1939","1929"],"correct":1,"explanation":"Erster Weltkrieg: 1914–1918. Auslöser: Attentat von Sarajevo. Eigentliche Ursachen: Wettrüsten, Bündnissysteme, Nationalismus. Endete mit dem Versailler Vertrag 1919. Über 17 Millionen Tote.","topic":"Geschichte"},
-  {"question":"Wie heißt die Übersetzung von 'Good morning' auf Deutsch?","options":["Guten Abend","Guten Morgen","Gute Nacht","Auf Wiedersehen"],"correct":1,"explanation":"Good morning = Guten Morgen. Good evening = Guten Abend. Good night = Gute Nacht. Goodbye = Auf Wiedersehen. Grundlegende Begrüßungsformeln im Englischunterricht.","topic":"Englisch"},
-  {"question":"Wie viele Kontinente gibt es?","options":["5","7","6","4"],"correct":1,"explanation":"7 Kontinente: Afrika, Asien, Europa, Nordamerika, Südamerika, Australien/Ozeanien, Antarktis. Manche Modelle fassen Europa und Asien als 'Eurasien' zusammen (dann 6 Kontinente).","topic":"Erdkunde"},
-  {"question":"Was ist ein Synonym für 'froh'?","options":["traurig","glücklich","wütend","müde"],"correct":1,"explanation":"Synonyme: Wörter mit ähnlicher Bedeutung. 'froh' und 'glücklich' bedeuten beide etwas Positives. 'traurig', 'wütend' sind Gegenteile (Antonyme), 'müde' ist unabhängig davon.","topic":"Deutsch"},
-  {"question":"Was ist der Äquator?","options":["Ein Gebirge","Eine gedachte Linie um die Erde auf halbem Weg zwischen Nord- und Südpol, die die Erde in nördliche und südliche Hemisphäre teilt","Ein Fluss","Ein Ozean"],"correct":1,"explanation":"Äquator: Breitengrad 0°. Markiert Grenze zwischen Nord- und Südhalbkugel. Länder am Äquator: Ecuador (daher der Name!), Kenia, Indonesien. Am Äquator: ganzjährig warm, Tag und Nacht etwa gleich lang.","topic":"Erdkunde"},
-  {"question":"Was ist eine Pyramide in der Geometrie?","options":["Eine Kugel","Ein dreidimensionaler Körper mit einer vieleckigen Grundfläche und Seitenflächen, die in einer Spitze zusammenlaufen","Ein Würfel","Ein Zylinder"],"correct":1,"explanation":"Pyramide: Grundfläche kann Dreieck, Viereck usw. sein. Berühmtestes Beispiel: ägyptische Pyramiden (quadratische Grundfläche). Volumen-Formel: 1/3 × Grundfläche × Höhe.","topic":"Mathematik"},
-  {"question":"Wer komponierte die 9. Sinfonie mit der 'Ode an die Freude'?","options":["Mozart","Ludwig van Beethoven","Bach","Brahms"],"correct":1,"explanation":"Beethoven: 9. Sinfonie (1824), letzter Satz vertont Schillers Gedicht 'An die Freude'. Heute Melodie der Europahymne. Beethoven komponierte sie, obwohl er zu dieser Zeit bereits fast vollständig taub war.","topic":"Musik"},
-  {"question":"Welches Gas atmen wir hauptsächlich ein, das wir zum Leben brauchen?","options":["Kohlendioxid","Sauerstoff","Stickstoff","Wasserstoff"],"correct":1,"explanation":"Sauerstoff (O₂): lebensnotwendig für die Zellatmung. Wir atmen Sauerstoff ein und Kohlendioxid (CO₂) aus. Stickstoff macht zwar 78% der Luft aus, wird aber beim Atmen nicht verwertet.","topic":"Biologie"},
-  {"question":"Was ist 25% von 200?","options":["25","50","75","100"],"correct":1,"explanation":"25% von 200: 200 ÷ 4 = 50 (da 25% = 1/4). Oder: 200 × 0,25 = 50. Prozentrechnung: wichtige Grundlage für Mathematik und Alltag (Rabatte, Statistiken).","topic":"Mathematik"},
-  {"question":"Wie heißt der längste Fluss Deutschlands?","options":["Donau","Rhein – mit 1233 km der längste Fluss, der durch Deutschland fließt (entspringt in der Schweiz, mündet in den Niederlanden)","Elbe","Main"],"correct":1,"explanation":"Rhein: 1233 km insgesamt, davon ca. 865 km in Deutschland. Wichtigste Wasserstraße Europas. Die Donau ist zwar länger (2850 km gesamt), fließt aber nur teilweise durch Deutschland.","topic":"Erdkunde"},
-  {"question":"Was ist eine Metapher?","options":["Ein Vergleich mit 'wie'","Ein Sprachbild, das eine übertragene Bedeutung ohne Vergleichswort ausdrückt, z.B. 'Zeit ist Geld'","Ein Reim","Ein Satzzeichen"],"correct":1,"explanation":"Metapher: ohne 'wie' oder 'als'. Beispiel: 'Er hat ein Herz aus Stein' = er ist gefühllos. Unterschied zum Vergleich: 'Er ist hart wie Stein' (mit 'wie').","topic":"Deutsch"},
-  {"question":"In welchem Land steht der Eiffelturm?","options":["Italien","Frankreich – der Eiffelturm steht in Paris und wurde 1889 zur Weltausstellung von Gustave Eiffel erbaut","Spanien","England"],"correct":1,"explanation":"Eiffelturm: 330 m hoch, war beim Bau das höchste Bauwerk der Welt. Ursprünglich nur als temporäres Bauwerk geplant, wurde aber zum Wahrzeichen von Paris und Frankreich.","topic":"Erdkunde"},
-  {"question":"Was ist 9²?","options":["18","81","72","99"],"correct":1,"explanation":"9² = 9 × 9 = 81. Quadratzahlen sollte man bis mindestens 10² (100) auswendig kennen – wichtig für viele Bereiche der Mathematik (Geometrie, Wurzeln).","topic":"Mathematik"},
-  {"question":"Wer war Albert Einstein?","options":["Ein Maler","Ein deutscher Physiker (1879–1955), der die Relativitätstheorie entwickelte und 1921 den Nobelpreis für Physik erhielt","Ein Komponist","Ein Schriftsteller"],"correct":1,"explanation":"Einstein: E=mc² (berühmteste Formel der Welt). Relativitätstheorie: revolutionierte das Verständnis von Raum, Zeit und Gravitation. Floh 1933 vor den Nazis in die USA. Gilt als Genie schlechthin.","topic":"Wissenschaft"},
-  {"question":"Was ist das Gegenteil von 'schnell'?","options":["schwer","langsam","laut","leise"],"correct":1,"explanation":"Antonyme (Gegenteile): schnell ↔ langsam. Solche Wortpaare sind wichtig für den Wortschatz und das Verständnis von Texten in Deutsch und anderen Sprachen.","topic":"Deutsch"},
-  {"question":"Welcher Planet wird auch 'Roter Planet' genannt?","options":["Venus","Mars","Jupiter","Saturn"],"correct":1,"explanation":"Mars: rote Farbe durch Eisenoxid (Rost) im Boden und Gestein. Vierter Planet von der Sonne. Wird oft als möglicher Zielort für zukünftige bemannte Raumfahrtmissionen diskutiert.","topic":"Weltall"},
-  {"question":"Was versteht man unter 'Demokratie'?","options":["Herrschaft eines Königs","Eine Staatsform, in der das Volk durch Wahlen die Macht ausübt bzw. seine Vertreter wählt – aus dem Griechischen: 'demos' (Volk) und 'kratos' (Herrschaft)","Herrschaft einer Partei ohne Wahlen","Eine Militärdiktatur"],"correct":1,"explanation":"Demokratie: entstand im antiken Griechenland (Athen, ca. 500 v.Chr.). Deutschland heute: repräsentative Demokratie (Bundestag wird gewählt). Grundprinzipien: freie Wahlen, Gewaltenteilung, Grundrechte.","topic":"Geschichte"},
-  {"question":"Wie viele Zentimeter sind ein Meter?","options":["10","100","1000","50"],"correct":1,"explanation":"1 Meter = 100 Zentimeter. 1 Kilometer = 1000 Meter. 1 Meter = 1000 Millimeter. Längenmaße sicher umrechnen zu können ist eine wichtige Grundfertigkeit in Mathematik.","topic":"Mathematik"},
-  {"question":"Wie heißt das größte Säugetier der Welt?","options":["Elefant","Blauwal – kann über 30 Meter lang und bis zu 200 Tonnen schwer werden, das größte bekannte Lebewesen, das jemals auf der Erde gelebt hat","Giraffe","Nashorn"],"correct":1,"explanation":"Blauwal: ernährt sich hauptsächlich von winzigem Krill, frisst aber täglich mehrere Tonnen davon. Sein Herz allein wiegt so viel wie ein kleines Auto. Lebt in allen Weltmeeren außer der Arktis.","topic":"Biologie"},
-  {"question":"Wer schrieb 'Faust'?","options":["Friedrich Schiller","Johann Wolfgang von Goethe – einer der bedeutendsten deutschen Dichter (1749–1832), 'Faust' gilt als sein Hauptwerk","Thomas Mann","Heinrich Heine"],"correct":1,"explanation":"Goethe: vielseitiger Dichter, Naturwissenschaftler und Staatsmann aus Weimar. 'Faust' (Teil 1 und 2): Geschichte eines Mannes, der einen Pakt mit dem Teufel Mephisto schließt. Wichtigstes Werk der deutschen Literatur.","topic":"Literatur"},
-  {"question":"Was ist 6 × 9?","options":["45","54","56","63"],"correct":1,"explanation":"6 × 9 = 54. Diese Aufgabe aus dem kleinen Einmaleins wird oft mit anderen verwechselt – am besten mit Eselsbrücken oder häufigem Üben sicher beherrschen.","topic":"Mathematik"},
-  {"question":"In welchem Erdteil liegt Ägypten?","options":["Asien","Afrika – Ägypten liegt im Nordosten Afrikas, ein kleiner Teil (Sinai-Halbinsel) gehört geografisch zu Asien","Europa","Südamerika"],"correct":1,"explanation":"Ägypten: bekannt für die Pyramiden von Gizeh, den Fluss Nil und die Pharaonen des Alten Ägyptens. Die Sinai-Halbinsel im Osten wird manchmal Asien zugerechnet, der Großteil des Landes liegt in Afrika.","topic":"Erdkunde"}
+  {
+    "question": "Was ist die Hauptstadt Deutschlands?",
+    "options": [
+      "München",
+      "Hamburg",
+      "Berlin",
+      "Köln"
+    ],
+    "correct": 2,
+    "explanation": "Berlin ist die Hauptstadt Deutschlands.",
+    "topic": "Erdkunde"
+  },
+  {
+    "question": "Was ist 7 × 8?",
+    "options": [
+      "54",
+      "56",
+      "48",
+      "64"
+    ],
+    "correct": 1,
+    "explanation": "7 × 8 = 56.",
+    "topic": "Mathe"
+  },
+  {
+    "question": "Was ist das größte Tier der Erde?",
+    "options": [
+      "Elefant",
+      "Giraffe",
+      "Blauwal",
+      "Weißer Hai"
+    ],
+    "correct": 2,
+    "explanation": "Der Blauwal (bis 33 m, 200 t) ist das größte Tier der Erde.",
+    "topic": "Biologie"
+  },
+  {
+    "question": "Wer schrieb Faust?",
+    "options": [
+      "Schiller",
+      "Heine",
+      "Goethe",
+      "Brecht"
+    ],
+    "correct": 2,
+    "explanation": "Johann Wolfgang von Goethe schrieb Faust (1808/1832).",
+    "topic": "Deutsch/Literatur"
+  },
+  {
+    "question": "Was ist das Ergebnis von 3/4 + 1/4?",
+    "options": [
+      "4/8",
+      "4/4",
+      "2/4",
+      "3/8"
+    ],
+    "correct": 1,
+    "explanation": "3/4 + 1/4 = 4/4 = 1.",
+    "topic": "Mathe"
+  },
+  {
+    "question": "Was ist die Sprache in Großbritannien?",
+    "options": [
+      "Französisch",
+      "Englisch",
+      "Spanisch",
+      "Deutsch"
+    ],
+    "correct": 1,
+    "explanation": "In Großbritannien wird Englisch gesprochen.",
+    "topic": "Erdkunde"
+  },
+  {
+    "question": "Was ist Fotosynthese?",
+    "options": [
+      "Tieratmung",
+      "Pflanzen bauen aus Licht, CO2 und Wasser Zucker und Sauerstoff",
+      "Gärung",
+      "Verdauung"
+    ],
+    "correct": 1,
+    "explanation": "Fotosynthese: Licht + CO2 + H2O → Zucker + O2.",
+    "topic": "Biologie"
+  },
+  {
+    "question": "Was ist ein Nomen?",
+    "options": [
+      "Verb",
+      "Adjektiv",
+      "Hauptwort (Tisch, Hund, Schule)",
+      "Adverb"
+    ],
+    "correct": 2,
+    "explanation": "Nomen = Hauptwort. Immer großgeschrieben.",
+    "topic": "Deutsch"
+  },
+  {
+    "question": "In welchem Jahr entdeckte Kolumbus Amerika?",
+    "options": [
+      "1492",
+      "1482",
+      "1502",
+      "1600"
+    ],
+    "correct": 0,
+    "explanation": "Kolumbus entdeckte Amerika 1492.",
+    "topic": "Geschichte"
+  },
+  {
+    "question": "Was ist der längste Fluss der Welt?",
+    "options": [
+      "Amazonas",
+      "Nil",
+      "Yangtze",
+      "Wolga"
+    ],
+    "correct": 1,
+    "explanation": "Nil (6.853 km) gilt als längster Fluss der Welt.",
+    "topic": "Erdkunde"
+  },
+  {
+    "question": "Was ist 15% von 200?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct": 2,
+    "explanation": "15/100 × 200 = 30.",
+    "topic": "Mathe"
+  },
+  {
+    "question": "Was ist die Einheit des Stroms?",
+    "options": [
+      "Volt",
+      "Watt",
+      "Ampere",
+      "Ohm"
+    ],
+    "correct": 2,
+    "explanation": "Strom: Ampere (A).",
+    "topic": "Physik"
+  },
+  {
+    "question": "Was sind Amphibien?",
+    "options": [
+      "Nur Wassertiere",
+      "Tiere die im Wasser und an Land leben",
+      "Nur Landtiere",
+      "Vögel"
+    ],
+    "correct": 1,
+    "explanation": "Amphibien: Frosch, Salamander – Larven im Wasser, Erwachsene an Land.",
+    "topic": "Biologie"
+  },
+  {
+    "question": "Was ist 'beautiful' auf Deutsch?",
+    "options": [
+      "Böse",
+      "Schnell",
+      "Schön",
+      "Groß"
+    ],
+    "correct": 2,
+    "explanation": "Beautiful = schön.",
+    "topic": "Englisch"
+  },
+  {
+    "question": "Was ist ein Vulkan?",
+    "options": [
+      "Bergsee",
+      "Öffnung in der Erdkruste durch die Magma austritt",
+      "Gebirge",
+      "Erdspalte"
+    ],
+    "correct": 1,
+    "explanation": "Vulkan: Magma tritt als Lava aus.",
+    "topic": "Erdkunde"
+  },
+  {
+    "question": "Wie viele Grad hat ein Kreis?",
+    "options": [
+      "180°",
+      "270°",
+      "360°",
+      "90°"
+    ],
+    "correct": 2,
+    "explanation": "Ein vollständiger Kreis hat 360°.",
+    "topic": "Mathe"
+  },
+  {
+    "question": "Was ist die Aufgabe der Photosynthese für die Erde?",
+    "options": [
+      "CO2 produzieren",
+      "Sauerstoff produzieren und CO2 binden",
+      "Wärme erzeugen",
+      "Wasser verbrauchen"
+    ],
+    "correct": 1,
+    "explanation": "Fotosynthese: erzeugt O2 und bindet CO2 – lebenswichtig.",
+    "topic": "Biologie"
+  },
+  {
+    "question": "Was ist 'to run' auf Deutsch?",
+    "options": [
+      "Sitzen",
+      "Schlafen",
+      "Laufen",
+      "Essen"
+    ],
+    "correct": 2,
+    "explanation": "To run = laufen.",
+    "topic": "Englisch"
+  },
+  {
+    "question": "Was ist eine Demokratie?",
+    "options": [
+      "Diktatur",
+      "Herrschaft des Volkes durch Wahlen",
+      "Adelsherrschaft",
+      "Gottherrschaft"
+    ],
+    "correct": 1,
+    "explanation": "Demokratie: Volk wählt Repräsentanten.",
+    "topic": "Politik"
+  },
+  {
+    "question": "Was ist Stickstoff (N2)?",
+    "options": [
+      "Sauerstoff",
+      "Häufigstes Gas in der Luft (78%)",
+      "Kohlendioxid",
+      "Wasserstoff"
+    ],
+    "correct": 1,
+    "explanation": "N2: 78% der Luft – farb- und geruchlos.",
+    "topic": "Chemie"
+  },
+  {
+    "question": "Wie nennt man die deutsche Hauptwährung?",
+    "options": [
+      "Franc",
+      "Pfund",
+      "Euro",
+      "Dollar"
+    ],
+    "correct": 2,
+    "explanation": "Deutschland nutzt den Euro (€).",
+    "topic": "Allgemeinwissen"
+  },
+  {
+    "question": "Was ist der Unterschied Vers/Prosa?",
+    "options": [
+      "Kein Unterschied",
+      "Verse: rhythmisch gegliedert; Prosa: normale Sätze",
+      "Prosa ist kürzer",
+      "Verse sind immer reimend"
+    ],
+    "correct": 1,
+    "explanation": "Vers: rhythmische Zeile (Gedicht). Prosa: normale Textsprache.",
+    "topic": "Deutsch"
+  },
+  {
+    "question": "Was ist eine Gleichung?",
+    "options": [
+      "Ausdruck ohne Gleichheitszeichen",
+      "Mathematische Aussage mit Gleichheitszeichen (3x = 12)",
+      "Ungleichung",
+      "Tabelle"
+    ],
+    "correct": 1,
+    "explanation": "Gleichung: 3x = 12 → x = 4.",
+    "topic": "Mathe"
+  },
+  {
+    "question": "Was ist der höchste Berg der Erde?",
+    "options": [
+      "K2",
+      "Kangchenjunga",
+      "Mont Blanc",
+      "Mount Everest"
+    ],
+    "correct": 3,
+    "explanation": "Mount Everest (8.849 m) ist der höchste Berg der Erde.",
+    "topic": "Erdkunde"
+  },
+  {
+    "question": "Was ist ein Komma (Zahl)?",
+    "options": [
+      "Grundrechenzeichen",
+      "Trennzeichen zwischen ganzen Zahlen und Dezimalstellen",
+      "Bruchstrich",
+      "Multiplikationszeichen"
+    ],
+    "correct": 1,
+    "explanation": "Komma: 3,14 – Trennt Ganzzahl von Dezimalstellen.",
+    "topic": "Mathe"
+  },
+  {
+    "question": "Was ist ein Herbivore?",
+    "options": [
+      "Fleischfresser",
+      "Pflanzenfresser",
+      "Allesfresser",
+      "Parasit"
+    ],
+    "correct": 1,
+    "explanation": "Herbivore = Pflanzenfresser.",
+    "topic": "Biologie"
+  },
+  {
+    "question": "Was ist 'winter' auf Deutsch?",
+    "options": [
+      "Sommer",
+      "Frühling",
+      "Herbst",
+      "Winter"
+    ],
+    "correct": 3,
+    "explanation": "Winter = winter.",
+    "topic": "Englisch"
+  },
+  {
+    "question": "Was macht man mit dem Kompass?",
+    "options": [
+      "Messen von Temperaturen",
+      "Norden bestimmen zur Navigation",
+      "Druck messen",
+      "Höhe messen"
+    ],
+    "correct": 1,
+    "explanation": "Kompass: zeigt Norden an.",
+    "topic": "Erdkunde"
+  },
+  {
+    "question": "Was ist ein Prisma in der Physik?",
+    "options": [
+      "Würfel",
+      "Dreieckiger Glaskörper der Licht in Spektrum aufteilt",
+      "Kugel",
+      "Linse"
+    ],
+    "correct": 1,
+    "explanation": "Prisma: bricht Licht in Regenbogenfarben auf.",
+    "topic": "Physik"
+  },
+  {
+    "question": "Was ist die Bedeutung von 'ancient'?",
+    "options": [
+      "Neu",
+      "Modern",
+      "Uralt",
+      "Klein"
+    ],
+    "correct": 2,
+    "explanation": "Ancient = uralt, aus der Antike.",
+    "topic": "Englisch"
+  },
+  {
+    "question": "Was ist ein Präfix?",
+    "options": [
+      "Nachsilbe",
+      "Vorsilbe (un-, ver-, be-)",
+      "Wortstamm",
+      "Endung"
+    ],
+    "correct": 1,
+    "explanation": "Präfix: Vorsilbe – unglücklich, verfahren.",
+    "topic": "Deutsch"
+  },
+  {
+    "question": "Was ist die chemische Formel für Wasser?",
+    "options": [
+      "CO2",
+      "H2O",
+      "O2",
+      "NaCl"
+    ],
+    "correct": 1,
+    "explanation": "H2O: 2 Wasserstoff-Atome und 1 Sauerstoff-Atom.",
+    "topic": "Chemie"
+  },
+  {
+    "question": "Was ist die Reformation?",
+    "options": [
+      "Antike Kunst",
+      "Religiöse Erneuerungsbewegung durch Martin Luther ab 1517",
+      "Kreuzzug",
+      "Aufklärung"
+    ],
+    "correct": 1,
+    "explanation": "Reformation: Luther, 95 Thesen, 1517.",
+    "topic": "Geschichte"
+  },
+  {
+    "question": "Was ist Alliteration?",
+    "options": [
+      "Endreim",
+      "Gleicher Anfangsbuchstabe aufeinanderfolgender Wörter",
+      "Metapher",
+      "Vergleich"
+    ],
+    "correct": 1,
+    "explanation": "Alliteration: Milch macht müde Männer munter.",
+    "topic": "Deutsch"
+  },
+  {
+    "question": "Was ist Energie?",
+    "options": [
+      "Stoff",
+      "Fähigkeit Arbeit zu verrichten. Einheit: Joule",
+      "Kraft",
+      "Masse"
+    ],
+    "correct": 1,
+    "explanation": "Energie: Joule (J). Kann Form wechseln, nicht erzeugt oder vernichtet werden.",
+    "topic": "Physik"
+  },
+  {
+    "question": "Was ist das Merkmal 'Gattung' in der Biologie?",
+    "options": [
+      "Individuum",
+      "Taxonomische Gruppe über der Art (Tiger: Gattung Panthera)",
+      "Art",
+      "Klasse"
+    ],
+    "correct": 1,
+    "explanation": "Gattung: oberhalb der Art, z.B. Panthera tigris (Tiger).",
+    "topic": "Biologie"
+  },
+  {
+    "question": "Was ist 'Nachrichten' auf Englisch?",
+    "options": [
+      "Weather",
+      "Magazine",
+      "News",
+      "Report"
+    ],
+    "correct": 2,
+    "explanation": "Nachrichten = news.",
+    "topic": "Englisch"
+  },
+  {
+    "question": "Was ist das Europaparlament?",
+    "options": [
+      "Deutsches Parlament",
+      "Parlament der EU – direkt von EU-Bürgern gewählt",
+      "UN-Organ",
+      "NATO-Organ"
+    ],
+    "correct": 1,
+    "explanation": "Europaparlament: gewähltes Parlament der Europäischen Union.",
+    "topic": "Politik"
+  },
+  {
+    "question": "Was ist ein Kilogramm?",
+    "options": [
+      "1000 Gramm",
+      "100 Gramm",
+      "500 Gramm",
+      "10 Gramm"
+    ],
+    "correct": 0,
+    "explanation": "1 kg = 1000 g.",
+    "topic": "Mathe"
+  },
+  {
+    "question": "Was ist die Wirbelsäule?",
+    "options": [
+      "Ein Knochen",
+      "Kette aus 33-34 Wirbeln – Stütze und Rückenmarksschutz",
+      "Rippe",
+      "Schulterblatt"
+    ],
+    "correct": 1,
+    "explanation": "Wirbelsäule: Stütze des Rückens, schützt Rückenmark.",
+    "topic": "Biologie"
+  }
 ]

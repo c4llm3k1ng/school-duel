@@ -1,482 +1,482 @@
 [
   {
-    "question": "Was ist ein Bruch?",
+    "question": "Welche Zahl muss für das Dreieck eingesetzt werden, damit die Gleichung stimmt: 7 + ▲ = 15?",
     "options": [
-      "Eine Zahl größer als 1",
-      "Eine Zahl, die einen Teil eines Ganzen beschreibt: Zähler/Nenner (z.B. 3/4 bedeutet 3 von 4 gleichen Teilen)",
-      "Eine negative Zahl",
-      "Eine sehr große Zahl"
+      "8",
+      "9",
+      "7",
+      "6"
+    ],
+    "correct": 0,
+    "explanation": "Um die Gleichung zu lösen, müssen wir herausfinden, welche Zahl zu 7 addiert 15 ergibt. Das ist 15 - 7 = 8. Also ist ▲ = 8.",
+    "topic": "Platzhalter in Addition (leicht)"
+  },
+  {
+    "question": "Welche Zahl setzt die Zahlenreihe logisch fort? 3, 6, 9, 12, ?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "18"
     ],
     "correct": 1,
-    "explanation": "Bruch: Nenner (unten) sagt, in wie viele Teile das Ganze geteilt ist. Zähler (oben) sagt, wie viele Teile gemeint sind. 3/4 = drei Viertel.",
+    "explanation": "Diese Zahlenreihe folgt einem Muster, bei dem immer 3 zur vorherigen Zahl addiert wird. 3+3=6, 6+3=9, 9+3=12. Die nächste Zahl ist also 12 + 3 = 15.",
+    "topic": "Zahlenmuster erkennen (leicht)"
+  },
+  {
+    "question": "Finde die fehlende Zahl: 4 × □ = 24",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "Um die fehlende Zahl zu finden, müssen wir überlegen, welche Zahl mal 4 multipliziert 24 ergibt. Das ist 24 geteilt durch 4, also 6.",
+    "topic": "Platzhalter in Multiplikation (mittel)"
+  },
+  {
+    "question": "Welche Zahl kann für 'x' eingesetzt werden, damit die Aussage 'x + 5 < 12' wahr ist, wenn x eine natürliche Zahl ist?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "6"
+    ],
+    "correct": 3,
+    "explanation": "Die Aussage 'x + 5 < 12' bedeutet, dass die Summe von x und 5 kleiner als 12 sein muss. Wenn x=7 wäre, stünde da 7+5=12, was nicht kleiner als 12 ist. Wenn x=6 wäre, stünde da 6+5=11, was kleiner als 12 ist. Alle Zahlen kleiner als 6 würden auch passen, aber 6 ist die größte der angebotenen Zahlen, die die Bedingung erfüllt (oder die einzig passende je nach Verständnis).",
+    "topic": "Einfache Ungleichungen (mittel)"
+  },
+  {
+    "question": "Ein Bauer hat eine unbekannte Anzahl an Kühen. Wenn er 3 Kühe verkauft, hat er noch 11 Kühe. Wie viele Kühe hatte der Bauer ursprünglich?",
+    "options": [
+      "14",
+      "8",
+      "13",
+      "12"
+    ],
+    "correct": 0,
+    "explanation": "Wir können dies als Gleichung darstellen: x - 3 = 11. Um 'x' zu finden, addieren wir 3 zu 11: 11 + 3 = 14. Der Bauer hatte ursprünglich 14 Kühe.",
+    "topic": "Textaufgabe mit Platzhalter (mittel)"
+  },
+  {
+    "question": "Löse die Gleichung nach 'y' auf: (3 × y) + 4 = 19",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": 1,
+    "explanation": "Zuerst subtrahieren wir 4 von beiden Seiten: (3 × y) = 19 - 4, also 3 × y = 15. Dann teilen wir 15 durch 3, um y zu finden: y = 15 / 3 = 5.",
+    "topic": "Zwei Operationen mit Platzhalter (schwer)"
+  },
+  {
+    "question": "Welche Zahl ergänzt die Reihe? 2, 4, 8, 16, ?",
+    "options": [
+      "20",
+      "24",
+      "30",
+      "32"
+    ],
+    "correct": 3,
+    "explanation": "In dieser Zahlenreihe wird jede Zahl mit 2 multipliziert, um die nächste Zahl zu erhalten. 2×2=4, 4×2=8, 8×2=16. Die nächste Zahl ist also 16 × 2 = 32.",
+    "topic": "Muster erkennen mit Multiplikation (mittel/schwer)"
+  },
+  {
+    "question": "In einem Kino sind in jeder Reihe 12 Sitze. 's' ist die Anzahl der Sitze in 5 Reihen. Welche Gleichung beschreibt 's' korrekt?",
+    "options": [
+      "s = 12 + 5",
+      "s = 12 × 5",
+      "s = 12 - 5",
+      "s = 12 / 5"
+    ],
+    "correct": 1,
+    "explanation": "Um die Gesamtzahl der Sitze in 5 Reihen zu finden, wenn jede Reihe 12 Sitze hat, multiplizieren wir die Anzahl der Sitze pro Reihe mit der Anzahl der Reihen: 12 × 5. Also ist s = 12 × 5.",
+    "topic": "Aufstellen einfacher Gleichungen aus Text (schwer)"
+  },
+  {
+    "question": "Welcher Wert muss für das Kästchen eingesetzt werden, damit die Gleichung stimmt?\n7 + 5 = □ + 8",
+    "options": [
+      "A) 3",
+      "B) 4",
+      "C) 5",
+      "D) 6"
+    ],
+    "correct": 1,
+    "explanation": "Zuerst berechnest du die linke Seite: 7 + 5 = 12. Dann überlegst du, welche Zahl du zu 8 addieren musst, um 12 zu erhalten, oder du rechnest 12 - 8 = 4. Also muss 4 in das Kästchen.",
+    "topic": "Gleichgewicht der Gleichung"
+  },
+  {
+    "question": "Löse die Gleichung nach x auf:\nx + 12 = 25",
+    "options": [
+      "A) 10",
+      "B) 13",
+      "C) 15",
+      "D) 17"
+    ],
+    "correct": 1,
+    "explanation": "Um x zu finden, musst du die Umkehraufgabe bilden. Wenn x + 12 = 25 ist, dann ist x = 25 - 12. Das Ergebnis ist 13.",
+    "topic": "Lösen von Additionsgleichungen"
+  },
+  {
+    "question": "Welche Zahl muss anstelle von y stehen, damit die Gleichung richtig ist?\n30 - y = 17",
+    "options": [
+      "A) 13",
+      "B) 15",
+      "C) 17",
+      "D) 23"
+    ],
+    "correct": 0,
+    "explanation": "Um y zu finden, fragst du dich, welche Zahl du von 30 abziehen musst, um 17 zu erhalten. Oder du rechnest 30 - 17. Das Ergebnis ist 13.",
+    "topic": "Lösen von Subtraktionsgleichungen"
+  },
+  {
+    "question": "Finde den Wert von z in dieser Gleichung:\n4 * z = 36",
+    "options": [
+      "A) 7",
+      "B) 8",
+      "C) 9",
+      "D) 12"
+    ],
+    "correct": 2,
+    "explanation": "Um z zu finden, musst du die Umkehraufgabe bilden. Wenn 4 mal z 36 ist, dann ist z = 36 geteilt durch 4. Das Ergebnis ist 9.",
+    "topic": "Lösen von Multiplikationsgleichungen"
+  },
+  {
+    "question": "Welche Zahl ist a?\na : 6 = 8",
+    "options": [
+      "A) 42",
+      "B) 48",
+      "C) 54",
+      "D) 60"
+    ],
+    "correct": 1,
+    "explanation": "Um a zu finden, musst du die Umkehraufgabe bilden. Wenn a geteilt durch 6 gleich 8 ist, dann ist a = 8 mal 6. Das Ergebnis ist 48.",
+    "topic": "Lösen von Divisionsgleichungen"
+  },
+  {
+    "question": "Tim hat 8 Murmeln. Er bekommt von seiner Schwester noch einige Murmeln dazu. Jetzt hat er insgesamt 15 Murmeln. Mit welcher Gleichung findest du heraus, wie viele Murmeln er dazubekommen hat (x)?",
+    "options": [
+      "A) 15 - 8 = x",
+      "B) 8 + x = 15",
+      "C) 8 * x = 15",
+      "D) x : 8 = 15"
+    ],
+    "correct": 1,
+    "explanation": "Tim hatte 8 Murmeln (8), dazu kommen 'x' Murmeln (+ x), und das Ergebnis sind 15 Murmeln (= 15). Die Gleichung, die das beschreibt, ist 8 + x = 15.",
+    "topic": "Gleichungen aufstellen aus Textaufgaben"
+  },
+  {
+    "question": "Bestimme den Wert von k:\n10 + k = 3 * 7",
+    "options": [
+      "A) 9",
+      "B) 11",
+      "C) 13",
+      "D) 21"
+    ],
+    "correct": 1,
+    "explanation": "Zuerst berechnest du die rechte Seite der Gleichung: 3 * 7 = 21. Dann hast du 10 + k = 21. Um k zu finden, rechnest du 21 - 10, was 11 ergibt.",
+    "topic": "Gleichungen mit gemischten Operationen"
+  },
+  {
+    "question": "Das Doppelte einer unbekannten Zahl ist 18. Wie lautet diese Zahl?",
+    "options": [
+      "A) 6",
+      "B) 9",
+      "C) 12",
+      "D) 36"
+    ],
+    "correct": 1,
+    "explanation": "Das 'Doppelte' einer Zahl bedeutet, die Zahl mal 2 zu nehmen. Wenn also 'Zahl * 2 = 18' ist, dann ist die Zahl = 18 geteilt durch 2. Das Ergebnis ist 9.",
+    "topic": "Sachaufgaben mit Verdopplung"
+  },
+  {
+    "question": "Welche Zahl gehört in die Lücke, damit die Gleichung stimmt? ___ + 7 = 15",
+    "options": [
+      "A) 6",
+      "B) 8",
+      "C) 7",
+      "D) 9"
+    ],
+    "correct": 1,
+    "explanation": "Um die fehlende Zahl zu finden, kannst du die Umkehraufgabe rechnen: 15 - 7 = 8.",
+    "topic": "Addition, unbekannter Summand"
+  },
+  {
+    "question": "Löse die Gleichung: x - 4 = 9",
+    "options": [
+      "A) 5",
+      "B) 13",
+      "C) 10",
+      "D) 14"
+    ],
+    "correct": 1,
+    "explanation": "Die Umkehraufgabe zur Subtraktion ist die Addition: 9 + 4 = 13. Wenn x = 13, dann ist 13 - 4 = 9.",
+    "topic": "Subtraktion, unbekannter Minuend"
+  },
+  {
+    "question": "Finde den Wert für y in der Gleichung: 3 * y = 21",
+    "options": [
+      "A) 6",
+      "B) 7",
+      "C) 8",
+      "D) 9"
+    ],
+    "correct": 1,
+    "explanation": "Um y zu finden, teilst du 21 durch 3, denn 3 mal 7 ist 21. Die Umkehraufgabe ist 21 : 3 = 7.",
+    "topic": "Multiplikation, unbekannter Faktor"
+  },
+  {
+    "question": "Welche Zahl muss durch 5 geteilt werden, damit das Ergebnis 6 ist? Das kann man als Gleichung schreiben: z : 5 = 6",
+    "options": [
+      "A) 11",
+      "B) 1",
+      "C) 30",
+      "D) 25"
+    ],
+    "correct": 2,
+    "explanation": "Die Umkehraufgabe zur Division ist die Multiplikation: 6 * 5 = 30. Wenn z = 30, dann ist 30 : 5 = 6.",
+    "topic": "Division, unbekannter Dividend"
+  },
+  {
+    "question": "Wenn man zu einer unbekannten Zahl 6 addiert, erhält man 20. Welche Zahl ist die unbekannte Zahl?",
+    "options": [
+      "A) 14",
+      "B) 26",
+      "C) 12",
+      "D) 16"
+    ],
+    "correct": 0,
+    "explanation": "Du kannst diese Aufgabe als Gleichung schreiben: Zahl + 6 = 20. Um die Zahl zu finden, rechnest du 20 - 6 = 14.",
+    "topic": "Textaufgabe, Addition"
+  },
+  {
+    "question": "Welche Zahl macht die folgende Gleichung wahr? 10 + 5 = ___ * 5",
+    "options": [
+      "A) 2",
+      "B) 3",
+      "C) 4",
+      "D) 5"
+    ],
+    "correct": 1,
+    "explanation": "Zuerst rechnest du die linke Seite der Gleichung aus: 10 + 5 = 15. Dann überlegst du, welche Zahl mit 5 multipliziert 15 ergibt: 3 * 5 = 15. Also ist die fehlende Zahl 3.",
+    "topic": "Gleichheit von Termen"
+  },
+  {
+    "question": "Löse die Gleichung nach x auf: 30 - x = 12",
+    "options": [
+      "A) 18",
+      "B) 42",
+      "C) 15",
+      "D) 20"
+    ],
+    "correct": 0,
+    "explanation": "Hier subtrahierst du x von 30. Du fragst dich: Was muss von 30 abgezogen werden, um 12 zu erhalten? Oder du rechnest 30 - 12 = 18. Wenn x = 18, dann ist 30 - 18 = 12.",
+    "topic": "Subtraktion, unbekannter Subtrahend"
+  },
+  {
+    "question": "Lara hat 45 Kekse und möchte diese gerecht an ihre Freunde verteilen. Jeder Freund soll 9 Kekse bekommen. Wie viele Freunde hat Lara? Welche Gleichung passt dazu und was ist die Lösung?",
+    "options": [
+      "A) f * 9 = 45; f = 5",
+      "B) 45 + f = 9; f = -36",
+      "C) 45 : f = 9; f = 5",
+      "D) 45 - f = 9; f = 36"
+    ],
+    "correct": 2,
+    "explanation": "Die Gesamtzahl der Kekse (45) geteilt durch die Anzahl der Freunde (f) muss die Kekse pro Freund (9) ergeben. Die passende Gleichung ist 45 : f = 9. Um f zu finden, rechnest du 45 : 9 = 5.",
+    "topic": "Textaufgabe, Division, unbekannter Divisor"
+  },
+  {
+    "question": "Was ist der Nenner eines Bruchs?",
+    "options": [
+      "Die obere Zahl",
+      "Untere Zahl – gibt an in wie viele Teile das Ganze geteilt wird",
+      "Das Ergebnis",
+      "Der Rest"
+    ],
+    "correct": 1,
+    "explanation": "Nenner = untere Zahl. Bei 3/4 ist 4 der Nenner.",
     "topic": "Brüche"
   },
   {
-    "question": "Was ist ein gleichnamiger Bruch?",
+    "question": "Was ist der Zähler eines Bruchs?",
     "options": [
-      "Ein Bruch mit gleichem Zähler",
-      "Zwei Brüche mit demselben Nenner: 2/7 und 5/7 sind gleichnamig (können direkt addiert werden)",
-      "Ein Bruch mit Zähler=Nenner",
-      "Ein echter Bruch"
+      "Die untere Zahl",
+      "Obere Zahl – gibt an wie viele Teile genommen werden",
+      "Der Kehrwert",
+      "Das Doppelte"
     ],
     "correct": 1,
-    "explanation": "Gleichnamige Brüche: selber Nenner. 2/7 + 5/7 = 7/7 = 1. Ungleichnamige Brüche müssen erst gleichnamig gemacht werden (Hauptnenner finden).",
+    "explanation": "Zähler = obere Zahl. Bei 3/4 ist 3 der Zähler.",
     "topic": "Brüche"
   },
   {
-    "question": "Was ist der Kehrwert eines Bruchs?",
+    "question": "1/2 als Dezimalzahl:",
     "options": [
-      "Der Bruch minus 1",
-      "Zähler und Nenner vertauschen: Kehrwert von 3/4 ist 4/3 – Bruch × Kehrwert = 1",
-      "Der Bruch hoch 2",
-      "Der negative Bruch"
+      "0,1",
+      "0,2",
+      "0,5",
+      "0,25"
     ],
-    "correct": 1,
-    "explanation": "Kehrwert: 3/4 → 4/3. Nötig bei der Division von Brüchen: 3/4 ÷ 2/5 = 3/4 × 5/2. Man multipliziert mit dem Kehrwert des Divisors.",
+    "correct": 2,
+    "explanation": "1/2 = 0,5 (1 ÷ 2 = 0,5).",
     "topic": "Brüche"
   },
   {
-    "question": "Wie addiert man Brüche mit verschiedenen Nennern?",
+    "question": "Wie rechnet man 1/4 + 2/4?",
     "options": [
-      "Zähler und Nenner getrennt addieren",
-      "Erst gleichnamig machen (Hauptnenner finden), dann Zähler addieren: 1/3 + 1/4 = 4/12 + 3/12 = 7/12",
-      "Brüche einfach nebeneinander schreiben",
-      "Nenner addieren und Zähler addieren"
+      "3/8",
+      "2/4",
+      "3/4",
+      "1/2"
+    ],
+    "correct": 2,
+    "explanation": "Gleicher Nenner: Zähler addieren: 1+2 = 3, Nenner bleibt: 3/4.",
+    "topic": "Addieren von Brüchen"
+  },
+  {
+    "question": "Was ist der Kehrwert von 2/3?",
+    "options": [
+      "3/2",
+      "2/3",
+      "1/3",
+      "4/3"
+    ],
+    "correct": 0,
+    "explanation": "Kehrwert: Zähler und Nenner tauschen: 2/3 → 3/2.",
+    "topic": "Brüche"
+  },
+  {
+    "question": "Wie kürzt man 4/8?",
+    "options": [
+      "2/4",
+      "1/2",
+      "3/6",
+      "8/4"
     ],
     "correct": 1,
-    "explanation": "Hauptnenner von 3 und 4: kgV(3,4)=12. 1/3 = 4/12, 1/4 = 3/12. Summe: 7/12. Nimm nie einfach Zähler+Zähler und Nenner+Nenner!",
-    "topic": "Brüche"
+    "explanation": "4/8 ÷ 4 = 1/2.",
+    "topic": "Kürzen"
   },
   {
     "question": "Was ist ein echter Bruch?",
     "options": [
-      "Ein Bruch mit Zähler > Nenner",
-      "Ein Bruch, bei dem der Zähler kleiner als der Nenner ist: 3/5, 1/4, 7/8 – Wert liegt zwischen 0 und 1",
-      "Ein Bruch mit Zähler = Nenner",
-      "Ein unechter Bruch"
+      "Zähler > Nenner",
+      "Zähler < Nenner",
+      "Zähler = Nenner",
+      "Zähler = 0"
     ],
     "correct": 1,
-    "explanation": "Echter Bruch: Zähler < Nenner → Wert < 1. Unechter Bruch: Zähler ≥ Nenner → Wert ≥ 1 (z.B. 7/4 = 1 3/4). Gemischte Zahl: 1 3/4.",
-    "topic": "Brüche"
-  },
-  {
-    "question": "Wie kürzt man einen Bruch?",
-    "options": [
-      "Zähler und Nenner addieren",
-      "Zähler und Nenner durch denselben Faktor dividieren (ggT): 12/18 ÷ 6/6 = 2/3",
-      "Nur den Zähler halbieren",
-      "Nur den Nenner verdoppeln"
-    ],
-    "correct": 1,
-    "explanation": "Kürzen: 12/18: ggT(12,18)=6. 12÷6=2, 18÷6=3 → 2/3. Vollständig gekürzt, wenn ggT von Zähler und Nenner = 1.",
-    "topic": "Brüche"
-  },
-  {
-    "question": "Was ist 1/2 + 1/4?",
-    "options": [
-      "2/6",
-      "1/2",
-      "3/4",
-      "2/4"
-    ],
-    "correct": 2,
-    "explanation": "Hauptnenner: 4. 1/2 = 2/4. 2/4 + 1/4 = 3/4.",
-    "topic": "Brüche addieren"
-  },
-  {
-    "question": "Was ist 3/4 – 1/2?",
-    "options": [
-      "2/2",
-      "1/4",
-      "1/2",
-      "3/8"
-    ],
-    "correct": 1,
-    "explanation": "Hauptnenner: 4. 1/2 = 2/4. 3/4 – 2/4 = 1/4.",
-    "topic": "Brüche subtrahieren"
-  },
-  {
-    "question": "Was ist 2/3 × 3/4?",
-    "options": [
-      "5/7",
-      "6/12 = 1/2",
-      "2/4",
-      "3/3"
-    ],
-    "correct": 1,
-    "explanation": "Brüche multiplizieren: Zähler × Zähler, Nenner × Nenner: 2×3/3×4 = 6/12 = 1/2 (gekürzt durch 6).",
-    "topic": "Brüche multiplizieren"
-  },
-  {
-    "question": "Was ist 3/4 ÷ 3/8?",
-    "options": [
-      "9/32",
-      "1/2",
-      "2",
-      "3/1"
-    ],
-    "correct": 2,
-    "explanation": "Division: mit Kehrwert multiplizieren: 3/4 × 8/3 = 24/12 = 2.",
-    "topic": "Brüche dividieren"
-  },
-  {
-    "question": "Was ist eine Dezimalzahl?",
-    "options": [
-      "Eine Zahl mit Bruchstrich",
-      "Eine Zahl mit einem Komma, die Anteile kleiner als 1 ausdrückt: 0,5 = 5/10 = 1/2; 0,25 = 25/100 = 1/4",
-      "Eine negative Zahl",
-      "Eine Zahl ohne Komma"
-    ],
-    "correct": 1,
-    "explanation": "Dezimalzahlen: 0,1 = ein Zehntel, 0,01 = ein Hundertstel, 0,001 = ein Tausendstel. Einfaches Rechnen mit dem Dezimalsystem.",
-    "topic": "Dezimalzahlen"
-  },
-  {
-    "question": "Was ist 0,5 als Bruch?",
-    "options": [
-      "5/100",
-      "1/5",
-      "1/2",
-      "5/1"
-    ],
-    "correct": 2,
-    "explanation": "0,5 = 5/10 = 1/2 (gekürzt durch 5). 0,25 = 25/100 = 1/4. 0,1 = 1/10. 0,75 = 3/4.",
-    "topic": "Dezimalzahlen"
-  },
-  {
-    "question": "Was ist 1/4 als Dezimalzahl?",
-    "options": [
-      "0,14",
-      "0,4",
-      "0,25",
-      "4,0"
-    ],
-    "correct": 2,
-    "explanation": "1/4 = 25/100 = 0,25. Andere wichtige Umrechnungen: 1/2=0,5; 1/5=0,2; 1/10=0,1; 3/4=0,75.",
-    "topic": "Dezimalzahlen"
-  },
-  {
-    "question": "Was ist 0,7 × 10?",
-    "options": [
-      "0,07",
-      "7",
-      "0,70",
-      "70"
-    ],
-    "correct": 1,
-    "explanation": "Mal 10: Komma eine Stelle nach rechts rücken: 0,7 → 7,0 = 7. Mal 100: zwei Stellen. Geteilt durch 10: Komma nach links.",
-    "topic": "Dezimalzahlen"
-  },
-  {
-    "question": "Was ist 3,6 + 2,8?",
-    "options": [
-      "5,14",
-      "6,4",
-      "5,4",
-      "6,14"
-    ],
-    "correct": 1,
-    "explanation": "3,6 + 2,8: Kommas untereinander, dann addieren: 6+8=14 (4 hinschreiben, 1 merken), 3+2+1=6 → 6,4.",
-    "topic": "Dezimalzahlen"
-  },
-  {
-    "question": "Was ist der Unterschied zwischen Zähler und Nenner?",
-    "options": [
-      "Kein Unterschied",
-      "Zähler: obere Zahl (wie viele Teile). Nenner: untere Zahl (in wie viele Teile ist das Ganze geteilt)",
-      "Zähler ist immer kleiner",
-      "Nenner ist oben"
-    ],
-    "correct": 1,
-    "explanation": "Eselsbrücke: 'Der Nenner nennt, in wie viele Teile geteilt wird.' 'Der Zähler zählt, wie viele Teile wir haben.' Zähler oben, Nenner unten.",
-    "topic": "Brüche"
-  },
-  {
-    "question": "Was ist 50% als Bruch und Dezimalzahl?",
-    "options": [
-      "50/100 = 5, als Dezimal: 50",
-      "1/2 = 0,5",
-      "50/1 = 5,0",
-      "1/5 = 0,2"
-    ],
-    "correct": 1,
-    "explanation": "50% = 50/100 = 1/2 = 0,5. Prozent bedeutet 'von hundert'. 100% = Ganzes. 25% = 1/4 = 0,25. 10% = 1/10 = 0,1.",
-    "topic": "Prozent"
-  },
-  {
-    "question": "Was bedeutet 'Prozent' (%)?",
-    "options": [
-      "Von tausend",
-      "Von hundert: 1% = 1/100. 'Prozent' kommt vom Lateinischen 'per centum' (von hundert)",
-      "Von zehn",
-      "Ein Hundertstel von einem Meter"
-    ],
-    "correct": 1,
-    "explanation": "Prozent: 45% = 45/100 = 0,45. Drei Darstellungsformen: Bruch (45/100), Dezimal (0,45), Prozent (45%). Umrechnen wichtig!",
-    "topic": "Prozent"
-  },
-  {
-    "question": "Was ist 10% von 200?",
-    "options": [
-      "10",
-      "20",
-      "2",
-      "200"
-    ],
-    "correct": 1,
-    "explanation": "10% von 200: 200 × 10/100 = 200 × 0,1 = 20. Oder: 200 ÷ 10 = 20 (10% = ein Zehntel).",
-    "topic": "Prozent"
-  },
-  {
-    "question": "Welcher Bruch ist größer: 2/3 oder 3/5?",
-    "options": [
-      "3/5",
-      "2/3",
-      "Beide gleich groß",
-      "Nicht vergleichbar"
-    ],
-    "correct": 1,
-    "explanation": "Hauptnenner: kgV(3,5)=15. 2/3=10/15, 3/5=9/15. 10/15 > 9/15 → 2/3 > 3/5.",
-    "topic": "Brüche vergleichen"
-  },
-  {
-    "question": "Was ist eine gemischte Zahl?",
-    "options": [
-      "Ein Bruch mit zwei Strichen",
-      "Eine Zahl aus einer ganzen Zahl und einem echten Bruch: 2 3/4 = 2 + 3/4 = 11/4",
-      "Ein unechter Bruch",
-      "Eine negative Zahl"
-    ],
-    "correct": 1,
-    "explanation": "Gemischte Zahl umwandeln: 2 3/4 = (2×4+3)/4 = 11/4. Rückwandlung: 11÷4=2 Rest 3 → 2 3/4.",
-    "topic": "Brüche"
-  },
-  {
-    "question": "Was ist 1/3 als Dezimalzahl?",
-    "options": [
-      "0,13",
-      "0,3",
-      "0,333... (periodisch)",
-      "3,0"
-    ],
-    "correct": 2,
-    "explanation": "1/3 = 0,3333... (Periode: 3). Periodische Dezimalzahlen entstehen, wenn der Nenner (nach Kürzen) andere Primfaktoren als 2 und 5 enthält.",
-    "topic": "Dezimalzahlen"
-  },
-  {
-    "question": "Wie subtrahiert man Dezimalzahlen?",
-    "options": [
-      "Ohne Komma rechnen",
-      "Komma untereinander schreiben und dann wie bei ganzen Zahlen rechnen: 5,7 – 2,3 = 3,4",
-      "Komma ignorieren",
-      "Zuerst in Brüche umwandeln"
-    ],
-    "correct": 1,
-    "explanation": "Dezimalrechnung: Kommas untereinander ausrichten, ggf. Nullen anhängen. 5,70 – 2,35 = 3,35. Dann wie schriftliche Subtraktion.",
-    "topic": "Dezimalzahlen"
-  },
-  {
-    "question": "Was ist 25% von 80?",
-    "options": [
-      "25",
-      "20",
-      "40",
-      "8"
-    ],
-    "correct": 1,
-    "explanation": "25% von 80 = 80 × 25/100 = 80 × 0,25 = 20. Oder: 25% = 1/4, also 80 ÷ 4 = 20.",
-    "topic": "Prozent"
-  },
-  {
-    "question": "Was ist ein Stammbruch?",
-    "options": [
-      "Ein Bruch mit dem Zähler 1",
-      "Ein Bruch mit dem Nenner 1",
-      "Ein gekürzter Bruch",
-      "Ein Kehrwert"
-    ],
-    "correct": 0,
-    "explanation": "Stammbruch: Zähler = 1, also 1/2, 1/3, 1/4, 1/5... Sie sind die 'Bausteine' aller Brüche. Benannt nach dem Strich im Bruchzeichen.",
-    "topic": "Brüche"
-  },
-  {
-    "question": "Was ist 0,25 × 4?",
-    "options": [
-      "0,1",
-      "0,5",
-      "1",
-      "2,5"
-    ],
-    "correct": 2,
-    "explanation": "0,25 × 4 = 1. Denn 0,25 = 1/4, und 1/4 × 4 = 1. Oder: 0,25 × 4 = 1,00 = 1.",
-    "topic": "Dezimalzahlen"
-  },
-  {
-    "question": "Wie erweitert man einen Bruch?",
-    "options": [
-      "Zähler und Nenner durch dieselbe Zahl teilen",
-      "Zähler und Nenner mit derselben Zahl multiplizieren: 1/3 × 2/2 = 2/6 (gleichwertiger Bruch)",
-      "Zähler verdoppeln",
-      "Nenner addieren"
-    ],
-    "correct": 1,
-    "explanation": "Erweitern: 1/3 = 2/6 = 3/9 = 4/12 (alle gleichwertig). Gegenteil: Kürzen. Erweitern nötig um Hauptnenner herzustellen.",
-    "topic": "Brüche"
-  },
-  {
-    "question": "Was ist 3,14 gerundet auf eine Nachkommastelle?",
-    "options": [
-      "3",
-      "3,1",
-      "3,2",
-      "3,14"
-    ],
-    "correct": 1,
-    "explanation": "Runden: die 4 (zweite Nachkommastelle) ist < 5 → abrunden → 3,1. Wäre es 3,15, würde man auf 3,2 aufrunden (5 oder mehr → aufrunden).",
-    "topic": "Runden"
-  },
-  {
-    "question": "Was ist 1/2 × 1/2?",
-    "options": [
-      "1",
-      "1/4",
-      "2/4",
-      "1/2"
-    ],
-    "correct": 1,
-    "explanation": "1/2 × 1/2 = 1×1 / 2×2 = 1/4. Visualisierung: Hälfte einer Hälfte = ein Viertel.",
-    "topic": "Brüche multiplizieren"
-  },
-  {
-    "question": "Was ist der Unterschied zwischen 0,3 und 0,30?",
-    "options": [
-      "0,30 ist größer",
-      "Kein Unterschied im Wert – angehängte Nullen nach dem letzten Komma ändern den Wert nicht (0,3 = 0,30 = 0,300)",
-      "0,3 ist größer",
-      "0,30 = 3,0"
-    ],
-    "correct": 1,
-    "explanation": "0,3 = 0,30 = 0,300 (gleichwertig). Aber: 0,3 ≠ 0,03 (0,03 = drei Hundertstel, viel kleiner als 0,3 = drei Zehntel).",
-    "topic": "Dezimalzahlen"
-  },
-  {
-    "question": "Was ist 15% von 60?",
-    "options": [
-      "15",
-      "6",
-      "9",
-      "10"
-    ],
-    "correct": 2,
-    "explanation": "15% von 60 = 60 × 15/100. Rechenweg: 10% von 60 = 6; 5% = 3; zusammen 15% = 9. Oder: 60 × 0,15 = 9.",
-    "topic": "Prozent"
-  },
-  {
-    "question": "Was ist der Hauptnenner von 1/4 und 1/6?",
-    "options": [
-      "24",
-      "10",
-      "12",
-      "8"
-    ],
-    "correct": 2,
-    "explanation": "Hauptnenner = kgV(4,6) = 12. Vielfache von 4: 4,8,12... Vielfache von 6: 6,12... Kleinstes gemeinsames: 12.",
-    "topic": "Hauptnenner"
-  },
-  {
-    "question": "Was ist 7/7?",
-    "options": [
-      "7",
-      "0",
-      "1",
-      "1/7"
-    ],
-    "correct": 2,
-    "explanation": "7/7 = 1 (Zähler = Nenner). Allgemein: n/n = 1 für jedes n ≠ 0. Anschaulich: 7 von 7 Teilen = das Ganze = 1.",
-    "topic": "Brüche"
-  },
-  {
-    "question": "Was ist 100% von einer Zahl?",
-    "options": [
-      "Doppelt die Zahl",
-      "Die Zahl selbst – 100% bedeutet das Ganze, also der vollständige Wert",
-      "Die Hälfte der Zahl",
-      "Zehn mal die Zahl"
-    ],
-    "correct": 1,
-    "explanation": "100% = 1 (als Dezimalzahl) = Ganzes. 200% wäre das Doppelte. 50% die Hälfte. 100% von 45 = 45.",
-    "topic": "Prozent"
-  },
-  {
-    "question": "Was ist 2,5 – 1,8?",
-    "options": [
-      "0,7",
-      "1,7",
-      "0,3",
-      "1,3"
-    ],
-    "correct": 0,
-    "explanation": "2,5 – 1,8: Einer: 5<8, borgen: 15–8=7. Einerstellen: 1 (geborgt) → 1–1=0 – aber wir hatten 2–1=1 minus das geborgte 1 = 0+... 2,5–1,8=0,7. Probe: 1,8+0,7=2,5 ✓.",
-    "topic": "Dezimalzahlen"
-  },
-  {
-    "question": "Was bedeutet es, wenn der Nenner größer wird (bei gleichem Zähler)?",
-    "options": [
-      "Der Bruch wird größer",
-      "Der Bruch wird kleiner: 1/2 > 1/4 > 1/8 – je mehr Teile, desto kleiner der einzelne Teil",
-      "Der Bruch bleibt gleich",
-      "Der Bruch wird negativ"
-    ],
-    "correct": 1,
-    "explanation": "Größerer Nenner = kleinere Teile. 1/2 = eine Hälfte; 1/8 = ein Achtel (viel kleiner). Je mehr man die Pizza teilt, desto kleiner jedes Stück.",
-    "topic": "Brüche"
-  },
-  {
-    "question": "Was ist 4/5 als Prozentzahl?",
-    "options": [
-      "45%",
-      "80%",
-      "40%",
-      "4,5%"
-    ],
-    "correct": 1,
-    "explanation": "4/5 × 100% = 400/5 % = 80%. Oder: 4/5 = 0,8 = 80%.",
-    "topic": "Prozent"
-  },
-  {
-    "question": "Was ist 3/8 als Dezimalzahl?",
-    "options": [
-      "3,8",
-      "0,38",
-      "0,375",
-      "0,3"
-    ],
-    "correct": 2,
-    "explanation": "3/8 = 3 ÷ 8 = 0,375. Rechenweg: 3,000 ÷ 8 = 0,375. Probe: 0,375 × 8 = 3 ✓.",
-    "topic": "Dezimalzahlen"
+    "explanation": "Echter Bruch: Zähler kleiner als Nenner. Wert < 1.",
+    "topic": "Brucharten"
   },
   {
     "question": "Was ist ein unechter Bruch?",
     "options": [
-      "Ein Bruch mit negativem Zähler",
-      "Ein Bruch mit Zähler größer oder gleich Nenner: 5/4, 7/3, 8/8 – Wert ist 1 oder größer",
-      "Ein Stammbruch",
-      "Ein periodischer Bruch"
+      "Zähler < Nenner",
+      "Zähler ≥ Nenner",
+      "Negativer Bruch",
+      "Bruch mit Dezimalstellen"
     ],
     "correct": 1,
-    "explanation": "Unechter Bruch → umwandeln in gemischte Zahl: 7/3 = 2 Rest 1 → 2 1/3. Umgekehrt: 2 1/3 = (2×3+1)/3 = 7/3.",
-    "topic": "Brüche"
+    "explanation": "Unechter Bruch: Zähler ≥ Nenner. Wert ≥ 1.",
+    "topic": "Brucharten"
   },
   {
-    "question": "Was ist ein gemischter Bruch (gemischte Zahl)?",
+    "question": "Was ist eine gemischte Zahl?",
     "options": [
-      "Ein echter Bruch",
-      "Eine Zahl bestehend aus einer ganzen Zahl und einem echten Bruch: z.B. 2½ = 2 + ½. Umrechnung: 2½ = 5/2 (Nenner × ganze Zahl + Zähler = neuer Zähler)",
-      "Ein unechter Bruch",
-      "Eine Dezimalzahl"
+      "Nur Brüche",
+      "Ganze Zahl + echter Bruch (z.B. 2½)",
+      "Unechter Bruch",
+      "Negative Zahl"
     ],
     "correct": 1,
-    "explanation": "Gemischte Zahl: 2½, 3¾, 1⅓. In unechten Bruch umrechnen: 2½ → (2×2+1)/2 = 5/2. Zurück: 5÷2 = 2 Rest 1 → 2½. Gemischte Zahlen sind im Alltag häufig (Rezepte, Maße).",
-    "topic": "Brüche"
+    "explanation": "Gemischte Zahl: 2½ = 2 + 1/2 = 5/2.",
+    "topic": "Brucharten"
+  },
+  {
+    "question": "2/3 · 3/4 =",
+    "options": [
+      "5/7",
+      "6/12 = 1/2",
+      "2/4",
+      "4/6"
+    ],
+    "correct": 1,
+    "explanation": "Brüche multiplizieren: 2·3 / 3·4 = 6/12 = 1/2.",
+    "topic": "Multiplizieren"
+  },
+  {
+    "question": "3/4 von 8 =",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "5"
+    ],
+    "correct": 2,
+    "explanation": "3/4 × 8 = 24/4 = 6.",
+    "topic": "Bruchrechnung"
+  },
+  {
+    "question": "1/3 auf Sechstel erweitern:",
+    "options": [
+      "2/6",
+      "3/6",
+      "1/6",
+      "4/6"
+    ],
+    "correct": 0,
+    "explanation": "1/3 × 2/2 = 2/6.",
+    "topic": "Erweitern"
+  },
+  {
+    "question": "1/2 + 1/3 =",
+    "options": [
+      "2/5",
+      "2/6",
+      "5/6",
+      "3/5"
+    ],
+    "correct": 2,
+    "explanation": "gem. Nenner 6: 3/6 + 2/6 = 5/6.",
+    "topic": "Addieren"
+  },
+  {
+    "question": "3/4 – 1/4 =",
+    "options": [
+      "2/8",
+      "1/2",
+      "4/8",
+      "2/4"
+    ],
+    "correct": 1,
+    "explanation": "3/4 – 1/4 = 2/4 = 1/2.",
+    "topic": "Subtrahieren"
+  },
+  {
+    "question": "Welcher Bruch ist der größte?",
+    "options": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1/8"
+    ],
+    "correct": 2,
+    "explanation": "Bei gleichem Zähler: kleinerer Nenner = größerer Bruch. 1/2 > 1/3 > 1/4 > 1/8.",
+    "topic": "Vergleichen"
+  },
+  {
+    "question": "6/8 gekürzt:",
+    "options": [
+      "2/4",
+      "3/4",
+      "1/2",
+      "4/6"
+    ],
+    "correct": 1,
+    "explanation": "6/8 ÷ 2 = 3/4.",
+    "topic": "Kürzen"
   }
 ]
