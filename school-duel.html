@@ -4866,8 +4866,18 @@ function ensureBuiltinCatalogs() {
   ];
   let cats = getCatalogs();
   const existingIds = new Set(cats.map(c => c.id));
-  // Nur fehlende Kataloge hinzufügen – vorhandene (z.B. gepatchte oder editierte) bleiben erhalten
-  BUILTIN.forEach(c => { if (!existingIds.has(c.id)) cats.push(c); });
+  BUILTIN.forEach(c => {
+    if (!existingIds.has(c.id)) {
+      cats.push(c);
+    } else {
+      // Eingebaute Kataloge aktualisieren, wenn sich die Fragenzahl geändert hat
+      const idx = cats.findIndex(cat => cat.id === c.id);
+      if (idx >= 0 && cats[idx].builtin && cats[idx].questions.length !== c.questions.length) {
+        cats[idx].questions = c.questions;
+        cats[idx].desc = c.desc;
+      }
+    }
+  });
   saveCatalogs(cats);
 }
 // ═══════════════════════════════════════════════════════
