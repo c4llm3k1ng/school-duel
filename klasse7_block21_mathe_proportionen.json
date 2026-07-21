@@ -1,0 +1,289 @@
+[
+  {
+    "question": "Was ist eine Proportion in der Mathematik?",
+    "options": ["Eine Addition zweier Zahlen", "Eine Gleichung, die besagt, dass zwei Verhältnisse gleich sind (a:b = c:d)", "Eine Multiplikation", "Eine Potenz"],
+    "correct": 1,
+    "explanation": "Proportion: a:b = c:d, z.B. 2:4 = 5:10. Beide Verhältnisse sind gleich (0,5 = 0,5). Proportionen beschreiben gleichmäßige Vergrößerung oder Verkleinerung und sind Grundlage des Dreisatzes.",
+    "topic": "Proportionen Grundlagen"
+  },
+  {
+    "question": "Was ist ein Verhältnis (Ratio) in der Mathematik?",
+    "options": ["Eine Summe zweier Zahlen", "Der Vergleich zweier Zahlen durch Division (a:b oder a/b)", "Ein Produkt", "Eine Differenz"],
+    "correct": 1,
+    "explanation": "Verhältnisse vergleichen Größen: 3:4 bedeutet 'für je 3 von A gibt es 4 von B'. Verhältnisse können als Bruch (3/4) oder Dezimalzahl (0,75) geschrieben werden. Wichtig: beide Größen müssen in derselben Einheit sein.",
+    "topic": "Proportionen Grundlagen"
+  },
+  {
+    "question": "Was ist direkte Proportionalität?",
+    "options": ["Wenn eine Größe steigt, sinkt die andere", "Wenn sich eine Größe quadratisch ändert", "Wenn eine Größe konstant bleibt", "Wenn zwei Größen sich immer im gleichen Verhältnis ändern – wenn eine verdoppelt wird, verdoppelt sich die andere"],
+    "correct": 3,
+    "explanation": "Direkte Proportionalität: y = k·x (Proportionalitätskonstante k). Beispiel: Preis (y) und Menge (x) – doppelte Menge, doppelter Preis. Graph: Gerade durch den Ursprung. Schreibweise: y ~ x.",
+    "topic": "Proportionen"
+  },
+  {
+    "question": "Was ist indirekte (umgekehrte) Proportionalität?",
+    "options": ["Wenn beide Größen steigen", "Wenn eine Größe steigt, steigt die andere proportional", "Wenn eine Größe steigt, sinkt die andere so, dass das Produkt konstant bleibt", "Wenn beide Größen sinken"],
+    "correct": 2,
+    "explanation": "Indirekte Proportionalität: x·y = k (konstant). Beispiel: Arbeiter und Zeit – doppelt so viele Arbeiter, halb so viel Zeit. Schreibweise: y ~ 1/x. Graph: Hyperbel (keine Gerade durch den Ursprung).",
+    "topic": "Proportionen"
+  },
+  {
+    "question": "Was ist der Dreisatz?",
+    "options": ["Eine Rechenregel mit drei Gliedern", "Ein Lösungsverfahren für Proportionsaufgaben: von einer bekannten Situation auf eine unbekannte schließen", "Ein Satz aus drei Gleichungen", "Drei Rechenoperationen nacheinander"],
+    "correct": 1,
+    "explanation": "Dreisatz: 1. Angaben ordnen. 2. Berechne für 1 Einheit. 3. Berechne für die gesuchte Anzahl. Beispiel: 3 kg kosten 6 €, wie viel kosten 5 kg? → 1 kg = 2 € → 5 kg = 10 €.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "5 Bleistifte kosten 2,50 €. Was kosten 8 Bleistifte?",
+    "options": ["3,20 €", "4,00 €", "3,50 €", "5,00 €"],
+    "correct": 1,
+    "explanation": "Dreisatz: 5 Bleistifte → 2,50 €. 1 Bleistift → 2,50 ÷ 5 = 0,50 €. 8 Bleistifte → 8 × 0,50 = 4,00 €. Direkter Dreisatz, da mehr Bleistifte = mehr Geld.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Was ist die Proportionalitätskonstante k?",
+    "options": ["Der Nenner eines Bruches", "Der Quotient aus y und x bei direkt proportionalen Größen: k = y/x", "Der Kehrwert von x", "Die Differenz zweier Größen"],
+    "correct": 1,
+    "explanation": "Bei direkter Proportionalität gilt y = k·x, also k = y/x. k ist für alle Wertepaare gleich. Beispiel: 3 kg = 9 € → k = 9/3 = 3 (€/kg).",
+    "topic": "Proportionen"
+  },
+  {
+    "question": "6 Arbeiter bauen eine Mauer in 4 Tagen. Wie lange brauchen 3 Arbeiter?",
+    "options": ["2 Tage", "6 Tage", "8 Tage", "3 Tage"],
+    "correct": 2,
+    "explanation": "Indirekte Proportionalität (weniger Arbeiter = mehr Zeit). 6 × 4 = 24 Arbeitstage. 3 Arbeiter: 24 ÷ 3 = 8 Tage. Probe: 3 × 8 = 24 = 6 × 4 ✓.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Was ist ein Maßstab auf einer Karte?",
+    "options": ["Die Legende der Karte", "Das Verhältnis zwischen Kartenlänge und tatsächlicher Länge (z.B. 1:50.000 = 1 cm auf Karte = 500 m in Wirklichkeit)", "Die Himmelsrichtung", "Die Größe der Karte"],
+    "correct": 1,
+    "explanation": "Maßstab 1:50.000: 1 cm Karte = 50.000 cm = 500 m in der Realität. Wirkliche Länge = Kartenlänge × Maßstabszahl. Kartenlänge = Wirkliche Länge ÷ Maßstabszahl.",
+    "topic": "Anwendungen"
+  },
+  {
+    "question": "Wie erkennt man im Graphen, dass zwei Größen direkt proportional sind?",
+    "options": ["Der Graph ist eine Hyperbel", "Der Graph ist eine waagrechte Linie", "Der Graph ist eine Parabel", "Der Graph ist eine Gerade durch den Ursprung (0,0)"],
+    "correct": 3,
+    "explanation": "Direktproportional: Graph ist eine Gerade durch den Ursprung. Steigung = Proportionalitätskonstante k. Wichtig: Die Gerade muss DURCH den Nullpunkt gehen, sonst keine direkte Proportionalität.",
+    "topic": "Graphen"
+  },
+  {
+    "question": "Auf einer Karte im Maßstab 1:25.000 ist eine Strecke 4 cm lang. Wie lang ist die Strecke in der Wirklichkeit?",
+    "options": ["250 m", "2.500 m", "1.000 m (= 1 km)", "100 m"],
+    "correct": 2,
+    "explanation": "Wirkliche Länge = 4 cm × 25.000 = 100.000 cm = 1.000 m = 1 km. Umrechnung: 100.000 cm ÷ 100 = 1.000 m.",
+    "topic": "Anwendungen"
+  },
+  {
+    "question": "Was versteht man unter ähnlichen Figuren in der Geometrie?",
+    "options": ["Figuren, die dieselbe Fläche haben", "Figuren, die gleich groß sind", "Figuren, die dieselbe Form haben, aber unterschiedlich groß sein können (alle Winkel gleich, Seiten proportional)", "Figuren mit gleicher Farbe"],
+    "correct": 2,
+    "explanation": "Ähnliche Figuren: gleiche Winkel, proportionale Seitenlängen. Ähnlichkeitsfaktor k: k=2 → alle Seiten doppelt so lang. Kongruente Figuren: ähnlich mit k=1.",
+    "topic": "Ähnlichkeit"
+  },
+  {
+    "question": "Ein Rezept für 4 Personen braucht 300 g Mehl. Wie viel Mehl braucht man für 10 Personen?",
+    "options": ["600 g", "750 g", "700 g", "500 g"],
+    "correct": 1,
+    "explanation": "Direkte Proportionalität. 4 Personen → 300 g. 1 Person → 75 g. 10 Personen → 750 g. Probe: 750 ÷ 10 = 75 = 300 ÷ 4 ✓.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Was ist der Ähnlichkeitsfaktor k?",
+    "options": ["Das Verhältnis der Winkel zweier ähnlicher Figuren", "Der Quotient entsprechender Seitenlängen zweier ähnlicher Figuren", "Die Differenz der Flächeninhalte", "Die Summe aller Seiten"],
+    "correct": 1,
+    "explanation": "Ähnlichkeitsfaktor k = a'/a (entsprechende Seiten). k = 3: alle Seiten der neuen Figur sind 3× so lang. Flächen verhalten sich wie k², Volumina wie k³.",
+    "topic": "Ähnlichkeit"
+  },
+  {
+    "question": "Ein Auto fährt mit 60 km/h und braucht 3 Stunden. Wie lange braucht es mit 90 km/h?",
+    "options": ["1 Stunde", "2 Stunden", "4 Stunden", "1,5 Stunden"],
+    "correct": 1,
+    "explanation": "Indirekte Proportionalität. 60 × 3 = 180 km. Bei 90 km/h: 180 ÷ 90 = 2 Stunden. Probe: 90 × 2 = 180 = 60 × 3 ✓.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Was ist eine Verhältnisgleichung?",
+    "options": ["Eine Gleichung, die Summen beschreibt", "Eine Gleichung mit Quadraten", "Eine lineare Gleichung", "Eine Gleichung der Form a:b = c:d, die zwei gleiche Verhältnisse darstellt"],
+    "correct": 3,
+    "explanation": "Verhältnisgleichung a:b = c:d → a·d = b·c (Kreuzprodukt). Beispiel: 3:4 = x:8 → 3·8 = 4·x → 24 = 4x → x = 6.",
+    "topic": "Proportionen Grundlagen"
+  },
+  {
+    "question": "Wie lautet die Formel für Geschwindigkeit, Zeit und Weg?",
+    "options": ["v = s·t", "s = v·t (Weg = Geschwindigkeit × Zeit)", "t = v·s", "v = t/s"],
+    "correct": 1,
+    "explanation": "Grundformel: s = v·t. Umformen: v = s/t, t = s/v. Einheiten: km/h × h = km; m/s × s = m.",
+    "topic": "Anwendungen"
+  },
+  {
+    "question": "Wie überprüft man, ob zwei Größen direkt proportional sind?",
+    "options": ["Man addiert alle Werte", "Man prüft, ob der Quotient y/x für alle Wertepaare konstant ist", "Man prüft, ob y = x + k", "Man prüft, ob die Differenz konstant ist"],
+    "correct": 1,
+    "explanation": "Direktproportional: y/x = k (konstant). 2→4, 4→8, 6→12: 4/2=2, 8/4=2, 12/6=2 → direkt proportional. Wenn die Differenz konstant ist, liegt lineare (nicht proportionale) Beziehung vor.",
+    "topic": "Proportionen Grundlagen"
+  },
+  {
+    "question": "Wie überprüft man indirekte Proportionalität?",
+    "options": ["Man prüft, ob der Quotient konstant ist", "Man prüft, ob das Produkt x·y konstant ist", "Man prüft, ob die Summe konstant ist", "Man prüft, ob die Differenz konstant ist"],
+    "correct": 1,
+    "explanation": "Indirekt proportional: x·y = k (konstant). 2→12, 3→8, 4→6: 2·12=24, 3·8=24, 4·6=24 → Produkt konstant → indirekt proportional. Graph: Hyperbel.",
+    "topic": "Proportionen"
+  },
+  {
+    "question": "3 Pumpen füllen einen Tank in 6 Stunden. Wie lange brauchen 9 Pumpen?",
+    "options": ["2 Stunden", "3 Stunden", "18 Stunden", "1 Stunde"],
+    "correct": 0,
+    "explanation": "Indirekt proportional. 3 × 6 = 18 Pumpenstunden. 9 Pumpen: 18 ÷ 9 = 2 Stunden. Probe: 9 × 2 = 18 = 3 × 6 ✓.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Wie vereinfacht man ein Verhältnis?",
+    "options": ["Beide Zahlen addieren", "Beide Zahlen durch ihren ggT teilen", "Beide Zahlen quadrieren", "Die größere durch die kleinere teilen"],
+    "correct": 1,
+    "explanation": "Verhältnis 6:9 vereinfachen: ggT(6,9) = 3. 6÷3 : 9÷3 = 2:3. Verhältnisse vereinfachen wie Brüche kürzen – immer den größten gemeinsamen Teiler verwenden.",
+    "topic": "Proportionen Grundlagen"
+  },
+  {
+    "question": "In einer Klasse ist das Verhältnis Mädchen:Jungen = 3:2. Es gibt 30 Schüler. Wie viele Mädchen sind es?",
+    "options": ["12", "15", "18", "20"],
+    "correct": 2,
+    "explanation": "Verhältnis 3:2, Summe = 5 Teile. 30 ÷ 5 = 6 (ein Teil). Mädchen: 3 × 6 = 18. Jungen: 2 × 6 = 12. Probe: 18 + 12 = 30 ✓, 18:12 = 3:2 ✓.",
+    "topic": "Proportionen Grundlagen"
+  },
+  {
+    "question": "Ein Foto (6 cm × 4 cm) wird auf 15 cm × ? cm vergrößert. Wie breit ist das vergrößerte Foto?",
+    "options": ["8 cm", "10 cm", "12 cm", "7 cm"],
+    "correct": 1,
+    "explanation": "Ähnlichkeitsfaktor: 15 ÷ 6 = 2,5. Breite = 4 × 2,5 = 10 cm. Probe: 15/6 = 2,5 = 10/4 ✓.",
+    "topic": "Ähnlichkeit"
+  },
+  {
+    "question": "Ein Zug fährt 240 km in 2 Stunden. Wie weit kommt er in 5 Stunden?",
+    "options": ["480 km", "500 km", "600 km", "360 km"],
+    "correct": 2,
+    "explanation": "Direkter Dreisatz. 2 h → 240 km. 1 h → 120 km. 5 h → 5 × 120 = 600 km.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Zwei Zahlen sind im Verhältnis 5:3. Ihre Summe ist 40. Wie groß ist die kleinere Zahl?",
+    "options": ["15", "25", "10", "20"],
+    "correct": 0,
+    "explanation": "5+3 = 8 Teile. 40 ÷ 8 = 5 (Wert je Teil). Kleinere Zahl: 3 × 5 = 15. Größere: 5 × 5 = 25. Probe: 25 + 15 = 40 ✓, 25:15 = 5:3 ✓.",
+    "topic": "Proportionen Grundlagen"
+  },
+  {
+    "question": "Was ist der goldene Schnitt?",
+    "options": ["Ein besonders harmonisches Verhältnis (ca. 1:1,618), das in Kunst, Architektur und Natur vorkommt", "Das Verhältnis 1:1", "Das Verhältnis 2:3 bei Fotos", "Ein mathematischer Satz über Dreiecke"],
+    "correct": 0,
+    "explanation": "Goldener Schnitt: a:b = (a+b):a ≈ 1:1,618 (Phi φ). Gilt als besonders ästhetisch. Findet sich in der Nautilus-Spirale, Blütenblattanordnung (Fibonacci-Folge) und Renaissance-Kunst.",
+    "topic": "Proportionen Grundlagen"
+  },
+  {
+    "question": "4 Drucker drucken in 3 Stunden 600 Seiten. Wie viele Seiten drucken 6 Drucker in 3 Stunden?",
+    "options": ["800 Seiten", "900 Seiten", "1.200 Seiten", "750 Seiten"],
+    "correct": 1,
+    "explanation": "Direkter Dreisatz (Zeit gleich, nur Anzahl Drucker ändert sich). 4 Drucker → 600 Seiten. 1 Drucker → 150 Seiten. 6 Drucker → 6 × 150 = 900 Seiten.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Was ist ein direkter Dreisatz?",
+    "options": ["Mehr von einer Größe ergibt weniger von der anderen", "Mehr von einer Größe ergibt proportional mehr von der anderen – direkte Proportionalität", "Beide Größen sind konstant", "Nur für Geldaufgaben anwendbar"],
+    "correct": 1,
+    "explanation": "Direkter Dreisatz: Wenn Größe A steigt, steigt Größe B proportional. Beispiele: mehr Meter Stoff → höherer Preis; mehr Zeit → mehr Weg bei gleicher Geschwindigkeit.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Was ist ein indirekter Dreisatz?",
+    "options": ["Mehr von einer Größe ergibt proportional mehr von der anderen", "Mehr von einer Größe ergibt proportional weniger von der anderen (indirekte Proportionalität)", "Beide Größen sind gleich groß", "Nur für Zeitaufgaben anwendbar"],
+    "correct": 1,
+    "explanation": "Indirekter Dreisatz: Wenn A steigt, sinkt B proportional (Produkt bleibt konstant). Beispiele: mehr Arbeiter → weniger Zeit; höhere Geschwindigkeit → weniger Zeit für gleichen Weg.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Wie lautet der Maßstab, wenn 2 cm auf der Karte 1 km in der Wirklichkeit entsprechen?",
+    "options": ["1:5.000", "1:50.000", "1:500", "1:100.000"],
+    "correct": 1,
+    "explanation": "1 km = 100.000 cm. 2 cm (Karte) entsprechen 100.000 cm (Wirklichkeit). Maßstab = 1 : (100.000 ÷ 2) = 1:50.000. Probe: 2 cm × 50.000 = 100.000 cm = 1.000 m = 1 km ✓.",
+    "topic": "Anwendungen"
+  },
+  {
+    "question": "Was bedeutet es, wenn ein Ähnlichkeitsfaktor k > 1 ist?",
+    "options": ["Die Figur wird verkleinert", "Die Figur bleibt gleich groß", "Die Figur wird vergrößert (alle Seiten werden mit k multipliziert)", "Die Winkel ändern sich"],
+    "correct": 2,
+    "explanation": "k > 1: Vergrößerung. k < 1: Verkleinerung. k = 1: Kongruenz (gleich groß). k = 2: alle Seiten doppelt so lang, Flächeninhalt viermal so groß (2² = 4).",
+    "topic": "Ähnlichkeit"
+  },
+  {
+    "question": "100 g Schokolade enthalten 530 kcal. Wie viele kcal enthalten 75 g?",
+    "options": ["350 kcal", "397,5 kcal", "450 kcal", "265 kcal"],
+    "correct": 1,
+    "explanation": "Direkter Dreisatz. 100 g → 530 kcal. 1 g → 5,3 kcal. 75 g → 75 × 5,3 = 397,5 kcal.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Was ist eine proportionale Zuordnung?",
+    "options": ["Jeder x-Wert ist einem y-Wert zugeordnet, wobei y/x = konstant", "Jeder x-Wert ist einem y-Wert zufällig zugeordnet", "Eine Zuordnung, bei der y = x + c (mit c ≠ 0)", "Eine quadratische Zuordnung"],
+    "correct": 0,
+    "explanation": "Proportionale Zuordnung: y = k·x mit k ≠ 0. Kennzeichen: Graph ist Gerade durch Ursprung, y/x ist für alle Paare gleich, Tabelle zeigt konstanten Quotienten.",
+    "topic": "Proportionen Grundlagen"
+  },
+  {
+    "question": "Was ist eine antiproportionale Zuordnung?",
+    "options": ["Eine Zuordnung, bei der y/x = konstant", "Eine Zuordnung, bei der x·y = konstant (indirekte Proportionalität)", "Eine quadratische Zuordnung", "Keine mathematische Bezeichnung"],
+    "correct": 1,
+    "explanation": "Antiproportionale Zuordnung: x·y = k. Kennzeichen: Graph ist Hyperbel, Produkt aller Wertepaare ist gleich. Beispiel: Tempo (x) und Zeit (y) für gleichen Weg.",
+    "topic": "Proportionen"
+  },
+  {
+    "question": "Ein Behälter fasst 120 Liter. Eine Pumpe füllt ihn in 4 Stunden. Wie lange braucht eine doppelt so starke Pumpe?",
+    "options": ["8 Stunden", "4 Stunden", "2 Stunden", "1 Stunde"],
+    "correct": 2,
+    "explanation": "Indirekte Proportionalität. Doppelte Leistung → halbe Zeit. 4 ÷ 2 = 2 Stunden. Alternativ: 1 Pumpe × 4 h = 2 Pumpen × t → t = 4/2 = 2 h.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Was gilt für den Graphen einer antiproportionalen Zuordnung?",
+    "options": ["Eine Gerade durch den Ursprung", "Eine waagrechte Linie", "Eine Hyperbel, die sich den Achsen annähert, sie aber nicht berührt", "Eine Parabel"],
+    "correct": 2,
+    "explanation": "Graph von x·y = k ist eine Hyperbel. Je größer x, desto kleiner y (und umgekehrt). Die Kurve nähert sich beiden Achsen an (Asymptoten), berührt sie aber nie, da x und y nie 0 werden.",
+    "topic": "Graphen"
+  },
+  {
+    "question": "Ein Schüler fährt mit dem Fahrrad in 20 Minuten zur Schule (Weg: 4 km). Wie lange dauert es, wenn er nur 3 km/h Radtempo schafft?",
+    "options": ["30 Minuten", "40 Minuten", "80 Minuten", "60 Minuten"],
+    "correct": 2,
+    "explanation": "Geschwindigkeit bisher: 4 km in 20 min = 12 km/h. Neue Geschwindigkeit: 3 km/h. Zeit = 4 km ÷ 3 km/h = 4/3 h = 80 min. Alternativ indirekt: 12/3 = 4, Zeit wird 4× so lang: 20 × 4 = 80 min.",
+    "topic": "Dreisatz"
+  },
+  {
+    "question": "Was ist eine Streckenaufteilung im Verhältnis?",
+    "options": ["Eine Strecke wird halbiert", "Eine Strecke wird in zwei Teile geteilt, die das gewünschte Verhältnis haben", "Eine Strecke wird verlängert", "Eine Strecke wird gespiegelt"],
+    "correct": 1,
+    "explanation": "Strecke AB = 15 cm, Verhältnis 2:3 teilen: 2+3 = 5 Teile. Ein Teil = 15 ÷ 5 = 3 cm. Erster Abschnitt: 2 × 3 = 6 cm. Zweiter Abschnitt: 3 × 3 = 9 cm. Probe: 6 + 9 = 15 ✓.",
+    "topic": "Anwendungen"
+  },
+  {
+    "question": "In welchem Verhältnis stehen 45 Minuten und 3 Stunden?",
+    "options": ["1:4", "1:3", "1:6", "3:12"],
+    "correct": 0,
+    "explanation": "Gleiche Einheiten: 3 Stunden = 180 Minuten. Verhältnis: 45:180 = 1:4 (÷45). Probe: 1 × 45 = 45, 4 × 45 = 180 ✓. Wichtig: Immer gleiche Einheiten verwenden!",
+    "topic": "Proportionen Grundlagen"
+  },
+  {
+    "question": "Was bedeutet der Begriff 'Einheitspreis'?",
+    "options": ["Der günstigste Preis eines Produkts", "Der Preis für eine Einheit (z.B. 1 kg, 1 Liter, 1 Stück), nützlich für Preisvergleiche", "Der Preis ohne Mehrwertsteuer", "Der Gesamtpreis einer Bestellung"],
+    "correct": 1,
+    "explanation": "Einheitspreis = Gesamtpreis ÷ Menge. Beispiel: 1,5 kg Äpfel für 2,40 € → Einheitspreis = 2,40 ÷ 1,5 = 1,60 €/kg. Wichtig beim Preisvergleich im Supermarkt.",
+    "topic": "Anwendungen"
+  },
+  {
+    "question": "Was ist proportionales Denken im Alltag?",
+    "options": ["Nur für Mathematiker wichtig", "Das Verständnis, dass Größen in festem Verhältnis stehen – z.B. mehr zahlen bei mehr Menge, weniger Zeit bei mehr Helfern", "Ein abstraktes mathematisches Konzept ohne Anwendung", "Nur in der Schule anwendbar"],
+    "correct": 1,
+    "explanation": "Proportionales Denken: Rezepte skalieren, Preise vergleichen, Karten lesen, Fahrpläne verstehen, Bauplan-Maßstäbe, Umrechnungen. Es ist eine Kernkompetenz für alltägliches Problemlösen.",
+    "topic": "Anwendungen"
+  }
+]

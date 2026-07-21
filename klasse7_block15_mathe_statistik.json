@@ -1,0 +1,275 @@
+[
+  {
+    "question": "Was ist eine statistische Erhebung?",
+    "options": ["Eine mathematische Formel", "Das systematische Sammeln von Daten zu einem bestimmten Merkmal", "Eine grafische Darstellung", "Eine Wahrscheinlichkeitsrechnung"],
+    "correct": 1,
+    "explanation": "Bei einer statistischen Erhebung werden Daten (z.B. Schuhgrößen, Noten, Lieblingsfarben) systematisch gesammelt und ausgewertet. Man unterscheidet Vollerhebung (alle) und Stichprobe (Auswahl).",
+    "topic": "Statistik Grundlagen"
+  },
+  {
+    "question": "Was ist die absolute Häufigkeit eines Merkmals?",
+    "options": ["Der Prozentwert eines Merkmals", "Die Anzahl, wie oft ein Merkmal in der Erhebung vorkommt", "Das Verhältnis zu allen Daten", "Der Mittelwert der Daten"],
+    "correct": 1,
+    "explanation": "Absolute Häufigkeit = rohe Anzahl. Beispiel: In einer Klasse von 30 Schülern haben 12 blaue Augen. Absolute Häufigkeit von 'blaue Augen' = 12.",
+    "topic": "Häufigkeit"
+  },
+  {
+    "question": "Was ist die relative Häufigkeit?",
+    "options": ["Die absolute Häufigkeit minus 1", "Der Anteil eines Merkmalswertes an der Gesamtanzahl (Bruch oder Dezimalzahl zwischen 0 und 1)", "Die Summe aller Häufigkeiten", "Der häufigste Wert"],
+    "correct": 1,
+    "explanation": "Relative Häufigkeit = absolute Häufigkeit ÷ Gesamtanzahl. Beispiel: 12 von 30 Schülern haben blaue Augen → relative Häufigkeit = 12/30 = 0,4 = 40 %. Alle relativen Häufigkeiten zusammen ergeben 1 (= 100 %).",
+    "topic": "Häufigkeit"
+  },
+  {
+    "question": "Wie berechnet man den arithmetischen Mittelwert (Durchschnitt)?",
+    "options": ["Man nimmt den mittleren Wert nach dem Sortieren", "Man addiert alle Werte und dividiert durch die Anzahl der Werte", "Man nimmt den am häufigsten vorkommenden Wert", "Man berechnet den größten minus den kleinsten Wert"],
+    "correct": 1,
+    "explanation": "Mittelwert x̄ = Summe aller Werte ÷ Anzahl der Werte. Beispiel: Noten 2, 3, 4, 1, 5 → Summe = 15, Anzahl = 5, Mittelwert = 15 ÷ 5 = 3.",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Was ist der Median?",
+    "options": ["Der häufigste Wert in einem Datensatz", "Der Durchschnitt aller Werte", "Der mittlere Wert nach dem Sortieren der Daten", "Der kleinste Wert minus dem größten Wert"],
+    "correct": 2,
+    "explanation": "Median: Daten sortieren, dann mittleren Wert nehmen. Bei gerader Anzahl: Mittelwert der zwei mittleren Werte. Beispiel: 1,2,3,5,9 → Median = 3. Vorteil: robuster gegenüber Ausreißern als der Mittelwert.",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Was ist der Modus (Modalwert)?",
+    "options": ["Der größte Wert", "Der mittlere Wert nach dem Sortieren", "Der am häufigsten vorkommende Wert in einem Datensatz", "Der Durchschnitt"],
+    "correct": 2,
+    "explanation": "Modus = häufigster Wert. Beispiel: Datensatz 2,3,3,5,3,7 → Modus = 3 (kommt dreimal vor). Ein Datensatz kann mehrere Modi haben (bimodal, multimodal) oder keinen, wenn alle Werte gleich häufig sind.",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Was gibt die Spannweite an?",
+    "options": ["Den Mittelwert", "Den häufigsten Wert", "Die Differenz zwischen dem größten und dem kleinsten Wert eines Datensatzes", "Die Anzahl aller Werte"],
+    "correct": 2,
+    "explanation": "Spannweite = Maximalwert − Minimalwert. Beispiel: Datensatz 3,7,12,5,20 → Spannweite = 20 − 3 = 17. Die Spannweite ist ein einfaches Streuungsmaß, reagiert aber stark auf Ausreißer.",
+    "topic": "Streuung"
+  },
+  {
+    "question": "Für welche Art von Daten eignet sich ein Säulendiagramm besonders gut?",
+    "options": ["Für die Darstellung von Anteilen eines Ganzen", "Für den Vergleich diskreter Kategorien oder Häufigkeiten", "Für stetige Daten über einen Zeitverlauf", "Für Wahrscheinlichkeitsbäume"],
+    "correct": 1,
+    "explanation": "Säulendiagramme eignen sich für diskrete Kategorien (Lieblingsfach, Noten, Sportarten). Die Höhe der Säule zeigt die Häufigkeit. Für Anteile eines Ganzen ist das Kreisdiagramm besser geeignet.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Wofür verwendet man ein Kreisdiagramm?",
+    "options": ["Für die Darstellung von Zeitverläufen", "Für den Vergleich diskreter Kategorien", "Für die Darstellung, welchen prozentualen Anteil verschiedene Kategorien an einem Ganzen haben", "Für die Häufigkeitsverteilung stetiger Daten"],
+    "correct": 2,
+    "explanation": "Kreisdiagramme zeigen Anteile am Ganzen (z.B. Stimmverteilung bei Wahlen, Marktanteile). Der volle Kreis = 100 % = 360°. Ein Segment mit 25 % hat einen Mittelpunktswinkel von 90°.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Was ist ein Zufallsexperiment?",
+    "options": ["Ein Experiment, dessen Ausgang vor der Durchführung bekannt ist", "Ein Experiment, dessen Ausgang vom Zufall abhängt und nicht exakt vorhergesagt werden kann", "Ein Experiment im Physikunterricht", "Eine Messreihe in der Statistik"],
+    "correct": 1,
+    "explanation": "Zufallsexperimente: Münzwurf, Würfeln, Kartenziehen. Das Ergebnis (Ereignis) ist zufällig, aber alle möglichen Ergebnisse (Ergebnisraum Ω) sind bekannt. Beispiel Würfel: Ω = {1, 2, 3, 4, 5, 6}.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist die Wahrscheinlichkeit eines Ereignisses beim Laplace-Experiment?",
+    "options": ["Anzahl der unmöglichen Ergebnisse ÷ Gesamtzahl", "Anzahl der günstigen Ergebnisse ÷ Gesamtzahl aller gleichwahrscheinlichen Ergebnisse", "Gesamtzahl aller Ergebnisse ÷ günstige Ergebnisse", "Anzahl der Versuche ÷ Ergebnisse"],
+    "correct": 1,
+    "explanation": "Laplace-Formel: P(E) = |E| / |Ω|. Beim idealen Würfel: P(6) = 1/6. Voraussetzung: Alle Ergebnisse sind gleichwahrscheinlich (fair). Münzwurf: P(Kopf) = 1/2 = 0,5 = 50 %.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Welchen Wertebereich hat eine Wahrscheinlichkeit?",
+    "options": ["−1 bis 1", "0 bis 100", "0 bis 1 (also 0 % bis 100 %)", "Beliebige positive Zahlen"],
+    "correct": 2,
+    "explanation": "Wahrscheinlichkeiten liegen immer zwischen 0 (unmöglich) und 1 (sicher). P = 0 bedeutet: das Ereignis kann nicht eintreten. P = 1 bedeutet: das Ereignis tritt sicher ein. Oft auch als Prozent angegeben (0 % bis 100 %).",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist ein Laplace-Experiment?",
+    "options": ["Ein Experiment ohne Zufall", "Ein statistisches Experiment mit vielen Versuchen", "Ein Zufallsexperiment, bei dem alle Ergebnisse gleich wahrscheinlich sind", "Ein chemisches Experiment"],
+    "correct": 2,
+    "explanation": "Laplace-Experimente: idealer Würfel (jede Zahl mit W. 1/6), faire Münze (Kopf/Zahl je 1/2), blindes Ziehen aus einer Urne mit gleich vielen Kugeln. Nicht-Laplace: gezinkter Würfel.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was bedeutet P(E) = 0?",
+    "options": ["Das Ereignis ist sicher", "Das Ereignis hat eine 50-%-Chance", "Das Ereignis ist unmöglich", "Die Wahrscheinlichkeit ist unbekannt"],
+    "correct": 2,
+    "explanation": "P(E) = 0 bedeutet: Das Ereignis kann nicht eintreten. Beispiel: P(7 würfeln mit einem 6-seitigen Würfel) = 0. Gegenteil: P(E) = 1, das Ereignis tritt sicher ein.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Wie berechnet man die Wahrscheinlichkeit des Gegenereig­nisses?",
+    "options": ["P(Ē) = P(E) × 2", "P(Ē) = P(E) + 1", "P(Ē) = 1 − P(E)", "P(Ē) = P(E) ÷ 2"],
+    "correct": 2,
+    "explanation": "Gegenereignis: Wenn P(Regen) = 0,3, dann P(kein Regen) = 1 − 0,3 = 0,7. Ereignis und Gegenereignis schließen sich gegenseitig aus und decken zusammen alle Möglichkeiten ab.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was zeigt ein Streifendiagramm (gestapeltes Balkendiagramm)?",
+    "options": ["Den Verlauf von Daten über die Zeit", "Die Anteile mehrerer Kategorien an einem Ganzen, dargestellt als Rechteck", "Punkte in einem Koordinatensystem", "Die Häufigkeitsverteilung stetiger Daten"],
+    "correct": 1,
+    "explanation": "Streifendiagramme (auch Balkendiagramme) zeigen Kategorien horizontal. Gestapelte Varianten zeigen Teilanteile. Sie sind wie Kreisdiagramme in rechteckiger Form, leichter zu lesen bei vielen Kategorien.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Was ist ein Liniendiagramm besonders gut geeignet darzustellen?",
+    "options": ["Anteile an einem Ganzen", "Häufigkeiten diskreter Kategorien", "Zeitliche Entwicklungen und Trends", "Wahrscheinlichkeitsbäume"],
+    "correct": 2,
+    "explanation": "Liniendiagramme (Kurvendiagramme) zeigen Veränderungen über die Zeit (Temperaturverlauf, Börsenkurse, Bevölkerungsentwicklung). Punkte werden durch Linien verbunden, um Trends sichtbar zu machen.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Was versteht man unter einer Stichprobe?",
+    "options": ["Die Befragung aller Mitglieder einer Gruppe", "Eine zufällige Auswahl aus einer Grundgesamtheit, die diese repräsentieren soll", "Einen einzelnen Messwert", "Eine Tabelle mit allen Daten"],
+    "correct": 1,
+    "explanation": "Stichproben werden verwendet, wenn eine Vollerhebung zu aufwendig ist (z.B. Wahlumfragen). Wichtig: Die Stichprobe muss repräsentativ sein, d.h. die Grundgesamtheit widerspiegeln.",
+    "topic": "Statistik Grundlagen"
+  },
+  {
+    "question": "Wie viel beträgt die Summe aller relativen Häufigkeiten in einer Erhebung?",
+    "options": ["Die Anzahl der Merkmale", "0", "Der Mittelwert", "1 (entspricht 100 %)"],
+    "correct": 3,
+    "explanation": "Die Summe aller relativen Häufigkeiten ist immer 1 (= 100 %), weil jedes Datenelement genau einer Kategorie angehört. Beispiel: Noten 1 (20 %), 2 (30 %), 3 (35 %), 4 (15 %) → Summe = 100 %.",
+    "topic": "Häufigkeit"
+  },
+  {
+    "question": "Was ist ein Baumdiagramm in der Wahrscheinlichkeitsrechnung?",
+    "options": ["Ein Diagramm für Häufigkeiten", "Eine grafische Darstellung, die alle möglichen Ausgänge eines mehrstufigen Zufallsexperiments und deren Wahrscheinlichkeiten zeigt", "Ein Liniendiagramm", "Ein Säulendiagramm mit Ästen"],
+    "correct": 1,
+    "explanation": "Baumdiagramme helfen bei mehrstufigen Experimenten (z.B. zweimal würfeln). Die Wahrscheinlichkeit eines Pfades ergibt sich durch Multiplikation der Einzelwahrscheinlichkeiten (Produktregel).",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was besagt die Pfadmultiplikationsregel im Baumdiagramm?",
+    "options": ["Man addiert die Wahrscheinlichkeiten entlang eines Pfades", "Man subtrahiert die Wahrscheinlichkeiten", "Die Wahrscheinlichkeit eines Pfades ist das Produkt (Multiplikation) der Einzelwahrscheinlichkeiten", "Man teilt die Wahrscheinlichkeiten der Äste"],
+    "correct": 2,
+    "explanation": "Pfadmultiplikation: P(A und B) = P(A) × P(B) (bei unabhängigen Ereignissen). Beispiel: Münze zweimal werfen, P(Kopf und Kopf) = 1/2 × 1/2 = 1/4.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was besagt die Pfadadditionsregel?",
+    "options": ["Wahrscheinlichkeiten werden multipliziert", "Wahrscheinlichkeiten günstiger Pfade werden addiert, um die Gesamtwahrscheinlichkeit zu erhalten", "Man nimmt den Mittelwert der Pfadwahrscheinlichkeiten", "Man subtrahiert die Wahrscheinlichkeit vom Gegenereignis"],
+    "correct": 1,
+    "explanation": "Pfadaddition: P(E) = Summe aller günstigen Pfade. Beispiel: P(genau einmal Kopf bei zwei Würfen) = P(KZ) + P(ZK) = 1/4 + 1/4 = 1/2.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist ein Histogramm?",
+    "options": ["Ein Kreisdiagramm mit Balken", "Ein Diagramm zur Darstellung der Häufigkeitsverteilung stetiger Daten in Klassen", "Ein Baumdiagramm", "Ein Liniendiagramm mit Häufigkeiten"],
+    "correct": 1,
+    "explanation": "Histogramme zeigen die Verteilung stetiger Daten (z.B. Körpergröße, Gewicht). Daten werden in Klassen eingeteilt, die Balkenhöhe zeigt die Häufigkeit. Im Gegensatz zum Säulendiagramm liegen die Balken direkt aneinander.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Was versteht man unter der Grundgesamtheit?",
+    "options": ["Die Summe aller Daten", "Die Gesamtheit aller Objekte oder Personen, über die eine Aussage gemacht werden soll", "Die Anzahl der erhobenen Daten", "Alle Merkmale einer Erhebung"],
+    "correct": 1,
+    "explanation": "Grundgesamtheit: z.B. 'alle Schüler Deutschlands' bei einer bundesweiten Umfrage. Da Vollerhebungen oft unmöglich sind, zieht man eine Stichprobe und schließt auf die Grundgesamtheit.",
+    "topic": "Statistik Grundlagen"
+  },
+  {
+    "question": "Welchen Mittelwert sollte man wählen, wenn Ausreißer die Daten verzerren?",
+    "options": ["Arithmetisches Mittel", "Modus", "Median", "Spannweite"],
+    "correct": 2,
+    "explanation": "Der Median ist robust gegenüber Ausreißern. Beispiel: Einkommen 1.000, 1.200, 1.100, 1.300, 50.000 € → Mittelwert = 10.920 € (verzerrt), Median = 1.200 € (repräsentativer für die meisten).",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Ein Würfel wird geworfen. Wie groß ist die Wahrscheinlichkeit, eine gerade Zahl zu würfeln?",
+    "options": ["1/6", "1/3", "2/3", "1/2"],
+    "correct": 3,
+    "explanation": "Gerade Zahlen beim Würfel: {2, 4, 6} → 3 günstige von 6 gleichwahrscheinlichen Ergebnissen. P = 3/6 = 1/2 = 50 %. Das ist ein klassisches Laplace-Experiment.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was ist eine Urliste in der Statistik?",
+    "options": ["Eine sortierte Datenliste", "Die rohe, unsortierte Liste aller erhobenen Daten", "Eine Häufigkeitstabelle", "Ein Diagramm"],
+    "correct": 1,
+    "explanation": "Die Urliste enthält alle Daten in der Reihenfolge ihrer Erhebung, ohne Sortierung oder Auswertung. Aus ihr werden dann Häufigkeitstabellen, sortierte Listen und Diagramme erstellt.",
+    "topic": "Statistik Grundlagen"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Merkmal und Merkmalsausprägung?",
+    "options": ["Kein Unterschied", "Merkmal ist das untersuchte Kriterium (z.B. Augenfarbe), Merkmalsausprägung ist der konkrete Wert (z.B. blau)", "Merkmalsausprägung ist die Formel, Merkmal das Ergebnis", "Merkmal ist der Mittelwert, Ausprägung die Häufigkeit"],
+    "correct": 1,
+    "explanation": "Unterschied: Merkmal = was untersucht wird (Note, Schuhgröße). Ausprägung = konkreter Wert (Note 3, Größe 42). Wichtige Unterscheidung in der Statistik bei der Beschreibung von Daten.",
+    "topic": "Statistik Grundlagen"
+  },
+  {
+    "question": "Wie lautet die relative Häufigkeit, wenn 8 von 40 Schülern Linkshänder sind?",
+    "options": ["0,08", "8 %", "1/5 (= 0,2 = 20 %)", "0,4"],
+    "correct": 2,
+    "explanation": "Relative Häufigkeit = 8 ÷ 40 = 0,2 = 20 % = 1/5. Diese kann als Bruch, Dezimalzahl oder Prozent angegeben werden – alle drei Darstellungen sind korrekt.",
+    "topic": "Häufigkeit"
+  },
+  {
+    "question": "Was bedeutet es, wenn zwei Ereignisse sich gegenseitig ausschließen?",
+    "options": ["Sie können beide gleichzeitig eintreten", "Wenn eines eintritt, kann das andere nicht eintreten (Schnittmenge ist leer)", "Sie haben gleiche Wahrscheinlichkeiten", "Ihre Wahrscheinlichkeiten addieren sich zu 0"],
+    "correct": 1,
+    "explanation": "Gegenseitig ausschließende (disjunkte) Ereignisse: Beim Würfeln 'Zahl < 3' und 'Zahl > 4' schließen sich aus. Für disjunkte Ereignisse gilt: P(A oder B) = P(A) + P(B).",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Aus einer Urne mit 3 roten und 2 blauen Kugeln wird eine gezogen. Wie groß ist die Wahrscheinlichkeit, eine rote Kugel zu ziehen?",
+    "options": ["2/5", "1/3", "3/5", "1/2"],
+    "correct": 2,
+    "explanation": "Günstige Ergebnisse: 3 (rote Kugeln). Gesamtergebnisse: 5. P(rot) = 3/5 = 60 %. Da alle Kugeln gleichwahrscheinlich gezogen werden, ist dies ein Laplace-Experiment.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Was zeigt ein Streudiagramm?",
+    "options": ["Anteile einer Gesamtheit als Kreisausschnitte", "Die Häufigkeit von Kategorien als Balken", "Den Zusammenhang zwischen zwei Merkmalen durch Punkte in einem Koordinatensystem", "Zeitliche Verläufe als Linie"],
+    "correct": 2,
+    "explanation": "Streudiagramme (Punktwolken) zeigen, ob zwei Merkmale zusammenhängen (Korrelation). Beispiel: Körpergröße und Schuhgröße – Punkte oben rechts und unten links zeigen positiven Zusammenhang.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Was ist eine Häufigkeitstabelle?",
+    "options": ["Eine sortierte Datenliste", "Eine Tabelle, die Merkmalsausprägungen und ihre absoluten und relativen Häufigkeiten zeigt", "Ein Diagramm zur Darstellung von Häufigkeiten", "Eine Liste der Mittelwerte"],
+    "correct": 1,
+    "explanation": "Häufigkeitstabellen fassen Urlisten übersichtlich zusammen: Spalten für Merkmalsausprägung, absolute Häufigkeit, relative Häufigkeit (%) und kumulative Häufigkeit (aufaddiert).",
+    "topic": "Statistik Grundlagen"
+  },
+  {
+    "question": "Was ist das arithmetische Mittel der Zahlen 4, 6, 8, 10, 12?",
+    "options": ["6", "8", "10", "7"],
+    "correct": 1,
+    "explanation": "Mittelwert = (4+6+8+10+12) ÷ 5 = 40 ÷ 5 = 8. Bei einer arithmetischen Folge mit gleichem Abstand ist der Mittelwert immer der mittlere Wert (hier: 8).",
+    "topic": "Mittelwerte"
+  },
+  {
+    "question": "Was sind unabhängige Ereignisse in der Wahrscheinlichkeitsrechnung?",
+    "options": ["Ereignisse, die sich gegenseitig ausschließen", "Ereignisse, bei denen das Eintreten des einen die Wahrscheinlichkeit des anderen nicht beeinflusst", "Ereignisse mit gleicher Wahrscheinlichkeit", "Ereignisse, die immer gemeinsam eintreten"],
+    "correct": 1,
+    "explanation": "Unabhängige Ereignisse: zweimal Münzwurf – der erste Wurf beeinflusst den zweiten nicht. P(Kopf bei Wurf 2 | Kopf bei Wurf 1) = 1/2 = P(Kopf bei Wurf 2). Für unabhängige Ereignisse gilt: P(A ∩ B) = P(A) × P(B).",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Welches Diagramm eignet sich am besten, um Lieblingssportarten einer Klasse darzustellen?",
+    "options": ["Liniendiagramm", "Histogramm", "Streudiagramm", "Säulen- oder Balkendiagramm"],
+    "correct": 3,
+    "explanation": "Für kategoriale Daten (Sportarten) eignet sich das Säulendiagramm. Jede Säule steht für eine Sportart, die Höhe für die Häufigkeit. Ein Liniendiagramm wäre hier falsch, da Sportarten keine sinnvolle Reihenfolge haben.",
+    "topic": "Diagramme"
+  },
+  {
+    "question": "Was ist die kumulative Häufigkeit?",
+    "options": ["Die Häufigkeit des häufigsten Wertes", "Die aufaddierte Summe der absoluten oder relativen Häufigkeiten bis zu einem bestimmten Wert", "Der Mittelwert aller Häufigkeiten", "Die Häufigkeit aller seltenen Werte"],
+    "correct": 1,
+    "explanation": "Kumulative (kumulierte) Häufigkeit: 'Wie viele Daten liegen bis zu diesem Wert?' Beispiel: Noten 1 (5×), 2 (8×), 3 (10×). Kumulative Häufigkeit bis Note 2 = 5+8 = 13. Nützlich für 'mindestens' / 'höchstens' Fragen.",
+    "topic": "Häufigkeit"
+  },
+  {
+    "question": "Was bedeutet eine Wahrscheinlichkeit von 0,75?",
+    "options": ["Das Ereignis ist unmöglich", "Das Ereignis tritt in 75 % der Fälle ein", "Das Ereignis tritt sicher ein", "Das Ereignis tritt in 25 % der Fälle ein"],
+    "correct": 1,
+    "explanation": "P = 0,75 = 75/100 = 75 %. Beispiel: Ein Schütze trifft mit W. 0,75, d.h. bei 100 Versuchen durchschnittlich 75 Treffer. Das Gegenereignis (kein Treffer) hat P = 1 − 0,75 = 0,25 = 25 %.",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "question": "Wann ist eine Stichprobe repräsentativ?",
+    "options": ["Wenn sie sehr viele Daten enthält", "Wenn sie die Grundgesamtheit in ihren wesentlichen Merkmalen widerspiegelt", "Wenn alle Werte gleich groß sind", "Wenn sie vollständig ist"],
+    "correct": 1,
+    "explanation": "Repräsentativität: Eine Stichprobe muss die Grundgesamtheit proportional abbilden (Alter, Geschlecht, Region). Methoden: Zufallsstichprobe, geschichtete Stichprobe. Wichtig bei Meinungsumfragen und Wahlprognosen.",
+    "topic": "Statistik Grundlagen"
+  }
+]

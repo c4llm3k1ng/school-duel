@@ -1,0 +1,482 @@
+[
+  {
+    "question": "Was ist eine Kraft?",
+    "options": [
+      "Eine Energie",
+      "Physikalische Größe, die einen Körper beschleunigen, verformen oder deformieren kann. Einheit: Newton (N). Kräfte haben Betrag, Richtung und Angriffspunkt (Vektorgröße).",
+      "Eine Masse",
+      "Eine Geschwindigkeit"
+    ],
+    "correct": 1,
+    "explanation": "Kraft F: Einheit Newton (N = kg·m/s²). Kräfte als Pfeile (Vektoren): Länge = Betrag, Pfeilrichtung = Richtung. Typen: Schwerkraft, Normalkraft, Reibungskraft, Federkraft, Magnetkraft, elektrische Kraft.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist das Newtonsche Grundgesetz (2. Newtonsches Gesetz)?",
+    "options": [
+      "Kraft = Masse geteilt durch Zeit",
+      "F = m · a: Kraft ist gleich Masse mal Beschleunigung. Je größer die Masse, desto mehr Kraft nötig. Je mehr Kraft, desto größer die Beschleunigung.",
+      "Kraft = Energie",
+      "Kraft = Weg geteilt durch Zeit"
+    ],
+    "correct": 1,
+    "explanation": "F = m · a (Newton). F in Newton (N), m in kg, a in m/s². Beispiel: 5 kg, a = 2 m/s² → F = 10 N. Umformen: a = F/m, m = F/a. 1 N = Kraft, die 1 kg auf 1 m/s² beschleunigt.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist das 3. Newtonsche Gesetz (Actio-Reactio)?",
+    "options": [
+      "Trägheitsgesetz",
+      "Jede Kraft hat eine gleich große, entgegengerichtete Gegenkraft: \"actio = reactio\". Wenn A auf B drückt, drückt B mit gleicher Kraft zurück.",
+      "Gravitationsgesetz",
+      "Impulserhaltung"
+    ],
+    "correct": 1,
+    "explanation": "Actio-Reactio: Buch auf Tisch → Tisch drückt Buch nach oben (Normalkraft). Rakete: Schubgase nach hinten → Rakete nach vorne. Schwimmen: Arm drückt Wasser nach hinten → Wasser drückt Körper nach vorne. Kräftepaare an verschiedenen Körpern.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist das 1. Newtonsche Gesetz (Trägheitsgesetz)?",
+    "options": [
+      "F = ma",
+      "Ein Körper, auf den keine Kraft wirkt (oder Kräfte sich aufheben), bleibt in Ruhe oder bewegt sich geradlinig gleichförmig.",
+      "Actio = Reactio",
+      "Energie ist immer erhalten"
+    ],
+    "correct": 1,
+    "explanation": "Trägheitsgesetz (Lex I): kein Antrieb → keine Änderung des Bewegungszustands. Im Weltraum: Raumschiff bewegt sich ohne Motor weiter. Auf Erde: Reibung stoppt alles. Trägheit: Widerstand gegen Änderung des Bewegungszustands.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Masse und Gewicht?",
+    "options": [
+      "Kein Unterschied",
+      "Masse (m): Menge an Materie, unveränderlich, in kg. Gewicht (G): Kraft, mit der die Erde einen Körper anzieht, abhängig vom Ort, in Newton. G = m · g.",
+      "Gewicht ist in kg",
+      "Masse ändert sich mit dem Ort"
+    ],
+    "correct": 1,
+    "explanation": "Masse: immer gleich (auf Mond = auf Erde). Gewichtskraft G = m · g (g = 9,81 m/s² auf Erde, 1,62 m/s² auf Mond). 10 kg Masse → G ≈ 100 N auf Erde, ≈ 16 N auf Mond. Waage misst Gewichtskraft.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Reibung?",
+    "options": [
+      "Eine Art Anziehungskraft",
+      "Kraft, die der Bewegung entgegenwirkt: entsteht an Kontaktflächen. Haftreibung (Stillstand), Gleitreibung (Bewegung), Rollreibung (Rollbewegung). Reibung erzeugt Wärme.",
+      "Abstoßungskraft",
+      "Gravitationskraft"
+    ],
+    "correct": 1,
+    "explanation": "Reibungskraft: F_R = µ · F_N (µ = Reibungskoeffizient, F_N = Normalkraft). Haftreibung > Gleitreibung. Rollreibung am kleinsten. Nutzung: Bremsen, Schrauben, Reifen. Nachteil: Energieverlust, Verschleiß. ABS: verhindert Blockieren der Räder (Haftreibung > Gleitreibung).",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Gravitation?",
+    "options": [
+      "Magnetismus",
+      "Anziehungskraft zwischen Massen. Erde zieht alle Körper an (Schwerkraft). Größer bei größerer Masse oder geringerem Abstand.",
+      "Elektrische Kraft",
+      "Kernkraft"
+    ],
+    "correct": 1,
+    "explanation": "Gravitation: Newton (1687). F = G · m₁ · m₂ / r² (G = Gravitationskonstante). Schwerkraft: Erdanziehung, g ≈ 9,81 m/s². Freier Fall: ohne Luftwiderstand fallen alle Körper gleich schnell (Galileo: Turm zu Pisa). Mond umkreist Erde wegen Gravitation.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Geschwindigkeit?",
+    "options": [
+      "Kraft pro Zeit",
+      "Weg pro Zeit: v = s / t. Einheit: m/s oder km/h. Unterschied: mittlere Geschwindigkeit (Gesamtweg / Gesamtzeit) vs. momentane Geschwindigkeit.",
+      "Masse mal Zeit",
+      "Energie pro Weg"
+    ],
+    "correct": 1,
+    "explanation": "v = s/t. s in m, t in s → v in m/s. Umrechnung: 1 m/s = 3,6 km/h. Auto: 100 km/h = 27,8 m/s. Durchschnitt: 100 km in 2 h = 50 km/h. Momentan: Tachometer. Licht: ca. 300.000 km/s.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Beschleunigung?",
+    "options": [
+      "Geschwindigkeit",
+      "Änderung der Geschwindigkeit pro Zeit: a = Δv / t. Einheit: m/s². Positive Beschleunigung: schneller. Negative Beschleunigung (Verzögerung): langsamer.",
+      "Weg pro Zeit",
+      "Kraft geteilt durch Weg"
+    ],
+    "correct": 1,
+    "explanation": "Beschleunigung: a = (v_end - v_start) / t. Auto: 0 auf 100 km/h in 10 s → a = (27,8 - 0) / 10 = 2,78 m/s². Freier Fall: a = g = 9,81 m/s². Gleichmäßige Beschleunigung: v-t-Diagramm = Gerade. s = ½ · a · t².",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist der Hebelarm und das Hebelgesetz?",
+    "options": [
+      "Länge des Hebels",
+      "Hebelgesetz: Kraft × Kraftarm = Last × Lastarm (F₁ · l₁ = F₂ · l₂). Langer Arm = wenig Kraft nötig. Einseitig: Schubkarre, Angelrute. Zweiseitig: Wippe, Schere.",
+      "Griff am Werkzeug",
+      "Material des Hebels"
+    ],
+    "correct": 1,
+    "explanation": "Hebel: Drehpunkt, Kraftarm, Lastarm. F₁ · l₁ = F₂ · l₂. Beispiel: 500 N Last, Lastarm 0,5 m, Kraftarm 2 m → F_Kraft = 500 · 0,5 / 2 = 125 N. Hebel vervielfacht Kraft aber nicht Arbeit! Einseitig: Türklinke, Schere. Zweiseitig: Wippe.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Arbeit in der Physik?",
+    "options": [
+      "Anstrengung",
+      "W = F · s · cos(α): Arbeit ist Kraft mal Weg (in Kraftrichtung). Einheit: Joule (J = N·m). Nur wenn sich der Körper in Kraftrichtung bewegt, wird Arbeit verrichtet.",
+      "Leistung",
+      "Energie"
+    ],
+    "correct": 1,
+    "explanation": "Arbeit W = F · s (wenn Kraft und Weg in gleicher Richtung). Einheit: 1 J = 1 N·m. 10 N über 5 m → W = 50 J. Hubarbeit: W_hub = m · g · h. Wenn keine Bewegung → keine Arbeit (physikalisch). Reibungsarbeit: in Wärme umgewandelt.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Leistung in der Physik?",
+    "options": [
+      "Kraft mal Weg",
+      "Arbeit pro Zeit: P = W / t. Einheit: Watt (W = J/s). Elektromotor: schneller als Mensch, also höhere Leistung bei gleicher Arbeit.",
+      "Energie mal Zeit",
+      "Kraft mal Zeit"
+    ],
+    "correct": 1,
+    "explanation": "Leistung P = W/t. Einheit: Watt (W) oder Kilowatt (kW). Automoautotor: 100 kW. Mensch beim Sport: ca. 300–400 W. Pferdestärke (PS): 1 PS = 736 W. Lampenwatt: 60-W-Lampe verbraucht 60 J pro Sekunde.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Energie und ihre Formen?",
+    "options": [
+      "Kraft mal Masse",
+      "Fähigkeit, Arbeit zu verrichten. Formen: kinetische (Bewegungs-), potenzielle (Lage-), Wärme-, elektrische, chemische, Strahlungsenergie. Einheit: Joule (J).",
+      "Geschwindigkeit mal Zeit",
+      "Kraft geteilt durch Masse"
+    ],
+    "correct": 1,
+    "explanation": "Energie: Einheit Joule (J) = Watt·Sekunde (Ws) = Newton·Meter (Nm). Kinetisch: E_kin = ½mv². Potenziel: E_pot = mgh. Energieerhaltung: Energie kann nicht erzeugt oder vernichtet, nur umgewandelt. Wirkungsgrad: η = Nutzenergie / zugeführte Energie.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist der Energieerhaltungssatz?",
+    "options": [
+      "Energie kann verloren gehen",
+      "Energie kann weder erzeugt noch vernichtet werden, nur von einer Form in eine andere umgewandelt. Gesamtenergie eines abgeschlossenen Systems bleibt konstant.",
+      "Energie entsteht beim Verbrennen",
+      "Energie ist unendlich verfügbar"
+    ],
+    "correct": 1,
+    "explanation": "Energieerhaltung: 1. Thermodynamischer Hauptsatz. Beim Pendel: E_pot (oben) ↔ E_kin (unten). Reibung: kinetische Energie → Wärme (nicht \"verloren\", aber weniger nutzbar). Wirkungsgrad immer < 100% (Verluste als Wärme).",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist kinetische Energie?",
+    "options": [
+      "Energie in Ruhe",
+      "Bewegungsenergie: E_kin = ½ · m · v². Verdopplung der Geschwindigkeit → vierfache Energie (quadratische Abhängigkeit). Wichtig für Bremsweg.",
+      "Lageenergie",
+      "Wärmeenergie"
+    ],
+    "correct": 1,
+    "explanation": "E_kin = ½mv². 1000 kg bei 10 m/s → E = ½ · 1000 · 100 = 50.000 J. Bei 20 m/s: 200.000 J (4× mehr). Bremsweg verdoppelt sich bei doppelter Geschwindigkeit → 4× länger! Auto mit 100 km/h braucht 4× so langen Bremsweg wie bei 50 km/h.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist potenzielle Energie (Lageenergie)?",
+    "options": [
+      "Energie durch Bewegung",
+      "E_pot = m · g · h: Energie eines Körpers aufgrund seiner Höhe. Je höher, desto mehr Energie. Beim Fall wird sie in kinetische Energie umgewandelt.",
+      "Energie durch Wärme",
+      "Energie in Magneten"
+    ],
+    "correct": 1,
+    "explanation": "E_pot = mgh. m = Masse, g = 9,81 m/s², h = Höhe. 10 kg in 5 m Höhe: E = 10 · 9,81 · 5 ≈ 490 J. Beim Fallen: E_pot → E_kin. Wasserkraftwerk: Lageenergie des Wassers → elektrische Energie. Gespannte Feder: elastische potenzielle Energie.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Vektor- und Skalargröße?",
+    "options": [
+      "Kein Unterschied",
+      "Skalargröße: nur Betrag (Masse, Temperatur, Zeit, Energie). Vektorgröße: Betrag + Richtung (Kraft, Geschwindigkeit, Beschleunigung, elektrisches Feld).",
+      "Skalare sind immer größer",
+      "Vektoren haben keine Einheit"
+    ],
+    "correct": 1,
+    "explanation": "Skalar: eine Zahl + Einheit. Vektor: Zahl + Einheit + Richtung. Darstellung: Pfeil. Kräfteaddition: geometrisch (Parallelogramm). Kräftegleichgewicht: Summe aller Kräfte = 0 (Körper in Ruhe oder gleichförmige Bewegung).",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Druck?",
+    "options": [
+      "Kraft mal Fläche",
+      "Kraft pro Fläche: p = F / A. Einheit: Pascal (Pa = N/m²). Gleiche Kraft auf kleine Fläche → hoher Druck. Messer: kleine Fläche → viel Druck.",
+      "Masse geteilt durch Volumen",
+      "Energie pro Zeit"
+    ],
+    "correct": 1,
+    "explanation": "p = F/A. 1 Pa = 1 N/m². 100 N auf 0,01 m² → p = 10.000 Pa = 10 kPa. Reifendruck: ca. 2 bar (200 kPa). Luftdruck: 1013 hPa (1 bar). Schneeschuhe: große Fläche → geringer Druck → sinkt nicht ein.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Auftrieb (archimedisches Prinzip)?",
+    "options": [
+      "Schwerkraft im Wasser",
+      "Archimedes: Ein Körper im Fluid (Wasser/Luft) erfährt eine Auftriebskraft gleich dem Gewicht des verdrängten Fluids. F_A = ρ · V · g.",
+      "Wasserdruck",
+      "Reibung im Wasser"
+    ],
+    "correct": 1,
+    "explanation": "Archimedes (~250 v.Chr.): \"Heureka!\" Auftrieb: F_A = ρ_fl · V_K · g. Körper schwimmt, wenn F_A ≥ G. Stahl sinkt (ρ_Stahl > ρ_Wasser), Schiff schwimmt (große V_K aus Luft). Heißluftballon: warme Luft leichter → F_A > G.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist der Aggregatzustand?",
+    "options": [
+      "Zustand der Energie",
+      "Erscheinungsform eines Stoffes: fest (Ionen/Atome im Gitter), flüssig (fließen, inkompressibel), gasförmig (expandieren, kompressibel). Übergänge durch Wärme.",
+      "Zusammensetzung des Stoffs",
+      "Chemische Reaktion"
+    ],
+    "correct": 1,
+    "explanation": "Fest: feste Form, festes Volumen. Flüssig: Volumen konstant, Form des Behälters. Gasförmig: beides variabel. Übergänge: Schmelzen (fest→flüssig), Erstarren (fl→fest), Verdampfen (fl→gas), Kondensieren (gas→fl), Sublimieren (fest→gas: CO₂), Resublimieren.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Wärme und Temperatur?",
+    "options": [
+      "Dasselbe",
+      "Temperatur: Maß für die kinetische Energie der Teilchen. Wärme: übertragene Energie (von warm nach kalt). Einheit: Temperatur in Kelvin/Celsius, Wärme in Joule.",
+      "Wärme ist in Watt gemessen",
+      "Temperatur ist immer positiv"
+    ],
+    "correct": 1,
+    "explanation": "Temperatur T: Celsius (°C), Kelvin (K): T(K) = T(°C) + 273. 0 K = absoluter Nullpunkt (kein Temperaturen darunter). Wärme Q in Joule: Q = m · c · ΔT (c = spezifische Wärmekapazität). Wärmeübertragung: Leitung, Konvektion, Strahlung.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Wärmeleitung, Konvektion und Wärmestrahlung?",
+    "options": [
+      "Drei Transportwege für Elektrizität",
+      "Wärmeleitung: Wärmetransport durch direkten Kontakt (Metall leitet gut, Holz schlecht). Konvektion: Wärmetransport durch strömende Flüssigkeit/Gas. Strahlung: Wärmetransport durch Infrarotstrahlung (ohne Materie, auch im Vakuum).",
+      "Drei Formen von Strom",
+      "Drei Aggregatzustände"
+    ],
+    "correct": 1,
+    "explanation": "Leitung: Metalle (freie Elektronen leiten Wärme). Isolatoren: Holz, Kunststoff, Luft. Konvektion: Heizung erwärmt Luft → steigt auf → Kreislauf. Wind, Meeresströmungen. Strahlung: Sonne erwärmt Erde durchs Vakuum. Dunkle Oberflächen: absorbieren mehr.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist ein Magnet und sein Magnetfeld?",
+    "options": [
+      "Elektrisch geladener Körper",
+      "Körper mit zwei Polen (Nord/Süd), der Magnetfeld erzeugt: ungleiche Pole ziehen sich an, gleiche stoßen sich ab. Feld dargestellt durch Feldlinien.",
+      "Radioaktiver Körper",
+      "Wärmequelle"
+    ],
+    "correct": 1,
+    "explanation": "Magnet: permanenter Magnet (Eisen, Nickel, Kobalt) oder Elektromagnet. Magnetfeld: von Nordpol zum Südpol außen, innen umgekehrt. Kompass: Nordnadel zeigt zum magnetischen Nordpol (der geographisch der Südpol des Erdmagneten ist). Erdmagnetfeld schützt vor Sonnenwind.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist ein Elektromagnet?",
+    "options": [
+      "Dauerhafter Magnet",
+      "Magnet, der durch elektrischen Strom erzeugt wird: Drahtspule (Solenoid) mit Eisenkern. Feld abschaltbar, Stärke regelbar durch Windungszahl und Stromstärke.",
+      "Elektrisch aufgeladener Magnet",
+      "Natürlicher Magnetstein"
+    ],
+    "correct": 1,
+    "explanation": "Elektromagnet: Spule + Eisenkern. Stärke: Stromstärke × Windungszahl = Amperewindungen. Anwendungen: Klingel, Lautsprecher, Relais, MRT, Schrottplatzkran. Abschaltbar: großer Vorteil gegenüber Permanentmagneten.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist elektrischer Strom?",
+    "options": [
+      "Bewegung von Atomen",
+      "Gerichtete Bewegung von Ladungsträgern (Elektronen in Metall, Ionen in Lösung). Einheit: Ampere (A). Gleichstrom (DC): immer gleiche Richtung. Wechselstrom (AC): Richtung wechselt.",
+      "Bewegung von Protonen",
+      "Wärmestrom"
+    ],
+    "correct": 1,
+    "explanation": "Strom I: Ladung pro Zeit (I = Q/t). Einheit Ampere (A). Konventionelle Stromrichtung: + nach - (entgegen Elektronenfluss). Elektronen: - nach +. Gleich-: Batterie, Solar. Wechsel-: Haushaltsnetz (50 Hz, 230 V). Leiter: Metalle. Isolator: Kunststoff, Glas.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist elektrische Spannung?",
+    "options": [
+      "Kraft des Stroms",
+      "Antrieb (Potenzialunterschied) für den elektrischen Strom. Einheit: Volt (V). Batterie: 1,5 V. Haushalt: 230 V. Hochspannung: tausende Volt.",
+      "Widerstand",
+      "Leistung"
+    ],
+    "correct": 1,
+    "explanation": "Spannung U: elektrische \"Druckhöhe\". Einheit Volt (V). Ohmsches Gesetz: U = R · I (Spannung = Widerstand × Strom). Batterien: 1,5 V (AA). Steckdose: 230 V (Europa). Hochspannung: 380.000 V (Übertragungsleitung). Körperlich gefährlich: ab ca. 50 V.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist elektrischer Widerstand?",
+    "options": [
+      "Spannung mal Strom",
+      "Maß für den \"Widerstand\" gegen den Stromfluss. Einheit: Ohm (Ω). Ohmsches Gesetz: R = U / I. Metalle: niedriger Widerstand. Isolatoren: sehr hoher Widerstand.",
+      "Kraft des Stroms",
+      "Energie des Stroms"
+    ],
+    "correct": 1,
+    "explanation": "R = U/I. Einheit Ohm (Ω). 1 Ω = 1 V/A. Ohmsches Gesetz: U = R · I, I = U/R, R = U/I. Widerstand abhängig von: Material (Kupfer < Eisen), Länge (länger = mehr), Querschnitt (dicker = weniger), Temperatur (meist mehr bei Wärme).",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Reihen- und Parallelschaltung?",
+    "options": [
+      "Kein Unterschied",
+      "Reihenschaltung: Bauteile hintereinander, gleicher Strom, Spannungen addieren sich, Gesamtwiderstand größer. Parallelschaltung: Bauteile nebeneinander, gleiche Spannung, Ströme addieren sich, Gesamtwiderstand kleiner.",
+      "Reihenschaltung hat mehr Spannung",
+      "Parallelschaltung hat mehr Strom und Widerstand"
+    ],
+    "correct": 1,
+    "explanation": "Reihe: I = const, U_ges = U₁+U₂, R_ges = R₁+R₂. Lichterkette: eine kaputte Lampe → alle aus. Parallel: U = const, I_ges = I₁+I₂, 1/R_ges = 1/R₁+1/R₂. Haushalt: parallel (jedes Gerät hat 230 V, unabhängig).",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist ein Schwingung (Oszillation)?",
+    "options": [
+      "Gleichförmige Bewegung",
+      "Periodische Hin- und Herbewegung um eine Ruhelage: Pendel, Feder, Schallwellen. Charakterisiert durch Periode T, Frequenz f = 1/T, Amplitude.",
+      "Kreisbewegung",
+      "Einmalige Bewegung"
+    ],
+    "correct": 1,
+    "explanation": "Schwingung: T = Periodendauer (s), f = 1/T (Hz). Pendel: T = 2π√(l/g) – nur von Länge und g abhängig, nicht von Masse. Amplitude: Auslenkung. Feder: T = 2π√(m/k). Resonanz: Antriebsfrequenz = Eigenfrequenz → starke Schwingung (Tacoma Bridge).",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist eine Welle?",
+    "options": [
+      "Bewegung von Materie",
+      "Ausbreitung von Schwingungen im Raum: Energie wird transportiert, Materie nicht (kaum). Schallwellen (mechanisch), Lichtwellen (elektromagnetisch).",
+      "Strömung in Flüssigkeiten",
+      "Elektrischer Strom"
+    ],
+    "correct": 1,
+    "explanation": "Wellen: Transversal (Auslenkung ⊥ Ausbreitung: Licht, Wasserwelle) vs. Longitudinal (Auslenkung ∥ Ausbreitung: Schall). Kenngrößen: Wellenlänge λ, Frequenz f, Amplitude A, Wellengeschwindigkeit c = λ·f. Schall: ~340 m/s. Licht: 3·10⁸ m/s.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Schall?",
+    "options": [
+      "Elektromagnetische Welle",
+      "Mechanische Längswelle: Druckschwankungen in einem Medium (Luft, Wasser, Festkörper). Benötigt Materie (im Vakuum kein Schall). Tonhöhe = Frequenz, Lautstärke = Amplitude.",
+      "Elektrische Welle",
+      "Lichtwelle"
+    ],
+    "correct": 1,
+    "explanation": "Schall: Frequenz 16 Hz–20 kHz (Hörbereich Mensch). Unter 16 Hz: Infraschall (Elefanten). Über 20 kHz: Ultraschall (Fledermäuse, Echolot). Schallgeschwindigkeit: Luft ~340 m/s, Wasser ~1500 m/s, Stahl ~5000 m/s. Dezibel (dB): Lautstärke.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Optik?",
+    "options": [
+      "Lehre vom Hören",
+      "Lehre vom Licht: Ausbreitung, Reflexion, Brechung. Licht breitet sich geradlinig aus (Lichtstrahl). Geschwindigkeit: ca. 3·10⁸ m/s im Vakuum.",
+      "Lehre vom Magnetismus",
+      "Lehre von der Wärme"
+    ],
+    "correct": 1,
+    "explanation": "Optik: geometrische Optik (Strahlenmodell), Wellenoptik, Quantenoptik. Reflexionsgesetz: Einfallswinkel = Ausfallswinkel. Brechungsgesetz (Snellius): n₁·sin(α₁) = n₂·sin(α₂). Brechung: Licht wird beim Übergang zwischen Medien abgelenkt.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Reflexion?",
+    "options": [
+      "Licht verschwindet",
+      "Zurückwerfen von Licht an einer Fläche: Einfallswinkel = Ausfallswinkel (Reflexionsgesetz). Spiegel: regelmäßige Reflexion. Mattes Papier: diffuse Reflexion.",
+      "Licht wird in Wärme umgewandelt",
+      "Licht geht durch das Material"
+    ],
+    "correct": 1,
+    "explanation": "Reflexionsgesetz: α_ein = α_aus (bezogen auf Lot). Ebener Spiegel: virtuelles, aufrechtes, seitenverkehrtes Bild, gleich groß, gleich weit hinter dem Spiegel. Diffuse Reflexion: raue Oberfläche → Licht gestreut → nicht geblendet.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Brechung?",
+    "options": [
+      "Zerbrechen von Licht",
+      "Ablenkung von Licht beim Übergang zwischen Medien unterschiedlicher optischer Dichte (Brechungsindex). Im dichten Medium: langsamer und zur Senkrechten hin gebrochen.",
+      "Reflexion im Prisma",
+      "Zerstreuung von Farben"
+    ],
+    "correct": 1,
+    "explanation": "Brechung (Refraktion): Luft→Glas: Licht langsamer → zur Senkrechten. Glas→Luft: von Senkrechten weg. Totalreflexion: wenn Winkel zu groß (Glasfaser!). Prisma: Dispersion (weiß → Farben). Linse: sammelt oder zerstreut Licht.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist eine Sammellinse?",
+    "options": [
+      "Linse, die Licht zerstreut",
+      "Linse, die parallel einfallende Strahlen im Brennpunkt bündelt. Konvex (in der Mitte dicker). Anwendung: Lupe, Fernrohr, Fotoapparat, Auge.",
+      "Planare Glasscheibe",
+      "Spiegel"
+    ],
+    "correct": 1,
+    "explanation": "Sammellinse (konvex): parallele Strahlen → Brennpunkt F. Brennweite f. Bild: reell (umgekehrt) wenn Objekt weiter als f; virtuell (aufrecht, vergrößert) wenn Objekt näher als f (Lupe). Zerstreuungslinse (konkav): parallele Strahlen → divergieren (Kurzsichtigkeit).",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Radioaktivität?",
+    "options": [
+      "Elektrische Strahlung",
+      "Spontaner Zerfall instabiler Atomkerne unter Aussendung von Strahlung: Alpha-(α), Beta-(β), Gamma-(γ)-Strahlung. Entdeckt von Henri Becquerel (1896), Curie.",
+      "Magnetische Strahlung",
+      "Sichtbares Licht"
+    ],
+    "correct": 1,
+    "explanation": "Radioaktivität: Becquerel (1896), Curie (Polonium, Radium). α: Heliumkerne (2p+2n), wenig durchdringend (Blatt Papier stoppt). β: Elektronen, mittel (Aluminium). γ: elektromagnetisch, sehr durchdringend (Beton, Blei). Halbwertszeit: Zeit bis Hälfte zerfallen.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist das Spektrum elektromagnetischer Strahlung?",
+    "options": [
+      "Nur sichtbares Licht",
+      "Von langer zu kurzer Wellenlänge: Radiowellen, Mikrowellen, Infrarot, sichtbares Licht, UV, Röntgen, Gammastrahlung. Alle mit Lichtgeschwindigkeit.",
+      "Nur Radiowellen und Licht",
+      "Nur Wärmestrahlung und Licht"
+    ],
+    "correct": 1,
+    "explanation": "EM-Spektrum: c = 3·10⁸ m/s für alle. Radiowellen: λ > 1 mm. Mikrowellen: Mikrowellenherd. IR: Wärme. Sichtbar: 380–780 nm. UV: bräunt/schädigt Haut. Röntgen: Medizin. Gamma: radioaktiver Zerfall, stärkste ionisierende Wirkung.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist ein einfaches Experiment zur Bestimmung der Dichte?",
+    "options": [
+      "Dichte kann nicht gemessen werden",
+      "Masse bestimmen (Waage) und Volumen (Maßzylinder oder V=l·b·h), dann ρ = m/V. Für unregelmäßige Körper: Wasserverdrängung (Archimedes-Methode).",
+      "Nur mit Labormitteln",
+      "Nur für Flüssigkeiten"
+    ],
+    "correct": 1,
+    "explanation": "Dichte messen: regelmäßiger Körper: m mit Waage, V mit Lineal berechnen. Unregelmäßiger Körper: in Messzylinder tauchen → Wasserstanderhöhung = Volumen. ρ = m/V. Schwimmkörper: m und verdrängtes Wasser messen.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Schallschutz und warum ist er wichtig?",
+    "options": [
+      "Nur für Musiker",
+      "Schutz vor Lärmschäden: Lärm > 85 dB dauerhaft schädigt Gehör (Haarzellen im Innenohr). Maßnahmen: Ohrenschutz, Schallschutzwände, Dämmung, Lärmpausen.",
+      "Nur in Flugzeugen",
+      "Nur durch dicke Wände"
+    ],
+    "correct": 1,
+    "explanation": "Lärm: > 85 dB dauerhaft → Hörschäden. Konzertsäle (bis 110 dB!), Presslufthammer (100 dB). Schallschutz: poröse Materialien schlucken Schall (Schaum, Textilien). Schallschutzfenster: Mehrfachverglasung. Lärmschutzwand: reflektiert/absorbiert.",
+    "topic": "Kräfte"
+  },
+  {
+    "question": "Was ist Bewegungsenergie und wie hängt sie mit der Geschwindigkeit zusammen?",
+    "options": [
+      "Linear: doppelte v = doppelte E",
+      "Quadratisch: doppelte Geschwindigkeit = vierfache kinetische Energie. E_kin = ½mv². Daher: bei Unfällen mit doppelter Geschwindigkeit viermal mehr Energie.",
+      "Kubisch: doppelte v = achtfache E",
+      "Kein Zusammenhang"
+    ],
+    "correct": 1,
+    "explanation": "E_kin = ½mv². v verdoppelt → E·4. v verdreifacht → E·9. Beim Auto: 50 km/h → 100 km/h: 4× mehr E. Deshalb: Bremsweg bei doppelter Geschwindigkeit 4× länger (nicht 2×). Sicherheitsabstand auf Autobahn!",
+    "topic": "Kräfte"
+  }
+]
