@@ -11086,7 +11086,7 @@ async function chalSaveHighscore(level) {
     if (!existing || existing.level < level) {
       await ref.set({
         level,
-        name: currentUser.displayName || currentUser.email || 'Anonym',
+        name: currentUser.username || 'Anonym',
         ts: Date.now(),
       });
     }
@@ -11097,32 +11097,84 @@ async function chalRenderLeaderboard(myLevel) {
   const lb = document.getElementById('chal-leaderboard');
   if (!lb || !fbDB) return;
 
+  lb.innerHTML = '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:8px 0;">Lade Bestenliste…</div>';
+
   try {
     const key = chalModeKey();
-    const snap = await fbDB.ref('challengerScores/' + key).orderByChild('level').limitToLast(10).once('value');
-    const data = snap.val();
-    if (!data) { lb.innerHTML = '<div style="color:var(--muted);font-size:.82rem;">Noch keine Einträge.</div>'; return; }
+    const [scoresSnap, friendsSnap] = await Promise.all([
+      fbDB.ref('challengerScores/' + key).orderByChild('level').limitToLast(100).once('value'),
+      currentUser ? fbDB.ref('friends/' + currentUser.uid).once('value') : Promise.resolve({ val: () => ({}) }),
+    ]);
 
-    const entries = Object.entries(data)
+    const allEntries = Object.entries(scoresSnap.val() || {})
       .map(([uid, v]) => ({ uid, ...v }))
-      .sort((a, b) => b.level - a.level)
-      .slice(0, 10);
+      .sort((a, b) => b.level - a.level);
 
-    const medals = ['🥇','🥈','🥉'];
-    let html = '<div style="font-size:.72rem;font-family:\'Space Mono\',monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;">Bestenliste</div>';
-    entries.forEach((e, i) => {
-      const isMe = currentUser && e.uid === currentUser.uid;
-      const rank = medals[i] || (i + 1 + '.');
-      html += `<div class="chal-lb-row${isMe ? ' chal-lb-me' : ''}">
-        <div class="chal-lb-rank">${rank}</div>
-        <div class="chal-lb-name">${e.name || 'Anonym'}${isMe ? ' (du)' : ''}</div>
-        <div class="chal-lb-level">Lv. ${e.level}</div>
-      </div>`;
-    });
-    lb.innerHTML = html;
+    const friendUids = new Set(Object.keys(friendsSnap.val() || {}));
+    if (currentUser) friendUids.add(currentUser.uid);
+
+    // State für Tab-Wechsel merken
+    lb._all     = allEntries;
+    lb._friends = friendUids;
+    lb._myUid   = currentUser?.uid;
+
+    lb.innerHTML = `
+      <div style="display:flex;gap:0;margin-bottom:12px;border-bottom:1px solid var(--border);">
+        <button id="lb-tab-friends" onclick="chalLbTab('friends')"
+          style="flex:1;padding:8px;border:none;background:none;font-size:.78rem;font-family:'Space Mono',monospace;cursor:pointer;border-bottom:2px solid var(--accent);color:var(--accent);letter-spacing:.04em;">
+          👥 FREUNDE
+        </button>
+        <button id="lb-tab-global" onclick="chalLbTab('global')"
+          style="flex:1;padding:8px;border:none;background:none;font-size:.78rem;font-family:'Space Mono',monospace;cursor:pointer;border-bottom:2px solid transparent;color:var(--muted);letter-spacing:.04em;">
+          🌍 GLOBAL
+        </button>
+      </div>
+      <div id="lb-content"></div>`;
+
+    chalLbTab('friends');
   } catch(e) {
     lb.innerHTML = '<div style="color:var(--muted);font-size:.82rem;">Bestenliste nicht verfügbar.</div>';
   }
+}
+
+function chalLbTab(tab) {
+  const lb   = document.getElementById('chal-leaderboard');
+  const content = document.getElementById('lb-content');
+  if (!lb || !content) return;
+
+  const friendsBtn = document.getElementById('lb-tab-friends');
+  const globalBtn  = document.getElementById('lb-tab-global');
+  if (friendsBtn) { friendsBtn.style.borderBottom = tab === 'friends' ? '2px solid var(--accent)' : '2px solid transparent'; friendsBtn.style.color = tab === 'friends' ? 'var(--accent)' : 'var(--muted)'; }
+  if (globalBtn)  { globalBtn.style.borderBottom  = tab === 'global'  ? '2px solid var(--accent)' : '2px solid transparent'; globalBtn.style.color  = tab === 'global'  ? 'var(--accent)' : 'var(--muted)'; }
+
+  const allEntries = lb._all    || [];
+  const friendUids = lb._friends || new Set();
+  const myUid      = lb._myUid;
+
+  const entries = (tab === 'friends'
+    ? allEntries.filter(e => friendUids.has(e.uid))
+    : allEntries
+  ).slice(0, 10);
+
+  if (entries.length === 0) {
+    content.innerHTML = tab === 'friends'
+      ? '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:14px 0;">Noch keine Freunde-Einträge.<br><span style="font-size:.75rem;">Füge Freunde hinzu, um sie hier zu sehen!</span></div>'
+      : '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:14px 0;">Noch keine Einträge.</div>';
+    return;
+  }
+
+  const medals = ['🥇','🥈','🥉'];
+  let html = '';
+  entries.forEach((e, i) => {
+    const isMe = myUid && e.uid === myUid;
+    const rank = medals[i] || (i + 1 + '.');
+    html += `<div class="chal-lb-row${isMe ? ' chal-lb-me' : ''}">
+      <div class="chal-lb-rank">${rank}</div>
+      <div class="chal-lb-name">${esc(e.name || 'Anonym')}${isMe ? ' (du)' : ''}</div>
+      <div class="chal-lb-level">Lv.&nbsp;${e.level}</div>
+    </div>`;
+  });
+  content.innerHTML = html;
 }
 
 async function startChallenger(mode, subject, grade, hardMode) {
