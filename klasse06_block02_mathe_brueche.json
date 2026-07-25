@@ -362,10 +362,10 @@
   {
     "question": "Was bedeutet ein unechter Bruch?",
     "options": [
-      "Ein falscher Bruch",
+      "Ein Bruch, der mathematisch nicht korrekt gebildet wurde",
       "Ein Bruch, bei dem der Zaehler groesser oder gleich dem Nenner ist",
-      "Ein negativer Bruch",
-      "Ein Bruch mit 0 im Nenner"
+      "Ein negativer Bruch mit Minuszeichen vor dem Zaehler",
+      "Ein Bruch mit 0 im Nenner, der undefiniert waere"
     ],
     "correct": 1,
     "explanation": "Unechter Bruch: Zaehler >= Nenner. Beispiele: 5/3, 7/4, 8/8. Kann als gemischte Zahl geschrieben werden.",
@@ -375,9 +375,9 @@
     "question": "Was ist ein echter Bruch?",
     "options": [
       "Ein Bruch kleiner als 1, bei dem der Zaehler kleiner als der Nenner ist",
-      "Ein Bruch groesser als 1",
-      "Ein ganzzahliger Wert",
-      "Ein Bruch mit gleichem Zaehler und Nenner"
+      "Ein Bruch groesser als 1, bei dem der Zaehler groesser als der Nenner ist",
+      "Ein ganzzahliger Wert ohne Bruchstrich und Nenner",
+      "Ein Bruch, bei dem Zaehler und Nenner gleich gross sind"
     ],
     "correct": 0,
     "explanation": "Echter Bruch: Zaehler < Nenner, also der Wert ist kleiner als 1. Beispiele: 1/2, 3/4, 2/7.",
@@ -386,10 +386,10 @@
   {
     "question": "Was gilt bei der Bruchaddition, wenn die Nenner verschieden sind?",
     "options": [
-      "Einfach addieren",
+      "Einfach addieren wie bei ganzen Zahlen",
       "Man muss gleichnamig machen (Hauptnenner bestimmen)",
-      "Die Nenner addieren",
-      "Die Zaehler multiplizieren"
+      "Die Nenner einfach addieren und die Zaehler beibehalten",
+      "Die Zaehler miteinander multiplizieren und kuerzen"
     ],
     "correct": 1,
     "explanation": "Unterschiedliche Nenner: Hauptnenner (kgV) bestimmen, beide Brueche umformen, dann Zaehler addieren.",

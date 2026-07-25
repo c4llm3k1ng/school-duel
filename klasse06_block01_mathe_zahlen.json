@@ -98,7 +98,7 @@
   {
     "question": "Ist 2457 durch 3 teilbar?",
     "options": [
-      "Nein",
+      "Nein, weil die letzte Ziffer keine durch 3 teilbare Zahl ist",
       "Ja, weil Quersumme 18 durch 3 teilbar ist",
       "Ja, weil sie durch 9 teilbar ist",
       "Nein, weil 7 nicht durch 3 teilbar ist"
@@ -110,10 +110,10 @@
   {
     "question": "Was ist eine Primzahl?",
     "options": [
-      "Eine Zahl die durch sich selbst teilbar ist",
+      "Eine Zahl, die genau durch zwei verschiedene Zahlen teilbar ist",
       "Eine natuerliche Zahl groesser als 1, die nur durch 1 und sich selbst teilbar ist",
-      "Eine ungerade Zahl",
-      "Eine Zahl mit vielen Teilern"
+      "Eine ungerade Zahl, die nicht durch 2 teilbar ist",
+      "Eine Zahl mit vielen verschiedenen Teilern und Faktoren"
     ],
     "correct": 1,
     "explanation": "Primzahlen: 2, 3, 5, 7, 11, 13... Achtung: 2 ist die einzige gerade Primzahl. 1 ist keine Primzahl.",
@@ -182,10 +182,10 @@
   {
     "question": "Auf welcher Zahl liegt -3 auf dem Zahlenstrahl?",
     "options": [
-      "Rechts von 0",
+      "Rechts von 0, zwischen 2 und 4",
       "Links von 0, zwischen -4 und -2",
-      "Links von -4",
-      "Auf der 3"
+      "Links von -4, also weiter im negativen Bereich",
+      "Auf der 3, da negative Vorzeichen wegfallen"
     ],
     "correct": 1,
     "explanation": "Negative Zahlen liegen links von der 0 auf dem Zahlenstrahl. -3 liegt zwischen -4 (links) und -2 (rechts).",
@@ -302,10 +302,10 @@
   {
     "question": "Was ist eine Proportion?",
     "options": [
-      "Eine Gleichung mit nur einer Unbekannten",
+      "Eine Gleichung mit nur einer Unbekannten (z.B. x+3=7)",
       "Die Gleichheit zweier Verhaeltnisse: a/b = c/d",
-      "Eine Prozentzahl",
-      "Eine Ungleichung"
+      "Eine Prozentzahl zwischen 0 und 100 Prozent",
+      "Eine Ungleichung mit kleiner- oder groesser-Zeichen"
     ],
     "correct": 1,
     "explanation": "Proportion: a/b = c/d. Beispiel: 2/3 = 4/6. Wichtig: Wenn a und b in einer Proportion stehen, gilt auch a*d = b*c (Kreuzregel).",
@@ -326,10 +326,10 @@
   {
     "question": "Was ist indirekte (umgekehrte) Proportionalitaet?",
     "options": [
-      "Wenn beide Groessen abnehmen",
+      "Wenn beide Groessen gleichzeitig in dieselbe Richtung abnehmen",
       "Wenn eine Groesse steigt und die andere proportional sinkt",
-      "Wenn beide Groessen gleich sind",
-      "Wenn keine Abhaengigkeit besteht"
+      "Wenn beide Groessen immer gleich gross bleiben",
+      "Wenn keine mathematische Abhaengigkeit zwischen ihnen besteht"
     ],
     "correct": 1,
     "explanation": "Indirekte Proportionalitaet: y = k/x. Beispiel: 4 Arbeiter brauchen 6 Stunden, 8 Arbeiter brauchen 3 Stunden. Mehr Arbeiter = weniger Zeit.",
@@ -350,10 +350,10 @@
   {
     "question": "Was versteht man unter einem Koordinatensystem?",
     "options": [
-      "Eine Tabelle",
+      "Eine Tabelle mit Zeilen und Spalten fuer Daten",
       "Zwei senkrechte Zahlengeraden (x-Achse und y-Achse), die sich im Ursprung (0,0) schneiden",
-      "Ein Messinstrument",
-      "Ein Dreiecksystem"
+      "Ein Messinstrument mit Skala und Zeiger",
+      "Ein Dreiecksystem mit drei gleich langen Seiten"
     ],
     "correct": 1,
     "explanation": "Koordinatensystem: x-Achse (waagerecht) und y-Achse (senkrecht). Punkte werden als (x,y) angegeben. Ursprung = (0,0).",
@@ -398,10 +398,10 @@
   {
     "question": "Was ist eine Variable in der Mathematik?",
     "options": [
-      "Eine feste Zahl",
+      "Eine feste Zahl mit unveraenderlichem Wert",
       "Ein Buchstabe oder Symbol fuer eine unbekannte oder veraenderliche Zahl",
-      "Eine Rechenoperation",
-      "Ein Ergebnis"
+      "Eine Rechenoperation wie Addition oder Multiplikation",
+      "Ein Ergebnis, das man nach dem Rechnen erhaelt"
     ],
     "correct": 1,
     "explanation": "Variable: haeufig x, y, z oder a, b, c. Beispiel: In 2x + 3 = 9 ist x die Variable (Loesung: x=3).",
@@ -470,10 +470,10 @@
   {
     "question": "Was ist der Unterschied zwischen Gleichung und Ungleichung?",
     "options": [
-      "Es gibt keinen Unterschied",
+      "Es gibt keinen Unterschied; beide druecken dasselbe aus",
       "Gleichung: linke Seite = rechte Seite (=). Ungleichung: kleiner/groesser als (<, >, <=, >=).",
-      "Gleichungen haben keine Loesung",
-      "Ungleichungen haben immer eine Loesung"
+      "Gleichungen haben keine Loesung und sind bedeutungslos",
+      "Ungleichungen haben immer genau eine eindeutige Loesung"
     ],
     "correct": 1,
     "explanation": "Gleichung: 2x = 8 (Loesung: x=4). Ungleichung: 2x > 8 (Loesung: x > 4, also alle Zahlen groesser als 4).",
