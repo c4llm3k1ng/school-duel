@@ -2,10 +2,10 @@
   {
     "question": "Welches Atommodell wurde durch Rutherfords Goldfolienexperiment (1911) begründet?",
     "options": [
-      "Thomsons Rosinenmodell",
-      "Daltons Kugelmodell",
+      "Thomsons Rosinenmodell (Elektronen eingebettet in eine positive Ladungssphäre)",
+      "Daltons Kugelmodell (Atome als unteilbare, massive Kugeln ohne Kern)",
       "Das Kern-Hülle-Modell (positive Ladung im kleinen, dichten Kern)",
-      "Das quantenmechanische Orbitalmodell"
+      "Das quantenmechanische Orbitalmodell (Elektronen als Wahrscheinlichkeitswolken)"
     ],
     "correct": 2,
     "explanation": "Rutherfords Streuexperiment zeigte, dass fast alle Masse und die gesamte positive Ladung im winzigen Atomkern konzentriert sind – das Kern-Hülle-Modell.",
@@ -50,10 +50,10 @@
   {
     "question": "Was beschreibt das Pauli-Prinzip?",
     "options": [
-      "Elektronen füllen gleichwertige Orbitale zunächst einzeln auf",
+      "Elektronen füllen gleichwertige Orbitale zunächst einzeln auf (Hund'sche Regel)",
       "Kein Elektron eines Atoms darf denselben vollständigen Satz aller vier Quantenzahlen haben wie ein anderes",
-      "Elektronen befinden sich immer in der energetisch niedrigsten Schale",
-      "Elektronen bewegen sich auf festen Kreisbahnen um den Kern"
+      "Elektronen befinden sich immer in der energetisch niedrigsten verfügbaren Schale",
+      "Elektronen bewegen sich auf festen Kreisbahnen um den Kern (Bohrsches Modell)"
     ],
     "correct": 1,
     "explanation": "Das Pauli-Prinzip: Kein Elektron in einem Atom darf mit einem anderen alle vier Quantenzahlen (n, l, m, s) gemeinsam haben. Daher passen maximal 2 Elektronen (mit entgegengesetztem Spin) in ein Orbital.",
@@ -62,10 +62,10 @@
   {
     "question": "Was besagt die Hund'sche Regel?",
     "options": [
-      "Elektronen füllen höhere Schalen, bevor sie sich paaren",
+      "Elektronen füllen höhere Schalen, bevor sie sich in einer niedrigeren paaren",
       "Gleichwertige Orbitale werden zunächst je einfach mit parallel orientiertem Spin besetzt, bevor eine Doppelbesetzung stattfindet",
-      "Elektronen sind stets gepaart",
-      "Elektronen wechseln nur bei Lichtabsorption die Schale"
+      "Elektronen füllen immer erst die inneren Schalen vollständig, bevor äußere Schalen belegt werden",
+      "Elektronen wechseln nur bei Lichtabsorption die Schale und geben dabei Photonen ab"
     ],
     "correct": 1,
     "explanation": "Die Hund'sche Regel (Prinzip der maximalen Multiplizität): Gleichenergetische Orbitale werden zuerst einfach (mit gleichem Spin) besetzt, bevor eines doppelt belegt wird.",
@@ -74,10 +74,10 @@
   {
     "question": "Was gibt die Hauptquantenzahl n an?",
     "options": [
-      "Die Form des Orbitals",
+      "Die Form des Orbitals: kugelförmig, hantelförmig oder kleeblattförmig",
       "Die Energieschale (Hauptschale) des Elektrons – je größer n, desto höher die Energie",
-      "Die räumliche Orientierung des Orbitals",
-      "Den Spin des Elektrons"
+      "Die räumliche Orientierung des Orbitals im Raum",
+      "Den Spin des Elektrons, also seine Eigendrehung als +½ oder −½"
     ],
     "correct": 1,
     "explanation": "Die Hauptquantenzahl n = 1, 2, 3, … gibt die Energieschale an. Mit wachsendem n steigen Energie und mittlerer Kernabstand der Elektronen.",
@@ -86,9 +86,9 @@
   {
     "question": "Was beschreibt die Nebenquantenzahl l?",
     "options": [
-      "Den Spin des Elektrons",
+      "Den Spin des Elektrons, also seine Eigendrehung als +½ oder −½",
       "Die Form des Orbitals: l=0 → s (kugelsymmetrisch), l=1 → p (hantelförmig), l=2 → d",
-      "Die räumliche Orientierung des Orbitals",
+      "Die räumliche Orientierung des Orbitals im Raum",
       "Die Hauptenergieschale des Elektrons"
     ],
     "correct": 1,
@@ -206,10 +206,10 @@
   {
     "question": "Was sind Wasserstoffbrückenbindungen?",
     "options": [
-      "Kovalente Bindungen zwischen H-Atomen",
+      "Kovalente Bindungen zwischen zwei H-Atomen wie in einem H₂-Molekül",
       "Zwischenmolekulare Wechselwirkungen zwischen einem H-Atom (gebunden an N, O oder F) und einem freien Elektronenpaar eines benachbarten Moleküls",
-      "Metallische Bindungen in flüssigem Wasserstoff",
-      "Ionische Bindungen im Wasser"
+      "Metallische Bindungen in flüssigem Wasserstoff bei sehr tiefen Temperaturen",
+      "Ionische Bindungen die beim Lösen von Salzen wie NaCl in Wasser entstehen"
     ],
     "correct": 1,
     "explanation": "Wasserstoffbrücken entstehen zwischen dem positiv polarisierten H-Atom (gebunden an elektronegativen Atomen N, O, F) und einem freien Elektronenpaar. Sie erklären z.B. den hohen Siedepunkt des Wassers.",
@@ -230,10 +230,10 @@
   {
     "question": "Was beschreibt das VSEPR-Modell?",
     "options": [
-      "Die Elektronenkonfiguration von Atomen",
+      "Die Elektronenkonfiguration von Atomen, also Verteilung der Elektronen auf Orbitale",
       "Die räumliche Struktur von Molekülen, die sich aus der gegenseitigen Abstoßung aller Elektronenpaare um das Zentralatom ergibt",
-      "Die Stärke von Ionenbindungen",
-      "Die Bindungsordnung in Molekülen"
+      "Die Stärke von Ionenbindungen aus dem Abstand und der Ladung der Ionen",
+      "Die Bindungsordnung in Molekülen, also ob Einzel-, Doppel- oder Dreifachbindung vorliegt"
     ],
     "correct": 1,
     "explanation": "Das VSEPR-Modell (Valence Shell Electron Pair Repulsion) sagt die Geometrie vor: Alle Elektronenpaare (bindend und frei) ordnen sich so an, dass Abstoßung minimal ist.",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist Beta-Minus-Strahlung?",
     "options": [
-      "Heliumkerne",
+      "Heliumkerne (Alpha-Teilchen), die beim radioaktiven Zerfall schwerer Nuklide freigesetzt werden",
       "Elektronen, die beim Zerfall eines Neutrons in ein Proton im Kern entstehen (n → p + e⁻ + ν̄)",
-      "Hochenergetische Photonen",
-      "Positronen"
+      "Hochenergetische Photonen (Gammastrahlung), die bei Kernübergängen entstehen",
+      "Positronen (Antielektronen), die beim Beta-Plus-Zerfall aus Kernen entstehen"
     ],
     "correct": 1,
     "explanation": "Beim β⁻-Zerfall wandelt sich ein Neutron in ein Proton um; dabei wird ein Elektron (β⁻-Teilchen) und ein Antineutrino emittiert. Die Ordnungszahl steigt um 1.",
@@ -290,10 +290,10 @@
   {
     "question": "Was ist Gamma-Strahlung?",
     "options": [
-      "Schnelle Elektronen",
+      "Schnelle Elektronen, die beim Beta-Minus-Zerfall aus dem Atomkern ausgesandt werden",
       "Hochenergetische elektromagnetische Strahlung, die bei Energieübergängen des Atomkerns entsteht",
-      "Heliumkerne aus dem Kern",
-      "Gebremste Protonen"
+      "Heliumkerne (Alpha-Teilchen), die beim radioaktiven Zerfall schwerer Kerne freigesetzt werden",
+      "Gebremste geladene Teilchen, die beim Abbremsen in Materie Bremsstrahlung erzeugen"
     ],
     "correct": 1,
     "explanation": "γ-Strahlung ist elektromagnetische Strahlung sehr kurzer Wellenlänge (hohe Energie). Sie begleitet oft α- und β-Zerfall und hat die größte Durchdringungsfähigkeit.",
@@ -314,10 +314,10 @@
   {
     "question": "Was versteht man unter dem Massendefekt in der Kernphysik?",
     "options": [
-      "Die Differenz der Protonenzahl zwischen zwei Isotopen",
+      "Die Differenz der Protonenzahl zwischen zwei Isotopen desselben Elements",
       "Die Differenz zwischen der Summe der Massen der Einzelnukleonen und der tatsächlichen Kernmasse – sie entspricht der Bindungsenergie (E = Δm·c²)",
-      "Die Massedifferenz zwischen Elektron und Proton",
-      "Den Gewichtsverlust bei radioaktivem Zerfall"
+      "Die Massedifferenz zwischen dem Elektron (9,11·10⁻³¹ kg) und dem Proton (1,67·10⁻²⁷ kg)",
+      "Den Gewichtsverlust beim radioaktiven Zerfall durch Abgabe von Strahlung und Teilchen"
     ],
     "correct": 1,
     "explanation": "Der Massendefekt Δm erklärt die Kernbindungsenergie: Die Masse eines Kerns ist stets kleiner als die Summe seiner Nukleonen – die Differenz ist in Bindungsenergie umgewandelt (E = Δm·c²).",
@@ -326,10 +326,10 @@
   {
     "question": "Was ist Kernspaltung?",
     "options": [
-      "Die Vereinigung zweier leichter Kerne",
+      "Die Vereinigung zweier leichter Kerne zu einem schwereren unter Energiefreisetzung (Fusion)",
       "Die Spaltung eines schweren Kerns (z.B. ²³⁵U) durch ein Neutron in zwei mittelschwere Kerne mit Freisetzung großer Energiemengen und weiterer Neutronen",
-      "Der Beta-Zerfall eines Neutrons",
-      "Die Emission eines Alphakerns"
+      "Der Beta-Zerfall, bei dem sich ein Neutron in ein Proton und ein Elektron umwandelt",
+      "Die Emission eines Alphakerns (Heliumkern) beim radioaktiven Zerfall schwerer Nuklide"
     ],
     "correct": 1,
     "explanation": "Bei der Kernspaltung trifft ein Neutron auf ²³⁵U → zwei Spaltprodukte + 2–3 neue Neutronen + ca. 200 MeV Energie. Die freien Neutronen ermöglichen eine Kettenreaktion.",
@@ -338,10 +338,10 @@
   {
     "question": "Was ist Kernfusion?",
     "options": [
-      "Die Spaltung schwerer Kerne in leichtere",
+      "Die Spaltung schwerer Kerne in leichtere unter Freisetzung von Neutronen",
       "Die Verschmelzung leichter Kerne (z.B. ²H + ³H → ⁴He + n) mit enormer Energiefreisetzung durch Massendefekt",
-      "Der Beta-Zerfall im Kern",
-      "Die Absorption von Gammastrahlung"
+      "Der Beta-Zerfall, bei dem Neutronen sich in Protonen und Elektronen umwandeln",
+      "Die Absorption von Gammastrahlung durch einen Kern, die zum Photoeffekt führt"
     ],
     "correct": 1,
     "explanation": "Bei der Kernfusion verschmelzen leichte Kerne zu einem schwereren – der Massendefekt wird als Energie freigesetzt (E = Δm·c²). Kernfusion ist der Energieprozess der Sonne.",
@@ -350,10 +350,10 @@
   {
     "question": "Wie erklärt das Bohrsche Atommodell die Linienspektren des Wasserstoffs?",
     "options": [
-      "Elektronen schwingen auf der Stelle und strahlen Energie ab",
+      "Elektronen schwingen auf der Stelle und strahlen dabei kontinuierlich alle Frequenzen ab",
       "Elektronen springen zwischen diskreten Energieniveaus; ein Übergang nach unten emittiert ein Photon mit E = h·f = ΔE",
-      "Protonen im Kern senden Licht aus",
-      "Das Modell erklärt Linienspektren nicht"
+      "Protonen im Kern senden Licht aus, wenn sie durch Kollisionen in angeregte Zustände geraten",
+      "Das Bohrsche Modell erklärt Linienspektren nicht, weil es nur Kreisbahnen kennt"
     ],
     "correct": 1,
     "explanation": "Elektronen können im Bohrschen Modell nur bestimmte Schalen besetzen. Übergänge von höheren zu niedrigeren Schalen erzeugen Photonen genau definierter Frequenz → Linienspektrum.",
@@ -364,8 +364,8 @@
     "options": [
       "Im quantenmechanischen Modell gibt es feste Bahnen, im Bohrschen nur Wahrscheinlichkeiten",
       "Im quantenmechanischen Modell werden Elektronen als Wahrscheinlichkeitswolken (Orbitale) beschrieben – keine festen Bahnen",
-      "Beide Modelle sind identisch",
-      "Das Bohrsche Modell ist moderner"
+      "Beide Modelle sind identisch und liefern dieselben Ergebnisse",
+      "Das Bohrsche Modell ist moderner und genauer als das quantenmechanische"
     ],
     "correct": 1,
     "explanation": "Die Heisenbergsche Unschärferelation verbietet gleichzeitig exakten Ort und Impuls. Das quantenmechanische Modell (Schrödinger) beschreibt deshalb Orbitale als Wahrscheinlichkeitsverteilungen.",
@@ -374,10 +374,10 @@
   {
     "question": "Was ist die Valenzschale eines Atoms?",
     "options": [
-      "Die innerste Elektronenschale",
+      "Die innerste Elektronenschale, die dem Kern am nächsten liegt und zuerst besetzt wird",
       "Die äußerste besetzte Elektronenschale, deren Elektronen (Valenzelektronen) an Bindungen teilnehmen",
-      "Die Schale mit den meisten Elektronen",
-      "Die leere äußerste Schale"
+      "Die Schale mit den meisten Elektronen, also die am stärksten besetzte Schale",
+      "Die nächsthöhere, noch leere Schale die erst bei Anregung besetzt werden kann"
     ],
     "correct": 1,
     "explanation": "Valenzelektronen befinden sich in der äußersten besetzten Schale und bestimmen die chemischen Eigenschaften und die Bindungsfähigkeit eines Elements.",
@@ -386,10 +386,10 @@
   {
     "question": "Was besagt die Oktettregel?",
     "options": [
-      "Atome streben nach 10 Valenzelektronen",
+      "Atome streben nach 10 Valenzelektronen wie die schwereren Edelgase ab Neon",
       "Atome streben in Verbindungen eine vollständige äußere Schale mit 8 Elektronen an (Edelgaskonfiguration)",
-      "Atome haben immer 8 Protonen",
-      "Moleküle besitzen immer 8 Bindungspartner"
+      "Atome haben immer 8 Protonen im Kern, unabhängig von ihrer chemischen Verbindung",
+      "Moleküle besitzen immer genau 8 Atome als Bindungspartner um das Zentralatom"
     ],
     "correct": 1,
     "explanation": "Die Oktettregel erklärt die Bindungsfähigkeit vieler Hauptgruppenelemente: Sie geben, nehmen oder teilen Elektronen, um 8 Valenzelektronen zu erreichen.",
@@ -398,10 +398,10 @@
   {
     "question": "Warum sind Edelgase (Gruppe 18) chemisch reaktionsträge?",
     "options": [
-      "Weil sie sehr leicht sind",
+      "Weil sie sehr leicht sind und als Gase kaum mit festen Stoffen in Kontakt kommen",
       "Weil ihre Valenzschale vollständig besetzt ist (8 Elektronen, He: 2) – sie streben keinen Elektronenaustausch an",
-      "Weil sie keine Elektronen haben",
-      "Weil sie radioaktiv sind"
+      "Weil sie keine Valenzelektronen besitzen und daher nicht an Bindungen teilnehmen können",
+      "Weil sie radioaktiv sind und sich durch ständigen Zerfall nicht dauerhaft verbinden"
     ],
     "correct": 1,
     "explanation": "Edelgase (He, Ne, Ar, Kr, Xe, Rn) haben eine vollständige Valenzschale und damit die stabile Edelgaskonfiguration – es besteht kein Antrieb zur Bindungsbildung.",
@@ -424,8 +424,8 @@
     "options": [
       "Die Energie, die zum Entfernen eines Elektrons aus dem Atom benötigt wird",
       "Die Energie, die bei der Aufnahme eines Elektrons durch ein neutrales Gasatom frei wird (oder aufgenommen werden muss)",
-      "Die Anziehung zwischen Kation und Anion",
-      "Die Bindungsenergie einer Doppelbindung"
+      "Die elektrostatische Anziehungskraft zwischen einem Kation und einem Anion im Ionengitter",
+      "Die Bindungsenergie einer Doppelbindung, also die Energie zum Aufbrechen beider Bindungen"
     ],
     "correct": 1,
     "explanation": "Elektronenaffinität ist die Energiemenge, die freigesetzt (negativ) oder absorbiert wird, wenn ein neutrales Gasatom ein Elektron aufnimmt und zum Anion wird.",
@@ -434,10 +434,10 @@
   {
     "question": "Was ist ein Lewis-Elektronenpunktschema?",
     "options": [
-      "Eine dreidimensionale Darstellung eines Moleküls",
+      "Eine dreidimensionale Darstellung eines Moleküls mit Bindungswinkeln und Raumstruktur",
       "Eine Strukturformel, die Valenzelektronen als Punkte und gemeinsame Elektronenpaare als Striche zeigt",
-      "Eine Darstellung der Energieniveaus",
-      "Eine Tabelle der Ionisierungsenergien"
+      "Eine Darstellung der Energieniveaus der Elektronen in einem Atom oder Molekül",
+      "Eine Tabelle der Ionisierungsenergien aller Elemente nach Ordnungszahl geordnet"
     ],
     "correct": 1,
     "explanation": "Lewis-Strukturformeln (Elektronenpunktformeln) zeigen bindende Elektronenpaare als Striche und freie Elektronenpaare als Punkte – sie visualisieren die Valenzstruktur von Molekülen.",
@@ -460,8 +460,8 @@
     "options": [
       "Die Kreisbahn eines Elektrons um den Kern (Bohrsches Modell)",
       "Eine räumliche Wahrscheinlichkeitsverteilung, die beschreibt, wo sich ein Elektron mit 90%iger Wahrscheinlichkeit aufhält",
-      "Ein Bereich mit konstantem Potenzial",
-      "Die Bahn eines Protons"
+      "Ein Bereich mit konstantem elektrischen Potenzial rund um den positiven Atomkern",
+      "Die Bahn eines Protons im Kerninneren"
     ],
     "correct": 1,
     "explanation": "Im quantenmechanischen Modell ist ein Orbital eine Wellenfunktion (Ψ²) – ein Raumbereich, in dem sich ein Elektron mit 90 % Wahrscheinlichkeit aufhält.",
@@ -472,8 +472,8 @@
     "options": [
       "σ-Bindung: seitliche Überlappung der Orbitale; π-Bindung: Überlappung entlang der Bindungsachse",
       "σ-Bindung: Überlappung entlang der Bindungsachse (stärker); π-Bindung: seitliche Überlappung der Orbitale (schwächer)",
-      "Beide Bindungstypen sind identisch",
-      "σ-Bindungen kommen nur in Metallen vor"
+      "Beide Bindungstypen sind identisch und unterscheiden sich nur im Namen",
+      "σ-Bindungen kommen nur in Metallen vor, π-Bindungen nur in organischen Molekülen"
     ],
     "correct": 1,
     "explanation": "σ-Bindungen entstehen durch Überlappung entlang der Bindungsachse und sind die stärkere Grundbindung; π-Bindungen entstehen zusätzlich durch seitliche Überlappung (Doppel-/Dreifachbindungen).",

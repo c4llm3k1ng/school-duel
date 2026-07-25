@@ -26,10 +26,10 @@
   {
     "question": "Was versteht man unter Resonanz bei einem schwingenden System?",
     "options": [
-      "Die maximale Dämpfung der Schwingung",
-      "Die Überlagerung zweier gegenphasiger Wellen",
+      "Die maximale Dämpfung der Schwingung, bei der externe Reibung die Amplitude innerhalb kürzester Zeit auf null reduziert",
+      "Die Überlagerung zweier gegenphasiger Wellen gleicher Frequenz, die sich vollständig auslöschen (destruktive Interferenz)",
       "Die Erregerfrequenz stimmt mit der Eigenfrequenz überein – die Amplitude wird maximal",
-      "Den vollständigen Stillstand der Schwingung"
+      "Den vollständigen Stillstand der Schwingung durch kritische Dämpfung, sodass keine Schwingung mehr stattfindet"
     ],
     "correct": 2,
     "explanation": "Resonanz tritt auf, wenn die Erregerfrequenz mit der Eigenfrequenz des Systems übereinstimmt – die Amplitude wird dann maximal.",
@@ -38,10 +38,10 @@
   {
     "question": "Was ist ein harmonischer Oszillator?",
     "options": [
-      "Ein System, das sich mit konstanter Geschwindigkeit bewegt",
+      "Ein System, das sich mit konstanter Geschwindigkeit ohne Rückstellkraft in eine Richtung bewegt (gleichförmige Bewegung)",
       "Ein System, dessen Rückstellkraft proportional zur Auslenkung ist (F = −k·x)",
-      "Ein System mit zunehmender Amplitude ohne Dämpfung",
-      "Ein Pendel mit sehr großen Ausschlägen"
+      "Ein System, dessen Amplitude ohne äußere Dämpfung kontinuierlich zunimmt (Resonanzkatastrophe)",
+      "Ein Pendel mit sehr großen Ausschlägen, bei dem nichtlineare Effekte die Schwingung beeinflussen"
     ],
     "correct": 1,
     "explanation": "Beim harmonischen Oszillator ist die Rückstellkraft proportional zur Auslenkung (F = −k·x) – dies führt zu sinusförmiger Schwingung.",
@@ -74,10 +74,10 @@
   {
     "question": "Was versteht man unter konstruktiver Interferenz?",
     "options": [
-      "Zwei Wellen löschen sich gegenseitig aus",
+      "Zwei gegenphasige Wellen gleicher Amplitude überlagern sich und löschen sich dabei vollständig aus",
       "Zwei gleichphasige Wellen überlagern sich und die Amplituden addieren sich",
-      "Eine Welle wird an einer Wand reflektiert",
-      "Eine Welle ändert ihre Frequenz"
+      "Eine Welle trifft auf eine Wand und wird reflektiert, sodass sie sich mit sich selbst überlagert",
+      "Eine Welle ändert beim Übergang in ein anderes Medium ihre Frequenz und Ausbreitungsgeschwindigkeit"
     ],
     "correct": 1,
     "explanation": "Konstruktive Interferenz tritt auf, wenn zwei Wellen gleicher Phase überlagern – die Amplituden addieren sich.",
@@ -110,10 +110,10 @@
   {
     "question": "Was sind stehende Wellen?",
     "options": [
-      "Wellen, die sich mit konstanter Geschwindigkeit ausbreiten",
+      "Wellen, die sich mit konstanter Geschwindigkeit in eine Richtung ausbreiten und dabei keine Energie übertragen",
       "Überlagerung zweier gleichfrequenter, gegenläufiger Wellen gleicher Amplitude",
-      "Wellen, die nur in Festkörpern auftreten",
-      "Wellen mit unendlicher Wellenlänge"
+      "Wellen, die ausschließlich in festen Körpern auftreten und sich durch elastische Verformung fortpflanzen",
+      "Wellen mit sehr großer Wellenlänge, die daher keine räumliche Variation zeigen"
     ],
     "correct": 1,
     "explanation": "Stehende Wellen entstehen durch Überlagerung zweier gegenläufiger Wellen gleicher Frequenz und Amplitude; es bilden sich Schwingungsknoten und -bäuche.",
@@ -134,10 +134,10 @@
   {
     "question": "Was gilt für den Gesamtimpuls eines abgeschlossenen Systems?",
     "options": [
-      "Er wächst mit der Zeit",
-      "Er nimmt ab, wenn Reibung wirkt",
+      "Er wächst mit der Zeit, weil innere Kräfte zwischen den Körpern den Gesamtimpuls kontinuierlich erhöhen",
+      "Er nimmt ab, wenn Reibung oder andere dissipative Kräfte zwischen den Körpern des Systems wirken",
       "Er bleibt konstant (Impulserhaltungssatz)",
-      "Er ist immer null"
+      "Er ist in allen abgeschlossenen Systemen immer null, weil sich positive und negative Teilimpulse stets aufheben"
     ],
     "correct": 2,
     "explanation": "In einem abgeschlossenen System (keine äußeren Kräfte) ist der Gesamtimpuls konstant – das ist der Impulserhaltungssatz.",
@@ -158,10 +158,10 @@
   {
     "question": "Was bleibt bei einem vollkommen elastischen Stoß erhalten?",
     "options": [
-      "Nur der Impuls",
-      "Nur die kinetische Energie",
+      "Ausschließlich der Gesamtimpuls des Systems – die kinetische Energie geht dabei durch Verformung verloren",
+      "Ausschließlich die kinetische Energie – der Impuls ändert sich durch die Stoßkräfte zwischen den Körpern",
       "Sowohl Impuls als auch kinetische Energie",
-      "Nur die potenzielle Energie"
+      "Ausschließlich die potenzielle Energie, da beim Stoß mechanische Energie in Lageenergie umgewandelt wird"
     ],
     "correct": 2,
     "explanation": "Beim elastischen Stoß sind sowohl der Gesamtimpuls als auch die gesamte kinetische Energie erhalten.",
@@ -242,10 +242,10 @@
   {
     "question": "Was beschreibt das Hookesche Gesetz?",
     "options": [
-      "F = m · a",
+      "F = m · a (Newtons zweites Gesetz: Kraft = Masse × Beschleunigung, gilt für alle Körperbewegungen)",
       "F = k · x (Rückstellkraft proportional zur Auslenkung)",
-      "F = p · V",
-      "F = E · A · Δl / L"
+      "F = p · V (Druckkraft: das Produkt aus Gasdruck und dem Volumen des Behälters)",
+      "F = E · A · Δl / L (Dehnung eines Stabs mit Elastizitätsmodul E und Querschnitt A)"
     ],
     "correct": 1,
     "explanation": "Das Hookesche Gesetz F = k·x besagt, dass die Rückstellkraft einer Feder proportional zur Auslenkung x ist; k ist die Federkonstante.",
@@ -290,10 +290,10 @@
   {
     "question": "Warum dreht sich eine Eiskunstläuferin schneller, wenn sie die Arme anzieht?",
     "options": [
-      "Die Schwerkraft nimmt ab",
+      "Die Schwerkraft nimmt ab, weil die Körpermasse näher zur Drehachse konzentriert wird und weniger Gewichtskraft wirkt",
       "Das Trägheitsmoment sinkt, daher muss die Winkelgeschwindigkeit steigen (L = I·ω = const.)",
-      "Sie bekommt mehr Antriebskraft vom Eis",
-      "Ihre Masse verringert sich"
+      "Sie bekommt durch den Reibungskontakt mit der Eisoberfläche zusätzlichen Antrieb und dreht sich daher schneller",
+      "Ihre Gesamtmasse verringert sich durch das Anziehen der Arme, sodass weniger Trägheit vorhanden ist"
     ],
     "correct": 1,
     "explanation": "L = I·ω = const. Zieht sie die Arme ein, sinkt I; damit muss ω zunehmen, damit L konstant bleibt.",
@@ -314,10 +314,10 @@
   {
     "question": "Was besagt der Energieerhaltungssatz?",
     "options": [
-      "Energie kann beliebig erzeugt werden",
-      "Energie wird bei jedem Prozess weniger",
+      "Energie kann aus dem Nichts erzeugt werden, wenn ein System ausreichend hohe Temperatur und Druck erreicht",
+      "Energie wird bei jedem realen Prozess durch Reibung und Streuung geringer, bis schließlich nichts mehr übrig bleibt",
       "Die Gesamtenergie eines abgeschlossenen Systems bleibt konstant",
-      "Kinetische Energie ist immer gleich der potenziellen Energie"
+      "In jedem abgeschlossenen System ist die kinetische Energie immer exakt gleich groß wie die potenzielle Energie"
     ],
     "correct": 2,
     "explanation": "In einem abgeschlossenen System ist die Gesamtenergie konstant – Energie kann weder erzeugt noch vernichtet, nur umgewandelt werden.",
@@ -386,10 +386,10 @@
   {
     "question": "Welche Aussage zur speziellen Relativitätstheorie Einsteins ist korrekt?",
     "options": [
-      "Die Lichtgeschwindigkeit ist vom Beobachter abhängig",
+      "Die Lichtgeschwindigkeit ist vom Bewegungszustand des Beobachters abhängig und nimmt bei schneller Bewegung zu",
       "Alle Inertialsysteme sind gleichwertig und die Lichtgeschwindigkeit ist konstant",
-      "Masse und Energie sind vollständig unabhängig voneinander",
-      "Zeit ist für alle Beobachter absolut gleich"
+      "Masse und Energie sind vollständig unabhängige Größen, die in keiner Beziehung zueinander stehen",
+      "Zeit ist für alle Beobachter absolut und universell gleich – Uhren in bewegten Systemen gehen nicht langsamer"
     ],
     "correct": 1,
     "explanation": "Die SRT beruht auf zwei Postulaten: Relativitätsprinzip (alle Inertialsysteme gleichwertig) und Konstanz der Lichtgeschwindigkeit c im Vakuum.",
@@ -458,10 +458,10 @@
   {
     "question": "Was ist die Dritte Newtonsche Axiom (actio = reactio)?",
     "options": [
-      "Jede Kraft erzeugt eine Beschleunigung",
+      "Jede wirkende Kraft erzeugt stets eine Beschleunigung in ihrer Richtung, proportional zur Masse des Körpers",
       "Zu jeder Kraft existiert eine gleich große, entgegengesetzt gerichtete Gegenkraft",
-      "Die Masse bleibt bei allen Kräften konstant",
-      "Kräfte können sich nicht aufheben"
+      "Die träge Masse eines Körpers bleibt bei allen Kräften und Geschwindigkeiten unterhalb der Lichtgeschwindigkeit konstant",
+      "Kräfte können sich in einem System nicht aufheben; immer wirkt eine resultierende Kraft auf jeden Körper ein"
     ],
     "correct": 1,
     "explanation": "Actio = reactio: Übt Körper A auf Körper B eine Kraft aus, wirkt auf A eine gleich große, entgegengesetzte Kraft von B.",
