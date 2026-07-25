@@ -38,10 +38,10 @@
   {
     "question": "Welches Ion ist für den sauren Charakter einer Lösung verantwortlich?",
     "options": [
-      "OH⁻",
-      "H⁺ (bzw. H₃O⁺)",
-      "Na⁺",
-      "Cl⁻"
+      "OH⁻ (Hydroxid-Ion)",
+      "H⁺ (Oxonium-Ion)",
+      "Na⁺ (Natrium-Ion)",
+      "Cl⁻ (Chlorid-Ion)"
     ],
     "correct": 1,
     "explanation": "Wasserstoff-Ionen (H₃O⁺) machen eine Lösung sauer.",
@@ -123,9 +123,9 @@
     "question": "Welche Base hat die Formel NaOH?",
     "options": [
       "Natronlauge (Natriumhydroxid)",
-      "Kalilauge",
-      "Ammoniak",
-      "Kalkwasser"
+      "Kalilauge (Kaliumhydroxid)",
+      "Ammoniak (Ammoniakwasser)",
+      "Kalkwasser (Calciumhydroxid)"
     ],
     "correct": 0,
     "explanation": "NaOH ist Natriumhydroxid, gelöst Natronlauge.",
@@ -207,9 +207,9 @@
     "question": "Wie ist der pH-Wert definiert?",
     "options": [
       "als negativer dekadischer Logarithmus der H₃O⁺-Konzentration",
-      "als Masse der Säure in Gramm",
-      "als Temperatur der Lösung",
-      "als Volumen der Lösung"
+      "als positiver natürlicher Logarithmus der OH⁻-Konzentration",
+      "als molare Konzentration der H₃O⁺-Ionen in Mol pro Liter",
+      "als Verhältnis von gelöster Säure zu Lösungsmittelvolumen"
     ],
     "correct": 0,
     "explanation": "pH = −log[H₃O⁺].",
@@ -291,7 +291,7 @@
     "question": "Wie nennt man Stoffe, die je nach Partner als Säure oder Base wirken können?",
     "options": [
       "Indikatoren",
-      "Ampholyte (amphotere Stoffe)",
+      "Ampholyte",
       "Katalysatoren",
       "Salze"
     ],
@@ -327,9 +327,9 @@
     "question": "Wie verhält sich eine starke Säure in Wasser?",
     "options": [
       "sie ist vollständig dissoziiert",
-      "sie löst sich gar nicht",
-      "sie ist neutral",
-      "sie bleibt fest"
+      "sie löst sich überhaupt nicht auf",
+      "sie reagiert neutral im Wasser",
+      "sie bleibt als Feststoff erhalten"
     ],
     "correct": 0,
     "explanation": "Starke Säuren dissoziieren in Wasser praktisch vollständig.",
@@ -338,10 +338,10 @@
   {
     "question": "Wie verhält sich eine schwache Säure in Wasser?",
     "options": [
-      "vollständig dissoziiert",
-      "nur teilweise dissoziiert",
-      "basisch",
-      "als Gas"
+      "vollständig in ihre Ionen aufgespalten",
+      "nur teilweise in Ionen aufgespalten",
+      "basisch mit einem pH-Wert über 7",
+      "gasförmig und entweicht aus der Lösung"
     ],
     "correct": 1,
     "explanation": "Schwache Säuren dissoziieren nur teilweise.",
