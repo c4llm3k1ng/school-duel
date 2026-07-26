@@ -74,10 +74,10 @@
   {
     "question": "Was ist Kreiszahl Pi ungefaehr?",
     "options": [
-      "3",
-      "3,14",
-      "3,1416",
-      "alle Antworten sind richtig, je nach Genauigkeit"
+      "nur die Zahl 3",
+      "nur der Wert 3,14",
+      "nur der Wert 3,1416",
+      "alle drei Werte, je nach Genauigkeit"
     ],
     "correct": 3,
     "explanation": "Pi = 3,14159... Die gebraeuchlichsten Naeherungswerte sind 3,14 oder 22/7. Je mehr Nachkommastellen, desto genauer.",
@@ -120,12 +120,12 @@
     "topic": "Kreis"
   },
   {
-    "question": "Was ist ein Sehne in einem Kreis?",
+    "question": "Was ist eine Sehne in einem Kreis?",
     "options": [
-      "Der Abstand vom Mittelpunkt zum Rand",
-      "Eine Strecke, die zwei Punkte auf dem Kreisbogen verbindet",
-      "Der halbe Umfang",
-      "Eine Tangente"
+      "Eine Strecke vom Mittelpunkt bis zum Kreisrand",
+      "Eine Strecke, die zwei Kreispunkte verbindet",
+      "Eine Strecke entlang des halben Kreisumfangs",
+      "Eine Gerade, die den Kreis von aussen nur beruehrt"
     ],
     "correct": 1,
     "explanation": "Sehne: Verbindungslinie zweier Kreispunkte. Laengste Sehne = Durchmesser (geht durch den Mittelpunkt).",
@@ -134,10 +134,10 @@
   {
     "question": "Was versteht man unter einem Zylinder?",
     "options": [
-      "Ein dreidimensionaler Koerper mit sechs rechteckigen Flaechen",
-      "Ein Koerper mit kreisfoermiger Grundflaeche, kreisfoermiger Deckflaeche und rechteckiger Mantelflaeche",
-      "Ein Koerper mit einer Spitze",
-      "Ein Koerper mit fuenf Flaechen"
+      "Ein Quader mit sechs gleichen, rechteckigen Seitenflaechen",
+      "Ein Koerper mit zwei Kreisflaechen und einer rechteckigen Mantelflaeche",
+      "Ein Kegel mit kreisfoermiger Grundflaeche und einer Spitze oben",
+      "Ein Koerper mit fuenf Flaechen, darunter zwei Dreiecke"
     ],
     "correct": 1,
     "explanation": "Zylinder: zwei gleiche Kreise (Boden und Deckel) verbunden durch den rechteckigen Mantel. Formel Volumen: V = pi x r^2 x h.",
@@ -194,10 +194,10 @@
   {
     "question": "Was ist ein Prisma?",
     "options": [
-      "Ein Koerper mit kreisfoermiger Grundflaeche",
-      "Ein Koerper mit zwei gleichen, parallelen Vieleck-Grundflaechen und rechteckigen Seitenflaechen",
-      "Ein Koerper mit nur einer Grundflaeche und Dreiecksseitenflaechen",
-      "Ein Koerper mit 5 dreieckigen Flaechen"
+      "Ein Koerper mit einer runden Grundflaeche wie beim Zylinder",
+      "Ein Koerper mit zwei gleichen, parallelen Vieleck-Grundflaechen und rechteckigen Seiten",
+      "Ein Koerper mit nur einer Grundflaeche und dreieckigen Seitenflaechen",
+      "Ein Koerper mit fuenf dreieckigen Flaechen ohne parallele Grundflaechen"
     ],
     "correct": 1,
     "explanation": "Prisma: zwei gleiche und parallele Vielecke als Grund- und Deckflaeche. Seitenflaechen sind Rechtecke. Quader und Wuerfel sind spezielle Prismen.",
@@ -206,10 +206,10 @@
   {
     "question": "Was ist eine Pyramide?",
     "options": [
-      "Ein Koerper mit kreisfoermiger Grundflaeche und Spitze",
-      "Ein Koerper mit einer Vieleck-Grundflaeche und dreieeckigen Seitenflaechen, die in einer Spitze enden",
-      "Ein Koerper ohne Kanten",
-      "Ein Koerper mit 8 Flaechen"
+      "Ein Kegel mit kreisfoermiger Grundflaeche und einer Spitze oben",
+      "Ein Koerper mit Vieleck-Grundflaeche und dreieckigen Seitenflaechen in einer Spitze",
+      "Ein runder Koerper ohne Kanten und ohne ebene Flaechen",
+      "Ein Koerper mit genau acht gleich grossen Flaechen"
     ],
     "correct": 1,
     "explanation": "Pyramide: Vieleck als Grundflaeche, Dreiecke als Seitenflaechen. Saemtliche Seitenflaechen treffen sich in einer Spitze. Quadratische Pyramide: 4 dreieckige Seitenflaechen.",
@@ -231,7 +231,7 @@
     "question": "Was besagt der Satz des Pythagoras?",
     "options": [
       "Die Summe aller Winkel im Dreieck betraegt 180 Grad",
-      "In einem rechtwinkligen Dreieck gilt: a^2 + b^2 = c^2 (c = Hypotenuse)",
+      "In einem rechtwinkligen Dreieck gilt: a^2 + b^2 = c^2",
       "Der Umfang eines Kreises ist 2 x pi x r",
       "Gegenueberliegende Winkel sind gleich gross"
     ],
@@ -257,7 +257,7 @@
       "Ein Dreieck mit einem Winkel groesser 90 Grad",
       "Ein Dreieck, bei dem alle drei Winkel kleiner als 90 Grad sind",
       "Ein Dreieck mit genau einem 90-Grad-Winkel",
-      "Ein gleichseitiges Dreieck"
+      "Ein Dreieck mit drei gleich langen Seiten"
     ],
     "correct": 1,
     "explanation": "Spitzwinklig: alle drei Winkel sind kleiner als 90 Grad. Stumpfwinklig: ein Winkel groesser 90 Grad. Rechtwinklig: genau ein 90-Grad-Winkel.",
@@ -278,10 +278,10 @@
   {
     "question": "Was sind Scheitelwinkel?",
     "options": [
-      "Winkel auf einer Geraden",
-      "Gegenueberliegende Winkel bei sich schneidenden Geraden - sie sind immer gleich gross",
-      "Winkel in einem Dreieck",
-      "Rechte Winkel"
+      "Nebeneinanderliegende Winkel, die zusammen 180 Grad ergeben",
+      "Gegenueberliegende Winkel an sich schneidenden Geraden, stets gleich gross",
+      "Benachbarte Winkel in einem Dreieck, die sich ergaenzen",
+      "Winkel, die genau 90 Grad betragen und senkrecht stehen"
     ],
     "correct": 1,
     "explanation": "Scheitelwinkel: entstehen wenn zwei Geraden sich schneiden. Die gegenueberliegenden (nicht benachbarten) Winkel sind Scheitelwinkel und gleich gross.",
@@ -290,10 +290,10 @@
   {
     "question": "Was sind Stufenwinkel (auch F-Winkel oder Z-Winkel)?",
     "options": [
-      "Winkel in einem Dreieck",
-      "Gleich grosse Winkel, die beim Schnitt einer Geraden mit zwei parallelen Geraden entstehen",
-      "Supplementaere Winkel",
-      "Komplementaere Winkel"
+      "Winkel innerhalb eines Dreiecks, die zusammen 180 Grad ergeben",
+      "Gleich grosse Winkel an parallelen Geraden mit einer Schnittgeraden",
+      "Winkel, die sich zu 180 Grad ergaenzen (Supplementwinkel)",
+      "Winkel, die sich zu 90 Grad ergaenzen (Komplementwinkel)"
     ],
     "correct": 1,
     "explanation": "Stufenwinkel (Wechselwinkel): entstehen bei zwei parallelen Geraden, die von einer Geraden geschnitten werden. Stufenwinkel (F-Form) und Wechselwinkel (Z-Form) sind gleich gross.",
@@ -326,10 +326,10 @@
   {
     "question": "Was ist ein Netz eines Quaders?",
     "options": [
-      "Ein dreidimensionales Modell",
-      "Die Abwicklung des Quaders in die Ebene - alle 6 Rechtecksflaechen aneinandergelegt",
-      "Ein Gitter aus Linien",
-      "Die Summe aller Flaechen"
+      "Ein verkleinertes dreidimensionales Modell des Koerpers",
+      "Die ebene Abwicklung des Quaders mit allen 6 Rechtecksflaechen",
+      "Ein gleichmaessiges Gitter aus senkrechten und waagerechten Linien",
+      "Die Gesamtflaeche, die alle Seiten des Quaders zusammen ergeben"
     ],
     "correct": 1,
     "explanation": "Netz: wenn man einen Koerper auffaltet und flachlegt, erhaelt man das Netz. Ein Quader hat mehrere verschiedene Netze (11 verschiedene Moeglichkeiten fuer einen Wuerfel).",
@@ -350,10 +350,10 @@
   {
     "question": "Was ist ein Kreissektor?",
     "options": [
-      "Der Rand des Kreises",
-      "Ein Abschnitt des Kreises zwischen zwei Radien (Tortenstueck-Form)",
-      "Eine Sehne",
-      "Der Kreismittelpunkt"
+      "Die aeussere Begrenzungslinie des Kreises",
+      "Ein Bereich zwischen zwei Radien, aehnlich einem Tortenstueck",
+      "Eine gerade Verbindungslinie zwischen zwei Kreispunkten",
+      "Der Schnittpunkt aller Radien im Innern des Kreises"
     ],
     "correct": 1,
     "explanation": "Kreissektor: der Bereich zwischen zwei Radien und dem Kreisbogen dazwischen - sieht aus wie ein Stueck Torte oder Tortenstueck.",
@@ -376,7 +376,7 @@
     "options": [
       "1 cm in der Realitaet = 50000 cm auf der Karte",
       "1 cm auf der Karte = 50000 cm in der Realitaet",
-      "Beide Laengen sind gleich",
+      "Karte und Wirklichkeit haben denselben Massstab",
       "1 m auf der Karte = 50 m in der Realitaet"
     ],
     "correct": 1,
@@ -398,10 +398,10 @@
   {
     "question": "Was ist ein Mittelpunkt eines Kreises?",
     "options": [
-      "Ein Punkt auf dem Kreisbogen",
-      "Der Punkt, der von allen Punkten des Kreises gleich weit entfernt ist",
-      "Der tiefste Punkt eines Kreises",
-      "Ein Schnittpunkt zweier Sehnen"
+      "Ein beliebiger Punkt, der auf dem Kreisbogen selbst liegt",
+      "Der Punkt, der von allen Kreispunkten gleich weit entfernt ist",
+      "Der Punkt am unteren Ende des Kreises im Koordinatensystem",
+      "Der Schnittpunkt zweier Kreissehnen im Innern des Kreises"
     ],
     "correct": 1,
     "explanation": "Mittelpunkt: der Zentralpunkt, von dem aus alle Punkte des Kreises gleich weit entfernt sind (Abstand = Radius).",
@@ -410,10 +410,10 @@
   {
     "question": "Was ist ein Durchmesser?",
     "options": [
-      "Der Radius x 2",
-      "Die laengste Strecke innerhalb des Kreises, die durch den Mittelpunkt geht",
-      "Eine Sehne, die nicht durch den Mittelpunkt geht",
-      "Der Umfang geteilt durch pi"
+      "Das Doppelte des Kreisradius ohne Richtungsangabe",
+      "Die laengste Strecke im Kreis, die durch den Mittelpunkt geht",
+      "Eine Kreissehne, die nicht durch den Mittelpunkt verlaeuft",
+      "Der Kreisumfang dividiert durch die Kreiszahl pi"
     ],
     "correct": 1,
     "explanation": "Durchmesser d = 2r. Er ist die laengste Sehne und geht durch den Mittelpunkt.",
@@ -422,10 +422,10 @@
   {
     "question": "Was ist ein Kegelstumpf?",
     "options": [
-      "Ein halber Kegel",
-      "Ein Kegel, bei dem die Spitze abgeschnitten wurde, sodass eine kleine Kreisflaeche oben entsteht",
-      "Ein umgekehrter Kegel",
-      "Ein Kegel ohne Grundflaeche"
+      "Ein Kegel, der genau in der Mitte waagerecht halbiert wurde",
+      "Ein Kegel mit abgeschnittener Spitze und kleiner Kreisflaeche oben",
+      "Ein Kegel, der mit der Spitze nach unten aufgestellt wird",
+      "Ein offener Kegel ohne Kreisflaeche als Boden"
     ],
     "correct": 1,
     "explanation": "Kegelstumpf: entsteht, wenn man einen Kegel parallel zur Grundflaeche abschneidet. Hat zwei Kreisflaechen (unterschiedlich gross) und eine kegelfoermige Mantelflaeche.",
@@ -434,22 +434,22 @@
   {
     "question": "Was ist ein kongruentes Dreieck?",
     "options": [
-      "Ein ahnliches aber groesseres Dreieck",
+      "Ein aehnliches aber groesseres Dreieck",
       "Ein Dreieck mit gleichen Flaechen aber anderer Form",
       "Ein Dreieck gleicher Groesse und Form (deckungsgleich)",
-      "Ein gleichschenkliges Dreieck"
+      "Ein Dreieck mit zwei gleich langen Seiten"
     ],
     "correct": 2,
-    "explanation": "Kongruente Dreiecke: gleiche Form und gleiche Groesse - man kann eines auf das andere legen und sie decken sich exakt. Ahnliche Dreiecke: gleiche Form aber verschiedene Groesse.",
+    "explanation": "Kongruente Dreiecke: gleiche Form und gleiche Groesse - man kann eines auf das andere legen und sie decken sich exakt. Aehnliche Dreiecke: gleiche Form aber verschiedene Groesse.",
     "topic": "Kongruenz"
   },
   {
     "question": "Was bedeutet aehnliche Dreiecke?",
     "options": [
-      "Dreiecke mit gleichen Winkeln und gleicher Groesse",
-      "Dreiecke mit gleichen Winkeln, aber verschiedenen Seitenlaengen (proportional skaliert)",
-      "Dreiecke mit gleicher Grundlinie",
-      "Dreiecke mit gleichen Seitenlaengen"
+      "Dreiecke mit gleichen Winkeln und zugleich gleicher Groesse",
+      "Dreiecke mit gleichen Winkeln und proportionalen Seitenlaengen",
+      "Dreiecke mit gleicher Grundlinie, aber unterschiedlichen Winkeln",
+      "Dreiecke mit identischen Seitenlaengen und identischen Winkeln"
     ],
     "correct": 1,
     "explanation": "Aehnliche Dreiecke: gleiche Winkel, Seiten im selben Verhaeltnis. Beispiel: 3-4-5 und 6-8-10 sind aehnlich (Faktor 2).",
@@ -458,10 +458,10 @@
   {
     "question": "Was ist ein Lot?",
     "options": [
-      "Eine schiefe Linie",
-      "Eine senkrechte Linie zu einer anderen Geraden oder Ebene",
-      "Eine Parallele",
-      "Eine Winkelhalbierendes"
+      "Eine schraeg verlaufende Linie ohne festen Winkel",
+      "Eine Linie, die senkrecht auf einer anderen Geraden steht",
+      "Eine Gerade, die in gleichem Abstand zu einer anderen verlaeuft",
+      "Eine Linie, die einen Winkel in zwei gleiche Haelften teilt"
     ],
     "correct": 1,
     "explanation": "Lot: senkrechte Strecke von einem Punkt auf eine Gerade. Das Lot steht im 90-Grad-Winkel auf der Geraden.",
