@@ -6357,6 +6357,8 @@ function goBackOneStep() {
     const deep = document.getElementById('solo-schul').style.display !== 'none'
               || document.getElementById('solo-catalog-type').style.display !== 'none';
     if (deep) { showSoloLanding(); return; }
+  } else if (active === 'challenger') {
+    chalHandleBack(); return;
   }
   showSpielenLanding();
 }
