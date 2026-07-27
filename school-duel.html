@@ -8339,7 +8339,7 @@ function _startPQ(questions) {
   G.mode='solo'; G.source='practice';
   G.subject = _pSelSubj||'Übung'; G.subcategory=null; G.grade=_pSelGrade||'–';
   G.solo={correct:0,points:0,answers:[]};
-  G.questions = pick.map(q=>({question:q.question,options:q.options,correct:q.correct,explanation:q.explanation,topic:q.topic||q.subject}));
+  G.questions = shuffleOptions(pick.map(q=>({question:q.question,options:q.options,correct:q.correct,explanation:q.explanation,topic:q.topic||q.subject})));
   G.current=0;
   document.getElementById('q-total').textContent=G.questions.length;
   setupQuizUI(); showScreen('screen-quiz'); renderQuestion();
