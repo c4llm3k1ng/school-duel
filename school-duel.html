@@ -2132,7 +2132,7 @@ let G = {
   dGrade: null, dSubject: null, dSubcategory: null, dDifficulty: 'mittel', dSource: 'ai', dCatalogId: null,
   p1Name: 'Spieler 1', p2Name: 'Spieler 2',
   // multi-round
-  totalRounds: 1, currentRound: 1, roundScores: [],
+  totalRounds: 1, currentRound: 1, roundScores: [], usedInDuel: new Set(),
   // runtime
   questions: [], current: 0, answered: false,
   timeLeft: TIMER_SEC, timerInterval: null,
@@ -7196,8 +7196,10 @@ async function startQuiz() {
   if (_spinner) _spinner.style.display = '';
   startLoadingMessages();
   G.questions = [];
+  if (G.mode === 'duel' && G.currentRound === 1) G.usedInDuel = new Set();
   try {
     G.questions = shuffleOptions(await loadQuestions());
+    if (G.mode === 'duel') G.questions.forEach(q => G.usedInDuel.add(q.question.slice(0, 80)));
     stopLoadingMessages();
     document.getElementById('q-total').textContent = G.questions.length;
     setupQuizUI();
@@ -7266,7 +7268,10 @@ async function loadQuestions() {
   if (src === 'catalog') {
     const cat = getCatalogs().find(c => c.id === catId);
     if (!cat || !cat.questions.length) throw new Error('Katalog leer');
-    let qs = [...cat.questions].sort(() => Math.random() - .5).slice(0, PER_ROUND);
+    const pool = G.usedInDuel.size > 0
+      ? cat.questions.filter(q => !G.usedInDuel.has(q.question.slice(0, 80)))
+      : cat.questions;
+    let qs = [...(pool.length >= PER_ROUND ? pool : cat.questions)].sort(() => Math.random() - .5).slice(0, PER_ROUND);
     if (cat.builtin) qs = qs.map(stripAnswerHint);
     return qs;
   }
