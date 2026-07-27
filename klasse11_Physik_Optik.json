@@ -1,0 +1,470 @@
+[
+  {
+    "correct": 1,
+    "explanation": "Reflexionsgesetz: α_ein = α_aus (beide zur Senkrechten der Oberfläche). Gilt für ebene Spiegel und allgemein für Wellen an Grenzflächen.",
+    "options": [
+      "Einfallswinkel + Ausfallswinkel = 90°, gemessen zur Flächennormalen der Oberfläche",
+      "Einfallswinkel = Ausfallswinkel, beide werden zur Flächennormalen der Oberfläche gemessen",
+      "Das einfallende Licht wird an der Grenzfläche vollständig in alle Richtungen gleichmäßig gestreut",
+      "Das Licht verändert beim Auftreffen auf eine Oberfläche seine Wellenlänge entsprechend dem Einfallswinkel"
+    ],
+    "question": "Was ist das Reflexionsgesetz?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Licht wird beim Übergang in ein optisch dichteres Medium (größerer Brechungsindex) zum Lot hin gebrochen; beim Übergang in ein dünneres Medium vom Lot weg.",
+    "options": [
+      "Reflexion von Licht an einer glatten Oberfläche, bei der der Einfallswinkel dem Ausfallswinkel entspricht",
+      "Änderung der Ausbreitungsrichtung von Licht beim Übergang zwischen zwei optisch verschieden dichten Medien",
+      "Streuung von Lichtstrahlen in viele Richtungen durch kleine Partikel in einem transparenten Medium",
+      "Beugung von Licht, das durch einen sehr engen Spalt hindurchtritt und dabei seitlich abgelenkt wird"
+    ],
+    "question": "Was ist Lichtbrechung (Refraktion)?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Snellius: n₁·sin(α₁) = n₂·sin(α₂). Geht Licht von Luft (n=1) in Glas (n≈1,5): sin(α₂) = sin(α₁)/1,5 → Winkel wird kleiner.",
+    "options": [
+      "n₁·cos(α₁) = n₂·cos(α₂), wobei n der Brechungsindex und α der Winkel zur Normalen ist",
+      "n₁·sin(α₁) = n₂·sin(α₂), wobei n der Brechungsindex und α der Winkel zur Normalen ist",
+      "n₁/n₂ = sin(α₁)/cos(α₂), das Verhältnis der Brechungsindizes entspricht dem Winkelquotienten",
+      "α₁ = α₂ stets, da der Brechungsindex das Verhältnis der Winkel unverändert lässt"
+    ],
+    "question": "Wie lautet das Snellius'sche Brechungsgesetz?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Totalreflexion: n₁·sin(α_Grenz) = n₂ (mit n₁ > n₂). Anwendung: Glasfaserkabel, Diamantschliff, Prismenprisma.",
+    "options": [
+      "Vollständige Absorption von Licht an der Grenzfläche, wenn der Einfallswinkel den Grenzwinkel überschreitet",
+      "Vollständige Reflexion beim Übergang vom dichteren ins dünnere Medium, wenn der Einfallswinkel den Grenzwinkel übersteigt",
+      "Vollständige Streuung von Licht an einer rauen Oberfläche, wenn der Einfallswinkel den Brewster-Winkel überschreitet",
+      "Vollständige Brechung beim Übergang vom dünneren ins dichtere Medium, wenn der Einfallswinkel den Grenzwinkel übersteigt"
+    ],
+    "question": "Was ist Totalreflexion?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Je größer n, desto langsamer und stärker gebrochen wird das Licht. Luft: n ≈ 1; Wasser: n ≈ 1,33; Glas: n ≈ 1,5; Diamant: n ≈ 2,42.",
+    "options": [
+      "Die Lichtfrequenz im Medium in Hertz; berechnet als n = f_Medium / f_Vakuum, immer ≥ 1",
+      "n = c/v, das Verhältnis der Lichtgeschwindigkeit im Vakuum zur Lichtgeschwindigkeit im Medium; n ≥ 1 stets",
+      "n = λ/f, das Verhältnis aus Wellenlänge und Frequenz des Lichts im betreffenden Medium",
+      "n = I/A, das Verhältnis aus Lichtintensität und Amplitude im durchstrahlten Medium"
+    ],
+    "question": "Was ist der Brechungsindex n eines Mediums?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Sammellinsen (Konvexlinsen) konvergieren Lichtstrahlen; reelle, umgekehrte Bilder bei g > f; virtuelle aufrechte Bilder bei g < f (Lupe).",
+    "options": [
+      "Eine bikonkave Linse, die einfallende Lichtstrahlen auseinandertreibt und einen virtuellen Brennpunkt erzeugt",
+      "Eine konvexe Linse, die parallele Strahlen in einem reellen Brennpunkt bündelt und bei Gegenstandsweite > f reelle Bilder erzeugt",
+      "Eine plankonvexe Linse mit negativer Brennweite, die einfallende Strahlen stets in verkleinerten virtuellen Bildern abbildet",
+      "Eine Prismalinse, die weißes Licht durch Dispersion in seine Spektralfarben zerlegt und in einem Bildpunkt vereint"
+    ],
+    "question": "Was ist eine Sammellinse?",
+    "topic": "Linsen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Streulinsen (Konkavlinsen) divergieren Lichtstrahlen; Brennweite ist negativ. Anwendung: Kurzsichtigkeit korrigieren.",
+    "options": [
+      "Eine bikonvexe Linse, die parallele Lichtstrahlen in einem reellen Brennpunkt auf der Bildseite vereint",
+      "Eine konkave Linse, die parallele Strahlen auseinandertreibt; ihr virtueller Brennpunkt liegt auf der Einfallsseite",
+      "Eine plankonvexe Linse mit positivem Brennpunkt, die Lichtstrahlen bündelt und reelle Bilder auf einem Schirm erzeugt",
+      "Eine Sammellinse, die umgekehrt eingebaut das einfallende Licht aufspreizt und nach außen ablenkt"
+    ],
+    "question": "Was ist eine Streulinse?",
+    "topic": "Linsen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Linsengleichung (Gaußsche Linsenformel) verbindet Brennweite, Gegenstandsweite und Bildweite; gilt für dünne Linsen näherungsweise.",
+    "options": [
+      "f = g + b, die Brennweite ist gleich der Summe aus Gegenstandsweite und Bildweite",
+      "1/f = 1/g + 1/b, mit f = Brennweite, g = Gegenstandsweite und b = Bildweite",
+      "f = g · b, die Brennweite ist gleich dem Produkt aus Gegenstandsweite und Bildweite",
+      "b = f − g, die Bildweite ist gleich der Differenz aus Brennweite und Gegenstandsweite"
+    ],
+    "question": "Was besagt die Linsengleichung?",
+    "topic": "Linsen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Brechkräfte additieren sich bei Linsensystemen: D_ges = D₁ + D₂. Eine +2 dpt Linse hat f = 0,5 m.",
+    "options": [
+      "Die Brennweite der Linse in Zentimetern; eine Linse mit 100 cm Brennweite hat die Brechkraft 1",
+      "D = 1/f (f in Metern); Einheit Dioptrie (dpt); Sammellinse: D > 0, Streulinse: D < 0",
+      "D = f², das Quadrat der Brennweite in Metern; positive Werte kennzeichnen Sammellinsen",
+      "D = n − 1, der Brechungsindex des Linsenmaterials minus eins ergibt die Brechkraft"
+    ],
+    "question": "Was ist die Brechkraft (Dioptrie) einer Linse?",
+    "topic": "Linsen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Interferenz: Licht- oder Schallwellen überlagern sich. Voraussetzung: kohärente Quellen (gleiche Frequenz, feste Phasenbeziehung).",
+    "options": [
+      "Das Absorbieren von Licht durch ein optisches Medium, wobei Energie in Wärme umgewandelt wird",
+      "Überlagerung (Superposition) zweier Wellen: konstruktive Interferenz bei Phasendifferenz 0; destruktive Auslöschung bei π",
+      "Reflexion von Licht an einer Grenzfläche, wobei der Einfallswinkel dem Ausfallswinkel gleicht",
+      "Streuung von Lichtstrahlen in viele Richtungen durch kleine Partikel in einem transparenten Medium"
+    ],
+    "question": "Was ist Interferenz von Wellen?",
+    "topic": "Wellenoptik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Youngs Doppelspalt: Gangunterschied Δ = m·λ (konstruktiv); Δ = (m+½)·λ (destruktiv). Auswertung: λ = d·a/L (d = Spaltabstand, a = Streifenabstand, L = Schirmabstand).",
+    "options": [
+      "Beweis für die Teilchennatur des Lichts: zwei Spalten erzeugen zwei getrennte Lichtflecken auf dem Schirm",
+      "Beweis für die Wellennatur des Lichts: zwei kohärente Quellen erzeugen ein Interferenzmuster aus hellen und dunklen Streifen",
+      "Beugungsversuch mit einem einzelnen Spalt, bei dem Licht an den Kanten abgelenkt und ein Muster erzeugt wird",
+      "Refraktionsversuch, bei dem zwei Prismen das Licht in entgegengesetzte Richtungen brechen"
+    ],
+    "question": "Was ist das Doppelspaltexperiment (Young, 1801)?",
+    "topic": "Wellenoptik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Beugung erklärt, warum Wellen um Ecken 'herum' wandern; Beugungsbeugung an Gitter oder Spalt ergibt Intensitätsmuster.",
+    "options": [
+      "Brechung von Licht beim Übergang von einem Medium in ein anderes, wobei der Lichtstrahl seine Richtung ändert",
+      "Das Abbiegen von Wellen um Hindernisse oder durch Spalten; tritt auf, wenn die Hindernissgröße in der Größenordnung der Wellenlänge liegt",
+      "Reflexion von Licht an einer glatten Oberfläche, bei der alle Strahlen in einem definierten Winkel zurückgeworfen werden",
+      "Überlagerung zweier kohärenter Lichtwellen, die zu einem regelmäßigen Muster heller und dunkler Streifen führt"
+    ],
+    "question": "Was ist Beugung (Diffraktion) von Licht?",
+    "topic": "Wellenoptik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Polarisationsfilter lassen nur Licht einer Schwingungsrichtung durch; Anwendung: Sonnenbrillen, LC-Displays, 3D-Kino.",
+    "options": [
+      "Licht breitet sich als Longitudinalwelle aus und hat daher keine definierte Schwingungsrichtung",
+      "Transversalwellen wie Licht können polarisiert sein: lineare Polarisation bedeutet Schwingung in einer einzigen Ebene; natürliches Licht ist unpolarisiert",
+      "Longitudinalwellen wie Schall können durch spezielle Filter auf eine einzige Schwingungsrichtung reduziert werden",
+      "Polarisation beschreibt die Aufspaltung weißen Lichts durch ein Prisma in seine sichtbaren Spektralfarben"
+    ],
+    "question": "Was ist Polarisation von Licht?",
+    "topic": "Wellenoptik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Dispersion im Prisma: blaues Licht (kürzere λ) wird stärker gebrochen als rotes Licht (längere λ). Regenbogen: Dispersion in Wassertropfen.",
+    "options": [
+      "Interferenz aller Spektralfarben in einem Medium, die sich zu weißem Licht überlagern und verstärken",
+      "Aufspaltung von weißem Licht in seine Spektralfarben durch Brechung, da der Brechungsindex von der Wellenlänge abhängt",
+      "Reflexion weißen Lichts an einer Prismenoberfläche, wobei alle Farben im gleichen Winkel zurückgeworfen werden",
+      "Beugung an einem optischen Gitter, die das Licht in parallele Spektren gleicher Intensität aufteilt"
+    ],
+    "question": "Was ist Dispersion?",
+    "topic": "Wellenoptik"
+  },
+  {
+    "correct": 1,
+    "explanation": "LASER = Light Amplification by Stimulated Emission of Radiation. Anwendungen: Medizin, Telekommunikation, Datenspeicherung, Messtechnik.",
+    "options": [
+      "Eine Hochleistungsglühbirne, die durch starke Erhitzung des Glühfadens ein sehr gebündeltes Lichtbündel erzeugt",
+      "Lichtquelle mit kohärentem, monochromatischem Licht durch stimulierte Emission; alle Photonen haben gleiche Wellenlänge, Phase und Richtung",
+      "Eine UV-Lampe, die durch elektrische Entladung ultraviolettes Licht mit breitem Frequenzspektrum aussendet",
+      "Ein Halbleiterchip, der elektrische Signale in thermische Strahlung mit breitem Wellenspektrum umwandelt"
+    ],
+    "question": "Was ist ein Laser (Prinzip)?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Für Licht: c = λ · f. Rotes Licht: λ ≈ 700 nm → f = c/λ ≈ 4,3 · 10¹⁴ Hz. Diese Formel gilt für alle Wellentypen.",
+    "options": [
+      "v = λ / f, die Ausbreitungsgeschwindigkeit ist der Quotient aus Wellenlänge und Frequenz",
+      "v = λ · f, die Ausbreitungsgeschwindigkeit ist das Produkt aus Wellenlänge und Frequenz",
+      "v = f² / λ, die Ausbreitungsgeschwindigkeit ist das Frequenzquadrat dividiert durch die Wellenlänge",
+      "λ = v · f, die Wellenlänge ist das Produkt aus Ausbreitungsgeschwindigkeit und Frequenz"
+    ],
+    "question": "Was ist die Wellengleichung für Licht (und alle Wellen)?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Schall ist eine Longitudinalwelle (Druckwelle); Licht ist eine Transversalwelle (elektromagnet. Feld) – erklärt, warum Licht polarisiert werden kann, Schall nicht.",
+    "options": [
+      "Longitudinalwellen: Schwingungsrichtung parallel zur Ausbreitungsrichtung (z.B. Schall); Transversalwellen: Schwingungsrichtung senkrecht dazu (z.B. Licht)",
+      "Longitudinalwellen schwingen senkrecht zur Ausbreitungsrichtung (z.B. Licht); Transversalwellen schwingen parallel dazu (z.B. Schall)",
+      "Longitudinalwellen breiten sich im Vakuum stets schneller aus als Transversalwellen, da keine Querverschiebung nötig ist",
+      "Transversalwellen bestehen aus Druckschwankungen im Medium; Longitudinalwellen aus elektromagnetischen Feldschwankungen"
+    ],
+    "question": "Was sind Longitudinal- und Transversalwellen?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Das Huygenssche Prinzip erklärt Beugung und Brechung geometrisch; es ist Grundlage der Wellenoptik.",
+    "options": [
+      "Jedes Lichtquant verhält sich als Teilchen und folgt ausschließlich geradlinigen Bahnen ohne Abweichung",
+      "Jeder Punkt einer Wellenfront ist Ausgangspunkt einer neuen Elementarwelle; die Einhüllende aller Elementarwellen ergibt die neue Wellenfront",
+      "Nur kohärente Wellen können interferieren; inkohärentes Licht aus verschiedenen Quellen löscht sich stets aus",
+      "Licht breitet sich ausschließlich in geraden Linien aus und kann Hindernisse nicht seitlich umgehen"
+    ],
+    "question": "Was ist das Huygenssche Prinzip?",
+    "topic": "Wellenoptik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Höhere NA → bessere Auflösung (kleinere Details sichtbar). Ölimmersionsobjektive (n>1) erhöhen NA über 1 hinaus.",
+    "options": [
+      "Die optische Vergrößerung des Objektivs, also das Verhältnis von Bildgröße zu Gegenstandsgröße",
+      "Ein Maß für das Lichtsammlungs- und Auflösungsvermögen eines Objektivs: NA = n·sin(α), mit α als halbem Öffnungswinkel",
+      "Die Brennweite des Objektivs in Millimetern, die angibt, wie weit der Fokus vom Objektivsystem entfernt liegt",
+      "Die Brechkraft des Objektivs in Dioptrien, also der Kehrwert der Brennweite in Metern"
+    ],
+    "question": "Was ist die numerische Apertur eines optischen Instruments?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "f_Grenz = W_A / h (W_A = Austrittsarbeit, h = Planck-Konstante). Unterhalb dieser Frequenz werden keine Elektronen ausgelöst – unabhängig von Intensität.",
+    "options": [
+      "Die maximale Frequenz des Lichts, ab der die Intensität stark abnimmt und keine Wechselwirkung mehr stattfindet",
+      "Die minimale Lichtfrequenz, ab der Elektronen aus einer Metalloberfläche ausgelöst werden; sie hängt von der Austrittsarbeit des Materials ab",
+      "Die Resonanzfrequenz, mit der ein Laserstrahl schwingen muss, um maximale Emission im Material zu erzeugen",
+      "Die Frequenz, mit der die emittierten Elektronen nach dem Austritt aus dem Metallgitter schwingen"
+    ],
+    "question": "Was ist die Grenzfrequenz beim Photoeffekt?",
+    "topic": "Quantenphysik Grundlagen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Das elektromagnetische Spektrum reicht von Radiowellen (MHz) über Infrarot, Sichtlicht, UV bis Röntgen- und Gammastrahlung (THz–PHz).",
+    "options": [
+      "Schallwellen, die sich im Vakuum mit Lichtgeschwindigkeit ausbreiten und dabei periodische Druckschwankungen erzeugen",
+      "Wellen aus gekoppelten elektrischen und magnetischen Feldern, die sich im Vakuum mit c = 3·10⁸ m/s ausbreiten; reichen von Radiowellen bis Gammastrahlung",
+      "Mechanische Druckwellen, die sich in einem elastischen Medium ausbreiten und dabei elektromagnetische Impulse übertragen",
+      "Elektrischer Strom, der durch einen Leiter fließt und dabei ein Magnetfeld um den Draht herum erzeugt"
+    ],
+    "question": "Was ist elektromagnetische Strahlung?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Sichtbares Licht: λ ≈ 400 nm (violett) bis 700 nm (rot). Größere λ = Infrarot/Radio; kleinere λ = UV/Röntgen.",
+    "options": [
+      "Die Amplitude einer Welle, also der maximale Ausschlag aus der Gleichgewichtslage, gemessen in Metern",
+      "Der räumliche Abstand zwischen zwei benachbarten gleichphasigen Punkten (z.B. Wellenberg zu Wellenberg), angegeben in Metern",
+      "Die Ausbreitungsgeschwindigkeit einer Welle im Medium, angegeben als zurückgelegte Strecke pro Sekunde",
+      "Die Frequenz einer Welle, also die Anzahl der vollständigen Schwingungen pro Sekunde, gemessen in Hertz"
+    ],
+    "question": "Was versteht man unter Wellenlänge?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "AM: Trägerwelle bleibt in Frequenz konstant, Amplitude ändert sich entsprechend dem Nutzsignal. Nachteil: anfällig für Rauschen.",
+    "options": [
+      "Änderung der Frequenz einer Trägerwelle proportional zum Nutzsignal, z.B. Musik oder Sprache",
+      "Modulierung der Amplitude einer Trägerwelle entsprechend dem Nutzsignal (z.B. Musik); einfachste Form der Modulation für AM-Radio",
+      "Modulation der Phase einer Trägerwelle, wobei Amplitude und Frequenz des Signals konstant bleiben",
+      "Digitale Umwandlung des Nutzsignals in Binärimpulse, die dann als Pulsfolge auf der Trägerwelle übertragen werden"
+    ],
+    "question": "Was ist Amplitudenmodulation (AM) bei Radiowellen?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Strahlenoptik vernachlässigt Wellennatur; gültig für große Objekte. Wellenoptik nötig für Beugung und Interferenz.",
+    "options": [
+      "Die Theorie der Interferenz und Beugung von Licht als Welle, gültig für sehr kleine Objekte und enge Spalten",
+      "Beschreibung von Licht als gerade Strahlen, gültig wenn Objekte viel größer als die Wellenlänge sind; erklärt Reflexion, Brechung und Linsenabbildung",
+      "Die Quantentheorie des Lichts, bei der Photonen als Teilchen ohne Welleneigenschaften behandelt werden",
+      "Die Wellenoptik, die Interferenz und Polarisation von Licht als elektromagnetische Transversalwelle erklärt"
+    ],
+    "question": "Was ist Strahlenoptik (geometrische Optik)?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Reelles Bild: Strahlen schneiden sich wirklich; bei Sammellinse mit g > f. Virtuelles Bild: Strahlen scheinen zu divergieren (Lupe, Spiegel, Streulinse).",
+    "options": [
+      "Ein Bild, das auf der gleichen Seite wie der Gegenstand liegt und nur durch Verlängerung der Strahlen entsteht",
+      "Ein Bild, das durch den tatsächlichen Schnittpunkt von Lichtstrahlen auf der Bildseite entsteht und auf einem Schirm aufgefangen werden kann",
+      "Ein virtuelles Bild, das hinter der Linse zu liegen scheint und nicht auf einem Schirm darstellbar ist",
+      "Ein Bild, das genau in der Linsenebene entsteht, wenn der Gegenstand im Brennpunkt der Linse positioniert wird"
+    ],
+    "question": "Was ist ein reelles Bild bei einer Linse?",
+    "topic": "Linsen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Rayleigh-Streuung: kurze Wellenlängen (blau) werden stärker gestreut; Himmel erscheint blau. Bei Sonnenuntergang langer Weg → nur Rot bleibt übrig.",
+    "options": [
+      "Reflexion von Licht an einer glatten, polierten Oberfläche, bei der alle Strahlen in eine einzige Richtung reflektiert werden",
+      "Ablenkung von Lichtstrahlen in viele Richtungen durch kleine Teilchen (Rayleigh-Streuung); erklärt den blauen Himmel und rote Sonnenuntergänge",
+      "Beugung von Licht an einem schmalen Spalt, bei der ein Interferenzmuster aus hellen und dunklen Streifen entsteht",
+      "Interferenz von zwei kohärenten Lichtquellen, die zu einem regelmäßigen Muster heller und dunkler Streifen führt"
+    ],
+    "question": "Was ist Streuung von Licht?",
+    "topic": "Wellenoptik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Für Glas-Luft (n₁=1,5, n₂=1): sin(α_k) = 1/1,5 → α_k ≈ 41,8°. Bei Einfallswinkeln > α_k tritt Totalreflexion auf.",
+    "options": [
+      "α_k = arccos(n₂/n₁), gültig für den Übergang vom dünneren ins dichtere Medium mit n₁ < n₂",
+      "α_k = arcsin(n₂/n₁), gültig für den Übergang vom dichteren ins dünnere Medium mit n₁ > n₂",
+      "α_k = 45° für alle Medien, da der Grenzwinkel unabhängig vom Brechungsindex konstant bleibt",
+      "α_k = arctan(n₁/n₂), gültig für beliebige Übergänge zwischen zwei optisch verschiedenen Medien"
+    ],
+    "question": "Was ist die kritische Winkelbeziehung bei Totalreflexion?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Glasfaser-Kommunikation: Licht überträgt Datensignale mit hoher Bandbreite über große Distanzen mit minimalen Verlusten durch Totalreflexion.",
+    "options": [
+      "Elektrische Leitung durch den leitfähigen Glaskern, wobei Elektronen ähnlich wie in einem Metallkabel transportiert werden",
+      "Totalreflexion hält Lichtsignale im Glasfaserkern: Kern (höheres n) von Mantel (niedrigeres n) umgeben, sodass Licht im Kern gefangen bleibt",
+      "Reflexion des Lichts an einer metallischen Innenbeschichtung des Glasrohres, die alle Strahlen zurückwirft",
+      "Beugung des Lichts im Glasinneren, durch die sich Strahlen auch um Kurven und Biegungen der Faser herum ausbreiten"
+    ],
+    "question": "Was ist das Prinzip des Glasfaserkabels?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Linienspektren sind charakteristisch für Atome (Neon, Natrium) und erlaubten die Entdeckung der Bohr'schen Energieniveaus.",
+    "options": [
+      "Die Gesamtintensität (Helligkeit) der Lichtquelle, unabhängig von der Farbe oder Wellenlänge des emittierten Lichts",
+      "Die Verteilung der Wellenlängen (Farben) im emittierten Licht: kontinuierliches Spektrum (Glühlampe) oder Linienspektrum (Gasentladung)",
+      "Ausschließlich die Leuchtdichte der Quelle in Candela, ohne Aussage über die Farbe des Lichts",
+      "Die Abstrahlcharakteristik der Lichtquelle, also in welche Raumrichtungen das Licht ausgesandt wird"
+    ],
+    "question": "Was zeigt das Spektrum einer Lichtquelle?",
+    "topic": "Spektroskopie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Prismenspektrometer trennen Licht durch Dispersion; Gitterspektrometer durch Beugung; beide werden zur Elementanalyse und Astrophysik genutzt.",
+    "options": [
+      "Ein Teleskop, das schwache astronomische Lichtquellen durch Bündelung in einem Okularsystem vergrößert",
+      "Ein optisches Gerät, das Licht durch Dispersion (Prisma oder Gitter) in seine Spektralfarben zerlegt und zur Elementanalyse nutzt",
+      "Ein Interferometer, das zwei kohärente Lichtquellen überlagert und deren Phasendifferenz misst",
+      "Ein Polarimeter, das den Drehwinkel der Polarisationsebene durch optisch aktive Substanzen bestimmt"
+    ],
+    "question": "Was ist ein Prismenspektrometer?",
+    "topic": "Spektroskopie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Vergrößerung V > 1: Bild größer als Gegenstand; V < 1: kleiner; V = –1: umgekehrt gleich groß. Negatives Vorzeichen zeigt Bildumkehr.",
+    "options": [
+      "V = f/g, das Verhältnis aus Brennweite und Gegenstandsweite ergibt den Abbildungsmaßstab",
+      "V = B/G = b/g, Bildgröße durch Gegenstandsgröße ist gleich Bildweite durch Gegenstandsweite",
+      "V = g/b, das Verhältnis aus Gegenstandsweite und Bildweite ergibt den Abbildungsmaßstab",
+      "V = f/b, das Verhältnis aus Brennweite und Bildweite ergibt den Abbildungsmaßstab"
+    ],
+    "question": "Was ist die Formel für die Abbildungsmaßstab (Vergrößerung) einer Linse?",
+    "topic": "Linsen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ohne Kohärenz löschen sich Phasen gegenseitig zufällig aus – kein stabiles Interferenzmuster. Laser und Doppelspalt-Experimente benötigen Kohärenz.",
+    "options": [
+      "Sehr helles, intensives Licht, das durch Bündelung vieler Lichtquellen in einem gemeinsamen Fokuspunkt entsteht",
+      "Licht mit fester Phasenbeziehung und gleicher Frequenz – Voraussetzung für stabile Interferenz (Laser: kohärent, Glühlampe: kaum)",
+      "Licht mit besonders hoher Intensität und breitem Frequenzspektrum, erzeugt durch thermische Strahlung",
+      "Polarisiertes Licht, dessen Schwingungsebene durch einen Polarisationsfilter auf eine einzige Richtung beschränkt ist"
+    ],
+    "question": "Was versteht man unter Kohärenz von Licht?",
+    "topic": "Wellenoptik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Fluoreszenz: Absorption → Anregung → sofortige Emission (ns). Phosphoreszenz: Emission hält an (Minuten bis Stunden). Anwendungen: Leuchtstoffröhren, Markiersticker.",
+    "options": [
+      "Dauerhafte Lichtabsorption durch ein Material, das aufgenommene Strahlungsenergie langfristig speichert",
+      "Aufnahme kurzwelligen Lichts und sofortige Emission längerwelligen Lichts; endet unmittelbar nach Abschalten der Lichtquelle",
+      "Reflexion von sichtbarem Licht an einer speziell beschichteten Oberfläche ohne Veränderung der Wellenlänge",
+      "Phosphoreszenz: verzögerte Emission nach Lichtabschalten, die Minuten bis Stunden nach dem Abschalten anhält"
+    ],
+    "question": "Was ist Fluoreszenz?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "c₀ ist die maximale Naturkonstante; in Glas (n=1,5): c = 2·10⁸ m/s. Bei Totalreflexion relevant: Licht ist im dichteren Medium langsamer.",
+    "options": [
+      "Kein Unterschied: Licht breitet sich stets mit c₀ = 3·10⁸ m/s aus, da Photonen keine Ruhemasse haben",
+      "Im Vakuum gilt c₀ ≈ 3·10⁸ m/s; in Materie verlangsamt sich Licht auf c = c₀/n, abhängig vom Brechungsindex n > 1",
+      "Licht ist in Materie schneller als im Vakuum, weil Atome es durch stimulierte Emission zusätzlich beschleunigen",
+      "Licht hat stets dieselbe Geschwindigkeit c₀, verändert aber beim Eintritt in Materie seine Frequenz"
+    ],
+    "question": "Was ist der Unterschied zwischen Lichtgeschwindigkeit im Vakuum und in Materie?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Brechungsgesetz: n = Brechungsindex (Vakuum: 1, Wasser: 1.33, Glas: ~1.5). Beim Uebergang in optisch dichteres Medium bricht der Strahl zur Normalen hin. Basis fuer Linsen, Prisma, Glasfaser.",
+    "options": [
+      "Ein Reflexionsgesetz: n₁·cos(α₁) = n₂·cos(α₂); beschreibt, wie Licht an einer Grenzfläche reflektiert wird",
+      "n₁·sin(α₁) = n₂·sin(α₂): beim Übergang zwischen zwei Medien gilt dieses Verhältnis der Sinuswerte der Winkel zur Normalen",
+      "Ein Beugungsgesetz: n₁·tan(α₁) = n₂·tan(α₂); beschreibt die Ablenkung von Licht an einem optischen Gitter",
+      "Ein Interferenzgesetz: n₁·α₁ = n₂·α₂; beschreibt die Überlagerung von Lichtwellen beim Übergang in ein Medium"
+    ],
+    "question": "Was ist das Brechungsgesetz (Snellius)?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Konvexlinse: Brennpunkt auf der anderen Seite (real). Vergrossert bei Gegenstand innerhalb Brennweite (Lupe). Konkavlinse: Virtueller Brennpunkt, verkleinert immer. Kurzsichtige brauchen Konkav-, Weitsichtige Konvexlinsen.",
+    "options": [
+      "Die Tönung des Linsenmaterials: Konvexlinsen bestehen aus blau getöntem Kronglas, Konkavlinsen aus rotem Flintglas",
+      "Konvexlinse (in der Mitte dicker) bündelt Lichtstrahlen in einem reellen Brennpunkt; Konkavlinse (in der Mitte dünner) zerstreut Strahlen",
+      "Der Durchmesser der Linse: Konvexlinsen haben stets einen größeren Außendurchmesser als gleich starke Konkavlinsen",
+      "Das Linsenmaterial: Konvexlinsen aus Kronglas mit n = 1,52; Konkavlinsen ausschließlich aus Flintglas mit n = 1,70"
+    ],
+    "question": "Was unterscheidet Konvex- von Konkavlinse?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Interferenz: Beweis des Wellencharakters des Lichts. Doppelspaltexperiment (Young 1801) erzeugte helle und dunkle Streifen. CD-Schillern und Seifenblassenfarben entstehen durch Interferenz an duennen Schichten.",
+    "options": [
+      "Reflexion von Licht an einer halbdurchlässigen Schicht, wobei ein Teil des Strahls transmittiert und ein Teil reflektiert wird",
+      "Überlagerung zweier Lichtwellen: konstruktive Interferenz (hell) wenn Wellenberge zusammentreffen, destruktive (dunkel) wenn Berg auf Tal trifft",
+      "Brechung von Licht beim Übergang von einem Medium in ein optisch dichteres, wobei der Strahl zur Normalen hin abgelenkt wird",
+      "Emission von Licht durch angeregte Atome, die beim Übergang in den energieärmeren Grundzustand Photonen aussenden"
+    ],
+    "question": "Was ist Lichtinterferenz?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Linsenformel: f positiv fuer Sammellinse, negativ fuer Zerstreuungslinse. Beispiel: f=10cm, g=30cm -> b=15cm, V=0.5 (verkleinert). Fuer reelles Bild muss die Gegenstandsweite groesser als die Brennweite sein.",
+    "options": [
+      "Die Lichtgeschwindigkeit im Linsenmaterial: c_Glas = c₀/n, abhängig vom Brechungsindex des Glases",
+      "1/f = 1/g + 1/b, mit f = Brennweite, g = Gegenstandsweite, b = Bildweite; Vergrößerung: V = b/g",
+      "Den Brechungsindex des Linsenmaterials: n = sin(α₁)/sin(α₂) beim Lichtdurchtritt durch die Grenzflächen",
+      "Die Wellenlänge des Lichts im Linsenmaterial: λ_Glas = λ_Luft/n, abhängig vom Brechungsindex des Glases"
+    ],
+    "question": "Was beschreibt die Linsenformel?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Photoeffekt: entdeckt von Hertz, erklaert von Einstein. E_Photon = h*f. Wenn Energie groesser als Austrittsarbeit: Elektron wird emittiert. Anwendung: Solarzellen, Fotozellen. Einstein erhielt dafuer (nicht fuer Relativitaet) den Nobelpreis.",
+    "options": [
+      "Lichtemission durch stark erhitztes Metall, wobei Intensität und Farbe des Lichts von der Temperatur abhängen",
+      "Herauslösen von Elektronen aus einer Metalloberfläche durch Lichteinfall; die Energie hängt von der Frequenz ab und wurde 1905 von Einstein mit Photonen erklärt",
+      "Lichtbeugung an einem sehr schmalen Spalt, wobei ein charakteristisches Beugungsmuster auf dem Schirm entsteht",
+      "Lichtbrechung an der Glasoberfläche, wobei ein Teil des Lichts in das Glas eindringt und dabei seine Richtung ändert"
+    ],
+    "question": "Was ist der Photoelektrische Effekt?",
+    "topic": "Optik"
+  }
+]
