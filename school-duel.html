@@ -11015,7 +11015,7 @@ const CH = {
   reporting: false, // true while report modal is open from Challenger
 };
 
-const CHAL_GRADE_ORDER = ['6','7','10','11'];
+const CHAL_GRADE_ORDER = ['5','6','7','10','11','12'];
 
 function chalModeKey() {
   if (CH.mode === 'general-class')    return 'general_class';
@@ -11038,23 +11038,27 @@ function chalModeBadgeLabel() {
   return 'CHALLENGER';
 }
 
-// Grade weights for weighted mode: shifts from easy (kl6) to hard (kl11) as level increases
+// Grade weights for weighted mode: shifts from easy (kl5) to hard (kl12) as level increases
 function chalGradeWeights(level) {
   const p = Math.min(1, (level - 1) / 55);
   return {
+    '5':  Math.max(0, 0.8 - p * 1.8),
     '6':  Math.max(0, 1 - p * 1.4),
     '7':  Math.max(0, Math.min(0.6, p * 2.5 - 0.4)),
     '10': Math.max(0, Math.min(0.6, p * 2.5 - 1.1)),
     '11': Math.max(0, p * 1.4 - 0.8),
+    '12': Math.max(0, p * 1.4 - 1.1),
   };
 }
 
 // Grade bracket for class-based mode
 function chalGradeForLevel(level) {
-  if (level <= 15) return '6';
-  if (level <= 30) return '7';
-  if (level <= 45) return '10';
-  return '11';
+  if (level <= 8)  return '5';
+  if (level <= 20) return '6';
+  if (level <= 35) return '7';
+  if (level <= 48) return '10';
+  if (level <= 58) return '11';
+  return '12';
 }
 
 // Pick a random grade according to weights
@@ -11126,7 +11130,7 @@ function chalPickQuestion() {
     }
   } else if (CH.mode === 'school') {
     if (CH.hardMode) {
-      candidates = CH.pool; // bereits auf Kl. 10+11 gefiltert
+      candidates = CH.pool; // bereits auf Kl. 10–12 gefiltert
     } else {
       const targetGrade = chalGradeForLevel(CH.level);
       candidates = CH.pool.filter(q => q._grade === targetGrade);
@@ -11680,8 +11684,8 @@ function chalSelectSource(source) {
 }
 
 function chalPopulateSchoolGradeList(hard) {
-  const grades = hard ? ['10','11'] : CHAL_GRADE_ORDER;
-  const gradeLabels = { '6':'Klasse 6','7':'Klasse 7','10':'Klasse 10','11':'Klasse 11' };
+  const grades = hard ? ['10','11','12'] : CHAL_GRADE_ORDER;
+  const gradeLabels = { '5':'Klasse 5','6':'Klasse 6','7':'Klasse 7','10':'Klasse 10','11':'Klasse 11','12':'Klasse 12' };
   const list = document.getElementById('chal-school-grade-list');
   list.innerHTML = '';
   grades.forEach(g => {
