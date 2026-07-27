@@ -124,19 +124,10 @@ async function main() {
     if (!fs.existsSync(filepath)) { console.warn('FEHLT:', filename); continue; }
 
     const local = JSON.parse(fs.readFileSync(filepath, 'utf8'));
-    const existing = await fbLoad(subj, subcat, grade);
-    const existingTexts = new Set(existing.map(q => q.question));
-
-    const newQs = local.filter(q => !existingTexts.has(q.question));
-    const merged = existing.concat(newQs);
-
-    if (newQs.length > 0) {
-      await fbSave(subj, subcat, grade, merged);
-      console.log(`  ${filename}: +${newQs.length} neu → ${merged.length} gesamt`);
-      totalNew += newQs.length;
-    } else {
-      console.log(`  ${filename}: 0 neu (${existing.length} bereits vorhanden)`);
-    }
+    // Force-Overwrite: balancierte Versionen ersetzen alte Firebase-Daten
+    await fbSave(subj, subcat, grade, local);
+    console.log(`  ${filename}: ${local.length} Fragen überschrieben`);
+    totalNew += local.length;
   }
 
   console.log(`\nFertig. ${totalNew} neue Fragen importiert.`);
