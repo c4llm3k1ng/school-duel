@@ -1109,21 +1109,9 @@ Deutschland</p>
   <div class="logo large"><span class="s">School</span> <span class="d">Duel</span></div>
   <div class="tagline">Lerne spielend – fordere dein Wissen heraus</div>
   <div id="offline-banner" class="offline-banner">✈️ Offline-Modus – nur Kataloge &amp; lokale Spiele verfügbar</div>
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-    <div style="display:flex;align-items:center;gap:8px;">
-      <button class="hamburger-btn" onclick="openDrawer()" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
-      <div id="user-badge" class="user-badge" style="display:none;" onclick="openProfileModal()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-    </div>
-    <div style="display:flex;gap:8px;">
-      <button class="top-set-btn" onclick="openSettingsModal()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Einstellungen</button>
-    </div>
-  </div>
-
-  <div class="nav-tabs">
-    <div class="nav-tab active" id="tab-btn-spielen" onclick="switchTab('spielen')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.544-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.152A4 4 0 0 0 17.32 5z"/></svg>Spielen</div>
-    <div class="nav-tab"        id="tab-btn-catalog"  onclick="switchTab('catalog')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Kataloge</div>
-    <div class="nav-tab"        id="tab-btn-library"  onclick="switchTab('library')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Bibliothek</div>
-    <div class="nav-tab"        id="tab-btn-practice" onclick="switchTab('practice')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>Üben</div>
+  <div style="display:flex;align-items:center;margin-bottom:16px;">
+    <button class="hamburger-btn" onclick="openDrawer()" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    <div id="user-badge" class="user-badge" style="display:none;margin-left:8px;" onclick="openProfileModal()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
   </div>
 
   <div id="spielen-back-arrow" class="nav-back-arrow" style="display:none;" onclick="goBackOneStep()" title="Einen Schritt zurück"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></div>
@@ -11779,9 +11767,10 @@ function leaveOnlineRoom() {
 // HAMBURGER DRAWER
 // ═══════════════════════════════════════════════════════
 function openDrawer() {
-  const activeTab = ['spielen','catalog','library','practice'].find(t =>
-    document.getElementById('tab-btn-' + t)?.classList.contains('active')
-  );
+  const activeTab = ['spielen','catalog','library','practice'].find(t => {
+    const el = document.getElementById('tab-' + t);
+    return el && el.style.display !== 'none';
+  }) || 'spielen';
   ['spielen','catalog','library','practice'].forEach(t => {
     document.getElementById('drawer-item-' + t)?.classList.toggle('active', t === activeTab);
   });
