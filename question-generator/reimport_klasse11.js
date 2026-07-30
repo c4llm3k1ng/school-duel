@@ -27,7 +27,7 @@ const PATHS = [
   ['Physik',          'Mechanik',          'klasse11_Physik_Mechanik.json'                   ],
   ['Physik',          'Optik',             'klasse11_Physik_Optik.json'                      ],
   ['Physik',          'Atomphysik',        'klasse11_Physik_Atomphysik.json'                 ],
-  ['Physik',          'Elektrizität',      'klasse11_Physik_Elektrizit_t.json'               ],
+  ['Physik',          'Elektrizität',      'klasse11_Physik_Elektrizität.json'               ],
   ['Englisch',        'Grammatik',         'klasse11_Englisch_Grammatik.json'                ],
   ['Allgemeinwissen', 'Geographie',        'klasse11_Allgemeinwissen_Geographie.json'        ],
   ['Allgemeinwissen', 'Musik & Kunst',     'klasse11_Allgemeinwissen_Musik___Kunst.json'     ],
