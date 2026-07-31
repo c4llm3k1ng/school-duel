@@ -88,7 +88,14 @@ async function fbLoad(subj, subcat, grade) {
   const res = await fetch(url);
   const data = await res.json();
   if (!res.ok) throw new Error('GET failed: ' + JSON.stringify(data));
-  return Array.isArray(data) ? data : (data ? Object.values(data) : []);
+  // Objekt-Format {questions,...} ist der Normalfall. Ein rohes Array ist
+  // Altbestand aus der fehlerhaften Skriptversion und wird hier mitgelesen,
+  // damit der naechste Save es ins richtige Format ueberfuehrt.
+  // NIEMALS Object.values(data) - das wuerde aus einem korrekten Objekt
+  // [questionsArray, subject, subcategory, grade, updatedAt] machen.
+  if (data && Array.isArray(data.questions)) return data.questions;
+  if (Array.isArray(data)) return data;
+  return [];
 }
 
 async function fbSave(subj, subcat, grade, questions) {
@@ -97,7 +104,9 @@ async function fbSave(subj, subcat, grade, questions) {
   const res = await fetch(url, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(questions)
+    // Die App (loadFromQuestionBank / loadMixFromBank in school-duel.html)
+    // erwartet ein Objekt mit questions-Array + Metadaten, KEIN rohes Array.
+    body: JSON.stringify({ questions, subject: subj, subcategory: subcat, grade, updatedAt: Date.now() })
   });
   const data = await res.json();
   if (!res.ok) throw new Error('PUT failed: ' + JSON.stringify(data));
@@ -125,9 +134,13 @@ async function main() {
 
     const local = JSON.parse(fs.readFileSync(filepath, 'utf8'));
     const existing = await fbLoad(subj, subcat, grade);
-    const existingTexts = new Set(existing.map(q => q.question));
+    // Schluessel = Fragetext + Optionen. Nur der Fragetext reicht NICHT:
+    // es gibt viele verschiedene Fragen mit identischem Fragetext
+    // (z.B. 12x 'Welche Schreibweise ist korrekt?' in Klasse 6, block06).
+    const qKey = q => q.question + '||' + JSON.stringify(q.options);
+    const existingKeys = new Set(existing.map(qKey));
 
-    const newQs = local.filter(q => !existingTexts.has(q.question));
+    const newQs = local.filter(q => !existingKeys.has(qKey(q)));
     const merged = existing.concat(newQs);
 
     if (newQs.length > 0) {
