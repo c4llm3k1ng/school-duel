@@ -7326,33 +7326,54 @@ async function loadQuestions() {
   const grade  = G.mode === 'solo' ? G.grade       : G.dGrade;
   const subj   = G.mode === 'solo' ? G.subject     : G.dSubject;
   const subcat = G.mode === 'solo' ? G.subcategory : G.dSubcategory;
-  if (subcat) {
-    const banked = await loadFromQuestionBank(grade, subj, subcat);
+
+  // grade/subj/subcat sind Mehrfachauswahl-Arrays. Ungeprüft an qbPath gereicht,
+  // macht die String-Koersion daraus Müllpfade wie "klasse12,11": die Bank wird
+  // nie gefunden (immer KI-Generierung statt Bibliothek) und der Hintergrund-
+  // Nachschub schreibt in einen Pfad, den kein Leser je abfragt.
+  const asArr = v => Array.isArray(v) ? v : (v == null || v === '' ? [] : [v]);
+  const gArr = asArr(grade), sArr = asArr(subj), cArr = asArr(subcat);
+  const isMixed = [...gArr, ...sArr, ...cArr].includes('gemischt');
+  const isMulti = gArr.length > 1 || sArr.length > 1 || cArr.length > 1;
+
+  // Mehrfach-/Mischauswahl hat keinen einzelnen Bank-Pfad – loadMixFromBank
+  // filtert stattdessen über die gesamte Bank.
+  if (isMixed || isMulti) {
+    const mix = await loadMixFromBank(PER_ROUND, { subj: sArr, grade: gArr, subcat: cArr });
+    if (mix && mix.length >= PER_ROUND) {
+      document.getElementById('loading-text').textContent = '📖 Aus Bibliothek geladen…';
+      return mix;
+    }
+  }
+
+  const grade1 = gArr[0], subj1 = sArr[0], subcat1 = cArr[0];
+  if (!isMixed && !isMulti && subcat1) {
+    const banked = await loadFromQuestionBank(grade1, subj1, subcat1);
     const poolSize = banked ? banked.length : 0;
     if (poolSize >= PER_ROUND) {
       document.getElementById('loading-text').textContent = '📖 Aus Bibliothek geladen…';
 
       // Pick 8 unplayed questions first
-      const played = getPlayedSet(grade, subj, subcat);
+      const played = getPlayedSet(grade1, subj1, subcat1);
       const unplayed = banked.filter(q => !played.has(q.question.slice(0, 80)));
       let toPlay;
       if (unplayed.length >= PER_ROUND) {
         toPlay = unplayed.sort(() => Math.random() - .5).slice(0, PER_ROUND);
       } else {
         // All played → reset and start over
-        resetPlayedSet(grade, subj, subcat);
+        resetPlayedSet(grade1, subj1, subcat1);
         toPlay = banked.sort(() => Math.random() - .5).slice(0, PER_ROUND);
         showToast('Alle ' + poolSize + ' Fragen gespielt – von vorne!', '');
       }
-      addToPlayedSet(grade, subj, subcat, toPlay);
-      toPlay = toPlay.map(q => ({ ...q, _grade: grade, _subject: subj, _subcategory: subcat }));
+      addToPlayedSet(grade1, subj1, subcat1, toPlay);
+      toPlay = toPlay.map(q => ({ ...q, _grade: grade1, _subject: subj1, _subcategory: subcat1 }));
 
       // Background: generate more if pool < 800
       if (poolSize < QB_MAX) {
         const diff = G.mode === 'solo' ? G.difficulty : G.dDifficulty;
         setTimeout(() => {
-          _fetchQuestions(grade, subj, subcat, diff)
-            .then(qs => saveToQuestionBank(grade, subj, subcat, qs))
+          _fetchQuestions(grade1, subj1, subcat1, diff)
+            .then(qs => saveToQuestionBank(grade1, subj1, subcat1, qs))
             .catch(() => {});
         }, 500);
       }
