@@ -76,7 +76,7 @@
     "options": [
       "unmöglich",
       "sicher",
-      "unwahrscheinlich",
+      "möglich",
       "zufällig"
     ],
     "correct": 1,
@@ -110,10 +110,10 @@
   {
     "question": "Beim Ziehen MIT Zurücklegen bleibt die Wahrscheinlichkeit von Zug zu Zug …",
     "options": [
-      "sie steigt",
-      "sie sinkt",
+      "größer",
+      "kleiner",
       "gleich",
-      "null"
+      "unbekannt"
     ],
     "correct": 2,
     "explanation": "Da die Kugel zurückgelegt wird, ändert sich die Zusammensetzung nicht.",
@@ -135,8 +135,8 @@
     "question": "Das Gegenereignis zu mindestens eine 6 (bei mehreren Würfen) ist …",
     "options": [
       "genau eine 6",
-      "keine 6",
-      "alle 6",
+      "keine einzige 6",
+      "jedes Mal eine 6",
       "höchstens eine 6"
     ],
     "correct": 1,
@@ -146,10 +146,10 @@
   {
     "question": "Wie berechnet man die Wahrscheinlichkeit des Gegenereignisses?",
     "options": [
-      "P(A)",
+      "1 / P(A)",
       "1 − P(A)",
       "1 + P(A)",
-      "P(A)²"
+      "P(A) − 1"
     ],
     "correct": 1,
     "explanation": "P(Gegenereignis) = 1 − P(A).",
@@ -173,7 +173,7 @@
       "n · p",
       "p / n",
       "n + p",
-      "n · p · (1 − p)"
+      "n² · p"
     ],
     "correct": 0,
     "explanation": "Der Erwartungswert ist E(X) = n · p.",
@@ -182,10 +182,10 @@
   {
     "question": "Wie lautet die Varianz einer Binomialverteilung?",
     "options": [
-      "n · p",
+      "n · p · (n − 1)",
       "n · p · (1 − p)",
-      "p",
-      "n² · p"
+      "n · (p − 1) · p",
+      "n² · p · (1 − p)"
     ],
     "correct": 1,
     "explanation": "Die Varianz ist Var(X) = n · p · (1 − p).",
@@ -194,10 +194,10 @@
   {
     "question": "Wie viele mögliche Ausgänge hat ein Bernoulli-Experiment?",
     "options": [
-      "einen",
-      "zwei",
-      "drei",
-      "unendlich viele"
+      "genau einen",
+      "genau zwei",
+      "genau drei",
+      "beliebig viele"
     ],
     "correct": 1,
     "explanation": "Ein Bernoulli-Experiment hat genau zwei Ausgänge (Treffer/Niete).",
@@ -207,9 +207,9 @@
     "question": "Wann heißen zwei Ereignisse unabhängig?",
     "options": [
       "wenn P(A∩B) = P(A) · P(B)",
-      "wenn P(A) = P(B)",
+      "wenn P(A∪B) = P(A) + P(B)",
       "wenn sie sich ausschließen",
-      "wenn P(A) + P(B) = 1"
+      "wenn P(A) + P(B) stets 1 ist"
     ],
     "correct": 0,
     "explanation": "Unabhängigkeit: P(A∩B) = P(A) · P(B).",
@@ -220,7 +220,7 @@
     "options": [
       "unabhängig",
       "unvereinbar (disjunkt)",
-      "sicher",
+      "komplementär",
       "gleich wahrscheinlich"
     ],
     "correct": 1,
@@ -230,10 +230,10 @@
   {
     "question": "Was beschreibt der Erwartungswert E(X) anschaulich?",
     "options": [
-      "den häufigsten Wert",
+      "den am häufigsten auftretenden Wert",
       "den im Mittel zu erwartenden Wert",
-      "den größten Wert",
-      "die Streuung"
+      "den größtmöglichen Ausgangswert",
+      "die Streubreite aller Messwerte"
     ],
     "correct": 1,
     "explanation": "Der Erwartungswert ist der durchschnittlich zu erwartende Wert.",
@@ -290,10 +290,10 @@
   {
     "question": "Was ist die Spannweite eines Datensatzes?",
     "options": [
-      "der Mittelwert",
+      "der arithmetische Mittelwert",
       "größter Wert minus kleinster Wert",
-      "der Median",
-      "die Summe"
+      "der Medianwert der Daten",
+      "die Gesamtsumme aller Werte"
     ],
     "correct": 1,
     "explanation": "Spannweite = Maximum − Minimum.",
@@ -314,10 +314,10 @@
   {
     "question": "Was gilt für die Ergebnisse eines Laplace-Experiments?",
     "options": [
-      "sie sind unmöglich",
+      "sie treten mit Sicherheit nie ein",
       "sie sind alle gleich wahrscheinlich",
-      "sie sind voneinander abhängig",
-      "sie sind unbekannt"
+      "sie beeinflussen sich gegenseitig",
+      "sie sind zu Beginn völlig unbekannt"
     ],
     "correct": 1,
     "explanation": "Beim Laplace-Experiment sind alle Ergebnisse gleich wahrscheinlich.",
@@ -327,9 +327,9 @@
     "question": "Wie berechnet man die Laplace-Wahrscheinlichkeit?",
     "options": [
       "günstige Ergebnisse / mögliche Ergebnisse",
-      "mögliche / günstige",
-      "günstige · mögliche",
-      "günstige + mögliche"
+      "mögliche Ergebnisse / günstige Ergebnisse",
+      "günstige Ergebnisse · mögliche Ergebnisse",
+      "günstige Ergebnisse + mögliche Ergebnisse"
     ],
     "correct": 0,
     "explanation": "P = Anzahl günstiger Ergebnisse / Anzahl möglicher Ergebnisse.",
@@ -352,8 +352,8 @@
     "options": [
       "die Anzahl der Anordnungen mit Reihenfolge",
       "die Anzahl der Auswahlen ohne Reihenfolge",
-      "die Fakultät von n",
-      "eine Wahrscheinlichkeit"
+      "das Produkt aller natürlichen Zahlen bis n",
+      "die Wahrscheinlichkeit bei n Zufallsversuchen"
     ],
     "correct": 1,
     "explanation": "Der Binomialkoeffizient zählt Auswahlen von k aus n ohne Beachtung der Reihenfolge.",
@@ -362,10 +362,10 @@
   {
     "question": "Wobei hilft ein Baumdiagramm?",
     "options": [
-      "beim Messen von Längen",
+      "beim präzisen Messen geometrischer Längen",
       "beim Darstellen mehrstufiger Zufallsexperimente",
-      "beim Lösen von Gleichungen",
-      "beim Zeichnen von Funktionen"
+      "beim schrittweisen Lösen von Gleichungen",
+      "beim genauen Zeichnen von Funktionsgraphen"
     ],
     "correct": 1,
     "explanation": "Baumdiagramme veranschaulichen mehrstufige Zufallsexperimente.",
@@ -434,10 +434,10 @@
   {
     "question": "Was bedeutet eine kleine Standardabweichung?",
     "options": [
-      "die Werte streuen stark",
+      "die Werte streuen weit um den Mittelwert",
       "die Werte liegen eng um den Mittelwert",
-      "die Werte sind alle 0",
-      "die Werte werden größer"
+      "alle Datenwerte sind identisch gleich null",
+      "die Werte nehmen stetig größere Beträge an"
     ],
     "correct": 1,
     "explanation": "Eine kleine Standardabweichung bedeutet geringe Streuung um den Mittelwert.",
@@ -470,10 +470,10 @@
   {
     "question": "Welcher Größe nähert sich die relative Häufigkeit bei sehr vielen Versuchen an (Gesetz der großen Zahlen)?",
     "options": [
-      "der Varianz",
+      "der Varianz der Daten",
       "der Wahrscheinlichkeit",
-      "der Spannweite",
-      "der Summe"
+      "der Spannweite selbst",
+      "der Summe der Werte"
     ],
     "correct": 1,
     "explanation": "Nach dem Gesetz der großen Zahlen nähert sich die relative Häufigkeit der Wahrscheinlichkeit an.",
