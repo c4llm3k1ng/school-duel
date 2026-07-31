@@ -15,7 +15,7 @@
   },
   {
     "question": "Was ist die Hauptstadt und zugleich das bevölkerungsreichste Bundesland Deutschlands?",
-    "options": ["Hamburg", "München (Bayern)", "Berlin", "Köln (NRW)"],
+    "options": ["Hamburg", "München", "Berlin", "Köln"],
     "correct": 2,
     "explanation": "Berlin ist Bundeshauptstadt (ca. 3,7 Mio. Einwohner) und gleichzeitig Bundesland. Das bevölkerungsreichste Bundesland ist aber Nordrhein-Westfalen (NRW, ca. 18 Mio. Einwohner).",
     "topic": "Bundesländer"
@@ -43,21 +43,21 @@
   },
   {
     "question": "In welche Richtung fließt die Donau?",
-    "options": ["Nach Norden in die Nordsee", "Nach Westen in den Rhein", "Nach Osten in das Schwarze Meer", "Nach Süden in das Mittelmeer"],
+    "options": ["Nach Norden in die Nordsee", "Nach Westen in den Oberrhein", "Nach Osten in das Schwarze Meer", "Nach Süden in das Mittelmeer"],
     "correct": 2,
     "explanation": "Die Donau entspringt im Schwarzwald (Zusammenfluss von Brigach und Breg), fließt nach Osten durch Österreich, die Slowakei, Ungarn, Kroatien, Serbien, Rumänien und Bulgarien und mündet ins Schwarze Meer.",
     "topic": "Flüsse"
   },
   {
     "question": "Welches Gebirge bildet die Grenze zwischen Deutschland und Österreich?",
-    "options": ["Schwarzwald", "Erzgebirge", "Alpen (Bayerische Alpen)", "Harz"],
+    "options": ["Schwarzwald", "Erzgebirge", "Alpen", "Harz"],
     "correct": 2,
     "explanation": "Die Alpen im Süden Deutschlands (Bayerische Alpen) bilden die Grenze zu Österreich. Höchster Berg Deutschlands: die Zugspitze (2.962 m) im Wettersteingebirge in Bayern.",
     "topic": "Gebirge"
   },
   {
     "question": "Was ist die Zugspitze?",
-    "options": ["Höchster Berg der Alpen", "Höchster Berg Deutschlands mit 2.962 m", "Höchster Berg Österreichs", "Ein Pass in den Alpen"],
+    "options": ["Höchster Berg der Alpen mit 4.810 m", "Höchster Berg Deutschlands mit 2.962 m", "Höchster Berg Österreichs mit 3.798 m", "Höchster Alpenpass Bayerns mit 1.507 m"],
     "correct": 1,
     "explanation": "Die Zugspitze (2.962 m) ist der höchste Berg Deutschlands, liegt auf der Grenze zu Österreich. Auf dem Gipfel gibt es Gletscherreste, ein Wetterstationsgebäude und ist per Seilbahn erreichbar.",
     "topic": "Gebirge"
@@ -71,28 +71,28 @@
   },
   {
     "question": "Was ist der Schwarzwald?",
-    "options": ["Ein Wald in der Nähe von Berlin", "Ein Mittelgebirge in Baden-Württemberg, bekannt für Tannen, den Feldberg und Kuckucksuhren", "Ein Küstengebiet an der Nordsee", "Ein Gebirge in Bayern"],
+    "options": ["Ein ausgedehntes Waldgebiet südöstlich von Berlin", "Ein Mittelgebirge im Südwesten Baden-Württembergs", "Ein bewaldetes Küstengebiet an der schleswigschen Nordsee", "Ein Hochgebirgszug im Süden Bayerns bei Berchtesgaden"],
     "correct": 1,
     "explanation": "Der Schwarzwald in Baden-Württemberg ist ein dichtes Mittelgebirge. Höchster Gipfel: Feldberg (1.493 m). Bekannt für Schwarzwälder Kirschtorte, Kuckucksuhren, den Rhein als westliche Grenze.",
     "topic": "Gebirge"
   },
   {
     "question": "An welchen Meeren liegt Deutschland?",
-    "options": ["Nur an der Nordsee", "Nordsee und Ostsee", "Nur an der Ostsee", "An Nordsee, Ostsee und Mittelmeer"],
+    "options": ["An der Nordsee und am Ärmelkanal", "An der Nordsee und an der Ostsee", "An der Ostsee und am Schwarzen Meer", "An der Nordsee, der Ostsee und dem Mittelmeer"],
     "correct": 1,
     "explanation": "Deutschland hat Küsten an der Nordsee (im Nordwesten: Schleswig-Holstein, Niedersachsen) und der Ostsee (im Nordosten: Schleswig-Holstein, Mecklenburg-Vorpommern). Größte Nordseeinseln: Sylt, Föhr, Borkum.",
     "topic": "Küsten und Gewässer"
   },
   {
     "question": "Was ist das Wattenmeer?",
-    "options": ["Ein Sumpfgebiet in Bayern", "Eine flache Gezeitenzone an der deutschen Nordseeküste, UNESCO-Weltnaturerbe", "Ein Binnengewässer", "Ein Fluss in Niedersachsen"],
+    "options": ["Ein weites Moor- und Sumpfgebiet im bayerischen Donautal", "Eine flache Gezeitenzone an der deutschen Nordseeküste", "Ein abflussloses Binnengewässer in der Mecklenburgischen Seenplatte", "Ein breiter Mündungsarm der Weser im nördlichen Niedersachsen"],
     "correct": 1,
     "explanation": "Das Wattenmeer (zwischen Niederlanden, Deutschland, Dänemark) ist das größte zusammenhängende Wattgebiet der Welt. Bei Ebbe trockenfällt, bei Flut überflutet. Heimat von Vögeln, Robben und einzigartigen Ökosystemen. Nationalpark.",
     "topic": "Küsten und Gewässer"
   },
   {
     "question": "Was ist der Bodensee?",
-    "options": ["Ein Stausee im Schwarzwald", "Der größte Binnensee Deutschlands (geteilt mit Österreich und Schweiz)", "Ein Meeresarm der Nordsee", "Ein See in Berlin"],
+    "options": ["Ein Stausee im südlichen Schwarzwald bei Titisee-Neustadt", "Der größte Binnensee Deutschlands an der Grenze zur Schweiz", "Eine flache Bucht der Nordsee bei Cuxhaven in Niedersachsen", "Der größte der Havelseen im Südwesten von Berlin und Potsdam"],
     "correct": 1,
     "explanation": "Der Bodensee (Dreiländersee) liegt an der Grenze von Deutschland (Baden-Württemberg, Bayern), Österreich und der Schweiz. Ca. 536 km², Trinkwasser für Millionen Menschen. Der Rhein durchfließt ihn.",
     "topic": "Küsten und Gewässer"
@@ -120,49 +120,49 @@
   },
   {
     "question": "In welchem Bundesland liegt die Hauptstadt Berlin?",
-    "options": ["Brandenburg", "Sachsen-Anhalt", "Berlin ist selbst ein Bundesland", "Sachsen"],
+    "options": ["In Brandenburg, das die Stadt umschließt", "In Sachsen-Anhalt, im Osten des Landes", "In keinem, denn Berlin ist selbst ein Bundesland", "In Mecklenburg-Vorpommern, im Süden des Landes"],
     "correct": 2,
     "explanation": "Berlin ist ein Stadtstaat – gleichzeitig Stadt und Bundesland. Es liegt geografisch im Bundesland Brandenburg, das es umgibt. Seit 1990 (Wiedervereinigung) wieder Hauptstadt Deutschlands.",
     "topic": "Bundesländer"
   },
   {
     "question": "Welches Bundesland grenzt im Osten an Polen?",
-    "options": ["Bayern und Thüringen", "Sachsen und Mecklenburg-Vorpommern", "Brandenburg und Sachsen-Anhalt", "Sachsen, Brandenburg und Mecklenburg-Vorpommern"],
+    "options": ["Bayern, Thüringen und Sachsen-Anhalt", "Sachsen, Mecklenburg-Vorpommern und Schleswig-Holstein", "Brandenburg, Sachsen-Anhalt und Thüringen", "Sachsen, Brandenburg und Mecklenburg-Vorpommern"],
     "correct": 3,
     "explanation": "Die Oder-Neiße-Linie bildet die Ostgrenze Deutschlands zu Polen. Die Bundesländer, die an Polen grenzen: Mecklenburg-Vorpommern (Norden), Brandenburg (Mitte, mit Berlin), Sachsen (Süden).",
     "topic": "Bundesländer"
   },
   {
     "question": "Was ist das Ruhrgebiet?",
-    "options": ["Ein Flusstal in Bayern", "Ein Mittelgebirge im Sauerland", "Eine dicht besiedelte Industrieregion in NRW (Essen, Dortmund, Bochum, Duisburg)", "Ein Naturschutzgebiet an der Ruhr"],
+    "options": ["Ein enges Flusstal im Süden Bayerns nahe der Donau", "Ein bewaldetes Mittelgebirge im südlichen Niedersachsen", "Eine dicht besiedelte Industrieregion in Nordrhein-Westfalen", "Ein großes Naturschutzgebiet an der oberen Ruhr im Sauerland"],
     "correct": 2,
     "explanation": "Das Ruhrgebiet ist eine der bevölkerungsreichsten Regionen Deutschlands mit ca. 5 Mio. Einwohnern. Früher: Kohle- und Stahlproduktion. Heute: Strukturwandel zu Dienstleistungen, Kultur (Zeche Zollverein, Weltkulturerbe).",
     "topic": "Regionen"
   },
   {
     "question": "Wo entspringt die Donau?",
-    "options": ["In den Bayerischen Alpen", "Im Bayerischen Wald", "Im Schwarzwald (Zusammenfluss von Brigach und Breg in Donaueschingen)", "Im Erzgebirge"],
+    "options": ["In den Bayerischen Alpen bei Garmisch", "Im Bayerischen Wald bei Passau", "Im Schwarzwald bei Donaueschingen", "Im Erzgebirge bei Oberwiesenthal"],
     "correct": 2,
     "explanation": "Die Donau entspringt offiziell in Donaueschingen (Baden-Württemberg) am Zusammenfluss von Brigach und Breg. Sie ist mit 2.860 km der zweitlängste Fluss Europas und der längste, der ausschließlich durch Europa fließt.",
     "topic": "Flüsse"
   },
   {
     "question": "Was ist das Erzgebirge?",
-    "options": ["Ein Gebirge in Bayern", "Ein Mittelgebirge an der Grenze zu Tschechien (Sachsen/Thüringen) – bekannt für Bergbau und Weihnachtsbräuche", "Ein Gebirge in der Eifel", "Ein Küstengebirge an der Ostsee"],
+    "options": ["Ein Hochgebirgszug im Süden Bayerns bei Berchtesgaden", "Ein Mittelgebirge in Sachsen an der Grenze zu Tschechien", "Ein bewaldetes Mittelgebirge in der Eifel westlich von Koblenz", "Ein Höhenzug an der Ostseeküste auf der Insel Rügen"],
     "correct": 1,
     "explanation": "Das Erzgebirge (griech.: Erzberg) liegt in Sachsen und Thüringen (Grenze zu Tschechien). Höchster Punkt: Klínovec (Tschechien)/Fichtelberg (1.215 m, Sachsen). Bergbaugeschichte (Silber, Uran), Holzschnitzerei, Räuchermännchen.",
     "topic": "Gebirge"
   },
   {
     "question": "Was ist die Norddeutsche Tiefebene?",
-    "options": ["Eine Küstenregion", "Das großräumige, flache Tiefland im Norden Deutschlands, das sich von der Nordsee bis zur Ostsee erstreckt", "Ein Nationalpark", "Ein Gebirge"],
+    "options": ["Ein schmaler Küstenstreifen an der deutschen Nordseeküste", "Das eiszeitlich geformte Flachland im Norden Deutschlands", "Ein großer Nationalpark im Osten Mecklenburg-Vorpommerns", "Ein bewaldetes Mittelgebirge im südlichen Niedersachsen"],
     "correct": 1,
     "explanation": "Die Norddeutsche Tiefebene ist sehr flach (eiszeitlich geformt, Moränen, Seen). Wichtige Städte: Hamburg, Bremen, Hannover, Rostock. Großer Anteil an Landwirtschaft. Teil der Mitteleuropäischen Tiefebene.",
     "topic": "Regionen"
   },
   {
     "question": "Was ist das Mittelrheintal?",
-    "options": ["Ein Tal in der Schweiz", "Das enge, romantische Rheintal zwischen Bingen und Koblenz mit Burgen und Weinbergen – UNESCO-Welterbe", "Ein Tal im Schwarzwald", "Ein Industriegebiet am Rhein"],
+    "options": ["Ein Talabschnitt des Rheins in der Schweiz bei Chur", "Das enge Rheintal zwischen Bingen und Koblenz", "Das Tal der Kinzig im mittleren Schwarzwald", "Ein Industriegebiet am Rhein bei Duisburg"],
     "correct": 1,
     "explanation": "Das Oberes Mittelrheintal (65 km) ist UNESCO-Weltkulturerbe seit 2002. Bekannt für: Lorelei-Felsen, über 40 Burgen und Schlösser, steile Weinberge (Riesling), romantische Rheingau-Landschaft.",
     "topic": "Regionen"
@@ -176,7 +176,7 @@
   },
   {
     "question": "Was ist der Main?",
-    "options": ["Ein Nebenfluss der Elbe", "Ein Nebenfluss des Rheins, der durch Frankfurt fließt", "Ein Fluss in Bayern, der in die Donau mündet", "Ein Kanal in Norddeutschland"],
+    "options": ["Ein Nebenfluss der Elbe, der durch Magdeburg fließt", "Ein Nebenfluss des Rheins, der durch Frankfurt fließt", "Ein Nebenfluss der Donau, der durch Regensburg fließt", "Ein Nebenfluss der Weser, der durch Hameln fließt"],
     "correct": 1,
     "explanation": "Der Main ist ein rechter Nebenfluss des Rheins. Er entspringt in Bayern (Fichtelgebirge), fließt durch Bamberg, Würzburg und Frankfurt am Main und mündet bei Mainz in den Rhein.",
     "topic": "Flüsse"
@@ -190,7 +190,7 @@
   },
   {
     "question": "Was ist die Eifel?",
-    "options": ["Ein Gebirge in Bayern", "Ein vulkanisch geprägtes Mittelgebirge in Rheinland-Pfalz und NRW mit Maaren (Vulkankraterseen)", "Ein Küstengebiet", "Ein Waldgebiet in Sachsen"],
+    "options": ["Ein Hochgebirgszug im Süden Bayerns an der Grenze zu Tirol", "Ein vulkanisch geprägtes Mittelgebirge westlich des Rheins", "Ein flaches Küstengebiet an der Ostsee in Schleswig-Holstein", "Ein ausgedehntes Waldgebiet im Osten Sachsens bei Bautzen"],
     "correct": 1,
     "explanation": "Die Eifel liegt in Rheinland-Pfalz und NRW (Grenze zu Belgien/Luxemburg). Charakteristisch: Maare (vulkanische Kraterseen, z.B. Laacher See), Vulkankuppen. Nationalpark Eifel. Deutsche Spielkarte 'Eiffel' = Verwechslung mit Eiffelturm.",
     "topic": "Regionen"
@@ -204,28 +204,28 @@
   },
   {
     "question": "Was ist die Weser?",
-    "options": ["Ein Fluss in NRW", "Ein Fluss, der durch Hannover fließt und in die Nordsee mündet", "Ein Nebenfluss der Elbe", "Ein Fluss, der aus der Schweiz kommt"],
+    "options": ["Ein Fluss, der durch Dresden fließt und in die Nordsee mündet", "Ein Fluss, der durch Bremen fließt und in die Nordsee mündet", "Ein Nebenfluss der Elbe, der bei Magdeburg in diese mündet", "Ein Fluss, der in der Schweiz entspringt und durch Basel fließt"],
     "correct": 1,
     "explanation": "Die Weser entsteht aus dem Zusammenfluss von Werra und Fulda (Hannoversch Münden). Fließt durch Minden, Bremen und mündet bei Bremerhaven in die Nordsee. Ca. 452 km lang. Sagenhafter Rattenfänger: Hameln an der Weser.",
     "topic": "Flüsse"
   },
   {
     "question": "Was ist das Bayerische Alpenvorland?",
-    "options": ["Ein Teil der Alpen", "Die hügelige Landschaft zwischen Alpen und Donau mit Seen und Mooren", "Ein Gebirge in Bayern", "Die Ebene nördlich von München bis Berlin"],
+    "options": ["Der nördliche Hauptkamm der Alpen im Berchtesgadener Land", "Die hügelige Landschaft zwischen den Alpen und der Donau", "Ein Mittelgebirge im Osten Bayerns an der Grenze zu Tschechien", "Die flache Ebene nördlich von München bis nach Nürnberg"],
     "correct": 1,
     "explanation": "Das Alpenvorland (Oberbayern/Niederbayern) liegt zwischen Alpen im Süden und Donau im Norden. Geprägt von Eiszeitresten: Seen (Chiemsee, Tegernsee, Starnberger See), Moore, Schotterebenen.",
     "topic": "Regionen"
   },
   {
     "question": "Welche deutschen Bundesländer grenzen an Frankreich?",
-    "options": ["Bayern und Hessen", "Baden-Württemberg und Rheinland-Pfalz (und Saarland)", "NRW und Niedersachsen", "Sachsen und Thüringen"],
+    "options": ["Nordrhein-Westfalen, Hessen und Bayern", "Baden-Württemberg, Rheinland-Pfalz und Saarland", "Niedersachsen, Schleswig-Holstein und Bremen", "Sachsen, Thüringen und Mecklenburg-Vorpommern"],
     "correct": 1,
     "explanation": "Deutschland grenzt mit Baden-Württemberg, Rheinland-Pfalz und dem Saarland an Frankreich. Der Rhein bildet auf langen Abschnitten die Grenze. Straßburg (Elsass) liegt direkt gegenüber von Kehl (Baden).",
     "topic": "Bundesländer"
   },
   {
     "question": "Was ist Mecklenburg-Vorpommern bekannt für?",
-    "options": ["Bergbau und Industrie", "Seine Küste an der Ostsee, Rügen (größte deutsche Insel), Kreidefelsen und Seen", "Wein und Kultur", "Automobilindustrie"],
+    "options": ["Seinen Steinkohlebergbau und die Schwerindustrie im Binnenland", "Seine Ostseeküste, die Insel Rügen und die Mecklenburgische Seenplatte", "Seinen Weinbau an den Steilhängen der Mosel und alte Burgen", "Seine Automobilwerke und den Maschinenbau in den Großstädten"],
     "correct": 1,
     "explanation": "Mecklenburg-Vorpommern (Bundesland im Nordosten) hat Küsten an Ostsee und Bodden. Highlights: Rügen (Kreidefelsen, Nationalpark), Usedom, Seenplatte (Müritz-Nationalpark), Hansestädte Rostock und Stralsund.",
     "topic": "Bundesländer"
@@ -246,7 +246,7 @@
   },
   {
     "question": "Was sind die Nordseeinseln im Überblick?",
-    "options": ["Rügen, Usedom, Fehmarn", "Sylt, Föhr, Amrum, Pellworm (Nordfriesische Inseln) + Borkum, Norderney (Ostfriesische Inseln)", "Helgoland und Rügen", "Fehmarn und Usedom"],
+    "options": ["Rügen, Hiddensee, Usedom, Poel und Fehmarn", "Sylt, Föhr, Amrum, Borkum und Norderney", "Helgoland, Rügen, Fehmarn, Usedom und Sylt", "Fehmarn, Usedom, Rügen, Zingst und Poel"],
     "correct": 1,
     "explanation": "Nordfriesische Inseln (Schleswig-Holstein): Sylt, Föhr, Amrum, Pellworm. Ostfriesische Inseln (Niedersachsen): Borkum, Juist, Norderney, Langeoog, Spiekeroog, Wangerooge. Helgoland liegt als Hochseeinsel allein in der Nordsee.",
     "topic": "Küsten und Gewässer"

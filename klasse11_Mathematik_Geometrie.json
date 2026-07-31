@@ -109,12 +109,12 @@
   },
   {
     "correct": 0,
-    "explanation": "Eine Geradengleichung in Parameterform besteht aus einem Stützvektor (Ortsvektor eines Punktes auf der Geraden) und einem Richtungsvektor. Als Stützvektor kann $\\vec{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ gewählt werden. Als Richtungsvektor dient der Vektor $\\vec{AB} = \\vec{OB} - \\vec{OA} = \\begin{pmatrix} 3 \\\\ -2 \\\\ 1 \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$. Die korrekte Gleichung ist somit $\\vec{x} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$. Option C hat einen falschen Richtungsvektor (falsches Vorzeichen bei der y-Komponente).",
+    "explanation": "Eine Geradengleichung in Parameterform besteht aus einem Stützvektor (Ortsvektor eines Punktes auf der Geraden) und einem Richtungsvektor. Als Stützvektor kann $\\vec{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ gewählt werden. Als Richtungsvektor dient der Vektor $\\vec{AB} = \\vec{OB} - \\vec{OA} = \\begin{pmatrix} 3 \\\\ -2 \\\\ 1 \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$. Die korrekte Gleichung ist somit $\\vec{x} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$. Eine Variante mit dem Richtungsvektor $\\begin{pmatrix} 2 \\\\ 4 \\\\ 2 \\end{pmatrix}$ wäre falsch, weil das Vorzeichen der y-Komponente nicht stimmt.",
     "options": [
-      "A) $\\vec{x} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$",
-      "B) $\\vec{x} = \\begin{pmatrix} 3 \\\\ -2 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 4 \\\\ 0 \\\\ 4 \\end{pmatrix}$",
-      "C) $\\vec{x} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ 4 \\\\ 2 \\end{pmatrix}$",
-      "D) $\\vec{x} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix} + t \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$"
+      "$\\vec{x} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$",
+      "$\\vec{x} = \\begin{pmatrix} 3 \\\\ -2 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 4 \\\\ 0 \\\\ 4 \\end{pmatrix}$",
+      "$\\vec{x} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ 4 \\\\ 2 \\end{pmatrix}$",
+      "$\\vec{x} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix} + t \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$"
     ],
     "question": "Eine Gerade g verläuft durch die Punkte A(1|2|3) und B(3|-2|1). Welche der folgenden Geradengleichungen beschreibt g korrekt?",
     "topic": "Geradengleichungen in Parameterform"

@@ -2,10 +2,10 @@
   {
     "question": "Was ist ein Term in der Mathematik?",
     "options": [
-      "Ein Satz mit Wörtern",
-      "Sinnvoller mathematischer Ausdruck aus Zahlen, Variablen, Rechenzeichen und Klammern: 3x + 2, 5(a-1), x².",
-      "Eine Gleichung",
-      "Nur eine Zahl"
+      "Zwei durch ein Gleichheitszeichen verbundene Ausdrücke, deren Lösung gesucht wird",
+      "Rechenausdruck aus Zahlen, Variablen und Rechenzeichen ohne Gleichheitszeichen",
+      "Vergleich zweier Ausdrücke mit den Zeichen kleiner, größer oder ungleich",
+      "Einzelner Buchstabe, der stellvertretend für eine noch unbekannte Zahl steht"
     ],
     "correct": 1,
     "explanation": "Terme: Zahlen (7), Variablen (x), Produkte (3x), Summen (x+2). Kein Gleichheitszeichen. Terme können vereinfacht (zusammengefasst) werden. Wert eines Terms hängt von Variablenwert ab.",
@@ -14,10 +14,10 @@
   {
     "question": "Was ist eine Variable?",
     "options": [
-      "Eine feste Zahl",
-      "Buchstabe, der für eine (noch unbekannte) Zahl steht. Häufig: x, y, a, b, n. Der Wert kann sich ändern oder ist zu bestimmen.",
-      "Eine Rechenoperation",
-      "Ein Rechenzeichen"
+      "Feststehender Zahlenwert, der sich innerhalb einer Rechnung nie ändert",
+      "Buchstabe, der für eine unbekannte oder veränderliche Zahl steht",
+      "Zahlenfaktor, der unmittelbar vor einem Buchstaben notiert wird",
+      "Hochgestellte Zahl, die die Anzahl gleicher Faktoren angibt"
     ],
     "correct": 1,
     "explanation": "Variable: Platzhalter für Zahlen. In Gleichungen: unbekannter Wert (zu finden). In Formeln: allgemeine Größe (z.B. A = l × b). In Funktionen: veränderliche Größe. Terme mit Variablen: Terme.",
@@ -26,10 +26,10 @@
   {
     "question": "Was bedeutet \"einen Term vereinfachen\"?",
     "options": [
-      "Term mit Zahlen ausrechnen",
-      "Gleichartige Terme (gleiche Variable, gleicher Exponent) zusammenfassen: 3x + 5x = 8x; 2a + 3b - a = a + 3b.",
-      "Term in Gleichung umschreiben",
-      "Variable eliminieren"
+      "Für jede Variable eine Zahl einsetzen und den Zahlenwert des Terms ausrechnen",
+      "Gleichartige Glieder mit gleicher Variable und gleichem Exponenten addieren",
+      "Beide Seiten der Gleichung so umformen, dass die Variable allein steht",
+      "Durch Anfügen eines Gleichheitszeichens aus dem Term eine Gleichung machen"
     ],
     "correct": 1,
     "explanation": "Gleichartige Terme: gleiche Variable(n) mit gleichen Exponenten. 3x + 5x = 8x (beide x¹). 2x² + x² = 3x². Verschiedene Terme: 3x + 2y können nicht zusammengefasst werden (verschiedene Variablen).",
@@ -38,10 +38,10 @@
   {
     "question": "Was ist das Kommutativgesetz?",
     "options": [
-      "Klammergesetz",
-      "Reihenfolge bei Addition und Multiplikation ist egal: a + b = b + a; a × b = b × a. Gilt NICHT für Subtraktion und Division.",
-      "Assoziativgesetz",
-      "Distributivgesetz"
+      "Die Klammern dürfen bei Summen und Produkten beliebig verschoben werden",
+      "Die Reihenfolge darf bei Addition und Multiplikation vertauscht werden",
+      "Ein Faktor darf auf jeden Summanden einer Klammer verteilt werden",
+      "Beide Seiten einer Gleichung dürfen auf gleiche Weise umgeformt werden"
     ],
     "correct": 1,
     "explanation": "Kommutativ: vertauschbar. 3+5=5+3=8; 4×7=7×4=28. Nicht bei Subtraktion: 5-3≠3-5. Nicht bei Division: 6÷2≠2÷6. Nützlich beim Vereinfachen und mentalen Rechnen.",
@@ -50,10 +50,10 @@
   {
     "question": "Was ist das Assoziativgesetz?",
     "options": [
-      "Reihenfolge der Faktoren ändern",
-      "Klammerung bei Addition und Multiplikation ändert das Ergebnis nicht: (a+b)+c = a+(b+c); (a×b)×c = a×(b×c).",
-      "Ausmultiplizieren",
-      "Einsetzen von Werten"
+      "Die Reihenfolge der Summanden oder Faktoren darf vertauscht werden",
+      "Die Klammerung darf bei Addition und Multiplikation beliebig gesetzt werden",
+      "Ein Faktor wird beim Ausmultiplizieren auf alle Summanden verteilt",
+      "Für jede Variable wird ein konkreter Zahlenwert eingesetzt und gerechnet"
     ],
     "correct": 1,
     "explanation": "Assoziativ: Klammern verschiebbar. (2+3)+4=9=2+(3+4). (2×3)×4=24=2×(3×4). Gilt NICHT für Subtraktion/Division. Nützlich beim Vereinfachen und Neuanordnen von Termen.",
@@ -62,10 +62,10 @@
   {
     "question": "Was ist das Distributivgesetz?",
     "options": [
-      "Terme tauschen",
-      "a × (b + c) = a×b + a×c. Ermöglicht das Ausmultiplizieren von Klammern und das Ausklammern gemeinsamer Faktoren.",
-      "Klammerregeln",
-      "Variable isolieren"
+      "Die Reihenfolge zweier Summanden darf ohne Folgen getauscht werden",
+      "Ein Faktor wird auf jeden Summanden der Klammer verteilt: a(b+c) = ab+ac",
+      "Die Klammern dürfen bei mehreren Summanden beliebig umgesetzt werden",
+      "Alle Glieder mit der Variablen werden auf eine Seite gebracht"
     ],
     "correct": 1,
     "explanation": "Distributiv: Ausklammern/Ausmultiplizieren. 3×(4+5)=3×4+3×5=12+15=27. a(b+c)=ab+ac. Rückwärts: 6x+9=3(2x+3) (Ausklammern). Wichtigstes Gesetz für Algebra.",
@@ -74,10 +74,10 @@
   {
     "question": "Was ist eine Gleichung?",
     "options": [
-      "Ein mathematischer Term",
-      "Aussage, dass zwei Terme gleich sind: linke Seite = rechte Seite. Enthält eine oder mehrere Variablen. Lösung: Wert(e) der Variable(n), die die Gleichung erfüllen.",
-      "Eine Ungleichung",
-      "Eine Funktion"
+      "Rechenausdruck aus Zahlen und Variablen ohne ein Gleichheitszeichen",
+      "Aussage, dass zwei Terme gleich sind, mit gesuchtem Wert für die Variable",
+      "Vergleich zweier Terme mit den Zeichen kleiner, größer oder ungleich",
+      "Zuordnung, die jedem x-Wert genau einen zugehörigen y-Wert zuweist"
     ],
     "correct": 1,
     "explanation": "Gleichung: 2x + 3 = 11. Linke Seite (LS): 2x+3. Rechte Seite (RS): 11. Lösung x=4: 2×4+3=11 ✓. Lösungsmenge L: alle Lösungen. Identität: für alle x gültig. Widerspruch: keine Lösung.",
@@ -86,10 +86,10 @@
   {
     "question": "Wie löst man eine einfache Gleichung (Äquivalenzumformung)?",
     "options": [
-      "Probieren",
-      "Beide Seiten gleich umformen (Äquivalenzumformung): addieren, subtrahieren, multiplizieren, dividieren. x + 5 = 12 → x = 12 - 5 = 7.",
-      "Variable streichen",
-      "Gleichung umkehren"
+      "Solange Zahlen ausprobieren, bis beide Seiten zufällig gleich groß sind",
+      "Auf beiden Seiten dieselbe Rechnung ausführen, bis die Variable allein steht",
+      "Die Variable auf beiden Seiten streichen und den Rest ausrechnen",
+      "Linke und rechte Seite vertauschen und danach alle Zahlen addieren"
     ],
     "correct": 1,
     "explanation": "Äquivalenzumformung: auf beiden Seiten dasselbe tun. 2x+3=11: -3: 2x=8: ÷2: x=4. Probe: 2×4+3=11 ✓. Ziel: Variable isolieren (auf einer Seite allein). Schritte: erst +/-, dann ×/÷.",
@@ -98,10 +98,10 @@
   {
     "question": "Was ist die Probe bei Gleichungen?",
     "options": [
-      "Neue Gleichung aufstellen",
-      "Lösung einsetzen und prüfen, ob LS = RS: x=4 in 2x+3=11: 2×4+3=11 ✓. Pflicht nach jeder Lösung.",
-      "Gleichung vereinfachen",
-      "Weitere Lösungen suchen"
+      "Aus der Lösung eine zweite Gleichung mit derselben Variablen aufstellen",
+      "Die gefundene Lösung einsetzen und prüfen, ob beide Seiten gleich sind",
+      "Den Term auf beiden Seiten durch Zusammenfassen weiter vereinfachen",
+      "Durch Ausprobieren nach weiteren Lösungen der Gleichung suchen"
     ],
     "correct": 1,
     "explanation": "Probe: x=Lösung einsetzen. Wenn LS=RS: Lösung korrekt. Wenn LS≠RS: Rechenfehler. Immer ausführen! Auch wenn Probe klar erscheint. Sonderfall: Lösungsmenge L = {} (keine Lösung) oder L = ℝ (alle reellen Zahlen).",
@@ -110,10 +110,10 @@
   {
     "question": "Wie löst man 3x - 7 = 11?",
     "options": [
-      "x = 4/3",
-      "3x - 7 = 11 → +7: 3x = 18 → ÷3: x = 6. Probe: 3×6-7 = 11 ✓.",
-      "x = 8/3",
-      "x = 2"
+      "3x = 4, also x = 4/3",
+      "3x = 18, also x = 6",
+      "3x = 8, also x = 8/3",
+      "3x = 6, also x = 2"
     ],
     "correct": 1,
     "explanation": "Schritt 1: +7 auf beiden Seiten: 3x = 18. Schritt 2: ÷3: x = 6. Probe: 3×6-7 = 18-7 = 11 ✓. Tipp: erst alle Summanden zur Variable auf eine Seite, dann dividieren.",
@@ -122,10 +122,10 @@
   {
     "question": "Was sind wie man Klammern beim Vereinfachen auflöst?",
     "options": [
-      "Klammer ignorieren",
-      "Vorzeichen vor Klammer beachten: +(a+b) = a+b; -(a+b) = -a-b. Dann Distributivgesetz: k(a+b) = ka+kb.",
-      "Nur den ersten Term multiplizieren",
-      "Klammer weglassen"
+      "Die Klammer einfach weglassen und alle Vorzeichen unverändert übernehmen",
+      "Vorzeichen vor der Klammer beachten und den Faktor auf alle Glieder verteilen",
+      "Den Faktor vor der Klammer allein mit dem ersten Summanden multiplizieren",
+      "Zuerst die Variable in der Klammer durch ihren gesuchten Zahlenwert ersetzen"
     ],
     "correct": 1,
     "explanation": "Minusklammer: -(3x-5) = -3x+5 (jedes Vorzeichen dreht sich). Plusklammer: +(3x-5) = 3x-5. Faktor: 2(3x-5) = 6x-10. Häufiger Fehler: -(3x-5) = -3x-5 ist FALSCH!",
@@ -134,10 +134,10 @@
   {
     "question": "Was ist eine Gleichung mit Klammern, z.B. 2(x+3) = 14?",
     "options": [
-      "Klammer zuerst ausrechnen",
-      "Distributivgesetz anwenden: 2x+6=14 → -6: 2x=8 → ÷2: x=4. Probe: 2(4+3)=14 ✓.",
-      "x zuerst schätzen",
-      "Nicht lösbar"
+      "Die Klammer bleibt stehen, nur die Zahl davor wird abgezogen",
+      "Klammer ausmultiplizieren zu 2x+6 = 14 und dann nach x auflösen: x = 4",
+      "Zuerst x schätzen und den Wert danach in die Klammer einsetzen",
+      "Erst beide Seiten durch x teilen und dann die Klammer auflösen"
     ],
     "correct": 1,
     "explanation": "2(x+3)=14: Klammer auflösen: 2x+6=14. Dann wie gewohnt lösen: -6: 2x=8; ÷2: x=4. Probe: 2×(4+3)=2×7=14 ✓. Alternativ: zuerst durch 2 teilen: x+3=7 → x=4.",
@@ -146,10 +146,10 @@
   {
     "question": "Was ist ein Koeffizient?",
     "options": [
-      "Variable",
-      "Zahlenfaktor vor einer Variable: in 5x ist 5 der Koeffizient von x; in -3y² ist -3 der Koeffizient von y².",
-      "Exponent",
-      "Konstante"
+      "Buchstabe, der in einem Term für eine unbekannte Zahl steht",
+      "Zahlenfaktor, der vor einer Variablen steht, etwa die 5 in 5x",
+      "Hochgestellte Zahl, die angibt, wie oft ein Faktor auftritt",
+      "Zahl ohne Variable, die in einem Term unverändert stehen bleibt"
     ],
     "correct": 1,
     "explanation": "Koeffizient: numerischer Faktor. 7x: Koeffizient 7, Variable x. -2a: Koeffizient -2. x: Koeffizient 1 (nicht geschrieben). -x: Koeffizient -1. Bei Addition gleichartiger Terme: Koeffizienten addieren.",
@@ -158,10 +158,10 @@
   {
     "question": "Was ist eine lineare Gleichung?",
     "options": [
-      "Gleichung mit x²",
-      "Gleichung, in der die Variable nur in der ersten Potenz vorkommt (kein x², x³,...): ax + b = c. Genau eine Lösung (wenn a ≠ 0).",
-      "Gleichung mit Brüchen",
-      "Gleichung ohne Variable"
+      "Gleichung, in der die Variable in der zweiten Potenz vorkommt: ax² = c",
+      "Gleichung, in der die Variable nur in der ersten Potenz vorkommt: ax + b = c",
+      "Gleichung, in der die Variable ausschließlich im Nenner eines Bruchs steht",
+      "Gleichung, die neben festen Zahlen überhaupt keine Variable enthält"
     ],
     "correct": 1,
     "explanation": "Linear: ax+b=c (Grad 1). Lösung: x=(c-b)/a. Genau 1 Lösung wenn a≠0. Wenn a=0: entweder L=ℝ (0=0, Identität) oder L={} (0=5, Widerspruch). Beispiel: 2x+3=11 → x=4.",
@@ -170,10 +170,10 @@
   {
     "question": "Was ist eine Ungleichung?",
     "options": [
-      "Gleichung mit ≠",
-      "Aussage mit Ungleichungszeichen (< ≤ > ≥): z.B. 2x + 1 > 7. Lösungsmenge ist meist ein Intervall, nicht nur ein Wert.",
-      "Gleichung ohne Lösung",
-      "Gleichung mit zwei Variablen"
+      "Gleichung, deren beide Seiten für jeden Wert denselben Betrag liefern",
+      "Aussage mit den Zeichen kleiner oder größer, deren Lösung ein Intervall ist",
+      "Gleichung, die durch einen Widerspruch keine einzige Lösung besitzt",
+      "Gleichung mit zwei Variablen, die zusammen ein Gleichungssystem bilden"
     ],
     "correct": 1,
     "explanation": "Ungleichung: 2x+1 > 7 → 2x > 6 → x > 3. Lösungsmenge: alle x > 3. Achtung: Multiplikation/Division mit negativer Zahl dreht Ungleichungszeichen um: -x > 3 → x < -3.",
@@ -182,10 +182,10 @@
   {
     "question": "Wie löst man x/4 = 5?",
     "options": [
-      "x = 5/4",
-      "Beide Seiten × 4: x = 20.",
-      "x = 9",
-      "x = 1,25"
+      "x = 1,25 (5 durch 4 geteilt)",
+      "x = 20 (5 mit 4 multipliziert)",
+      "x = 9 (5 und 4 addiert)",
+      "x = 0,8 (4 durch 5 geteilt)"
     ],
     "correct": 1,
     "explanation": "x/4 = 5: ×4 auf beiden Seiten: x = 20. Probe: 20/4 = 5 ✓. Allgemein: x/a = b → x = a×b. Kehrwert-Methode: x × (1/4) = 5 → x = 5 × 4 = 20.",
@@ -194,10 +194,10 @@
   {
     "question": "Was ist das Ausklammern?",
     "options": [
-      "Klammern auflösen",
-      "Umkehrung des Distributivgesetzes: gemeinsamen Faktor aus Termen herausziehen. 6x + 9 = 3(2x + 3).",
-      "Variable isolieren",
-      "Gleichung lösen"
+      "Klammern durch Verteilen des Faktors vollständig auflösen",
+      "Einen gemeinsamen Faktor vor die Klammer ziehen: 6x + 9 = 3(2x + 3)",
+      "Die Variable durch Umformen auf einer Seite allein stehen lassen",
+      "Für die Variable einen Zahlenwert einsetzen und den Term berechnen"
     ],
     "correct": 1,
     "explanation": "Ausklammern: ggT der Koeffizienten als Faktor. 6x+9: ggT(6,9)=3; 3(2x+3). 12a-8b: ggT=4; 4(3a-2b). Probe: ausmultiplizieren ergibt Original. Wichtig für Vereinfachen und Gleichungen lösen.",
@@ -206,10 +206,10 @@
   {
     "question": "Was ist eine Formel?",
     "options": [
-      "Eine Gleichung ohne Variable",
-      "Gleichung mit Variablen, die einen allgemeinen Zusammenhang beschreibt: A = l × b (Fläche), v = s/t (Geschwindigkeit), U = 2πr (Kreisumfang).",
-      "Ein Term",
-      "Ein Axiom"
+      "Rechenausdruck ohne Gleichheitszeichen, der lediglich berechnet wird",
+      "Gleichung mit Variablen, die einen allgemeinen Zusammenhang beschreibt",
+      "Gleichung, die ausschließlich feste Zahlen und keine Variablen enthält",
+      "Grundsatz, der ohne Beweis als allgemein gültig vorausgesetzt wird"
     ],
     "correct": 1,
     "explanation": "Formeln: bekannte Beziehungen als Gleichung. A=l×b: Fläche Rechteck. v=s/t: Geschwindigkeit. E=mc²: Relativität. Formeln umstellen: Gesufte Variable isolieren. l=A/b (nach l umgestellt).",
@@ -219,9 +219,9 @@
     "question": "Wie stellt man A = l × b nach l um?",
     "options": [
       "l = A + b",
-      "A = l × b → ÷b: l = A/b.",
+      "l = A / b",
       "l = A × b",
-      "l = b/A"
+      "l = b / A"
     ],
     "correct": 1,
     "explanation": "Formelumstellung: A = l × b. Gesucht: l. ÷b auf beiden Seiten: A/b = l. Also l = A/b. Probe: A = (A/b) × b = A ✓. Vorgehen: Variable isolieren durch Äquivalenzumformung.",
@@ -230,10 +230,10 @@
   {
     "question": "Was ist eine Textaufgabe und wie löst man sie?",
     "options": [
-      "Aufgabe ohne Zahlen",
-      "Aufgabe in Wortform, die mit einer Gleichung modelliert wird: Sachverhalt verstehen → Variable definieren → Gleichung aufstellen → lösen → antworten.",
-      "Aufgabe nur mit Texten",
-      "Aufgabe ohne Lösung"
+      "Aufgabe, die vollständig ohne Zahlen und ohne Rechnungen auskommt",
+      "Aufgabe in Worten, die man mit einer selbst aufgestellten Gleichung löst",
+      "Aufgabe, bei der ein vorgegebener Sachtext nacherzählt werden soll",
+      "Aufgabe, deren Ergebnis geschätzt und niemals genau berechnet wird"
     ],
     "correct": 1,
     "explanation": "Schritte: 1. Lesen und verstehen. 2. Unbekannte als Variable (x) definieren. 3. Gleichung aufstellen. 4. Lösen. 5. Probe. 6. Antwortsatz formulieren. Beispiel: \"Eine Zahl plus 7 ist 12\" → x+7=12 → x=5.",
@@ -242,10 +242,10 @@
   {
     "question": "Was ist der Unterschied zwischen Term und Gleichung?",
     "options": [
-      "Kein Unterschied",
-      "Term: mathematischer Ausdruck ohne Gleichheitszeichen (3x+2). Gleichung: zwei Terme verbunden durch \"=\": 3x+2 = 14. Terme können berechnet werden; Gleichungen werden gelöst.",
-      "Term hat Zahlen, Gleichung nur Variablen",
-      "Gleichung hat mehr Terme"
+      "Es gibt keinen Unterschied, beide Begriffe bezeichnen genau dasselbe",
+      "Ein Term steht ohne Gleichheitszeichen, eine Gleichung verbindet zwei Terme",
+      "Ein Term enthält nur Zahlen, eine Gleichung enthält ausschließlich Variablen",
+      "Eine Gleichung besteht immer aus mehr Summanden als ein einfacher Term"
     ],
     "correct": 1,
     "explanation": "Term: 3x+2 (kein =). Gleichung: 3x+2=14 (mit =). Ausdruck auswerten: Term mit Zahlwert. Gleichung lösen: x finden. Manche Terme ergeben Gleichungen (z.B. f(x)=3x+2 ist eine Funktion).",
@@ -254,10 +254,10 @@
   {
     "question": "Was bedeutet \"Lösungsmenge\"?",
     "options": [
-      "Alle möglichen Werte",
-      "Menge aller Werte, die eine Gleichung oder Ungleichung erfüllen. L = {4} (eine Lösung); L = {} (keine Lösung); L = ℝ (alle reellen Zahlen).",
-      "Nur die größte Lösung",
-      "Die ungefähre Lösung"
+      "Die Menge aller Zahlen, die in der Gleichung überhaupt vorkommen",
+      "Die Menge aller Werte, die die Gleichung oder Ungleichung erfüllen",
+      "Der größte unter allen Werten, die die Gleichung erfüllen",
+      "Ein gerundeter Näherungswert für die gesuchte Variable"
     ],
     "correct": 1,
     "explanation": "Lösungsmenge L: {x | Gleichung wahr}. Lineare Gleichung: meist L={a}. Identität (0=0): L=ℝ. Widerspruch (0=5): L={}. Ungleichung: Intervall (z.B. L={x | x > 3}).",
@@ -267,7 +267,7 @@
     "question": "Wie löst man 5 - 2x = 1?",
     "options": [
       "x = 3",
-      "5 - 2x = 1 → -5: -2x = -4 → ÷(-2): x = 2. Probe: 5-2×2=1 ✓.",
+      "x = -3",
       "x = -2",
       "x = 2"
     ],
@@ -278,10 +278,10 @@
   {
     "question": "Was ist ein Gleichungssystem?",
     "options": [
-      "Mehrere einzelne Gleichungen",
-      "Mehrere Gleichungen mit denselben Variablen, die gleichzeitig erfüllt sein müssen. Lösung: Werte aller Variablen, die alle Gleichungen erfüllen.",
-      "Gleichung mit mehreren Lösungen",
-      "Gleichung ohne Lösung"
+      "Mehrere Gleichungen, die völlig unabhängig voneinander gelöst werden",
+      "Mehrere Gleichungen mit denselben Variablen, die gleichzeitig gelten müssen",
+      "Eine einzelne Gleichung, die mehr als eine gültige Lösung besitzt",
+      "Eine einzelne Gleichung, deren Lösungsmenge dauerhaft leer bleibt"
     ],
     "correct": 1,
     "explanation": "Gleichungssystem (2 Gleichungen, 2 Unbekannte): x+y=5 und x-y=1. Lösung: x=3, y=2. Probe in beide Gleichungen: 3+2=5 ✓ und 3-2=1 ✓. Lösungsverfahren: Substitution, Gleichsetzung, Addition.",
@@ -290,10 +290,10 @@
   {
     "question": "Was ist der Substitutionswert (Einsetzen)?",
     "options": [
-      "Variable eliminieren",
-      "Wert für Variable einsetzen und Term berechnen: f(x)=2x+3; x=5: f(5)=2×5+3=13.",
-      "Gleichung lösen",
-      "Terme vereinfachen"
+      "Eine Variable durch geschicktes Umformen aus der Gleichung entfernen",
+      "Für die Variable eine Zahl einsetzen und den Wert des Terms berechnen",
+      "Die Gleichung durch Äquivalenzumformungen nach der Variablen auflösen",
+      "Gleichartige Glieder eines Terms zusammenfassen und dadurch kürzen"
     ],
     "correct": 1,
     "explanation": "Einsetzen: Wert für Variable(n) einsetzen. 3x²-2x+1 bei x=2: 3×4-2×2+1=12-4+1=9. Nützlich: Probe, Tabellenwerte, Funktionsauswertung. Richtige Reihenfolge: Punkt vor Strich.",
@@ -302,10 +302,10 @@
   {
     "question": "Was ist eine Gleichung mit Variablen auf beiden Seiten?",
     "options": [
-      "Nicht lösbar",
-      "Variable auf eine Seite bringen: 3x + 4 = x + 12 → -x: 2x + 4 = 12 → -4: 2x = 8 → x = 4.",
-      "Gleichung hat keine Lösung",
-      "Zwei Gleichungen nötig"
+      "Die Variable wird beidseitig gestrichen und nur mit den Zahlen weitergerechnet",
+      "Alle Glieder mit der Variablen auf eine Seite bringen: 3x + 4 = x + 12 → x = 4",
+      "Solche Gleichungen besitzen wegen des Widerspruchs niemals eine Lösung",
+      "Zum Lösen ist zusätzlich eine zweite Gleichung als System notwendig"
     ],
     "correct": 1,
     "explanation": "3x+4=x+12: -x auf beiden Seiten: 2x+4=12. -4: 2x=8. ÷2: x=4. Probe: 3×4+4=16=4+12 ✓. Strategie: immer Terme mit Variable auf eine Seite, Zahlen auf andere.",
@@ -314,10 +314,10 @@
   {
     "question": "Was bedeutet \"äquivalente Umformung\" einer Gleichung?",
     "options": [
-      "Gleichung vereinfachen",
-      "Umformung, die die Lösungsmenge nicht verändert: auf beiden Seiten dasselbe addieren, subtrahieren, multiplizieren oder dividieren (Divisor ≠ 0).",
-      "Gleichung lösen",
-      "Neue Gleichung aufstellen"
+      "Eine Umformung, bei der ein Term lediglich etwas kürzer geschrieben wird",
+      "Umformung, die die Lösungsmenge unverändert lässt, z.B. beidseitig addieren",
+      "Das Bestimmen desjenigen Wertes, der die Gleichung schließlich erfüllt",
+      "Das Aufstellen einer neuen Gleichung aus dem Text einer Sachaufgabe"
     ],
     "correct": 1,
     "explanation": "Äquivalenz: Lösungsmenge bleibt gleich. Erlaubt: +/- gleiche Zahl; ×/÷ gleiche Zahl ≠ 0. Nicht äquivalent: beide Seiten quadrieren (kann Scheinlösungen einführen). Ziel: einfachste Gleichung mit x allein.",
@@ -327,7 +327,7 @@
     "question": "Wie bestimmt man den Wert von 2a + 3b für a=4, b=-2?",
     "options": [
       "10",
-      "2×4 + 3×(-2) = 8 + (-6) = 2.",
+      "2",
       "14",
       "1"
     ],
@@ -338,10 +338,10 @@
   {
     "question": "Was ist ein proportionaler Zusammenhang?",
     "options": [
-      "Summe zweier Größen",
-      "Wenn zwei Größen im gleichen Verhältnis wachsen/fallen: y = k × x (k = Proportionalitätskonstante). Verdoppelt sich x, verdoppelt sich y.",
-      "Differenz zweier Größen",
-      "Quadratischer Zusammenhang"
+      "Die Summe beider Größen bleibt bei jeder Messung gleich groß",
+      "Beide Größen ändern sich im gleichen Verhältnis: y = k × x",
+      "Die Differenz beider Größen bleibt bei jeder Messung konstant",
+      "Die eine Größe wächst quadratisch mit der anderen: y = k × x²"
     ],
     "correct": 1,
     "explanation": "Proportional: y=kx. Graph: Ursprungsgerade. k = y/x (konstant). Beispiele: Preis ~ Menge (k=Einzelpreis); Weg ~ Zeit bei konstanter Geschwindigkeit (k=v). Dreieck in Dreisatz.",
@@ -350,10 +350,10 @@
   {
     "question": "Was ist der Dreisatz?",
     "options": [
-      "Satz mit drei Aussagen",
-      "Lösungsverfahren für Proportionalaufgaben: 1. Gegebenes notieren. 2. Auf eine Einheit umrechnen. 3. Gesuchte Einheit berechnen. 5 Äpfel kosten 2€ → 1 Apfel kostet 0,40€ → 8 Äpfel kosten 3,20€.",
-      "Gleichungssystem",
-      "Drei-Schritte-Methode"
+      "Ein Merksatz aus drei Regeln zum Auflösen beliebiger Klammern",
+      "Verfahren bei Proportionen: erst auf eine Einheit, dann auf die Menge",
+      "Verfahren zum Lösen eines Systems aus genau drei linearen Gleichungen",
+      "Regel, nach der jeder Term aus drei Bestandteilen aufgebaut ist"
     ],
     "correct": 1,
     "explanation": "Dreisatz: Grundregel der Verhältnisrechnung. Direkt proportional: mehr davon → mehr davon. Indirekt proportional: mehr davon → weniger davon. Beispiel indirekt: 3 Arbeiter brauchen 6 Tage → 1 Arbeiter: 18 Tage.",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist eine Gleichung der Form ax = b?",
     "options": [
-      "Quadratische Gleichung",
-      "Lineare Gleichung in einfachster Form: Lösung x = b/a (wenn a ≠ 0). Beispiel: 5x = 20 → x = 4.",
-      "Gleichung ohne Lösung",
-      "Gleichung mit zwei Variablen"
+      "Quadratische Gleichung mit zwei verschiedenen Lösungen",
+      "Lineare Gleichung in Grundform mit der Lösung x = b/a für a ≠ 0",
+      "Gleichung mit leerer Lösungsmenge, unabhängig von a und b",
+      "Gleichung mit zwei Variablen und unendlich vielen Lösungen"
     ],
     "correct": 1,
     "explanation": "ax=b: ÷a: x=b/a. 5x=20: x=4. 3x=0: x=0. Wenn a=0 und b≠0: L={}. Wenn a=0 und b=0: L=ℝ. Standardform linearer Gleichungen nach Vereinfachung.",
@@ -374,10 +374,10 @@
   {
     "question": "Was ist Schreibweise von Termen mit Vorzeichen?",
     "options": [
-      "Vorzeichen immer weglassen",
-      "-3x bedeutet \"negatives Dreifaches von x\": -(3x). +5y bedeutet \"positives Fünffaches von y\": 5y. Vorzeichen gehört zum Term.",
-      "Vorzeichen hinter Variable",
-      "Vorzeichen nur bei Zahlen"
+      "Vorzeichen werden in Termen grundsätzlich nicht mitgeschrieben",
+      "Das Vorzeichen gehört zum Glied: -3x bedeutet -(3x), +5y bedeutet 5y",
+      "Das Vorzeichen wird stets hinter die zugehörige Variable geschrieben",
+      "Vorzeichen stehen ausschließlich vor Zahlen, niemals vor Variablen"
     ],
     "correct": 1,
     "explanation": "Terme mit Vorzeichen: -3x hat Koeffizient -3. Summe: 5x + (-3x) = 2x. Term - Term: 5x - 3x = 2x (gleich). Minus vor Klammer: -(2x-3) = -2x+3. Eindeutige Schreibweise wichtig.",
@@ -386,10 +386,10 @@
   {
     "question": "Was ist eine Gleichung umstellen nach einer Variable?",
     "options": [
-      "Gleichung lösen",
-      "Variable isolieren: alle anderen Terme auf die andere Seite bringen. F = m × a → nach m: m = F/a; nach a: a = F/m.",
-      "Gleichung vereinfachen",
-      "Variable definieren"
+      "Für alle vorkommenden Variablen Zahlenwerte einsetzen und ausrechnen",
+      "Die gesuchte Variable isolieren, z.B. F = m × a nach m: m = F/a",
+      "Beide Seiten durch Zusammenfassen möglichst kurz aufschreiben",
+      "Festlegen, welche Größe im Text der Aufgabe die Unbekannte ist"
     ],
     "correct": 1,
     "explanation": "Umstellen: nach gewünschter Variable auflösen. v = s/t: nach s: s=v×t; nach t: t=s/v. Schritte: Äquivalenzumformungen bis Variable allein. Wichtig für Physik- und Chemieformeln.",
@@ -398,10 +398,10 @@
   {
     "question": "Was ist eine Gleichung mit Dezimalzahlen, z.B. 0,5x + 1,5 = 4?",
     "options": [
-      "Nicht lösbar",
-      "Mit 10 multiplizieren (Kommas entfernen): 5x+15=40 → 5x=25 → x=5. Oder direkt: 0,5x=2,5 → x=5.",
-      "Nur schätzen",
-      "Brüche verwenden"
+      "Gleichungen mit Kommazahlen sind nicht eindeutig lösbar",
+      "Beide Seiten mit 10 multiplizieren: 5x + 15 = 40, also x = 5",
+      "Die Kommazahlen werden gerundet und das Ergebnis wird geschätzt",
+      "Die Nachkommastellen werden gestrichen: x + 1 = 4, also x = 3"
     ],
     "correct": 1,
     "explanation": "Methode 1: ×10: 5x+15=40; -15: 5x=25; ÷5: x=5. Methode 2: direkt: 0,5x+1,5=4; -1,5: 0,5x=2,5; ÷0,5 (×2): x=5. Probe: 0,5×5+1,5=2,5+1,5=4 ✓.",
@@ -410,10 +410,10 @@
   {
     "question": "Was ist ein Termwert und wie berechnet man ihn?",
     "options": [
-      "Lösung einer Gleichung",
-      "Wert eines Terms für bestimmte Variablenwerte: T = 3x² - 2x + 1 bei x=3: T = 3×9 - 2×3 + 1 = 27 - 6 + 1 = 22.",
-      "Anzahl der Terme",
-      "Koeffizient"
+      "Der Wert der Variablen, für den eine gegebene Gleichung erfüllt ist",
+      "Der Wert eines Terms bei eingesetzten Zahlen, z.B. 3x² - 2x + 1 bei x=3",
+      "Die Anzahl der Summanden, aus denen der Term zusammengesetzt ist",
+      "Der Zahlenfaktor, der vor der Variablen eines jeden Terms steht"
     ],
     "correct": 1,
     "explanation": "Termwert: Variable ersetzen, ausrechnen. Reihenfolge: Klammern, Potenzen, Punkt vor Strich. 3x²-2x+1 bei x=3: 3×9=27; 2×3=6; 27-6+1=22. Bei x=-1: 3×1-2×(-1)+1=3+2+1=6.",
@@ -422,10 +422,10 @@
   {
     "question": "Wie löst man eine Gleichung mit Brüchen, z.B. x/3 + 2 = 5?",
     "options": [
-      "Nicht lösbar",
-      "Auf Hauptnenner bringen oder direkt: x/3 = 3 → x = 9. Oder alle Terme mit dem Hauptnenner multiplizieren.",
-      "Zähler und Nenner getrennt lösen",
-      "Erst Nenner berechnen"
+      "Gleichungen mit Brüchen lassen sich nicht nach x auflösen",
+      "Erst 2 subtrahieren, dann mit dem Nenner 3 multiplizieren: x = 9",
+      "Zähler und Nenner werden getrennt voneinander umgeformt",
+      "Der Nenner wird einfach gestrichen: x + 2 = 5, also x = 3"
     ],
     "correct": 1,
     "explanation": "x/3+2=5: -2: x/3=3; ×3: x=9. Probe: 9/3+2=3+2=5 ✓. Alternativ: × Hauptnenner 3: x+6=15; -6: x=9. Methode 2 gut bei mehreren Brüchen mit verschiedenen Nennern.",
@@ -435,7 +435,7 @@
     "question": "Wie löst man eine Gleichung mit Variablen auf beiden Seiten und Klammern: 2(x+3) = 3(x-1)?",
     "options": [
       "x = 9",
-      "2(x+3)=3(x-1): ausmultiplizieren: 2x+6=3x-3; -2x: 6=x-3; +3: x=9.",
+      "x = 6",
       "x = 3",
       "x = -9"
     ],
@@ -446,10 +446,10 @@
   {
     "question": "Was ist eine Gleichung der Form x² = 9?",
     "options": [
-      "Nur eine Lösung: x=3",
-      "Quadratische Gleichung: zwei Lösungen: x=3 oder x=-3, da 3²=9 und (-3)²=9.",
-      "Keine Lösung",
-      "Nur x=-3"
+      "Es gibt genau eine Lösung, nämlich x = 3",
+      "Es gibt zwei Lösungen, nämlich x = 3 und x = -3",
+      "Es gibt keine Lösung, weil die Variable quadriert ist",
+      "Es gibt genau eine Lösung, nämlich x = -3"
     ],
     "correct": 1,
     "explanation": "x²=9: Wurzel ziehen → x=±3. Achtung: beide Lösungen! x=3 (3²=9 ✓) und x=-3 ((-3)²=9 ✓). Lösungsmenge: L={3;-3}. Quadratische Gleichungen haben oft 2 Lösungen.",
@@ -458,10 +458,10 @@
   {
     "question": "Was bedeutet es, wenn eine Gleichung \"unlösbar\" ist?",
     "options": [
-      "Rechenfehler liegt vor",
-      "Die Lösungsmenge ist leer: L={}. Entsteht wenn ein Widerspruch resultiert: z.B. 2x+3=2x+7 → 3=7 (falsch).",
-      "Nur ungefähre Lösungen",
-      "Variable fehlt"
+      "Beim Umformen der Gleichung ist ein Rechenfehler unterlaufen",
+      "Die Lösungsmenge ist leer, weil ein Widerspruch entsteht, z.B. 3 = 7",
+      "Die Lösung lässt sich nur näherungsweise durch Runden angeben",
+      "In der Gleichung fehlt die Variable, deshalb bleibt sie offen"
     ],
     "correct": 1,
     "explanation": "Widerspruch: 2x+3=2x+7; -2x: 3=7 → Falsch! L={}. Identität: 2x+4=2(x+2); ausmultiplizieren: 2x+4=2x+4; -2x: 4=4 ✓ → L=ℝ (alle Zahlen). Erkennbar am Ende der Umformung.",
@@ -471,7 +471,7 @@
     "question": "Wie löst man: x/2 - x/3 = 1?",
     "options": [
       "x = 2",
-      "Hauptnenner 6: 3x/6 - 2x/6 = 1 → x/6 = 1 → x = 6.",
+      "x = 6",
       "x = 3",
       "x = 1/6"
     ],

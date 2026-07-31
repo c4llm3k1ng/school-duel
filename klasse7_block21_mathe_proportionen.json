@@ -1,35 +1,35 @@
 [
   {
     "question": "Was ist eine Proportion in der Mathematik?",
-    "options": ["Eine Addition zweier Zahlen", "Eine Gleichung, die besagt, dass zwei Verhältnisse gleich sind (a:b = c:d)", "Eine Multiplikation", "Eine Potenz"],
+    "options": ["Eine Gleichung, die die Summe zweier Größen festlegt", "Eine Gleichung, die zwei gleiche Verhältnisse gegenüberstellt", "Eine Gleichung, die das Produkt zweier Größen beschreibt", "Eine Gleichung, die eine Größe als Potenz darstellt"],
     "correct": 1,
     "explanation": "Proportion: a:b = c:d, z.B. 2:4 = 5:10. Beide Verhältnisse sind gleich (0,5 = 0,5). Proportionen beschreiben gleichmäßige Vergrößerung oder Verkleinerung und sind Grundlage des Dreisatzes.",
     "topic": "Proportionen Grundlagen"
   },
   {
     "question": "Was ist ein Verhältnis (Ratio) in der Mathematik?",
-    "options": ["Eine Summe zweier Zahlen", "Der Vergleich zweier Zahlen durch Division (a:b oder a/b)", "Ein Produkt", "Eine Differenz"],
+    "options": ["Der Vergleich zweier Zahlen durch ihre Summe (a + b)", "Der Vergleich zweier Zahlen durch Division (a : b)", "Der Vergleich zweier Zahlen durch ihr Produkt (a · b)", "Der Vergleich zweier Zahlen durch ihre Differenz (a - b)"],
     "correct": 1,
     "explanation": "Verhältnisse vergleichen Größen: 3:4 bedeutet 'für je 3 von A gibt es 4 von B'. Verhältnisse können als Bruch (3/4) oder Dezimalzahl (0,75) geschrieben werden. Wichtig: beide Größen müssen in derselben Einheit sein.",
     "topic": "Proportionen Grundlagen"
   },
   {
     "question": "Was ist direkte Proportionalität?",
-    "options": ["Wenn eine Größe steigt, sinkt die andere", "Wenn sich eine Größe quadratisch ändert", "Wenn eine Größe konstant bleibt", "Wenn zwei Größen sich immer im gleichen Verhältnis ändern – wenn eine verdoppelt wird, verdoppelt sich die andere"],
+    "options": ["Wenn eine Größe wächst und die andere im gleichen Verhältnis kleiner wird", "Wenn eine Größe wächst und die andere quadratisch dazu zunimmt", "Wenn eine Größe wächst und die andere unverändert gleich bleibt", "Wenn eine Größe wächst und die andere im gleichen Verhältnis mitwächst"],
     "correct": 3,
     "explanation": "Direkte Proportionalität: y = k·x (Proportionalitätskonstante k). Beispiel: Preis (y) und Menge (x) – doppelte Menge, doppelter Preis. Graph: Gerade durch den Ursprung. Schreibweise: y ~ x.",
     "topic": "Proportionen"
   },
   {
     "question": "Was ist indirekte (umgekehrte) Proportionalität?",
-    "options": ["Wenn beide Größen steigen", "Wenn eine Größe steigt, steigt die andere proportional", "Wenn eine Größe steigt, sinkt die andere so, dass das Produkt konstant bleibt", "Wenn beide Größen sinken"],
+    "options": ["Wenn eine Größe steigt und die andere so mitsteigt, dass der Quotient gleich bleibt", "Wenn eine Größe steigt und die andere um denselben Betrag größer wird", "Wenn eine Größe steigt und die andere so sinkt, dass das Produkt gleich bleibt", "Wenn eine Größe steigt und die andere so sinkt, dass die Summe gleich bleibt"],
     "correct": 2,
     "explanation": "Indirekte Proportionalität: x·y = k (konstant). Beispiel: Arbeiter und Zeit – doppelt so viele Arbeiter, halb so viel Zeit. Schreibweise: y ~ 1/x. Graph: Hyperbel (keine Gerade durch den Ursprung).",
     "topic": "Proportionen"
   },
   {
     "question": "Was ist der Dreisatz?",
-    "options": ["Eine Rechenregel mit drei Gliedern", "Ein Lösungsverfahren für Proportionsaufgaben: von einer bekannten Situation auf eine unbekannte schließen", "Ein Satz aus drei Gleichungen", "Drei Rechenoperationen nacheinander"],
+    "options": ["Ein Verfahren, das drei gegebene Zahlen zu einer Summe verbindet", "Ein Verfahren, das über den Wert einer Einheit auf die gesuchte Größe schließt", "Ein Verfahren, das drei Gleichungen gleichzeitig miteinander löst", "Ein Verfahren, das drei Rechenarten fest nacheinander anwendet"],
     "correct": 1,
     "explanation": "Dreisatz: 1. Angaben ordnen. 2. Berechne für 1 Einheit. 3. Berechne für die gesuchte Anzahl. Beispiel: 3 kg kosten 6 €, wie viel kosten 5 kg? → 1 kg = 2 € → 5 kg = 10 €.",
     "topic": "Dreisatz"
@@ -43,7 +43,7 @@
   },
   {
     "question": "Was ist die Proportionalitätskonstante k?",
-    "options": ["Der Nenner eines Bruches", "Der Quotient aus y und x bei direkt proportionalen Größen: k = y/x", "Der Kehrwert von x", "Die Differenz zweier Größen"],
+    "options": ["Die Differenz y - x, die bei allen Wertepaaren gleich groß ist", "Der Quotient y : x, der bei allen Wertepaaren gleich groß ist", "Die Summe x + y, die bei allen Wertepaaren gleich groß ist", "Der Kehrwert 1 : x, der bei jedem Wertepaar neu berechnet wird"],
     "correct": 1,
     "explanation": "Bei direkter Proportionalität gilt y = k·x, also k = y/x. k ist für alle Wertepaare gleich. Beispiel: 3 kg = 9 € → k = 9/3 = 3 (€/kg).",
     "topic": "Proportionen"
@@ -57,28 +57,28 @@
   },
   {
     "question": "Was ist ein Maßstab auf einer Karte?",
-    "options": ["Die Legende der Karte", "Das Verhältnis zwischen Kartenlänge und tatsächlicher Länge (z.B. 1:50.000 = 1 cm auf Karte = 500 m in Wirklichkeit)", "Die Himmelsrichtung", "Die Größe der Karte"],
+    "options": ["Die Zeichenerklärung, die alle Symbole der Karte erläutert", "Das Verhältnis von Kartenlänge zur wirklichen Länge im Gelände", "Die Angabe, in welche Richtung Norden auf der Karte liegt", "Das Format der Karte, also ihre Breite und Höhe in Zentimetern"],
     "correct": 1,
     "explanation": "Maßstab 1:50.000: 1 cm Karte = 50.000 cm = 500 m in der Realität. Wirkliche Länge = Kartenlänge × Maßstabszahl. Kartenlänge = Wirkliche Länge ÷ Maßstabszahl.",
     "topic": "Anwendungen"
   },
   {
     "question": "Wie erkennt man im Graphen, dass zwei Größen direkt proportional sind?",
-    "options": ["Der Graph ist eine Hyperbel", "Der Graph ist eine waagrechte Linie", "Der Graph ist eine Parabel", "Der Graph ist eine Gerade durch den Ursprung (0,0)"],
+    "options": ["Der Graph ist eine Hyperbel, die sich den Achsen annähert", "Der Graph ist eine waagrechte Linie in gleichbleibender Höhe", "Der Graph ist eine nach oben geöffnete Parabel", "Der Graph ist eine Gerade, die durch den Ursprung verläuft"],
     "correct": 3,
     "explanation": "Direktproportional: Graph ist eine Gerade durch den Ursprung. Steigung = Proportionalitätskonstante k. Wichtig: Die Gerade muss DURCH den Nullpunkt gehen, sonst keine direkte Proportionalität.",
     "topic": "Graphen"
   },
   {
     "question": "Auf einer Karte im Maßstab 1:25.000 ist eine Strecke 4 cm lang. Wie lang ist die Strecke in der Wirklichkeit?",
-    "options": ["250 m", "2.500 m", "1.000 m (= 1 km)", "100 m"],
+    "options": ["250 m", "2.500 m", "1.000 m", "100 m"],
     "correct": 2,
     "explanation": "Wirkliche Länge = 4 cm × 25.000 = 100.000 cm = 1.000 m = 1 km. Umrechnung: 100.000 cm ÷ 100 = 1.000 m.",
     "topic": "Anwendungen"
   },
   {
     "question": "Was versteht man unter ähnlichen Figuren in der Geometrie?",
-    "options": ["Figuren, die dieselbe Fläche haben", "Figuren, die gleich groß sind", "Figuren, die dieselbe Form haben, aber unterschiedlich groß sein können (alle Winkel gleich, Seiten proportional)", "Figuren mit gleicher Farbe"],
+    "options": ["Figuren, die denselben Flächeninhalt, aber verschiedene Formen haben", "Figuren, die deckungsgleich sind, also in Form und Größe übereinstimmen", "Figuren, die in der Form übereinstimmen und nur unterschiedlich groß sind", "Figuren, die denselben Umfang, aber verschiedene Winkel besitzen"],
     "correct": 2,
     "explanation": "Ähnliche Figuren: gleiche Winkel, proportionale Seitenlängen. Ähnlichkeitsfaktor k: k=2 → alle Seiten doppelt so lang. Kongruente Figuren: ähnlich mit k=1.",
     "topic": "Ähnlichkeit"
@@ -92,7 +92,7 @@
   },
   {
     "question": "Was ist der Ähnlichkeitsfaktor k?",
-    "options": ["Das Verhältnis der Winkel zweier ähnlicher Figuren", "Der Quotient entsprechender Seitenlängen zweier ähnlicher Figuren", "Die Differenz der Flächeninhalte", "Die Summe aller Seiten"],
+    "options": ["Das Verhältnis entsprechender Winkelgrößen zweier ähnlicher Figuren", "Das Verhältnis entsprechender Seitenlängen zweier ähnlicher Figuren", "Das Verhältnis der Flächeninhalte zweier ähnlicher Figuren zueinander", "Die Differenz entsprechender Seitenlängen zweier ähnlicher Figuren"],
     "correct": 1,
     "explanation": "Ähnlichkeitsfaktor k = a'/a (entsprechende Seiten). k = 3: alle Seiten der neuen Figur sind 3× so lang. Flächen verhalten sich wie k², Volumina wie k³.",
     "topic": "Ähnlichkeit"
@@ -106,28 +106,28 @@
   },
   {
     "question": "Was ist eine Verhältnisgleichung?",
-    "options": ["Eine Gleichung, die Summen beschreibt", "Eine Gleichung mit Quadraten", "Eine lineare Gleichung", "Eine Gleichung der Form a:b = c:d, die zwei gleiche Verhältnisse darstellt"],
+    "options": ["Eine Gleichung der Form a + b = c + d, die zwei gleiche Summen darstellt", "Eine Gleichung der Form a² = b², die zwei gleiche Quadrate darstellt", "Eine Gleichung der Form a - b = c - d, die zwei gleiche Differenzen darstellt", "Eine Gleichung der Form a : b = c : d, die zwei gleiche Verhältnisse darstellt"],
     "correct": 3,
     "explanation": "Verhältnisgleichung a:b = c:d → a·d = b·c (Kreuzprodukt). Beispiel: 3:4 = x:8 → 3·8 = 4·x → 24 = 4x → x = 6.",
     "topic": "Proportionen Grundlagen"
   },
   {
     "question": "Wie lautet die Formel für Geschwindigkeit, Zeit und Weg?",
-    "options": ["v = s·t", "s = v·t (Weg = Geschwindigkeit × Zeit)", "t = v·s", "v = t/s"],
+    "options": ["v = s · t", "s = v · t", "t = v · s", "v = t : s"],
     "correct": 1,
     "explanation": "Grundformel: s = v·t. Umformen: v = s/t, t = s/v. Einheiten: km/h × h = km; m/s × s = m.",
     "topic": "Anwendungen"
   },
   {
     "question": "Wie überprüft man, ob zwei Größen direkt proportional sind?",
-    "options": ["Man addiert alle Werte", "Man prüft, ob der Quotient y/x für alle Wertepaare konstant ist", "Man prüft, ob y = x + k", "Man prüft, ob die Differenz konstant ist"],
+    "options": ["Man prüft, ob die Summe x + y bei allen Wertepaaren gleich ist", "Man prüft, ob der Quotient y : x bei allen Wertepaaren gleich ist", "Man prüft, ob das Produkt x · y bei allen Wertepaaren gleich ist", "Man prüft, ob die Differenz y - x bei allen Wertepaaren gleich ist"],
     "correct": 1,
     "explanation": "Direktproportional: y/x = k (konstant). 2→4, 4→8, 6→12: 4/2=2, 8/4=2, 12/6=2 → direkt proportional. Wenn die Differenz konstant ist, liegt lineare (nicht proportionale) Beziehung vor.",
     "topic": "Proportionen Grundlagen"
   },
   {
     "question": "Wie überprüft man indirekte Proportionalität?",
-    "options": ["Man prüft, ob der Quotient konstant ist", "Man prüft, ob das Produkt x·y konstant ist", "Man prüft, ob die Summe konstant ist", "Man prüft, ob die Differenz konstant ist"],
+    "options": ["Man prüft, ob der Quotient y : x bei allen Wertepaaren gleich ist", "Man prüft, ob das Produkt x · y bei allen Wertepaaren gleich ist", "Man prüft, ob die Summe x + y bei allen Wertepaaren gleich ist", "Man prüft, ob die Differenz y - x bei allen Wertepaaren gleich ist"],
     "correct": 1,
     "explanation": "Indirekt proportional: x·y = k (konstant). 2→12, 3→8, 4→6: 2·12=24, 3·8=24, 4·6=24 → Produkt konstant → indirekt proportional. Graph: Hyperbel.",
     "topic": "Proportionen"
@@ -141,7 +141,7 @@
   },
   {
     "question": "Wie vereinfacht man ein Verhältnis?",
-    "options": ["Beide Zahlen addieren", "Beide Zahlen durch ihren ggT teilen", "Beide Zahlen quadrieren", "Die größere durch die kleinere teilen"],
+    "options": ["Man addiert zu beiden Zahlen denselben passenden Summanden", "Man teilt beide Zahlen durch ihren größten gemeinsamen Teiler", "Man multipliziert beide Zahlen mit ihrem kleinsten gemeinsamen Vielfachen", "Man teilt die größere Zahl ohne Rest durch die kleinere Zahl"],
     "correct": 1,
     "explanation": "Verhältnis 6:9 vereinfachen: ggT(6,9) = 3. 6÷3 : 9÷3 = 2:3. Verhältnisse vereinfachen wie Brüche kürzen – immer den größten gemeinsamen Teiler verwenden.",
     "topic": "Proportionen Grundlagen"
@@ -176,7 +176,7 @@
   },
   {
     "question": "Was ist der goldene Schnitt?",
-    "options": ["Ein besonders harmonisches Verhältnis (ca. 1:1,618), das in Kunst, Architektur und Natur vorkommt", "Das Verhältnis 1:1", "Das Verhältnis 2:3 bei Fotos", "Ein mathematischer Satz über Dreiecke"],
+    "options": ["Ein Teilungsverhältnis von etwa 1:1,618, das als besonders harmonisch gilt", "Ein Teilungsverhältnis von genau 1:1, bei dem beide Teile gleich groß sind", "Ein Teilungsverhältnis von 2:3, das bei Fotoformaten üblich ist", "Ein Lehrsatz über die Seitenverhältnisse im rechtwinkligen Dreieck"],
     "correct": 0,
     "explanation": "Goldener Schnitt: a:b = (a+b):a ≈ 1:1,618 (Phi φ). Gilt als besonders ästhetisch. Findet sich in der Nautilus-Spirale, Blütenblattanordnung (Fibonacci-Folge) und Renaissance-Kunst.",
     "topic": "Proportionen Grundlagen"
@@ -190,14 +190,14 @@
   },
   {
     "question": "Was ist ein direkter Dreisatz?",
-    "options": ["Mehr von einer Größe ergibt weniger von der anderen", "Mehr von einer Größe ergibt proportional mehr von der anderen – direkte Proportionalität", "Beide Größen sind konstant", "Nur für Geldaufgaben anwendbar"],
+    "options": ["Mehr von der einen Größe ergibt entsprechend weniger von der anderen", "Mehr von der einen Größe ergibt entsprechend mehr von der anderen", "Mehr von der einen Größe lässt die andere Größe völlig unverändert", "Mehr von der einen Größe ergibt das Quadrat der anderen Größe"],
     "correct": 1,
     "explanation": "Direkter Dreisatz: Wenn Größe A steigt, steigt Größe B proportional. Beispiele: mehr Meter Stoff → höherer Preis; mehr Zeit → mehr Weg bei gleicher Geschwindigkeit.",
     "topic": "Dreisatz"
   },
   {
     "question": "Was ist ein indirekter Dreisatz?",
-    "options": ["Mehr von einer Größe ergibt proportional mehr von der anderen", "Mehr von einer Größe ergibt proportional weniger von der anderen (indirekte Proportionalität)", "Beide Größen sind gleich groß", "Nur für Zeitaufgaben anwendbar"],
+    "options": ["Mehr von der einen Größe ergibt entsprechend mehr von der anderen", "Mehr von der einen Größe ergibt entsprechend weniger von der anderen", "Mehr von der einen Größe lässt die andere Größe völlig unverändert", "Mehr von der einen Größe ergibt die Wurzel der anderen Größe"],
     "correct": 1,
     "explanation": "Indirekter Dreisatz: Wenn A steigt, sinkt B proportional (Produkt bleibt konstant). Beispiele: mehr Arbeiter → weniger Zeit; höhere Geschwindigkeit → weniger Zeit für gleichen Weg.",
     "topic": "Dreisatz"
@@ -211,7 +211,7 @@
   },
   {
     "question": "Was bedeutet es, wenn ein Ähnlichkeitsfaktor k > 1 ist?",
-    "options": ["Die Figur wird verkleinert", "Die Figur bleibt gleich groß", "Die Figur wird vergrößert (alle Seiten werden mit k multipliziert)", "Die Winkel ändern sich"],
+    "options": ["Die Figur wird verkleinert, alle Seiten werden entsprechend kürzer", "Die Figur bleibt gleich groß, alle Seiten behalten ihre Länge", "Die Figur wird vergrößert, alle Seiten werden mit k multipliziert", "Die Figur behält ihre Seiten, aber alle Winkel werden größer"],
     "correct": 2,
     "explanation": "k > 1: Vergrößerung. k < 1: Verkleinerung. k = 1: Kongruenz (gleich groß). k = 2: alle Seiten doppelt so lang, Flächeninhalt viermal so groß (2² = 4).",
     "topic": "Ähnlichkeit"
@@ -225,14 +225,14 @@
   },
   {
     "question": "Was ist eine proportionale Zuordnung?",
-    "options": ["Jeder x-Wert ist einem y-Wert zugeordnet, wobei y/x = konstant", "Jeder x-Wert ist einem y-Wert zufällig zugeordnet", "Eine Zuordnung, bei der y = x + c (mit c ≠ 0)", "Eine quadratische Zuordnung"],
+    "options": ["Eine Zuordnung, bei der der Quotient y : x immer gleich bleibt", "Eine Zuordnung, bei der das Produkt x · y immer gleich bleibt", "Eine Zuordnung, bei der die Differenz y - x immer gleich bleibt", "Eine Zuordnung, bei der y stets dem Quadrat von x entspricht"],
     "correct": 0,
     "explanation": "Proportionale Zuordnung: y = k·x mit k ≠ 0. Kennzeichen: Graph ist Gerade durch Ursprung, y/x ist für alle Paare gleich, Tabelle zeigt konstanten Quotienten.",
     "topic": "Proportionen Grundlagen"
   },
   {
     "question": "Was ist eine antiproportionale Zuordnung?",
-    "options": ["Eine Zuordnung, bei der y/x = konstant", "Eine Zuordnung, bei der x·y = konstant (indirekte Proportionalität)", "Eine quadratische Zuordnung", "Keine mathematische Bezeichnung"],
+    "options": ["Eine Zuordnung, bei der der Quotient y : x immer gleich bleibt", "Eine Zuordnung, bei der das Produkt x · y immer gleich bleibt", "Eine Zuordnung, bei der die Summe x + y immer gleich bleibt", "Eine Zuordnung, bei der y stets dem Quadrat von x entspricht"],
     "correct": 1,
     "explanation": "Antiproportionale Zuordnung: x·y = k. Kennzeichen: Graph ist Hyperbel, Produkt aller Wertepaare ist gleich. Beispiel: Tempo (x) und Zeit (y) für gleichen Weg.",
     "topic": "Proportionen"
@@ -246,7 +246,7 @@
   },
   {
     "question": "Was gilt für den Graphen einer antiproportionalen Zuordnung?",
-    "options": ["Eine Gerade durch den Ursprung", "Eine waagrechte Linie", "Eine Hyperbel, die sich den Achsen annähert, sie aber nicht berührt", "Eine Parabel"],
+    "options": ["Eine Gerade, die durch den Ursprung des Koordinatensystems verläuft", "Eine waagrechte Linie, die parallel zur x-Achse verläuft", "Eine Hyperbel, die sich den Achsen nähert, sie aber nie berührt", "Eine Parabel, die im Ursprung ihren Scheitelpunkt hat"],
     "correct": 2,
     "explanation": "Graph von x·y = k ist eine Hyperbel. Je größer x, desto kleiner y (und umgekehrt). Die Kurve nähert sich beiden Achsen an (Asymptoten), berührt sie aber nie, da x und y nie 0 werden.",
     "topic": "Graphen"
@@ -260,28 +260,28 @@
   },
   {
     "question": "Was ist eine Streckenaufteilung im Verhältnis?",
-    "options": ["Eine Strecke wird halbiert", "Eine Strecke wird in zwei Teile geteilt, die das gewünschte Verhältnis haben", "Eine Strecke wird verlängert", "Eine Strecke wird gespiegelt"],
+    "options": ["Eine Strecke wird in zwei genau gleich lange Hälften geteilt", "Eine Strecke wird in Teile geteilt, die ein vorgegebenes Verhältnis haben", "Eine Strecke wird um einen vorgegebenen Faktor verlängert", "Eine Strecke wird an einem Punkt gespiegelt und dadurch verdoppelt"],
     "correct": 1,
     "explanation": "Strecke AB = 15 cm, Verhältnis 2:3 teilen: 2+3 = 5 Teile. Ein Teil = 15 ÷ 5 = 3 cm. Erster Abschnitt: 2 × 3 = 6 cm. Zweiter Abschnitt: 3 × 3 = 9 cm. Probe: 6 + 9 = 15 ✓.",
     "topic": "Anwendungen"
   },
   {
     "question": "In welchem Verhältnis stehen 45 Minuten und 3 Stunden?",
-    "options": ["1:4", "1:3", "1:6", "3:12"],
+    "options": ["1:4", "1:3", "1:6", "1:5"],
     "correct": 0,
     "explanation": "Gleiche Einheiten: 3 Stunden = 180 Minuten. Verhältnis: 45:180 = 1:4 (÷45). Probe: 1 × 45 = 45, 4 × 45 = 180 ✓. Wichtig: Immer gleiche Einheiten verwenden!",
     "topic": "Proportionen Grundlagen"
   },
   {
     "question": "Was bedeutet der Begriff 'Einheitspreis'?",
-    "options": ["Der günstigste Preis eines Produkts", "Der Preis für eine Einheit (z.B. 1 kg, 1 Liter, 1 Stück), nützlich für Preisvergleiche", "Der Preis ohne Mehrwertsteuer", "Der Gesamtpreis einer Bestellung"],
+    "options": ["Der niedrigste Preis, zu dem ein Produkt gerade angeboten wird", "Der Preis für genau eine Einheit, etwa für 1 kg oder 1 Liter", "Der Preis eines Produkts ohne die darin enthaltene Mehrwertsteuer", "Der Gesamtpreis aller Waren, die zusammen bestellt werden"],
     "correct": 1,
     "explanation": "Einheitspreis = Gesamtpreis ÷ Menge. Beispiel: 1,5 kg Äpfel für 2,40 € → Einheitspreis = 2,40 ÷ 1,5 = 1,60 €/kg. Wichtig beim Preisvergleich im Supermarkt.",
     "topic": "Anwendungen"
   },
   {
     "question": "Was ist proportionales Denken im Alltag?",
-    "options": ["Nur für Mathematiker wichtig", "Das Verständnis, dass Größen in festem Verhältnis stehen – z.B. mehr zahlen bei mehr Menge, weniger Zeit bei mehr Helfern", "Ein abstraktes mathematisches Konzept ohne Anwendung", "Nur in der Schule anwendbar"],
+    "options": ["Ein Verfahren, das man ausschließlich beim Lösen von Schulaufgaben braucht", "Das Erfassen fester Verhältnisse, etwa mehr Menge und dadurch mehr Preis", "Ein Rechenweg, der allein in der Physik bei Messreihen angewendet wird", "Ein Begriff aus der Statistik für zufällig verteilte Messwerte"],
     "correct": 1,
     "explanation": "Proportionales Denken: Rezepte skalieren, Preise vergleichen, Karten lesen, Fahrpläne verstehen, Bauplan-Maßstäbe, Umrechnungen. Es ist eine Kernkompetenz für alltägliches Problemlösen.",
     "topic": "Anwendungen"

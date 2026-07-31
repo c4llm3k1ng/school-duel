@@ -2,10 +2,10 @@
   {
     "question": "Was sind die Winkelarten?",
     "options": [
-      "Spitz, stumpf, flach",
-      "Spitzer Winkel (< 90°), rechter Winkel (= 90°), stumpfer Winkel (90°-180°), gestreckter Winkel (= 180°), überstumpfer Winkel (> 180°).",
-      "Nur spitz und stumpf",
-      "Nur in Grad messbar"
+      "Spitzer, gestreckter und überstumpfer Winkel sowie der Vollwinkel.",
+      "Spitzer, rechter, stumpfer, gestreckter und überstumpfer Winkel.",
+      "Rechter, stumpfer und gestreckter Winkel sowie der Nebenwinkel.",
+      "Scheitel-, Neben-, Stufen- und Wechselwinkel an geschnittenen Geraden."
     ],
     "correct": 1,
     "explanation": "Winkelarten: spitz (0°-90°), recht (90°), stumpf (90°-180°), gestreckt (180°), überstumpf (>180°, <360°), Vollwinkel (360°). Messung mit Winkelmesser (Geodreieck). Einheit: Grad (°).",
@@ -14,10 +14,10 @@
   {
     "question": "Was ist die Winkelsumme im Dreieck?",
     "options": [
-      "360 Grad",
-      "Die Summe aller drei Innenwinkel im Dreieck beträgt immer 180°: alpha + beta + gamma = 180°.",
-      "270 Grad",
-      "90 Grad"
+      "Die Summe der drei Innenwinkel beträgt immer 360°.",
+      "Die Summe der drei Innenwinkel beträgt immer 180°.",
+      "Die Summe der drei Innenwinkel beträgt immer 270°.",
+      "Die Summe der drei Innenwinkel hängt von der Dreiecksform ab."
     ],
     "correct": 1,
     "explanation": "Winkelsumme Dreieck: 180°. Beweis: Parallellinie durch Scheitelpunkt (Stufenwinkel). Anwendung: fehlendem Winkel berechnen. Wenn zwei Winkel 50° und 70°: dritter = 180° - 50° - 70° = 60°.",
@@ -26,10 +26,10 @@
   {
     "question": "Was ist ein gleichseitiges Dreieck?",
     "options": [
-      "Dreieck mit einem rechten Winkel",
-      "Dreieck mit drei gleich langen Seiten: alle Seiten gleich lang, alle Winkel = 60°. Achsensymmetrisch (3 Achsen), drehsymmetrisch (120°).",
-      "Dreieck mit zwei gleichen Seiten",
-      "Dreieck mit stumpfem Winkel"
+      "Ein Dreieck mit einem rechten Winkel und zwei gleich langen Katheten.",
+      "Ein Dreieck mit drei gleich langen Seiten und drei Winkeln von je 60°.",
+      "Ein Dreieck mit zwei gleich langen Seiten und gleich großen Basiswinkeln.",
+      "Ein Dreieck mit drei verschieden langen Seiten und einem stumpfen Winkel."
     ],
     "correct": 1,
     "explanation": "Gleichseitig: a = b = c; alpha = beta = gamma = 60°. 3 Symmetrieachsen. Fläche: A = (a² × Wurzel(3))/4. Umkreis: R = a/Wurzel(3). Inkreis: r = a/(2×Wurzel(3)). Regelmäßiges Polygon mit 3 Ecken.",
@@ -38,10 +38,10 @@
   {
     "question": "Was ist ein gleichschenkliges Dreieck?",
     "options": [
-      "Dreieck mit drei gleichen Winkeln",
-      "Dreieck mit zwei gleich langen Seiten (Schenkeln) und gleichen Basiswinkeln. Eine Symmetrieachse.",
-      "Dreieck mit einem Winkel von 90°",
-      "Dreieck mit drei verschiedenen Seiten"
+      "Ein Dreieck mit drei gleich großen Winkeln von je 60° und drei Symmetrieachsen.",
+      "Ein Dreieck mit zwei gleich langen Schenkeln, gleichen Basiswinkeln und einer Symmetrieachse.",
+      "Ein Dreieck mit einem Winkel von 90° und der Hypotenuse als längster Seite.",
+      "Ein Dreieck mit drei verschieden langen Seiten und ohne jede Symmetrieachse."
     ],
     "correct": 1,
     "explanation": "Gleichschenklig: a = c (Schenkel), b = Basis. Basiswinkel alpha = gamma. Scheitelwinkel beta. Symmetrieachse: durch Scheitel, senkrecht zur Basis. Isometrisches Dreieck. Beispiel: gleichseitiges Dreieck ist Spezialfall.",
@@ -50,10 +50,10 @@
   {
     "question": "Was ist ein rechtwinkliges Dreieck?",
     "options": [
-      "Dreieck mit drei rechten Winkeln",
-      "Dreieck mit genau einem 90°-Winkel. Die dem rechten Winkel gegenüberliegende Seite heißt Hypotenuse (längste Seite). Die anderen Seiten heißen Katheten.",
-      "Dreieck mit zwei rechten Winkeln",
-      "Dreieck mit nur spitzen Winkeln"
+      "Ein Dreieck mit zwei 90°-Winkeln; die dritte Seite heißt Hypotenuse, die übrigen Katheten.",
+      "Ein Dreieck mit genau einem 90°-Winkel; ihm gegenüber liegt die Hypotenuse, die übrigen Seiten heißen Katheten.",
+      "Ein Dreieck, dessen Höhe senkrecht auf der längsten Seite steht; diese Seite heißt Hypotenuse.",
+      "Ein Dreieck mit ausschließlich spitzen Winkeln; die längste Seite wird Hypotenuse genannt."
     ],
     "correct": 1,
     "explanation": "Rechtwinklig: ein Winkel = 90°. Hypotenuse c: längste Seite, gegenüber dem rechten Winkel. Katheten a und b. Satz des Pythagoras: a² + b² = c². Winkelsumme: 90° + alpha + beta = 180° → alpha + beta = 90°.",
@@ -62,10 +62,10 @@
   {
     "question": "Was besagt der Satz des Pythagoras?",
     "options": [
-      "a + b = c",
-      "Im rechtwinkligen Dreieck gilt: a² + b² = c² (c = Hypotenuse). Kann Seiten und Winkel berechnen.",
-      "a × b = c²",
-      "a² × b² = c"
+      "Im rechtwinkligen Dreieck gilt a + b = c, wobei c die Hypotenuse ist.",
+      "Im rechtwinkligen Dreieck gilt a² + b² = c², wobei c die Hypotenuse ist.",
+      "Im rechtwinkligen Dreieck gilt a × b = c², wobei c die Hypotenuse ist.",
+      "Im rechtwinkligen Dreieck gilt a² × b² = c², wobei c die Hypotenuse ist."
     ],
     "correct": 1,
     "explanation": "Pythagoras: a² + b² = c². a=3, b=4: c² = 9+16=25, c=5. Umkehrung: wenn a²+b²=c², dann rechter Winkel. Anwendung: Abstände berechnen. Pythagoräische Tripel: 3-4-5, 5-12-13, 8-15-17.",
@@ -74,10 +74,10 @@
   {
     "question": "Wie berechnet man die Fläche eines Dreiecks?",
     "options": [
-      "Grundseite + Höhe",
-      "A = (Grundseite × Höhe) / 2 = g × h / 2. Grundseite und zugehörige Höhe stehen senkrecht aufeinander.",
-      "Grundseite × Höhe",
-      "Alle drei Seiten addieren"
+      "A = g + h, also Grundseite plus die zugehörige Höhe.",
+      "A = g × h / 2, also Grundseite mal zugehörige Höhe, geteilt durch zwei.",
+      "A = g × h, also Grundseite mal zugehörige Höhe ohne weitere Division.",
+      "A = a + b + c, also die Summe der drei Seitenlängen des Dreiecks."
     ],
     "correct": 1,
     "explanation": "Dreiecksfläche: A = g × h / 2. Jede Seite kann Grundseite sein, zugehörige Höhe muss senkrecht darauf stehen. Beispiel: g=6cm, h=4cm → A = 6×4/2 = 12 cm². Einheit: cm² (Quadratzentimeter).",
@@ -86,10 +86,10 @@
   {
     "question": "Was ist ein Parallelogramm?",
     "options": [
-      "Viereck mit einem rechten Winkel",
-      "Viereck mit zwei Paaren paralleler Seiten. Gegenüberliegende Seiten sind gleich lang, gegenüberliegende Winkel sind gleich.",
-      "Viereck mit vier gleichen Seiten",
-      "Dreieck mit parallelen Linien"
+      "Ein Viereck mit genau einem Paar paralleler Seiten und zwei gleich langen Schenkeln.",
+      "Ein Viereck mit zwei Paaren paralleler Seiten; gegenüberliegende Seiten und Winkel sind gleich.",
+      "Ein Viereck mit vier gleich langen Seiten und vier rechten Winkeln an den Ecken.",
+      "Ein Viereck mit zwei gleich langen Diagonalen, die senkrecht aufeinander stehen."
     ],
     "correct": 1,
     "explanation": "Parallelogramm: AB ∥ CD und AC ∥ BD. Gegenüberliegende Seiten gleich lang. Diagonalen halbieren sich gegenseitig. Rechteck: Spezialfall (alle Winkel 90°). Fläche: A = a × h (Grundseite mal Höhe).",
@@ -98,10 +98,10 @@
   {
     "question": "Wie berechnet man die Fläche eines Parallelogramms?",
     "options": [
-      "a × b (Seiten multiplizieren)",
-      "A = Grundseite × Höhe = a × h. Höhe steht senkrecht auf der Grundseite (nicht Schrägseite).",
-      "(a + b) × 2",
-      "a × b / 2"
+      "A = a × b, also das Produkt der beiden benachbarten Seitenlängen.",
+      "A = a × h, also Grundseite mal die Höhe, die senkrecht auf ihr steht.",
+      "A = (a + b) × 2, also die doppelte Summe zweier benachbarter Seiten.",
+      "A = a × h / 2, also Grundseite mal Höhe, anschließend halbiert."
     ],
     "correct": 1,
     "explanation": "Parallelogrammfläche: A = a × h. Höhe h: senkrechter Abstand der parallelen Seiten. Nicht die Seite b (schräg)! Rechteck: A = a × b (weil h = b bei 90°-Winkeln). Dreieck: Hälfte des Parallelogramms.",
@@ -110,10 +110,10 @@
   {
     "question": "Was ist ein Rechteck?",
     "options": [
-      "Viereck mit gleichen Seiten",
-      "Parallelogramm mit vier rechten Winkeln. Gegenüberliegende Seiten gleich lang. Fläche: A = l × b; Umfang: U = 2(l + b).",
-      "Viereck mit gleichen Diagonalen",
-      "Parallelogramm mit spitzen Winkeln"
+      "Ein Viereck mit vier gleich langen Seiten, dessen Diagonalen senkrecht stehen.",
+      "Ein Parallelogramm mit vier rechten Winkeln, bei dem gegenüberliegende Seiten gleich lang sind.",
+      "Ein Viereck mit gleich langen Diagonalen, bei dem keine Seiten parallel verlaufen.",
+      "Ein Parallelogramm mit zwei spitzen und zwei stumpfen Winkeln an den Ecken."
     ],
     "correct": 1,
     "explanation": "Rechteck: alle Winkel 90°, gegenüberliegende Seiten gleich lang. Spezialfall: Quadrat (alle Seiten gleich). Diagonalen: gleich lang, halbieren sich. A = l × b. U = 2(l+b). 2 Symmetrieachsen.",
@@ -122,10 +122,10 @@
   {
     "question": "Was ist ein Quadrat?",
     "options": [
-      "Rechteck mit ungleichen Seiten",
-      "Viereck mit vier gleich langen Seiten und vier rechten Winkeln. Alle Eigenschaften von Rechteck und Rhombus.",
-      "Parallelogramm mit Diagonalen",
-      "Beliebiges Viereck"
+      "Ein Rechteck mit zwei unterschiedlich langen Seitenpaaren und gleich langen Diagonalen.",
+      "Ein Viereck mit vier gleich langen Seiten und vier rechten Winkeln an den Ecken.",
+      "Ein Parallelogramm mit sich halbierenden, aber unterschiedlich langen Diagonalen.",
+      "Ein beliebiges Viereck, dessen vier Innenwinkel zusammen genau 360° ergeben."
     ],
     "correct": 1,
     "explanation": "Quadrat: Spezialfall von Rechteck und Rhombus. a = b = c = d; alle Winkel = 90°. A = a². U = 4a. Diagonalen: gleich lang, senkrecht aufeinander, halbieren sich. 4 Symmetrieachsen. Drehsymmetrie 90°.",
@@ -134,10 +134,10 @@
   {
     "question": "Was ist ein Rhombus (Raute)?",
     "options": [
-      "Rechteck mit anderen Winkeln",
-      "Parallelogramm mit vier gleich langen Seiten, aber nicht notwendig rechten Winkeln. Diagonalen stehen senkrecht aufeinander.",
-      "Dreieck mit gleichen Seiten",
-      "Viereck mit einem rechten Winkel"
+      "Ein Rechteck mit zwei spitzen und zwei stumpfen Winkeln an den vier Ecken.",
+      "Ein Parallelogramm mit vier gleich langen Seiten, dessen Diagonalen senkrecht stehen.",
+      "Ein Dreieck mit drei gleich langen Seiten und drei Winkeln von je 60°.",
+      "Ein Viereck mit genau einem rechten Winkel und einem Paar paralleler Seiten."
     ],
     "correct": 1,
     "explanation": "Rhombus: a = b = c = d (alle Seiten gleich). Keine rechten Winkel (sonst Quadrat). Diagonalen: senkrecht, halbieren sich, halbieren Winkel. Fläche: A = d₁ × d₂ / 2 (Produkt der Diagonalen durch 2).",
@@ -146,10 +146,10 @@
   {
     "question": "Was ist ein Trapez?",
     "options": [
-      "Viereck mit vier parallelen Seiten",
-      "Viereck mit genau einem Paar paralleler Seiten (Grundlinien). Die Fläche berechnet sich als: A = (a + c) / 2 × h.",
-      "Dreieck mit einer parallelen Seite",
-      "Parallelogramm ohne rechte Winkel"
+      "Ein Viereck mit zwei Paaren paralleler Seiten, dessen Fläche A = a × h beträgt.",
+      "Ein Viereck mit genau einem Paar paralleler Seiten, dessen Fläche A = (a + c) / 2 × h beträgt.",
+      "Ein Viereck mit vier gleich langen Seiten, dessen Fläche A = d₁ × d₂ / 2 beträgt.",
+      "Ein Viereck ohne parallele Seiten, dessen Fläche man durch Zerlegung in zwei Dreiecke erhält."
     ],
     "correct": 1,
     "explanation": "Trapez: a ∥ c (Grundlinien). Schenkel b und d. Fläche: A = (a+c)/2 × h (mittlere Grundlinie × Höhe). Gleichschenkliges Trapez: b=d, eine Symmetrieachse. Rechtwinkliges Trapez: ein Winkel = 90°.",
@@ -158,10 +158,10 @@
   {
     "question": "Wie berechnet man den Umfang eines Dreiecks?",
     "options": [
-      "Alle Winkel addieren",
-      "Summe aller drei Seiten: U = a + b + c.",
-      "Eine Seite mal 3",
-      "Alle Seiten mal 2"
+      "Man addiert die drei Innenwinkel: U = alpha + beta + gamma.",
+      "Man addiert die drei Seitenlängen: U = a + b + c.",
+      "Man multipliziert eine beliebige Seite mit drei: U = 3 × a.",
+      "Man verdoppelt die Summe zweier Seiten: U = 2 × (a + b)."
     ],
     "correct": 1,
     "explanation": "Umfang Dreieck: U = a + b + c. Alle drei Seitenlängen addieren. Einheit: cm, m, etc. Beim gleichseitigen Dreieck: U = 3a. Beim Rechteck: U = 2(a+b). Umfang: Länge des Randweges.",
@@ -170,10 +170,10 @@
   {
     "question": "Was sind Scheitelwinkel?",
     "options": [
-      "Winkel an der Spitze eines Dreiecks",
-      "Wenn sich zwei Geraden schneiden, sind die gegenüberliegenden Winkel gleich (Scheitelwinkel): alpha = gamma, beta = delta.",
-      "Benachbarte Winkel",
-      "Winkel von 90°"
+      "Die Winkel an der Spitze eines gleichschenkligen Dreiecks zwischen den beiden Schenkeln.",
+      "Die einander gegenüberliegenden Winkel beim Schnitt zweier Geraden; sie sind gleich groß.",
+      "Die benachbarten Winkel beim Schnitt zweier Geraden; sie ergänzen sich zu 180°.",
+      "Die Winkel zwischen einer Transversale und zwei Parallelen auf derselben Seite."
     ],
     "correct": 1,
     "explanation": "Scheitelwinkel: bei zwei sich schneidenden Geraden entstehen 4 Winkel. Gegenüberliegende sind gleich groß (Scheitelwinkel). Benachbarte Winkel sind Supplementwinkel (ergänzen sich zu 180°).",
@@ -182,10 +182,10 @@
   {
     "question": "Was sind Wechselwinkel?",
     "options": [
-      "Winkel im Dreieck",
-      "Wenn eine Gerade (Transversale) zwei parallele Geraden schneidet, sind die Wechselwinkel (auf verschiedenen Seiten der Transversale, innen) gleich groß.",
-      "Gleiche Winkel auf derselben Seite",
-      "Winkel auf einer Geraden"
+      "Winkel, die beim Schnitt zweier Geraden einander gegenüberliegen und gleich groß sind.",
+      "Winkel auf verschiedenen Seiten einer Transversale zwischen zwei Parallelen; sie sind gleich groß.",
+      "Winkel auf derselben Seite einer Transversale, einer innen, einer außen (F-Winkel).",
+      "Winkel, die an einer Geraden nebeneinanderliegen und sich zu 180° ergänzen."
     ],
     "correct": 1,
     "explanation": "Wechselwinkel: zwei parallele Geraden + Transversale. Wechselwinkel: Z-Winkel (aussehen wie Z oder N), gleich groß. Stufenwinkel (F-Winkel): gleiche Seite, gleich groß. Wichtig für Beweis Winkelsumme.",
@@ -194,10 +194,10 @@
   {
     "question": "Was ist die Höhe in einem Dreieck?",
     "options": [
-      "Die längste Seite",
-      "Senkrechte von einem Eckpunkt auf die gegenüberliegende Seite (oder deren Verlängerung). Jedes Dreieck hat drei Höhen.",
-      "Die Mittelsenkrechte",
-      "Der Abstand zweier Ecken"
+      "Die längste Seite des Dreiecks, die dem größten Innenwinkel gegenüberliegt.",
+      "Das Lot von einem Eckpunkt auf die gegenüberliegende Seite; jedes Dreieck hat drei Höhen.",
+      "Die Senkrechte durch den Mittelpunkt einer Seite; sie führt zum Umkreismittelpunkt.",
+      "Die Verbindung eines Eckpunkts mit dem Mittelpunkt der gegenüberliegenden Seite."
     ],
     "correct": 1,
     "explanation": "Höhe h_a: von Eckpunkt A senkrecht auf Seite a. Alle drei Höhen schneiden sich im Höhenschnittpunkt (Orthozentrum). Fläche: A = g × h/2. Beim stumpfwinkligen Dreieck: Höhe liegt außerhalb.",
@@ -206,10 +206,10 @@
   {
     "question": "Was ist die Mittelsenkrechte?",
     "options": [
-      "Linie durch Mittelpunkt parallel zur Seite",
-      "Senkrechte durch den Mittelpunkt einer Seite. Alle Punkte auf der Mittelsenkrechten sind gleich weit von den Endpunkten der Seite entfernt. Alle drei Mittelsenkrechten schneiden sich im Umkreismittelpunkt.",
-      "Winkelsymmetrale",
-      "Schwerlinie"
+      "Eine Gerade durch den Mittelpunkt einer Seite; die drei treffen sich im Höhenschnittpunkt.",
+      "Die Senkrechte durch den Mittelpunkt einer Seite; die drei treffen sich im Umkreismittelpunkt.",
+      "Die Halbierende eines Innenwinkels; die drei Winkelhalbierenden treffen sich im Inkreismittelpunkt.",
+      "Die Verbindung von Eckpunkt und Seitenmitte; die drei Schwerlinien treffen sich im Schwerpunkt."
     ],
     "correct": 1,
     "explanation": "Mittelsenkrechte: Lot durch Seitenmittelpunkt. Eigenschaft: jeder Punkt M auf ihr: MA = MB (gleichweit von beiden Eckpunkten). Schnittpunkt der drei Mittelsenkrechten = Umkreismittelpunkt (gleich weit von allen 3 Ecken).",
@@ -218,10 +218,10 @@
   {
     "question": "Was ist eine Winkelsymmetrale?",
     "options": [
-      "Linie, die Seiten halbiert",
-      "Linie, die einen Winkel in zwei gleich große Teile teilt. Alle drei Winkelsymmetralen schneiden sich im Inkreismittelpunkt.",
-      "Mittelsenkrechte",
-      "Höhenlinie"
+      "Eine Linie, die eine Seite in zwei gleich lange Teile teilt und senkrecht auf ihr steht.",
+      "Eine Linie, die einen Winkel in zwei gleich große Teile teilt; alle drei treffen sich im Inkreismittelpunkt.",
+      "Eine Linie, die durch den Mittelpunkt einer Seite verläuft und zum Umkreismittelpunkt führt.",
+      "Eine Linie, die von einem Eckpunkt senkrecht auf die gegenüberliegende Seite fällt."
     ],
     "correct": 1,
     "explanation": "Winkelsymmetrale: halbiert Winkel (Winkelhalbiere). Eigenschaft: jeder Punkt auf ihr ist gleich weit von beiden Winkelschenkeln entfernt. Inkreismittelpunkt: Schnittpunkt aller 3 Winkelsymetralen. Inkreis: berührt alle 3 Seiten.",
@@ -230,10 +230,10 @@
   {
     "question": "Was ist der Schwerpunkt eines Dreiecks?",
     "options": [
-      "Flächenmittelpunkt",
-      "Schnittpunkt der drei Schwerlinien (Median: Verbindung Eckpunkt – Mittelpunkt der Gegenseite). Teilt jede Schwerlinie im Verhältnis 2:1 vom Eckpunkt aus.",
-      "Umkreismittelpunkt",
-      "Inkreismittelpunkt"
+      "Der Schnittpunkt der drei Höhen; er kann auch außerhalb des Dreiecks liegen.",
+      "Der Schnittpunkt der drei Schwerlinien; er teilt jede im Verhältnis 2:1 vom Eckpunkt aus.",
+      "Der Schnittpunkt der drei Mittelsenkrechten; er ist von allen drei Ecken gleich weit entfernt.",
+      "Der Schnittpunkt der drei Winkelhalbierenden; er ist der Mittelpunkt des Inkreises."
     ],
     "correct": 1,
     "explanation": "Schwerpunkt S: Schnittpunkt der 3 Mediane. S teilt jeden Median 2:1 (vom Eckpunkt). Physikalisch: Auflagepunkt, bei dem Dreieck im Gleichgewicht. Koordinaten: ((x_A+x_B+x_C)/3; (y_A+y_B+y_C)/3).",
@@ -242,10 +242,10 @@
   {
     "question": "Was ist Kongruenz in der Geometrie?",
     "options": [
-      "Ähnlichkeit",
-      "Zwei Figuren sind kongruent, wenn sie durch Verschiebung, Drehung oder Spiegelung aufeinander abgebildet werden können. Gleiche Form und Größe.",
-      "Gleiches Verhältnis der Seiten",
-      "Gleiche Winkel"
+      "Zwei Figuren stimmen in allen Winkeln überein, ihre Seiten stehen im gleichen Verhältnis.",
+      "Zwei Figuren lassen sich durch Verschieben, Drehen oder Spiegeln zur Deckung bringen.",
+      "Zwei Figuren haben denselben Flächeninhalt, können aber verschiedene Formen besitzen.",
+      "Zwei Figuren besitzen gleich viele Symmetrieachsen und dieselbe Anzahl an Ecken."
     ],
     "correct": 1,
     "explanation": "Kongruenz: form- und größengleich. Kongruenzabbildungen: Verschiebung, Drehung, Spiegelung, Gleitspiegelung. Kongruente Dreiecke: SSS, SWS, WSW, SSW-Kongruenzsätze. Zeichen: ≅.",
@@ -254,10 +254,10 @@
   {
     "question": "Was sind die Kongruenzsätze für Dreiecke?",
     "options": [
-      "Nur SSS und SWS",
-      "SSS (3 Seiten), SWS (2 Seiten + eingeschl. Winkel), WSW (2 Winkel + eingeschl. Seite), SSW (2 Seiten + nicht-eingeschl. Winkel, eingeschränkt).",
-      "Nur WSW",
-      "Keine Kongruenzsätze für Dreiecke"
+      "SSS und SWS; Angaben zu Winkeln reichen für einen Kongruenzsatz nicht aus.",
+      "SSS, SWS, WSW und SSW; sie legen ein Dreieck jeweils eindeutig fest.",
+      "WSW und WWW; drei gleich große Winkel legen ein Dreieck eindeutig fest.",
+      "SSS, WWW und SWW; gleiche Seitenverhältnisse genügen für die Kongruenz."
     ],
     "correct": 1,
     "explanation": "Kongruenzsätze: SSS: drei Seiten gleich. SWS: zwei Seiten und eingeschlossener Winkel. WSW: zwei Winkel und eingeschlossene Seite. SSW: zwei Seiten und nicht-eingeschlossener Winkel (Eindeutigkeit nur wenn der Winkel der größeren Seite gegenüberliegt).",
@@ -266,10 +266,10 @@
   {
     "question": "Was ist Ähnlichkeit in der Geometrie?",
     "options": [
-      "Gleiche Fläche",
-      "Zwei Figuren sind ähnlich, wenn sie gleiche Winkel haben und alle Seiten im gleichen Verhältnis (Ähnlichkeitsfaktor k) stehen. Gleiche Form, verschiedene Größe.",
-      "Gleiche Seiten",
-      "Gleiche Symmetrie"
+      "Zwei Figuren besitzen den gleichen Flächeninhalt, ihre Winkel dürfen dabei abweichen.",
+      "Zwei Figuren stimmen in allen Winkeln überein, ihre Seiten stehen im gleichen Verhältnis.",
+      "Zwei Figuren haben gleich lange Seiten, ihre Winkel können verschieden groß sein.",
+      "Zwei Figuren besitzen gleich viele Symmetrieachsen und denselben Umfang."
     ],
     "correct": 1,
     "explanation": "Ähnlichkeit: Winkel gleich, Seiten proportional. k = Maßstabsfaktor. Flächen: k². Volumen: k³. Ähnlichkeit von Dreiecken: WW (zwei Winkel gleich), SSS (Seiten proportional), SWS (Seiten proportional + eingeschlossener Winkel).",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist der Umfang eines Quadrats mit Seite a?",
     "options": [
-      "a²",
-      "U = 4 × a. Alle vier Seiten gleich lang, also Summe = 4a.",
-      "2 × a",
-      "a + 4"
+      "U = a², also die Seitenlänge mit sich selbst multipliziert.",
+      "U = 4 × a, also die Seitenlänge viermal addiert.",
+      "U = 2 × a, also die doppelte Länge einer einzelnen Seite.",
+      "U = a² × 4, also die vierfache Fläche des Quadrats."
     ],
     "correct": 1,
     "explanation": "Quadrat-Umfang: U = 4a. Fläche: A = a². Aus Umfang Seite bestimmen: a = U/4. Beispiel: U=20cm → a=5cm, A=25cm². Merke: Umfang = Randlänge; Fläche = innere Größe (verschiedene Einheiten!).",
@@ -290,10 +290,10 @@
   {
     "question": "Wie berechnet man den Flächeninhalt eines Trapez?",
     "options": [
-      "(a + c) × h",
-      "A = (a + c) / 2 × h. Mittlere Parallele (Mittelparallele) mal Höhe. a und c sind die parallelen Seiten.",
-      "a × h / 2",
-      "(a + b + c + d) / 2"
+      "A = (a + c) × h, also die Summe der Parallelen mal die Höhe.",
+      "A = (a + c) / 2 × h, also die Mittelparallele mal die Höhe.",
+      "A = a × h / 2, also die längere Parallele mal Höhe, dann halbiert.",
+      "A = (a + b + c + d) / 2, also der halbe Umfang des Trapezes."
     ],
     "correct": 1,
     "explanation": "Trapezfläche: A = (a+c)/2 × h. (a+c)/2 ist die Mittelparallele (Durchschnitt der Grundlinien). h: Abstand der Grundlinien. Wenn a=c: Parallelogramm. Wenn c=0: Dreieck (a × h / 2).",
@@ -302,10 +302,10 @@
   {
     "question": "Was ist Symmetrie in der Geometrie?",
     "options": [
-      "Gleiche Fläche auf beiden Seiten",
-      "Achsensymmetrie: Spiegelung an einer Achse ergibt dasselbe Bild. Punktsymmetrie: Drehung um 180° um einen Punkt ergibt dasselbe Bild.",
-      "Gleiche Winkel",
-      "Nur bei Kreisen"
+      "Eine Figur besitzt auf beiden Seiten einer Linie jeweils den gleichen Flächeninhalt.",
+      "Achsensymmetrie: Spiegelung an einer Achse; Punktsymmetrie: Drehung um 180° um einen Punkt.",
+      "Eine Figur besitzt an allen Ecken gleich große Winkel und gleich lange Seiten.",
+      "Eine Eigenschaft, die ausschließlich bei Kreisen und regelmäßigen Vielecken auftritt."
     ],
     "correct": 1,
     "explanation": "Achsensymmetrie: Achse als Falzlinie → beide Hälften deckungsgleich. Beispiele: Rechteck (2), gleichseitiges Dreieck (3), Kreis (unendlich). Punktsymmetrie: Parallelogramm, Rechteck. Symmetrie in Natur und Architektur.",
@@ -314,10 +314,10 @@
   {
     "question": "Was sind die Innenwinkel eines regelmäßigen n-Ecks?",
     "options": [
-      "90 Grad immer",
-      "(n-2) × 180° / n. Quadrat: (4-2)×180/4 = 90°. Regelmäßiges Sechseck: (6-2)×180/6 = 120°.",
-      "360 Grad / n",
-      "n × 90 Grad"
+      "Jeder Innenwinkel misst 90°, unabhängig von der Anzahl der Ecken.",
+      "Jeder Innenwinkel misst (n - 2) × 180° / n, beim Sechseck also 120°.",
+      "Jeder Innenwinkel misst 360° / n, beim Sechseck also genau 60°.",
+      "Jeder Innenwinkel misst n × 90°, beim Sechseck also ganze 540°."
     ],
     "correct": 1,
     "explanation": "Innenwinkel reguläres n-Eck: (n-2)×180°/n. Dreieck: (3-2)×180/3=60°. Quadrat: 90°. Pentagon: 108°. Hexagon: 120°. Summe aller Innenwinkel: (n-2)×180°.",
@@ -326,10 +326,10 @@
   {
     "question": "Was ist der Außenwinkel eines Dreiecks?",
     "options": [
-      "Differenz zweier Winkel",
-      "Der Außenwinkel an einer Ecke ist gleich der Summe der beiden nicht anliegenden Innenwinkel.",
-      "Der Supplementwinkel zum Innenwinkel",
-      "180° minus Innenwinkel"
+      "Er ist die Differenz der beiden nicht anliegenden Innenwinkel des Dreiecks.",
+      "Er ist die Summe der beiden nicht anliegenden Innenwinkel des Dreiecks.",
+      "Er ist genauso groß wie der anliegende Innenwinkel an derselben Ecke.",
+      "Er ist stets 90° größer als der anliegende Innenwinkel an derselben Ecke."
     ],
     "correct": 1,
     "explanation": "Außenwinkel: delta = alpha + beta (delta ist Außenwinkel bei Ecke C, alpha und beta sind die anderen Innenwinkel). Begründung: delta + gamma = 180° und alpha + beta + gamma = 180° → delta = alpha + beta. Nützlich für Berechnungen.",
@@ -338,10 +338,10 @@
   {
     "question": "Was sind Supplementwinkel?",
     "options": [
-      "Gleich große Winkel",
-      "Zwei Winkel, die zusammen 180° ergeben: alpha + beta = 180°. Liegen auf einer geraden Linie.",
-      "Winkel die zusammen 90° ergeben",
-      "Gegenüberliegende Winkel"
+      "Zwei Winkel, die genau gleich groß sind und am selben Scheitelpunkt anliegen.",
+      "Zwei Winkel, die zusammen 180° ergeben und an einer Geraden nebeneinanderliegen.",
+      "Zwei Winkel, die zusammen 90° ergeben und im rechtwinkligen Dreieck vorkommen.",
+      "Zwei Winkel, die sich beim Schnitt zweier Geraden gegenüberliegen und gleich groß sind."
     ],
     "correct": 1,
     "explanation": "Supplementwinkel: Summe = 180°. Auch: Nebenwinkel. alpha = 70° → Supplement = 110°. Komplementwinkel: Summe = 90°. Auf Geraden: alle Winkel ergeben 180°. Wichtig bei parallelen Geraden.",
@@ -350,10 +350,10 @@
   {
     "question": "Was sind Komplementwinkel?",
     "options": [
-      "Winkel die 180° ergeben",
-      "Zwei Winkel, die zusammen 90° ergeben: alpha + beta = 90°. Vorkommen: in rechtwinkligen Dreiecken (die beiden Nicht-90°-Winkel).",
-      "Winkel die 360° ergeben",
-      "Gleiche Winkel"
+      "Zwei Winkel, die zusammen 180° ergeben und an einer Geraden nebeneinanderliegen.",
+      "Zwei Winkel, die zusammen 90° ergeben, etwa die spitzen Winkel im rechtwinkligen Dreieck.",
+      "Zwei Winkel, die zusammen 360° ergeben und damit einen Vollwinkel bilden.",
+      "Zwei Winkel, die gleich groß sind und einander am Scheitelpunkt gegenüberliegen."
     ],
     "correct": 1,
     "explanation": "Komplementwinkel: Summe = 90°. In rechtwinkligem Dreieck: alpha + beta = 90° (da dritter Winkel = 90°). 35° → Komplementwinkel = 55°. Merke: Komplement (vervollständigen zu 90°) vs. Supplement (zu 180°).",
@@ -362,10 +362,10 @@
   {
     "question": "Wie konstruiert man das Lot auf eine Gerade durch einen Punkt?",
     "options": [
-      "Mit dem Lineal allein",
-      "Mit Zirkel und Lineal: Punkt auf Gerade: Kreisbogen schlägt zwei Punkte auf der Geraden, dann Mittelsenkrechte (Überschneidungspunkte verbinden). Punkt außerhalb: ähnlich.",
-      "Nur mit Winkelmesser",
-      "Durch Schätzen"
+      "Man verbindet den Punkt mit dem Lineal so mit der Geraden, dass die Strecke möglichst kurz wird.",
+      "Man schlägt mit dem Zirkel einen Bogen um den Punkt und errichtet über den Schnittpunkten die Mittelsenkrechte.",
+      "Man legt den Winkelmesser an die Gerade an und trägt den Winkel von 90° nach Augenmaß ab.",
+      "Man zeichnet zwei Parallelen zur Geraden und verbindet deren Schnittpunkte mit dem Punkt."
     ],
     "correct": 1,
     "explanation": "Lot konstruieren: Punkt P auf Gerade g. Kreisbogen um P (Radius r): schneidet g in A und B. Kreisbogen um A und B (gleicher Radius): Schnittpunkte Q, R. QR = gesuchtes Lot. Winkel = 90° ohne Messen.",
@@ -374,10 +374,10 @@
   {
     "question": "Was ist der Unterschied zwischen Umfang und Fläche?",
     "options": [
-      "Dasselbe",
-      "Umfang: Länge des Randes (1D, Einheit cm/m). Fläche: Inhalt der Fläche (2D, Einheit cm²/m²).",
-      "Umfang ist immer größer",
-      "Fläche ist immer größer"
+      "Beide Größen beschreiben dasselbe und werden in derselben Einheit angegeben.",
+      "Der Umfang misst die Länge des Randes in cm, die Fläche den Inhalt in cm².",
+      "Der Umfang ist bei jeder Figur zahlenmäßig größer als ihr Flächeninhalt.",
+      "Die Fläche ist bei jeder Figur zahlenmäßig größer als ihr Umfang."
     ],
     "correct": 1,
     "explanation": "Umfang: eindimensional, Längeneinheit. Fläche: zweidimensional, Quadrateinheit. Rechteck 3×4 cm: U = 14 cm (Rand), A = 12 cm². Verschiedene Dimensionen, nicht vergleichbar. Einheiten nicht vertauschen.",
@@ -386,10 +386,10 @@
   {
     "question": "Was sind Stufenwinkel (F-Winkel)?",
     "options": [
-      "Winkel im Dreieck",
-      "Wenn eine Transversale zwei parallele Geraden schneidet, sind Stufenwinkel (auf derselben Seite der Transversale, einer innen, einer außen) gleich groß. Aussehen wie \"F\".",
-      "Supplementwinkel",
-      "Scheitelwinkel"
+      "Winkel, die beim Schnitt zweier Geraden einander gegenüberliegen und gleich groß sind.",
+      "Winkel auf derselben Seite einer Transversale zweier Parallelen, einer innen, einer außen.",
+      "Winkel auf verschiedenen Seiten einer Transversale zweier Parallelen, beide innen.",
+      "Winkel, die an einer Geraden nebeneinanderliegen und sich zu 180° ergänzen."
     ],
     "correct": 1,
     "explanation": "Stufenwinkel: parallele Geraden + Transversale. Auf gleicher Seite, gleich groß. F-Winkel. Wechselwinkel (Z-Winkel): gegenüberliegende Seiten, auch gleich groß. Beides nur bei parallelen Geraden.",
@@ -398,10 +398,10 @@
   {
     "question": "Was ist die Diagonale eines Vierecks?",
     "options": [
-      "Eine Seitenlinie",
-      "Verbindungsstrecke zweier nicht-benachbarter Ecken. Rechteck: 2 gleich lange Diagonalen. Quadrat: 2 gleich lange, senkrechte Diagonalen. Rhombus: 2 senkrechte (ungleiche) Diagonalen.",
-      "Die Höhenlinie",
-      "Mittellinie"
+      "Eine Verbindungsstrecke zweier benachbarter Ecken, die zugleich eine Seite bildet.",
+      "Eine Verbindungsstrecke zweier nicht benachbarter Ecken; jedes Viereck hat davon zwei.",
+      "Eine Strecke, die von einer Ecke senkrecht auf die gegenüberliegende Seite fällt.",
+      "Eine Strecke, die die Mittelpunkte zweier gegenüberliegender Seiten verbindet."
     ],
     "correct": 1,
     "explanation": "Diagonalen: Verbindung gegenüberliegender Ecken. n-Eck: n(n-3)/2 Diagonalen. Viereck: 2. Fünfeck: 5. Sechseck: 9. Eigenschaften: Rechteck (gleich lang), Raute (senkrecht), Quadrat (gleich lang + senkrecht).",
@@ -410,10 +410,10 @@
   {
     "question": "Was ist ein Koordinatensystem?",
     "options": [
-      "Ein Lineal",
-      "System aus zwei senkrechten Zahlengeraden (x-Achse und y-Achse), die sich im Ursprung (0,0) schneiden. Punkte werden als (x,y)-Paare angegeben.",
-      "Eine Karte",
-      "Nur für Graphen"
+      "Ein Lineal mit zwei Skalen, mit dem sich Längen und Winkel zugleich abmessen lassen.",
+      "Zwei senkrecht zueinander stehende Zahlengeraden, die sich im Ursprung (0|0) schneiden.",
+      "Ein Raster aus lauter gleich großen Quadraten, das keinen festgelegten Nullpunkt besitzt.",
+      "Eine Darstellungsform, die ausschließlich zum Zeichnen von Funktionsgraphen dient."
     ],
     "correct": 1,
     "explanation": "Kartesisches Koordinatensystem: x-Achse (waagerecht), y-Achse (senkrecht), Ursprung O(0,0). Quadranten I-IV. Punkt P(3,2): 3 rechts, 2 hoch. P(-1,4): 1 links, 4 hoch. Abstände und Figuren beschreibbar.",
@@ -422,10 +422,10 @@
   {
     "question": "Wie berechnet man den Abstand zweier Punkte im Koordinatensystem?",
     "options": [
-      "x-Koordinaten addieren",
-      "d = Wurzel((x_B - x_A)² + (y_B - y_A)²). Satz des Pythagoras auf die Koordinatendifferenzen angewendet.",
-      "y-Koordinaten subtrahieren",
-      "(x_A + y_B) / 2"
+      "d = (x_A + x_B) + (y_A + y_B), also die Summe aller vier Koordinaten.",
+      "d = Wurzel((x_B - x_A)² + (y_B - y_A)²), also Pythagoras auf die Koordinatendifferenzen.",
+      "d = (x_B - x_A) + (y_B - y_A), also die Summe der beiden Koordinatendifferenzen.",
+      "d = (x_A + y_B) / 2, also der Mittelwert aus x- und y-Koordinate."
     ],
     "correct": 1,
     "explanation": "Abstandsformel: d = Wurzel(Δx² + Δy²). A(1,2), B(4,6): Δx=3, Δy=4; d=Wurzel(9+16)=Wurzel(25)=5. Entspricht Hypotenuse des rechtwinkligen Dreiecks mit Katheten Δx und Δy.",
@@ -434,10 +434,10 @@
   {
     "question": "Was ist ein Mittelpunkt einer Strecke?",
     "options": [
-      "Endpunkt der Strecke",
-      "Punkt in der Mitte einer Strecke: M = ((x_A+x_B)/2; (y_A+y_B)/2). Gleich weit von beiden Endpunkten.",
-      "Schnittpunkt zweier Strecken",
-      "Anfangspunkt"
+      "Der Punkt mit M = (x_B - x_A; y_B - y_A), der die Richtung der Strecke angibt.",
+      "Der Punkt mit M = ((x_A + x_B)/2; (y_A + y_B)/2), der von beiden Enden gleich weit entfernt ist.",
+      "Der Punkt mit M = (x_A + x_B; y_A + y_B), in dem sich zwei Strecken kreuzen.",
+      "Der Punkt mit M = ((x_A + 2x_B)/3; (y_A + 2y_B)/3), der die Strecke im Verhältnis 2:1 teilt."
     ],
     "correct": 1,
     "explanation": "Mittelpunkt M: M_x = (x_A+x_B)/2, M_y = (y_A+y_B)/2. A(2,4), B(6,2): M = (4,3). Eigenschaft: AM = MB. Konstruktion: Mittelsenkrechte oder Messersatz.",
@@ -446,10 +446,10 @@
   {
     "question": "Was sind Scheitelpunkt und Scheitelwinkel?",
     "options": [
-      "Endpunkt einer Seite",
-      "Scheitelpunkt: Eckpunkt, an dem zwei Seiten aufeinandertreffen. Scheitelwinkel: der Winkel an diesem Punkt.",
-      "Mittelpunkt einer Seite",
-      "Schnittpunkt der Diagonalen"
+      "Scheitelpunkt: der Mittelpunkt einer Seite; Scheitelwinkel: der Winkel zur Symmetrieachse.",
+      "Scheitelpunkt: die Ecke, in der zwei Seiten zusammentreffen; Scheitelwinkel: der Winkel an dieser Ecke.",
+      "Scheitelpunkt: der Schnittpunkt der Diagonalen; Scheitelwinkel: der Winkel zwischen den Diagonalen.",
+      "Scheitelpunkt: der Mittelpunkt des Umkreises; Scheitelwinkel: der Winkel über dem Durchmesser."
     ],
     "correct": 1,
     "explanation": "Scheitelpunkt: Vertex. Scheitelwinkel: Innenwinkel an einem Vertex. Im gleichschenkligen Dreieck: Scheitelwinkel = Winkel zwischen den Schenkeln. Basis = gegenüberliegende Seite. Basiswinkel: gleich groß beim gleichschenkligen Dreieck.",
@@ -458,10 +458,10 @@
   {
     "question": "Was ist die Summe der Innenwinkel eines Vierecks?",
     "options": [
-      "180 Grad",
-      "360 Grad. Ein Viereck kann durch eine Diagonale in zwei Dreiecke geteilt werden: 2 × 180° = 360°.",
-      "270 Grad",
-      "450 Grad"
+      "180 Grad, denn das Viereck lässt sich in ein einziges Dreieck zerlegen.",
+      "360 Grad, denn das Viereck lässt sich mit einer Diagonale in zwei Dreiecke zerlegen.",
+      "270 Grad, denn zu den 180 Grad des Dreiecks kommt ein rechter Winkel hinzu.",
+      "450 Grad, denn zu den 360 Grad des Vollwinkels kommt ein rechter Winkel hinzu."
     ],
     "correct": 1,
     "explanation": "Innenwinkelsumme n-Eck: (n-2) × 180°. Viereck: (4-2) × 180° = 360°. Fünfeck: 540°. Sechseck: 720°. Beweis: Dreieckszerlegung. Quadrat: 4 × 90° = 360°.",
@@ -470,10 +470,10 @@
   {
     "question": "Was ist Parallelität und wie prüft man sie?",
     "options": [
-      "Gleiche Länge",
-      "Zwei Geraden sind parallel, wenn sie denselben Abstand haben und sich nicht schneiden. Prüfung: gleiche Steigung (im KS), oder Wechselwinkel/Stufenwinkel gleich.",
-      "Gleiche Winkel",
-      "Senkrecht aufeinander"
+      "Geraden sind parallel, wenn sie gleich lang sind; geprüft wird durch Abmessen der Länge.",
+      "Geraden sind parallel, wenn sie überall denselben Abstand haben; geprüft wird über gleiche Steigung m.",
+      "Geraden sind parallel, wenn das Produkt ihrer Steigungen -1 ergibt; geprüft wird über m₁ × m₂.",
+      "Geraden sind parallel, wenn sie sich unter 90° schneiden; geprüft wird mit dem Geodreieck."
     ],
     "correct": 1,
     "explanation": "Parallele Geraden: ∥. Kein Schnittpunkt. Im Koordinatensystem: gleiche Steigung m. g: y=2x+1 ∥ h: y=2x-3 (gleiche Steigung 2, verschiedene Achsenabschnitte). Senkrecht: Steigungen m₁×m₂=-1.",

@@ -5,7 +5,7 @@
       "x = (-b ± √(b²-4ac)) / 2a",
       "x = (b ± √(b²-4ac)) / 2a",
       "x = (-b ± √(b²+4ac)) / 2a",
-      "x = -b / 2a"
+      "x = (-b ± √(b²-4ac)) / 2c"
     ],
     "correct": 0,
     "explanation": "Mitternachtsformel: x = (-b ± √(b²-4ac)) / 2a. Diskriminante D = b²-4ac: D>0: zwei Lösungen, D=0: eine Lösung, D<0: keine reelle Lösung.",
@@ -39,9 +39,9 @@
     "question": "Wie lautet die Scheitelpunktform einer Parabel?",
     "options": [
       "y = ax² + bx + c",
-      "y = a(x-d)² + e, wobei (d|e) der Scheitelpunkt ist",
-      "y = a·x + b",
-      "y = a/x"
+      "y = a(x-d)² + e",
+      "y = a(x-d)(x-e)",
+      "y = (ax-d)² + e"
     ],
     "correct": 1,
     "explanation": "Scheitelpunktform: y = a(x-d)² + e. Scheitelpunkt S(d|e). a>0: Parabel öffnet nach oben. a<0: nach unten. Normalform durch quadratische Ergänzung umwandelbar.",
@@ -62,10 +62,10 @@
   {
     "question": "Was ist quadratische Ergänzung?",
     "options": [
-      "Eine Vereinfachung",
-      "Methode um ax²+bx+c in Scheitelpunktform umzuwandeln: x²+bx = (x+b/2)²-(b/2)²",
-      "Eine Faktorisierung",
-      "Eine numerische Methode"
+      "Ausklammern des Leitkoeffizienten aus allen Gliedern",
+      "Umformung von ax²+bx+c in die Scheitelpunktform",
+      "Zerlegung eines Polynoms in seine Linearfaktoren",
+      "Näherungsverfahren zur Bestimmung von Nullstellen"
     ],
     "correct": 1,
     "explanation": "Quadratische Ergänzung: x²+bx+c = (x+b/2)² - (b/2)² + c. Beispiel: x²+6x+5 = (x+3)²-9+5 = (x+3)²-4. Scheitelpunkt S(-3|-4).",
@@ -77,7 +77,7 @@
       "x = ±1",
       "x = ±2",
       "x = ±4",
-      "x = 4"
+      "x = ±√2"
     ],
     "correct": 1,
     "explanation": "2x²-8=0 → 2x²=8 → x²=4 → x=±√4 = ±2. Immer ±, da beide Werte die Gleichung erfüllen: 2(4)-8=0 ✓",
@@ -86,10 +86,10 @@
   {
     "question": "Was ist ein Linearfaktor?",
     "options": [
-      "x²+bx+c",
-      "(x-x₀): ein Faktor der Form (x minus eine Nullstelle x₀)",
-      "ax+b",
-      "Ein Faktor ohne x"
+      "Ein Term zweiten Grades der Form x² + bx + c",
+      "Ein Faktor der Form (x - x₀) zu einer Nullstelle x₀",
+      "Der Koeffizient vor dem linearen Glied eines Polynoms",
+      "Das konstante Glied in einem Produkt von Polynomen"
     ],
     "correct": 1,
     "explanation": "Linearfaktor: (x-x₀) bei Nullstelle x₀. Quadratisches Polynom mit Nullstellen x₁, x₂: a·(x-x₁)(x-x₂). Beispiel: x²-5x+6 = (x-2)(x-3).",
@@ -98,10 +98,10 @@
   {
     "question": "Was ist eine lineare Funktion?",
     "options": [
-      "y = x²",
-      "y = mx + b, wobei m die Steigung und b der y-Achsenabschnitt ist",
-      "y = 1/x",
-      "y = √x"
+      "y = a·x² + c",
+      "y = m·x + b",
+      "y = a/x + c",
+      "y = a·√x + c"
     ],
     "correct": 1,
     "explanation": "Lineare Funktion: y = mx + b. m = Steigung (Δy/Δx). b = y-Achsenabschnitt (Wert bei x=0). Gerade im Koordinatensystem.",
@@ -110,10 +110,10 @@
   {
     "question": "Wie berechnet man den Schnittpunkt zweier Geraden y=2x+1 und y=-x+4?",
     "options": [
-      "Einsetzen: 2x+1=-x+4 → x=1, y=3",
-      "x=4, y=1",
-      "x=0, y=1",
-      "x=2, y=5"
+      "x = 1, y = 3",
+      "x = 4, y = 1",
+      "x = 0, y = 1",
+      "x = 2, y = 5"
     ],
     "correct": 0,
     "explanation": "Gleichsetzen: 2x+1 = -x+4 → 3x = 3 → x = 1. Einsetzen: y = 2(1)+1 = 3. Schnittpunkt S(1|3). Probe: -1+4=3 ✓",
@@ -122,10 +122,10 @@
   {
     "question": "Was ist ein Gleichungssystem?",
     "options": [
-      "Eine einzige Gleichung",
-      "Mehrere Gleichungen mit mehreren Unbekannten, die gleichzeitig erfüllt sein müssen",
-      "Eine quadratische Gleichung",
-      "Ein Ungleichungssystem"
+      "Eine einzelne Gleichung mit genau einer Unbekannten",
+      "Mehrere Gleichungen, die gleichzeitig erfüllt sein müssen",
+      "Eine Gleichung, in der die Unbekannte quadriert wird",
+      "Mehrere Ungleichungen mit gemeinsamer Lösungsmenge"
     ],
     "correct": 1,
     "explanation": "Lineares Gleichungssystem (LGS): z.B. 2x+y=5 und x-y=1. Lösungsmethoden: Einsetzverfahren, Additionsverfahren, Gleichsetzverfahren, Matrixrechnung.",
@@ -146,10 +146,10 @@
   {
     "question": "Was ist eine Potenzfunktion?",
     "options": [
-      "f(x) = xⁿ für beliebiges n",
-      "f(x) = aˣ",
-      "f(x) = log(x)",
-      "f(x) = sin(x)"
+      "f(x) = xⁿ mit festem Exponenten n",
+      "f(x) = aˣ mit fester Basis a",
+      "f(x) = logₐ(x) mit fester Basis a",
+      "f(x) = sin(x) mit fester Periode 2π"
     ],
     "correct": 0,
     "explanation": "Potenzfunktion: f(x) = xⁿ. n>0: Polynom. n=-1: Hyperbel (1/x). n=0,5: Wurzelfunktion (√x). Gerade Exponenten: achsensymmetrisch. Ungerade: punktsymmetrisch.",
@@ -182,10 +182,10 @@
   {
     "question": "Was ist der Betrag |x|?",
     "options": [
-      "x für alle x",
-      "Der nicht-negative Wert von x: |x|=x für x≥0 und |x|=-x für x<0",
-      "x² immer",
-      "Nur für x>0 definiert"
+      "Der Wert von x mit umgekehrtem Vorzeichen",
+      "Der Abstand von x zur Null, also nie negativ",
+      "Das Quadrat von x, also der Wert x²",
+      "Der auf ganze Zahlen gerundete Wert von x"
     ],
     "correct": 1,
     "explanation": "Betragsfunktion: |3|=3, |-5|=5. Geometrisch: Abstand von 0 auf dem Zahlenstrahl. Betraggleichung |x-2|=3: x-2=3 oder x-2=-3, also x=5 oder x=-1.",
@@ -194,10 +194,10 @@
   {
     "question": "Was ist eine Exponentialfunktion?",
     "options": [
-      "f(x) = xⁿ",
-      "f(x) = aˣ mit Basis a>0, a≠1",
-      "f(x) = ax + b",
-      "f(x) = a/x"
+      "f(x) = xⁿ mit festem Exponenten n",
+      "f(x) = aˣ mit Basis a > 0, a ≠ 1",
+      "f(x) = a·x + b mit Steigung a",
+      "f(x) = a/x mit Konstante a ≠ 0"
     ],
     "correct": 1,
     "explanation": "Exponentialfunktion: f(x)=aˣ. a>1: wachsend (exponentielles Wachstum). 0<a<1: fallend (exponentieller Zerfall). Wichtige Basis: e≈2,718 (eulersche Zahl). Graph schneidet immer y-Achse bei (0|1).",
@@ -206,10 +206,10 @@
   {
     "question": "Was ist der natürliche Logarithmus ln(x)?",
     "options": [
-      "log₁₀(x)",
-      "Der Logarithmus zur Basis e (ln(x) = logₑ(x)). Umkehrfunktion von eˣ.",
-      "log₂(x)",
-      "Logarithmus zur Basis 10"
+      "Der Logarithmus zur Basis 10, also log₁₀(x)",
+      "Der Logarithmus zur Basis e, also logₑ(x)",
+      "Der Logarithmus zur Basis 2, also log₂(x)",
+      "Der Kehrwert des Logarithmus, also 1/log(x)"
     ],
     "correct": 1,
     "explanation": "ln(x): Basis e≈2,718. ln(e)=1. ln(1)=0. ln(eˣ)=x. Rechenregeln: ln(a·b)=ln(a)+ln(b), ln(aⁿ)=n·ln(a).",
@@ -230,10 +230,10 @@
   {
     "question": "Was ist eine Polynomfunktion?",
     "options": [
-      "Nur quadratische Funktionen",
-      "Eine Summe von Potenzfunktionen mit ganzzahligen positiven Exponenten: f(x) = aₙxⁿ + ... + a₁x + a₀",
-      "Eine Bruchfunktion",
-      "Eine Wurzelfunktion"
+      "Eine Summe von Potenzen von x mit beliebigen reellen Exponenten",
+      "Eine Summe von Potenzen von x mit ganzzahligen, nicht negativen Exponenten",
+      "Ein Quotient aus zwei Termen mit der Variablen x im Nenner",
+      "Eine Funktion, bei der die Variable x unter einer Wurzel steht"
     ],
     "correct": 1,
     "explanation": "Polynom: f(x)=aₙxⁿ+...+a₁x+a₀. Grad n = höchster Exponent. Grad 1: linear. Grad 2: quadratisch. Grad 3: kubisch. Nullstellen: max. n Stück (Fundamentalsatz der Algebra).",
@@ -242,10 +242,10 @@
   {
     "question": "Was ist eine gebrochenrationale Funktion?",
     "options": [
-      "Zwei Polynome addiert",
-      "Quotient zweier Polynome: f(x) = g(x)/h(x). Definitionslücken wo h(x)=0.",
-      "Ein Polynom mit gebrochenen Koeffizienten",
-      "Eine Exponentialfunktion"
+      "Eine Summe aus zwei Polynomen g(x) und h(x)",
+      "Ein Quotient aus zwei Polynomen g(x) und h(x)",
+      "Ein Polynom, dessen Koeffizienten Brüche sind",
+      "Eine Funktion mit der Variablen x im Exponenten"
     ],
     "correct": 1,
     "explanation": "Gebrochen rational: f(x)=g(x)/h(x). Polstelle bei h(x₀)=0 (und g(x₀)≠0). Hebbare Definitionslücke wenn auch g(x₀)=0. Beispiel: f(x)=(x²-1)/(x-1) = (x+1) für x≠1.",
@@ -254,10 +254,10 @@
   {
     "question": "Was ist eine Asymptote?",
     "options": [
-      "Eine Nullstelle",
-      "Eine Linie, der sich der Graph einer Funktion beliebig annähert, ohne sie zu erreichen. Vertical, horizontal oder schräg.",
-      "Ein Scheitelpunkt",
-      "Eine Symmetrieachse"
+      "Ein Punkt, in dem der Graph die x-Achse schneidet",
+      "Eine Gerade, der sich der Graph beliebig weit annähert",
+      "Der höchste oder tiefste Punkt einer Parabel",
+      "Eine Gerade, an der der Graph gespiegelt verläuft"
     ],
     "correct": 1,
     "explanation": "Asymptoten: Vertikale Asymptote x=a (Polstelle). Horizontale Asymptote y=c (für x→±∞). Schräge Asymptote y=mx+b. Beispiel f(x)=1/x: x=0 und y=0 als Asymptoten.",
@@ -266,10 +266,10 @@
   {
     "question": "Was ist die Normalform einer quadratischen Funktion?",
     "options": [
-      "y = a(x-d)²+e",
+      "y = a(x-d)² + e",
       "y = ax² + bx + c",
-      "y = (x-x₁)(x-x₂)",
-      "y = x²"
+      "y = a(x-x₁)(x-x₂)",
+      "y = a·x² + c"
     ],
     "correct": 1,
     "explanation": "Normalform: y=ax²+bx+c. a≠0. Wenn a=1: Normalparabel. Umwandlung in Scheitelpunktform durch quadratische Ergänzung. Vertex bei x=-b/(2a).",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist eine Nullstelle einer Funktion?",
     "options": [
-      "Ein Tiefpunkt",
-      "Ein x-Wert x₀, für den f(x₀) = 0 gilt (Schnittpunkt mit der x-Achse)",
-      "Ein y-Wert",
-      "Ein Wendepunkt"
+      "Der tiefste Punkt im Verlauf des Graphen",
+      "Ein x-Wert x₀, an dem f(x₀) = 0 gilt",
+      "Der y-Wert des Graphen an der Stelle x = 0",
+      "Ein Punkt, an dem die Krümmung wechselt"
     ],
     "correct": 1,
     "explanation": "Nullstelle: x-Koordinate des Schnittpunkts mit x-Achse. Berechnung: f(x)=0 setzen und lösen. Reelle Nullstellen ≠ komplexe Nullstellen.",
@@ -290,10 +290,10 @@
   {
     "question": "Was beschreibt die Steigung einer Geraden geometrisch?",
     "options": [
-      "Die Länge der Geraden",
-      "Das Verhältnis Δy/Δx (Steigungsdreieck): wie viele Einheiten y sich ändert pro Einheit x",
-      "Die Lage der Geraden",
-      "Den y-Achsenabschnitt"
+      "Die Länge des Graphen zwischen zwei Punkten",
+      "Das Verhältnis Δy/Δx im Steigungsdreieck",
+      "Den Winkel der Geraden zur y-Achse",
+      "Den Schnittpunkt der Geraden mit der y-Achse"
     ],
     "correct": 1,
     "explanation": "Steigung m = Δy/Δx = (y₂-y₁)/(x₂-x₁). m>0: steigende Gerade. m<0: fallend. m=0: waagerecht. m→∞: senkrecht (nicht definiert). Steigung = Tangens des Winkels mit x-Achse.",
@@ -305,7 +305,7 @@
       "b = y₁ · m · x₁",
       "b = y₁ - m·x₁",
       "b = y₁ + m·x₁",
-      "b = m/y₁"
+      "b = m·x₁ - y₁"
     ],
     "correct": 1,
     "explanation": "Geradengleichung y=mx+b. Durch P(x₁|y₁): y₁=mx₁+b → b=y₁-mx₁. Beispiel: P(2|5), m=3: b=5-3·2=-1. Gerade: y=3x-1.",
@@ -314,10 +314,10 @@
   {
     "question": "Was ist ein Absolutglied (konstantes Glied) in einem Polynom?",
     "options": [
-      "Der höchste Koeffizient",
-      "Das Glied ohne x (Koeffizient a₀): in ax²+bx+c ist c das Absolutglied. Entspricht f(0).",
-      "Der Grad des Polynoms",
-      "Die Steigung"
+      "Der Koeffizient vor der höchsten Potenz von x",
+      "Das Glied ohne x, also der Funktionswert f(0)",
+      "Der größte im Polynom auftretende Exponent",
+      "Der Koeffizient vor dem linearen Glied x"
     ],
     "correct": 1,
     "explanation": "Absolutglied a₀: Wert der Funktion bei x=0, also der y-Achsenabschnitt. In f(x)=3x²-2x+5 ist das Absolutglied 5. f(0)=5.",
@@ -329,7 +329,7 @@
       "x₁+x₂=q und x₁·x₂=p",
       "x₁+x₂=-p und x₁·x₂=q",
       "x₁+x₂=p und x₁·x₂=-q",
-      "x₁+x₂=0 und x₁·x₂=pq"
+      "x₁+x₂=-q und x₁·x₂=p"
     ],
     "correct": 1,
     "explanation": "Vieta: Bei x²+px+q=0 gilt: x₁+x₂=-p und x₁·x₂=q. Beispiel x²-5x+6=0: x₁+x₂=5=-(−5) ✓, x₁·x₂=6 ✓. Praktisch zum Raten von Nullstellen.",
@@ -338,7 +338,7 @@
   {
     "question": "Was ist eine Ungleichung und wie löst man x² > 4?",
     "options": [
-      "x > 2",
+      "x > 2 oder x < 2",
       "x > 2 oder x < -2",
       "x > 4 oder x < -4",
       "-2 < x < 2"
@@ -350,10 +350,10 @@
   {
     "question": "Was ist der Hauptsatz der Algebra?",
     "options": [
-      "Jede lineare Gleichung hat genau eine Lösung",
-      "Jedes Polynom vom Grad n hat (in ℂ) genau n Nullstellen (mit Vielfachheiten gezählt)",
-      "Die Mitternachtsformel",
-      "Die Vieta-Formeln"
+      "Jedes Polynom vom Grad n besitzt genau n reelle Nullstellen",
+      "Jedes Polynom vom Grad n hat in ℂ genau n Nullstellen",
+      "Jede Polynomgleichung lässt sich durch Wurzelausdrücke lösen",
+      "Jedes Polynom mit ungeradem Grad hat genau eine Nullstelle"
     ],
     "correct": 1,
     "explanation": "Fundamentalsatz der Algebra: Grad-n-Polynom hat genau n Nullstellen in ℂ. Reell: höchstens n. Beispiel: x²+1=0 hat keine reellen, aber zwei komplexe Lösungen (±i).",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist eine Gleichung vom Typ aˣ = b?",
     "options": [
-      "Eine quadratische Gleichung",
-      "Eine Exponentialgleichung, gelöst durch Logarithmieren: x = log_a(b) = ln(b)/ln(a)",
-      "Eine lineare Gleichung",
-      "Eine Polynomgleichung"
+      "Eine quadratische Gleichung, gelöst mit der Lösungsformel",
+      "Eine Exponentialgleichung, gelöst durch Logarithmieren",
+      "Eine lineare Gleichung, gelöst durch Äquivalenzumformung",
+      "Eine Wurzelgleichung, gelöst durch Quadrieren beider Seiten"
     ],
     "correct": 1,
     "explanation": "Exponentialgleichung: aˣ=b. Logarithmieren: x·ln(a)=ln(b) → x=ln(b)/ln(a). Beispiel: 2ˣ=8 → x=ln(8)/ln(2)=3. Oder direkt: 2³=8.",
@@ -374,10 +374,10 @@
   {
     "question": "Was ist die Lösung von |2x - 4| = 6?",
     "options": [
-      "x=5",
+      "x=5 oder x=1",
       "x=5 oder x=-1",
       "x=-5 oder x=1",
-      "x=1"
+      "x=-5 oder x=-1"
     ],
     "correct": 1,
     "explanation": "|2x-4|=6. Fall 1: 2x-4=6 → 2x=10 → x=5. Fall 2: 2x-4=-6 → 2x=-2 → x=-1. Lösungsmenge: {5; -1}.",
@@ -386,10 +386,10 @@
   {
     "question": "Was ist eine Geradengleichung in Normalform?",
     "options": [
-      "y = mx + b",
-      "ax + by + c = 0 (allgemeine Form)",
+      "y = m·x + b",
+      "a·x + b·y + c = 0",
       "y = a(x-d)² + e",
-      "r = p + t·v"
+      "x/a + y/b = 1"
     ],
     "correct": 1,
     "explanation": "Normalform der Geraden: ax+by+c=0. Jede Geradengleichung lässt sich so schreiben. Vorteil: schließt auch senkrechte Geraden ein (b=0). Steigungsform y=mx+b: Sonderfall.",
@@ -398,10 +398,10 @@
   {
     "question": "Was ist Substitution bei quadratischen Gleichungen?",
     "options": [
-      "Ersetzen einer Variablen durch eine Zahl",
-      "Ersetzen von z.B. x² durch u um eine Gleichung zu vereinfachen: x⁴-5x²+4=0 mit u=x² wird zu u²-5u+4=0",
-      "Einsetzen einer Lösung",
-      "Faktorisierung"
+      "Einsetzen konkreter Zahlenwerte für die Variable x",
+      "Ersetzen eines Terms wie x² durch eine neue Variable u",
+      "Einsetzen einer gefundenen Lösung zur Probe",
+      "Zerlegen des Terms in ein Produkt aus Faktoren"
     ],
     "correct": 1,
     "explanation": "Substitution: bei biquadratischen Gleichungen (x⁴+bx²+c=0). u=x²: u²+bu+c=0. Löse für u, dann x=±√u. Beispiel: x⁴-5x²+4=0, u=x²: (u-1)(u-4)=0, u=1 oder u=4, x=±1 oder x=±2.",
@@ -410,10 +410,10 @@
   {
     "question": "Was ist der Grad eines Polynoms?",
     "options": [
-      "Die Anzahl der Nullstellen",
-      "Der größte Exponent mit nicht-verschwindendem Koeffizienten",
-      "Die Anzahl der Glieder",
-      "Der y-Achsenabschnitt"
+      "Die Anzahl der reellen Nullstellen des Polynoms",
+      "Der größte Exponent mit einem Koeffizienten ungleich 0",
+      "Die Anzahl der Summanden im Funktionsterm",
+      "Der Funktionswert des Polynoms an der Stelle 0"
     ],
     "correct": 1,
     "explanation": "Grad: höchster Exponent. 3x⁵-2x³+x: Grad 5. Konstante ≠ 0: Grad 0. Nullpolynom: kein Grad definiert. Grad bestimmt: Anzahl Nullstellen (max.), Verhalten für x→±∞.",
@@ -422,10 +422,10 @@
   {
     "question": "Was ist ein Polynomdivision?",
     "options": [
-      "Multiplizieren von Polynomen",
-      "Dividieren eines Polynoms durch ein anderes (schriftlich), analog zur schriftlichen Division. Nützlich zum Herausfaktorisieren bekannter Nullstellen.",
-      "Addition von Polynomen",
-      "Ableiten eines Polynoms"
+      "Ausmultiplizieren zweier Polynome zu einem Produkt",
+      "Schriftliches Dividieren eines Polynoms durch ein anderes",
+      "Zusammenfassen zweier Polynome durch Addition",
+      "Gliedweises Bestimmen der Ableitung eines Polynoms"
     ],
     "correct": 1,
     "explanation": "Polynomdivision: (x³-x²-4x+4) ÷ (x-1). Ergebnis: x²-4 = (x-2)(x+2). Gesamte Faktorisierung: (x-1)(x-2)(x+2). Nullstellen: 1, 2, -2.",
@@ -434,10 +434,10 @@
   {
     "question": "Was versteht man unter einem Intervall [a;b]?",
     "options": [
-      "Nur a und b",
-      "Alle reellen Zahlen x mit a ≤ x ≤ b. [a;b]: abgeschlossen. (a;b): offen. Gemischt: [a;b) oder (a;b].",
-      "Alle ganzen Zahlen zwischen a und b",
-      "Ein Paar von Punkten"
+      "Der Abstand zwischen den beiden Zahlen a und b",
+      "Alle reellen Zahlen x mit a ≤ x ≤ b",
+      "Alle ganzen Zahlen, die zwischen a und b liegen",
+      "Alle reellen Zahlen x mit a < x < b"
     ],
     "correct": 1,
     "explanation": "Intervalle: [a;b] = {x∈ℝ | a≤x≤b} (abgeschlossen, Endpunkte gehören dazu). (a;b): offen (Endpunkte nicht). [a;∞): ab a aufwärts. In Mengennotation oder Zahlenstrahl.",
@@ -458,10 +458,10 @@
   {
     "question": "Was bedeutet f(x) → ∞ für x → ∞?",
     "options": [
-      "Die Funktion hat eine Polstelle",
-      "Das Verhalten der Funktion für sehr große x-Werte: die Funktion wächst ohne Grenze ins Unendliche",
-      "Die Funktion hat einen Wendepunkt",
-      "Die Funktion ist periodisch"
+      "Der Graph nähert sich für große x einer waagerechten Geraden",
+      "Die Funktionswerte wachsen für große x über alle Grenzen",
+      "Der Graph wechselt an einer Stelle seine Krümmung",
+      "Die Funktionswerte wiederholen sich in festen Abständen"
     ],
     "correct": 1,
     "explanation": "Grenzwertverhalten: Polynome: bestimmt vom führenden Term. xⁿ für n gerade → +∞ für x→±∞. xⁿ für n ungerade: +∞ für x→+∞ und -∞ für x→-∞. Wichtig für Skizzen.",
@@ -470,10 +470,10 @@
   {
     "question": "Was ist die Summenformel für arithmetische Reihen: 1+2+3+...+n?",
     "options": [
-      "n²",
+      "n²/2",
       "n(n+1)/2",
       "n(n-1)/2",
-      "2n"
+      "n(n+1)"
     ],
     "correct": 1,
     "explanation": "Gaußsche Summenformel: 1+2+...+n = n(n+1)/2. Gauß berechnete 1+2+...+100 = 100·101/2 = 5050 als Schüler. Geometrische Reihe: a·(qⁿ-1)/(q-1).",

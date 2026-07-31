@@ -2,10 +2,10 @@
   {
     "question": "Was ist organische Chemie?",
     "options": [
-      "Chemie der Mineralien",
-      "Chemie der Kohlenstoffverbindungen (außer CO, CO₂, Carbonate). C bildet 4 kovalente Bindungen und kann Ketten und Ringe bilden.",
-      "Chemie des Wassers",
-      "Chemie der Edelgase"
+      "Chemie der Mineralien und Gesteine der festen Erdkruste",
+      "Chemie der Kohlenstoffverbindungen außer Oxiden und Carbonaten",
+      "Chemie des Wassers und der darin gelösten Salze und Gase",
+      "Chemie der Edelgase und ihrer seltenen Verbindungen mit Fluor"
     ],
     "correct": 1,
     "explanation": "Organische Chemie: Kohlenstoffverbindungen. C-Atom hat 4 Valenzelektronen → 4 Bindungen möglich. Kettenbildung (Katenation) ist einzigartig. Vorkommen: Lebewesen, Erdöl, Kunststoffe, Arzneimittel.",
@@ -14,10 +14,10 @@
   {
     "question": "Was ist die allgemeine Formel der Alkane?",
     "options": [
-      "CₙH₂ₙ",
-      "CₙH₂ₙ₊₂ (gesättigte Kohlenwasserstoffe, nur Einfachbindungen). Beispiele: Methan CH₄, Ethan C₂H₆, Propan C₃H₈.",
-      "CₙH₂ₙ₋₂",
-      "CₙHₙ"
+      "CₙH₂ₙ – ungesättigte Kohlenwasserstoffe mit einer Doppelbindung",
+      "CₙH₂ₙ₊₂ – gesättigte Kohlenwasserstoffe mit reinen Einfachbindungen",
+      "CₙH₂ₙ₋₂ – ungesättigte Kohlenwasserstoffe mit einer Dreifachbindung",
+      "CₙHₙ – ringförmige Kohlenwasserstoffe mit halber Wasserstoffzahl"
     ],
     "correct": 1,
     "explanation": "Alkane: CₙH₂ₙ₊₂. Gesättigt = nur C-C-Einfachbindungen. Homologe Reihe: jedes Glied um CH₂ reicher. Verwendung: Brennstoffe (Erdgas, Flüssiggas, Benzin).",
@@ -26,10 +26,10 @@
   {
     "question": "Was sind Alkene?",
     "options": [
-      "Gesättigte Kohlenwasserstoffe",
-      "Ungesättigte Kohlenwasserstoffe mit mindestens einer C=C-Doppelbindung. Allgemeine Formel CₙH₂ₙ. Beispiel: Ethen (CH₂=CH₂).",
-      "Kohlenwasserstoffe mit Dreifachbindung",
-      "Aromatische Verbindungen"
+      "Gesättigte Kohlenwasserstoffe mit ausschließlich C-C-Einfachbindungen",
+      "Ungesättigte Kohlenwasserstoffe mit mindestens einer C=C-Doppelbindung",
+      "Ungesättigte Kohlenwasserstoffe mit mindestens einer C≡C-Dreifachbindung",
+      "Ringförmige Kohlenwasserstoffe mit delokalisiertem Elektronensystem"
     ],
     "correct": 1,
     "explanation": "Alkene: CₙH₂ₙ. Reaktiv wegen Doppelbindung (Additionsreaktionen). Ethen (Ethylen): wichtiges Ausgangsprodukt für Polyethylen. Propen: Ausgangsstoff für Polypropylen.",
@@ -38,10 +38,10 @@
   {
     "question": "Was sind Alkine?",
     "options": [
-      "Alkane mit Sauerstoff",
-      "Ungesättigte Kohlenwasserstoffe mit mindestens einer C≡C-Dreifachbindung. Allgemeine Formel CₙH₂ₙ₋₂. Beispiel: Ethin (HC≡CH, Acetylen).",
-      "Gesättigte Verbindungen",
-      "Alkane ohne Wasserstoff"
+      "Kohlenwasserstoffe mit einer Sauerstoffbrücke zwischen zwei C-Atomen",
+      "Ungesättigte Kohlenwasserstoffe mit mindestens einer C≡C-Dreifachbindung",
+      "Gesättigte Kohlenwasserstoffe mit ausschließlich C-C-Einfachbindungen",
+      "Ungesättigte Kohlenwasserstoffe mit mindestens einer C=C-Doppelbindung"
     ],
     "correct": 1,
     "explanation": "Alkine: CₙH₂ₙ₋₂. Ethin (Acetylen): HC≡CH. Verbrennung mit Sauerstoff erzeugt sehr hohe Temperatur (Schweißbrenner). Additionsreaktionen an der Dreifachbindung möglich.",
@@ -50,10 +50,10 @@
   {
     "question": "Was ist eine homologe Reihe?",
     "options": [
-      "Reihe identischer Verbindungen",
-      "Reihe organischer Verbindungen, die sich jeweils um eine CH₂-Gruppe unterscheiden und ähnliche chemische Eigenschaften besitzen (z. B. Alkanreihe: Methan, Ethan, Propan...).",
-      "Reihe mit gleicher Molekülmasse",
-      "Reihe verschiedener Elemente"
+      "Reihe von Verbindungen mit gleicher Summenformel, aber anderem Bau",
+      "Reihe von Verbindungen, die sich je um eine CH₂-Gruppe unterscheiden",
+      "Reihe von Verbindungen mit gleicher Molekülmasse und gleichem Siedepunkt",
+      "Reihe von Verbindungen, die dieselbe funktionelle Gruppe doppelt tragen"
     ],
     "correct": 1,
     "explanation": "Homologe Reihe: gleichmäßige Zunahme um CH₂ (= 14 u). Siedepunkt steigt mit Kettenlänge. Gleiche funktionelle Gruppe → ähnliche Reaktionen. Methan < Ethan < Propan < Butan (Siedepunkte aufsteigend).",
@@ -62,10 +62,10 @@
   {
     "question": "Was ist Isomerie?",
     "options": [
-      "Gleiche Struktur, verschiedene Summenformel",
-      "Verbindungen mit gleicher Summenformel aber unterschiedlicher Strukturformel oder räumlicher Anordnung. Strukturisomere, cis-trans-Isomere, Stereoisomere.",
-      "Verschiedene Elemente mit gleichen Eigenschaften",
-      "Isomere Atome"
+      "Verbindungen mit gleicher Struktur, aber verschiedener Summenformel",
+      "Verbindungen mit gleicher Summenformel, aber verschiedener Struktur",
+      "Verbindungen aus verschiedenen Elementen mit ähnlichen Eigenschaften",
+      "Verbindungen, die sich jeweils um eine CH₂-Gruppe unterscheiden"
     ],
     "correct": 1,
     "explanation": "Strukturisomerie: gleiche Formel, andere Verknüpfung (n-Butan vs. Isobutan). cis-trans-Isomerie: verschiedene räumliche Anordnung an Doppelbindung. Chiralität: Spiegelbildisomere (Enantiomere).",
@@ -74,10 +74,10 @@
   {
     "question": "Was sind funktionelle Gruppen in der organischen Chemie?",
     "options": [
-      "Atome ohne Reaktivität",
-      "Reaktive Atomgruppen, die das chemische Verhalten bestimmen: -OH (Alkohole), -COOH (Carbonsäuren), -CHO (Aldehyde), -CO- (Ketone), -NH₂ (Amine).",
-      "Kohlenstoffketten",
-      "Wasserstoffatome"
+      "Besonders reaktionsträge Atomgruppen am Ende einer Kohlenstoffkette",
+      "Reaktive Atomgruppen, die Eigenschaften und Reaktionen eines Stoffs prägen",
+      "Verzweigte Kohlenstoffketten, die den Siedepunkt eines Stoffs festlegen",
+      "Wasserstoffatome, die den räumlichen Bau eines Moleküls allein bestimmen"
     ],
     "correct": 1,
     "explanation": "Funktionelle Gruppen: bestimmen Eigenschaften und Reaktivität. -OH: polar, H-Brücken, höhere Siedepunkte. -COOH: sauer. -NH₂: basisch. Kenntnis der funktionellen Gruppen ermöglicht Vorhersage der Reaktionen.",
@@ -86,10 +86,10 @@
   {
     "question": "Was sind Alkohole in der Chemie?",
     "options": [
-      "Verbindungen mit -COOH-Gruppe",
-      "Organische Verbindungen mit Hydroxylgruppe (-OH) am C-Atom. Primäre (OH an CH₂), sekundäre (OH an CH), tertiäre Alkohole (OH an C ohne H).",
-      "Verbindungen mit Stickstoff",
-      "Aromatische Verbindungen"
+      "Organische Verbindungen mit einer Carboxylgruppe (-COOH) am Kettenende",
+      "Organische Verbindungen mit einer Hydroxylgruppe (-OH) an einem C-Atom",
+      "Organische Verbindungen mit einer Aminogruppe (-NH₂) an einem C-Atom",
+      "Organische Verbindungen mit einer Carbonylgruppe (C=O) in der Kette"
     ],
     "correct": 1,
     "explanation": "Alkohole: -OH-Gruppe. Methanol CH₃OH: giftig. Ethanol C₂H₅OH: Trinkalkohol, Kraftstoff. Isopropanol: Desinfektionsmittel. H-Brücken zwischen OH-Gruppen: höhere Siedepunkte als vergleichbare Alkane.",
@@ -98,10 +98,10 @@
   {
     "question": "Was ist Ethanol und wie wird es hergestellt?",
     "options": [
-      "Giftiger Industriealkohol",
-      "Trinkbarer Alkohol (C₂H₅OH): hergestellt durch Gärung (Zucker + Hefe → Ethanol + CO₂) oder Hydratation von Ethen. Verwendung: Getränke, Kraftstoff, Desinfektionsmittel.",
-      "Carbonsäure",
-      "Ether"
+      "Giftiger Industriealkohol aus der trockenen Destillation von Holz",
+      "Trinkbarer Alkohol aus der alkoholischen Gärung von Zucker mit Hefe",
+      "Organische Säure aus der Oxidation von Wein durch Essigsäurebakterien",
+      "Leicht flüchtiger Ether aus dem Erhitzen von Alkohol mit Schwefelsäure"
     ],
     "correct": 1,
     "explanation": "Gärung: C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂. Hefe als Biokatalysator. Industriell: Ethen + H₂O → Ethanol (Katalyse). Ethanol brennt: C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O.",
@@ -110,10 +110,10 @@
   {
     "question": "Was sind Carbonsäuren?",
     "options": [
-      "Basen mit OH-Gruppe",
-      "Organische Säuren mit Carboxylgruppe (-COOH). Beispiele: Essigsäure CH₃COOH (Essigsäure), Ameisensäure HCOOH, Stearinsäure (Fettsäure).",
-      "Ester",
-      "Ketone"
+      "Organische Basen mit einer Aminogruppe (-NH₂) im Molekül",
+      "Organische Säuren mit einer Carboxylgruppe (-COOH) im Molekül",
+      "Reaktionsprodukte aus Säure und Alkohol mit fruchtigem Geruch",
+      "Organische Verbindungen mit einer C=O-Gruppe mitten in der Kette"
     ],
     "correct": 1,
     "explanation": "Carbonsäuren: -COOH-Gruppe. Schwache Säuren (teilweise dissoziiert). Essigsäure: Haushaltsessig (5-8%). Ameisensäure: Insektenstichen. Fettsäuren: Palmitinsäure, Stearinsäure, Ölsäure (in Fetten).",
@@ -122,10 +122,10 @@
   {
     "question": "Was ist Veresterung?",
     "options": [
-      "Oxidation eines Alkohols",
-      "Reaktion von Carbonsäure mit Alkohol zu Ester und Wasser: R-COOH + R-OH ⇌ R-COO-R + H₂O. Gleichgewichtsreaktion, Katalyse durch Säure.",
-      "Reduktion einer Säure",
-      "Addition an Doppelbindung"
+      "Oxidation eines primären Alkohols zu einem Aldehyd und Wasser",
+      "Reaktion einer Carbonsäure mit einem Alkohol zu Ester und Wasser",
+      "Reduktion einer Carbonsäure mit Wasserstoff zu einem Alkohol",
+      "Addition von Wasser an eine Doppelbindung zu einem Alkohol"
     ],
     "correct": 1,
     "explanation": "Veresterung: Gleichgewichtsreaktion (Ester + Wasser auch: Esterhydrolyse/Verseifung). Anwendung: Fruchtester (Aromen), Fette (Glycerintriester), PET (Polyester). H₂SO₄ als Katalysator.",
@@ -134,10 +134,10 @@
   {
     "question": "Was sind Ester?",
     "options": [
-      "Salze der Carbonsäuren",
-      "Verbindungen aus Carbonsäure und Alkohol (Wasser abgespalten). Formel: R-COO-R. Oft angenehmer Geruch (Fruchtaromen). Natürliche Fette sind Glycerinester der Fettsäuren.",
-      "Oxidationsprodukte der Alkane",
-      "Stickstoffverbindungen"
+      "Salze der Carbonsäuren aus Säure und Lauge unter Neutralisation",
+      "Verbindungen aus Säure und Alkohol unter Abspaltung von Wasser",
+      "Oxidationsprodukte der Alkane mit einer OH-Gruppe am Kettenende",
+      "Stickstoffhaltige Verbindungen aus Ammoniak und einer Carbonsäure"
     ],
     "correct": 1,
     "explanation": "Ester: -COO- als charakteristische Gruppe. Ethylacetat (Essigester): Lösungsmittel. Fruchtester: Isoamylacetat (Banane), Ethylbutyrat (Ananas). Fette: Glycerin + 3 Fettsäuren → Triglycerid + 3 H₂O.",
@@ -146,10 +146,10 @@
   {
     "question": "Was sind Aldehyde?",
     "options": [
-      "Verbindungen mit Ketongruppe",
-      "Organische Verbindungen mit endständiger Aldehydgruppe (-CHO). Oxidationsprodukt primärer Alkohole. Beispiele: Methanal (Formaldehyd), Ethanal (Acetaldehyd).",
-      "Carbonsäuren",
-      "Ether"
+      "Verbindungen mit einer Carbonylgruppe innerhalb der Kohlenstoffkette",
+      "Verbindungen mit einer Carbonylgruppe am Ende der Kohlenstoffkette",
+      "Verbindungen mit einer Carboxylgruppe am Ende der Kohlenstoffkette",
+      "Verbindungen mit einer Sauerstoffbrücke zwischen zwei Alkylresten"
     ],
     "correct": 1,
     "explanation": "Aldehyde: -CHO an einem Kettenende. Methanal (HCHO): Desinfektionsmittel, Konservierung, Formalin. Ethanal: Oxidation von Ethanol. Aldehyde sind Zwischenstufe: Alkohol → Aldehyd → Carbonsäure (Oxidation).",
@@ -158,10 +158,10 @@
   {
     "question": "Was sind Ketone?",
     "options": [
-      "Verbindungen mit CHO-Gruppe",
-      "Organische Verbindungen mit C=O-Gruppe zwischen zwei C-Atomen (nicht am Kettenende). Oxidationsprodukt sekundärer Alkohole. Beispiel: Aceton (Propan-2-on).",
-      "Cycloalkane",
-      "Aromatische Verbindungen"
+      "Verbindungen mit einer C=O-Gruppe am Ende der Kohlenstoffkette",
+      "Verbindungen mit einer C=O-Gruppe zwischen zwei Kohlenstoffatomen",
+      "Ringförmige gesättigte Kohlenwasserstoffe ohne funktionelle Gruppe",
+      "Ringförmige Verbindungen mit delokalisiertem Elektronensystem"
     ],
     "correct": 1,
     "explanation": "Ketone: C=O inmitten der Kette. Aceton (CH₃-CO-CH₃): wichtiges Lösungsmittel, Nagellackentferner. Entsteht durch Oxidation von Isopropanol. Bei Diabetes: Ketonkörper im Blut (Ketoazidose).",
@@ -170,10 +170,10 @@
   {
     "question": "Was ist die Substitutionsreaktion in der organischen Chemie?",
     "options": [
-      "Addition an Doppelbindung",
-      "Ein Atom oder eine Gruppe wird durch ein anderes Atom oder eine andere Gruppe ersetzt. Typisch für gesättigte Verbindungen (Alkane): CH₄ + Cl₂ → CH₃Cl + HCl (radikalische Substitution).",
-      "Zerfall eines Moleküls",
-      "Verbindung zweier Moleküle"
+      "Zwei Teilchen lagern sich an eine Doppelbindung an, nichts wird frei",
+      "Ein Atom oder eine Atomgruppe wird durch eine andere ersetzt",
+      "Ein kleines Molekül wird abgespalten, dabei entsteht eine Doppelbindung",
+      "Viele gleichartige Moleküle verknüpfen sich zu einer langen Kette"
     ],
     "correct": 1,
     "explanation": "Substitution: SR (radikalisch, Alkane + Halogene im Licht), SN (nukleophil, Alkylhalogenide + OH⁻). Kettenreaktion: Initiation, Wachstum, Abbruch. Produkt: Halogenalkan.",
@@ -182,10 +182,10 @@
   {
     "question": "Was ist Additionsreaktion?",
     "options": [
-      "Abspaltung eines Moleküls",
-      "Zwei Moleküle verbinden sich zu einem, typisch an Doppel- oder Dreifachbindungen. Alkene + HBr → Bromalkan; Ethen + H₂O → Ethanol (Hydratation).",
-      "Substitution eines Atoms",
-      "Oxidation"
+      "Aus einem Molekül wird ein kleines Molekül wie Wasser abgespalten",
+      "Zwei Moleküle verbinden sich an einer Mehrfachbindung zu einem Stoff",
+      "Ein Wasserstoffatom der Kette wird gegen ein Halogenatom getauscht",
+      "Ein Alkohol gibt Wasserstoff ab und wird dabei zum Aldehyd oxidiert"
     ],
     "correct": 1,
     "explanation": "Addition: Reaktion an ungesättigten Verbindungen. Hydrogenierung: C=C + H₂ → C-C (Katalysator Ni/Pd). Halogenierung: C=C + Br₂ → Dibromalkan (Bromwasser entfärbt sich → Nachweis von Doppelbindungen).",
@@ -194,10 +194,10 @@
   {
     "question": "Was ist Eliminierung?",
     "options": [
-      "Addition von H₂O",
-      "Abspaltung kleiner Moleküle (H₂O, HX) aus einem Molekül → neue Doppelbindung entsteht. Umkehrung der Addition. Beispiel: Ethanol → Ethen + H₂O (Dehydratation, 170°C, H₂SO₄).",
-      "Substitution",
-      "Oxidation"
+      "Anlagerung von Wasser an eine Doppelbindung, es entsteht ein Alkohol",
+      "Abspaltung eines kleinen Moleküls, es entsteht eine Doppelbindung",
+      "Austausch eines Wasserstoffatoms gegen ein Halogenatom im Alkan",
+      "Aufnahme von Sauerstoff, aus einem Alkohol entsteht dabei ein Keton"
     ],
     "correct": 1,
     "explanation": "Eliminierung: E1 oder E2. Dehydratation von Ethanol zu Ethen. Dehydrohalogenierung: Alkylhalogenid + KOH (alkohol. Lösung) → Alken + HX. Gegenteil der Addition.",
@@ -206,10 +206,10 @@
   {
     "question": "Was ist Benzol und warum ist es besonders?",
     "options": [
-      "Einfaches Alkan",
-      "Aromatischer Kohlenwasserstoff C₆H₆: ringförmig, 6 C-Atome, Elektronen delokalisiert (mesomeres System). Sehr stabil, bevorzugt Substitution statt Addition.",
-      "Einfaches Alken",
-      "Cycloalkan"
+      "Gesättigtes Alkan aus sechs C-Atomen mit offener, unverzweigter Kette",
+      "Ringförmiger Kohlenwasserstoff mit delokalisierten Elektronen, sehr stabil",
+      "Kettenförmiges Alken mit drei getrennten, sehr reaktiven Doppelbindungen",
+      "Gesättigtes Cycloalkan aus sechs C-Atomen ohne erhöhte Ringstabilität"
     ],
     "correct": 1,
     "explanation": "Benzol (Kekulé-Struktur): 6 C-Ring, alternierende Einfach/Doppelbindungen, aber in Wirklichkeit delokalisiert (pi-Elektronen). Stabiler als erwartet (Resonanzenergie). Benzol und Derivate: aromatische Verbindungen. Krebserregend.",
@@ -218,10 +218,10 @@
   {
     "question": "Was sind Fette (Triglyceride)?",
     "options": [
-      "Kohlenhydrate",
-      "Ester des Glycerins mit drei Fettsäuren (Carbonsäuren mit langer Kette). Feste Fette: gesättigte Fettsäuren. Flüssige Öle: ungesättigte Fettsäuren.",
-      "Proteine",
-      "Nukleinsäuren"
+      "Polymere aus vielen ringförmigen Glucose-Bausteinen",
+      "Ester aus Glycerin und drei langkettigen Fettsäuren",
+      "Ketten aus vielen Aminosäuren mit Peptidbindungen",
+      "Ketten aus Nukleotiden mit Zucker und Phosphatrest"
     ],
     "correct": 1,
     "explanation": "Fette: Glycerin + 3 Fettsäuren. Gesättigt: Tierfette (Butter, Schmalz), fest. Ungesättigt: Pflanzenöle (Olivenöl, Sonnenblumenöl), flüssig. Verseifung: Fett + NaOH → Seife + Glycerin.",
@@ -230,10 +230,10 @@
   {
     "question": "Was ist Glucose und welche Bedeutung hat sie?",
     "options": [
-      "Mehrfachzucker",
-      "Einfachzucker (Monosaccharid) C₆H₁₂O₆: wichtigster Energielieferant der Zelle. Vorkommen in Früchten. Baustein von Stärke und Cellulose.",
-      "Aminosäure",
-      "Fett"
+      "Mehrfachzucker aus vielen verknüpften Zuckerbausteinen",
+      "Einfachzucker und wichtigster Energielieferant der Zellen",
+      "Baustein der Proteine mit Amino- und Carboxylgruppe",
+      "Langkettige Carbonsäure als Baustein der Nahrungsfette"
     ],
     "correct": 1,
     "explanation": "Glucose: D-Glucose (Traubenzucker). Zellatmung: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energie. Photosynthese: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂. Polymer: Stärke (alpha-1,4-glykosidisch), Cellulose (beta-1,4).",
@@ -242,10 +242,10 @@
   {
     "question": "Was ist der Unterschied zwischen Stärke und Cellulose?",
     "options": [
-      "Beide sind identisch",
-      "Beide bestehen aus Glucose-Bausteinen, unterscheiden sich aber in der Verknüpfung: Stärke (alpha-glykosidisch, verdaulich) vs. Cellulose (beta-glykosidisch, unverdaulich, Pflanzenzellwand).",
-      "Cellulose ist tierischen Ursprungs",
-      "Stärke ist ein Protein"
+      "Beide bestehen aus Glucose und werden vom Menschen gleich gut verdaut",
+      "Beide bestehen aus Glucose, unterscheiden sich aber in der Verknüpfung",
+      "Cellulose stammt aus tierischem Gewebe, Stärke nur aus Pflanzenzellen",
+      "Stärke besteht aus Aminosäuren, Cellulose dagegen aus Fettsäuren"
     ],
     "correct": 1,
     "explanation": "Stärke: alpha-1,4-glykosidische Bindung (spiralförmig). Verdaulich. Amylose (unverzweigt) + Amylopektin (verzweigt). Cellulose: beta-1,4-Bindung (geradlinige Ketten, H-Brücken → Fasern). Holz, Papier, Baumwolle.",
@@ -254,10 +254,10 @@
   {
     "question": "Was sind Aminosäuren?",
     "options": [
-      "Fette mit Stickstoff",
-      "Bausteine der Proteine: Moleküle mit Aminogruppe (-NH₂) und Carboxylgruppe (-COOH) am gleichen C-Atom. 20 proteinogene Aminosäuren, davon 8 essenziell (müssen mit Nahrung zugeführt werden).",
-      "Kohlenhydrate",
-      "Nukleotide"
+      "Bausteine der Fette mit langer Kohlenwasserstoffkette und Stickstoff",
+      "Bausteine der Proteine mit Amino- und Carboxylgruppe am selben C-Atom",
+      "Bausteine der Stärke mit mehreren Hydroxylgruppen am Zuckerring",
+      "Bausteine der DNA aus Zucker, Phosphatrest und organischer Base"
     ],
     "correct": 1,
     "explanation": "Aminosäuren: H₂N-CHR-COOH. R = Seitenkette (unterscheidet die 20). Peptidbindung: -CO-NH- verbindet Aminosäuren zu Peptiden und Proteinen. Essenziell: Leucin, Isoleucin, Valin, Lysin, Methionin, Phenylalanin, Tryptophan, Threonin.",
@@ -266,10 +266,10 @@
   {
     "question": "Was sind Polymere?",
     "options": [
-      "Kleine Moleküle",
-      "Makromoleküle aus vielen gleichartigen oder ähnlichen Wiederholungseinheiten (Monomere), die durch kovalente Bindungen verknüpft sind. Kunststoffe, Biopolymere (Proteine, DNA, Stärke).",
-      "Edelgase",
-      "Legierungen"
+      "Kleine flüchtige Moleküle mit niedriger Masse und niedrigem Siedepunkt",
+      "Makromoleküle aus vielen gleichartigen, verknüpften Grundbausteinen",
+      "Reaktionsträge Gase mit vollständig besetzter äußerer Elektronenschale",
+      "Gemische mehrerer Metalle mit veränderten Werkstoffeigenschaften"
     ],
     "correct": 1,
     "explanation": "Polymer: viele Monomere (polys = viel, meros = Teil). Polyethylen: n CH₂=CH₂ → (-CH₂-CH₂-)ₙ. Polyester (PET), Polyamid (Nylon). Biopolymere: Proteine, Kohlenhydrate, DNA. Kettenpolymerisation vs. Kondensationspolymerisation.",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist Polymerisation?",
     "options": [
-      "Zersetzung von Polymeren",
-      "Reaktion, bei der viele Monomere zu einem Polymer verknüpft werden. Kettenpolymerisation (Radikale oder Ionen, Doppelbindung nötig) oder Kondensationspolymerisation (kleines Molekül wie H₂O wird abgespalten).",
-      "Extraktion",
-      "Destillation"
+      "Lange Molekülketten werden in kurze Bruchstücke zerlegt",
+      "Viele Monomere werden zu langen Molekülketten verknüpft",
+      "Ein Stoff wird mit einem Lösungsmittel herausgelöst",
+      "Ein Gemisch wird nach den Siedepunkten aufgetrennt"
     ],
     "correct": 1,
     "explanation": "Kettenpolymerisation: Start (Radikalbildung), Wachstum (Addition), Abbruch. Beispiel: Polyethylen aus Ethen. Kondensationspolymerisation: Polyester aus Diol + Dicarbonsäure; Polyamid aus Diamin + Dicarbonsäure (Nylon).",
@@ -290,10 +290,10 @@
   {
     "question": "Was sind Kunststoffe und wie werden sie eingeteilt?",
     "options": [
-      "Nur natürliche Materialien",
-      "Synthetische Polymere: Thermoplaste (schmelzbar, formbar), Duroplaste (gehärtet, nicht formbar), Elastomere (gummiartig, elastisch). Hergestellt aus Erdölderivaten.",
-      "Nur für Verpackungen",
-      "Keramiken"
+      "Natürliche Polymere: Baumwolle, Schafwolle und Naturkautschuk",
+      "Synthetische Polymere: Thermoplaste, Duroplaste und Elastomere",
+      "Verpackungsstoffe: Folien, Trinkbecher und Flaschen aus Zellstoff",
+      "Gebrannte Werkstoffe: Porzellan, Steingut und Glaskeramik"
     ],
     "correct": 1,
     "explanation": "Thermoplaste: PE, PP, PVC, PET – schmelzbar, recycelbar. Duroplaste: Epoxidharze, Bakelit – vernetzt, nicht schmelzbar. Elastomere: Gummi (vulkanisiert), Silikon. Umweltproblem: Abbauzeit Jahrhunderte.",
@@ -302,10 +302,10 @@
   {
     "question": "Was ist Cracking?",
     "options": [
-      "Polymerisation von Alkanen",
-      "Thermisches oder katalytisches Zerbrechen langer Kohlenwasserstoffketten in kürzere, wertvollere Moleküle. Wichtig in der Erdölverarbeitung.",
-      "Verbrennung von Benzin",
-      "Extraktion von Erdöl"
+      "Verknüpfen kurzer Alkane zu sehr langen Molekülketten",
+      "Zerlegen langer Kohlenwasserstoffketten in kurze Moleküle",
+      "Vollständiges Verbrennen von Benzin zu Kohlenstoffdioxid",
+      "Herauslösen von Erdöl aus porösem Gestein mit heißem Dampf"
     ],
     "correct": 1,
     "explanation": "Cracking (Cracken): therm. Cracking (hohe Temperatur) oder kat. Cracking (Katalysator, niedrigere Temp.). Ziel: aus langkettigen Alkanen (Heizöl) kurzkettige (Benzin, Ethen) gewinnen. Ethen als wichtiger Grundstoff für Polymere.",
@@ -314,10 +314,10 @@
   {
     "question": "Was sind Erdölfraktionen?",
     "options": [
-      "Bestandteile des Wassers",
-      "Produkte der fraktionierten Destillation von Erdöl nach Siedepunkt: Gas (< 40°C), Benzin (40-200°C), Kerosin (150-300°C), Dieselöl (200-360°C), Heizöl, Bitumen.",
-      "Chemische Elemente",
-      "Mineralien"
+      "Anteile des Meerwassers, die nach ihrer Löslichkeit getrennt werden",
+      "Anteile des Erdöls, die nach ihren Siedepunkten getrennt werden",
+      "Chemische Elemente, aus denen das Erdöl unmittelbar aufgebaut ist",
+      "Mineralien, die als feste Rückstände im Erdöl enthalten sind"
     ],
     "correct": 1,
     "explanation": "Fraktionierte Destillation: Erdöl wird erhitzt, Fraktionen kondensieren bei verschiedenen Temp. Kurze Ketten: niedrige Siedepunkte. Lange Ketten: hohe Siedepunkte. Benzin: C5-C12. Diesel: C12-C20. Bitumen: >C40.",
@@ -326,10 +326,10 @@
   {
     "question": "Wie hängt der Siedepunkt organischer Verbindungen von der Kettenlänge ab?",
     "options": [
-      "Kein Zusammenhang",
-      "Siedepunkt steigt mit zunehmender Kettenlänge: mehr Van-der-Waals-Kräfte (London-Kräfte). Polare Gruppen (-OH, -COOH) erhöhen den Siedepunkt zusätzlich durch H-Brücken.",
-      "Siedepunkt sinkt",
-      "Kettenlänge ist irrelevant"
+      "Er sinkt mit der Kettenlänge, weil die Ketten stärker verzweigt sind",
+      "Er steigt mit der Kettenlänge, weil die Van-der-Waals-Kräfte zunehmen",
+      "Er bleibt gleich, weil allein die funktionelle Gruppe ihn festlegt",
+      "Er schwankt unregelmäßig, weil nur die Molekülform entscheidend ist"
     ],
     "correct": 1,
     "explanation": "Van-der-Waals-Kräfte: steigen mit Molekülgröße. Methan: -161°C. Ethan: -89°C. Propan: -42°C. Butan: -1°C. H-Brücken (Alkohole, Carbonsäuren): erheblich höhere Siedepunkte als Alkane gleicher Kettenlänge.",
@@ -338,10 +338,10 @@
   {
     "question": "Was ist IUPAC-Nomenklatur in der organischen Chemie?",
     "options": [
-      "Trivialname-System",
-      "Internationales Regelsystem zur Benennung organischer Verbindungen: Hauptkette (längste C-Kette), Präfix für Substituenten (Methyl-, Ethyl-), Suffix für funktionelle Gruppe (-ol, -säure, -al).",
-      "Numerische Codes",
-      "Farbnamen"
+      "Sammlung überlieferter Trivialnamen wie Essigsäure oder Glycerin",
+      "Regelsystem aus Hauptkette, Substituenten-Präfix und Endung",
+      "Zahlencode, der jedem Stoff eine eindeutige Registriernummer gibt",
+      "Kennzeichnung von Stoffgruppen über Farbsymbole auf Etiketten"
     ],
     "correct": 1,
     "explanation": "IUPAC: Hauptkette benennen (Methan-1, Ethan-2...). Substituenten: Position + Name. Suffix: -an (Alkan), -en (Alken), -in (Alkin), -ol (Alkohol), -säure (Carbonsäure), -al (Aldehyd), -on (Keton). Beispiel: 2-Methylpropan = Isobutan.",
@@ -350,10 +350,10 @@
   {
     "question": "Was sind gesättigte und ungesättigte Fettsäuren?",
     "options": [
-      "Fettsäuren mit verschiedener Länge",
-      "Gesättigt: nur C-C-Einfachbindungen (Stearinsäure, fest, tierisch). Ungesättigt: C=C-Doppelbindung(en) (Ölsäure: einfach; Linolsäure: zweifach, Omega-6; Alpha-Linolensäure: dreifach, Omega-3).",
-      "Fettsäuren mit verschiedener Ladung",
-      "Gesättigt = flüssig"
+      "Gesättigte haben kurze Ketten, ungesättigte dagegen sehr lange Ketten",
+      "Gesättigte haben nur Einfachbindungen, ungesättigte auch Doppelbindungen",
+      "Gesättigte sind negativ geladen, ungesättigte tragen gar keine Ladung",
+      "Gesättigte sind bei Raumtemperatur flüssig, ungesättigte dagegen fest"
     ],
     "correct": 1,
     "explanation": "Gesättigte FS: feste Konsistenz (Schmalz, Butter). Ungesättigte FS: cis-Doppelbindungen → Knicke → kein dichtes Packen → flüssig (Pflanzenöle). Essenziell: Omega-3 und Omega-6 müssen über Nahrung aufgenommen werden.",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist der Nachweis von Doppelbindungen mit Bromwasser?",
     "options": [
-      "Bromwasser bleibt braun",
-      "Bromwasser (orange-braun) entfärbt sich bei Alkenen: Br₂ addiert sich an die Doppelbindung → Dibromalkan (farblos). Alkane reagieren nicht (im Dunkeln).",
-      "Gasentwicklung",
-      "Farbwechsel zu Blau"
+      "Bromwasser bleibt braun, weil Brom mit Alkenen nicht reagiert",
+      "Bromwasser entfärbt sich, weil Brom an die Doppelbindung addiert",
+      "Es entsteht ein farbloses Gas, das die Lösung aufschäumen lässt",
+      "Die Lösung färbt sich tiefblau, weil ein Farbkomplex entsteht"
     ],
     "correct": 1,
     "explanation": "Bromwassertest: Alken + Br₂ → Dibromalkan (Entfärbung). Alkan: keine Reaktion im Dunkeln (nur Licht aktiviert radikalische Substitution). Kalium-permanganat-Test: Oxidation von Doppelbindungen → Entfärbung.",
@@ -374,10 +374,10 @@
   {
     "question": "Was ist Methanol und warum ist es gefährlich?",
     "options": [
-      "Sicherer Trinkalkohol",
-      "Einfachster Alkohol (CH₃OH): giftig! Schon kleine Mengen können Erblindung oder Tod verursachen, da Abbauprodukte (Formaldehyd, Ameisensäure) sehr toxisch sind.",
-      "Kraftstoff für Fahrzeuge",
-      "Lösungsmittel für Kunststoffe"
+      "Trinkbarer Alkohol, der in geringen Mengen in Getränken vorkommt",
+      "Einfachster Alkohol, dessen Abbauprodukte im Körper stark giftig sind",
+      "Ungiftiger Kraftstoff, der Benzin im Motor vollständig ersetzen kann",
+      "Harmloses Lösungsmittel, das zum Verkleben von Kunststoff dient"
     ],
     "correct": 1,
     "explanation": "Methanol: CH₃OH. Metabolismus: CH₃OH → HCHO (Formaldehyd) → HCOOH (Ameisensäure) → Vergiftung. Antidot: Ethanol (konkurriert um Alkohol-Dehydrogenase). Verwendung: Lösungsmittel, Kraftstoff (nur industriell).",
@@ -386,10 +386,10 @@
   {
     "question": "Was ist Verbrennung organischer Verbindungen?",
     "options": [
-      "Auflösung in Wasser",
-      "Reaktion mit Sauerstoff (O₂): vollständige Verbrennung ergibt CO₂ und H₂O. Unvollständige Verbrennung: CO (giftig) und Ruß (C) entstehen.",
-      "Polymerisation",
-      "Hydrolyse"
+      "Lösen in Wasser, wobei alle Bindungen im Molekül erhalten bleiben",
+      "Reaktion mit Sauerstoff, bei der Kohlenstoffdioxid und Wasser entstehen",
+      "Verknüpfung vieler kleiner Moleküle zu einer langen Kette unter Wärme",
+      "Spaltung eines Moleküls durch Wasser in zwei kleinere Bruchstücke"
     ],
     "correct": 1,
     "explanation": "Verbrennung: CH₄ + 2O₂ → CO₂ + 2H₂O. Vollständig (genug O₂): CO₂ + H₂O. Unvollständig (Sauerstoffmangel): CO, Ruß. Kohlenstoffbilanz: Verbrennung fossiler Brennstoffe setzt gespeichertes CO₂ frei.",
@@ -398,10 +398,10 @@
   {
     "question": "Was sind cyclische Verbindungen?",
     "options": [
-      "Verbindungen mit doppelten Bindungen",
-      "Ringförmige organische Verbindungen: Cycloalkane (Cyclopropan, Cyclohexan), aromatische Verbindungen (Benzol). Cycloalkane: CₙH₂ₙ, ein H₂ weniger als Alkane wegen Ringschluss.",
-      "Verbindungen mit Sauerstoff",
-      "Verbindungen mit Metallen"
+      "Verbindungen, deren C-Atome durch Doppelbindungen verknüpft sind",
+      "Verbindungen, deren Kohlenstoffatome zu einem Ring geschlossen sind",
+      "Verbindungen, die in der Kette ein Sauerstoffatom eingebaut haben",
+      "Verbindungen, die ein Metallatom fest im Molekül gebunden enthalten"
     ],
     "correct": 1,
     "explanation": "Cycloalkane: gesättigter Ring. Cyclohexan C₆H₁₂: keine Doppelbindungen, trotzdem ringförmig. Spannungsenergie: Cyclopropan (60° Bindungswinkel → Ringspannung). Benzol: aromatisch (delokalisierte Elektronen).",
@@ -410,10 +410,10 @@
   {
     "question": "Was ist eine Kondensationsreaktion?",
     "options": [
-      "Verflüssigung von Gasen",
-      "Reaktion zweier Moleküle unter Abspaltung eines kleinen Moleküls (meist H₂O). Beispiele: Veresterung, Peptidbindung (Aminosäuren), Polykondensation (Nylon, Polyester).",
-      "Oxidation",
-      "Addition an Dreifachbindung"
+      "Ein Gas geht beim Abkühlen in den flüssigen Zustand über",
+      "Zwei Moleküle verbinden sich unter Abspaltung von Wasser",
+      "Ein Alkohol wird unter Sauerstoffaufnahme zur Säure oxidiert",
+      "Zwei Teilchen lagern sich an eine Dreifachbindung an"
     ],
     "correct": 1,
     "explanation": "Kondensation: R-OH + HO-R → R-O-R + H₂O. Anwendung: Polyester (Diol + Disäure → Polyester + n H₂O), Polyamid (Diamin + Disäure → Polyamid + n H₂O). Umkehrung: Hydrolyse.",
@@ -422,10 +422,10 @@
   {
     "question": "Was ist Seife chemisch und wie wirkt sie?",
     "options": [
-      "Einfaches Salz",
-      "Natriumsalz (feste Seife) oder Kaliumsalz (Schmierseife) langkettiger Fettsäuren: hydrophiles Kopfende (-COO⁻Na⁺) und hydrophobes Schwanzende (Kohlenwasserstoffkette). Emulgiert Fette in Wasser.",
-      "Alkohol",
-      "Ester"
+      "Neutrales Salz aus starker Säure und starker Lauge ohne Fettanteil",
+      "Natrium- oder Kaliumsalz langkettiger Fettsäuren mit Tensidwirkung",
+      "Langkettiger Alkohol mit mehreren Hydroxylgruppen im Molekül",
+      "Ester aus einem Fettalkohol und einer langkettigen Fettsäure"
     ],
     "correct": 1,
     "explanation": "Seife: R-COO⁻Na⁺. Herstellung: Fett + NaOH → Seife + Glycerin (Verseifung). Tensid: Kopf (hydrophil, wasserlöslich) + Schwanz (hydrophob, fettlöslich). Mizellen: Schwänze innen (Fett), Köpfe außen (Wasser).",
@@ -434,10 +434,10 @@
   {
     "question": "Was ist Bioethanol?",
     "options": [
-      "Ethanol aus Petroleum",
-      "Ethanol, der durch Gärung nachwachsender Rohstoffe (Zuckerrohr, Mais, Weizen) gewonnen wird. Als Kraftstoffzusatz (E5, E10) oder reiner Kraftstoff verwendbar.",
-      "Synthetischer Alkohol",
-      "Methanol aus Biomasse"
+      "Ethanol aus der Verarbeitung von Erdöl in der Raffinerie",
+      "Ethanol aus der Gärung nachwachsender pflanzlicher Rohstoffe",
+      "Ethanol aus der Hydratation von Ethen an einem Katalysator",
+      "Methanol aus der Vergasung von Holz und anderer Biomasse"
     ],
     "correct": 1,
     "explanation": "Bioethanol: Gärung (Zucker/Stärke + Hefe). CO₂-neutral (wenn Pflanzenanbau berücksichtigt). E10: 10% Bioethanol, 90% Benzin. Kritik: Flächenkonkurrenz mit Nahrungsmitteln, Wasserverbrauch.",
@@ -446,10 +446,10 @@
   {
     "question": "Was ist die Bedeutung organischer Chemie für Arzneimittel?",
     "options": [
-      "Medizin kommt nur aus Pflanzen",
-      "Arzneimittel sind meist organische Verbindungen: Aspirin (Acetylsalicylsäure), Penicillin (beta-Lactam-Ring), Insulin (Protein). Pharmakologie nutzt organisch-chemische Synthese.",
-      "Keine organische Verbindung in Medizin",
-      "Nur anorganische Chemie"
+      "Alle Wirkstoffe stammen unverändert aus Heilpflanzen und Wildkräutern",
+      "Die meisten Wirkstoffe sind organische Verbindungen aus gezielter Synthese",
+      "Wirkstoffe wirken nur dann, wenn sie keine funktionellen Gruppen tragen",
+      "Wirkstoffe entstehen ausschließlich aus anorganischen Metallsalzen"
     ],
     "correct": 1,
     "explanation": "Pharmazie: Aspirin = Acetylsalicylsäure (Ester). Penicillin: aus Schimmelpilzen isoliert. Insulin: Protein (51 Aminosäuren). Wirkstoffe: Stickstoffhaltige Verbindungen (Alkaloide: Morphin, Coffein, Nikotin). Wirkstoffdesign.",
@@ -458,10 +458,10 @@
   {
     "question": "Was ist der Unterschied zwischen polaren und unpolaren Verbindungen in der organischen Chemie?",
     "options": [
-      "Kein Unterschied",
-      "Polar: ungleiche Ladungsverteilung durch elektronegative Atome (O, N); löst sich in Wasser. Unpolar: nur C-H-Bindungen; löst sich in organischen Lösungsmitteln. Similia similibus solvuntur.",
-      "Unpolar ist immer flüssig",
-      "Polar ist immer fest"
+      "Polare Stoffe lösen sich in Benzin, unpolare Stoffe dagegen in Wasser",
+      "Polare Stoffe lösen sich in Wasser, unpolare in Benzin und in Fetten",
+      "Polare Stoffe haben stets niedrigere Siedepunkte als unpolare Stoffe",
+      "Unpolare Stoffe bilden untereinander besonders starke Wasserstoffbrücken"
     ],
     "correct": 1,
     "explanation": "Polarität: EN-Unterschied zwischen Atomen. -OH, -COOH: polar (H-Brücken, wasserlöslich). Alkane: unpolar (Van-der-Waals, fettlöslich). Ähnliches löst sich in Ähnlichem. Seife: beidhändig (Tensid-Wirkung).",
@@ -470,10 +470,10 @@
   {
     "question": "Was ist Kohlenstoffkreislauf und Bedeutung organischer Chemie?",
     "options": [
-      "Nur geologisch relevant",
-      "Kohlenstoff zirkuliert zwischen Atmosphäre (CO₂), Pflanzen (Fotosynthese), Tieren (Verbrennung), Boden und Ozean. Verbrennung fossiler Brennstoffe (organische Chemie) stört das Gleichgewicht → Klimawandel.",
-      "Nur für Geologie",
-      "Kohlenstoff ist selten"
+      "Kohlenstoff wandert nur sehr langsam zwischen Gestein und Erdmantel",
+      "Kohlenstoff zirkuliert zwischen Atmosphäre, Lebewesen, Boden und Ozean",
+      "Kohlenstoff wird ausschließlich in Erdöl und in Steinkohle gespeichert",
+      "Kohlenstoff ist auf der Erde selten und kommt kaum in Lebewesen vor"
     ],
     "correct": 1,
     "explanation": "Kohlenstoffkreislauf: Fotosynthese (CO₂ → Biomasse) ↔ Atmung/Verbrennung (Biomasse → CO₂). Fossile Brennstoffe: altes gebundenes C wird freigesetzt. Kunststoffe: langlebige C-Verbindungen. Organische Chemie: Schlüssel für Nachhaltigkeit.",

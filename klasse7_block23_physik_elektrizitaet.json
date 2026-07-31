@@ -1,70 +1,70 @@
 [
   {
     "question": "Was ist elektrische Ladung?",
-    "options": ["Die Spannung in einem Stromkreis", "Eine fundamentale Eigenschaft von Teilchen (positiv oder negativ), die elektrische Kräfte erzeugt", "Der Widerstand eines Leiters", "Die Energie eines Akkus"],
+    "options": ["Der elektrische Druck, der Ladungsträger durch einen Leiter treibt", "Eine grundlegende Eigenschaft von Teilchen, die elektrische Kräfte hervorruft", "Ein Maß dafür, wie stark ein Leiter den Stromfluss hemmt", "Die in einer Batterie chemisch gespeicherte Energiemenge"],
     "correct": 1,
     "explanation": "Elektrische Ladung: Protonen (+), Elektronen (–). Einheit: Coulomb (C). Gleichnamige Ladungen stoßen sich ab, ungleichnamige ziehen sich an. Neutrale Körper haben gleich viele positive und negative Ladungen.",
     "topic": "Elektrische Grundlagen"
   },
   {
     "question": "Was ist elektrischer Strom?",
-    "options": ["Die Energie in einem Stromkreis", "Eine Bewegung von Teilchen", "Der gerichtete Fluss elektrischer Ladungsträger (meist Elektronen) durch einen Leiter", "Die Spannung zwischen zwei Polen"],
+    "options": ["Die in einem Stromkreis insgesamt gespeicherte elektrische Energie", "Die pro Sekunde von einem Verbraucher umgesetzte elektrische Energie", "Der gerichtete Fluss elektrischer Ladungsträger durch einen Leiter", "Der Unterschied der Ladungsverteilung zwischen zwei Polen"],
     "correct": 2,
     "explanation": "Elektrischer Strom = Bewegung von Elektronen im Leiter. Konventionelle Stromrichtung: von + nach –. Tatsächliche Elektronenbewegung: von – nach +. Einheit: Ampere (A). Gemessen mit dem Amperemeter.",
     "topic": "Elektrische Grundlagen"
   },
   {
     "question": "Was ist elektrische Spannung?",
-    "options": ["Die Menge der Elektronen im Leiter", "Das Maß für die Kraft, die Ladungsträger durch den Stromkreis treibt (elektrischer 'Druck')", "Der Widerstand des Leiters", "Die Stärke des Magnetfelds"],
+    "options": ["Die Anzahl der frei beweglichen Elektronen in einem Leiterstück", "Das Maß für die Antriebskraft, die Ladungsträger durch den Stromkreis treibt", "Das Maß dafür, wie stark ein Leiter den Stromfluss hemmt", "Die Stärke des Magnetfelds um einen stromdurchflossenen Leiter"],
     "correct": 1,
     "explanation": "Spannung (U): Einheit Volt (V). Erzeugt durch Spannungsquellen (Batterie, Generator). Messung mit dem Voltmeter (parallel geschaltet). Haushaltsstrom: 230 V. Autobatterie: 12 V.",
     "topic": "Elektrische Grundlagen"
   },
   {
     "question": "Was ist elektrischer Widerstand?",
-    "options": ["Die Ursache für Stromstärke", "Ein Maß dafür, wie stark ein Leiter den Stromfluss hemmt", "Die Spannung geteilt durch den Strom", "Ein Bauteil, das Strom erzeugt"],
+    "options": ["Die Ursache dafür, dass in einem Leiter überhaupt Strom fließt", "Das Maß dafür, wie stark ein Leiter den Stromfluss hemmt", "Das Produkt aus anliegender Spannung und fließender Stromstärke", "Ein Bauteil, das im Stromkreis selbst eine Spannung erzeugt"],
     "correct": 1,
     "explanation": "Widerstand (R): Einheit Ohm (Ω). Je größer R, desto schwächer der Strom bei gleicher Spannung. Metalle haben kleinen Widerstand (Leiter), Glas/Kunststoff großen (Isolatoren).",
     "topic": "Elektrische Grundlagen"
   },
   {
     "question": "Wie lautet das Ohmsche Gesetz?",
-    "options": ["U = I + R", "R = U × I", "U = I × R (Spannung = Stromstärke × Widerstand)", "I = U × R"],
+    "options": ["U = I + R", "R = U × I", "U = I × R", "I = U × R"],
     "correct": 2,
     "explanation": "Ohmsches Gesetz: U = I·R. Umformungen: I = U/R (Strom = Spannung ÷ Widerstand), R = U/I (Widerstand = Spannung ÷ Strom). Benannt nach Georg Simon Ohm (1789–1854).",
     "topic": "Ohmsches Gesetz"
   },
   {
     "question": "Was ist ein geschlossener Stromkreis?",
-    "options": ["Ein Stromkreis ohne Batterie", "Ein vollständiger, ununterbrochener Weg für den Strom von der Spannungsquelle durch Verbraucher und zurück", "Ein Kurzschluss", "Ein Stromkreis mit vielen Glühbirnen"],
+    "options": ["Ein Stromweg, der an einer Stelle durch einen offenen Schalter getrennt ist", "Ein ununterbrochener Weg von der Quelle über den Verbraucher und zurück", "Eine widerstandsarme Verbindung der beiden Pole einer Spannungsquelle", "Ein Stromweg, in dem mehrere Verbraucher nebeneinander liegen"],
     "correct": 1,
     "explanation": "Damit Strom fließt, muss der Stromkreis geschlossen (vollständig) sein: Spannungsquelle → Leiter → Verbraucher → zurück zur Spannungsquelle. Ein offener Schalter unterbricht den Kreis → kein Strom.",
     "topic": "Stromkreise"
   },
   {
     "question": "Was ist eine Reihenschaltung?",
-    "options": ["Bauteile sind parallel nebeneinander geschaltet", "Bauteile werden nacheinander in einem einzigen Stromweg hintereinander geschaltet", "Bauteile sind unverbunden", "Nur für Widerstände geeignet"],
+    "options": ["Die Bauteile liegen nebeneinander in mehreren getrennten Stromzweigen", "Die Bauteile liegen in einem einzigen Stromweg hintereinander", "Die Bauteile sind ohne leitende Verbindung nebeneinander angeordnet", "Die Bauteile sind jeweils an eine eigene Spannungsquelle angeschlossen"],
     "correct": 1,
     "explanation": "Reihenschaltung: Strom fließt durch alle Bauteile nacheinander (gleicher Strom überall). Gesamtwiderstand = Summe der Einzelwiderstände. Nachteil: Fällt eine Glühbirne aus, erlischt der ganze Kreis.",
     "topic": "Stromkreise"
   },
   {
     "question": "Was ist eine Parallelschaltung?",
-    "options": ["Alle Bauteile sind hintereinander", "Alle Bauteile liegen an derselben Spannung und der Strom teilt sich auf die parallelen Zweige auf", "Bauteile teilen sich den Widerstand", "Eine Schaltung ohne Spannungsquelle"],
+    "options": ["Alle Bauteile liegen hintereinander in einem einzigen Stromweg", "Alle Bauteile liegen an derselben Spannung, der Strom teilt sich auf", "Alle Bauteile haben denselben Widerstandswert und dieselbe Bauform", "Alle Bauteile werden über einen gemeinsamen Eisenkern gekoppelt"],
     "correct": 1,
     "explanation": "Parallelschaltung: Spannung an jedem Zweig gleich. Strom teilt sich auf: I_gesamt = I₁ + I₂ + ... Vorteil: Fällt eine Glühbirne aus, leuchten die anderen weiter. Hausinstallation: Parallelschaltung.",
     "topic": "Stromkreise"
   },
   {
     "question": "Was misst ein Amperemeter?",
-    "options": ["Spannung", "Widerstand", "Elektrische Stromstärke (in Ampere)", "Elektrische Leistung"],
+    "options": ["Die elektrische Spannung in Volt", "Den elektrischen Widerstand in Ohm", "Die elektrische Stromstärke in Ampere", "Die elektrische Leistung in Watt"],
     "correct": 2,
     "explanation": "Amperemeter misst Stromstärke (A). Es wird in Reihe geschaltet (in den Stromkreis). Sein Innenwiderstand ist sehr klein, damit es den Strom nicht beeinflusst. Gegensatz: Voltmeter misst Spannung, parallel geschaltet.",
     "topic": "Messgeräte"
   },
   {
     "question": "Was misst ein Voltmeter?",
-    "options": ["Stromstärke in Ampere", "Elektrische Spannung (in Volt) zwischen zwei Punkten", "Widerstand in Ohm", "Elektrische Ladung"],
+    "options": ["Die Stromstärke in Ampere", "Die Spannung in Volt", "Den Widerstand in Ohm", "Die Ladungsmenge in Coulomb"],
     "correct": 1,
     "explanation": "Voltmeter misst Spannung (V). Es wird parallel zum Bauteil geschaltet, an dem die Spannung gemessen werden soll. Sein Innenwiderstand ist sehr groß, damit kaum Strom durch es fließt.",
     "topic": "Messgeräte"
@@ -78,147 +78,147 @@
   },
   {
     "question": "Welche Formel gilt für die elektrische Leistung?",
-    "options": ["P = U + I", "P = U / I", "P = U × I (Leistung = Spannung × Stromstärke)", "P = I / U"],
+    "options": ["P = U + I", "P = U / I", "P = U × I", "P = I / U"],
     "correct": 2,
     "explanation": "Elektrische Leistung P = U·I. Einheit: Watt (W). Beispiel: Glühlampe 230 V, 0,35 A → P = 230 × 0,35 ≈ 80 W. Energie = Leistung × Zeit: E = P·t (Joule oder Kilowattstunden, kWh).",
     "topic": "Elektrische Leistung"
   },
   {
     "question": "Was ist ein Kurzschluss?",
-    "options": ["Ein zu langer Stromkreis", "Eine direkte Verbindung zwischen den Polen einer Spannungsquelle ohne nennenswerten Widerstand – sehr große Stromstärke", "Eine unterbrochene Leitung", "Ein defekter Schalter"],
+    "options": ["Eine Leitung, die für die angeschlossene Leistung zu lang gewählt wurde", "Eine widerstandsarme Verbindung der beiden Pole mit sehr großer Stromstärke", "Eine an einer Stelle unterbrochene Leitung, durch die kein Strom mehr fließt", "Ein Schalter, der den Stromkreis nicht mehr vollständig schließen kann"],
     "correct": 1,
     "explanation": "Kurzschluss: fast kein Widerstand → sehr großer Strom (U=I·R, R≈0 → I sehr groß). Gefährlich: Leitungen erhitzen sich, Brandgefahr. Sicherungen und Schutzschalter unterbrechen den Kreis bei Kurzschluss.",
     "topic": "Elektrische Sicherheit"
   },
   {
     "question": "Was ist ein Magnet?",
-    "options": ["Ein leitfähiges Metall", "Ein Körper, der eine Magnetkraft auf Eisen und andere magnetische Materialien ausübt und ein Magnetfeld erzeugt", "Ein Stromleiter", "Ein elektrisch geladener Körper"],
+    "options": ["Ein Metall, das den elektrischen Strom besonders gut leitet", "Ein Körper, der ein Magnetfeld erzeugt und Eisen anzieht", "Ein Leiter, in dem dauerhaft ein elektrischer Strom fließt", "Ein Körper, der eine dauerhafte elektrische Ladung trägt"],
     "correct": 1,
     "explanation": "Magnete haben einen Nord- und Südpol. Gleichnamige Pole stoßen sich ab, ungleichnamige ziehen sich an. Permanentmagnete behalten ihre Magnetisierung dauerhaft. Die Erde selbst ist ein großer Magnet (Erdmagnetfeld).",
     "topic": "Magnetismus"
   },
   {
     "question": "Was ist das Magnetfeld?",
-    "options": ["Der Bereich, in dem ein elektrischer Strom fließt", "Der Raum um einen Magneten, in dem Magnetkräfte wirken – sichtbar gemacht durch Feldlinien", "Die Oberfläche eines Magneten", "Ein elektrisches Feld"],
+    "options": ["Der Bereich im Inneren eines Leiters, in dem der Strom fließt", "Der Raum um einen Magneten, in dem Magnetkräfte wirken", "Die Oberflächenschicht eines Magneten, an der die Pole liegen", "Der Raum um eine Ladung, in dem elektrische Kräfte wirken"],
     "correct": 1,
     "explanation": "Magnetfeldlinien verlaufen außen vom Nordpol zum Südpol (innerhalb des Magneten umgekehrt). Dichte der Linien zeigt Feldstärke. Mit Eisenfeilspänen auf Papier sichtbar gemacht.",
     "topic": "Magnetismus"
   },
   {
     "question": "Was sind ferromagnetische Materialien?",
-    "options": ["Materialien, die elektrischen Strom leiten", "Materialien, die stark von Magneten angezogen werden und selbst magnetisiert werden können (z.B. Eisen, Nickel, Kobalt)", "Alle Metalle", "Materialien, die elektrisch isolieren"],
+    "options": ["Materialien, die den Strom besonders gut leiten, etwa Kupfer und Silber", "Materialien, die stark von Magneten angezogen werden, etwa Eisen und Nickel", "Materialien, die sich bei Wärme stark ausdehnen, etwa Aluminium und Messing", "Materialien, die elektrisch isolieren, etwa Glas, Keramik und Kunststoff"],
     "correct": 1,
     "explanation": "Ferromagnetische Materialien: Eisen (Fe), Nickel (Ni), Kobalt (Co) und ihre Legierungen (Stahl). Gold, Silber, Kupfer und Aluminium sind NICHT ferromagnetisch – Magnete ziehen sie nicht an.",
     "topic": "Magnetismus"
   },
   {
     "question": "Was ist ein Elektromagnet?",
-    "options": ["Ein natürlicher Magnet", "Ein durch elektrischen Strom erzeugter Magnet: eine stromdurchflossene Spule (Solenoid) mit Eisenkern", "Ein sehr starker Permanentmagnet", "Ein Magnet aus Gold"],
+    "options": ["Ein natürlich vorkommendes Eisenerz mit dauerhafter Magnetwirkung", "Eine stromdurchflossene Spule mit Eisenkern, deren Feld abschaltbar ist", "Ein besonders starker Dauermagnet aus einer Nickel-Kobalt-Legierung", "Ein Eisenstab, der durch Reiben an einem Dauermagneten magnetisiert wurde"],
     "correct": 1,
     "explanation": "Elektromagnete: Spule (Drahtwicklungen) + Eisenkern + Strom = Magnet. Stärke regelbar (Stromstärke, Windungszahl). Abschaltbar. Anwendungen: Krane, Türklingeln, Lautsprecher, MRT-Gerät.",
     "topic": "Elektromagnetismus"
   },
   {
     "question": "Was ist elektromagnetische Induktion?",
-    "options": ["Magnetisierung durch Strom", "Die Erzeugung einer elektrischen Spannung durch Veränderung des Magnetfeldes in einer Leiterspule", "Die Übertragung von Strom durch die Luft", "Der Bau von Elektromagneten"],
+    "options": ["Das Magnetisieren eines Eisenkerns durch einen dauerhaften Gleichstrom", "Das Entstehen einer Spannung durch Änderung des Magnetfeldes in einer Spule", "Das Übertragen von elektrischem Strom durch die Luft über weite Strecken", "Das Ausrichten der Elementarmagnete beim Erwärmen eines Eisenstücks"],
     "correct": 1,
     "explanation": "Induktion (entdeckt von Michael Faraday, 1831): Bewegt man einen Magneten in einer Spule (oder umgekehrt), entsteht eine Spannung und bei geschlossenem Kreis ein Strom. Grundprinzip aller Generatoren und Transformatoren.",
     "topic": "Elektromagnetismus"
   },
   {
     "question": "Was ist ein Generator?",
-    "options": ["Ein Gerät, das elektrische Energie in mechanische umwandelt", "Ein Gerät, das durch Induktion mechanische Energie in elektrische Energie umwandelt", "Ein Elektromotor", "Eine Spannungsquelle"],
+    "options": ["Ein Gerät, das elektrische Energie in mechanische Bewegung umwandelt", "Ein Gerät, das mechanische Bewegung in elektrische Energie umwandelt", "Ein Gerät, das chemische Energie in elektrische Energie umwandelt", "Ein Gerät, das eine Wechselspannung in eine höhere Spannung umwandelt"],
     "correct": 1,
     "explanation": "Generator: Mechanische Energie (Rotation) → elektrische Energie (Induktion). Im Kraftwerk: Turbine dreht Generator. Dynamo am Fahrrad ist ein kleiner Generator. Gegenteil: Elektromotor (elektrisch → mechanisch).",
     "topic": "Elektromagnetismus"
   },
   {
     "question": "Was ist ein Elektromotor?",
-    "options": ["Ein Gerät, das elektrische Energie in mechanische Energie umwandelt (Drehbewegung)", "Ein Gerät, das Strom erzeugt", "Ein Transformator", "Ein Kondensator"],
+    "options": ["Ein Gerät, das elektrische Energie in mechanische Bewegung umwandelt", "Ein Gerät, das mechanische Bewegung in elektrische Energie umwandelt", "Ein Gerät, das eine Wechselspannung erhöht oder auf einen kleineren Wert bringt", "Ein Gerät, das elektrische Ladung vorübergehend speichert und wieder abgibt"],
     "correct": 0,
     "explanation": "Elektromotor: Elektrische Energie → mechanische Energie. Prinzip: Stromdurchflossene Spule in einem Magnetfeld dreht sich. Anwendungen: E-Autos, Ventilatoren, Waschmaschinen, Elektrowerkzeuge.",
     "topic": "Elektromagnetismus"
   },
   {
     "question": "Was ist ein Transformator?",
-    "options": ["Ein Gerät zur Stromerzeugung", "Ein Gerät, das durch elektromagnetische Induktion die elektrische Spannung erhöht oder senkt", "Ein Elektromotor", "Eine Batterie"],
+    "options": ["Ein Gerät, das aus mechanischer Bewegung elektrische Energie erzeugt", "Ein Gerät, das durch Induktion eine Wechselspannung erhöht oder senkt", "Ein Gerät, das elektrische Energie in eine Drehbewegung umwandelt", "Ein Gerät, das chemische Energie als elektrische Spannung bereitstellt"],
     "correct": 1,
     "explanation": "Transformator (Trafo): Zwei Spulen auf gemeinsamem Eisenkern. Primärspule (Eingang) → Magnetfeld → Sekundärspule (Ausgang). Übersetzungsverhältnis: U₂/U₁ = n₂/n₁. Wichtig für Strombertragung und Netzteile.",
     "topic": "Elektromagnetismus"
   },
   {
     "question": "Warum wird Strom mit hoher Spannung über lange Strecken übertragen?",
-    "options": ["Weil hohe Spannung sicherer ist", "Weil hohe Spannung Kabel kürzer macht", "Weil bei gleicher Leistung hohe Spannung geringen Strom bedeutet und damit weniger Leitungsverluste entstehen", "Weil Transformatoren nur bei hoher Spannung funktionieren"],
+    "options": ["Weil hohe Spannung an Freileitungen ungefährlicher ist als niedrige", "Weil hohe Spannung die Länge der benötigten Leitungen deutlich verringert", "Weil bei gleicher Leistung weniger Strom fließt und die Verluste sinken", "Weil Transformatoren erst oberhalb einer bestimmten Spannung arbeiten"],
     "correct": 2,
     "explanation": "P = U·I: Bei gleicher Leistung und höherer Spannung fließt weniger Strom. Wärmeverluste in Leitungen: P_Verlust = I²·R → kleiner Strom = viel weniger Verlust. Hochspannungsleitungen: 110–380 kV.",
     "topic": "Elektrische Energie"
   },
   {
     "question": "Was ist eine Sicherung im Haushalt?",
-    "options": ["Ein Gerät zum Messen der Spannung", "Ein Schutzschalter, der den Stromkreis bei zu hohem Strom (Überlast/Kurzschluss) automatisch unterbricht", "Ein Widerstand", "Ein Schalter für das Licht"],
+    "options": ["Ein Messgerät, das die Spannung in der Hausinstallation überwacht", "Ein Schutzschalter, der den Kreis bei zu hohem Strom unterbricht", "Ein Bauteil, das den Strom gleichmäßig auf die Steckdosen verteilt", "Ein Schalter, mit dem sich einzelne Lampen ein- und ausschalten lassen"],
     "correct": 1,
     "explanation": "Sicherungen (Schmelzsicherungen oder Leitungsschutzschalter) schützen vor Überhitzung und Brand. Bei zu hohem Strom schmilzt der Draht (Schmelzsicherung) oder schaltet der Automat ab. Muss dann ausgetauscht/zurückgesetzt werden.",
     "topic": "Elektrische Sicherheit"
   },
   {
     "question": "Was ist Wechselstrom?",
-    "options": ["Strom, der wechselweise fließt und nicht fließt", "Strom, der seine Richtung periodisch ändert (z.B. 50 Hz im Haushalt)", "Strom aus Batterien", "Strom mit gleichbleibender Richtung"],
+    "options": ["Strom, der in unregelmäßigen Abständen aussetzt und wieder einsetzt", "Strom, der seine Flussrichtung periodisch ändert, im Netz mit 50 Hz", "Strom, der ausschließlich von Batterien und Akkus geliefert wird", "Strom, der seine Flussrichtung dauerhaft beibehält, etwa aus Solarzellen"],
     "correct": 1,
     "explanation": "Wechselstrom (AC): Richtung wechselt periodisch. Im europäischen Haushalt: 50 Hz (50 Mal pro Sekunde Richtungswechsel), 230 V. Gegensatz: Gleichstrom (DC) aus Batterien/Akkus mit gleichbleibender Richtung.",
     "topic": "Elektrische Grundlagen"
   },
   {
     "question": "Was ist eine Batterie/ein Akkumulator?",
-    "options": ["Ein Transformator", "Ein Spannungsquelle, die chemische Energie in elektrische umwandelt", "Ein Widerstand", "Ein Generator"],
+    "options": ["Ein Bauteil, das eine Wechselspannung durch Induktion umformt", "Eine Spannungsquelle, die chemische Energie in elektrische umwandelt", "Ein Bauteil, das den Stromfluss in einem Stromkreis gezielt begrenzt", "Ein Gerät, das aus einer Drehbewegung elektrische Energie erzeugt"],
     "correct": 1,
     "explanation": "Batterie: Nicht wiederaufladbar (einmalige chemische Reaktion). Akku (Akkumulator): Wiederaufladbar (Reaktion umkehrbar). Beide wandeln chemische Energie in elektrische Energie um. Spannung abhängig von verwendeten Materialien.",
     "topic": "Spannungsquellen"
   },
   {
     "question": "Was sind Leiter und Nichtleiter (Isolatoren)?",
-    "options": ["Gleiche Eigenschaften, nur verschiedene Namen", "Leiter lassen Strom fließen (Metalle), Nichtleiter/Isolatoren nicht (Glas, Kunststoff, Holz)", "Leiter speichern Strom, Nichtleiter erzeugen ihn", "Nichtleiter leiten Wärme, Leiter nicht"],
+    "options": ["Beide leiten den Strom gleich gut, sie unterscheiden sich nur im Namen", "Leiter lassen Strom fließen, Isolatoren wie Glas und Kunststoff kaum", "Leiter speichern elektrische Ladung, Isolatoren geben sie sofort wieder ab", "Isolatoren leiten den Strom, Leiter dagegen ausschließlich die Wärme"],
     "correct": 1,
     "explanation": "Leiter: freie Elektronen → Strom fließt leicht (Kupfer, Silber, Aluminium, Graphit). Isolatoren: keine freien Elektronen → kaum Strom (Glas, Kunststoff, Keramik, Holz trocken). Halbleiter: dazwischen (Silizium).",
     "topic": "Elektrische Grundlagen"
   },
   {
     "question": "Was ist die Einheit der elektrischen Energie?",
-    "options": ["Watt (W)", "Volt (V)", "Kilowattstunde (kWh) oder Joule (J)", "Ampere (A)"],
+    "options": ["Watt (W)", "Volt (V)", "Kilowattstunde (kWh)", "Ampere (A)"],
     "correct": 2,
     "explanation": "Elektrische Energie E = P·t (Leistung × Zeit). Im Haushalt: Kilowattstunde (kWh). 1 kWh = 3.600.000 J. Beispiel: Heizgerät (2 kW) 3 Stunden: 2 × 3 = 6 kWh verbraucht.",
     "topic": "Elektrische Energie"
   },
   {
     "question": "Was ist beim Umgang mit Elektrizität wichtig?",
-    "options": ["Niemals Elektrizität im Haushalt benutzen", "Nasse Hände schützen vor Stromschlag", "Stromquellen niemals kurzschließen, Schutzkleidung tragen, nasse Hände meiden, Sicherungen prüfen", "Strom ist immer harmlos"],
+    "options": ["Elektrische Geräte im Haushalt grundsätzlich gar nicht erst benutzen", "Geräte mit feuchten Händen bedienen, weil Wasser den Strom abhält", "Defekte Geräte meiden, Kurzschlüsse vermeiden und trockene Hände haben", "Auf Sicherungen verzichten, weil sie den Stromkreis unnötig stören"],
     "correct": 2,
     "explanation": "Elektrische Sicherheit: Niemals in Steckdosen greifen. Nasse Hände leiten Strom besser (Wasser leitfähig). Kein Wasser in der Nähe von Elektrogeräten. Ab ca. 25 mA kann Strom lebensbedrohlich werden.",
     "topic": "Elektrische Sicherheit"
   },
   {
     "question": "Was ist eine Solarzelle?",
-    "options": ["Eine Batterie für Solaranlagen", "Ein Bauteil, das Licht direkt in elektrische Energie umwandelt (photovoltaischer Effekt)", "Ein Generator, der mit Sonnenenergie angetrieben wird", "Ein Akku für Sonnenwärme"],
+    "options": ["Ein Akku, der den Strom einer Solaranlage über die Nacht speichert", "Ein Bauteil, das Licht unmittelbar in elektrische Energie umwandelt", "Ein Generator, der von der Wärme der Sonnenstrahlung angetrieben wird", "Ein Spiegel, der Sonnenlicht auf einen Wärmespeicher bündelt"],
     "correct": 1,
     "explanation": "Solarzellen (PV-Zellen) nutzen den photoelektrischen Effekt: Lichtquanten (Photonen) lösen Elektronen in Silizium aus → elektrische Spannung entsteht. Solarmodule sind viele Zellen in Reihe/Parallel.",
     "topic": "Erneuerbare Energien"
   },
   {
     "question": "Was ist der Erdmagnetpol?",
-    "options": ["Der geografische Nordpol der Erde", "Der magnetische Pol der Erde, zu dem der Kompass zeigt (liegt nahe, aber nicht genau am geografischen Nordpol)", "Ein Magnet im Erdkern", "Eine magnetische Anomalie"],
+    "options": ["Der geografische Nordpol, an dem die Drehachse der Erde austritt", "Der magnetische Pol der Erde, zu dem die Kompassnadel zeigt", "Ein großer Dauermagnet aus Eisen im Inneren des Erdkerns", "Der Punkt, an dem das Magnetfeld der Erde am schwächsten ist"],
     "correct": 1,
     "explanation": "Die Erde wirkt wie ein riesiger Magnet (durch flüssiges Eisen im Kern). Der magnetische Nordpol liegt nahe dem geografischen Nordpol, aber nicht identisch. Er wandert langsam. Kompassnadel zeigt zum magnetischen Nordpol.",
     "topic": "Magnetismus"
   },
   {
     "question": "Was ist ein Halbleiter?",
-    "options": ["Ein Material zwischen Leiter und Nichtleiter, dessen Leitfähigkeit durch Dotierung gesteuert werden kann", "Ein schlechter Leiter", "Ein Material, das nur halb so viel Strom leitet", "Ein Isolator"],
+    "options": ["Ein Material zwischen Leiter und Isolator, dessen Leitfähigkeit steuerbar ist", "Ein Bauteil, das den elektrischen Strom nur in einer Richtung durchlässt", "Ein Material, das genau die Hälfte des zugeführten Stroms weiterleitet", "Ein Material, das den Stromfluss unter allen Bedingungen völlig sperrt"],
     "correct": 0,
     "explanation": "Halbleiter (z.B. Silizium, Germanium): elektrische Leitfähigkeit zwischen Metallen und Isolatoren, steuerbar durch Temperatur, Licht oder Dotierung. Grundlage aller modernen Elektronik: Transistoren, Chips, Dioden.",
     "topic": "Elektrische Grundlagen"
   },
   {
     "question": "Was ist ein Transistor?",
-    "options": ["Ein Widerstand", "Ein elektronisches Bauelement, das als Schalter oder Verstärker genutzt wird und in Milliarden von Stück in jedem Computer steckt", "Ein Transformator im Kleinen", "Ein Kondensator"],
+    "options": ["Ein Bauteil, das den Stromfluss um einen festen Wert verringert", "Ein Bauteil, das als Schalter oder Verstärker im Stromkreis arbeitet", "Ein Bauteil, das eine Wechselspannung auf einen anderen Wert bringt", "Ein Bauteil, das elektrische Ladung kurzzeitig speichert und abgibt"],
     "correct": 1,
     "explanation": "Transistoren (erfunden 1947) sind die Grundbausteine moderner Elektronik. Ein moderner Mikroprozessor enthält Milliarden von Transistoren auf kleinstem Raum. Sie können Ein/Aus schalten (Digitalelektronik) oder verstärken.",
     "topic": "Elektrische Grundlagen"
@@ -232,21 +232,21 @@
   },
   {
     "question": "Was ist ein Schaltplan?",
-    "options": ["Eine Fotografie einer Schaltung", "Eine genormte symbolische Darstellung eines elektrischen Stromkreises", "Ein Sicherheitsplan für Elektriker", "Eine Liste der Bauteile"],
+    "options": ["Eine maßstäbliche Fotografie des fertig aufgebauten Stromkreises", "Eine genormte Darstellung eines Stromkreises mit festen Symbolen", "Eine Vorschrift für das sichere Arbeiten an elektrischen Anlagen", "Eine Aufstellung aller Bauteile mit Preisen und Bestellnummern"],
     "correct": 1,
     "explanation": "Schaltpläne verwenden normierte Symbole (DIN-Normen): Batterie, Glühlampe, Widerstand, Schalter, Diode, Kondensator. Schaltpläne sind die 'Landkarten' der Elektrotechnik – sie zeigen die elektrischen Verbindungen.",
     "topic": "Stromkreise"
   },
   {
     "question": "Was ist der Unterschied zwischen Gleichstrom und Wechselstrom?",
-    "options": ["Kein Unterschied", "Gleichstrom (DC) hat konstante Richtung, Wechselstrom (AC) wechselt periodisch die Richtung", "Gleichstrom ist gefährlicher", "Wechselstrom kommt aus Batterien"],
+    "options": ["Zwischen beiden Stromarten besteht physikalisch kein Unterschied", "Gleichstrom behält die Richtung bei, Wechselstrom wechselt sie ständig", "Gleichstrom fließt nur in Metallen, Wechselstrom auch in Flüssigkeiten", "Wechselstrom stammt aus Batterien, Gleichstrom aus der Steckdose"],
     "correct": 1,
     "explanation": "DC (Direct Current): Batterien, Akkus, Solarzellen – konstante Richtung. AC (Alternating Current): Steckdose (230 V, 50 Hz) – Richtung wechselt 100 Mal/s. Transformatoren funktionieren nur mit AC.",
     "topic": "Elektrische Grundlagen"
   },
   {
     "question": "Was ist elektrische Energie im Haushalt in kWh?",
-    "options": ["Nur für Industrieanlagen wichtig", "Eine Einheit für elektrische Energie: 1 kWh = Energie, die eine 1.000-Watt-Vorrichtung in einer Stunde verbraucht", "Eine Einheit für Spannung", "Gleichbedeutend mit Watt"],
+    "options": ["Eine Größe, die nur für Industrieanlagen und Kraftwerke gebraucht wird", "Eine Energieeinheit: Ein 1000-Watt-Gerät verbraucht in einer Stunde 1 kWh", "Eine Einheit für die Spannung im Stromnetz eines Wohnhauses", "Eine andere Schreibweise für die Leistungseinheit Watt"],
     "correct": 1,
     "explanation": "1 kWh = 1.000 W × 1 h = 3.600.000 J. Auf der Stromrechnung wird Energieverbrauch in kWh angegeben. Beispiel: Kühlschrank (150 W) läuft 24h → 150 × 24/1000 = 3,6 kWh. Ein kWh Strom kostet in Deutschland ca. 30 Cent.",
     "topic": "Elektrische Energie"

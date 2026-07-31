@@ -2,10 +2,10 @@
   {
     "question": "How is the Simple Past of regular verbs formed?",
     "options": [
-      "Add -s to the verb",
-      "Add -ed to the base form: walk → walked, play → played, want → wanted. Spelling rules apply.",
-      "Use did + verb",
-      "Change the vowel"
+      "Add -s to the base form: walk → walks, play → plays, want → wants",
+      "Add -ed to the base form: walk → walked, play → played, want → wanted",
+      "Use did + base form: walk → did walk, play → did play, want → did want",
+      "Change the stem vowel: sing → sang, drink → drank, swim → swam"
     ],
     "correct": 1,
     "explanation": "Regular Simple Past: base + -ed. Spelling: double consonant after short vowel (stop → stopped). Drop -e before -ed (like → liked). Change -y to -ied (study → studied). Same form for all persons.",
@@ -14,10 +14,10 @@
   {
     "question": "How do you form the negative in Simple Past?",
     "options": [
-      "Add not after the verb",
+      "Put not after the main verb: She went not. He knew not.",
       "Use did not (didn't) + base form: She didn't go. He didn't know.",
-      "Add -ed to not",
-      "Use was/were not"
+      "Use have not (haven't) + past participle: She hasn't gone. He hasn't known.",
+      "Use was/were not + verb-ing: She wasn't going. He wasn't knowing."
     ],
     "correct": 1,
     "explanation": "Negative: subject + did not + base form. \"She didn't come.\" NOT \"She didn't came.\" Did = auxiliary, so main verb stays in base form. Exception: be → was/were not (no did).",
@@ -26,10 +26,10 @@
   {
     "question": "How do you form questions in Simple Past?",
     "options": [
-      "Verb first",
       "Did + subject + base form: Did she go? Did you see it?",
-      "Was/were + subject",
-      "Subject + verb + ?"
+      "Main verb first + subject: Went she? Saw you it?",
+      "Was/were + subject + verb-ing: Was she going? Were you seeing it?",
+      "Subject + past form + question mark: She went? You saw it?"
     ],
     "correct": 0,
     "explanation": "Simple Past questions: Did + subject + base form. \"Did he call?\" NOT \"Did he called?\" Exception: be → Was/Were + subject. \"Was she there?\" Short answers: Yes, she did. / No, she didn't.",
@@ -39,7 +39,7 @@
     "question": "What is the Simple Past of \"go\"?",
     "options": [
       "Goed",
-      "Went – irregular verb. Other forms: come → came, see → saw, have → had, be → was/were.",
+      "Went",
       "Goes",
       "Gone"
     ],
@@ -50,10 +50,10 @@
   {
     "question": "When do we use the Simple Past?",
     "options": [
-      "For habits in the present",
-      "For finished actions in the past at a specific time. Signal words: yesterday, last week, in 2010, ago, when.",
-      "For ongoing past actions",
-      "For future plans"
+      "For repeated habits in the present, with signal words like always, often, every day",
+      "For finished actions at a fixed time in the past, with signal words like yesterday, last week, ago",
+      "For actions in progress in the past, with signal words like while, as, at that moment",
+      "For plans and intentions in the future, with signal words like tomorrow, next week, soon"
     ],
     "correct": 1,
     "explanation": "Simple Past: completed past action. \"I visited Paris last year.\" Signal words: yesterday, last (night/week/year), in 2020, two days ago, when I was young. Compare: Present Perfect (no specific time mentioned).",
@@ -62,10 +62,10 @@
   {
     "question": "What are the forms of \"to be\" in Simple Past?",
     "options": [
-      "Was for all persons",
-      "I/he/she/it was; you/we/they were. Question: Was I? Were you? Negative: I wasn't; you weren't.",
-      "Were for all persons",
-      "Be for all persons"
+      "Was for all persons: I was, you was, he was, we was, they was",
+      "Was for I/he/she/it and were for you/we/they: I was, they were",
+      "Were for all persons: I were, you were, he were, we were, they were",
+      "Was for the plural and were for the singular: I were, he were, we was"
     ],
     "correct": 1,
     "explanation": "Be: was (singular: I, he, she, it) / were (plural: you, we, they). \"I was happy.\" \"They were late.\" Questions: \"Was he there?\" \"Were you ready?\" Negative: wasn't / weren't.",
@@ -74,10 +74,10 @@
   {
     "question": "What is the Past Progressive (Past Continuous)?",
     "options": [
-      "Finished past action",
-      "Action in progress at a specific time in the past: was/were + verb-ing. Often combined with Simple Past: While I was reading, the phone rang.",
-      "Future plan",
-      "Present action"
+      "A short, completed action in the past, formed with the past form of the verb",
+      "An action in progress at a moment in the past, formed with was/were + verb-ing",
+      "An action planned for a later time, formed with will + be + verb-ing",
+      "An action happening at this very moment, formed with am/is/are + verb-ing"
     ],
     "correct": 1,
     "explanation": "Past Progressive: was/were + -ing. \"I was sleeping at 10 pm.\" Interrupted action: \"While I was cooking, she called.\" Contrast: Simple Past (short completed) vs. Past Progressive (longer background action).",
@@ -86,10 +86,10 @@
   {
     "question": "How is the Present Perfect formed?",
     "options": [
-      "did + past participle",
-      "have/has + past participle. I have seen, she has gone, we have finished.",
-      "was/were + verb-ing",
-      "will + base form"
+      "did + past participle: I did seen, she did gone, we did finished",
+      "have/has + past participle: I have seen, she has gone, we have finished",
+      "was/were + verb-ing: I was seeing, she was going, we were finishing",
+      "will + base form: I will see, she will go, we will finish"
     ],
     "correct": 1,
     "explanation": "Present Perfect: have/has + past participle (3rd form). \"I have eaten.\" \"She has visited.\" Past participle: regular (-ed) or irregular (go→gone, see→seen, eat→eaten). No specific time signal.",
@@ -98,10 +98,10 @@
   {
     "question": "What is the difference between Simple Past and Present Perfect?",
     "options": [
-      "No difference",
-      "Simple Past: finished action at specific time (yesterday). Present Perfect: past action with present relevance or no specific time (ever, never, already, just, yet).",
-      "Present Perfect is for recent actions only",
-      "Simple Past never uses ago"
+      "Simple Past is used in writing, Present Perfect is used only in spoken language",
+      "Simple Past: finished action at a stated time. Present Perfect: relevance now or no stated time",
+      "Simple Past: relevance for now. Present Perfect: finished action at a clearly stated time",
+      "Simple Past is used with irregular verbs, Present Perfect only with regular verbs"
     ],
     "correct": 1,
     "explanation": "SP: \"I saw her yesterday.\" (specific time). PP: \"I have seen her before.\" (no specific time, experience). Signal words: SP (yesterday, last year, ago, in 2010); PP (ever, never, already, just, yet, since, for).",
@@ -110,10 +110,10 @@
   {
     "question": "What are comparative and superlative forms of adjectives?",
     "options": [
-      "Add -ed for comparative",
-      "Short adjectives: add -er (comparative) and -est (superlative): big→bigger→biggest. Long adjectives: more/most: beautiful→more beautiful→most beautiful.",
-      "Use more for all adjectives",
-      "Add -ier for all"
+      "Add -er/-est to every adjective: beautiful → beautifuler → beautifulest, big → bigger",
+      "Add -er/-est to short adjectives and more/most to long ones: bigger → biggest, more beautiful",
+      "Add more/most to every adjective: more big → most big, more beautiful → most beautiful",
+      "Add more/most to short adjectives and -er/-est to long ones: more big, beautifuler"
     ],
     "correct": 1,
     "explanation": "Short (1-2 syllables): -er/-est: tall→taller→tallest. Spelling: double consonant (big→bigger), -y→-ier (happy→happier). Long: more/most. Irregular: good→better→best, bad→worse→worst, far→further→furthest.",
@@ -122,10 +122,10 @@
   {
     "question": "What is an if-clause type 1?",
     "options": [
-      "Unreal condition",
-      "Real or possible condition in the present/future: If + Simple Present, will + base form. If it rains, I will stay home.",
-      "Past condition",
-      "Impossible condition"
+      "An unreal condition now: If + Simple Past, would + base form (If I had time, I would come)",
+      "A real or possible condition: If + Simple Present, will + base form (If it rains, I will stay)",
+      "An impossible past condition: If + Past Perfect, would have + participle (If I had known)",
+      "A general truth: If + Simple Present, Simple Present (If you heat water, it boils)"
     ],
     "correct": 1,
     "explanation": "Type 1 conditional: possible situation. \"If I study hard, I will pass the exam.\" If-clause: Simple Present. Main clause: will + base form. Can use other modals: \"If it rains, we can/might/should stay inside.\"",
@@ -134,10 +134,10 @@
   {
     "question": "What is the difference between \"much\" and \"many\"?",
     "options": [
-      "No difference",
-      "Much: uncountable nouns (much water, much time). Many: countable nouns (many books, many people).",
-      "Much for plural",
-      "Many for singular"
+      "Much with countable nouns (much books), many with uncountable nouns (many water)",
+      "Much with uncountable nouns (much water), many with countable nouns (many books)",
+      "Much with plural nouns (much cars), many with singular nouns (many car, many idea)",
+      "Much in questions only (How much?), many in statements only (I have many)"
     ],
     "correct": 1,
     "explanation": "Much + uncountable: much money, much information, much homework. Many + countable (plural): many cars, many students, many ideas. In positive sentences: a lot of (both). Much/many mainly in negatives/questions.",
@@ -146,10 +146,10 @@
   {
     "question": "What does \"used to\" express?",
     "options": [
-      "Present habit",
-      "Past habit or state that no longer exists: I used to live in Berlin (but I don't anymore). Used to + base form.",
-      "Future intention",
-      "Ability in the past"
+      "A habit that is still true today: I used to live in Berlin and I still live there",
+      "A habit or state in the past that is over: I used to live in Berlin, but not anymore",
+      "An intention for the future: I used to move to Berlin at the end of next year",
+      "An ability in the past, like could: I used to swim very well when I was a child"
     ],
     "correct": 1,
     "explanation": "\"Used to\": past habit/state, no longer true now. \"I used to play football.\" (but I don't anymore). Questions: \"Did you use to...?\" Negative: \"I didn't use to...\" Compare: \"would\" (past habit, not state).",
@@ -158,10 +158,10 @@
   {
     "question": "What are modal verbs in English?",
     "options": [
-      "Action verbs",
-      "Auxiliary verbs expressing ability, possibility, permission, obligation: can, could, may, might, must, should, will, would, shall, ought to.",
-      "Irregular verbs",
-      "Linking verbs"
+      "Verbs that name a concrete action: run, eat, write, build, speak, work, play",
+      "Auxiliary verbs for ability, permission or obligation: can, must, should, may, might",
+      "Verbs with irregular past forms: go/went, see/saw, take/took, know/knew, give/gave",
+      "Verbs that link subject and complement: be, seem, become, look, feel, sound"
     ],
     "correct": 1,
     "explanation": "Modals: always + base form (no -s, no -ed). Can (ability/permission): I can swim. Must (obligation): You must stop. Should (advice): You should eat well. May/might (possibility). Could (past ability/polite request).",
@@ -170,10 +170,10 @@
   {
     "question": "What is the difference between \"can\" and \"could\"?",
     "options": [
-      "No difference",
-      "Can: present ability or permission. Could: past ability, polite request, or possibility: I could swim when I was five. Could you help me?",
-      "Could is more formal always",
-      "Can is for questions only"
+      "Both express present ability in exactly the same way and can always be swapped",
+      "Can: ability or permission now. Could: past ability, polite request or possibility",
+      "Can: ability in the past. Could: ability and permission in the present moment",
+      "Can: used in questions only. Could: used in statements and short answers only"
     ],
     "correct": 1,
     "explanation": "Can: present (I can speak German). Could: past ability (I could run fast as a child). Polite request: \"Could you open the door?\" Possibility: \"It could rain.\" Could = more polite/tentative than can.",
@@ -182,10 +182,10 @@
   {
     "question": "What is the passive voice in English?",
     "options": [
-      "Subject does the action",
-      "Object becomes subject; formed with be + past participle: The book was written by her. Used when the doer is unknown or unimportant.",
-      "Active voice",
-      "Future tense"
+      "The subject does the action itself: She wrote the book, formed with the normal past form",
+      "The object becomes the subject: The book was written by her, formed with be + participle",
+      "The action is shown as ongoing: She was writing the book, formed with be + verb-ing",
+      "The action is put into the perfect: She has written the book, formed with have + participle"
     ],
     "correct": 1,
     "explanation": "Passive: be + past participle. Active: \"They built the bridge.\" Passive: \"The bridge was built (by them).\" Tenses: is written (present), was written (past), has been written (PP), will be written (future).",
@@ -194,10 +194,10 @@
   {
     "question": "What are relative clauses in English?",
     "options": [
-      "Independent clauses",
-      "Clauses that describe a noun: who (persons), which (things), that (persons/things). The man who lives there is my uncle.",
-      "Conditional clauses",
-      "Adverb clauses"
+      "Clauses that stand alone as full sentences: The man lives there. He is my uncle.",
+      "Clauses that describe a noun with who, which or that: The man who lives there is my uncle.",
+      "Clauses that state a condition with if or unless: If the man lives there, he is my uncle.",
+      "Clauses that give time or reason with when or because: He is my uncle because he lives there."
     ],
     "correct": 1,
     "explanation": "Relative pronouns: who (people), which (things), that (both, informal). \"The book that/which I read was great.\" \"The woman who/that called is my teacher.\" Whose (possession): \"The student whose bag I found...\"",
@@ -206,10 +206,10 @@
   {
     "question": "What is the gerund in English?",
     "options": [
-      "Present participle",
-      "Verb used as a noun (verb + -ing as subject or object): Swimming is fun. I enjoy reading.",
-      "Infinitive form",
-      "Past participle"
+      "The -ing form after be, showing an action in progress: She is swimming at the moment.",
+      "The -ing form used as a noun, as subject or object: Swimming is fun. I enjoy reading.",
+      "The base form with to, used after want or hope: I want to swim. I hope to read a lot.",
+      "The third form of the verb, used after have or be: I have swum. The book was read."
     ],
     "correct": 1,
     "explanation": "Gerund: verb-ing as noun. Subject: \"Swimming is healthy.\" After certain verbs: enjoy, avoid, mind, finish, suggest, keep + gerund. \"I enjoy swimming.\" After prepositions: \"I'm good at cooking.\"",
@@ -218,10 +218,10 @@
   {
     "question": "What is the infinitive with \"to\" used for?",
     "options": [
-      "After modal verbs",
-      "After certain verbs (want, like, decide, hope, plan, need), after adjectives (happy to see you), or to express purpose (I went there to buy milk).",
-      "After prepositions",
-      "As a noun"
+      "After modal verbs such as can, must and should: I can to swim, she must to go home",
+      "After verbs like want or decide, after adjectives, and for purpose: I went there to buy milk",
+      "After prepositions such as at, of and about: I am good at to cook, afraid of to fall",
+      "After verbs like enjoy, avoid and finish: I enjoy to swim, she avoids to run in the rain"
     ],
     "correct": 1,
     "explanation": "To + infinitive: want to go, decide to stay, hope to win. Purpose: \"I study to learn.\" After adjectives: \"glad to help.\" Modal verbs: no to (can do, must go, should eat). Gerund vs. infinitive: different verbs.",
@@ -230,10 +230,10 @@
   {
     "question": "What does \"since\" vs \"for\" express with Present Perfect?",
     "options": [
-      "No difference",
-      "Since: point in time (since 2020, since Monday). For: duration of time (for three years, for a long time).",
-      "Since is for countable",
-      "For is only for future"
+      "Both name the length of a period of time and can be used in exactly the same way",
+      "Since names the starting point (since 2020, since Monday), for names the duration (for three years)",
+      "Since names the duration (since three years), for names the starting point (for Monday)",
+      "Since is used with countable periods, for is used with uncountable periods of time"
     ],
     "correct": 1,
     "explanation": "\"I have lived here since 2015.\" (point of start). \"I have lived here for 8 years.\" (duration). Since + point: Monday, January, 2010, I was a child. For + period: two hours, a long time, ages, three weeks.",
@@ -242,10 +242,10 @@
   {
     "question": "What are the most common irregular verbs students should know?",
     "options": [
-      "All verbs are regular in English",
-      "go/went/gone, come/came/come, see/saw/seen, do/did/done, have/had/had, say/said/said, get/got/got, make/made/made, know/knew/known, take/took/taken.",
-      "Only be is irregular",
-      "There are no patterns"
+      "goed, comed, seed, doed, haved, sayed, getted, maked, knowed, taked",
+      "go/went/gone, see/saw/seen, do/did/done, have/had/had, take/took/taken, know/knew/known",
+      "be/was/been is the single irregular verb; all other verbs follow the -ed pattern",
+      "walk/walked/walked, play/played/played, want/wanted/wanted, live/lived/lived"
     ],
     "correct": 1,
     "explanation": "Must-know irregulars: be/was/were/been, have/had/had, do/did/done, go/went/gone, come/came/come, see/saw/seen, give/gave/given, take/took/taken, write/wrote/written, speak/spoke/spoken.",
@@ -254,10 +254,10 @@
   {
     "question": "What is reported speech (indirect speech)?",
     "options": [
-      "Quoting someone directly",
-      "Reporting what someone said without using their exact words: She said (that) she was tired. Tense usually shifts back.",
-      "Writing in quotation marks",
-      "Asking about what someone said"
+      "Repeating the exact words of a speaker in quotation marks: She said, \"I am tired.\"",
+      "Telling what someone said without the exact words: She said (that) she was tired.",
+      "Turning a statement into a question about the words used: What did she say to you?",
+      "Writing a dialogue with a new line for every speaker: – I am tired. – Me too."
     ],
     "correct": 1,
     "explanation": "Reported speech: \"I am tired\" → She said (that) she was tired. Tense shift: present→past, past→past perfect, will→would. Pronouns change. Time/place expressions change (here→there, now→then, today→that day).",
@@ -266,10 +266,10 @@
   {
     "question": "What is an adverb of frequency?",
     "options": [
-      "Word describing a noun",
-      "Word telling how often: always (100%), usually, often, sometimes, rarely, never (0%). Usually before the main verb but after \"be\".",
-      "Word describing an adjective",
-      "Word describing another adverb"
+      "A word that describes a noun more closely: a red car, an old house, three books",
+      "A word that tells how often something happens: always, usually, often, sometimes, never",
+      "A word that makes an adjective stronger or weaker: very good, quite old, rather cold",
+      "A word that says where or when an action happens: here, outside, yesterday, soon"
     ],
     "correct": 1,
     "explanation": "Frequency adverbs: always, usually, often, sometimes, rarely, seldom, never. Position: before main verb (\"I always eat breakfast\"), after \"be\" (\"She is always late\"). \"Do you ever...?\" \"I have never been...\"",
@@ -278,10 +278,10 @@
   {
     "question": "What is the structure of a question with a question word?",
     "options": [
-      "Question word + subject + verb",
-      "Question word + auxiliary + subject + base form: Where did you go? What have you eaten? Why is she crying?",
-      "Question word + verb + subject",
-      "Question word at the end"
+      "Question word + subject + main verb: Where you went? What you have eaten?",
+      "Question word + auxiliary + subject + base form: Where did you go? What have you eaten?",
+      "Question word + main verb + subject: Where went you? What ate you yesterday?",
+      "Subject + verb with the question word at the end: You went where? She is crying why?"
     ],
     "correct": 1,
     "explanation": "Wh-questions: Who, What, Where, When, Why, How + auxiliary + subject + base form. \"Where did you go?\" \"What does she want?\" Exception: who/what as subject: \"Who called?\" (no auxiliary needed).",
@@ -290,10 +290,10 @@
   {
     "question": "What does the Present Perfect express that is different from Simple Past?",
     "options": [
-      "Simple Past is more formal",
-      "Present Perfect: connection to the present – experience ever/never, recent action (just), incomplete action (yet/still), action started in past and continues (since/for).",
-      "Present Perfect is always more polite",
-      "No real difference in meaning"
+      "It is the more formal version of the Simple Past, used mainly in written texts",
+      "It links the past to the present: experience, recent action, unfinished period of time",
+      "It is the more polite form, used for requests and in everyday spoken conversation",
+      "It describes actions that lie further back in the past than the Simple Past does"
     ],
     "correct": 1,
     "explanation": "PP relevance: \"I have lost my key.\" (it's still lost, affects now). SP: \"I lost my key yesterday.\" (completed fact). Experience: \"Have you ever been to Italy?\" Action just completed: \"She has just finished.\" Unfinished: \"I have lived here for 5 years.\"",
@@ -302,10 +302,10 @@
   {
     "question": "What is the difference between \"a\" and \"an\"?",
     "options": [
-      "A for countable, an for uncountable",
-      "A before consonant sounds: a car, a university. An before vowel sounds: an apple, an hour (h is silent), an MBA.",
-      "A for singular, an for plural",
-      "No real difference"
+      "A stands before countable nouns (a car), an before uncountable nouns (an water)",
+      "A stands before consonant sounds (a car, a university), an before vowel sounds (an apple, an hour)",
+      "A stands before singular nouns (a car), an before plural nouns (an cars, an apples)",
+      "A stands before short words (a car), an before longer words (an bicycle, an teacher)"
     ],
     "correct": 1,
     "explanation": "a/an = indefinite article. a + consonant sound: a book, a European (sounds like \"Yuropean\"). an + vowel sound: an apple, an elephant, an hour, an honest man. It is about the sound, not the spelling.",
@@ -314,10 +314,10 @@
   {
     "question": "What are prepositions of time in English?",
     "options": [
-      "Only at and on",
-      "At (specific time: at 5pm, at noon, at night), on (days/dates: on Monday, on 3rd May), in (months/years/seasons: in July, in 2020, in summer).",
-      "Only in",
-      "At for all times"
+      "At for days and dates, on for exact times, in for months: at Monday, on 5pm, in July",
+      "At for exact times (at 5pm), on for days and dates (on Monday), in for longer periods (in July)",
+      "In for exact times, at for months and years, on for seasons: in 5pm, at July, on summer",
+      "At for every time expression: at 5pm, at Monday, at July, at 2020, at summer"
     ],
     "correct": 1,
     "explanation": "Time prepositions: at (exact time: at 3pm, at midnight, at Christmas). on (specific day/date: on Monday, on my birthday, on 5th June). in (longer period: in the morning, in July, in 2020, in winter).",
@@ -326,10 +326,10 @@
   {
     "question": "What are prepositions of place in English?",
     "options": [
-      "Only in and on",
-      "In (inside: in the box), on (surface: on the table), at (specific point: at the door, at school), under, above, next to, between, in front of, behind.",
-      "Only under and over",
-      "All prepositions work the same"
+      "In for surfaces, on for closed spaces, at for larger areas: in the table, on the box",
+      "In for closed spaces (in the box), on for surfaces (on the table), at for points (at the door)",
+      "On for closed spaces, at for surfaces, in for exact points: on the box, at the table, in the door",
+      "At for every place expression: at the box, at the table, at the door, at the shelf"
     ],
     "correct": 1,
     "explanation": "Place: in (3D space: in the room), on (surface: on the shelf), at (point/place: at home, at the bus stop). Under/below, over/above, next to, beside, between (two things), among (many things).",
@@ -338,10 +338,10 @@
   {
     "question": "What is the difference between \"make\" and \"do\" in English?",
     "options": [
-      "No difference",
-      "Make: create/produce something (make a cake, make a decision, make a mistake). Do: perform an activity (do homework, do exercise, do the dishes).",
-      "Do is for physical actions only",
-      "Make is always transitive"
+      "Both verbs mean the same and can be used in every fixed expression alike",
+      "Make for creating something (make a cake, a decision), do for activities (do homework, sport)",
+      "Make for activities (make homework, make sport), do for creating something (do a cake)",
+      "Make is used in questions and do in statements, otherwise the meaning is the same"
     ],
     "correct": 1,
     "explanation": "Make: something new is created. Make a phone call, make dinner, make friends, make a plan. Do: activity without producing something tangible. Do sport, do business, do a favour, do your best. Fixed expressions!",
@@ -350,10 +350,10 @@
   {
     "question": "What is \"there is / there are\"?",
     "options": [
-      "Same as \"it is\"",
-      "Used to say something exists: There is (singular/uncountable), there are (plural). There is a cat. There are three cats.",
-      "Used for location only",
-      "Always followed by the"
+      "Another way of saying \"it is\", with exactly the same meaning: There is cold today.",
+      "A way of saying that something exists: there is + singular, there are + plural nouns.",
+      "An expression pointing to a place far from the speaker: There is the house over there.",
+      "An expression used with the definite article: There is the cat. There are the three cats."
     ],
     "correct": 1,
     "explanation": "\"There is/are\" = existential. There is a problem. (singular). There are many people. (plural). Past: There was/were. Question: Is there...? Are there...? Negative: There isn't/aren't. Used to introduce new info.",
@@ -362,10 +362,10 @@
   {
     "question": "What are the most important time connectors in English?",
     "options": [
-      "And, but, or",
-      "First, then, after that, finally, when, while, before, after, as soon as, until, during – connect events in time.",
-      "Because, so, although",
-      "Too, also, as well"
+      "And, but, or, as well as – they add information or set two ideas against each other",
+      "First, then, after that, finally, when, while, before, after, as soon as, until",
+      "Because, so, therefore, although, however – they give reasons, results or contrast",
+      "Who, which, that, whose – they attach a description to a noun in the sentence"
     ],
     "correct": 1,
     "explanation": "Time connectors: First → Then → After that → Finally (sequence). When (at the same time/after). While (simultaneous). Before/After (order). As soon as (immediately). Until (up to a point). During (throughout).",
@@ -374,10 +374,10 @@
   {
     "question": "What is the rule for spelling -ing forms?",
     "options": [
-      "Always add -ing without change",
-      "Double final consonant after short stressed vowel (swim→swimming, run→running). Drop silent -e (ride→riding). Change -ie to -y (lie→lying).",
-      "Always double the consonant",
-      "Never change spelling"
+      "Add -ing to the base form unchanged: ride → rideing, swim → swiming, lie → lieing",
+      "Double the consonant after a short vowel (swim → swimming), drop silent -e (ride → riding)",
+      "Double the final consonant in every verb: walk → walkking, ride → ridding, play → playying",
+      "Change every final -y to -ie before -ing: play → plaieing, study → studieing, try → trieing"
     ],
     "correct": 1,
     "explanation": "-ing spelling: simple: walk→walking, play→playing. Double consonant: short stressed vowel + single consonant: sit→sitting, stop→stopping. Drop -e: make→making, write→writing. -ie→-y: lie→lying, die→dying.",
@@ -386,10 +386,10 @@
   {
     "question": "What are \"false friends\" between German and English?",
     "options": [
-      "Words that rhyme",
-      "Words that look similar but have different meanings: gift (Englisch: Geschenk, Deutsch: Gift=poison), bekommen (German=receive, not become), chef (English=Küchenchef, German=boss).",
-      "Loan words",
-      "Synonyms"
+      "Words of both languages that rhyme with each other: house/Haus, mouse/Maus, garden/Garten",
+      "Words that look alike but mean different things: gift (Geschenk) vs. Gift (Poison), become vs. bekommen",
+      "Words that English has taken from German unchanged: kindergarten, rucksack, hamburger",
+      "Words with the same meaning inside one language: big and large, start and begin"
     ],
     "correct": 1,
     "explanation": "False friends: Gift (EN: present, DE: Geschenk/Gift=Poison). Become (EN: werden, DE: bekommen=receive). Sympathetic (EN: mitfühlend, DE: sympathisch=likeable). Art (EN: Kunst, DE: Art=type). Chef (EN: Küchenchef, DE: Chef=boss).",
@@ -398,10 +398,10 @@
   {
     "question": "What is the imperative in English?",
     "options": [
-      "Question form",
-      "Use base form of verb for commands: Go! Stop! Listen carefully! For polite requests, add please: Please sit down. Negative: Don't + base form.",
-      "Past form",
-      "Subject + will"
+      "The question form of the verb: Do you go? Are you listening carefully to me?",
+      "The base form used for orders and requests: Go! Listen carefully! Please sit down.",
+      "The past form used to report an order: He went. She listened carefully to the teacher.",
+      "Subject + will used for promises: You will go. You will listen carefully to me."
     ],
     "correct": 1,
     "explanation": "Imperative: base form, no subject. \"Open the window.\" \"Don't run.\" Polite: \"Please be quiet.\" \"Could you...?\" The subject (you) is understood. For emphasis: \"Do sit down!\" (emphatic do).",
@@ -410,10 +410,10 @@
   {
     "question": "What are the main differences between British and American English?",
     "options": [
-      "Only spelling differences",
-      "Spelling (colour/color, centre/center), vocabulary (lift/elevator, flat/apartment, autumn/fall), pronunciation, some grammar differences.",
-      "American English is incorrect",
-      "No differences"
+      "The spelling differs (colour/color), while vocabulary, grammar and sound are identical",
+      "Spelling, vocabulary, pronunciation and a few grammar points differ: colour/color, lift/elevator",
+      "The pronunciation differs, while spelling, vocabulary and grammar follow the same rules",
+      "The vocabulary differs (lift/elevator), while spelling and pronunciation stay the same"
     ],
     "correct": 1,
     "explanation": "British vs American: Spelling: -our/-or (colour/color), -re/-er (centre/center), -ise/-ize. Vocab: lorry/truck, biscuit/cookie, chemist/drugstore, post/mail. Present Perfect (BrE) vs Simple Past (AmE) for recent actions.",
@@ -422,10 +422,10 @@
   {
     "question": "What does \"both ... and\", \"either ... or\", \"neither ... nor\" express?",
     "options": [
-      "Only one possibility",
-      "Both...and: two things included. Either...or: one of two choices. Neither...nor: both excluded.",
-      "Past tense constructions",
-      "Future possibilities"
+      "Both...and excludes two things, either...or includes both, neither...nor offers a choice",
+      "Both...and includes two things, either...or offers one of two, neither...nor excludes both",
+      "All three connect events in time, like before, after and as soon as in a sentence",
+      "All three introduce a condition, like if, unless and provided that in a sentence"
     ],
     "correct": 1,
     "explanation": "Correlative conjunctions: Both A and B (A und B). Either A or B (entweder A oder B). Neither A nor B (weder A noch B). \"Both cats and dogs are popular pets.\" \"Either you study or you fail.\" \"Neither she nor I knew.\"",
@@ -434,10 +434,10 @@
   {
     "question": "What is a phrasal verb?",
     "options": [
-      "A very long verb",
-      "A verb + particle (preposition/adverb) with a new meaning: give up (aufgeben), look after (kümmern), turn off (ausschalten), find out (herausfinden).",
-      "A modal verb",
-      "A regular verb"
+      "A verb with an unusually large number of letters: understand, congratulate, remember",
+      "A verb plus a particle with a new meaning: give up, look after, turn off, find out",
+      "A verb that is followed by an auxiliary: can go, must stay, should wait, will come",
+      "A verb that forms its past tense with -ed: walked, played, wanted, lived, worked"
     ],
     "correct": 1,
     "explanation": "Phrasal verbs: verb + particle = new meaning. Give up (quit), look forward to (sich freuen auf), put off (verschieben), get on with (auskommen), run out of (ausgehen). Very common in English, must be learned.",
@@ -446,10 +446,10 @@
   {
     "question": "What is the difference between \"say\" and \"tell\"?",
     "options": [
-      "No difference",
-      "Say: used with direct/reported speech without naming the person spoken to: She said it was cold. Tell: always needs an object (person): She told me it was cold.",
-      "Tell is more formal",
-      "Say is for questions"
+      "Both verbs work alike and can be used with or without a person as object",
+      "Say works without naming the listener (She said it was cold), tell needs a person (She told me)",
+      "Say needs a person as object (She said me), tell works without a listener (She told it was cold)",
+      "Say is used in questions and tell in statements, otherwise the meaning is the same"
     ],
     "correct": 1,
     "explanation": "\"Say\" + (that) + clause: He said (that) he was tired. \"Tell\" + person + (that) + clause: He told me (that) he was tired. Tell sb: tell me, tell him, tell the class. Common mistake: \"He said me\" (wrong) → \"He told me\" (correct).",
@@ -458,10 +458,10 @@
   {
     "question": "What is the difference between \"look\", \"see\", and \"watch\"?",
     "options": [
-      "They mean the same",
-      "See: without effort (I can see a bird). Look (at): directed gaze with effort. Watch: follow movement over time (watch TV, watch a game).",
-      "Watch is only for sport",
-      "Look is passive"
+      "The three verbs mean the same and can replace each other in every sentence",
+      "See: perceive without effort. Look at: direct the gaze on purpose. Watch: follow something moving",
+      "See: follow something moving. Look at: perceive without effort. Watch: direct the gaze briefly",
+      "See is used for people, look for objects and watch for places, buildings and rooms"
     ],
     "correct": 1,
     "explanation": "See: involuntary or ability (I see a bird, can you see it?). Look (at): deliberate direction of gaze (look at the map). Watch: follow a moving thing over time (watch the film, watch the children play). Similar: hear/listen to.",
@@ -470,10 +470,10 @@
   {
     "question": "What are articles (definite and indefinite) in English?",
     "options": [
-      "Prepositions",
-      "A/an (indefinite): introduces something new or unknown. The (definite): refers to something specific or already mentioned. No article: plural/uncountable in general sense (I like cats).",
-      "Pronouns",
-      "Adjectives"
+      "Short words placed before a noun to show its case: of, to, with, from, by",
+      "A/an introduces something new, the points to something known, no article in a general sense",
+      "Short words that stand in for a noun in the sentence: he, she, it, they, them",
+      "Short words that describe a noun more closely: big, red, old, beautiful, heavy"
     ],
     "correct": 1,
     "explanation": "A/an: first mention (\"I saw a dog.\"). The: second mention or unique thing (\"The dog was huge.\", \"the sun\", \"the Queen\"). No article: general statements (\"Dogs are friendly.\", \"I love music.\"). Tricky: \"the\" with superlatives, \"the Rhine\".",
