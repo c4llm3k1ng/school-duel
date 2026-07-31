@@ -2,10 +2,10 @@
   {
     "question": "Was ist Kraft in der Physik?",
     "options": [
-      "Energie: die Fähigkeit eines Körpers, Arbeit zu verrichten, gemessen in Joule (J).",
+      "Energie: die Fähigkeit eines Körpers, Arbeit zu verrichten. Einheit: Joule (J). E = F × s.",
       "Eine Einwirkung, die einen Körper beschleunigt, verformt oder zum Ruhen bringt. Einheit: Newton (N). F = m × a.",
-      "Leistung: die pro Zeiteinheit verrichtete Arbeit eines Systems, gemessen in Watt (W).",
-      "Druck: die auf eine Fläche wirkende Kraft pro Flächeneinheit, gemessen in Pascal (Pa)."
+      "Leistung: die pro Zeiteinheit verrichtete Arbeit. Einheit: Watt (W). P = W/t.",
+      "Druck: die auf eine Fläche wirkende Kraft pro Flächeneinheit. Einheit: Pascal (Pa). p = F/A."
     ],
     "correct": 1,
     "explanation": "Kraft (F): vektoriell (Betrag + Richtung). F = m × a. Newtonsche Gesetze. 1N = Kraft um 1 kg um 1 m/s² zu beschleunigen. Gewichtskraft: G = m × g (g ≈ 9,81 m/s²).",
@@ -14,10 +14,10 @@
   {
     "question": "Was ist die Schwerkraft (Gravitationskraft)?",
     "options": [
-      "Magnetismus: die Anziehungskraft zwischen magnetischen Materialien, die Kompassnadeln ausrichtet.",
+      "Magnetismus: die Anziehungskraft zwischen magnetischen Materialien. Typisch bei Eisen und Nickel, richtet Kompassnadeln aus.",
       "Die Anziehungskraft zwischen Massen. Auf der Erdoberfläche: g ≈ 9,81 m/s². Zieht alles zur Erde hin.",
-      "Reibung: die einer Bewegung entgegenwirkende Kraft zwischen zwei Oberflächen in Kontakt.",
-      "Elektrische Kraft: die Anziehung oder Abstoßung zwischen positiv und negativ geladenen Teilchen."
+      "Reibung: die einer Bewegung entgegenwirkende Kraft zwischen zwei Oberflächen. Hängt von Reibungskoeffizient und Normalkraft ab.",
+      "Elektrische Kraft: die Anziehung oder Abstoßung zwischen geladenen Teilchen. Gleichnamige Ladungen stoßen sich ab, verschiedene ziehen sich an."
     ],
     "correct": 1,
     "explanation": "Schwerkraft/Gravitation: F = m × g. g = 9,81 m/s² (Erdoberfläche). Auf dem Mond: g = 1,62 m/s². Ein 10-kg-Objekt: 98,1 N Gewichtskraft auf Erde, 16,2 N auf Mond. Masse ≠ Gewichtskraft.",
@@ -26,10 +26,10 @@
   {
     "question": "Was ist der Unterschied zwischen Masse und Gewicht?",
     "options": [
-      "Sie sind gleich: Masse und Gewicht sind zwei gleichwertige Begriffe für dieselbe physikalische Größe.",
-      "Masse (kg): Maß für den Materiemenge, unveränderlich. Gewicht (N): Kraft durch Schwerkraft = m × g, ortsabhängig (Mond: gleiche Masse, weniger Gewicht).",
-      "Gewicht ist immer größer als die Masse, weil die Erdbeschleunigung g einen Faktor hinzufügt.",
-      "Masse ist die Kraft, mit der ein Körper auf eine Unterlage drückt, und wird daher in Newton gemessen."
+      "Sie sind gleich: Masse und Gewicht sind dasselbe, da beide die Materiemenge eines Körpers in derselben Einheit angeben.",
+      "Masse (kg): unveränderliche Materiemenge. Gewicht (N): ortsabhängige Kraft durch Schwerkraft, berechnet mit G = m × g.",
+      "Gewicht ist immer größer als die Masse, weil die Erdbeschleunigung g als Multiplikationsfaktor immer größer als 1 ist.",
+      "Masse ist die Kraft, mit der ein Körper auf seine Unterlage drückt, und wird deshalb wie Gewicht in Newton gemessen."
     ],
     "correct": 1,
     "explanation": "Masse: in kg, konstant überall. Gewicht: in Newton, hängt von g ab. Auf dem Mond: Masse 70 kg -> Gewicht 113 N (Erde: 687 N). Verwechslung: \"Ich wiege 70 kg\" -> umgangssprachlich korrekt, physikalisch falsch.",
@@ -38,10 +38,10 @@
   {
     "question": "Was ist Geschwindigkeit?",
     "options": [
-      "Kraft: die Einwirkung auf einen Körper, die ihn beschleunigt oder verformt, gemessen in Newton (N).",
+      "Kraft: die Einwirkung auf einen Körper, die ihn beschleunigt oder verformt. Einheit: Newton (N). F = m × a.",
       "Der zurückgelegte Weg pro Zeiteinheit: v = s/t. Einheit: m/s oder km/h. 1 m/s = 3,6 km/h.",
-      "Beschleunigung: die Änderung der Geschwindigkeit pro Zeiteinheit, gemessen in Metern pro Sekunde².",
-      "Energie: die Fähigkeit eines Systems, Arbeit zu verrichten, gemessen in Joule (J)."
+      "Beschleunigung: die Änderung der Geschwindigkeit pro Zeiteinheit. Einheit: m/s². a = Δv/Δt.",
+      "Energie: die Fähigkeit eines Systems, Arbeit zu verrichten. Einheit: Joule (J). E = F × s."
     ],
     "correct": 1,
     "explanation": "Geschwindigkeit: v = s/t. 36 km/h = 10 m/s. Durchschnittsgeschwindigkeit. Momentangeschwindigkeit. Vektorgrösse: hat Betrag (Tempo) und Richtung. Vektor: Geschwindigkeit. Skalar: Tempo (Betrag).",
@@ -50,10 +50,10 @@
   {
     "question": "Was ist Beschleunigung?",
     "options": [
-      "Geschwindigkeit: der zurückgelegte Weg pro Zeiteinheit eines Körpers, gemessen in m/s oder km/h.",
+      "Geschwindigkeit: der zurückgelegte Weg pro Zeiteinheit. Einheit: m/s oder km/h. Positiver Wert bei Vorwärtsbewegung.",
       "Die Änderung der Geschwindigkeit pro Zeiteinheit: a = Δv/Δt. Einheit: m/s². Positiv: beschleunigen. Negativ: abbremsen.",
-      "Kraft: die auf einen Körper einwirkende Größe, die ihn verformt oder in Bewegung versetzt (Newton).",
-      "Impuls: das Produkt aus Masse und Geschwindigkeit eines Körpers, gemessen in Kilogramm mal Meter pro Sekunde."
+      "Kraft: die auf einen Körper einwirkende Größe, die ihn verformt oder in Bewegung versetzt. Einheit: Newton (N). F = m × a.",
+      "Impuls: das Produkt aus Masse und Geschwindigkeit eines Körpers. Einheit: kg·m/s. p = m × v."
     ],
     "correct": 1,
     "explanation": "Beschleunigung: a = Δv/Δt = F/m. Fallbeschleunigung: g = 9,81 m/s². Zweites Newtonsches Gesetz: F = m × a. Ein PKW: 0-100km/h in 10s -> a ≈ 2,78 m/s².",
@@ -62,10 +62,10 @@
   {
     "question": "Was ist Reibung?",
     "options": [
-      "Eine Art Schwerkraft, die Körper nach unten zieht und durch die Erdanziehung entsteht.",
-      "Eine Kraft, die der Bewegung entgegenwirkt. Statische Reibung (verhindert Bewegung), Gleitreibung (während Bewegung), Rollreibung (kleiner).",
-      "Eine Art Magnetismus, bei der zwei Oberflächen durch elektrische Ladungen aneinanderhaften.",
-      "Eine Wärmequelle, die ausschließlich durch den Kontakt zweier elektrisch leitender Materialien entsteht."
+      "Eine nach unten wirkende Schwerkraft, die Körper zur Erde zieht und durch die Masse der Erde verursacht wird.",
+      "Eine Kraft, die der Bewegung entgegenwirkt. Arten: Haftreibung (verhindert Bewegung), Gleitreibung, Rollreibung (kleiner).",
+      "Eine magnetische Anziehungskraft, bei der zwei Oberflächen durch entgegengesetzte elektrische Ladungen aneinanderhaften.",
+      "Eine Wärmequelle, die durch den Kontakt zweier Materialien entsteht und deren Energie durch Strahlung abgegeben wird."
     ],
     "correct": 1,
     "explanation": "Reibung: F_R = μ × F_N (μ = Reibungskoeffizient, F_N = Normalkraft). Statische Reibung > Gleitreibung. Rollreibung: am kleinsten. Wichtig: Bremsen, Schuhe auf Boden, Reifen auf Straße.",
@@ -74,10 +74,10 @@
   {
     "question": "Was ist Energie und ihre Einheit?",
     "options": [
-      "Kraft: die Einwirkung auf einen Körper, die ihn beschleunigt oder verformt, gemessen in Newton (N).",
-      "Die Fähigkeit, Arbeit zu verrichten. Einheit: Joule (J) = N×m = kg×m²/s². Verschiedene Formen: Kinetisch, Potentiell, Wärme, Elektrisch.",
-      "Leistung: die pro Zeiteinheit verrichtete Arbeit eines Systems, gemessen in Watt (W = J/s).",
-      "Druck: die auf eine Fläche einwirkende Kraft pro Flächeneinheit, gemessen in Pascal (Pa = N/m²)."
+      "Kraft: die Einwirkung auf einen Körper, die ihn beschleunigt oder verformt. Einheit: Newton (N). Arten: Schwerkraft, Reibung, Federkraft.",
+      "Die Fähigkeit, Arbeit zu verrichten. Einheit: Joule (J) = N×m. Formen: kinetisch, potentiell, Wärme, elektrisch.",
+      "Leistung: die pro Zeiteinheit verrichtete Arbeit eines Systems. Einheit: Watt (W = J/s). Quellen: Muskeln, Motor, Generator.",
+      "Druck: die auf eine Fläche einwirkende Kraft pro Flächeneinheit. Einheit: Pascal (Pa = N/m²). Arten: Luft-, Wasser-, Reifendruck."
     ],
     "correct": 1,
     "explanation": "Energie: Joule (J). 1 kWh = 3 600 000 J = 3,6 MJ. Energieerhaltungssatz: Energie kann nicht erzeugt oder vernichtet werden, nur umgewandelt. kinetische Energie: E_kin = ½mv². Potentielle: E_pot = mgh.",
@@ -86,10 +86,10 @@
   {
     "question": "Was ist kinetische Energie?",
     "options": [
-      "Die Energie eines ruhenden Körpers in einer bestimmten Höhe, die durch seine Lage im Schwerefeld gespeichert ist.",
+      "Lageenergie: die Energie eines Körpers aufgrund seiner Höhe im Schwerefeld. Berechnet mit E_pot = m × g × h.",
       "Die Bewegungsenergie: E_kin = ½mv². Je schneller und schwerer ein Körper, desto mehr kinetische Energie besitzt er.",
-      "Wärmeenergie: die durch Teilchenbewegung in einem Körper gespeicherte thermische Energie.",
-      "Elektrische Energie: die im elektrischen Feld oder in Ladungsträgern gespeicherte Energieform."
+      "Wärmeenergie: die durch Teilchenbewegung in einem Körper gespeicherte thermische Energie. Einheit: Joule (J).",
+      "Elektrische Energie: die im elektrischen Feld oder in Ladungsträgern gespeicherte Energieform. Einheit: Joule (J)."
     ],
     "correct": 1,
     "explanation": "Kinetische Energie: E_kin = ½mv². Einheit: J. Auto 1000 kg bei 100 km/h (27,8 m/s): E_kin = ½ × 1000 × 27,8² ≈ 385 000 J = 385 kJ. Verdopplung der Geschwindigkeit: 4x mehr kinetische Energie.",
@@ -98,10 +98,10 @@
   {
     "question": "Was ist potentielle Energie?",
     "options": [
-      "Bewegungsenergie: die Energie, die ein Körper durch seine Bewegung besitzt (E = ½mv²).",
-      "Lageenergie: E_pot = mgh (Masse × Erdanziehung × Höhe). Ein Gegenstand in der Höhe hat gespeicherte Energie.",
-      "Wärmeenergie: die durch Reibung oder Verbrennung erzeugte thermische Energie in einem Körper.",
-      "Elektrische Energie: die in einem Kondensator oder einer Batterie gespeicherte Energieform."
+      "Bewegungsenergie: die Energie, die ein Körper durch seine Bewegung besitzt. Berechnet mit E_kin = ½mv².",
+      "Lageenergie: E_pot = m × g × h. Ein Körper in der Höhe speichert Energie aufgrund seiner Position im Schwerefeld.",
+      "Wärmeenergie: die durch Reibung oder Verbrennung erzeugte thermische Energie. Hängt von Temperatur und Masse ab.",
+      "Elektrische Energie: die in einem Kondensator oder einer Batterie gespeicherte Energieform. Einheit: Joule (J)."
     ],
     "correct": 1,
     "explanation": "Potentielle Energie: E_pot = m × g × h. Einheit: J. Ein Stein (1 kg) 10m hoch: E_pot = 1 × 9,81 × 10 ≈ 98 J. Beim Fallen: potentielle -> kinetische Energie (Energieerhaltung).",
@@ -110,10 +110,10 @@
   {
     "question": "Was ist Druck?",
     "options": [
-      "Kraft: die Einwirkung auf einen Körper, die ihn in eine bestimmte Richtung beschleunigt (Einheit: N).",
-      "Kraft pro Fläche: p = F/A. Einheit: Pascal (Pa) = N/m². Je kleiner die Fläche, desto größer der Druck bei gleicher Kraft (Nägel, Messer).",
-      "Energie: die Fähigkeit eines Systems, Arbeit zu verrichten, durch Bewegung oder Lage gespeichert.",
-      "Elektrische Spannung: der Antrieb, der Ladungsträger in einem Leiter in Bewegung versetzt (Einheit: Volt)."
+      "Kraft: die Einwirkung auf einen Körper, die ihn beschleunigt oder verformt. Einheit: Newton (N). F = m × a.",
+      "Kraft pro Fläche: p = F/A. Einheit: Pascal (Pa) = N/m². Je kleiner die Fläche, desto größer der Druck bei gleicher Kraft.",
+      "Energie: die Fähigkeit eines Systems, Arbeit zu verrichten, durch Bewegung oder Lage gespeichert. Einheit: Joule (J).",
+      "Elektrische Spannung: der Antrieb, der Ladungsträger in einem Leiter bewegt. Einheit: Volt (V). U = R × I."
     ],
     "correct": 1,
     "explanation": "Druck: p = F/A. Pascal (Pa). Luftdruck: 100 000 Pa = 1 bar. Reifendruck: ~2 bar. Schneeschuh: großer A -> kleiner p (sinkt weniger ein). Nadel: kleiner A -> großer p.",
@@ -122,10 +122,10 @@
   {
     "question": "Was ist Luftdruck?",
     "options": [
-      "Ein Vakuum: ein Bereich ohne Materie und damit ohne jeglichen Druck, z.B. im Weltall.",
-      "Der Druck der Luft aufgrund ihrer Schwerkraft. Normaldruck: 1013 mbar (101300 Pa). Im Gebirge: weniger Luft darüber -> geringerer Luftdruck.",
-      "Eine reine Kraft ohne Flächenbezug, die ausschließlich in vertikaler Richtung nach oben wirkt.",
-      "Magnetismus der Atmosphäre, der durch elektrische Ladungen in der Ionosphäre erzeugt wird."
+      "Ein Vakuum: ein Bereich ohne Materie und damit ohne Druck, wie im Weltraum. Dort kann Schall nicht übertragen werden.",
+      "Der Druck der Luft aufgrund ihrer Schwerkraft. Normaldruck: 1013 mbar. Im Gebirge ist der Luftdruck geringer.",
+      "Eine nach oben gerichtete Kraft ohne Flächenbezug, die nur in vertikaler Richtung wirkt und keinen Seitendruck erzeugt.",
+      "Magnetismus der Atmosphäre, erzeugt durch elektrische Ladungen in der Ionosphäre und messbar in Tesla (T)."
     ],
     "correct": 1,
     "explanation": "Luftdruck: 10 t Luft auf jedem Quadratmeter bei Normaldruck! Evangelista Torricelli: Barometer (1643). Höhenabhängig: -1 hPa pro 8 m Höhe. Wetter: Hoch (steigend, schön), Tief (fallend, schlecht).",
@@ -134,10 +134,10 @@
   {
     "question": "Was ist Auftrieb?",
     "options": [
-      "Schwerkraft: die Anziehungskraft der Erde, die alle Körper nach unten zieht (g ≈ 9,81 m/s²).",
-      "Die nach oben wirkende Kraft auf einen in Flüssigkeit oder Gas eingetauchten Körper: F_A = ρ_Flüssigkeit × V × g. Archimedisches Prinzip.",
-      "Magnetkraft: die durch einen Magneten erzeugte Kraft, die magnetische Materialien anzieht oder abstößt.",
-      "Reibungskraft: die einer Bewegung entgegenwirkende Kraft zwischen Körper und umgebender Flüssigkeit."
+      "Schwerkraft: die Anziehungskraft der Erde auf alle Körper mit Masse. Einheit: Newton (N). G = m × g.",
+      "Die nach oben wirkende Kraft auf eingetauchte Körper: F_A = ρ × V × g. Beruht auf dem Archimedischen Prinzip.",
+      "Magnetkraft: die durch Magnete erzeugte Kraft, die magnetische Materialien anzieht oder abstößt. Einheit: Newton (N).",
+      "Reibungskraft: die einer Bewegung entgegenwirkende Kontaktkraft zwischen Körper und umgebender Flüssigkeit."
     ],
     "correct": 1,
     "explanation": "Archimedes: \"Heureka!\" Auftrieb = Gewicht der verdrängten Flüssigkeit. Schiff schwimmt: Gewicht < Auftrieb (großes V). Stein sinkt: Gewicht > Auftrieb (zu dicht). U-Boot: V variieren durch Ballasttanks.",
@@ -146,10 +146,10 @@
   {
     "question": "Was ist der Aggregatszustand?",
     "options": [
-      "Ein chemisches Element: ein Reinstoff, der aus Atomen eines einzigen Typs besteht (z.B. Eisen, Gold).",
-      "Eine von drei (plus Plasma) Phasen, in denen Materie vorliegen kann: fest, flüssig, gasförmig.",
-      "Eine Art von Kraft, die zwischen den Atomen eines Festkörpers wirkt und ihn zusammenhält.",
-      "Eine Temperatureinheit, die beschreibt, wie heiß oder kalt ein Stoff im jeweiligen Zustand ist."
+      "Ein chemisches Element: ein Reinstoff aus Atomen eines einzigen Typs, wie Eisen oder Gold. Symbol: z.B. Fe, Au.",
+      "Eine von drei (plus Plasma) Phasen der Materie: fest, flüssig oder gasförmig, je nach Temperatur und Druck.",
+      "Eine Bindungskraft: die Kraft zwischen Atomen eines Festkörpers, die die Gitterstruktur zusammenhält.",
+      "Eine Temperatureinheit, die beschreibt, wie heiß oder kalt ein Stoff in seinem jeweiligen Zustand ist."
     ],
     "correct": 1,
     "explanation": "Aggregatszustände: fest (geordnet, geringe Bewegung). Flüssig (ungeordnet, fließend). Gasförmig (hohe Bewegung, füllt Raum). Plasma: 4. Zustand (ionisiertes Gas, Sonne, Blitz).",
@@ -158,10 +158,10 @@
   {
     "question": "Was ist Temperatur?",
     "options": [
-      "Wärme: die Gesamtmenge der thermischen Energie, die ein Körper enthält, gemessen in Joule (J).",
+      "Wärme: die Gesamtmenge der thermischen Energie in einem Körper. Einheit: Joule (J). Abhängig von Masse und Stoff.",
       "Ein Maß für die mittlere kinetische Energie der Teilchen. Einheiten: Celsius (°C), Kelvin (K = °C + 273), Fahrenheit (°F).",
-      "Druck: die Kraft, die Gasteilchen auf die Wände ihres Behälters ausüben, gemessen in Pascal.",
-      "Energie: die in einem Körper gespeicherte thermische Energie, abhängig von Masse und spezifischer Wärmekapazität."
+      "Druck: die Kraft, die Gasteilchen auf die Wände ihres Behälters ausüben. Einheit: Pascal (Pa). Steigt mit Temperatur.",
+      "Energie: die in einem Körper gespeicherte thermische Energie. Hängt von Masse und spezifischer Wärmekapazität (J/kg·K) ab."
     ],
     "correct": 1,
     "explanation": "Temperatur: T(K) = T(°C) + 273,15. Absoluter Nullpunkt: 0 K = -273,15°C. Bei höherer Temperatur: schnellere Teilchenbewegung. Thermometer: Ausdehnung von Quecksilber oder Alkohol.",
@@ -170,10 +170,10 @@
   {
     "question": "Was ist Wärmeleitung (Konduktion)?",
     "options": [
-      "Wärmetransport durch Strömung: warme Materie steigt auf und kalte sinkt in Flüssigkeiten und Gasen.",
-      "Wärmeübertragung durch direkten Kontakt zwischen Teilchen. Metalle leiten gut (viele freie Elektronen), Luft und Holz schlecht (Isolator).",
-      "Wärmetransport durch Strahlung: elektromagnetische Wellen übertragen Energie auch durch den Vakuumraum.",
-      "Wärmetransport durch Verdampfung: beim Verdampfen nimmt eine Flüssigkeit Energie aus der Umgebung auf."
+      "Konvektion: Wärmetransport durch strömende Materie. Warme Luft oder Flüssigkeit steigt auf, kältere sinkt nach unten.",
+      "Wärmeübertragung durch direkten Teilchenkontakt. Metalle leiten gut (freie Elektronen), Holz und Luft schlecht (Isolatoren).",
+      "Strahlung: Wärmetransport durch elektromagnetische Wellen, die Energie auch durch Vakuum übertragen können.",
+      "Verdampfung: Energietransport durch Phasenübergang, bei dem eine Flüssigkeit Wärmeenergie aus der Umgebung aufnimmt."
     ],
     "correct": 1,
     "explanation": "Konduktion: Wärmestrom von warm zu kalt. Gute Leiter: Metalle (Cu, Al). Schlechte Leiter (Isolatoren): Holz, Luft, Wolle, Styropor. Kochtopf: Metall leitet Wärme. Griff aus Holz: isoliert.",
@@ -182,10 +182,10 @@
   {
     "question": "Was ist Wärmekonvektion?",
     "options": [
-      "Wärmeübertragung durch Strahlung: elektromagnetische Wellen transportieren Wärme auch ohne Materie.",
-      "Wärmetransport durch strömende Materie (Flüssigkeiten und Gase): warme Materie steigt auf (weniger dicht), kühle sinkt. Wichtig für Heizungen, Wetterphänomene.",
-      "Wärmeübertragung durch direkten Kontakt: Teilchen geben Energie durch Stöße an benachbarte Teilchen weiter.",
-      "Magnetische Wärme: durch magnetische Felder erzeugte Wärme in elektrisch leitenden Materialien."
+      "Wärmestrahlung: elektromagnetische Wellen transportieren Wärme auch ohne Materie, z.B. durch das Vakuum des Weltalls.",
+      "Wärmetransport durch strömende Materie: warme Flüssigkeit oder Gas steigt auf (weniger dicht), kühle sinkt nach unten.",
+      "Wärmeleitung: direkte Energieübertragung durch Teilchenstöße zwischen benachbarten Atomen oder Molekülen im Material.",
+      "Induktionswärme: durch wechselnde Magnetfelder in elektrisch leitenden Materialien erzeugte thermische Energie."
     ],
     "correct": 1,
     "explanation": "Konvektion: Heißwasserheizung, Backofen. Atmosphäre: Thermik. Ozean: Meeresströmungen. Erde: Konvektion im Erdmantel -> Plattentektonik. Naturkonvektion vs. erzwungene Konvektion (Ventilator).",
@@ -194,10 +194,10 @@
   {
     "question": "Was ist Wärmestrahlung?",
     "options": [
-      "Wärmeleitung: Übertragung von Wärme durch direkten Teilchenkontakt von warm nach kalt.",
-      "Wärmeübertragung durch elektromagnetische Strahlung (Infrarotstrahlung), braucht kein Medium (auch im Vakuum möglich). Sonne erwärmt Erde durch Strahlung.",
-      "Konvektion: Wärmetransport durch strömende Materie in Flüssigkeiten und Gasen.",
-      "Wärmeleitung durch Gase: Luftmoleküle transportieren Wärme durch Kollisionen zwischen den Teilchen."
+      "Wärmeleitung: Übertragung von Wärme durch direkten Teilchenkontakt von warmen zu kalten Bereichen in Festkörpern.",
+      "Wärmeübertragung durch elektromagnetische Strahlung (Infrarot). Braucht kein Medium und funktioniert auch im Vakuum.",
+      "Konvektion: Wärmetransport durch strömende Materie in Flüssigkeiten und Gasen, z.B. in Heizungen und der Atmosphäre.",
+      "Wärmeleitung durch Gase: Luftmoleküle übertragen Wärme durch Stöße zwischen benachbarten Teilchen im Gasraum."
     ],
     "correct": 1,
     "explanation": "Wärmestrahlung: elektromagnetische Wellen (Infrarot). Alle Körper strahlen Wärme ab. Sonne: Strahlung im Vakuum. Thermosflasche: Vakuum + Spiegel (kein Konvektion/Strahlung). Schwarze Körper strahlen am meisten.",
@@ -206,10 +206,10 @@
   {
     "question": "Was ist Schall?",
     "options": [
-      "Licht: elektromagnetische Strahlung, die sich mit ca. 300 000 km/s im Vakuum fortpflanzt.",
-      "Mechanische Schwingungen, die sich durch Materie (Luft, Wasser, Festkörper) ausbreiten. Mensch hört 20-20 000 Hz. Schallgeschwindigkeit in Luft: ca. 343 m/s.",
-      "Elektromagnetische Strahlung: Wellen, die kein Trägermedium benötigen und auch im Vakuum reisen.",
-      "Wärme: thermische Energie, die durch Strahlung von warmem zu kaltem Körper übertragen wird."
+      "Licht: elektromagnetische Strahlung mit ca. 300 000 km/s im Vakuum, sichtbar im Bereich von 380–750 nm Wellenlänge.",
+      "Mechanische Schwingungen, die sich durch Materie ausbreiten. Hörbereich: 20–20 000 Hz. In Luft ca. 343 m/s.",
+      "Elektromagnetische Strahlung: Wellen ohne Trägermedium, die sich auch im Vakuum mit Lichtgeschwindigkeit ausbreiten.",
+      "Wärme: thermische Energie der Teilchenbewegung, die von wärmeren zu kälteren Körpern übertragen wird."
     ],
     "correct": 1,
     "explanation": "Schall: longitudinale Welle (Druck-Dichte-Schwankungen). Braucht Materie (kein Schall im Vakuum!). Infra (<20 Hz): Elefanten. Ultra (>20 000 Hz): Fledermaus, Hund. Schall in Luft: 343 m/s, Wasser: 1480 m/s.",
@@ -218,10 +218,10 @@
   {
     "question": "Was ist die Lichtgeschwindigkeit?",
     "options": [
-      "343 m/s: die Schallgeschwindigkeit in Luft bei ca. 20°C Temperatur und Normaldruck.",
+      "Ca. 343 m/s: die Ausbreitungsgeschwindigkeit von Schall in Luft bei Raumtemperatur und normalem Luftdruck.",
       "Ca. 300 000 km/s (3 × 10⁸ m/s) im Vakuum. Die schnellste mögliche Geschwindigkeit im Universum.",
-      "100 m/s: die Höchstgeschwindigkeit auf deutschen Autobahnen in Meter pro Sekunde umgerechnet.",
-      "3 000 m/s: die Schallgeschwindigkeit in Stahl oder anderen festen Materialien bei Raumtemperatur."
+      "Ca. 100 m/s: ein vereinfachter Richtwert, der manchmal zur groben Abschätzung von Geschwindigkeiten angegeben wird.",
+      "Ca. 3 000 m/s: die typische Ausbreitungsgeschwindigkeit von Schall in festen Stoffen wie Stahl bei Raumtemperatur."
     ],
     "correct": 1,
     "explanation": "Lichtgeschwindigkeit c = 299 792 458 m/s ≈ 3 × 10⁸ m/s. Licht braucht 8 Minuten von der Sonne zur Erde. Einschränkung durch Einsteins Relativitätstheorie: nichts kann schneller als Licht sein.",
@@ -230,10 +230,10 @@
   {
     "question": "Was ist ein Hebel?",
     "options": [
-      "Ein Flaschenzug: eine Vorrichtung aus Seilen und Rollen, die eine Last durch Kraftumlenkung hebt.",
-      "Ein einfaches Werkzeug aus starrem Balken und Drehpunkt (Fulkrum): kleinere Kraft kann größere Last heben, wenn Hebelarm länger. F1 × L1 = F2 × L2.",
-      "Eine schiefe Ebene: eine geneigte Fläche, auf der eine Last mit weniger Kraft aber längerem Weg bewegt wird.",
-      "Eine Rolle: ein rundes Rad mit Achse, das Kräfte umlenkt und den Transport von Lasten erleichtert."
+      "Ein Flaschenzug: eine Vorrichtung aus Seilen und Rollen, die eine Last durch Umlenkung mit weniger Kraft hebt.",
+      "Ein starrer Balken mit Drehpunkt (Fulkrum): mit längerem Hebelarm kann kleinere Kraft größere Last bewegen. F₁ × L₁ = F₂ × L₂.",
+      "Eine schiefe Ebene: eine geneigte Fläche, auf der eine Last mit geringerer Kraft aber über längeren Weg bewegt wird.",
+      "Eine Rolle: ein kreisrundes Rad mit Achse, das Kräfte umlenkt und das Heben von Lasten vereinfacht."
     ],
     "correct": 1,
     "explanation": "Hebel: Goldene Regel der Mechanik: was an Kraft gespart wird, muss an Weg ausgeglichen werden. Einseitiger Hebel (Brecheisen). Zweiseitiger Hebel (Waage). Zange, Schere, Nussknacker: Hebelprinzip.",
@@ -242,10 +242,10 @@
   {
     "question": "Was ist Optik?",
     "options": [
-      "Die Lehre von der Kraft: Untersuchung von Kräften, deren Wirkungen und das Gleichgewicht von Körpern.",
+      "Die Lehre von der Kraft (Mechanik): Untersuchung von Kräften, deren Wirkungen und dem Gleichgewicht von Körpern.",
       "Die Lehre vom Licht: Reflexion, Brechung, Farbzerlegung. Wichtige Instrumente: Linsen, Spiegel, Prismen.",
-      "Die Lehre von der Wärme: Untersuchung von Wärmeübertragung, Ausdehnung und Aggregatszuständen.",
-      "Die Lehre vom Magnetismus: Untersuchung von Magnetfeldern, Magneten und elektromagnetischer Induktion."
+      "Die Lehre von der Wärme (Thermodynamik): Untersuchung von Wärmeübertragung, Ausdehnung und Aggregatszuständen.",
+      "Die Lehre vom Magnetismus: Untersuchung von Magnetfeldern, Magneten und dem Phänomen der elektromagnetischen Induktion."
     ],
     "correct": 1,
     "explanation": "Optik: Geometrische Optik (Strahlenoptik): Reflexion, Brechung. Wellenoptik: Beugung, Interferenz. Quantenoptik: Photoeffekt. Instrumente: Lupe, Mikroskop, Teleskop, Brille, Kamera.",
@@ -254,10 +254,10 @@
   {
     "question": "Was ist Brechung von Licht?",
     "options": [
-      "Reflexion: das Zurückwerfen von Licht an einer glatten Oberfläche nach dem Einfallswinkel = Ausfallswinkel.",
-      "Die Änderung der Ausbreitungsrichtung von Licht beim Übergang zwischen zwei Medien unterschiedlicher optischer Dichte (z.B. Luft -> Wasser). Snelliussches Gesetz.",
-      "Beugung: das Ausbreiten von Licht um Hindernisse oder durch Öffnungen, das zu Interferenzmustern führt.",
-      "Absorption: das vollständige Aufnehmen von Licht durch ein Medium ohne Reflexion oder Durchlässigkeit."
+      "Reflexion: das Zurückwerfen von Licht an einer glatten Oberfläche, wobei Einfallswinkel und Ausfallswinkel gleich sind.",
+      "Richtungsänderung von Licht beim Übergang zwischen Medien verschiedener optischer Dichte (z.B. Luft zu Wasser). Snelliussches Gesetz.",
+      "Beugung: das Ausbreiten von Licht um Hindernisse oder durch enge Öffnungen, das zu Interferenzmustern führt.",
+      "Absorption: das Aufnehmen von Licht durch ein Medium, wobei die Energie vollständig in Wärme umgewandelt wird."
     ],
     "correct": 1,
     "explanation": "Lichtbrechung: Licht wechselt von schnellerem Medium zu langsamerem: bricht zur Normalen hin. Strohhalm im Wasser: scheinbar gebrochen. Linsen: nutzen Brechung. Regenbogen: Brechung + Reflexion + Dispersion.",
@@ -266,10 +266,10 @@
   {
     "question": "Was ist Magnetismus?",
     "options": [
-      "Schwerkraft: die Anziehungskraft zwischen Massen, die alle Körper zur Erde zieht (g ≈ 9,81 m/s²).",
-      "Physikalische Eigenschaft von bestimmten Materialien (Magneten), andere magnetische Materialien anzuziehen oder abzustoßen. Magnetfeld. Gleichnamige Pole stoßen sich ab.",
-      "Elektrizität: die geordnete Bewegung von Elektronen in einem Leiter unter dem Einfluss einer Spannung.",
-      "Reibung: die einer Bewegung entgegenwirkende Kraft zwischen zwei in Kontakt stehenden Oberflächen."
+      "Schwerkraft: die Anziehungskraft zwischen Massen, die alle Körper zur Erde zieht. Einheit: Newton (N). g ≈ 9,81 m/s².",
+      "Eigenschaft bestimmter Materialien, andere magnetische Stoffe anzuziehen oder abzustoßen. Gleichnamige Pole stoßen sich ab.",
+      "Elektrizität: die geordnete Bewegung von Elektronen in einem Leiter, angetrieben durch eine elektrische Spannung.",
+      "Reibung: die einer Bewegung entgegenwirkende Kontaktkraft zwischen zwei Oberflächen, abhängig vom Reibungskoeffizienten."
     ],
     "correct": 1,
     "explanation": "Magnetismus: Nord- und Südpol. Gleichnamige Pole: abstoßend. Ungleichnamige Pole: anziehend. Magnetfeld: Feldlinien von Nord zu Süd. Erde hat Magnetfeld (Kompass). Elektromagnet: Strom erzeugt Magnetfeld.",
@@ -278,10 +278,10 @@
   {
     "question": "Was ist elektrischer Strom?",
     "options": [
-      "Spannung: der Antrieb, der Elektronen in einem Leiter in Bewegung versetzt, gemessen in Volt (V).",
-      "Geordnete Bewegung elektrischer Ladungsträger (Elektronen) in einem Leiter. Einheit: Ampere (A). Fließt von Minuspol zu Pluspol (technische Stromrichtung: + zu -).",
-      "Widerstand: die Eigenschaft eines Materials, den elektrischen Stromfluss zu behindern (Einheit: Ohm Ω).",
-      "Kraft: die auf elektrische Ladungen durch ein elektrisches Feld einwirkende Größe (Einheit: Newton)."
+      "Spannung: der Antrieb, der Elektronen in Bewegung versetzt. Einheit: Volt (V). Entsteht durch Ladungstrennung.",
+      "Geordnete Bewegung elektrischer Ladungsträger im Leiter. Einheit: Ampere (A). Technische Stromrichtung: von + zu –.",
+      "Widerstand: die Eigenschaft eines Materials, den Stromfluss zu behindern. Einheit: Ohm (Ω). R = U/I.",
+      "Elektrische Kraft: die auf geladene Teilchen wirkende Größe im elektrischen Feld. Einheit: Newton (N). F = q × E."
     ],
     "correct": 1,
     "explanation": "Elektrischer Strom I: Ampere (A). In Metallen: Elektronenstrom. In Elektrolytlösungen: Ionenstrom. Stromstärke: Ladung pro Zeit (I = Q/t). Galvanometer: Messung. Gleichstrom (DC) vs. Wechselstrom (AC).",
@@ -290,10 +290,10 @@
   {
     "question": "Was ist elektrische Spannung?",
     "options": [
-      "Strom: die geordnete Bewegung von Elektronen in einem Leiter, gemessen in Ampere (A).",
-      "Der Antrieb, der elektrischen Strom fließen lässt. Einheit: Volt (V). Entsteht durch Ladungstrennung (Batterie, Generator).",
-      "Widerstand: die Eigenschaft eines Leiters, dem elektrischen Strom einen bestimmten Widerstand entgegenzusetzen.",
-      "Energie: die in einem elektrischen Feld gespeicherte Energieform, gemessen in Joule (J)."
+      "Strom: die geordnete Bewegung von Elektronen in einem Leiter. Einheit: Ampere (A). I = U/R.",
+      "Der Antrieb für den Stromfluss. Einheit: Volt (V). Entsteht durch Ladungstrennung, z.B. in Batterie oder Generator.",
+      "Widerstand: die Eigenschaft eines Leiters, den Stromfluss zu behindern. Einheit: Ohm (Ω). R = U/I.",
+      "Energie: die in einem elektrischen Feld gespeicherte Energieform. Einheit: Joule (J). W = U × I × t."
     ],
     "correct": 1,
     "explanation": "Spannung U: Volt (V). Potenzialunterschied zwischen zwei Punkten. Batterie: 1,5V. Autobatterie: 12V. Haushaltsstrom: 230V. Hochspannung: 380kV. Spannung = Ursache für Strom.",
@@ -302,10 +302,10 @@
   {
     "question": "Was ist das Ohmsches Gesetz?",
     "options": [
-      "E = mc²: Energie ist gleich Masse mal Lichtgeschwindigkeit im Quadrat (Einsteins Relativitätstheorie).",
-      "U = R × I: Die Spannung ist proportional zum Strom. Widerstand R in Ohm (Ω).",
-      "F = m × a: Kraft ist gleich Masse mal Beschleunigung (2. Newtonsches Gesetz der Mechanik).",
-      "P = m × g × h: Potenzielle Energie ist gleich Masse mal Erdbeschleunigung mal Höhe."
+      "E = mc²: Energie ist gleich Masse mal Lichtgeschwindigkeit im Quadrat (Einsteins Relativitätstheorie, 1905).",
+      "U = R × I: Die Spannung ist proportional zum Strom. Widerstand R in Ohm (Ω), gilt für ohmsche Leiter.",
+      "F = m × a: Kraft ist gleich Masse mal Beschleunigung (2. Newtonsches Gesetz der klassischen Mechanik).",
+      "W = m × g × h: Potentielle Energie ist das Produkt aus Masse, Erdbeschleunigung und Höhe. Einheit: Joule (J)."
     ],
     "correct": 1,
     "explanation": "Ohmsches Gesetz: U = R × I. Spannung (V) = Widerstand (Ω) × Strom (A). Gilt für ohmsche Widerstände bei konstanter Temperatur. Georg Simon Ohm (1827). Grundlage der Schaltkreisanalyse.",
@@ -314,10 +314,10 @@
   {
     "question": "Was ist elektrische Leistung?",
     "options": [
-      "Energie: die in einem elektrischen Feld oder einer Batterie gespeicherte Energiemenge in Joule (J).",
-      "P = U × I: Einheit Watt (W). Die Energie, die pro Sekunde umgesetzt wird.",
-      "Kraft: die auf eine elektrische Ladung einwirkende Größe in einem elektrischen Feld (Einheit: Newton).",
-      "Widerstand: die Eigenschaft eines Leiters, den Stromfluss zu behindern, gemessen in Ohm (Ω)."
+      "Elektrische Energie: die in einem elektrischen Feld oder einer Batterie gespeicherte Energiemenge. Einheit: Joule (J).",
+      "P = U × I: Spannung mal Stromstärke. Einheit: Watt (W). Gibt an, wie viel Energie pro Sekunde umgesetzt wird.",
+      "Elektrische Kraft: die auf eine Ladung einwirkende Größe in einem elektrischen Feld. Einheit: Newton (N).",
+      "Elektrischer Widerstand: die Eigenschaft eines Leiters, den Stromfluss zu hemmen. Einheit: Ohm (Ω). R = U/I."
     ],
     "correct": 1,
     "explanation": "Elektrische Leistung P: P = U × I = U²/R = I²×R. Watt (W). Glühbirne 60W bei 230V: I = P/U = 60/230 ≈ 0,26 A. Elektrische Energie: E = P × t. 1 kWh = 1000W × 3600s = 3,6 MJ.",
@@ -326,10 +326,10 @@
   {
     "question": "Was ist der Unterschied zwischen Reihenschaltung und Parallelschaltung?",
     "options": [
-      "Es gibt keinen Unterschied: beide Schaltungsarten verhalten sich elektrisch identisch und sind austauschbar.",
-      "Reihenschaltung: gleicher Strom durch alle Widerstände, Spannungen addieren sich. Parallelschaltung: gleiche Spannung an allen Widerständen, Ströme addieren sich.",
-      "Bei der Parallelschaltung ist der Gesamtwiderstand immer größer als bei der Reihenschaltung der gleichen Bauteile.",
-      "Bei der Reihenschaltung ist der Gesamtwiderstand immer kleiner als bei der Parallelschaltung der gleichen Bauteile."
+      "Es gibt keinen Unterschied: Reihen- und Parallelschaltung verhalten sich elektrisch identisch und sind beliebig austauschbar.",
+      "Reihenschaltung: gleicher Strom, Spannungen addieren sich. Parallelschaltung: gleiche Spannung, Ströme addieren sich.",
+      "Bei der Parallelschaltung ist der Gesamtwiderstand immer größer als bei der Reihenschaltung der gleichen Widerstände.",
+      "Bei der Reihenschaltung ist der Gesamtwiderstand immer kleiner als bei der Parallelschaltung der gleichen Widerstände."
     ],
     "correct": 1,
     "explanation": "Reihenschaltung: R_ges = R1 + R2. Fällt eine Lampe aus: gesamter Kreis unterbrochen (alte Lichterketten). Parallelschaltung: 1/R_ges = 1/R1 + 1/R2. Fällt eine aus: andere brennen weiter (Hausinstallation).",
@@ -338,10 +338,10 @@
   {
     "question": "Was ist radioaktiver Zerfall?",
     "options": [
-      "Eine chemische Reaktion, bei der Atome ihre Elektronen austauschen und dabei Energie abgeben.",
-      "Spontaner Zerfall instabiler Atomkerne unter Aussendung von Strahlung (Alpha-, Beta-, Gammastrahlung). Halbwertszeit: Zeit bis zur Hälfte der Kerne zerfallen.",
-      "Eine mechanische Reaktion, bei der Atomkerne durch Druck oder Temperatur in kleinere Teile zerbrochen werden.",
-      "Fotosynthese auf atomarer Ebene, bei der Lichtenergie in chemische Bindungsenergie umgewandelt wird."
+      "Eine chemische Reaktion, bei der Atome Elektronen aufnehmen oder abgeben und in neue Verbindungen übergehen.",
+      "Spontaner Zerfall instabiler Atomkerne unter Aussendung von Strahlung (Alpha, Beta, Gamma). Mit messbarer Halbwertszeit.",
+      "Eine kernmechanische Reaktion, bei der Atomkerne durch hohen Druck oder Temperatur in kleinere Teile gespalten werden.",
+      "Ein biologischer Prozess auf atomarer Ebene, bei dem Lichtenergie in chemische Bindungsenergie umgewandelt wird."
     ],
     "correct": 1,
     "explanation": "Radioaktivität: entdeckt von Becquerel (1896), Marie und Pierre Curie. Alpha-Strahlung: Heliumkerne. Beta-Strahlung: Elektronen. Gamma-Strahlung: elektromagn. Strahlung. Halbwertszeit: C-14: 5730 Jahre (Datierung).",
@@ -350,10 +350,10 @@
   {
     "question": "Was ist das erste Newtonsche Gesetz (Trägheitsprinzip)?",
     "options": [
-      "Kraft = Masse × Beschleunigung: eine Kraft auf einen Körper bewirkt eine zur Masse umgekehrt proportionale Beschleunigung.",
-      "Ein Körper bleibt in Ruhe oder gleichförmiger Bewegung, solange keine Kraft auf ihn wirkt.",
-      "Actio = Reactio: jede Kraft hat eine gleich große, entgegengesetzte Gegenkraft auf den anderen Körper.",
-      "Druck = Kraft / Fläche: der Druck steigt, wenn die gleiche Kraft auf eine kleinere Fläche einwirkt."
+      "Kraft = Masse × Beschleunigung: eine auf einen Körper wirkende Kraft bewirkt eine Beschleunigung, die umgekehrt proportional zur Masse ist.",
+      "Ein Körper bleibt in Ruhe oder gleichförmig-geradliniger Bewegung, solange keine äußere Kraft auf ihn einwirkt.",
+      "Actio = Reactio: jede Kraft auf einen Körper erzeugt eine gleich große, entgegengesetzt gerichtete Gegenkraft auf den anderen.",
+      "Druck = Kraft / Fläche: der Druck auf eine Fläche steigt, wenn dieselbe Kraft auf eine immer kleinere Fläche einwirkt."
     ],
     "correct": 1,
     "explanation": "1. Newtonsches Gesetz (Trägheit): kein Antrieb nötig für konstante Bewegung. Im Weltall fliegt ein Objekt ewig (kein Luftwiderstand). Trägheit: Widerstand gegen Änderung des Bewegungszustands.",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist das dritte Newtonsche Gesetz (Actio = Reactio)?",
     "options": [
-      "F = m × a: eine Kraft bewirkt an einem Körper eine Beschleunigung, die proportional zur Kraft ist.",
-      "Wenn Körper A eine Kraft auf Körper B ausübt, übt Körper B eine gleich große, entgegengesetzte Kraft auf A aus.",
-      "Trägheitsprinzip: ein Körper verharrt in Ruhe oder gleichförmiger Bewegung, solange keine Kraft wirkt.",
-      "Energieerhaltungssatz: die Gesamtenergie in einem geschlossenen System bleibt konstant und wird nur umgewandelt."
+      "F = m × a: eine Kraft auf einen Körper bewirkt eine Beschleunigung, die proportional zur Kraft und umgekehrt zur Masse ist.",
+      "Wenn Körper A eine Kraft auf Körper B ausübt, übt Körper B eine gleich große, entgegengesetzt gerichtete Kraft auf A aus.",
+      "Trägheitsprinzip: ein Körper verharrt in Ruhe oder gleichförmiger Bewegung, solange keine äußere Kraft auf ihn einwirkt.",
+      "Energieerhaltungssatz: die Gesamtenergie in einem geschlossenen System bleibt konstant und wird nur in andere Formen umgewandelt."
     ],
     "correct": 1,
     "explanation": "3. Newtonsches Gesetz: Kraftpaar. Rakete: schiebt Gas aus -> Gas schiebt Rakete vorwärts. Schwimmer: schiebt Wasser zurück -> Wasser schiebt Schwimmer vorwärts. Immer gleichzeitig.",
@@ -374,10 +374,10 @@
   {
     "question": "Was ist Arbeit in der Physik?",
     "options": [
-      "Anstrengung: die subjektive Mühe, die ein Mensch bei einer körperlichen oder geistigen Tätigkeit empfindet.",
-      "W = F × s: Kraft mal Weg in Kraftrichtung. Einheit: Joule (J). Keine Arbeit wenn kein Weg oder Kraft senkrecht zum Weg.",
-      "Leistung: die pro Sekunde verrichtete Arbeit eines Systems oder Motors, gemessen in Watt (W).",
-      "Energie: die Fähigkeit eines Körpers, Arbeit zu verrichten, gespeichert als kinetische oder potenzielle Energie."
+      "Anstrengung: die subjektive Mühe bei körperlicher oder geistiger Tätigkeit, die physikalisch nicht messbar ist.",
+      "W = F × s: Kraft mal Weg in Kraftrichtung. Einheit: Joule (J). Ohne Weg oder bei senkrechter Kraft gilt W = 0.",
+      "Leistung: die pro Zeiteinheit verrichtete Arbeit eines Systems oder Motors. Einheit: Watt (W). P = W/t.",
+      "Energie: die Fähigkeit, Arbeit zu verrichten, gespeichert als kinetische oder potentielle Energie. Einheit: Joule (J)."
     ],
     "correct": 1,
     "explanation": "Physikalische Arbeit: W = F × s × cos(θ). Einheit: Joule (J = N×m). Keine Arbeit: Stein halten (kein Weg). Tragen (Kraft senkrecht zu Bewegung). 1J = Kraft von 1N über 1m Weg.",
@@ -386,10 +386,10 @@
   {
     "question": "Was ist Leistung in der Physik?",
     "options": [
-      "Energie: die Fähigkeit eines Systems, Arbeit zu verrichten, gemessen in Joule (J).",
-      "P = W/t: Arbeit pro Zeit. Einheit: Watt (W). 1 Watt = 1 Joule pro Sekunde.",
-      "Kraft: die Einwirkung auf einen Körper, die ihn beschleunigt oder verformt, gemessen in Newton (N).",
-      "Druck: die auf eine Fläche wirkende Kraft pro Flächeneinheit, gemessen in Pascal (Pa)."
+      "Energie: die Fähigkeit eines Systems, Arbeit zu verrichten. Einheit: Joule (J). E = F × s.",
+      "P = W/t: Arbeit pro Zeit. Einheit: Watt (W). 1 Watt entspricht 1 Joule pro Sekunde.",
+      "Kraft: die Einwirkung auf einen Körper, die ihn beschleunigt oder verformt. Einheit: Newton (N). F = m × a.",
+      "Druck: die auf eine Fläche wirkende Kraft pro Flächeneinheit. Einheit: Pascal (Pa). p = F/A."
     ],
     "correct": 1,
     "explanation": "Leistung P: P = W/t = F×v. Watt (W). 1 PS = 736 W. Mensch: ca. 100W Dauerleistung. Motor: 100 kW. Kraftwerk: Megawatt bis Gigawatt. Energieverbrauch = Leistung × Zeit.",
@@ -398,10 +398,10 @@
   {
     "question": "Was ist der Unterschied zwischen Aggregatszuständen auf Teilchenebene?",
     "options": [
-      "Es gibt keinen Unterschied auf Teilchenebene, da Atome in allen Aggregatszuständen gleich schnell schwingen.",
-      "Fest: geordnet, kaum Bewegung. Flüssig: ungeordnet, Bewegung, berühren sich. Gas: weit voneinander, schnelle zufällige Bewegung.",
-      "Alle Aggregatszustände sind gleich: Teilchen bewegen sich in allen Zuständen mit derselben Durchschnittsgeschwindigkeit.",
-      "Der Unterschied besteht nur in der Temperatur: fest = kalt, flüssig = warm, gasförmig = sehr heiß."
+      "Es gibt keinen Unterschied: Atome schwingen in allen Aggregatszuständen mit derselben mittleren Geschwindigkeit.",
+      "Fest: geordnet, kaum Bewegung. Flüssig: nahe beieinander, Bewegung möglich. Gas: weit voneinander, schnelle Zufallsbewegung.",
+      "Alle Zustände sind identisch: Teilchen bewegen sich in jedem Aggregatszustand mit gleicher Durchschnittsgeschwindigkeit.",
+      "Der Unterschied liegt allein in der Temperatur: fest bedeutet kalt, flüssig bedeutet warm und gasförmig bedeutet sehr heiß."
     ],
     "correct": 1,
     "explanation": "Teilchenmodell: Fest: Gitter. Flüssig: nahe beieinander, können sich verschieben. Gas: weit entfernt, füllen Raum. Energie: Gas > Flüssig > Fest. Schmelzen: Energie bricht Gitterstruktur auf.",
@@ -410,10 +410,10 @@
   {
     "question": "Was ist Verdunstung vs. Verdampfen?",
     "options": [
-      "Beide sind gleich: Verdunstung und Verdampfen bezeichnen denselben physikalischen Vorgang der Wasserverdampfung.",
-      "Verdunstung: Phasenübergang flüssig->gasförmig unter dem Siedepunkt (langsam, von Oberfläche). Verdampfen: Sieden bei Siedetemperatur (schnell, überall in der Flüssigkeit).",
-      "Es gibt nur einen Begriff: Verdunsten und Verdampfen sind Synonyme für dieselbe Erscheinung.",
-      "Verdunsten tritt nur bei 0°C auf, wenn Eis ohne zu schmelzen direkt in Dampf übergeht (Sublimation)."
+      "Beide Begriffe sind identisch: Verdunstung und Verdampfen bezeichnen denselben Übergang von flüssig zu gasförmig.",
+      "Verdunstung: Übergang flüssig → gasförmig unterhalb des Siedepunkts (langsam, an der Oberfläche). Verdampfen: ab Siedetemperatur (schnell, überall).",
+      "Es gibt keinen Unterschied: Verdunsten und Verdampfen sind vollständige Synonyme für denselben physikalischen Vorgang.",
+      "Verdunsten beschreibt den Übergang bei 0°C, wenn Eis ohne vorheriges Schmelzen direkt in den Gaszustand übergeht."
     ],
     "correct": 1,
     "explanation": "Verdunstung: bei jeder Temperatur, Oberfläche. Puddel nach Regen. Transpiration. Verdampfen (Sieden): bei Siedetemperatur (100°C bei Wasser, 1013 hPa). Dampfblasen überall in der Flüssigkeit.",
@@ -422,10 +422,10 @@
   {
     "question": "Was ist die Brennweite einer Linse?",
     "options": [
-      "Die physische Größe (Durchmesser) der Linse, die bestimmt, wie viel Licht sie aufnehmen kann.",
-      "Abstand des Brennpunkts von der Linsenmitte, in dem Parallelstrahlen gebündelt werden. Konvexe Linse: sammelt Strahlen (Brennpunkt vorhanden). Konkave Linse: streut (virtueller Brennpunkt).",
-      "Die Dicke der Linse in der Mitte, die bestimmt, wie stark das Licht beim Durchgang gebrochen wird.",
-      "Der Brechungsindex des Linsenglases, der das Verhältnis von Lichtgeschwindigkeit in Luft zu Glas angibt."
+      "Der physische Durchmesser der Linse, der bestimmt, wie viel Licht sie aufnehmen und auf einen Punkt bündeln kann.",
+      "Abstand zwischen Linsenmitte und Brennpunkt. Konvexe Linse: realer Brennpunkt. Konkave Linse: virtueller Brennpunkt.",
+      "Die Dicke der Linse in ihrer Mitte, die bestimmt, wie stark das Licht beim Durchqueren gebrochen wird.",
+      "Der Brechungsindex des Linsenglases: gibt an, wie stark Licht beim Übergang von Luft zu Glas abgelenkt wird."
     ],
     "correct": 1,
     "explanation": "Brennweite f: konvexe (Sammel-)Linse: f positiv. Konkave (Zerstreu-)Linse: f negativ. Lupe: kurze Brennweite. Brille: Stärke in Dioptrien = 1/f. Kurzsichtig: negativer Dioptrien. Weitsichtig: positiv.",
@@ -434,10 +434,10 @@
   {
     "question": "Was ist Elektromagnetismus?",
     "options": [
-      "Zwei völlig getrennte, unabhängige Kräfte, die nie miteinander in Wechselwirkung treten.",
-      "Der Zusammenhang zwischen Elektrizität und Magnetismus: bewegte Ladungen erzeugen Magnetfelder; sich ändernde Magnetfelder erzeugen elektrische Felder. Grundlage von Generatoren und Motoren.",
-      "Nur Magnetismus: die Lehre von Magneten und Magnetfeldern, ohne Zusammenhang mit elektrischen Erscheinungen.",
-      "Nur Elektrizität: die Lehre von elektrischen Ladungen und Strömen, ohne Bezug zu magnetischen Phänomenen."
+      "Zwei getrennte, vollständig unabhängige Naturkräfte, zwischen denen keinerlei Zusammenhang oder Wechselwirkung besteht.",
+      "Der Zusammenhang von Elektrizität und Magnetismus: bewegte Ladungen erzeugen Magnetfelder, wechselnde Felder erzeugen Strom.",
+      "Ausschließlich Magnetismus: die Lehre von Magneten und Magnetfeldern, gänzlich unabhängig von elektrischen Phänomenen.",
+      "Ausschließlich Elektrizität: die Lehre von Ladungen und Strömen, ohne jeden Bezug zu magnetischen Erscheinungen."
     ],
     "correct": 1,
     "explanation": "Elektromagnetismus: James Clerk Maxwell (1864). Generator: Bewegung -> Strom. Motor: Strom -> Bewegung. Transformator: Spannungsumwandlung. Elektromagnetische Induktion: Faradaygesetz.",
@@ -446,10 +446,10 @@
   {
     "question": "Was ist ein Spektrum (Lichtspektrum)?",
     "options": [
-      "Ein Farbfilter, der nur bestimmte Wellenlängen des Lichts durchlässt und alle anderen Farben absorbiert.",
-      "Das geordnete Aufteilen von weißem Licht in seine Farbanteile durch ein Prisma oder Regentropfen: ROT, ORANGE, GELB, GRÜN, BLAU, INDIGO, VIOLETT (ROYGBIV).",
-      "Eine Sammellinse, die Lichtstrahlen in einem gemeinsamen Brennpunkt bündelt und verstärkt.",
-      "Ein Spiegel, der alle Farben des Lichts gleichmäßig reflektiert und das Bild eines Objekts zeigt."
+      "Ein Farbfilter, der nur bestimmte Wellenlängen des Lichts durchlässt und alle anderen Farbanteile absorbiert.",
+      "Die geordnete Aufspaltung von weißem Licht in seine Farbanteile durch ein Prisma: Rot, Orange, Gelb, Grün, Blau, Violett.",
+      "Eine Sammellinse, die alle Wellenlängen des Lichts in einem gemeinsamen Brennpunkt bündelt und so verstärkt.",
+      "Ein Spiegel, der alle Wellenlängen des einfallenden Lichts gleichmäßig zurückwirft und so Bilder von Objekten erzeugt."
     ],
     "correct": 1,
     "explanation": "Lichtspektrum: Regenbogen ist natürliches Spektrum (Brechung + Reflexion in Regentropfen). Prisma: Dispersion. Sichtbares Licht: 380-750 nm. UV (kürzere Wellenlänge), Infrarot (länger).",
@@ -458,10 +458,10 @@
   {
     "question": "Was ist Wärmeausdehnung?",
     "options": [
-      "Schrumpfen bei Wärme: Stoffe ziehen sich beim Erwärmen zusammen, da die Teilchen langsamer werden.",
+      "Schrumpfen bei Wärme: Stoffe ziehen sich beim Erwärmen zusammen, weil die Teilchen durch die Wärme langsamer werden.",
       "Beim Erwärmen dehnen sich die meisten Stoffe aus, bei Abkühlung ziehen sie sich zusammen. Ursache: schnellere Teilchenbewegung.",
-      "Wärmeausdehnung tritt nur bei Gasen auf, nicht aber bei Flüssigkeiten und festen Stoffen.",
-      "Wärmeausdehnung tritt ausschließlich bei Metallen auf, da nur diese freie Elektronen besitzen."
+      "Wärmeausdehnung tritt ausschließlich bei Gasen auf und ist bei Flüssigkeiten und festen Stoffen nicht nachweisbar.",
+      "Wärmeausdehnung ist ein rein metallisches Phänomen, da nur Metalle die für die Ausdehnung nötigen freien Elektronen besitzen."
     ],
     "correct": 1,
     "explanation": "Wärmeausdehnung: Schienen: Dehnungsfugen nötig. Brücken: Gleitlager. Bimetallstreifen: zwei Metalle mit verschiedenen Ausdehnungskoeffizienten -> biegen sich (Thermostat). Ausnahme: Wasser 0-4°C schrumpft!",
@@ -470,10 +470,10 @@
   {
     "question": "Was ist ein Elektromagnet?",
     "options": [
-      "Ein normaler Dauermagnet aus Eisenerz, der seine magnetische Eigenschaft dauerhaft beibehält.",
-      "Ein Magnet, der durch elektrischen Strom erzeugt wird: Strom durch eine Spule + Eisenkern. Stärkerer Strom = stärkerer Magnet. Abschaltbar.",
-      "Ein Dauermagnet aus speziellen Legierungen, der durch Hitzebehandlung sehr starke Magnetfelder erzeugt.",
-      "Eine Batterie, die durch chemische Reaktionen elektrische Energie erzeugt und speichert."
+      "Ein Dauermagnet aus Eisenerz, der seine magnetische Eigenschaft auch ohne Stromfluss dauerhaft beibehält.",
+      "Ein durch Strom erzeugter Magnet: Spule mit Eisenkern. Stärkerer Strom = stärkeres Feld. Kann abgeschaltet werden.",
+      "Ein Dauermagnet aus speziellen Legierungen (z.B. Neodym), der durch Hitzebehandlung sehr starke Magnetfelder erzeugt.",
+      "Eine elektrochemische Zelle, die durch chemische Reaktionen zwischen Elektroden elektrische Energie erzeugt."
     ],
     "correct": 1,
     "explanation": "Elektromagnet: Ampère-Gesetz. Anwendungen: Kran (hebt Schrott), MRT (Medizin), Lautsprecher, Türklingel. Kernspintomographie: sehr starke Elektromagneten (>1,5 Tesla).",
