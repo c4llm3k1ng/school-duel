@@ -26,10 +26,10 @@
   {
     "question": "Wann schreibt man \"sz\"?",
     "options": [
-      "Nach kurzem Vokal",
-      "Nach langem Vokal oder Diphthong (au, ei, eu)",
-      "Nach Konsonanten",
-      "Immer nach -en"
+      "Nur nach kurzem Vokal",
+      "Nach langem Vokal oder Diphthong",
+      "Nur nach Konsonanten",
+      "Immer nach der Endung -en"
     ],
     "correct": 1,
     "explanation": "sz-Regel (neue Rechtschreibung): Nach langem Vokal oder Diphthong steht sz: Maßstab, Straße, Grüße, Spaß. Nach kurzem Vokal steht ss: Fluss, muss, dass.",
@@ -39,7 +39,7 @@
     "question": "Welches Wort wird gross geschrieben?",
     "options": [
       "schoen",
-      "das Laufen",
+      "laufen",
       "trotzdem",
       "weil"
     ],
@@ -137,7 +137,7 @@
       "Schmet-ter-ling",
       "Schm-et-ter-ling",
       "Sch-met-ter-ling",
-      "Schmetterling (keine Trennung)"
+      "Schmetterling"
     ],
     "correct": 0,
     "explanation": "Schmet-ter-ling: drei Silben. Doppelkonsonant wird geteilt: ter-ter. Trennung nach Sprechsilben.",
@@ -172,8 +172,8 @@
     "options": [
       "Immer gross, unabhaengig vom Kontext",
       "Immer klein, auch wenn substantiviert",
-      "Klein als Adjektiv, gross wenn substantiviert",
-      "Immer mit Bindestrich an die Zahl angehaengt"
+      "Klein als Adjektiv, gross als Substantiv",
+      "Immer mit Bindestrich an die Zahl"
     ],
     "correct": 2,
     "explanation": "Adjektive nach Zahlen: klein. \"zwei grosse Hunde\", \"drei rote Rosen\". Gross nur wenn das Adjektiv zum Nomen wird: \"Als Erster gewinnen\", \"der Letzte wird der Erste sein\".",
@@ -219,7 +219,7 @@
     "question": "Was ist ein Fremdwort?",
     "options": [
       "Ein selbst erfundenes Wort ohne Herkunft",
-      "Ein aus einer anderen Sprache uebernommenes Wort",
+      "Ein aus anderen Sprachen uebernommenes Wort",
       "Ein mundartliches Wort aus einem Dialekt",
       "Ein Wort aus dem Alt- oder Mittelhochdeutschen"
     ],
@@ -255,7 +255,7 @@
     "question": "Wie schreibt man zusammengesetzte Nomen?",
     "options": [
       "Immer getrennt wie im Englischen",
-      "Immer zusammengeschrieben (Haustuer, Fussball)",
+      "Immer zusammengeschrieben ohne Leerzeichen",
       "Immer mit Bindestrich verbunden",
       "Je nach Wortart unterschiedlich"
     ],
@@ -302,10 +302,10 @@
   {
     "question": "Was ist eine Dehnung-ie?",
     "options": [
-      "Ein zweisilbiger Laut wie in Mais oder Eis",
+      "Ein Doppellaut aus zwei verschmolzenen Vokalen",
       "Schreibweise mit ie fuer den langen i-Laut",
-      "Ein Wechsel des Vokals bei der Konjugation",
-      "Eine angehaengte Silbe am Wortende"
+      "Ein Vokalwechsel bei der Verbkonjugation",
+      "Eine an den Wortstamm angehaengte Endsilbe"
     ],
     "correct": 1,
     "explanation": "ie fuer langen i: spielen, lieben, Brief, Tier. Merke: Im Deutschen oft ie fuer langes i. Ausnahmen: ihm, ihn, Ihnen (mit langem i aber ohne e).",
@@ -350,10 +350,10 @@
   {
     "question": "Welche Kommaregel gilt bei Infinitivgruppen?",
     "options": [
-      "Kein Komma, Infinitivgruppen stehen stets kommalos",
-      "Komma bei Infinitivgruppen mit um, ohne, anstatt oder als",
+      "Kein Komma, Infinitivgruppen bleiben immer kommalos",
+      "Komma bei Infinitivgruppen mit um, ohne und anstatt",
       "Immer Komma, auch bei kurzen Infinitivgruppen",
-      "Komma nur bei Fragen mit Infinitivgruppen"
+      "Komma nur bei Infinitivgruppen in Fragesaetzen"
     ],
     "correct": 1,
     "explanation": "Komma bei Infinitivgruppen: bei \"um...zu\", \"ohne...zu\", \"anstatt...zu\", \"als...zu\". \"Er lernte, um die Pruefung zu bestehen.\" Bei kurzen: \"Er begann zu lesen.\" - kann ohne Komma stehen.",
@@ -362,10 +362,10 @@
   {
     "question": "Was ist ein Kompositum?",
     "options": [
-      "Ein Lehnwort aus einer fremden Sprache",
-      "Ein aus zwei oder mehr Woertern zusammengesetztes Wort",
-      "Ein beschreibendes Eigenschaftswort vor einem Nomen",
-      "Eine Silbe, die einem Wort vorangestellt wird"
+      "Ein aus einer Fremdsprache entlehntes Wort",
+      "Ein aus mehreren Woertern zusammengesetztes Wort",
+      "Ein vor einem Nomen stehendes Eigenschaftswort",
+      "Eine vor ein anderes Wort gestellte Vorsilbe"
     ],
     "correct": 1,
     "explanation": "Kompositum (Zusammensetzung): Nomen + Nomen: Haustuer, Schulhof. Verb + Nomen: Schreibtisch. Adjektiv + Nomen: Grossvater. Das letzte Wort bestimmt den Artikel.",
@@ -375,9 +375,9 @@
     "question": "Wann wird \"ihr\" grossgeschrieben?",
     "options": [
       "Immer, da es sich um ein Pronomen handelt",
-      "Nur als Hoeflichkeitsform in Briefen (Ihr, Ihnen, Sie)",
+      "Nur als Hoeflichkeitsform in Briefen und Anreden",
       "Wenn es am Satzanfang nach einem Punkt steht",
-      "Nur wenn es sich auf eine einzelne bestimmte Person bezieht"
+      "Nur wenn es sich auf eine einzelne Person bezieht"
     ],
     "correct": 1,
     "explanation": "\"Ihr/Ihnen/Sie\" gross: Hoeflichkeitsform in Briefen und in der direkten Ansprache. \"ihr\" (Personalpronomen fuer mehrere) oder \"ihr\" (Possessivpronomen) bleibt klein.",
@@ -399,9 +399,9 @@
     "question": "Was ist ein Suffix (Nachsilbe)?",
     "options": [
       "Eine Silbe, die einem Wort vorangestellt wird",
-      "Eine Endsilbe, die an den Wortstamm angehaengt wird (-heit, -ung, -keit)",
-      "Der unveraenderte Kernteil eines Wortes",
-      "Ein Verbindungswort zwischen zwei Saetzen"
+      "Eine Endsilbe, die an den Wortstamm angehaengt wird",
+      "Der unveraenderliche Kernteil oder Stamm des Wortes",
+      "Ein Verbindungswort, das zwei Saetze verbindet"
     ],
     "correct": 1,
     "explanation": "Suffix/Nachsilbe: -heit (Freiheit), -keit (Ehrlichkeit), -ung (Hoffnung), -lich (freundlich), -ig (windig), -isch (kindisch). Oft veraendert sich die Wortart.",
@@ -410,10 +410,10 @@
   {
     "question": "Was ist ein Praefix (Vorsilbe)?",
     "options": [
-      "Eine Silbe, die an das Ende des Wortes angehaengt wird",
+      "Eine Silbe, die am Wortende angehaengt wird",
       "Eine Silbe am Wortanfang, die die Bedeutung veraendert",
-      "Der unveraenderliche Kernteil eines Wortes",
-      "Ein Verbindungswort wie und, aber oder weil"
+      "Der unveraenderliche Kernteil oder Stammteil des Wortes",
+      "Ein Verbindungswort, das Saetze oder Satzteile verbindet"
     ],
     "correct": 1,
     "explanation": "Praefixe/Vorsilben: un- (unschoen), ver- (verlieren), be- (besuchen), ge- (geheimnissvoll), er- (erzaehlen). Veraendern oft die Bedeutung oder Wortart.",
@@ -446,9 +446,9 @@
   {
     "question": "Was ist eine Apokope?",
     "options": [
-      "Eine Verlaengerung eines Wortes durch Anhaengen von Lauten",
-      "Das Weglassen des letzten Vokals oder Lauts",
-      "Ein Fachbegriff fuer ein Satzzeichen",
+      "Eine Verlaengerung eines Wortes durch neue Laute",
+      "Das Weglassen des letzten Vokals oder Lautes",
+      "Ein Fachbegriff fuer ein grammatisches Satzzeichen",
       "Eine Wiederholung desselben Wortes zur Betonung"
     ],
     "correct": 1,
