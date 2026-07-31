@@ -94,10 +94,17 @@ async function fbLoad(subj, subcat, grade) {
 async function fbSave(subj, subcat, grade, questions) {
   await ensureToken();
   const url = `${FIREBASE_DB_URL}/${qbPath(subj,subcat,grade)}.json?auth=${_auth.idToken}`;
+  // WICHTIG: die App (loadFromQuestionBank / loadMixFromBank in school-duel.html)
+  // erwartet ein Objekt mit questions-Array + Metadaten, KEIN rohes Array.
+  const body = {
+    questions,
+    subject: subj, subcategory: subcat, grade,
+    updatedAt: Date.now()
+  };
   const res = await fetch(url, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(questions)
+    body: JSON.stringify(body)
   });
   const data = await res.json();
   if (!res.ok) throw new Error('PUT failed: ' + JSON.stringify(data));
@@ -116,21 +123,46 @@ async function main() {
   console.log('Firebase Auth OK');
 
   const ROOT = path.join(__dirname, '..');
-  let totalNew = 0;
 
+  // Mehrere Bloecke koennen auf denselben Firebase-Pfad zeigen
+  // (z.B. block05_deutsch_grammatik + block07_deutsch_wortarten -> Deutsch/Grammatik).
+  // Die werden ZUSAMMENGEFUEHRT – sonst wuerde der letzte Block den vorherigen ueberschreiben.
+  const byPath = new Map();
   for (const [suffix, [subj, subcat, grade]] of Object.entries(BLOCK_MAP)) {
     const filename = `klasse06_${suffix}.json`;
     const filepath = path.join(ROOT, filename);
     if (!fs.existsSync(filepath)) { console.warn('FEHLT:', filename); continue; }
 
     const local = JSON.parse(fs.readFileSync(filepath, 'utf8'));
-    // Force-Overwrite: balancierte Versionen ersetzen alte Firebase-Daten
-    await fbSave(subj, subcat, grade, local);
-    console.log(`  ${filename}: ${local.length} Fragen überschrieben`);
-    totalNew += local.length;
+    const key = qbPath(subj, subcat, grade);
+    if (!byPath.has(key)) byPath.set(key, { subj, subcat, grade, questions: [], blocks: [] });
+    const entry = byPath.get(key);
+    entry.questions.push(...local);
+    entry.blocks.push(`${suffix} (${local.length})`);
   }
 
-  console.log(`\nFertig. ${totalNew} neue Fragen importiert.`);
+  let totalNew = 0;
+  for (const [key, { subj, subcat, grade, questions, blocks }] of byPath) {
+    // Echte Duplikate entfernen. WICHTIG: Schluessel = Fragetext + Optionen.
+    // Nur der Fragetext reicht NICHT – z.B. in block06 gibt es 12 verschiedene
+    // Fragen, die alle "Welche Schreibweise ist korrekt?" heissen.
+    const seen = new Set();
+    const unique = questions.filter(q => {
+      const key = q.question + '||' + JSON.stringify(q.options);
+      if (seen.has(key)) return false;
+      seen.add(key); return true;
+    });
+    const dropped = questions.length - unique.length;
+
+    // Force-Overwrite: balancierte Versionen ersetzen alte Firebase-Daten
+    await fbSave(subj, subcat, grade, unique);
+    console.log(`  ${key}: ${unique.length} Fragen` +
+      (blocks.length > 1 ? `  <- ${blocks.join(' + ')}` : '') +
+      (dropped ? `  (${dropped} Duplikate entfernt)` : ''));
+    totalNew += unique.length;
+  }
+
+  console.log(`\nFertig. ${totalNew} Fragen in ${byPath.size} Pfaden importiert.`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
