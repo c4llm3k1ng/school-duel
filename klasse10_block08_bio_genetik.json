@@ -152,7 +152,7 @@
       "Enzymatischer Abbau beschädigter DNA-Abschnitte"
     ],
     "correct": 1,
-    "explanation": "Semikonservative Replikation (Meselson-Stahl-Experiment). Enzyme: DNA-Polymerase III, Helicase (Doppelhelix öffnen), Ligase (verbindet Okazaki-Fragmente am Folgestrang). Replikationsrichtung 5-Prime zu 3-Prime.",
+    "explanation": "Semikonservative Replikation (Meselson-Stahl-Experiment). Enzyme: Helicase (öffnet die Doppelhelix), DNA-Polymerase (bei Bakterien vor allem Polymerase III, bei Eukaryoten die Polymerasen Delta und Epsilon), Ligase (verbindet Okazaki-Fragmente am Folgestrang). Neue Stränge wachsen immer in Richtung 5-Prime zu 3-Prime.",
     "topic": "Genetik"
   },
   {
@@ -164,7 +164,7 @@
       "Beheben von Basenfehlern durch spezielle Reparaturenzyme"
     ],
     "correct": 1,
-    "explanation": "Transkription: RNA-Polymerase liest DNA ab → prä-mRNA → Prozessierung (5-Prime-Cap, Poly-A-Schwanz, Spleißen) → reife mRNA. Findet im Zellkern statt.",
+    "explanation": "Transkription: RNA-Polymerase liest DNA ab → prä-mRNA → Prozessierung (5-Prime-Cap, Poly-A-Schwanz, Spleißen) → reife mRNA. Diese Abfolge gilt für Eukaryoten; dort findet die Transkription im Zellkern statt. Bakterien haben keinen Zellkern und keine Prozessierung.",
     "topic": "Genetik"
   },
   {
@@ -308,7 +308,7 @@
       "Einwanderung von Individuen in eine fremde Population"
     ],
     "correct": 1,
-    "explanation": "Allopatrische Speziation: geographische Barriere trennt Population → getrennte Evolution → reproduktive Isolation. Galapagos-Finken: Darwins Beobachtung. Sympatrische Speziation: ohne geographische Trennung (z.B. Polyploidie bei Pflanzen).",
+    "explanation": "Allopatrische Speziation: geographische Barriere trennt Population → getrennte Evolution → reproduktive Isolation. Darwinfinken auf Galapagos: klassisches Beispiel für adaptive Radiation (die Bedeutung der Finken erkannte Darwin allerdings erst nach seiner Rückkehr). Sympatrische Speziation: ohne geographische Trennung (z.B. Polyploidie bei Pflanzen).",
     "topic": "Evolution"
   },
   {
@@ -320,19 +320,19 @@
       "Taxonomische Kategorie ohne festes biologisches Kriterium"
     ],
     "correct": 1,
-    "explanation": "Biologisches Artkonzept (Ernst Mayr, 1942): reproduktive Isolation als Artgrenze. Präzygotische Barrieren (zeitlich, verhaltensbedingt, morphologisch) und postzygotische Barrieren (Sterilität des Hybriden: Maultier).",
+    "explanation": "Biologisches Artkonzept (Ernst Mayr, 1942): reproduktive Isolation als Artgrenze. Präzygotische Barrieren (zeitlich, verhaltensbedingt, morphologisch) und postzygotische Barrieren (Sterilität des Hybriden: Maultier). Das Konzept lässt sich nur auf Arten anwenden, die sich sexuell fortpflanzen; für Bakterien und für Fossilien braucht man andere Artkonzepte.",
     "topic": "Evolution"
   },
   {
     "question": "Was sind Vestigialorgane?",
     "options": [
       "Neu entstandene Organe mit zusätzlicher Funktion",
-      "Zurückgebildete, funktionslose Reste früherer Organe",
+      "Zurückgebildete Reste früherer Organe ohne ihre einstige Funktion",
       "Organe, deren Leistung im Lauf der Evolution stark zunahm",
       "Organe, die erst nach der Geschlechtsreife ausgebildet werden"
     ],
     "correct": 1,
-    "explanation": "Beispiele: Wurmfortsatz (Appendix) am Blinddarm des Menschen, Beckenknochen bei Walen, Flügel des Straußes. Belegen, dass Organismen von Vorfahren abstammen, bei denen diese Strukturen noch funktional waren.",
+    "explanation": "Rudimente haben ihre ursprüngliche Funktion verloren. Beispiele: Wurmfortsatz (Appendix) am Blinddarm des Menschen, Beckenknochen bei Walen, Flügel des Straußes. Sie belegen, dass Organismen von Vorfahren abstammen, bei denen diese Strukturen noch funktional waren. Manche Rudimente erfüllen heute Nebenaufgaben: Der Wurmfortsatz enthält lymphatisches Gewebe, der Straußenflügel dient dem Balancieren.",
     "topic": "Evolution"
   },
   {
@@ -368,7 +368,7 @@
       "Organismen mit Zellwand aus Chitin und echtem Zellkern"
     ],
     "correct": 1,
-    "explanation": "Prokaryoten: keine Kernmembran, keine Organellen (außer Ribosomen), Plasmide möglich. Eubacteria (Bacteria) und Archaea. Größe: 1-10 µm. Eukaryoten: Zellen mit Zellkern (Tiere, Pflanzen, Pilze, Protisten).",
+    "explanation": "Prokaryoten: keine Kernmembran und keine membranumhüllten Organellen; Ribosomen sind aber vorhanden (sie sind selbst nicht von einer Membran umgeben), Plasmide möglich. Eubacteria (Bacteria) und Archaea. Größe: 1-10 µm. Eukaryoten: Zellen mit Zellkern (Tiere, Pflanzen, Pilze, Protisten).",
     "topic": "Biologie"
   },
   {
@@ -380,7 +380,7 @@
       "Herstellung von Proteinen aus Aminosäuren am Ribosom"
     ],
     "correct": 1,
-    "explanation": "Findet in Chloroplasten statt. Lichtreaktion (Thylakoidmembran): ATP + NADPH + O₂. Dunkelreaktion / Calvin-Zyklus (Stroma): CO₂-Fixierung → Glukose. Chlorophyll absorbiert rotes und blaues Licht.",
+    "explanation": "Findet in Chloroplasten statt. Lichtreaktion (Thylakoidmembran): ATP + NADPH + O₂. Lichtunabhängige Reaktion / Calvin-Zyklus (Stroma): CO₂-Fixierung → Zucker. Der Name \"Dunkelreaktion\" ist irreführend: Sie braucht kein Licht, läuft aber gerade tagsüber ab, weil sie ATP und NADPH aus der Lichtreaktion verbraucht. Chlorophyll absorbiert rotes und blaues Licht.",
     "topic": "Biologie"
   },
   {
@@ -392,7 +392,7 @@
       "Verdopplung der DNA im Zellkern vor der Zellteilung"
     ],
     "correct": 1,
-    "explanation": "Aerobe Zellatmung in Mitochondrien: Glykolyse (Cytoplasma) → Pyruvat → Acetyl-CoA → Citrat-Zyklus → Atmungskette → 36-38 ATP. Ohne O₂: Gärung (Milchsäure-, Alkoholgärung) → nur 2 ATP.",
+    "explanation": "Aerobe Zellatmung in Mitochondrien: Glykolyse (Cytoplasma) → Pyruvat → Acetyl-CoA → Citrat-Zyklus → Atmungskette. Tatsächliche Ausbeute nach heutigem Forschungsstand: etwa 30-32 ATP pro Glukose, denn der Transport von NADH und ATP durch die Mitochondrienmembran kostet selbst Energie. Ältere Lehrbücher nennen noch 36-38 ATP. Ohne O₂: Gärung (Milchsäure-, Alkoholgärung) → nur 2 ATP.",
     "topic": "Biologie"
   },
   {
@@ -404,7 +404,7 @@
       "Wissenschaft von der Stammesgeschichte der Lebewesen"
     ],
     "correct": 1,
-    "explanation": "Biotop (Lebensraum) + Biozönose (Lebensgemeinschaft) = Ökosystem. Trophiestufen: Produzenten, Primärkonsumenten, Sekundärkonsumenten, Destruenten. Energiefluss: nur ~10% pro Stufe weitergegeben.",
+    "explanation": "Biotop (Lebensraum) + Biozönose (Lebensgemeinschaft) = Ökosystem. Trophiestufen: Produzenten, Primärkonsumenten, Sekundärkonsumenten, Destruenten. Energiefluss: Von einer Trophiestufe zur nächsten gelangen im Mittel nur rund 10% der Energie – ein grober Richtwert, real liegen die Werte je nach Ökosystem etwa zwischen 5% und 20%.",
     "topic": "Ökologie"
   },
   {
@@ -416,7 +416,7 @@
       "Zusammenleben, bei dem eine Art auf Kosten der anderen lebt"
     ],
     "correct": 1,
-    "explanation": "Nahrungsnetz = mehrere verbundene Nahrungsketten. Produzenten (Pflanzen) → Primärkonsumenten (Herbivore) → Sekundärkonsumenten (Karnivore) → Tertiärkonsumenten. 10%-Regel: nur ~10% der Energie wird weitergegeben.",
+    "explanation": "Nahrungsnetz = mehrere verbundene Nahrungsketten. Produzenten (Pflanzen) → Primärkonsumenten (Herbivore) → Sekundärkonsumenten (Karnivore) → Tertiärkonsumenten. 10%-Regel: Nur etwa 10% der Energie werden weitergegeben – ein Näherungswert, real meist 5-20%.",
     "topic": "Ökologie"
   },
   {
@@ -428,7 +428,7 @@
       "Wettbewerb zweier Arten um dieselbe begrenzte Ressource"
     ],
     "correct": 1,
-    "explanation": "Formen: Mutualismus (beide profitieren, z.B. Stickstoffbakterien in Leguminosenwurzeln), Kommensalismus (einer profitiert, anderer neutral), Parasitismus (einer profitiert, anderer leidet).",
+    "explanation": "Formen: Mutualismus (beide profitieren, z.B. Knöllchenbakterien/Rhizobien in den Wurzelknöllchen von Leguminosen), Kommensalismus (einer profitiert, anderer neutral), Parasitismus (einer profitiert, anderer leidet).",
     "topic": "Ökologie"
   },
   {

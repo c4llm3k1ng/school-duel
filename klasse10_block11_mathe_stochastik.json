@@ -8,7 +8,7 @@
       "Eine Erhebung, die vorhandene Daten ordnet und grafisch zusammenfasst"
     ],
     "correct": 1,
-    "explanation": "Zufallsexperiment: Voraussetzungen sind bekannt, Ergebnis ist zufällig. Ergebnismenge Omega: alle möglichen Ergebnisse. Ereignis: Teilmenge von Omega. Beispiele: Würfeln, Münzwurf, Glücksrad.",
+    "explanation": "Zufallsexperiment: Die Versuchsbedingungen sind festgelegt und alle möglichen Ergebnisse sind vorher bekannt, welches davon eintritt, ist jedoch zufällig; außerdem ist der Versuch grundsätzlich beliebig oft unter gleichen Bedingungen wiederholbar. Ergebnismenge Omega: die Menge aller möglichen Ergebnisse. Ereignis: eine Teilmenge von Omega. Beispiele: Würfeln, Münzwurf, Glücksrad.",
     "topic": "Stochastik"
   },
   {
@@ -20,7 +20,7 @@
       "Das Produkt der Wahrscheinlichkeiten zweier nacheinander ausgeführter Versuche"
     ],
     "correct": 1,
-    "explanation": "Laplace-Experiment: alle Elementarereignisse gleichwahrscheinlich. P(A) = |A| / |Omega|. Beispiel: Würfel, P(gerade) = 3/6 = 0,5. Nicht anwendbar wenn Ergebnisse unterschiedlich wahrscheinlich sind.",
+    "explanation": "Laplace-Experiment: Die Ergebnismenge ist endlich und alle Elementarereignisse sind gleichwahrscheinlich. Nur dann gilt P(A) = |A| / |Omega|, also Anzahl der günstigen durch Anzahl der möglichen Ergebnisse. Beispiel: fairer Würfel, P(gerade Augenzahl) = 3/6 = 0,5. Bei unterschiedlich wahrscheinlichen Ergebnissen – etwa einem gezinkten Würfel oder einem ungleichmäßig geteilten Glücksrad – ist die Formel nicht anwendbar.",
     "topic": "Stochastik"
   },
   {
@@ -32,7 +32,7 @@
       "Sie entspricht dem Kehrwert der Anzahl aller Elementarereignisse"
     ],
     "correct": 1,
-    "explanation": "Axiom (Kolmogorov): Summe aller Wahrscheinlichkeiten der Elementarereignisse = 1. Konsequenz: P(nicht A) = 1 - P(A). Beispiel: Würfel: 6 × (1/6) = 1.",
+    "explanation": "Axiome von Kolmogorov: P(A) ≥ 0 für jedes Ereignis, P(Omega) = 1 für das sichere Ereignis, und für einander ausschließende Ereignisse addieren sich die Wahrscheinlichkeiten. Bei endlich vielen Ergebnissen folgt daraus, dass sich die Wahrscheinlichkeiten aller Elementarereignisse zu 1 addieren. Weitere Konsequenz: P(nicht A) = 1 - P(A). Beispiel Würfel: 6 · (1/6) = 1.",
     "topic": "Stochastik"
   },
   {
@@ -44,7 +44,7 @@
       "Das Ereignis, das unter allen Ergebnissen am häufigsten auftritt"
     ],
     "correct": 1,
-    "explanation": "Gegenereignis (Komplement): nicht-A oder A-quer. P(nicht A) = 1 - P(A). Nützliche Strategie: manchmal ist P(nicht A) leichter zu berechnen als P(A). Beispiel: P(mind. eine 6 bei 2 Würfen) = 1 - P(keine 6).",
+    "explanation": "Gegenereignis (Komplement): nicht-A bzw. A-quer, es enthält alle Ergebnisse aus Omega, die nicht zu A gehören. A und nicht-A schließen einander aus und ergeben zusammen Omega, daher P(nicht A) = 1 - P(A). Nützliche Strategie: Oft ist P(nicht A) leichter zu berechnen. Beispiel: P(mindestens eine 6 bei 2 Würfen) = 1 - P(keine 6) = 1 - (5/6)² = 11/36.",
     "topic": "Stochastik"
   },
   {
@@ -56,7 +56,7 @@
       "Eine Darstellung, in der Wertepaare als Punkte im Koordinatensystem erscheinen"
     ],
     "correct": 1,
-    "explanation": "Baumdiagramm: jede Stufe = ein Schritt im Experiment. Pfadregel 1: Wahrscheinlichkeit eines Pfades = Produkt der Astwahrscheinlichkeiten. Pfadregel 2: Wahrscheinlichkeit eines Ereignisses = Summe der Pfadwahrscheinlichkeiten.",
+    "explanation": "Baumdiagramm: Jede Stufe steht für einen Schritt des Experiments; an jeder Verzweigung addieren sich die Astwahrscheinlichkeiten zu 1. Ab der zweiten Stufe tragen die Äste bedingte Wahrscheinlichkeiten. Pfadregel 1 (Produktregel): Die Wahrscheinlichkeit eines Pfades ist das Produkt der Wahrscheinlichkeiten seiner Äste. Pfadregel 2 (Summenregel): Die Wahrscheinlichkeit eines Ereignisses ist die Summe der Wahrscheinlichkeiten aller Pfade, die zu diesem Ereignis gehören.",
     "topic": "Stochastik"
   },
   {
@@ -68,7 +68,7 @@
       "Die Wahrscheinlichkeit eines Pfades ist der Quotient aus erster und letzter Astwahrscheinlichkeit"
     ],
     "correct": 1,
-    "explanation": "P(A und B) = P(A) · P(B|A). Für unabhängige Ereignisse: P(A und B) = P(A) · P(B). Beispiel: 2× Münze, P(Kopf und Kopf) = 0,5 × 0,5 = 0,25.",
+    "explanation": "Allgemein gilt P(A und B) = P(A) · P(B|A), wobei die bedingte Wahrscheinlichkeit P(B|A) nur für P(A) > 0 definiert ist. Nur wenn A und B unabhängig sind, vereinfacht sich das zu P(A und B) = P(A) · P(B). Beispiel: zweimal Münze werfen, P(Kopf und Kopf) = 0,5 · 0,5 = 0,25. Beim Ziehen ohne Zurücklegen ändern sich die Wahrscheinlichkeiten auf den späteren Stufen.",
     "topic": "Stochastik"
   },
   {
@@ -80,7 +80,7 @@
       "Ereignisse, die zusammen die gesamte Ergebnismenge ausschöpfen und sich zu 1 ergänzen"
     ],
     "correct": 1,
-    "explanation": "Unabhängigkeit: P(A und B) = P(A) · P(B). Beispiel: Münzwurf und Würfelwurf sind unabhängig. Abhängig: Karten ziehen ohne Zurücklegen. Test: gilt P(A∩B) = P(A)·P(B)?",
+    "explanation": "Definition der Unabhängigkeit: P(A∩B) = P(A) · P(B); gleichwertig ist P(B|A) = P(B), falls P(A) > 0 ist. Beispiel: Münzwurf und Würfelwurf sind unabhängig. Abhängig: Karten ziehen ohne Zurücklegen. Wichtig: unabhängig ist nicht dasselbe wie unvereinbar – zwei einander ausschließende Ereignisse mit positiver Wahrscheinlichkeit sind gerade nicht unabhängig, weil das Eintreten des einen das andere ausschließt. Test: rechnerisch prüfen, ob P(A∩B) = P(A) · P(B) gilt.",
     "topic": "Stochastik"
   },
   {
@@ -92,7 +92,7 @@
       "Die Wahrscheinlichkeit, dass ein Ereignis bei keiner einzigen Durchführung eintritt"
     ],
     "correct": 1,
-    "explanation": "P(B|A) = P(A∩B) / P(A). Beispiel: Urne 3 rote, 2 blaue Kugeln. P(2. rot | 1. rot, ohne Zurücklegen) = 2/4 = 0,5. Wichtig für Baumdiagramme mit Abhängigkeit.",
+    "explanation": "P(B|A) = P(A∩B) / P(A), definiert nur für P(A) > 0. Beispiel: Urne mit 3 roten und 2 blauen Kugeln, ohne Zurücklegen. Ist die erste Kugel rot, verbleiben 2 rote unter 4 Kugeln, also P(2. rot | 1. rot) = 2/4 = 0,5. Achtung: P(B|A) und P(A|B) sind im Allgemeinen verschieden. Wichtig für Baumdiagramme mit Abhängigkeit und für Vierfeldertafeln.",
     "topic": "Stochastik"
   },
   {
@@ -104,7 +104,7 @@
       "Es wird so lange gezogen, bis ein bestimmtes Objekt zum ersten Mal erscheint"
     ],
     "correct": 1,
-    "explanation": "Mit Zurücklegen: unabhängige Ereignisse, P konstant. Ohne Zurücklegen: Abhängigkeit, Gesamtmenge verändert sich. Beispiel Urne 10 Kugeln (3 rot): P(rot) = 3/10 bei jeder Ziehung MIT Zurücklegen.",
+    "explanation": "Mit Zurücklegen: Die Ziehungen sind unabhängig, die Wahrscheinlichkeiten bleiben auf jeder Stufe gleich – Voraussetzung für die Binomialverteilung. Ohne Zurücklegen: Die Grundmenge verkleinert sich, die Stufen sind voneinander abhängig, im Baumdiagramm stehen bedingte Wahrscheinlichkeiten. Beispiel Urne mit 10 Kugeln, davon 3 rote: mit Zurücklegen ist P(rot) = 3/10 bei jeder Ziehung; ohne Zurücklegen hängt die zweite Ziehung vom Ergebnis der ersten ab (3/9 oder 2/9).",
     "topic": "Stochastik"
   },
   {
@@ -116,7 +116,7 @@
       "Die Verteilung der Wartezeit bis zum ersten Treffer bei wiederholten Versuchen"
     ],
     "correct": 1,
-    "explanation": "Voraussetzungen: n Versuche, unabhängig, p konstant, nur 2 Ergebnisse (Treffer/Niete). Formel: P(X=k) = C(n,k) · p^k · (1-p)^(n-k). B(n;p) als Schreibweise.",
+    "explanation": "Voraussetzungen (Bernoulli-Kette): feste Anzahl n von Versuchen, die Versuche sind unabhängig, die Trefferwahrscheinlichkeit p bleibt konstant, und jeder Versuch hat nur zwei mögliche Ausgänge (Treffer/Niete). Formel: P(X = k) = C(n; k) · p^k · (1-p)^(n-k) für k = 0, 1, ..., n. Schreibweise: X ist B(n; p)-verteilt. Beim Ziehen ohne Zurücklegen ist p nicht konstant, dort gilt die Binomialverteilung nur näherungsweise.",
     "topic": "Stochastik"
   },
   {
@@ -128,7 +128,7 @@
       "Die Anzahl der Möglichkeiten, n Objekte auf k gleich große Gruppen zu verteilen"
     ],
     "correct": 1,
-    "explanation": "C(n,k) = n! / (k! · (n-k)!). Auch: Pascalsches Dreieck. Beispiel: C(4,2) = 4!/(2!·2!) = 6. Bedeutung bei Binomialverteilung: Anzahl der Möglichkeiten, genau k Treffer zu erhalten.",
+    "explanation": "C(n; k) = n! / (k! · (n-k)!), definiert für ganze Zahlen mit 0 ≤ k ≤ n; dabei ist 0! = 1. Die Werte stehen auch im pascalschen Dreieck. Beispiel: C(4; 2) = 4!/(2!·2!) = 6. Bedeutung bei der Binomialverteilung: Anzahl der Möglichkeiten, wie sich genau k Treffer auf n Versuche verteilen können.",
     "topic": "Stochastik"
   },
   {
@@ -140,7 +140,7 @@
       "Der größte Wert, den die Zufallsgröße bei einem Versuch annehmen kann"
     ],
     "correct": 1,
-    "explanation": "E(X) = Summe(x_i · P(X=x_i)). Bei Binomialverteilung: E(X) = n · p. Beispiel: fairer Würfel E(X) = 1·(1/6)+2·(1/6)+...+6·(1/6) = 3,5. Gesetz der großen Zahlen: Mittelwert nähert sich E(X).",
+    "explanation": "E(X) = Summe über alle i von x_i · P(X = x_i). Bei der Binomialverteilung gilt E(X) = n · p. Beispiel fairer Würfel: E(X) = 1·(1/6) + 2·(1/6) + ... + 6·(1/6) = 3,5 – der Erwartungswert muss also gar kein möglicher Wert der Zufallsgröße sein. Nach dem Gesetz der großen Zahlen nähert sich der Mittelwert vieler Durchführungen dem Erwartungswert an; über eine einzelne Durchführung sagt E(X) nichts aus.",
     "topic": "Stochastik"
   },
   {
@@ -152,7 +152,7 @@
       "Ein Streuungsmaß: die Wurzel aus der mittleren quadratischen Abweichung"
     ],
     "correct": 1,
-    "explanation": "Varianz: mittlere quadratische Abweichung vom Erwartungswert. Standardabweichung sigma = Wurzel(Var(X)) in der gleichen Einheit wie X. Kleine sigma: geringe Streuung; große sigma: starke Streuung.",
+    "explanation": "Varianz: mittlere quadratische Abweichung vom Erwartungswert mu = E(X). Formel für eine diskrete Zufallsgröße: Var(X) = Summe über alle i von (x_i - mu)² · P(X = x_i). Für die Binomialverteilung gilt kurz Var(X) = n · p · (1 - p). Standardabweichung: sigma = Wurzel(Var(X)); sie hat dieselbe Einheit wie X, die Varianz dagegen deren Quadrat. Kleines sigma: geringe Streuung; großes sigma: starke Streuung. Bezeichnungen unterscheiden: sigma² und sigma gehören zur Zufallsgröße bzw. zur Grundgesamtheit, s² und s sind die aus einer Stichprobe berechneten Schätzwerte.",
     "topic": "Stochastik"
   },
   {
@@ -164,7 +164,7 @@
       "Der Wert, der innerhalb einer Datenreihe am häufigsten auftritt"
     ],
     "correct": 1,
-    "explanation": "Median: bei ungerader Anzahl n der mittlere Wert; bei gerader Anzahl Mittelwert der beiden mittleren Werte. Robuster als Mittelwert gegenüber Ausreißern. Beispiel: Einkommen – Median fairer als Durchschnitt.",
+    "explanation": "Median: Die Werte müssen zuerst der Größe nach geordnet werden. Bei ungerader Anzahl n ist es der mittlere Wert, bei gerader Anzahl das arithmetische Mittel der beiden mittleren Werte. Gegenüber Ausreißern robuster als das arithmetische Mittel, weil nur die Position der Werte zählt, nicht ihre Größe. Beispiel Einkommen: Der Median beschreibt die typische Lage besser als der Durchschnitt, den wenige sehr hohe Einkommen nach oben ziehen.",
     "topic": "Statistik"
   },
   {
@@ -176,7 +176,7 @@
       "Der Wert, der die mittlere quadratische Abweichung vom Mittel angibt"
     ],
     "correct": 1,
-    "explanation": "Modus (Modalwert): häufigster Wert. Kann mehrere geben (bimodal). Beispiel: Schuhgrößen 42 kommt am häufigsten vor → Modus = 42. Nützlich bei nominalen Daten (z.B. Lieblingsfarbe).",
+    "explanation": "Modus (Modalwert): der Wert mit der größten Häufigkeit. Er ist nicht immer eindeutig – treten mehrere Werte gleich oft auf, spricht man von einer bimodalen oder multimodalen Verteilung. Beispiel: Kommt bei den Schuhgrößen die 42 am häufigsten vor, ist 42 der Modus. Der Modus ist das einzige der drei Lagemaße, das sich auch für nominale Daten wie die Lieblingsfarbe bilden lässt.",
     "topic": "Statistik"
   },
   {
@@ -188,7 +188,7 @@
       "Die Wurzel aus der mittleren quadratischen Abweichung"
     ],
     "correct": 1,
-    "explanation": "Arithmetisches Mittel: empfindlich gegenüber Ausreißern. Beispiel: Temperaturen 10, 12, 11, 9, 100 → Mittel = 28,4 (aber Ausreißer verzerrt). Median wäre 11 (robuster).",
+    "explanation": "Arithmetisches Mittel: Summe aller Werte geteilt durch ihre Anzahl n (n > 0). Es reagiert empfindlich auf Ausreißer, weil jeder Wert mit seiner vollen Größe eingeht. Beispiel: 10, 12, 11, 9, 100 → Mittel = 142/5 = 28,4, obwohl vier der fünf Werte bei etwa 10 liegen. Der Median ist hier 11 und damit robuster. Sinnvoll ist das arithmetische Mittel nur bei metrischen Daten, nicht bei nominalen.",
     "topic": "Statistik"
   },
   {
@@ -200,7 +200,7 @@
       "Eine Darstellung von Verläufen durch eine Linie, die die Messpunkte verbindet"
     ],
     "correct": 1,
-    "explanation": "Histogramm: x-Achse = Merkmalsausprägung (Klassen), y-Achse = Häufigkeitsdichte (Häufigkeit/Klassenbreite). Fläche jedes Balkens = Häufigkeit der Klasse. Unterschied zum Balkendiagramm: Klassen zusammenhängend.",
+    "explanation": "Histogramm: x-Achse = Merkmalsausprägung in Klassen, y-Achse = Häufigkeitsdichte (Häufigkeit geteilt durch Klassenbreite). Maßgeblich ist die Fläche jedes Rechtecks, sie entspricht der Häufigkeit der Klasse; nur bei durchgehend gleich breiten Klassen ist auch die Höhe direkt proportional zur Häufigkeit. Unterschied zum Balkendiagramm: Die Klassen grenzen lückenlos aneinander, weil das Merkmal stetig ist.",
     "topic": "Statistik"
   },
   {
@@ -212,7 +212,7 @@
       "Der mit den Häufigkeiten gewichtete Durchschnitt aller Merkmalswerte"
     ],
     "correct": 1,
-    "explanation": "Relative Häufigkeit: h = k/n. Beispiel: 30 Schüler, 12 haben Brille → h = 12/30 = 0,4 = 40%. Gesetz der großen Zahlen: relative Häufigkeit nähert sich der Wahrscheinlichkeit bei vielen Versuchen.",
+    "explanation": "Relative Häufigkeit: h = k/n mit der absoluten Häufigkeit k und dem Umfang n (n > 0). Sie liegt stets zwischen 0 und 1. Beispiel: 30 Schüler, 12 tragen eine Brille → h = 12/30 = 0,4 = 40 %. Nach dem Gesetz der großen Zahlen nähert sich die relative Häufigkeit bei wachsender Versuchszahl der Wahrscheinlichkeit an – im stochastischen Sinn, einzelne größere Abweichungen bleiben also möglich.",
     "topic": "Stochastik"
   },
   {
@@ -224,7 +224,7 @@
       "Eine Verteilung, deren Wahrscheinlichkeit mit wachsendem Wert stetig abnimmt"
     ],
     "correct": 1,
-    "explanation": "Normalverteilung N(mu; sigma²): 68% der Werte in [mu-sigma; mu+sigma], 95% in [mu-2sigma; mu+2sigma], 99,7% in [mu-3sigma; mu+3sigma] (Sigma-Regeln). Wichtigste Verteilung in der Statistik (Zentraler Grenzwertsatz).",
+    "explanation": "Normalverteilung N(mu; sigma²) mit dem Erwartungswert mu und der Standardabweichung sigma der Zufallsgröße (nicht einer Stichprobe). Sigma-Regeln, gerundet: rund 68 % der Werte liegen in [mu-sigma; mu+sigma], rund 95 % in [mu-2sigma; mu+2sigma], rund 99,7 % in [mu-3sigma; mu+3sigma]. Da die Größe stetig ist, hat jeder einzelne Wert die Wahrscheinlichkeit 0; Wahrscheinlichkeiten entsprechen Flächen unter der Glockenkurve. Wichtigste Verteilung der Statistik (Zentraler Grenzwertsatz).",
     "topic": "Stochastik"
   },
   {
@@ -236,7 +236,7 @@
       "Bei sehr vielen Versuchen treten alle möglichen Ergebnisse am Ende exakt gleich oft auf"
     ],
     "correct": 1,
-    "explanation": "Beispiel: Münzwurf. Bei 10 Würfen kann es 3× Kopf geben (30%); bei 10.000 Würfen nähert sich die relative Häufigkeit 50%. Basis für Versicherungsmathematik und statistische Schlüsse.",
+    "explanation": "Beispiel Münzwurf: Bei 10 Würfen kann durchaus nur 3-mal Kopf fallen (30 %); bei 10.000 Würfen liegt die relative Häufigkeit mit hoher Wahrscheinlichkeit sehr nahe bei 50 %. Wichtig: Die Annäherung betrifft die relative Häufigkeit, nicht die absolute Differenz der Trefferzahlen, und vergangene Würfe beeinflussen künftige nicht (kein Ausgleich nach einer Pechsträhne). Basis für Versicherungsmathematik und statistische Schlüsse.",
     "topic": "Stochastik"
   },
   {
@@ -248,7 +248,7 @@
       "Das Teilgebiet, das Änderungsraten von Funktionen mit Ableitungen untersucht"
     ],
     "correct": 1,
-    "explanation": "Grundprinzip: k Entscheidungen mit n₁,...,nₖ Möglichkeiten → n₁·n₂·...·nₖ Gesamtmöglichkeiten. Permutation n Elemente: n! Anordnungen. Kombination: C(n,k) Auswahlen ohne Reihenfolge.",
+    "explanation": "Grundprinzip (Zählprinzip): Bei k aufeinanderfolgenden Entscheidungen mit n₁, ..., nₖ Möglichkeiten gibt es n₁·n₂·...·nₖ Gesamtmöglichkeiten – vorausgesetzt, die Anzahl der Möglichkeiten einer Stufe hängt nicht von den vorherigen Entscheidungen ab. Permutation von n verschiedenen Elementen: n! Anordnungen. Kombination: C(n; k) Auswahlen ohne Beachtung der Reihenfolge. Entscheidend ist stets, ob die Reihenfolge zählt und ob mit oder ohne Zurücklegen gezogen wird.",
     "topic": "Stochastik"
   },
   {
@@ -260,7 +260,7 @@
       "Eine Aufteilung von n Elementen auf mehrere gleich große Teilgruppen"
     ],
     "correct": 1,
-    "explanation": "Permutation von n Elementen: n! = n·(n-1)·...·2·1. Beispiel: 4 Bücher auf Regal: 4! = 24 Anordnungen. Permutation mit Wiederholung: n!/(n₁!·n₂!·...) wenn gleiche Elemente vorhanden.",
+    "explanation": "Permutation von n unterscheidbaren Elementen: n! = n·(n-1)·...·2·1 Anordnungen, mit 0! = 1. Beispiel: 4 verschiedene Bücher im Regal ergeben 4! = 24 Anordnungen. Sind einzelne Elemente untereinander gleich, sinkt die Anzahl auf n!/(n₁!·n₂!·...), wobei n₁, n₂, ... angeben, wie oft die jeweils gleichen Elemente vorkommen.",
     "topic": "Stochastik"
   },
   {
@@ -272,7 +272,7 @@
       "Die Verteilung von n Elementen auf k unterscheidbare Fächer oder Plätze"
     ],
     "correct": 1,
-    "explanation": "Kombination ohne Wiederholung: Lotto 6 aus 49: C(49,6) = 13.983.816 Möglichkeiten. Mit Wiederholung: C(n+k-1, k). Reihenfolge spielt keine Rolle (anders als bei Variationen).",
+    "explanation": "Kombination ohne Wiederholung (Ziehen ohne Zurücklegen, Reihenfolge unerheblich): C(n; k) = n!/(k!·(n-k)!). Beispiel Lotto 6 aus 49: C(49; 6) = 13.983.816 Möglichkeiten. Darf ein Element mehrfach gewählt werden, gibt es C(n+k-1; k) Möglichkeiten. Zählt dagegen die Reihenfolge mit, spricht man von Variationen, und die Anzahl ist größer.",
     "topic": "Stochastik"
   },
   {
@@ -284,7 +284,7 @@
       "Eine Funktion, die jedem Ergebnis unmittelbar seine Wahrscheinlichkeit zuordnet"
     ],
     "correct": 1,
-    "explanation": "Diskrete ZV: Würfelzahl, Münzanzahl. Stetige ZV: Körpergröße, Zeit. Wahrscheinlichkeitsverteilung: welche Werte mit welcher Wahrscheinlichkeit. Erwartungswert E(X) und Varianz Var(X) beschreiben die Verteilung.",
+    "explanation": "Eine Zufallsvariable (Zufallsgröße) X ordnet jedem Ergebnis eines Zufallsversuchs eine reelle Zahl zu; sie ist also eine Funktion auf Omega und selbst keine Wahrscheinlichkeit. Diskret: Würfelaugenzahl, Trefferzahl. Stetig: Körpergröße, Wartezeit. Die Wahrscheinlichkeitsverteilung gibt an, welche Werte mit welcher Wahrscheinlichkeit auftreten; bei stetigen Größen über eine Dichtefunktion und Flächen. Erwartungswert E(X) (Lage) und Varianz Var(X) (Streuung) fassen die Verteilung in Kennzahlen zusammen.",
     "topic": "Stochastik"
   },
   {
@@ -296,7 +296,7 @@
       "Man subtrahiert P(X=0) von der Einzelwahrscheinlichkeit P(X=k)"
     ],
     "correct": 1,
-    "explanation": "Kumulierte Wahrscheinlichkeit: P(X≤k) = Summe der Einzelwahrscheinlichkeiten. Aus Tabellen oder Taschenrechner. P(X<k) = P(X≤k-1). P(X≥k) = 1 - P(X≤k-1).",
+    "explanation": "Kumulierte Wahrscheinlichkeit: P(X ≤ k) = P(X=0) + P(X=1) + ... + P(X=k). Ablesbar aus Tabellen oder direkt mit dem Taschenrechner. Da X hier nur ganzzahlige Werte annimmt, gilt P(X < k) = P(X ≤ k-1) und P(X ≥ k) = 1 - P(X ≤ k-1). Bei stetigen Verteilungen wären diese Umformungen nicht in dieser Form möglich.",
     "topic": "Stochastik"
   },
   {
@@ -308,7 +308,7 @@
       "Eine Verteilung, die die Trefferzahl bei wiederholten Versuchen beschreibt"
     ],
     "correct": 1,
-    "explanation": "Signifikanzniveau alpha (oft 5%): höchstens erlaubte Wahrscheinlichkeit für einen Fehler 1. Art; daraus ergibt sich der Ablehnungsbereich, in dem H₀ verworfen wird. Fehler 1. Art: H₀ fälschlicherweise abgelehnt. Fehler 2. Art: H₀ fälschlicherweise beibehalten. p-Wert: Wahrscheinlichkeit, unter H₀ ein mindestens so extremes Ergebnis zu erhalten.",
+    "explanation": "Signifikanzniveau alpha (oft 5%): höchstens erlaubte Wahrscheinlichkeit für einen Fehler 1. Art; daraus ergibt sich der Ablehnungsbereich, in dem H₀ verworfen wird. Fehler 1. Art: H₀ fälschlicherweise abgelehnt. Fehler 2. Art: H₀ fälschlicherweise beibehalten. p-Wert: Wahrscheinlichkeit, unter H₀ ein mindestens so extremes Ergebnis zu erhalten. Wichtig: Wird H₀ nicht verworfen, ist sie damit nicht bewiesen – es fehlt nur der Beleg dagegen.",
     "topic": "Stochastik"
   },
   {
@@ -320,7 +320,7 @@
       "Eine Darstellung, die Anteile als Sektoren eines vollständigen Kreises zeigt"
     ],
     "correct": 1,
-    "explanation": "Boxplot: Box = Interquartilsabstand IQR (Q3-Q1), enthält 50% der Daten. Whisker bis zu Ausreißergrenze (Q1-1,5·IQR und Q3+1,5·IQR). Ausreißer als Punkte. Guter Vergleich mehrerer Datensätze.",
+    "explanation": "Boxplot: Die Box reicht von Q1 bis Q3, ihre Länge ist der Interquartilsabstand IQR = Q3 - Q1, und sie enthält die mittleren 50 % der Daten; der Median wird als Strich in der Box eingezeichnet. Die Whisker enden nicht an den Ausreißergrenzen, sondern beim kleinsten bzw. größten Datenwert, der noch innerhalb von Q1 - 1,5·IQR und Q3 + 1,5·IQR liegt. Werte außerhalb dieser Grenzen werden als Ausreißer einzeln als Punkte eingezeichnet. Gut geeignet zum Vergleich mehrerer Datensätze.",
     "topic": "Statistik"
   },
   {
@@ -332,7 +332,7 @@
       "Die mittlere quadratische Abweichung aller Werte von ihrem Mittelwert"
     ],
     "correct": 1,
-    "explanation": "IQR = Q3 - Q1: enthält die mittleren 50% der Daten. Robustes Streuungsmaß (nicht anfällig für Ausreißer). Q1 = 25%-Quantil, Q3 = 75%-Quantil. Ausreißer: Werte außerhalb [Q1-1,5·IQR, Q3+1,5·IQR].",
+    "explanation": "IQR = Q3 - Q1; der Bereich von Q1 bis Q3 umfasst die mittleren 50 % der Daten. Robustes Streuungsmaß, da einzelne extreme Werte es kaum verändern. Q1 ist das 25-%-Quantil, Q3 das 75-%-Quantil; für ihre genaue Berechnung gibt es mehrere gebräuchliche Konventionen, die sich bei kleinen Datensätzen leicht unterscheiden können. Als Ausreißer gelten nach der üblichen Konvention Werte außerhalb von [Q1 - 1,5·IQR; Q3 + 1,5·IQR].",
     "topic": "Statistik"
   },
   {
@@ -344,7 +344,7 @@
       "Ein einzelner Versuch, dessen Ausgang nicht vorhergesagt werden kann"
     ],
     "correct": 1,
-    "explanation": "Stichprobe: Zufällig ausgewählt, repräsentativ. Grundgesamtheit: alle zu untersuchenden Objekte. Stichprobenumfang n. Schluss von Stichprobe auf Grundgesamtheit: Induktive Statistik.",
+    "explanation": "Stichprobe: eine Teilmenge der Grundgesamtheit, die alle zu untersuchenden Objekte umfasst. Ein Rückschluss auf die Grundgesamtheit ist nur zulässig, wenn die Auswahl zufällig erfolgt; nur dann darf man die Stichprobe als repräsentativ ansehen. Stichprobenumfang n: je größer n, desto genauer die Schätzung. Der Schluss von der Stichprobe auf die Grundgesamtheit gehört zur induktiven (schließenden) Statistik und ist immer mit einer Unsicherheit behaftet.",
     "topic": "Statistik"
   },
   {
@@ -356,7 +356,7 @@
       "Eine Formel, die den gewichteten Mittelwert einer Zufallsgröße liefert"
     ],
     "correct": 1,
-    "explanation": "Bayes: P(A|B) = P(B|A)·P(A) / [P(B|A)·P(A)+P(B|nicht-A)·P(nicht-A)]. Anwendung: Medizintests (positiver Test ≠ krank, wenn Grundrate gering). Spam-Filter.",
+    "explanation": "Satz von Bayes: P(A|B) = P(B|A)·P(A) / [P(B|A)·P(A) + P(B|nicht-A)·P(nicht-A)]. Der Nenner ist gerade P(B) nach dem Satz der totalen Wahrscheinlichkeit; vorausgesetzt ist P(B) > 0 sowie 0 < P(A) < 1. Anwendung: Medizintests – ein positiver Test bedeutet bei seltenen Krankheiten trotz guter Testgüte oft nur eine geringe Erkrankungswahrscheinlichkeit, weil P(krank|positiv) und P(positiv|krank) verschieden sind. Weiteres Beispiel: Spam-Filter.",
     "topic": "Stochastik"
   },
   {
@@ -368,7 +368,7 @@
       "Ein Würfel, bei dem sich die Wahrscheinlichkeiten mit jedem Wurf verändern"
     ],
     "correct": 1,
-    "explanation": "Fairer Würfel: Laplace-Experiment. Unfair (gezinkt): verschiedene Wahrscheinlichkeiten. Empirischer Test der Fairness: sehr viele Würfe → relative Häufigkeiten sollten alle nahe 1/6 sein.",
+    "explanation": "Fairer Würfel: Jede Augenzahl hat die Wahrscheinlichkeit 1/6, es liegt also ein Laplace-Experiment vor. Unfair (gezinkt): die Augenzahlen sind unterschiedlich wahrscheinlich. Empirisch lässt sich Fairness nie beweisen, sondern nur prüfen: Bei sehr vielen Würfen sollten alle relativen Häufigkeiten nahe bei 1/6 liegen; kleinere Abweichungen sind dabei völlig normal, erst deutliche Abweichungen sprechen gegen einen fairen Würfel.",
     "topic": "Stochastik"
   },
   {
@@ -380,7 +380,7 @@
       "Die Menge aller möglichen Paare von Ereignissen eines Zufallsversuchs"
     ],
     "correct": 1,
-    "explanation": "Vollständiges Ereignissystem: A₁, A₂,..., Aₙ paarweise disjunkt, A₁∪A₂∪...∪Aₙ = Omega. Konsequenz: Satz der totalen Wahrscheinlichkeit: P(B) = Summe P(B|Aᵢ)·P(Aᵢ). Basis für Baumdiagramme.",
+    "explanation": "Vollständiges Ereignissystem: A₁, A₂, ..., Aₙ sind paarweise disjunkt und es gilt A₁∪A₂∪...∪Aₙ = Omega; jedes Ergebnis gehört also zu genau einem der Ereignisse, und ihre Wahrscheinlichkeiten addieren sich zu 1. Konsequenz ist der Satz der totalen Wahrscheinlichkeit: P(B) = Summe P(B|Aᵢ)·P(Aᵢ), wobei alle P(Aᵢ) > 0 sein müssen, damit die bedingten Wahrscheinlichkeiten definiert sind. Genau das steckt hinter der Summenregel im Baumdiagramm.",
     "topic": "Stochastik"
   },
   {
@@ -392,7 +392,7 @@
       "Wie groß die Summe aller erhobenen Merkmalswerte ausfällt"
     ],
     "correct": 1,
-    "explanation": "Streuungsmaße: Spannweite R = Max-Min (empfindlich für Ausreißer), IQR (robust), Varianz s² und Standardabweichung s (am häufigsten genutzt). Kleine Streuung = homogene Daten.",
+    "explanation": "Streuungsmaße: Spannweite R = Maximum - Minimum (empfindlich gegenüber Ausreißern), Interquartilsabstand IQR (robust), Varianz und Standardabweichung (am häufigsten genutzt). Auf die Bezeichnungen achten: s² und s werden aus einer Stichprobe berechnet (Stichprobenvarianz, meist mit dem Nenner n-1), sigma² und sigma gehören dagegen zu einer Zufallsgröße oder zur gesamten Grundgesamtheit. Beide Schreibweisen meinen dieselbe Idee – die mittlere quadratische Abweichung –, aber unterschiedliche Bezugsmengen. Kleine Streuung bedeutet homogene Daten.",
     "topic": "Statistik"
   },
   {
@@ -404,7 +404,7 @@
       "P(A oder B) = P(A) + P(B) - P(A) · P(B) für beliebige Ereignisse A und B"
     ],
     "correct": 1,
-    "explanation": "Allgemeines Additionsgesetz: P(A∪B) = P(A)+P(B)-P(A∩B). Für disjunkte Ereignisse (A∩B = leer): P(A∪B) = P(A)+P(B). Venn-Diagramm hilft zur Visualisierung.",
+    "explanation": "Allgemeines Additionsgesetz: P(A∪B) = P(A) + P(B) - P(A∩B). Der Abzug ist nötig, weil die gemeinsamen Ergebnisse sonst doppelt gezählt würden. Nur für einander ausschließende (disjunkte) Ereignisse mit A∩B = leere Menge vereinfacht sich das zu P(A∪B) = P(A) + P(B). Ein Venn-Diagramm macht den Zusammenhang anschaulich.",
     "topic": "Stochastik"
   },
   {
@@ -416,7 +416,7 @@
       "Einen Wert, der von der Anzahl der möglichen Ergebnisse abhängt"
     ],
     "correct": 1,
-    "explanation": "Sicheres Ereignis Omega: tritt immer ein, P(Omega) = 1. Unmögliches Ereignis (leere Menge): tritt nie ein, P(leer) = 0. Axiome der Kolmogorovschen Wahrscheinlichkeitstheorie.",
+    "explanation": "Sicheres Ereignis Omega: tritt bei jeder Durchführung ein, P(Omega) = 1. Unmögliches Ereignis (leere Menge): tritt nie ein, P(leere Menge) = 0. Beides gehört zu den Axiomen von Kolmogorov. Umgekehrt gilt das nur bei endlich vielen Ergebnissen: Bei stetigen Größen kann ein Ereignis die Wahrscheinlichkeit 0 haben, ohne unmöglich zu sein – etwa ein exakt bestimmter Messwert.",
     "topic": "Stochastik"
   },
   {
@@ -428,7 +428,7 @@
       "Ein Verfahren, das den mittleren Wert einer geordneten Datenreihe bestimmt"
     ],
     "correct": 1,
-    "explanation": "Lineare Regression: y = a·x + b. Methode der kleinsten Quadrate: minimiert Summe der quadratischen Abweichungen. Korrelationskoeffizient r (-1 bis 1): Stärke des linearen Zusammenhangs.",
+    "explanation": "Lineare Regression: y = a·x + b. Die Methode der kleinsten Quadrate bestimmt a und b so, dass die Summe der quadrierten Abweichungen in y-Richtung möglichst klein wird; deshalb ist die Regressionsgerade von y auf x eine andere als die von x auf y. Der Korrelationskoeffizient r zwischen -1 und 1 misst Stärke und Richtung des linearen Zusammenhangs. Vorsicht beim Extrapolieren weit außerhalb des Datenbereichs.",
     "topic": "Statistik"
   },
   {
@@ -440,7 +440,7 @@
       "Eine Kennzahl, die angibt, ob eine Größe die andere ursächlich bewirkt"
     ],
     "correct": 1,
-    "explanation": "Pearson-Korrelation r. Achtung: Korrelation ≠ Kausalität. Scheinkorrelation: beide Variablen von einer dritten beeinflusst. |r| > 0,7 gilt oft als starker Zusammenhang.",
+    "explanation": "Pearson-Korrelation r misst ausschließlich den linearen Zusammenhang: Ein starker, aber gekrümmter Zusammenhang kann trotzdem r nahe 0 ergeben. Achtung: Korrelation bedeutet keine Kausalität. Scheinkorrelation entsteht, wenn beide Größen von einer dritten beeinflusst werden. |r| > 0,7 gilt als Faustregel für einen starken linearen Zusammenhang; feste Grenzen gibt es nicht.",
     "topic": "Statistik"
   },
   {
@@ -464,7 +464,7 @@
       "Eine Grafik, die einen mehrstufigen Versuch in Ästen und Pfaden darstellt"
     ],
     "correct": 1,
-    "explanation": "Vierfeldertafel: Spalten = Merkmal 1 (z.B. krank/gesund), Zeilen = Merkmal 2 (z.B. Test positiv/negativ). Randwahrscheinlichkeiten und bedingte Wahrscheinlichkeiten ablesbar. Wichtig bei Medizintests.",
+    "explanation": "Vierfeldertafel: Spalten = Merkmal 1 (z. B. krank/gesund), Zeilen = Merkmal 2 (z. B. Test positiv/negativ). In den vier Feldern stehen die gemeinsamen Häufigkeiten bzw. Wahrscheinlichkeiten, am Rand deren Summen (Randwahrscheinlichkeiten). Bedingte Wahrscheinlichkeiten liest man nicht direkt ab, sondern berechnet sie als Feldwert geteilt durch die zugehörige Randsumme. Wichtig bei Medizintests, weil sich so P(krank|positiv) und P(positiv|krank) sauber auseinanderhalten lassen.",
     "topic": "Stochastik"
   },
   {

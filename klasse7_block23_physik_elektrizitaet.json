@@ -31,7 +31,7 @@
     "question": "Wie lautet das Ohmsche Gesetz?",
     "options": ["U = I + R", "R = U × I", "U = I × R", "I = U × R"],
     "correct": 2,
-    "explanation": "Ohmsches Gesetz: U = I·R. Umformungen: I = U/R (Stromstärke = Spannung ÷ Widerstand), R = U/I (Widerstand = Spannung ÷ Stromstärke). Benannt nach Georg Simon Ohm (1789–1854).",
+    "explanation": "Es gilt U = I·R. Umformungen: I = U/R (Stromstärke = Spannung ÷ Widerstand), R = U/I (Widerstand = Spannung ÷ Stromstärke). Das eigentliche Ohmsche Gesetz sagt darüber hinaus, dass R gleich bleibt, wenn man die Spannung ändert – das trifft nur auf ohmsche Leiter zu, etwa einen Metalldraht bei gleichbleibender Temperatur. Bei einer Glühlampe oder einer Diode ändert sich R, dort gilt es nicht. Benannt nach Georg Simon Ohm (1789–1854).",
     "topic": "Ohmsches Gesetz"
   },
   {
@@ -80,7 +80,7 @@
     "question": "Welche Formel gilt für die elektrische Leistung?",
     "options": ["P = U + I", "P = U / I", "P = U × I", "P = I / U"],
     "correct": 2,
-    "explanation": "Elektrische Leistung P = U·I. Einheit: Watt (W). Beispiel: Glühlampe 230 V, 0,35 A → P = 230 × 0,35 ≈ 80 W. Energie = Leistung × Zeit: E = P·t (Joule oder Kilowattstunden, kWh).",
+    "explanation": "Elektrische Leistung P = U·I. Einheit: Watt (W). Beispiel: Glühlampe an 230 V mit 0,35 A → P = 230 × 0,35 ≈ 80 W. Energie = Leistung × Zeit: E = P·t (Joule oder Kilowattstunden, kWh). Bei Wechselstrom rechnet man dabei mit den Effektivwerten von Spannung und Stromstärke – die 230 V der Steckdose sind ein solcher Effektivwert, der Spitzenwert liegt höher.",
     "topic": "Elektrische Leistung"
   },
   {
@@ -94,14 +94,14 @@
     "question": "Was ist ein Magnet?",
     "options": ["Ein Metall, das den elektrischen Strom besonders gut leitet", "Ein Körper, der ein Magnetfeld erzeugt und Eisen anzieht", "Ein Leiter, in dem dauerhaft ein elektrischer Strom fließt", "Ein Körper, der eine dauerhafte elektrische Ladung trägt"],
     "correct": 1,
-    "explanation": "Magnete haben einen Nord- und einen Südpol. Gleichnamige Pole stoßen sich ab, ungleichnamige ziehen sich an. Permanentmagnete behalten ihre Magnetisierung dauerhaft. Die Erde selbst wirkt wie ein großer Magnet (Erdmagnetfeld).",
+    "explanation": "Magnete haben immer einen Nord- und einen Südpol; zerbricht man einen Magneten, entstehen wieder zwei vollständige Magnete – einzelne Pole gibt es nicht. Gleichnamige Pole stoßen sich ab, ungleichnamige ziehen sich an. Permanentmagnete behalten ihre Magnetisierung über lange Zeit, verlieren sie aber durch starke Erwärmung oder harte Schläge. Die Erde selbst wirkt wie ein großer Magnet (Erdmagnetfeld).",
     "topic": "Magnetismus"
   },
   {
     "question": "Was ist das Magnetfeld?",
     "options": ["Der Bereich im Inneren eines Leiters, in dem der Strom fließt", "Der Raum um einen Magneten, in dem Magnetkräfte wirken", "Die Oberflächenschicht eines Magneten, an der die Pole liegen", "Der Raum um eine Ladung, in dem elektrische Kräfte wirken"],
     "correct": 1,
-    "explanation": "Magnetfeldlinien verlaufen außen vom Nordpol zum Südpol (innerhalb des Magneten umgekehrt). Die Dichte der Linien zeigt die Feldstärke an. Mit Eisenfeilspänen auf Papier lassen sie sich sichtbar machen.",
+    "explanation": "Magnetfeldlinien verlaufen außen vom Nordpol zum Südpol, im Inneren des Magneten umgekehrt – sie sind also immer geschlossen. Je dichter sie liegen, desto stärker ist das Feld. Feldlinien sind ein Modell zum Zeichnen: In Wirklichkeit wirkt das Feld im ganzen Raum, nicht nur auf einzelnen Linien. Mit Eisenfeilspänen auf Papier lässt sich der Verlauf sichtbar machen.",
     "topic": "Magnetismus"
   },
   {
@@ -122,7 +122,7 @@
     "question": "Was ist elektromagnetische Induktion?",
     "options": ["Das Magnetisieren eines Eisenkerns durch einen dauerhaften Gleichstrom", "Das Entstehen einer Spannung durch Änderung des Magnetfeldes in einer Spule", "Das Übertragen von elektrischem Strom durch die Luft über weite Strecken", "Das Ausrichten der Elementarmagnete beim Erwärmen eines Eisenstücks"],
     "correct": 1,
-    "explanation": "Induktion (entdeckt von Michael Faraday, 1831): Bewegt man einen Magneten in einer Spule (oder umgekehrt), entsteht eine Spannung und bei geschlossenem Kreis ein Strom. Grundprinzip aller Generatoren und Transformatoren.",
+    "explanation": "Induktion (entdeckt von Michael Faraday, 1831): Bewegt man einen Magneten in einer Spule (oder die Spule am Magneten), entsteht eine Spannung und bei geschlossenem Kreis ein Strom. Entscheidend ist die Änderung des Magnetfeldes in der Spule: Liegt der Magnet still, wird nichts induziert, auch wenn das Feld sehr stark ist. Je schneller die Änderung und je mehr Windungen, desto größer die Spannung. Grundprinzip aller Generatoren und Transformatoren.",
     "topic": "Elektromagnetismus"
   },
   {
@@ -143,7 +143,7 @@
     "question": "Was ist ein Transformator?",
     "options": ["Ein Gerät, das aus mechanischer Bewegung elektrische Energie erzeugt", "Ein Gerät, das durch Induktion eine Wechselspannung erhöht oder senkt", "Ein Gerät, das elektrische Energie in eine Drehbewegung umwandelt", "Ein Gerät, das chemische Energie als elektrische Spannung bereitstellt"],
     "correct": 1,
-    "explanation": "Transformator (Trafo): Zwei Spulen auf einem gemeinsamen Eisenkern. Primärspule (Eingang) → Magnetfeld → Sekundärspule (Ausgang). Übersetzungsverhältnis: U₂/U₁ = n₂/n₁. Wichtig für die Stromübertragung und für Netzteile.",
+    "explanation": "Transformator (Trafo): Zwei Spulen auf einem gemeinsamen Eisenkern. Primärspule (Eingang) → sich änderndes Magnetfeld → Sekundärspule (Ausgang). Deshalb arbeitet ein Trafo nur mit Wechselspannung. Übersetzungsverhältnis: U₂/U₁ = n₂/n₁. Energie entsteht dabei nicht: Beim idealen Trafo gilt zugleich I₂/I₁ = n₁/n₂ – wer die Spannung verdoppelt, halbiert die Stromstärke. Wichtig für die Stromübertragung und für Netzteile.",
     "topic": "Elektromagnetismus"
   },
   {
@@ -157,7 +157,7 @@
     "question": "Was ist eine Sicherung im Haushalt?",
     "options": ["Ein Messgerät, das die Spannung in der Hausinstallation überwacht", "Ein Schutzschalter, der den Kreis bei zu hohem Strom unterbricht", "Ein Bauteil, das den Strom gleichmäßig auf die Steckdosen verteilt", "Ein Schalter, mit dem sich einzelne Lampen ein- und ausschalten lassen"],
     "correct": 1,
-    "explanation": "Sicherungen (Schmelzsicherungen oder Leitungsschutzschalter) schützen vor Überhitzung und Brand. Bei zu hohem Strom schmilzt der Draht (Schmelzsicherung) oder der Automat schaltet ab. Danach muss die Sicherung ausgetauscht bzw. zurückgesetzt werden.",
+    "explanation": "Sicherungen (Schmelzsicherungen oder Leitungsschutzschalter) schützen die Leitungen vor Überhitzung und Brand. Bei zu hohem Strom schmilzt der Draht (Schmelzsicherung) oder der Automat schaltet ab. Danach muss die Sicherung ausgetauscht bzw. zurückgesetzt werden. Menschen schützt sie dagegen nicht zuverlässig: Eine 16-A-Sicherung löst erst bei Strömen aus, die für den Körper längst gefährlich wären. Dafür ist der FI-Schutzschalter zuständig, der schon bei etwa 30 mA Fehlerstrom abschaltet.",
     "topic": "Elektrische Sicherheit"
   },
   {
@@ -192,21 +192,21 @@
     "question": "Was ist beim Umgang mit Elektrizität wichtig?",
     "options": ["Elektrische Geräte im Haushalt grundsätzlich gar nicht erst benutzen", "Geräte mit feuchten Händen bedienen, weil Wasser den Strom abhält", "Defekte Geräte meiden, Kurzschlüsse vermeiden und trockene Hände haben", "Auf Sicherungen verzichten, weil sie den Stromkreis unnötig stören"],
     "correct": 2,
-    "explanation": "Elektrische Sicherheit: Niemals in Steckdosen greifen. Nasse Hände leiten den Strom besser, denn Leitungswasser und Schweiß sind leitfähig. Kein Wasser in der Nähe von Elektrogeräten. Schon Ströme von wenigen Dutzend Milliampere durch den Körper können lebensbedrohlich sein.",
+    "explanation": "Elektrische Sicherheit: Niemals in Steckdosen greifen, defekte Geräte nicht weiterbenutzen, kein Wasser in der Nähe von Elektrogeräten. Feuchte Hände sind gefährlich, weil Leitungswasser und Schweiß gut leiten und der Widerstand des Körpers dadurch stark sinkt. Was schon kleine Ströme bewirken (Richtwerte für Wechselstrom mit 50 Hz durch den Körper): ab etwa 0,5 mA spürt man den Strom; ab etwa 10 mA ist die Loslassgrenze erreicht – die Muskeln verkrampfen, man kann den Leiter nicht mehr loslassen; ab etwa 30 mA droht eine Atemlähmung, genau darauf sind FI-Schutzschalter ausgelegt; ab etwa 50 mA kann Herzkammerflimmern auftreten, das lebensgefährlich ist. Die Zahlen sind keine festen Grenzen: Es kommt auch darauf an, welchen Weg der Strom durch den Körper nimmt und wie lange er fließt.",
     "topic": "Elektrische Sicherheit"
   },
   {
     "question": "Was ist eine Solarzelle?",
     "options": ["Ein Akku, der den Strom einer Solaranlage über die Nacht speichert", "Ein Bauteil, das Licht unmittelbar in elektrische Energie umwandelt", "Ein Generator, der von der Wärme der Sonnenstrahlung angetrieben wird", "Ein Spiegel, der Sonnenlicht auf einen Wärmespeicher bündelt"],
     "correct": 1,
-    "explanation": "Solarzellen (Photovoltaik-Zellen) nutzen den inneren photoelektrischen Effekt: Lichtteilchen (Photonen) lösen im Silizium Elektronen aus ihren Bindungen → es entsteht eine elektrische Spannung. Ein Solarmodul besteht aus vielen Zellen, die in Reihe und parallel geschaltet sind.",
+    "explanation": "Solarzellen (Photovoltaik-Zellen) nutzen den inneren photoelektrischen Effekt: Lichtteilchen (Photonen) lösen im Silizium Elektronen aus ihren Bindungen. Die Elektronen verlassen das Material aber nicht – erst das elektrische Feld an der Grenzschicht zwischen den unterschiedlich dotierten Siliziumschichten (pn-Übergang) trennt die Ladungen voneinander, und dadurch entsteht die Spannung. Ein Solarmodul besteht aus vielen Zellen, die in Reihe und parallel geschaltet sind.",
     "topic": "Erneuerbare Energien"
   },
   {
     "question": "Was ist der Erdmagnetpol?",
     "options": ["Der geografische Nordpol, an dem die Drehachse der Erde austritt", "Der magnetische Pol der Erde, zu dem die Kompassnadel zeigt", "Ein großer Dauermagnet aus Eisen im Inneren des Erdkerns", "Der Punkt, an dem das Magnetfeld der Erde am schwächsten ist"],
     "correct": 1,
-    "explanation": "Die Erde wirkt wie ein riesiger Magnet (verursacht durch Strömungen im flüssigen Eisen des Erdkerns). Der magnetische Nordpol liegt nahe beim geografischen Nordpol, ist mit ihm aber nicht identisch. Er wandert langsam. Die Kompassnadel zeigt zum magnetischen Nordpol.",
+    "explanation": "Die Erde wirkt wie ein riesiger Magnet (verursacht durch Strömungen im flüssigen Eisen des äußeren Erdkerns). Der Magnetpol in der Arktis liegt in der Nähe des geografischen Nordpols, ist mit ihm aber nicht identisch, und er wandert jedes Jahr um mehrere Kilometer. Man nennt ihn üblicherweise 'magnetischer Nordpol', weil er im Norden liegt. Physikalisch ist er jedoch ein magnetischer Südpol – gerade deshalb zeigt der Nordpol der Kompassnadel dorthin, denn ungleichnamige Pole ziehen sich an.",
     "topic": "Magnetismus"
   },
   {
@@ -248,7 +248,7 @@
     "question": "Was ist elektrische Energie im Haushalt in kWh?",
     "options": ["Eine Größe, die nur für Industrieanlagen und Kraftwerke gebraucht wird", "Eine Energieeinheit: Ein 1000-Watt-Gerät verbraucht in einer Stunde 1 kWh", "Eine Einheit für die Spannung im Stromnetz eines Wohnhauses", "Eine andere Schreibweise für die Leistungseinheit Watt"],
     "correct": 1,
-    "explanation": "1 kWh = 1.000 W × 1 h = 3.600.000 J. Auf der Stromrechnung wird der Energieverbrauch in kWh angegeben. Beispiel: Kühlschrank (150 W) läuft 24 h → 150 × 24/1000 = 3,6 kWh. Eine kWh Strom kostet in Deutschland ca. 30 Cent.",
+    "explanation": "1 kWh = 1.000 W × 1 h = 3.600.000 J. Auf der Stromrechnung wird der Energieverbrauch in kWh angegeben. Beispiel: Ein Gerät mit 150 W, das 24 h durchläuft → 150 × 24/1000 = 3,6 kWh. Ein Kühlschrank läuft allerdings nicht ständig, sondern schaltet sich immer wieder ab, deshalb liegt sein Jahresverbrauch weit darunter. Eine kWh Haushaltsstrom kostet in Deutschland je nach Tarif und Jahr etwa 30 bis 40 Cent.",
     "topic": "Elektrische Energie"
   }
 ]

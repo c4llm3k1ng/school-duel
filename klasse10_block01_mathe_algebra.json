@@ -478,5 +478,197 @@
     "correct": 1,
     "explanation": "Gaußsche Summenformel: 1+2+...+n = n(n+1)/2. Gauß berechnete 1+2+...+100 = 100·101/2 = 5050 als Schüler. Geometrische Reihe: a·(qⁿ-1)/(q-1).",
     "topic": "Folgen und Reihen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Man addiert zuerst 7 auf beiden Seiten: 3x = 15. Anschließend teilt man beide Seiten durch 3: x = 5. Probe: 3 ⋅ 5 - 7 = 15 - 7 = 8. ✓",
+    "options": [
+      "x = 3",
+      "x = 4",
+      "x = 5",
+      "x = 6"
+    ],
+    "question": "Was ist die Lösung der Gleichung 3x - 7 = 8?",
+    "topic": "Lineare Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "x² - 10x + 25 passt auf die zweite binomische Formel a² - 2ab + b² = (a - b)². Mit a = x und b = 5 gilt 2 ⋅ x ⋅ 5 = 10x und 5² = 25, also x² - 10x + 25 = (x - 5)². Zur Kontrolle: (x + 5)² = x² + 10x + 25, (x - 5)(x + 5) = x² - 25 und (x - 1)(x - 25) = x² - 26x + 25.",
+    "options": [
+      "(x + 5)²",
+      "(x - 5)²",
+      "(x - 5)(x + 5)",
+      "(x - 1)(x - 25)"
+    ],
+    "question": "Welcher Term ist die faktorisierte Form von x² - 10x + 25?",
+    "topic": "Faktorisierung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Mit der p-q-Formel x₁,₂ = -p/2 ± √((p/2)² - q) und p = 4, q = -5 gilt: x₁,₂ = -2 ± √(4 + 5) = -2 ± 3. Daraus folgt x₁ = 1 und x₂ = -5. Probe über den Satz von Vieta: 1 + (-5) = -4 = -p und 1 ⋅ (-5) = -5 = q. ✓",
+    "options": [
+      "x₁ = 5, x₂ = -1",
+      "x₁ = 1, x₂ = -5",
+      "x₁ = 2, x₂ = -3",
+      "x₁ = -2, x₂ = 3"
+    ],
+    "question": "Bestimme die Lösungen der quadratischen Gleichung x² + 4x - 5 = 0.",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Zuerst wird die äußere Potenz angewendet: (a³ ⋅ b²)² = a⁶ ⋅ b⁴. Beim Dividieren von Potenzen mit gleicher Basis werden die Exponenten subtrahiert: a^(6-2) = a⁴ und b^(4-3) = b¹. Der Term vereinfacht sich also zu a⁴b. Typische Fehler wären a⁵b (Exponenten addiert statt multipliziert) oder a⁴b² (b-Exponent falsch subtrahiert).",
+    "options": [
+      "a⁴b",
+      "a⁴b²",
+      "a⁵b",
+      "a³b²"
+    ],
+    "question": "Vereinfache den Ausdruck (a³ ⋅ b²)² / (a² ⋅ b³).",
+    "topic": "Potenzgesetze"
+  },
+  {
+    "correct": 1,
+    "explanation": "Man subtrahiert zuerst 5 auf beiden Seiten: -2x < 6. Beim Teilen durch eine negative Zahl dreht sich das Ungleichheitszeichen um: x > -3. Probe mit x = 0: 5 - 0 = 5 < 11. ✓",
+    "options": [
+      "x < -3",
+      "x > -3",
+      "x < 3",
+      "x > 3"
+    ],
+    "question": "Welche Lösungsmenge hat die Ungleichung 5 - 2x < 11?",
+    "topic": "Ungleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Steigung zwischen zwei Punkten (x₁ | y₁) und (x₂ | y₂) berechnet man mit m = (y₂ - y₁) / (x₂ - x₁). Eingesetzt: m = (16 - 7) / (5 - 2) = 9 / 3 = 3. Die Funktionsgleichung lautet damit y = 3x + 1.",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "question": "Eine lineare Funktion verläuft durch die Punkte P(2 | 7) und Q(5 | 16). Wie groß ist die Steigung dieser Funktion?",
+    "topic": "Lineare Funktionen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Wegen a = -2 < 0 ist die Parabel nach unten geöffnet, der Scheitelpunkt liefert also das Maximum. Die Scheitelstelle ist t = -b / (2a) = -8 / (2 ⋅ (-2)) = 2 Sekunden. Einsetzen ergibt h(2) = -2 ⋅ 4 + 8 ⋅ 2 + 1 = -8 + 16 + 1 = 9. Die maximale Höhe beträgt 9 Meter.",
+    "options": [
+      "7 Meter",
+      "8 Meter",
+      "9 Meter",
+      "10 Meter"
+    ],
+    "question": "Die Flughöhe eines Geschosses wird durch die Funktion h(t) = -2t² + 8t + 1 beschrieben, wobei h die Höhe in Metern und t die Zeit in Sekunden nach dem Abschuss ist. Welche maximale Höhe erreicht das Geschoss?",
+    "topic": "Parabeln"
+  },
+  {
+    "correct": 1,
+    "explanation": "Einsetzungsverfahren: y = 2x - 1 wird in II eingesetzt: 3x + (2x - 1) = 9, also 5x - 1 = 9 und damit 5x = 10, x = 2. Eingesetzt in I: y = 2 ⋅ 2 - 1 = 3. Probe in II: 3 ⋅ 2 + 3 = 9. ✓ Die anderen Wertepaare erfüllen zwar Gleichung I, aber nicht Gleichung II.",
+    "options": [
+      "x = 1, y = 1",
+      "x = 2, y = 3",
+      "x = 3, y = 5",
+      "x = 4, y = 7"
+    ],
+    "question": "Löse das folgende lineare Gleichungssystem: I) y = 2x - 1, II) 3x + y = 9.",
+    "topic": "Gleichungssysteme"
+  },
+  {
+    "correct": 0,
+    "explanation": "Mit der p-q-Formel und p = 6, q = -7 gilt: x₁,₂ = -3 ± √(9 + 7) = -3 ± 4. Daraus folgt x₁ = 1 und x₂ = -7. Gleichwertig ist die Faktorisierung (x - 1)(x + 7) = 0. Probe: 1 + (-7) = -6 = -p und 1 ⋅ (-7) = -7 = q. ✓",
+    "options": [
+      "x₁ = 1, x₂ = -7",
+      "x₁ = -1, x₂ = 7",
+      "x₁ = 1, x₂ = 7",
+      "x₁ = -1, x₂ = -7"
+    ],
+    "question": "Löse die quadratische Gleichung: x² + 6x - 7 = 0",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Beim Dividieren von Potenzen mit gleicher Basis werden die Exponenten subtrahiert. Für a: 3 - (-1) = 4, also a⁴. Für b: -2 - 3 = -5, also b⁻⁵ = 1 / b⁵. Der Term ist damit a⁴ / b⁵. Der Definitionsbereich verlangt dabei a ≠ 0 und b ≠ 0.",
+    "options": [
+      "a⁴ / b⁵",
+      "a² / b⁵",
+      "a⁴ / b",
+      "b⁵ / a⁴"
+    ],
+    "question": "Vereinfache den Term: (a³ ⋅ b⁻²) / (a⁻¹ ⋅ b³)",
+    "topic": "Potenzgesetze"
+  },
+  {
+    "correct": 2,
+    "explanation": "Addition von II und III liefert 3x + y = 5, also y = 5 - 3x. Addition von I und III liefert 2x + 3y = 8. Einsetzen ergibt 2x + 3(5 - 3x) = 8, also -7x = -7 und damit x = 1. Daraus folgt y = 5 - 3 = 2 und aus I: z = 6 - 1 - 2 = 3. Probe in II: 2 - 2 + 3 = 3. ✓",
+    "options": [
+      "z = 1",
+      "z = 2",
+      "z = 3",
+      "z = 4"
+    ],
+    "question": "Gegeben ist das lineare Gleichungssystem:\nI: x + y + z = 6\nII: 2x - y + z = 3\nIII: x + 2y - z = 2\nBestimme den Wert von z.",
+    "topic": "Gleichungssysteme"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Term passt auf die zweite binomische Formel a² - 2ab + b² = (a - b)² mit a = 2x und b = 3y, denn (2x)² = 4x², 2 ⋅ 2x ⋅ 3y = 12xy und (3y)² = 9y². Also gilt 4x² - 12xy + 9y² = (2x - 3y)². Zur Kontrolle: (2x + 3y)² = 4x² + 12xy + 9y² und (2x - 3y)(2x + 3y) = 4x² - 9y².",
+    "options": [
+      "(2x - 3y)²",
+      "(2x + 3y)²",
+      "(4x - 9y)²",
+      "(2x - 3y)(2x + 3y)"
+    ],
+    "question": "Faktorisiere den Term: 4x² - 12xy + 9y²",
+    "topic": "Faktorisierung"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Anzahl der reellen Lösungen hängt von der Diskriminante D = b² - 4ac ab. Mit a = 2, b = -3 und c = 5 gilt D = (-3)² - 4 ⋅ 2 ⋅ 5 = 9 - 40 = -31. Da D < 0 ist, gibt es keine reelle Lösung. Eine quadratische Gleichung (a ≠ 0) hat außerdem höchstens zwei reelle Lösungen, unendlich viele sind also grundsätzlich unmöglich.",
+    "options": [
+      "keine reelle Lösung",
+      "genau eine reelle Lösung",
+      "genau zwei reelle Lösungen",
+      "unendlich viele reelle Lösungen"
+    ],
+    "question": "Wie viele reelle Lösungen hat die quadratische Gleichung 2x² - 3x + 5 = 0?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Zuerst bestimmt man die Nullstellen von x² - 4x - 5 = 0. Die Faktorisierung (x + 1)(x - 5) = 0 liefert x₁ = -1 und x₂ = 5. Weil der Koeffizient von x² positiv ist, ist die Parabel nach oben geöffnet und liegt genau zwischen den Nullstellen unterhalb der x-Achse. Die Lösungsmenge ist also -1 < x < 5.",
+    "options": [
+      "-1 < x < 5",
+      "x < -1 oder x > 5",
+      "x < -5 oder x > 1",
+      "-5 < x < 1"
+    ],
+    "question": "Löse die quadratische Ungleichung: x² - 4x - 5 < 0",
+    "topic": "Ungleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Nenner dürfen nicht null werden, also ist D = ℝ ohne 2 und -1/2. Multiplizieren mit (x - 2)(2x + 1) ergibt (x + 3)(2x + 1) = (x + 3)(x - 2). Nach dem Ausklammern von (x + 3) folgt (x + 3)[(2x + 1) - (x - 2)] = 0, also (x + 3)(x + 3) = (x + 3)² = 0. Die Gleichung hat damit nur die Lösung x = -3 (doppelte Nullstelle), und x = -3 liegt im Definitionsbereich. Probe: 0 / (-5) = 0 = 0 / (-5). ✓",
+    "options": [
+      "x = -3",
+      "x = 3",
+      "x = 2",
+      "x = -1/2"
+    ],
+    "question": "Löse die Bruchgleichung für x: (x+3)/(x-2) = (x+3)/(2x+1)",
+    "topic": "Bruchgleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Ist x die Breite in cm, so ist die Länge (x + 6) cm und es gilt x(x + 6) = 112, also x² + 6x - 112 = 0. Die Faktorisierung (x + 14)(x - 8) = 0 liefert x = -14 oder x = 8. Eine Breite kann nicht negativ sein, also entfällt x = -14. Die Breite beträgt 8 cm, die Länge 14 cm. Probe: 8 ⋅ 14 = 112. ✓",
+    "options": [
+      "8 cm",
+      "7 cm",
+      "9 cm",
+      "14 cm"
+    ],
+    "question": "Ein Rechteck hat einen Flächeninhalt von 112 cm². Die Länge ist um 6 cm größer als die Breite. Berechne die Breite des Rechtecks.",
+    "topic": "Quadratische Gleichungen"
   }
 ]

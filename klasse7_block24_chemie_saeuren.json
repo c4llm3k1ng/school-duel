@@ -1,238 +1,408 @@
 [
   {
     "question": "Was ist der pH-Wert?",
-    "options": ["Ein Maß für die elektrische Leitfähigkeit einer Lösung, angegeben in Siemens pro Meter", "Ein Maß für den sauren oder basischen Charakter einer wässrigen Lösung auf der Skala 0–14", "Ein Maß für die Dichte einer Flüssigkeit, angegeben in Gramm pro Kubikzentimeter", "Ein Maß für den gelösten Salzgehalt einer Lösung, angegeben in Gramm pro Liter"],
+    "options": [
+      "Ein Maß für die elektrische Leitfähigkeit einer Lösung, angegeben in Siemens pro Meter",
+      "Ein Maß für den sauren oder basischen Charakter einer wässrigen Lösung, meist im Bereich 0 bis 14",
+      "Ein Maß für die Dichte einer Flüssigkeit, angegeben in Gramm pro Kubikzentimeter",
+      "Ein Maß für den gelösten Salzgehalt einer Lösung, angegeben in Gramm pro Liter"
+    ],
     "correct": 1,
-    "explanation": "pH-Skala: 0–6 = sauer (0 = sehr stark sauer), 7 = neutral, 8–14 = basisch/alkalisch (14 = sehr stark basisch). pH kommt von 'potentia Hydrogenii' (Stärke des Wasserstoffs). Magensäure: pH≈2, Wasser: pH=7, Natronlauge: pH≈14.",
+    "explanation": "pH-Skala: 0–6 = sauer (0 = sehr stark sauer), 7 = neutral, 8–14 = basisch/alkalisch (14 = sehr stark basisch). pH kommt von 'potentia Hydrogenii' (Stärke des Wasserstoffs). Magensäure: pH≈1-2, reines Wasser: pH=7 (bei 25 °C), 1-molare Natronlauge: pH≈14. Die Werte hängen also immer von der Konzentration ab.",
     "topic": "pH-Wert"
   },
   {
     "question": "Was ist ein Indikator in der Chemie?",
-    "options": ["Ein Messgerät, das die Temperatur einer Reaktionslösung aufzeichnet", "Ein Stoff, der in Säuren und Laugen jeweils eine andere Farbe zeigt", "Ein Gerät, das den pH-Wert über eine Glaselektrode elektrisch misst", "Ein saurer Stoff, der eine Lösung auf einen pH-Wert unter 7 bringt"],
+    "options": [
+      "Ein Messgerät, das die Temperatur einer Reaktionslösung aufzeichnet",
+      "Ein Stoff, der in Säuren und Laugen jeweils eine andere Farbe zeigt",
+      "Ein Gerät, das den pH-Wert über eine Glaselektrode elektrisch misst",
+      "Ein saurer Stoff, der eine Lösung auf einen pH-Wert unter 7 bringt"
+    ],
     "correct": 1,
     "explanation": "Wichtige Indikatoren: Lackmus (rot in Säure, blau in Lauge), Phenolphthalein (farblos in Säure, pink in Lauge), Universalindikator (Farbskala für genauen pH-Wert). Rotkohlsaft ist ein natürlicher Indikator.",
     "topic": "Indikatoren"
   },
   {
     "question": "Was zeigt Lackmus in einer sauren Lösung?",
-    "options": ["Lackmus färbt sich grün", "Lackmus färbt sich gelb", "Lackmus färbt sich rot", "Lackmus färbt sich blau"],
+    "options": [
+      "Lackmus färbt sich grün",
+      "Lackmus färbt sich gelb",
+      "Lackmus färbt sich rot",
+      "Lackmus färbt sich blau"
+    ],
     "correct": 2,
     "explanation": "Lackmus ist ein natürlicher Farbstoff aus Flechten. In Säuren wird er rot, in Laugen blau, in neutralen Lösungen violett. Lackmuspapier (rotes und blaues) ist das einfachste Testmittel für Säuren und Laugen.",
     "topic": "Indikatoren"
   },
   {
     "question": "Was sind Säuren?",
-    "options": ["Stoffe, die in Wasser OH⁻-Ionen abgeben und einen pH-Wert über 7 erzeugen", "Stoffe, die in Wasser H⁺-Ionen (Protonen) abgeben und einen pH-Wert unter 7 erzeugen", "Stoffe, die in Wasser weder H⁺ noch OH⁻ abgeben und den pH-Wert bei 7 halten", "Stoffe, die in Wasser Metallionen abgeben und den pH-Wert dabei nicht verändern"],
+    "options": [
+      "Stoffe, die in Wasser OH⁻-Ionen abgeben und einen pH-Wert über 7 erzeugen",
+      "Stoffe, die in Wasser H⁺-Ionen (Protonen) abgeben und einen pH-Wert unter 7 erzeugen",
+      "Stoffe, die in Wasser weder H⁺ noch OH⁻ abgeben und den pH-Wert bei 7 halten",
+      "Stoffe, die in Wasser Metallionen abgeben und den pH-Wert dabei nicht verändern"
+    ],
     "correct": 1,
-    "explanation": "Säuren geben H⁺ (Protonen) ab. Starke Säuren: Salzsäure (HCl), Schwefelsäure (H₂SO₄), Salpetersäure (HNO₃). Schwache Säuren: Essigsäure (CH₃COOH), Zitronensäure, Kohlensäure (H₂CO₃).",
+    "explanation": "Säuren geben H⁺ (Protonen) ab; in Wasser übernehmen die Wassermoleküle diese Protonen, es entstehen H₃O⁺-Ionen (Oxonium-Ionen). Starke Säuren: Salzsäure (HCl), Schwefelsäure (H₂SO₄), Salpetersäure (HNO₃). Schwache Säuren: Essigsäure (CH₃COOH), Zitronensäure, Kohlensäure (H₂CO₃).",
     "topic": "Säuren"
   },
   {
     "question": "Was ist Salzsäure?",
-    "options": ["Eine stark ätzende Lauge aus Natriumhydroxid, die Fette und Eiweiß löst", "Eine wässrige Lösung von Chlorwasserstoff (HCl) und damit eine starke, ätzende Säure", "Eine wässrige Lösung von Kochsalz (NaCl), die neutral reagiert und Strom leitet", "Eine schwache organische Fruchtsäure, die vor allem in Zitrusfrüchten vorkommt"],
+    "options": [
+      "Eine stark ätzende Lauge aus Natriumhydroxid, die Fette und Eiweiß löst",
+      "Eine wässrige Lösung von Chlorwasserstoff (HCl) und damit eine starke, ätzende Säure",
+      "Eine wässrige Lösung von Kochsalz (NaCl), die neutral reagiert und Strom leitet",
+      "Eine schwache organische Fruchtsäure, die vor allem in Zitrusfrüchten vorkommt"
+    ],
     "correct": 1,
-    "explanation": "Salzsäure (HCl gelöst in Wasser): pH≈0. Im Magen als Magensäure (0,1 mol/L) wichtig für Verdauung. Konzentrierte Salzsäure löst unedle Metalle auf und greift Haut an. Vorsicht: nie mischen mit anderen Chemikalien!",
+    "explanation": "Salzsäure (HCl gelöst in Wasser). Der pH-Wert hängt von der Konzentration ab: Eine etwa 1-molare Lösung hat pH≈0, eine zehnfach verdünnte (0,1 mol/L) pH≈1. Im Magen als Magensäure (rund 0,1 mol/L) wichtig für die Verdauung. Konzentrierte Salzsäure löst unedle Metalle auf und greift Haut an. Vorsicht: nie mischen mit anderen Chemikalien!",
     "topic": "Säuren"
   },
   {
     "question": "Was ist Schwefelsäure?",
-    "options": ["Eine schwache organische Fruchtsäure, die dem Obst seinen sauren Geschmack gibt", "Eine sehr starke und korrosive Mineralsäure (H₂SO₄), die in Autobatterien eingesetzt wird", "Eine stark ätzende Lauge, die zur Herstellung von Seife und Reinigern dient", "Eine neutrale Salzlösung, die in der Galvanik als Elektrolyt verwendet wird"],
+    "options": [
+      "Eine schwache organische Fruchtsäure, die dem Obst seinen sauren Geschmack gibt",
+      "Eine sehr starke und korrosive Mineralsäure (H₂SO₄), die in Autobatterien eingesetzt wird",
+      "Eine stark ätzende Lauge, die zur Herstellung von Seife und Reinigern dient",
+      "Eine neutrale Salzlösung, die in der Galvanik als Elektrolyt verwendet wird"
+    ],
     "correct": 1,
     "explanation": "Schwefelsäure (H₂SO₄): eine der meistproduzierten Chemikalien der Welt. Verdünnte H₂SO₄ in Bleiakkumulatoren (Autobatterien). Konzentrierte H₂SO₄ ist stark entwässernd und korrosiv – gefährlich!",
     "topic": "Säuren"
   },
   {
     "question": "Welche Säure steckt in Zitrusfrüchten?",
-    "options": ["Salzsäure (HCl)", "Schwefelsäure (H₂SO₄)", "Essigsäure (CH₃COOH)", "Zitronensäure (C₆H₈O₇)"],
+    "options": [
+      "Salzsäure (HCl)",
+      "Schwefelsäure (H₂SO₄)",
+      "Essigsäure (CH₃COOH)",
+      "Zitronensäure (C₆H₈O₇)"
+    ],
     "correct": 3,
     "explanation": "Zitronensäure (C₆H₈O₇) ist in Zitronen, Orangen, Grapefruit und anderen Zitrusfrüchten enthalten. pH≈2,2 im Zitronensaft. Auch als Lebensmittelzusatz E330 und zum Entkalken verwendet.",
     "topic": "Säuren im Alltag"
   },
   {
     "question": "Was ist Essigsäure?",
-    "options": ["Eine starke Mineralsäure, die in Wasser vollständig in Ionen zerfällt", "Ein Haushaltsreiniger auf Laugenbasis, der Fette und Eiweiß verseift", "Die saure Komponente des Essigs (CH₃COOH), eine schwache organische Säure", "Eine organische Säure, die vor allem in Zitrusfrüchten und Beeren vorkommt"],
+    "options": [
+      "Eine starke Mineralsäure, die in Wasser vollständig in Ionen zerfällt",
+      "Ein Haushaltsreiniger auf Laugenbasis, der Fette und Eiweiß verseift",
+      "Die saure Komponente des Essigs (CH₃COOH), eine schwache organische Säure",
+      "Eine organische Säure, die vor allem in Zitrusfrüchten und Beeren vorkommt"
+    ],
     "correct": 2,
     "explanation": "Essigsäure (Ethansäure): im Haushaltsessig 5 % Konzentration. Riecht stechend. Schwache Säure (nicht vollständig dissoziiert). In der Lebensmittelindustrie (E260), zum Reinigen und als Konservierungsmittel.",
     "topic": "Säuren im Alltag"
   },
   {
     "question": "Was sind Laugen (Basen)?",
-    "options": ["Stoffe, die in Wasser H⁺-Ionen abgeben und einen pH-Wert unter 7 erzeugen", "Stoffe, die in Wasser OH⁻-Ionen abgeben und einen pH-Wert über 7 erzeugen", "Stoffe, die in Wasser keinerlei Ionen bilden und den pH-Wert bei 7 belassen", "Stoffe, die in Wasser als Salze zerfallen und dabei nur Metallionen freisetzen"],
+    "options": [
+      "Stoffe, die in Wasser H⁺-Ionen abgeben und einen pH-Wert unter 7 erzeugen",
+      "Stoffe, die in Wasser OH⁻-Ionen abgeben und einen pH-Wert über 7 erzeugen",
+      "Stoffe, die in Wasser keinerlei Ionen bilden und den pH-Wert bei 7 belassen",
+      "Stoffe, die in Wasser als Salze zerfallen und dabei nur Metallionen freisetzen"
+    ],
     "correct": 1,
-    "explanation": "Laugen/Basen nehmen H⁺ auf bzw. geben OH⁻ ab. Starke Laugen: Natronlauge (NaOH), Kalilauge (KOH). Schwache Basen: Ammoniaklösung (NH₃). Laugen wirken seifig und greifen Fette an (verseifend).",
+    "explanation": "Basen nehmen H⁺ auf bzw. liefern in Wasser OH⁻-Ionen. Genau genommen ist die Base der Stoff selbst (z.B. Natriumhydroxid NaOH), die Lauge seine wässrige Lösung. Starke Laugen: Natronlauge (Lösung von NaOH), Kalilauge (Lösung von KOH). Schwache Base: Ammoniak (NH₃) in Wasser. Laugen wirken seifig und greifen Fette an (verseifend).",
     "topic": "Laugen"
   },
   {
     "question": "Was ist Natronlauge?",
-    "options": ["Eine starke Säure, die aus Chlorwasserstoff in Wasser gebildet wird", "Eine wässrige Lösung von Natriumhydroxid (NaOH) und damit eine starke Lauge", "Eine wässrige Lösung von Kochsalz (NaCl), die neutral reagiert und Strom leitet", "Ein Backtriebmittel aus Natriumhydrogencarbonat, das beim Erhitzen CO₂ abgibt"],
+    "options": [
+      "Eine starke Säure, die aus Chlorwasserstoff in Wasser gebildet wird",
+      "Eine wässrige Lösung von Natriumhydroxid (NaOH) und damit eine starke Lauge",
+      "Eine wässrige Lösung von Kochsalz (NaCl), die neutral reagiert und Strom leitet",
+      "Ein Backtriebmittel aus Natriumhydrogencarbonat, das beim Erhitzen CO₂ abgibt"
+    ],
     "correct": 1,
-    "explanation": "Natronlauge (NaOH gelöst): pH≈14, ätzend. Löst Fett und Eiweiß (deshalb in Backofenreinigern). Wird zur Seifenherstellung verwendet (Verseifung von Fetten). Brezellauge macht Brezeln braun und glänzend.",
+    "explanation": "Natronlauge (NaOH in Wasser gelöst): stark ätzend; eine etwa 1-molare Lösung hat pH≈14, verdünntere Lösungen entsprechend weniger (0,1 mol/L → pH≈13). Löst Fett und Eiweiß (deshalb in Backofenreinigern). Wird zur Seifenherstellung verwendet (Verseifung von Fetten). Brezellauge macht Brezeln braun und glänzend.",
     "topic": "Laugen"
   },
   {
     "question": "Was ist Kalkwasser?",
-    "options": ["Hartes Leitungswasser mit gelöstem Calciumhydrogencarbonat, das Kalk ablagert", "Eine klare Lösung von Calciumhydroxid (Ca(OH)₂), die bei CO₂-Kontakt trüb wird", "Mit Limettensaft angesäuertes Wasser, das leicht sauer reagiert und erfrischt", "Destilliertes Wasser ohne gelöste Salze, das kaum elektrischen Strom leitet"],
+    "options": [
+      "Hartes Leitungswasser mit gelöstem Calciumhydrogencarbonat, das Kalk ablagert",
+      "Eine klare Lösung von Calciumhydroxid (Ca(OH)₂), die bei CO₂-Kontakt trüb wird",
+      "Mit Limettensaft angesäuertes Wasser, das leicht sauer reagiert und erfrischt",
+      "Destilliertes Wasser ohne gelöste Salze, das kaum elektrischen Strom leitet"
+    ],
     "correct": 1,
-    "explanation": "Kalkwasser (Ca(OH)₂-Lösung): pH≈12. Nachweis für CO₂: Kalkwasser wird durch CO₂ trüb (→ CaCO₃ fällt aus). 'Man pustet durch Kalkwasser – es wird milchig.' Klassischer Atemtest im Chemieunterricht.",
+    "explanation": "Kalkwasser (gesättigte Ca(OH)₂-Lösung): pH≈12,4. Calciumhydroxid löst sich nur wenig in Wasser. Nachweis für CO₂: Kalkwasser wird durch CO₂ trüb (→ CaCO₃ fällt aus). 'Man pustet durch Kalkwasser – es wird milchig.' Klassischer Atemtest im Chemieunterricht.",
     "topic": "Laugen"
   },
   {
     "question": "Was ist Neutralisation?",
-    "options": ["Das Auflösen eines Salzes in Wasser, wobei die Ionen frei beweglich werden", "Die Reaktion einer Säure mit einer Lauge, bei der Salz und Wasser entstehen", "Das Verdünnen einer Säure mit Wasser, wodurch der pH-Wert langsam ansteigt", "Die Zersetzung eines Salzes beim Erhitzen, wobei ein Gas frei wird"],
+    "options": [
+      "Das Auflösen eines Salzes in Wasser, wobei die Ionen frei beweglich werden",
+      "Die Reaktion einer Säure mit einer Lauge, bei der Salz und Wasser entstehen",
+      "Das Verdünnen einer Säure mit Wasser, wodurch der pH-Wert langsam ansteigt",
+      "Die Zersetzung eines Salzes beim Erhitzen, wobei ein Gas frei wird"
+    ],
     "correct": 1,
-    "explanation": "Neutralisation: Säure + Lauge → Salz + Wasser. Beispiel: HCl + NaOH → NaCl + H₂O. Bei vollständiger Neutralisation pH=7. Reaktion ist exotherm (gibt Wärme ab). Wichtig bei Magenübersäuerung (Antazida).",
+    "explanation": "Neutralisation: Säure + Lauge → Salz + Wasser. Beispiel: HCl + NaOH → NaCl + H₂O. Reagieren eine starke Säure und eine starke Lauge genau vollständig miteinander, liegt der pH-Wert am Ende bei 7. Bei einer schwachen Säure (z.B. Essigsäure) mit starker Lauge ist die Lösung am Äquivalenzpunkt dagegen leicht basisch. Die Reaktion ist exotherm (gibt Wärme ab). Wichtig bei Magenübersäuerung (Antazida).",
     "topic": "Neutralisation"
   },
   {
     "question": "Was entsteht bei der Neutralisation von Salzsäure mit Natronlauge?",
-    "options": ["Schwefelsäure (H₂SO₄) und Wasser", "Kochsalz (Natriumchlorid) und Wasser", "Calciumchlorid (CaCl₂) und Wasser", "Natriumsulfat (Na₂SO₄) und Wasser"],
+    "options": [
+      "Schwefelsäure (H₂SO₄) und Wasser",
+      "Kochsalz (Natriumchlorid) und Wasser",
+      "Calciumchlorid (CaCl₂) und Wasser",
+      "Natriumsulfat (Na₂SO₄) und Wasser"
+    ],
     "correct": 1,
     "explanation": "HCl + NaOH → NaCl + H₂O. NaCl = Natriumchlorid = Kochsalz. Durch Verdampfen des Wassers kann man das entstehende Salz als Feststoff gewinnen. Allgemein: Säure + Base → Salz + Wasser.",
     "topic": "Neutralisation"
   },
   {
     "question": "Was sind Salze in der Chemie?",
-    "options": ["Molekülverbindungen, die durch Elektronenpaarbindungen zusammengehalten werden", "Ionenverbindungen aus positiven Metallionen und negativen Säurerestionen", "Feststoffe, die sich in Wasser lösen und dabei den pH-Wert deutlich absenken", "Verbindungen aus zwei Metallen, die als Legierung ein Mischgitter bilden"],
+    "options": [
+      "Molekülverbindungen, die durch Elektronenpaarbindungen zusammengehalten werden",
+      "Ionenverbindungen aus positiven Metallionen und negativen Säurerestionen",
+      "Feststoffe, die sich in Wasser lösen und dabei den pH-Wert deutlich absenken",
+      "Verbindungen aus zwei Metallen, die als Legierung ein Mischgitter bilden"
+    ],
     "correct": 1,
-    "explanation": "Salze sind Ionenverbindungen: NaCl (Na⁺ + Cl⁻), CaSO₄ (Ca²⁺ + SO₄²⁻), MgCl₂ (Mg²⁺ + 2Cl⁻). Entstehen bei Neutralisation. Viele Salze lösen sich in Wasser (Elektrolyte). Typisch: kristalline Struktur, hohe Schmelzpunkte.",
+    "explanation": "Salze sind Ionenverbindungen: NaCl (Na⁺ + Cl⁻), CaSO₄ (Ca²⁺ + SO₄²⁻), MgCl₂ (Mg²⁺ + 2Cl⁻). Sie entstehen unter anderem bei der Neutralisation, aber auch, wenn ein unedles Metall mit einer Säure reagiert. Viele Salze lösen sich in Wasser (Elektrolyte). Typisch: kristalline Struktur, hohe Schmelzpunkte.",
     "topic": "Salze"
   },
   {
     "question": "Wie heißt das Salz der Salzsäure?",
-    "options": ["Sulfat (SO₄²⁻)", "Carbonat (CO₃²⁻)", "Chlorid (Cl⁻)", "Nitrat (NO₃⁻)"],
+    "options": [
+      "Sulfat (SO₄²⁻)",
+      "Carbonat (CO₃²⁻)",
+      "Chlorid (Cl⁻)",
+      "Nitrat (NO₃⁻)"
+    ],
     "correct": 2,
-    "explanation": "Salzsäure (HCl) bildet Chloride. NaCl = Natriumchlorid, CaCl₂ = Calciumchlorid, MgCl₂ = Magnesiumchlorid. Namensregel: Salz = Metallname + Säurerest + Endung (meist -id, -at, -it).",
+    "explanation": "Salzsäure (HCl) bildet Chloride. NaCl = Natriumchlorid, CaCl₂ = Calciumchlorid, MgCl₂ = Magnesiumchlorid. Namensregel: Salzname = Name des Metalls + Name des Säurerests. Die Endung steckt dabei schon im Namen des Säurerests: Chlorid (von Salzsäure), Sulfat (von Schwefelsäure), Sulfit (von schwefliger Säure), Nitrat (von Salpetersäure), Carbonat (von Kohlensäure).",
     "topic": "Salze"
   },
   {
     "question": "Was sind Ionen?",
-    "options": ["Neutrale Atome, bei denen Protonen- und Elektronenzahl genau gleich sind", "Geladene Teilchen, die durch Abgabe oder Aufnahme von Elektronen entstehen", "Moleküle aus zwei Atomen, die über eine Elektronenpaarbindung verknüpft sind", "Bausteine des Atomkerns, nämlich die Protonen und die Neutronen"],
+    "options": [
+      "Neutrale Atome, bei denen Protonen- und Elektronenzahl genau gleich sind",
+      "Geladene Teilchen, die durch Abgabe oder Aufnahme von Elektronen entstehen",
+      "Moleküle aus zwei Atomen, die über eine Elektronenpaarbindung verknüpft sind",
+      "Bausteine des Atomkerns, nämlich die Protonen und die Neutronen"
+    ],
     "correct": 1,
-    "explanation": "Kationen (+): Atome, die Elektronen abgegeben haben (Na → Na⁺). Anionen (–): Atome, die Elektronen aufgenommen haben (Cl + e⁻ → Cl⁻). Salze bestehen aus Kationen und Anionen, die ein Ionengitter bilden.",
+    "explanation": "Kationen (+): Atome, die Elektronen abgegeben haben (Na → Na⁺). Anionen (–): Atome, die Elektronen aufgenommen haben (Cl + e⁻ → Cl⁻). Auch ganze Atomgruppen können Ionen sein, z.B. das Sulfat-Ion SO₄²⁻ oder das Ammonium-Ion NH₄⁺. Salze bestehen aus Kationen und Anionen, die ein Ionengitter bilden.",
     "topic": "Ionenverbindungen"
   },
   {
     "question": "Was ist Kohlensäure?",
-    "options": ["Eine starke Mineralsäure, die in Wasser vollständig in Ionen zerfällt", "Eine schwache Säure (H₂CO₃), die beim Lösen von CO₂ in Wasser entsteht", "Eine organische Säure, die bei der Vergärung von Zucker gebildet wird", "Eine schwache Lauge, die beim Lösen von Ammoniak in Wasser entsteht"],
+    "options": [
+      "Eine starke Mineralsäure, die in Wasser vollständig in Ionen zerfällt",
+      "Eine schwache Säure (H₂CO₃), die beim Lösen von CO₂ in Wasser entsteht",
+      "Eine organische Säure, die bei der Vergärung von Zucker gebildet wird",
+      "Eine schwache Lauge, die beim Lösen von Ammoniak in Wasser entsteht"
+    ],
     "correct": 1,
-    "explanation": "CO₂ + H₂O ⇌ H₂CO₃ (Kohlensäure). Instabil, zerfällt leicht zurück. pH≈5,6 in Regenwasser (natürlich leicht sauer). Kohlensäure bildet Carbonate (Kalkstein: CaCO₃) und ist verantwortlich für Sprudel in Mineralwasser.",
+    "explanation": "CO₂ + H₂O ⇌ H₂CO₃ (Kohlensäure). Nur ein kleiner Teil des gelösten CO₂ reagiert wirklich zu H₂CO₃; diese ist instabil und zerfällt leicht zurück. pH≈5,6 in Regenwasser (natürlich leicht sauer). Kohlensäure bildet Carbonate (Kalkstein: CaCO₃) und ist verantwortlich für Sprudel in Mineralwasser.",
     "topic": "Säuren im Alltag"
   },
   {
     "question": "Was ist saurer Regen?",
-    "options": ["Regenwasser, das durch gelöste Kohlensäure natürlich bei etwa pH 5,6 liegt", "Regenwasser mit pH unter 5, verursacht durch Schwefeldioxid und Stickoxide", "Destilliertes Regenwasser ohne gelöste Stoffe, das exakt neutral reagiert", "Regenwasser mit hohem Salzgehalt, das aus der Gischt des Meeres stammt"],
+    "options": [
+      "Regenwasser, das durch gelöste Kohlensäure natürlich bei etwa pH 5,6 liegt",
+      "Regenwasser mit pH unter 5, verursacht durch Schwefeldioxid und Stickoxide",
+      "Destilliertes Regenwasser ohne gelöste Stoffe, das exakt neutral reagiert",
+      "Regenwasser mit hohem Salzgehalt, das aus der Gischt des Meeres stammt"
+    ],
     "correct": 1,
-    "explanation": "Saurer Regen: SO₂ und NO₂ (aus Verbrennung fossiler Brennstoffe) reagieren mit Wasser zu Schwefel- und Salpetersäure. pH < 5. Schäden: Waldsterben, Kalksteinkorrosion, Versauerung von Gewässern.",
+    "explanation": "Saurer Regen: SO₂ und Stickoxide entstehen bei der Verbrennung fossiler Brennstoffe. SO₂ bildet mit Wasser zunächst schweflige Säure (H₂SO₃); erst durch Oxidation mit Luftsauerstoff wird daraus Schwefelsäure (H₂SO₄). Aus den Stickoxiden entstehen entsprechend salpetrige Säure (HNO₂) und Salpetersäure (HNO₃). pH < 5. Schäden: Waldsterben, Kalksteinkorrosion, Versauerung von Gewässern.",
     "topic": "Umweltchemie"
   },
   {
     "question": "Was ist der Unterschied zwischen Säure und Säurerest?",
-    "options": ["Der Säurerest ist die vollständige Verbindung, die Säure das abgespaltene H⁺-Ion", "Die Säure ist die vollständige Verbindung (HCl), der Säurerest das Anion (Cl⁻)", "Der Säurerest ist eine eigene Säure, die stärker wirkt als die Ausgangssäure", "Die Säure ist ein Salz in fester Form, der Säurerest die zugehörige Lauge"],
+    "options": [
+      "Der Säurerest ist die vollständige Verbindung, die Säure das abgespaltene H⁺-Ion",
+      "Die Säure ist die vollständige Verbindung (HCl), der Säurerest das Anion (Cl⁻)",
+      "Der Säurerest ist eine eigene Säure, die stärker wirkt als die Ausgangssäure",
+      "Die Säure ist ein Salz in fester Form, der Säurerest die zugehörige Lauge"
+    ],
     "correct": 1,
     "explanation": "HCl → H⁺ + Cl⁻ (Chlorid-Ion = Säurerest). H₂SO₄ → 2 H⁺ + SO₄²⁻ (Sulfat-Ion). Der Säurerest wird Teil des entstehenden Salzes. Nomenklatur: Chlorid, Sulfat, Nitrat, Phosphat, Carbonat.",
     "topic": "Säuren"
   },
   {
     "question": "Was ist Backnatron (Natriumhydrogencarbonat)?",
-    "options": ["Eine starke Säure, die Metalle unter Wasserstoffentwicklung auflöst", "Ein Salz (NaHCO₃), das schwach basisch reagiert und beim Erhitzen CO₂ freisetzt", "Eine ätzende Lauge, die aus Natriumhydroxid und Wasser hergestellt wird", "Ein saurer Reiniger, der Kalkablagerungen unter Aufschäumen ablöst"],
+    "options": [
+      "Eine starke Säure, die Metalle unter Wasserstoffentwicklung auflöst",
+      "Ein Salz (NaHCO₃), das schwach basisch reagiert und beim Erhitzen CO₂ freisetzt",
+      "Eine ätzende Lauge, die aus Natriumhydroxid und Wasser hergestellt wird",
+      "Ein saurer Reiniger, der Kalkablagerungen unter Aufschäumen ablöst"
+    ],
     "correct": 1,
     "explanation": "Backnatron (NaHCO₃, pH≈8,3): Beim Erhitzen oder Kontakt mit Säure → CO₂-Bläschen → Gebäck geht auf. Als Antazidum gegen Sodbrennen. Kein Indikator, sondern ein Salz: Mit Säuren reagiert es unter Bildung von Kohlenstoffdioxid (NaHCO₃ + HCl → NaCl + H₂O + CO₂).",
     "topic": "Salze im Alltag"
   },
   {
     "question": "Welchen pH-Wert hat Magensäure?",
-    "options": ["pH 6 (schwach sauer)", "pH 2 (stark sauer)", "pH 7 (neutral)", "pH 4 (mäßig sauer)"],
+    "options": [
+      "pH 6 (schwach sauer)",
+      "pH 2 (stark sauer)",
+      "pH 7 (neutral)",
+      "pH 4 (mäßig sauer)"
+    ],
     "correct": 1,
     "explanation": "Magensäure hat pH≈1–2 (Salzsäure: HCl). Dieser niedrige pH ist wichtig für Verdauungsenzyme (Pepsin) und tötet Bakterien im Essen ab. Bei Sodbrennen tritt Magensäure in die Speiseröhre zurück – Antazida neutralisieren sie.",
     "topic": "pH-Wert im Alltag"
   },
   {
     "question": "Was ist ein Säure-Base-Indikator?",
-    "options": ["Ein Laborgerät zum genauen Abmessen von Säuren, zum Beispiel eine Bürette", "Ein Farbstoff, der je nach pH-Wert der Lösung eine andere Farbe annimmt", "Ein elektronisches Messgerät, das den pH-Wert über eine Elektrode bestimmt", "Eine neutrale Substanz, die den pH-Wert einer Lösung dauerhaft auf 7 einstellt"],
+    "options": [
+      "Ein Laborgerät zum genauen Abmessen von Säuren, zum Beispiel eine Bürette",
+      "Ein Farbstoff, der je nach pH-Wert der Lösung eine andere Farbe annimmt",
+      "Ein elektronisches Messgerät, das den pH-Wert über eine Elektrode bestimmt",
+      "Eine neutrale Substanz, die den pH-Wert einer Lösung dauerhaft auf 7 einstellt"
+    ],
     "correct": 1,
     "explanation": "Indikatoren: Lackmus, Phenolphthalein, Methylorange, Bromthymolblau, Universalindikator. Jeder Indikator hat seinen Umschlagbereich. Universalindikator zeigt durch verschiedene Farben den genauen pH-Wert an.",
     "topic": "Indikatoren"
   },
   {
     "question": "Was sind Mineralsäuren?",
-    "options": ["Organische Säuren aus Früchten, zum Beispiel Zitronen- und Apfelsäure", "Anorganische Säuren wie Salzsäure, Schwefelsäure und Salpetersäure", "Säuren, die dem Mineralwasser zugesetzt werden und es sprudeln lassen", "Schwache Carbonsäuren, die bei der Vergärung von Zucker gebildet werden"],
+    "options": [
+      "Organische Säuren aus Früchten, zum Beispiel Zitronen- und Apfelsäure",
+      "Anorganische Säuren wie Salzsäure, Schwefelsäure und Salpetersäure",
+      "Säuren, die dem Mineralwasser zugesetzt werden und es sprudeln lassen",
+      "Schwache Carbonsäuren, die bei der Vergärung von Zucker gebildet werden"
+    ],
     "correct": 1,
-    "explanation": "Mineralsäuren (anorganische Säuren): Viele von ihnen sind starke Säuren und dissoziieren in Wasser vollständig (HCl, H₂SO₄, HNO₃). Im Vergleich: Essigsäure, Zitronensäure, Milchsäure sind organische Säuren (Carbonsäuren) – schwächer und natürlich vorkommend.",
+    "explanation": "Mineralsäuren (anorganische Säuren): Viele von ihnen sind starke Säuren und dissoziieren in Wasser vollständig (HCl, H₂SO₄, HNO₃). Im Vergleich: Essigsäure, Zitronensäure, Milchsäure sind organische Säuren (Carbonsäuren) – meist schwächer und natürlich vorkommend. Umgekehrt gibt es auch schwache Mineralsäuren, etwa die Kohlensäure (H₂CO₃).",
     "topic": "Säuren"
   },
   {
     "question": "Was ist Kalk (Calciumcarbonat)?",
-    "options": ["Eine starke Säure, die Marmor und andere Gesteine rasch angreift", "Eine schwache Lauge, die in Wasser gelöst Calciumhydroxid bildet", "Ein Salz (CaCO₃), das als Kalkstein, Marmor und Kreide vorkommt", "Ein leichtes Metall, das an der Luft schnell eine Oxidschicht bildet"],
+    "options": [
+      "Eine starke Säure, die Marmor und andere Gesteine rasch angreift",
+      "Eine schwache Lauge, die in Wasser gelöst Calciumhydroxid bildet",
+      "Ein Salz (CaCO₃), das als Kalkstein, Marmor und Kreide vorkommt",
+      "Ein leichtes Metall, das an der Luft schnell eine Oxidschicht bildet"
+    ],
     "correct": 2,
-    "explanation": "Calciumcarbonat (CaCO₃): löslich in Säuren (CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂). Natürlich als Kalkstein, Marmor, Kreide, Muscheln. Kalkablagerungen in Wasserkocher durch hartes Wasser. Entkalken mit Säure (Essig, Zitronensäure).",
+    "explanation": "Calciumcarbonat (CaCO₃): in reinem Wasser praktisch unlöslich, mit Säuren reagiert es jedoch und geht dabei in Lösung (CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂). Natürlich als Kalkstein, Marmor, Kreide, Muscheln. Kalkablagerungen in Wasserkocher durch hartes Wasser. Entkalken mit Säure (Essig, Zitronensäure).",
     "topic": "Salze im Alltag"
   },
   {
     "question": "Was passiert, wenn man Kalk mit Salzsäure behandelt?",
-    "options": ["Es bildet sich eine Lauge, der pH-Wert der Lösung steigt über 7", "Es entstehen Kohlendioxid (Aufschäumen), Wasser und Calciumchlorid", "Es entsteht Sauerstoff, der Feststoff bleibt dabei unverändert liegen", "Es entsteht Kochsalz, das nach dem Verdampfen als Kristall zurückbleibt"],
+    "options": [
+      "Es bildet sich eine Lauge, der pH-Wert der Lösung steigt über 7",
+      "Es entstehen Kohlendioxid (Aufschäumen), Wasser und Calciumchlorid",
+      "Es entsteht Sauerstoff, der Feststoff bleibt dabei unverändert liegen",
+      "Es entsteht Kochsalz, das nach dem Verdampfen als Kristall zurückbleibt"
+    ],
     "correct": 1,
     "explanation": "CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑. Das Aufschäumen beim Entkalken ist genau diese Reaktion: Kalk (Calciumcarbonat) + Essigsäure (oder Zitronensäure) → CO₂-Bläschen + Calciumsalz + Wasser.",
     "topic": "Säuren"
   },
   {
     "question": "Was ist Milchsäure?",
-    "options": ["Eine Säure, die in frischer Kuhmilch von Natur aus enthalten ist", "Eine organische Säure (C₃H₆O₃), die bei der Vergärung von Zucker entsteht", "Eine starke Mineralsäure, die technisch aus Schwefel gewonnen wird", "Eine schwache Lauge, die Milchprodukten ihren typischen Geschmack gibt"],
+    "options": [
+      "Eine Säure, die in frischer Kuhmilch von Natur aus enthalten ist",
+      "Eine organische Säure (C₃H₆O₃), die bei der Vergärung von Zucker entsteht",
+      "Eine starke Mineralsäure, die technisch aus Schwefel gewonnen wird",
+      "Eine schwache Lauge, die Milchprodukten ihren typischen Geschmack gibt"
+    ],
     "correct": 1,
-    "explanation": "Milchsäure (Lactat) entsteht beim anaeroben Abbau von Glucose (Milchsäuregärung). Verantwortlich für Joghurt-, Sauerkraut- und Sauerteig-Aroma. Im Körper bei intensivem Sport (Muskelkater-Zusammenhang, vereinfacht).",
+    "explanation": "Milchsäure (C₃H₆O₃) entsteht beim anaeroben Abbau von Glucose (Milchsäuregärung). Gibt sie ihr H⁺ ab, entsteht daraus das Säurerest-Ion Lactat. Lactat ist also das Anion bzw. das Salz der Milchsäure – nicht die Säure selbst. Verantwortlich für Joghurt-, Sauerkraut- und Sauerteig-Aroma. Im Körper bei intensivem Sport (Muskelkater-Zusammenhang, vereinfacht).",
     "topic": "Säuren im Alltag"
   },
   {
     "question": "Was ist pH-Neutralität?",
-    "options": ["pH 0 – der Punkt, an dem eine Lösung überhaupt keine Ionen mehr enthält", "pH 14 – der Punkt, an dem sich Säure und Lauge genau gegenseitig ausgleichen", "pH 7 – weder sauer noch basisch, wie bei reinem Wasser bei 25 °C", "pH 5 bis 9 – der Bereich, in dem Indikatoren ihre Farbe nicht verändern"],
+    "options": [
+      "pH 0 – der Punkt, an dem eine Lösung überhaupt keine Ionen mehr enthält",
+      "pH 14 – der Punkt, an dem sich Säure und Lauge genau gegenseitig ausgleichen",
+      "pH 7 – weder sauer noch basisch, wie bei reinem Wasser bei 25 °C",
+      "pH 5 bis 9 – der Bereich, in dem Indikatoren ihre Farbe nicht verändern"
+    ],
     "correct": 2,
     "explanation": "Neutrales Wasser: pH = 7 (bei 25 °C). Gleich viele H⁺ und OH⁻-Ionen. Reines Wasser: pH 7. Viele Körperflüssigkeiten haben pH nahe 7 (Blut: pH 7,4). Abweichungen können gefährlich sein.",
     "topic": "pH-Wert"
   },
   {
     "question": "Was ist Gips (Calciumsulfat)?",
-    "options": ["Eine starke Säure, die Wasser entzieht und Baustoffe stark angreift", "Ein Salz (CaSO₄), das aus Schwefelsäure und Calciumverbindungen entsteht", "Eine Lauge, die beim Löschen von Branntkalk mit Wasser gebildet wird", "Ein Metall, das in Legierungen für tragende Bauteile verwendet wird"],
+    "options": [
+      "Eine starke Säure, die Wasser entzieht und Baustoffe stark angreift",
+      "Ein Salz (CaSO₄), das aus Schwefelsäure und Calciumverbindungen entsteht",
+      "Eine Lauge, die beim Löschen von Branntkalk mit Wasser gebildet wird",
+      "Ein Metall, das in Legierungen für tragende Bauteile verwendet wird"
+    ],
     "correct": 1,
-    "explanation": "Gips = Calciumsulfat (CaSO₄·2H₂O). Entsteht bei der Neutralisation von H₂SO₄ mit Kalk. Vielseitig: Baubranche (Putz, Trockenbauplatte), Heilung von Knochenbrüchen (Gipsverband), in der Lebensmittelindustrie.",
+    "explanation": "Gips = Calciumsulfat (CaSO₄·2H₂O). Entsteht z.B., wenn Schwefelsäure mit Kalk (CaCO₃) oder mit Calciumhydroxid reagiert – so gewinnt man ihn auch bei der Rauchgasentschwefelung. Gips kommt außerdem natürlich als Mineral vor. Vielseitig: Baubranche (Putz, Trockenbauplatte), Heilung von Knochenbrüchen (Gipsverband), in der Lebensmittelindustrie.",
     "topic": "Salze im Alltag"
   },
   {
     "question": "Welche Maßnahme hilft bei Verätzung durch Säure auf der Haut?",
-    "options": ["Die betroffene Stelle mit Fett oder Salbe abdecken und dann verbinden", "Die Säure auf der Haut sofort mit verdünnter Natronlauge neutralisieren", "Die Stelle sofort mit viel Wasser mindestens 10 Minuten lang abspülen", "Die Stelle mit Haushaltsessig abtupfen und anschließend trocken reiben"],
+    "options": [
+      "Die betroffene Stelle mit Fett oder Salbe abdecken und dann verbinden",
+      "Die Säure auf der Haut sofort mit verdünnter Natronlauge neutralisieren",
+      "Die Stelle sofort mit viel Wasser mindestens 10 Minuten lang abspülen",
+      "Die Stelle mit Haushaltsessig abtupfen und anschließend trocken reiben"
+    ],
     "correct": 2,
     "explanation": "Erste Hilfe bei Verätzung: Sofort mit viel Wasser abspülen (mindestens 10–15 Minuten). NICHT versuchen zu neutralisieren (Gefahr der Exothermie). Dann Arzt/Notruf. Bei Augenverätzung: Auge weit öffnen und spülen.",
     "topic": "Sicherheit im Labor"
   },
   {
     "question": "Was ist die Ionentheorie der Säuren und Basen?",
-    "options": ["Säuren und Laugen leiten in wässriger Lösung keinen elektrischen Strom", "Nach Arrhenius geben Säuren in Wasser H⁺-Ionen ab, Basen dagegen OH⁻-Ionen", "Säuren liegen immer gasförmig vor und werden erst im Wasser wirksam", "Basen enthalten stets Calcium als zentrales Metallion in ihrem Gitter"],
+    "options": [
+      "Säuren und Laugen leiten in wässriger Lösung keinen elektrischen Strom",
+      "Nach Arrhenius geben Säuren in Wasser H⁺-Ionen ab, Basen dagegen OH⁻-Ionen",
+      "Säuren liegen immer gasförmig vor und werden erst im Wasser wirksam",
+      "Basen enthalten stets Calcium als zentrales Metallion in ihrem Gitter"
+    ],
     "correct": 1,
     "explanation": "Arrhenius-Theorie (einfachste): Säure gibt H⁺ ab, Base gibt OH⁻ ab. Brønsted-Lowry (erweitert): Säure gibt Proton (H⁺) ab, Base nimmt Proton auf. Die Brønsted-Definition erklärt auch Reaktionen ohne Wasser.",
     "topic": "Säuren"
   },
   {
     "question": "Was ist eine Pufferreaktion?",
-    "options": ["Eine Reaktion, die pH-Änderungen abfängt und den pH-Wert stabil hält", "Eine Reaktion, bei der besonders große Mengen Wärme frei werden", "Eine Reaktion, die explosionsartig und unter starker Gasbildung abläuft", "Eine Reaktion, die im Gleichgewicht vollständig zum Stillstand kommt"],
+    "options": [
+      "Eine Reaktion, die pH-Änderungen abfängt und den pH-Wert stabil hält",
+      "Eine Reaktion, bei der besonders große Mengen Wärme frei werden",
+      "Eine Reaktion, die explosionsartig und unter starker Gasbildung abläuft",
+      "Eine Reaktion, die im Gleichgewicht vollständig zum Stillstand kommt"
+    ],
     "correct": 0,
     "explanation": "Puffer halten den pH-Wert stabil (z.B. Blut: pH 7,4 ± 0,05 – Veränderungen wären lebensbedrohlich). Puffersystem: schwache Säure + ihr Salz (z.B. Essigsäure + Natriumacetat). Wichtig in Biologie und Medizin.",
     "topic": "pH-Wert"
   },
   {
     "question": "Was ist Kochsalz (Natriumchlorid, NaCl)?",
-    "options": ["Eine starke Säure, die unedle Metalle unter Gasentwicklung angreift", "Eine ätzende Lauge, die zur Herstellung von Seife verwendet wird", "Ein Salz aus Na⁺- und Cl⁻-Ionen, gewonnen aus Steinsalz oder Meerwasser", "Ein Oxid, das beim Verbrennen von Natrium an der Luft entsteht"],
+    "options": [
+      "Eine starke Säure, die unedle Metalle unter Gasentwicklung angreift",
+      "Eine ätzende Lauge, die zur Herstellung von Seife verwendet wird",
+      "Ein Salz aus Na⁺- und Cl⁻-Ionen, gewonnen aus Steinsalz oder Meerwasser",
+      "Ein Oxid, das beim Verbrennen von Natrium an der Luft entsteht"
+    ],
     "correct": 2,
     "explanation": "NaCl: lebenswichtiges Salz (Elektrolyt für Nerven/Muskeln). Gewonnen: Bergbau (Steinsalz), Meerwasserverdunstung (Meersalz), Saline. Weltproduktion: ca. 300 Mio. Tonnen/Jahr. Verwendung: Kochen, Konservieren, Chemieproduktion.",
     "topic": "Salze im Alltag"
   },
   {
     "question": "Was ist der Unterschied zwischen starken und schwachen Säuren?",
-    "options": ["Starke Säuren sind grundsätzlich höher konzentriert als schwache Säuren", "Starke Säuren dissoziieren in Wasser vollständig, schwache nur teilweise", "Schwache Säuren greifen Haut, Metalle und Gestein grundsätzlich nicht an", "Starke Säuren enthalten mehrere H-Atome, schwache immer nur ein einziges"],
+    "options": [
+      "Starke Säuren sind grundsätzlich höher konzentriert als schwache Säuren",
+      "Starke Säuren dissoziieren in Wasser vollständig, schwache nur teilweise",
+      "Schwache Säuren greifen Haut, Metalle und Gestein grundsätzlich nicht an",
+      "Starke Säuren enthalten mehrere H-Atome, schwache immer nur ein einziges"
+    ],
     "correct": 1,
     "explanation": "Starke Säuren (vollständige Dissoziation): HCl, H₂SO₄, HNO₃ → niedriger pH schon bei geringer Konzentration. Schwache Säuren (teilweise Dissoziation): CH₃COOH, H₂CO₃, Zitronensäure → höherer pH bei gleicher Konzentration.",
     "topic": "Säuren"
   },
   {
     "question": "Was ist Ammoniak?",
-    "options": ["Eine starke Säure, die in wässriger Lösung viele H⁺-Ionen abgibt", "Ein Salz, das aus Ammonium-Ionen und Chlorid-Ionen aufgebaut ist", "Eine flüchtige Base (NH₃), die in Wasser Ammonium- und OH⁻-Ionen bildet", "Ein Metall, das mit Wasser unter Wasserstoffbildung heftig reagiert"],
+    "options": [
+      "Eine starke Säure, die in wässriger Lösung viele H⁺-Ionen abgibt",
+      "Ein Salz, das aus Ammonium-Ionen und Chlorid-Ionen aufgebaut ist",
+      "Eine flüchtige Base (NH₃), die in Wasser Ammonium- und OH⁻-Ionen bildet",
+      "Ein Metall, das mit Wasser unter Wasserstoffbildung heftig reagiert"
+    ],
     "correct": 2,
     "explanation": "Ammoniak (NH₃): stechend riechend, in Wasser löslich → NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ (schwache Base). Wichtig für Düngemittelproduktion (Haber-Bosch-Verfahren), Haushaltsreiniger. Giftig in hoher Konzentration.",
     "topic": "Laugen"

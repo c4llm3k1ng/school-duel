@@ -478,5 +478,197 @@
     "correct": 1,
     "explanation": "Parallele Geraden: ∥. Kein Schnittpunkt. Im Koordinatensystem: gleiche Steigung m. g: y=2x+1 ∥ h: y=2x-3 (gleiche Steigung 2, verschiedene Achsenabschnitte). Senkrecht: Steigungen m₁×m₂=-1.",
     "topic": "Geometrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Summe der Innenwinkel beträgt in jedem Dreieck 180 Grad. 360 Grad ist die Innenwinkelsumme im Viereck, 90 Grad die Größe eines einzelnen rechten Winkels.",
+    "options": [
+      "90 Grad",
+      "180 Grad",
+      "270 Grad",
+      "360 Grad"
+    ],
+    "question": "Wie groß ist die Summe der Innenwinkel in jedem Dreieck?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Im Quadrat sind die Diagonalen gleich lang (wie im Rechteck) und stehen zusätzlich senkrecht aufeinander (wie in der Raute). Nur das Quadrat vereint beide Eigenschaften. Im allgemeinen Parallelogramm halbieren sich die Diagonalen zwar, sind aber unterschiedlich lang.",
+    "options": [
+      "Seine Diagonalen sind gleich lang, stehen aber nicht senkrecht aufeinander.",
+      "Seine Diagonalen sind gleich lang und stehen senkrecht aufeinander.",
+      "Seine Diagonalen sind unterschiedlich lang und stehen senkrecht aufeinander.",
+      "Seine Diagonalen sind unterschiedlich lang und halbieren sich gegenseitig nicht."
+    ],
+    "question": "Welche Aussage über die Diagonalen trifft immer auf ein Quadrat zu?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der Umfang eines Rechtecks ist U = 2 · (Länge + Breite) = 2 · (50 m + 30 m) = 160 m. 80 m ist nur die Summe zweier benachbarter Seiten, 130 m entsteht, wenn man eine Seite vergisst, 200 m, wenn man alle vier Seiten mit 50 m rechnet.",
+    "options": [
+      "80 Meter",
+      "160 Meter",
+      "130 Meter",
+      "200 Meter"
+    ],
+    "question": "Ein rechteckiges Spielfeld ist 50 Meter lang und 30 Meter breit. Welchen Umfang hat das Spielfeld?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 2,
+    "explanation": "Der Flächeninhalt eines Parallelogramms ist A = Grundseite · zugehörige Höhe = 12 cm · 7 cm = 84 cm². 19 cm² wäre die Summe, 42 cm² die halbe Fläche (Dreiecksformel), 168 cm² das Doppelte.",
+    "options": [
+      "19 cm²",
+      "42 cm²",
+      "84 cm²",
+      "168 cm²"
+    ],
+    "question": "Ein Parallelogramm hat eine Grundseite von 12 cm und eine zugehörige Höhe von 7 cm. Welchen Flächeninhalt hat es?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 3,
+    "explanation": "Das Volumen eines Quaders ist V = Länge · Breite · Höhe = 10 m · 5 m · 2 m = 100 m³. 17 m³ wäre die Summe der Kantenlängen, 50 m³ die Grundfläche ohne Höhe, 70 m³ eine Teilrechnung.",
+    "options": [
+      "17 m³",
+      "50 m³",
+      "70 m³",
+      "100 m³"
+    ],
+    "question": "Ein quaderförmiger Pool ist 10 Meter lang, 5 Meter breit und 2 Meter tief. Wie viel Wasser (in Kubikmetern) fasst er maximal?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ein Rechteck, das kein Quadrat ist, hat genau zwei Symmetrieachsen: die beiden Mittelsenkrechten der Seiten. Die Diagonalen sind hier keine Symmetrieachsen. Erst das Quadrat besitzt vier Symmetrieachsen.",
+    "options": [
+      "Eine",
+      "Zwei",
+      "Drei",
+      "Vier"
+    ],
+    "question": "Ein Rechteck, das kein Quadrat ist, besitzt wie viele Symmetrieachsen?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der Kreisumfang ist U = Durchmesser · Pi = 1,20 m · 3,14 = 3,768 m, gerundet 3,77 m. 1,88 m entsteht beim Rechnen mit dem Radius, 7,54 m beim doppelten Ansatz U = 2 · d · Pi.",
+    "options": [
+      "ca. 1,88 m",
+      "ca. 3,77 m",
+      "ca. 5,65 m",
+      "ca. 7,54 m"
+    ],
+    "question": "Ein runder Tisch hat einen Durchmesser von 1,20 Metern. Wie lang ist sein Umfang, auf zwei Dezimalstellen gerundet? Nutze den Wert Pi ≈ 3,14.",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 2,
+    "explanation": "Gesucht ist die Oberfläche des Quaders: O = 2 · (20·10 + 20·5 + 10·5) cm² = 2 · (200 + 100 + 50) cm² = 700 cm². 350 cm² erhält man, wenn man das Verdoppeln vergisst, 1000 cm² ist der Zahlenwert des Volumens.",
+    "options": [
+      "350 cm²",
+      "500 cm²",
+      "700 cm²",
+      "1000 cm²"
+    ],
+    "question": "Ein Geschenkpaket hat die Form eines Quaders mit den Kantenlängen 20 cm, 10 cm und 5 cm. Wie viel Geschenkpapier wird mindestens benötigt, um es vollständig zu bekleben (ohne Überlappung)?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 2,
+    "explanation": "Ein Winkel von genau 90 Grad heißt rechter Winkel. Spitze Winkel sind kleiner als 90 Grad, stumpfe liegen zwischen 90 und 180 Grad, ein gestreckter Winkel misst genau 180 Grad.",
+    "options": [
+      "Spitzer Winkel",
+      "Stumpfer Winkel",
+      "Rechter Winkel",
+      "Gestreckter Winkel"
+    ],
+    "question": "Wie nennt man einen Winkel, der genau 90 Grad misst?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Innenwinkelsumme im Dreieck beträgt 180 Grad. Der dritte Winkel ist also 180 Grad − 55 Grad − 65 Grad = 60 Grad. 120 Grad ist nur die Summe der beiden bekannten Winkel.",
+    "options": [
+      "50 Grad",
+      "60 Grad",
+      "70 Grad",
+      "120 Grad"
+    ],
+    "question": "In einem Dreieck sind zwei Innenwinkel 55 Grad und 65 Grad groß. Wie groß ist der dritte Innenwinkel?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das Quadrat erfüllt beide Bedingungen: vier gleich lange Seiten und vier rechte Winkel. Eine Raute hat vier gleich lange Seiten, aber nicht zwingend rechte Winkel. Ein Rechteck hat vier rechte Winkel, aber nicht zwingend gleich lange Seiten. Beim Parallelogramm trifft in der Regel keines von beidem zu.",
+    "options": [
+      "Raute",
+      "Rechteck",
+      "Quadrat",
+      "Parallelogramm"
+    ],
+    "question": "Welches Viereck hat vier gleich lange Seiten und vier rechte Winkel?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der Radius reicht vom Mittelpunkt bis zur Kreislinie, der Durchmesser verläuft durch den Mittelpunkt von Kreislinie zu Kreislinie. Deshalb gilt d = 2 · r. Der Umfang ist dagegen etwa dreimal so lang wie der Durchmesser.",
+    "options": [
+      "Mittelpunkt",
+      "Radius",
+      "Umfang",
+      "Kreisbogen"
+    ],
+    "question": "Der Durchmesser eines Kreises ist immer doppelt so lang wie sein...",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "An geschnittenen Parallelen sind Wechselwinkel gleich groß, also ebenfalls 70 Grad. 110 Grad wäre der Nebenwinkel (180 Grad − 70 Grad), 20 Grad die Ergänzung zu 90 Grad.",
+    "options": [
+      "20 Grad",
+      "70 Grad",
+      "110 Grad",
+      "140 Grad"
+    ],
+    "question": "Zwei parallele Geraden werden von einer dritten Geraden geschnitten. Einer der entstehenden Winkel misst 70 Grad. Wie groß ist der zugehörige Wechselwinkel?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das Volumen eines Quaders ist V = Länge · Breite · Höhe = 6 cm · 4 cm · 2 cm = 48 cm³. 12 cm³ wäre die Summe der drei Kantenlängen, 24 cm³ die Grundfläche ohne Höhe.",
+    "options": [
+      "12 cm³",
+      "24 cm³",
+      "48 cm³",
+      "64 cm³"
+    ],
+    "question": "Ein Quader hat eine Länge von 6 cm, eine Breite von 4 cm und eine Höhe von 2 cm. Welches Volumen hat dieser Quader?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ein gleichschenkliges Dreieck hat mindestens eine Symmetrieachse: die Mittelsenkrechte der Grundseite, die durch die Spitze verläuft. Nur im Sonderfall des gleichseitigen Dreiecks sind es drei.",
+    "options": [
+      "Keine",
+      "Eine",
+      "Zwei",
+      "Drei"
+    ],
+    "question": "Wie viele Symmetrieachsen hat ein gleichschenkliges Dreieck mindestens?",
+    "topic": "Geometrie"
+  },
+  {
+    "correct": 0,
+    "explanation": "Es gilt U = 2 · (Länge + Breite), also 2 · (8 cm + b) = 24 cm. Daraus folgt 8 cm + b = 12 cm und b = 4 cm. 16 cm entsteht, wenn man 24 cm − 8 cm rechnet und das Halbieren vergisst.",
+    "options": [
+      "4 cm",
+      "6 cm",
+      "8 cm",
+      "16 cm"
+    ],
+    "question": "Ein Rechteck hat einen Umfang von 24 cm. Eine seiner Seiten ist 8 cm lang. Wie lang ist die andere Seite?",
+    "topic": "Geometrie"
   }
 ]

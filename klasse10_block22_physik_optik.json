@@ -20,7 +20,7 @@
       "Der Ausfallswinkel ist immer doppelt so groß wie der Einfallswinkel zum Lot"
     ],
     "correct": 1,
-    "explanation": "Reflexionsgesetz: alpha₁ = alpha₂ (Einfallswinkel = Ausfallswinkel). Beide Winkel werden vom Einfallslot gemessen. Anwendung: ebener Spiegel, Hohlspiegel, Retroreflektoren. Spiegelbild: seitenverkehrt, gleich groß.",
+    "explanation": "Reflexionsgesetz: alpha₁ = alpha₂ (Einfallswinkel = Ausfallswinkel). Beide Winkel werden vom Einfallslot gemessen, einfallender und reflektierter Strahl liegen mit dem Lot in einer Ebene. Anwendung: ebener Spiegel, Hohlspiegel, Retroreflektoren. Spiegelbild: gleich groß, virtuell, ebenso weit hinter dem Spiegel. Man nennt es 'seitenverkehrt' – genau genommen vertauscht der Spiegel aber nicht links und rechts, sondern vorne und hinten (die Tiefenrichtung).",
     "topic": "Optik"
   },
   {
@@ -32,7 +32,7 @@
       "Ablenkung des Lichts in alle Raumrichtungen an feinen Teilchen in einem Medium"
     ],
     "correct": 1,
-    "explanation": "Brechung: Richtungsänderung durch Geschwindigkeitsänderung. Dichteres Medium: Licht langsamer → bricht zum Lot. Dünneres Medium: Licht schneller → bricht vom Lot weg. Beispiel: Löffel im Wasserglas scheint gebrochen.",
+    "explanation": "Brechung: Richtungsänderung durch Geschwindigkeitsänderung. Sie tritt nur bei schrägem Einfall auf – trifft Licht senkrecht auf die Grenzfläche, ändert sich nur die Geschwindigkeit, nicht die Richtung. Optisch dichteres Medium (größeres n): Licht langsamer → bricht zum Lot. Optisch dünneres Medium: Licht schneller → bricht vom Lot weg. 'Optisch dichter' meint dabei das größere n, nicht die Massendichte. Beispiel: Löffel im Wasserglas scheint geknickt.",
     "topic": "Optik"
   },
   {
@@ -44,7 +44,7 @@
       "Der Abstand zweier benachbarter Wellenberge des Lichts im betreffenden Medium"
     ],
     "correct": 1,
-    "explanation": "n = c/v. Größeres n → langsameres Licht, stärkere Brechung. Luft: n ≈ 1 (rund 1,0003). Wasser: 1,33. Glas: 1,4-1,9. Diamant: 2,42 (daher Brillanz). Snellius: n₁·sin(alpha₁) = n₂·sin(alpha₂).",
+    "explanation": "n = c/v. Größeres n → langsameres Licht, stärkere Brechung. Luft: n ≈ 1 (rund 1,0003). Wasser: 1,33. Glas: 1,4-1,9. Diamant: 2,42 (daher Brillanz). Diese Werte gelten für gelbes Licht: n hängt leicht von der Wellenlänge ab (Dispersion) und zusätzlich von Temperatur und Druck. Snellius: n₁·sin(alpha₁) = n₂·sin(alpha₂).",
     "topic": "Optik"
   },
   {
@@ -74,13 +74,13 @@
   {
     "question": "Was ist die Lichtgeschwindigkeit?",
     "options": [
-      "Rund 300.000 km/s im Vakuum, die größte in der Natur erreichbare Geschwindigkeit",
+      "Rund 300.000 km/s im Vakuum, Höchstgrenze für Energie- und Informationsübertragung",
       "Rund 3.000 m/s im Vakuum, deutlich schneller als die Ausbreitung von Schall in Luft",
       "Rund 30.000 km/s im Vakuum, unabhängig vom später durchlaufenen Medium",
       "Rund 3.000.000 km/s im Vakuum, in Glas und Wasser nur geringfügig kleiner"
     ],
     "correct": 0,
-    "explanation": "c = 3 × 10⁸ m/s (im Vakuum). Im Medium: v = c/n (langsamer). Licht von der Sonne: ca. 8 Minuten. Lichtjahr: Strecke, die Licht in einem Jahr zurücklegt (ca. 9,46 × 10¹² km). Einsteins E = mc².",
+    "explanation": "Im Vakuum ist c = 299.792.458 m/s exakt festgelegt (dieser Wert definiert seit 1983 das Meter); zum Rechnen genügt c ≈ 3 × 10⁸ m/s. Im Medium: v = c/n (langsamer). Licht von der Sonne: ca. 8 Minuten. Lichtjahr: Strecke, die Licht in einem Jahr zurücklegt (ca. 9,46 × 10¹² km). Kein Körper und kein Signal kann sich schneller als c ausbreiten.",
     "topic": "Optik"
   },
   {
@@ -92,7 +92,7 @@
       "Eine planparallele Glasplatte, die den Strahlengang lediglich seitlich versetzt"
     ],
     "correct": 1,
-    "explanation": "Sammellinse: konvex (bikonvex, plankonvex). Brennpunkt F: parallele Strahlen → Schnittpunkt. Brennweite f. Abbildungsmaßstab: B/G = b/g (Bild/Gegenstand). Reelles Bild (invertiert) oder virtuelles Bild (Lupe, g < f).",
+    "explanation": "Sammellinse: konvex (bikonvex, plankonvex). Achsenparallele Strahlen werden im Brennpunkt F gebündelt – exakt gilt das nur für dünne Linsen und achsennahe Strahlen, sonst treten Abbildungsfehler auf (sphärische Aberration, Farbfehler). Brennweite f. Abbildungsmaßstab: B/G = b/g (Bild/Gegenstand). Reelles, umgekehrtes Bild bei g > f; virtuelles, aufrechtes Bild bei g < f (Lupe).",
     "topic": "Optik"
   },
   {
@@ -116,7 +116,7 @@
       "Der Kehrwert der Brennweite ist die Differenz beider Weiten: 1/f = g - b"
     ],
     "correct": 1,
-    "explanation": "Linsengleichung: 1/f = 1/g + 1/b. Brechkraft (Dioptrie): D = 1/f. Abbildungsmaßstab: m = b/g. Wenn g = 2f: b = 2f (gleich großes, invertiertes Bild). Wenn g = f: Bild im Unendlichen (Kollimator).",
+    "explanation": "Linsengleichung: 1/f = 1/g + 1/b – gilt für dünne Linsen und achsennahe Strahlen. Brechkraft D = 1/f in Dioptrien (f dabei in Metern). Abbildungsmaßstab: m = b/g. Wenn g = 2f: b = 2f (gleich großes, umgekehrtes Bild). Wenn g = f: Bild im Unendlichen (Kollimator). Bei g < f entsteht kein reelles Bild mehr, sondern ein virtuelles (Lupe).",
     "topic": "Optik"
   },
   {
@@ -128,7 +128,7 @@
       "Das Verhältnis der Lichtgeschwindigkeiten in Vakuum und im Material der Linse"
     ],
     "correct": 1,
-    "explanation": "Vergrößerung V = B/G. Lupe (Sammellinse, g < f): virtuelles Bild, aufrecht, V = 25/f(cm). Mikroskop: Objektivvergrößerung × Okularvergrößerung. Fernrohr: V = f(Objektiv) / f(Okular).",
+    "explanation": "Beim abbildenden System gilt der Abbildungsmaßstab V = B/G = b/g. Bei Lupe, Mikroskop und Fernrohr meint 'Vergrößerung' dagegen die Winkelvergrößerung, also das Verhältnis der Sehwinkel mit und ohne Gerät. Lupe (Sammellinse, g < f): virtuelles, aufrechtes Bild. Die Formel V = 25 cm / f gilt nur unter zwei Voraussetzungen: Man rechnet mit der vereinbarten Bezugssehweite von 25 cm, und das Auge ist entspannt (Bild im Unendlichen, Gegenstand genau in der Brennebene). Mikroskop: Objektivvergrößerung × Okularvergrößerung. Fernrohr: V = f(Objektiv) / f(Okular).",
     "topic": "Optik"
   },
   {
@@ -200,7 +200,7 @@
       "Schwingungsrichtung, Ausbreitungsrichtung und Dämpfung einer laufenden Welle"
     ],
     "correct": 1,
-    "explanation": "lambda (Wellenlänge): Meter. f (Frequenz): Hertz = 1/s. A (Amplitude): Meter (mechanisch) oder Feldstärke (el.-mag.). Periode T = 1/f. Sichtbares Licht: lambda = 380-780 nm. Schall: 16 Hz - 20 kHz.",
+    "explanation": "lambda (Wellenlänge): Meter. f (Frequenz): Hertz = 1/s. A (Amplitude): Meter (mechanisch) oder Feldstärke (el.-mag.). Periode T = 1/f. Sichtbares Licht: lambda = 380-780 nm (Grenzen fließend, individuell verschieden). 16 Hz - 20 kHz ist der Hörbereich des Menschen, nicht die Grenze des Schalls: darunter liegt Infraschall, darüber Ultraschall. Die obere Hörgrenze sinkt mit dem Alter deutlich.",
     "topic": "Wellen"
   },
   {
@@ -236,7 +236,7 @@
       "Vollständige Rückwerfung des Lichts oberhalb eines bestimmten Grenzwinkels zum Lot"
     ],
     "correct": 1,
-    "explanation": "Dispersion: Brechungsindex n hängt von lambda ab. Kurzwellig (violett): stärker gebrochen. Langwellig (rot): weniger gebrochen. Prisma trennt Farben. Regenbogen: Wassertröpfchen wirken als Prisma + Spiegel.",
+    "explanation": "Dispersion: Der Brechungsindex n hängt von lambda ab. In Glas und Wasser (normale Dispersion) wird kurzwelliges Licht (violett) stärker gebrochen als langwelliges (rot). Prisma trennt die Farben. Regenbogen: Im Regentropfen wird das Licht beim Eintritt gebrochen, an der Rückseite reflektiert und beim Austritt erneut gebrochen – dabei fächern die Farben auf.",
     "topic": "Optik"
   },
   {
@@ -248,7 +248,7 @@
       "Überlagerung zweier Wellen zu Verstärkung oder Auslöschung der Gesamtamplitude"
     ],
     "correct": 1,
-    "explanation": "Dopplereffekt: Rettungswagen fährt vorbei (höherer Ton beim Nähern, tieferer beim Entfernen). Anwendung: Radargeschwindigkeitsmessung, Ultraschall (Blutfluss), Rotverschiebung (Hubble, expandierendes Universum).",
+    "explanation": "Dopplereffekt: Rettungswagen fährt vorbei (höherer Ton beim Nähern, tieferer beim Entfernen). Beim Schall macht es einen Unterschied, ob sich die Quelle oder der Beobachter gegenüber der Luft bewegt – die Formeln sind für beide Fälle verschieden. Beim Licht zählt nur die Relativgeschwindigkeit. Anwendung: Radargeschwindigkeitsmessung, Ultraschall (Blutfluss). Die kosmologische Rotverschiebung ferner Galaxien ist dagegen kein echter Dopplereffekt: Sie entsteht dadurch, dass sich der Raum selbst ausdehnt und die Wellenlänge unterwegs mitgedehnt wird.",
     "topic": "Wellen"
   },
   {
@@ -272,7 +272,7 @@
       "Richtungsänderung von Wellen an der Grenzfläche zwischen zwei Medien"
     ],
     "correct": 1,
-    "explanation": "Beugung (Diffraktion): Huygenssches Prinzip (jeder Punkt einer Wellenfront ist Ausgangspunkt neuer Kreiswellen). Sichtbar wenn Spaltbreite ≈ lambda. Licht durch engen Spalt: Beugungsmuster. Schall biegt um Ecken (hörbar, aber nicht sichtbar).",
+    "explanation": "Beugung (Diffraktion): Huygenssches Prinzip (jeder Punkt einer Wellenfront ist Ausgangspunkt neuer Elementarwellen). Beugung tritt immer auf, wird aber erst deutlich, wenn Spalt oder Hindernis in der Größenordnung der Wellenlänge oder kleiner sind. Licht durch engen Spalt: Beugungsmuster. Schall hat Wellenlängen im Meterbereich und beugt sich deshalb stark um Ecken; sichtbares Licht (unter 1 mu m) beugt sich so wenig, dass Schatten scharf wirken.",
     "topic": "Wellen"
   },
   {
@@ -296,7 +296,7 @@
       "Elektromagnetische Wellen zwischen 380 nm und 780 nm, vom Auge wahrnehmbar"
     ],
     "correct": 1,
-    "explanation": "Röntgenstrahlung: Bremsstrahlung oder charakteristische Strahlung. Energie: 100 eV - 100 keV. Ionisierend (gefährlich). Medizin: Diagnostik, Strahlentherapie. Kristallstrukturanalyse: DNA-Doppelhelix (Franklin, Watson, Crick).",
+    "explanation": "Röntgenstrahlung entsteht als Bremsstrahlung oder als charakteristische Strahlung der Atomhülle. Üblicher Energiebereich: etwa 100 eV bis einige 100 keV (Wellenlängen rund 10 nm bis 1 pm). Die Grenzen sind fließend: Nach unten geht die Strahlung in extremes UV über, nach oben überlappt sie mit Gammastrahlung. Unterschieden wird beides eher nach der Entstehung – Röntgenstrahlung aus der Elektronenhülle bzw. aus abgebremsten Elektronen, Gammastrahlung aus dem Atomkern. Ionisierend, deshalb Strahlenschutz nötig. Medizin: Diagnostik, Strahlentherapie. Kristallstrukturanalyse: DNA-Doppelhelix (Franklin, Watson, Crick).",
     "topic": "Wellen"
   },
   {
@@ -332,7 +332,7 @@
       "Eine Welle, die am offenen Ende eines Mediums ohne Phasensprung zurückläuft"
     ],
     "correct": 1,
-    "explanation": "Stehende Wellen: Resonanz (z.B. Gitarrensaite). Knoten: konstant Null. Bäuche: maximale Amplitude. Grundschwingung: lambda = 2L. Oberschwingungen: lambda = 2L/n. Anwendung: Musikinstrumente, Mikrowellenherd.",
+    "explanation": "Stehende Wellen entstehen durch Überlagerung einer hin- und einer rücklaufenden Welle, meist durch Reflexion am Ende. Knoten: dauerhaft in Ruhe. Bäuche: maximale Amplitude. Bei beidseitig festen Enden (Gitarrensaite): Grundschwingung lambda = 2L, Oberschwingungen lambda = 2L/n. Bei einem offenen und einem geschlossenen Ende (gedackte Pfeife) gilt dagegen lambda = 4L. Anwendung: Musikinstrumente, Mikrowellenherd.",
     "topic": "Wellen"
   },
   {
@@ -344,7 +344,7 @@
       "Mehrfaches Zurückwerfen von Schall an Wänden mit langsam abklingendem Nachhall"
     ],
     "correct": 1,
-    "explanation": "Resonanz: Anregungsfrequenz = Eigenfrequenz. Beispiele: Brücke (Tacoma Narrows, 1940), ein Weinglas durch einen Ton zerspringen lassen, MRT (Kernspinresonanz), Radioempfang. Dämpfung reduziert Resonanzamplitude.",
+    "explanation": "Resonanz: Anregungsfrequenz = Eigenfrequenz, die Amplitude wächst stark an. Echte Beispiele: eine Schaukel, die man genau im Takt ihrer Eigenfrequenz anstößt; ein Weinglas, das bei passender Tonhöhe zerspringt; Soldaten im Gleichschritt auf einer Brücke (deshalb 'Gleichschritt aufheben'); Radioempfang (Schwingkreis auf die Sendefrequenz abgestimmt); MRT (Kernspinresonanz). Dämpfung begrenzt die Resonanzamplitude. Achtung: Der Einsturz der Tacoma-Narrows-Brücke (1940) wird in Schulbüchern oft als Resonanzbeispiel genannt, war aber keine Resonanz, sondern aeroelastisches Flattern – eine selbsterregte Schwingung, bei der die Brückenbewegung die anregende Kraft im Wind selbst erzeugt und es gar keine äußere Anregung mit fester Frequenz gibt.",
     "topic": "Wellen"
   },
   {
@@ -356,7 +356,7 @@
       "Etwa 340 km/s in Luft bei 20 °C, unabhängig von Temperatur und Luftdruck"
     ],
     "correct": 1,
-    "explanation": "Schall: mechanische Welle (braucht Medium). Luft: v ≈ 340 m/s (20°C), steigt um ca. 0,6 m/s pro Kelvin. Überschall: Mach 1 = 340 m/s. Schallmauer: Druckwelle. Echolot: Laufzeit × v/2 = Entfernung.",
+    "explanation": "Schall: mechanische Welle, braucht ein Medium (im Vakuum keine Ausbreitung). Luft: v ≈ 340 m/s bei 20 °C, pro Kelvin mehr steigt v um ca. 0,6 m/s. Die Schallgeschwindigkeit hängt von Medium und Temperatur ab, beim idealen Gas dagegen nicht vom Luftdruck. Mach 1 bedeutet immer die örtliche Schallgeschwindigkeit – in großer Flughöhe sind das wegen der Kälte nur noch etwa 295 m/s. Echolot: Entfernung = v · Laufzeit / 2 (Hin- und Rückweg).",
     "topic": "Wellen"
   },
   {
@@ -368,7 +368,7 @@
       "Elektromagnetische Wellen hoher Frequenz, die menschliches Gewebe durchdringen"
     ],
     "correct": 1,
-    "explanation": "Ultraschall: f > 20 kHz. Medizin: Sonografie, Pränataldiagnostik (kein Röntgen nötig). Echolokation: Fledermäuse, Wale. Piezoelektrischer Effekt: Quarzkristall erzeugt Ultraschall bei Anlegen von Wechselspannung.",
+    "explanation": "Ultraschall: f > 20 kHz. Medizin: Sonografie, Pränataldiagnostik (ohne ionisierende Strahlung, anders als beim Röntgen). Echolokation: Fledermäuse, Wale. Erzeugt und empfangen wird Ultraschall mit dem piezoelektrischen Effekt, den es in zwei Richtungen gibt: Beim inversen (umgekehrten) Effekt verformt eine angelegte Wechselspannung den Kristall, er schwingt und sendet Ultraschall aus. Beim direkten Effekt erzeugt umgekehrt eine Verformung des Kristalls eine Spannung – so wird das zurückkommende Echo gemessen.",
     "topic": "Wellen"
   },
   {
@@ -392,7 +392,7 @@
       "Beschleunigte Elektronen regen ein Metall zum Aussenden von sichtbarem Licht an"
     ],
     "correct": 1,
-    "explanation": "Photoelektrischer Effekt: E_ph = h·f > W_A (Austrittsarbeit) → Elektron wird ausgelöst. Kinetische Energie: E_kin = h·f - W_A. Unterhalb Grenzfrequenz: kein Effekt, egal wie intensiv. Anwendung: Solarzellen, Photomultiplier.",
+    "explanation": "Äußerer photoelektrischer Effekt: h·f > W_A (Austrittsarbeit) → das Elektron verlässt das Metall. Maximale kinetische Energie: E_kin = h·f - W_A. Unterhalb der Grenzfrequenz passiert nichts, egal wie hell das Licht ist – mit dem reinen Wellenbild war das nicht erklärbar. Anwendung: Photozelle, Photomultiplier. Solarzellen beruhen dagegen auf dem inneren Photoeffekt: Dort werden Elektronen im Halbleiter nur aus ihren Bindungen gelöst, verlassen das Material aber nicht.",
     "topic": "Optik"
   },
   {
@@ -404,7 +404,7 @@
       "Zurückwerfen einer Welle an einer glatten Grenzfläche unter gleichem Winkel"
     ],
     "correct": 1,
-    "explanation": "Polarisation: nur bei Transversalwellen möglich (nicht bei Longitudinalwellen wie Schall). Anwendung: Polaroidbrillen (Sonnenbrillen, Blendschutz), 3D-Kino, LCD-Bildschirme. Brewster-Winkel: Reflexion vollständig polarisiert.",
+    "explanation": "Polarisation: nur bei Transversalwellen möglich (nicht bei Longitudinalwellen wie Schall). Anwendung: Polarisationsbrillen (Blendschutz), 3D-Kino, LCD-Bildschirme. Brewster-Winkel: Unter diesem Einfallswinkel ist das reflektierte Licht vollständig senkrecht zur Einfallsebene polarisiert – deshalb dämpft ein passend gedrehter Filter Spiegelungen auf Wasser oder Straße besonders gut.",
     "topic": "Wellen"
   },
   {
@@ -428,7 +428,7 @@
       "Sehr langwellige Strahlung im Meterbereich, die zur Funkübertragung genutzt wird"
     ],
     "correct": 1,
-    "explanation": "Infrarot: 0,78 mu m – 1 mm. Nahe IR (NIR): Fernbedienungen. Mittleres IR: molekulare Schwingungen (Spektroskopie). Ferne IR (FIR): Wärmestrahlung. Sonne: max. Emission ca. 500 nm, aber auch viel IR. Treibhauseffekt: IR-Rückstrahlung.",
+    "explanation": "Infrarot: 0,78 mu m – 1 mm. Nahe IR (NIR): Fernbedienungen. Mittleres IR: molekulare Schwingungen (Spektroskopie). Ferne IR (FIR): Wärmestrahlung von Körpern mit Zimmertemperatur. Streng genommen strahlt jeder Körper je nach Temperatur, auch kalte – nur eben schwächer und langwelliger. Sonne: Maximum bei ca. 500 nm, dazu ein großer IR-Anteil. Treibhauseffekt: Die kurzwellige Sonnenstrahlung kommt weitgehend durch die Atmosphäre, die von der Erde abgegebene langwellige IR-Strahlung wird dagegen von Treibhausgasen (CO₂, Wasserdampf, Methan) aufgenommen und zum Teil zur Erde zurückgestrahlt.",
     "topic": "Wellen"
   },
   {
@@ -440,7 +440,7 @@
       "Strahlung im Zentimeterbereich, die Wassermoleküle zum Schwingen anregt"
     ],
     "correct": 1,
-    "explanation": "UV: ionisierend bei hoher Energie. Ozonschicht absorbiert UV-B/C. UV-A: dringt tiefer in Haut ein (Hautalterung). UV-B: Vitamin-D-Synthese, Sonnenbrand, Hautkrebs. Schutz: Sonnencreme (UV-Filter), Kleidung.",
+    "explanation": "UV: ca. 100-380 nm; erst der kurzwellige Teil ist wirklich ionisierend, der langwellige schädigt vor allem chemisch. Die Ozonschicht absorbiert UV-C vollständig und UV-B zum größten Teil, UV-A erreicht den Boden dagegen fast ungehindert. UV-A: dringt tiefer in die Haut ein (Hautalterung). UV-B: ermöglicht die Vitamin-D-Bildung, verursacht aber auch Sonnenbrand. Das Hautkrebsrisiko geht von UV-B und UV-A gemeinsam aus. Schutz: Sonnencreme (UV-Filter), Kleidung, Schatten.",
     "topic": "Wellen"
   },
   {

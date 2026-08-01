@@ -8,7 +8,7 @@
       "Formeln, mit denen der Flächeninhalt aus den drei Seiten berechnet wird"
     ],
     "correct": 1,
-    "explanation": "Merkhilfe GAGA-HHAG: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Im rechtwinkligen Dreieck: Hypotenuse = längste Seite, dem rechten Winkel gegenüber. tan(alpha) = sin(alpha)/cos(alpha).",
+    "explanation": "Merkhilfe GAGA-HHAG: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Gegen- und Ankathete beziehen sich dabei immer auf einen der beiden spitzen Winkel (0° < alpha < 90°); die Hypotenuse ist die längste Seite und liegt dem rechten Winkel gegenüber. Es gilt tan(alpha) = sin(alpha)/cos(alpha), sofern cos(alpha) ungleich 0 ist. Über den Einheitskreis werden sin und cos später auf beliebige Winkel erweitert.",
     "topic": "Trigonometrie"
   },
   {
@@ -20,7 +20,7 @@
       "Die Katheten stehen im selben Verhältnis wie Kathete zu Hypotenuse: a/b = b/c"
     ],
     "correct": 1,
-    "explanation": "Pythagoras: a² + b² = c². Katheten a, b; Hypotenuse c. Beispiel: 3-4-5-Dreieck (9+16=25). Anwendung: Abstände, Diagonalen, 3D-Raumdiagonale im Quader (a²+b²+c²=d²). Es gibt zahlreiche Beweise, geometrische wie algebraische.",
+    "explanation": "Pythagoras: a² + b² = c², gültig nur im rechtwinkligen Dreieck mit den Katheten a, b und der Hypotenuse c. Beispiel: 3-4-5-Dreieck (9 + 16 = 25). Auch die Umkehrung gilt: erfüllen die Seiten eines Dreiecks a² + b² = c², so ist es rechtwinklig. Anwendung: Abstände, Diagonalen, Raumdiagonale im Quader (a² + b² + c² = d²). Es gibt zahlreiche Beweise, geometrische wie algebraische.",
     "topic": "Geometrie"
   },
   {
@@ -32,7 +32,7 @@
       "0; 1/2; Wurzel(3)/2; Wurzel(2)/2; 1"
     ],
     "correct": 1,
-    "explanation": "Standardwerte: sin(0°)=0, sin(30°)=0,5, sin(45°)=Wurzel(2)/2 ≈ 0,707, sin(60°)=Wurzel(3)/2 ≈ 0,866, sin(90°)=1. Beim Kosinus stehen dieselben Werte in umgekehrter Reihenfolge (cos(30°)=Wurzel(3)/2, cos(60°)=0,5).",
+    "explanation": "Standardwerte: sin(0°)=0, sin(30°)=0,5, sin(45°)=Wurzel(2)/2 ≈ 0,707, sin(60°)=Wurzel(3)/2 ≈ 0,866, sin(90°)=1. Beim Kosinus stehen dieselben Werte in umgekehrter Reihenfolge, weil cos(alpha) = sin(90° - alpha) gilt (cos(30°) = Wurzel(3)/2, cos(60°) = 0,5).",
     "topic": "Trigonometrie"
   },
   {
@@ -44,7 +44,7 @@
       "Kreis mit Durchmesser 1, der allein zur Umrechnung von Grad in Bogenmaß dient"
     ],
     "correct": 1,
-    "explanation": "Einheitskreis: x² + y² = 1. Winkel alpha gegen Uhrzeigersinn. x-Koordinate = cos(alpha), y-Koordinate = sin(alpha). Periodizität: sin und cos haben Periode 360° (= 2pi rad). sin² + cos² = 1 (Pythagoras).",
+    "explanation": "Einheitskreis: x² + y² = 1. Der Winkel alpha wird von der positiven x-Achse aus gegen den Uhrzeigersinn gemessen; der zugehörige Kreispunkt hat die Koordinaten (cos(alpha) | sin(alpha)). So sind sin und cos für beliebige Winkel definiert, auch für stumpfe und negative. Kleinste Periode von sin und cos: 360° (= 2pi rad). Aus dem Satz des Pythagoras folgt sin²(alpha) + cos²(alpha) = 1 für jeden Winkel alpha.",
     "topic": "Trigonometrie"
   },
   {
@@ -56,7 +56,7 @@
       "In jedem Dreieck sind die Seitenquadrate proportional zum Sinus der Gegenwinkel: a²/sin(alpha) = b²/sin(beta)"
     ],
     "correct": 1,
-    "explanation": "Sinussatz: a/sin(alpha) = b/sin(beta) = c/sin(gamma) = 2R, wobei R der Umkreisradius ist. Anwendung: WSW (Winkel-Seite-Winkel) und SSW (Seite-Seite-Winkel) bekannt. Mehrdeutigkeit beim SSW-Fall (zwei mögliche Dreiecke).",
+    "explanation": "Sinussatz: a/sin(alpha) = b/sin(beta) = c/sin(gamma) = 2R, wobei R der Umkreisradius ist. Dabei liegt jede Seite dem gleichnamigen Winkel gegenüber. Anwendung: WSW (Winkel-Seite-Winkel) und SSW (Seite-Seite-Winkel) bekannt. Im SSW-Fall ist die Lösung nicht eindeutig: je nach den gegebenen Größen gibt es kein, ein oder zwei mögliche Dreiecke, da zu einem Sinuswert zwei Winkel zwischen 0° und 180° passen.",
     "topic": "Trigonometrie"
   },
   {
@@ -68,7 +68,7 @@
       "c² = a² - b² + 2ab·cos(gamma), eine Umformung des Pythagoras für gleichschenklige Dreiecke"
     ],
     "correct": 1,
-    "explanation": "Kosinussatz: c² = a²+b²-2ab·cos(gamma). Bei gamma=90°: cos(90°)=0 → c²=a²+b² (Pythagoras). SWS (Seite-Winkel-Seite) und SSS (drei Seiten): Kosinussatz anwenden. cos(gamma) = (a²+b²-c²)/(2ab).",
+    "explanation": "Kosinussatz: c² = a² + b² - 2ab·cos(gamma), wobei gamma der Winkel ist, der der Seite c gegenüberliegt. Bei gamma = 90° ist cos(90°) = 0, also c² = a² + b² (Pythagoras als Sonderfall). Anwendung bei SWS (Seite-Winkel-Seite) und SSS (drei Seiten). Nach dem Winkel aufgelöst: cos(gamma) = (a² + b² - c²)/(2ab); daraus liefert arccos den Winkel eindeutig, weil arccos genau einen Wert zwischen 0° und 180° ergibt.",
     "topic": "Trigonometrie"
   },
   {
@@ -80,7 +80,7 @@
       "Winkelmaß, das den vollen Kreis in 400 Teile (Gon) unterteilt, üblich in der Vermessung"
     ],
     "correct": 1,
-    "explanation": "Umrechnung: rad = Grad · pi/180. Grad = rad · 180/pi. Vorteile des Bogenmaßes: Bogenlänge b = r · alpha (alpha in rad). Flächeninhalt Kreissektor: A = r²·alpha/2. Standardmaß in Analysis und Physik.",
+    "explanation": "Umrechnung: rad = Grad · pi/180. Grad = rad · 180/pi. Das Bogenmaß eines Winkels ist die Länge des zugehörigen Bogens am Einheitskreis, es ist also eine reine Verhältniszahl. Vorteile: Bogenlänge b = r · alpha und Kreissektorfläche A = r²·alpha/2 gelten nur mit alpha im Bogenmaß. Ebenso gelten die Ableitungsregeln [sin(x)]' = cos(x) und [cos(x)]' = -sin(x) nur im Bogenmaß. Standardmaß in Analysis und Physik.",
     "topic": "Trigonometrie"
   },
   {
@@ -92,7 +92,7 @@
       "Exponentialfunktion mit rein positiven Werten und einer waagerechten Asymptote"
     ],
     "correct": 1,
-    "explanation": "Sinusfunktion: D = R, W = [-1; 1]. Periode 2pi. f(x) = a·sin(b·x+c)+d: a = Amplitude, b = Frequenzfaktor (Periode = 2pi/|b|), c = Phasenverschiebung, d = Verschiebung in y-Richtung. Ableitung: cos(x).",
+    "explanation": "Sinusfunktion: D = R, W = [-1; 1], kleinste Periode 2pi. Bei f(x) = a·sin(b·x + c) + d gilt: |a| = Amplitude (bei a < 0 zusätzlich Spiegelung an der x-Achse), b = Frequenzfaktor mit Periode 2pi/|b| (b ungleich 0), d = Verschiebung in y-Richtung. Die Phasenverschiebung ist nicht c, sondern -c/b, denn b·x + c = b·(x + c/b): der Graph ist um -c/b in x-Richtung verschoben. Ableitung von sin(x): cos(x) (x im Bogenmaß).",
     "topic": "Trigonometrie"
   },
   {
@@ -104,7 +104,7 @@
       "Quadrat der Sinusfunktion, also cos(x) = sin²(x), mit ausschließlich positiven Werten"
     ],
     "correct": 1,
-    "explanation": "cos(x): gerade Funktion (achsensymmetrisch). Maximum bei x=0 (cos(0)=1). Minimum bei x=pi (cos(pi)=-1). Ableitung: -sin(x). Pythagoreische Identität: sin²(x)+cos²(x)=1. Verschiebung: cos(x)=sin(x+pi/2).",
+    "explanation": "cos(x): gerade Funktion, also achsensymmetrisch zur y-Achse. Wegen der Periode 2pi gibt es unendlich viele Extremstellen: Maxima bei x = 2k·pi mit cos(x) = 1, Minima bei x = pi + 2k·pi mit cos(x) = -1, jeweils für alle ganzen Zahlen k. Ableitung: -sin(x) (x im Bogenmaß). Pythagoreische Identität: sin²(x) + cos²(x) = 1 für alle x. Verschiebung: cos(x) = sin(x + pi/2).",
     "topic": "Trigonometrie"
   },
   {
@@ -116,7 +116,7 @@
       "Eine reine Zahlgröße ohne Richtung, etwa Masse, Temperatur oder Volumen"
     ],
     "correct": 1,
-    "explanation": "Vektor: Ortsvektor (Punkt), Verschiebungsvektor (Weg). Darstellung: Spaltenvektor (a₁, a₂) oder Zeilenvektor. Betrag: |a| = Wurzel(a₁² + a₂²). Nullvektor: (0,0). Gegenvektor: -a.",
+    "explanation": "Ein Vektor ist genau genommen die Menge aller gleich langen, gleich gerichteten Pfeile; jeder einzelne Pfeil ist nur ein Repräsentant. Verwendung: Ortsvektor (zeigt vom Ursprung auf einen Punkt), Verschiebungsvektor (beschreibt einen Weg). Darstellung: Spalten- oder Zeilenvektor (a₁, a₂). Betrag: |a| = Wurzel(a₁² + a₂²) in 2D. Nullvektor (0, 0): Betrag 0, ihm wird keine Richtung zugeordnet. Gegenvektor -a: gleiche Länge, entgegengesetzte Richtung.",
     "topic": "Vektoren"
   },
   {
@@ -140,7 +140,7 @@
       "Der Skalar wird zu jeder Komponente addiert, wodurch der Vektor verschoben wird"
     ],
     "correct": 1,
-    "explanation": "Skalare Multiplikation: lambda · a. lambda > 1: Streckung. 0 < lambda < 1: Stauchung. lambda = -1: Gegenvektor. Kollineare Vektoren: a = lambda · b (einer ist Vielfaches des anderen).",
+    "explanation": "Skalare Multiplikation: lambda · a, jede Komponente wird mit lambda multipliziert. Für den Betrag gilt |lambda · a| = |lambda| · |a|. lambda > 1: Streckung. 0 < lambda < 1: Stauchung. lambda < 0: zusätzlich Richtungsumkehr, lambda = -1 ergibt den Gegenvektor. lambda = 0 ergibt den Nullvektor. Kollinear (parallel) heißen a und b, wenn a = lambda · b mit einem b ungleich dem Nullvektor gilt.",
     "topic": "Vektoren"
   },
   {
@@ -152,7 +152,7 @@
       "Ein Winkel, der sich direkt aus der Differenz der beiden Richtungswinkel ergibt"
     ],
     "correct": 1,
-    "explanation": "Skalarprodukt (inneres Produkt): a·b = a₁b₁+a₂b₂ (2D). 3D: + a₃b₃. Geometrisch: |a|·|b|·cos(alpha). Anwendung: Winkel zwischen Vektoren, Orthogonalität (a·b=0). Kommutativ: a·b = b·a.",
+    "explanation": "Skalarprodukt (inneres Produkt): a · b = a₁b₁ + a₂b₂ in 2D, in 3D zusätzlich + a₃b₃. Das Ergebnis ist eine Zahl, kein Vektor. Geometrisch gilt a · b = |a|·|b|·cos(alpha), wobei der eingeschlossene Winkel alpha nur für Vektoren ungleich dem Nullvektor definiert ist. Anwendung: Winkel zwischen Vektoren, Orthogonalität. Für a, b ungleich Nullvektor bedeutet a · b = 0 genau alpha = 90°; der Nullvektor liefert dagegen immer 0, ohne dass ein Winkel vorliegt. Kommutativ: a · b = b · a.",
     "topic": "Vektoren"
   },
   {
@@ -164,7 +164,7 @@
       "Wenn ihre Summe der Nullvektor ist, wenn also a + b = 0 gilt"
     ],
     "correct": 1,
-    "explanation": "Orthogonalität: a · b = 0. Beispiel: (1, 0) · (0, 1) = 0 (x- und y-Achse senkrecht). Winkelberechnung: cos(alpha) = (a·b)/(|a|·|b|). Für alpha = 90°: cos(90°) = 0, also a·b = 0.",
+    "explanation": "Orthogonalität: a · b = 0, wobei beide Vektoren ungleich dem Nullvektor sein müssen, damit von einem Winkel von 90° gesprochen werden kann. Beispiel: (1, 0) · (0, 1) = 0, x- und y-Achse stehen senkrecht aufeinander. Winkelberechnung: cos(alpha) = (a · b)/(|a|·|b|); für alpha = 90° ist cos(90°) = 0 und damit a · b = 0.",
     "topic": "Vektoren"
   },
   {
@@ -176,7 +176,7 @@
       "|a| = a₁ - a₂ in 2D, in 3D zusätzlich - a₃: die Differenz der Komponenten"
     ],
     "correct": 1,
-    "explanation": "Betrag (euklidische Norm): Satz des Pythagoras in 2D und 3D. Einheitsvektor: e = a/|a| (Betrag = 1). Abstand zweier Punkte P und Q: |PQ| = |Q - P|.",
+    "explanation": "Betrag (euklidische Norm): folgt aus dem Satz des Pythagoras, in 3D lautet er |a| = Wurzel(a₁² + a₂² + a₃²). Es gilt stets |a| ≥ 0, und |a| = 0 gilt nur für den Nullvektor. Einheitsvektor: e = a/|a| mit |e| = 1, gebildet nur für a ungleich Nullvektor. Abstand zweier Punkte P und Q: |PQ| = |Q - P|.",
     "topic": "Vektoren"
   },
   {
@@ -212,7 +212,7 @@
       "g: x = a + s·u + t·v mit dem Aufpunkt a und zwei Richtungsvektoren u und v"
     ],
     "correct": 1,
-    "explanation": "Geradengleichung in Parameterform: x = a + t·u. a: ein Punkt auf g. u: Richtungsvektor. t: alle reellen Zahlen → alle Punkte der Geraden. Zwei Geraden: parallel (Richtungsvektoren kollinear), identisch, schneidend oder windschief (windschief nur im Raum).",
+    "explanation": "Geradengleichung in Parameterform: x = a + t·u. a: Ortsvektor eines Punktes auf g. u: Richtungsvektor, der ungleich dem Nullvektor sein muss. Durchläuft t alle reellen Zahlen, erhält man alle Punkte der Geraden; Aufpunkt und Richtungsvektor sind dabei nicht eindeutig. Lagebeziehung zweier Geraden: Sind die Richtungsvektoren kollinear, so sind die Geraden parallel oder identisch – identisch genau dann, wenn ein Punkt der einen auf der anderen liegt. Sind sie nicht kollinear, schneiden sich die Geraden oder sie sind windschief (Letzteres nur im Raum).",
     "topic": "Vektoren"
   },
   {
@@ -224,7 +224,7 @@
       "A = (1/2)·a·b·tan(gamma) für Dreiecke; A = r·alpha für Kreissektoren"
     ],
     "correct": 1,
-    "explanation": "Dreiecksfläche mit Trigonometrie: A = (1/2)·a·b·sin(gamma). Wenn zwei Seiten und der eingeschlossene Winkel bekannt sind. Heronsche Formel: wenn drei Seiten bekannt sind (kein Winkel nötig). Kreissektor: A=r²·alpha/2.",
+    "explanation": "Dreiecksfläche mit Trigonometrie: A = (1/2)·a·b·sin(gamma), wobei gamma der von a und b eingeschlossene Winkel ist. Anwendbar, wenn zwei Seiten und der eingeschlossene Winkel bekannt sind. Sind drei Seiten bekannt, hilft die heronsche Formel (kein Winkel nötig). Kreissektor: A = r²·alpha/2 mit alpha im Bogenmaß; in Grad lautet die Formel A = pi·r²·alpha/360°.",
     "topic": "Trigonometrie"
   },
   {
@@ -236,7 +236,7 @@
       "Die Funktion besitzt genau ein Maximum und genau ein Minimum im Verlauf"
     ],
     "correct": 1,
-    "explanation": "Periodische Funktion: Periode p. sin(x): Periode 2pi = 360°. Allgemein f(x) = sin(b·x): Periode = 2pi/|b|. Kleinste Periode: Grundperiode. Beispiele: Gezeiten, EKG, Ton.",
+    "explanation": "Periodisch heißt: es gibt ein p > 0 mit f(x + p) = f(x) für alle x des Definitionsbereichs. Mit p ist auch jedes Vielfache k·p eine Periode; die kleinste davon nennt man Grundperiode. sin(x) hat die Grundperiode 2pi = 360°. Allgemein hat f(x) = sin(b·x) die Grundperiode 2pi/|b| (b ungleich 0). Beispiele: Gezeiten, EKG, Ton.",
     "topic": "Trigonometrie"
   },
   {
@@ -248,7 +248,7 @@
       "Gleichung der Form x = a + t·u, in der ein Winkel als Parameter t auftritt"
     ],
     "correct": 1,
-    "explanation": "sin(x) = 0,5: Grundlösung x = 30° = pi/6. Alle Lösungen: x = 30° + k·360° und x = 150° + k·360°. Im Bogenmaß: x = pi/6 + 2k·pi und x = 5pi/6 + 2k·pi. Taschenrechner: arcsin, arccos, arctan.",
+    "explanation": "sin(x) = a und cos(x) = a sind nur für -1 ≤ a ≤ 1 lösbar, dann aber wegen der Periodizität mit unendlich vielen Lösungen; tan(x) = a ist für jedes a lösbar. Beispiel sin(x) = 0,5: Grundlösung x = 30° = pi/6, alle Lösungen x = 30° + k·360° und x = 150° + k·360° mit k aus Z. Im Bogenmaß: x = pi/6 + 2k·pi und x = 5pi/6 + 2k·pi. Der Taschenrechner (arcsin, arccos, arctan) liefert immer nur eine Grundlösung, die übrigen muss man selbst ergänzen.",
     "topic": "Trigonometrie"
   },
   {
@@ -260,7 +260,7 @@
       "tan(alpha) = Hypotenuse/Gegenkathete, gleichbedeutend mit 1/sin(alpha)"
     ],
     "correct": 1,
-    "explanation": "Tangens: tan(alpha) = sin(alpha)/cos(alpha). Periode: pi (nicht 2pi). Nullstellen: k·pi. Polstellen: pi/2 + k·pi. Werte: tan(0°)=0, tan(45°)=1, tan(60°)=Wurzel(3). Steigung einer Geraden = tan(Neigungswinkel).",
+    "explanation": "Tangens: tan(alpha) = sin(alpha)/cos(alpha), definiert für alle alpha mit cos(alpha) ungleich 0, also für alle reellen Zahlen außer pi/2 + k·pi (k aus Z). Dort liegen die Polstellen mit senkrechten Asymptoten. Grundperiode: pi (nicht 2pi). Nullstellen: k·pi. Werte: tan(0°) = 0, tan(45°) = 1, tan(60°) = Wurzel(3). Die Steigung einer nicht senkrechten Geraden ist tan(Neigungswinkel).",
     "topic": "Trigonometrie"
   },
   {
@@ -272,7 +272,7 @@
       "Vektoren mit identischen Komponenten, die also vollständig übereinstimmen: a = b"
     ],
     "correct": 1,
-    "explanation": "Parallele (kollineare) Vektoren: b = lambda · a. lambda > 0: gleiche Richtung. lambda < 0: entgegengesetzte Richtung. Parallele Geraden: gleicher Richtungsvektor (oder Vielfaches). Test: Verhältnisse der Komponenten gleich.",
+    "explanation": "Parallele (kollineare) Vektoren: b = lambda · a mit a ungleich dem Nullvektor. lambda > 0: gleiche Richtung. lambda < 0: entgegengesetzte Richtung. Parallele Geraden haben kollineare Richtungsvektoren. Sicherer Test in 2D: a₁·b₂ - a₂·b₁ = 0; der Vergleich der Komponentenverhältnisse a₁/b₁ = a₂/b₂ funktioniert nur, wenn keine Komponente 0 ist.",
     "topic": "Vektoren"
   },
   {
@@ -284,7 +284,7 @@
       "Produkt zweier Vektoren, dessen Ergebnis senkrecht auf beiden Vektoren steht"
     ],
     "correct": 1,
-    "explanation": "Linearkombination: c = lambda₁·a + lambda₂·b. Lineare Unabhängigkeit: kein Vektor als Linearkombination der anderen darstellbar. Basisvektoren: linear unabhängig, spannen den Raum auf. In 2D: 2 linear unabhängige Vektoren.",
+    "explanation": "Linearkombination: c = lambda₁·a + lambda₂·b mit reellen Zahlen lambda₁, lambda₂. Linear unabhängig heißt: lambda₁·a + lambda₂·b = Nullvektor ist nur für lambda₁ = lambda₂ = 0 möglich; gleichbedeutend damit ist, dass sich keiner der Vektoren als Linearkombination der übrigen schreiben lässt. Basisvektoren sind linear unabhängig und spannen den Raum auf: in 2D genau 2, im Raum genau 3 Vektoren.",
     "topic": "Vektoren"
   },
   {
@@ -296,7 +296,7 @@
       "alpha = arccos(|a| · |b| - (a · b)), also Betragsprodukt minus Skalarprodukt"
     ],
     "correct": 1,
-    "explanation": "Winkel zwischen a und b: cos(alpha) = (a·b)/(|a|·|b|). 0° ≤ alpha ≤ 180°. alpha = 0°: gleiche Richtung. alpha = 90°: senkrecht (a·b=0). alpha = 180°: entgegengesetzt. Taschenrechner: arccos-Taste.",
+    "explanation": "Winkel zwischen a und b: cos(alpha) = (a · b)/(|a|·|b|), wobei beide Vektoren ungleich dem Nullvektor sein müssen, sonst wäre der Nenner 0. Der so bestimmte Winkel liegt immer zwischen 0° und 180°. alpha = 0°: gleiche Richtung. alpha = 90°: senkrecht, also a · b = 0. alpha = 180°: entgegengesetzt. Taschenrechner: arccos-Taste.",
     "topic": "Vektoren"
   },
   {
@@ -308,7 +308,7 @@
       "Die Länge des Richtungsvektors u, angetragen im gegebenen Punkt P"
     ],
     "correct": 1,
-    "explanation": "Abstand Punkt P von Gerade g: Lotfußpunkt F auf g bestimmen (F = a + t₀·u, wobei FP · u = 0). Dann d = |FP|. Alternativ: Formel d = |AP × u| / |u| (3D, Kreuzprodukt; A ist der Aufpunkt der Geraden).",
+    "explanation": "Abstand des Punktes P von der Geraden g: Lotfußpunkt F auf g bestimmen, also F = a + t₀·u so wählen, dass FP · u = 0 gilt. Dann ist d = |FP| die kürzeste aller Verbindungen von P zu Punkten von g. Alternativ im Raum: d = |AP × u| / |u| mit dem Kreuzprodukt, wobei A der Aufpunkt und u der Richtungsvektor der Geraden ist (u ungleich Nullvektor).",
     "topic": "Vektoren"
   },
   {
@@ -332,7 +332,7 @@
       "A = |a + b| in 2D wie in 3D, also der Betrag der Summe beider Vektoren"
     ],
     "correct": 1,
-    "explanation": "Parallelogrammfläche = |a × b| (3D) = |a₁b₂ - a₂b₁| (2D). Dreiecksfläche = halbes Parallelogramm = ½ |a × b|. Alternativ: A = |a| · |b| · sin(alpha).",
+    "explanation": "Fläche des von a und b aufgespannten Parallelogramms: |a × b| im Raum, |a₁b₂ - a₂b₁| in der Ebene. Die Dreiecksfläche ist halb so groß: (1/2)·|a × b|. Gleichwertig ist A = |a|·|b|·sin(alpha) mit dem eingeschlossenen Winkel alpha; da 0° ≤ alpha ≤ 180° gilt, ist sin(alpha) ≥ 0. Sind a und b kollinear, ist die Fläche 0.",
     "topic": "Vektoren"
   },
   {
@@ -344,7 +344,7 @@
       "Systeme, in denen sich nur Vektoren, aber keine einzelnen Punkte beschreiben lassen"
     ],
     "correct": 1,
-    "explanation": "Kartesisches KS: benannt nach Descartes. 2D: x-Achse, y-Achse. 3D: z-Achse hinzu. Rechtshändiges System. Polarkoordinaten (r, phi): r = Abstand, phi = Winkel. Umrechnung: x = r·cos(phi), y = r·sin(phi).",
+    "explanation": "Kartesisches Koordinatensystem: benannt nach Descartes, Achsen stehen senkrecht aufeinander. 2D: x- und y-Achse; 3D: zusätzlich die z-Achse, üblicherweise als Rechtssystem angeordnet. Polarkoordinaten (r; phi) sind eine andere, gleichberechtigte Beschreibung derselben Ebene: r ≥ 0 ist der Abstand vom Ursprung, phi der Winkel zur positiven x-Achse (für den Ursprung ist phi nicht festgelegt). Umrechnung: x = r·cos(phi), y = r·sin(phi).",
     "topic": "Geometrie"
   },
   {
@@ -368,7 +368,7 @@
       "Im ebenen Dreieck 180°, im sphärischen Dreieck dagegen weniger als 180°"
     ],
     "correct": 1,
-    "explanation": "Winkelsumme Dreieck: 180°. Viereck: 360°. n-Eck: (n-2)·180°. Außenwinkelsumme: immer 360°. Anwendung: fehlenden Winkel berechnen. Wichtig für Sinussatz und Kosinussatz.",
+    "explanation": "In der ebenen (euklidischen) Geometrie beträgt die Winkelsumme im Dreieck 180°, im Viereck 360°, allgemein im nicht überschlagenen n-Eck (n-2)·180°; die Außenwinkelsumme eines konvexen n-Ecks ist stets 360°. Auf einer Kugeloberfläche gilt das nicht: dort ist die Winkelsumme eines Dreiecks größer als 180°, der Überschuss wächst mit der Fläche. Anwendung: fehlenden Winkel berechnen – wichtig bei Sinus- und Kosinussatz.",
     "topic": "Geometrie"
   },
   {
@@ -380,7 +380,7 @@
       "Abbildung eines Körpers, bei der alle Kanten maßstabsgetreu wiedergegeben werden"
     ],
     "correct": 1,
-    "explanation": "Schrägbild (Kavalierperspektive): Frontfläche maßstabsgetreu, Tiefenkanten unter 45° und halbiert. Alternativ: Militärperspektive, Zentralperspektive, isometrische Projektion. Wichtig für räumliches Vorstellungsvermögen.",
+    "explanation": "Schrägbild (Kavalierperspektive): Die Frontfläche wird maßstabsgetreu und unverzerrt gezeichnet, die Tiefenkanten schräg und verkürzt. In der Schule üblich sind ein Winkel von 45° und der Verkürzungsfaktor 1/2; das ist eine Konvention, andere Winkel und Faktoren sind ebenso möglich. Alternativen: Militärperspektive, isometrische Projektion, Zentralperspektive. Wichtig für das räumliche Vorstellungsvermögen.",
     "topic": "Geometrie"
   },
   {
@@ -392,7 +392,7 @@
       "U = pi·r und A = pi²·r"
     ],
     "correct": 1,
-    "explanation": "Kreis: U = 2·pi·r = pi·d. A = pi·r². pi ≈ 3,14159. Bogen: b = r·alpha (alpha in rad). Kreissektor: A = r²·alpha/2. Näherungsbrüche: pi ≈ 22/7 oder 355/113.",
+    "explanation": "Kreis: U = 2·pi·r = pi·d, A = pi·r². pi ≈ 3,14159 ist irrational, lässt sich also nicht exakt als Bruch schreiben; 22/7 und 355/113 sind nur Näherungen. Bogenlänge: b = r·alpha und Kreissektor: A = r²·alpha/2, jeweils mit alpha im Bogenmaß.",
     "topic": "Geometrie"
   },
   {
@@ -416,7 +416,7 @@
       "Spiegelung aller Punkte an der x-Achse, Abbildungsmatrix [[1, 0],[0, -1]]"
     ],
     "correct": 1,
-    "explanation": "Drehmatrix (Gegenuhrzeigersinn): R = [[cos(phi), -sin(phi)], [sin(phi), cos(phi)]]. Anwendung auf Punkt P: R·P. Drehung um 90°: (x,y) → (-y, x). Drehung um 180°: (x,y) → (-x,-y).",
+    "explanation": "Diese Drehmatrix beschreibt eine Drehung um den Koordinatenursprung gegen den Uhrzeigersinn: R = [[cos(phi), -sin(phi)], [sin(phi), cos(phi)]]. Angewendet wird sie auf den Ortsvektor des Punktes: P' = R·P. Drehung um 90°: (x; y) → (-y; x). Drehung um 180°: (x; y) → (-x; -y). Ist das Drehzentrum nicht der Ursprung, verschiebt man zuerst dorthin, dreht und verschiebt zurück.",
     "topic": "Vektoren"
   },
   {
@@ -464,19 +464,19 @@
       "Den Umfang des Kreissektors, der zum Winkel alpha am Einheitskreis gehört"
     ],
     "correct": 1,
-    "explanation": "Steigungswinkel alpha: tan(alpha) = m (Steigung der Geraden y = mx + b). Steile Gerade: tan(alpha) groß. Waagerecht: tan(0°) = 0. 45°-Gerade: tan(45°) = 1. Quotientenbeziehung: tan(alpha) = sin(alpha)/cos(alpha).",
+    "explanation": "Steigungswinkel alpha: tan(alpha) = m, wobei m die Steigung der Geraden y = m·x + b ist und alpha der Winkel zur positiven x-Achse. Steile Gerade: tan(alpha) groß. Waagerecht: tan(0°) = 0. 45°-Gerade: tan(45°) = 1. Für alpha = 90° ist der Tangens nicht definiert – eine senkrechte Gerade hat keine Steigung und lässt sich nicht als y = m·x + b schreiben. Quotientenbeziehung: tan(alpha) = sin(alpha)/cos(alpha).",
     "topic": "Trigonometrie"
   },
   {
     "question": "Was ist die Koordinatendarstellung einer Ebene?",
     "options": [
       "x = a + t·u mit einem Aufpunkt a und einem einzigen Richtungsvektor u",
-      "Ax + By + Cz = D (Normalenform) oder x = a + s·u + t·v (Parameterform)",
+      "Ax + By + Cz = D (Koordinatenform) oder x = a + s·u + t·v (Parameterform)",
       "Ein einzelnes Zahlentripel (x; y; z), das eine Lage im Raum festlegt",
       "x = a + t·u + t²·v mit einem Parameter t, der eine gekrümmte Fläche erzeugt"
     ],
     "correct": 1,
-    "explanation": "Ebenengleichung: Parameterform x = a + s·u + t·v. Normalenform: n · (x - a) = 0 → Ax+By+Cz = D. Normalenvektor n senkrecht auf allen Richtungsvektoren der Ebene. Kreuzprodukt u × v ergibt Normalenvektor.",
+    "explanation": "Parameterform: x = a + s·u + t·v mit einem Aufpunkt a und zwei linear unabhängigen Richtungsvektoren u und v. Normalenform: n · (x - a) = 0 mit einem Normalenvektor n (ungleich Nullvektor), der senkrecht auf allen Richtungsvektoren der Ebene steht; einen solchen liefert das Kreuzprodukt u × v. Rechnet man das Skalarprodukt in der Normalenform aus, erhält man die Koordinatenform Ax + By + Cz = D: A, B, C sind die Komponenten von n, und D = n · a. Normalenform und Koordinatenform sind also dieselbe Gleichung in zwei Schreibweisen und dürfen nicht mit der Parameterform verwechselt werden.",
     "topic": "Vektoren"
   }
 ]
