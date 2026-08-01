@@ -44,7 +44,7 @@
       "Ein Byte entspricht genau einem Bit, erst ein Kilobyte umfasst dann 8 Bit"
     ],
     "correct": 1,
-    "explanation": "Bit (binary digit): 0 oder 1. Byte = 8 Bit. Zeichen: ASCII (7 Bit, 128 Zeichen), UTF-8 (1-4 Byte, Unicode). 1 KB = 1024 B = 2¹⁰ B. 1 MB = 1024 KB. 1 GB = 1024 MB.",
+    "explanation": "Bit (binary digit): 0 oder 1. Byte = 8 Bit. Zeichen: ASCII (7 Bit, 128 Zeichen), UTF-8 (1-4 Byte, Unicode). 1 KB = 1024 B = 2¹⁰ B (nach IEC-Norm genauer: 1 KiB). 1 MB = 1024 KB. 1 GB = 1024 MB.",
     "topic": "Informatik"
   },
   {
@@ -56,7 +56,7 @@
       "Zahlensystem zur Basis 10 mit den Ziffern 0 bis 9, auch Dezimalsystem genannt"
     ],
     "correct": 1,
-    "explanation": "Hex: 0-9, A-F. FF₁₆ = 255₁₀ = 11111111₂. Farben: #FF0000 = Rot. Speicheradressen. Umrechnung: jede Hex-Ziffer = 4 Bit. 0×3A = 0011 1010₂ = 58₁₀.",
+    "explanation": "Hex: 0-9, A-F. FF₁₆ = 255₁₀ = 11111111₂. Farben: #FF0000 = Rot. Speicheradressen. Umrechnung: jede Hex-Ziffer = 4 Bit. 0x3A = 0011 1010₂ = 58₁₀.",
     "topic": "Informatik"
   },
   {
@@ -152,7 +152,7 @@
       "Systemsoftware, die Rechner verwaltet und deren Netzwerkverbindungen aufbaut"
     ],
     "correct": 1,
-    "explanation": "Internet: Arpanet (1969). Protokolle: TCP/IP, DNS, HTTP. Dienste: WWW, E-Mail, FTP, VoIP. Backbone: transatlantische Kabel, Satelliten. ISP (Internet Service Provider): Zugangsprovider. 5 Milliarden Nutzer (2023).",
+    "explanation": "Internet: Arpanet (1969). Protokolle: TCP/IP, DNS, HTTP. Dienste: WWW, E-Mail, FTP, VoIP. Backbone: transatlantische Kabel, Satelliten. ISP (Internet Service Provider): Zugangsprovider. Weltweit mehrere Milliarden Nutzer.",
     "topic": "Internet"
   },
   {
@@ -164,7 +164,7 @@
       "Weltweit eindeutige Hardwarekennung, die fest in der Netzwerkkarte gespeichert ist"
     ],
     "correct": 1,
-    "explanation": "IPv4: 4 Oktette (0-255), z.B. 192.168.0.1. Ca. 4,3 Milliarden Adressen (zu wenig). IPv6: 128 Bit, 340 Undezillionen Adressen. NAT: mehrere Geräte teilen eine öffentliche IP. DNS: Übersetzt Domains in IP-Adressen.",
+    "explanation": "IPv4: 4 Oktette (0-255), z.B. 192.168.0.1. Ca. 4,3 Milliarden Adressen (zu wenig). IPv6: 128 Bit, rund 3,4·10³⁸ Adressen. NAT: mehrere Geräte teilen eine öffentliche IP. DNS: Übersetzt Domains in IP-Adressen.",
     "topic": "Internet"
   },
   {
@@ -212,7 +212,7 @@
       "Auszeichnungssprache, die Daten hierarchisch in verschachtelten Tags strukturiert"
     ],
     "correct": 1,
-    "explanation": "SQL: SELECT * FROM Kunden WHERE Stadt = \"Berlin\"; INSERT INTO Produkte VALUES (1, \"Laptop\", 999); UPDATE Preise SET Preis = 1099 WHERE ID = 1; DELETE FROM Altdaten WHERE Datum < \"2020-01-01\";",
+    "explanation": "SQL: SELECT * FROM Kunden WHERE Stadt = 'Berlin'; INSERT INTO Produkte VALUES (1, 'Laptop', 999); UPDATE Preise SET Preis = 1099 WHERE ID = 1; DELETE FROM Altdaten WHERE Datum < '2020-01-01';",
     "topic": "Informatik"
   },
   {
@@ -224,7 +224,7 @@
       "Verfahren, das gesprochene Sprache in geschriebenen Text umwandelt und ausgibt"
     ],
     "correct": 1,
-    "explanation": "KI: schwache KI (spezifische Aufgabe, z.B. Schach, Bilderkennung) vs. starke KI (allgemeine Intelligenz, hypothetisch). Teilgebiete: Maschinelles Lernen, Deep Learning, NLP, Computer Vision. Anwendungen: ChatGPT, Bilderkennnung, autonomes Fahren.",
+    "explanation": "KI: schwache KI (spezifische Aufgabe, z.B. Schach, Bilderkennung) vs. starke KI (allgemeine Intelligenz, hypothetisch). Teilgebiete: Maschinelles Lernen, Deep Learning, NLP, Computer Vision. Anwendungen: Sprachmodelle wie ChatGPT, Bilderkennung, autonomes Fahren.",
     "topic": "Informatik"
   },
   {
@@ -260,7 +260,7 @@
       "Internationaler technischer Standard für den verschlüsselten Datenverkehr im Netz"
     ],
     "correct": 1,
-    "explanation": "DSGVO (General Data Protection Regulation): gilt in gesamter EU. Personenbezogene Daten: Name, IP-Adresse, E-Mail, etc. Recht auf Vergessenwerden (Löschung). Bußgelder: bis 4% des globalen Jahresumsatzes oder 20 Mio. EUR.",
+    "explanation": "DSGVO (Datenschutz-Grundverordnung, engl. GDPR): gilt in der gesamten EU. Personenbezogene Daten: Name, IP-Adresse, E-Mail, etc. Recht auf Vergessenwerden (Löschung). Bußgelder: bis 20 Mio. EUR oder 4% des weltweiten Jahresumsatzes, je nachdem, was höher ist.",
     "topic": "Informatik"
   },
   {
@@ -320,7 +320,7 @@
       "System, das über einen verschlüsselten Tunnel eine entfernte Netzverbindung aufbaut"
     ],
     "correct": 1,
-    "explanation": "Firewall: Paketfilter (Layer 3/4), Stateful Inspection, Application-Layer-Firewall (WAF). Blockiert: Port-Scans, Angriffe von außen, unerlaubten ausgehenden Verkehr. Hardware-Firewall (Router) vs. Software-Firewall (Windows Defender).",
+    "explanation": "Firewall: Paketfilter (Layer 3/4), Stateful Inspection, Application-Layer-Firewall (WAF). Blockiert: Port-Scans, Angriffe von außen, unerlaubten ausgehenden Verkehr. Hardware-Firewall (Router) vs. Software-Firewall (z.B. die Windows-Firewall).",
     "topic": "Informatik"
   },
   {
@@ -356,7 +356,7 @@
       "Formales Regelwerk aus Syntax und Befehlen zum Schreiben von Programmen"
     ],
     "correct": 1,
-    "explanation": "API: REST-API (HTTP, JSON/XML, zustandslos), SOAP, GraphQL. Beispiel: Wetter-API gibt JSON zurück mit Temperatur, Niederschlag. OAuth: Authentifizierung über APIs (Google/Facebook-Login). SDK: Software Development Kit mit APIs.",
+    "explanation": "API: REST-API (HTTP, JSON/XML, zustandslos), SOAP, GraphQL. Beispiel: Wetter-API gibt JSON zurück mit Temperatur, Niederschlag. OAuth: Anmeldung über fremde Dienste (Google-/Facebook-Login). SDK: Software Development Kit mit APIs.",
     "topic": "Informatik"
   },
   {
@@ -380,7 +380,7 @@
       "Software, die für eine Testphase kostenlos ist und danach bezahlt werden muss"
     ],
     "correct": 1,
-    "explanation": "Open Source: Quellcode zugänglich. GPL: Änderungen müssen auch Open Source bleiben (Copyleft). MIT/Apache: auch in kommerzielle Produkte einbindbar. Vorteil: Transparenz, Community, Kosten. Linux: über 90% der Server weltweit.",
+    "explanation": "Open Source: Quellcode zugänglich. GPL: Änderungen müssen auch Open Source bleiben (Copyleft). MIT/Apache: auch in kommerzielle Produkte einbindbar. Vorteil: Transparenz, Community, Kosten. Linux läuft auf einem Großteil der Server weltweit.",
     "topic": "Informatik"
   },
   {
@@ -452,7 +452,7 @@
       "Massenhafter Versand unerwünschter Werbemails ohne betrügerische Absicht"
     ],
     "correct": 1,
-    "explanation": "Phishing: gefälschte Bankseite, dringende Aufforderung (Social Engineering). Spear Phishing: gezielt auf Person. Smishing: per SMS. Schutz: URL prüfen, kein Klick auf Links in E-Mails, 2-Faktor-Authentifizierung. 90% der Cyberangriffe beginnen mit Phishing.",
+    "explanation": "Phishing: gefälschte Bankseite, dringende Aufforderung (Social Engineering). Spear Phishing: gezielt auf Person. Smishing: per SMS. Schutz: URL prüfen, kein Klick auf Links in E-Mails, 2-Faktor-Authentifizierung. Ein Großteil aller Cyberangriffe beginnt mit Phishing.",
     "topic": "Informatik"
   },
   {

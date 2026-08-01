@@ -20,7 +20,7 @@
       "Der Ausfallswinkel ist immer doppelt so groß wie der Einfallswinkel zum Lot"
     ],
     "correct": 1,
-    "explanation": "Reflexionsgesetz: alpha = alpha (Einfallswinkel = Ausfallswinkel). Beide Winkel werden vom Einfallslot gemessen. Anwendung: ebener Spiegel, Hohlspiegel, Retroreflektoren. Spiegelbild: seitenverkehrt, gleich groß.",
+    "explanation": "Reflexionsgesetz: alpha₁ = alpha₂ (Einfallswinkel = Ausfallswinkel). Beide Winkel werden vom Einfallslot gemessen. Anwendung: ebener Spiegel, Hohlspiegel, Retroreflektoren. Spiegelbild: seitenverkehrt, gleich groß.",
     "topic": "Optik"
   },
   {
@@ -44,7 +44,7 @@
       "Der Abstand zweier benachbarter Wellenberge des Lichts im betreffenden Medium"
     ],
     "correct": 1,
-    "explanation": "n = c/v. Größeres n → langsameres Licht, stärkere Brechung. Luft: n ≈ 1 (genau 1,0003). Wasser: 1,33. Glas: 1,4-1,9. Diamant: 2,42 (daher Brillanz). Snellius: n₁·sin(alpha₁) = n₂·sin(alpha₂).",
+    "explanation": "n = c/v. Größeres n → langsameres Licht, stärkere Brechung. Luft: n ≈ 1 (rund 1,0003). Wasser: 1,33. Glas: 1,4-1,9. Diamant: 2,42 (daher Brillanz). Snellius: n₁·sin(alpha₁) = n₂·sin(alpha₂).",
     "topic": "Optik"
   },
   {
@@ -92,7 +92,7 @@
       "Eine planparallele Glasplatte, die den Strahlengang lediglich seitlich versetzt"
     ],
     "correct": 1,
-    "explanation": "Sammellinse: konvex (bikonvex, plankonvex). Brennpunkt F: parallele Strahlen → Schnittpunkt. Brennweite f. Abbildungsmaßstab: B/G = b/g (Bild/Gegenstand). Reelles Bild (invertiert) oder virtuelles Bild (Lupe, G < f).",
+    "explanation": "Sammellinse: konvex (bikonvex, plankonvex). Brennpunkt F: parallele Strahlen → Schnittpunkt. Brennweite f. Abbildungsmaßstab: B/G = b/g (Bild/Gegenstand). Reelles Bild (invertiert) oder virtuelles Bild (Lupe, g < f).",
     "topic": "Optik"
   },
   {
@@ -104,7 +104,7 @@
       "Ein keilförmiger Glaskörper, der weißes Licht in seine Spektralfarben zerlegt"
     ],
     "correct": 1,
-    "explanation": "Zerstreuungslinse: konkav (bikonkav). Parallele Strahlen → divergieren, als kämen sie aus virtuellem Brennpunkt. f < 0 (negative Brennweite). Kurzsichtige: divergierende Brille oder Kontaktlinse.",
+    "explanation": "Zerstreuungslinse: konkav (bikonkav). Parallele Strahlen → divergieren, als kämen sie aus virtuellem Brennpunkt. f < 0 (negative Brennweite). Kurzsichtige: Brille oder Kontaktlinse mit Zerstreuungslinse.",
     "topic": "Optik"
   },
   {
@@ -116,7 +116,7 @@
       "Der Kehrwert der Brennweite ist die Differenz beider Weiten: 1/f = g - b"
     ],
     "correct": 1,
-    "explanation": "Linsengleichung: 1/f = 1/g + 1/b. Brechlkraft (Dioptrie): D = 1/f. Abbildungsmaßstab: m = b/g. Wenn g = 2f: b = 2f (gleich großes, invertiertes Bild). Wenn g = f: Bild im Unendlichen (Kollimator).",
+    "explanation": "Linsengleichung: 1/f = 1/g + 1/b. Brechkraft (Dioptrie): D = 1/f. Abbildungsmaßstab: m = b/g. Wenn g = 2f: b = 2f (gleich großes, invertiertes Bild). Wenn g = f: Bild im Unendlichen (Kollimator).",
     "topic": "Optik"
   },
   {
@@ -128,7 +128,7 @@
       "Das Verhältnis der Lichtgeschwindigkeiten in Vakuum und im Material der Linse"
     ],
     "correct": 1,
-    "explanation": "Vergrößerung V = B/G. Lupe (Sammellinse, G < f): virtuelles Bild, aufrecht, V = 25/f(cm). Mikroskop: Objektiv (reelles Zwischenbild) × Okular (Lupe). Teleskop: Fernrohrobjektiv × Okular.",
+    "explanation": "Vergrößerung V = B/G. Lupe (Sammellinse, g < f): virtuelles Bild, aufrecht, V = 25/f(cm). Mikroskop: Objektivvergrößerung × Okularvergrößerung. Fernrohr: V = f(Objektiv) / f(Okular).",
     "topic": "Optik"
   },
   {
@@ -140,7 +140,7 @@
       "Ein nach außen gewölbter Spiegel, der Strahlen aufweitet und das Sichtfeld vergrößert"
     ],
     "correct": 1,
-    "explanation": "Hohlspiegel (Konkavspiegel): Brennpunkt F auf Spiegelseite. Gegenstand außerhalb F: reelles, invertiertes Bild. Gegenstand innerhalb F: virtuelles, vergrößertes Bild. Parabolspiegel: kein Abbildungsfehler (sphärischer Spiegel: Koma).",
+    "explanation": "Hohlspiegel (Konkavspiegel): Brennpunkt F auf Spiegelseite. Gegenstand außerhalb F: reelles, invertiertes Bild. Gegenstand innerhalb F: virtuelles, vergrößertes Bild. Sphärischer Spiegel: sphärische Aberration (Randstrahlen werden zu stark gebündelt). Parabolspiegel: bündelt achsenparalleles Licht exakt in einem Punkt.",
     "topic": "Optik"
   },
   {
@@ -152,7 +152,7 @@
       "Ein Farbfilter, der nur bestimmte Wellenlängen bis zur Netzhaut durchtreten lässt"
     ],
     "correct": 1,
-    "explanation": "Auge: Hornhaut (feste Brechkraft ca. 43 dpt), Linse (variabel 19-33 dpt, Akkommodation). Stäbchen: Helligkeitsempfindlich, kein Farben. Zapfen: 3 Typen (R, G, B). Blinder Fleck: kein Lichtsensor am Sehnervenaustritt.",
+    "explanation": "Auge: Hornhaut (feste Brechkraft ca. 43 dpt), Linse (variabel 19-33 dpt, Akkommodation). Stäbchen: helligkeitsempfindlich, keine Farbwahrnehmung. Zapfen: 3 Typen (rot-, grün- und blauempfindlich). Blinder Fleck: keine Sinneszellen am Sehnervenaustritt.",
     "topic": "Optik"
   },
   {
@@ -164,7 +164,7 @@
       "Die Hornhaut ist ungleichmäßig gekrümmt, Punkte werden als Striche abgebildet"
     ],
     "correct": 1,
-    "explanation": "Myopie: Bild vor Netzhaut. Ursache: Bulbus (Augapfel) zu lang oder Hornhaut zu stark gekrümmt. Korrektur: divergierende Linse (negative Brechkraft). Zunehmendes Problem weltweit (Bildschirmarbeit, Lesen).",
+    "explanation": "Myopie: Bild vor Netzhaut. Ursache: Bulbus (Augapfel) zu lang oder Hornhaut zu stark gekrümmt. Korrektur: Zerstreuungslinse (negative Brechkraft). Zunehmendes Problem weltweit (Bildschirmarbeit, Lesen).",
     "topic": "Optik"
   },
   {
@@ -176,7 +176,7 @@
       "Der Augeninnendruck steigt an und schädigt allmählich die Fasern des Sehnervs"
     ],
     "correct": 1,
-    "explanation": "Hyperopie: Bild würde hinter Netzhaut. Korrektur: konvexe Linse (positive Brechkraft). Alterssichtigkeit (Presbyopie): Linse verliert Elastizität → Akkommodationsverlust. Lesebrille nötig ab ca. 45 Jahren.",
+    "explanation": "Hyperopie: Bild würde hinter Netzhaut. Korrektur: Sammellinse (positive Brechkraft). Alterssichtigkeit (Presbyopie): Linse verliert Elastizität → Akkommodationsverlust. Lesebrille nötig ab ca. 45 Jahren.",
     "topic": "Optik"
   },
   {
@@ -248,7 +248,7 @@
       "Überlagerung zweier Wellen zu Verstärkung oder Auslöschung der Gesamtamplitude"
     ],
     "correct": 1,
-    "explanation": "Dopplereffekt: Ambulanz fährt vorbei (höheres Geräusch beim Nähern, niedrigeres beim Entfernen). Anwendung: Radargeschwindigkeitsmessung, Ultraschall (Blutfluss), Rotverschiebung (Hubble, expandierendes Universum).",
+    "explanation": "Dopplereffekt: Rettungswagen fährt vorbei (höherer Ton beim Nähern, tieferer beim Entfernen). Anwendung: Radargeschwindigkeitsmessung, Ultraschall (Blutfluss), Rotverschiebung (Hubble, expandierendes Universum).",
     "topic": "Wellen"
   },
   {
@@ -260,7 +260,7 @@
       "Richtungsänderung von Wellen beim Übergang in ein Medium mit anderer Dichte"
     ],
     "correct": 1,
-    "explanation": "Superpositionsprinzip: Wellen überlagern sich linear. Konstruktive Interferenz: Amplituden addieren sich. Destruktive Interferenz: Amplituden subtrahieren sich (Auslöschung). Anwendung: Doppelspaltexperiment (Wellencharakter des Lichts), Noise-Cancelling-Kopfhörer.",
+    "explanation": "Superpositionsprinzip: Wellen überlagern sich linear. Konstruktive Interferenz: Amplituden addieren sich. Destruktive Interferenz: Amplituden subtrahieren sich (Auslöschung). Anwendung: Doppelspaltexperiment (Wellencharakter des Lichts), Kopfhörer mit aktiver Geräuschunterdrückung.",
     "topic": "Wellen"
   },
   {
@@ -284,7 +284,7 @@
       "Der Bereich sehr kurzwelliger, ionisierender Strahlung zwischen 0,01 nm und 10 nm"
     ],
     "correct": 1,
-    "explanation": "EM-Spektrum: alle propagieren mit c im Vakuum. Radiowellen (km) → Mikrowellen (cm) → IR (mu m) → Sichtbar (nm) → UV (nm) → Röntgen (pm) → Gamma (pm, fm). Energie steigt mit Frequenz: E = h·f.",
+    "explanation": "EM-Spektrum: alle breiten sich im Vakuum mit c aus. Radiowellen (km) → Mikrowellen (cm) → IR (mu m) → Sichtbar (nm) → UV (nm) → Röntgen (pm) → Gamma (pm, fm). Energie steigt mit Frequenz: E = h·f.",
     "topic": "Wellen"
   },
   {
@@ -320,11 +320,11 @@
       "Sonnenlicht überlagert sich in dünnen Wasserfilmen zu farbigen Streifenmustern"
     ],
     "correct": 1,
-    "explanation": "Regenbogen: Brechung + Reflexion + Dispersion in Regentropfen. Primärer Bogen: 42° (Rot außen, Violett innen), eine innere Reflexion. Sekundärer Bogen: 51°, zwei Reflexionen (Farben umgekehrt). Stets dem Beobachter gegenüber der Sonne.",
+    "explanation": "Regenbogen: Brechung + Reflexion + Dispersion in Regentropfen. Primärer Bogen: 42° (Rot außen, Violett innen), eine innere Reflexion. Sekundärer Bogen: 51°, zwei Reflexionen (Farben umgekehrt). Erscheint stets auf der der Sonne gegenüberliegenden Seite (Sonne im Rücken des Beobachters).",
     "topic": "Optik"
   },
   {
-    "question": "Was ist stehende Welle?",
+    "question": "Was ist eine stehende Welle?",
     "options": [
       "Eine Welle, die sich mit gleichbleibender Geschwindigkeit in eine Richtung fortbewegt",
       "Überlagerung gegenläufiger Wellen mit festen Knoten und Bäuchen ohne Energietransport",
@@ -344,7 +344,7 @@
       "Mehrfaches Zurückwerfen von Schall an Wänden mit langsam abklingendem Nachhall"
     ],
     "correct": 1,
-    "explanation": "Resonanz: Anregungsfrequenz = Eigenfrequenz. Beispiele: Brücke (Tacoma Narrows, 1940), Weinglas durch Ton zersprengen, MRT (Kernspinresonanz), Radioempfang. Dämpfung reduziert Resonanzamplitude.",
+    "explanation": "Resonanz: Anregungsfrequenz = Eigenfrequenz. Beispiele: Brücke (Tacoma Narrows, 1940), ein Weinglas durch einen Ton zerspringen lassen, MRT (Kernspinresonanz), Radioempfang. Dämpfung reduziert Resonanzamplitude.",
     "topic": "Wellen"
   },
   {
@@ -368,7 +368,7 @@
       "Elektromagnetische Wellen hoher Frequenz, die menschliches Gewebe durchdringen"
     ],
     "correct": 1,
-    "explanation": "Ultraschall: f > 20 kHz. Medizin: Echographie, Pränataldiagnostik (kein Röntgen nötig). Echolokation: Fledermäuse, Wale. Piezoelektrischer Effekt: Quarzkristall erzeugt Ultraschall bei Anlegen von Wechselspannung.",
+    "explanation": "Ultraschall: f > 20 kHz. Medizin: Sonografie, Pränataldiagnostik (kein Röntgen nötig). Echolokation: Fledermäuse, Wale. Piezoelektrischer Effekt: Quarzkristall erzeugt Ultraschall bei Anlegen von Wechselspannung.",
     "topic": "Wellen"
   },
   {
@@ -416,7 +416,7 @@
       "Ein Glasstab, in dem Licht durch fortlaufende Brechung gebündelt bleibt"
     ],
     "correct": 1,
-    "explanation": "Glasfaser: Kern (n ≈ 1,5) + Mantel (n ≈ 1,46). Totalreflexion hält Licht im Kern. Geringer Verlust (<0,2 dB/km). Bandbreite: bis TBit/s. Einmodenfaser (Monomode) vs. Multimode. Anwendung: Internet, Medizin (Endoskop).",
+    "explanation": "Glasfaser: Kern (n ≈ 1,5) + Mantel (n ≈ 1,46). Totalreflexion hält Licht im Kern. Geringer Verlust (<0,2 dB/km). Datenrate: bis Tbit/s. Einmodenfaser vs. Mehrmodenfaser. Anwendung: Internet, Medizin (Endoskop).",
     "topic": "Optik"
   },
   {
@@ -428,7 +428,7 @@
       "Sehr langwellige Strahlung im Meterbereich, die zur Funkübertragung genutzt wird"
     ],
     "correct": 1,
-    "explanation": "Infrarot: 0,78 mu m – 1 mm. Nahe IR (NIR): Fernbedienungen. Mittleres IR: molekulare Schwingungen (Spektroskopie). Ferne IR (FIR): Wärmestrahlung. Sonne: max. Emission ca. 500 nm, aber auch viel IR. Gewächshauseffekt: IR-Rückstrahlung.",
+    "explanation": "Infrarot: 0,78 mu m – 1 mm. Nahe IR (NIR): Fernbedienungen. Mittleres IR: molekulare Schwingungen (Spektroskopie). Ferne IR (FIR): Wärmestrahlung. Sonne: max. Emission ca. 500 nm, aber auch viel IR. Treibhauseffekt: IR-Rückstrahlung.",
     "topic": "Wellen"
   },
   {
@@ -452,7 +452,7 @@
       "Eine hauchdünne Schicht, die auffallendes Licht durch Interferenz farbig macht"
     ],
     "correct": 1,
-    "explanation": "Polaroidfilter: Jodkristalle in Stretchfolie ausgerichtet. Transmissionsachse: lässt nur paralleles Licht durch. Zwei Filter 90° zueinander: kein Licht. Anwendung: Sonnenbrillen (reduziert Reflexblendung), LCD-Displays (Flüssigkristalle rotieren Polarisation).",
+    "explanation": "Polaroidfilter: Jod in einer gestreckten Kunststofffolie ausgerichtet. Durchlassachse: lässt nur Licht durch, das parallel dazu schwingt. Zwei Filter 90° zueinander: kein Licht. Anwendung: Sonnenbrillen (verringert Blendung durch Reflexe), Flüssigkristallbildschirme (Flüssigkristalle drehen die Polarisationsebene).",
     "topic": "Optik"
   },
   {
@@ -476,7 +476,7 @@
       "Zurückwerfen des einfallenden Lichts an einer glatten und glänzenden Oberfläche"
     ],
     "correct": 1,
-    "explanation": "Fluoreszenz: kurzlebig (< 10⁻⁸ s nach Anregung). Photon absorbiert → Elektron in höheres Niveau → Emission bei längerer Wellenlänge (niedrigerer Energie). Stokes-Verschiebung. Phosphoreszenz: länger anhaltend (Minute bis Stunden, \"Nachleuchteffekt\").",
+    "explanation": "Fluoreszenz: kurzlebig (< 10⁻⁸ s nach Anregung). Photon absorbiert → Elektron in höheres Niveau → Emission bei längerer Wellenlänge (niedrigerer Energie). Stokes-Verschiebung. Phosphoreszenz: länger anhaltend (Minuten bis Stunden, \"Nachleuchteffekt\").",
     "topic": "Optik"
   }
 ]

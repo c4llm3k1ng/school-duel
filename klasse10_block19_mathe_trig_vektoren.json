@@ -8,7 +8,7 @@
       "Formeln, mit denen der Flächeninhalt aus den drei Seiten berechnet wird"
     ],
     "correct": 1,
-    "explanation": "Merkhilfe: Gia-Ko-A (sin=Geg/Hyp, cos=An/Hyp, tan=Geg/An). Im rechtwinkligen Dreieck: Hypotenuse = längste Seite, dem rechten Winkel gegenüber. tan(alpha) = sin(alpha)/cos(alpha).",
+    "explanation": "Merkhilfe GAGA-HHAG: sin = Gegenkathete/Hypotenuse, cos = Ankathete/Hypotenuse, tan = Gegenkathete/Ankathete. Im rechtwinkligen Dreieck: Hypotenuse = längste Seite, dem rechten Winkel gegenüber. tan(alpha) = sin(alpha)/cos(alpha).",
     "topic": "Trigonometrie"
   },
   {
@@ -20,7 +20,7 @@
       "Die Katheten stehen im selben Verhältnis wie Kathete zu Hypotenuse: a/b = b/c"
     ],
     "correct": 1,
-    "explanation": "Pythagoras: a² + b² = c². Katheten a, b; Hypotenuse c. Beispiel: 3-4-5-Dreieck (9+16=25). Anwendung: Abstände, Diagonalen, 3D-Diagonale (a²+b²+c²=d²). Beweis: viele (geometrisch, algebraisch).",
+    "explanation": "Pythagoras: a² + b² = c². Katheten a, b; Hypotenuse c. Beispiel: 3-4-5-Dreieck (9+16=25). Anwendung: Abstände, Diagonalen, 3D-Raumdiagonale im Quader (a²+b²+c²=d²). Es gibt zahlreiche Beweise, geometrische wie algebraische.",
     "topic": "Geometrie"
   },
   {
@@ -32,7 +32,7 @@
       "0; 1/2; Wurzel(3)/2; Wurzel(2)/2; 1"
     ],
     "correct": 1,
-    "explanation": "Standardwerte: sin(0°)=0, sin(30°)=0,5, sin(45°)=Wurzel(2)/2 ≈ 0,707, sin(60°)=Wurzel(3)/2 ≈ 0,866, sin(90°)=1. Cos: sin und cos vertauscht (cos(30°)=Wurzel(3)/2, cos(60°)=0,5).",
+    "explanation": "Standardwerte: sin(0°)=0, sin(30°)=0,5, sin(45°)=Wurzel(2)/2 ≈ 0,707, sin(60°)=Wurzel(3)/2 ≈ 0,866, sin(90°)=1. Beim Kosinus stehen dieselben Werte in umgekehrter Reihenfolge (cos(30°)=Wurzel(3)/2, cos(60°)=0,5).",
     "topic": "Trigonometrie"
   },
   {
@@ -56,7 +56,7 @@
       "In jedem Dreieck sind die Seitenquadrate proportional zum Sinus der Gegenwinkel: a²/sin(alpha) = b²/sin(beta)"
     ],
     "correct": 1,
-    "explanation": "Sinussatz: a/sin(alpha) = b/sin(beta) = c/sin(gamma). R = Umkreisradius. Anwendung: WSW (Winkel-Seite-Winkel) und SSW (Seite-Seite-Winkel) bekannt. Mehrdeutigkeit beim SSW-Fall (zwei mögliche Dreiecke).",
+    "explanation": "Sinussatz: a/sin(alpha) = b/sin(beta) = c/sin(gamma) = 2R, wobei R der Umkreisradius ist. Anwendung: WSW (Winkel-Seite-Winkel) und SSW (Seite-Seite-Winkel) bekannt. Mehrdeutigkeit beim SSW-Fall (zwei mögliche Dreiecke).",
     "topic": "Trigonometrie"
   },
   {
@@ -92,7 +92,7 @@
       "Exponentialfunktion mit rein positiven Werten und einer waagerechten Asymptote"
     ],
     "correct": 1,
-    "explanation": "Sinusfunktion: D = R, W = [-1; 1]. Periode 2pi. f(x) = a·sin(b·x+c)+d: a = Amplitude, b = Frequenzfaktor (Periode = 2pi/b), c = Phasenverschiebung, d = Verschiebung in y-Richtung. Ableitung: cos(x).",
+    "explanation": "Sinusfunktion: D = R, W = [-1; 1]. Periode 2pi. f(x) = a·sin(b·x+c)+d: a = Amplitude, b = Frequenzfaktor (Periode = 2pi/|b|), c = Phasenverschiebung, d = Verschiebung in y-Richtung. Ableitung: cos(x).",
     "topic": "Trigonometrie"
   },
   {
@@ -104,7 +104,7 @@
       "Quadrat der Sinusfunktion, also cos(x) = sin²(x), mit ausschließlich positiven Werten"
     ],
     "correct": 1,
-    "explanation": "cos(x): gerade Funktion (achsensymmetrisch). Maximum bei x=0 (cos(0)=1). Minimum bei x=pi (cos(pi)=-1). Ableitung: -sin(x). Pythagoräischer Identität: sin²(x)+cos²(x)=1. Verschiebung: cos(x)=sin(x+pi/2).",
+    "explanation": "cos(x): gerade Funktion (achsensymmetrisch). Maximum bei x=0 (cos(0)=1). Minimum bei x=pi (cos(pi)=-1). Ableitung: -sin(x). Pythagoreische Identität: sin²(x)+cos²(x)=1. Verschiebung: cos(x)=sin(x+pi/2).",
     "topic": "Trigonometrie"
   },
   {
@@ -152,7 +152,7 @@
       "Ein Winkel, der sich direkt aus der Differenz der beiden Richtungswinkel ergibt"
     ],
     "correct": 1,
-    "explanation": "Skalarprodukt (inneres Produkt): a·b = a₁b₁+a₂b₂ (2D). 3D: + a₃b₃. Geometrisch: |a|·|b|·cos(alpha). Anwendung: Winkel zwischen Vektoren, Orthogonalität (a·b=0). Nicht kommutativ: a·b = b·a (doch kommutativ!).",
+    "explanation": "Skalarprodukt (inneres Produkt): a·b = a₁b₁+a₂b₂ (2D). 3D: + a₃b₃. Geometrisch: |a|·|b|·cos(alpha). Anwendung: Winkel zwischen Vektoren, Orthogonalität (a·b=0). Kommutativ: a·b = b·a.",
     "topic": "Vektoren"
   },
   {
@@ -176,7 +176,7 @@
       "|a| = a₁ - a₂ in 2D, in 3D zusätzlich - a₃: die Differenz der Komponenten"
     ],
     "correct": 1,
-    "explanation": "Betrag (Euklid. Norm): Satz des Pythagoras in 2D und 3D. Einheitsvektor: e = a/|a| (Betrag = 1). Abstand zweier Punkte P und Q: |PQ| = |(Q-P)|.",
+    "explanation": "Betrag (euklidische Norm): Satz des Pythagoras in 2D und 3D. Einheitsvektor: e = a/|a| (Betrag = 1). Abstand zweier Punkte P und Q: |PQ| = |Q - P|.",
     "topic": "Vektoren"
   },
   {
@@ -188,7 +188,7 @@
       "Vektor der Länge 0, der keine Richtung besitzt und bei der Addition neutral ist"
     ],
     "correct": 1,
-    "explanation": "Einheitsvektor: |e| = 1. Normieren: e = a/|a|. Basisvektoren: e₁ = (1,0,0), e₂ = (0,1,0), e₃ = (0,0,1). Jeder Vektor als Linearkombination: a = a₁·e₁ + a₂·e₂ + a₃·e₃.",
+    "explanation": "Einheitsvektor: |e| = 1. Normieren: e = a/|a| (nur für a ungleich Nullvektor). Basisvektoren: e₁ = (1,0,0), e₂ = (0,1,0), e₃ = (0,0,1). Jeder Vektor als Linearkombination: a = a₁·e₁ + a₂·e₂ + a₃·e₃.",
     "topic": "Vektoren"
   },
   {
@@ -200,7 +200,7 @@
       "Vektor, der senkrecht auf einer Ebene steht und deren Lage festlegt"
     ],
     "correct": 1,
-    "explanation": "Ortsvektor OP = Koordinaten des Punktes P. Verbindungsvektor AB = OB - OA = B - A. Mittelpunkt M zweier Punkte A, B: OM = (OA + OB)/2 = ((A+B)/2).",
+    "explanation": "Ortsvektor OP = Koordinaten des Punktes P. Verbindungsvektor AB = OB - OA = B - A. Mittelpunkt M zweier Punkte A, B: OM = (OA + OB)/2 = (A+B)/2.",
     "topic": "Vektoren"
   },
   {
@@ -212,7 +212,7 @@
       "g: x = a + s·u + t·v mit dem Aufpunkt a und zwei Richtungsvektoren u und v"
     ],
     "correct": 1,
-    "explanation": "Geradengleichung parameterform: x = a + t·u. a: ein Punkt auf g. u: Richtungsvektor. t: alle reellen Zahlen → alle Punkte der Geraden. Zwei Geraden: parallel (Richtungsvektoren kollinear), schneidend oder windschief.",
+    "explanation": "Geradengleichung in Parameterform: x = a + t·u. a: ein Punkt auf g. u: Richtungsvektor. t: alle reellen Zahlen → alle Punkte der Geraden. Zwei Geraden: parallel (Richtungsvektoren kollinear), identisch, schneidend oder windschief (windschief nur im Raum).",
     "topic": "Vektoren"
   },
   {
@@ -224,7 +224,7 @@
       "A = (1/2)·a·b·tan(gamma) für Dreiecke; A = r·alpha für Kreissektoren"
     ],
     "correct": 1,
-    "explanation": "Dreiecksfläche mit Trigonometrie: A = (1/2)·a·b·sin(gamma). Wenn zwei Seiten und eingeschlossener Winkel bekannt. Herons Formel: wenn drei Seiten bekannt (kein Winkel nötig). Kreissektor: A=r²·alpha/2.",
+    "explanation": "Dreiecksfläche mit Trigonometrie: A = (1/2)·a·b·sin(gamma). Wenn zwei Seiten und der eingeschlossene Winkel bekannt sind. Heronsche Formel: wenn drei Seiten bekannt sind (kein Winkel nötig). Kreissektor: A=r²·alpha/2.",
     "topic": "Trigonometrie"
   },
   {
@@ -236,7 +236,7 @@
       "Die Funktion besitzt genau ein Maximum und genau ein Minimum im Verlauf"
     ],
     "correct": 1,
-    "explanation": "Periodische Funktion: Periode p. sin(x): Periode 2pi = 360°. Allgemein f(x) = sin(b·x): Periode = 2pi/b. Kleinste Periode: Grundperiode. Beispiele: Gezeiten, EKG, Ton.",
+    "explanation": "Periodische Funktion: Periode p. sin(x): Periode 2pi = 360°. Allgemein f(x) = sin(b·x): Periode = 2pi/|b|. Kleinste Periode: Grundperiode. Beispiele: Gezeiten, EKG, Ton.",
     "topic": "Trigonometrie"
   },
   {
@@ -276,7 +276,7 @@
     "topic": "Vektoren"
   },
   {
-    "question": "Was ist Linearkombination von Vektoren?",
+    "question": "Was ist eine Linearkombination von Vektoren?",
     "options": [
       "Produkt zweier Vektoren, bei dem die Komponenten paarweise multipliziert werden",
       "Summe von Vektoren, die zuvor jeweils mit einem Skalar multipliziert wurden",
@@ -308,7 +308,7 @@
       "Die Länge des Richtungsvektors u, angetragen im gegebenen Punkt P"
     ],
     "correct": 1,
-    "explanation": "Abstand Punkt P von Gerade g: Lotfußpunkt F auf g bestimmen (F = a + t₀·u, wobei FP · u = 0). Dann d = |FP|. Alternativ: Formel d = |AP × u| / |u| (3D, Kreuzprodukt).",
+    "explanation": "Abstand Punkt P von Gerade g: Lotfußpunkt F auf g bestimmen (F = a + t₀·u, wobei FP · u = 0). Dann d = |FP|. Alternativ: Formel d = |AP × u| / |u| (3D, Kreuzprodukt; A ist der Aufpunkt der Geraden).",
     "topic": "Vektoren"
   },
   {
@@ -324,7 +324,7 @@
     "topic": "Vektoren"
   },
   {
-    "question": "Was ist die Flächenformel für Parallelogramm mit Vektoren?",
+    "question": "Was ist die Flächenformel für ein Parallelogramm mit Vektoren?",
     "options": [
       "A = a · b = a₁b₁ + a₂b₂ in 2D, in 3D das Skalarprodukt beider Vektoren",
       "A = |a₁b₂ - a₂b₁| in 2D, in 3D |a × b|, also der Betrag des Kreuzprodukts",
@@ -380,7 +380,7 @@
       "Abbildung eines Körpers, bei der alle Kanten maßstabsgetreu wiedergegeben werden"
     ],
     "correct": 1,
-    "explanation": "Schrägbild (kavalier perspective): Frontfläche maßstabsgetreu, Tiefenkanten unter 45° und halbiert. Alternativ: Normalperspektive, Zentralperspektive, isometrische Projektion. Wichtig für räumliches Vorstellungsvermögen.",
+    "explanation": "Schrägbild (Kavalierperspektive): Frontfläche maßstabsgetreu, Tiefenkanten unter 45° und halbiert. Alternativ: Militärperspektive, Zentralperspektive, isometrische Projektion. Wichtig für räumliches Vorstellungsvermögen.",
     "topic": "Geometrie"
   },
   {
@@ -392,7 +392,7 @@
       "U = pi·r und A = pi²·r"
     ],
     "correct": 1,
-    "explanation": "Kreis: U = 2·pi·r = pi·d. A = pi·r². pi ≈ 3,14159. Bogen: b = r·alpha (alpha in rad). Kreissektor: A = r²·alpha/2. Annäherung: pi ≈ 22/7 oder 355/113.",
+    "explanation": "Kreis: U = 2·pi·r = pi·d. A = pi·r². pi ≈ 3,14159. Bogen: b = r·alpha (alpha in rad). Kreissektor: A = r²·alpha/2. Näherungsbrüche: pi ≈ 22/7 oder 355/113.",
     "topic": "Geometrie"
   },
   {
@@ -428,7 +428,7 @@
       "Die Gradangabe liefert genauere Funktionswerte, da sie ohne die Kreiszahl pi auskommt"
     ],
     "correct": 1,
-    "explanation": "Wichtig: Taschenrechner auf richtigen Modus setzen! DEG: Winkel in Grad. RAD: Winkel in Bogenmaß (Radiant). sin(180°) = 0, sin(pi) ≈ 0. cos(360°) = 1, cos(2pi) = 1. Bei Analysis immer Bogenmaß.",
+    "explanation": "Wichtig: Taschenrechner auf richtigen Modus setzen! DEG: Winkel in Grad. RAD: Winkel in Bogenmaß (Radiant). sin(180°) = 0, sin(pi) = 0. cos(360°) = 1, cos(2pi) = 1. Bei Analysis immer Bogenmaß.",
     "topic": "Trigonometrie"
   },
   {
@@ -464,7 +464,7 @@
       "Den Umfang des Kreissektors, der zum Winkel alpha am Einheitskreis gehört"
     ],
     "correct": 1,
-    "explanation": "Steigungswinkel alpha: tan(alpha) = m (Steigung der Geraden y = mx + b). Steile Gerade: tan(alpha) groß. Waagerecht: tan(0°) = 0. 45°-Gerade: tan(45°) = 1. Sinussatz mit tan: sin/cos = tan.",
+    "explanation": "Steigungswinkel alpha: tan(alpha) = m (Steigung der Geraden y = mx + b). Steile Gerade: tan(alpha) groß. Waagerecht: tan(0°) = 0. 45°-Gerade: tan(45°) = 1. Quotientenbeziehung: tan(alpha) = sin(alpha)/cos(alpha).",
     "topic": "Trigonometrie"
   },
   {
