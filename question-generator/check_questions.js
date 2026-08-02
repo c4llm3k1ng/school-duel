@@ -40,10 +40,16 @@ const norm = s => String(s).toLowerCase()
   .replace(/\s+/g, ' ')
   .trim();
 
-// Zahlwert extrahieren, um wertgleiche Optionen zu finden ("84€" vs "84 Euro")
+// Zahlwert extrahieren. ACHTUNG deutsche Schreibweise: der Punkt ist
+// Tausendertrennzeichen, das Komma das Dezimalzeichen. "40.000" ist
+// vierzigtausend, nicht 40,0 – genau daran ist diese Regel zuvor gescheitert.
 function numsOf(s) {
-  const m = String(s).match(/-?\d+(?:[.,]\d+)?/g);
-  return m ? m.map(x => parseFloat(x.replace(',', '.'))).filter(n => !Number.isNaN(n)) : [];
+  const m = String(s).match(/-?\d{1,3}(?:\.\d{3})+(?:,\d+)?|-?\d+(?:,\d+)?|-?\d+(?:\.\d+)?/g);
+  if (!m) return [];
+  return m.map(x => {
+    if (/^-?\d{1,3}(\.\d{3})+(,\d+)?$/.test(x)) x = x.replace(/\./g, '');  // Tausenderpunkte weg
+    return parseFloat(x.replace(',', '.'));
+  }).filter(n => !Number.isNaN(n));
 }
 
 // Nur knappe Ergebnisoptionen ("x = 3", "84€", "0,2") auf Wertgleichheit pruefen.
