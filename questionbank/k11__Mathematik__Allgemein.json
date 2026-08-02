@@ -36,25 +36,25 @@
     "topic": "Differentialrechnung – Produkt- und Kettenregel"
   },
   {
-    "correct": 1,
-    "explanation": "Der Vektor AB wird berechnet als B - A = (5-2 | 1-3 | 7-1) = (3 | -2 | 6). Die Länge eines Vektors (x|y|z) ist die Wurzel aus (x^2 + y^2 + z^2). Also |AB| = √(3^2 + (-2)^2 + 6^2) = √(9 + 4 + 36) = √49 = 7. Ah, ich habe mich vertan, √49 ist 7, das ist in A. Ich muss die Antwort prüfen. Der Vektor AB ist (3, -2, 6). Länge ist sqrt(3^2 + (-2)^2 + 6^2) = sqrt(9 + 4 + 36) = sqrt(49) = 7. Option A ist 7. Also ist A die richtige Antwort.",
+    "correct": 0,
+    "explanation": "Der Vektor AB ergibt sich als B − A = (5−2 | 1−3 | 7−1) = (3 | −2 | 6). Die Länge eines Vektors (x|y|z) ist √(x² + y² + z²). Also |AB| = √(3² + (−2)² + 6²) = √(9 + 4 + 36) = √49 = 7.",
     "options": [
-      "A) 7",
-      "B) √46",
-      "C) √74",
-      "D) 9"
+      "7",
+      "√46",
+      "√74",
+      "9"
     ],
     "question": "Der Punkt A(2|3|1) und der Punkt B(5|1|7) sind gegeben. Berechnen Sie die Länge des Vektors AB.",
     "topic": "Analytische Geometrie – Vektoren und Längenberechnung"
   },
   {
-    "correct": 2,
-    "explanation": "Die Wahrscheinlichkeit, dass die erste Kugel rot ist, beträgt 5/8 (5 rote von insgesamt 8 Kugeln). Nachdem eine rote Kugel gezogen wurde und nicht zurückgelegt wird, sind noch 4 rote Kugeln und insgesamt 7 Kugeln im Korb. Die Wahrscheinlichkeit, dass auch die zweite Kugel rot ist, beträgt dann 4/7. Die Wahrscheinlichkeit, dass beide Kugeln rot sind, ist das Produkt dieser Einzelwahrscheinlichkeiten: (5/8) * (4/7) = 20/56. Vereinfacht man 20/56, erhält man 5/14. Option B ist 5/14. Ich habe mich wieder vertan. Ich muss die Antwortoptionen und meine Berechnung genau prüfen. 5/8 * 4/7 = 20/56. Gekürzt durch 4 ist 5/14. Option B ist 5/14. Also ist B die richtige Antwort. Ich muss die correct-Index anpassen. Es war Option C, aber meine Berechnung ergab B. Lass mich die Frage und meine Antwortoptionen anpassen oder die Berechnung nochmal prüfen, damit der 'correct' Index stimmt.",
+    "correct": 1,
+    "explanation": "Ohne Zurücklegen ändern sich die Anzahlen nach dem ersten Zug. Erste Kugel rot: 5/8. Danach sind noch 4 rote von insgesamt 7 Kugeln übrig, zweite Kugel rot: 4/7. Beide Ereignisse zusammen über die Pfadregel: 5/8 · 4/7 = 20/56 = 5/14.",
     "options": [
-      "A) 25/64",
-      "B) 5/14",
-      "C) 15/56",
-      "D) 25/56"
+      "25/64",
+      "5/14",
+      "15/56",
+      "25/56"
     ],
     "question": "In einem Korb befinden sich 5 rote und 3 blaue Kugeln. Es werden nacheinander zwei Kugeln ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, dass beide Kugeln rot sind?",
     "topic": "Stochastik – Wahrscheinlichkeitsrechnung"
@@ -85,12 +85,12 @@
   },
   {
     "correct": 0,
-    "explanation": "Das Volumen des Zylinders ist V = πr²h = 1000 cm³. Die Oberfläche des Zylinders ohne Deckel ist O = πr² (Bodenfläche) + 2πrh (Mantelfläche). Aus der Volumenformel können wir h ausdrücken: h = 1000 / (πr²). Setzen wir dies in die Oberflächenformel ein: O(r) = πr² + 2πr * (1000 / (πr²)) = πr² + 2000/r. Um das Minimum zu finden, leiten wir O(r) nach r ab und setzen die Ableitung gleich Null: O'(r) = 2πr - 2000/r². Setze O'(r) = 0: 2πr = 2000/r² => 2πr³ = 2000 => r³ = 1000/π. Diesen Wert für r setzen wir in die Formel für h ein: h = 1000 / (πr²) = 1000 / (π * (1000/π)^(2/3)). Es ist einfacher, 2πr = 2000/r² in h = 1000 / (πr²) einzusetzen. Aus 2πr = 2000/r² folgt πr² = 1000/r. Wir wissen h = 1000/(πr²). Wenn wir für 1000/r den Wert 2πr³ einsetzen, erhalten wir h = (2πr³)/(πr²) = 2r. Falsch, ich habe einen Fehler in der Herleitung gemacht. O'(r) = 2πr - 2000/r² = 0 => 2πr = 2000/r² => 2πr³ = 2000 => r³ = 1000/π. Wir haben h = 1000 / (πr²). Setzen wir r³ = 1000/π ein, so ist r² = (1000/π)^(2/3). Dann h = 1000 / (π * (1000/π)^(2/3)) = 1000 / (π^(1/3) * 1000^(2/3)). Dies ist keine einfache Beziehung. Ich muss die Ableitung nochmal überprüfen. O'(r) = 2πr - 2000r^(-2). Also 2πr - 2000/r² = 0. Dann 2πr = 2000/r². Wir haben h = 1000/(πr²). Aus der Ableitung wissen wir, dass 2πr * r² = 2000, also 2πr³ = 2000. Und wir wissen πr²h = 1000. Multiplizieren wir die Volumenformel mit 2: 2πr²h = 2000. Da 2πr³ = 2000 und 2πr²h = 2000, muss 2πr³ = 2πr²h gelten. Das bedeutet r³ = r²h, und da r nicht Null ist, folgt r = h. Also h = r.",
+    "explanation": "Volumen: V = πr²h = 1000, daraus h = 1000/(πr²). Oberfläche ohne Deckel: O(r) = πr² + 2πrh = πr² + 2000/r. Ableiten und null setzen: O'(r) = 2πr − 2000/r² = 0, also 2πr³ = 2000. Aus V = 1000 folgt 2πr²h = 2000. Beide rechten Seiten sind gleich, also 2πr³ = 2πr²h und damit r = h. Die Oberfläche wird minimal, wenn Höhe und Radius gleich groß sind.",
     "options": [
-      "A) h = r",
-      "B) h = 2r",
-      "C) h = (1/2)r",
-      "D) h = 4r"
+      "h = r",
+      "h = 2r",
+      "h = (1/2)r",
+      "h = 4r"
     ],
     "question": "Ein zylindrischer Behälter ohne Deckel soll bei einem Volumen von 1000 cm³ die geringste Oberfläche haben. Wenn r der Radius und h die Höhe des Zylinders ist, welcher Zusammenhang muss zwischen r und h gelten, damit die Oberfläche minimal ist?",
     "topic": "Differentialrechnung – Optimierungsprobleme"
