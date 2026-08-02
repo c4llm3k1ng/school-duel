@@ -1,0 +1,194 @@
+[
+  {
+    "correct": 1,
+    "explanation": "Die Note 2 kommt viermal vor, insgesamt gibt es 10 Noten. Die relative Häufigkeit ist die absolute Häufigkeit geteilt durch die Gesamtanzahl: 4 : 10 = 0,4. Das entspricht 40 %. Der Wert 4 ist nur die absolute Häufigkeit.",
+    "options": [
+      "0,2",
+      "0,4",
+      "2,5",
+      "4"
+    ],
+    "question": "Gegeben sind die Noten in einer Mathematikarbeit: 2, 3, 1, 4, 2, 2, 5, 3, 2, 1. Wie hoch ist die relative Häufigkeit der Note 2?",
+    "topic": "Relative Häufigkeit"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das arithmetische Mittel ist die Summe aller Werte geteilt durch die Anzahl der Werte: (14 + 15 + 13 + 16 + 17) : 5 = 75 : 5 = 15 Jahre.",
+    "options": [
+      "16 Jahre",
+      "15,5 Jahre",
+      "15 Jahre",
+      "14 Jahre"
+    ],
+    "question": "Eine Gruppe von fünf Freunden hat folgende Alter: 14, 15, 13, 16, 17. Was ist das arithmetische Mittel ihres Alters?",
+    "topic": "Arithmetisches Mittel (Mittelwert)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Modus (Modalwert) ist der Wert, der am häufigsten vorkommt. Rot kommt dreimal vor, Blau zweimal, Grün und Gelb je einmal. Der Modus ist also Rot.",
+    "options": [
+      "Rot",
+      "Blau",
+      "Grün",
+      "Gelb"
+    ],
+    "question": "Bei einer Befragung zu Lieblingsfarben wurden folgende Antworten gesammelt: Rot, Blau, Grün, Rot, Gelb, Rot, Blau. Welches ist der Modus (Modalwert) dieser Datenreihe?",
+    "topic": "Modus (Modalwert)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Für den Median werden die Werte zuerst der Größe nach sortiert: 1, 2, 3, 4, 5, 6, 7, 8. Bei einer geraden Anzahl von Werten ist der Median das arithmetische Mittel der beiden mittleren Werte, also (4 + 5) : 2 = 4,5.",
+    "options": [
+      "4",
+      "4,5",
+      "5",
+      "5,5"
+    ],
+    "question": "Eine Statistik erfasste die Anzahl der verpassten Telefonanrufe in einem Büro an 8 Tagen: 3, 7, 2, 5, 8, 4, 6, 1. Was ist der Median dieser Datenreihe?",
+    "topic": "Median"
+  },
+  {
+    "correct": 3,
+    "explanation": "Das arithmetische Mittel liegt bei (9 * 3000 + 15000) : 10 = 4200 Euro, obwohl außer dem Chef niemand so viel verdient. Der Median liegt bei 3000 Euro und beschreibt das typische Einkommen besser, weil er von einzelnen Ausreißern kaum beeinflusst wird. Der Modus wäre hier zwar ebenfalls 3000 Euro, ist aber bei vielen verschiedenen Werten unbrauchbar. Die Spannweite ist kein Lagemaß, sondern ein Streumaß.",
+    "options": [
+      "Das arithmetische Mittel",
+      "Der Modus",
+      "Die Spannweite",
+      "Der Median"
+    ],
+    "question": "In einer kleinen Firma verdienen 9 Angestellte jeweils 3000 Euro pro Monat. Der Chef verdient 15000 Euro pro Monat. Welche Kenngröße beschreibt das 'typische' Einkommen in dieser Firma am besten, wenn man den Chef mitzählt?",
+    "topic": "Lagemaße und Ausreißer"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Spannweite ist die Differenz zwischen dem größten und dem kleinsten Wert. Der größte Wert ist 25 °C, der kleinste 16 °C. Die Spannweite beträgt 25 - 16 = 9 °C.",
+    "options": [
+      "10 °C",
+      "9 °C",
+      "8 °C",
+      "7 °C"
+    ],
+    "question": "Die Höchsttemperaturen über zehn Tage in einer Stadt waren (in °C): 18, 20, 22, 19, 21, 25, 17, 23, 24, 16. Was ist die Spannweite dieser Temperaturen?",
+    "topic": "Spannweite"
+  },
+  {
+    "correct": 3,
+    "explanation": "Man multipliziert die Gesamtanzahl mit der relativen Häufigkeit: 250 * 0,60 = 150 Schüler. Die 60 sind nur der Prozentsatz, nicht die Anzahl.",
+    "options": [
+      "60 Schüler",
+      "100 Schüler",
+      "125 Schüler",
+      "150 Schüler"
+    ],
+    "question": "In einer Umfrage unter 250 Schülern gaben 60 % an, täglich Hausaufgaben zu machen. Wie viele Schüler sind das absolut?",
+    "topic": "Absolute und relative Häufigkeit"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Grundgesamtheit ist die gesamte Gruppe, über die eine Aussage getroffen werden soll, hier alle Wahlberechtigten in Deutschland. Die 1000 Befragten sind eine ausgewählte Teilmenge davon, also eine Stichprobe. Würde man alle befragen, wäre es eine Vollerhebung.",
+    "options": [
+      "Eine Stichprobe",
+      "Die Grundgesamtheit",
+      "Eine Vollerhebung",
+      "Ein Merkmal"
+    ],
+    "question": "Ein Meinungsforschungsinstitut befragt 1000 zufällig ausgewählte Bürger in Deutschland nach ihrer politischen Präferenz, um eine Aussage über die gesamte Bevölkerung treffen zu können. Was stellt die Gruppe der 1000 befragten Bürger dar?",
+    "topic": "Grundgesamtheit und Stichprobe"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die relative Häufigkeit ist die absolute Häufigkeit geteilt durch die Gesamtanzahl: 15 : 25 = 0,60. Das entspricht 60 %. Eine relative Häufigkeit liegt immer zwischen 0 und 1, ein Wert wie 1,67 ist deshalb unmöglich.",
+    "options": [
+      "0,15",
+      "0,40",
+      "0,60",
+      "1,67"
+    ],
+    "question": "In einer Klasse mit 25 Schülern haben 15 Schüler das Fach Biologie gewählt. Wie groß ist die relative Häufigkeit der Biologie-Wähler?",
+    "topic": "Relative Häufigkeit"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das arithmetische Mittel ist die Summe aller Werte geteilt durch die Anzahl der Werte: (2 + 3 + 1 + 4 + 2) : 5 = 12 : 5 = 2,4.",
+    "options": [
+      "3,0",
+      "2,5",
+      "2,4",
+      "2,0"
+    ],
+    "question": "Die Noten von Max in den letzten fünf Mathematikarbeiten sind: 2, 3, 1, 4, 2. Welchen Notendurchschnitt (arithmetisches Mittel) hat Max?",
+    "topic": "Arithmetisches Mittel"
+  },
+  {
+    "correct": 3,
+    "explanation": "Zuerst werden die Werte sortiert: 12, 13, 14, 15, 16, 17. Bei einer geraden Anzahl von Werten ist der Median das arithmetische Mittel der beiden mittleren Werte, also (14 + 15) : 2 = 14,5 Jahre. Ohne Sortieren käme man fälschlich auf (12 + 16) : 2 = 14.",
+    "options": [
+      "12 Jahre",
+      "13,5 Jahre",
+      "14 Jahre",
+      "14,5 Jahre"
+    ],
+    "question": "Eine Gruppe von 6 Freunden hat folgende Altersangaben (in Jahren): 13, 15, 12, 16, 14, 17. Welches Alter ist der Median dieser Gruppe?",
+    "topic": "Median"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Modalwert ist der Wert, der am häufigsten vorkommt. Die Größe 41 kommt dreimal vor, die Größe 39 zweimal, die Größen 38, 40 und 42 je einmal. Der Modalwert ist also 41.",
+    "options": [
+      "41",
+      "40",
+      "39",
+      "38"
+    ],
+    "question": "In einer Klasse wurden folgende Schuhgrößen notiert: 38, 41, 39, 41, 40, 41, 42, 39. Welches ist der Modalwert (Modus) dieser Datenreihe?",
+    "topic": "Modalwert"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Spannweite ist die Differenz zwischen dem größten und dem kleinsten Wert. Der größte Wert ist 2 °C, der kleinste -5 °C. Die Spannweite beträgt 2 - (-5) = 2 + 5 = 7 °C.",
+    "options": [
+      "7 °C",
+      "5 °C",
+      "3 °C",
+      "2 °C"
+    ],
+    "question": "Die Tiefsttemperaturen in einer Stadt über eine Woche waren: -5 °C, -2 °C, 0 °C, 1 °C, -3 °C, 2 °C, -4 °C. Wie groß ist die Spannweite dieser Temperaturen?",
+    "topic": "Spannweite"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Summe aller Einkommen beträgt 99 * 2000 + 100000 = 198000 + 100000 = 298000 Euro. Geteilt durch 100 Personen ergibt das ein arithmetisches Mittel von 2980 Euro. Der Median liegt dagegen bei 2000 Euro und beschreibt das typische Einkommen besser, weil er von dem einen Ausreißer kaum beeinflusst wird.",
+    "options": [
+      "2000 Euro",
+      "2980 Euro",
+      "3000 Euro",
+      "51000 Euro"
+    ],
+    "question": "In einem Dorf leben 100 Personen. 99 Personen verdienen jeweils 2000 Euro pro Monat, eine Person verdient 100000 Euro pro Monat. Wie groß ist das arithmetische Mittel der Einkommen?",
+    "topic": "Arithmetisches Mittel und Ausreißer"
+  },
+  {
+    "correct": 2,
+    "explanation": "Zuerst werden die Werte sortiert: 200, 205, 210, 215, 220, 225, 230. Bei 7 Werten ist der Median der 4. Wert, also 215 cm. Das untere Quartil ist der Median der unteren Hälfte 200, 205, 210, also 205 cm.",
+    "options": [
+      "215 cm",
+      "210 cm",
+      "205 cm",
+      "200 cm"
+    ],
+    "question": "Eine Sportgruppe hat folgende Weiten im Standweitsprung erzielt (in cm): 210, 225, 200, 230, 215, 220, 205. Welchen Wert hat das untere Quartil (Q1) dieser Datenreihe?",
+    "topic": "Quartile"
+  },
+  {
+    "correct": 1,
+    "explanation": "In den ersten 8 Jahren betrug die Summe 8 * 450 = 3600 Schüler. Über 9 Jahre beträgt die Summe 9 * 460 = 4140 Schüler. Im 9. Jahr waren es also 4140 - 3600 = 540 Schüler. Da es 100 mehr als im 8. Jahr waren, gab es im 8. Jahr 540 - 100 = 440 Schüler.",
+    "options": [
+      "350",
+      "440",
+      "540",
+      "560"
+    ],
+    "question": "In den ersten 8 Jahren betrug der Durchschnitt der Schülerzahlen an einer Schule 450. Im 9. Jahr liegt die Schülerzahl um 100 höher als im 8. Jahr, und der Durchschnitt über alle 9 Jahre steigt auf 460. Wie hoch war die Schülerzahl im 8. Jahr?",
+    "topic": "Anwendung des arithmetischen Mittels"
+  }
+]

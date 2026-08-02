@@ -1,0 +1,674 @@
+[
+  {
+    "correct": 0,
+    "explanation": "Mitternachtsformel: x = (-b ± √(b²-4ac)) / 2a. Diskriminante D = b²-4ac: D>0: zwei Lösungen, D=0: eine Lösung, D<0: keine reelle Lösung.",
+    "options": [
+      "x = (-b ± √(b²-4ac)) / 2a",
+      "x = (b ± √(b²-4ac)) / 2a",
+      "x = (-b ± √(b²+4ac)) / 2a",
+      "x = (-b ± √(b²-4ac)) / 2c"
+    ],
+    "question": "Wie lautet die Lösungsformel (Mitternachtsformel) für ax² + bx + c = 0?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "x² - 5x + 6 = 0. Faktorisieren: (x-2)(x-3) = 0. x₁ = 2, x₂ = 3. Probe: 4-10+6=0 ✓, 9-15+6=0 ✓",
+    "options": [
+      "x₁=1, x₂=6",
+      "x₁=2, x₂=3",
+      "x₁=-2, x₂=-3",
+      "x₁=3, x₂=6"
+    ],
+    "question": "Welche Lösungen hat x² - 5x + 6 = 0?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "D = b²-4ac = 4²-4·1·5 = 16-20 = -4. Da D < 0, hat die Gleichung keine reellen Lösungen (aber zwei komplexe).",
+    "options": [
+      "D = 36",
+      "D = -4",
+      "D = 4",
+      "D = 0"
+    ],
+    "question": "Was ist die Diskriminante von x² + 4x + 5 = 0?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Scheitelpunktform: y = a(x-d)² + e. Scheitelpunkt S(d|e). a>0: Parabel öffnet nach oben. a<0: nach unten. Normalform durch quadratische Ergänzung umwandelbar.",
+    "options": [
+      "y = ax² + bx + c",
+      "y = a(x-d)² + e",
+      "y = a(x-d)(x-e)",
+      "y = (ax-d)² + e"
+    ],
+    "question": "Wie lautet die Scheitelpunktform einer Parabel?",
+    "topic": "Parabeln"
+  },
+  {
+    "correct": 0,
+    "explanation": "Scheitelpunktform y = a(x-d)² + e. Hier: d=3, e=2. Scheitelpunkt S(3|2). Die Parabel hat Minimum bei x=3 mit y=2.",
+    "options": [
+      "S(3|2)",
+      "S(-3|2)",
+      "S(3|-2)",
+      "S(2|3)"
+    ],
+    "question": "Was ist der Scheitelpunkt von y = (x-3)² + 2?",
+    "topic": "Parabeln"
+  },
+  {
+    "correct": 1,
+    "explanation": "Quadratische Ergänzung: x²+bx+c = (x+b/2)² - (b/2)² + c. Beispiel: x²+6x+5 = (x+3)²-9+5 = (x+3)²-4. Scheitelpunkt S(-3|-4).",
+    "options": [
+      "Ausklammern des Leitkoeffizienten aus allen Gliedern",
+      "Umformung von ax²+bx+c in die Scheitelpunktform",
+      "Zerlegung eines Polynoms in seine Linearfaktoren",
+      "Näherungsverfahren zur Bestimmung von Nullstellen"
+    ],
+    "question": "Was ist quadratische Ergänzung?",
+    "topic": "Quadratische Ergänzung"
+  },
+  {
+    "correct": 1,
+    "explanation": "2x²-8=0 → 2x²=8 → x²=4 → x=±√4 = ±2. Immer ±, da beide Werte die Gleichung erfüllen: 2(4)-8=0 ✓",
+    "options": [
+      "x = ±1",
+      "x = ±2",
+      "x = ±4",
+      "x = ±√2"
+    ],
+    "question": "Wie löst man 2x² - 8 = 0?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Linearfaktor: (x-x₀) bei Nullstelle x₀. Quadratisches Polynom mit Nullstellen x₁, x₂: a·(x-x₁)(x-x₂). Beispiel: x²-5x+6 = (x-2)(x-3).",
+    "options": [
+      "Ein Term zweiten Grades der Form x² + bx + c",
+      "Ein Faktor der Form (x - x₀) zu einer Nullstelle x₀",
+      "Der Koeffizient vor dem linearen Glied eines Polynoms",
+      "Das konstante Glied in einem Produkt von Polynomen"
+    ],
+    "question": "Was ist ein Linearfaktor?",
+    "topic": "Faktorisierung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Lineare Funktion: y = mx + b. m = Steigung (Δy/Δx). b = y-Achsenabschnitt (Wert bei x=0). Gerade im Koordinatensystem.",
+    "options": [
+      "y = a·x² + c",
+      "y = m·x + b",
+      "y = a/x + c",
+      "y = a·√x + c"
+    ],
+    "question": "Was ist eine lineare Funktion?",
+    "topic": "Lineare Funktionen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Gleichsetzen: 2x+1 = -x+4 → 3x = 3 → x = 1. Einsetzen: y = 2(1)+1 = 3. Schnittpunkt S(1|3). Probe: -1+4=3 ✓",
+    "options": [
+      "x = 1, y = 3",
+      "x = 4, y = 1",
+      "x = 0, y = 1",
+      "x = 2, y = 5"
+    ],
+    "question": "Wie berechnet man den Schnittpunkt zweier Geraden y=2x+1 und y=-x+4?",
+    "topic": "Lineare Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Lineares Gleichungssystem (LGS): z.B. 2x+y=5 und x-y=1. Lösungsmethoden: Einsetzverfahren, Additionsverfahren, Gleichsetzverfahren, Matrixrechnung.",
+    "options": [
+      "Eine einzelne Gleichung mit genau einer Unbekannten",
+      "Mehrere Gleichungen, die gleichzeitig erfüllt sein müssen",
+      "Eine Gleichung, in der die Unbekannte quadriert wird",
+      "Mehrere Ungleichungen mit gemeinsamer Lösungsmenge"
+    ],
+    "question": "Was ist ein Gleichungssystem?",
+    "topic": "Gleichungssysteme"
+  },
+  {
+    "correct": 1,
+    "explanation": "Additionsverfahren: (x+y) + (x-y) = 5+1 → 2x=6 → x=3. Einsetzen: 3+y=5 → y=2. Lösung: x=3, y=2.",
+    "options": [
+      "x=2, y=3",
+      "x=3, y=2",
+      "x=4, y=1",
+      "x=1, y=4"
+    ],
+    "question": "Löse das LGS: x+y=5 und x-y=1",
+    "topic": "Gleichungssysteme"
+  },
+  {
+    "correct": 0,
+    "explanation": "Potenzfunktion: f(x) = xⁿ. n>0: Polynom. n=-1: Hyperbel (1/x). n=0,5: Wurzelfunktion (√x). Gerade Exponenten: achsensymmetrisch. Ungerade: punktsymmetrisch.",
+    "options": [
+      "f(x) = xⁿ mit festem Exponenten n",
+      "f(x) = aˣ mit fester Basis a",
+      "f(x) = logₐ(x) mit fester Basis a",
+      "f(x) = sin(x) mit fester Periode 2π"
+    ],
+    "question": "Was ist eine Potenzfunktion?",
+    "topic": "Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "√x ist nur für x≥0 definiert (keine reellen negativen Wurzeln). Ergebnis ist immer ≥0. D=[0;∞), W=[0;∞).",
+    "options": [
+      "D=ℝ, W=ℝ",
+      "D=[0;∞), W=[0;∞)",
+      "D=ℝ, W=[0;∞)",
+      "D=(0;∞), W=ℝ"
+    ],
+    "question": "Was ist der Definitions- und Wertebereich von f(x) = √x?",
+    "topic": "Funktionen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Umkehrfunktion: y=2x+3 nach x auflösen: y-3=2x → x=(y-3)/2. Also f⁻¹(x)=(x-3)/2. Spiegelung an y=x.",
+    "options": [
+      "f⁻¹(x) = (x-3)/2",
+      "f⁻¹(x) = 2x-3",
+      "f⁻¹(x) = x/2+3",
+      "f⁻¹(x) = (x+3)/2"
+    ],
+    "question": "Was ist die Umkehrfunktion von f(x) = 2x + 3?",
+    "topic": "Umkehrfunktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Betragsfunktion: |3|=3, |-5|=5. Geometrisch: Abstand von 0 auf dem Zahlenstrahl. Betraggleichung |x-2|=3: x-2=3 oder x-2=-3, also x=5 oder x=-1.",
+    "options": [
+      "Der Wert von x mit umgekehrtem Vorzeichen",
+      "Der Abstand von x zur Null, also nie negativ",
+      "Das Quadrat von x, also der Wert x²",
+      "Der auf ganze Zahlen gerundete Wert von x"
+    ],
+    "question": "Was ist der Betrag |x|?",
+    "topic": "Betrag"
+  },
+  {
+    "correct": 1,
+    "explanation": "Exponentialfunktion: f(x)=aˣ. a>1: wachsend (exponentielles Wachstum). 0<a<1: fallend (exponentieller Zerfall). Wichtige Basis: e≈2,718 (eulersche Zahl). Graph schneidet immer y-Achse bei (0|1).",
+    "options": [
+      "f(x) = xⁿ mit festem Exponenten n",
+      "f(x) = aˣ mit Basis a > 0, a ≠ 1",
+      "f(x) = a·x + b mit Steigung a",
+      "f(x) = a/x mit Konstante a ≠ 0"
+    ],
+    "question": "Was ist eine Exponentialfunktion?",
+    "topic": "Exponentialfunktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "ln(x): Basis e≈2,718. ln(e)=1. ln(1)=0. ln(eˣ)=x. Rechenregeln: ln(a·b)=ln(a)+ln(b), ln(aⁿ)=n·ln(a).",
+    "options": [
+      "Der Logarithmus zur Basis 10, also log₁₀(x)",
+      "Der Logarithmus zur Basis e, also logₑ(x)",
+      "Der Logarithmus zur Basis 2, also log₂(x)",
+      "Der Kehrwert des Logarithmus, also 1/log(x)"
+    ],
+    "question": "Was ist der natürliche Logarithmus ln(x)?",
+    "topic": "Logarithmen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Logarithmengesetze: log(a·b) = log(a)+log(b). log(a/b)=log(a)-log(b). log(aⁿ)=n·log(a). Basis egal (gilt für jeden Logarithmus).",
+    "options": [
+      "log(a) · log(b)",
+      "log(a) + log(b)",
+      "log(a) - log(b)",
+      "log(a+b)"
+    ],
+    "question": "Was gilt: log(a·b) = ?",
+    "topic": "Logarithmen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Polynom: f(x)=aₙxⁿ+...+a₁x+a₀. Grad n = höchster Exponent. Grad 1: linear. Grad 2: quadratisch. Grad 3: kubisch. Nullstellen: max. n Stück (Fundamentalsatz der Algebra).",
+    "options": [
+      "Eine Summe von Potenzen von x mit beliebigen reellen Exponenten",
+      "Eine Summe von Potenzen von x mit ganzzahligen, nicht negativen Exponenten",
+      "Ein Quotient aus zwei Termen mit der Variablen x im Nenner",
+      "Eine Funktion, bei der die Variable x unter einer Wurzel steht"
+    ],
+    "question": "Was ist eine Polynomfunktion?",
+    "topic": "Polynome"
+  },
+  {
+    "correct": 1,
+    "explanation": "Gebrochen rational: f(x)=g(x)/h(x). Polstelle bei h(x₀)=0 (und g(x₀)≠0). Hebbare Definitionslücke wenn auch g(x₀)=0. Beispiel: f(x)=(x²-1)/(x-1) = (x+1) für x≠1.",
+    "options": [
+      "Eine Summe aus zwei Polynomen g(x) und h(x)",
+      "Ein Quotient aus zwei Polynomen g(x) und h(x)",
+      "Ein Polynom, dessen Koeffizienten Brüche sind",
+      "Eine Funktion mit der Variablen x im Exponenten"
+    ],
+    "question": "Was ist eine gebrochenrationale Funktion?",
+    "topic": "Rationale Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Asymptoten: Vertikale Asymptote x=a (Polstelle). Horizontale Asymptote y=c (für x→±∞). Schräge Asymptote y=mx+b. Beispiel f(x)=1/x: x=0 und y=0 als Asymptoten.",
+    "options": [
+      "Ein Punkt, in dem der Graph die x-Achse schneidet",
+      "Eine Gerade, der sich der Graph beliebig weit annähert",
+      "Der höchste oder tiefste Punkt einer Parabel",
+      "Eine Gerade, an der der Graph gespiegelt verläuft"
+    ],
+    "question": "Was ist eine Asymptote?",
+    "topic": "Rationale Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Normalform: y=ax²+bx+c. a≠0. Wenn a=1: Normalparabel. Umwandlung in Scheitelpunktform durch quadratische Ergänzung. Vertex bei x=-b/(2a).",
+    "options": [
+      "y = a(x-d)² + e",
+      "y = ax² + bx + c",
+      "y = a(x-x₁)(x-x₂)",
+      "y = a·x² + c"
+    ],
+    "question": "Was ist die Normalform einer quadratischen Funktion?",
+    "topic": "Parabeln"
+  },
+  {
+    "correct": 1,
+    "explanation": "Nullstelle: x-Koordinate des Schnittpunkts mit x-Achse. Berechnung: f(x)=0 setzen und lösen. Reelle Nullstellen ≠ komplexe Nullstellen.",
+    "options": [
+      "Der tiefste Punkt im Verlauf des Graphen",
+      "Ein x-Wert x₀, an dem f(x₀) = 0 gilt",
+      "Der y-Wert des Graphen an der Stelle x = 0",
+      "Ein Punkt, an dem die Krümmung wechselt"
+    ],
+    "question": "Was ist eine Nullstelle einer Funktion?",
+    "topic": "Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Steigung m = Δy/Δx = (y₂-y₁)/(x₂-x₁). m>0: steigende Gerade. m<0: fallend. m=0: waagerecht. m→∞: senkrecht (nicht definiert). Steigung = Tangens des Winkels mit x-Achse.",
+    "options": [
+      "Die Länge des Graphen zwischen zwei Punkten",
+      "Das Verhältnis Δy/Δx im Steigungsdreieck",
+      "Den Winkel der Geraden zur y-Achse",
+      "Den Schnittpunkt der Geraden mit der y-Achse"
+    ],
+    "question": "Was beschreibt die Steigung einer Geraden geometrisch?",
+    "topic": "Lineare Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Geradengleichung y=mx+b. Durch P(x₁|y₁): y₁=mx₁+b → b=y₁-mx₁. Beispiel: P(2|5), m=3: b=5-3·2=-1. Gerade: y=3x-1.",
+    "options": [
+      "b = y₁ · m · x₁",
+      "b = y₁ - m·x₁",
+      "b = y₁ + m·x₁",
+      "b = m·x₁ - y₁"
+    ],
+    "question": "Wie lautet die Formel für den y-Achsenabschnitt b einer Geraden durch P₁(x₁|y₁) mit Steigung m?",
+    "topic": "Lineare Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Absolutglied a₀: Wert der Funktion bei x=0, also der y-Achsenabschnitt. In f(x)=3x²-2x+5 ist das Absolutglied 5. f(0)=5.",
+    "options": [
+      "Der Koeffizient vor der höchsten Potenz von x",
+      "Das Glied ohne x, also der Funktionswert f(0)",
+      "Der größte im Polynom auftretende Exponent",
+      "Der Koeffizient vor dem linearen Glied x"
+    ],
+    "question": "Was ist ein Absolutglied (konstantes Glied) in einem Polynom?",
+    "topic": "Polynome"
+  },
+  {
+    "correct": 1,
+    "explanation": "Vieta: Bei x²+px+q=0 gilt: x₁+x₂=-p und x₁·x₂=q. Beispiel x²-5x+6=0: x₁+x₂=5=-(−5) ✓, x₁·x₂=6 ✓. Praktisch zum Raten von Nullstellen.",
+    "options": [
+      "x₁+x₂=q und x₁·x₂=p",
+      "x₁+x₂=-p und x₁·x₂=q",
+      "x₁+x₂=p und x₁·x₂=-q",
+      "x₁+x₂=-q und x₁·x₂=p"
+    ],
+    "question": "Was ist die Vieta-Formel für x₁+x₂ und x₁·x₂ bei x²+px+q=0?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "x²>4 → |x|>2 → x>2 oder x<-2. Achtung beim Multiplizieren/Dividieren mit negativer Zahl: Ungleichungszeichen umdrehen. Lösungsmenge: (-∞;-2) ∪ (2;+∞).",
+    "options": [
+      "x > 2 oder x < 2",
+      "x > 2 oder x < -2",
+      "x > 4 oder x < -4",
+      "-2 < x < 2"
+    ],
+    "question": "Was ist eine Ungleichung und wie löst man x² > 4?",
+    "topic": "Ungleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Fundamentalsatz der Algebra: Grad-n-Polynom hat genau n Nullstellen in ℂ. Reell: höchstens n. Beispiel: x²+1=0 hat keine reellen, aber zwei komplexe Lösungen (±i).",
+    "options": [
+      "Jedes Polynom vom Grad n besitzt genau n reelle Nullstellen",
+      "Jedes Polynom vom Grad n hat in ℂ genau n Nullstellen",
+      "Jede Polynomgleichung lässt sich durch Wurzelausdrücke lösen",
+      "Jedes Polynom mit ungeradem Grad hat genau eine Nullstelle"
+    ],
+    "question": "Was ist der Hauptsatz der Algebra?",
+    "topic": "Polynome"
+  },
+  {
+    "correct": 1,
+    "explanation": "Exponentialgleichung: aˣ=b. Logarithmieren: x·ln(a)=ln(b) → x=ln(b)/ln(a). Beispiel: 2ˣ=8 → x=ln(8)/ln(2)=3. Oder direkt: 2³=8.",
+    "options": [
+      "Eine quadratische Gleichung, gelöst mit der Lösungsformel",
+      "Eine Exponentialgleichung, gelöst durch Logarithmieren",
+      "Eine lineare Gleichung, gelöst durch Äquivalenzumformung",
+      "Eine Wurzelgleichung, gelöst durch Quadrieren beider Seiten"
+    ],
+    "question": "Was ist eine Gleichung vom Typ aˣ = b?",
+    "topic": "Exponentialgleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "|2x-4|=6. Fall 1: 2x-4=6 → 2x=10 → x=5. Fall 2: 2x-4=-6 → 2x=-2 → x=-1. Lösungsmenge: {5; -1}.",
+    "options": [
+      "x=5 oder x=1",
+      "x=5 oder x=-1",
+      "x=-5 oder x=1",
+      "x=-5 oder x=-1"
+    ],
+    "question": "Was ist die Lösung von |2x - 4| = 6?",
+    "topic": "Betrag"
+  },
+  {
+    "correct": 1,
+    "explanation": "Normalform der Geraden: ax+by+c=0. Jede Geradengleichung lässt sich so schreiben. Vorteil: schließt auch senkrechte Geraden ein (b=0). Steigungsform y=mx+b: Sonderfall.",
+    "options": [
+      "y = m·x + b",
+      "a·x + b·y + c = 0",
+      "y = a(x-d)² + e",
+      "x/a + y/b = 1"
+    ],
+    "question": "Was ist eine Geradengleichung in Normalform?",
+    "topic": "Lineare Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Substitution: bei biquadratischen Gleichungen (x⁴+bx²+c=0). u=x²: u²+bu+c=0. Löse für u, dann x=±√u. Beispiel: x⁴-5x²+4=0, u=x²: (u-1)(u-4)=0, u=1 oder u=4, x=±1 oder x=±2.",
+    "options": [
+      "Einsetzen konkreter Zahlenwerte für die Variable x",
+      "Ersetzen eines Terms wie x² durch eine neue Variable u",
+      "Einsetzen einer gefundenen Lösung zur Probe",
+      "Zerlegen des Terms in ein Produkt aus Faktoren"
+    ],
+    "question": "Was ist Substitution bei quadratischen Gleichungen?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Grad: höchster Exponent. 3x⁵-2x³+x: Grad 5. Konstante ≠ 0: Grad 0. Nullpolynom: kein Grad definiert. Grad bestimmt: Anzahl Nullstellen (max.), Verhalten für x→±∞.",
+    "options": [
+      "Die Anzahl der reellen Nullstellen des Polynoms",
+      "Der größte Exponent mit einem Koeffizienten ungleich 0",
+      "Die Anzahl der Summanden im Funktionsterm",
+      "Der Funktionswert des Polynoms an der Stelle 0"
+    ],
+    "question": "Was ist der Grad eines Polynoms?",
+    "topic": "Polynome"
+  },
+  {
+    "correct": 1,
+    "explanation": "Polynomdivision: (x³-x²-4x+4) ÷ (x-1). Ergebnis: x²-4 = (x-2)(x+2). Gesamte Faktorisierung: (x-1)(x-2)(x+2). Nullstellen: 1, 2, -2.",
+    "options": [
+      "Ausmultiplizieren zweier Polynome zu einem Produkt",
+      "Schriftliches Dividieren eines Polynoms durch ein anderes",
+      "Zusammenfassen zweier Polynome durch Addition",
+      "Gliedweises Bestimmen der Ableitung eines Polynoms"
+    ],
+    "question": "Was ist ein Polynomdivision?",
+    "topic": "Polynome"
+  },
+  {
+    "correct": 1,
+    "explanation": "Intervalle: [a;b] = {x∈ℝ | a≤x≤b} (abgeschlossen, Endpunkte gehören dazu). (a;b): offen (Endpunkte nicht). [a;∞): ab a aufwärts. In Mengennotation oder Zahlenstrahl.",
+    "options": [
+      "Der Abstand zwischen den beiden Zahlen a und b",
+      "Alle reellen Zahlen x mit a ≤ x ≤ b",
+      "Alle ganzen Zahlen, die zwischen a und b liegen",
+      "Alle reellen Zahlen x mit a < x < b"
+    ],
+    "question": "Was versteht man unter einem Intervall [a;b]?",
+    "topic": "Zahlenmengen"
+  },
+  {
+    "correct": 1,
+    "explanation": "3x-6<0 → 3x<6 → x<2. Lösungsmenge: (-∞;2). Achtung: bei Multiplikation/Division mit negativer Zahl dreht sich das Ungleichzeichen um.",
+    "options": [
+      "x < 3",
+      "x < 2",
+      "x > 2",
+      "x > 3"
+    ],
+    "question": "Was ist eine lineare Ungleichung und wie löst man 3x - 6 < 0?",
+    "topic": "Ungleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Grenzwertverhalten: Polynome: bestimmt vom führenden Term. xⁿ für n gerade → +∞ für x→±∞. xⁿ für n ungerade: +∞ für x→+∞ und -∞ für x→-∞. Wichtig für Skizzen.",
+    "options": [
+      "Der Graph nähert sich für große x einer waagerechten Geraden",
+      "Die Funktionswerte wachsen für große x über alle Grenzen",
+      "Der Graph wechselt an einer Stelle seine Krümmung",
+      "Die Funktionswerte wiederholen sich in festen Abständen"
+    ],
+    "question": "Was bedeutet f(x) → ∞ für x → ∞?",
+    "topic": "Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Gaußsche Summenformel: 1+2+...+n = n(n+1)/2. Gauß berechnete 1+2+...+100 = 100·101/2 = 5050 als Schüler. Geometrische Reihe: a·(qⁿ-1)/(q-1).",
+    "options": [
+      "n²/2",
+      "n(n+1)/2",
+      "n(n-1)/2",
+      "n(n+1)"
+    ],
+    "question": "Was ist die Summenformel für arithmetische Reihen: 1+2+3+...+n?",
+    "topic": "Folgen und Reihen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Man addiert zuerst 7 auf beiden Seiten: 3x = 15. Anschließend teilt man beide Seiten durch 3: x = 5. Probe: 3 ⋅ 5 - 7 = 15 - 7 = 8. ✓",
+    "options": [
+      "x = 3",
+      "x = 4",
+      "x = 5",
+      "x = 6"
+    ],
+    "question": "Was ist die Lösung der Gleichung 3x - 7 = 8?",
+    "topic": "Lineare Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "x² - 10x + 25 passt auf die zweite binomische Formel a² - 2ab + b² = (a - b)². Mit a = x und b = 5 gilt 2 ⋅ x ⋅ 5 = 10x und 5² = 25, also x² - 10x + 25 = (x - 5)². Zur Kontrolle: (x + 5)² = x² + 10x + 25, (x - 5)(x + 5) = x² - 25 und (x - 1)(x - 25) = x² - 26x + 25.",
+    "options": [
+      "(x + 5)²",
+      "(x - 5)²",
+      "(x - 5)(x + 5)",
+      "(x - 1)(x - 25)"
+    ],
+    "question": "Welcher Term ist die faktorisierte Form von x² - 10x + 25?",
+    "topic": "Faktorisierung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Mit der p-q-Formel x₁,₂ = -p/2 ± √((p/2)² - q) und p = 4, q = -5 gilt: x₁,₂ = -2 ± √(4 + 5) = -2 ± 3. Daraus folgt x₁ = 1 und x₂ = -5. Probe über den Satz von Vieta: 1 + (-5) = -4 = -p und 1 ⋅ (-5) = -5 = q. ✓",
+    "options": [
+      "x₁ = 5, x₂ = -1",
+      "x₁ = 1, x₂ = -5",
+      "x₁ = 2, x₂ = -3",
+      "x₁ = -2, x₂ = 3"
+    ],
+    "question": "Bestimme die Lösungen der quadratischen Gleichung x² + 4x - 5 = 0.",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Zuerst wird die äußere Potenz angewendet: (a³ ⋅ b²)² = a⁶ ⋅ b⁴. Beim Dividieren von Potenzen mit gleicher Basis werden die Exponenten subtrahiert: a^(6-2) = a⁴ und b^(4-3) = b¹. Der Term vereinfacht sich also zu a⁴b. Typische Fehler wären a⁵b (Exponenten addiert statt multipliziert) oder a⁴b² (b-Exponent falsch subtrahiert).",
+    "options": [
+      "a⁴b",
+      "a⁴b²",
+      "a⁵b",
+      "a³b²"
+    ],
+    "question": "Vereinfache den Ausdruck (a³ ⋅ b²)² / (a² ⋅ b³).",
+    "topic": "Potenzgesetze"
+  },
+  {
+    "correct": 1,
+    "explanation": "Man subtrahiert zuerst 5 auf beiden Seiten: -2x < 6. Beim Teilen durch eine negative Zahl dreht sich das Ungleichheitszeichen um: x > -3. Probe mit x = 0: 5 - 0 = 5 < 11. ✓",
+    "options": [
+      "x < -3",
+      "x > -3",
+      "x < 3",
+      "x > 3"
+    ],
+    "question": "Welche Lösungsmenge hat die Ungleichung 5 - 2x < 11?",
+    "topic": "Ungleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Steigung zwischen zwei Punkten (x₁ | y₁) und (x₂ | y₂) berechnet man mit m = (y₂ - y₁) / (x₂ - x₁). Eingesetzt: m = (16 - 7) / (5 - 2) = 9 / 3 = 3. Die Funktionsgleichung lautet damit y = 3x + 1.",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "question": "Eine lineare Funktion verläuft durch die Punkte P(2 | 7) und Q(5 | 16). Wie groß ist die Steigung dieser Funktion?",
+    "topic": "Lineare Funktionen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Wegen a = -2 < 0 ist die Parabel nach unten geöffnet, der Scheitelpunkt liefert also das Maximum. Die Scheitelstelle ist t = -b / (2a) = -8 / (2 ⋅ (-2)) = 2 Sekunden. Einsetzen ergibt h(2) = -2 ⋅ 4 + 8 ⋅ 2 + 1 = -8 + 16 + 1 = 9. Die maximale Höhe beträgt 9 Meter.",
+    "options": [
+      "7 Meter",
+      "8 Meter",
+      "9 Meter",
+      "10 Meter"
+    ],
+    "question": "Die Flughöhe eines Geschosses wird durch die Funktion h(t) = -2t² + 8t + 1 beschrieben, wobei h die Höhe in Metern und t die Zeit in Sekunden nach dem Abschuss ist. Welche maximale Höhe erreicht das Geschoss?",
+    "topic": "Parabeln"
+  },
+  {
+    "correct": 1,
+    "explanation": "Einsetzungsverfahren: y = 2x - 1 wird in II eingesetzt: 3x + (2x - 1) = 9, also 5x - 1 = 9 und damit 5x = 10, x = 2. Eingesetzt in I: y = 2 ⋅ 2 - 1 = 3. Probe in II: 3 ⋅ 2 + 3 = 9. ✓ Die anderen Wertepaare erfüllen zwar Gleichung I, aber nicht Gleichung II.",
+    "options": [
+      "x = 1, y = 1",
+      "x = 2, y = 3",
+      "x = 3, y = 5",
+      "x = 4, y = 7"
+    ],
+    "question": "Löse das folgende lineare Gleichungssystem: I) y = 2x - 1, II) 3x + y = 9.",
+    "topic": "Gleichungssysteme"
+  },
+  {
+    "correct": 0,
+    "explanation": "Mit der p-q-Formel und p = 6, q = -7 gilt: x₁,₂ = -3 ± √(9 + 7) = -3 ± 4. Daraus folgt x₁ = 1 und x₂ = -7. Gleichwertig ist die Faktorisierung (x - 1)(x + 7) = 0. Probe: 1 + (-7) = -6 = -p und 1 ⋅ (-7) = -7 = q. ✓",
+    "options": [
+      "x₁ = 1, x₂ = -7",
+      "x₁ = -1, x₂ = 7",
+      "x₁ = 1, x₂ = 7",
+      "x₁ = -1, x₂ = -7"
+    ],
+    "question": "Löse die quadratische Gleichung: x² + 6x - 7 = 0",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Beim Dividieren von Potenzen mit gleicher Basis werden die Exponenten subtrahiert. Für a: 3 - (-1) = 4, also a⁴. Für b: -2 - 3 = -5, also b⁻⁵ = 1 / b⁵. Der Term ist damit a⁴ / b⁵. Der Definitionsbereich verlangt dabei a ≠ 0 und b ≠ 0.",
+    "options": [
+      "a⁴ / b⁵",
+      "a² / b⁵",
+      "a⁴ / b",
+      "b⁵ / a⁴"
+    ],
+    "question": "Vereinfache den Term: (a³ ⋅ b⁻²) / (a⁻¹ ⋅ b³)",
+    "topic": "Potenzgesetze"
+  },
+  {
+    "correct": 2,
+    "explanation": "Addition von II und III liefert 3x + y = 5, also y = 5 - 3x. Addition von I und III liefert 2x + 3y = 8. Einsetzen ergibt 2x + 3(5 - 3x) = 8, also -7x = -7 und damit x = 1. Daraus folgt y = 5 - 3 = 2 und aus I: z = 6 - 1 - 2 = 3. Probe in II: 2 - 2 + 3 = 3. ✓",
+    "options": [
+      "z = 1",
+      "z = 2",
+      "z = 3",
+      "z = 4"
+    ],
+    "question": "Gegeben ist das lineare Gleichungssystem:\nI: x + y + z = 6\nII: 2x - y + z = 3\nIII: x + 2y - z = 2\nBestimme den Wert von z.",
+    "topic": "Gleichungssysteme"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Term passt auf die zweite binomische Formel a² - 2ab + b² = (a - b)² mit a = 2x und b = 3y, denn (2x)² = 4x², 2 ⋅ 2x ⋅ 3y = 12xy und (3y)² = 9y². Also gilt 4x² - 12xy + 9y² = (2x - 3y)². Zur Kontrolle: (2x + 3y)² = 4x² + 12xy + 9y² und (2x - 3y)(2x + 3y) = 4x² - 9y².",
+    "options": [
+      "(2x - 3y)²",
+      "(2x + 3y)²",
+      "(4x - 9y)²",
+      "(2x - 3y)(2x + 3y)"
+    ],
+    "question": "Faktorisiere den Term: 4x² - 12xy + 9y²",
+    "topic": "Faktorisierung"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Anzahl der reellen Lösungen hängt von der Diskriminante D = b² - 4ac ab. Mit a = 2, b = -3 und c = 5 gilt D = (-3)² - 4 ⋅ 2 ⋅ 5 = 9 - 40 = -31. Da D < 0 ist, gibt es keine reelle Lösung. Eine quadratische Gleichung (a ≠ 0) hat außerdem höchstens zwei reelle Lösungen, unendlich viele sind also grundsätzlich unmöglich.",
+    "options": [
+      "keine reelle Lösung",
+      "genau eine reelle Lösung",
+      "genau zwei reelle Lösungen",
+      "unendlich viele reelle Lösungen"
+    ],
+    "question": "Wie viele reelle Lösungen hat die quadratische Gleichung 2x² - 3x + 5 = 0?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Zuerst bestimmt man die Nullstellen von x² - 4x - 5 = 0. Die Faktorisierung (x + 1)(x - 5) = 0 liefert x₁ = -1 und x₂ = 5. Weil der Koeffizient von x² positiv ist, ist die Parabel nach oben geöffnet und liegt genau zwischen den Nullstellen unterhalb der x-Achse. Die Lösungsmenge ist also -1 < x < 5.",
+    "options": [
+      "-1 < x < 5",
+      "x < -1 oder x > 5",
+      "x < -5 oder x > 1",
+      "-5 < x < 1"
+    ],
+    "question": "Löse die quadratische Ungleichung: x² - 4x - 5 < 0",
+    "topic": "Ungleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Nenner dürfen nicht null werden, also ist D = ℝ ohne 2 und -1/2. Multiplizieren mit (x - 2)(2x + 1) ergibt (x + 3)(2x + 1) = (x + 3)(x - 2). Nach dem Ausklammern von (x + 3) folgt (x + 3)[(2x + 1) - (x - 2)] = 0, also (x + 3)(x + 3) = (x + 3)² = 0. Die Gleichung hat damit nur die Lösung x = -3 (doppelte Nullstelle), und x = -3 liegt im Definitionsbereich. Probe: 0 / (-5) = 0 = 0 / (-5). ✓",
+    "options": [
+      "x = -3",
+      "x = 3",
+      "x = 2",
+      "x = -1/2"
+    ],
+    "question": "Löse die Bruchgleichung für x: (x+3)/(x-2) = (x+3)/(2x+1)",
+    "topic": "Bruchgleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Ist x die Breite in cm, so ist die Länge (x + 6) cm und es gilt x(x + 6) = 112, also x² + 6x - 112 = 0. Die Faktorisierung (x + 14)(x - 8) = 0 liefert x = -14 oder x = 8. Eine Breite kann nicht negativ sein, also entfällt x = -14. Die Breite beträgt 8 cm, die Länge 14 cm. Probe: 8 ⋅ 14 = 112. ✓",
+    "options": [
+      "8 cm",
+      "7 cm",
+      "9 cm",
+      "14 cm"
+    ],
+    "question": "Ein Rechteck hat einen Flächeninhalt von 112 cm². Die Länge ist um 6 cm größer als die Breite. Berechne die Breite des Rechtecks.",
+    "topic": "Quadratische Gleichungen"
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "correct": 0,
+    "explanation": "Der Satz des Pythagoras gilt nur im rechtwinkligen Dreieck: a² + b² = c², wobei c die Hypotenuse (die Seite gegenüber dem rechten Winkel) ist. Einsetzen: 5² + 12² = 25 + 144 = 169. Also c = √169 = 13 cm.",
+    "options": [
+      "13 cm",
+      "17 cm",
+      "7 cm",
+      "15 cm"
+    ],
+    "question": "In einem rechtwinkligen Dreieck sind die beiden Katheten 5 cm und 12 cm lang. Wie lang ist die Hypotenuse?",
+    "topic": "Satz des Pythagoras"
+  },
+  {
+    "correct": 0,
+    "explanation": "Das Volumen eines Zylinders ist V = π ⋅ r² ⋅ h. Der Radius ist die Hälfte des Durchmessers, also r = 2 m. Einsetzen: V = 3,14 ⋅ (2 m)² ⋅ 7 m = 3,14 ⋅ 4 m² ⋅ 7 m = 87,92 m³.",
+    "options": [
+      "87,92 m³",
+      "43,96 m³",
+      "175,84 m³",
+      "351,68 m³"
+    ],
+    "question": "Ein zylindrischer Wassertank hat einen Durchmesser von 4 Metern und eine Höhe von 7 Metern. Welches Volumen in Kubikmetern hat der Tank? (Nutze π ≈ 3,14)",
+    "topic": "Volumenberechnung Zylinder"
+  },
+  {
+    "correct": 0,
+    "explanation": "Im rechtwinkligen Dreieck gilt für einen spitzen Winkel α: cos(α) = Ankathete / Hypotenuse = 8 cm / 10 cm = 0,8. Mit der Umkehrfunktion arccos folgt α = arccos(0,8) ≈ 36,87°, gerundet 36,9°.",
+    "options": [
+      "36,9°",
+      "53,1°",
+      "30,0°",
+      "60,0°"
+    ],
+    "question": "In einem rechtwinkligen Dreieck ist die Ankathete zu einem spitzen Winkel 8 cm lang und die Hypotenuse 10 cm lang. Wie groß ist dieser Winkel (gerundet auf eine Dezimalstelle)?",
+    "topic": "Trigonometrie (Kosinus)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Weil AB parallel zu CD ist, gilt nach dem 1. Strahlensatz ZA / ZC = ZB / ZD. Einsetzen: 4 / 10 = 6 cm / ZD. Umstellen ergibt ZD = 6 cm ⋅ 10 / 4 = 15 cm.",
+    "options": [
+      "15 cm",
+      "12 cm",
+      "6,7 cm",
+      "16 cm"
+    ],
+    "question": "Zwei Geraden schneiden sich in einem Punkt Z. Eine Strecke AB ist parallel zu einer Strecke CD. Die Punkte Z, A, C liegen auf einer Geraden und die Punkte Z, B, D auf einer anderen Geraden. Wenn ZA = 4 cm, ZB = 6 cm und ZC = 10 cm, wie lang ist dann die Strecke ZD?",
+    "topic": "Strahlensätze"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für ein Trapez gilt A = ((a + c) / 2) ⋅ h, wobei a und c die beiden parallelen Seiten sind und h ihr Abstand (die Höhe). Einsetzen: A = ((7 cm + 13 cm) / 2) ⋅ 6 cm = 10 cm ⋅ 6 cm = 60 cm².",
+    "options": [
+      "60 cm²",
+      "120 cm²",
+      "42 cm²",
+      "78 cm²"
+    ],
+    "question": "Ein Trapez hat eine obere parallele Seite von 7 cm, eine untere parallele Seite von 13 cm und eine Höhe von 6 cm. Wie groß ist seine Fläche?",
+    "topic": "Flächenberechnung Trapez"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Oberfläche eines Kegels besteht aus Grundkreis und Mantel: O = π ⋅ r² + π ⋅ r ⋅ s, wobei s die Mantellinie ist. Zuerst s über den Satz des Pythagoras: s = √(r² + h²) = √(36 + 64) = √100 = 10 cm. Dann O = 3,14 ⋅ 36 + 3,14 ⋅ 6 ⋅ 10 = 113,04 + 188,4 = 301,44 cm², gerundet 301 cm².",
+    "options": [
+      "301 cm²",
+      "188 cm²",
+      "113 cm²",
+      "264 cm²"
+    ],
+    "question": "Ein Kegel hat einen Radius von 6 cm und eine Höhe von 8 cm. Berechne seine Oberfläche (gerundet auf ganze Zahlen, nutze π ≈ 3,14).",
+    "topic": "Oberflächenberechnung Kegel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für die Raumdiagonale eines Quaders mit den Kantenlängen l, b und h gilt d = √(l² + b² + h²). Einsetzen: d = √(6² + 3² + 2²) = √(36 + 9 + 4) = √49 = 7 Meter.",
+    "options": [
+      "7 Meter",
+      "11 Meter",
+      "49 Meter",
+      "6,7 Meter"
+    ],
+    "question": "Ein quaderförmiger Raum ist 6 Meter lang, 3 Meter breit und 2 Meter hoch. Wie lang ist die Raumdiagonale, die von einer Ecke zur gegenüberliegenden Ecke verläuft?",
+    "topic": "Raumgeometrie (Raumdiagonale)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Das ist der Satz des Thales: Liegen alle drei Ecken eines Dreiecks auf einem Kreis und ist eine Seite der Durchmesser, dann ist das Dreieck rechtwinklig. Der rechte Winkel von 90° liegt immer an der Ecke gegenüber dem Durchmesser.",
+    "options": [
+      "90°",
+      "60°",
+      "45°",
+      "120°"
+    ],
+    "question": "Ein Dreieck ist so in einen Kreis eingezeichnet, dass alle drei Eckpunkte auf dem Kreisrand liegen und eine der Seiten des Dreiecks genau dem Durchmesser des Kreises entspricht. Welchen Winkel muss das Dreieck an dem Eckpunkt gegenüber dem Durchmesser haben?",
+    "topic": "Kreise (Satz des Thales)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Im rechtwinkligen Dreieck gilt a² + b² = c² mit der Hypotenuse c. Mit a = 6 cm und b = 8 cm: 6² + 8² = 36 + 64 = 100, also c = √100 = 10 cm.",
+    "options": [
+      "10 cm",
+      "12 cm",
+      "14 cm",
+      "7 cm"
+    ],
+    "question": "Ein rechtwinkliges Dreieck hat Kathetenlängen von 6 cm und 8 cm. Wie lang ist die Hypotenuse?",
+    "topic": "Satz des Pythagoras"
+  },
+  {
+    "correct": 3,
+    "explanation": "Der Umfang eines Kreises ist U = 2 ⋅ π ⋅ r. Aus 2πr = 12π folgt r = 6 cm. Für den Flächeninhalt gilt A = π ⋅ r² = π ⋅ (6 cm)² = 36π cm².",
+    "options": [
+      "6π cm²",
+      "12π cm²",
+      "18π cm²",
+      "36π cm²"
+    ],
+    "question": "Ein Kreis hat einen Umfang von 12π cm. Welchen Flächeninhalt besitzt dieser Kreis?",
+    "topic": "Kreisgeometrie"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für jedes gerade Prisma gilt V = Grundfläche ⋅ Höhe. Einsetzen: V = 25 cm² ⋅ 10 cm = 250 cm³.",
+    "options": [
+      "250 cm³",
+      "125 cm³",
+      "500 cm³",
+      "100 cm³"
+    ],
+    "question": "Ein gerades Prisma hat eine Grundfläche von 25 cm² und eine Höhe von 10 cm. Welches Volumen besitzt das Prisma?",
+    "topic": "Volumenberechnung von Prismen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Bei ähnlichen Körpern verhalten sich die Volumina wie die dritte Potenz des Längenverhältnisses. Vom kleineren zum größeren Kegel ist k = 3/2, also k³ = 27/8. Damit ist V_groß = 24 cm³ ⋅ 27/8 = 3 ⋅ 27 cm³ = 81 cm³.",
+    "options": [
+      "36 cm³",
+      "54 cm³",
+      "81 cm³",
+      "108 cm³"
+    ],
+    "question": "Zwei ähnliche Kegel haben ein Längenverhältnis ihrer Radien von 2:3. Wenn der kleinere Kegel ein Volumen von 24 cm³ hat, welches Volumen hat der größere Kegel?",
+    "topic": "Ähnlichkeit von Körpern (Volumenverhältnis)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Nur im rechtwinkligen Dreieck ist der Sinus eines spitzen Winkels erklärt als das Verhältnis der Gegenkathete zur Hypotenuse. Das Verhältnis Ankathete zu Hypotenuse ist der Kosinus, das Verhältnis Gegenkathete zu Ankathete der Tangens.",
+    "options": [
+      "Ankathete zu Hypotenuse",
+      "Gegenkathete zu Hypotenuse",
+      "Gegenkathete zu Ankathete",
+      "Hypotenuse zu Ankathete"
+    ],
+    "question": "In einem rechtwinkligen Dreieck ist der Sinus eines spitzen Winkels definiert als das Verhältnis von welcher Seite zu welcher Seite?",
+    "topic": "Trigonometrie (Grundlagen)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ohne Deckel besteht die Oberfläche aus Mantel und Grundfläche. Mantel: 2 ⋅ π ⋅ r ⋅ h = 2π ⋅ 5 cm ⋅ 10 cm = 100π cm². Grundfläche: π ⋅ r² = π ⋅ (5 cm)² = 25π cm². Zusammen: 100π + 25π = 125π cm².",
+    "options": [
+      "100π cm²",
+      "125π cm²",
+      "150π cm²",
+      "175π cm²"
+    ],
+    "question": "Ein zylindrischer Behälter ohne Deckel hat einen Radius von 5 cm und eine Höhe von 10 cm. Wie groß ist seine Oberfläche (nur Mantel und Boden)?",
+    "topic": "Oberflächenberechnung von Zylindern"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für die Raumdiagonale eines Quaders mit den Kanten a, b, c gilt d = √(a² + b² + c²). Einsetzen: d = √(3² + 4² + 12²) = √(9 + 16 + 144) = √169 = 13 cm.",
+    "options": [
+      "13 cm",
+      "15 cm",
+      "17 cm",
+      "19 cm"
+    ],
+    "question": "Ein Quader hat die Kantenlängen 3 cm, 4 cm und 12 cm. Wie lang ist die Raumdiagonale des Quaders?",
+    "topic": "Satz des Pythagoras im Raum / Quader"
+  },
+  {
+    "correct": 2,
+    "explanation": "Weil AC parallel zu BD ist, gilt nach dem 1. Strahlensatz SA / SB = SC / SD. Wegen S-A-B ist SB = SA + AB = 4 cm + 6 cm = 10 cm. Also 4 / 10 = 6 cm / SD und damit SD = 6 cm ⋅ 10 / 4 = 15 cm. Wegen S-C-D folgt CD = SD − SC = 15 cm − 6 cm = 9 cm.",
+    "options": [
+      "6 cm",
+      "7,5 cm",
+      "9 cm",
+      "10 cm"
+    ],
+    "question": "Zwei Strahlen gehen von einem Scheitelpunkt S aus. Auf dem ersten Strahl liegen die Punkte A und B so, dass S-A-B gilt. Auf dem zweiten Strahl liegen die Punkte C und D so, dass S-C-D gilt. Die Strecke AC ist parallel zur Strecke BD. Wenn SA = 4 cm, AB = 6 cm und SC = 6 cm, wie lang ist dann die Strecke CD?",
+    "topic": "Strahlensatz"
+  }
+]

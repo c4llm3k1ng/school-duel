@@ -1,0 +1,686 @@
+[
+  {
+    "correct": 2,
+    "explanation": "Die Intervallskala ist geeignet, wenn die Abstände zwischen den Werten interpretierbar sind und eine Reihenfolge existiert, aber kein natürlicher Nullpunkt vorhanden ist. 0°C bedeutet nicht die Abwesenheit von Temperatur.",
+    "options": [
+      "Nominalskala",
+      "Ordinalskala",
+      "Intervallskala",
+      "Verhältnisskala"
+    ],
+    "question": "Welches Skalenniveau ist für die Erfassung von Temperaturen in Grad Celsius (z.B. 10°C, 20°C) am besten geeignet?",
+    "topic": "Skalenniveaus"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der Median ist der Wert, der eine geordnete Datenreihe in zwei gleich große Hälften teilt. Zuerst müssen die Daten sortiert werden: 165, 168, 170, 172, 175, 180, 185. Bei einer ungeraden Anzahl von Werten ist der Median der mittlere Wert, hier 172.",
+    "options": [
+      "165 cm",
+      "172 cm",
+      "175 cm",
+      "180 cm"
+    ],
+    "question": "Gegeben sei die folgende unsortierte Datenreihe von Schülergrößen in cm: 172, 168, 185, 170, 175, 165, 180. Welches ist der Median dieser Datenreihe?",
+    "topic": "Lageparameter - Median"
+  },
+  {
+    "correct": 2,
+    "explanation": "Der Interquartilsabstand (IQR) ist die Differenz zwischen dem dritten Quartil (Q3) und dem ersten Quartil (Q1). Die Daten sind bereits sortiert. Das erste Quartil (Q1) ist der Median der unteren Hälfte der Daten (10, 12, 15, 18, 20), also Q1=15. Das dritte Quartil (Q3) ist der Median der oberen Hälfte der Daten (25, 30, 40, 50, 60), also Q3=40. Der IQR ist dann 40 - 15 = 25.",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "question": "Bei einer Untersuchung zur Bearbeitungszeit einer Aufgabe in Minuten wurden folgende Werte erhoben: 10, 12, 15, 18, 20, 25, 30, 40, 50, 60. Bestimmen Sie den Interquartilsabstand (IQR).",
+    "topic": "Streuungsparameter - Interquartilsabstand"
+  },
+  {
+    "correct": 1,
+    "explanation": "Das arithmetische Mittel ist sehr empfindlich gegenüber Ausreißern (extremen Werten), während der Median als robust gegenüber Ausreißern gilt. Ein einzelnes extrem hohes Gehalt zieht das arithmetische Mittel stark nach oben, während der Median, der die Mitte der sortierten Datenreihe darstellt, nur geringfügig oder gar nicht verschoben wird, abhängig von der Anzahl der Daten.",
+    "options": [
+      "Das arithmetische Mittel und der Median würden beide in ähnlichem Maße stark ansteigen.",
+      "Das arithmetische Mittel würde stark steigen, während der Median nur wenig beeinflusst wäre.",
+      "Der Median würde stark steigen, während das arithmetische Mittel nur wenig beeinflusst wäre.",
+      "Beide Werte würden kaum beeinflusst, da es sich nur um eine einzelne Person handelt."
+    ],
+    "question": "Ein Unternehmen gibt an, dass das durchschnittliche Gehalt seiner Mitarbeiter 4.000 Euro beträgt. Wenn jedoch ein neuer Geschäftsführer mit einem Gehalt von 20.000 Euro eingestellt wird, wie würde sich dies am ehesten auf das arithmetische Mittel und den Median der Gehälter auswirken?",
+    "topic": "Lageparameter - Mittelwert und Ausreißer"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die Standardabweichung ist ein Maß für die Streuung von Datenpunkten um den arithmetischen Mittelwert. Eine kleine Standardabweichung bedeutet, dass die Datenpunkte nahe am Mittelwert liegen, während eine große Standardabweichung auf eine breite Streuung hindeutet.",
+    "options": [
+      "Den am häufigsten vorkommenden Wert innerhalb der gesamten Datenreihe.",
+      "Die Spanne zwischen dem größten und dem kleinsten Messwert im gesamten Datensatz.",
+      "Die durchschnittliche Streuung der Werte um den arithmetischen Mittelwert.",
+      "Die Position des mittleren Wertes in der nach Größe sortierten Datenreihe."
+    ],
+    "question": "Was beschreibt die Standardabweichung einer Datenreihe am besten?",
+    "topic": "Streuungsparameter - Standardabweichung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Wahrscheinlichkeit, dass die erste Kugel rot ist, beträgt 5/8. Da die Kugel nicht zurückgelegt wird, sind danach nur noch 7 Kugeln in der Urne, davon 3 blaue. Die Wahrscheinlichkeit, dass die zweite Kugel blau ist (unter der Bedingung, dass die erste rot war), beträgt somit 3/7. Die Gesamtwahrscheinlichkeit ist das Produkt dieser beiden Wahrscheinlichkeiten: (5/8) * (3/7) = 15/56.",
+    "options": [
+      "15/64",
+      "15/56",
+      "8/15",
+      "3/8"
+    ],
+    "question": "In einer Urne befinden sich 5 rote und 3 blaue Kugeln. Es werden zwei Kugeln nacheinander ohne Zurücklegen gezogen. Wie hoch ist die Wahrscheinlichkeit, dass die erste Kugel rot und die zweite Kugel blau ist?",
+    "topic": "Wahrscheinlichkeitsrechnung - Bedingte Wahrscheinlichkeit"
+  },
+  {
+    "correct": 1,
+    "explanation": "Eine Bewertungsskala von 1 bis 5 ist typischerweise eine Ordinalskala, da die Reihenfolge der Werte bedeutsam ist, aber die Abstände zwischen den Werten nicht unbedingt gleichmäßig interpretierbar sind. Für Ordinaldaten ist der Median die robusteste und aussagekräftigste Kennzahl der zentralen Tendenz, da er die Position des mittleren Wertes beschreibt, ohne Abstände vorauszusetzen.",
+    "options": [
+      "Nominalskala; Modus",
+      "Ordinalskala; Median",
+      "Intervallskala; Arithmetisches Mittel",
+      "Verhältnisskala; Arithmetisches Mittel"
+    ],
+    "question": "Eine Umfrage bittet die Teilnehmer, ihre Zufriedenheit mit einem Produkt auf einer Skala von 1 (sehr unzufrieden) bis 5 (sehr zufrieden) zu bewerten. Welches ist das höchste Skalenniveau, das für diese Daten typischerweise angenommen wird, und welche statistische Kennzahl ist dabei am sinnvollsten, um die zentrale Tendenz zu beschreiben?",
+    "topic": "Skalenniveaus und Lageparameter"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die relative Häufigkeit berechnet sich, indem die absolute Häufigkeit (Anzahl der Schüler mit Mathematik als Lieblingsfach) durch die Gesamtzahl der Beobachtungen (Gesamtzahl der Schüler) geteilt wird. Hier: 5 / 25 = 0,2 = 20%.",
+    "options": [
+      "5%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "question": "In einer Schulklasse mit 25 Schülern haben 5 Schüler Mathematik als Lieblingsfach. Welche relative Häufigkeit entspricht dies?",
+    "topic": "Häufigkeiten"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der arithmetische Mittelwert (Durchschnitt) wird berechnet, indem man die Summe aller Werte durch die Anzahl der Werte teilt. (2 + 3 + 2 + 4 + 1) / 5 = 12 / 5 = 2,4.",
+    "options": [
+      "2",
+      "2,4",
+      "2,5",
+      "3"
+    ],
+    "question": "Die Noten von fünf Schülern in einer Mathematikarbeit sind: 2, 3, 2, 4, 1. Was ist der arithmetische Mittelwert dieser Noten?",
+    "topic": "Arithmetisches Mittel"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Standardabweichung ist ein Maß für die Streuung der Daten. Ein hoher Wert bedeutet, dass die Datenpunkte im Durchschnitt weit vom Mittelwert entfernt sind, also stark streuen.",
+    "options": [
+      "nah am Mittelwert liegen.",
+      "weit um den Mittelwert gestreut sind.",
+      "einen hohen Median haben.",
+      "immer normalverteilt sind."
+    ],
+    "question": "Eine hohe Standardabweichung in einem Datensatz deutet darauf hin, dass die Datenpunkte...",
+    "topic": "Standardabweichung und Streuung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die relative Häufigkeit wird berechnet, indem man die absolute Häufigkeit (80 Personen) durch die Gesamtanzahl der Beobachtungen (200 Personen) teilt: 80 / 200 = 0,40.",
+    "options": [
+      "80%",
+      "0,40",
+      "0,80",
+      "20%"
+    ],
+    "question": "Bei einer Umfrage unter 200 Personen gaben 80 an, 'Lesen' sei ihr liebstes Hobby. Wie groß ist die relative Häufigkeit für 'Lesen' als liebstes Hobby?",
+    "topic": "Relative Häufigkeit"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der Interquartilsabstand (IQA) ist die Differenz zwischen dem dritten (Q3) und ersten Quartil (Q1). Er gibt an, in welchem Bereich die mittleren 50% der Daten liegen und ist weniger empfindlich gegenüber Ausreißern als die Spannweite.",
+    "options": [
+      "Er ist der Abstand zwischen dem kleinsten und größten Wert im Datensatz.",
+      "Er beschreibt die Spanne, in der die mittleren 50% aller Datenwerte liegen.",
+      "Er ist immer gleich der Standardabweichung des Datensatzes.",
+      "Er reagiert sehr empfindlich auf extreme Ausreißer im Datensatz."
+    ],
+    "question": "Welche Aussage über den Interquartilsabstand (IQA) ist korrekt?",
+    "topic": "Interquartilsabstand (IQA)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Eine repräsentative Stichprobe ist so ausgewählt, dass ihre Zusammensetzung die Merkmale der gesamten Grundgesamtheit (z.B. Alter, Geschlecht, Einkommen) widerspiegelt. Eine zufällige Auswahl ist dabei oft ein wichtiger Schritt.",
+    "options": [
+      "Sie enthält nur Personen, die vorab eine bestimmte Meinung oder Haltung vertreten.",
+      "Sie ist zufällig ausgewählt und spiegelt die Merkmale der Grundgesamtheit wider.",
+      "Sie ist immer sehr groß, unabhängig von der Größe der Grundgesamtheit.",
+      "Sie wird nur von Experten erstellt, die alle Merkmale der Bevölkerung kennen."
+    ],
+    "question": "Was ist ein entscheidendes Merkmal einer repräsentativen Stichprobe?",
+    "topic": "Stichproben und Repräsentativität"
+  },
+  {
+    "correct": 2,
+    "explanation": "Eine positive Korrelation liegt vor, wenn zwei Variablen tendenziell gemeinsam steigen oder fallen. Steigt die eine Variable (Lernstunden) und damit auch die andere (Punktzahl), ist es eine positive Korrelation. 'Kausal' beschreibt einen Ursache-Wirkung-Zusammenhang, der statistisch allein durch Korrelation nicht bewiesen ist.",
+    "options": [
+      "Negative Korrelation",
+      "Keine Korrelation",
+      "Positive Korrelation",
+      "Kausale Korrelation"
+    ],
+    "question": "In einer Untersuchung wurde festgestellt, dass die Anzahl der gelernten Stunden für eine Prüfung tendenziell mit der erreichten Punktzahl steigt. Welche Art von Korrelation liegt hier vor?",
+    "topic": "Korrelation"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das arithmetische Mittel, die Standardabweichung und die Varianz werden stark von Ausreißern beeinflusst, da sie alle Werte im Datensatz berücksichtigen. Der Median hingegen ist der Wert, der die Daten in zwei gleich große Hälften teilt, und ist daher sehr robust gegenüber extremen Werten.",
+    "options": [
+      "Arithmetisches Mittel",
+      "Standardabweichung",
+      "Median",
+      "Varianz"
+    ],
+    "question": "Welche der folgenden statistischen Kennzahlen ist am wenigsten empfindlich gegenüber extremen Ausreißern in einem Datensatz?",
+    "topic": "Robuste Kennzahlen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die empirische Wahrscheinlichkeit (auch statistische Wahrscheinlichkeit genannt) basiert auf Beobachtungen und Experimenten. Sie beschreibt, wie oft ein Ereignis tatsächlich eingetreten ist, wenn der Versuch oft wiederholt wurde. Die theoretische Wahrscheinlichkeit hingegen basiert auf mathematischen Modellen und Annahmen.",
+    "options": [
+      "Die auf logischer Überlegung und mathematischen Modellen basierende Wahrscheinlichkeit eines Ereignisses.",
+      "Die Häufigkeit eines Ereignisses, die sich in einer langen Reihe tatsächlicher Versuche eingestellt hat.",
+      "Die subjektive, persönliche Einschätzung der Wahrscheinlichkeit eines Ereignisses durch eine Einzelperson.",
+      "Die theoretisch berechnete Wahrscheinlichkeit, dass ein bestimmtes Ereignis niemals eintreten kann."
+    ],
+    "question": "Was beschreibt die empirische Wahrscheinlichkeit?",
+    "topic": "Empirische und theoretische Wahrscheinlichkeit"
+  },
+  {
+    "correct": 0,
+    "explanation": "Beim Zufallsexperiment steht das Ergebnis vorher nicht fest; alle Bedingungen bleiben gleich.",
+    "options": [
+      "Ein Experiment, dessen Ergebnis nicht im Voraus vorhersagbar ist",
+      "Ein Experiment, bei dem das Ergebnis stets identisch und vorhersehbar ist",
+      "Ein rein mathematischer Beweis ohne zufälligen Ausgang",
+      "Ein Experiment, das nur ein einziges Mal durchgeführt wird"
+    ],
+    "question": "Was ist ein Zufallsexperiment?",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "correct": 0,
+    "explanation": "Ein Ereignis ist eine Menge von Ergebnissen (Teilmenge des Ergebnisraums Ω).",
+    "options": [
+      "Eine Teilmenge der Ergebnismenge eines Zufallsexperiments",
+      "Ein einzelnes, konkret durchgeführtes Zufallsexperiment",
+      "Der mittlere zu erwartende Wert einer Zufallsvariablen",
+      "Die Wahrscheinlichkeit, die einem Ausgang zugewiesen wird"
+    ],
+    "question": "Was ist ein Ereignis in der Stochastik?",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "correct": 0,
+    "explanation": "Bei gleichwahrscheinlichen Ergebnissen: P(A) = |A| / |Ω|.",
+    "options": [
+      "P(A) = Anzahl günstiger Ergebnisse / Anzahl möglicher Ergebnisse",
+      "P(A) = Anzahl der Versuche / Anzahl der günstigen Ergebnisse",
+      "P(A) = 1 minus der Anzahl der erzielten Treffer im Versuch",
+      "P(A) = die Gesamtanzahl aller Ergebnisse des Experiments"
+    ],
+    "question": "Wie lautet die Laplace-Wahrscheinlichkeit?",
+    "topic": "Laplace"
+  },
+  {
+    "correct": 0,
+    "explanation": "Das sichere Ereignis hat Wahrscheinlichkeit 1, also P(Ā) = 1 − P(A).",
+    "options": [
+      "P(Ā) = 1 − P(A)",
+      "P(Ā) = P(A)",
+      "P(Ā) = P(A) + 1",
+      "P(Ā) = 1 / P(A)"
+    ],
+    "question": "Was gilt für die Gegenwahrscheinlichkeit?",
+    "topic": "Grundregeln"
+  },
+  {
+    "correct": 0,
+    "explanation": "Allgemeine Additionsregel: P(A∪B) = P(A) + P(B) − P(A∩B).",
+    "options": [
+      "P(A∪B) = P(A) + P(B) − P(A∩B)",
+      "P(A∪B) = P(A) + P(B) (gilt nur für disjunkte Ereignisse)",
+      "P(A∪B) = P(A) · P(B) (gilt nur für unabhängige Ereignisse)",
+      "P(A∪B) = P(A∩B) + P(A) − P(B)"
+    ],
+    "question": "Wie lautet die Additionsregel für nicht disjunkte Ereignisse?",
+    "topic": "Additionsregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Stochastische Unabhängigkeit: P(A∩B) = P(A)·P(B).",
+    "options": [
+      "Wenn A und B stochastisch unabhängig voneinander sind",
+      "Für alle beliebigen Ereignisse A und B grundsätzlich immer",
+      "Wenn A und B sich gegenseitig ausschließen (disjunkte Ereignisse)",
+      "Wenn A und B die gleiche Wahrscheinlichkeit besitzen, d.h. P(A) = P(B)"
+    ],
+    "question": "Wann gilt P(A∩B) = P(A)·P(B)?",
+    "topic": "Unabhängigkeit"
+  },
+  {
+    "correct": 0,
+    "explanation": "P(A|B) = P(A∩B) / P(B) – die Wahrscheinlichkeit von A, gegeben dass B eingetreten ist.",
+    "options": [
+      "P(A∩B) / P(B)",
+      "P(A) · P(B)",
+      "P(A) / P(B)",
+      "P(A∩B) · P(B)"
+    ],
+    "question": "Wie ist die bedingte Wahrscheinlichkeit P(A|B) definiert?",
+    "topic": "Bedingte Wahrscheinlichkeit"
+  },
+  {
+    "correct": 0,
+    "explanation": "Baumdiagramme zeigen alle Pfade und deren Wahrscheinlichkeiten bei mehrstufigen Experimenten.",
+    "options": [
+      "Mehrstufige Zufallsexperimente mit allen Pfaden übersichtlich darstellen",
+      "Ausschließlich einstufige Zufallsexperimente mit einem Ergebnis darstellen",
+      "Die Normalverteilung und ihre Dichtefunktion grafisch abbilden",
+      "Häufigkeitsverteilungen als Histogramme grafisch darstellen"
+    ],
+    "question": "Wofür eignet sich ein Baumdiagramm?",
+    "topic": "Baumdiagramm"
+  },
+  {
+    "correct": 0,
+    "explanation": "B(n, p): n unabhängige Versuche mit Trefferwahrscheinlichkeit p.",
+    "options": [
+      "Die Verteilung der Trefferanzahl bei n unabhängigen Bernoulli-Versuchen",
+      "Eine stetige Wahrscheinlichkeitsverteilung für reellwertige Zufallsvariablen",
+      "Die Normalverteilung, der sich die Binomialverteilung für sehr großes n annähert",
+      "Die Gleichverteilung, bei der alle Ergebnisse dieselbe Wahrscheinlichkeit haben"
+    ],
+    "question": "Was ist eine Binomialverteilung?",
+    "topic": "Binomialverteilung"
+  },
+  {
+    "correct": 0,
+    "explanation": "B(n, p): n Versuche, Trefferwahrscheinlichkeit p (mit 0 ≤ p ≤ 1).",
+    "options": [
+      "n = Anzahl Versuche, p = Trefferwahrscheinlichkeit",
+      "n = Erwartungswert, p = Standardabweichung",
+      "n = Anzahl Treffer, p = Gegenwahrscheinlichkeit",
+      "n = Stichprobengröße, p = Varianz"
+    ],
+    "question": "Was sind die Parameter der Binomialverteilung B(n, p)?",
+    "topic": "Binomialverteilung"
+  },
+  {
+    "correct": 0,
+    "explanation": "Erwartungswert: μ = n·p.",
+    "options": [
+      "μ = n · p",
+      "μ = p",
+      "μ = n · p · (1−p)",
+      "μ = √(n·p·(1−p))"
+    ],
+    "question": "Wie lautet der Erwartungswert der Binomialverteilung B(n, p)?",
+    "topic": "Erwartungswert"
+  },
+  {
+    "correct": 0,
+    "explanation": "Standardabweichung: σ = √(n·p·q) mit q = 1−p.",
+    "options": [
+      "σ = √(n·p·(1−p))",
+      "σ = n·p",
+      "σ = n·p·(1−p)",
+      "σ = p·(1−p)"
+    ],
+    "question": "Wie lautet die Standardabweichung der Binomialverteilung B(n, p)?",
+    "topic": "Standardabweichung"
+  },
+  {
+    "correct": 0,
+    "explanation": "P(X=k) = (n über k)·pᵏ·(1−p)ⁿ⁻ᵏ.",
+    "options": [
+      "C(n,k) · pᵏ · (1−p)ⁿ⁻ᵏ",
+      "n! / (k!·(n−k)!) · p · (1−p)",
+      "pᵏ · (1−p)ⁿ⁻ᵏ (ohne Binomialkoeffizient)",
+      "n · p · k (Produkt aus Parametern)"
+    ],
+    "question": "Wie lautet P(X=k) bei der Binomialverteilung B(n,p)?",
+    "topic": "Binomialverteilung"
+  },
+  {
+    "correct": 0,
+    "explanation": "Bernoulli-Experiment: genau zwei Ausgänge (Erfolg mit Wahrscheinlichkeit p, Misserfolg mit 1−p).",
+    "options": [
+      "Ein Zufallsexperiment mit genau zwei möglichen Ausgängen (Treffer/Niete)",
+      "Ein Zufallsexperiment mit genau drei verschiedenen möglichen Ausgängen",
+      "Eine stetige Zufallsvariable mit unendlich vielen möglichen Ausprägungen",
+      "Ein deterministisches Experiment, bei dem keine Wahrscheinlichkeiten auftreten"
+    ],
+    "question": "Was ist ein Bernoulli-Experiment?",
+    "topic": "Bernoulli"
+  },
+  {
+    "correct": 0,
+    "explanation": "Das sichere Ereignis Ω tritt immer ein: P(Ω) = 1.",
+    "options": [
+      "Das Ereignis, das mit Sicherheit immer eintritt (P = 1)",
+      "Das Ereignis, das unter keinen Umständen eintreten kann (P = 0)",
+      "Ein Ereignis, das mit genau gleicher Wahrscheinlichkeit eintritt (P = 0,5)",
+      "Ein einzelnes Elementarergebnis aus der gesamten Ergebnismenge"
+    ],
+    "question": "Was ist das sichere Ereignis?",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "correct": 0,
+    "explanation": "Das unmögliche Ereignis ∅ hat P(∅) = 0.",
+    "options": [
+      "Das Ereignis, das niemals eintreten kann (P = 0)",
+      "Ein Ereignis, das mit genau gleicher Wahrscheinlichkeit eintritt (P = 0,5)",
+      "Das sichere Ereignis, das mit Wahrscheinlichkeit 1 immer eintritt",
+      "Ein Ereignis, das aus mehreren Elementarergebnissen zusammengesetzt ist"
+    ],
+    "question": "Was ist das unmögliche Ereignis?",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Summe aller Wahrscheinlichkeiten eines vollständigen Systems beträgt stets 1.",
+    "options": [
+      "Sie ist immer 1",
+      "Sie ist immer 0,5",
+      "Sie hängt von n ab",
+      "Sie kann größer als 1 sein"
+    ],
+    "question": "Was gilt für die Summe aller Wahrscheinlichkeiten im vollständigen System?",
+    "topic": "Grundregeln"
+  },
+  {
+    "correct": 0,
+    "explanation": "Bei der Normalverteilung: ≈68% in [μ−σ, μ+σ], ≈95% in [μ−2σ, μ+2σ], ≈99,7% in [μ−3σ, μ+3σ].",
+    "options": [
+      "68%/95%/99,7% aller Werte liegen innerhalb 1σ/2σ/3σ um den Erwartungswert",
+      "Genau 68% aller Werte liegen oberhalb des Medians der Normalverteilung",
+      "Exakt 95% aller Messwerte sind identisch mit dem Erwartungswert μ",
+      "Rund 99,7% aller vorkommenden Datenwerte gelten als statistische Ausreißer"
+    ],
+    "question": "Was besagt die 68-95-99,7-Regel der Normalverteilung?",
+    "topic": "Normalverteilung"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Standardnormalverteilung N(0,1) hat Erwartungswert 0 und Standardabweichung 1.",
+    "options": [
+      "Eine Normalverteilung mit Erwartungswert μ = 0 und Standardabweichung σ = 1",
+      "Eine Normalverteilung mit Erwartungswert μ = 1 und beliebiger Standardabweichung",
+      "Die Binomialverteilung B(n, p), die sich für sehr großes n der Normalverteilung annähert",
+      "Eine Gleichverteilung, die gleichmäßig auf dem gesamten Intervall [0, 1] verteilt ist"
+    ],
+    "question": "Was ist die Standardnormalverteilung?",
+    "topic": "Normalverteilung"
+  },
+  {
+    "correct": 0,
+    "explanation": "α ist die Irrtumswahrscheinlichkeit erster Art; typisch α = 0,05 oder 0,01.",
+    "options": [
+      "Die maximal tolerierte Wahrscheinlichkeit, H₀ fälschlicherweise abzulehnen",
+      "Die Wahrscheinlichkeit, H₀ auf Basis der Stichprobe korrekt anzunehmen",
+      "Der arithmetische Mittelwert, der aus der entnommenen Stichprobe berechnet wird",
+      "Die Anzahl der Elemente, die in der gezogenen Stichprobe enthalten sind"
+    ],
+    "question": "Was ist ein Signifikanzniveau α beim Hypothesentest?",
+    "topic": "Hypothesentest"
+  },
+  {
+    "correct": 0,
+    "explanation": "H₀ ist die Ausgangshypothese. Man lehnt sie nur ab, wenn die Daten signifikant dagegen sprechen.",
+    "options": [
+      "Die zu testende Annahme, die man mithilfe von Daten zu widerlegen versucht",
+      "Die Alternativhypothese, die gilt, wenn H₀ verworfen wird",
+      "Der Bereich, in dem Stichprobenwerte zur Ablehnung von H₀ führen",
+      "Die Anzahl der Beobachtungen, die in der statistischen Stichprobe enthalten sind"
+    ],
+    "question": "Was ist die Nullhypothese H₀?",
+    "topic": "Hypothesentest"
+  },
+  {
+    "correct": 0,
+    "explanation": "Fehler 1. Art (α-Fehler): H₀ wird verworfen, obwohl sie wahr ist.",
+    "options": [
+      "H₀ wird abgelehnt, obwohl sie in Wirklichkeit richtig ist",
+      "H₀ wird beibehalten, obwohl sie in Wirklichkeit falsch ist",
+      "Der statistische Test liefert aufgrund fehlerhafter Daten kein klares Ergebnis",
+      "Die gezogene Stichprobe ist zu klein für statistisch aussagekräftige Schlüsse"
+    ],
+    "question": "Was ist ein Fehler 1. Art?",
+    "topic": "Hypothesentest"
+  },
+  {
+    "correct": 0,
+    "explanation": "Fehler 2. Art (β-Fehler): H₀ wird nicht abgelehnt, obwohl sie falsch ist.",
+    "options": [
+      "H₀ wird beibehalten, obwohl sie in Wirklichkeit falsch ist",
+      "H₀ wird abgelehnt, obwohl sie in Wirklichkeit richtig ist",
+      "Die durchgeführte statistische Berechnung enthält einen systematischen Fehler",
+      "Der gewählte Ablehnungsbereich beim Hypothesentest ist zu weit gefasst"
+    ],
+    "question": "Was ist ein Fehler 2. Art?",
+    "topic": "Hypothesentest"
+  },
+  {
+    "correct": 0,
+    "explanation": "Im Ablehnungsbereich (kritischer Bereich) sind die Testergebnisse so extrem, dass H₀ verworfen wird.",
+    "options": [
+      "Die Menge der Stichprobenwerte, bei denen H₀ abgelehnt wird",
+      "Der Bereich der Stichprobenwerte, für den die Nullhypothese beibehalten wird",
+      "Die berechneten Konfidenzintervalle für den unbekannten Populationsparameter",
+      "Die statistische Varianz, die aus den Werten der Stichprobe berechnet wird"
+    ],
+    "question": "Was ist der Ablehnungsbereich beim Hypothesentest?",
+    "topic": "Hypothesentest"
+  },
+  {
+    "correct": 0,
+    "explanation": "Eine Zufallsvariable X ordnet jedem Ergebnis eines Zufallsexperiments einen Zahlenwert zu.",
+    "options": [
+      "Eine Variable, deren Wert vom Ergebnis eines Zufallsexperiments abhängt",
+      "Eine unveränderliche Konstante, die keinen zufälligen Einfluss zulässt",
+      "Das Zufallsexperiment selbst, das die zufälligen Ergebnisse erzeugt",
+      "Eine Wahrscheinlichkeit, die einem bestimmten Ereignis zugeordnet wird"
+    ],
+    "question": "Was ist eine Zufallsvariable?",
+    "topic": "Zufallsvariable"
+  },
+  {
+    "correct": 0,
+    "explanation": "Diskrete ZV: abzählbare Wertemenge (z. B. Würfel). Stetige ZV: überabzählbar viele Werte (z. B. Messungen).",
+    "options": [
+      "Diskret: abzählbar viele Werte; stetig: alle Werte in einem Intervall",
+      "Diskrete und stetige Zufallsvariablen unterscheiden sich nicht voneinander",
+      "Diskrete Zufallsvariablen sind immer auch stetig und umgekehrt",
+      "Stetige Zufallsvariablen sind nur gültig, wenn die Stichprobengröße n > 30"
+    ],
+    "question": "Was ist der Unterschied zwischen diskreter und stetiger Zufallsvariable?",
+    "topic": "Zufallsvariable"
+  },
+  {
+    "correct": 0,
+    "explanation": "Var(X) = E[(X−μ)²] = E(X²) − (E(X))². Standardabweichung = √Var(X).",
+    "options": [
+      "Die mittlere quadratische Abweichung aller Datenwerte vom Erwartungswert μ",
+      "Die Quadratwurzel aus dem berechneten Erwartungswert der Zufallsvariablen X",
+      "Der Erwartungswert selbst, also der gewichtete Mittelwert der Verteilung",
+      "Die größte auftretende Abweichung eines Einzelwertes vom Mittelwert μ"
+    ],
+    "question": "Was ist die Varianz einer Zufallsvariablen?",
+    "topic": "Varianz"
+  },
+  {
+    "correct": 0,
+    "explanation": "C(n,k) = n! / (k!·(n−k)!) – Anzahl der k-elementigen Teilmengen aus n Elementen.",
+    "options": [
+      "n! / (k! · (n−k)!)",
+      "n · k",
+      "n! / k!",
+      "(n+k)! / n!"
+    ],
+    "question": "Was ist der Binomialkoeffizient 'n über k' (C(n,k))?",
+    "topic": "Kombinatorik"
+  },
+  {
+    "correct": 0,
+    "explanation": "Mit Zurücklegen: die Zusammensetzung der Urne bleibt gleich; jeder Zug ist unabhängig.",
+    "options": [
+      "Die gezogene Kugel wird zurückgelegt; die Wahrscheinlichkeit bleibt konstant",
+      "Die gezogene Kugel verbleibt außerhalb; die Zusammensetzung der Urne ändert sich",
+      "Das Ergebnis des Experiments ist bei jedem Versuch stets identisch und vorhersehbar",
+      "Dieses Urnenmodell ist ausschließlich bei Bernoulli-Experimenten anwendbar"
+    ],
+    "question": "Was ist ein Urnenmodell mit Zurücklegen?",
+    "topic": "Urnenmodell"
+  },
+  {
+    "correct": 0,
+    "explanation": "Ohne Zurücklegen: nach jedem Zug ändert sich die Zusammensetzung der Urne.",
+    "options": [
+      "Die gezogene Kugel verbleibt außerhalb; die Wahrscheinlichkeiten ändern sich pro Zug",
+      "Die gezogene Kugel wird nach jedem Zug wieder in die Urne zurückgelegt",
+      "Die Urne enthält zu Beginn des Experiments genau eine einzige Kugel",
+      "Alle Ziehungen verlaufen stochastisch vollständig unabhängig voneinander"
+    ],
+    "question": "Was ist ein Urnenmodell ohne Zurücklegen?",
+    "topic": "Urnenmodell"
+  },
+  {
+    "correct": 0,
+    "explanation": "Satz der totalen Wahrscheinlichkeit: P(A) = ΣP(A|Bᵢ)·P(Bᵢ) für eine vollständige Partition.",
+    "options": [
+      "P(A) = ΣP(A|Bᵢ)·P(Bᵢ) bei einer vollständigen Partition {Bᵢ}",
+      "P(A) = P(A|B), wenn B das einzige bedingende Ereignis ist",
+      "P(A) = 1 − P(Ā), also eins minus die Gegenwahrscheinlichkeit von A",
+      "P(A) = P(A∩B) / P(B), nach der Definition bedingter Wahrscheinlichkeit"
+    ],
+    "question": "Was ist die Totale Wahrscheinlichkeit?",
+    "topic": "Totale Wahrscheinlichkeit"
+  },
+  {
+    "correct": 0,
+    "explanation": "Bayes: P(B|A) = P(A|B)·P(B) / P(A). Ermöglicht das Umdrehen bedingter Wahrscheinlichkeiten.",
+    "options": [
+      "P(B|A) = P(A|B)·P(B) / P(A)",
+      "P(A|B) = P(A)·P(B)",
+      "P(B|A) = P(A|B)",
+      "P(A) = P(A|B)/P(B)"
+    ],
+    "question": "Was ist der Satz von Bayes?",
+    "topic": "Bayes"
+  },
+  {
+    "correct": 0,
+    "explanation": "Bei disjunkten Ereignissen (A∩B=∅) gilt: P(A∪B) = P(A) + P(B).",
+    "options": [
+      "P(A) + P(B)",
+      "P(A) · P(B)",
+      "P(A) + P(B) − P(A∩B)",
+      "P(A) − P(B)"
+    ],
+    "question": "Was ist P(A∪B) wenn A und B disjunkt sind?",
+    "topic": "Additionsregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "P(X≤k) = Σᵢ₌₀ᵏ P(X=i) – die Wahrscheinlichkeit, höchstens k Treffer zu erhalten.",
+    "options": [
+      "Die Summe aller Einzelwahrscheinlichkeiten P(X=0) + … + P(X=k)",
+      "Die Einzelwahrscheinlichkeit P(X = k) für genau diesen einen Wert",
+      "Die Gegenwahrscheinlichkeit P(X > k) für alle Werte größer als k",
+      "Die Summe aus genau zwei Wahrscheinlichkeiten P(X=k) und P(X=k+1)"
+    ],
+    "question": "Was ist die kumulative Wahrscheinlichkeit P(X ≤ k)?",
+    "topic": "Verteilungsfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "Binomialverteilung B(3,1/6): P(X=2) = C(3,2)·(1/6)²·(5/6) = 3·(1/36)·(5/6) = 15/216 ≈ 6,9%.",
+    "options": [
+      "C(3,2) · (1/6)² · (5/6), da genau zwei von drei Würfen eine 6 zeigen",
+      "(1/6)², da jeder Wurf unabhängig mit Wahrscheinlichkeit 1/6 eine 6 ergibt",
+      "3 · (1/6)², ohne Berücksichtigung der Reihenfolge und Gegenwahrscheinlichkeit",
+      "(5/6)² · (1/6), da die ersten beiden Würfe keine 6 und der letzte eine 6 zeigt"
+    ],
+    "question": "Ein Würfel wird 3× geworfen. Wie groß ist P(genau zweimal eine 6)?",
+    "topic": "Binomialverteilung"
+  },
+  {
+    "correct": 0,
+    "explanation": "E(X) = Σ xᵢ · P(X=xᵢ) – der gewichtete Mittelwert aller Werte.",
+    "options": [
+      "E(X) = Σ xᵢ · P(X=xᵢ)",
+      "E(X) = (Max + Min) / 2",
+      "E(X) = Median, also der mittlere Wert der geordneten Wertereihe",
+      "E(X) = Var(X), also gleich der Varianz der Zufallsvariablen"
+    ],
+    "question": "Was ist der Erwartungswert einer diskreten Zufallsvariablen?",
+    "topic": "Erwartungswert"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Modalwert ist der Wert mit der höchsten Wahrscheinlichkeit bzw. Häufigkeit.",
+    "options": [
+      "Der Modalwert, auch als Modus bezeichnet",
+      "Der Median als mittlerer Wert der Verteilung",
+      "Der Erwartungswert E(X) der Zufallsvariablen",
+      "Die Varianz Var(X) als Streuungsmaß"
+    ],
+    "question": "Welcher Wert tritt bei einer Verteilung am häufigsten auf?",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Median (Zentralwert) teilt die nach Größe sortierten Werte in zwei gleich große Hälften.",
+    "options": [
+      "Der Wert, der die geordneten Daten in zwei gleichgroße Hälften teilt",
+      "Das arithmetische Mittel, berechnet als Summe aller Werte geteilt durch ihre Anzahl",
+      "Der häufigste Wert im Datensatz, auch als Modus oder Modalwert bezeichnet",
+      "Die Varianz als Maß für die quadratische Streuung der Werte um den Erwartungswert"
+    ],
+    "question": "Was ist der Median?",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "correct": 0,
+    "explanation": "Ein Konfidenzintervall zum Niveau 1−α enthält den wahren Parameter mit Wahrscheinlichkeit 1−α.",
+    "options": [
+      "Ein Bereich, in dem der unbekannte Parameter mit hoher Wahrscheinlichkeit liegt",
+      "Der Ablehnungsbereich beim Hypothesentest, in dem H₀ verworfen wird",
+      "Der Erwartungswert plus und minus genau eine Standardabweichung",
+      "Die Standardabweichung als Maß für die Streuung der Stichprobenwerte"
+    ],
+    "question": "Was ist ein Konfidenzintervall (vereinfacht)?",
+    "topic": "Konfidenzintervall"
+  },
+  {
+    "correct": 0,
+    "explanation": "Zentraler Grenzwertsatz: für n → ∞ approximiert N(np, √(npq)) die Binomialverteilung.",
+    "options": [
+      "Zentraler Grenzwertsatz: Summe vieler unabhängiger ZV strebt gegen Normalverteilung",
+      "Das ist eine Näherungsformel ohne theoretische Grundlage in der Mathematik",
+      "Weil das Produkt n·p genau die Standardabweichung der Verteilung ergibt",
+      "Weil die Trefferwahrscheinlichkeit p für sehr große n gegen null strebt"
+    ],
+    "question": "Warum nähert sich die Binomialverteilung für großes n der Normalverteilung an?",
+    "topic": "Normalverteilung"
+  },
+  {
+    "correct": 0,
+    "explanation": "C(5,3) = 5!/(3!·2!) = 10.",
+    "options": [
+      "10",
+      "15",
+      "60",
+      "6"
+    ],
+    "question": "Wie viele Möglichkeiten gibt es, 3 aus 5 Objekten (ohne Zurücklegen, ungeordnet) zu wählen?",
+    "topic": "Kombinatorik"
+  }
+]

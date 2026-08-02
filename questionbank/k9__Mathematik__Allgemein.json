@@ -1,0 +1,194 @@
+[
+  {
+    "correct": 1,
+    "explanation": "Faktorisieren: x² - 7x + 12 = (x - 3)(x - 4) = 0. Die Lösungen sind x = 3 und x = 4. Von den angebotenen Zahlen ist nur x = 3 eine davon. Probe: 3² - 7·3 + 12 = 9 - 21 + 12 = 0 ✓",
+    "options": [
+      "x = 2",
+      "x = 3",
+      "x = 5",
+      "x = 6"
+    ],
+    "question": "Welche der folgenden Zahlen ist eine Lösung der quadratischen Gleichung x² - 7x + 12 = 0?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Zuerst die Klammer potenzieren: (2a³)² = 2² · (a³)² = 4a⁶, denn beim Potenzieren einer Potenz werden die Exponenten multipliziert (3·2 = 6). Der Faktor 2 wird dabei mit quadriert. Dann mit a² multiplizieren: 4a⁶ · a² = 4a⁸.",
+    "options": [
+      "4a⁸",
+      "2a⁸",
+      "4a⁷",
+      "2a⁷"
+    ],
+    "question": "Vereinfache den Ausdruck (2a³)² · a².",
+    "topic": "Potenzgesetze"
+  },
+  {
+    "correct": 1,
+    "explanation": "Addition beider Gleichungen eliminiert y: (2x + y) + (x - y) = 7 + 2, also 3x = 9 und x = 3. Einsetzen in II): 3 - y = 2, also y = 1. Die Lösung ist (3; 1).",
+    "options": [
+      "(2; 3)",
+      "(3; 1)",
+      "(4; -2)",
+      "(1; 5)"
+    ],
+    "question": "Gegeben ist das lineare Gleichungssystem:\nI) 2x + y = 7\nII) x - y = 2\nWelches Wertepaar (x; y) ist die Lösung dieses Systems?",
+    "topic": "Lineare Gleichungssysteme"
+  },
+  {
+    "correct": 1,
+    "explanation": "Für den Winkel gegenüber der 6-cm-Kathete gilt sin(α) = Gegenkathete/Hypotenuse = 6/10 = 0,6. Mit der Umkehrfunktion folgt α = arcsin(0,6) ≈ 36,87°, gerundet 36,9°. Der andere spitze Winkel misst ca. 53,1°.",
+    "options": [
+      "ca. 30,0°",
+      "ca. 36,9°",
+      "ca. 53,1°",
+      "ca. 60,0°"
+    ],
+    "question": "In einem rechtwinkligen Dreieck ist die Hypotenuse 10 cm lang und eine der Katheten ist 6 cm lang. Wie groß ist der Winkel (auf eine Dezimalstelle gerundet), der der 6 cm langen Kathete gegenüberliegt?",
+    "topic": "Trigonometrie im rechtwinkligen Dreieck"
+  },
+  {
+    "correct": 3,
+    "explanation": "In der Scheitelpunktform f(x) = a(x - d)² + e liegt der Scheitelpunkt bei S(d | e). Wegen x + 3 = x - (-3) ist d = -3, außerdem ist e = -1. Der Scheitelpunkt ist S(-3 | -1); a = -2 öffnet die Parabel nach unten.",
+    "options": [
+      "S(3 | 1)",
+      "S(-3 | 1)",
+      "S(3 | -1)",
+      "S(-3 | -1)"
+    ],
+    "question": "Welcher der folgenden Punkte ist der Scheitelpunkt der quadratischen Funktion f(x) = -2(x + 3)² - 1?",
+    "topic": "Quadratische Funktionen (Scheitelpunktform)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Teilweise wurzelziehen: √(8) = √(4·2) = 2√(2). Damit wird der Ausdruck zu (2√(2) + √(2))² = (3√(2))² = 3² · (√(2))² = 9 · 2 = 18.",
+    "options": [
+      "10",
+      "18",
+      "6",
+      "36"
+    ],
+    "question": "Vereinfache den Ausdruck (√(8) + √(2))².",
+    "topic": "Wurzelterme vereinfachen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Erste Kugel rot: 5/8. Danach liegen noch 4 rote von 7 Kugeln in der Urne, zweite Kugel rot: 4/7. Nach der Pfadregel multipliziert man: 5/8 · 4/7 = 20/56 = 5/14. Mit Zurücklegen wären es 25/64.",
+    "options": [
+      "5/14",
+      "25/64",
+      "1/4",
+      "15/56"
+    ],
+    "question": "In einer Urne befinden sich 5 rote und 3 blaue Kugeln. Es werden nacheinander zwei Kugeln ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, dass beide Kugeln rot sind?",
+    "topic": "Stochastik (Ziehen ohne Zurücklegen)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Radius ist die Hälfte des Durchmessers: r = 8 cm : 2 = 4 cm. Zylindervolumen V = π · r² · h = 3,14 · (4 cm)² · 10 cm = 3,14 · 160 cm³ = 502,4 cm³. Wer den Durchmesser als Radius einsetzt, erhält 2009,6 cm³.",
+    "options": [
+      "502,4 cm³",
+      "251,2 cm³",
+      "1004,8 cm³",
+      "2009,6 cm³"
+    ],
+    "question": "Ein zylinderförmiges Gefäß hat einen Durchmesser von 8 cm und eine Höhe von 10 cm. Welches Volumen hat das Gefäß in Kubikzentimetern? Verwende für Pi den Näherungswert 3,14.",
+    "topic": "Volumenberechnung (Zylinder)"
+  },
+  {
+    "correct": 0,
+    "explanation": "In der Scheitelpunktform f(x) = a(x - d)² + e liegt der Scheitelpunkt bei S(d | e). Hier ist d = 4 und e = -5, also S(4 | -5). Der Faktor a = 2 macht die Parabel schmaler, verschiebt den Scheitelpunkt aber nicht.",
+    "options": [
+      "S(4 | -5)",
+      "S(-4 | -5)",
+      "S(4 | 5)",
+      "S(-4 | 5)"
+    ],
+    "question": "Welche Koordinaten hat der Scheitelpunkt der quadratischen Funktion f(x) = 2(x - 4)² - 5?",
+    "topic": "Quadratische Funktionen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Zuerst die Potenz berechnen: (2x⁻²)³ = 2³ · x⁻⁶ = 8x⁻⁶, denn die Exponenten werden multipliziert (-2·3 = -6). Dann mit x⁷ multiplizieren: 8x⁻⁶ · x⁷ = 8x¹ = 8x. Wegen der negativen Exponenten muss x ≠ 0 sein.",
+    "options": [
+      "8x",
+      "8x⁻¹",
+      "6x",
+      "6x⁻¹"
+    ],
+    "question": "Vereinfache den Ausdruck (2x⁻²)³ · x⁷ für x ≠ 0.",
+    "topic": "Potenzgesetze"
+  },
+  {
+    "correct": 0,
+    "explanation": "Im rechtwinkligen Dreieck gilt sin(α) = Gegenkathete/Hypotenuse, also Gegenkathete = 10 cm · sin(30°) = 10 cm · 0,5 = 5 cm. Die andere Kathete wäre 10 cm · cos(30°) ≈ 8,7 cm.",
+    "options": [
+      "5 cm",
+      "5,8 cm",
+      "8,7 cm",
+      "10 cm"
+    ],
+    "question": "In einem rechtwinkligen Dreieck ist die Hypotenuse 10 cm lang und ein Winkel beträgt 30 Grad. Wie lang ist die dem Winkel von 30 Grad gegenüberliegende Kathete?",
+    "topic": "Trigonometrie im rechtwinkligen Dreieck"
+  },
+  {
+    "correct": 2,
+    "explanation": "Zinseszinsformel: Kn = K0 · (1 + p/100)^n. Mit K0 = 1000 Euro, p = 2 und n = 3 ergibt sich 1000 · 1,02³ = 1000 · 1,061208 = 1061,208 Euro, auf Cent gerundet 1061,21 Euro. Ohne Zinseszins wären es nur 1060,00 Euro.",
+    "options": [
+      "1040,40 Euro",
+      "1060,00 Euro",
+      "1061,21 Euro",
+      "1082,43 Euro"
+    ],
+    "question": "Wie viel Geld hat man nach 3 Jahren, wenn man 1000 Euro zu einem jährlichen Zinssatz von 2% anlegt und die Zinsen jährlich dem Kapital zugeschlagen werden? Runde auf Cent.",
+    "topic": "Zinseszinsrechnung"
+  },
+  {
+    "correct": 2,
+    "explanation": "Erste Kugel rot: 3/5. Danach sind noch 2 rote von 4 Kugeln in der Urne, zweite Kugel rot: 2/4 = 1/2. Nach der Pfadregel multipliziert man: 3/5 · 1/2 = 3/10. Mit Zurücklegen wären es 9/25.",
+    "options": [
+      "9/25",
+      "6/25",
+      "3/10",
+      "1/5"
+    ],
+    "question": "Eine Urne enthält 3 rote und 2 blaue Kugeln. Es werden nacheinander zwei Kugeln ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, dass beide Kugeln rot sind?",
+    "topic": "Mehrstufige Zufallsexperimente"
+  },
+  {
+    "correct": 0,
+    "explanation": "Erster Strahlensatz: SA/SB = SA'/SB'. Zuerst SB = SA + AB = 4 cm + 2 cm = 6 cm. Einsetzen: 4/6 = 6/SB', also 4·SB' = 36 und damit SB' = 9 cm.",
+    "options": [
+      "9 cm",
+      "12 cm",
+      "10 cm",
+      "8 cm"
+    ],
+    "question": "Zwei Geraden schneiden sich im Punkt S. Auf dem einen Strahl liegen die Punkte A und B (A zwischen S und B), auf dem anderen Strahl die Punkte A' und B'. Die Strecke SA ist 4 cm, SA' ist 6 cm und AB ist 2 cm lang. Die Geraden AA' und BB' sind parallel. Wie lang ist die Strecke SB'?",
+    "topic": "Strahlensätze"
+  },
+  {
+    "correct": 1,
+    "explanation": "Teilweise wurzelziehen: √(72) = √(36·2) = 6√(2) und √(18) = √(9·2) = 3√(2). Subtrahieren: 6√(2) - 3√(2) = 3√(2). Die Radikanden 72 und 18 darf man nicht subtrahieren.",
+    "options": [
+      "√(54)",
+      "3√(2)",
+      "6√(2)",
+      "9√(2)"
+    ],
+    "question": "Vereinfache den Ausdruck: √(72) - √(18)",
+    "topic": "Wurzelgesetze"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für ein Quadrat gilt G = d²/2, also G = (10 cm)²/2 = 50 cm². Pyramidenvolumen V = (1/3)·G·h = (1/3)·50 cm²·12 cm = 200 cm³. Wer 10 cm als Seitenlänge nimmt, erhält fälschlich 400 cm³.",
+    "options": [
+      "200 cm³",
+      "400 cm³",
+      "600 cm³",
+      "1200 cm³"
+    ],
+    "question": "Eine quadratische Pyramide hat eine Höhe von 12 cm. Die Diagonale der quadratischen Grundfläche beträgt 10 cm. Berechne das Volumen der Pyramide.",
+    "topic": "Volumenberechnung von Körpern"
+  }
+]

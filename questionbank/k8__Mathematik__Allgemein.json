@@ -1,0 +1,194 @@
+[
+  {
+    "correct": 1,
+    "explanation": "2 hoch 3 ist 2 * 2 * 2 = 8. 3 hoch 2 ist 3 * 3 = 9. Die Summe ist 8 + 9 = 17.",
+    "options": [
+      "12",
+      "17",
+      "15",
+      "13"
+    ],
+    "question": "Berechne den Wert des Terms: 2^3 + 3^2",
+    "topic": "Potenzen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Eine parallele Gerade hat die gleiche Steigung. Hier ist die Steigung m = 2. Die Funktion hat also die Form y = 2x + b. Setzt man den Punkt (1, 3) ein: 3 = 2*1 + b, also 3 = 2 + b, woraus b = 1 folgt. Die Gleichung ist y = 2x + 1. Die Geraden y = -2x + 5 und y = 0,5x + 2,5 gehen zwar durch den Punkt, haben aber die falsche Steigung; y = 2x - 1 ist parallel, geht aber nicht durch den Punkt.",
+    "options": [
+      "y = 2x + 1",
+      "y = -2x + 5",
+      "y = 0,5x + 2,5",
+      "y = 2x - 1"
+    ],
+    "question": "Welche der folgenden linearen Funktionen verläuft parallel zur Geraden y = 2x - 5 und geht durch den Punkt (1, 3)?",
+    "topic": "Lineare Funktionen"
+  },
+  {
+    "correct": 3,
+    "explanation": "Addiert man die beiden Gleichungen (I + II), so erhält man (x + y) + (x - y) = 7 + 3, was zu 2x = 10 vereinfacht wird. Dividiert man durch 2, ergibt sich x = 5.",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "question": "Löse das folgende Gleichungssystem: I) x + y = 7, II) x - y = 3. Was ist der Wert von x?",
+    "topic": "Lineare Gleichungssysteme"
+  },
+  {
+    "correct": 3,
+    "explanation": "Dies ist eine Anwendung des Satzes des Pythagoras. Die Leiter, die Wand und der Boden bilden ein rechtwinkliges Dreieck. Die Leiter ist die Hypotenuse (c=5m), der Abstand zur Wand ist eine Kathete (a=3m). Gesucht ist die Höhe an der Wand (b). Es gilt a² + b² = c². Also 3² + b² = 5². Das ergibt 9 + b² = 25. Zieht man 9 ab, erhält man b² = 16. Da eine Länge positiv ist, folgt b = 4 Meter.",
+    "options": [
+      "2 Meter",
+      "5 Meter",
+      "8 Meter",
+      "4 Meter"
+    ],
+    "question": "Eine Leiter, die 5 Meter lang ist, lehnt an einer senkrechten Wand. Das untere Ende der Leiter steht 3 Meter von der Wand entfernt auf dem Boden. Wie hoch reicht die Leiter an der Wand hinauf?",
+    "topic": "Geometrie (Satz des Pythagoras)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Wenn der Preis um 20% gesenkt wurde, entspricht der neue Preis 100% - 20% = 80% des ursprünglichen Preises. Also sind 80% des ursprünglichen Preises 800 Euro. Um den ursprünglichen Preis (100%) zu finden, rechnet man: 800 Euro / 0,80 = 1000 Euro.",
+    "options": [
+      "960 Euro",
+      "1000 Euro",
+      "980 Euro",
+      "1200 Euro"
+    ],
+    "question": "Der Preis eines Computers wurde um 20% gesenkt und beträgt nun 800 Euro. Wie hoch war der ursprüngliche Preis des Computers?",
+    "topic": "Prozentrechnung"
+  },
+  {
+    "correct": 0,
+    "explanation": "Man fasst gleiche Variablen zusammen: (3x - x) + (5y + 2y) = 2x + 7y.",
+    "options": [
+      "2x + 7y",
+      "4x + 7y",
+      "2x + 3y",
+      "4x + 3y"
+    ],
+    "question": "Vereinfache den Term: 3x + 5y - x + 2y",
+    "topic": "Terme vereinfachen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Man zerlegt die Zahl unter der Wurzel so, dass ein Faktor eine Quadratzahl ist: 72 = 36 * 2. Also ist Wurzel(72) = Wurzel(36 * 2) = Wurzel(36) * Wurzel(2) = 6 * Wurzel(2). Bei 36 * Wurzel(2) wurde die Wurzel aus 36 vergessen, bei 2 * Wurzel(36) sind die Faktoren vertauscht, und 4 * Wurzel(3) ist Wurzel(48).",
+    "options": [
+      "36 * Wurzel(2)",
+      "2 * Wurzel(36)",
+      "6 * Wurzel(2)",
+      "4 * Wurzel(3)"
+    ],
+    "question": "Welcher der folgenden Ausdrücke ist gleich Wurzel(72)?",
+    "topic": "Wurzelgesetze"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Wahrscheinlichkeit, dass die erste Kugel rot ist, beträgt 5 (rote Kugeln) / 8 (Gesamtzahl der Kugeln) = 5/8. Nachdem eine rote Kugel gezogen wurde und nicht zurückgelegt wird, sind noch 4 rote Kugeln und insgesamt 7 Kugeln in der Urne. Die Wahrscheinlichkeit, dass die zweite Kugel ebenfalls rot ist, beträgt 4/7. Die Gesamtwahrscheinlichkeit für beide Ereignisse ist das Produkt der Einzelwahrscheinlichkeiten: (5/8) * (4/7) = 20/56. Gekürzt ergibt das 5/14.",
+    "options": [
+      "25/64",
+      "5/14",
+      "15/56",
+      "9/64"
+    ],
+    "question": "In einer Urne befinden sich 5 rote und 3 blaue Kugeln. Es werden nacheinander zwei Kugeln ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, dass beide Kugeln rot sind?",
+    "topic": "Wahrscheinlichkeitsrechnung"
+  },
+  {
+    "correct": 2,
+    "explanation": "Zuerst lösen wir die Klammern auf. Minus mal Minus ergibt Plus, also wird aus - (-5) ein + 5: (-8) + 12 + 5. Dann rechnen wir von links nach rechts: -8 + 12 = 4. Schließlich 4 + 5 = 9.",
+    "options": [
+      "-1",
+      "-15",
+      "9",
+      "19"
+    ],
+    "question": "Berechne den Wert des Ausdrucks: (-8) + 12 - (-5).",
+    "topic": "Rechenoperationen mit rationalen Zahlen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Zuerst berechnen wir den Rabattbetrag: 20% von 25 Euro sind (20/100) * 25 Euro = 0,20 * 25 Euro = 5 Euro. Dann ziehen wir den Rabatt vom ursprünglichen Preis ab: 25 Euro - 5 Euro = 20 Euro.",
+    "options": [
+      "5 Euro",
+      "15 Euro",
+      "20 Euro",
+      "22 Euro"
+    ],
+    "question": "Ein T-Shirt kostet ursprünglich 25 Euro. Im Sale erhält man 20% Rabatt. Wie viel kostet das T-Shirt nach dem Rabatt?",
+    "topic": "Prozentrechnung"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Steigung m wird mit der Formel m = (y2 - y1) / (x2 - x1) berechnet. Setzen wir die Koordinaten ein: m = (16 - 7) / (5 - 2) = 9 / 3 = 3.",
+    "options": [
+      "3",
+      "-3",
+      "9",
+      "1/3"
+    ],
+    "question": "Welchen Wert hat die Steigung einer Geraden, die durch die Punkte P(2 | 7) und Q(5 | 16) verläuft?",
+    "topic": "Lineare Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Beim Multiplizieren von Potenzen mit gleicher Basis werden die Exponenten addiert: 3^4 * 3^2 = 3^(4+2) = 3^6. Beim Dividieren werden die Exponenten subtrahiert: 3^6 / 3^3 = 3^(6-3) = 3^3.",
+    "options": [
+      "3^9",
+      "3^3",
+      "3^5",
+      "3^1"
+    ],
+    "question": "Vereinfache den Ausdruck: (3^4 * 3^2) / 3^3.",
+    "topic": "Potenzen und Potenzgesetze"
+  },
+  {
+    "correct": 3,
+    "explanation": "Zuerst lösen wir die Klammer auf: 3x + 12 - 7 = 2x + 9. Dann fassen wir zusammen: 3x + 5 = 2x + 9. Subtrahieren wir 2x von beiden Seiten: x + 5 = 9. Subtrahieren wir 5 von beiden Seiten: x = 4.",
+    "options": [
+      "x = 2",
+      "x = -2",
+      "x = 0",
+      "x = 4"
+    ],
+    "question": "Löse die Gleichung nach x: 3(x + 4) - 7 = 2x + 9.",
+    "topic": "Lineare Gleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Nach dem Satz des Pythagoras gilt a² + b² = c², wobei a und b die Katheten und c die Hypotenuse sind. Also: 6² + 8² = c². Das ergibt 36 + 64 = 100. Die Hypotenuse c ist die Wurzel aus 100, also c = 10 cm.",
+    "options": [
+      "10 cm",
+      "12 cm",
+      "14 cm",
+      "100 cm"
+    ],
+    "question": "In einem rechtwinkligen Dreieck sind die beiden Katheten 6 cm und 8 cm lang. Wie lang ist die Hypotenuse?",
+    "topic": "Satz des Pythagoras"
+  },
+  {
+    "correct": 2,
+    "explanation": "Wir können die beiden Gleichungen addieren: (x + y) + (x - y) = 7 + 3. Das vereinfacht sich zu 2x = 10, also x = 5. Setzen wir x = 5 in die erste Gleichung ein: 5 + y = 7. Daraus folgt y = 2. Die Lösung ist (5 | 2).",
+    "options": [
+      "(4 | 3)",
+      "(6 | 1)",
+      "(5 | 2)",
+      "(2 | 5)"
+    ],
+    "question": "Welches Zahlenpaar (x | y) ist die Lösung des folgenden linearen Gleichungssystems?\nI) x + y = 7\nII) x - y = 3",
+    "topic": "Lineare Gleichungssysteme"
+  },
+  {
+    "correct": 3,
+    "explanation": "Die Formel für das Volumen eines Zylinders ist V = π * r² * h. Mit r = 4 cm und h = 10 cm sowie π ≈ 3,14 erhalten wir: V = 3,14 * (4 cm)² * 10 cm = 3,14 * 16 cm² * 10 cm = 3,14 * 160 cm³ = 502,4 cm³.",
+    "options": [
+      "125,6 cm³",
+      "1256 cm³",
+      "251,2 cm³",
+      "502,4 cm³"
+    ],
+    "question": "Ein zylinderförmiges Gefäß hat einen Radius von 4 cm und eine Höhe von 10 cm. Welches Volumen hat das Gefäß? (Nutze π ≈ 3,14)",
+    "topic": "Volumenberechnung (Zylinder)"
+  }
+]

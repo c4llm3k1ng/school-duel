@@ -1,0 +1,194 @@
+[
+  {
+    "correct": 1,
+    "explanation": "Um den Wert des Ausdrucks zu finden, setzen wir die gegebene Zahl für die Variable `x` ein. Wenn `x = 3`, dann rechnen wir `3 + 5`, was `8` ergibt.",
+    "options": [
+      "35",
+      "8",
+      "x5",
+      "5x"
+    ],
+    "question": "Was ist der Wert des Ausdrucks `x + 5`, wenn `x = 3` ist?",
+    "topic": "Variablen verstehen, Terme auswerten"
+  },
+  {
+    "correct": 2,
+    "explanation": "Terme sind Teile eines Ausdrucks, die durch Plus- oder Minuszeichen voneinander getrennt sind. In diesem Ausdruck sind `3a`, `7b` und `-2` die drei Terme.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "question": "Wie viele Terme hat der algebraische Ausdruck `3a + 7b - 2`?",
+    "topic": "Terme erkennen und benennen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Um `y` allein auf einer Seite der Gleichung zu erhalten, verwenden wir die Umkehroperation. Da 7 von `y` subtrahiert wird, addieren wir 7 auf beiden Seiten der Gleichung: `y - 7 + 7 = 12 + 7`. Das ergibt `y = 19`.",
+    "options": [
+      "5",
+      "19",
+      "12",
+      "7"
+    ],
+    "question": "Welchen Wert hat die Variable `y` in der Gleichung `y - 7 = 12`?",
+    "topic": "Einfache Gleichungen lösen (Umkehroperationen)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Wir ersetzen die Variable `z` durch ihren Wert `4`. Der Ausdruck wird zu `3 * 4 + 2`. Zuerst multiplizieren wir: `12 + 2`. Das Ergebnis ist `14`.",
+    "options": [
+      "9",
+      "14",
+      "10",
+      "15"
+    ],
+    "question": "Wenn `z = 4` ist, welchen Wert hat der Ausdruck `3z + 2`?",
+    "topic": "Terme mit Multiplikation auswerten"
+  },
+  {
+    "correct": 2,
+    "explanation": "Wenn Paula weitere Äpfel 'bekommt' oder 'dazu bekommt', bedeutet das eine Addition zur ursprünglichen Menge. Daher addieren wir 3 zu `p`.",
+    "options": [
+      "`p - 3`",
+      "`3p`",
+      "`p + 3`",
+      "`p / 3`"
+    ],
+    "question": "Paula hat `p` Äpfel. Sie bekommt von ihrer Freundin 3 weitere Äpfel dazu. Welcher Ausdruck beschreibt, wie viele Äpfel Paula jetzt insgesamt hat?",
+    "topic": "Textaufgaben in algebraische Ausdrücke übersetzen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Um den Ausdruck zu vereinfachen, fassen wir die gleichartigen Terme zusammen. Die Zahlen sind `4` und `3`, ihre Summe ist `7`. Die Terme mit der Variablen `x` sind `2x` und `x` (was `1x` bedeutet), ihre Summe ist `3x`. Also ist der vereinfachte Ausdruck `3x + 7`.",
+    "options": [
+      "`7x + 3`",
+      "`6x + 4`",
+      "`3x + 7`",
+      "`10x`"
+    ],
+    "question": "Welcher Ausdruck ist derselbe wie `4 + 2x + 3 + x`?",
+    "topic": "Terme vereinfachen (gleichartige Terme zusammenfassen)"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das Zeichen `<` bedeutet 'ist kleiner als'. Wenn `n` kleiner als 10 ist, schreiben wir `n < 10`.",
+    "options": [
+      "`n = 10`",
+      "`n > 10`",
+      "`n < 10`",
+      "`n + 10 = 0`"
+    ],
+    "question": "Eine unbekannte Zahl `n` ist kleiner als 10. Welche mathematische Aussage drückt dies korrekt aus?",
+    "topic": "Einfache Ungleichungen verstehen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Wir erkennen ein Muster: Jede Zahl ist 3 größer als die vorherige (`5-2=3`, `8-5=3`, `11-8=3`). Um den nächsten Term zu finden, addieren wir 3 zu 11: `11 + 3 = 14`.",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "question": "Eine Zahlenfolge beginnt mit 2, 5, 8, 11, ... Was ist der nächste Term (die nächste Zahl) in dieser Folge?",
+    "topic": "Zahlenmuster erkennen und fortsetzen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Eine Variable ist ein Platzhalter (oft ein Buchstabe wie x, y oder a) für eine Zahl, die unbekannt ist oder sich ändern kann. Sie ist grundlegend in der Algebra.",
+    "options": [
+      "Eine feststehende Zahl, die sich nie ändert.",
+      "Ein Platzhalter oder Buchstabe für eine unbekannte Zahl.",
+      "Eine spezielle Art von Rechenzeichen (z.B. + oder -).",
+      "Eine Vorschrift, wie man etwas berechnet."
+    ],
+    "question": "Was versteht man in der Mathematik unter einer Variablen?",
+    "topic": "Variablen verstehen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Um den Term zu berechnen, ersetzt du die Variable 'a' durch den gegebenen Wert 9. Also rechnest du 7 * 9, was 63 ergibt.",
+    "options": [
+      "16",
+      "79",
+      "63",
+      "97"
+    ],
+    "question": "Berechne den Wert des Terms 7 * a, wenn a = 9 ist.",
+    "topic": "Terme berechnen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Dies ist eine Anwendung des Distributivgesetzes (Verteilungsgesetzes). Man multipliziert die Zahl vor der Klammer mit jedem Summanden in der Klammer: 4 * 5 + 4 * 3.",
+    "options": [
+      "4 * 5 + 3",
+      "4 + 5 * 3",
+      "4 * 5 + 4 * 3",
+      "4 + 5 + 3"
+    ],
+    "question": "Welcher Term ist gleichbedeutend mit 4 * (5 + 3)?",
+    "topic": "Rechengesetze (Distributivgesetz)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Um die Gleichung zu lösen, musst du die Umkehraufgabe bilden. Da 12 von x subtrahiert wird, addierst du 12 zu beiden Seiten der Gleichung: x = 25 + 12. Das Ergebnis ist 37.",
+    "options": [
+      "13",
+      "37",
+      "2512",
+      "1225"
+    ],
+    "question": "Welche Zahl löst die Gleichung x - 12 = 25?",
+    "topic": "Einfache Gleichungen lösen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Lena hat x Sticker. Max hat doppelt so viele, also 2 * x (oder 2x) Sticker. Zusammen haben sie die Summe ihrer Sticker: x + 2x.",
+    "options": [
+      "x + 2",
+      "2x",
+      "x + 2x",
+      "x * 2x"
+    ],
+    "question": "Lena hat x Sticker. Ihr Freund Max hat doppelt so viele Sticker wie Lena. Wie viele Sticker haben sie zusammen?",
+    "topic": "Textaufgaben in Terme übersetzen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das Kommutativgesetz (Vertauschungsgesetz) der Addition besagt, dass sich die Summe nicht ändert, wenn man die Reihenfolge der Summanden vertauscht.",
+    "options": [
+      "Das Assoziativgesetz der Addition",
+      "Das Distributivgesetz",
+      "Das Kommutativgesetz der Addition",
+      "Das Subtraktionsgesetz"
+    ],
+    "question": "Welches Gesetz wird durch die Aussage 8 + 5 = 5 + 8 dargestellt?",
+    "topic": "Rechengesetze (Kommutativgesetz)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ersetze die Variablen: 3 * 6 + 4. Beachte die Reihenfolge der Operationen (Punkt vor Strich): 18 + 4 = 22.",
+    "options": [
+      "13",
+      "22",
+      "24",
+      "28"
+    ],
+    "question": "Berechne den Wert des Terms 3 * a + b, wenn a = 6 und b = 4 ist.",
+    "topic": "Terme mit mehreren Variablen berechnen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Nennen wir den Preis des Bleistifts 'b'. Dann kostet das Notizbuch 'b + 1' Euro. Zusammen kosten sie b + (b + 1) = 5 Euro. Das vereinfacht sich zu 2b + 1 = 5. Subtrahiere 1 von beiden Seiten: 2b = 4. Teile durch 2: b = 2 Euro.",
+    "options": [
+      "1 Euro",
+      "2 Euro",
+      "3 Euro",
+      "4 Euro"
+    ],
+    "question": "Ein Bleistift kostet 1 Euro weniger als ein Notizbuch. Zusammen kosten sie 5 Euro. Wie viel kostet der Bleistift?",
+    "topic": "Textaufgaben mit Gleichungen"
+  }
+]

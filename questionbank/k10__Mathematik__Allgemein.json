@@ -1,0 +1,194 @@
+[
+  {
+    "correct": 2,
+    "explanation": "Um die Nullstellen zu finden, setzt man f(x) = 0: x² - 9 = 0. Dann addiert man 9 auf beiden Seiten: x² = 9. Die Lösungen für x sind die Quadratwurzeln von 9, also x = 3 und x = -3.",
+    "options": [
+      "A) x=3",
+      "B) x=-3",
+      "C) x=3 und x=-3",
+      "D) x=0 und x=9"
+    ],
+    "question": "Was sind die Nullstellen der Funktion f(x) = x² - 9?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die Formel für den Zinseszins ist K_n = K_0 * (1 + p/100)^n. Hier ist K_0 = 2000, p = 2 und n = 3. Also: K_3 = 2000 * (1 + 0,02)^3 = 2000 * (1,02)^3 = 2000 * 1,061208 = 2122,416 Euro. Gerundet auf zwei Dezimalstellen sind das 2122,42 Euro.",
+    "options": [
+      "A) 2120,00 Euro",
+      "B) 2121,20 Euro",
+      "C) 2122,42 Euro",
+      "D) 2124,24 Euro"
+    ],
+    "question": "Ein Kapital von 2000 Euro wird für 3 Jahre zu einem jährlichen Zinssatz von 2% angelegt. Wie hoch ist das Kapital nach 3 Jahren, wenn die Zinsen jährlich dem Kapital zugeschlagen werden (Zinseszins)?",
+    "topic": "Finanzmathematik (Zinseszins)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Man verwendet den Sinussatz: a / sin(Alpha) = b / sin(Beta). Setzt man die Werte ein: 10 / sin(30°) = b / sin(45°). Daraus folgt b = (10 * sin(45°)) / sin(30°) = (10 * 0,7071) / 0,5 = 7,071 / 0,5 = 14,142 cm. Gerundet 14,14 cm.",
+    "options": [
+      "A) 12,25 cm",
+      "B) 14,14 cm",
+      "C) 17,32 cm",
+      "D) 18,66 cm"
+    ],
+    "question": "In einem Dreieck ABC sind die Seite a = 10 cm, der Winkel Alpha = 30 Grad und der Winkel Beta = 45 Grad gegeben. Wie lang ist die Seite b? (Runde auf zwei Dezimalstellen)",
+    "topic": "Trigonometrie (Sinussatz)"
+  },
+  {
+    "correct": 1,
+    "explanation": "2 Stunden sind 120 Minuten. Die Anzahl der Verdopplungsperioden beträgt 120 Minuten / 20 Minuten = 6. Die Formel für exponentielles Wachstum bei Verdopplung ist N(t) = N_0 * 2^k, wobei k die Anzahl der Verdopplungsperioden ist. Also: 500 * 2^6 = 500 * 64 = 32000 Bakterien.",
+    "options": [
+      "A) 16000",
+      "B) 32000",
+      "C) 64000",
+      "D) 128000"
+    ],
+    "question": "Eine Bakterienkultur verdoppelt ihre Anzahl alle 20 Minuten. Wenn zu Beginn 500 Bakterien vorhanden sind, wie viele Bakterien sind nach 2 Stunden vorhanden?",
+    "topic": "Exponentialfunktionen (Wachstum)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Addiert man die beiden Gleichungen (I + II), so erhält man (x + y) + (x - y) = 7 + 3, was zu 2x = 10 vereinfacht wird. Daraus folgt x = 5. Setzt man x = 5 in die erste Gleichung (I) ein, erhält man 5 + y = 7, also y = 2. Die Lösung ist somit (5; 2).",
+    "options": [
+      "A) (4; 3)",
+      "B) (5; 2)",
+      "C) (3; 4)",
+      "D) (2; 5)"
+    ],
+    "question": "Gegeben ist das lineare Gleichungssystem:\nI) x + y = 7\nII) x - y = 3\nWelches Zahlenpaar (x; y) ist die Lösung des Systems?",
+    "topic": "Lineare Gleichungssysteme"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Volumenformel für einen Kegel ist V = (1/3) * pi * r² * h. Mit r = 3 cm, h = 4 cm und pi = 3,14 berechnet sich das Volumen als V = (1/3) * 3,14 * (3 cm)² * 4 cm = (1/3) * 3,14 * 9 cm² * 4 cm = 3,14 * 3 cm² * 4 cm = 3,14 * 12 cm³ = 37,68 cm³.",
+    "options": [
+      "A) 12,56 cm³",
+      "B) 37,68 cm³",
+      "C) 50,24 cm³",
+      "D) 113,04 cm³"
+    ],
+    "question": "Ein Kegel hat einen Radius von 3 cm und eine Höhe von 4 cm. Welches Volumen hat der Kegel? (Verwende pi = 3,14)",
+    "topic": "Geometrie (Volumen von Körpern)"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die Wahrscheinlichkeit, dass die erste Kugel rot ist, beträgt 5 (rote Kugeln) / 8 (Gesamtzahl der Kugeln) = 5/8. Nachdem eine rote Kugel gezogen wurde und nicht zurückgelegt wird, sind noch 4 rote Kugeln und insgesamt 7 Kugeln in der Urne. Die Wahrscheinlichkeit, dass die zweite Kugel ebenfalls rot ist, beträgt daher 4/7. Die Wahrscheinlichkeit für beide Ereignisse ist das Produkt: (5/8) * (4/7) = 20/56.",
+    "options": [
+      "A) 10/64",
+      "B) 25/64",
+      "C) 20/56",
+      "D) 25/56"
+    ],
+    "question": "In einer Urne befinden sich 5 rote und 3 blaue Kugeln. Es werden nacheinander zwei Kugeln ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, dass beide Kugeln rot sind?",
+    "topic": "Stochastik (Wahrscheinlichkeit ohne Zurücklegen)"
+  },
+  {
+    "correct": 2,
+    "explanation": "Bei einer Wurzelfunktion darf der Ausdruck unter der Wurzel nicht negativ sein, da die Wurzel aus einer negativen Zahl im Bereich der reellen Zahlen nicht definiert ist. Daher muss x - 4 ≥ 0 sein. Löst man dies nach x auf, erhält man x ≥ 4. Der Definitionsbereich ist also alle reellen Zahlen x, die größer oder gleich 4 sind.",
+    "options": [
+      "A) D = {x | x > 4}",
+      "B) D = {x | x < 4}",
+      "C) D = {x | x ≥ 4}",
+      "D) D = {x | x ≤ 4}"
+    ],
+    "question": "Gegeben ist die Funktion f(x) = √(x - 4). Was ist der größtmögliche Definitionsbereich für diese Funktion?",
+    "topic": "Funktionen (Definitionsbereich)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Eine quadratische Funktion hat genau eine Nullstelle, wenn ihre Diskriminante (D = b² - 4ac) null ist oder wenn sie sich als binomische Formel (x ± d)² darstellen lässt. Bei f(x) = x² + 2x + 1 ist D = 2² - 4*1*1 = 4 - 4 = 0. Außerdem ist (x+1)² = x² + 2x + 1.",
+    "options": [
+      "f(x) = x² + 2x + 1",
+      "f(x) = x² - 4",
+      "f(x) = x² + 1",
+      "f(x) = x² + 2x - 3"
+    ],
+    "question": "Welche der folgenden quadratischen Funktionen hat genau eine Nullstelle?",
+    "topic": "Quadratische Funktionen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das exponentielle Wachstum kann mit der Formel N(t) = N₀ * a^t beschrieben werden, wobei N₀ die Anfangsanzahl, a der Wachstumsfaktor und t die Zeit ist. Hier N₀ = 100, a = 2 (Verdopplung), t = 3 Stunden. Also N(3) = 100 * 2³ = 100 * 8 = 800.",
+    "options": [
+      "200",
+      "400",
+      "800",
+      "1600"
+    ],
+    "question": "Eine Population von Bakterien verdoppelt sich jede Stunde. Wenn zu Beginn 100 Bakterien vorhanden sind, wie viele sind es nach 3 Stunden?",
+    "topic": "Exponentialfunktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Zur Berechnung der Seite c verwenden wir den Kosinussatz: c² = a² + b² - 2ab * cos(γ). Eingesetzt: c² = 5² + 7² - 2*5*7*cos(60°). Da cos(60°) = 0,5, ergibt sich: c² = 25 + 49 - 70*0,5 = 74 - 35 = 39. Somit ist c = √39 cm.",
+    "options": [
+      "√29 cm",
+      "√39 cm",
+      "√49 cm",
+      "√59 cm"
+    ],
+    "question": "In einem Dreieck ABC sind die Seitenlängen a = 5 cm, b = 7 cm und der eingeschlossene Winkel Gamma (γ) = 60° gegeben. Wie lang ist die Seite c?",
+    "topic": "Trigonometrie (Kosinussatz)"
+  },
+  {
+    "correct": 3,
+    "explanation": "Wir nutzen die Formel der bedingten Wahrscheinlichkeit P(M|B) = P(M ∩ B) / P(B). P(M) = 0,6; P(J) = 0,4. P(B|M) = 0,2; P(B|J) = 0,3. P(M ∩ B) = P(B|M) * P(M) = 0,2 * 0,6 = 0,12. P(J ∩ B) = P(B|J) * P(J) = 0,3 * 0,4 = 0,12. Die Gesamtwahrscheinlichkeit, eine Brille zu tragen, ist P(B) = P(M ∩ B) + P(J ∩ B) = 0,12 + 0,12 = 0,24. Also P(M|B) = 0,12 / 0,24 = 0,5 = 50%.",
+    "options": [
+      "ca. 30,7%",
+      "ca. 35,3%",
+      "ca. 42,9%",
+      "ca. 50,0%"
+    ],
+    "question": "In einer Klasse sind 60% der Schüler Mädchen. 20% der Mädchen tragen eine Brille. 30% der Jungen tragen eine Brille. Wie groß ist die Wahrscheinlichkeit, dass ein zufällig ausgewählter Schüler mit Brille ein Mädchen ist?",
+    "topic": "Stochastik (Bedingte Wahrscheinlichkeit)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Formel für das Volumen eines Kegels ist V = (1/3) * π * r² * h. Einsetzen der Werte: V = (1/3) * π * (3 cm)² * 7 cm = (1/3) * π * 9 cm² * 7 cm = 3 * 7 * π cm³ = 21π cm³.",
+    "options": [
+      "21π cm³",
+      "63π cm³",
+      "7π cm³",
+      "42π cm³"
+    ],
+    "question": "Ein Kegel hat einen Radius von 3 cm und eine Höhe von 7 cm. Welches Volumen hat der Kegel? (π ≈ 3,14)",
+    "topic": "Geometrie (Volumenberechnung)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Bei der Division von Potenzen mit gleicher Basis werden die Exponenten subtrahiert: a^m / a^n = a^(m-n). Für x: x^(4-2) = x^2. Für y: y^(3 - (-1)) = y^(3+1) = y^4. Der vereinfachte Ausdruck ist somit x^2 * y^4.",
+    "options": [
+      "x^2 * y^2",
+      "x^2 * y^4",
+      "x^6 * y^2",
+      "x^6 * y^4"
+    ],
+    "question": "Vereinfache den Ausdruck: (x^4 * y^3) / (x^2 * y^-1)",
+    "topic": "Potenzfunktionen (Rechengesetze)"
+  },
+  {
+    "correct": 2,
+    "explanation": "Sei H die Anzahl der Hühner und K die Anzahl der Kaninchen. Wir stellen zwei Gleichungen auf: 1. Anzahl der Köpfe: H + K = 20. 2. Anzahl der Beine: 2H + 4K = 56. Aus Gleichung (1) folgt H = 20 - K. Setzen wir dies in Gleichung (2) ein: 2*(20 - K) + 4K = 56 -> 40 - 2K + 4K = 56 -> 40 + 2K = 56 -> 2K = 16 -> K = 8. Nun setzen wir K = 8 in H = 20 - K ein: H = 20 - 8 = 12. Der Bauer hat 12 Hühner und 8 Kaninchen.",
+    "options": [
+      "8 Hühner, 12 Kaninchen",
+      "10 Hühner, 10 Kaninchen",
+      "12 Hühner, 8 Kaninchen",
+      "14 Hühner, 6 Kaninchen"
+    ],
+    "question": "Ein Bauer hat Hühner und Kaninchen. Insgesamt zählt er 20 Köpfe und 56 Beine. Wie viele Hühner und wie viele Kaninchen hat der Bauer?",
+    "topic": "Lineare Gleichungssysteme"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der Ausdruck log₂(16) fragt, mit welcher Potenz man die Basis 2 potenzieren muss, um 16 zu erhalten. Das bedeutet 2^x = 16. Da 2 * 2 * 2 * 2 = 16, ist 2^4 = 16. Somit ist log₂(16) = 4.",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "question": "Welchen Wert hat log₂(16)?",
+    "topic": "Logarithmen"
+  }
+]

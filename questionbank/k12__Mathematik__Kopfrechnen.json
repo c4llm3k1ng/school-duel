@@ -1,0 +1,194 @@
+[
+  {
+    "correct": 1,
+    "explanation": "Um 15 mit 13 zu multiplizieren, kann man 15 * (10 + 3) rechnen. Das ergibt 15 * 10 + 15 * 3 = 150 + 45 = 195.",
+    "options": [
+      "185",
+      "195",
+      "205",
+      "215"
+    ],
+    "question": "Was ist das Ergebnis von 15 multipliziert mit 13?",
+    "topic": "Arithmetik"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die erste Ableitung der Funktion f(x) = 3x² - 4x + 5 ist f'(x) = 6x - 4. Setzt man x = 2 ein, erhält man f'(2) = 6 * 2 - 4 = 12 - 4 = 8.",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "question": "Gegeben ist die Funktion f(x) = 3x² - 4x + 5. Welchen Wert hat die erste Ableitung f'(x) an der Stelle x = 2?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 2,
+    "explanation": "log₂(64) = 6, da 2⁶ = 64. log₃(9) = 2, da 3² = 9. log₅(1) = 0, da 5⁰ = 1. Somit ist 6 + 2 - 0 = 8.",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "question": "Berechne den Wert des Ausdrucks: log₂(64) + log₃(9) - log₅(1).",
+    "topic": "Logarithmen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Eine Erhöhung um 20% entspricht dem Faktor 1,2. Eine Senkung um 10% entspricht dem Faktor 0,9. Der Gesamtänderungsfaktor ist 1,2 * 0,9 = 1,08. Das entspricht 108% des ursprünglichen Preises.",
+    "options": [
+      "98%",
+      "102%",
+      "108%",
+      "110%"
+    ],
+    "question": "Ein Preis wird zunächst um 20% erhöht und anschließend um 10% gesenkt. Wie viel Prozent des ursprünglichen Preises beträgt der Endpreis?",
+    "topic": "Prozentrechnung"
+  },
+  {
+    "correct": 0,
+    "explanation": "Das Skalarprodukt zweier Vektoren (a₁, a₂, a₃) und (b₁, b₂, b₃) ist a₁b₁ + a₂b₂ + a₃b₃. Hier ist 2*1 + (-1)*4 + 3*(-2) = 2 - 4 - 6 = -8.",
+    "options": [
+      "-8",
+      "-6",
+      "0",
+      "8"
+    ],
+    "question": "Gegeben sind die Vektoren a = (2, -1, 3) und b = (1, 4, -2). Was ist der Wert des Skalarprodukts a · b?",
+    "topic": "Vektorrechnung"
+  },
+  {
+    "correct": 2,
+    "explanation": "Eine Stammfunktion von f(x) = 3x² - 1 ist F(x) = x³ - x. Das bestimmte Integral ist F(2) - F(0) = (2³ - 2) - (0³ - 0) = (8 - 2) - 0 = 6.",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "question": "Berechne den Wert des bestimmten Integrals von 0 bis 2 über die Funktion f(x) = 3x² - 1.",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Zuerst berechnen wir (1 + i)² = 1² + 2*1*i + i² = 1 + 2i - 1 = 2i. Dann ist (1 + i)⁴ = ((1 + i)²)² = (2i)² = 2² * i² = 4 * (-1) = -4.",
+    "options": [
+      "4",
+      "-4",
+      "4i",
+      "-4i"
+    ],
+    "question": "Welchen Wert hat der Ausdruck (1 + i)⁴, wobei i die imaginäre Einheit ist?",
+    "topic": "Komplexe Zahlen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das n-te Glied einer geometrischen Folge ist gegeben durch die Formel a_n = a₁ * q^(n-1). Für das vierte Glied (n=4) ist dies a₄ = 2 * 3^(4-1) = 2 * 3³ = 2 * 27 = 54.",
+    "options": [
+      "18",
+      "27",
+      "54",
+      "81"
+    ],
+    "question": "In einer geometrischen Folge ist das erste Glied a₁ = 2 und der Quotient q = 3. Was ist der Wert des vierten Gliedes a₄?",
+    "topic": "Geometrische Folgen"
+  },
+  {
+    "correct": 1,
+    "explanation": "25% entsprechen einem Viertel. Ein Viertel von 160 ist 40.",
+    "options": [
+      "A) 30",
+      "B) 40",
+      "C) 50",
+      "D) 60"
+    ],
+    "question": "Was sind 25% von 160?",
+    "topic": "Prozentrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Eine negative Basis, die mit einer ungeraden Potenz potenziert wird, ergibt ein negatives Ergebnis. 2^5 = 32, also ist (-2)^5 = -32.",
+    "options": [
+      "A) 32",
+      "B) -32",
+      "C) 10",
+      "D) -10"
+    ],
+    "question": "Berechnen Sie den Wert von (-2)^5.",
+    "topic": "Potenzrechnung"
+  },
+  {
+    "correct": 0,
+    "explanation": "log_3(81) ist der Exponent, mit dem man 3 potenzieren muss, um 81 zu erhalten. Da 3^4 = 81, ist log_3(81) = 4. log_2(16) ist der Exponent, mit dem man 2 potenzieren muss, um 16 zu erhalten. Da 2^4 = 16, ist log_2(16) = 4. Somit ist 4 - 4 = 0.",
+    "options": [
+      "A) 0",
+      "B) 1",
+      "C) 2",
+      "D) 3"
+    ],
+    "question": "Was ist der Wert von log_3(81) - log_2(16)?",
+    "topic": "Logarithmusgesetze"
+  },
+  {
+    "correct": 0,
+    "explanation": "Nach den Regeln der Punkt- vor Strichrechnung: 18 * 5 = 90. 45 / 9 = 5. Dann 90 - 5 = 85.",
+    "options": [
+      "A) 85",
+      "B) 90",
+      "C) 95",
+      "D) 100"
+    ],
+    "question": "Berechnen Sie: 18 * 5 - 45 / 9.",
+    "topic": "Grundrechenarten"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die erste Ableitung von f(x) = 4x^3 ist f'(x) = 4 * 3x^(3-1) = 12x^2. Setzt man x = 1 ein, erhält man f'(1) = 12 * (1)^2 = 12.",
+    "options": [
+      "A) 4",
+      "B) 8",
+      "C) 12",
+      "D) 16"
+    ],
+    "question": "Gegeben ist die Funktion f(x) = 4x^3. Was ist der Wert der ersten Ableitung f'(x) an der Stelle x = 1?",
+    "topic": "Differentialrechnung (Ableitungen)"
+  },
+  {
+    "correct": 2,
+    "explanation": "Nach dem ersten Jahr: 200 Euro * 1.10 = 220 Euro. Nach dem zweiten Jahr: 220 Euro * 1.10 = 242 Euro.",
+    "options": [
+      "A) 220 Euro",
+      "B) 240 Euro",
+      "C) 242 Euro",
+      "D) 260 Euro"
+    ],
+    "question": "Ein Betrag von 200 Euro wird für 2 Jahre zu einem Zinssatz von 10% pro Jahr angelegt. Wie hoch ist das Kapital am Ende des zweiten Jahres bei jährlicher Zinseszinsrechnung?",
+    "topic": "Finanzmathematik (Zinseszins)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Zuerst die Potenz berechnen: (2/3)^2 = (2^2)/(3^2) = 4/9. Dann die Brüche addieren: 4/9 + 1/3 = 4/9 + 3/9 = 7/9.",
+    "options": [
+      "A) 5/9",
+      "B) 7/9",
+      "C) 4/9",
+      "D) 1"
+    ],
+    "question": "Berechnen Sie: (2/3)^2 + (1/3).",
+    "topic": "Bruchrechnung und Potenzen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die Quadratwurzel aus 144 ist 12. 2 hoch 3 ist 8. Die Rechnung lautet also (12 * 8) / 6 = 96 / 6 = 16.",
+    "options": [
+      "A) 8",
+      "B) 12",
+      "C) 16",
+      "D) 24"
+    ],
+    "question": "Was ist der Wert von (Wurzel aus 144) * (2^3) / 6?",
+    "topic": "Wurzeln und Potenzen"
+  }
+]

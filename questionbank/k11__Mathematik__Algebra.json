@@ -1,0 +1,1634 @@
+[
+  {
+    "correct": 1,
+    "explanation": "Der Logarithmus fragt, mit welcher Potenz man die Basis (hier 2) potenzieren muss, um das Argument (hier 1/8) zu erhalten. Da 2⁻³ = 1/8 ist, ist log₂(1/8) = -3.",
+    "options": [
+      "A) 3",
+      "B) -3",
+      "C) 1/3",
+      "D) -1/3"
+    ],
+    "question": "Was ist der Wert von log₂(1/8)?",
+    "topic": "Logarithmen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Wenn x₀ eine Nullstelle einer Polynomfunktion ist, dann ist (x - x₀) ein Faktor der Funktion. Für x₃ = 3 ist der zugehörige Faktor (x - 3).",
+    "options": [
+      "A) (x - 1)",
+      "B) (x + 2)",
+      "C) (x - 3)",
+      "D) (x + 3)"
+    ],
+    "question": "Eine Polynomfunktion f(x) hat die Nullstellen x₁ = -1, x₂ = 2 und x₃ = 3. Welcher der folgenden Ausdrücke könnte ein Faktor von f(x) sein?",
+    "topic": "Polynomfunktionen und Nullstellen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Zuerst finden wir die Nullstellen der quadratischen Funktion: x² - 4x + 3 = 0. Diese sind x₁ = 1 und x₂ = 3. Da die Parabel nach oben geöffnet ist (Koeffizient von x² ist positiv), ist der Funktionswert positiv, wenn x kleiner als die kleinere Nullstelle oder größer als die größere Nullstelle ist. Also x < 1 oder x > 3.",
+    "options": [
+      "A) (-∞, 1) ∪ (3, ∞)",
+      "B) (1, 3)",
+      "C) (-∞, -3) ∪ (-1, ∞)",
+      "D) (-3, -1)"
+    ],
+    "question": "Welche Lösungsmenge hat die Ungleichung x² - 4x + 3 > 0?",
+    "topic": "Quadratische Ungleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Wir können 27 als Potenz der Basis 3 schreiben: 27 = 3³. Die Gleichung wird somit 3^(x-1) = 3³. Da die Basen gleich sind, müssen auch die Exponenten gleich sein: x - 1 = 3. Daraus folgt x = 4.",
+    "options": [
+      "A) x = 3",
+      "B) x = 4",
+      "C) x = 2",
+      "D) x = 1"
+    ],
+    "question": "Lösen Sie die Gleichung 3^(x-1) = 27.",
+    "topic": "Exponentialgleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Wir schreiben die Wurzel als Potenz: √(x³) = x^(3/2). Dann multiplizieren wir die Potenzen mit gleicher Basis, indem wir die Exponenten addieren: x^(3/2) * x^(1/2) = x^((3/2) + (1/2)) = x^(4/2) = x².",
+    "options": [
+      "A) x²",
+      "B) x^(3/2)",
+      "C) x^(5/2)",
+      "D) x³"
+    ],
+    "question": "Vereinfachen Sie den Ausdruck √(x³) * x^(1/2) für x > 0.",
+    "topic": "Potenzgesetze und Wurzeln"
+  },
+  {
+    "correct": 0,
+    "explanation": "Mit den Logarithmusgesetzen können wir die Summe der Logarithmen in einen Logarithmus des Produkts umwandeln: log₂(x(x-2)) = 3. Indem wir die Definition des Logarithmus anwenden, erhalten wir x(x-2) = 2³. Dies vereinfacht sich zu x² - 2x = 8 oder x² - 2x - 8 = 0. Die Lösungen dieser quadratischen Gleichung sind x₁ = 4 und x₂ = -2. Da die Argumente des Logarithmus (x und x-2) positiv sein müssen, ist x = 4 die einzige gültige Lösung.",
+    "options": [
+      "A) x = 4",
+      "B) x = 2",
+      "C) x = 0",
+      "D) x = -2"
+    ],
+    "question": "Lösen Sie die Gleichung log₂(x) + log₂(x-2) = 3.",
+    "topic": "Logarithmusgleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der Ausdruck unter einer Quadratwurzel darf nicht negativ sein, da die Quadratwurzel aus negativen Zahlen im Bereich der reellen Zahlen nicht definiert ist. Daher muss x - 3 ≥ 0 gelten, was x ≥ 3 bedeutet. Der Definitionsbereich ist somit das Intervall [3, ∞).",
+    "options": [
+      "A) D = ℝ",
+      "B) D = [3, ∞)",
+      "C) D = (-∞, 3]",
+      "D) D = (3, ∞)"
+    ],
+    "question": "Bestimmen Sie den maximalen Definitionsbereich der Funktion f(x) = √(x - 3).",
+    "topic": "Definitionsbereich von Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ein lineares Gleichungssystem in dieser Form hat keine Lösung, wenn die zugehörigen Geraden parallel sind, aber unterschiedliche y-Achsenabschnitte besitzen. Parallele Geraden haben die gleiche Steigung. Die Steigung der ersten Geraden ist 2. Also muss k = 2 sein. Die y-Achsenabschnitte sind 1 und -3, welche unterschiedlich sind. Somit gibt es für k=2 keine Lösung.",
+    "options": [
+      "A) k = 1",
+      "B) k = 2",
+      "C) k = -3",
+      "D) k = 0"
+    ],
+    "question": "Für welchen Wert des Parameters k hat das lineare Gleichungssystem y = 2x + 1 und y = kx - 3 keine Lösung?",
+    "topic": "Lineare Gleichungssysteme mit Parametern"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Ausdruck sqrt(x^4 * y^6) kann umgeschrieben werden als sqrt(x^4) * sqrt(y^6). Da sqrt(a^b) = a^(b/2) ist, ergibt sich x^(4/2) * y^(6/2) = x^2 * y^3.",
+    "options": [
+      "x^2 * y^3",
+      "x^4 * y^3",
+      "x^2 * y^6",
+      "x * y^3"
+    ],
+    "question": "Vereinfachen Sie den Ausdruck: sqrt(x^4 * y^6)",
+    "topic": "Potenzen und Wurzeln"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Gleichung 3^(2x-1) = 27 kann als 3^(2x-1) = 3^3 geschrieben werden. Durch den Vergleich der Exponenten erhalten wir 2x-1 = 3, was zu 2x = 4 und somit x = 2 führt.",
+    "options": [
+      "x = 1",
+      "x = 2",
+      "x = 3",
+      "x = 4"
+    ],
+    "question": "Lösen Sie die Gleichung nach x: 3^(2x-1) = 27",
+    "topic": "Exponentialgleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Da x_1 = 1 eine Nullstelle ist, ist (x-1) ein Faktor des Polynoms. Mittels Polynomdivision (x^3 - 7x + 6) / (x-1) erhalten wir das quadratische Polynom x^2 + x - 6. Die weiteren Nullstellen ergeben sich aus x^2 + x - 6 = 0. Durch Faktorisierung ((x+3)(x-2)=0) oder die Mitternachtsformel finden wir x_2 = -3 und x_3 = 2.",
+    "options": [
+      "x_2 = 2, x_3 = -3",
+      "x_2 = -2, x_3 = 3",
+      "x_2 = 1, x_3 = -6",
+      "x_2 = -1, x_3 = 6"
+    ],
+    "question": "Eine Nullstelle des Polynoms P(x) = x^3 - 7x + 6 ist x_1 = 1. Finden Sie die anderen Nullstellen.",
+    "topic": "Polynomgleichungen (Nullstellen)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für den Ausdruck unter der Wurzel muss x+3 >= 0 gelten, also x >= -3. Da die Wurzel zudem im Nenner steht, darf sie nicht null sein. Daher muss x+3 > 0 gelten, was bedeutet, dass der Definitionsbereich D = {x in R | x > -3} ist.",
+    "options": [
+      "D = {x in R | x > -3}",
+      "D = {x in R | x >= -3}",
+      "D = {x in R | x != -3}",
+      "D = {x in R | x >= 2}"
+    ],
+    "question": "Welches ist der maximale Definitionsbereich D der Funktion f(x) = (x-2) / sqrt(x+3)?",
+    "topic": "Definitionsbereich von Funktionen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Um die Ungleichung zu lösen, subtrahieren Sie x von beiden Seiten: 2x - 5 < 7. Addieren Sie dann 5 zu beiden Seiten: 2x < 12. Teilen Sie schließlich durch 2: x < 6.",
+    "options": [
+      "x < 6",
+      "x > 6",
+      "x < 1",
+      "x > 1"
+    ],
+    "question": "Lösen Sie die Ungleichung nach x: 3x - 5 < x + 7",
+    "topic": "Lineare Ungleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Zuerst den Definitionsbereich bestimmen: x-1 > 0 (x > 1) und x+1 > 0 (x > -1), also insgesamt x > 1. Wenden Sie die Logarithmusregel log_b(A) + log_b(B) = log_b(A*B) an: log_2((x-1)(x+1)) = 3, was log_2(x^2-1) = 3 ergibt. Umformen in eine Exponentialgleichung: x^2-1 = 2^3, also x^2-1 = 8. Daraus folgt x^2 = 9, somit x = 3 oder x = -3. Aufgrund der Definitionsbereichseinschränkung (x > 1) ist die einzige gültige Lösung x = 3.",
+    "options": [
+      "x = 3",
+      "x = sqrt(10)",
+      "x = 2*sqrt(2)",
+      "x = 4"
+    ],
+    "question": "Lösen Sie die Gleichung nach x: log_2(x-1) + log_2(x+1) = 3",
+    "topic": "Logarithmusgleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Um die Schnittpunkte zu finden, setzen Sie die Funktionsterme gleich: x^2 = x + 2. Bringen Sie alle Terme auf eine Seite, um eine quadratische Gleichung zu erhalten: x^2 - x - 2 = 0. Diese Gleichung kann durch Faktorisierung gelöst werden: (x-2)(x+1) = 0. Die Lösungen sind x_1 = 2 und x_2 = -1.",
+    "options": [
+      "x_1 = -1, x_2 = 2",
+      "x_1 = 1, x_2 = -2",
+      "x_1 = 0, x_2 = 2",
+      "x_1 = -2, x_2 = 0"
+    ],
+    "question": "Bestimmen Sie die x-Koordinate(n) der Schnittpunkte der Funktionen f(x) = x^2 und g(x) = x + 2.",
+    "topic": "Schnittpunkte von Funktionen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Bei einer rationalen Funktion f(x) = P(x) / Q(x), bei der der Grad des Zählerpolynoms P(x) (hier Grad 2) gleich dem Grad des Nennerpolynoms Q(x) (hier Grad 2) ist, existiert eine horizontale Asymptote. Diese ist gegeben durch das Verhältnis der Leitkoeffizienten. Der Leitkoeffizient des Zählers ist 3, der des Nenners ist 1. Daher ist die horizontale Asymptote bei y = 3/1 = 3.",
+    "options": [
+      "Die Funktion hat eine horizontale Asymptote bei y = 3.",
+      "Die Funktion hat eine horizontale Asymptote bei y = 0.",
+      "Die Funktion hat eine schräge Asymptote, da der Zählergrad größer als der Nennergrad ist.",
+      "Die Funktion hat keine Asymptoten, da Zähler und Nenner denselben Grad haben."
+    ],
+    "question": "Welche der folgenden Aussagen über die Funktion f(x) = (3x^2 - 5x + 1) / (x^2 - 4) ist korrekt?",
+    "topic": "Rationale Funktionen (Asymptoten)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Potenzregel: (xⁿ)' = n·xⁿ⁻¹. Hier n=3, also f'(x) = 3x².",
+    "options": [
+      "3x²",
+      "x²",
+      "3x",
+      "x³"
+    ],
+    "question": "Was ist die Ableitung von f(x) = x³?",
+    "topic": "Potenzregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Potenzregel: (xⁿ)' = n·xⁿ⁻¹.",
+    "options": [
+      "f'(x) = n·xⁿ⁻¹",
+      "f'(x) = xⁿ⁻¹",
+      "f'(x) = n·xⁿ",
+      "f'(x) = (n−1)·xⁿ"
+    ],
+    "question": "Wie lautet die allgemeine Potenzregel für f(x) = xⁿ?",
+    "topic": "Potenzregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Ableitung jeder konstanten Funktion ist 0.",
+    "options": [
+      "0",
+      "c",
+      "1",
+      "c−1"
+    ],
+    "question": "Was ist die Ableitung einer Konstante c?",
+    "topic": "Grundregeln"
+  },
+  {
+    "correct": 0,
+    "explanation": "Produktregel: (u·v)' = u'·v + u·v'.",
+    "options": [
+      "u'·v + u·v'",
+      "u'·v'",
+      "u'·v − u·v'",
+      "u·v' + u'"
+    ],
+    "question": "Wie lautet die Produktregel für (u·v)'?",
+    "topic": "Produktregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Kettenregel: (f∘g)'(x) = f'(g(x))·g'(x). Äußere Ableitung mal innere Ableitung.",
+    "options": [
+      "f'(g(x))·g'(x)",
+      "f'(x)·g'(x)",
+      "f(g'(x))",
+      "f'(g(x))+g'(x)"
+    ],
+    "question": "Wie lautet die Kettenregel für f(g(x))?",
+    "topic": "Kettenregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "(sin x)' = cos x.",
+    "options": [
+      "cos(x)",
+      "−cos(x)",
+      "−sin(x)",
+      "sin(x)"
+    ],
+    "question": "Was ist die Ableitung von f(x) = sin(x)?",
+    "topic": "Trigonometrie"
+  },
+  {
+    "correct": 0,
+    "explanation": "(cos x)' = −sin x.",
+    "options": [
+      "−sin(x)",
+      "sin(x)",
+      "−cos(x)",
+      "cos(x)"
+    ],
+    "question": "Was ist die Ableitung von f(x) = cos(x)?",
+    "topic": "Trigonometrie"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Exponentialfunktion ist ihre eigene Ableitung: (eˣ)' = eˣ.",
+    "options": [
+      "eˣ",
+      "x·eˣ",
+      "eˣ⁻¹",
+      "1/eˣ"
+    ],
+    "question": "Was ist die Ableitung von f(x) = eˣ?",
+    "topic": "Exponentialfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "(ln x)' = 1/x (für x > 0).",
+    "options": [
+      "1/x",
+      "ln(x)",
+      "x",
+      "1"
+    ],
+    "question": "Was ist die Ableitung von f(x) = ln(x)?",
+    "topic": "Logarithmus"
+  },
+  {
+    "correct": 0,
+    "explanation": "f'(x₀) ist die momentane Änderungsrate, also die Steigung der Tangente in x₀.",
+    "options": [
+      "Steigung der Tangente an f im Punkt x₀",
+      "Fläche unter dem Graphen von f bis zum Punkt x₀",
+      "Krümmung des Graphen von f an der Stelle x₀",
+      "Schnittpunkt des Graphen mit der x-Achse"
+    ],
+    "question": "Was beschreibt der Wert f'(x₀) geometrisch?",
+    "topic": "Interpretation"
+  },
+  {
+    "correct": 0,
+    "explanation": "Positive erste Ableitung bedeutet steigender Funktionsverlauf.",
+    "options": [
+      "f ist dort streng monoton steigend",
+      "f ist dort streng monoton fallend",
+      "f hat dort ein lokales Minimum (Tiefpunkt)",
+      "f ist in diesem Bereich konstant"
+    ],
+    "question": "Was bedeutet f'(x) > 0 auf einem Intervall?",
+    "topic": "Monotonie"
+  },
+  {
+    "correct": 0,
+    "explanation": "Negative erste Ableitung bedeutet fallender Funktionsverlauf.",
+    "options": [
+      "f ist dort streng monoton fallend",
+      "f ist dort streng monoton steigend",
+      "f hat dort ein lokales Maximum (Hochpunkt)",
+      "f ist in diesem Bereich konstant"
+    ],
+    "question": "Was bedeutet f'(x) < 0 auf einem Intervall?",
+    "topic": "Monotonie"
+  },
+  {
+    "correct": 0,
+    "explanation": "An einem lokalen Extremum muss die erste Ableitung null sein (notwendig, nicht hinreichend).",
+    "options": [
+      "f'(x₀) = 0",
+      "f(x₀) = 0",
+      "f''(x₀) = 0",
+      "f'(x₀) > 0"
+    ],
+    "question": "Was ist eine notwendige Bedingung für ein lokales Extremum bei x₀?",
+    "topic": "Extremwerte"
+  },
+  {
+    "correct": 0,
+    "explanation": "f'(x₀)=0 und f''(x₀)<0 ⇒ lokales Maximum (Linkskrümmung).",
+    "options": [
+      "f'(x₀) = 0 und f''(x₀) < 0",
+      "f'(x₀) = 0 und f''(x₀) > 0",
+      "f''(x₀) = 0 und f'(x₀) < 0",
+      "f(x₀) > 0 und f'(x₀) = 0"
+    ],
+    "question": "Wie erkennt man mit der zweiten Ableitung ein lokales Maximum?",
+    "topic": "Extremwerte"
+  },
+  {
+    "correct": 0,
+    "explanation": "f'(x₀)=0 und f''(x₀)>0 ⇒ lokales Minimum (Rechtskrümmung).",
+    "options": [
+      "f'(x₀) = 0 und f''(x₀) > 0",
+      "f'(x₀) = 0 und f''(x₀) < 0",
+      "f''(x₀) = 0 und f'(x₀) > 0",
+      "f(x₀) < 0 und f'(x₀) = 0"
+    ],
+    "question": "Wie erkennt man mit der zweiten Ableitung ein lokales Minimum?",
+    "topic": "Extremwerte"
+  },
+  {
+    "correct": 0,
+    "explanation": "An einer Wendestelle wechselt die Krümmungsrichtung. Notwendig: f''(x₀) = 0.",
+    "options": [
+      "Stelle, an der f die Krümmungsrichtung wechselt",
+      "Stelle, an der f ein Extremum hat",
+      "Nullstelle von f (Schnittpunkt mit der x-Achse)",
+      "Stelle, an der f nicht differenzierbar ist"
+    ],
+    "question": "Was ist eine Wendestelle?",
+    "topic": "Wendepunkte"
+  },
+  {
+    "correct": 0,
+    "explanation": "Potenzregel mit konstantem Faktor: f'(x) = 5·2x = 10x.",
+    "options": [
+      "10x",
+      "5x",
+      "10x²",
+      "2x"
+    ],
+    "question": "Was ist die Ableitung von f(x) = 5x²?",
+    "topic": "Potenzregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Gliedweise: (3x⁴)'=12x³, (−2x²)'=−4x, (1)'=0.",
+    "options": [
+      "12x³ − 4x",
+      "12x³ − 2x",
+      "3x³ − 4x",
+      "12x⁴ − 4x²"
+    ],
+    "question": "Was ist die Ableitung von f(x) = 3x⁴ − 2x² + 1?",
+    "topic": "Potenzregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Kettenregel: äußere Ableitung cos(2x), innere Ableitung 2. Ergebnis: 2cos(2x).",
+    "options": [
+      "2·cos(2x)",
+      "cos(2x)",
+      "2·sin(2x)",
+      "−2·cos(2x)"
+    ],
+    "question": "Was ist die Ableitung von f(x) = sin(2x)?",
+    "topic": "Kettenregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Kettenregel: (e^(3x))' = e^(3x)·3.",
+    "options": [
+      "3·e^(3x)",
+      "e^(3x)",
+      "3x·e^(3x)",
+      "e^(3x)/3"
+    ],
+    "question": "Was ist die Ableitung von f(x) = e^(3x)?",
+    "topic": "Kettenregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "ln(x²)=2ln(x), also f'(x)=2/x. Oder Kettenregel: (1/x²)·2x = 2/x.",
+    "options": [
+      "2/x",
+      "2x",
+      "ln(2x)",
+      "1/x²"
+    ],
+    "question": "Was ist die Ableitung von f(x) = ln(x²)?",
+    "topic": "Kettenregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Quotientenregel: (u/v)' = (u'v − uv') / v².",
+    "options": [
+      "(u'v − uv') / v²",
+      "(u'v + uv') / v²",
+      "(uv' − u'v) / v²",
+      "u'·v' / v²"
+    ],
+    "question": "Wie lautet die Quotientenregel für (u/v)'?",
+    "topic": "Quotientenregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "√x = x^(1/2). Potenzregel: f'(x) = ½·x^(−1/2) = 1/(2√x).",
+    "options": [
+      "1/(2√x)",
+      "√x/2",
+      "2√x",
+      "1/√x"
+    ],
+    "question": "Was ist die Ableitung von f(x) = √x?",
+    "topic": "Potenzregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "1/x = x^(−1). Potenzregel: f'(x) = −x^(−2) = −1/x².",
+    "options": [
+      "−1/x²",
+      "1/x²",
+      "−1/x",
+      "ln(x)"
+    ],
+    "question": "Was ist die Ableitung von f(x) = 1/x?",
+    "topic": "Potenzregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "(tan x)' = 1/cos²(x) = sec²(x).",
+    "options": [
+      "1/cos²(x)",
+      "−1/sin²(x)",
+      "cos²(x)",
+      "1/sin²(x)"
+    ],
+    "question": "Was ist die Ableitung von f(x) = tan(x)?",
+    "topic": "Trigonometrie"
+  },
+  {
+    "correct": 0,
+    "explanation": "f''(x) > 0 bedeutet Rechtskrümmung (konvex), f''(x) < 0 Linkskrümmung (konkav).",
+    "options": [
+      "Krümmung des Graphen",
+      "Steigung von f",
+      "Fläche unter f",
+      "Nullstellen von f"
+    ],
+    "question": "Was beschreibt die zweite Ableitung f''(x) geometrisch?",
+    "topic": "Krümmung"
+  },
+  {
+    "correct": 0,
+    "explanation": "f'(x)=3x²−3=0 ⇒ x=±1. f''(−1)=−6<0 ⇒ Hochpunkt bei x=−1.",
+    "options": [
+      "x = −1",
+      "x = 0",
+      "x = 1",
+      "x = −3"
+    ],
+    "question": "Für f(x) = x³ − 3x: Bei welchem x liegt der Hochpunkt?",
+    "topic": "Extremwerte"
+  },
+  {
+    "correct": 0,
+    "explanation": "f'(x)=3x²−3=0 ⇒ x=±1. f''(1)=6>0 ⇒ Tiefpunkt bei x=1.",
+    "options": [
+      "x = 1",
+      "x = −1",
+      "x = 0",
+      "x = 3"
+    ],
+    "question": "Für f(x) = x³ − 3x: Bei welchem x liegt der Tiefpunkt?",
+    "topic": "Extremwerte"
+  },
+  {
+    "correct": 0,
+    "explanation": "f''(x)=6x=0 ⇒ x=0. Vorzeichenwechsel bestätigt Wendestelle.",
+    "options": [
+      "x = 0",
+      "x = 1",
+      "x = −1",
+      "Es gibt keine"
+    ],
+    "question": "Für f(x) = x³: Wo liegt die Wendestelle?",
+    "topic": "Wendepunkte"
+  },
+  {
+    "correct": 0,
+    "explanation": "f'(x)=2x. Bei x=1: f'(1)=2.",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "0"
+    ],
+    "question": "Welche Steigung hat die Tangente an f(x) = x² bei x = 1?",
+    "topic": "Tangente"
+  },
+  {
+    "correct": 0,
+    "explanation": "Punkt (1,1), Steigung 2: t(x) = 1 + 2(x−1) = 2x − 1.",
+    "options": [
+      "t(x) = 2x − 1",
+      "t(x) = 2x + 1",
+      "t(x) = x + 1",
+      "t(x) = 2x"
+    ],
+    "question": "Wie lautet die Tangentengleichung an f(x) = x² bei x₀ = 1?",
+    "topic": "Tangente"
+  },
+  {
+    "correct": 0,
+    "explanation": "Wenn beide Ableitungen null sind, kann man ohne Vorzeichenwechsel-Kriterium keine Aussage treffen.",
+    "options": [
+      "Keine sichere Aussage; das Vorzeichenwechsel-Kriterium muss angewendet werden",
+      "Es liegt sicher ein Wendepunkt vor",
+      "Es liegt sicher ein Extremum (Hoch- oder Tiefpunkt) vor",
+      "f ist in der Umgebung von x₀ konstant"
+    ],
+    "question": "Was bedeutet f'(x₀) = 0 und f''(x₀) = 0?",
+    "topic": "Extremwerte"
+  },
+  {
+    "correct": 0,
+    "explanation": "Da zwei Faktoren multipliziert werden, gilt die Produktregel.",
+    "options": [
+      "Produktregel",
+      "Kettenregel",
+      "Quotientenregel",
+      "Potenzregel"
+    ],
+    "question": "Welche Regel verwendet man für (x²·sin(x))'?",
+    "topic": "Produktregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Kettenregel: äußere Funktion eˣ, innere x². Ergebnis: e^(x²)·2x.",
+    "options": [
+      "2x·e^(x²)",
+      "e^(x²)",
+      "2·e^(x²)",
+      "x²·e^(x²)"
+    ],
+    "question": "Was ist die Ableitung von f(x) = e^(x²)?",
+    "topic": "Kettenregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Kettenregel: 4(3x+1)³·3 = 12(3x+1)³.",
+    "options": [
+      "12·(3x+1)³",
+      "4·(3x+1)³",
+      "12·(3x+1)⁴",
+      "3·(3x+1)³"
+    ],
+    "question": "Was ist die Ableitung von f(x) = (3x + 1)⁴?",
+    "topic": "Kettenregel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Ein Punkt mit f'(x₀)=0 heißt stationärer Punkt (kann Extremum oder Sattelpunkt sein).",
+    "options": [
+      "Stationärer Punkt",
+      "Polstelle",
+      "Wendepunkt",
+      "Asymptote"
+    ],
+    "question": "Wie nennt man einen Punkt, an dem die Tangente waagerecht ist?",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Ableitung jeder Konstante ist 0.",
+    "options": [
+      "0",
+      "7",
+      "1",
+      "−7"
+    ],
+    "question": "Was ist f'(x) für f(x) = 7?",
+    "topic": "Grundregeln"
+  },
+  {
+    "correct": 0,
+    "explanation": "ln(3x)=ln(3)+ln(x), also f'(x)=1/x. Oder Kettenregel: (1/(3x))·3=1/x.",
+    "options": [
+      "1/x",
+      "3/x",
+      "ln(3)",
+      "3·ln(x)"
+    ],
+    "question": "Was ist die Ableitung von f(x) = ln(3x)?",
+    "topic": "Logarithmus"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Ableitung von f'(x) heißt zweite Ableitung f''(x).",
+    "options": [
+      "Die zweite Ableitung f''",
+      "Die Stammfunktion F(x)",
+      "Das Differential df(x)",
+      "Der Grenzwert von f(x)"
+    ],
+    "question": "Wie nennt man die Ableitung der Ableitung?",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "correct": 0,
+    "explanation": "f'(0)=0, und da x⁴ ≥ 0 für alle x und f(0)=0, liegt ein globales Minimum vor.",
+    "options": [
+      "f hat bei x = 0 ein globales Minimum",
+      "f hat bei x = 0 ein globales Maximum",
+      "f hat bei x = 0 einen Wendepunkt",
+      "f hat überhaupt keine Extrema"
+    ],
+    "question": "Welche Aussage über f(x) = x⁴ ist korrekt?",
+    "topic": "Extremwerte"
+  },
+  {
+    "correct": 0,
+    "explanation": "Umkehrung der Potenzregel: ∫xⁿ dx = xⁿ⁺¹/(n+1) + C. Hier: x³/3 + C.",
+    "options": [
+      "x³/3 + C",
+      "x³ + C",
+      "2x + C",
+      "x²/2 + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = x²?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫(1/x)dx = ln|x| + C.",
+    "options": [
+      "ln|x| + C",
+      "1/x² + C",
+      "−1/x² + C",
+      "1/(2x²) + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = 1/x?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫eˣ dx = eˣ + C.",
+    "options": [
+      "eˣ + C",
+      "x·eˣ + C",
+      "eˣ⁻¹ + C",
+      "eˣ/x + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = eˣ?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫sin(x)dx = −cos(x) + C.",
+    "options": [
+      "−cos(x) + C",
+      "cos(x) + C",
+      "sin(x) + C",
+      "−sin(x) + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = sin(x)?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫cos(x)dx = sin(x) + C.",
+    "options": [
+      "sin(x) + C",
+      "−sin(x) + C",
+      "cos(x) + C",
+      "−cos(x) + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = cos(x)?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "Hauptsatz: ∫ₐᵇ f(x)dx = [F(x)]ₐᵇ = F(b)−F(a), wenn F Stammfunktion von f ist.",
+    "options": [
+      "Das bestimmte Integral lässt sich mit Stammfunktionen berechnen: ∫ₐᵇ f(x)dx = F(b)−F(a)",
+      "Das bestimmte Integral ist grundsätzlich immer positiv",
+      "Jede stetige Funktion besitzt genau eine einzige Stammfunktion",
+      "Integration und Differentiation sind voneinander völlig unabhängige Operationen"
+    ],
+    "question": "Was besagt der Hauptsatz der Analysis?",
+    "topic": "Hauptsatz"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫₁² x dx = [x²/2]₁² = 4/2 − 1/2 = 3/2.",
+    "options": [
+      "3/2",
+      "1",
+      "2",
+      "1/2"
+    ],
+    "question": "Was ergibt ∫₁² x dx?",
+    "topic": "Bestimmtes Integral"
+  },
+  {
+    "correct": 0,
+    "explanation": "Das bestimmte Integral entspricht dem orientierten Flächeninhalt zwischen Graph und x-Achse.",
+    "options": [
+      "Die Fläche zwischen dem Graphen von f und der x-Achse",
+      "Die Steigung des Graphen von f",
+      "Die Bogenlänge des Graphen von f",
+      "Den maximalen Funktionswert von f"
+    ],
+    "question": "Was beschreibt das bestimmte Integral ∫ₐᵇ f(x)dx geometrisch (wenn f ≥ 0)?",
+    "topic": "Interpretation"
+  },
+  {
+    "correct": 0,
+    "explanation": "Beim Flächeninhalt werden Bereiche unterhalb der x-Achse negativ integriert; man muss Beträge addieren.",
+    "options": [
+      "Negative Teilflächen müssen getrennt berechnet und ihr Betrag addiert werden",
+      "Man kann das bestimmte Integral direkt ohne Anpassungen berechnen",
+      "Negative Teilbereiche werden bei der Berechnung einfach ignoriert",
+      "Das Integral ist für solche Funktionen nicht definiert"
+    ],
+    "question": "Was muss man beachten, wenn f teilweise negative Werte hat und man den Flächeninhalt berechnet?",
+    "topic": "Flächeninhalt"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫xⁿ dx = xⁿ⁺¹/(n+1) + C (für n ≠ −1).",
+    "options": [
+      "xⁿ⁺¹/(n+1) + C",
+      "n·xⁿ⁻¹ + C",
+      "xⁿ/(n+1) + C",
+      "xⁿ⁺¹ + C"
+    ],
+    "question": "Wie lautet die Stammfunktion von f(x) = xⁿ (n ≠ −1)?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫₀¹ x² dx = [x³/3]₀¹ = 1/3 − 0 = 1/3.",
+    "options": [
+      "1/3",
+      "1/2",
+      "1",
+      "2/3"
+    ],
+    "question": "Was ergibt ∫₀¹ x² dx?",
+    "topic": "Bestimmtes Integral"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫3 dx = 3x + C.",
+    "options": [
+      "3x + C",
+      "3x² + C",
+      "3/x + C",
+      "0"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = 3?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫₀² 3 dx = [3x]₀² = 6 − 0 = 6.",
+    "options": [
+      "6",
+      "3",
+      "9",
+      "12"
+    ],
+    "question": "Was ergibt ∫₀² 3 dx?",
+    "topic": "Bestimmtes Integral"
+  },
+  {
+    "correct": 0,
+    "explanation": "F(x)+C sind alle Stammfunktionen von f, da Konstanten sich bei der Ableitung aufheben.",
+    "options": [
+      "Weil es unendlich viele Stammfunktionen gibt (sie unterscheiden sich um eine Konstante)",
+      "Weil das Integral ohne C stets negativ werden würde",
+      "Weil Rechnungen ohne C zu numerischen Fehlern führen",
+      "Weil C den Funktionswert als freier Faktor skaliert"
+    ],
+    "question": "Warum braucht man die Integrationskonstante C beim unbestimmten Integral?",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "correct": 0,
+    "explanation": "Das unbestimmte Integral liefert eine Stammfunktion (Funktionsschar), das bestimmte Integral eine Zahl.",
+    "options": [
+      "Unbestimmt ergibt eine Funktionsschar; bestimmt ergibt einen Zahlenwert",
+      "Bestimmt ergibt eine Funktion; unbestimmt einen Zahlenwert",
+      "Beide Integraltypen liefern stets dasselbe Ergebnis",
+      "Das unbestimmte Integral hat keine eindeutige Lösung"
+    ],
+    "question": "Was ist der Unterschied zwischen unbestimmtem und bestimmtem Integral?",
+    "topic": "Grundbegriffe"
+  },
+  {
+    "correct": 0,
+    "explanation": "Eine vollständige Kurvendiskussion umfasst: Definitionsmenge, Symmetrie, Grenzverhalten, Nullstellen, Extrema, Wendepunkte.",
+    "options": [
+      "Systematische Analyse einer Funktion (Definitionsmenge, Nullstellen, Symmetrie, Extrema, Wendepunkte, Grenzwerte)",
+      "Ausschließlich die Nullstellen einer Funktion berechnen",
+      "Ausschließlich die erste Ableitung der Funktion bilden",
+      "Den Graphen der Funktion mit dem Taschenrechner darstellen"
+    ],
+    "question": "Was bedeutet Kurvendiskussion?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 0,
+    "explanation": "Gilt f(−x) = f(x), ist die Funktion gerade (achsensymmetrisch zur y-Achse).",
+    "options": [
+      "f(−x) = f(x) für alle x",
+      "f(−x) = −f(x) für alle x",
+      "f(x) = f(x+1)",
+      "f'(x) = 0"
+    ],
+    "question": "Wie erkennt man, dass eine Funktion achsensymmetrisch zur y-Achse ist?",
+    "topic": "Symmetrie"
+  },
+  {
+    "correct": 0,
+    "explanation": "Gilt f(−x) = −f(x), ist die Funktion ungerade (punktsymmetrisch zum Ursprung).",
+    "options": [
+      "f(−x) = −f(x) für alle x",
+      "f(−x) = f(x) für alle x",
+      "f(0) = 0 für alle x im Definitionsbereich",
+      "f ist streng monoton auf ganz ℝ"
+    ],
+    "question": "Wie erkennt man, dass eine Funktion punktsymmetrisch zum Ursprung ist?",
+    "topic": "Symmetrie"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für große positive x dominiert x³, also f(x) → +∞.",
+    "options": [
+      "f(x) → +∞",
+      "f(x) → −∞",
+      "f(x) → 0",
+      "f(x) → 1"
+    ],
+    "question": "Wie berechnet man das Grenzverhalten von f(x) = x³ − x für x → +∞?",
+    "topic": "Grenzverhalten"
+  },
+  {
+    "correct": 0,
+    "explanation": "Senkrechte Asymptoten entstehen z. B. an Polstellen, wo |f(x)| → ∞.",
+    "options": [
+      "Eine senkrechte Gerade x = a, der sich der Graph annähert, ohne sie zu schneiden",
+      "Eine waagerechte Gerade, der sich der Graph für x→±∞ annähert",
+      "Eine schräge Gerade, an die sich der Graph für x→±∞ annähert",
+      "Eine Tangente, die den Graphen im Hochpunkt berührt"
+    ],
+    "question": "Was ist eine senkrechte Asymptote?",
+    "topic": "Asymptoten"
+  },
+  {
+    "correct": 0,
+    "explanation": "Strebt f(x) für x → ±∞ gegen einen Wert c, ist y = c waagerechte Asymptote.",
+    "options": [
+      "Eine waagerechte Gerade y = c, der sich f für x → ±∞ nähert",
+      "Eine senkrechte Gerade, die einer Polstelle entspricht",
+      "Ein Punkt, an dem die Krümmungsrichtung des Graphen wechselt",
+      "Eine Stelle, an der der Graph die x-Achse schneidet"
+    ],
+    "question": "Was ist eine waagerechte Asymptote?",
+    "topic": "Asymptoten"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫sin(x)dx = −cos(x) + C.",
+    "options": [
+      "−cos(x) + C",
+      "cos(x) + C",
+      "sin(x) + C",
+      "−sin(x) + C"
+    ],
+    "question": "Was ergibt ∫ sin(x) dx?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫cos(x)dx = sin(x) + C.",
+    "options": [
+      "sin(x) + C",
+      "−sin(x) + C",
+      "cos(x) + C",
+      "−cos(x) + C"
+    ],
+    "question": "Was ergibt ∫ cos(x) dx?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫e^(2x)dx = e^(2x)/2 + C (Umkehr der Kettenregel).",
+    "options": [
+      "e^(2x)/2 + C",
+      "2·e^(2x) + C",
+      "e^(2x) + C",
+      "e^(2x²) + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = e^(2x)?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "Partielle Integration: ∫u·v' dx = u·v − ∫u'·v dx.",
+    "options": [
+      "u·v − ∫u'·v dx",
+      "u'·v + ∫u·v' dx",
+      "u·v' − ∫u·v dx",
+      "∫u dx · ∫v' dx"
+    ],
+    "question": "Was ist Partielle Integration für ∫u·v' dx?",
+    "topic": "Integrationsmethoden"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫x·eˣ dx wird mit partieller Integration gelöst: u=x, v'=eˣ.",
+    "options": [
+      "Partielle Integration",
+      "Substitution",
+      "Potenzregel",
+      "Quotientenregel"
+    ],
+    "question": "Welche Methode verwendet man typischerweise für ∫ x·eˣ dx?",
+    "topic": "Integrationsmethoden"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫₀¹ 2x dx = [x²]₀¹ = 1 − 0 = 1.",
+    "options": [
+      "1",
+      "2",
+      "1/2",
+      "4"
+    ],
+    "question": "Was ist das Ergebnis von ∫₀¹ 2x dx?",
+    "topic": "Bestimmtes Integral"
+  },
+  {
+    "correct": 0,
+    "explanation": "Obersumme (Supremum jedes Teilintervalls) und Untersumme (Infimum) konvergieren zum Integral.",
+    "options": [
+      "Approximationen des Integrals durch Rechtecksummen von oben und unten",
+      "Obere und untere Stammfunktionen, die sich um ±C unterscheiden",
+      "Grenzwerte der Ableitung von oben und unten",
+      "Maximal- und Minimalwerte der Funktion im Intervall"
+    ],
+    "question": "Was sind Ober- und Untersumme im Kontext des Integrals?",
+    "topic": "Riemann-Integral"
+  },
+  {
+    "correct": 0,
+    "explanation": "Substitution u=2x+1: ∫u³·(du/2) = u⁴/8 + C = (2x+1)⁴/8 + C.",
+    "options": [
+      "(2x+1)⁴/8 + C",
+      "(2x+1)⁴/4 + C",
+      "(2x+1)⁴ + C",
+      "4·(2x+1)³ + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = (2x+1)³?",
+    "topic": "Substitution"
+  },
+  {
+    "correct": 0,
+    "explanation": "An einer Polstelle wird der Nenner null, während der Zähler ≠ 0 ist; |f(x)| → ∞.",
+    "options": [
+      "Eine Stelle, an der der Funktionswert gegen ±∞ strebt",
+      "Eine Stelle, an der die zweite Ableitung den Wert null annimmt",
+      "Eine Stelle, an der die Funktion ein lokales Maximum annimmt",
+      "Eine Stelle, an der der Funktionswert einen Sprung aufweist"
+    ],
+    "question": "Was ist eine Polstelle?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 0,
+    "explanation": "x=2 macht den Nenner null, daher ist x=2 ausgeschlossen.",
+    "options": [
+      "ℝ \\ {2}",
+      "ℝ",
+      "ℝ⁺",
+      "ℝ \\ {0}"
+    ],
+    "question": "Was ist die Definitionsmenge von f(x) = 1/(x−2)?",
+    "topic": "Definitionsmenge"
+  },
+  {
+    "correct": 0,
+    "explanation": "x²−4=0 ⇒ x²=4 ⇒ x=±2.",
+    "options": [
+      "x = ±2",
+      "x = 2",
+      "x = 4",
+      "x = 0"
+    ],
+    "question": "Was ist die Nullstelle von f(x) = x² − 4?",
+    "topic": "Nullstellen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für rationale Funktionen kommen außerdem Polstellen und Asymptoten hinzu.",
+    "options": [
+      "Definitionsmenge, Symmetrie, Asymptoten, Nullstellen, Extrema, Wendepunkte, Graph",
+      "Ausschließlich das Berechnen der Ableitungen",
+      "Ausschließlich das Bestimmen von Nullstellen und Extrema",
+      "Ausschließlich das Untersuchen von Grenzwerten"
+    ],
+    "question": "Was ist eine vollständige Kurvendiskussion für rationale Funktionen?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫₀^π sin(x)dx = [−cos(x)]₀^π = −cos(π)+cos(0) = 1+1 = 2.",
+    "options": [
+      "2",
+      "0",
+      "π",
+      "1"
+    ],
+    "question": "Was ergibt ∫₀^π sin(x) dx?",
+    "topic": "Bestimmtes Integral"
+  },
+  {
+    "correct": 0,
+    "explanation": "Substitutionsregel: ∫f(g(x))·g'(x)dx = F(g(x)) + C.",
+    "options": [
+      "F(g(x)) + C",
+      "F(x)·G(x) + C",
+      "∫f(x)dx + C",
+      "f(g(x)) + C"
+    ],
+    "question": "Wie lautet die Substitutionsregel ∫f(g(x))·g'(x)dx?",
+    "topic": "Substitution"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫x^(-2)dx = x^(-1)/(−1) + C = −1/x + C.",
+    "options": [
+      "−1/x + C",
+      "ln|x| + C",
+      "1/(3x³) + C",
+      "−2/x³ + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = 1/x² (x ≠ 0)?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 0,
+    "explanation": "Fläche zwischen zwei Kurven: ∫ₐᵇ (f(x)−g(x))dx, wenn f≥g auf [a,b].",
+    "options": [
+      "∫ₐᵇ (f(x)−g(x)) dx",
+      "∫ₐᵇ f(x)dx · ∫ₐᵇ g(x)dx",
+      "∫ₐᵇ (f(x)+g(x)) dx",
+      "(f(b)−g(b))·(b−a)"
+    ],
+    "question": "Wie berechnet man die Fläche zwischen zwei Kurven f und g (mit f ≥ g)?",
+    "topic": "Flächeninhalt"
+  },
+  {
+    "correct": 0,
+    "explanation": "[x²/2]₋₁¹ = 1/2 − 1/2 = 0. Die Funktion x ist punktsymmetrisch, die Flächen heben sich auf.",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "−1"
+    ],
+    "question": "Was ergibt ∫₋₁¹ x dx?",
+    "topic": "Bestimmtes Integral"
+  },
+  {
+    "correct": 0,
+    "explanation": "Beim orientierten Integral sind Flächen unter der x-Achse negativ; beim Flächeninhalt nimmt man Beträge.",
+    "options": [
+      "Flächen unterhalb der x-Achse werden negativ gewertet",
+      "Alle Flächen werden grundsätzlich als positiv gezählt",
+      "Der Flächeninhalt hängt von der Integrationsrichtung ab",
+      "Zwischen orientiertem Integral und normalem Flächeninhalt gibt es keinen Unterschied"
+    ],
+    "question": "Was versteht man unter dem orientierten Flächeninhalt?",
+    "topic": "Flächeninhalt"
+  },
+  {
+    "correct": 0,
+    "explanation": "∫(4x³−6x)dx = x⁴ − 3x² + C.",
+    "options": [
+      "x⁴ − 3x² + C",
+      "4x⁴ − 6x² + C",
+      "x⁴ − 6x + C",
+      "4x² − 6 + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = 4x³ − 6x?",
+    "topic": "Stammfunktion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Funktion f: D → W, x ↦ f(x). Eindeutigkeit bedeutet: kein x hat zwei verschiedene Bilder. Gegenbeispiel: Kreis ist keine Funktion (Senkrechte trifft ihn zweimal).",
+    "options": [
+      "Eine Gleichung mit zwei Unbekannten, die beliebig viele Lösungen besitzt",
+      "Eine eindeutige Zuordnung: jedem Element x aus dem Definitionsbereich wird genau ein Wert f(x) aus dem Wertebereich zugeordnet",
+      "Eine Menge von Punkten in einem Koordinatensystem",
+      "Ein algebraisches Polynom aus Potenzen von x"
+    ],
+    "question": "Was ist eine Funktion in der Mathematik?",
+    "topic": "Analysis"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Ableitung gibt die Steigung des Graphen an jedem Punkt an. Sie ist der Grenzwert des Differenzenquotienten für h → 0.",
+    "options": [
+      "Der Flächeninhalt zwischen Graph und x-Achse im Intervall [a, b]",
+      "Die momentane Änderungsrate (Steigung der Tangente) an der Stelle x: f'(x) = lim_{h→0} [f(x+h) – f(x)] / h",
+      "Die Stammfunktion F(x), für die gilt: F'(x) = f(x)",
+      "Die Nullstelle x₀, an der der Graph die x-Achse schneidet"
+    ],
+    "question": "Was ist die Ableitung f'(x) einer Funktion?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Potenzregel: f(x) = xⁿ → f'(x) = n·xⁿ⁻¹. Beispiel: f(x) = x³ → f'(x) = 3x². Gilt für alle reellen n.",
+    "options": [
+      "f(x) = xⁿ → f'(x) = n·xⁿ",
+      "f(x) = xⁿ → f'(x) = n·xⁿ⁻¹",
+      "f(x) = xⁿ → f'(x) = xⁿ⁻¹",
+      "f(x) = xⁿ → f'(x) = (n+1)·xⁿ"
+    ],
+    "question": "Was ist die Ableitungsregel für Potenzfunktionen?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Kettenregel: äußere Ableitung mal innere Ableitung. Beispiel: h(x) = sin(x²) → h'(x) = cos(x²) · 2x.",
+    "options": [
+      "Für Produkte gilt: (u·v)' = u'·v + u·v' (Produktregel)",
+      "Für verkettete Funktionen h(x) = f(g(x)) gilt: h'(x) = f'(g(x)) · g'(x)",
+      "Für Quotienten gilt: (u/v)' = (u'v – uv')/v² (Quotientenregel)",
+      "Für Potenzfunktionen gilt: f'(x) = n·xⁿ⁻¹ (Potenzregel)"
+    ],
+    "question": "Was ist die Kettenregel?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Produktregel für das Produkt zweier Funktionen: (u·v)' = u'v + uv'. Beispiel: h(x) = x²·sin(x) → h'(x) = 2x·sin(x) + x²·cos(x).",
+    "options": [
+      "(u/v)' = (u'v – uv')/v²",
+      "(u·v)' = u'·v + u·v'",
+      "(u+v)' = u' + v'",
+      "(u·v)' = u'·v'"
+    ],
+    "question": "Was ist die Produktregel?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Quotientenregel: Zählerableitung mal Nenner minus Zähler mal Nennerableitung, durch Nenner zum Quadrat. Merkhilfe: 'NAZ minus ZAN durch N²'.",
+    "options": [
+      "(u·v)' = u'v + uv'",
+      "(u/v)' = (u'·v – u·v') / v²",
+      "(u/v)' = u'/v'",
+      "(u/v)' = (u'+v') / v²"
+    ],
+    "question": "Was ist die Quotientenregel?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Extremum: f'(x) = 0 (notwendig). Hinreichend: f''(x) < 0 → Maximum; f''(x) > 0 → Minimum. f''(x) = 0 → weitere Untersuchung nötig.",
+    "options": [
+      "Jeder Punkt des Graphen, an dem die Ableitung einen definierten Wert annimmt",
+      "Ein Punkt, an dem die Funktion ein lokales Maximum oder Minimum annimmt; notwendige Bedingung: f'(x) = 0",
+      "Ein Schnittpunkt mit der x-Achse, an dem f(x₀) = 0 gilt",
+      "Ein Wendepunkt, an dem die Krümmungsrichtung des Graphen wechselt"
+    ],
+    "question": "Was ist ein Extremum (Hoch-/Tiefpunkt) einer Funktion?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Wendepunkt: f''(x) = 0 und f'''(x) ≠ 0 (oder Vorzeichenwechsel von f''). Am Wendepunkt ist die Steigung f'(x) extremal (Sattelpunkt: WP + f'=0).",
+    "options": [
+      "Ein Punkt, an dem die Funktion ein lokales Maximum oder Minimum annimmt",
+      "Ein Punkt, an dem die Krümmungsrichtung wechselt: f''(x) = 0 und Vorzeichen von f'' wechselt",
+      "Eine Nullstelle, an der der Graph die x-Achse schneidet",
+      "Ein Sattelpunkt, an dem die erste Ableitung verschwindet"
+    ],
+    "question": "Was ist ein Wendepunkt?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Kurvendiskussion (Vollanalyse): D, Symmetrie, Nullstellen (f=0), Extrempunkte (f'=0), Wendepunkte (f''=0), Asymptoten, Wertebereich.",
+    "options": [
+      "Das bloße Zeichnen des Funktionsgraphen ohne systematische Untersuchung",
+      "Die vollständige Analyse einer Funktion: Definitionsbereich, Symmetrie, Nullstellen, Extrema, Wendepunkte, Verhalten für x→±∞",
+      "Ausschließlich die erste und zweite Ableitung der Funktion berechnen",
+      "Ausschließlich die Nullstellen der Funktion algebraisch bestimmen"
+    ],
+    "question": "Was ist eine Kurvendiskussion?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Bestimmtes Integral: Summe der (vorzeichenbehafteten) Flächenstücke. Oberfläche unter der x-Achse → negativer Beitrag.",
+    "options": [
+      "Die Ableitung von f, also die momentane Änderungsrate",
+      "Der Flächeninhalt zwischen dem Graphen von f und der x-Achse (mit Vorzeichen) von a bis b; definiert als Grenzwert von Riemannsummen",
+      "Die Stammfunktion F von f, für die F'(x) = f(x) gilt",
+      "Die Summe aller Nullstellen von f im Intervall [a, b]"
+    ],
+    "question": "Was ist das bestimmte Integral ∫_a^b f(x) dx?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Stammfunktion F zu f: F'(x) = f(x). Alle Stammfunktionen unterscheiden sich nur durch eine additive Konstante C (Integrationskonstante).",
+    "options": [
+      "Die zweite Ableitung f''(x), also die Ableitung der Ableitung",
+      "Eine Funktion mit F'(x) = f(x); das unbestimmte Integral ∫f(x)dx = F(x) + C",
+      "Die Nullstelle x₀ von f, an der f(x₀) = 0 gilt",
+      "Der Grenzwert lim_{x→∞} f(x) der Funktion"
+    ],
+    "question": "Was ist die Stammfunktion F(x)?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Hauptsatz (Newton-Leibniz): verbindet Differentiation und Integration. Ermöglicht Berechnung bestimmter Integrale durch Stammfunktionen.",
+    "options": [
+      "Ableitung und Integral sind voneinander unabhängige mathematische Operationen",
+      "∫_a^b f(x)dx = F(b) – F(a), wobei F eine Stammfunktion von f ist – Ableiten und Integrieren sind Umkehroperationen",
+      "Jede reellwertige Funktion ist auf jedem Intervall integrierbar",
+      "Das bestimmte Integral entspricht dem Grenzwert der Ableitung für h→0"
+    ],
+    "question": "Was besagt der Hauptsatz der Differential- und Integralrechnung?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Potenzregel der Integration: Exponent +1, dann durch (n+1) teilen. Beispiel: ∫x² dx = x³/3 + C.",
+    "options": [
+      "∫xⁿ dx = xⁿ⁺¹ + C",
+      "∫xⁿ dx = xⁿ⁺¹/(n+1) + C (für n ≠ –1)",
+      "∫xⁿ dx = n·xⁿ⁻¹ + C",
+      "∫xⁿ dx = xⁿ/n + C"
+    ],
+    "question": "Was ist die Integralregel für Potenzfunktionen?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Fläche zwischen f und g: Schnittstellen bestimmen, dann ∫|f–g|dx. Im Teilintervall: obere Funktion minus untere Funktion (ohne Betragszeichen, wenn Reihenfolge klar).",
+    "options": [
+      "A = ∫_a^b [f(x) + g(x)] dx (Summe der Funktionen)",
+      "A = ∫_a^b |f(x) – g(x)| dx (Betrag der Differenz, da Vorzeichen beachtet werden muss)",
+      "A = [f(b) – g(b)] − [f(a) – g(a)]",
+      "A = ∫_a^b f(x)dx · ∫_a^b g(x)dx (Produkt der Einzelintegrale)"
+    ],
+    "question": "Wie berechnet man den Flächeninhalt zwischen zwei Graphen?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Nullstellen: f(x) = 0 lösen. Methoden: Faktorisieren, p-q-Formel, Newton-Verfahren, Substitution. Einfache, doppelte, dreifache Nullstellen haben unterschiedliches Vorzeichenverhalten.",
+    "options": [
+      "Eine Stelle, an der f'(x₀) = 0 und die Tangente waagerecht ist",
+      "Eine Stelle x₀ mit f(x₀) = 0 – der Graph schneidet die x-Achse",
+      "Die Steigung des Graphen an einer bestimmten Stelle x₀",
+      "Das globale Maximum der Funktion auf einem Intervall"
+    ],
+    "question": "Was ist eine Nullstelle einer Funktion?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "sin'(x) = cos(x); cos'(x) = –sin(x); tan'(x) = 1/cos²(x). Merkhilfe: Ableitungskreis sin→cos→–sin→–cos→sin.",
+    "options": [
+      "sin'(x) = –cos(x), cos'(x) = sin(x)",
+      "sin'(x) = cos(x), cos'(x) = –sin(x)",
+      "sin'(x) = cos(x), cos'(x) = sin(x)",
+      "sin'(x) = –sin(x), cos'(x) = cos(x)"
+    ],
+    "question": "Was ist die Ableitung von sin(x) und cos(x)?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die e-Funktion ist die einzige Funktion, die gleich ihrer eigenen Ableitung ist. (ln x)' = 1/x gilt für x > 0.",
+    "options": [
+      "(eˣ)' = x·eˣ⁻¹, (ln x)' = ln(x)",
+      "(eˣ)' = eˣ, (ln x)' = 1/x",
+      "(eˣ)' = eˣ⁺¹, (ln x)' = x",
+      "(eˣ)' = e, (ln x)' = 1"
+    ],
+    "question": "Was ist die Ableitung von eˣ und ln(x)?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 2,
+    "explanation": "f''(x) > 0: Rechtskurve / konvex (Schüssel-Form), Tangente unterhalb. f''(x) < 0: Linkskurve / konkav, Tangente oberhalb. Am Wendepunkt wechselt das Vorzeichen.",
+    "options": [
+      "Die Funktion hat an diesem Punkt ein lokales Maximum",
+      "Der Graph ist linksgekrümmt (konvex nach oben), die Tangente liegt unterhalb",
+      "Der Graph ist rechtsgekrümmt (konkav nach oben)",
+      "Die Funktion ist an diesem Punkt streng monoton fallend"
+    ],
+    "question": "Was bedeutet f''(x) > 0 an einem Punkt?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der Differenzenquotient [f(x+h)–f(x)]/h beschreibt die Sekantensteigung; für h→0 wird daraus die Tangentensteigung (Ableitung).",
+    "options": [
+      "f'(x) = f(x) / x für alle Punkte im Definitionsbereich",
+      "f'(x) = lim_{h→0} [f(x+h) – f(x)] / h",
+      "f'(x) = [f(b) – f(a)] / (b – a) als mittlere Änderungsrate",
+      "f'(x) = f(x+1) – f(x) für eine Schrittweite von 1"
+    ],
+    "question": "Was ist die Grenzwertdefinition des Differenzenquotienten?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Sattelpunkt (Terrassenpoint): f'=0, f''=0, f'''≠0. Beispiel: f(x) = x³ bei x=0: f'=0, aber kein Extremum.",
+    "options": [
+      "Ein Punkt, an dem die Funktion ein lokales Maximum in der Umgebung annimmt",
+      "Ein Wendepunkt, an dem zusätzlich f'(x) = 0 gilt – weder Extremum noch Wendepunkt allein",
+      "Ein Schnittpunkt zweier Graphen, an dem beide Funktionen gleich sind",
+      "Ein Randpunkt, an dem der Definitionsbereich beginnt oder endet"
+    ],
+    "question": "Was ist ein Sattelpunkt?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Newton-Raphson-Verfahren nähert sich Nullstellen iterativ an; konvergiert schnell (quadratisch) für 'gute' Startwerte.",
+    "options": [
+      "Eine Methode zur Berechnung von Integralen mit Hilfe von Stammfunktionen",
+      "Ein iteratives Verfahren zur Nullstellenberechnung: x_{n+1} = x_n – f(x_n)/f'(x_n)",
+      "Eine Formel für die Ableitung von Potenzfunktionen der Form xⁿ",
+      "Eine Formel zur Berechnung von Flächeninhalten unter Funktionsgraphen"
+    ],
+    "question": "Was ist das Newton-Verfahren?",
+    "topic": "Numerische Mathematik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Grenzwertverhalten: n gerade + a_n > 0 → beide Seiten +∞; n ungerade + a_n > 0 → links –∞, rechts +∞.",
+    "options": [
+      "Alle Polynome streben für x → ±∞ gegen den Wert 0",
+      "Das Verhalten wird durch den führenden Term bestimmt: f(x) = aₙxⁿ + … verhält sich für |x|→∞ wie aₙxⁿ",
+      "Alle Polynome streben für x → ±∞ gegen denselben Grenzwert ∞",
+      "Alle Polynome nähern sich für x → ±∞ einem konstanten Grenzwert"
+    ],
+    "question": "Was ist das Verhalten von Polynomen für x → ±∞?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Rationale Funktionen: Definitionslücken untersuchen (hebbare Lücke oder Polstelle). Asymptoten: senkrecht (Pol), waagrecht oder schräg.",
+    "options": [
+      "Eine Funktion, die einen Wurzelterm der Form √g(x) enthält",
+      "Ein Quotient zweier Polynome: f(x) = p(x)/q(x); Definitionslücken wo q(x)=0",
+      "Eine Funktion, die einen Exponentialterm der Form eˣ enthält",
+      "Eine trigonometrische Funktion wie sin(x), cos(x) oder tan(x)"
+    ],
+    "question": "Was ist eine rationale Funktion?",
+    "topic": "Analysis"
+  },
+  {
+    "correct": 1,
+    "explanation": "Senkrechte Asymptote: Pol (x=a, q(a)=0). Waagrechte Asymptote: Grenzwert für x→±∞. Schiefe Asymptote: bei Polynomdivision.",
+    "options": [
+      "Eine Tangente an einem Extrempunkt des Graphen",
+      "Eine Gerade oder Kurve, der sich der Graph einer Funktion für x → ∞ oder bei einer Definitionslücke beliebig nähert",
+      "Ein Wendepunkt, an dem die Krümmungsrichtung des Graphen wechselt",
+      "Eine Nullstelle, an der der Funktionsgraph die x-Achse schneidet"
+    ],
+    "question": "Was ist eine Asymptote?",
+    "topic": "Analysis"
+  },
+  {
+    "correct": 1,
+    "explanation": "Substitution: Umkehrung der Kettenregel. Beispiel: ∫2x·cos(x²)dx → u=x², du=2x dx → ∫cos(u)du = sin(u)+C = sin(x²)+C.",
+    "options": [
+      "Das Aufspalten des Integranden in zwei einfachere Teile",
+      "Ersetzen der Integrationsvariablen u = g(x) um ein schwieriges Integral auf ein einfacheres zurückzuführen: ∫f(g(x))·g'(x)dx = ∫f(u)du",
+      "Partielle Integration nach der Formel: ∫u·v' dx = u·v – ∫u'·v dx",
+      "Das direkte Ablesen der Stammfunktion aus einer Integraltabelle"
+    ],
+    "question": "Was ist die Integrationsmethode der Substitution?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Merkhilfe LIATE: Logarithmus, Invers-trig., Algebraisch, Trig., Exp. – linker Typ → u wählen. Beispiel: ∫x·eˣ dx = x·eˣ – eˣ + C.",
+    "options": [
+      "Integration durch Substitution: u = g(x) einsetzen",
+      "∫u·v' dx = u·v – ∫u'·v dx; Umkehrung der Produktregel – nützlich wenn Produkt zweier unterschiedlicher Funktionstypen im Integral steht",
+      "Partialbruchzerlegung: eine Methode für rationale Funktionen",
+      "Numerische Integration: eine Näherungsformel für schwierige Integrale"
+    ],
+    "question": "Was ist partielle Integration?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Stochastik: Laplace-Wahrscheinlichkeit P = günstige/mögliche Fälle. Bedingte Wahrscheinlichkeit, Baumdiagramme, Binomialverteilung B(n;p).",
+    "options": [
+      "Die Geometrie von Kurven und Flächen im Koordinatensystem",
+      "Mathematik des Zufalls: Berechnung von Wahrscheinlichkeiten, Erwartungswert, Varianz, Verteilungen (z.B. Binomialverteilung)",
+      "Die Vektorrechnung im zwei- und dreidimensionalen Raum",
+      "Die lineare Algebra mit Matrizen und linearen Gleichungssystemen"
+    ],
+    "question": "Was ist die Stochastik (Wahrscheinlichkeitsrechnung)?",
+    "topic": "Stochastik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Erwartungswert: durchschnittlicher Wert bei sehr vielen Versuchen. Binomialverteilung: E(X) = n·p.",
+    "options": [
+      "Der häufigste Wert (Modus) einer Zufallsvariablen",
+      "Der gewichtete Durchschnitt aller möglichen Werte: E(X) = Σ x_i · P(X=x_i)",
+      "Der mittlere Wert (Median), der die Verteilung in zwei Hälften teilt",
+      "Das Streuungsmaß Varianz: Var(X) = E[(X–μ)²]"
+    ],
+    "question": "Was ist der Erwartungswert E(X) einer Zufallsvariable?",
+    "topic": "Stochastik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Binomialverteilung B(n;p): E(X) = n·p; Var(X) = n·p·(1–p). Voraussetzung: gleiche p, Unabhängigkeit, nur zwei Ergebnisse (Erfolg/Misserfolg).",
+    "options": [
+      "Die stetige Normalverteilung N(μ, σ²) als Glockenkurve",
+      "Die Verteilung der Anzahl der Erfolge bei n unabhängigen Bernoulli-Versuchen mit Erfolgswahrscheinlichkeit p: P(X=k) = C(n,k)·pᵏ·(1–p)^(n–k)",
+      "Die Gleichverteilung, bei der alle Werte gleich wahrscheinlich sind",
+      "Die Poissonverteilung für seltene Ereignisse in festen Zeitintervallen"
+    ],
+    "question": "Was ist die Binomialverteilung?",
+    "topic": "Stochastik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Bedingte Wahrscheinlichkeit P(A|B): Grundraum wird auf B eingeschränkt. Wichtig: Satz von Bayes zur Umkehrung: P(B|A) = P(A|B)·P(B)/P(A).",
+    "options": [
+      "P(A) × P(B): das Produkt der Einzelwahrscheinlichkeiten",
+      "P(A|B) = P(A∩B) / P(B): Wahrscheinlichkeit von A gegeben, dass B bereits eingetreten ist",
+      "P(A) + P(B): die Summe der Einzelwahrscheinlichkeiten",
+      "1 – P(A): die Gegenwahrscheinlichkeit des Ereignisses A"
+    ],
+    "question": "Was ist bedingte Wahrscheinlichkeit?",
+    "topic": "Stochastik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Additionstheorem: Überschneidung wird abgezogen um Doppelzählung zu vermeiden. Komplementregel: P(Ā) = 1 – P(A).",
+    "options": [
+      "P(A∪B) = P(A) · P(B): Produkt der Einzelwahrscheinlichkeiten",
+      "P(A∪B) = P(A) + P(B) – P(A∩B); bei disjunkten Ereignissen: P(A∪B) = P(A) + P(B)",
+      "P(A∩B) = P(A) + P(B): Summe der Einzelwahrscheinlichkeiten",
+      "P(A∪B) = P(A) / P(B): Quotient der Einzelwahrscheinlichkeiten"
+    ],
+    "question": "Was ist das Additionstheorem der Wahrscheinlichkeit?",
+    "topic": "Stochastik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Normalverteilung: 68% der Werte liegen in [μ–σ, μ+σ], 95% in [μ–2σ, μ+2σ]. Grenzwertsatz: Binomialverteilung konvergiert für große n gegen Normalverteilung.",
+    "options": [
+      "Eine diskrete Verteilung, bei der nur ganzzahlige Werte auftreten",
+      "Die Glockenkurve N(μ, σ²): symmetrische stetige Verteilung mit Erwartungswert μ und Standardabweichung σ; beschreibt viele natürliche Phänomene",
+      "Die Binomialverteilung B(n; p) für große Stichprobenumfänge n",
+      "Die Gleichverteilung, bei der alle Ergebnisse gleich wahrscheinlich sind"
+    ],
+    "question": "Was ist die Normalverteilung?",
+    "topic": "Stochastik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Varianz: Maß für die Streuung. Standardabweichung σ = √Var(X). Binomialverteilung: Var(X) = n·p·(1–p).",
+    "options": [
+      "Der Erwartungswert E(X) als gewichteter Durchschnitt aller Werte",
+      "Der Erwartungswert der quadratischen Abweichung vom Erwartungswert: Var(X) = E[(X–μ)²] = E(X²)–μ²",
+      "Die Standardabweichung σ = √Var(X) als Streuungsmaß",
+      "Der Median, der die Verteilung in zwei gleich große Hälften teilt"
+    ],
+    "question": "Was ist die Varianz Var(X)?",
+    "topic": "Stochastik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Vektorräume: ℝⁿ ist das wichtigste Beispiel. Unterräume, lineare Unabhängigkeit, Basen und Dimension sind zentrale Begriffe.",
+    "options": [
+      "Eine Menge von Zahlen mit den üblichen arithmetischen Operationen",
+      "Eine Menge mit Vektoren, auf der Addition und Skalarmultiplikation definiert sind, die bestimmte Axiome erfüllen (z.B. Kommutativität, Distributivität)",
+      "Eine rechteckige Matrix als Darstellung linearer Abbildungen",
+      "Ein Koordinatensystem zur Darstellung geometrischer Punkte"
+    ],
+    "question": "Was ist ein Vektorraum?",
+    "topic": "Lineare Algebra"
+  },
+  {
+    "correct": 1,
+    "explanation": "Lineares Gleichungssystem (LGS): mehrere lineare Gleichungen. Lösungsverfahren: Gauß-Elimination, Substitution, Cramer'sche Regel.",
+    "options": [
+      "Eine Gleichung höheren Grades, die xⁿ mit n ≥ 2 enthält",
+      "Eine Gleichung ersten Grades: ax + b = 0 (eine Variable) oder a₁x₁+…+aₙxₙ = b (mehrere Variablen)",
+      "Eine Differentialgleichung mit Ableitungen der Funktion",
+      "Eine Exponentialgleichung der Form a·eˣ = b"
+    ],
+    "question": "Was ist eine lineare Gleichung?",
+    "topic": "Lineare Algebra"
+  },
+  {
+    "correct": 1,
+    "explanation": "Summenregel: linear – Ableitungsoperator ist linear. (a·f + b·g)' = a·f' + b·g'. Faktorregel: (c·f)' = c·f'.",
+    "options": [
+      "(f · g)' = f' · g' – die Ableitung des Produkts ist das Produkt der Ableitungen",
+      "(f + g)' = f' + g' – die Ableitung einer Summe ist die Summe der Ableitungen",
+      "(f + g)' = f' · g' – die Ableitung einer Summe ist das Produkt der Ableitungen",
+      "(f + g)' = f' – g' – die Ableitung einer Summe ist die Differenz der Ableitungen"
+    ],
+    "question": "Was ist die Summenregel der Differentiation?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Mittlere Änderungsrate = Sekantensteigung. Momentane Änderungsrate = Tangentensteigung (Ableitung). Grenzübergang b→a ergibt f'(a).",
+    "options": [
+      "Die momentane Änderungsrate f'(a) an einem einzelnen Punkt",
+      "Der Differenzenquotient [f(b) – f(a)] / (b – a): durchschnittliche Steigung zwischen zwei Punkten = Sekantensteigung",
+      "Die zweite Ableitung f''(x), welche die Krümmung des Graphen beschreibt",
+      "Die Stammfunktion F(x), für die F'(x) = f(x) gilt"
+    ],
+    "question": "Was ist die mittlere Änderungsrate?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Rotationsvolumen: Kreisscheibenmethode. Beispiel: Rotation von f(x)=√x um x-Achse ergibt einen Paraboloid.",
+    "options": [
+      "Der Umfang der entstehenden Rotationsfläche",
+      "Das Volumen, das entsteht, wenn ein Graph um die x-Achse rotiert: V = π·∫_a^b [f(x)]² dx",
+      "Die Bogenlänge des Graphen: L = ∫_a^b √(1 + [f'(x)]²) dx",
+      "Der Flächeninhalt unter dem Graphen: A = ∫_a^b f(x) dx"
+    ],
+    "question": "Was ist das Rotationsvolumen?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Uneigentliche Integrale konvergieren (z.B. ∫_1^∞ 1/x² dx = 1) oder divergieren (∫_1^∞ 1/x dx = ∞). Wichtig für Wahrscheinlichkeitsdichten.",
+    "options": [
+      "Ein Integral, für das keine elementare Stammfunktion existiert",
+      "Ein Integral mit unendlichen Grenzen oder bei dem der Integrand Singularitäten hat: ∫_a^∞ f(x)dx = lim_{b→∞} ∫_a^b f(x)dx",
+      "Ein numerisch berechnetes Integral, z.B. mit der Trapezregel",
+      "Ein Integral, das mit partieller Integration gelöst wird"
+    ],
+    "question": "Was ist das uneigentliche Integral?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Bogenlängenformel: Pythagorean infinitesimale Längen werden integriert. Anwendung: Satellitenbahnlänge, Kabelverlegung, Bauplanung.",
+    "options": [
+      "Die Fläche unter dem Graphen: A = ∫_a^b f(x) dx",
+      "Die Länge des Kurvenstücks von a bis b: L = ∫_a^b √(1 + [f'(x)]²) dx",
+      "Die Ableitung des Graphen: f'(x) als momentane Änderungsrate",
+      "Das Rotationsvolumen: V = π · ∫_a^b [f(x)]² dx"
+    ],
+    "question": "Was ist die Bogenlänge einer Kurve?",
+    "topic": "Integralrechnung"
+  }
+]

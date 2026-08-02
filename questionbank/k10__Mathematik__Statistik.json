@@ -1,0 +1,194 @@
+[
+  {
+    "correct": 2,
+    "explanation": "Der Modus ist der Wert, der in einer Datenreihe am häufigsten vorkommt. In dieser Reihe ist die 7 dreimal vertreten, öfter als jeder andere Wert.",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "question": "Gegeben sei die folgende Datenreihe: 7, 3, 5, 7, 8, 3, 7, 2, 9. Welcher Wert repräsentiert den Modus dieser Datenreihe?",
+    "topic": "Maße der zentralen Tendenz (Modus)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Um den Median zu bestimmen, muss die Datenreihe zuerst der Größe nach geordnet werden: 7, 8, 10, 12, 13, 15, 20. Da es 7 Werte gibt (eine ungerade Anzahl), ist der Median der mittlere Wert, also der 4. Wert, der 12 ist.",
+    "options": [
+      "10",
+      "12",
+      "13",
+      "15"
+    ],
+    "question": "Bestimmen Sie den Median der folgenden Datenreihe: 12, 8, 15, 7, 20, 10, 13.",
+    "topic": "Maße der zentralen Tendenz (Median)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Interquartilsabstand (IQR) wird berechnet als Q3 - Q1. Zuerst identifizieren wir Q1 (das untere Quartil) als den Median der unteren Hälfte der Daten und Q3 (das obere Quartil) als den Median der oberen Hälfte. Die Daten sind bereits sortiert. Q1 (Median der ersten 5 Werte: 60, 75, 80, 85, 90) = 80. Q3 (Median der letzten 5 Werte: 100, 105, 110, 120, 130) = 110. IQR = 110 - 80 = 30.",
+    "options": [
+      "30",
+      "35",
+      "40",
+      "45"
+    ],
+    "question": "Eine Statistik zeigt die monatlichen Heizkosten (in Euro) von 11 Haushalten: 60, 75, 80, 85, 90, 95, 100, 105, 110, 120, 130. Berechnen Sie den Interquartilsabstand (IQR) dieser Daten.",
+    "topic": "Maße der Streuung (Interquartilsabstand)"
+  },
+  {
+    "correct": 2,
+    "explanation": "Qualitative Daten beschreiben Eigenschaften oder Kategorien, die nicht direkt numerisch gemessen werden können. 'Lieblingsfarbe' ist eine solche Eigenschaft. Körpergröße und Temperatur sind quantitative, kontinuierliche Daten. Die Anzahl der Geschwister ist quantitativ und diskret.",
+    "options": [
+      "Körpergröße",
+      "Anzahl der Geschwister",
+      "Lieblingsfarbe",
+      "Temperatur in Grad Celsius"
+    ],
+    "question": "Welcher der folgenden Datentypen ist ein Beispiel für qualitative Daten?",
+    "topic": "Datentypen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ausreißer (Werte, die weit außerhalb der übrigen Daten liegen) haben einen stärkeren Einfluss auf den arithmetischen Mittelwert (Durchschnitt) als auf den Median. Der Median ist robuster gegenüber extremen Werten, da er nur von der Reihenfolge der Werte abhängt, nicht von deren absoluter Größe. Der Wert 10 ist ein klarer Ausreißer und zieht den Mittelwert deutlich nach unten, während der Median nur moderat beeinflusst wird.",
+    "options": [
+      "Der Median wird stark sinken, der Mittelwert kaum.",
+      "Der Mittelwert wird stark sinken, der Median kaum.",
+      "Sowohl Median als auch Mittelwert werden stark sinken.",
+      "Weder Median noch Mittelwert werden sich signifikant ändern."
+    ],
+    "question": "Eine Schulklasse hat folgende Punkte in einem Test erzielt: 60, 65, 70, 75, 80, 85, 90. Wenn ein neuer Schüler hinzukommt und 10 Punkte erzielt, welche Aussage trifft dann am ehesten zu?",
+    "topic": "Einfluss von Ausreißern"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die Standardabweichung ist ein Maß für die Streuung der Daten um den Mittelwert. Eine kleine Standardabweichung (wie 5 in Klasse A) bedeutet, dass die Datenpunkte eng um den Mittelwert gruppiert sind, also die Leistungen homogener sind. Eine große Standardabweichung (wie 15 in Klasse B) bedeutet, dass die Datenpunkte weiter vom Mittelwert entfernt sind, also die Leistungen stärker streuen. Da der Mittelwert für beide Klassen gleich ist, sagt die Standardabweichung nichts über höhere oder niedrigere Durchschnittsleistungen aus, sondern nur über die Verteilung der Leistungen.",
+    "options": [
+      "Die Schüler in Klasse A haben im Durchschnitt höhere Leistungen erbracht.",
+      "Die Leistungen der Schüler in Klasse B sind homogener (weniger Streuung).",
+      "Die Leistungen der Schüler in Klasse A sind enger um den Mittelwert verteilt.",
+      "In Klasse B gab es mehr Schüler, die über dem Mittelwert lagen."
+    ],
+    "question": "Zwei Klassen (A und B) haben im selben Mathematiktest jeweils einen Mittelwert von 70 Punkten erzielt. Die Standardabweichung der Punkte in Klasse A beträgt 5 Punkte, während sie in Klasse B 15 Punkte beträgt. Was lässt sich daraus ableiten?",
+    "topic": "Maße der Streuung (Standardabweichung)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die relative Häufigkeit wird berechnet, indem die absolute Häufigkeit (Anzahl der Personen, die das Fahrrad bevorzugen) durch die Gesamtzahl der Befragten geteilt wird. Hier sind das 40 / 200 = 0,2, was 20% entspricht.",
+    "options": [
+      "20%",
+      "25%",
+      "30%",
+      "40%"
+    ],
+    "question": "In einer Umfrage wurden 200 Personen nach ihrem bevorzugten Verkehrsmittel für den Arbeitsweg gefragt. 80 Personen gaben das Auto an, 60 den öffentlichen Nahverkehr, 40 das Fahrrad und 20 gingen zu Fuß. Wie hoch ist die relative Häufigkeit der Personen, die das Fahrrad bevorzugen?",
+    "topic": "Absolute und relative Häufigkeiten"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der arithmetische Mittelwert wäre durch die extrem teuren Villen stark nach oben verzerrt und würde den 'typischen' Preis der meisten Häuser nicht gut widerspiegeln. Der Modus ist oft nicht eindeutig oder repräsentativ bei kontinuierlichen Daten wie Preisen. Die Spannweite ist ein Streuungsmaß, kein Lageparameter. Der Median ist robust gegenüber Ausreißern und gibt den Wert an, bei dem die Hälfte der Häuser günstiger und die Hälfte teurer ist. Er ist in Fällen mit stark schiefen Verteilungen oder extremen Ausreißern oft das bessere Maß für die 'Mitte' der Daten.",
+    "options": [
+      "Der Modus, weil er den häufigsten Preis widerspiegelt und Ausreißer ignoriert.",
+      "Der Median, weil er weniger empfindlich gegenüber den extrem teuren Villen ist.",
+      "Der arithmetische Mittelwert, weil er alle Hauspreise gleichermaßen berücksichtigt.",
+      "Die Spannweite, weil sie die gesamte Preisbreite des Viertels zeigt."
+    ],
+    "question": "Ein Immobilienmakler möchte den 'typischen' Preis von Häusern in einem sehr kleinen, aber wohlhabenden Viertel ermitteln. Die meisten Häuser sind mittelpreisig, aber es gibt auch ein paar extrem luxuriöse Villen. Welches der Maße der zentralen Tendenz wäre hier am besten geeignet, um einen repräsentativen Wert zu kommunizieren, und warum?",
+    "topic": "Auswahl des geeigneten Lageparameters"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das arithmetische Mittel (Durchschnitt) berechnet sich, indem man alle Werte addiert und die Summe durch die Anzahl der Werte teilt: (12 + 15 + 8 + 10 + 15) / 5 = 60 / 5 = 12.",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "question": "Eine Klasse hat bei einem Test folgende Punktzahlen erzielt: 12, 15, 8, 10, 15. Wie hoch ist die durchschnittliche Punktzahl?",
+    "topic": "Arithmetisches Mittel"
+  },
+  {
+    "correct": 0,
+    "explanation": "Um den Median zu finden, müssen die Daten zuerst der Größe nach geordnet werden: 85, 90, 95, 100, 110, 130. Da es eine gerade Anzahl von Datenpunkten gibt (6), ist der Median der Mittelwert der beiden mittleren Werte: (95 + 100) / 2 = 97,5.",
+    "options": [
+      "97,5",
+      "99",
+      "100",
+      "102,5"
+    ],
+    "question": "Die monatlichen Nebenkosten in Euro für 6 Wohnungen sind: 85, 110, 90, 130, 95, 100. Bestimme den Median dieser Daten.",
+    "topic": "Median"
+  },
+  {
+    "correct": 2,
+    "explanation": "Das arithmetische Mittel (Durchschnitt) ist sehr empfindlich gegenüber Ausreißern, da es alle Werte in die Berechnung einbezieht. Der Median hingegen ist robust gegenüber Ausreißern, da er lediglich den mittleren Wert der geordneten Datenreihe darstellt. Der Modus (häufigster Wert) und die Quartile sind ebenfalls weniger anfällig.",
+    "options": [
+      "Modus",
+      "Median",
+      "Arithmetisches Mittel",
+      "Quartile"
+    ],
+    "question": "Bei einer Datenerhebung zum Einkommen einer kleinen Gruppe von 10 Personen wurde festgestellt, dass ein einziger Wert extrem hoch ist, während die anderen Werte dicht beieinander liegen. Welches Lagemaß wird durch diesen Ausreißer am stärksten beeinflusst und wäre daher für eine typische Beschreibung des Einkommens am wenigsten geeignet?",
+    "topic": "Einfluss von Ausreißern auf Lagemaße"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die relative Häufigkeit berechnet sich, indem man die absolute Häufigkeit (Anzahl der Personen, die Sport treiben) durch die Gesamtzahl der Befragten teilt: 40 / 200 = 1/5 = 0,2.",
+    "options": [
+      "0,2",
+      "0,25",
+      "0,4",
+      "0,8"
+    ],
+    "question": "In einer Stichprobe von 200 Befragten gaben 40 Personen an, regelmäßig Sport zu treiben. Wie groß ist die relative Häufigkeit der Personen, die regelmäßig Sport treiben?",
+    "topic": "Relative Häufigkeit"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Wahrscheinlichkeit für eine 6 beim ersten Wurf ist 1/6. Die Wahrscheinlichkeit für eine ungerade Zahl (1, 3, 5) beim zweiten Wurf ist 3/6 = 1/2. Da die Ereignisse unabhängig sind, multipliziert man die Einzelwahrscheinlichkeiten: (1/6) * (1/2) = 1/12.",
+    "options": [
+      "1/12",
+      "1/6",
+      "1/4",
+      "1/3"
+    ],
+    "question": "Ein Würfel wird zweimal geworfen. Wie hoch ist die Wahrscheinlichkeit, dass zuerst eine 6 und dann eine ungerade Zahl fällt?",
+    "topic": "Wahrscheinlichkeit, Produktregel"
+  },
+  {
+    "correct": 3,
+    "explanation": "Die Spannweite ist die Differenz zwischen dem größten und dem kleinsten Wert in einer Datenreihe. Der höchste Wert ist 25 °C und der niedrigste Wert ist 18 °C. Die Spannweite beträgt 25 °C - 18 °C = 7 °C.",
+    "options": [
+      "4 °C",
+      "5 °C",
+      "6 °C",
+      "7 °C"
+    ],
+    "question": "Die Höchsttemperaturen in Grad Celsius an 7 aufeinanderfolgenden Tagen waren: 22, 18, 25, 20, 23, 19, 21. Bestimme die Spannweite dieser Daten.",
+    "topic": "Spannweite"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die Gesamtzahl der Kugeln ist 8. Es ist einfacher, die Wahrscheinlichkeit des Gegenereignisses zu berechnen: dass keine der gezogenen Kugeln blau ist (also beide rot sind). P(erste Kugel rot) = 5/8. P(zweite Kugel rot) = 5/8 (da mit Zurücklegen). P(beide rot) = (5/8) * (5/8) = 25/64. Die Wahrscheinlichkeit, dass mindestens eine Kugel blau ist, ist 1 - P(beide rot) = 1 - 25/64 = 39/64.",
+    "options": [
+      "9/64",
+      "15/64",
+      "39/64",
+      "55/64"
+    ],
+    "question": "In einer Urne befinden sich 5 rote und 3 blaue Kugeln. Es werden nacheinander zwei Kugeln mit Zurücklegen gezogen. Wie hoch ist die Wahrscheinlichkeit, dass mindestens eine der gezogenen Kugeln blau ist?",
+    "topic": "Wahrscheinlichkeit, Gegenereignis"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die 5000 Kunden stellen die Grundgesamtheit dar, also die vollständige Menge, über die eine Aussage getroffen werden soll. Die 500 ausgewählten Kunden bilden eine Stichprobe, die stellvertretend für die Grundgesamtheit befragt wird.",
+    "options": [
+      "Die Grundgesamtheit",
+      "Eine Population",
+      "Eine Stichprobe",
+      "Eine Variable"
+    ],
+    "question": "Eine Firma möchte die Zufriedenheit ihrer 5000 Kunden ermitteln. Dazu wird eine Umfrage bei 500 zufällig ausgewählten Kunden durchgeführt. Was repräsentieren die 500 befragten Kunden in diesem Kontext?",
+    "topic": "Grundgesamtheit und Stichprobe"
+  }
+]

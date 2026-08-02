@@ -1,0 +1,194 @@
+[
+  {
+    "correct": 0,
+    "explanation": "3x + 7 = 19 | -7 ergibt 3x = 12. Division durch 3 ergibt x = 4. Probe: 3·4 + 7 = 19 ✓",
+    "options": [
+      "x = 4",
+      "x = 12",
+      "x = 5",
+      "x = 2"
+    ],
+    "question": "Löse die Gleichung: 3x + 7 = 19",
+    "topic": "Lineare Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Zweite binomische Formel: (u - v)² = u² - 2uv + v². Mit u = 2a und v = 3b ergibt sich (2a)² - 2·2a·3b + (3b)² = 4a² - 12ab + 9b².",
+    "options": [
+      "4a² - 9b²",
+      "4a² - 12ab + 9b²",
+      "4a² + 12ab + 9b²",
+      "4a² - 6ab + 9b²"
+    ],
+    "question": "Vereinfache den Ausdruck (2a - 3b)².",
+    "topic": "Binomische Formeln"
+  },
+  {
+    "correct": 0,
+    "explanation": "Faktorisieren: x² - 5x + 6 = (x - 2)(x - 3) = 0. Ein Produkt ist null, wenn ein Faktor null ist, also x₁ = 2 und x₂ = 3. Mit der pq-Formel (p = -5, q = 6) erhält man dasselbe. Probe: 4 - 10 + 6 = 0 ✓",
+    "options": [
+      "x₁ = 2 und x₂ = 3",
+      "x₁ = -2 und x₂ = -3",
+      "x₁ = 1 und x₂ = 6",
+      "x₁ = -1 und x₂ = -6"
+    ],
+    "question": "Welche Lösungen hat die quadratische Gleichung x² - 5x + 6 = 0?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Teilweise wurzelziehen: √(18) = √(9·2) = 3√(2) und √(8) = √(4·2) = 2√(2). Gleiche Wurzeln werden addiert: 3√(2) + 2√(2) = 5√(2). Die Radikanden 18 und 8 darf man nicht addieren.",
+    "options": [
+      "√(26)",
+      "5√(2)",
+      "7√(2)",
+      "6√(2)"
+    ],
+    "question": "Vereinfache den Ausdruck: √(18) + √(8)",
+    "topic": "Potenzen und Wurzeln"
+  },
+  {
+    "correct": 1,
+    "explanation": "Bei einer linearen Funktion f(x) = mx + b ist m die Steigung und b der y-Achsenabschnitt. Hier ist m = -2, die Gerade fällt also.",
+    "options": [
+      "5",
+      "-2",
+      "2",
+      "-5"
+    ],
+    "question": "Welche Steigung (m) hat die lineare Funktion f(x) = -2x + 5?",
+    "topic": "Lineare Funktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Addition beider Gleichungen: (x + y) + (2x - y) = 7 + 5, also 3x = 12 und x = 4. Einsetzen in I): 4 + y = 7, also y = 3. Die Lösung ist (4, 3).",
+    "options": [
+      "(3, 4)",
+      "(4, 3)",
+      "(2, 5)",
+      "(5, 2)"
+    ],
+    "question": "Bestimme die Lösung (x,y) des folgenden linearen Gleichungssystems:\nI) x + y = 7\nII) 2x - y = 5",
+    "topic": "Lineare Gleichungssysteme"
+  },
+  {
+    "correct": 0,
+    "explanation": "A = (a+c)/2 · h | ·2 ergibt 2A = (a+c)·h. Division durch (a+c) ergibt h = 2A/(a+c). Bei einem Trapez ist a+c > 0, die Division ist also erlaubt.",
+    "options": [
+      "h = 2A / (a+c)",
+      "h = A / (2·(a+c))",
+      "h = 2A · (a+c)",
+      "h = (a+c) / (2A)"
+    ],
+    "question": "Die Flächenformel eines Trapezes lautet A = (a+c)/2 · h. Stelle diese Formel nach h um.",
+    "topic": "Formeln umstellen"
+  },
+  {
+    "correct": 0,
+    "explanation": "-3x + 4 < 10 | -4 ergibt -3x < 6. Bei der Division durch die negative Zahl -3 dreht sich das Ungleichheitszeichen um: x > -2.",
+    "options": [
+      "x > -2",
+      "x < -2",
+      "x > 2",
+      "x < 2"
+    ],
+    "question": "Löse die Ungleichung: -3x + 4 < 10",
+    "topic": "Ungleichungen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Zweite binomische Formel: (u - v)² = u² - 2uv + v². Mit u = 3x und v = 4 ergibt sich (3x)² - 2·3x·4 + 4² = 9x² - 24x + 16.",
+    "options": [
+      "9x² - 16",
+      "9x² - 12x + 16",
+      "9x² - 24x + 16",
+      "9x² + 24x + 16"
+    ],
+    "question": "Welcher Ausdruck ist die korrekte Ausmultiplizierung von (3x - 4)²?",
+    "topic": "Termumformungen, Binomische Formeln"
+  },
+  {
+    "correct": 3,
+    "explanation": "Klammer auflösen: 3x + 15 - 2x = 7x - 9, also x + 15 = 7x - 9. Umstellen: 15 + 9 = 7x - x, also 24 = 6x und damit x = 4. Probe: 3·9 - 8 = 19 und 28 - 9 = 19 ✓",
+    "options": [
+      "x = -4",
+      "x = 1",
+      "x = 3",
+      "x = 4"
+    ],
+    "question": "Löse die Gleichung nach x: 3(x + 5) - 2x = 7x - 9.",
+    "topic": "Lineare Gleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Gemeinsamen Faktor ausklammern: 18a³ - 8a = 2a(9a² - 4). Die Klammer ist eine Differenz von Quadraten: 9a² - 4 = (3a)² - 2² = (3a - 2)(3a + 2). Vollständig faktorisiert ergibt sich 2a(3a - 2)(3a + 2).",
+    "options": [
+      "2a(3a - 4)(3a + 4)",
+      "2a(3a - 2)(3a + 2)",
+      "2a(3a - 2)²",
+      "2a(9a - 4)"
+    ],
+    "question": "Faktorisiere den Term 18a³ - 8a vollständig.",
+    "topic": "Termumformungen, Faktorisieren, Binomische Formeln"
+  },
+  {
+    "correct": 1,
+    "explanation": "Potenzen mit gleicher Basis multiplizieren: x³ · x⁵ = x³⁺⁵ = x⁸. Potenzen mit gleicher Basis dividieren: x⁸ : x² = x⁸⁻² = x⁶. Wegen der Division muss x ≠ 0 sein.",
+    "options": [
+      "x⁴",
+      "x⁶",
+      "x¹⁰",
+      "x¹³"
+    ],
+    "question": "Vereinfache den Ausdruck (x³ · x⁵) : x² für x ≠ 0.",
+    "topic": "Potenzgesetze"
+  },
+  {
+    "correct": 0,
+    "explanation": "pq-Formel: x = -p/2 ± √((p/2)² - q). Mit p = -6 und q = 5 ergibt sich x = 3 ± √(9 - 5) = 3 ± 2. Also x₁ = 5 und x₂ = 1, die Lösungsmenge ist L = {1; 5}.",
+    "options": [
+      "L = {1; 5}",
+      "L = {-1; -5}",
+      "L = {2; 3}",
+      "L = {-1; 5}"
+    ],
+    "question": "Bestimme die Lösungsmenge der Gleichung x² - 6x + 5 = 0.",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Aus I) folgt y = 7 - 2x. Einsetzen in II): 3x - 2(7 - 2x) = 0, also 3x - 14 + 4x = 0 und damit 7x = 14, x = 2. Rücksetzen: y = 7 - 2·2 = 3. Gesucht ist x + y = 2 + 3 = 5.",
+    "options": [
+      "x + y = 5",
+      "x + y = 7",
+      "x + y = 9",
+      "x + y = 11"
+    ],
+    "question": "Gegeben ist das Gleichungssystem:\nI) 2x + y = 7\nII) 3x - 2y = 0\nBerechne den Wert von x + y.",
+    "topic": "Lineare Gleichungssysteme"
+  },
+  {
+    "correct": 0,
+    "explanation": "In der Scheitelpunktform f(x) = a(x - d)² + e liegt der Scheitelpunkt bei S(d | e). Hier ist a = 1, d = 3 (wegen x - 3) und e = 2, also S(3 | 2).",
+    "options": [
+      "S(3 | 2)",
+      "S(-3 | 2)",
+      "S(3 | -2)",
+      "S(-3 | -2)"
+    ],
+    "question": "Eine quadratische Funktion hat die Form f(x) = (x - 3)² + 2. Bestimme die Koordinaten des Scheitelpunkts.",
+    "topic": "Quadratische Funktionen, Scheitelpunktform"
+  },
+  {
+    "correct": 1,
+    "explanation": "Teilweise wurzelziehen: √(50) = √(25·2) = 5√(2) und √(18) = √(9·2) = 3√(2). Subtrahieren: 5√(2) - 3√(2) = 2√(2). Die Radikanden 50 und 18 darf man nicht subtrahieren.",
+    "options": [
+      "√(32)",
+      "2√(2)",
+      "3√(2)",
+      "8√(2)"
+    ],
+    "question": "Vereinfache den Ausdruck √(50) - √(18).",
+    "topic": "Wurzelterme, Termumformungen"
+  }
+]

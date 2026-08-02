@@ -1,0 +1,374 @@
+[
+  {
+    "correct": 0,
+    "explanation": "Der Satz des Pythagoras gilt nur im rechtwinkligen Dreieck: a² + b² = c², wobei c die Hypotenuse ist. Hier gilt 6² + 8² = 36 + 64 = 100, also c = √100 = 10 cm.",
+    "options": [
+      "10 cm",
+      "12 cm",
+      "14 cm",
+      "100 cm"
+    ],
+    "question": "Ein rechtwinkliges Dreieck hat Kathetenlängen von 6 cm und 8 cm. Wie lang ist die Hypotenuse?",
+    "topic": "Satz des Pythagoras"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für den Flächeninhalt eines Trapezes gilt A = ((a + c) / 2) · h, wobei a und c die parallelen Seiten sind. Eingesetzt: A = ((8 cm + 12 cm) / 2) · 5 cm = 10 cm · 5 cm = 50 cm².",
+    "options": [
+      "50 cm²",
+      "60 cm²",
+      "70 cm²",
+      "100 cm²"
+    ],
+    "question": "Ein Trapez hat parallele Seiten der Länge 8 cm und 12 cm. Die Höhe des Trapezes beträgt 5 cm. Wie groß ist sein Flächeninhalt?",
+    "topic": "Flächenberechnung von Trapezen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Das Volumen eines Zylinders ist V = π · r² · h. Hier gilt V ≈ 3,14 · (1 m)² · 2 m = 6,28 m³. Wegen 1 m³ = 1000 Liter sind das 6,28 · 1000 = 6280 Liter.",
+    "options": [
+      "628 Liter",
+      "6280 Liter",
+      "12560 Liter",
+      "125600 Liter"
+    ],
+    "question": "Ein zylindrischer Wassertank hat einen Radius von 1 Meter und eine Höhe von 2 Metern. Wie viele Liter Wasser passen in den Tank? (Nutze π ≈ 3,14; 1 m³ = 1000 Liter)",
+    "topic": "Volumenberechnung von Zylindern"
+  },
+  {
+    "correct": 0,
+    "explanation": "In einem gleichschenkligen Dreieck sind die beiden Basiswinkel gleich groß, hier also je 70°. Da die Winkelsumme im Dreieck 180° beträgt, bleibt für den Winkel an der Spitze: 180° − 70° − 70° = 40°.",
+    "options": [
+      "40°",
+      "50°",
+      "60°",
+      "70°"
+    ],
+    "question": "In einem gleichschenkligen Dreieck misst einer der Basiswinkel 70°. Wie groß ist der Winkel an der Spitze?",
+    "topic": "Winkel im Dreieck"
+  },
+  {
+    "correct": 1,
+    "explanation": "Leiter, Wand und Boden bilden ein rechtwinkliges Dreieck: Die Leiter ist die Hypotenuse (6,5 m), der Wandabstand eine Kathete (2,5 m). Mit dem Satz des Pythagoras gilt h² = (6,5 m)² − (2,5 m)² = 42,25 m² − 6,25 m² = 36 m², also h = 6 m.",
+    "options": [
+      "5 m",
+      "6 m",
+      "7 m",
+      "7,5 m"
+    ],
+    "question": "Eine Leiter (6,5 m lang) steht an einer Wand. Ihr Fußpunkt ist 2,5 m von der Wand entfernt. Wie hoch reicht die Leiter an der Wand hinauf?",
+    "topic": "Anwendung des Satzes des Pythagoras"
+  },
+  {
+    "correct": 1,
+    "explanation": "Für den Kreis gilt A = π · r². Aus A = 64π cm² folgt r² = 64 cm², also r = 8 cm. Für den Umfang gilt U = 2 · π · r = 2 · π · 8 cm = 16π cm.",
+    "options": [
+      "8π cm",
+      "16π cm",
+      "32π cm",
+      "64π cm"
+    ],
+    "question": "Ein Kreis hat einen Flächeninhalt von 64π cm². Wie groß ist sein Umfang?",
+    "topic": "Kreisberechnung (Fläche und Umfang)"
+  },
+  {
+    "correct": 2,
+    "explanation": "Beide Punkte haben dieselbe y-Koordinate (3), liegen also auf einer waagerechten Geraden. Der Abstand ist dann der Betrag der Differenz der x-Koordinaten: |4 − (−2)| = 6 Einheiten.",
+    "options": [
+      "2 Einheiten",
+      "4 Einheiten",
+      "6 Einheiten",
+      "8 Einheiten"
+    ],
+    "question": "Welchen Abstand haben die Punkte P(-2, 3) und Q(4, 3) in einem Koordinatensystem voneinander?",
+    "topic": "Abstand im Koordinatensystem"
+  },
+  {
+    "correct": 2,
+    "explanation": "Ein Rechteck, das kein Quadrat ist, hat genau zwei Symmetrieachsen durch die Mittelpunkte gegenüberliegender Seiten. Ein Quadrat hat vier Achsen, ein gleichseitiges Dreieck drei und ein Kreis unendlich viele.",
+    "options": [
+      "Quadrat (vier gleich lange Seiten)",
+      "Kreis (fester Mittelpunkt und Radius)",
+      "Rechteck (das kein Quadrat ist)",
+      "Gleichseitiges Dreieck (drei gleiche Seiten)"
+    ],
+    "question": "Welche der folgenden Figuren hat immer genau zwei Symmetrieachsen?",
+    "topic": "Symmetrieachsen geometrischer Figuren"
+  },
+  {
+    "correct": 0,
+    "explanation": "Das Volumen eines Prismas ist das Produkt aus Grundfläche G und Höhe h: V = G · h = 30 cm² · 7 cm = 210 cm³.",
+    "options": [
+      "210 cm³",
+      "37 cm³",
+      "105 cm³",
+      "21 cm³"
+    ],
+    "question": "Ein Prisma hat eine Grundfläche von 30 cm² und eine Höhe von 7 cm. Welches Volumen besitzt das Prisma?",
+    "topic": "Volumenberechnung von Prismen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Nur die Raute hat vier gleich lange Seiten und zwei Paare paralleler Seiten. Beim Drachenviereck sind je zwei benachbarte Seiten gleich lang, parallele Seiten hat es im Allgemeinen nicht. Das Rechteck hat zwei Paare paralleler Seiten, aber nicht vier gleich lange Seiten, und ein Trapez braucht nur ein Paar paralleler Seiten. Ein Quadrat ist übrigens eine besondere Raute mit rechten Winkeln.",
+    "options": [
+      "Rechteck",
+      "Drachenviereck",
+      "Raute",
+      "Trapez"
+    ],
+    "question": "Welches Viereck hat genau zwei Paare paralleler Seiten und alle vier Seiten gleich lang?",
+    "topic": "Eigenschaften von Vierecken"
+  },
+  {
+    "correct": 2,
+    "explanation": "Der Kongruenzsatz WSW (Winkel-Seite-Winkel) besagt, dass zwei Dreiecke deckungsgleich sind, wenn sie in einer Seite und den beiden daran anliegenden Winkeln übereinstimmen.",
+    "options": [
+      "SSS (Seite-Seite-Seite)",
+      "SWS (Seite-Winkel-Seite)",
+      "WSW (Winkel-Seite-Winkel)",
+      "SsW (Seite-Seite-Winkel)"
+    ],
+    "question": "Welcher Kongruenzsatz besagt, dass zwei Dreiecke kongruent (deckungsgleich) sind, wenn sie in einer Seite und den beiden anliegenden Winkeln übereinstimmen?",
+    "topic": "Kongruenzsätze"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Fläche der Tischplatte beträgt 90 cm · 90 cm = 8100 cm². Wegen 1 m² = 100 cm · 100 cm = 10000 cm² gilt 8100 cm² = 8100 / 10000 m² = 0,81 m².",
+    "options": [
+      "0,81 m²",
+      "8,1 m²",
+      "8100 m²",
+      "81 m²"
+    ],
+    "question": "Eine quadratische Tischplatte hat eine Seitenlänge von 90 cm. Wie groß ist ihre Fläche in Quadratmetern?",
+    "topic": "Flächenberechnung und Einheitenumrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Für den Kreisumfang gilt U = 2 · π · r (gleichwertig U = π · d). Mit r = 5 m ergibt sich U ≈ 2 · 3,14 · 5 m = 31,4 m.",
+    "options": [
+      "15,7 m",
+      "31,4 m",
+      "78,5 m",
+      "25,0 m"
+    ],
+    "question": "Ein runder Teich hat einen Radius von 5 Metern. Welchen Umfang hat der Teich (gerundet auf eine Nachkommastelle, π ≈ 3,14)?",
+    "topic": "Umfang des Kreises"
+  },
+  {
+    "correct": 1,
+    "explanation": "Das Volumen eines Zylinders ist V = π · r² · h. Mit r = 3 cm und h = 10 cm ergibt sich V ≈ 3,14 · 9 cm² · 10 cm = 282,6 cm³, gerundet 283 cm³.",
+    "options": [
+      "94 cm³",
+      "283 cm³",
+      "90 cm³",
+      "188 cm³"
+    ],
+    "question": "Ein Zylinder hat einen Radius von 3 cm und eine Höhe von 10 cm. Wie groß ist sein Volumen (gerundet auf ganze Zahlen, π ≈ 3,14)?",
+    "topic": "Volumenberechnung von Zylindern"
+  },
+  {
+    "correct": 0,
+    "explanation": "Weil die Sonnenstrahlen gleich einfallen, sind die beiden Dreiecke ähnlich, das Verhältnis von Höhe zu Schattenlänge ist also gleich: 1,5 m / 2 m = 0,75. Für den Baum folgt Höhe = 0,75 · 12 m = 9 Meter.",
+    "options": [
+      "9 Meter",
+      "16 Meter",
+      "8 Meter",
+      "10 Meter"
+    ],
+    "question": "Ein Baum wirft einen 12 Meter langen Schatten. Gleichzeitig wirft ein 1,5 Meter hoher Stab einen 2 Meter langen Schatten. Wie hoch ist der Baum?",
+    "topic": "Ähnlichkeit von Dreiecken (Anwendung)"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Diagonale ist die Hypotenuse eines rechtwinkligen Dreiecks aus Länge und Breite. Mit dem Satz des Pythagoras gilt d² = 5² + 12² = 25 + 144 = 169, also d = √169 = 13 Meter.",
+    "options": [
+      "17 Meter",
+      "13 Meter",
+      "15 Meter",
+      "10 Meter"
+    ],
+    "question": "Ein rechteckiger Garten hat eine Länge von 12 Metern und eine Breite von 5 Metern. Wie lang ist der kürzeste Weg diagonal durch den Garten?",
+    "topic": "Satz des Pythagoras"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Radius ist die Hälfte des Durchmessers, also r = 45 cm. Für die Kreisfläche gilt A = π · r² ≈ 3,14 · (45 cm)² = 3,14 · 2025 cm² ≈ 6358,5 cm².",
+    "options": [
+      "ca. 6358,5 cm²",
+      "ca. 25434,0 cm²",
+      "ca. 8100,0 cm²",
+      "ca. 3179,3 cm²"
+    ],
+    "question": "Ein kreisförmiger Tisch hat einen Durchmesser von 90 cm. Welchen Flächeninhalt hat die Tischplatte? (Nutze π ≈ 3,14)",
+    "topic": "Flächeninhalt des Kreises"
+  },
+  {
+    "correct": 0,
+    "explanation": "Das Volumen eines Zylinders ist V = π · r² · h ≈ 3,14 · (0,4 m)² · 1,20 m = 3,14 · 0,16 m² · 1,20 m = 0,60288 m³. Wegen 1 m³ = 1000 Liter sind das rund 602,9 Liter.",
+    "options": [
+      "ca. 602,9 Liter",
+      "ca. 1507,2 Liter",
+      "ca. 150,7 Liter",
+      "ca. 60,3 Liter"
+    ],
+    "question": "Ein zylindrisches Wasserfass hat eine Höhe von 1,20 Metern und einen Grundflächenradius von 0,4 Metern. Wie viel Liter Wasser passen maximal in das Fass? (Nutze π ≈ 3,14; 1 m³ = 1000 Liter)",
+    "topic": "Volumen des Zylinders"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für den Flächeninhalt eines Trapezes gilt A = ((a + c) / 2) · h. Eingesetzt: A = ((8 cm + 12 cm) / 2) · 6 cm = 10 cm · 6 cm = 60 cm².",
+    "options": [
+      "60 cm²",
+      "120 cm²",
+      "48 cm²",
+      "72 cm²"
+    ],
+    "question": "Ein Trapez hat die parallelen Seiten a = 8 cm und c = 12 cm. Die Höhe des Trapezes beträgt 6 cm. Welchen Flächeninhalt besitzt das Trapez?",
+    "topic": "Flächeninhalt des Trapezes"
+  },
+  {
+    "correct": 0,
+    "explanation": "An geschnittenen Parallelen sind Wechselwinkel gleich groß (ebenso Stufenwinkel). Der Wechselwinkel misst deshalb ebenfalls 70°. Nur der Nebenwinkel dazu wäre 180° − 70° = 110°.",
+    "options": [
+      "70°",
+      "110°",
+      "20°",
+      "140°"
+    ],
+    "question": "Zwei parallele Geraden g und h werden von einer dritten Geraden t geschnitten. Ein Winkel an der Schnittstelle von g und t misst 70°. Wie groß ist der zugehörige Wechselwinkel an der Schnittstelle von h und t?",
+    "topic": "Winkel an Parallelen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Für die Raumdiagonale eines Würfels mit Kantenlänge a gilt d = a · √3. Hier ist d = 5 cm · √3 ≈ 5 cm · 1,732 = 8,66 cm. Die Flächendiagonale wäre dagegen 5 cm · √2 ≈ 7,07 cm.",
+    "options": [
+      "ca. 8,66 cm",
+      "ca. 7,07 cm",
+      "ca. 10,00 cm",
+      "ca. 15,00 cm"
+    ],
+    "question": "Ein Würfel hat eine Kantenlänge von 5 cm. Wie lang ist seine Raumdiagonale (die Diagonale, die zwei gegenüberliegende Eckpunkte durch das Innere des Würfels verbindet)? Gib das Ergebnis als gerundeten Wert an. (Nutze √3 ≈ 1,732)",
+    "topic": "Raumdiagonale des Würfels"
+  },
+  {
+    "correct": 0,
+    "explanation": "Aus dem Umfang folgt für die beiden gleich langen Schenkel: 36 cm = 10 cm + 2 · s, also s = 13 cm. Die Höhe zur Basis teilt das Dreieck in zwei rechtwinklige Dreiecke mit der halben Basis (5 cm) als Kathete und dem Schenkel (13 cm) als Hypotenuse. Mit Pythagoras gilt h² + 5² = 13², also h² = 144 und h = 12 cm.",
+    "options": [
+      "12 cm",
+      "13 cm",
+      "8 cm",
+      "10 cm"
+    ],
+    "question": "Ein gleichschenkliges Dreieck hat eine Basis von 10 cm. Der gesamte Umfang des Dreiecks beträgt 36 cm. Wie lang ist die Höhe des Dreiecks zur Basis?",
+    "topic": "Flächenberechnung und Satz des Pythagoras im Dreieck"
+  },
+  {
+    "correct": 2,
+    "explanation": "Die Diagonalen einer Raute stehen senkrecht aufeinander, halbieren sich gegenseitig im Mittelpunkt und sind zugleich Symmetrieachsen. Gleich lang sind sie nur im Sonderfall des Quadrats.",
+    "options": [
+      "Sie sind immer gleich lang.",
+      "Sie schneiden sich in einem Eckpunkt.",
+      "Sie stehen senkrecht aufeinander.",
+      "Sie verlaufen parallel zueinander."
+    ],
+    "question": "Welche der folgenden Aussagen trifft auf die Diagonalen einer Raute (eines Rhombus) zu?",
+    "topic": "Eigenschaften von Vierecken (Raute)"
+  },
+  {
+    "correct": 0,
+    "explanation": "Im rechtwinkligen Dreieck gilt der Satz des Pythagoras a² + b² = c². Hier ist 3² + 4² = 9 + 16 = 25, also c = √25 = 5 cm.",
+    "options": [
+      "5 cm",
+      "6 cm",
+      "7 cm",
+      "25 cm"
+    ],
+    "question": "In einem rechtwinkligen Dreieck sind die Längen der Katheten 3 cm und 4 cm. Wie lang ist die Hypotenuse?",
+    "topic": "Satz des Pythagoras"
+  },
+  {
+    "correct": 2,
+    "explanation": "Für den Flächeninhalt eines Parallelogramms gilt A = Grundseite · zugehörige Höhe = 8 cm · 5 cm = 40 cm².",
+    "options": [
+      "20 cm²",
+      "26 cm²",
+      "40 cm²",
+      "80 cm²"
+    ],
+    "question": "Ein Parallelogramm hat eine Grundseite von 8 cm und die zugehörige Höhe beträgt 5 cm. Welchen Flächeninhalt hat das Parallelogramm?",
+    "topic": "Flächeninhalt von Parallelogrammen"
+  },
+  {
+    "correct": 3,
+    "explanation": "Für das Volumen eines Quaders gilt V = Länge · Breite · Höhe = 4 cm · 5 cm · 6 cm = 120 cm³.",
+    "options": [
+      "15 cm³",
+      "30 cm³",
+      "60 cm³",
+      "120 cm³"
+    ],
+    "question": "Ein Quader hat die Kantenlängen 4 cm, 5 cm und 6 cm. Welches Volumen hat der Quader?",
+    "topic": "Volumen von Quadern"
+  },
+  {
+    "correct": 1,
+    "explanation": "An geschnittenen Parallelen sind Wechselwinkel und Stufenwinkel jeweils gleich groß. Beträgt der Wechselwinkel 65°, so misst auch der Stufenwinkel 65°; der Nebenwinkel dazu wäre 115°.",
+    "options": [
+      "25°",
+      "65°",
+      "115°",
+      "130°"
+    ],
+    "question": "Zwei parallele Geraden werden von einer dritten Geraden geschnitten. Wenn ein Wechselwinkel 65° beträgt, wie groß ist der entsprechende Stufenwinkel?",
+    "topic": "Winkel an Parallelen und schneidenden Geraden"
+  },
+  {
+    "correct": 2,
+    "explanation": "Gegeben sind die Seite AB und die beiden an ihr anliegenden Winkel. Genau das beschreibt der Kongruenzsatz WSW: Stimmen zwei Dreiecke in einer Seite und den beiden anliegenden Winkeln überein, sind sie kongruent.",
+    "options": [
+      "SSS (Seite-Seite-Seite)",
+      "SWS (Seite-Winkel-Seite)",
+      "WSW (Winkel-Seite-Winkel)",
+      "SsW (Seite-Seite-Winkel)"
+    ],
+    "question": "Zwei Dreiecke ABC und DEF haben folgende Eigenschaften: Die Strecke AB ist gleich der Strecke DE, der Winkel BAC ist gleich dem Winkel EDF und der Winkel ABC ist gleich dem Winkel DEF. Nach welchem Kongruenzsatz sind die Dreiecke kongruent?",
+    "topic": "Kongruenzsätze für Dreiecke"
+  },
+  {
+    "correct": 2,
+    "explanation": "Ein Rechteck, das kein Quadrat ist, hat zwei Symmetrieachsen: eine durch die Mittelpunkte der längeren Seiten und eine durch die Mittelpunkte der kürzeren Seiten. Die Diagonalen sind hier keine Symmetrieachsen.",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "question": "Wie viele Symmetrieachsen besitzt ein Rechteck, das kein Quadrat ist?",
+    "topic": "Achsensymmetrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Im rechtwinkligen Dreieck gilt A = (1/2) · Kathete1 · Kathete2. Aus 24 cm² = (1/2) · 8 cm · b folgt b = 6 cm. Mit dem Satz des Pythagoras ist c² = 8² + 6² = 64 + 36 = 100, also c = 10 cm.",
+    "options": [
+      "6 cm",
+      "10 cm",
+      "12 cm",
+      "14 cm"
+    ],
+    "question": "Ein rechtwinkliges Dreieck hat eine Kathete von 8 cm. Der Flächeninhalt beträgt 24 cm². Wie lang ist die Hypotenuse dieses Dreiecks?",
+    "topic": "Satz des Pythagoras und Flächeninhalt"
+  },
+  {
+    "correct": 2,
+    "explanation": "Für den Abstand zweier Punkte gilt d = √((x2 − x1)² + (y2 − y1)²). Hier ist d = √((5 − 2)² + (5 − 1)²) = √(9 + 16) = √25 = 5 Einheiten.",
+    "options": [
+      "3 Einheiten",
+      "4 Einheiten",
+      "5 Einheiten",
+      "7 Einheiten"
+    ],
+    "question": "Im Koordinatensystem liegen die Punkte P(2|1) und Q(5|5). Wie groß ist die Entfernung zwischen P und Q?",
+    "topic": "Abstand zweier Punkte im Koordinatensystem"
+  }
+]

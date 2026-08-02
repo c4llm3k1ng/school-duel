@@ -1,0 +1,482 @@
+[
+  {
+    "correct": 1,
+    "explanation": "Reguläre Reflexion: glatte Oberfläche (Spiegel). Diffuse Reflexion: raue Oberfläche (sichtbar aus allen Richtungen, kein Spiegelbild). Reflexionsgesetz: Einfallswinkel = Ausfallswinkel (bezogen auf Lot).",
+    "options": [
+      "Durchgang von Licht durch ein Medium, wobei ein Teil in Wärme umgewandelt wird",
+      "Zurückwerfen von Licht an einer Oberfläche, gerichtet am Spiegel oder diffus an rauen Flächen",
+      "Ablenkung von Licht an einer scharfen Kante, wodurch es in den Schattenraum gelangt",
+      "Aufnahme der Lichtenergie durch einen Stoff, die dabei vollständig in Wärme übergeht"
+    ],
+    "question": "Was ist Reflexion von Licht?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Reflexionsgesetz: alpha₁ = alpha₂ (Einfallswinkel = Ausfallswinkel). Beide Winkel werden vom Einfallslot gemessen, einfallender und reflektierter Strahl liegen mit dem Lot in einer Ebene. Anwendung: ebener Spiegel, Hohlspiegel, Retroreflektoren. Spiegelbild: gleich groß, virtuell, ebenso weit hinter dem Spiegel. Man nennt es 'seitenverkehrt' – genau genommen vertauscht der Spiegel aber nicht links und rechts, sondern vorne und hinten (die Tiefenrichtung).",
+    "options": [
+      "Licht wird an der Grenzfläche vollständig aufgenommen und in Wärme umgewandelt",
+      "Einfallswinkel und Ausfallswinkel sind gleich groß, beide gemessen zum Lot der Fläche",
+      "Licht wird an der Grenzfläche stets zum Lot hin abgelenkt und dabei abgeschwächt",
+      "Der Ausfallswinkel ist immer doppelt so groß wie der Einfallswinkel zum Lot"
+    ],
+    "question": "Was besagt das Reflexionsgesetz?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Brechung: Richtungsänderung durch Geschwindigkeitsänderung. Sie tritt nur bei schrägem Einfall auf – trifft Licht senkrecht auf die Grenzfläche, ändert sich nur die Geschwindigkeit, nicht die Richtung. Optisch dichteres Medium (größeres n): Licht langsamer → bricht zum Lot. Optisch dünneres Medium: Licht schneller → bricht vom Lot weg. 'Optisch dichter' meint dabei das größere n, nicht die Massendichte. Beispiel: Löffel im Wasserglas scheint geknickt.",
+    "options": [
+      "Zurückwerfen des Lichts an einer Grenzfläche unter gleichem Winkel zum Lot",
+      "Richtungsänderung des Lichts beim Übergang in ein Medium anderer optischer Dichte",
+      "Umwandlung der Lichtenergie in Wärme beim Durchgang durch einen dunklen Stoff",
+      "Ablenkung des Lichts in alle Raumrichtungen an feinen Teilchen in einem Medium"
+    ],
+    "question": "Was ist Lichtbrechung (Refraktion)?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "n = c/v. Größeres n → langsameres Licht, stärkere Brechung. Luft: n ≈ 1 (rund 1,0003). Wasser: 1,33. Glas: 1,4-1,9. Diamant: 2,42 (daher Brillanz). Diese Werte gelten für gelbes Licht: n hängt leicht von der Wellenlänge ab (Dispersion) und zusätzlich von Temperatur und Druck. Snellius: n₁·sin(alpha₁) = n₂·sin(alpha₂).",
+    "options": [
+      "Der Winkel, unter dem ein Lichtstrahl beim Eintritt in ein Medium abgelenkt wird",
+      "Das Verhältnis der Lichtgeschwindigkeit im Vakuum zu der im betreffenden Medium",
+      "Der Anteil des Lichts, der an einer Grenzfläche zurückgeworfen statt durchgelassen wird",
+      "Der Abstand zweier benachbarter Wellenberge des Lichts im betreffenden Medium"
+    ],
+    "question": "Was ist der Brechungsindex n?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Snellius: n₁ sin(α₁) = n₂ sin(α₂). Anwendung: Berechnung von Brechungswinkeln. Licht von Luft nach Glas: sin(α₂) = sin(α₁)/n → α₂ < α₁ (Brechung zum Lot). Umkehrbar.",
+    "options": [
+      "Einfallswinkel und Ausfallswinkel sind an jeder Grenzfläche exakt gleich groß",
+      "Das Produkt aus Brechungsindex und Sinus des Winkels ist in beiden Medien gleich",
+      "Oberhalb eines bestimmten Grenzwinkels wird das Licht vollständig zurückgeworfen",
+      "Die Ausbreitungsgeschwindigkeit ist das Produkt aus Wellenlänge und Frequenz"
+    ],
+    "question": "Was ist das Snelliussche Brechungsgesetz?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Totalreflexion: tritt auf, wenn Licht vom optisch dichteren ins dünnere Medium fällt (z.B. Glas → Luft). Grenzwinkel: sin(α_g) = n₂/n₁. Anwendung: Glasfaserkabel (Lichtwellenleiter), Prismenfernglas, Brillantschliff.",
+    "options": [
+      "Licht wird an der Grenzfläche vollständig aufgenommen und in Wärme umgewandelt",
+      "Beim Übergang ins dünnere Medium wird oberhalb des Grenzwinkels alles Licht zurückgeworfen",
+      "Licht wird an einer rauen Grenzfläche gleichmäßig in alle Raumrichtungen gestreut",
+      "Licht wird an einer metallisch beschichteten Fläche nahezu verlustfrei zurückgeworfen"
+    ],
+    "question": "Was ist Totalreflexion?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 0,
+    "explanation": "Im Vakuum ist c = 299.792.458 m/s exakt festgelegt (dieser Wert definiert seit 1983 das Meter); zum Rechnen genügt c ≈ 3 × 10⁸ m/s. Im Medium: v = c/n (langsamer). Licht von der Sonne: ca. 8 Minuten. Lichtjahr: Strecke, die Licht in einem Jahr zurücklegt (ca. 9,46 × 10¹² km). Kein Körper und kein Signal kann sich schneller als c ausbreiten.",
+    "options": [
+      "Rund 300.000 km/s im Vakuum, Höchstgrenze für Energie- und Informationsübertragung",
+      "Rund 3.000 m/s im Vakuum, deutlich schneller als die Ausbreitung von Schall in Luft",
+      "Rund 30.000 km/s im Vakuum, unabhängig vom später durchlaufenen Medium",
+      "Rund 3.000.000 km/s im Vakuum, in Glas und Wasser nur geringfügig kleiner"
+    ],
+    "question": "Was ist die Lichtgeschwindigkeit?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Sammellinse: konvex (bikonvex, plankonvex). Achsenparallele Strahlen werden im Brennpunkt F gebündelt – exakt gilt das nur für dünne Linsen und achsennahe Strahlen, sonst treten Abbildungsfehler auf (sphärische Aberration, Farbfehler). Brennweite f. Abbildungsmaßstab: B/G = b/g (Bild/Gegenstand). Reelles, umgekehrtes Bild bei g > f; virtuelles, aufrechtes Bild bei g < f (Lupe).",
+    "options": [
+      "Eine am Rand dickere Linse, die parallel einfallendes Licht auseinanderlaufen lässt",
+      "Eine in der Mitte dickere Linse, die parallel einfallendes Licht im Brennpunkt bündelt",
+      "Eine in der Mitte dünnere Linse, die nur aufrechte und verkleinerte Bilder erzeugt",
+      "Eine planparallele Glasplatte, die den Strahlengang lediglich seitlich versetzt"
+    ],
+    "question": "Was ist eine Sammellinse?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Zerstreuungslinse: konkav (bikonkav). Parallele Strahlen → divergieren, als kämen sie aus virtuellem Brennpunkt. f < 0 (negative Brennweite). Kurzsichtige: Brille oder Kontaktlinse mit Zerstreuungslinse.",
+    "options": [
+      "Eine in der Mitte dickere Linse, die parallele Strahlen in einem Brennpunkt sammelt",
+      "Eine in der Mitte dünnere Linse, die Strahlen aufweitet und virtuelle Bilder erzeugt",
+      "Ein beidseitig planes Glasstück, das Licht ohne Richtungsänderung durchtreten lässt",
+      "Ein keilförmiger Glaskörper, der weißes Licht in seine Spektralfarben zerlegt"
+    ],
+    "question": "Was ist eine Zerstreuungslinse?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Linsengleichung: 1/f = 1/g + 1/b – gilt für dünne Linsen und achsennahe Strahlen. Brechkraft D = 1/f in Dioptrien (f dabei in Metern). Abbildungsmaßstab: m = b/g. Wenn g = 2f: b = 2f (gleich großes, umgekehrtes Bild). Wenn g = f: Bild im Unendlichen (Kollimator). Bei g < f entsteht kein reelles Bild mehr, sondern ein virtuelles (Lupe).",
+    "options": [
+      "Die Brennweite ist die Summe aus Gegenstandsweite und Bildweite: f = g + b",
+      "Der Kehrwert der Brennweite ist die Summe der Kehrwerte beider Weiten: 1/f = 1/g + 1/b",
+      "Die Brennweite ist das Produkt aus Gegenstandsweite und Bildweite: f = g · b",
+      "Der Kehrwert der Brennweite ist die Differenz beider Weiten: 1/f = g - b"
+    ],
+    "question": "Was besagt die Linsengleichung?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Beim abbildenden System gilt der Abbildungsmaßstab V = B/G = b/g. Bei Lupe, Mikroskop und Fernrohr meint 'Vergrößerung' dagegen die Winkelvergrößerung, also das Verhältnis der Sehwinkel mit und ohne Gerät. Lupe (Sammellinse, g < f): virtuelles, aufrechtes Bild. Die Formel V = 25 cm / f gilt nur unter zwei Voraussetzungen: Man rechnet mit der vereinbarten Bezugssehweite von 25 cm, und das Auge ist entspannt (Bild im Unendlichen, Gegenstand genau in der Brennebene). Mikroskop: Objektivvergrößerung × Okularvergrößerung. Fernrohr: V = f(Objektiv) / f(Okular).",
+    "options": [
+      "Die Helligkeit des Bildes im Verhältnis zur Helligkeit des abgebildeten Gegenstands",
+      "Das Verhältnis von Bildgröße zu Gegenstandsgröße, gleich dem Verhältnis der Weiten",
+      "Der Abstand zwischen der Linsenmitte und dem Brennpunkt eines abbildenden Systems",
+      "Das Verhältnis der Lichtgeschwindigkeiten in Vakuum und im Material der Linse"
+    ],
+    "question": "Was ist der Abbildungsmaßstab einer Linse?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Hohlspiegel (Konkavspiegel): Brennpunkt F auf Spiegelseite. Gegenstand außerhalb F: reelles, invertiertes Bild. Gegenstand innerhalb F: virtuelles, vergrößertes Bild. Sphärischer Spiegel: sphärische Aberration (Randstrahlen werden zu stark gebündelt). Parabolspiegel: bündelt achsenparalleles Licht exakt in einem Punkt.",
+    "options": [
+      "Ein ebener Spiegel, der ein gleich großes, seitenverkehrtes virtuelles Bild erzeugt",
+      "Ein nach innen gewölbter Spiegel, der parallele Strahlen in einem Brennpunkt sammelt",
+      "Eine halbdurchlässig verspiegelte Platte, die Licht teilweise durchtreten lässt",
+      "Ein nach außen gewölbter Spiegel, der Strahlen aufweitet und das Sichtfeld vergrößert"
+    ],
+    "question": "Was ist ein Hohlspiegel?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Auge: Hornhaut (feste Brechkraft ca. 43 dpt), Linse (variabel 19-33 dpt, Akkommodation). Stäbchen: helligkeitsempfindlich, keine Farbwahrnehmung. Zapfen: 3 Typen (rot-, grün- und blauempfindlich). Blinder Fleck: keine Sinneszellen am Sehnervenaustritt.",
+    "options": [
+      "Ein einzelner Lichtsensor, der Helligkeitsunterschiede direkt in Nervenreize umsetzt",
+      "Ein Linsensystem aus Hornhaut und verformbarer Linse, das ein Bild auf die Netzhaut wirft",
+      "Ein Hohlspiegelsystem, das einfallendes Licht auf den Austritt des Sehnervs bündelt",
+      "Ein Farbfilter, der nur bestimmte Wellenlängen bis zur Netzhaut durchtreten lässt"
+    ],
+    "question": "Was ist das Auge als optisches System?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Myopie: Bild vor Netzhaut. Ursache: Bulbus (Augapfel) zu lang oder Hornhaut zu stark gekrümmt. Korrektur: Zerstreuungslinse (negative Brechkraft). Zunehmendes Problem weltweit (Bildschirmarbeit, Lesen).",
+    "options": [
+      "Der Augapfel ist zu kurz, das Bild läge hinter der Netzhaut, das Nahsehen ist unscharf",
+      "Der Augapfel ist zu lang, das Bild entsteht vor der Netzhaut, das Fernsehen ist unscharf",
+      "Die Linse verliert mit dem Alter an Elastizität, das Scharfstellen im Nahbereich fehlt",
+      "Die Hornhaut ist ungleichmäßig gekrümmt, Punkte werden als Striche abgebildet"
+    ],
+    "question": "Was ist Kurzsichtigkeit (Myopie)?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Hyperopie: Bild würde hinter Netzhaut. Korrektur: Sammellinse (positive Brechkraft). Alterssichtigkeit (Presbyopie): Linse verliert Elastizität → Akkommodationsverlust. Lesebrille nötig ab ca. 45 Jahren.",
+    "options": [
+      "Der Augapfel ist zu lang, das Bild entsteht vor der Netzhaut, das Fernsehen ist unscharf",
+      "Der Augapfel ist zu kurz, das Bild läge hinter der Netzhaut, korrigiert mit Sammellinse",
+      "Die Hornhaut ist unregelmäßig gekrümmt, das Bild wird in einer Achse verzerrt",
+      "Der Augeninnendruck steigt an und schädigt allmählich die Fasern des Sehnervs"
+    ],
+    "question": "Was ist Weitsichtigkeit (Hyperopie)?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Wellen: Energie wird transportiert, Materie schwingt am Ort. Mechanisch: Schall, Wasserwellen, Seismik. Elektromagnetisch: Licht, Radiowellen, Röntgen. Charakteristika: Wellenlänge, Frequenz, Amplitude, Ausbreitungsgeschwindigkeit.",
+    "options": [
+      "Regelmäßige Auf- und Abbewegung einer Wasseroberfläche unter dem Einfluss von Wind",
+      "Ausbreitung einer Störung mit Energietransport, ohne dass Materie mitwandert",
+      "Ein zeitlich veränderliches elektrisches Feld, das Ladungen im Raum verschiebt",
+      "Transport von Teilchen durch ein Medium, bei dem Energie und Masse mitwandern"
+    ],
+    "question": "Was sind Wellen in der Physik?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "lambda (Wellenlänge): Meter. f (Frequenz): Hertz = 1/s. A (Amplitude): Meter (mechanisch) oder Feldstärke (el.-mag.). Periode T = 1/f. Sichtbares Licht: lambda = 380-780 nm (Grenzen fließend, individuell verschieden). 16 Hz - 20 kHz ist der Hörbereich des Menschen, nicht die Grenze des Schalls: darunter liegt Infraschall, darüber Ultraschall. Die obere Hörgrenze sinkt mit dem Alter deutlich.",
+    "options": [
+      "Dauer einer Schwingung, Auslenkung der Teilchen und Reichweite einer laufenden Welle",
+      "Abstand gleicher Phasen, Zahl der Schwingungen pro Sekunde und maximale Auslenkung",
+      "Ausbreitungsgeschwindigkeit, Schwingungsdauer und Gesamtenergie einer laufenden Welle",
+      "Schwingungsrichtung, Ausbreitungsrichtung und Dämpfung einer laufenden Welle"
+    ],
+    "question": "Was sind Wellenlänge, Frequenz und Amplitude?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "c = lambda · f (oder v = lambda · f). Licht (Vakuum): c = 3×10⁸ m/s. Schall (Luft, 20°C): v ≈ 340 m/s. Schall (Wasser): v ≈ 1500 m/s. Tiefe Töne: lange Wellenlänge. Hohe Töne: kurze Wellenlänge.",
+    "options": [
+      "Die Energie ist das Produkt aus Masse und dem Quadrat der Lichtgeschwindigkeit: E = m·c²",
+      "Die Ausbreitungsgeschwindigkeit ist das Produkt aus Wellenlänge und Frequenz: c = lambda · f",
+      "Die Geschwindigkeit ist das Produkt aus Beschleunigung und verstrichener Zeit: v = a · t",
+      "Die Kraft ist das Produkt aus der Masse und der erzielten Beschleunigung: F = m · a"
+    ],
+    "question": "Was ist die Wellengleichung?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Sichtbares Licht: Teilbereich des EM-Spektrums. Kurzwellig: violett (hohe Energie). Langwellig: rot (niedrige Energie). Weißes Licht: Überlagerung aller Farben. Prisma: Dispersion (Trennung nach Wellenlänge).",
+    "options": [
+      "Der Anteil des Sonnenlichts, der ohne Farbanteile als reines weißes Licht auftritt",
+      "Der Wellenlängenbereich von etwa 380 nm (violett) bis 780 nm (rot), den das Auge sieht",
+      "Der Wellenlängenbereich oberhalb von 780 nm, der auf der Haut als Wärme spürbar wird",
+      "Die Gesamtheit aller elektromagnetischen Wellen von Radiowellen bis Gammastrahlung"
+    ],
+    "question": "Was ist das sichtbare Lichtspektrum?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Dispersion: Der Brechungsindex n hängt von lambda ab. In Glas und Wasser (normale Dispersion) wird kurzwelliges Licht (violett) stärker gebrochen als langwelliges (rot). Prisma trennt die Farben. Regenbogen: Im Regentropfen wird das Licht beim Eintritt gebrochen, an der Rückseite reflektiert und beim Austritt erneut gebrochen – dabei fächern die Farben auf.",
+    "options": [
+      "Verteilung feiner Teilchen in einem Medium, an denen einfallendes Licht gestreut wird",
+      "Aufspaltung von Licht in Spektralfarben, da kurze Wellen stärker gebrochen werden",
+      "Ausbreitung von Licht in den Schattenraum hinter engen Spalten und scharfen Kanten",
+      "Vollständige Rückwerfung des Lichts oberhalb eines bestimmten Grenzwinkels zum Lot"
+    ],
+    "question": "Was ist Dispersion?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Dopplereffekt: Rettungswagen fährt vorbei (höherer Ton beim Nähern, tieferer beim Entfernen). Beim Schall macht es einen Unterschied, ob sich die Quelle oder der Beobachter gegenüber der Luft bewegt – die Formeln sind für beide Fälle verschieden. Beim Licht zählt nur die Relativgeschwindigkeit. Anwendung: Radargeschwindigkeitsmessung, Ultraschall (Blutfluss). Die kosmologische Rotverschiebung ferner Galaxien ist dagegen kein echter Dopplereffekt: Sie entsteht dadurch, dass sich der Raum selbst ausdehnt und die Wellenlänge unterwegs mitgedehnt wird.",
+    "options": [
+      "Zurückwerfen von Wellen an einer Grenzfläche unter gleichem Winkel zum Lot",
+      "Frequenzänderung durch Relativbewegung: beim Annähern höher, beim Entfernen tiefer",
+      "Ausbreitung von Wellen um Hindernisse herum, deren Größe der Wellenlänge entspricht",
+      "Überlagerung zweier Wellen zu Verstärkung oder Auslöschung der Gesamtamplitude"
+    ],
+    "question": "Was ist der Dopplereffekt?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Superpositionsprinzip: Wellen überlagern sich linear. Konstruktive Interferenz: Amplituden addieren sich. Destruktive Interferenz: Amplituden subtrahieren sich (Auslöschung). Anwendung: Doppelspaltexperiment (Wellencharakter des Lichts), Kopfhörer mit aktiver Geräuschunterdrückung.",
+    "options": [
+      "Zurückwerfen von Wellen an einer festen Grenzfläche, dabei mit einem Phasensprung",
+      "Überlagerung von Wellen zu Verstärkung oder Auslöschung je nach ihrer Phasenlage",
+      "Ausbreitung von Wellen in den geometrischen Schattenraum hinter einer scharfen Kante",
+      "Richtungsänderung von Wellen beim Übergang in ein Medium mit anderer Dichte"
+    ],
+    "question": "Was ist Interferenz von Wellen?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Beugung (Diffraktion): Huygenssches Prinzip (jeder Punkt einer Wellenfront ist Ausgangspunkt neuer Elementarwellen). Beugung tritt immer auf, wird aber erst deutlich, wenn Spalt oder Hindernis in der Größenordnung der Wellenlänge oder kleiner sind. Licht durch engen Spalt: Beugungsmuster. Schall hat Wellenlängen im Meterbereich und beugt sich deshalb stark um Ecken; sichtbares Licht (unter 1 mu m) beugt sich so wenig, dass Schatten scharf wirken.",
+    "options": [
+      "Zurückwerfen von Wellen an einem Hindernis unter gleichem Winkel zum Lot",
+      "Ausbreitung von Wellen in den Schattenraum hinter Öffnungen und Hindernissen",
+      "Aufnahme der Wellenenergie durch ein Hindernis und Umwandlung in Wärme",
+      "Richtungsänderung von Wellen an der Grenzfläche zwischen zwei Medien"
+    ],
+    "question": "Was ist Beugung von Wellen?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "EM-Spektrum: alle breiten sich im Vakuum mit c aus. Radiowellen (km) → Mikrowellen (cm) → IR (mu m) → Sichtbar (nm) → UV (nm) → Röntgen (pm) → Gamma (pm, fm). Energie steigt mit Frequenz: E = h·f.",
+    "options": [
+      "Der schmale Wellenlängenbereich von 380 nm bis 780 nm, den das menschliche Auge sieht",
+      "Alle elektromagnetischen Wellen von Radiowellen über Licht bis zur Gammastrahlung",
+      "Alle mechanischen Wellen von Infraschall über den Hörschall bis zum Ultraschall",
+      "Der Bereich sehr kurzwelliger, ionisierender Strahlung zwischen 0,01 nm und 10 nm"
+    ],
+    "question": "Was ist das elektromagnetische Spektrum?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Röntgenstrahlung entsteht als Bremsstrahlung oder als charakteristische Strahlung der Atomhülle. Üblicher Energiebereich: etwa 100 eV bis einige 100 keV (Wellenlängen rund 10 nm bis 1 pm). Die Grenzen sind fließend: Nach unten geht die Strahlung in extremes UV über, nach oben überlappt sie mit Gammastrahlung. Unterschieden wird beides eher nach der Entstehung – Röntgenstrahlung aus der Elektronenhülle bzw. aus abgebremsten Elektronen, Gammastrahlung aus dem Atomkern. Ionisierend, deshalb Strahlenschutz nötig. Medizin: Diagnostik, Strahlentherapie. Kristallstrukturanalyse: DNA-Doppelhelix (Franklin, Watson, Crick).",
+    "options": [
+      "Langwellige elektromagnetische Wellen im Meterbereich, genutzt zur Funkübertragung",
+      "Kurzwellige, ionisierende elektromagnetische Strahlung, die Weichgewebe durchdringt",
+      "Mechanische Druckwellen sehr hoher Frequenz, die Gewebegrenzen sichtbar machen",
+      "Elektromagnetische Wellen zwischen 380 nm und 780 nm, vom Auge wahrnehmbar"
+    ],
+    "question": "Was sind Röntgenstrahlen?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Photonen: masselose Lichtteilchen. E = h·f = h·c/lambda. h = 6,626×10⁻³⁴ J·s. Photoelektrischer Effekt (Einstein 1905): Photonenenergie > Austrittsarbeit → Elektron wird ausgelöst. Nobelpreis Einstein 1921.",
+    "options": [
+      "Negativ geladene Elementarteilchen, die in der Hülle eines Atoms gebunden sind",
+      "Masselose Energiequanten des Lichts, deren Energie mit der Frequenz zunimmt",
+      "Elektrisch neutrale Bausteine des Atomkerns mit einer messbaren Ruhemasse",
+      "Bausteine von Protonen und Neutronen mit drittelzahliger elektrischer Ladung"
+    ],
+    "question": "Was sind Photonen?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Regenbogen: Brechung + Reflexion + Dispersion in Regentropfen. Primärer Bogen: 42° (Rot außen, Violett innen), eine innere Reflexion. Sekundärer Bogen: 51°, zwei Reflexionen (Farben umgekehrt). Erscheint stets auf der der Sonne gegenüberliegenden Seite (Sonne im Rücken des Beobachters).",
+    "options": [
+      "Sonnenlicht wird an der Oberseite von Wolkentröpfchen farbig zurückgeworfen",
+      "Sonnenlicht wird im Regentropfen gebrochen, innen reflektiert und farbig aufgefächert",
+      "Sonnenlicht wird an den Rändern der Regentropfen in den Schattenraum gebeugt",
+      "Sonnenlicht überlagert sich in dünnen Wasserfilmen zu farbigen Streifenmustern"
+    ],
+    "question": "Wie entsteht ein Regenbogen?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Stehende Wellen entstehen durch Überlagerung einer hin- und einer rücklaufenden Welle, meist durch Reflexion am Ende. Knoten: dauerhaft in Ruhe. Bäuche: maximale Amplitude. Bei beidseitig festen Enden (Gitarrensaite): Grundschwingung lambda = 2L, Oberschwingungen lambda = 2L/n. Bei einem offenen und einem geschlossenen Ende (gedackte Pfeife) gilt dagegen lambda = 4L. Anwendung: Musikinstrumente, Mikrowellenherd.",
+    "options": [
+      "Eine Welle, die sich mit gleichbleibender Geschwindigkeit in eine Richtung fortbewegt",
+      "Überlagerung gegenläufiger Wellen mit festen Knoten und Bäuchen ohne Energietransport",
+      "Eine Welle, deren Amplitude durch Reibung im Medium allmählich kleiner wird",
+      "Eine Welle, die am offenen Ende eines Mediums ohne Phasensprung zurückläuft"
+    ],
+    "question": "Was ist eine stehende Welle?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Resonanz: Anregungsfrequenz = Eigenfrequenz, die Amplitude wächst stark an. Echte Beispiele: eine Schaukel, die man genau im Takt ihrer Eigenfrequenz anstößt; ein Weinglas, das bei passender Tonhöhe zerspringt; Soldaten im Gleichschritt auf einer Brücke (deshalb 'Gleichschritt aufheben'); Radioempfang (Schwingkreis auf die Sendefrequenz abgestimmt); MRT (Kernspinresonanz). Dämpfung begrenzt die Resonanzamplitude. Achtung: Der Einsturz der Tacoma-Narrows-Brücke (1940) wird in Schulbüchern oft als Resonanzbeispiel genannt, war aber keine Resonanz, sondern aeroelastisches Flattern – eine selbsterregte Schwingung, bei der die Brückenbewegung die anregende Kraft im Wind selbst erzeugt und es gar keine äußere Anregung mit fester Frequenz gibt.",
+    "options": [
+      "Abnahme der Schwingungsamplitude durch Reibung und Energieabgabe an die Umgebung",
+      "Starke Zunahme der Amplitude, wenn Anregungsfrequenz und Eigenfrequenz übereinstimmen",
+      "Überlagerung zweier Wellen ähnlicher Frequenz zu einer periodischen Schwebung",
+      "Mehrfaches Zurückwerfen von Schall an Wänden mit langsam abklingendem Nachhall"
+    ],
+    "question": "Was ist Resonanz?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Schall: mechanische Welle, braucht ein Medium (im Vakuum keine Ausbreitung). Luft: v ≈ 340 m/s bei 20 °C, pro Kelvin mehr steigt v um ca. 0,6 m/s. Die Schallgeschwindigkeit hängt von Medium und Temperatur ab, beim idealen Gas dagegen nicht vom Luftdruck. Mach 1 bedeutet immer die örtliche Schallgeschwindigkeit – in großer Flughöhe sind das wegen der Kälte nur noch etwa 295 m/s. Echolot: Entfernung = v · Laufzeit / 2 (Hin- und Rückweg).",
+    "options": [
+      "Etwa 34 m/s in Luft bei 20 °C, in Wasser und Feststoffen deutlich kleiner",
+      "Etwa 340 m/s in Luft bei 20 °C, in Wasser und Feststoffen deutlich größer",
+      "Etwa 3.400 m/s in Luft bei 20 °C, in Wasser und Feststoffen etwa gleich groß",
+      "Etwa 340 km/s in Luft bei 20 °C, unabhängig von Temperatur und Luftdruck"
+    ],
+    "question": "Was ist die Schallgeschwindigkeit?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ultraschall: f > 20 kHz. Medizin: Sonografie, Pränataldiagnostik (ohne ionisierende Strahlung, anders als beim Röntgen). Echolokation: Fledermäuse, Wale. Erzeugt und empfangen wird Ultraschall mit dem piezoelektrischen Effekt, den es in zwei Richtungen gibt: Beim inversen (umgekehrten) Effekt verformt eine angelegte Wechselspannung den Kristall, er schwingt und sendet Ultraschall aus. Beim direkten Effekt erzeugt umgekehrt eine Verformung des Kristalls eine Spannung – so wird das zurückkommende Echo gemessen.",
+    "options": [
+      "Schall sehr großer Lautstärke oberhalb der Schmerzgrenze von etwa 130 Dezibel",
+      "Schall mit Frequenzen oberhalb von 20 kHz, für das menschliche Ohr nicht hörbar",
+      "Schall mit Frequenzen unterhalb von 16 Hz, der eher als Vibration wahrgenommen wird",
+      "Elektromagnetische Wellen hoher Frequenz, die menschliches Gewebe durchdringen"
+    ],
+    "question": "Was ist Ultraschall?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Longitudinal: Verdichtungen und Verdünnungen (Kompressionswellen). Schall in Gasen und Flüssigkeiten nur longitudinal. Transversal: elektromagnetische Wellen, Seilwelle, Seismik (S-Wellen). S-Wellen: nicht in Flüssigkeiten.",
+    "options": [
+      "Beide schwingen senkrecht zur Ausbreitung, unterscheiden sich nur in der Frequenz",
+      "Longitudinalwellen schwingen längs der Ausbreitungsrichtung, Transversalwellen quer dazu",
+      "Longitudinalwellen schwingen quer zur Ausbreitungsrichtung, Transversalwellen längs dazu",
+      "Longitudinalwellen laufen nur durch Festkörper, Transversalwellen nur durch Gase"
+    ],
+    "question": "Was sind Longitudinalwellen und Transversalwellen?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Äußerer photoelektrischer Effekt: h·f > W_A (Austrittsarbeit) → das Elektron verlässt das Metall. Maximale kinetische Energie: E_kin = h·f - W_A. Unterhalb der Grenzfrequenz passiert nichts, egal wie hell das Licht ist – mit dem reinen Wellenbild war das nicht erklärbar. Anwendung: Photozelle, Photomultiplier. Solarzellen beruhen dagegen auf dem inneren Photoeffekt: Dort werden Elektronen im Halbleiter nur aus ihren Bindungen gelöst, verlassen das Material aber nicht.",
+    "options": [
+      "Licht wird an einer blanken Metalloberfläche nahezu vollständig zurückgeworfen",
+      "Licht ausreichend hoher Frequenz löst Elektronen aus einer Metalloberfläche heraus",
+      "Licht wird beim Eintritt in ein Metall zum Lot hin gebrochen und dabei abgeschwächt",
+      "Beschleunigte Elektronen regen ein Metall zum Aussenden von sichtbarem Licht an"
+    ],
+    "question": "Was ist der photoelektrische Effekt?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Polarisation: nur bei Transversalwellen möglich (nicht bei Longitudinalwellen wie Schall). Anwendung: Polarisationsbrillen (Blendschutz), 3D-Kino, LCD-Bildschirme. Brewster-Winkel: Unter diesem Einfallswinkel ist das reflektierte Licht vollständig senkrecht zur Einfallsebene polarisiert – deshalb dämpft ein passend gedrehter Filter Spiegelungen auf Wasser oder Straße besonders gut.",
+    "options": [
+      "Räumliche Trennung positiver und negativer Ladungen innerhalb eines Materials",
+      "Einschränkung der Schwingungsrichtung einer Transversalwelle auf eine einzige Ebene",
+      "Überlagerung zweier Wellen zu Verstärkung oder gegenseitiger Auslöschung",
+      "Zurückwerfen einer Welle an einer glatten Grenzfläche unter gleichem Winkel"
+    ],
+    "question": "Was ist Polarisation?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Glasfaser: Kern (n ≈ 1,5) + Mantel (n ≈ 1,46). Totalreflexion hält Licht im Kern. Geringer Verlust (<0,2 dB/km). Datenrate: bis Tbit/s. Einmodenfaser vs. Mehrmodenfaser. Anwendung: Internet, Medizin (Endoskop).",
+    "options": [
+      "Ein Kupferkabel, in dem Signale als schnelle elektrische Impulse übertragen werden",
+      "Eine Faser, in der Licht durch Totalreflexion am Mantel im Kern geführt wird",
+      "Eine Antennenleitung, die Daten als modulierte Radiowellen weiterleitet",
+      "Ein Glasstab, in dem Licht durch fortlaufende Brechung gebündelt bleibt"
+    ],
+    "question": "Was ist Glasfaser (Lichtwellenleiter)?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Infrarot: 0,78 mu m – 1 mm. Nahe IR (NIR): Fernbedienungen. Mittleres IR: molekulare Schwingungen (Spektroskopie). Ferne IR (FIR): Wärmestrahlung von Körpern mit Zimmertemperatur. Streng genommen strahlt jeder Körper je nach Temperatur, auch kalte – nur eben schwächer und langwelliger. Sonne: Maximum bei ca. 500 nm, dazu ein großer IR-Anteil. Treibhauseffekt: Die kurzwellige Sonnenstrahlung kommt weitgehend durch die Atmosphäre, die von der Erde abgegebene langwellige IR-Strahlung wird dagegen von Treibhausgasen (CO₂, Wasserdampf, Methan) aufgenommen und zum Teil zur Erde zurückgestrahlt.",
+    "options": [
+      "Strahlung zwischen 380 nm und 780 nm, die das Auge als einzelne Farben wahrnimmt",
+      "Strahlung mit größerer Wellenlänge als rotes Licht, von jedem warmen Körper abgestrahlt",
+      "Sehr kurzwellige, ionisierende Strahlung, die Weichgewebe mühelos durchdringt",
+      "Sehr langwellige Strahlung im Meterbereich, die zur Funkübertragung genutzt wird"
+    ],
+    "question": "Was ist Infrarotstrahlung?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "UV: ca. 100-380 nm; erst der kurzwellige Teil ist wirklich ionisierend, der langwellige schädigt vor allem chemisch. Die Ozonschicht absorbiert UV-C vollständig und UV-B zum größten Teil, UV-A erreicht den Boden dagegen fast ungehindert. UV-A: dringt tiefer in die Haut ein (Hautalterung). UV-B: ermöglicht die Vitamin-D-Bildung, verursacht aber auch Sonnenbrand. Das Hautkrebsrisiko geht von UV-B und UV-A gemeinsam aus. Schutz: Sonnencreme (UV-Filter), Kleidung, Schatten.",
+    "options": [
+      "Strahlung zwischen 380 nm und 780 nm, die ein Prisma in Farben zerlegen kann",
+      "Strahlung mit kürzerer Wellenlänge als violettes Licht, energiereich und hautschädigend",
+      "Strahlung mit größerer Wellenlänge als rotes Licht, die vor allem Wärme überträgt",
+      "Strahlung im Zentimeterbereich, die Wassermoleküle zum Schwingen anregt"
+    ],
+    "question": "Was ist UV-Strahlung?",
+    "topic": "Wellen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Polaroidfilter: Jod in einer gestreckten Kunststofffolie ausgerichtet. Durchlassachse: lässt nur Licht durch, das parallel dazu schwingt. Zwei Filter 90° zueinander: kein Licht. Anwendung: Sonnenbrillen (verringert Blendung durch Reflexe), Flüssigkristallbildschirme (Flüssigkristalle drehen die Polarisationsebene).",
+    "options": [
+      "Ein lichtempfindliches Filmmaterial, das aufgenommene Bilder selbst entwickelt",
+      "Eine Folie mit ausgerichteten Molekülen, die nur eine Schwingungsebene durchlässt",
+      "Ein gleichmäßig getönter Kunststoff, der alle Wellenlängen gleich stark abschwächt",
+      "Eine hauchdünne Schicht, die auffallendes Licht durch Interferenz farbig macht"
+    ],
+    "question": "Was ist Polaroid und wie funktioniert es?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Konvexspiegel (Wölbspiegel): divergiert Reflexionsstrahlen. Virtueller Brennpunkt hinter dem Spiegel. Immer: aufrecht, verkleinert, virtuell → kein reelles Bild möglich. Fahrzeugrückspiegel: \"Gegenstände sind näher als sie erscheinen\".",
+    "options": [
+      "Ein nach innen gewölbter Spiegel, der parallele Strahlen im Brennpunkt sammelt",
+      "Ein nach außen gewölbter Spiegel, der Strahlen aufweitet und stets verkleinert abbildet",
+      "Ein ebener Spiegel, der ein gleich großes, seitenverkehrtes virtuelles Bild erzeugt",
+      "Eine beidseitig gewölbte Linse, die einfallendes Licht im Brennpunkt bündelt"
+    ],
+    "question": "Was ist ein Konvexspiegel?",
+    "topic": "Optik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Fluoreszenz: kurzlebig (< 10⁻⁸ s nach Anregung). Photon absorbiert → Elektron in höheres Niveau → Emission bei längerer Wellenlänge (niedrigerer Energie). Stokes-Verschiebung. Phosphoreszenz: länger anhaltend (Minuten bis Stunden, \"Nachleuchteffekt\").",
+    "options": [
+      "Nachleuchten eines Stoffes über Minuten bis Stunden nach dem Abschalten des Lichts",
+      "Sofortiges Aussenden von Licht nach Anregung, das mit der Lichtquelle wieder endet",
+      "Aussenden von Licht durch starkes Erwärmen eines Stoffes auf hohe Temperaturen",
+      "Zurückwerfen des einfallenden Lichts an einer glatten und glänzenden Oberfläche"
+    ],
+    "question": "Was ist Fluoreszenz?",
+    "topic": "Optik"
+  }
+]

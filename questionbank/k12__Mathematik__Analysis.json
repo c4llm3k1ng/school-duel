@@ -1,0 +1,470 @@
+[
+  {
+    "correct": 1,
+    "explanation": "Potenzregel: f(x) = xⁿ → f'(x) = n · x^(n−1). Der Exponent wird als Faktor vorgestellt und um 1 verringert.",
+    "options": [
+      "f'(x) = n · xⁿ",
+      "f'(x) = n · x^(n−1)",
+      "f'(x) = xⁿ⁻¹",
+      "f'(x) = (n+1) · xⁿ"
+    ],
+    "question": "Was ist die Ableitung der Potenzfunktion f(x) = xⁿ nach der Potenzregel?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Konstante Funktionen haben die Steigung 0 – ihr Graph ist waagerecht, daher f'(x) = 0.",
+    "options": [
+      "f'(x) = c",
+      "f'(x) = 0",
+      "f'(x) = 1",
+      "f'(x) = c · x"
+    ],
+    "question": "Was ist die Ableitung einer Konstante f(x) = c?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Produktregel: (u · v)' = u' · v + u · v'. Beide Faktoren werden einmal abgeleitet, während der andere unverändert bleibt.",
+    "options": [
+      "(u · v)' = u' · v'",
+      "(u · v)' = u' · v + u · v'",
+      "(u · v)' = u / v' + v / u'",
+      "(u · v)' = (u + v)'"
+    ],
+    "question": "Wie lautet die Produktregel für die Ableitung von f(x) = u(x) · v(x)?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Quotientenregel: (u/v)' = (u'·v − u·v') / v². Merkhilfe: 'Zähler-Strich mal Nenner minus Zähler mal Nenner-Strich, durch Nenner-Quadrat'.",
+    "options": [
+      "(u/v)' = u' · v'",
+      "(u/v)' = (u' · v − u · v') / v²",
+      "(u/v)' = u' · v + u · v'",
+      "(u/v)' = u / v'"
+    ],
+    "question": "Wie lautet die Quotientenregel für f(x) = u(x) / v(x)?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Kettenregel: (f(g(x)))' = f'(g(x)) · g'(x). Die äußere Funktion wird abgeleitet (mit dem inneren Argument) und mit der Ableitung der inneren Funktion multipliziert.",
+    "options": [
+      "(f∘g)' = f'(x) · g'(x)",
+      "(f∘g)' = f'(g(x)) · g'(x)",
+      "(f∘g)' = f(g'(x))",
+      "(f∘g)' = f'(x) + g'(x)"
+    ],
+    "question": "Wie lautet die Kettenregel für die Ableitung von f(g(x))?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 0,
+    "explanation": "f(x) = sin(x) → f'(x) = cos(x). Die weiteren zyklischen Ableitungen: cos → −sin → −cos → sin → …",
+    "options": [
+      "cos(x)",
+      "−cos(x)",
+      "sin(x)",
+      "−sin(x)"
+    ],
+    "question": "Was ist die Ableitung von f(x) = sin(x)?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Exponentialfunktion eˣ ist ihre eigene Ableitung: (eˣ)' = eˣ. Das macht sie in der Analysis besonders wichtig.",
+    "options": [
+      "e^(x−1)",
+      "eˣ",
+      "x · e^(x−1)",
+      "e"
+    ],
+    "question": "Was ist die Ableitung von f(x) = eˣ?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "f(x) = ln(x) → f'(x) = 1/x (für x > 0). Folgt aus der Umkehrfunktionsregel: ln ist Umkehrfunktion von eˣ.",
+    "options": [
+      "x",
+      "1/x",
+      "ln(x)",
+      "eˣ"
+    ],
+    "question": "Was ist die Ableitung von f(x) = ln(x)?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Notwendige Bedingung: An jedem lokalen Extrempunkt muss f'(x₀) = 0 gelten (waagerechte Tangente). Sie ist nicht hinreichend – es könnte auch ein Sattelpunkt sein.",
+    "options": [
+      "f(x₀) = 0",
+      "f'(x₀) = 0",
+      "f''(x₀) = 0",
+      "f'(x₀) > 0"
+    ],
+    "question": "Was ist die notwendige Bedingung für einen Extrempunkt von f?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "f'(x₀) = 0 und f''(x₀) > 0: lokales Minimum (nach oben gewölbt). Bei f''(x₀) < 0 liegt ein Maximum vor.",
+    "options": [
+      "f'(x₀) = 0 und f''(x₀) < 0",
+      "f'(x₀) = 0 und f''(x₀) > 0",
+      "f''(x₀) = 0",
+      "f'(x₀) > 0"
+    ],
+    "question": "Was ist die hinreichende Bedingung für ein lokales Minimum an der Stelle x₀?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ein Wendepunkt liegt vor, wenn f'' das Vorzeichen wechselt. Notwendig: f''(x₀) = 0; hinreichend: f'''(x₀) ≠ 0.",
+    "options": [
+      "f'(x₀) = 0 und f'' wechselt von positiv zu negativ – das wäre Bedingung für ein Hochpunkt",
+      "f''(x₀) = 0 und Vorzeichenwechsel von f'' (hinreichend: f'''(x₀) ≠ 0)",
+      "f(x₀) = 0 und f wechselt das Vorzeichen – das wäre eine Nullstelle mit Vorzeichenwechsel",
+      "f''(x₀) > 0 und gleichzeitig f'(x₀) = 0 – das ist hinreichend für ein lokales Minimum"
+    ],
+    "question": "Wann hat eine Funktion einen Wendepunkt an der Stelle x₀?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Bei einem Sattelpunkt gilt f'(x₀) = 0 und auch f''(x₀) = 0, aber f' wechselt nicht das Vorzeichen – die Monotonie ändert sich nicht.",
+    "options": [
+      "Ein Punkt mit f(x₀) = 0 und Vorzeichenwechsel von f – also eine gewöhnliche Nullstelle",
+      "Ein Punkt mit f'(x₀) = 0, aber ohne Vorzeichenwechsel von f' – kein Extrempunkt (z.B. f(x)=x³ bei x=0)",
+      "Ein lokaler Hochpunkt, an dem f'(x₀) = 0 und f''(x₀) < 0 gilt",
+      "Der y-Achsen-Schnittpunkt des Graphen, berechnet durch Einsetzen von x₀ = 0"
+    ],
+    "question": "Was ist ein Sattelpunkt (Terrassenpunkt)?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Streng monoton fallend: Für alle x im Intervall gilt f'(x) < 0, d.h. je größer x, desto kleiner f(x).",
+    "options": [
+      "f'(x) = 0 auf dem Intervall",
+      "f'(x) < 0 auf dem gesamten Intervall",
+      "f hat nur Minima",
+      "f hat keine Extrempunkte"
+    ],
+    "question": "Was bedeutet streng monoton fallend auf einem Intervall?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "F ist Stammfunktion von f, wenn F'(x) = f(x). Das unbestimmte Integral ∫f(x)dx = F(x) + C beschreibt alle Stammfunktionen.",
+    "options": [
+      "F(x) mit F(x) = f'(x) – eine Funktion, deren Wert gleich der Ableitung von f ist",
+      "F(x) mit F'(x) = f(x) – die Ableitung von F ergibt f",
+      "F(x) = f(x) · x – Produkt von f mit der Variablen x",
+      "F(x) mit F''(x) = f(x) – zweite Ableitung von F liefert f"
+    ],
+    "question": "Was ist eine Stammfunktion F(x) von f(x)?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "∫xⁿ dx = x^(n+1)/(n+1) + C. Merkhilfe: Exponent um 1 erhöhen, durch neuen Exponenten dividieren.",
+    "options": [
+      "n · x^(n−1) + C",
+      "x^(n+1) / (n+1) + C",
+      "xⁿ · n + C",
+      "n · x^(n+1) + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = xⁿ (n ≠ −1)?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "∫eˣ dx = eˣ + C. Die Exponentialfunktion ist zugleich ihre eigene Stammfunktion.",
+    "options": [
+      "e^(x−1) + C",
+      "eˣ + C",
+      "x · eˣ + C",
+      "e · xˣ + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = eˣ?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "∫(1/x)dx = ln|x| + C (für x ≠ 0). Der Betragsstrich ist nötig, da ln nur für positive Argumente definiert ist.",
+    "options": [
+      "1/x² + C",
+      "ln|x| + C",
+      "−1/x + C",
+      "x⁻² + C"
+    ],
+    "question": "Was ist die Stammfunktion von f(x) = 1/x?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Das bestimmte Integral ergibt den orientierten Flächeninhalt: Flächen über der x-Achse positiv, darunter negativ.",
+    "options": [
+      "Die momentane Änderungsrate von f an der Stelle a (Steigung der Tangente im Punkt a)",
+      "Den orientierten Flächeninhalt zwischen dem Graphen und der x-Achse im Intervall [a,b]",
+      "Den arithmetischen Mittelwert der Funktionswerte im Intervall [a,b]",
+      "Die Länge des Kurvenstücks des Graphen von f zwischen den Punkten a und b"
+    ],
+    "question": "Was berechnet das bestimmte Integral ∫ₐᵇ f(x)dx geometrisch?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der Hauptsatz verbindet beide Teilgebiete: Das bestimmte Integral berechnet sich als F(b) − F(a), wobei F eine beliebige Stammfunktion von f ist.",
+    "options": [
+      "Ableitung und Integral sind voneinander unabhängig",
+      "∫ₐᵇ f(x)dx = F(b) − F(a), wobei F eine Stammfunktion von f ist",
+      "Jede Funktion ist integrierbar",
+      "Das Integral einer Ableitung ist immer null"
+    ],
+    "question": "Wie lautet der Hauptsatz der Differential- und Integralrechnung?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Fläche zwischen zwei Kurven: A = ∫ₐᵇ [f(x) − g(x)]dx, wenn f(x) ≥ g(x) überall im Intervall.",
+    "options": [
+      "∫ₐᵇ f(x)·g(x)dx",
+      "∫ₐᵇ [f(x) − g(x)]dx",
+      "∫ₐᵇ f(x)dx + ∫ₐᵇ g(x)dx",
+      "∫ₐᵇ f(x)dx · ∫ₐᵇ g(x)dx"
+    ],
+    "question": "Wie berechnet man die Fläche zwischen zwei Kurven f(x) ≥ g(x) im Intervall [a,b]?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "∫₀¹ x dx = [x²/2]₀¹ = 1/2 − 0 = 1/2.",
+    "options": [
+      "0",
+      "1/2",
+      "1",
+      "2"
+    ],
+    "question": "Was ergibt ∫₀¹ x dx?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "∫v(t)dt = s(t) + C: Das Integral der Geschwindigkeit über die Zeit ergibt den zurückgelegten Weg.",
+    "options": [
+      "Die Beschleunigung a(t)",
+      "Den zurückgelegten Weg s(t)",
+      "Die Kraft F(t)",
+      "Die Energie E(t)"
+    ],
+    "question": "Was ergibt das Integral der Geschwindigkeit v(t) über die Zeit t?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "eˣ ist für alle x ∈ ℝ definiert, stets positiv, und es gilt (eˣ)' = eˣ sowie ∫eˣdx = eˣ + C.",
+    "options": [
+      "Sie ist nur für x > 0 definiert, hat bei x = 0 den Wert 0 und wächst dann unbegrenzt",
+      "Sie ist ihre eigene Ableitung und Stammfunktion, stets positiv und hat keinen Schnittpunkt mit der x-Achse",
+      "Sie hat ein globales Maximum bei x = 0 mit dem Wert 1 und fällt für x → ±∞ gegen null",
+      "Sie ist eine gerade Funktion mit Spiegelsymmetrie zur y-Achse, also f(−x) = f(x)"
+    ],
+    "question": "Was gilt für die Exponentialfunktion f(x) = eˣ besonders?",
+    "topic": "Exponentialfunktion"
+  },
+  {
+    "correct": 1,
+    "explanation": "ln(x) = logₑ(x) ist die Umkehrfunktion der natürlichen Exponentialfunktion. Es gilt ln(eˣ) = x und e^(ln x) = x.",
+    "options": [
+      "Der Logarithmus zur Basis 10 (dekadischer Logarithmus, Notation: lg oder log₁₀)",
+      "Die Umkehrfunktion von eˣ (Logarithmus zur Basis e ≈ 2,718)",
+      "Die Ableitung von eˣ (diese ist wiederum eˣ, da eˣ ihre eigene Ableitung ist)",
+      "Der Logarithmus zur Basis 2 (binärer Logarithmus, Notation: lb oder log₂)"
+    ],
+    "question": "Was ist der natürliche Logarithmus ln(x)?",
+    "topic": "Exponentialfunktion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Logarithmusgesetz: ln(a·b) = ln(a) + ln(b). Ebenso: ln(a/b) = ln(a) − ln(b) und ln(aⁿ) = n · ln(a).",
+    "options": [
+      "ln(a · b) = ln(a) · ln(b)",
+      "ln(a · b) = ln(a) + ln(b)",
+      "ln(a · b) = ln(a) − ln(b)",
+      "ln(a · b) = ln(a)^ln(b)"
+    ],
+    "question": "Was gilt für ln(a · b)?",
+    "topic": "Exponentialfunktion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ein Vektor hat Betrag (Länge) und Richtung. Im ℝⁿ wird er als Spalte oder Zeile mit n Komponenten geschrieben.",
+    "options": [
+      "Eine einzelne reelle Zahl mit Vorzeichen, die als skalare Größe ohne Richtungsangabe vorliegt",
+      "Eine gerichtete Größe mit Betrag und Richtung, dargestellt als geordnetes Tupel von Komponenten",
+      "Ein fester Punkt P(x₁, x₂) im Koordinatensystem mit bestimmten Koordinaten",
+      "Eine Gerade im Raum, beschrieben durch einen Aufpunkt und einen Richtungsvektor"
+    ],
+    "question": "Was ist ein Vektor im mathematischen Sinne?",
+    "topic": "Vektorrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Das Skalarprodukt a·b = a₁b₁ + a₂b₂ + … = |a|·|b|·cosα ist ein Skalar. Es wird für Winkelberechnungen und Orthogonalitätsprüfungen genutzt.",
+    "options": [
+      "Ein neuer Vektor senkrecht zu a und b mit dem Betrag |a|·|b|·sinα (das Kreuzprodukt)",
+      "Eine skalare Zahl: a·b = |a|·|b|·cos(α) (α = Winkel zwischen beiden)",
+      "Die komponentenweise Summe: (a₁+b₁, a₂+b₂, a₃+b₃) – also der Summenvektor a + b",
+      "Das Produkt der Beträge |a|·|b|, ohne Berücksichtigung des Winkels zwischen beiden"
+    ],
+    "question": "Was ist das Skalarprodukt zweier Vektoren a und b?",
+    "topic": "Vektorrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "a·b = 0 ⟺ cosα = 0 ⟺ α = 90°: Die Vektoren stehen senkrecht aufeinander (Orthogonalitätsbedingung).",
+    "options": [
+      "Die Vektoren sind parallel",
+      "Die Vektoren sind orthogonal (senkrecht zueinander)",
+      "Die Vektoren sind gleich lang",
+      "Einer der Vektoren ist der Nullvektor"
+    ],
+    "question": "Was gilt, wenn das Skalarprodukt zweier Vektoren gleich null ist?",
+    "topic": "Vektorrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "Das Kreuzprodukt a × b steht senkrecht auf beiden Ausgangsvektoren. Sein Betrag |a×b| = |a|·|b|·sinα entspricht der Fläche des Parallelogramms.",
+    "options": [
+      "Ein Skalar gleich |a|·|b|·cosα – das ist das Skalarprodukt, kein Kreuzprodukt",
+      "Ein Vektor senkrecht zu a und b mit Betrag |a|·|b|·sinα",
+      "Die komponentenweise Summe der Vektoren a und b, also a + b",
+      "Das Negative des Skalarprodukts: −(a·b) = −|a|·|b|·cosα (kein Vektor, sondern ein Skalar)"
+    ],
+    "question": "Was ist das Kreuzprodukt a × b zweier Vektoren im ℝ³?",
+    "topic": "Vektorrechnung"
+  },
+  {
+    "correct": 0,
+    "explanation": "Parameterdarstellung: x = p + t·u. Für jeden Parameterwert t ergibt sich ein Punkt auf der Geraden. p ist ein Aufpunkt, u gibt die Richtung an.",
+    "options": [
+      "g: x = p + t·u, t ∈ ℝ (p = Stützvektor, u = Richtungsvektor)",
+      "g: ax + by + cz = d (Koordinatenform einer Ebene, keine Geradendarstellung)",
+      "g: x² + y² + z² = r² (Gleichung einer Kugel mit Radius r um den Ursprung)",
+      "g: n·x = d (Normalenform einer Ebene mit Normalenvektor n)"
+    ],
+    "question": "Wie lautet die Parametergleichung einer Geraden g im Raum?",
+    "topic": "Analytische Geometrie"
+  },
+  {
+    "correct": 2,
+    "explanation": "Koordinatenform: ax + by + cz = d. Der Vektor n = (a,b,c) ist der Normalenvektor. Man gewinnt ihn aus der Parameterform durch Kreuzprodukt der Richtungsvektoren.",
+    "options": [
+      "E: x = p + s·u + t·v, mit Aufpunkt p und zwei Richtungsvektoren u, v (Parameterform)",
+      "E: n · (x − p) = 0, wobei n der Normalenvektor und p ein Aufpunkt ist (Normalenform)",
+      "E: ax + by + cz = d, wobei (a,b,c) der Normalenvektor der Ebene ist",
+      "E: |x − p| = r, die Gleichung einer Kugel mit Mittelpunkt p und Radius r"
+    ],
+    "question": "Was ist die Koordinatenform einer Ebene im Raum?",
+    "topic": "Analytische Geometrie"
+  },
+  {
+    "correct": 1,
+    "explanation": "Der Grenzwert des Differenzenquotienten für h→0 ist die Definition der Ableitung f'(x) – die momentane Änderungsrate (Tangentensteigung).",
+    "options": [
+      "Den arithmetischen Mittelwert aller Funktionswerte von f im Intervall [x, x+h]",
+      "Die momentane Änderungsrate – die Ableitung f'(x) an der Stelle x",
+      "Das bestimmte Integral von f über das Intervall [x, x+h]",
+      "Die zweite Ableitung f''(x) als Maß für die Krümmung des Graphen"
+    ],
+    "question": "Was beschreibt der Differenzenquotient [f(x+h) − f(x)] / h für h → 0?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 0,
+    "explanation": "L'Hôpital: Ergibt sich ein Grenzwert in der unbestimmten Form 0/0 oder ∞/∞, gilt lim f/g = lim f'/g' (unter geeigneten Bedingungen).",
+    "options": [
+      "Bei unbestimmten Ausdrücken der Form 0/0 oder ∞/∞ darf man Zähler und Nenner separat ableiten und dann den Grenzwert bestimmen",
+      "Man erweitert Zähler und Nenner mit dem konjugierten Ausdruck, um irrationale Terme zu vereinfachen",
+      "Man setzt x direkt in den vereinfachten Ausdruck ein, ohne weitere Umformungen durchzuführen",
+      "Man integriert Zähler und Nenner getrennt und bildet den Quotienten der Integrale"
+    ],
+    "question": "Was besagt die Regel von L'Hôpital?",
+    "topic": "Grenzwerte"
+  },
+  {
+    "correct": 1,
+    "explanation": "Nullstellen sind x-Werte, bei denen der Funktionswert gleich null ist – der Graph schneidet oder berührt die x-Achse.",
+    "options": [
+      "Die Stellen x₀, an denen f'(x₀) = 0 gilt – also die Extremstellen und Sattelpunkte",
+      "Die x-Werte x₀ mit f(x₀) = 0 (Schnittpunkte mit der x-Achse)",
+      "Die Stellen x₀, an denen f seinen größten oder kleinsten Wert annimmt",
+      "Die Schnittpunkte des Graphen mit der y-Achse bei x = 0"
+    ],
+    "question": "Was sind die Nullstellen einer Funktion f?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Waagerechte Asymptoten y = c entstehen, wenn lim_{x→∞} f(x) = c existiert. Senkrechte Asymptoten treten an Polstellen auf.",
+    "options": [
+      "Ein Schnittpunkt des Graphen mit der x-Achse, also eine Nullstelle der Funktion",
+      "Eine waagerechte Gerade y = c, der sich der Graph für x → ±∞ beliebig nähert",
+      "Ein lokaler Extrempunkt bei sehr großem |x|, an dem die Steigung gegen null geht",
+      "Die Tangente an den Graphen im Wendepunkt mit der Steigung f'(x_W)"
+    ],
+    "question": "Was ist eine waagerechte Asymptote des Graphen für x → ∞?",
+    "topic": "Kurvendiskussion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Charakteristikum exponentiellen Wachstums: f'(t) = k·f(t) – die Änderungsrate ist proportional zur momentanen Größe. Für k > 0 wächst f, für k < 0 nimmt f ab.",
+    "options": [
+      "Das Wachstum ist proportional zur Zeit t, also f(t) = A + k·t (lineares Wachstum)",
+      "Die Änderungsrate ist proportional zur momentanen Größe: f'(t) = k·f(t)",
+      "Das Wachstum ist periodisch, also f(t) = A·sin(k·t) (schwingungsförmig)",
+      "Die Funktion nimmt stets ab, da k zwingend negativ sein muss"
+    ],
+    "question": "Was ist das Wachstumsgesetz f(t) = A · e^(k·t) und wie erkennt man exponentielles Wachstum?",
+    "topic": "Exponentialfunktion"
+  },
+  {
+    "correct": 1,
+    "explanation": "Uneigentliche Integrale (z.B. ∫₁^∞ 1/x² dx = 1) werden als Grenzwert berechnet. Sie konvergieren (endlicher Wert) oder divergieren (Grenzwert ∞).",
+    "options": [
+      "Ein Integral mit negativen Grenzen a < b < 0, das wie ein gewöhnliches Integral berechnet wird",
+      "Ein Integral mit mindestens einer unendlichen Grenze oder Definitionslücke, das als Grenzwert berechnet wird – konvergiert, wenn der Grenzwert endlich ist",
+      "Ein Integral, dessen Wert negativ ist, weil f(x) unter der x-Achse liegt",
+      "Ein Integral, für das keine Stammfunktion existiert und das numerisch gelöst werden muss"
+    ],
+    "question": "Was ist ein uneigentliches Integral und wann konvergiert es?",
+    "topic": "Integralrechnung"
+  },
+  {
+    "correct": 1,
+    "explanation": "f(x) = e^(g(x)) mit g(x)=3x². Kettenregel: f'(x) = e^(g(x))·g'(x) = e^(3x²)·6x = 6x·e^(3x²).",
+    "options": [
+      "e^(3x²)",
+      "6x · e^(3x²)",
+      "3x² · e^(3x²-1)",
+      "e^(6x)"
+    ],
+    "question": "Was ist die Ableitung der zusammengesetzten Funktion f(x) = e^(3x²) nach der Kettenregel?",
+    "topic": "Differentialrechnung"
+  },
+  {
+    "correct": 2,
+    "explanation": "∫₀^π sin(x)dx = [−cos(x)]₀^π = −cos(π) − (−cos(0)) = −(−1) − (−1) = 1 + 1 = 2.",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "π"
+    ],
+    "question": "Welchen Wert hat das bestimmte Integral ∫₀^π sin(x)dx?",
+    "topic": "Integralrechnung"
+  }
+]

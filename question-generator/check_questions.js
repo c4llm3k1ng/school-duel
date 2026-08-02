@@ -34,8 +34,9 @@ if (!files.length) { console.error('Keine passenden Dateien.'); process.exit(1);
 // Normalisierung fuer Vergleiche: Kleinschreibung, Satzzeichen/Whitespace raus.
 // WICHTIG: Minuszeichen bleibt erhalten – sonst werden "x = 3" und "x = -3"
 // faelschlich als identisch gemeldet.
+// Klammern bleiben erhalten: "(2A/h) - b" und "2A/(h - b)" sind verschiedene Formeln.
 const norm = s => String(s).toLowerCase()
-  .replace(/[.,;:!?()„“"'`´]/g, ' ')
+  .replace(/[.,;:!?„“"'`´]/g, ' ')
   .replace(/\s+/g, ' ')
   .trim();
 
@@ -52,18 +53,19 @@ function numsOf(s) {
 //  - Formeln: "P(Ē) = 1 − P(E)" und "P(Ē) = P(E) + 1" enthalten beide die 1,
 //    sind aber verschiedene Formeln. Erkennbar an den vielen Buchstaben –
 //    eine echte Ergebnisoption hat hoechstens eine Variable ("x = 3").
-function isBareNumeric(o) {
-  if (o.length > 20) return false;
-  // Vergleichsoperatoren: "a > 0" und "a ≠ 0" enthalten beide die 0.
-  if (/[≥≤≠<>]/.test(o)) return false;
-  // Symbole, die den Wert veraendern: "±2" und "±√2" enthalten beide die 2,
-  // sind aber verschiedene Zahlen. Ebenso Potenzen, π, Prozent, Brueche.
-  if (/[√π^²³‰%\/]/.test(o)) return false;
-  // Formeln: "P(Ē) = 1 − P(E)" und "P(Ē) = P(E) + 1" enthalten beide die 1.
-  // Eine echte Ergebnisoption hat hoechstens eine Variable ("x = 3").
-  const letters = (o.replace(/\d/g, '').match(/\p{L}/gu) || []).length;
-  return letters <= 2;
-}
+// Wertgleichheit nur noch bei REINEN Zahlenoptionen pruefen, optional mit
+// Einheit (€, %, cm, m, kg, s, °C).
+//
+// Why so streng: Die frueheren, grosszuegigeren Fassungen dieser Regel haben in
+// sechs Runden ausschliesslich Fehlalarme produziert – Minuszeichen verschluckt
+// ("x = 3" = "x = -3"), Operatoren ignoriert ("a > 0" = "a ≠ 0"), Formeln als
+// Zahlen gelesen ("P(Ē) = 1 − P(E)" = "P(Ē) = P(E) + 1"), Wurzeln uebersehen
+// ("±2" = "±√2"), Klammern entfernt ("(2A/h) - b" = "2A/(h - b)") und
+// Unicode-Hochzahlen nicht erkannt ("4a⁸" = "4a⁷"). Einen echten Fund gab es
+// nie – semantische Wertgleichheit finden die pruefenden Agenten, nicht dieses
+// Regex. Lieber eine enge Regel, die schweigt, als eine breite, der man nicht
+// glaubt.
+const isBareNumeric = o => /^-?\d+([.,]\d+)?\s*(€|%|cm|mm|m|km|kg|g|s|min|h|°C|l|ml)?$/.test(o.trim());
 
 let totalFindings = 0;
 const summary = [];

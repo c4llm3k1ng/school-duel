@@ -1,0 +1,482 @@
+[
+  {
+    "correct": 1,
+    "explanation": "Algorithmus (nach al-Chwarizmi): muss terminieren (enden), eindeutig sein, ausführbar. Beispiele: Kochrezept, Bedienungsanleitung. In der Informatik: implementiert als Programm. Effizienz: Zeitkomplexität (O-Notation).",
+    "options": [
+      "Ein ausführbares Programm, das fertig übersetzt im Maschinencode eines Prozessors vorliegt",
+      "Eine endliche, eindeutige Folge von Anweisungen zur Lösung eines Problems",
+      "Ein formales Regelwerk aus Syntax und Semantik, mit dem Quelltext geschrieben wird",
+      "Eine Systemsoftware, die Hardware verwaltet und Programme zur Ausführung bringt"
+    ],
+    "question": "Was ist ein Algorithmus?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Strukturiertes Programmieren: Sequenz (Befehl1; Befehl2...), Selektion (if Bedingung then ... else ...), Iteration (while Bedingung do ...). Beweis (Böhm, Jacopini): alle Programme mit nur diesen 3 Strukturen realisierbar.",
+    "options": [
+      "Variable, Funktion und Klasse als Bausteine jedes strukturierten Programms",
+      "Sequenz, Selektion (Verzweigung) und Iteration (Schleife) als Bausteine jedes Programms",
+      "Daten, Quelltext und Ausgabe als Bausteine jedes strukturierten Programms",
+      "Eingabe, Verarbeitung und Ausgabe als Bausteine jedes strukturierten Programms"
+    ],
+    "question": "Was sind die drei Grundstrukturen der Programmierung?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Binär: Stelle hat Wert 2^n. 1010₂ = 1×8 + 0×4 + 1×2 + 0×1 = 10. Schaltkreise: 0 = kein Strom, 1 = Strom. Alle Daten (Text, Bild, Ton) werden als Bitmuster kodiert.",
+    "options": [
+      "Zahlensystem zur Basis 10 mit den Ziffern 0 bis 9, wie es im Alltag üblich ist",
+      "Zahlensystem zur Basis 2 mit ausschließlich den beiden Ziffern 0 und 1",
+      "Zeichensatz, der Buchstaben unmittelbar und ohne Zahlenwerte im Speicher ablegt",
+      "Zahlensystem zur Basis 16 mit den Ziffern 0 bis 9 und den Buchstaben A bis F"
+    ],
+    "question": "Was ist Binärcode?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Bit (binary digit): 0 oder 1. Byte = 8 Bit. Zeichen: ASCII (7 Bit, 128 Zeichen), UTF-8 (1-4 Byte, Unicode). 1 KB = 1024 B = 2¹⁰ B (nach IEC-Norm genauer: 1 KiB). 1 MB = 1024 KB. 1 GB = 1024 MB.",
+    "options": [
+      "Bit und Byte bezeichnen dieselbe Einheit, nur in unterschiedlichen Fachsprachen",
+      "Ein Bit ist die kleinste Informationseinheit (0 oder 1), ein Byte umfasst 8 Bit",
+      "Ein Bit umfasst 8 Byte, ein Byte ist dagegen die kleinste Informationseinheit",
+      "Ein Byte entspricht genau einem Bit, erst ein Kilobyte umfasst dann 8 Bit"
+    ],
+    "question": "Was ist ein Bit und ein Byte?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Hex: 0-9, A-F. FF₁₆ = 255₁₀ = 11111111₂. Farben: #FF0000 = Rot. Speicheradressen. Umrechnung: jede Hex-Ziffer = 4 Bit. 0x3A = 0011 1010₂ = 58₁₀.",
+    "options": [
+      "Zahlensystem zur Basis 8 mit den Ziffern 0 bis 7, auch Oktalsystem genannt",
+      "Zahlensystem zur Basis 16 mit den Ziffern 0 bis 9 und den Buchstaben A bis F",
+      "Zahlensystem zur Basis 2 mit den Ziffern 0 und 1, auch Dualsystem genannt",
+      "Zahlensystem zur Basis 10 mit den Ziffern 0 bis 9, auch Dezimalsystem genannt"
+    ],
+    "question": "Was ist das Hexadezimalsystem?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Variable: Name + Typ + Wert. int x = 5; (ganzzahlig). float y = 3.14; (Dezimalzahl). string name = \"Alice\"; (Text). bool aktiv = true; (wahr/falsch). Gültigkeitsbereich: lokal vs. global.",
+    "options": [
+      "Unveränderliche Konstanten, deren Wert nach der Festlegung nicht mehr änderbar ist",
+      "Benannte Speicherplätze mit Datentyp, deren Wert sich im Programm ändern kann",
+      "Kontrollstrukturen, die einen Anweisungsblock mehrfach hintereinander ausführen",
+      "Benannte Codeblöcke, die Parameter entgegennehmen und einen Wert zurückgeben"
+    ],
+    "question": "Was sind Variablen in der Programmierung?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Array: int zahlen[] = {1, 2, 3, 4, 5}. Zugriff: zahlen[0] = 1, zahlen[4] = 5. Länge fest (statisch). Vorteil: schneller Direktzugriff (O(1)). Nachteil: Größe muss vorher bekannt sein. Liste: dynamisch.",
+    "options": [
+      "Kontrollstruktur, die einen Anweisungsblock wiederholt, solange eine Bedingung gilt",
+      "Geordnete Sammlung gleichartiger Elemente mit Zugriff über einen Index",
+      "Logischer Ausdruck, der je nach Auswertung verschiedene Programmzweige auslöst",
+      "Schrittweise Vorschrift, die aus Eingabedaten ein eindeutiges Ergebnis berechnet"
+    ],
+    "question": "Was ist ein Array (Feld)?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Stack: Teller-Stapel. LIFO. Anwendung: Funktionsaufruf-Stack (call stack), Undo-Funktion, Klammerüberprüfung. push O(1), pop O(1). Überlauf (Stack Overflow): zu tiefe Rekursion.",
+    "options": [
+      "Datenstruktur nach dem FIFO-Prinzip: das zuerst abgelegte Element wird zuerst entnommen",
+      "Datenstruktur nach dem LIFO-Prinzip: das zuletzt abgelegte Element wird zuerst entnommen",
+      "Verfahren, das Elemente durch wiederholtes Vergleichen in eine Reihenfolge bringt",
+      "Hierarchische Datenstruktur aus Knoten mit einer Wurzel und untergeordneten Kindern"
+    ],
+    "question": "Was ist ein Stack (Stapel)?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Queue: Warteschlange im Supermarkt. FIFO. Anwendung: Druckerwarteschlange, Prozess-Scheduling im Betriebssystem, Breitensuche in Graphen. Enqueue O(1), Dequeue O(1).",
+    "options": [
+      "Datenstruktur nach dem LIFO-Prinzip mit den Operationen push, pop und peek",
+      "Datenstruktur nach dem FIFO-Prinzip mit den Operationen enqueue und dequeue",
+      "Hierarchische Datenstruktur aus Knoten, die über Kanten miteinander verbunden sind",
+      "Datenstruktur, die Werte über eine Streufunktion auf feste Speicherplätze verteilt"
+    ],
+    "question": "Was ist eine Queue (Warteschlange)?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Binärbaum: jeder Knoten hat max. 2 Kinder. Binärer Suchbaum (BST): links < Wurzel < rechts. Suche O(log n) im ausgeglichenen Baum. Anwendung: Dateisysteme, XML/HTML (DOM), Entscheidungsbäume.",
+    "options": [
+      "Lineare Sammlung gleichartiger Elemente mit Zugriff über einen Zahlenindex",
+      "Hierarchische Struktur aus Knoten und Kanten mit einer Wurzel und Blättern",
+      "Kontrollstruktur, die einen Anweisungsblock mehrfach hintereinander ausführt",
+      "Lineare Datenstruktur, bei der Elemente in Ankunftsreihenfolge entnommen werden"
+    ],
+    "question": "Was ist ein Baum als Datenstruktur?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Bubble Sort: n Durchläufe, jeweils n Vergleiche → O(n²). Anschaulich: große Elemente \"blubbern\" nach oben. Stabil (gleiche Elemente behalten Reihenfolge). Praxis: kaum verwendet. Besser: Quicksort O(n log n), Mergesort O(n log n).",
+    "options": [
+      "Sortierverfahren mit der Laufzeit O(n log n), das große Datenmengen sehr schnell ordnet",
+      "Einfaches Sortierverfahren, das benachbarte Elemente tauscht, Laufzeit O(n²)",
+      "Suchverfahren, das in sortierten Listen den mittleren Wert prüft und halbiert",
+      "Datenstruktur, die Elemente sortiert in einem ausgeglichenen Baum ablegt"
+    ],
+    "question": "Was ist Bubble Sort?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Binäre Suche: teile und herrsche. 1000 Elemente: max. 10 Vergleiche (log₂(1000) ≈ 10). vs. lineare Suche: bis zu 1000 Vergleiche. Voraussetzung: sortiertes Array. Anwendung: Wörterbuch, Telefonbuch, Datenbankindexe.",
+    "options": [
+      "Suchverfahren, das jedes Element von vorn nach hinten prüft, Laufzeit O(n)",
+      "Suchverfahren für sortierte Listen, das den Bereich halbiert, Laufzeit O(log n)",
+      "Suchverfahren, das den Speicherplatz über eine Streufunktion direkt berechnet",
+      "Suchverfahren in Graphen, das alle Nachbarknoten Ebene für Ebene abarbeitet"
+    ],
+    "question": "Was ist binäre Suche?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Internet: Arpanet (1969). Protokolle: TCP/IP, DNS, HTTP. Dienste: WWW, E-Mail, FTP, VoIP. Backbone: transatlantische Kabel, Satelliten. ISP (Internet Service Provider): Zugangsprovider. Weltweit mehrere Milliarden Nutzer.",
+    "options": [
+      "Ein zentraler Großrechner, auf dem alle Webseiten der Welt gespeichert sind",
+      "Weltweiter Verbund von Netzwerken, der über TCP/IP Daten zwischen Geräten austauscht",
+      "Der Dienst aus verlinkten Webseiten, die im Browser über HTTP abgerufen werden",
+      "Systemsoftware, die Rechner verwaltet und deren Netzwerkverbindungen aufbaut"
+    ],
+    "question": "Was ist das Internet?",
+    "topic": "Internet"
+  },
+  {
+    "correct": 1,
+    "explanation": "IPv4: 4 Oktette (0-255), z.B. 192.168.0.1. Ca. 4,3 Milliarden Adressen (zu wenig). IPv6: 128 Bit, rund 3,4·10³⁸ Adressen. NAT: mehrere Geräte teilen eine öffentliche IP. DNS: Übersetzt Domains in IP-Adressen.",
+    "options": [
+      "Menschenlesbarer Name eines Rechners, der erst über DNS aufgelöst werden muss",
+      "Eindeutige Netzadresse eines Geräts, als IPv4 mit 32 Bit oder IPv6 mit 128 Bit",
+      "Geheime Zeichenfolge, mit der sich ein Gerät beim Netzwerkzugang anmeldet",
+      "Weltweit eindeutige Hardwarekennung, die fest in der Netzwerkkarte gespeichert ist"
+    ],
+    "question": "Was ist eine IP-Adresse?",
+    "topic": "Internet"
+  },
+  {
+    "correct": 1,
+    "explanation": "TCP: verbindungsorientiert, Fehlerkorrektur, Reihenfolge sichergestellt (z.B. für Web, E-Mail). UDP: verbindungslos, schneller, Verlust möglich (z.B. Streaming, Gaming). IP: Adressierung und Weiterleitung. OSI-Modell: 7 Schichten.",
+    "options": [
+      "Systemsoftware, die die Hardware verwaltet und Netzwerkgeräte direkt ansteuert",
+      "Protokollfamilie des Internets: TCP sichert die Übertragung, IP regelt Adressierung",
+      "Formale Sprache, in der Netzwerkanwendungen und Serverdienste geschrieben werden",
+      "Containerformat, in dem Datenpakete für den Versand gespeichert werden"
+    ],
+    "question": "Was ist TCP/IP?",
+    "topic": "Internet"
+  },
+  {
+    "correct": 1,
+    "explanation": "HTTP: Port 80. HTTPS: Port 443, TLS-Verschlüsselung (Zertifikat). Methoden: GET (Daten abrufen), POST (Daten senden), PUT, DELETE. Statuscodes: 200 OK, 404 Not Found, 500 Server Error.",
+    "options": [
+      "Protokolle, mit denen E-Mails an einen Mailserver gesendet und abgerufen werden",
+      "Protokoll zur Übertragung von Webseiten, bei HTTPS zusätzlich per TLS verschlüsselt",
+      "Protokoll zur Übertragung ganzer Dateien zwischen Client und Dateiserver",
+      "Protokoll, das Domainnamen in die zugehörigen IP-Adressen der Server übersetzt"
+    ],
+    "question": "Was ist HTTP/HTTPS?",
+    "topic": "Internet"
+  },
+  {
+    "correct": 1,
+    "explanation": "Relationale DB (RDBMS): Tabellen (Relationen), Zeilen (Datensätze), Spalten (Attribute). Primärschlüssel (PK): eindeutige Identifikation. Fremdschlüssel (FK): Verknüpfung. ACID: Atomarität, Konsistenz, Isolation, Dauerhaftigkeit. Beispiele: MySQL, PostgreSQL, SQLite.",
+    "options": [
+      "Programm für Berechnungen in Zeilen und Spalten mit Formeln und Diagrammen",
+      "System zur strukturierten Speicherung und Abfrage großer Datenmengen, meist relational",
+      "Verfahren des Betriebssystems, das Dateien in Ordnern auf Datenträgern ablegt",
+      "Eindeutige Anweisungsfolge, die Eingabedaten Schritt für Schritt in Ergebnisse umwandelt"
+    ],
+    "question": "Was ist eine Datenbank?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "SQL: SELECT * FROM Kunden WHERE Stadt = 'Berlin'; INSERT INTO Produkte VALUES (1, 'Laptop', 999); UPDATE Preise SET Preis = 1099 WHERE ID = 1; DELETE FROM Altdaten WHERE Datum < '2020-01-01';",
+    "options": [
+      "Objektorientierte Programmiersprache zur Entwicklung von Desktop-Anwendungen",
+      "Abfragesprache für relationale Datenbanken mit Befehlen wie SELECT und INSERT",
+      "Systemsoftware, die einen Datenbankserver und dessen Hardware verwaltet",
+      "Auszeichnungssprache, die Daten hierarchisch in verschachtelten Tags strukturiert"
+    ],
+    "question": "Was ist SQL?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "KI: schwache KI (spezifische Aufgabe, z.B. Schach, Bilderkennung) vs. starke KI (allgemeine Intelligenz, hypothetisch). Teilgebiete: Maschinelles Lernen, Deep Learning, NLP, Computer Vision. Anwendungen: Sprachmodelle wie ChatGPT, Bilderkennung, autonomes Fahren.",
+    "options": [
+      "Teilgebiet des Maschinenbaus, das Roboter für die industrielle Fertigung konstruiert",
+      "Teilgebiet der Informatik, dessen Systeme menschliche Denk- und Lernleistungen nachbilden",
+      "Verfahren, das Suchbäume in Brettspielen bewertet und daraus den besten Zug wählt",
+      "Verfahren, das gesprochene Sprache in geschriebenen Text umwandelt und ausgibt"
+    ],
+    "question": "Was ist künstliche Intelligenz (KI)?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Überwachtes Lernen: Trainingsdaten mit Labels → Vorhersagemodell (Klassifikation, Regression). Unüberwacht: Clustering (k-Means), Dimensionsreduktion (PCA). Verstärkendes Lernen: Agent lernt durch Belohnung (AlphaGo).",
+    "options": [
+      "Verfahren, bei dem Fachleute alle Entscheidungsregeln vorab von Hand programmieren",
+      "Teilgebiet der KI, dessen Systeme Muster selbstständig aus Trainingsdaten lernen",
+      "Expertensystem, das aus einer festen Wissensbasis logische Schlüsse ableitet",
+      "Auswertung großer Datenbestände durch vorformulierte Datenbankabfragen"
+    ],
+    "question": "Was ist maschinelles Lernen?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Neuronales Netz: Input-Schicht → verdeckte Schichten (hidden layers) → Output-Schicht. Deep Learning: viele verdeckte Schichten. Aktivierungsfunktionen: ReLU, Sigmoid. Training: Gradient Descent + Backpropagation. Anwendung: Bilderkennung, Sprachmodelle.",
+    "options": [
+      "Physische Schaltkreise aus Transistoren, die im Prozessor die Rechenwerke bilden",
+      "Lernmodelle aus verbundenen Knotenschichten, deren Gewichte im Training angepasst werden",
+      "Speichersysteme, die Datensätze in Tabellen mit Schlüsselbeziehungen ablegen",
+      "Verfahren, die Datensätze durch wiederholtes Vergleichen in eine Reihenfolge bringen"
+    ],
+    "question": "Was sind neuronale Netze?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "DSGVO (Datenschutz-Grundverordnung, engl. GDPR): gilt in der gesamten EU. Personenbezogene Daten: Name, IP-Adresse, E-Mail, etc. Recht auf Vergessenwerden (Löschung). Bußgelder: bis 20 Mio. EUR oder 4% des weltweiten Jahresumsatzes, je nachdem, was höher ist.",
+    "options": [
+      "Deutsches Gesetz, das Mindestanforderungen an die Qualität von Software festlegt",
+      "EU-Verordnung von 2018 zum Schutz personenbezogener Daten mit Rechten und Pflichten",
+      "Industrienorm, die einheitliche Regeln für das Schreiben von Quelltext vorgibt",
+      "Internationaler technischer Standard für den verschlüsselten Datenverkehr im Netz"
+    ],
+    "question": "Was ist die DSGVO?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Symmetrisch: AES (Advanced Encryption Standard), ein Schlüssel für Ver- und Entschlüsselung, schnell. Asymmetrisch: RSA, Public Key (verschlüsseln) + Private Key (entschlüsseln), langsamer. HTTPS nutzt beides: asymmetrisch für Schlüsselaustausch, dann symmetrisch.",
+    "options": [
+      "Verringerung der Dateigröße, indem Wiederholungen im Datenstrom kürzer kodiert werden",
+      "Umwandlung von Klartext in Geheimtext, der nur mit dem passenden Schlüssel lesbar ist",
+      "Umwandlung von Daten in eine feste Prüfsumme, die sich nicht zurückrechnen lässt",
+      "Anhängen einer Signatur, die Urheber und Unverfälschtheit einer Datei nachweist"
+    ],
+    "question": "Was ist Verschlüsselung?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "OS (Operating System): Kernel = Kern des BS. Aufgaben: CPU-Scheduling, Speicher, Dateisystem, Gerätetreiber, Netzwerk. Multitasking: mehrere Prozesse scheinbar gleichzeitig. Shell: Benutzeroberfläche (CLI oder GUI).",
+    "options": [
+      "Programm, das Schadsoftware erkennt, blockiert und wieder vom System entfernt",
+      "Software, die die Hardware verwaltet und Anwendungen eine Ausführungsplattform bietet",
+      "Programm, das Webseiten anfordert, deren Code auswertet und am Bildschirm darstellt",
+      "Programm zum Erfassen und Bearbeiten von Texten und deren Speicherung in Dateien"
+    ],
+    "question": "Was ist ein Betriebssystem?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Compiler: Quellcode → Objektcode → Maschinenprogramm. Phasen: Lexer, Parser, Semantik, Optimierung, Code-Generierung. Beispiele: GCC (C/C++), javac (Java). Interpreter: Python, JavaScript (meist). JIT (Just-in-time): Kompilierung zur Laufzeit (Java, C#).",
+    "options": [
+      "Programm zum Schreiben und Bearbeiten von Quelltext mit Syntaxhervorhebung",
+      "Programm, das Quelltext vor der Ausführung vollständig in Maschinencode übersetzt",
+      "Programm, das laufende Software anhält, um Variablen und Fehler zu untersuchen",
+      "Programm, das Quelltext zur Laufzeit Zeile für Zeile liest und sofort ausführt"
+    ],
+    "question": "Was ist ein Compiler?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "OOP: Klasse = Bauplan. Objekt = Instanz. Kapselung: Daten verstecken (private). Vererbung: Unterklasse erbt von Oberklasse. Polymorphismus: gleiche Methode, verschiedene Implementierungen. Sprachen: Java, Python, C++, C#.",
+    "options": [
+      "Programmierstil, bei dem Anweisungen ohne jede Kontrollstruktur nacheinander stehen",
+      "Paradigma, das Daten und zugehörige Methoden in Klassen und Objekten zusammenfasst",
+      "Paradigma, das ein Programm als Folge von Prozeduren ohne Objekte aufbaut",
+      "Paradigma, das ein Programm als Auswertung zustandsloser Funktionen beschreibt"
+    ],
+    "question": "Was ist objektorientierte Programmierung (OOP)?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Firewall: Paketfilter (Layer 3/4), Stateful Inspection, Application-Layer-Firewall (WAF). Blockiert: Port-Scans, Angriffe von außen, unerlaubten ausgehenden Verkehr. Hardware-Firewall (Router) vs. Software-Firewall (z.B. die Windows-Firewall).",
+    "options": [
+      "System, das Dateien anhand von Signaturen und Verhalten auf Schadcode untersucht",
+      "System, das Netzwerkverkehr nach Regeln zu IP-Adressen, Ports und Protokollen filtert",
+      "System, das Daten vor dem Versand in unlesbaren Geheimtext umwandelt",
+      "System, das über einen verschlüsselten Tunnel eine entfernte Netzverbindung aufbaut"
+    ],
+    "question": "Was ist eine Firewall?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Cloud: On-Demand-Ressourcen, skalierbar, Pay-per-Use. IaaS: virtuelle Server (z.B. AWS EC2). PaaS: Entwicklungsplattform (z.B. Heroku). SaaS: fertige Software (z.B. Microsoft 365, Google Docs). Vorteile: Flexibilität, kein eigener Server.",
+    "options": [
+      "Software, die Wetterdaten auswertet und daraus Vorhersagemodelle berechnet",
+      "Bereitstellung von Speicher, Rechenleistung und Software über das Internet",
+      "Systemsoftware, die mehrere virtuelle Maschinen auf einem Rechner verwaltet",
+      "Speicherung sämtlicher Daten auf Geräten und Servern im eigenen Haus"
+    ],
+    "question": "Was ist Cloud Computing?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Rekursion: f(n) = n · f(n-1) (Fakultät). Basisfall: f(0) = 1. Aufrufstapel (Call Stack): jeder Aufruf auf dem Stack. Stack Overflow: zu tiefe Rekursion. Anwendung: Fibonacci, Baumtraversierung, Divide-and-Conquer (Quicksort, Mergesort).",
+    "options": [
+      "Wiederholung eines Anweisungsblocks mit Zählvariable und fest vorgegebener Schrittzahl",
+      "Aufruf einer Funktion durch sich selbst, mit Basisfall und rekursivem Fall",
+      "Schleife ohne erfüllbare Abbruchbedingung, die deshalb endlos weiterläuft",
+      "Zusammenfassen von Daten und Methoden zu wiederverwendbaren Objekten"
+    ],
+    "question": "Was ist Rekursion?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "API: REST-API (HTTP, JSON/XML, zustandslos), SOAP, GraphQL. Beispiel: Wetter-API gibt JSON zurück mit Temperatur, Niederschlag. OAuth: Anmeldung über fremde Dienste (Google-/Facebook-Login). SDK: Software Development Kit mit APIs.",
+    "options": [
+      "System, das Datensätze strukturiert speichert und für spätere Abfragen bereithält",
+      "Schnittstelle, über die Programme definierte Funktionen und Daten austauschen",
+      "Software, die die Hardware verwaltet und Programmen Systemdienste bereitstellt",
+      "Formales Regelwerk aus Syntax und Befehlen zum Schreiben von Programmen"
+    ],
+    "question": "Was ist eine API?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Cookies: RFC 6265. Session-Cookie: bis Browser-Schließung. Persistent: Ablaufdatum gesetzt. Third-Party: siteübergreifendes Tracking (Werbung). DSGVO: Cookie-Einwilligung Pflicht. Alternativ: localStorage, sessionStorage.",
+    "options": [
+      "Ausführbare Dateien, die ein Server startet, um Schadcode auf dem Gerät einzuschleusen",
+      "Kleine Textdateien, die ein Webserver im Browser ablegt, etwa für Login oder Tracking",
+      "Verschlüsselt gespeicherte Zugangsdaten, die der Browser für Formulare bereithält",
+      "Zwischengespeicherte Bild- und Skriptdateien, die Seiten schneller laden lassen"
+    ],
+    "question": "Was sind Cookies im Internet?",
+    "topic": "Internet"
+  },
+  {
+    "correct": 1,
+    "explanation": "Open Source: Quellcode zugänglich. GPL: Änderungen müssen auch Open Source bleiben (Copyleft). MIT/Apache: auch in kommerzielle Produkte einbindbar. Vorteil: Transparenz, Community, Kosten. Linux läuft auf einem Großteil der Server weltweit.",
+    "options": [
+      "Software, die kostenlos nutzbar ist, deren Quelltext aber geheim gehalten wird",
+      "Software, deren Quelltext offen einsehbar, nutzbar und meist auch veränderbar ist",
+      "Software, deren Nutzung und Weitergabe der Hersteller per Lizenz stark einschränkt",
+      "Software, die für eine Testphase kostenlos ist und danach bezahlt werden muss"
+    ],
+    "question": "Was ist Open Source Software?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Bug (Käfer): Grace Hopper fand 1947 echten Käfer in Relais (Legende). Fehlertypen: Syntaxfehler (Compiler), Laufzeitfehler (Ausnahme), Logikfehler (falsche Ausgabe). Debugging: Haltepunkte (Breakpoints), Schritt-für-Schritt-Ausführung, Variablen überwachen.",
+    "options": [
+      "Schadprogramm, das sich selbst vervielfältigt und dabei andere Dateien infiziert",
+      "Bug: Fehler im Code mit unerwartetem Verhalten; Debugging: dessen Suche und Behebung",
+      "Schwachstelle, über die Angreifer unbefugt in ein fremdes System eindringen können",
+      "Defekt an einem Bauteil des Rechners, der zum Ausfall des Systems führt"
+    ],
+    "question": "Was ist ein Bug und Debugging?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Datenschutz: informationelle Selbstbestimmung (Grundrecht). Technisch: Datensparsamkeit (nur nötige Daten), Pseudonymisierung (statt Name: ID), Anonymisierung (kein Rückschluss). Datenpanne: Meldepflicht innerhalb 72 Stunden (DSGVO).",
+    "options": [
+      "Sicherung von Dateien durch regelmäßige Kopien, um Verlust bei Defekten zu vermeiden",
+      "Schutz personenbezogener Daten vor unbefugtem Zugriff, Missbrauch und Verlust",
+      "Filterung des Netzwerkverkehrs nach festgelegten Regeln und freigegebenen Ports",
+      "Absicherung von IT-Systemen gegen Ausfall, Manipulation und Angriffe von außen"
+    ],
+    "question": "Was ist Datenschutz in der Informatik?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "LAN: Local Area Network (Heim, Büro). WAN: Wide Area Network (Internet). WLAN: IEEE 802.11 (Wi-Fi). Topologien: Stern (Switch im Zentrum, üblich), Bus (veraltet), Masche (redundant, resilient). Switch vs. Router: Switch (Layer 2), Router (Layer 3).",
+    "options": [
+      "Ein einzelner Rechner, der mehrere Programme scheinbar gleichzeitig ausführt",
+      "Verbund von Geräten, die Daten austauschen, etwa als LAN, WLAN oder WAN",
+      "Vereinbarte Regeln, nach denen Geräte Daten formatieren und übertragen",
+      "Zentraler Rechner, der Daten und Dienste für angeschlossene Arbeitsplätze bereitstellt"
+    ],
+    "question": "Was ist ein Netzwerk?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Kernel: schützt Hardware vor Programmen (Kernel-Mode vs. User-Mode). Systemaufrufe (syscalls): open(), read(), write(), fork(). Linux-Kernel: monolithisch, modular. Mikrokernel: nur Basis im Kernelmodus (Sicherheit). Windows NT: hybride Architektur.",
+    "options": [
+      "Programmschicht, über die der Nutzer das System per Fenster oder Kommandozeile bedient",
+      "Kern des Betriebssystems, der die Hardware verwaltet und Systemaufrufe bereitstellt",
+      "Programmbaustein, der ein bestimmtes Gerät für das Betriebssystem ansteuerbar macht",
+      "Programm, das im Benutzermodus läuft und eine Aufgabe für den Nutzer erledigt"
+    ],
+    "question": "Was ist ein Betriebssystem-Kernel?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Verlustfrei: Huffman-Kodierung (häufige Zeichen kurze Codes), Run-Length-Encoding, Lempel-Ziv (ZIP). Verlustbehaftet: JPEG (DCT, Quantisierung), MP3 (Psychoakustik – unhörbare Töne weglassen). Kompressionsrate: unkomprimiert/komprimiert.",
+    "options": [
+      "Umwandlung von Daten in Geheimtext, der nur mit passendem Schlüssel lesbar ist",
+      "Verringerung der Datenmenge, verlustfrei wie bei ZIP oder verlustbehaftet wie bei JPEG",
+      "Umordnung von Datenbanktabellen und Indizes, um Abfragen zu beschleunigen",
+      "Anfertigung zusätzlicher Kopien, um Daten nach einem Defekt wiederherzustellen"
+    ],
+    "question": "Was ist Datenkompression?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "Phishing: gefälschte Bankseite, dringende Aufforderung (Social Engineering). Spear Phishing: gezielt auf Person. Smishing: per SMS. Schutz: URL prüfen, kein Klick auf Links in E-Mails, 2-Faktor-Authentifizierung. Ein Großteil aller Cyberangriffe beginnt mit Phishing.",
+    "options": [
+      "Abhören fremden Datenverkehrs in einem offenen Netz mit einem Mitschnittprogramm",
+      "Betrug mit gefälschten Mails oder Webseiten, um Zugangsdaten der Nutzer zu erbeuten",
+      "Überlastung eines Servers durch massenhafte Anfragen bis hin zum Ausfall",
+      "Massenhafter Versand unerwünschter Werbemails ohne betrügerische Absicht"
+    ],
+    "question": "Was ist Phishing?",
+    "topic": "Informatik"
+  },
+  {
+    "correct": 1,
+    "explanation": "WWW: Tim Berners-Lee (CERN, 1989/1991). Hyperlinks verbinden Dokumente. HTML: Auszeichnungssprache für Webseiten. URL: Adresse einer Seite. Browser: Chrome, Firefox, Safari. WWW ist nur ein Dienst des Internets (neben E-Mail, FTP, etc.).",
+    "options": [
+      "Der weltweite Netzwerkverbund selbst, über den sämtliche Datendienste laufen",
+      "Dienst aus verlinkten Webseiten, die per HTTP im Browser abgerufen werden",
+      "Dienst zum Versenden und Empfangen von Nachrichten zwischen Mailservern",
+      "Regelwerk, das Aufbau und Ablauf einer Datenübertragung im Netz festlegt"
+    ],
+    "question": "Was ist das World Wide Web (WWW)?",
+    "topic": "Internet"
+  },
+  {
+    "correct": 1,
+    "explanation": "Prozess: PCB (Process Control Block) enthält Zustand, Register, Speicherbereiche. Zustände: Ready, Running, Blocked (wartend). Thread: leichtgewichtiger Prozess (teilt Speicher). Scheduling: Round-Robin, Priority-Based, FCFS.",
+    "options": [
+      "Ein Programm, das als ausführbare Datei auf dem Datenträger gespeichert ist",
+      "Ein laufendes Programm im Arbeitsspeicher mit eigenem Speicherbereich und Zustand",
+      "Ein Ausführungsstrang, der sich den Speicherbereich mit anderen Strängen teilt",
+      "Eine Gerätekomponente, die das Betriebssystem über einen Treiber ansteuert"
+    ],
+    "question": "Was ist ein Prozess im Betriebssystem?",
+    "topic": "Informatik"
+  }
+]
