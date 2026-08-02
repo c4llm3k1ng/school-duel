@@ -1,0 +1,1416 @@
+{
+  "LEICHT": [
+    {
+      "index": 0,
+      "question": "Wie viele Spieler einer Mannschaft stehen beim Fußball gleichzeitig auf dem Feld?",
+      "correct": 2,
+      "answer": "11",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "explanation": "Eine Mannschaft besteht aus 10 Feldspielern plus einem Torwart, also 11 Spielern.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 9,
+      "question": "Wie viele Tore braucht man für einen 'Doppelpack'?",
+      "correct": 1,
+      "answer": "2",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explanation": "Ein Doppelpack bezeichnet zwei Tore eines Spielers in einem Spiel.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 23,
+      "question": "Wie viele Auswechslungen sind in einem regulären Pflichtspiel meist erlaubt?",
+      "correct": 2,
+      "answer": "5",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "Unbegrenzt"
+      ],
+      "explanation": "Seit 2020 sind in den meisten Wettbewerben fünf Auswechslungen erlaubt.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 28,
+      "question": "Wie heißt der größte Fußball-Wettbewerb für Vereine in Europa?",
+      "correct": 1,
+      "answer": "Champions League",
+      "options": [
+        "Europa League",
+        "Champions League",
+        "Conference League",
+        "Supercup"
+      ],
+      "explanation": "Die UEFA Champions League ist der bedeutendste europäische Vereinswettbewerb.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"europa\")"
+      ]
+    },
+    {
+      "index": 37,
+      "question": "Wie viele Halbzeiten hat ein Fußballspiel?",
+      "correct": 1,
+      "answer": "2",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explanation": "Ein Fußballspiel hat zwei Halbzeiten mit einer Pause dazwischen.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 43,
+      "question": "Was ist Abseits?",
+      "correct": 1,
+      "answer": "Eine Stellung näher am gegnerischen Tor als der Ball und vorletzte Gegner",
+      "options": [
+        "Ein Foul",
+        "Eine Stellung näher am gegnerischen Tor als der Ball und vorletzte Gegner",
+        "Ein Handspiel",
+        "Ein Einwurf"
+      ],
+      "explanation": "Abseits liegt vor, wenn ein Angreifer bei Ballabgabe näher zur Torlinie steht als Ball und vorletzter Verteidiger.",
+      "issues": [
+        "Fragetext zu kurz (<20 Zeichen)"
+      ]
+    },
+    {
+      "index": 49,
+      "question": "Wie viele Punkte gibt es für ein Unentschieden?",
+      "correct": 1,
+      "answer": "1",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "explanation": "Ein Unentschieden bringt beiden Mannschaften je einen Punkt.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 53,
+      "question": "Welcher katalanische Topklub ist der Erzrivale von Real Madrid und spielt in Blaugrana?",
+      "correct": 2,
+      "answer": "FC Barcelona",
+      "options": [
+        "Real Madrid",
+        "Atlético Madrid",
+        "FC Barcelona",
+        "FC Sevilla"
+      ],
+      "explanation": "Der FC Barcelona ist der Erzrivale von Real Madrid. Der Verein ist für seinen Angriffsfußball und Spieler wie Messi, Xavi und Iniesta bekannt.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"madrid\"), Option 1 (\"madrid\")"
+      ]
+    },
+    {
+      "index": 64,
+      "question": "Welcher Wettbewerb ist der wichtigste Pokal im deutschen Fußball?",
+      "correct": 1,
+      "answer": "DFB-Pokal",
+      "options": [
+        "DFL-Supercup",
+        "DFB-Pokal",
+        "Ligapokal",
+        "Hallenpokal"
+      ],
+      "explanation": "Der DFB-Pokal ist der wichtigste nationale Pokalwettbewerb in Deutschland.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"pokal\")"
+      ]
+    },
+    {
+      "index": 77,
+      "question": "Wie viele Tore fielen im WM-Finale 2022 nach 120 Minuten?",
+      "correct": 2,
+      "answer": "6",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "3"
+      ],
+      "explanation": "Das Finale endete 3:3 nach Verlängerung, Argentinien gewann im Elfmeterschießen.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 83,
+      "question": "Wie viele WM-Titel hat Deutschland gewonnen?",
+      "correct": 2,
+      "answer": "4",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "explanation": "Deutschland gewann viermal die WM: 1954, 1974, 1990 und 2014.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 86,
+      "question": "Was bedeutet ein 'Treffer ins eigene Tor' für die Statistik?",
+      "correct": 1,
+      "answer": "Tor für den Gegner",
+      "options": [
+        "Tor für die eigene Mannschaft",
+        "Tor für den Gegner",
+        "Kein Tor",
+        "Ein halber Punkt"
+      ],
+      "explanation": "Ein Eigentor zählt als Tor für die gegnerische Mannschaft.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"eigene\")"
+      ]
+    },
+    {
+      "index": 88,
+      "question": "Wer ist Kapitän, wenn der eigentliche Kapitän ausgewechselt wird?",
+      "correct": 1,
+      "answer": "Der Vize-Kapitän",
+      "options": [
+        "Der Torwart immer",
+        "Der Vize-Kapitän",
+        "Der jüngste Spieler",
+        "Der Trainer"
+      ],
+      "explanation": "Wird der Kapitän ausgewechselt, übernimmt der Vize-Kapitän die Binde.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"kapitän\")"
+      ]
+    },
+    {
+      "index": 96,
+      "question": "Welche Karte gibt es bei einer Verwarnung?",
+      "correct": 1,
+      "answer": "Gelbe Karte",
+      "options": [
+        "Rote Karte",
+        "Gelbe Karte",
+        "Grüne Karte",
+        "Blaue Karte"
+      ],
+      "explanation": "Bei einer Verwarnung zeigt der Schiedsrichter die Gelbe Karte.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"karte\"), Option 1 (\"karte\"), Option 2 (\"karte\"), Option 3 (\"karte\")"
+      ]
+    },
+    {
+      "index": 108,
+      "question": "Was passiert bei Gleichstand nach 90 Minuten im K.-o.-Spiel?",
+      "correct": 1,
+      "answer": "Es gibt Verlängerung und ggf. Elfmeterschießen",
+      "options": [
+        "Das Spiel endet unentschieden",
+        "Es gibt Verlängerung und ggf. Elfmeterschießen",
+        "Das Heimteam gewinnt",
+        "Es wird wiederholt"
+      ],
+      "explanation": "Bei K.-o.-Spielen folgt bei Gleichstand Verlängerung und danach Elfmeterschießen.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"spiel\")"
+      ]
+    },
+    {
+      "index": 115,
+      "question": "Wie nennt man die Verlängerung im Fußball?",
+      "correct": 2,
+      "answer": "Verlängerung",
+      "options": [
+        "Overtime",
+        "Extra-Zeit",
+        "Verlängerung",
+        "Nachspielzeit"
+      ],
+      "explanation": "Die Verlängerung besteht aus zweimal 15 Minuten bei Gleichstand im K.-o.-Spiel.",
+      "issues": [
+        "Antwort-Leak: Option 2 (\"verlängerung\")"
+      ]
+    },
+    {
+      "index": 125,
+      "question": "Welche Nation gewann die WM 1990 in Italien?",
+      "correct": 1,
+      "answer": "Deutschland",
+      "options": [
+        "Argentinien",
+        "Deutschland",
+        "Italien",
+        "Brasilien"
+      ],
+      "explanation": "Deutschland gewann 1990 das Finale gegen Argentinien mit 1:0.",
+      "issues": [
+        "Antwort-Leak: Option 2 (\"italien\")"
+      ]
+    },
+    {
+      "index": 133,
+      "question": "Wie viele Spieler darf eine Mannschaft mindestens auf dem Feld haben?",
+      "correct": 1,
+      "answer": "7",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "explanation": "Sinkt eine Mannschaft unter 7 Spieler, wird das Spiel abgebrochen.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 166,
+      "question": "Welcher Spieler wird 'Pichichi' der La Liga genannt?",
+      "correct": 1,
+      "answer": "Der Torschützenkönig",
+      "options": [
+        "Der beste Torwart",
+        "Der Torschützenkönig",
+        "Der beste Verteidiger",
+        "Der Spieler des Jahres"
+      ],
+      "explanation": "Die 'Pichichi'-Trophäe geht an den Torschützenkönig der La Liga.",
+      "issues": [
+        "Antwort-Leak: Option 3 (\"spieler\")"
+      ]
+    },
+    {
+      "index": 173,
+      "question": "Wie heißt der Hauptschiedsrichter-Assistent an der Seitenlinie?",
+      "correct": 1,
+      "answer": "Linienrichter/Assistent",
+      "options": [
+        "Vierter Offizieller",
+        "Linienrichter/Assistent",
+        "VAR",
+        "Stadionsprecher"
+      ],
+      "explanation": "Die Assistenten an der Seitenlinie achten auf Abseits und Aus.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"assistent\")"
+      ]
+    },
+    {
+      "index": 175,
+      "question": "Welcher Spieler trägt bei Argentinien die berühmte Nummer 10 nach Maradona und Messi?",
+      "correct": 1,
+      "answer": "Lionel Messi",
+      "options": [
+        "Paulo Dybala",
+        "Lionel Messi",
+        "Sergio Agüero",
+        "Ángel Di María"
+      ],
+      "explanation": "Lionel Messi trägt die Nummer 10 der argentinischen Nationalmannschaft.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"messi\")"
+      ]
+    },
+    {
+      "index": 178,
+      "question": "Wie viele Teams steigen meist direkt aus der Bundesliga ab?",
+      "correct": 1,
+      "answer": "2",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explanation": "Zwei Teams steigen direkt ab, ein drittes spielt in der Relegation.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 190,
+      "question": "Welcher Spieler wird wegen seiner Schnelligkeit oft mit einem Tier verglichen?",
+      "correct": 1,
+      "answer": "Einem Geparden",
+      "options": [
+        "Einer Schildkröte",
+        "Einem Geparden",
+        "Einem Elefanten",
+        "Einem Bären"
+      ],
+      "explanation": "Kylian Mbappé wird wegen seiner enormen Schnelligkeit oft mit einem Geparden verglichen.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"einem\"), Option 2 (\"einem\"), Option 3 (\"einem\")"
+      ]
+    },
+    {
+      "index": 193,
+      "question": "Wie nennt man die Sperre eines Spielers nach Roter Karte?",
+      "correct": 1,
+      "answer": "Sperre",
+      "options": [
+        "Strafe",
+        "Sperre",
+        "Verwarnung",
+        "Ausschluss"
+      ],
+      "explanation": "Nach einer Roten Karte erhält ein Spieler meist eine Sperre für weitere Spiele.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"sperre\")"
+      ]
+    },
+    {
+      "index": 204,
+      "question": "Wie viele gelbe Karten führen zu einer Roten Karte?",
+      "correct": 1,
+      "answer": "2",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explanation": "Zwei Gelbe Karten in einem Spiel ergeben Gelb-Rot und damit den Platzverweis.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 207,
+      "question": "Welcher Spieler wird 'Der Tank' oder 'Erling' genannt und spielt für Manchester City?",
+      "correct": 1,
+      "answer": "Erling Haaland",
+      "options": [
+        "Phil Foden",
+        "Erling Haaland",
+        "Julián Álvarez",
+        "Jack Grealish"
+      ],
+      "explanation": "Erling Haaland ist der norwegische Torjäger von Manchester City.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"erling\")"
+      ]
+    },
+    {
+      "index": 219,
+      "question": "Welche Mannschaft gewann die WM 1962 in Chile?",
+      "correct": 1,
+      "answer": "Brasilien",
+      "options": [
+        "Tschechoslowakei",
+        "Brasilien",
+        "Chile",
+        "Ungarn"
+      ],
+      "explanation": "Brasilien gewann 1962 das Finale gegen die Tschechoslowakei mit 3:1.",
+      "issues": [
+        "Antwort-Leak: Option 2 (\"chile\")"
+      ]
+    },
+    {
+      "index": 221,
+      "question": "Wie nennt man das Spiel um Platz 3 bei der WM?",
+      "correct": 1,
+      "answer": "Spiel um Platz 3",
+      "options": [
+        "Trostfinale",
+        "Spiel um Platz 3",
+        "Halbfinale",
+        "Vorrunde"
+      ],
+      "explanation": "Die beiden Halbfinal-Verlierer spielen um Platz 3.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"spiel\")"
+      ]
+    },
+    {
+      "index": 240,
+      "question": "Welche Mannschaft gewann die EM 1996 in England?",
+      "correct": 1,
+      "answer": "Deutschland",
+      "options": [
+        "England",
+        "Deutschland",
+        "Tschechien",
+        "Frankreich"
+      ],
+      "explanation": "Deutschland gewann die EM 1996 im Finale gegen Tschechien durch ein Golden Goal.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"england\")"
+      ]
+    },
+    {
+      "index": 253,
+      "question": "Wie viele Ballon-d'Or-Titel hat Cristiano Ronaldo?",
+      "correct": 2,
+      "answer": "5",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "explanation": "Cristiano Ronaldo gewann fünfmal den Ballon d'Or.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 268,
+      "question": "Was ist ein 'Rückpass' zum Torwart?",
+      "correct": 1,
+      "answer": "Torwart darf ihn nicht mit der Hand aufnehmen",
+      "options": [
+        "Immer erlaubt mit Hand",
+        "Torwart darf ihn nicht mit der Hand aufnehmen",
+        "Immer ein Foul",
+        "Ein Tor"
+      ],
+      "explanation": "Bei einem absichtlichen Rückpass mit dem Fuß darf der Torwart den Ball nicht mit der Hand nehmen.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"torwart\")"
+      ]
+    },
+    {
+      "index": 269,
+      "question": "Welche Mannschaft gewann die WM 2006 in Deutschland?",
+      "correct": 1,
+      "answer": "Italien",
+      "options": [
+        "Frankreich",
+        "Italien",
+        "Deutschland",
+        "Portugal"
+      ],
+      "explanation": "Italien gewann 2006 das Finale gegen Frankreich im Elfmeterschießen.",
+      "issues": [
+        "Antwort-Leak: Option 2 (\"deutschland\")"
+      ]
+    },
+    {
+      "index": 278,
+      "question": "Welcher spanische Mittelfeldspieler des FC Barcelona gilt als einer der kreativsten Spieler seiner Generation und prägte das Tiki-Taka-System?",
+      "correct": 0,
+      "answer": "kreative Mittelfeldspieler",
+      "options": [
+        "kreative Mittelfeldspieler",
+        "Stürmer",
+        "Torhüter",
+        "Verteidiger"
+      ],
+      "explanation": "Andrés Iniesta trägt den Spitznamen 'El Ilusionista' (Der Zauberer) und schoss das Siegtor im WM-Finale 2010.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"mittelfeldspieler\")"
+      ]
+    },
+    {
+      "index": 279,
+      "question": "Welche Mannschaft gewann die WM 2002 gemeinsam ausgerichtet in Japan/Südkorea?",
+      "correct": 1,
+      "answer": "Brasilien",
+      "options": [
+        "Deutschland",
+        "Brasilien",
+        "Türkei",
+        "Südkorea"
+      ],
+      "explanation": "Brasilien gewann die WM 2002, die erstmals in Asien stattfand.",
+      "issues": [
+        "Antwort-Leak: Option 3 (\"südkorea\")"
+      ]
+    },
+    {
+      "index": 280,
+      "question": "Welcher Hamburger Fußballverein trägt den Spitznamen 'Kiezklub' und ist bekannt für seine linke Fankultur?",
+      "correct": 0,
+      "answer": "FC St. Pauli",
+      "options": [
+        "FC St. Pauli",
+        "Hamburger SV",
+        "Holstein Kiel",
+        "FC Hansa Rostock"
+      ],
+      "explanation": "Der FC St. Pauli aus dem Hamburger Stadtteil St. Pauli wird 'Kiezklub' genannt und ist für seine besondere Fankultur bekannt.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"hamburger\")"
+      ]
+    },
+    {
+      "index": 316,
+      "question": "Wie heißt der jüngere Bruder von Weltmeister Toni Kroos, der ebenfalls Profi-Fußballer wurde?",
+      "correct": 0,
+      "answer": "Felix Kroos",
+      "options": [
+        "Felix Kroos",
+        "Kevin Kroos",
+        "Marco Kroos",
+        "Lars Kroos"
+      ],
+      "explanation": "Felix Kroos ist der jüngere Bruder von Toni Kroos und spielte ebenfalls in der Bundesliga, allerdings ohne die gleiche Bekanntheit zu erreichen.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"kroos\"), Option 1 (\"kroos\"), Option 2 (\"kroos\"), Option 3 (\"kroos\")"
+      ]
+    },
+    {
+      "index": 334,
+      "question": "Wie viele Spieler stehen bei einem Fußballspiel pro Mannschaft auf dem Feld?",
+      "correct": 1,
+      "answer": "11",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "9"
+      ],
+      "explanation": "Jede Mannschaft stellt 11 Spieler auf dem Feld auf, darunter ein Torwart.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 337,
+      "question": "Was versteht man unter einem Hattrick?",
+      "correct": 1,
+      "answer": "Drei Tore eines Spielers in einem Spiel",
+      "options": [
+        "Drei Gelbe Karten in Folge",
+        "Drei Tore eines Spielers in einem Spiel",
+        "Ein Tor in der Verlängerung",
+        "Ein verwandelter Elfmeter"
+      ],
+      "explanation": "Ein Hattrick bezeichnet drei Tore desselben Spielers in einem einzigen Spiel.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"einem\")"
+      ]
+    },
+    {
+      "index": 341,
+      "question": "Welcher Verein trägt seine Heimspiele in der Allianz Arena in München aus?",
+      "correct": 2,
+      "answer": "FC Bayern München",
+      "options": [
+        "Borussia Dortmund",
+        "Schalke 04",
+        "FC Bayern München",
+        "Bayer Leverkusen"
+      ],
+      "explanation": "Der FC Bayern München spielt seit 2005 in der Allianz Arena, die rund 75.000 Zuschauer fasst.",
+      "issues": [
+        "Antwort-Leak: Option 2 (\"münchen\")"
+      ]
+    },
+    {
+      "index": 362,
+      "question": "Wie viele Punkte erhält eine Mannschaft für einen Sieg in der Bundesliga?",
+      "correct": 2,
+      "answer": "3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explanation": "Für einen Sieg gibt es 3 Punkte, für ein Unentschieden je 1 Punkt und für eine Niederlage 0 Punkte.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 365,
+      "question": "In welchem Bundesland liegt der FC Bayern München?",
+      "correct": 2,
+      "answer": "Bayern",
+      "options": [
+        "Baden-Württemberg",
+        "Nordrhein-Westfalen",
+        "Bayern",
+        "Hessen"
+      ],
+      "explanation": "Der FC Bayern München ist in der bayerischen Landeshauptstadt München beheimatet.",
+      "issues": [
+        "Antwort-Leak: Option 2 (\"bayern\")"
+      ]
+    },
+    {
+      "index": 367,
+      "question": "Wie viele Ballon-d'Or-Auszeichnungen hat Lionel Messi gewonnen?",
+      "correct": 3,
+      "answer": "8",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "explanation": "Lionel Messi gewann den Ballon d'Or bereits achtmal und ist damit der Rekordhalter dieser Auszeichnung.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 369,
+      "question": "Wie nennt man das Derby zwischen Borussia Dortmund und dem FC Schalke 04?",
+      "correct": 1,
+      "answer": "Revierderby",
+      "options": [
+        "Klassiker",
+        "Revierderby",
+        "Ruhrpott-Kracher",
+        "Westdeutsches Derby"
+      ],
+      "explanation": "Das 'Revierderby' zwischen BVB und Schalke ist eines der leidenschaftlichsten Stadtduelle Deutschlands.",
+      "issues": [
+        "Antwort-Leak: Option 3 (\"derby\")"
+      ]
+    },
+    {
+      "index": 371,
+      "question": "Wie nennt man die zweite höchste Spielklasse im deutschen Fußball?",
+      "correct": 0,
+      "answer": "2. Bundesliga",
+      "options": [
+        "2. Bundesliga",
+        "Regionalliga",
+        "Oberliga",
+        "Zweite Liga"
+      ],
+      "explanation": "Die 2. Bundesliga ist die direkt unterhalb der Bundesliga angesiedelte Spielklasse in Deutschland.",
+      "issues": [
+        "Antwort-Leak: Option 3 (\"zweite\")"
+      ]
+    },
+    {
+      "index": 394,
+      "question": "Wie heißt der Wettbewerb, bei dem Vereinsmannschaften aus ganz Europa um den zweitwichtigsten Titel kämpfen?",
+      "correct": 1,
+      "answer": "UEFA Europa League",
+      "options": [
+        "UEFA Nations League",
+        "UEFA Europa League",
+        "UEFA Conference League",
+        "Intertoto Cup"
+      ],
+      "explanation": "Die UEFA Europa League ist nach der Champions League der bedeutendste europäische Vereinswettbewerb.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"europa\")"
+      ]
+    },
+    {
+      "index": 397,
+      "question": "In welcher Stadt befindet sich das Bernabéu-Stadion von Real Madrid?",
+      "correct": 3,
+      "answer": "Madrid",
+      "options": [
+        "Barcelona",
+        "Bilbao",
+        "Sevilla",
+        "Madrid"
+      ],
+      "explanation": "Das Santiago-Bernabéu-Stadion liegt in der spanischen Hauptstadt Madrid und ist das Heimstadion von Real Madrid.",
+      "issues": [
+        "Antwort-Leak: Option 3 (\"madrid\")"
+      ]
+    },
+    {
+      "index": 402,
+      "question": "Wie oft darf ein Team in einem Pflichtspiel (Bundesliga) pro Spiel auswechseln?",
+      "correct": 1,
+      "answer": "Fünfmal",
+      "options": [
+        "Dreimal",
+        "Fünfmal",
+        "Siebenmal",
+        "Unbegrenzt"
+      ],
+      "explanation": "In der Bundesliga dürfen Teams fünf Auswechslungen pro Spiel vornehmen – eine Regelung, die seit 2020 gilt.",
+      "issues": [
+        "Klammer im Fragetext"
+      ]
+    },
+    {
+      "index": 404,
+      "question": "Wofür steht die Abkürzung 'BVB' beim Verein aus Dortmund?",
+      "correct": 1,
+      "answer": "Ballspielverein Borussia",
+      "options": [
+        "Ballverein Vereinigung Bochum",
+        "Ballspielverein Borussia",
+        "Bonner Verein Bundesliga",
+        "Berliner Vereins-Bund"
+      ],
+      "explanation": "BVB steht für 'Ballspielverein Borussia 09 e.V. Dortmund', gegründet am 19. Dezember 1909.",
+      "issues": [
+        "Antwort-Leak: Option 2 (\"verein\")"
+      ]
+    },
+    {
+      "index": 414,
+      "question": "Wie heißt der Wettbewerb, bei dem die deutschen Fußballvereine um einen nationalen Pokal spielen?",
+      "correct": 1,
+      "answer": "DFB-Pokal",
+      "options": [
+        "Bundespokal",
+        "DFB-Pokal",
+        "Landeskönig",
+        "Nationalpokal"
+      ],
+      "explanation": "Der DFB-Pokal ist der nationale Fußball-Pokalwettbewerb in Deutschland und wird vom Deutschen Fußball-Bund ausgetragen.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"pokal\")"
+      ]
+    }
+  ],
+  "MITTEL": [
+    {
+      "index": 9,
+      "question": "Wie viele Spieler einer Mannschaft müssen mindestens auf dem Feld sein, damit gespielt wird?",
+      "correct": 1,
+      "answer": "7",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "explanation": "Mit weniger als 7 Spielern wird ein Spiel abgebrochen.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 27,
+      "question": "Wie viele EM-Titel hat Deutschland gewonnen?",
+      "correct": 1,
+      "answer": "3",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "explanation": "Deutschland gewann dreimal die EM: 1972, 1980 und 1996.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 51,
+      "question": "Wie viele Spieler stehen bei einem Elfmeterschießen pro Runde am Punkt?",
+      "correct": 0,
+      "answer": "1",
+      "options": [
+        "1",
+        "2",
+        "5",
+        "11"
+      ],
+      "explanation": "Beim Elfmeterschießen tritt pro Team abwechselnd ein Spieler an.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 61,
+      "question": "Wie viele Tore erzielte Just Fontaine bei der WM 1958?",
+      "correct": 1,
+      "answer": "13",
+      "options": [
+        "11",
+        "13",
+        "9",
+        "15"
+      ],
+      "explanation": "Just Fontaine erzielte 1958 sagenhafte 13 Tore in einem einzigen Turnier.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 66,
+      "question": "Wie viele deutsche Meisterschaften hat Borussia Mönchengladbach?",
+      "correct": 1,
+      "answer": "5",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "explanation": "Borussia Mönchengladbach wurde fünfmal deutscher Meister, vor allem in den 1970ern.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 79,
+      "question": "Wie viele Champions-League-Titel gewann Zinédine Zidane als Trainer in Folge?",
+      "correct": 1,
+      "answer": "3",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "explanation": "Zidane gewann 2016, 2017 und 2018 dreimal in Folge die CL mit Real Madrid.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 115,
+      "question": "Welcher norddeutsche Verein wurde 2004 überraschend deutscher Meister und verwies den FC Bayern auf Platz 2?",
+      "correct": 0,
+      "answer": "Werder Bremen",
+      "options": [
+        "Werder Bremen",
+        "FC Bayern",
+        "VfB Stuttgart",
+        "Bayer Leverkusen"
+      ],
+      "explanation": "Werder Bremen wurde 2004 unter Thomas Schaaf Meister – mit einem attraktiven Offensivspiel rund um Johan Micoud und Miroslav Klose.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"bayern\")"
+      ]
+    },
+    {
+      "index": 177,
+      "question": "Welcher Verein gewann 2008 die Bundesliga unter Ottmar Hitzfeld und beendete damit eine Bayern-Durststrecke von zwei Jahren?",
+      "correct": 0,
+      "answer": "FC Bayern München",
+      "options": [
+        "FC Bayern München",
+        "Werder Bremen",
+        "FC Schalke",
+        "VfB Stuttgart"
+      ],
+      "explanation": "Der FC Bayern München gewann 2008 unter Ottmar Hitzfeld wieder die Meisterschaft. In den Vorjahren hatte Werder Bremen und VfB Stuttgart gewonnen.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"bayern\")"
+      ]
+    },
+    {
+      "index": 216,
+      "question": "Welcher Verein wurde 1999 auf dramatische Weise deutscher Meister, nachdem Bayern München am letzten Spieltag Punkte ließ?",
+      "correct": 0,
+      "answer": "FC Bayern München",
+      "options": [
+        "FC Bayern München",
+        "Bayer Leverkusen",
+        "Borussia Dortmund",
+        "Werder Bremen"
+      ],
+      "explanation": "Borussia Dortmund wurde 1999 Meister, weil Bayern München am letzten Spieltag verlor. Es war ein dramatischer Titelgewinn für den BVB.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"bayern\")"
+      ]
+    },
+    {
+      "index": 230,
+      "question": "Welche Nation gewann die Europameisterschaft 1996, die in England ausgetragen wurde?",
+      "correct": 0,
+      "answer": "Deutschland",
+      "options": [
+        "Deutschland",
+        "England",
+        "Tschechien",
+        "Frankreich"
+      ],
+      "explanation": "Deutschland gewann die EM 1996 in England mit 2:1 im Finale gegen Tschechien. Oliver Bierhoff erzielte das erste Golden Goal der EM-Geschichte.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"england\")"
+      ]
+    },
+    {
+      "index": 241,
+      "question": "Welches Ergebnis erzielte der FC Bayern im Champions-League-Viertelfinale 2020 gegen den FC Barcelona?",
+      "correct": 0,
+      "answer": "8:2 für Bayern",
+      "options": [
+        "8:2 für Bayern",
+        "2:8 für Barça",
+        "6:1 für Bayern",
+        "7:1 für Bayern"
+      ],
+      "explanation": "Der FC Bayern München schlug den FC Barcelona im August 2020 mit 8:2 – eines der höchsten CL-Ergebnisse zwischen Topklubs.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"bayern\"), Option 2 (\"bayern\"), Option 3 (\"bayern\")"
+      ]
+    },
+    {
+      "index": 256,
+      "question": "Welche Nation gewann die WM 2006 in Deutschland?",
+      "correct": 1,
+      "answer": "Italien",
+      "options": [
+        "Frankreich",
+        "Italien",
+        "Deutschland",
+        "Portugal"
+      ],
+      "explanation": "Italien gewann 2006 die WM in Deutschland.",
+      "issues": [
+        "Antwort-Leak: Option 2 (\"deutschland\")"
+      ]
+    },
+    {
+      "index": 302,
+      "question": "Welche Nation gewann die WM 2014 in Brasilien?",
+      "correct": 1,
+      "answer": "Deutschland",
+      "options": [
+        "Argentinien",
+        "Deutschland",
+        "Brasilien",
+        "Niederlande"
+      ],
+      "explanation": "Deutschland gewann 2014 die WM in Brasilien.",
+      "issues": [
+        "Antwort-Leak: Option 2 (\"brasilien\")"
+      ]
+    },
+    {
+      "index": 352,
+      "question": "Wie viele Weltmeisterschaften hat Argentinien gewonnen?",
+      "correct": 2,
+      "answer": "3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explanation": "Argentinien gewann die WM dreimal: 1978, 1986 (mit Maradona) und 2022 (mit Messi).",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 363,
+      "question": "In welcher Stadt befindet sich das Camp Nou, das Stadion des FC Barcelona?",
+      "correct": 3,
+      "answer": "Barcelona",
+      "options": [
+        "Madrid",
+        "Valencia",
+        "Bilbao",
+        "Barcelona"
+      ],
+      "explanation": "Das Camp Nou liegt in Barcelona und war mit fast 100.000 Plätzen lange Zeit das größte Fußballstadion Europas.",
+      "issues": [
+        "Antwort-Leak: Option 3 (\"barcelona\")"
+      ]
+    },
+    {
+      "index": 372,
+      "question": "Wie viele WM-Titel hat Frankreich insgesamt gewonnen?",
+      "correct": 1,
+      "answer": "2",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "explanation": "Frankreich gewann bisher zweimal die Weltmeisterschaft: 1998 im eigenen Land und 2018 in Russland.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 394,
+      "question": "Was versteht man unter einer Spielformation mit Mittelfeld in Rautenform?",
+      "correct": 0,
+      "answer": "Eine Formation, bei der das Mittelfeld eine Rautenform bildet",
+      "options": [
+        "Eine Formation, bei der das Mittelfeld eine Rautenform bildet",
+        "Ein Trickschuss aus der Drehung",
+        "Eine Standardsituation beim Freistoß",
+        "Ein Laufweg im Angriff"
+      ],
+      "explanation": "Die Raute ist eine Mittelfeld-Formation im 4-4-2- oder 4-1-2-1-2-System, bei der die Mittelfeldspieler eine rautenförmige Anordnung bilden.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"mittelfeld\")"
+      ]
+    }
+  ],
+  "SCHWER": [
+    {
+      "index": 18,
+      "question": "Welcher portugiesische Trainer prägte Benficas Erfolge und den 'Guttmann-Fluch'?",
+      "correct": 0,
+      "answer": "Béla Guttmann",
+      "options": [
+        "Béla Guttmann",
+        "José Mourinho",
+        "Otto Glória",
+        "Fernando Santos"
+      ],
+      "explanation": "Béla Guttmann soll Benfica nach 1962 mit einem Europapokal-Fluch belegt haben.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"guttmann\")"
+      ]
+    },
+    {
+      "index": 19,
+      "question": "Wie viele Spiele in Folge blieb Bayer Leverkusen 2023/24 ungeschlagen?",
+      "correct": 0,
+      "answer": "Über 50 Pflichtspiele",
+      "options": [
+        "Über 50 Pflichtspiele",
+        "20 Spiele",
+        "34 Spiele",
+        "45 Spiele"
+      ],
+      "explanation": "Leverkusen blieb 2023/24 über eine komplette Saison (51 Pflichtspiele) ungeschlagen.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"spiele\"), Option 2 (\"spiele\"), Option 3 (\"spiele\")"
+      ]
+    },
+    {
+      "index": 27,
+      "question": "Wie viele deutsche Meistertitel hat der 1. FC Nürnberg?",
+      "correct": 1,
+      "answer": "9",
+      "options": [
+        "7",
+        "9",
+        "5",
+        "11"
+      ],
+      "explanation": "Der 1. FC Nürnberg hat 9 Meistertitel, war lange deutscher Rekordmeister.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 36,
+      "question": "Wie viele aufeinanderfolgende Saisons war Lewandowski Bundesliga-Torschützenkönig?",
+      "correct": 2,
+      "answer": "5",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "explanation": "Lewandowski war fünfmal in Folge Torschützenkönig – Rekord.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 40,
+      "question": "Wie viele englische Meistertitel hatte Nottingham Forest vor den Europapokal-Siegen?",
+      "correct": 0,
+      "answer": "1",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "explanation": "Forest hatte nur einen Meistertitel, gewann aber zweimal Europas Krone.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 64,
+      "question": "Welche zwei Brüder spielten 1995 bei Ajax?",
+      "correct": 0,
+      "answer": "Frank und Ronald de Boer",
+      "options": [
+        "Frank und Ronald de Boer",
+        "Eric und Frank Rijkaard",
+        "Patrick und Quincy",
+        "keine Brüder"
+      ],
+      "explanation": "Frank und Ronald de Boer spielten beide bei Ajax 1995.",
+      "issues": [
+        "Antwort-Leak: Option 3 (\"brüder\")"
+      ]
+    },
+    {
+      "index": 70,
+      "question": "Wie viele United-Spieler starben bei der Flugzeugkatastrophe von München 1958?",
+      "correct": 0,
+      "answer": "8",
+      "options": [
+        "8",
+        "5",
+        "11",
+        "3"
+      ],
+      "explanation": "Beim Münchner Flugzeugunglück 1958 starben acht United-Spieler.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 75,
+      "question": "Welcher Verein gewann 1976 den Europapokal als drittes Bayern-Jahr in Folge?",
+      "correct": 0,
+      "answer": "FC Bayern München",
+      "options": [
+        "FC Bayern München",
+        "Leeds United",
+        "AS Saint-Étienne",
+        "Ajax"
+      ],
+      "explanation": "Der FC Bayern gewann 1976 gegen Saint-Étienne den dritten Titel in Folge.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"bayern\")"
+      ]
+    },
+    {
+      "index": 86,
+      "question": "Welcher Verein gewann 1987 als erster portugiesischer Klub seit Benfica den Europapokal?",
+      "correct": 0,
+      "answer": "FC Porto",
+      "options": [
+        "FC Porto",
+        "Benfica",
+        "Sporting",
+        "Boavista"
+      ],
+      "explanation": "Der FC Porto gewann 1987 gegen den FC Bayern.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"benfica\")"
+      ]
+    },
+    {
+      "index": 148,
+      "question": "Wie viele Titel gewann Guardiolas Barça in der Saison 2009?",
+      "correct": 2,
+      "answer": "6",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "3"
+      ],
+      "explanation": "Barça gewann 2009 alle sechs möglichen Titel (Sextuple).",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 181,
+      "question": "Welcher Spieler erzielte die meisten Tore in einer einzelnen WM-Endrunde seit Fontaine?",
+      "correct": 0,
+      "answer": "Just Fontaine (13)",
+      "options": [
+        "Just Fontaine (13)",
+        "Sándor Kocsis (11)",
+        "Gerd Müller (10)",
+        "Ronaldo (8)"
+      ],
+      "explanation": "Just Fontaines 13 Tore von 1958 sind bis heute Rekord.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"fontaine\")"
+      ]
+    },
+    {
+      "index": 196,
+      "question": "Welcher Spieler ist Rekordtorschütze im DFB-Pokalfinale oder erzielte die meisten Finaltore?",
+      "correct": 1,
+      "answer": "Gerd Müller",
+      "options": [
+        "Diverse Spieler",
+        "Gerd Müller",
+        "Robert Lewandowski",
+        "Klaus Allofs"
+      ],
+      "explanation": "Gerd Müller traf auch in mehreren DFB-Pokalfinals.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"spieler\")"
+      ]
+    },
+    {
+      "index": 206,
+      "question": "Welcher Verein gewann 2004 die Bundesliga UND wurde im selben Jahr von Bremen verdrängt?",
+      "correct": 0,
+      "answer": "Werder Bremen war Meister 2004",
+      "options": [
+        "Werder Bremen war Meister 2004",
+        "Bayern war Meister 2004",
+        "Stuttgart war Meister 2004",
+        "Schalke war Meister 2004"
+      ],
+      "explanation": "Werder Bremen war 2004 Meister.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"bremen\")"
+      ]
+    },
+    {
+      "index": 210,
+      "question": "Wie viele Tore holte Liverpool 2005 in 6 Minuten auf?",
+      "correct": 0,
+      "answer": "Drei Tore in 6 Minuten",
+      "options": [
+        "Drei Tore in 6 Minuten",
+        "Zwei Tore",
+        "Vier Tore",
+        "Ein Tor"
+      ],
+      "explanation": "Liverpool erzielte 2005 drei Tore in sechs Minuten.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"minuten\")"
+      ]
+    },
+    {
+      "index": 225,
+      "question": "Welcher Spieler gewann als Trainer und Spieler die Champions League?",
+      "correct": 0,
+      "answer": "Pep Guardiola",
+      "options": [
+        "Pep Guardiola",
+        "nur als Spieler möglich",
+        "nur als Trainer möglich",
+        "niemand"
+      ],
+      "explanation": "Guardiola, Ancelotti und Zidane gewannen die CL als Spieler und Trainer.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"spieler\"), Option 2 (\"trainer\")"
+      ]
+    },
+    {
+      "index": 246,
+      "question": "Welcher Verein gewann 1974 den ersten von drei Bayern-Europapokalen?",
+      "correct": 0,
+      "answer": "FC Bayern München",
+      "options": [
+        "FC Bayern München",
+        "Atlético Madrid",
+        "Ajax",
+        "Celtic"
+      ],
+      "explanation": "Bayern gewann 1974 nach Wiederholungsspiel gegen Atlético.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"bayern\")"
+      ]
+    },
+    {
+      "index": 261,
+      "question": "Wie viele Premier-League-Titel gewann Alex Ferguson mit United?",
+      "correct": 1,
+      "answer": "13",
+      "options": [
+        "11",
+        "13",
+        "15",
+        "9"
+      ],
+      "explanation": "Sir Alex Ferguson gewann 13 Premier-League-Titel.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 280,
+      "question": "Welcher Verein gewann 1992 den Scudetto als Sampdoria?",
+      "correct": 0,
+      "answer": "Sampdoria Genua",
+      "options": [
+        "Sampdoria Genua",
+        "Lazio",
+        "Parma",
+        "Foggia"
+      ],
+      "explanation": "Sampdoria gewann 1991 seinen bislang einzigen Scudetto.",
+      "issues": [
+        "Antwort-Leak: Option 0 (\"sampdoria\")"
+      ]
+    },
+    {
+      "index": 306,
+      "question": "Wie viele Europapokale gewann Paco Gento mit Real?",
+      "correct": 1,
+      "answer": "6",
+      "options": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ],
+      "explanation": "Paco Gento gewann sechs Europapokale, ein lange ungeschlagener Rekord.",
+      "issues": [
+        "Leere/sehr kurze Option"
+      ]
+    },
+    {
+      "index": 346,
+      "question": "Welche Stadt war der Austragungsort des berühmten 'Wunders von Córdoba' bei der WM 1978?",
+      "correct": 2,
+      "answer": "Córdoba",
+      "options": [
+        "Buenos Aires",
+        "Rosario",
+        "Córdoba",
+        "Mendoza"
+      ],
+      "explanation": "Das 'Wunder von Córdoba' bezeichnet den Sieg Österreichs gegen Deutschland mit 3:2 am 21. Juni 1978 in Córdoba.",
+      "issues": [
+        "Antwort-Leak: Option 2 (\"rdoba\")"
+      ]
+    },
+    {
+      "index": 358,
+      "question": "Welcher Bundesliga-Rekord wurde durch Torwart Sepp Maier gehalten?",
+      "correct": 1,
+      "answer": "Meiste Bundesliga-Spiele ohne Gegentor in Folge",
+      "options": [
+        "Meiste Länderspiele",
+        "Meiste Bundesliga-Spiele ohne Gegentor in Folge",
+        "Ältester Bundesliga-Debütant",
+        "Meiste Pokalendspieltore"
+      ],
+      "explanation": "Sepp Maier vom FC Bayern München hielt in der Bundesliga einmal mehr als 450 Minuten lang kein Gegentor – ein damaliger Rekord.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"bundesliga\"), Option 2 (\"bundesliga\")"
+      ]
+    },
+    {
+      "index": 365,
+      "question": "Wie heißt die taktische Variante, bei der der Torwart aktiv am Aufbau teilnimmt?",
+      "correct": 0,
+      "answer": "Sweeper-Keeper",
+      "options": [
+        "Sweeper-Keeper",
+        "Libero-Torwart",
+        "Pressingstopper",
+        "Aufbaukraft"
+      ],
+      "explanation": "Der 'Sweeper-Keeper' ist ein moderner Torwarttypus, der aktiv aus dem Strafraum herauskommt und den Ball als elfter Feldspieler in den Aufbau einbindet.",
+      "issues": [
+        "Antwort-Leak: Option 1 (\"torwart\")"
+      ]
+    }
+  ]
+}
