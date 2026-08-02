@@ -126,9 +126,17 @@ Kinder wählen eine Kategorie und bekommen etwas anderes.
 - `k5__Mathematik__Bruchrechnung`: 18 von 31 Fragen waren Gleichungsaufgaben
 - `k5__Mathematik__Geometrie`: 16 von 39 Fragen waren Bruchrechnung
 
-→ **Offene Frage an dich:** Die 34 ersetzten Fragen waren inhaltlich in Ordnung, nur am
-falschen Ort. Sie stehen in der Git-Historie. Sollen sie in passende Blöcke gerettet
-werden, oder ist der Bestand groß genug?
+→ **Entschieden am 03.08.2026:** Alle ersetzten Fragen sind aufzuheben. Sie liegen jetzt
+in [`ERSETZTE_FRAGEN.json`](ERSETZTE_FRAGEN.json) im Projektroot — derzeit 133 Stück aus
+11 Dateien. Die Entscheidung, welche davon in passende Kategorien zurückwandern, steht
+noch aus. Die Dateien selbst bleiben unverändert.
+
+Zu jedem Eintrag steht die **Nachfolgerin** dabei, die an ihre Stelle getreten ist.
+Nötig, weil die Zuordnung unscharf ist: Erkannt wird über den Vergleich des Fragetextes
+an derselben Position (Anzahl und Reihenfolge bleiben ja erhalten). Eine stark
+umformulierte Frage — „Welches Wort ist korrekt?" → „Welche Schreibweise ist richtig?" —
+sieht dabei aus wie eine ersetzte. Die Sammlung ist deshalb bewusst zu voll statt zu
+leer. Erzeugt und fortgeschrieben von `question-generator/collect_replaced.js`.
 
 **Gemeldet, nicht behoben:**
 - `k5__Deutsch__Aufsatz`: rund 20 von 36 Fragen sind reine Grammatik

@@ -1,0 +1,2533 @@
+{
+  "hinweis": "Fragen, die im Qualitaetsdurchlauf durch andere ersetzt wurden. Nicht zwangslaeufig schlecht - meist zu leicht, nicht eindeutig loesbar oder thematisch am falschen Ort. Erzeugt von question-generator/collect_replaced.js. Die Zuordnung ist unscharf: stark umformulierte Fragen koennen faelschlich enthalten sein, deshalb steht bei jedem Eintrag die Nachfolgerin dabei. Diese Datei gehoert NICHT in den Firebase-Abgleich.",
+  "erzeugt": "2026-08-02",
+  "fragen": [
+    {
+      "question": "Was fressen Pflanzenfresser?",
+      "options": [
+        "Fleisch",
+        "Nur pflanzliche Nahrung: Gras, Blätter, Früchte, Samen (z.B. Kuh, Hase, Schmetterling, Reh)",
+        "Beides",
+        "Nur Samen"
+      ],
+      "correct": 1,
+      "explanation": "Pflanzenfresser (Herbivoren): haben oft breite Mahlzähne. Tiere wie Kühe verdauen Gras durch Wiederkäuen. Gegenüber: Fleischfresser (Karnivoren), Allesfresser (Omnivoren).",
+      "topic": "Ernährung",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 4,
+        "basis": "ec75149",
+        "ersetztDurch": "Wovon ernähren sich Pflanzenfresser (Herbivoren)?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Wie nennt man Tiere, die während des Winters einen langen Schlaf halten?",
+      "options": [
+        "Zugvögel",
+        "Winterschläfer (Hibernation): Körpertemperatur, Herzschlag und Atemfrequenz sinken stark (z.B. Bär, Igel, Siebenschläfer, Fledermaus)",
+        "Zugfische",
+        "Wechselwarme Tiere"
+      ],
+      "correct": 1,
+      "explanation": "Winterschlaf (echter): Körpertemperatur fällt fast auf Umgebungstemperatur (Igel, Fledermaus, Siebenschläfer). Winterruhe (Bär): weniger tief, Körpertemperatur bleibt höher.",
+      "topic": "Jahreszeiten",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 6,
+        "basis": "ec75149",
+        "ersetztDurch": "Was geschieht beim echten Winterschlaf, zum Beispiel beim Igel?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was unterscheidet Vögel von allen anderen Wirbeltieren?",
+      "options": [
+        "Sie sind kaltblütig",
+        "Sie haben Federn, Flügel (auch wenn sie nicht fliegen können) und legen Eier mit harter Schale: Huhn, Adler, Pinguin, Strauß",
+        "Sie können alle fliegen",
+        "Sie haben kein Skelett"
+      ],
+      "correct": 1,
+      "explanation": "Vögel (Aves): Federn, Schnabel (keine Zähne bei modernen Vögeln), legen Eier. Warmblütig. Viele können fliegen – aber Pinguin und Strauß können es nicht.",
+      "topic": "Tiergruppen",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 10,
+        "basis": "ec75149",
+        "ersetztDurch": "Welches Merkmal haben Vögel als einzige heute lebende Wirbeltiergruppe?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Wie nennt man Tiere, die zur Fortpflanzung in wärmere Gebiete ziehen?",
+      "options": [
+        "Winterschläfer",
+        "Zugvögel (und andere Zugtiere): verlassen im Herbst kalte Gebiete und kehren im Frühling zurück (z.B. Schwalbe, Storch, Kuckuck)",
+        "Winterruhende Tiere",
+        "Amphibien"
+      ],
+      "correct": 1,
+      "explanation": "Vogelzug: einer der faszinierendsten Phänomene. Zugvögel orientieren sich an Sternen, Magnetfeld, Sonne. Schwalben überwintern in Afrika, Störche in Südafrika.",
+      "topic": "Jahreszeiten",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 11,
+        "basis": "ec75149",
+        "ersetztDurch": "Woran orientieren sich Zugvögel auf ihrem weiten Flug?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist ein Skelett und wozu dient es?",
+      "options": [
+        "Nur zur Stützung",
+        "Das Innenskelett (Knochen) oder Außenskelett (Chitin bei Insekten): trägt den Körper, schützt Organe und ermöglicht Bewegung (Muskeln setzen an Knochen an)",
+        "Nur zur Fortbewegung",
+        "Ein Organ"
+      ],
+      "correct": 1,
+      "explanation": "Endoskelett (Wirbeltiere): Knochen innen. Exoskelett (Insekten, Krebse): außen, muss gehäutet werden um Wachstum zu ermöglichen.",
+      "topic": "Körperbau",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 12,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Aufgaben erfüllt das Skelett eines Tieres?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Was ist der Unterschied zwischen warmblütig und kaltblütig?",
+      "options": [
+        "Warmblütige leben im Süden",
+        "Warmblütige (Vögel, Säugetiere) halten konstante Körpertemperatur; Kaltblütige (Reptilien, Amphibien, Fische) passen ihre Temperatur der Umgebung an",
+        "Kaltblütige sind immer kalt",
+        "Alle Insekten sind warmblütig"
+      ],
+      "correct": 1,
+      "explanation": "Warmblütig: Energie aus Nahrung hält Temperatur konstant (Vögel ~41°C, Menschen 37°C). Kaltblütig: Körpertemperatur = Umgebungstemperatur. Kältere Umgebung → träger.",
+      "topic": "Physiologie",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 13,
+        "basis": "ec75149",
+        "ersetztDurch": "Was unterscheidet gleichwarme von wechselwarmen Tieren?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Welches Tier ist für die Honigproduktion verantwortlich?",
+      "options": [
+        "Wespe",
+        "Biene – die Honigbiene sammelt Nektar, wandelt ihn in Honig um und lagert ihn in Waben im Bienenstock",
+        "Hummel",
+        "Schmetterling"
+      ],
+      "correct": 1,
+      "explanation": "Honigbiene (Apis mellifera): Arbeiterinnen (weiblich) sammeln Nektar, Drohnen (männlich) zur Fortpflanzung, Königin legt Eier. Wichtigster Bestäuber in Europa.",
+      "topic": "Insekten",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 23,
+        "basis": "ec75149",
+        "ersetztDurch": "Welches Insekt stellt aus Nektar Honig her und lagert ihn in Waben?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welches Tier ist für seinen Rüssel bekannt?",
+      "options": [
+        "Nashorn",
+        "Elefant – der Rüssel dient als Nase, zum Trinken, Greifen und Kommunizieren; er hat über 40 000 Muskeln",
+        "Tapir",
+        "Walross"
+      ],
+      "correct": 1,
+      "explanation": "Elefantenrüssel: verlängerte Nase mit Oberlippe. Mit dem Rüssel kann der Elefant bis zu 8 Liter Wasser aufnehmen, schwere Lasten heben und fein differenzierte Gesten machen.",
+      "topic": "Tierkundliches",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 33,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie findet eine Fledermaus nachts ihre Beute?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist die Aufgabe eines Pilzes im Ökosystem?",
+      "options": [
+        "Er betreibt Fotosynthese",
+        "Pilze sind Zersetzer (Destruenten): sie bauen tote organische Substanz (Laub, Holz) ab und setzen Nährstoffe für Pflanzen frei",
+        "Er jagt andere Tiere",
+        "Er produziert Sauerstoff"
+      ],
+      "correct": 1,
+      "explanation": "Pilze: kein Chlorophyll, keine Fotosynthese → heterotroph. Wichtige Zersetzer im Nährstoffkreislauf. Manche leben in Symbiose mit Baumwurzeln (Mykorrhiza).",
+      "topic": "Pilze",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 34,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Rolle spielen Pilze im Ökosystem Wald?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Was ist ein Fressfeind?",
+      "options": [
+        "Ein Tier, das Pflanzen frisst",
+        "Ein Tier, das ein anderes Tier als Nahrung jagt und frisst (Prädator/Räuber im Verhältnis zur Beute): Fuchs ist Fressfeind des Hasen",
+        "Ein Parasit",
+        "Ein Konkurrent um Nahrung"
+      ],
+      "correct": 1,
+      "explanation": "Räuber-Beute-Beziehung: reguliert Populationsgrößen. Mehr Beute → mehr Räuber → weniger Beute → weniger Räuber. Natürliches Gleichgewicht.",
+      "topic": "Ökologie",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 36,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie wirkt sich ein besonders großes Beuteangebot auf die Räuber aus?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Was macht Fell bei Säugetieren?",
+      "options": [
+        "Schutzschicht aus harten Schuppen wie bei Reptilien",
+        "Körperbedeckung aus Haaren die wärmt und schützt",
+        "Befiederung zum Fliegen wie bei Vögeln",
+        "Glatte nackte Haut ohne schützende Bedeckung"
+      ],
+      "correct": 1,
+      "explanation": "Fell (Haare) isolieren gegen Kälte und schützen die Haut.",
+      "topic": "Körperbau",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 63,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Aufgabe hat das Fell der Säugetiere?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Was sind Kaltblüter?",
+      "options": [
+        "Tiere die sich aktiv in der Sonne wärmen müssen",
+        "Tiere deren Körpertemperatur von der Umgebung abhängt",
+        "Tiere die im Winter in einen tiefen Schlaf fallen",
+        "Tiere die ausschließlich im Wasser leben"
+      ],
+      "correct": 1,
+      "explanation": "Kaltblüter (wechselwarm): Reptilien, Fische.",
+      "topic": "Tierklassen",
+      "_herkunft": {
+        "datei": "k5__Biologie__Allgemein.json",
+        "index": 74,
+        "basis": "ec75149",
+        "ersetztDurch": "Warum ist die Bezeichnung Kaltblüter für Reptilien irreführend?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Welcher Wochentag kommt direkt nach Dienstag?",
+      "options": [
+        "Montag",
+        "Donnerstag",
+        "Mittwoch",
+        "Freitag"
+      ],
+      "correct": 2,
+      "explanation": "Die Reihenfolge der Wochentage ist Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag. Nach Dienstag kommt Mittwoch.",
+      "topic": "Wortschatz (Wochentage)",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Allgemein.json",
+        "index": 15,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Umschreibung bedeutet ungefähr dasselbe wie \"flüstern\"?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was bedeutet 'wörtliche Rede' richtig zu kennzeichnen?",
+      "options": [
+        "Keine besonderen Zeichen nötig",
+        "Anführungszeichen »...« oder \"...\" setzen, vor der Rede einen Doppelpunkt, am Satzende das Satzzeichen innerhalb der Anführungszeichen",
+        "Nur Kommas verwenden",
+        "Großschreibung am Satzanfang reicht"
+      ],
+      "correct": 1,
+      "explanation": "Regel: Er sagte: »Ich komme.« Satzzeichen (Punkt, Ausrufezeichen, Fragezeichen) stehen innerhalb der Anführungszeichen. Bei Redebegleitsatz danach: Komma statt Punkt: »Ich komme«, sagte er.",
+      "topic": "Satzzeichen",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Aufsatz.json",
+        "index": 36,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher Satz gibt die wörtliche Rede korrekt wieder?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Wann setzt man ein Komma?",
+      "options": [
+        "Niemals zwischen Hauptsatz und einleitendem Nebensatz",
+        "Vor Nebensatz (weil, dass, obwohl) und bei Aufzählungen",
+        "Immer unmittelbar vor dem Wort und",
+        "Ausschließlich am Ende eines vollständigen Satzes"
+      ],
+      "correct": 1,
+      "explanation": "Komma: vor Nebensätzen, bei Aufzählungen, bei eingeschobenen Satzteilen.",
+      "topic": "Zeichensetzung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Aufsatz.json",
+        "index": 68,
+        "basis": "ec75149",
+        "ersetztDurch": "An welcher Stelle fehlt im Satz „Ich bleibe zu Hause weil es regnet“ ein Komma?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Was ist der Unterschied zwischen 'sein' und 'haben' als Hilfsverben im Perfekt?",
+      "options": [
+        "Kein Unterschied",
+        "Verben der Bewegung und Zustandsänderung bilden Perfekt mit 'sein' (laufen → bin gelaufen); andere meist mit 'haben' (spielen → habe gespielt)",
+        "Alle Verben nehmen 'sein'",
+        "Alle Verben nehmen 'haben'"
+      ],
+      "correct": 1,
+      "explanation": "Sein: laufen, fahren, fliegen, wachsen, sterben, werden. Haben: essen, spielen, schreiben, sehen. Ausnahmen lernst du mit der Zeit.",
+      "topic": "Perfekt",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Grammatik.json",
+        "index": 12,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Verben bilden das Perfekt mit dem Hilfsverb 'sein'?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Was ist ein Haupt- und was ein Nebensatz?",
+      "options": [
+        "Beides ist dasselbe",
+        "Hauptsatz: kann allein stehen (Verb an 2. Stelle). Nebensatz: hängt vom Hauptsatz ab, wird durch Konjunktion eingeleitet, Verb steht am Ende",
+        "Nebensatz steht immer vorne",
+        "Hauptsatz hat kein Verb"
+      ],
+      "correct": 1,
+      "explanation": "Hauptsatz: 'Ich lerne Deutsch.' Nebensatz: '...weil ich nach Deutschland reise.' (Verb 'reise' am Ende). Satzgefüge = Haupt- + Nebensatz.",
+      "topic": "Satzgefüge",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Grammatik.json",
+        "index": 26,
+        "basis": "ec75149",
+        "ersetztDurch": "Woran erkennt man einen Nebensatz?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Was ist ein Nomen im Dativ Plural?",
+      "options": [
+        "Nomen + Genitiv-s",
+        "Nomen im 3. Fall Mehrzahl: 'mit den Kindern', 'von den Büchern' – Dativ Plural oft mit -n am Ende",
+        "Nomen im 1. Fall",
+        "Nomen im 4. Fall"
+      ],
+      "correct": 1,
+      "explanation": "Dativ Plural: den Kindern (Kinder + n), den Büchern (Bücher + n), den Autos (Autos bleibt). Merke: Dativ Plural hat fast immer ein -n am Ende.",
+      "topic": "Kasus",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Grammatik.json",
+        "index": 30,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Form steht im Dativ Plural: 'Ich spiele mit …'?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Welches Wort muss man großschreiben?",
+      "options": [
+        "A) rennen",
+        "B) schön",
+        "C) der Ball",
+        "D) und"
+      ],
+      "correct": 2,
+      "explanation": "Nomen (Namenwörter) schreibt man im Deutschen immer groß. 'Ball' ist ein Nomen.",
+      "topic": "Großschreibung von Nomen",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 0,
+        "basis": "ec75149",
+        "ersetztDurch": "In dem Satz 'Wir spielen mit dem ball.' ist ein Wort falsch kleingeschrieben. Welches?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welches Wort ist richtig geschrieben?",
+      "options": [
+        "A) Glük",
+        "B) Glück",
+        "C) Glüch",
+        "D) Gluck"
+      ],
+      "correct": 1,
+      "explanation": "Nach einem kurzen Vokal (hier 'ü') schreibt man oft 'ck' für den 'k'-Laut, wenn kein weiterer Konsonant folgt.",
+      "topic": "Doppelkonsonanten (ck)",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 2,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Schreibweise ist richtig? 'Damit hast du großes ____ gehabt.'",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Welches Wort hat den langen 'i'-Laut und wird mit 'ie' geschrieben?",
+      "options": [
+        "A) Wiese",
+        "B) Kind",
+        "C) Zimmer",
+        "D) Blitz"
+      ],
+      "correct": 0,
+      "explanation": "Der lange 'i'-Laut wird im Deutschen oft mit 'ie' geschrieben, wie im Wort 'Wiese'.",
+      "topic": "ie-Schreibung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 4,
+        "basis": "ec75149",
+        "ersetztDurch": "In welchem Wort wird das 'i' lang gesprochen?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Warum schreibt man Nomen groß?",
+      "options": [
+        "Weil sie am Satzanfang stehen",
+        "Weil es im Deutschen Regel ist, alle Nomen (Hauptwörter) großzuschreiben: der Hund, die Schule, das Glück",
+        "Weil sie wichtig sind",
+        "Zufällig"
+      ],
+      "correct": 1,
+      "explanation": "Im Deutschen werden alle Nomen großgeschrieben – das ist einzigartig unter den europäischen Sprachen. Test: Kann ein Artikel davor? → Nomen → groß.",
+      "topic": "Großschreibung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 8,
+        "basis": "ec75149",
+        "ersetztDurch": "In welchem Satz sind alle Wörter richtig groß- und kleingeschrieben?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wann schreibt man 'das' und wann 'dass'?",
+      "options": [
+        "Immer 'das'",
+        "'das' ist Artikel oder Pronomen vor einem Nomen; 'dass' ist eine Konjunktion, die einen Nebensatz einleitet",
+        "Immer 'dass'",
+        "'dass' nach Punkt, 'das' nach Komma"
+      ],
+      "correct": 1,
+      "explanation": "'das Kind' (Artikel), 'das, was er sagt' (Pronomen) → 'das'. 'Ich weiß, dass er kommt.' (Konjunktion, einleitend) → 'dass'. Ersatzprobe: 'weil' statt 'dass' → geht? Dann 'dass'.",
+      "topic": "dass/das",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 10,
+        "basis": "ec75149",
+        "ersetztDurch": "In welchem Satz ist 'das' oder 'dass' richtig geschrieben?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Wann schreibt man 'seit' und wann 'seid'?",
+      "options": [
+        "Immer 'seit'",
+        "'seit' ist eine Präposition (seit gestern, seit Jahren); 'seid' ist die ihr-Form von 'sein' (ihr seid toll)",
+        "Beides ist dasselbe",
+        "'seid' nach Komma"
+      ],
+      "correct": 1,
+      "explanation": "'Seit' = Zeitangabe: seit einer Stunde, seit Montag. 'Seid' = Verb (ihr seid, seid ihr bereit?). Trick: ersetze durch 'wart' → geht? Dann 'seid'.",
+      "topic": "seit/seid",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 11,
+        "basis": "ec75149",
+        "ersetztDurch": "In welchem Satz ist 'seit' oder 'seid' richtig geschrieben?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Wann verdoppelt man den Konsonanten nach einem kurzen Vokal?",
+      "options": [
+        "Niemals",
+        "Wenn der Vokal kurz gesprochen wird, wird der folgende Konsonant verdoppelt: Halle (kurzes a), bitten (kurzes i), Sonne (kurzes o)",
+        "Immer nach jedem Vokal",
+        "Nur bei s und t"
+      ],
+      "correct": 1,
+      "explanation": "Kurzer Vokal → Doppelkonsonant: Halle, Tonne, Welle, Mutter, bitten. Langer Vokal → kein Doppelkonsonant: Hale-... Nein: Tal, Not, Welt.",
+      "topic": "Konsonantenverdopplung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 12,
+        "basis": "ec75149",
+        "ersetztDurch": "Ergänze richtig: 'Ich fahre mit dem Ro__er zur Schule.'",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie schreibt man 'wieder' und wann 'wider'?",
+      "options": [
+        "Immer 'wieder'",
+        "'wieder' bedeutet 'nochmal' (ich komme wieder); 'wider' bedeutet 'gegen' (Widersacher, widerlich, Widerspruch)",
+        "'wider' bei Verben",
+        "Kein Unterschied"
+      ],
+      "correct": 1,
+      "explanation": "'wieder': komm wieder, wieder und wieder, Wiedersehen. 'wider': Widerstand, widerlich, widersprechen, wider Erwarten. 'wider' = 'gegen' (Gegenteil).",
+      "topic": "wieder/wider",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 14,
+        "basis": "ec75149",
+        "ersetztDurch": "In welchem Satz ist 'wieder' oder 'wider' richtig geschrieben?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Was ist die Regel für 'ie' vs. 'i' in deutschen Wörtern?",
+      "options": [
+        "Immer 'ie' schreiben",
+        "'ie' schreibt man, wenn das 'i' lang gesprochen wird: Tier, lieben, Spiegel. Kurzes 'i' schreibt man einfach: mit, bin, Kind",
+        "'i' schreibt man immer am Wortende",
+        "Nach Konsonanten immer 'ie'"
+      ],
+      "correct": 1,
+      "explanation": "Lang-i → meist 'ie': spielen, Riese, Tier, Brief, lieb. Ausnahmen: ihm, ihn, ihr, Igel. Kurzes i: mit, bin, Kind, Fisch.",
+      "topic": "ie/i",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 15,
+        "basis": "ec75149",
+        "ersetztDurch": "In welchem Wort wird das lange 'i' nicht mit 'ie' geschrieben?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wann setzt man ein Komma vor 'und'?",
+      "options": [
+        "Immer vor 'und'",
+        "Nie vor 'und' bei Aufzählungen; aber vor 'und' wenn ein vollständiger Nebensatz folgt: 'Er schläft, und sie liest.'",
+        "Immer nach 'und'",
+        "Nur bei Hauptsätzen"
+      ],
+      "correct": 1,
+      "explanation": "Aufzählung: Ich mag Äpfel, Birnen und Bananen (kein Komma vor letztem 'und'). Hauptsatz + und + Hauptsatz: Das Komma ist optional, aber kein Muss.",
+      "topic": "Komma",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 16,
+        "basis": "ec75149",
+        "ersetztDurch": "In welchem Satz ist die Kommasetzung bei der Aufzählung richtig?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wann kommt ein Komma vor Nebensätze?",
+      "options": [
+        "Nie",
+        "Immer – Nebensätze werden immer durch Komma vom Hauptsatz abgetrennt: 'Ich esse, weil ich Hunger habe.'",
+        "Nur bei 'weil'",
+        "Nur bei langen Sätzen"
+      ],
+      "correct": 1,
+      "explanation": "Nebensatz → immer Komma! 'Ich gehe nach Hause, weil es regnet.' 'Als er ankam, war es spät.' Eingeschobener Nebensatz: Komma davor und danach.",
+      "topic": "Komma",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 17,
+        "basis": "ec75149",
+        "ersetztDurch": "In welchem Satz ist das Komma richtig gesetzt?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wie schreibt man 'man' (allgemein) und 'Mann' (Person)?",
+      "options": [
+        "Immer gleich",
+        "'man' (Pronomen, kleingeschrieben): Man sagt, dass... 'Mann' (männliche Person, Nomen): Der Mann arbeitet.",
+        "'Mann' immer groß, 'man' immer nach Verb",
+        "Kein Unterschied"
+      ],
+      "correct": 1,
+      "explanation": "'man' = indefinites Pronomen (unbestimmte Person): Man kann das lernen. 'Mann' = Nomen (maskuline Person, Einzahl von 'Männer'). Gleiche Aussprache, verschiedene Bedeutung.",
+      "topic": "Homophone",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 19,
+        "basis": "ec75149",
+        "ersetztDurch": "In welchem Satz ist 'man' oder 'Mann' richtig geschrieben?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Wann schreibt man 'ß' (Eszett) und wann 'ss'?",
+      "options": [
+        "Immer 'ss'",
+        "'ß' nach langem Vokal oder Diphthong (Heißen, Straße, Fuß); 'ss' nach kurzem Vokal (Wasser, missen, Fluss)",
+        "'ß' immer am Wortende",
+        "Kein Unterschied mehr seit der Reform"
+      ],
+      "correct": 1,
+      "explanation": "Nach Rechtschreibreform 1996: 'ß' nach langen Vokalen (groß, Straße, Maß) und Diphthongen (heißen). 'ss' nach kurzen Vokalen: Fluss, Wasser, muss.",
+      "topic": "ß/ss",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 20,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Schreibweise ist richtig?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist indirekte Rede?",
+      "options": [
+        "Wörtliche Zitate in Anführungszeichen",
+        "Wiedergegebene Aussagen ohne Anführungszeichen, oft mit Konjunktiv I: Er sagte, er komme morgen. / Sie fragte, ob ich Zeit hätte.",
+        "Eine Beschreibung",
+        "Ein Fragesatz im Nebensatz"
+      ],
+      "correct": 1,
+      "explanation": "Indirekte Rede gibt Aussagen von anderen wieder, ohne sie woertlich zu zitieren. Dazu nutzt man oft den Konjunktiv I: er komme, er habe, er sei. Beispiel: Er sagte, er habe Hunger (statt woertlichem Zitat).",
+      "topic": "Indirekte Rede",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 22,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher Satz gibt 'Ich habe Hunger' in indirekter Rede wieder?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wie schreibt man zusammengesetzte Adjektive richtig?",
+      "options": [
+        "Immer getrennt",
+        "Viele werden zusammengeschrieben: dunkelblau, hellgrün, stockdunkel; bei Bindestrich bei unklaren Fällen: 18-jährig",
+        "Immer mit Bindestrich",
+        "Nach dem ersten Wort groß"
+      ],
+      "correct": 1,
+      "explanation": "Zusammengesetzte Adjektive: hellblau, dunkelrot, nasskalt. Mit Bindestrich bei Zahlen (18-jährig) oder zur Verdeutlichung.",
+      "topic": "Zusammenschreibung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 24,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Schreibweise ist richtig? 'Sie trägt einen ____ Pullover.'",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Warum schreibt man nach 'außerdem', 'deshalb', 'trotzdem' das Verb an zweiter Stelle?",
+      "options": [
+        "Kein besonderer Grund",
+        "Weil diese Wörter als Satzglieder gelten und das Verb in Hauptsätzen immer an zweiter Stelle steht: 'Deshalb komme ich.'",
+        "Das Verb steht immer am Ende",
+        "Das gilt nur für 'deshalb'"
+      ],
+      "correct": 1,
+      "explanation": "Hauptsatz: Verb an 2. Stelle. Steht ein Adverb (deshalb, trotzdem, außerdem) an Position 1, rückt das Verb trotzdem auf Position 2: 'Deshalb [1] komme [2] ich [3] spät.'",
+      "topic": "Verbstellung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 26,
+        "basis": "ec75149",
+        "ersetztDurch": "In welchem Satz steht das Verb an der richtigen Stelle?",
+        "aehnlichkeit": 0.19
+      }
+    },
+    {
+      "question": "Was ist eine Silbe?",
+      "options": [
+        "Ein Buchstabe",
+        "Eine Lauteinheit mit mindestens einem Vokal, die beim Sprechen als Einheit gilt: Ka-tze (2 Silben), Schmett-er-ling (3 Silben)",
+        "Ein Wort",
+        "Ein Satzzeichen"
+      ],
+      "correct": 1,
+      "explanation": "Silben: jede Silbe hat genau einen Vokal (oder Umlaut/Diphthong). Zum Trennen: in die Hände klatschen beim Sprechen zählt die Silben.",
+      "topic": "Silben",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 34,
+        "basis": "ec75149",
+        "ersetztDurch": "Welches Wort hat drei Silben?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welches Wort ist korrekt?",
+      "options": [
+        "villeicht",
+        "vileicht",
+        "vielleicht",
+        "vieleicht"
+      ],
+      "correct": 2,
+      "explanation": "vielleicht – merke: viel-leicht.",
+      "topic": "Häufige Fehler",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 48,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Schreibweise ist richtig?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Welches Wort schreibt man mit ie?",
+      "options": [
+        "lid",
+        "lied",
+        "Lied",
+        "Lied und lied"
+      ],
+      "correct": 2,
+      "explanation": "Lied mit ie – langer i-Laut.",
+      "topic": "ie-Schreibung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 53,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Schreibweise ist richtig?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist richtig?",
+      "options": [
+        "das selbe",
+        "dasselbe",
+        "daßselbe",
+        "Das selbe"
+      ],
+      "correct": 1,
+      "explanation": "dasselbe – zusammengeschrieben als Pronomen.",
+      "topic": "Zusammenschreibung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 58,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Schreibung ist korrekt?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "'sofort' oder 'so fort'?",
+      "options": [
+        "so fort",
+        "sofort",
+        "So Fort",
+        "so-fort"
+      ],
+      "correct": 1,
+      "explanation": "sofort – Adverb, zusammengeschrieben.",
+      "topic": "Zusammenschreibung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 68,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Schreibung ist korrekt?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "'wenn' oder 'wen'?",
+      "options": [
+        "wen es regnet",
+        "wenn es regnet",
+        "Wen es regnet",
+        "wänn es regnet"
+      ],
+      "correct": 1,
+      "explanation": "wenn (Konjunktion). wen = Akkusativ von wer.",
+      "topic": "wenn/wen",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 70,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Schreibung ist korrekt?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "'spazieren gehen' – korrekt?",
+      "options": [
+        "spazierengehen",
+        "spazieren gehen",
+        "Spazieren Gehen",
+        "Spazierengehn"
+      ],
+      "correct": 1,
+      "explanation": "spazieren gehen – getrennt geschrieben.",
+      "topic": "Getrenntschreibung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 72,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher Satz ist richtig geschrieben?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wann wird 'man' kleingeschrieben?",
+      "options": [
+        "Immer",
+        "Nur am Satzanfang groß",
+        "Als Pronomen immer klein",
+        "Immer groß"
+      ],
+      "correct": 2,
+      "explanation": "man ist Indefinitpronomen, immer klein.",
+      "topic": "Groß-/Kleinschreibung",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 73,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher Satz ist richtig geschrieben?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was bedeutet 'trotzdem'?",
+      "options": [
+        "trotz dem",
+        "Trotzdem",
+        "trotzdem",
+        "Trotz dem"
+      ],
+      "correct": 2,
+      "explanation": "trotzdem – Konjunktion, zusammengeschrieben, klein.",
+      "topic": "Konjunktionen",
+      "_herkunft": {
+        "datei": "k5__Deutsch__Rechtschreibung.json",
+        "index": 85,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher Satz ist richtig geschrieben?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Gleichung hat das gleiche Ergebnis wie 8 + 5?",
+      "options": [
+        "A) 8 - 5",
+        "B) 5 * 8",
+        "C) 5 + 8",
+        "D) 8 : 5"
+      ],
+      "correct": 2,
+      "explanation": "Beim Addieren spielt die Reihenfolge der Zahlen keine Rolle. 8 + 5 ergibt dasselbe wie 5 + 8 (beides ist 13). Dies ist eine Eigenschaft der Addition.",
+      "topic": "Rechengesetze (Kommutativgesetz der Addition)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Algebra.json",
+        "index": 6,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher Term hat für jede Zahl n denselben Wert wie n + 8?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Welche Zahl muss für das Dreieck eingesetzt werden, damit die Gleichung stimmt: 7 + ▲ = 15?",
+      "options": [
+        "8",
+        "9",
+        "7",
+        "6"
+      ],
+      "correct": 0,
+      "explanation": "Um die Gleichung zu lösen, müssen wir herausfinden, welche Zahl zu 7 addiert 15 ergibt. Das ist 15 - 7 = 8. Also ist ▲ = 8.",
+      "topic": "Platzhalter in Addition (leicht)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Algebra.json",
+        "index": 8,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher Term beschreibt: Die Summe aus n und 8 wird verdoppelt?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Finde die fehlende Zahl: 4 × □ = 24",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 1,
+      "explanation": "Um die fehlende Zahl zu finden, müssen wir überlegen, welche Zahl mal 4 multipliziert 24 ergibt. Das ist 24 geteilt durch 4, also 6.",
+      "topic": "Platzhalter in Multiplikation (mittel)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Algebra.json",
+        "index": 10,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher Term hat denselben Wert wie 7 * (20 + 3)?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie viele Zentimeter sind in 2 Metern enthalten?",
+      "options": [
+        "A) 20 cm",
+        "B) 200 cm",
+        "C) 2000 cm",
+        "D) 0,2 cm"
+      ],
+      "correct": 1,
+      "explanation": "Ein Meter entspricht 100 Zentimetern. Daher sind 2 Meter das Doppelte, also 2 x 100 cm = 200 cm.",
+      "topic": "Maßeinheiten (Längen)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 21,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Draht ist 12 Meter lang und wird in Stücke von je 80 Zentimetern geschnitten. Wie viele Stücke erhält man?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Was ist das Ergebnis von 7 × 8?",
+      "options": [
+        "54",
+        "56",
+        "58",
+        "64"
+      ],
+      "correct": 1,
+      "explanation": "7 × 8 = 56. Merkregel: 5, 6, 7, 8 – fünf mal sechs ist achtunddreißig... Nein: 7 × 8 = 56. Oder: 7 × 7 = 49, +7 = 56.",
+      "topic": "Einmaleins",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 48,
+        "basis": "ec75149",
+        "ersetztDurch": "In einem Eierkarton liegen 8 Reihen mit je 7 Eiern. Wie viele Eier sind in 12 solchen Kartons?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was bedeutet das Zeichen '>' ?",
+      "options": [
+        "kleiner als",
+        "gleich",
+        "größer als",
+        "ungleich"
+      ],
+      "correct": 2,
+      "explanation": "'>' bedeutet 'größer als': 8 > 5 heißt '8 ist größer als 5'. Merktrick: Der 'Mund' des Zeichens öffnet sich zur größeren Zahl.",
+      "topic": "Vergleichszeichen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 71,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche dieser Aussagen ist richtig?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist ein Taschenrechner nicht erlaubt beim Hauptschulabschluss?",
+      "options": [
+        "Nie erlaubt",
+        "In den meisten Bundesländern in bestimmten Aufgabenteilen nicht erlaubt – um Kopfrechnen und schriftliche Rechenverfahren zu testen",
+        "Immer erlaubt",
+        "Nur beim schriftlichen Rechnen nicht erlaubt"
+      ],
+      "correct": 1,
+      "explanation": "Kopfrechnen und schriftliches Rechnen ohne Taschenrechner: Test grundlegender Fähigkeiten. In Klasse 5 Taschenrechner meist noch gar nicht eingeführt.",
+      "topic": "Schule",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 107,
+        "basis": "ec75149",
+        "ersetztDurch": "Aus einem Hahn fließen 8 Liter pro Minute. Wie lange dauert es, eine Wanne mit 200 Litern zu füllen?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist das Gewicht von 3 Kartons à 2,5 kg?",
+      "options": [
+        "5 kg",
+        "6 kg",
+        "7,5 kg",
+        "8 kg"
+      ],
+      "correct": 2,
+      "explanation": "3 × 2,5 kg = 7,5 kg. Oder: 3 × 2 = 6, 3 × 0,5 = 1,5, zusammen 7,5 kg.",
+      "topic": "Sachaufgaben",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 111,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie schwer sind 3 Kartons zu je 2,5 kg?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Was ist größer: 1,5 m oder 145 cm?",
+      "options": [
+        "145 cm",
+        "1,5 m (= 150 cm > 145 cm)",
+        "Beide gleich groß",
+        "Nicht vergleichbar"
+      ],
+      "correct": 1,
+      "explanation": "1,5 m = 150 cm. 150 cm > 145 cm → 1,5 m ist größer. Immer in gleiche Einheit umwandeln zum Vergleich.",
+      "topic": "Vergleiche",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 112,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche dieser Längen ist die größte?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Was ist die Einheit des Volumens?",
+      "options": [
+        "m²",
+        "m",
+        "m³",
+        "cm"
+      ],
+      "correct": 2,
+      "explanation": "Volumen: m³ (Kubikmeter), cm³ (Kubikzentimeter), Liter (L). 1 L = 1 dm³. 1 m³ = 1 000 L = 1 000 000 cm³.",
+      "topic": "Volumen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 113,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Wasserbehälter fasst 1 m³. Wie viel Liter sind das?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist 1 t (Tonne) in kg?",
+      "options": [
+        "100 kg",
+        "500 kg",
+        "1 000 kg",
+        "10 000 kg"
+      ],
+      "correct": 2,
+      "explanation": "1 t (Tonne) = 1 000 kg. 1 kg = 1 000 g. 1 mg (Milligramm) = 0,001 g. Beispiel: LKW-Gewicht oft in Tonnen angegeben.",
+      "topic": "Gewichte",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 115,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie viel Kilogramm sind 1 t (Tonne)?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Was ist das Ergebnis von 100 m × 50 m (Flächeninhalt eines Schulhofs)?",
+      "options": [
+        "150 m²",
+        "500 m²",
+        "5 000 m²",
+        "1 500 m²"
+      ],
+      "correct": 2,
+      "explanation": "Fläche = Länge × Breite = 100 m × 50 m = 5 000 m² = 0,5 ha.",
+      "topic": "Sachaufgaben",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 116,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein rechteckiger Schulhof ist 100 m lang und 50 m breit. Wie groß ist seine Fläche?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Wie viel ist 6 mal 7?",
+      "options": [
+        "36",
+        "42",
+        "48",
+        "54"
+      ],
+      "correct": 1,
+      "explanation": "Diese Aufgabe ist Teil des kleinen Einmaleins. 6 multipliziert mit 7 ergibt 42.",
+      "topic": "Kleines Einmaleins (Multiplikation)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 138,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne: 12 · 7",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist das Ergebnis von 30 + 45?",
+      "options": [
+        "A) 65",
+        "B) 70",
+        "C) 75",
+        "D) 80"
+      ],
+      "correct": 2,
+      "explanation": "Du rechnest zuerst die Zehner zusammen: 30 + 40 = 70. Dann addierst du die Einer: 70 + 5 = 75.",
+      "topic": "Addition zweistelliger Zahlen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 144,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne: 386 + 247",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Multipliziere: 7 * 8",
+      "options": [
+        "A) 49",
+        "B) 54",
+        "C) 56",
+        "D) 63"
+      ],
+      "correct": 2,
+      "explanation": "Die Multiplikation von 7 mit 8 ergibt 56. Es ist wichtig, das kleine Einmaleins auswendig zu kennen.",
+      "topic": "Multiplikation (Kleines Einmaleins)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 146,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne: 24 · 15",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Teile 63 durch 9. Was ist das Ergebnis?",
+      "options": [
+        "A) 6",
+        "B) 7",
+        "C) 8",
+        "D) 9"
+      ],
+      "correct": 1,
+      "explanation": "Du suchst eine Zahl, die mit 9 multipliziert 63 ergibt. 7 * 9 = 63. Also ist 63 geteilt durch 9 gleich 7.",
+      "topic": "Division",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 147,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne: 252 : 7",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Addiere im Kopf: 25 + 15 + 30",
+      "options": [
+        "A) 60",
+        "B) 65",
+        "C) 70",
+        "D) 75"
+      ],
+      "correct": 2,
+      "explanation": "Rechne zuerst 25 + 15 = 40. Dann addiere 40 + 30 = 70.",
+      "topic": "Addition von drei Zahlen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 148,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne geschickt: 47 + 68 + 53",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist 6 * 40?",
+      "options": [
+        "A) 120",
+        "B) 180",
+        "C) 200",
+        "D) 240"
+      ],
+      "correct": 3,
+      "explanation": "Multipliziere zuerst die Zahlen ohne die Null: 6 * 4 = 24. Hänge dann die Null der 40 wieder an das Ergebnis: 240.",
+      "topic": "Multiplikation mit Zehnerzahlen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 149,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne: 40 · 250",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist das Ergebnis von 5 + 3 * 6?",
+      "options": [
+        "A) 33",
+        "B) 48",
+        "C) 18",
+        "D) 23"
+      ],
+      "correct": 3,
+      "explanation": "Bei gemischten Rechenarten gilt 'Punkt vor Strich'. Zuerst rechnest du die Multiplikation: 3 * 6 = 18. Dann addierst du die 5: 5 + 18 = 23.",
+      "topic": "Gemischte Rechenarten (Punkt vor Strich)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 151,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne: 5 + 3 · 6 - 8 : 2",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Du zählst, wie oft deine Freunde ihr Lieblingsessen nennen. Wenn 7 Freunde 'Pizza' sagen, wie würdest du das mit einer Strichliste korrekt darstellen?",
+      "options": [
+        "|||| | |",
+        "|||| ||",
+        "||||| ||",
+        "|||| |||"
+      ],
+      "correct": 2,
+      "explanation": "In Strichlisten werden Fünfergruppen gebildet, um das Zählen zu erleichtern. Eine volle Fünfergruppe wird mit vier senkrechten Strichen und einem Querstrich (|||||) dargestellt. Für 7 wären das eine Fünfergruppe und zwei einzelne Striche (||).",
+      "topic": "Strichlisten und Häufigkeit",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Allgemein.json",
+        "index": 161,
+        "basis": "ec75149",
+        "ersetztDurch": "In einer Strichliste stehen zwei volle Fünfergruppen und danach noch drei einzelne Striche. Welche Anzahl wurde damit gezählt?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Was zeigt der Nenner (die Zahl unter dem Bruchstrich) eines Bruches an?",
+      "options": [
+        "Die Anzahl der Ganzen.",
+        "Die Anzahl der gleich großen Teile, aus denen das Ganze besteht.",
+        "Die Anzahl der Teile, die man vom Ganzen hat.",
+        "Das Ergebnis der Division."
+      ],
+      "correct": 1,
+      "explanation": "Der Nenner gibt an, in wie viele gleich große Teile ein Ganzes zerlegt wurde. Er steht unter dem Bruchstrich.",
+      "topic": "Grundverständnis Bruch – Nenner",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 8,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Kuchen wurde in gleich große Stücke geteilt. 4 Stücke davon sind zusammen 2/5 des Kuchens. In wie viele Stücke wurde der Kuchen geteilt?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "Was ist ein gleichnamiger Bruch?",
+      "options": [
+        "Ein Bruch mit gleichem Zähler",
+        "Zwei Brüche mit demselben Nenner: 2/7 und 5/7 sind gleichnamig (können direkt addiert werden)",
+        "Ein Bruch mit Zähler=Nenner",
+        "Ein echter Bruch"
+      ],
+      "correct": 1,
+      "explanation": "Gleichnamige Brüche: selber Nenner. 2/7 + 5/7 = 7/7 = 1. Ungleichnamige Brüche müssen erst gleichnamig gemacht werden (Hauptnenner finden).",
+      "topic": "Brüche",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 17,
+        "basis": "ec75149",
+        "ersetztDurch": "Wann nennt man zwei Brüche gleichnamig?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie subtrahiert man Dezimalzahlen?",
+      "options": [
+        "Ohne Komma rechnen",
+        "Komma untereinander schreiben und dann wie bei ganzen Zahlen rechnen: 5,7 – 2,3 = 3,4",
+        "Komma ignorieren",
+        "Zuerst in Brüche umwandeln"
+      ],
+      "correct": 1,
+      "explanation": "Dezimalrechnung: Kommas untereinander ausrichten, ggf. Nullen anhängen. 5,70 – 2,35 = 3,35. Dann wie schriftliche Subtraktion.",
+      "topic": "Dezimalzahlen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 38,
+        "basis": "ec75149",
+        "ersetztDurch": "Was ist 5,7 – 2,35?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist der Unterschied zwischen 0,3 und 0,30?",
+      "options": [
+        "0,30 ist größer",
+        "Kein Unterschied im Wert – angehängte Nullen nach dem letzten Komma ändern den Wert nicht (0,3 = 0,30 = 0,300)",
+        "0,3 ist größer",
+        "0,30 = 3,0"
+      ],
+      "correct": 1,
+      "explanation": "0,3 = 0,30 = 0,300 (gleichwertig). Aber: 0,3 ≠ 0,03 (0,03 = drei Hundertstel, viel kleiner als 0,3 = drei Zehntel).",
+      "topic": "Dezimalzahlen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 45,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche dieser Dezimalzahlen ist die größte?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Was ist 100% von einer Zahl?",
+      "options": [
+        "Doppelt die Zahl",
+        "Die Zahl selbst – 100% bedeutet das Ganze, also der vollständige Wert",
+        "Die Hälfte der Zahl",
+        "Zehn mal die Zahl"
+      ],
+      "correct": 1,
+      "explanation": "100% = 1 (als Dezimalzahl) = Ganzes. 200% wäre das Doppelte. 50% die Hälfte. 100% von 45 = 45.",
+      "topic": "Prozent",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 49,
+        "basis": "ec75149",
+        "ersetztDurch": "Eine Jacke kostet 60 Euro und wird um 25% reduziert. Was kostet sie jetzt?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Welche Zahl muss für das Dreieck eingesetzt werden, damit die Gleichung stimmt: 7 + ▲ = 15?",
+      "options": [
+        "8",
+        "9",
+        "7",
+        "6"
+      ],
+      "correct": 0,
+      "explanation": "Um die Gleichung zu lösen, müssen wir herausfinden, welche Zahl zu 7 addiert 15 ergibt. Das ist 15 - 7 = 8. Also ist ▲ = 8.",
+      "topic": "Platzhalter in Addition (leicht)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 56,
+        "basis": "ec75149",
+        "ersetztDurch": "Was ist 3/4 + 1/6?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Zahl setzt die Zahlenreihe logisch fort? 3, 6, 9, 12, ?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "18"
+      ],
+      "correct": 1,
+      "explanation": "Diese Zahlenreihe folgt einem Muster, bei dem immer 3 zur vorherigen Zahl addiert wird. 3+3=6, 6+3=9, 9+3=12. Die nächste Zahl ist also 12 + 3 = 15.",
+      "topic": "Zahlenmuster erkennen (leicht)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 57,
+        "basis": "ec75149",
+        "ersetztDurch": "Kürze den Bruch 36/48 so weit wie möglich.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Finde die fehlende Zahl: 4 × □ = 24",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 1,
+      "explanation": "Um die fehlende Zahl zu finden, müssen wir überlegen, welche Zahl mal 4 multipliziert 24 ergibt. Das ist 24 geteilt durch 4, also 6.",
+      "topic": "Platzhalter in Multiplikation (mittel)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 58,
+        "basis": "ec75149",
+        "ersetztDurch": "Von 30 Schülern fahren 2/5 mit dem Bus. Wie viele Schüler sind das?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "In einem Kino sind in jeder Reihe 12 Sitze. 's' ist die Anzahl der Sitze in 5 Reihen. Welche Gleichung beschreibt 's' korrekt?",
+      "options": [
+        "s = 12 + 5",
+        "s = 12 × 5",
+        "s = 12 - 5",
+        "s = 12 / 5"
+      ],
+      "correct": 1,
+      "explanation": "Um die Gesamtzahl der Sitze in 5 Reihen zu finden, wenn jede Reihe 12 Sitze hat, multiplizieren wir die Anzahl der Sitze pro Reihe mit der Anzahl der Reihen: 12 × 5. Also ist s = 12 × 5.",
+      "topic": "Aufstellen einfacher Gleichungen aus Text (schwer)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 63,
+        "basis": "ec75149",
+        "ersetztDurch": "Schreibe den Bruch 17/4 als gemischte Zahl.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Wert muss für das Kästchen eingesetzt werden, damit die Gleichung stimmt?\n7 + 5 = □ + 8",
+      "options": [
+        "A) 3",
+        "B) 4",
+        "C) 5",
+        "D) 6"
+      ],
+      "correct": 1,
+      "explanation": "Zuerst berechnest du die linke Seite: 7 + 5 = 12. Dann überlegst du, welche Zahl du zu 8 addieren musst, um 12 zu erhalten, oder du rechnest 12 - 8 = 4. Also muss 4 in das Kästchen.",
+      "topic": "Gleichgewicht der Gleichung",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 64,
+        "basis": "ec75149",
+        "ersetztDurch": "Kürze 24/36 so weit wie möglich.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Löse die Gleichung nach x auf:\nx + 12 = 25",
+      "options": [
+        "A) 10",
+        "B) 13",
+        "C) 15",
+        "D) 17"
+      ],
+      "correct": 1,
+      "explanation": "Um x zu finden, musst du die Umkehraufgabe bilden. Wenn x + 12 = 25 ist, dann ist x = 25 - 12. Das Ergebnis ist 13.",
+      "topic": "Lösen von Additionsgleichungen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 65,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher dieser Brüche ist der größte?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Zahl muss anstelle von y stehen, damit die Gleichung richtig ist?\n30 - y = 17",
+      "options": [
+        "A) 13",
+        "B) 15",
+        "C) 17",
+        "D) 23"
+      ],
+      "correct": 0,
+      "explanation": "Um y zu finden, fragst du dich, welche Zahl du von 30 abziehen musst, um 17 zu erhalten. Oder du rechnest 30 - 17. Das Ergebnis ist 13.",
+      "topic": "Lösen von Subtraktionsgleichungen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 66,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne 2/3 + 1/4.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Finde den Wert von z in dieser Gleichung:\n4 * z = 36",
+      "options": [
+        "A) 7",
+        "B) 8",
+        "C) 9",
+        "D) 12"
+      ],
+      "correct": 2,
+      "explanation": "Um z zu finden, musst du die Umkehraufgabe bilden. Wenn 4 mal z 36 ist, dann ist z = 36 geteilt durch 4. Das Ergebnis ist 9.",
+      "topic": "Lösen von Multiplikationsgleichungen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 67,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne 3 1/4 – 1 3/4.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Zahl ist a?\na : 6 = 8",
+      "options": [
+        "A) 42",
+        "B) 48",
+        "C) 54",
+        "D) 60"
+      ],
+      "correct": 1,
+      "explanation": "Um a zu finden, musst du die Umkehraufgabe bilden. Wenn a geteilt durch 6 gleich 8 ist, dann ist a = 8 mal 6. Das Ergebnis ist 48.",
+      "topic": "Lösen von Divisionsgleichungen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 68,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne 5/6 von 12.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Tim hat 8 Murmeln. Er bekommt von seiner Schwester noch einige Murmeln dazu. Jetzt hat er insgesamt 15 Murmeln. Mit welcher Gleichung findest du heraus, wie viele Murmeln er dazubekommen hat (x)?",
+      "options": [
+        "A) 15 - 8 = x",
+        "B) 8 + x = 15",
+        "C) 8 * x = 15",
+        "D) x : 8 = 15"
+      ],
+      "correct": 1,
+      "explanation": "Tim hatte 8 Murmeln (8), dazu kommen 'x' Murmeln (+ x), und das Ergebnis sind 15 Murmeln (= 15). Die Gleichung, die das beschreibt, ist 8 + x = 15.",
+      "topic": "Gleichungen aufstellen aus Textaufgaben",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 69,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne 3/4 : 1/2.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Bestimme den Wert von k:\n10 + k = 3 * 7",
+      "options": [
+        "A) 9",
+        "B) 11",
+        "C) 13",
+        "D) 21"
+      ],
+      "correct": 1,
+      "explanation": "Zuerst berechnest du die rechte Seite der Gleichung: 3 * 7 = 21. Dann hast du 10 + k = 21. Um k zu finden, rechnest du 21 - 10, was 11 ergibt.",
+      "topic": "Gleichungen mit gemischten Operationen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 70,
+        "basis": "ec75149",
+        "ersetztDurch": "In einer Klasse sind 40 Kinder. 3/8 davon fahren mit dem Rad zur Schule. Wie viele Kinder sind das?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Das Doppelte einer unbekannten Zahl ist 18. Wie lautet diese Zahl?",
+      "options": [
+        "A) 6",
+        "B) 9",
+        "C) 12",
+        "D) 36"
+      ],
+      "correct": 1,
+      "explanation": "Das 'Doppelte' einer Zahl bedeutet, die Zahl mal 2 zu nehmen. Wenn also 'Zahl * 2 = 18' ist, dann ist die Zahl = 18 geteilt durch 2. Das Ergebnis ist 9.",
+      "topic": "Sachaufgaben mit Verdopplung",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 71,
+        "basis": "ec75149",
+        "ersetztDurch": "Schreibe 5/8 als Dezimalzahl.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Zahl gehört in die Lücke, damit die Gleichung stimmt? ___ + 7 = 15",
+      "options": [
+        "A) 6",
+        "B) 8",
+        "C) 7",
+        "D) 9"
+      ],
+      "correct": 1,
+      "explanation": "Um die fehlende Zahl zu finden, kannst du die Umkehraufgabe rechnen: 15 - 7 = 8.",
+      "topic": "Addition, unbekannter Summand",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 72,
+        "basis": "ec75149",
+        "ersetztDurch": "Schreibe 0,4 als möglichst weit gekürzten Bruch.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Löse die Gleichung: x - 4 = 9",
+      "options": [
+        "A) 5",
+        "B) 13",
+        "C) 10",
+        "D) 14"
+      ],
+      "correct": 1,
+      "explanation": "Die Umkehraufgabe zur Subtraktion ist die Addition: 9 + 4 = 13. Wenn x = 13, dann ist 13 - 4 = 9.",
+      "topic": "Subtraktion, unbekannter Minuend",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 73,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher Bruch hat denselben Wert wie 3/5?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Finde den Wert für y in der Gleichung: 3 * y = 21",
+      "options": [
+        "A) 6",
+        "B) 7",
+        "C) 8",
+        "D) 9"
+      ],
+      "correct": 1,
+      "explanation": "Um y zu finden, teilst du 21 durch 3, denn 3 mal 7 ist 21. Die Umkehraufgabe ist 21 : 3 = 7.",
+      "topic": "Multiplikation, unbekannter Faktor",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 74,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher Bruch liegt zwischen 1/2 und 3/4?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Zahl muss durch 5 geteilt werden, damit das Ergebnis 6 ist? Das kann man als Gleichung schreiben: z : 5 = 6",
+      "options": [
+        "A) 11",
+        "B) 1",
+        "C) 30",
+        "D) 25"
+      ],
+      "correct": 2,
+      "explanation": "Die Umkehraufgabe zur Division ist die Multiplikation: 6 * 5 = 30. Wenn z = 30, dann ist 30 : 5 = 6.",
+      "topic": "Division, unbekannter Dividend",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 75,
+        "basis": "ec75149",
+        "ersetztDurch": "Für ein Rezept braucht man 3/4 Liter Milch. Im Kühlschrank steht noch 1/3 Liter. Wie viel Liter Milch fehlen?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "Wenn man zu einer unbekannten Zahl 6 addiert, erhält man 20. Welche Zahl ist die unbekannte Zahl?",
+      "options": [
+        "A) 14",
+        "B) 26",
+        "C) 12",
+        "D) 16"
+      ],
+      "correct": 0,
+      "explanation": "Du kannst diese Aufgabe als Gleichung schreiben: Zahl + 6 = 20. Um die Zahl zu finden, rechnest du 20 - 6 = 14.",
+      "topic": "Textaufgabe, Addition",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 76,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie viele Achtel ergeben zusammen 3/4?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Zahl macht die folgende Gleichung wahr? 10 + 5 = ___ * 5",
+      "options": [
+        "A) 2",
+        "B) 3",
+        "C) 4",
+        "D) 5"
+      ],
+      "correct": 1,
+      "explanation": "Zuerst rechnest du die linke Seite der Gleichung aus: 10 + 5 = 15. Dann überlegst du, welche Zahl mit 5 multipliziert 15 ergibt: 3 * 5 = 15. Also ist die fehlende Zahl 3.",
+      "topic": "Gleichheit von Termen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 77,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Fünftel einer Zahl ist 7. Wie groß ist die Zahl?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Löse die Gleichung nach x auf: 30 - x = 12",
+      "options": [
+        "A) 18",
+        "B) 42",
+        "C) 15",
+        "D) 20"
+      ],
+      "correct": 0,
+      "explanation": "Hier subtrahierst du x von 30. Du fragst dich: Was muss von 30 abgezogen werden, um 12 zu erhalten? Oder du rechnest 30 - 12 = 18. Wenn x = 18, dann ist 30 - 18 = 12.",
+      "topic": "Subtraktion, unbekannter Subtrahend",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 78,
+        "basis": "ec75149",
+        "ersetztDurch": "Welcher dieser Brüche ist vollständig gekürzt?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Lara hat 45 Kekse und möchte diese gerecht an ihre Freunde verteilen. Jeder Freund soll 9 Kekse bekommen. Wie viele Freunde hat Lara? Welche Gleichung passt dazu und was ist die Lösung?",
+      "options": [
+        "A) f * 9 = 45; f = 5",
+        "B) 45 + f = 9; f = -36",
+        "C) 45 : f = 9; f = 5",
+        "D) 45 - f = 9; f = 36"
+      ],
+      "correct": 2,
+      "explanation": "Die Gesamtzahl der Kekse (45) geteilt durch die Anzahl der Freunde (f) muss die Kekse pro Freund (9) ergeben. Die passende Gleichung ist 45 : f = 9. Um f zu finden, rechnest du 45 : 9 = 5.",
+      "topic": "Textaufgabe, Division, unbekannter Divisor",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 79,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne 1/2 + 1/4 + 1/8.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie rechnet man 1/4 + 2/4?",
+      "options": [
+        "3/8",
+        "2/4",
+        "3/4",
+        "1/2"
+      ],
+      "correct": 2,
+      "explanation": "Gleicher Nenner: Zähler addieren: 1+2 = 3, Nenner bleibt: 3/4.",
+      "topic": "Addieren von Brüchen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 83,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne 1/4 + 2/4.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie kürzt man 4/8?",
+      "options": [
+        "2/4",
+        "1/2",
+        "3/6",
+        "8/4"
+      ],
+      "correct": 1,
+      "explanation": "4/8 ÷ 4 = 1/2.",
+      "topic": "Kürzen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 85,
+        "basis": "ec75149",
+        "ersetztDurch": "Kürze 4/8 so weit wie möglich.",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "2/3 · 3/4 =",
+      "options": [
+        "5/7",
+        "6/12 = 1/2",
+        "2/4",
+        "4/6"
+      ],
+      "correct": 1,
+      "explanation": "Brüche multiplizieren: 2·3 / 3·4 = 6/12 = 1/2.",
+      "topic": "Multiplizieren",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 86,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne 2/3 · 3/4.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "1/2 + 1/3 =",
+      "options": [
+        "2/5",
+        "2/6",
+        "5/6",
+        "3/5"
+      ],
+      "correct": 2,
+      "explanation": "gem. Nenner 6: 3/6 + 2/6 = 5/6.",
+      "topic": "Addieren",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 89,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne 1/2 + 1/3.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "3/4 – 1/4 =",
+      "options": [
+        "2/8",
+        "1/2",
+        "4/8",
+        "2/4"
+      ],
+      "correct": 1,
+      "explanation": "3/4 – 1/4 = 2/4 = 1/2.",
+      "topic": "Subtrahieren",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 90,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne 5/8 – 1/4.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "6/8 gekürzt:",
+      "options": [
+        "2/4",
+        "3/4",
+        "1/2",
+        "4/6"
+      ],
+      "correct": 1,
+      "explanation": "6/8 ÷ 2 = 3/4.",
+      "topic": "Kürzen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Bruchrechnung.json",
+        "index": 92,
+        "basis": "ec75149",
+        "ersetztDurch": "Kürze 6/8 so weit wie möglich.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welches dieser Vierecke hat vier gleich lange Seiten und vier rechte Winkel?",
+      "options": [
+        "Ein Dreieck",
+        "Ein Kreis",
+        "Ein Rechteck",
+        "Ein Quadrat"
+      ],
+      "correct": 3,
+      "explanation": "Ein Quadrat ist ein besonderes Rechteck, bei dem alle vier Seiten die gleiche Länge haben und alle Winkel rechte Winkel sind.",
+      "topic": "Eigenschaften von Vierecken",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 3,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Rechteck ist 11 cm lang und 5 cm breit. Ein Quadrat hat den gleichen Umfang. Wie lang ist eine Seite des Quadrats?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Welches der folgenden Merkmale trifft immer auf ein Quadrat zu?",
+      "options": [
+        "Es hat immer drei Ecken.",
+        "Alle vier Seiten sind gleich lang.",
+        "Es hat keine rechten Winkel.",
+        "Es hat nur zwei Seiten."
+      ],
+      "correct": 1,
+      "explanation": "Ein Quadrat ist eine besondere Art von Viereck. Es hat vier gleich lange Seiten und vier rechte Winkel.",
+      "topic": "Eigenschaften von Grundformen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 16,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Quadrat hat einen Umfang von 36 cm. Wie groß ist sein Flächeninhalt?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Aus wie vielen Flächen besteht die Oberfläche eines Würfels?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": 1,
+      "explanation": "Ein Würfel ist ein besonderer Quader, dessen Oberfläche aus sechs quadratischen Flächen besteht. Diese Flächen nennt man Begrenzungsflächen oder Seitenflächen.",
+      "topic": "Eigenschaften von Körpern",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 19,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Würfel hat eine Kantenlänge von 4 cm. Wie lang sind alle seine Kanten zusammen?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Welche Beschreibung passt am besten zu einem rechten Winkel?",
+      "options": [
+        "Er ist immer spitzer als ein stumpfer Winkel.",
+        "Er hat genau 90 Grad und sieht aus wie die Ecke eines Quadrats.",
+        "Er ist immer größer als 180 Grad.",
+        "Er ist immer kleiner als ein spitzer Winkel."
+      ],
+      "correct": 1,
+      "explanation": "Ein rechter Winkel misst genau 90 Grad. Er ist charakteristisch für die Ecken von Rechtecken oder Quadraten und wird oft mit einem kleinen Quadrat in der Winkelspitze gekennzeichnet.",
+      "topic": "Winkel",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 21,
+        "basis": "ec75149",
+        "ersetztDurch": "Um wie viel Grad dreht sich der Minutenzeiger einer Uhr in 10 Minuten?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist ein rechter Winkel?",
+      "options": [
+        "Ein Winkel von 45°",
+        "Ein Winkel von 90°",
+        "Ein Winkel von 180°",
+        "Ein Winkel von 60°"
+      ],
+      "correct": 1,
+      "explanation": "Ein rechter Winkel beträgt genau 90°. Er wird mit einem kleinen Quadrat im Eck markiert. Beispiel: Ecken eines Rechtecks.",
+      "topic": "Winkel",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 29,
+        "basis": "ec75149",
+        "ersetztDurch": "In einem Dreieck sind zwei Winkel 50° und 60° groß. Wie groß ist der dritte Winkel?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Welche Form hat eine Münze?",
+      "options": [
+        "Rechteck",
+        "Dreieck",
+        "Kreis",
+        "Quadrat"
+      ],
+      "correct": 2,
+      "explanation": "Münzen sind kreisförmig (rund). Ein Kreis hat keinen Eckpunkt und keine Kante – nur einen Mittelpunkt und einen Radius.",
+      "topic": "Kreis",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 32,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Kreis hat einen Durchmesser von 14 cm. Wie lang ist sein Radius?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Fläche und Volumen?",
+      "options": [
+        "Es gibt keinen Unterschied",
+        "Fläche misst zweidimensionale Ausdehnung (cm²), Volumen misst dreidimensionale Ausdehnung (cm³)",
+        "Volumen ist immer kleiner",
+        "Fläche ist immer größer"
+      ],
+      "correct": 1,
+      "explanation": "Fläche: Ausdehnung einer Ebene (m², cm²). Volumen: Inhalt eines Körpers (m³, cm³, Liter). Fläche 2D, Volumen 3D.",
+      "topic": "Fläche und Volumen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 42,
+        "basis": "ec75149",
+        "ersetztDurch": "Worin unterscheiden sich Flächeninhalt und Volumen?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "In welcher Einheit misst man Flächeninhalte?",
+      "options": [
+        "cm",
+        "cm²",
+        "cm³",
+        "m"
+      ],
+      "correct": 1,
+      "explanation": "Fläche: cm² (Quadratzentimeter), m² (Quadratmeter). Längen in cm oder m, Volumen in cm³ oder m³.",
+      "topic": "Einheiten",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 45,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie viele Quadratzentimeter sind 3 m²?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie viele Grad hat die Winkelsumme im Dreieck?",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct": 1,
+      "explanation": "Winkelsumme Dreieck = immer 180°. Beweis: Winkel eines Dreiecks an einer Geraden anlegen → gestreckte Linie = 180°.",
+      "topic": "Dreieck",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 46,
+        "basis": "ec75149",
+        "ersetztDurch": "In einem Dreieck sind zwei Winkel 40° und 65° groß. Wie groß ist der dritte Winkel?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Was ist ein Koordinatensystem?",
+      "options": [
+        "Ein Kompass",
+        "Ein System aus zwei senkrecht aufeinander stehenden Zahlengeraden (x-Achse, y-Achse) zur Ortsbestimmung von Punkten",
+        "Ein Lineal",
+        "Eine Tabelle"
+      ],
+      "correct": 1,
+      "explanation": "Koordinatensystem: Punkt P(3; 5) bedeutet x=3 (rechts), y=5 (oben). Schnittpunkt der Achsen = Ursprung O(0;0).",
+      "topic": "Koordinatensystem",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 56,
+        "basis": "ec75149",
+        "ersetztDurch": "Der Punkt P(3 | 5) wird an der y-Achse gespiegelt. Welche Koordinaten hat der Bildpunkt P'?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist der Umfang eines gleichseitigen Dreiecks mit Seitenlänge 8 cm?",
+      "options": [
+        "16 cm",
+        "24 cm",
+        "32 cm",
+        "8 cm"
+      ],
+      "correct": 1,
+      "explanation": "Gleichseitiges Dreieck: alle 3 Seiten gleich lang. Umfang = 3 × 8 = 24 cm.",
+      "topic": "Dreieck",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 58,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein gleichschenkliges Dreieck hat einen Umfang von 26 cm, die Basis ist 8 cm lang. Wie lang ist ein Schenkel?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Was ist Spiegelsymmetrie?",
+      "options": [
+        "Wenn eine Figur gedreht werden kann",
+        "Wenn eine Figur durch eine Achse so gespiegelt werden kann, dass beide Hälften deckungsgleich sind",
+        "Wenn eine Figur mehrfach vorkommt",
+        "Wenn eine Figur verkleinert wird"
+      ],
+      "correct": 1,
+      "explanation": "Spiegelsymmetrie: Achsensymmetrie. Beispiele: Buchstabe A, Schmetterling, Herz. Die Spiegelachse teilt die Figur in zwei gleiche Hälften.",
+      "topic": "Symmetrie",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 59,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Figur ist punktsymmetrisch, aber nicht achsensymmetrisch?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Was ist eine Maßstabszeichnung?",
+      "options": [
+        "Eine ungenaue Skizze",
+        "Eine verkleinerte oder vergrößerte Darstellung eines Objekts in einem bestimmten Verhältnis (z.B. 1:100 bedeutet 1 cm = 1 m in der Realität)",
+        "Eine Freihandzeichnung",
+        "Eine Körperdarstellung"
+      ],
+      "correct": 1,
+      "explanation": "Maßstab 1:100: 1 cm auf der Karte = 100 cm = 1 m in der Realität. Stadtpläne, Baupläne, Landkarten nutzen Maßstäbe.",
+      "topic": "Maßstab",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 61,
+        "basis": "ec75149",
+        "ersetztDurch": "Auf einem Bauplan im Maßstab 1:100 ist eine Wand 7 cm lang. Wie lang ist die Wand in Wirklichkeit?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Was bedeutet der Nenner (die untere Zahl) in einem Bruch wie 3/5?",
+      "options": [
+        "Die Gesamtzahl der Teile, die man bei einer Bruchrechnung zusammenzählt.",
+        "Die Anzahl der gleich großen Teile, in die das Ganze geteilt wurde.",
+        "Die Anzahl der Teile, die man bereits vom Ganzen genommen oder verbraucht hat.",
+        "Die obere Zahl des Bruches, die angibt, wie viele Teile gemeint sind."
+      ],
+      "correct": 1,
+      "explanation": "Der Nenner zeigt immer an, in wie viele gleich große Teile ein Ganzes aufgeteilt wurde. Die obere Zahl (Zähler) zeigt an, wie viele dieser Teile gemeint sind.",
+      "topic": "Bruchbegriffe verstehen (Nenner)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 63,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Rechteck ist 12 cm lang und 7 cm breit. Wie groß ist sein Umfang?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Eine Pizza wird in 8 gleich große Stücke geschnitten. Anna isst 3 Stücke davon. Welcher Bruch beschreibt den Anteil, den Anna gegessen hat?",
+      "options": [
+        "3/8",
+        "8/3",
+        "3/11",
+        "5/8"
+      ],
+      "correct": 0,
+      "explanation": "Die Pizza wurde in 8 gleiche Teile geteilt (Nenner = 8). Anna hat 3 dieser Teile gegessen (Zähler = 3).",
+      "topic": "Brüche benennen und darstellen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 64,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Rechteck hat einen Flächeninhalt von 48 cm² und ist 6 cm breit. Wie lang ist es?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "Eine Klasse hat 24 Schüler. Die Hälfte der Schüler sind Mädchen. Wie viele Mädchen sind in der Klasse?",
+      "options": [
+        "6",
+        "12",
+        "18",
+        "24"
+      ],
+      "correct": 1,
+      "explanation": "Die Hälfte bedeutet 1/2. Um die Hälfte von 24 zu finden, teilst du 24 durch 2. Das Ergebnis ist 12.",
+      "topic": "Bruchteile von Größen berechnen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 65,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Quadrat hat einen Umfang von 36 cm. Wie groß ist sein Flächeninhalt?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Welcher Bruch ist kleiner: 1/4 oder 1/2?",
+      "options": [
+        "1/4",
+        "1/2",
+        "Sie sind gleich groß.",
+        "Das kann man nicht eindeutig sagen."
+      ],
+      "correct": 0,
+      "explanation": "Wenn der Zähler gleich ist (hier 1), dann ist der Bruch mit dem größeren Nenner (hier 4) der kleinere Bruch, weil das Ganze in mehr Teile geteilt wurde und die einzelnen Teile somit kleiner sind.",
+      "topic": "Brüche vergleichen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 66,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie groß ist die Oberfläche eines Würfels mit der Kantenlänge 5 cm?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Welcher Bruch ist gleichwertig zu 1/3?",
+      "options": [
+        "2/3",
+        "2/6",
+        "3/6",
+        "1/6"
+      ],
+      "correct": 1,
+      "explanation": "Gleichwertige Brüche erhältst du, indem du Zähler und Nenner mit derselben Zahl multiplizierst oder dividierst. Wenn du 1/3 mit 2 erweiterst (Zähler × 2, Nenner × 2), erhältst du 2/6.",
+      "topic": "Gleichwertige Brüche (Erweitern)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 67,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie lang sind alle Kanten eines Würfels mit der Kantenlänge 4 cm zusammen?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Tim isst 1/8 eines Kuchens und Lea isst weitere 3/8 des gleichen Kuchens. Welchen Anteil des Kuchens haben sie zusammen gegessen?",
+      "options": [
+        "4/16",
+        "3/8",
+        "4/8",
+        "1/24"
+      ],
+      "correct": 2,
+      "explanation": "Um Brüche mit gleichem Nenner zu addieren, addierst du nur die Zähler und behältst den Nenner bei: 1/8 + 3/8 = (1+3)/8 = 4/8.",
+      "topic": "Brüche addieren (gleicher Nenner)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 68,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie nennt man einen Winkel von 135°?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Eine Tafel Schokolade besteht aus 10 Rippchen. Es wurden bereits 3/10 der Schokolade gegessen. Welcher Bruchteil der Schokolade ist noch übrig?",
+      "options": [
+        "3/10",
+        "7/10",
+        "10/7",
+        "13/10"
+      ],
+      "correct": 1,
+      "explanation": "Die ganze Tafel Schokolade entspricht 10/10. Wenn 3/10 gegessen wurden, rechnest du 10/10 - 3/10 = (10-3)/10 = 7/10.",
+      "topic": "Brüche subtrahieren (gleicher Nenner)",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 69,
+        "basis": "ec75149",
+        "ersetztDurch": "Zwei Winkel ergänzen sich zu einem gestreckten Winkel. Einer davon misst 115°. Wie groß ist der andere?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Ein Saftkrug ist zu 1/5 gefüllt. Um den Krug ganz zu füllen, welchen Bruchteil müsste man noch hinzufügen?",
+      "options": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ],
+      "correct": 3,
+      "explanation": "Ein ganzer Krug ist 5/5 gefüllt. Wenn bereits 1/5 gefüllt ist, fehlen noch 5/5 - 1/5 = 4/5, um ihn ganz zu füllen.",
+      "topic": "Brüche zum Ganzen ergänzen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 70,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie viel Liter passen in einen würfelförmigen Behälter mit der Kantenlänge 10 cm?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was zeigt der Nenner (die Zahl unter dem Bruchstrich) eines Bruches an?",
+      "options": [
+        "Die Gesamtanzahl der Teile, die beim Rechnen mit Brüchen zusammenkommen.",
+        "Die Anzahl der gleich großen Teile, aus denen das Ganze besteht.",
+        "Die Anzahl der Teile, die man insgesamt vom Ganzen genommen oder verbraucht hat.",
+        "Das Ergebnis, wenn man den Zähler durch die Gesamtzahl der Teile teilt."
+      ],
+      "correct": 1,
+      "explanation": "Der Nenner gibt an, in wie viele gleich große Teile ein Ganzes zerlegt wurde. Er steht unter dem Bruchstrich.",
+      "topic": "Grundverständnis Bruch – Nenner",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 71,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie groß ist die Oberfläche eines Quaders mit den Kantenlängen 6 cm, 4 cm und 2 cm?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Eine Tafel Schokolade hat insgesamt 10 Reihen. Lisa isst 3 Reihen. Welcher Bruch beschreibt den Anteil der Schokolade, den Lisa gegessen hat?",
+      "options": [
+        "10/3",
+        "3/10",
+        "7/10",
+        "1/3"
+      ],
+      "correct": 1,
+      "explanation": "Die Tafel hat 10 Reihen (Nenner). Lisa isst 3 Reihen (Zähler). Der Anteil ist also 3/10.",
+      "topic": "Bruchdarstellung",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 72,
+        "basis": "ec75149",
+        "ersetztDurch": "Um wie viel Grad dreht sich der Minutenzeiger einer Uhr in 10 Minuten?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "Welcher der folgenden Brüche ist der größte?",
+      "options": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/5"
+      ],
+      "correct": 0,
+      "explanation": "Je kleiner der Nenner bei gleichem Zähler ist, desto größer sind die einzelnen Teile und somit der Bruchwert. Ein halbes Stück ist größer als ein Drittel, Viertel oder Fünftel.",
+      "topic": "Brüche vergleichen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 73,
+        "basis": "ec75149",
+        "ersetztDurch": "Aus einem Rechteck mit den Seiten 8 cm und 5 cm wird an einer Ecke ein Quadrat mit der Seite 3 cm ausgeschnitten. Wie groß ist die Restfläche?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Welcher Bruch ist gleichwertig (hat den gleichen Wert) wie 1/2?",
+      "options": [
+        "2/3",
+        "3/4",
+        "2/4",
+        "1/4"
+      ],
+      "correct": 2,
+      "explanation": "Um einen gleichwertigen Bruch zu finden, kannst du Zähler und Nenner mit derselben Zahl multiplizieren (erweitern). Wenn du 1/2 mit 2 erweiterst, erhältst du (1*2)/(2*2) = 2/4.",
+      "topic": "Erweitern von Brüchen / Gleichwertige Brüche",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 74,
+        "basis": "ec75149",
+        "ersetztDurch": "Welche Eigenschaft hat wirklich jedes Parallelogramm?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Marie hat 2/7 einer Pizza gegessen. Ihr Bruder isst danach noch 3/7 derselben Pizza. Welchen Anteil der Pizza haben sie zusammen gegessen?",
+      "options": [
+        "5/7",
+        "1/7",
+        "5/14",
+        "6/7"
+      ],
+      "correct": 0,
+      "explanation": "Beim Addieren von Brüchen mit gleichem Nenner addiert man nur die Zähler und behält den Nenner bei: 2/7 + 3/7 = (2+3)/7 = 5/7.",
+      "topic": "Brüche addieren",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 75,
+        "basis": "ec75149",
+        "ersetztDurch": "Wie viele Ecken, Kanten und Flächen hat eine Pyramide mit quadratischer Grundfläche?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "In einer Klasse sind 20 Schüler. 1/4 (ein Viertel) der Schüler sind Mädchen. Wie viele Mädchen sind in der Klasse?",
+      "options": [
+        "4",
+        "5",
+        "10",
+        "20"
+      ],
+      "correct": 1,
+      "explanation": "Um ein Viertel von 20 zu finden, teilst du 20 durch 4: 20 : 4 = 5. Es sind 5 Mädchen in der Klasse.",
+      "topic": "Bruchteil einer Menge",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 76,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Weg ist in Wirklichkeit 250 m lang. Wie lang ist er auf einer Karte im Maßstab 1:5000?",
+        "aehnlichkeit": 0.16
+      }
+    },
+    {
+      "question": "Ordne die folgenden Brüche der Größe nach, beginnend mit dem kleinsten Bruch: 1/5, 1/2, 1/10.",
+      "options": [
+        "1/2, 1/5, 1/10",
+        "1/10, 1/5, 1/2",
+        "1/5, 1/10, 1/2",
+        "1/2, 1/10, 1/5"
+      ],
+      "correct": 1,
+      "explanation": "Bei Brüchen mit gleichem Zähler ist der Bruch mit dem größten Nenner der kleinste. Ein Zehntel ist kleiner als ein Fünftel, und ein Fünftel ist kleiner als ein Halbes. Also: 1/10 < 1/5 < 1/2.",
+      "topic": "Brüche ordnen",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 77,
+        "basis": "ec75149",
+        "ersetztDurch": "Die Punkte A(1 | 1), B(6 | 1), C(6 | 4) und D(1 | 4) bilden ein Rechteck. Wie groß ist sein Flächeninhalt in Flächeneinheiten (FE)?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "Ein Kuchen wurde in 12 gleich große Stücke geteilt. Wenn noch 3/4 des Kuchens übrig sind, wie viele Stücke sind das?",
+      "options": [
+        "3 Stücke",
+        "4 Stücke",
+        "9 Stücke",
+        "12 Stücke"
+      ],
+      "correct": 2,
+      "explanation": "Um 3/4 von 12 Stücken zu berechnen, teilst du die Gesamtanzahl (12) durch den Nenner (4) und multiplizierst das Ergebnis mit dem Zähler (3): (12 : 4) * 3 = 3 * 3 = 9 Stücke.",
+      "topic": "Bruch als Teil eines Ganzen / Sachaufgabe",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Geometrie.json",
+        "index": 78,
+        "basis": "ec75149",
+        "ersetztDurch": "Ein Dreieck hat einen Flächeninhalt von 24 cm² und eine Grundseite von 8 cm. Wie hoch ist es?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Beachte die Vorrangregeln: 15 + 5 * 4",
+      "options": [
+        "80",
+        "24",
+        "35",
+        "45"
+      ],
+      "correct": 2,
+      "explanation": "Es gilt 'Punkt vor Strich'. Berechne zuerst 5 * 4 = 20 und addiere dann 15 + 20 = 35.",
+      "topic": "Rechengesetze",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Kopfrechnen.json",
+        "index": 3,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne: (24 + 16) : 8 + 7",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Du zählst, wie oft deine Freunde ihr Lieblingsessen nennen. Wenn 7 Freunde 'Pizza' sagen, wie würdest du das mit einer Strichliste korrekt darstellen?",
+      "options": [
+        "|||| | |",
+        "|||| ||",
+        "||||| ||",
+        "|||| |||"
+      ],
+      "correct": 2,
+      "explanation": "In Strichlisten werden Fünfergruppen gebildet, um das Zählen zu erleichtern. Eine volle Fünfergruppe wird mit vier senkrechten Strichen und einem Querstrich (|||||) dargestellt. Für 7 wären das eine Fünfergruppe und zwei einzelne Striche (||).",
+      "topic": "Strichlisten und Häufigkeit",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Statistik.json",
+        "index": 9,
+        "basis": "ec75149",
+        "ersetztDurch": "In einer Strichliste stehen drei volle Fünferbündel und danach zwei einzelne Striche. Für welche Anzahl steht diese Strichliste?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Was zeigt dir eine Häufigkeitstabelle an?",
+      "options": [
+        "Nur die größten Werte einer Messung",
+        "Die Reihenfolge, in der Daten gesammelt wurden",
+        "Wie oft jeder einzelne Wert in einer Datensammlung vorkommt",
+        "Die Meinungen von Leuten zu einem Thema"
+      ],
+      "correct": 2,
+      "explanation": "Eine Häufigkeitstabelle ordnet die gesammelten Daten und zeigt genau, wie oft (die 'Häufigkeit') jeder unterschiedliche Wert auftritt.",
+      "topic": "Häufigkeitstabelle",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Statistik.json",
+        "index": 14,
+        "basis": "ec75149",
+        "ersetztDurch": "In einer Klasse mit 20 Kindern nennen 8 Kinder Fußball als Lieblingssport. Wie groß ist die relative Häufigkeit von Fußball?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Du hast aufgeschrieben, welche Farben die Autos haben, die in 10 Minuten an deinem Fenster vorbeifahren. Was wäre der sinnvollste nächste Schritt, um diese Daten klar und übersichtlich darzustellen?",
+      "options": [
+        "Die Farben der nächsten Autos erraten",
+        "Eine Frequenz-Tabelle oder eine sortierte Liste erstellen",
+        "Die Autos eine weitere Stunde lang zählen",
+        "Die Summe aller Farben berechnen"
+      ],
+      "correct": 1,
+      "explanation": "Nach dem Sammeln der Daten ist der nächste logische Schritt, sie zu organisieren und aufzubereiten. Eine Frequenz-Tabelle oder eine sortierte Liste macht die Häufigkeit jeder Farbe sofort erkennbar und leicht verständlich für andere.",
+      "topic": "Datenorganisation und -darstellung",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Statistik.json",
+        "index": 15,
+        "basis": "ec75149",
+        "ersetztDurch": "Bei einer Umfrage nach der Lieblingsfarbe wurden die Antworten rot, blau, grün und gelb gezählt. Welche Kennzahl lässt sich aus diesen Daten sinnvoll bestimmen?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Welche Art von Diagramm für 'Lieblingsfächer von 30 Schülern'?",
+      "options": [
+        "Liniendiagramm",
+        "Säulendiagramm oder Kreisdiagramm – Säule für absoluten Vergleich (wie viele pro Fach), Kreis für relative Anteile (wie viel Prozent pro Fach)",
+        "Punktediagramm",
+        "Histogramm"
+      ],
+      "correct": 1,
+      "explanation": "Kategorialer Vergleich: Säulen- oder Balkendiagramm (absolut) oder Kreisdiagramm (relativ). Kein Liniendiagramm (kein zeitlicher Verlauf!). Frage entscheidet: 'Wie viele?' → Säule. 'Wie viel Prozent?' → Kreis.",
+      "topic": "Diagramme",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Statistik.json",
+        "index": 34,
+        "basis": "ec75149",
+        "ersetztDurch": "Womit vergleicht man die Anzahl der Nennungen je Lieblingsfach von 30 Schülern am besten?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Was bedeutet 100% im Kreisdiagramm?",
+      "options": [
+        "Die Hälfte",
+        "Das Gesamte (Ganzes) – alle Werte zusammen. Jeder Sektor zeigt den Anteil am Ganzen. 50% = Halbkreis. 25% = Viertelkreis. Alle Prozente müssen zusammen 100% ergeben",
+        "Der Mittelwert",
+        "Der häufigste Wert"
+      ],
+      "correct": 1,
+      "explanation": "Kreisdiagramm: Summe aller Sektoren = 100%. Kontrollrechnung: Alle Prozentwerte addieren → muss 100 ergeben. Winkel berechnen: 1% = 3,6°; 50% = 180°; 25% = 90°; 10% = 36°.",
+      "topic": "Diagramme",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Statistik.json",
+        "index": 35,
+        "basis": "ec75149",
+        "ersetztDurch": "In einem Kreisdiagramm sind drei Sektoren mit 20%, 35% und 15% beschriftet. Wie groß ist der vierte Anteil?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Was bedeutet 'Daten auswerten'?",
+      "options": [
+        "Daten löschen",
+        "Daten analysieren und interpretieren – Mittelwert, Median, Modus berechnen, Häufigkeiten bestimmen, Diagramme erstellen, Schlussfolgerungen ziehen",
+        "Daten erheben",
+        "Daten darstellen"
+      ],
+      "correct": 1,
+      "explanation": "Auswertung: nach Erhebung (Rohdaten) → sortieren, rechnen (Mittelwert, Median...) → darstellen (Diagramm) → interpretieren (Was bedeuten die Daten? Auffälligkeiten? Ausreißer?).",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Statistik.json",
+        "index": 39,
+        "basis": "ec75149",
+        "ersetztDurch": "Fünf Kinder sind 132, 145, 138, 150 und 141 cm groß. Wie groß ist der Median?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wofür ist Statistik wichtig?",
+      "options": [
+        "Nur für Mathematiker",
+        "Für viele Bereiche des Lebens: Wissenschaft (Studien), Wirtschaft (Verkaufszahlen), Politik (Wahlen), Medizin (Krankheitsverläufe), Wetter (Prognosen), Sport (Leistungsanalyse)",
+        "Nur für Wahlen",
+        "Nur für Schulen"
+      ],
+      "correct": 1,
+      "explanation": "Statistik: 'Wissenschaft der Zahlen'. Ziel: aus Daten Erkenntnisse gewinnen. Statistiken können auch manipuliert werden (irreführende Diagramme, schlechte Stichproben). Kritisch lesen!",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Statistik.json",
+        "index": 42,
+        "basis": "ec75149",
+        "ersetztDurch": "Vier Kinder sind im Mittel 10 Jahre alt. Drei von ihnen sind 8, 9 und 11 Jahre alt. Wie alt ist das vierte Kind?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welche grafische Darstellung eignet sich am besten, um die Bevölkerungsverteilung nach Altersgruppen zu zeigen?",
+      "options": [
+        "Liniendiagramm",
+        "Säulendiagramm oder Balkendiagramm – zum Vergleich der Anzahl von Personen in verschiedenen Altersgruppen (Kategorien)",
+        "Punktdiagramm",
+        "Kreisdiagramm allein"
+      ],
+      "correct": 1,
+      "explanation": "Altersgruppen = Kategorien (kein zeitlicher Verlauf einer einzelnen Größe). Säulen-/Balkendiagramm zeigt Vergleich am übersichtlichsten. Eine Bevölkerungspyramide (spezielle Form) zeigt zudem Geschlecht und Alter zusammen.",
+      "topic": "Diagramme",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Statistik.json",
+        "index": 54,
+        "basis": "ec75149",
+        "ersetztDurch": "Womit vergleicht man die Einwohnerzahlen verschiedener Altersgruppen am besten?",
+        "aehnlichkeit": 0.19
+      }
+    },
+    {
+      "question": "Spannweite von 3, 7, 2, 9, 5?",
+      "options": [
+        "6",
+        "7",
+        "5",
+        "4"
+      ],
+      "correct": 1,
+      "explanation": "Max=9, Min=2 → 9−2=7.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k5__Mathematik__Statistik.json",
+        "index": 73,
+        "basis": "ec75149",
+        "ersetztDurch": "Berechne die Spannweite der Werte 12, 6, 8, 20, 9:",
+        "aehnlichkeit": 0.17
+      }
+    }
+  ]
+}
