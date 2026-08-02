@@ -11,15 +11,22 @@
 const fs   = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..');
+// --dir <ordner> prueft einen Unterordner (z.B. questionbank/ = Firebase-Spiegel),
+// sonst die Block-Dateien im Projektroot.
+const dirArg = process.argv.indexOf('--dir');
+const ROOT = dirArg > -1
+  ? path.resolve(__dirname, '..', process.argv[dirArg + 1])
+  : path.join(__dirname, '..');
+
 const arg     = process.argv[2];
 const VERBOSE = process.argv.includes('--verbose');
+const SUMMARY = process.argv.includes('--summary');
 
-if (!arg) { console.error('Aufruf: node check_questions.js <praefix|--all> [--verbose]'); process.exit(1); }
+if (!arg) { console.error('Aufruf: node check_questions.js <praefix|--all> [--dir <ordner>] [--verbose|--summary]'); process.exit(1); }
 
 const files = fs.readdirSync(ROOT)
-  .filter(f => f.endsWith('.json'))
-  .filter(f => arg === '--all' ? /^klasse\d+[_\w]*\.json$/.test(f) : f.startsWith(arg))
+  .filter(f => f.endsWith('.json') && f !== '_index.json')
+  .filter(f => arg === '--all' ? true : f.startsWith(arg))
   .sort();
 
 if (!files.length) { console.error('Keine passenden Dateien.'); process.exit(1); }
@@ -126,7 +133,7 @@ for (const file of files) {
   totalFindings += n;
   summary.push([file, qs.length, n]);
 
-  if (n) {
+  if (n && !SUMMARY) {
     console.log(`\n### ${file}  (${qs.length} Fragen)`);
     const LABEL = {
       struct:'STRUKTUR', dupOpt:'IDENTISCHE OPTIONEN', numDup:'WERTGLEICHE ZAHLEN',
