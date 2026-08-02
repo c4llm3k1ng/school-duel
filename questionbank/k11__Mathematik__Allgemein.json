@@ -1,55 +1,55 @@
 [
   {
     "correct": 0,
-    "explanation": "Um die ursprüngliche Funktion zu finden, muss man die gegebene Ableitungsfunktion integrieren oder die Ableitungen der Antwortoptionen bilden. Die Ableitung von f(x) = 2x^3 - 2x^2 + 5x + 1 ist 2*3x^(3-1) - 2*2x^(2-1) + 5*1x^(1-1) + 0 = 6x^2 - 4x + 5. Die Konstante C verschwindet beim Ableiten.",
+    "explanation": "Am schnellsten leitet man die Optionen ab. Für f(x) = 2x³ - 2x² + 5x + 1 gilt f'(x) = 3·2x² - 2·2x + 5 = 6x² - 4x + 5. Die anderen Terme liefern 18x² - 8x + 5, 9x² - 4x + 5 bzw. 36x² - 16x + 10. Gleichwertig kann man 6x² - 4x + 5 integrieren und erhält 2x³ - 2x² + 5x + C, wobei die Konstante C beim Ableiten wegfällt.",
     "options": [
-      "A) f(x) = 2x^3 - 2x^2 + 5x + 1",
-      "B) f(x) = 6x^3 - 4x^2 + 5x - 7",
-      "C) f(x) = 3x^3 - 2x^2 + 5x",
-      "D) f(x) = 18x - 8"
+      "f(x) = 2x³ - 2x² + 5x + 1",
+      "f(x) = 6x³ - 4x² + 5x - 7",
+      "f(x) = 3x³ - 2x² + 5x + 4",
+      "f(x) = 12x³ - 8x² + 10x - 3"
     ],
-    "question": "Welche der folgenden Funktionen hat die Ableitungsfunktion f'(x) = 6x^2 - 4x + 5?",
+    "question": "Welche der folgenden Funktionen hat die Ableitungsfunktion f'(x) = 6x² - 4x + 5?",
     "topic": "Differentialrechnung – Ableitungsregeln"
   },
   {
     "correct": 2,
-    "explanation": "Um die Nullstellen zu finden, setzt man f(x) = 0: x^3 - 3x^2 + 2x = 0. Ausklammern von x ergibt x(x^2 - 3x + 2) = 0. Eine Nullstelle ist x_1 = 0. Für die anderen Nullstellen löst man x^2 - 3x + 2 = 0 mit der Mitternachtsformel (oder pq-Formel): x_2 = 1, x_3 = 2. Es gibt also drei Nullstellen. Die anderen Aussagen sind falsch: Ein lokales Minimum ist nicht bei x=1 (f'(1)=0, f''(1)=-2, also Wendepunkt). Die Funktion ist auch nicht immer streng monoton steigend, da sie Extrempunkte besitzt.",
+    "explanation": "Aus f(x) = 0 folgt x(x² - 3x + 2) = 0, also x(x - 1)(x - 2) = 0 mit den Nullstellen x₁ = 0, x₂ = 1 und x₃ = 2 – das sind drei Stück. Die übrigen Aussagen sind falsch: Wegen f'(x) = 3x² - 6x + 2 ist f'(1) = -1 ≠ 0, bei x = 1 liegt also kein Extrempunkt, sondern wegen f''(1) = 0 der Wendepunkt. Und weil f die Extremstellen 1 ± 1/√(3) besitzt, ist f auch nicht überall streng monoton steigend.",
     "options": [
-      "A) Die Funktion hat genau eine Nullstelle.",
-      "B) Die Funktion hat bei x=1 ein lokales Minimum.",
-      "C) Die Funktion hat drei Nullstellen.",
-      "D) Die Funktion ist streng monoton steigend für alle x aus R."
+      "Die Funktion hat genau eine Nullstelle.",
+      "Die Funktion hat bei x = 1 ein lokales Minimum.",
+      "Die Funktion hat drei Nullstellen.",
+      "Die Funktion ist auf ganz R streng monoton steigend."
     ],
-    "question": "Welche Aussage über die Funktion f(x) = x^3 - 3x^2 + 2x ist korrekt?",
+    "question": "Welche Aussage über die Funktion f(x) = x³ - 3x² + 2x ist korrekt?",
     "topic": "Kurvendiskussion – Nullstellen"
   },
   {
     "correct": 2,
-    "explanation": "Hier wird die Produktregel f'(x) = u'v + uv' angewendet, wobei u = e^(2x) und v = x - 1. Die Ableitung von u ist u' = 2e^(2x) (Kettenregel). Die Ableitung von v ist v' = 1. Also f'(x) = (2e^(2x)) * (x - 1) + e^(2x) * (1) = e^(2x) * (2(x - 1) + 1) = e^(2x) * (2x - 2 + 1) = e^(2x) * (2x - 1).",
+    "explanation": "Produktregel f' = u'·v + u·v' mit u = e^(2x) und v = x - 1. Die Kettenregel liefert u' = 2e^(2x), außerdem ist v' = 1. Damit gilt f'(x) = 2e^(2x)·(x - 1) + e^(2x)·1 = e^(2x)·(2x - 2 + 1) = e^(2x)·(2x - 1). Wer die Kettenregel vergisst, erhält e^(2x)·x; wer den zweiten Summanden der Produktregel vergisst, 2e^(2x)·(x - 1).",
     "options": [
-      "A) f'(x) = e^(2x)",
-      "B) f'(x) = 2e^(2x) * (x - 1)",
-      "C) f'(x) = e^(2x) * (2x - 1)",
-      "D) f'(x) = e^(2x) * (2x - 3)"
+      "f'(x) = e^(2x) · x",
+      "f'(x) = 2e^(2x) · (x - 1)",
+      "f'(x) = e^(2x) · (2x - 1)",
+      "f'(x) = e^(2x) · (2x - 3)"
     ],
-    "question": "Gegeben ist die Funktion f(x) = e^(2x) * (x - 1). Bestimmen Sie die erste Ableitung f'(x).",
+    "question": "Gegeben ist die Funktion f(x) = e^(2x) · (x - 1). Bestimmen Sie die erste Ableitung f'(x).",
     "topic": "Differentialrechnung – Produkt- und Kettenregel"
   },
   {
     "correct": 0,
-    "explanation": "Der Vektor AB ergibt sich als B − A = (5−2 | 1−3 | 7−1) = (3 | −2 | 6). Die Länge eines Vektors (x|y|z) ist √(x² + y² + z²). Also |AB| = √(3² + (−2)² + 6²) = √(9 + 4 + 36) = √49 = 7.",
+    "explanation": "Der Verbindungsvektor ist AB = B - A = (3|-2|6). Die Länge eines Vektors (x|y|z) ist √(x² + y² + z²), also |AB| = √(3² + (-2)² + 6²) = √(9 + 4 + 36) = √(49) = 7. Wer das Minuszeichen mitschleppt statt zu quadrieren, landet bei √(41); wer gar nicht quadriert, bei 3 + 2 + 6 = 11; wer die Wurzel vergisst, bei 49.",
     "options": [
       "7",
-      "√46",
-      "√74",
-      "9"
+      "√(41)",
+      "11",
+      "49"
     ],
-    "question": "Der Punkt A(2|3|1) und der Punkt B(5|1|7) sind gegeben. Berechnen Sie die Länge des Vektors AB.",
+    "question": "Gegeben sind die Punkte A(2|3|1) und B(5|1|7). Berechnen Sie die Länge des Vektors AB.",
     "topic": "Analytische Geometrie – Vektoren und Längenberechnung"
   },
   {
     "correct": 1,
-    "explanation": "Ohne Zurücklegen ändern sich die Anzahlen nach dem ersten Zug. Erste Kugel rot: 5/8. Danach sind noch 4 rote von insgesamt 7 Kugeln übrig, zweite Kugel rot: 4/7. Beide Ereignisse zusammen über die Pfadregel: 5/8 · 4/7 = 20/56 = 5/14.",
+    "explanation": "Ohne Zurücklegen ändern sich die Anzahlen nach dem ersten Zug. Erste Kugel rot: 5/8. Danach sind noch 4 rote von insgesamt 7 Kugeln übrig, zweite Kugel rot: 4/7. Nach der Pfadregel multipliziert man: 5/8 · 4/7 = 20/56 = 5/14. Mit Zurücklegen käme (5/8)² = 25/64 heraus, 15/56 gehört zum Pfad rot-blau.",
     "options": [
       "25/64",
       "5/14",
@@ -61,31 +61,31 @@
   },
   {
     "correct": 0,
-    "explanation": "Zuerst prüfen wir die Richtungsvektoren. Der Richtungsvektor von g ist v_g = (2|1|-1). Der Richtungsvektor von h ist v_h = (-4|-2|2). Da v_h = -2 * v_g ist, sind die Richtungsvektoren kollinear, d.h., die Geraden sind parallel oder identisch. Um zu prüfen, ob sie identisch sind, setzen wir den Aufpunkt von g in die Gerade h ein: (1|0|2) = (3|1|1) + s * (-4|-2|2). Dies führt zu den Gleichungen: 1 = 3 - 4s (-> 4s = 2 -> s = 1/2), 0 = 1 - 2s (-> 2s = 1 -> s = 1/2), 2 = 1 + 2s (-> 2s = 1 -> s = 1/2). Da für alle drei Komponenten der gleiche Wert für s (s = 1/2) gefunden wird, liegt der Aufpunkt von g auf h. Somit sind die Geraden identisch.",
+    "explanation": "Zuerst die Richtungsvektoren vergleichen: v_g = (2|1|-1) und v_h = (-4|-2|2). Wegen v_h = -2 · v_g sind sie kollinear, die Geraden also parallel oder identisch. Setzt man den Aufpunkt (1|0|2) von g in h ein, ergibt sich aus 1 = 3 - 4s der Wert s = 1/2, aus 0 = 1 - 2s ebenfalls s = 1/2 und aus 2 = 1 + 2s wieder s = 1/2. Da alle drei Komponenten denselben Parameter liefern, liegt der Aufpunkt von g auf h und die Geraden sind identisch.",
     "options": [
-      "A) Die Geraden sind identisch.",
-      "B) Die Geraden sind parallel, aber nicht identisch.",
-      "C) Die Geraden schneiden sich.",
-      "D) Die Geraden sind windschief."
+      "Die Geraden sind identisch.",
+      "Die Geraden sind parallel, aber nicht identisch.",
+      "Die Geraden schneiden sich in genau einem Punkt.",
+      "Die Geraden sind windschief."
     ],
-    "question": "Bestimmen Sie die Lagebeziehung der beiden Geraden g und h. Gerade g: x = (1|0|2) + r * (2|1|-1). Gerade h: x = (3|1|1) + s * (-4|-2|2).",
+    "question": "Bestimmen Sie die Lagebeziehung der beiden Geraden g und h. Gerade g: x = (1|0|2) + r · (2|1|-1). Gerade h: x = (3|1|1) + s · (-4|-2|2).",
     "topic": "Analytische Geometrie – Lagebeziehung von Geraden"
   },
   {
     "correct": 0,
-    "explanation": "Eine exponentielle Zunahme wird durch die Formel N(t) = N_0 * a^(t/T) beschrieben, wobei N_0 der Startwert ist, a der Verdopplungs-/Halbierungswert und T die Zeitspanne, in der sich N_0 um den Faktor a ändert. Hier ist N_0 = 100, a = 2 (Verdopplung) und T = 3 Stunden. Daher ist die Funktion B(t) = 100 * 2^(t/3).",
+    "explanation": "Exponentielles Wachstum beschreibt man mit N(t) = N₀ · a^(t/T). Dabei ist N₀ = 100 der Startwert, a = 2 der Wachstumsfaktor und T = 3 die Zeitspanne in Stunden, in der sich der Bestand um diesen Faktor ändert. Also B(t) = 100 · 2^(t/3) mit der Probe B(3) = 200 und B(6) = 400. Bei 100 · 2^(3t) würde sich der Bestand alle 20 Minuten verdoppeln, bei 100 · 2^t jede Stunde.",
     "options": [
-      "A) B(t) = 100 * 2^(t/3)",
-      "B) B(t) = 100 * 2t",
-      "C) B(t) = 100 + 2t",
-      "D) B(t) = 100 * (1/2)^t"
+      "B(t) = 100 · 2^(t/3)",
+      "B(t) = 100 · 2^(3t)",
+      "B(t) = 100 · 3^(t/2)",
+      "B(t) = 100 · 2^t"
     ],
     "question": "Eine Bakterienkultur beginnt mit 100 Bakterien. Die Anzahl der Bakterien verdoppelt sich alle 3 Stunden. Welche Funktion B(t) beschreibt die Anzahl der Bakterien nach t Stunden?",
     "topic": "Analysis – Exponentialfunktionen"
   },
   {
     "correct": 0,
-    "explanation": "Volumen: V = πr²h = 1000, daraus h = 1000/(πr²). Oberfläche ohne Deckel: O(r) = πr² + 2πrh = πr² + 2000/r. Ableiten und null setzen: O'(r) = 2πr − 2000/r² = 0, also 2πr³ = 2000. Aus V = 1000 folgt 2πr²h = 2000. Beide rechten Seiten sind gleich, also 2πr³ = 2πr²h und damit r = h. Die Oberfläche wird minimal, wenn Höhe und Radius gleich groß sind.",
+    "explanation": "Aus V = πr²h = 1000 folgt h = 1000/(πr²). Die Oberfläche ohne Deckel ist O(r) = πr² + 2πrh = πr² + 2000/r. Ableiten und null setzen: O'(r) = 2πr - 2000/r² = 0, also 2πr³ = 2000. Aus der Volumenbedingung folgt außerdem 2πr²h = 2000. Beide rechten Seiten sind gleich, also 2πr³ = 2πr²h und damit r = h. Die Oberfläche wird minimal, wenn Höhe und Radius übereinstimmen.",
     "options": [
       "h = r",
       "h = 2r",
@@ -97,96 +97,96 @@
   },
   {
     "correct": 1,
-    "explanation": "Damit der Ausdruck unter der Wurzel in den reellen Zahlen definiert ist, muss er größer oder gleich Null sein. Also x - 3 ≥ 0, was x ≥ 3 bedeutet.",
+    "explanation": "Es sind zwei Bedingungen zu erfüllen. Der Radikand darf nicht negativ sein: x - 3 ≥ 0, also x ≥ 3; der Randwert x = 3 ist erlaubt, denn √(0) = 0. Zusätzlich darf der Nenner nicht null werden: x - 5 ≠ 0, also x ≠ 5. Der maximale Definitionsbereich ist damit D = [3; 5) ∪ (5; ∞).",
     "options": [
-      "A. x > 3",
-      "B. x ≥ 3",
-      "C. x < 3",
-      "D. x ≤ 3"
+      "x > 3 und x ≠ 5",
+      "x ≥ 3 und x ≠ 5",
+      "x ≥ 3 und x ≠ -5",
+      "x ≤ 3 und x ≠ 5"
     ],
-    "question": "Was ist der maximale Definitionsbereich der Funktion f(x) = √(x - 3) im Bereich der reellen Zahlen?",
+    "question": "Was ist der maximale Definitionsbereich der Funktion f(x) = √(x - 3) / (x - 5) im Bereich der reellen Zahlen?",
     "topic": "Funktionen: Definitionsbereich"
   },
   {
     "correct": 0,
-    "explanation": "Die Ableitung wird mithilfe der Potenzregel (nx^(n-1)) und der Summenregel gebildet: (3x^4)' = 12x^3, (-2x^2)' = -4x, (5x)' = 5 und (-1)' = 0.",
+    "explanation": "Quotientenregel f' = (u'·v - u·v')/v² mit u = 2x - 1, u' = 2, v = x² + 1 und v' = 2x. Zähler: 2·(x² + 1) - (2x - 1)·2x = 2x² + 2 - 4x² + 2x = -2x² + 2x + 2. Nenner: (x² + 1)². Wer u und v im Zähler vertauscht, erhält das Gegenteil; wer den Nenner nicht quadriert oder beim Ausmultiplizieren ein Vorzeichen verliert, landet bei den übrigen Optionen.",
     "options": [
-      "A. f'(x) = 12x^3 - 4x + 5",
-      "B. f'(x) = 12x^4 - 4x^2 + 5x",
-      "C. f'(x) = 3x^3 - 2x + 5",
-      "D. f'(x) = 12x^3 - 4x^2 + 5"
+      "f'(x) = (-2x² + 2x + 2) / (x² + 1)²",
+      "f'(x) = (2x² - 2x - 2) / (x² + 1)²",
+      "f'(x) = (-2x² + 2x + 2) / (x² + 1)",
+      "f'(x) = (2x² + 2x + 2) / (x² + 1)²"
     ],
-    "question": "Bilde die erste Ableitung der Funktion f(x) = 3x^4 - 2x^2 + 5x - 1.",
-    "topic": "Differentialrechnung: Ableitungsregeln"
+    "question": "Bilde die erste Ableitung der Funktion f(x) = (2x - 1) / (x² + 1).",
+    "topic": "Differentialrechnung: Quotientenregel"
   },
   {
     "correct": 1,
-    "explanation": "Lokale Extrempunkte finden wir, indem wir die erste Ableitung bilden und diese gleich Null setzen. f'(x) = 3x² - 12x + 9. Setzt man 3x² - 12x + 9 = 0 und teilt durch 3, erhält man x² - 4x + 3 = 0. Die Lösungen dieser quadratischen Gleichung sind x = 1 und x = 3.",
+    "explanation": "Notwendige Bedingung ist f'(x) = 0 mit f'(x) = 3x² - 12x + 9. Division durch 3 ergibt x² - 4x + 3 = 0, also x = 2 ± √(4 - 3) = 2 ± 1 und damit x = 1 und x = 3. Die zweite Ableitung f''(x) = 6x - 12 bestätigt beide Stellen: f''(1) = -6 < 0 ist ein Hochpunkt, f''(3) = 6 > 0 ein Tiefpunkt. Wer beim Ableiten den konstanten Summanden 9 vergisst, erhält fälschlich x = 0 und x = 4.",
     "options": [
-      "A. x = 0",
-      "B. x = 1 und x = 3",
-      "C. x = 2",
-      "D. x = 3"
+      "x = 0 und x = 4",
+      "x = 1 und x = 3",
+      "x = -1 und x = -3",
+      "x = 0 und x = 3"
     ],
     "question": "An welchen Stellen x hat die Funktion f(x) = x³ - 6x² + 9x - 2 lokale Extrempunkte?",
     "topic": "Differentialrechnung: Extremwertprobleme"
   },
   {
     "correct": 2,
-    "explanation": "Die Primzahlen auf einem sechsseitigen Würfel sind 2, 3 und 5. Es gibt also 3 günstige Ergebnisse. Die Gesamtzahl der möglichen Ergebnisse ist 6. Die Wahrscheinlichkeit ist 3/6 = 1/2.",
+    "explanation": "Am einfachsten über das Gegenereignis: 'keine Sechs' hat pro Wurf die Wahrscheinlichkeit 5/6, für drei Würfe also (5/6)³ = 125/216. Damit ist P(mindestens eine Sechs) = 1 - 125/216 = 91/216 ≈ 0,42. Der Wert 125/216 ist das Gegenereignis selbst, 75/216 gehört zu genau einer Sechs und 108/216 = 1/2 entsteht, wenn man die Einzelwahrscheinlichkeiten 1/6 fälschlich addiert.",
     "options": [
-      "A. 1/6",
-      "B. 1/3",
-      "C. 1/2",
-      "D. 2/3"
+      "125/216",
+      "75/216",
+      "91/216",
+      "108/216"
     ],
-    "question": "Wie hoch ist die Wahrscheinlichkeit, beim einmaligen Werfen eines fairen sechsseitigen Würfels eine Primzahl zu erhalten?",
-    "topic": "Stochastik: Grundlagen der Wahrscheinlichkeit"
+    "question": "Ein fairer sechsseitiger Würfel wird dreimal geworfen. Wie groß ist die Wahrscheinlichkeit, dabei mindestens eine Sechs zu erhalten?",
+    "topic": "Stochastik: Gegenereignis und mehrstufige Zufallsversuche"
   },
   {
     "correct": 1,
-    "explanation": "Die Wahrscheinlichkeit, dass ein Schüler ein Mädchen mit Brille ist, beträgt 0.60 * 0.20 = 0.12. Die Wahrscheinlichkeit, dass ein Schüler ein Junge mit Brille ist, beträgt (1 - 0.60) * 0.30 = 0.40 * 0.30 = 0.12. Die Gesamtwahrscheinlichkeit, dass ein Schüler eine Brille trägt, ist die Summe dieser beiden Wahrscheinlichkeiten: 0.12 + 0.12 = 0.24.",
+    "explanation": "Zuerst die beiden Pfade: P(Mädchen und Brille) = 0,60 · 0,20 = 0,12 und P(Junge und Brille) = 0,40 · 0,30 = 0,12. Insgesamt tragen also 0,12 + 0,12 = 0,24 der Klasse eine Brille. Für die bedingte Wahrscheinlichkeit gilt P(Mädchen | Brille) = 0,12 / 0,24 = 0,50. Der Wert 0,12 ist nur die Schnittwahrscheinlichkeit, 0,20 ist P(Brille | Mädchen) und 0,60 ist P(Mädchen).",
     "options": [
-      "A. 0.20",
-      "B. 0.24",
-      "C. 0.25",
-      "D. 0.30"
+      "0,12",
+      "0,50",
+      "0,20",
+      "0,60"
     ],
-    "question": "In einer Schulklasse sind 60% der Schüler Mädchen. 20% der Mädchen tragen eine Brille. 30% der Jungen tragen ebenfalls eine Brille. Wie groß ist die Wahrscheinlichkeit, dass ein zufällig ausgewählter Schüler eine Brille trägt?",
+    "question": "In einer Schulklasse sind 60 % der Lernenden Mädchen. 20 % der Mädchen und 30 % der Jungen tragen eine Brille. Wie groß ist die Wahrscheinlichkeit, dass eine zufällig ausgewählte Person mit Brille ein Mädchen ist?",
     "topic": "Stochastik: Bedingte Wahrscheinlichkeit und Gesamtwahrscheinlichkeit"
   },
   {
     "correct": 1,
-    "explanation": "Der Betrag eines Vektors (x, y) wird mit der Formel √(x² + y²) berechnet. Für v = (3, -4) ist der Betrag √(3² + (-4)²) = √(9 + 16) = √25 = 5.",
+    "explanation": "Für den Winkel gilt cos φ = (a · b) / (|a| · |b|). Das Skalarprodukt ist a · b = 1·0 + 0·1 + 1·1 = 1, die Beträge sind |a| = |b| = √(1 + 0 + 1) = √(2). Damit ist cos φ = 1 / (√(2) · √(2)) = 1/2 und folglich φ = 60°. Wären die Vektoren orthogonal, wäre das Skalarprodukt 0 und der Winkel 90°.",
     "options": [
-      "A. 1",
-      "B. 5",
-      "C. 7",
-      "D. 25"
+      "30°",
+      "60°",
+      "45°",
+      "90°"
     ],
-    "question": "Berechne den Betrag des Vektors v = (3, -4) im zweidimensionalen Raum.",
-    "topic": "Vektorrechnung: Betrag eines Vektors"
+    "question": "Berechne den Winkel zwischen den Vektoren a = (1|0|1) und b = (0|1|1).",
+    "topic": "Vektorrechnung: Winkel zwischen Vektoren"
   },
   {
     "correct": 2,
-    "explanation": "Wenn das Skalarprodukt zweier (Nicht-Null-)Vektoren Null ist, bedeutet dies, dass die Vektoren orthogonal zueinander sind, also senkrecht aufeinander stehen.",
+    "explanation": "Für das Skalarprodukt gilt a · b = |a| · |b| · cos φ. Sind beide Vektoren vom Nullvektor verschieden, so kann a · b = 0 nur gelten, wenn cos φ = 0 ist, also φ = 90°. Die Vektoren stehen damit senkrecht aufeinander, man nennt sie orthogonal. Bei parallelen oder entgegengesetzt gerichteten Vektoren ist das Skalarprodukt dagegen betragsmäßig maximal.",
     "options": [
-      "A. a und b sind parallel.",
-      "B. a und b haben die gleiche Länge.",
-      "C. a und b stehen senkrecht aufeinander.",
-      "D. a und b sind gleich."
+      "a und b sind parallel.",
+      "a und b haben die gleiche Länge.",
+      "a und b stehen senkrecht aufeinander.",
+      "a und b sind entgegengesetzt gerichtet."
     ],
-    "question": "Welche Aussage über zwei Vektoren a und b ist korrekt, wenn ihr Skalarprodukt a ⋅ b = 0 ist (und a, b keine Nullvektoren sind)?",
+    "question": "Welche Aussage über zwei Vektoren a und b ist korrekt, wenn ihr Skalarprodukt a · b = 0 ist (und a, b keine Nullvektoren sind)?",
     "topic": "Vektorrechnung: Skalarprodukt und Orthogonalität"
   },
   {
     "correct": 2,
-    "explanation": "Seien die Seitenlängen des Rechtecks x und y. Die Fläche ist A = x * y = 100, also y = 100/x. Die Zaunlänge (Umfang) ist U(x) = 2x + 2y = 2x + 200/x. Um das Minimum zu finden, leiten wir U(x) ab und setzen es gleich Null: U'(x) = 2 - 200/x² = 0. Dies führt zu x² = 100, also x = 10 (da x > 0). Wenn x = 10, dann ist y = 100/10 = 10. Der minimale Umfang ist 2 * 10 + 2 * 10 = 40 m (ein Quadrat hat den kleinsten Umfang bei gegebener Fläche).",
+    "explanation": "Seien x und y die Seitenlängen. Aus der Fläche x · y = 100 folgt y = 100/x, der Umfang ist also U(x) = 2x + 200/x. Ableiten und null setzen: U'(x) = 2 - 200/x² = 0 führt auf x² = 100 und wegen x > 0 auf x = 10. Dann ist y = 100/10 = 10, das optimale Rechteck ist also ein Quadrat mit U = 4 · 10 m = 40 m. Zum Vergleich: Ein Rechteck mit 20 m und 5 m hat ebenfalls 100 m², aber schon 50 m Umfang.",
     "options": [
-      "A. 20 m",
-      "B. 30 m",
-      "C. 40 m",
-      "D. 50 m"
+      "20 m",
+      "30 m",
+      "40 m",
+      "50 m"
     ],
     "question": "Ein rechteckiger Zaun soll eine Fläche von 100 m² umschließen. Welche minimale Länge muss der Zaun haben?",
     "topic": "Anwendungsaufgaben: Optimierung mit Differentialrechnung"

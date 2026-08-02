@@ -1,194 +1,194 @@
 [
   {
     "correct": 1,
-    "explanation": "Um Brüche zu addieren oder zu subtrahieren, müssen sie denselben Nenner haben. Der Hauptnenner von 4, 2 und 8 ist 8. Erweitern Sie die Brüche: $\\frac{3x}{4} = \\frac{6x}{8}$, $\\frac{x}{2} = \\frac{4x}{8}$. Die Rechnung lautet dann $\\frac{6x}{8} + \\frac{4x}{8} - \\frac{x}{8} = \\frac{6x+4x-x}{8} = \\frac{9x}{8}$.",
+    "explanation": "Um Bruchterme zu addieren oder zu subtrahieren, müssen sie denselben Nenner haben. Der Hauptnenner von 4, 2 und 8 ist 8. Erweitern: 3x/4 = 6x/8 und x/2 = 4x/8. Die Rechnung lautet dann 6x/8 + 4x/8 - x/8 = (6x + 4x - x)/8 = 9x/8.",
     "options": [
-      "$\\frac{7x}{8}$",
-      "$\\frac{9x}{8}$",
-      "$\\frac{10x}{8}$",
-      "$\\frac{5x}{8}$"
+      "7x/8",
+      "9x/8",
+      "10x/8",
+      "5x/8"
     ],
-    "question": "Vereinfachen Sie den Ausdruck: $\\frac{3x}{4} + \\frac{x}{2} - \\frac{x}{8}$",
+    "question": "Vereinfache den Ausdruck: 3x/4 + x/2 - x/8",
     "topic": "Addition und Subtraktion von Bruchtermen"
   },
   {
     "correct": 0,
-    "explanation": "Faktorisieren Sie zuerst den Zähler des ersten Bruchs: $a^2-ab = a(a-b)$. Der Ausdruck wird zu $\\frac{a(a-b)}{b} \\cdot \\frac{b^2}{a-b}$. Nun können gleiche Faktoren im Zähler und Nenner gekürzt werden. $(a-b)$ und $b$ können gekürzt werden: $a \\cdot \\frac{b}{1} = a \\cdot b$.",
+    "explanation": "Im Zähler des ersten Bruchs wird a ausgeklammert: a² - ab = a·(a - b). Der Ausdruck lautet dann a·(a - b)/b · b²/(a - b). Nun kürzt man den gemeinsamen Faktor (a - b) sowie ein b und erhält a · b.",
     "options": [
-      "$a \\cdot b$",
-      "$\\frac{a}{b}$",
-      "$a^2$",
-      "$\\frac{a^2}{b}$"
+      "a · b",
+      "a/b",
+      "a²",
+      "a²/b"
     ],
-    "question": "Vereinfachen Sie den Ausdruck: $\\frac{a^2-ab}{b} \\cdot \\frac{b^2}{a-b}$",
+    "question": "Vereinfache den Ausdruck: (a² - ab)/b · b²/(a - b)",
     "topic": "Multiplikation von Bruchtermen"
   },
   {
     "correct": 1,
-    "explanation": "Bringen Sie zuerst den Zähler des Doppelbruchs auf einen gemeinsamen Nenner: $\\frac{1}{x} + \\frac{1}{y} = \\frac{y}{xy} + \\frac{x}{xy} = \\frac{x+y}{xy}$. Der Doppelbruch wird dann zu $\\frac{\\frac{x+y}{xy}}{\\frac{x+y}{xy}}$. Da Zähler und Nenner identisch sind, ist das Ergebnis 1.",
+    "explanation": "Zuerst den Zähler zusammenfassen: 1/x + 1/y = y/(xy) + x/(xy) = (x + y)/(xy). Durch einen Bruch teilen heißt mit seinem Kehrwert multiplizieren: (x + y)/(xy) · x/(x + y). Kürzen von (x + y) und von x ergibt 1/y.",
     "options": [
-      "$x+y$",
-      "$1$",
-      "$\\frac{1}{xy}$",
-      "$\\frac{xy}{x+y}$"
+      "1/x",
+      "1/y",
+      "x/y",
+      "1/(xy)"
     ],
-    "question": "Vereinfachen Sie den Doppelbruch: $\\frac{\\frac{1}{x} + \\frac{1}{y}}{\\frac{x+y}{xy}}$",
+    "question": "Vereinfache den Doppelbruch: (1/x + 1/y) : ((x + y)/x)",
     "topic": "Doppelbrüche vereinfachen"
   },
   {
     "correct": 2,
-    "explanation": "Ein Bruchterm ist nicht definiert, wenn sein Nenner Null ist. Setzen Sie den Nenner gleich Null und lösen Sie nach $x$ auf: $x^2-4=0 \\Rightarrow x^2=4 \\Rightarrow x = \\pm 2$. Daher sind $x=2$ und $x=-2$ die Werte, die $x$ nicht annehmen darf.",
+    "explanation": "Der Hauptnenner ist (x + 2)(x - 2) = x² - 4. Erweitern: 3/(x + 2) = 3(x - 2)/(x² - 4) und 2/(x - 2) = 2(x + 2)/(x² - 4). Zähler addieren: 3x - 6 + 2x + 4 = 5x - 2. Das Ergebnis ist (5x - 2)/(x² - 4) für x ≠ 2 und x ≠ -2.",
     "options": [
-      "$x=0$",
-      "$x=1$",
-      "$x=2$ und $x=-2$",
-      "$x=4$"
+      "(5x + 2)/(x² - 4)",
+      "(x - 10)/(x² - 4)",
+      "(5x - 2)/(x² - 4)",
+      "(5x - 2)/(x² + 4)"
     ],
-    "question": "Welchen Wert darf $x$ im Bruchterm $\\frac{2x+1}{x^2-4}$ nicht annehmen, damit der Term definiert ist?",
-    "topic": "Definitionsbereich von Bruchtermen"
+    "question": "Fasse zu einem einzigen Bruch zusammen: 3/(x + 2) + 2/(x - 2)",
+    "topic": "Addition von Bruchtermen mit ungleichen Nennern"
   },
   {
-    "correct": 0,
-    "explanation": "Multiplizieren Sie die gesamte Gleichung mit dem Hauptnenner der Brüche (in diesem Fall 6), um die Nenner zu eliminieren: $6 \\cdot (\\frac{x}{3}) + 6 \\cdot (\\frac{1}{2}) = 6 \\cdot (\\frac{5}{6})$. Das ergibt $2x + 3 = 5$. Subtrahieren Sie 3 von beiden Seiten: $2x = 2$. Teilen Sie durch 2: $x=1$.",
+    "correct": 3,
+    "explanation": "Beide Seiten mit dem Hauptnenner (x - 1)(x + 3) multiplizieren, wobei x ≠ 1 und x ≠ -3 gilt: 3(x + 3) = 5(x - 1). Ausmultiplizieren: 3x + 9 = 5x - 5. Umstellen: 14 = 2x, also x = 7. Probe: 3/6 = 0,5 und 5/10 = 0,5.",
     "options": [
-      "$x=1$",
-      "$x=2$",
-      "$x=0$",
-      "$x=1/2$"
+      "x = -7",
+      "x = 2",
+      "x = 4",
+      "x = 7"
     ],
-    "question": "Lösen Sie die Gleichung nach $x$: $\\frac{x}{3} + \\frac{1}{2} = \\frac{5}{6}$",
+    "question": "Löse die Bruchgleichung: 3/(x - 1) = 5/(x + 3)",
     "topic": "Lösen von Bruchgleichungen"
   },
   {
     "correct": 1,
-    "explanation": "Vereinfachen Sie zuerst den Ausdruck in der Klammer. Der Hauptnenner ist $(a-b)(a+b)$. Dies führt zu $\\frac{(a+b)^2 - (a-b)^2}{(a-b)(a+b)}$. Die binomischen Formeln ergeben im Zähler $(a^2+2ab+b^2) - (a^2-2ab+b^2) = 4ab$. Der Klammerausdruck ist also $\\frac{4ab}{(a-b)(a+b)}$. Multiplizieren Sie dies mit dem zweiten Bruch: $\\frac{4ab}{(a-b)(a+b)} \\cdot \\frac{a-b}{2ab}$. Kürzen der gemeinsamen Faktoren $(a-b)$ und $2ab$ ergibt $\\frac{2}{a+b}$.",
+    "explanation": "Der Hauptnenner in der Klammer ist (a - b)(a + b). Im Zähler steht dann (a + b)² - (a - b)² = (a² + 2ab + b²) - (a² - 2ab + b²) = 4ab. Die Klammer ist also 4ab/((a - b)(a + b)). Multiplikation mit (a - b)/(2ab) und Kürzen von (a - b) und 2ab ergibt 2/(a + b).",
     "options": [
-      "$1$",
-      "$\\frac{2}{a+b}$",
-      "$\\frac{a+b}{a-b}$",
-      "$\\frac{4ab}{(a+b)^2}$"
+      "2/(a - b)",
+      "2/(a + b)",
+      "(a + b)/(a - b)",
+      "4ab/(a + b)²"
     ],
-    "question": "Vereinfachen Sie den Ausdruck: $\\left( \\frac{a+b}{a-b} - \\frac{a-b}{a+b} \\right) \\cdot \\frac{a-b}{2ab}$",
+    "question": "Vereinfache den Ausdruck: ((a + b)/(a - b) - (a - b)/(a + b)) · (a - b)/(2ab)",
     "topic": "Komplexe Bruchterme vereinfachen"
   },
   {
-    "correct": 0,
-    "explanation": "Wenn 2/5 des Feldes mit Weizen bepflanzt sind, bleiben $1 - \\frac{2}{5} = \\frac{3}{5}$ der Fläche übrig. Von dieser verbleibenden Fläche (3/5) werden 1/3 für Kartoffeln genutzt. Das bedeutet $\\frac{1}{3} \\cdot \\frac{3}{5} = \\frac{1}{5}$ des gesamten Feldes ist mit Kartoffeln bepflanzt.",
+    "correct": 1,
+    "explanation": "Ein Bruchterm hat den Wert null, wenn der Zähler null ist und der Nenner dabei nicht null wird. Zähler: x² - 9 = 0 für x = 3 und x = -3. Für x = -3 wird jedoch der Nenner x + 3 null, dieser Wert gehört nicht zur Definitionsmenge. Es bleibt nur x = 3.",
     "options": [
-      "$\\frac{1}{5}$",
-      "$\\frac{2}{15}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{3}{5}$"
+      "x = -3",
+      "x = 3",
+      "x = ±3",
+      "x = 0"
     ],
-    "question": "Ein Bauer hat ein Feld, von dem 2/5 mit Weizen bepflanzt sind. Von der verbleibenden Fläche werden 1/3 für Kartoffeln genutzt. Welcher Bruchteil des gesamten Feldes ist mit Kartoffeln bepflanzt?",
-    "topic": "Anwendungsaufgaben mit Brüchen"
+    "question": "Für welchen Wert von x hat der Bruchterm (x² - 9)/(x + 3) den Wert null?",
+    "topic": "Nullstellen von Bruchtermen"
   },
   {
     "correct": 0,
-    "explanation": "Faktorisieren Sie den Zähler und den Nenner. Zähler: $2x^2+4x = 2x(x+2)$. Nenner: $x^2-4 = (x-2)(x+2)$ (dritte binomische Formel). Der Ausdruck wird zu $\\frac{2x(x+2)}{(x-2)(x+2)}$. Kürzen Sie den gemeinsamen Faktor $(x+2)$ (für $x \\neq -2$). Das Ergebnis ist $\\frac{2x}{x-2}$.",
+    "explanation": "Zähler und Nenner faktorisieren. Zähler: 2x² + 4x = 2x(x + 2). Nenner mit der dritten binomischen Formel: x² - 4 = (x - 2)(x + 2). Der Ausdruck wird zu 2x(x + 2)/((x - 2)(x + 2)). Kürzen des gemeinsamen Faktors (x + 2) ergibt 2x/(x - 2) für x ≠ 2 und x ≠ -2.",
     "options": [
-      "$\\frac{2x}{x-2}$",
-      "$\\frac{2x}{x+2}$",
-      "$\\frac{x}{x-2}$",
-      "$\\frac{2}{x-2}$"
+      "2x/(x - 2)",
+      "2x/(x + 2)",
+      "x/(x - 2)",
+      "2/(x - 2)"
     ],
-    "question": "Welcher der folgenden Terme ist äquivalent zu $\\frac{2x^2+4x}{x^2-4}$?",
+    "question": "Welcher der folgenden Terme ist äquivalent zu (2x² + 4x)/(x² - 4)?",
     "topic": "Kürzen und Vereinfachen von Bruchtermen"
   },
   {
-    "correct": 1,
-    "explanation": "Um Brüche zu addieren, müssen sie den gleichen Nenner haben. Das kleinste gemeinsame Vielfache (KGV) von 4 und 6 ist 12. Wir erweitern die Brüche: $\\frac{3}{4} = \\frac{3 \\cdot 3}{4 \\cdot 3} = \\frac{9}{12}$ und $\\frac{5}{6} = \\frac{5 \\cdot 2}{6 \\cdot 2} = \\frac{10}{12}$. Die Summe ist dann $\\frac{9}{12} + \\frac{10}{12} = \\frac{19}{12}$.",
+    "correct": 3,
+    "explanation": "Beide Nenner faktorisieren: x² - 1 = (x - 1)(x + 1) und x² + 2x + 1 = (x + 1)². Der Hauptnenner muss jeden auftretenden Faktor in der höchsten vorkommenden Potenz enthalten, also (x - 1) einmal und (x + 1) zweimal. Das ergibt (x - 1)(x + 1)².",
     "options": [
-      "A) $\\frac{8}{10}$",
-      "B) $\\frac{19}{12}$",
-      "C) $\\frac{17}{12}$",
-      "D) $\\frac{13}{12}$"
+      "(x - 1)(x + 1)",
+      "(x - 1)²(x + 1)",
+      "(x - 1)²(x + 1)²",
+      "(x - 1)(x + 1)²"
     ],
-    "question": "Berechne den Wert des Ausdrucks: $\\frac{3}{4} + \\frac{5}{6}$",
-    "topic": "Addition von Brüchen"
+    "question": "Wie lautet der Hauptnenner (das kleinste gemeinsame Vielfache der Nenner) von 1/(x² - 1) und 1/(x² + 2x + 1)?",
+    "topic": "Hauptnenner von Bruchtermen"
   },
   {
     "correct": 0,
-    "explanation": "Beim Multiplizieren von Brüchen werden Zähler mit Zähler und Nenner mit Nenner multipliziert. Es ist oft hilfreich, vorab zu kürzen: $\\frac{2x^2 \\cdot 9y^2}{3y \\cdot 4x} = \\frac{18x^2y^2}{12xy}$. Nun können wir kürzen: $\\frac{18}{12} = \\frac{3}{2}$, $\\frac{x^2}{x} = x$, $\\frac{y^2}{y} = y$. Das Ergebnis ist $\\frac{3xy}{2}$.",
+    "explanation": "Beim Multiplizieren von Brüchen wird Zähler mal Zähler und Nenner mal Nenner gerechnet: (2x² · 9y²)/(3y · 4x) = 18x²y²/(12xy). Nun wird gekürzt: 18/12 = 3/2, x²/x = x und y²/y = y. Das Ergebnis ist 3xy/2.",
     "options": [
-      "A) $\\frac{3xy}{2}$",
-      "B) $\\frac{3x}{2y}$",
-      "C) $\\frac{xy}{6}$",
-      "D) $\\frac{2x}{3y}$"
+      "3xy/2",
+      "3x/(2y)",
+      "xy/6",
+      "2x/(3y)"
     ],
-    "question": "Vereinfache den Ausdruck: $\\frac{2x^2}{3y} \\cdot \\frac{9y^2}{4x}$ (Für $x, y \\neq 0$)",
-    "topic": "Multiplikation von Bruchthermen"
+    "question": "Vereinfache den Ausdruck: 2x²/(3y) · 9y²/(4x)  (für x ≠ 0 und y ≠ 0)",
+    "topic": "Multiplikation von Bruchtermen"
   },
   {
-    "correct": 0,
-    "explanation": "Um diesen Bruchterm zu vereinfachen, faktorisieren wir Zähler und Nenner. Der Zähler ist eine dritte binomische Formel: $x^2 - 4 = (x-2)(x+2)$. Im Nenner kann $x$ ausgeklammert werden: $x^2 - 2x = x(x-2)$. Der vereinfachte Bruch lautet dann $\\frac{(x-2)(x+2)}{x(x-2)}$. Wir können den Faktor $(x-2)$ kürzen, vorausgesetzt $x \\neq 2$. Das Ergebnis ist $\\frac{x+2}{x}$.",
+    "correct": 2,
+    "explanation": "Der Zähler ist eine zweite binomische Formel: x² - 6x + 9 = (x - 3)². Der Nenner ist eine dritte binomische Formel: x² - 9 = (x - 3)(x + 3). Der Bruch lautet damit (x - 3)²/((x - 3)(x + 3)). Kürzen des Faktors (x - 3) ergibt (x - 3)/(x + 3).",
     "options": [
-      "A) $\\frac{x+2}{x}$",
-      "B) $\\frac{x-2}{x}$",
-      "C) $\\frac{x+2}{x-2}$",
-      "D) $\\frac{x-2}{x+2}$"
+      "(x + 3)/(x - 3)",
+      "(x - 3)²/(x + 3)",
+      "(x - 3)/(x + 3)",
+      "(x - 9)/(x + 3)"
     ],
-    "question": "Vereinfache den Bruchterm: $\\frac{x^2 - 4}{x^2 - 2x}$ (Für $x \\neq 0, x \\neq 2$)",
-    "topic": "Vereinfachen von Bruchthermen durch Faktorisieren"
+    "question": "Vereinfache den Bruchterm: (x² - 6x + 9)/(x² - 9)  (für x ≠ 3 und x ≠ -3)",
+    "topic": "Vereinfachen von Bruchtermen durch Faktorisieren"
   },
   {
     "correct": 1,
-    "explanation": "Zuerst bringen wir alle Terme mit $x$ auf eine Seite: $\\frac{1}{2} = \\frac{3}{x} - \\frac{1}{x}$. Dies vereinfacht sich zu $\\frac{1}{2} = \\frac{2}{x}$. Durch Überkreuzmultiplikation (oder Multiplikation beider Seiten mit $2x$) erhalten wir $x = 4$.",
+    "explanation": "Zuerst werden alle Terme mit x auf eine Seite gebracht: 1/2 = 3/x - 1/x. Das vereinfacht sich zu 1/2 = 2/x. Multiplikation beider Seiten mit 2x ergibt x = 4. Probe: 1/4 + 1/2 = 3/4 und 3/4 auf der rechten Seite.",
     "options": [
-      "A) $x=2$",
-      "B) $x=4$",
-      "C) $x=-4$",
-      "D) $x=6$"
+      "x = 2",
+      "x = 4",
+      "x = -4",
+      "x = 6"
     ],
-    "question": "Löse die Gleichung nach $x$: $\\frac{1}{x} + \\frac{1}{2} = \\frac{3}{x}$ (Für $x \\neq 0$)",
+    "question": "Löse die Gleichung nach x: 1/x + 1/2 = 3/x  (für x ≠ 0)",
     "topic": "Lösen von Bruchgleichungen"
   },
   {
     "correct": 0,
-    "explanation": "Ein Bruchterm ist nicht definiert, wenn sein Nenner null wird. Wir setzen den Nenner gleich null: $x^2 - 5x + 6 = 0$. Dies ist eine quadratische Gleichung, die wir faktorisieren können zu $(x-2)(x-3) = 0$. Die Lösungen sind $x=2$ und $x=3$. Diese Werte müssen aus der Menge der reellen Zahlen ausgeschlossen werden, damit der Term definiert ist. Die Definitionsmenge ist $D = \\mathbb{R} \\setminus \\{2, 3\\}$.",
+    "explanation": "Ein Bruchterm ist nicht definiert, wenn sein Nenner null wird. Man setzt also x² - 5x + 6 = 0. Faktorisiert lautet die Gleichung (x - 2)(x - 3) = 0, die Lösungen sind x = 2 und x = 3. Diese beiden Werte müssen ausgeschlossen werden: D = ℝ \\ {2; 3}.",
     "options": [
-      "A) $D = \\mathbb{R} \\setminus \\{2, 3\\}$",
-      "B) $D = \\mathbb{R} \\setminus \\{2, -3\\}$",
-      "C) $D = \\mathbb{R} \\setminus \\{-2, 3\\}$",
-      "D) $D = \\mathbb{R} \\setminus \\{-2, -3\\}$"
+      "D = ℝ \\ {2; 3}",
+      "D = ℝ \\ {2; -3}",
+      "D = ℝ \\ {-2; 3}",
+      "D = ℝ \\ {-2; -3}"
     ],
-    "question": "Bestimme die Definitionsmenge $D$ für den Term $\\frac{3x+1}{x^2 - 5x + 6}$.",
-    "topic": "Definitionsmenge von Bruchthermen"
+    "question": "Bestimme die Definitionsmenge D für den Term (3x + 1)/(x² - 5x + 6).",
+    "topic": "Definitionsmenge von Bruchtermen"
+  },
+  {
+    "correct": 3,
+    "explanation": "Durch einen Bruch teilen heißt mit seinem Kehrwert multiplizieren: (x² - 9)/(2x) · 4x/(x + 3). Der Zähler lässt sich mit der dritten binomischen Formel zerlegen: x² - 9 = (x - 3)(x + 3). Kürzen von (x + 3) und von 2x ergibt (x - 3) · 2 = 2x - 6.",
+    "options": [
+      "x - 3",
+      "2x + 6",
+      "x + 3",
+      "2x - 6"
+    ],
+    "question": "Vereinfache den Ausdruck: (x² - 9)/(2x) : (x + 3)/(4x)  (für x ≠ 0 und x ≠ -3)",
+    "topic": "Division von Bruchtermen"
   },
   {
     "correct": 0,
-    "explanation": "Da beide Brüche den gleichen Nenner $(a-b)$ haben, können wir die Zähler direkt voneinander subtrahieren: $\\frac{a-b}{a-b}$. Solange $a \\neq b$, ist dieser Ausdruck gleich $1$.",
+    "explanation": "Hahn A füllt in einer Stunde 1/3 des Beckens, Hahn B in einer Stunde 1/6 des Beckens. Sind beide Hähne geöffnet, füllen sie pro Stunde 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2 des Beckens. Für das ganze Becken werden also 2 Stunden benötigt.",
     "options": [
-      "A) $1$",
-      "B) $\\frac{a+b}{a-b}$",
-      "C) $\\frac{a-b}{a+b}$",
-      "D) $-1$"
-    ],
-    "question": "Fasse den Ausdruck zusammen: $\\frac{a}{a-b} - \\frac{b}{a-b}$ (Für $a \\neq b$)",
-    "topic": "Subtraktion von Bruchthermen"
-  },
-  {
-    "correct": 0,
-    "explanation": "Hahn A füllt in einer Stunde $\\frac{1}{3}$ des Beckens. Hahn B füllt in einer Stunde $\\frac{1}{6}$ des Beckens. Wenn beide Hähne gleichzeitig geöffnet sind, füllen sie pro Stunde: $\\frac{1}{3} + \\frac{1}{6} = \\frac{2}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}$ des Beckens. Wenn sie in einer Stunde die Hälfte des Beckens füllen, dauert es 2 Stunden, um das gesamte Becken zu füllen.",
-    "options": [
-      "A) 2 Stunden",
-      "B) 3 Stunden",
-      "C) 4 Stunden",
-      "D) 1,5 Stunden"
+      "2 Stunden",
+      "3 Stunden",
+      "4 Stunden",
+      "1,5 Stunden"
     ],
     "question": "Ein Wasserbecken kann durch Hahn A in 3 Stunden gefüllt werden und durch Hahn B in 6 Stunden. Wie lange dauert es, das Becken zu füllen, wenn beide Hähne gleichzeitig geöffnet sind?",
-    "topic": "Anwendung von Brüchen in Sachaufgaben (Arbeitsaufgaben)"
+    "topic": "Anwendung von Bruchtermen (Arbeitsaufgaben)"
   },
   {
     "correct": 0,
-    "explanation": "Zuerst vereinfachen wir den Ausdruck in der Klammer. Wir bringen die Brüche auf einen gemeinsamen Nenner $x(x-1)$: $\\frac{(x+1)(x-1)}{x(x-1)} - \\frac{x \\cdot x}{x(x-1)} = \\frac{x^2 - 1 - x^2}{x(x-1)} = \\frac{-1}{x(x-1)}$. Nun teilen wir diesen Ausdruck durch $\\frac{1}{x^2-x}$. Das Dividieren durch einen Bruch ist dasselbe wie das Multiplizieren mit seinem Kehrwert: $\\frac{-1}{x(x-1)} \\cdot \\frac{x^2-x}{1}$. Da $x^2-x = x(x-1)$, können wir schreiben: $\\frac{-1}{x(x-1)} \\cdot \\frac{x(x-1)}{1}$. Die Terme $x(x-1)$ kürzen sich weg, und das Ergebnis ist $-1$.",
+    "explanation": "Der Hauptnenner in der Klammer ist x(x - 1): (x + 1)(x - 1)/(x(x - 1)) - x·x/(x(x - 1)) = (x² - 1 - x²)/(x(x - 1)) = -1/(x(x - 1)). Das Teilen durch 1/(x² - x) bedeutet Multiplizieren mit x² - x = x(x - 1). Die Faktoren kürzen sich weg, das Ergebnis ist -1.",
     "options": [
-      "A) $-1$",
-      "B) $1$",
-      "C) $x$",
-      "D) $-x$"
+      "-1",
+      "1",
+      "x",
+      "-x"
     ],
-    "question": "Vereinfache den Ausdruck: $\\left( \\frac{x+1}{x} - \\frac{x}{x-1} \\right) : \\frac{1}{x^2-x}$ (Für $x \\neq 0, x \\neq 1$)",
-    "topic": "Komplexe Vereinfachung von Bruchthermen"
+    "question": "Vereinfache den Ausdruck: ((x + 1)/x - x/(x - 1)) : 1/(x² - x)  (für x ≠ 0 und x ≠ 1)",
+    "topic": "Komplexe Bruchterme vereinfachen"
   }
 ]

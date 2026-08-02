@@ -1,98 +1,98 @@
 [
   {
-    "correct": 1,
-    "explanation": "Die Ordnungszahl eines Elements gibt die Anzahl der Protonen im Atomkern an. Sauerstoff (O) hat 8 Protonen.",
+    "correct": 0,
+    "explanation": "Schwefel hat die Ordnungszahl 16 und damit 16 Elektronen. Nach dem Aufbauprinzip werden die Orbitale in der Reihenfolge 1s, 2s, 2p, 3s, 3p besetzt: 1s² 2s² 2p⁶ 3s² 3p⁴. Die zwei 3s- und die vier 3p-Elektronen ergeben sechs Außenelektronen, Schwefel steht deshalb in der 6. Hauptgruppe der 3. Periode. Die Konfiguration 1s² 2s² 2p⁶ 3s² 3p⁶ gehört zum Argon.",
     "options": [
-      "A) Kohlenstoff",
-      "B) Sauerstoff",
-      "C) Stickstoff",
-      "D) Fluor"
+      "1s² 2s² 2p⁶ 3s² 3p⁴",
+      "1s² 2s² 2p⁶ 3s² 3p⁶",
+      "1s² 2s² 2p⁶ 3s¹ 3p⁵",
+      "1s² 2s² 2p⁴ 3s² 3p⁶"
     ],
-    "question": "Welches Element hat die Ordnungszahl 8 im Periodensystem?",
-    "topic": "Atomstruktur und Periodensystem"
+    "question": "Wie lautet die Elektronenkonfiguration eines Schwefelatoms im Grundzustand?",
+    "topic": "Atombau"
   },
   {
-    "correct": 3,
-    "explanation": "Edelgase (Gruppe 18) haben eine vollständig gefüllte Außenschale und sind daher sehr stabil und reaktionsträge.",
+    "correct": 1,
+    "explanation": "Innerhalb einer Periode kommt je ein Proton in den Kern und je ein Elektron in dieselbe Außenschale. Die Abschirmung durch die inneren Schalen bleibt dabei nahezu unverändert, die effektive Kernladung steigt also und zieht die Hülle stärker zusammen. Die Zahl der besetzten Schalen ändert sich innerhalb einer Periode nicht, sie nimmt erst beim Übergang zur nächsten Periode zu. Dort springt der Atomradius wieder deutlich nach oben.",
     "options": [
-      "A) Alkalimetalle",
-      "B) Halogene",
-      "C) Erdalkalimetalle",
-      "D) Edelgase"
+      "Die Zahl der besetzten Schalen nimmt nach rechts hin ab.",
+      "Die Kernladung steigt, die Elektronen bleiben in derselben Schale.",
+      "Die wachsende Atommasse presst die Elektronenhülle zusammen.",
+      "Die Abstoßung der Außenelektronen verdichtet die Elektronenhülle."
     ],
-    "question": "Welche der folgenden Elementgruppen zeichnet sich durch eine sehr geringe Reaktivität aus?",
+    "question": "Warum nimmt der Atomradius innerhalb einer Periode von links nach rechts ab?",
     "topic": "Periodensystem"
   },
   {
     "correct": 2,
-    "explanation": "Bei der Ionenbindung übertragen Metalle Elektronen an Nichtmetalle, wodurch sich geladene Ionen bilden, die sich elektrostatisch anziehen.",
+    "explanation": "Die Elektronegativitätsdifferenz zwischen Wasserstoff (2,2) und Chlor (3,2) beträgt etwa 1,0. Das bindende Elektronenpaar wird deshalb zum Chlor verschoben, das eine negative Teilladung trägt, während der Wasserstoff positiv polarisiert ist. Das Molekül ist ein Dipol. Erst in Wasser wird die Bindung heterolytisch gespalten, dabei entstehen H₃O⁺ und Cl⁻. Im reinen, gasförmigen Chlorwasserstoff liegen dagegen Moleküle und keine Ionen vor.",
     "options": [
-      "A) Kovalente Bindung",
-      "B) Metallische Bindung",
-      "C) Ionenbindung",
-      "D) Wasserstoffbrückenbindung"
+      "Es liegt eine unpolare Atombindung vor, da beide Partner Nichtmetalle sind.",
+      "Es liegt eine Ionenbindung vor, weil HCl in Wasser Ionen bildet.",
+      "Es liegt eine polare Atombindung mit negativer Teilladung am Chlor vor.",
+      "Es liegt eine Wasserstoffbrückenbindung zwischen Wasserstoff und Chlor vor."
     ],
-    "question": "Welche Art der chemischen Bindung entsteht typischerweise zwischen einem Metall und einem Nichtmetall?",
-    "topic": "Chemische Bindungen"
+    "question": "Welche Aussage über die Bindung im Chlorwasserstoff-Molekül HCl trifft zu?",
+    "topic": "Chemische Bindung"
   },
   {
-    "correct": 2,
-    "explanation": "Das Mol ist die SI-Einheit für die Stoffmenge und repräsentiert eine bestimmte Anzahl von Teilchen (Avogadro-Konstante).",
+    "correct": 1,
+    "explanation": "Es gilt m = n · M = 0,50 mol · 100 g/mol = 50 g. Die molare Masse setzt sich aus den Atommassen zusammen: 40 g/mol für Calcium, 12 g/mol für Kohlenstoff und 3 · 16 g/mol für Sauerstoff. 100 g entsprächen einem ganzen Mol, 5,0 g dagegen nur 0,050 mol.",
     "options": [
-      "A) Gramm (g)",
-      "B) Liter (L)",
-      "C) Mol (mol)",
-      "D) Kilogramm (kg)"
+      "5,0 g",
+      "50 g",
+      "100 g",
+      "200 g"
     ],
-    "question": "Welche Einheit wird verwendet, um die Stoffmenge anzugeben?",
+    "question": "Welche Masse hat 0,50 mol Calciumcarbonat CaCO₃ (molare Masse 100 g/mol)?",
     "topic": "Stöchiometrie"
   },
   {
     "correct": 2,
-    "explanation": "Eine neutrale Lösung, wie reines Wasser, hat bei 25°C einen pH-Wert von 7. Saure Lösungen haben pH < 7, basische Lösungen pH > 7.",
+    "explanation": "Drei Kohlenstoffatome im Propan verlangen 3 CO₂, acht Wasserstoffatome verlangen 4 H₂O. Rechts stehen damit 3 · 2 + 4 · 1 = 10 Sauerstoffatome, links also 5 O₂. Die ausgeglichene Gleichung lautet C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O. Beim Ausgleichen dürfen ausschließlich die Koeffizienten verändert werden, niemals die Indizes in den Formeln.",
     "options": [
-      "A) 0",
-      "B) 4",
-      "C) 7",
-      "D) 14"
+      "1, 4, 3, 4",
+      "2, 7, 6, 8",
+      "1, 5, 3, 4",
+      "1, 5, 3, 3"
     ],
-    "question": "Welchen pH-Wert hat eine neutrale wässrige Lösung bei Raumtemperatur?",
-    "topic": "Säure-Base-Chemie"
+    "question": "Welche Koeffizienten gleichen die Verbrennung von Propan aus: __ C₃H₈ + __ O₂ → __ CO₂ + __ H₂O?",
+    "topic": "Stöchiometrie"
   },
   {
     "correct": 2,
-    "explanation": "Methan (CH4) ist das kleinste und einfachste Alkan, bestehend aus einem Kohlenstoffatom und vier Wasserstoffatomen.",
+    "explanation": "Sauerstoff hat in Sulfat die Oxidationszahl −II, vier Sauerstoffatome ergeben zusammen −8. Damit die Summe aller Oxidationszahlen der Ionenladung −2 entspricht, muss der Schwefel +VI tragen. Im Sulfit-Ion SO₃²⁻ ist es dagegen +IV, im Sulfid-Ion S²⁻ beträgt sie −II. Schwefel steht in der 6. Hauptgruppe, +VI ist damit seine höchstmögliche Oxidationszahl.",
     "options": [
-      "A) Ethan",
-      "B) Propan",
-      "C) Methan",
-      "D) Butan"
+      "+2",
+      "+4",
+      "+6",
+      "−2"
     ],
-    "question": "Was ist der einfachste Kohlenwasserstoff aus der Reihe der Alkane?",
-    "topic": "Organische Chemie (Alkane)"
-  },
-  {
-    "correct": 1,
-    "explanation": "Oxidation ist die Abgabe von Elektronen durch ein Atom oder Ion. Der Gegenbegriff, die Reduktion, ist die Aufnahme von Elektronen.",
-    "options": [
-      "A) Aufnahme von Elektronen",
-      "B) Abgabe von Elektronen",
-      "C) Erhöhung des pH-Werts",
-      "D) Absinken des pH-Werts"
-    ],
-    "question": "Was bedeutet Oxidation im Kontext einer Redoxreaktion?",
+    "question": "Welche Oxidationszahl hat Schwefel im Sulfat-Ion SO₄²⁻?",
     "topic": "Redoxreaktionen"
   },
   {
     "correct": 3,
-    "explanation": "Im festen Aggregatzustand sind die Teilchen in einer starren Struktur (z.B. einem Kristallgitter) angeordnet und können lediglich um ihre feste Position schwingen.",
+    "explanation": "Zink gibt zwei Elektronen ab (Zn → Zn²⁺ + 2 e⁻), seine Oxidationszahl steigt von 0 auf +II, es wird also oxidiert. Die abgegebenen Elektronen nehmen die Kupfer-Ionen auf und werden dadurch reduziert. Weil Zink die Reduktion des Partners ermöglicht, heißt es Reduktionsmittel. Da Zink unedler ist als Kupfer, läuft die Reaktion freiwillig ab und gibt Energie ab.",
     "options": [
-      "A) Gasförmig",
-      "B) Flüssig",
-      "C) Plasma",
-      "D) Fest"
+      "Zink wird reduziert und wirkt als Oxidationsmittel.",
+      "Zink wird oxidiert und wirkt als Oxidationsmittel.",
+      "Zink wird reduziert und wirkt als Reduktionsmittel.",
+      "Zink wird oxidiert und wirkt als Reduktionsmittel."
     ],
-    "question": "In welchem Aggregatzustand haben Teilchen eine feste Anordnung und schwingen nur um ihre Ruhelage?",
-    "topic": "Aggregatzustände"
+    "question": "Welche Aussage über das Zink in der Reaktion Zn + Cu²⁺ → Zn²⁺ + Cu trifft zu?",
+    "topic": "Redoxreaktionen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Salzsäure ist eine starke Säure und in verdünnter Lösung praktisch vollständig dissoziiert. Die Oxonium-Konzentration entspricht daher der Säurekonzentration: pH = −log c(H₃O⁺) = −log 0,01 = 2. Bei 0,1 mol/L läge der pH bei 1, bei 0,001 mol/L bei 3. Ein Wert von 12 gehört zu einer Lauge. Bei sehr starker Verdünnung versagt diese Rechnung, weil dann die Autoprotolyse des Wassers mitzählt.",
+    "options": [
+      "1",
+      "2",
+      "7",
+      "12"
+    ],
+    "question": "Welchen pH-Wert hat eine Salzsäure der Konzentration 0,01 mol/L bei 25 °C?",
+    "topic": "Säure-Base-Chemie"
   }
 ]

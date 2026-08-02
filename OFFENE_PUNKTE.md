@@ -210,10 +210,22 @@ Nicht entfernt, weil die Fragenzahl je Datei erhalten bleiben sollte.
 - **240 Umlaut-Ersatzschreibungen** im Bestand: „woertlich", „Erklaerung", „Loesung" an
   Stellen, wo ein Umlaut hingehört. Braucht einen eigenen Bereinigungslauf, keinen
   Agentendurchgang.
-- **45 Fragen mit LaTeX-Markup** (`$\frac{3x}{4}$`), das als Rohtext angezeigt wird — die
-  App hat weder KaTeX noch MathJax. Betroffen: `k10__Mathematik__Bruchrechnung` (16/16),
-  `k11__Mathematik__Geometrie`, `k11__Mathematik__Gleichungen`,
+- **LaTeX-Markup** (`$\frac{3x}{4}$`), das als Rohtext angezeigt wird — die App hat weder
+  KaTeX noch MathJax. `k10__Mathematik__Bruchrechnung` und `k11__Mathematik__Gleichungen`
+  sind am 03.08. bereinigt. Offen: `k11__Mathematik__Geometrie`,
   `k12__Mathematik__Algebra`, `k12__Mathematik__Geometrie`.
+- **Markdown-Zeichen, die wörtlich angezeigt werden** (03.08. entdeckt, 87 Treffer).
+  Der Großteil in `k12__Mathematik__Algebra`: Formeln stehen dort in Backticks und mit
+  ASCII-Potenzen — `log_2(8) + log_3(1/9)`, `P(x) = x^3 - 4x^2 + x + 6`. Der Schüler
+  sieht Backticks und Zirkumflex wörtlich. Dazu vereinzelt `*kursiv*` und `**fett**`
+  in Klasse 12 Deutsch und Geschichte. Klasse 12 ist noch komplett ungeprüft.
+- **Fragen, die ihre eigene Antwort verraten.** Zwei Fälle am 03.08. gefunden: „Welches
+  Land hat Brasília als Hauptstadt?" (Antwort: Brasilien) und eine Frage nach dem Berg,
+  der als „höchster Punkt der Alpen" beschrieben wird (Antwort: Alpen). Ein Suchlauf
+  über den Bestand meldet 409 Verdachtsfälle, aber ganz überwiegend harmlos — bei
+  Definitionsfragen („Was ist kulturelle Evolution?") steht der Begriff naturgemäß in
+  Frage und Antwort. **Die Trennung von echtem Verrat und Normalfall gelingt maschinell
+  nicht**, das muss beim Lesen auffallen. Als stehende Vorgabe in die Agenten-Prompts.
 - `topic`-Werte uneinheitlich: „Verb" neben „Verben", „Homophone" bei einer Frage über
   Homonyme.
 - Typografische Anführungszeichen („…") kommen nur in 4 Dateien vor. Ein Agent

@@ -1,194 +1,194 @@
 [
   {
-    "correct": 2,
-    "explanation": "Zwei Minuszeichen hintereinander ergeben ein Plus: 25 + 15 = 40. Dann 40 + 8 = 48.",
+    "correct": 1,
+    "explanation": "Minus und Minus ergibt Plus: -14 - (-9) = -14 + 9 = -5. Danach -5 + (-6) = -5 - 6 = -11. Wer beide Klammern als Minus liest, landet bei -29; wer beide als Plus liest, bei 1.",
     "options": [
-      "A) 18",
-      "B) 32",
-      "C) 48",
-      "D) 28"
+      "-29",
+      "-11",
+      "1",
+      "11"
     ],
-    "question": "Berechne: 25 - (-15) + 8.",
-    "topic": "Rechnen mit ganzen Zahlen"
+    "question": "Berechne: -14 - (-9) + (-6).",
+    "topic": "Rechnen mit negativen Zahlen"
   },
   {
     "correct": 1,
-    "explanation": "Man kann rechnen: 3 * 6 = 18 und 0.5 * 6 = 3. Addiert man diese Ergebnisse, erhält man 18 + 3 = 21.",
+    "explanation": "0,25 entspricht dem Bruch 1/4. Ein Viertel von 48 ist 48 : 4 = 12, zur Kontrolle 4 · 12 = 48. Wer 0,25 mit 0,5 verwechselt, halbiert nur und erhält 24; wer durch 3 teilt, erhält 16.",
     "options": [
-      "A) 18.0",
-      "B) 21.0",
-      "C) 19.5",
-      "D) 20.0"
+      "6",
+      "12",
+      "16",
+      "24"
     ],
-    "question": "Wie viel sind 3.5 mal 6?",
+    "question": "Berechne im Kopf: 0,25 · 48.",
     "topic": "Rechnen mit Dezimalzahlen"
   },
   {
-    "correct": 1,
-    "explanation": "Zuerst die Klammer lösen: 1/4 + 1/2 = 1/4 + 2/4 = 3/4. Dann 3/4 * 8. Das ist das Gleiche wie (3 * 8) / 4 = 24 / 4 = 6.",
+    "correct": 2,
+    "explanation": "Erst gleichnamig machen: 2/3 = 8/12 und 1/4 = 3/12, also 8/12 - 3/12 = 5/12. Dann 5/12 · 12 = 5. Wer Zähler und Nenner einzeln subtrahiert, erhält 1/12 und damit 1; wer nur 1/4 · 12 rechnet, erhält 3; wer addiert statt subtrahiert, erhält 11.",
     "options": [
-      "A) 4",
-      "B) 6",
-      "C) 8",
-      "D) 10"
+      "1",
+      "3",
+      "5",
+      "11"
     ],
-    "question": "Berechne: (1/4 + 1/2) * 8.",
+    "question": "Berechne: (2/3 - 1/4) · 12.",
     "topic": "Rechnen mit Brüchen"
   },
   {
     "correct": 2,
-    "explanation": "25% entsprechen einem Viertel (1/4). Um ein Viertel von 120 zu finden, teilst du 120 durch 4: 120 / 4 = 30.",
+    "explanation": "15 % von 80 € sind 12 €, denn 10 % sind 8 € und 5 % sind 4 €. Der neue Preis ist 80 € - 12 € = 68 €. Kürzer über den verminderten Grundwert: 85 % von 80 € sind 0,85 · 80 = 68. Wer bei 12 € stehen bleibt, hat nur den Rabatt berechnet; wer aufschlägt statt abzuziehen, erhält 92 €.",
     "options": [
-      "A) 20",
-      "B) 25",
-      "C) 30",
-      "D) 40"
+      "12 €",
+      "65 €",
+      "68 €",
+      "92 €"
     ],
-    "question": "Wie viel sind 25% von 120?",
+    "question": "Ein Pullover kostet 80 €. Im Schlussverkauf wird der Preis um 15 % gesenkt. Was kostet der Pullover jetzt?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
-    "explanation": "Beachte die Reihenfolge der Rechenoperationen (Punkt vor Strich): Zuerst die Multiplikationen: 7 * 3 = 21 und 4 * 2 = 8. Dann die Addition: 21 + 8 = 29.",
+    "correct": 2,
+    "explanation": "Zuerst die Klammer: 7 - 9 = -2. Dann Punkt vor Strich: 3 · (-2) = -6. Zuletzt 20 - (-6) = 20 + 6 = 26. Wer das Minus der Klammer übersieht, rechnet 20 - 6 = 14; wer stur von links nach rechts rechnet, kommt über 17 · (-2) auf -34.",
     "options": [
-      "A) 42",
-      "B) 29",
-      "C) 35",
-      "D) 50"
+      "-34",
+      "14",
+      "26",
+      "34"
     ],
-    "question": "Berechne: 7 * 3 + 4 * 2.",
+    "question": "Berechne: 20 - 3 · (7 - 9).",
     "topic": "Reihenfolge der Rechenoperationen"
   },
   {
     "correct": 0,
-    "explanation": "Zuerst die 'Punkt'-Rechnungen: (-12) * 5 = -60. Und 30 / (-2) = -15. Dann die Addition: -60 + (-15) = -60 - 15 = -75.",
+    "explanation": "Punkt vor Strich: (-12) · 5 = -60 und 30 : (-2) = -15. Dann -60 + (-15) = -75. Wer beim Teilen das Minus verliert, erhält -60 + 15 = -45; wer den zweiten Term weglässt, bleibt bei -60; wer alle Vorzeichen ignoriert, erhält 60 - 15 = 45.",
     "options": [
-      "A) -75",
-      "B) -60",
-      "C) -45",
-      "D) -30"
+      "-75",
+      "-60",
+      "-45",
+      "45"
     ],
-    "question": "Berechne: (-12) * 5 + 30 / (-2).",
+    "question": "Berechne: (-12) · 5 + 30 : (-2).",
     "topic": "Rechnen mit negativen Zahlen"
   },
   {
-    "correct": 2,
-    "explanation": "3 hoch 3 bedeutet 3 * 3 * 3. Also zuerst 3 * 3 = 9, und dann 9 * 3 = 27.",
+    "correct": 1,
+    "explanation": "2⁵ = 2 · 2 · 2 · 2 · 2 = 32 und 3² = 9, also 32 - 9 = 23. Wer die Potenz als Multiplikation liest (2 · 5 = 10), erhält 1; wer 3² als 3 · 2 = 6 deutet, erhält 26; wer das Minuszeichen übersieht, erhält 41.",
     "options": [
-      "A) 9",
-      "B) 18",
-      "C) 27",
-      "D) 33"
+      "1",
+      "23",
+      "26",
+      "41"
     ],
-    "question": "Was ist der Wert von 3 hoch 3 (3³)?",
+    "question": "Berechne: 2⁵ - 3².",
     "topic": "Potenzrechnung"
   },
   {
+    "correct": 0,
+    "explanation": "Am einfachsten alles in Prozent umrechnen: 0,7 = 70 %, 5/8 = 0,625 = 62,5 % und 2/3 = 0,666... ≈ 66,7 %. Damit ist 0,7 der größte Wert, knapp vor 68 %. Wer Brüche nach dem Nenner beurteilt, hält oft fälschlich 5/8 für den größten Wert.",
+    "options": [
+      "0,7",
+      "5/8",
+      "68 %",
+      "2/3"
+    ],
+    "question": "Welcher dieser vier Werte ist am größten?",
+    "topic": "Brüche, Dezimalzahlen und Prozente"
+  },
+  {
+    "correct": 1,
+    "explanation": "Dreisatz über den Einzelpreis: 4 Hefte kosten 6,00 €, also kostet 1 Heft 6,00 € : 4 = 1,50 €. Dann kosten 10 Hefte 10 · 1,50 € = 15,00 €. Wer nur verdoppelt, erhält 12,00 €; wer mit 4 multipliziert, 24,00 €; wer den Einzelpreis vergisst und direkt mit 10 malnimmt, 60,00 €.",
+    "options": [
+      "12,00 €",
+      "15,00 €",
+      "24,00 €",
+      "60,00 €"
+    ],
+    "question": "Vier gleiche Hefte kosten zusammen 6,00 €. Wie viel kosten 10 dieser Hefte?",
+    "topic": "Dreisatz"
+  },
+  {
+    "correct": 1,
+    "explanation": "Rechne über die runde Zahl: 100 · 7 = 700, davon 1 · 7 = 7 abziehen, also 700 - 7 = 693. Wer statt abzuziehen addiert, erhält 707; wer 90 · 7 rechnet, erhält 630; wer das Abziehen ganz vergisst, bleibt bei 700.",
+    "options": [
+      "630",
+      "693",
+      "700",
+      "707"
+    ],
+    "question": "Berechne im Kopf: 99 · 7.",
+    "topic": "Multiplikation im Kopf"
+  },
+  {
     "correct": 2,
-    "explanation": "0.75 kann als 75/100 geschrieben werden. Kürzt man diesen Bruch, indem man Zähler und Nenner durch 25 teilt, erhält man 3/4.",
+    "explanation": "Beide Zahlen mit 100 erweitern, dann verschwindet das Komma: 4,5 : 0,05 = 450 : 5 = 90. Zur Probe: 90 · 0,05 = 4,5. Beim Teilen durch eine Zahl kleiner als 1 wird das Ergebnis größer als der Dividend. Wer das Komma in die falsche Richtung verschiebt, landet bei 0,9 oder 900; wer nur mit 10 erweitert und abbricht, bei 9.",
     "options": [
-      "A) 1/4",
-      "B) 2/3",
-      "C) 3/4",
-      "D) 1/2"
+      "0,9",
+      "9",
+      "90",
+      "900"
     ],
-    "question": "Welcher Bruch ist gleich 0.75?",
-    "topic": "Brüche und Dezimalzahlen"
+    "question": "Berechne: 4,5 : 0,05.",
+    "topic": "Division von Dezimalzahlen"
   },
   {
     "correct": 1,
-    "explanation": "Um 135 und 65 zu addieren, kannst du erst 135 + 5 rechnen (ergibt 140) und dann 140 + 60 rechnen, was 200 ergibt. Es ist hilfreich, auf runde Zehnerzahlen zu kommen.",
+    "explanation": "Schrittweise ergänzen: von 3,45 bis 3,50 fehlen 0,05, von 3,50 bis 10 fehlen 6,50, zusammen also 6,55. Zur Probe: 3,45 + 6,55 = 10. Wer die Zehntel und Hundertstel getrennt und ohne Übertrag abzieht, erhält typischerweise 6,45 oder 7,55.",
     "options": [
-      "190",
-      "200",
-      "210",
-      "205"
+      "6,45",
+      "6,55",
+      "7,55",
+      "7,65"
     ],
-    "question": "Was ist das Ergebnis von 135 + 65?",
-    "topic": "Addition ganzer Zahlen"
-  },
-  {
-    "correct": 1,
-    "explanation": "Du kannst 14 * 5 rechnen, indem du (10 * 5) + (4 * 5) rechnest. Das ergibt 50 + 20 = 70.",
-    "options": [
-      "60",
-      "70",
-      "80",
-      "50"
-    ],
-    "question": "Berechne: 14 mal 5.",
-    "topic": "Multiplikation ganzer Zahlen"
-  },
-  {
-    "correct": 1,
-    "explanation": "Die Division 144 / 12 ergibt 12, da 12 * 12 = 144 ist. Es ist gut, die Quadratzahlen zu kennen.",
-    "options": [
-      "11",
-      "12",
-      "13",
-      "14"
-    ],
-    "question": "Was ist das Ergebnis von 144 geteilt durch 12?",
-    "topic": "Division ganzer Zahlen"
-  },
-  {
-    "correct": 1,
-    "explanation": "Um 12,5 - 4,8 zu rechnen, kann man zunächst 12,5 - 5 = 7,5 rechnen und dann die zu viel abgezogenen 0,2 wieder addieren: 7,5 + 0,2 = 7,7.",
-    "options": [
-      "7,3",
-      "7,7",
-      "8,7",
-      "8,3"
-    ],
-    "question": "Rechne aus: 12,5 minus 4,8.",
+    "question": "Rechne aus: 10 - 3,45.",
     "topic": "Subtraktion von Dezimalzahlen"
   },
   {
-    "correct": 1,
-    "explanation": "Um 3/4 von 24 zu berechnen, teilst du zuerst 24 durch 4 (das sind 6) und multiplizierst das Ergebnis dann mit 3. Also 6 * 3 = 18.",
+    "correct": 2,
+    "explanation": "45 : 5 = 9, also sind 3/5 von 45 gleich 3 · 9 = 27 Radfahrer. Gefragt ist aber der Rest: 45 - 27 = 18, das entspricht 2/5 von 45. Wer bei 27 stehen bleibt, hat die falsche Gruppe gezählt; wer nur 45 : 5 rechnet, erhält 9.",
     "options": [
-      "16",
+      "9",
+      "15",
       "18",
-      "20",
-      "22"
+      "27"
     ],
-    "question": "Wie viel sind 3/4 von 24?",
+    "question": "Von 45 Schülern einer Jahrgangsstufe fahren 3/5 mit dem Rad zur Schule. Wie viele fahren nicht mit dem Rad?",
     "topic": "Bruchrechnung und Anteile"
   },
   {
-    "correct": 1,
-    "explanation": "20% entsprechen 1/5. Um 1/5 von 150 zu berechnen, teilst du 150 durch 5, was 30 ergibt. Oder du rechnest 0,20 * 150 = 30.",
+    "correct": 2,
+    "explanation": "Gesucht ist der Grundwert. 20 % sind ein Fünftel; ist ein Fünftel gleich 35, so ist das Ganze 5 · 35 = 175. Zur Probe: 0,2 · 175 = 35. Wer stattdessen 20 % von 35 berechnet, erhält 7; wer mit 20 multipliziert, erhält 700.",
     "options": [
-      "25",
-      "30",
-      "35",
-      "40"
+      "7",
+      "55",
+      "175",
+      "700"
     ],
-    "question": "Wie viel sind 20% von 150?",
-    "topic": "Prozentrechnung"
+    "question": "20 % einer Zahl sind 35. Wie groß ist diese Zahl?",
+    "topic": "Prozentrechnung (Grundwert)"
   },
   {
-    "correct": 0,
-    "explanation": "Nach der Regel 'Punkt vor Strich' rechnest du zuerst die Multiplikation und Division. 8 * 3 = 24 und 15 / 5 = 3. Dann addierst du die Ergebnisse: 24 + 3 = 27.",
+    "correct": 2,
+    "explanation": "Erst die Klammer: 3 + 6 = 9. Multiplikation und Division sind gleichrangig und werden von links nach rechts abgearbeitet: 36 : 9 = 4, dann 4 · 2 = 8. Wer erst 9 · 2 = 18 rechnet und dann teilt, erhält 2; wer die Klammer ignoriert und 36 : 3 · 2 rechnet, erhält 24; wer die Multiplikation am Ende vergisst, bleibt bei 4.",
     "options": [
-      "27",
-      "29",
-      "30",
-      "31"
+      "2",
+      "4",
+      "8",
+      "24"
     ],
-    "question": "Berechne: 8 * 3 + 15 / 5.",
+    "question": "Berechne: 36 : (3 + 6) · 2.",
     "topic": "Reihenfolge der Rechenoperationen"
   },
   {
-    "correct": 1,
-    "explanation": "Das Quadrat einer Zahl bedeutet, die Zahl mit sich selbst zu multiplizieren. Also ist das Quadrat von 9 gleich 9 * 9 = 81.",
+    "correct": 3,
+    "explanation": "(-5)² = (-5) · (-5) = 25, denn zwei Minuszeichen ergeben ein Plus. (-3)³ = (-3) · (-3) · (-3) = -27, denn eine ungerade Anzahl Minuszeichen ergibt ein Minus. Also 25 - (-27) = 25 + 27 = 52. Wer bei (-3)³ das Vorzeichen falsch setzt, erhält -2; wer (-5)² als -25 liest, erhält 2 oder -52.",
     "options": [
-      "18",
-      "81",
-      "99",
-      "72"
+      "-52",
+      "-2",
+      "2",
+      "52"
     ],
-    "question": "Was ist das Quadrat von 9?",
-    "topic": "Potenzen (Quadratzahlen)"
+    "question": "Berechne: (-5)² - (-3)³.",
+    "topic": "Potenzen und negative Zahlen"
   }
 ]

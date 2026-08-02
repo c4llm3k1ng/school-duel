@@ -1,127 +1,127 @@
 [
   {
     "correct": 0,
-    "explanation": "Um den Bruch zu kürzen, teilen wir Zähler und Nenner durch den größten gemeinsamen Teiler: Zahlen (12 und 18) durch 6, x-Potenzen (x^2 und x) durch x, y-Potenzen (y und y^3) durch y. So ergibt sich (2x) / (3y^2).",
+    "explanation": "Zähler und Nenner werden durch ihre gemeinsamen Faktoren geteilt: die Zahlen 12 und 18 durch 6, die x-Potenzen x² und x durch x, die y-Potenzen y und y³ durch y. Übrig bleibt (2x)/(3y²). Wer nur die Zahlen kürzt, erhält 2x²/(3y²); wer bei den y-Potenzen falsch subtrahiert, 2x/(3y).",
     "options": [
-      "2x / (3y^2)",
+      "2x / (3y²)",
       "2x / (3y)",
-      "2x^2 / (3y^2)",
-      "x / (3y^2)"
+      "2x² / (3y²)",
+      "x / (3y²)"
     ],
-    "question": "Welcher Ausdruck ist die gekürzte Form von (12x^2y) / (18xy^3)?",
+    "question": "Welcher Ausdruck ist die vollständig gekürzte Form von (12x²y) / (18xy³) für x ≠ 0 und y ≠ 0?",
     "topic": "Kürzen von Bruchtermen"
   },
   {
     "correct": 0,
-    "explanation": "Um Brüche zu addieren, müssen sie den gleichen Nenner haben. Der Hauptnenner ist (x-2)(x+1). Der erste Bruch wird mit (x+1), der zweite mit (x-2) erweitert. Zähler: 3(x+1) + 2(x-2) = 3x+3 + 2x-4 = 5x-1. So ist das Ergebnis (5x-1) / ((x-2)(x+1)).",
+    "explanation": "Brüche lassen sich nur bei gleichem Nenner addieren. Der Hauptnenner ist (x - 2)(x + 1), der erste Bruch wird also mit (x + 1), der zweite mit (x - 2) erweitert. Für den Zähler ergibt das 3(x + 1) + 2(x - 2) = 3x + 3 + 2x - 4 = 5x - 1. Das Ergebnis lautet (5x - 1)/((x - 2)(x + 1)). Wer beim zweiten Produkt das Vorzeichen verliert, erhält 5x + 1 oder 5x - 7.",
     "options": [
       "(5x-1) / ((x-2)(x+1))",
       "(5x-7) / ((x-2)(x+1))",
       "(5x+1) / ((x-2)(x+1))",
       "(x+5) / ((x-2)(x+1))"
     ],
-    "question": "Vereinfache den Ausdruck 3/(x-2) + 2/(x+1).",
+    "question": "Fasse zu einem einzigen Bruchterm zusammen: 3/(x-2) + 2/(x+1) mit D = R \\ {2; -1}.",
     "topic": "Addition von Bruchtermen"
   },
   {
     "correct": 1,
-    "explanation": "Bei der Multiplikation werden Zähler mit Zähler und Nenner mit Nenner multipliziert. Man kann vorab kürzen oder das Ergebnis kürzen. (4a^2b * 10c^2) / (5c * 8ab) = (40a^2bc^2) / (40abc). Nach Kürzen der Zahlen (40/40=1), a-Potenzen (a^2/a=a), b-Potenzen (b/b=1) und c-Potenzen (c^2/c=c) bleibt ac übrig.",
+    "explanation": "Bei der Multiplikation werden Zähler mit Zähler und Nenner mit Nenner multipliziert: (4a²b · 10c²) / (5c · 8ab) = 40a²bc² / (40abc). Nun kürzen: die Zahlen 40/40 = 1, die a-Potenzen a²/a = a, die b-Potenzen b/b = 1 und die c-Potenzen c²/c = c. Übrig bleibt a·c. Wer b im Nenner stehen lässt, erhält ac/b.",
     "options": [
       "a/c",
       "ac",
       "ac/b",
-      "a^2c/b"
+      "a²c/b"
     ],
-    "question": "Multipliziere und vereinfache: (4a^2b)/(5c) * (10c^2)/(8ab).",
+    "question": "Multipliziere und vereinfache für a, b, c ≠ 0: (4a²b)/(5c) · (10c²)/(8ab).",
     "topic": "Multiplikation von Bruchtermen"
   },
   {
     "correct": 0,
-    "explanation": "Eine Division durch einen Bruch ist dasselbe wie die Multiplikation mit dem Kehrwert des Bruchs. Also: (x^2-4)/(x^2+x) * (x+1)/(x-2). Durch Faktorisieren erhalten wir ((x-2)(x+2))/(x(x+1)) * (x+1)/(x-2). Man kann (x-2) und (x+1) kürzen. Das Ergebnis ist (x+2)/x.",
+    "explanation": "Durch einen Bruch teilt man, indem man mit seinem Kehrwert multipliziert: (x² - 4)/(x² + x) · (x + 1)/(x - 2). Faktorisiert lautet das ((x - 2)(x + 2))/(x(x + 1)) · (x + 1)/(x - 2). Nun lassen sich (x - 2) und (x + 1) kürzen, es bleibt (x + 2)/x. Die Umformung gilt für x ≠ 0, x ≠ -1 und x ≠ 2.",
     "options": [
       "(x+2)/x",
       "(x-2)/x",
       "(x+2)/(x+1)",
-      "x+2"
+      "(x+2)/(x-2)"
     ],
-    "question": "Vereinfache den Ausdruck (x^2-4)/(x^2+x) : (x-2)/(x+1).",
+    "question": "Vereinfache den Ausdruck (x²-4)/(x²+x) : (x-2)/(x+1).",
     "topic": "Division von Bruchtermen"
   },
   {
     "correct": 0,
-    "explanation": "Zuerst den Definitionsbereich beachten: x darf nicht 1 oder -2 sein. Durch Kreuzmultiplikation erhalten wir: 2(x+2) = 3(x-1). Ausmultiplizieren: 2x+4 = 3x-3. Sortieren der Terme: 4+3 = 3x-2x. Dies führt zu x=7.",
+    "explanation": "Definitionsmenge: D = R \\ {1; -2}. Kreuzweises Multiplizieren ergibt 2(x + 2) = 3(x - 1), also 2x + 4 = 3x - 3 und damit x = 7; dieser Wert liegt in D und ist die Lösung. Wer 3(x - 1) fälschlich zu 3x + 3 macht, erhält x = 1 – ausgerechnet eine Definitionslücke. Wer die Klammern zu 2x + 2 = 3x - 1 auflöst, erhält x = 3, wer über Kreuz vertauscht (2(x - 1) = 3(x + 2)), x = -8.",
     "options": [
-      "x=7",
-      "x=8",
-      "x=6",
-      "x=5"
+      "x = 7",
+      "x = 1",
+      "x = 3",
+      "x = -8"
     ],
-    "question": "Löse die Gleichung 2/(x-1) = 3/(x+2).",
+    "question": "Löse die Bruchgleichung 2/(x-1) = 3/(x+2).",
     "topic": "Lösen von Bruchgleichungen"
   },
   {
     "correct": 0,
-    "explanation": "Zuerst Zähler und Nenner des Doppelbruchs auf einen gemeinsamen Nenner bringen. Zähler: (b+a)/(ab). Nenner: (b-a)/(ab). Ein Doppelbruch wird vereinfacht, indem man den Zähler mit dem Kehrwert des Nenners multipliziert: ((b+a)/(ab)) * ((ab)/(b-a)). Nach dem Kürzen von 'ab' bleibt (b+a)/(b-a) übrig, was (a+b)/(b-a) entspricht.",
+    "explanation": "Zuerst Zähler und Nenner des Doppelbruchs je auf einen gemeinsamen Nenner bringen: Zähler 1/a + 1/b = (b + a)/(ab), Nenner 1/a - 1/b = (b - a)/(ab). Ein Doppelbruch wird vereinfacht, indem man mit dem Kehrwert des Nenners multipliziert: ((b + a)/(ab)) · ((ab)/(b - a)). Nach dem Kürzen von ab bleibt (a + b)/(b - a). Achtung: (a + b)/(a - b) ist genau das Negative davon und deshalb falsch.",
     "options": [
       "(a+b)/(b-a)",
       "(a-b)/(a+b)",
       "(b-a)/(a+b)",
       "(a+b)/(a-b)"
     ],
-    "question": "Vereinfache den Doppelbruch ((1/a) + (1/b)) / ((1/a) - (1/b)).",
+    "question": "Vereinfache den Doppelbruch ((1/a) + (1/b)) / ((1/a) - (1/b)) für a, b ≠ 0 und a ≠ b.",
     "topic": "Vereinfachen von Doppelbrüchen"
   },
   {
     "correct": 2,
-    "explanation": "Der Nenner eines Bruches darf nicht Null sein. Wir setzen den Nenner gleich Null: x^2-9 = 0. Faktorisieren ergibt (x-3)(x+3) = 0. Die Lösungen sind x=3 und x=-3. Daher ist der Definitionsbereich alle reellen Zahlen außer 3 und -3, also R \\ {3, -3}.",
+    "explanation": "Der Nenner eines Bruchterms darf nicht null werden. Aus x² - 9 = 0 folgt (x - 3)(x + 3) = 0 und damit x = 3 oder x = -3. Beide Stellen sind auszuschließen, der Definitionsbereich ist also R \\ {-3; 3}. Der Zähler 3x + 1 spielt dabei keine Rolle, und x = 0 ist erlaubt, denn dort ist der Nenner -9.",
     "options": [
       "R \\ {3}",
       "R \\ {-3}",
-      "R \\ {3, -3}",
-      "R \\ {0, 3, -3}"
+      "R \\ {-3; 3}",
+      "R \\ {0; -3; 3}"
     ],
-    "question": "Bestimme den Definitionsbereich des Terms (3x+1)/(x^2-9).",
+    "question": "Bestimme den maximalen Definitionsbereich des Terms (3x+1)/(x²-9).",
     "topic": "Definitionsbereich von Bruchtermen"
   },
   {
     "correct": 1,
-    "explanation": "Wir faktorisieren Zähler und Nenner. Der Zähler x^2-x-6 lässt sich faktorisieren zu (x-3)(x+2). Der Nenner x^2-4 ist eine dritte binomische Formel und faktorisiert zu (x-2)(x+2). Wenn wir den Bruch mit den faktorisierten Ausdrücken schreiben: ((x-3)(x+2))/((x-2)(x+2)), können wir den gemeinsamen Faktor (x+2) kürzen. Das Ergebnis ist (x-3)/(x-2).",
+    "explanation": "Zähler und Nenner werden faktorisiert. Für x² - x - 6 liefert der Satz von Vieta die Zerlegung (x - 3)(x + 2), der Nenner x² - 4 ist nach der dritten binomischen Formel (x - 2)(x + 2). Der Bruch lautet also ((x - 3)(x + 2))/((x - 2)(x + 2)), und der gemeinsame Faktor (x + 2) lässt sich kürzen. Es bleibt (x - 3)/(x - 2) für x ≠ 2 und x ≠ -2.",
     "options": [
       "(x+3)/(x-2)",
       "(x-3)/(x-2)",
       "(x-3)/(x+2)",
       "(x+3)/(x+2)"
     ],
-    "question": "Vereinfache den Ausdruck (x^2-x-6)/(x^2-4).",
+    "question": "Vereinfache den Ausdruck (x²-x-6)/(x²-4).",
     "topic": "Faktorisieren und Vereinfachen von Bruchtermen"
   },
   {
     "correct": 0,
-    "explanation": "Der Zähler (3x² - 6x) kann zu 3x(x - 2) faktorisiert werden. Der Nenner (x² - 4) ist eine binomische Formel und kann zu (x - 2)(x + 2) faktorisiert werden. Durch Kürzen des gemeinsamen Faktors (x - 2) ergibt sich 3x / (x + 2). Die Definitionslücken sind x ≠ 2 und x ≠ -2.",
+    "explanation": "Definitionsmenge: D = R \\ {3}. Multipliziert man die Gleichung mit (x - 3), so folgt x = 3 + 2(x - 3) = 2x - 3 und damit x = 3. Genau dieser Wert ist aber die Definitionslücke, es handelt sich also um eine Scheinlösung. Direkt sieht man es so: (x - 3)/(x - 3) = 2 bedeutet 1 = 2, ein Widerspruch. Die Gleichung hat keine Lösung, L = { }.",
     "options": [
-      "3x / (x + 2)",
-      "3x / (x - 2)",
-      "3 / (x + 2)",
-      "3x"
+      "L = { }",
+      "L = {3}",
+      "L = {-3}",
+      "L = {1}"
     ],
-    "question": "Welcher Term ergibt sich nach dem vollständigen Kürzen von (3x² - 6x) / (x² - 4)?",
-    "topic": "Kürzen von Bruchtermen"
+    "question": "Welche Lösungsmenge hat die Bruchgleichung x/(x-3) = 3/(x-3) + 2?",
+    "topic": "Bruchgleichungen mit Scheinlösung"
   },
   {
     "correct": 0,
-    "explanation": "Faktorisiere (a² - b²) als (a - b)(a + b). Dann wird der Ausdruck zu ((a - b)(a + b) / (2ab)) * (4a / (a + b)). Kürze (a + b) und 2a, um 2(a - b) / b zu erhalten. Beachte, dass a, b ≠ 0 und a + b ≠ 0 sein müssen.",
+    "explanation": "Nach der dritten binomischen Formel ist a² - b² = (a - b)(a + b). Der Ausdruck lautet damit ((a - b)(a + b))/(2ab) · (4a)/(a + b). Kürzen von (a + b) und von 2a ergibt (a - b) · 2/b, also 2(a - b)/b. Wer nur (a + b), nicht aber 2a kürzt, erhält 2a(a - b)/b.",
     "options": [
       "2(a - b) / b",
       "2a(a - b) / b",
       "2b / (a - b)",
       "2a / (a + b)"
     ],
-    "question": "Multipliziere und vereinfache den Ausdruck: ((a² - b²) / (2ab)) * (4a / (a + b)).",
+    "question": "Multipliziere und vereinfache für a, b ≠ 0 und a ≠ -b: ((a² - b²) / (2ab)) · (4a / (a + b)).",
     "topic": "Multiplikation von Bruchtermen"
   },
   {
     "correct": 3,
-    "explanation": "Der Hauptnenner ist (x² - 1), da x² - 1 = (x - 1)(x + 1). Erweitere die Brüche: (x + 1)/(x² - 1) - 2/(x² - 1) + (x - 1)/(x² - 1). Addiere die Zähler: (x + 1 - 2 + x - 1) / (x² - 1) = (2x - 2) / (x² - 1). Faktorisiere den Zähler zu 2(x - 1) und kürze mit (x - 1) im Nenner, sodass 2 / (x + 1) übrig bleibt. Die Definitionslücken sind x ≠ 1 und x ≠ -1.",
+    "explanation": "Wegen x² - 1 = (x - 1)(x + 1) ist der Hauptnenner x² - 1. Erweitern ergibt (x + 1)/(x² - 1) - 2/(x² - 1) + (x - 1)/(x² - 1). Die Zähler addieren sich zu x + 1 - 2 + x - 1 = 2x - 2, also (2x - 2)/(x² - 1). Faktorisieren des Zählers zu 2(x - 1) erlaubt das Kürzen mit (x - 1), es bleibt 2/(x + 1) für x ≠ 1 und x ≠ -1. Wer am Schluss nicht kürzt, bleibt bei 2x/(x² - 1) hängen.",
     "options": [
       "2x / (x² - 1)",
       "2 / (x - 1)",
@@ -133,33 +133,33 @@
   },
   {
     "correct": 1,
-    "explanation": "Zuerst subtrahiere 1/(x - 2) von beiden Seiten: 2/(x - 2) = 1. Multipliziere dann beide Seiten mit (x - 2): 2 = x - 2. Addiere 2 zu beiden Seiten: x = 4. Die Definitionsmenge ist D = R \\ {2}, daher ist x = 4 eine gültige Lösung.",
+    "explanation": "Definitionsmenge: D = R \\ {2}. Subtrahiert man 1/(x - 2) auf beiden Seiten, bleibt 2/(x - 2) = 1. Multiplizieren mit (x - 2) ergibt 2 = x - 2 und damit x = 4, ein Wert aus D und somit die Lösung. Wer beim Multiplizieren die 1 auf der rechten Seite vergisst, erhält 3 = x - 2 und damit x = 5; wer 2/(x - 2) = 1 zu 2(x - 2) = 1 umformt, landet bei x = 2,5.",
     "options": [
-      "x = 3",
+      "x = 2",
       "x = 4",
-      "x = 2 (nicht zulässig)",
-      "Es gibt keine Lösung"
+      "x = 5",
+      "x = 2,5"
     ],
-    "question": "Löse die Gleichung nach x: 3/(x - 2) = 1 + 1/(x - 2).",
+    "question": "Löse die Gleichung nach x: 3/(x-2) = 1 + 1/(x-2).",
     "topic": "Lösen von Bruchgleichungen"
   },
   {
     "correct": 2,
-    "explanation": "Der Nenner eines Bruches darf nicht Null sein. Setze den Nenner gleich Null: x² - 9 = 0. Faktorisiere dies als (x - 3)(x + 3) = 0. Daraus ergeben sich die Lösungen x = 3 und x = -3. Diese Werte sind nicht in der Definitionsmenge enthalten. Daher ist D = R \\ {-3, 3}.",
+    "explanation": "Der Ansatz lautet 5x + 1 = A(x + 2) + B(x - 1). Setzt man x = 1 ein, fällt B weg: 6 = 3A, also A = 2. Setzt man x = -2 ein, fällt A weg: -9 = -3B, also B = 3. Damit ist (5x + 1)/((x - 1)(x + 2)) = 2/(x - 1) + 3/(x + 2) für x ≠ 1 und x ≠ -2. Probe: 2(x + 2) + 3(x - 1) = 2x + 4 + 3x - 3 = 5x + 1.",
     "options": [
-      "D = R \\ {3}",
-      "D = R \\ {-3}",
-      "D = R \\ {-3, 3}",
-      "D = R"
+      "3/(x-1) + 2/(x+2)",
+      "2/(x-1) - 3/(x+2)",
+      "2/(x-1) + 3/(x+2)",
+      "5/(x-1) + 1/(x+2)"
     ],
-    "question": "Bestimme die maximale Definitionsmenge D der Funktion f(x) = (x - 3) / (x² - 9).",
-    "topic": "Definitionsbereich von rationalen Funktionen"
+    "question": "Der Term (5x+1)/((x-1)(x+2)) soll in der Form A/(x-1) + B/(x+2) geschrieben werden. Wie lautet die Partialbruchzerlegung?",
+    "topic": "Partialbruchzerlegung"
   },
   {
     "correct": 2,
-    "explanation": "Bringe Zähler und Nenner des Doppelbruchs jeweils auf einen gemeinsamen Nenner: Zähler = (x/x - 1/x) = (x - 1)/x. Nenner = (x²/x - 1/x) = (x² - 1)/x. Der Doppelbruch wird zu ((x - 1)/x) / ((x² - 1)/x). Multipliziere den Zähler mit dem Kehrwert des Nenners: ((x - 1)/x) * (x/(x² - 1)). Kürze x und faktorisiere (x² - 1) zu (x - 1)(x + 1). Der Term wird zu (x - 1) / ((x - 1)(x + 1)). Kürze (x - 1) und erhalte 1 / (x + 1). Die Definitionslücken sind x ≠ 0, x ≠ 1 und x ≠ -1.",
+    "explanation": "Zähler und Nenner je auf einen gemeinsamen Nenner bringen: Zähler 1 - 1/x = (x - 1)/x, Nenner x - 1/x = (x² - 1)/x. Der Doppelbruch wird zu ((x - 1)/x) · (x/(x² - 1)). Nach dem Kürzen von x und dem Faktorisieren x² - 1 = (x - 1)(x + 1) steht dort (x - 1)/((x - 1)(x + 1)), also nach dem Kürzen von (x - 1) das Ergebnis 1/(x + 1). Nötig sind x ≠ 0, x ≠ 1 und x ≠ -1.",
     "options": [
-      "1/x",
+      "1 / x",
       "x / (x + 1)",
       "1 / (x + 1)",
       "x / (x - 1)"
@@ -169,24 +169,24 @@
   },
   {
     "correct": 0,
-    "explanation": "Wende die Potenzgesetze an. Im Zähler addieren sich die Exponenten: 1/3 + 1/2 = 2/6 + 3/6 = 5/6. Der Zähler wird zu x^(5/6). Dividiere dann durch x^(1/6), indem du die Exponenten subtrahierst: 5/6 - 1/6 = 4/6 = 2/3. Das Ergebnis ist x^(2/3). Vorausgesetzt x > 0.",
+    "explanation": "Beim Multiplizieren von Potenzen mit gleicher Basis addiert man die Exponenten: 1/3 + 1/2 = 2/6 + 3/6 = 5/6, der Zähler ist also x^(5/6). Beim Dividieren subtrahiert man: 5/6 - 1/6 = 4/6 = 2/3. Das Ergebnis ist x^(2/3), gleichbedeutend mit der dritten Wurzel aus x². Die Umformung setzt x > 0 voraus.",
     "options": [
       "x^(2/3)",
       "x^(1/3)",
       "x^(5/6)",
       "x^(1/2)"
     ],
-    "question": "Vereinfache den Ausdruck: (x^(1/3) * x^(1/2)) / x^(1/6).",
+    "question": "Vereinfache für x > 0 den Ausdruck: (x^(1/3) · x^(1/2)) / x^(1/6).",
     "topic": "Potenzen mit rationalen Exponenten"
   },
   {
     "correct": 2,
-    "explanation": "Bestimme zuerst die Definitionsmenge: Der Nenner x²-4 ist (x-2)(x+2), daher müssen x ≠ 2 und x ≠ -2 gelten. Multipliziere die gesamte Gleichung mit dem Hauptnenner (x-2)(x+2): (x+2) - (x-2) = 4. Vereinfache die linke Seite: x + 2 - x + 2 = 4, also 4 = 4. Da diese Aussage wahr ist, ist die Gleichung für alle x gültig, für die sie definiert ist. Die Lösungsmenge ist daher R ohne die Definitionslücken, also L = R \\ {-2, 2}.",
+    "explanation": "Zuerst die Definitionsmenge: Wegen x² - 4 = (x - 2)(x + 2) muss x ≠ 2 und x ≠ -2 gelten. Multipliziert man die Gleichung mit dem Hauptnenner (x - 2)(x + 2), folgt (x + 2) - (x - 2) = 4, also x + 2 - x + 2 = 4 und damit die wahre Aussage 4 = 4. Die Gleichung ist also für jedes zulässige x erfüllt, die Lösungsmenge ist L = R \\ {-2; 2}.",
     "options": [
-      "x = 2",
-      "x = -2",
-      "x ∈ R \\ {-2, 2}",
-      "Es gibt keine Lösung"
+      "L = {2}",
+      "L = {-2}",
+      "L = R \\ {-2; 2}",
+      "L = { }"
     ],
     "question": "Bestimme die Lösungsmenge der Gleichung: 1/(x-2) - 1/(x+2) = 4/(x²-4).",
     "topic": "Spezielle Bruchgleichungen"

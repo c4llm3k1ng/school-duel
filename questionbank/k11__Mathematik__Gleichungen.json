@@ -1,27 +1,27 @@
 [
   {
     "correct": 1,
-    "explanation": "Zuerst die Klammer auflösen: 3x - 6 + 5 = 2x - 1. Vereinfachen: 3x - 1 = 2x - 1. Dann alle x-Terme auf eine Seite und Konstanten auf die andere bringen: 3x - 2x = -1 + 1, was zu x = 0 führt.",
+    "explanation": "Division durch 2 ergibt sin(x) = 1/2. Am Einheitskreis hat der Sinus den Wert 1/2 bei x = π/6 (30°). Da der Sinus auch im zweiten Quadranten positiv ist, kommt die zweite Lösung x = π - π/6 = 5π/6 (150°) hinzu. Alle weiteren Lösungen unterscheiden sich um 2π und liegen damit außerhalb des Intervalls.",
     "options": [
-      "x = -2",
-      "x = 0",
-      "x = 2",
-      "x = 4"
+      "x = π/6 und x = 7π/6",
+      "x = π/6 und x = 5π/6",
+      "x = π/3 und x = 2π/3",
+      "x = π/6 und x = 11π/6"
     ],
-    "question": "Lösen Sie die folgende Gleichung nach x auf: 3(x - 2) + 5 = 2x - 1",
-    "topic": "Lineare Gleichungen"
+    "question": "Bestimmen Sie alle Lösungen der Gleichung 2·sin(x) = 1 im Intervall [0; 2π).",
+    "topic": "Trigonometrische Gleichungen"
   },
   {
     "correct": 0,
-    "explanation": "Diese quadratische Gleichung lässt sich mit der Mitternachtsformel (abc-Formel) oder der pq-Formel lösen. Mit der pq-Formel (x₁₂ = -p/2 ± √((p/2)² - q)) ergeben sich für p=-6 und q=8: x₁₂ = 3 ± √(9-8) = 3 ± 1. Daraus folgt x₁=4 und x₂=2.",
+    "explanation": "Mit der Substitution u = x² entsteht u² - 13u + 36 = 0. Die pq-Formel liefert u = 6,5 ± √(42,25 - 36) = 6,5 ± 2,5, also u₁ = 9 und u₂ = 4. Die Rücksubstitution x² = 9 ergibt x = 3 und x = -3, x² = 4 ergibt x = 2 und x = -2. Die Gleichung hat also vier reelle Lösungen.",
     "options": [
-      "x₁=2, x₂=4",
-      "x₁=-2, x₂=4",
-      "x₁=2, x₂=-4",
-      "x₁=-2, x₂=-4"
+      "x = ±2 und x = ±3",
+      "x = ±4 und x = ±9",
+      "x = 2 und x = 3",
+      "x = ±1 und x = ±6"
     ],
-    "question": "Bestimmen Sie die reellen Lösungen der quadratischen Gleichung: x² - 6x + 8 = 0",
-    "topic": "Quadratische Gleichungen"
+    "question": "Bestimmen Sie alle reellen Lösungen der Gleichung x⁴ - 13x² + 36 = 0.",
+    "topic": "Substitution"
   },
   {
     "correct": 1,
@@ -49,14 +49,14 @@
   },
   {
     "correct": 1,
-    "explanation": "Addiert man die beiden Gleichungen (I + II), so erhält man (x+y) + (x-y) = 7+3, was zu 2x = 10 führt. Daraus folgt x = 5. Setzt man x = 5 in die erste Gleichung (I) ein: 5 + y = 7, so erhält man y = 2.",
+    "explanation": "Aus (I) folgt z = 6 - x - y. Einsetzen in (II): 2x - y + 6 - x - y = 3, also x - 2y = -3. Einsetzen in (III): x + 2y - 6 + x + y = 2, also 2x + 3y = 8. Aus der ersten Beziehung folgt x = 2y - 3; eingesetzt ergibt das 2(2y - 3) + 3y = 8, also 7y = 14 und damit y = 2. Daraus folgen x = 1 und z = 3. Die Probe bestätigt alle drei Gleichungen.",
     "options": [
-      "x=4, y=3",
-      "x=5, y=2",
-      "x=6, y=1",
-      "x=2, y=5"
+      "x=3, y=2, z=1",
+      "x=1, y=2, z=3",
+      "x=2, y=1, z=3",
+      "x=1, y=3, z=2"
     ],
-    "question": "Finden Sie die Lösung des linearen Gleichungssystems:\nI) x + y = 7\nII) x - y = 3",
+    "question": "Finden Sie die Lösung des linearen Gleichungssystems:\nI) x + y + z = 6\nII) 2x - y + z = 3\nIII) x + 2y - z = 2",
     "topic": "Lineare Gleichungssysteme"
   },
   {
@@ -85,110 +85,110 @@
   },
   {
     "correct": 0,
-    "explanation": "Zuerst die Definitionsmenge und Zielmenge beachten: Der Radikand unter der Wurzel muss ≥ 0 sein (x+2 ≥ 0 => x ≥ -2) und die rechte Seite der Gleichung muss ≥ 0 sein, da eine Wurzel per Definition nicht negativ ist (x ≥ 0). Kombiniert ergibt das x ≥ 0. Nun quadrieren wir beide Seiten: x + 2 = x². Umstellen zu einer quadratischen Gleichung: x² - x - 2 = 0. Mithilfe der pq-Formel erhält man x₁₂ = 0.5 ± √(0.25 + 2) = 0.5 ± √2.25 = 0.5 ± 1.5. Die Lösungen sind x₁ = 2 und x₂ = -1. Da aber x ≥ 0 gelten muss, ist x₂ = -1 keine gültige Lösung. Einzige Lösung ist x = 2.",
+    "explanation": "Zuerst die Definitionsmenge beachten: Der Radikand muss ≥ 0 sein (x + 2 ≥ 0, also x ≥ -2) und die rechte Seite muss ≥ 0 sein, da eine Wurzel nie negativ ist (x ≥ 0). Zusammen gilt x ≥ 0. Quadrieren beider Seiten ergibt x + 2 = x², umgestellt x² - x - 2 = 0. Die pq-Formel liefert x = 0,5 ± √(0,25 + 2) = 0,5 ± √2,25 = 0,5 ± 1,5, also x₁ = 2 und x₂ = -1. Wegen x ≥ 0 ist x₂ = -1 eine Scheinlösung. Einzige Lösung ist x = 2.",
     "options": [
       "x = 2",
       "x = -1",
       "x = 2 und x = -1",
-      "Die Gleichung hat keine reellen Lösungen."
+      "x = -2 und x = 1"
     ],
     "question": "Lösen Sie die Wurzelgleichung: √(x + 2) = x",
     "topic": "Wurzelgleichungen"
   },
   {
     "correct": 1,
-    "explanation": "Um eine lineare Gleichung zu lösen, bringt man alle Terme mit der Variablen auf eine Seite und die konstanten Terme auf die andere Seite, fasst zusammen und isoliert die Variable: $5x - 2x = 10 + 8 \\Rightarrow 3x = 18 \\Rightarrow x = 6$.",
+    "explanation": "Gesucht ist t mit 200 · 1,05^t = 400, also 1,05^t = 2. Logarithmieren beider Seiten ergibt t · ln(1,05) = ln(2) und damit t = ln(2)/ln(1,05) ≈ 0,693/0,0488 ≈ 14,2. Der Bestand verdoppelt sich also nach rund 14,2 Jahren. Der Startwert 200 spielt keine Rolle: Bei exponentiellem Wachstum ist die Verdopplungszeit vom Anfangswert unabhängig.",
     "options": [
-      "A: $x = 2$",
-      "B: $x = 6$",
-      "C: $x = 4$",
-      "D: $x = -2$"
+      "ca. 10,5 Jahre",
+      "ca. 14,2 Jahre",
+      "ca. 20,0 Jahre",
+      "ca. 7,2 Jahre"
     ],
-    "question": "Was ist die Lösung der Gleichung $5x - 8 = 2x + 10$?",
-    "topic": "Lineare Gleichungen"
-  },
-  {
-    "correct": 0,
-    "explanation": "Quadratische Gleichungen der Form $ax^2+bx+c=0$ können mit der Mitternachtsformel (abc-Formel) oder bei $a=1$ mit der pq-Formel gelöst werden. Mit der pq-Formel ($p=4, q=-12$) ergibt sich $x_{1,2} = -\\frac{4}{2} \\pm \\sqrt{(\\frac{4}{2})^2 - (-12)} = -2 \\pm \\sqrt{4 + 12} = -2 \\pm \\sqrt{16} = -2 \\pm 4$. Die Lösungen sind $x_1 = 2$ und $x_2 = -6$.",
-    "options": [
-      "A: $x_1 = 2, x_2 = -6$",
-      "B: $x_1 = -2, x_2 = 6$",
-      "C: $x_1 = 4, x_2 = -3$",
-      "D: $x_1 = -4, x_2 = 3$"
-    ],
-    "question": "Bestimme alle reellen Lösungen der quadratischen Gleichung $x^2 + 4x - 12 = 0$.",
-    "topic": "Quadratische Gleichungen"
-  },
-  {
-    "correct": 2,
-    "explanation": "Bei Bruchgleichungen muss man zunächst den Definitionsbereich ($x \\neq 1$) bestimmen und dann die Gleichung mit dem Hauptnenner ($x-1$) multiplizieren: $2 = 1 \\cdot (x-1) + x \\Rightarrow 2 = x - 1 + x \\Rightarrow 2 = 2x - 1 \\Rightarrow 3 = 2x \\Rightarrow x = 1.5$. Diese Lösung liegt im Definitionsbereich.",
-    "options": [
-      "A: $x = 1$",
-      "B: $x = -1$",
-      "C: $x = 1.5$",
-      "D: Die Gleichung hat keine Lösung."
-    ],
-    "question": "Finde die Lösung der Bruchgleichung $\\frac{2}{x-1} = 1 + \\frac{x}{x-1}$.",
-    "topic": "Bruchgleichungen"
-  },
-  {
-    "correct": 1,
-    "explanation": "Um Wurzelgleichungen zu lösen, quadriert man beide Seiten: $2x+1 = (x-1)^2 \\Rightarrow 2x+1 = x^2 - 2x + 1 \\Rightarrow 0 = x^2 - 4x \\Rightarrow 0 = x(x-4)$. Die möglichen Lösungen sind $x=0$ und $x=4$. Durch Einsetzen in die ursprüngliche Gleichung prüfen: Für $x=0$: $\\sqrt{1} = -1$, was falsch ist (Scheinlösung). Für $x=4$: $\\sqrt{9} = 3$, was wahr ist. Die einzige gültige Lösung ist $x=4$.",
-    "options": [
-      "A: $x=0$",
-      "B: $x=4$",
-      "C: $x=0$ und $x=4$",
-      "D: Die Gleichung hat keine reelle Lösung."
-    ],
-    "question": "Welche reellen Lösungen hat die Wurzelgleichung $\\sqrt{2x+1} = x-1$?",
-    "topic": "Wurzelgleichungen"
-  },
-  {
-    "correct": 0,
-    "explanation": "Eine Logarithmusgleichung $\\log_b(a) = c$ kann direkt in die Exponentialform $b^c = a$ umgewandelt werden. Hier: $3^2 = x+2 \\Rightarrow 9 = x+2 \\Rightarrow x = 7$. Der Definitionsbereich des Logarithmus erfordert $x+2 > 0$, also $x > -2$. Die Lösung $x=7$ ist gültig.",
-    "options": [
-      "A: $x=7$",
-      "B: $x=4$",
-      "C: $x=11$",
-      "D: $x=1$"
-    ],
-    "question": "Bestimme die Lösung der Logarithmusgleichung $\\log_3(x+2) = 2$.",
-    "topic": "Logarithmusgleichungen"
-  },
-  {
-    "correct": 2,
-    "explanation": "Durch die Substitution $u = e^x$ wird die Gleichung zu einer quadratischen Gleichung: $u^2 - 5u + 6 = 0$. Diese lässt sich faktorisieren zu $(u-2)(u-3) = 0$, was die Lösungen $u_1=2$ und $u_2=3$ liefert. Rücksubstitution: $e^x = 2 \\Rightarrow x_1 = \\ln(2)$ und $e^x = 3 \\Rightarrow x_2 = \\ln(3)$.",
-    "options": [
-      "A: $x = \\ln(2)$",
-      "B: $x = \\ln(3)$",
-      "C: $x_1 = \\ln(2), x_2 = \\ln(3)$",
-      "D: Die Gleichung hat keine reellen Lösungen."
-    ],
-    "question": "Finde alle reellen Lösungen der Exponentialgleichung $e^{2x} - 5e^x + 6 = 0$.",
+    "question": "Ein Bestand wächst gemäß N(t) = 200 · 1,05^t (t in Jahren). Nach wie vielen Jahren hat er sich verdoppelt?",
     "topic": "Exponentialgleichungen"
   },
   {
     "correct": 0,
-    "explanation": "Betragsgleichungen werden durch Fallunterscheidung gelöst, hier für $x-3 \\ge 0$ und $x-3 < 0$. Die rechte Seite $2x$ muss zudem nicht-negativ sein ($x \\ge 0$).\nFall 1: $x-3 \\ge 0 \\Rightarrow x \\ge 3$. Dann ist $x-3 = 2x \\Rightarrow x = -3$. Dies widerspricht der Bedingung $x \\ge 3$.\nFall 2: $x-3 < 0 \\Rightarrow x < 3$. Dann ist $-(x-3) = 2x \\Rightarrow -x+3 = 2x \\Rightarrow 3 = 3x \\Rightarrow x = 1$. Diese Lösung erfüllt $x < 3$ und auch $x \\ge 0$. Daher ist $x=1$ die einzige gültige Lösung.",
+    "explanation": "Genau eine reelle Lösung liegt vor, wenn die Diskriminante null ist. Mit a = 1, b = -6 und c = k gilt D = b² - 4ac = 36 - 4k. Aus 36 - 4k = 0 folgt k = 9. Die Probe bestätigt das: x² - 6x + 9 = (x - 3)² hat die doppelte Lösung x = 3. Für k < 9 gibt es zwei Lösungen, für k > 9 keine reelle.",
     "options": [
-      "A: $x=1$",
-      "B: $x=-3$",
-      "C: $x=1$ und $x=-3$",
-      "D: Die Gleichung hat keine reelle Lösung."
+      "k = 9",
+      "k = -9",
+      "k = 3",
+      "k = 36"
     ],
-    "question": "Welche reellen Lösungen besitzt die Betragsgleichung $|x-3| = 2x$?",
+    "question": "Für welchen Wert von k besitzt die Gleichung x² - 6x + k = 0 genau eine (doppelte) reelle Lösung?",
+    "topic": "Quadratische Gleichungen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Bei Bruchgleichungen bestimmt man zuerst den Definitionsbereich: x ≠ 1. Multiplikation mit dem Hauptnenner (x - 1) ergibt 2 = (x - 1) + x, also 2 = 2x - 1. Daraus folgt 2x = 3 und damit x = 1,5. Dieser Wert liegt im Definitionsbereich und ist die Lösung.",
+    "options": [
+      "x = 1",
+      "x = -1",
+      "x = 1,5",
+      "x = 3"
+    ],
+    "question": "Finden Sie die Lösung der Bruchgleichung 2/(x - 1) = 1 + x/(x - 1).",
+    "topic": "Bruchgleichungen"
+  },
+  {
+    "correct": 1,
+    "explanation": "Quadrieren beider Seiten ergibt 2x + 1 = x² - 2x + 1, also 0 = x² - 4x = x·(x - 4). Die Kandidaten sind x = 0 und x = 4. Die Probe ist zwingend, weil Quadrieren keine Äquivalenzumformung ist: Für x = 0 stünde da √1 = -1, das ist falsch (Scheinlösung). Für x = 4 gilt √9 = 3, das stimmt. Einzige Lösung ist x = 4.",
+    "options": [
+      "x = 0",
+      "x = 4",
+      "x = 0 und x = 4",
+      "x = 2"
+    ],
+    "question": "Welche reellen Lösungen hat die Wurzelgleichung √(2x + 1) = x - 1?",
+    "topic": "Wurzelgleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Tangens hat den Wert √3 bei x = π/3 (60°), denn sin(π/3)/cos(π/3) = (√3/2)/(1/2) = √3. Der Tangens hat die Periode π, deshalb ist die zweite Lösung x = π/3 + π = 4π/3 (240°). Beide Werte liegen im Intervall [0; 2π), alle weiteren liegen außerhalb.",
+    "options": [
+      "x = π/3 und x = 4π/3",
+      "x = π/3 und x = 2π/3",
+      "x = π/6 und x = 7π/6",
+      "x = π/3 und x = 5π/3"
+    ],
+    "question": "Bestimmen Sie alle Lösungen der Gleichung tan(x) = √3 im Intervall [0; 2π).",
+    "topic": "Trigonometrische Gleichungen"
+  },
+  {
+    "correct": 2,
+    "explanation": "Wegen e^(2x) = (e^x)² führt die Substitution u = e^x auf u² - 5u + 6 = 0. Faktorisieren ergibt (u - 2)·(u - 3) = 0 mit u₁ = 2 und u₂ = 3. Beide Werte sind positiv und damit als e^x zulässig. Die Rücksubstitution liefert e^x = 2, also x₁ = ln(2) ≈ 0,69, und e^x = 3, also x₂ = ln(3) ≈ 1,10.",
+    "options": [
+      "x = ln(2)",
+      "x = ln(3)",
+      "x₁ = ln(2), x₂ = ln(3)",
+      "x₁ = ln(2)/2, x₂ = ln(3)/2"
+    ],
+    "question": "Finden Sie alle reellen Lösungen der Exponentialgleichung e^(2x) - 5·e^x + 6 = 0.",
+    "topic": "Exponentialgleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die rechte Seite 2x muss nicht negativ sein, also gilt x ≥ 0. Fall 1 (x - 3 ≥ 0, also x ≥ 3): x - 3 = 2x liefert x = -3, im Widerspruch zur Bedingung x ≥ 3. Fall 2 (x - 3 < 0, also x < 3): -(x - 3) = 2x, also 3 - x = 2x und damit 3x = 3, x = 1. Dieser Wert erfüllt x < 3 und x ≥ 0. Einzige Lösung ist x = 1.",
+    "options": [
+      "x = 1",
+      "x = -3",
+      "x = 1 und x = -3",
+      "x = 3"
+    ],
+    "question": "Welche reellen Lösungen besitzt die Betragsgleichung |x - 3| = 2x?",
     "topic": "Betragsgleichungen"
   },
   {
     "correct": 0,
-    "explanation": "Zuerst den Definitionsbereich beachten: $x > 0$ und $x-2 > 0 \\Rightarrow x > 2$. Mit dem Logarithmusgesetz $\\log_b(A) + \\log_b(B) = \\log_b(A \\cdot B)$ wird die Gleichung zu $\\log_2(x(x-2)) = 3$. Umwandlung in Exponentialform: $x(x-2) = 2^3 \\Rightarrow x^2 - 2x = 8 \\Rightarrow x^2 - 2x - 8 = 0$. Die Lösungen dieser quadratischen Gleichung sind $x_1=4$ und $x_2=-2$. Nur $x=4$ liegt im Definitionsbereich $x>2$.",
+    "explanation": "Der Definitionsbereich verlangt x > 0 und x - 2 > 0, also x > 2. Mit dem Logarithmusgesetz log₂(A) + log₂(B) = log₂(A·B) wird die Gleichung zu log₂(x·(x - 2)) = 3, also x·(x - 2) = 2³ = 8 und damit x² - 2x - 8 = 0. Die pq-Formel liefert x = 1 ± √(1 + 8) = 1 ± 3, also x₁ = 4 und x₂ = -2. Nur x = 4 liegt im Definitionsbereich.",
     "options": [
-      "A: $x=4$",
-      "B: $x=-2$",
-      "C: $x=4$ und $x=-2$",
-      "D: Die Gleichung hat keine reelle Lösung."
+      "x = 4",
+      "x = -2",
+      "x = 4 und x = -2",
+      "x = 5"
     ],
-    "question": "Bestimme die Lösung(en) der Logarithmusgleichung $\\log_2(x) + \\log_2(x-2) = 3$.",
+    "question": "Bestimmen Sie die Lösung(en) der Logarithmusgleichung log₂(x) + log₂(x - 2) = 3.",
     "topic": "Logarithmusgleichungen"
   }
 ]

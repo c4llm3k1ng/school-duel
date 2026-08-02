@@ -1,163 +1,163 @@
 [
   {
     "correct": 1,
-    "explanation": "Zuerst fassen wir die Addition und Subtraktion ganzer Zahlen zusammen: -5 - 3 + 7. Das ergibt -8 + 7, was gleich -1 ist.",
+    "explanation": "Ein Minus vor einer Klammer kehrt das Vorzeichen um: -5 + (-3) - (-7) = -5 - 3 + 7 = -8 + 7 = -1.",
     "options": [
-      "A) -15",
-      "B) -1",
-      "C) 1",
-      "D) 9"
+      "-15",
+      "-1",
+      "1",
+      "9"
     ],
     "question": "Was ist das Ergebnis von -5 + (-3) - (-7)?",
     "topic": "Ganze Zahlen / Rationale Zahlen"
   },
   {
     "correct": 1,
-    "explanation": "Um 20% zu reduzieren, berechnen wir zuerst 20% von 25 Euro: 0,20 * 25 Euro = 5 Euro. Diesen Betrag ziehen wir vom ursprünglichen Preis ab: 25 Euro - 5 Euro = 20 Euro.",
+    "explanation": "20 % von 25 Euro sind 0,20 · 25 Euro = 5 Euro. Dieser Rabatt wird abgezogen: 25 Euro - 5 Euro = 20 Euro. Kürzer: 80 % von 25 Euro = 0,8 · 25 Euro = 20 Euro.",
     "options": [
-      "A) 5 Euro",
-      "B) 20 Euro",
-      "C) 22 Euro",
-      "D) 30 Euro"
+      "5 Euro",
+      "20 Euro",
+      "22 Euro",
+      "30 Euro"
     ],
-    "question": "Ein T-Shirt kostet ursprünglich 25 Euro. Im Sale wird es um 20% reduziert. Wie viel kostet das T-Shirt jetzt?",
+    "question": "Ein T-Shirt kostet ursprünglich 25 Euro. Im Sale wird es um 20 % reduziert. Wie viel kostet das T-Shirt jetzt?",
     "topic": "Prozentrechnung"
   },
   {
     "correct": 0,
-    "explanation": "Fasse gleiche Variablen und Konstanten zusammen: (3x - x) + 2y + (5 - 7). Das ergibt 2x + 2y - 2.",
+    "explanation": "Gleichartige Glieder zusammenfassen: (3x - x) + 2y + (5 - 7) = 2x + 2y - 2. Der y-Term steht allein und bleibt unverändert.",
     "options": [
-      "A) 2x + 2y - 2",
-      "B) 4x + 2y - 12",
-      "C) 2x + 2y + 12",
-      "D) 3x - 2y - 2"
+      "2x + 2y - 2",
+      "4x + 2y - 12",
+      "2x + 2y + 12",
+      "3x - 2y - 2"
     ],
     "question": "Vereinfache den Term: 3x + 5 - x + 2y - 7",
     "topic": "Terme vereinfachen"
   },
   {
     "correct": 1,
-    "explanation": "Zuerst die Klammer auflösen: 2x + 6 - 5 = 11. Dann die Zahlen zusammenfassen: 2x + 1 = 11. Nun auf beiden Seiten 1 subtrahieren: 2x = 10. Zum Schluss durch 2 teilen: x = 5.",
+    "explanation": "Klammer auflösen: 2x + 6 - 5 = 11, also 2x + 1 = 11. Dann 1 subtrahieren: 2x = 10 und durch 2 teilen: x = 5. Probe: 2 · (5 + 3) - 5 = 11.",
     "options": [
-      "A) x = 2",
-      "B) x = 5",
-      "C) x = 7",
-      "D) x = 10"
+      "x = 2",
+      "x = 5",
+      "x = 7",
+      "x = 10"
     ],
     "question": "Löse die Gleichung nach x: 2(x + 3) - 5 = 11",
     "topic": "Lineare Gleichungen"
   },
   {
     "correct": 1,
-    "explanation": "Um Brüche zu multiplizieren, multipliziert man Zähler mit Zähler und Nenner mit Nenner: (3 * 2) / (4 * 5) = 6/20. Dieser Bruch kann mit 2 gekürzt werden zu 3/10.",
+    "explanation": "Bei der Multiplikation von Brüchen rechnet man Zähler mal Zähler und Nenner mal Nenner: (3 · 2) / (4 · 5) = 6/20. Vollständig gekürzt ergibt das 3/10.",
     "options": [
-      "A) 6/20",
-      "B) 3/10",
-      "C) 5/9",
-      "D) 15/8"
+      "23/20",
+      "3/10",
+      "5/9",
+      "15/8"
     ],
-    "question": "Berechne das Produkt der Brüche: (3/4) * (2/5)",
+    "question": "Berechne das Produkt der Brüche (3/4) · (2/5) und gib es vollständig gekürzt an.",
     "topic": "Bruchrechnung"
   },
   {
     "correct": 2,
-    "explanation": "Nebenwinkel ergänzen sich stets zu 180 Grad. Wenn ein Winkel 60 Grad beträgt, ist sein Nebenwinkel 180 Grad - 60 Grad = 120 Grad.",
+    "explanation": "Nebenwinkel ergänzen sich zu 180 Grad: 180 Grad - 60 Grad = 120 Grad. Der Scheitelwinkel wäre dagegen wieder 60 Grad groß.",
     "options": [
-      "A) 30 Grad",
-      "B) 60 Grad",
-      "C) 120 Grad",
-      "D) 180 Grad"
+      "30 Grad",
+      "60 Grad",
+      "120 Grad",
+      "180 Grad"
     ],
     "question": "Zwei Geraden schneiden sich. Einer der dabei entstehenden Winkel ist 60 Grad. Wie groß ist der Nebenwinkel zu diesem Winkel?",
     "topic": "Geometrie - Winkel"
   },
   {
-    "correct": 1,
-    "explanation": "Ein Meter entspricht 100 Zentimetern. Daher sind 3,5 Meter multipliziert mit 100 gleich 350 Zentimeter.",
+    "correct": 0,
+    "explanation": "Weil 1 m = 100 cm gilt, ist 1 m² = 100 cm · 100 cm = 10 000 cm². Also sind 4500 cm² : 10 000 = 0,45 m². Bei Flächeneinheiten ist der Umrechnungsfaktor 100, nicht 10.",
     "options": [
-      "A) 35 cm",
-      "B) 350 cm",
-      "C) 3500 cm",
-      "D) 0,035 cm"
+      "0,45 m²",
+      "4,5 m²",
+      "45 m²",
+      "0,045 m²"
     ],
-    "question": "Wie viele Zentimeter sind 3,5 Meter?",
-    "topic": "Maßeinheiten"
+    "question": "Wie viele Quadratmeter sind 4500 cm²?",
+    "topic": "Maßeinheiten (Flächen)"
   },
   {
     "correct": 0,
-    "explanation": "Rechne jede Zahl aus: A = -| -8 | = -8. B = - (-5) = 5. C = 0 - 3 = -3. D = 2 + (-9) = -7. Die sortierte Reihenfolge von klein nach groß ist: -8 (A), -7 (D), -3 (C), 5 (B).",
+    "explanation": "Die Werte sind: -|-8| = -8, denn der Betrag 8 wird anschließend negativ genommen; -(-5) = 5; 0 - 3 = -3; 2 + (-9) = -7. Am kleinsten ist -8.",
     "options": [
-      "A) A, D, C, B",
-      "B) A, C, D, B",
-      "C) D, A, C, B",
-      "D) A, D, B, C"
+      "-|-8|",
+      "-(-5)",
+      "0 - 3",
+      "2 + (-9)"
     ],
-    "question": "Ordne die folgenden Zahlen der Größe nach, beginnend mit der kleinsten Zahl: A = -| -8 |, B = - (-5), C = 0 - 3, D = 2 + (-9)",
+    "question": "Welcher der folgenden Ausdrücke hat den kleinsten Wert?",
     "topic": "Rationale Zahlen - Betrag und Größenvergleich"
   },
   {
-    "correct": 1,
-    "explanation": "Um den Term zu berechnen, addierst und subtrahierst du die Zahlen der Reihe nach. Beachte, dass 'minus minus' zu 'plus' wird: (-7) + 4 - (-9) = -7 + 4 + 9 = -3 + 9 = 6.",
+    "correct": 0,
+    "explanation": "Punkt vor Strich: (-4) · (-3) = 12 (minus mal minus ergibt plus) und (-6) : 2 = -3. Erst danach addieren: 12 + (-3) = 9.",
     "options": [
-      "-12",
-      "6",
-      "-20",
-      "10"
+      "9",
+      "15",
+      "3",
+      "-15"
     ],
-    "question": "Berechne den Wert des Terms: (-7) + 4 - (-9)",
+    "question": "Berechne den Wert des Terms: (-4) · (-3) + (-6) : 2",
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 1,
-    "explanation": "Um 15% von 240 Euro zu berechnen, wandelst du den Prozentsatz in einen Dezimalbruch um (15% = 0,15) und multiplizierst ihn mit dem Grundwert: 0,15 * 240 Euro = 36 Euro.",
+    "correct": 0,
+    "explanation": "Der reduzierte Preis entspricht 80 % des Grundwerts. Also gilt 0,8 · G = 36 Euro und damit G = 36 Euro : 0,8 = 45 Euro. Probe: 20 % von 45 Euro sind 9 Euro, und 45 Euro - 9 Euro = 36 Euro.",
     "options": [
-      "24 Euro",
-      "36 Euro",
       "45 Euro",
-      "15 Euro"
+      "43,20 Euro",
+      "56 Euro",
+      "40 Euro"
     ],
-    "question": "Wie viel sind 15% von 240 Euro?",
-    "topic": "Prozentrechnung"
-  },
-  {
-    "correct": 1,
-    "explanation": "Um die Gleichung zu lösen, bringst du zuerst die Zahl ohne x auf die andere Seite der Gleichung, indem du die entgegengesetzte Operation ausführst: 5x - 12 + 12 = 13 + 12, also 5x = 25. Dann dividierst du durch den Koeffizienten von x: x = 25 / 5 = 5.",
-    "options": [
-      "x = 2",
-      "x = 5",
-      "x = 7",
-      "x = -1"
-    ],
-    "question": "Löse die Gleichung nach x auf: 5x - 12 = 13",
-    "topic": "Lineare Gleichungen"
-  },
-  {
-    "correct": 1,
-    "explanation": "Stufenwinkel und Wechselwinkel an parallelen Geraden, die von einer dritten Geraden geschnitten werden, sind immer gleich groß. Daher ist der Wechselwinkel ebenfalls 65 Grad.",
-    "options": [
-      "25 Grad",
-      "65 Grad",
-      "115 Grad",
-      "180 Grad"
-    ],
-    "question": "Zwei parallele Geraden werden von einer dritten Geraden geschnitten. Wenn ein Stufenwinkel 65 Grad misst, wie groß ist der zugehörige Wechselwinkel?",
-    "topic": "Geometrie (Winkel an Parallelen)"
+    "question": "Nach einem Rabatt von 20 % kostet eine Jacke 36 Euro. Wie hoch war der ursprüngliche Preis?",
+    "topic": "Prozentrechnung (Grundwert)"
   },
   {
     "correct": 0,
-    "explanation": "Um den Term zu vereinfachen, fasst du die gleichartigen Variablen zusammen: (6m - 3m) + (2n + 5n) = 3m + 7n.",
+    "explanation": "Auf dem Würfel sind 2, 3 und 5 Primzahlen; die 1 ist keine Primzahl. Bei einem Laplace-Würfel sind alle 6 Ergebnisse gleich wahrscheinlich, also ist die Wahrscheinlichkeit 3/6 = 1/2.",
     "options": [
-      "3m + 7n",
-      "9m + 7n",
-      "3m + 3n",
-      "9m + 3n"
+      "1/2",
+      "1/3",
+      "2/3",
+      "1/6"
     ],
-    "question": "Vereinfache den Term: 6m + 2n - 3m + 5n",
-    "topic": "Terme und Variablen"
+    "question": "Ein Laplace-Würfel wird einmal geworfen. Wie groß ist die Wahrscheinlichkeit, eine Primzahl zu würfeln?",
+    "topic": "Wahrscheinlichkeit"
+  },
+  {
+    "correct": 0,
+    "explanation": "Im gleichschenkligen Dreieck sind die beiden Basiswinkel gleich groß. Die Winkelsumme im Dreieck beträgt 180 Grad: (180 Grad - 44 Grad) : 2 = 136 Grad : 2 = 68 Grad.",
+    "options": [
+      "68 Grad",
+      "136 Grad",
+      "88 Grad",
+      "46 Grad"
+    ],
+    "question": "In einem gleichschenkligen Dreieck ist der Winkel an der Spitze 44 Grad groß. Wie groß ist jeder der beiden Basiswinkel?",
+    "topic": "Geometrie - Winkel im Dreieck"
+  },
+  {
+    "correct": 0,
+    "explanation": "Der Maßstab 1 : 25 000 bedeutet, dass 1 cm auf der Karte 25 000 cm in Wirklichkeit entspricht: 8 cm · 25 000 = 200 000 cm. Umgerechnet sind das 2000 m, also 2 km.",
+    "options": [
+      "2 km",
+      "20 km",
+      "200 m",
+      "25 km"
+    ],
+    "question": "Auf einer Karte im Maßstab 1 : 25 000 sind zwei Orte 8 cm voneinander entfernt. Wie weit sind sie in Wirklichkeit voneinander entfernt?",
+    "topic": "Maßstab und Größen"
   },
   {
     "correct": 1,
-    "explanation": "Dies ist eine indirekte Proportionalität. Je mehr Wasserhähne, desto weniger Zeit wird benötigt. Die Gesamtleistung bleibt konstant: 4 Hähne * 12 Stunden = 48 'Hahnstunden'. Mit 6 Hähnen braucht man 48 'Hahnstunden' / 6 Hähne = 8 Stunden.",
+    "explanation": "Hier liegt eine umgekehrt proportionale (antiproportionale) Zuordnung vor: mehr Hähne bedeuten weniger Zeit. Das Produkt bleibt konstant: 4 · 12 = 48 Hahnstunden, also 48 : 6 = 8 Stunden.",
     "options": [
       "6 Stunden",
       "8 Stunden",
@@ -168,27 +168,27 @@
     "topic": "Proportionalität (Dreisatz)"
   },
   {
-    "correct": 1,
-    "explanation": "Der Flächeninhalt eines Dreiecks wird mit der Formel A = (Grundseite * Höhe) / 2 berechnet. Also A = (10 cm * 7 cm) / 2 = 70 cm² / 2 = 35 cm².",
+    "correct": 0,
+    "explanation": "Aus A = (g · h) : 2 folgt h = 2A : g. Eingesetzt: h = 2 · 42 cm² : 12 cm = 84 cm² : 12 cm = 7 cm. Probe: (12 cm · 7 cm) : 2 = 42 cm².",
     "options": [
-      "17 cm²",
-      "35 cm²",
-      "70 cm²",
-      "24 cm²"
+      "7 cm",
+      "3,5 cm",
+      "14 cm",
+      "21 cm"
     ],
-    "question": "Ein Dreieck hat eine Grundseite von 10 cm und eine Höhe von 7 cm. Berechne seinen Flächeninhalt.",
+    "question": "Ein Dreieck hat einen Flächeninhalt von 42 cm² und eine Grundseite von 12 cm. Wie lang ist die zugehörige Höhe?",
     "topic": "Flächeninhalt von Dreiecken"
   },
   {
     "correct": 3,
-    "explanation": "Zuerst berechnest du die Klammer und die Potenz: (3 - 8) = -5. Dann (-2)² = (-2) * (-2) = 4. Zum Schluss multiplizierst du die Ergebnisse: -5 * 4 = -20.",
+    "explanation": "Zuerst Klammer und Potenz: (3 - 8) = -5 und (-2)² = (-2) · (-2) = 4. Dann multiplizieren: -5 · 4 = -20. Achtung: (-2)² ist nicht dasselbe wie -2².",
     "options": [
       "-10",
       "10",
       "20",
       "-20"
     ],
-    "question": "Berechne den Wert des Ausdrucks: (3 - 8) * (-2)²",
+    "question": "Berechne den Wert des Ausdrucks: (3 - 8) · (-2)²",
     "topic": "Rationale Zahlen und Potenzen"
   }
 ]

@@ -1,192 +1,192 @@
 [
   {
     "correct": 1,
-    "explanation": "Die absolute Häufigkeit gibt an, wie oft ein bestimmtes Merkmal oder ein bestimmter Wert in einer Datenerhebung vorkommt. Es ist die reine Zählgröße.",
+    "explanation": "Die absolute Häufigkeit ist eine reine Anzahl, also eine Zählgröße ohne Einheit. Bei den Noten 2, 3, 2, 1, 2 hat die Note 2 die absolute Häufigkeit 3. Teilt man diese Anzahl durch die Gesamtzahl (3 : 5 = 0,6), erhält man die relative Häufigkeit. Der häufigste Wert selbst heißt Modus, der Abstand zwischen größtem und kleinstem Wert Spannweite.",
     "options": [
-      "A) Der Anteil an allen Daten in Prozent.",
-      "B) Die Anzahl, wie oft ein bestimmter Wert oder eine bestimmte Eigenschaft vorkommt.",
-      "C) Der am häufigsten vorkommende Wert in einer Datenreihe.",
-      "D) Der mittlere Wert einer Datenreihe nach dem Sortieren."
+      "Den Anteil dieses Wertes an allen Daten in Prozent.",
+      "Die Anzahl, wie oft dieser Wert in den Daten vorkommt.",
+      "Den Wert, der in den Daten am häufigsten vorkommt.",
+      "Den Abstand zwischen dem größten und kleinsten Wert."
     ],
-    "question": "Was versteht man unter der absoluten Häufigkeit eines Merkmals in der Statistik?",
+    "question": "Was gibt die absolute Häufigkeit eines Wertes in einer Datenerhebung an?",
     "topic": "Absolute Häufigkeit"
   },
   {
     "correct": 1,
-    "explanation": "Um das arithmetische Mittel zu berechnen, addiert man alle Werte und teilt die Summe durch die Anzahl der Werte: (8 + 10 + 6 + 9 + 7) / 5 = 40 / 5 = 8 Punkte.",
+    "explanation": "Alle Werte addieren und durch ihre Anzahl teilen: (14 + 9 + 16 + 11 + 8) : 5 = 58 : 5 = 11,6 Punkte. Achtung: Sortiert lautet die Reihe 8, 9, 11, 14, 16, der Median ist also 11. Mittelwert und Median sind hier verschieden. Wer durch 4 statt durch 5 teilt, erhält 14,5.",
     "options": [
-      "A) 7,5 Punkte",
-      "B) 8 Punkte",
-      "C) 8,5 Punkte",
-      "D) 9 Punkte"
+      "11",
+      "11,6",
+      "12",
+      "14,5"
     ],
-    "question": "Eine Schülerin hat in 5 Mathematiktests die folgenden Punkte erreicht: 8, 10, 6, 9, 7. Wie viele Punkte hat sie im Durchschnitt (arithmetisches Mittel) erreicht?",
+    "question": "In fünf Tests hat Lea 14, 9, 16, 11 und 8 Punkte erreicht. Wie groß ist ihr arithmetisches Mittel?",
     "topic": "Arithmetisches Mittel"
   },
   {
     "correct": 3,
-    "explanation": "Die relative Häufigkeit berechnet sich als absolute Häufigkeit geteilt durch die Gesamtzahl der Beobachtungen. (15 / 25) = 0,6. Um dies in Prozent umzurechnen, multipliziert man mit 100: 0,6 * 100% = 60%.",
+    "explanation": "Relative Häufigkeit = absolute Häufigkeit : Gesamtzahl, also 15 : 25 = 0,6 und damit 60 %. Die 10 Schüler ohne Haustier machen die restlichen 40 % aus; wer diese Gruppe zählt, wählt den falschen Wert. Die Zahlen 15 und 25 sind absolute Häufigkeit bzw. Gesamtzahl, keine Prozentwerte.",
     "options": [
-      "A) 15%",
-      "B) 25%",
-      "C) 40%",
-      "D) 60%"
+      "15 %",
+      "25 %",
+      "40 %",
+      "60 %"
     ],
-    "question": "In einer Klasse mit 25 Schülern haben 15 Schüler ein Haustier. Wie hoch ist die relative Häufigkeit der Schüler, die ein Haustier besitzen, in Prozent?",
+    "question": "In einer Klasse mit 25 Schülern haben 15 Schüler ein Haustier. Wie hoch ist die relative Häufigkeit der Schüler mit Haustier in Prozent?",
     "topic": "Relative Häufigkeit"
   },
   {
     "correct": 2,
-    "explanation": "Der Modalwert (Modus) ist der Wert, der in einer Datenreihe am häufigsten vorkommt. 'Fußball' kommt 4 Mal vor, während 'Schwimmen' 2 Mal und alle anderen Sportarten 1 Mal vorkommen.",
+    "explanation": "Der Modalwert ist der am häufigsten genannte Wert. Fußball kommt 4-mal vor, Schwimmen 2-mal, Handball, Tennis und Basketball je 1-mal. Bei Daten wie Sportarten lässt sich nur der Modus bestimmen: Mittelwert und Median gibt es hier nicht, weil man Sportarten nicht der Größe nach ordnen kann.",
     "options": [
-      "A) Schwimmen",
-      "B) Tennis",
-      "C) Fußball",
-      "D) Basketball"
+      "Schwimmen",
+      "Tennis",
+      "Fußball",
+      "Basketball"
     ],
     "question": "Für eine Umfrage zu Lieblingssportarten wurden folgende Antworten gesammelt: Fußball, Schwimmen, Handball, Fußball, Tennis, Schwimmen, Fußball, Basketball, Fußball. Welches ist der Modalwert (Modus) dieser Datenreihe?",
     "topic": "Modalwert (Modus)"
   },
   {
     "correct": 1,
-    "explanation": "Zuerst müssen die Daten der Größe nach geordnet werden: 165, 168, 170, 172, 178, 180, 185. Da es 7 Werte gibt (eine ungerade Anzahl), ist der Median der Wert in der Mitte. Das ist der 4. Wert, also 172 cm.",
+    "explanation": "Zuerst sortieren: 165, 168, 170, 172, 178, 180, 185. Bei 7 Werten steht der 4. Wert in der Mitte, der Median ist also 172 cm. Der Mittelwert beträgt dagegen 1218 : 7 = 174 cm. Wer den Durchschnitt statt des Medians berechnet, wählt diesen Wert; wer die Reihe unsortiert lässt, landet oft beim 4. genannten Wert 185.",
     "options": [
-      "A) 170 cm",
-      "B) 172 cm",
-      "C) 174 cm",
-      "D) 178 cm"
+      "170 cm",
+      "172 cm",
+      "174 cm",
+      "178 cm"
     ],
     "question": "Eine Gruppe von 7 Freunden hat folgende Körpergrößen in cm: 165, 178, 170, 185, 168, 172, 180. Welches ist der Median der Körpergrößen?",
     "topic": "Median"
   },
   {
-    "correct": 2,
-    "explanation": "Die Spannweite ist die Differenz zwischen dem größten und dem kleinsten Wert in einer Datenreihe. Der größte Wert ist 25 °C, der kleinste Wert ist 16 °C. Die Spannweite beträgt 25 - 16 = 9 °C.",
+    "correct": 1,
+    "explanation": "Spannweite = größter Wert - kleinster Wert = 25 °C - 16 °C = 9 °C. Sie sagt nur etwas darüber aus, wie weit die Daten auseinanderliegen, nicht wie sie dazwischen verteilt sind. Wer den zweitkleinsten Wert 17 °C nimmt, erhält 8 °C; wer statt der Differenz einen Extremwert angibt, nennt 16 °C oder 25 °C.",
     "options": [
-      "A) 7 °C",
-      "B) 8 °C",
-      "C) 9 °C",
-      "D) 10 °C"
+      "8 °C",
+      "9 °C",
+      "16 °C",
+      "25 °C"
     ],
     "question": "Die täglichen Temperaturen in einer Woche (in °C) waren: 18, 22, 16, 25, 19, 20, 17. Wie groß ist die Spannweite dieser Daten?",
     "topic": "Spannweite"
   },
   {
     "correct": 1,
-    "explanation": "Um die Anzahl der Schülerinnen und Schüler zu berechnen, multipliziert man die Gesamtzahl mit dem Prozentsatz: 450 * 0,32 = 144. Also spielen 144 Schülerinnen und Schüler ein Instrument.",
+    "explanation": "32 % von 450 sind 0,32 · 450 = 144. Im Kopf: 10 % sind 45, also 30 % gleich 135, dazu 2 % gleich 9, zusammen 144. Die übrigen 68 % entsprechen 306 Schülerinnen und Schülern. Ein Drittel wären 150, also etwas mehr als 32 %; die Zahl 32 ist der Prozentsatz, nicht die Anzahl.",
     "options": [
-      "A) 134",
-      "B) 144",
-      "C) 154",
-      "D) 164"
+      "32",
+      "144",
+      "150",
+      "306"
     ],
-    "question": "In einer Schule sind 450 Schülerinnen und Schüler. Eine Umfrage ergab, dass 32% von ihnen gerne ein Instrument spielen. Wie viele Schülerinnen und Schüler sind das?",
+    "question": "In einer Schule sind 450 Schülerinnen und Schüler. Eine Umfrage ergab, dass 32 % von ihnen ein Instrument spielen. Wie viele Schülerinnen und Schüler sind das?",
     "topic": "Prozentsatz und absolute Häufigkeit"
   },
   {
-    "correct": 3,
-    "explanation": "Das arithmetische Mittel wird am stärksten von Ausreißern beeinflusst, da es die Summe aller Werte bildet. Ein einziger extrem großer oder kleiner Wert kann den Durchschnitt stark verändern. Median und Modus sind hier robuster, die Spannweite wird auch beeinflusst, aber das arithmetische Mittel repräsentiert die 'Lage' der Daten und reagiert auf Ausreißer empfindlicher.",
+    "correct": 2,
+    "explanation": "Mittelwert: (3 + 4 + 4 + 5 + 44) : 5 = 60 : 5 = 12. Median: sortiert steht die 4 an dritter und damit mittlerer Stelle. Der Unterschied beträgt 12 - 4 = 8. Der Ausreißer 44 zieht den Mittelwert stark nach oben, während der Median davon unberührt bleibt. Deshalb ist der Median bei Ausreißern das aussagekräftigere Lagemaß.",
     "options": [
-      "A) Der Modalwert (Modus)",
-      "B) Die Spannweite",
-      "C) Der Median",
-      "D) Das arithmetische Mittel"
+      "0",
+      "4",
+      "8",
+      "12"
     ],
-    "question": "Welcher statistische Kennwert wird am stärksten von extremen Ausreißern (sehr hohen oder sehr niedrigen Werten) in einer Datenreihe beeinflusst?",
-    "topic": "Eigenschaften von Kenngrößen"
+    "question": "Eine Datenreihe lautet: 3, 4, 4, 5, 44. Wie groß ist der Unterschied zwischen dem arithmetischen Mittel und dem Median?",
+    "topic": "Ausreißer, Mittelwert und Median"
   },
   {
     "correct": 1,
-    "explanation": "Die absolute Häufigkeit gibt an, wie oft ein bestimmter Wert in einer Datenreihe vorkommt. 'Fußball' wurde viermal genannt.",
+    "explanation": "Der volle Kreis entspricht 360° und allen 200 Personen. Der Anteil des Sektors beträgt 72° : 360° = 0,2, also 20 %. Davon sind 20 % von 200 gleich 40 Personen. Wer bei 20 stehen bleibt, hat den Prozentsatz statt der Anzahl angegeben; wer den Winkel als Anzahl liest, nennt 72; wer 72 % von 200 rechnet, erhält 144.",
     "options": [
-      "3",
-      "4",
-      "5",
-      "6"
+      "20",
+      "40",
+      "72",
+      "144"
     ],
-    "question": "Bei einer Befragung zu Lieblingssportarten wurden folgende Antworten gesammelt: Fußball, Schwimmen, Leichtathletik, Fußball, Basketball, Schwimmen, Fußball, Handball, Fußball. Wie viele Schüler haben \"Fußball\" als ihre Lieblingssportart genannt?",
-    "topic": "Absolute Häufigkeit"
+    "question": "Ein Kreisdiagramm zeigt, womit 200 befragte Personen zur Arbeit fahren. Der Sektor für den Bus hat einen Mittelpunktswinkel von 72°. Wie viele Personen fahren mit dem Bus?",
+    "topic": "Diagramme lesen"
   },
   {
-    "correct": 2,
-    "explanation": "Die relative Häufigkeit berechnet sich aus der absoluten Häufigkeit geteilt durch die Gesamtzahl der Werte. (8 Schüler / 20 Schüler) * 100% = 0,4 * 100% = 40%.",
+    "correct": 1,
+    "explanation": "Zuerst die Anzahl der Nein-Stimmen bestimmen: 120 - 45 - 30 = 45. Die relative Häufigkeit ist dann 45 : 120 = 0,375, also 37,5 %. Wer 'Ja' und 'Vielleicht' zusammenzählt (75 : 120 = 62,5 %), berechnet den Gegenanteil; 30 : 120 = 25 % gehört zu 'Vielleicht'; die Zahl 45 ist die absolute Häufigkeit, nicht der Prozentwert.",
     "options": [
-      "8%",
-      "20%",
-      "40%",
-      "80%"
+      "25 %",
+      "37,5 %",
+      "45 %",
+      "62,5 %"
     ],
-    "question": "In einer Klasse mit 20 Schülern wurde gefragt, welche Farbe sie am liebsten mögen. 8 Schüler wählten Grün. Wie hoch ist die relative Häufigkeit für die Farbe Grün in dieser Klasse in Prozent?",
+    "question": "Bei einer Umfrage unter 120 Personen antworten 45 mit Ja und 30 mit Vielleicht, alle übrigen mit Nein. Wie hoch ist die relative Häufigkeit für Nein?",
     "topic": "Relative Häufigkeit"
   },
   {
-    "correct": 1,
-    "explanation": "Der Modalwert (Modus) ist der Wert, der in einer Datenreihe am häufigsten vorkommt. Die Zahl '1' kommt viermal vor und ist somit der Modus.",
+    "correct": 0,
+    "explanation": "Der Modus ist der am häufigsten vorkommende Wert. Die 0 kommt viermal vor, die 2 zweimal, die Werte 1, 3 und 4 je einmal. Der Modalwert ist also 0; auch die Null ist ein gültiger Merkmalswert. Zum Vergleich: Sortiert lautet die Reihe 0, 0, 0, 0, 1, 2, 2, 3, 4, der Median ist damit 1 und der Mittelwert 12 : 9 ≈ 1,3.",
     "options": [
       "0",
       "1",
       "2",
-      "3"
+      "4"
     ],
-    "question": "Die Anzahl der Geschwister, die Schüler einer Gruppe haben, ist: 0, 1, 2, 1, 0, 3, 1, 2, 1. Was ist der Modalwert (Modus) dieser Datenreihe?",
+    "question": "Die Anzahl der Geschwister von neun Schülern lautet: 2, 0, 1, 0, 4, 0, 3, 0, 2. Was ist der Modalwert (Modus) dieser Datenreihe?",
     "topic": "Modus (Modalwert)"
   },
   {
-    "correct": 1,
-    "explanation": "Der arithmetische Mittelwert wird berechnet, indem man die Summe aller Werte durch die Anzahl der Werte teilt: (15 + 12 + 18 + 10 + 20) / 5 = 75 / 5 = 15.",
+    "correct": 3,
+    "explanation": "Bei vier Arbeiten und einem Durchschnitt von 13 muss die Punktsumme 4 · 13 = 52 betragen. Die ersten drei Arbeiten ergeben 12 + 15 + 9 = 36, es fehlen also 52 - 36 = 16 Punkte. Wer nur mit drei Arbeiten rechnet (3 · 13 = 39), erhält fälschlich 39 - 36 = 3; wer den Durchschnitt der bekannten Arbeiten (36 : 3 = 12) oder den Zielwert 13 angibt, rechnet die Aufgabe nicht zu Ende.",
     "options": [
-      "14",
-      "15",
-      "16",
-      "17"
+      "3",
+      "12",
+      "13",
+      "16"
     ],
-    "question": "Fünf Freunde haben folgende Punktzahlen in einem Quiz erreicht: 15, 12, 18, 10, 20. Berechne den arithmetischen Mittelwert (Durchschnitt) der Punktzahlen.",
-    "topic": "Arithmetisches Mittel"
+    "question": "Nils hat in drei Klassenarbeiten 12, 15 und 9 Punkte erreicht. Nach der vierten Arbeit beträgt sein Durchschnitt genau 13 Punkte. Wie viele Punkte hatte die vierte Arbeit?",
+    "topic": "Arithmetisches Mittel rückwärts"
   },
   {
     "correct": 1,
-    "explanation": "Um den Median zu bestimmen, ordnet man die Werte zunächst der Größe nach: 158, 160, 162, 165, 170, 175. Da es eine gerade Anzahl von Werten gibt, ist der Median der Durchschnitt der beiden mittleren Werte: (162 + 165) / 2 = 163,5 cm.",
+    "explanation": "Sortiert lauten die Werte 158, 160, 162, 165, 170, 175. Bei einer geraden Anzahl ist der Median der Mittelwert der beiden mittleren Zahlen: (162 + 165) : 2 = 163,5 cm. Wer nur einen der mittleren Werte nimmt, erhält 162 cm oder 165 cm. Der Wert 165 cm ist zugleich das arithmetische Mittel (990 : 6), 170 cm ist der fünfte Wert der sortierten Reihe.",
     "options": [
       "162 cm",
-      "163.5 cm",
+      "163,5 cm",
       "165 cm",
-      "166.5 cm"
+      "170 cm"
     ],
     "question": "Die Körpergrößen von sechs Schülern in cm sind: 165, 158, 170, 160, 175, 162. Was ist der Median (Zentralwert) dieser Körpergrößen?",
     "topic": "Median (Zentralwert)"
   },
   {
-    "correct": 1,
-    "explanation": "Die Spannweite ist die Differenz zwischen dem größten und dem kleinsten Wert in einer Datenreihe: 28°C - 15°C = 13°C.",
+    "correct": 0,
+    "explanation": "Die Spannweite ist die Differenz aus größtem und kleinstem Wert. Aus 31 - kleinster Wert = 24 folgt kleinster Wert = 31 - 24 = 7. Zur Probe: 31 - 7 = 24. Wer addiert statt zu subtrahieren, erhält 55; wer die Spannweite selbst oder den größten Wert angibt, verwechselt die Begriffe.",
     "options": [
-      "10°C",
-      "13°C",
-      "15°C",
-      "28°C"
+      "7",
+      "24",
+      "31",
+      "55"
     ],
-    "question": "Die höchsten und niedrigsten Temperaturen in einer Woche waren 28°C und 15°C. Wie groß ist die Spannweite der Temperaturen in dieser Woche?",
+    "question": "Bei einer Messreihe beträgt die Spannweite 24. Der größte gemessene Wert ist 31. Wie groß ist der kleinste gemessene Wert?",
     "topic": "Spannweite"
   },
   {
     "correct": 2,
-    "explanation": "In Klasse 7a spielen 40% von 25 Schülern ein Instrument: 0,40 * 25 = 10 Schüler. In Klasse 7b spielen 30% von 30 Schülern ein Instrument: 0,30 * 30 = 9 Schüler. Insgesamt spielen 10 + 9 = 19 Schüler ein Instrument.",
+    "explanation": "Beide Klassen getrennt berechnen: In der 7a spielen 40 % von 25 Schülern ein Instrument, also 0,40 · 25 = 10. In der 7b sind es 30 % von 30 Schülern, also 0,30 · 30 = 9. Zusammen sind das 10 + 9 = 19 Schüler. Die Prozentsätze darf man nicht einfach addieren, weil die Klassen unterschiedlich groß sind. Die Zahl 55 ist die Gesamtzahl aller Schüler beider Klassen.",
     "options": [
+      "9",
       "10",
-      "15",
       "19",
-      "21"
+      "55"
     ],
-    "question": "In Klasse 7a sind 25 Schüler, davon spielen 40% ein Instrument. In Klasse 7b sind 30 Schüler, davon spielen 30% ein Instrument. Wie viele Schüler aus beiden Klassen zusammen spielen ein Instrument?",
+    "question": "In Klasse 7a sind 25 Schüler, davon spielen 40 % ein Instrument. In Klasse 7b sind 30 Schüler, davon spielen 30 % ein Instrument. Wie viele Schüler aus beiden Klassen zusammen spielen ein Instrument?",
     "topic": "Datenanalyse und Prozentrechnung"
   },
   {
     "correct": 1,
-    "explanation": "Die Urliste ist die Rohfassung der Daten, also die unsortierte Liste aller gesammelten Einzelwerte, bevor sie weiterverarbeitet werden.",
+    "explanation": "Die Urliste ist die Rohfassung der Daten: alle Einzelwerte in der Reihenfolge, in der sie erhoben wurden. Sortiert man sie der Größe nach, entsteht die Rangliste; fasst man gleiche Werte mit ihren Anzahlen zusammen, entsteht die Häufigkeitstabelle. Die Stichprobe ist die befragte Gruppe selbst, nicht die Liste ihrer Werte.",
     "options": [
       "Häufigkeitstabelle",
       "Urliste",
-      "Diagramm",
-      "Mittelwert"
+      "Rangliste",
+      "Stichprobe"
     ],
     "question": "Wie nennt man die unsortierte Liste der bei einer Datenerhebung gewonnenen Einzelwerte?",
     "topic": "Grundbegriffe der Statistik"

@@ -1,146 +1,146 @@
 [
   {
-    "correct": 1,
-    "explanation": "Bei der Addition von Brüchen mit gleichem Nenner addiert man nur die Zähler und behält den Nenner bei. 2 + 3 = 5, also 5/7.",
+    "correct": 0,
+    "explanation": "Beide Brüche auf den Hauptnenner 24 bringen: -3/8 = -9/24 und 5/6 = 20/24. Dann die Zähler addieren: -9 + 20 = 11, also 11/24. Das Ergebnis ist positiv, weil 5/6 den größeren Betrag hat.",
     "options": [
-      "A) 5/14",
-      "B) 5/7",
-      "C) 6/7",
-      "D) 1/7"
+      "11/24",
+      "-11/24",
+      "29/24",
+      "2/14"
     ],
-    "question": "Was ist das Ergebnis von 2/7 + 3/7?",
-    "topic": "Addition von Brüchen mit gleichem Nenner"
+    "question": "Berechne: -3/8 + 5/6",
+    "topic": "Addition von Brüchen mit negativen Zahlen"
   },
   {
-    "correct": 1,
-    "explanation": "Bei der Multiplikation von Brüchen multipliziert man Zähler mit Zähler und Nenner mit Nenner: (3 * 2) / (4 * 5) = 6/20. Dieser Bruch kann mit 2 gekürzt werden zu 3/10.",
+    "correct": 0,
+    "explanation": "Zähler mal Zähler, Nenner mal Nenner: (-3 · 8) / (4 · 9) = -24/36. Gekürzt mit 12 ergibt das -2/3. Ein negativer Faktor mal einem positiven Faktor ergibt ein negatives Produkt.",
     "options": [
-      "A) 6/20",
-      "B) 3/10",
-      "C) 5/9",
-      "D) 15/8"
+      "-2/3",
+      "2/3",
+      "5/36",
+      "-27/32"
     ],
-    "question": "Berechne: 3/4 * 2/5",
-    "topic": "Multiplikation von Brüchen"
+    "question": "Berechne: -3/4 · 8/9",
+    "topic": "Multiplikation von Brüchen mit negativen Zahlen"
   },
   {
-    "correct": 1,
-    "explanation": "Um eine gemischte Zahl in einen unechten Bruch umzuwandeln, multipliziert man die ganze Zahl mit dem Nenner und addiert den Zähler dazu. Das Ergebnis wird der neue Zähler über dem ursprünglichen Nenner. 2 * 5 + 3 = 13, also 13/5.",
+    "correct": 0,
+    "explanation": "-2 3/5 bedeutet -(2 + 3/5), also das Negative von 13/5. Man wandelt zuerst 2 3/5 um: 2 · 5 + 3 = 13, also 13/5. Dann setzt man das Minuszeichen davor: -13/5.",
     "options": [
-      "A) 5/2",
-      "B) 13/5",
-      "C) 23/5",
-      "D) 10/3"
+      "-13/5",
+      "-7/5",
+      "13/5",
+      "-6/5"
     ],
-    "question": "Wie lautet die gemischte Zahl 2 3/5 als unechter Bruch?",
-    "topic": "Umwandlung gemischter Zahlen in unechte Brüche"
+    "question": "Wie lautet die gemischte Zahl -2 3/5 als unechter Bruch?",
+    "topic": "Negative gemischte Zahlen umwandeln"
   },
   {
-    "correct": 1,
-    "explanation": "Um durch einen Bruch zu dividieren, multipliziert man mit dem Kehrwert des zweiten Bruches. 4/9 : 2/3 = 4/9 * 3/2 = (4*3)/(9*2) = 12/18. Gekürzt mit 6 ergibt das 2/3.",
+    "correct": 0,
+    "explanation": "Ein Doppelbruch bedeutet: Zählerbruch geteilt durch Nennerbruch. Also 2/3 : 4/9 = 2/3 · 9/4 = 18/12 = 3/2. Man multipliziert mit dem Kehrwert des unteren Bruches.",
     "options": [
-      "A) 8/27",
-      "B) 2/3",
-      "C) 12/18",
-      "D) 2/9"
+      "3/2",
+      "2/3",
+      "8/27",
+      "27/8"
     ],
-    "question": "Was ist das Ergebnis von 4/9 : 2/3?",
-    "topic": "Division von Brüchen"
+    "question": "Berechne den Doppelbruch: (2/3) geteilt durch (4/9)",
+    "topic": "Doppelbrüche"
   },
   {
     "correct": 2,
-    "explanation": "Um Brüche zu vergleichen, bringt man sie am besten auf einen gemeinsamen Nenner. Der kleinste gemeinsame Nenner von 4, 6, 8, 3 ist 24. 3/4 = 18/24, 5/6 = 20/24, 7/8 = 21/24, 2/3 = 16/24. Somit ist 7/8 (21/24) der größte Bruch.",
+    "explanation": "Bei negativen Zahlen ist die Zahl mit dem größten Betrag die kleinste. Als Dezimalzahlen: -3/4 = -0,75; -5/6 ≈ -0,833; -7/8 = -0,875; -2/3 ≈ -0,667. Der kleinste Wert ist -7/8.",
     "options": [
-      "A) 3/4",
-      "B) 5/6",
-      "C) 7/8",
-      "D) 2/3"
+      "-3/4",
+      "-5/6",
+      "-7/8",
+      "-2/3"
     ],
-    "question": "Welcher der folgenden Brüche ist der größte?",
-    "topic": "Vergleichen von Brüchen"
+    "question": "Welche der folgenden negativen Brüche ist die kleinste Zahl?",
+    "topic": "Ordnen negativer Brüche"
   },
   {
     "correct": 0,
     "explanation": "Zuerst addiert man die gegessenen Anteile: 1/4 + 1/3. Der gemeinsame Nenner ist 12. 1/4 = 3/12 und 1/3 = 4/12. Zusammen sind das 3/12 + 4/12 = 7/12. Der ganze Kuchen entspricht 1 (oder 12/12). Also ist 12/12 - 7/12 = 5/12 noch übrig.",
     "options": [
-      "A) 5/12",
-      "B) 7/12",
-      "C) 1/2",
-      "D) 2/3"
+      "5/12",
+      "7/12",
+      "1/2",
+      "2/3"
     ],
     "question": "Mia hat einen Kuchen gebacken. 1/4 des Kuchens hat sie selbst gegessen, und 1/3 hat sie ihrem Freund gegeben. Wie viel des Kuchens ist noch übrig?",
     "topic": "Bruchanteile in Sachaufgaben"
   },
   {
     "correct": 0,
-    "explanation": "Zuerst die Klammer berechnen: 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Dann multiplizieren: 5/6 * 3/5 = (5*3)/(6*5) = 15/30. Gekürzt mit 15 ergibt das 1/2.",
+    "explanation": "Zuerst die Klammer berechnen: 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Dann multiplizieren: 5/6 · 3/5 = (5·3)/(6·5) = 15/30. Gekürzt mit 15 ergibt das 1/2.",
     "options": [
-      "A) 1/2",
-      "B) 5/6",
-      "C) 1/3",
-      "D) 5/30"
+      "1/2",
+      "5/6",
+      "1/3",
+      "5/30"
     ],
-    "question": "Berechne: (1/2 + 1/3) * 3/5",
+    "question": "Berechne: (1/2 + 1/3) · 3/5",
     "topic": "Rechenregeln mit Brüchen (Punkt vor Strich, Klammern)"
   },
   {
     "correct": 0,
-    "explanation": "Wenn 2/5 des Feldes mit Weizen bepflanzt sind, bleiben 1 - 2/5 = 3/5 des Feldes übrig. Von diesen 3/5 wird 1/3 mit Gerste bepflanzt. Das bedeutet, wir berechnen 1/3 von 3/5: 1/3 * 3/5 = (1*3)/(3*5) = 3/15. Gekürzt mit 3 ergibt das 1/5.",
+    "explanation": "Wenn 2/5 des Feldes mit Weizen bepflanzt sind, bleiben 1 - 2/5 = 3/5 des Feldes übrig. Von diesen 3/5 wird 1/3 mit Gerste bepflanzt. Das bedeutet, wir berechnen 1/3 von 3/5: 1/3 · 3/5 = (1·3)/(3·5) = 3/15. Gekürzt mit 3 ergibt das 1/5.",
     "options": [
-      "A) 1/5",
-      "B) 2/15",
-      "C) 3/5",
-      "D) 1/3"
+      "1/5",
+      "2/15",
+      "3/5",
+      "1/3"
     ],
     "question": "Ein Bauer besitzt ein Feld. Er bepflanzt 2/5 des Feldes mit Weizen und 1/3 des restlichen Feldes mit Gerste. Welcher Anteil des gesamten Feldes ist mit Gerste bepflanzt?",
     "topic": "Komplexe Bruchaufgaben (Anteil vom Rest)"
   },
   {
     "correct": 0,
-    "explanation": "Um einen Bruch zu kürzen, teilt man Zähler und Nenner durch ihren größten gemeinsamen Teiler. Hier ist der größte gemeinsame Teiler von 12 und 18 die Zahl 6. 12 ÷ 6 = 2 und 18 ÷ 6 = 3, also 2/3.",
+    "explanation": "Punkt vor Strich: Zuerst das Produkt (-1/2) · (-4/5) = 4/10 = 2/5 (minus mal minus ergibt plus). Dann addieren: 2/5 + 1/5 = 3/5.",
     "options": [
-      "2/3",
-      "6/9",
-      "4/6",
-      "1/2"
+      "3/5",
+      "-1/5",
+      "3/10",
+      "-3/5"
     ],
-    "question": "Kürze den Bruch 12/18 so weit wie möglich.",
-    "topic": "Kürzen von Brüchen"
+    "question": "Berechne: (-1/2) · (-4/5) + 1/5",
+    "topic": "Terme mit Brüchen und Vorzeichen"
   },
   {
-    "correct": 2,
-    "explanation": "Um Brüche zu addieren, müssen sie den gleichen Nenner haben (gleichnamig sein). Der kleinste gemeinsame Nenner von 3 und 4 ist 12. Erweitere 1/3 zu 4/12 und 1/4 zu 3/12. Dann addiere die Zähler: 4/12 + 3/12 = 7/12.",
+    "correct": 0,
+    "explanation": "Beide Brüche auf den Nenner 10 bringen: 2/5 = 4/10. Dann 4/10 - 7/10 = -3/10. Weil 7/10 größer ist als 2/5, ist das Ergebnis negativ.",
     "options": [
-      "2/7",
-      "1/12",
-      "7/12",
-      "5/12"
+      "-3/10",
+      "3/10",
+      "-1/2",
+      "-3/5"
     ],
-    "question": "Berechne die Summe: 1/3 + 1/4",
-    "topic": "Addition von Brüchen"
+    "question": "Berechne: 2/5 - 7/10",
+    "topic": "Subtraktion von Brüchen mit negativem Ergebnis"
   },
   {
     "correct": 1,
-    "explanation": "Um durch einen Bruch zu teilen, multipliziert man mit dem Kehrwert des zweiten Bruches. Der Kehrwert von 1/2 ist 2/1 (oder 2). Also rechnest du 3/4 * 2 = 6/4, was gekürzt 3/2 ist.",
+    "explanation": "Um durch einen Bruch zu teilen, multipliziert man mit dem Kehrwert des zweiten Bruches. Der Kehrwert von 1/2 ist 2/1 (oder 2). Also rechnest du 3/4 · 2 = 6/4, was gekürzt 3/2 ist.",
     "options": [
       "3/8",
       "3/2",
       "2/3",
       "1/2"
     ],
-    "question": "Berechne: 3/4 ÷ 1/2",
+    "question": "Berechne: 3/4 : 1/2",
     "topic": "Division von Brüchen"
   },
   {
     "correct": 0,
-    "explanation": "Nach den Rechenregeln 'Punkt vor Strich' rechnest du zuerst die Multiplikation: 2/5 * 10 = (2 * 10) / 5 = 20/5 = 4. Dann die Subtraktion: 4 - 1/2. Um dies zu berechnen, wandelst du 4 in einen Bruch mit Nenner 2 um: 8/2. Also 8/2 - 1/2 = 7/2.",
+    "explanation": "Nach den Rechenregeln 'Punkt vor Strich' rechnest du zuerst die Multiplikation: 2/5 · 10 = (2 · 10) / 5 = 20/5 = 4. Dann die Subtraktion: 4 - 1/2. Um dies zu berechnen, wandelst du 4 in einen Bruch mit Nenner 2 um: 8/2. Also 8/2 - 1/2 = 7/2.",
     "options": [
       "7/2",
       "3/2",
       "1/2",
       "5/2"
     ],
-    "question": "Berechne: 2/5 * 10 - 1/2",
+    "question": "Berechne: 2/5 · 10 - 1/2",
     "topic": "Rechnen mit Brüchen (Punkt- vor Strichrechnung)"
   },
   {
@@ -157,43 +157,43 @@
   },
   {
     "correct": 0,
-    "explanation": "Um eine gemischte Zahl in einen unechten Bruch umzuwandeln, multiplizierst du die ganze Zahl mit dem Nenner (3 * 5 = 15) und addierst dann den Zähler (15 + 2 = 17). Der Nenner bleibt gleich. So erhältst du 17/5.",
+    "explanation": "Am sichersten rechnet man mit unechten Brüchen: 3 2/5 = 17/5 und 1 3/4 = 7/4. Hauptnenner 20: 68/20 - 35/20 = 33/20 = 1 13/20. Wer die Ganzen und die Brüche getrennt subtrahiert, erhält fälschlich 2 7/20, weil 2/5 kleiner ist als 3/4.",
     "options": [
-      "17/5",
-      "13/5",
-      "6/5",
-      "32/5"
+      "1 13/20",
+      "2 7/20",
+      "1 7/20",
+      "2 13/20"
     ],
-    "question": "Schreibe die gemischte Zahl 3 2/5 als unechten Bruch.",
-    "topic": "Gemischte Zahlen und unechte Brüche"
-  },
-  {
-    "correct": 1,
-    "explanation": "Um einen Bruch in eine Dezimalzahl umzuwandeln, teilst du den Zähler durch den Nenner: 3 ÷ 4 = 0.75.",
-    "options": [
-      "0.34",
-      "0.75",
-      "0.43",
-      "0.25"
-    ],
-    "question": "Welcher Dezimalzahl entspricht der Bruch 3/4?",
-    "topic": "Brüche und Dezimalzahlen"
+    "question": "Berechne: 3 2/5 - 1 3/4",
+    "topic": "Subtraktion gemischter Zahlen mit Übertrag"
   },
   {
     "correct": 0,
-    "explanation": "Um den Bruch 18/24 zu kürzen, sucht man den größten gemeinsamen Teiler (ggT) von Zähler und Nenner. Der ggT von 18 und 24 ist 6. Wenn man beide Zahlen durch 6 teilt, erhält man 18 ÷ 6 = 3 und 24 ÷ 6 = 4. Das Ergebnis ist 3/4.",
+    "explanation": "Auch bei Termen gilt: gleichnamig machen. Der Hauptnenner von 3 und 4 ist 12. x/3 = 4x/12 und x/4 = 3x/12. Zusammen 4x/12 + 3x/12 = 7x/12. Die Variable x bleibt dabei in der ersten Potenz stehen.",
+    "options": [
+      "7x/12",
+      "2x/7",
+      "x/7",
+      "x²/12"
+    ],
+    "question": "Vereinfache den Term: x/3 + x/4",
+    "topic": "Terme mit Bruchzahlen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Dividieren heißt mit dem Kehrwert multiplizieren: (-5/6) · (-9/10) = 45/60 = 3/4. Minus geteilt durch minus ergibt ein positives Ergebnis.",
     "options": [
       "3/4",
-      "6/8",
-      "9/12",
-      "2/3"
+      "-3/4",
+      "4/3",
+      "25/27"
     ],
-    "question": "Welcher der folgenden Brüche ist die gekürzte Form von 18/24?",
-    "topic": "Brüche kürzen und erweitern"
+    "question": "Berechne: (-5/6) : (-10/9)",
+    "topic": "Division von Brüchen mit negativen Zahlen"
   },
   {
     "correct": 1,
-    "explanation": "Um Brüche mit unterschiedlichen Nennern zu addieren, müssen sie zuerst gleichnamig gemacht werden. Der kleinste gemeinsame Nenner von 3 und 4 ist 12. Man erweitert 1/3 zu 4/12 (multipliziert Zähler und Nenner mit 4) und 1/4 zu 3/12 (multipliziert Zähler und Nenner mit 3). Dann addiert man die Zähler: 4/12 + 3/12 = 7/12.",
+    "explanation": "Um Brüche mit unterschiedlichen Nennern zu addieren, müssen sie zuerst gleichnamig gemacht werden. Der kleinste gemeinsame Nenner von 3 und 4 ist 12. Man erweitert 1/3 zu 4/12 und 1/4 zu 3/12. Dann addiert man die Zähler: 4/12 + 3/12 = 7/12.",
     "options": [
       "2/7",
       "7/12",
@@ -204,44 +204,44 @@
     "topic": "Brüche addieren und subtrahieren"
   },
   {
-    "correct": 2,
-    "explanation": "Um eine ganze Zahl mit einem Bruch zu multiplizieren, multipliziert man die ganze Zahl nur mit dem Zähler des Bruches und behält den Nenner bei. Also 3 * 2 = 6. Der Nenner bleibt 5. Das Ergebnis ist 6/5.",
+    "correct": 0,
+    "explanation": "Eine ganze Zahl wird nur mit dem Zähler multipliziert, der Nenner bleibt: -4 · 3/8 = -12/8. Gekürzt mit 4 ergibt das -3/2. Wer auch den Nenner mit 4 multipliziert, landet fälschlich bei -3/8.",
     "options": [
-      "6/15",
-      "2/15",
-      "6/5",
-      "5/5"
+      "-3/2",
+      "3/2",
+      "-3/8",
+      "-32/3"
     ],
-    "question": "Berechne das Produkt: 3 * 2/5",
-    "topic": "Brüche multiplizieren"
+    "question": "Berechne: -4 · 3/8",
+    "topic": "Multiplikation einer ganzen Zahl mit einem Bruch"
   },
   {
-    "correct": 2,
-    "explanation": "Um durch einen Bruch zu dividieren, multipliziert man mit dem Kehrwert des zweiten Bruches. Der Kehrwert von 1/2 ist 2/1. Die Rechnung lautet also 3/4 * 2/1. Man multipliziert Zähler mit Zähler (3*2=6) und Nenner mit Nenner (4*1=4). Das Ergebnis ist 6/4, was gekürzt 3/2 ergibt.",
+    "correct": 0,
+    "explanation": "Zuerst die gemischte Zahl umwandeln: -2 1/3 = -7/3. Der Kehrwert entsteht durch Vertauschen von Zähler und Nenner; das Vorzeichen bleibt erhalten, denn Zahl mal Kehrwert muss 1 ergeben: (-7/3) · (-3/7) = 1. Also -3/7.",
     "options": [
-      "3/8",
-      "6/4",
-      "3/2",
-      "2/3"
+      "-3/7",
+      "3/7",
+      "-7/3",
+      "7/3"
     ],
-    "question": "Dividiere: 3/4 : 1/2",
-    "topic": "Brüche dividieren"
+    "question": "Wie lautet der Kehrwert von -2 1/3?",
+    "topic": "Kehrwert negativer gemischter Zahlen"
   },
   {
     "correct": 1,
-    "explanation": "Bei Aufgaben mit verschiedenen Rechenarten gilt die Regel 'Punkt vor Strich'. Zuerst wird die Multiplikation berechnet: 1/3 * 3/4 = (1*3)/(3*4) = 3/12, was gekürzt 1/4 ist. Dann wird die Addition durchgeführt: 1/2 + 1/4. Man macht die Brüche gleichnamig: 2/4 + 1/4 = 3/4.",
+    "explanation": "Bei Aufgaben mit verschiedenen Rechenarten gilt die Regel 'Punkt vor Strich'. Zuerst wird die Multiplikation berechnet: 1/3 · 3/4 = (1·3)/(3·4) = 3/12, was gekürzt 1/4 ist. Dann wird die Addition durchgeführt: 1/2 + 1/4. Man macht die Brüche gleichnamig: 2/4 + 1/4 = 3/4.",
     "options": [
       "5/6",
       "3/4",
       "7/12",
       "1/2"
     ],
-    "question": "Was ist das Ergebnis von 1/2 + 1/3 * 3/4?",
+    "question": "Was ist das Ergebnis von 1/2 + 1/3 · 3/4?",
     "topic": "Gemischte Rechenoperationen mit Brüchen"
   },
   {
     "correct": 1,
-    "explanation": "Um den Anteil zu berechnen, multipliziert man die Gesamtzahl der Schüler mit dem Bruchanteil. Also 24 * 3/8. Man kann dies als (24/8) * 3 = 3 * 3 = 9 rechnen. Es sind 9 Mädchen in der Klasse.",
+    "explanation": "Um den Anteil zu berechnen, multipliziert man die Gesamtzahl der Schüler mit dem Bruchanteil. Also 24 · 3/8. Man kann dies als (24/8) · 3 = 3 · 3 = 9 rechnen. Es sind 9 Mädchen in der Klasse.",
     "options": [
       "6",
       "9",
@@ -277,7 +277,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Brüche mit gleichem Nenner werden addiert, indem man die Zähler addiert und den Nenner beibehält: 3 + 2 = 5, also 5/7.",
+    "explanation": "Brüche mit gleichem Nenner werden addiert, indem man die Zähler addiert und den Nenner beibehält: 3 + 2 = 5, also 5/7. Der Nenner wird dabei nicht mitaddiert, sonst käme 5/14 heraus.",
     "options": [
       "5/7",
       "6/7",
@@ -289,19 +289,19 @@
   },
   {
     "correct": 0,
-    "explanation": "Brüche werden multipliziert, indem man Zähler mit Zähler und Nenner mit Nenner multipliziert: (2 ⋅ 4) / (3 ⋅ 5) = 8/15.",
+    "explanation": "Brüche werden multipliziert, indem man Zähler mit Zähler und Nenner mit Nenner multipliziert: (2 · 4) / (3 · 5) = 8/15. Wer über Kreuz multipliziert, erhält fälschlich 10/12; wer stattdessen addiert, erhält 22/15.",
     "options": [
       "8/15",
       "6/8",
       "10/12",
-      "1 1/15"
+      "22/15"
     ],
-    "question": "Berechne: 2/3 ⋅ 4/5",
+    "question": "Berechne: 2/3 · 4/5",
     "topic": "Multiplikation von Brüchen"
   },
   {
     "correct": 3,
-    "explanation": "Um Brüche zu vergleichen, bringt man sie am besten auf einen gemeinsamen Nenner (z.B. 72 für 2, 5, 7, 9, 8) oder wandelt sie in Dezimalzahlen um: 1/2 = 0,5. 2/5 = 0,4; 3/7 ≈ 0,42; 4/9 ≈ 0,44; 5/8 = 0,625. Nur 5/8 ist größer als 0,5.",
+    "explanation": "Um Brüche zu vergleichen, bringt man sie am besten auf einen gemeinsamen Nenner oder wandelt sie in Dezimalzahlen um: 1/2 = 0,5. 2/5 = 0,4; 3/7 ≈ 0,43; 4/9 ≈ 0,44; 5/8 = 0,625. Nur 5/8 ist größer als 1/2.",
     "options": [
       "2/5",
       "3/7",
@@ -312,52 +312,52 @@
     "topic": "Vergleichen von Brüchen"
   },
   {
-    "correct": 1,
-    "explanation": "Man dividiert durch einen Bruch, indem man mit seinem Kehrwert multipliziert: 3/4 ⋅ 2/1 = (3 ⋅ 2) / (4 ⋅ 1) = 6/4. Gekürzt ist das 3/2, was als gemischte Zahl 1 1/2 ist.",
+    "correct": 0,
+    "explanation": "Minus vor einer Klammer bzw. vor einer negativen Zahl kehrt das Vorzeichen um: (-2/3) - (-5/6) = -2/3 + 5/6. Hauptnenner 6: -4/6 + 5/6 = 1/6.",
     "options": [
-      "3/8",
-      "1 1/2",
-      "2/3",
+      "1/6",
+      "-1/6",
+      "-3/2",
       "3/2"
     ],
-    "question": "Was ist 3/4 geteilt durch 1/2?",
-    "topic": "Division von Brüchen"
-  },
-  {
-    "correct": 1,
-    "explanation": "Um Brüche mit unterschiedlichen Nennern zu addieren, muss man sie zuerst auf einen gemeinsamen Nenner bringen. Der kleinste gemeinsame Nenner für 3 und 4 ist 12. 1/3 = 4/12 und 1/4 = 3/12. Also 4/12 + 3/12 = 7/12.",
-    "options": [
-      "2/7",
-      "7/12",
-      "1/12",
-      "5/12"
-    ],
-    "question": "Berechne: 1/3 + 1/4",
-    "topic": "Addition von Brüchen mit unterschiedlichen Nennern"
-  },
-  {
-    "correct": 2,
-    "explanation": "Um 3/8 von 24 zu berechnen, multipliziert man 24 mit 3/8: (24 ⋅ 3) / 8 = 72 / 8 = 9. Lena verschenkt 9 Kekse.",
-    "options": [
-      "6 Kekse",
-      "8 Kekse",
-      "9 Kekse",
-      "12 Kekse"
-    ],
-    "question": "Lena hat 24 Kekse gebacken. 3/8 davon verschenkt sie an ihre Freunde. Wie viele Kekse verschenkt Lena?",
-    "topic": "Bruchanteile berechnen (Textaufgabe)"
+    "question": "Berechne: (-2/3) - (-5/6)",
+    "topic": "Subtraktion negativer Brüche"
   },
   {
     "correct": 0,
-    "explanation": "Zuerst die Klammer berechnen: 1/2 + 1/4 = 2/4 + 1/4 = 3/4. Dann das Ergebnis multiplizieren: 3/4 ⋅ 2/3. Man kann vor der Multiplikation kürzen: (3 ⋅ 2) / (4 ⋅ 3) = 6/12 = 1/2.",
+    "explanation": "Die 15 Liter entsprechen der Differenz der Füllstände: 3/4 - 3/8 = 6/8 - 3/8 = 3/8. Wenn 3/8 des Behälters 15 Liter sind, ist 1/8 gleich 5 Liter. Der ganze Behälter fasst 8 · 5 = 40 Liter.",
     "options": [
-      "1/2",
-      "3/8",
-      "1/3",
-      "2/3"
+      "40 Liter",
+      "24 Liter",
+      "30 Liter",
+      "20 Liter"
     ],
-    "question": "Was ist das Ergebnis von (1/2 + 1/4) ⋅ 2/3?",
-    "topic": "Gemischte Rechenoperationen und Kürzen"
+    "question": "Ein Behälter ist zu 3/8 gefüllt. Nachdem 15 Liter zugegeben wurden, ist er zu 3/4 gefüllt. Wie viel Liter fasst der Behälter insgesamt?",
+    "topic": "Rückwärtsrechnen mit Bruchanteilen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Gesucht ist, wie oft 3/4 in 4 1/2 passt, also eine Division: 9/2 : 3/4 = 9/2 · 4/3 = 36/6 = 6. Wer stattdessen multipliziert, erhält 3 3/8 und damit nur 3 Flaschen.",
+    "options": [
+      "6 Flaschen",
+      "3 Flaschen",
+      "4 Flaschen",
+      "12 Flaschen"
+    ],
+    "question": "Aus 4 1/2 Litern Saft werden Flaschen zu je 3/4 Liter abgefüllt. Wie viele Flaschen ergibt das?",
+    "topic": "Division von Brüchen in Sachaufgaben"
+  },
+  {
+    "correct": 0,
+    "explanation": "Zuerst beide Klammern einzeln ausrechnen: 2/3 - 1/6 = 4/6 - 1/6 = 3/6 = 1/2 und 1/2 + 1/4 = 3/4. Dann dividieren: 1/2 : 3/4 = 1/2 · 4/3 = 4/6 = 2/3.",
+    "options": [
+      "2/3",
+      "3/2",
+      "3/8",
+      "8/3"
+    ],
+    "question": "Berechne: (2/3 - 1/6) : (1/2 + 1/4)",
+    "topic": "Mehrschrittige Bruchterme mit Klammern"
   },
   {
     "correct": 2,

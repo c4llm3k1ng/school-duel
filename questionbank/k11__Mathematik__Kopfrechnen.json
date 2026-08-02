@@ -1,27 +1,27 @@
 [
   {
     "correct": 1,
-    "explanation": "12,5 % entspricht dem Bruch 1/8. Um 1/8 von 160 zu berechnen, teilt man 160 durch 8, was 20 ergibt.",
+    "explanation": "Hier greift die Produktregel f'(x) = u'·v + u·v' mit u = x und v = e^x. Es gilt u' = 1 und v' = e^x, also f'(x) = 1·e^x + x·e^x. Klammert man e^x aus, ergibt sich f'(x) = (1 + x)·e^x.",
     "options": [
-      "16",
-      "20",
-      "24",
-      "32"
+      "f'(x) = e^x",
+      "f'(x) = (1 + x)·e^x",
+      "f'(x) = x·e^x",
+      "f'(x) = (x - 1)·e^x"
     ],
-    "question": "Was sind 12,5 % von 160?",
-    "topic": "Prozentrechnung und Bruchrechnung"
+    "question": "Wie lautet die Ableitung von f(x) = x·e^x?",
+    "topic": "Ableitungen"
   },
   {
     "correct": 1,
-    "explanation": "Zuerst die Wurzel und Potenzen berechnen: √81 = 9, 2³ = 8 und 3² = 9. Dann ergibt sich (9 * 8) / 9 = 8.",
+    "explanation": "120° liegt im zweiten Quadranten, dort ist der Kosinus negativ. Am Einheitskreis gilt cos(120°) = -cos(60°), und wegen cos(60°) = 1/2 folgt cos(120°) = -1/2.",
     "options": [
-      "6",
-      "8",
-      "12",
-      "18"
+      "1/2",
+      "-1/2",
+      "√3/2",
+      "-√3/2"
     ],
-    "question": "Berechne den Wert von (√81 * 2³) / 3².",
-    "topic": "Wurzeln und Potenzen"
+    "question": "Welchen Wert hat cos(120°)?",
+    "topic": "Einheitskreis und Trigonometrie"
   },
   {
     "correct": 1,
@@ -37,158 +37,158 @@
   },
   {
     "correct": 1,
-    "explanation": "Zuerst die Klammer berechnen: 12 - 5 = 7. Dann die Multiplikationen: 7 * 7 = 49 und 3 * 4 = 12. Zum Schluss die Addition: 49 + 12 = 61.",
+    "explanation": "Beim Potenzieren einer Potenz werden die Exponenten multipliziert: (a³)⁴ = a¹². Beim Multiplizieren gleicher Basen werden sie addiert: a⁵ · a² = a⁷. Beim Dividieren werden sie subtrahiert: a¹² / a⁷ = a⁵.",
     "options": [
-      "49",
-      "61",
-      "73",
-      "84"
+      "a⁴",
+      "a⁵",
+      "a⁷",
+      "a¹⁰"
     ],
-    "question": "Was ist das Ergebnis von 7 * (12 - 5) + 3 * 4?",
-    "topic": "Grundrechenarten und Klammerregeln"
+    "question": "Vereinfache: (a³)⁴ / (a⁵ · a²)",
+    "topic": "Potenzgesetze"
   },
   {
     "correct": 2,
-    "explanation": "Man kann entweder zuerst 30 - 2 = 28 rechnen und dann 28² berechnen, oder die zweite binomische Formel nutzen: (a-b)² = a² - 2ab + b². Hier a=30, b=2. Also 30² - 2*30*2 + 2² = 900 - 120 + 4 = 784.",
+    "explanation": "Mit der dritten binomischen Formel (a + b)·(a - b) = a² - b² und a = 100, b = 2 ergibt sich 100² - 2² = 10.000 - 4 = 9.996.",
     "options": [
-      "896",
-      "900",
-      "784",
-      "676"
+      "9.986",
+      "10.004",
+      "9.996",
+      "9.998"
     ],
-    "question": "Berechne (30 - 2)² im Kopf.",
+    "question": "Berechne 102 · 98 im Kopf.",
     "topic": "Binomische Formeln"
   },
   {
     "correct": 0,
-    "explanation": "16^(3/4) ist die vierte Wurzel von 16, das Ergebnis hoch 3. Die vierte Wurzel von 16 ist 2, also 2³ = 8. Der Term 2^(-2) ist gleich 1/2² = 1/4. Das Produkt ist 8 * (1/4) = 2.",
+    "explanation": "16^(3/4) ist die vierte Wurzel von 16, das Ergebnis hoch 3. Die vierte Wurzel von 16 ist 2, also 2³ = 8. Der Term 2^(-2) ist gleich 1/2² = 1/4. Das Produkt ist 8 · (1/4) = 2.",
     "options": [
       "2",
       "4",
       "8",
       "16"
     ],
-    "question": "Vereinfache: 16^(3/4) * 2^(-2)",
+    "question": "Vereinfache: 16^(3/4) · 2^(-2)",
     "topic": "Potenzgesetze"
   },
   {
     "correct": 1,
-    "explanation": "Um 2,5 % von 800 Euro zu berechnen, kann man zuerst 1 % berechnen (das sind 8 Euro) und dann dieses Ergebnis mit 2,5 multiplizieren: 8 * 2,5 = 20 Euro. Alternativ: 2,5 % entspricht dem Bruch 1/40, und 800 geteilt durch 40 ist 20.",
+    "explanation": "Für einen schnellen Überschlag nutzt man die 72er-Regel: Die Verdopplungszeit beträgt etwa 72 geteilt durch den Zinssatz in Prozent, hier 72 / 7 ≈ 10,3. Die exakte Rechnung t = ln(2)/ln(1,07) ≈ 10,2 bestätigt das. Das Kapital verdoppelt sich also nach rund 10 Jahren.",
     "options": [
-      "16 Euro",
-      "20 Euro",
-      "25 Euro",
-      "30 Euro"
+      "ca. 7 Jahre",
+      "ca. 10 Jahre",
+      "ca. 14 Jahre",
+      "ca. 20 Jahre"
     ],
-    "question": "Ein Kapital von 800 Euro wird für ein Jahr zu 2,5 % Zinsen angelegt. Wie hoch sind die Zinsen am Ende des Jahres?",
-    "topic": "Prozentrechnung und Zinsrechnung"
+    "question": "Ein Kapital wird jährlich mit 7 % verzinst. Nach etwa wie vielen Jahren hat es sich verdoppelt?",
+    "topic": "Zinsrechnung und Überschlag"
   },
   {
     "correct": 1,
-    "explanation": "Multiplikationen zuerst ausführen: 3,5 * 6 = 21 und 1,5 * 4 = 6. Anschließend die Summe bilden: 21 + 6 = 27.",
+    "explanation": "Mit der Kettenregel gilt f'(x) = 1/(3x) · 3 = 1/x. Noch schneller sieht man es mit dem Logarithmusgesetz: ln(3x) = ln(3) + ln(x). Da ln(3) eine Konstante ist, bleibt als Ableitung 1/x.",
     "options": [
-      "21",
-      "27",
-      "30",
-      "33"
+      "f'(x) = 3/x",
+      "f'(x) = 1/x",
+      "f'(x) = 1/(3x)",
+      "f'(x) = 3·ln(x)"
     ],
-    "question": "Was ist das Ergebnis von 3,5 * 6 + 1,5 * 4?",
-    "topic": "Dezimalrechnung"
+    "question": "Wie lautet die Ableitung von f(x) = ln(3x)?",
+    "topic": "Ableitungen"
   },
   {
     "correct": 1,
-    "explanation": "2^6 bedeutet, die Zahl 2 sechsmal mit sich selbst zu multiplizieren: 2 * 2 * 2 * 2 * 2 * 2 = 64.",
+    "explanation": "Man rundet den Zähler auf 5 · 10⁵. Die Vorzahlen ergeben 5 / 2,5 = 2, die Zehnerpotenzen 10⁵ / 10² = 10³. Der Überschlag ist also 2 · 10³ = 2.000; der genaue Wert beträgt 1.960.",
     "options": [
-      "32",
-      "64",
-      "128",
-      "256"
+      "ca. 200",
+      "ca. 2.000",
+      "ca. 20.000",
+      "ca. 12.000"
     ],
-    "question": "Was ist der Wert von 2 hoch 6 (2^6)?",
-    "topic": "Potenzen"
+    "question": "Überschlage den Wert von (4,9 · 10⁵) / (2,5 · 10²).",
+    "topic": "Überschlag und Zehnerpotenzen"
   },
   {
     "correct": 0,
-    "explanation": "Die Wurzel eines Bruchs ist gleich dem Quotienten der Wurzeln von Zähler und Nenner: sqrt(100/49) = sqrt(100) / sqrt(49) = 10 / 7.",
+    "explanation": "Wegen √x = x^(1/2) gilt f'(x) = (1/2)·x^(-1/2) = 1/(2·√x). Einsetzen von x = 4 ergibt 1/(2·2) = 1/4.",
     "options": [
-      "10/7",
-      "7/10",
-      "100/49",
-      "50/7"
+      "1/4",
+      "1/2",
+      "1/8",
+      "2"
     ],
-    "question": "Vereinfache den Ausdruck Wurzel aus (100 geteilt durch 49).",
-    "topic": "Wurzeln"
+    "question": "Welchen Wert hat die Ableitung von f(x) = √x an der Stelle x = 4?",
+    "topic": "Ableitungen"
   },
   {
     "correct": 1,
-    "explanation": "log_3(81) fragt, mit welcher Potenz man 3 erheben muss, um 81 zu erhalten. Da 3^4 = 81 ist, ist der Logarithmus 4.",
+    "explanation": "Nach dem Logarithmusgesetz log(a) - log(b) = log(a/b) gilt log₂(48) - log₂(3) = log₂(48/3) = log₂(16). Wegen 2⁴ = 16 ist der Wert 4.",
     "options": [
-      "3",
+      "2",
       "4",
-      "9",
-      "27"
+      "16",
+      "45"
     ],
-    "question": "Was ist der Wert von Logarithmus zur Basis 3 von 81 (log_3(81))?",
-    "topic": "Logarithmen"
+    "question": "Was ist der Wert von log₂(48) - log₂(3)?",
+    "topic": "Logarithmengesetze"
   },
   {
     "correct": 0,
-    "explanation": "Man kann die dritte binomische Formel a^2 - b^2 = (a-b)(a+b) nutzen, wobei a=(x+5) und b=(x-5). Oder man expandiert: (x^2 + 10x + 25) - (x^2 - 10x + 25) = x^2 + 10x + 25 - x^2 + 10x - 25 = 20x.",
+    "explanation": "Man kann die dritte binomische Formel a² - b² = (a + b)·(a - b) mit a = x + 5 und b = x - 5 nutzen: (2x)·10 = 20x. Ausmultiplizieren führt zum selben Ergebnis: (x² + 10x + 25) - (x² - 10x + 25) = 20x.",
     "options": [
       "20x",
       "10x",
-      "50",
+      "2x² + 50",
       "0"
     ],
-    "question": "Vereinfache den Ausdruck (x+5)^2 - (x-5)^2.",
+    "question": "Vereinfache den Ausdruck (x + 5)² - (x - 5)².",
     "topic": "Termumformungen"
   },
   {
     "correct": 0,
-    "explanation": "25% von 80 Euro sind 0,25 * 80 = 20 Euro. Der neue Preis ist 80 Euro - 20 Euro = 60 Euro.",
+    "explanation": "Prozentuale Änderungen werden multipliziert, nicht addiert: 1,20 · 0,80 = 0,96. Der Endpreis beträgt also 96 % des Ausgangspreises, der Preis sinkt insgesamt um 4 %. Deshalb heben sich gleich große Erhöhung und Senkung nie exakt auf.",
     "options": [
-      "60 Euro",
-      "55 Euro",
-      "70 Euro",
-      "65 Euro"
+      "Er sinkt um 4 %.",
+      "Er bleibt unverändert.",
+      "Er steigt um 4 %.",
+      "Er sinkt um 2 %."
     ],
-    "question": "Ein Artikel kostet 80 Euro und wird um 25% reduziert. Wie hoch ist der neue Preis?",
+    "question": "Ein Preis wird zuerst um 20 % erhöht und danach um 20 % gesenkt. Wie verändert er sich insgesamt?",
     "topic": "Prozentrechnung"
   },
   {
     "correct": 0,
-    "explanation": "Eine Zahl hoch einen negativen Exponenten ist gleich dem Kehrwert der Zahl hoch den positiven Exponenten: (1/2)^-3 = (2/1)^3 = 2^3 = 8.",
+    "explanation": "Ein negativer Exponent bedeutet Kehrwert: (8/27)^(-2/3) = (27/8)^(2/3). Der Nenner 3 des Exponenten steht für die dritte Wurzel: die dritte Wurzel von 27/8 ist 3/2. Quadrieren ergibt (3/2)² = 9/4.",
     "options": [
-      "8",
-      "-8",
-      "1/8",
-      "-1/8"
+      "9/4",
+      "4/9",
+      "3/2",
+      "2/3"
     ],
-    "question": "Was ist der Wert von (1/2) hoch -3 ((1/2)^-3)?",
-    "topic": "Potenzen"
+    "question": "Welchen Wert hat (8/27)^(-2/3)?",
+    "topic": "Potenzgesetze"
   },
   {
     "correct": 0,
-    "explanation": "0.125 kann als 125/1000 geschrieben werden. Durch Kürzen (Teilen von Zähler und Nenner durch 125) erhält man 1/8.",
+    "explanation": "Am Einheitskreis gilt sin(π/6) = sin(30°) = 1/2 und cos(π/3) = cos(60°) = 1/2. Die Summe ist damit 1/2 + 1/2 = 1.",
     "options": [
-      "1/8",
-      "1/4",
-      "1/16",
-      "1/10"
+      "1",
+      "1/2",
+      "√3/2",
+      "√3"
     ],
-    "question": "Welchem Bruch in seiner einfachsten Form entspricht die Dezimalzahl 0.125?",
-    "topic": "Brüche und Dezimalzahlen"
+    "question": "Welchen Wert hat sin(π/6) + cos(π/3)?",
+    "topic": "Einheitskreis und Trigonometrie"
   },
   {
     "correct": 0,
-    "explanation": "Mit den Logarithmusgesetzen gilt: log_b(x * y^2) = log_b(x) + log_b(y^2) = log_b(x) + 2 * log_b(y). Einsetzen der gegebenen Werte ergibt: 2 + 2 * 3 = 2 + 6 = 8.",
+    "explanation": "Mit den Logarithmusgesetzen gilt log_b(x · y²) = log_b(x) + log_b(y²) = log_b(x) + 2 · log_b(y). Einsetzen der gegebenen Werte ergibt 2 + 2 · 3 = 2 + 6 = 8.",
     "options": [
       "8",
       "12",
       "18",
       "5"
     ],
-    "question": "Wenn log_b(x) = 2 und log_b(y) = 3 ist, was ist dann log_b(x * y^2)?",
-    "topic": "Logarithmen"
+    "question": "Wenn log_b(x) = 2 und log_b(y) = 3 ist, was ist dann log_b(x · y²)?",
+    "topic": "Logarithmengesetze"
   }
 ]

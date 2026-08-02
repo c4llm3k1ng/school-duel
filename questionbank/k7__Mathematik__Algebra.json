@@ -1,7 +1,7 @@
 [
   {
     "correct": 0,
-    "explanation": "Um Terme zu vereinfachen, addiert oder subtrahiert man nur gleichartige Variablen. Hier: (5x - 2x) + (3y + 4y) = 3x + 7y.",
+    "explanation": "Nur gleichartige Glieder dürfen zusammengefasst werden: (5x - 2x) + (3y + 4y) = 3x + 7y. x und y können nicht miteinander verrechnet werden.",
     "options": [
       "3x + 7y",
       "7x + 7y",
@@ -13,19 +13,19 @@
   },
   {
     "correct": 0,
-    "explanation": "Um x zu finden, addieren wir 12 auf beiden Seiten der Gleichung: x - 12 + 12 = 8 + 12, also x = 20.",
+    "explanation": "Der größte gemeinsame Faktor von 6x² und 9x ist 3x. Es gilt 6x² : 3x = 2x und 9x : 3x = 3, also 6x² + 9x = 3x(2x + 3). Die Probe durch Ausmultiplizieren ergibt wieder 6x² + 9x. Achtung: 3(2x² + 3x) ergibt beim Ausmultiplizieren ebenfalls 6x² + 9x, ist aber nicht vollständig ausgeklammert, weil in der Klammer noch der gemeinsame Faktor x steckt.",
     "options": [
-      "20",
-      "4",
-      "-4",
-      "-20"
+      "3x(2x + 3)",
+      "3x(2x + 9)",
+      "3(2x² + 3x)",
+      "6x(x + 9)"
     ],
-    "question": "Welchen Wert hat x in der Gleichung x - 12 = 8?",
-    "topic": "Lineare Gleichungen lösen"
+    "question": "Klammere im Term 6x² + 9x den größtmöglichen Faktor aus.",
+    "topic": "Terme faktorisieren (Ausklammern)"
   },
   {
     "correct": 2,
-    "explanation": "Man multipliziert die Zahl vor der Klammer mit jedem Term innerhalb der Klammer: 3 * 2a + 3 * 5 = 6a + 15.",
+    "explanation": "Nach dem Distributivgesetz wird der Faktor vor der Klammer mit jedem Glied in der Klammer multipliziert: 3 · 2a + 3 · 5 = 6a + 15.",
     "options": [
       "6a + 5",
       "2a + 15",
@@ -37,7 +37,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Setze x = 4 in den Term ein: 2 * (4)² - 7 = 2 * 16 - 7 = 32 - 7 = 25. Beachte die Reihenfolge der Operationen (Potenz vor Punktrechnung vor Strichrechnung).",
+    "explanation": "Potenz vor Punkt vor Strich: 2 · 4² - 7 = 2 · 16 - 7 = 32 - 7 = 25. Das Quadrat gilt nur für x, nicht für 2x.",
     "options": [
       "9",
       "25",
@@ -49,7 +49,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Eine 'Zahl' wird oft mit x dargestellt. 'Das Vierfache einer Zahl' ist 4x. 'Vermindert um 9' bedeutet, dass 9 davon abgezogen wird, also 4x - 9.",
+    "explanation": "Die gesuchte Zahl heißt x. 'Das Vierfache' bedeutet 4x, 'vermindert um 9' bedeutet, dass davon 9 abgezogen wird: 4x - 9.",
     "options": [
       "4x - 9",
       "9 - 4x",
@@ -61,7 +61,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Bringe alle x-Terme auf eine Seite und alle Zahlen auf die andere: 5x - 2x = 9 + 3, das ergibt 3x = 12. Teile dann durch 3: x = 4.",
+    "explanation": "Alle x-Glieder auf eine Seite, alle Zahlen auf die andere: 5x - 2x = 9 + 3, also 3x = 12 und damit x = 4. Probe: 5 · 4 - 3 = 17 und 2 · 4 + 9 = 17.",
     "options": [
       "x = 2",
       "x = 4",
@@ -73,7 +73,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Zuerst wird die Klammer ausmultipliziert: 4 * y + 4 * 2 = 4y + 8. Dann den restlichen Term hinzufügen und vereinfachen: 4y + 8 - 3y = (4y - 3y) + 8 = y + 8.",
+    "explanation": "Zuerst die Klammer ausmultiplizieren: 4 · y + 4 · 2 = 4y + 8. Danach zusammenfassen: 4y + 8 - 3y = (4y - 3y) + 8 = y + 8.",
     "options": [
       "y + 2",
       "y + 8",
@@ -85,7 +85,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Zuerst die Klammer ausmultiplizieren: 2x - 10 = x + 3. Dann x-Terme auf eine Seite und Zahlen auf die andere bringen: 2x - x = 3 + 10, was zu x = 13 führt.",
+    "explanation": "Klammer ausmultiplizieren: 2x - 10 = x + 3. Dann x-Glieder auf eine Seite, Zahlen auf die andere: 2x - x = 3 + 10, also x = 13. Probe: 2 · (13 - 5) = 16 und 13 + 3 = 16.",
     "options": [
       "8",
       "13",
@@ -97,19 +97,19 @@
   },
   {
     "correct": 0,
-    "explanation": "Man kann nur Terme mit gleichen Variablen zusammenfassen. Hier werden die 'x'-Terme (5x - 2x = 3x) und die 'y'-Terme (3y + y = 4y) separat zusammengefasst.",
+    "explanation": "Vor der Klammer steht ein Minus, deshalb kehren sich beim Auflösen beide Vorzeichen in der Klammer um: 8a - 3a + 5 = 5a + 5.",
     "options": [
-      "3x + 4y",
-      "7x + 4y",
-      "3x + 2y",
-      "7x + 2y"
+      "5a + 5",
+      "5a - 5",
+      "11a - 5",
+      "11a + 5"
     ],
-    "question": "Vereinfache den Term: 5x + 3y - 2x + y",
-    "topic": "Terme vereinfachen"
+    "question": "Vereinfache den Term: 8a - (3a - 5)",
+    "topic": "Minusklammer auflösen"
   },
   {
     "correct": 1,
-    "explanation": "Addiere zuerst 8 auf beiden Seiten: 3x = 18. Teile dann durch 3: x = 6.",
+    "explanation": "Zuerst 8 auf beiden Seiten addieren: 3x = 18. Dann durch 3 teilen: x = 6. Probe: 3 · 6 - 8 = 10.",
     "options": [
       "x = 2",
       "x = 6",
@@ -120,32 +120,32 @@
     "topic": "Lineare Gleichungen lösen"
   },
   {
-    "correct": 1,
-    "explanation": "Setze für 'a' den Wert 3 ein: 4 * 3 + 7 = 12 + 7 = 19.",
+    "correct": 0,
+    "explanation": "Einsetzen und Vorzeichen beachten: 3 · (-2)² - 2 · (-2) = 3 · 4 + 4 = 12 + 4 = 16. Das Quadrat einer negativen Zahl ist positiv, und minus mal minus ergibt plus.",
     "options": [
-      "14",
-      "19",
-      "28",
-      "11"
+      "16",
+      "8",
+      "-8",
+      "-16"
     ],
-    "question": "Berechne den Wert des Terms 4a + 7, wenn a = 3 ist.",
+    "question": "Berechne den Wert des Terms 3x² - 2x für x = -2.",
     "topic": "Termwerte berechnen"
   },
   {
-    "correct": 1,
-    "explanation": "\"Eine Zahl\" wird oft mit x dargestellt. \"Das Dreifache einer Zahl\" ist 3x. \"Vermindert um 5\" bedeutet, 5 abzuziehen.",
+    "correct": 0,
+    "explanation": "Zuerst wird die Summe gebildet: x + 6. Diese Summe wird verdoppelt, deshalb muss sie eingeklammert werden: 2(x + 6). Erst danach werden 4 abgezogen: 2(x + 6) - 4, ausmultipliziert also 2x + 8.",
     "options": [
-      "3 + x - 5",
-      "3x - 5",
-      "5 - 3x",
-      "x/3 - 5"
+      "2(x + 6) - 4",
+      "2x + 6 - 4",
+      "2(x + 6 - 4)",
+      "2(x - 4) + 6"
     ],
-    "question": "Welcher Term beschreibt \"Das Dreifache einer Zahl vermindert um 5\"?",
+    "question": "Welcher Term beschreibt: Die Summe aus einer Zahl x und 6 wird verdoppelt, davon werden 4 abgezogen?",
     "topic": "Terme aufstellen"
   },
   {
     "correct": 0,
-    "explanation": "Bringe alle z-Terme auf eine Seite und die Zahlen auf die andere. Subtrahiere 3z von beiden Seiten: 4z + 2 = 18. Subtrahiere dann 2 von beiden Seiten: 4z = 16. Teile durch 4: z = 4.",
+    "explanation": "Subtrahiere 3z von beiden Seiten: 4z + 2 = 18. Subtrahiere 2: 4z = 16. Teile durch 4: z = 4. Probe: 7 · 4 + 2 = 30 und 3 · 4 + 18 = 30.",
     "options": [
       "z = 4",
       "z = 5",
@@ -156,32 +156,32 @@
     "topic": "Lineare Gleichungen lösen"
   },
   {
-    "correct": 2,
-    "explanation": "Das Distributivgesetz besagt, dass die Zahl vor der Klammer mit jedem Glied in der Klammer multipliziert werden muss: 4 * x und 4 * (-6), also 4x - 24.",
+    "correct": 0,
+    "explanation": "Der Faktor -3 wird mit jedem Glied der Klammer multipliziert: -3 · 2x = -6x und -3 · (-4) = +12. Also -6x + 12 + 5x = -x + 12.",
     "options": [
-      "4x - 6",
-      "x - 24",
-      "4x - 24",
-      "4x + 24"
+      "-x + 12",
+      "-x - 12",
+      "x + 12",
+      "11x - 12"
     ],
-    "question": "Multipliziere den Term aus: 4(x - 6)",
-    "topic": "Distributivgesetz anwenden"
+    "question": "Multipliziere aus und vereinfache: -3(2x - 4) + 5x",
+    "topic": "Terme ausmultiplizieren und vereinfachen"
   },
   {
     "correct": 0,
-    "explanation": "Fasse Terme mit gleichen Variablen und gleichen Potenzen zusammen. (6a^2 - 2a^2) ergibt 4a^2. (3b + b) ergibt 4b.",
+    "explanation": "Nur Glieder mit gleicher Variable und gleicher Potenz sind gleichartig: 6a² - 2a² = 4a² und 3b + b = 4b. Also 4a² + 4b.",
     "options": [
-      "4a^2 + 4b",
-      "8a^2 + 4b",
-      "4a^2 + 2b",
-      "8a^2 + 2b"
+      "4a² + 4b",
+      "8a² + 4b",
+      "4a² + 2b",
+      "8a² + 2b"
     ],
-    "question": "Vereinfache den Term: 6a^2 + 3b - 2a^2 + b",
+    "question": "Vereinfache den Term: 6a² + 3b - 2a² + b",
     "topic": "Terme mit Potenzen vereinfachen"
   },
   {
     "correct": 1,
-    "explanation": "Der Umfang eines Rechtecks ist 2 * (Länge + Breite). Hier also 2 * (x + (x + 4)) = 2 * (2x + 4) = 4x + 8.",
+    "explanation": "Der Umfang eines Rechtecks ist 2 · (Länge + Breite): 2 · (x + (x + 4)) = 2 · (2x + 4) = 4x + 8. Der Term x(x + 4) beschreibt dagegen den Flächeninhalt.",
     "options": [
       "2x + 4",
       "4x + 8",
