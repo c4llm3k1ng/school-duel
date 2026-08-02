@@ -34,11 +34,16 @@ if (!files.length) { console.error('Keine passenden Dateien.'); process.exit(1);
 // Normalisierung fuer Vergleiche: Kleinschreibung, Satzzeichen/Whitespace raus.
 // WICHTIG: Minuszeichen bleibt erhalten – sonst werden "x = 3" und "x = -3"
 // faelschlich als identisch gemeldet.
-// Klammern bleiben erhalten: "(2A/h) - b" und "2A/(h - b)" sind verschiedene Formeln.
-const norm = s => String(s).toLowerCase()
-  .replace(/[.,;:!?„“"'`´]/g, ' ')
-  .replace(/\s+/g, ' ')
-  .trim();
+// Normalisiert NUR Leerraum. Nichts anderes.
+//
+// Why: Frueher hat diese Funktion kleingeschrieben und Satzzeichen sowie
+// Klammern entfernt - fuer Fliesstext sinnvoll, fuer diese Fragenbank fatal.
+// In Rechtschreibfragen ist die Gross-/Kleinschreibung das Pruefmerkmal
+// ("heute" / "Heute" / "HEUTE"), bei Kommasetzung und direkter Rede sind es
+// die Satzzeichen ("usw." / "u.s.w." / "usw"), in Formeln die Klammern
+// ("(2A/h) - b" / "2A/(h - b)"). Jede dieser Vereinfachungen hat echte
+// Optionen als Dubletten gemeldet, die keine waren.
+const norm = s => String(s).replace(/\s+/g, ' ').trim();
 
 // Zahlwert extrahieren. ACHTUNG deutsche Schreibweise: der Punkt ist
 // Tausendertrennzeichen, das Komma das Dezimalzeichen. "40.000" ist

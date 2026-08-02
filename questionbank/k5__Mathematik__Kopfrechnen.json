@@ -1,7 +1,7 @@
 [
   {
     "correct": 0,
-    "explanation": "Addiere zuerst die Hunderter (340 + 200 = 540) und dann die restlichen Zehner (540 + 80 = 620).",
+    "explanation": "Addiere zuerst die Hunderter: 340 + 200 = 540. Dann kommen die restlichen 80 dazu: 540 + 80 = 620.",
     "options": [
       "620",
       "520",
@@ -13,19 +13,19 @@
   },
   {
     "correct": 1,
-    "explanation": "Rechne zuerst 7 * 6 = 42 und hänge die zwei Nullen der Faktoren an das Ergebnis an.",
+    "explanation": "Rechne zuerst 7 · 6 = 42 und hänge dann die beiden Nullen der Faktoren an: 4200.",
     "options": [
       "420",
       "4200",
       "42000",
       "42"
     ],
-    "question": "Berechne im Kopf: 70 * 60",
+    "question": "Berechne im Kopf: 70 · 60",
     "topic": "Multiplikation"
   },
   {
     "correct": 0,
-    "explanation": "Teile 45 durch 9 (ergibt 5) und hänge die Null wieder an.",
+    "explanation": "Teile 45 durch 9, das ergibt 5, und hänge die Null wieder an: 50. Probe: 50 · 9 = 450.",
     "options": [
       "50",
       "5",
@@ -36,20 +36,20 @@
     "topic": "Division"
   },
   {
-    "correct": 2,
-    "explanation": "Es gilt 'Punkt vor Strich'. Berechne zuerst 5 * 4 = 20 und addiere dann 15 + 20 = 35.",
+    "correct": 1,
+    "explanation": "Zuerst die Klammer: 24 + 16 = 40. Dann Punkt vor Strich: 40 : 8 = 5. Zum Schluss 5 + 7 = 12. Ohne Klammer käme 24 + 2 + 7 = 33 heraus.",
     "options": [
-      "80",
-      "24",
-      "35",
-      "45"
+      "33",
+      "12",
+      "10",
+      "15"
     ],
-    "question": "Beachte die Vorrangregeln: 15 + 5 * 4",
+    "question": "Berechne: (24 + 16) : 8 + 7",
     "topic": "Rechengesetze"
   },
   {
     "correct": 1,
-    "explanation": "Schrittweise: 455 + 5 = 460, 460 + 40 = 500, 500 + 500 = 1000. Ergibt zusammen 545.",
+    "explanation": "Ergänze schrittweise: 455 + 5 = 460, 460 + 40 = 500, 500 + 500 = 1000. Zusammen fehlen 5 + 40 + 500 = 545.",
     "options": [
       "555",
       "545",
@@ -60,32 +60,32 @@
     "topic": "Subtraktion"
   },
   {
-    "correct": 0,
-    "explanation": "Das Doppelte von 125 ist 250. Wenn man 50 abzieht, erhält man 200.",
+    "correct": 1,
+    "explanation": "Das Doppelte von 375 ist 750 (2 · 300 = 600 und 2 · 75 = 150). Davon 150 abgezogen ergibt 600.",
     "options": [
-      "200",
-      "250",
-      "150",
-      "300"
+      "750",
+      "600",
+      "450",
+      "900"
     ],
-    "question": "Verdopple die Zahl 125 und ziehe anschließend 50 ab.",
+    "question": "Verdopple die Zahl 375 und ziehe anschließend 150 ab.",
     "topic": "Kombiniertes Rechnen"
   },
   {
     "correct": 1,
-    "explanation": "Zerlege die Rechnung in (10 * 5) + (4 * 5) = 50 + 20 = 70.",
+    "explanation": "Mal 5 ist dasselbe wie mal 10 und dann halbieren: 48 · 10 = 480, die Hälfte davon ist 240.",
     "options": [
-      "60",
-      "70",
-      "80",
-      "50"
+      "480",
+      "240",
+      "200",
+      "250"
     ],
-    "question": "Was ist das Ergebnis von 14 * 5?",
+    "question": "Was ist das Ergebnis von 48 · 5?",
     "topic": "Multiplikation"
   },
   {
     "correct": 0,
-    "explanation": "Beim Dividieren durch Zehnerzahlen kann man an beiden Stellen eine Null streichen: 72 : 8 = 9.",
+    "explanation": "Bei Zehnerzahlen darfst du in beiden Zahlen eine Null streichen: aus 720 : 80 wird 72 : 8 = 9.",
     "options": [
       "9",
       "90",
@@ -97,103 +97,103 @@
   },
   {
     "correct": 1,
-    "explanation": "Um 340 und 170 zu addieren, kannst du erst 340 + 100 = 440 rechnen und dann 440 + 70 = 510.",
+    "explanation": "Rechne in zwei Schritten: 340 + 100 = 440, dann 440 + 70 = 510.",
     "options": [
-      "A: 410",
-      "B: 510",
-      "C: 500",
-      "D: 520"
+      "410",
+      "510",
+      "500",
+      "520"
     ],
     "question": "Was ist die Summe aus 340 und 170?",
     "topic": "Addition"
   },
   {
     "correct": 0,
-    "explanation": "Du kannst 630 - 200 = 430 rechnen und dann 430 - 80 = 350. Oder 630 - 300 + 20 = 350.",
+    "explanation": "Rechne 630 - 200 = 430 und dann 430 - 80 = 350. Kürzer: 630 - 300 = 330, plus 20 zurück ergibt 350.",
     "options": [
-      "A: 350",
-      "B: 370",
-      "C: 450",
-      "D: 420"
+      "350",
+      "370",
+      "450",
+      "420"
     ],
     "question": "Rechne: 630 - 280",
     "topic": "Subtraktion"
   },
   {
-    "correct": 0,
-    "explanation": "Rechne zuerst 6 mal 4, das ist 24. Hänge dann die Null von der 40 an, um 240 zu erhalten.",
+    "correct": 1,
+    "explanation": "Zerlege den zweiten Faktor: 24 · 20 = 480 und 24 · 5 = 120. Zusammen 480 + 120 = 600.",
     "options": [
-      "A: 240",
-      "B: 204",
-      "C: 2400",
-      "D: 640"
+      "580",
+      "600",
+      "480",
+      "500"
     ],
-    "question": "Was ist das Produkt von 6 und 40?",
+    "question": "Was ist das Produkt von 24 und 25?",
     "topic": "Multiplikation"
   },
   {
     "correct": 0,
-    "explanation": "Wenn du 32 durch 8 teilst, erhältst du 4. Da 320 die Null am Ende hat, ist das Ergebnis 40.",
+    "explanation": "Teile zuerst 32 durch 8, das ergibt 4. Weil 320 zehnmal so groß ist wie 32, lautet das Ergebnis 40.",
     "options": [
-      "A: 40",
-      "B: 4",
-      "C: 32",
-      "D: 80"
+      "40",
+      "4",
+      "32",
+      "80"
     ],
     "question": "Teile 320 durch 8.",
     "topic": "Division"
   },
   {
     "correct": 0,
-    "explanation": "Zuerst multiplizierst du: 50 * 7 = 350. Dann subtrahierst du: 350 - 50 = 300.",
+    "explanation": "Punkt vor Strich: zuerst 50 · 7 = 350, danach 350 - 50 = 300.",
     "options": [
-      "A: 300",
-      "B: 350",
-      "C: 250",
-      "D: 400"
+      "300",
+      "350",
+      "250",
+      "320"
     ],
-    "question": "Berechne: 50 * 7 - 50",
+    "question": "Berechne: 50 · 7 - 50",
     "topic": "Gemischte Operationen"
   },
   {
     "correct": 0,
-    "explanation": "Da die Einerstelle (3) kleiner als 5 ist, rundest du ab. Die Zahl wird zu 780.",
+    "explanation": "Für den Hunderter zählt die Zehnerstelle. Sie ist 8, also wird aufgerundet: 7483 wird zu 7500.",
     "options": [
-      "A: 780",
-      "B: 790",
-      "C: 700",
-      "D: 800"
+      "7500",
+      "7400",
+      "7000",
+      "7480"
     ],
-    "question": "Runde die Zahl 783 auf den nächsten Zehner.",
+    "question": "Runde die Zahl 7483 auf den nächsten Hunderter.",
     "topic": "Runden"
   },
   {
     "correct": 1,
-    "explanation": "Um die fehlende Zahl zu finden, subtrahierst du 45 von 120: 120 - 45 = 75.",
+    "explanation": "Die fehlende Zahl findest du durch Subtraktion: 400 - 165 = 235. Probe: 165 + 235 = 400.",
     "options": [
-      "A: 65",
-      "B: 75",
-      "C: 85",
-      "D: 95"
+      "245",
+      "235",
+      "225",
+      "335"
     ],
-    "question": "Welche Zahl muss in die Lücke passen: 45 + ___ = 120?",
+    "question": "Welche Zahl muss in die Lücke passen: 165 + ___ = 400?",
     "topic": "Lückenaufgaben / Ergänzen"
   },
   {
     "correct": 1,
-    "explanation": "Ein Vielfaches von 9 ist eine Zahl, die man durch 9 teilen kann, ohne einen Rest zu haben. 54 geteilt durch 9 ist 6.",
+    "explanation": "Ein Vielfaches von 9 lässt sich ohne Rest durch 9 teilen. Bei 54 ist die Quersumme 5 + 4 = 9, und 54 : 9 = 6.",
     "options": [
-      "A: 48",
-      "B: 54",
-      "C: 65",
-      "D: 70"
+      "48",
+      "54",
+      "56",
+      "68"
     ],
     "question": "Welche der folgenden Zahlen ist ein Vielfaches von 9?",
     "topic": "Vielfache"
   },
   {
     "correct": 1,
-    "explanation": "Du kannst zuerst die Zehner addieren: 30 + 40 = 70. Dann die Einer: 5 + 8 = 13. Zum Schluss addierst du beides: 70 + 13 = 83.",
+    "explanation": "Addiere erst die Zehner: 30 + 40 = 70. Dann die Einer: 5 + 8 = 13. Zusammen 70 + 13 = 83.",
     "options": [
       "73",
       "83",
@@ -205,182 +205,182 @@
   },
   {
     "correct": 0,
-    "explanation": "Ziehe die Zehner von den Zehnern ab: 12 Zehner minus 4 Zehner sind 8 Zehner, also 80. Die 3 Einer bleiben bestehen. Das Ergebnis ist 83.",
+    "explanation": "Ziehe in Schritten ab: 605 - 200 = 405, dann 405 - 38 = 367. Probe: 367 + 238 = 605.",
     "options": [
-      "83",
-      "73",
-      "93",
-      "63"
+      "367",
+      "377",
+      "467",
+      "357"
     ],
-    "question": "Berechne 123 - 40.",
+    "question": "Berechne: 605 - 238",
     "topic": "Subtraktion dreistelliger Zahlen"
   },
   {
     "correct": 1,
-    "explanation": "Diese Aufgabe ist Teil des kleinen Einmaleins. 6 multipliziert mit 7 ergibt 42.",
+    "explanation": "Verdopple zweimal: 125 · 4 = 500, und 500 · 2 = 1000. Merke dir 8 · 125 = 1000.",
     "options": [
-      "36",
-      "42",
-      "48",
-      "54"
+      "960",
+      "1000",
+      "825",
+      "1250"
     ],
-    "question": "Wie viel ist 6 mal 7?",
-    "topic": "Kleines Einmaleins (Multiplikation)"
-  },
-  {
-    "correct": 1,
-    "explanation": "Du suchst die Zahl, die mit 9 multipliziert 72 ergibt. Das ist die 8 (9 * 8 = 72).",
-    "options": [
-      "7",
-      "8",
-      "9",
-      "6"
-    ],
-    "question": "Was ist 72 geteilt durch 9?",
-    "topic": "Kleines Einmaleins (Division)"
+    "question": "Wie viel ist 8 · 125?",
+    "topic": "Multiplikation mit Rechentrick"
   },
   {
     "correct": 0,
-    "explanation": "Arbeite die Aufgabe Schritt für Schritt ab: 50 + 25 = 75. Dann 75 - 15 = 60. Und zum Schluss 60 + 30 = 90.",
+    "explanation": "Streiche in beiden Zahlen eine Null: aus 3600 : 40 wird 360 : 4 = 90.",
     "options": [
       "90",
-      "80",
-      "70",
-      "60"
+      "900",
+      "9",
+      "80"
     ],
-    "question": "Rechne im Kopf: 50 + 25 - 15 + 30",
+    "question": "Was ist 3600 geteilt durch 40?",
+    "topic": "Division mit Zehnerzahlen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Arbeite von links nach rechts: 250 + 175 = 425, dann 425 - 125 = 300, zum Schluss 300 + 80 = 380.",
+    "options": [
+      "380",
+      "300",
+      "370",
+      "630"
+    ],
+    "question": "Rechne im Kopf: 250 + 175 - 125 + 80",
     "topic": "Kettenrechnung mit Addition und Subtraktion"
   },
   {
     "correct": 1,
-    "explanation": "Du rechnest 5 Brötchen mal 40 Cent. 5 * 40 = 200 Cent. Da 100 Cent = 1 Euro sind, sind 200 Cent = 2 Euro.",
+    "explanation": "Rechne 6 · 1,20 € in zwei Teilen: 6 · 1 € = 6,00 € und 6 · 0,20 € = 1,20 €. Zusammen 7,20 €.",
     "options": [
-      "1 Euro 50 Cent",
-      "2 Euro",
-      "2 Euro 40 Cent",
-      "2 Euro 50 Cent"
+      "6,20 €",
+      "7,20 €",
+      "8,40 €",
+      "72,00 €"
     ],
-    "question": "Ein Bäcker verkauft Brötchen. Ein Brötchen kostet 40 Cent. Wie viel kosten 5 Brötchen zusammen?",
+    "question": "Ein Heft kostet 1,20 €. Wie viel kosten 6 Hefte zusammen?",
     "topic": "Sachrechnen mit Multiplikation (Geld)"
   },
   {
     "correct": 0,
-    "explanation": "Multipliziere zuerst 15 mit 6: 15 * 6 = 90. Da 60 eine Null hat, fügst du diese Null an das Ergebnis an: 900.",
+    "explanation": "Rechne zuerst 15 · 6 = 90 und hänge dann die Null der 60 an: 900.",
     "options": [
       "900",
       "750",
       "800",
       "1000"
     ],
-    "question": "Berechne 15 * 60 im Kopf.",
+    "question": "Berechne 15 · 60 im Kopf.",
     "topic": "Multiplikation mit Zehnerzahlen"
   },
   {
     "correct": 0,
-    "explanation": "Merke dir die Regel 'Punktrechnung vor Strichrechnung'. Zuerst multiplizierst du 3 * 20 = 60. Dann subtrahierst du: 120 - 60 = 60.",
+    "explanation": "Punktrechnung geht vor Strichrechnung: zuerst 3 · 20 = 60, danach 120 - 60 = 60.",
     "options": [
       "60",
+      "40",
       "90",
-      "100",
       "114"
     ],
-    "question": "Was ist das Ergebnis von 120 - 3 * 20?",
+    "question": "Was ist das Ergebnis von 120 - 3 · 20?",
     "topic": "Punkt- vor Strichrechnung"
   },
   {
     "correct": 2,
-    "explanation": "Du rechnest zuerst die Zehner zusammen: 30 + 40 = 70. Dann addierst du die Einer: 70 + 5 = 75.",
+    "explanation": "Addiere stellenweise: 1250 + 300 = 1550, dann 1550 + 75 = 1625. Achte auf den Übertrag bei den Zehnern.",
     "options": [
-      "A) 65",
-      "B) 70",
-      "C) 75",
-      "D) 80"
+      "1525",
+      "1615",
+      "1625",
+      "1725"
     ],
-    "question": "Was ist das Ergebnis von 30 + 45?",
-    "topic": "Addition zweistelliger Zahlen"
+    "question": "Was ist das Ergebnis von 1250 + 375?",
+    "topic": "Addition vierstelliger Zahlen"
   },
   {
     "correct": 1,
-    "explanation": "Du subtrahierst zuerst die Zehner: 80 - 20 = 60. Dann subtrahierst du die Einer: 7 - 3 = 4. Zum Schluss addierst du die Ergebnisse: 60 + 4 = 64.",
+    "explanation": "Ergänze von 372 bis 1000: 372 + 28 = 400, 400 + 600 = 1000. Zusammen 28 + 600 = 628.",
     "options": [
-      "A) 54",
-      "B) 64",
-      "C) 66",
-      "D) 74"
+      "638",
+      "628",
+      "728",
+      "632"
     ],
-    "question": "Berechne: 87 - 23",
-    "topic": "Subtraktion zweistelliger Zahlen"
+    "question": "Berechne: 1000 - 372",
+    "topic": "Subtraktion dreistelliger Zahlen"
   },
   {
     "correct": 2,
-    "explanation": "Die Multiplikation von 7 mit 8 ergibt 56. Es ist wichtig, das kleine Einmaleins auswendig zu kennen.",
+    "explanation": "Zerlege den zweiten Faktor: 13 · 10 = 130 und 13 · 2 = 26. Zusammen 130 + 26 = 156.",
     "options": [
-      "A) 49",
-      "B) 54",
-      "C) 56",
-      "D) 63"
+      "144",
+      "150",
+      "156",
+      "169"
     ],
-    "question": "Multipliziere: 7 * 8",
-    "topic": "Multiplikation (Kleines Einmaleins)"
+    "question": "Multipliziere: 13 · 12",
+    "topic": "Multiplikation zweistelliger Zahlen"
   },
   {
     "correct": 1,
-    "explanation": "Du suchst eine Zahl, die mit 9 multipliziert 63 ergibt. 7 * 9 = 63. Also ist 63 geteilt durch 9 gleich 7.",
+    "explanation": "Zerlege 512 in 480 + 32. Es gilt 480 : 8 = 60 und 32 : 8 = 4, zusammen also 64.",
     "options": [
-      "A) 6",
-      "B) 7",
-      "C) 8",
-      "D) 9"
+      "46",
+      "64",
+      "56",
+      "68"
     ],
-    "question": "Teile 63 durch 9. Was ist das Ergebnis?",
+    "question": "Teile 512 durch 8. Was ist das Ergebnis?",
     "topic": "Division"
   },
   {
     "correct": 2,
-    "explanation": "Rechne zuerst 25 + 15 = 40. Dann addiere 40 + 30 = 70.",
+    "explanation": "Rechne 47 + 68 = 115 und dann 115 + 25 = 140. Tipp: 47 + 68 geht leichter als 47 + 70 - 2.",
     "options": [
-      "A) 60",
-      "B) 65",
-      "C) 70",
-      "D) 75"
+      "130",
+      "135",
+      "140",
+      "150"
     ],
-    "question": "Addiere im Kopf: 25 + 15 + 30",
+    "question": "Addiere im Kopf: 47 + 68 + 25",
     "topic": "Addition von drei Zahlen"
   },
   {
-    "correct": 3,
-    "explanation": "Multipliziere zuerst die Zahlen ohne die Null: 6 * 4 = 24. Hänge dann die Null der 40 wieder an das Ergebnis: 240.",
+    "correct": 2,
+    "explanation": "Rechne über die glatte Zahl: 7 · 50 = 350, davon 7 · 2 = 14 abziehen ergibt 336.",
     "options": [
-      "A) 120",
-      "B) 180",
-      "C) 200",
-      "D) 240"
+      "288",
+      "326",
+      "336",
+      "356"
     ],
-    "question": "Was ist 6 * 40?",
-    "topic": "Multiplikation mit Zehnerzahlen"
+    "question": "Was ist 7 · 48?",
+    "topic": "Multiplikation zweistelliger Zahlen"
   },
   {
     "correct": 1,
-    "explanation": "Du kannst zuerst 13 Zehner minus 5 Zehner rechnen, das sind 8 Zehner, also 80. Oder du rechnest 130 - 30 = 100, und dann 100 - 20 = 80.",
+    "explanation": "Rechne in zwei Schritten: 1300 - 400 = 900, dann 900 - 50 = 850.",
     "options": [
-      "A) 70",
-      "B) 80",
-      "C) 90",
-      "D) 100"
+      "750",
+      "850",
+      "890",
+      "950"
     ],
-    "question": "Berechne im Kopf: 130 - 50",
+    "question": "Berechne im Kopf: 1300 - 450",
     "topic": "Subtraktion über Hundertergrenze"
   },
   {
     "correct": 3,
-    "explanation": "Bei gemischten Rechenarten gilt 'Punkt vor Strich'. Zuerst rechnest du die Multiplikation: 3 * 6 = 18. Dann addierst du die 5: 5 + 18 = 23.",
+    "explanation": "Es gilt Punkt vor Strich: zuerst 3 · 6 = 18, danach 5 + 18 = 23. Von links gerechnet käme falsch 8 · 6 = 48 heraus.",
     "options": [
-      "A) 33",
-      "B) 48",
-      "C) 18",
-      "D) 23"
+      "33",
+      "48",
+      "18",
+      "23"
     ],
-    "question": "Was ist das Ergebnis von 5 + 3 * 6?",
+    "question": "Was ist das Ergebnis von 5 + 3 · 6?",
     "topic": "Gemischte Rechenarten (Punkt vor Strich)"
   }
 ]

@@ -481,470 +481,470 @@
   },
   {
     "correct": 1,
-    "explanation": "Senkrecht: Schnittwinkel = 90°. Symbol: ⊥ (z.B. a ⊥ b). Höhen in Dreiecken stehen senkrecht auf den Grundlinien.",
+    "explanation": "Senkrecht (orthogonal) bedeutet: Die Geraden schneiden sich unter 90°. Schreibweise: a ⊥ b. Beispiel: Die Höhe eines Dreiecks steht senkrecht auf der Grundseite.",
     "options": [
-      "Zwei Linien verlaufen nebeneinander",
-      "Zwei Linien stehen unter einem rechten Winkel (90°) aufeinander",
-      "Zwei Linien sind gleich lang",
-      "Zwei Linien schneiden sich unter 45°"
+      "Sie verlaufen parallel und schneiden sich nie",
+      "Sie schneiden sich unter einem Winkel von genau 90°",
+      "Sie sind genau gleich lang und gleich dick",
+      "Sie schneiden sich unter einem Winkel von genau 45°"
     ],
-    "question": "Was bedeutet 'senkrecht' (orthogonal)?",
+    "question": "Was bedeutet es, wenn zwei Geraden senkrecht (orthogonal) zueinander sind?",
     "topic": "Geometrische Begriffe"
   },
   {
     "correct": 2,
-    "explanation": "Ein Rechteck hat 2 Symmetrieachsen: eine horizontale und eine vertikale Mittellinie. (Ein Quadrat hat 4 Achsen.)",
+    "explanation": "Ein Rechteck hat 2 Symmetrieachsen: die waagerechte und die senkrechte Mittellinie. Die Diagonalen sind keine Symmetrieachsen. Ein Quadrat hätte 4 Achsen.",
     "options": [
       "0",
       "1",
       "2",
       "4"
     ],
-    "question": "Wie viele Achsen der Symmetrie hat ein Rechteck (kein Quadrat)?",
+    "question": "Wie viele Symmetrieachsen hat ein Rechteck, das kein Quadrat ist?",
     "topic": "Symmetrie"
   },
   {
     "correct": 1,
-    "explanation": "Fläche: Ausdehnung einer Ebene (m², cm²). Volumen: Inhalt eines Körpers (m³, cm³, Liter). Fläche 2D, Volumen 3D.",
+    "explanation": "Ein Flächeninhalt beschreibt eine zweidimensionale Ausdehnung und wird in cm² oder m² angegeben. Ein Volumen beschreibt den Rauminhalt eines Körpers und wird in cm³, m³ oder Liter angegeben.",
     "options": [
-      "Es gibt keinen Unterschied",
-      "Fläche misst zweidimensionale Ausdehnung (cm²), Volumen misst dreidimensionale Ausdehnung (cm³)",
-      "Volumen ist immer kleiner",
-      "Fläche ist immer größer"
+      "Fläche misst man in cm³, Volumen misst man in cm²",
+      "Fläche ist zweidimensional (cm²), Volumen dreidimensional (cm³)",
+      "Fläche gibt es nur bei Kreisen, Volumen nur bei Würfeln",
+      "Fläche ist der Rand einer Figur, Volumen ist ihr Umfang"
     ],
-    "question": "Was ist der Unterschied zwischen Fläche und Volumen?",
+    "question": "Worin unterscheiden sich Flächeninhalt und Volumen?",
     "topic": "Fläche und Volumen"
   },
   {
     "correct": 2,
-    "explanation": "Volumen Würfel = Kante³ = 3 × 3 × 3 = 27 cm³.",
+    "explanation": "Volumen eines Würfels = Kante · Kante · Kante = 3 cm · 3 cm · 3 cm = 27 cm³.",
     "options": [
       "9 cm³",
       "18 cm³",
       "27 cm³",
-      "12 cm³"
+      "54 cm³"
     ],
-    "question": "Was ist das Volumen eines Würfels mit Kantenlänge 3 cm?",
+    "question": "Wie groß ist das Volumen eines Würfels mit der Kantenlänge 3 cm?",
     "topic": "Körper"
   },
   {
     "correct": 1,
-    "explanation": "Würfelnetz: 11 mögliche verschiedene Netze. Beim Zusammenfalten entsteht der Würfel. Wichtig: gegenüberliegende Flächen beachten.",
+    "explanation": "Ein Würfelnetz zeigt alle 6 Flächen nebeneinander in einer Ebene. Faltet man es zusammen, entsteht der Würfel. Es gibt 11 verschiedene Würfelnetze.",
     "options": [
-      "Ein Würfel ohne Flächen",
-      "Die Abwicklung (Auffaltung) aller 6 Flächen des Würfels in einer Ebene – kann zum Würfel zusammengefaltet werden",
-      "Ein Muster auf dem Würfel",
-      "Ein 3D-Modell"
+      "Ein Würfel, bei dem eine Seitenfläche fehlt",
+      "Die in eine Ebene aufgeklappten sechs Flächen des Würfels",
+      "Ein aufgemaltes Muster auf den Flächen des Würfels",
+      "Ein Drahtmodell aus den zwölf Kanten des Würfels"
     ],
-    "question": "Was ist ein Netz eines Würfels?",
+    "question": "Was versteht man unter dem Netz eines Würfels?",
     "topic": "Körper"
   },
   {
-    "correct": 1,
-    "explanation": "Fläche: cm² (Quadratzentimeter), m² (Quadratmeter). Längen in cm oder m, Volumen in cm³ oder m³.",
+    "correct": 2,
+    "explanation": "1 m² ist ein Quadrat mit 100 cm Seitenlänge: 100 cm · 100 cm = 10 000 cm². Also sind 3 m² = 3 · 10 000 cm² = 30 000 cm².",
     "options": [
-      "cm",
-      "cm²",
-      "cm³",
-      "m"
+      "300 cm²",
+      "3 000 cm²",
+      "30 000 cm²",
+      "300 000 cm²"
     ],
-    "question": "In welcher Einheit misst man Flächeninhalte?",
+    "question": "Wie viele Quadratzentimeter sind 3 m²?",
     "topic": "Einheiten"
   },
   {
     "correct": 1,
-    "explanation": "Winkelsumme Dreieck = immer 180°. Beweis: Winkel eines Dreiecks an einer Geraden anlegen → gestreckte Linie = 180°.",
+    "explanation": "Die Winkelsumme im Dreieck beträgt immer 180°. Der dritte Winkel ist also 180° − (40° + 65°) = 180° − 105° = 75°.",
     "options": [
-      "90°",
-      "180°",
-      "270°",
-      "360°"
+      "55°",
+      "75°",
+      "85°",
+      "105°"
     ],
-    "question": "Wie viele Grad hat die Winkelsumme im Dreieck?",
+    "question": "In einem Dreieck sind zwei Winkel 40° und 65° groß. Wie groß ist der dritte Winkel?",
     "topic": "Dreieck"
   },
   {
     "correct": 1,
-    "explanation": "Stumpfwinklig: ein Winkel > 90°. Dann sind die anderen beiden Winkel automatisch spitz (Winkelsumme = 180°).",
+    "explanation": "Stumpfwinklig heißt: ein Winkel ist größer als 90°. Die beiden anderen Winkel sind dann automatisch spitz, weil die Winkelsumme 180° beträgt.",
     "options": [
-      "Ein Dreieck mit drei spitzen Winkeln",
+      "Ein Dreieck mit einem Winkel von genau 90°",
       "Ein Dreieck mit einem Winkel größer als 90°",
-      "Ein Dreieck mit einem rechten Winkel",
-      "Ein gleichseitiges Dreieck"
+      "Ein Dreieck mit drei gleich großen Winkeln",
+      "Ein Dreieck mit drei Winkeln kleiner als 90°"
     ],
     "question": "Was ist ein stumpfwinkliges Dreieck?",
     "topic": "Dreieck"
   },
   {
     "correct": 1,
-    "explanation": "Diagonale: Verbindungslinie gegenüberliegender Ecken. Im Rechteck sind beide Diagonalen gleich lang. Im Quadrat stehen sie senkrecht aufeinander.",
+    "explanation": "Eine Diagonale verbindet zwei nicht benachbarte, also gegenüberliegende Ecken. Ein Rechteck hat zwei Diagonalen, die gleich lang sind und sich halbieren.",
     "options": [
-      "Die Seiten des Rechtecks",
-      "Eine gerade Linie, die zwei nicht benachbarte Ecken verbindet",
-      "Die Höhe des Rechtecks",
-      "Die Breite des Rechtecks"
+      "Eine der vier Seiten des Rechtecks",
+      "Eine Strecke zwischen zwei gegenüberliegenden Ecken",
+      "Eine Strecke zwischen den Mitten zweier Seiten",
+      "Eine Strecke zwischen zwei benachbarten Ecken"
     ],
-    "question": "Was ist die Diagonale eines Rechtecks?",
+    "question": "Was ist eine Diagonale eines Rechtecks?",
     "topic": "Rechteck"
   },
   {
     "correct": 2,
-    "explanation": "Durchmesser = 2 × Radius = 2 × 5 = 10 cm. Der Durchmesser geht durch den Mittelpunkt und verbindet zwei Punkte des Kreises.",
+    "explanation": "Der Durchmesser ist doppelt so lang wie der Radius: d = 2 · r = 2 · 5 cm = 10 cm. Er verläuft durch den Mittelpunkt des Kreises.",
     "options": [
-      "5 cm",
       "2,5 cm",
+      "5 cm",
       "10 cm",
       "25 cm"
     ],
-    "question": "Was ist der Durchmesser eines Kreises mit Radius 5 cm?",
+    "question": "Wie lang ist der Durchmesser eines Kreises mit dem Radius 5 cm?",
     "topic": "Kreis"
   },
   {
     "correct": 1,
-    "explanation": "Trapez: genau ein Paar paralleler Seiten (die 'Grundlinien'). Parallelogramm hat zwei Paare paralleler Seiten.",
+    "explanation": "Ein Viereck mit genau einem Paar paralleler Seiten heißt Trapez. Beim Parallelogramm, beim Rechteck und bei der Raute sind dagegen beide Seitenpaare parallel.",
     "options": [
       "Parallelogramm",
       "Trapez",
       "Raute",
       "Rechteck"
     ],
-    "question": "Wie nennt man einen Viereck mit genau einem Paar paralleler Seiten?",
+    "question": "Wie nennt man ein Viereck mit genau einem Paar paralleler Seiten?",
     "topic": "Vierecke"
   },
   {
     "correct": 1,
-    "explanation": "Zylinder: 2 kreisförmige Grundflächen + 1 Mantelfläche. Beispiele: Dose, Rolle Klopapier.",
+    "explanation": "Ein Zylinder besteht aus zwei gleich großen kreisförmigen Grundflächen und einer gebogenen Mantelfläche. Beispiele: Konservendose, Trinkglas, Rolle.",
     "options": [
-      "Ein Körper mit zwei quadratischen Grundflächen",
-      "Ein runder Körper mit zwei kreisförmigen Grundflächen und einer Mantelfläche",
-      "Ein Körper mit 6 Flächen",
-      "Ein Körper mit einer Spitze"
+      "Ein Körper aus zwei quadratischen Flächen und vier Seiten",
+      "Ein Körper aus zwei Kreisflächen und einer Mantelfläche",
+      "Ein Körper aus einer Kreisfläche und einer Spitze",
+      "Ein Körper aus sechs gleich großen quadratischen Flächen"
     ],
-    "question": "Was ist ein Zylinder?",
+    "question": "Wie ist ein Zylinder aufgebaut?",
     "topic": "Körper"
   },
   {
     "correct": 1,
-    "explanation": "Flächeninhalt Dreieck = (Grundlinie × Höhe) ÷ 2 = (10 × 6) ÷ 2 = 60 ÷ 2 = 30 cm².",
+    "explanation": "Flächeninhalt eines Dreiecks = (Grundseite · Höhe) : 2 = (10 cm · 6 cm) : 2 = 60 cm² : 2 = 30 cm².",
     "options": [
-      "60 cm²",
-      "30 cm²",
       "16 cm²",
-      "20 cm²"
+      "30 cm²",
+      "32 cm²",
+      "60 cm²"
     ],
-    "question": "Was ist der Flächeninhalt eines Dreiecks mit Grundlinie 10 cm und Höhe 6 cm?",
+    "question": "Wie groß ist der Flächeninhalt eines Dreiecks mit der Grundseite 10 cm und der Höhe 6 cm?",
     "topic": "Dreieck"
   },
   {
     "correct": 1,
-    "explanation": "Gerade: unendlich in beide Richtungen. Strahl: hat einen Anfangspunkt, endet nicht. Strecke: hat Anfangs- und Endpunkt.",
+    "explanation": "Eine Gerade ist nach beiden Seiten unbegrenzt. Eine Strecke hat Anfangs- und Endpunkt, ein Strahl (eine Halbgerade) nur einen Anfangspunkt.",
     "options": [
-      "Eine Linie, die an zwei Punkten endet",
-      "Eine unendlich lange, gerade Linie ohne Anfang und Ende",
-      "Ein Strahl mit einem Anfangspunkt",
-      "Ein Linienstück"
+      "Eine Linie mit einem Anfangs- und einem Endpunkt",
+      "Eine Linie ohne Anfang und Ende in beide Richtungen",
+      "Eine Linie mit einem Anfangspunkt, aber ohne Ende",
+      "Eine gekrümmte Linie zwischen zwei festen Punkten"
     ],
     "question": "Was ist eine Gerade?",
     "topic": "Geometrische Grundbegriffe"
   },
   {
     "correct": 1,
-    "explanation": "Sechseck (Hexagon): 6 Ecken und 6 Seiten. Hexagon stammt vom griechischen 'hex' (sechs). Beispiel: Bienenwaben.",
+    "explanation": "Von jeder der 6 Ecken gehen Diagonalen zu den 3 nicht benachbarten Ecken: 6 · 3 = 18. Da jede Diagonale dabei doppelt gezählt wird, sind es 18 : 2 = 9 Diagonalen.",
     "options": [
-      "5",
       "6",
-      "7",
-      "8"
+      "9",
+      "12",
+      "15"
     ],
-    "question": "Wie viele Ecken hat ein Sechseck (Hexagon)?",
+    "question": "Wie viele Diagonalen kann man in einem Sechseck einzeichnen?",
     "topic": "Vielecke"
   },
   {
     "correct": 1,
-    "explanation": "Kongruenz: Figuren die sich durch Verschiebung, Drehung oder Spiegelung zur Deckung bringen lassen. Kongruent ≠ ähnlich (ähnlich heißt nur gleiche Form).",
+    "explanation": "Kongruent heißt deckungsgleich: Die Figuren stimmen in Form und Größe überein und lassen sich durch Verschieben, Drehen oder Spiegeln zur Deckung bringen. Ähnliche Figuren haben nur die gleiche Form.",
     "options": [
-      "Ähnlich aber unterschiedlich groß",
-      "Deckungsgleich – zwei Figuren sind kongruent, wenn sie gleiche Form und gleiche Größe haben",
-      "Spiegelbildlich",
-      "Vergrößert"
+      "Sie haben die gleiche Form, aber verschiedene Größen",
+      "Sie haben die gleiche Form und die gleiche Größe",
+      "Sie haben den gleichen Umfang, aber andere Formen",
+      "Sie haben die gleiche Lage im Koordinatensystem"
     ],
-    "question": "Was bedeutet kongruent?",
+    "question": "Was bedeutet es, wenn zwei Figuren kongruent sind?",
     "topic": "Kongruenz"
   },
   {
-    "correct": 1,
-    "explanation": "Koordinatensystem: Punkt P(3; 5) bedeutet x=3 (rechts), y=5 (oben). Schnittpunkt der Achsen = Ursprung O(0;0).",
+    "correct": 0,
+    "explanation": "Bei der Spiegelung an der y-Achse bleibt die y-Koordinate gleich, die x-Koordinate wechselt das Vorzeichen. Aus P(3 | 5) wird also P'(–3 | 5).",
     "options": [
-      "Ein Kompass",
-      "Ein System aus zwei senkrecht aufeinander stehenden Zahlengeraden (x-Achse, y-Achse) zur Ortsbestimmung von Punkten",
-      "Ein Lineal",
-      "Eine Tabelle"
+      "(–3 | 5)",
+      "(3 | –5)",
+      "(–3 | –5)",
+      "(5 | 3)"
     ],
-    "question": "Was ist ein Koordinatensystem?",
+    "question": "Der Punkt P(3 | 5) wird an der y-Achse gespiegelt. Welche Koordinaten hat der Bildpunkt P'?",
     "topic": "Koordinatensystem"
   },
   {
     "correct": 1,
-    "explanation": "2. Quadrant: x negativ, y positiv (links oben). 1. Quadrant: x,y positiv. 3. Quadrant: x,y negativ. 4. Quadrant: x positiv, y negativ.",
+    "explanation": "Im 2. Quadranten ist die x-Koordinate negativ und die y-Koordinate positiv (links oben). Im 1. Quadranten sind beide positiv, im 3. beide negativ, im 4. ist x positiv und y negativ.",
     "options": [
       "1. Quadrant",
       "2. Quadrant",
       "3. Quadrant",
       "4. Quadrant"
     ],
-    "question": "In welchem Quadrant liegt der Punkt P(–2; 3)?",
+    "question": "In welchem Quadranten liegt der Punkt P(–2 | 3)?",
     "topic": "Koordinatensystem"
   },
   {
     "correct": 1,
-    "explanation": "Gleichseitiges Dreieck: alle 3 Seiten gleich lang. Umfang = 3 × 8 = 24 cm.",
+    "explanation": "Auf die beiden gleich langen Schenkel entfallen 26 cm − 8 cm = 18 cm. Ein Schenkel ist also 18 cm : 2 = 9 cm lang.",
     "options": [
-      "16 cm",
-      "24 cm",
-      "32 cm",
-      "8 cm"
+      "8 cm",
+      "9 cm",
+      "13 cm",
+      "18 cm"
     ],
-    "question": "Was ist der Umfang eines gleichseitigen Dreiecks mit Seitenlänge 8 cm?",
+    "question": "Ein gleichschenkliges Dreieck hat einen Umfang von 26 cm, die Basis ist 8 cm lang. Wie lang ist ein Schenkel?",
     "topic": "Dreieck"
   },
   {
-    "correct": 1,
-    "explanation": "Spiegelsymmetrie: Achsensymmetrie. Beispiele: Buchstabe A, Schmetterling, Herz. Die Spiegelachse teilt die Figur in zwei gleiche Hälften.",
+    "correct": 0,
+    "explanation": "Ein schiefes Parallelogramm lässt sich um 180° um den Diagonalenschnittpunkt drehen und deckt sich dann selbst, hat aber keine Symmetrieachse. Rechteck und Raute sind zusätzlich achsensymmetrisch, das gleichschenklige Trapez ist nur achsensymmetrisch.",
     "options": [
-      "Wenn eine Figur gedreht werden kann",
-      "Wenn eine Figur durch eine Achse so gespiegelt werden kann, dass beide Hälften deckungsgleich sind",
-      "Wenn eine Figur mehrfach vorkommt",
-      "Wenn eine Figur verkleinert wird"
+      "Ein Parallelogramm, das weder Rechteck noch Raute ist",
+      "Ein Rechteck, das kein Quadrat ist",
+      "Eine Raute, die kein Quadrat ist",
+      "Ein gleichschenkliges Trapez"
     ],
-    "question": "Was ist Spiegelsymmetrie?",
+    "question": "Welche Figur ist punktsymmetrisch, aber nicht achsensymmetrisch?",
     "topic": "Symmetrie"
   },
   {
     "correct": 1,
-    "explanation": "Volumen Quader = Länge × Breite × Höhe = 5 × 3 × 4 = 60 cm³.",
+    "explanation": "Volumen eines Quaders = Länge · Breite · Höhe = 5 cm · 3 cm · 4 cm = 60 cm³.",
     "options": [
       "24 cm³",
       "60 cm³",
-      "12 cm³",
-      "47 cm³"
+      "94 cm³",
+      "120 cm³"
     ],
-    "question": "Was ist das Volumen eines Quaders mit L=5 cm, B=3 cm, H=4 cm?",
+    "question": "Wie groß ist das Volumen eines Quaders mit den Kantenlängen 5 cm, 3 cm und 4 cm?",
     "topic": "Körper"
   },
   {
     "correct": 1,
-    "explanation": "Maßstab 1:100: 1 cm auf der Karte = 100 cm = 1 m in der Realität. Stadtpläne, Baupläne, Landkarten nutzen Maßstäbe.",
+    "explanation": "Der Maßstab 1:100 bedeutet: 1 cm auf dem Plan entspricht 100 cm in Wirklichkeit. Also gilt 7 cm · 100 = 700 cm = 7 m.",
     "options": [
-      "Eine ungenaue Skizze",
-      "Eine verkleinerte oder vergrößerte Darstellung eines Objekts in einem bestimmten Verhältnis (z.B. 1:100 bedeutet 1 cm = 1 m in der Realität)",
-      "Eine Freihandzeichnung",
-      "Eine Körperdarstellung"
+      "0,7 m",
+      "7 m",
+      "70 m",
+      "700 m"
     ],
-    "question": "Was ist eine Maßstabszeichnung?",
+    "question": "Auf einem Bauplan im Maßstab 1:100 ist eine Wand 7 cm lang. Wie lang ist die Wand in Wirklichkeit?",
     "topic": "Maßstab"
   },
   {
     "correct": 1,
-    "explanation": "Achsensymmetrie: Spiegelachse = Symmetrielinie. Spiegelt man die Figur an dieser Achse, entsteht dieselbe Figur. Reguläre Vielecke: viele Symmetrieachsen (Quadrat: 4, gleichseitiges Dreieck: 3).",
+    "explanation": "Eine Figur ist achsensymmetrisch, wenn eine Spiegelachse sie in zwei deckungsgleiche Hälften teilt. Beispiele: gleichschenkliges Dreieck, Buchstabe A, Herzform.",
     "options": [
-      "Eine Drehung",
-      "Eine Spiegelung: Eine Figur ist achsensymmetrisch, wenn sie durch eine Spiegelachse in zwei deckungsgleiche Hälften geteilt werden kann – z.B. Buchstabe A, Herz, gleichschenkliges Dreieck",
-      "Eine Verschiebung",
-      "Eine Streckung"
+      "Eine Drehung der Figur um einen Punkt in ihrer Mitte",
+      "Eine Spiegelung an einer Achse in zwei gleiche Hälften",
+      "Eine Verschiebung der Figur entlang einer geraden Linie",
+      "Eine Vergrößerung der Figur von einem festen Punkt aus"
     ],
-    "question": "Was ist Achsensymmetrie?",
+    "question": "Was beschreibt die Achsensymmetrie einer Figur?",
     "topic": "Symmetrie"
   },
   {
     "correct": 1,
-    "explanation": "Der Nenner zeigt immer an, in wie viele gleich große Teile ein Ganzes aufgeteilt wurde. Die obere Zahl (Zähler) zeigt an, wie viele dieser Teile gemeint sind.",
+    "explanation": "Umfang eines Rechtecks = 2 · (Länge + Breite) = 2 · (12 cm + 7 cm) = 2 · 19 cm = 38 cm.",
     "options": [
-      "Die Gesamtzahl der Teile, die man bei einer Bruchrechnung zusammenzählt.",
-      "Die Anzahl der gleich großen Teile, in die das Ganze geteilt wurde.",
-      "Die Anzahl der Teile, die man bereits vom Ganzen genommen oder verbraucht hat.",
-      "Die obere Zahl des Bruches, die angibt, wie viele Teile gemeint sind."
+      "19 cm",
+      "38 cm",
+      "76 cm",
+      "84 cm"
     ],
-    "question": "Was bedeutet der Nenner (die untere Zahl) in einem Bruch wie 3/5?",
-    "topic": "Bruchbegriffe verstehen (Nenner)"
-  },
-  {
-    "correct": 0,
-    "explanation": "Die Pizza wurde in 8 gleiche Teile geteilt (Nenner = 8). Anna hat 3 dieser Teile gegessen (Zähler = 3).",
-    "options": [
-      "3/8",
-      "8/3",
-      "3/11",
-      "5/8"
-    ],
-    "question": "Eine Pizza wird in 8 gleich große Stücke geschnitten. Anna isst 3 Stücke davon. Welcher Bruch beschreibt den Anteil, den Anna gegessen hat?",
-    "topic": "Brüche benennen und darstellen"
+    "question": "Ein Rechteck ist 12 cm lang und 7 cm breit. Wie groß ist sein Umfang?",
+    "topic": "Rechteck"
   },
   {
     "correct": 1,
-    "explanation": "Die Hälfte bedeutet 1/2. Um die Hälfte von 24 zu finden, teilst du 24 durch 2. Das Ergebnis ist 12.",
+    "explanation": "Flächeninhalt = Länge · Breite, also Länge = Flächeninhalt : Breite = 48 cm² : 6 cm = 8 cm.",
     "options": [
-      "6",
-      "12",
-      "18",
-      "24"
+      "6 cm",
+      "8 cm",
+      "18 cm",
+      "42 cm"
     ],
-    "question": "Eine Klasse hat 24 Schüler. Die Hälfte der Schüler sind Mädchen. Wie viele Mädchen sind in der Klasse?",
-    "topic": "Bruchteile von Größen berechnen"
-  },
-  {
-    "correct": 0,
-    "explanation": "Wenn der Zähler gleich ist (hier 1), dann ist der Bruch mit dem größeren Nenner (hier 4) der kleinere Bruch, weil das Ganze in mehr Teile geteilt wurde und die einzelnen Teile somit kleiner sind.",
-    "options": [
-      "1/4",
-      "1/2",
-      "Sie sind gleich groß.",
-      "Das kann man nicht eindeutig sagen."
-    ],
-    "question": "Welcher Bruch ist kleiner: 1/4 oder 1/2?",
-    "topic": "Brüche vergleichen"
-  },
-  {
-    "correct": 1,
-    "explanation": "Gleichwertige Brüche erhältst du, indem du Zähler und Nenner mit derselben Zahl multiplizierst oder dividierst. Wenn du 1/3 mit 2 erweiterst (Zähler × 2, Nenner × 2), erhältst du 2/6.",
-    "options": [
-      "2/3",
-      "2/6",
-      "3/6",
-      "1/6"
-    ],
-    "question": "Welcher Bruch ist gleichwertig zu 1/3?",
-    "topic": "Gleichwertige Brüche (Erweitern)"
+    "question": "Ein Rechteck hat einen Flächeninhalt von 48 cm² und ist 6 cm breit. Wie lang ist es?",
+    "topic": "Rechteck"
   },
   {
     "correct": 2,
-    "explanation": "Um Brüche mit gleichem Nenner zu addieren, addierst du nur die Zähler und behältst den Nenner bei: 1/8 + 3/8 = (1+3)/8 = 4/8.",
+    "explanation": "Ein Quadrat hat 4 gleich lange Seiten: 36 cm : 4 = 9 cm. Der Flächeninhalt ist dann 9 cm · 9 cm = 81 cm².",
     "options": [
-      "4/16",
-      "3/8",
-      "4/8",
-      "1/24"
+      "36 cm²",
+      "72 cm²",
+      "81 cm²",
+      "144 cm²"
     ],
-    "question": "Tim isst 1/8 eines Kuchens und Lea isst weitere 3/8 des gleichen Kuchens. Welchen Anteil des Kuchens haben sie zusammen gegessen?",
-    "topic": "Brüche addieren (gleicher Nenner)"
-  },
-  {
-    "correct": 1,
-    "explanation": "Die ganze Tafel Schokolade entspricht 10/10. Wenn 3/10 gegessen wurden, rechnest du 10/10 - 3/10 = (10-3)/10 = 7/10.",
-    "options": [
-      "3/10",
-      "7/10",
-      "10/7",
-      "13/10"
-    ],
-    "question": "Eine Tafel Schokolade besteht aus 10 Rippchen. Es wurden bereits 3/10 der Schokolade gegessen. Welcher Bruchteil der Schokolade ist noch übrig?",
-    "topic": "Brüche subtrahieren (gleicher Nenner)"
-  },
-  {
-    "correct": 3,
-    "explanation": "Ein ganzer Krug ist 5/5 gefüllt. Wenn bereits 1/5 gefüllt ist, fehlen noch 5/5 - 1/5 = 4/5, um ihn ganz zu füllen.",
-    "options": [
-      "1/5",
-      "2/5",
-      "3/5",
-      "4/5"
-    ],
-    "question": "Ein Saftkrug ist zu 1/5 gefüllt. Um den Krug ganz zu füllen, welchen Bruchteil müsste man noch hinzufügen?",
-    "topic": "Brüche zum Ganzen ergänzen"
-  },
-  {
-    "correct": 1,
-    "explanation": "Der Nenner gibt an, in wie viele gleich große Teile ein Ganzes zerlegt wurde. Er steht unter dem Bruchstrich.",
-    "options": [
-      "Die Gesamtanzahl der Teile, die beim Rechnen mit Brüchen zusammenkommen.",
-      "Die Anzahl der gleich großen Teile, aus denen das Ganze besteht.",
-      "Die Anzahl der Teile, die man insgesamt vom Ganzen genommen oder verbraucht hat.",
-      "Das Ergebnis, wenn man den Zähler durch die Gesamtzahl der Teile teilt."
-    ],
-    "question": "Was zeigt der Nenner (die Zahl unter dem Bruchstrich) eines Bruches an?",
-    "topic": "Grundverständnis Bruch – Nenner"
-  },
-  {
-    "correct": 1,
-    "explanation": "Die Tafel hat 10 Reihen (Nenner). Lisa isst 3 Reihen (Zähler). Der Anteil ist also 3/10.",
-    "options": [
-      "10/3",
-      "3/10",
-      "7/10",
-      "1/3"
-    ],
-    "question": "Eine Tafel Schokolade hat insgesamt 10 Reihen. Lisa isst 3 Reihen. Welcher Bruch beschreibt den Anteil der Schokolade, den Lisa gegessen hat?",
-    "topic": "Bruchdarstellung"
-  },
-  {
-    "correct": 0,
-    "explanation": "Je kleiner der Nenner bei gleichem Zähler ist, desto größer sind die einzelnen Teile und somit der Bruchwert. Ein halbes Stück ist größer als ein Drittel, Viertel oder Fünftel.",
-    "options": [
-      "1/2",
-      "1/3",
-      "1/4",
-      "1/5"
-    ],
-    "question": "Welcher der folgenden Brüche ist der größte?",
-    "topic": "Brüche vergleichen"
+    "question": "Ein Quadrat hat einen Umfang von 36 cm. Wie groß ist sein Flächeninhalt?",
+    "topic": "Quadrat"
   },
   {
     "correct": 2,
-    "explanation": "Um einen gleichwertigen Bruch zu finden, kannst du Zähler und Nenner mit derselben Zahl multiplizieren (erweitern). Wenn du 1/2 mit 2 erweiterst, erhältst du (1*2)/(2*2) = 2/4.",
+    "explanation": "Ein Würfel hat 6 gleich große quadratische Flächen: 5 cm · 5 cm = 25 cm² je Fläche, also 6 · 25 cm² = 150 cm² Oberfläche.",
     "options": [
-      "2/3",
-      "3/4",
-      "2/4",
-      "1/4"
+      "25 cm²",
+      "125 cm²",
+      "150 cm²",
+      "300 cm²"
     ],
-    "question": "Welcher Bruch ist gleichwertig (hat den gleichen Wert) wie 1/2?",
-    "topic": "Erweitern von Brüchen / Gleichwertige Brüche"
-  },
-  {
-    "correct": 0,
-    "explanation": "Beim Addieren von Brüchen mit gleichem Nenner addiert man nur die Zähler und behält den Nenner bei: 2/7 + 3/7 = (2+3)/7 = 5/7.",
-    "options": [
-      "5/7",
-      "1/7",
-      "5/14",
-      "6/7"
-    ],
-    "question": "Marie hat 2/7 einer Pizza gegessen. Ihr Bruder isst danach noch 3/7 derselben Pizza. Welchen Anteil der Pizza haben sie zusammen gegessen?",
-    "topic": "Brüche addieren"
-  },
-  {
-    "correct": 1,
-    "explanation": "Um ein Viertel von 20 zu finden, teilst du 20 durch 4: 20 : 4 = 5. Es sind 5 Mädchen in der Klasse.",
-    "options": [
-      "4",
-      "5",
-      "10",
-      "20"
-    ],
-    "question": "In einer Klasse sind 20 Schüler. 1/4 (ein Viertel) der Schüler sind Mädchen. Wie viele Mädchen sind in der Klasse?",
-    "topic": "Bruchteil einer Menge"
-  },
-  {
-    "correct": 1,
-    "explanation": "Bei Brüchen mit gleichem Zähler ist der Bruch mit dem größten Nenner der kleinste. Ein Zehntel ist kleiner als ein Fünftel, und ein Fünftel ist kleiner als ein Halbes. Also: 1/10 < 1/5 < 1/2.",
-    "options": [
-      "1/2, 1/5, 1/10",
-      "1/10, 1/5, 1/2",
-      "1/5, 1/10, 1/2",
-      "1/2, 1/10, 1/5"
-    ],
-    "question": "Ordne die folgenden Brüche der Größe nach, beginnend mit dem kleinsten Bruch: 1/5, 1/2, 1/10.",
-    "topic": "Brüche ordnen"
+    "question": "Wie groß ist die Oberfläche eines Würfels mit der Kantenlänge 5 cm?",
+    "topic": "Körper"
   },
   {
     "correct": 2,
-    "explanation": "Um 3/4 von 12 Stücken zu berechnen, teilst du die Gesamtanzahl (12) durch den Nenner (4) und multiplizierst das Ergebnis mit dem Zähler (3): (12 : 4) * 3 = 3 * 3 = 9 Stücke.",
+    "explanation": "Ein Würfel hat 12 gleich lange Kanten: 12 · 4 cm = 48 cm.",
     "options": [
-      "3 Stücke",
-      "4 Stücke",
-      "9 Stücke",
-      "12 Stücke"
+      "16 cm",
+      "24 cm",
+      "48 cm",
+      "64 cm"
     ],
-    "question": "Ein Kuchen wurde in 12 gleich große Stücke geteilt. Wenn noch 3/4 des Kuchens übrig sind, wie viele Stücke sind das?",
-    "topic": "Bruch als Teil eines Ganzen / Sachaufgabe"
+    "question": "Wie lang sind alle Kanten eines Würfels mit der Kantenlänge 4 cm zusammen?",
+    "topic": "Körper"
+  },
+  {
+    "correct": 2,
+    "explanation": "Winkel zwischen 90° und 180° heißen stumpf. Kleiner als 90° ist spitz, genau 90° ist ein rechter Winkel, größer als 180° ist überstumpf.",
+    "options": [
+      "spitzer Winkel",
+      "rechter Winkel",
+      "stumpfer Winkel",
+      "überstumpfer Winkel"
+    ],
+    "question": "Wie nennt man einen Winkel von 135°?",
+    "topic": "Winkel"
+  },
+  {
+    "correct": 1,
+    "explanation": "Ein gestreckter Winkel misst 180°. Der zweite Winkel ist also 180° − 115° = 65°.",
+    "options": [
+      "45°",
+      "65°",
+      "75°",
+      "245°"
+    ],
+    "question": "Zwei Winkel ergänzen sich zu einem gestreckten Winkel. Einer davon misst 115°. Wie groß ist der andere?",
+    "topic": "Winkel"
+  },
+  {
+    "correct": 1,
+    "explanation": "Das Volumen beträgt 10 cm · 10 cm · 10 cm = 1 000 cm³. Und 1 000 cm³ entsprechen genau 1 Liter.",
+    "options": [
+      "0,1 Liter",
+      "1 Liter",
+      "10 Liter",
+      "100 Liter"
+    ],
+    "question": "Wie viel Liter passen in einen würfelförmigen Behälter mit der Kantenlänge 10 cm?",
+    "topic": "Einheiten"
+  },
+  {
+    "correct": 2,
+    "explanation": "Ein Quader hat drei Paare gleich großer Flächen: 6·4 = 24, 6·2 = 12 und 4·2 = 8. Oberfläche = 2 · (24 + 12 + 8) cm² = 2 · 44 cm² = 88 cm².",
+    "options": [
+      "44 cm²",
+      "48 cm²",
+      "88 cm²",
+      "96 cm²"
+    ],
+    "question": "Wie groß ist die Oberfläche eines Quaders mit den Kantenlängen 6 cm, 4 cm und 2 cm?",
+    "topic": "Körper"
+  },
+  {
+    "correct": 2,
+    "explanation": "In 60 Minuten legt der Minutenzeiger 360° zurück, das sind 360° : 60 = 6° pro Minute. In 10 Minuten sind es 10 · 6° = 60°.",
+    "options": [
+      "10°",
+      "30°",
+      "60°",
+      "72°"
+    ],
+    "question": "Um wie viel Grad dreht sich der Minutenzeiger einer Uhr in 10 Minuten?",
+    "topic": "Winkel"
+  },
+  {
+    "correct": 1,
+    "explanation": "Das ganze Rechteck hat 8 cm · 5 cm = 40 cm². Das ausgeschnittene Quadrat hat 3 cm · 3 cm = 9 cm². Es bleiben 40 cm² − 9 cm² = 31 cm² übrig.",
+    "options": [
+      "9 cm²",
+      "31 cm²",
+      "37 cm²",
+      "40 cm²"
+    ],
+    "question": "Aus einem Rechteck mit den Seiten 8 cm und 5 cm wird an einer Ecke ein Quadrat mit der Seite 3 cm ausgeschnitten. Wie groß ist die Restfläche?",
+    "topic": "Zusammengesetzte Flächen"
+  },
+  {
+    "correct": 1,
+    "explanation": "In jedem Parallelogramm sind gegenüberliegende Seiten parallel und gleich lang. Gleich lange Diagonalen hat nur das Rechteck, vier gleich lange Seiten nur die Raute, vier rechte Winkel nur das Rechteck.",
+    "options": [
+      "Alle vier Seiten sind genau gleich lang",
+      "Gegenüberliegende Seiten sind parallel und gleich lang",
+      "Alle vier Innenwinkel sind rechte Winkel",
+      "Die beiden Diagonalen sind genau gleich lang"
+    ],
+    "question": "Welche Eigenschaft hat wirklich jedes Parallelogramm?",
+    "topic": "Vierecke"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die quadratische Grundfläche liefert 4 Ecken, dazu kommt die Spitze: 5 Ecken. Kanten: 4 an der Grundfläche und 4 zur Spitze, also 8. Flächen: die Grundfläche und 4 Dreiecke, also 5.",
+    "options": [
+      "5 Ecken, 8 Kanten, 5 Flächen",
+      "4 Ecken, 6 Kanten, 4 Flächen",
+      "5 Ecken, 6 Kanten, 5 Flächen",
+      "6 Ecken, 9 Kanten, 5 Flächen"
+    ],
+    "question": "Wie viele Ecken, Kanten und Flächen hat eine Pyramide mit quadratischer Grundfläche?",
+    "topic": "Körper"
+  },
+  {
+    "correct": 1,
+    "explanation": "250 m sind 25 000 cm. Beim Maßstab 1:5000 wird durch 5000 geteilt: 25 000 cm : 5 000 = 5 cm.",
+    "options": [
+      "0,5 cm",
+      "5 cm",
+      "50 cm",
+      "500 cm"
+    ],
+    "question": "Ein Weg ist in Wirklichkeit 250 m lang. Wie lang ist er auf einer Karte im Maßstab 1:5000?",
+    "topic": "Maßstab"
+  },
+  {
+    "correct": 1,
+    "explanation": "Die Seite von A nach B ist 6 − 1 = 5 Einheiten lang, die Seite von B nach C ist 4 − 1 = 3 Einheiten lang. Flächeninhalt = 5 · 3 = 15 Flächeneinheiten.",
+    "options": [
+      "8 FE",
+      "15 FE",
+      "16 FE",
+      "20 FE"
+    ],
+    "question": "Die Punkte A(1 | 1), B(6 | 1), C(6 | 4) und D(1 | 4) bilden ein Rechteck. Wie groß ist sein Flächeninhalt in Flächeneinheiten (FE)?",
+    "topic": "Koordinatensystem"
+  },
+  {
+    "correct": 1,
+    "explanation": "Aus Flächeninhalt = (Grundseite · Höhe) : 2 folgt Höhe = (2 · Flächeninhalt) : Grundseite = (2 · 24 cm²) : 8 cm = 48 cm² : 8 cm = 6 cm.",
+    "options": [
+      "3 cm",
+      "6 cm",
+      "12 cm",
+      "16 cm"
+    ],
+    "question": "Ein Dreieck hat einen Flächeninhalt von 24 cm² und eine Grundseite von 8 cm. Wie hoch ist es?",
+    "topic": "Dreieck"
   }
 ]
