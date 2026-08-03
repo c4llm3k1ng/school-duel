@@ -149,19 +149,25 @@ for (const file of files) {
   // Gefunden in k12 Geometrie: 27 von 28 Fragen so gebaut, also ohne jedes
   // Fachwissen loesbar. Das ueberlebt auch shuffleOptions(), denn gemischt wird
   // die Position, nicht die Laenge.
-  let laengste = 0, zaehlbar = 0;
+  // Beide Richtungen pruefen. Nur auf "laengste" zu testen reicht nicht:
+  // Beim Entschaerfen einer erratbaren Datei hat ein Agent die richtige Option
+  // so stark gekuerzt, dass sie in 78% der Faelle die KUERZESTE war - dasselbe
+  // Ratemuster, nur umgedreht.
+  let laengste = 0, kuerzeste = 0, zaehlbar = 0;
   qs.forEach(q => {
     if (!Array.isArray(q.options) || q.options.length !== 4) return;
     if (!Number.isInteger(q.correct) || q.correct < 0 || q.correct > 3) return;
     zaehlbar++;
     const l = q.options.map(o => String(o).length);
-    const max = Math.max(...l);
+    const max = Math.max(...l), min = Math.min(...l);
     if (l[q.correct] === max && l.filter(x => x === max).length === 1) laengste++;
+    if (l[q.correct] === min && l.filter(x => x === min).length === 1) kuerzeste++;
   });
   if (zaehlbar >= 8) {
-    const quote = laengste / zaehlbar;
     // 25% waere Zufall. Ab 70% ist die Datei faktisch erratbar.
-    if (quote >= 0.7) f.ratbar.push(`${Math.round(quote * 100)}% der Fragen: richtige Antwort ist die laengste (Zufall waere 25%)`);
+    const ql = laengste / zaehlbar, qk = kuerzeste / zaehlbar;
+    if (ql >= 0.7) f.ratbar.push(`${Math.round(ql * 100)}% der Fragen: richtige Antwort ist die laengste (Zufall waere 25%)`);
+    if (qk >= 0.7) f.ratbar.push(`${Math.round(qk * 100)}% der Fragen: richtige Antwort ist die KUERZESTE (Zufall waere 25%)`);
   }
 
   const counts = Object.entries(f).filter(([, v]) => v.length);
