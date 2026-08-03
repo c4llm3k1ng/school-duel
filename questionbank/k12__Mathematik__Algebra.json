@@ -1,391 +1,391 @@
 [
   {
-    "correct": 1,
-    "explanation": "`log_2(8)` bedeutet, welche Potenz von 2 ergibt 8. Das ist `2^3 = 8`, also `log_2(8) = 3`. \n`log_3(1/9)` bedeutet, welche Potenz von 3 ergibt 1/9. Da `3^2 = 9`, ist `3^(-2) = 1/9`, also `log_3(1/9) = -2`. \nZusammen ergibt das `3 + (-2) = 1`.",
+    "correct": 0,
+    "explanation": "log₂(8) fragt: Welche Potenz von 2 ergibt 8? Wegen 2³ = 8 ist log₂(8) = 3. log₃(1/9) fragt: Welche Potenz von 3 ergibt 1/9? Wegen 3⁻² = 1/9 ist log₃(1/9) = -2. Zusammen ergibt das 3 + (-2) = 1.",
     "options": [
       "1",
       "-1",
       "5",
       "-5"
     ],
-    "question": "Welchen Wert hat der Ausdruck `log_2(8) + log_3(1/9)`?",
+    "question": "Welchen Wert hat der Ausdruck log₂(8) + log₃(1/9)?",
     "topic": "Logarithmengesetze"
   },
   {
     "correct": 0,
-    "explanation": "Wenn `x = -1` eine Nullstelle ist, kann man das Polynom durch `(x + 1)` dividieren. Mit Polynomdivision oder Horner-Schema erhält man: `(x^3 - 4x^2 + x + 6) / (x + 1) = x^2 - 5x + 6`. Die Nullstellen des quadratischen Polynoms `x^2 - 5x + 6 = 0` lassen sich mit der Mitternachtsformel (quadratische Lösungsformel) oder durch Faktorisierung finden. `(x - 2)(x - 3) = 0`, also sind die weiteren Nullstellen `x = 2` und `x = 3`.",
+    "explanation": "Weil x = -1 eine Nullstelle ist, ist (x + 1) ein Linearfaktor. Die Polynomdivision (x³ - 4x² + x + 6) : (x + 1) ergibt x² - 5x + 6. Faktorisieren liefert x² - 5x + 6 = (x - 2)(x - 3), also die weiteren Nullstellen x = 2 und x = 3. Ein Vorzeichenfehler bei der Division führt zu -2 und -3, eine falsche Zerlegung der 6 zu 1 und 6.",
     "options": [
       "Die anderen Nullstellen sind 2 und 3.",
       "Die anderen Nullstellen sind -2 und -3.",
-      "Das Polynom hat keine weiteren reellen Nullstellen.",
-      "Die anderen Nullstellen sind 1 und 6."
+      "Die anderen Nullstellen sind 1 und 6.",
+      "Die anderen Nullstellen sind -1 und -6."
     ],
-    "question": "Ein Polynom `P(x) = x^3 - 4x^2 + x + 6` hat eine Nullstelle bei `x = -1`. Welche der folgenden Aussagen über die anderen Nullstellen ist korrekt?",
+    "question": "Ein Polynom P(x) = x³ - 4x² + x + 6 hat eine Nullstelle bei x = -1. Welche Aussage über die anderen Nullstellen ist korrekt?",
     "topic": "Polynomdivision und Nullstellen"
   },
   {
     "correct": 0,
-    "explanation": "Zuerst fassen wir die Logarithmen zusammen: `log_10(x * (x - 3)) = 1`. Dann lösen wir die Gleichung durch Anwendung der Basis 10 auf beiden Seiten: `x * (x - 3) = 10^1`. Dies führt zu `x^2 - 3x = 10`, oder `x^2 - 3x - 10 = 0`. Mit der quadratischen Lösungsformel (`x = [-b ± sqrt(b^2 - 4ac)] / 2a`) erhalten wir `x = [3 ± sqrt((-3)^2 - 4*1*(-10))] / 2` = `[3 ± sqrt(9 + 40)] / 2` = `[3 ± sqrt(49)] / 2` = `[3 ± 7] / 2`. Dies ergibt `x_1 = (3 + 7) / 2 = 5` und `x_2 = (3 - 7) / 2 = -2`. Da der Logarithmus nur für positive Argumente definiert ist, muss `x > 0` und `x - 3 > 0` (also `x > 3`) gelten. Daher ist `x = -2` keine gültige Lösung. Die einzige gültige Lösung ist `x = 5`.",
+    "explanation": "Mit dem Logarithmengesetz für Summen wird daraus log₁₀(x·(x - 3)) = 1, also x(x - 3) = 10¹. Das führt auf x² - 3x - 10 = 0 mit x₁,₂ = (3 ± √(9 + 40))/2 = (3 ± 7)/2, also x₁ = 5 und x₂ = -2. Der Definitionsbereich verlangt x > 0 und x - 3 > 0, insgesamt also x > 3. Damit ist x = -2 eine Scheinlösung und es bleibt L = {5}.",
     "options": [
-      "x = 5",
-      "x = -2",
-      "x = 5 und x = -2",
-      "Die Gleichung hat keine reelle Lösung."
+      "L = {5}",
+      "L = {-2}",
+      "L = {-2; 5}",
+      "L = {} (keine gültige Lösung)"
     ],
-    "question": "Lösen Sie die Gleichung: `log_10(x) + log_10(x - 3) = 1`",
+    "question": "Bestimmen Sie die Lösungsmenge der Gleichung log₁₀(x) + log₁₀(x - 3) = 1.",
     "topic": "Logarithmusgleichungen"
   },
   {
-    "correct": 1,
-    "explanation": "Man kann 27 als Potenz von 3 schreiben: `27 = 3^3`. \nDie Gleichung wird zu `3^(2x-1) = 3^3`. \nDa die Basen gleich sind, müssen auch die Exponenten gleich sein: `2x - 1 = 3`. \nAddieren Sie 1 auf beiden Seiten: `2x = 4`. \nDividieren Sie durch 2: `x = 2`.",
+    "correct": 2,
+    "explanation": "Wegen 9ˣ = (3ˣ)² hilft die Substitution u = 3ˣ. Die Gleichung wird zu u² - 4u + 3 = 0 mit den Lösungen u₁ = 1 und u₂ = 3. Rücksubstitution: 3ˣ = 1 ergibt x = 0, und 3ˣ = 3 ergibt x = 1. Wer die Hilfsgrößen u₁ und u₂ bereits für die gesuchten x-Werte hält, erhält fälschlich 1 und 3.",
     "options": [
-      "x = 1",
-      "x = 2",
-      "x = 3",
-      "x = 4"
+      "x = 1 und x = 3",
+      "x = 0 und x = 3",
+      "x = 0 und x = 1",
+      "x = 1"
     ],
-    "question": "Lösen Sie die Gleichung: `3^(2x-1) = 27`",
+    "question": "Bestimmen Sie alle Lösungen der Gleichung 9ˣ - 4·3ˣ + 3 = 0.",
     "topic": "Exponentialgleichungen"
   },
   {
-    "correct": 2,
-    "explanation": "Das Produkt wird wie bei Binomen ausmultipliziert: \n`z_1 * z_2 = (2 + 3i) * (1 - 2i)` \n`= 2*1 + 2*(-2i) + 3i*1 + 3i*(-2i)` \n`= 2 - 4i + 3i - 6i^2` \nDa `i^2 = -1`, ersetzen wir `i^2`: \n`= 2 - i - 6(-1)` \n`= 2 - i + 6` \n`= 8 - i`.",
+    "correct": 0,
+    "explanation": "Ausmultiplizieren wie bei Binomen: (2 + 3i)(1 - 2i) = 2 - 4i + 3i - 6i². Wegen i² = -1 wird -6i² zu +6. Damit ergibt sich 2 + 6 - i = 8 - i. Wer i² = +1 setzt, kommt auf -4 - i; wer beim Zusammenfassen des Imaginärteils die Vorzeichen vertauscht, auf 8 + 7i.",
     "options": [
       "8 - i",
       "-4 + 7i",
       "8 + 7i",
       "-4 - i"
     ],
-    "question": "Gegeben sind die komplexen Zahlen `z_1 = 2 + 3i` und `z_2 = 1 - 2i`. Berechnen Sie das Produkt `z_1 * z_2`.",
+    "question": "Gegeben sind die komplexen Zahlen z₁ = 2 + 3i und z₂ = 1 - 2i. Berechnen Sie das Produkt z₁·z₂.",
     "topic": "Komplexe Zahlen"
   },
   {
     "correct": 1,
-    "explanation": "Ein lineares Gleichungssystem hat unendlich viele Lösungen, wenn die Gleichungen Vielfache voneinander sind, d.h. sie stellen dieselbe Gerade dar. Multiplizieren wir die erste Gleichung mit 2, erhalten wir `2(x + y) = 2*3`, also `2x + 2y = 6`. \nUm unendlich viele Lösungen zu haben, muss diese Gleichung identisch mit der zweiten Gleichung `2x + ay = 6` sein. \nVergleichen wir die Koeffizienten, sehen wir, dass `ay` gleich `2y` sein muss. Daraus folgt, dass `a = 2` sein muss. In diesem Fall sind beide Gleichungen identisch `2x + 2y = 6`.",
+    "explanation": "Unendlich viele Lösungen gibt es genau dann, wenn beide Gleichungen dieselbe Gerade beschreiben. Multipliziert man die erste Gleichung mit 2, entsteht 2x + 2y = 6. Damit das mit 2x + ay = 6 übereinstimmt, muss a = 2 gelten. Für jedes andere a schneiden sich die beiden Geraden in genau einem Punkt.",
     "options": [
       "a = 1",
       "a = 2",
       "a = 3",
       "a = 0"
     ],
-    "question": "Für welches `a` hat das lineare Gleichungssystem\n`x + y = 3`\n`2x + ay = 6`\nunendlich viele Lösungen?",
+    "question": "Für welches a hat das lineare Gleichungssystem x + y = 3 und 2x + ay = 6 unendlich viele Lösungen?",
     "topic": "Lineare Gleichungssysteme mit Parameter"
   },
   {
-    "correct": 0,
-    "explanation": "Um die Umkehrfunktion zu finden, setzt man `y = f(x)` und tauscht dann `x` und `y` aus. Anschließend löst man nach `y` auf.\n1. `y = 2x - 5`\n2. Tausch von x und y: `x = 2y - 5`\n3. Löse nach y auf: `x + 5 = 2y`\n4. `y = (x + 5) / 2`\nAlso ist `f^(-1)(x) = (x + 5) / 2`.",
+    "correct": 2,
+    "explanation": "Ansatz y = (3x - 1)/(x + 2) und nach x auflösen: y(x + 2) = 3x - 1, also yx + 2y = 3x - 1 und damit x(y - 3) = -1 - 2y. Daraus folgt x = (2y + 1)/(3 - y). Nach dem Vertauschen der Variablen erhält man f⁻¹(x) = (2x + 1)/(3 - x). Der Kehrwert (x + 2)/(3x - 1) ist nicht die Umkehrfunktion, sondern 1/f(x).",
     "options": [
-      "`f^(-1)(x) = (x + 5) / 2`",
-      "`f^(-1)(x) = 1 / (2x - 5)`",
-      "`f^(-1)(x) = 5 - 2x`",
-      "`f^(-1)(x) = 2x + 5`"
+      "f⁻¹(x) = (2x - 1)/(3 + x)",
+      "f⁻¹(x) = (1 + 2x)/(x - 3)",
+      "f⁻¹(x) = (2x + 1)/(3 - x)",
+      "f⁻¹(x) = (x + 2)/(3x - 1)"
     ],
-    "question": "Bestimmen Sie die Umkehrfunktion `f^(-1)(x)` der Funktion `f(x) = 2x - 5`.",
+    "question": "Bestimmen Sie die Umkehrfunktion von f(x) = (3x - 1)/(x + 2) für x ≠ -2.",
     "topic": "Umkehrfunktionen"
   },
   {
     "correct": 1,
-    "explanation": "Für eine Dreiecksmatrix (obere oder untere Dreiecksmatrix) ist die Determinante das Produkt der Elemente auf der Hauptdiagonale. In diesem Fall sind die Diagonalelemente 1, 4 und 2. \nDie Determinante ist daher `1 * 4 * 2 = 8`.",
+    "explanation": "Man erweitert mit der konjugiert komplexen Zahl des Nenners: (4 + 7i)(2 - i) geteilt durch (2 + i)(2 - i). Der Nenner wird reell: 2² + 1² = 5. Der Zähler ergibt 8 - 4i + 14i - 7i² = 8 + 10i + 7 = 15 + 10i. Also ist der Quotient (15 + 10i)/5 = 3 + 2i. Wer Real- und Imaginärteil einzeln dividiert, erhält fälschlich 2 + 7i.",
     "options": [
-      "16",
-      "8",
-      "12",
-      "0"
+      "2 + 7i",
+      "3 + 2i",
+      "3 - 2i",
+      "1 + 3i"
     ],
-    "question": "Berechnen Sie die Determinante der Matrix `A = [[1, 2, 3], [0, 4, 1], [0, 0, 2]]`.",
-    "topic": "Matrizen (Determinante)"
+    "question": "Berechnen Sie den Quotienten z₁ geteilt durch z₂ für z₁ = 4 + 7i und z₂ = 2 + i.",
+    "topic": "Komplexe Zahlen"
   },
   {
-    "correct": 2,
-    "explanation": "Der Ausdruck kann umgeschrieben werden als $\\frac{x^5 \\cdot x^{0.5}}{x^2}$. Nach den Potenzgesetzen addieren sich die Exponenten bei Multiplikation und subtrahieren sich bei Division: $x^{5+0.5-2} = x^{5.5-2} = x^{3.5}$.",
+    "correct": 3,
+    "explanation": "Die Wurzel ist die Potenz mit dem Exponenten 0,5. Beim Multiplizieren werden die Exponenten addiert, beim Dividieren subtrahiert: 5 + 0,5 - 2 = 3,5. Der Ausdruck ist also x hoch 3,5. Für x = 4 ergibt das 4 hoch 3,5 = 4³ · √4 = 64 · 2 = 128. Wer die Wurzel unterschlägt, landet bei 64; wer den Exponenten auf 4 aufrundet, bei 256.",
     "options": [
-      "A) $x^3 \\sqrt{x}$",
-      "B) $x^4$",
-      "C) $x^{3.5}$",
-      "D) $x^{2.5}$"
+      "32",
+      "64",
+      "256",
+      "128"
     ],
-    "question": "Vereinfachen Sie den Ausdruck $\\frac{x^5 \\cdot \\sqrt{x}}{x^2}$ für $x > 0$.",
+    "question": "Welchen Wert hat der Ausdruck (x⁵ · √x) : x² für x = 4?",
     "topic": "Potenzgesetze und Wurzeln"
   },
   {
     "correct": 3,
-    "explanation": "Da $x_1 = -1$ eine Nullstelle ist, ist $(x+1)$ ein Faktor des Polynoms. Mittels Polynomdivision $ (x^3 - x^2 - 10x - 8) \\div (x+1) $ erhält man das quadratische Polynom $x^2 - 2x - 8$. Die Nullstellen dieses Polynoms findet man mit der Mitternachtsformel oder durch Faktorisierung: $(x-4)(x+2)=0$. Die weiteren Nullstellen sind $x=4$ und $x=-2$. Von den gegebenen Optionen ist $x=4$ korrekt.",
+    "explanation": "Da x₁ = -1 eine Nullstelle ist, ist (x + 1) ein Linearfaktor. Die Polynomdivision (x³ - x² - 10x - 8) : (x + 1) ergibt x² - 2x - 8, und die Faktorisierung (x - 4)(x + 2) = 0 liefert die weiteren Nullstellen x = 4 und x = -2. Von den angebotenen Zahlen trifft nur x = 4 zu; die Probe P(4) = 64 - 16 - 40 - 8 = 0 bestätigt das.",
     "options": [
-      "A) $x_2 = 1$",
-      "B) $x_2 = 2$",
-      "C) $x_2 = 3$",
-      "D) $x_2 = 4$"
+      "x = 1",
+      "x = 2",
+      "x = 3",
+      "x = 4"
     ],
-    "question": "Eine Nullstelle des Polynoms $P(x) = x^3 - x^2 - 10x - 8$ ist $x_1 = -1$. Welche der folgenden ist eine weitere Nullstelle?",
+    "question": "Eine Nullstelle des Polynoms P(x) = x³ - x² - 10x - 8 ist x₁ = -1. Welche der folgenden Zahlen ist eine weitere Nullstelle?",
     "topic": "Nullstellen von Polynomen, Polynomdivision"
   },
   {
     "correct": 2,
-    "explanation": "Der Zähler $x^2 - 4x + 3$ kann faktorisiert werden zu $(x-1)(x-3)$. Die Funktion wird also $f(x) = \\frac{(x-1)(x-3)}{x-3}$. Für $x \\neq 3$ kann der Term $(x-3)$ gekürzt werden, was $f(x) = x-1$ ergibt. Da der Nenner bei $x=3$ null wird, aber auch der Zähler (nach dem Kürzen), handelt es sich um eine hebbare Definitionslücke, auch Loch genannt, bei $x=3$.",
+    "explanation": "Der Zähler lässt sich faktorisieren: x² - 4x + 3 = (x - 1)(x - 3). Für x ≠ 3 kürzt sich (x - 3) heraus und es bleibt f(x) = x - 1. Weil Zähler und Nenner bei x = 3 gleichzeitig null werden, ist die Lücke hebbar: Der Graph hat dort nur ein Loch an der Stelle (3 | 2), aber keine Polstelle und keine senkrechte Asymptote.",
     "options": [
-      "A) Es gibt eine vertikale Asymptote bei $x=3$.",
-      "B) Es gibt eine Polstelle bei $x=3$.",
-      "C) Die Funktion hat eine hebbare Lücke (Loch) bei $x=3$.",
-      "D) Die Funktion hat keine Definitionslücke."
+      "Bei x = 3 liegt eine senkrechte Asymptote vor.",
+      "Bei x = 3 liegt eine Polstelle mit Vorzeichenwechsel vor.",
+      "Bei x = 3 liegt eine hebbare Lücke (ein Loch) vor.",
+      "Die Funktion besitzt gar keine Definitionslücke."
     ],
-    "question": "Die Funktion $f(x) = \\frac{x^2 - 4x + 3}{x-3}$ hat eine Definitionslücke. Welche Aussage ist korrekt?",
+    "question": "Die Funktion f(x) = (x² - 4x + 3)/(x - 3) hat eine Definitionslücke bei x = 3. Welche Aussage ist korrekt?",
     "topic": "Rationale Funktionen, Definitionslücken"
   },
   {
     "correct": 1,
-    "explanation": "Um die Gleichung zu lösen, müssen wir die Basen auf die gleiche Zahl bringen. Da $27 = 3^3$, können wir die rechte Seite umschreiben als $(3^3)^x = 3^{3x}$. Die Gleichung lautet nun $3^{2x+1} = 3^{3x}$. Wenn die Basen gleich sind, müssen auch die Exponenten gleich sein: $2x+1 = 3x$. Subtraktion von $2x$ auf beiden Seiten ergibt $1 = x$.",
+    "explanation": "Beide Seiten auf die Basis 3 bringen: 27ˣ = (3³)ˣ = 3³ˣ. Aus 3²ˣ⁺¹ = 3³ˣ folgt durch Vergleich der Exponenten 2x + 1 = 3x, also x = 1. Die Probe bestätigt das: 3³ = 27 und 27¹ = 27. Wer 27ˣ fälschlich als 3³⁺ˣ liest, erhält x = 2.",
     "options": [
-      "A) $x = 0$",
-      "B) $x = 1$",
-      "C) $x = -1$",
-      "D) Die Gleichung hat keine Lösung."
+      "x = 0",
+      "x = 1",
+      "x = -1",
+      "x = 2"
     ],
-    "question": "Lösen Sie die Gleichung $3^{2x+1} = 27^x$.",
+    "question": "Lösen Sie die Gleichung 3²ˣ⁺¹ = 27ˣ.",
     "topic": "Exponentialgleichungen"
   },
   {
     "correct": 1,
-    "explanation": "Zuerst den Definitionsbereich beachten: Für $\\log_2(x)$ muss $x>0$ gelten, und für $\\log_2(x-2)$ muss $x-2>0$, also $x>2$ gelten. Daraus folgt, dass die Lösungen im Bereich $x>2$ liegen müssen. Mit den Logarithmusgesetzen ($\\log_a(b) + \\log_a(c) = \\log_a(b \\cdot c)$) wird die Gleichung zu $\\log_2(x(x-2)) = 3$. Umschreiben in Exponentialform: $x(x-2) = 2^3 = 8$. Ausmultiplizieren ergibt $x^2 - 2x = 8$, also $x^2 - 2x - 8 = 0$. Mit der Mitternachtsformel oder durch Faktorisierung $(x-4)(x+2)=0$ erhält man die Lösungen $x=4$ und $x=-2$. Da die Lösung im Definitionsbereich $x>2$ liegen muss, entfällt $x=-2$. Die einzige gültige Lösung ist $x=4$.",
+    "explanation": "Zuerst der Definitionsbereich: x > 0 und x - 2 > 0, insgesamt also x > 2. Mit dem Logarithmengesetz für Summen wird die Gleichung zu log₂(x(x - 2)) = 3, also x(x - 2) = 2³ = 8. Daraus folgt x² - 2x - 8 = 0 mit den Lösungen x = 4 und x = -2. Wegen des Definitionsbereichs ist x = -2 eine Scheinlösung, es bleibt L = {4}.",
     "options": [
-      "A) $L = \\{2\\}$",
-      "B) $L = \\{4\\}$",
-      "C) $L = \\{-2, 4\\}$",
-      "D) Die Gleichung hat keine reelle Lösung."
+      "L = {2}",
+      "L = {4}",
+      "L = {-2; 4}",
+      "L = {-2}"
     ],
-    "question": "Bestimmen Sie die Lösungsmenge der Gleichung $\\log_2(x) + \\log_2(x-2) = 3$.",
+    "question": "Bestimmen Sie die Lösungsmenge der Gleichung log₂(x) + log₂(x - 2) = 3.",
     "topic": "Logarithmusgleichungen, Definitionsbereich"
   },
   {
     "correct": 1,
-    "explanation": "Zuerst finden wir die Nullstellen der quadratischen Funktion $f(x) = x^2 - 5x + 6 = 0$. Dies kann durch Faktorisieren geschehen: $(x-2)(x-3)=0$. Die Nullstellen sind $x_1=2$ und $x_2=3$. Da der Koeffizient vor $x^2$ positiv ist (die Parabel ist nach oben geöffnet), liegen die Funktionswerte $f(x) \\leq 0$ zwischen den beiden Nullstellen. Somit ist die Lösungsmenge $2 \\leq x \\leq 3$.",
+    "explanation": "Die Nullstellen von x² - 5x + 6 = (x - 2)(x - 3) sind x₁ = 2 und x₂ = 3. Weil der Koeffizient vor x² positiv ist, ist die Parabel nach oben geöffnet und liegt nur zwischen den Nullstellen unterhalb der x-Achse. Da das Zeichen ≤ verwendet wird, gehören die Nullstellen selbst dazu: 2 ≤ x ≤ 3.",
     "options": [
-      "A) $x \\leq 2$ oder $x \\geq 3$",
-      "B) $2 \\leq x \\leq 3$",
-      "C) $x < 2$ oder $x > 3$",
-      "D) Die Ungleichung hat keine reelle Lösung."
+      "x ≤ 2 oder x ≥ 3",
+      "2 ≤ x ≤ 3",
+      "x < 2 oder x > 3",
+      "2 < x < 3"
     ],
-    "question": "Geben Sie die Lösungsmenge der Ungleichung $x^2 - 5x + 6 \\leq 0$ an.",
+    "question": "Geben Sie die Lösungsmenge der Ungleichung x² - 5x + 6 ≤ 0 an.",
     "topic": "Quadratische Ungleichungen"
   },
   {
     "correct": 2,
-    "explanation": "Eine quadratische Gleichung der Form $Ax^2 + Bx + C = 0$ hat genau eine reelle Lösung, wenn ihre Diskriminante $D = B^2 - 4AC$ gleich Null ist. In unserer Gleichung ist $A=1$, $B=-a$ und $C=4$. Setzen wir dies in die Diskriminantenformel ein: $(-a)^2 - 4(1)(4) = 0 \\implies a^2 - 16 = 0 \\implies a^2 = 16$. Daraus folgt, dass $a = 4$ oder $a = -4$. Somit ist $a = \\pm 4$ die korrekte Antwort.",
+    "explanation": "Genau eine (doppelte) reelle Lösung gibt es, wenn die Diskriminante D = b² - 4ac null wird. Hier ist a = 1, b = -a und c = 4, also (-a)² - 4·1·4 = 0 und damit a² = 16. Daraus folgt a = 4 oder a = -4, kurz a = ±4. Wer die Wurzel zu früh zieht und a² = 16 mit a = ±2 beantwortet, liegt falsch.",
     "options": [
-      "A) $a = 0$",
-      "B) $a = 2$",
-      "C) $a = \\pm 4$",
-      "D) $a = \\pm 2$"
+      "a = 0",
+      "a = 2",
+      "a = ±4",
+      "a = ±2"
     ],
-    "question": "Für welchen Wert des Parameters $a$ hat die Gleichung $x^2 - ax + 4 = 0$ genau eine reelle Lösung?",
+    "question": "Für welchen Wert des Parameters a hat die Gleichung x² - ax + 4 = 0 genau eine reelle Lösung?",
     "topic": "Gleichungen mit Parametern, Diskriminante"
   },
   {
     "correct": 2,
-    "explanation": "Eine Betragsgleichung $|E| = k$ (wobei $k \\geq 0$) hat zwei mögliche Fälle: $E = k$ oder $E = -k$. Im vorliegenden Fall ist $E = 3x - 6$ und $k = 9$. \nFall 1: $3x - 6 = 9 \\implies 3x = 15 \\implies x = 5$. \nFall 2: $3x - 6 = -9 \\implies 3x = -3 \\implies x = -1$. \nDie Lösungsmenge ist daher $L = \\{-1, 5\\}$.",
+    "explanation": "Eine Betragsgleichung der Form |E| = k mit k ≥ 0 zerfällt in zwei Fälle. Fall 1: 3x - 6 = 9 führt über 3x = 15 auf x = 5. Fall 2: 3x - 6 = -9 führt über 3x = -3 auf x = -1. Beide Werte erfüllen die Ausgangsgleichung, die Lösungsmenge ist also L = {-1; 5}. Wer nur einen Fall betrachtet, verliert eine Lösung.",
     "options": [
-      "A) $L = \\{5\\}$",
-      "B) $L = \\{-1\\}$",
-      "C) $L = \\{-1, 5\\}$",
-      "D) Die Gleichung hat keine Lösung."
+      "L = {5}",
+      "L = {-1}",
+      "L = {-1; 5}",
+      "L = {-5; 1}"
     ],
-    "question": "Bestimmen Sie die Lösungsmenge der Gleichung $|3x - 6| = 9$.",
+    "question": "Bestimmen Sie die Lösungsmenge der Gleichung |3x - 6| = 9.",
     "topic": "Betragsgleichungen"
   },
   {
     "correct": 1,
-    "explanation": "Potenzregel: f(x) = xⁿ → f'(x) = n · x^(n−1). Der Exponent wird als Faktor vorgestellt und um 1 verringert.",
+    "explanation": "Die Diskriminante ist D = 4² - 4·1·13 = 16 - 52 = -36. Wegen √(-36) = 6i liefert die Lösungsformel x₁,₂ = (-4 ± 6i)/2 = -2 ± 3i. Die beiden Lösungen sind zueinander konjugiert komplex, wie es bei reellen Koeffizienten stets der Fall ist. Wer vergisst, auch den Imaginärteil durch 2 zu teilen, erhält -2 ± 9i.",
     "options": [
-      "f'(x) = n · xⁿ",
-      "f'(x) = n · x^(n−1)",
-      "f'(x) = xⁿ⁻¹",
-      "f'(x) = (n+1) · xⁿ"
+      "x₁,₂ = 2 ± 3i",
+      "x₁,₂ = -2 ± 3i",
+      "x₁,₂ = -2 ± 9i",
+      "x₁,₂ = -4 ± 3i"
     ],
-    "question": "Was ist die Ableitung der Potenzfunktion f(x) = xⁿ nach der Potenzregel?",
-    "topic": "Differentialrechnung"
+    "question": "Bestimmen Sie alle Lösungen der Gleichung x² + 4x + 13 = 0 in der Menge der komplexen Zahlen ℂ.",
+    "topic": "Komplexe Zahlen"
   },
   {
-    "correct": 1,
-    "explanation": "Konstante Funktionen haben die Steigung 0 – ihr Graph ist waagerecht, daher f'(x) = 0.",
+    "correct": 2,
+    "explanation": "Am schnellsten geht es über das Quadrat: (1 + i)² = 1 + 2i + i² = 2i. Damit ist (1 + i)⁸ = ((1 + i)²)⁴ = (2i)⁴ = 2⁴ · i⁴. Wegen i⁴ = 1 ergibt sich 16 · 1 = 16. Das Ergebnis ist also reell. Wer i⁴ = -1 setzt, erhält fälschlich -16.",
     "options": [
-      "f'(x) = c",
-      "f'(x) = 0",
-      "f'(x) = 1",
-      "f'(x) = c · x"
+      "16i",
+      "-16",
+      "16",
+      "8"
     ],
-    "question": "Was ist die Ableitung einer Konstante f(x) = c?",
-    "topic": "Differentialrechnung"
+    "question": "Berechnen Sie die Potenz (1 + i)⁸.",
+    "topic": "Komplexe Zahlen"
   },
   {
-    "correct": 1,
-    "explanation": "Produktregel: (u · v)' = u' · v + u · v'. Beide Faktoren werden einmal abgeleitet, während der andere unverändert bleibt.",
+    "correct": 3,
+    "explanation": "Der Definitionsbereich verlangt x > 2. Mit dem Logarithmengesetz für Differenzen wird die Gleichung zu log₃((x + 6)/(x - 2)) = 1, also (x + 6)/(x - 2) = 3¹ = 3. Daraus folgt x + 6 = 3x - 6, also 2x = 12 und x = 6. Die Probe bestätigt es: log₃(12) - log₃(4) = log₃(3) = 1.",
     "options": [
-      "(u · v)' = u' · v'",
-      "(u · v)' = u' · v + u · v'",
-      "(u · v)' = u / v' + v / u'",
-      "(u · v)' = (u + v)'"
+      "x = 3",
+      "x = 4",
+      "x = 12",
+      "x = 6"
     ],
-    "question": "Wie lautet die Produktregel für die Ableitung von f(x) = u(x) · v(x)?",
-    "topic": "Differentialrechnung"
-  },
-  {
-    "correct": 1,
-    "explanation": "Quotientenregel: (u/v)' = (u'·v − u·v') / v². Merkhilfe: 'Zähler-Strich mal Nenner minus Zähler mal Nenner-Strich, durch Nenner-Quadrat'.",
-    "options": [
-      "(u/v)' = u' · v'",
-      "(u/v)' = (u' · v − u · v') / v²",
-      "(u/v)' = u' · v + u · v'",
-      "(u/v)' = u / v'"
-    ],
-    "question": "Wie lautet die Quotientenregel für f(x) = u(x) / v(x)?",
-    "topic": "Differentialrechnung"
-  },
-  {
-    "correct": 1,
-    "explanation": "Kettenregel: (f(g(x)))' = f'(g(x)) · g'(x). Die äußere Funktion wird abgeleitet (mit dem inneren Argument) und mit der Ableitung der inneren Funktion multipliziert.",
-    "options": [
-      "(f∘g)' = f'(x) · g'(x)",
-      "(f∘g)' = f'(g(x)) · g'(x)",
-      "(f∘g)' = f(g'(x))",
-      "(f∘g)' = f'(x) + g'(x)"
-    ],
-    "question": "Wie lautet die Kettenregel für die Ableitung von f(g(x))?",
-    "topic": "Differentialrechnung"
+    "question": "Bestimmen Sie die Lösung der Gleichung log₃(x + 6) - log₃(x - 2) = 1.",
+    "topic": "Logarithmusgleichungen"
   },
   {
     "correct": 0,
-    "explanation": "f(x) = sin(x) → f'(x) = cos(x). Die weiteren zyklischen Ableitungen: cos → −sin → −cos → sin → …",
+    "explanation": "Logarithmieren beider Seiten ergibt x · ln(5) = ln(12), also x = ln(12)/ln(5), rund 1,54. Das ist genau der Logarithmus von 12 zur Basis 5. Ein häufiger Fehler ist die Verwechslung mit der Differenz: ln(12) - ln(5) ist ln(12/5) und damit etwas ganz anderes.",
     "options": [
-      "cos(x)",
-      "−cos(x)",
-      "sin(x)",
-      "−sin(x)"
+      "x = ln(12)/ln(5)",
+      "x = ln(12) - ln(5)",
+      "x = ln(5)/ln(12)",
+      "x = 12/5"
     ],
-    "question": "Was ist die Ableitung von f(x) = sin(x)?",
-    "topic": "Differentialrechnung"
+    "question": "Lösen Sie die Gleichung 5ˣ = 12 exakt nach x auf.",
+    "topic": "Exponentialgleichungen"
   },
   {
     "correct": 1,
-    "explanation": "Die Exponentialfunktion eˣ ist ihre eigene Ableitung: (eˣ)' = eˣ. Das macht sie in der Analysis besonders wichtig.",
+    "explanation": "Subtrahiert man die zweite Gleichung von der ersten, bleibt 2y = 4, also y = 2. Einsetzen in die erste Gleichung liefert x + z = 4. Aus der dritten Gleichung wird 2x + 2 - z = 1, also 2x - z = -1. Addiert man diese Beziehung zu x + z = 4, folgt 3x = 3, also x = 1 und damit z = 3.",
     "options": [
-      "e^(x−1)",
-      "eˣ",
-      "x · e^(x−1)",
-      "e"
+      "x = 3, y = 2, z = 1",
+      "x = 1, y = 2, z = 3",
+      "x = 2, y = 1, z = 3",
+      "x = 1, y = 3, z = 2"
     ],
-    "question": "Was ist die Ableitung von f(x) = eˣ?",
-    "topic": "Differentialrechnung"
+    "question": "Welche Lösung hat das lineare Gleichungssystem x + y + z = 6, x - y + z = 2 und 2x + y - z = 1?",
+    "topic": "Lineare Gleichungssysteme"
+  },
+  {
+    "correct": 2,
+    "explanation": "Keine Lösung bedeutet parallele, aber verschiedene Geraden: Die Koeffizienten müssen proportional sein, die rechten Seiten aber nicht. Multipliziert man die erste Gleichung mit 3, entsteht 3x + 6y = 12. Für a = 6 steht dem 3x + 6y = 5 gegenüber, ein Widerspruch. Für jedes andere a gibt es genau eine Lösung.",
+    "options": [
+      "a = 2",
+      "a = 3",
+      "a = 6",
+      "a = -6"
+    ],
+    "question": "Für welches a besitzt das lineare Gleichungssystem x + 2y = 4 und 3x + ay = 5 keine Lösung?",
+    "topic": "Lineare Gleichungssysteme mit Parameter"
+  },
+  {
+    "correct": 3,
+    "explanation": "Quadrieren ergibt x + 7 = x² - 10x + 25, also x² - 11x + 18 = 0 mit den Werten x = 9 und x = 2. Quadrieren ist keine Äquivalenzumformung, deshalb ist die Probe zwingend. Für x = 9 gilt √16 = 4 = 9 - 5, das passt. Für x = 2 wäre √9 = 3, aber 2 - 5 = -3, also eine Scheinlösung. Es bleibt L = {9}.",
+    "options": [
+      "L = {2}",
+      "L = {2; 9}",
+      "L = {} (keine Lösung)",
+      "L = {9}"
+    ],
+    "question": "Bestimmen Sie die Lösungsmenge der Wurzelgleichung √(x + 7) = x - 5.",
+    "topic": "Wurzelgleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Nach dem binomischen Lehrsatz lautet das Glied mit x³: (5 über 3) · (2x)³ · (-1)², also 10 · 8x³ · 1 = 80x³. Der gesuchte Koeffizient ist 80. Das Vorzeichen bleibt positiv, weil (-1) hier in gerader Potenz auftritt; wer stattdessen (-1)³ verwendet, erhält fälschlich -80.",
+    "options": [
+      "80",
+      "-80",
+      "40",
+      "-40"
+    ],
+    "question": "Welchen Koeffizienten hat das Glied mit x³ in der Entwicklung von (2x - 1)⁵?",
+    "topic": "Binomischer Lehrsatz"
   },
   {
     "correct": 1,
-    "explanation": "f(x) = ln(x) → f'(x) = 1/x (für x > 0). Folgt aus der Umkehrfunktionsregel: ln ist Umkehrfunktion von eˣ.",
+    "explanation": "Summen und Differenzen von Logarithmen gleicher Basis lassen sich zu einem einzigen Logarithmus zusammenfassen: log₅(2 · 50 : 4) = log₅(100/4) = log₅(25). Wegen 5² = 25 ist der Wert 2. Wer die Faktoren im Argument addiert statt multipliziert, kommt auf ein falsches Argument.",
     "options": [
-      "x",
-      "1/x",
-      "ln(x)",
-      "eˣ"
+      "1",
+      "2",
+      "3",
+      "0,5"
     ],
-    "question": "Was ist die Ableitung von f(x) = ln(x)?",
-    "topic": "Differentialrechnung"
+    "question": "Welchen Wert hat der Ausdruck log₅(2) + log₅(50) - log₅(4)?",
+    "topic": "Logarithmengesetze"
+  },
+  {
+    "correct": 2,
+    "explanation": "Bei ausschließlich reellen Koeffizienten treten nicht-reelle Nullstellen immer paarweise konjugiert komplex auf. Zu x₂ = 1 + i gehört deshalb zwingend x₃ = 1 - i. Nur so ergibt das Produkt der beiden Linearfaktoren (x - 1 - i)(x - 1 + i) = x² - 2x + 2 wieder ein Polynom mit reellen Koeffizienten.",
+    "options": [
+      "x₃ = -1 + i",
+      "x₃ = -1 - i",
+      "x₃ = 1 - i",
+      "x₃ = -2"
+    ],
+    "question": "Ein Polynom dritten Grades mit ausschließlich reellen Koeffizienten hat die Nullstellen x₁ = 2 und x₂ = 1 + i. Wie lautet die dritte Nullstelle?",
+    "topic": "Komplexe Zahlen"
+  },
+  {
+    "correct": 3,
+    "explanation": "Ein Bruch ist genau dann positiv, wenn Zähler und Nenner dasselbe Vorzeichen haben. Für x > 1 sind beide positiv, für x < -2 sind beide negativ. Zwischen -2 und 1 haben sie verschiedene Vorzeichen, dort ist der Bruch negativ. An der Stelle x = -2 ist der Term nicht definiert, bei x = 1 wird er null.",
+    "options": [
+      "-2 < x < 1",
+      "x > 1",
+      "x < -2",
+      "x < -2 oder x > 1"
+    ],
+    "question": "Geben Sie die Lösungsmenge der Ungleichung (x - 1)/(x + 2) > 0 an.",
+    "topic": "Bruchungleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Die Ungleichung |E| < k mit k > 0 ist gleichbedeutend mit der Doppelungleichung -k < E < k, hier also -7 < 2x - 3 < 7. Addiert man in allen drei Teilen 3, folgt -4 < 2x < 10, und die Division durch 2 ergibt -2 < x < 5. Das Ungleichheitszeichen dreht sich nicht um, weil durch eine positive Zahl geteilt wird.",
+    "options": [
+      "-2 < x < 5",
+      "x < -2 oder x > 5",
+      "-5 < x < 2",
+      "2 < x < 5"
+    ],
+    "question": "Geben Sie die Lösungsmenge der Ungleichung |2x - 3| < 7 an.",
+    "topic": "Betragsungleichungen"
+  },
+  {
+    "correct": 0,
+    "explanation": "Wegen p(3) = 27 − 36 + 3 + 6 = 0 ist x = 3 eine Nullstelle, die Division geht also ohne Rest auf. Schrittweise erhält man x² − x − 2. Probe: (x − 3)·(x² − x − 2) = x³ − 4x² + x + 6.",
+    "options": [
+      "x² − x − 2, Rest 0",
+      "x² − x + 2, Rest 0",
+      "x² − 7x + 22, Rest −60",
+      "x² − 4x + 1, Rest 6"
+    ],
+    "question": "Was ergibt die Polynomdivision (x³ − 4x² + x + 6) : (x − 3)?",
+    "topic": "Polynomdivision"
   },
   {
     "correct": 1,
-    "explanation": "Notwendige Bedingung: An jedem lokalen Extrempunkt muss f'(x₀) = 0 gelten (waagerechte Tangente). Sie ist nicht hinreichend – es könnte auch ein Sattelpunkt sein.",
-    "options": [
-      "f(x₀) = 0",
-      "f'(x₀) = 0",
-      "f''(x₀) = 0",
-      "f'(x₀) > 0"
-    ],
-    "question": "Was ist die notwendige Bedingung für einen Extrempunkt von f?",
-    "topic": "Kurvendiskussion"
-  },
-  {
-    "correct": 1,
-    "explanation": "f'(x₀) = 0 und f''(x₀) > 0: lokales Minimum (nach oben gewölbt). Bei f''(x₀) < 0 liegt ein Maximum vor.",
-    "options": [
-      "f'(x₀) = 0 und f''(x₀) < 0",
-      "f'(x₀) = 0 und f''(x₀) > 0",
-      "f''(x₀) = 0",
-      "f'(x₀) > 0"
-    ],
-    "question": "Was ist die hinreichende Bedingung für ein lokales Minimum an der Stelle x₀?",
-    "topic": "Kurvendiskussion"
-  },
-  {
-    "correct": 1,
-    "explanation": "Ein Wendepunkt liegt vor, wenn f'' das Vorzeichen wechselt. Notwendig: f''(x₀) = 0; hinreichend: f'''(x₀) ≠ 0.",
-    "options": [
-      "f'(x₀) = 0",
-      "f''(x₀) = 0 und Vorzeichenwechsel von f'' (hinreichend: f'''(x₀) ≠ 0)",
-      "f(x₀) = 0",
-      "f''(x₀) > 0"
-    ],
-    "question": "Wann hat eine Funktion einen Wendepunkt an der Stelle x₀?",
-    "topic": "Kurvendiskussion"
-  },
-  {
-    "correct": 1,
-    "explanation": "Bei einem Sattelpunkt gilt f'(x₀) = 0 und auch f''(x₀) = 0, aber f' wechselt nicht das Vorzeichen – die Monotonie ändert sich nicht.",
-    "options": [
-      "Ein Punkt mit f(x₀) = 0",
-      "Ein Punkt mit f'(x₀) = 0, aber ohne Vorzeichenwechsel von f' – kein Extrempunkt (z.B. f(x)=x³ bei x=0)",
-      "Ein Hochpunkt der Funktion",
-      "Der Schnittpunkt mit der y-Achse"
-    ],
-    "question": "Was ist ein Sattelpunkt (Terrassenpunkt)?",
-    "topic": "Kurvendiskussion"
-  },
-  {
-    "correct": 1,
-    "explanation": "Streng monoton fallend: Für alle x im Intervall gilt f'(x) < 0, d.h. je größer x, desto kleiner f(x).",
-    "options": [
-      "f'(x) = 0 auf dem Intervall",
-      "f'(x) < 0 auf dem gesamten Intervall",
-      "f hat nur Minima",
-      "f hat keine Extrempunkte"
-    ],
-    "question": "Was bedeutet streng monoton fallend auf einem Intervall?",
-    "topic": "Kurvendiskussion"
-  },
-  {
-    "correct": 1,
-    "explanation": "F ist Stammfunktion von f, wenn F'(x) = f(x). Das unbestimmte Integral ∫f(x)dx = F(x) + C beschreibt alle Stammfunktionen.",
+    "explanation": "F ist Stammfunktion von f, wenn F'(x) = f(x) gilt. Das unbestimmte Integral ∫f(x)dx = F(x) + C beschreibt alle Stammfunktionen, die sich nur um eine Konstante unterscheiden.",
     "options": [
       "F(x) mit F(x) = f'(x)",
-      "F(x) mit F'(x) = f(x) – die Ableitung von F ergibt f",
-      "F(x) = f(x)²",
-      "F(x) = ∫f'(x)dx"
+      "F(x) mit F'(x) = f(x)",
+      "F(x) mit F(x) = f(x)²",
+      "F(x) mit F(x) = ∫f'(x)dx"
     ],
-    "question": "Was ist eine Stammfunktion F(x) von f(x)?",
+    "question": "Wann heißt F(x) eine Stammfunktion von f(x)?",
     "topic": "Integralrechnung"
   },
   {
     "correct": 1,
-    "explanation": "∫xⁿ dx = x^(n+1)/(n+1) + C. Merkhilfe: Exponent um 1 erhöhen, durch neuen Exponenten dividieren.",
+    "explanation": "Es gilt ∫xⁿ dx = xⁿ⁺¹/(n+1) + C. Merkhilfe: Exponent um 1 erhöhen, dann durch den neuen Exponenten dividieren.",
     "options": [
-      "n · x^(n−1) + C",
-      "x^(n+1) / (n+1) + C",
-      "xⁿ · n + C",
-      "n · x^(n+1) + C"
+      "n · xⁿ⁻¹ + C",
+      "xⁿ⁺¹/(n+1) + C",
+      "n · xⁿ + C",
+      "n · xⁿ⁺¹ + C"
     ],
     "question": "Was ist die Stammfunktion von f(x) = xⁿ (n ≠ −1)?",
     "topic": "Integralrechnung"
   },
   {
-    "correct": 1,
-    "explanation": "∫eˣ dx = eˣ + C. Die Exponentialfunktion ist zugleich ihre eigene Stammfunktion.",
+    "correct": 3,
+    "explanation": "Substitution u = eˣ liefert u² − 5u + 6 = 0 mit u₁ = 2 und u₂ = 3. Rücksubstitution: eˣ = 2 ergibt x = ln(2), eˣ = 3 ergibt x = ln(3). Beide Werte für u sind positiv, also sind beide Lösungen gültig.",
     "options": [
-      "e^(x−1) + C",
-      "eˣ + C",
-      "x · eˣ + C",
-      "e · xˣ + C"
+      "x = 2 und x = 3",
+      "x = ln(5) und x = ln(6)",
+      "x = −ln(2) und x = −ln(3)",
+      "x = ln(2) und x = ln(3)"
     ],
-    "question": "Was ist die Stammfunktion von f(x) = eˣ?",
-    "topic": "Integralrechnung"
+    "question": "Welche Lösungen hat die Gleichung e²ˣ − 5eˣ + 6 = 0?",
+    "topic": "Exponentialgleichungen"
   },
   {
     "correct": 1,
-    "explanation": "∫(1/x)dx = ln|x| + C (für x ≠ 0). Der Betragsstrich ist nötig, da ln nur für positive Argumente definiert ist.",
+    "explanation": "Es gilt ∫(1/x)dx = ln|x| + C für x ≠ 0. Der Betrag ist nötig, weil der Logarithmus nur für positive Argumente definiert ist, 1/x aber auch für negative x.",
     "options": [
       "1/x² + C",
       "ln|x| + C",
@@ -397,266 +397,266 @@
   },
   {
     "correct": 1,
-    "explanation": "Das bestimmte Integral ergibt den orientierten Flächeninhalt: Flächen über der x-Achse positiv, darunter negativ.",
+    "explanation": "Das bestimmte Integral liefert den orientierten Flächeninhalt: Flächenstücke über der x-Achse zählen positiv, Flächenstücke darunter negativ.",
     "options": [
-      "Die Ableitung von f an der Stelle a",
-      "Den orientierten Flächeninhalt zwischen dem Graphen und der x-Achse im Intervall [a,b]",
-      "Den Mittelwert der Funktion",
-      "Die Bogenlänge des Graphen"
+      "Die Steigung von f an der Stelle a",
+      "Den orientierten Flächeninhalt zwischen Graph und x-Achse",
+      "Den Mittelwert von f auf dem Intervall",
+      "Die Bogenlänge des Graphen von f"
     ],
     "question": "Was berechnet das bestimmte Integral ∫ₐᵇ f(x)dx geometrisch?",
     "topic": "Integralrechnung"
   },
   {
     "correct": 1,
-    "explanation": "Der Hauptsatz verbindet beide Teilgebiete: Das bestimmte Integral berechnet sich als F(b) − F(a), wobei F eine beliebige Stammfunktion von f ist.",
+    "explanation": "Der Hauptsatz verbindet Ableiten und Integrieren: Das bestimmte Integral lässt sich über eine beliebige Stammfunktion F von f als Differenz F(b) − F(a) berechnen.",
     "options": [
-      "Ableitung und Integral sind voneinander unabhängig",
-      "∫ₐᵇ f(x)dx = F(b) − F(a), wobei F eine Stammfunktion von f ist",
-      "Jede Funktion ist integrierbar",
-      "Das Integral einer Ableitung ist immer null"
+      "Ableiten und Integrieren sind voneinander unabhängig",
+      "∫ₐᵇ f(x)dx = F(b) − F(a) mit einer Stammfunktion F von f",
+      "Jede beschränkte Funktion besitzt eine Stammfunktion",
+      "Das Integral einer Ableitung ist immer gleich null"
     ],
     "question": "Wie lautet der Hauptsatz der Differential- und Integralrechnung?",
     "topic": "Integralrechnung"
   },
   {
     "correct": 1,
-    "explanation": "Fläche zwischen zwei Kurven: A = ∫ₐᵇ [f(x) − g(x)]dx, wenn f(x) ≥ g(x) überall im Intervall.",
+    "explanation": "Die Fläche zwischen zwei Kurven ist das Integral über die Differenz der Funktionen: A = ∫ₐᵇ [f(x) − g(x)]dx, sofern f im ganzen Intervall oberhalb von g verläuft.",
     "options": [
       "∫ₐᵇ f(x)·g(x)dx",
       "∫ₐᵇ [f(x) − g(x)]dx",
       "∫ₐᵇ f(x)dx + ∫ₐᵇ g(x)dx",
       "∫ₐᵇ f(x)dx · ∫ₐᵇ g(x)dx"
     ],
-    "question": "Wie berechnet man die Fläche zwischen zwei Kurven f(x) ≥ g(x) im Intervall [a,b]?",
+    "question": "Wie berechnet man die Fläche zwischen zwei Kurven mit f(x) ≥ g(x) im Intervall [a; b]?",
     "topic": "Integralrechnung"
   },
   {
-    "correct": 1,
-    "explanation": "∫₀¹ x dx = [x²/2]₀¹ = 1/2 − 0 = 1/2.",
+    "correct": 2,
+    "explanation": "Ausmultiplizieren ergibt 3 − 12i + 2i − 8i². Wegen i² = −1 wird aus −8i² der Summand +8. Realteil: 3 + 8 = 11, Imaginärteil: −12i + 2i = −10i. Also 11 − 10i.",
     "options": [
-      "0",
-      "1/2",
-      "1",
-      "2"
+      "3 − 10i",
+      "11 + 10i",
+      "11 − 10i",
+      "−5 − 10i"
     ],
-    "question": "Was ergibt ∫₀¹ x dx?",
-    "topic": "Integralrechnung"
+    "question": "Welchen Wert hat das Produkt (3 + 2i) · (1 − 4i)?",
+    "topic": "Komplexe Zahlen"
   },
   {
     "correct": 1,
-    "explanation": "∫v(t)dt = s(t) + C: Das Integral der Geschwindigkeit über die Zeit ergibt den zurückgelegten Weg.",
+    "explanation": "Es gilt ∫v(t)dt = s(t) + C: Das Integral der Geschwindigkeit über die Zeit ergibt den zurückgelegten Weg. Die Ableitung von v(t) wäre dagegen die Beschleunigung.",
     "options": [
       "Die Beschleunigung a(t)",
       "Den zurückgelegten Weg s(t)",
-      "Die Kraft F(t)",
-      "Die Energie E(t)"
+      "Die wirkende Kraft F(t)",
+      "Die kinetische Energie E(t)"
     ],
     "question": "Was ergibt das Integral der Geschwindigkeit v(t) über die Zeit t?",
     "topic": "Integralrechnung"
   },
   {
     "correct": 1,
-    "explanation": "eˣ ist für alle x ∈ ℝ definiert, stets positiv, und es gilt (eˣ)' = eˣ sowie ∫eˣdx = eˣ + C.",
+    "explanation": "Es gilt (eˣ)' = eˣ: Die e-Funktion ist bis auf konstante Vielfache die einzige Funktion, die mit ihrer eigenen Ableitung übereinstimmt. Sie ist auf ganz ℝ definiert, stets positiv und streng monoton wachsend.",
     "options": [
       "Sie ist nur für x > 0 definiert",
-      "Sie ist ihre eigene Ableitung und Stammfunktion, stets positiv und hat keinen Schnittpunkt mit der x-Achse",
-      "Sie hat ein Maximum bei x = 0",
-      "Sie ist eine gerade Funktion"
+      "Sie stimmt mit ihrer eigenen Ableitung überein",
+      "Sie hat an der Stelle x = 0 ein Maximum",
+      "Sie ist achsensymmetrisch zur y-Achse"
     ],
-    "question": "Was gilt für die Exponentialfunktion f(x) = eˣ besonders?",
+    "question": "Welche Besonderheit hat die Exponentialfunktion f(x) = eˣ?",
     "topic": "Exponentialfunktion"
   },
   {
-    "correct": 1,
-    "explanation": "ln(x) = logₑ(x) ist die Umkehrfunktion der natürlichen Exponentialfunktion. Es gilt ln(eˣ) = x und e^(ln x) = x.",
+    "correct": 3,
+    "explanation": "Zuerst 2·ln(3) = ln(3²) = ln(9). Dann ln(9) + ln(4) = ln(36) und ln(36) − ln(6) = ln(36/6) = ln(6).",
     "options": [
-      "Der Logarithmus zur Basis 10",
-      "Die Umkehrfunktion von eˣ (Logarithmus zur Basis e ≈ 2,718)",
-      "Die Ableitung von eˣ",
-      "Der Logarithmus zur Basis 2"
+      "ln(24)",
+      "ln(1,5)",
+      "2·ln(2)",
+      "ln(6)"
     ],
-    "question": "Was ist der natürliche Logarithmus ln(x)?",
-    "topic": "Exponentialfunktion"
+    "question": "Welchen Wert hat der Term 2·ln(3) + ln(4) − ln(6)?",
+    "topic": "Logarithmus"
   },
   {
     "correct": 1,
-    "explanation": "Logarithmusgesetz: ln(a·b) = ln(a) + ln(b). Ebenso: ln(a/b) = ln(a) − ln(b) und ln(aⁿ) = n · ln(a).",
+    "explanation": "Logarithmusgesetz: ln(a·b) = ln(a) + ln(b). Entsprechend gilt ln(a/b) = ln(a) − ln(b) und ln(aⁿ) = n · ln(a).",
     "options": [
       "ln(a · b) = ln(a) · ln(b)",
       "ln(a · b) = ln(a) + ln(b)",
       "ln(a · b) = ln(a) − ln(b)",
-      "ln(a · b) = ln(a)^ln(b)"
+      "ln(a · b) = ln(a) : ln(b)"
     ],
-    "question": "Was gilt für ln(a · b)?",
-    "topic": "Exponentialfunktion"
+    "question": "Was gilt für ln(a · b) mit a, b > 0?",
+    "topic": "Logarithmus"
+  },
+  {
+    "correct": 3,
+    "explanation": "Für a = 4 ist die zweite Gleichung genau das Doppelte der ersten, die Zeilen sind linear abhängig und das System hat unendlich viele Lösungen. Für jedes a ≠ 4 gibt es dagegen genau eine Lösung.",
+    "options": [
+      "a = 2",
+      "a = 0",
+      "a = 6",
+      "a = 4"
+    ],
+    "question": "Für welchen Parameter a hat das Gleichungssystem x + 2y = 3 und 2x + a·y = 6 unendlich viele Lösungen?",
+    "topic": "Lineare Gleichungssysteme"
   },
   {
     "correct": 1,
-    "explanation": "Ein Vektor hat Betrag (Länge) und Richtung. Im ℝⁿ wird er als Spalte oder Zeile mit n Komponenten geschrieben.",
+    "explanation": "Das Skalarprodukt ist eine Zahl: a · b = a₁b₁ + a₂b₂ + a₃b₃ = |a| · |b| · cos(α). Der Ausdruck |a| · |b| · sin(α) ist dagegen der Betrag des Kreuzprodukts.",
     "options": [
-      "Eine einzelne Zahl mit Vorzeichen",
-      "Eine gerichtete Größe mit Betrag und Richtung, dargestellt als geordnetes Tupel von Komponenten",
-      "Ein Punkt im Koordinatensystem",
-      "Eine Gerade im Raum"
-    ],
-    "question": "Was ist ein Vektor im mathematischen Sinne?",
-    "topic": "Vektorrechnung"
-  },
-  {
-    "correct": 1,
-    "explanation": "Das Skalarprodukt a·b = a₁b₁ + a₂b₂ + … = |a|·|b|·cosα ist ein Skalar. Es wird für Winkelberechnungen und Orthogonalitätsprüfungen genutzt.",
-    "options": [
-      "Ein neuer Vektor senkrecht zu a und b",
-      "Eine skalare Zahl: a·b = |a|·|b|·cos(α) (α = Winkel zwischen beiden)",
+      "Ein Vektor, der senkrecht auf a und b steht",
+      "Eine Zahl, nämlich |a| · |b| · cos(α)",
       "Die Summe aller Komponenten von a und b",
-      "Das Produkt der Beträge ohne Winkelberücksichtigung"
+      "Eine Zahl, nämlich |a| · |b| · sin(α)"
     ],
-    "question": "Was ist das Skalarprodukt zweier Vektoren a und b?",
+    "question": "Was ist das Skalarprodukt zweier Vektoren a und b, wenn α der Winkel zwischen ihnen ist?",
     "topic": "Vektorrechnung"
   },
   {
     "correct": 1,
-    "explanation": "a·b = 0 ⟺ cosα = 0 ⟺ α = 90°: Die Vektoren stehen senkrecht aufeinander (Orthogonalitätsbedingung).",
+    "explanation": "Aus a · b = 0 folgt für Vektoren ungleich dem Nullvektor cos(α) = 0, also α = 90°. Das ist die Orthogonalitätsbedingung.",
     "options": [
-      "Die Vektoren sind parallel",
-      "Die Vektoren sind orthogonal (senkrecht zueinander)",
+      "Die Vektoren sind parallel zueinander",
+      "Die Vektoren stehen senkrecht aufeinander",
       "Die Vektoren sind gleich lang",
-      "Einer der Vektoren ist der Nullvektor"
+      "Die Vektoren sind entgegengesetzt gerichtet"
     ],
-    "question": "Was gilt, wenn das Skalarprodukt zweier Vektoren gleich null ist?",
+    "question": "Was gilt, wenn das Skalarprodukt zweier vom Nullvektor verschiedener Vektoren null ergibt?",
     "topic": "Vektorrechnung"
   },
   {
     "correct": 1,
-    "explanation": "Das Kreuzprodukt a × b steht senkrecht auf beiden Ausgangsvektoren. Sein Betrag |a×b| = |a|·|b|·sinα entspricht der Fläche des Parallelogramms.",
+    "explanation": "Das Kreuzprodukt a × b ist ein Vektor, der senkrecht auf beiden Ausgangsvektoren steht. Sein Betrag |a × b| = |a| · |b| · sin(α) entspricht dem Flächeninhalt des von a und b aufgespannten Parallelogramms.",
     "options": [
-      "Ein Skalar gleich |a|·|b|·cosα",
-      "Ein Vektor senkrecht zu a und b mit Betrag |a|·|b|·sinα",
-      "Die komponentenweise Summe von a und b",
-      "Das Skalarprodukt mit umgekehrtem Vorzeichen"
+      "Eine Zahl, nämlich |a| · |b| · cos(α)",
+      "Ein Vektor senkrecht zu a und b mit Betrag |a| · |b| · sin(α)",
+      "Der Vektor aus den komponentenweisen Summen von a und b",
+      "Das Skalarprodukt von a und b mit umgekehrtem Vorzeichen"
     ],
     "question": "Was ist das Kreuzprodukt a × b zweier Vektoren im ℝ³?",
     "topic": "Vektorrechnung"
   },
   {
     "correct": 0,
-    "explanation": "Parameterdarstellung: x = p + t·u. Für jeden Parameterwert t ergibt sich ein Punkt auf der Geraden. p ist ein Aufpunkt, u gibt die Richtung an.",
+    "explanation": "Parameterdarstellung einer Geraden: x = p + t·u. Dabei ist p der Stützvektor eines Punktes auf der Geraden, u der Richtungsvektor. Jeder Parameterwert t liefert genau einen Punkt der Geraden.",
     "options": [
-      "g: x = p + t·u, t ∈ ℝ (p = Stützvektor, u = Richtungsvektor)",
+      "g: x = p + t·u mit t ∈ ℝ",
       "g: ax + by + cz = d",
       "g: x² + y² + z² = r²",
-      "g: n·x = d"
+      "g: n · x = 0 mit n ≠ 0"
     ],
     "question": "Wie lautet die Parametergleichung einer Geraden g im Raum?",
     "topic": "Analytische Geometrie"
   },
   {
     "correct": 2,
-    "explanation": "Koordinatenform: ax + by + cz = d. Der Vektor n = (a,b,c) ist der Normalenvektor. Man gewinnt ihn aus der Parameterform durch Kreuzprodukt der Richtungsvektoren.",
+    "explanation": "In der Koordinatenform ax + by + cz = d sind die Koeffizienten a, b und c die Komponenten eines Normalenvektors der Ebene. Aus der Parameterform gewinnt man ihn über das Kreuzprodukt der beiden Richtungsvektoren.",
     "options": [
       "E: x = p + s·u + t·v",
-      "E: nur als Normalenform",
-      "E: ax + by + cz = d, wobei (a,b,c) der Normalenvektor der Ebene ist",
-      "E: |x − p| = r"
+      "E: |x − p| = r",
+      "E: ax + by + cz = d",
+      "E: n · (x − p) = |n|"
     ],
-    "question": "Was ist die Koordinatenform einer Ebene im Raum?",
+    "question": "Welche Gleichung ist die Koordinatenform einer Ebene im Raum?",
     "topic": "Analytische Geometrie"
   },
   {
     "correct": 1,
-    "explanation": "Der Grenzwert des Differenzenquotienten für h→0 ist die Definition der Ableitung f'(x) – die momentane Änderungsrate (Tangentensteigung).",
+    "explanation": "Der Grenzwert des Differenzenquotienten für h → 0 ist gerade die Definition der Ableitung f'(x): die momentane Änderungsrate und zugleich die Steigung der Tangente.",
     "options": [
-      "Den Mittelwert von f auf [x, x+h]",
-      "Die momentane Änderungsrate – die Ableitung f'(x) an der Stelle x",
-      "Das bestimmte Integral von f",
-      "Die zweite Ableitung von f"
+      "Den Mittelwert von f auf dem Intervall [x; x+h]",
+      "Die momentane Änderungsrate, also die Ableitung f'(x)",
+      "Das bestimmte Integral von f über [x; x+h]",
+      "Die Krümmung des Graphen an der Stelle x"
     ],
     "question": "Was beschreibt der Differenzenquotient [f(x+h) − f(x)] / h für h → 0?",
     "topic": "Differentialrechnung"
   },
   {
     "correct": 0,
-    "explanation": "L'Hôpital: Ergibt sich ein Grenzwert in der unbestimmten Form 0/0 oder ∞/∞, gilt lim f/g = lim f'/g' (unter geeigneten Bedingungen).",
+    "explanation": "Liegt ein unbestimmter Ausdruck der Form 0/0 oder ∞/∞ vor, so gilt lim f/g = lim f'/g', sofern der rechte Grenzwert existiert. Wichtig: Zähler und Nenner werden getrennt abgeleitet, es ist keine Quotientenregel.",
     "options": [
-      "Bei unbestimmten Ausdrücken der Form 0/0 oder ∞/∞ darf man Zähler und Nenner separat ableiten und dann den Grenzwert bestimmen",
-      "Man multipliziert Zähler und Nenner mit der konjugierten Größe",
-      "Man setzt x = 0 direkt ein",
-      "Man integriert Zähler und Nenner"
+      "Bei 0/0 oder ∞/∞ darf man Zähler und Nenner getrennt ableiten",
+      "Man erweitert Zähler und Nenner mit der konjugierten Größe",
+      "Man setzt den Grenzwert direkt in den Nenner ein",
+      "Man bildet die Stammfunktion von Zähler und Nenner"
     ],
     "question": "Was besagt die Regel von L'Hôpital?",
     "topic": "Grenzwerte"
   },
   {
-    "correct": 1,
-    "explanation": "Nullstellen sind x-Werte, bei denen der Funktionswert gleich null ist – der Graph schneidet oder berührt die x-Achse.",
+    "correct": 0,
+    "explanation": "Zusammenfassen ergibt log₃(x·(x−2)) = 1, also x² − 2x = 3 und damit x² − 2x − 3 = 0 mit x₁ = 3 und x₂ = −1. Der Definitionsbereich verlangt x > 2, deshalb ist x = −1 eine Scheinlösung. Es bleibt x = 3.",
     "options": [
-      "Die Stellen, an denen f'(x) = 0",
-      "Die x-Werte x₀ mit f(x₀) = 0 (Schnittpunkte mit der x-Achse)",
-      "Die Extremstellen der Funktion",
-      "Die Schnittpunkte mit der y-Achse"
+      "x = 3",
+      "x = 3 und x = −1",
+      "x = −1",
+      "x = 5"
     ],
-    "question": "Was sind die Nullstellen einer Funktion f?",
-    "topic": "Kurvendiskussion"
+    "question": "Welche Lösung hat die Gleichung log₃(x) + log₃(x − 2) = 1?",
+    "topic": "Logarithmusgleichungen"
   },
   {
     "correct": 1,
-    "explanation": "Waagerechte Asymptoten y = c entstehen, wenn lim_{x→∞} f(x) = c existiert. Senkrechte Asymptoten treten an Polstellen auf.",
+    "explanation": "Eine waagerechte Asymptote y = c liegt vor, wenn die Funktionswerte für x → ∞ gegen den festen Wert c streben. Senkrechte Asymptoten treten dagegen an Polstellen auf.",
     "options": [
-      "Ein Schnittpunkt mit der x-Achse",
-      "Eine waagerechte Gerade y = c, der sich der Graph für x → ±∞ beliebig nähert",
-      "Ein Extrempunkt bei sehr großem x",
-      "Die Tangente im Wendepunkt"
+      "Ein Schnittpunkt des Graphen mit der x-Achse",
+      "Eine Gerade y = c, der sich der Graph beliebig nähert",
+      "Ein Extrempunkt des Graphen bei sehr großem x",
+      "Die Tangente an den Graphen im Wendepunkt"
     ],
-    "question": "Was ist eine waagerechte Asymptote des Graphen für x → ∞?",
+    "question": "Was ist eine waagerechte Asymptote des Graphen von f für x → ∞?",
     "topic": "Kurvendiskussion"
   },
   {
-    "correct": 1,
-    "explanation": "Charakteristikum exponentiellen Wachstums: f'(t) = k·f(t) – die Änderungsrate ist proportional zur momentanen Größe. Für k > 0 wächst f, für k < 0 nimmt f ab.",
+    "correct": 2,
+    "explanation": "Exponentielles Wachstum erfüllt die Gleichung f'(t) = k · f(t): Je größer der Bestand, desto schneller die Zunahme. Für k > 0 wächst der Bestand, für k < 0 zerfällt er. Eine konstante Änderungsrate führt dagegen zu linearem Wachstum.",
     "options": [
-      "Das Wachstum ist proportional zu t",
-      "Die Änderungsrate ist proportional zur momentanen Größe: f'(t) = k·f(t)",
-      "Das Wachstum ist periodisch",
-      "Die Funktion nimmt immer ab"
+      "Die Änderungsrate ist konstant und hängt nicht vom Bestand ab",
+      "Die Änderungsrate ist proportional zur verstrichenen Zeit t",
+      "Die Änderungsrate ist proportional zum momentanen Bestand",
+      "Die Änderungsrate wechselt periodisch ihr Vorzeichen"
     ],
-    "question": "Was ist das Wachstumsgesetz f(t) = A · e^(k·t) und wie erkennt man exponentielles Wachstum?",
+    "question": "Eine Größe wächst exponentiell. Welche Eigenschaft ist dafür kennzeichnend?",
     "topic": "Exponentialfunktion"
   },
   {
     "correct": 1,
-    "explanation": "Uneigentliche Integrale (z.B. ∫₁^∞ 1/x² dx = 1) werden als Grenzwert berechnet. Sie konvergieren (endlicher Wert) oder divergieren (Grenzwert ∞).",
+    "explanation": "Bei einem uneigentlichen Integral ist eine Integrationsgrenze unendlich oder der Integrand dort nicht definiert. Man berechnet es als Grenzwert und nennt es konvergent, wenn dieser endlich ist – das Integral von 1/x² von 1 bis unendlich hat zum Beispiel den Wert 1.",
     "options": [
-      "Ein Integral mit negativen Grenzen",
-      "Ein Integral mit mindestens einer unendlichen Grenze oder Definitionslücke, das als Grenzwert berechnet wird – konvergiert, wenn der Grenzwert endlich ist",
-      "Ein Integral, dessen Wert negativ ist",
-      "Ein Integral ohne Stammfunktion"
+      "Ein Integral mit negativen Integrationsgrenzen",
+      "Ein Integral mit unendlicher Grenze oder Definitionslücke",
+      "Ein Integral, dessen Wert negativ ausfällt",
+      "Ein Integral, dessen Integrand keine Stammfunktion hat"
     ],
-    "question": "Was ist ein uneigentliches Integral und wann konvergiert es?",
+    "question": "Was ist ein uneigentliches Integral?",
     "topic": "Integralrechnung"
   },
   {
-    "correct": 1,
-    "explanation": "f(x) = e^(g(x)) mit g(x)=3x². Kettenregel: f'(x) = e^(g(x))·g'(x) = e^(3x²)·6x = 6x·e^(3x²).",
+    "correct": 0,
+    "explanation": "Kettenregel mit der äußeren Funktion ln(u) und der inneren Funktion u(x) = 3x² + 1: f'(x) = u'(x)/u(x) = 6x/(3x² + 1).",
     "options": [
-      "e^(3x²)",
-      "6x · e^(3x²)",
-      "3x² · e^(3x²-1)",
-      "e^(6x)"
+      "6x/(3x² + 1)",
+      "1/(3x² + 1)",
+      "6x · ln(3x² + 1)",
+      "1/(6x)"
     ],
-    "question": "Was ist die Ableitung der zusammengesetzten Funktion f(x) = e^(3x²) nach der Kettenregel?",
+    "question": "Was ist die Ableitung von f(x) = ln(3x² + 1)?",
     "topic": "Differentialrechnung"
   },
   {
     "correct": 2,
-    "explanation": "∫₀^π sin(x)dx = [−cos(x)]₀^π = −cos(π) − (−cos(0)) = −(−1) − (−1) = 1 + 1 = 2.",
+    "explanation": "Eine Stammfunktion von sin(x) ist −cos(x). Einsetzen der Grenzen: −cos(π) − (−cos(0)) = 1 + 1 = 2.",
     "options": [
       "0",
       "1",
       "2",
       "π"
     ],
-    "question": "Welchen Wert hat das bestimmte Integral ∫₀^π sin(x)dx?",
+    "question": "Welchen Wert hat das bestimmte Integral von sin(x) über dem Intervall von 0 bis π?",
     "topic": "Integralrechnung"
   }
 ]

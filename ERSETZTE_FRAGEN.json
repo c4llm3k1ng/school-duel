@@ -1,6 +1,6 @@
 {
   "hinweis": "Fragen, die im Qualitaetsdurchlauf durch andere ersetzt wurden. Nicht zwangslaeufig schlecht - meist zu leicht, nicht eindeutig loesbar oder thematisch am falschen Ort. Erzeugt von question-generator/collect_replaced.js. Die Zuordnung ist unscharf: stark umformulierte Fragen koennen faelschlich enthalten sein, deshalb steht bei jedem Eintrag die Nachfolgerin dabei. Diese Datei gehoert NICHT in den Firebase-Abgleich.",
-  "erzeugt": "2026-08-02",
+  "erzeugt": "2026-08-03",
   "fragen": [
     {
       "question": "Was fressen Pflanzenfresser?",
@@ -4731,6 +4731,2951 @@
         "basis": "be65813",
         "ersetztDurch": "Nils hat in drei Klassenarbeiten 12, 15 und 9 Punkte erreicht. Nach der vierten Arbeit beträgt sein Durchschnitt genau 13 Punkte. Wie viele Punkte hatte die vierte Arbeit?",
         "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Berechnen Sie die Determinante der Matrix `A = [[1, 2, 3], [0, 4, 1], [0, 0, 2]]`.",
+      "options": [
+        "16",
+        "8",
+        "12",
+        "0"
+      ],
+      "correct": 1,
+      "explanation": "Für eine Dreiecksmatrix (obere oder untere Dreiecksmatrix) ist die Determinante das Produkt der Elemente auf der Hauptdiagonale. In diesem Fall sind die Diagonalelemente 1, 4 und 2. \nDie Determinante ist daher `1 * 4 * 2 = 8`.",
+      "topic": "Matrizen (Determinante)",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 7,
+        "basis": "1914be4",
+        "ersetztDurch": "Berechnen Sie den Quotienten z₁ geteilt durch z₂ für z₁ = 4 + 7i und z₂ = 2 + i.",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Vereinfachen Sie den Ausdruck $\\frac{x^5 \\cdot \\sqrt{x}}{x^2}$ für $x > 0$.",
+      "options": [
+        "A) $x^3 \\sqrt{x}$",
+        "B) $x^4$",
+        "C) $x^{3.5}$",
+        "D) $x^{2.5}$"
+      ],
+      "correct": 2,
+      "explanation": "Der Ausdruck kann umgeschrieben werden als $\\frac{x^5 \\cdot x^{0.5}}{x^2}$. Nach den Potenzgesetzen addieren sich die Exponenten bei Multiplikation und subtrahieren sich bei Division: $x^{5+0.5-2} = x^{5.5-2} = x^{3.5}$.",
+      "topic": "Potenzgesetze und Wurzeln",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 8,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Wert hat der Ausdruck (x⁵ · √x) : x² für x = 4?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Was ist die Ableitung der Potenzfunktion f(x) = xⁿ nach der Potenzregel?",
+      "options": [
+        "f'(x) = n · xⁿ",
+        "f'(x) = n · x^(n−1)",
+        "f'(x) = xⁿ⁻¹",
+        "f'(x) = (n+1) · xⁿ"
+      ],
+      "correct": 1,
+      "explanation": "Potenzregel: f(x) = xⁿ → f'(x) = n · x^(n−1). Der Exponent wird als Faktor vorgestellt und um 1 verringert.",
+      "topic": "Differentialrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 16,
+        "basis": "1914be4",
+        "ersetztDurch": "Bestimmen Sie alle Lösungen der Gleichung x² + 4x + 13 = 0 in der Menge der komplexen Zahlen ℂ.",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Was ist die Ableitung einer Konstante f(x) = c?",
+      "options": [
+        "f'(x) = c",
+        "f'(x) = 0",
+        "f'(x) = 1",
+        "f'(x) = c · x"
+      ],
+      "correct": 1,
+      "explanation": "Konstante Funktionen haben die Steigung 0 – ihr Graph ist waagerecht, daher f'(x) = 0.",
+      "topic": "Differentialrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 17,
+        "basis": "1914be4",
+        "ersetztDurch": "Berechnen Sie die Potenz (1 + i)⁸.",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Wie lautet die Produktregel für die Ableitung von f(x) = u(x) · v(x)?",
+      "options": [
+        "(u · v)' = u' · v'",
+        "(u · v)' = u' · v + u · v'",
+        "(u · v)' = u / v' + v / u'",
+        "(u · v)' = (u + v)'"
+      ],
+      "correct": 1,
+      "explanation": "Produktregel: (u · v)' = u' · v + u · v'. Beide Faktoren werden einmal abgeleitet, während der andere unverändert bleibt.",
+      "topic": "Differentialrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 18,
+        "basis": "1914be4",
+        "ersetztDurch": "Bestimmen Sie die Lösung der Gleichung log₃(x + 6) - log₃(x - 2) = 1.",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wie lautet die Quotientenregel für f(x) = u(x) / v(x)?",
+      "options": [
+        "(u/v)' = u' · v'",
+        "(u/v)' = (u' · v − u · v') / v²",
+        "(u/v)' = u' · v + u · v'",
+        "(u/v)' = u / v'"
+      ],
+      "correct": 1,
+      "explanation": "Quotientenregel: (u/v)' = (u'·v − u·v') / v². Merkhilfe: 'Zähler-Strich mal Nenner minus Zähler mal Nenner-Strich, durch Nenner-Quadrat'.",
+      "topic": "Differentialrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 19,
+        "basis": "1914be4",
+        "ersetztDurch": "Lösen Sie die Gleichung 5ˣ = 12 exakt nach x auf.",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Wie lautet die Kettenregel für die Ableitung von f(g(x))?",
+      "options": [
+        "(f∘g)' = f'(x) · g'(x)",
+        "(f∘g)' = f'(g(x)) · g'(x)",
+        "(f∘g)' = f(g'(x))",
+        "(f∘g)' = f'(x) + g'(x)"
+      ],
+      "correct": 1,
+      "explanation": "Kettenregel: (f(g(x)))' = f'(g(x)) · g'(x). Die äußere Funktion wird abgeleitet (mit dem inneren Argument) und mit der Ableitung der inneren Funktion multipliziert.",
+      "topic": "Differentialrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 20,
+        "basis": "1914be4",
+        "ersetztDurch": "Welche Lösung hat das lineare Gleichungssystem x + y + z = 6, x - y + z = 2 und 2x + y - z = 1?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist die Ableitung von f(x) = sin(x)?",
+      "options": [
+        "cos(x)",
+        "−cos(x)",
+        "sin(x)",
+        "−sin(x)"
+      ],
+      "correct": 0,
+      "explanation": "f(x) = sin(x) → f'(x) = cos(x). Die weiteren zyklischen Ableitungen: cos → −sin → −cos → sin → …",
+      "topic": "Differentialrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 21,
+        "basis": "1914be4",
+        "ersetztDurch": "Für welches a besitzt das lineare Gleichungssystem x + 2y = 4 und 3x + ay = 5 keine Lösung?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist die Ableitung von f(x) = eˣ?",
+      "options": [
+        "e^(x−1)",
+        "eˣ",
+        "x · e^(x−1)",
+        "e"
+      ],
+      "correct": 1,
+      "explanation": "Die Exponentialfunktion eˣ ist ihre eigene Ableitung: (eˣ)' = eˣ. Das macht sie in der Analysis besonders wichtig.",
+      "topic": "Differentialrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 22,
+        "basis": "1914be4",
+        "ersetztDurch": "Bestimmen Sie die Lösungsmenge der Wurzelgleichung √(x + 7) = x - 5.",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Was ist die Ableitung von f(x) = ln(x)?",
+      "options": [
+        "x",
+        "1/x",
+        "ln(x)",
+        "eˣ"
+      ],
+      "correct": 1,
+      "explanation": "f(x) = ln(x) → f'(x) = 1/x (für x > 0). Folgt aus der Umkehrfunktionsregel: ln ist Umkehrfunktion von eˣ.",
+      "topic": "Differentialrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 23,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Koeffizienten hat das Glied mit x³ in der Entwicklung von (2x - 1)⁵?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Was ist die notwendige Bedingung für einen Extrempunkt von f?",
+      "options": [
+        "f(x₀) = 0",
+        "f'(x₀) = 0",
+        "f''(x₀) = 0",
+        "f'(x₀) > 0"
+      ],
+      "correct": 1,
+      "explanation": "Notwendige Bedingung: An jedem lokalen Extrempunkt muss f'(x₀) = 0 gelten (waagerechte Tangente). Sie ist nicht hinreichend – es könnte auch ein Sattelpunkt sein.",
+      "topic": "Kurvendiskussion",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 24,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Wert hat der Ausdruck log₅(2) + log₅(50) - log₅(4)?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist die hinreichende Bedingung für ein lokales Minimum an der Stelle x₀?",
+      "options": [
+        "f'(x₀) = 0 und f''(x₀) < 0",
+        "f'(x₀) = 0 und f''(x₀) > 0",
+        "f''(x₀) = 0",
+        "f'(x₀) > 0"
+      ],
+      "correct": 1,
+      "explanation": "f'(x₀) = 0 und f''(x₀) > 0: lokales Minimum (nach oben gewölbt). Bei f''(x₀) < 0 liegt ein Maximum vor.",
+      "topic": "Kurvendiskussion",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 25,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Polynom dritten Grades mit ausschließlich reellen Koeffizienten hat die Nullstellen x₁ = 2 und x₂ = 1 + i. Wie lautet die dritte Nullstelle?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wann hat eine Funktion einen Wendepunkt an der Stelle x₀?",
+      "options": [
+        "f'(x₀) = 0",
+        "f''(x₀) = 0 und Vorzeichenwechsel von f'' (hinreichend: f'''(x₀) ≠ 0)",
+        "f(x₀) = 0",
+        "f''(x₀) > 0"
+      ],
+      "correct": 1,
+      "explanation": "Ein Wendepunkt liegt vor, wenn f'' das Vorzeichen wechselt. Notwendig: f''(x₀) = 0; hinreichend: f'''(x₀) ≠ 0.",
+      "topic": "Kurvendiskussion",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 26,
+        "basis": "1914be4",
+        "ersetztDurch": "Geben Sie die Lösungsmenge der Ungleichung (x - 1)/(x + 2) > 0 an.",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Was ist ein Sattelpunkt (Terrassenpunkt)?",
+      "options": [
+        "Ein Punkt mit f(x₀) = 0",
+        "Ein Punkt mit f'(x₀) = 0, aber ohne Vorzeichenwechsel von f' – kein Extrempunkt (z.B. f(x)=x³ bei x=0)",
+        "Ein Hochpunkt der Funktion",
+        "Der Schnittpunkt mit der y-Achse"
+      ],
+      "correct": 1,
+      "explanation": "Bei einem Sattelpunkt gilt f'(x₀) = 0 und auch f''(x₀) = 0, aber f' wechselt nicht das Vorzeichen – die Monotonie ändert sich nicht.",
+      "topic": "Kurvendiskussion",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 27,
+        "basis": "1914be4",
+        "ersetztDurch": "Geben Sie die Lösungsmenge der Ungleichung |2x - 3| < 7 an.",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was bedeutet streng monoton fallend auf einem Intervall?",
+      "options": [
+        "f'(x) = 0 auf dem Intervall",
+        "f'(x) < 0 auf dem gesamten Intervall",
+        "f hat nur Minima",
+        "f hat keine Extrempunkte"
+      ],
+      "correct": 1,
+      "explanation": "Streng monoton fallend: Für alle x im Intervall gilt f'(x) < 0, d.h. je größer x, desto kleiner f(x).",
+      "topic": "Kurvendiskussion",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 28,
+        "basis": "1914be4",
+        "ersetztDurch": "Was ergibt die Polynomdivision (x³ − 4x² + x + 6) : (x − 3)?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Was ist die Stammfunktion von f(x) = eˣ?",
+      "options": [
+        "e^(x−1) + C",
+        "eˣ + C",
+        "x · eˣ + C",
+        "e · xˣ + C"
+      ],
+      "correct": 1,
+      "explanation": "∫eˣ dx = eˣ + C. Die Exponentialfunktion ist zugleich ihre eigene Stammfunktion.",
+      "topic": "Integralrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 31,
+        "basis": "1914be4",
+        "ersetztDurch": "Welche Lösungen hat die Gleichung e²ˣ − 5eˣ + 6 = 0?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Was ergibt ∫₀¹ x dx?",
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "2"
+      ],
+      "correct": 1,
+      "explanation": "∫₀¹ x dx = [x²/2]₀¹ = 1/2 − 0 = 1/2.",
+      "topic": "Integralrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 36,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Wert hat das Produkt (3 + 2i) · (1 − 4i)?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist der natürliche Logarithmus ln(x)?",
+      "options": [
+        "Der Logarithmus zur Basis 10",
+        "Die Umkehrfunktion von eˣ (Logarithmus zur Basis e ≈ 2,718)",
+        "Die Ableitung von eˣ",
+        "Der Logarithmus zur Basis 2"
+      ],
+      "correct": 1,
+      "explanation": "ln(x) = logₑ(x) ist die Umkehrfunktion der natürlichen Exponentialfunktion. Es gilt ln(eˣ) = x und e^(ln x) = x.",
+      "topic": "Exponentialfunktion",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 39,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Wert hat der Term 2·ln(3) + ln(4) − ln(6)?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Was ist ein Vektor im mathematischen Sinne?",
+      "options": [
+        "Eine einzelne Zahl mit Vorzeichen",
+        "Eine gerichtete Größe mit Betrag und Richtung, dargestellt als geordnetes Tupel von Komponenten",
+        "Ein Punkt im Koordinatensystem",
+        "Eine Gerade im Raum"
+      ],
+      "correct": 1,
+      "explanation": "Ein Vektor hat Betrag (Länge) und Richtung. Im ℝⁿ wird er als Spalte oder Zeile mit n Komponenten geschrieben.",
+      "topic": "Vektorrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 41,
+        "basis": "1914be4",
+        "ersetztDurch": "Für welchen Parameter a hat das Gleichungssystem x + 2y = 3 und 2x + a·y = 6 unendlich viele Lösungen?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was sind die Nullstellen einer Funktion f?",
+      "options": [
+        "Die Stellen, an denen f'(x) = 0",
+        "Die x-Werte x₀ mit f(x₀) = 0 (Schnittpunkte mit der x-Achse)",
+        "Die Extremstellen der Funktion",
+        "Die Schnittpunkte mit der y-Achse"
+      ],
+      "correct": 1,
+      "explanation": "Nullstellen sind x-Werte, bei denen der Funktionswert gleich null ist – der Graph schneidet oder berührt die x-Achse.",
+      "topic": "Kurvendiskussion",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 49,
+        "basis": "1914be4",
+        "ersetztDurch": "Welche Lösung hat die Gleichung log₃(x) + log₃(x − 2) = 1?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Was ist das Wachstumsgesetz f(t) = A · e^(k·t) und wie erkennt man exponentielles Wachstum?",
+      "options": [
+        "Das Wachstum ist proportional zu t",
+        "Die Änderungsrate ist proportional zur momentanen Größe: f'(t) = k·f(t)",
+        "Das Wachstum ist periodisch",
+        "Die Funktion nimmt immer ab"
+      ],
+      "correct": 1,
+      "explanation": "Charakteristikum exponentiellen Wachstums: f'(t) = k·f(t) – die Änderungsrate ist proportional zur momentanen Größe. Für k > 0 wächst f, für k < 0 nimmt f ab.",
+      "topic": "Exponentialfunktion",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Algebra.json",
+        "index": 51,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Größe wächst exponentiell. Welche Eigenschaft ist dafür kennzeichnend?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Was ist die Ableitung einer Konstante f(x) = c?",
+      "options": [
+        "f'(x) = c",
+        "f'(x) = 0",
+        "f'(x) = 1",
+        "f'(x) = c · x"
+      ],
+      "correct": 1,
+      "explanation": "Konstante Funktionen haben die Steigung 0 – ihr Graph ist waagerecht, daher f'(x) = 0.",
+      "topic": "Differentialrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Analysis.json",
+        "index": 1,
+        "basis": "1914be4",
+        "ersetztDurch": "Welcher Zusammenhang besteht zwischen Stetigkeit und Differenzierbarkeit an einer Stelle x₀?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Was ist die notwendige Bedingung für einen Extrempunkt von f?",
+      "options": [
+        "f(x₀) = 0",
+        "f'(x₀) = 0",
+        "f''(x₀) = 0",
+        "f'(x₀) > 0"
+      ],
+      "correct": 1,
+      "explanation": "Notwendige Bedingung: An jedem lokalen Extrempunkt muss f'(x₀) = 0 gelten (waagerechte Tangente). Sie ist nicht hinreichend – es könnte auch ein Sattelpunkt sein.",
+      "topic": "Kurvendiskussion",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Analysis.json",
+        "index": 8,
+        "basis": "1914be4",
+        "ersetztDurch": "Welche Bedingung ist an einer inneren lokalen Extremstelle x₀ einer differenzierbaren Funktion notwendig?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Was ergibt ∫₀¹ x dx?",
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "2"
+      ],
+      "correct": 1,
+      "explanation": "∫₀¹ x dx = [x²/2]₀¹ = 1/2 − 0 = 1/2.",
+      "topic": "Integralrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Analysis.json",
+        "index": 20,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Wert hat das bestimmte Integral ∫₀² (3x² − 4x)dx?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist ein Vektor im mathematischen Sinne?",
+      "options": [
+        "Eine einzelne reelle Zahl mit Vorzeichen, die als skalare Größe ohne Richtungsangabe vorliegt",
+        "Eine gerichtete Größe mit Betrag und Richtung, dargestellt als geordnetes Tupel von Komponenten",
+        "Ein fester Punkt P(x₁, x₂) im Koordinatensystem mit bestimmten Koordinaten",
+        "Eine Gerade im Raum, beschrieben durch einen Aufpunkt und einen Richtungsvektor"
+      ],
+      "correct": 1,
+      "explanation": "Ein Vektor hat Betrag (Länge) und Richtung. Im ℝⁿ wird er als Spalte oder Zeile mit n Komponenten geschrieben.",
+      "topic": "Vektorrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Analysis.json",
+        "index": 25,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Rechteck hat den Umfang 20 cm. Welchen größten Flächeninhalt kann es haben?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Was ist das Skalarprodukt zweier Vektoren a und b?",
+      "options": [
+        "Ein neuer Vektor senkrecht zu a und b mit dem Betrag |a|·|b|·sinα (das Kreuzprodukt)",
+        "Eine skalare Zahl: a·b = |a|·|b|·cos(α) (α = Winkel zwischen beiden)",
+        "Die komponentenweise Summe: (a₁+b₁, a₂+b₂, a₃+b₃) – also der Summenvektor a + b",
+        "Das Produkt der Beträge |a|·|b|, ohne Berücksichtigung des Winkels zwischen beiden"
+      ],
+      "correct": 1,
+      "explanation": "Das Skalarprodukt a·b = a₁b₁ + a₂b₂ + … = |a|·|b|·cosα ist ein Skalar. Es wird für Winkelberechnungen und Orthogonalitätsprüfungen genutzt.",
+      "topic": "Vektorrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Analysis.json",
+        "index": 26,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie lautet eine Stammfunktion von f(x) = x · eˣ?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was gilt, wenn das Skalarprodukt zweier Vektoren gleich null ist?",
+      "options": [
+        "Die Vektoren sind parallel",
+        "Die Vektoren sind orthogonal (senkrecht zueinander)",
+        "Die Vektoren sind gleich lang",
+        "Einer der Vektoren ist der Nullvektor"
+      ],
+      "correct": 1,
+      "explanation": "a·b = 0 ⟺ cosα = 0 ⟺ α = 90°: Die Vektoren stehen senkrecht aufeinander (Orthogonalitätsbedingung).",
+      "topic": "Vektorrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Analysis.json",
+        "index": 27,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie lautet eine Stammfunktion von f(x) = 2x / (x² + 1)?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist das Kreuzprodukt a × b zweier Vektoren im ℝ³?",
+      "options": [
+        "Ein Skalar gleich |a|·|b|·cosα – das ist das Skalarprodukt, kein Kreuzprodukt",
+        "Ein Vektor senkrecht zu a und b mit Betrag |a|·|b|·sinα",
+        "Die komponentenweise Summe der Vektoren a und b, also a + b",
+        "Das Negative des Skalarprodukts: −(a·b) = −|a|·|b|·cosα (kein Vektor, sondern ein Skalar)"
+      ],
+      "correct": 1,
+      "explanation": "Das Kreuzprodukt a × b steht senkrecht auf beiden Ausgangsvektoren. Sein Betrag |a×b| = |a|·|b|·sinα entspricht der Fläche des Parallelogramms.",
+      "topic": "Vektorrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Analysis.json",
+        "index": 28,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Grenzwert hat f(x) = (3x² − x) / (2x² + 5) für x → ∞?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie lautet die Parametergleichung einer Geraden g im Raum?",
+      "options": [
+        "g: x = p + t·u, t ∈ ℝ (p = Stützvektor, u = Richtungsvektor)",
+        "g: ax + by + cz = d (Koordinatenform einer Ebene, keine Geradendarstellung)",
+        "g: x² + y² + z² = r² (Gleichung einer Kugel mit Radius r um den Ursprung)",
+        "g: n·x = d (Normalenform einer Ebene mit Normalenvektor n)"
+      ],
+      "correct": 0,
+      "explanation": "Parameterdarstellung: x = p + t·u. Für jeden Parameterwert t ergibt sich ein Punkt auf der Geraden. p ist ein Aufpunkt, u gibt die Richtung an.",
+      "topic": "Analytische Geometrie",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Analysis.json",
+        "index": 29,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Grenzwert hat f(x) = x · e⁻ˣ für x → ∞?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist die Koordinatenform einer Ebene im Raum?",
+      "options": [
+        "E: x = p + s·u + t·v, mit Aufpunkt p und zwei Richtungsvektoren u, v (Parameterform)",
+        "E: n · (x − p) = 0, wobei n der Normalenvektor und p ein Aufpunkt ist (Normalenform)",
+        "E: ax + by + cz = d, wobei (a,b,c) der Normalenvektor der Ebene ist",
+        "E: |x − p| = r, die Gleichung einer Kugel mit Mittelpunkt p und Radius r"
+      ],
+      "correct": 2,
+      "explanation": "Koordinatenform: ax + by + cz = d. Der Vektor n = (a,b,c) ist der Normalenvektor. Man gewinnt ihn aus der Parameterform durch Kreuzprodukt der Richtungsvektoren.",
+      "topic": "Analytische Geometrie",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Analysis.json",
+        "index": 30,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie lautet die Gleichung der Tangente an den Graphen von f(x) = x² im Punkt P(2 | 4)?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Was sind die Nullstellen einer Funktion f?",
+      "options": [
+        "Die Stellen x₀, an denen f'(x₀) = 0 gilt – also die Extremstellen und Sattelpunkte",
+        "Die x-Werte x₀ mit f(x₀) = 0 (Schnittpunkte mit der x-Achse)",
+        "Die Stellen x₀, an denen f seinen größten oder kleinsten Wert annimmt",
+        "Die Schnittpunkte des Graphen mit der y-Achse bei x = 0"
+      ],
+      "correct": 1,
+      "explanation": "Nullstellen sind x-Werte, bei denen der Funktionswert gleich null ist – der Graph schneidet oder berührt die x-Achse.",
+      "topic": "Kurvendiskussion",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Analysis.json",
+        "index": 33,
+        "basis": "1914be4",
+        "ersetztDurch": "Was folgt für den Graphen von f auf einem Intervall, in dem durchgehend f''(x) < 0 gilt?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welcher Wert ist im Definitionsbereich der rationalen Funktion f(x) = (x^2 - 9) / (2x - 6) ausgeschlossen?",
+      "options": [
+        "x ≠ 3",
+        "x ≠ -3",
+        "x ≠ 0",
+        "x ≠ 3 und x ≠ -3"
+      ],
+      "correct": 0,
+      "explanation": "Der Nenner eines Bruches darf niemals Null sein. Setzt man den Nenner (2x - 6) gleich Null, erhält man 2x = 6, also x = 3. Daher muss x ≠ 3 gelten, um eine Division durch Null zu vermeiden.",
+      "topic": "Definitionsbereich von Bruchtermen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Bruchrechnung.json",
+        "index": 0,
+        "basis": "1914be4",
+        "ersetztDurch": "Welche Bedingung muss für x gelten, damit die Funktion f(x) = (x² - 9)/(2x - 6) definiert ist?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Lösen Sie die Gleichung nach x: (x-1)/x = 2/(x-1). Beachten Sie den Definitionsbereich.",
+      "options": [
+        "x = 2 + √3",
+        "x = 2 - √3",
+        "x = 1",
+        "x = 0"
+      ],
+      "correct": 0,
+      "explanation": "Zuerst den Definitionsbereich beachten: x ≠ 0 und x ≠ 1. Multiplizieren Sie mit den Nennern, um die Brüche zu entfernen: (x-1)(x-1) = 2x, also (x-1)^2 = 2x. Das ergibt x^2 - 2x + 1 = 2x. Umstellen führt zu x^2 - 4x + 1 = 0. Mithilfe der quadratischen Lösungsformel (Mitternachtsformel) x = (-b ± √(b^2 - 4ac)) / (2a) erhält man x = (4 ± √(16 - 4*1*1)) / 2 = (4 ± √12) / 2 = (4 ± 2√3) / 2 = 2 ± √3. Die Option x = 2 + √3 ist eine der Lösungen.",
+      "topic": "Gleichungen mit Bruchtermen lösen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Bruchrechnung.json",
+        "index": 5,
+        "basis": "1914be4",
+        "ersetztDurch": "Bestimmen Sie die Lösungsmenge der Bruchgleichung x²/(x - 2) = 4/(x - 2).",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Vereinfachen Sie den folgenden Term: (x^2 - 4) / (x - 2)",
+      "options": [
+        "x - 2",
+        "x + 2",
+        "x^2 - 2",
+        "1 / (x - 2)"
+      ],
+      "correct": 1,
+      "explanation": "Der Zähler ist eine dritte binomische Formel: x^2 - 4 = (x - 2)(x + 2). Nach Kürzen mit (x - 2) bleibt x + 2. Beachten Sie, dass x ungleich 2 sein muss.",
+      "topic": "Vereinfachen rationaler Ausdrücke",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Bruchrechnung.json",
+        "index": 8,
+        "basis": "1914be4",
+        "ersetztDurch": "Für 5/((x - 3)(x + 2)) = A/(x - 3) + B/(x + 2) sollen A und B bestimmt werden. Welche Werte ergeben sich?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Addieren Sie die Brüche: 1 / (x + 1) + 1 / (x - 1)",
+      "options": [
+        "2x / (x^2 - 1)",
+        "2 / (x^2 - 1)",
+        "x^2 / (x^2 - 1)",
+        "(x^2 + 1) / (x^2 - 1)"
+      ],
+      "correct": 0,
+      "explanation": "Um Brüche zu addieren, benötigt man einen gemeinsamen Nenner. Hier ist der gemeinsame Nenner (x + 1)(x - 1) = x^2 - 1. Erweitern der Brüche und Addition der Zähler führt zu (x-1 + x+1) / (x^2-1) = 2x / (x^2-1).",
+      "topic": "Addition rationaler Ausdrücke",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Bruchrechnung.json",
+        "index": 9,
+        "basis": "1914be4",
+        "ersetztDurch": "Fassen Sie zusammen und kürzen Sie so weit wie möglich: 1/(x - 1) - 2/(x² - 1)",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Was ist ein Vektor in der Mathematik?",
+      "options": [
+        "Eine Zahl mit Vorzeichen (skalare Größe)",
+        "Ein mathematisches Objekt mit Betrag UND Richtung (z.B. Verschiebung, Kraft, Geschwindigkeit)",
+        "Eine Folge von Zahlen ohne geometrische Bedeutung",
+        "Ein einzelner Punkt im Koordinatensystem"
+      ],
+      "correct": 1,
+      "explanation": "Vektoren besitzen Betrag (Länge) und Richtung. Im Gegensatz dazu haben Skalare (z.B. Temperatur, Masse) nur einen Betrag. Vektoren werden als Pfeil oder als Spaltenvektor dargestellt.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 16,
+        "basis": "1914be4",
+        "ersetztDurch": "Gegeben sind die Punkte A(2|−1|4) und B(6|3|−2). Welche Koordinaten hat der Mittelpunkt M der Strecke AB?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Wie berechnet man den Betrag (die Länge) eines Vektors v = (a, b, c)?",
+      "options": [
+        "|v| = a + b + c",
+        "|v| = Wurzel aus (a² + b² + c²)",
+        "|v| = a · b · c",
+        "|v| = (a² + b² + c²) ohne Wurzel"
+      ],
+      "correct": 1,
+      "explanation": "|v| = sqrt(a² + b² + c²) – Verallgemeinerung des Satzes von Pythagoras auf den dreidimensionalen Raum. Beispiel: v = (3, 4, 0) → |v| = 5.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 17,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Flächeninhalt hat das Dreieck mit den Eckpunkten A(1|1|1), B(3|2|1) und C(2|4|3)?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Was ist ein Einheitsvektor?",
+      "options": [
+        "Ein Vektor mit Betrag 0 (Nullvektor)",
+        "Ein Vektor mit Betrag 1 – zeigt nur die Richtung an, ohne eine Länge zu haben",
+        "Der kürzeste Vektor in einem Raum",
+        "Ein Vektor mit ganzzahligen Komponenten"
+      ],
+      "correct": 1,
+      "explanation": "Einheitsvektor: |e| = 1. Jeder Vektor v ≠ 0 lässt sich normieren: e = v / |v|. Basiseinheitsvektoren: e₁ = (1,0,0), e₂ = (0,1,0), e₃ = (0,0,1).",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 18,
+        "basis": "1914be4",
+        "ersetztDurch": "Bestimme den Einheitsvektor, der dieselbe Richtung hat wie v = (1|2|−2).",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Wie lautet der Einheitsvektor e in Richtung eines Vektors v?",
+      "options": [
+        "e = v · |v|",
+        "e = v / |v| (Vektor geteilt durch seinen Betrag)",
+        "e = |v| / v",
+        "e = v − |v|"
+      ],
+      "correct": 1,
+      "explanation": "Normierung: e = v / |v|. Damit hat e den Betrag 1. Beispiel: v = (0, 6, 0) → e = (0, 1, 0). Anwendung: Richtungseinheitsvektoren in der Physik.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 19,
+        "basis": "1914be4",
+        "ersetztDurch": "Für welchen Wert von a stehen die Vektoren v = (a|2|−1) und w = (3|a|5) senkrecht aufeinander?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist das Skalarprodukt (inneres Produkt) zweier Vektoren a und b?",
+      "options": [
+        "Ein Vektor senkrecht zu beiden (das ist das Kreuzprodukt)",
+        "a · b = a₁·b₁ + a₂·b₂ + a₃·b₃ – komponentenweise Multiplikation, aufsummiert; das Ergebnis ist eine Zahl (Skalar)",
+        "a · b = |a| · |b| (ohne Winkelterm)",
+        "a · b = a₁·b₁ · a₂·b₂ · a₃·b₃ (Produkt der Produkte)"
+      ],
+      "correct": 1,
+      "explanation": "Skalarprodukt: a · b = Σ aᵢ·bᵢ = |a|·|b|·cos(φ). Ergibt einen Skalar, keine Richtung. Anwendungen: Winkelberechnung, Orthogonalitätsprüfung, Projektion.",
+      "topic": "Skalarprodukt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 20,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Winkel schließen die Vektoren a = (2|2|1) und b = (0|3|4) ein?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Was bedeutet es, wenn das Skalarprodukt zweier Vektoren gleich 0 ist?",
+      "options": [
+        "Die Vektoren sind parallel zueinander",
+        "Die Vektoren stehen senkrecht aufeinander (orthogonal) – da cos(90°) = 0",
+        "Mindestens einer der Vektoren ist der Nullvektor",
+        "Die Vektoren haben denselben Betrag"
+      ],
+      "correct": 1,
+      "explanation": "a · b = 0 ↔ a ⊥ b (bei a ≠ 0 und b ≠ 0). Grundlage für Senkrechtigkeitsprüfungen und die Bestimmung von Normalenvektoren.",
+      "topic": "Skalarprodukt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 21,
+        "basis": "1914be4",
+        "ersetztDurch": "Berechne das Kreuzprodukt a × b der Vektoren a = (1|2|3) und b = (4|5|6).",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Wie berechnet man den Winkel φ zwischen zwei Vektoren a und b?",
+      "options": [
+        "cos(φ) = |a| · |b|",
+        "cos(φ) = (a · b) / (|a| · |b|)",
+        "sin(φ) = (a · b) / (|a| · |b|)",
+        "tan(φ) = (a · b) / (|a| · |b|)"
+      ],
+      "correct": 1,
+      "explanation": "Winkelformel: cos(φ) = (a · b) / (|a| · |b|). Damit: φ = arccos(...). Gilt für φ ∈ [0°, 180°]. Ergebnis: spitzer Winkel (cos > 0), rechter (cos = 0), stumpfer (cos < 0).",
+      "topic": "Skalarprodukt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 22,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Abstand hat der Punkt P(4|3|−1) von der Geraden g: x = (1|0|−1) + t · (2|1|−2)?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist der Ortsvektor eines Punktes P(x₁, x₂, x₃)?",
+      "options": [
+        "Der Verbindungsvektor von P zu einem anderen Punkt",
+        "Der Vektor vom Ursprung O(0,0,0) zum Punkt P – hat dieselben Komponenten wie die Koordinaten von P",
+        "Die Summe der Koordinaten von P",
+        "Der Betrag der Koordinaten von P"
+      ],
+      "correct": 1,
+      "explanation": "Ortsvektor OP = (x₁, x₂, x₃). Er zeigt vom Ursprung zum Punkt P. Im Unterschied zum freien Vektor (ortsunabhängig) ist der Ortsvektor an den Ursprung gebunden.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 23,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Schnittwinkel schließt die Gerade g: x = (0|1|1) + t · (2|−1|2) mit der Ebene E: x + 2y + 2z = 7 ein?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Wie lautet der Verbindungsvektor von Punkt A nach Punkt B?",
+      "options": [
+        "AB = OA + OB",
+        "AB = OB − OA (Ortsvektor von B minus Ortsvektor von A)",
+        "AB = OA − OB",
+        "AB = |OA| − |OB|"
+      ],
+      "correct": 1,
+      "explanation": "Verbindungsvektor AB = OB − OA. Beispiel: A = (1,2,3), B = (4,6,3) → AB = (3,4,0). Länge: |AB| = 5 (Abstand von A nach B).",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 24,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie liegen die Geraden g: x = (1|2|0) + t · (1|1|1) und h: x = (2|1|3) + s · (2|2|2) zueinander?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wie lautet die Parameterform einer Geraden g durch Punkt A mit Richtungsvektor v?",
+      "options": [
+        "g: x = A × v (Kreuzprodukt)",
+        "g: x = A + t · v, t ∈ R (Aufpunkt plus Vielfaches des Richtungsvektors)",
+        "g: x = t · A + v",
+        "g: x = A · t · v"
+      ],
+      "correct": 1,
+      "explanation": "Geradengleichung: x = A + t · v. t ist der reelle Parameter; für jeden Wert von t liegt x auf der Geraden. v ≠ 0 ist der Richtungsvektor.",
+      "topic": "Geraden",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 26,
+        "basis": "1914be4",
+        "ersetztDurch": "Bestimme den Schnittpunkt der Geraden g: x = (1|0|2) + t · (1|2|−1) und h: x = (3|4|0) + s · (0|1|1).",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Was ist ein Normalvektor einer Ebene?",
+      "options": [
+        "Ein Vektor, der in der Ebene liegt",
+        "Ein Vektor, der senkrecht auf der Ebene steht (auf allen Vektoren in der Ebene senkrecht)",
+        "Der längste Vektor in der Ebene",
+        "Der Richtungsvektor der Schnittgeraden zweier Ebenen"
+      ],
+      "correct": 1,
+      "explanation": "Normalenvektor n steht senkrecht auf allen Vektoren, die in der Ebene liegen. Bei der Normalenform gilt: n · (x − A) = 0. Das Kreuzprodukt zweier Spannvektoren liefert n.",
+      "topic": "Ebenen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 28,
+        "basis": "1914be4",
+        "ersetztDurch": "Die Ebene E wird von u = (1|2|−1) und v = (2|0|3) aufgespannt. Welcher Vektor steht senkrecht auf E?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Wie lautet die Koordinatenform (allgemeine Darstellung) einer Ebene?",
+      "options": [
+        "E: n₁·x₁ − n₂·x₂ − n₃·x₃ = d",
+        "E: n₁·x₁ + n₂·x₂ + n₃·x₃ = d, wobei d = n · A (Aufpunkt eingesetzt)",
+        "E: x₁ + x₂ + x₃ = 1 (Achsenabschnittsform nur im Spezialfall)",
+        "E: n₁·x₁ + n₂·x₂ = d (nur 2D)"
+      ],
+      "correct": 1,
+      "explanation": "Koordinatenform: n₁x₁ + n₂x₂ + n₃x₃ = d. Aus der Normalenform durch Ausmultiplizieren hergeleitet. Ermöglicht einfaches Einsetzen von Punkten zur Lageprüfung.",
+      "topic": "Ebenen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 30,
+        "basis": "1914be4",
+        "ersetztDurch": "Welcher Punkt liegt in der Ebene E: 3x₁ − x₂ + 2x₃ = 12?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Was gibt der Betrag |a × b| des Kreuzprodukts geometrisch an?",
+      "options": [
+        "Den Winkel zwischen a und b",
+        "Den Flächeninhalt des von a und b aufgespannten Parallelogramms",
+        "Das Volumen des aufgespannten Quaders",
+        "Den Abstand der Endpunkte der beiden Vektoren"
+      ],
+      "correct": 1,
+      "explanation": "|a × b| = |a| · |b| · sin(φ) = Fläche des Parallelogramms. Fläche des Dreiecks = (1/2) · |a × b|. Nützlich für Dreiecksflächenberechnungen im Raum.",
+      "topic": "Kreuzprodukt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 33,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Flächeninhalt hat das von a = (2|2|1) und b = (1|−2|2) aufgespannte Parallelogramm?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist das Spatprodukt [a, b, c]?",
+      "options": [
+        "Das Skalarprodukt dreier Vektoren (nicht definiert)",
+        "a · (b × c) – das Ergebnis ist ein Skalar; sein Betrag ist das Volumen des von a, b, c aufgespannten Parallelflachs (Spat)",
+        "Das Kreuzprodukt dreier Vektoren (nicht definiert)",
+        "Die Summe der Beträge dreier Vektoren"
+      ],
+      "correct": 1,
+      "explanation": "Spatprodukt: V = |a · (b × c)|. Ist das Spatprodukt = 0, sind die drei Vektoren linear abhängig (komplanar). Volumen Tetraeder = (1/6) · |Spatprodukt|.",
+      "topic": "Kreuzprodukt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 34,
+        "basis": "1914be4",
+        "ersetztDurch": "Welches Volumen hat der von a = (1|0|2), b = (3|1|0) und c = (0|2|1) aufgespannte Spat?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie prüft man, ob zwei Geraden g₁ und g₂ parallel, identisch, schneidend oder windschief sind?",
+      "options": [
+        "Nur durch Vergleich der Beträge der Richtungsvektoren",
+        "Erst prüfen ob Richtungsvektoren parallel (linear abhängig); falls ja: Aufpunkt einsetzen (identisch oder parallel); falls nein: Gleichungssystem lösen – konsistent (schneidend) oder inkonsistent (windschief)",
+        "Durch Berechnung des Skalarprodukts der Richtungsvektoren",
+        "Durch Vergleich der Aufpunkte"
+      ],
+      "correct": 1,
+      "explanation": "Vorgehen: 1) v₁ und v₂ linear abhängig? → parallel oder identisch. 2) Falls nicht parallel: g₁ = g₂ lösen. Falls lösbar: schneidend. Falls widersprüchlich: windschief.",
+      "topic": "Geraden",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 36,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie liegen g: x = (1|2|0) + t·(1|1|1) und h: x = (4|2|1) + s·(2|−1|0) zueinander?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Wann sind zwei Geraden im Raum windschief?",
+      "options": [
+        "Wenn sie denselben Richtungsvektor haben (das sind parallele Geraden)",
+        "Wenn sie weder parallel noch schneidend sind – im Raum liegen sie auf verschiedenen Ebenen",
+        "Wenn ihr Skalarprodukt der Richtungsvektoren 0 ist",
+        "Wenn einer der Richtungsvektoren der Nullvektor ist"
+      ],
+      "correct": 1,
+      "explanation": "Windschiefe Geraden: kein gemeinsamer Schnittpunkt, aber auch nicht parallel. Nur im Raum (R³) möglich, nicht in der Ebene (R²). Abstand > 0.",
+      "topic": "Geraden",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 37,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Abstand haben die windschiefen Geraden g: x = (1|0|0) + t·(1|1|0) und h: x = (0|0|2) + s·(1|−1|0)?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wie berechnet man den Flächeninhalt eines Dreiecks mit Eckpunkten A, B, C?",
+      "options": [
+        "F = |AB + AC|",
+        "F = (1/2) · |AB × AC| (halber Betrag des Kreuzprodukts der Seiten)",
+        "F = |AB| · |AC|",
+        "F = (1/2) · (AB · AC) (halbes Skalarprodukt)"
+      ],
+      "correct": 1,
+      "explanation": "Dreiecksflächenformel im Raum: F = (1/2) · |AB × AC|. Das Kreuzprodukt liefert den Normalenvektor und sein Betrag die Parallelogrammfläche; das Dreieck ist die Hälfte davon.",
+      "topic": "Flächen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 38,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Flächeninhalt hat das Dreieck mit A(1|0|0), B(3|2|0) und C(0|1|4)?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Was ist die Mittelpunktsformel zweier Punkte A und B?",
+      "options": [
+        "M = OA + OB (Summe der Ortsvektoren)",
+        "M = (1/2) · (OA + OB) = ((a₁+b₁)/2, (a₂+b₂)/2, (a₃+b₃)/2)",
+        "M = OB − OA",
+        "M = |OA − OB| / 2"
+      ],
+      "correct": 1,
+      "explanation": "Mittelpunkt M = (A + B) / 2 (komponentenweise). Verallgemeinerung: Schwerpunkt von n Punkten = arithmetisches Mittel aller Ortsvektoren.",
+      "topic": "Punkte",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 39,
+        "basis": "1914be4",
+        "ersetztDurch": "Der Punkt T teilt die Strecke von A(1|2|3) nach B(7|−4|9) im Verhältnis AT : TB = 2 : 1. Welche Koordinaten hat T?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Was bedeutet Kollinearität dreier Punkte A, B, C?",
+      "options": [
+        "Die drei Punkte bilden ein Dreieck",
+        "A, B, C liegen auf einer gemeinsamen Geraden – die Verbindungsvektoren AB und AC sind dann linear abhängig",
+        "Die Abstände AB, BC und AC sind gleich",
+        "Das Skalarprodukt AB · AC = 0 (das bedeutet nur Orthogonalität)"
+      ],
+      "correct": 1,
+      "explanation": "Kollinear: AB = k · AC für ein reelles k. Equivalently: AB × AC = 0 (Kreuzprodukt ist Nullvektor). Dreipunkte spannen kein Dreieck auf.",
+      "topic": "Punkte",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 41,
+        "basis": "1914be4",
+        "ersetztDurch": "Für welchen Wert von k liegen A(1|2|3), B(3|5|7) und C(7|11|k) auf einer gemeinsamen Geraden?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist die Hessesche Normalform einer Ebene und wozu dient sie?",
+      "options": [
+        "Eine Ebenenform ohne Normalenvektor",
+        "E: n₀ · x = d₀, wobei n₀ = n/|n| der normierte Normalenvektor ist – ermöglicht direktes Ablesen des Abstands: dist(P, E) = |n₀ · OP − d₀|",
+        "Eine Parameterform der Ebene",
+        "Eine Form mit zwei Parametern"
+      ],
+      "correct": 1,
+      "explanation": "HNF: normierter Normalenvektor n₀. Abstand eines Punktes P: d = |n₀ · OP − d₀|. Vorteil: kein Dividieren durch |n| nötig, da n₀ bereits Länge 1 hat.",
+      "topic": "Ebenen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 42,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Abstand hat die Ebene E: 2x₁ − 6x₂ + 3x₃ = 14 vom Koordinatenursprung?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Wie berechnet man den Schnittpunkt einer Geraden g: x = A + t·v mit einer Ebene E: n·x = d?",
+      "options": [
+        "Man berechnet das Kreuzprodukt von Richtungsvektor und Normalenvektor",
+        "Man setzt die Geradengleichung in die Ebenengleichung ein: n·(A + t·v) = d → t lösen → t in g einsetzen",
+        "Man addiert die Gleichungen von Gerade und Ebene",
+        "Man setzt die Normalenvektoren gleich"
+      ],
+      "correct": 1,
+      "explanation": "Einsetzen: n·A + t·(n·v) = d → t = (d − n·A) / (n·v). Achtung: falls n·v = 0, ist die Gerade parallel zur Ebene (kein Schnittpunkt, außer wenn sie in der Ebene liegt).",
+      "topic": "Schnitt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 44,
+        "basis": "1914be4",
+        "ersetztDurch": "In welchem Punkt schneidet die Gerade g: x = (1|2|0) + t·(2|−1|3) die Ebene E: x₁ + x₂ + x₃ = 7?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Wie erhält man den Richtungsvektor der Schnittgeraden zweier Ebenen E₁ (Normalenvektor n₁) und E₂ (Normalenvektor n₂)?",
+      "options": [
+        "Durch Addition der Normalenvektoren n₁ + n₂",
+        "Durch das Kreuzprodukt n₁ × n₂ (steht senkrecht auf beiden Normalenvektoren, also in beiden Ebenen)",
+        "Durch das Skalarprodukt n₁ · n₂",
+        "Durch Subtraktion n₁ − n₂"
+      ],
+      "correct": 1,
+      "explanation": "Richtungsvektor der Schnittgeraden: r = n₁ × n₂. Er liegt in beiden Ebenen (senkrecht auf beiden Normalenvektoren). Einen Aufpunkt erhält man durch simultanes Lösen beider Ebenengleichungen.",
+      "topic": "Schnitt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 45,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Richtungsvektor hat die Schnittgerade von E₁: x₁ + 2x₂ − x₃ = 3 und E₂: 2x₁ − x₂ + x₃ = 1?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Wann sind zwei Vektoren a und b parallel?",
+      "options": [
+        "Wenn ihr Skalarprodukt 0 ist (das bedeutet orthogonal, nicht parallel)",
+        "Wenn a = k · b für ein reelles k ≠ 0 – linear abhängig; das Kreuzprodukt a × b ist dann der Nullvektor",
+        "Wenn |a| = |b| (gleicher Betrag)",
+        "Wenn a + b = 0 (das bedeutet entgegengesetzt gleich, ist Spezialfall k = −1)"
+      ],
+      "correct": 1,
+      "explanation": "Parallelität: a = k · b. Praktische Prüfung: Sind die Komponenten proportional? a₁/b₁ = a₂/b₂ = a₃/b₃ = k. Oder: a × b = 0.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 50,
+        "basis": "1914be4",
+        "ersetztDurch": "Für welchen Wert von k stehen die Vektoren a = (3|k|−2) und b = (2|4|1) senkrecht aufeinander?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Was ist eine Schnittkante zweier Ebenen?",
+      "options": [
+        "Ein Punkt, in dem sich zwei Ebenen treffen (das wäre ein Schnittpunkt)",
+        "Die Gerade, die entsteht, wenn sich zwei nicht-parallele Ebenen schneiden – ihr Richtungsvektor ist n₁ × n₂",
+        "Der Normalenvektor einer Ebene",
+        "Die Parallele, die zwei Ebenen trennt"
+      ],
+      "correct": 1,
+      "explanation": "Schnitt zweier Ebenen: Schnittkante = eine Gerade. Richtungsvektor: n₁ × n₂. Aufpunkt: durch simultanes Lösen der beiden Ebenengleichungen bestimmen.",
+      "topic": "Schnitt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 51,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie liegt die Gerade g: x = (1|1|1) + t·(2|1|0) zur Ebene E: x₁ − 2x₂ + 3x₃ = 4?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist eine lineare Abbildung und wie hängt sie mit Matrizen zusammen?",
+      "options": [
+        "Eine Abbildung, die Abstände erhält",
+        "Eine Abbildung, die Linearkombinationen erhält (f(λa + µb) = λf(a) + µf(b)) – jede lineare Abbildung lässt sich durch Matrizenmultiplikation darstellen",
+        "Eine Abbildung, die nur Rotationen beschreibt",
+        "Eine Abbildung ohne algebraische Darstellung"
+      ],
+      "correct": 1,
+      "explanation": "Lineare Abbildung f: Rⁿ → Rᵐ; darstellbar als f(x) = M · x mit Abbildungsmatrix M. Beispiele: Rotation, Spiegelung, Streckung. Erhält den Ursprung und Linearkombinationen.",
+      "topic": "Abbildungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 53,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Bildpunkt hat P(2|−4|2) bei der Spiegelung an der Ebene E: 2x₁ − x₂ + 2x₃ = 3?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was versteht man geometrisch unter dem Betrag eines Vektors?",
+      "options": [
+        "Den Richtungswinkel des Vektors",
+        "Die Länge des Pfeils, der den Vektor darstellt",
+        "Die Summe der Komponenten",
+        "Den Winkel zur positiven x-Achse"
+      ],
+      "correct": 1,
+      "explanation": "Der Betrag |v| ist die Länge des Vektors. Im R²: |v| = sqrt(v₁² + v₂²) (Pythagoras). Im R³: |v| = sqrt(v₁² + v₂² + v₃²). Wichtig für Abstände und Winkelberechnungen.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Geometrie.json",
+        "index": 54,
+        "basis": "1914be4",
+        "ersetztDurch": "Für welches k > 0 hat der Vektor v = (k|2k|2k) die Länge 12?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Löse die folgende Exponentialgleichung: 3^(x+1) = 81",
+      "options": [
+        "x = 2",
+        "x = 3",
+        "x = 4",
+        "x = 5"
+      ],
+      "correct": 1,
+      "explanation": "Man schreibt beide Seiten der Gleichung mit derselben Basis. Da 81 = 3^4 ist, ergibt sich 3^(x+1) = 3^4. Daraus folgt x+1 = 4, also x = 3.",
+      "topic": "Exponentialgleichungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Gleichungen.json",
+        "index": 0,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Bestand nimmt jedes Jahr um 20 % ab. Nach wie vielen Jahren ist er auf ein Viertel des Anfangsbestands gesunken?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Lösen Sie die Gleichung `e^(2x-1) = e^5` nach x auf.",
+      "options": [
+        "x = 1",
+        "x = 2",
+        "x = 3",
+        "x = 4"
+      ],
+      "correct": 2,
+      "explanation": "Da die Basen auf beiden Seiten der Gleichung gleich sind, müssen auch die Exponenten gleich sein: `2x - 1 = 5`. Daraus folgt `2x = 6`, also `x = 3`.",
+      "topic": "Exponentialgleichungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Gleichungen.json",
+        "index": 8,
+        "basis": "1914be4",
+        "ersetztDurch": "Löse die Exponentialgleichung: 3 · e^(2x) = 24",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Was ist das Ergebnis von 15 multipliziert mit 13?",
+      "options": [
+        "185",
+        "195",
+        "205",
+        "215"
+      ],
+      "correct": 1,
+      "explanation": "Um 15 mit 13 zu multiplizieren, kann man 15 * (10 + 3) rechnen. Das ergibt 15 * 10 + 15 * 3 = 150 + 45 = 195.",
+      "topic": "Arithmetik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Kopfrechnen.json",
+        "index": 0,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie lautet die Ableitung von f(x) = e⁻²ˣ?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Was sind 25% von 160?",
+      "options": [
+        "A) 30",
+        "B) 40",
+        "C) 50",
+        "D) 60"
+      ],
+      "correct": 1,
+      "explanation": "25% entsprechen einem Viertel. Ein Viertel von 160 ist 40.",
+      "topic": "Prozentrechnung",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Kopfrechnen.json",
+        "index": 8,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Grenzwert hat der Term (3x² - 5x)/(2x² + 7) für x gegen unendlich?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist der Wert von log_3(81) - log_2(16)?",
+      "options": [
+        "A) 0",
+        "B) 1",
+        "C) 2",
+        "D) 3"
+      ],
+      "correct": 0,
+      "explanation": "log_3(81) ist der Exponent, mit dem man 3 potenzieren muss, um 81 zu erhalten. Da 3^4 = 81, ist log_3(81) = 4. log_2(16) ist der Exponent, mit dem man 2 potenzieren muss, um 16 zu erhalten. Da 2^4 = 16, ist log_2(16) = 4. Somit ist 4 - 4 = 0.",
+      "topic": "Logarithmusgesetze",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Kopfrechnen.json",
+        "index": 10,
+        "basis": "1914be4",
+        "ersetztDurch": "Welcher Ausdruck ist gleichwertig zu lg(a) - 3 · lg(b)?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Berechnen Sie: 18 * 5 - 45 / 9.",
+      "options": [
+        "A) 85",
+        "B) 90",
+        "C) 95",
+        "D) 100"
+      ],
+      "correct": 0,
+      "explanation": "Nach den Regeln der Punkt- vor Strichrechnung: 18 * 5 = 90. 45 / 9 = 5. Dann 90 - 5 = 85.",
+      "topic": "Grundrechenarten",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Kopfrechnen.json",
+        "index": 11,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie lautet die Ableitung von f(x) = x · sin(x)?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Gegeben ist die Funktion f(x) = 4x^3. Was ist der Wert der ersten Ableitung f'(x) an der Stelle x = 1?",
+      "options": [
+        "A) 4",
+        "B) 8",
+        "C) 12",
+        "D) 16"
+      ],
+      "correct": 2,
+      "explanation": "Die erste Ableitung von f(x) = 4x^3 ist f'(x) = 4 * 3x^(3-1) = 12x^2. Setzt man x = 1 ein, erhält man f'(1) = 12 * (1)^2 = 12.",
+      "topic": "Differentialrechnung (Ableitungen)",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Kopfrechnen.json",
+        "index": 12,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie lautet die Ableitung von f(x) = (2x + 1)³?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Ein Betrag von 200 Euro wird für 2 Jahre zu einem Zinssatz von 10% pro Jahr angelegt. Wie hoch ist das Kapital am Ende des zweiten Jahres bei jährlicher Zinseszinsrechnung?",
+      "options": [
+        "A) 220 Euro",
+        "B) 240 Euro",
+        "C) 242 Euro",
+        "D) 260 Euro"
+      ],
+      "correct": 2,
+      "explanation": "Nach dem ersten Jahr: 200 Euro * 1.10 = 220 Euro. Nach dem zweiten Jahr: 220 Euro * 1.10 = 242 Euro.",
+      "topic": "Finanzmathematik (Zinseszins)",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Kopfrechnen.json",
+        "index": 13,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein radioaktives Präparat hat eine Halbwertszeit von 10 Jahren. Welcher Anteil des Anfangsbestands ist nach 30 Jahren noch vorhanden?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Berechnen Sie: (2/3)^2 + (1/3).",
+      "options": [
+        "A) 5/9",
+        "B) 7/9",
+        "C) 4/9",
+        "D) 1"
+      ],
+      "correct": 1,
+      "explanation": "Zuerst die Potenz berechnen: (2/3)^2 = (2^2)/(3^2) = 4/9. Dann die Brüche addieren: 4/9 + 1/3 = 4/9 + 3/9 = 7/9.",
+      "topic": "Bruchrechnung und Potenzen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Kopfrechnen.json",
+        "index": 14,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie lautet die Ableitung von f(x) = ln(3x) für x > 0?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist der Wert von (Wurzel aus 144) * (2^3) / 6?",
+      "options": [
+        "A) 8",
+        "B) 12",
+        "C) 16",
+        "D) 24"
+      ],
+      "correct": 2,
+      "explanation": "Die Quadratwurzel aus 144 ist 12. 2 hoch 3 ist 8. Die Rechnung lautet also (12 * 8) / 6 = 96 / 6 = 16.",
+      "topic": "Wurzeln und Potenzen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Kopfrechnen.json",
+        "index": 15,
+        "basis": "1914be4",
+        "ersetztDurch": "Welche Steigung hat die Tangente an den Graphen von f(x) = √(x) an der Stelle x = 4?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Was bedeutet es, einen Fehler 1. Art (α-Fehler) in einem Hypothesentest zu begehen?",
+      "options": [
+        "Die Nullhypothese wird fälschlicherweise angenommen, obwohl sie falsch ist.",
+        "Die Nullhypothese wird fälschlicherweise abgelehnt, obwohl sie wahr ist.",
+        "Die Alternativhypothese wird fälschlicherweise angenommen, obwohl sie falsch ist.",
+        "Die Alternativhypothese wird fälschlicherweise abgelehnt, obwohl sie wahr ist."
+      ],
+      "correct": 1,
+      "explanation": "Ein Fehler 1. Art tritt auf, wenn die Nullhypothese (H0) abgelehnt wird, obwohl sie in Wirklichkeit wahr ist. Die Wahrscheinlichkeit dafür wird mit dem Signifikanzniveau α bezeichnet.",
+      "topic": "Hypothesentests und Fehlerarten",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 11,
+        "basis": "1914be4",
+        "ersetztDurch": "Bei einem Hypothesentest wird das Signifikanzniveau von 5 % auf 1 % gesenkt, der Stichprobenumfang bleibt unverändert. Welche Auswirkung hat das?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Wie groß ist die Wahrscheinlichkeit, mit einem fairen Würfel eine gerade Zahl zu würfeln?",
+      "options": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3"
+      ],
+      "correct": 2,
+      "explanation": "Gerade Zahlen: 2, 4, 6 – also 3 von 6 = 1/2.",
+      "topic": "Wahrscheinlichkeit",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 17,
+        "basis": "1914be4",
+        "ersetztDurch": "Die Füllmenge einer Abfüllanlage ist normalverteilt mit μ = 500 ml und σ = 4 ml. Welcher Anteil der Flaschen enthält zwischen 492 ml und 508 ml?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Eine Münze wird zweimal geworfen. Wie viele mögliche Ergebnisse gibt es?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "8"
+      ],
+      "correct": 2,
+      "explanation": "2 · 2 = 4 mögliche Ergebnisse (KK, KZ, ZK, ZZ).",
+      "topic": "Kombinatorik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 18,
+        "basis": "1914be4",
+        "ersetztDurch": "Bei einem Glücksspiel beträgt der Erwartungswert des Gewinns 2,30 € pro Spiel. Welche Aussage ist korrekt?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie groß ist die Summe aller Wahrscheinlichkeiten eines Zufallsexperiments?",
+      "options": [
+        "0",
+        "0,5",
+        "1",
+        "100"
+      ],
+      "correct": 2,
+      "explanation": "Die Wahrscheinlichkeiten aller Ergebnisse addieren sich zu 1.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 20,
+        "basis": "1914be4",
+        "ersetztDurch": "An einer Schule lernen 50 % der Jugendlichen Spanisch, 30 % lernen Französisch und 12 % lernen beide Sprachen. Wie groß ist die Wahrscheinlichkeit, dass eine zufällig ausgewählte Person, die Spanisch lernt, auch Französisch lernt?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Ein Ereignis mit der Wahrscheinlichkeit 0 ist …",
+      "options": [
+        "sicher",
+        "unmöglich",
+        "wahrscheinlich",
+        "fair"
+      ],
+      "correct": 1,
+      "explanation": "P = 0 bedeutet ein unmögliches Ereignis.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 21,
+        "basis": "1914be4",
+        "ersetztDurch": "In einer Urne liegen 5 rote und 7 blaue Kugeln. Es werden nacheinander zwei Kugeln ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, dass beide Kugeln rot sind?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Ein Ereignis mit der Wahrscheinlichkeit 1 ist …",
+      "options": [
+        "unmöglich",
+        "sicher",
+        "unwahrscheinlich",
+        "zufällig"
+      ],
+      "correct": 1,
+      "explanation": "P = 1 bedeutet ein sicheres Ereignis.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 22,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Hersteller behauptet, höchstens 5 % seiner Bauteile seien fehlerhaft. Ein einseitiger Test mit n = 100 zum Signifikanzniveau 5 % hat den Ablehnungsbereich {10; 11; …; 100}. In der Stichprobe sind 11 Bauteile fehlerhaft. Welche Schlussfolgerung ist korrekt?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Wie viele verschiedene Anordnungen (Permutationen) gibt es für 3 verschiedene Objekte?",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "27"
+      ],
+      "correct": 1,
+      "explanation": "3! = 3 · 2 · 1 = 6.",
+      "topic": "Kombinatorik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 23,
+        "basis": "1914be4",
+        "ersetztDurch": "Sieben Beschäftigte eines Betriebs verdienen im Jahr (in Tausend Euro): 32, 34, 36, 38, 40, 42 und 198. Welche Werte haben arithmetisches Mittel und Median?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie viel ist 5! (5 Fakultät)?",
+      "options": [
+        "25",
+        "60",
+        "120",
+        "720"
+      ],
+      "correct": 2,
+      "explanation": "5! = 5 · 4 · 3 · 2 · 1 = 120.",
+      "topic": "Kombinatorik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 24,
+        "basis": "1914be4",
+        "ersetztDurch": "Für den geordneten Datensatz 2, 4, 4, 6, 8, 10, 10, 12 soll der Interquartilsabstand bestimmt werden. Wie groß ist er?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Beim Ziehen MIT Zurücklegen bleibt die Wahrscheinlichkeit von Zug zu Zug …",
+      "options": [
+        "sie steigt",
+        "sie sinkt",
+        "gleich",
+        "null"
+      ],
+      "correct": 2,
+      "explanation": "Da die Kugel zurückgelegt wird, ändert sich die Zusammensetzung nicht.",
+      "topic": "Wahrscheinlichkeit",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 25,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie oft muss ein fairer Würfel mindestens geworfen werden, damit mit einer Wahrscheinlichkeit von mindestens 90 % wenigstens eine Sechs fällt?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Das Gegenereignis zu mindestens eine 6 (bei mehreren Würfen) ist …",
+      "options": [
+        "genau eine 6",
+        "keine 6",
+        "alle 6",
+        "höchstens eine 6"
+      ],
+      "correct": 1,
+      "explanation": "Das Gegenteil von mindestens eine 6 ist keine einzige 6.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 27,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Untersuchung findet zwischen der Storchenpopulation und der Geburtenzahl in mehreren Regionen einen Korrelationskoeffizienten von r = 0,8. Welche Schlussfolgerung ist zulässig?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Wie berechnet man die Wahrscheinlichkeit des Gegenereignisses?",
+      "options": [
+        "P(A)",
+        "1 − P(A)",
+        "1 + P(A)",
+        "P(A)²"
+      ],
+      "correct": 1,
+      "explanation": "P(Gegenereignis) = 1 − P(A).",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 28,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Bernoulli-Versuch mit p = 0,2 wird 10-mal unabhängig wiederholt. Wie groß ist die Wahrscheinlichkeit für mindestens einen Treffer?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Welche Verteilung beschreibt die Anzahl der Treffer bei n unabhängigen Versuchen mit gleicher Trefferwahrscheinlichkeit p?",
+      "options": [
+        "Normalverteilung",
+        "Binomialverteilung",
+        "Poisson-Verteilung",
+        "Gleichverteilung"
+      ],
+      "correct": 1,
+      "explanation": "Die Binomialverteilung zählt Treffer bei n Bernoulli-Versuchen.",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 29,
+        "basis": "1914be4",
+        "ersetztDurch": "Welche Voraussetzung muss erfüllt sein, damit die Trefferzahl eines Zufallsexperiments binomialverteilt ist?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Wie lautet der Erwartungswert einer Binomialverteilung mit Parametern n und p?",
+      "options": [
+        "n · p",
+        "p / n",
+        "n + p",
+        "n · p · (1 − p)"
+      ],
+      "correct": 0,
+      "explanation": "Der Erwartungswert ist E(X) = n · p.",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 30,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Spiel kostet 2 € Einsatz. Mit der Wahrscheinlichkeit 0,1 werden 10 € ausgezahlt, sonst nichts. Wie groß ist der erwartete Gewinn pro Spiel?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Wie lautet die Varianz einer Binomialverteilung?",
+      "options": [
+        "n · p",
+        "n · p · (1 − p)",
+        "p",
+        "n² · p"
+      ],
+      "correct": 1,
+      "explanation": "Die Varianz ist Var(X) = n · p · (1 − p).",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 31,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Zufallsgröße ist binomialverteilt mit n = 200 und p = 0,15. Wie groß ist die Standardabweichung?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Wie viele mögliche Ausgänge hat ein Bernoulli-Experiment?",
+      "options": [
+        "einen",
+        "zwei",
+        "drei",
+        "unendlich viele"
+      ],
+      "correct": 1,
+      "explanation": "Ein Bernoulli-Experiment hat genau zwei Ausgänge (Treffer/Niete).",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 32,
+        "basis": "1914be4",
+        "ersetztDurch": "Die Zufallsgröße X ist binomialverteilt mit n = 8 und p = 0,25. Wie groß ist P(X = 3)?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Wie nennt man zwei Ereignisse, die nicht gleichzeitig eintreten können?",
+      "options": [
+        "unabhängig",
+        "unvereinbar (disjunkt)",
+        "sicher",
+        "gleich wahrscheinlich"
+      ],
+      "correct": 1,
+      "explanation": "Sich gegenseitig ausschließende Ereignisse heißen unvereinbar (disjunkt).",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 34,
+        "basis": "1914be4",
+        "ersetztDurch": "Warum sind zwei unvereinbare Ereignisse mit P(A) > 0 und P(B) > 0 stets voneinander abhängig?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Was beschreibt der Erwartungswert E(X) anschaulich?",
+      "options": [
+        "den häufigsten Wert",
+        "den im Mittel zu erwartenden Wert",
+        "den größten Wert",
+        "die Streuung"
+      ],
+      "correct": 1,
+      "explanation": "Der Erwartungswert ist der durchschnittlich zu erwartende Wert.",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 35,
+        "basis": "1914be4",
+        "ersetztDurch": "Welche Aussage über den Erwartungswert E(X) einer Zufallsgröße ist korrekt?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wie groß ist das arithmetische Mittel von 2, 4 und 6?",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "12"
+      ],
+      "correct": 1,
+      "explanation": "(2 + 4 + 6) / 3 = 12 / 3 = 4.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 36,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Datensatz hat den Mittelwert 50 und die Standardabweichung 8. Anschließend wird jeder Wert verdreifacht. Welche Kennzahlen ergeben sich?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "Wie lautet der Median von 1, 3, 7, 9, 100?",
+      "options": [
+        "7",
+        "9",
+        "24",
+        "100"
+      ],
+      "correct": 0,
+      "explanation": "Der Median ist der mittlere Wert der geordneten Daten: 7.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 37,
+        "basis": "1914be4",
+        "ersetztDurch": "Für die Daten 2, 5, 6, 9, 11, 14, 18, 21 wird der Quartilsabstand nach der Schulmethode bestimmt (Median der unteren bzw. oberen Hälfte). Wie groß ist er?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Wie lautet der Modus (häufigster Wert) von 2, 3, 3, 5, 7?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "7"
+      ],
+      "correct": 1,
+      "explanation": "Der Wert 3 kommt am häufigsten vor.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 38,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Krankheit tritt bei 1 % der Bevölkerung auf. Ein Test erkennt Kranke zu 99 %, liefert aber bei Gesunden zu 5 % ein positives Ergebnis. Wie wahrscheinlich ist eine positiv getestete Person krank?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Was ist die Spannweite eines Datensatzes?",
+      "options": [
+        "der Mittelwert",
+        "größter Wert minus kleinster Wert",
+        "der Median",
+        "die Summe"
+      ],
+      "correct": 1,
+      "explanation": "Spannweite = Maximum − Minimum.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 40,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Hypothesentest wird auf dem Signifikanzniveau 5 % durchgeführt. Was bedeutet diese Angabe?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welche Werte kann eine Wahrscheinlichkeit P(A) annehmen?",
+      "options": [
+        "zwischen −1 und 1",
+        "zwischen 0 und 1",
+        "zwischen 0 und 100",
+        "zwischen 1 und 10"
+      ],
+      "correct": 1,
+      "explanation": "Eine Wahrscheinlichkeit liegt immer zwischen 0 und 1.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 41,
+        "basis": "1914be4",
+        "ersetztDurch": "In einer Stichprobe von 1.000 Personen stimmen 400 zu. Wie lautet das ungefähre 95-%-Konfidenzintervall für den Anteil in der Grundgesamtheit?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was gilt für die Ergebnisse eines Laplace-Experiments?",
+      "options": [
+        "sie sind unmöglich",
+        "sie sind alle gleich wahrscheinlich",
+        "sie sind voneinander abhängig",
+        "sie sind unbekannt"
+      ],
+      "correct": 1,
+      "explanation": "Beim Laplace-Experiment sind alle Ergebnisse gleich wahrscheinlich.",
+      "topic": "Wahrscheinlichkeit",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 42,
+        "basis": "1914be4",
+        "ersetztDurch": "Unter welcher Bedingung darf eine Binomialverteilung näherungsweise durch eine Normalverteilung ersetzt werden?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie berechnet man die Laplace-Wahrscheinlichkeit?",
+      "options": [
+        "günstige Ergebnisse / mögliche Ergebnisse",
+        "mögliche / günstige",
+        "günstige · mögliche",
+        "günstige + mögliche"
+      ],
+      "correct": 0,
+      "explanation": "P = Anzahl günstiger Ergebnisse / Anzahl möglicher Ergebnisse.",
+      "topic": "Wahrscheinlichkeit",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 43,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie groß ist bei einer Normalverteilung ungefähr die Wahrscheinlichkeit, dass ein Wert höchstens 2σ vom Erwartungswert abweicht?",
+        "aehnlichkeit": 0.16
+      }
+    },
+    {
+      "question": "Was gibt der Binomialkoeffizient n über k an?",
+      "options": [
+        "die Anzahl der Anordnungen mit Reihenfolge",
+        "die Anzahl der Auswahlen ohne Reihenfolge",
+        "die Fakultät von n",
+        "eine Wahrscheinlichkeit"
+      ],
+      "correct": 1,
+      "explanation": "Der Binomialkoeffizient zählt Auswahlen von k aus n ohne Beachtung der Reihenfolge.",
+      "topic": "Kombinatorik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 45,
+        "basis": "1914be4",
+        "ersetztDurch": "Warum enthält die Formel der Binomialverteilung den Faktor C(n;k)?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wobei hilft ein Baumdiagramm?",
+      "options": [
+        "beim Messen von Längen",
+        "beim Darstellen mehrstufiger Zufallsexperimente",
+        "beim Lösen von Gleichungen",
+        "beim Zeichnen von Funktionen"
+      ],
+      "correct": 1,
+      "explanation": "Baumdiagramme veranschaulichen mehrstufige Zufallsexperimente.",
+      "topic": "Mehrstufige Experimente",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 46,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Urne enthält 5 rote und 3 blaue Kugeln. Zwei Kugeln werden ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit für zweimal Rot?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie werden die Wahrscheinlichkeiten entlang eines Pfades im Baumdiagramm verrechnet?",
+      "options": [
+        "addiert",
+        "multipliziert",
+        "subtrahiert",
+        "ignoriert"
+      ],
+      "correct": 1,
+      "explanation": "Pfadregel 1: entlang eines Pfades werden die Wahrscheinlichkeiten multipliziert.",
+      "topic": "Mehrstufige Experimente",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 47,
+        "basis": "1914be4",
+        "ersetztDurch": "Maschine A fertigt 60 % der Teile mit 2 % Ausschuss, Maschine B die übrigen 40 % mit 5 % Ausschuss. Wie hoch ist der Ausschussanteil der Gesamtproduktion?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Wie verrechnet man die Wahrscheinlichkeiten mehrerer Pfade, die zum selben Ereignis führen?",
+      "options": [
+        "multiplizieren",
+        "addieren",
+        "subtrahieren",
+        "dividieren"
+      ],
+      "correct": 1,
+      "explanation": "Pfadregel 2: Wahrscheinlichkeiten verschiedener günstiger Pfade werden addiert.",
+      "topic": "Mehrstufige Experimente",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 48,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Test besteht aus 10 Fragen mit je 4 Antwortmöglichkeiten und genau einer richtigen Antwort. Wie wahrscheinlich sind beim reinen Raten mindestens 5 Treffer?",
+        "aehnlichkeit": 0.03
+      }
+    },
+    {
+      "question": "Welche Verteilung hat die typische Glockenform?",
+      "options": [
+        "Binomialverteilung",
+        "Normalverteilung (Gauß)",
+        "Gleichverteilung",
+        "Poisson-Verteilung"
+      ],
+      "correct": 1,
+      "explanation": "Die Normalverteilung hat die glockenförmige Gaußkurve.",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 50,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Zufallsgröße ist normalverteilt mit μ = 100 und σ = 15. Wie groß ist ungefähr P(X ≤ 115)?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Parameter hat die Standardnormalverteilung?",
+      "options": [
+        "μ = 0 und σ = 1",
+        "μ = 1 und σ = 0",
+        "μ = 0 und σ = 0",
+        "μ = 1 und σ = 1"
+      ],
+      "correct": 0,
+      "explanation": "Die Standardnormalverteilung hat Erwartungswert 0 und Standardabweichung 1.",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 51,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie wird eine normalverteilte Zufallsgröße X standardisiert?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was bedeutet eine kleine Standardabweichung?",
+      "options": [
+        "die Werte streuen stark",
+        "die Werte liegen eng um den Mittelwert",
+        "die Werte sind alle 0",
+        "die Werte werden größer"
+      ],
+      "correct": 1,
+      "explanation": "Eine kleine Standardabweichung bedeutet geringe Streuung um den Mittelwert.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 52,
+        "basis": "1914be4",
+        "ersetztDurch": "In einer Studie steigt mit dem Speiseeisverkauf auch die Zahl der Badeunfälle. Was folgt daraus?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Wie viele Elemente hat der Ergebnisraum beim einmaligen Werfen eines Würfels?",
+      "options": [
+        "1",
+        "6",
+        "12",
+        "36"
+      ],
+      "correct": 1,
+      "explanation": "Der Ergebnisraum ist {1,2,3,4,5,6} mit 6 Elementen.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Statistik.json",
+        "index": 53,
+        "basis": "1914be4",
+        "ersetztDurch": "Was bezeichnet man bei einem Hypothesentest als Fehler 2. Art?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Eine Münze wird zweimal geworfen. Wie viele mögliche Ergebnisse gibt es?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "8"
+      ],
+      "correct": 2,
+      "explanation": "2 · 2 = 4 mögliche Ergebnisse (KK, KZ, ZK, ZZ).",
+      "topic": "Kombinatorik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 2,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie viele verschiedene dreiköpfige Ausschüsse lassen sich aus 10 Personen bilden, wenn die Ämter nicht verteilt werden?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wie groß ist die Wahrscheinlichkeit, beim zweimaligen Münzwurf zweimal Kopf zu werfen?",
+      "options": [
+        "1/2",
+        "1/4",
+        "1/8",
+        "1/3"
+      ],
+      "correct": 1,
+      "explanation": "1/2 · 1/2 = 1/4.",
+      "topic": "Wahrscheinlichkeit",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 3,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Krankheit tritt bei 1 % der Bevölkerung auf. Ein Test erkennt Erkrankte mit 99 % Wahrscheinlichkeit, schlägt aber bei 2 % der Gesunden fälschlich an. Wie groß ist die Wahrscheinlichkeit, dass eine positiv getestete Person tatsächlich krank ist?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Wie groß ist die Summe aller Wahrscheinlichkeiten eines Zufallsexperiments?",
+      "options": [
+        "0",
+        "0,5",
+        "1",
+        "100"
+      ],
+      "correct": 2,
+      "explanation": "Die Wahrscheinlichkeiten aller Ergebnisse addieren sich zu 1.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 4,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Hypothesentest wird auf dem Signifikanzniveau 5 % durchgeführt. Was bedeutet diese Angabe?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Ein Ereignis mit der Wahrscheinlichkeit 0 ist …",
+      "options": [
+        "sicher",
+        "unmöglich",
+        "wahrscheinlich",
+        "fair"
+      ],
+      "correct": 1,
+      "explanation": "P = 0 bedeutet ein unmögliches Ereignis.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 5,
+        "basis": "1914be4",
+        "ersetztDurch": "Was bezeichnet man bei einem Hypothesentest als Fehler 2. Art?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Ein Ereignis mit der Wahrscheinlichkeit 1 ist …",
+      "options": [
+        "unmöglich",
+        "sicher",
+        "unwahrscheinlich",
+        "zufällig"
+      ],
+      "correct": 1,
+      "explanation": "P = 1 bedeutet ein sicheres Ereignis.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 6,
+        "basis": "1914be4",
+        "ersetztDurch": "Für zwei Ereignisse A und B mit P(A) > 0 und P(B) > 0 gilt A ∩ B = ∅. Welche Aussage ist richtig?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Wie viele verschiedene Anordnungen (Permutationen) gibt es für 3 verschiedene Objekte?",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "27"
+      ],
+      "correct": 1,
+      "explanation": "3! = 3 · 2 · 1 = 6.",
+      "topic": "Kombinatorik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 7,
+        "basis": "1914be4",
+        "ersetztDurch": "Auf wie viele unterscheidbare Arten lassen sich die Buchstaben des Wortes STATISTIK anordnen?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Wie viel ist 5! (5 Fakultät)?",
+      "options": [
+        "25",
+        "60",
+        "120",
+        "720"
+      ],
+      "correct": 2,
+      "explanation": "5! = 5 · 4 · 3 · 2 · 1 = 120.",
+      "topic": "Kombinatorik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 8,
+        "basis": "1914be4",
+        "ersetztDurch": "In einer Urne liegen 8 rote und 4 blaue Kugeln. Es werden 3 Kugeln ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, genau 2 rote Kugeln zu ziehen?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Beim Ziehen MIT Zurücklegen bleibt die Wahrscheinlichkeit von Zug zu Zug …",
+      "options": [
+        "sie steigt",
+        "sie sinkt",
+        "gleich",
+        "null"
+      ],
+      "correct": 2,
+      "explanation": "Da die Kugel zurückgelegt wird, ändert sich die Zusammensetzung nicht.",
+      "topic": "Wahrscheinlichkeit",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 9,
+        "basis": "1914be4",
+        "ersetztDurch": "Aus einer Lieferung von 500 Bauteilen, von denen 50 defekt sind, werden 10 Teile ohne Zurücklegen entnommen. Warum darf die Anzahl der defekten Teile in der Stichprobe näherungsweise als binomialverteilt angesehen werden?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "In einer Urne sind 3 rote und 2 blaue Kugeln. Wie groß ist die Wahrscheinlichkeit, eine rote zu ziehen?",
+      "options": [
+        "2/5",
+        "3/5",
+        "1/2",
+        "3/2"
+      ],
+      "correct": 1,
+      "explanation": "3 von 5 Kugeln sind rot: 3/5.",
+      "topic": "Wahrscheinlichkeit",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 10,
+        "basis": "1914be4",
+        "ersetztDurch": "Bei einem Glücksspiel zahlt man 2 € Einsatz. Mit Wahrscheinlichkeit 0,1 werden 10 € ausgezahlt, mit Wahrscheinlichkeit 0,3 werden 2 € ausgezahlt, sonst nichts. Wie groß ist der erwartete Gewinn pro Spiel?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Das Gegenereignis zu mindestens eine 6 (bei mehreren Würfen) ist …",
+      "options": [
+        "genau eine 6",
+        "keine 6",
+        "alle 6",
+        "höchstens eine 6"
+      ],
+      "correct": 1,
+      "explanation": "Das Gegenteil von mindestens eine 6 ist keine einzige 6.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 11,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Zufallsgröße X ist binomialverteilt mit n = 400 und p = 0,5. Wie groß ist die Standardabweichung σ?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Wie berechnet man die Wahrscheinlichkeit des Gegenereignisses?",
+      "options": [
+        "P(A)",
+        "1 − P(A)",
+        "1 + P(A)",
+        "P(A)²"
+      ],
+      "correct": 1,
+      "explanation": "P(Gegenereignis) = 1 − P(A).",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 12,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine binomialverteilte Zufallsgröße hat μ = 250 und σ = 15. Welches Intervall enthält nach der 2σ-Regel etwa 95,4 % der Werte?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Verteilung beschreibt die Anzahl der Treffer bei n unabhängigen Versuchen mit gleicher Trefferwahrscheinlichkeit p?",
+      "options": [
+        "Normalverteilung",
+        "Binomialverteilung",
+        "Poisson-Verteilung",
+        "Gleichverteilung"
+      ],
+      "correct": 1,
+      "explanation": "Die Binomialverteilung zählt Treffer bei n Bernoulli-Versuchen.",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 13,
+        "basis": "1914be4",
+        "ersetztDurch": "Bei welchem der folgenden Zufallsexperimente ist die betrachtete Größe binomialverteilt?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Wie lautet der Erwartungswert einer Binomialverteilung mit Parametern n und p?",
+      "options": [
+        "n · p",
+        "p / n",
+        "n + p",
+        "n · p · (1 − p)"
+      ],
+      "correct": 0,
+      "explanation": "Der Erwartungswert ist E(X) = n · p.",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 14,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein Multiple-Choice-Test besteht aus 60 Aufgaben mit je vier Antwortmöglichkeiten, von denen genau eine richtig ist. Wie viele Treffer erzielt man beim reinen Raten im Mittel?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Wie lautet die Varianz einer Binomialverteilung?",
+      "options": [
+        "n · p",
+        "n · p · (1 − p)",
+        "p",
+        "n² · p"
+      ],
+      "correct": 1,
+      "explanation": "Die Varianz ist Var(X) = n · p · (1 − p).",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 15,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Firma behauptet, höchstens 5 % ihrer Bauteile seien defekt. Ein Kritiker vermutet einen höheren Anteil und will das mit einem einseitigen Test nachweisen. Wie lautet die Nullhypothese?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Wie viele mögliche Ausgänge hat ein Bernoulli-Experiment?",
+      "options": [
+        "einen",
+        "zwei",
+        "drei",
+        "unendlich viele"
+      ],
+      "correct": 1,
+      "explanation": "Ein Bernoulli-Experiment hat genau zwei Ausgänge (Treffer/Niete).",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 16,
+        "basis": "1914be4",
+        "ersetztDurch": "Wovon hängt die Wahrscheinlichkeit für einen Fehler 2. Art ab?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was beschreibt der Erwartungswert E(X) anschaulich?",
+      "options": [
+        "den häufigsten Wert",
+        "den im Mittel zu erwartenden Wert",
+        "den größten Wert",
+        "die Streuung"
+      ],
+      "correct": 1,
+      "explanation": "Der Erwartungswert ist der durchschnittlich zu erwartende Wert.",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 19,
+        "basis": "1914be4",
+        "ersetztDurch": "Für eine binomialverteilte Zufallsgröße mit n = 5 und p = 0,5 gilt E(X) = 2,5. Was besagt dieser Wert?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Wie groß ist das arithmetische Mittel von 2, 4 und 6?",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "12"
+      ],
+      "correct": 1,
+      "explanation": "(2 + 4 + 6) / 3 = 12 / 3 = 4.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 20,
+        "basis": "1914be4",
+        "ersetztDurch": "Die Füllmenge einer Abfüllanlage ist normalverteilt mit μ = 500 ml und σ = 4 ml. Wie groß ist etwa der Anteil der Flaschen mit weniger als 492 ml Inhalt?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Wie lautet der Median von 1, 3, 7, 9, 100?",
+      "options": [
+        "7",
+        "9",
+        "24",
+        "100"
+      ],
+      "correct": 0,
+      "explanation": "Der Median ist der mittlere Wert der geordneten Daten: 7.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 21,
+        "basis": "1914be4",
+        "ersetztDurch": "Von 200 Personen sind 120 geimpft. Von den Geimpften erkranken 6, von den Ungeimpften 20. Eine der erkrankten Personen wird zufällig ausgewählt. Wie groß ist die Wahrscheinlichkeit, dass sie geimpft ist?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Wie lautet der Modus (häufigster Wert) von 2, 3, 3, 5, 7?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "7"
+      ],
+      "correct": 1,
+      "explanation": "Der Wert 3 kommt am häufigsten vor.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 22,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Zufallsgröße X ist binomialverteilt mit n = 6 und p = 1/3. Wie groß ist P(X = 2)?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Was ist die Spannweite eines Datensatzes?",
+      "options": [
+        "der Mittelwert",
+        "größter Wert minus kleinster Wert",
+        "der Median",
+        "die Summe"
+      ],
+      "correct": 1,
+      "explanation": "Spannweite = Maximum − Minimum.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 24,
+        "basis": "1914be4",
+        "ersetztDurch": "Für eine Zufallsgröße X gilt E(X) = 4 und Var(X) = 9. Wie groß ist die Standardabweichung von Y = 2X + 5?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welche Werte kann eine Wahrscheinlichkeit P(A) annehmen?",
+      "options": [
+        "zwischen −1 und 1",
+        "zwischen 0 und 1",
+        "zwischen 0 und 100",
+        "zwischen 1 und 10"
+      ],
+      "correct": 1,
+      "explanation": "Eine Wahrscheinlichkeit liegt immer zwischen 0 und 1.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 25,
+        "basis": "1914be4",
+        "ersetztDurch": "Zwei Maschinen fertigen 60 % beziehungsweise 40 % der Gesamtproduktion. Maschine 1 liefert 2 % Ausschuss, Maschine 2 liefert 5 % Ausschuss. Wie groß ist der Ausschussanteil der Gesamtproduktion?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was gilt für die Ergebnisse eines Laplace-Experiments?",
+      "options": [
+        "sie sind unmöglich",
+        "sie sind alle gleich wahrscheinlich",
+        "sie sind voneinander abhängig",
+        "sie sind unbekannt"
+      ],
+      "correct": 1,
+      "explanation": "Beim Laplace-Experiment sind alle Ergebnisse gleich wahrscheinlich.",
+      "topic": "Wahrscheinlichkeit",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 26,
+        "basis": "1914be4",
+        "ersetztDurch": "Eine Zufallsgröße X nimmt die Werte 0, 1 und 2 mit den Wahrscheinlichkeiten 0,5, 0,3 und 0,2 an. Wie groß ist die Varianz von X?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Wie berechnet man die Laplace-Wahrscheinlichkeit?",
+      "options": [
+        "günstige Ergebnisse / mögliche Ergebnisse",
+        "mögliche / günstige",
+        "günstige · mögliche",
+        "günstige + mögliche"
+      ],
+      "correct": 0,
+      "explanation": "P = Anzahl günstiger Ergebnisse / Anzahl möglicher Ergebnisse.",
+      "topic": "Wahrscheinlichkeit",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 27,
+        "basis": "1914be4",
+        "ersetztDurch": "Unter welcher Bedingung darf eine Binomialverteilung nach der Regel von Moivre und Laplace gut durch eine Normalverteilung angenähert werden?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "Wie viele Möglichkeiten gibt es, aus 4 Personen 2 auszuwählen (ohne Reihenfolge)?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": 1,
+      "explanation": "C(4,2) = 6.",
+      "topic": "Kombinatorik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 28,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie viele verschiedene Mannschaften aus 5 Personen lassen sich aus einem Kader von 12 Spielerinnen bilden, wenn die Positionen keine Rolle spielen?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Was gibt der Binomialkoeffizient n über k an?",
+      "options": [
+        "die Anzahl der Anordnungen mit Reihenfolge",
+        "die Anzahl der Auswahlen ohne Reihenfolge",
+        "die Fakultät von n",
+        "eine Wahrscheinlichkeit"
+      ],
+      "correct": 1,
+      "explanation": "Der Binomialkoeffizient zählt Auswahlen von k aus n ohne Beachtung der Reihenfolge.",
+      "topic": "Kombinatorik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 29,
+        "basis": "1914be4",
+        "ersetztDurch": "Welcher Ausdruck beschreibt die Wahrscheinlichkeit für genau k Treffer bei einer Bernoulli-Kette der Länge n mit Trefferwahrscheinlichkeit p?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Wobei hilft ein Baumdiagramm?",
+      "options": [
+        "beim Messen von Längen",
+        "beim Darstellen mehrstufiger Zufallsexperimente",
+        "beim Lösen von Gleichungen",
+        "beim Zeichnen von Funktionen"
+      ],
+      "correct": 1,
+      "explanation": "Baumdiagramme veranschaulichen mehrstufige Zufallsexperimente.",
+      "topic": "Mehrstufige Experimente",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 30,
+        "basis": "1914be4",
+        "ersetztDurch": "In einer Schachtel liegen 5 rote und 3 grüne Bonbons. Es werden nacheinander zwei Bonbons ohne Zurücklegen entnommen. Wie groß ist die Wahrscheinlichkeit, dass beide dieselbe Farbe haben?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie werden die Wahrscheinlichkeiten entlang eines Pfades im Baumdiagramm verrechnet?",
+      "options": [
+        "addiert",
+        "multipliziert",
+        "subtrahiert",
+        "ignoriert"
+      ],
+      "correct": 1,
+      "explanation": "Pfadregel 1: entlang eines Pfades werden die Wahrscheinlichkeiten multipliziert.",
+      "topic": "Mehrstufige Experimente",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 31,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein fairer Würfel wird so lange geworfen, bis zum ersten Mal eine Sechs fällt. Wie groß ist die Wahrscheinlichkeit, dass dafür genau vier Würfe nötig sind?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Wie verrechnet man die Wahrscheinlichkeiten mehrerer Pfade, die zum selben Ereignis führen?",
+      "options": [
+        "multiplizieren",
+        "addieren",
+        "subtrahieren",
+        "dividieren"
+      ],
+      "correct": 1,
+      "explanation": "Pfadregel 2: Wahrscheinlichkeiten verschiedener günstiger Pfade werden addiert.",
+      "topic": "Mehrstufige Experimente",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 32,
+        "basis": "1914be4",
+        "ersetztDurch": "Ein linksseitiger Test der Nullhypothese p = 0,6 bei n = 100 hat den Ablehnungsbereich {0; …; 51}. Die Stichprobe ergibt 55 Treffer. Wie ist das Ergebnis zu bewerten?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Welche Parameter hat die Standardnormalverteilung?",
+      "options": [
+        "μ = 0 und σ = 1",
+        "μ = 1 und σ = 0",
+        "μ = 0 und σ = 0",
+        "μ = 1 und σ = 1"
+      ],
+      "correct": 0,
+      "explanation": "Die Standardnormalverteilung hat Erwartungswert 0 und Standardabweichung 1.",
+      "topic": "Verteilungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 35,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie überführt man eine normalverteilte Zufallsgröße X mit den Parametern μ und σ in die Standardnormalverteilung?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Was bedeutet eine kleine Standardabweichung?",
+      "options": [
+        "die Werte streuen stark",
+        "die Werte liegen eng um den Mittelwert",
+        "die Werte sind alle 0",
+        "die Werte werden größer"
+      ],
+      "correct": 1,
+      "explanation": "Eine kleine Standardabweichung bedeutet geringe Streuung um den Mittelwert.",
+      "topic": "Statistik",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 36,
+        "basis": "1914be4",
+        "ersetztDurch": "Zwei binomialverteilte Zufallsgrößen haben jeweils n = 100, bei A ist p = 0,5 und bei B ist p = 0,9. Welche Aussage über die Streuung trifft zu?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie viele Elemente hat der Ergebnisraum beim einmaligen Werfen eines Würfels?",
+      "options": [
+        "1",
+        "6",
+        "12",
+        "36"
+      ],
+      "correct": 1,
+      "explanation": "Der Ergebnisraum ist {1,2,3,4,5,6} mit 6 Elementen.",
+      "topic": "Grundlagen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Stochastik.json",
+        "index": 37,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie oft muss man einen fairen Würfel mindestens werfen, damit mit einer Wahrscheinlichkeit von über 90 % mindestens eine Sechs fällt?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Was ist ein Vektor in der Mathematik?",
+      "options": [
+        "Eine Zahl mit Vorzeichen (skalare Größe) ohne Richtungsangabe, z.B. Temperatur oder Masse",
+        "Ein mathematisches Objekt mit Betrag UND Richtung (z.B. Verschiebung, Kraft, Geschwindigkeit)",
+        "Eine geordnete Folge von Zahlen ohne Richtungseigenschaft, vergleichbar einer Zahlenreihe",
+        "Ein einzelner Punkt P(x₁, x₂) im Koordinatensystem mit fest bestimmten Koordinaten"
+      ],
+      "correct": 1,
+      "explanation": "Vektoren besitzen Betrag (Länge) und Richtung. Im Gegensatz dazu haben Skalare (z.B. Temperatur, Masse) nur einen Betrag. Vektoren werden als Pfeil oder als Spaltenvektor dargestellt.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 0,
+        "basis": "1914be4",
+        "ersetztDurch": "Gegeben sind a = (2|−1|3) und b = (−1|4|0). Welchen Vektor ergibt 2a − 3b?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Wie berechnet man den Betrag (die Länge) eines Vektors v = (a, b, c)?",
+      "options": [
+        "|v| = a + b + c",
+        "|v| = Wurzel aus (a² + b² + c²)",
+        "|v| = a · b · c",
+        "|v| = (a² + b² + c²) ohne Wurzel"
+      ],
+      "correct": 1,
+      "explanation": "|v| = sqrt(a² + b² + c²) – Verallgemeinerung des Satzes von Pythagoras auf den dreidimensionalen Raum. Beispiel: v = (3, 4, 0) → |v| = 5.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 1,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie lang ist der Vektor v = (2|−3|6)?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wie lautet der Einheitsvektor e in Richtung eines Vektors v?",
+      "options": [
+        "e = v · |v|",
+        "e = v / |v| (Vektor geteilt durch seinen Betrag)",
+        "e = |v| / v",
+        "e = v − |v|"
+      ],
+      "correct": 1,
+      "explanation": "Normierung: e = v / |v|. Damit hat e den Betrag 1. Beispiel: v = (0, 6, 0) → e = (0, 1, 0). Anwendung: Richtungseinheitsvektoren in der Physik.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 3,
+        "basis": "1914be4",
+        "ersetztDurch": "Für welchen Wert von k stehen a = (2|k|−1) und b = (3|−2|4) senkrecht aufeinander?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was bedeutet es, wenn das Skalarprodukt zweier Vektoren gleich 0 ist?",
+      "options": [
+        "Die Vektoren sind parallel zueinander, weil das Skalarprodukt bei Parallelität maximal wird",
+        "Die Vektoren stehen senkrecht aufeinander (orthogonal) – da cos(90°) = 0",
+        "Mindestens einer der Vektoren ist der Nullvektor, der mit jedem anderen Vektor null ergibt",
+        "Die Vektoren haben denselben Betrag, also |a| = |b|, sind aber nicht notwendig senkrecht"
+      ],
+      "correct": 1,
+      "explanation": "a · b = 0 ↔ a ⊥ b (bei a ≠ 0 und b ≠ 0). Grundlage für Senkrechtigkeitsprüfungen und die Bestimmung von Normalenvektoren.",
+      "topic": "Skalarprodukt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 5,
+        "basis": "1914be4",
+        "ersetztDurch": "Zwei vom Nullvektor verschiedene Vektoren a und b erfüllen a · b < 0. Was folgt daraus für den Winkel φ zwischen ihnen?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Was ist der Ortsvektor eines Punktes P(x₁, x₂, x₃)?",
+      "options": [
+        "Der Verbindungsvektor von P zu einem beliebigen anderen Punkt Q, also OQ − OP",
+        "Der Vektor vom Ursprung O(0,0,0) zum Punkt P – hat dieselben Komponenten wie die Koordinaten von P",
+        "Die Summe der Koordinaten von P, also x₁ + x₂ + x₃ (ein Skalar, kein Vektor)",
+        "Der Betrag der Koordinaten, also |x₁| + |x₂| + |x₃| – eine skalare Größe"
+      ],
+      "correct": 1,
+      "explanation": "Ortsvektor OP = (x₁, x₂, x₃). Er zeigt vom Ursprung zum Punkt P. Im Unterschied zum freien Vektor (ortsunabhängig) ist der Ortsvektor an den Ursprung gebunden.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 7,
+        "basis": "1914be4",
+        "ersetztDurch": "Für A(−2|5|3) gilt AB = (4|−1|2). Welche Koordinaten hat der Punkt B?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Wie lautet der Verbindungsvektor von Punkt A nach Punkt B?",
+      "options": [
+        "AB = OA + OB",
+        "AB = OB − OA (Ortsvektor von B minus Ortsvektor von A)",
+        "AB = OA − OB",
+        "AB = |OA| − |OB|"
+      ],
+      "correct": 1,
+      "explanation": "Verbindungsvektor AB = OB − OA. Beispiel: A = (1,2,3), B = (4,6,3) → AB = (3,4,0). Länge: |AB| = 5 (Abstand von A nach B).",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 8,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie weit sind die Punkte A(1|−2|4) und B(3|2|8) voneinander entfernt?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Wie lautet die Koordinatenform (allgemeine Darstellung) einer Ebene?",
+      "options": [
+        "E: n₁·x₁ − n₂·x₂ − n₃·x₃ = d (falsche Vorzeichen für die zweite und dritte Komponente)",
+        "E: n₁·x₁ + n₂·x₂ + n₃·x₃ = d, wobei d = n · A (Aufpunkt eingesetzt)",
+        "E: x₁ + x₂ + x₃ = 1 (Achsenabschnittsform – gilt nur im Spezialfall, kein allgemeiner Ausdruck)",
+        "E: n₁·x₁ + n₂·x₂ = d (gilt nur für 2D-Geraden, nicht für Ebenen im dreidimensionalen Raum)"
+      ],
+      "correct": 1,
+      "explanation": "Koordinatenform: n₁x₁ + n₂x₂ + n₃x₃ = d. Aus der Normalenform durch Ausmultiplizieren hergeleitet. Ermöglicht einfaches Einsetzen von Punkten zur Lageprüfung.",
+      "topic": "Ebenen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 14,
+        "basis": "1914be4",
+        "ersetztDurch": "Welcher Punkt liegt in der Ebene E: 3x₁ − 2x₂ + x₃ = 5?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Was gibt der Betrag |a × b| des Kreuzprodukts geometrisch an?",
+      "options": [
+        "Den Winkel zwischen a und b",
+        "Den Flächeninhalt des von a und b aufgespannten Parallelogramms",
+        "Das Volumen des aufgespannten Quaders",
+        "Den Abstand der Endpunkte der beiden Vektoren"
+      ],
+      "correct": 1,
+      "explanation": "|a × b| = |a| · |b| · sin(φ) = Fläche des Parallelogramms. Fläche des Dreiecks = (1/2) · |a × b|. Nützlich für Dreiecksflächenberechnungen im Raum.",
+      "topic": "Kreuzprodukt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 17,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Flächeninhalt hat das von a = (2|0|1) und b = (0|3|1) aufgespannte Parallelogramm?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist das Spatprodukt [a, b, c]?",
+      "options": [
+        "Das Skalarprodukt dreier Vektoren – für drei Vektoren ist das Skalarprodukt nicht definiert (nur für zwei)",
+        "a · (b × c) – das Ergebnis ist ein Skalar; sein Betrag ist das Volumen des von a, b, c aufgespannten Parallelflachs (Spat)",
+        "Das Kreuzprodukt dreier Vektoren – auch das Kreuzprodukt ist nur für genau zwei Vektoren definiert",
+        "Die Summe der Beträge |a| + |b| + |c| der drei Vektoren – ein Skalar ohne geometrischen Volumenbezug"
+      ],
+      "correct": 1,
+      "explanation": "Spatprodukt: V = |a · (b × c)|. Ist das Spatprodukt = 0, sind die drei Vektoren linear abhängig (komplanar). Volumen Tetraeder = (1/6) · |Spatprodukt|.",
+      "topic": "Kreuzprodukt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 18,
+        "basis": "1914be4",
+        "ersetztDurch": "Welches Volumen hat der von a = (1|0|0), b = (1|2|0) und c = (1|2|3) aufgespannte Spat?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie lautet die Parameterform einer Ebene durch Punkt A mit Spannvektoren u und v?",
+      "options": [
+        "E: x = A + u × v – das Kreuzprodukt liefert einen Vektor, keinen zweiparametrigen Ausdruck",
+        "E: x = A + s·u + t·v mit s, t ∈ R (zwei unabhängige Parameter)",
+        "E: x = s·A + t·u + v – alle drei Größen mit Parametern belegt, kein gültiger Ebenenausdruck",
+        "E: x = A · s · t – Multiplikation des Aufpunkts mit zwei Parametern, mathematisch nicht korrekt"
+      ],
+      "correct": 1,
+      "explanation": "Parameterform der Ebene: x = A + s·u + t·v. u und v müssen linear unabhängig sein (nicht parallel). Für jeden Wert von s und t liegt x in der Ebene.",
+      "topic": "Ebenen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 19,
+        "basis": "1914be4",
+        "ersetztDurch": "Warum können u = (2|−1|3) und v = (−4|2|−6) keine Ebene aufspannen?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Wie prüft man, ob zwei Geraden g₁ und g₂ parallel, identisch, schneidend oder windschief sind?",
+      "options": [
+        "Nur durch Vergleich der Beträge |v₁| und |v₂| der Richtungsvektoren, ohne deren Richtungen zu vergleichen",
+        "Erst prüfen ob Richtungsvektoren parallel (linear abhängig); falls ja: Aufpunkt einsetzen (identisch oder parallel); falls nein: Gleichungssystem lösen – konsistent (schneidend) oder inkonsistent (windschief)",
+        "Durch Berechnung des Skalarprodukts der Richtungsvektoren – das prüft nur Orthogonalität, nicht Lage",
+        "Durch Vergleich der Aufpunkte A₁ und A₂, ohne die Richtungsvektoren zu berücksichtigen"
+      ],
+      "correct": 1,
+      "explanation": "Vorgehen: 1) v₁ und v₂ linear abhängig? → parallel oder identisch. 2) Falls nicht parallel: g₁ = g₂ lösen. Falls lösbar: schneidend. Falls widersprüchlich: windschief.",
+      "topic": "Geraden",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 20,
+        "basis": "1914be4",
+        "ersetztDurch": "Wie liegen g: x = (1|0|2) + t·(2|1|−1) und h: x = (3|1|2) + s·(−4|−2|2) zueinander?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Wann sind zwei Geraden im Raum windschief?",
+      "options": [
+        "Wenn sie denselben Richtungsvektor haben – das macht sie parallel zueinander, nicht windschief",
+        "Wenn sie weder parallel noch schneidend sind – im Raum liegen sie auf verschiedenen Ebenen",
+        "Wenn das Skalarprodukt ihrer Richtungsvektoren null ist – das bedeutet nur senkrechte Richtungen",
+        "Wenn einer der Richtungsvektoren der Nullvektor ist – dann wäre keine sinnvolle Gerade definiert"
+      ],
+      "correct": 1,
+      "explanation": "Windschiefe Geraden: kein gemeinsamer Schnittpunkt, aber auch nicht parallel. Nur im Raum (R³) möglich, nicht in der Ebene (R²). Abstand > 0.",
+      "topic": "Geraden",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 21,
+        "basis": "1914be4",
+        "ersetztDurch": "Zwei Geraden im Raum haben nicht-parallele Richtungsvektoren, und der Ansatz g₁ = g₂ führt auf ein unlösbares Gleichungssystem. Was folgt daraus?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Wie berechnet man den Flächeninhalt eines Dreiecks mit Eckpunkten A, B, C?",
+      "options": [
+        "F = |AB + AC| – der Betrag des Vektors AB + AC ist eine Länge, keine Fläche",
+        "F = (1/2) · |AB × AC| (halber Betrag des Kreuzprodukts der Seiten)",
+        "F = |AB| · |AC| – das Produkt der Seitenlängen ohne Winkelberücksichtigung",
+        "F = (1/2) · (AB · AC) – das halbe Skalarprodukt ergibt keinen Flächeninhalt"
+      ],
+      "correct": 1,
+      "explanation": "Dreiecksflächenformel im Raum: F = (1/2) · |AB × AC|. Das Kreuzprodukt liefert den Normalenvektor und sein Betrag die Parallelogrammfläche; das Dreieck ist die Hälfte davon.",
+      "topic": "Flächen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 22,
+        "basis": "1914be4",
+        "ersetztDurch": "Welchen Flächeninhalt hat das Dreieck mit A(0|0|0), B(3|0|4) und C(0|5|0)?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Was ist die Mittelpunktsformel zweier Punkte A und B?",
+      "options": [
+        "M = OA + OB – die Summe der Ortsvektoren führt auf den doppelten Mittelpunkt",
+        "M = (1/2) · (OA + OB) = ((a₁+b₁)/2, (a₂+b₂)/2, (a₃+b₃)/2)",
+        "M = OB − OA – das ist der Verbindungsvektor von A nach B, kein Mittelpunkt",
+        "M = |OA − OB| / 2 – der halbe Betrag des Verbindungsvektors ist ein Skalar, kein Punkt"
+      ],
+      "correct": 1,
+      "explanation": "Mittelpunkt M = (A + B) / 2 (komponentenweise). Verallgemeinerung: Schwerpunkt von n Punkten = arithmetisches Mittel aller Ortsvektoren.",
+      "topic": "Punkte",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 23,
+        "basis": "1914be4",
+        "ersetztDurch": "Welche Koordinaten hat der Mittelpunkt der Strecke von A(−3|2|7) nach B(5|−4|1)?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was bedeutet Kollinearität dreier Punkte A, B, C?",
+      "options": [
+        "Die drei Punkte bilden ein Dreieck – das ist gerade das Gegenteil von Kollinearität",
+        "A, B, C liegen auf einer gemeinsamen Geraden – die Verbindungsvektoren AB und AC sind dann linear abhängig",
+        "Die Abstände AB, BC und AC sind alle gleich lang – das wäre ein gleichseitiges Dreieck",
+        "Das Skalarprodukt AB · AC = 0, was nur bedeutet, dass AB und AC senkrecht aufeinander stehen"
+      ],
+      "correct": 1,
+      "explanation": "Kollinear: AB = k · AC für ein reelles k. Equivalently: AB × AC = 0 (Kreuzprodukt ist Nullvektor). Dreipunkte spannen kein Dreieck auf.",
+      "topic": "Punkte",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 25,
+        "basis": "1914be4",
+        "ersetztDurch": "Welcher Punkt liegt mit A(1|1|1) und B(3|5|7) auf einer gemeinsamen Geraden?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie berechnet man den Schnittpunkt einer Geraden g: x = A + t·v mit einer Ebene E: n·x = d?",
+      "options": [
+        "Man berechnet das Kreuzprodukt von Richtungsvektor v und Normalenvektor n – ergibt einen Vektor, keinen Schnittpunkt",
+        "Man setzt die Geradengleichung in die Ebenengleichung ein: n·(A + t·v) = d → t lösen → t in g einsetzen",
+        "Man addiert die Gleichungen von Gerade und Ebene komponentenweise – führt auf keine verwertbare Lösung",
+        "Man setzt die Normalenvektoren von Gerade und Ebene gleich – Geraden haben keinen Normalenvektor"
+      ],
+      "correct": 1,
+      "explanation": "Einsetzen: n·A + t·(n·v) = d → t = (d − n·A) / (n·v). Achtung: falls n·v = 0, ist die Gerade parallel zur Ebene (kein Schnittpunkt, außer wenn sie in der Ebene liegt).",
+      "topic": "Schnitt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 28,
+        "basis": "1914be4",
+        "ersetztDurch": "In welchem Punkt schneidet g: x = (1|2|0) + t·(1|−1|2) die Ebene E: 2x₁ + x₂ − x₃ = 3?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Was ist das Vektorprodukt a × b, wenn a und b parallel sind?",
+      "options": [
+        "Ein Einheitsvektor mit Betrag 1 in Richtung des gemeinsamen parallelen Vektors",
+        "Der Nullvektor – da sin(0°) = 0 und das aufgespannte Parallelogramm die Fläche 0 hat",
+        "Ein Vektor der Länge |a| · |b|, entsprechend dem maximalen Kreuzproduktbetrag",
+        "Derselbe Vektor wie a, da Parallelität keine Richtungsänderung erfordert"
+      ],
+      "correct": 1,
+      "explanation": "Parallele Vektoren: φ = 0° oder 180°, daher sin(φ) = 0 → |a × b| = 0 → a × b = 0. Folgt auch aus der linearen Abhängigkeit: komplanare Vektoren haben Spatprodukt 0.",
+      "topic": "Kreuzprodukt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 32,
+        "basis": "1914be4",
+        "ersetztDurch": "Was ergibt (a × b) · a für beliebige Vektoren a und b?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Wann sind zwei Vektoren a und b parallel?",
+      "options": [
+        "Wenn ihr Skalarprodukt 0 ist – das bedeutet Orthogonalität (senkrecht), das Gegenteil von Parallelität",
+        "Wenn a = k · b für ein reelles k ≠ 0 – linear abhängig; das Kreuzprodukt a × b ist dann der Nullvektor",
+        "Wenn |a| = |b| gilt, also beide Vektoren gleich lang sind, ohne Aussage über ihre Richtung",
+        "Wenn a + b = 0, also a = −b (Spezialfall k = −1) – das ist antiparallel, nicht beliebig parallel"
+      ],
+      "correct": 1,
+      "explanation": "Parallelität: a = k · b. Praktische Prüfung: Sind die Komponenten proportional? a₁/b₁ = a₂/b₂ = a₃/b₃ = k. Oder: a × b = 0.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 34,
+        "basis": "1914be4",
+        "ersetztDurch": "Welcher Vektor hat die Länge 6 und dieselbe Richtung wie v = (2|−1|2)?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Was ist eine Schnittkante zweier Ebenen?",
+      "options": [
+        "Ein einziger Punkt, in dem sich zwei Ebenen treffen – Ebenen schneiden sich in einer Geraden, nicht einem Punkt",
+        "Die Gerade, die entsteht, wenn sich zwei nicht-parallele Ebenen schneiden – ihr Richtungsvektor ist n₁ × n₂",
+        "Der Normalenvektor einer der beiden Ebenen, der senkrecht auf allen Richtungen in der Ebene steht",
+        "Eine parallele Ebene, die zwischen zwei gegebenen Ebenen liegt und beide voneinander trennt"
+      ],
+      "correct": 1,
+      "explanation": "Schnitt zweier Ebenen: Schnittkante = eine Gerade. Richtungsvektor: n₁ × n₂. Aufpunkt: durch simultanes Lösen der beiden Ebenengleichungen bestimmen.",
+      "topic": "Schnitt",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 35,
+        "basis": "1914be4",
+        "ersetztDurch": "Für g: x = A + t·v und E: n·x = d gilt n · v = 0 und n · OA ≠ d. Was folgt daraus?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Was ist eine lineare Abbildung und wie hängt sie mit Matrizen zusammen?",
+      "options": [
+        "Eine Abbildung, die Abstände erhält (isometrische Abbildung), z.B. Spiegelungen und Drehungen",
+        "Eine Abbildung, die Linearkombinationen erhält (f(λa + µb) = λf(a) + µf(b)) – jede lineare Abbildung lässt sich durch Matrizenmultiplikation darstellen",
+        "Eine Abbildung, die ausschließlich Drehungen um einen festen Punkt ohne Streckung beschreibt",
+        "Eine Abbildung ohne algebraische Darstellung, die nur geometrisch beschrieben werden kann"
+      ],
+      "correct": 1,
+      "explanation": "Lineare Abbildung f: Rⁿ → Rᵐ; darstellbar als f(x) = M · x mit Abbildungsmatrix M. Beispiele: Rotation, Spiegelung, Streckung. Erhält den Ursprung und Linearkombinationen.",
+      "topic": "Abbildungen",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 37,
+        "basis": "1914be4",
+        "ersetztDurch": "In welchem Eckpunkt des Dreiecks A(1|0|2), B(3|1|2), C(0|2|4) liegt der rechte Winkel?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was versteht man geometrisch unter dem Betrag eines Vektors?",
+      "options": [
+        "Den Richtungswinkel des Vektors zur positiven x-Achse",
+        "Die Länge des Pfeils, der den Vektor darstellt",
+        "Die Summe der Komponenten",
+        "Den Winkel zur positiven x-Achse"
+      ],
+      "correct": 1,
+      "explanation": "Der Betrag |v| ist die Länge des Vektors. Im R²: |v| = sqrt(v₁² + v₂²) (Pythagoras). Im R³: |v| = sqrt(v₁² + v₂² + v₃²). Wichtig für Abstände und Winkelberechnungen.",
+      "topic": "Vektoren",
+      "_herkunft": {
+        "datei": "k12__Mathematik__Vektoren.json",
+        "index": 38,
+        "basis": "1914be4",
+        "ersetztDurch": "Sind a = (1|2|1), b = (2|1|0) und c = (3|3|1) komplanar, liegen sie also in einer gemeinsamen Ebene?",
+        "aehnlichkeit": 0
       }
     }
   ]

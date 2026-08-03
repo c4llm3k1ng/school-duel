@@ -284,3 +284,23 @@ Zur Nachvollziehbarkeit festgehalten:
 4. **„Fachlich unscharf" ist kein akzeptabler Endzustand** — Optionstexte werden
    korrigiert, nicht nur in der Erklärung eingeordnet.
 5. **Force-Overwrite statt Merge** beim Reimport, damit keine Fragen doppelt entstehen.
+
+---
+
+## 12. k12__Mathematik__Vektoren: Datei fast vollstaendig neu (2026-08-03)
+
+Alle 40 Fragen waren reine Definitionsabfragen ("Was ist ein Vektor?", "Wie lautet die
+Parameterform?") ohne eine einzige Rechnung — Niveau eher Klasse 10 als Abitur. Dazu kam
+ein durchgehendes Verratsmuster: die falschen Optionen erklaerten selbst, warum sie falsch
+sind ("– das ist das Kreuzprodukt, kein Skalarprodukt"). Beides zusammen liess sich nicht
+punktuell reparieren.
+
+Ich habe deshalb 30 der 40 Fragen durch Rechenaufgaben ersetzt (Kreuzprodukt, Spatprodukt,
+Abstaende, Schnittwinkel, Lagebeziehungen) und die restlichen 10 als Konzeptfragen behalten,
+aber mit neutralen Distraktoren. Gedeckt durch Vorgabe 3 (Niveau-Anhebung erwuenscht) — der
+Umfang ist trotzdem gross genug, dass du es wissen solltest. Die Altfragen holt
+collect_replaced.js.
+
+Nebenbei entfallen: die einzige Frage zu **linearen Abbildungen / Matrizen**. Sie stand
+thematisch falsch in einer Vektoren-Datei. Falls das Thema im Bestand bleiben soll, braucht
+es einen eigenen Platz.

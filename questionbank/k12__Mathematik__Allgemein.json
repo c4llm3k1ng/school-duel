@@ -1,19 +1,19 @@
 [
   {
     "correct": 0,
-    "explanation": "Für die Ableitung wird die Produktregel (u*v)' = u'*v + u*v' angewendet. Mit u = x² + 1 und v = e^(-x) erhalten wir u' = 2x und v' = -e^(-x). Daraus folgt f'(x) = 2x * e^(-x) + (x² + 1) * (-e^(-x)) = e^(-x) * (2x - (x² + 1)) = (2x - x² - 1) * e^(-x).",
+    "explanation": "Angewendet wird die Produktregel (u·v)' = u'·v + u·v' mit u = x² + 1 und v = e^(-x). Es ist u' = 2x und v' = -e^(-x). Damit gilt f'(x) = 2x·e^(-x) - (x² + 1)·e^(-x) = (2x - x² - 1)·e^(-x). Ein Vorzeichenfehler bei v' führt auf das falsche Ergebnis (x² + 2x + 1)·e^(-x).",
     "options": [
-      "f'(x) = (2x - x² - 1) * e^(-x)",
-      "f'(x) = (2x + x² + 1) * e^(-x)",
-      "f'(x) = 2x * e^(-x) - (x² + 1) * e^(-x)",
-      "f'(x) = (2x - x²) * e^(-x)"
+      "f'(x) = (2x - x² - 1) · e^(-x)",
+      "f'(x) = (x² + 2x + 1) · e^(-x)",
+      "f'(x) = (x² - 2x + 1) · e^(-x)",
+      "f'(x) = (2x - x²) · e^(-x)"
     ],
-    "question": "Was ist die erste Ableitung der Funktion f(x) = (x² + 1) * e^(-x)?",
+    "question": "Was ist die erste Ableitung der Funktion f(x) = (x² + 1) · e^(-x)?",
     "topic": "Analysis - Ableitungsregeln"
   },
   {
     "correct": 1,
-    "explanation": "Dies ist ein Problem der Binomialverteilung mit n=5 (Anzahl der Würfe), k=3 (Anzahl der 'Kopf'-Ereignisse) und p=0,5 (Wahrscheinlichkeit für 'Kopf' bei einem fairen Münzwurf). Die Formel ist P(X=k) = (n über k) * p^k * (1-p)^(n-k). Für n=5, k=3, p=0,5 ist P(X=3) = (5 über 3) * (0,5)³ * (0,5)² = 10 * 0,125 * 0,25 = 0,3125. Gerundet auf drei Nachkommastellen ist das 0,313.",
+    "explanation": "Die Anzahl der Treffer ist binomialverteilt mit n = 5 Würfen und p = 0,5. Es gilt P(X = k) = (n über k) · pᵏ · (1 - p)ⁿ⁻ᵏ. Mit dem Binomialkoeffizienten (5 über 3) = 10 folgt P(X = 3) = 10 · 0,5³ · 0,5² = 10 · 0,125 · 0,25 = 0,3125, gerundet also 0,313.",
     "options": [
       "0,156",
       "0,313",
@@ -25,19 +25,19 @@
   },
   {
     "correct": 1,
-    "explanation": "Zuerst prüfen wir die Richtungsvektoren: (1|0|-1) und (-2|0|2). Der zweite Vektor ist das -2-fache des ersten (-2 * (1|0|-1) = (-2|0|2)). Die Richtungsvektoren sind also parallel, was bedeutet, dass die Geraden entweder parallel oder identisch sind. Um zu prüfen, ob sie identisch sind, setzen wir den Stützpunkt der Geraden g, (1|2|3), in die Gleichung von h ein: (1|2|3) = (0|1|4) + s * (-2|0|2). Dies führt zu den Gleichungen: 1 = 0 - 2s => s = -0,5; 2 = 1 + 0s => 2 = 1 (Widerspruch); 3 = 4 + 2s => 3 = 4 - 1 => 3 = 3. Da die zweite Gleichung einen Widerspruch ergibt, liegt der Punkt (1|2|3) nicht auf der Geraden h. Die Geraden sind daher parallel, aber nicht identisch.",
+    "explanation": "Die Richtungsvektoren sind (1|0|-1) und (-2|0|2). Wegen (-2|0|2) = -2 · (1|0|-1) sind sie parallel, die Geraden sind also parallel oder identisch. Setzt man den Stützpunkt (1|2|3) von g in h ein, ergibt sich 1 = -2s (also s = -0,5), 2 = 1 (Widerspruch) und 3 = 4 + 2s. Wegen des Widerspruchs in der zweiten Zeile liegt (1|2|3) nicht auf h. Die Geraden sind daher parallel, aber nicht identisch.",
     "options": [
       "Die Geraden sind identisch.",
       "Die Geraden sind parallel, aber nicht identisch.",
       "Die Geraden schneiden sich in einem Punkt.",
       "Die Geraden sind windschief zueinander."
     ],
-    "question": "Gegeben sind die Geraden g: x = (1|2|3) + t * (1|0|-1) und h: x = (0|1|4) + s * (-2|0|2). Welche Lagebeziehung besteht zwischen g und h?",
+    "question": "Gegeben sind die Geraden g: x = (1|2|3) + t · (1|0|-1) und h: x = (0|1|4) + s · (-2|0|2). Welche Lagebeziehung besteht zwischen g und h?",
     "topic": "Analytische Geometrie - Lagebeziehung von Geraden"
   },
   {
     "correct": 1,
-    "explanation": "Die Funktion f(x) = x³ - x hat Nullstellen bei x = -1, x = 0 und x = 1. Im Intervall [-1; 0] ist f(x) ≥ 0, und im Intervall [0; 1] ist f(x) ≤ 0. Um den Flächeninhalt zu berechnen, müssen wir die Beträge der Integrale über diese Teilintervalle addieren: |∫[-1;0] (x³-x) dx| + |∫[0;1] (x³-x) dx|. Das Stammfunktion ist F(x) = x⁴/4 - x²/2. ∫[-1;0] (x³-x) dx = F(0) - F(-1) = (0 - 0) - (1/4 - 1/2) = -(-1/4) = 1/4. ∫[0;1] (x³-x) dx = F(1) - F(0) = (1/4 - 1/2) - (0 - 0) = -1/4. Der gesamte Flächeninhalt ist |1/4| + |-1/4| = 1/4 + 1/4 = 1/2.",
+    "explanation": "f(x) = x³ - x hat die Nullstellen -1, 0 und 1. Auf [-1; 0] ist f(x) ≥ 0, auf [0; 1] ist f(x) ≤ 0, daher müssen die Teilflächen getrennt betrachtet werden. Die Stammfunktion ist F(x) = x⁴/4 - x²/2. Es gilt ∫ von -1 bis 0 = F(0) - F(-1) = 0 - (1/4 - 1/2) = 1/4 und ∫ von 0 bis 1 = F(1) - F(0) = -1/4. Der Flächeninhalt ist |1/4| + |-1/4| = 1/2. Das Integral über das gesamte Intervall ergibt dagegen 0, weil sich die Teilflächen aufheben.",
     "options": [
       "0",
       "1/2",
@@ -49,23 +49,23 @@
   },
   {
     "correct": 3,
-    "explanation": "Wir suchen die bedingte Wahrscheinlichkeit P(K|T), d.h., die Wahrscheinlichkeit, dass eine Person Kaffee trinkt, GIVEN, dass sie Tee trinkt. Die Formel ist P(K|T) = P(K und T) / P(T). Gegeben sind P(K) = 0,7, P(T) = 0,4 und P(K und T) = 0,2. Setzen wir die Werte ein: P(K|T) = 0,2 / 0,4 = 0,5.",
+    "explanation": "Gesucht ist die bedingte Wahrscheinlichkeit P(K|T), also die Wahrscheinlichkeit für Kaffee unter der Bedingung, dass die Person Tee trinkt. Es gilt P(K|T) = P(K ∩ T) / P(T). Mit P(K ∩ T) = 0,2 und P(T) = 0,4 folgt P(K|T) = 0,2 / 0,4 = 0,5. Der Wert 0,29 entsteht bei der Verwechslung mit P(T|K) = 0,2 / 0,7.",
     "options": [
       "0,20",
       "0,29",
       "0,40",
       "0,50"
     ],
-    "question": "In einer Umfrage gaben 70% der Befragten an, Kaffee zu trinken (K). 40% trinken Tee (T). 20% trinken sowohl Kaffee als auch Tee. Wie groß ist die Wahrscheinlichkeit, dass eine Person, die Tee trinkt, auch Kaffee trinkt?",
+    "question": "In einer Umfrage gaben 70 % der Befragten an, Kaffee zu trinken (K). 40 % trinken Tee (T). 20 % trinken sowohl Kaffee als auch Tee. Wie groß ist die Wahrscheinlichkeit, dass eine Person, die Tee trinkt, auch Kaffee trinkt?",
     "topic": "Stochastik - Bedingte Wahrscheinlichkeit"
   },
   {
     "correct": 1,
-    "explanation": "Dies ist ein Spezialfall einer Ebene, die die Koordinatenachsen in den Punkten (a|0|0), (0|b|0) und (0|0|c) schneidet. Ihre Gleichung kann in Achsenabschnittsform geschrieben werden: x/a + y/b + z/c = 1. Hier sind a=2, b=4, c=1. Also x/2 + y/4 + z/1 = 1. Um ganze Zahlen zu erhalten, multiplizieren wir die gesamte Gleichung mit dem kleinsten gemeinsamen Vielfachen der Nenner (hier 4): 2x + y + 4z = 4. Wir können die Punkte auch prüfen: A(2|0|0): 2*2 + 0 + 4*0 = 4 (passt); B(0|4|0): 2*0 + 4 + 4*0 = 4 (passt); C(0|0|1): 2*0 + 0 + 4*1 = 4 (passt).",
+    "explanation": "Die Ebene schneidet die Koordinatenachsen in (2|0|0), (0|4|0) und (0|0|1), also lautet die Achsenabschnittsform x/2 + y/4 + z/1 = 1. Multiplikation mit dem Hauptnenner 4 ergibt 2x + y + 4z = 4. Probe: A(2|0|0): 2·2 = 4 (passt); B(0|4|0): 4 = 4 (passt); C(0|0|1): 4·1 = 4 (passt). Wird nur die linke Seite verdoppelt, entsteht mit 4x + 2y + 8z = 4 eine dazu parallele, aber andere Ebene.",
     "options": [
       "2x + 4y + z = 4",
       "2x + y + 4z = 4",
-      "4x + 2y + 8z = 8",
+      "4x + 2y + 8z = 4",
       "2x + y + 2z = 2"
     ],
     "question": "Eine Ebene E verläuft durch die Punkte A(2|0|0), B(0|4|0) und C(0|0|1). Welche der folgenden Gleichungen beschreibt diese Ebene?",
@@ -73,7 +73,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Sei x die Länge der Seite parallel zur Scheunenwand und y die Länge der beiden senkrechten Seiten. Die zur Verfügung stehende Zaunlänge beträgt 60 Meter, also x + 2y = 60. Die Fläche des Geheges ist A = x * y. Wir können x durch y ausdrücken: x = 60 - 2y. Setzen wir dies in die Flächenformel ein: A(y) = (60 - 2y) * y = 60y - 2y². Um das Maximum zu finden, leiten wir A(y) ab und setzen die Ableitung gleich null: A'(y) = 60 - 4y. 60 - 4y = 0 => 4y = 60 => y = 15 Meter. Für diese Länge der senkrechten Seiten berechnen wir x: x = 60 - 2 * 15 = 60 - 30 = 30 Meter. Die Seite parallel zur Scheunenwand muss 30 Meter lang sein.",
+    "explanation": "Sei x die Seite parallel zur Scheunenwand und y die Länge der beiden senkrechten Seiten. Aus der Zaunlänge folgt x + 2y = 60, also x = 60 - 2y. Die Fläche ist A(y) = (60 - 2y) · y = 60y - 2y². Aus A'(y) = 60 - 4y = 0 folgt y = 15 Meter und damit x = 60 - 30 = 30 Meter. Wegen A''(y) = -4 < 0 liegt tatsächlich ein Maximum vor.",
     "options": [
       "15 Meter",
       "20 Meter",
@@ -85,7 +85,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Wir definieren den Gewinn X als Auszahlung minus Einsatz. Wenn man eine 6 würfelt (Wahrscheinlichkeit 1/6), beträgt der Gewinn 5 Euro - 1 Euro Einsatz = 4 Euro. Wenn man keine 6 würfelt (Wahrscheinlichkeit 5/6), verliert man den Einsatz von 1 Euro, also ist der Gewinn -1 Euro. Der Erwartungswert E(X) berechnet sich als Summe der Produkte aus den möglichen Gewinnen und ihren Wahrscheinlichkeiten: E(X) = (4 Euro * 1/6) + (-1 Euro * 5/6) = 4/6 Euro - 5/6 Euro = -1/6 Euro.",
+    "explanation": "Der Gewinn X ist die Auszahlung minus Einsatz. Bei einer 6 (Wahrscheinlichkeit 1/6) beträgt der Gewinn 5 Euro - 1 Euro = 4 Euro, sonst (Wahrscheinlichkeit 5/6) verliert man den Einsatz, also -1 Euro. Damit ist E(X) = 4 · 1/6 + (-1) · 5/6 = 4/6 - 5/6 = -1/6 Euro. Das Spiel ist für den Spieler also leicht ungünstig.",
     "options": [
       "-1/6 Euro",
       "0 Euro",
@@ -97,98 +97,98 @@
   },
   {
     "correct": 0,
-    "explanation": "Zur Bestimmung der Extrempunkte wird die erste Ableitung gebildet und gleich Null gesetzt: f'(x) = 3x² - 3. Setzt man f'(x) = 0, erhält man 3x² = 3, also x² = 1. Daraus folgt x = 1 oder x = -1. Mit der zweiten Ableitung f''(x) = 6x kann man prüfen, dass es sich um Extrempunkte handelt: f''(-1) = -6 (Maximum) und f''(1) = 6 (Minimum).",
+    "explanation": "Notwendige Bedingung: f'(x) = 3x² - 3 = 0, also x² = 1 und damit x = -1 oder x = 1. Die zweite Ableitung f''(x) = 6x liefert f''(-1) = -6 < 0 (Hochpunkt) und f''(1) = 6 > 0 (Tiefpunkt). Die Werte -√3 und √3 sind dagegen Nullstellen von f, keine Extremstellen.",
     "options": [
-      "A) x = -1 und x = 1",
-      "B) x = 0",
-      "C) x = -1 und x = 0",
-      "D) x = 1"
+      "x = -1 und x = 1",
+      "x = 0 und x = 1",
+      "x = -3 und x = 3",
+      "x = -√3 und x = √3"
     ],
     "question": "Bestimmen Sie die x-Koordinaten der lokalen Extrempunkte der Funktion f(x) = x³ - 3x.",
     "topic": "Differentialrechnung, Extremwertbestimmung"
   },
   {
     "correct": 1,
-    "explanation": "Das Skalarprodukt zweier Vektoren a = (a₁, a₂, a₃) und b = (b₁, b₂, b₃) wird berechnet als a₁b₁ + a₂b₂ + a₃b₃. Hier ist das Skalarprodukt 2*4 + (-1)*2 + 3*(-1) = 8 - 2 - 3 = 3.",
+    "explanation": "Für a = (a₁|a₂|a₃) und b = (b₁|b₂|b₃) gilt a · b = a₁b₁ + a₂b₂ + a₃b₃. Hier ergibt sich 2·4 + (-1)·2 + 3·(-1) = 8 - 2 - 3 = 3. Das Skalarprodukt ist eine Zahl, kein Vektor. Werden die Minuszeichen übersehen, erhält man fälschlich 13.",
     "options": [
-      "A) (8, -2, -3)",
-      "B) 3",
-      "C) 8",
-      "D) (6, 1, 2)"
+      "-3",
+      "3",
+      "7",
+      "13"
     ],
-    "question": "Gegeben sind die Vektoren a = (2, -1, 3) und b = (4, 2, -1). Berechnen Sie das Skalarprodukt a ⋅ b.",
+    "question": "Gegeben sind die Vektoren a = (2|-1|3) und b = (4|2|-1). Berechnen Sie das Skalarprodukt a · b.",
     "topic": "Vektorrechnung, Skalarprodukt"
   },
   {
     "correct": 1,
-    "explanation": "Bei einer fairen Münze ist die Wahrscheinlichkeit für \"Kopf\" p = 0,5. Der Erwartungswert E(X) für eine binomialverteilte Zufallsvariable mit n Versuchen und Erfolgswahrscheinlichkeit p ist E(X) = n * p. Hier ist E(X) = 200 * 0,5 = 100.",
+    "explanation": "X ist binomialverteilt mit n = 200 und p = 0,5. Für die Standardabweichung gilt σ = √(n · p · (1 - p)) = √(200 · 0,5 · 0,5) = √50 ≈ 7,07. Der Wert 50 ist die Varianz, der Wert 10 entsteht, wenn fälschlich nur √(n · p) berechnet wird.",
     "options": [
-      "A) 50",
-      "B) 100",
-      "C) 150",
-      "D) 200"
+      "≈ 5,00",
+      "≈ 7,07",
+      "≈ 10,00",
+      "≈ 50,00"
     ],
-    "question": "Eine faire Münze wird 200 Mal geworfen. Wie oft erwartet man das Ergebnis \"Kopf\"?",
-    "topic": "Stochastik, Binomialverteilung, Erwartungswert"
+    "question": "Eine faire Münze wird 200 Mal geworfen. Die Zufallsgröße X zählt die Würfe mit dem Ergebnis \"Kopf\". Wie groß ist die Standardabweichung von X?",
+    "topic": "Stochastik, Binomialverteilung, Standardabweichung"
   },
   {
     "correct": 0,
-    "explanation": "Eine Stammfunktion von f(x) = 3x² - 2 ist F(x) = x³ - 2x. Der Wert des bestimmten Integrals ist F(2) - F(1). F(2) = 2³ - 2*2 = 8 - 4 = 4. F(1) = 1³ - 2*1 = 1 - 2 = -1. Somit ist der Wert 4 - (-1) = 5.",
+    "explanation": "Eine Stammfunktion von f(x) = 3x² - 2 ist F(x) = x³ - 2x. Der Wert des bestimmten Integrals ist F(2) - F(1). Dabei ist F(2) = 2³ - 2·2 = 8 - 4 = 4 und F(1) = 1³ - 2·1 = 1 - 2 = -1. Somit ergibt sich 4 - (-1) = 5.",
     "options": [
-      "A) 5",
-      "B) 6",
-      "C) 7",
-      "D) 8"
+      "5",
+      "6",
+      "7",
+      "8"
     ],
     "question": "Berechnen Sie den Wert des bestimmten Integrals ∫ (von 1 bis 2) (3x² - 2) dx.",
     "topic": "Integralrechnung, Bestimmtes Integral"
   },
   {
     "correct": 1,
-    "explanation": "Der Abstand eines Punktes P(x₀, y₀, z₀) von einer Ebene ax + by + cz - d = 0 wird mit der Hesseschen Normalenform berechnet: d = |ax₀ + by₀ + cz₀ - d| / √(a² + b² + c²). Hier sind a=2, b=2, c=-1, d=6 (oder als -d in der Formel: -6). Für P(1, 0, 0) ergibt sich d = |2*1 + 2*0 + (-1)*0 - 6| / √(2² + 2² + (-1)²) = |2 - 6| / √(4 + 4 + 1) = |-4| / √9 = 4 / 3.",
+    "explanation": "Man bringt die Ebene auf die Form 2x + 2y - z - 6 = 0 mit dem Normalenvektor n = (2|2|-1) und der Länge |n| = √(2² + 2² + (-1)²) = √9 = 3. Der Abstand ist der Betrag des Terms, geteilt durch |n|: d = |2·1 + 2·0 - 1·0 - 6| / 3 = |-4| / 3 = 4/3.",
     "options": [
-      "A) 2/3",
-      "B) 4/3",
-      "C) 2",
-      "D) 6"
+      "2/3",
+      "4/3",
+      "2",
+      "6"
     ],
-    "question": "Eine Ebene E ist gegeben durch die Koordinatenform 2x + 2y - z = 6. Berechnen Sie den Abstand des Punktes P(1, 0, 0) von dieser Ebene.",
+    "question": "Eine Ebene E ist gegeben durch die Koordinatenform 2x + 2y - z = 6. Berechnen Sie den Abstand des Punktes P(1|0|0) von dieser Ebene.",
     "topic": "Analytische Geometrie, Abstand Punkt-Ebene"
   },
   {
     "correct": 1,
-    "explanation": "Es wird die Produktregel f'(x) = u'v + uv' angewendet. Mit u = x² + 1 und v = e^x, ist u' = 2x und v' = e^x. Daraus folgt f'(x) = 2x ⋅ e^x + (x² + 1) ⋅ e^x = (2x + x² + 1) ⋅ e^x = (x² + 2x + 1) ⋅ e^x.",
+    "explanation": "Hier hilft die Kettenregel: Die äußere Funktion ist ln(u) mit u = x² + 1, die innere Ableitung ist u' = 2x. Wegen (ln u)' = u'/u folgt f'(x) = 2x/(x² + 1). Wird die innere Ableitung vergessen, erhält man fälschlich 1/(x² + 1).",
     "options": [
-      "A) 2x ⋅ e^x",
-      "B) (x² + 2x + 1) ⋅ e^x",
-      "C) (x² + 2x) ⋅ e^x",
-      "D) (2x + 1) ⋅ e^x"
+      "f'(x) = 1/(x² + 1)",
+      "f'(x) = 2x/(x² + 1)",
+      "f'(x) = 2x · ln(x² + 1)",
+      "f'(x) = 1/(2x)"
     ],
-    "question": "Bestimmen Sie die erste Ableitung der Funktion f(x) = (x² + 1) ⋅ e^x.",
-    "topic": "Differentialrechnung, Produktregel"
+    "question": "Bestimmen Sie die erste Ableitung der Funktion f(x) = ln(x² + 1).",
+    "topic": "Differentialrechnung, Kettenregel"
   },
   {
     "correct": 1,
-    "explanation": "Wenn die erste Kugel blau war und nicht zurückgelegt wurde, befinden sich noch 7 Kugeln in der Urne. Davon sind immer noch alle 5 roten Kugeln vorhanden, da eine blaue Kugel gezogen wurde. Die Wahrscheinlichkeit, dass die zweite Kugel rot ist, beträgt dann 5 von den verbleibenden 7 Kugeln, also 5/7.",
+    "explanation": "Nach dem Ziehen einer blauen Kugel ohne Zurücklegen befinden sich noch 7 Kugeln in der Urne, darunter unverändert alle 5 roten. Die gesuchte Wahrscheinlichkeit beträgt daher 5/7. Der Wert 5/8 wäre die Wahrscheinlichkeit für Rot im ersten Zug.",
     "options": [
-      "A) 5/8",
-      "B) 5/7",
-      "C) 3/8",
-      "D) 4/7"
+      "5/8",
+      "5/7",
+      "3/8",
+      "4/7"
     ],
     "question": "In einer Urne befinden sich 5 rote und 3 blaue Kugeln. Es werden nacheinander zwei Kugeln ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, dass die zweite Kugel rot ist, wenn bekannt ist, dass die erste Kugel blau war?",
     "topic": "Stochastik, Bedingte Wahrscheinlichkeit"
   },
   {
     "correct": 0,
-    "explanation": "Man setzt die Komponenten der Geradengleichungen gleich:  1+r = s (I), r = 1 (II), 1 = 3-s (III). Aus Gleichung (II) ergibt sich r = 1. Setzt man dies in (I) ein, erhält man 1 + 1 = s, also s = 2. Man überprüft diese Werte mit Gleichung (III): 1 = 3 - 2, was 1 = 1 ergibt. Die Werte r=1 und s=2 sind konsistent. Setzt man r=1 in die Gleichung von g₁ ein, erhält man den Schnittpunkt (1, 0, 1) + 1 ⋅ (1, 1, 0) = (2, 1, 1).",
+    "explanation": "Gleichsetzen der Koordinaten ergibt 1 + r = s (I), r = 1 (II) und 1 = 3 - s (III). Aus (II) folgt r = 1, aus (III) folgt s = 2. Beides erfüllt auch (I), denn 1 + 1 = 2. Einsetzen von r = 1 in g₁ liefert (1|0|1) + 1 · (1|1|0) = (2|1|1).",
     "options": [
-      "A) (2, 1, 1)",
-      "B) (1, 0, 1)",
-      "C) Die Geraden schneiden sich nicht.",
-      "D) Die Geraden sind identisch."
+      "(2|1|1)",
+      "(1|0|1)",
+      "(1|1|2)",
+      "(2|1|2)"
     ],
-    "question": "Bestimmen Sie den Schnittpunkt der beiden Geraden g₁: x = (1, 0, 1) + r ⋅ (1, 1, 0) und g₂: x = (0, 1, 3) + s ⋅ (1, 0, -1).",
+    "question": "Bestimmen Sie den Schnittpunkt der beiden Geraden g₁: x = (1|0|1) + r · (1|1|0) und g₂: x = (0|1|3) + s · (1|0|-1).",
     "topic": "Analytische Geometrie, Schnittpunkt von Geraden"
   }
 ]

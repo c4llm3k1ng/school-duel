@@ -89,7 +89,7 @@ for (const file of files) {
   const qs = Array.isArray(data) ? data : data.questions;
   if (!Array.isArray(qs)) { console.log(`\n### ${file}\n  Kein Fragen-Array`); totalFindings++; continue; }
 
-  const f = { struct: [], dupOpt: [], numDup: [], prefix: [], letterRef: [], longest: [], mojibake: [], dupQ: [] };
+  const f = { struct: [], dupOpt: [], numDup: [], prefix: [], letterRef: [], longest: [], ratbar: [], mojibake: [], dupQ: [] };
 
   const seenQ = new Map();
   qs.forEach((q, i) => {
@@ -141,6 +141,29 @@ for (const file of files) {
   const raw = JSON.stringify(qs);
   if (/Ã[¤¶¼ŸŒ]|â€[žœ“”]|Â[§°]/.test(raw)) f.mojibake.push('Verdacht auf kaputte Umlaute');
 
+  // Ratequote je DATEI: Wie oft gewinnt "einfach die laengste Option nehmen"?
+  //
+  // Why: Die Einzelfall-Regel oben (deutlich laengste) schlaegt erst bei krassen
+  // Ausreissern an. Sie uebersieht damit den viel schlimmeren Fall - eine ganze
+  // Datei, in der die richtige Antwort systematisch die ausfuehrlichste ist.
+  // Gefunden in k12 Geometrie: 27 von 28 Fragen so gebaut, also ohne jedes
+  // Fachwissen loesbar. Das ueberlebt auch shuffleOptions(), denn gemischt wird
+  // die Position, nicht die Laenge.
+  let laengste = 0, zaehlbar = 0;
+  qs.forEach(q => {
+    if (!Array.isArray(q.options) || q.options.length !== 4) return;
+    if (!Number.isInteger(q.correct) || q.correct < 0 || q.correct > 3) return;
+    zaehlbar++;
+    const l = q.options.map(o => String(o).length);
+    const max = Math.max(...l);
+    if (l[q.correct] === max && l.filter(x => x === max).length === 1) laengste++;
+  });
+  if (zaehlbar >= 8) {
+    const quote = laengste / zaehlbar;
+    // 25% waere Zufall. Ab 70% ist die Datei faktisch erratbar.
+    if (quote >= 0.7) f.ratbar.push(`${Math.round(quote * 100)}% der Fragen: richtige Antwort ist die laengste (Zufall waere 25%)`);
+  }
+
   const counts = Object.entries(f).filter(([, v]) => v.length);
   const n = counts.reduce((a, [, v]) => a + v.length, 0);
   totalFindings += n;
@@ -151,7 +174,7 @@ for (const file of files) {
     const LABEL = {
       struct:'STRUKTUR', dupOpt:'IDENTISCHE OPTIONEN', numDup:'WERTGLEICHE ZAHLEN',
       prefix:'ANTWORTPRAEFIX', longest:'RICHTIGE ANTWORT DEUTLICH LAENGSTE',
-      mojibake:'ENCODING', dupQ:'DOPPELTE FRAGE'
+      mojibake:'ENCODING', dupQ:'DOPPELTE FRAGE', ratbar:'DATEI IST ERRATBAR', letterRef:'VERWEIS AUF ANTWORTPOSITION'
     };
     for (const [k, v] of counts) {
       console.log(`  ${LABEL[k]}: ${v.length}`);
