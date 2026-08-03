@@ -149,25 +149,38 @@ for (const file of files) {
   // Gefunden in k12 Geometrie: 27 von 28 Fragen so gebaut, also ohne jedes
   // Fachwissen loesbar. Das ueberlebt auch shuffleOptions(), denn gemischt wird
   // die Position, nicht die Laenge.
-  // Beide Richtungen pruefen. Nur auf "laengste" zu testen reicht nicht:
-  // Beim Entschaerfen einer erratbaren Datei hat ein Agent die richtige Option
-  // so stark gekuerzt, dass sie in 78% der Faelle die KUERZESTE war - dasselbe
-  // Ratemuster, nur umgedreht.
-  let laengste = 0, kuerzeste = 0, zaehlbar = 0;
+  // Traegt die Laenge Information darueber, welche Antwort richtig ist?
+  //
+  // Gemessen wird der LAENGENRANG der richtigen Option (1 = laengste ... 4 =
+  // kuerzeste). Bei sauberem Bau liegt jeder Rang um 25%.
+  //
+  // Why die Rangverteilung und nicht nur "ist die laengste": Zwei Vorfassungen
+  // dieser Regel sind zu kurz gesprungen.
+  //  1. Nur "laengste" zu pruefen uebersah, dass ein Agent das Muster
+  //     spiegeln kann - 78% "kuerzeste" ist genauso erratbar.
+  //  2. "Nie die laengste" als Ziel zu setzen war selbst ein Muster: nach der
+  //     ersten Korrekturrunde lag Rang 1 bei 2% statt 25%. Wer die laengste
+  //     Option streicht, eliminiert dann garantiert eine falsche Antwort und
+  //     raet aus dreien statt aus vieren - Trefferquote 33% statt 25%.
+  // Ein Rang, der fast nie vorkommt, ist also genauso verwertbar wie einer,
+  // der fast immer vorkommt.
+  const rang = [0, 0, 0, 0];
+  let zaehlbar = 0;
   qs.forEach(q => {
     if (!Array.isArray(q.options) || q.options.length !== 4) return;
     if (!Number.isInteger(q.correct) || q.correct < 0 || q.correct > 3) return;
     zaehlbar++;
     const l = q.options.map(o => String(o).length);
-    const max = Math.max(...l), min = Math.min(...l);
-    if (l[q.correct] === max && l.filter(x => x === max).length === 1) laengste++;
-    if (l[q.correct] === min && l.filter(x => x === min).length === 1) kuerzeste++;
+    const sortiert = [...l].sort((a, b) => b - a);
+    rang[sortiert.indexOf(l[q.correct])]++;      // 0 = laengste
   });
-  if (zaehlbar >= 8) {
-    // 25% waere Zufall. Ab 70% ist die Datei faktisch erratbar.
-    const ql = laengste / zaehlbar, qk = kuerzeste / zaehlbar;
-    if (ql >= 0.7) f.ratbar.push(`${Math.round(ql * 100)}% der Fragen: richtige Antwort ist die laengste (Zufall waere 25%)`);
-    if (qk >= 0.7) f.ratbar.push(`${Math.round(qk * 100)}% der Fragen: richtige Antwort ist die KUERZESTE (Zufall waere 25%)`);
+  if (zaehlbar >= 12) {
+    const p = rang.map(x => x / zaehlbar);
+    const NAME = ['laengste', 'zweitlaengste', 'drittlaengste', 'kuerzeste'];
+    p.forEach((anteil, i) => {
+      if (anteil >= 0.55) f.ratbar.push(`${Math.round(anteil * 100)}% der Fragen: richtige Antwort ist die ${NAME[i]} (erwartet 25%)`);
+      else if (anteil <= 0.08) f.ratbar.push(`nur ${Math.round(anteil * 100)}%: richtige Antwort ist fast nie die ${NAME[i]} - diese Option laesst sich ausschliessen (erwartet 25%)`);
+    });
   }
 
   const counts = Object.entries(f).filter(([, v]) => v.length);

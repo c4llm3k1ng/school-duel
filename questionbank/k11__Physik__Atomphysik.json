@@ -16,9 +16,9 @@
     "explanation": "Bohr (1913): Die erlaubten Bahnen haben diskrete Energiewerte, beim Wasserstoff E_n = –13,6 eV/n². Auf einer erlaubten Bahn strahlt das Elektron nicht; nur beim Übergang auf eine innere Schale wird ein Photon abgegeben. Der Übergang n=3→n=2 (Hα) erklärt eine der sichtbaren Wasserstofflinien.",
     "options": [
       "Elektronen laufen auf beliebigen Bahnen und strahlen dauernd Energie ab",
-      "Elektronen kreisen strahlungsfrei nur auf erlaubten Bahnen",
-      "Elektronen ruhen auf festen Plätzen in der Hülle des Atoms",
-      "Elektronen wechseln die Bahn, ohne dabei Energie umzusetzen"
+      "Elektronen kreisen strahlungsfrei auf erlaubten Bahnen mit fester Energie",
+      "Elektronen ruhen auf festen Plätzen in der Hülle rund um den Kern",
+      "Elektronen wechseln beliebig die Bahn, ohne Energie umzusetzen"
     ],
     "question": "Was ist das Bohr'sche Atommodell?",
     "topic": "Atommodelle"
@@ -64,7 +64,7 @@
     "explanation": "h = 6,626×10⁻³⁴ J·s steht in E = hf und ist die kleinste Wirkungseinheit der Natur. Plancks Quantenhypothese von 1900 löste das Problem der Schwarzkörperstrahlung und begründete die Quantenphysik.",
     "options": [
       "Die Ruhemasse eines Photons in einem elektromagnetischen Feld",
-      "Eine Naturkonstante, die Energie und Frequenz verknüpft",
+      "Eine Naturkonstante, die Energie und Frequenz verknüpft: E = hf",
       "Eine Materialkonstante für Widerstände in Quantenschaltungen",
       "Die Lichtgeschwindigkeit in einem quantisierten Medium"
     ],
@@ -111,8 +111,8 @@
     "correct": 1,
     "explanation": "Ein α-Teilchen ist ein ⁴He-Kern aus 2 Protonen und 2 Neutronen; der Tochterkern hat A–4 und Z–2. Die Reichweite in Luft beträgt nur wenige Zentimeter, ein Blatt Papier schirmt ab. Das Ionisierungsvermögen ist aber sehr hoch, weshalb eingeatmete oder verschluckte α-Strahler gefährlich sind.",
     "options": [
-      "Schnelle Elektronen, die aus dem Kern geschleudert werden",
-      "Heliumkerne aus zwei Protonen und zwei Neutronen (⁴He)",
+      "Schnelle Elektronen, die beim Zerfall aus dem Kern austreten",
+      "Heliumkerne aus zwei Protonen und zwei Neutronen, kurze Reichweite",
       "Elektromagnetische Strahlung sehr hoher Frequenz aus dem Kern",
       "Positronen, die beim Zerfall protonenreicher Kerne entstehen"
     ],
@@ -160,9 +160,9 @@
     "explanation": "Beispiel: ²³⁵U + n → ²³⁶U* → ⁹²Kr + ¹⁴¹Ba + 3n + Energie. Es entstehen zwei mittelschwere Kerne, 2–3 freie Neutronen und viel Energie. Im Kernreaktor läuft der Vorgang kontrolliert ab, in der Atombombe unkontrolliert als Kettenreaktion.",
     "options": [
       "Verbrennung von Kernbrennstoff bei extrem hohen Temperaturen",
-      "Zerlegung schwerer Kerne durch Beschuss mit Neutronen",
+      "Zerlegung schwerer Kerne durch Neutronen in zwei leichtere Kerne",
       "Verschmelzung zweier leichter Kerne zu einem schweren Kern",
-      "Zerfall schwerer Kerne unter Aussendung von α-Teilchen"
+      "Spontaner Zerfall schwerer Kerne unter Aussendung von Strahlung"
     ],
     "question": "Was ist Kernspaltung?",
     "topic": "Kernphysik"
@@ -208,7 +208,7 @@
     "explanation": "Der Graph der Bindungsenergie pro Nukleon über der Massenzahl hat sein Maximum bei Fe-56 mit etwa 8,8 MeV je Nukleon. Alles, was Kerne in Richtung Eisen verschiebt, setzt Energie frei: Fusion bei leichten, Spaltung bei schweren Kernen.",
     "options": [
       "Eine Naturkonstante, die für alle Atomkerne denselben Wert hat",
-      "Ein Maß für die Stabilität eines Kerns, maximal bei Fe-56",
+      "Ein Maß für die Stabilität eines Kerns, am größten bei Eisen-56",
       "Die gesamte Bindungsenergie ohne Bezug auf die Nukleonenzahl",
       "Die Bindungsenergie der Elektronen in der Hülle des Elements"
     ],
@@ -268,7 +268,7 @@
     "explanation": "Ein Röntgen- oder Gammaphoton gibt bei der Streuung Energie an ein Elektron ab, seine Wellenlänge nimmt dadurch zu. Der Compton-Effekt (1923) beweist den Teilchencharakter des Lichts: Das Photon überträgt Impuls wie bei einem Stoß.",
     "options": [
       "Austritt von Elektronen aus Metall beim Bestrahlen mit Licht",
-      "Streuung energiereicher Photonen an Elektronen der Hülle",
+      "Streuung energiereicher Photonen an Elektronen, Wellenlänge wächst",
       "Vollständige Absorption von Licht ohne Änderung der Wellenlänge",
       "Spaltung von Kernen durch Beschuss mit sehr intensivem Licht"
     ],
@@ -304,7 +304,7 @@
     "explanation": "Paarbildung ist die Umkehrung der Annihilation, etwa γ → e⁻ + e⁺. Das Photon braucht dafür mindestens E ≥ 2m_e·c² = 1,022 MeV. Der Vorgang läuft nur im Feld eines Atomkerns ab, weil dieser den Impuls aufnimmt.",
     "options": [
       "Zwei Photonen verschmelzen zu einem einzigen Lichtteilchen",
-      "Aus einem Photon entsteht ein Teilchen-Antiteilchen-Paar",
+      "Aus einem Photon entsteht ein Paar aus Teilchen und Antiteilchen",
       "Ein energiereiches Photon spaltet einen schweren Atomkern",
       "Bei der Streuung eines Photons entsteht ein zweites Elektron"
     ],
@@ -340,7 +340,7 @@
     "explanation": "Das Standardmodell (1970er Jahre) beschreibt Quarks und Leptonen sowie die starke, die schwache und die elektromagnetische Wechselwirkung – zusammen 17 Elementarteilchen. Das Higgs-Boson (nachgewiesen 2012) vervollständigte es; die Gravitation ist bis heute nicht integriert.",
     "options": [
       "Ein klassisches Modell für Felder und makroskopische Körper",
-      "Die Theorie der Elementarteilchen und dreier Grundkräfte",
+      "Die Theorie der Elementarteilchen und dreier der vier Grundkräfte",
       "Ein Modell der Elektronenhülle von Atomen mit vielen Elektronen",
       "Das Bohr-Modell mit relativistischen Korrekturen erweitert"
     ],
@@ -376,7 +376,7 @@
     "explanation": "Der Wirkungsquerschnitt ist eine gedachte effektive Fläche und wird in Barn angegeben (1 b = 10⁻²⁴ cm²). Ein großer Wert bedeutet eine hohe Reaktionswahrscheinlichkeit: ²³⁵U hat für langsame (thermische) Neutronen einen sehr großen Wirkungsquerschnitt und eignet sich deshalb für Kettenreaktionen.",
     "options": [
       "Die geometrische Oberfläche eines Atomkerns in Quadratfermi",
-      "Ein Maß für die Wahrscheinlichkeit einer Kernreaktion",
+      "Ein Maß für die Wahrscheinlichkeit einer Kernreaktion, in Barn",
       "Die Querschnittsfläche des Kerns im Rutherford-Streuversuch",
       "Die Reichweite der starken Kernkraft zwischen den Nukleonen"
     ],
@@ -448,7 +448,7 @@
     "explanation": "Isotope haben dieselbe Protonenzahl, aber unterschiedliche Massenzahl. Chemisch verhalten sie sich gleich, weil die Elektronenzahl gleich ist. ¹⁴C ist radioaktiv und entsteht in der Atmosphäre aus ¹⁴N; Lebewesen nehmen es auf, nach dem Tod zerfällt es – die Grundlage der Radiokarbondatierung.",
     "options": [
       "Ein anderes Element mit ähnlichen chemischen Eigenschaften",
-      "Atome eines Elements mit verschiedener Neutronenzahl",
+      "Atome eines Elements mit verschiedener Neutronen- und Massenzahl",
       "Ein Atom, das Elektronen abgegeben oder aufgenommen hat",
       "Ein Molekül aus mehreren gleichartigen Atomen desselben Stoffs"
     ],
