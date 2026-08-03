@@ -126,13 +126,28 @@ function validate(qs) {
   fs.writeFileSync(bpfad, JSON.stringify(backup, null, 2), 'utf8');
   console.log(`\nBackup: ${path.basename(bpfad)}`);
 
+  const jetzt = Date.now();
+  const meta = {};
   for (const p of plan) {
-    const meta = META[p.katalog] || {};
-    const body = { id: p.katalog, ...meta, count: p.qs.length, questions: p.qs, updatedAt: Date.now() };
+    const m = META[p.katalog] || {};
+    const body = { id: p.katalog, ...m, count: p.qs.length, questions: p.qs, updatedAt: jetzt };
     const { ok } = await anfrage(`${FIREBASE_DB_URL}/${p.fbPath}.json?auth=${await token()}`,
       { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
     console.log(`  ${ok ? 'OK ' : 'FEHLER'} ${p.fbPath}  (${p.qs.length})`);
     if (!ok) process.exitCode = 1;
+    meta[p.katalog] = { id: p.katalog, ...m, count: p.qs.length, updatedAt: jetzt };
   }
+
+  // Kleiner Index ohne Fragen (~1 KB). Die App laedt beim Start nur ihn und
+  // holt die Fragen eines Katalogs erst, wenn sich updatedAt geaendert hat -
+  // sonst muessten bei jedem Start 1,2 MB ueber die Leitung.
+  //
+  // Liegt bewusst UNTER catalogs/: die Sicherheitsregeln geben nur diesen Pfad
+  // frei, ein eigener Knoten auf oberster Ebene wuerde mit 401 abgewiesen.
+  const { ok: okMeta } = await anfrage(`${FIREBASE_DB_URL}/catalogs/_meta.json?auth=${await token()}`,
+    { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(meta) });
+  console.log(`  ${okMeta ? 'OK ' : 'FEHLER'} catalogs/_meta  (${Object.keys(meta).length} Eintraege)`);
+  if (!okMeta) process.exitCode = 1;
+
   console.log('\nFertig.');
 })();
