@@ -1,22 +1,22 @@
 [
   {
     "correct": 1,
-    "explanation": "Oxidation = Elektronenabgabe (OIL: Oxidation Is Loss). Reduktion = Elektronenaufnahme (RIG: Reduction Is Gain). OIL-RIG-Merkhilfe.",
+    "explanation": "OIL-RIG: Oxidation Is Loss (Elektronenabgabe), Reduction Is Gain (Elektronenaufnahme). Die alte Sauerstoff-Definition ist nur ein Sonderfall der Oxidation.",
     "options": [
-      "Aufnahme von Elektronen (Verringerung der Oxidationszahl)",
-      "Abgabe von Elektronen (Erhöhung der Oxidationszahl)",
-      "Reaktion mit Sauerstoff (Bildung von Oxiden)",
-      "Aufnahme von Protonen (Protonierung des Teilchens)"
+      "Aufnahme von Elektronen, wodurch die Oxidationszahl sinkt",
+      "Abgabe von Elektronen, wodurch die Oxidationszahl des Teilchens steigt",
+      "Reaktion mit Sauerstoff, denn nur Sauerstoff kann oxidierend wirken",
+      "Aufnahme von Protonen, wodurch das Teilchen positiver wird"
     ],
     "question": "Was versteht man unter Oxidation im elektrochemischen Sinne?",
     "topic": "Redoxchemie"
   },
   {
     "correct": 1,
-    "explanation": "Redoxreaktionen umfassen immer beide Teilprozesse: ein Stoff wird oxidiert (gibt e⁻ ab), ein anderer reduziert (nimmt e⁻ auf). Kein Ox. ohne Red.",
+    "explanation": "Oxidation und Reduktion sind untrennbar: Ein Stoff gibt Elektronen ab und wird oxidiert, ein anderer nimmt sie auf und wird reduziert. Sauerstoff muss dabei nicht beteiligt sein.",
     "options": [
-      "Eine Reaktion, bei der nur Sauerstoff als Reaktionspartner beteiligt ist",
-      "Eine Reaktion, bei der Elektronenabgabe und Elektronenaufnahme gleichzeitig stattfinden",
+      "Eine Reaktion, an der zwingend Sauerstoff als Reaktionspartner beteiligt sein muss",
+      "Eine Reaktion, bei der Elektronenabgabe und -aufnahme gleichzeitig ablaufen",
       "Eine Reaktion zwischen Säure und Base, bei der Salz und Wasser entstehen",
       "Eine Reaktion, bei der Wasser eine Bindung unter Energieaufwand spaltet"
     ],
@@ -25,444 +25,444 @@
   },
   {
     "correct": 1,
-    "explanation": "Im galvanischen Element (z.B. Daniell-Element) läuft die Redoxreaktion freiwillig ab und erzeugt eine elektrische Spannung.",
+    "explanation": "Im galvanischen Element (z. B. Daniell-Element) läuft die Redoxreaktion freiwillig ab und liefert dabei eine elektrische Spannung. Die Elektrolyse ist der erzwungene Umkehrfall.",
     "options": [
-      "Ein Gerät zur rein elektrischen Energieübertragung ohne chemische Reaktion",
-      "Eine elektrochemische Zelle, die chemische Energie spontan in elektrische Energie umwandelt",
-      "Ein Gerät, das durch angelegten Strom eine erzwungene Elektrolyse durchführt",
-      "Ein Gerät zum Austausch von Wärmeenergie zwischen zwei Flüssigkeitskreisläufen"
+      "Ein Gerät, das elektrische Energie ohne jede chemische Reaktion nur weiterleitet",
+      "Eine Zelle, die chemische Energie spontan in elektrische umwandelt",
+      "Ein Gerät, das mit angelegtem Strom eine erzwungene Elektrolyse durchführt",
+      "Ein Bauteil, das Wärme zwischen zwei Kreisläufen überträgt"
     ],
     "question": "Was ist ein galvanisches Element?",
     "topic": "Galvanik"
   },
   {
     "correct": 1,
-    "explanation": "Anode (Minuspol): Zink oxidiert. Kathode (Pluspol): Kupfer-Ionen werden reduziert. Elektronen fließen durch den äußeren Leiter von Anode zu Kathode.",
+    "explanation": "Anode (Minuspol): Zn → Zn²⁺ + 2e⁻. Kathode (Pluspol): Cu²⁺ + 2e⁻ → Cu. Es gilt E° = 0,34 V − (−0,76 V) = 1,10 V; die Elektronen fließen im äußeren Leiter von der Anode zur Kathode.",
     "options": [
       "Eine Zelle, die Flüssigkeiten durch Stromfluss gleichmäßig erwärmt",
-      "Eine galvanische Zelle mit Zinkanode und Kupferkathode mit einer Standardspannung von ca. 1,1 V",
+      "Eine Zink-Kupfer-Zelle mit etwa 1,1 V Standardspannung",
       "Ein elektrochemisches Bad zur elektrolytischen Abscheidung von Metallen",
-      "Ein Bauelement zur Speicherung elektrischer Ladung in einem elektrischen Feld"
+      "Ein Bauelement zur Speicherung elektrischer Ladung im elektrischen Feld"
     ],
     "question": "Was ist das Daniell-Element?",
     "topic": "Galvanik"
   },
   {
     "correct": 1,
-    "explanation": "Elektrolyse: Anode (Pluspol) → Oxidation, Kathode (Minuspol) → Reduktion. Anwendungen: Aluminiumherstellung, Galvanisierung, Chlor-Alkali-Elektrolyse.",
+    "explanation": "Bei der Elektrolyse ist die Anode der Pluspol (Oxidation) und die Kathode der Minuspol (Reduktion). Anwendungen: Aluminiumherstellung, Galvanisieren, Chlor-Alkali-Elektrolyse.",
     "options": [
-      "Eine chemisch spontan ablaufende Redoxreaktion ohne äußere Stromzufuhr",
-      "Ein elektrochemischer Prozess, bei dem Strom nicht-spontane Redoxreaktionen erzwingt",
-      "Eine elektrochemische Zelle, die freiwillig elektrische Energie erzeugt",
-      "Eine Reaktion zwischen Säure und Base zu Salz und Wasser ohne Energiezufuhr"
+      "Eine freiwillig ablaufende Redoxreaktion, die ohne äußere Stromquelle auskommt",
+      "Ein Vorgang, bei dem angelegter Strom eine nicht freiwillige Redoxreaktion erzwingt",
+      "Eine Zelle, die aus einer spontanen Reaktion elektrische Energie gewinnt",
+      "Eine Reaktion von Säure und Base zu Salz und Wasser ohne Stromfluss"
     ],
     "question": "Was ist Elektrolyse?",
     "topic": "Elektrolyse"
   },
   {
     "correct": 1,
-    "explanation": "Standardpotenziale (E°) ermöglichen die Vorhersage der Zellspannung: E°_Zelle = E°_Kathode – E°_Anode. Tabellenwert gegenüber H₂/H⁺ (E°=0 V).",
+    "explanation": "Die Standard-Wasserstoffelektrode (25 °C, 1 mol/L, 1 bar) hat definitionsgemäß E° = 0 V. Aus den Tabellenwerten folgt die Zellspannung als E°_Zelle = E°_Kathode − E°_Anode.",
     "options": [
-      "Die Gesamtspannung einer galvanischen Zelle mit zwei Halbzellen unter Standardbedingungen",
-      "Die Spannung einer Halbzelle gegen die Standard-Wasserstoffelektrode (SHE) bei 25°C, 1 mol/L und 1 bar",
-      "Die freie Reaktionsenthalpie einer chemischen Reaktion unter Standardbedingungen",
-      "Die Lage des chemischen Gleichgewichts einer Reaktion als dimensionslose Konstante"
+      "Die Gesamtspannung einer galvanischen Zelle aus zwei Halbzellen unter Standardbedingungen",
+      "Die Spannung einer Halbzelle, gemessen gegen die Standard-Wasserstoffelektrode",
+      "Die freie Reaktionsenthalpie ΔG° einer Reaktion unter Standardbedingungen",
+      "Die Gleichgewichtslage einer Reaktion als dimensionslose Konstante"
     ],
     "question": "Was ist das Standardpotenzial einer Halbreaktion?",
     "topic": "Elektrochemische Spannungsreihe"
   },
   {
     "correct": 1,
-    "explanation": "Starke Reduktionsmittel (z.B. Li, K, Na) stehen mit negativem E° oben; starke Oxidationsmittel (F₂, Cl₂, Au³⁺) mit positivem E° unten.",
+    "explanation": "Oben stehen starke Reduktionsmittel mit negativem E° (Li, K, Na), unten starke Oxidationsmittel mit positivem E° (F₂, Cl₂, Au³⁺). Aus der Reihenfolge lässt sich vorhersagen, welche Redoxreaktion freiwillig abläuft.",
     "options": [
-      "Die Anordnung der Elemente nach steigender relativer Atommasse im Periodensystem",
-      "Eine Tabelle der Standardpotenziale, geordnet nach Stärke als Reduktions- oder Oxidationsmittel",
-      "Eine Liste der Ionenradien der Elemente geordnet nach Hauptgruppen im Periodensystem",
-      "Eine Übersicht der Bindungsenergien verschiedener chemischer Verbindungen und Ionen"
+      "Die Anordnung aller chemischen Elemente nach steigender relativer Atommasse im Periodensystem",
+      "Eine Tabelle der Standardpotenziale, geordnet nach Reduktions- und Oxidationskraft",
+      "Eine Liste der Ionenradien aller Elemente, nach Hauptgruppen des Periodensystems geordnet",
+      "Eine Übersicht der Bindungsenergien wichtiger chemischer Verbindungen"
     ],
     "question": "Was ist die elektrochemische Spannungsreihe?",
     "topic": "Elektrochemische Spannungsreihe"
   },
   {
     "correct": 1,
-    "explanation": "Eisenkorrosion (Rosten): Fe → Fe²⁺ + 2e⁻ (Anode) und O₂ + H₂O + 4e⁻ → 4OH⁻ (Kathode). Feuchtigkeit und Elektrolyte beschleunigen Korrosion.",
+    "explanation": "Rosten von Eisen: Fe → Fe²⁺ + 2e⁻ (Anode) und O₂ + 2H₂O + 4e⁻ → 4OH⁻ (Kathode). Feuchtigkeit und gelöste Elektrolyte beschleunigen den Vorgang deutlich.",
     "options": [
-      "Eine gewollte elektrochemische Reaktion zur gezielten Metallbearbeitung",
-      "Die unerwünschte Oxidation von Metallen durch Reaktion mit Sauerstoff und Wasser",
-      "Die Beschichtung einer Metalloberfläche mit Edelmetall als Schutzmaßnahme",
-      "Eine Reduktion von Metalloberflächen durch elektrochemische Schutzverfahren"
+      "Eine gezielt herbeigeführte Reaktion zur Bearbeitung von Metallteilen",
+      "Die unerwünschte Oxidation eines Metalls durch Sauerstoff und Feuchtigkeit",
+      "Das Überziehen einer Metalloberfläche mit einem schützenden Edelmetall",
+      "Die Reduktion einer Metalloberfläche durch elektrochemischen Schutz"
     ],
     "question": "Was ist Korrosion?",
     "topic": "Korrosion"
   },
   {
     "correct": 1,
-    "explanation": "In der H₂-Brennstoffzelle: H₂ → 2H⁺ + 2e⁻ (Anode); O₂ + 4H⁺ + 4e⁻ → 2H₂O (Kathode). Nur Wasser als Abprodukt.",
+    "explanation": "In der Wasserstoff-Brennstoffzelle gilt: Anode 2H₂ → 4H⁺ + 4e⁻, Kathode O₂ + 4H⁺ + 4e⁻ → 2H₂O. Solange Brennstoff nachströmt, fließt Strom; einziges Abprodukt ist Wasser.",
     "options": [
-      "Eine galvanische Einmalzelle, die gespeicherte chemische Energie endlich entlädt",
-      "Eine elektrochemische Zelle, die aus Brennstoff kontinuierlich Strom erzeugt, solange Brennstoff zugeführt wird",
-      "Eine Maschine, die Brennstoff durch Verbrennung in mechanische Bewegungsenergie umwandelt",
-      "Eine Anlage, die Verbrennungswärme über eine Turbine in elektrischen Strom umwandelt"
+      "Eine Einmalzelle, die eine fest gespeicherte Menge chemischer Energie entlädt",
+      "Eine Zelle, die aus zugeführtem Brennstoff laufend Strom erzeugt",
+      "Eine Maschine, die Brennstoff durch Verbrennung in Bewegungsenergie umsetzt",
+      "Eine Anlage, die Verbrennungswärme über eine Turbine in Strom umwandelt"
     ],
     "question": "Was ist eine Brennstoffzelle?",
     "topic": "Brennstoffzelle"
   },
   {
     "correct": 1,
-    "explanation": "Brønsted (1923): HCl (Säure) + H₂O (Base) → Cl⁻ + H₃O⁺. Wasser kann als Säure und Base fungieren (Ampholyt).",
+    "explanation": "Brønsted 1923: HCl + H₂O → Cl⁻ + H₃O⁺; HCl gibt das Proton ab, Wasser nimmt es auf. Wasser kann beide Rollen einnehmen und ist damit ein Ampholyt.",
     "options": [
-      "Säure gibt OH⁻ ab, Base nimmt OH⁻ auf (Arrhenius-Definition)",
+      "Säure gibt OH⁻ ab, Base nimmt OH⁻ auf, wie es Arrhenius beschrieb",
       "Säure gibt H⁺ ab (Protonendonator), Base nimmt H⁺ auf (Protonenakzeptor)",
-      "Säure akzeptiert Elektronenpaare, Base gibt Elektronenpaare ab (Lewis)",
-      "Base gibt Elektronen ab, Säure akzeptiert Elektronen (umgekehrte Lewis-Definition)"
+      "Säure nimmt Elektronenpaare auf, Base gibt Elektronenpaare ab (nach Lewis)",
+      "Base gibt Elektronen ab, Säure nimmt Elektronen auf, also Redoxverhalten"
     ],
     "question": "Was ist die Säure-Base-Theorie nach Brønsted?",
     "topic": "Säure-Base"
   },
   {
     "correct": 1,
-    "explanation": "Jede Brønsted-Säure hat eine konjugierte Base (nach Protonabgabe). Starke Säure → schwache konjugierte Base; schwache Säure → starke konjugierte Base.",
+    "explanation": "Jede Brønsted-Säure HA bildet nach Abgabe ihres Protons die konjugierte Base A⁻. Je stärker die Säure, desto schwächer ihre konjugierte Base – und umgekehrt.",
     "options": [
-      "Zwei verschiedene Säuren, die in derselben Lösung gleichzeitig vorliegen",
-      "Eine Säure und ihre korrespondierende Base, die sich nur um ein Proton unterscheiden",
-      "Zwei starke Säuren, die sich gegenseitig in einer Gleichgewichtsreaktion protonieren",
-      "Eine Säure und das zugehörige Salz ohne direkten Protonenübergang"
+      "Zwei verschiedene Säuren, die nebeneinander in derselben Lösung vorliegen",
+      "Eine Säure und ihre Base, die sich um genau ein Proton unterscheiden",
+      "Zwei starke Säuren, die sich in einem Gleichgewicht gegenseitig protonieren",
+      "Eine Säure und ihr Salz, zwischen denen kein Proton übergeht"
     ],
     "question": "Was ist ein konjugiertes Säure-Base-Paar?",
     "topic": "Säure-Base"
   },
   {
     "correct": 1,
-    "explanation": "pH-Skala: 0 (stark sauer) – 7 (neutral) – 14 (stark basisch). pH 7: [H₃O⁺] = 10⁻⁷ mol/L (neutrales Wasser bei 25°C).",
+    "explanation": "Die Skala reicht von 0 (stark sauer) über 7 (neutral) bis 14 (stark basisch). In neutralem Wasser bei 25 °C ist [H₃O⁺] = 10⁻⁷ mol/L, also pH = 7.",
     "options": [
-      "Die molare Konzentration der OH⁻-Ionen in einer wässrigen Lösung",
-      "Der negative dekadische Logarithmus der Protonenkonzentration: pH = –lg[H₃O⁺]",
-      "Die Säurekonstante K_s als Maß für den Dissoziationsgrad einer Säure",
-      "Die molare Konzentration aller gelösten Teilchen in einer Lösung"
+      "Die molare Konzentration der Hydroxid-Ionen in wässriger Lösung",
+      "Der negative dekadische Logarithmus der Oxonium-Konzentration: pH = −lg[H₃O⁺]",
+      "Die Säurekonstante K_s als Maß für den Dissoziationsgrad einer Säure HA",
+      "Die Konzentration sämtlicher gelöster Teilchen in einer Lösung"
     ],
     "question": "Was ist der pH-Wert?",
     "topic": "pH-Wert"
   },
   {
     "correct": 1,
-    "explanation": "Starke Säuren: vollständige Dissoziation → großes K_s. Schwache Säuren: Gleichgewichtsreaktion → kleines K_s. pH einer schwachen Säure ist höher als einer starken gleicher Konzentration.",
+    "explanation": "HCl dissoziiert in Wasser vollständig (sehr großes K_s), Essigsäure CH₃COOH nur zu einem kleinen Teil (K_s ≈ 1,8·10⁻⁵). Bei gleicher Konzentration hat die schwache Säure den höheren pH-Wert.",
     "options": [
-      "Starke Säuren sind grundsätzlich gefährlicher und korrosiver als schwache Säuren",
-      "Starke Säuren dissoziieren vollständig in Wasser (z.B. HCl); schwache Säuren nur partiell (z.B. CH₃COOH)",
-      "Schwache Säuren kommen in der Natur deutlich seltener vor als starke Säuren",
-      "Starke Säuren haben durch stärkere Intermolekularkräfte höhere Siedepunkte als schwache"
+      "Starke Säuren sind grundsätzlich ätzender und gefährlicher als schwache Säuren",
+      "Starke Säuren dissoziieren vollständig, schwache nur teilweise",
+      "Schwache Säuren kommen in der Natur viel seltener vor als starke Säuren",
+      "Starke Säuren haben wegen stärkerer zwischenmolekularer Kräfte höhere Siedepunkte"
     ],
     "question": "Was ist der Unterschied zwischen starker und schwacher Säure?",
     "topic": "Säure-Base"
   },
   {
     "correct": 1,
-    "explanation": "Puffer (z.B. Essigsäure/Acetat, NH₃/NH₄⁺, Bicarbonat/CO₂ im Blut): die schwache Säure neutralisiert zugegebene Base, das Salz neutralisiert zugegebene Säure.",
+    "explanation": "Beispiele: Essigsäure/Acetat, NH₃/NH₄⁺ oder Hydrogencarbonat/CO₂ im Blut. Die schwache Säure fängt zugegebene Base ab, ihr Salz die zugegebene Säure.",
     "options": [
-      "Eine gesättigte Salzlösung mit hoher Ionenkonzentration im Lösungsgleichgewicht",
-      "Eine Lösung aus schwacher Säure und konjugiertem Salz, die pH-Änderungen stark abpuffert",
-      "Eine neutrale Lösung mit einem konstanten pH-Wert von genau 7 bei 25°C",
-      "Eine Lösung mit einem Farbstoff, der den pH-Wert durch Farbwechsel sichtbar macht"
+      "Eine gesättigte Salzlösung, die im Gleichgewicht mit ungelöstem Bodenkörper steht",
+      "Eine Mischung aus schwacher Säure und ihrem Salz, die den pH stabil hält",
+      "Eine neutrale Lösung, deren pH-Wert bei 25 °C stets genau 7 beträgt",
+      "Eine Lösung mit Farbstoff, der den pH-Wert sichtbar anzeigt"
     ],
     "question": "Was ist eine Pufferlösung?",
     "topic": "Puffer"
   },
   {
     "correct": 1,
-    "explanation": "Bei der Säure-Base-Titration wird z.B. NaOH-Maßlösung zur Essigsäure-Lösung getropft; am Äquivalenzpunkt zeigt der Indikator den Farbumschlag an.",
+    "explanation": "Beispiel: NaOH-Maßlösung wird zur Essigsäure getropft, bis der Indikator umschlägt. Aus dem Verbrauch am Äquivalenzpunkt berechnet man die unbekannte Konzentration.",
     "options": [
-      "Eine Methode zur Trennung von Gemischen durch unterschiedliche Siedepunkte",
-      "Eine Methode zur Konzentrationsbestimmung durch kontrollierte Zugabe einer Maßlösung bis zum Äquivalenzpunkt",
-      "Eine Methode zur Trennung von Feststoffen aus Flüssigkeiten durch Filtermembranen",
-      "Eine Methode zur Zerlegung von Verbindungen durch elektrischen Stromfluss in Ionen"
+      "Eine Methode zur Trennung von Gemischen über unterschiedliche Siedepunkte",
+      "Zugabe einer Maßlösung bis zum Äquivalenzpunkt zur Gehaltsbestimmung",
+      "Eine Methode zur Abtrennung von Feststoffen aus Flüssigkeiten mit Filtern",
+      "Eine Zerlegung von Verbindungen in Ionen durch elektrischen Strom"
     ],
     "question": "Was ist Titration?",
     "topic": "Analytische Chemie"
   },
   {
     "correct": 1,
-    "explanation": "Indikatoren sind schwache Säuren oder Basen, die bei verschiedenen pH-Werten unterschiedlich gefärbt sind; Umschlagsbereich liegt bei pH_Ind ± 1.",
+    "explanation": "Indikatoren sind selbst schwache Säuren oder Basen, deren Säure- und Baseform verschieden gefärbt sind. Der Umschlagsbereich liegt etwa bei pK_s(Ind) ± 1.",
     "options": [
-      "Ein Maßstab für die molare Konzentration einer gelösten Substanz in einer Lösung",
-      "Ein Stoff, der durch Farbwechsel den Endpunkt einer Titration oder den pH-Bereich anzeigt",
-      "Ein Stoff, der eine Reaktion beschleunigt, ohne dabei selbst verbraucht zu werden",
-      "Ein Stoff, in dem sich andere Stoffe zur Bildung einer homogenen Lösung lösen"
+      "Ein Maß für die molare Konzentration eines gelösten Stoffes",
+      "Ein Stoff, der durch seinen Farbwechsel den Endpunkt einer Titration anzeigt",
+      "Ein Stoff, der eine Reaktion beschleunigt, ohne selbst verbraucht zu werden",
+      "Ein Stoff, in dem sich andere Stoffe zu einer homogenen Lösung lösen"
     ],
     "question": "Was ist ein Indikator in der Chemie?",
     "topic": "Analytische Chemie"
   },
   {
     "correct": 1,
-    "explanation": "Neutralisation: HCl + NaOH → NaCl + H₂O. Dabei werden die H₃O⁺- und OH⁻-Ionen zu Wasser vereinigt; der pH bewegt sich Richtung 7.",
+    "explanation": "HCl + NaOH → NaCl + H₂O; im Kern reagieren H₃O⁺ + OH⁻ → 2H₂O. Der pH-Wert nähert sich dabei dem Neutralpunkt an.",
     "options": [
-      "Eine Reaktion, bei der Elektronen zwischen zwei Reaktionspartnern übertragen werden",
-      "Die Reaktion einer Säure mit einer Base zu Salz und Wasser: H₃O⁺ + OH⁻ → 2H₂O",
-      "Eine Reaktion, bei der ein schwerlöslicher Feststoff als Niederschlag gebildet wird",
-      "Eine Reaktion, bei der neue Atome an eine Doppelbindung angelagert werden"
+      "Eine Reaktion, bei der Elektronen zwischen den Partnern übertragen werden",
+      "Reaktion einer Säure mit einer Base zu Salz und Wasser",
+      "Eine Reaktion, bei der ein schwerlöslicher Niederschlag ausfällt",
+      "Eine Reaktion, bei der Atome an eine Doppelbindung angelagert werden"
     ],
     "question": "Was ist Neutralisation?",
     "topic": "Säure-Base"
   },
   {
     "correct": 1,
-    "explanation": "Oxidationszahlen folgen Regeln: O ist meist –2, H meist +1, freie Elemente 0. Erhöhung = Oxidation, Verringerung = Reduktion.",
+    "explanation": "Regeln: freie Elemente 0, Sauerstoff meist −2, Wasserstoff meist +1, die Summe entspricht der Gesamtladung. Steigt die Oxidationszahl, wird oxidiert; sinkt sie, wird reduziert.",
     "options": [
-      "Die Gesamtanzahl der Atome eines Elements in einer chemischen Verbindung",
-      "Eine formale Zahl zur Beschreibung des Elektronen-'Besitzes' eines Atoms – Hilfsgröße für Redoxreaktionen",
-      "Die Anzahl der Protonen im Atomkern, die auch als Kernladungszahl bezeichnet wird",
-      "Die elektrische Ladung eines Ions im kristallinen oder gelöst vorliegenden Zustand"
+      "Die Anzahl der Atome eines Elements in der Formel einer Verbindung",
+      "Eine formale Zahl für den gedachten Elektronenbesitz eines Atoms",
+      "Die Zahl der Protonen im Kern, also die Kernladungszahl",
+      "Die tatsächliche Ladung eines Ions in Lösung oder im Kristall"
     ],
     "question": "Was ist die Oxidationszahl?",
     "topic": "Redoxchemie"
   },
   {
     "correct": 1,
-    "explanation": "Die Zellspannung ist immer positiv für spontane Reaktionen. Beispiel Daniell: E° = 0,34 – (–0,76) = 1,10 V.",
+    "explanation": "Für freiwillig ablaufende Zellreaktionen ist die Zellspannung positiv. Daniell-Element: E = 0,34 V − (−0,76 V) = 1,10 V.",
     "options": [
-      "E_Zelle = E°_Anode + E°_Kathode (Summe beider Standardpotenziale)",
-      "E_Zelle = E°_Kathode − E°_Anode (höheres minus niedrigeres Standardpotenzial)",
-      "E_Zelle = E°_Kathode × E°_Anode (Produkt beider Standardpotenziale)",
-      "E_Zelle = |E°_Kathode| + |E°_Anode| (Summe der Beträge beider Potenziale)"
+      "E_Zelle = E°_Anode + E°_Kathode, also Summe beider Standardpotenziale",
+      "E_Zelle = E°_Kathode − E°_Anode, also höheres minus niedrigeres Potenzial",
+      "E_Zelle = E°_Kathode · E°_Anode, also das Produkt beider Potenziale",
+      "E_Zelle = |E°_Kathode| + |E°_Anode|, die Summe der Beträge"
     ],
     "question": "Wie berechnet man die Zellspannung eines galvanischen Elements?",
     "topic": "Galvanik"
   },
   {
     "correct": 1,
-    "explanation": "Merkhilfe: Anode immer Ort der Oxidation (Anionen wandern hin). Kathode immer Ort der Reduktion (Kationen wandern hin) – unabhängig vom Prozess.",
+    "explanation": "Merksatz: An der Anode findet immer die Oxidation statt, an der Kathode immer die Reduktion – in beiden Zelltypen. Nur die Vorzeichen der Pole kehren sich um.",
     "options": [
-      "Es gibt keinen Unterschied: Polarität und Reaktionstyp sind in beiden Fällen identisch",
-      "Galvanisch: Anode (−), Kathode (+); bei Elektrolyse: Anode (+), Kathode (−) – Oxidation/Reduktion bleibt gleich",
-      "Beide Zelltypen haben stets dieselbe Polarität, nur die Stromrichtung ändert sich",
-      "Die Anode ist in beiden Fällen immer positiv geladen, unabhängig vom Zelltyp"
+      "Es gibt keinen Unterschied: Polarität und Reaktionstyp sind stets identisch",
+      "Galvanisch: Anode −, Kathode +; bei der Elektrolyse ist es umgekehrt",
+      "Beide Zelltypen haben dieselbe Polarität, nur die Stromrichtung dreht sich um",
+      "Die Anode ist in beiden Fällen der Pluspol, unabhängig vom Zelltyp"
     ],
     "question": "Was ist der Unterschied zwischen Anode und Kathode im galvanischen Element vs. Elektrolyse?",
     "topic": "Elektrochemie Grundbegriffe"
   },
   {
     "correct": 1,
-    "explanation": "Galvanisierung (Elektrolyse): z.B. Vernickeln, Verchromen, Vergolden. Das Werkstück wird als Kathode geschaltet; Metallionen der Maßlösung werden abgeschieden.",
+    "explanation": "Beim Vernickeln, Verchromen oder Vergolden wird das Werkstück als Kathode geschaltet; die Metall-Ionen des Elektrolyten werden dort reduziert und abgeschieden.",
     "options": [
-      "Die Herstellung eines galvanischen Elements aus verschiedenen Metallpaaren",
-      "Elektrolytische Abscheidung einer Metallschicht auf einem Werkstück zum Schutz oder zur Verzierung",
-      "Eine chemische Methode zur Reinigung von Metalloberflächen durch Lösungsmittel",
-      "Eine Oxidationsreaktion, bei der Metalle an der Luft eine natürliche Schutzschicht bilden"
+      "Die Herstellung eines galvanischen Elements aus zwei verschiedenen Metallen",
+      "Das elektrolytische Abscheiden einer Metallschicht auf ein Werkstück",
+      "Ein chemisches Reinigen von Metalloberflächen mit geeigneten Lösungsmitteln",
+      "Die Bildung einer natürlichen Oxidschutzschicht auf Metallen an der Luft"
     ],
     "question": "Was ist Galvanisierung?",
     "topic": "Elektrolyse"
   },
   {
     "correct": 1,
-    "explanation": "Aluminium wird durch Schmelzflusselektrolyse von Al₂O₃ (in Kryolith) hergestellt, da Aluminium aus wässriger Lösung nicht gewonnen werden kann (H₂ würde entstehen).",
+    "explanation": "Aluminium wird aus Al₂O₃ gewonnen, das in geschmolzenem Kryolith gelöst ist. Aus wässriger Lösung ginge es nicht, weil dort Wasser statt Aluminium reduziert würde und Wasserstoff entstünde.",
     "options": [
-      "Elektrolyse eines gelösten Salzes in wässriger Lösung bei Raumtemperatur",
-      "Elektrolyse eines geschmolzenen Salzes ohne Wasser, z. B. zur Herstellung von Aluminium oder Natrium",
-      "Eine thermische Reaktion, bei der Metalle durch Hitze direkt aus Erzen gewonnen werden",
-      "Eine Destillationsmethode zur Trennung von Metallverbindungen durch Verdampfung"
+      "Die Elektrolyse eines gelösten Salzes bei Raumtemperatur",
+      "Die Elektrolyse eines geschmolzenen Salzes ganz ohne Wasseranteil",
+      "Eine thermische Reduktion, bei der Hitze das Metall aus dem Erz löst",
+      "Eine Destillation, die Metalle durch Verdampfen abtrennt"
     ],
     "question": "Was ist Schmelzflusselektrolyse?",
     "topic": "Elektrolyse"
   },
   {
     "correct": 1,
-    "explanation": "Faraday-Konstante F = 96485 C/mol (Ladung pro Mol Elektronen). Q = I·t (Ladung = Strom × Zeit). Wichtig für industrielle Elektrolyseprozesse.",
+    "explanation": "Quantitativ gilt m = (M·Q)/(z·F) mit Q = I·t und der Faraday-Konstanten F = 96485 C/mol. Das ist die Grundlage für die Auslegung industrieller Elektrolysen.",
     "options": [
-      "Die elektrische Spannung ist dem Widerstand im Stromkreis proportional (Ohmsches Gesetz)",
-      "Die abgeschiedene Stoffmenge ist proportional zur geflossenen Ladung: m = (M·Q) / (z·F)",
-      "Die Energie einer Masse entspricht dem Produkt aus Masse und Lichtgeschwindigkeit im Quadrat",
-      "Das Produkt aus Druck und Volumen ist bei konstanter Temperatur konstant (Boyle-Gesetz)"
+      "Die Spannung ist dem Widerstand proportional, wie im Ohmschen Gesetz",
+      "Die abgeschiedene Stoffmenge ist proportional zur geflossenen Ladung Q",
+      "Die Energie eines Körpers ist Masse mal Lichtgeschwindigkeit hoch 2",
+      "Druck mal Volumen ist bei konstanter Temperatur konstant (Boyle)"
     ],
     "question": "Was ist das Faradaysche Gesetz der Elektrolyse?",
     "topic": "Elektrolyse"
   },
   {
     "correct": 1,
-    "explanation": "Elektrolyte: Salze, Säuren und Basen in wässriger Lösung oder im Schmelzfluss. Ionen als Ladungsträger; Elektronen leiten Metalle.",
+    "explanation": "Elektrolyte sind Salze, Säuren und Basen in wässriger Lösung oder als Schmelze; die Ladungsträger sind Ionen. In Metallen übernehmen dagegen frei bewegliche Elektronen den Transport.",
     "options": [
-      "Ein Stoff, der elektrischen Strom nicht leiten kann (elektrischer Isolator)",
-      "Ein Stoff oder eine Lösung, die elektrischen Strom durch Ionenbewegung leitet",
-      "Ein reines Metall, das Strom durch frei bewegliche Elektronen leitet",
-      "Ein organisches Lösungsmittel zur Auflösung anderer organischer Verbindungen"
+      "Ein Stoff, der elektrischen Strom überhaupt nicht leiten kann",
+      "Ein Stoff, der Strom durch bewegliche Ionen leitet",
+      "Ein reines Metall, das den Strom über freie Elektronen leitet",
+      "Ein organisches Lösungsmittel für unpolare Verbindungen"
     ],
     "question": "Was ist ein Elektrolyt?",
     "topic": "Elektrochemie Grundbegriffe"
   },
   {
     "correct": 1,
-    "explanation": "Lewis-Theorie erweitert Brønsted: auch H⁺-freie Reaktionen werden erfasst (z.B. AlCl₃ als Lewis-Säure akzeptiert e⁻-Paare).",
+    "explanation": "Die Lewis-Theorie ist weiter gefasst als Brønsted: Auch protonenfreie Reaktionen zählen dazu, etwa AlCl₃, das als Lewis-Säure ein Elektronenpaar aufnimmt.",
     "options": [
-      "Lewis-Säure gibt H⁺ ab (Protonendonator), Lewis-Base nimmt H⁺ auf (Protonenakzeptor)",
-      "Lewis-Säure: Elektronenpaar-Akzeptor; Lewis-Base: Elektronenpaar-Donator (weiter als Brønsted)",
-      "Lewis-Säure gibt OH⁻ ab, Lewis-Base nimmt OH⁻ auf (wie Arrhenius-Definition)",
-      "Lewis-Base gibt H⁺ ab, Lewis-Säure nimmt H⁺ auf (umgekehrt zur Brønsted-Definition)"
+      "Lewis-Säure gibt H⁺ ab, Lewis-Base nimmt H⁺ auf, wie bei Brønsted",
+      "Lewis-Säure nimmt Elektronenpaare auf, Lewis-Base gibt sie ab",
+      "Lewis-Säure gibt OH⁻ ab, Lewis-Base nimmt OH⁻ auf, wie bei Arrhenius",
+      "Lewis-Base gibt H⁺ ab, Lewis-Säure nimmt H⁺ auf, umgekehrt zu Brønsted"
     ],
     "question": "Was ist Lewis-Säure und Lewis-Base?",
     "topic": "Säure-Base"
   },
   {
     "correct": 1,
-    "explanation": "Arrhenius (1884): HCl → H⁺ + Cl⁻ (Säure); NaOH → Na⁺ + OH⁻ (Base). Eingeschränkt: gilt nur in Wasser, nicht für NH₃ als Base.",
+    "explanation": "Arrhenius 1884: HCl → H⁺ + Cl⁻ und NaOH → Na⁺ + OH⁻. Die Definition gilt nur in wässriger Lösung und erfasst zum Beispiel NH₃ nicht als Base.",
     "options": [
-      "Der aktuell modernste Säure-Base-Begriff mit dem breitesten Anwendungsbereich",
-      "Der älteste Begriff: Säure ionisiert zu H⁺, Base zu OH⁻ – nur in wässrigen Systemen gültig",
-      "Der umfassendste Begriff, der auch nichtwässrige und protonenfreie Reaktionen einschließt",
-      "Ein Konzept identisch mit der Brønsted-Theorie, nur in älterer historischer Formulierung"
+      "Der modernste Säure-Base-Begriff mit dem weitesten Anwendungsbereich",
+      "Der älteste Begriff: Säure liefert H⁺, Base liefert OH⁻ in Wasser",
+      "Der umfassendste Begriff, auch für protonenfreie Reaktionen",
+      "Ein Konzept, das inhaltlich der Brønsted-Theorie entspricht"
     ],
     "question": "Was ist der Arrhenius-Begriff von Säuren und Basen?",
     "topic": "Säure-Base"
   },
   {
     "correct": 1,
-    "explanation": "H₂O als Ampholyt: mit HCl (als Base): H₂O + HCl → H₃O⁺ + Cl⁻; mit NH₃ (als Säure): H₂O + NH₃ → OH⁻ + NH₄⁺.",
+    "explanation": "Wasser ist das klassische Beispiel: H₂O + HCl → H₃O⁺ + Cl⁻ (Wasser als Base) und H₂O + NH₃ → OH⁻ + NH₄⁺ (Wasser als Säure).",
     "options": [
-      "Ein Stoff, der weder Säure- noch Baseeigenschaften besitzt",
-      "Ein Stoff, der je nach Reaktionspartner als Säure oder als Base reagieren kann",
-      "Ein besonders starkes Oxidationsmittel, das Elektronen leicht aufnehmen kann",
-      "Ein Salz, das in Pufferlösungen den pH-Wert durch Protonenabgabe stabilisiert"
+      "Ein Stoff, der weder saure noch basische Eigenschaften zeigt",
+      "Ein Stoff, der je nach Partner als Säure oder als Base reagiert",
+      "Ein starkes Oxidationsmittel, das Elektronen leicht aufnimmt",
+      "Ein Salz, das den pH in Puffern durch Protonenabgabe hält"
     ],
     "question": "Was ist ein Ampholyt?",
     "topic": "Säure-Base"
   },
   {
     "correct": 1,
-    "explanation": "Fällungsreaktionen: z.B. AgNO₃ + NaCl → AgCl↓ + NaNO₃. Ag⁺ fällt Cl⁻ als weißen Niederschlag aus – Nachweis von Chlorid-Ionen.",
+    "explanation": "Beispiel: AgNO₃ + NaCl → AgCl↓ + NaNO₃. Der weiße Niederschlag AgCl dient als Nachweis für Chlorid-Ionen und erlaubt zugleich die Trennung von Ionengemischen.",
     "options": [
-      "Eine Reaktion zwischen einer Säure und einer Base zu Salz und Wasser",
-      "Die Bildung eines schwerlöslichen Niederschlags durch ein Reagenz zur Identifikation oder Trennung von Ionen",
-      "Eine Trennung von Gemischen durch Verdampfen und Kondensieren einzelner Komponenten",
-      "Eine Zerlegung von Verbindungen durch elektrischen Stromfluss in ihre Ionen"
+      "Die Reaktion einer Säure mit einer Base zu Salz und Wasser",
+      "Die Bildung eines schwerlöslichen Niederschlags durch ein Reagenz",
+      "Die Trennung von Gemischen durch Verdampfen und anschließendes Kondensieren",
+      "Die Zerlegung einer Verbindung in ihre Ionen durch elektrischen Strom"
     ],
     "question": "Was ist Fällung in der analytischen Chemie?",
     "topic": "Analytische Chemie"
   },
   {
     "correct": 1,
-    "explanation": "K_L = [Ca²⁺]·[CO₃²⁻] für CaCO₃. Wenn Ionenprodukt K_L übersteigt → Niederschlag bildet sich; darunter → Lösung ist noch ungesättigt.",
+    "explanation": "Für CaCO₃ gilt K_L = [Ca²⁺]·[CO₃²⁻]. Übersteigt das Ionenprodukt den Wert K_L, fällt ein Niederschlag aus; liegt es darunter, ist die Lösung noch ungesättigt.",
     "options": [
-      "Die maximal mögliche Konzentration eines Salzes in einer gesättigten Lösung",
-      "Das Produkt der Ionenkonzentrationen in einer gesättigten Lösung eines schwerlöslichen Salzes",
-      "Die Löslichkeit eines Stoffs angegeben in Gramm pro Liter Lösungsmittel bei Standardbedingungen",
-      "Eine Gleichgewichtskonstante, die angibt, wie stark eine Lösung verdünnt werden muss"
+      "Die höchste Konzentration, die ein Salz in gesättigter Lösung erreicht",
+      "Das Produkt der Ionenkonzentrationen in gesättigter Lösung",
+      "Die Löslichkeit eines Stoffes in Gramm pro Liter bei Standardbedingungen",
+      "Eine Konstante dafür, wie stark eine Lösung verdünnt werden muss"
     ],
     "question": "Was ist Löslichkeitsprodukt (K_L)?",
     "topic": "Analytische Chemie"
   },
   {
     "correct": 1,
-    "explanation": "Chlor-Alkali-Prozess: Kathode: 2H₂O + 2e⁻ → H₂ + 2OH⁻; Anode: 2Cl⁻ → Cl₂ + 2e⁻. Wichtige Ausgangsstoffe für Chemie- und Pharmaindustrie.",
+    "explanation": "Aus NaCl-Lösung entstehen an der Kathode 2H₂O + 2e⁻ → H₂ + 2OH⁻ und an der Anode 2Cl⁻ → Cl₂ + 2e⁻. Chlor, Natronlauge und Wasserstoff sind Grundstoffe der Chemie- und Pharmaindustrie.",
     "options": [
-      "Technisches Verfahren zur Herstellung von Aluminium durch Schmelzflusselektrolyse",
-      "Technisches Verfahren zur Herstellung von Chlorgas, Natronlauge und Wasserstoff aus NaCl-Lösung",
-      "Technisches Verfahren zur Herstellung von Kupfer durch Raffinations-Elektrolyse",
-      "Technisches Verfahren zur Neutralisation von Säuren und Basen im industriellen Maßstab"
+      "Verfahren zur Gewinnung von Aluminium durch Schmelzflusselektrolyse",
+      "Verfahren zur Gewinnung von Chlor, Natronlauge und Wasserstoff",
+      "Verfahren zur Reinigung von Rohkupfer durch Elektrolyse",
+      "Verfahren zur Neutralisation von Säuren im großen Maßstab"
     ],
     "question": "Was ist die Chlor-Alkali-Elektrolyse?",
     "topic": "Elektrolyse"
   },
   {
     "correct": 1,
-    "explanation": "K_W = [H₃O⁺]·[OH⁻] = 10⁻¹⁴ (bei 25°C). Im neutralen Wasser: [H₃O⁺] = [OH⁻] = 10⁻⁷ mol/L → pH = 7.",
+    "explanation": "Es gilt K_W = [H₃O⁺]·[OH⁻] = 10⁻¹⁴ bei 25 °C. In neutralem Wasser ist [H₃O⁺] = [OH⁻] = 10⁻⁷ mol/L, daraus folgt pH = 7.",
     "options": [
-      "Die Zersetzung von Wasser in Wasserstoff und Sauerstoff durch äußere Energiezufuhr",
-      "Die Eigenreaktion von Wasser: H₂O + H₂O ⇌ H₃O⁺ + OH⁻; K_W = 10⁻¹⁴ bei 25°C",
-      "Die Reaktion von Wasser mit Sauerstoff unter Bildung von Wasserstoffperoxid",
-      "Die Zersetzung von Wasser durch elektrischen Strom in Wasserstoff und Sauerstoff"
+      "Die Spaltung von Wasser durch zugeführte Wärmeenergie",
+      "Die Eigenreaktion zweier Wassermoleküle: H₂O + H₂O ⇌ H₃O⁺ + OH⁻",
+      "Die Reaktion von Wasser mit Sauerstoff zu Wasserstoffperoxid",
+      "Die Zerlegung von Wasser durch elektrischen Strom"
     ],
-    "question": "Was ist Autoprotolye des Wassers?",
+    "question": "Was ist Autoprotolyse des Wassers?",
     "topic": "Wasser"
   },
   {
     "correct": 1,
-    "explanation": "pH + pOH = pK_W = 14. Stark basische Lösung: pOH niedrig, pH hoch. Beispiel: 0,1 mol/L NaOH → pOH = 1, pH = 13.",
+    "explanation": "Es gilt pH + pOH = pK_W = 14 bei 25 °C. Beispiel: 0,1 mol/L NaOH ergibt pOH = 1 und damit pH = 13.",
     "options": [
-      "Der pH-Wert der Hydroxidionen in einer basischen Lösung",
-      "Der negative Logarithmus der OH⁻-Konzentration: pOH = –lg[OH⁻]; gilt: pH + pOH = 14",
-      "Der spiegelbildliche Gegenwert zum pH-Wert ohne mathematischen Zusammenhang",
-      "Ein Maß für die Stärke einer Base anhand ihrer Dissoziationskonstante"
+      "Der pH-Wert, den die Hydroxid-Ionen in einer basischen Lösung erzeugen",
+      "Der negative Logarithmus der Hydroxid-Konzentration: pOH = −lg[OH⁻]",
+      "Ein spiegelbildlicher Gegenwert zum pH ohne rechnerischen Zusammenhang",
+      "Ein Maß für die Stärke einer Base, abgeleitet aus K_b"
     ],
     "question": "Was ist pOH?",
     "topic": "pH-Wert"
   },
   {
     "correct": 1,
-    "explanation": "Komplexe: [Cu(NH₃)₄]²⁺ (Tetraamminkupfer-Komplex). Liganden NH₃ koordinieren über freie Elektronenpaare an Cu²⁺. Wichtig in Biologie (Hämoglobin: Fe-Komplex) und Medizin.",
+    "explanation": "Beispiel [Cu(NH₃)₄]²⁺: Die NH₃-Liganden binden mit ihrem freien Elektronenpaar koordinativ an Cu²⁺. Auch Hämoglobin ist ein Komplex, mit Eisen als Zentralion.",
     "options": [
-      "Ein Teilgebiet der organischen Chemie über kohlenstoffhaltige Verbindungen",
-      "Verbindungen aus einem Metallion als Zentralatom und Liganden, die sich koordinativ binden",
-      "Ein Teilgebiet der Chemie über hochmolekulare Polymere und ihre Eigenschaften",
-      "Eine rein ionische Verbindung aus Kationen und Anionen ohne koordinative Bindungen"
+      "Ein Teilgebiet der organischen Chemie über Kohlenstoffverbindungen",
+      "Verbindungen aus einem Zentralion und daran gebundenen Liganden",
+      "Ein Teilgebiet über hochmolekulare Polymere und ihre Eigenschaften",
+      "Eine rein ionische Verbindung aus Kationen und Anionen ohne Liganden"
     ],
     "question": "Was ist Komplexchemie?",
     "topic": "Komplexchemie"
   },
   {
     "correct": 1,
-    "explanation": "In wässriger Lösung: Kathode bevorzugt H₂O-Reduktion (H₂) vor Na⁺-Reduktion. Anode: Cl⁻-Oxidation zu Cl₂ (bei hoher Cl⁻-Konzentration bevorzugt vor O₂).",
+    "explanation": "An der Kathode wird Wasser statt Na⁺ reduziert (2H₂O + 2e⁻ → H₂ + 2OH⁻), da sich Natrium aus Wasser nicht abscheiden lässt. An der Anode wird bei hoher Chlorid-Konzentration Cl⁻ zu Cl₂ oxidiert.",
     "options": [
-      "Kathode: Na; Anode: Cl₂ (Natriumabscheidung und Chlorentwicklung in Wasser)",
-      "Kathode: H₂ und OH⁻; Anode: Cl₂ – da Na in wässriger Lösung nicht abgeschieden werden kann",
-      "Kathode: Na; Anode: O₂ (Sauerstoffentwicklung statt Chlorentwicklung an der Anode)",
-      "Kathode und Anode: NaOH direkt als Produkt durch Zusammenreaktion der Ionen"
+      "Kathode: Natrium; Anode: Chlor, das Metall scheidet sich ab",
+      "Kathode: Wasserstoff und Hydroxid-Ionen; Anode: Chlorgas",
+      "Kathode: Natrium; Anode: Sauerstoff statt Chlorgas",
+      "An beiden Elektroden entsteht direkt Natronlauge"
     ],
     "question": "Welche Produkte entstehen an Kathode und Anode bei der Elektrolyse wässriger NaCl-Lösung?",
     "topic": "Elektrolyse"
   },
   {
     "correct": 1,
-    "explanation": "K_s = [H₃O⁺]·[A⁻] / [HA]. Essigsäure: K_s ≈ 1,8·10⁻⁵; Salzsäure: vollständige Dissoziation (K_s sehr groß). pK_s-Werte erleichtern Vergleich.",
+    "explanation": "Es gilt K_s = [H₃O⁺]·[A⁻]/[HA]. Essigsäure: K_s ≈ 1,8·10⁻⁵ (pK_s ≈ 4,75); Salzsäure dissoziiert praktisch vollständig, ihr K_s ist sehr groß. Je kleiner der pK_s, desto stärker die Säure.",
     "options": [
-      "Der pH-Wert einer Lösung bei einer bestimmten Konzentration der Säure",
-      "Die Säurekonstante K_s (großes K_s = starke Säure; kleines K_s = schwache Säure)",
-      "Die Farbe der Lösung oder eines Indikators bei einer bestimmten Konzentration",
-      "Der Schmelzpunkt der reinen Säure als Maß für die Stärke ihrer Molekülbindungen"
+      "Der pH-Wert der Lösung bei einer bestimmten Konzentration der Säure",
+      "Die Säurekonstante K_s bzw. ihr negativer Logarithmus, der pK_s-Wert",
+      "Die Farbe, die ein Indikator in der Säurelösung annimmt",
+      "Der Schmelzpunkt der reinen Säure als Maß ihrer Bindungsstärke"
     ],
     "question": "Was ist ein Maßstab für die Stärke einer Säure?",
     "topic": "Säure-Base"
   },
   {
     "correct": 1,
-    "explanation": "Akkumulatoren (Sekundärzellen) sind wiederaufladbar: Entladen = galvanisch (chem. → elektr.); Laden = Elektrolyse (elektr. → chem.).",
+    "explanation": "Sekundärzellen wie Bleiakku oder Lithium-Ionen-Akku arbeiten beim Entladen galvanisch (chemisch → elektrisch) und beim Laden als Elektrolyse (elektrisch → chemisch).",
     "options": [
-      "Eine galvanische Einmalzelle, die sich nach der Entladung nicht wieder aufladen lässt",
-      "Eine galvanische Zelle, die durch Elektrolyse wieder aufgeladen werden kann (z.B. Bleiakku, Li-Ionen)",
-      "Ein galvanisches Element, das ohne feste Elektroden mit flüssigem Elektrodenmaterial arbeitet",
-      "Eine elektrochemische Zelle, die kontinuierlich aus Brennstoff Strom erzeugt"
+      "Eine Einmalzelle, die nach dem Entladen nicht wieder aufladbar ist",
+      "Eine galvanische Zelle, die sich elektrisch wieder aufladen lässt",
+      "Ein galvanisches Element mit flüssigem statt festem Elektrodenmaterial",
+      "Eine Zelle, die aus zugeführtem Brennstoff Strom erzeugt"
     ],
     "question": "Was ist eine sekundäre galvanische Zelle (Akkumulator)?",
     "topic": "Galvanik"
   },
   {
     "correct": 1,
-    "explanation": "Salz aus schwacher Säure/starker Base (z.B. CH₃COONa): CH₃COO⁻ + H₂O → CH₃COOH + OH⁻ → alkalisch. Salz aus starker Säure/schwacher Base: sauer.",
+    "explanation": "Salz aus schwacher Säure und starker Base, z. B. CH₃COONa: CH₃COO⁻ + H₂O → CH₃COOH + OH⁻, die Lösung reagiert alkalisch. Umgekehrt reagiert NH₄Cl aus starker Säure und schwacher Base sauer.",
     "options": [
-      "Das reine Lösen von Salz in Wasser, ohne dass eine chemische Reaktion auftritt",
-      "Reaktion von Salz-Ionen mit Wasser, die je nach Herkunft aus schwacher Säure oder Base den pH verändert",
-      "Eine Reaktion zwischen Salz-Ionen und einer Säure oder Base zu einem neuen Salz",
-      "Die Bildung eines schwerlöslichen Niederschlags beim Mischen zweier Salzlösungen"
+      "Das reine Lösen von Salz in Wasser ohne jede chemische Reaktion",
+      "Reaktion von Salz-Ionen mit Wasser, die den pH-Wert verschiebt",
+      "Die Reaktion von Salz-Ionen mit einer Säure oder Base zu neuem Salz",
+      "Die Bildung eines Niederschlags beim Mischen zweier Salzlösungen"
     ],
     "question": "Was ist Hydrolyse eines Salzes?",
     "topic": "Säure-Base"
   },
   {
     "correct": 1,
-    "explanation": "Faktoren wie Nebenreaktionen (H₂-Entwicklung statt Metallabscheidung) senken die Stromausbeute unter 100%.",
+    "explanation": "Fachlich korrekt heißt diese Größe Stromausbeute oder Faraday-Ausbeute: abgeschiedene Menge geteilt durch die nach m = (M·Q)/(z·F) erwartete Menge. Nebenreaktionen wie H₂-Entwicklung drücken sie unter 100 %.",
     "options": [
-      "Ein Begriff aus der Quantenphysik über die Energie von Photonen bei Lichtreaktionen",
-      "Das Verhältnis der tatsächlich abgeschiedenen zur theoretisch berechneten Stoffmenge – Maß für Effizienz",
-      "Die angelegte oder entstehende Spannung einer galvanischen oder elektrolytischen Zelle",
-      "Die Anzahl der Elektronen, die ein Atom bei der Elektrolyse pro Formeleinheit überträgt"
+      "Ein Begriff der Quantenphysik über die Energie von Lichtquanten bei Reaktionen",
+      "Das Verhältnis von tatsächlich zu theoretisch abgeschiedener Stoffmenge",
+      "Die zwischen den Elektroden anliegende Spannung der Zelle",
+      "Die Zahl der pro Formeleinheit übertragenen Elektronen"
     ],
-    "question": "Was ist Quantenausbeute in der Elektrochemie?",
+    "question": "Was ist Stromausbeute in der Elektrochemie?",
     "topic": "Elektrolyse"
   },
   {
     "correct": 1,
-    "explanation": "Brennstoffzellen umgehen den Carnot-Wirkungsgradverlust von Wärmekraftmaschinen und sind daher effizienter – entscheidend für Klimaziele.",
+    "explanation": "Die Brennstoffzelle wandelt chemische Energie direkt in elektrische um (etwa 60 %), der Verbrennungsmotor nimmt den Umweg über Wärme und Mechanik (etwa 25–40 %) und unterliegt dabei der Carnot-Grenze.",
     "options": [
       "Beide wandeln chemische Energie durch Verbrennung in Nutzenergie um",
-      "Brennstoffzelle: direkte Umwandlung chem. → elektr. Energie (~60%); Motor: chem. → Wärme → mech. (~25–40%)",
-      "Beide erreichen denselben Wirkungsgrad durch ähnliche Energieumwandlungsprozesse",
-      "Brennstoffzelle verbrennt Wasserstoff wie ein Motor, erzeugt dabei aber direkt Strom"
+      "Brennstoffzelle: direkt chemisch → elektrisch; Motor: über Wärme",
+      "Beide erreichen denselben Wirkungsgrad, weil die Umwandlung gleich ist",
+      "Die Brennstoffzelle verbrennt Wasserstoff wie ein Motor"
     ],
     "question": "Was ist das Prinzip der Brennstoffzelle im Vergleich zum Verbrennungsmotor?",
     "topic": "Brennstoffzelle"

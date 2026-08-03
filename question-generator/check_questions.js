@@ -165,14 +165,25 @@ for (const file of files) {
   // Ein Rang, der fast nie vorkommt, ist also genauso verwertbar wie einer,
   // der fast immer vorkommt.
   const rang = [0, 0, 0, 0];
-  let zaehlbar = 0;
+  let zaehlbar = 0, gleichlang = 0;
   qs.forEach(q => {
     if (!Array.isArray(q.options) || q.options.length !== 4) return;
     if (!Number.isInteger(q.correct) || q.correct < 0 || q.correct > 3) return;
-    zaehlbar++;
     const l = q.options.map(o => String(o).length);
-    const sortiert = [...l].sort((a, b) => b - a);
-    rang[sortiert.indexOf(l[q.correct])]++;      // 0 = laengste
+    const cl = l[q.correct];
+    // Gleichstand: Die richtige Antwort ist genauso lang wie mindestens eine
+    // falsche. Dann traegt die Laenge hier gar keine Information - solche Fragen
+    // gehoeren nicht in die Rangstatistik.
+    //
+    // Why: Frueher stand hier sortiert.indexOf(cl). indexOf liefert bei
+    // Gleichstand den ERSTEN Treffer, vier gleich lange Optionen zaehlten also
+    // immer als Rang 1. Bei Kopfrechen-Dateien mit reinen Zahlenoptionen ist
+    // das der Normalfall - k10 Kopfrechnen wurde dadurch mit 91% "richtige ist
+    // die laengste" gemeldet, obwohl 23 von 32 Fragen vier gleich lange
+    // Optionen hatten. Der Befund war zum groessten Teil ein Messartefakt.
+    if (l.some((x, j) => j !== q.correct && x === cl)) { gleichlang++; return; }
+    zaehlbar++;
+    rang[l.filter(x => x > cl).length]++;         // 0 = laengste
   });
   if (zaehlbar >= 12) {
     const p = rang.map(x => x / zaehlbar);

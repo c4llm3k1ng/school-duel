@@ -15,7 +15,7 @@
     "correct": 3,
     "explanation": "Alle Brüche auf den Nenner 8 erweitern: 3/4 = 6/8, 1/2 = 4/8. Dann 6/8 + 4/8 + 1/8 = 11/8, was 1 3/8 entspricht.",
     "options": [
-      "7/8",
+      "1 1/2",
       "1 1/8",
       "1 1/4",
       "1 3/8"
@@ -27,10 +27,10 @@
     "correct": 1,
     "explanation": "10 % von 350 sind 35. Daher sind 20 % das Doppelte, also 2 · 35 = 70.",
     "options": [
-      "50",
+      "105",
       "70",
-      "80",
-      "90"
+      "140",
+      "700"
     ],
     "question": "Wie viel sind 20 % von 350?",
     "topic": "Prozentrechnung"
@@ -40,9 +40,9 @@
     "explanation": "Setze die Werte ein: 3 · (4²) - 2 · 5 = 3 · 16 - 10 = 48 - 10 = 38.",
     "options": [
       "38",
-      "42",
+      "134",
       "48",
-      "58"
+      "154"
     ],
     "question": "Welchen Wert hat der Ausdruck 3x² - 2y, wenn x = 4 und y = 5?",
     "topic": "Terme und Variablen"
@@ -51,10 +51,10 @@
     "correct": 2,
     "explanation": "Die Quadratwurzel von 81 ist 9 (√81 = 9). 2 hoch 3 ist 8 (2³ = 8). Das Produkt ist 9 · 8 = 72.",
     "options": [
-      "54",
-      "64",
+      "648",
+      "144",
       "72",
-      "81"
+      "162"
     ],
     "question": "Berechne: √(81) · 2³",
     "topic": "Wurzeln und Potenzen"
@@ -63,8 +63,8 @@
     "correct": 2,
     "explanation": "0,25 entspricht 1/4. Also berechnest du 1/4 von 120, was 30 ist.",
     "options": [
-      "20",
-      "25",
+      "480",
+      "300",
       "30",
       "40"
     ],
@@ -77,8 +77,8 @@
     "options": [
       "100 €",
       "125 €",
-      "200 €",
-      "250 €"
+      "1.000 €",
+      "2.600 €"
     ],
     "question": "Ein Sparguthaben von 2.500 € wird mit 4 % pro Jahr verzinst. Wie hoch sind die Zinsen nach einem Jahr?",
     "topic": "Zinsrechnung"
@@ -87,7 +87,7 @@
     "correct": 2,
     "explanation": "Ein Heft kostet 10,50 € : 7 = 1,50 €. Für 12 Hefte sind das 12 · 1,50 € = 18,00 €.",
     "options": [
-      "15,00 €",
+      "126,00 €",
       "16,50 €",
       "18,00 €",
       "21,00 €"
@@ -99,10 +99,10 @@
     "correct": 1,
     "explanation": "10 % von 200 sind 20. 5 % sind die Hälfte davon, also 10. Zusammen 20 + 10 = 30.",
     "options": [
-      "20",
+      "170",
       "30",
       "40",
-      "50"
+      "300"
     ],
     "question": "Was sind 15 % von 200?",
     "topic": "Prozentrechnung"
@@ -123,10 +123,10 @@
     "correct": 2,
     "explanation": "Bei gleicher Basis werden die Exponenten addiert: 2⁵ · 2³ = 2⁸. Und 2⁸ = 256.",
     "options": [
-      "64",
+      "32.768",
       "128",
       "256",
-      "512"
+      "1.024"
     ],
     "question": "Berechne: 2⁵ · 2³",
     "topic": "Potenzgesetze"
@@ -138,7 +138,7 @@
       "13",
       "27",
       "31",
-      "36"
+      "108"
     ],
     "question": "Was ist 3³ + 2²?",
     "topic": "Potenzen"
@@ -183,9 +183,9 @@
     "correct": 1,
     "explanation": "25 % entsprechen einem Viertel. Ein Viertel von 80 € ist 80 € : 4 = 20 €. Der reduzierte Preis ist 80 € - 20 € = 60 €.",
     "options": [
-      "50 €",
+      "100 €",
       "60 €",
-      "70 €",
+      "105 €",
       "75 €"
     ],
     "question": "Ein Produkt kostet 80 €. Der Preis wird um 25 % reduziert. Wie viel kostet es jetzt?",
@@ -195,7 +195,7 @@
     "correct": 2,
     "explanation": "Der Prozentsatz ist der Anteil vom Grundwert: 18 : 45 = 0,4. Das entspricht 40 %.",
     "options": [
-      "25 %",
+      "250 %",
       "30 %",
       "40 %",
       "45 %"
@@ -210,7 +210,7 @@
       "4/10",
       "11/12",
       "7/12",
-      "1/2"
+      "1 1/12"
     ],
     "question": "Berechne: 3/4 + 1/6",
     "topic": "Bruchrechnung"
@@ -219,10 +219,10 @@
     "correct": 1,
     "explanation": "Die Quadratwurzel von 196 ist 14, da 14 · 14 = 196. Die dritte Potenz von 3 (3³) ist 3 · 3 · 3 = 27. Die Summe ist 14 + 27 = 41.",
     "options": [
-      "23",
+      "223",
       "41",
-      "31",
-      "27"
+      "205",
+      "378"
     ],
     "question": "Was ist der Wert von √(196) + 3³?",
     "topic": "Potenzen und Wurzeln"
@@ -267,7 +267,7 @@
     "correct": 1,
     "explanation": "0,15 · 600 ist dasselbe wie 15 % von 600. Es gilt 10 % von 600 = 60 und 5 % von 600 = 30. Zusammen sind das 60 + 30 = 90.",
     "options": [
-      "60",
+      "900",
       "90",
       "120",
       "150"
@@ -279,10 +279,10 @@
     "correct": 2,
     "explanation": "Zuerst die Klammern: 5/2 = 2,5, also 2,5 - 0,5 = 2. Zweite Klammer: 2² = 4, also 8 + 4 = 12. Zum Schluss multiplizieren: 2 · 12 = 24.",
     "options": [
-      "36",
-      "27",
+      "200",
+      "114",
       "24",
-      "30"
+      "144"
     ],
     "question": "Berechne: (5/2 - 0,5) · (8 + 2²)",
     "topic": "Mischrechnung"
@@ -291,10 +291,10 @@
     "correct": 1,
     "explanation": "1 % von 1.200 € sind 12 €. Da 36 € : 12 € = 3 ergibt, beträgt der Zinssatz 3 %.",
     "options": [
-      "2 %",
+      "30 %",
       "3 %",
-      "4 %",
-      "5 %"
+      "36 %",
+      "12 %"
     ],
     "question": "Ein Kapital von 1.200 € bringt in einem Jahr 36 € Zinsen. Wie hoch ist der Zinssatz?",
     "topic": "Zinsrechnung"
@@ -330,7 +330,7 @@
       "150",
       "300",
       "450",
-      "600"
+      "3.000"
     ],
     "question": "Überschlage im Kopf: 6.120 : 19. Welcher Wert liegt am nächsten?",
     "topic": "Überschlagsrechnung"
@@ -339,8 +339,8 @@
     "correct": 2,
     "explanation": "5³ = 5 · 5 · 5 = 125 und 4³ = 4 · 4 · 4 = 64. Die Differenz ist 125 - 64 = 61.",
     "options": [
-      "41",
-      "51",
+      "189",
+      "125",
       "61",
       "71"
     ],
@@ -375,10 +375,10 @@
     "correct": 2,
     "explanation": "Mit der dritten binomischen Formel: 51² - 49² = (51 + 49) · (51 - 49) = 100 · 2 = 200.",
     "options": [
-      "100",
-      "150",
+      "5.002",
+      "2.601",
       "200",
-      "400"
+      "2.401"
     ],
     "question": "Berechne im Kopf: 51² - 49²",
     "topic": "Binomische Formeln"
