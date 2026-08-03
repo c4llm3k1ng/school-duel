@@ -20,7 +20,7 @@
       "(5x+1) / ((x-2)(x+1))",
       "(x+5) / ((x-2)(x+1))"
     ],
-    "question": "Fasse zu einem einzigen Bruchterm zusammen: 3/(x-2) + 2/(x+1) mit D = R \\ {2; -1}.",
+    "question": "Fasse zu einem einzigen Bruchterm zusammen: 3/(x-2) + 2/(x+1) mit D = ℝ \\ {2; -1}.",
     "topic": "Addition von Bruchtermen"
   },
   {
@@ -49,7 +49,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Definitionsmenge: D = R \\ {1; -2}. Kreuzweises Multiplizieren ergibt 2(x + 2) = 3(x - 1), also 2x + 4 = 3x - 3 und damit x = 7; dieser Wert liegt in D und ist die Lösung. Wer 3(x - 1) fälschlich zu 3x + 3 macht, erhält x = 1 – ausgerechnet eine Definitionslücke. Wer die Klammern zu 2x + 2 = 3x - 1 auflöst, erhält x = 3, wer über Kreuz vertauscht (2(x - 1) = 3(x + 2)), x = -8.",
+    "explanation": "Definitionsmenge: D = ℝ \\ {1; -2}. Kreuzweises Multiplizieren ergibt 2(x + 2) = 3(x - 1), also 2x + 4 = 3x - 3 und damit x = 7; dieser Wert liegt in D und ist die Lösung. Wer 3(x - 1) fälschlich zu 3x + 3 macht, erhält x = 1 – ausgerechnet eine Definitionslücke. Wer die Klammern zu 2x + 2 = 3x - 1 auflöst, erhält x = 3, wer über Kreuz vertauscht (2(x - 1) = 3(x + 2)), x = -8.",
     "options": [
       "x = 7",
       "x = 1",
@@ -73,12 +73,12 @@
   },
   {
     "correct": 2,
-    "explanation": "Der Nenner eines Bruchterms darf nicht null werden. Aus x² - 9 = 0 folgt (x - 3)(x + 3) = 0 und damit x = 3 oder x = -3. Beide Stellen sind auszuschließen, der Definitionsbereich ist also R \\ {-3; 3}. Der Zähler 3x + 1 spielt dabei keine Rolle, und x = 0 ist erlaubt, denn dort ist der Nenner -9.",
+    "explanation": "Der Nenner eines Bruchterms darf nicht null werden. Aus x² - 9 = 0 folgt (x - 3)(x + 3) = 0 und damit x = 3 oder x = -3. Beide Stellen sind auszuschließen, der Definitionsbereich ist also ℝ \\ {-3; 3}. Der Zähler 3x + 1 spielt dabei keine Rolle, und x = 0 ist erlaubt, denn dort ist der Nenner -9.",
     "options": [
-      "R \\ {3}",
-      "R \\ {-3}",
-      "R \\ {-3; 3}",
-      "R \\ {0; -3; 3}"
+      "ℝ \\ {3}",
+      "ℝ \\ {-3}",
+      "ℝ \\ {-3; 3}",
+      "ℝ \\ {0; -3; 3}"
     ],
     "question": "Bestimme den maximalen Definitionsbereich des Terms (3x+1)/(x²-9).",
     "topic": "Definitionsbereich von Bruchtermen"
@@ -97,7 +97,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Definitionsmenge: D = R \\ {3}. Multipliziert man die Gleichung mit (x - 3), so folgt x = 3 + 2(x - 3) = 2x - 3 und damit x = 3. Genau dieser Wert ist aber die Definitionslücke, es handelt sich also um eine Scheinlösung. Direkt sieht man es so: (x - 3)/(x - 3) = 2 bedeutet 1 = 2, ein Widerspruch. Die Gleichung hat keine Lösung, L = { }.",
+    "explanation": "Definitionsmenge: D = ℝ \\ {3}. Multipliziert man die Gleichung mit (x - 3), so folgt x = 3 + 2(x - 3) = 2x - 3 und damit x = 3. Genau dieser Wert ist aber die Definitionslücke, es handelt sich also um eine Scheinlösung. Direkt sieht man es so: (x - 3)/(x - 3) = 2 bedeutet 1 = 2, ein Widerspruch. Die Gleichung hat keine Lösung, L = { }.",
     "options": [
       "L = { }",
       "L = {3}",
@@ -133,7 +133,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Definitionsmenge: D = R \\ {2}. Subtrahiert man 1/(x - 2) auf beiden Seiten, bleibt 2/(x - 2) = 1. Multiplizieren mit (x - 2) ergibt 2 = x - 2 und damit x = 4, ein Wert aus D und somit die Lösung. Wer beim Multiplizieren die 1 auf der rechten Seite vergisst, erhält 3 = x - 2 und damit x = 5; wer 2/(x - 2) = 1 zu 2(x - 2) = 1 umformt, landet bei x = 2,5.",
+    "explanation": "Definitionsmenge: D = ℝ \\ {2}. Subtrahiert man 1/(x - 2) auf beiden Seiten, bleibt 2/(x - 2) = 1. Multiplizieren mit (x - 2) ergibt 2 = x - 2 und damit x = 4, ein Wert aus D und somit die Lösung. Wer beim Multiplizieren die 1 auf der rechten Seite vergisst, erhält 3 = x - 2 und damit x = 5; wer 2/(x - 2) = 1 zu 2(x - 2) = 1 umformt, landet bei x = 2,5.",
     "options": [
       "x = 2",
       "x = 4",
@@ -181,11 +181,11 @@
   },
   {
     "correct": 2,
-    "explanation": "Zuerst die Definitionsmenge: Wegen x² - 4 = (x - 2)(x + 2) muss x ≠ 2 und x ≠ -2 gelten. Multipliziert man die Gleichung mit dem Hauptnenner (x - 2)(x + 2), folgt (x + 2) - (x - 2) = 4, also x + 2 - x + 2 = 4 und damit die wahre Aussage 4 = 4. Die Gleichung ist also für jedes zulässige x erfüllt, die Lösungsmenge ist L = R \\ {-2; 2}.",
+    "explanation": "Zuerst die Definitionsmenge: Wegen x² - 4 = (x - 2)(x + 2) muss x ≠ 2 und x ≠ -2 gelten. Multipliziert man die Gleichung mit dem Hauptnenner (x - 2)(x + 2), folgt (x + 2) - (x - 2) = 4, also x + 2 - x + 2 = 4 und damit die wahre Aussage 4 = 4. Die Gleichung ist somit für jedes zulässige x erfüllt, die Lösungsmenge ist L = ℝ \\ {-2; 2}. Der häufigste Fehler ist, aus 4 = 4 auf L = ℝ zu schließen und die beiden Definitionslücken zu vergessen; wer 4 = 4 dagegen für einen Widerspruch hält, kommt fälschlich auf die leere Menge.",
     "options": [
-      "L = {2}",
-      "L = {-2}",
-      "L = R \\ {-2; 2}",
+      "L = ℝ \\ {2}",
+      "L = ℝ \\ {-2}",
+      "L = ℝ \\ {-2; 2}",
       "L = { }"
     ],
     "question": "Bestimme die Lösungsmenge der Gleichung: 1/(x-2) - 1/(x+2) = 4/(x²-4).",
