@@ -20,6 +20,31 @@ const path = require('path');
 const REPO = path.resolve(__dirname, '..');
 const VERBOSE = process.argv.includes('--verbose');
 
+// Ausgeschriebene Zahlwoerter mitzaehlen.
+//
+// Why: Ohne das meldete das Skript 16 angeblich unbelegte Antworten, die in
+// Wahrheit alle gedeckt waren - die Erklaerungen schreiben den Wert nur aus:
+// "fuenf Auswechslungen", "dreizehn Tore", "vierzig Spielzeiten". Ein reiner
+// Ziffernvergleich sieht das nicht und haette dazu gefuehrt, 16 einwandfreie
+// Erklaerungen zu "verbessern".
+const ZAHLWORT = {
+  null: 0, ein: 1, eins: 1, eine: 1, zwei: 2, drei: 3, vier: 4, fuenf: 5, fünf: 5,
+  sechs: 6, sieben: 7, acht: 8, neun: 9, zehn: 10, elf: 11, zwoelf: 12, zwölf: 12,
+  dreizehn: 13, vierzehn: 14, fuenfzehn: 15, fünfzehn: 15, sechzehn: 16, siebzehn: 17,
+  achtzehn: 18, neunzehn: 19, zwanzig: 20, dreissig: 30, dreißig: 30, vierzig: 40,
+  fuenfzig: 50, fünfzig: 50, sechzig: 60, siebzig: 70, achtzig: 80, neunzig: 90,
+  hundert: 100, tausend: 1000,
+};
+function zahlwoerter(s) {
+  const t = String(s || '').toLowerCase();
+  const gefunden = [];
+  for (const [w, v] of Object.entries(ZAHLWORT)) {
+    // Wortgrenze links, rechts auch Fugen zulassen ("fuenfmal", "achtjaehrig")
+    if (new RegExp('(^|[^a-zäöüß])' + w).test(t)) gefunden.push(v);
+  }
+  return gefunden;
+}
+
 // Deutsche Schreibweise: Punkt trennt Tausender, Komma ist das Dezimalzeichen.
 function zahlen(s) {
   const m = String(s || '').match(/-?\d{1,3}(?:\.\d{3})+(?:,\d+)?|-?\d+(?:,\d+)?|-?\d+(?:\.\d+)?/g);
@@ -63,7 +88,7 @@ for (const dir of ['questionbank', 'questionbank_katalog']) {
 
       if (!istErgebnis(q.options[q.correct])) return;
       const richtig = zahlen(q.options[q.correct]);
-      const erklaert = zahlen(q.explanation);
+      const erklaert = zahlen(q.explanation).concat(zahlwoerter(q.explanation));
       if (!richtig.length || !erklaert.length) return;
 
       // Jahreszahlen und Aufzaehlungen erzeugen sonst Rauschen: Wenn die
