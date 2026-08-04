@@ -496,3 +496,144 @@ Ein Agent hat in `k6__Geschichte__Antike` einmal in die **falsche** Richtung
 normalisiert (echte Umlaute zu ae/oe/ue). Seitdem steht das Verbot in jedem Auftrag.
 Die Datei wartet noch auf die Rückumwandlung — von Hand riskant wegen Wörtern wie
 „Aeneas", „Museum" und lateinischen Namen.
+
+---
+
+# Nachtrag: 4. August 2026, zweiter Teil
+
+Aus der Überarbeitung von fünf großen Dateien (k11 Deutsch/Literatur, k5 Geschichte/Frühe
+Neuzeit, k5 Geschichte/Mittelalter, k5 Physik, k6 Englisch/Grammatik), aufgeteilt in zehn
+Teile. Neun davon liegen jetzt im Zielkorridor 15–40 %; vorher waren fünf bei 95–100 %.
+
+## 22. Fehler im Fragetext — nur du kannst sie ändern
+
+Agenten dürfen Fragetexte nicht anfassen. Diese hier sind gemeldet, aber nicht behoben:
+
+| Datei | Frage | Was falsch ist |
+|---|---|---|
+| `k5__Geschichte__Mittelalter` | „Was waren die Vikinger?" | muss **Wikinger** heißen |
+| `k5__Geschichte__Mittelalter` | „Was waren die Kreuzzuege?" | muss **Kreuzzüge** heißen |
+| `k5__Geschichte__Mittelalter` | „Was war der Hundertjaehrige Krieg?" | muss **Hundertjährige** heißen |
+| `k5__Geschichte__Mittelalter` | „Was ist ein Burgfried?" | Der Fachbegriff ist **Bergfried**. „Burgfried" ist eine regionale Nebenform, im Schulbuch steht praktisch immer Bergfried. Die Erklärung nennt jetzt beide Formen. |
+| `k5__Geschichte__Mittelalter` | „Was ist Papst?" | grammatisch unvollständig, müsste „Was ist **ein** Papst?" heißen |
+| `k5__Geschichte__Mittelalter` | „Was war das Mittelalterliche Bildungssystem?" | Adjektiv fälschlich großgeschrieben |
+
+## 23. Distraktoren, die in Wahrheit zutrafen
+
+Diese Optionen waren als falsch markiert, sind aber richtig. Wer es weiß, hätte die Frage
+nicht lösen können.
+
+- **Papst, Klasse 5:** „Weltlicher König des mittelalterlichen Kirchenstaates" — das stimmt,
+  der Papst war bis 1870 weltlicher Herrscher des Kirchenstaates. Ersetzt.
+- **Kafkas *Die Verwandlung*, Klasse 11:** „Eine Erzählung über einen Stadtbewohner, der
+  sich von der Gesellschaft isoliert" — trifft auf Gregor Samsa zu. Ersetzt durch eine
+  Anspielung auf *Der Proceß*.
+- **Magnet, Klasse 5** — hier war die **richtige** Antwort falsch: „Körper, der andere
+  Metalle anzieht". Magnete ziehen nur ferromagnetische Metalle an, Aluminium und Kupfer
+  nicht. Korrigiert zu Eisen und Nickel.
+- **Leiter, Klasse 5** — ebenfalls die richtige Antwort: „Material das Strom leitet
+  (Metalle, Wasser)". Reines Wasser leitet sehr schlecht; Leitungswasser nur wegen
+  gelöster Salze. Zusatz entfernt.
+
+## 24. Sachlich korrigiert — bitte gegenlesen
+
+- **Romanik** war als „frühmittelalterlich" bezeichnet. Sie ist der Baustil von etwa 1000
+  bis 1200/1250, also Hoch-, nicht Frühmittelalter.
+- **Ablassbrief:** „vergab Sünden" war theologisch falsch. Ein Ablass erließ die
+  *zeitlichen Strafen* für bereits gebeichtete Sünden.
+- **Thesenanschlag 1517:** Das Original behauptete als Tatsache, Luther habe die Thesen
+  angeschlagen. Das gilt als nicht sicher belegt und steht jetzt entsprechend vorsichtig.
+- **Aristotelische Einheiten, Klasse 11:** Die Erklärung sagte „Aristoteles forderte: eine
+  Handlung, ein Ort, ein Tag." Aristoteles fordert in der *Poetik* nur die Einheit der
+  Handlung. Die „drei Einheiten" stammen von Castelvetro und Boileau. Der **Fragetext**
+  benutzt den Begriff weiterhin — er ist als Schulterminus etabliert, aber fachlich eine
+  Fremdzuschreibung.
+- **Zahlreiche Tippfehler** in Optionen und Erklärungen: „größtes Reicht", „Engliand",
+  „toerete", „Glaeuber", „plhuenderten", „Bysantinische", „Varaeger" (korrekt: Waräger),
+  „Richard Loewerz" (Löwenherz), „Gallileo Galilei", „Spaerinquisition", „Jeanne d Arc"
+  ohne Apostroph, „Ein Kloester".
+- **Galileis Prozess** stand in einer Mittelalterfrage für Klasse 5. Er fand 1633 vor der
+  römischen Inquisition statt und gehört dort nicht hin — gestrichen.
+
+## 25. Würde des Themas, Fortsetzung
+
+- **Pest:** Die Opferzahlen widersprachen sich innerhalb derselben Datei („ein Drittel"
+  gegen „25–50 Millionen" gegen „ein Drittel bis die Hälfte"). Vereinheitlicht auf „nach
+  Schätzungen ein Drittel bis die Hälfte", absolute Zahlen entfernt. Die Zahl steht jetzt
+  in der Erklärung, nicht mehr als Antwortoption.
+- **Judenverfolgungen während der Pest** standen nur als Stichwort „Juden als Suendenboecke
+  verfolgt". Jetzt ein vollständiger, wertender Satz — ohne Opferzahlen.
+- **Eroberung Jerusalems 1099:** Die Erklärung sagte nur „Erster Kreuzzug 1096–1099
+  erfolgreich". Ergänzt, dass es ein Blutbad unter den Bewohnern war. **Bitte prüfen, ob
+  das für Klasse 5 so gewünscht ist.**
+- **„Was wurde 1492 entdeckt?"** — „entdeckt" ist historisch heikel, weil Amerika bewohnt
+  war. Fragetext unverändert, aber in der Erklärung aufgefangen: „Für die Menschen in
+  Europa war das ein neuer Erdteil; für die Menschen, die dort schon lebten, begann damit
+  die Eroberung." Dasselbe bei der Wikinger-Landung um 1000.
+
+## 26. Strukturprobleme, die eine Entscheidung brauchen
+
+- **Sieben Dublettenpaare** in `k5__Geschichte__Mittelalter` allein: Burg, Lehnswesen,
+  Kreuzzüge, Pest, Stadt, Gutenberg, Wikinger. Die Fragen sind jetzt unterschiedlich
+  formuliert, behandeln aber dasselbe — im Spiel können zwei fast gleiche Fragen in
+  derselben Runde auftauchen. Ebenso Dom und Kathedrale in Teil 2.
+- **Falsche `topic`-Zuordnungen:** Wikinger als „Spätmittelalter" statt Frühmittelalter;
+  Gutenberg einmal „Spätmittelalter", einmal „Frühe Neuzeit"; zwei Fragen in
+  `k5__Physik__Allgemein` tragen `topic: "Chemie Grundlagen"`.
+- **Widersprüchliche Angaben:** Die Zahl der Kreuzzüge stand einmal als „8–9
+  Hauptkreuzzüge", einmal als „insgesamt 7". Die Zählung ist in der Forschung uneinheitlich
+  — jetzt steht in beiden Erklärungen nur noch der Zeitraum 1096–1291.
+
+## 27. Umlaute: 1701 Stellen wiederhergestellt
+
+`question-generator/fix_umlaute.js` hat ae/oe/ue in 33 Dateien zu echten Umlauten
+zurückgeführt. Bewusst **kein** blindes Ersetzen: Von 1685 Wortformen mit ae/oe/ue im
+Bestand sind die meisten korrekt — Sauerstoff, Goethe, Michael, Frauen, Quelle, neue,
+Feuer, League. Ein blinder Durchlauf hätte sie zerstört.
+
+Das Verfahren nutzt stattdessen einen Beweis aus dem Bestand selbst: Ersetzt wird nur, wenn
+dasselbe Wort anderswo mit echtem Umlaut vorkommt. „roemischen" ja, weil „römischen" belegt
+ist; „Sauerstoff" nein, weil es kein „Säuerstoff" gibt.
+
+Zwei Stellen brauchten Handarbeit:
+- „Groesse" wäre zu „Grösse" geworden statt **Größe** — nach langem Vokal steht ß.
+  Betrifft auch Großkönig, Großstädte, regelmäßig, gemäßigt.
+- „berquerte" ist der Rest von „überquerte", bei dem das ü ganz verlorengegangen war. Ein
+  ue→ü hätte „berqürte" ergeben.
+
+**Noch offen:** 1098 Wortformen ohne Beleg. Die allermeisten davon sind korrekt, aber
+darunter stecken Wörter, die im Bestand *immer* umgeschrieben sind und deshalb keinen
+Beleg finden. `node fix_umlaute.js --rest` listet sie auf.
+
+## 28. Nicht behebbare Längenmuster
+
+Bei manchen Fragen ist die Länge durch die Sache vorgegeben:
+- **SI-Einheit der Länge:** „Meter" bleibt zwangsläufig die kürzeste Option, alle sinnvollen
+  Alternativen (Zentimeter, Millimeter, Kilometer) sind länger.
+- **Englische Grammatik:** Bei „he go / he goes / he going / he gone" bestimmt die Grammatik
+  die Länge. Solche Fragen wurden bewusst in Ruhe gelassen — sie künstlich anzugleichen
+  hätte Klammer-Verrat erzeugt.
+
+## 29. Zwei Meldungen aus der Fruehen Neuzeit, die du kennen solltest
+
+**Der Dateiname stimmt nicht.** `k5__Geschichte__Fruehe_Neuzeit` enthaelt in der ersten
+Haelfte ausschliesslich Steinzeit, Aegypten, Mesopotamien und Griechenland - keine einzige
+Frage zur Fruehen Neuzeit (1492-1789). Ein Kind, das diese Kategorie waehlt, bekommt
+Antike. Entweder falsch einsortiert oder falsch benannt. Das reiht sich in Abschnitt 20 ein.
+
+**Der Agent hat "alle 40 Fragen haben correct: 1" als Verrat gemeldet. Das ist es nicht.**
+`shuffleOptions()` in `school-duel.html` mischt die Optionen zur Laufzeit und rechnet
+`correct` mit um - der Index im JSON ist im Spiel nie sichtbar. Ich notiere es hier, weil
+inzwischen rund ein Dutzend Agenten denselben Fehlalarm ausgeloest haben und du die Meldung
+sonst irgendwann selbst siehst und dich erschrickst.
+
+**Weitere Sachfehler, korrigiert:** Der Stein von Rosette traegt drei *Schriften*, aber nur
+zwei Sprachen (nicht "dreisprachig"). Die Cheops-Pyramide war in Option und Erklaerung
+widerspruechlich (137 m gegen 146,6 m). Fruehes Schmiedeeisen war *nicht* haerter als gute
+Bronze - der Vorteil war die Verfuegbarkeit des Erzes. Der olympische Friede garantierte
+sicheres Geleit, er beendete keine Kriege. Die Santa Maria war eine Nao, keine Karavelle.
+Der Augsburger Religionsfrieden 1555 galt nur fuer Lutheraner, nicht fuer alle Protestanten.
+
+**Zur Zeitrechnung:** Steinzeit-, Bronzezeit- und Jungsteinzeitdaten sind *mitteleuropaeische*
+Werte; weltweit gelten andere (Bronze im Vorderen Orient ab ~3300 v.Chr.). Ueberall
+"in Mitteleuropa" ergaenzt, damit die Zahlen nicht falsch verallgemeinert werden.
