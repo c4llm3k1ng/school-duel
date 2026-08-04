@@ -304,3 +304,190 @@ collect_replaced.js.
 Nebenbei entfallen: die einzige Frage zu **linearen Abbildungen / Matrizen**. Sie stand
 thematisch falsch in einer Vektoren-Datei. Falls das Thema im Bestand bleiben soll, braucht
 es einen eigenen Platz.
+
+---
+
+# Nachtrag: 4. August 2026
+
+Die folgenden Abschnitte stammen aus den Chargen zum Längenverrat (Klassen 5 bis 12,
+insgesamt 69 Dateien). Sortiert wie oben: was deine Entscheidung braucht, steht zuerst.
+
+## 13. Würde des Themas — bitte gegenlesen
+
+Die heikelsten Funde der Sitzung. Alle korrigiert, aber du solltest sie kennen.
+
+**Der Völkermord an Sinti und Roma war mit „bis zu 1,5 Millionen" Opfern angegeben.**
+Die Forschung nennt rund 220.000 bis eine halbe Million. Die Zahl war um ein Vielfaches
+überhöht. Jetzt als Spanne in der Erklärung, ohne Zahl in der Option.
+(`k11__Geschichte__Weltkriege`)
+
+**Eine Frage nach einem Pogrom hatte als Distraktoren „jährliches Volksfest mit
+Feuerwerk", „nationales Sportfest" und „Theaterveranstaltung".** Ersetzt durch echte
+Verfolgungsmaßnahmen (Aprilboykott 1933, Ausweisung polnischer Juden 1938,
+Judenstern 1941).
+
+**„über 11 Millionen Opfer aller Gruppen"** geht auf Simon Wiesenthal zurück und gilt
+nicht als belastbarer Forschungsstand. Entfernt.
+
+**Zwei NS-Begriffe getilgt:** „Kristallnacht" aus zwei Fragetexten und beiden
+Erklärungen — samt der Wendung „Name von den zerstörten Scheiben", die die
+NS-Perspektive übernahm. Und „erzwungene Umsiedlung von Juden in besetzte
+osteuropäische Gebiete", ein Tarnbegriff.
+
+**Ein Fragetext verwendet weiterhin „Euthanasie"** (`k10__Ethik__Philosophie`). Im
+Deutschen ist der Begriff durch die NS-Krankenmorde belastet, fachüblich ist
+„Sterbehilfe". Fragetextänderung war dem Agenten nicht erlaubt — **das braucht deine
+Freigabe.**
+
+Nebenbei sachlich statt verharmlosend gefasst: Gladiatoren („zum Kampf gezwungen"),
+Heloten als unfreie Landarbeiter, Alexanders Feldzüge mit Opfern und zerstörten Städten.
+
+## 14. Fragen, die keine falsche Antwort hatten
+
+Die schwerste Fehlerklasse überhaupt — schlimmer als eine unlösbare Frage, weil sie
+richtiges Wissen bestraft.
+
+`k6__Mathematik__Brueche`:
+
+> „Wie kürzt du 12/18?" → 12/18, 6/9, 2/3, 4/6
+> „Wie kürzt du 15/45?" → 3/9, 1/3, 5/15, 15/45
+
+Alle vier Optionen sind jeweils derselbe Bruch. Wer 6/9 anklickte, hatte recht und
+bekam gesagt, er liege falsch. Ursache war das fehlende Wort **„vollständig"** im
+Fragetext. In derselben Datei hatten 11 von 41 Fragen wertgleiche Distraktoren.
+
+**Sechs weitere Fragen hatten nur drei echte Optionen**, weil zwei Antworten dasselbe
+sagten — bei „Was ist ein Zugvogel?" stand zweimal wörtlich „Ein Standvogel". Dazu
+doppelte Destruenten-, Jahreszeiten-, Aufforstungs- und Sauerstoff-Optionen.
+
+## 15. Distraktoren, die in Wahrheit zutrafen
+
+Über die Sitzung rund 40 Fälle. Sie bestrafen den, der genau hinsieht. Eine Auswahl:
+
+**Extremfall:** Bei „Was ist die Klimaanlage der Erde?" waren **alle drei** Distraktoren
+wahr — Wolken reflektieren Sonnenlicht, Wälder erzeugen Regen, Eisschilde werfen Wärme
+zurück. Der Amazonas wird obendrein selbst so genannt.
+
+**Geographie und Natur:** „Die größte Wüste der Welt" zur Sahara (das ist die Antarktis).
+„Ein Treibhausgas" zur Ozonschicht (Ozon ist eines). Der Elbrus als höchster Berg
+Europas (zutreffend, wenn der Kaukasus zu Europa zählt). Polarwüsten sind kalte Wüsten.
+„Das Gebiet zwischen den gemäßigten Zonen" sind die Tropen.
+
+**Biologie:** „Artenvielfalt in einer Region" zur Biodiversität (die gängige
+Kurzdefinition). „Einzelliger Mikroorganismus, der auch als Zersetzer wirkt" zum
+Primärproduzenten (einzellige Algen sind welche). „In Eis oder Harz konservierte
+Überreste" seien keine Fossilien (Bernstein, Permafrost-Mammuts). „Der Energieverlust
+variiert je nach Art" (die 10-Prozent-Regel ist eine Faustregel, real 2 bis 20 %).
+
+**Physik und Chemie:** `F = p/t` beim zweiten Newtonschen Axiom (gilt exakt für
+konstante Kraft aus der Ruhe). „100 cm Brennweite ergibt Brechkraft 1" (das ist die
+Definition der Dioptrie). Joule als Energieeinheit in der Atomphysik.
+
+**Englisch:** „did walk" (emphatisches Simple Past), „She went?" (Deklarativfrage),
+„There is the house over there" (deiktisches there), „that" für Personen (defining
+relative clause), reported speech ohne Backshift bei präsentischer Redeeinleitung.
+
+**Geschichte:** Karthago als römische Neugründung (Colonia Iulia Carthago). Die
+Cestius-Pyramide in Rom. „Mehrere Gegenkönige gleichzeitig" beim Interregnum. „Angriff
+auf Ägypten" als Ziel des Vierten Kreuzzugs. Der SA-Brand als
+Reichstagsbrand-These. RGW und COMECON als zwei Optionen für dasselbe Bündnis.
+
+**Deutsch:** „Metapher" zur Personifikation (die gilt als Sonderform). „Prosa" zur
+Dramatik (Theaterstücke können in Prosa sein). „Alliteration" bei „Ich fordere
+Gerechtigkeit! Ich fordere Freiheit!" (ist eine). „Parallelismus" bei einem Satz, der
+zugleich Anapher ist.
+
+## 16. Der Klammer-Verrat — ein dritter Ratepfad
+
+Entdeckt am 4. August: Trägt die richtige Option als **einzige** einen Klammerzusatz,
+lässt sie sich ohne jedes Fachwissen erkennen. Bankweiter Scan: **44 Dateien,
+806 Fragen.** Spitzenwerte: `k6__Allgemeinwissen__Geographie` 50 von 79,
+`k5__Allgemeinwissen__Natur_Tiere` 36 von 67, `politik_schwer` 55 von 200.
+
+Abgrenzung: Stehen Klammern parallel in mehreren Optionen, sind sie unbedenklich.
+
+**Wichtig:** Manche Klammern tragen Inhalt und dürfen nicht gestrichen werden. Bei
+„to borrow" lautete die richtige Antwort „leihen (etwas nehmen)" — ohne den Zusatz wäre
+die Frage gar nicht eindeutig gewesen, weil „leihen" im Deutschen beide Richtungen
+abdeckt. Die Klammer war zugleich Verrat und einzige Disambiguierung.
+
+## 17. Entscheidungen, die ich selbst getroffen habe
+
+**Längster Fluss der Welt.** Die Frage hatte den Amazonas als markierte Antwort,
+abgeschwächt mit „möglicherweise". Der Streit ist offen: Der Nil gilt mit rund 6.650 km
+traditionell als längster und steht so in den meisten Nachschlagewerken; brasilianische
+Messungen von 2007 kommen beim Amazonas auf bis zu 6.992 km. **Ich habe den Nil gesetzt**
+und den Streit in die Erklärung geschrieben. Falls du den Amazonas willst, ist es eine
+Zeile. (`k6__Allgemeinwissen__Geographie`)
+
+**Komplexe Zahlen im Abitur** — weiterhin offen, siehe Abschnitt 3. Rund fünf Fragen in
+`k12__Mathematik__Algebra` und `k12__Mathematik__Gleichungen`.
+
+## 18. Aktualität — was jemand mit heutigem Wissen prüfen muss
+
+Alle diese Stellen wurden zeitunabhängig umformuliert, weil der Wissensstand der Agenten
+nicht reichte. Sie sind dadurch nicht falsch, aber unschärfer als nötig.
+
+| Datei | Was entfernt wurde |
+|---|---|
+| `k10__Politik__Wirtschaft` | Namentliche Aufzählung der Bundestagsparteien, feste Sitzzahl. Nach der Wahlrechtsreform 2023 und dem BVerfG-Urteil 2024 nicht sicher. |
+| `k6__Allgemeinwissen__Geographie` | Eurozonen-Größe („20 Länder"), Schengen („26 Länder"), Einwohnerzahlen deutscher Städte, Nigeria als „größte Volkswirtschaft Afrikas" |
+| `k6__Allgemeinwissen__Sport` | **Real Madrid „14 Titel" stand in der RICHTIGEN Antwort** — seit 2024 sind es mindestens 15. Dazu Marathon-Weltrekord, WM-Titelzahlen nach 2026, Djokovic, Formel-1-Rennzahl |
+| `k6__Allgemeinwissen__Technik` | Erneuerbaren-Anteil („60 %" statt real 52 %), Frontier als Spitzenreiter, Chipfertigung „unter 2 nm", Bluetooth-Reichweite 400 m |
+| `k7__Englisch__Landeskunde` | „45.000 Pubs" (sinkt seit Jahren), Underground-Fahrgastzahlen, Londoner Einwohnerzahl |
+
+Einzige verbliebene harte Gegenwartszahl: **„27 EU-Mitgliedstaaten"** in einer Option.
+
+## 19. Sachfehler, die eine Gegenprüfung wert sind
+
+Korrigiert, aber es sind Fälle, bei denen ich mich auf den jeweiligen Agenten verlasse:
+
+- Das **Mailänder Edikt 313** erlaubte das Christentum, machte es nicht zur
+  Staatsreligion — das war 380 unter Theodosius.
+- **Madrid** ist nicht die höchstgelegene Hauptstadt Europas (Andorra la Vella).
+- **Englisch als EU-Muttersprache**: nach dem Brexit rund 1 %, nicht 12 %.
+- Die **Anden haben keinen Achttausender** (die Erklärung behauptete „ca. 30").
+- **Wald bedeckt ein Drittel der Landfläche**, nicht der Erdoberfläche.
+- Die **Nürnberger Gesetze** entzogen das Reichsbürgerrecht, nicht die
+  Staatsangehörigkeit.
+- Das **Heimtückegesetz** datiert von 1934, nicht 1933.
+- **Hitler** wurde Ende 1924 entlassen, nicht „nach 9 Monaten".
+- Das **Trolley-Problem** stammt von Philippa Foot (1967), nicht von Judith Thomson.
+- **Assistierter Suizid** war in Deutschland nie generell strafbar; das BVerfG erklärte
+  2020 den Paragraphen zur geschäftsmäßigen Suizidhilfe für nichtig.
+- **„Form follows function"** ist von Louis Sullivan, war nie das Bauhaus-Motto.
+- Das **Metronom** hat Winkel erfunden, Mälzel ließ es patentieren.
+- **Epameinondas** war Thebaner, **Dareios** hat das Perserreich nicht gegründet
+  (das war Kyros II.), **Iustitias Augenbinde** ist spätmittelalterlich.
+- Ein **Goebbels zugeschriebenes Zitat** („Wiederholung macht Wahrheit") ist nicht
+  belegt.
+- **Deutschland wurde 2023 nicht Handball-Weltmeister** (Dänemark) und holte im
+  Eishockey **Silber, nicht Bronze**.
+- **Alkalimetalle** gehören in Paraffinöl oder Petroleum, nicht in Petrolether — der ist
+  leichtflüchtig und selbst hochentzündlich. **Sicherheitsrelevant.**
+
+## 20. Dateinamen, die nicht zum Inhalt passen
+
+Setzt sich fort und ist inzwischen ein Muster:
+
+- **`k5__Allgemeinwissen__Natur_Tiere`** enthält in beiden Teilen **kein einziges Tier** —
+  nur Wetter, Klima und Geologie.
+- `k7__Biologie__Zellen`: nur etwa 15 von 40 Fragen behandeln Zellen.
+- `k11__Biologie__Evolution`: nur 15 von 40 sind Evolution.
+- `k12__Mathematik__Algebra`: überwiegend Analysis.
+- `k7__Deutsch__Textsorten`: mehrere Grammatik- und Stilistikfragen.
+
+Ein Kind, das eine Kategorie wählt, bekommt etwas anderes. Das ist keine Frage der
+Richtigkeit, aber eine der Erwartung.
+
+## 21. Umlaute — kleiner als gedacht
+
+Der Rückstand betrifft nur **8 von 211 Dateien**, nicht den ganzen Bestand. Es ist ein
+Klasse-6-Mathematik-Problem. `k6__Mathematik__Brueche` ist erledigt (83
+Ersatzschreibungen). Offen: `k6__Mathematik__Geometrie`, `k6__Mathematik__Kopfrechnen`,
+`k6__Mathematik__Zahlen`.
+
+Ein Agent hat in `k6__Geschichte__Antike` einmal in die **falsche** Richtung
+normalisiert (echte Umlaute zu ae/oe/ue). Seitdem steht das Verbot in jedem Auftrag.
+Die Datei wartet noch auf die Rückumwandlung — von Hand riskant wegen Wörtern wie
+„Aeneas", „Museum" und lateinischen Namen.
