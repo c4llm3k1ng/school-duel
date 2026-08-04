@@ -75,8 +75,8 @@
     "correct": 1,
     "explanation": "Epot = mgh: Masse × Erdbeschleunigung × Höhe. Wasserkraft: Wasser in großer Höhe → fließt nach unten → treibt Turbine an. Feder: Spannenergie Espann = ½·D·x².",
     "options": [
-      "Die Energie, die ein Körper allein aufgrund seiner Geschwindigkeit besitzt",
-      "Die Lageenergie eines Körpers im Schwerefeld, abhängig von Masse, Höhe und Erdbeschleunigung",
+      "Die Energie der Bewegung, die ein Körper allein wegen seiner Geschwindigkeit besitzt",
+      "Die Lageenergie eines Körpers im Schwerefeld, bestimmt durch Masse und Höhe",
       "Die Energie, die in der ungeordneten Bewegung der Teilchen eines Stoffes steckt",
       "Die im Atomkern durch die starke Wechselwirkung gebundene Energie der Nukleonen"
     ],
@@ -97,10 +97,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Impulserhaltungssatz: In einem abgeschlossenen System bleibt der Gesamtimpuls konstant. Beim Stoß gilt immer p₁+p₂ = p₁′+p₂′; beim vollkommen unelastischen Stoß bewegen sich beide Körper danach mit gleicher Geschwindigkeit weiter. Raketenantrieb.",
+    "explanation": "p = m·v, Einheit kg·m/s = N·s (Newtonsekunde). Impulserhaltungssatz: In einem abgeschlossenen System bleibt der Gesamtimpuls konstant. Beim Stoß gilt immer p₁+p₂ = p₁′+p₂′; beim vollkommen unelastischen Stoß bewegen sich beide Körper danach mit gleicher Geschwindigkeit weiter. Raketenantrieb.",
     "options": [
       "Das Produkt aus Masse und Beschleunigung eines Körpers, gemessen in Newton",
-      "Das Produkt aus Masse und Geschwindigkeit eines Körpers, gemessen in Kilogramm mal Meter pro Sekunde",
+      "Das Produkt aus Masse und Geschwindigkeit, gemessen in Newtonsekunden",
       "Das Produkt aus Kraft und zurückgelegtem Weg eines Körpers, gemessen in Joule",
       "Die Änderung der Geschwindigkeit pro Zeit, gemessen in Meter pro Sekunde zum Quadrat"
     ],
@@ -123,7 +123,7 @@
     "correct": 1,
     "explanation": "Spitzer Nagel: große Druckwirkung (kleine Fläche). Schneeschuhe: gleiches Gewicht, größere Fläche → weniger Druck. Luftdruck: 101.325 Pa = 1 atm. Wasserdruck: p = ρ·g·h (steigt mit der Tiefe).",
     "options": [
-      "Die senkrecht auf einen Körper wirkende Kraft, gemessen in Newton",
+      "Die senkrecht auf die Oberfläche eines Körpers wirkende Kraft, gemessen in Newton",
       "Die senkrecht wirkende Kraft geteilt durch die Fläche, gemessen in Pascal",
       "Die Masse eines Körpers geteilt durch sein Volumen, gemessen in Kilogramm pro Kubikmeter",
       "Die pro Zeiteinheit umgesetzte Energie eines Systems, gemessen in Watt"
@@ -145,10 +145,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Gerichtete Reflexion: glatte Oberflächen (Spiegel). Diffuse Reflexion: raue Oberflächen (Papier). Anwendung: Spiegel, Rückstrahler (Straßenmarkierungen). Totalreflexion: Glasfaserkabel.",
+    "explanation": "Reflexionsgesetz: Einfallswinkel = Ausfallswinkel, beide zum Lot gemessen. Gerichtete Reflexion: glatte Oberflächen (Spiegel). Diffuse Reflexion: raue Oberflächen (Papier). Anwendung: Rückstrahler (Straßenmarkierungen). Totalreflexion: Glasfaserkabel.",
     "options": [
       "Die Richtungsänderung von Licht beim Übergang in ein Medium anderer optischer Dichte",
-      "Das Zurückwerfen von Licht an einer Oberfläche, wobei Einfallswinkel gleich Ausfallswinkel ist",
+      "Das Zurückwerfen von Licht an einer Fläche, Einfallswinkel gleich Ausfallswinkel",
       "Das Ausbreiten von Licht in den Schattenraum hinter einem engen Spalt oder Hindernis",
       "Die Aufnahme der Lichtenergie durch einen Stoff und ihre Umwandlung in Wärme"
     ],
@@ -160,7 +160,7 @@
     "explanation": "Brechungsindex n = c/v. Luft ≈ 1; Wasser ≈ 1,33; Glas ≈ 1,5. Beim Übergang ins optisch dichtere Medium wird das Licht zum Lot hin gebrochen. Anwendungen: Linsen, Brillen, Mikroskop, Regenbogen.",
     "options": [
       "Das Zurückwerfen von Licht an einer glatten Oberfläche unter dem gleichen Winkel",
-      "Die Richtungsänderung von Licht beim Übergang zwischen Medien unterschiedlicher Lichtgeschwindigkeit",
+      "Die Richtungsänderung von Licht beim Übergang in ein anderes Medium",
       "Die Aufnahme von Lichtenergie durch einen dunklen Stoff und deren Umwandlung in Wärme",
       "Die Ablenkung von Licht an Kanten und engen Spalten in den geometrischen Schattenraum"
     ],
@@ -208,9 +208,9 @@
     "explanation": "Spannung: Potenzialdifferenz zwischen zwei Punkten. Batterie: 1,5 V; Steckdose: 230 V. Sicherheit: Als Sicherheitskleinspannung gelten bis 50 V Wechselspannung (AC) bzw. bis 120 V Gleichspannung (DC); darüber wird es für den Körper gefährlich. 1 V = 1 J/C (Joule pro Coulomb).",
     "options": [
       "Die pro Zeit durch einen Leiterquerschnitt fließende Ladungsmenge, gemessen in Ampere",
-      "Die pro Ladung zur Verfügung stehende Energie, die den Strom antreibt, gemessen in Volt",
-      "Das Verhältnis aus Spannung und Stromstärke in einem Leiter, gemessen in Ohm",
-      "Das Produkt aus Stromstärke und Spannung in einem Bauteil, gemessen in Watt"
+      "Die pro Ladung verfügbare Energie, die den Strom antreibt, gemessen in Volt",
+      "Das Verhältnis aus Spannung und Stromstärke in einem Bauteil, gemessen in Ohm",
+      "Das Produkt aus Stromstärke und Spannung, gemessen in Watt"
     ],
     "question": "Was ist elektrische Spannung?",
     "topic": "Elektrizität"
@@ -241,10 +241,10 @@
   },
   {
     "correct": 1,
-    "explanation": "P = U·I. Glühlampe 60 W bei 230 V: I = 60/230 ≈ 0,26 A. Elektrische Energie W = P·t = U·I·t. 1 kWh = 3,6·10⁶ J. Stromrechnung: W in kWh × Preis.",
+    "explanation": "P = U·I, gleichwertig P = I²·R = U²/R. Glühlampe 60 W bei 230 V: I = 60/230 ≈ 0,26 A. Elektrische Energie W = P·t = U·I·t. 1 kWh = 3,6·10⁶ J. Stromrechnung: W in kWh × Preis.",
     "options": [
       "Das Produkt aus anliegender Spannung und der Dauer des Stromflusses, in Voltsekunden",
-      "Das Produkt aus Spannung und Stromstärke, gleichwertig auch I²·R, gemessen in Watt",
+      "Das Produkt aus anliegender Spannung und Stromstärke, gemessen in Watt",
       "Das Produkt aus Stromstärke und Zeit, also die transportierte Ladung, in Coulomb",
       "Das Produkt aus Widerstand und Stromstärke, also die abfallende Spannung, in Volt"
     ],
@@ -253,11 +253,11 @@
   },
   {
     "correct": 1,
-    "explanation": "Reihenschaltung: gleicher Strom, Spannungen addieren sich. Parallelschaltung: gleiche Spannung, Ströme addieren sich. Kurzschluss: sehr kleiner Widerstand → sehr hoher Strom → Überhitzung, Sicherung löst aus.",
+    "explanation": "Bestandteile: Quelle, Leitungen, Verbraucher und meist ein Schalter. Reihenschaltung: gleicher Strom, Spannungen addieren sich. Parallelschaltung: gleiche Spannung, Ströme addieren sich. Kurzschluss: sehr kleiner Widerstand → sehr hoher Strom → Überhitzung, Sicherung löst aus.",
     "options": [
       "Eine an einer Stelle unterbrochene Leiterschleife, in der trotzdem dauerhaft Strom fließt",
-      "Ein geschlossener Weg aus Quelle, Leitungen, Verbraucher und Schalter, den der Strom durchläuft",
-      "Eine Spannungsquelle allein, die auch ohne angeschlossene Leitungen Strom abgibt",
+      "Ein geschlossener Weg aus Quelle, Leitungen und Verbraucher, den der Strom durchläuft",
+      "Eine Spannungsquelle für sich allein, die auch ohne angeschlossene Leitungen Strom abgibt",
       "Ein Leiterstück ohne Quelle, in dem sich die Ladungsträger von selbst gerichtet bewegen"
     ],
     "question": "Was ist ein Stromkreis?",
@@ -361,10 +361,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Folgerungen: Zeitdilatation (bewegte Uhren gehen langsamer), Längenkontraktion. E = mc²: Masse als Energieform. GPS-Satelliten: Relativitätskorrekturen notwendig. Bestätigt durch Atomuhrexperimente und GPS.",
+    "explanation": "Postulat: c ist für jeden Beobachter gleich groß, unabhängig von dessen Bewegung. Folgerungen: Zeitdilatation (bewegte Uhren gehen langsamer), Längenkontraktion. E = mc²: Masse als Energieform. GPS-Satelliten: Relativitätskorrekturen notwendig. Bestätigt durch Atomuhrexperimente und GPS.",
     "options": [
       "Einsteins Theorie der Schwerkraft als Krümmung von Raum und Zeit durch große Massen",
-      "Einsteins Theorie von 1905: c ist für alle Beobachter gleich, Masse und Energie sind äquivalent",
+      "Einsteins Theorie von 1905: konstante Lichtgeschwindigkeit, Masse gleich Energie",
       "Die Theorie der gequantelten Energie und der Unschärfe im subatomaren Bereich",
       "Die Theorie vom Aufbau der Atome aus Kern und Elektronenhülle nach Rutherford und Bohr"
     ],
@@ -373,10 +373,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Planck (1900): E = h·f (Quantelung). Bohr (1913): Atommodell mit festen Elektronenbahnen. de Broglie: Materiewellen. Heisenberg: Δx·Δp ≥ ℏ/2 (Ort und Impuls nicht gleichzeitig beliebig genau messbar). Schrödinger-Gleichung. Anwendung: Laser, Halbleiter, MRT.",
+    "explanation": "Planck (1900): E = h·f (Quantelung). Bohr (1913): Atommodell mit festen Elektronenbahnen. de Broglie: Materiewellen (Welle-Teilchen-Dualismus). Heisenberg: Δx·Δp ≥ ℏ/2 (Ort und Impuls nicht gleichzeitig beliebig genau messbar). Schrödinger-Gleichung. Anwendung: Laser, Halbleiter, MRT.",
     "options": [
       "Die Beschreibung der Bewegung makroskopischer Körper durch die drei Newtonschen Gesetze",
-      "Die Physik des subatomaren Bereichs: gequantelte Energie, Unschärferelation, Welle-Teilchen-Dualismus",
+      "Die Physik des subatomaren Bereichs mit gequantelter Energie und Unschärfe",
       "Die Theorie der konstanten Lichtgeschwindigkeit mit Zeitdilatation und Längenkontraktion",
       "Die Lehre von Wärme, Temperatur und Energieumwandlungen in makroskopischen Systemen"
     ],
@@ -412,7 +412,7 @@
     "explanation": "Elektrische Feldstärke E = F/q (N/C = V/m). Feldlinien: von + nach –. Plattenkondensator: homogenes Feld E = U/d. Ladungen: gleiche stoßen ab, ungleiche ziehen an (Coulomb-Gesetz: F = k·q₁·q₂/r²).",
     "options": [
       "Der Raum um einen stromdurchflossenen Leiter, in dem Kräfte auf eine Magnetnadel wirken",
-      "Der Raum um eine Ladung, in dem Kräfte auf andere Ladungen wirken, beschrieben durch E = F/q",
+      "Der Raum um eine Ladung, in dem auf andere Ladungen anziehende oder abstoßende Kräfte wirken",
       "Der Raum um eine Masse, in dem auf andere Massen eine anziehende Kraft ausgeübt wird",
       "Der Bereich um einen heißen Körper, in dem Energie durch Strahlung nach außen abgegeben wird"
     ],
@@ -424,7 +424,7 @@
     "explanation": "Plattenkondensator: C = ε₀·ε_r·A/d. Ladung Q = C·U. Energie W = ½·C·U². Anwendungen: Blitzgerät, Ladungsausgleich, Filter in Schaltungen. Im Wechselstromkreis: kein Gleichstromdurchgang, Wechselstrom wird geleitet.",
     "options": [
       "Ein Bauelement, das den Stromfluss hemmt und die zugeführte Energie in Wärme umwandelt",
-      "Ein Bauelement, das Ladung und Energie in einem elektrischen Feld speichert, Kapazität C = Q/U",
+      "Ein Bauelement, das elektrische Ladung und damit Energie in einem elektrischen Feld speichert",
       "Ein Bauelement, das Energie in einem Magnetfeld speichert und Stromänderungen bremst",
       "Ein Gerät, das mechanische Drehbewegung durch Induktion in elektrische Spannung umwandelt"
     ],

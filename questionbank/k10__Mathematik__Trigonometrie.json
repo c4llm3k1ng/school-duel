@@ -6,7 +6,7 @@
       "Feste Seitenlängen, die jedes rechtwinklige Dreieck eindeutig festlegen",
       "Verhältnisse von je zwei Seiten, die einem der spitzen Winkel zugeordnet sind",
       "Winkel, die sich aus den drei Seitenlängen unmittelbar ablesen lassen",
-      "Formeln, mit denen der Flächeninhalt aus den drei Seiten berechnet wird"
+      "Formeln, mit denen sich der Flächeninhalt aus drei Seiten berechnen lässt"
     ],
     "question": "Was sind Sinus, Kosinus und Tangens am rechtwinkligen Dreieck?",
     "topic": "Trigonometrie"
@@ -39,9 +39,9 @@
     "correct": 1,
     "explanation": "Einheitskreis: x² + y² = 1. Der Winkel alpha wird von der positiven x-Achse aus gegen den Uhrzeigersinn gemessen; der zugehörige Kreispunkt hat die Koordinaten (cos(alpha) | sin(alpha)). So sind sin und cos für beliebige Winkel definiert, auch für stumpfe und negative. Kleinste Periode von sin und cos: 360° (= 2pi rad). Aus dem Satz des Pythagoras folgt sin²(alpha) + cos²(alpha) = 1 für jeden Winkel alpha.",
     "options": [
-      "Kreis mit Radius 2 um den Ursprung, auf dem jeder Winkel doppelt gezählt wird",
-      "Kreis mit Radius 1 um den Ursprung, dessen Punkte die Koordinaten (cos; sin) haben",
-      "Kreis mit Umfang 1, an dem sich Gradmaße direkt als Bogenlängen ablesen lassen",
+      "Kreis mit Radius 2 um den Ursprung, auf dem jeder Winkel (in Grad) doppelt gezählt wird",
+      "Kreis mit Radius 1 um den Ursprung, dessen Punkte die Koordinaten (cos; sin) tragen",
+      "Kreis mit Umfang 1, an dem sich alle Gradmaße unmittelbar als Bogenlängen ablesen lassen",
       "Kreis mit Durchmesser 1, der allein zur Umrechnung von Grad in Bogenmaß dient"
     ],
     "question": "Was ist der Einheitskreis in der Trigonometrie?",
@@ -99,7 +99,7 @@
     "correct": 1,
     "explanation": "cos(x): gerade Funktion, also achsensymmetrisch zur y-Achse. Wegen der Periode 2pi gibt es unendlich viele Extremstellen: Maxima bei x = 2k·pi mit cos(x) = 1, Minima bei x = pi + 2k·pi mit cos(x) = -1, jeweils für alle ganzen Zahlen k. Ableitung: -sin(x) (x im Bogenmaß). Pythagoreische Identität: sin²(x) + cos²(x) = 1 für alle x. Verschiebung: cos(x) = sin(x + pi/2).",
     "options": [
-      "Periodische Funktion mit Periode pi, deren Graph mit dem der Sinusfunktion übereinstimmt",
+      "Periodische Funktion mit Periode pi, deren Graph genau mit dem der Sinusfunktion übereinstimmt",
       "Periodische Funktion mit Periode 2pi, achsensymmetrisch zur y-Achse, cos(x) = sin(x + pi/2)",
       "Kehrwert der Sinusfunktion, also cos(x) = 1/sin(x), mit Polstellen an den Stellen k·pi",
       "Quadrat der Sinusfunktion, also cos(x) = sin²(x), mit ausschließlich positiven Werten"
@@ -112,7 +112,7 @@
     "explanation": "Ein Vektor ist genau genommen die Menge aller gleich langen, gleich gerichteten Pfeile; jeder einzelne Pfeil ist nur ein Repräsentant. Verwendung: Ortsvektor (zeigt vom Ursprung auf einen Punkt), Verschiebungsvektor (beschreibt einen Weg). Darstellung: Spalten- oder Zeilenvektor (a₁, a₂). Betrag: |a| = Wurzel(a₁² + a₂²) in 2D. Nullvektor (0, 0): Betrag 0, ihm wird keine Richtung zugeordnet. Gegenvektor -a: gleiche Länge, entgegengesetzte Richtung.",
     "options": [
       "Eine feste Stelle im Koordinatensystem, angegeben durch ihre Koordinaten",
-      "Eine gerichtete Größe mit Betrag und Richtung, dargestellt als Pfeil oder Zahlentupel",
+      "Eine gerichtete Größe mit Betrag und Richtung, dargestellt durch einen Pfeil",
       "Eine unbegrenzte Punktmenge, die durch zwei ihrer Punkte festgelegt ist",
       "Eine reine Zahlgröße ohne Richtung, etwa Masse, Temperatur oder Volumen"
     ],
@@ -135,9 +135,9 @@
     "correct": 1,
     "explanation": "Skalare Multiplikation: lambda · a, jede Komponente wird mit lambda multipliziert. Für den Betrag gilt |lambda · a| = |lambda| · |a|. lambda > 1: Streckung. 0 < lambda < 1: Stauchung. lambda < 0: zusätzlich Richtungsumkehr, lambda = -1 ergibt den Gegenvektor. lambda = 0 ergibt den Nullvektor. Kollinear (parallel) heißen a und b, wenn a = lambda · b mit einem b ungleich dem Nullvektor gilt.",
     "options": [
-      "Die Komponenten werden paarweise multipliziert und aufsummiert, Ergebnis ist eine Zahl",
+      "Die Komponenten werden paarweise multipliziert und dann aufsummiert, das Ergebnis ist eine Zahl",
       "Jede Komponente wird mit dem Skalar multipliziert, der Vektor wird gestreckt oder gestaucht",
-      "Allein die größte Komponente wird mit dem Skalar multipliziert, der Betrag bleibt gleich",
+      "Allein die größte Komponente wird mit dem Skalar multipliziert, der Betrag bleibt dabei gleich",
       "Der Skalar wird zu jeder Komponente addiert, wodurch der Vektor verschoben wird"
     ],
     "question": "Was ist die Multiplikation eines Vektors mit einem Skalar?",
@@ -147,8 +147,8 @@
     "correct": 1,
     "explanation": "Skalarprodukt (inneres Produkt): a · b = a₁b₁ + a₂b₂ in 2D, in 3D zusätzlich + a₃b₃. Das Ergebnis ist eine Zahl, kein Vektor. Geometrisch gilt a · b = |a|·|b|·cos(alpha), wobei der eingeschlossene Winkel alpha nur für Vektoren ungleich dem Nullvektor definiert ist. Anwendung: Winkel zwischen Vektoren, Orthogonalität. Für a, b ungleich Nullvektor bedeutet a · b = 0 genau alpha = 90°; der Nullvektor liefert dagegen immer 0, ohne dass ein Winkel vorliegt. Kommutativ: a · b = b · a.",
     "options": [
-      "Ein Vektor, dessen Komponenten die Produkte der jeweiligen Komponenten sind",
-      "Eine Zahl: a · b = a₁b₁ + a₂b₂ = |a|·|b|·cos(alpha), null genau bei Orthogonalität",
+      "Ein Vektor, dessen Komponenten die Produkte der jeweiligen Komponenten (a₁b₁; a₂b₂) sind",
+      "Eine Zahl: a · b = a₁b₁ + a₂b₂ = |a|·|b|·cos(alpha), also ein reiner Skalar",
       "Ein Vektor, der senkrecht auf beiden Ausgangsvektoren steht und ihre Fläche misst",
       "Ein Winkel, der sich direkt aus der Differenz der beiden Richtungswinkel ergibt"
     ],
@@ -231,9 +231,9 @@
     "correct": 1,
     "explanation": "Periodisch heißt: es gibt ein p > 0 mit f(x + p) = f(x) für alle x des Definitionsbereichs. Mit p ist auch jedes Vielfache k·p eine Periode; die kleinste davon nennt man Grundperiode. sin(x) hat die Grundperiode 2pi = 360°. Allgemein hat f(x) = sin(b·x) die Grundperiode 2pi/|b| (b ungleich 0). Beispiele: Gezeiten, EKG, Ton.",
     "options": [
-      "Die Funktion wächst auf ihrem gesamten Definitionsbereich streng monoton an",
+      "Die Funktion wächst auf ihrem gesamten Definitionsbereich (ohne Ausnahme) streng monoton",
       "Die Funktionswerte wiederholen sich nach einer festen Periode p: f(x+p) = f(x)",
-      "Die Funktion nimmt auf ihrem gesamten Definitionsbereich denselben Wert an",
+      "Die Funktion nimmt auf ihrem gesamten Definitionsbereich stets denselben festen Wert an",
       "Die Funktion besitzt genau ein Maximum und genau ein Minimum im Verlauf"
     ],
     "question": "Was ist Periodizität einer Funktion?",
@@ -243,10 +243,10 @@
     "correct": 1,
     "explanation": "sin(x) = a und cos(x) = a sind nur für -1 ≤ a ≤ 1 lösbar, dann aber wegen der Periodizität mit unendlich vielen Lösungen; tan(x) = a ist für jedes a lösbar. Beispiel sin(x) = 0,5: Grundlösung x = 30° = pi/6, alle Lösungen x = 30° + k·360° und x = 150° + k·360° mit k aus Z. Im Bogenmaß: x = pi/6 + 2k·pi und x = 5pi/6 + 2k·pi. Der Taschenrechner (arcsin, arccos, arctan) liefert immer nur eine Grundlösung, die übrigen muss man selbst ergänzen.",
     "options": [
-      "Gleichung der Form m·x + b = 0, die genau eine Lösung im Bogenmaß besitzt",
-      "Gleichung der Form sin(x) = a, cos(x) = a oder tan(x) = a mit unendlich vielen Lösungen",
+      "Gleichung der Form m·x + b = 0 mit genau einer Lösung (Nullstelle einer Geraden)",
+      "Gleichung der Form sin(x) = a, cos(x) = a oder tan(x) = a mit dem Winkel x",
       "Gleichung der Form a·x² + b·x + c = 0, die höchstens zwei Winkellösungen besitzt",
-      "Gleichung der Form x = a + t·u, in der ein Winkel als Parameter t auftritt"
+      "Gleichung der Form x = a + t·u, in der auch ein Winkel als Parameter t auftritt"
     ],
     "question": "Was ist eine trigonometrische Gleichung?",
     "topic": "Trigonometrie"
@@ -303,9 +303,9 @@
     "correct": 1,
     "explanation": "Abstand des Punktes P von der Geraden g: Lotfußpunkt F auf g bestimmen, also F = a + t₀·u so wählen, dass FP · u = 0 gilt. Dann ist d = |FP| die kürzeste aller Verbindungen von P zu Punkten von g. Alternativ im Raum: d = |AP × u| / |u| mit dem Kreuzprodukt, wobei A der Aufpunkt und u der Richtungsvektor der Geraden ist (u ungleich Nullvektor).",
     "options": [
-      "Die Länge der Verbindung vom Punkt zum Aufpunkt a der Geradengleichung",
+      "Die Länge der Verbindungsstrecke vom Punkt zum Aufpunkt a der Geradengleichung",
       "Die Länge des Lots vom Punkt auf die Gerade, also die kürzeste Verbindung",
-      "Der Abstand des Punktes vom Ursprung, gemessen entlang der Geraden",
+      "Der Abstand des Punktes vom Koordinatenursprung, gemessen entlang der Geraden",
       "Die Länge des Richtungsvektors u, angetragen im gegebenen Punkt P"
     ],
     "question": "Was ist der Abstand eines Punktes von einer Geraden?",
@@ -400,9 +400,9 @@
     "explanation": "Spiegelung an x-Achse: (x, y) → (x, -y). Spiegelung an y-Achse: (x, y) → (-x, y). Spiegelung am Ursprung (Punktspiegelung): (x, y) → (-x, -y). Spiegelung an y=x: (x, y) → (y, x).",
     "options": [
       "(x, y) → (y, x), die beiden Koordinaten werden vertauscht",
-      "(x, y) → (x, -y), die y-Koordinate wird negiert",
-      "(x, y) → (-x, y), die x-Koordinate wird negiert",
-      "(x, y) → (-x, -y), beide Koordinaten werden negiert"
+      "(x, y) → (x, -y), die y-Koordinate wird negiert, x bleibt",
+      "(x, y) → (-x, y), die x-Koordinate wird negiert, y bleibt",
+      "(x, y) → (-x, -y), beide Koordinaten werden dabei negiert"
     ],
     "question": "Was ist die Spiegelung an der x-Achse in der Vektornotation?",
     "topic": "Vektoren"
@@ -411,9 +411,9 @@
     "correct": 1,
     "explanation": "Diese Drehmatrix beschreibt eine Drehung um den Koordinatenursprung gegen den Uhrzeigersinn: R = [[cos(phi), -sin(phi)], [sin(phi), cos(phi)]]. Angewendet wird sie auf den Ortsvektor des Punktes: P' = R·P. Drehung um 90°: (x; y) → (-y; x). Drehung um 180°: (x; y) → (-x; -y). Ist das Drehzentrum nicht der Ursprung, verschiebt man zuerst dorthin, dreht und verschiebt zurück.",
     "options": [
-      "Verschiebung aller Punkte um einen festen Vektor, Abbildungsmatrix [[1, 0],[0, 1]]",
+      "Verschiebung aller Punkte um einen festen Vektor, beschrieben durch die Matrix [[1, 0],[0, 1]]",
       "Drehung aller Punkte um ein Zentrum um phi, Matrix [[cos phi, -sin phi],[sin phi, cos phi]]",
-      "Streckung aller Punkte von einem Zentrum aus, Abbildungsmatrix [[k, 0],[0, k]]",
+      "Streckung aller Punkte von einem Zentrum aus mit dem Faktor k, Abbildungsmatrix [[k, 0],[0, k]]",
       "Spiegelung aller Punkte an der x-Achse, Abbildungsmatrix [[1, 0],[0, -1]]"
     ],
     "question": "Was ist eine Drehung in der Geometrie (Matrizen)?",
@@ -459,7 +459,7 @@
     "correct": 1,
     "explanation": "Steigungswinkel alpha: tan(alpha) = m, wobei m die Steigung der Geraden y = m·x + b ist und alpha der Winkel zur positiven x-Achse. Steile Gerade: tan(alpha) groß. Waagerecht: tan(0°) = 0. 45°-Gerade: tan(45°) = 1. Für alpha = 90° ist der Tangens nicht definiert – eine senkrechte Gerade hat keine Steigung und lässt sich nicht als y = m·x + b schreiben. Quotientenbeziehung: tan(alpha) = sin(alpha)/cos(alpha).",
     "options": [
-      "Das Verhältnis zweier Seitenlängen ohne jeden Bezug zu einer Zeichnung",
+      "Den Winkel alpha selbst, den die Gerade mit der y-Achse einschließt",
       "Die Steigung m einer Geraden, die mit der x-Achse den Winkel alpha bildet",
       "Den y-Achsenabschnitt b einer Geraden, die den Winkel alpha mit der x-Achse bildet",
       "Den Umfang des Kreissektors, der zum Winkel alpha am Einheitskreis gehört"

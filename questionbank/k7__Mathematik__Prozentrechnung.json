@@ -15,7 +15,7 @@
     "correct": 1,
     "explanation": "Prozentwert W: W = G × p/100 oder W = G × 0,p (Dezimalfaktor). 30% von 200: 200 × 0,30 = 60. 15% von 80: 80 × 0,15 = 12. Prozentwert ist immer ein Teil des Grundwerts.",
     "options": [
-      "W = G + p: Zum Grundwert wird die Prozentzahl direkt addiert.",
+      "W = G + p: Zum Grundwert wird die Prozentzahl als fester Betrag addiert.",
       "W = G × p/100: Der Grundwert wird mit dem Hundertstel der Prozentzahl multipliziert.",
       "W = G − p/100: Vom Grundwert wird das Hundertstel der Prozentzahl subtrahiert.",
       "W = G ÷ p × 100: Der Grundwert wird durch die Prozentzahl geteilt und mal 100 genommen."
@@ -27,9 +27,9 @@
     "correct": 2,
     "explanation": "Grundwert G: G = W/p × 100 = W × 100/p. 40 sind 25% von G: G = 40 × 100/25 = 160. Probe: 25% von 160 = 40. Tipp: \"Kleines durch Großes\" → p, \"Kleines durch p mal 100\" → G.",
     "options": [
-      "G = W × p: Der Prozentwert wird mit der Prozentzahl multipliziert.",
+      "G = W × p: Der Prozentwert wird direkt mit der Prozentzahl multipliziert.",
       "G = W × p/100: Der Prozentwert wird mit dem Hundertstel der Prozentzahl multipliziert.",
-      "G = W × 100/p: Der Prozentwert wird mit 100 multipliziert und durch die Prozentzahl geteilt.",
+      "G = W × 100/p: Der Prozentwert mal 100, dann geteilt durch die Prozentzahl.",
       "G = W + 100/p: Zum Prozentwert wird der Kehrwert der Prozentzahl mal 100 addiert."
     ],
     "question": "Wie berechnet man den Grundwert?",
@@ -39,8 +39,8 @@
     "correct": 1,
     "explanation": "Prozentsatz p: p = W/G × 100. 15 von 60: 15/60 = 0,25 = 25%. Merkhilfe: W oben, G unten → Anteil × 100. Probe: 25% von 60 = 15. Immer fragen: Was ist das Ganze (G)?",
     "options": [
-      "p = G × W: Grundwert und Prozentwert werden miteinander multipliziert.",
-      "p = W/G × 100: Der Prozentwert wird durch den Grundwert geteilt und mal 100 genommen.",
+      "p = G × W: Grundwert und Prozentwert werden direkt miteinander multipliziert.",
+      "p = W/G × 100: Prozentwert durch Grundwert teilen, dann mal 100 nehmen.",
       "p = G/W × 100: Der Grundwert wird durch den Prozentwert geteilt und mal 100 genommen.",
       "p = (G − W)/100: Die Differenz von Grundwert und Prozentwert wird durch 100 geteilt."
     ],
@@ -63,10 +63,10 @@
     "correct": 1,
     "explanation": "0,375 = 3/10 + 7/100 + 5/1000 = 375/1000 = 3/8. Stellen: Zehntel, Hundertstel, Tausendstel. 0,3 = 3/10; 0,07 = 7/100; 0,375 = 375/1000. Kürzen: 375/1000 ÷ 125 = 3/8.",
     "options": [
-      "3/75: der Bruch aus den Ziffern vor und nach dem Komma.",
+      "3/75: der Bruch aus den Ziffern vor und nach dem Komma gebildet.",
       "375/1000: gekürzt 3/8; die Stellen sind Zehntel, Hundertstel, Tausendstel.",
       "375/100: der Anteil dreihundertfünfundsiebzig Hundertstel, also 3,75.",
-      "3 Ganze mit Rest 75: die gemischte Zahl drei und drei Viertel."
+      "3 Ganze mit Rest 75: also die gemischte Zahl drei und drei Viertel."
     ],
     "question": "Was bedeutet ein Dezimalbruch wie 0,375?",
     "topic": "Dezimalzahlen"
@@ -75,7 +75,7 @@
     "correct": 1,
     "explanation": "Dezimaladdition: Kommas aufeinander. 3,47 + 1,8 = 3,47 + 1,80 = 5,27. Fehlende Stellen mit Nullen auffüllen. Carry beachten: 0,7 + 0,8 = 1,5 (1 übertragen). Probe: Schätzung (3,5 + 1,8 ≈ 5,3).",
     "options": [
-      "Die Kommas werden weggelassen und die Ziffern als ganze Zahlen addiert.",
+      "Die Kommas werden einfach weggelassen und die Ziffern als Zahlen addiert.",
       "Die Kommas werden untereinandergeschrieben und die Stellen von rechts nach links addiert.",
       "Vorkomma- und Nachkommateil werden getrennt addiert und danach wieder zusammengesetzt.",
       "Die Zahlen werden rechtsbündig untereinandergeschrieben und dann stellenweise addiert."
@@ -85,12 +85,12 @@
   },
   {
     "correct": 1,
-    "explanation": "2,3 × 1,4: ohne Komma: 23 × 14 = 322. Dezimalstellen: 1+1=2 → 3,22. 0,5 × 0,4: 5×4=20, 2 Stellen → 0,20 = 0,2. Probe: 2 × 1,4 = 2,8 ≈ 3,22. Komma-Regel: Stellen zählen.",
+    "explanation": "2,3 × 1,4: ohne Komma: 23 × 14 = 322. Dezimalstellen: 1+1=2 → 3,22. 0,5 × 0,4: 5×4=20, 2 Stellen → 0,20 = 0,2. Probe: 2,3 × 1,4 ≈ 2 × 1,5 = 3, passt zu 3,22. Komma-Regel: Stellen zählen.",
     "options": [
       "Ohne Kommas multiplizieren, dann so viele Dezimalstellen abtrennen, wie der größere Faktor hat.",
-      "Ohne Kommas multiplizieren, dann so viele Dezimalstellen abtrennen, wie beide Faktoren zusammen haben.",
+      "Ohne Kommas multiplizieren und dann so viele Dezimalstellen abtrennen, wie beide Faktoren haben.",
       "Beide Faktoren auf ganze Zahlen runden, multiplizieren und danach das Komma wieder einsetzen.",
-      "Die Kommas wie beim Addieren untereinanderschreiben und die Stellen einzeln multiplizieren."
+      "Die Kommas wie beim Addieren untereinanderschreiben und die Stellen multiplizieren."
     ],
     "question": "Wie multipliziert man Dezimalzahlen?",
     "topic": "Dezimalzahlen"
@@ -148,7 +148,7 @@
     "explanation": "Prozentuale Änderung: (100-80)/80 × 100 = 20/80 × 100 = 25%. Steigerung: positiv. Senkung: negativ. Beispiel: Aktie fiel von 200 auf 150: (150-200)/200 × 100 = -25%.",
     "options": [
       "Die reine Differenz beider Werte, ohne jeden Bezug auf den Ausgangswert.",
-      "Die Differenz beider Werte, geteilt durch den alten Wert und mal 100 genommen.",
+      "Die Differenz beider Werte, geteilt durch den alten Wert und mal 100.",
       "Die Summe beider Werte, geteilt durch 100 und mal den Ausgangswert genommen.",
       "Die Differenz beider Werte, geteilt durch den neuen Wert und mal 100 genommen."
     ],
@@ -184,7 +184,7 @@
     "explanation": "Signifikante Stellen: 12,30 hat 4 (1,2,3,0). 0,0305 hat 3 (3,0,5). Führende Nullen zählen nicht. Begleitende Nullen (z.B. 12,30) zählen. Wichtig für Messungen und wissenschaftliche Genauigkeit.",
     "options": [
       "Alle Ziffern nach dem Komma, also auch die führenden Nullen einer kleinen Zahl.",
-      "Alle Ziffern ab der ersten Ziffer, die nicht null ist, samt angehängter Endnullen.",
+      "Alle Ziffern ab der ersten von null verschiedenen Ziffer, samt Endnullen.",
       "Nur die Ziffern vor dem Komma, also der ganzzahlige Anteil einer Dezimalzahl.",
       "Nur die Ziffern, die nach dem Runden auf zwei Dezimalstellen übrig bleiben."
     ],
@@ -193,12 +193,12 @@
   },
   {
     "correct": 0,
-    "explanation": "W = G × p/100 = 60 × 15/100 = 9. Kopfrechnen: 10% von 60 = 6; 5% = 3; 15% = 9. Oder: 60 × 0,15 = 9. Probe: 9/60 × 100 = 15%.",
+    "explanation": "W = G × p/100 = 60 × 15/100 = 9. Kopfrechnen: 10% von 60 = 6; 5% = 3; 15% = 6 + 3 = 9. Falsch wäre 60 ÷ 15 = 4 (Division statt Prozentwert). Probe: 9/60 × 100 = 15%.",
     "options": [
       "9",
-      "12",
       "6",
-      "10"
+      "4",
+      "3"
     ],
     "question": "Wie rechnet man: 15% von 60?",
     "topic": "Prozentrechnung"
@@ -209,7 +209,7 @@
     "options": [
       "Beide bezeichnen denselben Anteil, es unterscheidet sich nur das Zeichen dahinter.",
       "Promille (‰) bedeutet von Tausend, Prozent (%) von Hundert; 1 % entspricht 10 ‰.",
-      "Promille bezeichnet den größeren Anteil, 1 ‰ entspricht dabei 10 % desselben Werts.",
+      "Promille (‰) bezeichnet den größeren Anteil, 1 ‰ entspricht dabei 10 % des Werts.",
       "Promille wird nur in der Chemie verwendet, Prozent dagegen nur in der Wirtschaft."
     ],
     "question": "Was ist der Unterschied zwischen Promille und Prozent?",
@@ -241,12 +241,12 @@
   },
   {
     "correct": 1,
-    "explanation": "3/8 = 0,375 = 37,5%. 3÷8=0,375; ×100=37,5. Oder: 3/8 = 3×12,5/100 = 37,5/100 = 37,5%. Merke: 1/8 = 12,5%; 2/8 = 25%; 3/8 = 37,5%.",
+    "explanation": "3/8 = 0,375 = 37,5%. 3÷8=0,375; ×100=37,5. Oder: 3/8 = 3×12,5/100 = 37,5/100 = 37,5%. Merke: 1/8 = 12,5%; 3/8 = 37,5%; 5/8 = 62,5%. Wer 8/3 rechnet, landet dagegen bei 266,7%.",
     "options": [
-      "38%",
+      "12,5%",
       "37,5%",
-      "30,8%",
-      "83%"
+      "62,5%",
+      "26,7%"
     ],
     "question": "Wie lautet 3/8 als Prozentzahl?",
     "topic": "Prozentrechnung"
@@ -265,24 +265,24 @@
   },
   {
     "correct": 1,
-    "explanation": "0,3 × 0,7: Ohne Komma: 3 × 7 = 21. Dezimalstellen: 1+1=2. Ergebnis: 0,21. Alternativer Weg: 3/10 × 7/10 = 21/100 = 0,21. Probe: 0,3 × 0,7 ≈ 0,3 × 0,7 = 0,21 ✓.",
+    "explanation": "0,3 × 0,7: Ohne Komma: 3 × 7 = 21. Dezimalstellen: 1+1=2. Ergebnis: 0,21. Als Bruch: 3/10 × 7/10 = 21/100 = 0,21. Typische Fehler: 2,10 (nur eine Stelle abgetrennt), 21,0 (Komma vergessen), 1,00 (addiert statt multipliziert).",
     "options": [
-      "2,1",
+      "2,10",
       "0,21",
-      "0,021",
-      "21"
+      "1,00",
+      "21,0"
     ],
     "question": "Wie multipliziert man 0,3 × 0,7?",
     "topic": "Dezimalzahlen"
   },
   {
     "correct": 1,
-    "explanation": "Durch 0,5 dividieren = mit 2 multiplizieren. 6,5 × 2 = 13. Oder: 6,5 ÷ 0,5 = 65/10 ÷ 5/10 = 65/10 × 10/5 = 65/5 = 13. Tipp: Division durch 0,1 = × 10; durch 0,01 = × 100.",
+    "explanation": "Durch 0,5 dividieren = mit 2 multiplizieren: 6,5 × 2 = 13, also 13,0. Oder: 6,5 ÷ 0,5 = 65/10 ÷ 5/10 = 65/10 × 10/5 = 65/5 = 13. Fehler: 6,5 × 0,5 = 3,25. Tipp: Division durch 0,1 = × 10.",
     "options": [
       "3,25",
-      "13",
-      "0,325",
-      "130"
+      "13,0",
+      "1,30",
+      "32,5"
     ],
     "question": "Was ist 6,5 ÷ 0,5?",
     "topic": "Dezimalzahlen"
@@ -373,11 +373,11 @@
   },
   {
     "correct": 3,
-    "explanation": "0,1 × 0,1 = 0,01. Als Bruch: 1/10 × 1/10 = 1/100 = 0,01. Allgemein: 0,1ⁿ = 10⁻ⁿ. 0,1² = 0,01; 0,1³ = 0,001. Wichtig: Dezimalstellen addieren beim Multiplizieren.",
+    "explanation": "0,1 × 0,1 = 0,01. Als Bruch: 1/10 × 1/10 = 1/100 = 0,01. Fehler: 0,10 (Stellen nicht addiert), 0,20 (addiert statt multipliziert), 1,00 (dividiert statt multipliziert). Merke: Dezimalstellen addieren.",
     "options": [
-      "0,1",
-      "0,2",
-      "1",
+      "0,10",
+      "0,20",
+      "1,00",
       "0,01"
     ],
     "question": "Was ist 0,1 × 0,1?",
@@ -388,7 +388,7 @@
     "explanation": "Brutto - Abzüge = Netto. Abzüge: Lohnsteuer, Krankenversicherung, Rentenversicherung, Pflegeversicherung, Arbeitslosenversicherung. Typisch: 25-40% Abzüge je nach Einkommen. Wichtig für Gehaltsverhandlung.",
     "options": [
       "Beide bezeichnen denselben Betrag, benannt vor und nach der Überweisung durch die Firma.",
-      "Bruttolohn ist der Lohn vor Abzügen, Nettolohn der tatsächlich ausgezahlte Betrag.",
+      "Bruttolohn ist der Lohn vor allen Abzügen, Nettolohn der ausgezahlte Betrag.",
       "Nettolohn ist der Lohn vor Abzügen, Bruttolohn der tatsächlich ausgezahlte Betrag.",
       "Bruttolohn gilt nur für Unternehmen, Nettolohn nur für angestellte Arbeitnehmer."
     ],
@@ -400,7 +400,7 @@
     "explanation": "Wissenschaftliche Notation: a × 10ⁿ, 1 ≤ a < 10. 3,45 × 10⁶ = 3.450.000. 3,4 × 10⁻⁵ = 0,000034. Vorteil: sehr große/kleine Zahlen übersichtlich. Standardform in Physik/Chemie.",
     "options": [
       "Als Komma-Schreibweise mit so vielen Nullen, wie die Zahl Stellen besitzt.",
-      "Als Produkt aus einer Zahl zwischen 1 und 10 und einer passenden Zehnerpotenz.",
+      "Als Produkt aus einer Zahl zwischen 1 und 10 und einer Zehnerpotenz.",
       "Als römische Zahl, bei der die Buchstaben die Größenordnung des Werts angeben.",
       "Als Produkt aus einer beliebigen ganzen Zahl und einer passenden Zweierpotenz."
     ],
@@ -409,12 +409,12 @@
   },
   {
     "correct": 1,
-    "explanation": "W = G × p/100 = 25 × 80/100 = 20. 80% von 25: 25 × 0,8 = 20. Probe: 20/25 × 100 = 80%. Schulnoten: oft in Prozent angegeben (z.B. 60% = Note 4 je nach Schule).",
+    "explanation": "W = G × p/100 = 25 × 80/100 = 20. 80% von 25: 25 × 0,8 = 20. Wer 25 ÷ 0,8 rechnet, erhält 31 und damit mehr Aufgaben, als es überhaupt gibt. Probe: 20/25 × 100 = 80%.",
     "options": [
       "15 richtige Aufgaben",
       "20 richtige Aufgaben",
       "80 richtige Aufgaben",
-      "8 richtige Aufgaben"
+      "31 richtige Aufgaben"
     ],
     "question": "Was ist ein Schüler mit 80% Richtigquote bei 25 Aufgaben?",
     "topic": "Prozentrechnung"
@@ -423,9 +423,9 @@
     "correct": 1,
     "explanation": "Zehnerpotenzen: 10² = 100. 2,3 × 10² = 230. Taschenrechner: EXP oder ×10ˣ Taste. 2,3E2 bedeutet 230. 5,6 × 10⁻³ = 0,0056. Schnelles Berechnen: Komma um n Stellen verschieben.",
     "options": [
-      "2,3 + 10 × 2, das Ergebnis lautet 22,3",
-      "2,3 EXP 2 oder 2,3 × 100, das Ergebnis lautet 230",
-      "2,3 × 10 × 2, das Ergebnis lautet 46",
+      "2,3 + 10 × 2, das Ergebnis lautet dann 22,3",
+      "2,3 EXP 2 oder 2,3 × 100, das Ergebnis ist 230",
+      "2,3 × 10 × 2, das Ergebnis lautet dann 46",
       "2,3 × 2 hoch 10, das Ergebnis lautet 2355,2"
     ],
     "question": "Was ist Taschenrechner-Eingabe für 2,3 × 10²?",
@@ -450,7 +450,7 @@
       "200",
       "20",
       "25",
-      "2"
+      "2,5"
     ],
     "question": "Wie rechnet man 8% von 250?",
     "topic": "Prozentrechnung"
