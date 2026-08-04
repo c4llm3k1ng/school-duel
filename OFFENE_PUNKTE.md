@@ -706,3 +706,47 @@ geprüft (74 bzw. 39 Fragen, alle Fragetexte und `correct`-Werte unverändert).
 - **Wasser in drei Aggregatzuständen:** Die Erklärung behauptete, Wasser sei „das einzige
   natürliche Vorkommen aller 3 Aggregatzustände auf der Erde". So absolut ist das nicht
   haltbar; jetzt „Wasser kommt auf der Erde in allen drei Aggregatzuständen natürlich vor".
+
+## 31. Englisch Klasse 6: vier Fragen hatten zwei richtige Antworten
+
+Der schwerste Fund der ganzen Charge. In `k6__Englisch__Grammatik` waren vier Distraktoren
+in Wahrheit einwandfreies Englisch — die Fragen waren damit nicht lösbar, egal wie gut
+jemand die Grammatik beherrscht.
+
+- **„Have + been + -ing (also valid for emphasising ongoing action)"** — die Option erklärte
+  sich in ihrer eigenen Klammer für gültig, und sie war es auch. Ersetzt durch
+  „Since + will future".
+- **„I will call you when I have already arrived"** — *„I will call you when I have arrived"*
+  ist korrektes Englisch. Die Frage lautete „What tense do we **usually** use…", hatte also
+  zwei vertretbare Antworten. Ersetzt.
+- **„I am going to have finished by then"** — die going-to-Variante des Future Perfect,
+  grammatisch korrekt. Ersetzt.
+- **„I am going to love you forever."** — korrekt und als Versprechen üblich. Ersetzt durch
+  „I am going to loving you forever." (typischer Lernerfehler, eindeutig falsch).
+
+Ein Grenzfall bleibt: Die Option „can (I can swim when I was five / Can you help me?)"
+enthält mit *„Can you help me?"* einen für sich korrekten Satz; falsch ist nur der erste
+Teil. Für Sechstklässler lösbar, aber nicht sauber.
+
+### Britisch gegen amerikanisch — eine Entscheidung für dich
+
+Zwei Fragen behandeln *already, just, yet* als zwingende Present-Perfect-Signalwörter. Im
+amerikanischen Englisch sind *„I already ate"* und *„Did you eat yet?"* völlig üblich. Für
+die deutsche Schulgrammatik, die sich am britischen Englisch orientiert, ist die markierte
+Antwort richtig — die Frage behandelt damit aber amerikanische Formen implizit als falsch.
+Nichts geändert, weil das eine grundsätzliche Festlegung ist.
+
+### Vier Fragen liegen weit über Klasse-6-Niveau
+
+Present Perfect Progressive, narratives Präsens, Future Perfect — und vor allem
+*hardly/scarcely/barely … when* mit Inversion. Letzteres ist übliches C1-Material. Alle vier
+sind inhaltlich korrekt, in dieser Klassenstufe aber fehlplatziert.
+
+### Fehler in gesperrten Feldern — nur du kannst sie ändern
+
+| Feld | Inhalt | Was falsch ist |
+|---|---|---|
+| Fragetext | „How do you say \"koennte\" (past ability/polite) in English?" | **könnte** |
+| `topic`, zweimal | „Zeitausdruecke" | **Zeitausdrücke** |
+| Fragetext | „What does \"ever\" and \"never\" indicate…" | muss **do** heißen, Subjekt im Plural |
+| Fragetext | „I ___ already ___" | zwei Lücken, aber die Optionen sind ungeteilte Verbphrasen („will have left"). Streng genommen passt keine Option in beide Lücken. |
