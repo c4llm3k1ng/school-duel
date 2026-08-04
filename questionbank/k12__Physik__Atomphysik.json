@@ -1,11 +1,11 @@
 [
   {
     "correct": 1,
-    "explanation": "Der Kern enthält Protonen und Neutronen (Nukleonen).",
+    "explanation": "Protonen und Neutronen heißen zusammen Nukleonen und bilden den Kern. Die Elektronen gehören zur Hülle und sind rund 2000-mal leichter als ein Nukleon.",
     "options": [
       "Protonen und Elektronen",
       "Protonen und Neutronen",
-      "nur Neutronen",
+      "nur positive Protonen",
       "Elektronen und Neutronen"
     ],
     "question": "Woraus besteht der Atomkern?",
@@ -13,7 +13,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Das Elektron trägt eine negative Elementarladung.",
+    "explanation": "Das Elektron trägt genau eine negative Elementarladung (−e). Das Proton ist positiv geladen, Neutron und Photon sind ungeladen.",
     "options": [
       "Proton",
       "Neutron",
@@ -25,7 +25,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Das Neutron besitzt keine elektrische Ladung.",
+    "explanation": "Das Neutron trägt keine elektrische Ladung. Das Positron ist das positiv geladene Antiteilchen des Elektrons und damit gerade nicht neutral.",
     "options": [
       "Proton",
       "Neutron",
@@ -37,11 +37,11 @@
   },
   {
     "correct": 1,
-    "explanation": "Die Ordnungszahl entspricht der Protonenzahl im Kern.",
+    "explanation": "Die Ordnungszahl Z zählt die Protonen im Kern und legt damit das Element fest. Die Summe aus Protonen und Neutronen ist dagegen die Massenzahl A.",
     "options": [
       "die Anzahl der Neutronen",
       "die Anzahl der Protonen",
-      "die Massenzahl",
+      "die Zahl aller Nukleonen",
       "die Zahl der Elektronenschalen"
     ],
     "question": "Was gibt die Ordnungszahl eines Elements an?",
@@ -49,46 +49,46 @@
   },
   {
     "correct": 1,
-    "explanation": "Isotope haben gleiche Protonen-, aber verschiedene Neutronenzahl.",
+    "explanation": "Isotope stimmen in der Protonenzahl überein und unterscheiden sich nur in der Neutronenzahl. Ionen entstehen dagegen durch Abgabe oder Aufnahme von Elektronen, Isobare haben gleiche Massenzahl bei verschiedenen Elementen.",
     "options": [
       "Ionen",
       "Isotope",
       "Isobare",
-      "Allotrope"
+      "Isomere"
     ],
     "question": "Atome desselben Elements mit unterschiedlicher Neutronenzahl heißen …",
     "topic": "Atombau"
   },
   {
     "correct": 1,
-    "explanation": "Rutherford schloss aus dem Streuversuch auf einen winzigen, positiven Kern.",
+    "explanation": "Rutherford deutete 1911 die Streuung von Alphateilchen an einer Goldfolie: Fast alle flogen ungehindert hindurch, wenige wurden stark abgelenkt. Also sitzt die Masse in einem winzigen, positiv geladenen Kern.",
     "options": [
-      "Thomson",
-      "Rutherford",
-      "Bohr",
-      "Dalton"
+      "Joseph John Thomson",
+      "Ernest Rutherford",
+      "Niels Bohr",
+      "John Dalton"
     ],
     "question": "Wer entwickelte aus dem Streuversuch das Atommodell mit einem kleinen, positiven Kern?",
     "topic": "Atommodelle"
   },
   {
     "correct": 1,
-    "explanation": "Bohr nahm diskrete, erlaubte Bahnen mit festen Energien an.",
+    "explanation": "Bohr ließ nur bestimmte Bahnen mit fest vorgegebener Energie zu. Zwischen diesen Stufen kann sich ein Elektron nicht aufhalten, ein Wechsel ist nur sprunghaft möglich.",
     "options": [
-      "auf beliebigen Bahnen",
-      "auf festen Energieniveaus (Schalen)",
-      "im Kern",
-      "ohne Energie"
+      "auf beliebigen, frei wählbaren Bahnen",
+      "auf festen Energiestufen",
+      "im Kern bei den Nukleonen",
+      "ohne feste Energie in der Hülle"
     ],
     "question": "Im Bohrschen Atommodell bewegen sich die Elektronen …",
     "topic": "Atommodelle"
   },
   {
     "correct": 1,
-    "explanation": "Die Energiedifferenz wird als Photon abgestrahlt.",
+    "explanation": "Die Energiedifferenz der beiden Niveaus wird als einzelnes Lichtquant abgestrahlt, seine Frequenz folgt aus ΔE = h·f. Kernbausteine sind daran nicht beteiligt.",
     "options": [
-      "ein Neutron",
-      "ein Photon (Lichtquant)",
+      "ein freies Neutron",
+      "ein Photon",
       "ein Proton",
       "ausschließlich Wärme"
     ],
@@ -97,11 +97,11 @@
   },
   {
     "correct": 1,
-    "explanation": "Die Photonenenergie ist proportional zur Frequenz (E = h·f).",
+    "explanation": "Aus E = h·f folgt: doppelte Frequenz bedeutet doppelte Photonenenergie. Blaues Licht ist deshalb energiereicher als rotes.",
     "options": [
       "umgekehrt proportional",
       "proportional",
-      "unabhängig",
+      "völlig unabhängig davon",
       "umgekehrt quadratisch"
     ],
     "question": "Wie hängt die Energie eines Photons mit seiner Frequenz zusammen (E = h·f)?",
@@ -109,43 +109,43 @@
   },
   {
     "correct": 1,
-    "explanation": "h ist das Plancksche Wirkungsquantum.",
+    "explanation": "Das Plancksche Wirkungsquantum beträgt h ≈ 6,63×10⁻³⁴ J·s. Es ist die Naturkonstante, die Energie und Frequenz eines Photons miteinander verknüpft.",
     "options": [
-      "Lichtgeschwindigkeit c",
+      "die Vakuumlichtgeschwindigkeit c",
       "Plancksches Wirkungsquantum h",
-      "Avogadro-Konstante",
-      "Boltzmann-Konstante"
+      "die Avogadro-Konstante N",
+      "die Boltzmann-Konstante k"
     ],
     "question": "Welche Konstante verbindet Energie und Frequenz eines Photons (E = h·f)?",
     "topic": "Quantenphysik"
   },
   {
     "correct": 1,
-    "explanation": "Der Fotoeffekt belegt den Teilchencharakter des Lichts.",
+    "explanation": "Die Energie der ausgelösten Elektronen hängt von der Frequenz ab, nicht von der Helligkeit. Das lässt sich nur erklären, wenn Licht in einzelnen Energieportionen auftrifft.",
     "options": [
-      "nur Wellen-",
+      "nur reinen Wellen-",
       "Teilchen- (Photonen)",
-      "gar keinen",
-      "nur magnetischen"
+      "rein thermischen",
+      "rein magnetischen"
     ],
     "question": "Der Fotoeffekt zeigt, dass Licht auch … Charakter hat.",
     "topic": "Quantenphysik"
   },
   {
     "correct": 2,
-    "explanation": "Einfallende Photonen lösen Elektronen aus dem Metall heraus.",
+    "explanation": "Ein Photon gibt seine Energie an ein Elektron des Metalls ab. Übersteigt sie die Austrittsarbeit, verlässt das Elektron die Oberfläche; der Kern bleibt dabei unberührt.",
     "options": [
-      "Protonen",
-      "Neutronen",
+      "Protonen aus dem Kern",
+      "einzelne Neutronen",
       "Elektronen",
-      "Photonen"
+      "die Photonen selbst"
     ],
     "question": "Beim Fotoeffekt werden aus einer Metalloberfläche … herausgelöst.",
     "topic": "Quantenphysik"
   },
   {
     "correct": 0,
-    "explanation": "Alphastrahlung besteht aus Heliumkernen.",
+    "explanation": "Ein Alphateilchen ist ein Heliumkern aus zwei Protonen und zwei Neutronen. Betastrahlung besteht aus Elektronen, Gamma- und Röntgenstrahlung aus Photonen.",
     "options": [
       "Alphastrahlung",
       "Betastrahlung",
@@ -157,11 +157,11 @@
   },
   {
     "correct": 1,
-    "explanation": "Ein Alphateilchen ist ein Heliumkern (He-4).",
+    "explanation": "Alphateilchen sind ⁴He-Kerne, also zwei Protonen und zwei Neutronen, und damit zweifach positiv geladen. Wegen ihrer großen Masse und Ladung ionisieren sie stark und kommen in Luft nur wenige Zentimeter weit.",
     "options": [
-      "aus Elektronen",
-      "aus Heliumkernen (2 Protonen + 2 Neutronen)",
-      "aus Photonen",
+      "aus schnellen Elektronen",
+      "aus Heliumkernen",
+      "aus energiereichen Photonen",
       "aus Neutronen"
     ],
     "question": "Woraus besteht Alphastrahlung?",
@@ -169,59 +169,59 @@
   },
   {
     "correct": 1,
-    "explanation": "β⁻-Strahlung besteht aus schnellen Elektronen.",
+    "explanation": "Beim β⁻-Zerfall verlässt ein im Kern neu entstandenes Elektron den Atomkern. Es stammt also nicht aus der Elektronenhülle.",
     "options": [
       "aus Heliumkernen",
-      "aus Elektronen",
-      "aus Protonen",
-      "aus Photonen"
+      "aus schnellen Elektronen",
+      "aus Protonen des Kerns",
+      "aus harten Photonen"
     ],
     "question": "Woraus besteht Beta-minus-Strahlung?",
     "topic": "Radioaktivität"
   },
   {
     "correct": 1,
-    "explanation": "Gammastrahlung ist sehr energiereiche elektromagnetische Strahlung.",
+    "explanation": "Gammastrahlung ist elektromagnetische Strahlung sehr kurzer Wellenlänge. Sie ist ungeladen, wird im Magnetfeld nicht abgelenkt und lässt Massen- und Ordnungszahl des Kerns unverändert.",
     "options": [
-      "ein Elektronenstrom",
-      "energiereiche elektromagnetische Strahlung (Photonen)",
-      "ein Heliumkernstrom",
-      "ein Neutronenstrom"
+      "ein schneller Elektronenstrom",
+      "energiereiche Photonen",
+      "ein Strom aus Heliumkernen",
+      "ein Strom freier Neutronen"
     ],
     "question": "Was ist Gammastrahlung?",
     "topic": "Radioaktivität"
   },
   {
     "correct": 2,
-    "explanation": "Gammastrahlung durchdringt Materie am stärksten.",
+    "explanation": "Gammastrahlung wird erst durch dicke Blei- oder Betonschichten deutlich geschwächt. Alphastrahlung stoppt bereits Papier, Betastrahlung ein Aluminiumblech.",
     "options": [
-      "Alpha",
-      "Beta",
-      "Gamma",
-      "alle gleich"
+      "Alphastrahlung",
+      "Betastrahlung",
+      "Gammastrahlung",
+      "alle gleich stark"
     ],
     "question": "Welche der drei Strahlungsarten besitzt die größte Durchdringungsfähigkeit?",
     "topic": "Radioaktivität"
   },
   {
     "correct": 0,
-    "explanation": "Alphastrahlung hat eine sehr geringe Reichweite und wird leicht abgeschirmt.",
+    "explanation": "Alphateilchen geben ihre Energie auf kürzester Strecke ab und kommen über wenige Zentimeter Luft nicht hinaus. Ein Blatt Papier oder die Hornschicht der Haut hält sie bereits auf.",
     "options": [
-      "Alpha",
-      "Beta",
-      "Gamma",
-      "Röntgen"
+      "Alphastrahlung",
+      "Beta-minus-Strahlung",
+      "Gammastrahlung",
+      "Röntgenstrahlung"
     ],
     "question": "Welche Strahlung wird bereits durch ein Blatt Papier abgeschirmt?",
     "topic": "Radioaktivität"
   },
   {
     "correct": 1,
-    "explanation": "Die Halbwertszeit ist die Zeit, nach der die Hälfte der Kerne zerfallen ist.",
+    "explanation": "Nach jeder Halbwertszeit ist die Hälfte der noch vorhandenen Kerne zerfallen. Der Wert ist für jedes Nuklid fest und lässt sich weder durch Druck noch durch Temperatur verändern.",
     "options": [
       "Lebensdauer",
       "Halbwertszeit",
-      "Periodendauer",
+      "Zerfallszeit",
       "Reichweite"
     ],
     "question": "Wie heißt die Zeit, in der die Hälfte der Atomkerne einer Probe zerfällt?",
@@ -229,7 +229,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Nach einer Halbwertszeit ist die Hälfte (50 %) übrig.",
+    "explanation": "Nach genau einer Halbwertszeit ist definitionsgemäß die Hälfte der Ausgangskerne übrig, also 50 %.",
     "options": [
       "100 %",
       "75 %",
@@ -241,35 +241,35 @@
   },
   {
     "correct": 1,
-    "explanation": "Nach zwei Halbwertszeiten sind noch ein Viertel (25 %) vorhanden.",
+    "explanation": "Nach der ersten Halbwertszeit sind 50 % übrig, nach der zweiten die Hälfte davon: ½ · ½ = ¼, also 25 %. Erst nach drei Halbwertszeiten wären es 12,5 %.",
     "options": [
-      "50 %",
-      "25 %",
-      "12,5 %",
-      "0 %"
+      "die Hälfte (50 %)",
+      "ein Viertel (25 %)",
+      "ein Achtel (12,5 %)",
+      "keine mehr (0 %)"
     ],
     "question": "Wie viele Kerne sind nach zwei Halbwertszeiten noch übrig?",
     "topic": "Radioaktivität"
   },
   {
     "correct": 0,
-    "explanation": "Beim Alphazerfall sinkt die Massenzahl um 4 und die Ordnungszahl um 2.",
+    "explanation": "Der Kern verliert zwei Protonen und zwei Neutronen, also vier Nukleonen und zwei Kernladungen. Beispiel: ²³⁸U zerfällt zu ²³⁴Th.",
     "options": [
       "Massenzahl −4, Ordnungszahl −2",
       "Massenzahl −2, Ordnungszahl −4",
-      "beide −1",
-      "beide −4"
+      "Massenzahl −4, Ordnungszahl +2",
+      "Massenzahl −1, Ordnungszahl −1"
     ],
     "question": "Wie ändern sich beim Alphazerfall Massenzahl und Ordnungszahl?",
     "topic": "Kernphysik"
   },
   {
     "correct": 0,
-    "explanation": "Ein Neutron wandelt sich in ein Proton um und gibt ein Elektron (β⁻) ab.",
+    "explanation": "Ein Neutron wandelt sich in ein Proton um; dabei entstehen ein Elektron und ein Antineutrino, die den Kern verlassen. Die Nukleonenzahl bleibt dabei gleich.",
     "options": [
-      "in ein Proton (und ein Elektron)",
-      "in ein Photon",
-      "in einen Heliumkern",
+      "in ein Proton und ein Elektron",
+      "in ein energiereiches Photon",
+      "in einen leichten Heliumkern",
       "in ein zweites Neutron"
     ],
     "question": "Wozu wandelt sich beim Beta-minus-Zerfall ein Neutron um?",
@@ -277,7 +277,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Da ein Proton entsteht, steigt die Ordnungszahl um 1.",
+    "explanation": "Aus einem Neutron wird ein Proton, die Protonenzahl steigt also um eins. Die Massenzahl bleibt unverändert, aus dem Nuklid wird das im Periodensystem nächste Element.",
     "options": [
       "bleibt gleich",
       "erhöht sich um 1",
@@ -289,11 +289,11 @@
   },
   {
     "correct": 1,
-    "explanation": "Die Massenzahl = Protonen + Neutronen.",
+    "explanation": "Die Massenzahl A zählt alle Nukleonen, also Protonen plus Neutronen. Elektronen tragen wegen ihrer winzigen Masse praktisch nichts dazu bei.",
     "options": [
       "Protonen und Elektronen",
       "Protonen und Neutronen",
-      "nur Protonen",
+      "Protonen allein",
       "Neutronen und Elektronen"
     ],
     "question": "Die Massenzahl (Nukleonenzahl) ist die Summe aus …",
@@ -301,7 +301,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Einsteins Beziehung E = m·c² verknüpft Masse und Energie.",
+    "explanation": "E = m·c² verknüpft Masse und Energie. Der Massendefekt eines Kerns entspricht genau seiner Bindungsenergie, E = h·f gilt dagegen für Photonen.",
     "options": [
       "E = m·g·h",
       "E = ½·m·v²",
@@ -313,23 +313,23 @@
   },
   {
     "correct": 0,
-    "explanation": "Bei der Kernspaltung zerfällt ein schwerer Kern in leichtere Bruchstücke.",
+    "explanation": "Ein eingefangenes Neutron macht den Urankern instabil, er teilt sich in zwei mittelschwere Bruchstücke und setzt zwei bis drei neue Neutronen frei. Die frei werdende Energie stammt aus dem Massendefekt.",
     "options": [
-      "Er wird in zwei leichtere Kerne gespalten",
+      "Er wird in zwei Kerne gespalten",
       "Er verschmilzt mit einem anderen Kern",
-      "Er wird nur ionisiert",
-      "Er wird nur angeregt"
+      "Er verliert nur seine Hüllenelektronen",
+      "Er wird nur kurz angeregt und strahlt"
     ],
     "question": "Was geschieht bei der Kernspaltung mit einem schweren Kern (z. B. Uran)?",
     "topic": "Kernphysik"
   },
   {
     "correct": 1,
-    "explanation": "Bei der Fusion verschmelzen leichte Kerne zu einem schwereren.",
+    "explanation": "Zwei leichte Kerne verschmelzen zu einem schwereren. Dazu müssen sie ihre elektrische Abstoßung überwinden, was extrem hohe Temperaturen und Drücke erfordert.",
     "options": [
-      "leichte Kerne werden gespalten",
-      "leichte Kerne verschmelzen miteinander",
-      "Kerne werden ionisiert",
+      "schwere Kerne werden gespalten",
+      "leichte Kerne verschmelzen",
+      "Kerne verlieren ihre Elektronen",
       "Kerne werden abgebremst"
     ],
     "question": "Was geschieht bei der Kernfusion?",
@@ -337,19 +337,19 @@
   },
   {
     "correct": 1,
-    "explanation": "In der Sonne verschmilzt Wasserstoff zu Helium (Kernfusion).",
+    "explanation": "Im Sonneninneren verschmelzen Wasserstoffkerne über mehrere Zwischenschritte zu Helium. Eine chemische Verbrennung könnte die Strahlungsleistung nicht einmal einige tausend Jahre decken.",
     "options": [
-      "Kernspaltung",
-      "Kernfusion (Wasserstoff zu Helium)",
+      "Spaltung von Wasserstoff",
+      "Kernfusion von Wasserstoff",
       "chemische Verbrennung",
-      "Reibung"
+      "Reibung im Sonneninnern"
     ],
     "question": "Was ist die Hauptenergiequelle der Sonne?",
     "topic": "Kernphysik"
   },
   {
     "correct": 1,
-    "explanation": "Neutronen lösen die Spaltung der Urankerne aus (Kettenreaktion).",
+    "explanation": "Nur das ungeladene Neutron wird nicht vom positiven Kern abgestoßen und kann ihn treffen. Die bei der Spaltung frei werdenden Neutronen lösen weitere Spaltungen aus, das ist die Kettenreaktion.",
     "options": [
       "Protonen",
       "Neutronen",
@@ -361,7 +361,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Das Elektron ist deutlich leichter als die Kernbausteine.",
+    "explanation": "Ein Elektron ist rund 1836-mal leichter als ein Proton. Der Heliumkern aus vier Nukleonen ist von den genannten Teilchen das schwerste.",
     "options": [
       "Proton",
       "Neutron",
@@ -373,7 +373,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Ein elektrisch geladenes Atom ist ein Ion.",
+    "explanation": "Ein Ion hat Elektronenüberschuss oder -mangel und ist deshalb elektrisch geladen. Isotope unterscheiden sich dagegen nur in der Neutronenzahl und bleiben nach außen neutral.",
     "options": [
       "Isotop",
       "Ion",
@@ -385,31 +385,31 @@
   },
   {
     "correct": 1,
-    "explanation": "Beim Übergang zwischen Energieniveaus werden bestimmte Wellenlängen abgestrahlt.",
+    "explanation": "Weil nur bestimmte Energiedifferenzen auftreten, werden auch nur bestimmte Wellenlängen abgestrahlt. Jedes Element besitzt so ein eigenes Linienmuster, eine Art Fingerabdruck.",
     "options": [
-      "durch kontinuierliche Strahlung",
-      "durch Energieübergänge von Elektronen zwischen Niveaus",
-      "durch Kernzerfälle",
-      "durch Reibung"
+      "durch kontinuierliche Wärmeabstrahlung",
+      "durch Elektronensprünge zwischen Niveaus",
+      "durch Zerfälle der Atomkerne",
+      "durch Stöße und Reibung im Gas"
     ],
     "question": "Wodurch entsteht das Linienspektrum eines Gases?",
     "topic": "Quantenphysik"
   },
   {
     "correct": 1,
-    "explanation": "Energien im atomaren Bereich gibt man oft in Elektronenvolt (eV) an.",
+    "explanation": "1 eV ist die Energie, die ein Elektron beim Durchlaufen von 1 V aufnimmt, also etwa 1,6×10⁻¹⁹ J. Watt ist dagegen eine Leistungs- und keine Energieeinheit.",
     "options": [
-      "Joule (allein)",
+      "das Joule (J) allein",
       "Elektronenvolt (eV)",
-      "Watt",
-      "Kelvin"
+      "das Watt (W)",
+      "Kilowattstunde (kWh)"
     ],
     "question": "Welche Einheit wird für sehr kleine Energien in der Atomphysik häufig benutzt?",
     "topic": "Quantenphysik"
   },
   {
     "correct": 1,
-    "explanation": "Die Aktivität wird in Becquerel (1 Bq = 1 Zerfall pro Sekunde) gemessen.",
+    "explanation": "1 Bq bedeutet einen Zerfall pro Sekunde. Gray misst die aufgenommene Energiedosis, Sievert die Äquivalentdosis mit der biologischen Wirkung.",
     "options": [
       "Sievert",
       "Becquerel",
@@ -421,19 +421,19 @@
   },
   {
     "correct": 1,
-    "explanation": "Die Elektronenenergien sind gequantelt – nur bestimmte Werte sind erlaubt.",
+    "explanation": "Für die Elektronen sind nur bestimmte Energiewerte erlaubt, Zwischenwerte kommen nicht vor. Deshalb zeigen Gase Linienspektren und keine kontinuierlichen Spektren.",
     "options": [
-      "Elektronen können jede beliebige Energie haben",
-      "Elektronen besitzen nur bestimmte (gequantelte) Energien",
-      "der Kern sendet das Licht aus",
-      "Elektronen befinden sich im Kern"
+      "Elektronen können jede Energie annehmen",
+      "Elektronen haben gequantelte Energien",
+      "Der Kern sendet das sichtbare Licht aus",
+      "Die Elektronen halten sich im Kern auf"
     ],
     "question": "Welche Aussage zum Energieniveau-Modell ist richtig?",
     "topic": "Quantenphysik"
   },
   {
     "correct": 1,
-    "explanation": "Max Planck führte die Quantenhypothese ein.",
+    "explanation": "Planck erklärte 1900 die Strahlung glühender Körper mit der Annahme, dass Energie nur in Vielfachen von h·f abgegeben wird. Das war der Beginn der Quantenphysik.",
     "options": [
       "Newton",
       "Planck",
@@ -445,7 +445,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Die leichten Elektronen der Betastrahlung werden am stärksten abgelenkt; Gammastrahlung gar nicht.",
+    "explanation": "Alpha- und Betateilchen sind geladen und werden im Magnetfeld abgelenkt, die leichten Elektronen wegen ihrer kleinen Masse deutlich stärker. Gammastrahlung ist ungeladen und wird gar nicht abgelenkt.",
     "options": [
       "Alphastrahlung",
       "Betastrahlung",
@@ -457,7 +457,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Wasserstoff hat die Ordnungszahl 1 und damit ein Proton.",
+    "explanation": "Die Ordnungszahl gibt die Protonenzahl an, für Wasserstoff also genau ein Proton. Das häufigste Wasserstoffisotop besitzt zusätzlich kein einziges Neutron.",
     "options": [
       "0",
       "1",
@@ -469,12 +469,12 @@
   },
   {
     "correct": 1,
-    "explanation": "Die Elektronen der äußeren Hülle bestimmen das chemische Verhalten.",
+    "explanation": "Chemische Bindungen entstehen durch die Elektronen der äußersten Schale. Masse, Kernladung und Radioaktivität werden dagegen vom Atomkern bestimmt.",
     "options": [
-      "die Masse",
+      "die Masse des Atoms",
       "das chemische Verhalten",
-      "die Radioaktivität",
-      "die Kernladung"
+      "die Art der Radioaktivität",
+      "die Ladung des Kerns"
     ],
     "question": "Was bestimmt vor allem die Elektronenhülle eines Atoms?",
     "topic": "Atombau"
