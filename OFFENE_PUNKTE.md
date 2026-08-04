@@ -637,3 +637,72 @@ Der Augsburger Religionsfrieden 1555 galt nur fuer Lutheraner, nicht fuer alle P
 **Zur Zeitrechnung:** Steinzeit-, Bronzezeit- und Jungsteinzeitdaten sind *mitteleuropaeische*
 Werte; weltweit gelten andere (Bronze im Vorderen Orient ab ~3300 v.Chr.). Ueberall
 "in Mitteleuropa" ergaenzt, damit die Zahlen nicht falsch verallgemeinert werden.
+
+## 30. Nachzügler: k5 Physik Teil 1 und k11 Literatur Teil 2
+
+Beide Berichte kamen erst nach dem Sitzungsende an. Die Dateien sind gegen das Original
+geprüft (74 bzw. 39 Fragen, alle Fragetexte und `correct`-Werte unverändert).
+
+### Fachlich falsch — korrigiert
+
+- **Regenbogen, Klasse 5:** Die Erklärung sprach von „totaler Reflexion" im Wassertropfen.
+  Im Regentropfen liegt der Einfallswinkel unter dem Grenzwinkel; es ist eine *teilweise*
+  innere Reflexion — deshalb ist der Regenbogen auch nicht hell.
+- **Schwerkraft, Klasse 5:** „Die Erde zieht alle Körper mit 9,81 m/s² an" vermischte Kraft
+  und Beschleunigung. Jetzt getrennt: g als Fallbeschleunigung, F = m · g als Gewichtskraft.
+- **Blankvers, Klasse 11:** stand zweimal falsch da — einmal als „Pentameter" (das ist ein
+  antiker daktylischer Vers), einmal als „unjambischer Fünfheber ohne Reim". Richtig ist:
+  ungereimter jambischer Fünfheber.
+- **Emilia Galotti:** war als „erste bedeutende bürgerliche Tragödie im Deutschen"
+  bezeichnet. Das ist Lessings *Miß Sara Sampson* von 1755.
+- **Sekundenstil** stand als „Sekundenroman" — den Begriff gibt es nicht.
+- **Goethes Novellen-Definition** war verdreht: „Sich zutragendes Ereignis von unerhörter
+  Begebenheit" statt „eine sich ereignete unerhörte Begebenheit".
+- **Fünf-Akt-Schema:** Die Erklärung schrieb es dem antiken Drama zu. Es stammt von Horaz
+  und wurde erst 1863 von Gustav Freytag systematisiert; die griechische Tragödie kannte
+  keine Akteinteilung.
+- **Wallenstein** war als Beispiel für Schillers *erhabenen* Helden genannt. Er scheitert an
+  eigener Schuld und ist der Prototyp des *tragischen* Helden. Ersetzt durch Johanna aus
+  der „Jungfrau von Orleans".
+
+### Fragen, die sich selbst widersprachen
+
+- **Heinrich Heine** stand in derselben Frage gleichzeitig in der richtigen Option
+  (Romantik) und im Distraktor (Junges Deutschland). Die Frage war so nicht lösbar.
+- **Weimarer Klassik** war innerhalb derselben Datei einmal auf 1786–1805, einmal auf
+  1786–1832 datiert. Vereinheitlicht auf 1786–1805.
+- **Aristoteles' Einheiten:** Option und Erklärung derselben Frage sagten das Gegenteil
+  voneinander.
+- **Expressionismus:** Zwei der drei Distraktoren beschrieben beide den Naturalismus
+  1880–1900 — dieselbe falsche Antwort doppelt.
+
+### Zwei weitere Fehler im Fragetext — nur du kannst sie ändern
+
+| Datei | Frage | Was falsch ist |
+|---|---|---|
+| `k11__Deutsch__Literatur` | „Was ist das Volkstueck als Dramenform?" | doppelt falsch: **Volksstück** — ue statt ü und ein fehlendes s |
+| `k11__Deutsch__Literatur` | „…im Gegensatz zur Tragoedie?" | muss **Tragödie** heißen |
+
+### Entscheidungen, die deine Bestätigung vertragen
+
+- **Magnetischer Nordpol, Klasse 5:** Der Nordpol eines Magneten zeigt nach geografisch
+  Norden, weil dort in Wahrheit der magnetische *Süd*pol der Erde liegt. Die Schulformulierung
+  „Der Pol, der nach Norden zeigt" wurde bewusst beibehalten und die Feinheit weggelassen.
+- **Regenbogenfarben:** Die Option nannte sieben Farben einschließlich Indigo (Newtons
+  Konvention). Deutsche Schulbücher nennen meist sechs. Indigo entfernt.
+- **Einheit der Spannung:** Hier war der Verrat extrem — „Volt, benannt nach dem
+  italienischen Physiker Alessandro Volta, der die erste Batterie erfand" gegen „Ampere" /
+  „Ohm" / „Watt". Jetzt tragen alle vier dieselbe Struktur „Einheit, benannt nach Person".
+  Das macht die Optionen länger als nötig; die Alternative wären vier Einzelwörter, dann
+  aber mit Gleichstand zwischen Volt und Watt.
+- **Hebel-Begriffe:** Das Material nutzte „Fulkrum" und die englische Hebelklassen-Einteilung
+  („Erstklassig: Drehpunkt zwischen Kraft und Last"). Ersetzt durch „Drehpunkt" und
+  „zweiseitiger Hebel", die deutsche Schulterminologie.
+- **Weitere Dubletten:** Katharsis wird in derselben Datei zweimal gefragt, episches Theater
+  und epischer Held überschneiden sich stark.
+- **„Was ist eine Möglichkeit, Strom zu sparen?"** ist keine Physikfrage mit eindeutiger
+  Definition. Die Distraktoren sind jetzt typische Fehlvorstellungen statt Unsinn, die Frage
+  bleibt aber schwammig.
+- **Wasser in drei Aggregatzuständen:** Die Erklärung behauptete, Wasser sei „das einzige
+  natürliche Vorkommen aller 3 Aggregatzustände auf der Erde". So absolut ist das nicht
+  haltbar; jetzt „Wasser kommt auf der Erde in allen drei Aggregatzuständen natürlich vor".
