@@ -750,3 +750,56 @@ sind inhaltlich korrekt, in dieser Klassenstufe aber fehlplatziert.
 | `topic`, zweimal | „Zeitausdruecke" | **Zeitausdrücke** |
 | Fragetext | „What does \"ever\" and \"never\" indicate…" | muss **do** heißen, Subjekt im Plural |
 | Fragetext | „I ___ already ___" | zwei Lücken, aber die Optionen sind ungeteilte Verbphrasen („will have left"). Streng genommen passt keine Option in beide Lücken. |
+
+## 32. Englisch Klasse 6, erste Hälfte — und der eigentliche Verrat der Datei
+
+Der letzte Bericht der Charge. Damit sind alle zehn Teile ausgewertet.
+
+### Klammer-Verrat war hier größer als der Längenverrat
+
+In **23 von 41 Fragen** trug ausschließlich die richtige Option einen Klammerzusatz mit
+Beispiel. Das war unabhängig von der Länge ein sicheres Erkennungsmerkmal — wer die
+Klammer sucht, braucht kein Englisch. Jetzt haben pro Frage entweder alle vier Optionen
+Klammern oder keine.
+
+Bei den reinen Wortform-Fragen (go, write, take, good, interesting) wurden bewusst **keine**
+Klammern eingefügt: „he goes (dritte Person Singular)" wäre genau der Verrat gewesen, den
+wir beseitigen wollen.
+
+### Zwei weitere Fragen mit zwei richtigen Antworten
+
+- **„I do agree with you (in most contexts)"** — emphatisches *do*, einwandfreies Englisch.
+  Ausgerechnet dieser Distraktor trug als einziger einen Klammerzusatz. Ersetzt.
+- **„Subject + gets + infinitive (gets build)"** — die get-Passiv-Konstruktion *„The house
+  gets built"* ist gültig; nur der Tippfehler machte die Option falsch. Ersetzt.
+
+### Sprachverrat statt Längenverrat
+
+Bei der Frage zu *neither … nor* war die richtige Option als einzige **auf Deutsch**
+formuliert, die drei Distraktoren auf Englisch. Zusätzlich war „Eine doppelte Verneinung"
+fachlich ungenau — es ist eine zweigliedrige negative Konjunktion. Beides behoben.
+
+### Weitere Funde
+
+- Zwei Distraktoren derselben Frage sagten dasselbe („After to, want, would like" und
+  „After want, need, hope" beschreiben beide *to* + Infinitiv). Zwei identische Optionen
+  können beide nicht richtig sein und entlarven sich gegenseitig.
+- Ein Distraktor zeigte zweimal dieselbe Form („he plays → he plays"), war also gar keine
+  Regel.
+- In einer Erklärung stand „ein paar (zahlbar)" — gemeint war **zählbar**. *Zahlbar* heißt
+  „zu bezahlen".
+- Eine Passiv-Frage war so gebaut, dass der Passivsatz zwangsläufig der längste sein musste.
+
+### Grenzfälle, bewusst so belassen
+
+- **„I am agreeing with you"** — nach Schulbuchregel (State Verbs) falsch, im realen
+  Sprachgebrauch aber belegt („I'm agreeing with you, calm down"). Behalten, weil es der
+  kanonische Lehrbuch-Distraktor ist.
+- **„Always start with the subject and then the verb"** — deklarative Fragen („You like
+  pizza?") gibt es im gesprochenen Englisch tatsächlich. „as in a statement" ergänzt, damit
+  klar ist, dass die *Regel* gemeint ist.
+- **„wrotes"** ist ein schwacher, selbstentlarvender Distraktor. Weil formbestimmt, nicht
+  angefasst — „was writing" wäre der rundere Ersatz.
+
+In dieser Hälfte markiert **keine** Frage eine im amerikanischen Englisch übliche Form als
+falsch. Der Konflikt aus Abschnitt 31 betrifft nur die zweite Hälfte.
