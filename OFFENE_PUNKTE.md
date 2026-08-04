@@ -3,9 +3,14 @@
 Sammlung aller Stellen aus dem Qualitätsdurchlauf, bei denen entweder **ich oder ein
 Agent unsicher war**, oder die **eine Entscheidung von dir** ausgelöst haben.
 
-Stand: 3. August 2026. Zusammengetragen aus den Agentenberichten der Sitzungen vom
-31.07. bis 03.08. Die Liste ist nach Art der Unsicherheit sortiert, nicht nach
+Stand: 4. August 2026. Zusammengetragen aus den Agentenberichten der Sitzungen vom
+31.07. bis 04.08. Die Liste ist nach Art der Unsicherheit sortiert, nicht nach
 Dringlichkeit.
+
+**Aufbau:** Abschnitte 1 bis 12 stammen aus den Sitzungen bis zum 3. August, Abschnitte
+13 bis 21 aus dem Nachtrag vom 4. August. Innerhalb des Nachtrags steht zuerst, was
+deine Entscheidung braucht — **Abschnitt 13 (Würde des Themas)** enthält den einzigen
+noch offenen Punkt aus diesem Bereich.
 
 **Wichtige Einschränkung:** Diese Liste ist aus Agentenberichten rekonstruiert. Sie ist
 vollständig für das, was gemeldet wurde — aber ein Agent kann nur melden, was ihm
