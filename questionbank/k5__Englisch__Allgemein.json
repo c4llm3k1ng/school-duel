@@ -125,7 +125,7 @@
     "options": [
       "I call Tom.",
       "My name is Tom.",
-      "I am called Tom Smith.",
+      "My name is called Tom.",
       "I name Tom."
     ],
     "question": "How do you say 'Ich heiße Tom' in English?",
@@ -157,11 +157,11 @@
   },
   {
     "correct": 2,
-    "explanation": "'favourite' (brit.) / 'favorite' (am.) = Lieblings-. What is your favourite colour? = Was ist deine Lieblingsfarbe?",
+    "explanation": "'favourite' (brit.) / 'favorite' (am.) heißt 'liebste' bzw. 'Lieblings-'. What is your favourite colour? = Was ist deine Lieblingsfarbe?",
     "options": [
       "schlechteste",
       "häufigste",
-      "liebste/Lieblings-",
+      "liebste",
       "erste"
     ],
     "question": "What does 'favourite' mean?",
@@ -181,10 +181,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Library = Bibliothek/Bücherei (Bücher ausleihen). Achtung: 'bookshop/bookstore' = Buchhandlung (Bücher kaufen). Falscher Freund!",
+    "explanation": "Library = Bibliothek (auch Bücherei): dort leiht man Bücher aus. Achtung: 'bookshop/bookstore' = Buchhandlung (Bücher kaufen). Falscher Freund!",
     "options": [
       "Buchhandlung",
-      "Bibliothek/Bücherei",
+      "Bibliothek",
       "Klassenzimmer",
       "Café"
     ],
@@ -253,12 +253,12 @@
   },
   {
     "correct": 2,
-    "explanation": "Futur mit 'will': will + Infinitiv (ohne 'to'). 'I will go' = ich werde gehen. Auch möglich: 'I'm going to go' (geplante Handlung).",
+    "explanation": "Futur mit 'will': will + Infinitiv ohne 'to' – 'I will go to the cinema tomorrow.' Nach 'will' steht nie '-ing' und nie eine Form von 'be'.",
     "options": [
-      "I going to the cinema tomorrow.",
-      "I will going to the cinema.",
+      "I going to the cinema tomorrow evening.",
+      "I will going to the cinema tomorrow.",
       "I will go to the cinema tomorrow.",
-      "I am go to the cinema tomorrow."
+      "I am go to the cinema tomorrow evening."
     ],
     "question": "What is the correct sentence about the future?",
     "topic": "Grammar: Future"
@@ -282,19 +282,19 @@
       "swiming",
       "swimming",
       "swims",
-      "swimm"
+      "swum"
     ],
     "question": "What is the -ing form (Gerundium) of 'swim'?",
     "topic": "Grammar: -ing form"
   },
   {
     "correct": 2,
-    "explanation": "Höfliche Bitte: 'Can I have...?' oder noch höflicher 'May I have...?' + 'please'. Antwort: 'Here you are.' = Bitte sehr.",
+    "explanation": "Höfliche Bitte: 'Can I have ..., please?' – noch höflicher ist 'May I have ...?'. 'I want' klingt fordernd. Antwort: 'Here you are.' = Bitte sehr.",
     "options": [
-      "I want...",
-      "Give me...",
-      "Can I have ... please? / May I have ...?",
-      "I need..."
+      "I want ... right now, please.",
+      "Give me ..., I want it now.",
+      "Can I have ..., please?",
+      "You must give me ..., please."
     ],
     "question": "How do you say 'Darf ich bitte...?' in English?",
     "topic": "Polite requests"
@@ -349,12 +349,12 @@
   },
   {
     "correct": 1,
-    "explanation": "Häufige Kollokationen: make a mistake, make a decision, make breakfast / do homework, do the dishes, do sport. Auswendig lernen!",
+    "explanation": "'make' heißt herstellen oder zubereiten: make a cake, make friends. 'do' heißt ausführen oder erledigen: do homework, do sport, do the washing. Formell oder informell ist dabei egal.",
     "options": [
-      "Kein Unterschied",
-      "'make' = herstellen/zubereiten (make a cake, make friends); 'do' = ausführen/erledigen (do homework, do sport, do the washing)",
-      "'make' ist formell, 'do' informal",
-      "'do' immer bei Nomen"
+      "'make' nimmt man für Aufgaben (make homework), 'do' für Dinge (do a cake)",
+      "'make' = herstellen (make a cake), 'do' = erledigen (do homework)",
+      "'make' klingt förmlich (make sport), 'do' klingt umgangssprachlich (do sport)",
+      "'make' steht immer vor Nomen (make swim), 'do' immer vor Verben (do run)"
     ],
     "question": "What is the difference between 'make' and 'do'?",
     "topic": "Collocations"
@@ -390,7 +390,7 @@
       "I don't like spiders.",
       "I not like spiders.",
       "I like not spiders.",
-      "I dislike not spiders."
+      "I don't likes spiders."
     ],
     "question": "How do you say 'Ich mag keine Spinnen' in English?",
     "topic": "Grammar: Negation"
@@ -421,10 +421,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Schulfächer: Geography (Erdkunde), History (Geschichte), Biology (Biologie), Maths (Mathematik), PE/Sport, Music (Musik), Art (Kunst), German (Deutsch).",
+    "explanation": "Geography heißt Geografie, im Stundenplan meist Erdkunde. Weitere Fächer: History (Geschichte), Biology (Biologie), Maths (Mathematik), Art (Kunst).",
     "options": [
       "Geschichte",
-      "Erdkunde/Geografie",
+      "Geografie",
       "Biologie",
       "Informatik"
     ],
@@ -437,7 +437,7 @@
     "options": [
       "It gives...",
       "There is/are...",
-      "He is...",
+      "There it gives...",
       "They have..."
     ],
     "question": "How do you say 'Es gibt...' in English?",
@@ -469,24 +469,24 @@
   },
   {
     "correct": 0,
-    "explanation": "3:30: 'It's three thirty.' oder 'It's half past three.' (nicht 'half to four' wie im Deutschen 'halb vier'). 3:15 = quarter past three. 3:45 = quarter to four.",
+    "explanation": "3:30 heißt 'It's half past three' (oder 'It's three thirty') – nicht 'half to four' wie im deutschen 'halb vier'. Weiter: 3:15 = quarter past three, 3:45 = quarter to four, 3:00 = three o'clock.",
     "options": [
-      "It's three thirty. / It's half past three.",
-      "It's half to four.",
+      "It's half past three.",
+      "It's half before four.",
       "It's thirty past three.",
-      "It's three and half."
+      "It's three and a half."
     ],
     "question": "How do you correctly say what time it is at 3:30?",
     "topic": "Telling the time"
   },
   {
     "correct": 1,
-    "explanation": "Past Simple: finished past actions. Regular: play→played, walk→walked, jump→jumped. Irregular: go→went, eat→ate, have→had, be→was/were, see→saw, come→came.",
+    "explanation": "Past Simple: abgeschlossene Handlungen in der Vergangenheit. Regelmäßig: play→played, walk→walked, jump→jumped. Unregelmäßig: go→went, eat→ate, have→had, be→was/were, see→saw, come→came.",
     "options": [
-      "Ongoing actions",
-      "Completed actions in the past: 'I played football yesterday', 'She ate an apple this morning' – regular verbs add -ed, irregular verbs change form",
-      "Future plans",
-      "Present habits"
+      "Ongoing actions happening right now, like 'I am playing football at the moment'",
+      "Completed actions in the past, like 'I played football yesterday evening'",
+      "Plans and predictions for the future, like 'I will play football tomorrow'",
+      "Habits and routines in the present, like 'I play football every Tuesday'"
     ],
     "question": "What is the Past Simple tense used for?",
     "topic": "Grammar"
@@ -531,94 +531,94 @@
     "correct": 1,
     "explanation": "Past Simple question: DID + subject + base verb. NOT: 'Did you played?' (wrong!) → 'Did you play?' Negative: didn't + base verb: 'I didn't go to school.' (NOT 'didn't went')",
     "options": [
-      "You add -ed to the verb",
-      "Did + subject + infinitive: 'Did you play football?' — then use the base verb (infinitive), NOT the past form",
-      "Subject + past verb + ?",
-      "Were + subject + verb"
+      "Add -ed to the main verb and put a question mark at the end",
+      "Did + subject + infinitive: 'Did you play football yesterday?'",
+      "Subject + past verb + question mark: 'You played football?'",
+      "Were + subject + verb: 'Were you play football yesterday?'"
     ],
     "question": "How do you form a Past Simple question?",
     "topic": "Grammar"
   },
   {
     "correct": 1,
-    "explanation": "Prepositions of place: IN (inside a box), ON (on the table), AT (at school/home), UNDER (under the bed), BEHIND (behind the door), NEXT TO (next to me), BETWEEN (between A and B).",
+    "explanation": "Prepositions of place say WHERE something is: IN (inside a box), ON (on the table), AT (at school/home), UNDER (under the bed), BEHIND (behind the door), NEXT TO (next to me), BETWEEN (between A and B).",
     "options": [
-      "A time word",
-      "A word showing WHERE something is: in, on, at, under, behind, in front of, next to, between, above, below, near",
-      "An adjective",
-      "A verb"
+      "A word that tells you WHEN something happens: now, later, soon, yesterday, today",
+      "A word that tells you WHERE something is: in, on, at, under, behind, next to",
+      "A word that describes a noun, like 'big', 'small', 'red' or 'happy'",
+      "A word for an action, like 'run', 'eat', 'play' or 'swim'"
     ],
     "question": "What is a preposition of place?",
     "topic": "Prepositions"
   },
   {
     "correct": 1,
-    "explanation": "Time prepositions: IN + long periods. ON + specific days. AT + precise time. Exceptions: at night, at the weekend (British), on the weekend (American). No preposition: 'yesterday', 'last week', 'next year'.",
+    "explanation": "Time prepositions: IN + long periods (in July, in 2024, in summer). ON + specific days (on Monday, on 3rd June). AT + precise time (at 6 o'clock). Exceptions: at night, at the weekend (British), on the weekend (American). No preposition: 'yesterday', 'last week', 'next year'.",
     "options": [
-      "No difference",
-      "IN: months/years/seasons (in July, in 2024, in summer). ON: days/dates (on Monday, on 3rd June). AT: exact times/fixed expressions (at 3 o'clock, at night, at Christmas)",
-      "AT for months, IN for days",
-      "ON for years"
+      "There is no difference: in, on and at can all be used with any time expression",
+      "IN: months and years (in July). ON: days (on Monday). AT: exact times (at 6 o'clock)",
+      "AT for months and years, IN for days and dates, ON for exact times like 6 o'clock",
+      "ON for months, AT for days, IN for exact times — the same rule as in German"
     ],
     "question": "What is the difference between 'in', 'on', 'at' for time?",
     "topic": "Prepositions"
   },
   {
     "correct": 1,
-    "explanation": "Wh-questions: What (thing), Where (place), When (time), Who (person), Why (reason), How (manner), How many/much (quantity). Question word → auxiliary → subject → verb. 'When does the bus leave?'",
+    "explanation": "Wh-questions: What (thing), Where (place), When (time), Who (person), Why (reason), How (manner), How many/much (quantity). Question word → auxiliary → subject → main verb: 'When does the bus leave?', 'What did she eat for lunch?'",
     "options": [
-      "Verb + Wh-word",
-      "Wh-word (What/Where/When/Who/Why/How) + auxiliary (do/does/did/is/are/was) + subject + main verb: 'Where do you live?' 'What did she eat?'",
-      "Wh-word + subject + verb",
-      "Subject + Wh-word"
+      "Verb + Wh-word + subject: 'Do where you live?' — the verb always comes first",
+      "Wh-word + auxiliary + subject + main verb: 'What did she eat for lunch?'",
+      "Wh-word + subject + verb, with no auxiliary: 'Where you live?' is the pattern",
+      "Subject + Wh-word + verb: 'You where live?' — question word second"
     ],
     "question": "How do you form a Wh- question?",
     "topic": "Grammar"
   },
   {
     "correct": 1,
-    "explanation": "'It takes + time + to + verb': 'It takes 2 hours to fly to London.' 'How long does it take?' is very common in everyday English for asking about time needed.",
+    "explanation": "'How long does it take?' fragt nach der benötigten Zeit. Muster: 'It takes + Zeit + to + Verb': 'It takes 2 hours to fly to London.' Antwort: 'It takes 20 minutes.'",
     "options": [
-      "How big is it?",
-      "It asks about the duration/time needed to do something: 'How long does it take to get to school? – It takes 20 minutes.'",
-      "How difficult is it?",
-      "How far is it?"
+      "It asks about the size of something: 'How big is your new school?'",
+      "It asks about the time you need: 'How long does it take to get to school?'",
+      "It asks about the difficulty of something: 'How hard is this exercise?'",
+      "It asks about the distance: 'How far is it from here to the station?'"
     ],
     "question": "What does 'How long does it take?' mean?",
     "topic": "Phrases"
   },
   {
     "correct": 1,
-    "explanation": "Modal verb CAN: same form for all subjects (I/you/he/she/it/we/they CAN — no -s!). No 'do/does' in questions: 'Can you help?' not 'Do you can help?' Past of can: could/couldn't.",
+    "explanation": "CAN = Fähigkeit oder Erlaubnis, CAN'T (cannot) = das Gegenteil: Unfähigkeit oder Verbot. Modalverb CAN: gleiche Form für alle Personen (kein -s!). Keine Form von do/does in Fragen: 'Can you help?' Vergangenheit: could/couldn't.",
     "options": [
-      "No difference",
-      "CAN: ability or permission ('I can swim / Can I go to the toilet?'). CAN'T (cannot): inability or prohibition ('She can't drive yet / You can't park here.')",
-      "CAN'T for ability, CAN for permission",
-      "CAN for past"
+      "There is no difference between them: both words mean exactly the same thing",
+      "CAN: ability or permission ('I can swim'). CAN'T: inability or prohibition",
+      "CAN'T is for ability and CAN is for permission — the other way round",
+      "CAN is the past form of CAN'T, like 'go' and 'went' with irregular verbs"
     ],
     "question": "What is the difference between 'can' and 'can't'?",
     "topic": "Modal Verbs"
   },
   {
     "correct": 1,
-    "explanation": "Must: obligation (often personal/internal). Have to: obligation (often external/rule). 'I must call my mum' (I feel I should). 'I have to wear a uniform at school' (school rule). Mustn't: prohibition.",
+    "explanation": "Must = Verpflichtung oder Notwendigkeit: 'You must do your homework.' Auch starke Schlussfolgerung: 'She must be tired.' Have to: Verpflichtung von außen ('I have to wear a uniform'). Mustn't: Verbot.",
     "options": [
-      "Ability",
-      "Strong obligation or necessity: 'You must do your homework' (obligation) or strong logical conclusion: 'She must be tired' (deduction) — stronger than 'have to' in formal contexts",
-      "Possibility",
-      "Permission"
+      "Ability: it says that somebody is able to do something, like 'I can swim'",
+      "Obligation: something is necessary, like 'You must do your homework now'",
+      "Possibility: something is perhaps true, like 'It might rain this afternoon'",
+      "Permission: somebody is allowed to do it, like 'You may leave the room'"
     ],
     "question": "What does 'must' express?",
     "topic": "Modal Verbs"
   },
   {
     "correct": 1,
-    "explanation": "Present Progressive (Continuous): be + verb-ing. Compare Present Simple: 'I read every day' (habit) vs. 'I am reading now' (right now). Some verbs don't use -ing: know, like, want, need.",
+    "explanation": "Present Progressive (Continuous): am/is/are + verb-ing, für Handlungen, die gerade jetzt ablaufen. Vergleich Present Simple: 'I read every day' (Gewohnheit) vs. 'I am reading now' (jetzt). Einige Verben stehen nicht im -ing: know, like, want, need.",
     "options": [
-      "Habits",
-      "Actions happening RIGHT NOW or around this time: 'I am reading a book now.' 'She is studying for her exam this week.' Form: am/is/are + verb-ing",
-      "Past actions",
-      "Future always"
+      "Habits and routines: 'I read a book every evening before I go to bed'",
+      "Actions happening right now: 'I am reading a book' — form: am/is/are + -ing",
+      "Actions that were finished in the past: 'I read a book yesterday evening'",
+      "Things that always happen in the future: 'I will read a book tomorrow'"
     ],
     "question": "What is the Present Progressive used for?",
     "topic": "Grammar"
@@ -649,12 +649,12 @@
   },
   {
     "correct": 1,
-    "explanation": "Adjectives: describe nouns. Position: before noun (attributive: 'big house') or after be (predicative: 'The house is big'). Comparison: big→bigger→biggest, good→better→best, bad→worse→worst.",
+    "explanation": "Adjectives describe nouns. Position: before the noun ('a big house') or after be ('The house is big'). Comparison: big→bigger→biggest, good→better→best, bad→worse→worst.",
     "options": [
-      "A doing word",
-      "A describing word that modifies a noun: 'a big dog', 'a red car', 'She is happy' — in English adjectives go BEFORE the noun (unlike German)",
-      "A connecting word",
-      "A time word"
+      "A doing word that shows an action: 'run', 'eat', 'play', 'write', 'swim'",
+      "A describing word for a noun: 'a big dog', 'a red car', 'She is happy'",
+      "A connecting word that links two parts: 'and', 'but', 'or', 'because'",
+      "A time word that says when something happens: 'now', 'later', 'soon'"
     ],
     "question": "What is an adjective?",
     "topic": "Grammar"
@@ -673,24 +673,24 @@
   },
   {
     "correct": 1,
-    "explanation": "Classroom phrases: 'Could you repeat that?' / 'Could you speak more slowly, please?' / 'How do you spell that?' / 'What is the English word for ...?' / 'May I go to the toilet?'",
+    "explanation": "Wenn du etwas nicht verstehst, sagst du: 'Sorry, I don't understand. Could you repeat that, please?' Weitere Wendungen: 'Could you speak more slowly, please?', 'How do you spell that?', 'What is the English word for ...?'",
     "options": [
-      "I am not listening.",
-      "Could you repeat that, please? / I don't understand. / What does '...' mean?",
-      "No comment.",
-      "I don't care."
+      "Thank you very much, that was really interesting and easy to follow.",
+      "Sorry, I don't understand. Could you repeat that slowly, please?",
+      "Never mind, it is not important. Let us go on.",
+      "That's right, I agree with you completely and I have nothing to add."
     ],
     "question": "What do you say when you don't understand something in English class?",
     "topic": "Classroom Language"
   },
   {
     "correct": 1,
-    "explanation": "'Whenever' = at any time. Similar: wherever (any place), whoever (any person), whatever (any thing), however (any way). These are 'wh-ever' words for indefinite reference.",
+    "explanation": "'Whenever' = jedes Mal wenn / zu jeder Zeit: 'Whenever I am sad, I listen to music.' Ähnlich gebildet: wherever (an jedem Ort), whoever (wer auch immer), whatever (was auch immer), however (wie auch immer).",
     "options": [
-      "somewhere",
-      "at any time / every time that: 'Whenever I'm sad, I listen to music.' — combines 'when' + 'ever' for emphasis",
-      "never",
-      "always somewhere"
+      "In some place that you do not know exactly — the same as 'somewhere'",
+      "At any time, every time that: 'Whenever I am sad, I listen to some music'",
+      "At no time at all, not a single time — the same as the word 'never'",
+      "In every place at all times, which means the same as 'always somewhere'"
     ],
     "question": "What is the meaning of 'whenever'?",
     "topic": "Vocabulary"
@@ -709,48 +709,48 @@
   },
   {
     "correct": 1,
-    "explanation": "'However' = 'but' (more formal). Used at the beginning of a sentence (followed by comma) or in the middle. 'The film was long. However, it was very interesting.' Contrast connector.",
+    "explanation": "'However' heißt 'aber, jedoch' und ist förmlicher als 'but'. Es verbindet zwei gegensätzliche Aussagen: 'The film was long. However, it was very interesting.' Am Satzanfang folgt ein Komma.",
     "options": [
-      "despite",
-      "but / nevertheless — used to contrast two ideas: 'I like sports. However, I hate running.' — more formal than 'but'",
-      "therefore",
-      "moreover"
+      "Despite / in spite of — it shows that something happens anyway",
+      "But / nevertheless — it connects two ideas that are in contrast",
+      "Therefore / so — it shows the result or the reason for something",
+      "Moreover / in addition — it adds one more point to the first"
     ],
     "question": "What does 'however' mean?",
     "topic": "Connectors"
   },
   {
     "correct": 2,
-    "explanation": "Will + infinitive: future. Prediction: 'It will rain tomorrow.' Decision at moment of speaking: 'I'll have the pizza.' Promise: 'I'll help you.' Compare: going to (plan already made).",
+    "explanation": "'I will visit Berlin next summer' ist das Future with will: will + infinitive. Verwendung: Vorhersage ('It will rain tomorrow'), spontaner Entschluss ('I'll have the pizza'), Versprechen ('I'll help you'). Vergleich: going to (Plan steht schon fest).",
     "options": [
-      "Past Simple",
-      "Present Simple",
-      "Future with will — will + infinitive for predictions, decisions, promises: 'I will call you later.'",
-      "Present Progressive"
+      "Past Simple — for finished actions in the past, like 'I visited Berlin'",
+      "Present Simple — for habits and facts, like 'I visit Berlin'",
+      "Future with will — for predictions and plans: 'I will visit Berlin'",
+      "Present Progressive — for actions right now, like 'I am visiting Berlin'"
     ],
     "question": "Which tense: 'I will visit Berlin next summer.'",
     "topic": "Grammar"
   },
   {
     "correct": 1,
-    "explanation": "Some: positive context. Any: negative/question context. Exceptions: 'Would you like SOME cake?' (offer = positive context). 'Is there ANY milk?' (genuine question).",
+    "explanation": "SOME steht in bejahten Sätzen, ANY in Verneinungen und Fragen. Ausnahme: 'Would you like SOME cake?' (Angebot zählt als positiver Kontext). 'Is there ANY milk?' (echte Frage).",
     "options": [
-      "No difference",
-      "SOME: affirmative sentences and offers/requests ('I have some money / Would you like some tea?'). ANY: negatives and questions ('I don't have any money / Do you have any questions?')",
-      "ANY for positive",
-      "SOME for negative"
+      "There is no difference at all: you can always use some and any",
+      "SOME: positive sentences and offers. ANY: negatives and questions",
+      "ANY is for positive sentences, SOME for negatives and questions",
+      "SOME is only used in negative sentences and in questions"
     ],
     "question": "What is the difference between 'some' and 'any'?",
     "topic": "Grammar"
   },
   {
     "correct": 1,
-    "explanation": "'Look forward to + noun/verb-ing': positive anticipation. 'I'm looking forward to the party.' 'I look forward to hearing from you.' (formal letter ending). Very common in English!",
+    "explanation": "'Look forward to + noun/verb-ing' drückt freudige Erwartung aus: 'I'm looking forward to the party.' 'I look forward to hearing from you.' (förmlicher Briefschluss). Achtung: nach 'to' folgt die -ing-Form.",
     "options": [
-      "I'm afraid of it",
-      "I'm excited and happy about something that will happen in the future — 'I'm looking forward to the holidays / to seeing you'",
-      "I'm not interested",
-      "I remember it"
+      "I am afraid of it and I really do not want it to happen at all",
+      "I am happy and excited about something that will happen soon",
+      "I am not interested in it and it does not matter to me",
+      "I remember it well because it happened a long time ago"
     ],
     "question": "What does 'I'm looking forward to it' mean?",
     "topic": "Phrases"
@@ -759,20 +759,20 @@
     "correct": 1,
     "explanation": "Past Simple negative: DIDN'T (did not) + base verb (infinitive, no past -ed!). 'She didn't eat breakfast.' 'We didn't watch TV.' Special: be → was/were not (wasn't/weren't).",
     "options": [
-      "Verb + not",
-      "Didn't + base form of the verb: 'I didn't go to school yesterday.' NOT 'I didn't went' (wrong!) — the main verb stays in the infinitive",
-      "Was/were + not + verb",
-      "Do not + past verb"
+      "Verb + not: 'I went not to school yesterday', like in German word order",
+      "Didn't + base form: 'I didn't go to school', never 'I didn't went'",
+      "Was/were + not + main verb: 'I was not go to school yesterday morning'",
+      "Do not + past verb: 'I do not went to school yesterday'"
     ],
     "question": "How do you form a negative sentence in Past Simple?",
     "topic": "Grammar"
   },
   {
     "correct": 1,
-    "explanation": "Synonyms for big: large (neutral), huge (very big), enormous (extremely big), massive (heavy + big), gigantic/giant (extremely large), vast (wide area). Choosing the right synonym adds precision.",
+    "explanation": "Synonyme für big: large (neutral), huge (sehr groß), enormous (riesig), giant/gigantic (gewaltig), vast (weitläufig). Gegenteile (Antonyme): small, tiny, little, short.",
     "options": [
       "small",
-      "large, huge, enormous, giant, tall, vast — words with similar meaning that make writing more varied",
+      "large",
       "tiny",
       "short"
     ],
@@ -781,24 +781,24 @@
   },
   {
     "correct": 1,
-    "explanation": "'I'm sorry': 1) apology: 'I'm sorry I was late.' 2) sympathy: 'I'm sorry you feel ill.' 3) asking to repeat: 'Sorry? Could you say that again?' Context determines meaning!",
+    "explanation": "'I'm sorry' ist nicht immer ein Schuldeingeständnis: 1) Entschuldigung: 'I'm sorry I was late.' 2) Mitgefühl: 'I'm sorry to hear about your dog.' 3) Nachfrage: 'Sorry? Could you say that again?' Der Kontext entscheidet.",
     "options": [
-      "I apologize",
-      "It can also express sympathy (not guilt): 'I'm sorry to hear about your dog.' = I feel sad for you — not 'it's my fault'",
-      "It always means guilt",
-      "It's only for accidents"
+      "It is always an apology for a mistake that the speaker has made",
+      "It does not always mean guilt: 'I'm sorry to hear that' shows sympathy",
+      "It always shows that the speaker feels guilty about something",
+      "It is only used after small accidents, never in other situations"
     ],
     "question": "What does 'I'm sorry' NOT always mean?",
     "topic": "Phrases"
   },
   {
     "correct": 1,
-    "explanation": "Paragraph: topic sentence (main idea) + supporting sentences (details, examples) + concluding sentence (link to next). Good writing: clear paragraphs, varied sentence length, connectors.",
+    "explanation": "Ein paragraph ist ein Abschnitt: mehrere Sätze zu einem Hauptgedanken, beginnend in einer neuen Zeile. Aufbau: topic sentence (Hauptidee) + supporting sentences (Details, Beispiele) + Überleitung zum nächsten Abschnitt.",
     "options": [
-      "A sentence",
-      "A group of sentences about one main idea, starting on a new line with an indent — each paragraph = one topic, with a topic sentence, details, and linking to the next",
-      "A chapter",
-      "A word"
+      "A single sentence that stands alone and has one subject and one verb",
+      "A group of sentences about one main idea, starting on a new line",
+      "A large part of a book with a number and often a title of its own",
+      "A single word that carries its own meaning inside a longer sentence"
     ],
     "question": "What is a paragraph in English writing?",
     "topic": "Writing"
@@ -817,10 +817,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Basic introduction phrases: 'What's your name?' 'My name is...' 'How are you?' (asks about wellbeing). 'Where are you from?' (asks about origin). 'How old are you?' (asks about age).",
+    "explanation": "Nach dem Namen fragt man mit 'What is your name?' bzw. 'What's your name?' Antwort: 'My name is ...' Andere Standardfragen: 'How are you?' (Befinden), 'Where are you from?' (Herkunft), 'How old are you?' (Alter).",
     "options": [
       "How are you?",
-      "What is your name? / What's your name?",
+      "What is your name?",
       "Where are you from?",
       "How old are you?"
     ],
@@ -829,7 +829,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Irregular plural: mouse → mice. Note: for the computer device, both 'mouse' and 'mice' are used informally, but 'mouse' (or 'mouse devices') is more common in tech contexts.",
+    "explanation": "Unregelmäßiger Plural: mouse → mice. Genauso: man → men, woman → women, child → children, foot → feet, tooth → teeth. Regelmäßige Substantive hängen dagegen einfach -s an.",
     "options": [
       "mouses",
       "mice",
@@ -853,19 +853,19 @@
   },
   {
     "correct": 1,
-    "explanation": "'I'd like' = 'I would like' (polite request). More formal/polite than 'I want'. Used in restaurants, shops: 'I'd like a coffee, please.' Answer offers: 'Would you like some tea?' 'Yes, I'd like that.'",
+    "explanation": "'I'd like' ist die Kurzform von 'I would like' und damit die höfliche Variante von 'I want'. Typisch im Restaurant oder Geschäft: 'I'd like a coffee, please.' Antwort auf ein Angebot: 'Would you like some tea?' – 'Yes, I'd like that.'",
     "options": [
-      "I don't want to",
-      "A polite way of saying 'I want to': 'I'd like to order a pizza.' (short for 'I would like to')",
-      "I have already done it",
-      "I dislike something"
+      "I do not want to do it and I would rather not do it at all",
+      "A polite way of saying 'I want to', short for 'I would like to'",
+      "I have already done it, so there is no need for me to do it again",
+      "I dislike something and I do not enjoy doing it very much at all"
     ],
     "question": "What does 'I'd like to...' mean?",
     "topic": "Phrases"
   },
   {
     "correct": 1,
-    "explanation": "difficult ↔ easy. Synonyms for difficult: hard, complicated, tough, challenging. Knowing synonyms and antonyms helps build a richer vocabulary for writing and speaking.",
+    "explanation": "difficult ↔ easy. Synonyme für difficult: hard, complicated, tough, challenging. Synonyme und Gegenteile zusammen zu lernen baut den Wortschatz schneller auf.",
     "options": [
       "hard",
       "easy",
@@ -877,9 +877,9 @@
   },
   {
     "correct": 0,
-    "explanation": "Time expressions: 3:30 = 'half past three' or 'three thirty'. 3:15 = 'quarter past three'. 3:45 = 'quarter to four'. 3:00 = 'three o'clock'.",
+    "explanation": "Time expressions: 3:30 = 'half past three' oder 'three thirty'. 3:15 = 'quarter past three'. 3:45 = 'quarter to four'. 3:00 = 'three o'clock'.",
     "options": [
-      "Half past three / three thirty",
+      "Half past three",
       "Half to four",
       "Quarter past three",
       "Three and a half"
@@ -904,7 +904,7 @@
     "explanation": "English adjective order: opinion, size, age, shape, color, origin, material, purpose + noun. 'a big red car' (size, then color) sounds natural; 'a red big car' sounds wrong to native speakers.",
     "options": [
       "red big car",
-      "big red car (size before color is a common pattern in English adjective order)",
+      "big red car",
       "car big red",
       "red car big"
     ],
@@ -913,7 +913,7 @@
   },
   {
     "correct": 1,
-    "explanation": "eat → ate (Past Simple) → eaten (Past Participle). 'I ate breakfast at 7.' Remember: 'eaten' is only used with have/has/had: 'I have eaten already.'",
+    "explanation": "eat ist ein unregelmäßiges Verb: eat – ate – eaten. Das Past Simple lautet ate: 'I ate breakfast at seven.' eaten ist das Partizip und steht nur mit have/has/had, eats ist Präsens, eated gibt es nicht.",
     "options": [
       "eated",
       "ate",
@@ -925,7 +925,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Hund = dog.",
+    "explanation": "Hund heißt auf Englisch dog. cat = Katze, bird = Vogel, fish = Fisch.",
     "options": [
       "cat",
       "dog",
@@ -937,7 +937,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Guten Morgen = Good morning.",
+    "explanation": "Guten Morgen heißt Good morning. Good afternoon grüßt am Nachmittag, Good evening am Abend, Good night sagt man beim Schlafengehen.",
     "options": [
       "Good night",
       "Good afternoon",
@@ -949,7 +949,7 @@
   },
   {
     "correct": 2,
-    "explanation": "pencil = Bleistift.",
+    "explanation": "pencil heißt Bleistift. Lineal = ruler, Radiergummi = rubber, Heft = exercise book.",
     "options": [
       "Lineal",
       "Radiergummi",
@@ -961,11 +961,11 @@
   },
   {
     "correct": 0,
-    "explanation": "book + s = books.",
+    "explanation": "Der Plural wird regelmäßig mit -s gebildet: book wird zu books. Die Endung -es steht nur nach Zischlauten (boxes, watches), und der Apostroph in book's zeigt Besitz an, niemals die Mehrzahl.",
     "options": [
       "books",
       "bookes",
-      "booky",
+      "book's",
       "bookies"
     ],
     "question": "Plural of book:",
@@ -973,7 +973,7 @@
   },
   {
     "correct": 2,
-    "explanation": "The sky is blue.",
+    "explanation": "Der Himmel ist blau: The sky is blue. green = grün, red = rot, yellow = gelb.",
     "options": [
       "green",
       "red",
@@ -985,7 +985,7 @@
   },
   {
     "correct": 1,
-    "explanation": "school = Schule.",
+    "explanation": "school heißt Schule. hospital = Krankenhaus, library = Bücherei, store = Laden.",
     "options": [
       "hospital",
       "school",
@@ -997,7 +997,7 @@
   },
   {
     "correct": 2,
-    "explanation": "8 = eight.",
+    "explanation": "5 + 3 = 8, und 8 heißt auf Englisch eight. six = 6, seven = 7, nine = 9.",
     "options": [
       "six",
       "nine",
@@ -1009,19 +1009,19 @@
   },
   {
     "correct": 2,
-    "explanation": "Good afternoon = Guten Nachmittag.",
+    "explanation": "Am Nachmittag grüßt man mit Good afternoon, etwa ab 12 Uhr. Good morning gilt bis Mittag, Good evening ab dem frühen Abend, Goodbye ist ein Abschiedsgruß.",
     "options": [
       "Good morning",
       "Good night",
       "Good afternoon",
-      "Good bye"
+      "Goodbye"
     ],
     "question": "How do you greet in the afternoon?",
     "topic": "Begrüßung"
   },
   {
     "correct": 2,
-    "explanation": "I am. You are. He/she/it is.",
+    "explanation": "In der 1. Person Singular heißt es I am. Die Präsensformen von to be: I am, you are, he/she/it is, we/you/they are. be ist der Infinitiv.",
     "options": [
       "is",
       "are",
@@ -1033,7 +1033,7 @@
   },
   {
     "correct": 1,
-    "explanation": "family = Familie.",
+    "explanation": "family heißt Familie. Freund = friend, Schule = school, Haus = house.",
     "options": [
       "Freund",
       "Familie",
@@ -1045,7 +1045,7 @@
   },
   {
     "correct": 1,
-    "explanation": "My name is ...",
+    "explanation": "Man nennt seinen Namen mit My name is ... Wörtlich übersetzt wird der deutsche Satz nicht: Das Verb call braucht die Passivform I am called ..., alles andere ergibt keinen richtigen Satz.",
     "options": [
       "I called ...",
       "My name is ...",
@@ -1057,7 +1057,7 @@
   },
   {
     "correct": 2,
-    "explanation": "big (groß) – small (klein).",
+    "explanation": "Das Gegenteil von big (groß) ist small (klein). tall = groß gewachsen, large = groß im Sinne von umfangreich, fat = dick.",
     "options": [
       "tall",
       "large",
@@ -1069,7 +1069,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Monday = Montag.",
+    "explanation": "Monday heißt Montag, der erste Tag der Woche. Dienstag = Tuesday, Mittwoch = Wednesday, Donnerstag = Thursday.",
     "options": [
       "Dienstag",
       "Mittwoch",
@@ -1081,7 +1081,7 @@
   },
   {
     "correct": 1,
-    "explanation": "apple = Apfel.",
+    "explanation": "apple heißt Apfel. Orange = orange, Banane = banana, Erdbeere = strawberry.",
     "options": [
       "Orange",
       "Apfel",
@@ -1093,7 +1093,7 @@
   },
   {
     "correct": 1,
-    "explanation": "3. Person Singular: She has.",
+    "explanation": "In der 3. Person Singular wird have zu has: She has a cat. have steht bei I, you, we und they, having ist die -ing-Form, haves gibt es nicht.",
     "options": [
       "have",
       "has",
@@ -1105,7 +1105,7 @@
   },
   {
     "correct": 2,
-    "explanation": "What time is it? = Wie spät ist es?",
+    "explanation": "What time is it? fragt nach der Uhrzeit: Wie spät ist es? Wie heißt du? = What is your name?, Wie alt bist du? = How old are you?, Wo ist es? = Where is it?",
     "options": [
       "Wie heißt du?",
       "Wie alt bist du?",
@@ -1117,7 +1117,7 @@
   },
   {
     "correct": 2,
-    "explanation": "January = Januar.",
+    "explanation": "January ist der Januar, der erste Monat des Jahres. Februar = February, Juni = June, Juli = July.",
     "options": [
       "Juli",
       "Juni",
@@ -1129,7 +1129,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Danke = Thank you.",
+    "explanation": "Danke heißt Thank you, kurz auch Thanks. Please = bitte, Sorry = Entschuldigung, Hello = hallo.",
     "options": [
       "Please",
       "Sorry",
@@ -1141,31 +1141,31 @@
   },
   {
     "correct": 0,
-    "explanation": "1-5: one, two, three, four, five.",
+    "explanation": "Die Grundzahlen von 1 bis 5 heißen one, two, three, four, five. first, second, third, fourth, fifth sind dagegen die Ordnungszahlen (der erste, der zweite ...), und tree oder fife sind falsch geschriebene Formen.",
     "options": [
       "one, two, three, four, five",
       "one, two, tree, four, fife",
       "wan, tu, tri, fo, fai",
-      "ein, zwei, drei, vier, fünf"
+      "first, second, third, fourth, fifth"
     ],
     "question": "Numbers 1-5 in English:",
     "topic": "Zahlen"
   },
   {
     "correct": 2,
-    "explanation": "bedroom = Schlafzimmer.",
+    "explanation": "bedroom besteht aus bed (Bett) und room (Zimmer) und heißt Schlafzimmer. Badezimmer = bathroom, Küche = kitchen, Arbeitszimmer = study.",
     "options": [
       "Badezimmer",
       "Küche",
       "Schlafzimmer",
-      "Wohnzimmer"
+      "Arbeitszimmer"
     ],
     "question": "What does bedroom mean?",
     "topic": "Haus"
   },
   {
     "correct": 1,
-    "explanation": "There is (Singular): There is a cat.",
+    "explanation": "Bei einem einzelnen Ding steht There is: There is a cat. Bei mehreren heißt es There are: There are two cats. Der unbestimmte Artikel a darf im Singular nicht fehlen.",
     "options": [
       "There is two cats.",
       "There is a cat.",
@@ -1177,7 +1177,7 @@
   },
   {
     "correct": 1,
-    "explanation": "What is your name? = Wie heißt du?",
+    "explanation": "What is your name? fragt nach dem Namen: Wie heißt du? Wie alt bist du? = How old are you?, Wo wohnst du? = Where do you live?, Wie geht es dir? = How are you?",
     "options": [
       "Wie alt bist du?",
       "Wie heißt du?",
@@ -1189,7 +1189,7 @@
   },
   {
     "correct": 2,
-    "explanation": "teacher = Lehrer.",
+    "explanation": "teacher kommt von to teach (unterrichten) und heißt Lehrer. Schüler = pupil, Direktor = headmaster, Hausmeister = caretaker.",
     "options": [
       "Schüler",
       "Direktor",
@@ -1201,7 +1201,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Unregelmäßig: child – children.",
+    "explanation": "child bildet den Plural unregelmäßig: child wird zu children. Die Endungen -s und -es passen hier nicht, und childrens wäre ein doppelter Plural.",
     "options": [
       "childs",
       "childes",
@@ -1213,7 +1213,7 @@
   },
   {
     "correct": 2,
-    "explanation": "sunny = sonnig.",
+    "explanation": "sunny kommt von sun (Sonne) und heißt sonnig. regnerisch = rainy, wolkig = cloudy, windig = windy.",
     "options": [
       "regnerisch",
       "wolkig",
@@ -1225,7 +1225,7 @@
   },
   {
     "correct": 2,
-    "explanation": "How old are you? = Wie alt bist du?",
+    "explanation": "Nach dem Alter fragt man mit einer Form von to be: How old are you? Genau wie im Deutschen mit sein: Wie alt bist du? have und do passen hier nicht, is gehört zu he, she und it.",
     "options": [
       "How old have you?",
       "How old is you?",
@@ -1237,7 +1237,7 @@
   },
   {
     "correct": 2,
-    "explanation": "breakfast = Frühstück.",
+    "explanation": "breakfast ist die erste Mahlzeit des Tages, das Frühstück. Mittagessen = lunch, Abendessen = dinner, Snack = snack.",
     "options": [
       "Mittagessen",
       "Abendessen",
@@ -1249,7 +1249,7 @@
   },
   {
     "correct": 0,
-    "explanation": "I like ... = Ich mag ...",
+    "explanation": "I like ... heißt Ich mag ... Ich habe = I have, Ich bin = I am, Ich will = I want.",
     "options": [
       "Ich mag ...",
       "Ich habe ...",
@@ -1261,7 +1261,7 @@
   },
   {
     "correct": 3,
-    "explanation": "rot = red.",
+    "explanation": "rot heißt auf Englisch red. blue = blau, green = grün, yellow = gelb.",
     "options": [
       "blue",
       "green",
@@ -1273,7 +1273,7 @@
   },
   {
     "correct": 1,
-    "explanation": "homework = Hausaufgaben.",
+    "explanation": "homework besteht aus home (Zuhause) und work (Arbeit) und meint die Hausaufgaben. Das Wort steht immer im Singular: My homework is easy.",
     "options": [
       "Hausarbeit",
       "Hausaufgaben",
@@ -1285,7 +1285,7 @@
   },
   {
     "correct": 1,
-    "explanation": "mouse – mice (unregelmäßig).",
+    "explanation": "mouse bildet den Plural unregelmäßig: mouse wird zu mice. Genauso: louse wird zu lice. Formen mit -s wie mouses gibt es nicht.",
     "options": [
       "mouses",
       "mice",
@@ -1297,7 +1297,7 @@
   },
   {
     "correct": 3,
-    "explanation": "winter = Winter.",
+    "explanation": "winter heißt Winter, die kälteste Jahreszeit. Frühling = spring, Sommer = summer, Herbst = autumn.",
     "options": [
       "Frühling",
       "Sommer",
@@ -1309,7 +1309,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Bitte = Please.",
+    "explanation": "Wenn man um etwas bittet, sagt man Please: Can I have an apple, please? Thank you = danke, Sorry = Entschuldigung nach einem Fehler, Excuse me = Entschuldigung, wenn man jemanden anspricht.",
     "options": [
       "Thank you",
       "Sorry",
@@ -1321,7 +1321,7 @@
   },
   {
     "correct": 1,
-    "explanation": "He plays (+ s bei 3. Person Singular).",
+    "explanation": "Im Simple Present bekommt das Verb in der 3. Person Singular ein -s: He plays football. play steht bei I, you, we und they, played ist Vergangenheit, playing braucht eine Form von be.",
     "options": [
       "play",
       "plays",
@@ -1333,7 +1333,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Where do you live? = Wo wohnst du?",
+    "explanation": "Where do you live? fragt nach dem Wohnort: Wo wohnst du? Wie alt bist du? = How old are you?, Was machst du? = What do you do?, Wer bist du? = Who are you?",
     "options": [
       "Wie alt bist du?",
       "Wo wohnst du?",
@@ -1345,7 +1345,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Mittwoch = Wednesday.",
+    "explanation": "Mittwoch heißt Wednesday, gesprochen wie 'Wensday'. Monday = Montag, Tuesday = Dienstag, Thursday = Donnerstag.",
     "options": [
       "Monday",
       "Tuesday",
@@ -1357,10 +1357,10 @@
   },
   {
     "correct": 2,
-    "explanation": "I don't know = Ich weiß es nicht.",
+    "explanation": "I don't know heißt Ich weiß es nicht; don't verneint das Vollverb know. Ich verstehe das nicht = I don't understand, Ich will nicht = I don't want to, Ich weiß es = I know.",
     "options": [
       "Ich weiß es",
-      "Ich glaube nicht",
+      "Ich verstehe das nicht",
       "Ich weiß es nicht",
       "Ich will nicht"
     ],
@@ -1369,7 +1369,7 @@
   },
   {
     "correct": 2,
-    "explanation": "cat = Katze.",
+    "explanation": "cat = Katze. Der Hund heißt dog, der Vogel bird und der Fisch fish.",
     "options": [
       "Hund",
       "Vogel",
@@ -1381,7 +1381,7 @@
   },
   {
     "correct": 1,
-    "explanation": "school bag = Schulranzen.",
+    "explanation": "school bag = Schulranzen, also die Tasche für die Schulsachen.",
     "options": [
       "Schulheft",
       "Schulranzen",
@@ -1393,7 +1393,7 @@
   },
   {
     "correct": 0,
-    "explanation": "I am going to...",
+    "explanation": "Nach 'I' steht immer 'am': I am going. Die Verlaufsform bildet man mit be + Verb + -ing.",
     "options": [
       "am",
       "is",
@@ -1405,7 +1405,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Nachmittag = afternoon.",
+    "explanation": "Nachmittag = afternoon, die Zeit nach 12 Uhr mittags. Morning ist der Morgen, evening der Abend.",
     "options": [
       "Morning",
       "Evening",
@@ -1417,7 +1417,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Irregular: go → went (simple past).",
+    "explanation": "go ist unregelmäßig: go – went – gone. Das Simple Past heißt 'went', die Form 'goed' gibt es nicht.",
     "options": [
       "goed",
       "gone",
@@ -1429,7 +1429,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Neighbour = Nachbar.",
+    "explanation": "neighbour = Nachbar, also jemand, der nebenan oder ganz in der Nähe wohnt.",
     "options": [
       "Feind",
       "Bruder",
@@ -1441,7 +1441,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Questions with do/does: Where do you live?",
+    "explanation": "Fragen im Simple Present bildet man mit do/does: Fragewort + do + Subjekt + Grundform. Also: Where do you live?",
     "options": [
       "Where you live?",
       "Where do you live?",
@@ -1453,7 +1453,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Schmetterling = butterfly.",
+    "explanation": "Schmetterling = butterfly. Bee ist die Biene und moth der Nachtfalter.",
     "options": [
       "Dragonfly",
       "Bee",
@@ -1465,7 +1465,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Irregular: mouse → mice.",
+    "explanation": "mouse → mice ist ein unregelmäßiger Plural, genau wie tooth → teeth. Eine Endung -s wird hier nicht angehängt.",
     "options": [
       "mouses",
       "mices",
@@ -1477,7 +1477,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Expensive = teuer.",
+    "explanation": "expensive = teuer. Das Gegenteil ist cheap (billig).",
     "options": [
       "billig",
       "teuer",
@@ -1489,19 +1489,19 @@
   },
   {
     "correct": 2,
-    "explanation": "They are (present progressive).",
+    "explanation": "'They' ist Plural, deshalb 'are'. 'right now' zeigt die Gegenwart an, darum passt die Vergangenheitsform 'were' nicht.",
     "options": [
       "is",
       "am",
       "are",
-      "be"
+      "were"
     ],
     "question": "Complete: 'They __ watching TV right now.'",
     "topic": "Grammar"
   },
   {
     "correct": 2,
-    "explanation": "Erdbeere = strawberry.",
+    "explanation": "Erdbeere = strawberry. Blueberry ist die Heidelbeere und cherry die Kirsche.",
     "options": [
       "Blueberry",
       "Raspberry",
@@ -1513,7 +1513,7 @@
   },
   {
     "correct": 1,
-    "explanation": "good → better → best (irregular).",
+    "explanation": "good wird unregelmäßig gesteigert: good – better – best. 'best' ist der Superlativ, 'better' nur der Komparativ.",
     "options": [
       "gooder",
       "best",
@@ -1525,7 +1525,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Hospital = Krankenhaus.",
+    "explanation": "hospital = Krankenhaus; dort arbeiten Ärztinnen, Ärzte und Pflegekräfte.",
     "options": [
       "Hotel",
       "Krankenhaus",
@@ -1537,7 +1537,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Can = Fähigkeit (I can swim) oder Erlaubnis (Can I go?).",
+    "explanation": "Mit 'can' sagt man, dass man etwas kann (I can swim) oder darf (Can I go?). Danach steht immer die Grundform.",
     "options": [
       "Zukünftige Ereignisse und Vorhaben beschreiben",
       "Fähigkeit oder Erlaubnis ausdrücken",
@@ -1549,7 +1549,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Kopfschmerzen = headache.",
+    "explanation": "Kopfschmerzen = headache. 'ache' heißt Schmerz, 'head' heißt Kopf.",
     "options": [
       "Stomachache",
       "Backache",
@@ -1561,7 +1561,7 @@
   },
   {
     "correct": 2,
-    "explanation": "big → bigger (double consonant + -er).",
+    "explanation": "Kurze Adjektive steigert man mit -er. Bei big wird der Endkonsonant verdoppelt: big → bigger.",
     "options": [
       "more big",
       "biggest",
@@ -1573,7 +1573,7 @@
   },
   {
     "correct": 0,
-    "explanation": "To enjoy = genießen.",
+    "explanation": "to enjoy = genießen, also Freude an etwas haben.",
     "options": [
       "genießen",
       "erleiden",
@@ -1585,19 +1585,19 @@
   },
   {
     "correct": 2,
-    "explanation": "There is + singular. There are + plural.",
+    "explanation": "'There is' steht vor der Einzahl (There is a book), 'There are' vor der Mehrzahl (There are two books).",
     "options": [
-      "'There is' for plural",
-      "'There are' for singular",
+      "'There is' for plural forms only",
+      "'There are' for singular forms only",
       "'There is' for singular, 'There are' for plural",
-      "Both are always correct"
+      "'There is' and 'There are' are both always correct"
     ],
     "question": "Which is correct: 'There is' or 'There are'?",
     "topic": "Grammar"
   },
   {
     "correct": 1,
-    "explanation": "Landkarte = map.",
+    "explanation": "Landkarte = map. Ein compass ist ein Kompass und ein globe ein Globus.",
     "options": [
       "Compass",
       "Map",
@@ -1609,7 +1609,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Irregular: eat → ate (simple past).",
+    "explanation": "eat ist unregelmäßig: eat – ate – eaten. Das Simple Past ist 'ate', 'eaten' ist das Partizip.",
     "options": [
       "eated",
       "eaten",
@@ -1621,19 +1621,19 @@
   },
   {
     "correct": 3,
-    "explanation": "Frightened = erschrocken, verängstigt.",
+    "explanation": "frightened = verängstigt, verschreckt. Es gehört zum Verb to frighten (erschrecken).",
     "options": [
-      "glücklich",
+      "gleichgültig",
+      "niedergeschlagen",
       "erschöpft",
-      "ärgerlich",
-      "erschreckt/verängstigt"
+      "verängstigt"
     ],
     "question": "What does 'frightened' mean?",
     "topic": "Adjectives"
   },
   {
     "correct": 1,
-    "explanation": "Present perfect: She has done her homework.",
+    "explanation": "Das Present Perfect bildet man mit has/have + Partizip: do – did – done. Also: She has done her homework.",
     "options": [
       "do",
       "done",
@@ -1645,35 +1645,35 @@
   },
   {
     "correct": 2,
-    "explanation": "Zebrastreifen = zebra crossing / pedestrian crossing.",
+    "explanation": "Zebrastreifen = zebra crossing (auch pedestrian crossing). Ein roundabout ist ein Kreisverkehr.",
     "options": [
-      "Crossroad",
-      "Traffic lights",
-      "Pedestrian crossing / Zebra crossing",
-      "Roundabout"
+      "Roundabout",
+      "Pedestrian zone",
+      "Zebra crossing",
+      "Bus stop"
     ],
     "question": "What is 'Zebrastreifen' in English?",
     "topic": "Vokabeln"
   },
   {
     "correct": 1,
-    "explanation": "Will + Infinitiv = Zukunft.",
+    "explanation": "Mit will + Grundform spricht man über die Zukunft: I will come tomorrow.",
     "options": [
-      "Vergangene Handlungen und Ereignisse beschreiben",
-      "Zukunft ausdrücken (I will come)",
-      "Gleichzeitig stattfindende Handlungen beschreiben",
-      "Starke Pflicht und Verpflichtung ausdrücken"
+      "Vergangene Handlungen beschreiben",
+      "Zukünftige Handlungen und Absichten ausdrücken",
+      "Gleichzeitige Handlungen beschreiben",
+      "Starke Verpflichtung ausdrücken"
     ],
     "question": "What is the future tense 'will'?",
     "topic": "Grammar"
   },
   {
     "correct": 1,
-    "explanation": "To refuse = ablehnen, verweigern.",
+    "explanation": "to refuse = verweigern, ablehnen. Das Gegenteil ist to accept (annehmen).",
     "options": [
       "anbieten",
-      "ablehnen/verweigern",
-      "annehmen",
+      "verweigern",
+      "versprechen",
       "vergessen"
     ],
     "question": "What does 'to refuse' mean?",
@@ -1681,19 +1681,19 @@
   },
   {
     "correct": 1,
-    "explanation": "Mülltonnen = rubbish bins (BE) / garbage cans (AE).",
+    "explanation": "Mülltonnen = rubbish bins im britischen Englisch; im amerikanischen Englisch sagt man garbage cans oder trash cans.",
     "options": [
-      "Recycling bins",
-      "Rubbish bins / Garbage cans",
-      "Flower pots",
-      "Storage boxes"
+      "Watering cans",
+      "Rubbish bins",
+      "Storage boxes",
+      "Flower pots"
     ],
     "question": "What is 'Mülltonnen' in English?",
     "topic": "Vokabeln"
   },
   {
     "correct": 2,
-    "explanation": "Es tut mir leid = I'm sorry.",
+    "explanation": "Es tut mir leid = I'm sorry. 'Excuse me' sagt man dagegen, wenn man jemanden anspricht.",
     "options": [
       "Thank you",
       "Excuse me",
@@ -1705,7 +1705,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Irregular: see → saw (simple past).",
+    "explanation": "see ist unregelmäßig: see – saw – seen. Das Simple Past ist 'saw', 'seen' ist das Partizip.",
     "options": [
       "seed",
       "seen",
@@ -1717,10 +1717,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Journey = Reise.",
+    "explanation": "journey = Reise, Fahrt – vor allem eine längere Strecke. Freude heißt joy.",
     "options": [
       "Freude",
-      "Reise / Fahrt",
+      "Reise",
       "Ziel",
       "Abenteuer"
     ],
@@ -1729,23 +1729,23 @@
   },
   {
     "correct": 2,
-    "explanation": "Adverb: beautifully (-ly Endung).",
+    "explanation": "Adverbien enden meist auf -ly: aus dem Adjektiv quick wird das Adverb quickly. Ein Adverb sagt, wie etwas geschieht.",
     "options": [
-      "beautiful",
-      "beauty",
-      "beautifully",
-      "beautify"
+      "quick",
+      "quickest",
+      "quickly",
+      "quickness"
     ],
     "question": "Which word is an adverb?",
     "topic": "Grammar"
   },
   {
     "correct": 2,
-    "explanation": "Ancient = uralt, aus der Antike.",
+    "explanation": "ancient = uralt, antik – zum Beispiel ancient Rome, das antike Rom. Das Gegenteil ist modern.",
     "options": [
       "modern",
       "jung",
-      "uralt/antik",
+      "uralt",
       "spannend"
     ],
     "question": "What does 'ancient' mean?",
@@ -1753,9 +1753,9 @@
   },
   {
     "correct": 0,
-    "explanation": "Briefkasten = postbox / letterbox / mailbox.",
+    "explanation": "Briefkasten = postbox im britischen, mailbox im amerikanischen Englisch. Ein envelope ist der Umschlag, ein stamp die Briefmarke.",
     "options": [
-      "Postbox / Letterbox",
+      "Postbox",
       "Parcel",
       "Envelope",
       "Stamp"
@@ -1765,19 +1765,19 @@
   },
   {
     "correct": 1,
-    "explanation": "Must = Pflicht/Verpflichtung. I must study.",
+    "explanation": "'must' drückt eine starke Verpflichtung aus, etwas ist unbedingt nötig: I must study for the test.",
     "options": [
-      "Fähigkeit und Können einer Person ausdrücken",
-      "Starke Verpflichtung ausdrücken (I must go)",
+      "Fähigkeit und Können ausdrücken",
+      "Starke Verpflichtung und Notwendigkeit ausdrücken",
       "Erlaubnis einholen oder erteilen",
-      "Zukünftige Ereignisse und Vorhaben beschreiben"
+      "Zukünftige Absichten beschreiben"
     ],
     "question": "When do we use 'must'?",
     "topic": "Modal verbs"
   },
   {
     "correct": 2,
-    "explanation": "Irregular: write → wrote (simple past).",
+    "explanation": "write ist unregelmäßig: write – wrote – written. Das Simple Past ist 'wrote'.",
     "options": [
       "writed",
       "written",
@@ -1789,7 +1789,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Solution = Lösung.",
+    "explanation": "solution = Lösung, also die Antwort auf ein Problem.",
     "options": [
       "Problem",
       "Frage",
@@ -1801,21 +1801,21 @@
   },
   {
     "correct": 1,
-    "explanation": "Negation: I/You/We/They + do not / don't + Infinitiv.",
+    "explanation": "Bei I/you/we/they verneint man im Simple Present mit do not bzw. don't + Grundform: I don't like it.",
     "options": [
       "I not like",
-      "I do not like / I don't like",
+      "I don't like",
       "I does not like",
-      "I didn't like"
+      "I am not like"
     ],
     "question": "How do you form a negative sentence in Simple Present (I/you/we/they)?",
     "topic": "Grammar"
   },
   {
     "correct": 2,
-    "explanation": "Krankenhaus = hospital.",
+    "explanation": "Krankenhaus = hospital. Ambulance ist der Krankenwagen, surgery im britischen Englisch die Arztpraxis.",
     "options": [
-      "Hotel",
+      "Ambulance",
       "Clinic",
       "Hospital",
       "Surgery"

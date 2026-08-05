@@ -1351,3 +1351,134 @@ eingeschmolzen werden oder als eigene Eintraege ins Menue kommen.
 Vier Kategorien stehen weiterhin in der Liste, ohne dass Fragen dazu existieren:
 Deutsch/Wortarten, Deutsch/Satzlehre, Englisch/Phrasen & Redewendungen,
 Chemie/Chem. Bindungen. Sie bleiben als Ziele fuer die KI-Generierung stehen.
+
+---
+
+# Nachtrag: vierte Charge
+
+k5 Englisch (152), k11 Nachkriegszeit (80), k5 Deutsch/Aufsatz (73), k7 Gleichungen (56).
+Alle zehn Teile im Korridor. Befunde bankweit von 427 auf 395.
+
+## 62. Wieder Distraktoren, die in Wahrheit zutrafen
+
+**Der schwerste Fall:** Bei der Frage nach Kennedys berühmtem Satz aus der Berliner Rede
+1963 stand **„Freedom is indivisible"** als falsche Option. Dieser Satz stammt aus
+**genau derselben Rede**.
+
+Weitere:
+
+| Frage | Der Distraktor, der stimmte |
+|---|---|
+| „Ich heiße Tom Smith" auf Englisch | **„I am called Tom Smith."** — gängiges Englisch |
+| „Ich mag keine Spinnen" | **„I didn't like spiders."** — korrekt, nur Simple Past |
+| Zebrastreifen | **„Pedestrian crossing"** — ebenso richtig wie zebra crossing |
+| Eiserner Vorhang | „Theaterbegriff für den feuerfesten Vorhang" — die Wortherkunft stimmt |
+| Ziel der indischen Unabhängigkeitsbewegung | „konstitutionelle Monarchie mit dem britischen König als Staatsoberhaupt" — genau das war Indien 1947–1950 |
+| Globalisierung | „moderne Form des Imperialismus, bei der Konzerne Länder kontrollieren" — gängige kritische Definition |
+| Indirect Rule | „Kolonialsystem zur Verwaltung Afrikas durch Stärkung stammesbasierter Strukturen" — beschreibt die britische indirect rule korrekt |
+| „Afrikanisches Jahr" 1960 | „Erstes Jahr des Kalten Krieges in Afrika" — mit der Kongo-Krise traf das zu |
+
+## 63. Ein neues Verratsmuster: Zusätze ohne Klammern
+
+Bisher war nur der **Klammer-Verrat** benannt. Zwei Agenten haben unabhängig dieselbe
+Verallgemeinerung gefunden:
+
+- **Formeln und Rechenbeispiele nur bei der richtigen Option:** `a(b+c) = ab+ac`,
+  `3x + 4 = x + 12 → x = 4`. In `k7__Mathematik__Gleichungen` betraf das fünf Fragen.
+- **Doppelübersetzungen mit Schrägstrich:** „erschreckt/verängstigt", „Reise / Fahrt",
+  „uralt/antik", „Rubbish bins / Garbage cans". In `k5__Englisch__Allgemein` acht Fragen —
+  die richtige Option war dadurch automatisch immer die längste.
+
+**Neue stehende Regel:** Jeder Zusatz — Klammer, Formel, Beispiel, Jahreszahl,
+Doppelübersetzung — steht bei allen vier Optionen oder bei keiner. Umgekehrt gilt es
+genauso: Trägt die richtige Option als einzige *keinen* Zusatz, ist das derselbe Verrat.
+
+## 64. Erklärungssprache vereinheitlicht — Entscheidung getroffen
+
+Zehn von dreizehn Englisch-Dateien mischten Deutsch und Englisch in den Erklärungen. In
+`k6__Englisch__Grammatik` stand es 41 zu 41. `k12__Englisch__Grammatik` hatte 40 deutsche
+Erklärungen, `k12__Englisch__Zeitformen` 40 englische — dieselbe Klassenstufe.
+
+**Entschieden: durchgehend Deutsch.** Die Erklärung soll die Regel vermitteln; wer Englisch
+gerade lernt, kann eine englische Erklärung einer englischen Regel nicht lesen. Englische
+Beispielsätze innerhalb der deutschen Erklärung bleiben.
+
+Umzustellen: 259 Erklärungen in 11 Dateien. Zwei davon liegen außerhalb des Fachs Englisch
+(`k6__Allgemeinwissen__Musik_Kunst`, `k10__Biologie__Evolution`) — dort sind je ein bis
+zwei englische Erklärungen schlicht durchgerutscht.
+
+## 65. Sachfehler, korrigiert
+
+- **Die NVA** wurde erst 1956 gegründet, nicht „gleichzeitig" mit der Bundeswehr.
+- **Das Grundgesetz** wurde am 23. Mai 1949 verkündet und trat mit Ablauf des Tages in
+  Kraft — die Erklärung sagte „trat in Kraft".
+- **Die Aufteilung in vier Besatzungszonen** wurde nicht in Potsdam geregelt, sondern
+  bereits im Londoner Protokoll 1944 und in Jalta.
+- **Der IWF** wurde 1944 in Bretton Woods beschlossen, die Arbeit nahm er 1945/47 auf.
+- „Brezhnevs" (englische Transkription) → Breschnews.
+
+## 66. Zahlen, bei denen die Quellenlage weit auseinandergeht
+
+Alle vorsichtig umformuliert statt geraten. **Bitte durchsehen, ob dir das reicht:**
+
+- **Inoffizielle Mitarbeiter der Stasi:** stand mit „ca. 180.000". Momentaufnahme 1989 rund
+  170.000–190.000, kumuliert über die DDR-Zeit werden 500.000 bis über 600.000 genannt.
+  Zahl entfernt, jetzt „ein dichtes Netz inoffizieller Mitarbeiter".
+- **Opfer der Teilung Indiens 1947:** stand „über 1 Million". Schätzungen reichen von
+  200.000 bis 2 Millionen ohne belastbaren Konsens. Jetzt als Spanne formuliert.
+- **Todesopfer an der Mauer:** bewusst nicht beziffert. Mauer, innerdeutsche Grenze und
+  Ostsee werden unterschiedlich abgegrenzt; für die Mauer allein je nach Studie 140–250.
+
+## 67. Würde des Themas
+
+- Ein Distraktor nannte die Berliner Konferenz 1884/85 ein Konzept zur **„gerechten und
+  friedlichen"** Aufteilung Afrikas. Umformuliert zu „Aufteilung Afrikas in koloniale
+  Interessensphären".
+- Ein Distraktor sprach vom US-Einsatz in Vietnam **„für die Freiheit"** — propagandistisch.
+  Ersetzt.
+- Der **Schießbefehl** war als „Flüchtlinge an der Grenze zu erschießen" beschrieben. Jetzt:
+  „Der Befehl an DDR-Grenzsoldaten, Fluchtversuche notfalls mit Schusswaffen zu verhindern".
+  Nebenbei: „Mauerschützenbefehl" im Fragetext ist kein etablierter Begriff.
+
+## 68. Fragetexte, die eine Entscheidung brauchen
+
+- **„Welches Land erlangte als erstes in Afrika südlich der Sahara die Unabhängigkeit?"** —
+  streng genommen nicht Ghana: Liberia ist seit 1847 unabhängig, Südafrika seit 1910/1931
+  souverän. Gemeint ist „erstes von einer europäischen Kolonialmacht entlassenes Land".
+- **„Was war das britische Mandatssystem nach WK I?"** — das Mandatssystem war ein
+  Völkerbund-System, nicht britisch; Syrien und Libanon waren französische Mandate.
+- **„What does 'I'm sorry' NOT always mean?"** — die markierte Antwort beschreibt, was der
+  Ausdruck *auch* bedeuten kann, nicht was er *nicht immer* bedeutet.
+- **„Ich heisse … auf Englisch:"** — ß als ss geschrieben.
+- **„What does 'Geography' mean auf Deutsch?"** — Sprachmischung mitten im Satz.
+- **„Was sind wie man Klammern beim Vereinfachen auflöst?"** — grammatisch kaputt.
+- **„Was ist Kreatives Schreiben?"** — Adjektiv fälschlich großgeschrieben.
+
+## 69. Noch ein falscher Dateiname
+
+**`k5__Deutsch__Aufsatz`** — nur etwa 14 von 36 Fragen betreffen Textsorten, Schreibprozess
+oder Stilmittel. Die übrigen 22 sind reine Grammatik: Wortarten, Satzlehre, Zeitformen,
+Pronomen. Steht in `check_kategorien.js` unter den Verdachtsfällen.
+
+## 70. Ein methodischer Fehler von mir
+
+Ich habe allen Agenten einer Datei die Rangverteilung der **Gesamtdatei** genannt. Die Teile
+weichen davon aber stark ab:
+
+| Teil von `k5__Englisch__Allgemein` | Rang 1 |
+|---|---|
+| 1 | 44 % |
+| 2 | **81 %** |
+| 3 | **28 %** |
+| 4 | 57 % |
+| Gesamtdatei | 54 % |
+
+Teil 3 lag damit bereits im Korridor. Sein Agent hat das selbst gemerkt, widersprochen und
+nur fünf Fragen angefasst — richtig gehandelt, aber mit einer irreführenden Vorgabe.
+Dasselbe bei der Nachkriegszeit. **Künftig pro Teil messen.**
+
+Ebenso ungenau war meine Formulierung „bei Zahlenoptionen nichts erzwingen". Gemeint war die
+**Länge**; ein Agent las es als „gar nicht anfassen" und ließ Distraktoren stehen, die bloße
+Nachbarzahlen ohne Fehlerlogik waren („x + 7 = 19" mit den Optionen 10 und 14). Ein anderer
+Agent verstand es richtig und korrigierte sie. Künftig sauber trennen: keine
+Längenanpassung bei Zahlen, aber Distraktorqualität überall.
