@@ -1,0 +1,92 @@
+{
+  "rules": {
+    "config": {
+      ".read": "auth != null",
+      ".write": false
+    },
+    "users": {
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "friends": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "friendRequests": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "rooms": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "usernames": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "questionBank": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "catalogs": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "challenges": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "challengerScores": {
+      "$key": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        ".indexOn": ["level"]
+      }
+    },
+    "questionCorrections": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "reports": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+
+    "groups": {
+      "$gid": {
+        ".read": "auth != null && (data.child('members').child(auth.uid).exists() || root.child('groupInvites').child(auth.uid).child($gid).exists())",
+        ".write": "auth != null && (!data.exists() || data.child('members').child(auth.uid).child('role').val() === 'admin')",
+        "members": {
+          "$uid": {
+            ".write": "auth != null && ((auth.uid === $uid && (root.child('groupInvites').child(auth.uid).child($gid).exists() || !newData.exists())) || data.parent().child(auth.uid).child('role').val() === 'admin')"
+          }
+        },
+        "scores": {
+          "$qid": {
+            "$uid": {
+              ".write": "auth != null && auth.uid === $uid && root.child('groups').child($gid).child('members').child(auth.uid).exists()"
+            }
+          }
+        }
+      }
+    },
+    "groupInvites": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        "$gid": {
+          ".write": "auth != null && (auth.uid === $uid || root.child('groups').child($gid).child('members').child(auth.uid).child('role').val() === 'admin')"
+        }
+      }
+    },
+    "userGroups": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        "$gid": {
+          ".write": "auth != null && (auth.uid === $uid || root.child('groups').child($gid).child('members').child(auth.uid).child('role').val() === 'admin')"
+        }
+      }
+    }
+  }
+}

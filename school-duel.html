@@ -450,6 +450,21 @@
   .friend-item:last-child { border-bottom:none; }
   .friend-name { flex:1; font-weight:600; font-size:.93rem; }
   .friend-grade { font-size:.75rem; color:var(--muted); margin-top:2px; }
+  /* ── Gruppen & Nachrichten ── */
+  .nav-badge { margin-left:auto; min-width:20px; height:20px; padding:0 6px; border-radius:10px; background:var(--red); color:#fff; font-size:.72rem; font-weight:700; display:flex; align-items:center; justify-content:center; font-family:'Space Mono',monospace; }
+  .hamburger-dot { position:absolute; top:4px; right:4px; width:9px; height:9px; border-radius:50%; background:var(--red); border:2px solid var(--bg,#0e0e12); }
+  .role-pill { font-size:.66rem; font-weight:700; letter-spacing:.05em; padding:2px 7px; border-radius:20px; font-family:'Space Mono',monospace; flex-shrink:0; }
+  .role-pill.admin { background:rgba(212,175,55,.16); color:var(--gold); border:1px solid rgba(212,175,55,.4); }
+  .role-pill.member { background:var(--surface2); color:var(--muted); border:1px solid var(--border); }
+  .msg-item { padding:14px; border-radius:12px; background:var(--surface2); border:1px solid var(--border); margin-bottom:10px; }
+  .msg-kind { font-size:.68rem; font-weight:700; letter-spacing:.08em; color:var(--muted); font-family:'Space Mono',monospace; margin-bottom:6px; }
+  .msg-text { font-size:.92rem; margin-bottom:12px; line-height:1.45; }
+  .msg-actions { display:flex; gap:8px; }
+  .msg-actions .btn { width:auto; flex:1; padding:8px 12px; font-size:.83rem; }
+  .lb-row { display:flex; align-items:center; gap:10px; padding:9px 0; border-bottom:1px solid var(--border); font-size:.88rem; }
+  .lb-row:last-child { border-bottom:none; }
+  .lb-rank { width:26px; font-family:'Space Mono',monospace; color:var(--muted); font-size:.8rem; flex-shrink:0; }
+  .lb-row.me { color:var(--accent); font-weight:700; }
 
   /* CHALLENGE INCOMING */
   .challenge-popup { background:var(--surface); border:2px solid var(--accent); border-radius:var(--radius); padding:28px; width:100%; max-width:400px; animation:fadeIn .3s ease; }
@@ -1072,6 +1087,210 @@ Deutschland</p>
   </div>
 </div>
 
+<!-- ═══════════════════════════ SCREEN: NACHRICHTEN ═══════════════════════════ -->
+<div class="screen" id="screen-nachrichten">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+    <h2 style="font-size:1.1rem;font-weight:700;">📬 Nachrichten</h2>
+    <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="showScreen('screen-home')">← Zurück</button>
+  </div>
+  <div id="nachrichten-content">
+    <div class="loading-state"><div class="spinner"></div>Laden…</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: GRUPPEN ═══════════════════════════ -->
+<div class="screen" id="screen-groups">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+    <h2 style="font-size:1.1rem;font-weight:700;">👥 Gruppen</h2>
+    <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="showScreen('screen-home')">← Zurück</button>
+  </div>
+  <button class="btn btn-primary" style="margin-bottom:16px;" onclick="gOpenCreateModal()">+ Gruppe erstellen</button>
+  <div id="groups-content">
+    <div class="loading-state"><div class="spinner"></div>Laden…</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCREEN: EINE GRUPPE ═══════════════════════════ -->
+<div class="screen" id="screen-group-detail">
+  <div class="logo small"><span class="s">School</span> <span class="d">Duel</span></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;gap:10px;">
+    <h2 style="font-size:1.1rem;font-weight:700;flex:1;" id="gd-title">Gruppe</h2>
+    <button class="icon-btn" id="gd-settings-btn" style="display:none;" onclick="gOpenSettingsModal()" title="Gruppeneinstellungen">⚙️</button>
+    <button class="btn btn-secondary" style="width:auto;padding:7px 14px;font-size:.8rem;" onclick="showScreen('screen-groups')">← Zurück</button>
+  </div>
+  <div style="font-size:.8rem;color:var(--muted);margin-bottom:16px;" id="gd-subtitle"></div>
+  <div id="gd-content">
+    <div class="loading-state"><div class="spinner"></div>Laden…</div>
+  </div>
+</div>
+
+<!-- ── MODAL: Gruppe erstellen ── -->
+<div class="modal-backdrop hidden" id="modal-group-create">
+  <div class="modal">
+    <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:14px;">Neue Gruppe</h3>
+    <div class="label">Name der Gruppe</div>
+    <input class="form-input" id="gc-name" placeholder="z.B. Klasse 8b Biologie" style="margin-bottom:12px;">
+    <div class="label">Beschreibung (optional)</div>
+    <input class="form-input" id="gc-desc" placeholder="Wofür ist diese Gruppe?" style="margin-bottom:12px;">
+    <div class="label">Symbol</div>
+    <div class="pill-row" id="gc-icon-pills" style="margin-bottom:16px;">
+      <div class="pill active" data-val="👥" onclick="gPickIcon(this)">👥</div>
+      <div class="pill" data-val="🎓" onclick="gPickIcon(this)">🎓</div>
+      <div class="pill" data-val="📚" onclick="gPickIcon(this)">📚</div>
+      <div class="pill" data-val="⚗️" onclick="gPickIcon(this)">⚗️</div>
+      <div class="pill" data-val="🌍" onclick="gPickIcon(this)">🌍</div>
+      <div class="pill" data-val="⚽" onclick="gPickIcon(this)">⚽</div>
+      <div class="pill" data-val="🎨" onclick="gPickIcon(this)">🎨</div>
+      <div class="pill" data-val="🔬" onclick="gPickIcon(this)">🔬</div>
+    </div>
+    <div class="form-row">
+      <button class="btn btn-secondary" onclick="gCloseModal('modal-group-create')">Abbrechen</button>
+      <button class="btn btn-primary" onclick="gCreateGroup()">Erstellen ✓</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── MODAL: Mitglied einladen ── -->
+<div class="modal-backdrop hidden" id="modal-group-invite">
+  <div class="modal">
+    <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:4px;">Mitglied einladen</h3>
+    <div style="font-size:.8rem;color:var(--muted);margin-bottom:14px;" id="gi-groupname"></div>
+    <div class="label">Benutzername suchen</div>
+    <div style="display:flex;gap:8px;margin-bottom:10px;">
+      <input class="form-input" id="gi-search" placeholder="Name eingeben…" style="flex:1;"
+        oninput="gSearchDebounced()" onkeydown="if(event.key==='Enter')gSearchUsers()">
+      <button class="btn btn-primary" style="width:auto;padding:10px 16px;" onclick="gSearchUsers()">Suchen</button>
+    </div>
+    <div id="gi-results" style="max-height:260px;overflow-y:auto;"></div>
+    <button class="btn btn-secondary" style="margin-top:14px;" onclick="gCloseModal('modal-group-invite')">Fertig</button>
+  </div>
+</div>
+
+<!-- ── MODAL: Quiz hinzufügen ── -->
+<div class="modal-backdrop hidden" id="modal-group-addquiz">
+  <div class="modal">
+    <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:14px;">Quiz hinzufügen</h3>
+    <div id="gaq-choice">
+      <div class="mode-card" onclick="gAddQuizShowCatalogs()">
+        <div class="mc-icon">📦</div>
+        <div class="mc-body">
+          <div class="mc-title">Vorhandenen Katalog übernehmen</div>
+          <div class="mc-desc">Einen deiner eigenen Kataloge in die Gruppe kopieren</div>
+        </div>
+        <div class="mc-arrow">›</div>
+      </div>
+      <div class="mode-card" onclick="document.getElementById('gaq-file').click()">
+        <div class="mc-icon">📄</div>
+        <div class="mc-body">
+          <div class="mc-title">Datei hochladen</div>
+          <div class="mc-desc">JSON-Datei mit Fragen einlesen</div>
+        </div>
+        <div class="mc-arrow">›</div>
+      </div>
+      <div class="mode-card" onclick="gAddQuizEmpty()">
+        <div class="mc-icon">✏️</div>
+        <div class="mc-body">
+          <div class="mc-title">Eigene Fragen erstellen</div>
+          <div class="mc-desc">Leeres Quiz anlegen und nach und nach füllen</div>
+        </div>
+        <div class="mc-arrow">›</div>
+      </div>
+      <div class="mode-card" onclick="gCloseModal('modal-group-addquiz');ocrOpen({target:'group',gid:gState.currentId})">
+        <div class="mc-icon">📷</div>
+        <div class="mc-body">
+          <div class="mc-title">Karteikarten fotografieren</div>
+          <div class="mc-desc">Handgeschriebene Karten einlesen lassen</div>
+        </div>
+        <div class="mc-arrow">›</div>
+      </div>
+      <input type="file" id="gaq-file" accept=".json,application/json" style="display:none;" onchange="gAddQuizFromFile(this)">
+    </div>
+    <div id="gaq-catalogs" style="display:none;">
+      <div class="label">Welcher Katalog?</div>
+      <div id="gaq-catalog-list" style="max-height:300px;overflow-y:auto;margin-bottom:12px;"></div>
+      <button class="btn btn-secondary" onclick="gAddQuizBack()">← Zurück</button>
+    </div>
+    <button class="btn btn-secondary" style="margin-top:10px;" id="gaq-close" onclick="gCloseModal('modal-group-addquiz')">Abbrechen</button>
+  </div>
+</div>
+
+<!-- ── MODAL: Gruppeneinstellungen (nur Admin) ── -->
+<div class="modal-backdrop hidden" id="modal-group-settings">
+  <div class="modal">
+    <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:14px;">Gruppeneinstellungen</h3>
+    <div class="label">Name</div>
+    <input class="form-input" id="gs-name" style="margin-bottom:12px;">
+    <div class="label">Beschreibung</div>
+    <input class="form-input" id="gs-desc" style="margin-bottom:16px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px;background:var(--surface2);border-radius:10px;border:1px solid var(--border);margin-bottom:16px;">
+      <div style="flex:1;">
+        <div style="font-weight:600;font-size:.9rem;">Challenger-Rangliste</div>
+        <div style="font-size:.76rem;color:var(--muted);">Bestenliste innerhalb der Gruppe anzeigen</div>
+      </div>
+      <div class="pill-row" id="gs-lb-pills" style="margin:0;flex-shrink:0;">
+        <div class="pill" data-val="on" onclick="gPickLb(this)">An</div>
+        <div class="pill" data-val="off" onclick="gPickLb(this)">Aus</div>
+      </div>
+    </div>
+    <div class="form-row">
+      <button class="btn btn-secondary" onclick="gCloseModal('modal-group-settings')">Abbrechen</button>
+      <button class="btn btn-primary" onclick="gSaveSettings()">Speichern ✓</button>
+    </div>
+    <button class="btn btn-secondary" style="margin-top:10px;color:var(--red);border-color:var(--red);" onclick="gDeleteGroup()">Gruppe löschen</button>
+  </div>
+</div>
+
+<!-- ── MODAL: Karteikarten fotografieren ── -->
+<div class="modal-backdrop hidden" id="modal-ocr">
+  <div class="modal" style="max-width:520px;">
+    <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:4px;">📷 Karteikarten einlesen</h3>
+    <div style="font-size:.8rem;color:var(--muted);margin-bottom:14px;" id="ocr-target-hint"></div>
+
+    <!-- Schritt 1: Bild wählen -->
+    <div id="ocr-step-pick">
+      <div style="padding:12px;background:var(--surface2);border-radius:10px;border:1px solid var(--border);font-size:.82rem;line-height:1.5;margin-bottom:14px;">
+        Fotografiere deine handgeschriebenen Karten. Mehrere Karten auf einem Blatt sind kein Problem.<br><br>
+        <strong>So wird es am besten erkannt:</strong> gutes Licht, Blatt gerade von oben, Frage und Antwort deutlich getrennt (z.B. „Frage:" und „Antwort:").<br><br>
+        <span style="color:var(--muted);">Das Foto wird zur Texterkennung an den KI-Anbieter gesendet. Fotografiere keine Blätter mit Namen oder persönlichen Notizen.</span>
+      </div>
+      <input type="file" id="ocr-file" accept="image/*" capture="environment" style="display:none;" onchange="ocrPickFile(this)">
+      <button class="btn btn-primary" onclick="document.getElementById('ocr-file').click()">Foto aufnehmen oder wählen</button>
+      <div id="ocr-quota-hint" style="font-size:.75rem;color:var(--muted);text-align:center;margin-top:8px;"></div>
+    </div>
+
+    <!-- Schritt 2: Vorschau und Erkennung -->
+    <div id="ocr-step-preview" style="display:none;">
+      <img id="ocr-preview" style="width:100%;border-radius:10px;border:1px solid var(--border);margin-bottom:12px;" alt="Vorschau der aufgenommenen Karte">
+      <div class="form-row">
+        <button class="btn btn-secondary" onclick="ocrReset()">Anderes Foto</button>
+        <button class="btn btn-primary" onclick="ocrRecognize()">Text erkennen ✓</button>
+      </div>
+    </div>
+
+    <!-- Schritt 3: läuft -->
+    <div id="ocr-step-busy" style="display:none;text-align:center;padding:24px 0;">
+      <div class="spinner" style="margin:0 auto 14px;"></div>
+      <div style="font-size:.88rem;" id="ocr-busy-text">Handschrift wird gelesen…</div>
+    </div>
+
+    <!-- Schritt 4: Prüfen -->
+    <div id="ocr-step-review" style="display:none;">
+      <div style="padding:10px 12px;background:var(--surface2);border-radius:10px;border:1px solid var(--border);font-size:.8rem;margin-bottom:12px;">
+        <strong>Bitte gegenlesen.</strong> Handschrift wird nicht immer richtig erkannt. Unsichere Stellen sind <span style="color:var(--gold);">gelb</span> markiert. Alles ist änderbar.
+      </div>
+      <div id="ocr-cards"></div>
+      <div class="form-row" style="margin-top:14px;">
+        <button class="btn btn-secondary" onclick="ocrReset()">Verwerfen</button>
+        <button class="btn btn-primary" onclick="ocrApply()" id="ocr-apply-btn">Übernehmen</button>
+      </div>
+    </div>
+
+    <button class="btn btn-secondary" style="margin-top:10px;" onclick="ocrClose()">Schließen</button>
+  </div>
+</div>
+
 <!-- ── HAMBURGER DRAWER ── -->
 <div class="drawer-backdrop" id="drawer-backdrop" onclick="closeDrawer()"></div>
 <div class="drawer" id="main-drawer">
@@ -1095,6 +1314,16 @@ Deutschland</p>
     <div class="drawer-item" id="drawer-item-practice" onclick="drawerNav('practice')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
       Üben
+    </div>
+    <div class="drawer-divider"></div>
+    <div class="drawer-item" id="drawer-item-nachrichten" onclick="closeDrawer();showScreen('screen-nachrichten')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      Nachrichten
+      <span class="nav-badge" id="nachrichten-badge" style="display:none;">0</span>
+    </div>
+    <div class="drawer-item" id="drawer-item-groups" onclick="closeDrawer();showScreen('screen-groups')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      Gruppen
     </div>
     <div class="drawer-divider"></div>
     <div class="drawer-item" onclick="closeDrawer();openSettingsModal()">
@@ -1811,9 +2040,12 @@ Deutschland</p>
     <input class="form-input" id="editor-catalog-desc" placeholder="Kurze Beschreibung">
   </div>
 
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:8px;">
     <div class="label" style="margin:0;">Fragen (<span id="editor-q-count">0</span>)</div>
-    <button class="btn btn-primary" style="width:auto;padding:8px 16px;font-size:.83rem;" onclick="showQuestionForm()">+ Frage</button>
+    <div style="display:flex;gap:8px;">
+      <button class="btn btn-secondary" style="width:auto;padding:8px 14px;font-size:.83rem;" onclick="ocrOpen({target:'catalog'})">📷 Karteikarten</button>
+      <button class="btn btn-primary" style="width:auto;padding:8px 16px;font-size:.83rem;" onclick="showQuestionForm()">+ Frage</button>
+    </div>
   </div>
   <div class="editor-q-list" id="editor-q-list"></div>
 
@@ -2291,6 +2523,10 @@ async function applyFirebaseCorrections() {
 }
 
 let editingCatalog = null;
+// Gesetzt, solange der Katalog-Editor ein GRUPPENQUIZ bearbeitet statt eines
+// eigenen Katalogs. saveCatalog() und cancelEditor() verzweigen darauf, damit
+// der Editor nicht dupliziert werden muss.  { gid, qid|null }
+let editingGroupCtx = null;
 
 // ═══════════════════════════════════════════════════════
 // SCREEN / TAB HELPERS
@@ -2301,7 +2537,9 @@ function showScreen(id) {
   window.scrollTo(0, 0);
   const noHomeBtn = ['screen-home','screen-auth','screen-loading','screen-handover','screen-quiz','screen-round-result','screen-challenger-game'];
   document.getElementById('global-home-btn').style.display = noHomeBtn.includes(id) ? 'none' : 'block';
-  if (id === 'screen-friends') renderFriendsList();
+  if (id === 'screen-friends')     renderFriendsList();
+  if (id === 'screen-groups')      renderGroupsList();
+  if (id === 'screen-nachrichten') renderNachrichten();
 }
 
 const MODE_TABS = ['solo','quickduel','duel','lokal','challenger'];
@@ -3281,6 +3519,16 @@ function stripAnswerHint(q) {
 async function loadQuestions() {
   const src   = G.mode === 'solo' ? G.source    : G.dSource;
   const catId = G.mode === 'solo' ? G.catalogId : G.dCatalogId;
+  // Gruppenquiz: catId ist eine "gq:<gid>:<qid>"-Referenz, keine Katalog-ID.
+  if (src === 'groupquiz') {
+    const quiz = await gResolveQuiz(catId);
+    if (!quiz || !(quiz.questions || []).length) throw new Error('Gruppenquiz leer');
+    const pool = G.usedInDuel.size > 0
+      ? quiz.questions.filter(q => !G.usedInDuel.has(q.question.slice(0, 80)))
+      : quiz.questions;
+    return [...(pool.length >= PER_ROUND ? pool : quiz.questions)]
+      .sort(() => Math.random() - .5).slice(0, PER_ROUND);
+  }
   if (src === 'catalog') {
     const cat = getCatalogs().find(c => c.id === catId);
     if (!cat || !cat.questions.length) throw new Error('Katalog leer');
@@ -4943,6 +5191,7 @@ function playCatalog(id) {
 }
 
 function openNewCatalog() {
+  editingGroupCtx = null;
   editingCatalog = { id: 'cat_' + Date.now(), name: '', desc: '', questions: [] };
   document.getElementById('editor-catalog-name').value = '';
   document.getElementById('editor-catalog-desc').value = '';
@@ -4954,6 +5203,7 @@ function openNewCatalog() {
 function editCatalog(id) {
   const cat = getCatalogs().find(c => c.id === id);
   if (!cat) return;
+  editingGroupCtx = null;
   editingCatalog = JSON.parse(JSON.stringify(cat));
   document.getElementById('editor-catalog-name').value = cat.name;
   document.getElementById('editor-catalog-desc').value = cat.desc || '';
@@ -4969,7 +5219,15 @@ function deleteCatalog(id) {
   showToast('Katalog gelöscht', 'error');
 }
 
-function cancelEditor() { showScreen('screen-home'); switchTab('catalog'); }
+function cancelEditor() {
+  if (editingGroupCtx) {
+    const gid = editingGroupCtx.gid;
+    editingGroupCtx = null;
+    openGroup(gid);
+    return;
+  }
+  showScreen('screen-home'); switchTab('catalog');
+}
 
 function renderEditorQList() {
   document.getElementById('editor-q-count').textContent = editingCatalog.questions.length;
@@ -5044,6 +5302,13 @@ function saveCatalog() {
   if (!editingCatalog.questions.length)  { showToast('Mindestens eine Frage erforderlich', 'error'); return; }
   editingCatalog.name = name;
   editingCatalog.desc = document.getElementById('editor-catalog-desc').value.trim();
+  // Gruppenquiz: nach Firebase statt in den localStorage-Katalog.
+  if (editingGroupCtx) {
+    const ctx = editingGroupCtx;
+    editingGroupCtx = null;
+    gWriteQuiz({ name, desc: editingCatalog.desc, questions: editingCatalog.questions }, ctx.qid);
+    return;
+  }
   const cats = getCatalogs();
   const idx  = cats.findIndex(c => c.id === editingCatalog.id);
   if (idx >= 0) cats[idx] = editingCatalog; else cats.push(editingCatalog);
@@ -5283,6 +5548,7 @@ function onUserLoggedIn() {
   const badge = document.getElementById('user-badge');
   if (badge) { badge.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>' + esc(currentUser.username) + '</span>'; badge.style.display = 'inline-flex'; }
   startChallengeListener();
+  startMessageListeners();
   applyFirebaseCorrections();
   // Only navigate if still on auth screen
   if (document.getElementById('screen-auth').classList.contains('active')) {
@@ -5302,6 +5568,8 @@ function onUserLoggedOut() {
     try { fbDB.ref('challenges/' + (currentUser?.uid || '')).off('child_added'); } catch {}
     challengeDbListener = null;
   }
+  stopMessageListeners();
+  gState.groups = []; gState.current = null; gState.currentId = null;
   // Gast- oder Offline-Modus schützen – nicht zurück zum Auth-Screen
   if (guestMode) return;
   if (isOffline()) { startOfflineSession(); return; }
@@ -6113,6 +6381,1061 @@ async function declineChallenge() {
   await fbDB.ref('rooms/' + data.roomCode).remove().catch(()=>{});
   pendingChallenge = null;
   showToast('Herausforderung abgelehnt', '');
+}
+
+// ═══════════════════════════════════════════════════════
+// KARTEIKARTEN FOTOGRAFIEREN (Handschrifterkennung)
+// ═══════════════════════════════════════════════════════
+// Bewusst KEIN klassisches OCR (Tesseract o.ae.): Diese Bibliotheken sind auf
+// Druckschrift trainiert und scheitern an Handschrift. Ein Sprachmodell mit
+// Bildeingabe liest die Karte UND strukturiert sie in einem Schritt - aus
+// "Frage: ... / Antwort: ..." wird direkt eine fertige Quizfrage.
+
+const OCR_TAGESLIMIT = 20;   // Fotos pro Tag und Geraet ueber den Zentralkey.
+                             // 0 = aus. Der Zaehler liegt lokal, ist also
+                             // umgehbar - er bremst Versehen, keinen Vorsatz.
+const OCR_MAX_KANTE  = 1600; // Bilder werden vorher verkleinert. Ein 12-MP-Foto
+                             // kostet ein Vielfaches an Tokens, ohne dass die
+                             // Erkennung besser wuerde.
+
+const OCR = { ctx: null, dataUrl: null, b64: null, cards: [], keyData: null, eigen: false };
+
+// Wichtig: getEffectiveApiKey() bevorzugt den ZENTRALKEY vor dem persoenlichen.
+// Ein blosses "hat einen eigenen Key hinterlegt" reicht als Ausnahme vom
+// Tageslimit also nicht - verbraucht wuerde trotzdem der zentrale. Deshalb wird
+// hier verglichen, welcher Schluessel tatsaechlich zum Zug kommt.
+function ocrKontingent() {
+  if (!OCR_TAGESLIMIT || OCR.eigen) return { rest: Infinity, limitiert: false };
+  let s = {};
+  try { s = JSON.parse(localStorage.getItem('sd_ocr_count') || '{}'); } catch {}
+  const heute = new Date().toISOString().slice(0, 10);
+  const n = s.date === heute ? (s.n || 0) : 0;
+  return { rest: Math.max(0, OCR_TAGESLIMIT - n), limitiert: true, heute, n };
+}
+function ocrVerbrauchen() {
+  const k = ocrKontingent();
+  if (!k.limitiert) return;
+  localStorage.setItem('sd_ocr_count', JSON.stringify({ date: k.heute, n: k.n + 1 }));
+}
+
+async function ocrOpen(ctx) {
+  if (isOffline?.()) { showToast('✈️ Dafür brauchst du eine Internetverbindung', 'error'); return; }
+  OCR.ctx = ctx;
+  // Schluessel gleich hier aufloesen, nicht erst nach dem Fotografieren -
+  // sonst macht jemand erst ein Foto und erfaehrt dann, dass es nicht geht.
+  OCR.keyData = await getEffectiveApiKey();
+  if (!OCR.keyData) {
+    showToast('Dafür wird ein API-Schlüssel gebraucht', 'error');
+    openApiKeyModal();
+    return;
+  }
+  OCR.eigen = OCR.keyData.key === localStorage.getItem('sd_api_key');
+  document.getElementById('ocr-target-hint').textContent =
+    ctx.target === 'group' ? 'Die erkannten Fragen kommen in ein Quiz dieser Gruppe.'
+                           : 'Die erkannten Fragen werden an den Katalog angehängt.';
+  ocrReset();
+  document.getElementById('modal-ocr').classList.remove('hidden');
+}
+function ocrClose() {
+  document.getElementById('modal-ocr').classList.add('hidden');
+  OCR.dataUrl = OCR.b64 = null; OCR.cards = [];
+}
+function ocrReset() {
+  OCR.dataUrl = OCR.b64 = null; OCR.cards = [];
+  document.getElementById('ocr-file').value = '';
+  document.getElementById('ocr-step-pick').style.display = '';
+  document.getElementById('ocr-step-preview').style.display = 'none';
+  document.getElementById('ocr-step-busy').style.display = 'none';
+  document.getElementById('ocr-step-review').style.display = 'none';
+  const k = ocrKontingent();
+  document.getElementById('ocr-quota-hint').textContent =
+    k.limitiert ? 'Noch ' + k.rest + ' von ' + OCR_TAGESLIMIT + ' Fotos heute' : '';
+}
+
+// Verkleinern und als JPEG kodieren. Gibt { dataUrl, b64 } zurueck.
+function ocrBildVerkleinern(file) {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      const s = Math.min(1, OCR_MAX_KANTE / Math.max(img.width, img.height));
+      const c = document.createElement('canvas');
+      c.width = Math.round(img.width * s); c.height = Math.round(img.height * s);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      const dataUrl = c.toDataURL('image/jpeg', 0.85);
+      resolve({ dataUrl, b64: dataUrl.split(',')[1] });
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Bild nicht lesbar')); };
+    img.src = url;
+  });
+}
+
+async function ocrPickFile(input) {
+  const file = input.files?.[0];
+  if (!file) return;
+  const k = ocrKontingent();
+  if (k.rest <= 0) {
+    showToast('Tageslimit erreicht. Morgen wieder – oder hinterlege einen eigenen API-Schlüssel.', 'error');
+    return;
+  }
+  try {
+    const { dataUrl, b64 } = await ocrBildVerkleinern(file);
+    OCR.dataUrl = dataUrl; OCR.b64 = b64;
+    document.getElementById('ocr-preview').src = dataUrl;
+    document.getElementById('ocr-step-pick').style.display = 'none';
+    document.getElementById('ocr-step-preview').style.display = '';
+  } catch (e) {
+    showToast('Bild konnte nicht gelesen werden', 'error');
+  }
+}
+
+// Der Prompt traegt dieselben Qualitaetsregeln, die wir beim Durchgang durch die
+// Fragenbank erarbeitet haben. Ohne sie erzeugt ein Modell zuverlaessig genau
+// die Muster, die wir dort muehsam entfernt haben: die richtige Antwort am
+// laengsten, Klammerzusaetze nur bei ihr, Distraktoren die sich selbst verraten.
+const OCR_PROMPT = `Du bekommst das Foto einer oder mehrerer handgeschriebener Karteikarten auf Deutsch.
+
+AUFGABE
+1. Lies die Handschrift so genau wie möglich.
+2. Erkenne, wie viele einzelne Karten bzw. Frage-Antwort-Paare auf dem Bild sind.
+3. Mache aus jeder Karte eine Multiple-Choice-Frage mit genau vier Optionen.
+
+ZWEI FÄLLE
+- Stehen auf der Karte bereits vier Antwortmöglichkeiten (z.B. a/b/c/d) und ist eine als richtig markiert (unterstrichen, angekreuzt, abgehakt): Übernimm sie WORTGETREU. Erfinde nichts dazu.
+- Steht nur eine Antwort da: Übernimm sie als richtige Antwort und erfinde drei falsche dazu.
+
+REGELN FÜR ERFUNDENE FALSCHE ANTWORTEN
+- Sie müssen eindeutig falsch sein. Prüfe jede: Wenn sie auch zutreffen könnte, ist die Frage unlösbar.
+- Sie müssen ungefähr gleich lang sein wie die richtige Antwort. Die richtige Antwort darf nicht daran erkennbar sein, dass sie mehr Text hat.
+- Keine Option darf sich selbst entlarven ("gibt es nicht", offensichtlich Absurdes neben ernsthaften Antworten).
+- Klammerzusätze entweder bei allen vier Optionen oder bei keiner. Trägt nur die richtige eine Klammer, verrät das die Antwort.
+- Gute falsche Antworten sind typische Verwechslungen und häufige Fehler, keine Fantasiebegriffe.
+
+WEITERES
+- Setze "correct" auf den 0-basierten Index der richtigen Antwort und variiere ihn über die Karten.
+- "explanation": ein kurzer Satz, warum die Antwort richtig ist. Steht auf der Karte selbst eine Begründung, nimm diese.
+- Echte Umlaute verwenden (ä ö ü ß), niemals ae/oe/ue/ss.
+- Ist eine Stelle schwer zu lesen, rate trotzdem plausibel und trage sie in "unsicher" ein.
+- "unsicher": Liste der Wörter, bei denen du dir beim Lesen nicht sicher warst. Leeres Array, wenn alles klar war.
+- "erfunden": true, wenn du die falschen Antworten selbst erzeugt hast, false wenn sie auf der Karte standen.
+
+Antworte NUR mit einem JSON-Array, ohne Markdown und ohne Vorrede:
+[{"question":"...","options":["...","...","...","..."],"correct":0,"explanation":"...","topic":"...","unsicher":["..."],"erfunden":true}]
+
+Ist auf dem Bild keine lesbare Karteikarte zu erkennen, antworte mit: []`;
+
+async function ocrRecognize() {
+  if (!OCR.b64) return;
+  const keyData = OCR.keyData || await getEffectiveApiKey();
+  if (!keyData) { ocrClose(); openApiKeyModal(); showToast('Dafür wird ein API-Schlüssel gebraucht', 'error'); return; }
+
+  document.getElementById('ocr-step-preview').style.display = 'none';
+  document.getElementById('ocr-step-busy').style.display = '';
+
+  try {
+    const text = await ocrModellFragen(keyData, OCR.b64);
+    const cleaned = String(text).trim().replace(/```json|```/g, '').trim();
+    const a = cleaned.indexOf('['), b = cleaned.lastIndexOf(']');
+    const parsed = JSON.parse((a !== -1 && b !== -1) ? cleaned.slice(a, b + 1) : cleaned);
+    if (!Array.isArray(parsed)) throw new Error('Unerwartete Antwort');
+
+    OCR.cards = parsed
+      .filter(q => q && typeof q.question === 'string' && Array.isArray(q.options) && q.options.length === 4)
+      .map(q => ({
+        question: String(q.question).trim(),
+        options: q.options.map(o => String(o).trim()),
+        correct: Math.max(0, Math.min(3, parseInt(q.correct, 10) || 0)),
+        explanation: String(q.explanation || '').trim(),
+        topic: String(q.topic || '').trim(),
+        unsicher: Array.isArray(q.unsicher) ? q.unsicher.map(String) : [],
+        erfunden: !!q.erfunden,
+        nehmen: true,
+      }));
+
+    ocrVerbrauchen();
+
+    if (!OCR.cards.length) {
+      document.getElementById('ocr-step-busy').style.display = 'none';
+      document.getElementById('ocr-step-pick').style.display = '';
+      ocrReset();
+      showToast('Auf dem Foto war keine lesbare Karte zu erkennen', 'error');
+      return;
+    }
+    ocrRenderReview();
+  } catch (e) {
+    document.getElementById('ocr-step-busy').style.display = 'none';
+    document.getElementById('ocr-step-preview').style.display = '';
+    showToast('Erkennung fehlgeschlagen: ' + e.message, 'error');
+  }
+}
+
+async function ocrModellFragen(keyData, b64) {
+  const { key: apiKey, provider } = keyData;
+  if (provider === 'gemini' || !provider) {
+    const res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + apiKey, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [
+          { text: OCR_PROMPT },
+          { inline_data: { mime_type: 'image/jpeg', data: b64 } },
+        ]}],
+        generationConfig: { maxOutputTokens: 8192 },
+      }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err?.error?.message || 'Gemini-Fehler ' + res.status);
+    }
+    const data = await res.json();
+    const t = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    if (!t) throw new Error('Leere Antwort');
+    return t;
+  }
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
+    body: JSON.stringify({
+      model: 'claude-haiku-4-5', max_tokens: 4000,
+      messages: [{ role: 'user', content: [
+        { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } },
+        { type: 'text', text: OCR_PROMPT },
+      ]}],
+    }),
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err?.error?.message || 'Anthropic-Fehler ' + res.status);
+  }
+  const data = await res.json();
+  return data.content.map(i => i.text || '').join('');
+}
+
+// Unsichere Woerter im Fragetext hervorheben, damit man beim Gegenlesen weiss,
+// wo man hinschauen muss.
+function ocrMarkiere(text, unsicher) {
+  let out = esc(text);
+  (unsicher || []).forEach(w => {
+    const t = String(w).trim();
+    if (t.length < 2) return;
+    const re = new RegExp('(' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    out = out.replace(re, '<mark style="background:rgba(212,175,55,.25);color:inherit;border-radius:3px;padding:0 2px;">$1</mark>');
+  });
+  return out;
+}
+
+function ocrRenderReview() {
+  document.getElementById('ocr-step-busy').style.display = 'none';
+  document.getElementById('ocr-step-review').style.display = '';
+  const box = document.getElementById('ocr-cards');
+  box.innerHTML = OCR.cards.map((c, i) => `
+    <div class="card" style="margin-bottom:12px;padding:14px;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+        <input type="checkbox" ${c.nehmen ? 'checked' : ''} onchange="OCR.cards[${i}].nehmen=this.checked;ocrUpdateApplyBtn()" style="width:18px;height:18px;">
+        <div style="flex:1;font-size:.72rem;font-family:'Space Mono',monospace;letter-spacing:.05em;color:var(--muted);">
+          KARTE ${i + 1}${c.erfunden ? ' · FALSCHE ANTWORTEN ERGÄNZT' : ' · VON DER KARTE'}
+        </div>
+      </div>
+      ${c.unsicher.length ? `<div style="font-size:.74rem;color:var(--gold);margin-bottom:8px;">Unsicher gelesen: ${esc(c.unsicher.join(', '))}</div>` : ''}
+      <div style="font-size:.75rem;color:var(--muted);margin-bottom:3px;">Frage</div>
+      <div style="font-size:.88rem;margin-bottom:4px;">${ocrMarkiere(c.question, c.unsicher)}</div>
+      <textarea class="form-input" rows="2" style="margin-bottom:10px;font-size:.85rem;"
+        oninput="OCR.cards[${i}].question=this.value">${esc(c.question)}</textarea>
+      <div style="font-size:.75rem;color:var(--muted);margin-bottom:5px;">Antworten – Punkt = richtig</div>
+      ${c.options.map((o, j) => `
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+          <input type="radio" name="ocr-c-${i}" ${j === c.correct ? 'checked' : ''}
+            onchange="OCR.cards[${i}].correct=${j}" style="width:16px;height:16px;flex-shrink:0;">
+          <input class="form-input" value="${esc(o)}" style="flex:1;font-size:.85rem;padding:7px 10px;"
+            oninput="OCR.cards[${i}].options[${j}]=this.value">
+        </div>`).join('')}
+      <div style="font-size:.75rem;color:var(--muted);margin:8px 0 3px;">Erklärung</div>
+      <input class="form-input" value="${esc(c.explanation)}" style="font-size:.85rem;"
+        oninput="OCR.cards[${i}].explanation=this.value">
+    </div>`).join('');
+  ocrUpdateApplyBtn();
+}
+
+function ocrUpdateApplyBtn() {
+  const n = OCR.cards.filter(c => c.nehmen).length;
+  const b = document.getElementById('ocr-apply-btn');
+  b.textContent = n ? 'Übernehmen (' + n + ')' : 'Nichts ausgewählt';
+  b.disabled = n === 0;
+}
+
+async function ocrApply() {
+  const nehmen = OCR.cards.filter(c => c.nehmen);
+  if (!nehmen.length) return;
+  const fertig = nehmen
+    .filter(c => c.question.trim() && c.options.every(o => o.trim()))
+    .map(c => ({
+      question: c.question.trim(),
+      options: c.options.map(o => o.trim()),
+      correct: c.correct,
+      explanation: c.explanation.trim(),
+      topic: c.topic || '',
+    }));
+  const unvollstaendig = nehmen.length - fertig.length;
+  if (!fertig.length) { showToast('Bitte Frage und alle vier Antworten ausfüllen', 'error'); return; }
+
+  if (OCR.ctx?.target === 'group') {
+    // Neues Quiz in der Gruppe anlegen. Ueber gWriteQuiz, damit dieselbe
+    // Rechtepruefung und derselbe Speicherweg gelten wie beim Datei-Import.
+    const name = prompt('Wie soll das Quiz heißen?', 'Karteikarten');
+    if (name === null) return;
+    ocrClose();
+    await gWriteQuiz({ name: name.trim() || 'Karteikarten', desc: 'Aus Karteikarten eingelesen', questions: fertig });
+  } else {
+    // In den offenen Katalog-Editor anhaengen.
+    if (!editingCatalog) { showToast('Kein Katalog geöffnet', 'error'); return; }
+    editingCatalog.questions.push(...fertig);
+    renderEditorQList();
+    ocrClose();
+    showToast(fertig.length + ' Frage(n) übernommen ✓', 'success');
+  }
+  if (unvollstaendig > 0) showToast(unvollstaendig + ' Karte(n) übersprungen – unvollständig', '');
+}
+
+// ═══════════════════════════════════════════════════════
+// GRUPPEN
+// ═══════════════════════════════════════════════════════
+// Datenmodell in Firebase:
+//   groups/<gid>/          name, desc, icon, createdAt, createdBy, leaderboard
+//   groups/<gid>/members/<uid>   { name, role:'admin'|'member', joinedAt }
+//   groups/<gid>/quizzes/<qid>   { name, desc, questions[], createdBy, updatedAt }
+//   groups/<gid>/scores/<qid>/<uid>  { level, name, ts }
+//   groupInvites/<uid>/<gid>     { groupName, fromUid, fromUsername, sentAt }
+//   userGroups/<uid>/<gid> = true
+//
+// userGroups ist ein reiner Index. Ohne ihn muesste man alle Gruppen laden und
+// nach der eigenen uid durchsuchen - dasselbe Spiegel-Muster wie bei friends/.
+//
+// Ein Gruppenquiz wird ausserhalb der Gruppe ueber eine zusammengesetzte
+// Referenz angesprochen: "gq:<gid>:<qid>". Dadurch kann loadQuestions() das
+// Quiz allein aus der Referenz aufloesen - der Duellraum braucht kein
+// zusaetzliches Feld, und die vorhandene roundSettings-Mechanik bleibt heil.
+
+const gState = { groups: [], current: null, currentId: null, inviteBusy: false };
+const gQuizCache = {};          // "gq:gid:qid" -> Quizobjekt
+let gSearchTimer = null;
+let _gInviteListener = null, _gFriendReqListener = null;
+
+const gQuizRef  = (gid, qid) => 'gq:' + gid + ':' + qid;
+const gParseRef = ref => {
+  const m = /^gq:([^:]+):([^:]+)$/.exec(String(ref || ''));
+  return m ? { gid: m[1], qid: m[2] } : null;
+};
+
+function gCloseModal(id) { document.getElementById(id).classList.add('hidden'); }
+function gPickIcon(el) {
+  el.parentElement.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+}
+function gPickLb(el) {
+  el.parentElement.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+}
+function gIsAdmin(group) {
+  const g = group || gState.current;
+  if (!g || !currentUser) return false;
+  return g.members?.[currentUser.uid]?.role === 'admin';
+}
+
+// ── Liste der eigenen Gruppen ────────────────────────────
+async function renderGroupsList() {
+  const cont = document.getElementById('groups-content');
+  if (!currentUser || !fbDB) {
+    cont.innerHTML = '<div class="empty-state"><div class="es-icon">🔒</div>Für Gruppen musst du angemeldet sein.</div>';
+    return;
+  }
+  cont.innerHTML = '<div class="loading-state"><div class="spinner"></div>Laden…</div>';
+  try {
+    const idxSnap = await fbDB.ref('userGroups/' + currentUser.uid).once('value');
+    const ids = Object.keys(idxSnap.val() || {});
+    const groups = [];
+    for (const gid of ids) {
+      const s = await fbDB.ref('groups/' + gid).once('value');
+      const g = s.val();
+      // Verwaiste Indexeintraege aufraeumen: Gruppe geloescht, Index geblieben.
+      if (!g || !g.members?.[currentUser.uid]) {
+        fbDB.ref('userGroups/' + currentUser.uid + '/' + gid).remove().catch(() => {});
+        continue;
+      }
+      groups.push({ id: gid, ...g });
+    }
+    groups.sort((a, b) => (a.name || '').localeCompare(b.name || '', 'de'));
+    gState.groups = groups;
+
+    if (!groups.length) {
+      cont.innerHTML = '<div class="empty-state"><div class="es-icon">👥</div>Du bist noch in keiner Gruppe.<br>Erstelle eine oder warte auf eine Einladung.</div>';
+      return;
+    }
+    cont.innerHTML = '<div class="catalog-list">' + groups.map(g => {
+      const n  = Object.keys(g.members || {}).length;
+      const qn = Object.keys(g.quizzes || {}).length;
+      const admin = g.members?.[currentUser.uid]?.role === 'admin';
+      return `<div class="catalog-item" onclick="openGroup('${esc(g.id)}')" style="cursor:pointer;">
+        <div style="font-size:1.4rem;margin-right:4px;">${esc(g.icon || '👥')}</div>
+        <div style="flex:1;min-width:0;">
+          <div class="ci-name">${esc(g.name || 'Gruppe')}</div>
+          <div class="ci-meta">${n} Mitglied${n === 1 ? '' : 'er'} · ${qn} Quiz${qn === 1 ? '' : 'ze'}</div>
+        </div>
+        ${admin ? '<span class="role-pill admin">ADMIN</span>' : ''}
+        <div style="color:var(--muted);margin-left:6px;">›</div>
+      </div>`;
+    }).join('') + '</div>';
+  } catch (e) {
+    cont.innerHTML = '<div class="empty-state"><div class="es-icon">⚠️</div>Gruppen konnten nicht geladen werden.</div>';
+  }
+}
+
+function gOpenCreateModal() {
+  if (!currentUser || !fbDB) { showToast('Dafür musst du angemeldet sein', 'error'); return; }
+  document.getElementById('gc-name').value = '';
+  document.getElementById('gc-desc').value = '';
+  gPickIcon(document.querySelector('#gc-icon-pills .pill'));
+  document.getElementById('modal-group-create').classList.remove('hidden');
+}
+
+async function gCreateGroup() {
+  const name = document.getElementById('gc-name').value.trim();
+  if (!name) { showToast('Bitte einen Namen eingeben', 'error'); return; }
+  const desc = document.getElementById('gc-desc').value.trim();
+  const icon = document.querySelector('#gc-icon-pills .pill.active')?.dataset.val || '👥';
+  try {
+    const gid = fbDB.ref('groups').push().key;
+    await fbDB.ref('groups/' + gid).set({
+      name, desc, icon,
+      createdAt: Date.now(), createdBy: currentUser.uid,
+      leaderboard: true,
+      members: { [currentUser.uid]: { name: myDisplayName(), role: 'admin', joinedAt: Date.now() } },
+    });
+    await fbDB.ref('userGroups/' + currentUser.uid + '/' + gid).set(true);
+    gCloseModal('modal-group-create');
+    showToast('Gruppe erstellt ✓', 'success');
+    await renderGroupsList();
+    openGroup(gid);
+  } catch (e) {
+    showToast('Gruppe konnte nicht erstellt werden', 'error');
+  }
+}
+
+// ── Eine Gruppe ──────────────────────────────────────────
+async function openGroup(gid) {
+  gState.currentId = gid;
+  gState.current = null;
+  showScreen('screen-group-detail');
+  document.getElementById('gd-title').textContent = 'Gruppe';
+  document.getElementById('gd-subtitle').textContent = '';
+  document.getElementById('gd-content').innerHTML = '<div class="loading-state"><div class="spinner"></div>Laden…</div>';
+  try {
+    const snap = await fbDB.ref('groups/' + gid).once('value');
+    const g = snap.val();
+    if (!g || !g.members?.[currentUser?.uid]) {
+      document.getElementById('gd-content').innerHTML =
+        '<div class="empty-state"><div class="es-icon">🚫</div>Du bist kein Mitglied dieser Gruppe.</div>';
+      return;
+    }
+    gState.current = { id: gid, ...g };
+    // Quizze in den Cache, damit loadQuestions() sie ohne weiteren Roundtrip findet
+    Object.entries(g.quizzes || {}).forEach(([qid, q]) => { gQuizCache[gQuizRef(gid, qid)] = q; });
+    renderGroupDetail();
+  } catch (e) {
+    document.getElementById('gd-content').innerHTML =
+      '<div class="empty-state"><div class="es-icon">⚠️</div>Gruppe konnte nicht geladen werden.</div>';
+  }
+}
+
+function renderGroupDetail() {
+  const g = gState.current;
+  if (!g) return;
+  const admin = gIsAdmin(g);
+  const members = Object.entries(g.members || {});
+  const quizzes = Object.entries(g.quizzes || {});
+
+  document.getElementById('gd-title').textContent = (g.icon || '👥') + ' ' + (g.name || 'Gruppe');
+  document.getElementById('gd-subtitle').textContent = g.desc || '';
+  document.getElementById('gd-settings-btn').style.display = admin ? '' : 'none';
+
+  const quizHtml = quizzes.length
+    ? '<div class="catalog-list">' + quizzes.map(([qid, q]) => {
+        const n = (q.questions || []).length;
+        return `<div class="catalog-item">
+          <div style="flex:1;min-width:0;">
+            <div class="ci-name">${esc(q.name || 'Quiz')}</div>
+            <div class="ci-meta">${n} Frage${n === 1 ? '' : 'n'}${q.desc ? ' · ' + esc(q.desc) : ''}</div>
+          </div>
+          <div class="catalog-item-actions">
+            <button class="icon-btn play" title="Üben" onclick="gPlayQuiz('${esc(qid)}')">▶</button>
+            <button class="icon-btn" title="Challenger" onclick="gChallengerQuiz('${esc(qid)}')">⭐</button>
+            ${admin ? `<button class="icon-btn" title="Bearbeiten" onclick="gEditQuiz('${esc(qid)}')">✎</button>
+            <button class="icon-btn del" title="Löschen" onclick="gDeleteQuiz('${esc(qid)}')">🗑</button>` : ''}
+          </div>
+        </div>`;
+      }).join('') + '</div>'
+    : `<div class="empty-state"><div class="es-icon">📝</div>Noch keine Quizze.${admin ? '<br>Lege das erste an.' : '<br>Nur Admins können Quizze anlegen.'}</div>`;
+
+  const memberHtml = members
+    .sort((a, b) => (a[1].role === b[1].role ? (a[1].name || '').localeCompare(b[1].name || '', 'de') : a[1].role === 'admin' ? -1 : 1))
+    .map(([uid, m]) => {
+      const isMe = uid === currentUser?.uid;
+      const canPromote = admin && !isMe && m.role !== 'admin';
+      const canDemote  = admin && !isMe && m.role === 'admin';
+      return `<div class="friend-item">
+        <div class="friend-name">${esc(m.name || 'Unbekannt')}${isMe ? ' <span style="color:var(--muted);font-weight:400;font-size:.8rem;">(du)</span>' : ''}</div>
+        <span class="role-pill ${m.role === 'admin' ? 'admin' : 'member'}">${m.role === 'admin' ? 'ADMIN' : 'MITGLIED'}</span>
+        ${!isMe && quizzes.length ? `<button class="icon-btn" title="Herausfordern" onclick="gChallengeMember('${esc(uid)}',this.dataset.n)" data-n="${esc(m.name || '')}">⚔️</button>` : ''}
+        ${canPromote ? `<button class="icon-btn" title="Zum Admin machen" onclick="gSetRole('${esc(uid)}','admin',this.dataset.n)" data-n="${esc(m.name || '')}">👑</button>` : ''}
+        ${canDemote ? `<button class="icon-btn" title="Adminrechte entziehen" onclick="gSetRole('${esc(uid)}','member',this.dataset.n)" data-n="${esc(m.name || '')}">↓</button>` : ''}
+        ${admin && !isMe ? `<button class="icon-btn del" title="Entfernen" onclick="gRemoveMember('${esc(uid)}',this.dataset.n)" data-n="${esc(m.name || '')}">✕</button>` : ''}
+      </div>`;
+    }).join('');
+
+  document.getElementById('gd-content').innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <div class="label" style="margin:0;">Quizze (${quizzes.length})</div>
+      ${admin ? '<button class="btn btn-primary" style="width:auto;padding:8px 15px;font-size:.82rem;" onclick="gOpenAddQuizModal()">+ Quiz hinzufügen</button>' : ''}
+    </div>
+    ${quizHtml}
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin:22px 0 10px;">
+      <div class="label" style="margin:0;">Mitglieder (${members.length})</div>
+      ${admin ? '<button class="btn btn-secondary" style="width:auto;padding:8px 15px;font-size:.82rem;" onclick="gOpenInviteModal()">+ Einladen</button>' : ''}
+    </div>
+    <div class="card">${memberHtml}</div>
+
+    ${g.leaderboard !== false && quizzes.length ? `
+      <div class="label" style="margin:22px 0 10px;">🏆 Challenger-Rangliste</div>
+      <div class="card">
+        <select class="form-input" id="gd-lb-pick" onchange="gRenderLeaderboard(this.value)" style="margin-bottom:12px;">
+          ${quizzes.map(([qid, q]) => `<option value="${esc(qid)}">${esc(q.name || 'Quiz')}</option>`).join('')}
+        </select>
+        <div id="gd-lb-body"></div>
+      </div>` : ''}
+
+    <button class="btn btn-secondary" style="margin-top:24px;" onclick="gLeaveGroup()">Gruppe verlassen</button>
+  `;
+
+  if (g.leaderboard !== false && quizzes.length) gRenderLeaderboard(quizzes[0][0]);
+}
+
+// ── Einladen ─────────────────────────────────────────────
+function gOpenInviteModal() {
+  document.getElementById('gi-groupname').textContent = 'in „' + (gState.current?.name || '') + '"';
+  document.getElementById('gi-search').value = '';
+  document.getElementById('gi-results').innerHTML =
+    '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:14px 0;">Namen eingeben, um zu suchen.</div>';
+  document.getElementById('modal-group-invite').classList.remove('hidden');
+}
+
+function gSearchDebounced() {
+  clearTimeout(gSearchTimer);
+  gSearchTimer = setTimeout(gSearchUsers, 350);
+}
+
+// Praefixsuche ueber usernames/. Die Freundessuche (searchFriend) kann nur
+// exakte Treffer, weil sie den Key direkt liest. Fuer Einladungen ist das zu
+// unbequem - man muesste den Namen zeichengenau kennen.
+async function gSearchUsers() {
+  const box = document.getElementById('gi-results');
+  const raw = document.getElementById('gi-search').value.trim();
+  if (raw.length < 2) {
+    box.innerHTML = '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:14px 0;">Mindestens zwei Zeichen.</div>';
+    return;
+  }
+  const p = raw.toLowerCase();
+  box.innerHTML = '<div class="loading-state"><div class="spinner"></div>Suchen…</div>';
+  try {
+    const snap = await fbDB.ref('usernames').orderByKey().startAt(p).endAt(p + '').limitToFirst(20).once('value');
+    const hits = Object.entries(snap.val() || {});
+    const members = gState.current?.members || {};
+    if (!hits.length) {
+      box.innerHTML = '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:14px 0;">Niemanden gefunden.</div>';
+      return;
+    }
+    box.innerHTML = hits.map(([lname, uid]) => {
+      if (uid === currentUser?.uid) return '';
+      const drin = !!members[uid];
+      return `<div class="friend-item">
+        <div class="friend-name">${esc(lname)}</div>
+        ${drin
+          ? '<span class="role-pill member">SCHON DABEI</span>'
+          : `<button class="btn btn-primary" style="width:auto;padding:7px 13px;font-size:.82rem;" onclick="gInvite('${esc(uid)}',this.dataset.n,this)" data-n="${esc(lname)}">Einladen</button>`}
+      </div>`;
+    }).join('') || '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:14px 0;">Niemanden gefunden.</div>';
+  } catch (e) {
+    box.innerHTML = '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:14px 0;">Suche fehlgeschlagen.</div>';
+  }
+}
+
+async function gInvite(uid, name, btn) {
+  const g = gState.current;
+  if (!g || !gIsAdmin(g)) { showToast('Nur Admins können einladen', 'error'); return; }
+  if (btn) { btn.disabled = true; btn.textContent = '…'; }
+  try {
+    await fbDB.ref('groupInvites/' + uid + '/' + g.id).set({
+      groupName: g.name || 'Gruppe',
+      groupIcon: g.icon || '👥',
+      fromUid: currentUser.uid,
+      fromUsername: myDisplayName(),
+      sentAt: Date.now(),
+    });
+    if (btn) { btn.textContent = '✓ Eingeladen'; btn.classList.remove('btn-primary'); btn.classList.add('btn-secondary'); }
+    showToast(name + ' eingeladen ✓', 'success');
+  } catch (e) {
+    if (btn) { btn.disabled = false; btn.textContent = 'Einladen'; }
+    showToast('Einladung fehlgeschlagen', 'error');
+  }
+}
+
+async function gAcceptInvite(gid) {
+  try {
+    const snap = await fbDB.ref('groups/' + gid + '/name').once('value');
+    if (!snap.exists()) {
+      await fbDB.ref('groupInvites/' + currentUser.uid + '/' + gid).remove();
+      showToast('Diese Gruppe gibt es nicht mehr', 'error');
+      renderNachrichten(); return;
+    }
+    await fbDB.ref('groups/' + gid + '/members/' + currentUser.uid).set({
+      name: myDisplayName(), role: 'member', joinedAt: Date.now(),
+    });
+    await fbDB.ref('userGroups/' + currentUser.uid + '/' + gid).set(true);
+    await fbDB.ref('groupInvites/' + currentUser.uid + '/' + gid).remove();
+    showToast('Gruppe beigetreten ✓', 'success');
+    renderNachrichten();
+  } catch (e) {
+    showToast('Beitritt fehlgeschlagen', 'error');
+  }
+}
+
+async function gDeclineInvite(gid) {
+  try {
+    await fbDB.ref('groupInvites/' + currentUser.uid + '/' + gid).remove();
+    renderNachrichten();
+  } catch { /* egal */ }
+}
+
+// ── Rollen und Mitgliedschaft ────────────────────────────
+// Adminrechte zu vergeben ist bewusst ein eigener, bestaetigter Schritt.
+async function gSetRole(uid, role, name) {
+  const g = gState.current;
+  if (!g || !gIsAdmin(g)) return;
+  const frage = role === 'admin'
+    ? name + ' zum Admin machen?\n\nAls Admin kann ' + name + ' Quizze anlegen, bearbeiten und löschen, Mitglieder einladen und entfernen sowie weitere Admins ernennen.'
+    : name + ' die Adminrechte entziehen?';
+  if (!confirm(frage)) return;
+  try {
+    await fbDB.ref('groups/' + g.id + '/members/' + uid + '/role').set(role);
+    g.members[uid].role = role;
+    renderGroupDetail();
+    showToast(role === 'admin' ? name + ' ist jetzt Admin' : 'Adminrechte entzogen', 'success');
+  } catch { showToast('Änderung fehlgeschlagen', 'error'); }
+}
+
+async function gRemoveMember(uid, name) {
+  const g = gState.current;
+  if (!g || !gIsAdmin(g)) return;
+  if (!confirm(name + ' aus der Gruppe entfernen?')) return;
+  try {
+    await fbDB.ref('groups/' + g.id + '/members/' + uid).remove();
+    await fbDB.ref('userGroups/' + uid + '/' + g.id).remove();
+    delete g.members[uid];
+    renderGroupDetail();
+    showToast(name + ' entfernt', '');
+  } catch { showToast('Entfernen fehlgeschlagen', 'error'); }
+}
+
+async function gLeaveGroup() {
+  const g = gState.current;
+  if (!g) return;
+  const admins = Object.values(g.members || {}).filter(m => m.role === 'admin').length;
+  if (gIsAdmin(g) && admins === 1 && Object.keys(g.members || {}).length > 1) {
+    showToast('Du bist der einzige Admin. Ernenne erst jemanden anderen.', 'error');
+    return;
+  }
+  if (!confirm('Gruppe „' + (g.name || '') + '" wirklich verlassen?')) return;
+  // Vorher entscheiden, nicht nachher nachsehen: Sobald man sich ausgetragen
+  // hat, verweigern die Datenbankregeln das Lesen der Mitgliederliste - die
+  // Gruppe bliebe als unerreichbare Leiche samt Quizzen zurueck.
+  const alleine = Object.keys(g.members || {}).length <= 1;
+  try {
+    await fbDB.ref('userGroups/' + currentUser.uid + '/' + g.id).remove();
+    if (alleine) await fbDB.ref('groups/' + g.id).remove();
+    else         await fbDB.ref('groups/' + g.id + '/members/' + currentUser.uid).remove();
+    showToast('Gruppe verlassen', '');
+    showScreen('screen-groups');
+  } catch { showToast('Verlassen fehlgeschlagen', 'error'); }
+}
+
+// ── Gruppeneinstellungen ─────────────────────────────────
+function gOpenSettingsModal() {
+  const g = gState.current;
+  if (!g || !gIsAdmin(g)) return;
+  document.getElementById('gs-name').value = g.name || '';
+  document.getElementById('gs-desc').value = g.desc || '';
+  const on = g.leaderboard !== false;
+  document.querySelectorAll('#gs-lb-pills .pill').forEach(p =>
+    p.classList.toggle('active', p.dataset.val === (on ? 'on' : 'off')));
+  document.getElementById('modal-group-settings').classList.remove('hidden');
+}
+
+async function gSaveSettings() {
+  const g = gState.current;
+  if (!g || !gIsAdmin(g)) return;
+  const name = document.getElementById('gs-name').value.trim();
+  if (!name) { showToast('Bitte einen Namen eingeben', 'error'); return; }
+  const desc = document.getElementById('gs-desc').value.trim();
+  const lb = document.querySelector('#gs-lb-pills .pill.active')?.dataset.val !== 'off';
+  try {
+    await fbDB.ref('groups/' + g.id).update({ name, desc, leaderboard: lb });
+    Object.assign(g, { name, desc, leaderboard: lb });
+    gCloseModal('modal-group-settings');
+    renderGroupDetail();
+    showToast('Gespeichert ✓', 'success');
+  } catch { showToast('Speichern fehlgeschlagen', 'error'); }
+}
+
+async function gDeleteGroup() {
+  const g = gState.current;
+  if (!g || !gIsAdmin(g)) return;
+  if (!confirm('Gruppe „' + (g.name || '') + '" endgültig löschen?\n\nAlle Quizze und Ranglisten der Gruppe gehen dabei verloren. Das lässt sich nicht rückgängig machen.')) return;
+  try {
+    const uids = Object.keys(g.members || {});
+    await Promise.all(uids.map(u => fbDB.ref('userGroups/' + u + '/' + g.id).remove().catch(() => {})));
+    await Promise.all(uids.map(u => fbDB.ref('groupInvites/' + u + '/' + g.id).remove().catch(() => {})));
+    await fbDB.ref('groups/' + g.id).remove();
+    gCloseModal('modal-group-settings');
+    showToast('Gruppe gelöscht', 'error');
+    showScreen('screen-groups');
+  } catch { showToast('Löschen fehlgeschlagen', 'error'); }
+}
+
+// ── Quizze anlegen ───────────────────────────────────────
+function gOpenAddQuizModal() {
+  if (!gIsAdmin()) { showToast('Nur Admins können Quizze anlegen', 'error'); return; }
+  gAddQuizBack();
+  document.getElementById('modal-group-addquiz').classList.remove('hidden');
+}
+function gAddQuizBack() {
+  document.getElementById('gaq-choice').style.display = '';
+  document.getElementById('gaq-catalogs').style.display = 'none';
+}
+function gAddQuizShowCatalogs() {
+  const own = getCatalogs().filter(c => !c.builtin && (c.questions || []).length);
+  const box = document.getElementById('gaq-catalog-list');
+  box.innerHTML = own.length
+    ? own.map(c => `<div class="friend-item">
+        <div style="flex:1;min-width:0;">
+          <div class="friend-name">${esc(c.name)}</div>
+          <div class="friend-grade">${(c.questions || []).length} Fragen</div>
+        </div>
+        <button class="btn btn-primary" style="width:auto;padding:7px 13px;font-size:.82rem;" onclick="gAddQuizFromCatalog('${esc(c.id)}')">Übernehmen</button>
+      </div>`).join('')
+    : '<div class="empty-state" style="padding:20px 0;"><div class="es-icon">📦</div>Du hast noch keine eigenen Kataloge.</div>';
+  document.getElementById('gaq-choice').style.display = 'none';
+  document.getElementById('gaq-catalogs').style.display = '';
+}
+
+async function gAddQuizFromCatalog(catId) {
+  const cat = getCatalogs().find(c => c.id === catId);
+  if (!cat) { showToast('Katalog nicht gefunden', 'error'); return; }
+  await gWriteQuiz({ name: cat.name, desc: cat.desc || '', questions: cat.questions || [] });
+}
+
+async function gAddQuizFromFile(input) {
+  const file = input.files?.[0];
+  input.value = '';
+  if (!file) return;
+  try {
+    const text = await file.text();
+    const parsed = JSON.parse(text);
+    // Zwei Formate zulassen: rohes Array oder ein Katalogobjekt mit questions.
+    const arr = Array.isArray(parsed) ? parsed : parsed.questions;
+    if (!Array.isArray(arr)) throw new Error('Kein Fragen-Array gefunden');
+    const clean = arr.filter(q =>
+      q && typeof q.question === 'string' && Array.isArray(q.options) &&
+      q.options.length === 4 && Number.isInteger(q.correct) && q.correct >= 0 && q.correct <= 3);
+    if (!clean.length) throw new Error('Keine gültigen Fragen enthalten');
+    const verworfen = arr.length - clean.length;
+    await gWriteQuiz({
+      name: (!Array.isArray(parsed) && parsed.name) || file.name.replace(/\.json$/i, ''),
+      desc: (!Array.isArray(parsed) && parsed.desc) || '',
+      questions: clean,
+    });
+    if (verworfen > 0) showToast(verworfen + ' Frage(n) übersprungen – falsches Format', '');
+  } catch (e) {
+    showToast('Datei nicht lesbar: ' + e.message, 'error');
+  }
+}
+
+function gAddQuizEmpty() {
+  const name = prompt('Wie soll das Quiz heißen?');
+  if (name === null) return;
+  if (!name.trim()) { showToast('Bitte einen Namen eingeben', 'error'); return; }
+  gCloseModal('modal-group-addquiz');
+  // Leeres Quiz direkt im Editor oeffnen; gespeichert wird erst dort.
+  editingCatalog = { id: 'gq_new_' + Date.now(), name: name.trim(), desc: '', questions: [] };
+  editingGroupCtx = { gid: gState.currentId, qid: null };
+  document.getElementById('editor-catalog-name').value = name.trim();
+  document.getElementById('editor-catalog-desc').value = '';
+  renderEditorQList();
+  hideQuestionForm();
+  showScreen('screen-catalog-editor');
+}
+
+async function gWriteQuiz(quiz, qid) {
+  const gid = gState.currentId;
+  if (!gid || !gIsAdmin()) { showToast('Nur Admins können Quizze anlegen', 'error'); return; }
+  try {
+    const id = qid || fbDB.ref('groups/' + gid + '/quizzes').push().key;
+    await fbDB.ref('groups/' + gid + '/quizzes/' + id).set({
+      name: quiz.name || 'Quiz',
+      desc: quiz.desc || '',
+      questions: quiz.questions || [],
+      createdBy: currentUser.uid,
+      updatedAt: Date.now(),
+    });
+    gCloseModal('modal-group-addquiz');
+    showToast(qid ? 'Quiz gespeichert ✓' : 'Quiz hinzugefügt ✓', 'success');
+    await openGroup(gid);
+  } catch (e) {
+    showToast('Speichern fehlgeschlagen', 'error');
+  }
+}
+
+function gEditQuiz(qid) {
+  const g = gState.current;
+  if (!g || !gIsAdmin(g)) return;
+  const q = g.quizzes?.[qid];
+  if (!q) return;
+  editingCatalog = { id: 'gq_' + qid, name: q.name || '', desc: q.desc || '', questions: JSON.parse(JSON.stringify(q.questions || [])) };
+  editingGroupCtx = { gid: g.id, qid };
+  document.getElementById('editor-catalog-name').value = q.name || '';
+  document.getElementById('editor-catalog-desc').value = q.desc || '';
+  renderEditorQList();
+  hideQuestionForm();
+  showScreen('screen-catalog-editor');
+}
+
+async function gDeleteQuiz(qid) {
+  const g = gState.current;
+  if (!g || !gIsAdmin(g)) return;
+  const q = g.quizzes?.[qid];
+  if (!confirm('Quiz „' + (q?.name || '') + '" löschen?')) return;
+  try {
+    await fbDB.ref('groups/' + g.id + '/quizzes/' + qid).remove();
+    await fbDB.ref('groups/' + g.id + '/scores/' + qid).remove().catch(() => {});
+    showToast('Quiz gelöscht', 'error');
+    await openGroup(g.id);
+  } catch { showToast('Löschen fehlgeschlagen', 'error'); }
+}
+
+// ── Gruppenquizze spielen ────────────────────────────────
+// Aufloesung einer "gq:<gid>:<qid>"-Referenz. Erst der Cache, dann Firebase -
+// letzteres greift, wenn ein Duell aus einer Runde fortgesetzt wird, in der
+// die Gruppe nicht mehr offen ist.
+async function gResolveQuiz(refId) {
+  if (gQuizCache[refId]) return gQuizCache[refId];
+  const p = gParseRef(refId);
+  if (!p || !fbDB) return null;
+  try {
+    const snap = await fbDB.ref('groups/' + p.gid + '/quizzes/' + p.qid).once('value');
+    const q = snap.val();
+    if (q) gQuizCache[refId] = q;
+    return q;
+  } catch { return null; }
+}
+
+function gPlayQuiz(qid) {
+  const g = gState.current;
+  const q = g?.quizzes?.[qid];
+  if (!q || !(q.questions || []).length) { showToast('Dieses Quiz hat noch keine Fragen', 'error'); return; }
+  G.mode = 'solo';
+  G.source = 'groupquiz';
+  G.catalogId = gQuizRef(g.id, qid);
+  G.usedInDuel = new Set();
+  startQuiz();
+}
+
+async function gChallengerQuiz(qid) {
+  const g = gState.current;
+  const q = g?.quizzes?.[qid];
+  if (!q || !(q.questions || []).length) { showToast('Dieses Quiz hat noch keine Fragen', 'error'); return; }
+  if ((q.questions || []).length < 5) { showToast('Für den Challenger braucht das Quiz mindestens 5 Fragen', 'error'); return; }
+  CH.groupId = g.id; CH.quizId = qid; CH.quizName = q.name || 'Quiz';
+  await startChallenger('groupquiz', null, null, false);
+}
+
+// Herausforderung mit einem Gruppenquiz. Baut denselben Raum wie sendChallenge(),
+// nur mit source='groupquiz' - die Fragen schreibt ohnehin der Host hinein.
+async function gChallengeMember(uid, name) {
+  const g = gState.current;
+  const quizzes = Object.entries(g?.quizzes || {}).filter(([, q]) => (q.questions || []).length);
+  if (!quizzes.length) { showToast('Die Gruppe hat noch keine Quizze mit Fragen', 'error'); return; }
+  let qid = quizzes[0][0];
+  if (quizzes.length > 1) {
+    const liste = quizzes.map(([, q], i) => (i + 1) + ') ' + (q.name || 'Quiz')).join('\n');
+    const wahl = prompt('Mit welchem Quiz möchtest du ' + name + ' herausfordern?\n\n' + liste + '\n\nNummer eingeben:', '1');
+    if (wahl === null) return;
+    const idx = parseInt(wahl, 10) - 1;
+    if (!(idx >= 0 && idx < quizzes.length)) { showToast('Ungültige Auswahl', 'error'); return; }
+    qid = quizzes[idx][0];
+  }
+  try {
+    const myName = myDisplayName();
+    const code = generateRoomCode();
+    await fbDB.ref('rooms/' + code).set({
+      status: 'waiting', hostName: myName, maxPlayers: 2,
+      grade: '', subject: '', subcategory: '', difficulty: 'mittel',
+      source: 'groupquiz', catalogId: gQuizRef(g.id, qid),
+      totalRounds: 1, currentRound: 1, roundScores: [],
+      questions: [],
+      players: {
+        p1: { name: myName, q: 0, done: false, score: { correct: 0, points: 0 } },
+        p2: { name: '', q: 0, done: false, score: { correct: 0, points: 0 } },
+      },
+      createdAt: firebase.database.ServerValue.TIMESTAMP,
+    });
+    onlineOpponentUid = uid; onlineH2HRecorded = false;
+    const cKey = fbDB.ref('challenges/' + uid).push().key;
+    await fbDB.ref('challenges/' + uid + '/' + cKey).set({
+      fromUid: currentUser?.uid, fromUsername: myName, roomCode: code,
+      grade: '', subject: '', subcategory: '', difficulty: 'mittel',
+      source: 'groupquiz', catalogId: gQuizRef(g.id, qid),
+      totalRounds: 1, status: 'pending', sentAt: Date.now(),
+    });
+    // Denselben Zustand setzen wie sendChallenge() - der Raumlistener und die
+    // Rundenlogik lesen diese Variablen, nicht G.roomCode/G.isHost.
+    onlineRoomCode = code; onlineRole = 'host'; onlineMySlot = 'p1'; onlineMaxPlayers = 2;
+    onlineMyAnswers = []; onlineWaitingForOpponent = false;
+    G.mode = 'duel'; G.p1Name = myName;
+    G.dGrade = ''; G.dSubject = ''; G.dSubcategory = ''; G.dDifficulty = 'mittel';
+    G.dSource = 'groupquiz'; G.dCatalogId = gQuizRef(g.id, qid);
+    G.totalRounds = 1; G.currentRound = 1; G.roundScores = [];
+    showOnlineWaitScreen(); startRoomListener();
+    setTimeout(() => fbDB.ref('rooms/' + code).remove().catch(() => {}), 45 * 60 * 1000);
+    showToast('Herausforderung an ' + name + ' gesendet', 'success');
+  } catch (e) {
+    showToast('Herausforderung fehlgeschlagen', 'error');
+  }
+}
+
+// ── Gruppen-Rangliste ────────────────────────────────────
+async function gRenderLeaderboard(qid) {
+  const g = gState.current;
+  const body = document.getElementById('gd-lb-body');
+  if (!g || !body) return;
+  body.innerHTML = '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:10px 0;">Lade…</div>';
+  try {
+    const snap = await fbDB.ref('groups/' + g.id + '/scores/' + qid).once('value');
+    const rows = Object.entries(snap.val() || {})
+      .map(([uid, v]) => ({ uid, ...v }))
+      .sort((a, b) => (b.level || 0) - (a.level || 0));
+    if (!rows.length) {
+      body.innerHTML = '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:10px 0;">Noch kein Ergebnis. Spiel das Quiz im Challenger-Modus.</div>';
+      return;
+    }
+    body.innerHTML = rows.map((r, i) => `<div class="lb-row${r.uid === currentUser?.uid ? ' me' : ''}">
+      <div class="lb-rank">${i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '#' + (i + 1)}</div>
+      <div style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(r.name || 'Unbekannt')}</div>
+      <div style="font-family:'Space Mono',monospace;">Lvl ${r.level || 0}</div>
+    </div>`).join('');
+  } catch {
+    body.innerHTML = '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:10px 0;">Rangliste nicht verfügbar.</div>';
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// NACHRICHTEN
+// ═══════════════════════════════════════════════════════
+// Bündelt Gruppeneinladungen und Freundschaftsanfragen. Freundschaftsanfragen
+// waren bisher nur auf dem Freunde-Screen sichtbar, den man ueber das
+// Profil-Modal erreicht - sie gingen dadurch leicht unter.
+
+async function renderNachrichten() {
+  const cont = document.getElementById('nachrichten-content');
+  if (!currentUser || !fbDB) {
+    cont.innerHTML = '<div class="empty-state"><div class="es-icon">🔒</div>Für Nachrichten musst du angemeldet sein.</div>';
+    return;
+  }
+  cont.innerHTML = '<div class="loading-state"><div class="spinner"></div>Laden…</div>';
+  try {
+    const [invSnap, reqSnap] = await Promise.all([
+      fbDB.ref('groupInvites/' + currentUser.uid).once('value'),
+      fbDB.ref('friendRequests/' + currentUser.uid).once('value'),
+    ]);
+    const invites = Object.entries(invSnap.val() || {});
+    const reqs    = Object.entries(reqSnap.val() || {});
+
+    if (!invites.length && !reqs.length) {
+      cont.innerHTML = '<div class="empty-state"><div class="es-icon">📭</div>Keine neuen Nachrichten.</div>';
+      updateNachrichtenBadge(0);
+      return;
+    }
+    const html = []
+      .concat(invites.map(([gid, v]) => `<div class="msg-item">
+        <div class="msg-kind">👥 GRUPPENEINLADUNG</div>
+        <div class="msg-text"><strong>${esc(v.fromUsername || 'Jemand')}</strong> lädt dich in die Gruppe <strong>${esc(v.groupIcon || '')} ${esc(v.groupName || 'Gruppe')}</strong> ein.</div>
+        <div class="msg-actions">
+          <button class="btn btn-primary" onclick="gAcceptInvite('${esc(gid)}')">Beitreten</button>
+          <button class="btn btn-secondary" onclick="gDeclineInvite('${esc(gid)}')">Ablehnen</button>
+        </div>
+      </div>`))
+      .concat(reqs.map(([uid, v]) => `<div class="msg-item">
+        <div class="msg-kind">🤝 FREUNDSCHAFTSANFRAGE</div>
+        <div class="msg-text"><strong>${esc(v.username || 'Jemand')}</strong> möchte dich als Freund hinzufügen.</div>
+        <div class="msg-actions">
+          <button class="btn btn-primary" onclick="nAcceptFriend('${esc(uid)}')">Annehmen</button>
+          <button class="btn btn-secondary" onclick="nDeclineFriend('${esc(uid)}')">Ablehnen</button>
+        </div>
+      </div>`));
+    cont.innerHTML = html.join('');
+    updateNachrichtenBadge(invites.length + reqs.length);
+  } catch (e) {
+    cont.innerHTML = '<div class="empty-state"><div class="es-icon">⚠️</div>Nachrichten konnten nicht geladen werden.</div>';
+  }
+}
+
+async function nAcceptFriend(uid) { await acceptFriendRequest(uid); renderNachrichten(); }
+async function nDeclineFriend(uid) { await declineFriendRequest(uid); renderNachrichten(); }
+
+function updateNachrichtenBadge(n) {
+  const b = document.getElementById('nachrichten-badge');
+  if (b) { b.textContent = n; b.style.display = n > 0 ? '' : 'none'; }
+  document.querySelectorAll('.hamburger-btn').forEach(btn => {
+    btn.style.position = 'relative';
+    let dot = btn.querySelector('.hamburger-dot');
+    if (n > 0 && !dot) { dot = document.createElement('span'); dot.className = 'hamburger-dot'; btn.appendChild(dot); }
+    else if (n === 0 && dot) dot.remove();
+  });
+}
+
+// Zwei Listener, ein Zaehler. Der Stand jeder Quelle wird gemerkt, damit ein
+// Update der einen nicht den Beitrag der anderen verwirft.
+let _msgCounts = { invites: 0, requests: 0 };
+function startMessageListeners() {
+  if (!currentUser || !fbDB) return;
+  stopMessageListeners();
+  const bump = () => updateNachrichtenBadge(_msgCounts.invites + _msgCounts.requests);
+  _gInviteListener = fbDB.ref('groupInvites/' + currentUser.uid);
+  _gInviteListener.on('value', s => {
+    _msgCounts.invites = Object.keys(s.val() || {}).length;
+    bump();
+    if (document.getElementById('screen-nachrichten')?.classList.contains('active')) renderNachrichten();
+  });
+  _gFriendReqListener = fbDB.ref('friendRequests/' + currentUser.uid);
+  _gFriendReqListener.on('value', s => {
+    _msgCounts.requests = Object.keys(s.val() || {}).length;
+    bump();
+  });
+}
+function stopMessageListeners() {
+  try { _gInviteListener?.off(); } catch {}
+  try { _gFriendReqListener?.off(); } catch {}
+  _gInviteListener = _gFriendReqListener = null;
+  _msgCounts = { invites: 0, requests: 0 };
+  updateNachrichtenBadge(0);
 }
 
 // ── App-Start (nach allen let-Deklarationen) ──
@@ -7001,11 +8324,13 @@ const CH = {
   currentQ: null,
   answered: false,
   reporting: false, // true while report modal is open from Challenger
+  groupId: null, quizId: null, quizName: '', // nur im Modus 'groupquiz' gesetzt
 };
 
 const CHAL_GRADE_ORDER = ['5','6','7','10','11','12'];
 
 function chalModeKey() {
+  if (CH.mode === 'groupquiz')        return 'group_' + CH.groupId + '_' + CH.quizId;
   if (CH.mode === 'general-class')    return 'general_class';
   if (CH.mode === 'general-weighted') return 'general_weighted';
   if (CH.mode === 'subject')          return 'subject_' + (CH.subject || '').replace(/[^a-zA-Z0-9]/g, '_');
@@ -7015,6 +8340,7 @@ function chalModeKey() {
 }
 
 function chalModeBadgeLabel() {
+  if (CH.mode === 'groupquiz')        return (CH.quizName || 'GRUPPE').toUpperCase();
   if (CH.mode === 'general-class')    return 'KLASSENSTUFEN';
   if (CH.mode === 'general-weighted') return 'GEWICHTUNG';
   if (CH.mode === 'subject')          return (CH.subject || '').toUpperCase();
@@ -7390,12 +8716,29 @@ async function deleteAccount() {
   try {
     const uid = currentUser.uid;
     const uname = (currentUser.username || '').toLowerCase();
+
+    // Aus allen Gruppen austragen. Bleibt eine Gruppe dabei leer, wird sie
+    // ganz entfernt - sonst haengt sie mitsamt Quizzen unerreichbar in der DB.
+    try {
+      const idx = await fbDB.ref('userGroups/' + uid).once('value');
+      for (const gid of Object.keys(idx.val() || {})) {
+        // Erst zaehlen, dann austragen. Nach dem Austragen verweigern die
+        // Datenbankregeln den Lesezugriff auf die Mitgliederliste.
+        const msnap = await fbDB.ref('groups/' + gid + '/members').once('value');
+        const alleine = Object.keys(msnap.val() || {}).length <= 1;
+        if (alleine) await fbDB.ref('groups/' + gid).remove().catch(() => {});
+        else         await fbDB.ref('groups/' + gid + '/members/' + uid).remove().catch(() => {});
+      }
+    } catch { /* Gruppen-Aufraeumen ist best effort */ }
+
     await Promise.all([
       fbDB.ref('users/' + uid).remove(),
       uname ? fbDB.ref('usernames/' + uname).remove() : Promise.resolve(),
       fbDB.ref('friends/' + uid).remove(),
       fbDB.ref('friendRequests/' + uid).remove(),
       fbDB.ref('challenges/' + uid).remove(),
+      fbDB.ref('groupInvites/' + uid).remove(),
+      fbDB.ref('userGroups/' + uid).remove(),
     ]);
     try { await fbAuth.currentUser?.delete(); } catch { /* Re-Auth nicht möglich – DB-Daten bereits gelöscht */ }
     localStorage.removeItem('sd_cached_user');
@@ -7447,6 +8790,17 @@ async function chalGameOver() {
 async function chalSaveHighscore(level) {
   if (!currentUser || !fbDB) return;
   try {
+    // Gruppenquiz: Der Score gehoert in die Gruppe, nicht in die globale
+    // Bestenliste - sonst stuenden fremde Quizze in der offenen Rangliste.
+    if (CH.mode === 'groupquiz') {
+      const gref = fbDB.ref('groups/' + CH.groupId + '/scores/' + CH.quizId + '/' + currentUser.uid);
+      const gsnap = await gref.once('value');
+      const alt = gsnap.val();
+      if (!alt || alt.level < level) {
+        await gref.set({ level, name: currentUser.username || 'Anonym', ts: Date.now() });
+      }
+      return;
+    }
     const key = chalModeKey();
     const ref = fbDB.ref('challengerScores/' + key + '/' + currentUser.uid);
     const snap = await ref.once('value');
@@ -7466,6 +8820,30 @@ async function chalRenderLeaderboard(myLevel) {
   if (!lb || !fbDB) return;
 
   lb.innerHTML = '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:8px 0;">Lade Bestenliste…</div>';
+
+  // Gruppenquiz: eigene Rangliste, nur Gruppenmitglieder, keine Tabs.
+  // Der Admin kann sie ganz abschalten - dann wird hier nichts gezeigt.
+  if (CH.mode === 'groupquiz') {
+    try {
+      const gsnap = await fbDB.ref('groups/' + CH.groupId).once('value');
+      const grp = gsnap.val();
+      if (!grp || grp.leaderboard === false) { lb.innerHTML = ''; return; }
+      const rows = Object.entries(grp.scores?.[CH.quizId] || {})
+        .map(([uid, v]) => ({ uid, ...v }))
+        .sort((a, b) => (b.level || 0) - (a.level || 0));
+      lb.innerHTML = '<div class="label" style="margin-bottom:8px;">🏆 ' + esc(grp.name || 'Gruppe') + '</div>'
+        + (rows.length
+          ? rows.map((r, i) => `<div class="lb-row${r.uid === currentUser?.uid ? ' me' : ''}">
+              <div class="lb-rank">${i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '#' + (i + 1)}</div>
+              <div style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(r.name || 'Unbekannt')}</div>
+              <div style="font-family:'Space Mono',monospace;">Lvl ${r.level || 0}</div>
+            </div>`).join('')
+          : '<div style="color:var(--muted);font-size:.82rem;text-align:center;padding:8px 0;">Noch kein Ergebnis.</div>');
+    } catch {
+      lb.innerHTML = '';
+    }
+    return;
+  }
 
   try {
     const key = chalModeKey();
@@ -7571,7 +8949,17 @@ async function startChallenger(mode, subject, grade, hardMode) {
   document.getElementById('chal-mode-badge').textContent = chalModeBadgeLabel();
 
   try {
-    if (mode === 'catalog') {
+    if (mode === 'groupquiz') {
+      // Gruppenquiz: eine flache Fragenmenge ohne Schwierigkeitsstufen. Die
+      // Progression laeuft allein ueber die Levelzahl, nicht ueber Tiers.
+      const quiz = await gResolveQuiz(gQuizRef(CH.groupId, CH.quizId));
+      if (!quiz || !(quiz.questions || []).length) {
+        showToast('Quiz konnte nicht geladen werden.', 'error');
+        if (CH.groupId) openGroup(CH.groupId); else showChallengerSetup();
+        return;
+      }
+      CH.pool = quiz.questions.map(q => ({ ...q, _subj: quiz.name || 'Quiz', _subcat: '', _grade: '?', _tier: 1 }));
+    } else if (mode === 'catalog') {
       const group = chalGroupCatalogs().find(g => g.name === grade);
       if (!group) { showToast('Katalog nicht gefunden.', 'error'); showChallengerSetup(); return; }
       CH.pool = [
@@ -7611,6 +8999,9 @@ async function startChallenger(mode, subject, grade, hardMode) {
 }
 
 function showChallengerSetup() {
+  // Aus einem Gruppenquiz heraus zurueck in die Gruppe - die generische
+  // Challenger-Auswahl kennt das Quiz gar nicht.
+  if (CH.mode === 'groupquiz' && CH.groupId) { openGroup(CH.groupId); return; }
   showScreen('screen-home');
   switchTab('spielen');
   showModeSetup('challenger');
