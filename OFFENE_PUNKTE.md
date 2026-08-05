@@ -972,3 +972,142 @@ gegenüber 34 Kunstfragen.
 - Zwei Notationswelten in derselben Datei: teils Unicode (`x³`, `√`), teils ASCII (`x^3`,
   `sqrt`). Innerhalb jeder Frage konsistent, über die Datei hinweg nicht. Eine
   Vereinheitlichung ginge nur zusammen mit den Fragetexten.
+
+---
+
+# Nachtrag: 5. August 2026, zweite Charge
+
+Fünf übercorrigierte Dateien (richtige Antwort überwiegend die *kürzeste*) und zwei der
+anderen Richtung. Alle sieben liegen jetzt im Korridor.
+
+## 41. Wieder Fragen mit zwei richtigen Antworten
+
+- **Fotosynthese-Gleichung, Klasse 11:** Der Distraktor `CO₂ + 2H₂O + Licht → CH₂O + O₂ + H₂O`
+  ist die stöchiometrisch ausgeglichene allgemeine Fotosynthesegleichung nach van Niel — also
+  eine zweite korrekte Antwort. Ersetzt durch eine unausgeglichene Variante.
+- **Salzbrücke, Klasse 12:** Der Distraktor „erhöht die Zellspannung, indem sie den
+  Innenwiderstand senkt" war halb wahr — die Salzbrücke senkt tatsächlich den Innenwiderstand.
+- **Neuroplastizität, Klasse 11:** Der Distraktor „Geschwindigkeit der Neurogenese im
+  Hippocampus" — adulte Neurogenese wird in der Fachliteratur häufig selbst zur
+  Neuroplastizität gezählt.
+- **Peripheres Nervensystem:** „alle Nervenfasern außerhalb des Schädels" schloss das
+  Rückenmark ein, das zum Zentralnervensystem gehört.
+
+## 42. Eine Frage, bei der Wissen bestraft wird
+
+**„Was ist ein Satzspiegel / wie beschreibt man Satzstruktur?"** in `k11__Deutsch__Grammatik`.
+Markiert ist die Antwort zu den Satzgliedern. Ein *Satzspiegel* ist aber ein rein
+typografischer Begriff — die bedruckte Fläche einer Buchseite — und genau das steht als
+Option 0 korrekt formuliert da. Wer den Begriff kennt, klickt falsch.
+
+**Der Fragetext müsste zu „Wie beschreibt man die Struktur eines Satzes?" geändert werden.**
+Dann wäre Option 0 ein sauberer Distraktor.
+
+## 43. Sicherheitsrelevant
+
+In `k11__Physik__Elektrizitaet` stand: „Sicherungen und FI-Schutzschalter schützen vor
+Kurzschlussfolgen." Der FI-Schutzschalter schützt gegen **Fehlerströme**, nicht gegen
+Kurzschluss — das übernimmt der Leitungsschutzschalter. Korrigiert und der Unterschied
+benannt.
+
+## 44. Sachfehler, korrigiert — bitte gegenlesen
+
+**Chemie und Biologie**
+- **Rosten:** „es entsteht zunächst Fe(OH)₃" — richtig ist Fe(OH)₂, das erst weiter oxidiert.
+- **Calvin-Zyklus:** „Drei Umdrehungen pro Glucose" — drei Umläufe liefern ein G3P, für ein
+  Glucosemolekül braucht es sechs.
+- **Kapazitätsgrenze:** Der Wachstumsparameter r wurde dem Lotka-Modell zugeschrieben; er
+  stammt aus dem logistischen Modell nach Verhulst.
+- **Sekundäre Pflanzenstoffe:** „Penicillin aus Schimmelpilz" als Beispiel — Schimmel ist
+  keine Pflanze. Ersetzt durch die Herzglykoside des Fingerhuts.
+- **Biologische Schädlingsbekämpfung:** „keine Resistenzbildung" ist falsch, auch gegen
+  Bt-Toxin entstehen Resistenzen.
+- **Broca-Areal** war im Temporallappen verortet — es liegt im Frontallappen.
+- **„Blaugrünalgen"** → Cyanobakterien.
+
+**Physik**
+- „Stromvariante" statt Stromänderung im Lenz-Satz und „Feldspannung" beim
+  Feldeffekttransistor — beides existiert nicht, vermutlich Autokorrektur-Artefakte.
+
+**Geographie**
+- Die fünf Klimazonen waren Köppen zugeschrieben. Köppens Hauptgruppen sind A tropisch,
+  **B trocken**, C warmgemäßigt, D boreal, E polar — „subtropisch" kommt darin nicht vor.
+- Ein Distraktor nannte die **Great Green Wall** als Beispiel für „Aufforstung von Wüsten",
+  während die Erklärung derselben Frage genau dieses Projekt als Gegenmaßnahme lobt.
+- Der Brundtland-Bericht wurde als Quelle der Drei-Säulen-Formel genannt; die ist eine
+  spätere Weiterentwicklung.
+
+## 45. Wo Schulbuch und Forschungsstand auseinandergehen
+
+Diese drei brauchen deine Entscheidung, weil beide Fassungen vertretbar sind:
+
+| Thema | Schulbuch | Jetzt in der App |
+|---|---|---|
+| Serotonin und Depression | „Serotoninmangel verursacht Depression" | „wird mit Depression in Verbindung gebracht" — die Übersichtsarbeit von Moncrieff u.a. (2022) hat die einfache Gleichung weitgehend entkräftet |
+| Kurzzeitgedächtnis | „7 ± 2 Einheiten" (Miller 1956) | „wenige Einheiten" — der heutige Konsens liegt eher bei 4 ± 1 (Cowan) |
+| Spannungsreihe | „unten die unedlen Metalle" | Oben/Unten gestrichen, „nach steigendem E°" — die Orientierung kippt je nach Tafelwerk. **Bitte gegen euer Tafelwerk prüfen.** |
+
+Ebenfalls angepasst: Der Treibhauspotenzial-Faktor für Methan stand mit „25-mal" auf dem
+IPCC-AR4-Stand; AR6 nennt rund 30. Und „erstmals mehr als 50 % Stadtbevölkerung" stimmt seit
+2007 nicht mehr — das „erstmals" ist raus.
+
+## 46. Die Dateinamen stimmen an drei weiteren Stellen nicht
+
+Das ist inzwischen ein Muster, kein Einzelfall.
+
+| Datei | Tatsächlicher Inhalt |
+|---|---|
+| `k11__Biologie__Zellbiologie` | Erste Hälfte: **1 von 39** Fragen ist Zellbiologie, der Rest Neurobiologie, Verhalten, Hormone, Sinnesphysiologie. Zweite Hälfte: 18 von 39 Ökologie, 2 Genetik. |
+| `k11__Deutsch__Grammatik` | Fast ausschließlich Rhetorik, Semantik und Textsorten — Oxymoron, Pleonasmus, Illokution, Feuilleton. |
+| `k11__Mathematik__Algebra` | Überwiegend Analysis (siehe Abschnitt 39). |
+
+Wer im Spiel eine Kategorie wählt, bekommt etwas anderes.
+
+**Eigener Fehler dabei:** Ich habe den Agenten-Auftrag für die Zellbiologie aus dem
+Dateinamen geschrieben und Prüfhinweise zu Golgi-Apparat, ER und ATP-Ausbeute mitgegeben,
+die auf den Inhalt gar nicht passten. Der Agent hat es selbst bemerkt. Künftig gehört ein
+Blick in die Datei vor das Schreiben des Auftrags.
+
+## 47. Zwei Themenkategorien für dasselbe Thema — behoben
+
+Das `topic`-Feld wird im Spiel als Badge über der Frage angezeigt. Darin stand:
+
+| Umschreibung | Umlautfassung |
+|---|---|
+| `Oekologie` 10× | `Ökologie` 105× |
+| `Oekosysteme` 1× | `Ökosysteme` 9× |
+| `Aegypten` 1× | `Ägypten` 9× |
+
+Damit gab es faktisch doppelte Kategorien. Alle 12 Stellen sind auf die Umlautfassung
+gebracht.
+
+Zur Klarstellung: Die übrigen `topic`-Werte mit ae/oe/ue sind **korrekt** und wurden nicht
+angefasst — „Champions League", „Kongruenz", „Quersumme", „Tetraeder", „Erneuerbare
+Energien".
+
+## 48. Lehrplan-Einordnung
+
+Vier Fragen in `k5__Mathematik__Bruchrechnung` behandeln Kehrwert, ungleichnamige Addition
+sowie Multiplikation und Division von Brüchen. Das steht in den meisten Bundesländern erst
+im Lehrplan der **Klasse 6**. Fachlich korrekt, für Fünftklässler vermutlich zu früh.
+
+## 49. Dubletten
+
+- `k11__Physik__Elektrizitaet`: „Was ist der Transformator?" und „Was ist ein Transformator?"
+  sowie „Was ist die Selbstinduktion?" und „Was ist Selbstinduktion?" — faktisch nur 34
+  verschiedene Inhalte auf 39 Fragen.
+- `k11__Allgemeinwissen__Geographie`: El Niño und Desertifikation stehen je zweimal.
+
+## 50. Eine Zählweise, die ich hätte mitgeben müssen
+
+Ein Agent meldete für seinen Teil 42 % auf Rang 1 und schrieb dazu, er komme nicht unter
+40 %. Nach meiner Zählweise stand die Datei bei 17 %.
+
+Der Unterschied: Ich schließe Fragen mit Längengleichstand aus der Wertung aus, weil die
+Länge dort nichts verrät. Der Agent zählte sie als Rang 1 mit. Bei Bruchdateien, wo 25 von
+31 Fragen gleich lange Optionen haben („2/3" gegen „4/5"), war seine Zahl fast vollständig
+Rauschen.
+
+Meine Schuld: Ich habe ein Ziel genannt, aber nie gesagt, **wie** gezählt wird. Für das
+Ergebnis war es unkritisch, weil am Ende meine Messung über den Rückschrieb entscheidet —
+in künftige Aufträge gehört die Zählregel hinein.

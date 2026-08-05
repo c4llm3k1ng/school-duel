@@ -135,10 +135,10 @@
     "correct": 1,
     "explanation": "Auf den Hauptnenner 40 bringen: 3/5 = 24/40 und 5/8 = 25/40. Weil 25/40 größer ist als 24/40, ist 5/8 der größere Bruch. Brüche lassen sich immer vergleichen, sobald sie gleichnamig sind.",
     "options": [
-      "3/5",
-      "5/8",
-      "Beide sind gleich groß",
-      "Das lässt sich nicht sagen"
+      "3/5 ist größer als 5/8",
+      "5/8 ist der größere Bruch",
+      "Beide sind genau gleich groß",
+      "Das kann man nicht sagen"
     ],
     "question": "Was ist größer: 3/5 oder 5/8?",
     "topic": "Bruchvergleich"
@@ -169,12 +169,12 @@
   },
   {
     "correct": 2,
-    "explanation": "Erst durch den Nenner teilen, dann mit dem Zähler multiplizieren: 80 : 4 = 20 und 20 x 3 = 60. Ein Viertel von 80 wären dagegen nur 20.",
+    "explanation": "Erst durch den Nenner teilen, dann mit dem Zähler multiplizieren: 80 : 4 = 20 und 20 x 3 = 60. Ein Viertel von 80 wären dagegen nur 20, die Hälfte 40. Wer nur mit 3 multipliziert und das Teilen vergisst, landet bei 240.",
     "options": [
-      "30",
+      "20",
       "40",
       "60",
-      "75"
+      "240"
     ],
     "question": "Was ist 3/4 von 80?",
     "topic": "Bruchrechnung Anwendung"
@@ -365,8 +365,8 @@
     "options": [
       "Ein Bruch, der beim Aufstellen falsch gebildet wurde",
       "Ein Bruch, dessen Zähler größer oder gleich dem Nenner ist",
-      "Ein Bruch mit einem Minuszeichen direkt vor dem Zähler",
-      "Ein Bruch mit einer Null im Nenner ohne gültigen Wert"
+      "Ein Bruch, der ein Minuszeichen direkt vor dem Zähler trägt",
+      "Ein Bruch, der eine Null im Nenner hat und keinen Wert besitzt"
     ],
     "question": "Was bedeutet ein unechter Bruch?",
     "topic": "Brucharten"
@@ -375,9 +375,9 @@
     "correct": 0,
     "explanation": "Bei einem echten Bruch ist der Zähler kleiner als der Nenner, der Wert liegt daher zwischen 0 und 1. Beispiele sind 1/2, 3/4 und 2/7. Sind Zähler und Nenner gleich, ist der Wert genau 1 und der Bruch damit unecht.",
     "options": [
-      "Ein Bruch, dessen Zähler kleiner als sein Nenner ist",
-      "Ein Bruch, dessen Zähler größer als sein Nenner ist und über 1 liegt",
-      "Ein ganzzahliger Wert, der ohne Bruchstrich geschrieben wird",
+      "Ein Bruch, dessen Zähler kleiner als der eigene Nenner ist",
+      "Ein Bruch, dessen Zähler größer als sein Nenner ist",
+      "Ein ganzzahliger Wert, der ohne Bruchstrich notiert wird",
       "Ein Bruch, bei dem Zähler und Nenner genau gleich groß sind"
     ],
     "question": "Was ist ein echter Bruch?",
@@ -387,9 +387,9 @@
     "correct": 1,
     "explanation": "Ungleichnamige Brüche lassen sich nicht direkt addieren. Zuerst wird der Hauptnenner als kleinstes gemeinsames Vielfaches der Nenner bestimmt, dann werden beide Brüche darauf erweitert, und erst danach werden die Zähler addiert.",
     "options": [
-      "Man addiert Zähler und Nenner einfach wie ganze Zahlen",
-      "Man muss sie zuerst gleichnamig machen",
-      "Man addiert nur die Nenner und behält die Zähler bei",
+      "Man addiert Zähler und Nenner einfach wie bei ganzen Zahlen",
+      "Man bringt beide Brüche zuerst auf den gleichen Nenner",
+      "Man addiert nur die Nenner und behält die Zähler unverändert",
       "Man multipliziert die Zähler und kürzt das Ergebnis"
     ],
     "question": "Was gilt bei der Bruchaddition, wenn die Nenner verschieden sind?",
@@ -421,12 +421,12 @@
   },
   {
     "correct": 2,
-    "explanation": "Die Division durch null ist nicht definiert, weil es keine Zahl gibt, die mit 0 multipliziert den Dividenden ergibt. Ein Bruch wie 5/0 hat deshalb keinen Wert, unabhängig davon, was im Zähler steht.",
+    "explanation": "Die Division durch null ist nicht definiert, weil es keine Zahl gibt, die mit 0 multipliziert den Dividenden ergibt. Ein Bruch wie 5/0 hat deshalb keinen Wert, unabhängig davon, was im Zähler steht. Steht die Null dagegen im Zähler, ist alles in Ordnung: 0/7 = 0.",
     "options": [
       "Ja, das Ergebnis ist dabei immer genau 0",
       "Ja, das Ergebnis ist dabei immer genau 1",
-      "Nein, das ist nicht definiert",
-      "Nur bei Brüchen ist das erlaubt"
+      "Nein, das ist grundsätzlich nicht definiert",
+      "Nur bei Brüchen mit Null im Zähler ist es erlaubt"
     ],
     "question": "Kann man durch 0 dividieren?",
     "topic": "Brucharten"
@@ -469,7 +469,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Auf den Nenner 100 erweitern, denn 25 x 4 = 100: 3/25 = 12/100 = 0,12. Wer das Komma nur um eine Stelle verschiebt, erhält falsch 1,2; wer Zähler und Nenner vertauscht denkt, 3,2.",
+    "explanation": "Auf den Nenner 100 erweitern, denn 25 x 4 = 100: 3/25 = 12/100 = 0,12. Wer das Komma nur um eine Stelle verschiebt, erhält falsch 1,2; die Werte 0,3 und 3,2 entstehen durch bloßes Umstellen der Ziffern statt durch Erweitern.",
     "options": [
       "0,3",
       "3,2",

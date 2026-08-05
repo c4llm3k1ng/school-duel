@@ -4,9 +4,9 @@
     "explanation": "Der Nenner steht unter dem Bruchstrich und zeigt an, in wie viele gleich große Teile ein Ganzes aufgeteilt wurde. Die obere Zahl (Zähler) zeigt, wie viele dieser Teile gemeint sind.",
     "options": [
       "Wie viele Teile man vom Ganzen genommen hat",
-      "In wie viele gleich große Teile das Ganze geteilt wurde",
-      "Wie viele Brüche insgesamt vorkommen",
-      "Welche Zahl über dem Bruchstrich steht"
+      "In wie viele gleiche Teile das Ganze geteilt ist",
+      "Wie viele Brüche in der Aufgabe insgesamt vorkommen",
+      "Welche Zahl oben über dem Bruchstrich steht"
     ],
     "question": "Was bedeutet der Nenner (die untere Zahl) in einem Bruch wie 3/5?",
     "topic": "Bruchbegriffe verstehen (Nenner)"
@@ -195,10 +195,10 @@
     "correct": 1,
     "explanation": "Ein Bruch besteht aus Zähler und Nenner. Der Nenner sagt, in wie viele gleiche Teile das Ganze geteilt ist, der Zähler, wie viele Teile davon gemeint sind: 3/4 bedeutet 3 von 4 gleichen Teilen.",
     "options": [
-      "Eine Zahl, die immer größer als 1 ist",
-      "Eine Zahl, die einen Teil eines Ganzen angibt",
-      "Eine Zahl, die immer kleiner als null ist",
-      "Eine Zahl ohne Zähler und ohne Nenner"
+      "Eine Zahl, die immer größer als 1 sein muss",
+      "Eine Zahl, die einen Teil vom Ganzen angibt",
+      "Eine Zahl, die immer kleiner als null sein muss",
+      "Eine Zahl, die keinen Zähler und Nenner hat"
     ],
     "question": "Was ist ein Bruch?",
     "topic": "Brüche"
@@ -231,8 +231,8 @@
     "correct": 1,
     "explanation": "Der Hauptnenner von 3 und 4 ist 12: 1/3 = 4/12 und 1/4 = 3/12. Zusammen ergibt das 7/12. Zähler und Nenner getrennt zu addieren wäre falsch.",
     "options": [
-      "Man addiert die Zähler und die Nenner getrennt",
-      "Man macht sie gleichnamig und addiert dann die Zähler",
+      "Man addiert die Zähler und die Nenner jeweils getrennt",
+      "Man macht sie gleichnamig und addiert die Zähler",
       "Man addiert nur die Nenner und behält den Zähler",
       "Man multipliziert die Nenner und addiert die Zähler"
     ],
@@ -245,8 +245,8 @@
     "options": [
       "Ein Bruch, dessen Zähler größer als der Nenner ist",
       "Ein Bruch, dessen Zähler kleiner als der Nenner ist",
-      "Ein Bruch, dessen Zähler gleich dem Nenner ist",
-      "Ein Bruch, dessen Nenner eine gerade Zahl ist"
+      "Ein Bruch, dessen Zähler genauso groß wie der Nenner ist",
+      "Ein Bruch, dessen Nenner eine gerade Zahl sein muss"
     ],
     "question": "Was ist ein echter Bruch?",
     "topic": "Brüche"
@@ -257,8 +257,8 @@
     "options": [
       "Man addiert zu Zähler und Nenner dieselbe Zahl",
       "Man teilt Zähler und Nenner durch dieselbe Zahl",
-      "Man halbiert nur den Zähler des Bruchs",
-      "Man verdoppelt nur den Nenner des Bruchs"
+      "Man halbiert nur den Zähler und behält den Nenner",
+      "Man verdoppelt nur den Nenner und behält den Zähler"
     ],
     "question": "Wie kürzt man einen Bruch?",
     "topic": "Brüche"
@@ -375,10 +375,10 @@
     "correct": 1,
     "explanation": "Der Nenner steht unten und nennt, in wie viele gleich große Teile das Ganze zerlegt wurde. Der Zähler steht oben und zählt, wie viele dieser Teile genommen werden. Bei 7/12 ist das Ganze also in 12 Teile geteilt, und 7 davon sind gemeint.",
     "options": [
-      "Wie viele der Teile genommen werden",
-      "In wie viele gleich große Teile das Ganze geteilt ist",
-      "Wie oft der Bruch in das Ganze passt",
-      "Welcher Rest beim Teilen übrig bleibt"
+      "Wie viele einzelne Teile genommen werden",
+      "In wie viele gleiche Teile geteilt wurde",
+      "Wie oft der Bruch in das ganze Stück passt",
+      "Welcher Rest beim Teilen übrig bleiben würde"
     ],
     "question": "Was gibt der Nenner 12 im Bruch 7/12 an?",
     "topic": "Brüche"
@@ -445,11 +445,11 @@
   },
   {
     "correct": 2,
-    "explanation": "1 ÷ 3 = 0,3333... Die Ziffer 3 wiederholt sich endlos, man schreibt 0,3 mit Periodenstrich. Solche periodischen Dezimalzahlen entstehen, wenn der gekürzte Nenner andere Primfaktoren als 2 und 5 enthält.",
+    "explanation": "Der Bruchstrich bedeutet 'geteilt durch': 1 ÷ 3 = 0,333... Die Ziffer 3 wiederholt sich endlos, deshalb schreibt man drei Punkte dahinter oder einen Strich über die 3. Bricht man schon nach einer Stelle ab, erhält man nur den ungenauen Wert 0,3.",
     "options": [
-      "0,13",
+      "0,133...",
       "0,3",
-      "0,333... (periodisch)",
+      "0,333...",
       "3,0"
     ],
     "question": "Was ist 1/3 als Dezimalzahl?",
@@ -509,8 +509,8 @@
     "options": [
       "Zähler und Nenner durch dieselbe Zahl teilen",
       "Zähler und Nenner mit derselben Zahl malnehmen",
-      "Zu Zähler und Nenner dieselbe Zahl addieren",
-      "Nur den Zähler mit einer Zahl malnehmen"
+      "Zu Zähler und Nenner die gleiche Zahl dazuzählen",
+      "Nur den Zähler mit derselben Zahl malnehmen"
     ],
     "question": "Wie erweitert man einen Bruch?",
     "topic": "Brüche"
@@ -637,12 +637,12 @@
   },
   {
     "correct": 2,
-    "explanation": "Ein Bruchstrich bedeutet 'geteilt durch': 3/8 = 3 ÷ 8 = 0,375. Probe: 0,375 × 8 = 3.",
+    "explanation": "Ein Bruchstrich bedeutet 'geteilt durch': 3/8 = 3 ÷ 8 = 0,375. Wichtig ist die Reihenfolge oben durch unten, nicht 8 ÷ 3. Probe: 0,375 × 8 = 3.",
     "options": [
       "3,8",
       "0,38",
       "0,375",
-      "0,3"
+      "2,666..."
     ],
     "question": "Was ist 3/8 als Dezimalzahl?",
     "topic": "Dezimalzahlen"
@@ -651,10 +651,10 @@
     "correct": 1,
     "explanation": "Bei einem unechten Bruch ist der Zähler größer als der Nenner oder genauso groß, zum Beispiel 5/4, 7/3 oder 8/8. Sein Wert ist deshalb 1 oder größer. Man kann ihn als gemischte Zahl schreiben: 7/3 = 2 Rest 1 = 2 1/3.",
     "options": [
-      "Ein Bruch mit negativem Zähler",
+      "Ein Bruch, bei dem der Nenner größer ist als der Zähler",
       "Ein Bruch mit Zähler größer oder gleich dem Nenner",
-      "Ein Bruch mit dem Zähler 1",
-      "Ein Bruch, der sich nicht kürzen lässt"
+      "Ein Bruch, bei dem der Zähler immer eine 1 ist",
+      "Ein Bruch, der sich nicht weiter kürzen lässt"
     ],
     "question": "Was ist ein unechter Bruch?",
     "topic": "Brüche"
@@ -663,10 +663,10 @@
     "correct": 1,
     "explanation": "Eine gemischte Zahl besteht aus einer ganzen Zahl und einem echten Bruch, zum Beispiel 2½ = 2 + ½. Als unechter Bruch geschrieben: 2½ = (2×2+1)/2 = 5/2. Zurück: 5 ÷ 2 = 2 Rest 1, also 2½.",
     "options": [
-      "Ein Bruch mit dem Zähler 1",
-      "Eine ganze Zahl zusammen mit einem echten Bruch",
+      "Ein Bruch, dessen Zähler immer die Zahl 1 ist",
+      "Eine ganze Zahl und ein echter Bruch",
       "Ein Bruch mit Zähler größer als der Nenner",
-      "Ein Bruch, der eine Periode hat"
+      "Ein Bruch, dessen Dezimalzahl eine Periode hat"
     ],
     "question": "Was ist ein gemischter Bruch (gemischte Zahl)?",
     "topic": "Brüche"
@@ -925,11 +925,11 @@
   },
   {
     "correct": 0,
-    "explanation": "Ein Fünftel ist 7, und die ganze Zahl besteht aus 5 solchen Teilen: 5 × 7 = 35.",
+    "explanation": "Ein Fünftel ist 7, und die ganze Zahl besteht aus 5 solchen Teilen: 5 × 7 = 35. Wer 7 : 5 rechnet, erhält falsch 1,4.",
     "options": [
       "35",
       "12",
-      "2",
+      "1,4",
       "40"
     ],
     "question": "Ein Fünftel einer Zahl ist 7. Wie groß ist die Zahl?",
@@ -964,7 +964,7 @@
     "explanation": "Der Nenner ist die untere Zahl eines Bruchs. Bei 3/4 ist 4 der Nenner: Das Ganze ist in 4 gleiche Teile geteilt.",
     "options": [
       "Die obere Zahl, die angibt, wie viele Teile man vom Ganzen nimmt",
-      "Die untere Zahl, die angibt, in wie viele Teile das Ganze geteilt wird",
+      "Die untere Zahl, die angibt, wie viele Teile das Ganze hat",
       "Die Zahl, die man erhält, wenn man Zähler und Nenner addiert",
       "Die Zahl, die beim Teilen mit Rest als Rest übrig bleibt"
     ],
