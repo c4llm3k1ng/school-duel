@@ -37,12 +37,12 @@
   },
   {
     "correct": 1,
-    "explanation": "Gleichschenklig: a = c (Schenkel), b = Basis. Basiswinkel alpha = gamma. Scheitelwinkel beta. Symmetrieachse: durch Scheitel, senkrecht zur Basis. Isometrisches Dreieck. Beispiel: gleichseitiges Dreieck ist Spezialfall.",
+    "explanation": "Gleichschenklig: a = c (Schenkel), b = Basis. Die Basiswinkel alpha und gamma sind gleich groß. Der Winkel beta zwischen den Schenkeln heißt Spitzenwinkel. Symmetrieachse: durch die Spitze, senkrecht zur Basis. Das gleichseitige Dreieck erfüllt diese Bedingung ebenfalls, verlangt aber zusätzlich drei gleich lange Seiten.",
     "options": [
       "Ein Dreieck mit drei gleich großen Winkeln von je 60° und drei Symmetrieachsen.",
-      "Ein Dreieck mit zwei gleich langen Schenkeln, gleichen Basiswinkeln und einer Symmetrieachse.",
+      "Ein Dreieck mit zwei gleich langen Schenkeln und gleich großen Basiswinkeln.",
       "Ein Dreieck mit einem Winkel von 90° und der Hypotenuse als längster Seite.",
-      "Ein Dreieck mit drei verschieden langen Seiten und ohne jede Symmetrieachse."
+      "Ein Dreieck mit drei verschieden langen Seiten und ohne Symmetrieachse."
     ],
     "question": "Was ist ein gleichschenkliges Dreieck?",
     "topic": "Geometrie"
@@ -52,7 +52,7 @@
     "explanation": "Rechtwinklig: ein Winkel = 90°. Hypotenuse c: längste Seite, gegenüber dem rechten Winkel. Katheten a und b. Satz des Pythagoras: a² + b² = c². Winkelsumme: 90° + alpha + beta = 180° → alpha + beta = 90°.",
     "options": [
       "Ein Dreieck mit zwei 90°-Winkeln; die dritte Seite heißt Hypotenuse, die übrigen Katheten.",
-      "Ein Dreieck mit genau einem 90°-Winkel; ihm gegenüber liegt die Hypotenuse, die übrigen Seiten heißen Katheten.",
+      "Ein Dreieck mit genau einem 90°-Winkel; gegenüber liegt die Hypotenuse, daneben die Katheten.",
       "Ein Dreieck, dessen Höhe senkrecht auf der längsten Seite steht; diese Seite heißt Hypotenuse.",
       "Ein Dreieck mit ausschließlich spitzen Winkeln; die längste Seite wird Hypotenuse genannt."
     ],
@@ -75,7 +75,7 @@
     "correct": 1,
     "explanation": "Dreiecksfläche: A = g × h / 2. Jede Seite kann Grundseite sein, zugehörige Höhe muss senkrecht darauf stehen. Beispiel: g=6cm, h=4cm → A = 6×4/2 = 12 cm². Einheit: cm² (Quadratzentimeter).",
     "options": [
-      "A = g + h, also Grundseite plus die zugehörige Höhe.",
+      "A = g + h, also Grundseite plus die zugehörige Höhe des Dreiecks.",
       "A = g × h / 2, also Grundseite mal zugehörige Höhe, geteilt durch zwei.",
       "A = g × h, also Grundseite mal zugehörige Höhe ohne weitere Division.",
       "A = a + b + c, also die Summe der drei Seitenlängen des Dreiecks."
@@ -85,12 +85,12 @@
   },
   {
     "correct": 1,
-    "explanation": "Parallelogramm: AB ∥ CD und AC ∥ BD. Gegenüberliegende Seiten gleich lang. Diagonalen halbieren sich gegenseitig. Rechteck: Spezialfall (alle Winkel 90°). Fläche: A = a × h (Grundseite mal Höhe).",
+    "explanation": "Parallelogramm ABCD: AB ∥ DC und AD ∥ BC. Gegenüberliegende Seiten gleich lang. Diagonalen halbieren sich gegenseitig. Rechteck: Spezialfall (alle Winkel 90°). Fläche: A = a × h (Grundseite mal Höhe).",
     "options": [
       "Ein Viereck mit genau einem Paar paralleler Seiten und zwei gleich langen Schenkeln.",
-      "Ein Viereck mit zwei Paaren paralleler Seiten; gegenüberliegende Seiten und Winkel sind gleich.",
+      "Ein Viereck, in dem je zwei gegenüberliegende Seiten parallel und gleich lang sind.",
       "Ein Viereck mit vier gleich langen Seiten und vier rechten Winkeln an den Ecken.",
-      "Ein Viereck mit zwei gleich langen Diagonalen, die senkrecht aufeinander stehen."
+      "Ein Viereck mit zwei gleich langen Diagonalen, die sich aber nicht gegenseitig halbieren."
     ],
     "question": "Was ist ein Parallelogramm?",
     "topic": "Geometrie"
@@ -99,10 +99,10 @@
     "correct": 1,
     "explanation": "Parallelogrammfläche: A = a × h. Höhe h: senkrechter Abstand der parallelen Seiten. Nicht die Seite b (schräg)! Rechteck: A = a × b (weil h = b bei 90°-Winkeln). Dreieck: Hälfte des Parallelogramms.",
     "options": [
-      "A = a × b, also das Produkt der beiden benachbarten Seitenlängen.",
+      "A = a × b, also das Produkt der beiden benachbarten Seitenlängen a und b.",
       "A = a × h, also Grundseite mal die Höhe, die senkrecht auf ihr steht.",
-      "A = (a + b) × 2, also die doppelte Summe zweier benachbarter Seiten.",
-      "A = a × h / 2, also Grundseite mal Höhe, anschließend halbiert."
+      "A = (a + b) × 2, also die doppelte Summe zweier benachbarter Seitenlängen.",
+      "A = a × h / 2, also Grundseite mal Höhe und das Ergebnis dann halbiert."
     ],
     "question": "Wie berechnet man die Fläche eines Parallelogramms?",
     "topic": "Geometrie"
@@ -112,8 +112,8 @@
     "explanation": "Rechteck: alle Winkel 90°, gegenüberliegende Seiten gleich lang. Spezialfall: Quadrat (alle Seiten gleich). Diagonalen: gleich lang, halbieren sich. A = l × b. U = 2(l+b). 2 Symmetrieachsen.",
     "options": [
       "Ein Viereck mit vier gleich langen Seiten, dessen Diagonalen senkrecht stehen.",
-      "Ein Parallelogramm mit vier rechten Winkeln, bei dem gegenüberliegende Seiten gleich lang sind.",
-      "Ein Viereck mit gleich langen Diagonalen, bei dem keine Seiten parallel verlaufen.",
+      "Ein Parallelogramm mit vier rechten Winkeln und paarweise gleich langen Seiten.",
+      "Ein Viereck mit gleich langen Diagonalen, bei dem keine Seiten zueinander parallel verlaufen.",
       "Ein Parallelogramm mit zwei spitzen und zwei stumpfen Winkeln an den Ecken."
     ],
     "question": "Was ist ein Rechteck?",
@@ -133,12 +133,12 @@
   },
   {
     "correct": 1,
-    "explanation": "Rhombus: a = b = c = d (alle Seiten gleich). Keine rechten Winkel (sonst Quadrat). Diagonalen: senkrecht, halbieren sich, halbieren Winkel. Fläche: A = d₁ × d₂ / 2 (Produkt der Diagonalen durch 2).",
+    "explanation": "Rhombus (Raute): a = b = c = d, alle vier Seiten sind gleich lang; die Raute ist ein besonderes Parallelogramm. Diagonalen: stehen senkrecht aufeinander, halbieren sich und halbieren die Innenwinkel. Fläche: A = d₁ × d₂ / 2 (Produkt der Diagonalen durch 2). Das Quadrat ist die Raute mit vier rechten Winkeln.",
     "options": [
       "Ein Rechteck mit zwei spitzen und zwei stumpfen Winkeln an den vier Ecken.",
-      "Ein Parallelogramm mit vier gleich langen Seiten, dessen Diagonalen senkrecht stehen.",
-      "Ein Dreieck mit drei gleich langen Seiten und drei Winkeln von je 60°.",
-      "Ein Viereck mit genau einem rechten Winkel und einem Paar paralleler Seiten."
+      "Ein Parallelogramm mit vier gleich langen Seiten und senkrechten Diagonalen.",
+      "Ein Viereck, dessen Diagonalen gleich lang sind und einander halbieren.",
+      "Ein Viereck mit einem rechten Winkel und einem Paar paralleler Seiten."
     ],
     "question": "Was ist ein Rhombus (Raute)?",
     "topic": "Geometrie"
@@ -149,7 +149,7 @@
     "options": [
       "Ein Viereck mit zwei Paaren paralleler Seiten, dessen Fläche A = a × h beträgt.",
       "Ein Viereck mit genau einem Paar paralleler Seiten, dessen Fläche A = (a + c) / 2 × h beträgt.",
-      "Ein Viereck mit vier gleich langen Seiten, dessen Fläche A = d₁ × d₂ / 2 beträgt.",
+      "Ein Viereck mit vier gleich langen Seiten, dessen Fläche A = (d₁ × d₂) / 2 beträgt.",
       "Ein Viereck ohne parallele Seiten, dessen Fläche man durch Zerlegung in zwei Dreiecke erhält."
     ],
     "question": "Was ist ein Trapez?",
@@ -183,9 +183,9 @@
     "correct": 1,
     "explanation": "Wechselwinkel: zwei parallele Geraden + Transversale. Wechselwinkel: Z-Winkel (aussehen wie Z oder N), gleich groß. Stufenwinkel (F-Winkel): gleiche Seite, gleich groß. Wichtig für Beweis Winkelsumme.",
     "options": [
-      "Winkel, die beim Schnitt zweier Geraden einander gegenüberliegen und gleich groß sind.",
-      "Winkel auf verschiedenen Seiten einer Transversale zwischen zwei Parallelen; sie sind gleich groß.",
-      "Winkel auf derselben Seite einer Transversale, einer innen, einer außen (F-Winkel).",
+      "Winkel, die beim Schnitt zweier Geraden einander genau gegenüberliegen und gleich groß sind.",
+      "Winkel auf verschiedenen Seiten einer Transversale zwischen zwei Parallelen; sie sind gleich.",
+      "Winkel auf derselben Seite einer Transversale, einer davon innen und einer außen.",
       "Winkel, die an einer Geraden nebeneinanderliegen und sich zu 180° ergänzen."
     ],
     "question": "Was sind Wechselwinkel?",
@@ -196,9 +196,9 @@
     "explanation": "Höhe h_a: von Eckpunkt A senkrecht auf Seite a. Alle drei Höhen schneiden sich im Höhenschnittpunkt (Orthozentrum). Fläche: A = g × h/2. Beim stumpfwinkligen Dreieck: Höhe liegt außerhalb.",
     "options": [
       "Die längste Seite des Dreiecks, die dem größten Innenwinkel gegenüberliegt.",
-      "Das Lot von einem Eckpunkt auf die gegenüberliegende Seite; jedes Dreieck hat drei Höhen.",
+      "Das Lot von einem Eckpunkt auf die gegenüberliegende Seite; davon gibt es drei.",
       "Die Senkrechte durch den Mittelpunkt einer Seite; sie führt zum Umkreismittelpunkt.",
-      "Die Verbindung eines Eckpunkts mit dem Mittelpunkt der gegenüberliegenden Seite."
+      "Die Verbindung eines Eckpunkts mit der Mitte der gegenüberliegenden Seite."
     ],
     "question": "Was ist die Höhe in einem Dreieck?",
     "topic": "Geometrie"
@@ -217,10 +217,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Winkelsymmetrale: halbiert Winkel (Winkelhalbiere). Eigenschaft: jeder Punkt auf ihr ist gleich weit von beiden Winkelschenkeln entfernt. Inkreismittelpunkt: Schnittpunkt aller 3 Winkelsymetralen. Inkreis: berührt alle 3 Seiten.",
+    "explanation": "Winkelsymmetrale (Winkelhalbierende): halbiert einen Winkel. Eigenschaft: jeder Punkt auf ihr ist gleich weit von beiden Winkelschenkeln entfernt. Inkreismittelpunkt: Schnittpunkt aller 3 Winkelsymmetralen. Inkreis: berührt alle 3 Seiten.",
     "options": [
       "Eine Linie, die eine Seite in zwei gleich lange Teile teilt und senkrecht auf ihr steht.",
-      "Eine Linie, die einen Winkel in zwei gleich große Teile teilt; alle drei treffen sich im Inkreismittelpunkt.",
+      "Eine Linie, die einen Winkel halbiert; alle drei treffen sich im Inkreismittelpunkt.",
       "Eine Linie, die durch den Mittelpunkt einer Seite verläuft und zum Umkreismittelpunkt führt.",
       "Eine Linie, die von einem Eckpunkt senkrecht auf die gegenüberliegende Seite fällt."
     ],
@@ -270,7 +270,7 @@
       "Zwei Figuren besitzen den gleichen Flächeninhalt, ihre Winkel dürfen dabei abweichen.",
       "Zwei Figuren stimmen in allen Winkeln überein, ihre Seiten stehen im gleichen Verhältnis.",
       "Zwei Figuren haben gleich lange Seiten, ihre Winkel können verschieden groß sein.",
-      "Zwei Figuren besitzen gleich viele Symmetrieachsen und denselben Umfang."
+      "Zwei Figuren besitzen gleich viele Symmetrieachsen und außerdem denselben Umfang."
     ],
     "question": "Was ist Ähnlichkeit in der Geometrie?",
     "topic": "Geometrie"
@@ -293,7 +293,7 @@
     "options": [
       "A = (a + c) × h, also die Summe der Parallelen mal die Höhe.",
       "A = (a + c) / 2 × h, also die Mittelparallele mal die Höhe.",
-      "A = a × h / 2, also die längere Parallele mal Höhe, dann halbiert.",
+      "A = (a × h) / 2, also die längere Parallele mal Höhe, dann halbiert.",
       "A = (a + b + c + d) / 2, also der halbe Umfang des Trapezes."
     ],
     "question": "Wie berechnet man den Flächeninhalt eines Trapez?",
@@ -306,7 +306,7 @@
       "Eine Figur besitzt auf beiden Seiten einer Linie jeweils den gleichen Flächeninhalt.",
       "Achsensymmetrie: Spiegelung an einer Achse; Punktsymmetrie: Drehung um 180° um einen Punkt.",
       "Eine Figur besitzt an allen Ecken gleich große Winkel und gleich lange Seiten.",
-      "Eine Eigenschaft, die ausschließlich bei Kreisen und regelmäßigen Vielecken auftritt."
+      "Eine Eigenschaft, die ausschließlich bei Kreisen und bei regelmäßigen Vielecken auftreten kann."
     ],
     "question": "Was ist Symmetrie in der Geometrie?",
     "topic": "Geometrie"
@@ -316,9 +316,9 @@
     "explanation": "Innenwinkel reguläres n-Eck: (n-2)×180°/n. Dreieck: (3-2)×180/3=60°. Quadrat: 90°. Pentagon: 108°. Hexagon: 120°. Summe aller Innenwinkel: (n-2)×180°.",
     "options": [
       "Jeder Innenwinkel misst 90°, unabhängig von der Anzahl der Ecken.",
-      "Jeder Innenwinkel misst (n - 2) × 180° / n, beim Sechseck also 120°.",
+      "Jeder Innenwinkel misst (n - 2) × 180° / n, im Sechseck 120°.",
       "Jeder Innenwinkel misst 360° / n, beim Sechseck also genau 60°.",
-      "Jeder Innenwinkel misst n × 90°, beim Sechseck also ganze 540°."
+      "Jeder Innenwinkel misst n × 90°, beim Sechseck also ganze 540° (6 × 90°)."
     ],
     "question": "Was sind die Innenwinkel eines regelmäßigen n-Ecks?",
     "topic": "Geometrie"
@@ -352,7 +352,7 @@
     "explanation": "Komplementwinkel: Summe = 90°. In rechtwinkligem Dreieck: alpha + beta = 90° (da dritter Winkel = 90°). 35° → Komplementwinkel = 55°. Merke: Komplement (vervollständigen zu 90°) vs. Supplement (zu 180°).",
     "options": [
       "Zwei Winkel, die zusammen 180° ergeben und an einer Geraden nebeneinanderliegen.",
-      "Zwei Winkel, die zusammen 90° ergeben, etwa die spitzen Winkel im rechtwinkligen Dreieck.",
+      "Zwei Winkel, die zusammen 90° ergeben und einen rechten Winkel bilden.",
       "Zwei Winkel, die zusammen 360° ergeben und damit einen Vollwinkel bilden.",
       "Zwei Winkel, die gleich groß sind und einander am Scheitelpunkt gegenüberliegen."
     ],
@@ -364,9 +364,9 @@
     "explanation": "Lot konstruieren: Punkt P auf Gerade g. Kreisbogen um P (Radius r): schneidet g in A und B. Kreisbogen um A und B (gleicher Radius): Schnittpunkte Q, R. QR = gesuchtes Lot. Winkel = 90° ohne Messen.",
     "options": [
       "Man verbindet den Punkt mit dem Lineal so mit der Geraden, dass die Strecke möglichst kurz wird.",
-      "Man schlägt mit dem Zirkel einen Bogen um den Punkt und errichtet über den Schnittpunkten die Mittelsenkrechte.",
-      "Man legt den Winkelmesser an die Gerade an und trägt den Winkel von 90° nach Augenmaß ab.",
-      "Man zeichnet zwei Parallelen zur Geraden und verbindet deren Schnittpunkte mit dem Punkt."
+      "Man schlägt einen Bogen um den Punkt und errichtet die Mittelsenkrechte der Schnittpunkte.",
+      "Man legt den Winkelmesser an die Gerade an und trägt dort einen Winkel von 90° nach Augenmaß ab.",
+      "Man zeichnet zwei Parallelen zur Geraden und verbindet deren Schnittpunkte mit dem gegebenen Punkt."
     ],
     "question": "Wie konstruiert man das Lot auf eine Gerade durch einen Punkt?",
     "topic": "Geometrie"
@@ -388,7 +388,7 @@
     "explanation": "Stufenwinkel: parallele Geraden + Transversale. Auf gleicher Seite, gleich groß. F-Winkel. Wechselwinkel (Z-Winkel): gegenüberliegende Seiten, auch gleich groß. Beides nur bei parallelen Geraden.",
     "options": [
       "Winkel, die beim Schnitt zweier Geraden einander gegenüberliegen und gleich groß sind.",
-      "Winkel auf derselben Seite einer Transversale zweier Parallelen, einer innen, einer außen.",
+      "Winkel auf gleicher Seite einer Transversale zweier Parallelen, innen und außen.",
       "Winkel auf verschiedenen Seiten einer Transversale zweier Parallelen, beide innen.",
       "Winkel, die an einer Geraden nebeneinanderliegen und sich zu 180° ergänzen."
     ],
@@ -400,7 +400,7 @@
     "explanation": "Diagonalen: Verbindung gegenüberliegender Ecken. n-Eck: n(n-3)/2 Diagonalen. Viereck: 2. Fünfeck: 5. Sechseck: 9. Eigenschaften: Rechteck (gleich lang), Raute (senkrecht), Quadrat (gleich lang + senkrecht).",
     "options": [
       "Eine Verbindungsstrecke zweier benachbarter Ecken, die zugleich eine Seite bildet.",
-      "Eine Verbindungsstrecke zweier nicht benachbarter Ecken; jedes Viereck hat davon zwei.",
+      "Eine Verbindungsstrecke zweier Ecken, die im Viereck nicht benachbart sind.",
       "Eine Strecke, die von einer Ecke senkrecht auf die gegenüberliegende Seite fällt.",
       "Eine Strecke, die die Mittelpunkte zweier gegenüberliegender Seiten verbindet."
     ],
@@ -411,10 +411,10 @@
     "correct": 1,
     "explanation": "Kartesisches Koordinatensystem: x-Achse (waagerecht), y-Achse (senkrecht), Ursprung O(0,0). Quadranten I-IV. Punkt P(3,2): 3 rechts, 2 hoch. P(-1,4): 1 links, 4 hoch. Abstände und Figuren beschreibbar.",
     "options": [
-      "Ein Lineal mit zwei Skalen, mit dem sich Längen und Winkel zugleich abmessen lassen.",
-      "Zwei senkrecht zueinander stehende Zahlengeraden, die sich im Ursprung (0|0) schneiden.",
+      "Ein besonderes Lineal mit zwei Skalen, mit dem sich Längen und Winkel abmessen lassen.",
+      "Zwei senkrecht zueinander stehende Zahlengeraden, die sich im Ursprung O schneiden.",
       "Ein Raster aus lauter gleich großen Quadraten, das keinen festgelegten Nullpunkt besitzt.",
-      "Eine Darstellungsform, die ausschließlich zum Zeichnen von Funktionsgraphen dient."
+      "Eine Darstellungsform, die nur zum Zeichnen von Funktionsgraphen dient."
     ],
     "question": "Was ist ein Koordinatensystem?",
     "topic": "Geometrie"
@@ -424,7 +424,7 @@
     "explanation": "Abstandsformel: d = Wurzel(Δx² + Δy²). A(1,2), B(4,6): Δx=3, Δy=4; d=Wurzel(9+16)=Wurzel(25)=5. Entspricht Hypotenuse des rechtwinkligen Dreiecks mit Katheten Δx und Δy.",
     "options": [
       "d = (x_A + x_B) + (y_A + y_B), also die Summe aller vier Koordinaten.",
-      "d = Wurzel((x_B - x_A)² + (y_B - y_A)²), also Pythagoras auf die Koordinatendifferenzen.",
+      "d = Wurzel((x_B - x_A)² + (y_B - y_A)²), also mit dem Satz des Pythagoras.",
       "d = (x_B - x_A) + (y_B - y_A), also die Summe der beiden Koordinatendifferenzen.",
       "d = (x_A + y_B) / 2, also der Mittelwert aus x- und y-Koordinate."
     ],
@@ -433,10 +433,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Mittelpunkt M: M_x = (x_A+x_B)/2, M_y = (y_A+y_B)/2. A(2,4), B(6,2): M = (4,3). Eigenschaft: AM = MB. Konstruktion: Mittelsenkrechte oder Messersatz.",
+    "explanation": "Mittelpunkt M: M_x = (x_A+x_B)/2, M_y = (y_A+y_B)/2. A(2,4), B(6,2): M = (4,3). Eigenschaft: AM = MB. Konstruktion: Mittelsenkrechte der Strecke AB zeichnen.",
     "options": [
-      "Der Punkt mit M = (x_B - x_A; y_B - y_A), der die Richtung der Strecke angibt.",
-      "Der Punkt mit M = ((x_A + x_B)/2; (y_A + y_B)/2), der von beiden Enden gleich weit entfernt ist.",
+      "Der Punkt mit M = (x_B - x_A; y_B - y_A), der die Richtung angibt.",
+      "Der Punkt mit M = ((x_A + x_B)/2; (y_A + y_B)/2), der genau in der Mitte liegt.",
       "Der Punkt mit M = (x_A + x_B; y_A + y_B), in dem sich zwei Strecken kreuzen.",
       "Der Punkt mit M = ((x_A + 2x_B)/3; (y_A + 2y_B)/3), der die Strecke im Verhältnis 2:1 teilt."
     ],
@@ -529,7 +529,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Das Volumen eines Quaders ist V = Länge · Breite · Höhe = 10 m · 5 m · 2 m = 100 m³. 17 m³ wäre die Summe der Kantenlängen, 50 m³ die Grundfläche ohne Höhe, 70 m³ eine Teilrechnung.",
+    "explanation": "Das Volumen eines Quaders ist V = Länge · Breite · Höhe = 10 m · 5 m · 2 m = 100 m³. 17 m³ wäre die Summe der Kantenlängen, 50 m³ die Grundfläche ohne Höhe, 70 m³ entsteht beim Addieren von Teilprodukten (10 · 5 + 10 · 2).",
     "options": [
       "17 m³",
       "50 m³",
@@ -553,7 +553,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Der Kreisumfang ist U = Durchmesser · Pi = 1,20 m · 3,14 = 3,768 m, gerundet 3,77 m. 1,88 m entsteht beim Rechnen mit dem Radius, 7,54 m beim doppelten Ansatz U = 2 · d · Pi.",
+    "explanation": "Der Kreisumfang ist U = Durchmesser · Pi = 1,20 m · 3,14 = 3,768 m, gerundet 3,77 m. 1,88 m entsteht beim Rechnen mit dem Radius, 5,65 m beim Ansatz (1,20 m + 0,60 m) · Pi, 7,54 m beim doppelten Ansatz U = 2 · d · Pi.",
     "options": [
       "ca. 1,88 m",
       "ca. 3,77 m",
@@ -565,7 +565,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Gesucht ist die Oberfläche des Quaders: O = 2 · (20·10 + 20·5 + 10·5) cm² = 2 · (200 + 100 + 50) cm² = 700 cm². 350 cm² erhält man, wenn man das Verdoppeln vergisst, 1000 cm² ist der Zahlenwert des Volumens.",
+    "explanation": "Gesucht ist die Oberfläche des Quaders: O = 2 · (20·10 + 20·5 + 10·5) cm² = 2 · (200 + 100 + 50) cm² = 700 cm². 350 cm² erhält man, wenn man das Verdoppeln vergisst, 500 cm², wenn ein Flächenpaar (20·5) fehlt, 1000 cm² ist der Zahlenwert des Volumens.",
     "options": [
       "350 cm²",
       "500 cm²",
@@ -637,7 +637,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Das Volumen eines Quaders ist V = Länge · Breite · Höhe = 6 cm · 4 cm · 2 cm = 48 cm³. 12 cm³ wäre die Summe der drei Kantenlängen, 24 cm³ die Grundfläche ohne Höhe.",
+    "explanation": "Das Volumen eines Quaders ist V = Länge · Breite · Höhe = 6 cm · 4 cm · 2 cm = 48 cm³. 12 cm³ wäre die Summe der drei Kantenlängen, 24 cm³ die Grundfläche ohne Höhe, 64 cm³ das Volumen eines Würfels mit der Kante 4 cm.",
     "options": [
       "12 cm³",
       "24 cm³",
@@ -661,7 +661,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Es gilt U = 2 · (Länge + Breite), also 2 · (8 cm + b) = 24 cm. Daraus folgt 8 cm + b = 12 cm und b = 4 cm. 16 cm entsteht, wenn man 24 cm − 8 cm rechnet und das Halbieren vergisst.",
+    "explanation": "Es gilt U = 2 · (Länge + Breite), also 2 · (8 cm + b) = 24 cm. Daraus folgt 8 cm + b = 12 cm und b = 4 cm. 16 cm entsteht, wenn man 24 cm − 8 cm rechnet und das Halbieren vergisst, 6 cm beim Ansatz 24 cm : 4 (Quadrat), 8 cm beim Abschreiben der gegebenen Seite.",
     "options": [
       "4 cm",
       "6 cm",

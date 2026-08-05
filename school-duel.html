@@ -2957,14 +2957,21 @@ function setupSingleSelect(pid) {
 }
 // ── SUBCATEGORIES ──
 const SUBCATEGORIES = {
-  'Mathematik':      ['Allgemein','Kopfrechnen','Algebra','Geometrie','Bruchrechnung','Gleichungen','Statistik'],
-  'Deutsch':         ['Allgemein','Grammatik','Rechtschreibung','Wortarten','Satzlehre','Literatur','Aufsatz'],
-  'Englisch':        ['Allgemein','Vokabeln','Grammatik','Zeitformen','Leseverstehen','Phrasen & Redewendungen'],
-  'Geschichte':      ['Allgemein','Antike','Mittelalter','Frühe Neuzeit','Industrialisierung','Weltkriege','Nachkriegszeit'],
-  'Biologie':        ['Allgemein','Zellbiologie','Ökologie','Genetik','Evolution','Körper & Gesundheit','Botanik'],
-  'Physik':          ['Allgemein','Mechanik','Elektrizität','Optik','Wärmelehre','Atomphysik'],
-  'Chemie':          ['Allgemein','Atombau','Chem. Bindungen','Reaktionen','Säuren & Basen','Organische Chemie'],
-  'Allgemeinwissen': ['Allgemein','Geographie','Sport','Musik & Kunst','Natur & Tiere','Technik','Essen & Kultur']
+  'Mathematik':        ['Allgemein','Kopfrechnen','Algebra','Geometrie','Bruchrechnung','Gleichungen','Statistik','Analysis','Zahlen','Proportionen & Dreisatz','Trigonometrie','Vektoren','Prozentrechnung'],
+  'Deutsch':           ['Allgemein','Grammatik','Rechtschreibung','Wortarten','Satzlehre','Literatur','Aufsatz','Sprache & Medien','Textsorten'],
+  'Englisch':          ['Allgemein','Vokabeln','Grammatik','Zeitformen','Leseverstehen','Phrasen & Redewendungen','Kommunikation','Landeskunde'],
+  'Geschichte':        ['Allgemein','Antike','Mittelalter','Frühe Neuzeit','Industrialisierung','Weltkriege','Nachkriegszeit'],
+  'Biologie':          ['Allgemein','Zellbiologie','Ökologie','Genetik','Evolution','Körper & Gesundheit','Botanik'],
+  'Physik':            ['Allgemein','Mechanik','Elektrizität','Optik','Wärmelehre','Atomphysik'],
+  'Chemie':            ['Allgemein','Atombau','Chem. Bindungen','Reaktionen','Säuren & Basen','Organische Chemie','Elektrochemie','Stoffe'],
+  'Allgemeinwissen':   ['Allgemein','Geographie','Sport','Musik & Kunst','Natur & Tiere','Technik','Essen & Kultur','Politik'],
+  'Ethik':             ['Philosophie'],
+  'Geographie':        ['Allgemein','Klima & Landschaften','Geographie Deutschlands'],
+  'Informatik':        ['Allgemein'],
+  'Kunst':             ['Kunststile & Techniken'],
+  'Musik':             ['Musiktheorie'],
+  'Politik':           ['Wirtschaft'],
+  'Religion':          ['Weltreligionen'],
 };
 
 function renderSubcategoryPills(wrapId, subjectVal, key, checkFn) {

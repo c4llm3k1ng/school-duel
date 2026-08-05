@@ -1301,3 +1301,53 @@ nicht auch an der Ostsee. Bremen hat rund 420 km2, nicht 404.
 steht Muenchen als Distraktor - dort sitzt BMW, die Stadt ist ebenfalls ein Zentrum der
 Autoindustrie. Der Agent schlaegt vor, die Frage entweder zu streichen oder auf „Wiege des
 Automobils" zuzuspitzen.
+
+---
+
+# Nachtrag: Kategorien-Umbau
+
+## 60. Sieben doppelte Kategorien zusammengelegt
+
+Die Bank fuehrte zwei Schubladen fuer dasselbe Thema. Im Auswahlmenue waren das
+getrennte Eintraege, und ein Kind konnte nicht wissen, was der Unterschied sein soll.
+
+| zusammengefuehrt | Ergebnis |
+|---|---|
+| Englisch: Vokabular -> Vokabeln (Kl. 6) | 8 + 41 = 49 |
+| Mathematik: Brueche -> Bruchrechnung (Kl. 6) | 16 + 41 = 57 |
+| Mathematik: Brueche -> Bruchrechnung (Kl. 7) | 31 + 40 = 71 |
+| Mathematik: Statistik & Zufall -> Statistik (Kl. 7) | 16 + 39 = 55 |
+| Mathematik: Stochastik -> Statistik (Kl. 10) | 16 + 40 = 56 |
+| Mathematik: Stochastik -> Statistik (Kl. 12) | 56 + 36 = 92 |
+| Chemie: Saeuren/Laugen/Salze -> Saeuren & Basen (Kl. 7) | 8 + 34 = 42 |
+| Biologie: Zellen -> Zellbiologie (Kl. 7) | umbenannt, 40 |
+| Biologie: Oekologie & Umwelt -> Oekologie (Kl. 7) | umbenannt, 32 |
+| Physik: Elektrizitaet & Magnetismus -> Elektrizitaet (Kl. 7) | umbenannt, 36 |
+
+Dabei fielen **vier wortgleiche Dubletten** heraus (Stochastik/Statistik Klasse 12), die
+ein naives Anhaengen doppelt eingetragen haette. Bestand: 8281 -> 8277 Fragen, 210 -> 203
+Dateien.
+
+**Die alten Firebase-Pfade wurden geloescht** - vorher wurde fuer jeden einzeln geprueft,
+dass alle seine Fragen unter dem neuen Pfad angekommen sind. Ohne diesen Schritt haetten
+Challenger und "gemischt" die Fragen doppelt ausgeliefert, weil beide den gesamten
+questionBank-Baum lesen und nicht den Index.
+
+## 61. Sieben Faecher aufgenommen, 1288 Fragen erreichbar gemacht
+
+`SUBCATEGORIES` in `school-duel.html` war eine feste Liste mit acht Faechern. Neu
+aufgenommen: **Ethik, Geographie, Informatik, Kunst, Musik, Politik, Religion.**
+
+Dazu 17 fehlende Unterkategorien in den vorhandenen Faechern, darunter Mathematik/Analysis
+(79 Fragen), Mathematik/Zahlen (41), Chemie/Elektrochemie (40), Deutsch/Textsorten (40).
+
+Erreichbar ueber die gezielte Fachauswahl: vorher 6754, **jetzt 8037 Fragen.**
+
+**Noch nicht erreichbar: 240 Fragen** in sechs Geschichte-Kategorien (Erster Weltkrieg,
+Zweiter Weltkrieg, NS-Zeit, Kalter Krieg, Mittelalter I, Mittelalter II). Sie warten auf
+die Entscheidung aus Abschnitt 57 - ob sie in Weltkriege, Nachkriegszeit und Mittelalter
+eingeschmolzen werden oder als eigene Eintraege ins Menue kommen.
+
+Vier Kategorien stehen weiterhin in der Liste, ohne dass Fragen dazu existieren:
+Deutsch/Wortarten, Deutsch/Satzlehre, Englisch/Phrasen & Redewendungen,
+Chemie/Chem. Bindungen. Sie bleiben als Ziele fuer die KI-Generierung stehen.
