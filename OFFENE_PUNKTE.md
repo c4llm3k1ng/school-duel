@@ -1111,3 +1111,193 @@ Rauschen.
 Meine Schuld: Ich habe ein Ziel genannt, aber nie gesagt, **wie** gezählt wird. Für das
 Ergebnis war es unkritisch, weil am Ende meine Messung über den Rückschrieb entscheidet —
 in künftige Aufträge gehört die Zählregel hinein.
+
+---
+
+# Nachtrag: 5. August 2026, dritte Charge
+
+Vier Dateien in zehn Teile zerlegt: k5 Geographie (152), k5 Technik (74), k5 Körper &
+Gesundheit (71), k7 Geometrie (56). Neun Teile fertig und im Korridor, einer offen.
+
+## 51. Sieben weitere Distraktoren, die in Wahrheit zutrafen
+
+Das ist inzwischen der häufigste schwere Fehlertyp im Bestand. Jedes Mal gilt: Wer das
+Thema gut kennt, scheitert; wer es oberflächlich kennt, trifft zufällig richtig.
+
+| Frage | Der Distraktor, der stimmte |
+|---|---|
+| „Welches Gebirge liegt im **Süden** Deutschlands?" | **Schwarzwald** — liegt in Baden-Württemberg |
+| „Welcher See liegt in **Bayern**?" | **Bodensee** — Lindau liegt am bayerischen Ufer |
+| „Wo liegen die Alpen?" | „hauptsächlich in **Frankreich**" — die Alpen reichen dorthin |
+| „Welches Land liegt auf einer Insel im Nordwesten Europas?" | „**Irland** allein" — trifft zu |
+| „Wer war **Atlas**?" | „Ein Grieche aus der Mythologie" — trifft zu |
+| „Was ist das **Mittelmeer**?" | „Ein Teil des Atlantiks" — fachlich als Nebenmeer geführt |
+| „Wann lebten die **Dinosaurier**?" | „Heute noch teilweise" — Vögel *sind* Dinosaurier, und die alte Erklärung sagte das selbst |
+
+**Und ein Fall, in dem alle vier Optionen richtig waren:** Bei „Wofür braucht der Körper
+Kalzium?" trafen Muskelfunktion, Blutgerinnung und Nervenleitung ebenso zu wie die
+markierte Antwort. Die Frage war nicht lösbar.
+
+## 52. Eine Frage, deren Distraktor die bessere Antwort ist
+
+**„Was ist die längste Gebirgskette Europas?"** — markiert sind die **Alpen** (rund
+1200 km). Als Distraktor stehen die **Karpaten** dort, die mit etwa 1500 km länger sind;
+das Skandinavische Gebirge kommt auf rund 1700 km.
+
+**Empfehlung:** Fragetext auf „höchstes Gebirge Europas" ändern, dann stimmt die markierte
+Antwort. Sonst müsste der Distraktor weg.
+
+## 53. Zwei Fragen, die sich gegenseitig widersprechen
+
+In `k7__Mathematik__Geometrie` definiert eine Frage den **Scheitelwinkel** als „den Winkel
+an dieser Ecke" (gemeint ist der Spitzenwinkel im gleichschenkligen Dreieck). Die
+Standarddefinition — die gegenüberliegenden gleich großen Winkel beim Schnitt zweier
+Geraden — steht in einer *anderen* Frage derselben Datei als **Distraktor**.
+
+Wer die Schuldefinition gelernt hat, findet bei der ersten Frage keine passende Option.
+
+## 54. Sachfehler, korrigiert
+
+- **Radioaktivität** war „entdeckt von Marie Curie" — entdeckt hat sie Henri Becquerel 1896.
+  Curie prägte den Begriff und entdeckte Polonium und Radium.
+- **Atlas** trägt in der Sage das **Himmelsgewölbe**, nicht die Erde.
+- **Amazonas:** „20 % des gesamten Süßwassers der Erde" ist falsch — der Großteil steckt im
+  Eis. Gemeint ist rund ein Fünftel des weltweit ins Meer fließenden Flusswassers.
+- **Wolga:** stand mit 3.692 km, üblich sind rund 3.530 km.
+- **Marianengraben:** 11.034 m gilt als überholt, moderne Messungen liegen bei rund 11.000 m.
+- **Die Schweiz hat offiziell keine Hauptstadt** — Bern ist „Bundesstadt".
+- **Impfung** war als „Einführung abgeschwächter Erreger" definiert. Totimpfstoffe und
+  mRNA-Impfstoffe enthalten keine abgeschwächten Erreger.
+- **Dinosaurier:** „vor 252 Millionen Jahren" ist der Beginn des Mesozoikums; die ersten
+  Dinosaurier traten vor rund 230 Millionen Jahren auf.
+- **Magnetismus** zog „Eisen und andere Metalle" an — Aluminium und Kupfer eben nicht.
+
+## 55. Zwei Angaben, die Kinder verunsichern könnten
+
+- **Ruhepuls:** „ca. 70 pro Minute" gilt für Erwachsene. Fünftklässler haben einen deutlich
+  höheren Ruhepuls und könnten den eigenen für krankhaft halten. Jetzt mit dem Zusatz „bei
+  Kindern schneller".
+- **Schweißmenge:** „bis zu 2–3 Liter pro Stunde" ist stark überzogen und gilt allenfalls
+  für hitzeadaptierte Leistungssportler. Entfernt.
+
+Die Fragen zu Ernährung und gesundem Lebensstil wurden bewusst ohne Kalorien-, Gewichts-
+oder Körperformaussagen formuliert. Die Diabetes-Frage enthält keine Schuldzuweisung an
+Ernährung oder Lebensstil — in einer Klasse können Kinder mit Typ-1-Diabetes sitzen.
+
+## 56. Astronomische Zahlen altern schneller als gedacht
+
+- **Saturnmonde:** stand „über 140", bestätigt sind inzwischen 274.
+- **Jupitermonde:** stand „mindestens 95", inzwischen 97.
+- **Uranusmonde:** stand „27", inzwischen 28.
+- **CO₂-Anteil der Luft:** „0,04 %" — inzwischen gut 0,042 % und weiter steigend.
+- **„Zwölf Menschen auf dem Mond"** stimmt heute und wird sich mit den Artemis-Missionen
+  ändern.
+- **Elemente im Periodensystem:** „118" — neue kommen hinzu.
+
+Alle auf offene Formulierungen umgestellt („über 90 bekannte Monde", „sehr viele Monde").
+
+## 57. Die Kategorien der App — der größte strukturelle Fund
+
+Die App hat eine **fest verdrahtete** Kategorienliste (`SUBCATEGORIES` in
+`school-duel.html`): acht Fächer mit je sechs bis sieben Unterkategorien. Die Fragenbank
+enthält deutlich mehr Kombinationen.
+
+**1528 Fragen — 18 % des Bestands — sind über die Fachauswahl nicht erreichbar.**
+
+Einschränkung: Über „gemischt" und im Challenger werden sie sehr wohl gespielt, beide lesen
+die ganze Bank. Betroffen ist die *gezielte* Auswahl. Wer bewusst Informatik, Ethik,
+Religion, Musik, Kunst, Geographie oder Politik üben will, findet diese Fächer nicht.
+
+### Sieben Fächer fehlen ganz
+
+Ethik (40), Geographie (117), Informatik (40), Kunst (34), Musik (37), Politik (40),
+Religion (38). **Entscheidung: Sie werden als eigene Fächer aufgenommen.**
+
+### Doppelte Kategorien für dasselbe Thema
+
+| Fach | Doppelung | Entscheidung |
+|---|---|---|
+| Mathematik | `Bruchrechnung` 220 / `Brüche` 81 | zusammenlegen |
+| Mathematik | `Statistik` 282 / `Stochastik` 80 / `Statistik & Zufall` 39 | zusammenlegen |
+| Biologie | `Zellbiologie` 118 / `Zellen` 40 | zusammenlegen |
+| Biologie | `Ökologie` 161 / `Ökologie & Umwelt` 32 | zusammenlegen |
+| Physik | `Elektrizität` 78 / `Elektrizität & Magnetismus` 36 | zusammenlegen |
+| Chemie | `Säuren & Basen` 56 / `Säuren, Laugen & Salze` 34 | zusammenlegen |
+| Englisch | `Vokabular` 41 / `Vokabeln` 16 | zusammenlegen |
+
+### Geschichte — hier steht die Entscheidung noch aus
+
+Ein Zehntklässler sieht fünf überlappende Einträge:
+
+| Kategorie | Fragen | Was tatsächlich drinsteht |
+|---|---|---|
+| `Weltkriege` | 142 | NS-Zeit (46), Weimarer Republik (23), Erster WK (14), Zweiter WK (11) |
+| `Erster Weltkrieg` | 40 | **Weimarer Republik (21)**, Erster WK (14) |
+| `Zweiter Weltkrieg` | 40 | Zweiter WK (16), NS-Zeit (11) |
+| `NS-Zeit` | 40 | NS-Zeit (30), Zweiter WK (10) |
+| `Kalter Krieg` | 40 | Kalter Krieg (22), Deutsche Teilung (5) |
+
+Die Kategorie **„Erster Weltkrieg" enthält mehrheitlich Weimarer Republik** — das ist nicht
+nur eine Kategorienfrage, sondern falsch einsortierter Inhalt.
+
+`Mittelalter I` und `Mittelalter II` sind beide Klasse 7 und teilen sich sauber nach Thema
+(40× Mittelalter, 40× Spätmittelalter), während Klasse 5 und 6 nur `Mittelalter` haben.
+
+**Vorschlag:** Erster + Zweiter Weltkrieg + NS-Zeit → `Weltkriege`; Kalter Krieg →
+`Nachkriegszeit`; Mittelalter I + II → `Mittelalter`. Dann braucht Geschichte keine neue
+Kategorie. Kostet die Feingliederung — die aber ohnehin nicht hält, was sie verspricht.
+
+### Werkzeug
+
+`question-generator/check_kategorien.js` stellt Dateiname und tatsächliche Themen
+gegenüber. Es prüft die Taxonomie der Bank gegen sich selbst: Zeigt ein `topic` auf eine
+Unterkategorie, die es im selben Fach gibt, ist das ein Verdacht.
+
+## 58. Weitere Fehler in Fragetexten
+
+Aus dieser Charge, alle nur gemeldet:
+
+- „Wo liegt Hamburg?" mit Antwort „An der Nordsee" — Hamburg liegt rund 100 km flussaufwärts
+  an der Elbe.
+- „Nachbarländer im **Norden** Deutschlands?" mit „Dänemark und **Niederlande**" — die
+  Niederlande liegen im Westen.
+- „Hauptstadt **Großbritanniens**" — London ist Hauptstadt des Vereinigten Königreichs;
+  Großbritannien ist die Insel.
+- „Freistaat unter den Bundesländern" — **Thüringen** ist ebenfalls Freistaat, steht aber in
+  keiner Option.
+- „Wo liegt **die** Alpen?", „Was ist die Halbinsel **wo** Spanien und Portugal liegen?",
+  „Welches Land **ist die Insel**?", „Flächen**kleinste** Bundesland?" — Grammatik.
+- „Was ist ein Rad und Achse?", „Was ist Solarzelle?", „Was ist Aggregatzustand?", „Was ist
+  Kristall?", „Was ist **ein** Magnetfeld der Erde?" — fehlende Artikel.
+- „Was ist die Schwerkraft **und** wer entdeckte sie systematisch?" — Doppelfrage, alle
+  Optionen antworten nur auf den Personenteil.
+- „Was ist der Unterschied Viren/Bakterien?" und „Was ist Ernährungsumstellung?" —
+  unvollständig.
+
+## 59. Nachtrag aus dem letzten Teil der Geographie
+
+**Noch zwei Faelle mit zwei richtigen Antworten:**
+- „Welcher Kanal verbindet Nordsee und Ostsee?" hatte den **Kaiser-Wilhelm-Kanal** als
+  Distraktor. Das ist derselbe Kanal wie der Nord-Ostsee-Kanal, nur unter seinem
+  historischen Namen.
+- „Welches Bundesland grenzt an Polen?" - auch Sachsen und Mecklenburg-Vorpommern grenzen
+  an Polen, stehen aber nicht zur Auswahl. Lösbar, aber knapp.
+
+**Ein Fragetext, der schlicht falsch ist:**
+„Welche Stadt ist das groesste Bundesland Deutschlands (nach Einwohnern)?" - das
+einwohnerstaerkste Bundesland ist Nordrhein-Westfalen, nicht Berlin. Gemeint sind
+offenbar nur die Stadtstaaten. **Fragetext gehoert ueberarbeitet.**
+
+**Weitere Sachfehler, korrigiert:** Das Wattenmeer liegt ausschliesslich an der Nordsee,
+nicht auch an der Ostsee. Bremen hat rund 420 km2, nicht 404.
+
+**Zwei Aussagen, die im Schulbuch stehen, aber nicht ganz stimmen:**
+- „Der Rhein ist der laengste Fluss Deutschlands" gilt nur fuer den deutschen Abschnitt.
+  Der laengste Fluss, der vollstaendig in Deutschland verlaeuft, ist der Main.
+- „Der Bodensee ist der groesste See Deutschlands" - er liegt in drei Laendern. Der
+  groesste vollstaendig deutsche See ist die Mueritz. Aus der Erklaerung entfernt.
+
+**Zur Entscheidung:** Bei „Zentrum der deutschen Automobilindustrie" (Antwort Stuttgart)
+steht Muenchen als Distraktor - dort sitzt BMW, die Stadt ist ebenfalls ein Zentrum der
+Autoindustrie. Der Agent schlaegt vor, die Frage entweder zu streichen oder auf „Wiege des
+Automobils" zuzuspitzen.
