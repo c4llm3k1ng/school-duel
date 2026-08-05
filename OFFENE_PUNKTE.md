@@ -1608,3 +1608,153 @@ Umlautfassung im Bestand nicht belegt ist und das Skript dann zu Recht nicht rä
 
 **Zur Entscheidung:** Sollen die Optionen dieser Datei für eine Umlaut-Korrektur
 freigegeben werden? Es geht um etwa sechs Stellen, alle eindeutig.
+
+---
+
+# Nachtrag: fünfte Charge
+
+k5 Allgemeinwissen (102), k5 Statistik (89), k5 Rechtschreibung (87), k12 Weltkriege (50).
+
+## 78. Vier Fragen hatten zwei identische Antwortmöglichkeiten
+
+Der schwerste Fund dieser Charge, und er betraf **jedes Mal die als richtig markierte
+Option**. Ein Kind klickt die richtige Antwort an und bekommt „falsch" angezeigt, weil es
+die falsche der beiden identischen erwischt hat.
+
+| Datei | Frage | Die doppelte Option |
+|---|---|---|
+| `k5__Deutsch__Rechtschreibung` | „Richtige Verbform:" | „er schläft" stand zweimal |
+| `k6__Deutsch__Rechtschreibung` | „Welche Schreibweise ist korrekt?" | „ein vierjähriges Kind" zweimal |
+| `k6__Deutsch__Rechtschreibung` | „Wie schreibt man Bürgermeister?" | „Bürgermeister" zweimal |
+| `questionbank_katalog/anime_schwer` | Episodenzahl Dragon Ball Z | „291" zweimal |
+
+Bei der Verbform-Frage kam erschwerend hinzu, dass ein weiterer Distraktor — „er schleift" —
+ein korrekt geschriebenes deutsches Wort ist.
+
+Alle vier behoben. Der ganze Bestand ist jetzt frei von doppelten Optionen.
+
+**Eigener Fehler bei der Suche:** Mein erster Durchlauf meldete 31 Fälle. Ich hatte auf
+Kleinschreibung normalisiert — in einer *Rechtschreibdatei* zerstört das genau die
+Unterscheidung, um die es geht. „Heute" und „heute" sind dort zwei verschiedene Antworten.
+Nach der Korrektur blieben vier echte Fälle.
+
+## 79. 81 Fragen zeigten doppelte Antwortbuchstaben an
+
+In acht Dateien trugen die Optionen eigene Buchstabenpräfixe: „A) München", „B) Hamburg".
+Die App setzt ihre Buchstaben aber selbst davor — angezeigt wurde also **„A  A) München"**.
+
+Seit die Optionen gemischt werden, war das Präfix zusätzlich irreführend: Eine mit „A)"
+beschriftete Option kann an Position C landen.
+
+Alle 81 bereinigt (`fix_optionspraefixe.js`). Die Sicherheitsregel: nur wenn *alle vier*
+Optionen ein Präfix tragen — dann ist es zweifelsfrei Formatierung und kein Inhalt. Die
+Längenverteilung bleibt dabei erhalten, weil allen vier gleich viele Zeichen abgezogen
+werden.
+
+Dabei fiel eine Erklärung auf, die auf „Option C" verwies. Solche Verweise zeigen seit dem
+Mischen ins Leere; sie ist jetzt inhaltlich formuliert.
+
+## 80. Zwei Fragetexte zeigten Markdown-Sternchen an
+
+„Welches Element war \*kein\* Merkmal…" — die App stellt Text wörtlich dar, die Sternchen
+waren also sichtbar. Durch typografische Anführungszeichen ersetzt, die Betonung bleibt.
+
+Die übrigen 26 Sternchen im Bestand sind **Malzeichen** (`(2*3)/(5*3)`, `P=I²*R`) und
+bleiben.
+
+## 81. Ein zweites Maß für die Ausnutzbarkeit
+
+Ein Agent senkte Rang 1 von 38 % auf 29 %, ohne die Zahl der Rang-1-Fragen zu verändern —
+er hatte Gleichstände aufgelöst und damit den Nenner vergrößert. Das sah nach einem
+statistischen Trick aus, deshalb habe ich direkt gemessen, was die Strategie „immer die
+längste anklicken" tatsächlich einbringt:
+
+| | erwartete Treffer |
+|---|---|
+| vorher | 9,4 von 30 — **31 %** |
+| nachher | 7,2 von 30 — **24 %** |
+| Zufall | 25 % |
+
+Die Verbesserung war echt, aber aus einem anderen Grund als gedacht: Bei vier gleich langen
+Optionen trifft „die längste" mit 25 % Wahrscheinlichkeit zufällig; steht die richtige
+Antwort danach eindeutig auf Rang 2, trifft sie nie.
+
+**Diese Kennzahl gehört ab jetzt zur Abnahme.** Die Rangverteilung bleibt daneben nötig —
+sie fängt zusätzlich den umgekehrten Fall ab, dass die richtige Antwort *nie* die längste
+ist und man diese Option von vornherein wegstreichen kann.
+
+Ergebnis der Charge nach beiden Maßen:
+
+| Datei | Ränge | „längste" gewinnt |
+|---|---|---|
+| `k5__Allgemeinwissen__Allgemein` | 51/15/12/22 → 30/22/19/29 | 38 % → **24 %** |
+| `k5__Mathematik__Statistik` | 49/13/18/21 → 27/24/24/24 | 33 % → **22 %** |
+| `k5__Deutsch__Rechtschreibung` | 49/14/16/21 → 26/21/26/26 | 35 % → **24 %** |
+| `k12__Geschichte__Weltkriege` | 53/26/13/8 → 22/27/27/24 | 47 % → **25 %** |
+
+## 82. Sachfehler, korrigiert
+
+- **Eine Lückenaufgabe war unlösbar:** „Ich gehe in meine Kla__e." mit der markierten
+  Antwort „sse" ergibt **„Klassee"**. Die Lücke steht vor dem vorhandenen e. Auf „ss"
+  korrigiert.
+- **Der Eiffelturm** war 1889 rund 300 Meter hoch, nicht 330 — die 330 gelten erst mit den
+  heutigen Antennen.
+- **Die NVA-Frage** ist bereits in Abschnitt 65 vermerkt; hier kam dazu: Umlaute entstehen
+  aus a, o, u — `Haus → Häuser` ist au → äu und damit kein Beispiel dafür.
+- **Die Kalahari** liegt überwiegend in Botswana und Namibia, nicht „in Südafrika".
+- **Rathenau** leitete die Kriegsrohstoffabteilung 1914/15, nicht „ab 1916". Das steht im
+  **Fragetext** und ist damit nicht heilbar — siehe Abschnitt 84.
+
+## 83. Distraktoren, die in Wahrheit zutrafen
+
+- **Entente-Mächte:** „nur Italien und Japan" — beide traten tatsächlich auf Entente-Seite
+  ein; falsch war allein das Wort „nur".
+- **Dolchstoßlegende:** Ein geplanter Distraktor („die Oberste Heeresleitung habe den
+  Waffenstillstand erzwungen") wäre **wahr** gewesen. Der Agent hat ihn verworfen.
+- **Giftgas im Ersten Weltkrieg:** „Er führte zur Ächtung chemischer Waffen in den Genfer
+  Konventionen" — das Genfer Protokoll 1925 ist genau diese Folge.
+- **Molotow-Ribbentrop-Pakt:** „Zusage sowjetischer Rohstofflieferungen" — ein
+  Handelsabkommen mit diesem Inhalt gab es am 19. August 1939, wenige Tage vor dem Pakt.
+- **Weiße Rose:** „Die Rote Kapelle" verbreitete ebenfalls Flugblätter.
+
+Bemerkenswert: Zwei Agenten haben zusätzlich gemeldet, welche naheliegenden Distraktoren
+sie **bewusst nicht** verwendet haben, weil sie zugetroffen hätten — Jalta bei der Frage
+nach der Konferenz von 1945, der sowjetische Kriegseintritt bei Japans Kapitulation,
+„Churban" als hebräischer Begriff für die Schoa.
+
+## 84. Zwei Fragetexte, die eine Entscheidung brauchen
+
+- **„…ab 1916 unter der Leitung von Walther Rathenau"** — falsch datiert. Rathenau leitete
+  die Kriegsrohstoffabteilung von August 1914 bis Frühjahr 1915; ab 1916 bestimmte das
+  Hindenburg-Programm die Kriegswirtschaft. Entweder „ab 1916" streichen oder den Namen
+  ersetzen.
+- **„Welches Konzept war kein Prinzip der Potsdamer Konferenz?"** mit der Antwort
+  „Wiedervereinigung" — die setzt eine Teilung voraus, die es 1945 als Staatenteilung noch
+  nicht gab. Die Antwort ist aus dem falschen Grund richtig.
+
+## 85. Würde des Themas
+
+- Die Erklärung zur **Reichspogromnacht** sprach nur von „jüdischen Geschäften und
+  Synagogen". Sie benennt jetzt auch die Verschleppungen und Tötungen und macht den Begriff
+  „Reichskristallnacht" als NS-Propagandawort kenntlich.
+- Die **Wannseekonferenz** war als Ort beschrieben, an dem der Völkermord „beschlossen"
+  wurde. Historiographisch korrekt: Der Mord lief bereits, die Konferenz diente vor allem
+  der Zuständigkeitsklärung.
+- Die **Dolchstoßlegende** war als „gab der Heimat die Schuld" beschrieben. Die Erklärung
+  benennt jetzt ihren antisemitischen Kern.
+- Bei der Kapitulation Japans standen **„der Mauerfall"** und **„die Mondlandung"** als
+  Distraktoren — beim Thema Atombombenabwürfe unpassend salopp.
+
+## 86. Ein Muster, das noch offen ist
+
+In `k5__Allgemeinwissen__Allgemein` tragen bei 14 Fragen **alle drei Distraktoren einen
+Begriffsnamen mit Doppelpunkt** („Diktatur: …", „Sauerstoff: …"), die richtige Option
+dagegen nicht. Bei „Was ist X?"-Fragen lässt sich die Antwort dadurch rein formal erraten:
+Wer eine andere Sache benennt, kann nicht die gesuchte sein.
+
+Der Agent hat es **nicht** repariert, und das war richtig: Die Labels bei der richtigen
+Option zu ergänzen würde die Antwort erst recht verraten; sie aus rund 40 Distraktoren zu
+entfernen hätte die Längenverteilung gekippt.
+
+**Das braucht eine Entscheidung.** Es ist derselbe Verrat wie der Klammer-Verrat, nur in
+umgekehrter Richtung.
