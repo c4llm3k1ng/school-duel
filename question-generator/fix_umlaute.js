@@ -28,7 +28,17 @@ const REPO = path.resolve(__dirname, '..');
 const APPLY = process.argv.includes('--apply');
 const REST = process.argv.includes('--rest');
 
-const WORT = /\b[A-Za-zÄÖÜäöüß]+\b/g;
+// Kein \b! In JavaScript umfasst \b nur [A-Za-z0-9_] - Umlaute gelten dort als
+// Wortgrenze. In "überquerte" liegt damit eine Grenze zwischen "ü" und "b",
+// und das Wort "berquerte" wird als eigener Treffer erkannt. Das enthaelt ein
+// "ue" (q-u-e-r), also hat dieses Skript bei jedem Lauf ein weiteres "ü"
+// davorgesetzt: aus "überquerte" wurde "üüüüberquerte". Zwei Stellen im
+// Bestand waren so beschaedigt, bis es auffiel.
+//
+// Die Lookarounds benutzen dieselbe Zeichenklasse wie der Treffer und
+// definieren die Wortgrenze damit korrekt fuer deutsche Buchstaben.
+const BUCHST = 'A-Za-zÄÖÜäöüß';
+const WORT = new RegExp('(?<![' + BUCHST + '])[' + BUCHST + ']+(?![' + BUCHST + '])', 'g');
 
 // Nach dem Ersetzen: ss -> ß, wo nach langem Vokal ein Eszett steht.
 const NACHBESSERN = [
@@ -38,9 +48,10 @@ const NACHBESSERN = [
 ];
 
 // Formen, bei denen der Beweis zwar greift, das Ergebnis aber falsch waere.
-// "berquerte" ist der Rest von "überquerte" - das ü ist ganz verlorengegangen,
-// ein ue->ü daraus ergaebe "berqürte".
-const SONDERFAELLE = { berquerte: 'überquerte', Berquerte: 'Überquerte' };
+// Derzeit leer: Der einzige Eintrag war "berquerte" -> "überquerte", und der
+// war selbst die Folge des \b-Fehlers oben. Mit der korrigierten Wortgrenze
+// wird "überquerte" als ein Wort erkannt und enthaelt kein ae/oe/ue mehr.
+const SONDERFAELLE = {};
 
 const umlaut = w => w.replace(/ae/g, 'ä').replace(/Ae/g, 'Ä')
                      .replace(/oe/g, 'ö').replace(/Oe/g, 'Ö')
@@ -91,6 +102,13 @@ for (const { voll } of dateien) {
     const z = ziel(w);
     if (z === w) continue;                                  // nichts zu tun
     if (w.length > 1 && w === w.toUpperCase()) continue;     // Akronym: UEFA, OECD
+    // Kurze Formen ausschliessen. Der Beleg-Beweis traegt bei ihnen nicht:
+    // "ae"/"oe"/"ue" gelten als belegt, weil in einer Rechtschreibfrage die
+    // Aufzaehlung "ä, ö, ü" steht; das englische "due" waere zu "dü" geworden,
+    // weil die Band "Hüsker Dü" im Musikkatalog vorkommt. Eigennamen und
+    // Aufzaehlungen erzeugen genug Zufallstreffer, um kurze Woerter unsicher
+    // zu machen - und gewonnen ist bei ihnen ohnehin nichts.
+    if (w.length < 4) continue;
     if (belegt.has(z.toLowerCase())) karte.set(w, z);
     else offen.set(w, z);
   }

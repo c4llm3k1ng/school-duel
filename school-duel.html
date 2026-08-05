@@ -8071,7 +8071,11 @@ async function startOnlineGame() {
   try {
     await fbDB.ref('rooms/' + onlineRoomCode + '/status').set('loading');
     G.mode = 'online';
-    const questions = await loadQuestions();
+    // Mischen MUSS hier passieren, vor dem Schreiben in den Raum: Nur so sehen
+    // Host und Gast dieselbe Reihenfolge. Ohne das stand die richtige Antwort
+    // in 61 % aller Fragen der Bank auf Position B, in vielen Dateien sogar
+    // ausnahmslos - "immer B anklicken" haette das halbe Duell gewonnen.
+    const questions = shuffleOptions(await loadQuestions());
     const resetPlayers = {};
     for (let i = 1; i <= onlineMaxPlayers; i++) {
       const slot = 'p' + i;
@@ -8468,7 +8472,12 @@ function chalPickQuestion() {
 
   const q = bucket[Math.floor(Math.random() * bucket.length)];
   CH.usedSet.add(q.question);
-  return q;
+  // Optionen mischen. chalShowQuestion() rendert q.options in der gelieferten
+  // Reihenfolge und chalAnswer() vergleicht gegen q.correct - ohne Mischen
+  // bliebe die Position aus der JSON-Datei stehen. In 61 % aller Fragen der
+  // Bank steht die richtige Antwort dort auf Position B, in vielen Dateien
+  // ausnahmslos: "immer B anklicken" haette den Challenger gewonnen.
+  return shuffleOptions([q])[0];
 }
 
 // Strip trailing parenthetical hints from question text, e.g. "Frage? (Antwort)" → "Frage?"

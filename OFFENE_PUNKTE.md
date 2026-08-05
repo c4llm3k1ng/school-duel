@@ -621,11 +621,11 @@ Haelfte ausschliesslich Steinzeit, Aegypten, Mesopotamien und Griechenland - kei
 Frage zur Fruehen Neuzeit (1492-1789). Ein Kind, das diese Kategorie waehlt, bekommt
 Antike. Entweder falsch einsortiert oder falsch benannt. Das reiht sich in Abschnitt 20 ein.
 
-**Der Agent hat "alle 40 Fragen haben correct: 1" als Verrat gemeldet. Das ist es nicht.**
-`shuffleOptions()` in `school-duel.html` mischt die Optionen zur Laufzeit und rechnet
-`correct` mit um - der Index im JSON ist im Spiel nie sichtbar. Ich notiere es hier, weil
-inzwischen rund ein Dutzend Agenten denselben Fehlalarm ausgeloest haben und du die Meldung
-sonst irgendwann selbst siehst und dich erschrickst.
+**Der Agent hat "alle 40 Fragen haben correct: 1" als Verrat gemeldet. Die Agenten hatten
+recht, ich lag falsch — siehe Abschnitt 33.** Ich hatte das hier zunächst als Fehlalarm
+abgetan, weil `shuffleOptions()` die Optionen zur Laufzeit mischt. Das stimmt aber nur für
+zwei von vier Spielmodi. Der Absatz bleibt als Korrektur stehen, damit die Fehleinschätzung
+nachvollziehbar ist.
 
 **Weitere Sachfehler, korrigiert:** Der Stein von Rosette traegt drei *Schriften*, aber nur
 zwei Sprachen (nicht "dreisprachig"). Die Cheops-Pyramide war in Option und Erklaerung
@@ -803,3 +803,172 @@ fachlich ungenau — es ist eine zweigliedrige negative Konjunktion. Beides beho
 
 In dieser Hälfte markiert **keine** Frage eine im amerikanischen Englisch übliche Form als
 falsch. Der Konflikt aus Abschnitt 31 betrifft nur die zweite Hälfte.
+
+---
+
+# Nachtrag: 5. August 2026
+
+## 33. Die richtige Antwort stand in 61 % aller Fragen auf Position B
+
+**Der schwerwiegendste Fund des ganzen Durchgangs — und ich habe ihn rund fünfzehnmal
+abgewiesen, bevor ich ihn geprüft habe.**
+
+Immer wieder haben Agenten gemeldet, in einer Datei stehe `correct` durchgängig auf
+demselben Wert. Ich habe das jedes Mal als Fehlalarm abgetan, mit dem Hinweis, dass
+`shuffleOptions()` die Optionen zur Laufzeit mischt und den Index mitrechnet. Das steht so
+auch in Abschnitt 29 dieses Dokuments.
+
+**Es stimmt nur für zwei von vier Spielmodi.**
+
+| Modus | mischt? |
+|---|---|
+| Solo / Üben | ja — `startQuiz()` ruft `shuffleOptions()` |
+| Fragen üben | ja — `_startPQ()` ruft `shuffleOptions()` |
+| **Online-Duell** | **nein** — `startOnlineGame()` schrieb die Fragen unverändert in den Raum |
+| **Challenger** | **nein** — `chalShowQuestion()` rendert `q.options` in Originalreihenfolge |
+
+### Wie groß der Verrat war
+
+Über alle 11991 Fragen der Bank verteilt sich `correct` so:
+
+| Position | A | B | C | D |
+|---|---|---|---|---|
+| Anteil | 18 % | **61 %** | 16 % | 5 % |
+
+In **115 Dateien** trägt eine einzige Position mindestens 60 % — in Dutzenden davon
+100 %. Für `k10__Biologie__Evolution`, `k10__Chemie__Allgemein`, `k10__Deutsch__Literatur`,
+`k10__Geschichte__NS_Zeit` und viele weitere gilt: Alle 40 Fragen haben die richtige
+Antwort auf Position B.
+
+Im Online-Duell und im Challenger hätte „immer B anklicken" also 61 % aller Fragen
+gewonnen und in Dutzenden von Dateien ausnahmslos jede. Das ist ein deutlich stärkerer
+Verrat als das Längenmuster, an dem diese ganze Sitzung gearbeitet hat.
+
+### Behoben — an der Ursache, nicht an den Daten
+
+Zwei Stellen im Code:
+
+- `startOnlineGame()` mischt jetzt vor dem Schreiben in den Raum. Das muss genau dort
+  passieren und nicht beim Anzeigen, damit Host und Gast dieselbe Reihenfolge sehen.
+- `chalPickQuestion()` gibt die Frage jetzt gemischt zurück.
+
+Damit ist es für **alle** Fragen behoben, auch für die 3893 Katalogfragen, für später
+hinzukommende und für die Quizze, die Gruppen selbst anlegen. Die JSON-Dateien bleiben
+unangetastet — eine Umsortierung von 11991 Fragen wäre viel Bewegung für ein Problem, das
+zwei Zeilen an der richtigen Stelle lösen.
+
+### Was daraus zu lernen ist
+
+Ich habe eine wiederkehrende Meldung von Fachleuten — den prüfenden Agenten — über Wochen
+mit derselben Begründung abgewiesen, ohne die Begründung je nachzuprüfen. Der Aufwand für
+die Prüfung waren am Ende zwei Suchbefehle. Wenn dieselbe Meldung zum fünfzehnten Mal
+kommt, ist das ein Grund zum Nachsehen, kein Grund zum schnelleren Abwinken.
+
+## 34. Fragen, die zwei richtige Antworten hatten
+
+Alle unlösbar, egal wie gut jemand das Fach beherrscht. Korrigiert.
+
+- **Parallelogrammfläche, Klasse 11:** Der Distraktor `a · b · sin(φ)` ist — als |a|·|b|·sin(φ)
+  gelesen — genau der Flächeninhalt. Ersetzt durch die Kosinus-Variante.
+- **Wendepunkt, Klasse 11:** Der Distraktor „Ein Sattelpunkt, an dem die erste Ableitung
+  verschwindet" beschreibt einen Spezialfall des Wendepunkts, ist also nicht falsch.
+- **Graffiti, Klasse 5:** „Eine antike Kunstform" trifft zu — eingeritzte Inschriften aus
+  Pompeji heißen in der Archäologie tatsächlich Graffiti.
+- **Schlaginstrument, Klasse 5:** „Klavier" stand als falsche Option, während die Nachbarfrage
+  derselben Datei das Klavier ausdrücklich als Schlaginstrument führt.
+- **Oktave, Klasse 5:** Der Distraktor „12" ist als Zahl der Halbtöne ebenso vertretbar wie
+  die markierte 8. Siehe auch Abschnitt 36.
+- **R&B, Klasse 5:** Der Distraktor beschrieb Merkmale, die auf R&B selbst zutreffen.
+
+**Offen geblieben:** Bei „Was ist die Normalverteilung?" steht als Distraktor die
+Binomialverteilung bei großem Stichprobenumfang. Nach dem zentralen Grenzwertsatz ist das
+fast richtig. Der Agent hat ihn bewusst behalten, weil die Verwechslung didaktisch wertvoll
+ist, meldet ihn aber als seinen größten Zweifelsfall. **Deine Entscheidung.**
+
+## 35. Fachlich falsch — korrigiert, bitte gegenlesen
+
+**Zweimal dieselbe vertauschte Krümmung.** In `k11__Mathematik__Algebra` stand an zwei
+Stellen „f''(x) > 0 bedeutet Rechtskrümmung (konvex)". Richtig ist Linkskrümmung. An der
+einen Stelle war nur die Erklärung verdreht; an der anderen trug die als richtig markierte
+**Option** die falsche Aussage, während die zutreffende auf einem Distraktor stand. Da
+`correct` nicht geändert werden darf, wurden die Optionen getauscht.
+
+Ein Kind, das nach dieser Erklärung lernt, hätte die Krümmung dauerhaft falsch gelernt.
+
+**Weitere:**
+- **Sattelpunkt** war als „weder Extremum noch Wendepunkt" definiert. Ein Sattelpunkt *ist*
+  ein Wendepunkt, nämlich einer mit waagerechter Tangente.
+- **Abstand Punkt–Gerade:** Die Formel nannte P₀ den „Lotfußpunkt". Wäre P₀ der Lotfußpunkt,
+  wäre der Abstand schlicht |PP₀| und die Kreuzproduktformel überflüssig. P₀ ist der
+  Stützpunkt der Geraden.
+- **Klavier** war als „Saiten-Schlaginstrument (Idiophon-Hybride)" bezeichnet. Es ist ein
+  Chordophon.
+- **Metronom:** „Erfunden von Johann Mälzel" — erfunden hat es Dietrich Nikolaus Winkel,
+  Mälzel ließ es patentieren.
+- **„Taktstock (Batuta)"** — das Wort gibt es nicht; italienisch ist *bacchetta* bzw.
+  *battuta*.
+- **„Kramer'sche Regel"** → Cramersche Regel, nach Gabriel Cramer.
+- **Michelangelos David** „liegend gemalt" ist ein verbreiteter Mythos — er stand auf einem
+  Gerüst und arbeitete nach hinten gebeugt. Ebenfalls entfernt: die Höhenangabe 5,17 m, die
+  den Sockel einschließt; die Figur misst je nach Quelle 4,10 bis 4,34 m.
+- **Bauhaus:** „von Nazis geschlossen" → das Bauhaus löste sich 1933 unter deren Druck selbst
+  auf.
+
+## 36. Weitere Fehler im Fragetext — nur du kannst sie ändern
+
+Zusätzlich zu Abschnitt 22 und 31:
+
+| Datei | Frage | Was falsch ist |
+|---|---|---|
+| `k11__Mathematik__Geometrie` | „Was ist die Koordinatenform **(Hessesche Normalform)** einer Ebene?" | Setzt beides gleich. Die Hessesche Normalform ist die auf \|n\| = 1 normierte Form. Die Klammer gehört gestrichen. |
+| `k11__Mathematik__Algebra` | „Was ist **die Nullstelle** von f(x) = x² − 4?" | Singular, es gibt zwei (−2 und 2). Die richtige Antwort „x = ±2" widerspricht dem Wortlaut. |
+| `k11__Mathematik__Algebra` | „Was ist Partielle Integration für ∫u·v' dx?" | Grammatisch schief; gemeint ist „Wie lautet die Formel der partiellen Integration …". |
+| `k5__Allgemeinwissen__Musik_Kunst` | „Wie viele Töne hat eine **Oktave**?" | Mehrdeutig: 7 Stufen, 8 mit Oktavton, 12 Halbtöne. Besser: „Wie viele Stufen hat eine Dur-Tonleiter von C bis C?" |
+| `k5__Allgemeinwissen__Musik_Kunst` | „Was **ist** Ludwig van Beethoven?" | Müsste „Wer war …" heißen. |
+| `k5__Allgemeinwissen__Musik_Kunst` | „Was ist Mozart **bekannt für**?" | Umgangssprachlich; korrekt „Wofür ist Mozart bekannt?". Alle Optionen mussten deshalb mit „Für …" beginnen. |
+| `k5__Allgemeinwissen__Musik_Kunst` | „Was **zeigt** ein Mosaik?" | Fragt nach dem Motiv, die richtige Antwort beschreibt die Technik. |
+| `k5__Allgemeinwissen__Musik_Kunst` | „Was ist eine **Fresko-Malerei**?" | Doppelt gemoppelt — „Fresko" ist bereits die Wandmalerei. |
+| `k5__Allgemeinwissen__Musik_Kunst` | „Was sind die drei **Grundfarben**?" | Ohne Kontext mehrdeutig: Malerei Rot/Gelb/Blau, Licht Rot/Grün/Blau, Druck Cyan/Magenta/Gelb. |
+| `k5__Allgemeinwissen__Musik_Kunst` | „Was ist eine **Bildhauerwerkstatt (Atelier)**?" | Gleichsetzung unsauber — ein Atelier ist der Arbeitsraum jedes Künstlers. |
+
+## 37. Eine Frage, die nicht in Klasse 5 gehört
+
+`k5__Allgemeinwissen__Musik_Kunst` enthält **„Was ist Aktzeichnen?"** — das Zeichnen des
+unbekleideten Menschen. Der Agent hat es sachlich-nüchtern formuliert, weil er den Fragetext
+nicht ändern durfte, meldet es aber als für Fünftklässler unpassend. Ich schließe mich dem
+an. **Vorschlag: aus dem Klasse-5-Bestand streichen.**
+
+## 38. Fragen, die einander widersprechen
+
+- **Skulptur gegen Plastik.** Eine Frage definiert die Skulptur als dreidimensionales Werk,
+  das *sowohl* durch Meißeln *als auch* durch Modellieren entsteht. Eine andere derselben
+  Datei grenzt die Plastik davon ab, indem sie die Skulptur auf das Wegnehmen von Material
+  festlegt. Wer beide bekommt, erhält zwei unvereinbare Definitionen. Nur durch eine
+  Änderung der Fragetexte auflösbar.
+- **Klavier** ist in einer Frage ein Schlaginstrument, in der Nachbarfrage nicht (behoben,
+  aber der Fragetext bleibt heikel).
+
+## 39. Der Dateiname „Algebra" stimmt zum größten Teil nicht
+
+Drei von vier Agenten melden es unabhängig voneinander: In `k11__Mathematik__Algebra`
+behandeln 18 von 34 Fragen im ersten Teil, 27 von 34 im dritten und praktisch der gesamte
+zweite und vierte Teil **Differential- und Integralrechnung** — also Analysis. Auch die
+`topic`-Felder sagen „Kettenregel", „Stammfunktion", „Hauptsatz", „Kurvendiskussion".
+
+Wer im Spiel „Algebra" wählt, bekommt überwiegend Analysis. Reiht sich in Abschnitt 20 ein.
+
+Ähnlich: `k5__Allgemeinwissen__Musik_Kunst` enthält in einem Teil nur zwei Musikfragen
+gegenüber 34 Kunstfragen.
+
+## 40. Darstellungsfragen, die jemand am Gerät prüfen muss
+
+- **Acht Fragen in `k11__Mathematik__Geometrie` verwenden LaTeX** (`$\begin{pmatrix}…$`).
+  Ob die App das rendert, konnte kein Agent prüfen. Falls nicht, sind diese Fragen für
+  Schüler unlesbar. **Bitte einmal im Spiel ansehen.**
+- Dieselben Fragen tragen zusätzlich „A) B) C) D)"-Präfixe in den Optionen, während die App
+  die Buchstaben selbst davorsetzt. Nicht entfernt, weil eine Erklärung auf „Option C"
+  verweist — und weil die Optionen zur Laufzeit gemischt werden, zeigt dieser Verweis nach
+  dem Mischen ohnehin ins Leere.
+- Zwei Notationswelten in derselben Datei: teils Unicode (`x³`, `√`), teils ASCII (`x^3`,
+  `sqrt`). Innerhalb jeder Frage konsistent, über die Datei hinweg nicht. Eine
+  Vereinheitlichung ginge nur zusammen mit den Fragetexten.

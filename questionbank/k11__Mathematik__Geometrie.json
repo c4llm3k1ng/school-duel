@@ -109,7 +109,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Eine Geradengleichung in Parameterform besteht aus einem Stützvektor (Ortsvektor eines Punktes auf der Geraden) und einem Richtungsvektor. Als Stützvektor kann $\\vec{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ gewählt werden. Als Richtungsvektor dient der Vektor $\\vec{AB} = \\vec{OB} - \\vec{OA} = \\begin{pmatrix} 3 \\\\ -2 \\\\ 1 \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$. Die korrekte Gleichung ist somit $\\vec{x} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$. Option C hat einen falschen Richtungsvektor (falsches Vorzeichen bei der y-Komponente).",
+    "explanation": "Eine Geradengleichung in Parameterform besteht aus einem Stützvektor (Ortsvektor eines Punktes auf der Geraden) und einem Richtungsvektor. Als Stützvektor kann $\\vec{OA} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ gewählt werden. Als Richtungsvektor dient der Vektor $\\vec{AB} = \\vec{OB} - \\vec{OA} = \\begin{pmatrix} 3 \\\\ -2 \\\\ 1 \\end{pmatrix} - \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$. Die korrekte Gleichung ist somit $\\vec{x} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$. Option C hat einen falschen Richtungsvektor: Dort sind die Vorzeichen der y- und der z-Komponente falsch.",
     "options": [
       "A) $\\vec{x} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -4 \\\\ -2 \\end{pmatrix}$",
       "B) $\\vec{x} = \\begin{pmatrix} 3 \\\\ -2 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 4 \\\\ 0 \\\\ 4 \\end{pmatrix}$",
@@ -149,7 +149,7 @@
     "options": [
       "A) $\\frac{1}{2}$",
       "B) $\\frac{\\sqrt{2}}{2}$",
-      "C) $\\frac{1}{\\sqrt{2}}$",
+      "C) $\\frac{\\sqrt{2}}{4}$",
       "D) $\\frac{\\sqrt{3}}{2}$"
     ],
     "question": "Berechnen Sie den Kosinus des Winkels $\\alpha$ zwischen den Vektoren $\\vec{u} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 1 \\end{pmatrix}$ und $\\vec{v} = \\begin{pmatrix} 0 \\\\ 1 \\\\ 1 \\end{pmatrix}$.",
@@ -195,10 +195,10 @@
     "correct": 1,
     "explanation": "Vektoren beschreiben Verschiebungen oder gerichtete Größen; sie haben Betrag und Richtung, aber keinen festen Anfangspunkt.",
     "options": [
-      "Eine Zahl mit Vorzeichen im Zahlenstrahl",
-      "Eine gerichtete Größe mit Betrag und Richtung",
+      "Eine Zahl mit Vorzeichen auf dem Zahlenstrahl",
+      "Eine Größe mit Betrag und Richtung",
       "Ein fester Punkt im Koordinatensystem",
-      "Eine unbegrenzte Gerade im Raum"
+      "Eine unbegrenzt lange Gerade im Raum"
     ],
     "question": "Was ist ein Vektor?",
     "topic": "Vektoren"
@@ -220,9 +220,9 @@
     "explanation": "Das Skalarprodukt liefert eine Zahl; es ist null, wenn die Vektoren senkrecht aufeinander stehen (cos 90° = 0).",
     "options": [
       "Ein Vektor senkrecht zu a und b mit Betrag |a|+|b|",
-      "a·b = |a|·|b|·cos(φ) = a₁b₁+a₂b₂+a₃b₃ (eine skalare Zahl)",
-      "Die Summe der Beträge: |a| + |b| als skalare Größe",
-      "Das Produkt der Beträge: |a|·|b| ohne Winkelkorrektur"
+      "a·b = |a|·|b|·cos(φ) = a₁b₁+a₂b₂+a₃b₃",
+      "Die Summe der Beträge |a| + |b|",
+      "Das Produkt der Beträge |a|·|b| ohne Winkelkorrektur"
     ],
     "question": "Was ist das Skalarprodukt zweier Vektoren a und b?",
     "topic": "Skalarprodukt"
@@ -282,7 +282,7 @@
       "y = mx + b (Steigungsform für Geraden in der Ebene)",
       "g: x = p + t·v (p = Stützvektor, v = Richtungsvektor, t ∈ ℝ)",
       "ax + by + cz = d (Koordinatenform einer Ebene im Raum)",
-      "x² + y² = r² (Kreisgleichung mit Mittelpunkt im Ursprung)"
+      "x² + y² = r² (Kreisgleichung mit dem Mittelpunkt im Ursprung)"
     ],
     "question": "Wie lautet die Parameterform einer Geraden im Raum?",
     "topic": "Geraden"
@@ -291,8 +291,8 @@
     "correct": 1,
     "explanation": "P liegt auf g: x = p + t·v → P = p + t·v. Hat das Gleichungssystem eine Lösung für t, liegt P auf g.",
     "options": [
-      "Man berechnet den senkrechten Abstand von P zur Geraden g",
-      "Man setzt P in die Geradengleichung ein und löst nach t auf – wenn eine Lösung existiert, liegt P auf g",
+      "Man berechnet den senkrechten Abstand des Punktes P zur Geraden",
+      "Man setzt P in die Geradengleichung ein und löst nach t auf",
       "Man berechnet das Skalarprodukt des Ortsvektors mit dem Richtungsvektor",
       "Man vergleicht die Beträge der Ortsvektoren von P und dem Stützvektor"
     ],
@@ -316,7 +316,7 @@
     "explanation": "Eine Ebene wird durch einen Punkt (p) und zwei linear unabhängige Richtungen (u, v) aufgespannt.",
     "options": [
       "ax + by + cz = d (Koordinatenform mit Normalenvektor (a,b,c))",
-      "E: x = p + s·u + t·v (p = Stützvektor, u und v = Spannvektoren, s,t ∈ ℝ)",
+      "E: x = p + s·u + t·v (p = Stützvektor, u, v = Spannvektoren)",
       "y = mx + b (Geradengleichung in der Ebene, nicht im Raum)",
       "x² + y² + z² = r² (Kugelgleichung mit Mittelpunkt im Ursprung)"
     ],
@@ -337,7 +337,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Die Koordinatenform ax + by + cz = d ergibt sich aus der Normalenform durch Ausmultiplizieren; (a, b, c) ist der Normalenvektor.",
+    "explanation": "Die Koordinatenform ax + by + cz = d entsteht aus der Normalenform n·(x−p) = 0 durch Ausmultiplizieren; (a, b, c) sind die Komponenten des Normalenvektors n. Teilt man die Gleichung zusätzlich durch |n| = √(a²+b²+c²), erhält man die Hessesche Normalform.",
     "options": [
       "ax + by + cz = d (a, b, c = Komponenten des Normalenvektors)",
       "x = p + s·u + t·v (Parameterform mit zwei Richtungsvektoren)",
@@ -349,31 +349,31 @@
   },
   {
     "correct": 1,
-    "explanation": "n = u × v. Das Kreuzprodukt der Spannvektoren steht senkrecht auf der Ebene.",
+    "explanation": "n = u × v. Das Kreuzprodukt steht senkrecht auf beiden Spannvektoren und damit senkrecht auf der gesamten Ebene.",
     "options": [
-      "Man nimmt den Stützvektor p als Normalenvektor der Ebene",
-      "Man bildet das Kreuzprodukt der beiden Spannvektoren u und v",
-      "Man addiert die Spannvektoren u und v komponentenweise",
-      "Man berechnet das Skalarprodukt der Spannvektoren u und v"
+      "Man verwendet den Stützvektor p der Ebene als Normalenvektor",
+      "Man bildet das Kreuzprodukt der Spannvektoren u und v",
+      "Man addiert die Spannvektoren komponentenweise",
+      "Man berechnet das Skalarprodukt der beiden Spannvektoren u und v"
     ],
     "question": "Wie bestimmt man den Normalenvektor einer Ebene aus der Parameterform?",
     "topic": "Ebenen"
   },
   {
     "correct": 0,
-    "explanation": "Abstandsformel Punkt–Ebene (Hessesche Normalform): einsetzen der Koordinaten von P und durch den Betrag des Normalenvektors dividieren.",
+    "explanation": "Man setzt die Koordinaten von P in die linke Seite ein, zieht d ab, nimmt den Betrag und teilt durch die Länge des Normalenvektors: d(P,E) = |a·px + b·py + c·pz – d| / √(a²+b²+c²). Das Abziehen von d und der Betrag sind beide nötig.",
     "options": [
-      "d(P,E) = |a·px+b·py+c·pz – d| / √(a²+b²+c²)",
-      "d(P,E) = |px+py+pz| / √(a²+b²+c²)",
-      "d(P,E) = |p| / √(a²+b²+c²)",
-      "d(P,E) = (a·px+b·py+c·pz) / (a+b+c)"
+      "d(P,E) = |a·px + b·py + c·pz – d| / √(a²+b²+c²)",
+      "d(P,E) = |a·px + b·py + c·pz + d| / √(a²+b²+c²)",
+      "d(P,E) = |a·px + b·py + c·pz – d| / (a²+b²+c²)",
+      "d(P,E) = (a·px + b·py + c·pz – d) / (a+b+c)"
     ],
     "question": "Wie berechnet man den Abstand eines Punktes P von einer Ebene E: ax+by+cz=d?",
     "topic": "Abstände"
   },
   {
     "correct": 1,
-    "explanation": "Der Schnittwinkel zweier Ebenen ist gleich dem Winkel ihrer Normalenvektoren (bzw. dem Ergänzungswinkel dazu).",
+    "explanation": "Der Schnittwinkel zweier Ebenen ist der Winkel ihrer Normalenvektoren: cos φ = |n₁·n₂| / (|n₁|·|n₂|). Der Betrag im Zähler sorgt dafür, dass man den spitzen Winkel zwischen 0° und 90° erhält und nicht dessen Supplementwinkel.",
     "options": [
       "cos φ = |p₁·p₂| / (|p₁|·|p₂|) (Winkel der Stützpunkte zueinander)",
       "cos φ = |n₁·n₂| / (|n₁|·|n₂|) (Skalarprodukt der Normalenvektoren)",
@@ -385,36 +385,36 @@
   },
   {
     "correct": 0,
-    "explanation": "Parallele Normalenvektoren bedeuten parallele (oder identische) Ebenen. Ob sie identisch oder echt parallel sind, zeigt ein Einsetzen eines Punktes.",
+    "explanation": "Parallele Normalenvektoren bedeuten parallele oder identische Ebenen. Setzt man einen Punkt der einen Ebene in die Gleichung der anderen ein, zeigt sich, welcher der beiden Fälle vorliegt.",
     "options": [
-      "Sie sind parallel oder identisch",
-      "Sie schneiden sich",
-      "Sie sind senkrecht",
-      "Sie sind windschief"
+      "Sie sind parallel oder sogar identisch",
+      "Sie schneiden sich in genau einer Schnittgeraden",
+      "Sie stehen senkrecht aufeinander, schneiden sich also",
+      "Sie sind windschief zueinander"
     ],
     "question": "Was ist die Lagebeziehung zweier Ebenen mit demselben Normalenvektor (bis auf Skalierung)?",
     "topic": "Ebenen"
   },
   {
     "correct": 1,
-    "explanation": "Beim Gauß-Algorithmus eliminiert man Variablen Schritt für Schritt durch Zeilenoperationen, bis eine Dreiecksform vorliegt.",
+    "explanation": "Erlaubt sind elementare Zeilenumformungen: Zeilen tauschen, eine Zeile mit einer Zahl ungleich null multiplizieren, ein Vielfaches einer Zeile zu einer anderen addieren. Damit eliminiert man Variablen bis zur oberen Dreiecksform und löst dann von unten nach oben durch Rückwärtseinsetzen.",
     "options": [
-      "Durch simultanes Gleichsetzen und schrittweises Auflösen aller Gleichungen",
-      "Durch elementare Zeilenumformungen zur oberen Dreiecksform, dann Rückwärtseinsetzen",
+      "Durch simultanes Gleichsetzen und Auflösen aller Gleichungen",
+      "Durch elementare Zeilenumformungen zur Dreiecksform, dann Rückwärtseinsetzen",
       "Durch sukzessive Multiplikation aller Gleichungen miteinander",
-      "Durch die Kramer'sche Regel über Determinanten bei beliebigen Systemen"
+      "Durch Anwendung der Cramerschen Regel mit Determinanten auf beliebige Systeme"
     ],
     "question": "Wie löst man ein lineares Gleichungssystem mit dem Gauß-Algorithmus?",
     "topic": "Lineares Gleichungssystem"
   },
   {
     "correct": 1,
-    "explanation": "Überbestimmt: mehr Gleichungen als Unbekannte. Oft gibt es keine Lösung (widersprüchliches System).",
+    "explanation": "Überbestimmt heißt: mehr Gleichungen als Unbekannte. Meist ist ein solches System widersprüchlich und hat keine Lösung; sind Gleichungen aber linear abhängig, kann es trotzdem eine oder unendlich viele Lösungen geben.",
     "options": [
-      "Mehr Unbekannte als Gleichungen – hat stets unendlich viele Lösungen",
-      "Mehr Gleichungen als Unbekannte – kann keine, eine oder unendlich viele Lösungen haben",
-      "Genau so viele Gleichungen wie Unbekannte – immer eindeutig lösbar",
-      "Ein System ohne konstante Terme auf der rechten Seite (homogenes System)"
+      "Mehr Unbekannte als Gleichungen – es hat stets unendlich viele Lösungen",
+      "Mehr Gleichungen als Unbekannte – es kann keine, eine oder viele Lösungen haben",
+      "Genau so viele Gleichungen wie Unbekannte – es ist immer eindeutig lösbar",
+      "Ein System ohne konstante Terme auf der rechten Seite, also homogen"
     ],
     "question": "Was ist ein überbestimmtes lineares Gleichungssystem?",
     "topic": "Lineares Gleichungssystem"
@@ -423,9 +423,9 @@
     "correct": 1,
     "explanation": "Der Rang gibt an, wie viele Gleichungen unabhängige Information liefern; er entscheidet über die Lösungsmenge.",
     "options": [
-      "Die Anzahl der Variablen (Unbekannten) im Gleichungssystem",
-      "Die Anzahl der linear unabhängigen Zeilen in der Koeffizientenmatrix",
-      "Die Anzahl aller Gleichungen, auch linear abhängiger Zeilen",
+      "Die Anzahl der Variablen, also der Unbekannten im Gleichungssystem",
+      "Die Anzahl linear unabhängiger Zeilen der Koeffizientenmatrix",
+      "Die Anzahl aller Gleichungen, auch abhängiger Zeilen",
       "Die Anzahl der möglichen Lösungen des Gleichungssystems"
     ],
     "question": "Was zeigt der Rang eines linearen Gleichungssystems an?",
@@ -459,10 +459,10 @@
     "correct": 1,
     "explanation": "Lineare Abhängigkeit: a = λ·b für ein λ ∈ ℝ. Geometrisch bedeutet dies, dass beide Vektoren dieselbe (oder entgegengesetzte) Richtung haben.",
     "options": [
-      "Wenn ihr Skalarprodukt den Wert 1 ergibt (normierte Vektoren)",
-      "Wenn einer ein skalares Vielfaches des anderen ist (sie sind parallel)",
-      "Wenn ihre Beträge (Längen) denselben Wert haben",
-      "Wenn sie senkrecht aufeinander stehen (orthogonal zueinander)"
+      "Wenn ihr Skalarprodukt genau den Wert 1 ergibt",
+      "Wenn einer ein Vielfaches des anderen ist",
+      "Wenn ihre Beträge, also ihre Längen, gleich sind",
+      "Wenn sie senkrecht aufeinander stehen"
     ],
     "question": "Wie sind zwei Vektoren linear abhängig?",
     "topic": "Vektoren"
@@ -493,12 +493,12 @@
   },
   {
     "correct": 1,
-    "explanation": "Der Flächeninhalt des Parallelogramms = |a × b|. Das Dreieck hat den halben Flächeninhalt: |a × b|/2.",
+    "explanation": "Der Flächeninhalt des Parallelogramms ist A = |a × b| = |a|·|b|·sin(φ). Das von a und b aufgespannte Dreieck hat davon genau die Hälfte: |a × b|/2.",
     "options": [
       "a · b (Skalarprodukt der aufspannenden Vektoren)",
       "| a × b | (Betrag des Kreuzprodukts der Vektoren)",
       "(|a|+|b|)/2 (Mittelwert der Längen der Seiten)",
-      "a · b · sin(φ) als vorzeichenloser Skalarwert"
+      "|a|·|b|·cos(φ) (Längen mal Kosinus des Winkels)"
     ],
     "question": "Was ist der Flächeninhalt eines von a und b aufgespannten Parallelogramms?",
     "topic": "Flächen"
@@ -517,36 +517,36 @@
   },
   {
     "correct": 1,
-    "explanation": "Der Lotfußpunkt auf der Geraden wird durch Projektion bestimmt; die Formel mit dem Kreuzprodukt liefert den senkrechten Abstand.",
+    "explanation": "Mit dem Stützpunkt P₀ von g und dem Richtungsvektor v gilt d = |P₀P⃗ × v| / |v|. Der Zähler ist der Flächeninhalt des von P₀P⃗ und v aufgespannten Parallelogramms; geteilt durch die Grundseite |v| ergibt sich die Höhe, also der gesuchte Abstand.",
     "options": [
-      "d = |PP₀ · v| / |v| (Skalarprodukt des Verbindungsvektors mit v)",
-      "d = |PP₀ × v| / |v| (PP₀ = Verbindungsvektor Fußpunkt–P, v = Richtungsvektor)",
+      "d = |P₀P · v| / |v| (Skalarprodukt des Verbindungsvektors mit v)",
+      "d = |P₀P × v| / |v| (P₀ = Stützpunkt der Geraden)",
       "d = |P| / |v| (Betrag des Ortsvektors durch den Richtungsvektor)",
-      "d = |PP₀| (direkter Betrag des Verbindungsvektors von P₀ zu P)"
+      "d = |P₀P| (Betrag des Verbindungsvektors)"
     ],
     "question": "Was ist der Abstand eines Punktes P von einer Geraden g?",
     "topic": "Abstände"
   },
   {
     "correct": 1,
-    "explanation": "Drei Fälle: Schnittpunkt (genau ein Punkt), parallel (kein Schnittpunkt) oder Gerade liegt komplett in der Ebene.",
+    "explanation": "Setzt man die Geradengleichung in die Ebenengleichung ein, entsteht eine Gleichung für t mit drei möglichen Ausgängen: genau eine Lösung (Schnittpunkt), keine Lösung (echt parallel) oder unendlich viele Lösungen (Gerade liegt in der Ebene).",
     "options": [
-      "Immer genau einen Schnittpunkt, unabhängig von der Lage der Geraden",
-      "Die Gerade liegt in der Ebene, ist parallel zur Ebene, oder schneidet sie in genau einem Punkt",
-      "Immer eine Schnittgerade als geometrische Schnittmenge",
-      "Immer einen Schnittkreis als geometrische Schnittmenge"
+      "Immer genau einen Schnittpunkt, ganz unabhängig von der Lage der Geraden",
+      "Die Gerade schneidet die Ebene in einem Punkt, ist parallel dazu oder liegt in ihr",
+      "Immer eine Schnittgerade als gemeinsame geometrische Schnittmenge",
+      "Immer einen Schnittkreis als gemeinsame geometrische Schnittmenge"
     ],
     "question": "Was versteht man unter dem Schnitt einer Geraden mit einer Ebene?",
     "topic": "Lagebeziehungen"
   },
   {
     "correct": 1,
-    "explanation": "Das Spatprodukt berechnet das Volumen des von drei Vektoren aufgespannten Parallelepipeds.",
+    "explanation": "Das Spatprodukt V = |(a × b) · c| liefert das Volumen des von a, b und c aufgespannten Parallelepipeds (Spat): |a × b| ist die Grundfläche, das Skalarprodukt mit c ergibt die Höhe darauf.",
     "options": [
-      "Das Skalarprodukt dreier Vektoren: a·b·c als skalares Ergebnis",
-      "V = |(a × b) · c| (Spat = schiefes Parallelepiped aufgespannt von a, b, c)",
-      "V = |a|·|b|·|c| (Produkt der Beträge ohne Winkelkorrektur)",
-      "Das Kreuzprodukt dreier Vektoren: (a×b)×c als vektorielles Ergebnis"
+      "Das Skalarprodukt dreier Vektoren a·b·c als Zahlenwert",
+      "V = |(a × b) · c|, der Betrag des Spatprodukts",
+      "V = |a|·|b|·|c|, das Produkt der Beträge",
+      "Das Kreuzprodukt dreier Vektoren (a×b)×c als Vektor"
     ],
     "question": "Was ist ein Volumen im Rahmen der Vektorrechnung (Spatprodukt)?",
     "topic": "Spatprodukt"
@@ -565,10 +565,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Die Projektion von a auf b ergibt den Anteil von a in Richtung b; der Rest (a – proj_b(a)) steht senkrecht auf b.",
+    "explanation": "Die orthogonale Projektion proj_b(a) = (a·b/|b|²)·b ergibt den Anteil von a in Richtung b; der Rest a – proj_b(a) steht senkrecht auf b.",
     "options": [
       "Kreuzprodukt: a×b steht senkrecht auf a und b",
-      "Orthogonale Projektion: proj_b(a) = (a·b/|b|²)·b",
+      "Orthogonale Projektion: (a·b/|b|²)·b",
       "Vektoraddition: a+b komponentenweise addiert",
       "Skalarmultiplikation: λ·a streckt a um den Faktor λ"
     ],
@@ -580,9 +580,9 @@
     "explanation": "Parallele Ebenen haben denselben Normalenvektor n; der Abstand berechnet sich über die Differenz der rechten Seiten, normiert auf |n|.",
     "options": [
       "d = 0 (parallele Ebenen haben stets den Abstand null)",
-      "d = |d₁ – d₂| / √(a²+b²+c²) wenn beide die Form ax+by+cz=d haben",
+      "d = |d₁ – d₂| / √(a²+b²+c²) (beide in der Form ax+by+cz=d)",
       "d = |d₁+d₂| / √(a²+b²+c²) (Summe der rechten Seiten)",
-      "d = |n₁·n₂| / (|n₁|·|n₂|) (Skalarprodukt der Normalenvektoren)"
+      "d = |n₁·n₂| / (|n₁|·|n₂|) (Skalarprodukt der Normalen)"
     ],
     "question": "Was ist der Abstand zweier paralleler Ebenen E₁ und E₂?",
     "topic": "Abstände"
@@ -591,22 +591,22 @@
     "correct": 0,
     "explanation": "Gerade in Ebene: n · v = 0 (Richtungsvektor senkrecht auf Normalenvektor) und n · (p – q) = 0 (Stützpunkt liegt in der Ebene).",
     "options": [
-      "Man prüft, ob der Richtungsvektor auf dem Normalenvektor senkrecht steht UND ob der Stützpunkt in der Ebene liegt",
-      "Man prüft ausschließlich, ob der Richtungsvektor senkrecht auf dem Normalenvektor steht",
-      "Man prüft ausschließlich, ob der Stützpunkt der Geraden in der Ebene liegt",
-      "Man löst das entstehende lineare Gleichungssystem ohne weitere Fallunterscheidung"
+      "Man prüft, ob der Richtungsvektor senkrecht zum Normalenvektor steht und der Stützpunkt in der Ebene liegt",
+      "Man prüft ausschließlich, ob der Richtungsvektor senkrecht auf dem Normalenvektor der Ebene steht, sonst nichts",
+      "Man prüft ausschließlich, ob der Stützpunkt der Geraden in der Ebenengleichung erfüllt ist",
+      "Man löst das entstehende Gleichungssystem ohne weitere Fallunterscheidung"
     ],
     "question": "Wie prüft man, ob eine Gerade in einer Ebene liegt?",
     "topic": "Lagebeziehungen"
   },
   {
     "correct": 1,
-    "explanation": "Die Normalenebene durch P hat den Richtungsvektor von g als Normalenvektor; sie steht senkrecht auf g.",
+    "explanation": "Die Normalenebene zu g durch P nimmt den Richtungsvektor v von g als Normalenvektor: v·(x – p) = 0. Sie steht damit senkrecht auf g und enthält den Punkt P.",
     "options": [
       "Eine Ebene, die die Gerade g vollständig enthält",
-      "Die Ebene durch P, die senkrecht zu g steht (Normalenvektor = Richtungsvektor von g)",
+      "Die Ebene durch P, die senkrecht zu g steht",
       "Eine Ebene, die parallel zur Geraden g verläuft",
-      "Eine Ebene, die ausschließlich durch den Koordinatenursprung geht"
+      "Eine Ebene, die ausschließlich durch den Ursprung geht"
     ],
     "question": "Was ist eine Normalenebene zu einer Geraden g in einem Punkt P?",
     "topic": "Ebenen"
@@ -637,22 +637,22 @@
   },
   {
     "correct": 1,
-    "explanation": "Der Abstand windschiefer Geraden ergibt sich aus dem Betrag der Projektion des Verbindungsvektors auf den gemeinsamen Senkrechtenvektor n = v₁×v₂.",
+    "explanation": "Der Vektor n = v₁ × v₂ steht senkrecht auf beiden Geraden. Der Abstand ist der Betrag der Projektion des Verbindungsvektors p₁ – p₂ der Stützpunkte auf n: d = |(p₁–p₂)·n| / |n| = |(p₁–p₂)·(v₁×v₂)| / |v₁×v₂|.",
     "options": [
-      "d = |v₁ × v₂| / (|v₁|·|v₂|) (normiertes Kreuzprodukt)",
+      "d = |v₁ × v₂| / (|v₁|·|v₂|)",
       "d = |(p₁–p₂)·(v₁×v₂)| / |v₁×v₂|",
-      "d = |p₁–p₂| (direkter Abstand der Stützpunkte)",
-      "d = v₁·v₂ / (|v₁|·|v₂|) (Skalarprodukt der Richtungsvektoren)"
+      "d = |(p₁–p₂)×(v₁×v₂)| / |v₁×v₂|",
+      "d = |(p₁–p₂)·(v₁×v₂)| / (|v₁|·|v₂|)"
     ],
     "question": "Wie berechnet man den Abstand zweier windschiefer Geraden g₁ und g₂?",
     "topic": "Abstände"
   },
   {
     "correct": 1,
-    "explanation": "Eine Halbgerade hat einen Anfangspunkt (t=0) und erstreckt sich unbegrenzt in eine Richtung (t ≥ 0).",
+    "explanation": "Eine Halbgerade (auch Strahl) beginnt im Anfangspunkt p bei t = 0 und läuft nur in eine Richtung unbegrenzt weiter: x = p + t·v mit t ≥ 0.",
     "options": [
       "Eine Gerade, die genau einen Schnittpunkt mit einer anderen Geraden hat",
-      "Einer Geraden g: x = p + t·v, aber nur für t ≥ 0 (mit festem Startpunkt, in einer Richtung)",
+      "Der Teil einer Geraden x = p + t·v mit t ≥ 0, also ab einem festen Startpunkt",
       "Eine Strecke, die genau halb so lang wie die Ausgangsstrecke ist",
       "Eine Gerade, die nur in einer Halbebene des Koordinatensystems liegt"
     ],
