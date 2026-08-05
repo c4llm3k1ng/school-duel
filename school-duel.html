@@ -2537,6 +2537,10 @@ function showScreen(id) {
   window.scrollTo(0, 0);
   const noHomeBtn = ['screen-home','screen-auth','screen-loading','screen-handover','screen-quiz','screen-round-result','screen-challenger-game'];
   document.getElementById('global-home-btn').style.display = noHomeBtn.includes(id) ? 'none' : 'block';
+  // Den Gruppen-Listener loesen, sobald man die Gruppe verlaesst - sonst
+  // laeuft er im Hintergrund weiter und zeichnet in einen unsichtbaren Screen.
+  if (id !== 'screen-group-detail' && typeof gStopGroupListener === 'function') gStopGroupListener();
+  if (typeof merkeAnsicht === 'function') merkeAnsicht(id);
   if (id === 'screen-friends')     renderFriendsList();
   if (id === 'screen-groups')      renderGroupsList();
   if (id === 'screen-nachrichten') renderNachrichten();
@@ -5552,7 +5556,10 @@ function onUserLoggedIn() {
   applyFirebaseCorrections();
   // Only navigate if still on auth screen
   if (document.getElementById('screen-auth').classList.contains('active')) {
-    showScreen('screen-home'); switchTab('spielen');
+    // Zuletzt offene Ansicht wiederherstellen, sonst ins Hauptmenue. Wer eine
+    // Gruppe offen hatte und die Seite neu laedt, landete sonst wieder beim
+    // Spielen-Reiter.
+    if (!stelleAnsichtWieder()) { showScreen('screen-home'); switchTab('spielen'); }
   }
 }
 
@@ -6720,6 +6727,54 @@ const gState = { groups: [], current: null, currentId: null, inviteBusy: false }
 const gQuizCache = {};          // "gq:gid:qid" -> Quizobjekt
 let gSearchTimer = null;
 let _gInviteListener = null, _gFriendReqListener = null;
+let _gGroupListener = null;     // horcht auf die gerade geoeffnete Gruppe
+
+// Bildschirme, die ein Neuladen der Seite ueberleben sollen. Bewusst nur
+// diese: In ein laufendes Quiz oder einen Duellraum zurueckzuspringen waere
+// falsch, weil der Spielstand nicht mitgesichert wird.
+//
+// Als Funktion statt als const: showScreen() steht weit oben in der Datei und
+// ruft merkeAnsicht() auf. Funktionsdeklarationen werden hochgezogen, const
+// nicht - ein frueher Aufruf haette sonst einen ReferenceError geworfen und
+// die gesamte Navigation lahmgelegt.
+function merkbareScreens() {
+  return ['screen-groups', 'screen-group-detail', 'screen-nachrichten', 'screen-friends'];
+}
+
+function merkeAnsicht(id) {
+  try {
+    if (!merkbareScreens().includes(id)) { localStorage.removeItem('sd_last_view'); return; }
+    const gid = (typeof gState !== 'undefined' && gState) ? gState.currentId : null;
+    localStorage.setItem('sd_last_view', JSON.stringify({ screen: id, gid: gid || null, ts: Date.now() }));
+  } catch { /* voller Speicher oder zu frueh aufgerufen: dann eben nicht */ }
+}
+
+// Nach dem Login die zuletzt offene Ansicht wiederherstellen. Aelter als eine
+// Stunde wird verworfen - wer die App am naechsten Tag oeffnet, will zum
+// Hauptmenue, nicht in eine halb vergessene Gruppe.
+function stelleAnsichtWieder() {
+  let v;
+  try { v = JSON.parse(localStorage.getItem('sd_last_view') || 'null'); } catch { return false; }
+  if (!v || !merkbareScreens().includes(v.screen)) return false;
+  if (Date.now() - (v.ts || 0) > 60 * 60 * 1000) { localStorage.removeItem('sd_last_view'); return false; }
+  if (v.screen === 'screen-group-detail') {
+    if (!v.gid) return false;
+    openGroup(v.gid);   // prueft selbst, ob es die Gruppe noch gibt
+    return true;
+  }
+  showScreen(v.screen);
+  return true;
+}
+
+function gStopGroupListener() {
+  // try/catch, weil showScreen() diese Funktion schon aufrufen kann, bevor die
+  // let-Deklaration von _gGroupListener ausgefuehrt wurde (temporale Todeszone).
+  try {
+    if (!_gGroupListener) return;
+    _gGroupListener.off();
+    _gGroupListener = null;
+  } catch { /* noch nicht initialisiert oder schon geloest */ }
+}
 
 const gQuizRef  = (gid, qid) => 'gq:' + gid + ':' + qid;
 const gParseRef = ref => {
@@ -6823,28 +6878,38 @@ async function gCreateGroup() {
 
 // ── Eine Gruppe ──────────────────────────────────────────
 async function openGroup(gid) {
+  gStopGroupListener();
   gState.currentId = gid;
   gState.current = null;
-  showScreen('screen-group-detail');
+  showScreen('screen-group-detail');     // merkt die Ansicht selbst, currentId steht schon
   document.getElementById('gd-title').textContent = 'Gruppe';
   document.getElementById('gd-subtitle').textContent = '';
   document.getElementById('gd-content').innerHTML = '<div class="loading-state"><div class="spinner"></div>Laden…</div>';
-  try {
-    const snap = await fbDB.ref('groups/' + gid).once('value');
+
+  // Dauerhaft horchen statt einmalig lesen: Tritt jemand der Gruppe bei oder
+  // legt ein Admin ein Quiz an, ist das sofort zu sehen - ohne die Seite neu
+  // zu laden.
+  const ref = fbDB.ref('groups/' + gid);
+  _gGroupListener = ref;
+  ref.on('value', snap => {
+    if (gState.currentId !== gid) return;               // inzwischen woanders
     const g = snap.val();
     if (!g || !g.members?.[currentUser?.uid]) {
+      gStopGroupListener();
       document.getElementById('gd-content').innerHTML =
-        '<div class="empty-state"><div class="es-icon">🚫</div>Du bist kein Mitglied dieser Gruppe.</div>';
+        '<div class="empty-state"><div class="es-icon">🚫</div>Du bist kein Mitglied dieser Gruppe mehr.</div>';
+      document.getElementById('gd-settings-btn').style.display = 'none';
       return;
     }
     gState.current = { id: gid, ...g };
-    // Quizze in den Cache, damit loadQuestions() sie ohne weiteren Roundtrip findet
     Object.entries(g.quizzes || {}).forEach(([qid, q]) => { gQuizCache[gQuizRef(gid, qid)] = q; });
-    renderGroupDetail();
-  } catch (e) {
+    // Nur zeichnen, wenn der Bildschirm noch sichtbar ist - sonst ueberschreibt
+    // ein spaetes Update stillschweigend eine andere Ansicht.
+    if (document.getElementById('screen-group-detail').classList.contains('active')) renderGroupDetail();
+  }, () => {
     document.getElementById('gd-content').innerHTML =
       '<div class="empty-state"><div class="es-icon">⚠️</div>Gruppe konnte nicht geladen werden.</div>';
-  }
+  });
 }
 
 function renderGroupDetail() {
