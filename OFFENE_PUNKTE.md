@@ -1482,3 +1482,129 @@ Ebenso ungenau war meine Formulierung „bei Zahlenoptionen nichts erzwingen". G
 Nachbarzahlen ohne Fehlerlogik waren („x + 7 = 19" mit den Optionen 10 und 14). Ein anderer
 Agent verstand es richtig und korrigierte sie. Künftig sauber trennen: keine
 Längenanpassung bei Zahlen, aber Distraktorqualität überall.
+
+---
+
+# Nachtrag: Erklärungen auf Deutsch
+
+## 71. 302 Erklärungen übersetzt, keine einzige Option angefasst
+
+Alle 13 Englisch-Dateien durchgesehen. Fünf davon waren **vollständig** englisch:
+`k12__Englisch__Zeitformen` (41/41), `k10__Englisch__Grammatik` (40/40),
+`k7__Englisch__Grammatik` (40/40), `k11__Englisch__Grammatik` (40/40),
+`k10__Englisch__Kommunikation` (40/40).
+
+Vier Dateien waren bereits durchgehend deutsch und wurden nicht angerührt.
+
+Maschinell gegengeprüft: **0 unerlaubte Änderungen** — kein `question`, keine `options`,
+kein `correct`, kein `topic`. Das war die kritische Bedingung, weil die Optionen dieser
+Dateien gerade erst auf ihre Längenverteilung hin überarbeitet worden waren.
+
+### Was englisch geblieben ist
+
+Beispielsätze, Vokabeln, Verbformen und die Namen der Zeitformen. „Present Perfect
+Progressive" wurde nicht zu „vollendete Gegenwart in der Verlaufsform" — das ist der
+Lernstoff. Bei Kommunikation gilt dasselbe für Redemittel, bei Landeskunde für
+Institutionen und Feiertage.
+
+### Ein Werkzeug, das nicht funktioniert hat
+
+Ich wollte den Agenten eine Liste der englischen Erklärungen mitgeben. Zwei Anläufe, beide
+unbrauchbar: Der erste meldete 259 Treffer, der zweite 1210 — und die meisten davon waren
+deutsche Erklärungen im Telegrammstil („Homologie: Arm (Mensch), Flosse (Wal), Flügel
+(Fledermaus) – gleiche Konstruktion"). Kaum Funktionswörter, aber eindeutig Deutsch.
+
+Auch die vorsichtige Fassung lag daneben: Von drei Stichproben waren zwei deutsche
+Erklärungen, die nur englisch zitieren.
+
+**Kein Regex trifft diese Unterscheidung.** Die Liste ist deshalb entfallen, die Agenten
+haben beim Lesen selbst geurteilt. Eine unzuverlässige Vorgabe wäre schlechter gewesen als
+gar keine.
+
+## 72. Die britische Prägung zieht sich durch die ganze Sammlung
+
+In **fünf** Dateien unabhängig gemeldet: `just`, `already` und `yet` werden als reine
+Signalwörter für das Present Perfect dargestellt. Im amerikanischen Englisch ist dort das
+Simple Past völlig üblich — „I already ate", „Did you finish yet?", „He just called".
+
+Betroffen: `k6__Englisch__Grammatik` (vier Fragen), `k7__Englisch__Grammatik` (zwei),
+`k10__Englisch__Grammatik`, `k12__Englisch__Zeitformen`, `k10__Englisch__Kommunikation`.
+
+**Wichtig:** Das steckt teilweise in `question` und `options`, ist über die Erklärung also
+nicht heilbar. Wo es ging, nennen die Erklärungen jetzt beide Varianten. Wo die Option die
+britische Sicht vorgibt, bleibt es stehen.
+
+**Deine Entscheidung:** Soll die Sammlung britisches Englisch als Standard setzen und das
+irgendwo sagen? Oder sollen die betroffenen Fragen umformuliert werden?
+
+Weitere Fälle derselben Art:
+- Der mandative Subjunctive („I suggest that he arrive early") ist überwiegend
+  amerikanisch; britisch heißt es „that he **should** arrive early".
+- „Have you a car?" gilt nur britisch; amerikanisch „Do you have a car?".
+- `practise` (BrE) gegen `practice` (AmE) steht in einer **Option**.
+
+## 73. Sachfehler, beim Übersetzen gefunden
+
+- **„Joanne K. Rowling"** ist falsch. Sie heißt Joanne Rowling; das „K." wurde erst für das
+  Autorenkürzel erfunden.
+- **„was (Singular) / were (Plural)"** — falsch etikettiert, denn `you` ist auch im Singular
+  `were`. Jetzt nach Personen formuliert.
+- **Die Verdopplungsregel** war als „double consonant after short vowel" beschrieben. Sie
+  setzt einen **betonten** kurzen Vokal voraus.
+- **„to treasure"** war mit „schützen" übersetzt. Es heißt „sehr schätzen, in Ehren halten".
+- **Der Subjunctive** nutze „the base form (were, be)" — `be` ist die Grundform, `were` ist
+  der past subjunctive.
+- **Eine Erklärung stützte die falsche Option:** Bei „it takes two to tango" sagte sie
+  „beide Seiten sind **schuld**", die markierte Option aber „beide Seiten sind
+  **beteiligt**".
+- **Big Ben:** Eine falsche Option zu britischer Kunst wurde mit „dort steht die National
+  Gallery" abgewiesen — für britische Kunst ist die Tate Britain zuständig.
+
+## 74. Zwei Volksetymologien, die als Tatsache dastanden
+
+- Das Zitat **„England and America are two countries separated by a common language"** war
+  George Bernard Shaw zugeschrieben. Die Zuschreibung ist in seinem Werk nicht belegt.
+- **„To bite the bullet"** wurde auf das Beißen auf eine Bleikugel bei Operationen
+  zurückgeführt. Das ist eine unbelegte Volksetymologie; der erste Beleg der Wendung stammt
+  von Kipling 1891.
+
+Beide stehen jetzt als „wird meist damit erklärt" statt als Herkunftsangabe.
+
+## 75. Die topic-Felder sind ein Durcheinander
+
+Sie erscheinen im Spiel als Badge über der Frage. Allein in den Englisch-Dateien über 150
+verschiedene Werte, darunter dieselben Themen unter verschiedenen Namen:
+
+| Dasselbe Thema | Varianten |
+|---|---|
+| Grammatik | `Grammar` (62), `Grammatik` (22), `Englische Grammatik` (1) |
+| Wortschatz | `Vokabeln` (34), `Vocabulary` (15), `Wortschatz` (15), `Vokabular` (6) |
+| Zeitformen | `Tenses` (17), `Zeitformen` (13) |
+| Adjektive | `Adjectives` (6), `Adjektive` (7) |
+
+Dazu drei Schreibkonventionen nebeneinander: `Simple Past`, `Grammar: Simple Past` und
+`Grammar (Simple Past)`.
+
+Rein kosmetisch — aber ein Kind sieht mal „Grammar", mal „Grammatik" über derselben Art
+Frage. **Nicht angefasst**, weil die passende Granularität eine Geschmacksfrage ist.
+
+## 76. Zwei weitere falsche Dateinamen
+
+- **`k10__Englisch__Kommunikation`** enthält überwiegend Grammatik, Aufsatzlehre und
+  Literaturbegriffe. Redemittel-Fragen zur Höflichkeit kommen darin gar nicht vor.
+- **`k6__Englisch__Vokabeln`** zerfällt sichtbar in zwei Hälften: Die Fragen 0–7 sind auf
+  Deutsch gestellt und sehr leicht (Klasse-5-Niveau), ab Frage 8 sind sie auf Englisch
+  gestellt und deutlich anspruchsvoller. Das sind die beiden alten Kategorien, die kürzlich
+  zusammengelegt wurden.
+
+## 77. Umlaute in Optionen — eine Lücke, die durch das Zusammenlegen entstand
+
+In `k6__Englisch__Vokabeln` stehen Umschreibungen in den **Optionen**: „eifersuechtig",
+„veraergert", „grosszuegig", „zu Fuss", „aengstlich", „laermend". Sie kamen mit dem
+zusammengeführten Inhalt herein, nach dem letzten Umlaut-Durchlauf.
+
+Vier davon sind inzwischen automatisch behoben. Der Rest bleibt liegen, weil die
+Umlautfassung im Bestand nicht belegt ist und das Skript dann zu Recht nicht rät.
+
+**Zur Entscheidung:** Sollen die Optionen dieser Datei für eine Umlaut-Korrektur
+freigegeben werden? Es geht um etwa sechs Stellen, alle eindeutig.
