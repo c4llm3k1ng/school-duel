@@ -2038,6 +2038,10 @@ Deutschland</p>
     <input class="form-input" id="editor-catalog-name" placeholder="z.B. Chemie Kl. 9 – Atombau" style="margin-bottom:14px;">
     <div class="label">Beschreibung (optional)</div>
     <input class="form-input" id="editor-catalog-desc" placeholder="Kurze Beschreibung">
+    <div id="editor-folder-row" style="display:none;margin-top:14px;">
+      <div class="label">Ordner</div>
+      <select class="form-input" id="editor-catalog-folder"></select>
+    </div>
   </div>
 
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:8px;">
@@ -2499,6 +2503,24 @@ function getCatalogs() {
   try { return JSON.parse(localStorage.getItem('sd_catalogs') || '[]'); } catch { return []; }
 }
 function saveCatalogs(arr) { localStorage.setItem('sd_catalogs', JSON.stringify(arr)); }
+
+// ─── Eigene / geteilte Kataloge ───────────────────────────
+// Drei Sorten liegen im selben localStorage-Array:
+//   builtin       - aus Firebase geladen, gehoert in eine der Ober-Kategorien
+//   shared        - per Code von jemand anderem uebernommen
+//   alles andere  - selbst angelegt
+function istEigenerKatalog(c)   { return !c.builtin && !c.shared; }
+function istGeteilterKatalog(c) { return !c.builtin && !!c.shared; }
+
+// Unterordner gibt es nur fuer die eigenen Kataloge. Am Katalog steht die
+// Ordner-ID, nicht der Name - sonst muesste ein Umbenennen jeden Katalog
+// anfassen und ein halb fehlgeschlagener Durchlauf haette die Zuordnung
+// zerrissen.
+function getCatFolders() {
+  try { const a = JSON.parse(localStorage.getItem('sd_catalog_folders') || '[]'); return Array.isArray(a) ? a : []; }
+  catch { return []; }
+}
+function saveCatFolders(arr) { localStorage.setItem('sd_catalog_folders', JSON.stringify(arr)); }
 
 async function applyFirebaseCorrections() {
   if (!fbDB) return;
@@ -3101,60 +3123,85 @@ document.querySelectorAll('#duel-source-pills .pill').forEach(p => {
 });
 
 // ─── TOPIC CARD PICKER ─────────────────────────────────────────
+// Ober-Kategorien: eine Ebene ueber den Themen. "Sport" enthaelt bis jetzt nur
+// Fussball, ist aber die Schublade, in die weitere Sportkataloge wandern.
+//
+// 'eigene' und 'geteilt' stehen bewusst NICHT in CATALOG_GROUPS: Ihr Inhalt
+// kommt aus dem localStorage, nicht aus TOPIC_GROUPS, und nur sie haben
+// Unterordner. Die Trennung erspart Sonderfaelle in jeder Schleife ueber
+// CATALOG_GROUPS.
+const CATALOG_GROUPS = [
+  { id:'sport',        icon:'⚽',  label:'Sport' },
+  { id:'unterhaltung', icon:'🎬',  label:'Unterhaltung' },
+  { id:'gesellschaft', icon:'🏛️', label:'Gesellschaft' },
+];
+const GRUPPE_EIGENE  = { id:'eigene',  icon:'📋', label:'Eigene Kataloge' };
+const GRUPPE_GETEILT = { id:'geteilt', icon:'🤝', label:'Geteilte Kataloge' };
+const catGruppe = id => CATALOG_GROUPS.find(g => g.id === id)
+                     || [GRUPPE_EIGENE, GRUPPE_GETEILT].find(g => g.id === id)
+                     || { id, icon:'📚', label:id };
+
 const TOPIC_GROUPS = [
-  { id:'fussball', label:'Fußball', icon:'⚽', group:'Sport', cats:{ leicht:'cat_fussball_leicht', mittel:'cat_fussball_mittel', schwer:'cat_fussball_schwer', gemischt:'cat_fussball_gemischt' }},
-  { id:'musik',    label:'Musik',   icon:'🎵', cats:{ leicht:'cat_musik_leicht',    mittel:'cat_musik_mittel',    schwer:'cat_musik_schwer',    gemischt:'cat_musik_gemischt' }},
-  { id:'anime',    label:'Anime',   icon:'🎌', cats:{ leicht:'cat_anime_leicht',    mittel:'cat_anime_mittel',    schwer:'cat_anime_schwer',    gemischt:'cat_anime_gemischt' }},
-  { id:'politik',  label:'Politik', icon:'🏛️', cats:{ schwer:'cat_politik_schwer' }},
+  { id:'fussball', label:'Fußball', icon:'⚽', group:'sport',        cats:{ leicht:'cat_fussball_leicht', mittel:'cat_fussball_mittel', schwer:'cat_fussball_schwer', gemischt:'cat_fussball_gemischt' }},
+  { id:'musik',    label:'Musik',   icon:'🎵', group:'unterhaltung', cats:{ leicht:'cat_musik_leicht',    mittel:'cat_musik_mittel',    schwer:'cat_musik_schwer',    gemischt:'cat_musik_gemischt' }},
+  { id:'anime',    label:'Anime',   icon:'🎌', group:'unterhaltung', cats:{ leicht:'cat_anime_leicht',    mittel:'cat_anime_mittel',    schwer:'cat_anime_schwer',    gemischt:'cat_anime_gemischt' }},
+  { id:'politik',  label:'Politik', icon:'🏛️', group:'gesellschaft', cats:{ schwer:'cat_politik_schwer' }},
 ];
 
 const PICKER_CAT_KEY = { solo:'catalogId', duel:'dCatalogId', online:'dCatalogId', chal:'_chalCatalogId', qd:'qdCatalogId' };
 const PICKER_CHECK   = { solo: ()=>checkSoloReady(), duel: ()=>{ checkDuelReady(); checkCatDuelReady(); }, online: ()=>checkOnlineReady(), chal: ()=>{}, qd: ()=>checkQdCatalogReady() };
 
+// Der Picker zeigt dieselbe Gliederung wie die Katalogverwaltung: erst die
+// Ober-Kategorien, dann die Themen darin. "Eigene" und "Geteilte" fuehren
+// direkt zur Auswahlliste - dort waere eine Kartenebene nur ein Klick mehr.
+const _pickerGruppe = {};   // mode -> Ober-Kategorie oder null
+
 function initCatalogPicker(mode) {
-  const grid = document.getElementById(`${mode}-topic-grid`);
-  if (!grid) return;
-  grid.innerHTML = '';
-
-  const _ungrouped = TOPIC_GROUPS.filter(t => !t.group);
-  const _byGroup   = {};
-  TOPIC_GROUPS.filter(t => t.group).forEach(t => {
-    if (!_byGroup[t.group]) _byGroup[t.group] = [];
-    _byGroup[t.group].push(t);
-  });
-
-  const _addTopicCard = (t) => {
-    const d = document.createElement('div');
-    d.className = 'topic-card';
-    d.dataset.topicId = t.id;
-    d.innerHTML = `<span class="tc-icon">${t.icon}</span><span class="tc-label">${t.label}</span>`;
-    d.addEventListener('click', () => pickTopic(mode, t.id, d));
-    grid.appendChild(d);
-  };
-
-  _ungrouped.forEach(_addTopicCard);
-
-  Object.entries(_byGroup).forEach(([groupName, topics]) => {
-    const sep = document.createElement('div');
-    sep.className = 'topic-group-sep';
-    sep.textContent = groupName;
-    grid.appendChild(sep);
-    topics.forEach(_addTopicCard);
-  });
-
-  const customCats = getCatalogs().filter(c => !c.builtin);
-  if (customCats.length) {
-    const d = document.createElement('div');
-    d.className = 'topic-card';
-    d.dataset.topicId = 'custom';
-    d.innerHTML = `<span class="tc-icon">📋</span><span class="tc-label">Eigene</span>`;
-    d.addEventListener('click', () => pickTopic(mode, 'custom', d));
-    grid.appendChild(d);
-  }
-
+  _pickerGruppe[mode] = null;
+  renderCatalogPicker(mode);
   document.getElementById(`${mode}-topic-diff`).style.display   = 'none';
   document.getElementById(`${mode}-topic-custom`).style.display = 'none';
   G[PICKER_CAT_KEY[mode]] = null;
+}
+
+function renderCatalogPicker(mode) {
+  const grid = document.getElementById(`${mode}-topic-grid`);
+  if (!grid) return;
+  grid.innerHTML = '';
+  const cats = getCatalogs();
+
+  const karte = (icon, label, unterzeile, topicId, klick) => {
+    const d = document.createElement('div');
+    d.className = 'topic-card';
+    if (topicId) d.dataset.topicId = topicId;
+    d.innerHTML = `<span class="tc-icon">${icon}</span><span class="tc-label">${esc(label)}</span>` +
+      (unterzeile ? `<div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${unterzeile}</div>` : '');
+    d.addEventListener('click', () => klick(d));
+    grid.appendChild(d);
+  };
+
+  const wechsle = (gid) => {
+    _pickerGruppe[mode] = gid;
+    resetTopicPicker(mode);
+    renderCatalogPicker(mode);
+  };
+
+  const gid = _pickerGruppe[mode];
+  if (!gid) {
+    CATALOG_GROUPS.forEach(g => {
+      const themen = TOPIC_GROUPS.filter(t => t.group === g.id && Object.values(t.cats).some(id => cats.some(c => c.id === id)));
+      if (!themen.length) return;
+      karte(g.icon, g.label, themen.length + (themen.length === 1 ? ' Thema' : ' Themen'), null, () => wechsle(g.id));
+    });
+    const eigene  = cats.filter(istEigenerKatalog);
+    const geteilt = cats.filter(istGeteilterKatalog);
+    if (eigene.length)  karte(GRUPPE_EIGENE.icon,  GRUPPE_EIGENE.label,  _catAnzahl(eigene.length),  'custom', d => pickTopic(mode, 'custom', d));
+    if (geteilt.length) karte(GRUPPE_GETEILT.icon, GRUPPE_GETEILT.label, _catAnzahl(geteilt.length), 'shared', d => pickTopic(mode, 'shared', d));
+    return;
+  }
+
+  karte('←', 'Zurück', '', null, () => wechsle(null));
+  TOPIC_GROUPS.filter(t => t.group === gid).forEach(t => karte(t.icon, t.label, '', t.id, d => pickTopic(mode, t.id, d)));
 }
 
 function pickTopic(mode, topicId, el) {
@@ -3165,10 +3212,10 @@ function pickTopic(mode, topicId, el) {
   const diffEl   = document.getElementById(`${mode}-topic-diff`);
   const customEl = document.getElementById(`${mode}-topic-custom`);
 
-  if (topicId === 'custom') {
+  if (topicId === 'custom' || topicId === 'shared') {
     diffEl.style.display   = 'none';
     customEl.style.display = '';
-    populateCatalogSelect(`${mode}-catalog-select`, PICKER_CAT_KEY[mode]);
+    populateCatalogSelect(`${mode}-catalog-select`, PICKER_CAT_KEY[mode], topicId);
     document.getElementById(`${mode}-catalog-select`).onchange = e => {
       G[PICKER_CAT_KEY[mode]] = e.target.value || null;
       if (mode === 'chal') {
@@ -3209,16 +3256,35 @@ function resetTopicPicker(mode) {
 }
 // ───────────────────────────────────────────────────────────────
 
-function populateCatalogSelect(selId, key) {
+// art: 'shared' listet die uebernommenen Kataloge, sonst die eigenen - nach
+// Ordnern gruppiert, damit die Unterordner auch beim Spielen etwas nuetzen.
+function populateCatalogSelect(selId, key, art) {
   const cats = getCatalogs();
-  const sel = document.getElementById(selId);
+  const sel  = document.getElementById(selId);
   sel.innerHTML = '<option value="">– Katalog wählen –</option>';
-  cats.forEach(c => {
+
+  const eintrag = (ziel, c) => {
     const o = document.createElement('option');
     o.value = c.id;
-    o.textContent = c.name + ' (' + c.questions.length + ' Fragen)';
-    sel.appendChild(o);
-  });
+    o.textContent = c.name + ' (' + (c.questions || []).length + ' Fragen)';
+    ziel.appendChild(o);
+  };
+
+  if (art === 'shared') {
+    cats.filter(istGeteilterKatalog).forEach(c => eintrag(sel, c));
+  } else {
+    const eigene  = cats.filter(istEigenerKatalog);
+    const folders = getCatFolders();
+    eigene.filter(c => !c.folder || !folders.some(f => f.id === c.folder)).forEach(c => eintrag(sel, c));
+    folders.forEach(f => {
+      const drin = eigene.filter(c => c.folder === f.id);
+      if (!drin.length) return;
+      const og = document.createElement('optgroup');
+      og.label = '📁 ' + f.name;
+      drin.forEach(c => eintrag(og, c));
+      sel.appendChild(og);
+    });
+  }
   G[key] = null;
 }
 
@@ -5061,114 +5127,348 @@ document.getElementById('review-duel-btn').addEventListener('click', () => {
 // ═══════════════════════════════════════════════════════
 // CATALOG MANAGEMENT
 // ═══════════════════════════════════════════════════════
+// Navigationsstand der Katalogansicht. group === null ist die oberste Ebene.
+// Bewusst modulweit und nicht im DOM: Nach jedem Loeschen, Verschieben oder
+// Importieren wird neu gezeichnet, und der Nutzer soll dort stehen bleiben,
+// wo er war.
+let catNav = { group: null, folder: null };
+
+function catOpenGroup(gid)  { catNav = { group: gid, folder: null }; renderCatalogList(); }
+function catOpenFolder(fid) { catNav.folder = fid; renderCatalogList(); }
+function catNavUp() {
+  if (catNav.folder) catNav.folder = null; else catNav.group = null;
+  renderCatalogList();
+}
+
+const CAT_DIFF_LABEL = { leicht:'Leicht', mittel:'Mittel', schwer:'Schwer', gemischt:'Gemischt' };
+
+const _ICO_PLAY  = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg>';
+const _ICO_EDIT  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>';
+const _ICO_DEL   = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>';
+const _ICO_SHARE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="10.5" x2="15.4" y2="6.5"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/></svg>';
+
+function _catZurueck(label) {
+  return `<span class="topic-diff-back" style="display:inline-block;margin-bottom:12px;" onclick="catNavUp()">← ${esc(label)}</span>`;
+}
+function _catKarte(icon, label, unterzeile, onclick) {
+  return `<div class="topic-card" onclick="${onclick}">
+    <span class="tc-icon">${icon}</span>
+    <span class="tc-label">${esc(label)}</span>
+    <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${unterzeile}</div>
+  </div>`;
+}
+function _catUeberschrift(icon, label, rechts) {
+  return `<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px;">
+    <div style="font-weight:700;">${icon} ${esc(label)}</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;">${rechts || ''}</div>
+  </div>`;
+}
+const _catAnzahl = n => n + ' Katalog' + (n === 1 ? '' : 'e');
+const _catFragen = n => n + ' Frage'  + (n === 1 ? '' : 'n');
+
+// Eine Katalogzeile. art: 'eigen' | 'geteilt' | 'nur-spielen'
+function _catZeile(cat, art, folders) {
+  const n = (cat.questions || []).length;
+  let meta = cat.desc ? esc(cat.desc) : _catFragen(n);
+  if (art === 'geteilt' && cat.shared?.byName) meta = 'von ' + esc(cat.shared.byName) + ' · ' + _catFragen(n);
+
+  let aktionen = `<div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen">${_ICO_PLAY}</div>`;
+  if (art !== 'nur-spielen') {
+    aktionen += `<div class="icon-btn" onclick="editCatalog('${cat.id}')" title="Bearbeiten">${_ICO_EDIT}</div>`;
+    if (art === 'eigen')
+      aktionen += `<div class="icon-btn" onclick="catShare('${cat.id}')" title="Teilen">${_ICO_SHARE}</div>`;
+    aktionen += `<div class="icon-btn del" onclick="deleteCatalog('${cat.id}')" title="${art === 'geteilt' ? 'Aus meiner Liste entfernen' : 'Löschen'}">${_ICO_DEL}</div>`;
+  }
+
+  // Der Ordnerwechsel steht direkt in der Zeile statt in einem Dialog: ein
+  // Klick statt drei, und man sieht sofort, wo ein Katalog gerade liegt.
+  let ordnerwahl = '';
+  if (art === 'eigen' && folders && folders.length) {
+    const opts = ['<option value="">Kein Ordner</option>']
+      .concat(folders.map(f => `<option value="${f.id}"${cat.folder === f.id ? ' selected' : ''}>${esc(f.name)}</option>`));
+    ordnerwahl = `<select class="form-input" style="margin-top:6px;padding:4px 8px;font-size:.72rem;width:auto;max-width:170px;"
+      onclick="event.stopPropagation()" onchange="catMoveTo('${cat.id}',this.value)">${opts.join('')}</select>`;
+  }
+
+  return `<div class="catalog-item">
+    <div>
+      <div class="ci-name">${esc(cat.name)}</div>
+      <div class="ci-meta">${meta}</div>
+      ${ordnerwahl}
+    </div>
+    <div class="catalog-item-actions">${aktionen}</div>
+  </div>`;
+}
+const _catListe = (cats, art, folders) =>
+  '<div class="catalog-list">' + cats.map(c => _catZeile(c, art, folders)).join('') + '</div>';
+
+function _catLeer(icon, text) {
+  return `<div class="empty-state"><div class="es-icon">${icon}</div>${text}</div>`;
+}
+
 function renderCatalogList() {
   const cats = getCatalogs();
   const cont = document.getElementById('catalog-list-container');
   const q = (document.getElementById('catalog-search')?.value || '').trim().toLowerCase();
 
-  const diffLabel = { leicht:'Leicht', mittel:'Mittel', schwer:'Schwer', gemischt:'Gemischt' };
+  // Die Suche hebelt die Ordnerebenen aus: Wer tippt, will finden, nicht
+  // navigieren. Sonst müsste man erst in den richtigen Ordner klicken, um
+  // dort suchen zu dürfen.
+  if (q)                              cont.innerHTML = _catSuche(cats, q);
+  else if (!catNav.group)             cont.innerHTML = _catEbene1(cats);
+  else if (catNav.group === 'eigene')  cont.innerHTML = _catEigene(cats);
+  else if (catNav.group === 'geteilt') cont.innerHTML = _catGeteilt(cats);
+  else                                 cont.innerHTML = _catBuiltinGruppe(cats, catNav.group);
+}
 
-  // Built-in groups based on TOPIC_GROUPS
-  const allBuiltin = TOPIC_GROUPS.map(t => ({
-    ...t,
-    items: Object.fromEntries(
-      Object.entries(t.cats).map(([d, id]) => [d, cats.find(c => c.id === id)])
-    )
-  })).filter(g => Object.values(g.items).some(Boolean) && (!q || g.label.toLowerCase().includes(q) || (g.group||'').toLowerCase().includes(q)));
-
-  const ungroupedBuiltin = allBuiltin.filter(g => !g.group);
-  const builtinByGroup   = {};
-  allBuiltin.filter(g => g.group).forEach(g => {
-    if (!builtinByGroup[g.group]) builtinByGroup[g.group] = [];
-    builtinByGroup[g.group].push(g);
+// ── Ebene 1: die Ober-Kategorien ──────────────────────────
+function _catEbene1(cats) {
+  let html = '<div class="label" style="margin-bottom:10px;">Kategorien</div><div class="topic-grid">';
+  CATALOG_GROUPS.forEach(g => {
+    const themen = TOPIC_GROUPS.filter(t => t.group === g.id);
+    const vorhanden = themen.filter(t => Object.values(t.cats).some(id => cats.some(c => c.id === id)));
+    if (!vorhanden.length) return;      // noch nichts geladen: Karte weglassen
+    const fragen = vorhanden.reduce((a, t) => a + ((cats.find(c => c.id === t.cats.gemischt) || cats.find(c => c.id === Object.values(t.cats)[0]))?.questions?.length || 0), 0);
+    html += _catKarte(g.icon, g.label, (vorhanden.length === 1 ? '1 Thema' : vorhanden.length + ' Themen') + ' · ' + _catFragen(fragen), `catOpenGroup('${g.id}')`);
   });
+  // Eigene und geteilte immer zeigen, auch leer - sonst findet niemand den
+  // Weg zum Anlegen oder zum Importieren.
+  const eigene  = cats.filter(istEigenerKatalog);
+  const geteilt = cats.filter(istGeteilterKatalog);
+  html += _catKarte(GRUPPE_EIGENE.icon,  GRUPPE_EIGENE.label,  _catAnzahl(eigene.length),  `catOpenGroup('eigene')`);
+  html += _catKarte(GRUPPE_GETEILT.icon, GRUPPE_GETEILT.label, _catAnzahl(geteilt.length), `catOpenGroup('geteilt')`);
+  return html + '</div>';
+}
 
-  const customCats = cats.filter(c => !c.builtin && (!q || (c.name||'').toLowerCase().includes(q) || (c.desc||'').toLowerCase().includes(q)));
+// ── Ebene 2: eine integrierte Ober-Kategorie ──────────────
+function _catBuiltinGruppe(cats, gid) {
+  const g = catGruppe(gid);
+  const themen = TOPIC_GROUPS.filter(t => t.group === gid).map(t => ({
+    ...t,
+    items: Object.fromEntries(Object.entries(t.cats).map(([d, id]) => [d, cats.find(c => c.id === id)]))
+  })).filter(t => Object.values(t.items).some(Boolean));
 
-  let html = '';
+  let html = _catZurueck('Kategorien') + _catUeberschrift(g.icon, g.label, '');
+  if (!themen.length) return html + _catLeer('📭', 'Hier ist noch nichts.');
 
-  const _renderTopicCards = (groups) => {
-    let h = '<div class="topic-grid">';
-    groups.forEach(g => {
-      const total = g.items.gemischt?.questions?.length || 0;
-      h += `<div class="topic-card" onclick="toggleTopicGroup('tg-${g.id}',this)">
-        <span class="tc-icon">${g.icon}</span>
-        <span class="tc-label">${g.label}</span>
-        <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${total} Fragen</div>
-      </div>`;
-    });
-    h += '</div>';
-    return h;
-  };
+  html += '<div class="topic-grid">';
+  themen.forEach(t => {
+    const total = t.items.gemischt?.questions?.length
+               || Object.values(t.items).reduce((a, c) => a + (c?.questions?.length || 0), 0);
+    html += _catKarte(t.icon, t.label, _catFragen(total), `toggleTopicGroup('tg-${t.id}',this)`);
+  });
+  html += '</div>';
 
-  const _renderTopicPanels = (groups) => {
-    let h = '';
-    groups.forEach(g => {
-      h += `<div id="tg-${g.id}" style="display:none;margin-bottom:16px;">
-        <div style="font-size:.8rem;font-weight:600;margin-bottom:10px;">${g.icon} ${g.label}</div>
-        <div class="catalog-list">`;
-      ['leicht','mittel','schwer','gemischt'].forEach(d => {
-        const cat = g.items[d];
-        if (!cat) return;
-        h += `<div class="catalog-item">
-          <div>
-            <div class="ci-name">${diffLabel[d]}</div>
-            <div class="ci-meta">${cat.questions?.length || 0} Fragen</div>
-          </div>
-          <div class="catalog-item-actions">
-            <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>
-            <div class="icon-btn" onclick="editCatalog('${cat.id}')" title="Bearbeiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
-          </div>
-        </div>`;
-      });
-      h += '</div></div>';
-    });
-    return h;
-  };
-
-  // ── Integrierte Themenkarten ──────────────────────────
-  if (allBuiltin.length) {
-    html += '<div class="label" style="margin-bottom:10px;">Integrierte Inhalte</div>';
-
-    if (ungroupedBuiltin.length) {
-      html += _renderTopicCards(ungroupedBuiltin);
-      html += _renderTopicPanels(ungroupedBuiltin);
-    }
-
-    Object.entries(builtinByGroup).forEach(([groupName, groups]) => {
-      html += `<div class="catalog-group-header">${groupName}</div>`;
-      html += _renderTopicCards(groups);
-      html += _renderTopicPanels(groups);
-    });
-  }
-
-  // ── Eigene Kataloge ───────────────────────────────────
-  if (customCats.length) {
-    html += '<div class="label" style="margin-top:20px;margin-bottom:10px;">Eigene Kataloge</div>';
-    html += '<div class="catalog-list">';
-    customCats.forEach(cat => {
+  themen.forEach(t => {
+    html += `<div id="tg-${t.id}" style="display:none;margin-bottom:16px;">
+      <div style="font-size:.8rem;font-weight:600;margin-bottom:10px;">${t.icon} ${esc(t.label)}</div>
+      <div class="catalog-list">`;
+    ['leicht','mittel','schwer','gemischt'].forEach(d => {
+      const cat = t.items[d];
+      if (!cat) return;
       html += `<div class="catalog-item">
         <div>
-          <div class="ci-name">${esc(cat.name)}</div>
-          <div class="ci-meta">${cat.desc ? esc(cat.desc) : cat.questions.length + ' Frage' + (cat.questions.length !== 1 ? 'n' : '')}</div>
+          <div class="ci-name">${CAT_DIFF_LABEL[d]}</div>
+          <div class="ci-meta">${_catFragen(cat.questions?.length || 0)}</div>
         </div>
         <div class="catalog-item-actions">
-          <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg></div>
-          <div class="icon-btn" onclick="editCatalog('${cat.id}')" title="Bearbeiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
-          <div class="icon-btn del" onclick="deleteCatalog('${cat.id}')" title="Löschen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+          <div class="icon-btn play" onclick="playCatalog('${cat.id}')" title="Spielen">${_ICO_PLAY}</div>
+          <div class="icon-btn" onclick="editCatalog('${cat.id}')" title="Bearbeiten">${_ICO_EDIT}</div>
         </div>
       </div>`;
+    });
+    html += '</div></div>';
+  });
+  return html;
+}
+
+// ── Ebene 2/3: eigene Kataloge mit Unterordnern ───────────
+function _catEigene(cats) {
+  const eigene  = cats.filter(istEigenerKatalog);
+  const folders = getCatFolders();
+
+  if (catNav.folder) {
+    const f = folders.find(x => x.id === catNav.folder);
+    if (!f) { catNav.folder = null; return _catEigene(cats); }   // Ordner weg: zurueck
+    const drin = eigene.filter(c => c.folder === f.id);
+    let html = _catZurueck(GRUPPE_EIGENE.label);
+    html += _catUeberschrift('📁', f.name,
+      `<button class="btn btn-secondary" style="width:auto;padding:6px 12px;font-size:.78rem;" onclick="catRenameFolder('${f.id}')">Umbenennen</button>
+       <button class="btn btn-secondary" style="width:auto;padding:6px 12px;font-size:.78rem;" onclick="catDeleteFolder('${f.id}')">Ordner löschen</button>`);
+    return html + (drin.length ? _catListe(drin, 'eigen', folders)
+      : _catLeer('📂', 'Dieser Ordner ist leer.<br><span style="font-size:.8rem;">Kataloge lassen sich über das Auswahlfeld unter dem Namen hierher verschieben.</span>'));
+  }
+
+  let html = _catZurueck('Kategorien');
+  html += _catUeberschrift(GRUPPE_EIGENE.icon, GRUPPE_EIGENE.label,
+    `<button class="btn btn-secondary" style="width:auto;padding:6px 12px;font-size:.78rem;" onclick="catNewFolder()">+ Ordner</button>
+     <button class="btn btn-primary" style="width:auto;padding:6px 12px;font-size:.78rem;" onclick="openNewCatalog()">+ Katalog</button>`);
+
+  if (folders.length) {
+    html += '<div class="topic-grid">';
+    folders.forEach(f => {
+      const n = eigene.filter(c => c.folder === f.id).length;
+      html += _catKarte('📁', f.name, _catAnzahl(n), `catOpenFolder('${f.id}')`);
     });
     html += '</div>';
   }
 
-  if (!allBuiltin.length && !customCats.length) {
-    html = q
-      ? '<div class="empty-state"><div class="es-icon">🔍</div>Keine Treffer für „' + esc(q) + '".</div>'
-      : '<div class="empty-state"><div class="es-icon">📭</div>Noch keine Kataloge.<br>Erstelle deinen ersten!</div>';
+  // Ein Katalog, dessen Ordner geloescht wurde, gilt als ungeordnet - sonst
+  // waere er nirgends mehr sichtbar.
+  const lose = eigene.filter(c => !c.folder || !folders.some(f => f.id === c.folder));
+  if (lose.length) {
+    if (folders.length) html += '<div class="label" style="margin:18px 0 10px;">Ohne Ordner</div>';
+    html += _catListe(lose, 'eigen', folders);
+  } else if (!folders.length) {
+    html += _catLeer('📭', 'Noch keine eigenen Kataloge.<br>Erstelle deinen ersten!');
   }
+  return html;
+}
 
-  cont.innerHTML = html;
+// ── Ebene 2: geteilte Kataloge ────────────────────────────
+function _catGeteilt(cats) {
+  const list = cats.filter(istGeteilterKatalog);
+  let html = _catZurueck('Kategorien');
+  html += _catUeberschrift(GRUPPE_GETEILT.icon, GRUPPE_GETEILT.label,
+    `<button class="btn btn-primary" style="width:auto;padding:6px 12px;font-size:.78rem;" onclick="catImport()">📥 Code eingeben</button>`);
+  return html + (list.length ? _catListe(list, 'geteilt')
+    : _catLeer('🤝', 'Noch nichts geteilt bekommen.<br><span style="font-size:.8rem;">Wer dir einen Katalog schickt, gibt dir einen sechsstelligen Code.</span>'));
+}
+
+// ── Suche über alle Ebenen ────────────────────────────────
+function _catSuche(cats, q) {
+  const passt = c => (c.name || '').toLowerCase().includes(q) || (c.desc || '').toLowerCase().includes(q);
+  // Bei den integrierten Katalogen zaehlt auch der Themen- und Kategoriename:
+  // "Sport" steht in keinem Katalognamen, ist aber das, wonach gesucht wird.
+  const builtinTreffer = cats.filter(c => {
+    if (!c.builtin) return false;
+    if (passt(c)) return true;
+    const t = TOPIC_GROUPS.find(x => Object.values(x.cats).includes(c.id));
+    return !!t && (t.label.toLowerCase().includes(q) || catGruppe(t.group).label.toLowerCase().includes(q));
+  });
+  const eigene  = cats.filter(c => istEigenerKatalog(c)   && passt(c));
+  const geteilt = cats.filter(c => istGeteilterKatalog(c) && passt(c));
+
+  if (!builtinTreffer.length && !eigene.length && !geteilt.length)
+    return _catLeer('🔍', 'Keine Treffer für „' + esc(q) + '".');
+
+  let html = '';
+  if (builtinTreffer.length) { html += '<div class="label" style="margin-bottom:10px;">Integrierte Inhalte</div>' + _catListe(builtinTreffer, 'nur-spielen'); }
+  if (eigene.length)  { html += '<div class="label" style="margin:18px 0 10px;">' + GRUPPE_EIGENE.label  + '</div>' + _catListe(eigene, 'eigen', getCatFolders()); }
+  if (geteilt.length) { html += '<div class="label" style="margin:18px 0 10px;">' + GRUPPE_GETEILT.label + '</div>' + _catListe(geteilt, 'geteilt'); }
+  return html;
+}
+
+// ── Ordner anlegen, umbenennen, löschen ───────────────────
+function catNewFolder() {
+  const name = (prompt('Name des neuen Ordners:') || '').trim();
+  if (!name) return;
+  const folders = getCatFolders();
+  if (folders.some(f => f.name.toLowerCase() === name.toLowerCase())) { showToast('Diesen Ordner gibt es schon', 'error'); return; }
+  folders.push({ id: 'fld_' + Date.now(), name });
+  saveCatFolders(folders);
+  renderCatalogList();
+  showToast('Ordner angelegt ✓', 'success');
+}
+
+function catRenameFolder(fid) {
+  const folders = getCatFolders();
+  const f = folders.find(x => x.id === fid);
+  if (!f) return;
+  const name = (prompt('Neuer Name:', f.name) || '').trim();
+  if (!name || name === f.name) return;
+  f.name = name;
+  saveCatFolders(folders);
+  renderCatalogList();
+}
+
+function catDeleteFolder(fid) {
+  const folders = getCatFolders();
+  const f = folders.find(x => x.id === fid);
+  if (!f) return;
+  const cats = getCatalogs();
+  const drin = cats.filter(c => c.folder === fid).length;
+  if (!confirm('Ordner „' + f.name + '" löschen?' +
+               (drin ? '\n\nDie ' + drin + ' Kataloge darin bleiben erhalten und stehen danach unter „Ohne Ordner".' : ''))) return;
+  cats.forEach(c => { if (c.folder === fid) delete c.folder; });
+  saveCatalogs(cats);
+  saveCatFolders(folders.filter(x => x.id !== fid));
+  catNav.folder = null;
+  renderCatalogList();
+  showToast('Ordner gelöscht', 'error');
+}
+
+function catMoveTo(catId, fid) {
+  const cats = getCatalogs();
+  const c = cats.find(x => x.id === catId);
+  if (!c) return;
+  if (fid) c.folder = fid; else delete c.folder;
+  saveCatalogs(cats);
+  renderCatalogList();
+  showToast(fid ? 'Verschoben nach „' + (getCatFolders().find(f => f.id === fid)?.name || '') + '" ✓' : 'Aus dem Ordner genommen ✓', 'success');
+}
+
+// ── Teilen und Übernehmen ─────────────────────────────────
+// Der Katalog landet unter sharedCatalogs/<CODE> in Firebase. Gelesen werden
+// darf nur der genaue Pfad, nicht die Liste darueber - ohne Code kommt man
+// also an nichts heran.
+async function catShare(id) {
+  const cats = getCatalogs();
+  const cat  = cats.find(c => c.id === id);
+  if (!cat || !(cat.questions || []).length) { showToast('Katalog ist leer', 'error'); return; }
+  if (!fbDB || !currentUser)                 { showToast('Zum Teilen bitte anmelden', 'error'); return; }
+  try {
+    // Beim zweiten Teilen denselben Code weiterverwenden: Sonst laegen zwei
+    // Staende desselben Katalogs in der Welt und niemand wuesste, welcher gilt.
+    const code = cat.shareCode || generateRoomCode();
+    await fbDB.ref('sharedCatalogs/' + code).set({
+      name: cat.name, desc: cat.desc || '', questions: cat.questions,
+      byUid: currentUser.uid, byName: currentUser.username || '', sharedAt: Date.now()
+    });
+    cat.shareCode = code;
+    saveCatalogs(cats);
+    let hinweis = 'Code: ' + code;
+    try { await navigator.clipboard.writeText(code); hinweis += ' (kopiert)'; } catch {}
+    showToast('🤝 ' + hinweis, 'success');
+    // Der Toast verschwindet; wer ihn verpasst, braucht den Code trotzdem.
+    setTimeout(() => alert('Dein Teilen-Code für „' + cat.name + '":\n\n' + code +
+      '\n\nWer ihn unter „Geteilte Kataloge → Code eingeben" einträgt, bekommt den Katalog in sein Spiel.\n\n' +
+      'Änderst du den Katalog später, teile ihn einfach erneut — der Code bleibt derselbe.'), 60);
+  } catch (e) {
+    // Die Regel fuer sharedCatalogs muss in Firebase hinterlegt sein, sonst
+    // scheitert schon der erste Schreibversuch.
+    showToast(String(e && e.code).includes('permission')
+      ? 'Teilen ist in Firebase noch nicht freigeschaltet' : 'Teilen fehlgeschlagen', 'error');
+  }
+}
+
+async function catImport() {
+  if (!fbDB || !currentUser) { showToast('Zum Übernehmen bitte anmelden', 'error'); return; }
+  const code = (prompt('Code des geteilten Katalogs:') || '').trim().toUpperCase();
+  if (!code) return;
+  try {
+    const d = (await fbDB.ref('sharedCatalogs/' + code).once('value')).val();
+    const qs = Array.isArray(d?.questions) ? d.questions : Object.values(d?.questions || {});
+    if (!d || !qs.length) { showToast('Kein Katalog zu diesem Code', 'error'); return; }
+    const cats = getCatalogs();
+    const id   = 'shr_' + code;
+    const eintrag = {
+      id, name: d.name || 'Geteilter Katalog', desc: d.desc || '', questions: qs,
+      shared: { code, byName: d.byName || '', byUid: d.byUid || '', importedAt: Date.now() }
+    };
+    const idx = cats.findIndex(c => c.id === id);
+    const neu = idx < 0;
+    if (neu) cats.push(eintrag); else cats[idx] = eintrag;
+    saveCatalogs(cats);
+    catNav = { group: 'geteilt', folder: null };
+    const feld = document.getElementById('catalog-search');
+    if (feld) feld.value = '';
+    renderCatalogList();
+    showToast(neu ? '„' + eintrag.name + '" übernommen ✓' : '„' + eintrag.name + '" aktualisiert ✓', 'success');
+  } catch (e) {
+    showToast(String(e && e.code).includes('permission')
+      ? 'Geteilte Kataloge sind in Firebase noch nicht freigeschaltet' : 'Übernehmen fehlgeschlagen', 'error');
+  }
 }
 
 function toggleTopicGroup(id, cardEl) {
@@ -5201,11 +5501,29 @@ function playCatalog(id) {
   startQuiz();
 }
 
+// Die Ordnerwahl im Editor gibt es nur fuer eigene Kataloge: Bei einem
+// Gruppenquiz liegt der Inhalt in Firebase, bei einem geteilten gehoert er
+// jemand anderem - beide haben mit den eigenen Ordnern nichts zu tun.
+function _editorOrdnerFuellen(cat) {
+  const row = document.getElementById('editor-folder-row');
+  const sel = document.getElementById('editor-catalog-folder');
+  if (!row || !sel) return;
+  const zeigen = !editingGroupCtx && istEigenerKatalog(cat);
+  row.style.display = zeigen ? '' : 'none';
+  if (!zeigen) return;
+  sel.innerHTML = '<option value="">Kein Ordner</option>' +
+    getCatFolders().map(f => `<option value="${f.id}"${cat.folder === f.id ? ' selected' : ''}>${esc(f.name)}</option>`).join('');
+}
+
 function openNewCatalog() {
   editingGroupCtx = null;
+  // Wer aus einem Ordner heraus "+ Katalog" drueckt, will ihn dort haben.
+  const vorbelegt = (catNav.group === 'eigene' && catNav.folder) ? catNav.folder : undefined;
   editingCatalog = { id: 'cat_' + Date.now(), name: '', desc: '', questions: [] };
+  if (vorbelegt) editingCatalog.folder = vorbelegt;
   document.getElementById('editor-catalog-name').value = '';
   document.getElementById('editor-catalog-desc').value = '';
+  _editorOrdnerFuellen(editingCatalog);
   renderEditorQList();
   hideQuestionForm();
   showScreen('screen-catalog-editor');
@@ -5218,16 +5536,21 @@ function editCatalog(id) {
   editingCatalog = JSON.parse(JSON.stringify(cat));
   document.getElementById('editor-catalog-name').value = cat.name;
   document.getElementById('editor-catalog-desc').value = cat.desc || '';
+  _editorOrdnerFuellen(editingCatalog);
   renderEditorQList();
   hideQuestionForm();
   showScreen('screen-catalog-editor');
 }
 
 function deleteCatalog(id) {
-  if (!confirm('Katalog wirklich löschen?')) return;
+  const cat = getCatalogs().find(c => c.id === id);
+  const geteilt = cat && istGeteilterKatalog(cat);
+  if (!confirm(geteilt
+        ? 'Geteilten Katalog aus deiner Liste entfernen?\n\nMit dem Code kannst du ihn jederzeit wieder übernehmen.'
+        : 'Katalog wirklich löschen?')) return;
   saveCatalogs(getCatalogs().filter(c => c.id !== id));
   renderCatalogList();
-  showToast('Katalog gelöscht', 'error');
+  showToast(geteilt ? 'Aus deiner Liste entfernt' : 'Katalog gelöscht', 'error');
 }
 
 function cancelEditor() {
@@ -5313,6 +5636,10 @@ function saveCatalog() {
   if (!editingCatalog.questions.length)  { showToast('Mindestens eine Frage erforderlich', 'error'); return; }
   editingCatalog.name = name;
   editingCatalog.desc = document.getElementById('editor-catalog-desc').value.trim();
+  const ordner = document.getElementById('editor-catalog-folder');
+  if (ordner && document.getElementById('editor-folder-row').style.display !== 'none') {
+    if (ordner.value) editingCatalog.folder = ordner.value; else delete editingCatalog.folder;
+  }
   // Gruppenquiz: nach Firebase statt in den localStorage-Katalog.
   if (editingGroupCtx) {
     const ctx = editingGroupCtx;
@@ -5325,6 +5652,10 @@ function saveCatalog() {
   if (idx >= 0) cats[idx] = editingCatalog; else cats.push(editingCatalog);
   saveCatalogs(cats);
   showToast('Katalog gespeichert ✓', 'success');
+  // Dorthin zurueck, wo der Katalog jetzt liegt - sonst landet man auf der
+  // Kategorienuebersicht und sucht sein eben gespeichertes Werk.
+  if (istEigenerKatalog(editingCatalog)) catNav = { group: 'eigene', folder: editingCatalog.folder || null };
+  else if (istGeteilterKatalog(editingCatalog)) catNav = { group: 'geteilt', folder: null };
   showScreen('screen-home');
   switchTab('catalog');
 }

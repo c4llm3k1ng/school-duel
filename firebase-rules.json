@@ -42,7 +42,9 @@
       "$key": {
         ".read": "auth != null",
         ".write": "auth != null",
-        ".indexOn": ["level"]
+        ".indexOn": [
+          "level"
+        ]
       }
     },
     "questionCorrections": {
@@ -53,7 +55,6 @@
       ".read": "auth != null",
       ".write": "auth != null"
     },
-
     "groups": {
       "$gid": {
         ".read": "auth != null && (data.child('members').child(auth.uid).exists() || root.child('groupInvites').child(auth.uid).child($gid).exists())",
@@ -86,6 +87,12 @@
         "$gid": {
           ".write": "auth != null && (auth.uid === $uid || root.child('groups').child($gid).child('members').child(auth.uid).child('role').val() === 'admin')"
         }
+      }
+    },
+    "sharedCatalogs": {
+      "$code": {
+        ".read": "auth != null",
+        ".write": "auth != null && (!data.exists() || data.child('byUid').val() === auth.uid)"
       }
     }
   }
