@@ -1,6 +1,6 @@
 {
   "hinweis": "Fragen, die im Qualitaetsdurchlauf durch andere ersetzt wurden. Nicht zwangslaeufig schlecht - meist zu leicht, nicht eindeutig loesbar oder thematisch am falschen Ort. Erzeugt von question-generator/collect_replaced.js. Die Zuordnung ist unscharf: stark umformulierte Fragen koennen faelschlich enthalten sein, deshalb steht bei jedem Eintrag die Nachfolgerin dabei. Diese Datei gehoert NICHT in den Firebase-Abgleich.",
-  "erzeugt": "2026-08-05",
+  "erzeugt": "2026-08-08",
   "fragen": [
     {
       "question": "Was fressen Pflanzenfresser?",
@@ -7675,6 +7675,25 @@
         "index": 38,
         "basis": "1914be4",
         "ersetztDurch": "Sind a = (1|2|1), b = (2|1|0) und c = (3|3|1) komplanar, liegen sie also in einer gemeinsamen Ebene?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "In welchem Anime kämpfen die Charaktere gegen fliegende Tintenfischmonster?",
+      "options": [
+        "Fairy Tail",
+        "No Game No Life",
+        "Overlord",
+        "One Piece (Arabasta)"
+      ],
+      "correct": 0,
+      "explanation": "Trick-Frage – in 'Fairy Tail' gibt es viele verschiedene Monsterarten, doch fliegende Tintenfischmonster sind kein besonderes Merkmal.",
+      "topic": "Anime-Allgemein",
+      "_herkunft": {
+        "datei": "anime_leicht.json",
+        "index": 96,
+        "basis": "e500328",
+        "ersetztDurch": "In 'Fairy Tail': Welches Element setzt Natsu Dragneel im Kampf ein?",
         "aehnlichkeit": 0
       }
     }

@@ -92,7 +92,7 @@
     "sharedCatalogs": {
       "$code": {
         ".read": "auth != null",
-        ".write": "auth != null && (!data.exists() || data.child('byUid').val() === auth.uid)"
+        ".write": "auth != null && (!data.exists() || data.child('byUid').val() === auth.uid) && (!newData.exists() || newData.child('byUid').val() === auth.uid)"
       }
     }
   }

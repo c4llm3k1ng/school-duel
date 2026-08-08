@@ -7,18 +7,25 @@
 //   node chunk.js merge k5         fuegt zusammen und loescht die Teile
 //   node chunk.js status k5        zeigt offene Teile
 //
-// Die Teile liegen in questionbank/_work/ und heissen <datei>##<n>.json.
+// Mit --dir questionbank_katalog arbeitet es auf den Katalogen statt auf dem
+// Schulfragen-Spiegel. Das _work/ liegt dann ebenfalls dort: merge findet die
+// Ursprungsdatei nur im selben Ordner wieder.
+//
+// Die Teile liegen in <ordner>/_work/ und heissen <datei>##<n>.json.
 // Reihenfolge und Anzahl bleiben beim Zusammenfuegen exakt erhalten.
 
 const fs   = require('fs');
 const path = require('path');
 
-const DIR  = path.join(__dirname, '..', 'questionbank');
+const _di  = process.argv.indexOf('--dir');
+const BASE = (_di >= 0 && process.argv[_di + 1]) ? process.argv[_di + 1] : 'questionbank';
+const DIR  = path.join(__dirname, '..', BASE);
 const WORK = path.join(DIR, '_work');
 
-const mode   = process.argv[2];
-const prefix = process.argv[3] || '';
-const size   = parseInt(process.argv[4], 10) || 40;
+const _args  = process.argv.slice(2).filter((a, i, arr) => a !== '--dir' && arr[i - 1] !== '--dir');
+const mode   = _args[0];
+const prefix = _args[1] || '';
+const size   = parseInt(_args[2], 10) || 40;
 
 if (!['split','merge','status'].includes(mode)) {
   console.error('Aufruf: node chunk.js <split|merge|status> <praefix> [groesse]');
@@ -45,7 +52,7 @@ if (mode === 'split') {
     }
     console.log(`  ${f.padEnd(44)} ${String(qs.length).padStart(4)} -> ${n} Teile a ~${per}`);
   }
-  console.log(`\n${parts} Teile in _work/, ${whole} Dateien klein genug (bleiben in questionbank/).`);
+  console.log(`\n${parts} Teile in _work/, ${whole} Dateien klein genug (bleiben in ${BASE}/).`);
 }
 
 if (mode === 'merge') {

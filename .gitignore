@@ -3,3 +3,8 @@ _push_tmp/
 
 # Lokale Konfiguration dieser Arbeitsumgebung
 .claude/
+
+# Zerlegte Teile waehrend einer Charge. Ein halb bearbeiteter Teil darf
+# niemals in einen Commit geraten - der Merge stellt die Datei wieder her.
+questionbank/_work/
+questionbank_katalog/_work/

@@ -1758,3 +1758,165 @@ entfernen hätte die Längenverteilung gekippt.
 
 **Das braucht eine Entscheidung.** Es ist derselbe Verrat wie der Klammer-Verrat, nur in
 umgekehrter Richtung.
+
+---
+
+# Nachtrag: sechste Charge — die Kataloge
+
+`anime_leicht` (283) und `k5__Biologie__Allgemein` (76). Erste Charge überhaupt in den
+Katalogen — die 3893 Katalogfragen waren nie auf Längenverrat geprüft.
+
+| Datei | Ränge | „längste" gewinnt |
+|---|---|---|
+| `anime_leicht` | 57/20/10/14 → **25/25/25/25** | 47 % → **23 %** |
+| `k5__Biologie__Allgemein` | 48/25/13/15 → **27/24/24/24** | 40 % → **25 %** |
+
+## 87. Der eigentliche Fund: `anime_leicht` ist inhaltlich in schlechtem Zustand
+
+Die Längenarbeit war der Anlass, nicht das Ergebnis. Beim Lesen haben die zehn Agenten in
+**einer** Datei mit 283 Fragen gemeldet:
+
+- **28 Distraktoren, die in Wahrheit zutrafen**
+- **6 Fragen, bei denen zwei Optionen dieselbe Sache benennen**
+- **rund 25 Fragen mit falscher Prämisse, falscher Antwort oder unsinnigem Fragetext**
+
+Das sind etwa **9 % der Datei**. Zum Vergleich: In den Schulfragen lag die Quote solcher
+Funde bei ein bis zwei Prozent. Die Katalogfragen wirken wie eine ungeprüfte
+KI-Erzeugung — sie sind flüssig formuliert, aber die Fakten stimmen oft nicht.
+
+**Empfehlung: Die drei Anime-Kataloge und `musik_leicht` brauchen einen eigenen
+inhaltlichen Durchlauf, unabhängig von der Längenarbeit.** Bei `fussball_*` (1323 Fragen)
+ist derselbe Verdacht naheliegend, aber noch nicht belegt.
+
+## 88. Drei Fragen ohne richtige Antwort — von mir behoben
+
+- **Wasserstein-Frage:** „Welches Pokémon entwickelt sich nicht durch Leveln, sondern durch
+  einen Wasserstein?" mit den Optionen Schiggy, Enton, Quapsel, Jurob. **Keines** der vier
+  entwickelt sich mit einem Wasserstein; alle vier entwickeln sich durch Leveln. Die
+  Erklärung widerlegte die eigene Antwort („Schiggy entwickelt sich durch Leveln") und
+  verwechselte zusätzlich Myrapla (Oddish) mit Sterndu (Staryu). Sterndu ist jetzt die
+  richtige Antwort, die drei anderen bleiben als Levelaufsteiger stehen.
+- **Trickfrage ohne Antwort:** „In welchem Anime kämpfen die Charaktere gegen fliegende
+  Tintenfischmonster?" — die Erklärung nannte sie selbst eine Trickfrage und begründete die
+  markierte Antwort damit, dass es das Merkmal dort *nicht* gibt. Damit war keine Option
+  richtig. Durch eine echte Fairy-Tail-Frage ersetzt.
+- **Held ohne Beschreibung:** „Wie heißt der Astronaut-ähnliche Held …, der als Nr. 2 gilt?"
+  — auf keine Figur passend, und die Erklärung sagte „ranghöchster aktiver Held" im
+  Widerspruch zur Frage. Jetzt „der Feuer-Held …, der lange als Nr. 2 galt".
+
+Damit habe ich als einziger in dieser Charge Fragetexte geändert. Mein Prüfwerkzeug
+`check_teile.js` hat genau diese zwei Änderungen gemeldet — das ist der gewünschte Alarm,
+nicht ein Fehlalarm.
+
+## 89. Distraktoren, die zutrafen — 28 Stück in einer Datei
+
+Die schwersten, weil ein Kind mit Serienkenntnis die *richtige* Antwort anklickt und
+„falsch" bekommt:
+
+| Frage | Der Distraktor, der stimmte |
+|---|---|
+| Wer ist der Anführer der Akatsuki? | **Tobi** — Obito ist der wahre Anführer hinter Pain |
+| Wer gilt als Held Nummer 2? | **Hawks** — ist im Kanon tatsächlich die Nummer 2 |
+| Wer verliert sein Death Note? | **Sidoh** — genau sein Heft hat Ryuk gestohlen |
+| Welche Attacke setzt Luffy ein? | **Gum-Gum-Gatling** — eine echte Luffy-Attacke |
+| Wer war Kakashis Rivale als Kind? | **Guy Sensei** — ist Kakashis erklärter ewiger Rivale |
+| Was ist Dekus Problem mit seinem Quirk? | **„Er kann ihn nicht kontrollieren"** — genau das ist es |
+| Welcher Typ ist effektiv gegen Feuer? | **Boden** — ist sehr effektiv gegen Feuer |
+| Welcher Anime handelt von einer virtuellen Spielwelt? | **Log Horizon** — spielt genau dort |
+| Welcher Anime handelt von einer Mädchenband? | **Bang Dream!** — handelt genau davon |
+| Wer ist Ichigos Schulfreundin? | **Rukia Kuchiki** — geht in seine Klasse |
+| Wer war am Uchiha-Massaker beteiligt? | **Obito** — war beteiligt |
+| Welcher Namekianer wird Verbündeter? | **Dende** — wird Gott der Erde und Heiler |
+| Wer sind die Antagonisten in FMA:B? | **Scar** und **Greed** — beide sind Antagonisten |
+| Welches schwarze Schwert führt Zoro? | **Shusui** — ist selbst ein schwarzes Schwert |
+| Welcher Anime handelt von Basketball? | **Slam Dunk** — der Basketball-Anime schlechthin |
+| Wer trägt ein Sharingan? | **Kakashi** — heißt „Kakashi vom Sharingan" |
+
+Dazu Fälle, in denen zwei Optionen **dieselbe Sache** benannten: „Charizard" neben „Glurak",
+„Kyubi-Modus" neben „Chakra-Mode", „York New Arc" neben „Yorknew Arc", „Gurren Lagann"
+neben „Tengen Toppa", „Isekai Shokudō" neben „Restaurant to Another World".
+
+Bemerkenswert wieder: Mehrere Agenten haben gemeldet, welche naheliegenden Distraktoren sie
+**bewusst nicht** verwendet haben, weil sie zugetroffen hätten — Ursprungstitan und
+Kriegshammertitan (Eren erbt beide später), Log Horizon und KonoSuba bei der
+Dungeon-Frage, Impel Down beim Ace-Rettungsversuch.
+
+## 90. Fragen mit falscher Prämisse — zur Entscheidung
+
+Diese habe ich **nicht** angefasst, weil sie neu geschrieben werden müssten:
+
+- **„Welcher Titel gehört dem stärksten Schwertkämpfer?"** — markiert ist „Piratenkönig",
+  die Erklärung sagt selbst „Dracule Mihawk trägt den Titel Weltbester Schwertkämpfer".
+  Die markierte Antwort ist falsch.
+- **„Ichigos weibliche Begleiterin mit Quincy-Kräften"** — markiert ist Orihime, die keine
+  Quincy-Kräfte hat. Keine der vier Optionen ist eine Quincy.
+- **„Das Geheimnis des Königs" in Black Clover** — den Begriff gibt es dort nicht.
+- **„Hikaru gründet einen geheimen Schachclub"** — *Hikaru no Go* handelt von Go.
+  Die Erklärung sagt selbst „Go".
+- **„Ein Samurai erwacht im modernen Japan"** — *Samurai Champloo* spielt in der Edo-Zeit.
+- **„Ein Weiser ohne Magie"** — *Mushoku Tensei* heißt „arbeitslos", nicht „magielos";
+  Rudeus ist ein herausragender Magier.
+- **„Sophie, die Hexe"** aus *Das wandelnde Schloss* — Sophie ist das Opfer eines Fluchs,
+  nicht die Hexe.
+- **„Ein Boxer führt sein Team zur Meisterschaft"** — *Hajime no Ippo* ist Einzelsport.
+- **„Der Schneemann-Wächter der Thousand Sunny"** — gibt es nicht; die Erklärung sagt
+  „Schiffsarzt".
+- **„Welche Technik durchbohrt einen fiktiven Bauch?"** — ergibt keinen Sinn,
+  vermutlich Übersetzungsschaden.
+- **„Goku erreicht Ultra Instinct im Kampf gegen Beerus"** — es war Jiren im Turnier der
+  Kraft.
+- **„Wie heißt der Zug in Chihiros Reise ins Zauberland?"** — der Zug hat keinen
+  kanonischen Namen; eine Option lautet noch „Keine – es gibt kein Boot", Rest einer
+  anderen Frage.
+- **„Wer ist der Erbe von One for All vor Izuku?"** — der Vorgänger war All Might; Mirio
+  war nur der vorgesehene Kandidat.
+- **„Nami, die Steuermännin"** — Nami ist Navigatorin, Steuermann ist Jinbe.
+- **Zwei Dubletten:** zweimal „Was ist im Keller von Grishas Haus?", zweimal Sukuna in
+  Yujis Körper.
+- **Antwort steht im Fragetext:** „…und als Krillin bekannt ist?", „Wie heißt der Clan von
+  Sasuke **Uchiha**?"
+
+## 91. Namen, die in derselben Datei uneinheitlich sind
+
+Bitte je einmal festlegen, dann räume ich auf:
+
+- **Ruffy** oder **Luffy** (beides kommt vor, teils in derselben Frage)
+- **Frieza** oder **Freezer** (englische gegen deutsche Synchronfassung)
+- Das Schiff heißt an drei Stellen **Merry Go**, **Going Merry** und **Flying Lamb**
+- Pokémon-Typen standen englisch („Grass") in deutschen Fragen — von den Agenten auf
+  „Pflanze" korrigiert, weitere Stellen können in anderen Katalogen stecken
+
+## 92. Zwei neue Werkzeuge
+
+- **`check_laenge.js`** misst beide Kennzahlen auf einen Schlag, für eine Datei, einen
+  Ordner oder pro Teil. Bisher habe ich das mit Wegwerf-Einzeilern gemacht — genau daher
+  kam der Messfehler der vierten Charge (Zahl der Gesamtdatei statt pro Teil).
+- **`check_teile.js`** vergleicht jeden bearbeiteten Teil mit der noch unveränderten
+  Ursprungsdatei, **bevor** gemergt wird: geänderte Fragetexte, verlorene Fragen,
+  vertauschte Reihenfolge, `correct` außerhalb des Bereichs, doppelte Optionen,
+  Umlaut-Umschreibungen, BOM, kaputte Kodierung.
+
+Dazu kennt `chunk.js` jetzt `--dir` und kann damit überhaupt erst die Kataloge zerlegen.
+
+## 93. Ein Messartefakt, das ich im Blick behalten muss
+
+Mathematikdateien erscheinen mit extremen Rangzahlen — `k12__Mathematik__Geometrie` steht
+mit 70/30/0/0 an der Spitze der Auffälligenliste. Tatsächlich liegen dort 46 von 56 Fragen
+im Längengleichstand (Zahlenoptionen), die Rangverteilung ruht also auf zehn Fragen und ist
+Rauschen. Die zweite Kennzahl sagt 22 %, also Zufallsniveau: Die Datei ist in Ordnung.
+
+**Folge:** Die Charge wird nach der zweiten Kennzahl ausgewählt, nicht nach der ersten.
+Nach der ersten hätte ich zwei Wochen an Dateien gearbeitet, die kein Problem haben.
+
+## 94. Stand der Messung über den ganzen Bestand
+
+213 Dateien, **41 außerhalb des Korridors**. Die schlimmsten sind durchweg Kataloge:
+
+| Datei | Fragen | „längste" gewinnt |
+|---|---|---|
+| `anime_mittel` | 278 | 47 % |
+| `musik_leicht` | 273 | 47 % |
+| `anime_schwer` | 280 | 45 % |
+| `politik_schwer` | 200 | 42 % |
+| `fussball_leicht` | 683 | 37 % |
+| `fussball_schwer` | 640 | 34 % |

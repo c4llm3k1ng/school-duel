@@ -52,7 +52,9 @@ function jaccard(a, b) {
 }
 const lies = txt => { const d = JSON.parse(txt); return Array.isArray(d) ? d : (d.questions || []); };
 
-const dateien = execSync(`git ls-tree --name-only ${BASE} questionbank/`, { cwd: REPO, encoding: 'utf8' })
+// Beide Ordner: Seit der sechsten Charge werden auch Katalogfragen ersetzt, und
+// eine ersetzte Katalogfrage ist genauso aufhebenswert wie eine Schulfrage.
+const dateien = execSync(`git ls-tree --name-only ${BASE} questionbank/ questionbank_katalog/`, { cwd: REPO, encoding: 'utf8' })
   .split('\n').filter(f => f.endsWith('.json') && !path.basename(f).startsWith('_'));
 
 const gefunden = [];
