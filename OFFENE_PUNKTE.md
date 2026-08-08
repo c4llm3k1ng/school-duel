@@ -1957,14 +1957,15 @@ Chimera-Ant-Arc, Totoro im Fragetext, "Detektiv-Junge namens Conan") und
 Wiedersprueche zwischen Frage und Erklaerung (Steuermann/Navigatorin,
 Schachclub/Go, Rache/Satan-Sohn).
 
-## 97. Namensfassung - ENTSCHEIDUNG OFFEN
+## 97. Namensfassung - ENTSCHIEDEN (6.8.2026): deutsche Synchronnamen
 
 Die Kataloge mischen deutsche Synchron- und Originalnamen: Luffy/Ruffy,
 Frieza/Freezer/Freeza, Merry Go/Going Merry/Flying Lamb, Colossal
 Titan/Koloss-Titan, dazu japanische und westliche Namensreihenfolge
-nebeneinander. Innerhalb jeder Frage ist es jetzt konsistent; die dateiweite
-Festlegung (Synchro oder Original) trifft der Nutzer. Danach ein eigener
-Durchlauf ueber alle Kataloge.
+nebeneinander. Innerhalb jeder Frage ist es jetzt konsistent; der Nutzer hat die DEUTSCHEN SYNCHRONNAMEN festgelegt (Ruffy, Freezer,
+Flying Lamb, Koloss-Titan). Ein eigener Umbenennungs-Durchlauf ueber die
+bereits geprueften Kataloge steht noch aus; neue Chargen bekommen die Regel
+direkt in den Auftrag.
 
 ## 98. Kleinigkeiten, bewusst liegen gelassen
 
@@ -1972,3 +1973,36 @@ Durchlauf ueber alle Kataloge.
 - "In welcher Stadt spielt Tokyo Ghoul?" - der Titel enthaelt die Antwort; auf Stufe leicht vertretbar
 - Ein topic-Feld "Anime-Allgemein" auf einer reinen Fairy-Tail-Frage
 - "Er verliert seine Quirk" in einer Option (muesste "seinen" heissen) - Korrektur haette die Laengenwertung beruehrt; fuer einen reinen Sprachdurchlauf notiert
+ 
+---
+
+# Nachtrag: anime_mittel, Laengencharge ABGEBROCHEN
+
+Acht Teile gestartet, fuenf fertig (01, 02, 03, 04, 06), drei unberuehrt.
+Auf Wunsch des Nutzers gestoppt. Die fuenf fertigen Teile sind gemergt und
+committet, damit nichts im ignorierten _work/ strandet.
+
+## 99. Stand und naechster Schritt
+
+Datei jetzt 36/24/18/21, "laengste gewinnt" 33 % (vorher 54/19/12/15, 47 %).
+Noch NICHT im Korridor, weil drei Teile fehlen:
+
+  Teil 05   42/23/19/16   38 %
+  Teil 07   86/ 4/ 4/ 7   70 %  <- schlechtester Teil des ganzen Bestands
+  Teil 08   54/36/ 4/ 7   47 %
+
+Naechste Sitzung: erneut in 8 Teile zerlegen (node chunk.js split anime_mittel 35
+--dir questionbank_katalog), dann NUR die Teile 05, 07 und 08 bearbeiten. Die
+uebrigen fuenf liegen im Korridor und duerfen nicht noch einmal angefasst werden.
+
+Danach steht der Inhaltsdurchlauf ueber anime_mittel aus - Teil 04 hat schon im
+Laengendurchlauf gemeldet: "Erin Yeager" statt Eren, "Gorhans" statt Gohans,
+Demon Slayer auf 2016 statt 2019 datiert, Spy x Family auf 2021 statt 2022,
+"Recovery of an MMO Junkie" als E-Sport-Serie beschrieben.
+
+## 100. Distraktoren, die zutrafen (Teil 04)
+
+- "Die Potara-Fusion kann rueckgaengig gemacht werden" - trifft im Kanon zu
+- "Cheadle Yorkshire" - wird nach Neteros Tod tatsaechlich Vorsitzende
+- "Eine Jutsu des Rinnegan" und "Eine Waffe der Akatsuki" zum Unendlichen
+  Tsukuyomi - beide zu nah an wahr
