@@ -1920,3 +1920,55 @@ Nach der ersten hätte ich zwei Wochen an Dateien gearbeitet, die kein Problem h
 | `politik_schwer` | 200 | 42 % |
 | `fussball_leicht` | 683 | 37 % |
 | `fussball_schwer` | 640 | 34 % |
+ 
+---
+
+# Nachtrag: Inhaltsdurchlauf anime_leicht
+
+Erster Katalog des vom Nutzer beauftragten Inhaltsdurchlaufs ueber alle 3893
+Katalogfragen. 283 Fragen in acht Teilen, jeder Agent bekam die bereits
+belegten Schaeden seines Teils mit. Erstmals durften Fragetexte geaendert und
+Fragen ersetzt werden; jede solche Aenderung wurde einzeln gemeldet.
+
+Umfang: 97 Fragetexte geaendert, 17 Optionssaetze, 73 Erklaerungen, 7 Fragen
+mit inhaltlich anderer richtiger Antwort, 16 Fragen ersetzt (aufgehoben in
+ERSETZTE_FRAGEN.json, Bestand 421). Laengenbalance gehalten: 26/24/25/24,
+"laengste gewinnt" 24 %.
+
+## 95. Eine falsch markierte Antwort
+
+Die One-Piece-Frage nach dem Titel des staerksten Schwertkaempfers: Markiert
+war "Piratenkoenig", die Erklaerung nannte selbst Mihawks Titel. Der ungenaue
+Distraktor "Weltbeste Klinge" heisst jetzt "Weltbester Schwertkaempfer" und
+ist die richtige Antwort.
+
+## 96. Das haeufigste Schadensbild: Der Fragetext macht einen Distraktor richtig
+
+- "Wie heisst Grisha Yeagers Sohn?" (Eren) - Zeke ist ebenfalls sein Sohn und stand daneben
+- "Wie heisst Gokus Sohn?" (Gohan) - Goten ebenso
+- "Der sprechende Kater in Sailor Moon" (Luna) - Luna ist die Katze, der Kater Artemis stand daneben
+- "Welche Farbe hat das Uchiha-Wappen?" (Rot) - es ist rot-weiss, "Weiss" stand daneben
+- "Der Hauptcharakter in FMA: Brotherhood" (Edward) - Alphonse stand daneben
+- "Anime ueber eine Maedchenband" (K-On!) - Love Live! stand daneben
+- "Wer ist der Erbe von One for All vor Izuku?" (Mirio) - der Traeger davor war All Might; KEINE Option war richtig. Frage umgestellt auf das, was Mirio wirklich war
+
+Dazu Fragen, die ihre Antwort selbst verrieten (Hunter-Examen, Cell-Arc,
+Chimera-Ant-Arc, Totoro im Fragetext, "Detektiv-Junge namens Conan") und
+Wiedersprueche zwischen Frage und Erklaerung (Steuermann/Navigatorin,
+Schachclub/Go, Rache/Satan-Sohn).
+
+## 97. Namensfassung - ENTSCHEIDUNG OFFEN
+
+Die Kataloge mischen deutsche Synchron- und Originalnamen: Luffy/Ruffy,
+Frieza/Freezer/Freeza, Merry Go/Going Merry/Flying Lamb, Colossal
+Titan/Koloss-Titan, dazu japanische und westliche Namensreihenfolge
+nebeneinander. Innerhalb jeder Frage ist es jetzt konsistent; die dateiweite
+Festlegung (Synchro oder Original) trifft der Nutzer. Danach ein eigener
+Durchlauf ueber alle Kataloge.
+
+## 98. Kleinigkeiten, bewusst liegen gelassen
+
+- "Universum 11" ist wegen der zweistelligen Zahl zwangslaeufig die laengste Option - nicht behebbar ohne Faktenverfaelschung
+- "In welcher Stadt spielt Tokyo Ghoul?" - der Titel enthaelt die Antwort; auf Stufe leicht vertretbar
+- Ein topic-Feld "Anime-Allgemein" auf einer reinen Fairy-Tail-Frage
+- "Er verliert seine Quirk" in einer Option (muesste "seinen" heissen) - Korrektur haette die Laengenwertung beruehrt; fuer einen reinen Sprachdurchlauf notiert

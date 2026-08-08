@@ -25,6 +25,10 @@ const path = require('path');
 const REPO = path.resolve(__dirname, '..');
 const _di  = process.argv.indexOf('--dir');
 const BASE = (_di >= 0 && process.argv[_di + 1]) ? process.argv[_di + 1] : 'questionbank';
+// Im Inhaltsdurchlauf duerfen Fragetexte geaendert werden - dort waere die
+// Meldung nur Rauschen. Alle uebrigen Pruefungen bleiben scharf, besonders die
+// Anzahl: Auch wer umformulieren darf, darf keine Frage verlieren.
+const TEXTE_FREI = process.argv.includes('--texte-erlaubt');
 const DIR  = path.join(REPO, BASE);
 const WORK = path.join(DIR, '_work');
 
@@ -65,7 +69,7 @@ for (const p of fs.readdirSync(WORK).filter(f => f.endsWith('.json')).sort()) {
   qs.forEach((q, i) => {
     const o = ausschnitt[i];
     const wo = `${p} Q${(teilNr - 1) * per + i}`;
-    if (String(q.question).trim() !== String(o.question).trim())
+    if (!TEXTE_FREI && String(q.question).trim() !== String(o.question).trim())
       melde(wo, 'Fragetext geaendert\n      vorher:  ' + String(o.question).slice(0, 90) +
                 '\n      nachher: ' + String(q.question).slice(0, 90));
     const opts = q.options || [];
