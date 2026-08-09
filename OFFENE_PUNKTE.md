@@ -2092,3 +2092,85 @@ den ganzen Teil noch einmal und faengt die Restfehler).
 Offen aus Teil 04 (gemeldet, unsicher gelassen): etablierte deutsche
 Begriffe fuer Human Auctioning House, Celestial Dragons; Grandline vs.
 Grand Line; Anglizismus Quirk.
+ 
+---
+
+# Nachtrag: Inhaltsdurchlauf anime_mittel abgeschlossen
+
+Alle acht Teile geprueft (Teil 04 in der vorigen Sitzung, sieben in dieser).
+Die Teile 01-03 wurden ERNEUT geprueft, weil ihre Agenten beim ersten Anlauf
+mitten in der Arbeit gestoppt worden waren.
+
+Laengenbalance nach dem Inhaltsdurchlauf: 24/25/24/26, "laengste gewinnt" 23 %.
+33 weitere ersetzte Fragen aufgehoben (Bestand 468).
+
+## 105. Die erneute Pruefung der Teile 01-03 war noetig
+
+Alle drei Agenten kommen unabhaengig zum selben Befund: Der abgebrochene
+Vorgaenger hatte Sprache und Laengen bearbeitet, die INHALTLICHEN Fehler aber
+unberuehrt gelassen. Belege: Teil 01 hatte noch Chidori/Raikiri als zwei
+Optionen fuer dieselbe Technik, "1200 Jahre alte Raetsel" und Steins;Gate
+"ueber Magie"; Teil 02 die falsche 4-Blatt-Behauptung zu Astas Grimoire und
+zwei sich selbst verratende Fragen; Teil 03 die erfundene Option "CHAOS".
+
+**Regel fuer kuenftige Abbrueche: Ein Teil ohne Abschlussbericht gilt als
+UNGEPRUEFT und wird komplett neu bearbeitet.**
+
+## 106. Die schwersten Funde dieser Charge
+
+- **Eine Erklaerung erklaerte die eigene Antwort fuer falsch:** "Welcher Anime
+  zeigt Sportler, die Curling spielen?" mit "Yuri on Ice" als richtig und der
+  Erklaerung "Trick-Frage - Yuri on Ice zeigt Eiskunstlauf, nicht Curling".
+  Dasselbe Muster wie die Tintenfisch-Frage in anime_leicht.
+- **Die zwei bekannten falsch markierten Antworten sind behoben:** Gokus Form
+  gegen Kefla ist "Ultra Instinct: Sign"; Tanjiros Urahn ist Sumiyoshi, dem
+  Yoriichi die Sonnenatmung zeigte.
+- **Zwei Optionen fuer dieselbe Sache:** Chidori/Raikiri (Raikiri IST Kakashis
+  perfektioniertes Chidori), "Ultra Instinct: Completed"/"Mastered Ultra
+  Instinct".
+- **Erfundene Fakten:** Fujitora bekam eine "Magnet-Frucht" angedichtet (er hat
+  die Schwerkraft-Frucht; die Magnet-Frucht gehoert Eustass Kid), Lerios
+  Nen-Faehigkeit hatte vier frei erfundene Optionen, "CHAOS" existiert in
+  Steins;Gate nicht, "Tsubaki Shiten" und "Villains Academia" ebenso wenig.
+- **Eine Option disqualifizierte sich selbst:** "Squid Game (Netflix, kein
+  Anime)" stand als Distraktor in einer Anime-Frage.
+- Rund zehn falsche Jahreszahlen (Kaiji 2007 statt 2020, Ghost in the Shell
+  1995 statt 2015, Chainsaw Man 2022, No Game No Life 2014, Golden Kamuy 2018,
+  Jujutsu Kaisen 2020, Love Live 2013, Blue Lock 2022, Mushoku Tensei 2021).
+
+## 107. Ein Verdacht gegen mein Eindeutschungsskript - geprueft und entkraeftet
+
+Ein Agent vermutete, mein Skript habe "Warrior" mit Erens Nachnamen "Jaeger"
+kollidieren lassen ("Was bedeutet Jaeger in der Titanen-Bezeichnung?").
+Gegengeprueft ueber drei Commits: Die Frage lautete schon in 0d44121 so, also
+lange VOR dem Skript (94f18be). Der Fehler war original - vermutlich eine
+verunglueckte Uebersetzung von "Warrior" bei der Erzeugung. Repariert.
+
+## 108. Namenskonsistenz - ENTSCHEIDUNGEN NOETIG
+
+Mehrere Agenten haben unabhaengig dieselben Begriffe gemeldet und bewusst NICHT
+eigenmaechtig umgestellt. Sie brauchen eine katalogweite Festlegung:
+
+- **"Quirk" oder "Macke"?** Die deutsche My-Hero-Academia-Fassung sagt
+  "Macke". Betrifft den ganzen Katalog.
+- **"Seelenrichter" oder "Shinigami"?** Hier haben zwei meiner eigenen Agenten
+  GEGENSAETZLICH entschieden: In anime_leicht hat einer "Seelenrichter" als
+  nicht etabliert ENTFERNT, ein anderer im selben Durchlauf DARAUF
+  vereinheitlicht.
+- **"Schurkenliga" oder "Liga der Schurken"?** Beides kommt vor.
+- **Nen-Kategorien** (Emission/Transmutation ...): Eine Uebersetzung wuerde bei
+  mindestens einer Frage die Antwort verraten - dort muesste die Frage
+  mitumformuliert werden.
+- **Super Saiyan oder Super-Saiyajin?** Die Erklaerungen nutzen teils schon die
+  deutsche Form, die Optionen nicht.
+- Ohne gesicherte deutsche Fassung stehen geblieben: Domain Expansion, Cursed
+  Energy, Full Cowl, Flame Haze, Truth-Seeking Ball, Boogie Woogie.
+
+## 109. Eine Messdifferenz, aufgeklaert
+
+Ein Agent meldete fuer seinen Teil 24/24/27/24 statt meiner 25/25/21/29. Ursache:
+Er hat den Gleichstandsfragen trotzdem einen Rang zugewiesen (Nenner 33), meine
+Messung schliesst sie nach der Zaehlregel aus (Nenner 28). Meine Zahl war die
+regelkonforme; in der Sache - keine Verschiebung - waren beide einig.
+Dass der Agent die Abweichung von sich aus gemeldet hat, statt sie zu
+ueberspielen, ist genau das gewuenschte Verhalten.
