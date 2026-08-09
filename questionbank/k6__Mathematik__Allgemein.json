@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Um Brüche zu addieren, müssen sie gleichnamig gemacht werden. 1/4 wird mit 2 erweitert zu 2/8. 2/8 + 3/8 = 5/8.",
     "options": [
-      "4/12",
       "5/8",
+      "4/12",
       "1/2",
       "4/8"
     ],
@@ -48,24 +48,24 @@
     "topic": "Geometrie"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "3/5 lässt sich auf Hundertstel erweitern: 3/5 = 6/10 = 60/100. 60/100 entspricht 60 %.",
     "options": [
+      "60 %",
       "30 %",
       "35 %",
-      "60 %",
       "75 %"
     ],
     "question": "Welcher Prozentsatz entspricht dem Bruch 3/5?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Eine Zahl ist durch 3 teilbar, wenn ihre Quersumme durch 3 teilbar ist (2+4=6). Durch 4 ist sie teilbar, wenn die letzten zwei Stellen durch 4 teilbar sind. Beides trifft auf 24 zu.",
     "options": [
       "14",
-      "18",
       "24",
+      "18",
       "32"
     ],
     "question": "Welche dieser Zahlen ist sowohl durch 3 als auch durch 4 ohne Rest teilbar?",
@@ -84,23 +84,23 @@
     "topic": "Geometrie"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Bei einer 5 an der dritten Stelle wird aufgerundet. Aus der 4 an der zweiten Stelle wird somit eine 5. Das Ergebnis lautet damit 12,35.",
     "options": [
       "12,34",
-      "12,35",
       "12,30",
-      "12,40"
+      "12,40",
+      "12,35"
     ],
     "question": "Runde die Zahl 12,345 auf zwei Dezimalstellen (Hundertstel).",
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Eine Zahl ist durch 3 teilbar, wenn die Quersumme (die Summe ihrer Ziffern) durch 3 teilbar ist. Bei 135 ist die Quersumme 1+3+5 = 9, und 9 ist durch 3 teilbar.",
     "options": [
-      "124",
       "135",
+      "124",
       "217",
       "301"
     ],
@@ -108,11 +108,11 @@
     "topic": "Teilbarkeitsregeln"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Gemäß der Regel 'Punkt vor Strich' berechnest du zuerst die Multiplikation: 4 * 3 = 12. Dann rechnest du von links nach rechts: 8 + 12 - 2 = 20 - 2 = 18.",
     "options": [
-      "18",
       "22",
+      "18",
       "10",
       "30"
     ],
@@ -120,36 +120,36 @@
     "topic": "Reihenfolge der Rechenoperationen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Um Brüche zu addieren, müssen sie den gleichen Nenner haben. Erweitere 1/4 zu 2/8 (indem du Zähler und Nenner mit 2 multiplizierst). Dann addierst du: 2/8 + 3/8 = 5/8.",
     "options": [
       "4/12",
-      "5/8",
       "1/2",
+      "5/8",
       "7/8"
     ],
     "question": "Addiere die Brüche: 1/4 + 3/8",
     "topic": "Bruchrechnung (Addition)"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "In Dezimalzahlen steht die erste Ziffer nach dem Komma für Zehntel, die zweite für Hundertstel und die dritte für Tausendstel. In 12,345 ist die 4 die Ziffer an der Hundertstel-Stelle.",
     "options": [
       "1",
       "3",
-      "4",
-      "5"
+      "5",
+      "4"
     ],
     "question": "Welche Ziffer steht in der Zahl 12,345 an der Hundertstel-Stelle?",
     "topic": "Dezimalzahlen (Stellenwert)"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Die Fläche eines Rechtecks berechnet man mit der Formel Länge mal Breite. Also: 15 m * 8 m = 120 Quadratmeter.",
     "options": [
+      "120 Quadratmeter",
       "23 Quadratmeter",
       "46 Quadratmeter",
-      "120 Quadratmeter",
       "60 Quadratmeter"
     ],
     "question": "Ein rechteckiger Garten ist 15 Meter lang und 8 Meter breit. Wie groß ist seine Fläche?",
@@ -180,23 +180,23 @@
     "topic": "Primzahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "1 Liter entspricht 1000 Milliliter. Um Liter in Milliliter umzurechnen, multiplizierst du die Literzahl mit 1000: 0,75 Liter * 1000 = 750 ml.",
     "options": [
       "75 ml",
-      "750 ml",
       "7500 ml",
-      "0,00075 ml"
+      "0,00075 ml",
+      "750 ml"
     ],
     "question": "Eine Wasserflasche fasst 0,75 Liter. Wie viele Milliliter Wasser sind das?",
     "topic": "Einheiten umrechnen (Volumen)"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Um 67 durch 8 zu teilen, suchen wir die größte Zahl, die multipliziert mit 8 nicht größer als 67 ist. Das ist 8, denn 8 * 8 = 64. Der Rest ist dann 67 - 64 = 3. Also: 8 Rest 3.",
     "options": [
-      "8 Rest 2",
       "8 Rest 3",
+      "8 Rest 2",
       "7 Rest 7",
       "9 Rest 1"
     ],
@@ -228,23 +228,23 @@
     "topic": "Brüche: Addition ungleichnamiger Brüche"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Um Dezimalzahlen zu vergleichen, schaut man zuerst auf die ganze Zahl (hier alle 0). Dann vergleicht man die Zehntelstellen. 0,9 hat eine 9 an der Zehntelstelle, während die anderen 0 oder 8 haben. Daher ist 0,9 die größte Zahl.",
     "options": [
       "0,85",
-      "0,9",
       "0,095",
-      "0,899"
+      "0,899",
+      "0,9"
     ],
     "question": "Welche der folgenden Dezimalzahlen ist die größte?",
     "topic": "Dezimalzahlen: Vergleichen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Wir wissen, dass 1 Kilogramm (kg) 1000 Gramm (g) entspricht. Um Gramm in Kilogramm umzurechnen, teilt man die Grammzahl durch 1000. Also: 1500 g / 1000 = 1,5 kg.",
     "options": [
-      "15 kg",
       "1,5 kg",
+      "15 kg",
       "0,15 kg",
       "150 kg"
     ],
@@ -252,48 +252,48 @@
     "topic": "Größen und Einheiten: Massen umrechnen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Der Flächeninhalt eines Rechtecks wird berechnet, indem man die Länge mit der Breite multipliziert (Länge × Breite). Hier also 12 Meter × 7 Meter = 84 Quadratmeter (m²).",
     "options": [
       "19 Quadratmeter",
-      "38 Quadratmeter",
       "84 Quadratmeter",
+      "38 Quadratmeter",
       "84 Meter"
     ],
     "question": "Ein rechteckiger Garten ist 12 Meter lang und 7 Meter breit. Welchen Flächeninhalt hat der Garten?",
     "topic": "Geometrie: Flächeninhalt eines Rechtecks"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Zuerst berechnen wir die Kosten für die Kugelschreiber: 4 * 0,90 € = 3,60 €. Dann addieren wir die Kosten für das Lineal: 3,60 € + 1,30 € = 4,90 €. Zum Schluss ziehen wir die Gesamtkosten vom bezahlten Betrag ab: 10,00 € - 4,90 € = 5,10 €.",
     "options": [
       "4,90 €",
-      "5,10 €",
       "6,70 €",
+      "5,10 €",
       "4,80 €"
     ],
     "question": "Lisa kauft 4 Kugelschreiber zu je 0,90 € und ein Lineal für 1,30 €. Sie bezahlt mit einem 10-Euro-Schein. Wie viel Wechselgeld bekommt sie zurück?",
     "topic": "Sachrechnen: Dezimalzahlen mit Geld"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Zuerst werden die Klammern berechnet: (12 + 8) = 20. Dann die Multiplikation: 20 × 3 = 60. Zum Schluss die Subtraktion: 60 - 10 = 50.",
     "options": [
       "40",
-      "50",
       "60",
-      "70"
+      "70",
+      "50"
     ],
     "question": "Was ist das Ergebnis der Rechnung: (12 + 8) × 3 - 10?",
     "topic": "Grundrechenarten und Klammerregeln"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Um Brüche zu addieren, müssen sie gleichnamig gemacht werden. Der kleinste gemeinsame Nenner von 2 und 3 ist 6. ½ = ⅔ und ⅓ = ⅛. Also ⅔ + ⅛ = ⅜.",
     "options": [
+      "⅜",
       "⅞",
       "⅗",
-      "⅜",
       "⅛"
     ],
     "question": "Welchen Wert hat der Bruch ½ + ⅓?",
@@ -324,23 +324,23 @@
     "topic": "Runden von natürlichen Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Der Umfang eines Rechtecks berechnet sich mit der Formel U = 2 × (Länge + Breite). Also U = 2 × (7 cm + 4 cm) = 2 × 11 cm = 22 cm.",
     "options": [
       "11 cm",
-      "22 cm",
       "28 cm",
-      "30 cm"
+      "30 cm",
+      "22 cm"
     ],
     "question": "Ein Rechteck ist 7 cm lang und 4 cm breit. Wie groß ist sein Umfang?",
     "topic": "Geometrie: Umfang von Rechtecken"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Die Vielfachen von 6 sind: 6, 12, 18, 24, ... Die Vielfachen von 9 sind: 9, 18, 27, ... Das kleinste gemeinsame Vielfache ist 18.",
     "options": [
-      "3",
       "18",
+      "3",
       "36",
       "54"
     ],
@@ -348,12 +348,12 @@
     "topic": "Teilbarkeit: Kleinstes gemeinsames Vielfaches"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Man kann rechnen: 3 × 4 = 12 und 0,5 × 4 = 2. Dann 12 + 2 = 14. Oder schriftlich multiplizieren und das Komma richtig setzen.",
     "options": [
       "12",
-      "13",
       "14",
+      "13",
       "140"
     ],
     "question": "Wie viel ist 3,5 × 4?",

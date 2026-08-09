@@ -1,11 +1,11 @@
 [
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Brüche werden nur bei gleichem Nenner addiert. Das kgV von 4 und 6 ist 12: 3/4 = 9/12 und 1/6 = 2/12. Addition der Zähler: 9/12 + 2/12 = 11/12. Die Nenner werden dabei nicht addiert.",
     "options": [
+      "11/12",
       "4/10",
       "7/12",
-      "11/12",
       "11/24"
     ],
     "question": "Was ist das Ergebnis von 3/4 + 1/6?",
@@ -24,25 +24,25 @@
     "topic": "Multiplikation von Brüchen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Durch einen Bruch teilt man, indem man mit seinem Kehrwert multipliziert: (4a/5) : (8a/15) = (4a/5) · (15/(8a)) = 60a/(40a) = 3/2. Das a kürzt sich weg, weil a ≠ 0 vorausgesetzt ist.",
     "options": [
-      "3/2",
       "2a/3",
       "3a/2",
+      "3/2",
       "32a²/75"
     ],
     "question": "Vereinfache den Term: (4a/5) : (8a/15) für a ≠ 0.",
     "topic": "Division von Brüchen mit Variablen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Ein negativer Exponent bedeutet Kehrwert der Basis: (3/4)⁻² = (4/3)². Dann werden Zähler und Nenner potenziert: (4/3)² = 4²/3² = 16/9. Ein negativer Exponent macht das Ergebnis nicht negativ.",
     "options": [
       "-9/16",
       "9/16",
-      "16/9",
-      "-16/9"
+      "-16/9",
+      "16/9"
     ],
     "question": "Welchen Wert hat der Ausdruck (3/4)^(-2)?",
     "topic": "Potenzen mit Brüchen und negativen Exponenten"
@@ -60,11 +60,11 @@
     "topic": "Termvereinfachung mit Brüchen und Variablen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Die Gleichung wird mit dem kgV der Nenner multipliziert, hier mit 12: 12·x/3 - 12·x/4 = 12·2, also 4x - 3x = 24 und damit x = 24. Probe: 24/3 - 24/4 = 8 - 6 = 2 ✓",
     "options": [
-      "x = 24",
       "x = 12",
+      "x = 24",
       "x = 6",
       "x = 8"
     ],
@@ -84,23 +84,23 @@
     "topic": "Umwandlung von gemischten Zahlen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Zähler und Nenner getrennt vereinfachen: 1 + 1/3 = 4/3 und 1 - 1/4 = 3/4. Der Doppelbruch ist eine Division: (4/3) : (3/4) = (4/3) · (4/3) = 16/9.",
     "options": [
       "4/3",
       "3/4",
-      "16/9",
-      "9/16"
+      "9/16",
+      "16/9"
     ],
     "question": "Berechne den Wert des Doppelbruchs: (1 + 1/3) / (1 - 1/4).",
     "topic": "Doppelbrüche und gemischte Operationen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Gemeinsamer Nenner ist 8, denn 8 ist ein Vielfaches von 4: 3/4 = 6/8. Addition der Zähler: 6/8 + 1/8 = 7/8. Die Nenner werden dabei nicht addiert.",
     "options": [
-      "4/12",
       "7/8",
+      "4/12",
       "1/2",
       "5/8"
     ],
@@ -120,35 +120,35 @@
     "topic": "Multiplikation von Brüchen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Gemeinsamer Nenner aller Brüche ist 27: 7/9 = 21/27 und 1/3 = 9/27. Dann von links nach rechts rechnen: (21 - 9 + 2)/27 = 14/27.",
     "options": [
-      "14/27",
       "16/27",
       "10/27",
+      "14/27",
       "20/27"
     ],
     "question": "Berechne: (7/9) - (1/3) + (2/27)",
     "topic": "Gemischte Operationen mit Brüchen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Der Zählerbruch wird mit dem Kehrwert des Nennerbruchs multipliziert. Kehrwert von 4/5 ist 5/4: (2/3) · (5/4) = 10/12 = 5/6. Wichtig ist, den Kehrwert vom unteren Bruch zu bilden.",
     "options": [
       "8/15",
-      "5/6",
       "6/5",
-      "15/8"
+      "15/8",
+      "5/6"
     ],
     "question": "Vereinfache den Doppelbruch: ( (2/3) / (4/5) )",
     "topic": "Doppelbrüche"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Gemeinsamer Nenner ist 6: x/2 = 3x/6, x/3 = 2x/6 und x/6 bleibt. Zähler zusammenfassen: (3x + 2x - x)/6 = 4x/6. Kürzen mit 2 ergibt 2x/3.",
     "options": [
-      "x/6",
       "2x/3",
+      "x/6",
       "x",
       "x/2"
     ],
@@ -156,11 +156,11 @@
     "topic": "Brüche mit Variablen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Zuerst die Potenzen: (-1/2)³ = -1/8 (ungerader Exponent, also negativ) und (2/3)² = 4/9. Dann multiplizieren: (-1/8) · (4/9) = -4/72 = -1/18.",
     "options": [
-      "-1/18",
       "1/18",
+      "-1/18",
       "-1/6",
       "1/6"
     ],
@@ -180,13 +180,13 @@
     "topic": "Bruchrechnung in Textaufgaben"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Zähler zusammenfassen: 1/x + 1/y = (y + x)/(xy). Nenner mit der dritten binomischen Formel: (x² - y²)/(xy) = ((x - y)(x + y))/(xy). Division heißt Multiplikation mit dem Kehrwert: ((x + y)/(xy)) · ((xy)/((x - y)(x + y))) = 1/(x - y). Gekürzt werden dürfen (x + y) und xy nur, weil x, y ≠ 0 und x ≠ ±y vorausgesetzt sind.",
     "options": [
       "1/(x+y)",
-      "1/(x-y)",
       "(x+y)/(x-y)",
-      "(x-y)/(x+y)"
+      "(x-y)/(x+y)",
+      "1/(x-y)"
     ],
     "question": "Vereinfache den Ausdruck ( (1/x) + (1/y) ) / ( (x² - y²) / (xy) ) für x ≠ 0, y ≠ 0 und x ≠ ±y.",
     "topic": "Komplexe Bruchterme mit Variablen"

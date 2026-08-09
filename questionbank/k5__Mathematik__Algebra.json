@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Du kehrst die Addition um: 24 - 9 = 15. Probe: 9 + 15 = 24, die Gleichung stimmt. Wer 9 und 24 addiert, landet falsch bei 33.",
     "options": [
-      "14",
       "15",
+      "14",
       "16",
       "33"
     ],
@@ -12,11 +12,11 @@
     "topic": "Platzhalter in Gleichungen (einfach)"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "x ist der unbekannte Faktor. Du kehrst die Multiplikation um: 24 : 3 = 8. Probe: 3 * 8 = 24. Wer statt zu teilen subtrahiert, erhält falsch 21.",
     "options": [
-      "8",
       "12",
+      "8",
       "21",
       "27"
     ],
@@ -24,36 +24,36 @@
     "topic": "Einfache Gleichungen mit Multiplikation"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Prüfe jede Regel an beiden Beispielen. 'Zahl * 2' passt nur für die 5 (5 * 2 = 10), bei der 7 käme 14 heraus. Nur 'Zahl + 5' passt für beide: 5 + 5 = 10 und 7 + 5 = 12.",
     "options": [
-      "Zahl + 5",
       "Zahl * 2",
       "Zahl + 7",
+      "Zahl + 5",
       "Zahl + 3"
     ],
     "question": "Ein Zahlenautomat verwandelt Eingabezahlen. Wenn du 5 eingibst, kommt 10 heraus. Wenn du 7 eingibst, kommt 12 heraus. Welche Regel benutzt der Automat?",
     "topic": "Muster und Regeln erkennen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Nenne die gesuchte Anzahl x. Aus dem Text folgt x + 4 = 11, also x = 11 - 4 = 7. Probe: 7 + 4 = 11. Wer die 4 addiert statt subtrahiert, erhält falsch 15.",
     "options": [
       "6",
-      "7",
       "8",
-      "15"
+      "15",
+      "7"
     ],
     "question": "Anna hatte eine unbekannte Anzahl an Stiften. Sie bekommt 4 Stifte von ihrer Freundin und hat jetzt insgesamt 11 Stifte. Wie viele Stifte hatte Anna zuerst?",
     "topic": "Textaufgaben in Gleichungen übersetzen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Jede Zahl wird verdoppelt: 3 * 2 = 6, 6 * 2 = 12, 12 * 2 = 24. Also folgt 24 * 2 = 48. Wer stattdessen 12 addiert, landet falsch bei 36.",
     "options": [
+      "48",
       "36",
       "42",
-      "48",
       "96"
     ],
     "question": "Welches ist die nächste Zahl in dieser Zahlenfolge: 3, 6, 12, 24, ____?",
@@ -72,25 +72,25 @@
     "topic": "Terme mit Variablen berechnen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Bei der Addition darf man die Summanden vertauschen (Kommutativgesetz): n + 8 = 8 + n gilt für jede Zahl n. Für n = 3 ist zum Beispiel 3 + 8 = 11 und 8 + 3 = 11. Bei n - 8, 8 - n und n * 8 stimmt der Wert dagegen nicht überein.",
     "options": [
-      "8 + n",
       "n - 8",
       "8 - n",
+      "8 + n",
       "n * 8"
     ],
     "question": "Welcher Term hat für jede Zahl n denselben Wert wie n + 8?",
     "topic": "Rechengesetze (Kommutativgesetz der Addition)"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Nenne Leas Anzahl x. Markus bekommt 2 * x. Zusammen sind das x + 2 * x = 3 * x, und das sind alle 30 Gummibärchen: 3 * x = 30, also x = 30 : 3 = 10. Lea bekommt 10, Markus 20. Probe: 10 + 20 = 30.",
     "options": [
       "5",
-      "10",
       "15",
-      "20"
+      "20",
+      "10"
     ],
     "question": "Eine Tüte mit 30 Gummibärchen wird vollständig zwischen Lea und Markus aufgeteilt. Markus bekommt doppelt so viele Gummibärchen wie Lea. Wie viele Gummibärchen bekommt Lea?",
     "topic": "Textaufgaben mit Verhältnissen und Gleichungen"
@@ -120,47 +120,47 @@
     "topic": "Zahlenmuster erkennen (leicht)"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Nach dem Distributivgesetz darf der Faktor 7 auf beide Summanden verteilt werden: 7 * (20 + 3) = 7 * 20 + 7 * 3 = 140 + 21 = 161. Zur Kontrolle: 7 * 23 = 161.",
     "options": [
-      "7 * 20 + 7 * 3",
       "7 * 20 + 3 * 3",
       "7 * 20 - 7 * 3",
+      "7 * 20 + 7 * 3",
       "7 * 3 + 20 * 3"
     ],
     "question": "Welcher Term hat denselben Wert wie 7 * (20 + 3)?",
     "topic": "Rechengesetze (Distributivgesetz)"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Für x = 6 gilt 6 + 5 = 11, und 11 ist kleiner als 12 - die Aussage ist wahr. Für 7, 8 und 9 ergeben sich die Summen 12, 13 und 14; keine davon ist kleiner als 12. Genau 12 reicht nicht, denn gefordert ist echt kleiner.",
     "options": [
-      "6",
       "7",
       "8",
-      "9"
+      "9",
+      "6"
     ],
     "question": "Welche dieser natürlichen Zahlen kann für x eingesetzt werden, damit die Aussage x + 5 < 12 wahr ist?",
     "topic": "Einfache Ungleichungen (mittel)"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Nenne die ursprüngliche Anzahl x. Aus dem Text folgt x - 3 = 11, also x = 11 + 3 = 14. Probe: 14 - 3 = 11. Wer die 3 noch einmal abzieht, erhält falsch 8.",
     "options": [
+      "14",
       "8",
       "12",
-      "13",
-      "14"
+      "13"
     ],
     "question": "Ein Bauer hat eine unbekannte Anzahl an Kühen. Wenn er 3 Kühe verkauft, hat er noch 11 Kühe. Wie viele Kühe hatte der Bauer ursprünglich?",
     "topic": "Textaufgabe mit Platzhalter (mittel)"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Rechne rückwärts: zuerst 19 - 4 = 15, also 3 * y = 15. Dann 15 : 3 = 5. Probe: 3 * 5 + 4 = 19. Wer bei 15 stehen bleibt, hat nur den ersten Schritt gemacht.",
     "options": [
-      "5",
       "6",
+      "5",
       "7",
       "15"
     ],
@@ -180,13 +180,13 @@
     "topic": "Muster mit wachsenden Abständen (mittel/schwer)"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Fünf Reihen mit je 12 Sitzen bedeuten 12 + 12 + 12 + 12 + 12, kurz 12 * 5. Die Gleichung lautet also s = 12 * 5, und damit ist s = 60.",
     "options": [
       "s = 12 + 5",
-      "s = 12 * 5",
       "s = 12 - 5",
-      "s = 12 : 5"
+      "s = 12 : 5",
+      "s = 12 * 5"
     ],
     "question": "In einem Kino sind in jeder Reihe 12 Sitze. 's' ist die Anzahl der Sitze in 5 Reihen. Welche Gleichung beschreibt 's' korrekt?",
     "topic": "Aufstellen einfacher Gleichungen aus Text (schwer)"

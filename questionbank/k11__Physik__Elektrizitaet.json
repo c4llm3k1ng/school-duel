@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Ohmsches Gesetz: U in Volt, I in Ampere, R in Ohm (Ω). Linearer Zusammenhang: doppelter Strom → doppelte Spannung. Gilt nicht für Halbleiter, Glühlampe (temperaturabhängig).",
     "options": [
-      "U = I / R; Spannung gleich Strom geteilt durch Widerstand; gilt für alle Leiter unabhängig von der Temperatur",
       "U = I · R (Spannung = Strom × Widerstand); gilt für ohmsche Widerstände bei konstanter Temperatur",
+      "U = I / R; Spannung gleich Strom geteilt durch Widerstand; gilt für alle Leiter unabhängig von der Temperatur",
       "R = U · I; Widerstand gleich Produkt aus Spannung und Strom; Einheit: Ohm (Ω)",
       "I = U · R; Strom gleich Produkt aus Spannung und Widerstand; gilt für alle elektrischen Schaltkreise"
     ],
@@ -24,35 +24,35 @@
     "topic": "Elektrizitätslehre"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Stromstärke: I = 1 A bedeutet 1 Coulomb pro Sekunde. Technische Stromrichtung: + → –; Elektronenstrom: – → +.",
     "options": [
       "Die Potenzialdifferenz zwischen zwei Punkten: U = W/q; treibt den Strom durch den Leiter; Einheit: Volt (V)",
-      "Die Ladungsmenge, die pro Zeiteinheit durch einen Leiterquerschnitt fließt: I = dq/dt = q/t; Einheit: Ampere (A) = Coulomb pro Sekunde",
       "Der Widerstand, den ein Leiter dem Stromfluss entgegensetzt: R = U/I; hängt von Material und Temperatur ab; Einheit: Ohm (Ω)",
+      "Die Ladungsmenge, die pro Zeiteinheit durch einen Leiterquerschnitt fließt: I = dq/dt = q/t; Einheit: Ampere (A) = Coulomb pro Sekunde",
       "Die Energie, die pro Ladungseinheit von einer Spannungsquelle bereitgestellt wird; beschreibt das elektrische Potenzial; Einheit: Joule pro Coulomb"
     ],
     "question": "Was ist elektrische Stromstärke I?",
     "topic": "Elektrizitätslehre"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "R = ρ·l/A (ρ = spezifischer Widerstand, l = Länge, A = Querschnitt). Metalle: niedriger ρ (Cu ≈ 1,7·10⁻⁸ Ω·m). Temperaturkoeffizient: Metalle → R steigt mit T.",
     "options": [
       "Die elektrische Spannung an einem Leiter: U = I · R; Einheit: Volt (V); erzeugt durch Quellen wie Batterien oder Generatoren",
-      "Das Maß für den 'Strömungswiderstand' des Leiters: R = U/I; Einheit: Ohm (Ω); hängt von Material, Länge, Querschnitt und Temperatur ab",
       "Die elektrische Leistung, die ein Bauteil pro Zeit abgibt: P = U · I; Einheit: Watt (W); steigt mit Spannung und Strom",
-      "Die Kapazität eines Bauteils zur Ladungsspeicherung: C = Q/U; Einheit: Farad (F); abhängig von Plattenabstand und -fläche"
+      "Die Kapazität eines Bauteils zur Ladungsspeicherung: C = Q/U; Einheit: Farad (F); abhängig von Plattenabstand und -fläche",
+      "Das Maß für den 'Strömungswiderstand' des Leiters: R = U/I; Einheit: Ohm (Ω); hängt von Material, Länge, Querschnitt und Temperatur ab"
     ],
     "question": "Was ist elektrischer Widerstand R?",
     "topic": "Elektrizitätslehre"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Reihe: Gesamtwiderstand immer größer. Parallel: Gesamtwiderstand immer kleiner als der kleinste Einzelwiderstand. Merkhilfe: mehr Wege → weniger Gesamtwiderstand.",
     "options": [
-      "Reihenschaltung: R_ges = R₁ · R₂ (Ströme addieren sich, Spannungen gleich); Parallelschaltung: R_ges = R₁ + R₂ (Spannungen addieren sich, Ströme gleich)",
       "Reihenschaltung: R_ges = R₁ + R₂ +… (Ströme gleich, Spannungen addieren sich); Parallelschaltung: 1/R_ges = 1/R₁ + 1/R₂ +… (Spannungen gleich, Ströme addieren sich)",
+      "Reihenschaltung: R_ges = R₁ · R₂ (Ströme addieren sich, Spannungen gleich); Parallelschaltung: R_ges = R₁ + R₂ (Spannungen addieren sich, Ströme gleich)",
       "Reihenschaltung: 1/R_ges = 1/R₁ + 1/R₂ (Spannungen addieren sich, Ströme gleich); Parallelschaltung: R_ges = R₁ + R₂ (Ströme addieren sich, Spannungen gleich)",
       "Reihenschaltung: R_ges = R₁ / R₂ (der kleinste Wert bestimmt das Ergebnis); Parallelschaltung: R_ges = R₁ · R₂ (der größte Wert bestimmt das Ergebnis)"
     ],
@@ -72,35 +72,35 @@
     "topic": "Elektrizitätslehre"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "1 kWh = 3,6 · 10⁶ J. Stromrechnung: verbrauchte Energie in kWh. Ein 100W-Gerät 10 Stunden: 1 kWh.",
     "options": [
       "W = P / t = U · I / t; Energie als Quotient aus Leistung und Zeit; Einheit: Watt pro Sekunde (W/s)",
-      "W = P · t = U · I · t; Einheit: Joule (J) oder Kilowattstunde (kWh); Umrechnung: 1 kWh = 3,6 · 10⁶ J",
       "W = U · R · t; Energie als Produkt aus Spannung, Widerstand und Zeit; Einheit: Volt-Ohm-Sekunde (V·Ω·s)",
+      "W = P · t = U · I · t; Einheit: Joule (J) oder Kilowattstunde (kWh); Umrechnung: 1 kWh = 3,6 · 10⁶ J",
       "W = I² · R²; Energie als Quadrat aus Strom und Widerstand; beschreibt ausschließlich Wärmeverluste; Einheit: Joule (J)"
     ],
     "question": "Was ist elektrische Energie W?",
     "topic": "Elektrizitätslehre"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "E-Feld: Kraft pro Testladung. Plattenkondensator: homogenes Feld E = U/d (Spannung/Plattenabstand). Feldlinien zeigen Richtung der Kraft auf positive Ladung.",
     "options": [
       "Der Bereich um eine stromdurchflossene Spule, in dem magnetische Kräfte wirken; erzeugt durch fließenden Strom; Feldstärke H in Ampere pro Meter (A/m)",
-      "Der Bereich um eine Ladung, in dem eine Kraft auf andere Ladungen wirkt; E = F/q; im Plattenkondensator E = U/d; Einheit: Volt pro Meter (V/m)",
       "Der Bereich um einen Dauermagneten, in dem Kräfte auf ferromagnetische Materialien wirken; Feldstärke B in Tesla (T)",
-      "Der Bereich um eine Masse, in dem Gravitationskräfte auf andere Körper wirken; Feldstärke g in Newton pro Kilogramm (N/kg)"
+      "Der Bereich um eine Masse, in dem Gravitationskräfte auf andere Körper wirken; Feldstärke g in Newton pro Kilogramm (N/kg)",
+      "Der Bereich um eine Ladung, in dem eine Kraft auf andere Ladungen wirkt; E = F/q; im Plattenkondensator E = U/d; Einheit: Volt pro Meter (V/m)"
     ],
     "question": "Was ist ein elektrisches Feld?",
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Coulomb-Gesetz: analog zu Newtonscher Gravitation (1/r²). Gleichnamige Ladungen: abstoßend; ungleichnamige: anziehend. Elektrisches Feld E = F/q₀.",
     "options": [
-      "F = m · a (Kraft gleich Masse mal Beschleunigung); gilt für die Bewegung geladener Teilchen in elektrischen Feldern; Einheit: Newton (N)",
       "F = k · |q₁ · q₂| / r² (Kraft zwischen zwei ruhenden Punktladungen); Abstandsquadratgesetz wie bei der Gravitation; k = 9·10⁹ N·m²/C²",
+      "F = m · a (Kraft gleich Masse mal Beschleunigung); gilt für die Bewegung geladener Teilchen in elektrischen Feldern; Einheit: Newton (N)",
       "F = q · v · B (Kraft auf eine bewegte Ladung im Magnetfeld); abhängig von Geschwindigkeit und Feldstärke; Einheit: Newton (N)",
       "F = U · I (Leistung in einem elektrischen Leiter); beschreibt die Wirkung der Spannung auf den Strom; Einheit: Watt (W)"
     ],
@@ -120,35 +120,35 @@
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Magnetfeld B: Feldlinien verlaufen von N nach S außen, kontinuierlich innerhalb. Rechte-Hand-Regel: Daumen = Stromrichtung, Finger = Feldlinien.",
     "options": [
       "Der Bereich um eine elektrische Ladung, in dem Kräfte auf andere Ladungen wirken; erzeugt durch ruhende Ladungen; Feldstärke E in Volt pro Meter (V/m)",
-      "Der Bereich, in dem magnetische Kräfte wirken; erzeugt durch Dauermagnete, stromdurchflossene Leiter; Feldstärke B in Tesla (T)",
       "Der Bereich um eine Masse, in dem Gravitationskräfte auf andere Körper wirken; erzeugt durch jede Masse; Feldstärke g in Newton pro Kilogramm (N/kg)",
+      "Der Bereich, in dem magnetische Kräfte wirken; erzeugt durch Dauermagnete, stromdurchflossene Leiter; Feldstärke B in Tesla (T)",
       "Der Bereich um eine Wärmequelle, in dem Temperaturgradient einen Wärmestrom antreibt; beschrieben durch den Wärmestrom in Watt (W)"
     ],
     "question": "Was ist ein Magnetfeld?",
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Lorentzkraft: senkrecht zu v und B. Rechte-Hand-Regel (3-Finger-Regel): Daumen v, Zeigefinger B, Mittelfinger F. Grundlage von Elektromotor und Generator.",
     "options": [
       "Die Anziehungskraft zwischen zwei Magneten (Polen); proportional zu den Polstärken und umgekehrt proportional zum Abstandsquadrat: F = k · m₁ · m₂ / r²",
-      "Die Kraft auf eine bewegte Ladung im Magnetfeld: F = q · v · B · sin(α); oder auf einen stromdurchflossenen Leiter: F = I · l · B · sin(α)",
       "Die elektrostatische Kraft zwischen zwei ruhenden Punktladungen: F = k · q₁ · q₂ / r²; wirkt entlang der Verbindungslinie der Ladungen",
-      "Die Gewichtskraft auf eine elektrisch geladene Masse im Schwerefeld: F = m · g; unabhängig von der Ladungsmenge des Körpers"
+      "Die Gewichtskraft auf eine elektrisch geladene Masse im Schwerefeld: F = m · g; unabhängig von der Ladungsmenge des Körpers",
+      "Die Kraft auf eine bewegte Ladung im Magnetfeld: F = q · v · B · sin(α); oder auf einen stromdurchflossenen Leiter: F = I · l · B · sin(α)"
     ],
     "question": "Was ist die Lorentzkraft?",
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Faraday'sches Induktionsgesetz: U_ind = –dΦ/dt (Φ = Magnetischer Fluss). Lenz'sche Regel: Induktionsstrom wirkt der auslösenden Ursache entgegen.",
     "options": [
-      "Die Kraft auf einen stromdurchflossenen Leiter im Magnetfeld; Grundlage des Elektromotors: F = I · l · B · sin(α); Richtung nach der Rechte-Hand-Regel",
       "Das Entstehen einer Spannung (Induktionsspannung) in einem Leiter bei Änderung des magnetischen Flusses durch ihn – Grundlage für Generator, Transformator",
+      "Die Kraft auf einen stromdurchflossenen Leiter im Magnetfeld; Grundlage des Elektromotors: F = I · l · B · sin(α); Richtung nach der Rechte-Hand-Regel",
       "Die Ablenkung geladener Teilchen in einem elektrischen Feld; proportional zur Feldstärke und Ladung; Grundlage des Elektroskops und der Kathodenstrahlröhre",
       "Die Ausbreitung elektromagnetischer Wellen durch den Raum mit Lichtgeschwindigkeit; erzeugt durch Schwingung von Ladungsträgern in einer Antenne"
     ],
@@ -168,35 +168,35 @@
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Netzstrom: 230 V / 50 Hz (EU). U_eff = U_max / √2. Vorteil AC: einfache Spannungsänderung per Transformator. DC: in Elektronik, Elektroautos.",
     "options": [
       "AC und DC sind physikalisch identisch; der einzige Unterschied ist die Quellenspannung – Batterien erzeugen AC, Generatoren erzeugen DC für den Netzbetrieb",
-      "AC (Alternating Current): Strom/Spannung wechseln periodisch die Richtung (f = 50 Hz in Europa); DC (Direct Current): konstante Richtung (Batterie, Solar)",
       "AC ist immer langsamer und schwächer als DC; AC wird für kurze Übertragungen verwendet, DC hingegen für Hochspannungsleitungen über große Entfernungen",
+      "AC (Alternating Current): Strom/Spannung wechseln periodisch die Richtung (f = 50 Hz in Europa); DC (Direct Current): konstante Richtung (Batterie, Solar)",
       "DC hat grundsätzlich eine höhere Spannung als AC; daher ist DC immer effizienter für die Energieübertragung in Stromnetzen (Fernleitungen)"
     ],
     "question": "Was ist Wechselstrom (AC) vs. Gleichstrom (DC)?",
     "topic": "Elektrizitätslehre"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Kirchhoff 2: Maschensatz. U_Quelle = U_R1 + U_R2 + … in der Reihenschaltung. Zusammen mit Knotenregel vollständige Analyse komplexer Netzwerke.",
     "options": [
       "An jedem Knotenpunkt eines Stromkreises ist die Summe aller zufließenden Ströme gleich der Summe aller abfließenden Ströme (Ladungserhaltung)",
-      "Die Summe aller Spannungen in einem geschlossenen Stromkreis (Masche) ist gleich null: ΣU = 0; Quell- und Teilspannungen heben sich auf",
       "Die Summe aller Widerstände in einer Parallelschaltung ist stets gleich null; alle Ströme verteilen sich gleichmäßig auf die einzelnen Zweige",
-      "In einem Stromkreis verdoppeln sich alle Ströme mit jedem zusätzlichen Widerstand; gilt sowohl für Reihen- als auch für Parallelschaltungen"
+      "In einem Stromkreis verdoppeln sich alle Ströme mit jedem zusätzlichen Widerstand; gilt sowohl für Reihen- als auch für Parallelschaltungen",
+      "Die Summe aller Spannungen in einem geschlossenen Stromkreis (Masche) ist gleich null: ΣU = 0; Quell- und Teilspannungen heben sich auf"
     ],
     "question": "Was ist die Kirchhoff'sche Maschenregel?",
     "topic": "Elektrizitätslehre"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Kirchhoff 1: Knotensatz. Ladungserhaltung – Ladung kann sich nicht ansammeln. Grundlage der Netzwerkanalyse.",
     "options": [
-      "Die Summe aller Spannungen in einer geschlossenen Masche ist gleich null: ΣU = 0 (Maschenregel); folgt aus dem Energieerhaltungssatz",
       "Die Summe aller zufließenden Ströme = Summe aller abfließenden Ströme an jedem Knotenpunkt: ΣI_zu = ΣI_ab (Ladungserhaltung)",
+      "Die Summe aller Spannungen in einer geschlossenen Masche ist gleich null: ΣU = 0 (Maschenregel); folgt aus dem Energieerhaltungssatz",
       "Alle Widerstände in einer Reihenschaltung sind stets gleich groß; der Gesamtwiderstand entspricht dem Wert eines einzelnen Widerstands",
       "In jedem Stromkreis ist der Strom an allen Stellen identisch; er nimmt beim Durchlaufen von Widerständen nicht ab"
     ],
@@ -216,35 +216,35 @@
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Äquipotenzialflächen: Flächen gleichen Potenzials; stehen senkrecht auf Feldlinien. Keine Arbeit nötig, um Ladung entlang Äquipotenzialfläche zu bewegen.",
     "options": [
       "Die Ladungsmenge, die pro Zeiteinheit durch einen Querschnitt des Leiters fließt: I = q/t; bestimmt die Stromstärke; Einheit: Ampere (A)",
-      "Die potenzielle Energie je Ladung an einem Punkt im elektrischen Feld: φ = W/q; Spannung ist die Potenzialdifferenz (U = φ₁ – φ₂)",
       "Die elektrische Feldstärke an einem Punkt im Raum: E = F/q; gibt die Kraft auf eine Einheitsladung an; Einheit: Volt pro Meter (V/m)",
+      "Die potenzielle Energie je Ladung an einem Punkt im elektrischen Feld: φ = W/q; Spannung ist die Potenzialdifferenz (U = φ₁ – φ₂)",
       "Die Ladungsdichte in einem elektrischen Leiter: ρ = q/V; bestimmt die Leitfähigkeit des Materials; Einheit: Coulomb pro Kubikmeter (C/m³)"
     ],
     "question": "Was ist elektrisches Potenzial?",
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Elektromagnete: Kran-Magnete, MRT-Geräte (supraleitende Spulen), Relais, Lautsprecher. Stärke: B = μ₀·n·I (Spule mit n Windungen/Länge).",
     "options": [
       "Ein dauerhaft magnetisierter Festkörper aus Eisenlegierung; erzeugt ohne Stromzufuhr ein konstantes Magnetfeld; typische Anwendung in Lautsprechern und Haftsystemen",
-      "Ein Magnet, der durch elektrischen Strom in einer Spule erzeugt wird; magnetische Feldstärke proportional zu Windungszahl und Strom; abschaltbar",
       "Ein magnetisch weicher Eisenkern ohne eigene Magnetisierung; verstärkt äußere Felder durch hohe Permeabilität; verwendet in Transformatoren und Drosseln",
-      "Ein elektrostatisch aufgeladener Körper, der durch Influenz auf benachbarte Leiter wirkt; Kraft abhängig von Ladung und Abstand nach Coulombschem Gesetz"
+      "Ein elektrostatisch aufgeladener Körper, der durch Influenz auf benachbarte Leiter wirkt; Kraft abhängig von Ladung und Abstand nach Coulombschem Gesetz",
+      "Ein Magnet, der durch elektrischen Strom in einer Spule erzeugt wird; magnetische Feldstärke proportional zu Windungszahl und Strom; abschaltbar"
     ],
     "question": "Was ist ein Elektromagnet?",
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Supraleiter: Nb (T_c ≈ 9 K), YBCO (T_c ≈ 90 K, Hochtemperatursupraleiter). Anwendungen: MRT, Teilchenbeschleuniger, Maglev-Züge.",
     "options": [
-      "Die besonders gute elektrische Leitfähigkeit reiner Metalle (Kupfer, Silber) bei Raumtemperatur; Widerstand sehr niedrig, aber nicht null",
       "Phänomen mancher Materialien unter einer kritischen Temperatur T_c: elektrischer Widerstand fällt auf null, Magnetfelder werden verdrängt (Meißner-Effekt)",
+      "Die besonders gute elektrische Leitfähigkeit reiner Metalle (Kupfer, Silber) bei Raumtemperatur; Widerstand sehr niedrig, aber nicht null",
       "Ein Halbleiterphänomen, bei dem durch gezielte Dotierung die Leitfähigkeit um viele Größenordnungen erhöht wird; Grundlage von Transistoren und Dioden",
       "Die verlustfreie Übertragung von Licht durch Glasfasern mittels Totalreflexion; ermöglicht hohe Bandbreiten bei minimaler Signaldämpfung über große Distanzen"
     ],
@@ -264,35 +264,35 @@
     "topic": "Halbleiter"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Dioden: Gleichrichter (AC→DC), LED (Licht bei Stromfluss), Photodiode (Licht→Strom), Zenerdiode (Spannungsreferenz). pn-Übergang in Durchlass- vs. Sperrrichtung.",
     "options": [
       "Ein symmetrisches Bauteil, das Strom in beide Richtungen gleich gut leitet; aufgebaut aus zwei gleichartigen Halbleiterschichten; verwendet zur Strombegrenzung",
-      "Ein Halbleiterbauteil, das Strom nur in einer Richtung leitet (Gleichrichter); aufgebaut aus einem pn-Übergang; Schleusenspannung etwa 0,7 V (Silizium)",
       "Ein passives Bauteil zur Energiespeicherung im elektrischen Feld; besteht aus zwei Metallplatten mit Dielektrikum dazwischen; Kapazität in Farad (F)",
+      "Ein Halbleiterbauteil, das Strom nur in einer Richtung leitet (Gleichrichter); aufgebaut aus einem pn-Übergang; Schleusenspannung etwa 0,7 V (Silizium)",
       "Ein Bauteil zur Begrenzung des Stromflusses auf einen definierten Wert; Kennwert in Ohm (Ω) angegeben; temperaturunabhängig im Normalbetrieb"
     ],
     "question": "Was ist eine Diode?",
     "topic": "Halbleiter"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Transistor (BJT/FET): kleines Steuersignal an Basis/Gate steuert großen Strom zwischen Kollektor und Emitter. Moderne CPUs: Milliarden Transistoren auf einem Chip.",
     "options": [
       "Ein passives Bauteil mit zwei Anschlüssen, das Strom nur in einer Richtung leitet; aufgebaut aus einem pn-Übergang im Halbleiter; Schleusenspannung ca. 0,7 V",
-      "Ein Halbleiterbauelement mit drei Anschlüssen (B, C, E), das als Schalter oder Verstärker wirkt; Grundbauelement aller digitalen Elektronik",
       "Ein induktives Bauteil mit zwei Anschlüssen zur Energiespeicherung im Magnetfeld; Induktivität in Henry (H); hemmt schnelle Stromänderungen",
-      "Ein kapazitives Bauteil mit zwei Anschlüssen zur Energiespeicherung im elektrischen Feld; Kapazität in Farad (F); hemmt schnelle Spannungsänderungen"
+      "Ein kapazitives Bauteil mit zwei Anschlüssen zur Energiespeicherung im elektrischen Feld; Kapazität in Farad (F); hemmt schnelle Spannungsänderungen",
+      "Ein Halbleiterbauelement mit drei Anschlüssen (B, C, E), das als Schalter oder Verstärker wirkt; Grundbauelement aller digitalen Elektronik"
     ],
     "question": "Was ist ein Transistor?",
     "topic": "Halbleiter"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Ampèresches Gesetz: das Wegintegral von B entlang einer geschlossenen Kurve = μ₀ × eingeschlossener Strom. Grundlage der Magnetfeldberechnung bei Spulen.",
     "options": [
-      "F = q · v × B (Lorentzkraft auf eine bewegte Ladung im Magnetfeld); Grundlage des Elektromotors und der Teilchenbeschleuniger; Richtung nach Rechte-Hand-Regel",
       "Das Magnetfeld um einen stromdurchflossenen Leiter: B = μ₀·I/(2π·r) für einen langen geraden Leiter; allgemein gilt ∮B·dl = μ₀·I (Durchflutungssatz)",
+      "F = q · v × B (Lorentzkraft auf eine bewegte Ladung im Magnetfeld); Grundlage des Elektromotors und der Teilchenbeschleuniger; Richtung nach Rechte-Hand-Regel",
       "U = I · R (Ohmsches Gesetz); beschreibt den linearen Zusammenhang zwischen Spannung, Strom und Widerstand in einem ohmschen Leiter",
       "B = μ₀ · q · v (magnetisches Feld einer bewegten Einzelladung); Richtung nach Rechte-Hand-Regel; gilt für Punktladungen im Vakuum"
     ],
@@ -312,35 +312,35 @@
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Selbstinduktion: Spule 'wehrt sich' gegen Stromänderungen (Lenz). In Schaltungen: Spule hemmt schnelle Stromänderungen → Filterwirkung, Transformatoren.",
     "options": [
       "Die Induktion einer Spannung in einer Spule durch das sich ändernde Magnetfeld einer benachbarten Spule; Grundlage des Transformators und des Übertragers",
-      "Das Entstehen einer Gegeninduktionsspannung in einer Spule selbst bei Änderung des eigenen Stroms: U_L = –L · dI/dt (L = Induktivität in Henry)",
       "Die gegenseitige Induktion zweier gekoppelter Spulen; Kopplungskoeffizient k (0 bis 1) beschreibt den Anteil des gemeinsamen Flusses; Grundlage des Übertragers",
+      "Das Entstehen einer Gegeninduktionsspannung in einer Spule selbst bei Änderung des eigenen Stroms: U_L = –L · dI/dt (L = Induktivität in Henry)",
       "Die elektrostatische Aufladung eines isolierten Leiters durch ein äußeres elektrisches Feld; Ladungsverschiebung bis zum Gleichgewicht; Grundlage der Influenz"
     ],
     "question": "Was ist die Selbstinduktion?",
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Kurzschluss: I = U/R_gesamt; mit R_gesamt ≈ 0 → I → ∞ (begrenzt durch Innenwiderstand). Schmelzsicherungen und Leitungsschutzschalter trennen den Kreis rechtzeitig (ein FI-Schalter schützt dagegen vor Fehlerströmen, nicht vor Kurzschluss).",
     "options": [
       "Ein Stromkreis, bei dem der Strom durch eine zu hohe Spannung vollständig unterbrochen wird; Schutzschalter verhindern Schäden an Leitern und Bauteilen",
-      "Niederohmige Verbindung zwischen zwei Punkten verschiedenen Potenzials ohne Verbraucher dazwischen; führt zu sehr hohem Strom → Überhitzung, Brand, Bauteilzerstörung",
       "Eine vollständige Unterbrechung des Stromflusses durch eine defekte Leitungsverbindung; Sicherung löst nicht aus; angeschlossene Verbraucher funktionieren nicht",
-      "Ein großer Spannungsabfall an einem hochohmigen Widerstand im Kreislauf; führt zu Leistungsverlusten; behoben durch Ersatz durch niederohmige Verbindungen"
+      "Ein großer Spannungsabfall an einem hochohmigen Widerstand im Kreislauf; führt zu Leistungsverlusten; behoben durch Ersatz durch niederohmige Verbindungen",
+      "Niederohmige Verbindung zwischen zwei Punkten verschiedenen Potenzials ohne Verbraucher dazwischen; führt zu sehr hohem Strom → Überhitzung, Brand, Bauteilzerstörung"
     ],
     "question": "Was ist elektrischer Kurzschluss?",
     "topic": "Elektrizitätslehre"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "RLC-Schwingkreis: Energie pendelt zwischen E-Feld (Kondensator) und B-Feld (Spule). Resonanz: bei f_Res maximale Amplitude. Anwendung: Radioempfänger (Abstimmung).",
     "options": [
-      "Ein Gleichstromkreis mit Widerstand und Kondensator; RC-Zeitkonstante τ = R·C; wird für Spannungsversorgung und Signalfilterung eingesetzt",
       "Eine Schaltung aus Widerstand R, Induktivität L und Kapazität C, die elektrische Schwingungen erzeugen kann; Resonanzfrequenz: f = 1/(2π√(LC))",
+      "Ein Gleichstromkreis mit Widerstand und Kondensator; RC-Zeitkonstante τ = R·C; wird für Spannungsversorgung und Signalfilterung eingesetzt",
       "Ein Verstärker aus Transistoren und Widerständen; verstärkt schwache Signale auf nutzbare Pegel; Verstärkungsfaktor typisch zwischen 10 und 1000",
       "Ein Gleichrichter aus Dioden, der Wechselstrom in Gleichstrom umwandelt; Brückengleichrichter (Graetz-Schaltung) aus vier Dioden; Ausgangsspannung pulsiert"
     ],
@@ -360,35 +360,35 @@
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Solarzelle: Silizium-pn-Übergang. Photon schlägt Elektron aus Valenz- ins Leitungsband → Elektron-Loch-Paar → Strom. Wirkungsgrad kommerziell: ~20%.",
     "options": [
       "Seebeck-Effekt: eine Temperaturdifferenz an zwei verschiedenen Metallen erzeugt eine elektrische Spannung; Grundlage von Thermoelementen und Thermogeneratoren",
-      "Lichtquanten (Photonen) regen Elektronen im Halbleiter an, die dann durch den pn-Übergang als Strom fließen – direkte Umwandlung von Licht in elektrische Energie",
       "Elektrochemische Reaktionen in einer Batterie erzeugen durch Oxidation und Reduktion eine elektrische Spannung; Energie aus chemisch gebundenen Stoffen",
+      "Lichtquanten (Photonen) regen Elektronen im Halbleiter an, die dann durch den pn-Übergang als Strom fließen – direkte Umwandlung von Licht in elektrische Energie",
       "Änderungen des magnetischen Flusses durch eine Leiterschleife induzieren eine elektrische Spannung; Grundlage von Generatoren (Windkraft, Wasserkraft)"
     ],
     "question": "Was ist photoelektrischer Effekt bei Solarzellen?",
     "topic": "Halbleiter"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "MOSFETs dominieren in integrierten Schaltkreisen: sehr hoher Eingangswiderstand, nahezu kein Steuerstrom nötig, extrem miniaturisierbar. Grundbaustein aller Mikroprozessoren.",
     "options": [
       "Ein bipolarer Transistor mit Basis, Kollektor und Emitter; Steuerstrom an der Basis regelt den großen Strom zwischen Kollektor und Emitter; hohe Stromverstärkung",
-      "Ein Transistor, bei dem die Leitfähigkeit zwischen Source und Drain durch das elektrische Feld der Gate-Spannung gesteuert wird – hoher Eingangswiderstand, stromsparend",
       "Ein stromgesteuerter Elektromagnet aus einer Drahtspule auf einem Eisenkern; erzeugt Magnetfelder proportional zu Windungszahl und Stromstärke; abschaltbar",
-      "Ein Halbleiterbauteil mit zwei Anschlüssen (Anode, Kathode), das Strom nur in einer Richtung durchlässt; Schwellenspannung ca. 0,7 V bei Silizium"
+      "Ein Halbleiterbauteil mit zwei Anschlüssen (Anode, Kathode), das Strom nur in einer Richtung durchlässt; Schwellenspannung ca. 0,7 V bei Silizium",
+      "Ein Transistor, bei dem die Leitfähigkeit zwischen Source und Drain durch das elektrische Feld der Gate-Spannung gesteuert wird – hoher Eingangswiderstand, stromsparend"
     ],
     "question": "Was ist ein Feldeffekttransistor (FET)?",
     "topic": "Halbleiter"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Elektrische Arbeit: identisch mit elektrischer Energie W = P·t = U·I·t. Basis der Stromrechnung (kWh).",
     "options": [
-      "W = F · s = P / t; Arbeit als mechanische Kraft mal Weg, dividiert durch Zeit; Einheit: Newton-Meter (N·m) oder Joule (J)",
       "W = U · I · t = Q · U = P · t; elektrische Arbeit ist gleich elektrischer Energie; Einheit: Joule (J) oder Kilowattstunde (kWh)",
+      "W = F · s = P / t; Arbeit als mechanische Kraft mal Weg, dividiert durch Zeit; Einheit: Newton-Meter (N·m) oder Joule (J)",
       "W = m · g · h = ½ · m · v²; Lageenergie als Masse mal Gravitationsfeldstärke mal Höhe; nicht direkt auf elektrische Energie anwendbar",
       "W = I² · t = R · t²; beschreibt ausschließlich die Joule-Wärme am Widerstand; nicht mit der gesamten elektrischen Arbeit gleichzusetzen"
     ],
@@ -408,35 +408,35 @@
     "topic": "Elektrizitätslehre"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Faraday-Induktion: Michael Faraday 1831. Je schneller sich der Magnetfluss ändert, desto größer die induzierte Spannung. Lenzsche Regel: Induktionsstrom wirkt seiner Ursache entgegen. Generatoren wandeln Bewegung in Strom.",
     "options": [
       "U = I · R; ein ohmscher Leiter erzeugt eine Spannung proportional zum fließenden Strom und dem Widerstand; gilt für konstante Temperatur und konstante Felder",
-      "Eine Änderung des magnetischen Flusses induziert in einem Leiter eine Spannung: U_ind = –N·dΦ/dt; Grundlage von Generator, Transformator und Induktionskochfeld",
       "ΣU = 0 in einer geschlossenen Masche; die Summe aller Teilspannungen ergibt null; folgt aus dem Energieerhaltungssatz in elektrischen Netzwerken",
+      "Eine Änderung des magnetischen Flusses induziert in einem Leiter eine Spannung: U_ind = –N·dΦ/dt; Grundlage von Generator, Transformator und Induktionskochfeld",
       "F = m · a; die Bewegungsgleichung beschreibt die Beschleunigung geladener Teilchen im elektrischen Feld; Grundlage der Kathodenstrahlröhre und des Zyklotrons"
     ],
     "question": "Was ist das Faradaysche Induktionsgesetz?",
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Transformator: Wirkungsprinzip elektromagnetische Induktion. Primärspule erzeugt wechselndes Magnetfeld, Sekundärspule wird induziert. Verlustleistung P=I^2*R: bei hoher Spannung kleiner Strom, weniger Verluste in Hochspannungsleitungen.",
     "options": [
       "Bauteil zur Speicherung elektrischer Ladung: zwei Metallplatten mit Dielektrikum; C = Q/U; Kapazität in Farad (F); gespeicherte Energie E = ½·C·U²",
-      "Gerät zur Spannungsumwandlung mit zwei Spulen auf gemeinsamen Eisenkern. U1/U2 = N1/N2. Hochspannungsleitungen nutzen Transformatoren, um Verluste zu minimieren.",
       "Bauteil zur Umwandlung von elektrischer in mechanische Energie durch Lorentzkraft auf stromführende Spulen; Wirkungsgrad typisch über 90 %; abschaltbar",
-      "Bauteil zur Erzeugung elektrischer Energie durch Rotation im Magnetfeld; U(t) = U₀·sin(ωt); in Kraftwerken durch Dampf- oder Wasserturbinen angetrieben"
+      "Bauteil zur Erzeugung elektrischer Energie durch Rotation im Magnetfeld; U(t) = U₀·sin(ωt); in Kraftwerken durch Dampf- oder Wasserturbinen angetrieben",
+      "Gerät zur Spannungsumwandlung mit zwei Spulen auf gemeinsamen Eisenkern. U1/U2 = N1/N2. Hochspannungsleitungen nutzen Transformatoren, um Verluste zu minimieren."
     ],
     "question": "Was ist ein Transformator?",
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Maxwellsche Gleichungen: vereinheitlichten Elektrizität, Magnetismus und Optik. Sagten voraus, dass elektromagnetische Wellen mit Lichtgeschwindigkeit reisen - bestätigt von Hertz 1887. Einstein nutzte sie als Ausgangspunkt der Relativitätstheorie.",
     "options": [
-      "Vier grundlegende Bewegungsgesetze der klassischen Mechanik (Newton 1687): beschreiben Trägheit, Kraft-Beschleunigung, Wechselwirkung und Gravitationsgesetz",
       "Vier fundamentale Gleichungen der Elektrodynamik (Maxwell 1865): beschreiben elektrische und magnetische Felder und ihre Wechselwirkung; sagten Lichtwellen voraus",
+      "Vier grundlegende Bewegungsgesetze der klassischen Mechanik (Newton 1687): beschreiben Trägheit, Kraft-Beschleunigung, Wechselwirkung und Gravitationsgesetz",
       "Vier Hauptsätze der Thermodynamik: beschreiben Temperatur, Energieerhaltung, Entropiezunahme und absoluten Nullpunkt; gelten für alle Wärme-Kältemaschinen",
       "Vier geometrisch-optische Gesetze der Strahlenoptik: Reflexion, Brechung, Totalreflexion und Beugung; Grundlage von Linsen, Prismen und Lichtwellenleitern"
     ],
@@ -456,12 +456,12 @@
     "topic": "Elektromagnetismus"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Selbstinduktion: Spule widersteht schnellen Stromänderungen. Beim Einschalten: Strom steigt langsam. Beim Ausschalten: Spule versucht Strom aufrechtzuerhalten (Spannungsspitze!). Anwendung: Drosselspule, LC-Schwingkreis (Radiowellen).",
     "options": [
       "Die Energieübertragung zwischen zwei induktiv gekoppelten Spulen ohne galvanische Verbindung; Kopplungsfaktor k beschreibt den Anteil des gemeinsamen Flusses",
-      "Eine Spule induziert beim Ein-/Ausschalten des Stroms eine Spannung in sich selbst, die der Stromänderung entgegenwirkt (Lenzsche Regel). Induktivität L in Henry.",
       "Die gegenseitige Induktion zweier galvanisch getrennter Spulen; Grundlage von Übertrager und kabellosen Ladegeräten; Kopplungskoeffizient k (0 bis 1)",
+      "Eine Spule induziert beim Ein-/Ausschalten des Stroms eine Spannung in sich selbst, die der Stromänderung entgegenwirkt (Lenzsche Regel). Induktivität L in Henry.",
       "Die elektrostatische Aufladung isolierter Körper durch Reibung oder Influenz; keine Magnetfelder beteiligt; Grundlage von Elektroskop und Van-de-Graaff-Generator"
     ],
     "question": "Was ist Selbstinduktion?",

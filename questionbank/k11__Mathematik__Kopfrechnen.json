@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Hier greift die Produktregel f'(x) = u'·v + u·v' mit u = x und v = e^x. Es gilt u' = 1 und v' = e^x, also f'(x) = 1·e^x + x·e^x. Klammert man e^x aus, ergibt sich f'(x) = (1 + x)·e^x.",
     "options": [
-      "f'(x) = e^x",
       "f'(x) = (1 + x)·e^x",
+      "f'(x) = e^x",
       "f'(x) = x·e^x",
       "f'(x) = (x - 1)·e^x"
     ],
@@ -24,47 +24,47 @@
     "topic": "Einheitskreis und Trigonometrie"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "log₂(32) fragt, welche Potenz von 2 die Zahl 32 ergibt. Das ist 5 (da 2⁵=32). log₃(81) fragt, welche Potenz von 3 die Zahl 81 ergibt. Das ist 4 (da 3⁴=81). Die Summe ist 5 + 4 = 9.",
     "options": [
       "8",
-      "9",
       "10",
+      "9",
       "12"
     ],
     "question": "Was ist der Wert von log₂(32) + log₃(81)?",
     "topic": "Logarithmen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Beim Potenzieren einer Potenz werden die Exponenten multipliziert: (a³)⁴ = a¹². Beim Multiplizieren gleicher Basen werden sie addiert: a⁵ · a² = a⁷. Beim Dividieren werden sie subtrahiert: a¹² / a⁷ = a⁵.",
     "options": [
       "a⁴",
-      "a⁵",
       "a⁷",
-      "a¹⁰"
+      "a¹⁰",
+      "a⁵"
     ],
     "question": "Vereinfache: (a³)⁴ / (a⁵ · a²)",
     "topic": "Potenzgesetze"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Mit der dritten binomischen Formel (a + b)·(a - b) = a² - b² und a = 100, b = 2 ergibt sich 100² - 2² = 10.000 - 4 = 9.996.",
     "options": [
+      "9.996",
       "9.986",
       "10.004",
-      "9.996",
       "9.998"
     ],
     "question": "Berechne 102 · 98 im Kopf.",
     "topic": "Binomische Formeln"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "16^(3/4) ist die vierte Wurzel von 16, das Ergebnis hoch 3. Die vierte Wurzel von 16 ist 2, also 2³ = 8. Der Term 2^(-2) ist gleich 1/2² = 1/4. Das Produkt ist 8 · (1/4) = 2.",
     "options": [
-      "2",
       "4",
+      "2",
       "8",
       "16"
     ],
@@ -72,35 +72,35 @@
     "topic": "Potenzgesetze"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Für einen schnellen Überschlag nutzt man die 72er-Regel: Die Verdopplungszeit beträgt etwa 72 geteilt durch den Zinssatz in Prozent, hier 72 / 7 ≈ 10,3. Die exakte Rechnung t = ln(2)/ln(1,07) ≈ 10,2 bestätigt das. Das Kapital verdoppelt sich also nach rund 10 Jahren.",
     "options": [
       "ca. 7 Jahre",
-      "ca. 10 Jahre",
       "ca. 14 Jahre",
+      "ca. 10 Jahre",
       "ca. 20 Jahre"
     ],
     "question": "Ein Kapital wird jährlich mit 7 % verzinst. Nach etwa wie vielen Jahren hat es sich verdoppelt?",
     "topic": "Zinsrechnung und Überschlag"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Mit der Kettenregel gilt f'(x) = 1/(3x) · 3 = 1/x. Noch schneller sieht man es mit dem Logarithmusgesetz: ln(3x) = ln(3) + ln(x). Da ln(3) eine Konstante ist, bleibt als Ableitung 1/x.",
     "options": [
       "f'(x) = 3/x",
-      "f'(x) = 1/x",
       "f'(x) = 1/(3x)",
-      "f'(x) = 3·ln(x)"
+      "f'(x) = 3·ln(x)",
+      "f'(x) = 1/x"
     ],
     "question": "Wie lautet die Ableitung von f(x) = ln(3x)?",
     "topic": "Ableitungen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Man rundet den Zähler auf 5 · 10⁵. Die Vorzahlen ergeben 5 / 2,5 = 2, die Zehnerpotenzen 10⁵ / 10² = 10³. Der Überschlag ist also 2 · 10³ = 2.000; der genaue Wert beträgt 1.960.",
     "options": [
-      "ca. 200",
       "ca. 2.000",
+      "ca. 200",
       "ca. 20.000",
       "ca. 12.000"
     ],
@@ -108,11 +108,11 @@
     "topic": "Überschlag und Zehnerpotenzen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Wegen √x = x^(1/2) gilt f'(x) = (1/2)·x^(-1/2) = 1/(2·√x). Einsetzen von x = 4 ergibt 1/(2·2) = 1/4.",
     "options": [
-      "1/4",
       "1/2",
+      "1/4",
       "1/8",
       "2"
     ],
@@ -120,25 +120,25 @@
     "topic": "Ableitungen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Nach dem Logarithmusgesetz log(a) - log(b) = log(a/b) gilt log₂(48) - log₂(3) = log₂(48/3) = log₂(16). Wegen 2⁴ = 16 ist der Wert 4.",
     "options": [
       "2",
-      "4",
       "16",
+      "4",
       "45"
     ],
     "question": "Was ist der Wert von log₂(48) - log₂(3)?",
     "topic": "Logarithmengesetze"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Man kann die dritte binomische Formel a² - b² = (a + b)·(a - b) mit a = x + 5 und b = x - 5 nutzen: (2x)·10 = 20x. Ausmultiplizieren führt zum selben Ergebnis: (x² + 10x + 25) - (x² - 10x + 25) = 20x.",
     "options": [
-      "20x",
       "10x",
       "2x² + 50",
-      "0"
+      "0",
+      "20x"
     ],
     "question": "Vereinfache den Ausdruck (x + 5)² - (x - 5)².",
     "topic": "Termumformungen"
@@ -156,11 +156,11 @@
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Ein negativer Exponent bedeutet Kehrwert: (8/27)^(-2/3) = (27/8)^(2/3). Der Nenner 3 des Exponenten steht für die dritte Wurzel: die dritte Wurzel von 27/8 ist 3/2. Quadrieren ergibt (3/2)² = 9/4.",
     "options": [
-      "9/4",
       "4/9",
+      "9/4",
       "3/2",
       "2/3"
     ],
@@ -168,25 +168,25 @@
     "topic": "Potenzgesetze"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Am Einheitskreis gilt sin(π/6) = sin(30°) = 1/2 und cos(π/3) = cos(60°) = 1/2. Die Summe ist damit 1/2 + 1/2 = 1.",
     "options": [
-      "1",
       "1/2",
       "√3/2",
+      "1",
       "√3"
     ],
     "question": "Welchen Wert hat sin(π/6) + cos(π/3)?",
     "topic": "Einheitskreis und Trigonometrie"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Mit den Logarithmusgesetzen gilt log_b(x · y²) = log_b(x) + log_b(y²) = log_b(x) + 2 · log_b(y). Einsetzen der gegebenen Werte ergibt 2 + 2 · 3 = 2 + 6 = 8.",
     "options": [
-      "8",
       "12",
       "18",
-      "5"
+      "5",
+      "8"
     ],
     "question": "Wenn log_b(x) = 2 und log_b(y) = 3 ist, was ist dann log_b(x · y²)?",
     "topic": "Logarithmengesetze"

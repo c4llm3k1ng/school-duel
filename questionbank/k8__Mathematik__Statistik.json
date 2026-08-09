@@ -1,11 +1,11 @@
 [
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Das arithmetische Mittel ist die Summe aller Werte geteilt durch ihre Anzahl: (12 + 15 + 10 + 18 + 10) : 5 = 65 : 5 = 13. Der Modus wäre hier 10 und der Median 12, das sind andere Kenngrößen.",
     "options": [
+      "13",
       "10",
       "12",
-      "13",
       "15"
     ],
     "question": "Eine Gruppe von fünf Freunden hat folgende Punktzahlen in einem Quiz erreicht: 12, 15, 10, 18, 10. Wie hoch ist die durchschnittliche Punktzahl (arithmetisches Mittel)?",
@@ -24,25 +24,25 @@
     "topic": "Median"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Der Modus ist der Wert, der am häufigsten vorkommt. Blau steht dreimal in der Liste, Rot zweimal, Grün, Gelb und Schwarz je einmal.",
     "options": [
       "Rot",
       "Grün",
-      "Schwarz",
-      "Blau"
+      "Blau",
+      "Schwarz"
     ],
     "question": "In einer Klasse wurden die Lieblingsfarben abgefragt. Die Ergebnisse waren: Blau, Rot, Grün, Blau, Gelb, Rot, Blau, Schwarz. Welches ist der Modus (häufigster Wert) dieser Datenmenge?",
     "topic": "Modus"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die relative Häufigkeit ist die absolute Häufigkeit geteilt durch die Gesamtzahl: 40 : 200 = 0,2. Sie liegt immer zwischen 0 und 1. In Prozent sind das 0,2 * 100% = 20%.",
     "options": [
       "10%",
-      "20%",
       "25%",
-      "40%"
+      "40%",
+      "20%"
     ],
     "question": "Eine Umfrage unter 200 Schülern ergab, dass 40 Schüler ein Haustier besitzen. Wie hoch ist die relative Häufigkeit der Schüler, die ein Haustier besitzen, in Prozent?",
     "topic": "Relative Häufigkeit"
@@ -72,13 +72,13 @@
     "topic": "Einfluss von Ausreißern"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Die absolute Häufigkeit erhält man aus der Gesamtzahl mal dem Anteil: 500 * 0,30 = 150 Schüler. Zur Kontrolle: 10% wären 50 Schüler, 30% also dreimal so viel.",
     "options": [
       "30",
       "50",
-      "100",
-      "150"
+      "150",
+      "100"
     ],
     "question": "Bei einer Wahl haben sich 30% der 500 wahlberechtigten Schüler für Kandidat A entschieden. Wie viele Schüler haben für Kandidat A gestimmt?",
     "topic": "Absolute Häufigkeit"
@@ -96,11 +96,11 @@
     "topic": "Dateninterpretation"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "In der Liste stehen insgesamt 11 T-Shirts, davon sind 4 rot. Die absolute Häufigkeit von Rot ist also 4. Die relative Häufigkeit ist 4 : 11 = 0,3636..., in Prozent also rund 36%.",
     "options": [
-      "Absolute Häufigkeit 3, relative Häufigkeit rund 27%",
       "Absolute Häufigkeit 4, relative Häufigkeit rund 36%",
+      "Absolute Häufigkeit 3, relative Häufigkeit rund 27%",
       "Absolute Häufigkeit 4, relative Häufigkeit rund 40%",
       "Absolute Häufigkeit 5, relative Häufigkeit rund 45%"
     ],
@@ -132,35 +132,35 @@
     "topic": "Lageparameter (Arithmetisches Mittel)"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Zuerst werden die Werte geordnet: 5, 7, 9, 12, 15, 18, 21. Bei einer ungeraden Anzahl von 7 Werten ist der Median der vierte Wert der geordneten Reihe, also 12.",
     "options": [
       "9",
-      "12",
       "13",
-      "15"
+      "15",
+      "12"
     ],
     "question": "Eine Liste von Datenpunkten ist gegeben: 12, 5, 18, 9, 21, 15, 7. Welcher Wert ist der Median (Zentralwert) dieser Daten?",
     "topic": "Lageparameter (Median)"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Die Spannweite ist die Differenz zwischen dem größten und dem kleinsten Wert. Der größte Wert ist 27 °C, der kleinste 20 °C. Damit beträgt die Spannweite 27 °C - 20 °C = 7 °C.",
     "options": [
+      "7 °C",
       "5 °C",
       "6 °C",
-      "7 °C",
       "27 °C"
     ],
     "question": "Während einer Woche wurden die täglichen Höchsttemperaturen in Grad Celsius gemessen: 22, 25, 20, 26, 23, 27, 21. Bestimme die Spannweite dieser Temperaturen.",
     "topic": "Streuungsparameter (Spannweite)"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Die Summe der ersten vier Punktzahlen ist 75 + 80 + 60 + 70 = 285. Für einen Durchschnitt von 70 bei fünf Arbeiten braucht Max insgesamt 5 * 70 = 350 Punkte. Es fehlen also 350 - 285 = 65 Punkte.",
     "options": [
-      "65",
       "70",
+      "65",
       "75",
       "80"
     ],
@@ -180,13 +180,13 @@
     "topic": "Einfluss auf Lageparameter (Median)"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Ein Haustier besitzen 80 + 60 = 140 Personen. Ohne Haustier sind es also 200 - 140 = 60 Personen. Die relative Häufigkeit ist 60 : 200 = 0,3, in Prozent also 30%.",
     "options": [
-      "30%",
       "40%",
       "60%",
-      "70%"
+      "70%",
+      "30%"
     ],
     "question": "In einer Umfrage unter 200 Personen gaben 80 an, einen Hund zu besitzen, und 60 gaben an, eine Katze zu besitzen. Niemand besitzt beides, der Rest besitzt kein Haustier. Wie viel Prozent der Befragten besitzen kein Haustier?",
     "topic": "Relative Häufigkeit in Prozent"

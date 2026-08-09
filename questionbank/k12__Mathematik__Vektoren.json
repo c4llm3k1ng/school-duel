@@ -12,47 +12,47 @@
     "topic": "Vektoren"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "|v| = √(2² + (−3)² + 6²) = √(4 + 9 + 36) = √49 = 7. Der Wert 49 entsteht, wenn die Wurzel vergessen wird, 11 durch bloßes Addieren der Komponentenbeträge und √13 ≈ 3,61, wenn die dritte Komponente unterschlagen wird.",
     "options": [
       "11",
-      "49",
       "7",
+      "49",
       "√13 ≈ 3,61"
     ],
     "question": "Wie lang ist der Vektor v = (2|−3|6)?",
     "topic": "Vektoren"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Es ist |v| = √(1 + 4 + 4) = 3, also e = v/|v| = (1/3|2/3|2/3) mit |e| = 1. Division durch |v|² = 9 oder durch die Komponentensumme 5 liefert zu kurze Vektoren, e = v·|v| = (3|6|6) hat die Länge 9.",
     "options": [
       "(1/9|2/9|2/9)",
-      "(1/3|2/3|2/3)",
       "(3|6|6)",
+      "(1/3|2/3|2/3)",
       "(1/5|2/5|2/5)"
     ],
     "question": "Welcher Vektor ist der Einheitsvektor in Richtung von v = (1|2|2)?",
     "topic": "Vektoren"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "a · b = 2·3 + k·(−2) + (−1)·4 = 6 − 2k − 4 = 2 − 2k. Orthogonalität bedeutet a · b = 0, also k = 1. Mit k = 5 rechnet man den dritten Summanden mit falschem Vorzeichen, mit k = 3 lässt man ihn ganz weg.",
     "options": [
-      "k = 1",
       "k = −1",
       "k = 3",
-      "k = 5"
+      "k = 5",
+      "k = 1"
     ],
     "question": "Für welchen Wert von k stehen a = (2|k|−1) und b = (3|−2|4) senkrecht aufeinander?",
     "topic": "Skalarprodukt"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "a · b = 3·(−1) + (−2)·4 + 5·2 = −3 − 8 + 10 = −1. Wer alle Produkte positiv ansetzt, kommt auf 21, wer nur das letzte Vorzeichen verdreht, auf −21. Das Ergebnis ist stets eine Zahl, kein Vektor.",
     "options": [
-      "1",
       "−1",
+      "1",
       "21",
       "−21"
     ],
@@ -60,11 +60,11 @@
     "topic": "Skalarprodukt"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Aus a · b = |a|·|b|·cos(φ) und |a|, |b| > 0 folgt cos(φ) < 0. Der Kosinus ist genau für Winkel zwischen 90° und 180° negativ. Ein Skalarprodukt von 0 stünde für Orthogonalität, ein positives für einen spitzen Winkel.",
     "options": [
-      "Der Winkel ist stumpf, es gilt 90° < φ ≤ 180°",
       "Der Winkel ist spitz, es gilt 0° ≤ φ < 90°",
+      "Der Winkel ist stumpf, es gilt 90° < φ ≤ 180°",
       "Die Vektoren sind orthogonal, es gilt φ = 90°",
       "Die Vektoren sind parallel, es gilt φ = 0° oder 180°"
     ],
@@ -72,25 +72,25 @@
     "topic": "Skalarprodukt"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "a · b = 1·1 + 1·0 + 0·1 = 1 und |a| = |b| = √2. Damit ist cos(φ) = 1/(√2·√2) = 0,5 und φ = 60°. Der Wert 45° gehörte zu cos(φ) = 1/√2, 90° nur zu einem Skalarprodukt von 0.",
     "options": [
       "45°",
       "30°",
-      "90°",
-      "60°"
+      "60°",
+      "90°"
     ],
     "question": "Welchen Winkel schließen die Vektoren a = (1|1|0) und b = (1|0|1) ein?",
     "topic": "Skalarprodukt"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Aus AB = OB − OA folgt OB = OA + AB = (−2+4 | 5−1 | 3+2) = (2|4|5). Wer stattdessen subtrahiert, erhält (−6|6|1); (6|−6|−1) entsteht aus AB − OA und (4|−1|2) verwechselt den Verbindungsvektor mit dem Punkt.",
     "options": [
       "B(−6|6|1)",
-      "B(2|4|5)",
       "B(6|−6|−1)",
-      "B(4|−1|2)"
+      "B(4|−1|2)",
+      "B(2|4|5)"
     ],
     "question": "Für A(−2|5|3) gilt AB = (4|−1|2). Welche Koordinaten hat der Punkt B?",
     "topic": "Punkte"
@@ -108,48 +108,48 @@
     "topic": "Abstände"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Lineare Abhängigkeit bedeutet b = k·a. Aus −6 = k·2 folgt k = −3, ebenso aus 9 = k·(−3). Die dritte Zeile 12 = −3·r liefert dann r = −4. Mit r = 4 wäre b kein Vielfaches von a, und r = ±36 verwechselt Faktor und Produkt.",
     "options": [
       "r = 4",
-      "r = 36",
       "r = −4",
+      "r = 36",
       "r = −36"
     ],
     "question": "Für welchen Wert von r sind a = (2|−3|r) und b = (−6|9|12) linear abhängig?",
     "topic": "Lineare Abhängigkeit"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Als Aufpunkt dient ein Punkt der Geraden, als Richtungsvektor AB = OB − OA = (3|6|3). Damit ist x = (1|0|−2) + t·(3|6|3), t ∈ ℝ. Die Summe OA + OB = (5|6|−1) ist kein Richtungsvektor der Geraden, und Aufpunkt und Richtungsvektor dürfen nicht vertauscht werden.",
     "options": [
       "x = (3|6|3) + t·(1|0|−2), t ∈ ℝ",
       "x = (1|0|−2) + t·(5|6|−1), t ∈ ℝ",
-      "x = (4|6|1) + t·(5|6|−1), t ∈ ℝ",
-      "x = (1|0|−2) + t·(3|6|3), t ∈ ℝ"
+      "x = (1|0|−2) + t·(3|6|3), t ∈ ℝ",
+      "x = (4|6|1) + t·(5|6|−1), t ∈ ℝ"
     ],
     "question": "Welche Parameterform beschreibt die Gerade durch A(1|0|−2) und B(4|6|1)?",
     "topic": "Geraden"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ansatz P = A + t·v: aus 1 + 2t = 7 folgt t = 3, aus 3 − t = −1 dagegen t = 4. Da nicht alle Zeilen dasselbe t liefern, liegt P nicht auf g. Ob AP und v orthogonal sind, ist für die Punktprobe ohne Bedeutung.",
     "options": [
       "Ja, denn für t = 3 stimmen alle drei Zeilen überein",
-      "Nein, die erste Zeile liefert t = 3, die zweite t = 4",
       "Ja, denn AP steht senkrecht auf dem Richtungsvektor v",
-      "Nein, denn das Skalarprodukt AP · v ist ungleich null"
+      "Nein, denn das Skalarprodukt AP · v ist ungleich null",
+      "Nein, die erste Zeile liefert t = 3, die zweite t = 4"
     ],
     "question": "Liegt der Punkt P(7|−1|9) auf der Geraden g: x = (1|3|−3) + t·(2|−1|4)?",
     "topic": "Geraden"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Ein Normalenvektor steht auf beiden Spannvektoren senkrecht, also n = u × v = (2·3 − 0·1 | 0·0 − 1·3 | 1·1 − 2·0) = (6|−3|1). Probe: n · u = 6 − 6 + 0 = 0 und n · v = 0 − 3 + 3 = 0. Ein Spannvektor selbst liegt in der Ebene und scheidet aus.",
     "options": [
+      "(6|−3|1)",
       "(6|3|1)",
       "(1|3|3)",
-      "(6|−3|1)",
       "(1|2|0)"
     ],
     "question": "Welcher Vektor ist ein Normalenvektor der Ebene E: x = (1|0|2) + s·(1|2|0) + t·(0|1|3)?",
@@ -168,47 +168,47 @@
     "topic": "Ebenen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Punktprobe durch Einsetzen: 3·1 − 2·0 + 2 = 5, der Punkt (1|0|2) erfüllt die Gleichung. Für (2|1|0) und (0|−1|2) ergibt sich jeweils 4, für (1|1|1) nur 2 – diese drei Punkte liegen nicht in E.",
     "options": [
       "(2|1|0)",
-      "(1|0|2)",
       "(0|−1|2)",
+      "(1|0|2)",
       "(1|1|1)"
     ],
     "question": "Welcher Punkt liegt in der Ebene E: 3x₁ − 2x₂ + x₃ = 5?",
     "topic": "Ebenen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Hessesche Normalform: d = |n · OP − 5| / |n| mit n · OP = 2·4 + (−1) − 2·3 = 1 und |n| = √(4 + 1 + 4) = 3. Damit ist d = |1 − 5|/3 = 4/3 ≈ 1,33. Ohne Division durch |n| bleibt 4, bei Division durch |n|² = 9 kommt 4/9 heraus.",
     "options": [
       "4",
-      "4/3 ≈ 1,33",
       "8/3 ≈ 2,67",
-      "4/9 ≈ 0,44"
+      "4/9 ≈ 0,44",
+      "4/3 ≈ 1,33"
     ],
     "question": "Welchen Abstand hat der Punkt P(4|−1|3) von der Ebene E: 2x₁ + x₂ − 2x₃ = 5?",
     "topic": "Abstände"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "a × b = (a₂b₃ − a₃b₂ | a₃b₁ − a₁b₃ | a₁b₂ − a₂b₁) = (2·2 − 3·(−1) | 3·0 − 1·2 | 1·(−1) − 2·0) = (7|−2|−1). Probe: (7|−2|−1) · a = 7 − 4 − 3 = 0. Da das Kreuzprodukt nicht kommutativ ist, gehört (−7|2|1) zu b × a.",
     "options": [
+      "(7|−2|−1)",
       "(−7|2|1)",
       "(0|−2|6)",
-      "(7|−2|−1)",
       "(1|1|5)"
     ],
     "question": "Wie lautet das Kreuzprodukt a × b für a = (1|2|3) und b = (0|−1|2)?",
     "topic": "Kreuzprodukt"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Der Flächeninhalt ist |a × b|. Es gilt a × b = (0·1 − 1·3 | 1·0 − 2·1 | 2·3 − 0·0) = (−3|−2|6) und damit |a × b| = √(9 + 4 + 36) = √49 = 7. Der Wert 3,5 gehört zum Dreieck aus a und b, 49 entsteht ohne Wurzel und 1 ist das Skalarprodukt a · b.",
     "options": [
-      "7",
       "3,5",
+      "7",
       "49",
       "1"
     ],
@@ -216,25 +216,25 @@
     "topic": "Flächen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Das Spatvolumen ist V = |a · (b × c)|. Mit b × c = (2·3 − 0·2 | 0·1 − 1·3 | 1·2 − 2·1) = (6|−3|0) folgt a · (b × c) = 6, also V = 6. Der Wert 1 wäre das Volumen des zugehörigen Tetraeders (ein Sechstel davon), 0 träte nur bei komplanaren Vektoren auf.",
     "options": [
       "1",
-      "6",
       "3",
+      "6",
       "0"
     ],
     "question": "Welches Volumen hat der von a = (1|0|0), b = (1|2|0) und c = (1|2|3) aufgespannte Spat?",
     "topic": "Kreuzprodukt"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Spannvektoren müssen linear unabhängig sein. Hier ist v = −2·u, beide liegen also auf derselben Geraden durch den Ursprung und u × v ist der Nullvektor – aufgespannt wird nur eine Gerade. Das Vorzeichen des Skalarprodukts (hier −28) und die Längen sagen darüber nichts aus.",
     "options": [
-      "Weil v = −2·u gilt, sie also linear abhängig sind",
       "Weil ihr Skalarprodukt u · v = −28 negativ ausfällt",
       "Weil beide Vektoren genau denselben Betrag besitzen",
-      "Weil ihre Summe u + v nicht der Nullvektor ergibt"
+      "Weil ihre Summe u + v nicht der Nullvektor ergibt",
+      "Weil v = −2·u gilt, sie also linear abhängig sind"
     ],
     "question": "Warum können u = (2|−1|3) und v = (−4|2|−6) keine Ebene aufspannen?",
     "topic": "Lineare Abhängigkeit"
@@ -252,11 +252,11 @@
     "topic": "Geraden"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Nicht-parallele Richtungsvektoren schließen Parallelität und Identität aus. Ist das Gleichungssystem zusätzlich unlösbar, gibt es auch keinen Schnittpunkt – die Geraden sind windschief. Diesen Fall gibt es nur im Raum, in der Ebene schneiden sich nicht-parallele Geraden immer.",
     "options": [
-      "Sie sind windschief und liegen in keiner gemeinsamen Ebene",
       "Sie schneiden sich in genau einem Punkt des Raums",
+      "Sie sind windschief und liegen in keiner gemeinsamen Ebene",
       "Sie sind echt parallel und haben überall denselben Abstand",
       "Sie sind identisch und haben unendlich viele Punkte gemeinsam"
     ],
@@ -264,25 +264,25 @@
     "topic": "Geraden"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "F = 0,5·|AB × AC| mit AB = (3|0|4) und AC = (0|5|0). Es ist AB × AC = (−20|0|15) und |AB × AC| = √(400 + 225) = 25, also F = 12,5. Der Wert 25 ist die Parallelogrammfläche; AB · AC = 0 zeigt lediglich, dass das Dreieck bei A rechtwinklig ist.",
     "options": [
       "25",
-      "12,5",
       "6,25",
+      "12,5",
       "0"
     ],
     "question": "Welchen Flächeninhalt hat das Dreieck mit A(0|0|0), B(3|0|4) und C(0|5|0)?",
     "topic": "Flächen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "M = 0,5·(OA + OB) = 0,5·(2|−2|8) = (1|−1|4). Ohne den Faktor 0,5 bliebe (2|−2|8) stehen. Der Vektor (8|−6|−6) ist AB und (4|−3|−3) dessen Hälfte – beides Verschiebungen, keine Punkte.",
     "options": [
-      "M(1|−1|4)",
       "M(2|−2|8)",
       "M(4|−3|−3)",
-      "M(8|−6|−6)"
+      "M(8|−6|−6)",
+      "M(1|−1|4)"
     ],
     "question": "Welche Koordinaten hat der Mittelpunkt der Strecke von A(−3|2|7) nach B(5|−4|1)?",
     "topic": "Punkte"
@@ -312,25 +312,25 @@
     "topic": "Punkte"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "In der Hesseschen Normalform muss der Normalenvektor die Länge 1 haben. Hier ist |n| = √(1 + 4 + 4) = 3, also lautet sie (x₁ − 2x₂ + 2x₃ − 9)/3 = 0. Division durch 9 wäre die durch |n|², √5 ist gar nicht der Betrag von n, und ohne Division bleibt die gewöhnliche Normalenform.",
     "options": [
-      "(x₁ − 2x₂ + 2x₃ − 9)/3 = 0",
       "(x₁ − 2x₂ + 2x₃ − 9)/9 = 0",
       "(x₁ − 2x₂ + 2x₃ − 9)/√5 = 0",
+      "(x₁ − 2x₂ + 2x₃ − 9)/3 = 0",
       "x₁ − 2x₂ + 2x₃ − 9 = 0"
     ],
     "question": "Wie lautet die Hessesche Normalform der Ebene E: x₁ − 2x₂ + 2x₃ = 9?",
     "topic": "Ebenen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "cos(φ) = |n₁ · n₂| / (|n₁|·|n₂|) mit n₁ = (1|1|0) und n₂ = (0|−1|1). Es ist n₁ · n₂ = −1 und |n₁| = |n₂| = √2, also cos(φ) = 1/2 und φ = 60°. Ohne den Betrag käme 120° heraus; der Schnittwinkel zweier Ebenen liegt stets zwischen 0° und 90°.",
     "options": [
       "120°",
-      "60°",
       "45°",
-      "90°"
+      "90°",
+      "60°"
     ],
     "question": "Welchen Schnittwinkel schließen die Ebenen E₁: x₁ + x₂ = 4 und E₂: −x₂ + x₃ = 1 ein?",
     "topic": "Ebenen"
@@ -348,11 +348,11 @@
     "topic": "Schnitt"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Der Richtungsvektor der Schnittgeraden steht auf beiden Normalenvektoren senkrecht, also r = n₁ × n₂ = (1·(−1) − 1·0 | 1·1 − 1·(−1) | 1·0 − 1·1) = (−1|2|−1). Probe: r · n₁ = −1 + 2 − 1 = 0 und r · n₂ = −1 + 0 + 1 = 0. Summe oder Differenz der Normalenvektoren leisten das nicht.",
     "options": [
-      "(−1|2|−1)",
       "(2|1|0)",
+      "(−1|2|−1)",
       "(0|1|2)",
       "(1|1|1)"
     ],
@@ -360,25 +360,25 @@
     "topic": "Schnitt"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Die Projektion lautet ((a · b)/|a|²)·a. Mit a · b = 3 + 0 + 6 = 9 und |a|² = 9 ist der Faktor 1, also ergibt sich (1|2|2). Wird nur durch |a| = 3 geteilt, entsteht der dreifach zu lange Vektor (3|6|6); der Einheitsvektor (1/3|2/3|2/3) ist die Projektion ohne den Faktor.",
     "options": [
-      "(1|2|2)",
       "(3|6|6)",
       "(1/3|2/3|2/3)",
+      "(1|2|2)",
       "(3|0|3)"
     ],
     "question": "Wie lautet die orthogonale Projektion von b = (3|0|3) auf a = (1|2|2)?",
     "topic": "Projektion"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "d = |AP × v| / |v| mit AP = (0|3|−1) und v = (0|3|4). Es ist AP × v = (15|0|0), also |AP × v| = 15 und |v| = 5, damit d = 3. Der Wert √10 ≈ 3,16 ist nur der Abstand zum Aufpunkt A, 15 der Flächeninhalt des aufgespannten Parallelogramms.",
     "options": [
-      "3",
       "5",
       "15",
-      "√10 ≈ 3,16"
+      "√10 ≈ 3,16",
+      "3"
     ],
     "question": "Welchen Abstand hat P(1|3|−1) von der Geraden g: x = (1|0|0) + t·(0|3|4)?",
     "topic": "Abstände"
@@ -408,25 +408,25 @@
     "topic": "Abstände"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Wegen |v| = √(4 + 1 + 4) = 3 hat der Einheitsvektor v/3 die Länge 1; das Sechsfache davon ist 2·v = (4|−2|4) mit √(16 + 4 + 16) = 6. Der Vektor (6|−3|6) = 3·v ist 9 lang, (12|−6|12) = 6·v sogar 18, und (2/3|−1/3|2/3) hat die Länge 1.",
     "options": [
-      "(4|−2|4)",
       "(6|−3|6)",
       "(12|−6|12)",
+      "(4|−2|4)",
       "(2/3|−1/3|2/3)"
     ],
     "question": "Welcher Vektor hat die Länge 6 und dieselbe Richtung wie v = (2|−1|2)?",
     "topic": "Vektoren"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "n · v = 0 heißt, dass der Richtungsvektor senkrecht auf dem Normalenvektor steht, die Gerade also parallel zur Ebene verläuft. Wegen n · OA ≠ d liegt der Aufpunkt nicht in der Ebene und damit auch die Gerade nicht – es gibt keinen Schnittpunkt. Bei n · OA = d läge g ganz in E.",
     "options": [
-      "Die Gerade verläuft echt parallel zu E, ohne gemeinsamen Punkt",
       "Die Gerade liegt vollständig in E, mit unendlich vielen Punkten",
       "Die Gerade schneidet E in genau einem Punkt mit t = d − n · OA",
-      "Die Gerade steht senkrecht auf E, ihr Richtungsvektor ist parallel zu n"
+      "Die Gerade steht senkrecht auf E, ihr Richtungsvektor ist parallel zu n",
+      "Die Gerade verläuft echt parallel zu E, ohne gemeinsamen Punkt"
     ],
     "question": "Für g: x = A + t·v und E: n·x = d gilt n · v = 0 und n · OA ≠ d. Was folgt daraus?",
     "topic": "Schnitt"
@@ -444,11 +444,11 @@
     "topic": "Volumen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Man prüft die Skalarprodukte der von je einem Eckpunkt ausgehenden Seitenvektoren. Mit AB = (2|1|0) und AC = (−1|2|2) ist AB · AC = −2 + 2 + 0 = 0, der rechte Winkel liegt also bei A. Bei B ergibt sich 5, bei C sogar 9 – dort stehen die Seiten nicht senkrecht.",
     "options": [
-      "Bei A, denn dort gilt AB · AC = 0",
       "Bei B, denn dort gilt BA · BC = 0",
+      "Bei A, denn dort gilt AB · AC = 0",
       "Bei C, denn dort gilt CA · CB = 0",
       "In keinem, es ist nicht rechtwinklig"
     ],
@@ -456,25 +456,25 @@
     "topic": "Skalarprodukt"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Komplanar heißt, dass das Spatprodukt verschwindet. Mit b × c = (1·1 − 0·3 | 0·3 − 2·1 | 2·3 − 1·3) = (1|−2|3) folgt a · (b × c) = 1 − 4 + 3 = 0. Der Grund ist direkt sichtbar: c = a + b, also liegt c in der von a und b aufgespannten Ebene.",
     "options": [
-      "Ja, denn c = a + b und das Spatprodukt ist 0",
       "Nein, denn das Spatprodukt beträgt 3",
       "Ja, denn die drei Vektoren stehen paarweise senkrecht",
+      "Ja, denn c = a + b und das Spatprodukt ist 0",
       "Nein, denn drei Vektoren des Raums sind nie komplanar"
     ],
     "question": "Sind a = (1|2|1), b = (2|1|0) und c = (3|3|1) komplanar, liegen sie also in einer gemeinsamen Ebene?",
     "topic": "Lineare Abhängigkeit"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "cos(φ) = |v₁ · v₂| / (|v₁|·|v₂|). Mit v₁ · v₂ = −1 + 0 + 0 = −1 und |v₁| = |v₂| = √2 folgt cos(φ) = 1/2, also φ = 60°. Ohne den Betrag käme 120° heraus; der Schnittwinkel zweier Geraden wird stets zwischen 0° und 90° angegeben.",
     "options": [
-      "60°",
       "120°",
       "45°",
-      "30°"
+      "30°",
+      "60°"
     ],
     "question": "Welchen Schnittwinkel schließen zwei Geraden mit den Richtungsvektoren v₁ = (1|0|1) und v₂ = (−1|1|0) ein?",
     "topic": "Geraden"

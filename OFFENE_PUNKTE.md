@@ -2583,3 +2583,57 @@ sofort zurück — genau wie 2026-08-05, als zwei von vier Modi nicht mischten.
 Vorschlag: ein einmaliges Skript, das die Optionsreihenfolge je Frage permutiert und
 `correct` nachführt. Semantisch folgenlos, prüfbar (gleiche Optionsmenge, `correct`
 zeigt auf denselben Text). **Entscheidung steht aus.**
+
+---
+
+# Nachtrag: Positions-Schieflage in den Rohdaten behoben
+
+## 136. Das Ausmaß war größer als 2026-08-05 angenommen
+
+Damals wurde gemessen, dass die richtige Antwort zu 61 % auf B steht, und das Problem
+durch Mischen zur Laufzeit gelöst. Die **Rohdaten** blieben unangetastet. Jetzt
+nachgemessen:
+
+| | A | B | C | D |
+|---|---|---|---|---|
+| Schulfragen (8277) | 14 % | **70 %** | 13 % | 3 % |
+| Kataloge (3893) | 27 % | 40 % | 25 % | 9 % |
+
+**117 Schulfrage-Dateien** hatten eine Position über 60 % — darunter zahlreiche mit
+**100 %**: In `k10__Biologie__Evolution`, `k10__Chemie__Allgemein`,
+`k10__Deutsch__Literatur` und weiteren stand die richtige Antwort bei **allen 40
+Fragen** an zweiter Stelle. Bei den Katalogen war `politik_schwer` mit 87 % auf B der
+Extremfall.
+
+## 137. Warum das trotz Mischens behoben wurde
+
+Im Spiel war es folgenlos — alle fünf Misch-Stellen greifen (Solo/Duell und Online über
+`loadQuestions`, dazu Challenger, Üben-Modus und Notvorrat; auch Gruppenquizze und
+geteilte Kataloge laufen durch `loadQuestions`).
+
+Die Rohdaten wandern aber weiter, als die App reicht: in **geteilte Kataloge** (per
+Code an andere Spieler), in **Gruppenquizze**, in Firebase — und später in den
+geplanten **React-Native-Neubau**. Am 5.8.2026 hatten zwei von vier Spielmodi nicht
+gemischt; wäre eine Datei mit 100 % auf B in einem solchen Modus gelandet, hätte jedes
+Kind ohne jedes Wissen jede Frage richtig geraten. Der Schutz durfte nicht allein an
+einer Zeile Laufzeitcode hängen.
+
+## 138. Das Werkzeug und seine Sicherungen
+
+`question-generator/fix_correct_position.js` vergibt die Zielposition **reihum**
+(0,1,2,3,0,…), nicht zufällig — dadurch ist ein zweiter Lauf deterministisch, und weil
+die Fragen thematisch geblockt liegen, läuft die Reihum-Vergabe quer zu jeder
+inhaltlichen Ordnung. Die drei Distraktoren behalten ihre relative Reihenfolge, damit
+eine bewusst gebaute Abfolge erhalten bleibt.
+
+Jede einzelne Umstellung prüft sich selbst: gleiche Optionsmenge, und `correct` zeigt
+auf denselben Text. Bei einer einzigen fehlgeschlagenen Probe bricht das Skript ab,
+ohne zu schreiben. **9079 Umstellungen, alle bestanden.**
+
+Danach unabhängig gegen den Commit-Stand geprüft: 6232 Fragen aus 120 Dateien —
+identischer Fragetext, identische Optionsmenge, `correct` auf demselben Antworttext.
+Null Abweichungen.
+
+**Ergebnis: beide Bestände exakt 25/25/25/25, keine Datei über 45 %.** Die
+Längenverteilung ist davon unberührt (die Umstellung ändert keine Zeichen), die
+QA-Befunde ebenfalls unverändert.

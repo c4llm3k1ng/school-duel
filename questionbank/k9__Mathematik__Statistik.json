@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Die Note 2 kommt viermal vor, insgesamt gibt es 10 Noten. Die relative Häufigkeit ist die absolute Häufigkeit geteilt durch die Gesamtanzahl: 4 : 10 = 0,4. Das entspricht 40 %. Der Wert 4 ist nur die absolute Häufigkeit.",
     "options": [
-      "0,2",
       "0,4",
+      "0,2",
       "2,5",
       "4"
     ],
@@ -12,49 +12,49 @@
     "topic": "Relative Häufigkeit"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Das arithmetische Mittel ist die Summe aller Werte geteilt durch die Anzahl der Werte: (14 + 15 + 13 + 16 + 17) : 5 = 75 : 5 = 15 Jahre.",
     "options": [
       "16 Jahre",
-      "15,5 Jahre",
       "15 Jahre",
+      "15,5 Jahre",
       "14 Jahre"
     ],
     "question": "Eine Gruppe von fünf Freunden hat folgende Alter: 14, 15, 13, 16, 17. Was ist das arithmetische Mittel ihres Alters?",
     "topic": "Arithmetisches Mittel (Mittelwert)"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Der Modus (Modalwert) ist der Wert, der am häufigsten vorkommt. Rot kommt dreimal vor, Blau zweimal, Grün und Gelb je einmal. Der Modus ist also Rot.",
     "options": [
-      "Rot",
       "Blau",
       "Grün",
+      "Rot",
       "Gelb"
     ],
     "question": "Bei einer Befragung zu Lieblingsfarben wurden folgende Antworten gesammelt: Rot, Blau, Grün, Rot, Gelb, Rot, Blau. Welches ist der Modus (Modalwert) dieser Datenreihe?",
     "topic": "Modus (Modalwert)"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Für den Median werden die Werte zuerst der Größe nach sortiert: 1, 2, 3, 4, 5, 6, 7, 8. Bei einer geraden Anzahl von Werten ist der Median das arithmetische Mittel der beiden mittleren Werte, also (4 + 5) : 2 = 4,5.",
     "options": [
       "4",
-      "4,5",
       "5",
-      "5,5"
+      "5,5",
+      "4,5"
     ],
     "question": "Eine Statistik erfasste die Anzahl der verpassten Telefonanrufe in einem Büro an 8 Tagen: 3, 7, 2, 5, 8, 4, 6, 1. Was ist der Median dieser Datenreihe?",
     "topic": "Median"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Das arithmetische Mittel liegt bei (9 * 3000 + 15000) : 10 = 4200 Euro, obwohl außer dem Chef niemand so viel verdient. Der Median liegt bei 3000 Euro und beschreibt das typische Einkommen besser, weil er von einzelnen Ausreißern kaum beeinflusst wird. Der Modus wäre hier zwar ebenfalls 3000 Euro, ist aber bei vielen verschiedenen Werten unbrauchbar. Die Spannweite ist kein Lagemaß, sondern ein Streumaß.",
     "options": [
+      "Der Median",
       "Das arithmetische Mittel",
       "Der Modus",
-      "Die Spannweite",
-      "Der Median"
+      "Die Spannweite"
     ],
     "question": "In einer kleinen Firma verdienen 9 Angestellte jeweils 3000 Euro pro Monat. Der Chef verdient 15000 Euro pro Monat. Welche Kenngröße beschreibt das 'typische' Einkommen in dieser Firma am besten, wenn man den Chef mitzählt?",
     "topic": "Lagemaße und Ausreißer"
@@ -72,73 +72,73 @@
     "topic": "Spannweite"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Man multipliziert die Gesamtanzahl mit der relativen Häufigkeit: 250 * 0,60 = 150 Schüler. Die 60 sind nur der Prozentsatz, nicht die Anzahl.",
     "options": [
       "60 Schüler",
       "100 Schüler",
-      "125 Schüler",
-      "150 Schüler"
+      "150 Schüler",
+      "125 Schüler"
     ],
     "question": "In einer Umfrage unter 250 Schülern gaben 60 % an, täglich Hausaufgaben zu machen. Wie viele Schüler sind das absolut?",
     "topic": "Absolute und relative Häufigkeit"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Die Grundgesamtheit ist die gesamte Gruppe, über die eine Aussage getroffen werden soll, hier alle Wahlberechtigten in Deutschland. Die 1000 Befragten sind eine ausgewählte Teilmenge davon, also eine Stichprobe. Würde man alle befragen, wäre es eine Vollerhebung.",
     "options": [
-      "Eine Stichprobe",
       "Die Grundgesamtheit",
       "Eine Vollerhebung",
-      "Ein Merkmal"
+      "Ein Merkmal",
+      "Eine Stichprobe"
     ],
     "question": "Ein Meinungsforschungsinstitut befragt 1000 zufällig ausgewählte Bürger in Deutschland nach ihrer politischen Präferenz, um eine Aussage über die gesamte Bevölkerung treffen zu können. Was stellt die Gruppe der 1000 befragten Bürger dar?",
     "topic": "Grundgesamtheit und Stichprobe"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Die relative Häufigkeit ist die absolute Häufigkeit geteilt durch die Gesamtanzahl: 15 : 25 = 0,60. Das entspricht 60 %. Eine relative Häufigkeit liegt immer zwischen 0 und 1, ein Wert wie 1,67 ist deshalb unmöglich.",
     "options": [
+      "0,60",
       "0,15",
       "0,40",
-      "0,60",
       "1,67"
     ],
     "question": "In einer Klasse mit 25 Schülern haben 15 Schüler das Fach Biologie gewählt. Wie groß ist die relative Häufigkeit der Biologie-Wähler?",
     "topic": "Relative Häufigkeit"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Das arithmetische Mittel ist die Summe aller Werte geteilt durch die Anzahl der Werte: (2 + 3 + 1 + 4 + 2) : 5 = 12 : 5 = 2,4.",
     "options": [
       "3,0",
-      "2,5",
       "2,4",
+      "2,5",
       "2,0"
     ],
     "question": "Die Noten von Max in den letzten fünf Mathematikarbeiten sind: 2, 3, 1, 4, 2. Welchen Notendurchschnitt (arithmetisches Mittel) hat Max?",
     "topic": "Arithmetisches Mittel"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Zuerst werden die Werte sortiert: 12, 13, 14, 15, 16, 17. Bei einer geraden Anzahl von Werten ist der Median das arithmetische Mittel der beiden mittleren Werte, also (14 + 15) : 2 = 14,5 Jahre. Ohne Sortieren käme man fälschlich auf (12 + 16) : 2 = 14.",
     "options": [
       "12 Jahre",
       "13,5 Jahre",
-      "14 Jahre",
-      "14,5 Jahre"
+      "14,5 Jahre",
+      "14 Jahre"
     ],
     "question": "Eine Gruppe von 6 Freunden hat folgende Altersangaben (in Jahren): 13, 15, 12, 16, 14, 17. Welches Alter ist der Median dieser Gruppe?",
     "topic": "Median"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Der Modalwert ist der Wert, der am häufigsten vorkommt. Die Größe 41 kommt dreimal vor, die Größe 39 zweimal, die Größen 38, 40 und 42 je einmal. Der Modalwert ist also 41.",
     "options": [
-      "41",
       "40",
       "39",
-      "38"
+      "38",
+      "41"
     ],
     "question": "In einer Klasse wurden folgende Schuhgrößen notiert: 38, 41, 39, 41, 40, 41, 42, 39. Welches ist der Modalwert (Modus) dieser Datenreihe?",
     "topic": "Modalwert"
@@ -180,13 +180,13 @@
     "topic": "Quartile"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "In den ersten 8 Jahren betrug die Summe 8 * 450 = 3600 Schüler. Über 9 Jahre beträgt die Summe 9 * 460 = 4140 Schüler. Im 9. Jahr waren es also 4140 - 3600 = 540 Schüler. Da es 100 mehr als im 8. Jahr waren, gab es im 8. Jahr 540 - 100 = 440 Schüler.",
     "options": [
       "350",
-      "440",
       "540",
-      "560"
+      "560",
+      "440"
     ],
     "question": "In den ersten 8 Jahren betrug der Durchschnitt der Schülerzahlen an einer Schule 450. Im 9. Jahr liegt die Schülerzahl um 100 höher als im 8. Jahr, und der Durchschnitt über alle 9 Jahre steigt auf 460. Wie hoch war die Schülerzahl im 8. Jahr?",
     "topic": "Anwendung des arithmetischen Mittels"

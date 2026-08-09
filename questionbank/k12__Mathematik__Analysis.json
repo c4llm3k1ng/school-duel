@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Potenzregel: f(x) = xⁿ → f'(x) = n · xⁿ⁻¹. Der Exponent wird als Faktor vorgezogen und um 1 verringert. Beispiel: f(x) = x⁵ → f'(x) = 5x⁴.",
     "options": [
-      "f'(x) = n · xⁿ",
       "f'(x) = n · xⁿ⁻¹",
+      "f'(x) = n · xⁿ",
       "f'(x) = xⁿ⁻¹",
       "f'(x) = (n+1) · xⁿ"
     ],
@@ -12,47 +12,47 @@
     "topic": "Differentialrechnung"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Differenzierbarkeit ist die stärkere Eigenschaft: Aus ihr folgt stets Stetigkeit. Die Umkehrung gilt nicht – f(x) = |x| ist an x₀ = 0 stetig, hat dort aber einen Knick und damit keine eindeutige Tangentensteigung.",
     "options": [
       "Jede an x₀ stetige Funktion ist dort auch differenzierbar, Stetigkeit ist die stärkere Bedingung",
+      "Jede an x₀ differenzierbare Funktion ist dort stetig, umgekehrt gilt das nicht, etwa bei f(x) = |x|",
       "Beide Eigenschaften sind gleichwertig, an jeder Stelle folgt jede von beiden aus der anderen",
-      "Die Eigenschaften sind voneinander unabhängig, aus keiner von beiden folgt jemals die andere",
-      "Jede an x₀ differenzierbare Funktion ist dort stetig, umgekehrt gilt das nicht, etwa bei f(x) = |x|"
+      "Die Eigenschaften sind voneinander unabhängig, aus keiner von beiden folgt jemals die andere"
     ],
     "question": "Welcher Zusammenhang besteht zwischen Stetigkeit und Differenzierbarkeit an einer Stelle x₀?",
     "topic": "Differentialrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Produktregel: (u · v)' = u' · v + u · v'. Jeder Faktor wird einmal abgeleitet, während der andere unverändert bleibt; die beiden Terme werden addiert.",
     "options": [
       "(u · v)' = u' · v'",
-      "(u · v)' = u' · v + u · v'",
       "(u · v)' = u' · v − u · v'",
+      "(u · v)' = u' · v + u · v'",
       "(u · v)' = u · v' − u' · v"
     ],
     "question": "Wie lautet die Produktregel für die Ableitung von f(x) = u(x) · v(x)?",
     "topic": "Differentialrechnung"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Quotientenregel: (u/v)' = (u' · v − u · v') / v². Mit u = x und v = x² + 1 folgt f'(x) = (1 · (x² + 1) − x · 2x) / (x² + 1)² = (1 − x²) / (x² + 1)².",
     "options": [
-      "f'(x) = (1 − x²) / (x² + 1)²",
       "f'(x) = (3x² + 1) / (x² + 1)²",
       "f'(x) = (x² − 1) / (x² + 1)²",
-      "f'(x) = (1 − x²) / (x² + 1)"
+      "f'(x) = (1 − x²) / (x² + 1)",
+      "f'(x) = (1 − x²) / (x² + 1)²"
     ],
     "question": "Wie lautet die Ableitung von f(x) = x / (x² + 1)?",
     "topic": "Differentialrechnung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Kettenregel: (f(g(x)))' = f'(g(x)) · g'(x). Die äußere Funktion wird abgeleitet und das innere Argument beibehalten, danach folgt die Multiplikation mit der inneren Ableitung.",
     "options": [
-      "(f∘g)' = f'(x) · g'(x)",
       "(f∘g)' = f'(g(x)) · g'(x)",
+      "(f∘g)' = f'(x) · g'(x)",
       "(f∘g)' = f(g'(x))",
       "(f∘g)' = f'(x) + g'(x)"
     ],
@@ -60,47 +60,47 @@
     "topic": "Differentialrechnung"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Produktregel mit u = x² und v = sin(x): f'(x) = 2x · sin(x) + x² · cos(x). Wichtig: sin wird beim Ableiten zu cos, und beide Summanden bleiben erhalten.",
     "options": [
       "f'(x) = 2x · cos(x) + x² · sin(x)",
-      "f'(x) = 2x · sin(x) − x² · cos(x)",
       "f'(x) = 2x · sin(x) + x² · cos(x)",
+      "f'(x) = 2x · sin(x) − x² · cos(x)",
       "f'(x) = 2x · sin(x) + x² · sin(x)"
     ],
     "question": "Wie lautet die Ableitung von f(x) = x² · sin(x)?",
     "topic": "Differentialrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Die Exponentialfunktion eˣ ist ihre eigene Ableitung: (eˣ)' = eˣ. Das macht sie in der Analysis besonders wichtig.",
     "options": [
       "eˣ⁻¹",
-      "eˣ",
       "x · eˣ⁻¹",
+      "eˣ",
       "e"
     ],
     "question": "Was ist die Ableitung von f(x) = eˣ?",
     "topic": "Differentialrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "f(x) = ln(x) → f'(x) = 1/x (für x > 0). Folgt aus der Umkehrfunktionsregel: ln ist Umkehrfunktion von eˣ.",
     "options": [
       "x",
-      "1/x",
       "ln(x)",
-      "eˣ"
+      "eˣ",
+      "1/x"
     ],
     "question": "Was ist die Ableitung von f(x) = ln(x)?",
     "topic": "Differentialrechnung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "An einer inneren lokalen Extremstelle einer differenzierbaren Funktion verläuft die Tangente waagerecht, also f'(x₀) = 0. Hinreichend ist das nicht: f(x) = x³ hat f'(0) = 0, dort liegt aber ein Sattelpunkt und kein Extremum.",
     "options": [
-      "f(x₀) = 0",
       "f'(x₀) = 0",
+      "f(x₀) = 0",
       "f''(x₀) = 0",
       "f'(x₀) > 0"
     ],
@@ -120,37 +120,37 @@
     "topic": "Kurvendiskussion"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Ein Wendepunkt ist eine Stelle, an der die Krümmung das Vorzeichen wechselt. Notwendig ist f''(x₀) = 0, hinreichend ist ein Vorzeichenwechsel von f'' bzw. f'''(x₀) ≠ 0. f''(x₀) = 0 allein genügt nicht: f(x) = x⁴ hat f''(0) = 0, aber keinen Wendepunkt.",
     "options": [
       "Wenn f'(x₀) = 0 gilt und f' dort das Vorzeichen wechselt – das kennzeichnet eine Extremstelle",
-      "Wenn f''(x₀) = 0 gilt und f'' dort das Vorzeichen wechselt (hinreichend: f'''(x₀) ≠ 0)",
       "Wenn f(x₀) = 0 gilt und f dort das Vorzeichen wechselt – das kennzeichnet eine Nullstelle",
+      "Wenn f''(x₀) = 0 gilt und f'' dort das Vorzeichen wechselt (hinreichend: f'''(x₀) ≠ 0)",
       "Wenn f''(x₀) = 0 gilt – diese Bedingung allein reicht für einen Wendepunkt bereits aus"
     ],
     "question": "Wann besitzt eine dreimal differenzierbare Funktion an der Stelle x₀ einen Wendepunkt?",
     "topic": "Kurvendiskussion"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ein Sattel- oder Terrassenpunkt ist ein Wendepunkt mit waagerechter Tangente: f'(x₀) = 0 und f''(x₀) = 0, aber f' wechselt das Vorzeichen nicht, die Monotonie bleibt also erhalten.",
     "options": [
       "Ein Punkt mit f(x₀) = 0 und Vorzeichenwechsel von f – also eine gewöhnliche Nullstelle",
-      "Ein Punkt mit f'(x₀) = 0, aber ohne Vorzeichenwechsel von f' – kein Extrempunkt (z. B. x³ bei x = 0)",
       "Ein lokaler Hochpunkt, an dem f'(x₀) = 0 und f''(x₀) < 0 gilt – also ein echter Extrempunkt",
-      "Der Schnittpunkt des Graphen mit der y-Achse, den man durch Einsetzen von x = 0 berechnet"
+      "Der Schnittpunkt des Graphen mit der y-Achse, den man durch Einsetzen von x = 0 berechnet",
+      "Ein Punkt mit f'(x₀) = 0, aber ohne Vorzeichenwechsel von f' – kein Extrempunkt (z. B. x³ bei x = 0)"
     ],
     "question": "Was ist ein Sattelpunkt (Terrassenpunkt)?",
     "topic": "Kurvendiskussion"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "f'(x) > 0 auf einem Intervall ist hinreichend, aber nicht notwendig für strenges Wachstum. Beispiel: f(x) = x³ wächst auf ganz ℝ streng, obwohl f'(0) = 0 ist. Notwendig ist lediglich f'(x) ≥ 0.",
     "options": [
+      "Ist f'(x) > 0 auf dem Intervall, wächst f streng; streng wachsende Funktionen dürfen f'(x₀) = 0 haben",
       "Streng monotones Wachstum liegt genau dann vor, wenn f'(x) > 0 für alle x des Intervalls gilt",
       "Streng monotones Wachstum bedeutet, dass f auf dem Intervall weder Extrem- noch Wendestellen hat",
-      "Streng monotones Wachstum liegt vor, sobald f'(x) > 0 an mindestens einer Stelle des Intervalls gilt",
-      "Ist f'(x) > 0 auf dem Intervall, wächst f streng; streng wachsende Funktionen dürfen f'(x₀) = 0 haben"
+      "Streng monotones Wachstum liegt vor, sobald f'(x) > 0 an mindestens einer Stelle des Intervalls gilt"
     ],
     "question": "Welche Aussage über streng monoton wachsende differenzierbare Funktionen auf einem Intervall ist richtig?",
     "topic": "Kurvendiskussion"
@@ -168,35 +168,35 @@
     "topic": "Integralrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "∫xⁿ dx = xⁿ⁺¹/(n + 1) + C für n ≠ −1: Exponent um 1 erhöhen, durch den neuen Exponenten teilen. Für n = −1 ergibt sich stattdessen ln|x| + C.",
     "options": [
       "n · xⁿ⁻¹ + C",
-      "xⁿ⁺¹ / (n + 1) + C",
       "xⁿ⁻¹ / (n − 1) + C",
+      "xⁿ⁺¹ / (n + 1) + C",
       "n · xⁿ⁺¹ + C"
     ],
     "question": "Was ist die Stammfunktion von f(x) = xⁿ (n ≠ −1)?",
     "topic": "Integralrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "∫eˣ dx = eˣ + C. Die Exponentialfunktion ist zugleich ihre eigene Stammfunktion; die Potenzregel für Integrale ist hier nicht anwendbar, weil x im Exponenten steht.",
     "options": [
       "eˣ⁻¹ + C",
-      "eˣ + C",
       "x · eˣ + C",
-      "eˣ⁺¹ / (x + 1) + C"
+      "eˣ⁺¹ / (x + 1) + C",
+      "eˣ + C"
     ],
     "question": "Was ist die Stammfunktion von f(x) = eˣ?",
     "topic": "Integralrechnung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "∫(1/x)dx = ln|x| + C (für x ≠ 0). Der Betragsstrich ist nötig, weil ln nur für positive Argumente definiert ist, 1/x aber auch für negative x.",
     "options": [
-      "−1/x² + C",
       "ln|x| + C",
+      "−1/x² + C",
       "−1/x + C",
       "x · ln(x) − x + C"
     ],
@@ -216,25 +216,25 @@
     "topic": "Integralrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Der Hauptsatz verbindet beide Teilgebiete: Das bestimmte Integral berechnet sich als F(b) − F(a), wobei F eine beliebige Stammfunktion von f ist. Die Integrationskonstante kürzt sich dabei heraus.",
     "options": [
       "Ableitung und Integration sind voneinander unabhängige Rechenoperationen ohne Zusammenhang",
-      "∫ₐᵇ f(x)dx = F(b) − F(a), wobei F eine beliebige Stammfunktion von f ist",
       "Jede auf einem Intervall definierte Funktion besitzt dort auch eine Stammfunktion",
+      "∫ₐᵇ f(x)dx = F(b) − F(a), wobei F eine beliebige Stammfunktion von f ist",
       "Das Integral einer Ableitung über ein beliebiges Intervall ist stets gleich null"
     ],
     "question": "Wie lautet der Hauptsatz der Differential- und Integralrechnung?",
     "topic": "Integralrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Fläche zwischen zwei Kurven: A = ∫ₐᵇ [f(x) − g(x)]dx, sofern f(x) ≥ g(x) im gesamten Intervall gilt. Bei Schnittpunkten muss man abschnittsweise rechnen.",
     "options": [
       "∫ₐᵇ f(x)·g(x)dx",
-      "∫ₐᵇ [f(x) − g(x)]dx",
       "∫ₐᵇ f(x)dx + ∫ₐᵇ g(x)dx",
-      "∫ₐᵇ f(x)dx · ∫ₐᵇ g(x)dx"
+      "∫ₐᵇ f(x)dx · ∫ₐᵇ g(x)dx",
+      "∫ₐᵇ [f(x) − g(x)]dx"
     ],
     "question": "Wie berechnet man die Fläche zwischen zwei Kurven f(x) ≥ g(x) im Intervall [a,b]?",
     "topic": "Integralrechnung"
@@ -264,35 +264,35 @@
     "topic": "Integralrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "eˣ ist für alle x ∈ ℝ definiert, stets positiv, und es gilt (eˣ)' = eˣ sowie ∫eˣdx = eˣ + C. Der Graph nähert sich der x-Achse für x → −∞ nur asymptotisch.",
     "options": [
       "Sie ist nur für x > 0 definiert, hat bei x = 0 den Wert 0 und wächst dann unbegrenzt",
-      "Sie stimmt mit ihrer eigenen Ableitung überein, ist stets positiv und schneidet die x-Achse nie",
       "Sie hat ein globales Maximum bei x = 0 mit dem Wert 1 und fällt für x → ±∞ gegen null",
+      "Sie stimmt mit ihrer eigenen Ableitung überein, ist stets positiv und schneidet die x-Achse nie",
       "Sie ist eine gerade Funktion mit Spiegelsymmetrie zur y-Achse, also f(−x) = f(x)"
     ],
     "question": "Was gilt für die Exponentialfunktion f(x) = eˣ besonders?",
     "topic": "Exponentialfunktion"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "ln(x) = logₑ(x) ist die Umkehrfunktion der natürlichen Exponentialfunktion. Es gilt ln(eˣ) = x für alle x, und setzt man ln(x) als Exponent von e ein, erhält man für x > 0 wieder x.",
     "options": [
       "Der Logarithmus zur Basis 10 (dekadischer Logarithmus, Notation: lg oder log₁₀)",
-      "Die Umkehrfunktion von eˣ (Logarithmus zur Basis e ≈ 2,718)",
       "Die Ableitung von eˣ (diese ist wiederum eˣ, da eˣ ihre eigene Ableitung ist)",
-      "Der Logarithmus zur Basis 2 (binärer Logarithmus, Notation: lb oder log₂)"
+      "Der Logarithmus zur Basis 2 (binärer Logarithmus, Notation: lb oder log₂)",
+      "Die Umkehrfunktion von eˣ (Logarithmus zur Basis e ≈ 2,718)"
     ],
     "question": "Was ist der natürliche Logarithmus ln(x)?",
     "topic": "Exponentialfunktion"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Logarithmusgesetz: ln(a·b) = ln(a) + ln(b). Ebenso gilt ln(a/b) = ln(a) − ln(b) und ln(aⁿ) = n · ln(a).",
     "options": [
-      "ln(a · b) = ln(a) · ln(b)",
       "ln(a · b) = ln(a) + ln(b)",
+      "ln(a · b) = ln(a) · ln(b)",
       "ln(a · b) = ln(a) − ln(b)",
       "ln(a · b) = ln(a) hoch ln(b)"
     ],
@@ -300,59 +300,59 @@
     "topic": "Exponentialfunktion"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Mit den Seiten a und 10 − a gilt A(a) = 10a − a². Aus A'(a) = 10 − 2a = 0 folgt a = 5, und wegen A''(a) = −2 < 0 liegt ein Maximum vor. Das Quadrat mit 5 cm Seitenlänge liefert 25 cm².",
     "options": [
       "20 cm²",
-      "24 cm²",
       "25 cm²",
+      "24 cm²",
       "30 cm²"
     ],
     "question": "Ein Rechteck hat den Umfang 20 cm. Welchen größten Flächeninhalt kann es haben?",
     "topic": "Differentialrechnung"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Partielle Integration mit u = x und v' = eˣ: ∫x·eˣ dx = x·eˣ − ∫1·eˣ dx = x·eˣ − eˣ + C = (x − 1)·eˣ + C. Probe durch Ableiten: F'(x) = 1·eˣ + (x − 1)·eˣ = x·eˣ.",
     "options": [
       "F(x) = (x + 1) · eˣ + C",
       "F(x) = x · eˣ + C",
-      "F(x) = 0,5 · x² · eˣ + C",
-      "F(x) = (x − 1) · eˣ + C"
+      "F(x) = (x − 1) · eˣ + C",
+      "F(x) = 0,5 · x² · eˣ + C"
     ],
     "question": "Wie lautet eine Stammfunktion von f(x) = x · eˣ?",
     "topic": "Integralrechnung"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Der Zähler ist genau die Ableitung des Nenners, daher greift die logarithmische Integration ∫u'/u dx = ln|u| + C. Mit u = x² + 1 > 0 folgt F(x) = ln(x² + 1) + C. Probe: F'(x) = 2x/(x² + 1).",
     "options": [
-      "F(x) = ln(x² + 1) + C",
       "F(x) = 2 · ln(x² + 1) + C",
       "F(x) = ln(2x) − ln(x² + 1) + C",
-      "F(x) = 2x · ln(x² + 1) + C"
+      "F(x) = 2x · ln(x² + 1) + C",
+      "F(x) = ln(x² + 1) + C"
     ],
     "question": "Wie lautet eine Stammfunktion von f(x) = 2x / (x² + 1)?",
     "topic": "Integralrechnung"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Zähler und Nenner haben denselben Grad. Klammert man x² aus, bleibt (3 − 1/x) / (2 + 5/x²); die Brüche streben für x → ∞ gegen null. Der Grenzwert ist der Quotient der Leitkoeffizienten: 3/2 = 1,5.",
     "options": [
+      "1,5",
       "0",
       "3",
-      "1,5",
       "∞"
     ],
     "question": "Welchen Grenzwert hat f(x) = (3x² − x) / (2x² + 5) für x → ∞?",
     "topic": "Grenzwerte"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "x · e⁻ˣ = x/eˣ hat für x → ∞ die unbestimmte Form ∞/∞. Mit L'Hôpital folgt lim x/eˣ = lim 1/eˣ = 0. Merksatz: Die e-Funktion wächst schneller als jede Potenzfunktion.",
     "options": [
-      "0, weil eˣ schneller wächst als jede Potenz von x",
       "1, weil sich die Faktoren x und e⁻ˣ gegenseitig aufheben",
+      "0, weil eˣ schneller wächst als jede Potenz von x",
       "∞, weil der Faktor x unbeschränkt wächst und dominiert",
       "Es gibt keinen Grenzwert, da der Term unendlich oft schwankt"
     ],
@@ -360,25 +360,25 @@
     "topic": "Grenzwerte"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Die Tangentensteigung ist m = f'(2) = 2 · 2 = 4. Einsetzen in y = m · (x − x₀) + f(x₀) ergibt y = 4 · (x − 2) + 4 = 4x − 4.",
     "options": [
       "y = 4x + 4",
       "y = 2x + 4",
-      "y = 4x",
-      "y = 4x − 4"
+      "y = 4x − 4",
+      "y = 4x"
     ],
     "question": "Wie lautet die Gleichung der Tangente an den Graphen von f(x) = x² im Punkt P(2 | 4)?",
     "topic": "Differentialrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Der Grenzwert des Differenzenquotienten für h → 0 ist die Definition der Ableitung f'(x) – die momentane Änderungsrate und damit die Tangentensteigung.",
     "options": [
       "Den arithmetischen Mittelwert aller Funktionswerte von f im Intervall [x, x+h]",
-      "Die momentane Änderungsrate – die Ableitung f'(x) an der Stelle x",
       "Das bestimmte Integral von f über das Intervall [x, x+h]",
-      "Die zweite Ableitung f''(x) als Maß für die Krümmung des Graphen"
+      "Die zweite Ableitung f''(x) als Maß für die Krümmung des Graphen",
+      "Die momentane Änderungsrate – die Ableitung f'(x) an der Stelle x"
     ],
     "question": "Was beschreibt der Differenzenquotient [f(x+h) − f(x)] / h für h → 0?",
     "topic": "Differentialrechnung"
@@ -396,47 +396,47 @@
     "topic": "Grenzwerte"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "f'' beschreibt die Krümmung: f''(x) < 0 bedeutet, dass f' streng fällt, der Graph ist rechtsgekrümmt (konkav). Über Steigen oder Fallen von f selbst sagt das nichts aus – f kann dabei durchaus wachsen.",
     "options": [
       "Der Graph ist linksgekrümmt (konvex), die Tangentensteigung nimmt dort ständig zu",
-      "Der Graph fällt auf dem gesamten Intervall, denn negative Werte bedeuten Abnahme",
       "Der Graph ist rechtsgekrümmt (konkav), die Tangentensteigung nimmt dort ständig ab",
+      "Der Graph fällt auf dem gesamten Intervall, denn negative Werte bedeuten Abnahme",
       "Der Graph besitzt in diesem Intervall mindestens einen Wendepunkt mit Vorzeichenwechsel"
     ],
     "question": "Was folgt für den Graphen von f auf einem Intervall, in dem durchgehend f''(x) < 0 gilt?",
     "topic": "Kurvendiskussion"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Waagerechte Asymptoten y = c entstehen, wenn der Grenzwert lim f(x) für x → ∞ existiert und gleich c ist. Senkrechte Asymptoten treten dagegen an Polstellen auf.",
     "options": [
       "Ein Schnittpunkt des Graphen mit der x-Achse, also eine Nullstelle der Funktion",
-      "Eine waagerechte Gerade y = c, der sich der Graph für x → ±∞ beliebig nähert",
       "Ein lokaler Extrempunkt bei sehr großem |x|, an dem die Steigung gegen null geht",
+      "Eine waagerechte Gerade y = c, der sich der Graph für x → ±∞ beliebig nähert",
       "Die Tangente an den Graphen im Wendepunkt mit der Steigung f'(x_W)"
     ],
     "question": "Was ist eine waagerechte Asymptote des Graphen für x → ∞?",
     "topic": "Kurvendiskussion"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Charakteristikum exponentiellen Wachstums: f'(t) = k · f(t) – die Änderungsrate ist proportional zum momentanen Bestand. Für k > 0 wächst f, für k < 0 nimmt f ab (Zerfall).",
     "options": [
       "Das Wachstum ist proportional zur Zeit t, also f(t) = A + k·t (lineares Wachstum)",
-      "Die Änderungsrate ist proportional zur momentanen Größe: f'(t) = k · f(t)",
       "Das Wachstum ist periodisch, also f(t) = A · sin(k·t) (schwingungsförmiger Verlauf)",
-      "Die Funktion nimmt stets ab, weil der Parameter k zwingend negativ sein muss"
+      "Die Funktion nimmt stets ab, weil der Parameter k zwingend negativ sein muss",
+      "Die Änderungsrate ist proportional zur momentanen Größe: f'(t) = k · f(t)"
     ],
     "question": "Woran erkennt man exponentielles Wachstum vom Typ f(t) = A · eᵏᵗ?",
     "topic": "Exponentialfunktion"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Uneigentliche Integrale werden als Grenzwert berechnet, etwa das Integral von 1 bis unendlich 1/x² dx = 1. Sie konvergieren, wenn dieser Grenzwert endlich ist, und divergieren sonst – das Integral von 1 bis unendlich 1/x dx divergiert zum Beispiel.",
     "options": [
-      "Ein Integral mit negativen Grenzen a < b < 0, das wie ein gewöhnliches Integral berechnet wird",
       "Ein Integral mit unendlicher Grenze oder Definitionslücke, das als Grenzwert berechnet wird und bei endlichem Grenzwert konvergiert",
+      "Ein Integral mit negativen Grenzen a < b < 0, das wie ein gewöhnliches Integral berechnet wird",
       "Ein Integral, dessen Wert negativ ausfällt, weil der Graph von f unterhalb der x-Achse verläuft",
       "Ein Integral, für das keine Stammfunktion existiert und das deshalb numerisch gelöst werden muss"
     ],

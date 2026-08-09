@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Nach der Kettenregel bleibt die äußere e-Funktion beim Ableiten erhalten und wird mit der inneren Ableitung multipliziert. Die innere Funktion ist u(x) = -2x mit u'(x) = -2. Damit ist f'(x) = -2 · e⁻²ˣ.",
     "options": [
-      "f'(x) = e⁻²ˣ",
       "f'(x) = -2 · e⁻²ˣ",
+      "f'(x) = e⁻²ˣ",
       "f'(x) = 2 · e⁻²ˣ",
       "f'(x) = -2x · e⁻²ˣ"
     ],
@@ -12,12 +12,12 @@
     "topic": "Ableitungen (Kettenregel)"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Die erste Ableitung der Funktion f(x) = 3x² - 4x + 5 ist f'(x) = 6x - 4. Setzt man x = 2 ein, erhält man f'(2) = 6 · 2 - 4 = 12 - 4 = 8.",
     "options": [
       "4",
-      "6",
       "8",
+      "6",
       "10"
     ],
     "question": "Gegeben ist die Funktion f(x) = 3x² - 4x + 5. Welchen Wert hat die erste Ableitung f'(x) an der Stelle x = 2?",
@@ -36,13 +36,13 @@
     "topic": "Logarithmen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Eine Erhöhung um 20 Prozent entspricht dem Faktor 1,2. Eine Senkung um 10 Prozent entspricht dem Faktor 0,9. Der Gesamtfaktor ist 1,2 · 0,9 = 1,08. Das entspricht 108 Prozent des ursprünglichen Preises.",
     "options": [
       "98 %",
       "102 %",
-      "108 %",
-      "110 %"
+      "110 %",
+      "108 %"
     ],
     "question": "Ein Preis wird zunächst um 20 % erhöht und anschließend um 10 % gesenkt. Wie viel Prozent des ursprünglichen Preises beträgt der Endpreis?",
     "topic": "Prozentrechnung"
@@ -60,37 +60,37 @@
     "topic": "Vektorrechnung"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Eine Stammfunktion von f(x) = 3x² - 1 ist F(x) = x³ - x. Das bestimmte Integral ist F(2) - F(0) = (2³ - 2) - (0³ - 0) = (8 - 2) - 0 = 6.",
     "options": [
       "4",
-      "5",
       "6",
+      "5",
       "7"
     ],
     "question": "Berechne den Wert des bestimmten Integrals von 0 bis 2 über die Funktion f(x) = 3x² - 1.",
     "topic": "Integralrechnung"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Der Winkel 120° liegt im zweiten Quadranten, dort ist der Kosinus negativ. Der zugehörige Bezugswinkel zur x-Achse beträgt 180° - 120° = 60°, und cos(60°) = 1/2. Daraus folgt cos(120°) = -1/2.",
     "options": [
       "√3/2",
       "1/2",
-      "-√3/2",
-      "-1/2"
+      "-1/2",
+      "-√3/2"
     ],
     "question": "Welchen Wert hat cos(120°) am Einheitskreis?",
     "topic": "Einheitskreis und Winkelfunktionen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Das n-te Glied einer geometrischen Folge ist aₙ = a₁ · qⁿ⁻¹. Für das vierte Glied gilt a₄ = 2 · 3³ = 2 · 27 = 54.",
     "options": [
       "18",
       "27",
-      "54",
-      "81"
+      "81",
+      "54"
     ],
     "question": "In einer geometrischen Folge ist das erste Glied a₁ = 2 und der Quotient q = 3. Was ist der Wert des vierten Gliedes a₄?",
     "topic": "Geometrische Folgen"
@@ -108,24 +108,24 @@
     "topic": "Grenzwerte gebrochenrationaler Funktionen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Bei der Multiplikation von Potenzen mit gleicher Basis werden die Exponenten addiert: a³ · a⁻⁵ = a⁻². Bei der Division werden sie subtrahiert: -2 - (-1) = -1. Das Ergebnis ist damit a⁻¹.",
     "options": [
       "a",
-      "a⁻³",
       "a⁻¹",
+      "a⁻³",
       "a⁻⁷"
     ],
     "question": "Vereinfachen Sie mit den Potenzgesetzen: (a³ · a⁻⁵)/a⁻¹",
     "topic": "Potenzgesetze"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Der Faktor 3 vor dem Logarithmus wird nach dem Potenzgesetz zum Exponenten: 3 · lg(b) = lg(b³). Eine Differenz zweier Logarithmen entspricht dem Logarithmus des Quotienten. Damit gilt lg(a) - lg(b³) = lg(a/b³).",
     "options": [
       "lg(a - b³)",
-      "lg(a/b³)",
       "lg(a³/b)",
+      "lg(a/b³)",
       "lg(a/(3b))"
     ],
     "question": "Welcher Ausdruck ist gleichwertig zu lg(a) - 3 · lg(b)?",
@@ -168,25 +168,25 @@
     "topic": "Exponentieller Zerfall"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Nach der Kettenregel ist f'(x) = (1/(3x)) · 3 = 1/x. Dasselbe zeigt das Logarithmusgesetz ln(3x) = ln(3) + ln(x): Die Konstante ln(3) fällt beim Ableiten weg, sodass 1/x übrig bleibt.",
     "options": [
       "f'(x) = 3/x",
       "f'(x) = 1/(3x)",
-      "f'(x) = ln(3)/x",
-      "f'(x) = 1/x"
+      "f'(x) = 1/x",
+      "f'(x) = ln(3)/x"
     ],
     "question": "Wie lautet die Ableitung von f(x) = ln(3x) für x > 0?",
     "topic": "Ableitungen (Logarithmusfunktion)"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die Ableitung der Wurzelfunktion lautet f'(x) = 1/(2 · √(x)). Einsetzen von x = 4 ergibt f'(4) = 1/(2 · 2) = 1/4. Die Tangente an dieser Stelle hat also die Steigung 1/4.",
     "options": [
       "1/2",
-      "1/4",
       "2",
-      "4"
+      "4",
+      "1/4"
     ],
     "question": "Welche Steigung hat die Tangente an den Graphen von f(x) = √(x) an der Stelle x = 4?",
     "topic": "Ableitungen (Wurzelfunktion)"

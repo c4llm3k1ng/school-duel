@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Eine jährliche Abnahme um 20 % bedeutet den Wachstumsfaktor 0,8 pro Jahr, also gilt 0,8ᵗ = 0,25. Logarithmieren liefert t · ln(0,8) = ln(0,25) und damit t = ln(0,25) / ln(0,8) ≈ (-1,386) / (-0,223) ≈ 6,2 Jahre. Wer stattdessen linear rechnet (75 % geteilt durch 20 % pro Jahr), erhält den falschen Wert 3,8 Jahre.",
     "options": [
-      "≈ 3,8 Jahre",
       "≈ 6,2 Jahre",
+      "≈ 3,8 Jahre",
       "≈ 6,9 Jahre",
       "≈ 12,4 Jahre"
     ],
@@ -12,24 +12,24 @@
     "topic": "Exponentialgleichungen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Zuerst fasst man die Logarithmen zusammen: log₂(x · (x - 2)) = 3. Umformen in die Exponentialform ergibt x · (x - 2) = 2³ = 8, also x² - 2x - 8 = 0 mit den Lösungen x = 4 und x = -2. Der Definitionsbereich verlangt x > 0 und x - 2 > 0, also x > 2. Damit scheidet x = -2 aus und es bleibt L = {4}.",
     "options": [
       "L = {2}",
-      "L = {3}",
       "L = {4}",
+      "L = {3}",
       "L = {5}"
     ],
     "question": "Bestimme die Lösungsmenge der Gleichung: log₂(x) + log₂(x - 2) = 3",
     "topic": "Logarithmusgleichungen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Die Gleichung ist biquadratisch. Mit der Substitution u = x² wird sie zu u² - 5u + 4 = 0, also (u - 1) · (u - 4) = 0 mit u = 1 oder u = 4. Die Rücksubstitution ergibt x² = 1, also x = ±1, und x² = 4, also x = ±2. Insgesamt gibt es vier reelle Lösungen.",
     "options": [
-      "x = ±1 und x = ±2",
       "x = ±1 und x = ±4",
       "x = ±2 und x = ±4",
+      "x = ±1 und x = ±2",
       "x = ±1 und x = 0"
     ],
     "question": "Finde alle reellen Lösungen der Polynomgleichung: x⁴ - 5x² + 4 = 0",
@@ -48,12 +48,12 @@
     "topic": "Wurzelgleichungen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Die Diskriminante ist D = (-4)² - 4 · 1 · 13 = 16 - 52 = -36 < 0, es gibt also keine reellen Lösungen. Mit √(-36) = 6i liefert die Lösungsformel x = (4 ± 6i) / 2 = 2 ± 3i. Die beiden Lösungen sind zueinander konjugiert komplex.",
     "options": [
+      "x = 2 ± 3i",
       "x = -2 ± 3i",
       "x = 2 ± 9i",
-      "x = 2 ± 3i",
       "x = 4 ± 3i"
     ],
     "question": "Bestimme die Lösungen der quadratischen Gleichung x² - 4x + 13 = 0 in der Menge ℂ der komplexen Zahlen.",
@@ -72,25 +72,25 @@
     "topic": "Lineare Gleichungssysteme mit Parametern"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Zuerst löst man sin(α) = 1/2. Die Hauptwerte sind α = π/6 und α = π - π/6 = 5π/6. Da das Argument 2x lautet, gilt:\n1) 2x = π/6 + k · 2π, also x = π/12 + k · π\n2) 2x = 5π/6 + k · 2π, also x = 5π/12 + k · π\nwobei k eine beliebige ganze Zahl ist. Durch das Teilen durch 2 halbiert sich auch die Periode.",
     "options": [
-      "x = π/12 + k · π  oder  x = 5π/12 + k · π  (k ∈ ℤ)",
       "x = π/6 + k · 2π  oder  x = 5π/6 + k · 2π  (k ∈ ℤ)",
       "x = π/12 + k · 2π  oder  x = 5π/12 + k · 2π  (k ∈ ℤ)",
+      "x = π/12 + k · π  oder  x = 5π/12 + k · π  (k ∈ ℤ)",
       "x = π/6 + k · π  oder  x = 5π/6 + k · π  (k ∈ ℤ)"
     ],
     "question": "Gib die allgemeine Lösung der trigonometrischen Gleichung an: sin(2x) = 1/2",
     "topic": "Trigonometrische Gleichungen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Der Definitionsbereich schließt x = 1 und x = -1 aus, da dort Nenner null werden. Der Hauptnenner ist (x - 1) · (x + 1) = x² - 1. Multiplikation der ganzen Gleichung mit dem Hauptnenner ergibt:\n(x + 1) + 2 · (x - 1) = 3\nx + 1 + 2x - 2 = 3\n3x - 1 = 3\n3x = 4\nx = 4/3.\nDa 4/3 im Definitionsbereich liegt, ist L = {4/3}.",
     "options": [
-      "L = {4/3}",
       "L = {0}",
       "L = {1}",
-      "L = {-1}"
+      "L = {-1}",
+      "L = {4/3}"
     ],
     "question": "Bestimme die Lösungsmenge der Bruchgleichung: 1/(x - 1) + 2/(x + 1) = 3/(x² - 1)",
     "topic": "Bruchgleichungen"
@@ -108,13 +108,13 @@
     "topic": "Exponentialgleichungen"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Mit der Substitution u = ln(x) wird die Gleichung zu u² - 3u + 2 = 0, also (u - 1) · (u - 2) = 0 mit u = 1 oder u = 2. Die Rücksubstitution ergibt ln(x) = 1, also x = e ≈ 2,72, und ln(x) = 2, also x = e² ≈ 7,39. Beide Werte sind positiv und liegen damit im Definitionsbereich des Logarithmus.",
     "options": [
       "x = 1 und x = 2",
+      "x = e und x = e²",
       "x = ln(1) und x = ln(2)",
-      "x = e² und x = e³",
-      "x = e und x = e²"
+      "x = e² und x = e³"
     ],
     "question": "Bestimme alle Lösungen der Gleichung (ln(x))² - 3 · ln(x) + 2 = 0.",
     "topic": "Logarithmusgleichungen (Substitution)"
@@ -132,23 +132,23 @@
     "topic": "Trigonometrische Gleichungen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Der Definitionsbereich verlangt x - 3 ≥ 0 und zusätzlich x - 5 ≥ 0, da eine Wurzel nie negativ ist; insgesamt also x ≥ 5. Quadrieren ergibt x - 3 = (x - 5)², also x - 3 = x² - 10x + 25 und damit x² - 11x + 28 = 0. Faktorisieren liefert (x - 4) · (x - 7) = 0, also x = 4 oder x = 7. Der Wert x = 4 erfüllt x ≥ 5 nicht und ist eine Scheinlösung. Es bleibt L = {7}.",
     "options": [
       "L = {4}",
-      "L = {7}",
       "L = {4; 7}",
-      "L = { }"
+      "L = { }",
+      "L = {7}"
     ],
     "question": "Welche Lösung(en) hat die Wurzelgleichung √(x - 3) = x - 5?",
     "topic": "Wurzelgleichungen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Der Definitionsbereich verlangt x - 1 > 0, also x > 1. Mit dem Logarithmusgesetz logₐ(M) + logₐ(N) = logₐ(M · N) wird die linke Seite zu log₂(3 · (x - 1)) = log₂(15). Da die Basen gleich sind, dürfen die Argumente gleichgesetzt werden: 3 · (x - 1) = 15, also x - 1 = 5 und damit x = 6. Der Wert erfüllt den Definitionsbereich.",
     "options": [
-      "x = 5",
       "x = 6",
+      "x = 5",
       "x = 7",
       "x = 8"
     ],
@@ -156,11 +156,11 @@
     "topic": "Logarithmusgleichungen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Man unterscheidet zwei Fälle:\nFall 1: 2x - 4 ≥ 0, also x ≥ 2. Dann gilt 2x - 4 = x + 1, also x = 5. Wegen 5 ≥ 2 ist x = 5 gültig.\nFall 2: 2x - 4 < 0, also x < 2. Dann gilt -(2x - 4) = x + 1, also -2x + 4 = x + 1 und damit 3 = 3x, also x = 1. Wegen 1 < 2 ist auch x = 1 gültig.\nDie Lösungsmenge ist L = {1; 5}.",
     "options": [
-      "L = {1; 5}",
       "L = {5}",
+      "L = {1; 5}",
       "L = {1}",
       "L = {-1; 5}"
     ],
@@ -168,25 +168,25 @@
     "topic": "Betragsgleichungen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Man bringt beide Seiten auf dieselbe Basis: 9 = 3², also 3^(x-1) = (3²)^(x-2) = 3^(2(x-2)). Da die Basen gleich sind, müssen die Exponenten übereinstimmen: x - 1 = 2 · (x - 2), also x - 1 = 2x - 4 und damit x = 3.",
     "options": [
       "x = 2",
-      "x = 3",
       "x = 4",
+      "x = 3",
       "x = 5"
     ],
     "question": "Löse die Gleichung 3^(x-1) = 9^(x-2) nach x auf.",
     "topic": "Exponentialgleichungen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Da x = 1 eine Lösung ist, ist (x - 1) ein Linearfaktor. Die Polynomdivision (x³ - 2x² - 5x + 6) : (x - 1) ergibt x² - x - 6. Die quadratische Gleichung x² - x - 6 = 0 lässt sich zu (x - 3) · (x + 2) = 0 faktorisieren, also x = 3 und x = -2. Die weiteren Lösungen sind damit L = {-2; 3}.",
     "options": [
       "L = {-1; 6}",
-      "L = {-2; 3}",
       "L = {2; -3}",
-      "L = {-6; 1}"
+      "L = {-6; 1}",
+      "L = {-2; 3}"
     ],
     "question": "Gegeben ist die Polynomgleichung x³ - 2x² - 5x + 6 = 0. Eine ganzzahlige Lösung ist x = 1. Finde alle anderen Lösungen.",
     "topic": "Polynomgleichungen höheren Grades"

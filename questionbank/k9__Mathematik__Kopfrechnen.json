@@ -1,12 +1,12 @@
 [
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "0,25 ist dasselbe wie 1/4. Man teilt 360 also durch 4: 360 : 4 = 90. Wer stattdessen mit 4 multipliziert, erhält 1440, wer 0,5 statt 0,25 nimmt, erhält 180.",
     "options": [
+      "90",
       "1440",
       "180",
-      "120",
-      "90"
+      "120"
     ],
     "question": "Was ist das Ergebnis von 0,25 multipliziert mit 360?",
     "topic": "Dezimalzahlen, Multiplikation"
@@ -24,47 +24,47 @@
     "topic": "Potenzen, Wurzeln"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Zuerst wird die Potenz berechnet: (3/4)² = 9/16, denn Zähler und Nenner werden quadriert. Dann wird multipliziert: (9/16) * 64 = 9 * 4 = 36. Zum Schluss wird subtrahiert: 36 - 10 = 26.",
     "options": [
-      "26",
       "36",
       "38",
+      "26",
       "134"
     ],
     "question": "Wie lautet das Ergebnis von (3/4)² multipliziert mit 64 minus 10?",
     "topic": "Bruchrechnung, Potenzen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "20 % von 120 Euro sind 0,20 * 120 = 24 Euro. Der neue Preis ist 120 Euro - 24 Euro = 96 Euro. Kürzer geht es über 80 % des alten Preises: 0,80 * 120 = 96 Euro.",
     "options": [
       "24 Euro",
-      "96 Euro",
       "100 Euro",
-      "144 Euro"
+      "144 Euro",
+      "96 Euro"
     ],
     "question": "Ein Artikel kostet ursprünglich 120 Euro. Der Preis wird um 20 % reduziert. Wie viel kostet der Artikel danach?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Zuerst wird die Differenz berechnet: 3 - 9 = -6. Dann wird multipliziert: -8 * (-6) = 48. Das Produkt zweier negativer Zahlen ist positiv.",
     "options": [
+      "48",
       "-48",
       "-24",
-      "24",
-      "48"
+      "24"
     ],
     "question": "Berechne: -8 multipliziert mit der Differenz aus 3 und 9.",
     "topic": "Negative Zahlen, Klammerrechnung"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Man zieht die Wurzeln teilweise: Wurzel aus 50 = Wurzel aus (25 * 2) = 5 * Wurzel aus 2. Wurzel aus 8 = Wurzel aus (4 * 2) = 2 * Wurzel aus 2. Die Differenz ist 5 * Wurzel aus 2 - 2 * Wurzel aus 2 = 3 * Wurzel aus 2. Die Radikanden dürfen nicht einfach subtrahiert werden.",
     "options": [
-      "3 mal Wurzel aus 2",
       "5 mal Wurzel aus 2",
+      "3 mal Wurzel aus 2",
       "7 mal Wurzel aus 2",
       "Wurzel aus 42"
     ],
@@ -72,25 +72,25 @@
     "topic": "Wurzelgesetze, Termumformung"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Hier hilft die dritte binomische Formel: a² - b² = (a - b) * (a + b). Also 35² - 25² = (35 - 25) * (35 + 25) = 10 * 60 = 600. Zur Kontrolle: 1225 - 625 = 600.",
     "options": [
       "3600",
       "1850",
-      "1225",
-      "600"
+      "600",
+      "1225"
     ],
     "question": "Was ist das Ergebnis von 35 zum Quadrat minus 25 zum Quadrat?",
     "topic": "Binomische Formeln"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Alle Terme mit x kommen auf eine Seite, die Zahlen auf die andere: 7x - 3x = 8 + 12, also 4x = 20. Division durch 4 ergibt x = 5.",
     "options": [
       "-1",
       "2",
-      "5",
-      "20"
+      "20",
+      "5"
     ],
     "question": "Welche Zahl löst die Gleichung: 7x - 12 = 3x + 8?",
     "topic": "Lineare Gleichungen"
@@ -108,37 +108,37 @@
     "topic": "Grundrechenarten mit ganzen Zahlen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Punkt vor Strich: Zuerst wird multipliziert, 1/4 * 2 = 2/4 = 1/2. Anschließend wird addiert: 1/2 + 1/2 = 1. Wer zuerst addiert, erhält (1/2 + 1/4) * 2 = 3/2.",
     "options": [
       "5/8",
-      "3/4",
       "1",
+      "3/4",
       "3/2"
     ],
     "question": "Berechne den Wert des Ausdrucks: 1/2 + 1/4 * 2",
     "topic": "Bruchrechnung und Rechenregeln"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Nach einer Erhöhung um 20 % entsprechen 72 Euro genau 120 % des alten Preises. 10 % sind also 72 : 12 = 6 Euro, und 100 % sind 10 * 6 = 60 Euro. Zur Probe: 60 * 1,2 = 72.",
     "options": [
       "86,40 Euro",
-      "60,00 Euro",
       "57,60 Euro",
+      "60,00 Euro",
       "52,00 Euro"
     ],
     "question": "Ein Produkt kostet nach einer Preiserhöhung von 20 % nun 72 Euro. Wie viel kostete es ursprünglich?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die Quadratwurzel von 144 ist 12, denn 12 * 12 = 144. Dann wird 12 mit 3 multipliziert: 12 * 3 = 36.",
     "options": [
       "15",
-      "36",
       "72",
-      "432"
+      "432",
+      "36"
     ],
     "question": "Was ist die Quadratwurzel von 144, multipliziert mit 3?",
     "topic": "Quadratwurzeln und Multiplikation"
@@ -156,37 +156,37 @@
     "topic": "Rechnen mit negativen Zahlen und Klammerregeln"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Mit der dritten binomischen Formel: (a + b)(a - b) = a² - b². Hier ist a = 20 und b = 3, also 23 * 17 = (20 + 3)(20 - 3) = 400 - 9 = 391.",
     "options": [
       "409",
-      "400",
       "391",
+      "400",
       "340"
     ],
     "question": "Berechne 23 * 17.",
     "topic": "Multiplikationsstrategien (Binomische Formeln)"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "25 % von 80 Euro sind 0,25 * 80 = 20 Euro Rabatt. Vom Preis abgezogen: 80 Euro - 20 Euro = 60 Euro. Kürzer über 75 % des Preises: 0,75 * 80 = 60 Euro.",
     "options": [
       "100 Euro",
-      "60 Euro",
       "55 Euro",
+      "60 Euro",
       "20 Euro"
     ],
     "question": "Ein Artikel kostet 80 Euro. Wenn du 25 % Rabatt erhältst, wie viel Euro bezahlst du dann?",
     "topic": "Prozentrechnung und Rabatt"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Zuerst die Potenz und die Wurzel: 3³ = 27 und √25 = 5. In der Klammer bleibt 27 - 5 = 22. Danach die Division: 22 : 2 = 11. Zuletzt die Addition: 11 + 1 = 12.",
     "options": [
       "3",
       "11",
-      "12",
-      "23"
+      "23",
+      "12"
     ],
     "question": "Berechne: (3³ - √25) / 2 + 1",
     "topic": "Potenzen, Wurzeln und Punkt-vor-Strich-Regel"

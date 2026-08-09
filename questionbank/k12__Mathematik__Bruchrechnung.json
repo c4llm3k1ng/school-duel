@@ -12,11 +12,11 @@
     "topic": "Definitionsbereich von Bruchtermen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Der Zähler x² - 4x + 4 ist eine binomische Formel und lässt sich als (x - 2)² schreiben. Der Term wird damit zu (x - 2)²/(x - 2). Kürzen eines Faktors (x - 2) liefert x - 2, wobei x ≠ 2 vorausgesetzt werden muss.",
     "options": [
-      "x - 2",
       "x + 2",
+      "x - 2",
       "1/(x - 2)",
       "(x - 2)²"
     ],
@@ -24,25 +24,25 @@
     "topic": "Vereinfachen von Bruchtermen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Der Hauptnenner ist x(x + 1). Der erste Bruch wird zu 3x/(x(x + 1)), der zweite zu 2(x + 1)/(x(x + 1)). Die Subtraktion ergibt (3x - 2(x + 1))/(x(x + 1)) = (3x - 2x - 2)/(x(x + 1)) = (x - 2)/(x(x + 1)), gültig für x ≠ 0 und x ≠ -1.",
     "options": [
-      "(x - 2)/(x(x + 1))",
       "(x + 2)/(x(x + 1))",
       "1/(x(x + 1))",
+      "(x - 2)/(x(x + 1))",
       "(5x - 2)/(x(x + 1))"
     ],
     "question": "Fassen Sie zu einem Bruch zusammen und vereinfachen Sie: 3/(x + 1) - 2/x",
     "topic": "Addition und Subtraktion von Bruchtermen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Division durch einen Bruch bedeutet Multiplikation mit dem Kehrwert: (x + 2)/(x - 3) · (x² - 9)/(x² - 4). Mit x² - 9 = (x - 3)(x + 3) und x² - 4 = (x - 2)(x + 2) lassen sich die Faktoren (x + 2) und (x - 3) kürzen. Übrig bleibt (x + 3)/(x - 2).",
     "options": [
-      "(x + 3)/(x - 2)",
       "(x - 3)/(x + 2)",
       "(x - 2)/(x + 3)",
-      "1"
+      "1",
+      "(x + 3)/(x - 2)"
     ],
     "question": "Dividieren Sie die Bruchterme und vereinfachen Sie das Ergebnis: (x + 2)/(x - 3) : (x² - 4)/(x² - 9)",
     "topic": "Multiplikation und Division von Bruchtermen"
@@ -72,35 +72,35 @@
     "topic": "Bruchgleichungen und Scheinlösungen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Für die Partialbruchzerlegung wird der Nenner faktorisiert: x² - x = x(x - 1). Da zwei verschiedene lineare Faktoren vorliegen, setzt man für jeden Faktor einen Bruch mit konstantem Zähler an. Der korrekte Ansatz lautet daher A/x + B/(x - 1).",
     "options": [
-      "A/x + B/(x - 1)",
       "A/x² + B/x",
       "(A + B)/(x² - x)",
+      "A/x + B/(x - 1)",
       "A/x + B/(x + 1)"
     ],
     "question": "Welcher Ansatz ist für die Partialbruchzerlegung des Ausdrucks (x + 1)/(x² - x) korrekt?",
     "topic": "Partialbruchzerlegung (Ansatz)"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Ein negativer Exponent bedeutet den Kehrwert: x⁻¹ = 1/x und (xy)⁻¹ = 1/(xy). Der Hauptnenner ist xy, also wird 1/x zu y/(xy) erweitert. Die Addition ergibt y/(xy) + 1/(xy) = (y + 1)/(xy).",
     "options": [
-      "(y + 1)/(xy)",
       "1/(x + xy)",
       "(x + y)/(xy)",
-      "xy/(x + y)"
+      "xy/(x + y)",
+      "(y + 1)/(xy)"
     ],
     "question": "Formen Sie den Ausdruck x⁻¹ + (xy)⁻¹ so um, dass er als ein einziger Bruch dargestellt wird.",
     "topic": "Termumformung mit negativen Exponenten"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Multipliziert man die Gleichung mit (x - 3)(x + 2), erhält man 5 = A(x + 2) + B(x - 3). Einsetzen von x = 3 liefert 5 = 5A, also A = 1. Einsetzen von x = -2 liefert 5 = -5B, also B = -1. Die Zerlegung lautet somit 1/(x - 3) - 1/(x + 2).",
     "options": [
-      "A = -1, B = 1",
       "A = 1, B = -1",
+      "A = -1, B = 1",
       "A = 5, B = -5",
       "A = 5, B = 5"
     ],
@@ -108,37 +108,37 @@
     "topic": "Partialbruchzerlegung (Berechnung)"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Wegen x² - 1 = (x - 1)(x + 1) ist der Hauptnenner (x - 1)(x + 1). Der erste Bruch wird zu (x + 1)/((x - 1)(x + 1)). Es folgt (x + 1 - 2)/((x - 1)(x + 1)) = (x - 1)/((x - 1)(x + 1)). Kürzen von (x - 1) ergibt 1/(x + 1), gültig für x ≠ 1 und x ≠ -1.",
     "options": [
       "1/(x - 1)",
-      "3/(x² - 1)",
       "1/(x + 1)",
+      "3/(x² - 1)",
       "(x + 3)/(x² - 1)"
     ],
     "question": "Fassen Sie zusammen und kürzen Sie so weit wie möglich: 1/(x - 1) - 2/(x² - 1)",
     "topic": "Addition und Subtraktion von Bruchtermen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Bei der Multiplikation werden Zähler mit Zähler und Nenner mit Nenner multipliziert: (3x · y²)/(y · 6x²) = 3xy²/(6x²y). Kürzen von 3, von x und von y ergibt y/(2x), gültig für x ≠ 0 und y ≠ 0.",
     "options": [
-      "y/(2x)",
       "2x/y",
       "y/(3x)",
+      "y/(2x)",
       "1/(2x)"
     ],
     "question": "Multiplizieren Sie die Terme: (3x/y) · (y²/(6x²))",
     "topic": "Multiplikation rationaler Ausdrücke"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Division durch einen Bruch bedeutet Multiplikation mit dem Kehrwert: ((x + 3)/(x² - 9)) · (x - 3). Wegen x² - 9 = (x - 3)(x + 3) kürzen sich (x + 3) und (x - 3) vollständig heraus, sodass 1 übrig bleibt. Vorausgesetzt wird x ≠ 3 und x ≠ -3.",
     "options": [
-      "1",
       "x - 3",
       "x + 3",
-      "1/(x + 3)"
+      "1/(x + 3)",
+      "1"
     ],
     "question": "Vereinfachen Sie den folgenden Ausdruck: ((x + 3)/(x² - 9)) : (1/(x - 3))",
     "topic": "Division rationaler Ausdrücke"
@@ -156,11 +156,11 @@
     "topic": "Lösen von Bruchgleichungen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Zähler und Nenner werden zuerst getrennt zusammengefasst: a/b + 1 = (a + b)/b und b/a + 1 = (a + b)/a. Die Division der beiden Brüche erfolgt über den Kehrwert: ((a + b)/b) · (a/(a + b)) = a/b, wobei a ≠ 0, b ≠ 0 und a + b ≠ 0 gelten muss.",
     "options": [
-      "a/b",
       "b/a",
+      "a/b",
       "(a + b)/(ab)",
       "a²/b²"
     ],
@@ -180,13 +180,13 @@
     "topic": "Definitionsmenge und Nullstellen rationaler Funktionen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Negative Exponenten bedeuten Kehrwerte: x⁻¹ = 1/x, y⁻¹ = 1/y und (xy)⁻¹ = 1/(xy). Der Zähler wird zu (y + x)/(xy). Die Division durch 1/(xy) entspricht der Multiplikation mit xy, also ((x + y)/(xy)) · xy = x + y, gültig für x ≠ 0 und y ≠ 0.",
     "options": [
-      "x + y",
       "1/(x + y)",
       "xy/(x + y)",
-      "(x + y)/(xy)"
+      "(x + y)/(xy)",
+      "x + y"
     ],
     "question": "Vereinfachen Sie den Ausdruck: (x⁻¹ + y⁻¹)/(xy)⁻¹",
     "topic": "Vereinfachen von Termen mit negativen Exponenten"

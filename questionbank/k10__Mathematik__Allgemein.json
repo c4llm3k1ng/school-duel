@@ -1,58 +1,58 @@
 [
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Mit der pq-Formel (p = -6, q = 8): x = 3 ± √(9 - 8) = 3 ± 1. Also x₁ = 2 und x₂ = 4. In Produktform: x² - 6x + 8 = (x - 2)(x - 4). Probe: 2² - 6·2 + 8 = 0 und 4² - 6·4 + 8 = 0.",
     "options": [
+      "x₁ = 2 und x₂ = 4",
       "x₁ = 1 und x₂ = 8",
       "x₁ = -2 und x₂ = -4",
-      "x₁ = 2 und x₂ = 4",
       "x₁ = -1 und x₂ = -8"
     ],
     "question": "Welche Lösungen hat die quadratische Gleichung x² - 6x + 8 = 0?",
     "topic": "Quadratische Gleichungen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Die Formel für den Zinseszins ist Kₙ = K₀ · (1 + p/100)ⁿ. Hier ist K₀ = 2000, p = 2 und n = 3. Also: K₃ = 2000 · 1,02³ = 2000 · 1,061208 = 2122,416 Euro. Gerundet auf zwei Dezimalstellen sind das 2122,42 Euro.",
     "options": [
       "2120,00 Euro",
-      "2121,20 Euro",
       "2122,42 Euro",
+      "2121,20 Euro",
       "2124,24 Euro"
     ],
     "question": "Ein Kapital von 2000 Euro wird für 3 Jahre zu einem jährlichen Zinssatz von 2 % angelegt. Wie hoch ist das Kapital nach 3 Jahren, wenn die Zinsen jährlich dem Kapital zugeschlagen werden (Zinseszins)?",
     "topic": "Finanzmathematik (Zinseszins)"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Man verwendet den Sinussatz: a / sin(Alpha) = b / sin(Beta). Einsetzen: 10 / sin(30°) = b / sin(45°). Daraus folgt b = 10 · sin(45°) / sin(30°) = 10 · 0,7071 / 0,5 = 7,071 / 0,5 = 14,142 cm. Gerundet 14,14 cm.",
     "options": [
       "12,25 cm",
-      "14,14 cm",
       "17,32 cm",
+      "14,14 cm",
       "18,66 cm"
     ],
     "question": "In einem Dreieck ABC sind die Seite a = 10 cm, der Winkel Alpha = 30 Grad und der Winkel Beta = 45 Grad gegeben. Wie lang ist die Seite b? (Runde auf zwei Dezimalstellen)",
     "topic": "Trigonometrie (Sinussatz)"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "2 Stunden sind 120 Minuten, das ergibt 120 / 20 = 6 Verdopplungsperioden. Für Verdopplung gilt N = N₀ · 2ᵏ mit k als Anzahl der Verdopplungen. Also: 500 · 2⁶ = 500 · 64 = 32.000 Bakterien.",
     "options": [
       "16.000",
-      "32.000",
       "64.000",
-      "128.000"
+      "128.000",
+      "32.000"
     ],
     "question": "Eine Bakterienkultur verdoppelt ihre Anzahl alle 20 Minuten. Wenn zu Beginn 500 Bakterien vorhanden sind, wie viele Bakterien sind nach 2 Stunden vorhanden?",
     "topic": "Exponentialfunktionen (Wachstum)"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Gleichung II nach y auflösen: y = 4x - 5. Einsetzen in I: 3x + 2·(4x - 5) = 12, also 3x + 8x - 10 = 12 und damit 11x = 22, also x = 2. Daraus folgt y = 4·2 - 5 = 3. Probe: 3·2 + 2·3 = 12 und 4·2 - 3 = 5.",
     "options": [
-      "(3; 2)",
       "(2; 3)",
+      "(3; 2)",
       "(4; 0)",
       "(1; -1)"
     ],
@@ -84,13 +84,13 @@
     "topic": "Stochastik (Wahrscheinlichkeit ohne Zurücklegen)"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Bei einer Wurzelfunktion darf der Ausdruck unter der Wurzel nicht negativ sein, da die Wurzel aus einer negativen Zahl im Bereich der reellen Zahlen nicht definiert ist. Daher muss x - 4 ≥ 0 gelten. Löst man dies nach x auf, erhält man x ≥ 4. Für x = 4 ist f(4) = 0 definiert, die 4 gehört also dazu.",
     "options": [
       "D = {x | x > 4}",
       "D = {x | x < 4}",
-      "D = {x | x ≥ 4}",
-      "D = {x | x ≤ 4}"
+      "D = {x | x ≤ 4}",
+      "D = {x | x ≥ 4}"
     ],
     "question": "Gegeben ist die Funktion f(x) = √(x - 4). Was ist der größtmögliche Definitionsbereich für diese Funktion?",
     "topic": "Funktionen (Definitionsbereich)"
@@ -108,24 +108,24 @@
     "topic": "Quadratische Funktionen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Quadratische Ergänzung: x² - 4x + 7 = (x² - 4x + 4) - 4 + 7 = (x - 2)² + 3. In der Scheitelpunktform f(x) = (x - d)² + e liest man den Scheitelpunkt S(d | e) ab, hier also S(2 | 3). Kontrolle: f(2) = 4 - 8 + 7 = 3.",
     "options": [
       "S(-2 | 3)",
-      "S(2 | 11)",
       "S(2 | 3)",
+      "S(2 | 11)",
       "S(-2 | 11)"
     ],
     "question": "Welchen Scheitelpunkt hat die Parabel f(x) = x² - 4x + 7?",
     "topic": "Quadratische Funktionen (Scheitelpunkt)"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Zur Berechnung der Seite c verwendet man den Kosinussatz: c² = a² + b² - 2ab · cos(γ). Eingesetzt: c² = 5² + 7² - 2·5·7·cos(60°). Da cos(60°) = 0,5 ist, folgt c² = 25 + 49 - 70·0,5 = 74 - 35 = 39. Somit ist c = √39 cm ≈ 6,24 cm.",
     "options": [
       "√29 cm",
-      "√39 cm",
       "√74 cm",
+      "√39 cm",
       "√109 cm"
     ],
     "question": "In einem Dreieck ABC sind die Seitenlängen a = 5 cm, b = 7 cm und der eingeschlossene Winkel Gamma (γ) = 60° gegeben. Wie lang ist die Seite c?",
@@ -180,13 +180,13 @@
     "topic": "Lineare Gleichungssysteme"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Der Ausdruck log₂(16) fragt danach, mit welchem Exponenten man die Basis 2 potenzieren muss, um 16 zu erhalten. Gesucht ist also x in 2ˣ = 16. Wegen 2·2·2·2 = 16 gilt 2⁴ = 16 und damit log₂(16) = 4.",
     "options": [
       "2",
-      "4",
       "8",
-      "16"
+      "16",
+      "4"
     ],
     "question": "Welchen Wert hat log₂(16)?",
     "topic": "Logarithmen"

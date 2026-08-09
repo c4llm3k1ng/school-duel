@@ -24,36 +24,36 @@
     "topic": "Skalarprodukt und Winkel"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Die Richtungsvektoren sind u = (1|0|0) und v = (0|0|1). Ein gemeinsamer Normalenvektor ist n = u × v = (0|−1|0) mit |n| = 1. Der Verbindungsvektor der Aufpunkte ist P₁P₂ = (0|1|0). Damit ist der Abstand d = |P₁P₂ · n| / |n| = |0·0 + 1·(−1) + 0·0| / 1 = 1.",
     "options": [
       "0",
-      "1",
       "√2",
+      "1",
       "2"
     ],
     "question": "Gegeben sind die Geraden g₁: x = (0|0|0) + t · (1|0|0) und g₂: x = (0|1|0) + s · (0|0|1). Bestimme den kürzesten Abstand dieser windschiefen Geraden.",
     "topic": "Abstand windschiefer Geraden"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Zwei Spannvektoren sind PQ = (−1|1|0) und PR = (−1|0|1). Das Kreuzprodukt liefert den Normalenvektor n = PQ × PR = (1|1|1), also lautet die Koordinatenform x + y + z = d. Einsetzen von P(1|0|0) ergibt d = 1, somit x + y + z = 1.",
     "options": [
-      "x + y + z = 1",
       "x + y + z = 0",
       "x − y + z = 1",
-      "x + y − z = 1"
+      "x + y − z = 1",
+      "x + y + z = 1"
     ],
     "question": "Bestimme die Koordinatenform der Ebene E, die durch die Punkte P(1|0|0), Q(0|1|0) und R(0|0|1) verläuft.",
     "topic": "Ebenengleichungen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Der Flächeninhalt des aufgespannten Parallelogramms ist der Betrag des Kreuzprodukts: A = |a × b|. Hier ist a × b = (1·0 − 0·2 | 0·1 − 2·0 | 2·2 − 1·1) = (0|0|3) und damit A = √(0² + 0² + 3²) = 3.",
     "options": [
+      "3",
       "1",
       "2",
-      "3",
       "4"
     ],
     "question": "Ein Parallelogramm wird von den Vektoren a = (2|1|0) und b = (1|2|0) aufgespannt. Welchen Flächeninhalt hat dieses Parallelogramm?",
@@ -72,36 +72,36 @@
     "topic": "Schnittpunkt Gerade-Ebene"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Die Ebene E: z = 0 ist die x-y-Ebene. Bei der Spiegelung daran bleiben x- und y-Koordinate unverändert, nur die z-Koordinate wechselt das Vorzeichen. Der Spiegelpunkt ist somit P'(1|2|−3).",
     "options": [
-      "(1|2|−3)",
       "(−1|−2|−3)",
       "(1|−2|3)",
+      "(1|2|−3)",
       "(−1|2|3)"
     ],
     "question": "Gegeben ist der Punkt P(1|2|3) und die Ebene E: z = 0. Bestimme die Koordinaten des Spiegelpunktes P' von P an der Ebene E.",
     "topic": "Spiegelung an einer Ebene"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Für das Tetraedervolumen gilt V = 1/6 · |(u × v) · w| mit u = AB = (1|0|0), v = AC = (0|1|0) und w = AD = (0|0|1). Es ist u × v = (0|0|1) und (0|0|1) · (0|0|1) = 1, also V = 1/6 · 1 = 1/6.",
     "options": [
-      "1/6",
       "1/3",
       "1/2",
-      "1"
+      "1",
+      "1/6"
     ],
     "question": "Ein Tetraeder wird durch die Eckpunkte A(0|0|0), B(1|0|0), C(0|1|0) und D(0|0|1) festgelegt. Welches Volumen hat dieser Tetraeder?",
     "topic": "Spatprodukt und Volumenberechnung"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Der Abstand zweier Punkte ist d = √((x₂−x₁)² + (y₂−y₁)² + (z₂−z₁)²). Hier ergibt sich d = √((4−1)² + (6−2)² + (3−3)²) = √(3² + 4² + 0²) = √(9 + 16) = √25 = 5.",
     "options": [
+      "5",
       "3",
       "4",
-      "5",
       "6"
     ],
     "question": "Bestimme den Abstand zwischen den Punkten P(1|2|3) und Q(4|6|3) im dreidimensionalen Raum.",
@@ -120,25 +120,25 @@
     "topic": "Skalarprodukt und Orthogonalität"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Da die Punkte auf den Koordinatenachsen liegen, lässt sich die Achsenabschnittsform x/a + y/b + z/c = 1 nutzen. Mit a = 1, b = 2 und c = 3 folgt x/1 + y/2 + z/3 = 1. Multiplikation mit dem Hauptnenner 6 ergibt 6x + 3y + 2z = 6.",
     "options": [
-      "6x + 3y + 2z = 6",
       "3x + 2y + z = 6",
       "x + y + z = 1",
+      "6x + 3y + 2z = 6",
       "2x + 3y + 6z = 6"
     ],
     "question": "Eine Ebene E verläuft durch die Punkte A(1|0|0), B(0|2|0) und C(0|0|3). Welche Gleichung beschreibt diese Ebene?",
     "topic": "Ebenengleichung (Achsenabschnittsform)"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die x-y-Ebene ist durch z = 0 gekennzeichnet. Aus 3 + t·(−1) = 0 folgt t = 3. Einsetzen liefert x = 1 + 3·1 = 4, y = 2 + 3·(−1) = −1 und z = 0. Der Schnittpunkt ist also (4|−1|0).",
     "options": [
       "(1|2|0)",
-      "(4|−1|0)",
       "(0|3|4)",
-      "(3|0|1)"
+      "(3|0|1)",
+      "(4|−1|0)"
     ],
     "question": "Gegeben ist die Gerade g: x = (1|2|3) + t · (1|−1|−1). Bestimme den Schnittpunkt dieser Geraden mit der x-y-Ebene.",
     "topic": "Schnittpunkt Gerade-Ebene"
@@ -168,25 +168,25 @@
     "topic": "Lagebeziehung Gerade-Ebene"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Der Betrag eines Vektors v = (x|y|z) ist |v| = √(x² + y² + z²). Hier ergibt sich |v| = √(2² + (−1)² + 2²) = √(4 + 1 + 4) = √9 = 3. Der Wert 9 entsteht, wenn man das Ziehen der Wurzel vergisst.",
     "options": [
       "√5",
-      "3",
       "4",
+      "3",
       "9"
     ],
     "question": "Berechne den Betrag des Vektors v = (2|−1|2).",
     "topic": "Betrag eines Vektors"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Mit der Hesseschen Normalenform gilt d = |A·x_P + B·y_P + C·z_P − D| / √(A² + B² + C²). Hier ist √(2² + (−2)² + 1²) = √9 = 3 und der Zähler |2·4 − 2·5 + 1·6 − 1| = |8 − 10 + 6 − 1| = 3. Damit ist d = 3 / 3 = 1.",
     "options": [
       "0",
-      "1",
       "2",
-      "3"
+      "3",
+      "1"
     ],
     "question": "Berechne den Abstand des Punktes P(4|5|6) zur Ebene E: 2x − 2y + z = 1.",
     "topic": "Abstand Punkt-Ebene"
@@ -204,60 +204,60 @@
     "topic": "Vektoren"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Für den Flächeninhalt eines Dreiecks gilt A = 1/2 · |AB × AC| mit AB = (2|1|0) und AC = (1|3|2). Das Kreuzprodukt ist AB × AC = (1·2 − 0·3 | 0·1 − 2·2 | 2·3 − 1·1) = (2|−4|5) mit dem Betrag √(4 + 16 + 25) = √45 = 3·√5. Damit ist A = 1,5·√5 ≈ 3,35. Der Wert 3·√5 entsteht, wenn man den Faktor 1/2 vergisst.",
     "options": [
       "3·√5",
-      "6·√5",
       "1,5·√5",
+      "6·√5",
       "0,75·√5"
     ],
     "question": "Welchen Flächeninhalt hat das Dreieck mit den Eckpunkten A(1|1|1), B(3|2|1) und C(2|4|3)?",
     "topic": "Kreuzprodukt und Dreiecksfläche"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Der Einheitsvektor entsteht durch Normieren: e = v / |v|. Wegen |v| = √(1² + 2² + (−2)²) = √9 = 3 ist e = 1/3 · (1|2|−2) = (1/3 | 2/3 | −2/3). Teilt man versehentlich durch |v|² = 9, erhält man (1/9 | 2/9 | −2/9); multipliziert man statt zu dividieren, erhält man (3|6|−6).",
     "options": [
       "(1/9 | 2/9 | −2/9)",
       "(3 | 6 | −6)",
-      "(1/2 | 1 | −1)",
-      "(1/3 | 2/3 | −2/3)"
+      "(1/3 | 2/3 | −2/3)",
+      "(1/2 | 1 | −1)"
     ],
     "question": "Bestimme den Einheitsvektor, der dieselbe Richtung hat wie v = (1|2|−2).",
     "topic": "Vektoren"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Zwei Vektoren stehen genau dann senkrecht aufeinander, wenn ihr Skalarprodukt null ist. Hier ist v · w = a·3 + 2·a + (−1)·5 = 5a − 5. Aus 5a − 5 = 0 folgt a = 1. Für a = −1 ergibt sich −10, für a = 0 ergibt sich −5, für a = 5 ergibt sich 20.",
     "options": [
-      "a = 1",
       "a = −1",
       "a = 0",
-      "a = 5"
+      "a = 5",
+      "a = 1"
     ],
     "question": "Für welchen Wert von a stehen die Vektoren v = (a|2|−1) und w = (3|a|5) senkrecht aufeinander?",
     "topic": "Skalarprodukt und Orthogonalität"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Es gilt cos(φ) = (a · b) / (|a| · |b|). Mit a · b = 2·0 + 2·3 + 1·4 = 10, |a| = √9 = 3 und |b| = √25 = 5 folgt cos(φ) = 10/15 = 2/3 und damit φ ≈ 48,2°. Verwechselt man Sinus und Kosinus, erhält man den Komplementwinkel 41,8°; ein Vorzeichenfehler führt auf 131,8°.",
     "options": [
+      "ca. 48,2°",
       "ca. 41,8°",
       "ca. 70,5°",
-      "ca. 131,8°",
-      "ca. 48,2°"
+      "ca. 131,8°"
     ],
     "question": "Welchen Winkel schließen die Vektoren a = (2|2|1) und b = (0|3|4) ein?",
     "topic": "Skalarprodukt und Winkel"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Für das Kreuzprodukt gilt a × b = (a₂b₃ − a₃b₂ | a₃b₁ − a₁b₃ | a₁b₂ − a₂b₁). Hier ergibt sich (2·6 − 3·5 | 3·4 − 1·6 | 1·5 − 2·4) = (−3|6|−3). Der Vektor (3|−6|3) ist das Ergebnis von b × a, und (−3|−6|−3) entsteht durch einen Vorzeichenfehler in der mittleren Komponente.",
     "options": [
       "(3|−6|3)",
-      "(−3|−6|−3)",
       "(−3|6|−3)",
+      "(−3|−6|−3)",
       "(4|10|18)"
     ],
     "question": "Berechne das Kreuzprodukt a × b der Vektoren a = (1|2|3) und b = (4|5|6).",
@@ -276,25 +276,25 @@
     "topic": "Abstand Punkt-Gerade"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Für den Schnittwinkel zwischen Gerade und Ebene gilt sin(α) = |u · n| / (|u| · |n|) mit u = (2|−1|2) und n = (1|2|2). Es ist u · n = 2 − 2 + 4 = 4 sowie |u| = |n| = 3, also sin(α) = 4/9 und α ≈ 26,4°. Nutzt man versehentlich den Kosinus, erhält man den Komplementwinkel 63,6°.",
     "options": [
       "ca. 63,6°",
-      "ca. 26,4°",
       "ca. 12,8°",
-      "ca. 90,0°"
+      "ca. 90,0°",
+      "ca. 26,4°"
     ],
     "question": "Welchen Schnittwinkel schließt die Gerade g: x = (0|1|1) + t · (2|−1|2) mit der Ebene E: x + 2y + 2z = 7 ein?",
     "topic": "Winkel Gerade-Ebene"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Die Richtungsvektoren sind (1|1|1) und (2|2|2) = 2 · (1|1|1), also parallel. Der Aufpunkt (2|1|3) von h liegt nicht auf g: aus 1 + t = 2 folgt t = 1, was auf (2|3|1) statt (2|1|3) führt. Die Geraden sind daher echt parallel und nicht identisch.",
     "options": [
+      "Sie sind echt parallel und nicht identisch.",
       "Sie sind identisch, also deckungsgleich.",
       "Sie schneiden sich in genau einem Punkt.",
-      "Sie sind windschief, also nicht parallel.",
-      "Sie sind echt parallel und nicht identisch."
+      "Sie sind windschief, also nicht parallel."
     ],
     "question": "Wie liegen die Geraden g: x = (1|2|0) + t · (1|1|1) und h: x = (2|1|3) + s · (2|2|2) zueinander?",
     "topic": "Lagebeziehung zweier Geraden"
@@ -336,23 +336,23 @@
     "topic": "Ebenengleichungen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Ein Normalenvektor steht senkrecht auf beiden Spannvektoren, man erhält ihn als Kreuzprodukt: u × v = (2·3 − (−1)·0 | (−1)·2 − 1·3 | 1·0 − 2·2) = (6|−5|−4). Probe: u · n = 6 − 10 + 4 = 0 und v · n = 12 + 0 − 12 = 0.",
     "options": [
+      "(6|−5|−4)",
       "(6|5|−4)",
       "(3|2|2)",
-      "(6|−5|−4)",
       "(6|−5|4)"
     ],
     "question": "Die Ebene E wird von u = (1|2|−1) und v = (2|0|3) aufgespannt. Welcher Vektor steht senkrecht auf E?",
     "topic": "Ebenen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Die Koordinatenform lautet n₁·x₁ + n₂·x₂ + n₃·x₃ = d. Der Wert d ergibt sich durch Einsetzen des Aufpunktes: d = n · OA = 2·4 + (−3)·1 + 1·2 = 8 − 3 + 2 = 7.",
     "options": [
-      "2x₁ − 3x₂ + x₃ = 7",
       "2x₁ − 3x₂ + x₃ = 3",
+      "2x₁ − 3x₂ + x₃ = 7",
       "2x₁ − 3x₂ + x₃ = 13",
       "2x₁ − 3x₂ + x₃ = −7"
     ],
@@ -360,25 +360,25 @@
     "topic": "Ebenen"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Man setzt die Koordinaten in die linke Seite ein: 3·2 − 0 + 2·3 = 12, die Gleichung ist erfüllt. Die anderen Punkte liefern 8, 10 und 10 und liegen damit nicht in E.",
     "options": [
       "(0|2|5)",
       "(3|1|1)",
-      "(1|−3|2)",
-      "(2|0|3)"
+      "(2|0|3)",
+      "(1|−3|2)"
     ],
     "question": "Welcher Punkt liegt in der Ebene E: 3x₁ − x₂ + 2x₃ = 12?",
     "topic": "Ebenen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Abstand über die Hessesche Normalform: d = |n · OP − d| / |n|. Hier ist n · OP = 2·4 + 2·2 − 1 = 11 und |n| = √(4 + 4 + 1) = 3, also d = |11 − 5| / 3 = 2. Wer die Division durch |n| vergisst, erhält 6.",
     "options": [
       "6",
-      "2",
       "11/3",
-      "16/3"
+      "16/3",
+      "2"
     ],
     "question": "Welchen Abstand hat der Punkt P(4|2|1) von der Ebene E: 2x₁ + 2x₂ − x₃ = 5?",
     "topic": "Abstände"
@@ -396,49 +396,49 @@
     "topic": "Kreuzprodukt"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Der Flächeninhalt ist |a × b|. Es gilt a × b = (4 + 2 | 1 − 4 | −4 − 2) = (6|−3|−6) mit |a × b| = √(36 + 9 + 36) = √81 = 9. Der Wert 4,5 wäre die Dreiecksfläche, der Wert 0 das Skalarprodukt.",
     "options": [
       "18",
+      "9",
       "4,5",
-      "0",
-      "9"
+      "0"
     ],
     "question": "Welchen Flächeninhalt hat das von a = (2|2|1) und b = (1|−2|2) aufgespannte Parallelogramm?",
     "topic": "Kreuzprodukt"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Das Volumen ist der Betrag des Spatprodukts a · (b × c). Zuerst b × c = (1·1 − 0·2 | 0·0 − 3·1 | 3·2 − 1·0) = (1|−3|6), dann a · (1|−3|6) = 1 + 0 + 12 = 13. Ein Sechstel davon (etwa 2,17) wäre das zugehörige Tetraedervolumen.",
     "options": [
       "6,5",
-      "13",
       "26",
+      "13",
       "11"
     ],
     "question": "Welches Volumen hat der von a = (1|0|2), b = (3|1|0) und c = (0|2|1) aufgespannte Spat?",
     "topic": "Kreuzprodukt"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Normalenvektor als Kreuzprodukt der Spannvektoren: (1|1|0) × (0|1|1) = (1|−1|1). Einsetzen des Aufpunktes liefert d = 1 − 0 + 2 = 3, also E: x₁ − x₂ + x₃ = 3.",
     "options": [
       "x₁ + x₂ + x₃ = 3",
       "x₁ − x₂ + x₃ = 1",
-      "x₁ − x₂ + x₃ = 3",
-      "x₁ − x₂ − x₃ = −1"
+      "x₁ − x₂ − x₃ = −1",
+      "x₁ − x₂ + x₃ = 3"
     ],
     "question": "Die Ebene E ist gegeben durch x = (1|0|2) + s·(1|1|0) + t·(0|1|1). Wie lautet ihre Koordinatenform?",
     "topic": "Ebenen"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Die Richtungsvektoren sind nicht linear abhängig, also kommen nur schneidend oder windschief infrage. Die dritte Zeile liefert t = 1, die zweite s = −1, und die erste Zeile ist damit erfüllt. Das Gleichungssystem ist lösbar, der Schnittpunkt lautet (2|3|1).",
     "options": [
+      "Sie schneiden sich in S(2|3|1)",
       "Sie verlaufen zueinander parallel",
       "Sie sind identisch, also deckungsgleich",
-      "Sie sind windschief zueinander",
-      "Sie schneiden sich in S(2|3|1)"
+      "Sie sind windschief zueinander"
     ],
     "question": "Wie liegen g: x = (1|2|0) + t·(1|1|1) und h: x = (4|2|1) + s·(2|−1|0) zueinander?",
     "topic": "Geraden"
@@ -468,23 +468,23 @@
     "topic": "Flächen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Bei AT : TB = 2 : 1 gilt OT = OA + (2/3)·AB. Mit AB = (6|−6|6) folgt (2/3)·AB = (4|−4|4) und OT = (1+4 | 2−4 | 3+4) = (5|−2|7). Der Punkt (4|−1|6) wäre der Mittelpunkt, (3|0|5) das Verhältnis 1 : 2.",
     "options": [
-      "(5|−2|7)",
       "(4|−1|6)",
       "(3|0|5)",
-      "(6|−6|6)"
+      "(6|−6|6)",
+      "(5|−2|7)"
     ],
     "question": "Der Punkt T teilt die Strecke von A(1|2|3) nach B(7|−4|9) im Verhältnis AT : TB = 2 : 1. Welche Koordinaten hat T?",
     "topic": "Punkte"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Der Schwerpunkt ist das arithmetische Mittel der drei Ortsvektoren: S = (1/3)·(OA + OB + OC). Die Summe ist (6|6|6), geteilt durch 3 ergibt (2|2|2). Wer die Division vergisst, erhält (6|6|6).",
     "options": [
-      "(6|6|6)",
       "(2|2|2)",
+      "(6|6|6)",
       "(3|3|3)",
       "(2|2,5|1)"
     ],
@@ -492,24 +492,24 @@
     "topic": "Punkte"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Kollinearität bedeutet AC = r·AB. Mit AB = (2|3|4) und AC = (6|9|k−3) folgt aus den ersten beiden Komponenten r = 3, also muss k − 3 = 3·4 = 12 gelten und damit k = 15.",
     "options": [
       "11",
-      "12",
       "15",
+      "12",
       "21"
     ],
     "question": "Für welchen Wert von k liegen A(1|2|3), B(3|5|7) und C(7|11|k) auf einer gemeinsamen Geraden?",
     "topic": "Punkte"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Mit der Hesseschen Normalform gilt d(O, E) = |0 − 14| / |n|. Wegen |n| = √(4 + 36 + 9) = √49 = 7 folgt d = 14 / 7 = 2.",
     "options": [
-      "2",
       "7",
       "14",
+      "2",
       "0,5"
     ],
     "question": "Welchen Abstand hat die Ebene E: 2x₁ − 6x₂ + 3x₃ = 14 vom Koordinatenursprung?",
@@ -528,23 +528,23 @@
     "topic": "Ebenen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Einsetzen der Geradenpunkte (1+2t | 2−t | 3t) in die Ebenengleichung: (1+2t) + (2−t) + 3t = 3 + 4t = 7, also t = 1. Eingesetzt in g ergibt sich der Schnittpunkt (3|1|3).",
     "options": [
+      "(3|1|3)",
       "(1|2|0)",
       "(5|0|6)",
-      "(3|1|3)",
       "(−1|3|−3)"
     ],
     "question": "In welchem Punkt schneidet die Gerade g: x = (1|2|0) + t·(2|−1|3) die Ebene E: x₁ + x₂ + x₃ = 7?",
     "topic": "Schnitt"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Der Richtungsvektor der Schnittgeraden steht senkrecht auf beiden Normalenvektoren, also r = n₁ × n₂ = (1|2|−1) × (2|−1|1) = (2−1 | −2−1 | −1−4) = (1|−3|−5). Probe: r · n₁ = 1 − 6 + 5 = 0 und r · n₂ = 2 + 3 − 5 = 0.",
     "options": [
-      "(1|−3|−5)",
       "(1|3|−5)",
+      "(1|−3|−5)",
       "(3|1|0)",
       "(1|3|5)"
     ],
@@ -552,25 +552,25 @@
     "topic": "Schnitt"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Es gilt b_a = (a · b / |a|²) · a. Mit a · b = 4 + 2 + 12 = 18 und |a|² = 1 + 4 + 4 = 9 ist der Faktor 2, also b_a = (2|4|4). Division durch |a| statt |a|² liefert fälschlich (6|12|12).",
     "options": [
       "(1|2|2)",
       "(6|12|12)",
-      "(4|1|6)",
-      "(2|4|4)"
+      "(2|4|4)",
+      "(4|1|6)"
     ],
     "question": "Wie lautet die orthogonale Projektion des Vektors b = (4|1|6) auf a = (1|2|2)?",
     "topic": "Projektion"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Es gilt d = |AP × v| / |v| mit AP = (−1|2|2). Wegen AP · v = −2 − 2 + 4 = 0 steht AP bereits senkrecht auf v, der Lotfußpunkt ist A und d = |AP| = √(1 + 4 + 4) = 3. Ohne Division durch |v| = 3 erhielte man 9.",
     "options": [
       "1",
-      "3",
       "9",
-      "27"
+      "27",
+      "3"
     ],
     "question": "Welchen Abstand hat der Punkt P(0|3|3) von der Geraden g: x = (1|1|1) + t·(2|−1|2)?",
     "topic": "Abstände"
@@ -588,49 +588,49 @@
     "topic": "Kreuzprodukt"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Zuerst muss E₂ auf denselben Normalenvektor gebracht werden: Division durch 2 ergibt 2x₁ − x₂ + 2x₃ = 3. Mit |n| = √(4 + 1 + 4) = 3 folgt d = |9 − 3| / 3 = 2. Ohne das Kürzen erhielte man fälschlich |9 − 6| / 3 = 1.",
     "options": [
       "1",
+      "2",
       "3",
-      "6",
-      "2"
+      "6"
     ],
     "question": "Welchen Abstand haben die parallelen Ebenen E₁: 2x₁ − x₂ + 2x₃ = 9 und E₂: 4x₁ − 2x₂ + 4x₃ = 6?",
     "topic": "Abstände"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Orthogonalität bedeutet, dass das Skalarprodukt null ist: a · b = 3·2 + k·4 + (−2)·1 = 4 + 4k = 0. Daraus folgt k = −1.",
     "options": [
       "−2",
-      "−1",
       "1",
+      "−1",
       "2"
     ],
     "question": "Für welchen Wert von k stehen die Vektoren a = (3|k|−2) und b = (2|4|1) senkrecht aufeinander?",
     "topic": "Vektoren"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Es ist n · v = 1·2 + (−2)·1 + 3·0 = 0, die Gerade verläuft also parallel zur Ebene. Der Aufpunkt liefert 1 − 2 + 3 = 2 ≠ 4, er liegt somit nicht in E. Die Gerade ist damit echt parallel.",
     "options": [
       "Sie schneidet die Ebene in genau einem Punkt",
       "Sie steht senkrecht auf der Ebene",
-      "Sie verläuft echt parallel zur Ebene",
-      "Sie liegt vollständig in der Ebene"
+      "Sie liegt vollständig in der Ebene",
+      "Sie verläuft echt parallel zur Ebene"
     ],
     "question": "Wie liegt die Gerade g: x = (1|1|1) + t·(2|1|0) zur Ebene E: x₁ − 2x₂ + 3x₃ = 4?",
     "topic": "Schnitt"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Es gilt V = (1/6)·|AB · (AC × AD)| mit AB = (2|0|0), AC = (0|3|0) und AD = (0|0|4). Das Spatprodukt beträgt 2·3·4 = 24, ein Sechstel davon ist 4. Der Wert 24 wäre das Volumen des zugehörigen Quaders.",
     "options": [
+      "4",
       "8",
       "12",
-      "24",
-      "4"
+      "24"
     ],
     "question": "Welches Volumen hat das Tetraeder mit A(0|0|0), B(2|0|0), C(0|3|0) und D(0|0|4)?",
     "topic": "Volumen"
@@ -660,13 +660,13 @@
     "topic": "Vektoren"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Es gilt cos(φ) = |v₁ · v₂| / (|v₁| · |v₂|). Mit v₁ · v₂ = 0 + 1 + 0 = 1 und |v₁| = |v₂| = √2 folgt cos(φ) = 1/2, also φ = 60°. Der Betrag sorgt dafür, dass stets der spitze Winkel angegeben wird.",
     "options": [
-      "60°",
       "30°",
       "45°",
-      "120°"
+      "120°",
+      "60°"
     ],
     "question": "Welchen Schnittwinkel schließen die Geraden g₁ mit Richtungsvektor (1|1|0) und g₂ mit Richtungsvektor (0|1|1) ein?",
     "topic": "Geraden"

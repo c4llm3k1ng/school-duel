@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Ein Minus vor einer Klammer kehrt das Vorzeichen um: -5 + (-3) - (-7) = -5 - 3 + 7 = -8 + 7 = -1.",
     "options": [
-      "-15",
       "-1",
+      "-15",
       "1",
       "9"
     ],
@@ -24,35 +24,35 @@
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Gleichartige Glieder zusammenfassen: (3x - x) + 2y + (5 - 7) = 2x + 2y - 2. Der y-Term steht allein und bleibt unverändert.",
     "options": [
-      "2x + 2y - 2",
       "4x + 2y - 12",
       "2x + 2y + 12",
+      "2x + 2y - 2",
       "3x - 2y - 2"
     ],
     "question": "Vereinfache den Term: 3x + 5 - x + 2y - 7",
     "topic": "Terme vereinfachen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Klammer auflösen: 2x + 6 - 5 = 11, also 2x + 1 = 11. Dann 1 subtrahieren: 2x = 10 und durch 2 teilen: x = 5. Probe: 2 · (5 + 3) - 5 = 11.",
     "options": [
       "x = 2",
-      "x = 5",
       "x = 7",
-      "x = 10"
+      "x = 10",
+      "x = 5"
     ],
     "question": "Löse die Gleichung nach x: 2(x + 3) - 5 = 11",
     "topic": "Lineare Gleichungen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Bei der Multiplikation von Brüchen rechnet man Zähler mal Zähler und Nenner mal Nenner: (3 · 2) / (4 · 5) = 6/20. Vollständig gekürzt ergibt das 3/10.",
     "options": [
-      "23/20",
       "3/10",
+      "23/20",
       "5/9",
       "15/8"
     ],
@@ -60,37 +60,37 @@
     "topic": "Bruchrechnung"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Nebenwinkel ergänzen sich zu 180 Grad: 180 Grad - 60 Grad = 120 Grad. Der Scheitelwinkel wäre dagegen wieder 60 Grad groß.",
     "options": [
       "30 Grad",
-      "60 Grad",
       "120 Grad",
+      "60 Grad",
       "180 Grad"
     ],
     "question": "Zwei Geraden schneiden sich. Einer der dabei entstehenden Winkel ist 60 Grad. Wie groß ist der Nebenwinkel zu diesem Winkel?",
     "topic": "Geometrie - Winkel"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Weil 1 m = 100 cm gilt, ist 1 m² = 100 cm · 100 cm = 10 000 cm². Also sind 4500 cm² : 10 000 = 0,45 m². Bei Flächeneinheiten ist der Umrechnungsfaktor 100, nicht 10.",
     "options": [
-      "0,45 m²",
       "4,5 m²",
       "45 m²",
+      "0,45 m²",
       "0,045 m²"
     ],
     "question": "Wie viele Quadratmeter sind 4500 cm²?",
     "topic": "Maßeinheiten (Flächen)"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Die Werte sind: -|-8| = -8, denn der Betrag 8 wird anschließend negativ genommen; -(-5) = 5; 0 - 3 = -3; 2 + (-9) = -7. Am kleinsten ist -8.",
     "options": [
-      "-|-8|",
       "-(-5)",
       "0 - 3",
-      "2 + (-9)"
+      "2 + (-9)",
+      "-|-8|"
     ],
     "question": "Welcher der folgenden Ausdrücke hat den kleinsten Wert?",
     "topic": "Rationale Zahlen - Betrag und Größenvergleich"
@@ -108,11 +108,11 @@
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Der reduzierte Preis entspricht 80 % des Grundwerts. Also gilt 0,8 · G = 36 Euro und damit G = 36 Euro : 0,8 = 45 Euro. Probe: 20 % von 45 Euro sind 9 Euro, und 45 Euro - 9 Euro = 36 Euro.",
     "options": [
-      "45 Euro",
       "43,20 Euro",
+      "45 Euro",
       "56 Euro",
       "40 Euro"
     ],
@@ -120,25 +120,25 @@
     "topic": "Prozentrechnung (Grundwert)"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Auf dem Würfel sind 2, 3 und 5 Primzahlen; die 1 ist keine Primzahl. Bei einem Laplace-Würfel sind alle 6 Ergebnisse gleich wahrscheinlich, also ist die Wahrscheinlichkeit 3/6 = 1/2.",
     "options": [
-      "1/2",
       "1/3",
       "2/3",
+      "1/2",
       "1/6"
     ],
     "question": "Ein Laplace-Würfel wird einmal geworfen. Wie groß ist die Wahrscheinlichkeit, eine Primzahl zu würfeln?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Im gleichschenkligen Dreieck sind die beiden Basiswinkel gleich groß. Die Winkelsumme im Dreieck beträgt 180 Grad: (180 Grad - 44 Grad) : 2 = 136 Grad : 2 = 68 Grad.",
     "options": [
-      "68 Grad",
       "136 Grad",
       "88 Grad",
-      "46 Grad"
+      "46 Grad",
+      "68 Grad"
     ],
     "question": "In einem gleichschenkligen Dreieck ist der Winkel an der Spitze 44 Grad groß. Wie groß ist jeder der beiden Basiswinkel?",
     "topic": "Geometrie - Winkel im Dreieck"
@@ -168,12 +168,12 @@
     "topic": "Proportionalität (Dreisatz)"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Aus A = (g · h) : 2 folgt h = 2A : g. Eingesetzt: h = 2 · 42 cm² : 12 cm = 84 cm² : 12 cm = 7 cm. Probe: (12 cm · 7 cm) : 2 = 42 cm².",
     "options": [
-      "7 cm",
       "3,5 cm",
       "14 cm",
+      "7 cm",
       "21 cm"
     ],
     "question": "Ein Dreieck hat einen Flächeninhalt von 42 cm² und eine Grundseite von 12 cm. Wie lang ist die zugehörige Höhe?",

@@ -1,11 +1,11 @@
 [
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Ein Laplace-Experiment zeichnet sich dadurch aus, dass alle möglichen Elementarereignisse die gleiche Wahrscheinlichkeit besitzen. Beispiele sind das Werfen eines fairen Würfels oder einer fairen Münze.",
     "options": [
+      "Alle möglichen Ergebnisse sind gleich wahrscheinlich.",
       "Die Anzahl der möglichen Ergebnisse ist unendlich groß.",
       "Es gibt nur zwei mögliche Ergebnisse, Erfolg oder Misserfolg.",
-      "Alle möglichen Ergebnisse sind gleich wahrscheinlich.",
       "Die Reihenfolge der Ergebnisse spielt für den Ausgang keine Rolle."
     ],
     "question": "Was ist die grundlegende Eigenschaft eines Laplace-Experiments in der Wahrscheinlichkeitsrechnung?",
@@ -48,11 +48,11 @@
     "topic": "Binomialverteilung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Ein Fehler 1. Art tritt auf, wenn man die Nullhypothese H₀ ablehnt, obwohl sie zutrifft. Seine Wahrscheinlichkeit wird durch das Signifikanzniveau α nach oben begrenzt. Das fälschliche Beibehalten einer falschen Nullhypothese ist dagegen der Fehler 2. Art.",
     "options": [
-      "Die Nullhypothese wird fälschlich beibehalten, obwohl sie in Wirklichkeit falsch ist.",
       "Die Nullhypothese wird fälschlich verworfen, obwohl sie in Wirklichkeit zutrifft.",
+      "Die Nullhypothese wird fälschlich beibehalten, obwohl sie in Wirklichkeit falsch ist.",
       "Die Alternativhypothese wird fälschlich beibehalten, obwohl sie in Wirklichkeit falsch ist.",
       "Der Stichprobenumfang ist zu klein, um überhaupt eine Entscheidung zu treffen."
     ],
@@ -60,12 +60,12 @@
     "topic": "Hypothesentests und Fehlerarten"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Ein Konfidenzintervall ist eine Aussage über das Schätzverfahren, nicht über den einzelnen bereits berechneten Zahlenbereich. Zieht man sehr viele Stichproben und bildet jedes Mal ein solches Intervall, so überdecken etwa 95 % dieser Intervalle den unbekannten wahren Anteil. Der Stichprobenanteil 0,45 liegt dagegen immer in der Mitte des Intervalls.",
     "options": [
       "Der in der Stichprobe beobachtete Anteil liegt mit 95 % Wahrscheinlichkeit zwischen 42 % und 48 %.",
-      "95 % aller zufällig gezogenen Stichproben ergeben einen Anteil zwischen 42 % und 48 %.",
       "Das Verfahren liefert bei 95 % aller Stichproben ein Intervall, das den wahren Anteil überdeckt.",
+      "95 % aller zufällig gezogenen Stichproben ergeben einen Anteil zwischen 42 % und 48 %.",
       "Mindestens 95 % der Bevölkerung befürworten das Gesetz mit einem Anteil zwischen 42 % und 48 %."
     ],
     "question": "Bei der Schätzung des Anteils der Befürworter eines Gesetzes in der Bevölkerung wird ein 95%-Konfidenzintervall von [0,42; 0,48] ermittelt. Was ist die korrekte Interpretation dieses Intervalls?",
@@ -84,23 +84,23 @@
     "topic": "Normalapproximation der Binomialverteilung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Wird jeder Wert mit c multipliziert, so wird auch jede Abweichung vom Mittelwert mit c multipliziert. Die Varianz wächst dadurch um den Faktor c², die Standardabweichung als deren Wurzel um den Faktor c. Eine reine Verschiebung aller Werte um eine Konstante würde die Standardabweichung dagegen nicht verändern.",
     "options": [
       "Die Standardabweichung der Datenreihe bleibt unverändert.",
-      "Die Standardabweichung wird ebenfalls mit c multipliziert.",
       "Die Standardabweichung wird mit dem Faktor c² multipliziert.",
-      "Die Standardabweichung wird um den Wert c vergrößert."
+      "Die Standardabweichung wird um den Wert c vergrößert.",
+      "Die Standardabweichung wird ebenfalls mit c multipliziert."
     ],
     "question": "Welchen Einfluss hat die Multiplikation aller Werte einer Datenreihe mit einer positiven Konstanten c (c > 0) auf die Standardabweichung der Datenreihe?",
     "topic": "Streuungsmaße (Standardabweichung, Varianz)"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Ein Ereignis ist eine Menge von Ergebnissen eines Zufallsexperiments, also eine Teilmenge des Ergebnisraums. Es kann ein einzelnes Ergebnis oder eine Kombination mehrerer Ergebnisse sein.",
     "options": [
-      "Das Ergebnis eines Experiments, das immer eintritt.",
       "Eine Teilmenge des Ergebnisraums eines Zufallsexperiments.",
+      "Das Ergebnis eines Experiments, das immer eintritt.",
       "Die Häufigkeit, mit der ein bestimmtes Ergebnis auftritt.",
       "Die Summe aller möglichen Ergebnisse eines Zufallsexperiments."
     ],
@@ -108,24 +108,24 @@
     "topic": "Grundlagen der Wahrscheinlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Die Anzahl der richtigen Antworten ist binomialverteilt mit n = 10 und p = 1/4 = 0,25. Für den Erwartungswert gilt E(X) = n · p = 10 · 0,25 = 2,5. Dass 2,5 selbst gar nicht als Anzahl auftreten kann, ist unproblematisch: Der Erwartungswert ist ein Durchschnittswert auf lange Sicht, kein möglicher Einzelwert.",
     "options": [
       "1,5",
-      "2",
       "2,5",
+      "2",
       "3"
     ],
     "question": "Bei einem Multiple-Choice-Test mit 10 Fragen hat jede Frage 4 Antwortmöglichkeiten, von denen genau eine richtig ist. Ein Schüler rät bei jeder Frage blind. Wie groß ist der Erwartungswert der Anzahl der richtigen Antworten?",
     "topic": "Binomialverteilung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Es gilt z = (x − μ) / σ = (58 − 50) / 5 = 8 / 5 = 1,6. Der z-Wert gibt an, wie viele Standardabweichungen ein Beobachtungswert vom Erwartungswert entfernt liegt.",
     "options": [
       "1,2",
-      "1,6",
       "0,8",
+      "1,6",
       "2,0"
     ],
     "question": "Eine Zufallsvariable X ist normalverteilt mit einem Erwartungswert von μ = 50 und einer Standardabweichung von σ = 5. Welchen z-Wert hat ein Beobachtungswert x = 58?",
@@ -156,11 +156,11 @@
     "topic": "Konfidenzintervalle"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Nach dem Satz von Bayes gilt P(krank | positiv) = P(positiv | krank) · P(krank) / P(positiv). Dabei ist P(positiv) = 0,99 · 0,005 + 0,02 · 0,995 = 0,00495 + 0,01990 = 0,02485. Also P(krank | positiv) = 0,00495 / 0,02485 ≈ 0,199, also rund 20 %. Trotz des guten Tests sind vier von fünf positiven Befunden falsch, weil die Krankheit sehr selten ist.",
     "options": [
-      "Ca. 20 %",
       "Ca. 50 %",
+      "Ca. 20 %",
       "Ca. 33 %",
       "Ca. 49 %"
     ],
@@ -180,61 +180,61 @@
     "topic": "Korrelation und Regression"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Die Standardabweichung ist ein Streuungsmaß: Sie beschreibt, wie stark die Daten im Mittel um den Mittelwert schwanken. Sie ist die Quadratwurzel der Varianz und deshalb nicht automatisch kleiner als diese, denn für Varianzen zwischen 0 und 1 ist die Wurzel größer als der Ausgangswert.",
     "options": [
       "Sie misst die zentrale Tendenz einer Datenreihe.",
       "Sie ist stets kleiner als die zugehörige Varianz.",
-      "Sie beschreibt die mittlere Streuung um den Mittelwert.",
-      "Sie ist nur für nominalskalierte Daten anwendbar."
+      "Sie ist nur für nominalskalierte Daten anwendbar.",
+      "Sie beschreibt die mittlere Streuung um den Mittelwert."
     ],
     "question": "Welche Aussage über die Standardabweichung ist korrekt?",
     "topic": "Deskriptive Statistik (Streuungsmaße)"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Die Anzahl der Sechsen ist binomialverteilt mit n = 8 und p = 1/6. Es gilt P(X = 2) = C(8; 2) · (1/6)² · (5/6)⁶ = 28 · 0,02778 · 0,33490 ≈ 0,260, also etwa 26,0 %. Ohne den Binomialkoeffizienten erhielte man 0,9 %, der Wert 33,5 % ist allein (5/6)⁶ und 39,5 % gehört zu P(X ≥ 2).",
     "options": [
+      "26,0 %",
       "0,9 %",
       "39,5 %",
-      "26,0 %",
       "33,5 %"
     ],
     "question": "Ein fairer Würfel wird achtmal geworfen. Wie groß ist die Wahrscheinlichkeit, dabei genau zwei Sechsen zu erhalten?",
     "topic": "Binomialverteilung"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Die Grenzen 492 ml und 508 ml liegen genau 2σ vom Erwartungswert entfernt, denn 500 ± 2 · 4 ergibt diese Werte. Für eine Normalverteilung gilt P(μ − 2σ ≤ X ≤ μ + 2σ) ≈ 0,954. Der Wert 68,3 % gehört zum Intervall μ ± σ, der Wert 99,7 % zum Intervall μ ± 3σ.",
     "options": [
       "68,3 %",
+      "95,4 %",
       "99,7 %",
-      "90,0 %",
-      "95,4 %"
+      "90,0 %"
     ],
     "question": "Die Füllmenge einer Abfüllanlage ist normalverteilt mit μ = 500 ml und σ = 4 ml. Welcher Anteil der Flaschen enthält zwischen 492 ml und 508 ml?",
     "topic": "Normalverteilung und Sigma-Regeln"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Der Erwartungswert ist ein langfristiger Durchschnitt, kein wahrscheinlichster oder garantierter Einzelwert. Nach dem Gesetz der großen Zahlen nähert sich der durchschnittliche Gewinn pro Spiel bei vielen Wiederholungen dem Erwartungswert an. In einem einzelnen Spiel muss der Betrag 2,30 € dagegen überhaupt nicht vorkommen.",
     "options": [
-      "Der durchschnittliche Gewinn pro Spiel nähert sich bei sehr vielen Spielen dem Wert 2,30 €.",
       "Ein Gewinn von genau 2,30 € ist der wahrscheinlichste Ausgang eines einzelnen Spiels.",
       "In jedem einzelnen Spiel beträgt der erzielte Gewinn mindestens 2,30 € oder mehr.",
+      "Der durchschnittliche Gewinn pro Spiel nähert sich bei sehr vielen Spielen dem Wert 2,30 €.",
       "In genau der Hälfte aller Spiele fällt ein Gewinn von mindestens 2,30 € an."
     ],
     "question": "Bei einem Glücksspiel beträgt der Erwartungswert des Gewinns 2,30 € pro Spiel. Welche Aussage ist korrekt?",
     "topic": "Erwartungswert diskreter Zufallsvariablen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Für eine Binomialverteilung gilt σ = √(n · p · (1 − p)) = √(200 · 0,3 · 0,7) = √42 ≈ 6,48. Der Wert 42,00 ist die Varianz, 60,00 ist der Erwartungswert n · p, und 7,75 entsteht, wenn man fälschlich √(n · p) berechnet.",
     "options": [
       "42,00",
-      "6,48",
       "60,00",
-      "7,75"
+      "7,75",
+      "6,48"
     ],
     "question": "Die Zufallsvariable X ist binomialverteilt mit n = 200 und p = 0,3. Wie groß ist die Standardabweichung von X?",
     "topic": "Binomialverteilung"
@@ -252,13 +252,13 @@
     "topic": "Bedingte Wahrscheinlichkeit"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Beim Ziehen ohne Zurücklegen ändert sich die Zusammensetzung der Urne: P(beide rot) = 5/12 · 4/11 = 20/132 = 5/33 ≈ 0,152, also etwa 15,2 %. Mit Zurücklegen ergäbe sich (5/12)² ≈ 17,4 %, der Wert 41,7 % ist 5/12 für nur eine Ziehung und 68,2 % die Wahrscheinlichkeit für mindestens eine rote Kugel.",
     "options": [
       "41,7 %",
+      "15,2 %",
       "17,4 %",
-      "68,2 %",
-      "15,2 %"
+      "68,2 %"
     ],
     "question": "In einer Urne liegen 5 rote und 7 blaue Kugeln. Es werden nacheinander zwei Kugeln ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, dass beide Kugeln rot sind?",
     "topic": "Mehrstufige Zufallsexperimente"
@@ -276,23 +276,23 @@
     "topic": "Hypothesentests und Fehlerarten"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Die Summe der Werte beträgt 420, also ist das arithmetische Mittel 420 / 7 = 60. Der Median ist der vierte Wert der geordneten Reihe, also 38. Der Ausreißer 198 zieht das arithmetische Mittel weit nach oben, während der Median als robustes Lagemaß davon fast unberührt bleibt.",
     "options": [
-      "Mittel 60; Median 38",
       "Mittel 38; Median 60",
       "Mittel 60; Median 40",
-      "Mittel 46; Median 38"
+      "Mittel 46; Median 38",
+      "Mittel 60; Median 38"
     ],
     "question": "Sieben Beschäftigte eines Betriebs verdienen im Jahr (in Tausend Euro): 32, 34, 36, 38, 40, 42 und 198. Welche Werte haben arithmetisches Mittel und Median?",
     "topic": "Deskriptive Statistik (Lagemaße)"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Nach der Schulmethode ist das untere Quartil der Median der unteren Hälfte 2, 4, 4, 6, also 4, und das obere Quartil der Median der oberen Hälfte 8, 10, 10, 12, also 10. Der Interquartilsabstand beträgt somit 10 − 4 = 6. Bei diesem Datensatz liefert auch die Interpolationsmethode einer Tabellenkalkulation dieselben Quartile. Der Wert 7 ist der Median, 10 die Spannweite.",
     "options": [
-      "4",
       "6",
+      "4",
       "7",
       "10"
     ],
@@ -300,24 +300,24 @@
     "topic": "Deskriptive Statistik (Streuungsmaße)"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Gesucht ist das kleinste n mit 1 − (5/6)ⁿ ≥ 0,9, also (5/6)ⁿ ≤ 0,1. Logarithmieren liefert n ≥ ln(0,1) / ln(5/6) ≈ 12,63, und da n ganzzahlig ist, sind 13 Würfe nötig. Bei 12 Würfen beträgt die Wahrscheinlichkeit erst etwa 88,8 %, bei 13 Würfen rund 90,7 %.",
     "options": [
       "10-mal",
+      "13-mal",
       "12-mal",
-      "15-mal",
-      "13-mal"
+      "15-mal"
     ],
     "question": "Wie oft muss ein fairer Würfel mindestens geworfen werden, damit mit einer Wahrscheinlichkeit von mindestens 90 % wenigstens eine Sechs fällt?",
     "topic": "Binomialverteilung und Mindestwahrscheinlichkeit"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Die z-Transformation ergibt z = (92 − 80) / 12 = 1, und aus der Tabelle der Standardnormalverteilung folgt Φ(1) ≈ 0,8413, also rund 84,1 %. Der Wert 15,9 % ist die Gegenwahrscheinlichkeit P(X > 92), 68,3 % gilt für das Intervall μ ± σ und 34,1 % für den Bereich zwischen 80 und 92.",
     "options": [
-      "84,1 %",
       "15,9 %",
       "68,3 %",
+      "84,1 %",
       "34,1 %"
     ],
     "question": "Die Zufallsvariable X ist normalverteilt mit μ = 80 und σ = 12. Wie groß ist die Wahrscheinlichkeit P(X ≤ 92)?",
@@ -336,23 +336,23 @@
     "topic": "Korrelation und Regression"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Über das Gegenereignis: P(X ≥ 1) = 1 − P(X = 0) = 1 − 0,8¹⁰ ≈ 1 − 0,107 = 0,893.",
     "options": [
+      "etwa 0,893",
       "etwa 0,268",
       "etwa 0,107",
-      "etwa 0,893",
       "etwa 0,800"
     ],
     "question": "Ein Bernoulli-Versuch mit p = 0,2 wird 10-mal unabhängig wiederholt. Wie groß ist die Wahrscheinlichkeit für mindestens einen Treffer?",
     "topic": "Grundlagen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Binomialverteilt ist die Trefferzahl nur bei fester Versuchszahl, unabhängigen Versuchen und in jedem Versuch gleicher Trefferwahrscheinlichkeit.",
     "options": [
-      "Feste Versuchszahl n, unabhängige Versuche, konstantes p",
       "Ziehen ohne Zurücklegen aus einer kleinen Grundgesamtheit",
+      "Feste Versuchszahl n, unabhängige Versuche, konstantes p",
       "Nach jedem Treffer sinkt die Trefferwahrscheinlichkeit p",
       "Jeder Einzelversuch ist selbst schon normalverteilt"
     ],
@@ -360,12 +360,12 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "E = 0,1 · 10 € − 2 € = 1 € − 2 € = −1 €. Im Mittel verliert man pro Spiel 1 €, das Spiel ist unfair.",
     "options": [
       "+1,00 €",
-      "−1,00 €",
       "±0,00 €",
+      "−1,00 €",
       "+0,80 €"
     ],
     "question": "Ein Spiel kostet 2 € Einsatz. Mit der Wahrscheinlichkeit 0,1 werden 10 € ausgezahlt, sonst nichts. Wie groß ist der erwartete Gewinn pro Spiel?",
@@ -384,11 +384,11 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "P(X = 3) = C(8;3) · 0,25³ · 0,75⁵ = 56 · 0,015625 · 0,2373 ≈ 0,208. Der Wert 0,886 wäre P(X ≤ 3).",
     "options": [
-      "etwa 0,004",
       "etwa 0,208",
+      "etwa 0,004",
       "etwa 0,375",
       "etwa 0,886"
     ],
@@ -396,11 +396,11 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "P(A∩B) = P(A) + P(B) − P(A∪B) = 0,4 + 0,5 − 0,7 = 0,2 und P(A) · P(B) = 0,4 · 0,5 = 0,2. Beide Werte stimmen überein, also sind A und B unabhängig.",
     "options": [
-      "Ja, denn P(A∩B) = 0,2 stimmt mit P(A) · P(B) überein",
       "Nein, denn P(A∩B) = 0,3 weicht von P(A) · P(B) ab",
+      "Ja, denn P(A∩B) = 0,2 stimmt mit P(A) · P(B) überein",
       "Nein, denn A und B schließen einander offensichtlich aus",
       "Ohne die bedingte Wahrscheinlichkeit P(A|B) nicht entscheidbar"
     ],
@@ -420,35 +420,35 @@
     "topic": "Grundlagen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "E(X) ist das mit den Wahrscheinlichkeiten gewichtete Mittel. Der wahrscheinlichste Wert ist dagegen der Modalwert, und E(X) muss selbst gar kein möglicher Wert von X sein.",
     "options": [
       "Er ist der Wert, den X mit der größten Wahrscheinlichkeit annimmt",
-      "Er ist der Mittelwert, dem sich lange Versuchsreihen annähern",
       "Er ist stets einer der tatsächlich möglichen Werte von X",
-      "Er liegt immer genau mittig zwischen kleinstem und größtem Wert"
+      "Er liegt immer genau mittig zwischen kleinstem und größtem Wert",
+      "Er ist der Mittelwert, dem sich lange Versuchsreihen annähern"
     ],
     "question": "Welche Aussage über den Erwartungswert E(X) einer Zufallsgröße ist korrekt?",
     "topic": "Verteilungen"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Bei der Verdreifachung aller Werte verdreifachen sich Mittelwert (3 · 50 = 150) und Standardabweichung (3 · 8 = 24). Die Varianz würde dagegen neunmal so groß.",
     "options": [
+      "Mittelwert 150 und Standardabweichung 24",
       "Mittelwert 150 und Standardabweichung 8",
       "Mittelwert 50 und Standardabweichung 24",
-      "Mittelwert 150 und Standardabweichung 72",
-      "Mittelwert 150 und Standardabweichung 24"
+      "Mittelwert 150 und Standardabweichung 72"
     ],
     "question": "Ein Datensatz hat den Mittelwert 50 und die Standardabweichung 8. Anschließend wird jeder Wert verdreifacht. Welche Kennzahlen ergeben sich?",
     "topic": "Statistik"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Untere Hälfte 2, 5, 6, 9 liefert Q1 = 5,5, obere Hälfte 11, 14, 18, 21 liefert Q3 = 16. Der Quartilsabstand ist 16 − 5,5 = 10,5, die Spannweite dagegen 19.",
     "options": [
-      "10,5",
       "19,0",
+      "10,5",
       "5,5",
       "16,0"
     ],
@@ -468,35 +468,35 @@
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Mindestens eine 5 liefern 11 der 36 Ergebnisse. Davon haben nur (5;2) und (2;5) die Augensumme 7, also P = 2/11.",
     "options": [
       "1/6",
-      "2/11",
       "1/11",
-      "1/18"
+      "1/18",
+      "2/11"
     ],
     "question": "Zwei faire Würfel werden geworfen. Wie groß ist die Wahrscheinlichkeit für die Augensumme 7, wenn bekannt ist, dass mindestens ein Würfel eine 5 zeigt?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Das Signifikanzniveau begrenzt den Fehler 1. Art. Es sagt nichts darüber aus, wie wahrscheinlich die Nullhypothese selbst zutrifft.",
     "options": [
+      "Eine zutreffende Nullhypothese wird höchstens mit 5 % verworfen",
       "Die Nullhypothese ist mit einer Wahrscheinlichkeit von 5 % falsch",
       "Höchstens 5 % aller Testentscheidungen sind insgesamt falsch",
-      "Die Nullhypothese wird in genau 5 % der Fälle zu Recht abgelehnt",
-      "Eine zutreffende Nullhypothese wird höchstens mit 5 % verworfen"
+      "Die Nullhypothese wird in genau 5 % der Fälle zu Recht abgelehnt"
     ],
     "question": "Ein Hypothesentest wird auf dem Signifikanzniveau 5 % durchgeführt. Was bedeutet diese Angabe?",
     "topic": "Beurteilende Statistik"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Der Stichprobenanteil ist 0,4 und σ = √(0,4 · 0,6 / 1.000) ≈ 0,0155. Aus 0,4 ± 1,96 · 0,0155 folgt rund 0,37 bis 0,43.",
     "options": [
-      "etwa 0,37 bis 0,43",
       "etwa 0,39 bis 0,41",
+      "etwa 0,37 bis 0,43",
       "etwa 0,35 bis 0,45",
       "etwa 0,30 bis 0,50"
     ],
@@ -516,35 +516,35 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Sigma-Regeln der Normalverteilung: 1σ ≈ 68,3 %, 2σ ≈ 95,4 %, 3σ ≈ 99,7 %.",
     "options": [
       "etwa 68,3 %",
-      "etwa 95,4 %",
       "etwa 99,7 %",
-      "etwa 90,0 %"
+      "etwa 90,0 %",
+      "etwa 95,4 %"
     ],
     "question": "Wie groß ist bei einer Normalverteilung ungefähr die Wahrscheinlichkeit, dass ein Wert höchstens 2σ vom Erwartungswert abweicht?",
     "topic": "Verteilungen"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "C(10;3) = 10 · 9 · 8 / (3 · 2 · 1) = 120. Der Wert 720 zählt die Reihenfolge mit, 1.000 wäre 10³.",
     "options": [
+      "120",
       "30",
       "720",
-      "1.000",
-      "120"
+      "1.000"
     ],
     "question": "Wie viele verschiedene Ausschüsse aus 3 Personen lassen sich aus 10 Bewerbern bilden?",
     "topic": "Kombinatorik"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "C(n;k) zählt, auf wie viele Arten sich k Treffer auf n Versuche verteilen lassen. Jeder dieser Pfade im Baumdiagramm hat dieselbe Wahrscheinlichkeit.",
     "options": [
-      "Weil es so viele Anordnungen der k Treffer auf n Versuche gibt",
       "Weil er die Abhängigkeit der einzelnen Versuche ausgleicht",
+      "Weil es so viele Anordnungen der k Treffer auf n Versuche gibt",
       "Weil er die Trefferwahrscheinlichkeit p auf k Versuche verteilt",
       "Weil er den Erwartungswert n · p der Verteilung angibt"
     ],
@@ -564,35 +564,35 @@
     "topic": "Mehrstufige Experimente"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Satz von der totalen Wahrscheinlichkeit: 0,6 · 0,02 + 0,4 · 0,05 = 0,012 + 0,020 = 0,032, also 3,2 %.",
     "options": [
       "2,0 %",
-      "3,2 %",
       "3,5 %",
-      "7,0 %"
+      "7,0 %",
+      "3,2 %"
     ],
     "question": "Maschine A fertigt 60 % der Teile mit 2 % Ausschuss, Maschine B die übrigen 40 % mit 5 % Ausschuss. Wie hoch ist der Ausschussanteil der Gesamtproduktion?",
     "topic": "Mehrstufige Experimente"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Binomialverteilung mit n = 10 und p = 0,25: P(X ≥ 5) = 1 − P(X ≤ 4) ≈ 1 − 0,922 = 0,078, also rund 8 %.",
     "options": [
+      "etwa 8 %",
       "etwa 25 %",
       "etwa 50 %",
-      "etwa 2 %",
-      "etwa 8 %"
+      "etwa 2 %"
     ],
     "question": "Ein Test besteht aus 10 Fragen mit je 4 Antwortmöglichkeiten und genau einer richtigen Antwort. Wie wahrscheinlich sind beim reinen Raten mindestens 5 Treffer?",
     "topic": "Mehrstufige Experimente"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "P(A|B) = P(A∩B) / P(B) = 0,2 / 0,5 = 0,4. Der Wert 0,67 wäre P(B|A) = 0,2 / 0,3.",
     "options": [
-      "0,4",
       "0,6",
+      "0,4",
       "0,15",
       "0,67"
     ],
@@ -612,35 +612,35 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die Standardisierung Z = (X − μ)/σ erzeugt eine Zufallsgröße mit dem Erwartungswert 0 und der Standardabweichung 1.",
     "options": [
       "Z = (X + μ) / σ",
-      "Z = (X − μ) / σ",
       "Z = (X − σ) / μ",
-      "Z = X / (μ · σ)"
+      "Z = X / (μ · σ)",
+      "Z = (X − μ) / σ"
     ],
     "question": "Wie wird eine normalverteilte Zufallsgröße X standardisiert?",
     "topic": "Verteilungen"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Eine Korrelation belegt keine Kausalität. Hier wirkt mit der Temperatur eine dritte Größe auf beide Merkmale gleichzeitig.",
     "options": [
+      "Eine dritte Größe wie die Hitze erklärt beide Anstiege",
       "Der Eiskonsum verursacht nachweislich mehr Badeunfälle",
       "Der Zusammenhang ist reiner Zufall ohne jede Ursache",
-      "Die Badeunfälle steigern nachweislich den Eiskonsum",
-      "Eine dritte Größe wie die Hitze erklärt beide Anstiege"
+      "Die Badeunfälle steigern nachweislich den Eiskonsum"
     ],
     "question": "In einer Studie steigt mit dem Speiseeisverkauf auch die Zahl der Badeunfälle. Was folgt daraus?",
     "topic": "Statistik"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Fehler 1. Art: eine zutreffende Nullhypothese wird verworfen. Fehler 2. Art: eine falsche Nullhypothese wird beibehalten.",
     "options": [
-      "Die Nullhypothese wird beibehalten, obwohl die Alternative zutrifft",
       "Die Nullhypothese wird abgelehnt, obwohl sie tatsächlich zutrifft",
+      "Die Nullhypothese wird beibehalten, obwohl die Alternative zutrifft",
       "Der Stichprobenumfang wird für den Test deutlich zu klein gewählt",
       "Das Signifikanzniveau wird erst nach der Stichprobe festgelegt"
     ],
@@ -660,61 +660,61 @@
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Nur die relative Häufigkeit stabilisiert sich bei der Wahrscheinlichkeit. Die absolute Abweichung vom Erwartungswert wächst mit n sogar an.",
     "options": [
       "Nach vielen Nieten wird ein Treffer immer wahrscheinlicher",
-      "Die relative Häufigkeit nähert sich mit wachsendem n der Wahrscheinlichkeit",
       "Die absolute Abweichung von der Trefferzahl n · p wird immer kleiner",
-      "Bei genügend vielen Versuchen tritt jedes Ergebnis gleich oft ein"
+      "Bei genügend vielen Versuchen tritt jedes Ergebnis gleich oft ein",
+      "Die relative Häufigkeit nähert sich mit wachsendem n der Wahrscheinlichkeit"
     ],
     "question": "Was besagt das Gesetz der großen Zahlen?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Gegenereignis nutzen: P(mindestens ein defektes) = 1 − 0,95²⁰ ≈ 1 − 0,358 ≈ 0,642. Der Wert 0,358 ist die Gegenwahrscheinlichkeit, 0,377 gehört zu genau einem Defekt.",
     "options": [
+      "≈ 0,642",
       "≈ 0,264",
       "≈ 0,358",
-      "≈ 0,377",
-      "≈ 0,642"
+      "≈ 0,377"
     ],
     "question": "Ein Bauteil ist mit Wahrscheinlichkeit 0,05 defekt. Aus der laufenden Produktion werden 20 Bauteile zufällig entnommen. Wie groß ist die Wahrscheinlichkeit, dass mindestens ein defektes Bauteil dabei ist?",
     "topic": "Verteilungen"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Die Bedingung schränkt den Ergebnisraum auf {4; 5; 6} ein, davon sind 4 und 6 gerade: P(gerade|größer als 3) = (2/6)/(3/6) = 2/3. Der Wert 1/3 ist die Schnittwahrscheinlichkeit, 1/4 das Produkt der Einzelwahrscheinlichkeiten.",
     "options": [
       "1/4",
+      "2/3",
       "1/3",
-      "1/2",
-      "2/3"
+      "1/2"
     ],
     "question": "Ein fairer Würfel wird einmal geworfen. Bekannt ist, dass die Augenzahl größer als 3 ist. Wie groß ist die Wahrscheinlichkeit, dass sie gerade ist?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Auswahl ohne Reihenfolge und ohne Wiederholung: C(10;3) = 10 · 9 · 8 / (3 · 2 · 1) = 120. Der Wert 720 gilt bei beachteter Reihenfolge, 1.000 beim Ziehen mit Zurücklegen.",
     "options": [
       "30",
-      "120",
       "720",
+      "120",
       "1.000"
     ],
     "question": "Wie viele verschiedene dreiköpfige Ausschüsse lassen sich aus 10 Personen bilden, wenn die Ämter nicht verteilt werden?",
     "topic": "Kombinatorik"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Satz von Bayes: P(krank ∩ positiv) = 0,01 · 0,99 = 0,0099, P(gesund ∩ positiv) = 0,99 · 0,02 = 0,0198. Also P(krank|positiv) = 0,0099/0,0297 = 1/3 ≈ 33 %. Die 99 % sind P(positiv|krank), also die vertauschte Bedingung.",
     "options": [
       "≈ 1 %",
-      "≈ 33 %",
       "≈ 67 %",
-      "≈ 99 %"
+      "≈ 99 %",
+      "≈ 33 %"
     ],
     "question": "Eine Krankheit tritt bei 1 % der Bevölkerung auf. Ein Test erkennt Erkrankte mit 99 % Wahrscheinlichkeit, schlägt aber bei 2 % der Gesunden fälschlich an. Wie groß ist die Wahrscheinlichkeit, dass eine positiv getestete Person tatsächlich krank ist?",
     "topic": "Wahrscheinlichkeit"
@@ -744,25 +744,25 @@
     "topic": "Kombinatorik"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Ohne Zurücklegen gilt die hypergeometrische Verteilung: C(8;2) · C(4;1) / C(12;3) = 28 · 4 / 220 ≈ 0,509. Der Wert 0,444 entstünde beim Ziehen mit Zurücklegen, 0,170 bei nur einer festen Reihenfolge.",
     "options": [
       "≈ 0,170",
       "≈ 0,255",
-      "≈ 0,444",
-      "≈ 0,509"
+      "≈ 0,509",
+      "≈ 0,444"
     ],
     "question": "In einer Urne liegen 8 rote und 4 blaue Kugeln. Es werden 3 Kugeln ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, genau 2 rote Kugeln zu ziehen?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Exakt ist die Anzahl hypergeometrisch verteilt. Da die Stichprobe mit 10 Teilen nur 2 % der Lieferung ausmacht, ändern sich die Anteile beim Ziehen kaum, und die Binomialverteilung ist eine gute Näherung.",
     "options": [
       "Weil ohne Zurücklegen gezogen wird, sind die einzelnen Ziehungen stets unabhängig.",
       "Weil der Anteil der defekten Teile mit 10 % deutlich unter 50 % liegt.",
-      "Weil der Stichprobenumfang sehr klein gegenüber dem Umfang der Lieferung ist.",
-      "Weil die Stichprobe mit 10 Teilen kleiner ist als die Anzahl der defekten Teile."
+      "Weil die Stichprobe mit 10 Teilen kleiner ist als die Anzahl der defekten Teile.",
+      "Weil der Stichprobenumfang sehr klein gegenüber dem Umfang der Lieferung ist."
     ],
     "question": "Aus einer Lieferung von 500 Bauteilen, von denen 50 defekt sind, werden 10 Teile ohne Zurücklegen entnommen. Warum darf die Anzahl der defekten Teile in der Stichprobe näherungsweise als binomialverteilt angesehen werden?",
     "topic": "Verteilungen"
@@ -780,11 +780,11 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "σ = √(n · p · (1 − p)) = √(400 · 0,5 · 0,5) = √100 = 10. Der Wert 100 ist die Varianz, 200 der Erwartungswert und 20 die Wurzel aus n.",
     "options": [
-      "10",
       "20",
+      "10",
       "100",
       "200"
     ],
@@ -792,49 +792,49 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Die 2σ-Regel liefert das Intervall [μ − 2σ; μ + 2σ] = [250 − 30; 250 + 30] = [220; 280]. Das Intervall [235; 265] gehört zur 1σ-Regel mit etwa 68,3 %, [205; 295] zur 3σ-Regel mit etwa 99,7 %.",
     "options": [
       "[205; 295]",
-      "[220; 280]",
       "[235; 265]",
+      "[220; 280]",
       "[248; 252]"
     ],
     "question": "Eine binomialverteilte Zufallsgröße hat μ = 250 und σ = 15. Welches Intervall enthält nach der 2σ-Regel etwa 95,4 % der Werte?",
     "topic": "Verteilungen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Binomialverteilung setzt eine feste Anzahl unabhängiger Versuche mit konstanter Trefferwahrscheinlichkeit voraus. Die Wartezeit auf die erste Sechs ist geometrisch verteilt, das Ziehen ohne Zurücklegen hypergeometrisch, und die Augensumme zählt keine Treffer.",
     "options": [
       "Die Augensumme bei 50 Würfen mit einem fairen Würfel.",
-      "Die Anzahl der Sechsen bei 50 Würfen mit einem fairen Würfel.",
       "Die Anzahl der Würfe, bis zum ersten Mal eine Sechs fällt.",
-      "Die Anzahl roter Kugeln beim Ziehen von 5 aus 10 Kugeln ohne Zurücklegen."
+      "Die Anzahl roter Kugeln beim Ziehen von 5 aus 10 Kugeln ohne Zurücklegen.",
+      "Die Anzahl der Sechsen bei 50 Würfen mit einem fairen Würfel."
     ],
     "question": "Bei welchem der folgenden Zufallsexperimente ist die betrachtete Größe binomialverteilt?",
     "topic": "Verteilungen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Beim Raten ist p = 0,25, also E(X) = n · p = 60 · 0,25 = 15. Der Wert 11,25 ist die Varianz n · p · (1 − p) und 3,35 die zugehörige Standardabweichung.",
     "options": [
+      "15",
       "3,35",
       "11,25",
-      "15",
       "30"
     ],
     "question": "Ein Multiple-Choice-Test besteht aus 60 Aufgaben mit je vier Antwortmöglichkeiten, von denen genau eine richtig ist. Wie viele Treffer erzielt man beim reinen Raten im Mittel?",
     "topic": "Verteilungen"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Die Nullhypothese enthält die Behauptung der Firma, die durch den Test widerlegt werden soll: H0: p ≤ 0,05. Die Vermutung des Kritikers, p > 0,05, ist die Alternativhypothese.",
     "options": [
       "H0: p = 0,5",
+      "H0: p ≤ 0,05",
       "H0: p > 0,05",
-      "H0: p ≥ 0,05",
-      "H0: p ≤ 0,05"
+      "H0: p ≥ 0,05"
     ],
     "question": "Eine Firma behauptet, höchstens 5 % ihrer Bauteile seien defekt. Ein Kritiker vermutet einen höheren Anteil und will das mit einem einseitigen Test nachweisen. Wie lautet die Nullhypothese?",
     "topic": "Statistik"
@@ -852,23 +852,23 @@
     "topic": "Statistik"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Additionssatz: P(A∪B) = P(A) + P(B) − P(A∩B) = 0,6 + 0,3 − 0,2 = 0,7. Der Wert 0,90 vergisst den Abzug der Schnittmenge, 0,18 wäre das Produkt der Einzelwahrscheinlichkeiten.",
     "options": [
       "0,18",
       "0,40",
-      "0,70",
-      "0,90"
+      "0,90",
+      "0,70"
     ],
     "question": "Für zwei Ereignisse gilt P(A) = 0,6, P(B) = 0,3 und P(A∩B) = 0,2. Wie groß ist P(A∪B)?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Der Erwartungswert ist ein Mittelwert auf lange Sicht und muss selbst gar nicht annehmbar sein. Die wahrscheinlichsten Trefferzahlen sind hier 2 und 3 mit je etwa 31 %, der Wert 2,5 tritt nie auf.",
     "options": [
-      "Der Wert 2,5 tritt unter allen Trefferzahlen am häufigsten auf.",
       "Bei vielen Wiederholungen liegt die mittlere Trefferzahl nahe 2,5.",
+      "Der Wert 2,5 tritt unter allen Trefferzahlen am häufigsten auf.",
       "In jedem einzelnen Durchgang sind genau 2,5 Treffer zu erwarten.",
       "Die Trefferzahl weicht höchstens um 2,5 vom Mittelwert ab."
     ],
@@ -876,11 +876,11 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Standardisierung: z = (492 − 500)/4 = −2, also Φ(−2) ≈ 0,0228, das sind rund 2,3 %. Der Wert 4,6 % gilt für beide Seiten zusammen, 97,7 % ist die Gegenwahrscheinlichkeit.",
     "options": [
-      "≈ 2,3 %",
       "≈ 4,6 %",
+      "≈ 2,3 %",
       "≈ 15,9 %",
       "≈ 97,7 %"
     ],
@@ -900,24 +900,24 @@
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "P(X = 2) = C(6;2) · (1/3)² · (2/3)⁴ = 15 · 16/729 = 240/729 ≈ 0,329. Ohne den Binomialkoeffizienten erhielte man 0,022, für genau 3 Treffer ergäbe sich 0,219.",
     "options": [
       "≈ 0,022",
       "≈ 0,219",
-      "≈ 0,329",
-      "≈ 0,680"
+      "≈ 0,680",
+      "≈ 0,329"
     ],
     "question": "Eine Zufallsgröße X ist binomialverteilt mit n = 6 und p = 1/3. Wie groß ist P(X = 2)?",
     "topic": "Verteilungen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Günstig sind (4;6), (5;5), (6;4) für die Summe 10, (5;6) und (6;5) für 11 sowie (6;6) für 12, zusammen 6 von 36 Ergebnissen: 6/36 = 1/6.",
     "options": [
+      "1/6",
       "1/12",
       "1/9",
-      "1/6",
       "1/4"
     ],
     "question": "Zwei faire Würfel werden gleichzeitig geworfen. Wie groß ist die Wahrscheinlichkeit, dass die Augensumme mindestens 10 beträgt?",
@@ -936,36 +936,36 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Satz von der totalen Wahrscheinlichkeit: 0,6 · 0,02 + 0,4 · 0,05 = 0,012 + 0,020 = 0,032, also 3,2 %. Der Wert 3,5 % wäre das ungewichtete Mittel, 3,8 % ergäbe sich bei vertauschten Anteilen.",
     "options": [
       "2,0 %",
-      "3,2 %",
       "3,5 %",
+      "3,2 %",
       "3,8 %"
     ],
     "question": "Zwei Maschinen fertigen 60 % beziehungsweise 40 % der Gesamtproduktion. Maschine 1 liefert 2 % Ausschuss, Maschine 2 liefert 5 % Ausschuss. Wie groß ist der Ausschussanteil der Gesamtproduktion?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "E(X) = 0 · 0,5 + 1 · 0,3 + 2 · 0,2 = 0,7 und E(X²) = 0 + 0,3 + 0,8 = 1,1. Daraus folgt Var(X) = 1,1 − 0,7² = 0,61. Der Wert 0,78 ist die Standardabweichung.",
     "options": [
-      "0,61",
       "0,70",
       "0,78",
-      "1,10"
+      "1,10",
+      "0,61"
     ],
     "question": "Eine Zufallsgröße X nimmt die Werte 0, 1 und 2 mit den Wahrscheinlichkeiten 0,5, 0,3 und 0,2 an. Wie groß ist die Varianz von X?",
     "topic": "Statistik"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Die Faustregel von Moivre und Laplace verlangt σ = √(n · p · (1 − p)) > 3. Dann ist die Binomialverteilung hinreichend symmetrisch und breit, um sie durch eine Normalverteilung anzunähern.",
     "options": [
+      "Wenn die Standardabweichung σ größer als 3 ist.",
       "Wenn das Produkt n · p kleiner als 3 ist.",
       "Wenn p nahe bei 0 oder nahe bei 1 liegt.",
-      "Wenn die Standardabweichung σ größer als 3 ist.",
       "Wenn der Stichprobenumfang n größer als 3 ist."
     ],
     "question": "Unter welcher Bedingung darf eine Binomialverteilung nach der Regel von Moivre und Laplace gut durch eine Normalverteilung angenähert werden?",
@@ -984,35 +984,35 @@
     "topic": "Kombinatorik"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Die Bernoulli-Formel lautet P(X = k) = C(n;k) · p hoch k · (1−p) hoch (n−k). Der Binomialkoeffizient zählt die möglichen Positionen der k Treffer innerhalb der Kette.",
     "options": [
       "p hoch k · (1−p) hoch (n−k)",
       "C(n;k) · p hoch n · (1−p) hoch k",
-      "C(n;k) · p hoch (n−k) · (1−p) hoch k",
-      "C(n;k) · p hoch k · (1−p) hoch (n−k)"
+      "C(n;k) · p hoch k · (1−p) hoch (n−k)",
+      "C(n;k) · p hoch (n−k) · (1−p) hoch k"
     ],
     "question": "Welcher Ausdruck beschreibt die Wahrscheinlichkeit für genau k Treffer bei einer Bernoulli-Kette der Länge n mit Trefferwahrscheinlichkeit p?",
     "topic": "Verteilungen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Zwei Pfade führen zum Ziel: (5/8) · (4/7) + (3/8) · (2/7) = 20/56 + 6/56 = 26/56 ≈ 0,464. Der Wert 0,531 ergäbe sich beim Ziehen mit Zurücklegen, 0,357 nur für zwei rote Bonbons.",
     "options": [
       "≈ 0,357",
-      "≈ 0,464",
       "≈ 0,531",
-      "≈ 0,625"
+      "≈ 0,625",
+      "≈ 0,464"
     ],
     "question": "In einer Schachtel liegen 5 rote und 3 grüne Bonbons. Es werden nacheinander zwei Bonbons ohne Zurücklegen entnommen. Wie groß ist die Wahrscheinlichkeit, dass beide dieselbe Farbe haben?",
     "topic": "Mehrstufige Experimente"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Die ersten drei Würfe müssen Nieten sein, der vierte ein Treffer: (5/6)³ · (1/6) = 125/1296 ≈ 0,096. Der Wert 0,579 vergisst den letzten Faktor, 0,518 ist die Wahrscheinlichkeit für höchstens vier Würfe.",
     "options": [
-      "≈ 0,001",
       "≈ 0,096",
+      "≈ 0,001",
       "≈ 0,518",
       "≈ 0,579"
     ],
@@ -1032,12 +1032,12 @@
     "topic": "Statistik"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Definition: P(A|B) = P(A∩B) / P(B) mit P(B) > 0. Der Ausdruck P(A∩B) / P(A) ist die vertauschte Bedingung P(B|A), das Produkt P(A) · P(B) gilt nur bei Unabhängigkeit.",
     "options": [
-      "P(A∩B) / P(B)",
       "P(A∩B) / P(A)",
       "P(A) · P(B)",
+      "P(A∩B) / P(B)",
       "P(A) + P(B) − P(A∩B)"
     ],
     "question": "Wie ist die bedingte Wahrscheinlichkeit P(A|B) definiert?",
@@ -1056,13 +1056,13 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Die Standardisierung Z = (X − μ)/σ verschiebt den Erwartungswert auf 0 und skaliert die Standardabweichung auf 1. Damit lassen sich Wahrscheinlichkeiten aus der Tabelle von Φ ablesen.",
     "options": [
+      "Man bildet Z = (X − μ) / σ.",
       "Man bildet Z = (X − μ) / σ².",
       "Man bildet Z = (X − σ) / μ.",
-      "Man bildet Z = X / (μ · σ).",
-      "Man bildet Z = (X − μ) / σ."
+      "Man bildet Z = X / (μ · σ)."
     ],
     "question": "Wie überführt man eine normalverteilte Zufallsgröße X mit den Parametern μ und σ in die Standardnormalverteilung?",
     "topic": "Verteilungen"
@@ -1092,13 +1092,13 @@
     "topic": "Verteilungen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "P(X = 5) = C(10;5) / 2¹⁰ = 252/1.024 ≈ 0,246. Obwohl 5 der Erwartungswert ist, tritt dieser Wert nur in etwa einem Viertel aller Serien auf.",
     "options": [
       "≈ 0,001",
       "≈ 0,123",
-      "≈ 0,246",
-      "≈ 0,500"
+      "≈ 0,500",
+      "≈ 0,246"
     ],
     "question": "Eine faire Münze wird zehnmal geworfen. Wie groß ist die Wahrscheinlichkeit, dass genau fünfmal Kopf fällt?",
     "topic": "Verteilungen"

@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Bei 25 °C sind c(H₃O⁺) und c(OH⁻) mit je 10⁻⁷ mol/L gleich groß, das ergibt pH 7. pH 0 und pH 1 stehen für stark saure, pH 14 für stark basische Lösungen.",
     "options": [
-      "0",
       "7",
+      "0",
       "14",
       "1"
     ],
@@ -36,23 +36,23 @@
     "topic": "pH-Wert"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Sauer wirkt das Oxonium-Ion H₃O⁺, das entsteht, wenn eine Säure ein Proton an Wasser abgibt. OH⁻ macht Lösungen basisch, Na⁺ und Cl⁻ sind nur Zuschauer-Ionen.",
     "options": [
       "OH⁻ (Hydroxid)",
-      "H₃O⁺ (Oxonium)",
       "Na⁺ (Natrium)",
-      "Cl⁻ (Chlorid)"
+      "Cl⁻ (Chlorid)",
+      "H₃O⁺ (Oxonium)"
     ],
     "question": "Welches Ion ist für den sauren Charakter einer Lösung verantwortlich?",
     "topic": "Konzepte"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Basisch wirken Hydroxid-Ionen OH⁻, wie sie NaOH oder KOH beim Lösen freisetzen. H₃O⁺ bewirkt genau das Gegenteil, Cl⁻ und K⁺ verändern den pH-Wert nicht.",
     "options": [
-      "H₃O⁺ (Oxonium-Ion)",
       "OH⁻ (Hydroxid)",
+      "H₃O⁺ (Oxonium-Ion)",
       "Cl⁻ (Chlorid)",
       "K⁺ (Kalium)"
     ],
@@ -60,11 +60,11 @@
     "topic": "Konzepte"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Brønsted definiert über den Protonenübergang: Die Säure gibt ein H⁺ ab, die Base nimmt es auf. Über Elektronen oder Elektronenpaare argumentiert erst Lewis.",
     "options": [
-      "ein Protonen-Donator",
       "ein Protonen-Akzeptor",
+      "ein Protonen-Donator",
       "ein Elektronen-Donator",
       "ein Salzbildner"
     ],
@@ -72,35 +72,35 @@
     "topic": "Brønsted"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Nach Brønsted nimmt eine Base ein Proton auf – NH₃ tut das ganz ohne OH-Gruppe. Die Forderung nach OH⁻ stammt aus der älteren Arrhenius-Definition.",
     "options": [
       "ein Protonen-Donator",
-      "ein Protonen-Akzeptor",
       "ein Elektronen-Akzeptor",
+      "ein Protonen-Akzeptor",
       "ein OH⁻-Lieferant"
     ],
     "question": "Was ist eine Base nach Brønsted?",
     "topic": "Brønsted"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "HCl heißt Chlorwasserstoff; in Wasser gelöst nennt man es Salzsäure. Schwefelsäure ist H₂SO₄, Salpetersäure HNO₃, Essigsäure CH₃COOH.",
     "options": [
       "Schwefelsäure",
-      "Salzsäure",
       "Salpetersäure",
-      "Essigsäure"
+      "Essigsäure",
+      "Salzsäure"
     ],
     "question": "Welche starke Säure hat die Formel HCl?",
     "topic": "Säuren & Basen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "H₂SO₄ ist Schwefelsäure, eine zweiprotonige starke Säure. Salzsäure ist HCl, Salpetersäure HNO₃, Kohlensäure H₂CO₃.",
     "options": [
-      "Salzsäure",
       "Schwefelsäure",
+      "Salzsäure",
       "Salpetersäure",
       "Kohlensäure"
     ],
@@ -108,11 +108,11 @@
     "topic": "Säuren & Basen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "HNO₃ ist Salpetersäure und gibt genau ein Proton ab. Schwefelsäure H₂SO₄ und Phosphorsäure H₃PO₄ enthalten mehr abgebbare Protonen.",
     "options": [
-      "Salpetersäure",
       "Schwefelsäure",
+      "Salpetersäure",
       "Phosphorsäure",
       "Essigsäure"
     ],
@@ -120,35 +120,35 @@
     "topic": "Säuren & Basen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "NaOH ist Natriumhydroxid, die wässrige Lösung heißt Natronlauge. Kalilauge kommt von KOH, Kalkwasser von Ca(OH)₂, Ammoniakwasser von NH₃.",
     "options": [
-      "Natronlauge",
       "Kalilauge",
       "Ammoniakwasser",
+      "Natronlauge",
       "Kalkwasser"
     ],
     "question": "Welche Base hat die Formel NaOH?",
     "topic": "Säuren & Basen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Das Proton der Säure und das Hydroxid-Ion der Base bilden Wasser, die übrigen Ionen ergeben das Salz: HCl + NaOH → NaCl + H₂O.",
     "options": [
       "nur Wasserstoffgas",
-      "ein Salz und Wasser",
       "eine stärkere Säure",
-      "ein reines Metall"
+      "ein reines Metall",
+      "ein Salz und Wasser"
     ],
     "question": "Was entsteht bei der Reaktion einer Säure mit einer Base?",
     "topic": "Neutralisation"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Bei der Neutralisation heben sich saure und basische Wirkung gegenseitig auf. Redoxreaktionen betreffen Elektronen, eine Disproportionierung spaltet eine Stufe in zwei auf.",
     "options": [
-      "Redoxreaktion",
       "Neutralisation",
+      "Redoxreaktion",
       "Kondensationsreaktion",
       "Disproportionierung"
     ],
@@ -156,11 +156,11 @@
     "topic": "Neutralisation"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Stark saure Lösungen wie die Salzsäure im Magensaft liegen bei pH 0 bis 1. pH 7 ist neutral, pH 10 und pH 14 sind basisch.",
     "options": [
-      "pH 1",
       "pH 7",
+      "pH 1",
       "pH 10",
       "pH 14"
     ],
@@ -168,35 +168,35 @@
     "topic": "pH-Wert"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Lackmus schlägt zwischen pH 5 und 8 von Rot nach Blau um. Phenolphthalein ist im Sauren farblos, Bromthymolblau wechselt von Gelb nach Blau, Stärke zeigt nur Iod an.",
     "options": [
       "Phenolphthalein",
-      "Lackmus",
       "Bromthymolblau",
+      "Lackmus",
       "Stärkelösung"
     ],
     "question": "Welcher Indikator färbt sich in saurer Lösung rot und in basischer Lösung blau?",
     "topic": "pH & Indikatoren"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Phenolphthalein bleibt unter pH 8 farblos und färbt sich darüber pink bis rot. Blau gehört zu Lackmus, Gelb zu Methylorange im basischen Bereich.",
     "options": [
       "farblos wie im Sauren",
-      "pink/rot",
       "blau wie bei Lackmus",
-      "gelb wie bei Methylorange"
+      "gelb wie bei Methylorange",
+      "pink/rot"
     ],
     "question": "Welche Farbe zeigt Phenolphthalein im basischen Bereich?",
     "topic": "pH & Indikatoren"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Wegen des Minuszeichens in pH = −log c(H₃O⁺) sinkt der pH, wenn c(H₃O⁺) steigt. Zehnmal mehr H₃O⁺ bedeutet einen um 1 kleineren pH-Wert.",
     "options": [
-      "er steigt",
       "er sinkt",
+      "er steigt",
       "er bleibt gleich",
       "er wird 14"
     ],
@@ -204,11 +204,11 @@
     "topic": "pH-Wert"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Es gilt pH = −log₁₀ c(H₃O⁺). Das Minuszeichen sorgt dafür, dass hohe H₃O⁺-Konzentrationen kleine pH-Werte ergeben. Der Logarithmus von c(OH⁻) liefert dagegen den pOH-Wert.",
     "options": [
-      "der negative Zehnerlogarithmus von c(H₃O⁺)",
       "der negative Zehnerlogarithmus von c(OH⁻)",
+      "der negative Zehnerlogarithmus von c(H₃O⁺)",
       "der Zehnerlogarithmus von c(H₃O⁺) ohne Minus",
       "die Masse der gelösten Säure in Gramm"
     ],
@@ -228,23 +228,23 @@
     "topic": "pH-Wert"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "HCl + NaOH → NaCl + H₂O; das Salz ist Natriumchlorid, also Kochsalz. Natriumsulfat käme von Schwefelsäure, Natriumnitrat von Salpetersäure, Natriumacetat von Essigsäure.",
     "options": [
-      "Natriumchlorid und Wasser",
       "Natriumsulfat und Wasser",
       "Natriumnitrat und Wasser",
-      "Natriumacetat und Wasser"
+      "Natriumacetat und Wasser",
+      "Natriumchlorid und Wasser"
     ],
     "question": "Was entsteht, wenn man Salzsäure mit Natronlauge neutralisiert?",
     "topic": "Neutralisation"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Das Metall gibt Elektronen an die H₃O⁺-Ionen ab, dabei entsteht Wasserstoff: Zn + 2 HCl → ZnCl₂ + H₂. Obwohl Salzsäure Chlor enthält, wird kein Chlorgas frei.",
     "options": [
-      "Sauerstoff",
       "Wasserstoff",
+      "Sauerstoff",
       "Stickstoff",
       "Chlorgas"
     ],
@@ -252,11 +252,11 @@
     "topic": "Reaktionen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Gelöstes CO₂ reagiert mit Wasser zu H₂CO₃ – das steckt in jedem Sprudelwasser. SO₂ ergäbe schweflige Säure, NO₂ salpetrige und Salpetersäure, O₂ bildet gar keine Säure.",
     "options": [
-      "CO₂",
       "SO₂",
+      "CO₂",
       "NO₂",
       "O₂"
     ],
@@ -264,35 +264,35 @@
     "topic": "Säuren & Basen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Solche Säuren heißen einprotonig, zum Beispiel HCl, HNO₃ oder Essigsäure. Zweiprotonig ist H₂SO₄, dreiprotonig H₃PO₄.",
     "options": [
-      "einprotonig",
       "zweiprotonig",
       "dreiprotonig",
+      "einprotonig",
       "neutral"
     ],
     "question": "Wie nennt man eine Säure, die pro Molekül nur ein Proton abgeben kann?",
     "topic": "Konzepte"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "H₂SO₄ gibt nacheinander zwei Protonen ab, erst zu HSO₄⁻, dann zu SO₄²⁻. Drei abgebbare Protonen hat erst eine Säure wie H₃PO₄.",
     "options": [
       "einprotonige Säure",
-      "zweiprotonige Säure",
       "dreiprotonige Säure",
-      "protonenfreie Base"
+      "protonenfreie Base",
+      "zweiprotonige Säure"
     ],
     "question": "Schwefelsäure (H₂SO₄) ist eine …",
     "topic": "Konzepte"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Solche Stoffe heißen Ampholyte oder amphoter, etwa Wasser, HCO₃⁻ und HSO₄⁻. Indikatoren zeigen den pH nur an, Katalysatoren beschleunigen Reaktionen.",
     "options": [
-      "Indikatorfarbstoffe",
       "Ampholyte",
+      "Indikatorfarbstoffe",
       "Katalysatoren",
       "Neutralsalze"
     ],
@@ -312,35 +312,35 @@
     "topic": "Konzepte"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Ein pH-Meter misst über eine Glaselektrode die H₃O⁺-Aktivität und zeigt daraus den pH-Wert an. Wie viel Säure insgesamt gelöst ist, verrät es nicht – dafür braucht man eine Titration.",
     "options": [
       "die Temperatur der Lösung",
-      "den pH-Wert der Lösung",
       "die Gesamtkonzentration der Säure",
+      "den pH-Wert der Lösung",
       "das Volumen der Lösung"
     ],
     "question": "Was misst man mit einem pH-Meter?",
     "topic": "pH & Indikatoren"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Stark heißt: praktisch jedes Molekül gibt sein Proton an Wasser ab, etwa HCl + H₂O → H₃O⁺ + Cl⁻. Stark ist dabei nicht dasselbe wie konzentriert – auch eine sehr verdünnte Salzsäure bleibt eine starke Säure.",
     "options": [
-      "sie ist vollständig protolysiert",
       "sie ist nur teilweise protolysiert",
       "sie ist immer hoch konzentriert",
-      "sie bleibt als Molekül gelöst"
+      "sie bleibt als Molekül gelöst",
+      "sie ist vollständig protolysiert"
     ],
     "question": "Wie verhält sich eine starke Säure in Wasser?",
     "topic": "Konzepte"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Es stellt sich ein Gleichgewicht ein: CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺, nur ein kleiner Teil der Moleküle ist protolysiert. Schwach sagt nichts über die Konzentration aus.",
     "options": [
-      "vollständig protolysiert",
       "nur teilweise protolysiert",
+      "vollständig protolysiert",
       "überhaupt nicht protolysiert",
       "immer stark verdünnt"
     ],
@@ -360,35 +360,35 @@
     "topic": "Säuren & Basen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Durch die Autoprotolyse 2 H₂O ⇌ H₃O⁺ + OH⁻ entstehen je 10⁻⁷ mol/L, also pH 7. Bei höherer Temperatur sinkt der Neutralpunkt unter 7, ohne dass das Wasser dadurch sauer wird.",
     "options": [
       "0",
-      "7",
       "14",
+      "7",
       "4"
     ],
     "question": "Welchen pH-Wert hat reines Wasser bei 25 °C?",
     "topic": "pH-Wert"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Es gilt c(H₃O⁺) · c(OH⁻) = 10⁻¹⁴ mol²/L² bei 25 °C, daraus folgt pH + pOH = 14. Bei anderen Temperaturen ändert sich das Ionenprodukt, und die 14 stimmt nicht mehr.",
     "options": [
       "10⁻⁷ mol²/L²",
-      "10⁻¹⁴ mol²/L²",
       "10⁻¹² mol²/L²",
-      "1 mol²/L²"
+      "1 mol²/L²",
+      "10⁻¹⁴ mol²/L²"
     ],
     "question": "Welchen Wert hat das Ionenprodukt des Wassers (H₃O⁺ · OH⁻) bei 25 °C?",
     "topic": "Konzepte"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Aus starker Säure und starker Base entsteht ein Salz, dessen Ionen den pH nicht verändern – daher pH 7. Bei einer schwachen Säure mit starker Base läge der Äquivalenzpunkt dagegen über 7.",
     "options": [
-      "deutlich sauer",
       "neutral, pH 7",
+      "deutlich sauer",
       "deutlich basisch",
       "genau pH 14"
     ],
@@ -396,11 +396,11 @@
     "topic": "Neutralisation"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Der Magen produziert Salzsäure, nüchtern liegt der pH bei etwa 1 bis 2. Der Bereich 6,8–7,4 gehört zum Blut, Werte über 8 zu basischen Lösungen wie Seifenlauge.",
     "options": [
-      "1–2",
       "6,8–7,4",
+      "1–2",
       "8,5–9,5",
       "12–13,5"
     ],
@@ -420,24 +420,24 @@
     "topic": "pH-Wert"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Zitronensaft enthält Citronensäure und liegt bei pH 2 bis 3. Kernseifenlauge, Natron (NaHCO₃) und Kalkwasser reagieren dagegen alle basisch.",
     "options": [
       "Kernseifenlauge",
       "Natron (NaHCO₃)",
-      "Zitronensaft",
-      "Kalkwasser"
+      "Kalkwasser",
+      "Zitronensaft"
     ],
     "question": "Welcher Haushaltsstoff reagiert sauer?",
     "topic": "pH-Wert"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "pH 13 bedeutet c(H₃O⁺) = 10⁻¹³ mol/L und c(OH⁻) = 10⁻¹ mol/L, also stark basisch wie ein Rohrreiniger. Stark sauer wäre der Spiegelwert pH 1.",
     "options": [
+      "stark basisch",
       "stark sauer",
       "neutral",
-      "stark basisch",
       "schwach sauer"
     ],
     "question": "Eine Lösung mit pH 13 ist …",
@@ -456,25 +456,25 @@
     "topic": "Konzepte"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Je stärker man verdünnt, desto weniger H₃O⁺ bleibt übrig, der pH steigt und läuft gegen 7. Über 7 kommt er nie: Die Autoprotolyse des Wassers liefert immer noch H₃O⁺, eine Säure kann eine Lösung also nicht basisch machen.",
     "options": [
       "0",
-      "7",
       "14",
+      "7",
       "1"
     ],
     "question": "Beim Verdünnen einer sauren Lösung mit viel Wasser nähert sich der pH-Wert dem Wert …",
     "topic": "pH-Wert"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Brønsted beschreibt Protolysen: HA + B ⇌ A⁻ + HB⁺. Elektronenpaare werden bei Lewis-Säure-Base-Reaktionen übertragen, Hydroxid-Ionen stehen im Zentrum der Arrhenius-Definition.",
     "options": [
       "einzelne Elektronen",
-      "Protonen (H⁺)",
       "Elektronenpaare",
-      "Hydroxid-Ionen"
+      "Hydroxid-Ionen",
+      "Protonen (H⁺)"
     ],
     "question": "Welche Teilchen tauschen Säuren und Basen nach Brønsted aus?",
     "topic": "Brønsted"

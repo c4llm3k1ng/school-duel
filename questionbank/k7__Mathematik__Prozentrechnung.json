@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Prozent: pro Centum (von Hundert). 25% = 25/100 = 0,25. Drei Größen: G (Ganzes), W (Teil), p% (Prozentsatz). Formeln: W = G × p/100; p = W/G × 100; G = W × 100/p.",
     "options": [
-      "Rechnen mit Brüchen: Zähler und Nenner werden erweitert oder gekürzt, um zwei Anteile miteinander zu vergleichen.",
       "Rechnen mit Anteilen von Hundert: Prozentzahl p, Grundwert G und Prozentwert W sind die drei Grundgrößen.",
+      "Rechnen mit Brüchen: Zähler und Nenner werden erweitert oder gekürzt, um zwei Anteile miteinander zu vergleichen.",
       "Rechnen mit Dezimalzahlen: Die Stellen nach dem Komma werden schriftlich addiert, subtrahiert und multipliziert.",
       "Vergleichen von Brüchen: Über den Hauptnenner wird die Größe zweier Anteile geordnet."
     ],
@@ -36,13 +36,13 @@
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Prozentsatz p: p = W/G × 100. 15 von 60: 15/60 = 0,25 = 25%. Merkhilfe: W oben, G unten → Anteil × 100. Probe: 25% von 60 = 15. Immer fragen: Was ist das Ganze (G)?",
     "options": [
       "p = G × W: Grundwert und Prozentwert werden direkt miteinander multipliziert.",
-      "p = W/G × 100: Prozentwert durch Grundwert teilen, dann mal 100 nehmen.",
       "p = G/W × 100: Der Grundwert wird durch den Prozentwert geteilt und mal 100 genommen.",
-      "p = (G − W)/100: Die Differenz von Grundwert und Prozentwert wird durch 100 geteilt."
+      "p = (G − W)/100: Die Differenz von Grundwert und Prozentwert wird durch 100 geteilt.",
+      "p = W/G × 100: Prozentwert durch Grundwert teilen, dann mal 100 nehmen."
     ],
     "question": "Wie berechnet man den Prozentsatz?",
     "topic": "Prozentrechnung"
@@ -72,35 +72,35 @@
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Dezimaladdition: Kommas aufeinander. 3,47 + 1,8 = 3,47 + 1,80 = 5,27. Fehlende Stellen mit Nullen auffüllen. Carry beachten: 0,7 + 0,8 = 1,5 (1 übertragen). Probe: Schätzung (3,5 + 1,8 ≈ 5,3).",
     "options": [
       "Die Kommas werden einfach weggelassen und die Ziffern als Zahlen addiert.",
-      "Die Kommas werden untereinandergeschrieben und die Stellen von rechts nach links addiert.",
       "Vorkomma- und Nachkommateil werden getrennt addiert und danach wieder korrekt zusammengesetzt.",
+      "Die Kommas werden untereinandergeschrieben und die Stellen von rechts nach links addiert.",
       "Die Zahlen werden rechtsbündig untereinandergeschrieben und dann Stelle für Stelle addiert."
     ],
     "question": "Wie addiert man Dezimalzahlen?",
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "2,3 × 1,4: ohne Komma: 23 × 14 = 322. Dezimalstellen: 1+1=2 → 3,22. 0,5 × 0,4: 5×4=20, 2 Stellen → 0,20 = 0,2. Probe: 2,3 × 1,4 ≈ 2 × 1,5 = 3, passt zu 3,22. Komma-Regel: Stellen zählen.",
     "options": [
       "Ohne Kommas multiplizieren, dann so viele Dezimalstellen abtrennen, wie der größere Faktor hat.",
-      "Ohne Kommas multiplizieren und dann so viele Dezimalstellen abtrennen, wie beide Faktoren haben.",
       "Beide Faktoren auf ganze Zahlen runden, multiplizieren und danach das Komma wieder einsetzen.",
-      "Die Kommas wie beim Addieren untereinanderschreiben und die Stellen multiplizieren."
+      "Die Kommas wie beim Addieren untereinanderschreiben und die Stellen multiplizieren.",
+      "Ohne Kommas multiplizieren und dann so viele Dezimalstellen abtrennen, wie beide Faktoren haben."
     ],
     "question": "Wie multipliziert man Dezimalzahlen?",
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "6,4 ÷ 4: 6÷4=1 Rest 2; 2,4÷4=0,6; Ergebnis: 1,6. Komma im Quotienten an der Stelle unter Komma im Dividenden. 0,15 ÷ 3 = 0,05. Probe: 1,6 × 4 = 6,4.",
     "options": [
-      "Das Komma wird gestrichen, dann dividiert und das Ergebnis bleibt eine ganze Zahl.",
       "Es wird schriftlich dividiert und das Komma genau unter das Komma des Dividenden gesetzt.",
+      "Das Komma wird gestrichen, dann dividiert und das Ergebnis bleibt eine ganze Zahl.",
       "Der Divisor wird mit 10 erweitert und das Komma im Ergebnis eine Stelle nach links gerückt.",
       "Erst wird der ganzzahlige Anteil geteilt und die Nachkommastellen bleiben unverändert stehen."
     ],
@@ -120,35 +120,35 @@
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Rabatt: Preisminderung. 20% Rabatt: × 0,80. Rabattbetrag = G × p/100 = 80 × 0,2 = 16€. Neuer Preis = 80 - 16 = 64€. Schnell: G × (1 - p/100) = 80 × 0,8 = 64€.",
     "options": [
       "Ein Preisaufschlag in Prozent: neuer Preis = G × (1 + p/100), der Preis steigt.",
-      "Ein Preisnachlass in Prozent: neuer Preis = G × (1 − p/100), der Preis sinkt.",
       "Eine Steuer auf Waren, die vom Händler auf den Nettopreis aufgeschlagen wird.",
+      "Ein Preisnachlass in Prozent: neuer Preis = G × (1 − p/100), der Preis sinkt.",
       "Eine Zusatzgebühr für Versand, die beim Kauf auf den Warenwert addiert wird."
     ],
     "question": "Was ist ein Rabatt?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "MwSt.: Nettopreis × 1,19 = Bruttopreis (19%). Netto: 100€ → Brutto: 119€. MwSt.-Betrag: 19€. Rückrechnung Netto: Brutto ÷ 1,19. 7%: Lebensmittel, Bücher, Zeitschriften, Hotelübernachtungen.",
     "options": [
       "Ein Preisnachlass des Händlers, der vor dem Kauf vom Nettopreis abgezogen wird.",
-      "Eine Steuer auf Waren und Dienstleistungen, die zum Nettopreis addiert den Bruttopreis ergibt.",
       "Eine Steuer auf das Einkommen, die vom Arbeitgeber direkt vom Bruttolohn abgezogen wird.",
-      "Der reine Warenwert ohne jede Abgabe, den der Händler dem Kunden in Rechnung stellt."
+      "Der reine Warenwert ohne jede Abgabe, den der Händler dem Kunden in Rechnung stellt.",
+      "Eine Steuer auf Waren und Dienstleistungen, die zum Nettopreis addiert den Bruttopreis ergibt."
     ],
     "question": "Was ist Mehrwertsteuer (MwSt.)?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Prozentuale Änderung: (100-80)/80 × 100 = 20/80 × 100 = 25%. Steigerung: positiv. Senkung: negativ. Beispiel: Aktie fiel von 200 auf 150: (150-200)/200 × 100 = -25%.",
     "options": [
-      "Die reine Differenz beider Werte, ohne jeden Bezug auf den Ausgangswert.",
       "Die Differenz beider Werte, geteilt durch den alten Wert und dann mal 100.",
+      "Die reine Differenz beider Werte, ohne jeden Bezug auf den Ausgangswert.",
       "Die Summe beider Werte, geteilt durch 100 und mal den Ausgangswert genommen.",
       "Die Differenz beider Werte, geteilt durch den neuen Wert und mal 100 genommen."
     ],
@@ -168,25 +168,25 @@
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Runden: gewünschte Stelle, dann eine Stelle weiter schauen. 3,476 → 2 Stellen: dritte Stelle 6 ≥ 5 → aufrunden: 3,48. 3,473 → 3,47. Kaufmännisch: immer so. Mathematisch: gleiche Regel.",
     "options": [
       "Es wird stets aufgerundet, sobald hinter der gewünschten Stelle noch Ziffern folgen.",
-      "Die Ziffer hinter der gewünschten Stelle entscheidet: unter 5 abrunden, ab 5 aufrunden.",
       "Es wird stets abgerundet, alle Ziffern hinter der gewünschten Stelle fallen einfach weg.",
+      "Die Ziffer hinter der gewünschten Stelle entscheidet: unter 5 abrunden, ab 5 aufrunden.",
       "Die allerletzte Ziffer der Zahl entscheidet: unter 5 abrunden, ab 5 aufrunden."
     ],
     "question": "Wie rundet man Dezimalzahlen?",
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Signifikante Stellen: 12,30 hat 4 (1,2,3,0). 0,0305 hat 3 (3,0,5). Führende Nullen zählen nicht. Begleitende Nullen (z.B. 12,30) zählen. Wichtig für Messungen und wissenschaftliche Genauigkeit.",
     "options": [
       "Alle Ziffern nach dem Komma, also auch die führenden Nullen einer kleinen Zahl.",
-      "Alle Ziffern ab der ersten von null verschiedenen Ziffer, samt Endnullen.",
       "Nur die Ziffern vor dem Komma, also der ganzzahlige Anteil einer Dezimalzahl.",
-      "Nur die Ziffern, die nach dem Runden auf zwei Dezimalstellen übrig bleiben."
+      "Nur die Ziffern, die nach dem Runden auf zwei Dezimalstellen übrig bleiben.",
+      "Alle Ziffern ab der ersten von null verschiedenen Ziffer, samt Endnullen."
     ],
     "question": "Was sind signifikante Stellen?",
     "topic": "Dezimalzahlen"
@@ -216,35 +216,35 @@
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Rückrechnung: G = W ÷ Prozentfaktor. Rabatt 20%: Faktor = 0,8. G = 80 ÷ 0,8 = 100. Achtung: G ≠ W + 20% (Bezugsgröße ist G, nicht W!). 80 + 20% von 80 = 80+16 = 96 ≠ 100.",
     "options": [
       "Bezahlter Preis plus der Rabattsatz, angewendet auf den bezahlten Preis.",
-      "Bezahlter Preis geteilt durch (1 − p/100), also durch den Prozentfaktor.",
       "Bezahlter Preis mal (1 + p/100), also mit dem Erhöhungsfaktor multipliziert.",
+      "Bezahlter Preis geteilt durch (1 − p/100), also durch den Prozentfaktor.",
       "Bezahlter Preis mal (1 − p/100), also erneut um den Rabatt vermindert."
     ],
     "question": "Wie berechnet man den Originalpreis nach Rabatt?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "K=500€, p=4%, t=1: Z=500×0,04×1=20€. t=6 Monate=0,5 Jahre: Z=500×0,04×0,5=10€. Endkapital: K+Z=510€. Zinseszins (nach n Jahren): K×(1+p/100)ⁿ.",
     "options": [
       "Alle drei bezeichnen denselben Betrag, benannt aus Sicht von Bank, Kunde und Staat.",
-      "Kapital ist der angelegte Betrag, Zinssatz der Prozentsatz pro Jahr, Zinsen der Ertrag.",
       "Kapital ist die Summe aus Zinsen und Zinssatz, die am Jahresende ausgezahlt wird.",
-      "Kapital ist der Ertrag, Zinsen sind der angelegte Betrag, Zinssatz ist die Laufzeit."
+      "Kapital ist der Ertrag, Zinsen sind der angelegte Betrag, Zinssatz ist die Laufzeit.",
+      "Kapital ist der angelegte Betrag, Zinssatz der Prozentsatz pro Jahr, Zinsen der Ertrag."
     ],
     "question": "Was ist Kapital, Zinssatz und Zinsen?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "3/8 = 0,375 = 37,5%. 3÷8=0,375; ×100=37,5. Oder: 3/8 = 3×12,5/100 = 37,5/100 = 37,5%. Merke: 1/8 = 12,5%; 3/8 = 37,5%; 5/8 = 62,5%. Wer 8/3 rechnet, landet dagegen bei 266,7%.",
     "options": [
-      "12,5%",
       "37,5%",
+      "12,5%",
       "62,5%",
       "26,7%"
     ],
@@ -264,25 +264,25 @@
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "0,3 × 0,7: Ohne Komma: 3 × 7 = 21. Dezimalstellen: 1+1=2. Ergebnis: 0,21. Als Bruch: 3/10 × 7/10 = 21/100 = 0,21. Typische Fehler: 2,10 (nur eine Stelle abgetrennt), 21,0 (Komma vergessen), 1,00 (addiert statt multipliziert).",
     "options": [
       "2,10",
-      "0,21",
       "1,00",
+      "0,21",
       "21,0"
     ],
     "question": "Wie multipliziert man 0,3 × 0,7?",
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Durch 0,5 dividieren = mit 2 multiplizieren: 6,5 × 2 = 13, also 13,0. Oder: 6,5 ÷ 0,5 = 65/10 ÷ 5/10 = 65/10 × 10/5 = 65/5 = 13. Fehler: 6,5 × 0,5 = 3,25. Tipp: Division durch 0,1 = × 10.",
     "options": [
       "3,25",
-      "13,0",
       "1,30",
-      "32,5"
+      "32,5",
+      "13,0"
     ],
     "question": "Was ist 6,5 ÷ 0,5?",
     "topic": "Dezimalzahlen"
@@ -312,35 +312,35 @@
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Periodisch: Schreibweise mit Strich über Periode. 1/3 = 0,3̄. 1/6 = 0,16̄. 1/7 = 0,142857̄ (6-stellige Periode). Jeder echte Bruch ergibt periodische oder endliche Dezimalzahl. Irrational: nicht periodisch.",
     "options": [
       "Eine Dezimalzahl, die nach wenigen Stellen abbricht und damit exakt darstellbar ist.",
-      "Eine Dezimalzahl, bei der sich eine Zifferngruppe nach dem Komma unendlich wiederholt.",
       "Eine Dezimalzahl, bei der nach dem Komma ausschließlich Nullen aufeinander folgen.",
+      "Eine Dezimalzahl, bei der sich eine Zifferngruppe nach dem Komma unendlich wiederholt.",
       "Eine Dezimalzahl, deren Ziffern nach dem Komma niemals ein wiederkehrendes Muster zeigen."
     ],
     "question": "Was ist eine periodische Dezimalzahl?",
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Brutto = Netto × 1,19 = 50 × 1,19 = 59,50€. MwSt.-Betrag: 50 × 0,19 = 9,50€. Probe: 59,50 - 9,50 = 50€ (Netto). Ermäßigt (7%): 50 × 1,07 = 53,50€.",
     "options": [
       "69,00€",
-      "59,50€",
       "51,90€",
-      "50,19€"
+      "50,19€",
+      "59,50€"
     ],
     "question": "Was kostet ein Artikel nach 19% MwSt., wenn er netto 50€ kostet?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Absolut: 30 auf 40 → +10. Prozentual: +10/30 × 100 = +33,3%. Wichtig: Bezugsgröße angeben! 40 auf 30: -10 absolut, -25% (10/40 × 100). Selbe Differenz, anderer Ausgangswert → verschiedene Prozentsätze.",
     "options": [
-      "Beide Angaben beschreiben denselben Unterschied, nur in unterschiedlichen Einheiten.",
       "Absolut ist die reine Differenz, prozentual die Differenz bezogen auf den Ausgangswert.",
+      "Beide Angaben beschreiben denselben Unterschied, nur in unterschiedlichen Einheiten.",
       "Der absolute Unterschied ist stets größer als der prozentuale, egal welcher Ausgangswert gilt.",
       "Absolut ist die Differenz bezogen auf 100, prozentual die reine Differenz beider Werte."
     ],
@@ -348,11 +348,11 @@
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "2 Dezimalstellen: 5,67|49. Dritte Stelle = 4 < 5 → abrunden: 5,67. Wäre dritte Stelle ≥ 5: aufrunden. 5,675 → 5,68. 5,6749 → 5,67 (dritte Stelle 4, nicht 9 entscheidet).",
     "options": [
-      "5,67",
       "5,66",
+      "5,67",
       "5,68",
       "5,70"
     ],
@@ -360,13 +360,13 @@
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "30% Rabatt: neuer Preis = 120 × (1-0,3) = 120 × 0,7 = 84€. Ersparnis: 120 - 84 = 36€ oder 120 × 0,3 = 36€. Der neue Preis beträgt also 84€ bei einer Ersparnis von 36€.",
     "options": [
       "36€ neuer Preis, 84€ Ersparnis",
       "90€ neuer Preis, 30€ Ersparnis",
-      "78€ neuer Preis, 42€ Ersparnis",
-      "84€ neuer Preis, 36€ Ersparnis"
+      "84€ neuer Preis, 36€ Ersparnis",
+      "78€ neuer Preis, 42€ Ersparnis"
     ],
     "question": "Was ist ein Sonderangebot mit 30% Rabatt auf einen Originalpreis von 120€?",
     "topic": "Prozentrechnung"
@@ -384,11 +384,11 @@
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Brutto - Abzüge = Netto. Abzüge: Lohnsteuer, Krankenversicherung, Rentenversicherung, Pflegeversicherung, Arbeitslosenversicherung. Typisch: 25-40% Abzüge je nach Einkommen. Wichtig für Gehaltsverhandlung.",
     "options": [
-      "Beide bezeichnen denselben Betrag, benannt vor und nach der Überweisung durch die Firma.",
       "Bruttolohn ist der Lohn vor allen Abzügen, Nettolohn der am Ende ausgezahlte Betrag.",
+      "Beide bezeichnen denselben Betrag, benannt vor und nach der Überweisung durch die Firma.",
       "Nettolohn ist der Lohn vor Abzügen, Bruttolohn der tatsächlich ausgezahlte Betrag.",
       "Bruttolohn gilt nur für Unternehmen, Nettolohn nur für angestellte Arbeitnehmer."
     ],
@@ -408,35 +408,35 @@
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "W = G × p/100 = 25 × 80/100 = 20. 80% von 25: 25 × 0,8 = 20. Wer 25 ÷ 0,8 rechnet, erhält 31 und damit mehr Aufgaben, als es überhaupt gibt. Probe: 20/25 × 100 = 80%.",
     "options": [
       "15 richtige Aufgaben",
-      "20 richtige Aufgaben",
       "80 richtige Aufgaben",
+      "20 richtige Aufgaben",
       "31 richtige Aufgaben"
     ],
     "question": "Was ist ein Schüler mit 80% Richtigquote bei 25 Aufgaben?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Zehnerpotenzen: 10² = 100. 2,3 × 10² = 230. Taschenrechner: EXP oder ×10ˣ Taste. 2,3E2 bedeutet 230. 5,6 × 10⁻³ = 0,0056. Schnelles Berechnen: Komma um n Stellen verschieben.",
     "options": [
       "2,3 + 10 × 2, das Ergebnis lautet dann 22,3",
-      "2,3 EXP 2 oder 2,3 × 100, das Ergebnis ist 230",
       "2,3 × 10 × 2, das Ergebnis lautet dann 46",
-      "2,3 × 2 hoch 10, das Ergebnis lautet 2355,2"
+      "2,3 × 2 hoch 10, das Ergebnis lautet 2355,2",
+      "2,3 EXP 2 oder 2,3 × 100, das Ergebnis ist 230"
     ],
     "question": "Was ist Taschenrechner-Eingabe für 2,3 × 10²?",
     "topic": "Dezimalzahlen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Füllmenge auf Verpackung: Netto-Gewicht. Brutto = Netto + Tara (Verpackung). Wichtig beim Einkaufen: aufgedrucktes Gewicht = Netto. Zoll und Handel: Unterschied wichtig bei Berechnung.",
     "options": [
-      "Netto und Brutto meinen dasselbe Gewicht, Tara ist nur der Fachbegriff dafür.",
       "Netto ist das Gewicht ohne Verpackung, Brutto mit Verpackung, Tara die Verpackung.",
+      "Netto und Brutto meinen dasselbe Gewicht, Tara ist nur der Fachbegriff dafür.",
       "Brutto ist das Gewicht ohne Verpackung, Netto mit Verpackung, Tara der reine Inhalt.",
       "Netto ist das Gesamtgewicht der Ladung, Brutto das Gewicht einer einzelnen Packung."
     ],
@@ -456,25 +456,25 @@
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "200% von 50 = 100. 100% = Grundwert; 200% = doppelter Grundwert. 300% = dreifach. Über 100% bedeutet: mehr als das Ganze. 0% = nichts. 50% = die Hälfte.",
     "options": [
       "Die Hälfte des Grundwerts, also das 0,5-Fache",
-      "Das Doppelte des Grundwerts, also das 2-Fache",
       "Das Zwanzigfache des Grundwerts, also das 20-Fache",
+      "Das Doppelte des Grundwerts, also das 2-Fache",
       "Das Zweihundertfache des Grundwerts, also das 200-Fache"
     ],
     "question": "Was bedeutet 200% eines Wertes?",
     "topic": "Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "12,5% = 12,5/100. Erweitern: × 8/8 → 100/800 = 1/8. Probe: 1/8 = 0,125 = 12,5%. Bekannte Prozent-Bruch-Paare: 25%=1/4, 50%=1/2, 75%=3/4, 12,5%=1/8, 33,3%≈1/3.",
     "options": [
       "12/50",
-      "1/8",
       "1/12",
-      "5/8"
+      "5/8",
+      "1/8"
     ],
     "question": "Was ist 12,5% als Bruch?",
     "topic": "Prozentrechnung"

@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Addiere zuerst auf beiden Seiten 7: 3x = 8 + 7 = 15. Teile dann beide Seiten durch 3: x = 15 / 3 = 5. Probe: 3 ⋅ 5 − 7 = 15 − 7 = 8.",
     "options": [
-      "x = 3",
       "x = 5",
+      "x = 3",
       "x = 1",
       "x = 4"
     ],
@@ -12,24 +12,24 @@
     "topic": "Lineare Gleichungen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Löse zuerst die Klammer auf und fasse die linke Seite zusammen: 2x + 6 − 5 = 3x − 1, also 2x + 1 = 3x − 1. Subtrahiere 2x auf beiden Seiten: 1 = x − 1. Addiere 1: x = 2.",
     "options": [
       "x = 0",
-      "x = 1",
       "x = 2",
+      "x = 1",
       "x = 3"
     ],
     "question": "Löse die Gleichung: 2(x + 3) - 5 = 3x - 1",
     "topic": "Lineare Gleichungen mit Klammern"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Addiere beide Gleichungen, damit y wegfällt: (x + y) + (x − y) = 10 + 2, also 2x = 12. Teile durch 2: x = 6. (Eingesetzt ergibt sich y = 4.)",
     "options": [
       "x = 4",
-      "x = 6",
       "x = 8",
+      "x = 6",
       "x = 12"
     ],
     "question": "Gegeben ist das Gleichungssystem:\nI) x + y = 10\nII) x - y = 2\nWas ist der Wert von x?",
@@ -60,37 +60,37 @@
     "topic": "Quadratische Gleichungen (pq-Formel)"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Der Nenner darf nicht null werden, also ist x = 1 ausgeschlossen (D = ℝ \\ {1}). Multipliziere beide Seiten mit (x − 1): 3 = 6(x − 1) = 6x − 6. Addiere 6: 9 = 6x. Teile durch 6: x = 1,5. Der Wert liegt in der Definitionsmenge und ist damit gültig.",
     "options": [
       "x = 0,5",
-      "x = 3",
       "x = 1,5",
+      "x = 3",
       "x = 2"
     ],
     "question": "Löse die Bruchgleichung: 3/(x-1) = 6 (Beachte die Definitionsmenge!)",
     "topic": "Bruchgleichungen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Sei b die Breite und l die Länge. Aus U = 2(l + b) = 20 folgt l + b = 10. Aus 'Länge 4 cm länger als die Breite' folgt l = b + 4. Einsetzen: (b + 4) + b = 10, also 2b + 4 = 10 und 2b = 6. Damit ist b = 3 cm (und l = 7 cm).",
     "options": [
-      "3 cm",
       "5 cm",
       "7 cm",
+      "3 cm",
       "8 cm"
     ],
     "question": "Ein Rechteck hat einen Umfang von 20 cm. Die Länge ist 4 cm länger als die Breite. Welche Länge hat die Breite des Rechtecks?",
     "topic": "Textaufgaben zu Gleichungen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Das Quadrat einer reellen Zahl ist nie negativ, es gilt immer (x − 2)² ≥ 0. Eine Zahl, die quadriert −9 ergibt, gibt es in den reellen Zahlen nicht. Die Gleichung hat daher keine reelle Lösung.",
     "options": [
-      "keine reelle Lösung",
       "genau eine reelle Lösung",
       "genau zwei reelle Lösungen",
-      "unendlich viele reelle Lösungen"
+      "unendlich viele reelle Lösungen",
+      "keine reelle Lösung"
     ],
     "question": "Wie viele reelle Lösungen hat die Gleichung (x - 2)² = -9?",
     "topic": "Anzahl der Lösungen von Gleichungen"
@@ -120,25 +120,25 @@
     "topic": "Lineare Gleichung mit Klammern und Brüchen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Einsetzungsverfahren: Setze I in II ein: 3x + (2x − 1) = 9, also 5x − 1 = 9. Addiere 1: 5x = 10, damit x = 2. Eingesetzt in I: y = 2 ⋅ 2 − 1 = 3. Die Lösung ist (2 | 3).",
     "options": [
-      "(2, 3)",
       "(3, 5)",
       "(1, 1)",
+      "(2, 3)",
       "(4, 7)"
     ],
     "question": "Löse das lineare Gleichungssystem:\nI: y = 2x - 1\nII: 3x + y = 9\nWelches Zahlenpaar (x, y) ist die Lösung?",
     "topic": "Lineares Gleichungssystem"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Die Gleichung steht in Normalform x² + px + q = 0 mit p = −6 und q = 8. pq-Formel: x = −p/2 ± √((p/2)² − q) = 3 ± √(9 − 8) = 3 ± 1. Die Lösungen sind x₁ = 2 und x₂ = 4.",
     "options": [
-      "x₁ = 2, x₂ = 4",
       "x₁ = 1, x₂ = 8",
       "x₁ = -2, x₂ = -4",
-      "x₁ = 2, x₂ = 6"
+      "x₁ = 2, x₂ = 6",
+      "x₁ = 2, x₂ = 4"
     ],
     "question": "Löse die quadratische Gleichung: x² - 6x + 8 = 0",
     "topic": "Quadratische Gleichung (pq-Formel)"
@@ -156,48 +156,48 @@
     "topic": "Quadratische Gleichung (Binomische Form)"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Die Nenner dürfen nicht null werden, also sind x = 1 und x = −1 ausgeschlossen. Multipliziere mit dem Hauptnenner (x − 1)(x + 1): (x + 1) + 2(x − 1) = (x − 1)(x + 1), also 3x − 1 = x² − 1. Umstellen: x² − 3x = 0, faktorisiert x(x − 3) = 0. Die Lösungen x₁ = 0 und x₂ = 3 liegen beide in der Definitionsmenge.",
     "options": [
       "x₁ = 2, x₂ = -1",
+      "x₁ = 0, x₂ = 3",
       "x₁ = 1, x₂ = 2",
-      "x₁ = 2, x₂ = -2",
-      "x₁ = 0, x₂ = 3"
+      "x₁ = 2, x₂ = -2"
     ],
     "question": "Bestimme die Lösungen der Gleichung: 1/(x-1) + 2/(x+1) = 1\n(Beachte den Definitionsbereich!)",
     "topic": "Bruchgleichung, die zu einer quadratischen Gleichung führt"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Sei x die Breite in cm, dann ist die Länge (x + 5) cm. Aus x ⋅ (x + 5) = 84 folgt x² + 5x − 84 = 0. pq-Formel mit p = 5 und q = −84: x = −2,5 ± √(6,25 + 84) = −2,5 ± √90,25 = −2,5 ± 9,5. Das ergibt x₁ = 7 und x₂ = −12. Eine Länge kann nicht negativ sein, die Breite beträgt also 7 cm.",
     "options": [
-      "7 cm",
       "12 cm",
       "6 cm",
+      "7 cm",
       "8 cm"
     ],
     "question": "Die Länge eines Rechtecks ist um 5 cm größer als seine Breite. Der Flächeninhalt des Rechtecks beträgt 84 cm². Bestimme die Breite des Rechtecks.",
     "topic": "Textaufgabe (Anwendung quadratischer Gleichungen)"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Addiere zuerst auf beiden Seiten 7: 3x = 15. Teile dann beide Seiten durch 3: x = 5. Probe: 3 ⋅ 5 − 7 = 8.",
     "options": [
       "x = 3",
       "x = 4",
-      "x = 5",
-      "x = 6"
+      "x = 6",
+      "x = 5"
     ],
     "question": "Löse die Gleichung nach x auf: 3x - 7 = 8",
     "topic": "Lineare Gleichung"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Additionsverfahren: (x + 2x) + (y − y) = 7 + 8 ergibt 3x = 15, also x = 5. Setze x = 5 in I ein: 5 + y = 7, also y = 2. Die Lösung ist (5 | 2).",
     "options": [
+      "(5, 2)",
       "(3, 4)",
       "(4, 3)",
-      "(5, 2)",
       "(6, 1)"
     ],
     "question": "Welche Lösung besitzt das lineare Gleichungssystem?\nI) x + y = 7\nII) 2x - y = 8",
@@ -228,23 +228,23 @@
     "topic": "Quadratische Gleichungen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Löse zuerst die Klammer auf: 2x − 6 + 5 = 4x − 1, also 2x − 1 = 4x − 1. Addiere 1 auf beiden Seiten: 2x = 4x. Subtrahiere 2x: 0 = 2x. Teile durch 2: x = 0, also L = {0}.",
     "options": [
       "L = {1}",
-      "L = {0}",
       "L = {-1}",
-      "L = {2}"
+      "L = {2}",
+      "L = {0}"
     ],
     "question": "Bestimme die Lösungsmenge der Gleichung 2(x - 3) + 5 = 4x - 1.",
     "topic": "Lineare Gleichung mit Klammern"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Eine Betragsgleichung führt auf zwei Fälle: 2x − 1 = 5 oder 2x − 1 = −5. Erster Fall: 2x = 6, also x = 3. Zweiter Fall: 2x = −4, also x = −2.",
     "options": [
-      "x₁ = 2, x₂ = 3",
       "x₁ = 3, x₂ = -2",
+      "x₁ = 2, x₂ = 3",
       "x₁ = -2, x₂ = 2",
       "x₁ = 1, x₂ = -1"
     ],
@@ -252,37 +252,37 @@
     "topic": "Betragsgleichungen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Die Wurzel ist nur für x ≥ −4 definiert. Quadriere beide Seiten: x + 4 = 9. Subtrahiere 4: x = 5. Weil Quadrieren keine Äquivalenzumformung ist, gehört die Probe dazu: √(5 + 4) = √9 = 3.",
     "options": [
       "x = 1",
-      "x = 3",
       "x = 5",
+      "x = 3",
       "x = 7"
     ],
     "question": "Löse die Wurzelgleichung √(x + 4) = 3.",
     "topic": "Wurzelgleichungen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Die abc-Formel x = (−b ± √(b² − 4ac)) / (2a) gilt für a ≠ 0. Hier ist a = 2, b = 3, c = −2: x = (−3 ± √(9 + 16)) / 4 = (−3 ± 5) / 4. Damit ist x₁ = 2/4 = 1/2 und x₂ = −8/4 = −2.",
     "options": [
-      "x₁ = 1/2, x₂ = -2",
       "x₁ = 2, x₂ = -1/2",
       "x₁ = -1/2, x₂ = -2",
+      "x₁ = 1/2, x₂ = -2",
       "x₁ = 1, x₂ = -1"
     ],
     "question": "Bestimme die Lösungen der quadratischen Gleichung 2x² + 3x - 2 = 0 mithilfe der Mitternachtsformel (abc-Formel).",
     "topic": "Quadratische Gleichungen (abc-Formel)"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Löse zuerst die Klammer auf: 3x − 6 + 5 = 2x − 1, also 3x − 1 = 2x − 1. Subtrahiere 2x und addiere 1 auf beiden Seiten: x = 0.",
     "options": [
       "x = -2",
-      "x = 0",
       "x = 2",
-      "x = 4"
+      "x = 4",
+      "x = 0"
     ],
     "question": "Löse die Gleichung nach x auf: 3(x - 2) + 5 = 2x - 1",
     "topic": "Lineare Gleichungen"
@@ -300,11 +300,11 @@
     "topic": "Lineare Gleichungssysteme"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Die Gleichung steht in Normalform x² + px + q = 0 mit p = −6 und q = 8, deshalb ist die pq-Formel anwendbar: x = −p/2 ± √((p/2)² − q) = 3 ± √(9 − 8) = 3 ± 1. Die Lösungen sind x₁ = 2 und x₂ = 4.",
     "options": [
-      "x₁ = 2, x₂ = 4",
       "x₁ = -2, x₂ = 4",
+      "x₁ = 2, x₂ = 4",
       "x₁ = 1, x₂ = 8",
       "x₁ = -4, x₂ = -2"
     ],
@@ -324,25 +324,25 @@
     "topic": "Wurzelgleichungen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Zur Lösung x₁ = 0 gehört der Faktor x, zur Lösung x₂ = −5 der Faktor (x + 5). Die Gleichung lautet also x(x + 5) = 0, ausmultipliziert x² + 5x = 0. Zur Kontrolle: x² − 5x = 0 hätte die Lösungen 0 und 5, x² − 25 = 0 die Lösungen 5 und −5.",
     "options": [
-      "x² + 5x = 0",
       "x² - 5x = 0",
       "x² + 25 = 0",
-      "x² - 25 = 0"
+      "x² - 25 = 0",
+      "x² + 5x = 0"
     ],
     "question": "Welche der folgenden Gleichungen hat die Lösungen x₁ = 0 und x₂ = -5?",
     "topic": "Quadratische Gleichungen"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Die Nenner sind Zahlen, es gibt also keine Einschränkung für x. Multipliziere mit dem Hauptnenner 6 (das entspricht dem Über-Kreuz-Multiplizieren): 2(2x − 1) = 3(x + 3), also 4x − 2 = 3x + 9. Subtrahiere 3x und addiere 2: x = 11.",
     "options": [
+      "x = 11",
       "x = 1",
       "x = 7/2",
-      "x = 11/3",
-      "x = 11"
+      "x = 11/3"
     ],
     "question": "Löse die Bruchgleichung nach x auf: (2x - 1) / 3 = (x + 3) / 2",
     "topic": "Bruchgleichungen"
@@ -360,13 +360,13 @@
     "topic": "Anwendungsaufgaben von Gleichungen"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Eine Betragsgleichung führt auf zwei Fälle: 2x − 3 = 7 oder 2x − 3 = −7. Erster Fall: 2x = 10, also x = 5. Zweiter Fall: 2x = −4, also x = −2. Wer am Ende das Teilen durch 2 vergisst, erhält fälschlich 10 und −4.",
     "options": [
       "x₁ = 2, x₂ = -5",
       "x₁ = 10, x₂ = -4",
-      "x₁ = 5, x₂ = -5",
-      "x₁ = 5, x₂ = -2"
+      "x₁ = 5, x₂ = -2",
+      "x₁ = 5, x₂ = -5"
     ],
     "question": "Löse die Betragsgleichung nach x auf: |2x - 3| = 7",
     "topic": "Betragsgleichungen"

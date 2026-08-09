@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Korrekt: \"geschlossen\". Nach langem Vokal oder Diphthong steht \"ss\", nach kurzem Vokal \"ss\" (oder \"sz\" in älteren Regeln). Hier: langes \"o\", also \"ss\" -> geschlossen.",
     "options": [
-      "Das Restaurant hat geschloßen",
       "Das Restaurant hat geschlossen",
+      "Das Restaurant hat geschloßen",
       "Das Resaurant hat geschlossen",
       "Das Restaurant hat gechlosen"
     ],
@@ -12,11 +12,11 @@
     "topic": "ss und sz"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "\"isst\": nach kurzem Vokal steht \"ss\". \"essen\" -> er isst (kurzes i). Aber: der Fluss (kurzes u), das Maß (langes a), der Strauss (Diphthong au).",
     "options": [
-      "Er isst ein Eis",
       "Er ißt ein Eis",
+      "Er isst ein Eis",
       "Er ist ein Eis",
       "Er isset ein Eis"
     ],
@@ -24,25 +24,25 @@
     "topic": "ss und sz"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "sz-Regel (neue Rechtschreibung): Nach langem Vokal oder Diphthong steht sz: Maßstab, Straße, Grüße, Spaß. Nach kurzem Vokal steht ss: Fluss, muss, dass.",
     "options": [
       "Nur nach kurzem Vokal",
-      "Nach langem Vokal oder Diphthong",
       "Nur nach Konsonanten",
+      "Nach langem Vokal oder Diphthong",
       "Immer nach der Endung -en"
     ],
     "question": "Wann schreibt man \"sz\"?",
     "topic": "ss und sz"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Nominalisierungen (Substantivierungen) werden gross geschrieben. \"das Laufen\" ist ein Substantiv (Nomen) geworden. Adjektive/Adverbien/Konjunktionen bleiben klein.",
     "options": [
       "schön",
-      "laufen",
       "trotzdem",
-      "weil"
+      "weil",
+      "laufen"
     ],
     "question": "Welches Wort wird gross geschrieben?",
     "topic": "Grossschreibung"
@@ -60,11 +60,11 @@
     "topic": "Grossschreibung"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "\"ein vierjähriges Kind\" - zusammengesetztes Adjektiv, klein geschrieben. Bindestrich nur bei Verdeutlichung oder Unlesbarkeit: drei-jährig (selten).",
     "options": [
-      "ein vierjähriges Kind",
       "ein vier jähriges Kind",
+      "ein vierjähriges Kind",
       "ein Vierjähriges Kind",
       "ein vierjährig Kind"
     ],
@@ -72,25 +72,25 @@
     "topic": "Zusammenschreibung"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "\"Rad fahren\" - wird getrennt geschrieben, wenn das erste Wort ein Nomen ist. Aber: spazierengehen (Adjektiv/Adverb) zusammen. Neue Rechtschreibung: \"Rad fahren\".",
     "options": [
-      "Rad fahren",
       "radfahren",
       "Radfahren",
+      "Rad fahren",
       "rad fahren"
     ],
     "question": "Wie schreibt man \"radfahren\"?",
     "topic": "Getrenntschreibung"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Philosophie: ph = f-Laut aus dem Griechischen. Griechische und lateinische Lehnwörter behalten oft ihre Originalschreibweise: Physik, Pharma, Phantasie.",
     "options": [
-      "Philosophie",
       "Filosofie",
       "Philosophi",
-      "Philosophiee"
+      "Philosophiee",
+      "Philosophie"
     ],
     "question": "Welches Wort ist richtig geschrieben?",
     "topic": "Fremdwörter"
@@ -108,47 +108,47 @@
     "topic": "Fremdwörter"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Parallel: zwei \"l\" am Ende, ein \"r\". Aus dem Lateinischen: parallela. Merke: para-llel.",
     "options": [
       "Paralel",
-      "Parralel",
       "Parallel",
+      "Parralel",
       "Paralell"
     ],
     "question": "Welche Schreibweise ist richtig?",
     "topic": "Fremdwörter"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Worttrennungsregel: Man trennt zwischen Vorsilbe/Stamm/Nachsilbe. Freund-schaft. Bei Konsonanten zwischen Vokalen: meist vor dem letzten Konsonanten.",
     "options": [
       "Fre-undschaft",
-      "Freund-schaft",
       "Fr-eundschaft",
+      "Freund-schaft",
       "Freunds-chaft"
     ],
     "question": "Wie trennt man \"Freund-schaft\" am Zeilenende?",
     "topic": "Silbentrennung"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Schmet-ter-ling: drei Silben. Doppelkonsonant wird geteilt: ter-ter. Trennung nach Sprechsilben.",
     "options": [
-      "Schmet-ter-ling",
       "Schm-et-ter-ling",
       "Sch-met-ter-ling",
-      "Schmetterling"
+      "Schmetterling",
+      "Schmet-ter-ling"
     ],
     "question": "Wie trennt man \"Schmet-ter-ling\"?",
     "topic": "Silbentrennung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "\"dass\" (Konjunktion) leitet einen Nebensatz ein. Probe: \"welches\" passt nicht hier, also \"dass\". Komma vor dem Nebensatz.",
     "options": [
-      "Er sagte mir das er kommt",
       "Er sagte mir, dass er kommt",
+      "Er sagte mir das er kommt",
       "Er sagte mir das er kommt.",
       "Er sagte mir, das er kommt"
     ],
@@ -156,13 +156,13 @@
     "topic": "dass und das"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Relativsatz wird durch Kommas abgetrennt. \"das er liest\" ist der Relativsatz. Komma vor und nach dem Relativsatz.",
     "options": [
       "Das Buch das er liest ist gut",
+      "Das Buch, das er liest, ist gut",
       "Das Buch, das er liest ist gut",
-      "Das Buch das er liest, ist gut",
-      "Das Buch, das er liest, ist gut"
+      "Das Buch das er liest, ist gut"
     ],
     "question": "Welche Schreibweise ist korrekt?",
     "topic": "Kommasetzung"
@@ -180,13 +180,13 @@
     "topic": "Grossschreibung"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "\"wegen\" verlangt den Genitiv (2. Fall). \"wegen des Regens\" (Genitiv). Umgangssprachlich mit Dativ: \"wegen dem Regen\" - ist im Standarddeutsch nicht korrekt.",
     "options": [
       "wegen den starken Regen",
       "wegen dem starken Regen",
-      "wegen des starken Regens",
-      "wegen starken Regens"
+      "wegen starken Regens",
+      "wegen des starken Regens"
     ],
     "question": "Wie schreibt man \"wegen des starken Regens\"?",
     "topic": "Präpositionen und Kasus"
@@ -216,25 +216,25 @@
     "topic": "Partizip II"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Fremdwörter: Computer, Pizza, Rendez-vous, Trottoir. Lehnwörter sind stärker eingedeutscht: Fenster (lat. fenestra), Strasse (lat. strata).",
     "options": [
       "Ein selbst erfundenes Wort ohne Herkunft",
-      "Ein aus anderen Sprachen übernommenes Wort",
       "Ein mundartliches Wort aus einem Dialekt",
+      "Ein aus anderen Sprachen übernommenes Wort",
       "Ein Wort aus dem Alt- oder Mittelhochdeutschen"
     ],
     "question": "Was ist ein Fremdwort?",
     "topic": "Fremdwörter"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Vor \"obwohl\" steht ein Komma (Konjunktion leitet Nebensatz ein). \"obwohl\" wird klein geschrieben (keine Grossschreibung nach Komma vor Nebensätzen).",
     "options": [
       "Er kommt obwohl er krank ist",
-      "Er kommt, obwohl er krank ist",
       "Er kommt, Obwohl er krank ist",
-      "Er kommt obwohl, er krank ist"
+      "Er kommt obwohl, er krank ist",
+      "Er kommt, obwohl er krank ist"
     ],
     "question": "Welche Schreibweise ist korrekt?",
     "topic": "Kommasetzung"
@@ -276,23 +276,23 @@
     "topic": "Grossschreibung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Dehnungs-h: \"Schuhe\" - das h verlängert den Vokal. Weitere Beispiele: Fahrt, wohnen, Jahr, stahl. Das h spricht man nicht, es zeigt den langen Vokal an.",
     "options": [
       "geben",
-      "Schuhe",
       "Schule",
-      "Sonne"
+      "Sonne",
+      "Schuhe"
     ],
     "question": "Welches Wort schreibt man mit Dehnungs-h?",
     "topic": "Dehnungs-h"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Doppelvokal (Vokalverdopplung): aa (Aal, Maat), ee (Beet, See, Teer), oo (Boot, Zoo). Zeigt einen langen Vokal an.",
     "options": [
-      "Hose",
       "Beet",
+      "Hose",
       "Ohr",
       "Bahn"
     ],
@@ -312,25 +312,25 @@
     "topic": "ie-Schreibung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "\"Angst\" ist ein Nomen, also Grossschreibung. \"Er hat Angst.\" Vergleich: \"Er ist aengstlich\" - hier ist \"aengstlich\" ein Adjektiv, klein.",
     "options": [
       "Er hat angst",
-      "Er hat Angst",
       "er hat Angst",
+      "Er hat Angst",
       "Er hat anGst"
     ],
     "question": "Welche Schreibweise ist korrekt?",
     "topic": "Grossschreibung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Quelle: Q-u-e-l-l-e. \"Q\" im Deutschen immer mit \"u\": Qualität, quatschen, Quassel. Doppel-l in \"Quelle\".",
     "options": [
       "Kuelle",
-      "Quelle",
       "Quele",
-      "Quellee"
+      "Quellee",
+      "Quelle"
     ],
     "question": "Wie buchstabiert man \"Quelle\"?",
     "topic": "Buchstabieren"
@@ -360,25 +360,25 @@
     "topic": "Kommasetzung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Kompositum (Zusammensetzung): Nomen + Nomen: Haustür, Schulhof. Verb + Nomen: Schreibtisch. Adjektiv + Nomen: Grossvater. Das letzte Wort bestimmt den Artikel.",
     "options": [
       "Ein aus einer Fremdsprache entlehntes Wort",
-      "Ein aus mehreren Wörtern zusammengesetztes Wort",
       "Ein vor einem Nomen stehendes Eigenschaftswort",
+      "Ein aus mehreren Wörtern zusammengesetztes Wort",
       "Eine vor ein anderes Wort gestellte Vorsilbe"
     ],
     "question": "Was ist ein Kompositum?",
     "topic": "Wortbildung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "\"Ihr/Ihnen/Sie\" gross: Höflichkeitsform in Briefen und in der direkten Ansprache. \"ihr\" (Personalpronomen für mehrere) oder \"ihr\" (Possessivpronomen) bleibt klein.",
     "options": [
       "Immer, da es sich um ein Pronomen handelt",
-      "Nur als Höflichkeitsform in Briefen und Anreden",
       "Wenn es am Satzanfang nach einem Punkt steht",
-      "Nur wenn es sich auf eine einzelne Person bezieht"
+      "Nur wenn es sich auf eine einzelne Person bezieht",
+      "Nur als Höflichkeitsform in Briefen und Anreden"
     ],
     "question": "Wann wird \"ihr\" grossgeschrieben?",
     "topic": "Grossschreibung"
@@ -408,35 +408,35 @@
     "topic": "Wortbildung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Präfixe/Vorsilben: un- (unschön), ver- (verlieren), be- (besuchen), ge- (geheimnissvoll), er- (erzählen). Verändern oft die Bedeutung oder Wortart.",
     "options": [
       "Eine Silbe, die am Wortende angehängt wird",
-      "Eine Silbe am Wortanfang, die die Bedeutung verändert",
       "Der unveränderliche Kernteil oder Stammteil des Wortes",
+      "Eine Silbe am Wortanfang, die die Bedeutung verändert",
       "Ein Verbindungswort, das Sätze oder Satzteile verbindet"
     ],
     "question": "Was ist ein Präfix (Vorsilbe)?",
     "topic": "Wortbildung"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Bürgermeister: Bürger (mit Umlaut ü) + Meister. Zusammengesetztes Nomen, immer zusammengeschrieben.",
     "options": [
       "Bürgemeister",
       "Buegermeister",
-      "Bürgermeister",
-      "Buergermeisteer"
+      "Buergermeisteer",
+      "Bürgermeister"
     ],
     "question": "Wie schreibt man \"Bürgermeister\"?",
     "topic": "Zusammenschreibung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "\"Stengel\" ist falsch - korrekt: \"Stängel\" (mit Umlaut). Alle anderen: Rhythmus, Delfin (auch Delphin), Majonäse (auch Mayonnaise) sind beide Schreibungen erlaubt.",
     "options": [
-      "Rhythmus",
       "Stengel",
+      "Rhythmus",
       "Delfin",
       "Majonäse"
     ],
@@ -468,13 +468,13 @@
     "topic": "Zusammenschreibung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "\"nicht nur... sondern auch\" ist eine mehrteilige Konjunktion (korrelierende Konjunktion). Komma vor \"sondern\".",
     "options": [
       "Sie ist nicht nur klug sondern auch fleißig",
-      "Sie ist nicht nur klug, sondern auch fleißig",
       "Sie ist nicht nur klug sondern, auch fleißig",
-      "Sie ist nicht nur klug, sondern, auch fleißig"
+      "Sie ist nicht nur klug, sondern, auch fleißig",
+      "Sie ist nicht nur klug, sondern auch fleißig"
     ],
     "question": "Welche Schreibweise ist korrekt?",
     "topic": "Kommasetzung"

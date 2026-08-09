@@ -12,11 +12,11 @@
     "topic": "Addition von Brüchen mit negativen Zahlen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Zähler mal Zähler, Nenner mal Nenner: (-3 · 8) / (4 · 9) = -24/36. Gekürzt mit 12 ergibt das -2/3. Ein negativer Faktor mal einem positiven Faktor ergibt ein negatives Produkt.",
     "options": [
-      "-2/3",
       "2/3",
+      "-2/3",
       "5/36",
       "-27/32"
     ],
@@ -24,47 +24,47 @@
     "topic": "Multiplikation von Brüchen mit negativen Zahlen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "-2 3/5 bedeutet -(2 + 3/5), also das Negative von 13/5. Man wandelt zuerst 2 3/5 um: 2 · 5 + 3 = 13, also 13/5. Dann setzt man das Minuszeichen davor: -13/5.",
     "options": [
-      "-13/5",
       "-7/5",
       "13/5",
+      "-13/5",
       "-6/5"
     ],
     "question": "Wie lautet die gemischte Zahl -2 3/5 als unechter Bruch?",
     "topic": "Negative gemischte Zahlen umwandeln"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Ein Doppelbruch bedeutet: Zählerbruch geteilt durch Nennerbruch. Also 2/3 : 4/9 = 2/3 · 9/4 = 18/12 = 3/2. Man multipliziert mit dem Kehrwert des unteren Bruches.",
     "options": [
-      "3/2",
       "2/3",
       "8/27",
-      "27/8"
+      "27/8",
+      "3/2"
     ],
     "question": "Berechne den Doppelbruch: (2/3) geteilt durch (4/9)",
     "topic": "Doppelbrüche"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Bei negativen Zahlen ist die Zahl mit dem größten Betrag die kleinste. Als Dezimalzahlen: -3/4 = -0,75; -5/6 ≈ -0,833; -7/8 = -0,875; -2/3 ≈ -0,667. Der kleinste Wert ist -7/8.",
     "options": [
+      "-7/8",
       "-3/4",
       "-5/6",
-      "-7/8",
       "-2/3"
     ],
     "question": "Welche der folgenden negativen Brüche ist die kleinste Zahl?",
     "topic": "Ordnen negativer Brüche"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Zuerst addiert man die gegessenen Anteile: 1/4 + 1/3. Der gemeinsame Nenner ist 12. 1/4 = 3/12 und 1/3 = 4/12. Zusammen sind das 3/12 + 4/12 = 7/12. Der ganze Kuchen entspricht 1 (oder 12/12). Also ist 12/12 - 7/12 = 5/12 noch übrig.",
     "options": [
-      "5/12",
       "7/12",
+      "5/12",
       "1/2",
       "2/3"
     ],
@@ -72,25 +72,25 @@
     "topic": "Bruchanteile in Sachaufgaben"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Zuerst die Klammer berechnen: 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Dann multiplizieren: 5/6 · 3/5 = (5·3)/(6·5) = 15/30. Gekürzt mit 15 ergibt das 1/2.",
     "options": [
-      "1/2",
       "5/6",
       "1/3",
+      "1/2",
       "5/30"
     ],
     "question": "Berechne: (1/2 + 1/3) · 3/5",
     "topic": "Rechenregeln mit Brüchen (Punkt vor Strich, Klammern)"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Wenn 2/5 des Feldes mit Weizen bepflanzt sind, bleiben 1 - 2/5 = 3/5 des Feldes übrig. Von diesen 3/5 wird 1/3 mit Gerste bepflanzt. Das bedeutet, wir berechnen 1/3 von 3/5: 1/3 · 3/5 = (1·3)/(3·5) = 3/15. Gekürzt mit 3 ergibt das 1/5.",
     "options": [
-      "1/5",
       "2/15",
       "3/5",
-      "1/3"
+      "1/3",
+      "1/5"
     ],
     "question": "Ein Bauer besitzt ein Feld. Er bepflanzt 2/5 des Feldes mit Weizen und 1/3 des restlichen Feldes mit Gerste. Welcher Anteil des gesamten Feldes ist mit Gerste bepflanzt?",
     "topic": "Komplexe Bruchaufgaben (Anteil vom Rest)"
@@ -108,11 +108,11 @@
     "topic": "Terme mit Brüchen und Vorzeichen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Beide Brüche auf den Nenner 10 bringen: 2/5 = 4/10. Dann 4/10 - 7/10 = -3/10. Weil 7/10 größer ist als 2/5, ist das Ergebnis negativ.",
     "options": [
-      "-3/10",
       "3/10",
+      "-3/10",
       "-1/2",
       "-3/5"
     ],
@@ -120,35 +120,35 @@
     "topic": "Subtraktion von Brüchen mit negativem Ergebnis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Um durch einen Bruch zu teilen, multipliziert man mit dem Kehrwert des zweiten Bruches. Der Kehrwert von 1/2 ist 2/1 (oder 2). Also rechnest du 3/4 · 2 = 6/4, was gekürzt 3/2 ist.",
     "options": [
       "3/8",
-      "3/2",
       "2/3",
+      "3/2",
       "1/2"
     ],
     "question": "Berechne: 3/4 : 1/2",
     "topic": "Division von Brüchen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Nach den Rechenregeln 'Punkt vor Strich' rechnest du zuerst die Multiplikation: 2/5 · 10 = (2 · 10) / 5 = 20/5 = 4. Dann die Subtraktion: 4 - 1/2. Um dies zu berechnen, wandelst du 4 in einen Bruch mit Nenner 2 um: 8/2. Also 8/2 - 1/2 = 7/2.",
     "options": [
-      "7/2",
       "3/2",
       "1/2",
-      "5/2"
+      "5/2",
+      "7/2"
     ],
     "question": "Berechne: 2/5 · 10 - 1/2",
     "topic": "Rechnen mit Brüchen (Punkt- vor Strichrechnung)"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Zuerst gibst du 1/3 der Kekse weg: 1/3 von 24 = 8 Kekse. Es bleiben 24 - 8 = 16 Kekse übrig. Dann isst sie 1/4 der restlichen Kekse: 1/4 von 16 = 4 Kekse. Es bleiben noch 16 - 4 = 12 Kekse übrig.",
     "options": [
-      "8",
       "12",
+      "8",
       "10",
       "16"
     ],
@@ -156,11 +156,11 @@
     "topic": "Bruchrechnung in Anwendungsaufgaben"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Am sichersten rechnet man mit unechten Brüchen: 3 2/5 = 17/5 und 1 3/4 = 7/4. Hauptnenner 20: 68/20 - 35/20 = 33/20 = 1 13/20. Wer die Ganzen und die Brüche getrennt subtrahiert, erhält fälschlich 2 7/20, weil 2/5 kleiner ist als 3/4.",
     "options": [
-      "1 13/20",
       "2 7/20",
+      "1 13/20",
       "1 7/20",
       "2 13/20"
     ],
@@ -168,35 +168,35 @@
     "topic": "Subtraktion gemischter Zahlen mit Übertrag"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Auch bei Termen gilt: gleichnamig machen. Der Hauptnenner von 3 und 4 ist 12. x/3 = 4x/12 und x/4 = 3x/12. Zusammen 4x/12 + 3x/12 = 7x/12. Die Variable x bleibt dabei in der ersten Potenz stehen.",
     "options": [
-      "7x/12",
       "2x/7",
       "x/7",
+      "7x/12",
       "x²/12"
     ],
     "question": "Vereinfache den Term: x/3 + x/4",
     "topic": "Terme mit Bruchzahlen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Dividieren heißt mit dem Kehrwert multiplizieren: (-5/6) · (-9/10) = 45/60 = 3/4. Minus geteilt durch minus ergibt ein positives Ergebnis.",
     "options": [
-      "3/4",
       "-3/4",
       "4/3",
-      "25/27"
+      "25/27",
+      "3/4"
     ],
     "question": "Berechne: (-5/6) : (-10/9)",
     "topic": "Division von Brüchen mit negativen Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Um Brüche mit unterschiedlichen Nennern zu addieren, müssen sie zuerst gleichnamig gemacht werden. Der kleinste gemeinsame Nenner von 3 und 4 ist 12. Man erweitert 1/3 zu 4/12 und 1/4 zu 3/12. Dann addiert man die Zähler: 4/12 + 3/12 = 7/12.",
     "options": [
-      "2/7",
       "7/12",
+      "2/7",
       "1/12",
       "5/12"
     ],
@@ -204,11 +204,11 @@
     "topic": "Brüche addieren und subtrahieren"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Eine ganze Zahl wird nur mit dem Zähler multipliziert, der Nenner bleibt: -4 · 3/8 = -12/8. Gekürzt mit 4 ergibt das -3/2. Wer auch den Nenner mit 4 multipliziert, landet fälschlich bei -3/8.",
     "options": [
-      "-3/2",
       "3/2",
+      "-3/2",
       "-3/8",
       "-32/3"
     ],
@@ -216,35 +216,35 @@
     "topic": "Multiplikation einer ganzen Zahl mit einem Bruch"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Zuerst die gemischte Zahl umwandeln: -2 1/3 = -7/3. Der Kehrwert entsteht durch Vertauschen von Zähler und Nenner; das Vorzeichen bleibt erhalten, denn Zahl mal Kehrwert muss 1 ergeben: (-7/3) · (-3/7) = 1. Also -3/7.",
     "options": [
-      "-3/7",
       "3/7",
       "-7/3",
+      "-3/7",
       "7/3"
     ],
     "question": "Wie lautet der Kehrwert von -2 1/3?",
     "topic": "Kehrwert negativer gemischter Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Bei Aufgaben mit verschiedenen Rechenarten gilt die Regel 'Punkt vor Strich'. Zuerst wird die Multiplikation berechnet: 1/3 · 3/4 = (1·3)/(3·4) = 3/12, was gekürzt 1/4 ist. Dann wird die Addition durchgeführt: 1/2 + 1/4. Man macht die Brüche gleichnamig: 2/4 + 1/4 = 3/4.",
     "options": [
       "5/6",
-      "3/4",
       "7/12",
-      "1/2"
+      "1/2",
+      "3/4"
     ],
     "question": "Was ist das Ergebnis von 1/2 + 1/3 · 3/4?",
     "topic": "Gemischte Rechenoperationen mit Brüchen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Um den Anteil zu berechnen, multipliziert man die Gesamtzahl der Schüler mit dem Bruchanteil. Also 24 · 3/8. Man kann dies als (24/8) · 3 = 3 · 3 = 9 rechnen. Es sind 9 Mädchen in der Klasse.",
     "options": [
-      "6",
       "9",
+      "6",
       "12",
       "15"
     ],
@@ -264,25 +264,25 @@
     "topic": "Brüche und Dezimalbrüche vergleichen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Um gemischte Zahlen zu addieren, addiert man zuerst die ganzen Zahlen: 1 + 2 = 3. Dann addiert man die Bruchanteile: 1/2 + 1/3. Man macht sie gleichnamig (Hauptnenner 6): 3/6 + 2/6 = 5/6. Das Gesamtergebnis ist 3 5/6.",
     "options": [
       "3 2/5",
-      "3 5/6",
       "4 1/6",
+      "3 5/6",
       "3 1/6"
     ],
     "question": "Berechne: 1 1/2 + 2 1/3",
     "topic": "Rechnen mit gemischten Zahlen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Brüche mit gleichem Nenner werden addiert, indem man die Zähler addiert und den Nenner beibehält: 3 + 2 = 5, also 5/7. Der Nenner wird dabei nicht mitaddiert, sonst käme 5/14 heraus.",
     "options": [
-      "5/7",
       "6/7",
       "5/14",
-      "1/7"
+      "1/7",
+      "5/7"
     ],
     "question": "Was ist das Ergebnis von 3/7 + 2/7?",
     "topic": "Addition von Brüchen mit gleichem Nenner"
@@ -300,37 +300,37 @@
     "topic": "Multiplikation von Brüchen"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Um Brüche zu vergleichen, bringt man sie am besten auf einen gemeinsamen Nenner oder wandelt sie in Dezimalzahlen um: 1/2 = 0,5. 2/5 = 0,4; 3/7 ≈ 0,43; 4/9 ≈ 0,44; 5/8 = 0,625. Nur 5/8 ist größer als 1/2.",
     "options": [
       "2/5",
+      "5/8",
       "3/7",
-      "4/9",
-      "5/8"
+      "4/9"
     ],
     "question": "Welcher Bruch ist größer als 1/2?",
     "topic": "Vergleichen von Brüchen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Minus vor einer Klammer bzw. vor einer negativen Zahl kehrt das Vorzeichen um: (-2/3) - (-5/6) = -2/3 + 5/6. Hauptnenner 6: -4/6 + 5/6 = 1/6.",
     "options": [
-      "1/6",
       "-1/6",
       "-3/2",
+      "1/6",
       "3/2"
     ],
     "question": "Berechne: (-2/3) - (-5/6)",
     "topic": "Subtraktion negativer Brüche"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Die 15 Liter entsprechen der Differenz der Füllstände: 3/4 - 3/8 = 6/8 - 3/8 = 3/8. Wenn 3/8 des Behälters 15 Liter sind, ist 1/8 gleich 5 Liter. Der ganze Behälter fasst 8 · 5 = 40 Liter.",
     "options": [
-      "40 Liter",
       "24 Liter",
       "30 Liter",
-      "20 Liter"
+      "20 Liter",
+      "40 Liter"
     ],
     "question": "Ein Behälter ist zu 3/8 gefüllt. Nachdem 15 Liter zugegeben wurden, ist er zu 3/4 gefüllt. Wie viel Liter fasst der Behälter insgesamt?",
     "topic": "Rückwärtsrechnen mit Bruchanteilen"
@@ -348,11 +348,11 @@
     "topic": "Division von Brüchen in Sachaufgaben"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Zuerst beide Klammern einzeln ausrechnen: 2/3 - 1/6 = 4/6 - 1/6 = 3/6 = 1/2 und 1/2 + 1/4 = 3/4. Dann dividieren: 1/2 : 3/4 = 1/2 · 4/3 = 4/6 = 2/3.",
     "options": [
-      "2/3",
       "3/2",
+      "2/3",
       "3/8",
       "8/3"
     ],
@@ -372,23 +372,23 @@
     "topic": "Umwandlung von Brüchen in Dezimalbrüche"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Rationale Zahlen Q: Brüche a/b mit ganzen Zahlen a und b, wobei b nie 0 sein darf. Beispiele: 1/2, -3, 0,75, 0,333... Irrationale Zahlen wie Wurzel 2 oder pi sind nicht als Bruch darstellbar. Alle ganzen Zahlen Z sind Teilmenge von Q.",
     "options": [
       "Alle Zahlen mit endlicher Dezimaldarstellung, also ohne unendliche Nachkommastellen",
-      "Alle Zahlen, die sich als Bruch a/b zweier ganzer Zahlen schreiben lassen, b nicht 0",
       "Alle Zahlen, die auf dem Zahlenstrahl rechts der Null liegen und größer als eins sind",
-      "Alle Zahlen, die sich als Wurzel einer natürlichen Zahl darstellen lassen"
+      "Alle Zahlen, die sich als Wurzel einer natürlichen Zahl darstellen lassen",
+      "Alle Zahlen, die sich als Bruch a/b zweier ganzer Zahlen schreiben lassen, b nicht 0"
     ],
     "question": "Was sind rationale Zahlen?",
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Bruch: 3/4 = 3 von 4 gleichen Teilen. Zähler (oben) gibt Anzahl, Nenner (unten) gibt Größe der Teile an. Division: 3/4 = 3 ÷ 4 = 0,75. Nenner 0 ist verboten (Division durch 0 nicht definiert).",
     "options": [
-      "Eine Division zweier ganzer Zahlen, die stets ohne Rest aufgehen muss",
       "Eine Zahl der Form Zähler durch Nenner, die einen Teil eines Ganzen angibt",
+      "Eine Division zweier ganzer Zahlen, die stets ohne Rest aufgehen muss",
       "Eine Zahl mit Komma, deren Nachkommastellen sich regelmäßig wiederholen",
       "Eine Zahl kleiner als null, die auf dem Zahlenstrahl links der Null liegt"
     ],
@@ -408,35 +408,35 @@
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Erweitern: 2/3 × 4/4 = 8/12. Zähler und Nenner werden mit derselben Zahl ungleich null multipliziert, der Wert bleibt gleich. Notwendig beim Addieren und Subtrahieren von Brüchen mit verschiedenen Nennern. Kürzen und Erweitern sind Umkehroperationen.",
     "options": [
       "Zu Zähler und Nenner dieselbe Zahl addieren, der Wert bleibt dabei gleich",
-      "Zähler und Nenner mit derselben Zahl ungleich null multiplizieren",
       "Nur den Nenner mit einer Zahl multiplizieren, der Zähler bleibt unverändert",
+      "Zähler und Nenner mit derselben Zahl ungleich null multiplizieren",
       "Zähler und Nenner durch denselben Teiler dividieren"
     ],
     "question": "Wie erweitert man einen Bruch?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Gleichnamige Brüche: 3/8 + 1/8 = 4/8 = 1/2. Zähler addieren, Nenner gleich lassen, dann kürzen. Ergebnis wenn möglich kürzen. Subtraktion: Zähler subtrahieren.",
     "options": [
       "Zähler und Nenner jeweils getrennt addieren und das Ergebnis danach kürzen",
-      "Die Zähler addieren, der gemeinsame Nenner bleibt unverändert stehen",
       "Die Nenner addieren, der gemeinsame Zähler bleibt unverändert stehen",
-      "Die Brüche kreuzweise multiplizieren und die beiden Produkte addieren"
+      "Die Brüche kreuzweise multiplizieren und die beiden Produkte addieren",
+      "Die Zähler addieren, der gemeinsame Nenner bleibt unverändert stehen"
     ],
     "question": "Wie addiert man Brüche mit gleichem Nenner?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Hauptnenner = kgV der Nenner. 1/4 + 1/6: kgV(4,6)=12; 3/12 + 2/12 = 5/12. Oder: 1/3 + 1/4 = 4/12 + 3/12 = 7/12. Immer auf den Hauptnenner erweitern, dann nur die Zähler addieren; der Nenner bleibt stehen. Nenner zu addieren ist der häufigste Fehler.",
     "options": [
-      "Die Zähler addieren und die Nenner ebenfalls addieren, danach das Ergebnis kürzen",
       "Beide Brüche auf den gemeinsamen Hauptnenner erweitern, danach nur die Zähler addieren",
+      "Die Zähler addieren und die Nenner ebenfalls addieren, danach das Ergebnis kürzen",
       "Beide Brüche auf das Produkt der Zähler erweitern und dann die Nenner addieren",
       "Die Brüche kreuzweise multiplizieren und anschließend die Produkte addieren"
     ],
@@ -456,35 +456,35 @@
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Kehren und Multiplizieren: 2/3 ÷ 4/5 = 2/3 × 5/4 = 10/12 = 5/6. Merkregel: Beim Dividieren nur den zweiten Bruch umdrehen und multiplizieren. Kehrwert: a/b → b/a. Beide Brüche zu stürzen wäre falsch.",
     "options": [
       "Bei beiden Brüchen Zähler und Nenner vertauschen und danach multiplizieren",
-      "Mit dem Kehrwert des zweiten Bruchs multiplizieren, also a/b ÷ c/d = a/b × d/c",
       "Den Zähler des ersten Bruchs durch den Nenner des zweiten Bruchs teilen",
+      "Mit dem Kehrwert des zweiten Bruchs multiplizieren, also a/b ÷ c/d = a/b × d/c",
       "Beide Brüche auf den Hauptnenner bringen und dann die Zähler dividieren"
     ],
     "question": "Wie dividiert man Brüche?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Gemischter Bruch: 3 2/5, also eine ganze Zahl und ein echter Bruch. Umwandeln in unechten Bruch: 3 2/5 = (3×5+2)/5 = 17/5. Zurück: 17/5: 17÷5=3 Rest 2 → 3 2/5. Für Rechnen meist unechten Bruch bevorzugen.",
     "options": [
       "Ein Bruch, dessen Zähler und Nenner beide eine Kommazahl enthalten, etwa 1,5/2",
-      "Eine Schreibweise aus einer ganzen Zahl und einem echten Bruch, etwa 2 1/3",
       "Ein Bruch mit negativem Zähler und positivem Nenner, etwa -2/3 oder -5/7",
-      "Ein Bruch, dessen Zähler größer als sein Nenner ist, etwa 7/3 oder 9/4"
+      "Ein Bruch, dessen Zähler größer als sein Nenner ist, etwa 7/3 oder 9/4",
+      "Eine Schreibweise aus einer ganzen Zahl und einem echten Bruch, etwa 2 1/3"
     ],
     "question": "Was ist ein gemischter Bruch?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Kehrwert: Zähler und Nenner tauschen, zu 3/4 gehört also 4/3. Probe: 3/4 × 4/3 = 12/12 = 1. Kehrwert von 5 = 1/5. Kehrwert von 1/2 = 2. Division durch einen Bruch = Multiplikation mit dem Kehrwert. Kehrwert von 0 existiert nicht.",
     "options": [
-      "Die Zahl mit umgekehrtem Vorzeichen: zu 3/4 gehört also der Kehrwert -3/4",
       "Der Bruch mit vertauschtem Zähler und Nenner: zu 3/4 gehört also 4/3",
+      "Die Zahl mit umgekehrtem Vorzeichen: zu 3/4 gehört also der Kehrwert -3/4",
       "Der Bruch mit verdoppeltem Nenner: zu 3/4 gehört also der Kehrwert 3/8",
       "Der Wert der Zahl ohne Vorzeichen, also ihr Abstand von der Null"
     ],
@@ -504,35 +504,35 @@
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Absolutbetrag |x|: |5| = 5, |-5| = 5, |0| = 0. Abstand von 0 auf dem Zahlenstrahl, deshalb nie negativ. -3 und +3 haben gleichen Absolutbetrag (3), aber verschiedene Vorzeichen. Nicht verwechseln mit der Gegenzahl.",
     "options": [
       "Der Wert einer Zahl mit umgekehrtem Vorzeichen, also immer ihre Gegenzahl",
-      "Der Abstand einer Zahl von der Null auf dem Zahlenstrahl, also nie negativ",
       "Das Quadrat einer Zahl, das ebenfalls niemals negativ werden kann",
+      "Der Abstand einer Zahl von der Null auf dem Zahlenstrahl, also nie negativ",
       "Der Abstand zweier benachbarter ganzer Zahlen auf dem Zahlenstrahl"
     ],
     "question": "Was ist der Absolutbetrag?",
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "(-3) + (-5) = -8. Die Beträge 3 und 5 werden addiert, das Minus bleibt stehen. Merkhilfe: zwei Schulden ergeben mehr Schulden. Zahlenstrahl: von -3 noch 5 nach links = -8. Bei verschiedenen Vorzeichen dagegen Betragsdifferenz: (-3) + (+5) = +2.",
     "options": [
       "Das Ergebnis ist positiv, weil sich die beiden Minuszeichen gegenseitig aufheben",
-      "Das Ergebnis ist negativ, weil die Beträge addiert werden und das Minus bleibt",
       "Das Ergebnis ist null, weil beide Zahlen dasselbe Vorzeichen tragen",
-      "Das Ergebnis behält den Betrag der betragsmäßig größeren Zahl"
+      "Das Ergebnis behält den Betrag der betragsmäßig größeren Zahl",
+      "Das Ergebnis ist negativ, weil die Beträge addiert werden und das Minus bleibt"
     ],
     "question": "Was gilt bei der Addition zweier negativer Zahlen?",
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Vorzeichenregeln: (+)(+)=+; (-)(-)=+; (+)(-)=-; (-)(+)=-. Merkhilfe: gleiche Vorzeichen → positiv; verschiedene → negativ. Gilt auch für Division. (-2)³ = (-2)×(-2)×(-2) = -8.",
     "options": [
-      "Negativ mal negativ ergibt negativ, negativ mal positiv ergibt positiv",
       "Negativ mal negativ ergibt positiv, negativ mal positiv ergibt negativ",
+      "Negativ mal negativ ergibt negativ, negativ mal positiv ergibt positiv",
       "Jedes Produkt mit mindestens einem negativen Faktor ist selbst negativ",
       "Das Produkt hat das Vorzeichen des betragsmäßig größeren Faktors"
     ],
@@ -552,35 +552,35 @@
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "kgV(4,6): Vielfache von 4: {4,8,12,16,...}; Vielfache von 6: {6,12,18,...}; gemeinsam: {12,24,...}; kleinstes: 12. Verwendung: Hauptnenner beim Bruchrechnen. kgV(a,b) = a×b / ggT(a,b).",
     "options": [
       "Die größte natürliche Zahl, durch die beide gegebenen Zahlen ohne Rest teilbar sind",
-      "Die kleinste natürliche Zahl, die durch beide Zahlen ohne Rest teilbar ist",
       "Das Produkt beider Zahlen, geteilt durch die Summe der beiden Zahlen",
+      "Die kleinste natürliche Zahl, die durch beide Zahlen ohne Rest teilbar ist",
       "Die größte Zahl, die als gemeinsames Vielfaches beider Zahlen auftritt"
     ],
     "question": "Was ist das kgV (kleinstes gemeinsames Vielfaches)?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Gleichnamig machen: kgV der Nenner = Hauptnenner. 1/3 vs 1/4: kgV=12; 4/12 vs 3/12 → 1/3 > 1/4. Oder Dezimaldarstellung vergleichen: 1/3 ≈ 0,33 > 0,25 = 1/4.",
     "options": [
       "Die Zähler direkt vergleichen, der Bruch mit dem größeren Zähler ist größer",
-      "Beide Brüche auf den Hauptnenner bringen und dann die Zähler vergleichen",
       "Die Nenner direkt vergleichen, der Bruch mit dem größeren Nenner ist größer",
-      "Die Summe aus Zähler und Nenner bilden und diese beiden Summen vergleichen"
+      "Die Summe aus Zähler und Nenner bilden und diese beiden Summen vergleichen",
+      "Beide Brüche auf den Hauptnenner bringen und dann die Zähler vergleichen"
     ],
     "question": "Wie vergleicht man Brüche mit verschiedenen Nennern?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "3/4 = 0,75 (endlich). 1/3 = 0,333... (periodisch, Periode 3). 1/7 = 0,142857142857... (Periode 142857). Endliche Dezimalbrüche: Nenner nur 2er und 5er-Faktoren (nach Kürzen). Sonst periodisch.",
     "options": [
-      "Den Nenner durch den Zähler dividieren, das Ergebnis ist endlich oder periodisch",
       "Den Zähler durch den Nenner dividieren, das Ergebnis ist endlich oder periodisch",
+      "Den Nenner durch den Zähler dividieren, das Ergebnis ist endlich oder periodisch",
       "Zähler und Nenner beide mit 100 multiplizieren und das Komma verschieben",
       "Den Zähler als Nachkommastelle und den Nenner als ganze Zahl schreiben"
     ],
@@ -600,35 +600,35 @@
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Methode 1: 2 1/3 + 1 1/4 = (2+1) + (1/3+1/4) = 3 + 4/12 + 3/12 = 3 7/12. Methode 2: beide in unechte Brüche umwandeln: 7/3 + 5/4 = 28/12 + 15/12 = 43/12 = 3 7/12. Achten: wenn der Bruchteil größer als 1 wird, in die ganze Zahl übertragen.",
     "options": [
       "Die ganzen Zahlen addieren und dann den größeren der beiden Bruchteile übernehmen",
-      "Ganze Zahlen und Bruchteile getrennt addieren oder in unechte Brüche umwandeln",
       "Die Zähler, die Nenner und die ganzen Zahlen jeweils getrennt voneinander addieren",
+      "Ganze Zahlen und Bruchteile getrennt addieren oder in unechte Brüche umwandeln",
       "Beide Zahlen zuerst in Prozentwerte umrechnen und diese Werte dann addieren"
     ],
     "question": "Wie addiert man gemischte Brüche?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Zahlenstrahl: ...-2, -3/2, -1, -1/2, 0, 1/4, 1/2, 3/4, 1, ... Jede rationale Zahl hat genau einen Punkt, auch negative. Rationale Zahlen liegen dicht beieinander, trotzdem bleiben Lücken (irrationale Zahlen wie Wurzel 2).",
     "options": [
       "Nur ganze Zahlen lassen sich als Punkte auf dem Zahlenstrahl markieren",
-      "Jede rationale Zahl entspricht genau einem Punkt auf dem Zahlenstrahl",
       "Rationale Zahlen bilden zusammenhängende Strecken statt einzelner Punkte",
-      "Nur positive rationale Zahlen besitzen einen Punkt auf dem Zahlenstrahl"
+      "Nur positive rationale Zahlen besitzen einen Punkt auf dem Zahlenstrahl",
+      "Jede rationale Zahl entspricht genau einem Punkt auf dem Zahlenstrahl"
     ],
     "question": "Was ist eine rationale Zahl auf dem Zahlenstrahl?",
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Minus minus = plus: 5 - (-3) = 5 + 3 = 8. Erklärung: -(-3) = +3 (Negation einer negativen Zahl). Zahlenstrahl: von 5 nicht nach links, sondern nach rechts. Anwendung: 0 - (-5) = 5; Temperaturunterschied: -3°C - (-8°C) = 5°C.",
     "options": [
-      "Minus und Minus ergeben Minus: a - (-b) = a - b, also ist 5 - (-3) = 2",
       "Minus und Minus ergeben Plus: a - (-b) = a + b, also ist 5 - (-3) = 8",
+      "Minus und Minus ergeben Minus: a - (-b) = a - b, also ist 5 - (-3) = 2",
       "Das Ergebnis ist stets negativ, weil eine negative Zahl abgezogen wird",
       "Man vertauscht die beiden Zahlen und rechnet stattdessen b - a, also -3 - 5"
     ],
@@ -648,35 +648,35 @@
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Stammbrüche: 1/n, also Brüche mit dem Zähler 1 wie 1/2, 1/3, 1/4. Jeder Bruch m/n = m × (1/n). Historisch: Ägyptische Mathematik schrieb alle Brüche als Summen von Stammbrüchen. Merke: je größer n, desto kleiner der Stammbruch.",
     "options": [
       "Ein Bruch mit dem Nenner 1, zum Beispiel 2/1, 3/1 oder 4/1",
-      "Ein Bruch mit dem Zähler 1, zum Beispiel 1/2, 1/3 oder 1/4",
       "Ein Bruch, dessen Nenner eine Primzahl ist, zum Beispiel 3/5 oder 4/7",
+      "Ein Bruch mit dem Zähler 1, zum Beispiel 1/2, 1/3 oder 1/4",
       "Ein Bruch, der sich nicht weiter kürzen lässt, zum Beispiel 3/4 oder 5/8"
     ],
     "question": "Was ist ein Stammbruch?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Gleichnamig: gleicher Nenner. 3/8 und 7/8: direkt addieren → 10/8 = 5/4. Ungleichnamig: auf gemeinsamen Nenner erweitern. Ziel beim Addieren/Subtrahieren: immer erst gleichnamig machen.",
     "options": [
       "Brüche mit demselben Zähler, die direkt addiert und subtrahiert werden können",
-      "Brüche mit demselben Nenner, die direkt addiert und subtrahiert werden können",
       "Brüche mit demselben Wert, die durch Erweitern auseinander hervorgehen",
-      "Brüche, deren Zähler und Nenner dieselbe Primzahl als Teiler enthalten"
+      "Brüche, deren Zähler und Nenner dieselbe Primzahl als Teiler enthalten",
+      "Brüche mit demselben Nenner, die direkt addiert und subtrahiert werden können"
     ],
     "question": "Was sind gleichnamige Brüche?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "0 geteilt durch jede Zahl ≠ 0 ergibt 0 (0 Teile = nichts). Zahl ÷ 0: verboten (welche Zahl mal 0 ergibt etwas Ungleich 0? Keine!). Im Bruch: 0 im Zähler = 0; 0 im Nenner = verboten.",
     "options": [
-      "0 ÷ Zahl ist nicht definiert, Zahl ÷ 0 ergibt 0 und ist damit erlaubt",
       "0 ÷ Zahl ergibt 0, Zahl ÷ 0 ist nicht definiert und damit verboten",
+      "0 ÷ Zahl ist nicht definiert, Zahl ÷ 0 ergibt 0 und ist damit erlaubt",
       "Beide Rechnungen ergeben 0, weil die Null jedes Ergebnis auf null zieht",
       "Beide Rechnungen sind nicht definiert, weil die Null keine Teiler besitzt"
     ],
@@ -696,35 +696,35 @@
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Dezimalbruch: Nenner ist eine Zehnerpotenz. 0,7 = 7/10; 0,03 = 3/100; 2,5 = 25/10 = 5/2. Umkehrung: welche Brüche sind endliche Dezimalbrüche? Wenn Nenner nur Faktoren 2 und 5 (nach Kürzen).",
     "options": [
       "Ein Bruch mit dem Nenner 2, 4, 8 und so weiter, zum Beispiel 0,5 = 1/2 oder 0,25 = 1/4",
-      "Ein Bruch mit dem Nenner 10, 100, 1000 und so weiter, zum Beispiel 0,3 = 3/10",
       "Ein Bruch, dessen Zähler selbst eine Kommazahl ist, zum Beispiel 2,5/4",
+      "Ein Bruch mit dem Nenner 10, 100, 1000 und so weiter, zum Beispiel 0,3 = 3/10",
       "Ein Bruch, dessen Dezimaldarstellung unendlich periodisch läuft, etwa 1/3"
     ],
     "question": "Was ist ein Dezimalbruch?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Prozent: pro hundert. Bruch mit 100 % multiplizieren: 3/4 × 100 % = 75 %. 1/3 ≈ 33,3 %. 7/20 = 35/100 = 35 %. Umgekehrt: 80 % = 80/100 = 4/5. Merkhilfe: durch den Nenner, mal den Zähler, mal 100.",
     "options": [
       "Den Zähler mit 100 multiplizieren und diese Zahl direkt als Prozentwert ablesen",
-      "Den Bruch mit 100 % multiplizieren, also 3/4 × 100 % = 75 %",
       "Den Nenner mit 100 multiplizieren und den Zähler unverändert stehen lassen",
-      "Den Bruch durch 100 dividieren und das Ergebnis als Prozentwert ablesen"
+      "Den Bruch durch 100 dividieren und das Ergebnis als Prozentwert ablesen",
+      "Den Bruch mit 100 % multiplizieren, also 3/4 × 100 % = 75 %"
     ],
     "question": "Wie rechnet man Brüche in Prozentzahlen um?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Hauptnenner = kleinster gemeinsamer Nenner = kgV der Nenner. Besser als das Produkt, weil die Zahlen kleiner bleiben: kgV(4,6)=12 < 4×6=24. Auf Hauptnenner erweitern: 1/4 = 3/12; 1/6 = 2/12. Dann addieren: 5/12.",
     "options": [
-      "Der größte gemeinsame Teiler aller Nenner, also der ggT der Nenner",
       "Der kleinste gemeinsame Nenner aller Brüche, also das kgV der Nenner",
+      "Der größte gemeinsame Teiler aller Nenner, also der ggT der Nenner",
       "Das Produkt aller Nenner, das man stets ungekürzt verwenden muss",
       "Der größte unter den vorkommenden Nennern der beteiligten Brüche"
     ],
@@ -744,35 +744,35 @@
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Rationale Zahlen lassen sich als Bruch p/q schreiben, ihre Dezimaldarstellung bricht ab oder ist periodisch: 1/3 = 0,333... (Periode 3). Irrationale Zahlen laufen unendlich und ohne Periode: Wurzel(2) = 1,41421356...; pi = 3,14159265...",
     "options": [
       "Rationale Zahlen haben stets ein Komma, irrationale Zahlen sind immer ganze Zahlen",
-      "Rationale Zahlen sind Brüche, irrationale laufen unendlich nicht-periodisch",
       "Rationale Zahlen liegen rechts der Null, irrationale links davon",
+      "Rationale Zahlen sind Brüche, irrationale laufen unendlich nicht-periodisch",
       "Rationale Zahlen sind Wurzeln natürlicher Zahlen, irrationale sind gewöhnliche Brüche"
     ],
     "question": "Was ist der Unterschied zwischen rationalem und irrationalem Bruch?",
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Auf Nenner 12: 2/3 = 8/12 (×4); 3/4 = 9/12 (×3). Notwendig beim Gleichnamigmachen. Zähler wird mit gleichem Faktor multipliziert. Bruch ändert seinen Wert nicht.",
     "options": [
       "Zu Zähler und Nenner dieselbe Zahl addieren, bis der gewünschte Nenner erreicht ist",
-      "Zähler und Nenner mit demselben Faktor multiplizieren, bis der gewünschte Nenner dasteht",
       "Nur den Nenner durch den gewünschten Nenner ersetzen, der Zähler bleibt stehen",
-      "Zähler und Nenner miteinander vertauschen und anschließend vollständig kürzen"
+      "Zähler und Nenner miteinander vertauschen und anschließend vollständig kürzen",
+      "Zähler und Nenner mit demselben Faktor multiplizieren, bis der gewünschte Nenner dasteht"
     ],
     "question": "Was versteht man unter \"einen Bruch auf einen anderen Nenner bringen\"?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Erst alle Vorzeichen auflösen, dann rechnen. Minus vor Klammer kehrt jedes Vorzeichen darin um: -(3-2) = -3+2 = -1. Minusminus: -(-5) = +5. Plusminus: +(-3) = -3. Probe: Taschenrechner oder Zahlenstrahl nutzen.",
     "options": [
-      "Zuerst rechnen und am Ende das Vorzeichen des ersten Summanden übernehmen",
       "Zuerst alle Vorzeichen auflösen, Minus vor Klammer umkehren",
+      "Zuerst rechnen und am Ende das Vorzeichen des ersten Summanden übernehmen",
       "Zuerst alle Minuszeichen streichen und am Ende ein Minus voranstellen",
       "Zuerst die Klammern übernehmen und dann von rechts nach links rechnen"
     ],
@@ -792,35 +792,35 @@
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Kreuzkürzen: 2 und 4 durch 2 (→ 1 und 2); 9 und 3 durch 3 (→ 3 und 1). Dann: 1/2 × 3/1 = 3/2, als gemischter Bruch 1 1/2. Oder ohne Kürzen: 18/12 = 3/2 (gleiches Ergebnis).",
     "options": [
       "8/27, wenn man Zähler mit Nenner und Nenner mit Zähler multipliziert",
-      "3/2 beziehungsweise 1 1/2, nach dem Kürzen von 2 mit 4 und 9 mit 3",
       "11/7, wenn man die Zähler und die Nenner jeweils einzeln addiert",
+      "3/2 beziehungsweise 1 1/2, nach dem Kürzen von 2 mit 4 und 9 mit 3",
       "18/7, wenn man die Zähler multipliziert und die Nenner addiert"
     ],
     "question": "Wie rechnet man 2/3 × 9/4?",
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Positiv: a > 0, a liegt echt rechts von der Null. Negativ: a < 0. Nichtnegativ: a ≥ 0 (auch 0 eingeschlossen). Nichtpositiv: a ≤ 0. Vorzeichen bei Brüchen: -2/3 kann als (-2)/3 oder 2/(-3) geschrieben werden.",
     "options": [
       "a ≥ 0, also liegt a rechts von der Null oder genau auf der Null",
-      "a > 0, also liegt a echt rechts von der Null auf dem Zahlenstrahl",
       "a ≥ 1, also ist a mindestens so groß wie die Zahl eins",
-      "a ≠ 0, also ist a irgendeine von der Null verschiedene Zahl"
+      "a ≠ 0, also ist a irgendeine von der Null verschiedene Zahl",
+      "a > 0, also liegt a echt rechts von der Null auf dem Zahlenstrahl"
     ],
     "question": "Was bedeutet \"a ist positiv\" formal?",
     "topic": "Rationale Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "5 - 8: auf dem Zahlenstrahl von 5, 8 Schritte nach links = -3. Der Subtrahend ist größer als der Minuend, also wird das Ergebnis negativ: 5 - 8 = 5 + (-8) = -3. Probe: -3 + 8 = 5. Anwendung: Konto 5€, ausgeben 8€ → -3€ Schulden.",
     "options": [
-      "3, wenn man die kleinere von der größeren Zahl abzieht",
       "-3, denn der Subtrahend 8 ist größer als der Minuend 5",
+      "3, wenn man die kleinere von der größeren Zahl abzieht",
       "13, wenn man die beiden Zahlen addiert statt subtrahiert",
       "-13, wenn man beide Zahlen als negativ auffasst und addiert"
     ],
@@ -840,12 +840,12 @@
     "topic": "Brüche"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "(-2)×(-3) = +6 (negativ × negativ = positiv). Dann 6 × (-1) = -6 (positiv × negativ = negativ). Hier sind es drei negative Faktoren, also eine ungerade Anzahl. Allgemein: ungerade Anzahl negativer Faktoren → negatives Produkt; gerade Anzahl → positiv.",
     "options": [
       "6, denn eine gerade Anzahl negativer Faktoren wie (-2) × (-3) ergibt plus",
-      "-6, denn (-2) × (-3) = +6 und anschließend +6 × (-1) = -6",
       "1, denn die drei negativen Vorzeichen heben sich gegenseitig auf",
+      "-6, denn (-2) × (-3) = +6 und anschließend +6 × (-1) = -6",
       "-1, denn für das Ergebnis zählt nur das letzte der drei Vorzeichen"
     ],
     "question": "Was ist das Ergebnis von (-2) × (-3) × (-1)?",

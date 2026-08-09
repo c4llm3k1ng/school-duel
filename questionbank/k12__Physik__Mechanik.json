@@ -1,23 +1,23 @@
 [
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "T = 2π·√(m/k): Die Schwingungsdauer wächst mit der Wurzel der Masse. Aus √4 = 2 folgt eine Verdopplung von T. Wer T als proportional zu m annimmt, tippt fälschlich auf das Vierfache.",
     "options": [
+      "Sie verdoppelt sich",
       "Sie halbiert sich",
       "Sie bleibt gleich",
-      "Sie verdoppelt sich",
       "Sie vervierfacht sich"
     ],
     "question": "Wie ändert sich die Schwingungsdauer eines Federpendels, wenn man die schwingende Masse vervierfacht (bei gleicher Federkonstante)?",
     "topic": "Schwingungen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "T = 2π·√(L/g) enthält nur die Fadenlänge L und die Erdbeschleunigung g. Die Masse kürzt sich heraus, weil träge und schwere Masse gleich groß sind. g und damit T hängen dagegen sehr wohl vom Ort ab.",
     "options": [
       "Fadenlänge des Pendels",
-      "Erdbeschleunigung am Ort",
       "Masse des Pendelkörpers",
+      "Erdbeschleunigung am Ort",
       "Geografische Breite des Aufstellorts"
     ],
     "question": "Von welcher Größe hängt die Schwingungsdauer eines mathematischen Pendels (bei kleinen Auslenkungen) NICHT ab?",
@@ -36,23 +36,23 @@
     "topic": "Schwingungen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Beim harmonischen Oszillator ist die Rückstellkraft der Auslenkung proportional und ihr entgegengerichtet: F = −k·x. Daraus folgt eine sinusförmige Schwingung mit fester Frequenz.",
     "options": [
       "Ein System, das sich mit konstanter Geschwindigkeit bewegt",
-      "Ein System, dessen Rückstellkraft F = −k·x ist",
       "Ein System, dessen Amplitude ohne Dämpfung stetig wächst",
-      "Ein Pendel mit sehr großen Ausschlägen und Reibung"
+      "Ein Pendel mit sehr großen Ausschlägen und Reibung",
+      "Ein System, dessen Rückstellkraft F = −k·x ist"
     ],
     "question": "Was ist ein harmonischer Oszillator?",
     "topic": "Schwingungen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Reibung entzieht dem Schwinger Energie, deshalb nimmt die Amplitude ab – bei geschwindigkeitsproportionaler Dämpfung exponentiell. Frequenz und Periodendauer ändern sich dabei nur geringfügig.",
     "options": [
-      "Die Frequenz nimmt zu",
       "Die Amplitude nimmt mit der Zeit ab",
+      "Die Frequenz nimmt zu",
       "Die Amplitude nimmt zu",
       "Die Periodendauer wird kürzer"
     ],
@@ -72,36 +72,36 @@
     "topic": "Wellen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Bei konstruktiver Interferenz trifft Wellenberg auf Wellenberg: Die Auslenkungen addieren sich, die resultierende Amplitude ist maximal. Bedingung ist ein Gangunterschied von n·λ.",
     "options": [
       "Zwei Wellen löschen sich gegenseitig vollständig aus",
-      "Gleichphasige Wellen addieren ihre Amplituden",
       "Eine Welle wird an einer festen Wand reflektiert",
+      "Gleichphasige Wellen addieren ihre Amplituden",
       "Eine Welle ändert beim Übergang die Frequenz"
     ],
     "question": "Was versteht man unter konstruktiver Interferenz?",
     "topic": "Wellen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Auslöschung verlangt Gegenphase: Δs = (2n+1)·λ/2, also λ/2, 3λ/2, 5λ/2 … Ein ganzzahliges Vielfaches von λ führt dagegen zu Verstärkung.",
     "options": [
       "Beide Wellen schwingen an dieser Stelle exakt in Phase",
       "Der Gangunterschied ist ein ganzzahliges Vielfaches der Wellenlänge",
-      "Der Gangunterschied ist ein ungerades Vielfaches von λ/2",
-      "Die beiden Wellen unterscheiden sich in Frequenz und Amplitude"
+      "Die beiden Wellen unterscheiden sich in Frequenz und Amplitude",
+      "Der Gangunterschied ist ein ungerades Vielfaches von λ/2"
     ],
     "question": "Was ist die Bedingung für destruktive Interferenz?",
     "topic": "Wellen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Die Quelle läuft ihren eigenen Wellenfronten nach: Vor ihr rücken die Wellenberge enger zusammen, die Wellenlänge sinkt und die empfangene Frequenz steigt. Hinter der Quelle ist es umgekehrt.",
     "options": [
+      "Sie nimmt deutlich zu",
       "Sie bleibt gleich",
       "Sie nimmt ab",
-      "Sie nimmt deutlich zu",
       "Sie schwankt stark"
     ],
     "question": "Wie ändert sich die wahrgenommene Frequenz, wenn sich eine Schallquelle auf einen Beobachter zubewegt (Dopplereffekt)?",
@@ -120,48 +120,48 @@
     "topic": "Wellen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Transversalwellen schwingen quer zur Ausbreitungsrichtung (Seilwelle, Licht), Longitudinalwellen längs dazu (Schall). Gerade Longitudinalwellen laufen problemlos durch Gase; Transversalwellen im Medium können das nicht.",
     "options": [
       "Bei Transversalwellen schwingt das Medium parallel zur Ausbreitung",
-      "Bei Transversalwellen schwingt das Medium senkrecht zur Ausbreitung",
       "Longitudinalwellen können sich in Gasen grundsätzlich nicht ausbreiten",
+      "Bei Transversalwellen schwingt das Medium senkrecht zur Ausbreitung",
       "Transversalwellen besitzen weder Wellenlänge noch Frequenz"
     ],
     "question": "Was unterscheidet Transversalwellen von Longitudinalwellen?",
     "topic": "Wellen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Ohne äußere Kräfte bleibt die Vektorsumme aller Einzelimpulse konstant. Innere Reibung wandelt zwar kinetische Energie in Wärme um, den Gesamtimpuls verändert sie nicht.",
     "options": [
       "Er wächst mit der Zeit stetig an",
       "Er nimmt ab, sobald Reibung wirkt",
-      "Er bleibt konstant",
-      "Er ist immer null"
+      "Er ist immer null",
+      "Er bleibt konstant"
     ],
     "question": "Was gilt für den Gesamtimpuls eines abgeschlossenen Systems?",
     "topic": "Impuls"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "p = m · v = 2 kg · 3 m/s = 6 kg·m/s. Wer stattdessen ½·m·v² = 9 J ausrechnet, verwechselt den Impuls mit der kinetischen Energie – auch die Einheit passt dann nicht.",
     "options": [
+      "6 kg·m/s",
       "1,5 kg·m/s",
       "5 kg·m/s",
-      "6 kg·m/s",
       "9 kg·m/s"
     ],
     "question": "Ein Körper mit m = 2 kg bewegt sich mit v = 3 m/s. Wie groß ist sein Impuls?",
     "topic": "Impuls"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Der elastische Stoß ist gerade dadurch definiert, dass keine kinetische Energie in Verformung oder Wärme übergeht. Der Impuls bleibt bei jedem Stoß erhalten, die kinetische Energie nur beim elastischen.",
     "options": [
       "Nur der Impuls",
-      "Nur die kinetische Energie",
       "Impuls und kinetische Energie",
+      "Nur die kinetische Energie",
       "Nur die Wärmeenergie"
     ],
     "question": "Was bleibt bei einem vollkommen elastischen Stoß erhalten?",
@@ -180,24 +180,24 @@
     "topic": "Stöße"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die Zentripetalkraft zeigt stets zum Kreismittelpunkt: F = m·v²/r = m·ω²·r. Der Ausdruck m·r·ω ist die häufigste Verwechslung – dort fehlt das Quadrat der Winkelgeschwindigkeit.",
     "options": [
       "F = m · v · r",
-      "F = m · v² / r",
       "F = m · r · ω",
-      "F = m · g · r"
+      "F = m · g · r",
+      "F = m · v² / r"
     ],
     "question": "Welche Formel beschreibt die Zentripetalkraft bei gleichförmiger Kreisbewegung?",
     "topic": "Kreisbewegung"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "In einer vollen Umdrehung wird der Winkel 2π in der Zeit T überstrichen, also ω = 2π/T = 2π·f. Die Einheit ist 1/s bzw. rad/s.",
     "options": [
+      "ω = 2π / T",
       "ω = T / (2π)",
       "ω = 2π · T",
-      "ω = 2π / T",
       "ω = T² / (2π)"
     ],
     "question": "Was ist die Winkelgeschwindigkeit ω eines Körpers mit der Umlaufdauer T?",
@@ -228,23 +228,23 @@
     "topic": "Gravitation"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die zweite kosmische Geschwindigkeit beträgt v = √(2·G·M/R) ≈ 11,2 km/s. 7,9 km/s ist die Kreisbahngeschwindigkeit im erdnahen Orbit, 29,8 km/s die Bahngeschwindigkeit der Erde um die Sonne.",
     "options": [
       "7,9 km/s",
-      "11,2 km/s",
       "29,8 km/s",
-      "300 000 km/s"
+      "300 000 km/s",
+      "11,2 km/s"
     ],
     "question": "Was ist die Fluchtgeschwindigkeit von der Erdoberfläche?",
     "topic": "Gravitation"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Das Hookesche Gesetz F = k·x (Rückstellkraft F = −k·x) gilt im elastischen Bereich: Die Verformung ist der Kraft proportional. k ist die Federkonstante mit der Einheit N/m.",
     "options": [
-      "Kraft ist gleich Masse mal Beschleunigung",
       "Die Federkraft wächst proportional zur Auslenkung",
+      "Kraft ist gleich Masse mal Beschleunigung",
       "Der Druck in einer Flüssigkeit steigt mit der Tiefe",
       "Die Reibungskraft ist proportional zur Normalkraft"
     ],
@@ -276,23 +276,23 @@
     "topic": "Rotation"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ohne äußeres Drehmoment ist L = I·ω konstant. Trägheitsmoment und Winkelgeschwindigkeit dürfen sich dabei einzeln ändern – nur ihr Produkt bleibt gleich.",
     "options": [
       "Das äußere Drehmoment",
-      "Der Drehimpuls",
       "Die Winkelgeschwindigkeit",
-      "Das Trägheitsmoment"
+      "Das Trägheitsmoment",
+      "Der Drehimpuls"
     ],
     "question": "Was bleibt bei einem rotierenden abgeschlossenen System erhalten?",
     "topic": "Rotation"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "L = I·ω bleibt konstant. Angezogene Arme verkleinern den mittleren Abstand der Masse zur Drehachse, I sinkt – also muss ω steigen. Die Rotationsenergie nimmt dabei zu, sie stammt aus der Muskelarbeit.",
     "options": [
-      "Die auf sie wirkende Schwerkraft nimmt ab",
       "Ihr Trägheitsmoment sinkt, also steigt ω",
+      "Die auf sie wirkende Schwerkraft nimmt ab",
       "Sie erhält zusätzlichen Antrieb durch das Eis",
       "Ihre Masse verringert sich beim Anziehen der Arme"
     ],
@@ -300,12 +300,12 @@
     "topic": "Rotation"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "E_kin = ½·m·v². Die Geschwindigkeit geht quadratisch ein: Doppelte Geschwindigkeit bedeutet vierfache Energie. Der vergessene Faktor ½ ist die häufigste Fehlerquelle.",
     "options": [
       "E = m · v",
-      "E = m · v²",
       "E = ½ · m · v²",
+      "E = m · v²",
       "E = 2 · m · v"
     ],
     "question": "Welche kinetische Energie hat ein Körper der Masse m mit Geschwindigkeit v?",
@@ -324,23 +324,23 @@
     "topic": "Energie"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Die Hubarbeit W = F·s = m·g·h steckt anschließend als Lageenergie im Körper. Alle drei Größen müssen auftauchen; der Faktor ½ gehört zur kinetischen Energie.",
     "options": [
       "E = m · g",
       "E = m · h",
-      "E = m · g · h",
-      "E = g · h"
+      "E = g · h",
+      "E = m · g · h"
     ],
     "question": "Welche potenzielle Energie hat ein Körper der Masse m auf der Höhe h?",
     "topic": "Energie"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Im reibungsfreien Fall wird die gesamte Lageenergie zu kinetischer Energie: E = m·g·h = 60 kg · 10 m/s² · 10 m = 6 000 J. Wer g vergisst, landet bei 600 J.",
     "options": [
-      "600 J",
       "6 000 J",
+      "600 J",
       "60 000 J",
       "300 J"
     ],
@@ -348,47 +348,47 @@
     "topic": "Energie"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Arbeit ist Kraft mal Weg in Kraftrichtung: W = F·s, allgemein W = F·s·cos α. Einheit: 1 J = 1 N·m. Der Faktor ½ tritt nur bei der Federarbeit auf, weil dort die Kraft mit dem Weg wächst.",
     "options": [
       "W = F / s²",
-      "W = ½ · F · s",
       "W = F · s",
+      "W = ½ · F · s",
       "W = F · s²"
     ],
     "question": "Wie ist mechanische Arbeit W definiert (Kraft F parallel zum Weg s)?",
     "topic": "Arbeit und Leistung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "P = W/t, bei konstanter Geschwindigkeit auch P = F·v. Einheit: 1 W = 1 J/s. Arbeit mal Zeit ergibt dagegen keine sinnvolle physikalische Größe.",
     "options": [
       "Kraft mal Zeit",
-      "Verrichtete Arbeit pro Zeit",
       "Energie mal Zeitdauer",
+      "Verrichtete Arbeit pro Zeit",
       "Kraft pro zurückgelegtem Weg"
     ],
     "question": "Wie ist Leistung P definiert?",
     "topic": "Arbeit und Leistung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "η = W_nutz / W_zu, meist in Prozent angegeben. Wegen Reibungs- und Wärmeverlusten liegt der Wert immer unter 1; ein Wirkungsgrad über 100 % wäre ein Perpetuum mobile.",
     "options": [
       "Zugeführte Energie geteilt durch die Nutzenergie",
-      "Nutzenergie geteilt durch zugeführte Energie",
       "Verlustenergie geteilt durch die gesamte Nutzenergie",
-      "Nutzenergie multipliziert mit der zugeführten Energie"
+      "Nutzenergie multipliziert mit der zugeführten Energie",
+      "Nutzenergie geteilt durch zugeführte Energie"
     ],
     "question": "Was versteht man unter dem Wirkungsgrad η einer Maschine?",
     "topic": "Arbeit und Leistung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Die spezielle Relativitätstheorie ruht auf zwei Postulaten: dem Relativitätsprinzip (die Naturgesetze gelten in allen Inertialsystemen gleich) und der Konstanz der Vakuumlichtgeschwindigkeit c für jeden Beobachter.",
     "options": [
-      "Die Lichtgeschwindigkeit hängt vom Bezugssystem des Beobachters ab",
       "Alle Inertialsysteme sind gleichwertig, c ist konstant",
+      "Die Lichtgeschwindigkeit hängt vom Bezugssystem des Beobachters ab",
       "Masse und Energie sind vollständig unabhängig voneinander",
       "Die Zeit läuft für alle Beobachter absolut gleich schnell"
     ],
@@ -408,25 +408,25 @@
     "topic": "Relativität"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Aus Sicht eines ruhenden Beobachters geht die Uhr eines schnell bewegten Systems langsamer: Δt = Δt₀ / √(1 − v²/c²). Der Effekt ist symmetrisch und wird erst nahe der Lichtgeschwindigkeit spürbar.",
     "options": [
-      "Bewegte Uhren gehen langsamer als ruhende",
       "Bewegte Uhren gehen schneller",
       "Die Zeit vergeht überall gleich schnell",
+      "Bewegte Uhren gehen langsamer als ruhende",
       "In bewegten Systemen gibt es keine Zeit"
     ],
     "question": "Was beschreibt die Zeitdilatation in der speziellen Relativitätstheorie?",
     "topic": "Relativität"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ein bewegtes Objekt erscheint längs seiner Bewegungsrichtung verkürzt: l = l₀·√(1 − v²/c²). Quer zur Bewegungsrichtung ändert sich die Länge nicht.",
     "options": [
       "Relativistische Zeitdilatation",
-      "Lorentzkontraktion",
       "Relativistischer Massendefekt",
-      "Dopplerverschiebung"
+      "Dopplerverschiebung",
+      "Lorentzkontraktion"
     ],
     "question": "Wie nennt man die relativistische Verkürzung von Längen in Bewegungsrichtung?",
     "topic": "Relativität"
@@ -444,37 +444,37 @@
     "topic": "Mechanik"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Nach dem Trägheitsprinzip braucht eine gleichförmige Bewegung keine Kraft. Antriebs- und Reibungskraft heben sich auf, die Vektorsumme ist null. Erst eine resultierende Kraft beschleunigt.",
     "options": [
       "Eine Kraft in Bewegungsrichtung",
-      "Eine Kraft gegen die Bewegung",
       "Die resultierende Kraft ist null",
+      "Eine Kraft gegen die Bewegung",
       "Nur die Schwerkraft wirkt"
     ],
     "question": "Ein Körper bewegt sich mit konstanter Geschwindigkeit. Was gilt für die auf ihn wirkende Gesamtkraft?",
     "topic": "Mechanik"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Actio und Reactio sind gleich groß, entgegengesetzt gerichtet – und greifen an zwei verschiedenen Körpern an. Genau deshalb heben sie sich nie gegenseitig auf; sonst könnte nichts beschleunigt werden.",
     "options": [
       "Jede Kraft erzeugt eine Beschleunigung des Körpers",
-      "Zu jeder Kraft gibt es eine gleich große Gegenkraft",
       "Kräfte auf denselben Körper heben sich immer gegenseitig auf",
+      "Zu jeder Kraft gibt es eine gleich große Gegenkraft",
       "Kräfte können sich grundsätzlich nicht gegenseitig aufheben"
     ],
     "question": "Was besagt das Dritte Newtonsche Axiom (actio = reactio)?",
     "topic": "Mechanik"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Der Kraftstoß F·Δt ist gleich der Impulsänderung Δp = m·Δv. Wirkt dieselbe Kraft doppelt so lange, ändert sich der Impuls doppelt so stark – umgekehrt verringert eine längere Bremszeit die nötige Kraft, das Prinzip der Knautschzone.",
     "options": [
-      "p = F · Δt",
       "p = F / Δt²",
       "p = F · Δt²",
-      "p = ½ · F · Δt"
+      "p = ½ · F · Δt",
+      "p = F · Δt"
     ],
     "question": "Was ist Impuls p einer Kraft F, die über die Zeit Δt wirkt (Kraftstoß)?",
     "topic": "Impuls"

@@ -1,11 +1,11 @@
 [
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Die Ziffer 4 steht in 14.325 an der Tausenderstelle. Ihr Stellenwert ist also 4 · 1.000 = 4.000.",
     "options": [
+      "4.000",
       "40",
       "400",
-      "4.000",
       "40.000"
     ],
     "question": "Welchen Wert hat die Ziffer 4 in der Zahl 14.325?",
@@ -24,83 +24,83 @@
     "topic": "Addition"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Der Umfang eines Quadrats ist viermal die Seitenlänge. Aus 4 · a = 36 cm folgt a = 36 cm : 4 = 9 cm.",
     "options": [
       "6 cm",
-      "9 cm",
       "12 cm",
+      "9 cm",
       "18 cm"
     ],
     "question": "Der Umfang eines Quadrats beträgt 36 cm. Wie lang ist eine Seite?",
     "topic": "Geometrie - Umfang"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "1 Meter sind 100 Zentimeter. Also sind 3 Meter = 3 · 100 cm = 300 cm.",
     "options": [
       "30 cm",
-      "300 cm",
       "3.000 cm",
-      "0,03 cm"
+      "0,03 cm",
+      "300 cm"
     ],
     "question": "Wie viele Zentimeter sind 3 Meter?",
     "topic": "Maßeinheiten - Länge"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Beim Runden auf Zehner entscheidet die Einerziffer. Sie ist 8, also 5 oder größer, deshalb wird aufgerundet: 278 wird zu 280.",
     "options": [
+      "280",
       "270",
       "275",
-      "280",
       "300"
     ],
     "question": "Runde die Zahl 278 auf den nächsten Zehner.",
     "topic": "Runden von Zahlen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "6 · 15 = 6 · 10 + 6 · 5 = 60 + 30 = 90.",
     "options": [
       "60",
-      "75",
       "90",
+      "75",
       "100"
     ],
     "question": "Was ist 6 · 15?",
     "topic": "Multiplikation"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "84 : 4 = 21, denn 21 · 4 = 84. Man kann auch zerlegen: 80 : 4 = 20 und 4 : 4 = 1, zusammen 21.",
     "options": [
       "20",
-      "21",
       "22",
+      "21",
       "24"
     ],
     "question": "Welches Ergebnis hat 84 : 4?",
     "topic": "Division"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Punktrechnung geht vor Strichrechnung: zuerst 3 · 2 = 6, dann 7 + 6 = 13.",
     "options": [
       "10",
-      "13",
       "14",
-      "20"
+      "20",
+      "13"
     ],
     "question": "Berechne: 7 + 3 · 2",
     "topic": "Rechenregeln (Punkt vor Strich)"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Man liest die Zahl in Dreierblöcken: 23 Millionen, 456 Tausend, 789. Das ergibt 'Dreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig'.",
     "options": [
-      "Zweiunddreißig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig",
       "Dreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig",
+      "Zweiunddreißig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig",
       "Zweiunddreißig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunzig",
       "Dreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunzig"
     ],
@@ -120,36 +120,36 @@
     "topic": "Schriftliche Addition"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Reihenanzahl mal Sitze je Reihe: 8 · 15 = 8 · 10 + 8 · 5 = 80 + 40 = 120 Sitzplätze.",
     "options": [
       "110",
-      "120",
       "130",
+      "120",
       "100"
     ],
     "question": "Ein Kino hat 8 Reihen mit jeweils 15 Sitzen. Wie viele Sitzplätze hat das Kino insgesamt?",
     "topic": "Multiplikation"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Zuerst die Klammer: 12 - 4 = 8. Dann die Punktrechnung: 5 · 8 = 40. Zum Schluss die Addition: 20 + 40 = 60.",
     "options": [
-      "60",
       "100",
       "200",
-      "300"
+      "300",
+      "60"
     ],
     "question": "Berechne den Wert des Ausdrucks: 20 + 5 · (12 - 4)",
     "topic": "Rechengesetze (Klammer, Punkt vor Strich)"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Für den Umfang eines Rechtecks gilt U = 2 · (Länge + Breite). Also U = 2 · (10 cm + 5 cm) = 2 · 15 cm = 30 cm.",
     "options": [
+      "30 cm",
       "15 cm",
       "20 cm",
-      "30 cm",
       "50 cm"
     ],
     "question": "Ein Rechteck hat eine Länge von 10 cm und eine Breite von 5 cm. Welchen Umfang hat das Rechteck?",
@@ -180,13 +180,13 @@
     "topic": "Sachaufgaben (Mehrschrittig)"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Durch 2 teilbar heißt: letzte Ziffer gerade. Durch 5 teilbar heißt: Endziffer 0 oder 5. Durch 3 teilbar heißt: Quersumme durch 3 teilbar. 420 endet auf 0 und hat die Quersumme 4+2+0 = 6, die durch 3 teilbar ist. 230 und 550 scheitern an der Quersumme, 345 ist ungerade.",
     "options": [
       "230",
       "345",
-      "420",
-      "550"
+      "550",
+      "420"
     ],
     "question": "Welche der folgenden Zahlen ist sowohl durch 2, durch 3 als auch durch 5 teilbar?",
     "topic": "Teilbarkeitsregeln"
@@ -204,12 +204,12 @@
     "topic": "Grundrechenarten (Addition)"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Man zerlegt den zweiten Faktor: 24 · 35 = 24 · 30 + 24 · 5 = 720 + 120 = 840.",
     "options": [
       "620",
-      "820",
       "840",
+      "820",
       "960"
     ],
     "question": "Welches Ergebnis hat 24 · 35?",
@@ -228,23 +228,23 @@
     "topic": "Stellenwertsystem"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ein Würfel hat 8 Ecken, 12 Kanten und 6 quadratische Flächen. In jeder Ecke treffen drei Kanten aufeinander.",
     "options": [
       "6",
-      "8",
       "12",
-      "4"
+      "4",
+      "8"
     ],
     "question": "Wie viele Ecken hat ein Würfel?",
     "topic": "Geometrie (Körper)"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Punkt vor Strich: zuerst die Division 8 : 4 = 2, dann die Addition 12 + 2 = 14.",
     "options": [
-      "5",
       "14",
+      "5",
       "20",
       "16"
     ],
@@ -264,25 +264,25 @@
     "topic": "Maßeinheiten (Längen)"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Hefte: 3 · 2 Euro = 6 Euro. Dazu der Stift: 6 + 1 = 7 Euro Gesamtkosten. Wechselgeld: 10 Euro - 7 Euro = 3 Euro.",
     "options": [
-      "3 Euro",
       "4 Euro",
       "5 Euro",
+      "3 Euro",
       "7 Euro"
     ],
     "question": "Lisa kauft 3 Hefte für je 2 Euro und einen Stift für 1 Euro. Sie bezahlt mit einem 10-Euro-Schein. Wie viel Wechselgeld bekommt sie zurück?",
     "topic": "Sachaufgaben"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "I steht für 1, V für 5 und X für 10. Steht ein kleinerer Wert vor einem größeren, wird er abgezogen: IX = 10 - 1 = 9. XI wäre dagegen 10 + 1 = 11.",
     "options": [
       "VII",
-      "IX",
       "XI",
-      "IV"
+      "IV",
+      "IX"
     ],
     "question": "Welche römische Zahl entspricht der Zahl 9?",
     "topic": "Römische Zahlen"
@@ -324,13 +324,13 @@
     "topic": "Größen: Längen umrechnen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Regale mal Bücher je Regal: 24 · 125 = 24 · 100 + 24 · 25 = 2.400 + 600 = 3.000 Bücher.",
     "options": [
       "2.400",
       "2.500",
-      "3.000",
-      "3.600"
+      "3.600",
+      "3.000"
     ],
     "question": "In einer Bibliothek stehen 24 Regale mit je 125 Büchern. Wie viele Bücher sind das insgesamt?",
     "topic": "Multiplikation in Textaufgaben"
@@ -360,25 +360,25 @@
     "topic": "Division mit Rest"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Der Zahlname besteht aus 'dreihundertsiebenundneunzigtausend' (397.000) und 'fünfzehn' (15). Zusammen ergibt das 397.015.",
     "options": [
       "397.500",
-      "397.015",
       "379.015",
+      "397.015",
       "397.150"
     ],
     "question": "Welche Zahl ist dreihundertsiebenundneunzigtausendfünfzehn?",
     "topic": "Stellenwert und Zahlen lesen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Man addiert die beiden Preise: 14,50 Euro + 7,99 Euro. Die Euro: 14 + 7 = 21. Die Cent: 0,50 + 0,99 = 1,49. Zusammen 21 + 1,49 = 22,49 Euro.",
     "options": [
       "21,49 Euro",
-      "22,49 Euro",
       "21,59 Euro",
-      "22,59 Euro"
+      "22,59 Euro",
+      "22,49 Euro"
     ],
     "question": "Ein Schulbuch kostet 14,50 Euro, und ein Stifteetui kostet 7,99 Euro. Wie viel kostet beides zusammen?",
     "topic": "Rechnen mit Dezimalzahlen (Geld)"
@@ -396,11 +396,11 @@
     "topic": "Natürliche Zahlen und Operationen, Sachaufgaben"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Gesamtfläche des Gartens: 12 m · 8 m = 96 m². Fläche der quadratischen Terrasse: 4 m · 4 m = 16 m². Rest: 96 m² - 16 m² = 80 m².",
     "options": [
-      "80 m²",
       "64 m²",
+      "80 m²",
       "96 m²",
       "16 m²"
     ],
@@ -408,25 +408,25 @@
     "topic": "Geometrie (Flächeninhalt)"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Erste Fahrt: von 08:35 Uhr bis 10:15 Uhr sind es 1 Stunde 40 Minuten. Zweite Fahrt: von 10:45 Uhr bis 12:05 Uhr sind es 1 Stunde 20 Minuten. Zusammen 2 Stunden 60 Minuten, also genau 3 Stunden. Die Pause zählt nicht mit.",
     "options": [
       "3 Stunden 20 Minuten",
       "2 Stunden 50 Minuten",
-      "2 Stunden 40 Minuten",
-      "3 Stunden 00 Minuten"
+      "3 Stunden 00 Minuten",
+      "2 Stunden 40 Minuten"
     ],
     "question": "Ein Bus fährt um 08:35 Uhr in Stadt A ab und kommt um 10:15 Uhr in Stadt B an. Nach einer 30-minütigen Pause fährt er um 10:45 Uhr weiter nach Stadt C und erreicht diese um 12:05 Uhr. Wie lang ist die reine Fahrzeit des Busses ohne die Pause?",
     "topic": "Größen und Messen (Zeit), Sachaufgaben"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Nach dem Distributivgesetz darf man den gemeinsamen Faktor ausklammern: a · b + a · c = a · (b + c). Mit a = 15, b = 24 und c = 16 ergibt das 15 · (24 + 16) = 15 · 40 = 600, genau wie 360 + 240 = 600.",
     "options": [
       "15 · (24 · 16)",
       "30 · (24 + 16)",
-      "15 · (24 + 16)",
-      "15 · 24 · 16"
+      "15 · 24 · 16",
+      "15 · (24 + 16)"
     ],
     "question": "Welche der folgenden Rechnungen ergibt das gleiche Ergebnis wie 15 · 24 + 15 · 16?",
     "topic": "Natürliche Zahlen, Rechengesetze (Distributivgesetz)"
@@ -444,11 +444,11 @@
     "topic": "Natürliche Zahlen, Zahlenfolgen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Zuerst die Gesamtlänge umwandeln: 15 m = 15 · 100 cm = 1 500 cm. Ein Stück ist 1 500 cm ÷ 6 = 250 cm lang. Vier Stücke zusammen sind 4 · 250 cm = 1 000 cm.",
     "options": [
-      "1 000 cm",
       "1 500 cm",
+      "1 000 cm",
       "250 cm",
       "375 cm"
     ],
@@ -456,35 +456,35 @@
     "topic": "Größen und Messen (Länge), Sachaufgaben"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Das Quadrat hat die Seitenlänge 8 m. Nach der Verlängerung ist das Rechteck 8 m + 3 m = 11 m lang und weiterhin 8 m breit. Umfang = 2 · (Länge + Breite) = 2 · (11 m + 8 m) = 2 · 19 m = 38 m.",
     "options": [
       "40 Meter",
-      "38 Meter",
       "32 Meter",
+      "38 Meter",
       "22 Meter"
     ],
     "question": "Ein quadratisches Beet hat eine Seitenlänge von 8 Metern. Es wird an einer Seite um 3 Meter verlängert, sodass es nun ein Rechteck ist. Wie groß ist der Umfang des neuen rechteckigen Beets?",
     "topic": "Geometrie (Umfang), Sachaufgaben"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Es fahren 28 Schüler + 2 Lehrer = 30 Personen mit. 30 ÷ 20 = 1,5, also werden 2 Busse gebraucht (aufrunden, weil ein halber Bus nicht geht): 2 · 150 Euro = 300 Euro. Eintritt: 30 · 5 Euro = 150 Euro. Gesamt: 300 Euro + 150 Euro = 450 Euro.",
     "options": [
       "440 Euro",
-      "450 Euro",
       "300 Euro",
-      "600 Euro"
+      "600 Euro",
+      "450 Euro"
     ],
     "question": "Eine 5. Klasse mit 28 Schülern und 2 Lehrern fährt ins Museum. Jeder Bus hat Platz für 20 Personen. Die Fahrt kostet 150 Euro pro Bus. Der Eintritt ins Museum kostet 5 Euro pro Person. Wie hoch sind die Gesamtkosten für den Ausflug?",
     "topic": "Natürliche Zahlen, Sachaufgaben"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "347 + 285: Einer 7+5=12, also 2 hinschreiben und 1 übertragen. Zehner 4+8+1=13, also 3 hinschreiben und 1 übertragen. Hunderter 3+2+1=6. Ergebnis: 632.",
     "options": [
-      "622",
       "632",
+      "622",
       "612",
       "642"
     ],
@@ -492,11 +492,11 @@
     "topic": "Addition"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "503 - 178: Einer 3-8 geht nicht, also von den Zehnern borgen: 13-8=5. Bei den Zehnern ist nach dem Borgen 9 übrig (aus 50 wurde 49 Zehner): 9-7=2. Hunderter: 4-1=3. Ergebnis: 325. Probe: 325 + 178 = 503.",
     "options": [
-      "325",
       "335",
+      "325",
       "315",
       "345"
     ],
@@ -504,47 +504,47 @@
     "topic": "Subtraktion"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "24 · 6: 4·6=24, also 4 hinschreiben und 2 übertragen. 2·6=12, plus Übertrag 2 sind 14. Ergebnis: 144. Probe: 20·6=120, 4·6=24, zusammen 144.",
     "options": [
       "124",
-      "144",
       "134",
+      "144",
       "154"
     ],
     "question": "Was ist 24 × 6?",
     "topic": "Multiplikation"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "96 ÷ 8 = 12, denn 8 · 12 = 96. Probe: 8 · 10 = 80 und 8 · 2 = 16, zusammen 96.",
     "options": [
       "11",
-      "12",
       "13",
-      "14"
+      "14",
+      "12"
     ],
     "question": "Was ist 96 ÷ 8?",
     "topic": "Division"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Beim Vergleich vierstelliger Zahlen zuerst die Tausenderstelle ansehen: bei allen 3. Dann die Hunderterstelle: 0, 0, 4, 4 – übrig bleiben 3 470 und 3 407. Deren Zehnerstelle: 7 > 0, also ist 3 470 die größte Zahl.",
     "options": [
+      "3 470",
       "3 047",
       "3 074",
-      "3 470",
       "3 407"
     ],
     "question": "Welche Zahl ist die größte?",
     "topic": "Zahlen vergleichen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Der Vorgänger einer Zahl ist die Zahl direkt davor: 100 000 - 1 = 99 999. Weil 100 000 auf fünf Nullen endet, werden alle Nullen zu Neunen.",
     "options": [
-      "99 999",
       "100 001",
+      "99 999",
       "99 990",
       "90 999"
     ],
@@ -564,23 +564,23 @@
     "topic": "Multiplikation"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die kleinste Zahl, die größer als 99 999 ist, ist 100 000. Sie besteht aus einer Eins und fünf Nullen, hat also 6 Ziffern.",
     "options": [
       "5",
-      "6",
       "7",
-      "4"
+      "4",
+      "6"
     ],
     "question": "Wie viele Ziffern hat die kleinste natürliche Zahl, die größer als 99 999 ist?",
     "topic": "Stellenwerte"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "In einem Karton sind 8 · 7 = 56 Eier. In 12 Kartons sind es 56 · 12 = 56 · 10 + 56 · 2 = 560 + 112 = 672 Eier.",
     "options": [
-      "560",
       "672",
+      "560",
       "336",
       "726"
     ],
@@ -600,35 +600,35 @@
     "topic": "Stellenwerte"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "1 000 - 364 = 636. Schrittweise: 1 000 - 300 = 700, dann 700 - 64 = 636. Probe: 364 + 636 = 1 000.",
     "options": [
-      "636",
       "646",
       "626",
+      "636",
       "664"
     ],
     "question": "Was ist 1 000 – 364?",
     "topic": "Subtraktion"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Geschickt rechnen: 9 · 99 = 9 · 100 - 9 · 1 = 900 - 9 = 891.",
     "options": [
       "810",
-      "891",
       "899",
-      "981"
+      "981",
+      "891"
     ],
     "question": "Was ist 9 × 99?",
     "topic": "Einmaleins"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Gerade Zahlen sind ohne Rest durch 2 teilbar, und genau das erkennt man an der letzten Ziffer: 0, 2, 4, 6 oder 8. Beispiele: 14, 28, 50, 102.",
     "options": [
-      "Sie sind durch 3 teilbar",
       "Sie enden auf 0, 2, 4, 6 oder 8",
+      "Sie sind durch 3 teilbar",
       "Sie sind immer größer als 10",
       "Sie haben immer zwei Stellen"
     ],
@@ -636,47 +636,47 @@
     "topic": "Gerade und ungerade Zahlen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "450 ÷ 9 = 50, denn 9 · 50 = 450. Hilfe: 45 ÷ 9 = 5, also ist 450 ÷ 9 = 50.",
     "options": [
       "40",
-      "45",
       "50",
+      "45",
       "55"
     ],
     "question": "Was ist 450 ÷ 9?",
     "topic": "Division"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Alle Zahlen haben die Tausenderstelle 2, also entscheidet die Hunderterstelle: 5, 4, 3, 3. Damit ist 2 543 die größte, dann 2 435. Bei 2 354 und 2 345 entscheidet die Zehnerstelle: 5 > 4, also 2 354 > 2 345. Reihenfolge: 2 543 > 2 435 > 2 354 > 2 345.",
     "options": [
-      "2 543 > 2 435 > 2 354 > 2 345",
       "2 345 > 2 354 > 2 435 > 2 543",
       "2 543 > 2 354 > 2 435 > 2 345",
+      "2 543 > 2 435 > 2 354 > 2 345",
       "2 435 > 2 543 > 2 354 > 2 345"
     ],
     "question": "Ordne die Zahlen 2 345, 2 435, 2 354 und 2 543 der Größe nach, beginnend mit der größten. Welche Reihenfolge stimmt?",
     "topic": "Zahlen vergleichen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "13 · 4 zerlegen: 10 · 4 = 40 und 3 · 4 = 12. Zusammen 40 + 12 = 52.",
     "options": [
       "48",
-      "52",
       "56",
-      "44"
+      "44",
+      "52"
     ],
     "question": "Was ist 13 × 4?",
     "topic": "Multiplikation"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Ein Teiler geht ohne Rest in einer Zahl auf. Beispiel: 12 ÷ 3 = 4 ohne Rest, also ist 3 ein Teiler von 12. Alle Teiler von 12 sind 1, 2, 3, 4, 6 und 12.",
     "options": [
-      "Das Ergebnis einer Divisionsaufgabe",
       "Eine Zahl, die eine andere ohne Rest teilt",
+      "Das Ergebnis einer Divisionsaufgabe",
       "Die Summe aller Ziffern einer Zahl",
       "Der Rest, der bei einer Division bleibt"
     ],
@@ -708,13 +708,13 @@
     "topic": "ggT"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Vielfache von 4: 4, 8, 12, 16, 20, ... Vielfache von 6: 6, 12, 18, 24, ... Die kleinste Zahl, die in beiden Reihen vorkommt, ist 12.",
     "options": [
       "8",
-      "12",
       "18",
-      "24"
+      "24",
+      "12"
     ],
     "question": "Was ist das kleinste gemeinsame Vielfache (kgV) von 4 und 6?",
     "topic": "kgV"
@@ -756,24 +756,24 @@
     "topic": "Teilbarkeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Erst ohne Nullen rechnen: 3 · 7 = 21. Weil 300 zwei Nullen hat, kommen zwei Nullen an das Ergebnis: 2 100.",
     "options": [
       "2 000",
-      "2 100",
       "2 700",
-      "21 000"
+      "21 000",
+      "2 100"
     ],
     "question": "Was ist 300 × 7?",
     "topic": "Multiplikation"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "5 000 - 2 348 = 2 652. Mit Ergänzen: von 2 348 sind es 652 bis 3 000 und von dort 2 000 bis 5 000. Zusammen 652 + 2 000 = 2 652.",
     "options": [
+      "2 652",
       "2 752",
       "2 642",
-      "2 652",
       "2 762"
     ],
     "question": "Was ergibt 5 000 – 2 348?",
@@ -804,23 +804,23 @@
     "topic": "Primzahlen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "72 ÷ 6 = 12, denn 6 · 12 = 72. Probe: 6 · 10 = 60 und 6 · 2 = 12, zusammen 72.",
     "options": [
       "10",
       "11",
-      "12",
-      "13"
+      "13",
+      "12"
     ],
     "question": "Was ist 72 ÷ 6?",
     "topic": "Division"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "29 ÷ 4: Die größte Vielfache von 4 unter 29 ist 28, denn 4 · 7 = 28. Es bleibt 29 - 28 = 1 übrig. Ergebnis: 7 Rest 1.",
     "options": [
-      "Rest 0",
       "Rest 1",
+      "Rest 0",
       "Rest 2",
       "Rest 3"
     ],
@@ -852,23 +852,23 @@
     "topic": "Quadratzahlen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Das Zeichen '>' bedeutet 'größer als' und öffnet sich zur größeren Zahl. 45 · 2 = 90, und 90 > 89 stimmt. Falsch sind: 3 407 > 3 470 (die Zehnerstelle 0 ist kleiner als 7), 7 · 9 < 12 · 5 (63 ist nicht kleiner als 60) und 1 000 - 550 = 550 (richtig wären 450).",
     "options": [
       "3 407 > 3 470",
       "7 · 9 < 12 · 5",
-      "45 · 2 > 89",
-      "1 000 - 550 = 550"
+      "1 000 - 550 = 550",
+      "45 · 2 > 89"
     ],
     "question": "Welche dieser Aussagen ist richtig?",
     "topic": "Vergleichszeichen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Paare bilden: 1+20=21, 2+19=21, 3+18=21 … insgesamt 10 Paare. 10 × 21 = 210.",
     "options": [
-      "190",
       "210",
+      "190",
       "200",
       "220"
     ],
@@ -876,11 +876,11 @@
     "topic": "Rechenstrategien"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Geschickt rechnen: 24 × 25 = 24 × 100 ÷ 4 = 2 400 ÷ 4 = 600. Probe: 20 × 25 = 500, 4 × 25 = 100, zusammen 600.",
     "options": [
-      "600",
       "500",
+      "600",
       "580",
       "620"
     ],
@@ -888,35 +888,35 @@
     "topic": "Rechenstrategien"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "1 Tag = 24 Stunden, jede Stunde hat 60 Minuten: 24 × 60 = 1 440 Minuten.",
     "options": [
       "1 200",
-      "1 440",
       "2 400",
+      "1 440",
       "720"
     ],
     "question": "Wie viele Minuten hat ein Tag?",
     "topic": "Größen & Einheiten"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Hier stehen nur Punktrechnungen, also von links nach rechts: 48 ÷ 4 = 12, dann 12 × 3 = 36.",
     "options": [
       "4",
-      "36",
       "16",
-      "144"
+      "144",
+      "36"
     ],
     "question": "Was ist 48 ÷ 4 × 3?",
     "topic": "Rechenregeln"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Plus und Minus werden von links nach rechts gerechnet: 100 – 37 = 63, dann 63 + 15 = 78.",
     "options": [
-      "48",
       "78",
+      "48",
       "52",
       "88"
     ],
@@ -936,35 +936,35 @@
     "topic": "Quersumme"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Distributivgesetz: 4 × 25 + 4 × 75 = 4 × (25 + 75) = 4 × 100 = 400.",
     "options": [
       "300",
-      "400",
       "360",
+      "400",
       "440"
     ],
     "question": "Was ist 4 × 25 + 4 × 75?",
     "topic": "Distributivgesetz"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "42 € ÷ 3 € pro Tag = 14 Tage. Probe: 14 × 3 = 42 ✓.",
     "options": [
       "12",
-      "14",
       "13",
-      "15"
+      "15",
+      "14"
     ],
     "question": "Ein Schüler spart jeden Tag 3 €. Nach wie vielen Tagen hat er 42 €?",
     "topic": "Sachaufgaben"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "1 m = 100 cm, also 2,4 m = 2,4 × 100 cm = 240 cm.",
     "options": [
-      "24 cm",
       "240 cm",
+      "24 cm",
       "2 400 cm",
       "204 cm"
     ],
@@ -996,23 +996,23 @@
     "topic": "Gewichte"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "1 L = 1 000 ml, also 0,75 L = 0,75 × 1 000 ml = 750 ml. Merke: 0,5 L = 500 ml, 0,25 L = 250 ml.",
     "options": [
       "75 ml",
       "7 500 ml",
-      "750 ml",
-      "705 ml"
+      "705 ml",
+      "750 ml"
     ],
     "question": "Wie viele Milliliter sind 0,75 L?",
     "topic": "Hohlmaße"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "1 Stunde = 60 Minuten, also teilt man die Minuten durch 60. Beispiele: 120 min ÷ 60 = 2 h, 90 min ÷ 60 = 1,5 h.",
     "options": [
-      "Mit 100 multiplizieren",
       "Durch 60 teilen",
+      "Mit 100 multiplizieren",
       "Mit 60 multiplizieren",
       "Durch 100 teilen"
     ],
@@ -1032,25 +1032,25 @@
     "topic": "Zeit"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Minuten: 30 + 45 = 75 min, das sind 1 h 15 min. Stunden: 2 + 1 + 1 = 4 h. Ergebnis: 4 h 15 min.",
     "options": [
-      "4 h 15 min",
       "4 h 75 min",
       "3 h 15 min",
+      "4 h 15 min",
       "4 h 25 min"
     ],
     "question": "Was ist 2 h 30 min + 1 h 45 min?",
     "topic": "Zeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ein Normaljahr hat 365 Tage. Im Schaltjahr sind es 366 Tage, weil der Februar dann 29 statt 28 Tage hat.",
     "options": [
       "364",
-      "365",
       "360",
-      "366"
+      "366",
+      "365"
     ],
     "question": "Wie viele Tage hat ein Normaljahr, also ein Jahr ohne Schalttag?",
     "topic": "Zeit"
@@ -1080,35 +1080,35 @@
     "topic": "Gewichte"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Flächen misst man in Quadratmetern (m²) oder Quadratzentimetern (cm²). Es gilt: 1 m² = 10 000 cm². Meter (m) misst Längen, Kubikmeter (m³) misst Rauminhalte.",
     "options": [
       "m",
-      "m²",
       "m³",
+      "m²",
       "km"
     ],
     "question": "Was ist die Einheit für Flächeninhalte?",
     "topic": "Fläche"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "1 ha ist ein Quadrat mit 100 m Seitenlänge: 100 m × 100 m = 10 000 m². Außerdem gilt: 1 km² = 100 ha.",
     "options": [
       "100 m²",
       "1 000 m²",
-      "10 000 m²",
-      "100 000 m²"
+      "100 000 m²",
+      "10 000 m²"
     ],
     "question": "Was ist 1 Hektar (ha) in m²?",
     "topic": "Fläche"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "1,5 × 2,40 € = 3,60 €. Oder in Schritten: 1 kg kostet 2,40 €, 0,5 kg kosten 1,20 €, zusammen 3,60 €.",
     "options": [
-      "3,00 €",
       "3,60 €",
+      "3,00 €",
       "2,40 €",
       "4,80 €"
     ],
@@ -1140,24 +1140,24 @@
     "topic": "Sachaufgaben"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Bei uns misst man die Temperatur in Grad Celsius: Gefrierpunkt 0 °C, Siedepunkt 100 °C. In der Wissenschaft nutzt man Kelvin, dabei sind 0 °C = 273,15 K. In den USA rechnet man in Grad Fahrenheit.",
     "options": [
       "Grad Fahrenheit (°F), auch bei uns im Alltag",
-      "Grad Celsius (°C) im Alltag, Kelvin (K) in der Wissenschaft",
       "Kelvin (K), auch bei uns im Alltag üblich",
-      "Grad Celsius (°C) und Grad Fahrenheit (°F) sind gleich"
+      "Grad Celsius (°C) und Grad Fahrenheit (°F) sind gleich",
+      "Grad Celsius (°C) im Alltag, Kelvin (K) in der Wissenschaft"
     ],
     "question": "Welche Maßeinheit benutzt man bei uns für die Temperatur?",
     "topic": "Temperatur"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "1 cm = 10 mm, also 4,5 cm = 4,5 × 10 mm = 45 mm.",
     "options": [
+      "45 mm",
       "4,5 mm",
       "450 mm",
-      "45 mm",
       "405 mm"
     ],
     "question": "Wie viele Millimeter sind 4,5 cm?",
@@ -1176,35 +1176,35 @@
     "topic": "Physikalische Größen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "1 € = 100 Cent, also 2,75 € = 2 × 100 Cent + 75 Cent = 275 Cent. Probe: 275 Cent ÷ 100 = 2,75 €.",
     "options": [
-      "275 Cent",
       "27,5 Cent",
       "2 750 Cent",
+      "275 Cent",
       "200 Cent"
     ],
     "question": "Was ist 2,75 € in Cent?",
     "topic": "Geld"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "45 min von 60 min sind 45/60. Kürzt man mit 15, ergibt das 3/4 Stunde (= 0,75 h). Merke: 15 min = 1/4 h, 30 min = 1/2 h, 45 min = 3/4 h.",
     "options": [
       "2/3 Stunde",
       "45/100 Stunde",
-      "3/4 Stunde",
-      "1/2 Stunde"
+      "1/2 Stunde",
+      "3/4 Stunde"
     ],
     "question": "Was ist 45 Minuten als Bruchteil einer Stunde?",
     "topic": "Zeit"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Beim Umfang laufen wir einmal außen herum: Länge + Breite + Länge + Breite = 2 × (a + b). Beispiel: a = 8 cm, b = 5 cm → U = 2 × 13 cm = 26 cm.",
     "options": [
-      "U = a × b",
       "U = 2 × (a + b)",
+      "U = a × b",
       "U = a + b",
       "U = 4 × a"
     ],
@@ -1212,95 +1212,95 @@
     "topic": "Geometrie"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Beim Quadrat gilt A = a · a = 5 m · 5 m = 25 m². (20 m wäre der Umfang, nicht die Fläche.)",
     "options": [
       "20 m²",
-      "10 m²",
       "25 m²",
+      "10 m²",
       "50 m²"
     ],
     "question": "Was ist der Flächeninhalt eines Quadrats mit Seite 5 m?",
     "topic": "Geometrie"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Von km/h zu m/s teilt man durch 3,6, denn 1 km = 1 000 m und 1 h = 3 600 s. Beispiel: 36 km/h ÷ 3,6 = 10 m/s.",
     "options": [
       "× 3,6",
-      "÷ 3,6",
       "× 1 000",
+      "÷ 3,6",
       "÷ 60"
     ],
     "question": "Wie rechnet man Kilometer pro Stunde in Meter pro Sekunde um?",
     "topic": "Geschwindigkeit"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Beim Würfel gilt V = a · a · a = 4 cm · 4 cm · 4 cm = 64 cm³.",
     "options": [
       "16 cm³",
       "48 cm³",
-      "64 cm³",
-      "12 cm³"
+      "12 cm³",
+      "64 cm³"
     ],
     "question": "Was ist das Volumen eines Würfels mit Kantenlänge 4 cm?",
     "topic": "Volumen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "365 Tage ÷ 7 Tage = 52 Wochen und 1 Tag übrig. Man rechnet deshalb mit 52 Wochen im Jahr.",
     "options": [
+      "52",
       "48",
       "50",
-      "52",
       "54"
     ],
     "question": "Wie viele volle Wochen hat ein Jahr?",
     "topic": "Zeit"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "3 kg = 3 000 g, dazu die 400 g: 3 000 g + 400 g = 3 400 g.",
     "options": [
       "340 g",
-      "3 004 g",
       "3 400 g",
+      "3 004 g",
       "34 000 g"
     ],
     "question": "Was ist 3 kg 400 g in Gramm?",
     "topic": "Gewichte"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Licht legt rund 300 000 km in einer Sekunde zurück. In einem Jahr sind das 300 000 × 60 × 60 × 24 × 365 ≈ 9,46 Billionen km. Der nächste Stern ist etwa 4,2 Lichtjahre entfernt.",
     "options": [
-      "Die Strecke, die Licht in einem Jahr zurücklegt: rund 9,5 Billionen km",
       "Die Strecke, die Licht in einem Tag zurücklegt: rund 26 Milliarden km",
       "Die Entfernung von der Erde zur Sonne: rund 150 Millionen km",
+      "Die Strecke, die Licht in einem Jahr zurücklegt: rund 9,5 Billionen km",
       "Die Strecke, die Licht in einer Stunde zurücklegt: rund 1 Milliarde km"
     ],
     "question": "Was ist 1 Lichtjahr?",
     "topic": "Astronomie"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "200 Liter ÷ 8 Liter pro Minute = 25 Minuten. Probe: 25 × 8 = 200 ✓.",
     "options": [
-      "25 Minuten",
       "20 Minuten",
       "40 Minuten",
-      "12,5 Minuten"
+      "12,5 Minuten",
+      "25 Minuten"
     ],
     "question": "Aus einem Hahn fließen 8 Liter pro Minute. Wie lange dauert es, eine Wanne mit 200 Litern zu füllen?",
     "topic": "Sachaufgaben"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Kilometer ist die größere Einheit, Meter die kleinere: 4,5 km · 1 000 = 4 500 m. Merke: von der größeren zur kleineren Einheit wird multipliziert, von der kleineren zur größeren dividiert.",
     "options": [
-      "durch 1 000 dividieren",
       "mit 1 000 multiplizieren",
+      "durch 1 000 dividieren",
       "mit 100 multiplizieren",
       "durch 100 dividieren"
     ],
@@ -1308,47 +1308,47 @@
     "topic": "Einheiten"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "1 L = 1 000 ml, also 250 ml : 1 000 = 0,25 L. Ein Glas Saft (250 ml) ist ein viertel Liter, ein Tetrapak mit 0,5 L enthält 500 ml.",
     "options": [
       "2,5 L",
-      "25 L",
       "0,25 L",
+      "25 L",
       "0,025 L"
     ],
     "question": "Was sind 250 ml in Liter?",
     "topic": "Hohlmaße"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "7 · 0,35 € = 2,45 €. In Cent gerechnet: 7 · 35 Cent = 245 Cent = 2,45 €.",
     "options": [
-      "2,45 €",
       "2,80 €",
       "3,50 €",
+      "2,45 €",
       "2,05 €"
     ],
     "question": "Ein Brötchen kostet 0,35 €. Wie viel kosten 7 Brötchen?",
     "topic": "Sachaufgaben"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "3 · 2,5 kg = 7,5 kg. Zerlegt gerechnet: 3 · 2 kg = 6 kg und 3 · 0,5 kg = 1,5 kg, zusammen 7,5 kg.",
     "options": [
       "5 kg",
       "6 kg",
-      "7,5 kg",
-      "8 kg"
+      "8 kg",
+      "7,5 kg"
     ],
     "question": "Wie schwer sind 3 Kartons zu je 2,5 kg?",
     "topic": "Sachaufgaben"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Zum Vergleichen alles in Zentimeter umrechnen: 148 cm, 1,5 m = 150 cm, 1 460 mm = 146 cm, 14,9 dm = 149 cm. Der größte Wert ist 150 cm, also 1,5 m.",
     "options": [
-      "148 cm",
       "1,5 m",
+      "148 cm",
       "1 460 mm",
       "14,9 dm"
     ],
@@ -1380,24 +1380,24 @@
     "topic": "Sachaufgaben"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "1 t = 1 000 kg. Weiter gilt 1 kg = 1 000 g und 1 g = 1 000 mg. Gewichte von Lastwagen werden meist in Tonnen angegeben.",
     "options": [
       "100 kg",
       "500 kg",
-      "1 000 kg",
-      "10 000 kg"
+      "10 000 kg",
+      "1 000 kg"
     ],
     "question": "Wie viel Kilogramm sind 1 t (Tonne)?",
     "topic": "Gewichte"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Flächeninhalt eines Rechtecks = Länge · Breite = 100 m · 50 m = 5 000 m². Das entspricht 0,5 ha.",
     "options": [
+      "5 000 m²",
       "150 m²",
       "500 m²",
-      "5 000 m²",
       "1 500 m²"
     ],
     "question": "Ein rechteckiger Schulhof ist 100 m lang und 50 m breit. Wie groß ist seine Fläche?",
@@ -1416,25 +1416,25 @@
     "topic": "Zeit"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "10,00 € – 6,85 € = 3,15 €. Schrittweise ergänzt: 6,85 € + 0,15 € = 7,00 €, dann 7,00 € + 3,00 € = 10,00 €, zusammen 3,15 €.",
     "options": [
-      "3,15 €",
       "4,15 €",
       "3,25 €",
+      "3,15 €",
       "2,85 €"
     ],
     "question": "Wie viel Wechselgeld bekommt man bei 10 € für einen Einkauf von 6,85 €?",
     "topic": "Sachaufgaben"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "1 kg = 1 000 g, deshalb wird die Grammzahl durch 1 000 geteilt: 500 g = 0,5 kg und 2 500 g = 2,5 kg. Umgekehrt gilt: kg mal 1 000 ergibt g.",
     "options": [
       "durch 100 dividieren",
-      "durch 1 000 dividieren",
       "durch 10 dividieren",
-      "mit 1 000 multiplizieren"
+      "mit 1 000 multiplizieren",
+      "durch 1 000 dividieren"
     ],
     "question": "Wie rechnet man Gramm in Kilogramm um?",
     "topic": "Gewichte"
@@ -1464,35 +1464,35 @@
     "topic": "Multiplikation"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Teile zuerst 45 durch 9, das ergibt 5. Die Null wird wieder angehängt: 50. Probe: 50 · 9 = 450.",
     "options": [
-      "50",
       "5",
       "500",
+      "50",
       "45"
     ],
     "question": "Was ergibt 450 : 9?",
     "topic": "Division"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Es gilt Punkt vor Strich: zuerst 5 · 4 = 20, danach 15 + 20 = 35.",
     "options": [
       "80",
       "24",
-      "35",
-      "45"
+      "45",
+      "35"
     ],
     "question": "Beachte die Vorrangregeln: 15 + 5 · 4",
     "topic": "Rechengesetze"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Schrittweise ergänzen: 455 + 5 = 460, dann 460 + 40 = 500, dann 500 + 500 = 1 000. Zusammen fehlen 5 + 40 + 500 = 545.",
     "options": [
-      "555",
       "545",
+      "555",
       "645",
       "535"
     ],
@@ -1500,11 +1500,11 @@
     "topic": "Subtraktion"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Das Doppelte von 125 ist 250. Davon 50 abgezogen ergibt 200.",
     "options": [
-      "200",
       "250",
+      "200",
       "150",
       "300"
     ],
@@ -1512,35 +1512,35 @@
     "topic": "Kombiniertes Rechnen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Zerlege den Faktor 14: (10 · 5) + (4 · 5) = 50 + 20 = 70.",
     "options": [
       "60",
-      "70",
       "80",
+      "70",
       "50"
     ],
     "question": "Was ist das Ergebnis von 14 · 5?",
     "topic": "Multiplikation"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Bei Zehnerzahlen darf man in beiden Zahlen eine Null streichen: 720 : 80 wird zu 72 : 8 = 9.",
     "options": [
-      "9",
       "90",
       "8",
-      "80"
+      "80",
+      "9"
     ],
     "question": "Berechne: 720 : 80",
     "topic": "Division"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Rechne in zwei Schritten: 340 + 100 = 440, dann 440 + 70 = 510.",
     "options": [
-      "410",
       "510",
+      "410",
       "500",
       "520"
     ],
@@ -1548,11 +1548,11 @@
     "topic": "Addition"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Rechne in zwei Schritten: 630 – 200 = 430, dann 430 – 80 = 350. Oder mit Trick: 630 – 300 + 20 = 350.",
     "options": [
-      "350",
       "370",
+      "350",
       "450",
       "420"
     ],
@@ -1560,25 +1560,25 @@
     "topic": "Subtraktion"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Rechne zuerst 6 · 4 = 24 und hänge die Null der 40 an: 240.",
     "options": [
-      "240",
       "204",
       "2 400",
+      "240",
       "640"
     ],
     "question": "Was ist das Produkt von 6 und 40?",
     "topic": "Multiplikation"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "32 : 8 = 4. Da 320 zehnmal so groß ist wie 32, ist das Ergebnis 40. Probe: 40 · 8 = 320.",
     "options": [
-      "40",
       "4",
       "32",
-      "80"
+      "80",
+      "40"
     ],
     "question": "Teile 320 durch 8.",
     "topic": "Division"
@@ -1596,11 +1596,11 @@
     "topic": "Gemischte Operationen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Beim Runden auf Zehner entscheidet die Einerstelle. Sie ist 3 und damit kleiner als 5, deshalb wird abgerundet: 780.",
     "options": [
-      "780",
       "790",
+      "780",
       "700",
       "800"
     ],
@@ -1608,35 +1608,35 @@
     "topic": "Runden"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Die fehlende Zahl findest du durch Subtraktion: 120 – 45 = 75. Probe: 45 + 75 = 120.",
     "options": [
       "65",
-      "75",
       "85",
+      "75",
       "95"
     ],
     "question": "Welche Zahl muss in die Lücke passen: 45 + ___ = 120?",
     "topic": "Lückenaufgaben / Ergänzen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ein Vielfaches von 9 lässt sich ohne Rest durch 9 teilen: 54 : 9 = 6. Bei 48, 65 und 70 bleibt jeweils ein Rest.",
     "options": [
       "48",
-      "54",
       "65",
-      "70"
+      "70",
+      "54"
     ],
     "question": "Welche der folgenden Zahlen ist ein Vielfaches von 9?",
     "topic": "Vielfache"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Erst die Zehner: 30 + 40 = 70. Dann die Einer: 5 + 8 = 13. Zusammen: 70 + 13 = 83.",
     "options": [
-      "73",
       "83",
+      "73",
       "85",
       "93"
     ],
@@ -1644,11 +1644,11 @@
     "topic": "Addition zweistelliger Zahlen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Ziehe die Zehner von den Zehnern ab: 12 Zehner minus 4 Zehner sind 8 Zehner, also 80. Die 3 Einer bleiben stehen, das Ergebnis ist 83.",
     "options": [
-      "83",
       "73",
+      "83",
       "93",
       "63"
     ],
@@ -1656,25 +1656,25 @@
     "topic": "Subtraktion dreistelliger Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Zerlege den Faktor 12: (10 · 7) + (2 · 7) = 70 + 14 = 84.",
     "options": [
       "82",
-      "84",
       "86",
+      "84",
       "96"
     ],
     "question": "Berechne: 12 · 7",
     "topic": "Multiplikation zweistelliger Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Gesucht ist die Zahl, die mit 12 multipliziert 144 ergibt. Das ist 12, denn 12 · 12 = 144.",
     "options": [
       "11",
-      "12",
       "14",
-      "16"
+      "16",
+      "12"
     ],
     "question": "Was ist 144 geteilt durch 12?",
     "topic": "Division"
@@ -1704,47 +1704,47 @@
     "topic": "Sachrechnen mit Multiplikation (Geld)"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Rechne zuerst 15 · 6 = 90 und hänge die Null der 60 an: 900.",
     "options": [
-      "900",
       "750",
       "800",
+      "900",
       "1 000"
     ],
     "question": "Berechne 15 · 60 im Kopf.",
     "topic": "Multiplikation mit Zehnerzahlen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Punkt vor Strich: zuerst 3 · 20 = 60, danach 120 – 60 = 60.",
     "options": [
-      "60",
       "90",
       "100",
-      "114"
+      "114",
+      "60"
     ],
     "question": "Was ist das Ergebnis von 120 – 3 · 20?",
     "topic": "Punkt- vor Strichrechnung"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Rechne schriftlich: 6 + 7 = 13, also 3 notieren und 1 übertragen. 8 + 4 + 1 = 13, also 3 notieren und 1 übertragen. 3 + 2 + 1 = 6. Ergebnis: 633.",
     "options": [
+      "633",
       "533",
       "623",
-      "633",
       "733"
     ],
     "question": "Berechne: 386 + 247",
     "topic": "Addition dreistelliger Zahlen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Ergänze in Schritten: Von 178 bis 200 sind es 22, von 200 bis 503 sind es 303. Zusammen: 22 + 303 = 325. Probe: 178 + 325 = 503.",
     "options": [
-      "325",
       "335",
+      "325",
       "435",
       "475"
     ],
@@ -1764,71 +1764,71 @@
     "topic": "Multiplikation zweistelliger Zahlen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Teile schrittweise: 25 Zehner : 7 = 3 Zehner, Rest 4 Zehner. Mit den 2 Einern ergibt das 42 : 7 = 6. Ergebnis: 36. Probe: 36 · 7 = 252.",
     "options": [
       "34",
-      "36",
       "38",
-      "42"
+      "42",
+      "36"
     ],
     "question": "Berechne: 252 : 7",
     "topic": "Division mit dreistelligen Zahlen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Tausche die Reihenfolge geschickt: 47 + 53 = 100. Dann noch 100 + 68 = 168.",
     "options": [
+      "168",
       "148",
       "158",
-      "168",
       "178"
     ],
     "question": "Berechne geschickt: 47 + 68 + 53",
     "topic": "Geschicktes Addieren"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Zerlege in Faktoren: 40 · 250 = 4 · 10 · 25 · 10 = (4 · 25) · 100 = 100 · 100 = 10000.",
     "options": [
       "1000",
-      "8000",
       "10000",
+      "8000",
       "100000"
     ],
     "question": "Berechne: 40 · 250",
     "topic": "Multiplikation mit Zehnerzahlen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Rechne in zwei Schritten: 1300 - 300 = 1000, dann 1000 - 150 = 850.",
     "options": [
       "750",
-      "850",
       "860",
+      "850",
       "950"
     ],
     "question": "Berechne im Kopf: 1300 - 450",
     "topic": "Subtraktion über Tausendergrenze"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Punkt vor Strich: zuerst 3 · 6 = 18 und 8 : 2 = 4. Dann von links nach rechts: 5 + 18 = 23 und 23 - 4 = 19.",
     "options": [
       "15",
-      "19",
       "20",
-      "23"
+      "23",
+      "19"
     ],
     "question": "Berechne: 5 + 3 · 6 - 8 : 2",
     "topic": "Gemischte Rechenarten (Punkt vor Strich)"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Um Daten zu erheben, muss man sie direkt beobachten und notieren. Nur das Zählen der Autos in deiner Straße liefert genau die Angaben, nach denen gefragt ist.",
     "options": [
-      "Deine Eltern nach ihrer Vermutung fragen",
       "Die Autos in deiner Straße zählen und notieren",
+      "Deine Eltern nach ihrer Vermutung fragen",
       "Alle Autofahrer in ganz Deutschland befragen",
       "In einem Buch über Autofarben nachlesen"
     ],
@@ -1848,83 +1848,83 @@
     "topic": "Absolute Häufigkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Um Daten auswerten zu können, muss man sie ordnen. Eine Strichliste oder Häufigkeitstabelle zeigt sofort, wie oft jedes Haustier genannt wurde.",
     "options": [
       "Die Zettel ungeordnet in einem Karton sammeln",
-      "Eine Strichliste oder Häufigkeitstabelle anlegen",
       "Die zuerst genannten Antworten allein auswerten",
+      "Eine Strichliste oder Häufigkeitstabelle anlegen",
       "Die Zettel nach ihrer Papierfarbe sortieren"
     ],
     "question": "Nach einer Abstimmung über Lieblingshaustiere hast du viele Zettel mit Namen und Haustieren gesammelt. Was ist der nächste logische Schritt, um die Ergebnisse übersichtlich zu machen?",
     "topic": "Datenorganisation"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Diagramme sind visuelle Darstellungen, die es einfacher machen, große Datenmengen schnell zu erfassen, Muster zu erkennen und Werte miteinander zu vergleichen.",
     "options": [
       "Damit man die Daten vor fremdem Zugriff verstecken kann",
       "Damit die Daten optisch ansprechend und künstlerisch wirken",
-      "Um große Mengen von Daten leichter zu verstehen und zu vergleichen",
-      "Um alle gesammelten Daten endgültig zu löschen und zu entfernen"
+      "Um alle gesammelten Daten endgültig zu löschen und zu entfernen",
+      "Um große Mengen von Daten leichter zu verstehen und zu vergleichen"
     ],
     "question": "Nach dem Sammeln und Ordnen von Daten kann man diese oft in einem Diagramm darstellen. Was ist der Hauptgrund, warum man Daten in Diagrammen zeigt?",
     "topic": "Zweck von Diagrammen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Der Modus (auch Modalwert genannt) ist der Wert, der in einer Datenreihe am häufigsten vorkommt. Der Apfel kommt hier dreimal vor, Banane zweimal, Kirsche und Birne je einmal.",
     "options": [
+      "Apfel",
       "Banane",
       "Kirsche",
-      "Apfel",
       "Birne"
     ],
     "question": "Bei einer Umfrage nach Lieblingsfrüchten wurden folgende Antworten gesammelt: Apfel, Banane, Apfel, Kirsche, Birne, Apfel, Banane. Welche Frucht ist der 'Modus' in dieser Sammlung?",
     "topic": "Modus (Modalwert)"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Für den Durchschnitt addierst du alle gelesenen Bücher und teilst durch die Anzahl der Freunde: 5 + 3 + 7 = 15 Bücher, dann 15 : 3 = 5 Bücher pro Person.",
     "options": [
       "3 Bücher",
-      "4 Bücher",
       "5 Bücher",
+      "4 Bücher",
       "6 Bücher"
     ],
     "question": "Drei Freunde haben in einem Monat Bücher gelesen. Lena hat 5 Bücher gelesen, Max hat 3 Bücher gelesen und Emma hat 7 Bücher gelesen. Wie viele Bücher haben sie im Durchschnitt pro Person gelesen?",
     "topic": "Mittelwert (Durchschnitt)"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Ordne die Werte der Größe nach: 175, 180, 190, 205, 210. Bei fünf Werten steht der dritte Wert genau in der Mitte, also ist der Median 190 cm. (Der Mittelwert wäre 192 cm, das ist etwas anderes.)",
     "options": [
       "180 cm",
-      "190 cm",
       "192 cm",
+      "190 cm",
       "205 cm"
     ],
     "question": "Eine Sportlehrerin hat die Weitsprungleistungen ihrer Schüler gemessen (in cm): 180, 210, 175, 205, 190. Welcher Wert liegt genau in der Mitte, wenn man alle Werte der Größe nach ordnet (Median)?",
     "topic": "Median (Zentralwert)"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Die Spannweite ist der Unterschied zwischen dem höchsten und dem niedrigsten Wert. Der höchste Wert ist 22°C, der niedrigste 8°C. Also: 22°C - 8°C = 14°C.",
     "options": [
       "7°C",
       "12°C",
-      "14°C",
-      "22°C"
+      "22°C",
+      "14°C"
     ],
     "question": "Die Außentemperaturen an einem Tag wurden gemessen: morgens 10°C, mittags 22°C, abends 15°C, nachts 8°C. Was ist die Spannweite der Temperaturen an diesem Tag?",
     "topic": "Spannweite"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Bevor man Daten ordnen, darstellen oder auswerten kann, muss man sie zuerst erheben. Das ist der grundlegende erste Schritt jeder statistischen Untersuchung.",
     "options": [
-      "Eine Schlussfolgerung aus den Daten ziehen",
       "Die passenden Daten erheben und notieren",
+      "Eine Schlussfolgerung aus den Daten ziehen",
       "Ein Diagramm zu den Daten zeichnen",
       "Den Durchschnitt der Daten berechnen"
     ],
@@ -1932,47 +1932,47 @@
     "topic": "Datensammlung"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Jede volle Fünfergruppe steht für 5 (vier Striche und ein Querstrich). Zwei Gruppen sind 5 + 5 = 10, dazu kommen die 3 einzelnen Striche: 10 + 3 = 13.",
     "options": [
       "8",
-      "11",
       "13",
+      "11",
       "15"
     ],
     "question": "In einer Strichliste stehen zwei volle Fünfergruppen und danach noch drei einzelne Striche. Welche Anzahl wurde damit gezählt?",
     "topic": "Strichlisten und Häufigkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Das Minimum ist der kleinste Wert in einer Zahlenreihe. Von 23, 18, 30, 25 und 20 ist 18 die kleinste Zahl.",
     "options": [
       "23",
-      "18",
       "30",
+      "18",
       "20"
     ],
     "question": "Fünf Schüler haben ihre gesammelten Kastanien gezählt: 23, 18, 30, 25, 20. Was ist die kleinste Anzahl (Minimum) der gesammelten Kastanien?",
     "topic": "Minimum"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Die Spannweite ist der größte Wert (Maximum) minus dem kleinsten Wert (Minimum). Hier: 30 - 18 = 12.",
     "options": [
       "7",
       "10",
-      "12",
-      "15"
+      "15",
+      "12"
     ],
     "question": "Fünf Schüler haben ihre gesammelten Kastanien gezählt: 23, 18, 30, 25, 20. Wie groß ist die Spannweite dieser Daten? (Die Spannweite ist der Unterschied zwischen dem größten und dem kleinsten Wert.)",
     "topic": "Spannweite"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Der Modalwert ist der Wert, der am häufigsten vorkommt. 'Hund' wurde viermal genannt, 'Katze' zweimal, 'Hase' einmal und 'Fisch' einmal.",
     "options": [
-      "Katze",
       "Hund",
+      "Katze",
       "Hase",
       "Fisch"
     ],
@@ -2004,35 +2004,35 @@
     "topic": "Häufigkeitstabelle"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Nach dem Sammeln folgt das Ordnen der Daten. Eine Häufigkeitstabelle oder eine sortierte Liste zeigt sofort, wie oft jede Farbe vorgekommen ist.",
     "options": [
       "Die Farben der als nächstes vorbeifahrenden Autos schätzen",
-      "Eine Häufigkeitstabelle oder eine sortierte Liste erstellen",
       "Die Autos und ihre Farben für eine weitere Stunde beobachten",
-      "Aus allen Farben einen einzigen Gesamtmittelwert berechnen"
+      "Aus allen Farben einen einzigen Gesamtmittelwert berechnen",
+      "Eine Häufigkeitstabelle oder eine sortierte Liste erstellen"
     ],
     "question": "Du hast aufgeschrieben, welche Farben die Autos haben, die in 10 Minuten an deinem Fenster vorbeifahren. Was wäre der sinnvollste nächste Schritt, um diese Daten klar und übersichtlich darzustellen?",
     "topic": "Datenorganisation und -darstellung"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Gesucht ist die Zahl, die von 45 abgezogen 18 ergibt. Das ist der Unterschied der beiden Zahlen: 45 - 18 = 27. Probe: 45 - 27 = 18.",
     "options": [
+      "27",
       "17",
       "23",
-      "27",
       "63"
     ],
     "question": "Welche Zahl macht die Gleichung 45 - □ = 18 wahr?",
     "topic": "Platzhalter in Gleichungen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Ziehe auf beiden Seiten 6 ab: 3 · x = 21. Teile dann beide Seiten durch 3: x = 7. Probe: 3 · 7 + 6 = 27.",
     "options": [
-      "7",
       "9",
+      "7",
       "11",
       "21"
     ],
@@ -2040,73 +2040,73 @@
     "topic": "Gleichungen mit zwei Rechenschritten"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Eine Regel muss zu beiden Beispielen passen. Für 'Zahl · 2 + 3' gilt: 5 · 2 + 3 = 13 und 7 · 2 + 3 = 17. 'Zahl + 8' und 'Zahl · 3 - 2' passen nur zur 5, bei der 7 ergeben sie 15 bzw. 19.",
     "options": [
       "Zahl + 8",
-      "Zahl · 2 + 3",
       "Zahl · 3 - 2",
+      "Zahl · 2 + 3",
       "Zahl · 2 + 1"
     ],
     "question": "Ein Zahlenautomat verwandelt Eingabezahlen. Wenn du 5 eingibst, kommt 13 heraus. Wenn du 7 eingibst, kommt 17 heraus. Welche Regel benutzt der Automat?",
     "topic": "Muster und Regeln erkennen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Rechne rückwärts: Vor den 12 geschenkten Stiften hatte Anna 23 - 12 = 11 Stifte. Davor hatte sie noch die 5 abgegebenen Stifte: 11 + 5 = 16. Probe: 16 - 5 + 12 = 23.",
     "options": [
       "6",
       "11",
-      "16",
-      "30"
+      "30",
+      "16"
     ],
     "question": "Anna hatte eine unbekannte Anzahl an Stiften. Sie gibt 5 Stifte ab, bekommt danach 12 Stifte geschenkt und hat jetzt 23 Stifte. Wie viele Stifte hatte sie zuerst?",
     "topic": "Textaufgaben in Gleichungen übersetzen"
   },
   {
-    "correct": 3,
+    "correct": 0,
     "explanation": "Jede Zahl wird verdoppelt und dann um 1 erhöht: 2 · 2 + 1 = 5, 5 · 2 + 1 = 11, 11 · 2 + 1 = 23. Also folgt 23 · 2 + 1 = 47.",
     "options": [
+      "47",
       "35",
       "41",
-      "46",
-      "47"
+      "46"
     ],
     "question": "Welches ist die nächste Zahl in dieser Zahlenfolge: 2, 5, 11, 23, ____?",
     "topic": "Zahlenfolgen und Muster erkennen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Setze y = 5 ein: 2 · 5 + 3. Es gilt Punkt vor Strich, also zuerst 2 · 5 = 10 und dann 10 + 3 = 13.",
     "options": [
       "10",
-      "12",
       "13",
+      "12",
       "16"
     ],
     "question": "Welchen Wert hat der Ausdruck 2 · y + 3, wenn y = 5 ist?",
     "topic": "Terme mit Variablen berechnen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Beim Ausmultiplizieren wird die 4 mit beiden Summanden malgenommen: 4 · (10 + 3) = 4 · 10 + 4 · 3 = 40 + 12 = 52. Die anderen Terme ergeben 43, 34 und 120.",
     "options": [
       "4 · 10 + 3",
-      "4 · 10 + 4 · 3",
       "4 + 10 · 3",
+      "4 · 10 + 4 · 3",
       "4 · 10 · 3"
     ],
     "question": "Welcher Term hat das gleiche Ergebnis wie 4 · (10 + 3)?",
     "topic": "Rechengesetze (Distributivgesetz)"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Nenne Leas Anzahl x. Markus bekommt doppelt so viele, also 2 · x. Zusammen sind das x + 2 · x = 3 · x = 30. Also x = 30 : 3 = 10. Lea bekommt 10, Markus 20 Gummibärchen.",
     "options": [
       "5",
-      "10",
       "15",
-      "20"
+      "20",
+      "10"
     ],
     "question": "Eine Tüte Gummibärchen enthält 30 Stück und wird komplett verteilt. Wenn Markus doppelt so viele Gummibärchen bekommt wie Lea, wie viele Gummibärchen bekommt Lea?",
     "topic": "Textaufgaben mit Verhältnissen und Gleichungen"

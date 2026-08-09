@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Satz des Pythagoras: a²+b²=c². Nur im rechtwinkligen Dreieck. c = Hypotenuse (dem rechten Winkel gegenüber). Umkehrung: Gilt a²+b²=c², so ist das Dreieck rechtwinklig.",
     "options": [
-      "a + b = c für die Seiten jedes beliebigen Dreiecks",
       "a² + b² = c² im rechtwinkligen Dreieck mit c als Hypotenuse",
+      "a + b = c für die Seiten jedes beliebigen Dreiecks",
       "a² - b² = c² im rechtwinkligen Dreieck mit b als Hypotenuse",
       "a² + b² = 2c² im gleichschenkligen Dreieck mit Basis c"
     ],
@@ -24,35 +24,35 @@
     "topic": "Trigonometrie"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "sin(30°)=1/2=0,5. sin(45°)=√2/2≈0,707. sin(60°)=√3/2≈0,866. cos(30°)=√3/2, cos(45°)=√2/2, cos(60°)=1/2. Merke: 30-60-90 Dreieck.",
     "options": [
       "√2/2; 1/2; √3/2",
-      "1/2; √2/2; √3/2",
       "√3/2; √2/2; 1/2",
+      "1/2; √2/2; √3/2",
       "1/2; √3/2; √2/2"
     ],
     "question": "Was sind die exakten Werte: sin(30°), sin(45°), sin(60°)?",
     "topic": "Trigonometrie"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Sinussatz: a/sin(α) = b/sin(β) = c/sin(γ) = 2R (R=Umkreisradius). Anwendung: beliebiges Dreieck, wenn Winkel und gegenüberliegende Seite bekannt.",
     "options": [
-      "a/sin(α) = b/sin(β) = c/sin(γ)",
       "a·sin(α) = b·sin(β) = c·sin(γ)",
       "a² = b² + c² - 2bc·cos(α)",
-      "sin(α+β) = sin(α)·cos(β) + cos(α)·sin(β)"
+      "sin(α+β) = sin(α)·cos(β) + cos(α)·sin(β)",
+      "a/sin(α) = b/sin(β) = c/sin(γ)"
     ],
     "question": "Was ist der Sinussatz?",
     "topic": "Trigonometrie"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Kosinussatz: a²=b²+c²-2bc·cos(α). Verallgemeinerung des Pythagoras (für α=90° wird 2bc·cos(90°)=0). Anwendung: wenn 3 Seiten oder 2 Seiten+eingeschl.Winkel bekannt.",
     "options": [
-      "a² = b² + c² - 2bc·sin(α)",
       "a² = b² + c² - 2bc·cos(α)",
+      "a² = b² + c² - 2bc·sin(α)",
       "a² = b² + c² + 2bc·cos(α)",
       "a² = b² - c² - 2bc·cos(α)"
     ],
@@ -60,95 +60,95 @@
     "topic": "Trigonometrie"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Vollwinkel: 360°. Halbkreis: 180°. Rechter Winkel: 90°. Bogenmaß: 360° = 2π. 180° = π. 90° = π/2. Gradmaß ↔ Bogenmaß: α[rad] = α[°] · π/180.",
     "options": [
       "90°",
-      "180°",
       "360°",
+      "180°",
       "270°"
     ],
     "question": "Wieviel Grad hat ein Vollwinkel?",
     "topic": "Winkel"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Bogenmaß (rad): α[rad] = Bogenlänge b / Radius r. Vollkreis: 2πr/r = 2π. 360°=2π. 180°=π. Umrechnung: α[°]=α[rad]·180/π. Einheitenlos (dimensionslos).",
     "options": [
       "Bogenlänge geteilt durch Kreisumfang; der Vollkreis hat dann das Maß 1",
-      "Bogenlänge geteilt durch Radius; der Vollkreis hat dann das Maß 2π",
       "Bogenlänge geteilt durch Durchmesser; der Vollkreis hat dann das Maß π",
+      "Bogenlänge geteilt durch Radius; der Vollkreis hat dann das Maß 2π",
       "Radius geteilt durch Bogenlänge; der Vollkreis hat dann das Maß 1/(2π)"
     ],
     "question": "Was ist das Bogenmaß (Radiant)?",
     "topic": "Bogenmaß"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Bogenlänge: b = 2πr·α/360 = r·α[rad]. Merke: ganzer Umfang 2πr bei 360°, Anteil α/360 davon.",
     "options": [
       "b = πr·α/360",
-      "b = 2πr·α/360",
       "b = πr²·α/360",
-      "b = 2πr·360/α"
+      "b = 2πr·360/α",
+      "b = 2πr·α/360"
     ],
     "question": "Was ist die Bogenlänge eines Kreissektors mit Radius r und Mittelpunktswinkel α (in Grad)?",
     "topic": "Kreis"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Kreissektor: A = πr²·α/360 = r²·α[rad]/2. Ganzer Kreis (360°): A=πr². Proportional zum Winkel.",
     "options": [
+      "A = πr²·α/360",
       "A = πr²·α/180",
       "A = r²·α/360",
-      "A = πr²·α/360",
       "A = 2πr·α/360"
     ],
     "question": "Was ist der Flächeninhalt eines Kreissektors?",
     "topic": "Kreis"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Umfang U = 2πr = πd (d=2r). π≈3,14159. Einheit: Längeneinheit (cm, m). Fläche: A=πr².",
     "options": [
       "U = πr², mit d = 2r also auch U = πd²/4",
+      "U = 2πr, mit d = 2r also auch U = πd",
       "U = πr, mit d = 2r also auch U = πd/2",
-      "U = 4πr, mit d = 2r also auch U = 2πd",
-      "U = 2πr, mit d = 2r also auch U = πd"
+      "U = 4πr, mit d = 2r also auch U = 2πd"
     ],
     "question": "Was ist der Umfang eines Kreises?",
     "topic": "Kreis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Dreiecksfläche: A=½·g·h. g=Grundlinie, h=zugehörige Höhe. Alternativ: A=½·a·b·sin(γ) (zwei Seiten und eingeschlossener Winkel). Herons Formel: bei drei bekannten Seiten.",
     "options": [
       "A = g·h, also Grundlinie mal zugehörige Höhe",
-      "A = ½·g·h, also Grundlinie mal zugehörige Höhe durch 2",
       "A = ½·(a+b+c), also die Summe der drei Seiten durch 2",
+      "A = ½·g·h, also Grundlinie mal zugehörige Höhe durch 2",
       "A = ½·a·b·tan(γ), also zwei Seiten mal Tangens des Zwischenwinkels"
     ],
     "question": "Wie berechnet man den Flächeninhalt eines Dreiecks?",
     "topic": "Dreieck"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Trapez: A = (a+c)/2 · h. a und c: parallele Seiten (Grundlinien). h: Höhe (Abstand der Parallelen). Sonderfall: Parallelogramm (a=c): A=a·h. Rechteck: A=a·b.",
     "options": [
       "A = (a+c)·h, also Summe der Parallelseiten mal Höhe",
-      "A = (a+c)/2 · h, also halbe Summe der Parallelseiten mal Höhe",
       "A = (a-c)/2 · h, also halbe Differenz der Parallelseiten mal Höhe",
-      "A = (a·c)/2 · h, also halbes Produkt der Parallelseiten mal Höhe"
+      "A = (a·c)/2 · h, also halbes Produkt der Parallelseiten mal Höhe",
+      "A = (a+c)/2 · h, also halbe Summe der Parallelseiten mal Höhe"
     ],
     "question": "Was ist der Flächeninhalt eines Trapezes?",
     "topic": "Viereck"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Satz des Thales: Winkel im Halbkreis = 90°. Wenn AB Durchmesser, dann ∠APB=90° für jeden Punkt P auf dem Halbkreis. Umkehrung: rechter Winkel → Punkt liegt auf Thaleskreis.",
     "options": [
-      "Ein Dreieck über dem Durchmesser eines Kreises hat am dritten Eckpunkt einen Winkel von 60°",
       "Ein Dreieck über dem Durchmesser eines Kreises hat am dritten Eckpunkt einen Winkel von 90°",
+      "Ein Dreieck über dem Durchmesser eines Kreises hat am dritten Eckpunkt einen Winkel von 60°",
       "Ein Dreieck über dem Durchmesser eines Kreises hat an beiden Endpunkten je einen Winkel von 45°",
       "Ein Dreieck über dem Durchmesser eines Kreises ist stets gleichseitig mit lauter 60°-Winkeln"
     ],
@@ -168,35 +168,35 @@
     "topic": "Kongruenz"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Ähnlichkeit: gleiche Winkel (AA-Satz). Seiten proportional. k = Ähnlichkeitsfaktor. Flächen: k². Körper/Volumen: k³. Strahlensätze basieren auf Ähnlichkeit.",
     "options": [
       "Dreiecke, die in allen Seitenlängen und Winkeln übereinstimmen und deckungsgleich sind",
-      "Dreiecke, die in allen Winkeln übereinstimmen und deren Seiten im gleichen Verhältnis stehen",
       "Dreiecke, die denselben Flächeninhalt haben, deren Winkel aber verschieden sein dürfen",
+      "Dreiecke, die in allen Winkeln übereinstimmen und deren Seiten im gleichen Verhältnis stehen",
       "Dreiecke, die in einer Seite übereinstimmen und deren Winkel sich zu 180° ergänzen"
     ],
     "question": "Was sind ähnliche Dreiecke?",
     "topic": "Ähnlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "1. Strahlensatz: ZA/ZB = ZA'/ZB' = AA'/BB'. Anwendung: Kartenmaßstab, Ähnlichkeit. Z=Scheitel, A,B auf einer Geraden, A',B' auf der anderen.",
     "options": [
       "Werden zwei Strahlen von Parallelen geschnitten, so sind alle entstehenden Abschnitte gleich lang",
-      "Werden zwei Strahlen von Parallelen geschnitten, so verhalten sich die Abschnitte proportional zueinander",
       "Werden zwei Strahlen von Parallelen geschnitten, so verhalten sich die Abschnitte umgekehrt proportional",
-      "Werden zwei Strahlen von Parallelen geschnitten, so ergänzen sich die Abschnittswinkel zu 180°"
+      "Werden zwei Strahlen von Parallelen geschnitten, so ergänzen sich die Abschnittswinkel zu 180°",
+      "Werden zwei Strahlen von Parallelen geschnitten, so verhalten sich die Abschnitte proportional zueinander"
     ],
     "question": "Was besagen die Strahlensätze?",
     "topic": "Strahlensätze"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Vektor: hat Betrag und Richtung (Gegensatz: Skalar nur Betrag). Darstellung: →AB oder (a₁/a₂). Ortsvektor: vom Ursprung. Addition: komponentenweise. Skalarmultiplikation: alle Komponenten mal Skalar.",
     "options": [
-      "Eine Größe, die allein durch ihren Betrag festgelegt ist, zum Beispiel eine Temperatur",
       "Eine Größe, die durch Betrag und Richtung festgelegt ist und als Pfeil dargestellt wird",
+      "Eine Größe, die allein durch ihren Betrag festgelegt ist, zum Beispiel eine Temperatur",
       "Eine Gerade, die durch zwei Punkte im Koordinatensystem eindeutig festgelegt wird",
       "Ein fester Punkt, der durch seine Koordinaten im Koordinatensystem festgelegt wird"
     ],
@@ -216,35 +216,35 @@
     "topic": "Vektoren"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Betrag: |→a| = √(a₁²+a₂²) = √(9+16) = √25 = 5. Im Raum: |→a| = √(a₁²+a₂²+a₃²). 3-4-5 ist pythagoreisches Tripel.",
     "options": [
       "|→a| = 3 + 4 = 7",
-      "|→a| = √(3² + 4²) = √25 = 5",
       "|→a| = √(3 + 4) = √7 ≈ 2,6",
+      "|→a| = √(3² + 4²) = √25 = 5",
       "|→a| = (3² + 4²)/2 = 12,5"
     ],
     "question": "Wie berechnet man den Betrag eines Vektors →a = (3/4)?",
     "topic": "Vektoren"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Spiegelung an x-Achse: y-Koordinate negiert: (x;y)→(x;-y). An y-Achse: x negiert: (x;y)→(-x;y). Am Ursprung: beides: (x;y)→(-x;-y). An y=x: tauschen: (x;y)→(y;x).",
     "options": [
       "(x;y) → (-x;y)",
-      "(x;y) → (x;-y)",
       "(x;y) → (-x;-y)",
-      "(x;y) → (y;x)"
+      "(x;y) → (y;x)",
+      "(x;y) → (x;-y)"
     ],
     "question": "Was ist eine Spiegelung an der x-Achse?",
     "topic": "Abbildungen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Zentrische Streckung vom Ursprung: (x;y) → (kx;ky). Ähnlichkeit entsteht (gleiche Form). Flächen: k². k=-1: Punktspiegelung am Ursprung.",
     "options": [
-      "Alle Punkte werden um die Strecke k in Richtung des Zentrums verschoben",
       "Alle Abstände vom Zentrum werden mit k multipliziert, bei k>1 also vergrößert",
+      "Alle Punkte werden um die Strecke k in Richtung des Zentrums verschoben",
       "Alle Abstände vom Zentrum werden um k vergrößert, bei k<0 also verkleinert",
       "Alle Punkte werden um den Winkel k um das Zentrum herum gedreht"
     ],
@@ -264,35 +264,35 @@
     "topic": "Koordinatengeometrie"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Abstand: d = √((x₂-x₁)²+(y₂-y₁)²) = √(9+16) = 5. Pythagoras im Koordinatensystem.",
     "options": [
       "d = (4-1) + (6-2) = 3 + 4 = 7",
-      "d = √((4-1)² + (6-2)²) = √25 = 5",
       "d = √((4-1) + (6-2)) = √7 ≈ 2,6",
+      "d = √((4-1)² + (6-2)²) = √25 = 5",
       "d = ((4-1)² + (6-2)²)/2 = 12,5"
     ],
     "question": "Was ist der Abstand zweier Punkte P₁(1|2) und P₂(4|6)?",
     "topic": "Koordinatengeometrie"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Einheitskreis: r=1, Mittelpunkt O(0|0). Kreisgleichung: x²+y²=1. Punkt auf Einheitskreis: P=(cos(α)|sin(α)). Basis der Trigonometrie. tan(α)=sin(α)/cos(α).",
     "options": [
       "Ein Kreis mit Radius 2 um den Ursprung mit der Gleichung x² + y² = 4",
-      "Ein Kreis mit Radius 1 um den Ursprung mit der Gleichung x² + y² = 1",
       "Ein Kreis mit Durchmesser 1 um den Ursprung mit der Gleichung x² + y² = 1/4",
-      "Ein Kreis mit Radius 1 um den Punkt (1|1) mit der Gleichung (x-1)² + (y-1)² = 1"
+      "Ein Kreis mit Radius 1 um den Punkt (1|1) mit der Gleichung (x-1)² + (y-1)² = 1",
+      "Ein Kreis mit Radius 1 um den Ursprung mit der Gleichung x² + y² = 1"
     ],
     "question": "Was ist ein Einheitskreis?",
     "topic": "Trigonometrie"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Schnittwinkel an Parallelen: Stufenwinkel (F-Form): gleich. Wechselwinkel (Z-Form): gleich. Nebenwinkel (U-Form): supplementär (180°). Scheitelwinkel (immer, bei beliebigen Geraden): gleich.",
     "options": [
-      "Stufenwinkel ergänzen sich zu 180°, Wechselwinkel ergänzen sich zu 180°, Nebenwinkel sind gleich groß",
       "Stufenwinkel sind gleich groß, Wechselwinkel sind gleich groß, Nebenwinkel ergänzen sich zu 180°",
+      "Stufenwinkel ergänzen sich zu 180°, Wechselwinkel ergänzen sich zu 180°, Nebenwinkel sind gleich groß",
       "Stufenwinkel sind gleich groß, Wechselwinkel ergänzen sich zu 180°, Nebenwinkel sind gleich groß",
       "Stufenwinkel ergänzen sich zu 90°, Wechselwinkel sind gleich groß, Nebenwinkel ergänzen sich zu 90°"
     ],
@@ -312,35 +312,35 @@
     "topic": "Dreieck"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Regelmäßiges n-Eck: alle Seiten gleich lang, alle Innenwinkel gleich. Dreieck: 60°. Quadrat: 90°. Fünfeck: 108°. Sechseck: 120°. n→∞: nähert sich Kreis.",
     "options": [
       "Ein Vieleck mit n gleich langen Seiten, dessen Innenwinkel jeweils 360°/n betragen",
-      "Ein Vieleck mit n gleich langen Seiten und n gleichen Innenwinkeln von je (n-2)·180°/n",
       "Ein Vieleck mit n gleich großen Innenwinkeln, dessen Seiten beliebig lang sein dürfen",
+      "Ein Vieleck mit n gleich langen Seiten und n gleichen Innenwinkeln von je (n-2)·180°/n",
       "Ein Vieleck mit n gleich langen Seiten, dessen Innenwinkelsumme stets 360° beträgt"
     ],
     "question": "Was ist ein regelmäßiges Polygon (n-Eck)?",
     "topic": "Vielecke"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "U = 2πr = 2π·5 = 10π ≈ 31,4 cm. A = πr² = π·25 = 25π ≈ 78,5 cm². Einheiten beachten: U in cm, A in cm²!",
     "options": [
       "U = 5π cm, A = 10π cm²",
       "U = 25π cm, A = 10π cm²",
-      "U = 10π cm, A = 25π cm²",
-      "U = 20π cm, A = 100π cm²"
+      "U = 20π cm, A = 100π cm²",
+      "U = 10π cm, A = 25π cm²"
     ],
     "question": "Was ist der Umfang und die Fläche eines Kreises mit r=5cm?",
     "topic": "Kreis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Kreisgleichung: (x-m)²+(y-n)²=r². Für M im Ursprung: x²+y²=r² (Einheitskreis mit r=1). Ableitung aus Distanzformel zum Mittelpunkt.",
     "options": [
-      "(x-m)² + (y-n)² = 2r²",
       "(x-m)² + (y-n)² = r²",
+      "(x-m)² + (y-n)² = 2r²",
       "(x+m)² + (y+n)² = r²",
       "(x-m)² - (y-n)² = r²"
     ],
@@ -348,11 +348,11 @@
     "topic": "Kreis"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Gegenkathete = sin(30°)·Hypotenuse = 0,5·10 = 5 cm. Ankathete = cos(30°)·10 = (√3/2)·10 ≈ 8,66 cm.",
     "options": [
-      "Gegenkathete = sin(30°)·10 cm = 5 cm",
       "Gegenkathete = tan(30°)·10 cm ≈ 5,8 cm",
+      "Gegenkathete = sin(30°)·10 cm = 5 cm",
       "Gegenkathete = cos(30°)·10 cm ≈ 8,7 cm",
       "Gegenkathete = 10 cm / sin(30°) = 20 cm"
     ],
@@ -360,35 +360,35 @@
     "topic": "Trigonometrie"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Kartesisches Koordinatensystem: René Descartes. x-Achse: horizontal. y-Achse: vertikal. Ursprung O(0|0). Quadranten: I(+;+), II(-;+), III(-;-), IV(+;-).",
     "options": [
       "Eine Tabelle aus Zeilen und Spalten, in die Messwerte paarweise eingetragen werden",
-      "Zwei oder drei senkrecht zueinander stehende Achsen mit Ursprung, die Punkte durch Koordinaten festlegen",
       "Ein Gitter aus gleich großen Quadraten, dessen Felder von links nach rechts durchnummeriert sind",
+      "Zwei oder drei senkrecht zueinander stehende Achsen mit Ursprung, die Punkte durch Koordinaten festlegen",
       "Eine Kurve, die jedem x-Wert genau einen y-Wert zuordnet und stets im Ursprung beginnt"
     ],
     "question": "Was ist ein Koordinatensystem?",
     "topic": "Koordinatensystem"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Raumdiagonale eines Quaders a×b×c: Erst Flächendiagonale: e=√(a²+b²). Dann Raum: d=√(e²+c²)=√(a²+b²+c²). Zweifache Anwendung von Pythagoras.",
     "options": [
       "d = a + b + c",
-      "d = √(a² + b² + c²)",
       "d = √(a² + b²) + c",
-      "d = √(a + b + c)"
+      "d = √(a + b + c)",
+      "d = √(a² + b² + c²)"
     ],
     "question": "Was ist Pythagoras in 3D (Raumdiagonale eines Quaders)?",
     "topic": "Pythagoras"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Drehung um Ursprung um φ: x'=x·cosφ-y·sinφ, y'=x·sinφ+y·cosφ. Matrixform: [[cosφ,-sinφ],[sinφ,cosφ]]·(x/y). 90° gegen Uhrzeigersinn: (x/y)→(-y/x).",
     "options": [
-      "Eine Abbildung, bei der alle Punkte um einen festen Vektor parallel verschoben werden",
       "Eine Abbildung, bei der alle Punkte um ein festes Zentrum um den Winkel φ gedreht werden",
+      "Eine Abbildung, bei der alle Punkte um einen festen Vektor parallel verschoben werden",
       "Eine Abbildung, bei der alle Punkte an einer festen Geraden gespiegelt werden",
       "Eine Abbildung, bei der alle Abstände zum Zentrum mit dem Faktor φ multipliziert werden"
     ],
@@ -408,35 +408,35 @@
     "topic": "Höhensatz"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Einheitsvektoren: |→e|=1. Standardbasis: →e₁=(1/0), →e₂=(0/1). Allgemein: →a = a₁·→e₁ + a₂·→e₂. Normierung: →â = →a/|→a|.",
     "options": [
       "Vektoren, die vom Ursprung zu einem Punkt zeigen, in 2D also zum Beispiel (3/4)",
-      "Vektoren mit dem Betrag 1, in 2D also e₁ = (1/0) und e₂ = (0/1)",
       "Vektoren mit dem Betrag 0, in 2D also ausschließlich der Nullvektor (0/0)",
+      "Vektoren mit dem Betrag 1, in 2D also e₁ = (1/0) und e₂ = (0/1)",
       "Vektoren mit lauter gleichen Komponenten, in 2D also zum Beispiel (1/1) und (2/2)"
     ],
     "question": "Was sind Einheitsvektoren (Standardbasisvektoren)?",
     "topic": "Vektoren"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "tan(α) = sin(α)/cos(α) = Gegenkathete/Ankathete. tan(45°)=1, tan(0°)=0, tan(90°) nicht definiert (Division durch 0). Steigung einer Geraden = tan(Neigungswinkel).",
     "options": [
       "Ankathete/Hypotenuse = cos(α)",
-      "Gegenkathete/Ankathete = sin(α)/cos(α)",
       "Hypotenuse/Gegenkathete = 1/sin(α)",
-      "Ankathete/Gegenkathete = cos(α)/sin(α)"
+      "Ankathete/Gegenkathete = cos(α)/sin(α)",
+      "Gegenkathete/Ankathete = sin(α)/cos(α)"
     ],
     "question": "Was ist der Tangens tan(α) = ?",
     "topic": "Trigonometrie"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Symmetrietypen: Achsensymmetrie: f(-x)=f(x) (gerade Funktionen, gespiegelt an y-Achse). Punktsymmetrie: f(-x)=-f(x) (ungerade Funktionen, 180° am Ursprung). Kreis: Rotationssymmetrie.",
     "options": [
-      "Achsensymmetrie durch Spiegelung an einem Punkt, Punktsymmetrie durch Drehung um 90°, Drehsymmetrie durch Verschiebung",
       "Achsensymmetrie durch Spiegelung an einer Geraden, Punktsymmetrie durch Drehung um 180°, Drehsymmetrie durch Drehung um andere Winkel",
+      "Achsensymmetrie durch Spiegelung an einem Punkt, Punktsymmetrie durch Drehung um 90°, Drehsymmetrie durch Verschiebung",
       "Achsensymmetrie durch Drehung um eine Achse, Punktsymmetrie durch Spiegelung an zwei Achsen, Drehsymmetrie nur bei Kreisen",
       "Achsensymmetrie durch Verschiebung längs einer Achse, Punktsymmetrie durch Streckung von einem Punkt aus, Drehsymmetrie durch Spiegelung"
     ],
@@ -456,35 +456,35 @@
     "topic": "Symmetrie"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Winkelhalbierende: halbiert den Winkel. Geometrisch: Ort aller Punkte, die von beiden Schenkeln gleich weit entfernt sind. Drei Winkelhalbierende eines Dreiecks treffen sich im Inkreismittelpunkt.",
     "options": [
       "Eine Gerade, die senkrecht auf einem Schenkel steht und durch den Scheitel des Winkels verläuft",
-      "Ein Strahl, der einen Winkel in zwei gleich große Teile teilt und von beiden Schenkeln gleich weit entfernt verläuft",
       "Eine Gerade, die eine Strecke senkrecht in zwei gleich lange Teile teilt und durch deren Mitte verläuft",
+      "Ein Strahl, der einen Winkel in zwei gleich große Teile teilt und von beiden Schenkeln gleich weit entfernt verläuft",
       "Ein Strahl, der vom Scheitel zur Mitte der gegenüberliegenden Seite verläuft und die Fläche halbiert"
     ],
     "question": "Was ist der Winkelhalbierende?",
     "topic": "Winkel"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Konvex: Verbindungsstrecke zweier innerer Punkte liegt vollständig im Inneren. Konkav: es gibt Verbindungsstrecken die außen verlaufen. Konvexe Hülle: kleinstes konvexes Polygon das eine Menge enthält.",
     "options": [
       "Konvex: alle Seiten sind gleich lang. Konkav: mindestens zwei Seiten sind unterschiedlich lang.",
-      "Konvex: alle Innenwinkel sind kleiner als 180°. Konkav: mindestens ein Innenwinkel ist größer als 180°.",
       "Konvex: alle Innenwinkel sind größer als 90°. Konkav: mindestens ein Innenwinkel ist kleiner als 90°.",
-      "Konvex: alle Ecken liegen auf einem Kreis. Konkav: mindestens eine Ecke liegt innerhalb des Kreises."
+      "Konvex: alle Ecken liegen auf einem Kreis. Konkav: mindestens eine Ecke liegt innerhalb des Kreises.",
+      "Konvex: alle Innenwinkel sind kleiner als 180°. Konkav: mindestens ein Innenwinkel ist größer als 180°."
     ],
     "question": "Was sind konvexe und konkave Vielecke?",
     "topic": "Vielecke"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Die Diagonale d eines Quadrats ist d = a√2, daraus folgt a = d/√2. Für den Flächeninhalt gilt A = a² = (d/√2)² = d²/2. Mit d = 8 cm ergibt sich A = 64/2 = 32 cm². Wer d fälschlich als Seitenlänge nimmt, erhält 64 cm².",
     "options": [
-      "16 cm²",
       "32 cm²",
+      "16 cm²",
       "64 cm²",
       "128 cm²"
     ],
@@ -504,35 +504,35 @@
     "topic": "Trigonometrie"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Der Radius folgt aus dem Satz des Pythagoras: r² + h² = m², also r² = 13² − 12² = 169 − 144 = 25 und r = 5 cm. Für den Kegel gilt V = (1/3) · π · r² · h = (1/3) · 3,14 · 25 cm² · 12 cm = 314,00 cm³. Ohne den Faktor 1/3 käme 942,00 cm³ heraus.",
     "options": [
       "104,67 cm³",
-      "314,00 cm³",
       "340,17 cm³",
+      "314,00 cm³",
       "942,00 cm³"
     ],
     "question": "Ein Kegel hat eine Höhe von 12 cm und eine Mantellinienlänge (Seitenlinie) von 13 cm. Welches Volumen besitzt der Kegel? (π ≈ 3,14)",
     "topic": "Pythagoras"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Weil AA' parallel zu BB' ist, gilt nach dem ersten Strahlensatz SA/SB = SA'/SB'. Mit SB = SA + AB = 4 cm + 6 cm = 10 cm folgt 4/10 = 5/SB', also SB' = 12,5 cm. Daraus ergibt sich A'B' = SB' − SA' = 12,5 cm − 5 cm = 7,5 cm.",
     "options": [
-      "7,5 cm",
       "4,8 cm",
       "10,0 cm",
-      "12,5 cm"
+      "12,5 cm",
+      "7,5 cm"
     ],
     "question": "Von einem Punkt S gehen zwei Strahlen aus. Auf dem einen liegen die Punkte A und B (A zwischen S und B), auf dem anderen die Punkte A' und B'. Die Geraden AA' und BB' sind zueinander parallel. Es gilt SA = 4 cm, AB = 6 cm und SA' = 5 cm. Wie lang ist die Strecke A'B'?",
     "topic": "Strahlensätze"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Aus A = πr² und A = 36π cm² folgt r² = 36, also r = 6 cm. Für den Umfang gilt U = 2πr = 2π · 6 cm = 12π cm. Wer den Radius mit dem Flächenwert verwechselt oder nur πr rechnet, landet bei 36π cm bzw. 6π cm.",
     "options": [
-      "6π cm",
       "12π cm",
+      "6π cm",
       "18π cm",
       "36π cm"
     ],
@@ -564,35 +564,35 @@
     "topic": "Koordinatengeometrie"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Für die Oberfläche eines Zylinders gilt O = 2πr² + 2πrh. Mit r = 4 cm und h = 7 cm folgt O = 2π · 16 cm² + 2π · 28 cm² = 32π + 56π = 88π ≈ 88 · 3,14 = 276,32 cm². Nur die Mantelfläche ergäbe 56π ≈ 175,84 cm², nur ein Deckkreis 72π ≈ 226,08 cm².",
     "options": [
       "175,84 cm²",
       "226,08 cm²",
-      "276,32 cm²",
-      "483,56 cm²"
+      "483,56 cm²",
+      "276,32 cm²"
     ],
     "question": "Ein Zylinder hat einen Radius von 4 cm und eine Höhe von 7 cm. Welche Oberfläche hat der Zylinder? (π ≈ 3,14)",
     "topic": "Körperberechnung"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Das Volumen eines Zylinders ist V = π · r² · h. Mit r = 5 cm und h = 10 cm folgt V = 3,14 · 25 cm² · 10 cm = 785,00 cm³. Wer den Radius nicht quadriert, erhält 157,00 cm³, wer die Kegelformel mit dem Faktor 1/3 benutzt, 261,67 cm³.",
     "options": [
+      "785,00 cm³",
       "157,00 cm³",
       "261,67 cm³",
-      "785,00 cm³",
       "3140,00 cm³"
     ],
     "question": "Ein Zylinder hat einen Radius von 5 cm und eine Höhe von 10 cm. Welches Volumen hat der Zylinder? (π ≈ 3,14)",
     "topic": "Körperberechnung"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Nach dem Sinussatz gilt a/sin α = b/sin β, also b = a · sin β / sin α. Mit a = 8 cm, sin 30° = 0,5 und sin 45° ≈ 0,707 folgt b = 8 cm · 0,707 / 0,5 = 11,312 cm, gerundet 11,31 cm. Der Zwischenwert a/sin α = 16,00 cm ist noch nicht die Lösung.",
     "options": [
-      "11,31 cm",
       "5,66 cm",
+      "11,31 cm",
       "13,86 cm",
       "16,00 cm"
     ],
@@ -612,23 +612,23 @@
     "topic": "Koordinatengeometrie"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Aus V = (1/3)πr²h folgt 96π = (1/3)π · r² · 8, also r² = 36 und r = 6 cm. Die Mantellinie ist s = √(r² + h²) = √(36 + 64) = 10 cm. Damit ist O = πr(r + s) = π · 6 · 16 = 96π cm². Nur die Mantelfläche wäre πrs = 60π cm², nur die Grundfläche 36π cm².",
     "options": [
       "36π cm²",
       "60π cm²",
-      "96π cm²",
-      "132π cm²"
+      "132π cm²",
+      "96π cm²"
     ],
     "question": "Ein Kegel hat ein Volumen von 96π cm³ und eine Höhe von 8 cm. Welchen Oberflächeninhalt hat dieser Kegel? (Formeln: V = 1/3 · π · r² · h; O = π · r · (r + s); s² = r² + h²)",
     "topic": "Körperberechnung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Bei ähnlichen Dreiecken sind die Verhältnisse entsprechender Seiten gleich. Der Streckfaktor ist k = 10 cm / 5 cm = 2. Die kürzeste Seite des zweiten Dreiecks ist damit 3 cm · 2 = 6,0 cm. Wer statt zu multiplizieren 5 cm addiert, erhält 8,0 cm.",
     "options": [
-      "1,5 cm",
       "6,0 cm",
+      "1,5 cm",
       "7,5 cm",
       "8,0 cm"
     ],
@@ -636,12 +636,12 @@
     "topic": "Ähnlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Nach dem Kosinussatz gilt c² = a² + b² − 2ab · cos γ. Einsetzen: c² = 7² + 5² − 2 · 7 · 5 · 0,5 = 49 + 25 − 35 = 39, also c = √39 ≈ 6,24 cm. Ohne den Kosinusterm käme √74 ≈ 8,60 cm heraus, mit falschem Vorzeichen √109 ≈ 10,44 cm.",
     "options": [
       "8,60 cm",
-      "10,44 cm",
       "6,24 cm",
+      "10,44 cm",
       "7,52 cm"
     ],
     "question": "In einem Dreieck ABC sind die Seiten a = 7 cm, b = 5 cm und der eingeschlossene Winkel γ = 60° gegeben. Wie lang ist die Seite c gerundet auf zwei Dezimalstellen? (cos 60° = 0,5)",
@@ -660,13 +660,13 @@
     "topic": "Koordinatengeometrie"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Aus O = 4πr² und O = 100π cm² folgt r² = 25, also r = 5 cm. Eingesetzt in die Volumenformel: V = (4/3)π · (5 cm)³ = (4/3)π · 125 cm³ = (500/3)π cm³. Wer r² statt r³ einsetzt, erhält (100/3)π cm³, wer mit dem Durchmesser rechnet, (4000/3)π cm³.",
     "options": [
       "(100/3)π cm³",
-      "(500/3)π cm³",
       "(1000/3)π cm³",
-      "(4000/3)π cm³"
+      "(4000/3)π cm³",
+      "(500/3)π cm³"
     ],
     "question": "Die Oberfläche einer Kugel beträgt 100π cm². Welches Volumen hat diese Kugel? (Formeln: O = 4πr²; V = 4/3πr³)",
     "topic": "Körperberechnung"

@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Die absolute Häufigkeit ist eine reine Anzahl, also eine Zählgröße ohne Einheit. Bei den Noten 2, 3, 2, 1, 2 hat die Note 2 die absolute Häufigkeit 3. Teilt man diese Anzahl durch die Gesamtzahl (3 : 5 = 0,6), erhält man die relative Häufigkeit. Der häufigste Wert selbst heißt Modus, der Abstand zwischen größtem und kleinstem Wert Spannweite.",
     "options": [
-      "Den Anteil dieses Wertes an allen Daten in Prozent.",
       "Die Anzahl, wie oft dieser Wert in den Daten vorkommt.",
+      "Den Anteil dieses Wertes an allen Daten in Prozent.",
       "Den Wert, der in den Daten am häufigsten vorkommt.",
       "Den Abstand zwischen dem größten und kleinsten Wert."
     ],
@@ -24,35 +24,35 @@
     "topic": "Arithmetisches Mittel"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Relative Häufigkeit = absolute Häufigkeit : Gesamtzahl, also 15 : 25 = 0,6 und damit 60 %. Die 10 Schüler ohne Haustier machen die restlichen 40 % aus; wer diese Gruppe zählt, wählt den falschen Wert. Die Zahlen 15 und 25 sind absolute Häufigkeit bzw. Gesamtzahl, keine Prozentwerte.",
     "options": [
       "15 %",
       "25 %",
-      "40 %",
-      "60 %"
+      "60 %",
+      "40 %"
     ],
     "question": "In einer Klasse mit 25 Schülern haben 15 Schüler ein Haustier. Wie hoch ist die relative Häufigkeit der Schüler mit Haustier in Prozent?",
     "topic": "Relative Häufigkeit"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Der Modalwert ist der am häufigsten genannte Wert. Fußball kommt 4-mal vor, Schwimmen 2-mal, Handball, Tennis und Basketball je 1-mal. Bei Daten wie Sportarten lässt sich nur der Modus bestimmen: Mittelwert und Median gibt es hier nicht, weil man Sportarten nicht der Größe nach ordnen kann.",
     "options": [
       "Schwimmen",
       "Tennis",
-      "Fußball",
-      "Basketball"
+      "Basketball",
+      "Fußball"
     ],
     "question": "Für eine Umfrage zu Lieblingssportarten wurden folgende Antworten gesammelt: Fußball, Schwimmen, Handball, Fußball, Tennis, Schwimmen, Fußball, Basketball, Fußball. Welches ist der Modalwert (Modus) dieser Datenreihe?",
     "topic": "Modalwert (Modus)"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Zuerst sortieren: 165, 168, 170, 172, 178, 180, 185. Bei 7 Werten steht der 4. Wert in der Mitte, der Median ist also 172 cm. Der Mittelwert beträgt dagegen 1218 : 7 = 174 cm. Wer den Durchschnitt statt des Medians berechnet, wählt diesen Wert; wer die Reihe unsortiert lässt, landet oft beim 4. genannten Wert 185.",
     "options": [
-      "170 cm",
       "172 cm",
+      "170 cm",
       "174 cm",
       "178 cm"
     ],
@@ -72,35 +72,35 @@
     "topic": "Spannweite"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "32 % von 450 sind 0,32 · 450 = 144. Im Kopf: 10 % sind 45, also 30 % gleich 135, dazu 2 % gleich 9, zusammen 144. Die übrigen 68 % entsprechen 306 Schülerinnen und Schülern. Ein Drittel wären 150, also etwas mehr als 32 %; die Zahl 32 ist der Prozentsatz, nicht die Anzahl.",
     "options": [
       "32",
-      "144",
       "150",
+      "144",
       "306"
     ],
     "question": "In einer Schule sind 450 Schülerinnen und Schüler. Eine Umfrage ergab, dass 32 % von ihnen ein Instrument spielen. Wie viele Schülerinnen und Schüler sind das?",
     "topic": "Prozentsatz und absolute Häufigkeit"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Mittelwert: (3 + 4 + 4 + 5 + 44) : 5 = 60 : 5 = 12. Median: sortiert steht die 4 an dritter und damit mittlerer Stelle. Der Unterschied beträgt 12 - 4 = 8. Der Ausreißer 44 zieht den Mittelwert stark nach oben, während der Median davon unberührt bleibt. Deshalb ist der Median bei Ausreißern das aussagekräftigere Lagemaß.",
     "options": [
       "0",
       "4",
-      "8",
-      "12"
+      "12",
+      "8"
     ],
     "question": "Eine Datenreihe lautet: 3, 4, 4, 5, 44. Wie groß ist der Unterschied zwischen dem arithmetischen Mittel und dem Median?",
     "topic": "Ausreißer, Mittelwert und Median"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Der volle Kreis entspricht 360° und allen 200 Personen. Der Anteil des Sektors beträgt 72° : 360° = 0,2, also 20 %. Davon sind 20 % von 200 gleich 40 Personen. Wer bei 20 stehen bleibt, hat den Prozentsatz statt der Anzahl angegeben; wer den Winkel als Anzahl liest, nennt 72; wer 72 % von 200 rechnet, erhält 144.",
     "options": [
-      "20",
       "40",
+      "20",
       "72",
       "144"
     ],
@@ -120,12 +120,12 @@
     "topic": "Relative Häufigkeit"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Der Modus ist der am häufigsten vorkommende Wert. Die 0 kommt viermal vor, die 2 zweimal, die Werte 1, 3 und 4 je einmal. Der Modalwert ist also 0; auch die Null ist ein gültiger Merkmalswert. Zum Vergleich: Sortiert lautet die Reihe 0, 0, 0, 0, 1, 2, 2, 3, 4, der Median ist damit 1 und der Mittelwert 12 : 9 ≈ 1,3.",
     "options": [
-      "0",
       "1",
       "2",
+      "0",
       "4"
     ],
     "question": "Die Anzahl der Geschwister von neun Schülern lautet: 2, 0, 1, 0, 4, 0, 3, 0, 2. Was ist der Modalwert (Modus) dieser Datenreihe?",
@@ -144,11 +144,11 @@
     "topic": "Arithmetisches Mittel rückwärts"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Sortiert lauten die Werte 158, 160, 162, 165, 170, 175. Bei einer geraden Anzahl ist der Median der Mittelwert der beiden mittleren Zahlen: (162 + 165) : 2 = 163,5 cm. Wer nur einen der mittleren Werte nimmt, erhält 162 cm oder 165 cm. Der Wert 165 cm ist zugleich das arithmetische Mittel (990 : 6), 170 cm ist der fünfte Wert der sortierten Reihe.",
     "options": [
-      "162 cm",
       "163,5 cm",
+      "162 cm",
       "165 cm",
       "170 cm"
     ],
@@ -156,11 +156,11 @@
     "topic": "Median (Zentralwert)"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Die Spannweite ist die Differenz aus größtem und kleinstem Wert. Aus 31 - kleinster Wert = 24 folgt kleinster Wert = 31 - 24 = 7. Zur Probe: 31 - 7 = 24. Wer addiert statt zu subtrahieren, erhält 55; wer die Spannweite selbst oder den größten Wert angibt, verwechselt die Begriffe.",
     "options": [
-      "7",
       "24",
+      "7",
       "31",
       "55"
     ],
@@ -180,23 +180,23 @@
     "topic": "Datenanalyse und Prozentrechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die Urliste ist die Rohfassung der Daten: alle Einzelwerte in der Reihenfolge, in der sie erhoben wurden. Sortiert man sie der Größe nach, entsteht die Rangliste; fasst man gleiche Werte mit ihren Anzahlen zusammen, entsteht die Häufigkeitstabelle. Die Stichprobe ist die befragte Gruppe selbst, nicht die Liste ihrer Werte.",
     "options": [
       "Häufigkeitstabelle",
-      "Urliste",
       "Rangliste",
-      "Stichprobe"
+      "Stichprobe",
+      "Urliste"
     ],
     "question": "Wie nennt man die unsortierte Liste der bei einer Datenerhebung gewonnenen Einzelwerte?",
     "topic": "Grundbegriffe der Statistik"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Bei einer statistischen Erhebung werden Daten (z.B. Schuhgrößen, Noten, Lieblingsfarben) systematisch gesammelt und ausgewertet. Man unterscheidet Vollerhebung (alle) und Stichprobe (Auswahl).",
     "options": [
-      "Eine Formel zur Berechnung von Mittelwerten aus Messreihen",
       "Das systematische Sammeln von Daten zu einem bestimmten Merkmal",
+      "Eine Formel zur Berechnung von Mittelwerten aus Messreihen",
       "Die grafische Darstellung bereits ausgewerteter Daten in Diagrammen",
       "Die Berechnung von Wahrscheinlichkeiten für zufällige Ereignisse"
     ],
@@ -216,48 +216,48 @@
     "topic": "Häufigkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Relative Häufigkeit = absolute Häufigkeit ÷ Gesamtanzahl. Beispiel: 12 von 30 Schülern haben blaue Augen → relative Häufigkeit = 12/30 = 0,4 = 40 %. Alle relativen Häufigkeiten zusammen ergeben 1 (= 100 %).",
     "options": [
       "Die absolute Häufigkeit vermindert um die Anzahl der Klassen",
-      "Der Anteil eines Merkmalswertes an der Gesamtanzahl der Daten",
       "Die Summe aller absoluten Häufigkeiten einer Erhebung",
+      "Der Anteil eines Merkmalswertes an der Gesamtanzahl der Daten",
       "Der Merkmalswert, der in der Erhebung am häufigsten auftritt"
     ],
     "question": "Was ist die relative Häufigkeit?",
     "topic": "Häufigkeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Mittelwert x̄ = Summe aller Werte ÷ Anzahl der Werte. Beispiel: Noten 2, 3, 4, 1, 5 → Summe = 15, Anzahl = 5, Mittelwert = 15 ÷ 5 = 3.",
     "options": [
       "Man sortiert alle Werte und nimmt den in der Mitte stehenden Wert",
-      "Man addiert alle Werte und teilt die Summe durch ihre Anzahl",
       "Man nimmt den Wert, der im Datensatz am häufigsten vorkommt",
-      "Man bildet die Differenz aus dem größten und dem kleinsten Wert"
+      "Man bildet die Differenz aus dem größten und dem kleinsten Wert",
+      "Man addiert alle Werte und teilt die Summe durch ihre Anzahl"
     ],
     "question": "Wie berechnet man den arithmetischen Mittelwert (Durchschnitt)?",
     "topic": "Mittelwerte"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Median: Daten sortieren, dann mittleren Wert nehmen. Bei gerader Anzahl: Mittelwert der zwei mittleren Werte. Beispiel: 1,2,3,5,9 → Median = 3. Vorteil: robuster gegenüber Ausreißern als der Mittelwert.",
     "options": [
+      "Der Wert, der nach dem Sortieren genau in der Mitte steht",
       "Der Wert, der im Datensatz am häufigsten vorkommt",
       "Die Summe aller Werte geteilt durch ihre Anzahl",
-      "Der Wert, der nach dem Sortieren genau in der Mitte steht",
       "Die Differenz zwischen dem größten und dem kleinsten Wert"
     ],
     "question": "Was ist der Median?",
     "topic": "Mittelwerte"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Modus = häufigster Wert. Beispiel: Datensatz 2,3,3,5,3,7 → Modus = 3 (kommt dreimal vor). Ein Datensatz kann mehrere Modi haben (bimodal, multimodal) oder keinen, wenn alle Werte gleich häufig sind.",
     "options": [
       "Der größte Wert, der im Datensatz überhaupt vorkommt",
-      "Der Wert, der nach dem Sortieren in der Mitte steht",
       "Der Wert, der im Datensatz am häufigsten vorkommt",
+      "Der Wert, der nach dem Sortieren in der Mitte steht",
       "Die Summe aller Werte geteilt durch ihre Anzahl"
     ],
     "question": "Was ist der Modus (Modalwert)?",
@@ -276,24 +276,24 @@
     "topic": "Streuung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Säulendiagramme eignen sich für diskrete Kategorien (Lieblingsfach, Noten, Sportarten). Die Höhe der Säule zeigt die Häufigkeit. Für Anteile eines Ganzen ist das Kreisdiagramm besser geeignet.",
     "options": [
       "Für die Anteile mehrerer Kategorien an einem Ganzen",
-      "Für den Vergleich der Häufigkeiten einzelner Kategorien",
       "Für stetige Messwerte im Verlauf einer langen Zeitreihe",
-      "Für die Pfade eines mehrstufigen Zufallsexperiments"
+      "Für die Pfade eines mehrstufigen Zufallsexperiments",
+      "Für den Vergleich der Häufigkeiten einzelner Kategorien"
     ],
     "question": "Für welche Art von Daten eignet sich ein Säulendiagramm besonders gut?",
     "topic": "Diagramme"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Kreisdiagramme zeigen Anteile am Ganzen (z.B. Stimmverteilung bei Wahlen, Marktanteile). Der volle Kreis = 100 % = 360°. Ein Segment mit 25 % hat einen Mittelpunktswinkel von 90°.",
     "options": [
+      "Für die prozentualen Anteile von Kategorien an einem Ganzen",
       "Für die Entwicklung von Messwerten über einen Zeitraum",
       "Für den Vergleich der Häufigkeiten einzelner Kategorien",
-      "Für die prozentualen Anteile von Kategorien an einem Ganzen",
       "Für die Verteilung stetiger Daten in gleich breiten Klassen"
     ],
     "question": "Wofür verwendet man ein Kreisdiagramm?",
@@ -312,48 +312,48 @@
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Laplace-Formel: P(E) = |E| / |Ω|. Beim idealen Würfel: P(6) = 1/6. Voraussetzung: Alle Ergebnisse sind gleichwahrscheinlich (fair). Münzwurf: P(Kopf) = 1/2 = 0,5 = 50 %.",
     "options": [
       "Anzahl der ungünstigen Ergebnisse geteilt durch die Gesamtzahl",
-      "Anzahl der günstigen Ergebnisse geteilt durch die Gesamtzahl",
       "Gesamtzahl aller Ergebnisse geteilt durch die günstigen Ergebnisse",
+      "Anzahl der günstigen Ergebnisse geteilt durch die Gesamtzahl",
       "Anzahl der Versuche geteilt durch die Anzahl der Ergebnisse"
     ],
     "question": "Was ist die Wahrscheinlichkeit eines Ereignisses beim Laplace-Experiment?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Wahrscheinlichkeiten liegen immer zwischen 0 (unmöglich) und 1 (sicher). P = 0 bedeutet: das Ereignis kann nicht eintreten. P = 1 bedeutet: das Ereignis tritt sicher ein. Oft auch als Prozent angegeben (0 % bis 100 %).",
     "options": [
       "Von −1 bis 1, je nach Richtung des Zusammenhangs",
       "Von 0 bis 10, wie bei einer üblichen Bewertungsskala",
-      "Von 0 bis 1, entsprechend 0 % bis 100 %",
-      "Von 1 bis unendlich, je nach Anzahl der Versuche"
+      "Von 1 bis unendlich, je nach Anzahl der Versuche",
+      "Von 0 bis 1, entsprechend 0 % bis 100 %"
     ],
     "question": "Welchen Wertebereich hat eine Wahrscheinlichkeit?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Laplace-Experimente: idealer Würfel (jede Zahl mit W. 1/6), faire Münze (Kopf/Zahl je 1/2), blindes Ziehen aus einer Urne mit gleich vielen Kugeln. Nicht-Laplace: gezinkter Würfel.",
     "options": [
+      "Ein Zufallsversuch, bei dem alle Ergebnisse gleich wahrscheinlich sind",
       "Ein Versuch, dessen Ergebnis vorher genau berechnet werden kann",
       "Ein Versuch, der sehr oft wiederholt wird, um Daten zu sammeln",
-      "Ein Zufallsversuch, bei dem alle Ergebnisse gleich wahrscheinlich sind",
       "Ein Zufallsversuch mit genau zwei gegensätzlichen Ergebnissen"
     ],
     "question": "Was ist ein Laplace-Experiment?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "P(E) = 0 bedeutet: Das Ereignis kann nicht eintreten. Beispiel: P(7 würfeln mit einem 6-seitigen Würfel) = 0. Gegenteil: P(E) = 1, das Ereignis tritt sicher ein.",
     "options": [
       "Das Ereignis tritt bei jeder Durchführung sicher ein",
-      "Das Ereignis tritt in etwa der Hälfte der Fälle ein",
       "Das Ereignis kann bei keiner Durchführung eintreten",
+      "Das Ereignis tritt in etwa der Hälfte der Fälle ein",
       "Die Wahrscheinlichkeit lässt sich nicht bestimmen"
     ],
     "question": "Was bedeutet P(E) = 0?",
@@ -372,24 +372,24 @@
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Streifendiagramme (auch Balkendiagramme) zeigen Kategorien horizontal. Gestapelte Varianten zeigen Teilanteile. Sie sind wie Kreisdiagramme in rechteckiger Form, leichter zu lesen bei vielen Kategorien.",
     "options": [
       "Den Verlauf von Messwerten über einen längeren Zeitraum",
-      "Die Anteile mehrerer Kategorien an einem Ganzen als Rechteck",
       "Den Zusammenhang zweier Merkmale als Punkte im Koordinatensystem",
-      "Die Verteilung stetiger Daten in gleich breiten Klassen"
+      "Die Verteilung stetiger Daten in gleich breiten Klassen",
+      "Die Anteile mehrerer Kategorien an einem Ganzen als Rechteck"
     ],
     "question": "Was zeigt ein Streifendiagramm (gestapeltes Balkendiagramm)?",
     "topic": "Diagramme"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Liniendiagramme (Kurvendiagramme) zeigen Veränderungen über die Zeit (Temperaturverlauf, Börsenkurse, Bevölkerungsentwicklung). Punkte werden durch Linien verbunden, um Trends sichtbar zu machen.",
     "options": [
+      "Zeitliche Entwicklungen und Trends von Messwerten",
       "Die Anteile einzelner Kategorien an einem Ganzen",
       "Die Häufigkeiten voneinander unabhängiger Kategorien",
-      "Zeitliche Entwicklungen und Trends von Messwerten",
       "Die Pfade eines mehrstufigen Zufallsexperiments"
     ],
     "question": "Was ist ein Liniendiagramm besonders gut geeignet darzustellen?",
@@ -408,36 +408,36 @@
     "topic": "Statistik Grundlagen"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Die Summe aller relativen Häufigkeiten ist immer 1 (= 100 %), weil jedes Datenelement genau einer Kategorie angehört. Beispiel: Noten 1 (20 %), 2 (30 %), 3 (35 %), 4 (15 %) → Summe = 100 %.",
     "options": [
       "Die Anzahl der untersuchten Merkmalsausprägungen",
       "0, weil sich die Abweichungen gegenseitig aufheben",
-      "Der Mittelwert aller erhobenen Einzelwerte",
-      "1, was einem Anteil von 100 Prozent entspricht"
+      "1, was einem Anteil von 100 Prozent entspricht",
+      "Der Mittelwert aller erhobenen Einzelwerte"
     ],
     "question": "Wie viel beträgt die Summe aller relativen Häufigkeiten in einer Erhebung?",
     "topic": "Häufigkeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Baumdiagramme helfen bei mehrstufigen Experimenten (z.B. zweimal würfeln). Die Wahrscheinlichkeit eines Pfades ergibt sich durch Multiplikation der Einzelwahrscheinlichkeiten (Produktregel).",
     "options": [
       "Eine Tabelle mit absoluten und relativen Häufigkeiten",
-      "Eine Darstellung aller Ausgänge eines mehrstufigen Zufallsversuchs",
       "Eine Kurve, die den Verlauf von Messwerten miteinander verbindet",
-      "Ein Säulendiagramm, dessen Säulen nach der Größe geordnet sind"
+      "Ein Säulendiagramm, dessen Säulen nach der Größe geordnet sind",
+      "Eine Darstellung aller Ausgänge eines mehrstufigen Zufallsversuchs"
     ],
     "question": "Was ist ein Baumdiagramm in der Wahrscheinlichkeitsrechnung?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Pfadmultiplikation: P(A und B) = P(A) × P(B) (bei unabhängigen Ereignissen). Beispiel: Münze zweimal werfen, P(Kopf und Kopf) = 1/2 × 1/2 = 1/4.",
     "options": [
+      "Die Wahrscheinlichkeiten entlang eines Pfades werden multipliziert",
       "Die Wahrscheinlichkeiten entlang eines Pfades werden addiert",
       "Die Wahrscheinlichkeiten entlang eines Pfades werden subtrahiert",
-      "Die Wahrscheinlichkeiten entlang eines Pfades werden multipliziert",
       "Die Wahrscheinlichkeiten entlang eines Pfades werden dividiert"
     ],
     "question": "Was besagt die Pfadmultiplikationsregel im Baumdiagramm?",
@@ -456,84 +456,84 @@
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Histogramme zeigen die Verteilung stetiger Daten (z.B. Körpergröße, Gewicht). Daten werden in Klassen eingeteilt, die Balkenhöhe zeigt die Häufigkeit. Im Gegensatz zum Säulendiagramm liegen die Balken direkt aneinander.",
     "options": [
       "Ein Kreisdiagramm, dessen Segmente als Balken gezeichnet sind",
-      "Ein Diagramm der Häufigkeitsverteilung stetiger Daten in Klassen",
       "Ein Diagramm der Pfade eines mehrstufigen Zufallsversuchs",
+      "Ein Diagramm der Häufigkeitsverteilung stetiger Daten in Klassen",
       "Ein Diagramm, das Messwerte über die Zeit durch Linien verbindet"
     ],
     "question": "Was ist ein Histogramm?",
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Grundgesamtheit: z.B. 'alle Schüler Deutschlands' bei einer bundesweiten Umfrage. Da Vollerhebungen oft unmöglich sind, zieht man eine Stichprobe und schließt auf die Grundgesamtheit.",
     "options": [
       "Die Summe aller Messwerte einer statistischen Erhebung",
-      "Alle Objekte oder Personen, über die eine Aussage gelten soll",
       "Die Anzahl der Daten, die tatsächlich erhoben worden sind",
-      "Alle Merkmale, die bei einer Erhebung untersucht werden"
+      "Alle Merkmale, die bei einer Erhebung untersucht werden",
+      "Alle Objekte oder Personen, über die eine Aussage gelten soll"
     ],
     "question": "Was versteht man unter der Grundgesamtheit?",
     "topic": "Statistik Grundlagen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Der Median ist robust gegenüber Ausreißern. Beispiel: Einkommen 1.000, 1.200, 1.100, 1.300, 50.000 € → Mittelwert = 10.920 € (verzerrt), Median = 1.200 € (repräsentativer für die meisten).",
     "options": [
+      "Den Median als mittleren Wert",
       "Das arithmetische Mittel aller Werte",
       "Den Modus als häufigsten Wert",
-      "Den Median als mittleren Wert",
       "Die Spannweite als Streuungsmaß"
     ],
     "question": "Welchen Mittelwert sollte man wählen, wenn Ausreißer die Daten verzerren?",
     "topic": "Mittelwerte"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Gerade Zahlen beim Würfel: {2, 4, 6} → 3 günstige von 6 gleichwahrscheinlichen Ergebnissen. P = 3/6 = 1/2 = 50 %. Das ist ein klassisches Laplace-Experiment.",
     "options": [
       "1/6",
+      "1/2",
       "1/3",
-      "2/3",
-      "1/2"
+      "2/3"
     ],
     "question": "Ein Würfel wird geworfen. Wie groß ist die Wahrscheinlichkeit, eine gerade Zahl zu würfeln?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Die Urliste enthält alle Daten in der Reihenfolge ihrer Erhebung, ohne Sortierung oder Auswertung. Aus ihr werden dann Häufigkeitstabellen, sortierte Listen und Diagramme erstellt.",
     "options": [
       "Die nach der Größe geordnete Liste aller erhobenen Werte",
-      "Die unsortierte Liste aller Daten in der Erhebungsreihenfolge",
       "Die Tabelle mit den absoluten und relativen Häufigkeiten",
+      "Die unsortierte Liste aller Daten in der Erhebungsreihenfolge",
       "Die Liste der Mittelwerte aus mehreren einzelnen Teilerhebungen"
     ],
     "question": "Was ist eine Urliste in der Statistik?",
     "topic": "Statistik Grundlagen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Unterschied: Merkmal = was untersucht wird (Note, Schuhgröße). Ausprägung = konkreter Wert (Note 3, Größe 42). Wichtige Unterscheidung in der Statistik bei der Beschreibung von Daten.",
     "options": [
       "Das Merkmal ist die Häufigkeit, die Ausprägung der Prozentwert",
-      "Das Merkmal ist das untersuchte Kriterium, die Ausprägung sein Wert",
       "Das Merkmal ist die Rechenvorschrift, die Ausprägung das Ergebnis",
-      "Das Merkmal ist der Mittelwert, die Ausprägung die Abweichung davon"
+      "Das Merkmal ist der Mittelwert, die Ausprägung die Abweichung davon",
+      "Das Merkmal ist das untersuchte Kriterium, die Ausprägung sein Wert"
     ],
     "question": "Was ist der Unterschied zwischen Merkmal und Merkmalsausprägung?",
     "topic": "Statistik Grundlagen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Relative Häufigkeit = 8 ÷ 40 = 0,2 = 20 % = 1/5. Diese kann als Bruch, Dezimalzahl oder Prozent angegeben werden – alle drei Darstellungen sind korrekt.",
     "options": [
+      "0,2",
       "0,08",
       "0,125",
-      "0,2",
       "0,4"
     ],
     "question": "Wie lautet die relative Häufigkeit, wenn 8 von 40 Schülern Linkshänder sind?",
@@ -564,23 +564,23 @@
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Streudiagramme (Punktwolken) zeigen, ob zwei Merkmale zusammenhängen (Korrelation). Beispiel: Körpergröße und Schuhgröße – Punkte oben rechts und unten links zeigen positiven Zusammenhang.",
     "options": [
       "Die Anteile einer Gesamtheit als Ausschnitte eines Kreises",
       "Die Häufigkeit einzelner Kategorien als getrennte Balken",
-      "Den Zusammenhang zweier Merkmale als Punkte im Koordinatensystem",
-      "Den zeitlichen Verlauf von Messwerten als durchgehende Linie"
+      "Den zeitlichen Verlauf von Messwerten als durchgehende Linie",
+      "Den Zusammenhang zweier Merkmale als Punkte im Koordinatensystem"
     ],
     "question": "Was zeigt ein Streudiagramm?",
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Häufigkeitstabellen fassen Urlisten übersichtlich zusammen: Spalten für Merkmalsausprägung, absolute Häufigkeit, relative Häufigkeit (%) und kumulative Häufigkeit (aufaddiert).",
     "options": [
-      "Eine nach der Größe geordnete Liste aller erhobenen Werte",
       "Eine Tabelle mit den Merkmalsausprägungen und ihren Häufigkeiten",
+      "Eine nach der Größe geordnete Liste aller erhobenen Werte",
       "Ein Diagramm, das die Häufigkeiten als Säulen darstellt",
       "Eine Aufstellung der Mittelwerte aus mehreren Erhebungen"
     ],
@@ -600,12 +600,12 @@
     "topic": "Mittelwerte"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Unabhängige Ereignisse: zweimal Münzwurf – der erste Wurf beeinflusst den zweiten nicht. P(Kopf bei Wurf 2 | Kopf bei Wurf 1) = 1/2 = P(Kopf bei Wurf 2). Für unabhängige Ereignisse gilt: P(A ∩ B) = P(A) × P(B).",
     "options": [
       "Ereignisse, die sich gegenseitig vollständig ausschließen",
-      "Ereignisse, die die Wahrscheinlichkeit des anderen nicht ändern",
       "Ereignisse, die mit genau der gleichen Wahrscheinlichkeit auftreten",
+      "Ereignisse, die die Wahrscheinlichkeit des anderen nicht ändern",
       "Ereignisse, die stets nur gemeinsam miteinander eintreten können"
     ],
     "question": "Was sind unabhängige Ereignisse in der Wahrscheinlichkeitsrechnung?",
@@ -624,11 +624,11 @@
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Kumulative (kumulierte) Häufigkeit: 'Wie viele Daten liegen bis zu diesem Wert?' Beispiel: Noten 1 (5×), 2 (8×), 3 (10×). Kumulative Häufigkeit bis Note 2 = 5+8 = 13. Nützlich für 'mindestens' / 'höchstens' Fragen.",
     "options": [
-      "Die Häufigkeit des am häufigsten auftretenden Merkmalswertes",
       "Die aufaddierten Häufigkeiten bis zu einem bestimmten Wert",
+      "Die Häufigkeit des am häufigsten auftretenden Merkmalswertes",
       "Der Durchschnitt aller in der Tabelle stehenden Häufigkeiten",
       "Die zusammengefasste Häufigkeit aller besonders seltenen Werte"
     ],
@@ -648,12 +648,12 @@
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Repräsentativität: Eine Stichprobe muss die Grundgesamtheit proportional abbilden (Alter, Geschlecht, Region). Methoden: Zufallsstichprobe, geschichtete Stichprobe. Wichtig bei Meinungsumfragen und Wahlprognosen.",
     "options": [
       "Wenn sie möglichst viele einzelne Messwerte enthält",
-      "Wenn sie die Grundgesamtheit in wesentlichen Merkmalen abbildet",
       "Wenn alle Werte in ihr ungefähr gleich groß ausfallen",
+      "Wenn sie die Grundgesamtheit in wesentlichen Merkmalen abbildet",
       "Wenn sie bei jeder Wiederholung dieselben Werte liefert"
     ],
     "question": "Wann ist eine Stichprobe repräsentativ?",

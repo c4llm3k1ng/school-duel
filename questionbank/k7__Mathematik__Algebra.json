@@ -12,11 +12,11 @@
     "topic": "Terme vereinfachen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Der größte gemeinsame Faktor von 6x² und 9x ist 3x. Es gilt 6x² : 3x = 2x und 9x : 3x = 3, also 6x² + 9x = 3x(2x + 3). Die Probe durch Ausmultiplizieren ergibt wieder 6x² + 9x. Achtung: 3(2x² + 3x) ergibt beim Ausmultiplizieren ebenfalls 6x² + 9x, ist aber nicht vollständig ausgeklammert, weil in der Klammer noch der gemeinsame Faktor x steckt.",
     "options": [
-      "3x(2x + 3)",
       "3x(2x + 9)",
+      "3x(2x + 3)",
       "3(2x² + 3x)",
       "6x(x + 9)"
     ],
@@ -36,13 +36,13 @@
     "topic": "Terme ausmultiplizieren"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Potenz vor Punkt vor Strich: 2 · 4² - 7 = 2 · 16 - 7 = 32 - 7 = 25. Das Quadrat gilt nur für x, nicht für 2x.",
     "options": [
       "9",
-      "25",
       "1",
-      "39"
+      "39",
+      "25"
     ],
     "question": "Berechne den Wert des Terms 2x² - 7 für x = 4.",
     "topic": "Termwerte berechnen"
@@ -72,25 +72,25 @@
     "topic": "Lineare Gleichungen lösen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Zuerst die Klammer ausmultiplizieren: 4 · y + 4 · 2 = 4y + 8. Danach zusammenfassen: 4y + 8 - 3y = (4y - 3y) + 8 = y + 8.",
     "options": [
       "y + 2",
-      "y + 8",
       "7y + 8",
+      "y + 8",
       "y - 2"
     ],
     "question": "Vereinfache den Term 4(y + 2) - 3y.",
     "topic": "Terme ausmultiplizieren und vereinfachen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Klammer ausmultiplizieren: 2x - 10 = x + 3. Dann x-Glieder auf eine Seite, Zahlen auf die andere: 2x - x = 3 + 10, also x = 13. Probe: 2 · (13 - 5) = 16 und 13 + 3 = 16.",
     "options": [
       "8",
-      "13",
       "7",
-      "1"
+      "1",
+      "13"
     ],
     "question": "Welche Zahl löst die Gleichung 2(x - 5) = x + 3?",
     "topic": "Lineare Gleichungen mit Klammern lösen"
@@ -120,25 +120,25 @@
     "topic": "Lineare Gleichungen lösen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Einsetzen und Vorzeichen beachten: 3 · (-2)² - 2 · (-2) = 3 · 4 + 4 = 12 + 4 = 16. Das Quadrat einer negativen Zahl ist positiv, und minus mal minus ergibt plus.",
     "options": [
-      "16",
       "8",
       "-8",
+      "16",
       "-16"
     ],
     "question": "Berechne den Wert des Terms 3x² - 2x für x = -2.",
     "topic": "Termwerte berechnen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Zuerst wird die Summe gebildet: x + 6. Diese Summe wird verdoppelt, deshalb muss sie eingeklammert werden: 2(x + 6). Erst danach werden 4 abgezogen: 2(x + 6) - 4, ausmultipliziert also 2x + 8.",
     "options": [
-      "2(x + 6) - 4",
       "2x + 6 - 4",
       "2(x + 6 - 4)",
-      "2(x - 4) + 6"
+      "2(x - 4) + 6",
+      "2(x + 6) - 4"
     ],
     "question": "Welcher Term beschreibt: Die Summe aus einer Zahl x und 6 wird verdoppelt, davon werden 4 abgezogen?",
     "topic": "Terme aufstellen"
@@ -156,11 +156,11 @@
     "topic": "Lineare Gleichungen lösen"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Der Faktor -3 wird mit jedem Glied der Klammer multipliziert: -3 · 2x = -6x und -3 · (-4) = +12. Also -6x + 12 + 5x = -x + 12.",
     "options": [
-      "-x + 12",
       "-x - 12",
+      "-x + 12",
       "x + 12",
       "11x - 12"
     ],
@@ -168,25 +168,25 @@
     "topic": "Terme ausmultiplizieren und vereinfachen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Nur Glieder mit gleicher Variable und gleicher Potenz sind gleichartig: 6a² - 2a² = 4a² und 3b + b = 4b. Also 4a² + 4b.",
     "options": [
-      "4a² + 4b",
       "8a² + 4b",
       "4a² + 2b",
+      "4a² + 4b",
       "8a² + 2b"
     ],
     "question": "Vereinfache den Term: 6a² + 3b - 2a² + b",
     "topic": "Terme mit Potenzen vereinfachen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Der Umfang eines Rechtecks ist 2 · (Länge + Breite): 2 · (x + (x + 4)) = 2 · (2x + 4) = 4x + 8. Der Term x(x + 4) beschreibt dagegen den Flächeninhalt.",
     "options": [
       "2x + 4",
-      "4x + 8",
       "x(x + 4)",
-      "2x + 8"
+      "2x + 8",
+      "4x + 8"
     ],
     "question": "Ein Rechteck hat die Seitenlängen x und (x + 4) cm. Welcher Term beschreibt den Umfang des Rechtecks?",
     "topic": "Terme in der Geometrie"

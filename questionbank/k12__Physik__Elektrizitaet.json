@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Ladung Q ist eine der sieben SI-Grundgrößen und wird in Coulomb gemessen: 1 C = 1 A·s. Newton misst Kräfte, Joule Energien, Volt Spannungen.",
     "options": [
-      "Eine abgeleitete Kraftgröße mit der Einheit Newton (N)",
       "Eine Grundgröße mit der Einheit Coulomb (C)",
+      "Eine abgeleitete Kraftgröße mit der Einheit Newton (N)",
       "Eine Energieform mit der Einheit Joule (J)",
       "Eine Feldgröße mit der Einheit Volt (V)"
     ],
@@ -24,35 +24,35 @@
     "topic": "Grundlagen"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Spannung ist die pro Ladung verrichtete Arbeit: U = W/Q, Einheit Volt (1 V = 1 J/C). Die Ladung pro Zeit ist dagegen die Stromstärke, die Driftgeschwindigkeit liegt nur bei etwa 0,1 mm/s.",
     "options": [
       "Die Zahl der Ladungsträger, die pro Sekunde den Leiterquerschnitt passieren",
-      "Die Arbeit pro Ladung: U = W/Q",
       "Die Driftgeschwindigkeit der Elektronen im Leiter in m/s",
+      "Die Arbeit pro Ladung: U = W/Q",
       "Die auf einem Leiter gespeicherte Ladungsmenge in Coulomb"
     ],
     "question": "Was ist elektrische Spannung U?",
     "topic": "Grundlagen"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Stromstärke ist die pro Zeit durch einen Querschnitt transportierte Ladung: I = Q/t, Einheit Ampere (1 A = 1 C/s). Arbeit pro Ladung ist die Spannung, Energie pro Zeit die Leistung.",
     "options": [
       "Die Arbeit, die das Feld pro Ladungseinheit verrichtet",
-      "Die Ladung pro Zeit: I = Q/t",
       "Die pro Sekunde im Leiter umgesetzte elektrische Energie",
-      "Die Zahl der freien Elektronen in einem Leiterstück"
+      "Die Zahl der freien Elektronen in einem Leiterstück",
+      "Die Ladung pro Zeit: I = Q/t"
     ],
     "question": "Was ist elektrische Stromstärke I?",
     "topic": "Grundlagen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Für ohmsche Leiter gilt U = I · R, also ein linearer Zusammenhang. Umgestellt: I = U/R und R = U/I. Die Stromstärke geht nur in erster Potenz ein.",
     "options": [
-      "U = I² · R",
       "U = I · R",
+      "U = I² · R",
       "U = R / I",
       "U = I / R"
     ],
@@ -60,12 +60,12 @@
     "topic": "Ohmsches Gesetz"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "In Reihe addieren sich die Widerstände: R_ges = R₁ + R₂ + … Der Gesamtwiderstand ist damit größer als jeder Einzelwiderstand. Kleiner als der kleinste Einzelwiderstand wird er nur bei Parallelschaltung.",
     "options": [
       "Er wird kleiner als der kleinste der beiden Einzelwiderstände",
-      "Er entspricht dem größeren der beiden Einzelwiderstände",
       "Er ist die Summe der beiden Einzelwiderstände: R_ges = R₁ + R₂",
+      "Er entspricht dem größeren der beiden Einzelwiderstände",
       "Er halbiert sich gegenüber dem einzelnen Widerstand"
     ],
     "question": "Was passiert mit dem Gesamtwiderstand, wenn zwei Widerstände in Reihe geschaltet werden?",
@@ -84,23 +84,23 @@
     "topic": "Schaltkreise"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "In Reihe gilt U₁/U₂ = R₁/R₂: Am größeren Widerstand fällt die größere Spannung ab. Dieselbe Spannung an allen Bauteilen liegt dagegen bei Parallelschaltung an.",
     "options": [
       "An jedem Widerstand liegt dieselbe Spannung wie an der Quelle",
-      "Sie teilt sich proportional zu den Widerständen auf",
       "Sie verteilt sich zu gleichen Teilen auf alle Widerstände",
-      "Sie ist unabhängig von den Widerständen und überall gleich groß"
+      "Sie ist unabhängig von den Widerständen und überall gleich groß",
+      "Sie teilt sich proportional zu den Widerständen auf"
     ],
     "question": "Was gilt für die Spannung in einer Reihenschaltung?",
     "topic": "Schaltkreise"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Parallel teilt sich der Strom auf: I_ges = I₁ + I₂ + … Durch den kleineren Widerstand fließt der größere Teilstrom, weil an allen Zweigen dieselbe Spannung liegt. Derselbe Strom überall ist das Merkmal der Reihenschaltung.",
     "options": [
-      "Durch jeden Zweig fließt derselbe Strom wie durch die Quelle",
       "Der Gesamtstrom teilt sich auf die Zweige auf: I_ges = I₁ + I₂",
+      "Durch jeden Zweig fließt derselbe Strom wie durch die Quelle",
       "Der Strom nimmt nur den Weg über den kleineren Widerstand",
       "In jedem Zweig fließt der halbe Gesamtstrom, unabhängig vom Widerstand"
     ],
@@ -132,23 +132,23 @@
     "topic": "Leistung und Energie"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Das elektrische Feld beschreibt die Kraftwirkung auf Ladungen. Die Feldstärke ist E = F/q mit der Einheit V/m oder N/C. Auf Eisen wirkt dagegen das Magnetfeld.",
     "options": [
       "Der Bereich um einen Magneten, in dem Kräfte auf Eisen wirken",
-      "Der Raumbereich, in dem auf eine Ladung eine Kraft wirkt: E = F/q",
       "Die Spannung, die zwischen zwei Punkten eines Leiters anliegt",
-      "Der gerichtete Fluss von Elektronen durch einen Leiter"
+      "Der gerichtete Fluss von Elektronen durch einen Leiter",
+      "Der Raumbereich, in dem auf eine Ladung eine Kraft wirkt: E = F/q"
     ],
     "question": "Was ist ein elektrisches Feld?",
     "topic": "Elektrisches Feld"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Zwischen den Platten ist das Feld homogen: Die Feldlinien laufen parallel und in gleichen Abständen von der positiven zur negativen Platte. Es gilt E = U/d. Kreisförmig verlaufen Feldlinien um stromdurchflossene Leiter, sternförmig um Punktladungen.",
     "options": [
-      "Kreisförmig um die Plattenmitte herum, wie bei einem Leiter",
       "Parallel und gleichmäßig (homogenes Feld)",
+      "Kreisförmig um die Plattenmitte herum, wie bei einem Leiter",
       "Sternförmig von jeder Platte nach außen wie bei Punktladungen",
       "Ungeordnet, weil das Feld zwischen den Platten schwankt"
     ],
@@ -180,23 +180,23 @@
     "topic": "Kondensator"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Magnetfelder werden von Permanentmagneten und von bewegten Ladungen erzeugt. Außerhalb des Magneten laufen die Feldlinien vom Nord- zum Südpol. Ruhende Ladungen erzeugen nur ein elektrisches Feld.",
     "options": [
       "Der Bereich um eine ruhende Ladung, in dem Kräfte auf Ladungen wirken",
-      "Der Bereich, in dem Kräfte auf Magnete und bewegte Ladungen wirken",
       "Die Spannung, die in einer Spule beim Einschalten entsteht",
-      "Die Fähigkeit eines Kondensators, Ladung zu speichern"
+      "Die Fähigkeit eines Kondensators, Ladung zu speichern",
+      "Der Bereich, in dem Kräfte auf Magnete und bewegte Ladungen wirken"
     ],
     "question": "Was ist ein Magnetfeld?",
     "topic": "Magnetfeld"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Rechte-Hand-Regel: Der Daumen weist in die technische Stromrichtung, die gekrümmten Finger umfassen den Leiter und geben die Richtung der Feldlinien an. Für die Kraftrichtung dient dagegen die Drei-Finger-Regel.",
     "options": [
-      "Der Daumen zeigt in Feldrichtung, die gekrümmten Finger in Stromrichtung",
       "Der Daumen zeigt in die Stromrichtung, die gekrümmten Finger in Feldrichtung",
+      "Der Daumen zeigt in Feldrichtung, die gekrümmten Finger in Stromrichtung",
       "Die Finger zeigen in Stromrichtung, der Daumen in Richtung der Kraft",
       "Die Hand umfasst den Leiter, der Daumen zeigt stets nach oben"
     ],
@@ -216,35 +216,35 @@
     "topic": "Induktion"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Das Minuszeichen in U_ind = −ΔΦ/Δt ist die Lenz'sche Regel: Der Induktionsstrom baut ein Feld auf, das der Flussänderung entgegenwirkt. Eine Verstärkung würde Energie aus dem Nichts erzeugen.",
     "options": [
       "Der Induktionsstrom verstärkt die Flussänderung, die ihn erzeugt hat",
-      "Der Induktionsstrom wirkt seiner Ursache entgegen",
       "Der Induktionsstrom fließt stets in Richtung des erzeugenden Stroms",
+      "Der Induktionsstrom wirkt seiner Ursache entgegen",
       "Der magnetische Fluss durch die Spule verdoppelt sich beim Induzieren"
     ],
     "question": "Was besagt die Lenz'sche Regel?",
     "topic": "Induktion"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Im Generator rotiert eine Spule im Magnetfeld. Der sich ändernde Fluss induziert eine sinusförmige Wechselspannung. Der Elektromotor ist die Umkehrung dieses Vorgangs.",
     "options": [
       "Er wandelt zugeführte elektrische Energie in Bewegungsenergie um",
-      "Er wandelt Bewegungsenergie durch Induktion in elektrische Energie um",
       "Er speichert Energie im Magnetfeld einer Spule und gibt sie ab",
-      "Er erhöht die Spannung einer Gleichspannungsquelle mit Spulen"
+      "Er erhöht die Spannung einer Gleichspannungsquelle mit Spulen",
+      "Er wandelt Bewegungsenergie durch Induktion in elektrische Energie um"
     ],
     "question": "Wie funktioniert ein elektrischer Generator?",
     "topic": "Induktion"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Primär- und Sekundärspule sind über einen gemeinsamen Eisenkern magnetisch gekoppelt. Es gilt U₁/U₂ = N₁/N₂; im Idealfall bleibt die Leistung erhalten, sodass der Strom sich umgekehrt zur Spannung verhält. Mit Gleichstrom arbeitet ein Transformator nicht.",
     "options": [
-      "Er wandelt Gleichstrom durch rotierende Kontakte in Wechselstrom um",
       "Er überträgt Energie induktiv zwischen zwei Spulen und ändert die Spannung",
+      "Er wandelt Gleichstrom durch rotierende Kontakte in Wechselstrom um",
       "Er speichert Ladung auf zwei Spulen und gibt sie getaktet wieder ab",
       "Er überträgt Energie über den Eisenkern, wobei der Strom in beiden Spulen gleich bleibt"
     ],
@@ -264,35 +264,35 @@
     "topic": "Transformator"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Bei fester Leistung P = U · I bedeutet hohe Spannung kleine Stromstärke. Da die Verlustleistung mit I² · R geht, sinkt sie bei zehnfacher Spannung auf ein Hundertstel. Sicherer ist Hochspannung keineswegs.",
     "options": [
       "Weil hohe Spannung für Menschen ungefährlicher ist als hoher Strom",
-      "Weil bei hoher Spannung der Strom und damit die Verluste I²·R sinken",
       "Weil Wechselstrom nur bei hoher Spannung über weite Strecken fließt",
+      "Weil bei hoher Spannung der Strom und damit die Verluste I²·R sinken",
       "Weil Transformatoren nur mit hoher Eingangsspannung arbeiten können"
     ],
     "question": "Warum wird elektrische Energie im Hochspannungsnetz übertragen?",
     "topic": "Transformator"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Gleichstrom fließt immer in dieselbe Richtung, Wechselstrom kehrt sie periodisch um – im europäischen Netz 50-mal pro Sekunde. Transformieren lässt sich nur Wechselstrom, weil dafür ein veränderlicher Fluss nötig ist.",
     "options": [
       "Gleichstrom lässt sich transformieren, Wechselstrom dagegen nicht",
-      "Gleichstrom hat feste Richtung, Wechselstrom wechselt sie ständig",
       "Wechselstrom fließt nur in Metallen, Gleichstrom nur in Halbleitern",
-      "Gleichstrom transportiert Energie, Wechselstrom nur Ladung hin und her"
+      "Gleichstrom transportiert Energie, Wechselstrom nur Ladung hin und her",
+      "Gleichstrom hat feste Richtung, Wechselstrom wechselt sie ständig"
     ],
     "question": "Was ist der Unterschied zwischen Gleich- und Wechselstrom?",
     "topic": "Wechselstrom"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Das europäische Verbundnetz läuft mit 50 Hz, also 50 vollen Perioden pro Sekunde. In Nordamerika sind es 60 Hz, im deutschen Bahnstromnetz 16,7 Hz.",
     "options": [
-      "16,7 Hz",
       "50 Hz",
+      "16,7 Hz",
       "60 Hz",
       "100 Hz"
     ],
@@ -312,35 +312,35 @@
     "topic": "Wechselstrom"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Auf einen Leiter der Länge l im Feld B wirkt F = I · l · B · sin α, wobei α der Winkel zwischen Leiter und Feld ist. Bei α = 90° ist die Kraft maximal, bei paralleler Lage null. Die Stromstärke geht linear ein.",
     "options": [
       "F = I² · l · B · sin α",
-      "F = I · l · B · sin α",
       "F = I · l · B² · sin α",
+      "F = I · l · B · sin α",
       "F = U · l · B · sin α"
     ],
     "question": "Was ist die Lorentzkraft auf einen stromdurchflossenen Leiter im Magnetfeld?",
     "topic": "Magnetfeld"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die Lorentzkraft auf die stromdurchflossene Ankerspule erzeugt ein Drehmoment; der Kommutator polt den Strom jede halbe Umdrehung um. Elektrische Energie wird so in mechanische umgewandelt – umgekehrt zum Generator.",
     "options": [
       "Ein Magnetfeld induziert in der rotierenden Spule eine Spannung",
-      "Auf die stromdurchflossene Spule im Magnetfeld wirkt eine Drehkraft",
       "Temperaturunterschiede im Anker erzeugen die Drehbewegung",
-      "Ein Kondensator entlädt sich ruckartig und treibt den Anker an"
+      "Ein Kondensator entlädt sich ruckartig und treibt den Anker an",
+      "Auf die stromdurchflossene Spule im Magnetfeld wirkt eine Drehkraft"
     ],
     "question": "Wie funktioniert ein Elektromotor?",
     "topic": "Elektromotor"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Bei der Selbstinduktion ist die Spule ihre eigene Ursache: U_ind = −L · ΔI/Δt. Die induzierte Spannung bremst den Anstieg beim Einschalten und erzeugt beim Ausschalten kurzzeitig hohe Spannungsspitzen.",
     "options": [
-      "Ein äußeres Magnetfeld induziert in einer ruhenden Spule eine Spannung",
       "Die eigene Stromänderung induziert in der Spule eine Gegenspannung",
+      "Ein äußeres Magnetfeld induziert in einer ruhenden Spule eine Spannung",
       "Die Spannung an einem Kondensator induziert Strom in dessen Zuleitung",
       "Ein Transformator lädt über den Eisenkern einen Kondensator auf"
     ],
@@ -360,35 +360,35 @@
     "topic": "Induktion"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Es gilt R = ρ · l / A: doppelte Länge bedeutet doppelten Widerstand, doppelter Querschnitt den halben. Der spezifische Widerstand ρ ist materialabhängig und bei Metallen zusätzlich temperaturabhängig.",
     "options": [
       "Er hängt nur vom Material ab, nicht von Länge und Querschnitt",
-      "Er wächst mit der Länge, sinkt mit dem Querschnitt",
       "Er wächst sowohl mit der Länge als auch mit dem Querschnitt",
+      "Er wächst mit der Länge, sinkt mit dem Querschnitt",
       "Er ist für alle Metalle gleich, solange die Temperatur gleich ist"
     ],
     "question": "Was ist elektrischer Widerstand und von welchen Faktoren hängt er ab?",
     "topic": "Ohmsches Gesetz"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Halbleiter wie Silicium liegen zwischen Leitern und Isolatoren. Durch Dotierung entstehen n- und p-Gebiete, aus denen Dioden und Transistoren aufgebaut werden. Anders als bei Metallen sinkt ihr Widerstand mit steigender Temperatur.",
     "options": [
       "Ein Isolator, der auch bei hohen Temperaturen keinen Strom leitet",
-      "Ein Stoff mittlerer Leitfähigkeit, durch Dotierung gezielt steuerbar",
       "Ein Metall, dessen Widerstand mit steigender Temperatur sinkt",
-      "Ein Werkstoff, der nur Wechselstrom, aber keinen Gleichstrom leitet"
+      "Ein Werkstoff, der nur Wechselstrom, aber keinen Gleichstrom leitet",
+      "Ein Stoff mittlerer Leitfähigkeit, durch Dotierung gezielt steuerbar"
     ],
     "question": "Was ist ein Halbleiter und wofür wird er verwendet?",
     "topic": "Halbleiter"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Unterhalb der Sprungtemperatur – bei klassischen Supraleitern nahe dem absoluten Nullpunkt – verschwindet der Widerstand exakt. Ein einmal angeworfener Strom fließt dann ohne Verluste weiter.",
     "options": [
-      "Der Widerstand steigt bei tiefen Temperaturen ins Unermessliche",
       "Der Widerstand fällt unter der Sprungtemperatur auf null",
+      "Der Widerstand steigt bei tiefen Temperaturen ins Unermessliche",
       "Die Leitfähigkeit wird durch Dotierung mit Fremdatomen erhöht",
       "Ein Leiter trägt oberhalb einer Grenzstromstärke keinen Strom mehr"
     ],
@@ -408,35 +408,35 @@
     "topic": "Schaltkreise"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Maschenregel: ΣU = 0 beim Umlauf durch eine geschlossene Masche, wobei Quellspannungen und Spannungsabfälle mit entgegengesetztem Vorzeichen zählen. Grundlage ist die Energieerhaltung.",
     "options": [
       "Die Summe aller Ströme in einem Knoten ist null",
-      "Die Summe aller Spannungen in einer Masche ist null",
       "Alle Widerstände der Masche haben gleiche Spannung",
+      "Die Summe aller Spannungen in einer Masche ist null",
       "Parallel geschaltete Spannungen addieren sich"
     ],
     "question": "Was ist das kirchhoffsche Maschengesetz (2. Kirchhoffsches Gesetz)?",
     "topic": "Schaltkreise"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Im LC-Kreis pendelt die Energie zwischen dem elektrischen Feld des Kondensators und dem Magnetfeld der Spule, analog zum Pendel. Die Eigenfrequenz beträgt f = 1 / (2π·√(L·C)).",
     "options": [
       "Eine Schaltung aus Widerstand und Kondensator, die Ladung speichert",
-      "Eine Schaltung aus Spule und Kondensator",
       "Eine Reihenschaltung mehrerer Widerstände mit fester Frequenz",
-      "Ein Transformatorkreis, in dem die Spannung periodisch springt"
+      "Ein Transformatorkreis, in dem die Spannung periodisch springt",
+      "Eine Schaltung aus Spule und Kondensator"
     ],
     "question": "Was ist ein Oszillatorkreis (Schwingkreis)?",
     "topic": "Schwingkreis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Elektrische und magnetische Felder erzeugen sich wechselseitig und breiten sich mit c ≈ 3 ×10⁸ m/s aus. Das Spektrum reicht von Radiowellen über sichtbares Licht bis zur Gammastrahlung; Licht ist nur ein schmaler Ausschnitt.",
     "options": [
-      "Der sichtbare Teil des Spektrums, also Licht zwischen 400 und 700 nm",
       "Eine Welle aus gekoppelten elektrischen und magnetischen Feldern",
+      "Der sichtbare Teil des Spektrums, also Licht zwischen 400 und 700 nm",
       "Die Strahlung, die beim Zerfall von Atomkernen frei wird",
       "Der Stromfluss in einer Freileitung, der Funkwellen erzeugt"
     ],
@@ -456,12 +456,12 @@
     "topic": "Leistung und Energie"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Einstein erklärte 1905: Ein Photon der Energie E = h · f löst ein Elektron heraus, sobald h · f größer als die Austrittsarbeit ist. Entscheidend ist die Frequenz, nicht die Helligkeit – ein Beleg für den Teilchencharakter des Lichts.",
     "options": [
       "Licht entsteht, wenn ein Draht durch Strom zum Glühen gebracht wird",
-      "Photonen lösen Elektronen aus einem Metall, wenn ihre Energie reicht",
       "Ein elektrisches Feld lenkt einen Lichtstrahl aus seiner Bahn ab",
+      "Photonen lösen Elektronen aus einem Metall, wenn ihre Energie reicht",
       "Ein Kondensator speichert die Energie des einfallenden Lichts"
     ],
     "question": "Was ist der photoelektrische Effekt?",

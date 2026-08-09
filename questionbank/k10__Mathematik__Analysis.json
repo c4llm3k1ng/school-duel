@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Funktion f: D → W. Zu einer Funktion gehören immer der Definitionsbereich D (die zulässigen x-Werte) und der Wertebereich W (die tatsächlich angenommenen y-Werte); ohne Angabe von D ist eine Funktion nicht vollständig beschrieben. Entscheidend ist die Eindeutigkeit: Jedem x aus D wird genau ein y zugeordnet, umgekehrt darf ein y aber durchaus zu mehreren x gehören. Graph: die Menge aller Punkte (x | f(x)). Senkrechter Geradentest: Über jedem x aus D schneidet eine senkrechte Gerade den Graphen genau einmal, außerhalb von D gar nicht.",
     "options": [
-      "Eine Wertetabelle, in der einem x-Wert auch mehrere y-Werte zugeordnet sein dürfen",
       "Eine eindeutige Zuordnung, bei der jedem x genau ein y-Wert zugeordnet wird",
+      "Eine Wertetabelle, in der einem x-Wert auch mehrere y-Werte zugeordnet sein dürfen",
       "Eine Gleichung mit zwei Variablen, deren Lösungsmenge immer eine Gerade ergibt",
       "Eine Menge von Zahlenpaaren, in der jeder y-Wert genau einmal vorkommen muss"
     ],
@@ -24,35 +24,35 @@
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Ableitung f'(x): der Grenzwert des Differenzenquotienten für h gegen 0 – sofern dieser Grenzwert überhaupt existiert; nur dann heißt f an der Stelle differenzierbar (die Betragsfunktion ist bei x = 0 zum Beispiel nicht differenzierbar). Geometrisch ist f'(x) die Steigung der Tangente im Punkt (x; f(x)). Differenzierbarkeit setzt Stetigkeit voraus, umgekehrt gilt das nicht. Schreibweisen: f'(x), y', df/dx, Df(x).",
     "options": [
       "Die mittlere Änderungsrate über ein Intervall, also die Steigung einer Sekante",
-      "Der Grenzwert des Differenzenquotienten für h→0, also die Steigung der Tangente",
       "Die Fläche unter dem Graphen, die man über eine Stammfunktion von f berechnet",
+      "Der Grenzwert des Differenzenquotienten für h→0, also die Steigung der Tangente",
       "Die Summe aller Glieder einer Zahlenfolge bis zu einem festen Index n"
     ],
     "question": "Was ist die Ableitung (Differentialquotient)?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Potenzregel: f(x) = x^n → f'(x) = n·x^(n-1). Für natürliche Exponenten n gilt sie auf ganz R. Beispiele: f(x) = x³ → f'(x) = 3x²; f(x) = x → f'(x) = 1; f(x) = 1 = x⁰ → f'(x) = 0. Die Regel lässt sich auf negative und rationale Exponenten übertragen, dann aber nur dort, wo der Term definiert und differenzierbar ist: f(x) = x^(-1) = 1/x → f'(x) = -x^(-2) = -1/x² gilt nur für x ungleich 0, und f(x) = Wurzel(x) = x^(1/2) → f'(x) = 1/(2·Wurzel(x)) nur für x > 0.",
     "options": [
       "f(x) = x^n → f'(x) = x^(n+1) / (n+1)",
-      "f(x) = x^n → f'(x) = n · x^(n-1)",
       "f(x) = x^n → f'(x) = n · x^(n+1)",
-      "f(x) = x^n → f'(x) = (1/n) · x^(n-1)"
+      "f(x) = x^n → f'(x) = (1/n) · x^(n-1)",
+      "f(x) = x^n → f'(x) = n · x^(n-1)"
     ],
     "question": "Was ist die Potenzregel zur Ableitung?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Summenregel: [f+g]'(x) = f'(x) + g'(x), vorausgesetzt f und g sind an der betrachteten Stelle beide differenzierbar. Faktorregel: [c·f]'(x) = c·f'(x) mit einer konstanten Zahl c. Beispiel: f(x) = 3x² + 2x + 5 → f'(x) = 6x + 2. Entsprechend gilt für die Differenz [f-g]'(x) = f'(x) - g'(x). Achtung: Für Produkte und Quotienten gilt nichts Vergleichbares, dort braucht man Produkt- bzw. Quotientenregel.",
     "options": [
-      "[f(x) + g(x)]' = f'(x) · g'(x): die beiden Ableitungen werden multipliziert",
       "[f(x) + g(x)]' = f'(x) + g'(x): jeder Summand wird einzeln abgeleitet",
+      "[f(x) + g(x)]' = f'(x) · g'(x): die beiden Ableitungen werden multipliziert",
       "[f(x) + g(x)]' = f'(x) / g'(x): die beiden Ableitungen werden dividiert",
       "[f(x) + g(x)]' = f'(g(x)) · g'(x): g wird als innere Funktion behandelt"
     ],
@@ -72,35 +72,35 @@
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Kettenregel: [f(g(x))]' = f'(g(x)) · g'(x). Voraussetzung: g ist an der Stelle x differenzierbar und f an der Stelle g(x). Beispiel: h(x) = (3x+1)^5 mit der äußeren Ableitung 5u⁴ und der inneren Ableitung 3, also h'(x) = 5(3x+1)⁴ · 3 = 15(3x+1)⁴. Merke: erst äußere Funktion ableiten und die innere unverändert stehen lassen, dann mit der inneren Ableitung multiplizieren.",
     "options": [
       "[f · g]' = f' · g + f · g': Regel für die Ableitung eines Produkts zweier Funktionen",
-      "[f(g(x))]' = f'(g(x)) · g'(x): äußere Ableitung mal innerer Ableitung",
       "[f / g]' = (f' · g - f · g') / g²: Regel für die Ableitung eines Quotienten",
+      "[f(g(x))]' = f'(g(x)) · g'(x): äußere Ableitung mal innerer Ableitung",
       "[f + g]' = f' + g': Regel für die Ableitung einer Summe zweier Funktionen"
     ],
     "question": "Was ist die Kettenregel?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Gilt f'(x) > 0 auf einem ganzen Intervall, so ist f dort streng monoton steigend; gilt f'(x) < 0, ist f streng monoton fallend. Die Aussage bezieht sich immer auf ein Intervall, nicht auf eine einzelne Stelle, und sie ist hinreichend, aber nicht notwendig: f(x) = x³ ist streng monoton steigend, obwohl f'(0) = 0 ist. An Stellen mit f'(x) = 0 liegt ein Kandidat für einen Hoch-, Tief- oder Sattelpunkt vor; erst ein Vorzeichenwechsel von f' beim Nulldurchgang sichert ein Extremum.",
     "options": [
       "Die Krümmung: positive Werte bedeuten Linkskrümmung, negative Rechtskrümmung",
-      "Die Steigung: positive Werte bedeuten steigend, negative fallend, null Extremum möglich",
       "Die Wendestellen: ihre Nullstellen mit Vorzeichenwechsel sind die Wendepunkte",
-      "Das Verhalten für x gegen ±∞ und damit die waagerechten Asymptoten des Graphen"
+      "Das Verhalten für x gegen ±∞ und damit die waagerechten Asymptoten des Graphen",
+      "Die Steigung: positive Werte bedeuten steigend, negative fallend, null Extremum möglich"
     ],
     "question": "Was sagt die erste Ableitung über eine Funktion?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Gilt f''(x) > 0 auf einem Intervall, ist der Graph dort linksgekrümmt (konvex); gilt f''(x) < 0, ist er rechtsgekrümmt (konkav). Für einen Wendepunkt reicht f''(x₀) = 0 allein nicht aus – f'' muss dort auch das Vorzeichen wechseln. Gegenbeispiel: f(x) = x⁴ hat f''(0) = 0, aber keinen Wendepunkt, sondern einen Tiefpunkt. Voraussetzung ist außerdem, dass f zweimal differenzierbar ist.",
     "options": [
-      "Die Steigung des Graphen und damit die Tangentensteigung an jeder einzelnen Stelle",
       "Die Krümmung: positive Werte bedeuten konvex, negative konkav, null Wendepunkt möglich",
+      "Die Steigung des Graphen und damit die Tangentensteigung an jeder einzelnen Stelle",
       "Die Intervalle, in denen die Funktion streng monoton steigt oder streng monoton fällt",
       "Die Nullstellen der Funktion und damit die Schnittpunkte des Graphen mit der x-Achse"
     ],
@@ -120,35 +120,35 @@
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Notwendig für einen Wendepunkt ist f''(x₀) = 0 (bei zweimal differenzierbarem f). Hinreichend ist ein Vorzeichenwechsel von f'' an dieser Stelle; alternativ genügt f'''(x₀) ungleich 0. Geometrisch wechselt die Kurve dort von links- zu rechtsgekrümmt oder umgekehrt. Sattelpunkt (Terrassenpunkt): ein Wendepunkt, an dem zusätzlich f'(x₀) = 0 gilt – die Tangente verläuft waagerecht, ein Extremum liegt aber nicht vor.",
     "options": [
       "Punkt mit f'(x₀) = 0 und f''(x₀) ≠ 0, an dem ein Hoch- oder Tiefpunkt vorliegt",
-      "Punkt mit f''(x₀) = 0 und Vorzeichenwechsel von f'', an dem die Krümmung wechselt",
       "Punkt mit f(x₀) = 0, an dem der Graph die x-Achse schneidet oder berührt",
+      "Punkt mit f''(x₀) = 0 und Vorzeichenwechsel von f'', an dem die Krümmung wechselt",
       "Punkt, an dem der Graph eine senkrechte Asymptote hat und nicht definiert ist"
     ],
     "question": "Was ist ein Wendepunkt?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Schritte: 1. Definitionsbereich und Symmetrie. 2. Nullstellen (f(x) = 0). 3. Extrema: f'(x) = 0 als notwendige Bedingung, dann f''(x) ungleich 0 als hinreichende – ist auch f'' = 0, entscheidet der Vorzeichenwechsel von f'. 4. Wendepunkte: f''(x) = 0 mit Vorzeichenwechsel von f''. 5. Monotonie über das Vorzeichen von f'. 6. Krümmung über das Vorzeichen von f''. 7. Verhalten an den Rändern des Definitionsbereichs und Asymptoten. 8. Graph zeichnen.",
     "options": [
       "Die Bestimmung der Hoch- und Tiefpunkte einer Funktion über die Nullstellen von f'",
-      "Die systematische Untersuchung einer Funktion von Definitionsbereich bis Graph",
       "Die Bestimmung aller Ableitungen einer Funktion bis hinauf zur dritten Ordnung",
-      "Die Bestimmung der Nullstellen einer Funktion durch Lösen der Gleichung f(x) = 0"
+      "Die Bestimmung der Nullstellen einer Funktion durch Lösen der Gleichung f(x) = 0",
+      "Die systematische Untersuchung einer Funktion von Definitionsbereich bis Graph"
     ],
     "question": "Was ist Kurvendiskussion?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Nullstellen bestimmen: die Gleichung f(x) = 0 lösen, wobei nur x-Werte aus dem Definitionsbereich infrage kommen. Methoden: Ausklammern und Faktorisieren, Satz vom Nullprodukt, quadratische Formel, Substitution, notfalls numerisch (Newton-Verfahren). Mehrfache Nullstelle bedeutet f(x₀) = 0 und f'(x₀) = 0. Dabei kommt es auf die Vielfachheit an: Bei gerader Vielfachheit (z. B. x²) berührt der Graph die x-Achse, bei ungerader Vielfachheit ab 3 (z. B. x³) schneidet er sie mit waagerechter Tangente.",
     "options": [
-      "Ein x-Wert mit f'(x) = 0 und f''(x) < 0, an dem der Graph einen Hochpunkt hat",
       "Ein x-Wert mit f(x) = 0, an dem der Graph die x-Achse schneidet oder berührt",
+      "Ein x-Wert mit f'(x) = 0 und f''(x) < 0, an dem der Graph einen Hochpunkt hat",
       "Ein x-Wert mit f'(x) = 0, an dem der Graph eine waagerechte Tangente besitzt",
       "Ein x-Wert mit f''(x) = 0, an dem der Graph seine Krümmungsrichtung wechselt"
     ],
@@ -168,35 +168,35 @@
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Ein Polynom vom Grad n hat über den komplexen Zahlen genau n Nullstellen, wenn man sie mit ihrer Vielfachheit zählt (Fundamentalsatz der Algebra). Über den reellen Zahlen können es weniger sein, höchstens aber n – x² + 1 hat zum Beispiel gar keine reelle Nullstelle. Ganzrationale Funktionen sind auf ganz R definiert, stetig und beliebig oft differenzierbar. Aus dem Grad folgt: höchstens n-1 Extremstellen und höchstens n-2 Wendestellen.",
     "options": [
       "Ein Quotient zweier Polynome, der an manchen Nullstellen des Nenners Polstellen hat",
-      "Eine Summe von Potenzen mit natürlichen Exponenten, also ein Polynom, definiert auf ganz R",
       "Eine Funktion der Form f(x) = a · b^x, deren Wachstum die Basis b bestimmt",
+      "Eine Summe von Potenzen mit natürlichen Exponenten, also ein Polynom, definiert auf ganz R",
       "Eine periodische Funktion vom Typ Sinus oder Kosinus, definiert über den Einheitskreis"
     ],
     "question": "Was ist eine ganzrationale Funktion?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Exponentialfunktionen f(x) = a·b^x setzen b > 0 und b ungleich 1 voraus; sie sind auf ganz R definiert, und b^x ist stets positiv, wird also nie 0 – der Graph hat die x-Achse als waagerechte Asymptote und keine Nullstelle. Ableitungen: f(x) = e^x → f'(x) = e^x; f(x) = a·e^(kx) → f'(x) = k·a·e^(kx). Eulersche Zahl e ≈ 2,718. Wachstum und Zerfall: N(t) = N₀·e^(kt) mit k > 0 für Wachstum und k < 0 für Zerfall.",
     "options": [
       "Funktion der Form f(x) = a · x^n mit festem Exponenten n und variabler Basis x",
-      "Funktion der Form f(x) = a · b^x mit fester Basis b > 0, b ≠ 1, und variablem Exponenten",
       "Funktion der Form f(x) = a · Wurzel(x) + b, die nur für x ≥ 0 definiert ist",
-      "Funktion der Form f(x) = a · ln(x) + b, die nur für positive x-Werte definiert ist"
+      "Funktion der Form f(x) = a · ln(x) + b, die nur für positive x-Werte definiert ist",
+      "Funktion der Form f(x) = a · b^x mit fester Basis b > 0, b ≠ 1, und variablem Exponenten"
     ],
     "question": "Was ist eine Exponentialfunktion?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Der natürliche Logarithmus ist nur für x > 0 definiert, sein Wertebereich ist ganz R. ln(e) = 1, ln(1) = 0. Rechenregeln, jeweils nur für positive a und b: ln(a·b) = ln(a) + ln(b), ln(a/b) = ln(a) - ln(b), ln(a^n) = n·ln(a). Ableitung: [ln(x)]' = 1/x für x > 0; nach der Kettenregel [ln(g(x))]' = g'(x)/g(x), sofern g(x) > 0 ist.",
     "options": [
-      "Umkehrfunktion der Potenzfunktion x^n, also im Kern die n-te Wurzel aus x",
       "Umkehrfunktion der e-Funktion: ln(x) = y bedeutet e^y = x, definiert für x > 0",
+      "Umkehrfunktion der Potenzfunktion x^n, also im Kern die n-te Wurzel aus x",
       "Umkehrfunktion der Quadratfunktion x², definiert für alle nichtnegativen x-Werte",
       "Kehrwert der e-Funktion, also die Funktion 1/e^x mit demselben Definitionsbereich"
     ],
@@ -216,35 +216,35 @@
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Stammfunktionsregeln: Integral x^n dx = x^(n+1)/(n+1) + C für n ungleich -1. Integral 1/x dx = ln|x| + C, jeweils getrennt für x > 0 und x < 0, da 1/x bei 0 nicht definiert ist. Integral e^x dx = e^x + C. Integral k dx = k·x + C. Die Integrationskonstante C zeigt: Es gibt unendlich viele Stammfunktionen, und auf einem zusammenhängenden Intervall unterscheiden sie sich genau um eine Konstante. Jede auf einem Intervall stetige Funktion besitzt dort eine Stammfunktion.",
     "options": [
       "Funktionen F mit F(x) = f'(x), die man durch Ableiten der Funktion f gewinnt",
-      "Funktionen F mit F'(x) = f(x), die man durch Integrieren von f gewinnt, plus Konstante C",
       "Funktionen F, deren Nullstellen genau mit den Extremstellen von f übereinstimmen",
+      "Funktionen F mit F'(x) = f(x), die man durch Integrieren von f gewinnt, plus Konstante C",
       "Funktionen F, die das Grenzverhalten von f für x gegen unendlich beschreiben"
     ],
     "question": "Was sind Stammfunktionen?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Voraussetzung ist, dass f an der Stelle x₀ differenzierbar ist; dann hat die Tangente im Punkt P(x₀ | f(x₀)) die Steigung m = f'(x₀). Tangentengleichung: t(x) = m·(x - x₀) + f(x₀) = m·x + (f(x₀) - m·x₀). Die Tangente berührt den Graphen dort, kann ihn an anderen Stellen aber durchaus schneiden. Anwendung: lineare Näherung in der Nähe von x₀, Newton-Verfahren. Die Normale steht senkrecht dazu und hat für f'(x₀) ungleich 0 die Steigung -1/f'(x₀).",
     "options": [
       "y = -1/f'(x₀) · (x - x₀) + f(x₀): Gerade, die dort senkrecht auf dem Graphen steht",
-      "y = f'(x₀) · (x - x₀) + f(x₀): Gerade, die den Graphen im Punkt (x₀; f(x₀)) berührt",
       "y = (f(b) - f(a))/(b - a) · (x - x₀) + f(x₀): Gerade durch zwei Punkte des Graphen",
-      "y = f''(x₀) · (x - x₀) + f'(x₀): Gerade, die die Krümmung an dieser Stelle beschreibt"
+      "y = f''(x₀) · (x - x₀) + f'(x₀): Gerade, die die Krümmung an dieser Stelle beschreibt",
+      "y = f'(x₀) · (x - x₀) + f(x₀): Gerade, die den Graphen im Punkt (x₀; f(x₀)) berührt"
     ],
     "question": "Was ist die Tangentengleichung an einer Stelle x₀?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Waagerechte Asymptote y = c: lim f(x) = c für x gegen plus oder minus unendlich; die Grenzwerte können sich für beide Richtungen unterscheiden. Senkrechte Asymptote x = a: liegt an einer Polstelle vor, also wenn der Nenner dort 0 wird, der Zähler aber nicht – wird auch der Zähler 0, kann die Stelle stattdessen hebbar sein. Schiefe Asymptote: bei einer gebrochenrationalen Funktion durch Polynomdivision, wenn der Zählergrad genau um 1 größer ist als der Nennergrad. Der Graph darf eine waagerechte oder schiefe Asymptote auch schneiden.",
     "options": [
-      "Eine Stelle, an der der Graph eine waagerechte Tangente und einen Extremwert besitzt",
       "Eine Gerade, der sich der Graph unbegrenzt annähert: waagerecht, senkrecht oder schief",
+      "Eine Stelle, an der der Graph eine waagerechte Tangente und einen Extremwert besitzt",
       "Eine Stelle, an der der Graph seine Krümmungsrichtung von links nach rechts wechselt",
       "Eine Gerade, die den Graphen in genau zwei Punkten schneidet und ihn dort begrenzt"
     ],
@@ -264,35 +264,35 @@
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Monotonie ist immer eine Aussage über ein Intervall, nie über eine einzelne Stelle. Beispiel f(x) = x²: streng monoton fallend auf (-∞; 0] und streng monoton steigend auf [0; ∞) – die Randstelle 0 darf jeweils eingeschlossen werden. Vorgehen: Nullstellen von f' berechnen, den Definitionsbereich damit in Teilintervalle zerlegen und in jedem das Vorzeichen von f' mit einem Testwert prüfen. f' > 0 auf einem Intervall ist hinreichend für strenge Monotonie, aber nicht notwendig (f(x) = x³).",
     "options": [
       "Das Krümmungsverhalten: konvex bei f'' > 0 und konkav bei f'' < 0 im Intervall",
-      "Das Steigungsverhalten: streng monoton steigend bei f' > 0, fallend bei f' < 0",
       "Die Wiederholung der Funktionswerte nach einer festen Periodenlänge p im Intervall",
+      "Das Steigungsverhalten: streng monoton steigend bei f' > 0, fallend bei f' < 0",
       "Die Spiegelbildlichkeit des Graphen zur y-Achse oder zum Koordinatenursprung"
     ],
     "question": "Was ist Monotonie einer Funktion?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Allgemein gilt: Achsensymmetrie zur y-Achse bedeutet f(-x) = f(x), Punktsymmetrie zum Ursprung f(-x) = -f(x); der Definitionsbereich muss dafür symmetrisch zu 0 liegen. Bei ganzrationalen Funktionen lässt sich das ablesen: nur gerade Exponenten (einschließlich des konstanten Glieds x⁰) bedeuten Achsensymmetrie, nur ungerade Exponenten Punktsymmetrie zum Ursprung; sind beide Sorten vertreten, liegt keine dieser beiden Symmetrien vor – möglich bleiben aber Symmetrien zu anderen Achsen oder Punkten. Symmetrie spart Arbeit: Es genügt, eine Hälfte zu untersuchen.",
     "options": [
       "Der Graph geht bei Spiegelung an der Winkelhalbierenden y = x in sich selbst über",
-      "Achsensymmetrie zur y-Achse bei f(-x) = f(x), Punktsymmetrie zum Ursprung bei f(-x) = -f(x)",
       "Achsensymmetrie zur y-Achse bei f(-x) = -f(x), Punktsymmetrie zum Ursprung bei f(-x) = f(x)",
-      "Der Graph wiederholt sich nach einer festen Periodenlänge p, es gilt also f(x + p) = f(x)"
+      "Der Graph wiederholt sich nach einer festen Periodenlänge p, es gilt also f(x + p) = f(x)",
+      "Achsensymmetrie zur y-Achse bei f(-x) = f(x), Punktsymmetrie zum Ursprung bei f(-x) = -f(x)"
     ],
     "question": "Was ist Symmetrie eines Funktionsgraphen?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Lineare Funktion: f(x) = m·x + b mit D = R. Die Ableitung f'(x) = m ist konstant, die Steigung also überall gleich. m > 0: streng monoton steigend; m < 0: streng monoton fallend; m = 0: konstant. Zwei verschiedene Punkte mit verschiedenen x-Werten legen die Gerade eindeutig fest; senkrechte Geraden lassen sich so nicht beschreiben, sie sind keine Funktionsgraphen.",
     "options": [
-      "f(x) = a·x² + b·x + c mit a ≠ 0: Der Graph ist eine nach oben oder unten geöffnete Parabel",
       "f(x) = m·x + b: Der Graph ist eine Gerade mit Steigung m und y-Achsenabschnitt b",
+      "f(x) = a·x² + b·x + c mit a ≠ 0: Der Graph ist eine nach oben oder unten geöffnete Parabel",
       "f(x) = a·x³ + b·x² + c·x + d: Der Graph ist eine Kurve mit genau einem Wendepunkt",
       "f(x) = a · b^x mit b > 0: Der Graph wächst oder fällt je Schritt mit festem Faktor"
     ],
@@ -312,35 +312,35 @@
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Die Ableitungsregeln gelten nur, wenn x im Bogenmaß gemessen wird: [sin(x)]' = cos(x), [cos(x)]' = -sin(x). Für den Tangens gilt tan(x) = sin(x)/cos(x) mit der Ableitung 1/cos²(x), definiert nur für cos(x) ungleich 0, also für x ungleich π/2 + k·π. sin und cos sind auf ganz R definiert mit Werten in [-1; 1] und der Periode 2π: sin(x + 2π) = sin(x). Werte: sin(0) = 0, sin(π/2) = 1, cos(0) = 1, cos(π) = -1.",
     "options": [
       "Funktionen wie x², x³ oder x⁴, deren Verlauf allein der Exponent bestimmt",
-      "Funktionen wie sin, cos und tan, die über den Einheitskreis definiert und periodisch sind",
       "Funktionen wie e^x oder 2^x, bei denen die Variable im Exponenten steht",
+      "Funktionen wie sin, cos und tan, die über den Einheitskreis definiert und periodisch sind",
       "Funktionen wie ln(x) oder log(x), die das Potenzieren wieder rückgängig machen"
     ],
     "question": "Was ist eine trigonometrische Funktion?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Grenzwert: lim f(x) = L für x gegen a beschreibt, welchem Wert sich f(x) nähert – der Grenzwert kann existieren, auch wenn f an der Stelle a gar nicht definiert ist, und er kann vom Funktionswert abweichen. Stetig heißt f an der Stelle a genau dann, wenn der Grenzwert existiert und mit f(a) übereinstimmt; dabei müssen links- und rechtsseitiger Grenzwert gleich sein. Wichtig für Asymptoten (x gegen ±∞) und für die Definition der Ableitung. Rechenregeln wie lim(f+g) = lim f + lim g setzen voraus, dass beide Einzelgrenzwerte existieren. Bei 0/0 oder ∞/∞ hilft die Regel von L'Hôpital.",
     "options": [
       "Der Funktionswert f(a), den die Funktion an der betrachteten Stelle a annimmt",
-      "Der Wert L, dem sich f(x) nähert, wenn x gegen eine Stelle a oder gegen ±∞ strebt",
       "Der größte Wert, den eine Funktion auf einem abgeschlossenen Intervall annimmt",
-      "Der x-Wert, an dem der Graph die x-Achse schneidet und damit f(x) = 0 gilt"
+      "Der x-Wert, an dem der Graph die x-Achse schneidet und damit f(x) = 0 gilt",
+      "Der Wert L, dem sich f(x) nähert, wenn x gegen eine Stelle a oder gegen ±∞ strebt"
     ],
     "question": "Was ist der Grenzwert einer Funktion?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Verkettung: h(x) = f(g(x)) mit der inneren Funktion g und der äußeren Funktion f. Zum Definitionsbereich gehören nur die x, für die g(x) definiert ist und dieser Wert zugleich im Definitionsbereich von f liegt. Beispiel: h(x) = sin(x²) mit g(x) = x² innen und f(u) = sin(u) außen; nach der Kettenregel ist h'(x) = cos(x²)·2x. Die Reihenfolge zählt: f(g(x)) und g(f(x)) sind im Allgemeinen verschieden.",
     "options": [
-      "h(x) = f(x) · g(x): die Funktionswerte werden an jeder Stelle multipliziert",
       "h(x) = f(g(x)): erst wird g angewendet, dann f auf dessen Ergebnis",
+      "h(x) = f(x) · g(x): die Funktionswerte werden an jeder Stelle multipliziert",
       "h(x) = f(x) + g(x): die Funktionswerte werden an jeder Stelle addiert",
       "h(x) = f(x) / g(x): die Funktionswerte werden an jeder Stelle dividiert"
     ],
@@ -360,35 +360,35 @@
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Idee: Man legt im aktuellen Punkt die Tangente an den Graphen; ihr Schnittpunkt mit der x-Achse liefert den nächsten Näherungswert. Voraussetzung ist f'(x_n) ungleich 0, sonst ist die Tangente waagerecht und der Schritt nicht ausführbar. Liegt der Startwert nahe genug an einer einfachen Nullstelle, konvergiert das Verfahren sehr schnell (quadratisch); bei ungünstigem Startwert kann es aber auch zu einer anderen Nullstelle springen, oszillieren oder divergieren. Anwendung: numerisches Lösen von Gleichungen, die sich nicht exakt auflösen lassen.",
     "options": [
       "x_(n+1) = x_n - f'(x_n)/f(x_n): Iteration zur näherungsweisen Suche von Extremstellen",
-      "x_(n+1) = x_n - f(x_n)/f'(x_n): Iteration zur näherungsweisen Suche von Nullstellen",
       "x_(n+1) = x_n + f(x_n)·f'(x_n): Iteration zur näherungsweisen Suche von Wendestellen",
+      "x_(n+1) = x_n - f(x_n)/f'(x_n): Iteration zur näherungsweisen Suche von Nullstellen",
       "x_(n+1) = (x_n + f(x_n))/2: Iteration zur näherungsweisen Suche von Grenzwerten"
     ],
     "question": "Was ist das Newton-Verfahren (Newtonsche Iteration)?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Vorgehen: Zielfunktion aufstellen (was soll optimiert werden?), Nebenbedingung nach einer Variablen auflösen und einsetzen, sodass eine Funktion einer Variablen entsteht, dazu den sinnvollen Definitionsbereich aus der Sachlage bestimmen (z. B. nur positive Längen). Dann ableiten, f'(x) = 0 lösen und mit f'' oder dem Vorzeichenwechsel prüfen. Wichtig: Auch die Ränder des Definitionsbereichs prüfen – das Optimum kann dort liegen, ohne dass f' dort 0 ist. Zum Schluss das Ergebnis im Sachzusammenhang deuten. Anwendung: maximaler Ertrag, minimaler Materialverbrauch.",
     "options": [
       "Die Bestimmung aller Nullstellen einer Funktion durch Lösen der Gleichung f(x) = 0",
-      "Die Suche nach Maximum oder Minimum unter einer Nebenbedingung, samt Randwerten",
       "Die Berechnung des Flächeninhalts unter einem Graphen mithilfe einer Stammfunktion",
-      "Die Bestimmung der Asymptoten über die Grenzwerte für x gegen plus und minus unendlich"
+      "Die Bestimmung der Asymptoten über die Grenzwerte für x gegen plus und minus unendlich",
+      "Die Suche nach Maximum oder Minimum unter einer Nebenbedingung, samt Randwerten"
     ],
     "question": "Was ist eine Optimierungsaufgabe in der Analysis?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Hauptsatz der Differential- und Integralrechnung: Ist F eine Stammfunktion von f, gilt also F'(x) = f(x), so ist das Integral von a bis b gleich F(b) - F(a) – vorausgesetzt, f ist auf [a; b] stetig. Ableiten und Integrieren sind in diesem Sinn Umkehrungen voneinander, allerdings nicht ganz symmetrisch: Beim Integrieren bleibt die Integrationskonstante C unbestimmt, weil sie beim Ableiten wegfällt. Newton und Leibniz entwickelten die Differential- und Integralrechnung unabhängig voneinander.",
     "options": [
-      "Der Algebra: das Integrieren hebt das Umformen und Lösen von Gleichungen wieder auf",
       "Der Differentialrechnung: das Integrieren hebt das Ableiten einer Funktion wieder auf",
+      "Der Algebra: das Integrieren hebt das Umformen und Lösen von Gleichungen wieder auf",
       "Der Geometrie: das Integrieren hebt das Konstruieren von Flächenfiguren wieder auf",
       "Der Stochastik: das Integrieren hebt das Berechnen von Wahrscheinlichkeiten wieder auf"
     ],
@@ -408,35 +408,35 @@
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Sonderfall der Kettenregel, gültig für jede differenzierbare Funktion g. Beispiel: f(x) = e^(3x²) mit g(x) = 3x² und g'(x) = 6x ergibt f'(x) = e^(3x²)·6x. Merke: Die äußere Funktion e^u bleibt beim Ableiten unverändert stehen, zusätzlich wird mit der Ableitung des Exponenten multipliziert. Nur für g(x) = x entfällt dieser Faktor, weil g'(x) = 1 ist.",
     "options": [
       "[e^(g(x))]' = e^(g(x)): der Exponent bleibt beim Ableiten vollständig unverändert",
-      "[e^(g(x))]' = e^(g(x)) · g'(x): äußere Ableitung mal Ableitung des Exponenten",
       "[e^(g(x))]' = g(x) · e^(g(x)-1): der Exponent wird wie bei der Potenzregel verringert",
+      "[e^(g(x))]' = e^(g(x)) · g'(x): äußere Ableitung mal Ableitung des Exponenten",
       "[e^(g(x))]' = e^(g'(x)): im Exponenten steht nach dem Ableiten nur noch g'(x)"
     ],
     "question": "Was ist die Kettenregel für e^(g(x))?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Aus f'(x₀) = 0 und f''(x₀) = 0 allein folgt noch nichts: Die notwendige Bedingung für ein Extremum ist erfüllt, die hinreichende (f''(x₀) ungleich 0) jedoch nicht. Entscheidend ist der Vorzeichenwechsel von f'. Kein Wechsel bedeutet Sattelpunkt, wie bei f(x) = x³ mit f'(0) = 0 und f''(0) = 0. Wechselt f' dagegen das Vorzeichen, liegt trotz f''(x₀) = 0 ein Extremum vor – f(x) = x⁴ hat bei 0 einen Tiefpunkt.",
     "options": [
       "Es liegt sicher ein Hoch- oder Tiefpunkt vor, weil die Steigung dort null ist",
-      "Es liegt ein Sattelpunkt vor, wenn f' das Vorzeichen nicht wechselt, wie bei f(x) = x³",
       "Es liegt ein Wendepunkt mit von null verschiedener Steigung vor, wie bei f(x) = x³ - 3x",
-      "Es liegt eine Nullstelle vor, weil der Graph dort die x-Achse schneidet oder berührt"
+      "Es liegt eine Nullstelle vor, weil der Graph dort die x-Achse schneidet oder berührt",
+      "Es liegt ein Sattelpunkt vor, wenn f' das Vorzeichen nicht wechselt, wie bei f(x) = x³"
     ],
     "question": "Was bedeutet f'(x₀) = 0 und f''(x₀) = 0?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Eine Umkehrfunktion existiert nur, wenn die Zuordnung eineindeutig (bijektiv) ist, also jeder Funktionswert genau einmal angenommen wird. Streng monotone Funktionen erfüllen das auf jedem Monotonie-Intervall; nicht umkehrbare Funktionen macht man durch Einschränken des Definitionsbereichs umkehrbar. Definitions- und Wertebereich tauschen dabei die Rollen. Beispiele: ln(x) ist die Umkehrfunktion von e^x (D = R⁺ für ln); arcsin ist die Umkehrfunktion von sin, aber nur nach Einschränkung auf [-pi/2; pi/2].",
     "options": [
-      "Die Funktion f', die an jeder Stelle die Steigung des Graphen von f angibt",
       "Die Funktion f⁻¹, die die Zuordnung umkehrt; ihr Graph entsteht durch Spiegelung an y = x",
+      "Die Funktion f', die an jeder Stelle die Steigung des Graphen von f angibt",
       "Die Funktion F, deren Ableitung f ergibt und die nur bis auf eine Konstante bestimmt ist",
       "Die Funktion 1/f, deren Werte an jeder Stelle die Kehrwerte der Werte von f sind"
     ],
@@ -456,25 +456,25 @@
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Monotonie-Intervalle bestimmen: den Definitionsbereich an den Nullstellen von f' – und an Definitionslücken – in Teilintervalle zerlegen und in jedem das Vorzeichen von f' mit einem Testwert prüfen. Gilt f'(x) > 0 im ganzen Intervall, ist f dort streng monoton steigend, bei f'(x) < 0 streng monoton fallend. Die Grenzen dürfen mit angegeben werden, sofern f dort definiert ist. Wichtig: Monotonie über eine Definitionslücke hinweg zusammenzufassen ist nicht zulässig, etwa bei f(x) = 1/x.",
     "options": [
       "Jedes Intervall, in dem die Funktion definiert ist, unabhängig vom Vorzeichen von f'",
-      "Ein Intervall, auf dem f durchgehend steigt oder fällt; Grenzen sind Extrem- oder Randstellen",
       "Das Intervall zwischen zwei benachbarten Nullstellen der Funktion selbst",
+      "Ein Intervall, auf dem f durchgehend steigt oder fällt; Grenzen sind Extrem- oder Randstellen",
       "Die Menge aller Funktionswerte, die eine Funktion insgesamt annehmen kann"
     ],
     "question": "Was ist das Monotonie-Intervall?",
     "topic": "Analysis"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Implizite Darstellung: Der Kreis x² + y² = 4 legt y nicht als Funktion von x fest, denn zu den meisten x gehören zwei y-Werte (oberer und unterer Halbkreis). Erst auf einem Teilstück lässt sich y als Funktion auffassen. Implizite Differentiation: beide Seiten nach x ableiten und y dabei als Funktion von x behandeln (Kettenregel), dann nach dy/dx auflösen. Voraussetzung: Die Auflösung ist lokal möglich und der Nenner beim Auflösen wird nicht 0 – beim Kreis ergibt sich dy/dx = -x/y, was für y = 0 (senkrechte Tangente) nicht definiert ist.",
     "options": [
       "Eine Funktion in der Form y = f(x), bei der y bereits nach x aufgelöst vorliegt",
-      "Eine Funktion, die nur durch eine Gleichung F(x; y) = 0 gegeben ist, etwa x² + y² = r²",
       "Eine Funktion, deren Punkte über einen Parameter t als x(t) und y(t) beschrieben werden",
-      "Eine Funktion, die jedem Zahlenwert einen Vektor mit mehreren Komponenten zuordnet"
+      "Eine Funktion, die jedem Zahlenwert einen Vektor mit mehreren Komponenten zuordnet",
+      "Eine Funktion, die nur durch eine Gleichung F(x; y) = 0 gegeben ist, etwa x² + y² = r²"
     ],
     "question": "Was ist eine implizite Funktion?",
     "topic": "Analysis"

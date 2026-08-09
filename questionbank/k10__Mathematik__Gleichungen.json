@@ -12,37 +12,37 @@
     "topic": "Quadratische Gleichungen"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Additionsverfahren: Multipliziert man Gleichung II mit 2, erhält man 10x - 4y = 16. Addiert man dazu Gleichung I, fällt y weg: 13x = 26, also x = 2. Einsetzen in Gleichung I: 3 · 2 + 4y = 10, also 4y = 4 und damit y = 1. Probe in II: 5 · 2 - 2 · 1 = 8.",
     "options": [
       "y = -1",
-      "y = 0,5",
       "y = 1",
+      "y = 0,5",
       "y = 2"
     ],
     "question": "Gegeben ist das lineare Gleichungssystem:\nI) 3x + 4y = 10\nII) 5x - 2y = 8\nWelchen Wert hat y in der Lösung dieses Systems?",
     "topic": "Lineare Gleichungssysteme"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Zuerst muss die Definitionslücke x = 3 beachtet werden. Multipliziert man die Gleichung mit (x - 3), erhält man x + 1 = 2(x - 3). Das ergibt x + 1 = 2x - 6, also 7 = x. Da 7 keine Definitionslücke ist, gilt L = {7}. Probe: (7+1)/(7-3) = 8/4 = 2.",
     "options": [
-      "L = {7}",
       "L = {5}",
       "L = {3}",
+      "L = {7}",
       "L = { }"
     ],
     "question": "Bestimme die Lösungsmenge der Bruchgleichung: (x+1)/(x-3) = 2. Achte auf Definitionslücken.",
     "topic": "Bruchgleichungen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Die Anzahl der reellen Lösungen einer quadratischen Gleichung ax² + bx + c = 0 hängt von der Diskriminante D = b² - 4ac ab. Hier ist D = (-5)² - 4 · 2 · 4 = 25 - 32 = -7. Da D < 0 ist, gibt es keine reellen Lösungen.",
     "options": [
-      "Keine reellen Lösungen",
       "Eine reelle Lösung",
       "Zwei verschiedene reelle Lösungen",
-      "Unendlich viele Lösungen"
+      "Unendlich viele Lösungen",
+      "Keine reellen Lösungen"
     ],
     "question": "Wie viele reelle Lösungen hat die quadratische Gleichung 2x² - 5x + 4 = 0?",
     "topic": "Diskriminante bei quadratischen Gleichungen"
@@ -84,24 +84,24 @@
     "topic": "Lineare Gleichungen"
   },
   {
-    "correct": 0,
+    "correct": 3,
     "explanation": "Sei die Breite x cm, dann ist die Länge (x + 3) cm. Für den Flächeninhalt gilt x(x + 3) = 40, also x² + 3x - 40 = 0. Faktorisierung (oder pq-Formel) ergibt (x + 8)(x - 5) = 0, also x = -8 oder x = 5. Da eine Breite nicht negativ sein kann, bleibt x = 5 cm. Probe: 5 cm · 8 cm = 40 cm².",
     "options": [
-      "5 cm",
       "8 cm",
       "10 cm",
-      "4 cm"
+      "4 cm",
+      "5 cm"
     ],
     "question": "Ein Rechteck hat eine Länge, die 3 cm länger ist als seine Breite. Sein Flächeninhalt beträgt 40 cm². Wie lang ist die Breite des Rechtecks?",
     "topic": "Textaufgaben mit quadratischen Gleichungen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Mitternachtsformel: x₁,₂ = (-b ± √(b² - 4ac)) / (2a) mit a = 3, b = -5 und c = -2. Die Diskriminante ist (-5)² - 4 · 3 · (-2) = 25 + 24 = 49. Also x₁,₂ = (5 ± √49) / 6 = (5 ± 7) / 6. Daraus folgen x₁ = 12/6 = 2 und x₂ = -2/6 = -1/3. Probe: 3 · 2² - 5 · 2 - 2 = 0.",
     "options": [
+      "x₁ = 2; x₂ = -1/3",
       "x₁ = 2; x₂ = 1/3",
       "x₁ = -2; x₂ = 1/3",
-      "x₁ = 2; x₂ = -1/3",
       "x₁ = 2; x₂ = -3"
     ],
     "question": "Bestimme mit der Mitternachtsformel die Lösungen der Gleichung: 3x² - 5x - 2 = 0",
@@ -120,12 +120,12 @@
     "topic": "Quadratische Gleichungen (pq-Formel)"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Additionsverfahren: Multipliziere Gleichung II mit 2, das ergibt 6x - 2y = 14. Addiert man dazu Gleichung I, fällt y weg: 7x = 21, also x = 3. Einsetzen in Gleichung I: 3 + 2y = 7, also 2y = 4 und y = 2. Probe in II: 3 · 3 - 2 = 7.",
     "options": [
       "x = 1, y = 3",
-      "x = 3, y = 2",
       "x = 5, y = 1",
+      "x = 3, y = 2",
       "x = 2, y = 3"
     ],
     "question": "Finde die Lösung des folgenden linearen Gleichungssystems:\nI) x + 2y = 7\nII) 3x - y = 7",
@@ -144,11 +144,11 @@
     "topic": "Bruchgleichungen"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Quadriere beide Seiten: x + 7 = (x - 5)², also x + 7 = x² - 10x + 25. Alles auf eine Seite bringen: x² - 11x + 18 = 0. Mit der pq-Formel: x₁,₂ = 5,5 ± √(30,25 - 18) = 5,5 ± √12,25 = 5,5 ± 3,5, also 9 oder 2. Beim Quadrieren können Scheinlösungen entstehen, deshalb die Probe: Für x = 9 ist √16 = 4 und 9 - 5 = 4, das passt. Für x = 2 ist √9 = 3, aber 2 - 5 = -3, das passt nicht. Es bleibt L = {9}.",
     "options": [
-      "L = {2}",
       "L = {9}",
+      "L = {2}",
       "L = {2; 9}",
       "L = { }"
     ],
@@ -168,25 +168,25 @@
     "topic": "Lineare Gleichungen"
   },
   {
-    "correct": 0,
+    "correct": 2,
     "explanation": "Substituiere u = x². Die Gleichung wird zu u² - 13u + 36 = 0. Mit der pq-Formel: u₁,₂ = 6,5 ± √(42,25 - 36) = 6,5 ± √6,25 = 6,5 ± 2,5, also u₁ = 9 und u₂ = 4. Rücksubstitution: aus x² = 9 folgt x = ±3, aus x² = 4 folgt x = ±2. Die Gleichung hat also die vier Lösungen -3, -2, 2 und 3.",
     "options": [
-      "x₁,₂ = ±2; x₃,₄ = ±3",
       "x₁,₂ = ±4; x₃,₄ = ±9",
       "x₁,₂ = ±3; x₃,₄ = ±6",
+      "x₁,₂ = ±2; x₃,₄ = ±3",
       "x₁,₂ = ±√2; x₃,₄ = ±√3"
     ],
     "question": "Löse die biquadratische Gleichung: x⁴ - 13x² + 36 = 0",
     "topic": "Biquadratische Gleichungen"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Sei die kleinere Zahl x, dann ist die nächste x + 1. Die Gleichung lautet x² + (x + 1)² = 145. Ausmultiplizieren ergibt x² + x² + 2x + 1 = 145, also 2x² + 2x - 144 = 0. Division durch 2: x² + x - 72 = 0. Mit der pq-Formel: x₁,₂ = -0,5 ± √(0,25 + 72) = -0,5 ± √72,25 = -0,5 ± 8,5, also x₁ = 8 und x₂ = -9. Gesucht sind natürliche Zahlen, also x = 8. Probe: 8² + 9² = 64 + 81 = 145.",
     "options": [
       "6 und 7",
       "7 und 8",
-      "8 und 9",
-      "9 und 10"
+      "9 und 10",
+      "8 und 9"
     ],
     "question": "Die Summe der Quadrate zweier aufeinanderfolgender natürlicher Zahlen beträgt 145. Wie lauten diese Zahlen?",
     "topic": "Textaufgaben (Quadratische Gleichungen)"

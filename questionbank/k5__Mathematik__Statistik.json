@@ -1,10 +1,10 @@
 [
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Wer wissen will, wie es in der eigenen Straße aussieht, muss dort selbst beobachten und zählen. Eltern zu fragen liefert nur Vermutungen, ein Buch beschreibt nicht deine Straße, und eine Umfrage in ganz Deutschland beantwortet eine ganz andere Frage.",
     "options": [
-      "Deine Eltern nach ihrer Meinung zu den Autofarben fragen",
       "Die Autos in deiner Straße zählen und ihre Farben notieren",
+      "Deine Eltern nach ihrer Meinung zu den Autofarben fragen",
       "Alle Autofahrer in Deutschland nach ihrer Lieblingsfarbe fragen",
       "In einem Buch nachschlagen, welche Autofarbe am beliebtesten ist"
     ],
@@ -24,83 +24,83 @@
     "topic": "Absolute Häufigkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Nach dem Sammeln werden Daten geordnet und ausgezählt. Eine Strichliste zeigt sofort, wie oft jedes Haustier genannt wurde, und lässt sich direkt in eine Häufigkeitstabelle übertragen. Alphabetisch sortieren ordnet zwar die Zettel, verrät aber keine Häufigkeiten.",
     "options": [
       "Alle Zettel unsortiert in einer Kiste sammeln und dort aufbewahren",
-      "Die Antworten in einer Strichliste zählen und in eine Tabelle eintragen",
       "Die Zettel nach den Vornamen der Kinder alphabetisch ordnen",
+      "Die Antworten in einer Strichliste zählen und in eine Tabelle eintragen",
       "Für jedes genannte Haustier ein passendes Foto heraussuchen"
     ],
     "question": "Nach einer Abstimmung über Lieblingshaustiere hast du viele Zettel mit Namen und Haustieren gesammelt. Was ist der nächste sinnvolle Schritt, um die Ergebnisse auszuwerten?",
     "topic": "Datenorganisation"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Ein Diagramm macht Daten anschaulich: Unterschiede und Muster erkennt man auf einen Blick, ohne jede einzelne Zahl lesen zu müssen. Für die genauen Einzelwerte ist dagegen eine Tabelle besser geeignet. Neue Werte entstehen durch ein Diagramm nicht.",
     "options": [
       "Um alle Einzelwerte möglichst genau untereinander aufzulisten",
       "Um festzuhalten, in welcher Reihenfolge die Daten erhoben wurden",
-      "Um große Datenmengen schnell zu erfassen und Werte zu vergleichen",
-      "Um aus den Daten neue Werte zu berechnen, die gar nicht erhoben wurden"
+      "Um aus den Daten neue Werte zu berechnen, die gar nicht erhoben wurden",
+      "Um große Datenmengen schnell zu erfassen und Werte zu vergleichen"
     ],
     "question": "Nach dem Sammeln und Ordnen von Daten kann man diese in einem Diagramm darstellen. Was ist der Hauptgrund dafür?",
     "topic": "Zweck von Diagrammen"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Der Modus (Modalwert) ist der Wert, der am häufigsten vorkommt. Auszählen ergibt: Apfel dreimal, Banane zweimal, Kirsche einmal, Birne einmal. Also ist Apfel der Modus. Der Modus lässt sich auch bei Antworten bestimmen, die keine Zahlen sind.",
     "options": [
+      "Apfel",
       "Banane",
       "Kirsche",
-      "Apfel",
       "Birne"
     ],
     "question": "Bei einer Umfrage nach Lieblingsfrüchten wurden folgende Antworten gesammelt: Apfel, Banane, Apfel, Kirsche, Birne, Apfel, Banane. Welche Frucht ist der Modus dieser Umfrage?",
     "topic": "Modus (Modalwert)"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Für den Mittelwert addierst du alle Werte und teilst durch ihre Anzahl: 5 + 3 + 7 = 15 Bücher, geteilt durch 3 Personen ergibt 15 ÷ 3 = 5 Bücher pro Person. Wer Emma vergisst, rechnet nur (5 + 3) ÷ 2 = 4, wer Max vergisst, (5 + 7) ÷ 2 = 6. Die 3 ist nur der Einzelwert von Max.",
     "options": [
       "3 Bücher",
-      "4 Bücher",
       "5 Bücher",
+      "4 Bücher",
       "6 Bücher"
     ],
     "question": "Drei Freunde haben in einem Monat Bücher gelesen: Lena 5 Bücher, Max 3 Bücher und Emma 7 Bücher. Wie viele Bücher haben sie im Durchschnitt pro Person gelesen?",
     "topic": "Mittelwert (Durchschnitt)"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Das Maximum ist der größte Wert einer Messreihe. Ordnet man die Weiten der Größe nach, ergibt sich 175, 180, 190, 205, 210. Der größte Wert ist damit 210 cm; 205 cm ist nur der zweitbeste Sprung.",
     "options": [
       "175 cm",
       "190 cm",
-      "205 cm",
-      "210 cm"
+      "210 cm",
+      "205 cm"
     ],
     "question": "Eine Sportlehrerin hat die Weitsprungleistungen ihrer Schüler gemessen (in cm): 180, 210, 175, 205, 190. Was ist das Maximum dieser Messreihe?",
     "topic": "Maximum"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Die Spannweite ist ein Streumaß und wird als Maximum minus Minimum berechnet. Der größte Messwert ist 22 °C, der kleinste 8 °C. Also beträgt die Spannweite 22 °C − 8 °C = 14 °C. Wer statt des kleinsten den Morgenwert nimmt, erhält fälschlich 12 °C.",
     "options": [
       "7 °C",
       "12 °C",
-      "14 °C",
-      "22 °C"
+      "22 °C",
+      "14 °C"
     ],
     "question": "Die Außentemperaturen an einem Tag wurden gemessen: morgens 10 °C, mittags 22 °C, abends 15 °C, nachts 8 °C. Wie groß ist die Spannweite der Temperaturen?",
     "topic": "Spannweite"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Eine statistische Untersuchung beginnt immer mit der Datenerhebung. Erst wenn Daten vorliegen, kann man sie ordnen, in einem Diagramm darstellen, Kennwerte wie den Durchschnitt berechnen und daraus Schlüsse ziehen.",
     "options": [
-      "Aus den Ergebnissen eine Schlussfolgerung ziehen",
       "Passende Daten durch Zählen oder Befragen sammeln",
+      "Aus den Ergebnissen eine Schlussfolgerung ziehen",
       "Die Ergebnisse in einem Diagramm darstellen",
       "Aus den Werten den Durchschnitt berechnen"
     ],
@@ -108,47 +108,47 @@
     "topic": "Datensammlung"
   },
   {
-    "correct": 2,
+    "correct": 1,
     "explanation": "Ein volles Bündel einer Strichliste steht für 5 gezählte Werte. Drei Bündel sind 3 · 5 = 15, dazu kommen die 2 einzelnen Striche: 15 + 2 = 17. Wer die einzelnen Striche vergisst, kommt auf 15, wer ein Bündel mit nur 4 Strichen rechnet, auf 14, und wer die zwei Striche für ein viertes Bündel hält, auf 4 · 5 = 20.",
     "options": [
       "14",
-      "15",
       "17",
+      "15",
       "20"
     ],
     "question": "In einer Strichliste stehen drei volle Fünferbündel und danach zwei einzelne Striche. Für welche Anzahl steht diese Strichliste?",
     "topic": "Strichlisten und Häufigkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Das Minimum ist der kleinste Wert einer Datenreihe. Der Größe nach geordnet ergibt sich 18, 20, 23, 25, 30. Der kleinste Wert ist damit 18. Die 20 ist nur der zweitkleinste Wert, die 23 steht in der Mitte (das ist der Median) und die 30 ist der größte Wert.",
     "options": [
       "23",
-      "18",
       "30",
+      "18",
       "20"
     ],
     "question": "Fünf Schüler haben ihre gesammelten Kastanien gezählt: 23, 18, 30, 25, 20. Was ist das Minimum dieser Datenreihe?",
     "topic": "Minimum"
   },
   {
-    "correct": 2,
+    "correct": 3,
     "explanation": "Die Spannweite ist Maximum minus Minimum. Der größte Wert ist 30, der kleinste 18, also 30 − 18 = 12. Wer versehentlich den zweitkleinsten Wert nimmt, erhält 30 − 20 = 10; wer den zweitgrößten nimmt, 25 − 18 = 7.",
     "options": [
       "7",
       "10",
-      "12",
-      "30"
+      "30",
+      "12"
     ],
     "question": "Fünf Schüler haben ihre gesammelten Kastanien gezählt: 23, 18, 30, 25, 20. Wie groß ist die Spannweite dieser Daten?",
     "topic": "Spannweite"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Der Modalwert ist der am häufigsten genannte Wert. Auszählen der 8 Stimmen ergibt: Hund viermal, Katze zweimal, Hase einmal, Fisch einmal. Damit ist Hund der Modalwert.",
     "options": [
-      "Katze",
       "Hund",
+      "Katze",
       "Hase",
       "Fisch"
     ],
@@ -168,35 +168,35 @@
     "topic": "Mittelwert (Durchschnitt)"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Die relative Häufigkeit ist die absolute Häufigkeit geteilt durch die Gesamtzahl: 8 ÷ 20 = 0,4, also 40 %. Sie liegt immer zwischen 0 und 1, deshalb kann 2,5 keine relative Häufigkeit sein; dieser Wert entsteht, wenn man 20 ÷ 8 rechnet. Der Wert 0,6 gehört zu allen übrigen Kindern, und 0,08 entsteht durch ein falsch gesetztes Komma.",
     "options": [
       "0,08",
-      "0,4",
       "0,6",
+      "0,4",
       "2,5"
     ],
     "question": "In einer Klasse mit 20 Kindern nennen 8 Kinder Fußball als Lieblingssport. Wie groß ist die relative Häufigkeit von Fußball?",
     "topic": "Relative Häufigkeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Farben sind keine Zahlen: Man kann sie weder addieren noch der Größe nach ordnen. Mittelwert, Median und Spannweite setzen aber Zahlenwerte voraus. Der Modus zählt nur, welche Antwort am häufigsten vorkommt, und passt deshalb auch zu Farben, Tieren oder Namen.",
     "options": [
       "Der Mittelwert, also die durchschnittliche Farbe der Klasse",
-      "Der Modus, also die am häufigsten genannte Farbe",
       "Der Median, also die mittlere Farbe der sortierten Liste",
-      "Die Spannweite, also der Abstand zwischen zwei Farben"
+      "Die Spannweite, also der Abstand zwischen zwei Farben",
+      "Der Modus, also die am häufigsten genannte Farbe"
     ],
     "question": "Bei einer Umfrage nach der Lieblingsfarbe wurden die Antworten rot, blau, grün und gelb gezählt. Welche Kennzahl lässt sich aus diesen Daten sinnvoll bestimmen?",
     "topic": "Modus (Modalwert)"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Ein Diagramm übersetzt Zahlen in Bilder. Übliche Formen sind Säulen- und Balkendiagramm für Vergleiche, das Liniendiagramm für Verläufe über die Zeit und das Kreisdiagramm für Anteile. Zu jedem Diagramm gehören ein Titel und beschriftete Achsen.",
     "options": [
-      "Eine geordnete Liste, in der alle Einzelwerte mit genauen Zahlen stehen",
       "Eine grafische Darstellung von Daten, die Zahlen vergleichbar macht",
+      "Eine geordnete Liste, in der alle Einzelwerte mit genauen Zahlen stehen",
       "Eine Rechenregel, mit der man aus Daten den Durchschnitt bestimmt",
       "Ein Text, der die Ergebnisse einer Umfrage in Sätzen beschreibt"
     ],
@@ -216,35 +216,35 @@
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Im Kreisdiagramm entspricht der volle Kreis der Gesamtmenge, also 100 % oder 360 Grad. Ein Sektor ist so groß wie sein Anteil: 50 % sind ein Halbkreis (180 Grad), 25 % ein Viertelkreis (90 Grad). Nachteil: Viele kleine Anteile sind schwer zu unterscheiden.",
     "options": [
       "Ein Diagramm mit senkrechten Säulen, deren Höhe die Häufigkeit der Werte zeigt",
-      "Ein Diagramm, in dem ein ganzer Kreis die Anteile an der Gesamtmenge zeigt",
       "Ein Diagramm, in dem die Werte über die Zeit als Linie dargestellt werden",
+      "Ein Diagramm, in dem ein ganzer Kreis die Anteile an der Gesamtmenge zeigt",
       "Ein Diagramm, in dem alle Einzelwerte als eigene Punkte eingetragen sind"
     ],
     "question": "Was ist ein Kreisdiagramm?",
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Im Liniendiagramm steht auf der x-Achse meist die Zeit und auf der y-Achse der Messwert. Eine steigende Linie bedeutet Zunahme, eine fallende Abnahme. Mehrere Linien in einem Diagramm erlauben den Vergleich mehrerer Messreihen.",
     "options": [
       "Ein Diagramm, in dem Kategorien als unterschiedlich hohe Säulen erscheinen",
-      "Ein Diagramm, in dem verbundene Datenpunkte einen Verlauf über die Zeit zeigen",
       "Ein Diagramm, in dem ein Kreis die Anteile an einer Gesamtmenge darstellt",
-      "Ein Diagramm, in dem jeder Wert durch ein eigenes Bildsymbol dargestellt wird"
+      "Ein Diagramm, in dem jeder Wert durch ein eigenes Bildsymbol dargestellt wird",
+      "Ein Diagramm, in dem verbundene Datenpunkte einen Verlauf über die Zeit zeigen"
     ],
     "question": "Was ist ein Liniendiagramm?",
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "In einer Häufigkeitstabelle stehen links die möglichen Werte und rechts, wie oft sie vorkommen. Diese Anzahl heißt absolute Häufigkeit. Teilt man sie durch die Gesamtzahl der Daten, erhält man die relative Häufigkeit, die stets zwischen 0 und 1 liegt.",
     "options": [
-      "Eine Liste, in der die Werte in der Reihenfolge der Erhebung stehen",
       "Eine Tabelle, die zu jedem Wert angibt, wie oft er darin vorkommt",
+      "Eine Liste, in der die Werte in der Reihenfolge der Erhebung stehen",
       "Eine Tabelle, in der die Werte der Größe nach von klein nach groß stehen",
       "Eine Tabelle, in der zu jedem Wert der Mittelwert aller Daten steht"
     ],
@@ -264,35 +264,35 @@
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Für den Median muss man zuerst sortieren, sonst ist das Ergebnis falsch. Beispiel: 1, 3, 5, 7, 9 hat 5 Werte, der 3. Wert ist der Median, also 5. Bei gerader Anzahl nimmt man den Mittelwert der beiden mittleren Werte. Der Median reagiert kaum auf Ausreißer.",
     "options": [
       "Die Summe aller Werte, geteilt durch die Anzahl der Werte",
-      "Der mittlere Wert, wenn man alle Werte der Größe nach ordnet",
       "Der Wert, der in der Datenreihe am häufigsten vorkommt",
+      "Der mittlere Wert, wenn man alle Werte der Größe nach ordnet",
       "Der Wert, der in der unsortierten Liste an mittlerer Stelle steht"
     ],
     "question": "Was ist der Median?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Der Modus (Modalwert) ist der häufigste Wert. Beispiel: In 2, 3, 3, 4, 5, 3, 7 kommt die 3 dreimal vor, also ist 3 der Modus. Eine Datenmenge kann auch mehrere Modi oder gar keinen haben. Der Modus lässt sich als einzige dieser Kennzahlen auch für Farben oder Namen bestimmen.",
     "options": [
       "Der mittlere Wert einer der Größe nach sortierten Datenreihe",
-      "Der Wert, der in einer Datenmenge am häufigsten vorkommt",
       "Die Summe aller Werte, geteilt durch die Anzahl der Werte",
-      "Der größte Wert, der in der Datenmenge überhaupt auftritt"
+      "Der größte Wert, der in der Datenmenge überhaupt auftritt",
+      "Der Wert, der in einer Datenmenge am häufigsten vorkommt"
     ],
     "question": "Was ist der Modus (Modalwert)?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Spannweite = Maximum − Minimum. Beispiel: Bei 2, 5, 8, 12 sind es 12 − 2 = 10. Die Spannweite ist ein Streumaß: Sie beschreibt, wie weit die Werte auseinanderliegen, und nicht, wo die Mitte der Daten liegt. Dafür sind Mittelwert, Median und Modus zuständig.",
     "options": [
-      "Der Wert, der genau in der Mitte der sortierten Datenreihe liegt",
       "Der Unterschied zwischen dem größten und dem kleinsten Wert",
+      "Der Wert, der genau in der Mitte der sortierten Datenreihe liegt",
       "Die Summe aller Werte, geteilt durch die Anzahl der Werte",
       "Die Anzahl der verschiedenen Werte, die in den Daten vorkommen"
     ],
@@ -312,35 +312,35 @@
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Bei einer Strichliste macht man für jeden gezählten Wert einen Strich und fasst je fünf Striche zu einem Bündel zusammen (der fünfte Strich wird quer gezogen). So kann man am Ende in Fünferschritten zählen: Bündel mal 5 plus die restlichen Striche.",
     "options": [
       "Eine Tabelle, in der die Werte der Größe nach geordnet aufgelistet sind",
-      "Eine Zählhilfe, bei der je fünf Striche zu einem Bündel zusammengefasst werden",
       "Ein Diagramm, in dem die Werte als unterschiedlich hohe Säulen erscheinen",
+      "Eine Zählhilfe, bei der je fünf Striche zu einem Bündel zusammengefasst werden",
       "Eine Rechenregel, mit der man aus mehreren Werten den Durchschnitt bildet"
     ],
     "question": "Was ist eine Strichliste?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Daten erheben heißt, sie planmäßig zu beschaffen: durch Umfrage, Beobachtung, Zählung, Messung oder Experiment. Befragt man alle, ist es eine Vollerhebung, befragt man nur einen Teil, eine Stichprobe. Fragen müssen klar und nicht suggestiv formuliert sein.",
     "options": [
       "Gesammelte Daten in einem Diagramm zeichnen und beschriften",
-      "Daten planmäßig sammeln, etwa durch Umfrage, Beobachtung oder Messung",
       "Aus gesammelten Daten den Mittelwert und die Spannweite berechnen",
-      "Gesammelte Daten der Größe nach ordnen und in Gruppen einteilen"
+      "Gesammelte Daten der Größe nach ordnen und in Gruppen einteilen",
+      "Daten planmäßig sammeln, etwa durch Umfrage, Beobachtung oder Messung"
     ],
     "question": "Was bedeutet es, Daten zu erheben?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Summe der Werte: 155 + 162 + 148 + 155 + 170 = 790. Geteilt durch die Anzahl der Werte: 790 ÷ 5 = 158 cm. Der Wert 155 cm ist dagegen der Modus (der häufigste Wert) und zugleich der Median (der mittlere Wert), aber nicht der Mittelwert. Die 159 cm entstehen, wenn man nur die Mitte zwischen kleinstem und größtem Wert nimmt: (148 + 170) ÷ 2 = 159. Die 170 cm sind der größte Einzelwert.",
     "options": [
-      "155 cm",
       "158 cm",
+      "155 cm",
       "159 cm",
       "170 cm"
     ],
@@ -348,11 +348,11 @@
     "topic": "Berechnung"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Zuerst sortieren: 1, 3, 5, 8, 9. Bei 5 Werten ist der 3. Wert der Median, also 5. Ohne Sortieren käme man auf die 1, die nur zufällig in der Mitte der Aufzählung steht. Der Mittelwert ist 3 + 9 + 1 + 8 + 5 = 26, geteilt durch 5 also 5,2 — er ist hier nicht gleich dem Median. Die 9 ist der größte Wert.",
     "options": [
-      "5",
       "1",
+      "5",
       "5,2",
       "9"
     ],
@@ -360,35 +360,35 @@
     "topic": "Berechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Relative Häufigkeit = Anzahl ÷ Gesamtzahl = 10 ÷ 25 = 0,4. Sie liegt immer zwischen 0 und 1 (hier 40%). Die absolute Häufigkeit ist dagegen 10. Wer 25 ÷ 10 rechnet, erhält 2,5 – ein Wert über 1 kann keine relative Häufigkeit sein.",
     "options": [
       "0,25",
-      "0,4",
       "0,6",
+      "0,4",
       "2,5"
     ],
     "question": "In einer Klasse mit 25 Schülern haben 10 einen Hund. Wie groß ist die relative Häufigkeit?",
     "topic": "Berechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ein Ausreißer weicht stark von den übrigen Werten ab. Beispiel: 1900, 2000, 2100, 2200, 50000 – der Mittelwert wird durch den Wert 50000 nach oben verzerrt, der Median bleibt bei 2100. Deshalb ist der Median gegen Ausreißer unempfindlich.",
     "options": [
       "Der Wert, der in einer Datenreihe am häufigsten vorkommt",
-      "Ein Wert, der deutlich von allen übrigen Werten abweicht",
       "Der Wert, der in der geordneten Datenreihe genau in der Mitte liegt",
-      "Der Abstand zwischen dem größten und dem kleinsten Wert"
+      "Der Abstand zwischen dem größten und dem kleinsten Wert",
+      "Ein Wert, der deutlich von allen übrigen Werten abweicht"
     ],
     "question": "Was ist ein Ausreißer in der Statistik?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Die Skala teilt eine Achse in gleich große Abstände ein und beschriftet sie, zum Beispiel 0, 10, 20, 30. Nur bei gleichmäßiger Einteilung sind die Werte richtig ablesbar; ungleiche Abstände verzerren das Bild.",
     "options": [
-      "Die Überschrift, die das Thema des Diagramms nennt",
       "Die Einteilung der Achse in gleich große Abstände",
+      "Die Überschrift, die das Thema des Diagramms nennt",
       "Die Erklärung, wofür die Farben der Datenreihen stehen",
       "Die Angabe, aus welcher Quelle die Daten stammen"
     ],
@@ -408,36 +408,36 @@
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Die Lieblingsfächer sind Kategorien ohne zeitlichen Verlauf. Das Säulendiagramm stellt für jedes Fach eine Säule dar, deren Höhe die Anzahl der Nennungen angibt, und macht die Anzahlen direkt vergleichbar.",
     "options": [
       "Ein Liniendiagramm, weil es einen zeitlichen Verlauf zeigt",
-      "Ein Säulendiagramm, weil es die Anzahl je Kategorie vergleicht",
       "Ein Histogramm, weil es viele Zahlenwerte in Klassen zusammenfasst",
+      "Ein Säulendiagramm, weil es die Anzahl je Kategorie vergleicht",
       "Ein Streudiagramm, weil es zwei Messgrößen gegenüberstellt"
     ],
     "question": "Womit vergleicht man die Anzahl der Nennungen je Lieblingsfach von 30 Schülern am besten?",
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Alle Sektoren eines Kreisdiagramms ergeben zusammen 100%. Bereits vergeben sind 20% + 35% + 15% = 70%. Für den vierten Sektor bleiben 100% − 70% = 30%.",
     "options": [
       "25%",
-      "30%",
       "35%",
-      "70%"
+      "70%",
+      "30%"
     ],
     "question": "In einem Kreisdiagramm sind drei Sektoren mit 20%, 35% und 15% beschriftet. Wie groß ist der vierte Anteil?",
     "topic": "Diagramme"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Der Modus ist der häufigste Wert. Die 1 kommt einmal vor, die 2 zweimal, die 3 dreimal, die 4 zweimal, die 5 einmal. Am häufigsten ist die 3, also ist der Modus 3.",
     "options": [
+      "3",
       "2",
       "4",
-      "3",
       "5"
     ],
     "question": "Die Noten einer Klasse: 1, 2, 2, 3, 3, 3, 4, 4, 5. Was ist der Modus?",
@@ -456,35 +456,35 @@
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Bei einer Umfrage werden Personen gezielt befragt, etwa mit Fragebogen oder Interview. Geschlossene Fragen mit festen Antwortmöglichkeiten lassen sich leichter auswerten als offene. Beobachtung, Experiment und Messung sind andere Wege der Datenerhebung.",
     "options": [
       "Eine Erhebung, bei der man Vorgänge nur beobachtet und zählt",
-      "Eine Erhebung, bei der Personen gezielt Fragen gestellt werden",
       "Ein Versuch, bei dem man die Bedingungen gezielt verändert",
+      "Eine Erhebung, bei der Personen gezielt Fragen gestellt werden",
       "Eine Erhebung, bei der man Größen mit Messgeräten erfasst"
     ],
     "question": "Was ist eine Umfrage?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Für den Median werden die Werte zuerst sortiert: 132, 138, 141, 145, 150. Bei fünf Werten steht der dritte in der Mitte, also 141 cm. Ohne Sortieren käme man fälschlich auf 138 cm; der Mittelwert wäre 706 ÷ 5 = 141,2 cm.",
     "options": [
       "138 cm",
-      "141 cm",
       "141,2 cm",
-      "145 cm"
+      "145 cm",
+      "141 cm"
     ],
     "question": "Fünf Kinder sind 132, 145, 138, 150 und 141 cm groß. Wie groß ist der Median?",
     "topic": "Berechnung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Die Grundgesamtheit umfasst alle Personen oder Objekte, über die eine Aussage gelten soll, zum Beispiel alle Schüler Deutschlands. Weil eine vollständige Befragung meist zu aufwendig ist, untersucht man eine Stichprobe daraus.",
     "options": [
-      "Ein einzelner Wert, der deutlich von allen übrigen abweicht",
       "Die Menge aller Personen, über die eine Aussage gelten soll",
+      "Ein einzelner Wert, der deutlich von allen übrigen abweicht",
       "Der Durchschnitt aller in der Erhebung erfassten Werte",
       "Die Anzahl, wie oft ein bestimmter Wert vorkommt"
     ],
@@ -504,35 +504,35 @@
     "topic": "Berechnung"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Aus dem Mittelwert folgt die Summe: 4 · 10 = 40 Jahre insgesamt. Die drei bekannten Kinder ergeben 8 + 9 + 11 = 28 Jahre. Für das vierte Kind bleiben 40 − 28 = 12 Jahre.",
     "options": [
       "10 Jahre",
-      "12 Jahre",
       "13 Jahre",
+      "12 Jahre",
       "14 Jahre"
     ],
     "question": "Vier Kinder sind im Mittel 10 Jahre alt. Drei von ihnen sind 8, 9 und 11 Jahre alt. Wie alt ist das vierte Kind?",
     "topic": "Berechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Rohdaten (Urliste) sind die unbearbeiteten Werte direkt nach der Erhebung. Erst danach folgen die Schritte sortieren, Häufigkeitstabelle aufstellen, Kennwerte berechnen und Diagramm zeichnen.",
     "options": [
       "Werte, die schon zu einem Mittelwert zusammengefasst sind",
-      "Werte in ihrer ursprünglichen Form direkt nach der Erhebung",
       "Werte, die bereits in einem Diagramm dargestellt worden sind",
-      "Werte, die nach der Größe geordnet in einer Tabelle stehen"
+      "Werte, die nach der Größe geordnet in einer Tabelle stehen",
+      "Werte in ihrer ursprünglichen Form direkt nach der Erhebung"
     ],
     "question": "Was sind Rohdaten?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Mittelwert = Summe ÷ Anzahl. Summe: 18 + 20 + 22 + 19 + 21 + 23 + 17 = 140. Geteilt durch 7 Werte ergibt das 20 °C.",
     "options": [
-      "19 °C",
       "20 °C",
+      "19 °C",
       "21 °C",
       "22 °C"
     ],
@@ -552,35 +552,35 @@
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Beginnt die Werteachse nicht bei null oder sind die Abstände ungleich, wirken kleine Unterschiede riesig. Deshalb gilt beim Lesen: Startet die Achse bei null? Ist die Skala gleichmäßig eingeteilt?",
     "options": [
       "Ein Diagramm, dessen Achsen vollständig beschriftet sind",
-      "Ein Diagramm, dessen Achse erst oberhalb von null beginnt",
       "Ein Diagramm, das mehrere Datenreihen mit einer Legende erklärt",
+      "Ein Diagramm, dessen Achse erst oberhalb von null beginnt",
       "Ein Diagramm, dessen Skala in gleich große Abstände eingeteilt ist"
     ],
     "question": "Was ist eine irreführende Darstellung in einem Diagramm?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die Klasse hat 12 + 18 = 30 Kinder. Anteil der Jungen: 12 ÷ 30 = 0,4 = 40%. Probe: Der Mädchenanteil ist 18 ÷ 30 = 0,6 = 60%, zusammen 100%.",
     "options": [
       "12%",
-      "40%",
       "60%",
-      "18%"
+      "18%",
+      "40%"
     ],
     "question": "In einer Klasse sind 12 Jungen und 18 Mädchen. Wie groß ist der Anteil der Jungen in Prozent?",
     "topic": "Berechnung"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Bei sehr vielen verschiedenen Werten, etwa den Körpergrößen von 200 Schülern, fasst man Bereiche wie 120–129 cm oder 130–139 cm zu Klassen zusammen. Die Darstellung wird dadurch übersichtlicher, einzelne Werte sind aber nicht mehr ablesbar.",
     "options": [
-      "Die Aufteilung der befragten Schüler in mehrere Lerngruppen",
       "Die Zusammenfassung vieler einzelner Werte zu größeren Gruppen",
+      "Die Aufteilung der befragten Schüler in mehrere Lerngruppen",
       "Der Durchschnitt aller Werte einer sehr großen Datenmenge",
       "Der mittlere Wert einer der Größe nach geordneten Datenreihe"
     ],
@@ -600,35 +600,35 @@
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Spannweite = größter Wert − kleinster Wert = 10 − 4 = 6. Sie ist ein Streumaß und zeigt, wie weit die Werte auseinanderliegen. Mittelwert und Median betragen hier jeweils 7 und sind Lagemaße, keine Spannweite.",
     "options": [
       "4",
-      "6",
       "7",
+      "6",
       "10"
     ],
     "question": "5 Schüler haben folgende Punktzahlen: 8, 6, 10, 4, 7. Was ist die Spannweite?",
     "topic": "Berechnung"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Die Legende ordnet Farben, Symbole oder Muster den Datenreihen zu. Sie wird gebraucht, sobald mehrere Datenreihen in einem Diagramm stehen, etwa die Temperaturen mehrerer Städte.",
     "options": [
       "Die Überschrift, die das Thema des Diagramms angibt",
-      "Die Erklärung, wofür die Farben und Symbole stehen",
       "Die Einteilung der Achse in gleich große Abstände",
-      "Die Angabe, aus welcher Quelle die Daten stammen"
+      "Die Angabe, aus welcher Quelle die Daten stammen",
+      "Die Erklärung, wofür die Farben und Symbole stehen"
     ],
     "question": "Was zeigt die Legende in einem Diagramm?",
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Einzelne sehr hohe Werte gehen in die Summe ein und heben den Mittelwert, während der Median als mittlerer Wert der geordneten Reihe kaum reagiert. Typisch ist das bei Gehältern: Wenige Spitzengehälter ziehen den Mittelwert über den Median.",
     "options": [
-      "Die Werte sind völlig gleichmäßig um die Mitte verteilt",
       "Einzelne hohe Werte ziehen den Mittelwert nach oben",
+      "Die Werte sind völlig gleichmäßig um die Mitte verteilt",
       "Bei der Berechnung des Mittelwerts ist ein Fehler passiert",
       "Die Datenreihe wurde vor der Berechnung nicht sortiert"
     ],
@@ -648,35 +648,35 @@
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Altersgruppen sind Kategorien, kein zeitlicher Verlauf. Das Säulendiagramm stellt für jede Altersgruppe eine Säule dar, deren Höhe die Einwohnerzahl angibt. Im Kreisdiagramm ließen sich nur Anteile, nicht aber die Anzahlen genau ablesen.",
     "options": [
       "Ein Liniendiagramm, weil es einen zeitlichen Verlauf zeigt",
-      "Ein Säulendiagramm, weil es die Anzahl je Gruppe darstellt",
       "Ein Kreisdiagramm, weil es einzelne Anzahlen genau ablesbar macht",
+      "Ein Säulendiagramm, weil es die Anzahl je Gruppe darstellt",
       "Ein Streudiagramm, weil es zwei Messgrößen gegenüberstellt"
     ],
     "question": "Womit vergleicht man die Einwohnerzahlen verschiedener Altersgruppen am besten?",
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Bei einer positiven Korrelation steigen beide Merkmale gemeinsam, bei einer negativen steigt eines, während das andere sinkt. Wichtig: Eine Korrelation beweist keine Ursache, denn es kann auch ein dritter Einflussfaktor dahinterstecken.",
     "options": [
       "Eine besondere Form der grafischen Darstellung von Daten",
-      "Ein Zusammenhang zwischen zwei Merkmalen einer Erhebung",
       "Ein Durchschnittswert, der aus zwei Datenreihen gebildet wird",
-      "Die Anzahl der Personen, die zu einer Stichprobe gehören"
+      "Die Anzahl der Personen, die zu einer Stichprobe gehören",
+      "Ein Zusammenhang zwischen zwei Merkmalen einer Erhebung"
     ],
     "question": "Was ist eine Korrelation in der Statistik?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Ein Balkendiagramm vergleicht Werte durch unterschiedlich lange, waagerechte Balken. Es eignet sich besonders für Rangfolgen und lange Kategorienamen. Das Säulendiagramm zeigt dasselbe mit senkrechten Säulen.",
     "options": [
-      "Ein Diagramm, das Anteile als Sektoren eines Kreises darstellt",
       "Ein Diagramm, das Werte durch unterschiedlich lange Balken zeigt",
+      "Ein Diagramm, das Anteile als Sektoren eines Kreises darstellt",
       "Ein Diagramm, das Messwerte durch verbundene Punkte darstellt",
       "Ein Diagramm, das einzelne Datenpunkte ohne Verbindung zeigt"
     ],
@@ -696,35 +696,35 @@
     "topic": "Mittelwerte"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Summe: 12 + 15 + 9 + 16 = 52. Geteilt durch die Anzahl 4 ergibt das 52 ÷ 4 = 13. Der Median (mittlerer Wert der geordneten Reihe 9, 12, 15, 16) wäre 13,5 – hier ist aber der Mittelwert gefragt.",
     "options": [
       "12",
-      "13",
       "13,5",
+      "13",
       "15"
     ],
     "question": "Berechne den Mittelwert von 12, 15, 9 und 16.",
     "topic": "Mittelwerte"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Der Modus ist der Wert mit der größten Häufigkeit. Er muss dafür nicht sortiert werden, und eine Datenreihe kann auch mehrere Modi haben. Summe geteilt durch Anzahl ergibt den Mittelwert, der mittlere Wert der geordneten Reihe den Median.",
     "options": [
       "Die Summe aller Werte geteilt durch die Anzahl der Werte",
-      "Der Wert, der in einer Datenreihe am häufigsten vorkommt",
       "Der Wert, der in der geordneten Datenreihe in der Mitte liegt",
-      "Der Abstand zwischen dem größten und dem kleinsten Wert"
+      "Der Abstand zwischen dem größten und dem kleinsten Wert",
+      "Der Wert, der in einer Datenreihe am häufigsten vorkommt"
     ],
     "question": "Was ist der Modus?",
     "topic": "Mittelwerte"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Der Median ist der mittlere Wert der sortierten Reihe. Sortiert: 2, 3, 6, 9, 14. Bei 5 Werten zählt der dritte Wert, also 6. Die 9 steht nur unsortiert in der Mitte, der Mittelwert wäre 34 : 5 = 6,8 und aus kleinstem und größtem Wert ergäbe sich (2 + 14) : 2 = 8.",
     "options": [
-      "9",
       "6",
+      "9",
       "6,8",
       "8"
     ],
@@ -744,35 +744,35 @@
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Relative Häufigkeit = absolute Häufigkeit : Gesamtzahl. Sie liegt immer zwischen 0 und 1 und lässt sich auch als Prozentsatz schreiben.",
     "options": [
       "Die Anzahl, wie oft der Wert in der Datenreihe vorkommt",
-      "Den Anteil des Wertes an der Gesamtzahl aller Daten",
       "Den Wert, der in der Datenreihe am häufigsten vorkommt",
+      "Den Anteil des Wertes an der Gesamtzahl aller Daten",
       "Den Durchschnitt aller Werte der gesamten Datenreihe"
     ],
     "question": "Was gibt die relative Häufigkeit eines Wertes an?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "10 : 25 = 0,4; das entspricht 40 %. Die 10 allein ist die absolute Häufigkeit, 0,6 wäre der Anteil derer, die nicht Sport angeben.",
     "options": [
       "0,6",
-      "0,4",
       "2,5",
-      "10"
+      "10",
+      "0,4"
     ],
     "question": "In einer Klasse mit 25 Kindern nennen 10 Sport als Lieblingsfach. Wie groß ist die relative Häufigkeit dafür?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Die Urliste enthält alle Daten genau in der Reihenfolge, in der sie erhoben wurden – noch unsortiert und nicht zusammengefasst.",
     "options": [
-      "Die nach der Größe sortierte Liste aller erhobenen Werte",
       "Die ungeordnete Liste aller Daten, so wie sie erhoben wurden",
+      "Die nach der Größe sortierte Liste aller erhobenen Werte",
       "Die Tabelle, in der die Häufigkeiten der Werte stehen",
       "Die grafische Darstellung der Daten als Balkendiagramm"
     ],
@@ -792,49 +792,49 @@
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Die Wahrscheinlichkeit ist eine Zahl zwischen 0 und 1: 0 bedeutet unmöglich, 1 bedeutet sicher.",
     "options": [
       "Wie oft das Ereignis in der Vergangenheit eingetreten ist",
-      "Wie sicher das Ereignis eintritt, als Zahl zwischen 0 und 1",
       "Dass das Ereignis bei jedem Versuch mit Sicherheit eintritt",
+      "Wie sicher das Ereignis eintritt, als Zahl zwischen 0 und 1",
       "Dass der Ausgang des Versuchs nicht berechenbar bleibt"
     ],
     "question": "Was gibt die Wahrscheinlichkeit eines Ereignisses an?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Eine faire Münze hat zwei gleich wahrscheinliche Ergebnisse, also P(Kopf) = 1/2 = 50 %.",
     "options": [
       "1/4",
-      "1/2",
       "1/3",
-      "1"
+      "1",
+      "1/2"
     ],
     "question": "Wie groß ist beim Wurf einer fairen Münze die Wahrscheinlichkeit für 'Kopf'?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Ein üblicher Spielwürfel hat 6 Flächen mit den Augenzahlen 1 bis 6, die alle gleich wahrscheinlich sind.",
     "options": [
+      "6",
       "4",
       "5",
-      "6",
       "8"
     ],
     "question": "Wie viele gleich wahrscheinliche Ergebnisse hat ein fairer Spielwürfel?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 3,
+    "correct": 1,
     "explanation": "Eine von sechs gleich wahrscheinlichen Augenzahlen: P(6) = 1/6 ≈ 16,7 %.",
     "options": [
       "1/3",
+      "1/6",
       "1/4",
-      "1/5",
-      "1/6"
+      "1/5"
     ],
     "question": "Wie groß ist beim Wurf eines fairen Würfels die Wahrscheinlichkeit für eine 6?",
     "topic": "Wahrscheinlichkeit"
@@ -852,23 +852,23 @@
     "topic": "Kreisdiagramm"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ausreißer sind einzelne Werte, die deutlich außerhalb der übrigen Daten liegen. Sie verändern den Mittelwert stark, den Median dagegen kaum.",
     "options": [
       "Werte, die in der Datenreihe besonders oft vorkommen",
-      "Werte, die weit von allen übrigen Daten entfernt liegen",
       "Werte, die genau in der Mitte der sortierten Reihe stehen",
-      "Werte, die genau dem Durchschnitt der Datenreihe entsprechen"
+      "Werte, die genau dem Durchschnitt der Datenreihe entsprechen",
+      "Werte, die weit von allen übrigen Daten entfernt liegen"
     ],
     "question": "Was sind Ausreißer in einer Datenreihe?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Summe: 4 + 9 + 6 + 12 + 4 = 35, geteilt durch 5 Werte ergibt 7. Der Median (mittlerer Wert der sortierten Reihe 4, 4, 6, 9, 12) wäre 6, der häufigste Wert 4, und aus kleinstem und größtem Wert ergäbe sich (4 + 12) : 2 = 8.",
     "options": [
-      "6",
       "7",
+      "6",
       "8",
       "4"
     ],
@@ -888,47 +888,47 @@
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Ein Säulendiagramm stellt Werte als senkrechte Säulen dar; über die Höhe lassen sich die Größen gut vergleichen.",
     "options": [
       "Den stetigen Verlauf eines Messwerts über die Zeit hinweg",
-      "Den Vergleich von Größen anhand senkrechter Säulen",
       "Die Anteile einzelner Kategorien am Gesamtwert",
+      "Den Vergleich von Größen anhand senkrechter Säulen",
       "Die Streuung einzelner Datenpunkte um den Mittelwert"
     ],
     "question": "Wofür wird ein Säulendiagramm vor allem verwendet?",
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ein Zufallsexperiment hat mehrere mögliche Ergebnisse, und vorher steht nicht fest, welches eintritt – etwa Münzwurf oder Würfeln.",
     "options": [
       "Ein Versuch, dessen Ergebnis von vornherein genau feststeht",
-      "Ein Versuch mit mehreren nicht vorhersagbaren Ergebnissen",
       "Eine Rechnung, mit der man Wahrscheinlichkeiten bestimmt",
-      "Ein Ereignis, das bei jeder Durchführung sicher eintritt"
+      "Ein Ereignis, das bei jeder Durchführung sicher eintritt",
+      "Ein Versuch mit mehreren nicht vorhersagbaren Ergebnissen"
     ],
     "question": "Was ist ein Zufallsexperiment?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Ein sicheres Ereignis tritt bei jeder Durchführung ein, seine Wahrscheinlichkeit ist P = 1.",
     "options": [
+      "P = 1",
       "P = 0",
       "P = 0,5",
-      "P = 1",
       "P = 0,9"
     ],
     "question": "Welche Wahrscheinlichkeit hat ein sicheres Ereignis?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 0,
+    "correct": 1,
     "explanation": "Ein unmögliches Ereignis kann nie eintreten, seine Wahrscheinlichkeit ist P = 0.",
     "options": [
-      "P = 0",
       "P = 0,5",
+      "P = 0",
       "P = 1",
       "P = 0,1"
     ],
@@ -936,35 +936,35 @@
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 3,
+    "correct": 2,
     "explanation": "Wappen und Zahl sind zusammen alle möglichen Ergebnisse: 1/2 + 1/2 = 1. Das Ereignis ist also sicher.",
     "options": [
       "1/2",
       "1/4",
-      "0",
-      "1"
+      "1",
+      "0"
     ],
     "question": "Eine faire Münze wird einmal geworfen. Wie groß ist P(Wappen oder Zahl)?",
     "topic": "Wahrscheinlichkeit"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Datenschutz meint das Recht jedes Menschen, dass seine persönlichen Daten nicht ohne Erlaubnis weitergegeben oder ausgewertet werden.",
     "options": [
       "Die technische Sicherung von Dateien gegen Datenverlust",
-      "Das Recht auf Schutz persönlicher Daten vor fremder Nutzung",
       "Ein statistisches Verfahren zur Auswertung erhobener Daten",
-      "Ein Verfahren zum Speichern besonders großer Datenmengen"
+      "Ein Verfahren zum Speichern besonders großer Datenmengen",
+      "Das Recht auf Schutz persönlicher Daten vor fremder Nutzung"
     ],
     "question": "Was versteht man unter Datenschutz?",
     "topic": "Allgemein"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Bei einer Erhebung werden Daten planmäßig gesammelt, zum Beispiel durch Befragen, Zählen oder Messen.",
     "options": [
-      "Das Darstellen bereits gesammelter Daten in einem Diagramm",
       "Das planmäßige Sammeln von Daten durch Zählen oder Befragen",
+      "Das Darstellen bereits gesammelter Daten in einem Diagramm",
       "Das Auswerten vorhandener Daten mit Mittelwert und Median",
       "Das Berechnen von Wahrscheinlichkeiten aus vorhandenen Daten"
     ],
@@ -984,36 +984,36 @@
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 2,
     "explanation": "Die Grundgesamtheit umfasst alle Elemente, über die eine Untersuchung eine Aussage machen soll; die Stichprobe ist nur ein Teil davon.",
     "options": [
       "Ein zufällig ausgewählter Teil der untersuchten Elemente",
-      "Alle Elemente, über die man eine Aussage machen möchte",
       "Der Durchschnitt aller in der Untersuchung gemessenen Werte",
+      "Alle Elemente, über die man eine Aussage machen möchte",
       "Die Anzahl, wie oft ein Wert in der Untersuchung vorkommt"
     ],
     "question": "Was ist die Grundgesamtheit?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Ein Histogramm fasst die Daten in Größenklassen zusammen; die Balken stehen ohne Lücken nebeneinander.",
     "options": [
       "Den direkten Vergleich einzelner benannter Kategorien",
-      "Die Häufigkeitsverteilung von Daten in Größenklassen",
       "Den Verlauf eines einzelnen Messwerts über längere Zeit",
-      "Die Anteile der Kategorien am Gesamtwert der Daten"
+      "Die Anteile der Kategorien am Gesamtwert der Daten",
+      "Die Häufigkeitsverteilung von Daten in Größenklassen"
     ],
     "question": "Was zeigt ein Histogramm?",
     "topic": "Diagramme"
   },
   {
-    "correct": 2,
+    "correct": 0,
     "explanation": "Gerade Augenzahlen sind 2, 4 und 6, also P = 3/6 = 1/2. Erwartete Anzahl: 600 · 1/2 = 300.",
     "options": [
+      "300",
       "100",
       "200",
-      "300",
       "400"
     ],
     "question": "Ein fairer Würfel wird 600-mal geworfen. Wie viele gerade Augenzahlen erwartet man im Mittel?",
@@ -1044,23 +1044,23 @@
     "topic": "Diagramme"
   },
   {
-    "correct": 1,
+    "correct": 3,
     "explanation": "Das Merkmal ist die untersuchte Eigenschaft, zum Beispiel die Haarfarbe. Eine Merkmalsausprägung ist ein konkreter Wert davon, zum Beispiel braun.",
     "options": [
       "Das Merkmal ist der Einzelwert, die Ausprägung die Eigenschaft",
-      "Das Merkmal ist die Eigenschaft, die Ausprägung der Einzelwert",
       "Das Merkmal nennt die Anzahl, die Ausprägung den Anteil daran",
-      "Das Merkmal gilt für die Stichprobe, die Ausprägung fürs Ganze"
+      "Das Merkmal gilt für die Stichprobe, die Ausprägung fürs Ganze",
+      "Das Merkmal ist die Eigenschaft, die Ausprägung der Einzelwert"
     ],
     "question": "Wie unterscheiden sich Merkmal und Merkmalsausprägung?",
     "topic": "Statistik"
   },
   {
-    "correct": 1,
+    "correct": 0,
     "explanation": "Das arithmetische Mittel ist der Durchschnitt: Summe aller Werte geteilt durch ihre Anzahl.",
     "options": [
-      "Der Wert, der in der Datenreihe am häufigsten vorkommt",
       "Die Summe aller Werte geteilt durch ihre Anzahl",
+      "Der Wert, der in der Datenreihe am häufigsten vorkommt",
       "Der mittlere Wert der nach Größe geordneten Datenreihe",
       "Die Differenz aus dem größten und dem kleinsten Wert"
     ],
