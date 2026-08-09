@@ -37,6 +37,9 @@ if (!fs.existsSync(WORK)) { console.log('Kein _work/ in ' + BASE + '.'); process
 // Verdaechtige Umschreibungen. Kurze Woerter wie "aus", "neue", "Sue" treffen
 // die Muster nicht, weil ein Umlaut dort nie gemeint ist.
 const UMSCHRIFT = /\b(ae|oe|ue)(?=[a-zäöüß]{2})|(?:strasse|gross|weiss|heiss|muessen|koennen|haette|waere|fuer|ueber|moeglich|naechst|spaeter|zaehl|waehl|hoeh|schoen|groess|maessig)/i;
+// Eigennamen, die den Mustern zufaellig aehneln: japanische Namen mit "Ue-"
+// (Uematsu, Ueda) und kanonische Serien-Schreibweisen (Weisslogia).
+const UMSCHRIFT_AUSNAHME = /Uematsu|Ueda|Ueno|Weisslogia/;
 
 let teile = 0, befunde = 0;
 const melde = (teil, text) => { befunde++; console.log(`  ${teil}: ${text}`); };
@@ -81,7 +84,8 @@ for (const p of fs.readdirSync(WORK).filter(f => f.endsWith('.json')).sort()) {
     if (doppelt.length)                             melde(wo, 'doppelte Option: ' + doppelt[0]);
     if (!String(q.explanation || '').trim())        melde(wo, 'Erklaerung fehlt');
     [...opts, q.question, q.explanation || ''].forEach(t => {
-      if (UMSCHRIFT.test(String(t))) melde(wo, 'Umlaut-Umschreibung: ' + String(t).slice(0, 70));
+      if (UMSCHRIFT.test(String(t)) && !UMSCHRIFT_AUSNAHME.test(String(t)))
+        melde(wo, 'Umlaut-Umschreibung: ' + String(t).slice(0, 70));
     });
   });
 }

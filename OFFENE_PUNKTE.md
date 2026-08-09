@@ -2235,3 +2235,81 @@ Bestand geschrieben.**
 Bei "Schurkenliga" gegen "Liga der Schurken" waren BEIDE Varianten deutsch,
 die Nutzer-Vorgabe entschied also nicht. Gewaehlt wurde die im Bestand
 haeufigere Form (Liga der Schurken). Umkehrbar mit einem Einzeiler.
+ 
+---
+
+# Nachtrag: anime_schwer komplett (Laenge + Inhalt in einem Durchlauf)
+
+280 Fragen, acht Teile, erstmals kombinierter Auftrag - die Datei war noch
+voellig unbearbeitet, so musste jede Frage nur einmal gelesen werden.
+
+  vorher   53/16/14/17   45 %
+  jetzt    24/23/26/26   25 %
+
+Auch die zwei strukturellen Sonderfaelle sind zu: Teil 08 hatte Rang 4 mit
+0 % (die richtige Antwort war NIE die kuerzeste), Teil 07 hatte Rang 1+2 bei
+81 %. 69 ersetzte Fragen aufgehoben (Bestand 537). Katalog-Befunde 105 -> 78.
+Damit sind alle drei Anime-Kataloge fertig: Laenge, Inhalt, deutsche Fassung.
+
+## 114. Neun falsch markierte Antworten in einer Datei
+
+- One-Piece-Baende: DREI von vier Optionen waren wahr (ueber 90 / ueber 100 /
+  ueber 107) - markiert war nur die letzte.
+- Oscar 2013: markiert war BRAVE, ein Pixar-Film - in einer Frage nach dem
+  besten ANIME-Film. Die Erklaerung widersprach sich selbst.
+- Naruto Band 1: markiert 1999, richtig 2000 - die richtige Zahl stand daneben.
+- AoT Kapitel 139: markiert war ein ERFUNDENER Titel, der echte Kapiteltitel
+  stand als Distraktor daneben und wurde als falsch gewertet.
+- Erster Kenpachi: "Yachiru Unohana" (markiert) und "Retsu Unohana"
+  (Distraktor) sind DIESELBE PERSON.
+- Freezers maechtigste Form: markiert "Full Power" - stimmt nicht, und
+  "100% True Form" benannte als zweite Option dasselbe.
+- Jujutsu Kaisen: markiert 2017, die Hauptserie startete 2018 (die eigene
+  Erklaerung sagte es).
+- Hunter x Hunter: markiert 1997, richtig 1998 (ebenso).
+- Kotoamatsukami: als Itachis Technik markiert, sie gehoert Shisui - die
+  Erklaerung nannte Shisui selbst.
+
+## 115. Ein Artefakt der maschinellen Erzeugung, woertlich im Spiel
+
+Ein Fragetext lautete: "Wie heisst Roy Mustangs Zanpakuto... aeh
+Alchemie-Technik?" Das erzeugende Modell hat sich mitten im Satz selbst
+korrigiert, und der Halbsatz stand seitdem unbemerkt im Katalog. Dazu passt:
+ein "Nen-Schild" (Hunter x Hunter) als Distraktor in einer EVANGELION-Frage,
+der erfundene Boxer "Yuri Hanma", "Zell" statt Cell, "Flüsterstein" statt
+Stein der Weisen, und eine Frage, die ihre Antwort woertlich enthielt ("Was
+ist der buergerliche Name von Jaw Titan Porco Galliard?" - Option: "Porco
+Galliard").
+
+## 116. Agenten, die richtig mit Unsicherheit umgingen
+
+- Zwei Fragen nach exakten Episodennummern wurden ERSETZT statt geraten -
+  die Nummern liessen sich nicht verifizieren.
+- Welches Werk Kentaro Miuras zuerst erschien, war nicht sicher belegbar -
+  Frage ausgetauscht, Fakt als ungeklaert gemeldet.
+- Beim Turnier der Kraft, bei Uraharas Keller (Senkaimon/Garganta) und bei
+  der Reiss/Fritz-Frage haben Agenten naheliegende Distraktoren bewusst
+  NICHT verwendet, weil sie zugetroffen haetten.
+- Ein Agent hat vor der Arbeit meine Messung nachgerechnet und exakt
+  bestaetigt.
+
+## 117. Offene Fassungsbegriffe (gesammelt, Entscheidung bei Gelegenheit)
+
+Von den Agenten gemeldet statt geraten: Domain Expansion
+(Domaenenerweiterung?), Makankosappo (Hoellenspirale?), Celestial Dragons
+(Weltaristokraten?), Human Instrumentality Project
+(Menschenergaenzungsprojekt?), Sage of the Six Paths (Weiser der Sechs
+Pfade), Ultra Instinct (Ultra Instinkt), Phantom Troupe (Phantombrigade?),
+Band of the Hawk, Godhand, Soul Gem, Poneglyph-Schreibung, Chimera Ants,
+Hyoton. Dazu zwei katalogweite Inkonsistenzen: "Goku" vs. "Son-Goku"
+(Synchro sagt Son-Goku, Katalog fast durchgehend Goku) und "Android 17" vs.
+"C-17".
+
+## 118. Zwei Eigennamen-Ausnahmen im Umlaut-Pruefer
+
+check_teile.js meldete "Nobuo Uematsu" und "Weisslogia" als
+Umlaut-Umschreibungen - beides Eigennamen (japanischer Komponist; der
+Fairy-Tail-Drache heisst kanonisch so). Ausnahmeliste ergaenzt. Die Pipe
+hinter check_teile hatte zudem den Fehlercode verschluckt, so dass der Merge
+trotz Befunden lief - die Befunde waren harmlos, aber kuenftig check_teile
+ohne Pipe laufen lassen, damit Exit 1 die Kette stoppt.
