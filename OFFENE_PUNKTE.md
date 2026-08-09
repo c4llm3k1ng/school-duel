@@ -2174,3 +2174,64 @@ Messung schliesst sie nach der Zaehlregel aus (Nenner 28). Meine Zahl war die
 regelkonforme; in der Sache - keine Verschiebung - waren beide einig.
 Dass der Agent die Abweichung von sich aus gemeldet hat, statt sie zu
 ueberspielen, ist genau das gewuenschte Verhalten.
+ 
+---
+
+# Nachtrag: deutsche Fassung umgesetzt
+
+Nutzer-Entscheidung zu den sechs Namensfragen aus Abschnitt 108: "Die deutsche
+Fassung passt." Umgesetzt ueber alle drei Anime-Kataloge, 91 Stellen.
+
+## 110. Was umgestellt wurde
+
+  Quirk            -> Macke              (mit Genuswechsel, siehe unten)
+  Seelenrichter    -> Shinigami          (die deutsche Fassung behaelt den
+                                          japanischen Begriff)
+  Super Saiyan     -> Super-Saiyajin
+  League of Villains / Schurkenliga -> Liga der Schurken
+
+Die Balance hielt: anime_leicht 26/24/26/24 bei 24 %, anime_mittel
+24/25/25/25 bei 23 %. Genau eine Frage wechselte den Rang (4 -> 3), weil
+"Liga der Schurken" vier Zeichen laenger ist als "Schurkenliga".
+
+## 111. Fuenf Grammatikfehler, die der Probelauf abgefangen hat
+
+"Quirk" ist maskulin, "Macke" feminin. Weil das Skript vor dem Schreiben
+JEDE Aenderung ausgibt, fielen fuenf eigene Regelfehler auf, bevor sie in
+den Bestand kamen:
+
+- "das Schurkengruppe" - die Regel war ueberfluessig, "Schurken-Team" ist
+  bereits deutsch. Regel entfernt.
+- "eine Macke, DER von Generation zu Generation weitergegeben wird" -
+  Relativpronomen musste mitgezogen werden.
+- "passend zu SEINEM Macke" - Dativregeln fehlten.
+- "der urspruengliche Besitzer DIE Macke" - Genitiv.
+- "EINER der gespeicherten Macken" und zwei Pronomen, die sich ueber eine
+  Satzgrenze hinweg auf das jetzt feminine Wort bezogen ("bevor ER
+  weitergegeben wurde").
+
+Zwei Genitivformen ("Seelenrichters") entkamen zunaechst der Wortgrenze
+Seelenrichter und wurden nachgezogen.
+
+**Merksatz fuer kuenftige Massenersetzungen: Erst jede Aenderung ausgeben,
+dann schreiben. Ein blindes Suchen-und-Ersetzen haette all das in den
+Bestand geschrieben.**
+
+## 112. Bewusst NICHT uebersetzt
+
+- **Nen-Kategorien** (Emission, Transmutation, Manipulation): Eine
+  Uebersetzung wuerde bei mindestens einer Frage die Antwort verraten
+  ("Materialisierung" bei einer Frage nach dem, was Objekte
+  materialisiert). Dort muesste die Frage mitumformuliert werden - Aufgabe
+  des Inhaltsdurchlaufs, nicht einer Massenersetzung.
+- **Werktitel** (Grave of the Fireflies, A Silent Voice ...): Die deutschen
+  Verleihtitel sind uneinheitlich; die Kataloge bleiben bei der
+  international ueblichen Form.
+- Feste Eigennamen bleiben: One For All, All For One, Dark Shadow, Bankai,
+  Haki, Jutsu, Hokage, Zanpakuto.
+
+## 113. Eine Entscheidung, die ich getroffen habe
+
+Bei "Schurkenliga" gegen "Liga der Schurken" waren BEIDE Varianten deutsch,
+die Nutzer-Vorgabe entschied also nicht. Gewaehlt wurde die im Bestand
+haeufigere Form (Liga der Schurken). Umkehrbar mit einem Einzeiler.
