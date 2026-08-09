@@ -10280,6 +10280,215 @@
         "ersetztDurch": "Welches Instrument erzeugt Töne sowohl beim Hineinblasen als auch beim Einatmen?",
         "aehnlichkeit": 0.11
       }
+    },
+    {
+      "question": "Welches Genre macht Taylor Swift hauptsächlich?",
+      "options": [
+        "Hip-Hop",
+        "Jazz",
+        "Country und Pop",
+        "R&B"
+      ],
+      "correct": 2,
+      "explanation": "Taylor Swift begann mit Country und wechselte später zu Pop.",
+      "topic": "Genres",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 45,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Welche beiden Genres prägen die Musik von Taylor Swift?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Was ist das Blechblasinstrument der Fanfaren?",
+      "options": [
+        "Oboe",
+        "Trompete",
+        "Saxofon",
+        "Klarinette"
+      ],
+      "correct": 1,
+      "explanation": "Die Trompete ist das klassische Blechblasinstrument für Fanfaren.",
+      "topic": "Instrumente",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 79,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Welches Instrument spielt typischerweise Fanfaren?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Wer sang 'Titanium'?",
+      "options": [
+        "Sia feat. David Guetta",
+        "Rihanna feat. Calvin Harris",
+        "Adele feat. Tiësto",
+        "Beyoncé feat. Diplo"
+      ],
+      "correct": 0,
+      "explanation": "'Titanium' ist von David Guetta feat. Sia aus dem Jahr 2011.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 107,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Von wem stammt der Hit 'Titanium'?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Wer sang 'Happy Birthday to You'?",
+      "options": [
+        "Es ist ein traditionelles Lied ohne klaren Autor",
+        "Mildred Hill schrieb die Melodie",
+        "Beide Aussagen sind korrekt",
+        "Es wurde von Mozart komponiert"
+      ],
+      "correct": 2,
+      "explanation": "Die Melodie stammt von Mildred Hill (1893), der Text wurde später hinzugefügt.",
+      "topic": "Sonstiges",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 122,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Wie viele Saiten hat eine Geige?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie heißt das bekannteste Lied von Elvis Presley?",
+      "options": [
+        "Blue Suede Shoes",
+        "Jailhouse Rock",
+        "Hound Dog",
+        "All zusammen gelten als seine bekanntesten"
+      ],
+      "correct": 3,
+      "explanation": "Elvis hatte viele gleichwertig bekannte Hits: Jailhouse Rock, Hound Dog und Blue Suede Shoes.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 126,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Welchen Beinamen trägt Elvis Presley bis heute?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Wie heißt die bekannteste Oper von Mozart?",
+      "options": [
+        "Tosca",
+        "Die Zauberflöte",
+        "La Traviata",
+        "Carmen"
+      ],
+      "correct": 1,
+      "explanation": "Die Zauberflöte (1791) ist Mozarts bekannteste Oper.",
+      "topic": "Klassik",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 133,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Welche dieser Opern komponierte Mozart?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Wie viele Noten gibt es in der Grundtonleiter C-Dur?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8 (mit Wiederholung der ersten)"
+      ],
+      "correct": 3,
+      "explanation": "C-Dur hat 8 Töne: C D E F G A H C (der letzte ist dieselbe Note eine Oktave höher).",
+      "topic": "Musiktheorie",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 149,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Aus wie vielen verschiedenen Tönen besteht die C-Dur-Tonleiter, bevor sie sich wiederholt?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Wer sang 'Last Christmas'?",
+      "options": [
+        "George Michael solo",
+        "WHAM!",
+        "Elton John",
+        "Pet Shop Boys"
+      ],
+      "correct": 1,
+      "explanation": "'Last Christmas' ist ein Weihnachtsklassiker von WHAM! aus dem Jahr 1984.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 150,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Von welchem Pop-Duo stammt der Weihnachtshit 'Last Christmas'?",
+        "aehnlichkeit": 0.18
+      }
+    },
+    {
+      "question": "Wer sang 'Rather Be'?",
+      "options": [
+        "Clean Bandit",
+        "Disclosure",
+        "Rudimental",
+        "Years & Years"
+      ],
+      "correct": 0,
+      "explanation": "'Rather Be' ist ein Hit von Clean Bandit feat. Jess Glynne aus dem Jahr 2014.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 224,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Von welcher Gruppe stammt 'Rather Be' (feat. Jess Glynne)?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Welches Instrument klingt durch das Anschlagen von Metallplatten?",
+      "options": [
+        "Glockenspiel",
+        "Marimba",
+        "Vibraphon",
+        "Alle drei"
+      ],
+      "correct": 3,
+      "explanation": "Glockenspiel, Marimba und Vibraphon klingen durch Anschlagen von Metallplatten.",
+      "topic": "Instrumente",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 233,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Welches dieser Instrumente hat Klangplatten aus Metall?",
+        "aehnlichkeit": 0.07
+      }
+    },
+    {
+      "question": "Wer sang 'Blister in the Sun'?",
+      "options": [
+        "Violent Femmes",
+        "The Pixies",
+        "The Replacements",
+        "Hüsker Dü"
+      ],
+      "correct": 0,
+      "explanation": "'Blister in the Sun' ist ein Klassiker von Violent Femmes aus dem Jahr 1983.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 241,
+        "basis": "0f25c5e",
+        "ersetztDurch": "Von welchem DJ stammt der Hit 'Wake Me Up' (2013)?",
+        "aehnlichkeit": 0
+      }
     }
   ]
 }

@@ -2356,3 +2356,110 @@ fertigen Teilen: "Rhythmusgeber = Schlagzeuger" (Bassist gehoert auch zur
 Rhythmusgruppe), Superlative "bekanntester Reggae-Musiker" (Bob Marley,
 unstrittig), "Wer sang Hello?" (Lionel Richie nicht unter den Optionen,
 daher eindeutig).
+
+## 120. musik_leicht Teil 03: Zweifelsfaelle (2026-08-09)
+
+Teil 03 im kombinierten Verfahren fertig (Bericht liegt vor). Bewusst NICHT
+angefasste Grenzfaelle:
+
+- "Stairway to Heaven ist das bekannteste Stueck von Led Zeppelin" und
+  "Hotel California ist das bekannteste Stueck der Eagles" — Superlative in
+  Erklaerungen, aber beide gelten unstrittig als Signatursongs. Belassen.
+- "Don't Stop Me Now ... aus dem Jahr 1978" — Album "Jazz" erschien 1978,
+  die Single erst Januar 1979. 1978 ist vertretbar (Aufnahme/Album).
+- "Can't Stop the Feeling" — offizielle Schreibweise traegt ein
+  Ausrufezeichen ("Can't Stop the Feeling!"). Ohne belassen, da die
+  Schreibweise ohne "!" allgemein ueblich ist.
+- Oktave als "Abstand von 8 Toenen" — schulgaengige Definition (8 Stufen);
+  die 12-Halbtoene-Lesart ist hier durch die Distraktoren nicht beruehrt.
+- "This Is Me" (Keala Settle) wurde ERSETZT, obwohl faktisch korrekt: die
+  Saengerin ist fuer Stufe LEICHT ohne Spezialwissen nicht loesbar (alle
+  vier Optionen plausible Saengerinnen). Falls das zu weit geht, alte Frage
+  wiederherstellen.
+
+---
+
+# Nachtrag: musik_leicht komplett
+
+273 Fragen, acht Teile, kombiniertes Verfahren. Teile 01 und 06 stammen aus der
+vorigen Sitzung, Teil 02 wurde nach Regel §105 komplett neu geprüft.
+
+| | Ränge | „längste" gewinnt |
+|---|---|---|
+| vorher | 54/15/14/17 | 47 % |
+| jetzt | **27/21/27/25** | **24 %** |
+
+Katalog-Befunde 78 → 60. 11 weitere ersetzte Fragen (Bestand 552). Die zwei
+schlechtesten Teile des ganzen Projekts sind erledigt: Teil 08 von 61 % auf 21 %,
+Teil 07 von 54 % auf 17 %.
+
+## 121. Zwei neue Defektklassen
+
+**Meta-Optionen.** Antworten wie „Alle drei", „Beide Aussagen sind korrekt" oder
+„Alle zusammen gelten als seine bekanntesten" sind in einem Quiz, das die Optionen
+**mischt**, strukturell kaputt — sie beziehen sich auf eine Reihenfolge, die es zur
+Laufzeit nicht mehr gibt. In vier Fragen gefunden. Zwei davon waren zusätzlich
+sachlich falsch:
+
+- „Welches Instrument klingt durch Anschlagen von Metallplatten?" mit „Alle drei" —
+  die **Marimba hat Klangplatten aus Holz**.
+- „Welches Instrument hat Tasten, wird aber geblasen?" mit „Alle drei" — die
+  **Mundharmonika hat keine Tasten**.
+
+**Struktur-Verrat.** Die richtige Option fällt durch ihre *Bauform* auf, nicht durch
+ihre Länge:
+
+- „Country und Pop" als einzige Verbund-Option unter drei Einzelgenres.
+- „Gotye feat. Kimbra" und „Shakira feat. Wyclef Jean" als einzige feat.-Einträge
+  unter reinen Namen.
+- „Sunflower": die einzige Kollaboration unter Solokünstlern.
+- „Nur Michael Jackson" als Distraktor — das Wort „Nur" ist ein Wink.
+- „CCR" als einzige Abkürzung unter vier ausgeschriebenen Bandnamen.
+
+Abhilfe: alle vier Optionen in derselben Bauform, feat.-Angaben in die Erklärung.
+
+## 122. Falsch markierte Antworten und zutreffende Distraktoren
+
+- **„Wer sang 'Die immer lacht'?" war mit Helene Fischer markiert** — der Song ist
+  von Kerstin Ott.
+- **„Lose Control"** war als „Beyoncé feat. Missy Elliott & Ciara" markiert — diese
+  Besetzung gibt es nicht (Missy Elliott feat. Ciara & Fat Man Scoop).
+- **„Welche Band sang 'Good Charlotte'?"** mit der Antwort „Good Charlotte" — einen
+  solchen Song gibt es nicht; die Erklärung sagte wörtlich, das sei „sowohl der Name
+  der Band als auch ein Bandname".
+
+Zutreffende Distraktoren: „Sting solo" bei Roxanne (er sang es als Frontmann von The
+Police), „Nat King Cole" bei Fly Me to the Moon (1962 aufgenommen), „Dolly Parton und
+Whitney Houston" bei I Will Always Love You (beide sangen es), „George Michael solo"
+bei Last Christmas (er sang und produzierte allein), „Seal" bei Crazy, „Khalid" bei
+Eastside — und die Bassgitarren-Frage, bei der 5 und 6 Saiten real existieren.
+
+## 123. Mehrdeutige Songtitel brauchen eine Jahreszahl
+
+Zehn Titel gibt es mehrfach: Unforgettable, Speechless, Vienna, Perfect, Señorita,
+Shape of My Heart, Roxanne, Crazy, Sorry, Lose Control. Sie tragen jetzt ein Jahr
+oder eine Filmangabe im Fragetext.
+
+## 124. Falsche Chartbehauptungen
+
+Sechs Erklärungen behaupteten Platzierungen oder Jahre, die nicht stimmen: Love Story
+Platz 4 statt 1; Telephone Platz 3; Girls Like You mit Cardi B 2018 statt 2017; Hips
+Don't Lie 2006 statt 2005; Toxic und Numb mit Album- statt Singlejahr. Wo eine Zahl
+nicht belegbar war, steht jetzt das Album statt der Chartposition.
+
+## 125. Angemessenheit
+
+Ein Agent hat **R. Kelly** als Distraktor entfernt — ein verurteilter Sexualstraftäter
+als beiläufige Antwortoption in einem Schülerquiz. Dieselbe Linie wie die
+Würde-Korrekturen der Geschichts-Chargen.
+
+## 126. Zwei Verfahrensregeln für künftige Chargen
+
+1. **Den Messbefehl mitgeben**, statt nachrechnen zu lassen:
+   `node check_laenge.js --alle --dir questionbank_katalog/_work`.
+   Zwei Agenten haben Gleichstandsfragen mitgezählt statt sie auszuschließen und kamen
+   dadurch auf abweichende Vorher-Werte; einer hat sich sogar ein eigenes Spiegelskript
+   gebaut, weil er glaubte, das Werkzeug lese keine `_work`-Dateien — es tut es.
+2. **Nur der Koordinator schreibt in OFFENE_PUNKTE.md.** Ein Agent hat selbst angehängt
+   (§120, sauber gelungen), aber bei mehreren laufenden Agenten können gleichzeitige
+   Anhänge ineinandergeraten.
