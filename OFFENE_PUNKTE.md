@@ -2313,3 +2313,46 @@ Fairy-Tail-Drache heisst kanonisch so). Ausnahmeliste ergaenzt. Die Pipe
 hinter check_teile hatte zudem den Fehlercode verschluckt, so dass der Merge
 trotz Befunden lief - die Befunde waren harmlos, aber kuenftig check_teile
 ohne Pipe laufen lassen, damit Exit 1 die Kette stoppt.
+ 
+---
+
+# Nachtrag: musik_leicht ANGEFANGEN, auf Wunsch gestoppt
+
+Acht Teile im kombinierten Verfahren gestartet, nach zwei fertigen Teilen
+gestoppt. Stand nach der Regel aus Abschnitt 105 (ohne Abschlussbericht =
+ungeprueft):
+
+  Teil 01: FERTIG mit Bericht (4 Fragen angefasst - der Teil war schon fast
+           im Korridor). Fund: Bachs "bekanntestes Werk" mit dem
+           Fantasietitel "Vierjahreszeitenkonzert" als Option; "Wie viele
+           Noten hat eine Oktave?" - 8 und 12 sind beide vertretbar, jetzt
+           eindeutig formuliert. Ein Agent hat Rosalia bewusst NICHT als
+           Distraktor fuer Blinding Lights verwendet (sie singt auf dem
+           offiziellen Remix).
+  Teil 06: FERTIG mit Bericht (12 Fragen). Funde: "Instrument ohne Tasten,
+           mit dem Mund gespielt" - Posaune traf ebenso zu; "Wer sang
+           Unforgettable?" ohne Jahr mehrdeutig (Drake hat einen
+           gleichnamigen Song, Nat King Cole sowieso); zwei falsche
+           Chartbehauptungen in Erklaerungen.
+  Teile 02-05, 07, 08: GESTOPPT ohne Bericht. Teil 02 traegt Aenderungen
+           (4 Fragetexte, 9 Optionssaetze) - gilt als ungeprueft und wird
+           beim naechsten Mal KOMPLETT neu bearbeitet. Die uebrigen fuenf
+           sind unberuehrt.
+
+Datei gemergt: 54/15/14/17 (47 %) -> 47/17/16/19 (40 %). Noch nicht im
+Korridor - die Teile 07 (59 %) und 08 (63 %, schlechtester Teil des ganzen
+Projekts) sind unbearbeitet.
+
+## 119. Naechste Sitzung
+
+musik_leicht neu zerlegen (node chunk.js split musik_leicht 35 --dir
+questionbank_katalog), dann die Teile 02-05, 07, 08 bearbeiten (Teil 02
+komplett neu wegen fehlendem Bericht). Teile 01 und 06 NICHT noch einmal.
+Die Eigennamen-Ausnahmeliste in check_teile.js ist um Aerosmith und
+Johannes Oerding gewachsen.
+
+4 ersetzte Fragen aufgehoben (Bestand 541). Zweifelsfaelle aus den zwei
+fertigen Teilen: "Rhythmusgeber = Schlagzeuger" (Bassist gehoert auch zur
+Rhythmusgruppe), Superlative "bekanntester Reggae-Musiker" (Bob Marley,
+unstrittig), "Wer sang Hello?" (Lionel Richie nicht unter den Optionen,
+daher eindeutig).

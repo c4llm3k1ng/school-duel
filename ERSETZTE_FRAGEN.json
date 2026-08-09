@@ -10204,6 +10204,82 @@
         "ersetztDurch": "In 'Bleach': Wie heißt Yhwachs Schrift, mit der er jede Zukunft sehen und verändern kann?",
         "aehnlichkeit": 0.1
       }
+    },
+    {
+      "question": "Wie viele Noten gibt es in einer Oktave?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "12"
+      ],
+      "correct": 2,
+      "explanation": "Eine Oktave umfasst 8 Töne (z. B. C bis C).",
+      "topic": "Musiktheorie",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 20,
+        "basis": "8142e41",
+        "ersetztDurch": "Wie viele Töne umfasst eine Oktave, wenn man von C bis zum nächsthöheren C beide Töne mitzählt?",
+        "aehnlichkeit": 0.18
+      }
+    },
+    {
+      "question": "Wer sang 'Uptown Funk'?",
+      "options": [
+        "Bruno Mars",
+        "Mark Ronson feat. Bruno Mars",
+        "Justin Timberlake",
+        "Pharrell Williams"
+      ],
+      "correct": 1,
+      "explanation": "'Uptown Funk' ist von Mark Ronson feat. Bruno Mars (2014).",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 39,
+        "basis": "8142e41",
+        "ersetztDurch": "Welcher Sänger ist auf dem Hit 'Uptown Funk' von Mark Ronson zu hören?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Wie heißt die schnellste Grundtempo-Bezeichnung in der klassischen Musik?",
+      "options": [
+        "Andante",
+        "Allegro",
+        "Presto",
+        "Adagio"
+      ],
+      "correct": 2,
+      "explanation": "'Presto' ist die Bezeichnung für sehr schnelles Tempo.",
+      "topic": "Musiktheorie",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 64,
+        "basis": "8142e41",
+        "ersetztDurch": "Welche dieser Tempobezeichnungen steht für das schnellste Tempo?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welches Instrument hat keine Tasten und wird vom Mund gespielt?",
+      "options": [
+        "Mundharmonika",
+        "Posaune",
+        "Oboe",
+        "Fagott"
+      ],
+      "correct": 0,
+      "explanation": "Die Mundharmonika wird direkt mit dem Mund gespielt und hat keine Tasten.",
+      "topic": "Instrumente",
+      "_herkunft": {
+        "datei": "musik_leicht.json",
+        "index": 206,
+        "basis": "8142e41",
+        "ersetztDurch": "Welches Instrument erzeugt Töne sowohl beim Hineinblasen als auch beim Einatmen?",
+        "aehnlichkeit": 0.11
+      }
     }
   ]
 }

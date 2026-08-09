@@ -38,8 +38,9 @@ if (!fs.existsSync(WORK)) { console.log('Kein _work/ in ' + BASE + '.'); process
 // die Muster nicht, weil ein Umlaut dort nie gemeint ist.
 const UMSCHRIFT = /\b(ae|oe|ue)(?=[a-zäöüß]{2})|(?:strasse|gross|weiss|heiss|muessen|koennen|haette|waere|fuer|ueber|moeglich|naechst|spaeter|zaehl|waehl|hoeh|schoen|groess|maessig)/i;
 // Eigennamen, die den Mustern zufaellig aehneln: japanische Namen mit "Ue-"
-// (Uematsu, Ueda) und kanonische Serien-Schreibweisen (Weisslogia).
-const UMSCHRIFT_AUSNAHME = /Uematsu|Ueda|Ueno|Weisslogia/;
+// (Uematsu, Ueda), Kuenstlernamen (Aerosmith, Oerding) und kanonische
+// Serien-Schreibweisen (Weisslogia).
+const UMSCHRIFT_AUSNAHME = /Uematsu|Ueda|Ueno|Weisslogia|Aerosmith|Oerding/;
 
 let teile = 0, befunde = 0;
 const melde = (teil, text) => { befunde++; console.log(`  ${teil}: ${text}`); };
