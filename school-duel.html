@@ -1177,7 +1177,7 @@ Deutschland</p>
         <div class="mc-icon">📦</div>
         <div class="mc-body">
           <div class="mc-title">Vorhandenen Katalog übernehmen</div>
-          <div class="mc-desc">Einen deiner eigenen Kataloge in die Gruppe kopieren</div>
+          <div class="mc-desc">Einen integrierten, eigenen oder geteilten Katalog in die Gruppe kopieren</div>
         </div>
         <div class="mc-arrow">›</div>
       </div>
@@ -7525,17 +7525,25 @@ function gAddQuizBack() {
   document.getElementById('gaq-catalogs').style.display = 'none';
 }
 function gAddQuizShowCatalogs() {
-  const own = getCatalogs().filter(c => !c.builtin && (c.questions || []).length);
+  const cats = getCatalogs().filter(c => (c.questions || []).length);
+  const zeile = c => `<div class="friend-item">
+      <div style="flex:1;min-width:0;">
+        <div class="friend-name">${esc(c.name)}</div>
+        <div class="friend-grade">${(c.questions || []).length} Fragen</div>
+      </div>
+      <button class="btn btn-primary" style="width:auto;padding:7px 13px;font-size:.82rem;" onclick="gAddQuizFromCatalog('${esc(c.id)}')">Übernehmen</button>
+    </div>`;
+  // Drei Herkuenfte, eigene zuerst - dafuer ist die Funktion am haeufigsten da.
+  const gruppen = [
+    ['Eigene Kataloge',      cats.filter(istEigenerKatalog)],
+    ['Geteilte Kataloge',    cats.filter(istGeteilterKatalog)],
+    ['Integrierte Kataloge', cats.filter(c => c.builtin)],
+  ].filter(([, l]) => l.length);
   const box = document.getElementById('gaq-catalog-list');
-  box.innerHTML = own.length
-    ? own.map(c => `<div class="friend-item">
-        <div style="flex:1;min-width:0;">
-          <div class="friend-name">${esc(c.name)}</div>
-          <div class="friend-grade">${(c.questions || []).length} Fragen</div>
-        </div>
-        <button class="btn btn-primary" style="width:auto;padding:7px 13px;font-size:.82rem;" onclick="gAddQuizFromCatalog('${esc(c.id)}')">Übernehmen</button>
-      </div>`).join('')
-    : '<div class="empty-state" style="padding:20px 0;"><div class="es-icon">📦</div>Du hast noch keine eigenen Kataloge.</div>';
+  box.innerHTML = gruppen.length
+    ? gruppen.map(([titel, liste]) =>
+        `<div class="label" style="margin:10px 0 6px;">${titel}</div>` + liste.map(zeile).join('')).join('')
+    : '<div class="empty-state" style="padding:20px 0;"><div class="es-icon">📦</div>Keine Kataloge gefunden.</div>';
   document.getElementById('gaq-choice').style.display = 'none';
   document.getElementById('gaq-catalogs').style.display = '';
 }
