@@ -36,7 +36,13 @@ if (!fs.existsSync(WORK)) { console.log('Kein _work/ in ' + BASE + '.'); process
 
 // Verdaechtige Umschreibungen. Kurze Woerter wie "aus", "neue", "Sue" treffen
 // die Muster nicht, weil ein Umlaut dort nie gemeint ist.
-const UMSCHRIFT = /\b(ae|oe|ue)(?=[a-zäöüß]{2})|(?:strasse|gross|weiss|heiss|muessen|koennen|haette|waere|fuer|ueber|moeglich|naechst|spaeter|zaehl|waehl|hoeh|schoen|groess|maessig)/i;
+// ZWEI Muster, und das erste bewusst OHNE /i: Mit Ignorieren der
+// Gross-/Kleinschreibung schlaegt es sonst bei jeder Abkuerzung an, die auf
+// "AE"/"UE" beginnt - AEUV, AEMR, EUV. Umschreibungen kommen aber nur in
+// klein geschriebenen Wortteilen vor.
+const UMSCHRIFT_KLEIN = /\b(ae|oe|ue)(?=[a-zäöüß]{2})/;
+const UMSCHRIFT_WORT  = /(?:strasse|gross|weiss|heiss|muessen|koennen|haette|waere|fuer|ueber|moeglich|naechst|spaeter|zaehl|waehl|hoeh|schoen|groess|maessig)/i;
+const UMSCHRIFT = { test: s => UMSCHRIFT_KLEIN.test(s) || UMSCHRIFT_WORT.test(s) };
 // Eigennamen, die den Mustern zufaellig aehneln: japanische Namen mit "Ue-"
 // (Uematsu, Ueda), Kuenstlernamen (Aerosmith, Oerding) und kanonische
 // Serien-Schreibweisen (Weisslogia).

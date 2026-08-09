@@ -2463,3 +2463,123 @@ Würde-Korrekturen der Geschichts-Chargen.
 2. **Nur der Koordinator schreibt in OFFENE_PUNKTE.md.** Ein Agent hat selbst angehängt
    (§120, sauber gelungen), aber bei mehreren laufenden Agenten können gleichzeitige
    Anhänge ineinandergeraten.
+
+---
+
+# Nachtrag: politik_schwer komplett
+
+200 Fragen, sechs Teile, kombiniertes Verfahren.
+
+| | Ränge | „längste" gewinnt |
+|---|---|---|
+| vorher | 44/8/9/39 | 42 % |
+| jetzt | **24/26/25/24** | **24 %** |
+
+## 127. Der Verrat lief hier in BEIDE Richtungen
+
+Erstmals war die richtige Antwort in mehreren Teilen die **kürzeste** statt der
+längsten: Teil 02 zu 67 %, Teil 06 zu 52 %, Teil 05 zu 44 %. Wer dort einfach die
+kürzeste Option anklickt, gewinnt zwei von drei Fragen ohne jedes Wissen. Teil 06
+hatte zusätzlich Rang 2 bei **0 %** — die zweitlängste Option war blind ausschließbar.
+
+**Folge für künftige Aufträge:** Nicht nur „die richtige Antwort darf nicht die
+längste sein", sondern beide Extreme benennen. Die betroffenen Agenten mussten die
+richtige Antwort *ausführlicher* machen — das Gegenteil der sonstigen Anweisung.
+
+## 128. Zeitablauf als eigene Fehlerquelle
+
+Diese Datei war die mit Abstand anfälligste. Falsch geworden, nicht falsch erzeugt:
+
+- **Schengen:** In der *als richtig markierten Option* stand, Bulgarien und Rumänien
+  „warten auf Beitritt" — sie sind seit 1.1.2025 vollwertige Mitglieder. Die eigene
+  Erklärung sagte es bereits.
+- **PESCO:** „26 von 27 Staaten, ohne Dänemark (Verteidigungs-Opt-out)" — Dänemark
+  hat den Vorbehalt 2022 aufgegeben; einziger Nichtteilnehmer ist Malta.
+- **Europarat:** „47 Mitglieder" — seit Russlands Ausschluss 2022 sind es 46.
+- **ASEAN:** „10 Mitglieder" — mit Timor-Leste (2025) sind es 11.
+- **Amtsträger:** Charles Michel als „aktueller" Ratspräsident (Amtszeit endete 2024),
+  Kaja Kallas „aktuell", Bärbel Bas als Bundestagspräsidentin (seit März 2025 nicht
+  mehr im Amt), Rafael Grossi.
+- **WHO:** „USA traten 2017 aus, 2021 wieder ein" — der 2025 eingeleitete erneute
+  Austritt fehlte.
+- **EZB:** die 2021 abgelöste Formel „nahe, aber unter 2 %".
+
+## 129. Neue Nutzer-Entscheidung: Zeitstempel statt Vagheit
+
+Der Nutzer hat am 10.8.2026 entschieden: **„Stand August 2026"** bzw. **„Im August
+2026 …"** darf eingefügt werden, wo eine Antwort zeitgebunden ist. Damit entfällt der
+Zwang, präzise Zahlen zu vagen Formulierungen zu verwässern.
+
+Diese Charge lief noch unter der alten Vorgabe („zeitlos umformulieren"), weshalb
+einige Zahlen gerundet wurden (WTO „über 160" statt 164, IWF „rund 190", IStGH „mehr
+als 120", GAP „rund ein Drittel"). **Bewusst nicht nachträglich zurückgesetzt:** Die
+Agenten haben teils gerundet, weil sie die aktuelle Zahl *nicht sicher kannten* — ein
+Datumsstempel macht eine ungeprüfte Zahl nicht belastbar. Ab der nächsten Charge steht
+die Regel im Auftrag.
+
+## 130. Falsch markierte Antworten und Zuschreibungen
+
+- **FDP-Austritt** war mit „2023" markiert, die eigene Erklärung sagte „November 2024".
+- **„Welcher Bundeskanzler regierte am längsten?"** mit Kohl — Merkel kommt auf
+  dieselben 16 Jahre, der Abstand beträgt rund zehn Tage; die Erklärung räumte
+  „gleichauf" selbst ein. Frage ersetzt.
+- **„Wettbewerb so weit wie möglich, Planung so weit wie nötig"** war Ludwig Erhard
+  zugeschrieben — das Schlagwort stammt von **Karl Schiller**.
+- **Charta von Paris:** Antwort „35 Staaten", Erklärung „34" — richtig sind 34.
+- **Subsidiarität:** Der Fragetext verwechselte Subsidiarität mit dem
+  Anwendungsvorrang; die Antwort erklärte den Vorrang.
+
+## 131. Doppelfragen als eigene Klasse
+
+Über zwanzig Fragen stellten zwei oder drei Fragen auf einmal, die vier Optionen aber
+nur eine beantworten: „Was ist der EGMR **und zu welcher Organisation gehört er**?",
+„Wann **und wo** wurde die Linkspartei **aus welchem Vorläufer** gegründet?", „Was sind
+DMA **und** DSA?" (zwei Rechtsakte). Alle auf eine Frage eingegrenzt.
+
+## 132. Neutralität
+
+- Eine Frage war im Kern eine **Meinungsfrage**: „Was kritisieren Politikwissenschaftler
+  an der Großen Koalition?", mit Wertungen über CDU/CSU, SPD, AfD und Linke in den
+  Optionen („Profillosigkeit", „Protestwähler wandern zu Extremen"). Ersetzt.
+- Zwei weitere abwertende Zuschreibungen aus Optionen entfernt, dazu Namenslisten von
+  Politikern in Erklärungen durch sachliche Beschreibungen ersetzt.
+
+## 133. Struktur-Verrat war hier systematisch
+
+Über zwanzig Fälle, meist nach demselben Muster: **nur die richtige Option** trug eine
+Absatzangabe („Art. 79 **Abs. 3** GG" gegen „Art. 1 GG"), einen Buchstabenzusatz
+(„Art. 16**a**"), einen Doppelpunkt, ein französisches Zitat, Pfeile („→"),
+Versalien-Betonung oder Klammerabkürzungen. In einem Fall war die richtige Option
+**52 Zeichen** lang und die drei Distraktoren **185–189** — das sieht man ohne jedes
+Wissen.
+
+## 134. Die Datei ist thematisch geblockt, nicht gemischt
+
+Zwei Agenten haben unabhängig gemeldet: Teil 01 enthält **ausschließlich** deutsches
+Verfassungsrecht, Teil 04 **ausschließlich** EU/UNO/Völkerrecht — obwohl die Datei alle
+Themen führt. Wer in der App fünf Fragen aus einem Block zieht, bekommt fünfmal
+dasselbe Gebiet. Kein Fehler, aber eine Kuratierungsfrage.
+
+## 135. Die correct-Position ist in den Rohdaten stark verzerrt
+
+Zwei Agenten meldeten, dass in ihren Teilen fast jede richtige Antwort auf Index 1
+steht. Nachgemessen über alle zehn Kataloge (3893 Fragen):
+
+| Katalog | A | B | C | D |
+|---|---|---|---|---|
+| politik_schwer | 5 % | **87 %** | 7 % | 2 % |
+| fussball_schwer | **55 %** | 19 % | 17 % | 8 % |
+| fussball_leicht | 13 % | **51 %** | 25 % | 12 % |
+| musik_leicht | 27 % | **47 %** | 24 % | 3 % |
+| **alle Kataloge** | 27 % | 40 % | 25 % | **9 %** |
+
+**Im Spiel folgenlos** — ich habe alle fünf Misch-Stellen geprüft: Solo/Duell und
+Online über `loadQuestions`, dazu Challenger, Üben-Modus und der Notvorrat. Auch
+Gruppenquizze und geteilte Kataloge laufen durch `loadQuestions`.
+
+**Latentes Risiko:** Die Rohdaten wandern in geteilte Kataloge, in Gruppenquizze und
+später in den geplanten React-Native-Neubau. Ein Mischfehler dort brächte den Verrat
+sofort zurück — genau wie 2026-08-05, als zwei von vier Modi nicht mischten.
+Vorschlag: ein einmaliges Skript, das die Optionsreihenfolge je Frage permutiert und
+`correct` nachführt. Semantisch folgenlos, prüfbar (gleiche Optionsmenge, `correct`
+zeigt auf denselben Text). **Entscheidung steht aus.**
