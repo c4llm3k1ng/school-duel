@@ -2059,3 +2059,36 @@ von Limitless), "Danger Sense" (ist eine One-for-All-Faehigkeit),
 Zenitsus "Godspeed" (setzt er schlafend ein), "ODM-Manoevriergeraet"
 (anderer Name der richtigen Antwort), Karl Fritz UND Ymir Fritz bei der
 Gruendungstitan-Frage - beide trafen zu.
+ 
+---
+
+# Nachtrag: Inhaltsdurchlauf anime_mittel TEILWEISE (auf Wunsch gestoppt)
+
+Acht Teile gestartet, auf Wunsch des Nutzers gestoppt. Stand:
+
+  Teil 01: 7 Fragetexte / 2 Optionssaetze geaendert - Agent mitten in der
+           Arbeit gestoppt, KEIN Bericht, Rest des Teils ungeprueft
+  Teil 02: 18 / 4 geaendert - ebenso gestoppt, kein Bericht
+  Teil 03: 18 / 7 geaendert - ebenso gestoppt, kein Bericht
+  Teil 04: FERTIG mit Bericht (16 Fragetexte, 6 Optionssaetze; Potara,
+           MMO Junkie, Mahouka, Sklavenauktion, Majin Buu, Spy x Family,
+           Blade of the Immortal; Gorhans und Gummi-Koerper korrigiert;
+           Schurkenliga und Oberer Mond 3 eingedeutscht)
+  Teile 05-08: UNBERUEHRT - Schadenslisten stehen in Abschnitt 102-103
+           und muessen noch abgearbeitet werden (darunter die zwei falsch
+           markierten Antworten: Ultra Instinct Sign gegen Kefla in Teil 08
+           Q14, Sumiyoshi statt Yoriichi in Teil 05 Q20!)
+
+Alle Teile gueltig, Laengenbalance ueberall im Korridor gehalten, gemergt.
+14 ersetzte Fragen in ERSETZTE_FRAGEN.json aufgehoben (Bestand 435).
+
+## 104. Naechste Sitzung
+
+Inhaltsdurchlauf anime_mittel FORTSETZEN: Teile 05-08 komplett, Teile 01-03
+erneut (die Aenderungen der gestoppten Agenten bleiben erhalten, aber ohne
+Bericht ist unklar, wie weit sie kamen - der jeweils naechste Agent prueft
+den ganzen Teil noch einmal und faengt die Restfehler).
+
+Offen aus Teil 04 (gemeldet, unsicher gelassen): etablierte deutsche
+Begriffe fuer Human Auctioning House, Celestial Dragons; Grandline vs.
+Grand Line; Anglizismus Quirk.

@@ -1,6 +1,6 @@
 {
   "hinweis": "Fragen, die im Qualitaetsdurchlauf durch andere ersetzt wurden. Nicht zwangslaeufig schlecht - meist zu leicht, nicht eindeutig loesbar oder thematisch am falschen Ort. Erzeugt von question-generator/collect_replaced.js. Die Zuordnung ist unscharf: stark umformulierte Fragen koennen faelschlich enthalten sein, deshalb steht bei jedem Eintrag die Nachfolgerin dabei. Diese Datei gehoert NICHT in den Firebase-Abgleich.",
-  "erzeugt": "2026-08-08",
+  "erzeugt": "2026-08-09",
   "fragen": [
     {
       "question": "Was fressen Pflanzenfresser?",
@@ -7999,6 +7999,272 @@
         "basis": "cb04e39",
         "ersetztDurch": "In welchem Anime entdeckt ein Oberschüler, dass er der Sohn von Satan ist?",
         "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "In 'Naruto': Welcher Arc handelt von der Jagd nach den Bijuu durch die Akatsuki?",
+      "options": [
+        "Chunin-Prüfungs-Arc",
+        "Retrieval Arc",
+        "Bijuu-Sammler-Arc",
+        "Shippuden-Eingangs-Arc"
+      ],
+      "correct": 3,
+      "explanation": "Der Beginn von 'Naruto Shippuden' dreht sich um die Akatsukis Plan, alle Bijuu einzusammeln.",
+      "topic": "Naruto",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 0,
+        "basis": "HEAD",
+        "ersetztDurch": "In 'Naruto Shippuden': Welches Bijuu war in Gaara versiegelt, bevor Akatsuki es ihm entriss?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "In 'Jujutsu Kaisen': Was ist die Technik, die Zeit innerhalb einer Kugel einfriert?",
+      "options": [
+        "Infinite Void",
+        "Hollow Purple",
+        "Divergent Fist",
+        "Prison Realm"
+      ],
+      "correct": 0,
+      "explanation": "'Infinite Void' (Leere Unendlichkeit) ist Gojos Domänenexpansion, die alle Sinne des Gegners überwältigt.",
+      "topic": "Jujutsu Kaisen",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 15,
+        "basis": "HEAD",
+        "ersetztDurch": "In 'Jujutsu Kaisen': Wie heißt die Domänenerweiterung von Satoru Gojo?",
+        "aehnlichkeit": 0.18
+      }
+    },
+    {
+      "question": "In 'Bleach': Wie heißt Ichigos Vater wirklich in seiner Seelenrichter-Vergangenheit?",
+      "options": [
+        "Isshin Shiba",
+        "Isshin Kurosaki",
+        "Isshin Kuchiki",
+        "Ryuken Ishida"
+      ],
+      "correct": 0,
+      "explanation": "Isshin Kurosaki trug früher den Namen Isshin Shiba als Kapitän der 10. Kompanie.",
+      "topic": "Bleach",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 42,
+        "basis": "HEAD",
+        "ersetztDurch": "In 'Bleach': Welchen Namen trug Ichigos Vater früher, als er noch Shinigami-Kapitän war?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "In 'Naruto': Welche zwei Charaktere sind für den Verlust von Kakashis linkem Auge verantwortlich?",
+      "options": [
+        "Obito und Rin",
+        "Minato und Kushina",
+        "Madara und Hashirama",
+        "Sasuke und Itachi"
+      ],
+      "correct": 0,
+      "explanation": "Obito gab Kakashi sein Sharingan; Rin starb durch Kakashis Chidori – diese Ereignisse formten Kakashis Charakter.",
+      "topic": "Naruto",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 44,
+        "basis": "HEAD",
+        "ersetztDurch": "In 'Naruto': Welche zwei Teamkameraden sorgten dafür, dass Kakashi sein Sharingan bekam?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Welcher Anime dreht sich um Gott-Kandidaten, die ihren Anhängern Tagebücher mit der Zukunft geben?",
+      "options": [
+        "Steins;Gate",
+        "Future Diary",
+        "Death Note",
+        "The Promised Neverland"
+      ],
+      "correct": 1,
+      "explanation": "In 'Future Diary' (Mirai Nikki) kämpfen Besitzer von Zukunfts-Tagebüchern um Gottes Thron.",
+      "topic": "Psycho-Thriller",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 61,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Anime handelt von zwölf Menschen, die mit Zukunfts-Tagebüchern um die Nachfolge Gottes kämpfen?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Welcher Anime dreht sich um Gruppen, die in einem Zauberer-Duell-System kämpfen?",
+      "options": [
+        "Fairy Tail",
+        "The Irregular at Magic High School",
+        "Little Witch Academia",
+        "Black Clover"
+      ],
+      "correct": 1,
+      "explanation": "'Mahouka Koukou no Rettousei' (The Irregular at Magic High School) dreht sich um eine Zauberer-Oberschule.",
+      "topic": "Magie-Anime",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 72,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Anime spielt an einer Magie-Oberschule, an der die Schüler nach ihren Leistungen streng in Kurs 1 und Kurs 2 eingeteilt werden?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Wie heißt die berühmte Szene in 'Dragon Ball Z', in der Vegeta seine Handschuhe auszieht?",
+      "options": [
+        "Final Flash",
+        "Galick Gun",
+        "Big Bang Attack",
+        "Vegeta's Elbow Drop"
+      ],
+      "correct": 0,
+      "explanation": "Vegetas 'Final Flash' ist eine seiner mächtigsten Angriffe – er zieht dabei seine Handschuhe nicht aus, aber ist eine Szene daraus.",
+      "topic": "Dragon Ball",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 74,
+        "basis": "HEAD",
+        "ersetztDurch": "In 'Dragon Ball Z': Welche mächtige Attacke feuert Vegeta im Kampf gegen den perfekten Cell ab, nachdem er lange Energie gesammelt hat?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "In 'One Piece': Welche Technik zeigt, dass jemand sein Rüstungs-Haki auf eine Waffe anwendet?",
+      "options": [
+        "Busoshoku Haki",
+        "Kenbunshoku Haki",
+        "Haoshoku Haki",
+        "Gear Second"
+      ],
+      "correct": 0,
+      "explanation": "Busoshoku Haki (Rüstungs-Haki) kann auf Körper und Waffen angewendet werden.",
+      "topic": "One Piece",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 93,
+        "basis": "HEAD",
+        "ersetztDurch": "In 'One Piece': Mit welcher Haki-Art kann man seine Klinge härten, um sogar Logia-Nutzer zu treffen?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "In 'Dragon Ball': Wie nennt man den Ort, wo Gott des Universums trainiert?",
+      "options": [
+        "Kaioshinkugel-Welt",
+        "Dende's Lookout",
+        "Hyperbolic Time Chamber",
+        "Der Planet von Meister Kaio"
+      ],
+      "correct": 2,
+      "explanation": "Der Hyperbolic Time Chamber (Zeitkammer/Room of Spirit and Time) ist der Trainingsort mit extremer Zeitdehnung.",
+      "topic": "Dragon Ball",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 97,
+        "basis": "HEAD",
+        "ersetztDurch": "In 'Dragon Ball': Wie heißt der Raum, in dem ein Jahr Training im Inneren nur einem Tag in der Außenwelt entspricht?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welcher Anime dreht sich um die erste weibliche Samurai-Protagonistin in der Edo-Zeit?",
+      "options": [
+        "Rurouni Kenshin",
+        "Samurai Champloo",
+        "Dororo",
+        "Katanagatari"
+      ],
+      "correct": 2,
+      "explanation": "'Dororo' dreht sich zwar nicht um eine Samurai-Frau, aber Katanagatari zeigt die Schwertkämpferin Togame.",
+      "topic": "Samurai-Anime",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 100,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Anime handelt von Hyakkimaru, der seine an Dämonen verlorenen Körperteile zurückerobern will?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Welcher Anime handelt von Schülern, die in einer Akademie für Magie und Technologie ausgebildet werden?",
+      "options": [
+        "Little Witch Academia",
+        "Sword Art Online",
+        "Black Clover",
+        "Index"
+      ],
+      "correct": 3,
+      "explanation": "'Toaru Majutsu no Index' spielt in Academy City, wo Wissenschaft und Magie aufeinandertreffen.",
+      "topic": "Magie/Sci-Fi",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 102,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Anime spielt in der Akademie-Stadt, in der wissenschaftlich erzeugte Esper auf Magier treffen?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welcher Anime dreht sich um eine Gruppe professioneller E-Sport-Gamer?",
+      "options": [
+        "No Game No Life",
+        "Recovery of an MMO Junkie",
+        "Sword Art Online Alternative",
+        "New Game!"
+      ],
+      "correct": 1,
+      "explanation": "'Recovery of an MMO Junkie' dreht sich um eine Frau, die ihr Leben dem Online-Gaming widmet.",
+      "topic": "Gaming-Anime",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 109,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Anime handelt von einer Frau, die ihren Job kündigt und im Online-Rollenspiel neu anfängt?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "In 'Bleach': Wie heißt der Anführer der Espada?",
+      "options": [
+        "Ulquiorra Cifer",
+        "Grimmjow Jaegerjaquez",
+        "Sosuke Aizen",
+        "Baraggan Louisenbairn"
+      ],
+      "correct": 2,
+      "explanation": "Sosuke Aizen kontrolliert und führt die Espada von Hueco Mundo.",
+      "topic": "Bleach",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 122,
+        "basis": "HEAD",
+        "ersetztDurch": "In 'Bleach': Wer befehligt die Espada in Hueco Mundo?",
+        "aehnlichkeit": 0.18
+      }
+    },
+    {
+      "question": "Welcher Anime handelt von einem Schüler, der sich in der Kampf-Arena 'Mahouka' beweisen muss?",
+      "options": [
+        "The Irregular at Magic High School",
+        "Absolute Duo",
+        "Chivalry of a Failed Knight",
+        "Antimagic Academy"
+      ],
+      "correct": 0,
+      "explanation": "'The Irregular at Magic High School' dreht sich um Tatsuya Shiba, der trotz großer Macht als 'Irregulärer' gilt.",
+      "topic": "Magie-Anime",
+      "_herkunft": {
+        "datei": "anime_mittel.json",
+        "index": 123,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Anime handelt von den Geschwistern Tatsuya und Miyuki Shiba an einer Magie-Oberschule?",
+        "aehnlichkeit": 0.18
       }
     }
   ]
