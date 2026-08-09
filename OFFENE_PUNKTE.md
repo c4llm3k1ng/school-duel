@@ -2006,3 +2006,56 @@ Demon Slayer auf 2016 statt 2019 datiert, Spy x Family auf 2021 statt 2022,
 - "Cheadle Yorkshire" - wird nach Neteros Tod tatsaechlich Vorsitzende
 - "Eine Jutsu des Rinnegan" und "Eine Waffe der Akatsuki" zum Unendlichen
   Tsukuyomi - beide zu nah an wahr
+ 
+---
+
+# Nachtrag: anime_mittel fertig, beide Anime-Dateien eingedeutscht
+
+Die drei offenen Teile (05, 07, 08) sind nachgeholt. anime_mittel gesamt:
+54/19/12/15 -> 22/26/25/28, "laengste gewinnt" 47 % -> 21 %. Teil 07 - der
+schlechteste Teil des ganzen Bestands - ging von 86/4/4/7 (70 %) auf
+19/25/28/28 (17 %).
+
+## 101. Eindeutschung umgesetzt (anime_leicht + anime_mittel)
+
+Per Skript mit Rangkontrolle: Ruffy, Lorenor Zorro, Lysop, Freezer,
+Eren/Zeke Jäger, Flying Lamb, Koloss-Titan, Vegetto, Freezer-Saga.
+anime_leicht: 10 Fragetexte, 15 Optionen, 16 Erklaerungen. anime_mittel:
+6 Fragetexte, 13 Optionen, 9 Erklaerungen. Beide Dateien danach im
+Korridor (26/24/26/24 bzw. 22/26/25/28), keine englischen Reste.
+Offen bleiben englische GATTUNGSBEGRIFFE in Optionen (Conqueror’s Haki,
+Founding Titan, Straw Doll Technique) - die sind Sache des
+Inhaltsdurchlaufs, weil Umbenennen dort Laengen staerker verschiebt.
+
+collect_replaced.js wurde fuer diese Charge NICHT ausgefuehrt: Es vergleicht
+Fragetexte, und die Eindeutschung hat Fragetexte veraendert - jede Meldung
+waere ein Fehlalarm. Ersetzte Fragen gab es in dieser Charge keine.
+
+## 102. Fuer den Inhaltsdurchlauf anime_mittel vorgemerkt (aus den Teilberichten)
+
+Zwei FALSCH MARKIERTE Antworten:
+- Gokus Form gegen Kefla: markiert "Mastered Ultra Instinct", richtig waere
+  "Ultra Instinct Sign" - steht als Distraktor daneben.
+- Tanjiros Urahn: markiert Yoriichi; der Urahn ist Sumiyoshi, der die
+  Sonnenatmung von Yoriichi LERNTE.
+
+Zwei in sich unloesbare Fragen:
+- P.A.-Works-Frage, deren richtige Antwort (Beck) von Madhouse ist -
+  waehrend der Distraktor Shirobako tatsaechlich von P.A. Works stammt.
+- NEET-Gamerin in Isekai-Welt: "No Game No Life" (Shiro) passt besser als
+  die markierte Antwort KonoSuba (Kazuma ist maennlich).
+
+Dazu: Orihime-Frage in sich kaputt, Beyblade-Frage ("Roboter" statt
+Kreisel), Q9 "Tsubaki Shiten" existiert nicht, sechs falsche Jahreszahlen
+(Kaiji 2007 nicht 2020, GitS, Spy x Family, Demon Slayer, No Game No Life,
+Jujutsu Kaisen), "Erin Yeager"/"Gorhans"-Tippfehler, Q34 verstümmelter
+Fragetext, Solar-Kamehameha-Frage haltlos.
+
+## 103. Wieder zutreffende Distraktoren (Teile 05/07/08, entfernt)
+
+Darunter: "Lara Tybur" (war Traegerin des Kriegshammer-Titans), drei
+Gear-Formen, die im Wano-Arc vorkommen, "Infinity" (ist die Manifestation
+von Limitless), "Danger Sense" (ist eine One-for-All-Faehigkeit),
+Zenitsus "Godspeed" (setzt er schlafend ein), "ODM-Manoevriergeraet"
+(anderer Name der richtigen Antwort), Karl Fritz UND Ymir Fritz bei der
+Gruendungstitan-Frage - beide trafen zu.
