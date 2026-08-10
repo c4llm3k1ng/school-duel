@@ -28,6 +28,14 @@ const DIR  = path.join(__dirname, '..', BASE);
 
 const _args = process.argv.slice(2).filter((a, i, arr) => a !== '--dir' && arr[i - 1] !== '--dir');
 const ALLE  = _args.includes('--alle');
+// --streng fuer Dateien, in denen dieselbe Antwort zu Recht oft vorkommt.
+// Im Fussball gewinnt dieselbe Mannschaft viele Turniere: "Wer gewann die WM
+// 1982?" und "Wer gewann die EM 2021?" heissen beide Italien und sind trotzdem
+// zwei verschiedene Fragen. Die lockere Voreinstellung meldete in
+// fussball_leicht 77 Verdachtsfaelle, von denen nur 24 echte Dubletten waren.
+const STRENG = _args.includes('--streng');
+const S_TEXT = STRENG ? 0.95 : 0.60;   // Textaehnlichkeit allein
+const S_ANTW = STRENG ? 0.75 : 0.34;   // Textaehnlichkeit bei gleicher Antwort
 const ziel  = _args.filter(a => !a.startsWith('--'))[0] || '';
 
 // Fuellwoerter, die keine Aussage tragen. Ohne sie waeren zwei beliebige
@@ -57,10 +65,20 @@ const jaccard = (a, b) => {
   return schnitt / (a.size + b.size - schnitt);
 };
 
+// Vereinskuerzel und Rechtsformen weg, Reihenfolge egal: "FC Chelsea" und
+// "Chelsea FC" werden beide zu "chelsea". Ohne das bleiben Dubletten
+// unentdeckt, deren Antwort nur anders geschrieben ist - in fussball_mittel
+// standen "Welcher Verein gewann 2012 zum ersten Mal die Champions League?"
+// und "Welcher Verein gewann die Champions League 2012 erstmals?" nebeneinander,
+// die eine mit "FC Chelsea", die andere mit "Chelsea FC".
+const KUERZEL = new Set(['fc','cf','afc','ac','as','sc','ssc','sv','tsv','vfb','vfl','bv','ca','cd','rc','ud','sd','ss','1','e','v']);
 const antwort = q => {
   const o = q.options || [];
   const i = typeof q.correct === 'number' ? q.correct : -1;
-  return String(o[i] === undefined ? '' : o[i]).trim().toLowerCase();
+  const roh = String(o[i] === undefined ? '' : o[i]).trim().toLowerCase();
+  const kern = roh.replace(/[^a-zäöüß0-9\s]/g, ' ').split(/\s+/)
+    .filter(w => w && !KUERZEL.has(w)).sort().join(' ');
+  return kern || roh;
 };
 
 let dateien;
@@ -86,7 +104,7 @@ for (const f of dateien) {
       const gleicheAntwort = antw[i] && antw[i] === antw[j];
       // Zwei Schwellen: sehr aehnlicher Text allein reicht, oder gleiche
       // Antwort bei nur maessig aehnlichem Text.
-      if (s >= 0.6 || (gleicheAntwort && s >= 0.34)) {
+      if (s >= S_TEXT || (gleicheAntwort && s >= S_ANTW)) {
         treffer.push({ i, j, s, gleicheAntwort });
       }
     }

@@ -3063,3 +3063,200 @@ in der Bundesliga?" (zweimal).
 Längenarbeit stehen — es hat keinen Sinn, die Balance von Fragen zu justieren, die
 anschließend ersetzt werden. Und mit rund 2000 Fragen bei drei Dateien ist das die größte
 Einzelcharge des Durchlaufs.
+
+## 160. fussball_leicht: der schlechteste Katalog des Bestands, jetzt im Korridor
+
+683 Fragen, 18 Teile, zwei Wellen zu je neun Agenten.
+
+| | Ränge | „längste" gewinnt | Struktur-Verrat | Gleichstände |
+|---|---|---|---|---|
+| vorher | 46/20/18/15 | **37 %** | 72 | 237 |
+| jetzt | **26/24/25/25** | **24 %** | **0** | 170 |
+
+correct-Positionen exakt 171/171/171/170. QA-Gate ohne Befund, strenge Dublettenprüfung
+ohne Befund. ERSETZTE_FRAGEN 755 → **871**.
+
+Der Zuschnitt war ein anderer als bei allen bisherigen Katalogen: Nicht Fragenersatz war die
+Hauptarbeit, sondern das **Umschreiben der Distraktoren**. Die Anweisung an alle Agenten
+lautete ausdrücklich, die richtige Antwort nicht zu kürzen, sondern die Ablenkungen
+auszubauen — sonst wird aus „die richtige Antwort ist die längste" nur „die richtige Antwort
+ist die kürzeste". Bei Definitionsfragen hieß das: alle vier Optionen zu gleichwertigen
+Vollsätzen ausformulieren.
+
+## 161. Die Sachfehlerdichte ist eine andere Größenordnung
+
+In den Musik- und Anime-Katalogen ging es um Feinheiten. Hier steht Erfundenes:
+
+**Erfundene Vereine.** Eine einzige Frage bot „VfL Dortmund", „Dortmund 04" und
+„FC Dortmund" nebeneinander an — drei Phantasievarianten desselben Klubs als Ablenkung neben
+der richtigen Antwort. Den Verein gibt es nur als Borussia Dortmund.
+
+**Erfundene Personen.** Bei der Frage nach „CR7" standen „Carlos Roberto", „Cesc Rodríguez"
+und „Cristian Ramos" — keiner davon existiert. Anderswo ein „Carlos Romário 7". Und ein
+Trainer namens **„Jogi Klinsmann"**, eine Mischung aus Löws Spitznamen und Klinsmanns
+Nachnamen.
+
+**Erfundene Begriffe.** „Standfußgräme", „Landeskönig", „Freistoßkreis", „FA League",
+„CONMEBOL Cup", der Spitzname „Der Bayer" für Florian Wirtz.
+
+**Erfundene Rekorde.** Gleich zweimal: „Wer ist mit **22 WM-Toren** der Rekordtorschütze?"
+→ Kylian Mbappé. Bis 2022 hielt Miroslav Klose den Rekord mit 16 Toren, Mbappé stand bei 12.
+In einem Fall fehlte Klose sogar in den Optionen.
+
+**Fragen, deren Optionen nicht zur Frage passten.** „Welcher spanische Mittelfeldspieler
+entschied das WM-Finale 2010?" mit den Optionen „Stürmer / Torhüter / Verteidiger". „Welche
+Technik beschreibt einen Elfmeter…?" mit Spielernamen als Optionen. „Welcher Verein wird
+'Die Roten' genannt?" mit „nach Trikotfarbe / nach Stadt".
+
+**Distraktoren, die zutrafen.** „La Furia" als angeblich falscher Spitzname Spaniens (das
+Land heißt La Furia Roja). „Goldener Handschuh" bei Oliver Kahn 2002 — den gewann er.
+„Primera División" neben „La Liga" — dasselbe. „Sporting Lissabon" bei der Frage nach
+grün-weißen Ringeltrikots — Sporting spielt genau so. „Zweite Liga" neben „2. Bundesliga".
+Und ein Distraktor „48" bei „Wie viele Teams spielen bei einer WM-Endrunde?" — seit 2026
+sind es 48.
+
+**Falsche Fakten in Erklärungen.** Die Bundesliga startete 1963 mit **16** Mannschaften,
+nicht 18. Der BVB spielte bis 1913 in **Blau-Weiß**, nicht seit Gründung in Schwarz-Gelb.
+Spanien gewann die EM nicht 1984 (das war Frankreich). Real Madrid gewann **fünf**
+Europapokale in Folge, nicht sieben. Der DFB-Pokal 2023 ging an RB Leipzig, nicht an Bayern.
+Das Auswärtstrikot der Nationalmannschaft war jahrzehntelang **grün**, nicht schwarz.
+Schienbeinschoner schreibt das Regelwerk **allen** Spielern vor, auch dem Torwart.
+„La Vecchia Signora" kommt nicht von den Streifen — das ist „I Bianconeri".
+
+## 162. Die Dublettenprüfung braucht zwei Schwellen, und beide taugen nur zum Vorschlag
+
+Erster Lauf mit der lockeren Voreinstellung: **77 Verdachtsfälle** in fussball_leicht.
+Beim Durchsehen zeigte sich, dass „Welche Mannschaft gewann die WM 1982?" und „…die EM
+2021?" nur deshalb zusammenfielen, weil beide Italien als Antwort haben. Im Fußball gewinnt
+dieselbe Mannschaft viele Turniere — „gleiche Antwort" ist hier ein schwaches Indiz. Von den
+77 waren nur 22 echt.
+
+**Hätte ich die Liste ungeprüft an die Agenten gegeben, wären rund fünfzig gute Fragen
+zerstört worden.** Die strenge Variante steht jetzt als `--streng` im Werkzeug
+(Textähnlichkeit 0,95 allein oder 0,75 bei gleicher Antwort).
+
+Die strenge Schwelle ist aber ihrerseits zu eng: Nach dem Zusammenfügen fanden sich noch
+sechs echte Dubletten, die sie nicht gemeldet hatte — „Werkself" stand **dreifach** in der
+Datei, „EM 2016", „Freistoß" und „Heimtrikot Deutschland" je doppelt. Dazu die erfundene
+Mbappé-Frage.
+
+**Merksatz:** Beide Einstellungen liefern Vorschläge, keine Urteile. Das Mittelfeld zwischen
+0,34 und 0,75 muss von Hand angesehen werden. Zusätzlich melden die Agenten Dubletten, die
+kein Skript findet — Teil 18 entdeckte zwei über Dateigrenzen hinweg.
+
+Außerdem eine neue Erkenntnis über die Vereinsnamen: „FC Chelsea" und „Chelsea FC" sind
+derselbe Klub, aber für jeden Textvergleich zwei verschiedene Antworten. Über die drei
+Fußball-Dateien gibt es **67 Namen mit mehreren Schreibweisen**. `check_dubletten.js`
+normalisiert Vereinskürzel jetzt weg, bevor es Antworten vergleicht.
+
+## 163. Neues Werkzeug: check_struktur.js
+
+Entstanden aus einem Zufallsfund. Ich hatte auf gemischte Groß-/Kleinschreibung geprüft und
+stattdessen das hier gefunden:
+
+    Ottmar Hitzfeld | Udo Lattek | Jupp Heynckes | alle drei sehr erfolgreich
+    1 | 3 | Unbegrenzt | 5
+    20 Spiele | 34 Spiele | 45 Spiele | Über 50 Pflichtspiele
+    23 Min | 36 Min Di María 2:0 | 45 Min | Beide Tore vor der Pause
+
+In jedem Fall erkennt man die richtige Antwort an ihrer Bauform, ohne die Frage zu verstehen.
+Das Skript meldet eine Frage, wenn **genau eine** Option ein Merkmal trägt und das die
+richtige ist: Meta-Option, einzige mit Klammer, einzige mit Jahreszahl, einzige mit
+Schrägstrich, als einzige mehrwortig, einzige Nicht-Zahl unter Zahlen.
+
+    node check_struktur.js fussball_leicht --dir questionbank_katalog
+    node check_struktur.js --alle --dir questionbank_katalog --kurz
+
+Stand über alle zehn Kataloge vor der Fußball-Charge: **204 Fragen**. Ein Fehlalarm-Muster
+war schnell sichtbar und ist behoben: „Alle Staatsgewalt geht vom Volke aus" ist ein
+Grundgesetz-Zitat, keine Meta-Option — die Meta-Erkennung greift jetzt nur bei Optionen mit
+höchstens fünf Wörtern.
+
+**Offen für den Nachzieh-Durchlauf:** politik_schwer hat 34 Treffer bei 200 Fragen, fast
+alle vom Typ „einzige Option mit Klammer". musik_leicht 9, musik_mittel 10, anime je 6–9.
+
+## 164. Die WM 2026 liegt hinter meinem Wissensstand
+
+Der Katalog enthält **52 Fragen rund um Weltmeisterschaften**. Die meisten sind historisch
+und unbedenklich. Aber die WM 2026 fand im Juni und Juli statt — nach meinem Wissensstand.
+Betroffen sind unter anderem:
+
+- „Welche Nationalmannschaft hat die meisten WM-Titel gewonnen?" → Brasilien (5)
+- „Wie oft wurde Brasilien Weltmeister?" → 5
+- „Wie viele WM-Titel hat Deutschland gewonnen?" → 4
+- „In welchem Jahr gewann Deutschland zuletzt die Weltmeisterschaft?" → 2014
+- „Welche Nation gewann 1966 die WM und wartet seitdem auf den nächsten Titel?" → England
+- „Welche Mannschaft bestritt die meisten WM-Endrunden ohne Titel?" → Mexiko
+
+Die Agenten haben diese Fragen auf Anweisung **unangetastet gelassen und gemeldet**, statt zu
+raten. Zwei haben von sich aus eine gute Lösung gewählt: Fragen so umformulieren, dass sie
+gegen den Turnierausgang immun sind („Wie viele Mannschaften spielten **von 1998 bis 2022**
+in einer WM-Endrunde?", „Wer stellte bei der WM 2014 mit seinem 16. Turniertor einen neuen
+WM-Torrekord auf?").
+
+**Entscheidung des Nutzers nötig:** Wer ist Weltmeister 2026 geworden? Mit dieser einen
+Angabe lassen sich alle 52 Fragen einordnen.
+
+Unabhängig davon ein Fehler, der schon vor 2026 bestand: „Welcher Spieler absolvierte die
+meisten WM-Endrundenspiele?" → Lothar Matthäus (25). Messi überholte ihn bereits im Finale
+2022 mit 26 Einsätzen. Steht in fussball_schwer.
+
+## 165. check_unloesbar.js meldet jetzt mehr, weil die Erklärungen besser wurden
+
+Nach der Charge meldet das Werkzeug 15 Verdachtsfälle in fussball_leicht, davon 7 „schwer".
+Alle geprüften sind **Fehlalarme**:
+
+    F: Wie viele Spieler stehen gleichzeitig auf dem Feld?   markiert: 11
+    E: "Zu den zehn Feldspielern kommt der Torwart."         -> Skript sieht die 10
+
+    F: Wie viele Tore erzielte Lewandowski 2020/21?          markiert: 41
+    E: "übertraf die 40 Treffer von Gerd Müller"             -> Skript sieht die 40
+
+Das Werkzeug nimmt an, dass die markierte Zahl in der Erklärung vorkommen muss. Genau das
+gilt aber nicht mehr, seit die Erklärungen Vergleichszahlen und Vorgeschichte nennen — was
+ausdrücklich gewünscht ist. Die Heuristik müsste die markierte Zahl zusätzlich in einem
+Bestätigungskontext suchen. Bis dahin: Treffer einzeln ansehen, nicht als Fehlerliste lesen.
+
+## 166. WM-Fragen datumsfest gemacht — ohne den Ausgang der WM 2026 zu kennen
+
+Nachtrag zu §164. Der Nutzer wollte die WM-Fragen vor dem Commit abgeschlossen haben. Das
+ging auch ohne die fehlende Angabe: **Statt eines Zeitstempels bekommen die Fragen einen
+Datumsanker.**
+
+Der Unterschied ist wesentlich. „Stand August 2026" wäre eine Behauptung *über* die WM 2026 —
+also genau über das, was ich nicht belegen kann. „Bis zur WM 2022" ist dagegen unabhängig vom
+Turnierausgang wahr und bleibt es auch in zehn Jahren.
+
+**19 Fragen umgestellt** (6 in fussball_leicht, 5 in fussball_mittel, 8 in fussball_schwer):
+
+| vorher | nachher |
+|---|---|
+| „Welche Nationalmannschaft hat die meisten WM-Titel gewonnen?" | „…hatte **bis zur WM 2022** die meisten…" |
+| „Wie oft wurde Brasilien Weltmeister?" | „Wie oft wurde Brasilien **bis zur WM 2022** Weltmeister?" |
+| „In welchem Jahr gewann Deutschland **zuletzt** die WM?" | „In welchem Jahr gewann Deutschland die WM **in Brasilien**?" |
+| „Welche Nation gewann 1966 und **wartet seitdem** auf den nächsten Titel?" | „Welche Nation gewann 1966 **im eigenen Land** die WM?" |
+| „Welche Mannschaft bestritt die meisten WM-Endrunden ohne Titel?" | „…**bis zur WM 2022** die meisten…" |
+
+Wo möglich, wurde die Frage auf ein abgeschlossenes Ereignis umgestellt statt bloß datiert —
+das liest sich besser und hält länger.
+
+**Drei erfundene Rekorde entfernt.** Die Behauptung, Kylian Mbappé sei mit 22 Toren
+WM-Rekordtorschütze, stand an drei Stellen im Katalog, zweimal davon in einer *Erklärung*
+(„ein Rekord, der später von Kylian Mbappé übertroffen wurde"). Miroslav Klose hält den
+Rekord mit 16 Toren, Mbappé stand nach 2022 bei 12. Ersetzt durch belegbare Fragen zur
+WM 2022 bzw. korrigierte Erklärungen.
+
+**Ein Fehler, der schon vor 2026 bestand:** „Welcher Spieler absolvierte die meisten
+WM-Endrundenspiele?" → Lothar Matthäus (25). Lionel Messi überholte ihn bereits im Finale
+2022 mit seinem 26. Einsatz. Jetzt auf „bis zur WM 2018" datiert, die Erklärung nennt Messis
+Überholmanöver ausdrücklich.
+
+**Zwei weitere Alt-Dubletten** fielen dabei auf, die alle Skriptprüfungen überstanden hatten:
+„Welche Nationalmannschaft hat die meisten WM-Titel gewonnen?" ↔ „Welches Land hat die
+meisten Fußball-Weltmeisterschaften gewonnen?" und „Wie viele WM-Titel hat Deutschland
+gewonnen?" ↔ „Wie oft hat Deutschland die Fußball-Weltmeisterschaft gewonnen?". Je eine
+davon ist durch eine neue Frage ersetzt.
+
+**Die Frage an den Nutzer bleibt trotzdem sinnvoll**, nur nicht mehr dringend: Wer 2026
+Weltmeister wurde, entscheidet, ob die Datumsanker irgendwann durch aktuelle Zahlen ersetzt
+werden sollen. Falsch ist jetzt nichts mehr.
