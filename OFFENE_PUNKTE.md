@@ -3361,3 +3361,7 @@ Durchgang kann Inhalt und Zeitbezug zusammen erledigen.
 **Ab sofort gilt für jeden Agentenauftrag:** Websuche per `ToolSearch` nachladen und jede
 zeitabhängige Aussage belegen — auch die in der Erklärung. Und: Eine Aussage, die sich nicht
 bestätigen lässt, wird **gemeldet, nicht gelöscht.**
+
+**Nachtrag zu §171:** Der Zweifelsfall ist entschieden — der Nutzer wollte den aktuellen Stand. Die Frage nach Real Madrids Heimstadion nennt jetzt den offiziellen Kurznamen "Bernabéu"; alle vier Optionen wurden dafür auf kurze Stadionnamen umgestellt (Metropolitano / Sánchez Pizjuán / San Mamés / Bernabéu), damit die richtige Antwort nicht durch ihre Kürze auffällt. Belegt über die Vereinsseite bernabeu.realmadrid.com und die Berichterstattung vom November 2025 (Estadio Santiago Bernabéu 1955–2025).
+
+Dabei fiel ein veralteter Distraktor auf: In der Barcelona-Frage stand "Wanda Metropolitano" — dieser Name gilt seit 2022 nicht mehr. Auf "Metropolitano" gekürzt. Das erzeugte prompt einen neuen Struktur-Verrat, weil "Camp Nou" damit die einzige zweiteilige Option war; mit "San Mamés" statt "Mestalla" ist er wieder aufgelöst. **Lehre: Jede Optionsänderung kann die Bauform kippen — check_struktur.js danach immer laufen lassen.**
