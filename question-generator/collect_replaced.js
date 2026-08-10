@@ -76,7 +76,16 @@ for (const rel of dateien) {
 
   let weg = 0;
   alt.forEach((q, i) => {
-    if (jaccard(worte(q.question), worte(neu[i].question)) >= SCHWELLE) return;
+    // Eine blosse Umformulierung liegt nur dann vor, wenn der Text aehnlich
+    // bleibt UND die richtige Antwort dieselbe ist. Ohne die zweite Bedingung
+    // fielen echte Ersetzungen durch: "In welchem Jahr erschien Album X von
+    // Kuenstler Y?" -> "Wer produzierte Album X von Kuenstler Y?" teilt
+    // zwangslaeufig Album- und Kuenstlernamen und lag damit ueber der
+    // Schwelle. In musik_schwer waren davon 10 von 67 Aenderungen betroffen.
+    const antwortAlt = String((q.options || [])[q.correct] || '').trim();
+    const antwortNeu = String((neu[i].options || [])[neu[i].correct] || '').trim();
+    if (antwortAlt === antwortNeu &&
+        jaccard(worte(q.question), worte(neu[i].question)) >= SCHWELLE) return;
     weg++;
     gefunden.push({
       question: q.question, options: q.options, correct: q.correct,

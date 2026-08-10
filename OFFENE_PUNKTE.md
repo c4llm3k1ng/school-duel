@@ -2862,3 +2862,204 @@ Die fünf echten Dubletten werden bei der Fußball-Charge mitkorrigiert. Die gle
 Fragestämme sind meist harmlos („Welche Schreibweise ist richtig?" steht viermal mit
 unterschiedlichen Optionen), aber ein Kind sieht denselben Fragetext mehrfach — beim
 Nachzieh-Durchlauf mit ansehen.
+
+---
+
+## 152. Jahreszahl-Quote umgesetzt: musik_schwer von 36 % auf 15 %
+
+Entscheidung des Nutzers zu §150: **höchstens 15 % Jahreszahl-Fragen je Datei.** Umgesetzt in
+acht parallelen Teilen. 60 von 103 Jahreszahl-Fragen wurden durch inhaltliche ersetzt, die 43
+aussagekräftigsten blieben stehen.
+
+| | Ränge | „längste" gewinnt | Gleichstände |
+|---|---|---|---|
+| vorher | 25/25/26/25 | 23 % | 148 von 286 |
+| jetzt | **26/24/25/25** | **24 %** | **81 von 286** |
+
+**Der wichtigere Effekt steckt in der letzten Spalte.** Vier gleich lange Jahreszahlen erzeugen
+zwangsläufig einen Gleichstand, und Gleichstände fallen aus der Rangwertung. Die vorherige
+Verteilung von 25/25/26/25 ruhte deshalb auf nur 138 der 286 Fragen — die Hälfte der Datei war
+statistisch unsichtbar. Jetzt sind es 205 Fragen. Die Zahl sieht fast gleich aus, sagt aber
+sehr viel mehr aus als vorher.
+
+Behalten wurden Jahreszahlen, die selbst die Information tragen: 'Rapper's Delight' 1979,
+Bowies 'Blackstar' 2016 (zwei Tage vor seinem Tod), Mariah Careys Platz 1 erst 2019, 'Nevermind'
+1991. Ersetzt wurden beliebige Erscheinungsdaten — Debütalben, x-te Platten, Geburtsjahre.
+
+## 153. Sieben Alt-Dubletten, die der ganze Durchlauf nicht gefunden hat
+
+Nach dem Zusammenfügen habe ich einen Ähnlichkeitsvergleich über die Datei laufen lassen.
+Ergebnis: **zehn Dublettenpaare** — und nur drei davon stammten aus dieser Charge. Die anderen
+sieben lagen seit jeher in der Datei:
+
+| Frage | stand doppelt als |
+|---|---|
+| 'Off the Wall' — Erscheinungsjahr | „das Album" / „das Soloalbum" |
+| 'Licensed to Ill' — Erscheinungsjahr | mit und ohne Zusatz „erstes Rap-Album auf Platz 1" |
+| 'Rapper's Delight' — Erscheinungsjahr | „erschien" / „veröffentlichte die Sugarhill Gang" |
+| 'Please Mr. Postman' — welche Motown-Gruppe | „Welche Motown-Gruppe…" / „Wer sang…" |
+| 'Beat It' — Gitarrensolo | „Wer spielte…" / „Welcher Gitarrist…" |
+| 'Strange Fruit' — Sängerin | „Wer sang…" / „Welche Sängerin…" |
+| Grammy-Rekord | „Welche Künstlerin…" / „Wer hat mehr als jeder andere…" |
+
+**Warum sie durchgerutscht sind:** Die Dublettenprüfung in `chunk.js merge` vergleicht *exakte*
+Fragetexte. Ein einziges verändertes Wort macht zwei identische Fragen unsichtbar. Genau das
+ist hier siebenmal der Fall.
+
+**Besonders aufschlussreich sind die ersten drei.** Das sind Jahreszahl-Fragen, die zwei
+verschiedene Agenten unabhängig voneinander als „bedeutungsvollen Meilenstein" zum Behalten
+ausgewählt haben — mit derselben, jeweils zutreffenden Begründung. Die Auswahllogik war
+richtig; sie konnte die Dublette nur nicht sehen, weil jeder Agent immer nur seinen eigenen
+Teil kennt.
+
+**Drei Dubletten entstanden neu in dieser Charge**, nach demselben Mechanismus: Mehrere Agenten
+ersetzten unabhängig zwei Formulierungen derselben Jahreszahl-Frage und kamen dabei auf
+dieselbe naheliegende Ersatzfrage (Jay-Z/Roc-A-Fella, Brian Jones/Sitar, Björk/Sugarcubes).
+Das ist kein Agentenfehler, sondern eine Lücke im Verfahren.
+
+**Neues Werkzeug:** `question-generator/check_dubletten.js` misst Jaccard-Ähnlichkeit über die
+Inhaltswörter der Frage und schlägt zusätzlich an, wenn zwei Fragen bei mittlerer Ähnlichkeit
+dieselbe richtige Antwort haben. Aufruf:
+
+    node check_dubletten.js musik_schwer --dir questionbank_katalog
+    node check_dubletten.js --alle --dir questionbank_katalog
+
+Alle zehn Paare sind aufgelöst: die jeweils zweite Fassung wurde durch eine neue inhaltliche
+Frage ersetzt, mit vorher berechnetem Rang (4× Rang 2, 2× Rang 3, 4× Rang 4), damit die
+Verteilung nicht kippt.
+
+**Für den Nachzieh-Durchlauf:** Das Skript muss über **alle** Dateien laufen, Kataloge wie
+Schulfragen. Die exakte Prüfung hat bisher nur 5 Dubletten im ganzen Bestand gemeldet (alle in
+den Fußball-Dateien) — nach diesem Befund ist das mit Sicherheit deutlich zu wenig.
+
+## 154. Was den Agenten sonst noch auffiel
+
+- **Ein Zeitstempel von 2023** statt „Stand August 2026" in musik_schwer (Frage nach der Zahl
+  der Studioalben). Die Regel aus §129 ist noch nicht überall durchgezogen.
+- **„Wie viele Grammys gewann Lauryn Hill 1999?"** mit den Optionen 5/3/4/7 ist zwar keine
+  Jahreszahl-Frage, aber genauso reines Zahlenraten. Falls die 15-%-Regel später auf nackte
+  Zahlenoptionen ausgeweitet werden soll, ist das der nächste Kandidat.
+- **„Bürgerlicher Name von Jay-Z"** bietet viermal „Shawn … Carter" — die Frage entscheidet
+  sich an einem einzigen Mittelnamen. Das ist Raten, nicht Wissen.
+- **Uneinheitliche `topic`-Werte** in beiden Musik-Dateien: neben „Rock", „Pop", „Hip-Hop"
+  stehen Mischformen wie „Rock & Pop" und „Klassik/Pop". Falls Kataloge je nach Thema
+  gefiltert werden sollen, fallen diese aus dem Raster. Gehört zum Themenfeld-Chaos aus §117.
+- **Meistverkaufte Single:** Der Distraktor „Candle in the Wind 1997" trifft laut der eigenen
+  Erklärung der Frage teilweise zu (zwei konkurrierende Zählweisen). Grenzfall zur Regel
+  „kein Distraktor darf zutreffen".
+
+## 155. musik_mittel: Jahresquote und Dubletten — acht von zehn Katalogen fertig
+
+20 von 63 Jahreszahl-Fragen ersetzt, dazu zehn Dublettenpaare aufgelöst.
+
+| | Ränge | „längste" gewinnt | Gleichstände |
+|---|---|---|---|
+| vorher | 25/25/25/25 | 23 % | 108 von 286 |
+| jetzt | **25/25/25/25** | **24 %** | **92 von 286** |
+
+Jahreszahl-Fragen: 63 → **40 (14 %)**. correct-Positionen exakt 72/72/71/71.
+Dieselbe Bewegung wie in musik_schwer: Die Verteilung sieht unverändert aus, ruht aber
+auf 194 statt 178 gewerteten Fragen.
+
+Auch hier waren **sieben der zehn Dubletten Altbestand** (Ziggy Stardust, Billie Eilishs
+Debütjahr, Backstreet Boys, John Bonham, 'Wrecking Ball', Kendrick Lamar, Lady Gagas
+'The Fame'), zwei entstanden neu in dieser Charge.
+
+## 156. Der eigentliche Befund: gleiche Antwort ist kein Dublettenkriterium — und doch eins
+
+Beim Auflösen der zehn Paare habe ich zehn Ersatzfragen selbst geschrieben. Fünf davon
+trafen eine Antwort, die in derselben Datei **schon einmal die richtige war**. Drei davon
+waren echte Dubletten, die ich gerade selbst erzeugt hatte:
+
+- „Welche Band veröffentlichte 1976 das Album 'Hotel California'?" ↔ meine Neufrage
+  „Welche Band veröffentlichte den Song 'Hotel California'?"
+- „Welche Sängerin sang 'My Heart Will Go On' für den Film Titanic?" ↔ meine fast
+  wortgleiche Neufassung
+- „Welche Band sang 'Personal Jesus'?" ↔ meine Frage, die denselben Song nennt
+
+In musik_schwer dasselbe: Meine Frage nach dem Erfinder der 'Wall of Sound' stand dort
+**bereits fast wortgleich** in der Datei, und meine Ersatzfrage zu Otis Redding wurde von
+einer anderen Frage verraten, die „Otis Reddings 'Respect'" im Fragetext nennt.
+
+**Der Ähnlichkeitscheck aus §153 findet das nicht.** Er verlangt bei gleicher Antwort noch
+34 % Textähnlichkeit — „Welche Band veröffentlichte den Song X?" und „Welche Band
+veröffentlichte 1976 das Album X?" liegen darunter, obwohl sie dasselbe fragen.
+
+**Konsequenz für jede weitere Charge:** Vor dem Einsetzen einer neuen Frage muss geprüft
+werden, ob ihre Antwort in der Datei schon einmal die richtige ist **und** ob eines ihrer
+Schlüsselwörter in einer anderen Frage oder Erklärung vorkommt. Beides ist eine
+Zwei-Zeilen-Prüfung und hätte acht Fehler in dieser Charge verhindert. Ich habe sie hier
+nachträglich für alle 18 selbst geschriebenen Ersatzfragen durchgeführt und acht davon
+noch einmal ausgetauscht.
+
+Nebenbefund: Mehrfach belegte richtige Antworten sind in musik_mittel Bestand, nicht
+Ausnahme — Elton John viermal, Freddie Mercury, Jay-Z, Beyoncé und Lady Gaga je dreimal.
+Das ist für sich kein Fehler, macht die Datei aber weniger abwechslungsreich als ihre
+286 Fragen vermuten lassen.
+
+## 157. Verrat über Kreuz: Fragen, die einander beantworten
+
+Die Agenten haben unabhängig voneinander eine Fehlerart gemeldet, die bisher nirgends
+notiert war: **zwei Fragen derselben Datei, von denen die eine die Antwort der anderen
+im Text oder in der Erklärung nennt.** Gefunden wurden unter anderem:
+
+- „Wer spielte von **1962 bis 1993** den Bass bei den Rolling Stones?" nennt das Jahr,
+  nach dem eine zweite Frage („Wann traten die Rolling Stones zum ersten Mal auf?") fragt.
+- Die Erklärung zur Frage nach dem meistverkauften Album nennt „'Thriller' (**1982**)" —
+  eine zweite Frage fragt nach genau diesem Jahr.
+- „In welchem Jahr erschien das Album 'Metallica' (**The Black Album**)?" verrät die
+  Antwort auf „Welches Metallica-Album ist als 'The Black Album' bekannt?".
+  *(Diese Frage habe ich umformuliert.)*
+- „Welcher Schlagzeuger spielte bei Led Zeppelin?" hat **Keith Moon** als Ablenkung,
+  eine zweite Frage fragt nach dem Schlagzeuger von The Who.
+- „Welche Band sang 'Basket Case', 'Good Riddance' und 'American Idiot'?" ↔ eine Frage,
+  die „Album 'American Idiot' von **Green Day**" im Fragetext nennt.
+- Zwei Fragen nennen 'Skyfall', die eine als Ablenkung, die andere fragt nach dem Interpreten.
+
+Im Spiel werden fünf Fragen je Runde gezogen; die Wahrscheinlichkeit, ein solches Paar
+gemeinsam zu ziehen, ist klein, aber das Muster ist systematisch und gehört in den
+Nachzieh-Durchlauf. Suchhilfe: Für jede richtige Antwort prüfen, ob ihr Wortlaut in einer
+anderen Frage oder Erklärung derselben Datei vorkommt.
+
+## 158. collect_replaced.js hat zehn echte Ersetzungen nicht erfasst
+
+Das Skript wertete eine Änderung als bloße Umformulierung, sobald Alt- und Neufassung
+20 % Wortähnlichkeit erreichten. Das trifft aber auf fast jede Jahresfragen-Ersetzung zu:
+
+    ALT: In welchem Jahr erschien das Album 'Achtung Baby' von U2?
+    NEU: Wer produzierte U2s Album 'Achtung Baby' gemeinsam mit Daniel Lanois?
+
+Album- und Künstlername sind zwangsläufig identisch. In musik_schwer fielen dadurch
+**10 von 67** Ersetzungen aus der Liste.
+
+**Behoben:** Eine Änderung gilt jetzt nur dann als Umformulierung, wenn der Text ähnlich
+bleibt **und die richtige Antwort dieselbe ist.** Damit werden echte Umformulierungen
+weiter korrekt übersprungen (in musik_mittel zwei: ein Grammatikfehler „Welches Jahr
+erschien…" → „In welchem Jahr erschien…" und die entschärfte Metallica-Frage), echte
+Ersetzungen aber nicht mehr. ERSETZTE_FRAGEN.json steht jetzt bei **755**.
+
+## 159. Die Fußball-Kataloge sind ein anderer Fall als erwartet
+
+Der neue Ähnlichkeitscheck über alle Kataloge zeigt, womit die nächste Charge zu rechnen hat:
+
+| Datei | Fragen | in Verdachtspaaren | wortgleiche Gruppen | Ränge | „längste" |
+|---|---|---|---|---|---|
+| fussball_leicht | 683 | **212 (31 %)** | 14 | 46/20/18/15 | **37 %** |
+| fussball_mittel | 684 | **181 (26 %)** | 4 | 39/21/20/20 | **33 %** |
+| fussball_schwer | 640 | **137 (21 %)** | 2 | 42/26/15/18 | **34 %** |
+
+Zum Vergleich: In allen sieben bearbeiteten Katalogen liegen die Ränge bei 24–27 % und
+„längste gewinnt" bei 23–25 %. Die Fußball-Dateien sind also **zusätzlich** zur
+Dublettenlage die am stärksten verratenden des ganzen Bestands — in fussball_leicht ist die
+richtige Antwort in 46 % der Fälle die längste, und wer immer die längste Option anklickt,
+liegt in 37 % der Fälle richtig statt in 25 %.
+
+Wortgleiche Beispiele: „In welchem Stadion fand das WM-Finale 2014 statt?" (zweimal),
+„Wie heißt das Heimstadion von Atletico Madrid?" (zweimal), „Welcher Verein gewann 2006
+die Champions League?" (zweimal), „Wie viele Punkte bekommt eine Mannschaft für einen Sieg
+in der Bundesliga?" (zweimal).
+
+**Folge für den Zuschnitt:** Bei den Fußball-Katalogen muss die Entdopplung vor der
+Längenarbeit stehen — es hat keinen Sinn, die Balance von Fragen zu justieren, die
+anschließend ersetzt werden. Und mit rund 2000 Fragen bei drei Dateien ist das die größte
+Einzelcharge des Durchlaufs.
