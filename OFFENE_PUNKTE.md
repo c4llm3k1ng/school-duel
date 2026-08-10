@@ -2835,3 +2835,30 @@ Zahlen erzeugen zwangsläufig einen Längengleichstand — in `musik_schwer` fal
 Die Agenten haben das **zu Recht nicht** eigenmächtig umgebaut — das wäre die Neuerstellung
 halber Dateien. **Entscheidung des Nutzers nötig:** Sollen Jahreszahl-Fragen anteilig durch
 inhaltliche Fragen ersetzt werden (etwa auf höchstens 10 % je Datei)?
+
+---
+
+## 151. Zwei exakte Dubletten — und eine Lücke im Verfahren
+
+Beim Gegenrechnen des Firebase-Pushs stimmte eine Zahl nicht: Das Werkzeug meldete 155
+verlorene Fragen, die Zählung ergab 156 geänderte Fragetexte. Diese eine Abweichung führte
+auf **zwei exakte Dubletten** in  — dieselbe Frage mit denselben Optionen an
+zwei Stellen („In welchem Jahr erschien das Album 2001 von Dr. Dre?" und dasselbe für
+„Yeezus"). Beide ersetzt.
+
+**Die Ursache ist strukturell:** Ein Agent sieht immer nur seinen eigenen Teil. Dass dieselbe
+Frage in einem anderen Teil noch einmal steht, kann keiner von ihnen bemerken. Die Prüfung
+gehört deshalb an die Stelle nach dem Zusammenfügen — dort ist der Blick auf die ganze Datei
+erstmals möglich. In  eingebaut.
+
+**Bestandsaufnahme über alles:**
+
+| | echte Dubletten (Frage UND Optionen) | gleiche Fragestämme, andere Optionen |
+|---|---|---|
+| Kataloge | **5** — alle in den drei Fußball-Dateien | 19 |
+| Schulfragen | **0** | 18 |
+
+Die fünf echten Dubletten werden bei der Fußball-Charge mitkorrigiert. Die gleichen
+Fragestämme sind meist harmlos („Welche Schreibweise ist richtig?" steht viermal mit
+unterschiedlichen Optionen), aber ein Kind sieht denselben Fragetext mehrfach — beim
+Nachzieh-Durchlauf mit ansehen.

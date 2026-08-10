@@ -79,6 +79,21 @@ if (mode === 'merge') {
       console.log(`  ANZAHL WEICHT AB: ${base} – ${orig.length} vorher, ${merged.length} nachher. Nicht zusammengefuegt.`);
       problems++; continue;
     }
+    // Dubletten ueber Teilgrenzen hinweg. Ein Agent sieht immer nur seinen
+    // eigenen Teil und kann deshalb nicht bemerken, dass dieselbe Frage in
+    // einem anderen Teil noch einmal steht. Erst hier, nach dem Zusammenfuegen,
+    // ist der Blick auf die ganze Datei moeglich - deshalb gehoert die Pruefung
+    // genau an diese Stelle. (Gefunden in musik_schwer: zwei exakte Dubletten.)
+    const zaehl = {};
+    merged.forEach(q => { const t = String(q.question).trim(); zaehl[t] = (zaehl[t] || 0) + 1; });
+    const dubletten = Object.entries(zaehl).filter(([, n]) => n > 1);
+    if (dubletten.length) {
+      console.log(`  DOPPELTE FRAGETEXTE in ${base}:`);
+      dubletten.forEach(([t, n]) => console.log(`     ${n}x  ${t.slice(0, 80)}`));
+      console.log('     (Datei wurde trotzdem geschrieben - bitte eine der Fragen ersetzen.)');
+      problems++;
+    }
+
     fs.writeFileSync(path.join(DIR, base), JSON.stringify(merged, null, 2), 'utf8');
     list.forEach(p => fs.unlinkSync(path.join(WORK, p)));
     console.log(`  ${base.padEnd(44)} ${list.length} Teile -> ${merged.length} Fragen`);
