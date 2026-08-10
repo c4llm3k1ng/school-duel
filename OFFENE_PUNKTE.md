@@ -2743,3 +2743,95 @@ Ausnahme zu viel als ein Eigenname, der zu „Weiß" verschlimmbessert wird.
 - Mehrere meldeten **Querverweise innerhalb der Datei**: Keith Moon ist in einer Frage
   Distraktor und in einer anderen die Lösung; wer am Stück spielt, bekommt einen Hinweis
   geschenkt.
+
+---
+
+# Nachtrag: musik_schwer komplett — sieben von zehn Katalogen fertig
+
+286 Fragen, acht Teile, kombiniertes Verfahren.
+
+| | Ränge | „längste" gewinnt |
+|---|---|---|
+| vorher | 37/25/21/18 | 28 % |
+| jetzt | **25/25/26/25** | **23 %** |
+
+Katalog-Befunde 50 → 49, ERSETZTE_FRAGEN 660. Sieben Zeitstempel gesetzt.
+
+## 146. Neun Generator-Artefakte im Projekt — das Muster ist systematisch
+
+In dieser Datei kamen **vier weitere** dazu (§115, §141 hatten fünf):
+
+- „In welchem Jahr erschien das Album 'Fear' von Kendrick Lamar – **nein: 'DAMN.'**?"
+- „Wer ist der Produzent und Rapper Kanye West bekannt für – welches Album erschien 2013?"
+- „Welche Sängerin sang 'Baby Got Back' – **nein**: wer sang 'Super Bass'?" (doppelt kaputt:
+  'Baby Got Back' ist von Sir Mix-a-Lot, einem Mann)
+- „Welcher Jazzgitarrist ist bekannt für 'Kind of Blue' – **nein**: welcher Gitarrist spielte
+  auf diesem Album?" (auf 'Kind of Blue' spielt **kein** Gitarrist)
+- „In welchem Jahr erschien Eminem und Dr. Dres Zusammenarbeit '2Pac feat. Eminem – Doe Boys'
+  – **nein**: wann erschien 'Chronic 2001'?" (zusätzlich wortgleiche Dublette einer anderen
+  Frage derselben Datei)
+
+**Und eine Variante, die noch schwerer zu finden ist:** Die Selbstkorrektur stand nicht im
+Fragetext, sondern **in der Antwortoption**. Frage: „Welche **Frau** war die erste, die drei
+Grammys in einer Nacht gewann (1981)?" — als richtig markiert:
+**„Christopher Cross – tatsächlich ein Mann"**.
+
+**Folge für den Nachzieh-Durchlauf:** Nach diesem Muster muss auch in Optionen und
+Erklärungen gesucht werden, nicht nur in Fragetexten. Suchhilfe: „ – nein", „nicht", „aber",
+„tatsächlich" in Kombination mit einem Gedankenstrich.
+
+## 147. Erfundene Krankheiten und Todesumstände
+
+- **Vivaldi war nicht blind** — die Frage behauptete es, die Erklärung erfand eine Erblindung.
+  Ausgerechnet **Händel** stand als Distraktor daneben und *war* erblindet.
+- **Stevie Wonder erblindete nicht durch einen Autounfall** — die Erklärung sagte es selbst
+  („er erlitt keinen Unfall") und widersprach damit der Frage.
+- **Bowies 'Blackstar' war nicht posthum** — es erschien zwei Tage vor seinem Tod.
+- **James Brown starb 2006, nicht 2020** — auch hier sagte es die eigene Erklärung.
+- **MF DOOM starb im Oktober 2020**, nicht 2021.
+
+## 148. Distraktoren, die die Frage besser trafen als die Antwort
+
+- **Bebop:** „Welcher **Jazz-Pianist** schuf den Bebop?" mit Charlie Parker (Saxofonist) —
+  **Thelonious Monk** stand daneben und war Bebop-Mitbegründer *und* Pianist.
+- **Beatles USA:** „Meet the Beatles!" als erstes US-Album — **„Introducing the Beatles"**
+  erschien zehn Tage früher und stand als Distraktor daneben.
+- **Twist and Shout (1961):** markiert waren die Isley Brothers, deren Version von **1962 ein
+  Cover** ist; das Original stammt von den Top Notes.
+- **Bach:** „Welches Instrument spielte Bach hauptsächlich?" → Orgel, während die Erklärung
+  „Orgel **und Cembalo**" sagte und Cembalo als Distraktor danebenstand.
+- **Solo nach der Band:** George Harrison als erster Ex-Beatle auf Platz 1 — **McCartneys**
+  Album stand ein halbes Jahr früher dort.
+- **Conscious Rap:** „Wer begründete die Bewegung?" — **alle vier Optionen** trafen zu.
+- **Neil Young:** „Welches Album gilt als sein Meisterwerk?" — ebenfalls alle vier.
+
+## 149. Falsche Auszeichnungen und Rekorde
+
+Kanye West hat **nie** „Album of the Year" gewonnen (2012 nur nominiert). James Brown ist
+**kein Grammy-Rekordhalter** (zwei kompetitive Grammys). Norah Jones gewann 2003 **fünf**
+eigene Grammys, nicht acht. Cliff Richards 'Move It' kam auf **UK-Platz 2**, nicht 1.
+'Rapper's Delight' ist eine **Single**, kein Album. Claptons „Slowhand" kommt **nicht** von
+langsamem Spiel, sondern vom Mitklatschen des Publikums beim Saitenwechsel. The Clash waren
+„the only **band** that matters", nicht „album".
+
+## 150. Ein Strukturproblem, das eine Entscheidung braucht
+
+Ein Agent hat gemeldet, dass 16 von 34 Fragen seines Teils reine „In welchem Jahr erschien…"-
+Fragen mit vier Jahreszahlen sind. Nachgemessen über alle Kataloge:
+
+| Katalog | Jahreszahl-Fragen |
+|---|---|
+| **musik_schwer** | **105 von 286 (37 %)** |
+| **musik_mittel** | **63 von 286 (22 %)** |
+| anime_schwer | 16 von 280 (6 %) |
+| fussball × 3 | je 2–3 % |
+| anime_leicht/mittel, musik_leicht, politik_schwer | 0 % |
+
+**Zwei Folgen.** Erstens didaktisch: Ein Drittel einer Datei fragt nur nach Jahreszahlen, das
+ist reines Auswendiglernen ohne Erschließbarkeit. Zweitens messtechnisch: Vier gleich lange
+Zahlen erzeugen zwangsläufig einen Längengleichstand — in `musik_schwer` fallen dadurch
+**148 von 286 Fragen** aus der Rangwertung, die Statistik ruht auf der Hälfte der Datei.
+
+Die Agenten haben das **zu Recht nicht** eigenmächtig umgebaut — das wäre die Neuerstellung
+halber Dateien. **Entscheidung des Nutzers nötig:** Sollen Jahreszahl-Fragen anteilig durch
+inhaltliche Fragen ersetzt werden (etwa auf höchstens 10 % je Datei)?
