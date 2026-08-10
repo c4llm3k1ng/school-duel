@@ -3260,3 +3260,104 @@ davon ist durch eine neue Frage ersetzt.
 **Die Frage an den Nutzer bleibt trotzdem sinnvoll**, nur nicht mehr dringend: Wer 2026
 Weltmeister wurde, entscheidet, ob die Datumsanker irgendwann durch aktuelle Zahlen ersetzt
 werden sollen. Falsch ist jetzt nichts mehr.
+
+## 167. Der ganze Durchlauf lief ohne eine einzige Quelle — Testlauf mit Websuche
+
+Der Nutzer hat den wunden Punkt benannt: Sämtliche Faktenprüfungen dieses Projekts beruhten
+auf dem Gedächtnis des Sprachmodells. Kein Agent hat je etwas nachgeschlagen. Der
+Wissensstand endet im Mai 2026 — und es gab die ganze Zeit ein Websuche-Werkzeug, das
+niemand benutzt hat. Es steht nicht von Anfang an in der Werkzeugliste, sondern muss per
+`ToolSearch` mit `select:WebSearch,WebFetch` nachgeladen werden; vermutlich ist es deshalb
+in Vergessenheit geraten.
+
+**Testlauf über 228 Fragen** (6 von 18 Teilen aus fussball_leicht, die dichtesten):
+
+| | |
+|---|---|
+| als zeitabhängig eingestuft | 86 von 228 (38 %) |
+| davon vom Mustererkenner vorab markiert | rund 70 % |
+| Fehlalarme des Mustererkenners | rund die Hälfte seiner Markierungen |
+| **tatsächliche Korrekturen** | **7** (3 % der Fragen) |
+
+## 168. Was ein Mustererkenner nicht leisten kann
+
+Die Agenten sollten alle 38 Fragen ihres Blocks selbst einordnen und die Vorabmarkierung nur
+als Anhaltspunkt nehmen. Das war richtig: Sie fanden durchweg Fragen, die kein Signalwort
+tragen und trotzdem altern.
+
+**Was der Filter übersah:**
+
+- „Aus wie vielen Vereinen besteht die Bundesliga?" — Zählfrage ohne Jahresanker
+- „Welche Firma stellt **seit Jahrzehnten** die offiziellen WM-Bälle her?"
+- Stadionnamen (Sponsorverträge laufen aus), Stadionkapazitäten in Erklärungen
+- „Kein anderer Spieler hat drei WM-Titel gesammelt" — Bestmarke ohne Signalwort
+- „Der Sieger vertritt Südamerika bei der Klub-WM" — eine Modusregel
+
+**Was der Filter fälschlich meldete:** abgeschlossene Ereignisse mit Jahresangabe,
+Regeldefinitionen, Zahlwörter in Mathematikaufgaben, Superlative in Anime-Fiktion.
+
+**Schlussfolgerung:** Der Filter taugt zur Priorisierung, nicht zur Auswahl. Wer nur die
+markierten Fragen prüft, verfehlt etwa ein Drittel.
+
+## 169. Die Fehler standen fast alle in den ERKLÄRUNGEN
+
+Der wichtigste Verfahrensbefund. Von den sieben Korrekturen betraf **keine einzige** die
+richtige Antwort — alle steckten in der Erklärung, während Frage und Optionen weiter
+stimmten:
+
+| Frage | falsch war |
+|---|---|
+| DFB-Pokal-Rekordsieger | „holte den Pokal 2020 zum 20. Mal" — Bayern gewann im Mai 2026 zum **21.** Mal |
+| Heimstadion Barcelona | „rund 99.000 Plätze, größtes Stadion Europas" — nach dem Umbau derzeit 62.600 |
+| TSV 1860 München | „spielt seit 2018 in der 3. Liga" — Lizenz verweigert, seit 2026 Regionalliga Bayern |
+| Lothar Matthäus | „fünf WM-Turniere — bis heute Rekord" — Messi war bei sechs |
+| Ronaldos Länderspieltore | „weit über 130" — belegt sind 146 |
+| Copa Libertadores | „Sieger vertritt Südamerika bei der Klub-WM" — läuft seit der Reform über den Interkontinental-Pokal |
+| Schnellstes WM-Tor | „bevor ein Gegenspieler den Ball berührt hatte" — **Südkorea** hatte Anstoß |
+
+Der letzte Fall ist der lehrreichste: **kein Alterungsfehler, sondern schlicht falsch.** Die
+Recherche findet also auch Sachfehler, die der gedächtnisbasierte Durchgang übersehen hat.
+
+**Folge:** Ein Prüflauf, der nur Frage und Optionen ansieht, hätte alle sieben verfehlt. Die
+Erklärung muss mitgeprüft werden.
+
+## 170. Was die Recherche bestätigt hat
+
+Die andere Hälfte der Nachricht: **86 zeitabhängige Aussagen, 7 Korrekturen.** Der
+gedächtnisbasierte Durchgang hat also zu über 90 % gehalten. Bestätigt wurden unter anderem
+Gerd Müllers 365 Bundesligatore, Lewandowskis 41 Saisontore, Ronaldos 140 CL-Tore, Messis
+acht Ballons d'Or, der Signal Iduna Park als größtes deutsches Stadion, Pelé als einziger
+Spieler mit drei WM-Titeln und Neymars 222 Millionen als bis heute höchste Ablöse.
+
+Neu belegte Fakten, die der Katalog noch nicht kannte: Spanien ist Weltmeister 2026 (1:0 n.V.
+gegen Argentinien, Ferran Torres in der 106.), die Champions League ging 2025 und 2026 an
+Paris Saint-Germain, Bayern wurde 2025/26 zum 35. Mal Meister, Harry Kane war
+Torschützenkönig mit 36 Toren, der Ballon d'Or 2025 ging an Ousmane Dembélé, der Goldene
+Ball der WM 2026 an Rodri, der WM-Ball hieß Adidas Trionda.
+
+## 171. Ein offener Zweifelsfall
+
+Real Madrid hat sein Stadion im November 2025 offiziell in **„Bernabéu"** umbenannt; das
+„Santiago" ist gestrichen. Die Katalogfrage nennt weiter „Santiago Bernabéu". Der Agent hat
+bewusst nicht geändert: Die Antwort bleibt eindeutig, und „Bernabéu" allein wäre erheblich
+kürzer als die drei Distraktoren („Ramón Sánchez Pizjuán", „Estadio Metropolitano",
+„Estadio de Mestalla") — also Längenverrat in die Gegenrichtung. Eine saubere Umstellung
+müsste alle vier Optionen neu fassen. **Entscheidung des Nutzers.**
+
+## 172. Konsequenz für den restlichen Bestand
+
+Der Testlauf trägt eine Hochrechnung: Bei 3 % Fehlerdichte in einem bereits überarbeiteten
+Katalog stehen im Gesamtbestand von 12 170 Fragen schätzungsweise **einige Hundert falsche
+Angaben**, überwiegend in Erklärungen.
+
+**Nicht prüfenswert** sind Mathematik, Chemie, Physik, Latein und die Grammatikteile der
+Sprachfächer — dort altern Fakten nicht. Das sind rund 2000 Fragen; der Filter meldet dort
+387 Treffer, alle vom Typ „größter gemeinsamer Teiler".
+
+**Zu prüfen bleiben rund 10 000 Fragen** in etwa 260 Blöcken. Das fügt sich in den ohnehin
+geplanten Nachzieh-Durchlauf: Die 8277 Schulfragen wurden **nie** inhaltlich geprüft, ein
+Durchgang kann Inhalt und Zeitbezug zusammen erledigen.
+
+**Ab sofort gilt für jeden Agentenauftrag:** Websuche per `ToolSearch` nachladen und jede
+zeitabhängige Aussage belegen — auch die in der Erklärung. Und: Eine Aussage, die sich nicht
+bestätigen lässt, wird **gemeldet, nicht gelöscht.**
