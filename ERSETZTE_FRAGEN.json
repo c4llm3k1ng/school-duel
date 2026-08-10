@@ -1,6 +1,6 @@
 {
   "hinweis": "Fragen, die im Qualitaetsdurchlauf durch andere ersetzt wurden. Nicht zwangslaeufig schlecht - meist zu leicht, nicht eindeutig loesbar oder thematisch am falschen Ort. Erzeugt von question-generator/collect_replaced.js. Die Zuordnung ist unscharf: stark umformulierte Fragen koennen faelschlich enthalten sein, deshalb steht bei jedem Eintrag die Nachfolgerin dabei. Diese Datei gehoert NICHT in den Firebase-Abgleich.",
-  "erzeugt": "2026-08-09",
+  "erzeugt": "2026-08-10",
   "fragen": [
     {
       "question": "Was fressen Pflanzenfresser?",
@@ -10849,6 +10849,709 @@
         "basis": "ec93ed3",
         "ersetztDurch": "Was besagt John Rawls' Gedankenexperiment vom 'Schleier des Nichtwissens'?",
         "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welches Band-Duo bestand ursprünglich aus Simon und Garfunkel und war vorher als was bekannt?",
+      "options": [
+        "Lennon & McCartney",
+        "Pete & Gus",
+        "Tom and Jerry",
+        "Simon & Paul"
+      ],
+      "correct": 2,
+      "explanation": "Simon & Garfunkel nannten sich zuvor 'Tom and Jerry', bevor sie 1964 zu ihren echten Namen wechselten.",
+      "topic": "Rock & Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 10,
+        "basis": "ebdacde",
+        "ersetztDurch": "Unter welchem Namen traten Paul Simon und Art Garfunkel auf, bevor sie sich Simon & Garfunkel nannten?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Was war Rihannas erster Nummer-1-Hit in Deutschland?",
+      "options": [
+        "Diamonds",
+        "We Found Love",
+        "Umbrella",
+        "Rude Boy"
+      ],
+      "correct": 2,
+      "explanation": "'Umbrella' (2007) war Rihannas internationaler Durchbruch und ihr erster großer Nummer-1-Hit.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 18,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welche Single brachte Rihanna 2007 den internationalen Durchbruch?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welches Album der Eagles gilt als meistverkauftes Greatest-Hits-Album aller Zeiten?",
+      "options": [
+        "Hotel California",
+        "Desperado",
+        "Long Road Out of Eden",
+        "Their Greatest Hits 1971-1975"
+      ],
+      "correct": 3,
+      "explanation": "'Their Greatest Hits (1971-1975)' der Eagles ist mit ca. 44 Millionen Exemplaren eines der meistverkauften Alben.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 23,
+        "basis": "ebdacde",
+        "ersetztDurch": "Auf welchem Album der Eagles erschien 1976 der Song 'New Kid in Town'?",
+        "aehnlichkeit": 0.16
+      }
+    },
+    {
+      "question": "Welcher Rockklassiker beginnt mit dem ikonischen Gitarrenriff 'Dum-dum-dum-dum-dumdumdum'?",
+      "options": [
+        "Smoke on the Water – Led Zeppelin",
+        "Paranoid – Black Sabbath",
+        "Smoke on the Water – Deep Purple",
+        "Iron Man – Black Sabbath"
+      ],
+      "correct": 2,
+      "explanation": "Das Gitarrenriff von 'Smoke on the Water' (Deep Purple, 1972) ist eines der bekanntesten der Rockgeschichte.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 26,
+        "basis": "ebdacde",
+        "ersetztDurch": "Auf welchem Album von Deep Purple erschien 1972 der Song 'Smoke on the Water'?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Sänger gründete die Band U2 in Dublin als 14-Jähriger (Schlagzeuger)?",
+      "options": [
+        "Bono",
+        "The Edge",
+        "Larry Mullen Jr.",
+        "Adam Clayton"
+      ],
+      "correct": 2,
+      "explanation": "Larry Mullen Jr. gründete U2, indem er als 14-Jähriger an seiner Schule einen Aushang aufhängte.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 38,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welches Mitglied von U2 gründete die Band 1976 mit einem Aushang an seiner Schule?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Welcher britische Sänger ist bekannt für Hits wie 'Angels' und 'Feel'?",
+      "options": [
+        "Robbie Williams",
+        "Elton John",
+        "George Michael",
+        "Rod Stewart"
+      ],
+      "correct": 0,
+      "explanation": "Robbie Williams ist einer der erfolgreichsten britischen Solokünstler mit 'Angels' (1997) und 'Feel' (2002).",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 40,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welcher britische Sänger veröffentlichte 2017 das Album 'Divide'?",
+        "aehnlichkeit": 0.19
+      }
+    },
+    {
+      "question": "Welcher deutsche Musiker heißt bürgerlich Giovanni Zarrella?",
+      "options": [
+        "Mark Forster",
+        "Nico Santos",
+        "Giovanni Zarrella",
+        "Wincent Weiss"
+      ],
+      "correct": 2,
+      "explanation": "Giovanni Zarrella ist sein echter Name – er wurde als Mitglied von Bro'Sis bekannt.",
+      "topic": "Deutsch-Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 42,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welcher deutsche Sänger und Moderator wurde als Mitglied der Band Bro'Sis bekannt?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Welche Band verkaufte mit 'Back in Black' ca. 50 Millionen Alben weltweit?",
+      "options": [
+        "Led Zeppelin",
+        "Metallica",
+        "Iron Maiden",
+        "AC/DC"
+      ],
+      "correct": 3,
+      "explanation": "AC/DCs 'Back in Black' (1980) hat etwa 50 Millionen Exemplare weltweit verkauft.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 59,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welche Band veröffentlichte 1976 das Album 'Hotel California'?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welches Wort verbindet den Namen des Sängers mit 'Shake It Off'?",
+      "options": [
+        "Adele",
+        "Taylor Swift",
+        "Katy Perry",
+        "Miley Cyrus"
+      ],
+      "correct": 1,
+      "explanation": "'Shake It Off' ist ein Hit von Taylor Swift aus dem Album '1989' (2014).",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 65,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welche Sängerin veröffentlichte 2013 den Song 'Wrecking Ball'?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welche deutschen Rapper machten 'Komet' (2022) zum meistgestreamten deutschen Song?",
+      "options": [
+        "Bushido & Apache 207",
+        "Capital Bra & Samra",
+        "Sido & Farid Bang",
+        "Udo Lindenberg & Apache 207"
+      ],
+      "correct": 3,
+      "explanation": "'Komet' von Udo Lindenberg & Apache 207 wurde 2022 zum meistgestreamten deutschen Song.",
+      "topic": "Deutsch-Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 67,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welches Duo veröffentlichte 2022 den Hit 'Komet'?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Welche Boyband sang 'Backstreet's Back' (1997)?",
+      "options": [
+        "Backstreet Boys",
+        "NSYNC",
+        "New Kids on the Block",
+        "98 Degrees"
+      ],
+      "correct": 0,
+      "explanation": "'Backstreet's Back' ist ein Hit der Backstreet Boys aus dem Jahr 1997.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 68,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welche Boyband landete 1999 mit 'I Want It That Way' einen Welthit?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Wie heißt der Bassist der Rolling Stones?",
+      "options": [
+        "Charlie Watts",
+        "Bill Wyman",
+        "Ronnie Wood",
+        "Brian Jones"
+      ],
+      "correct": 1,
+      "explanation": "Bill Wyman war von 1962 bis 1993 der Bassist der Rolling Stones.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 69,
+        "basis": "ebdacde",
+        "ersetztDurch": "Wer spielte von 1962 bis 1993 den Bass bei den Rolling Stones?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Wie heißt Eminems Tochter, für die er 'Hailie's Song' schrieb?",
+      "options": [
+        "Stevie",
+        "Alaina",
+        "Lily",
+        "Hailie"
+      ],
+      "correct": 3,
+      "explanation": "Eminem schrieb 'Hailie's Song' für seine Tochter Hailie Jade Mathers.",
+      "topic": "Hip-Hop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 75,
+        "basis": "ebdacde",
+        "ersetztDurch": "In welcher US-Stadt wuchs Eminem auf, in der auch sein Film '8 Mile' spielt?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "In welchem Land entstand K-Pop?",
+      "options": [
+        "Japan",
+        "Südkorea",
+        "China",
+        "Taiwan"
+      ],
+      "correct": 1,
+      "explanation": "K-Pop (Korean Pop) stammt aus Südkorea.",
+      "topic": "K-Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 93,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welche südkoreanische Band veröffentlichte 2020 den englischsprachigen Hit 'Dynamite'?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welches Instrument spielte Jimi Hendrix?",
+      "options": [
+        "Rechthänder-E-Gitarre",
+        "Linkshänder-E-Gitarre",
+        "Akustikgitarre",
+        "Bass"
+      ],
+      "correct": 1,
+      "explanation": "Jimi Hendrix, ein Linkshänder, spielte seine E-Gitarren umgekehrt (für Linkshänder).ε",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 105,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welcher Song war Ende 1966 die erste Single der Jimi Hendrix Experience?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "In welchem Jahr begann die Karriere von Adele?",
+      "options": [
+        "2008",
+        "2006",
+        "2010",
+        "2012"
+      ],
+      "correct": 0,
+      "explanation": "Adeles Debüt-Album '19' erschien 2008.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 116,
+        "basis": "ebdacde",
+        "ersetztDurch": "In welchem Jahr erschien Adeles Debüt-Album '19'?",
+        "aehnlichkeit": 0.18
+      }
+    },
+    {
+      "question": "Welches Album von Radiohead gilt als eines der besten Alben aller Zeiten?",
+      "options": [
+        "The Bends",
+        "OK Computer",
+        "Kid A",
+        "In Rainbows"
+      ],
+      "correct": 1,
+      "explanation": "'OK Computer' (1997) von Radiohead wird regelmäßig als eines der besten Alben aller Zeiten gelistet.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 121,
+        "basis": "ebdacde",
+        "ersetztDurch": "Auf welchem Radiohead-Album erschien 'Paranoid Android'?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Was ist das Motto von Bob Marleys Philosophie und Musikrichtung?",
+      "options": [
+        "Rock Steady",
+        "One Love / Rastafari",
+        "Ska for Life",
+        "Dancehall Nation"
+      ],
+      "correct": 1,
+      "explanation": "Bob Marleys Credo war Liebe, Frieden und Rastafari – 'One Love' ist sein bekanntester Song.",
+      "topic": "Genres",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 133,
+        "basis": "ebdacde",
+        "ersetztDurch": "Wie hieß die Begleitband, mit der Bob Marley weltberühmt wurde?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Welcher Punk-Song beginnt mit 'God save the Queen / The fascist regime'?",
+      "options": [
+        "Anarchy in the U.K. – Sex Pistols",
+        "White Riot – The Clash",
+        "God Save the Queen – Sex Pistols",
+        "Holiday in the Sun – Sex Pistols"
+      ],
+      "correct": 2,
+      "explanation": "'God Save the Queen' von den Sex Pistols (1977) beginnt mit dieser provokanten Zeile.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 134,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welcher Sex-Pistols-Song sorgte 1977 zum Thronjubiläum von Elizabeth II. für einen Skandal?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Welches Lied schrieben Bob Dylan und Joan Baez als Antikriegslied?",
+      "options": [
+        "Masters of War – Bob Dylan",
+        "Where Have All the Flowers Gone – Pete Seeger",
+        "Blowin' in the Wind – Bob Dylan",
+        "All You Need Is Love – Beatles"
+      ],
+      "correct": 2,
+      "explanation": "'Blowin' in the Wind' (1963) von Bob Dylan ist eines der bekanntesten Antikriegslieder.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 146,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welches Lied von Bob Dylan beginnt mit der Zeile 'How many roads must a man walk down'?",
+        "aehnlichkeit": 0.18
+      }
+    },
+    {
+      "question": "Welcher Sänger sang 'Bohemian Rhapsody'?",
+      "options": [
+        "Freddie Mercury",
+        "Roger Taylor",
+        "Brian May",
+        "John Deacon"
+      ],
+      "correct": 0,
+      "explanation": "Freddie Mercury war der Sänger von Queen und sang 'Bohemian Rhapsody' (1975).",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 148,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welches Queen-Lied beginnt mit der Zeile 'Is this the real life? Is this just fantasy?'",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Rapper ist bekannt für seinen Streit mit Drake?",
+      "options": [
+        "Kanye West",
+        "Lil Wayne",
+        "Pusha T",
+        "Meek Mill"
+      ],
+      "correct": 2,
+      "explanation": "Pusha T und Drake hatten 2018 einen berüchtigten 'Beef', der mit 'The Story of Adidon' eskalierte.",
+      "topic": "Hip-Hop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 150,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welcher Rapper veröffentlichte 2018 den Disstrack 'The Story of Adidon' gegen Drake?",
+        "aehnlichkeit": 0.18
+      }
+    },
+    {
+      "question": "In welchem Jahr stieg Billie Eilish zum ersten Mal auf Platz 1 auf?",
+      "options": [
+        "2019",
+        "2017",
+        "2018",
+        "2020"
+      ],
+      "correct": 0,
+      "explanation": "Billie Eilish stieg 2019 mit 'Bad Guy' auf Platz 1 der US-Charts.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 152,
+        "basis": "ebdacde",
+        "ersetztDurch": "In welchem Jahr erschien Billie Eilishs Debütalbum 'When We All Fall Asleep, Where Do We Go?'",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Wie heißt der Gitarrist von Metallica?",
+      "options": [
+        "Lars Ulrich",
+        "Kirk Hammett",
+        "Robert Trujillo",
+        "Jason Newsted"
+      ],
+      "correct": 1,
+      "explanation": "Kirk Hammett ist seit 1983 der Leadgitarrist von Metallica.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 153,
+        "basis": "ebdacde",
+        "ersetztDurch": "Wer spielt bei Metallica die Leadgitarre?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Welche Band sang 'My Chemical Romance' – aber wie heißt ihr bekanntester Song?",
+      "options": [
+        "Famous Last Words",
+        "Helena",
+        "I'm Not Okay",
+        "Welcome to the Black Parade"
+      ],
+      "correct": 3,
+      "explanation": "'Welcome to the Black Parade' (2006) ist My Chemical Romances bekanntester Song.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 159,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welcher dieser Songs stammt vom My-Chemical-Romance-Album 'Three Cheers for Sweet Revenge' (2004)?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Welche Sängerin ist bekannt für den Hit 'Latch' als Feature mit Disclosure?",
+      "options": [
+        "Sam Smith",
+        "Ellie Goulding",
+        "Jessie Ware",
+        "AlunaGeorge"
+      ],
+      "correct": 0,
+      "explanation": "Sam Smith sang 'Latch' (2012) als Feature mit dem DJ-Duo Disclosure.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 160,
+        "basis": "ebdacde",
+        "ersetztDurch": "Wer sang den Gastpart auf Disclosures Hit 'Latch' (2012)?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Welche Sängerin sang den Disney-Song 'Let It Go' in der deutschen Version?",
+      "options": [
+        "Adele",
+        "Helene Fischer",
+        "Céline Dion",
+        "Idina Menzel"
+      ],
+      "correct": 1,
+      "explanation": "Helene Fischer sang die deutsche Version von 'Lass jetzt los' (Let It Go) für den Film 'Die Eiskönigin' (2013).",
+      "topic": "Film & Musik",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 165,
+        "basis": "ebdacde",
+        "ersetztDurch": "Wer sang die deutsche Pop-Version von 'Lass jetzt los' aus dem Film 'Die Eiskönigin' (2013)?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Was ist das Schlagzeug-Instrument mit einem langen Stock zum Spielen?",
+      "options": [
+        "Tom-Tom",
+        "Bass Drum",
+        "Hi-Hat",
+        "Becken"
+      ],
+      "correct": 1,
+      "explanation": "Die Bass Drum (große Trommel) wird mit einem Fußpedal gespielt.",
+      "topic": "Instrumente",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 189,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welcher Teil eines Schlagzeugs wird mit einem Fußpedal und Schlägel angeschlagen?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Welcher Schlagzeuger ist bekannt als einer der einflussreichsten der Rockgeschichte?",
+      "options": [
+        "John Bonham (Led Zeppelin)",
+        "Keith Moon (The Who)",
+        "Ringo Starr (Beatles)",
+        "Ginger Baker (Cream)"
+      ],
+      "correct": 0,
+      "explanation": "John Bonham von Led Zeppelin wird von vielen als bester Rockschlagzeuger aller Zeiten angesehen.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 192,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welcher Schlagzeuger von Led Zeppelin starb 1980?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Welcher Song von Sting beginnt mit 'Every breath you take'?",
+      "options": [
+        "Englishman in New York",
+        "Roxanne",
+        "Desert Rose",
+        "Every Breath You Take"
+      ],
+      "correct": 3,
+      "explanation": "'Every Breath You Take' (1983) von The Police (Stings damaliger Band) ist eines der meistgespielten Lieder.",
+      "topic": "Rock & Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 207,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welcher Song stammt von Stings Soloalbum 'Brand New Day' (1999)?",
+        "aehnlichkeit": 0.18
+      }
+    },
+    {
+      "question": "Welcher Klassiker wurde von Beethoven geschrieben und hat diesen Anfang: 'Ta-ta-ta-Taaa'?",
+      "options": [
+        "3. Sinfonie",
+        "5. Sinfonie",
+        "7. Sinfonie",
+        "9. Sinfonie"
+      ],
+      "correct": 1,
+      "explanation": "Beethovens 5. Sinfonie beginnt mit dem ikonischen 'Ta-ta-ta-Taaa' (c-Moll, op. 67, 1808).",
+      "topic": "Klassik",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 209,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welche Sinfonie von Beethoven beginnt mit dem Motiv 'Ta-ta-ta-Taaa'?",
+        "aehnlichkeit": 0.18
+      }
+    },
+    {
+      "question": "Welche zwei Männer gründeten die Produzentengruppe Daft Punk?",
+      "options": [
+        "David Guetta & Martin Solveig",
+        "Jean-Michel Jarre & Laurent Garnier",
+        "Étienne de Crécy & Cassius",
+        "Thomas Bangalter & Guy-Manuel de Homem-Christo"
+      ],
+      "correct": 3,
+      "explanation": "Daft Punk besteht aus Thomas Bangalter und Guy-Manuel de Homem-Christo.",
+      "topic": "Elektronik",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 219,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welches Duo veröffentlichte 2013 das Album 'Random Access Memories'?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Sängerin sang 'Paparazzi' (2008) und ist für skurrile Kostüme bekannt?",
+      "options": [
+        "Katy Perry",
+        "Lady Gaga",
+        "Nicki Minaj",
+        "Kesha"
+      ],
+      "correct": 1,
+      "explanation": "Lady Gaga ist bekannt für 'Paparazzi' (2008) und ihre spektakulären Auftritte und Kostüme.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 249,
+        "basis": "ebdacde",
+        "ersetztDurch": "Auf welchem Album von Lady Gaga erschien 'Paparazzi'?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welche Sängerin sang 'Zombie' als Cover in einer Akustikversion, die viral ging?",
+      "options": [
+        "Hailee Steinfeld",
+        "Jasmine Thompson",
+        "Cara Delevingne",
+        "Tori Kelly"
+      ],
+      "correct": 1,
+      "explanation": "Jasmine Thompsons Akustikcover von 'Zombie' der Cranberries wurde zu einem viralen YouTube-Hit.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 253,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welche Band veröffentlichte 1994 den Song 'Zombie'?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welcher Song von Queen wurde 1977 als Fußball-Hymne bekannt?",
+      "options": [
+        "We Will Rock You",
+        "Bohemian Rhapsody",
+        "We Are the Champions",
+        "Radio Ga Ga"
+      ],
+      "correct": 2,
+      "explanation": "'We Are the Champions' von Queen (1977) wurde zur weltbekannten Sportsieger-Hymne.",
+      "topic": "Rock",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 262,
+        "basis": "ebdacde",
+        "ersetztDurch": "Mit welchem Song eröffnen Queen ihr Album 'News of the World' (1977)?",
+        "aehnlichkeit": 0.17
+      }
+    },
+    {
+      "question": "Welches ist das meistgestreamte Album in der Spotify-Geschichte (Stand 2024)?",
+      "options": [
+        "Midnights – Taylor Swift",
+        "Thriller – Michael Jackson",
+        "1989 – Taylor Swift",
+        "÷ (Divide) – Ed Sheeran"
+      ],
+      "correct": 0,
+      "explanation": "Taylor Swifts 'Midnights' (2022) ist das meistgestreamte Album auf Spotify.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 268,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welches Album von Taylor Swift erschien 2022 und enthält 'Anti-Hero'?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Welcher Song ist das bekannteste Weihnachtslied von Mariah Carey?",
+      "options": [
+        "Santa Baby",
+        "O Holy Night",
+        "Last Christmas",
+        "All I Want for Christmas Is You"
+      ],
+      "correct": 3,
+      "explanation": "'All I Want for Christmas Is You' (1994) von Mariah Carey ist das meistverkaufte Weihnachtslied aller Zeiten.",
+      "topic": "Pop",
+      "_herkunft": {
+        "datei": "musik_mittel.json",
+        "index": 279,
+        "basis": "ebdacde",
+        "ersetztDurch": "Welches Weihnachtslied schrieb Mariah Carey 1994 gemeinsam mit Walter Afanasieff?",
+        "aehnlichkeit": 0.19
       }
     }
   ]

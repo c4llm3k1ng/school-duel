@@ -2637,3 +2637,109 @@ Null Abweichungen.
 **Ergebnis: beide Bestände exakt 25/25/25/25, keine Datei über 45 %.** Die
 Längenverteilung ist davon unberührt (die Umstellung ändert keine Zeichen), die
 QA-Befunde ebenfalls unverändert.
+
+---
+
+# Nachtrag: musik_mittel komplett
+
+286 Fragen, acht Teile, kombiniertes Verfahren.
+
+| | Ränge | „längste" gewinnt |
+|---|---|---|
+| vorher | 40/15/22/23 | 32 % |
+| jetzt | **25/24/26/24** | **24 %** |
+
+Katalog-Befunde 54 → 50, ERSETZTE_FRAGEN 608. Die Positionsverteilung blieb bei
+26/24/26/25 — die Agenten haben die frisch hergestellte Rotation nicht zerstört.
+
+## 139. Der Zeitstempel hat auf Anhieb getragen
+
+Neun Fragen tragen jetzt „Stand August 2026" bzw. „Im August 2026 …", durchweg dort, wo
+ein Rekord sonst stillschweigend veraltet wäre (meistverkauftes Album Deutschlands, des
+21. Jahrhunderts, aller Zeiten, meistverkauftes Debütalbum, meistverkaufte Band,
+meistgestreamte Künstlerin).
+
+**Wichtiger noch: drei Agenten haben den Stempel bewusst NICHT gesetzt** und das
+begründet — bei ihren zeitgebundenen Aussagen war die Behauptung nicht veraltet, sondern
+schlicht falsch:
+
+- „acht Grammys in einer Nacht – **bis heute Rekord**" (Santana holte 2000 ebenfalls acht)
+- Billie Eilish gewann 2020 die vier Hauptkategorien **nicht als erste Person**
+  (Christopher Cross 1981) — sie ist die *jüngste*
+- „All I Want for Christmas Is You" als **meistverkauftes Weihnachtslied aller Zeiten**
+  (das ist Bing Crosbys „White Christmas")
+
+Ein Datum hätte diese Aussagen nicht gerettet. Die Unterscheidung sitzt damit: Der
+Stempel ist für **korrekte** Fakten mit Verfallsdatum, nicht für falsche oder ungeprüfte.
+
+## 140. Wissen wurde bestraft — fünf Fälle
+
+Der schwerste Fehlertyp, hier besonders dicht:
+
+- **„Welcher *Gitarrist* von Queen schrieb 'Bohemian Rhapsody'?"** — markiert Freddie
+  Mercury (der Sänger), während **Brian May**, der tatsächliche Gitarrist, als Distraktor
+  danebenstand.
+- **„Wer *schrieb* 'Smells Like Teen Spirit'?"** — **Dave Grohl und Krist Novoselic sind
+  offizielle Mitautoren** und standen als Distraktoren daneben. Die Frage zielt jetzt auf
+  den *Text*, der allein von Cobain stammt.
+- **„Welcher Schlagzeuger gilt als einer der einflussreichsten?"** — **alle vier Optionen**
+  trafen zu (Bonham, Moon, Ringo Starr, Ginger Baker).
+- **„Welches Radiohead-Album gilt als eines der besten aller Zeiten?"** — ebenfalls alle
+  vier (The Bends, OK Computer, Kid A, In Rainbows).
+- **ESC-Rekordsieger:** markiert Irland, aber **Schweden** hat seit 2023 ebenfalls sieben
+  Siege.
+
+Dazu: „We Are the Champions" als Fußballhymne 1977, während **„We Will Rock You"** von
+derselben Doppel-A-Seite genauso zutrifft; Eminems Töchter „Alaina" und „Stevie" als
+Distraktoren zu „Hailie"; „Pusha T" beim Drake-Streit neben Meek Mill und Kanye West.
+
+## 141. Zwei weitere Generator-Artefakte
+
+Dieselbe Sorte wie „Roy Mustangs Zanpakuto… äh Alchemie-Technik" (§115) — das erzeugende
+Modell korrigiert sich mitten im Fragetext und lässt den Zwischenschritt stehen:
+
+- „Welche Band sang 'Plush' **und 'Creep' – nein**, welche Band sang 'Plush'?"
+- „Welcher Sänger ist bekannt für sein Album 'Back in Black' als Soloalbum **– nein,
+  welche Band?**"
+
+## 142. Dieselbe Person zweimal zur Wahl
+
+Bei der ABBA-Frage standen **„Benny Andersson"** und **„Göran Bror"** als getrennte
+Optionen — „Göran Bror" sind seine ersten beiden Vornamen (Göran Bror Benny Andersson).
+Zusätzlich war „Stig Anderson" als „Mitglied" gelistet, obwohl er der Manager war.
+
+## 143. Rollen- und Kategorienfehler
+
+Immer wieder fiel die richtige Antwort aus der Kategorie, nach der die Frage fragte:
+
+- „Welche **Sängerin** sang 'Skyfall'?" mit **Sam Smith** als Option
+- „Welcher **Sänger** produzierte 'Billie Jean'?" → Quincy Jones ist Produzent
+- „Welcher **Sänger** gründete Motown?" → Berry Gordy ist Labelchef
+- „Welche **Sängerin** sang 'Killing Me Softly'?" → die Fugees sind eine Gruppe
+- „Welcher **deutsche** Sänger gewann 1966 den ESC?" → Udo Jürgens war Österreicher und
+  gewann **für Österreich** (dessen erster Sieg)
+- „Welche Gruppe **aus Hamburg**?" → Bill Haley & His Comets stammen aus Pennsylvania
+- Bei einer Album-Frage waren zwei Optionen **Songs** („Atemlos", „Für immer")
+
+## 144. Der Umlaut-Prüfer und die Eigennamen
+
+`check_teile.js` hat erneut einen Künstlernamen für eine Umschreibung gehalten —
+**Wincent Weiss**. Das ist inzwischen der häufigste Fehlalarm dieses Werkzeugs
+(vorher: Nobuo Uematsu, Weisslogia, Aerosmith, Johannes Oerding, dazu die Abkürzungen
+AEUV/AEMR). Die Ausnahmeliste ist ergänzt und die Systematik im Code dokumentiert:
+Künstler- und Figurennamen folgen keiner deutschen Rechtschreibung — lieber eine
+Ausnahme zu viel als ein Eigenname, der zu „Weiß" verschlimmbessert wird.
+
+## 145. Sorgfalt über den Auftrag hinaus
+
+- Ein Agent löste **drei Dubletten** auf, bei denen zwei Fragen derselben Datei dieselbe
+  Antwort hatten — und wählte beim Ersetzen bewusst *nicht* wieder Taylor Swift, weil
+  deren Name schon in zwei anderen Fragen vorkommt.
+- Ein Agent entschärfte eine Erklärung, die eine **Trennung von Privatpersonen**
+  ausbreitete (Ariana Grande / Pete Davidson) — Klatsch in einer Schulfrage.
+- Ein Agent tauschte einen Distraktor, den er **nicht sicher einordnen konnte**
+  („Phänomenal" — möglicherweise eine weitere Lindenberg-Kollaboration) gegen einen
+  zweifelsfrei richtigen aus.
+- Mehrere meldeten **Querverweise innerhalb der Datei**: Keith Moon ist in einer Frage
+  Distraktor und in einer anderen die Lösung; wer am Stück spielt, bekommt einen Hinweis
+  geschenkt.

@@ -43,10 +43,16 @@ if (!fs.existsSync(WORK)) { console.log('Kein _work/ in ' + BASE + '.'); process
 const UMSCHRIFT_KLEIN = /\b(ae|oe|ue)(?=[a-zäöüß]{2})/;
 const UMSCHRIFT_WORT  = /(?:strasse|gross|weiss|heiss|muessen|koennen|haette|waere|fuer|ueber|moeglich|naechst|spaeter|zaehl|waehl|hoeh|schoen|groess|maessig)/i;
 const UMSCHRIFT = { test: s => UMSCHRIFT_KLEIN.test(s) || UMSCHRIFT_WORT.test(s) };
-// Eigennamen, die den Mustern zufaellig aehneln: japanische Namen mit "Ue-"
-// (Uematsu, Ueda), Kuenstlernamen (Aerosmith, Oerding) und kanonische
-// Serien-Schreibweisen (Weisslogia).
-const UMSCHRIFT_AUSNAHME = /Uematsu|Ueda|Ueno|Weisslogia|Aerosmith|Oerding/;
+// Eigennamen, die den Mustern zufaellig aehneln. Das ist der haeufigste
+// Fehlalarm dieses Pruefers: Kuenstler- und Figurennamen folgen keiner
+// deutschen Rechtschreibung. Bisher aufgelaufen:
+//   Ue-  : Uematsu, Ueda, Ueno (japanische Namen)
+//   -eiss: Wincent Weiss, Weisslogia
+//   Ae-  : Aerosmith
+//   Oe-  : Johannes Oerding
+// Neue Faelle einfach hier eintragen - lieber eine Ausnahme zu viel als ein
+// Eigenname, der zu "Weiß" verschlimmbessert wird.
+const UMSCHRIFT_AUSNAHME = /Uematsu|Ueda|Ueno|Weisslogia|Aerosmith|Oerding|Wincent Weiss/;
 
 let teile = 0, befunde = 0;
 const melde = (teil, text) => { befunde++; console.log(`  ${teil}: ${text}`); };
