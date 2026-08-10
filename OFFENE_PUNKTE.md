@@ -2842,14 +2842,14 @@ inhaltliche Fragen ersetzt werden (etwa auf höchstens 10 % je Datei)?
 
 Beim Gegenrechnen des Firebase-Pushs stimmte eine Zahl nicht: Das Werkzeug meldete 155
 verlorene Fragen, die Zählung ergab 156 geänderte Fragetexte. Diese eine Abweichung führte
-auf **zwei exakte Dubletten** in  — dieselbe Frage mit denselben Optionen an
+auf **zwei exakte Dubletten** in `musik_schwer` — dieselbe Frage mit denselben Optionen an
 zwei Stellen („In welchem Jahr erschien das Album 2001 von Dr. Dre?" und dasselbe für
 „Yeezus"). Beide ersetzt.
 
 **Die Ursache ist strukturell:** Ein Agent sieht immer nur seinen eigenen Teil. Dass dieselbe
 Frage in einem anderen Teil noch einmal steht, kann keiner von ihnen bemerken. Die Prüfung
 gehört deshalb an die Stelle nach dem Zusammenfügen — dort ist der Blick auf die ganze Datei
-erstmals möglich. In  eingebaut.
+erstmals möglich. In `chunk.js merge` eingebaut.
 
 **Bestandsaufnahme über alles:**
 
