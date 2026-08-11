@@ -1,6 +1,6 @@
 {
   "hinweis": "Fragen, die im Qualitaetsdurchlauf durch andere ersetzt wurden. Nicht zwangslaeufig schlecht - meist zu leicht, nicht eindeutig loesbar oder thematisch am falschen Ort. Erzeugt von question-generator/collect_replaced.js. Die Zuordnung ist unscharf: stark umformulierte Fragen koennen faelschlich enthalten sein, deshalb steht bei jedem Eintrag die Nachfolgerin dabei. Diese Datei gehoert NICHT in den Firebase-Abgleich.",
-  "erzeugt": "2026-08-10",
+  "erzeugt": "2026-08-11",
   "fragen": [
     {
       "question": "Was fressen Pflanzenfresser?",
@@ -16682,6 +16682,1526 @@
         "basis": "HEAD",
         "ersetztDurch": "Welcher Torhüter bestritt 125 Länderspiele für England und stand bei drei Weltmeisterschaften im Tor?",
         "aehnlichkeit": 0.16
+      }
+    },
+    {
+      "question": "Welcher Spieler wird oft als 'GOAT' bezeichnet und gewann 8 Ballon d'Or?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Neymar",
+        "Kylian Mbappé",
+        "Lionel Messi"
+      ],
+      "correct": 3,
+      "explanation": "Acht Auszeichnungen hat kein anderer Spieler erreicht; die Abkürzung GOAT steht für 'Greatest Of All Time' (Stand August 2026).",
+      "topic": "Spieler",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 7,
+        "basis": "HEAD",
+        "ersetztDurch": "Aus welchem Land stammt der langjährige Liverpool-Stürmer Mohamed Salah?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie lange dauert eine Halbzeit?",
+      "options": [
+        "30 Minuten",
+        "40 Minuten",
+        "45 Minuten",
+        "50 Minuten"
+      ],
+      "correct": 2,
+      "explanation": "Ein Spiel besteht aus zwei Hälften zu je 45 Minuten; dazu kommt die Nachspielzeit für Unterbrechungen.",
+      "topic": "Regeln",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 110,
+        "basis": "HEAD",
+        "ersetztDurch": "Welche Ballgröße schreiben die Spielregeln für Partien der Erwachsenen vor?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Mailänder Verein trägt das schwarz-blaue Trikot und gewann die Champions League zuletzt 2010?",
+      "options": [
+        "AC Mailand",
+        "AS Rom",
+        "Inter Mailand",
+        "SSC Neapel"
+      ],
+      "correct": 2,
+      "explanation": "Unter Trainer José Mourinho holte der Klub 2010 Meisterschaft, Pokal und Champions League – das bislang einzige Triple eines italienischen Vereins.",
+      "topic": "Vereine",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 170,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Verein trägt den Spitznamen 'Die Lilien'?",
+        "aehnlichkeit": 0.22
+      }
+    },
+    {
+      "question": "Welcher norwegische Stürmer erzielte in seiner ersten Premier-League-Saison 36 Tore?",
+      "options": [
+        "Phil Foden",
+        "John Stones",
+        "Jack Grealish",
+        "Erling Haaland"
+      ],
+      "correct": 3,
+      "explanation": "In der Saison 2022/23 übertraf der Angreifer von Manchester City die alte Bestmarke von 34 Treffern deutlich.",
+      "topic": "Spieler",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 207,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher deutsche Weltmeister von 2014 spielte fast seine ganze Karriere für den FC Bayern und wird 'Raumdeuter' genannt?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "Welcher Verein trägt den Spitznamen 'Die Störche'?",
+      "options": [
+        "FC Hansa Rostock",
+        "VfB Lübeck",
+        "Holstein Kiel",
+        "Eintracht Braunschweig"
+      ],
+      "correct": 2,
+      "explanation": "Der Storch stammt aus dem Vereinswappen und steht seit Jahrzehnten für den Klub aus Schleswig-Holstein – ein typisches Beispiel für Spitznamen nach Wappentieren.",
+      "topic": "Begriffe",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 222,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie nennt man die Fangruppen, die in der Kurve die Gesänge anstimmen und Choreografien vorbereiten?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welche Mannschaft gewann die EM 2020 im Elfmeterschießen?",
+      "options": [
+        "England",
+        "Belgien",
+        "Italien",
+        "Dänemark"
+      ],
+      "correct": 2,
+      "explanation": "Das Finale in Wembley endete nach Verlängerung 1:1. Im Elfmeterschießen setzte sich Italien mit 3:2 gegen Gastgeber England durch.",
+      "topic": "Europameisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 254,
+        "basis": "HEAD",
+        "ersetztDurch": "Welches Land gewann die Fußball-Europameisterschaft der Frauen 2025?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Welche Mannschaft gewann die WM 2002 in Japan und Südkorea?",
+      "options": [
+        "Deutschland",
+        "Türkei",
+        "Südkorea",
+        "Brasilien"
+      ],
+      "correct": 3,
+      "explanation": "Im Finale von Yokohama fiel die Entscheidung mit 2:0 gegen Deutschland; beide Tore erzielte Ronaldo.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 279,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie viele Partien bestreitet eine Mannschaft in der Vorrunde einer WM-Endrunde?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welche Mannschaft gewann sowohl die WM 1930 als auch die WM 1950?",
+      "options": [
+        "Italien",
+        "Uruguay",
+        "Brasilien",
+        "Argentinien"
+      ],
+      "correct": 1,
+      "explanation": "1930 war das Land Gastgeber des ersten Turniers überhaupt, 1950 gewann es das entscheidende Spiel im Maracanã gegen Brasilien.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 301,
+        "basis": "HEAD",
+        "ersetztDurch": "In wie vielen Stadien wurde die Weltmeisterschaft 2026 ausgetragen?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welcher Verein gewann die Champions League 2013?",
+      "options": [
+        "Borussia Dortmund",
+        "Real Madrid",
+        "FC Bayern München",
+        "FC Barcelona"
+      ],
+      "correct": 2,
+      "explanation": "Im ersten rein deutschen Endspiel in Wembley traf Arjen Robben in der 89. Minute zum 2:1.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 302,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Trainer gewann die Champions League am häufigsten?",
+        "aehnlichkeit": 0.56
+      }
+    },
+    {
+      "question": "Welche Mannschaft gewann 1994 als erste Nation ihren vierten WM-Titel?",
+      "options": [
+        "Deutschland",
+        "Brasilien",
+        "Italien",
+        "Argentinien"
+      ],
+      "correct": 1,
+      "explanation": "Brasilien gewann das Finale 1994 gegen Italien im Elfmeterschießen und zog damit als erste Nation auf vier Titel davon.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 309,
+        "basis": "HEAD",
+        "ersetztDurch": "Aus welchem Erdteil kommen die meisten Fußball-Weltmeister?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welches Land gewann die Weltmeisterschaft 2018 in Russland?",
+      "options": [
+        "Deutschland",
+        "Frankreich",
+        "Brasilien",
+        "Kroatien"
+      ],
+      "correct": 1,
+      "explanation": "Frankreich besiegte Kroatien im Finale mit 4:2 und gewann damit den zweiten WM-Titel nach 1998.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 349,
+        "basis": "HEAD",
+        "ersetztDurch": "Gegen welches Land gewann Deutschland 1954 sein erstes WM-Finale?",
+        "aehnlichkeit": 0.23
+      }
+    },
+    {
+      "question": "Was kennzeichnet den Spielstil 'Tiki-Taka'?",
+      "options": [
+        "Lange Bälle aus der eigenen Abwehr direkt auf den Mittelstürmer",
+        "Aggressives Pressing mit vielen Zweikämpfen und Grätschen",
+        "Hoher Ballbesitz mit vielen kurzen, schnellen Pässen",
+        "Tiefe Defensive mit schnellen Kontern über die Außenbahnen"
+      ],
+      "correct": 2,
+      "explanation": "Die Mannschaft hält den Ball in den eigenen Reihen und zermürbt den Gegner mit Kurzpässen – berühmt wurde das durch den FC Barcelona und Spanien.",
+      "topic": "Spielsysteme",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 358,
+        "basis": "HEAD",
+        "ersetztDurch": "Wofür stehen die Zahlen in einer Aufstellung wie '4-4-2'?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wer erzielte das Siegtor für Deutschland im WM-Finale 2014 gegen Argentinien?",
+      "options": [
+        "Miroslav Klose",
+        "Mario Götze",
+        "Thomas Müller",
+        "Bastian Schweinsteiger"
+      ],
+      "correct": 1,
+      "explanation": "Das Finale stand nach 90 Minuten 0:0. In der 113. Minute fiel der einzige Treffer nach einer Flanke von André Schürrle.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 361,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie oft wurde die deutsche Frauen-Nationalmannschaft Weltmeister?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie viele Punkte erhält eine Mannschaft für einen Sieg in der Bundesliga?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 2,
+      "explanation": "Seit 1995 gilt die Drei-Punkte-Regel: Sieg 3 Punkte, Unentschieden je 1 Punkt, Niederlage 0 Punkte. Das soll Mannschaften zum Angriff ermuntern.",
+      "topic": "Grundregeln",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 362,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie nennt man den letzten Tabellenplatz einer Fußballliga im Sprachgebrauch?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Was ist eine 'Flanke' im Fußball?",
+      "options": [
+        "Ein flacher Pass durch das Zentrum",
+        "Ein Schuss aus der Drehung aufs Tor",
+        "Ein weiter Abschlag des Torhüters",
+        "Ein hoher Querball von der Seite in den Strafraum"
+      ],
+      "correct": 3,
+      "explanation": "Der Ball kommt von der Außenbahn hoch in den Strafraum und ist meist als Vorlage für einen Kopfball gedacht.",
+      "topic": "Fachbegriffe",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 379,
+        "basis": "HEAD",
+        "ersetztDurch": "Was ist ein 'Steilpass' im Fußball?",
+        "aehnlichkeit": 0.43
+      }
+    },
+    {
+      "question": "Welche Nationalmannschaft gewann die Weltmeisterschaft 2010 in Südafrika?",
+      "options": [
+        "Deutschland",
+        "Brasilien",
+        "Niederlande",
+        "Spanien"
+      ],
+      "correct": 3,
+      "explanation": "Das Finale gegen die Niederlande entschied Andrés Iniesta in der 116. Minute mit 1:0 – der erste WM-Titel für dieses Land.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 411,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie hieß der offizielle Spielball der Weltmeisterschaft 2026?",
+        "aehnlichkeit": 0.08
+      }
+    },
+    {
+      "question": "Welche Mannschaft gewann das EM-Finale 2021 (EM 2020) im Elfmeterschießen?",
+      "options": [
+        "England",
+        "Dänemark",
+        "Italien",
+        "Spanien"
+      ],
+      "correct": 2,
+      "explanation": "Italien besiegte England im Elfmeterschießen 3:2 nach 1:1 n.V.",
+      "topic": "Europameisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 418,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie heißt die kontinentale Meisterschaft der afrikanischen Nationalmannschaften?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Mannschaft gewann die EM 2008 mit 1:0 gegen Deutschland?",
+      "options": [
+        "Spanien",
+        "Russland",
+        "Kroatien",
+        "Türkei"
+      ],
+      "correct": 0,
+      "explanation": "Spanien schlug Deutschland im Finale der EM 2008 mit 1:0 durch ein Tor von Fernando Torres.",
+      "topic": "Europameisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 424,
+        "basis": "HEAD",
+        "ersetztDurch": "Welches Land richtete die Europameisterschaft 2012 gemeinsam mit der Ukraine aus?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Welches Land gewann die WM 2006 in Deutschland?",
+      "options": [
+        "Frankreich",
+        "Brasilien",
+        "Italien",
+        "Argentinien"
+      ],
+      "correct": 2,
+      "explanation": "Italien gewann die WM 2006 im Berliner Finale durch ein Elfmeterschießen gegen Frankreich.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 430,
+        "basis": "HEAD",
+        "ersetztDurch": "Aus welchem Metall besteht der WM-Pokal hauptsächlich?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welches Land gewann die WM 1998 als Gastgeber in Frankreich?",
+      "options": [
+        "Brasilien",
+        "Italien",
+        "Kroatien",
+        "Frankreich"
+      ],
+      "correct": 3,
+      "explanation": "Frankreich gewann die WM 1998 im eigenen Land mit 3:0 gegen Brasilien, zwei Tore erzielte Zinédine Zidane.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 431,
+        "basis": "HEAD",
+        "ersetztDurch": "In welchem Land wurde die Weltmeisterschaft 1958 ausgetragen?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Wer erzielte das entscheidende Tor im WM-Finale 2014 für Deutschland gegen Argentinien?",
+      "options": [
+        "Thomas Müller",
+        "Bastian Schweinsteiger",
+        "Mario Götze",
+        "Miroslav Klose"
+      ],
+      "correct": 2,
+      "explanation": "Mario Götze erzielte in der 113. Minute das 1:0 und machte Deutschland zum Weltmeister.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 434,
+        "basis": "HEAD",
+        "ersetztDurch": "In welchem Jahr wurde die erste Fußball-Weltmeisterschaft der Frauen ausgetragen?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welches Land gewann die WM 2022 gegen Frankreich im Elfmeterschießen?",
+      "options": [
+        "Kroatien",
+        "Marokko",
+        "Argentinien",
+        "Brasilien"
+      ],
+      "correct": 2,
+      "explanation": "Argentinien gewann die WM 2022 gegen Frankreich im Elfmeterschießen nach 3:3 n.V.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 438,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie viele Mannschaften spielten bei der Weltmeisterschaft 2026 in der Endrunde?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Verein trägt den Spitznamen 'The Gunners'?",
+      "options": [
+        "Chelsea",
+        "Tottenham",
+        "West Ham",
+        "Arsenal"
+      ],
+      "correct": 3,
+      "explanation": "Der Name geht auf die Gründung 1886 zurück: Arbeiter einer Londoner Rüstungsfabrik stellten die erste Mannschaft.",
+      "topic": "Premier League",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 447,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Londoner Verein wird von seinen Fans kurz 'Spurs' genannt?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welcher Verein trägt den Spitznamen 'The Blues' in London?",
+      "options": [
+        "Arsenal",
+        "Tottenham",
+        "Chelsea",
+        "West Ham"
+      ],
+      "correct": 2,
+      "explanation": "Der Spitzname bezieht sich auf die königsblauen Heimtrikots, die der Verein seit über hundert Jahren trägt.",
+      "topic": "Premier League",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 450,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie nennt man den Zeitraum, in dem Vereine neue Spieler unter Vertrag nehmen dürfen?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Welcher Verein trägt den Spitznamen 'The Red Devils'?",
+      "options": [
+        "Arsenal London",
+        "FC Liverpool",
+        "Manchester United",
+        "FC Chelsea"
+      ],
+      "correct": 2,
+      "explanation": "Der Spitzname kam in den 1960er-Jahren auf und bezieht sich auf die roten Heimtrikots des Vereins.",
+      "topic": "Premier League",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 454,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie heißt das Heimstadion von Manchester City?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie heißt das klassische Duell zwischen Real Madrid und FC Barcelona?",
+      "options": [
+        "El Clásico",
+        "El Superclásico",
+        "El Derbi",
+        "La Batalla"
+      ],
+      "correct": 0,
+      "explanation": "Real Madrid und der FC Barcelona treffen seit 1902 aufeinander; ihr Duell gilt als das prestigeträchtigste Spiel im spanischen Fußball.",
+      "topic": "La Liga",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 456,
+        "basis": "HEAD",
+        "ersetztDurch": "In welchem Land wird die Süper Lig gespielt?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wer ist bekannt als 'Bomber der Nation'?",
+      "options": [
+        "Uwe Seeler",
+        "Karl-Heinz Rummenigge",
+        "Gerd Müller",
+        "Klaus Fischer"
+      ],
+      "correct": 2,
+      "explanation": "Der Stürmer des FC Bayern traf 365-mal in der Bundesliga und 68-mal für die Nationalmannschaft – daher der Beiname.",
+      "topic": "Bundesliga",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 490,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie heißt das Heimstadion von Werder Bremen?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie heißt das Heimstadion von Bayern München?",
+      "options": [
+        "Signal Iduna Park",
+        "Olympiastadion",
+        "Veltins-Arena",
+        "Allianz Arena"
+      ],
+      "correct": 3,
+      "explanation": "Die Allianz Arena in München ist seit 2005 das Heimstadion des FC Bayern München.",
+      "topic": "Bundesliga",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 495,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie heißt das Heimstadion des Hamburger SV?",
+        "aehnlichkeit": 0.44
+      }
+    },
+    {
+      "question": "Welcher Klub hat die meisten Champions-League-Titel gewonnen?",
+      "options": [
+        "FC Bayern München",
+        "Real Madrid",
+        "FC Barcelona",
+        "Liverpool FC"
+      ],
+      "correct": 1,
+      "explanation": "Real Madrid gewann den Wettbewerb schon in den 1950er-Jahren fünfmal nacheinander und liegt bei den Titeln bis heute klar vor allen anderen Klubs.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 509,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie viele Mannschaften spielen seit 2024 in der Ligaphase der Champions League?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Wer gewann die erste Ausgabe des Europapokals der Landesmeister 1956?",
+      "options": [
+        "Juventus Turin",
+        "AC Mailand",
+        "Benfica Lissabon",
+        "Real Madrid"
+      ],
+      "correct": 3,
+      "explanation": "Real Madrid gewann 1956 den ersten Europapokal der Landesmeister gegen Stade de Reims und dominierte jahrelang.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 515,
+        "basis": "HEAD",
+        "ersetztDurch": "Aus wie vielen Partien besteht ein K.-o.-Duell der Champions League vor dem Finale?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Wie heißt die höchste Fußballiga in Spanien?",
+      "options": [
+        "Segunda División",
+        "Super Liga",
+        "La Liga",
+        "División de Honor"
+      ],
+      "correct": 2,
+      "explanation": "Die spanische Erstklassigkeit trägt seit 2016 offiziell den Namen LaLiga; die zweite Spielklasse heißt Segunda División.",
+      "topic": "Weltfußball",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 538,
+        "basis": "HEAD",
+        "ersetztDurch": "In welchem Land spielt der Traditionsklub Celtic Glasgow?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welche Farbe hat die Karte, die zum Spielausschluss führt?",
+      "options": [
+        "Gelb",
+        "Orange",
+        "Rot",
+        "Blau"
+      ],
+      "correct": 2,
+      "explanation": "Nach dem Platzverweis muss die Mannschaft den Rest der Partie mit einem Spieler weniger auskommen; Ersatz ist nicht erlaubt.",
+      "topic": "Grundregeln",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 582,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie lange dauert die Pause zwischen den beiden Halbzeiten im Profifußball?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Wie heißt der Bereich vor dem Tor, in dem der Torwart den Ball mit der Hand aufnehmen darf?",
+      "options": [
+        "Mittelkreis",
+        "Torraum",
+        "Elfmeterpunkt",
+        "Strafraum"
+      ],
+      "correct": 3,
+      "explanation": "Dieser Bereich reicht 16,5 Meter ins Feld hinein; im deutlich kleineren Torraum wird lediglich der Abstoß ausgeführt.",
+      "topic": "Grundregeln",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 587,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie nennt man die Reihe von Spielern, die sich bei einem Freistoß vor das eigene Tor stellt?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Was bedeutet VAR im Fußball?",
+      "options": [
+        "Video Assistant Referee",
+        "Virtual Action Replay",
+        "Video Automatic Review",
+        "Visual Aid Referee"
+      ],
+      "correct": 0,
+      "explanation": "Der Videoassistent meldet sich nur bei klaren Fehlern und nur in vier Fällen: Tor, Strafstoß, Rote Karte und Spielerverwechslung.",
+      "topic": "Grundregeln",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 588,
+        "basis": "HEAD",
+        "ersetztDurch": "Was passiert, wenn ein Torwart die Rote Karte sieht und kein Wechsel mehr möglich ist?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Was bedeutet 'Flanke' im Fußball?",
+      "options": [
+        "Ein hoher Pass von der Seite in den Strafraum",
+        "Ein Fallrückzieher",
+        "Ein flacher Pass von der Seite ins Zentrum",
+        "Ein Kopfball ins Tor"
+      ],
+      "correct": 0,
+      "explanation": "Eine Flanke ist ein hoher, geschwungener Pass von der Außenbahn in den Strafraum.",
+      "topic": "Grundregeln",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 608,
+        "basis": "HEAD",
+        "ersetztDurch": "Welche Mannschaft führt den Anstoß zur zweiten Halbzeit aus?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Was ist ein 'Konter' im Fußball?",
+      "options": [
+        "Ein Fallrückzieher aus der Drehung über den Kopf",
+        "Ein weiter Einwurf über die halbe Spielfeldbreite",
+        "Ein schneller Angriff nach gewonnenem Ball aus der eigenen Hälfte",
+        "Ein Eckball von der linken Seite mit viel Drall"
+      ],
+      "correct": 2,
+      "explanation": "Beim Konter (Gegenstoß) greift eine Mannschaft nach Ballgewinn schnell an.",
+      "topic": "Grundregeln",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 610,
+        "basis": "HEAD",
+        "ersetztDurch": "Was ist ein 'Fallrückzieher' im Fußball?",
+        "aehnlichkeit": 0.67
+      }
+    },
+    {
+      "question": "Welcher Verein gewann die erste Bundesliga-Meisterschaft 1963/64?",
+      "options": [
+        "FC Bayern München",
+        "Werder Bremen",
+        "Borussia Dortmund",
+        "1. FC Köln"
+      ],
+      "correct": 3,
+      "explanation": "In der Premierensaison der neuen Liga setzten sich die Kölner durch. Der FC Bayern spielte damals noch gar nicht in der Bundesliga.",
+      "topic": "Bundesliga",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 623,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Berliner Verein trägt den Spitznamen 'Die Eisernen'?",
+        "aehnlichkeit": 0.23
+      }
+    },
+    {
+      "question": "Welcher Verein heißt 'The Gunners'?",
+      "options": [
+        "Arsenal",
+        "Chelsea",
+        "Tottenham",
+        "West Ham"
+      ],
+      "correct": 0,
+      "explanation": "Der Name geht auf den Rüstungsbetrieb Royal Arsenal in Woolwich zurück, in dem die Gründungsmitglieder arbeiteten.",
+      "topic": "Premier League",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 628,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie heißt die zweithöchste Spielklasse im englischen Fußball?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Wie nennt man das Duell zwischen Real Madrid und FC Barcelona?",
+      "options": [
+        "Der Schlager",
+        "El Clásico",
+        "Derby Madrileño",
+        "La Batalla"
+      ],
+      "correct": 1,
+      "explanation": "Das Spiel gilt als eines der meistgesehenen Vereinsduelle der Welt. Als Derby Madrileño bezeichnet man dagegen Real gegen Atlético.",
+      "topic": "La Liga",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 633,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Verein ist der große Rivale von Boca Juniors in Buenos Aires?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie oft findet ein WM-Turnier statt?",
+      "options": [
+        "Jedes Jahr",
+        "Alle 4 Jahre",
+        "Alle 2 Jahre",
+        "Alle 6 Jahre"
+      ],
+      "correct": 1,
+      "explanation": "Zwischen zwei Endrunden liegen vier Jahre. In der Zwischenzeit laufen die Qualifikationsspiele und die Kontinentalturniere.",
+      "topic": "WM-Geschichte",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 641,
+        "basis": "HEAD",
+        "ersetztDurch": "Welche Nation gewann die meisten Titel bei Weltmeisterschaften der Frauen?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie heißt die zweithöchste Spielklasse im deutschen Männerfußball?",
+      "options": [
+        "2. Bundesliga",
+        "Bundesliga",
+        "3. Liga",
+        "Regionalliga"
+      ],
+      "correct": 0,
+      "explanation": "Unterhalb der Bundesliga folgt die 2. Bundesliga, darunter erst die 3. Liga und dann die Regionalligen.",
+      "topic": "Bundesliga",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 664,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie heißt das Spiel, in dem der deutsche Meister und der DFB-Pokalsieger vor der Saison aufeinandertreffen?",
+        "aehnlichkeit": 0.11
+      }
+    },
+    {
+      "question": "Welche Nation gewann die EM 2020 (gespielt 2021)?",
+      "options": [
+        "England",
+        "Frankreich",
+        "Italien",
+        "Spanien"
+      ],
+      "correct": 2,
+      "explanation": "Das Finale im Londoner Wembley-Stadion endete 1:1; im Elfmeterschießen setzte sich Italien gegen den Gastgeber durch.",
+      "topic": "WM-Geschichte",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 670,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie heißt der UEFA-Wettbewerb, in dem europäische Nationalmannschaften in Gruppen gegeneinander antreten?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Wie heißt das große Rechteck vor dem Tor, in dem der Torwart den Ball in die Hand nehmen darf?",
+      "options": [
+        "Elfmeterpunkt",
+        "Torraum",
+        "Mittelkreis",
+        "Strafraum"
+      ],
+      "correct": 3,
+      "explanation": "Der Strafraum reicht 16,5 Meter von der Torlinie ins Feld. Der kleinere Torraum liegt darin und ist nur 5,5 Meter tief.",
+      "topic": "Grundregeln",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 671,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie nennt man es, wenn ein Spieler ohne Gegnerkontakt absichtlich zu Boden geht?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "Für welchen Spieler steht das Kürzel 'CR7'?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Carlos Tevez",
+        "Roberto Carlos",
+        "César Rodríguez"
+      ],
+      "correct": 0,
+      "explanation": "Das Kürzel verbindet die Initialen mit der Rückennummer 7, die Cristiano Ronaldo bei Manchester United, Real Madrid und Portugal trug.",
+      "topic": "Legenden",
+      "_herkunft": {
+        "datei": "fussball_leicht.json",
+        "index": 680,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Trainer führte Borussia Dortmund 2011 und 2012 zur deutschen Meisterschaft?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Spieler ist Rekordtorschütze der Copa Libertadores, dem wichtigsten südamerikanischen Clubwettbewerb?",
+      "options": [
+        "Gabriel Batistuta",
+        "Alberto Spencer",
+        "Pelé",
+        "Ronaldo Nazário"
+      ],
+      "correct": 1,
+      "explanation": "Alberto Spencer aus Ecuador erzielte 54 Tore in der Copa Libertadores und hält damit den Rekord als bester Torschütze des Wettbewerbs.",
+      "topic": "Nationalmannschaft",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 53,
+        "basis": "HEAD",
+        "ersetztDurch": "Welche Nationalmannschaft blieb 37 Länderspiele in Folge ungeschlagen – Weltrekord?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1991 den Europapokal als jugoslawischer Klub?",
+      "options": [
+        "Dinamo Zagreb",
+        "Hajduk Split",
+        "Roter Stern Belgrad",
+        "Partizan"
+      ],
+      "correct": 2,
+      "explanation": "Roter Stern Belgrad gewann 1991 den Europapokal.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 54,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher belgische Klub verlor 1978 in Wembley das Endspiel um den Europapokal der Landesmeister?",
+        "aehnlichkeit": 0.24
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1968 als erster englischer Klub den Europapokal nach der Munich-Tragödie?",
+      "options": [
+        "FC Liverpool",
+        "Manchester United",
+        "Leeds",
+        "Celtic"
+      ],
+      "correct": 1,
+      "explanation": "Manchester United gewann 1968, zehn Jahre nach dem Flugzeugabsturz von München.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 69,
+        "basis": "HEAD",
+        "ersetztDurch": "In welche Stadt wurde das Champions-League-Finale 2021 kurzfristig verlegt?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1976 den Europapokal als drittes Bayern-Jahr in Folge?",
+      "options": [
+        "Leeds United",
+        "AS Saint-Étienne",
+        "Ajax",
+        "FC Bayern München"
+      ],
+      "correct": 3,
+      "explanation": "Der FC Bayern gewann 1976 gegen Saint-Étienne den dritten Titel in Folge.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 75,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Klub verlor 2014 und 2016 jeweils gegen den Stadtrivalen das Champions-League-Finale?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Wie viele Tore erzielte Pelé offiziell in seiner Karriere?",
+      "options": [
+        "767",
+        "650",
+        "1000",
+        "850"
+      ],
+      "correct": 0,
+      "explanation": "Pelé erzielte rund 767 offizielle Tore (inkl. inoffizieller über 1000).",
+      "topic": "Spieler",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 88,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher walisische Stürmer ist mit 346 Toren Rekordtorschütze des FC Liverpool?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Spieler erzielte das früheste Tor einer WM-Endrunde?",
+      "options": [
+        "Bryan Robson",
+        "Hakan Şükür",
+        "Václav Mašek",
+        "Ernst Lehner"
+      ],
+      "correct": 1,
+      "explanation": "Hakan Şükür erzielte 2002 das früheste WM-Tor nach 11 Sekunden.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 105,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Spieler sah 1974 die erste Rote Karte der WM-Geschichte?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1960 den ersten Europapokal der Pokalsieger nicht – sondern wer gewann 1961?",
+      "options": [
+        "AC Florenz",
+        "Atlético Madrid",
+        "Tottenham",
+        "Rangers"
+      ],
+      "correct": 0,
+      "explanation": "Florenz gewann 1961 den ersten Pokalsieger-Cup.",
+      "topic": "Wettbewerbe",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 124,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Verein gewann als letzter Sieger den Europapokal der Pokalsieger?",
+        "aehnlichkeit": 0.44
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1981 als deutscher Klub den UEFA-Pokal?",
+      "options": [
+        "Borussia Mönchengladbach",
+        "FC Bayern",
+        "Eintracht Frankfurt",
+        "Hamburger SV"
+      ],
+      "correct": 2,
+      "explanation": "Eintracht Frankfurt gewann 1980 den UEFA-Pokal.",
+      "topic": "Wettbewerbe",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 126,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Klub gewann die afrikanische Champions League häufiger als jeder andere Verein?",
+        "aehnlichkeit": 0.29
+      }
+    },
+    {
+      "question": "Welcher deutsche Verein gewann 1997 den UEFA-Pokal?",
+      "options": [
+        "FC Bayern",
+        "Borussia Dortmund",
+        "Werder Bremen",
+        "FC Schalke 04"
+      ],
+      "correct": 3,
+      "explanation": "Der FC Schalke 04 gewann 1997 als 'Eurofighter' den UEFA-Pokal.",
+      "topic": "Wettbewerbe",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 131,
+        "basis": "HEAD",
+        "ersetztDurch": "Gegen welchen deutschen Klub gewann Aston Villa 2026 das Europa-League-Finale?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1991 die Champions League?",
+      "options": [
+        "Roter Stern Belgrad",
+        "Olympique Marseille",
+        "FC Bayern",
+        "Sampdoria"
+      ],
+      "correct": 0,
+      "explanation": "Roter Stern Belgrad gewann 1991 im Elfmeterschießen.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 144,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie viele Mannschaften spielen seit der Saison 2024/25 in der Ligaphase der Champions League?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1986 die Bundesliga und stellte den Pokalsieger?",
+      "options": [
+        "Werder Bremen",
+        "FC Bayern München",
+        "Borussia Mönchengladbach",
+        "1. FC Köln"
+      ],
+      "correct": 1,
+      "explanation": "Der FC Bayern gewann Mitte der 80er mehrere Doubles.",
+      "topic": "Bundesliga",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 153,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Torhüter erzielte in der Bundesliga die meisten Tore?",
+        "aehnlichkeit": 0.2
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 2001 die Champions League nach Elfmeterschießen?",
+      "options": [
+        "FC Valencia",
+        "Real Madrid",
+        "Manchester United",
+        "FC Bayern München"
+      ],
+      "correct": 3,
+      "explanation": "Bayern gewann 2001 im Elfmeterschießen gegen Valencia.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 175,
+        "basis": "HEAD",
+        "ersetztDurch": "Mit welchem Ergebnis unterlag der FC Barcelona 2020 im Champions-League-Viertelfinale dem FC Bayern München?",
+        "aehnlichkeit": 0.1
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 2010 die Champions League und das italienische Triple?",
+      "options": [
+        "AC Mailand",
+        "Juventus",
+        "AS Rom",
+        "Inter Mailand"
+      ],
+      "correct": 3,
+      "explanation": "Inter gewann 2010 als erster italienischer Klub das Triple.",
+      "topic": "Vereine",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 179,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher englische Klub trägt den Spitznamen 'The Toffees'?",
+        "aehnlichkeit": 0.06
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1960 den Europapokal mit dem höchsten Finalsieg?",
+      "options": [
+        "Eintracht Frankfurt",
+        "Benfica",
+        "AC Mailand",
+        "Real Madrid"
+      ],
+      "correct": 3,
+      "explanation": "Reals 7:3 von 1960 ist eines der torreichsten Europapokalfinals.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 183,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Spieler erzielte 1998 das einzige Tor im Champions-League-Finale gegen Juventus Turin?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1986 die Bundesliga UND verlor das Europapokalfinale?",
+      "options": [
+        "FC Bayern München",
+        "Hamburger SV",
+        "Werder Bremen",
+        "1. FC Köln"
+      ],
+      "correct": 0,
+      "explanation": "Der FC Bayern verlor 1987 das Europapokalfinale gegen Porto.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 192,
+        "basis": "HEAD",
+        "ersetztDurch": "In welcher Saison wurde im Europapokal der Landesmeister erstmals eine Gruppenphase gespielt?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Welcher Spieler erzielte das schnellste Tor der CL-Geschichte?",
+      "options": [
+        "Bafétimbi Gomis",
+        "Paolo Maldini",
+        "Roy Makaay",
+        "Alessandro Del Piero"
+      ],
+      "correct": 2,
+      "explanation": "Roy Makaay traf 2007 nach 10,12 Sekunden gegen Real Madrid.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 194,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Verein verlor 1994 das Champions-League-Finale mit 0:4?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1976 den Europapokal und welche Liga-Saison?",
+      "options": [
+        "Borussia Mönchengladbach",
+        "Real Madrid",
+        "Ajax",
+        "FC Bayern München"
+      ],
+      "correct": 3,
+      "explanation": "Bayern gewann 1976 den dritten Europapokal in Folge.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 195,
+        "basis": "HEAD",
+        "ersetztDurch": "In welcher Saison schaffte die UEFA die Auswärtstorregel in ihren Klubwettbewerben ab?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1974 den Europapokal der Pokalsieger als DDR-Klub?",
+      "options": [
+        "Dynamo Dresden",
+        "1. FC Magdeburg",
+        "Carl Zeiss Jena",
+        "BFC Dynamo"
+      ],
+      "correct": 1,
+      "explanation": "Der 1. FC Magdeburg gewann 1974 gegen den AC Mailand.",
+      "topic": "Geschichte",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 201,
+        "basis": "HEAD",
+        "ersetztDurch": "In welchem Jahr fand das erste offizielle Länderspiel der Fußballgeschichte statt?",
+        "aehnlichkeit": 0.05
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1968 als erster englischer Klub den Europapokal nach 1958-Tragödie?",
+      "options": [
+        "Leeds United",
+        "FC Liverpool",
+        "Wolverhampton",
+        "Manchester United"
+      ],
+      "correct": 3,
+      "explanation": "United gewann 1968, zehn Jahre nach München.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 215,
+        "basis": "HEAD",
+        "ersetztDurch": "Welchen Rückstand aus dem Hinspiel drehte der FC Barcelona 2017 im Achtelfinale gegen Paris Saint-Germain?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 2010 das Triple und Eto'o war Teil davon?",
+      "options": [
+        "FC Barcelona",
+        "FC Bayern",
+        "Real Madrid",
+        "Inter Mailand"
+      ],
+      "correct": 3,
+      "explanation": "Eto'o gewann 2010 mit Inter das zweite Triple seiner Karriere.",
+      "topic": "Vereine",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 219,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Verein trägt seine Heimspiele in der 'Bombonera' aus?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 2001 die Champions League und beendete eine deutsche Durststrecke?",
+      "options": [
+        "Borussia Dortmund",
+        "Bayer Leverkusen",
+        "FC Bayern München",
+        "FC Schalke"
+      ],
+      "correct": 2,
+      "explanation": "Bayern gewann 2001 den ersten Europapokal seit 1976.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 230,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie oft gewann der FC Barcelona den Europapokal der Landesmeister bzw. die Champions League?",
+        "aehnlichkeit": 0.2
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1972 den ersten UEFA-Pokal?",
+      "options": [
+        "Wolverhampton",
+        "FC Liverpool",
+        "Leeds",
+        "Tottenham Hotspur"
+      ],
+      "correct": 3,
+      "explanation": "Tottenham gewann 1972 das erste rein englische UEFA-Pokal-Finale.",
+      "topic": "Wettbewerbe",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 283,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie hieß der von 1995 bis 2008 im Sommer ausgetragene UEFA-Wettbewerb, dessen Sieger sich für den UEFA-Pokal qualifizierten?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 1993 die erste Champions League und welcher Spieler köpfte das Siegtor?",
+      "options": [
+        "Basile Boli",
+        "Rudi Völler",
+        "Jean-Pierre Papin",
+        "Alen Bokšić"
+      ],
+      "correct": 0,
+      "explanation": "Basile Boli köpfte 1993 das Siegtor für Marseille.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 304,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Verteidiger erzielte 2006 im Champions-League-Finale gegen den FC Arsenal das Siegtor für Barcelona?",
+        "aehnlichkeit": 0.23
+      }
+    },
+    {
+      "question": "Welcher Verein gewann fünfmal in Folge den Europapokal 1956-1960?",
+      "options": [
+        "Real Madrid",
+        "Benfica",
+        "Inter Mailand",
+        "Ajax"
+      ],
+      "correct": 0,
+      "explanation": "Real Madrid gewann die ersten fünf Europapokale.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 328,
+        "basis": "HEAD",
+        "ersetztDurch": "In welcher Stadt gewann der FC Liverpool 1977 seinen ersten Europapokal der Landesmeister?",
+        "aehnlichkeit": 0.19
+      }
+    },
+    {
+      "question": "Welcher Spieler erzielte 1958 als 17-Jähriger im WM-Finale zwei Tore?",
+      "options": [
+        "Garrincha",
+        "Pelé",
+        "Vavá",
+        "Didi"
+      ],
+      "correct": 1,
+      "explanation": "Pelé traf 1958 als Teenager zweimal im Finale gegen Schweden.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 329,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Spieler wurde bei der WM 1998 mit sechs Toren Torschützenkönig?",
+        "aehnlichkeit": 0.12
+      }
+    },
+    {
+      "question": "Welcher Verein gewann 2010 als erster italienischer Klub das Triple?",
+      "options": [
+        "AC Mailand",
+        "Juventus",
+        "SSC Neapel",
+        "Inter Mailand"
+      ],
+      "correct": 3,
+      "explanation": "Inter Mailand gewann 2010 das Triple.",
+      "topic": "Vereine",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 331,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher türkische Verein gewann 2000 als bislang einziger Klub des Landes einen Europapokal?",
+        "aehnlichkeit": 0.28
+      }
+    },
+    {
+      "question": "Welcher Spieler erzielte das schnellste Tor der WM-Geschichte?",
+      "options": [
+        "Hakan Şükür",
+        "Ronaldo",
+        "Tim Cahill",
+        "Clint Dempsey"
+      ],
+      "correct": 0,
+      "explanation": "Hakan Şükür traf 2002 nach 11 Sekunden – schnellstes WM-Tor.",
+      "topic": "Weltmeisterschaft",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 332,
+        "basis": "HEAD",
+        "ersetztDurch": "Welche Nation gewann die Weltmeisterschaft 2026?",
+        "aehnlichkeit": 0
+      }
+    },
+    {
+      "question": "Welcher Spieler gewann als erster und bisher einziger Afrikaner den Ballon d'Or?",
+      "options": [
+        "Samuel Eto'o",
+        "George Weah",
+        "Didier Drogba",
+        "Abedi Pelé"
+      ],
+      "correct": 1,
+      "explanation": "George Weah aus Liberia gewann 1995 als einziger Afrikaner den Ballon d'Or.",
+      "topic": "Auszeichnungen",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 333,
+        "basis": "HEAD",
+        "ersetztDurch": "Welche Trophäe wird seit 2018 bei der Ballon-d'Or-Gala an den besten Spieler unter 21 Jahren vergeben?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Wie viele La-Liga-Tore erzielte Messi in der Saison 2011/12 – ein bis heute gültiger Rekord?",
+      "options": [
+        "46",
+        "50",
+        "48",
+        "54"
+      ],
+      "correct": 1,
+      "explanation": "Lionel Messi erzielte 2011/12 in 37 Spielen 50 La-Liga-Tore.",
+      "topic": "La Liga",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 413,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie heißt die Auszeichnung für den Torhüter mit dem besten Gegentorschnitt der La Liga?",
+        "aehnlichkeit": 0.13
+      }
+    },
+    {
+      "question": "Wer erzielte das schnellste Tor in der Geschichte der Champions League?",
+      "options": [
+        "Raúl",
+        "Neymar",
+        "Roy Makaay",
+        "Clarence Seedorf"
+      ],
+      "correct": 2,
+      "explanation": "Roy Makaay erzielte 2007 für Bayern München gegen Real Madrid nach nur 10,12 Sekunden das schnellste Tor der CL-Geschichte.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 466,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Spieler ist der älteste Torschütze der Champions-League-Geschichte?",
+        "aehnlichkeit": 0.29
+      }
+    },
+    {
+      "question": "Wie viele Tore erzielte Cristiano Ronaldo in der Saison 2013/14 in der Champions League?",
+      "options": [
+        "17",
+        "12",
+        "15",
+        "19"
+      ],
+      "correct": 0,
+      "explanation": "Cristiano Ronaldo erzielte in der Saison 2013/14 für Real Madrid 17 Tore in der Champions League – damals ein Saisonrekord.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 472,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Spieler rutschte 2008 im Champions-League-Finale von Moskau beim entscheidenden Elfmeter aus?",
+        "aehnlichkeit": 0.09
+      }
+    },
+    {
+      "question": "Welcher Verein gewann die Champions League als einziger aus Portugal?",
+      "options": [
+        "Sporting Lissabon",
+        "Benfica Lissabon",
+        "SC Braga",
+        "FC Porto"
+      ],
+      "correct": 3,
+      "explanation": "FC Porto gewann die Champions League 1987 und 2004 und ist damit der einzige portugiesische CL-Sieger.",
+      "topic": "Champions League",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 475,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Spieler erzielte 1996 im Champions-League-Finale gegen Ajax Amsterdam den Ausgleich für Juventus?",
+        "aehnlichkeit": 0.14
+      }
+    },
+    {
+      "question": "Wie viele Tore erzielte Just Fontaine bei der WM 1958 in Schweden?",
+      "options": [
+        "11",
+        "15",
+        "17",
+        "13"
+      ],
+      "correct": 3,
+      "explanation": "Just Fontaine erzielte bei der WM 1958 in Schweden 13 Tore – bis heute WM-Rekord für Tore in einem einzigen Turnier.",
+      "topic": "Rekorde",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 479,
+        "basis": "HEAD",
+        "ersetztDurch": "Wie viele Tore erzielte Oleg Salenko 1994 im WM-Spiel gegen Kamerun?",
+        "aehnlichkeit": 0.25
+      }
+    },
+    {
+      "question": "Welcher Spieler erzielte das schnellste Tor in der WM-Geschichte?",
+      "options": [
+        "Miroslav Klose",
+        "Clint Dempsey",
+        "Pelé",
+        "Hakan Şükür"
+      ],
+      "correct": 3,
+      "explanation": "Hakan Şükür (Türkei) erzielte beim Spiel um Platz 3 der WM 2002 gegen Südkorea nach nur 10,9 Sekunden das schnellste WM-Tor.",
+      "topic": "WM-Geschichte",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 591,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Schiedsrichter zeigte bei der WM 2006 einem Spieler dreimal Gelb, bevor er ihn vom Platz stellte?",
+        "aehnlichkeit": 0.15
+      }
+    },
+    {
+      "question": "Welcher brasilianische Spieler erzielte in seiner Karriere angeblich über 1000 Tore (nach offizieller Zählung)?",
+      "options": [
+        "Pelé",
+        "Garrincha",
+        "Romário",
+        "Zico"
+      ],
+      "correct": 0,
+      "explanation": "Pelé behauptet 1283 Tore erzielt zu haben. Die offiziell anerkannte Zahl liegt bei über 770 Pflichtspieltoren.",
+      "topic": "Legenden",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 600,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher nordirische Flügelstürmer gewann 1968 den Ballon d'Or und galt als erster Popstar des Fußballs?",
+        "aehnlichkeit": 0.04
+      }
+    },
+    {
+      "question": "Wie viele Tore erzielte Just Fontaine bei der WM 1958 – ein bis heute ungebrochener Rekord für ein WM-Turnier?",
+      "options": [
+        "11",
+        "15",
+        "13",
+        "17"
+      ],
+      "correct": 2,
+      "explanation": "Just Fontaine (Frankreich) erzielte bei der WM 1958 in Schweden 13 Tore in 6 Spielen – Einzelturnier-Rekord bis heute.",
+      "topic": "WM-Geschichte",
+      "_herkunft": {
+        "datei": "fussball_schwer.json",
+        "index": 622,
+        "basis": "HEAD",
+        "ersetztDurch": "Welcher Spieler erzielte 1930 das erste Tor der WM-Geschichte?",
+        "aehnlichkeit": 0.09
       }
     }
   ]
