@@ -3365,3 +3365,422 @@ bestätigen lässt, wird **gemeldet, nicht gelöscht.**
 **Nachtrag zu §171:** Der Zweifelsfall ist entschieden — der Nutzer wollte den aktuellen Stand. Die Frage nach Real Madrids Heimstadion nennt jetzt den offiziellen Kurznamen "Bernabéu"; alle vier Optionen wurden dafür auf kurze Stadionnamen umgestellt (Metropolitano / Sánchez Pizjuán / San Mamés / Bernabéu), damit die richtige Antwort nicht durch ihre Kürze auffällt. Belegt über die Vereinsseite bernabeu.realmadrid.com und die Berichterstattung vom November 2025 (Estadio Santiago Bernabéu 1955–2025).
 
 Dabei fiel ein veralteter Distraktor auf: In der Barcelona-Frage stand "Wanda Metropolitano" — dieser Name gilt seit 2022 nicht mehr. Auf "Metropolitano" gekürzt. Das erzeugte prompt einen neuen Struktur-Verrat, weil "Camp Nou" damit die einzige zweiteilige Option war; mit "San Mamés" statt "Mestalla" ist er wieder aufgelöst. **Lehre: Jede Optionsänderung kann die Bauform kippen — check_struktur.js danach immer laufen lassen.**
+
+
+## 173. Fussball leicht: die letzten 12 Dubletten-Cluster – und was danach noch offen ist
+
+Die zwölf verbliebenen Cluster aus `fussball_triage/worklist_fussball_leicht.json` sind
+aufgelöst: je Cluster überlebt eine Frage, die übrigen 14 Indizes tragen neue Fragen. Dazu
+kam der Unsicher-Fall 391/656 (Ronaldos Nationalmannschaft vs. Geburtsland) – 391 wurde
+ersetzt, 656 blieb. Macht 15 neue Fragen. Alle drei Prüfskripte melden danach null Befunde,
+die Längenverteilung liegt bei 26/25/25/24 mit 25 % "längste gewinnt".
+
+**Zweifelsfälle, die der Dubletten-Checker nicht sieht und die dieser Auftrag nicht abdecken
+durfte** (je Cluster überlebt genau eine Frage – Bestandsfragen außerhalb der Cluster blieben
+unangetastet):
+
+- **"Bayern ist Rekordmeister" steht dreifach im Katalog.** Index 4 ("Wer ist Rekordmeister
+  der deutschen Bundesliga?"), Index 332 (Cluster-Überlebender, "meiste deutsche
+  Meisterschaften") und Index 620 (Cluster-Überlebender, Spitzname "Der Rekordmeister")
+  fragen formal Verschiedenes, verlangen aber dasselbe Wissen und haben dieselbe Antwort.
+  Index 32 und 365 verwenden "Rekordmeister" zusätzlich als Umschreibung für den FC Bayern.
+  Zwei der drei sollten weg.
+- **"Elf Spieler auf dem Feld" steht doppelt.** Index 0 und Index 396 (Cluster-Überlebender)
+  sind praktisch identisch; Index 579 fragt dieselbe Regel über die Gesamtzahl 22.
+- **Uruguay 1930 fünffach.** Die Indizes 148, 245, 395, 441 und 546 (Cluster-Überlebender)
+  kreisen alle um Gastgeber und Sieger der ersten WM. Das ist der dichteste Themenklumpen,
+  den der Katalog noch hat.
+- **Index 67 verrät Index 488.** Die Frage nach dem Ruhrgebietsklub nennt die Vereinsfarben
+  "Schwarz-Gelb" im Fragetext; Index 488 fragt genau diese Farben ab.
+- **Index 622 verknüpft Stadion und Stadt.** Die Erklärung spricht von "der Dortmunder
+  Arena" und erleichtert damit die Indizes 18 und 347.
+- **Index 196 und 560 bleiben aneinander gekoppelt.** Der Spitzname "The Blues" verrät die
+  Trikotfarbe schon durch die Frage selbst; entschärfen ließen sich nur die Erklärungen.
+  Beide wurden umgeschrieben, der Rest steckt in der Fragestellung.
+- **Struktur-Verrat bei Index 670** (Nations League als einzige mehrwortige Option). Nicht
+  angefasst, weil außerhalb des Auftrags und weil die drei Distraktoren erfundene Namen sind,
+  deren Umbau die Frage neu ausbalancieren müsste.
+
+**Behobener Kreuzverrat:** 646 zählte Barcelonas CL-Siegjahre auf (verriet 249 und 288), 513
+tat dasselbe für Bayern (verriet 262, 116/521 und 95). Zusätzlich gefunden und entschärft:
+645 nannte Pelés drei WM-Titel (verriet 528, 547, 659), 635 und 561 verrieten sich
+gegenseitig über "Los Blancos" und die weiße Spielkleidung, 560 und 196 über "The Blues".
+
+
+## 174. Fussball schwer: die letzten 6 Dubletten-Cluster, Kreuzverrat und Sachfehler
+
+Die sechs offenen Cluster aus `fussball_triage/worklist_fussball_schwer.json` sind aufgelöst
+(216/467, 295/491, 298/488/612, 305/371, 313/471, 480/598). Je Cluster überlebt eine Frage,
+die übrigen sieben Indizes tragen neue Fragen. Dazu kam Index 494 – eine vierte
+Copa-Libertadores-Frage, die den Rekordsieger falsch mit Boca Juniors statt Independiente
+beantwortete –, außerdem Index 198 (Kreuzverrat) und Index 196 (Unsicher-Fall). Macht zehn
+neue Fragen. Alle drei Prüfskripte melden danach null Befunde, die Längenverteilung liegt bei
+37/27/15/21 mit 30 % "längste gewinnt" (vorher 39/25/16/20 und 32 %).
+
+**Sachfehler, die behoben wurden:** erster Ballon d'Or 1956 (Index 480 stand auf Raymond
+Kopa, richtig ist Stanley Matthews); Widerspruch 33 vs. 336 zum Torrekord in einem
+CL-Spiel – fünf Tore gelangen bis August 2026 drei Spielern (Messi 2012, Luiz Adriano 2014,
+Haaland 2023), beide Fragen zielen jetzt auf je einen belegten Fall; Meta-Optionen bei 312
+(schnellstes EM-Tor, jetzt Nedim Bajrami, 23 Sekunden, EM 2024); Sieger/Gegner-Verwechslung
+bei 111 und 318; Jahresangabe 2023 statt 2022 bei 249; Tippfehler "1976, 1976" bei 292.
+
+**Zweifelsfälle, die dieser Auftrag nicht abdecken durfte oder die offen bleiben:**
+
+- **Index 601 enthält einen Sachfehler.** "Weltfußballer des Jahres 2004 und spielte für
+  Juventus sowie Real Madrid" – Ronaldinho (die richtige Antwort) spielte für Barcelona; die
+  Vereinsangabe beschreibt Zidane. Außerhalb des Auftrags, nicht angefasst.
+- **Index 538 fragt nach einem "Trikothersteller", die richtige Antwort ist eine Person**
+  (Herbert Kilpin). Der Fragetext war laut Auftrag tabu, angeglichen wurden nur die Optionen.
+- **Index 20 hatte eine falsche Prämisse.** "Das einzige Tor im EM-Finale 1976" gab es nicht
+  (2:2 nach Verlängerung). Der Fragetext war eigentlich tabu, ließ sich aber nur unter
+  Beibehaltung einer Meta-Option oder als Dublette zu Index 372 (Panenka) reparieren. Die
+  Frage zielt jetzt auf Hölzenbeins 2:2-Ausgleich – auch deshalb, weil die naheliegende
+  Alternative (Dieter Müllers 1:2) dieselbe richtige Antwort wie Index 442 gehabt hätte.
+- **Der Gento-Block bleibt eng verzahnt.** 306 (Anzahl), 307 (moderner Spieler) und 371
+  (Cluster-Überlebender) kreisen um denselben Rekord. Aus 306 und 307 wurde der Name "Gento"
+  entfernt, damit 371 nicht verraten wird; die Zahl sechs bleibt aber über 306 erschließbar.
+  307 war zusätzlich nicht eindeutig – Modrić kommt ebenfalls auf sechs Titel –, die Frage
+  grenzt jetzt über "spanischer Rechtsverteidiger" ein.
+- **Index 135 (Ajax 1971) bleibt teilweise erschließbar.** 108 und 109 wurden entschärft
+  (Fragetext von 108 nannte die eigene Antwort), aber das Optionsfeld von 109 besteht
+  ausschließlich aus Ajax-Spielern.
+- **Gladbach als UEFA-Pokal-Sieger steht dreifach.** 240 (1979) und 241 (1975) haben
+  dieselbe Antwort und machen zusammen Index 32 ("mehrmals in den 70ern/80ern") trivial.
+  Der gemeldete Kreuzverrat über die Erklärung von 32 war bereits behoben.
+- **Gerd Müller und Johan Cruyff sind Themenklumpen.** Gerd Müller ist richtige Antwort in
+  41, 133, 180, 301, 327, 574 und 609; Cruyff in 109, 145, 416, 590 und 621.
+- **Index 217 bleibt an den Cluster-Überlebenden 467 gekoppelt.** 217 fragt Seedorfs drei
+  Klubs ab, deshalb musste die Erklärung von 467 die Klubaufzählung verlieren.
+
+**Behobener Kreuzverrat:** 198 zählte Ajax' Siegjahre auf (verriet 135 und sich selbst) und
+wurde ersetzt; 243 nannte "das Triple 2013" und verriet damit Index 451; 108 nannte "Ajax"
+im eigenen Fragetext; 109 nannte "Ajax-Star 1971-1973". Die übrigen gemeldeten Paare
+(4/324, 32/240, 32/241, 75/245, 195/245, 242/451) waren bereits in früheren Chargen behoben.
+
+
+---
+
+## Nachtrag 13. August 2026 — Dubletten- und Sachfehler-Charge fussball_mittel
+
+Aus der Auflösung der 43 Dubletten-Cluster (50 Ersatzfragen), 15 Kreuzverrat-Fälle und
+4 Sachfehler in `questionbank_katalog/fussball_mittel.json`. Alle Prüfungen laufen sauber
+(check_dubletten --streng: 0, check_questions: 0 Befunde, Rang 36/23/20/21, längste 31 %,
+684 Fragen, correct-Verteilung exakt 25/25/25/25). Offen bleibt Folgendes.
+
+**Konzept-Dubletten außerhalb der Cluster.** Der Dublettenprüfer vergleicht Wortlaut, nicht
+Sachverhalt — diese Paare fragen dieselbe Tatsache und blieben deshalb unentdeckt. Sie
+lassen sich nur mit weiteren Ersatzfragen auflösen, dafür fehlte in dieser Charge der
+Auftrag (je Cluster durfte genau eine Frage überleben, die Partner stehen außerhalb):
+
+- **18 / 546** — beide: Sieger der WM 2010 → Spanien.
+- **134 (Cluster-Überlebender) / 309** — beide: Bundesliga-Meister 2001/02 → Dortmund.
+- **295 (Cluster-Überlebender) / 84** — beide: CL-Sieger 1995 → Ajax.
+- **38 (Cluster-Überlebender) / 401 / 513** — alle drei kreisen um das CL-Finale 2012.
+- **544 (Cluster-Überlebender) / 675** — "O Fenômeno" bzw. "Il Fenomeno" → Ronaldo Nazário.
+- **263 / 626** — beide: Trainer von Leverkusen 2024 → Xabi Alonso.
+
+**Kreuzverrat, der im Fragetext steckt und deshalb nicht durch eine Erklärung zu heilen war:**
+
+- **380 verrät 258.** "In welchem Jahr gewann Liverpool zum sechsten Mal die CL?" (2019)
+  gibt den Cluster-Überlebenden 258 (CL-Sieger 2019) preis. Nur per Ersatzfrage lösbar.
+- **Bayern-Meisterserie systemisch.** Die Fragetexte von 111, 169 und 218 nennen "neunter /
+  fünfter / sechster Titel in Folge" und machen damit die Nachbarjahre (203, 244, 254, 322,
+  323) erschließbar. Die Erklärungen von 21, 244, 254 und 322 habe ich entschärft, die
+  Fragetexte blieben stehen.
+- **349 verrät 242** ("Siegtor für Deutschland" im WM-Finale 1974).
+- **253 verrät 252** ("beide Tore im CL-Finale 2007 für Milan").
+- **189 verrät 188** (Atlético verlor 2014 und 2016 gegen den Stadtrivalen).
+- **229 / 35 / 353 / 373** hängen zusammen (Pelé, WM 1958). 373 wurde von der Jahresliste
+  befreit, der Themenklumpen bleibt: Pelé ist richtige Antwort in 35, 104, 353, 373 und 661.
+
+**Sachliches außerhalb des Auftrags (nicht angefasst):**
+
+- **576: "Wanda Metropolitano" ist veraltet.** Atléticos Stadion trägt seit dem Sponsorwechsel
+  2024 einen anderen Namen; Antwort und Erklärung müssten nachgezogen werden. Die neue
+  Frage 464 (Bernabéu) meidet das Problem.
+- **22 hat eine verschmolzene Option**: "Bader Al-Mutawa / Soh Chin Ann" steht als ein
+  Eintrag — vier Optionen nur formal.
+- **44 hat eine Meta-Option** ("beide ca. 9 Sek (Bellarabi/Volland)") und fragt denselben
+  Rekord ab wie 377.
+- **362 ist falsch und widerspricht sich selbst**: als richtig gewertet ist 10:0, die
+  Erklärung nennt am Ende selbst das korrekte 10:1 (Ungarn – El Salvador 1982).
+- **407 widerspricht sich**: Option und Erklärung nennen unterschiedliche Jahre (1949 / 1950)
+  für das erste Nachkriegs-Länderspiel.
+- **665 widerspricht sich**: Fragetext "1900 gegründet", Erklärung "1887 gegründet".
+- **382 hat eine falsche Prämisse** ("nach dem WM-Desaster 2018 abgelöst"); die Erklärung
+  sagt selbst, dass es keine Ablösung gab.
+- **415** ist im Fragetext verunglückt ("auf dem fünften Platz in der CL-Geschichte gelistet").
+- **648 ist eine Fangfrage mit Meta-Option** ("Keine Mannschaft").
+- **572** behauptet in der Erklärung, das Camp Nou heiße ab 2024 offiziell Estadi Olímpic
+  Lluís Companys — das ist das Ausweichstadion während des Umbaus, nicht der neue Name.
+- **590** ist im Fragetext verunglückt ("übernahm Adidas die Ausrüstung des DFB von Adidas").
+
+**Mit korrigiert, obwohl nicht beauftragt** (weil sonst der beauftragte Fix unvollständig
+geblieben wäre): 78 (Ancelotti hat fünf CL-Titel, nicht vier), 461 und 655 (nannten Jahre
+bzw. Titelzahl und verrieten damit 79, 188, 226, 273), 16 / 533 / 622 (41-Tore-Dreieck),
+433 (nannte den Sieger von 1994), 514 (nannte Real Madrid im Fragetext), 21, 27, 161, 211,
+373, 522, 617 (Serien- bzw. Zahlenverrat in Erklärungen).
+
+---
+
+## 175. fussball_leicht: Rest-Dubletten aufgelöst — und ein viel größerer Restbefund (13.8.2026)
+
+Auftrag war, die drei bekannten Mehrfach-Dubletten (Uruguay 1930 fünffach, Bayern
+Rekordmeister dreifach, "elf Spieler" doppelt) und zwei Kreuzverrat-Fälle zu beheben und
+danach selbst weiterzusuchen. Die drei Gruppen sind erledigt, die Kreuzverrat-Fälle auch.
+Der eigene Suchlauf hat allerdings **rund 45 weitere Gruppen** gefunden, in denen dasselbe
+Faktum zwei- bis fünfmal abgefragt wird. Davon sind sieben mit erledigt, der Rest steht
+unten und braucht einen eigenen Durchgang.
+
+### Was in dieser Sitzung ersetzt wurde (15 Fragen, alle 0-basiert)
+
+| Index | ersetzt weil | neues Thema |
+|---|---|---|
+| 148, 395, 441, 546 | Uruguay/WM 1930 fünffach (überlebt: 245) | FIFA-Weltrangliste · Spitzname Oliver Kahn · Bedeutung des "U" in U21 · Geisterspiel |
+| 332, 620 | Bayern Rekordmeister dreifach (überlebt: 4) | Torverhältnis in der Tabelle · Trainingslager |
+| 396 | "elf Spieler auf dem Feld" doppelt (überlebt: 0) | Rückwechsel verboten |
+| 67 | doppelt zu 601 (Gelbe Wand / größte Stehplatztribüne) **und** Kreuzverrat zu 488 | Sportdirektor |
+| 347 | umgekehrte Dublette zu 18 (Signal Iduna Park ↔ Dortmund) | BayArena Leverkusen |
+| 543, 545, 631, 624, 342, 371 | sechs Ligennamen-Dubletten (überlebt: 71, 70, 119, 537, 331, 79) | Physiotherapeut · Torwarttrainer · Copa del Rey · UEFA richtet die EM aus · Länge des Spielfelds · Abschiedsspiel |
+
+Kreuzverrat nur über die Erklärung entschärft, ohne Ersatzfrage: **18** (nannte "größte
+Arena Deutschlands" → verriet 622), **622** (nannte Dortmund und die Südtribüne → verriet
+18 und 601), **601** (nannte den Signal Iduna Park → verriet 18).
+
+Messwerte danach unverändert im Korridor: 683 Fragen, correct 171/171/171/170,
+Längenrang 26/25/25/24 (25 % "längste"), `check_dubletten --streng` 0, `check_questions` 0.
+
+### Warum die bisherigen Läufe das nicht gefunden haben
+
+`check_dubletten.js` misst Jaccard-Ähnlichkeit über die Fragewörter. Genau die
+Formulierungspaare, die unten stehen, teilen fast keine Inhaltswörter:
+
+    71  "Wie heißt die höchste Spielklasse im italienischen Fußball?"
+    543 "Wie heißt die höchste Fußballiga in Italien?"
+
+"Spielklasse/italienischen/fußball" gegen "fußballiga/italien" — die Ähnlichkeit bleibt
+unter der lockeren Schwelle, obwohl es dieselbe Frage ist. Gefunden habe ich die Gruppen,
+indem ich **nach der richtigen Antwort gruppiert und jede Gruppe von Hand gelesen** habe.
+Das ist der Weg, der für den Rest ebenfalls funktioniert; der Ähnlichkeitscheck allein
+findet sie nicht. Alle 15 neuen Fragen tauchen übrigens nicht einmal im lockeren Lauf auf.
+
+### Offen: die restlichen Gruppen (je EINE Frage soll überleben)
+
+**Grundregeln und Begriffe** — hier steht dieselbe Regel oft dreifach:
+
+- Rote Karte: **1 / 338 / 668**
+- Hattrick: **5 / 337 / 581**
+- Eigentor: **25 / 400 / 586** (+ **86 / 350** fragen die Folge desselben Vorgangs ab)
+- Einwurf: **15 / 58 / 413**
+- Spielmacher: **136 / 399 / 327**
+- Schienbeinschoner: **124 / 556 / 592 / 615**
+- 90 Minuten: **2 / 335** · Doppelpass: **81 / 356** · Kopfball: **41 / 386**
+- Strafraum: **33 / 366** · Abstoß: **247 / 672** · Libero: **370 / 605** · Pressing: **201 / 606**
+- Torwartposition: **8 / 591** · direkter Freistoß: **146 / 585**
+- Gelb-Rot: **204 / 583** · fünf Auswechslungen: **23 / 402**
+- Verlängerung + Elfmeterschießen: **108 / 507** · 18 Bundesligavereine: **106 / 355**
+- Europa League: **189 / 394** · DFB-Pokal: **64 / 414 / 492 / 496**
+
+**Rekorde und Personen:**
+
+- Lothar Matthäus, Länderspielrekord: **107 / 157 / 380 / 535**
+- Messi, Ballon-d'Or-Rekord: **252 / 525 / 647** (+ **367** fragt dieselbe Zahl)
+- Pelé, drei WM-Titel: **39 / 528 / 547** (+ **659** dieselbe Zahl)
+- Gerd Müller, Bundesliga-Rekordtorschütze: **63 / 351** (+ **407** Vereinsrekord)
+- Lewandowski, 41 Tore: **36 / 487** (+ **156** dieselbe Zahl)
+- Real Madrid, meiste CL-Titel: **74 / 359**; fünf Titel in Folge: **137 / 678** (+ **141**)
+- Juventus, Meisterrekord: **185 / 470** · Ronaldo, CL-Torrekord: **14 / 512**
+- Neuer 2014: **111 / 321** · Brehme 1990: **126 / 667** · Bierhoff 1996: **241 / 427**
+- Maradona 1986: **73 / 228** · Guardiola bei Barça: **464 / 574**
+
+**Turniere, Vereine, Marken:**
+
+- WM 2014: **3 / 313** (+ **343** fragt das Jahr) · WM 2006 Gastgeber: **93 / 385**
+- WM 2002: **113 / 433** · WM 2018: **45 / 436** · WM 1954: **104 / 374** (Jahr statt Sieger)
+- meiste WM-Titel: **16 / 336** (+ **638**) · meiste EM-Titel: **154 / 416**
+- EM 2024: **24 / 426** · EM 1992: **322 / 422** · 24 EM-Teilnehmer: **415 / 419**
+- WM 2026 Gastgeber: **357 / 673** · "Die Mannschaft": **38 / 387**
+- Anfield: **44 / 200 / 448** · Old Trafford: **84 / 446** (+ **398**)
+- Allianz Arena: **54 / 341** (+ **491 / 32** Stadt München) · Camp Nou: **59 / 457**
+- Barcelona "Blaugrana": **53 / 344** · Adidas: **549 / 565 / 614** · Nike: **552 / 555**
+
+**Größenordnung:** Wer das auflöst, braucht rund 45 Ersatzfragen. Das ist die eigentliche
+Schwierigkeit — der Katalog deckt den leichten Fußballstoff schon sehr dicht ab. Für die 15
+Fragen dieser Sitzung waren bereits mehrere Themen zu verwerfen, weil ein Schlüsselwort
+schon in einer anderen Erklärung stand (Mauerabstand 9,15 m in 35/289, Fünfmeterraum in
+191/315, Torhöhe 2,44 m in 29/127, "Interimstrainer" in 576, "Führungstreffer" in 288,
+"Titelverteidiger" in 192/219/412/531, Conference League in 28). **Vorschlag:** vor dem
+nächsten Durchgang entscheiden, ob wirklich jede Gruppe auf eine Frage schrumpfen soll —
+oder ob bei Grundregeln (Rote Karte, Hattrick, Eigentor) zwei Formulierungen desselben
+Fakts zulässig sind, weil der Katalog sonst in Randthemen ausweichen muss und dabei
+schwerer wird, als "leicht" sein darf.
+
+### Zweifelsfälle aus dieser Sitzung
+
+- **85 gegen 368:** 85 sagt, **Kylian Mbappé** habe die meisten WM-Tore insgesamt erzielt;
+  368 sagt, **Klose** habe 2014 mit dem 16. Tor den WM-Torrekord aufgestellt. Beides
+  zusammen geht nur auf, wenn Mbappé bei der WM 2026 an Klose vorbeigezogen ist. Nicht
+  angefasst, weil außerhalb des Auftrags — **bitte gegen das Turnierergebnis 2026 prüfen.**
+- **18 / 622 bleiben nebeneinander:** 18 fragt den Verein im Signal Iduna Park, 622 das
+  größte Stadion der Bundesliga (Antwort: Signal Iduna Park). Verschiedene Fakten, aber die
+  Antwort des einen ist im anderen ein Begriff. Ich habe die Erklärungen entkoppelt statt
+  zu ersetzen. Wenn das zu nah beieinander liegt, müsste 622 weichen.
+- **Themenverschiebung durch die Ersetzungen:** die Kategorien "Weltmeisterschaft" (−2),
+  "Geschichte" (−1), "Bundesliga" (−3), "Premier League" (−1) und "Weltfußball" (−1) haben
+  Fragen abgegeben, "Begriffe" (+5) hat welche aufgenommen. Inhaltlich war es nicht anders
+  lösbar, weil die alten Themen an den betroffenen Stellen bereits erschöpft sind.
+
+---
+
+## 176. fussball_mittel: Sachfehler, Konzept-Dubletten und Kreuzverrat aus dem Nachtrag (13.8.2026)
+
+Abgearbeitet wurde die Liste aus dem "Nachtrag 13. August 2026 — Dubletten- und
+Sachfehler-Charge fussball_mittel". Alle dort gemeldeten Punkte waren beim Prüfen noch
+offen, keiner hatte sich zwischenzeitlich erledigt. Ergebnis: 12 Fragen ersetzt,
+13 Fragen repariert (Fragetext, Optionen oder Erklärung), eine weitere Erklärung
+entschärft. Anzahl 684 und correct-Verteilung 171/171/171/171 unverändert.
+
+### Ersetzte Fragen (0-basiert, correct-Position jeweils beibehalten)
+
+| Index | ersetzt weil | neues Thema |
+|---|---|---|
+| 44 | Meta-Option "beide ca. 9 Sek (Bellarabi/Volland)", zudem Dublette zu 377 | Bundesliga-Rekord: 884 Minuten ohne Gegentor (Hildebrand) |
+| 84 | Konzept-Dublette zu 295 (CL-Sieger 1995 → Ajax) | Benfica gewinnt 1961 und 1962 den Landesmeisterpokal |
+| 111 | Fragetext nannte "neunter Titel in Folge" und verriet die Nachbarjahre | Regel: fünf Auswechslungen pro Pflichtspiel |
+| 242 | 349 verriet über das Siegtor 1974 die Antwort; zudem Verrat über "mit Beckenbauer als Kapitän" im eigenen Fragetext | Weltmeister 2026: Spanien |
+| 253 | Optionsfeld und Fragetext verrieten 252 (CL-Sieger 2007) | Abschaffung der Auswärtstorregel 2021 |
+| 309 | Konzept-Dublette zu 134 (Meister 2001/02 → Dortmund) | DFB-Pokalsieger 2025: VfB Stuttgart |
+| 380 | Fragetext "sechster CL-Titel Liverpools" verriet 258 | CL-Finale 2026: PSG gegen Arsenal |
+| 401 | Konzept-Dublette zu 38 (CL-Finale 2012 → Chelsea) | UEFA Super Cup |
+| 546 | Konzept-Dublette zu 18 (WM 2010 → Spanien) | Nations-League-Sieger 2025: Portugal |
+| 626 | Konzept-Dublette zu 263 (Leverkusen 2024 → Xabi Alonso) | 1. FC Nürnberg als einziger abgestiegener Meister |
+| 648 | Fangfrage mit Meta-Option "Keine Mannschaft" | WM-Ausfall 1942 und 1946 |
+| 675 | Konzept-Dublette zu 544 ("O Fenômeno" → Ronaldo Nazário) | Ballon d'Or 2006 für Fabio Cannavaro |
+
+### Reparierte Fragen
+
+- **22** — die verschmolzene Option "Bader Al-Mutawa / Soh Chin Ann" ist jetzt ein einzelner
+  Name; damit die richtige Antwort nicht die längste Option ist, steht als vierter Eintrag
+  Zlatan Ibrahimović statt Sergio Ramos. Erklärung auf "über 230 Länderspiele, Stand
+  August 2026" datiert (Beleg: UEFA-Statistik, 232 Partien).
+- **169 / 218** — die Serienangaben ("fünfter/sechster Titel in Folge") sind aus den
+  Fragetexten verschwunden; damit sind 203, 244, 254, 322 und 323 nicht mehr erschließbar.
+- **189** — Jahreszahlen 2014/2016 aus Fragetext und Erklärung entfernt (verriet 188).
+  Optionen auf ähnliche Länge gebracht.
+- **362** — die Frage stand auf einem 10:0, das es nie gab. Sie zielt jetzt auf den belegten
+  Rekord: Ungarn – El Salvador 10:1 bei der WM 1982 (Beleg: FIFA, kicker, DFB-Datencenter).
+- **382** — falsche Prämisse entfernt; die Frage zielt jetzt darauf, dass Löw nach 2018
+  im Amt blieb und erst 2021 aufhörte.
+- **407** — Widerspruch zwischen Option (1949) und Erklärung (1950) aufgelöst: erstes
+  Nachkriegs-Länderspiel am 22. November 1950 gegen die Schweiz in Stuttgart, 1:0 durch
+  einen Elfmeter von Herbert Burdenski (Beleg: DFB, Tagesspiegel).
+- **415** — der Fragetext war unverständlich ("auf dem fünften Platz in der CL-Geschichte
+  gelistet"). Eine Reparatur auf "Wie oft gewann Real Madrid die Champions League?" war
+  nicht möglich, weil **Index 4 genau diese Frage bereits stellt**. Die Frage trägt daher
+  ein neues Thema: ältester Spieler einer WM-Endrunde (El-Hadary, 45 Jahre und 161 Tage).
+- **513** — "das Chelsea gewann" ist aus dem Fragetext raus, ebenso der Sieger aus der
+  Erklärung; damit ist 38 nicht mehr verraten.
+- **572** — die Erklärung behauptete, das Camp Nou heiße seit 2024 offiziell Estadi Olímpic
+  Lluís Companys; das war das Ausweichstadion. Neue Fassung: offizieller Name seit dem
+  Sponsorenvertrag 2022 "Spotify Camp Nou", Rückkehr nach dem Umbau im November 2025.
+  Die Antwortoption heißt jetzt "Camp Nou" statt "Nou Camp"; die Optionen sind einheitlich
+  zweiteilig (Camp Nou / San Siro / Stamford Bridge / Old Trafford).
+- **576** — "Wanda Metropolitano" ist seit 2022 überholt. Antwort jetzt "Metropolitano";
+  weil die Bauform sonst gekippt wäre (§171), sind alle vier Optionen neu gesetzt
+  (Metropolitano / Sánchez Pizjuán / Vicente Calderón / Mestalla). Erklärung nennt die
+  Sponsorenkette Wanda → Cívitas → Riyadh Air, datiert auf August 2026.
+- **590** — "übernahm Adidas die Ausrüstung des DFB von Adidas" repariert; die Frage zielt
+  jetzt sauber auf den Beginn der Partnerschaft 1954. Die Erklärung nennt den Wechsel zu
+  Nike ab 2027 (Beleg: DFB-FAQ, kicker).
+- **665** — der Fragetext behauptete Gründungsjahr 1900, die Erklärung 1887. Das Jahr ist
+  aus dem Fragetext raus, die Erklärung nennt die belegte Gründung 1887 und den Abstieg
+  2018 (Beleg: HSV-Vereinsangaben).
+- **24** — nicht beauftragt, aber nötig geworden: Die Erklärung sprach von der "(sechsten)"
+  Auswechslung und hätte damit die neue Frage 111 verraten. Zahl entfernt.
+
+### Zweifelsfälle und neue Funde, die dieser Auftrag nicht abdecken durfte
+
+- **Weitere Konzept-Dubletten, beim Gegenlesen gefunden** (Wortlaut-Prüfer sieht sie nicht):
+  - **142 / 256** — beide: Weltmeister 2006 → Italien.
+  - **186 / 484** — beide: Rekordspieler der Bundesliga → Karl-Heinz "Charly" Körbel, 602 Spiele.
+  - **82 / 346** — beide: erster Sieger der umbenannten Champions League 1993 → Marseille.
+  - **4 / (ehemals 415)** — "Wie viele CL-Titel hat Real Madrid?" stand doppelt; durch die
+    Neufassung von 415 ist der Fall erledigt, 4 bleibt.
+- **Sachfehler außerhalb des Auftrags, nicht angefasst:**
+  - **593** behauptet, Borussia Dortmund habe "die erste Bundesliga-Meisterschaft 1963"
+    gewonnen. Erster Bundesligameister war der 1. FC Köln (1963/64) — so steht es auch in
+    Index 483. Dortmund gewann 1963 die letzte Endrundenmeisterschaft vor der Bundesliga.
+  - **599** sagt, Helmut Rahn habe "bis 1962 in der Bundesliga" gespielt; die Bundesliga
+    startete erst 1963/64 (Index 32 sagt das selbst).
+  - **636** fragt nach der Torjägerkanone 2023/24, die Erklärung antwortet mit der Saison
+    2022/23 und 36 Toren.
+  - **640** ist auf "bis 2024" datiert (Real Madrid, 36 La-Liga-Titel) und müsste auf den
+    Stand August 2026 nachgezogen werden.
+- **17 Fragen verraten sich weiterhin über die Bauform** (`check_struktur.js`): 90, 121,
+  341, 376, 451, 518, 544, 550, 570, 586, 588, 604, 609, 611, 628, 629, 677. Das ist eine
+  Altlast; 648 war der achtzehnte Fall und ist mit der Ersatzfrage weggefallen.
+- **Themenklumpen bleibt:** Der FC Bayern ist trotz zweier entfernter Fälle weiterhin in
+  34 Fragen die richtige Antwort, Real Madrid in 13, Cristiano Ronaldo in 12.
+
+### Messwerte nach der Charge
+
+`check_dubletten --streng` 0 · `check_questions` 0 Befunde · `check_unloesbar` 0 für diese
+Datei · `check_struktur` 17 (vorher 18) · Längenrang 35/24/20/22 mit 30 % "längste gewinnt"
+(vorher 36/23/20/21 und 31 %) · 684 Fragen · correct 171/171/171/171. Keine der 25
+geänderten Fragen hat die richtige Antwort als alleinlängste Option.
+
+---
+
+## Nachtrag 13. August 2026 — Rest-Dubletten und Sachfehler in `fussball_schwer`
+
+Sitzung zur Entdopplung der verbliebenen Cluster. 29 Fragen ersetzt, 12 in place
+korrigiert. Anzahl (640), Reihenfolge und correct-Verteilung (160/160/160/160)
+unverändert. Alle drei Prüfskripte am Ende ohne Befund.
+
+### Sachfehler, die ich beim eigenen Suchlauf zusätzlich gefunden und behoben habe
+
+Diese standen nicht im Auftrag — sie fielen beim Durchsehen aller 640 Fragen auf.
+Es waren durchweg **Widersprüche zwischen Frage und eigener Erklärung**, die
+`check_questions.js` nicht erkennt:
+
+| Idx | Fehler | Behebung |
+|---|---|---|
+| 17 | Frage nannte "1962 und 1963", die Erklärung "1961 und 1962" (richtig ist 1961/1962) | Frage auf 1961 + Titelverteidigung umgestellt |
+| 251 | "CL mit zwei verschiedenen Klubs" traf auf Mourinho **und** Ancelotti zu (beide in den Optionen); zusätzlich Dublette zu 250 | ersetzt (Mancini/EM 2021) |
+| 317 | Yamal war beim EM-Finale 2024 bereits 17, nicht 16 | Alter korrigiert |
+| 354 | "das entscheidende 3:0" — das Finale 1954 endete 3:2 | ersetzt (Dublette zu 11) |
+| 496 | `correct` zeigte auf Argentinien, die Erklärung nannte Uruguay | Uruguay auf Position 0, Verteilung dadurch unverändert |
+| 534 | "Viermal" — Ancelotti hat seit 2024 fünf CL-Titel | Optionen umsortiert, `correct` bleibt auf Position 2 |
+| 543 | Das Volksparkstadion hieß **AOL** Arena; AWD-Arena war Hannover | Sponsorname in der Frage korrigiert |
+| 585 | Frage nannte 2000/01, die Erklärung sagte selbst "2000/01 gewann Real Madrid" | Saison auf 2001/02 korrigiert |
+| 587 | 1993/94 gewann Barcelona; Atléticos Double war 1995/96. Trainername ebenfalls falsch | Saison und Trainer (Radomir Antić) korrigiert |
+| 595 | "einziger Spieler mit Endspieltor bei drei WM-Turnieren" — Vavá traf in zwei Finals (1958, 1962) | auf die zwei Finals umgestellt |
+
+### Zweifelsfälle — bitte ansehen
+
+- **316 und 317 haben beide Lamine Yamal als richtige Antwort** (bester junger Spieler
+  der EM 2024 / jüngster Europameister). Zwei verschiedene Fakten zum selben Turnier und
+  derselben Person. Ich habe 317 nur den Altersfehler genommen statt zu ersetzen, weil
+  die Frage sonst gar keinen Yamal-Bezug mehr hätte. Wenn das zu nah ist, müsste 316 weichen.
+- **153 und 356**: 153 fragt den Torwart mit den meisten Bundesliga-Toren (Butt), 356 neu
+  den Torwart mit den meisten Toren weltweit (Rogério Ceni). Verschiedene Antworten und
+  Wettbewerbe, aber dasselbe Frage-Muster. Bewusst so gelassen.
+- **244 / 245 / 246** fragen die Bayern-Europapokalsiege 1974, 1975 und 1976 einzeln ab,
+  wobei 246 in der Frage "der erste von drei Bayern-Europapokalen" verrät, dass es die
+  anderen beiden gibt. Drei Fragen mit derselben Antwort und einer zusammenhängenden Serie.
+  **Nicht angefasst** — verschiedene Jahre sind formal verschiedene Fakten, aber wenn die
+  Bayern-Häufung (14 Fragen mit Antwort "FC Bayern München") reduziert werden soll, ist
+  das die naheliegendste Stelle.
+- **Kontextabhängige Formulierungen**: Die Datei enthält weitere Fragen, die sich sprachlich
+  auf eine Nachbarfrage beziehen ("Welcher Dortmunder verschoss/vergab Chancen 2013?" bei 200,
+  "Uli Hoeneß und Gerd Müller je zwei" bei 247, "Carvajal und Vinícius je eins" bei 314).
+  Da die App die Fragen mischt, funktionieren solche Formulierungen im Spiel nicht. Ich habe
+  nur 309 repariert, weil sie im Cluster lag. **Die übrigen sind offen.**
+- **Doppelfragen in einer Frage**: rund zwei Dutzend Fragen stellen zwei Fragen auf einmal
+  ("Welcher Verein gewann 1982 den Europapokal gegen welchen deutschen Klub?" bei 79,
+  ähnlich 56, 95, 106, 165, 206, 221, 224, 258, 293, 302). Die richtige Antwort passt dann
+  oft nur auf eine Hälfte. Kein Dubletten-Problem, aber ein eigener Aufräumauftrag wert.
+- **Aktualitätsabhängige Angaben, die ich stehen gelassen habe**: 65 ("15 Titel, Stand 2024"),
+  422 ("bis Ende 2024"), 289 (Messi mit 34 WM-Einsätzen nach 2026). Sie betreffen keinen
+  Cluster, sollten aber beim nächsten Aktualitätsdurchgang gegen den Stand nach der WM 2026
+  geprüft werden.
