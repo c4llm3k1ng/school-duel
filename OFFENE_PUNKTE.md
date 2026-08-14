@@ -3784,3 +3784,258 @@ Es waren durchweg **Widersprüche zwischen Frage und eigener Erklärung**, die
   422 ("bis Ende 2024"), 289 (Messi mit 34 WM-Einsätzen nach 2026). Sie betreffen keinen
   Cluster, sollten aber beim nächsten Aktualitätsdurchgang gegen den Stand nach der WM 2026
   geprüft werden.
+
+---
+
+## 177. fussball_mittel: Befunde aus dem Längendurchlauf behoben (14.8.2026)
+
+Abgearbeitet wurden die Punkte 1–6 und 17–28 aus
+`fussball_triage/befunde_laengenlauf.md`, also alle Befunde zu `fussball_mittel`.
+Jede Frage wurde über ihren Inhalt gesucht, nicht über die (unzuverlässigen)
+Indizes der Meldung. Alle zeitgebundenen Aussagen wurden per Websuche belegt.
+
+### Falsch markierte Antwort — der Nutzer bekam richtiges Wissen als falsch gemeldet
+
+| Idx | Befund | Behebung |
+|---|---|---|
+| 669 | La Liga 2015/16 war auf Atlético markiert; Meister war **Barcelona** (91 Punkte vor Real 90 und Atlético 88, belegt) | richtige Antwort auf FC Barcelona umgestellt, `correct` bleibt Position 1 |
+| 660 | „als einziger sowohl WM als auch Champions League als Spieler und Trainer" → Beckenbauer. Er gewann als Trainer bei Bayern nur den UEFA-Pokal 1996 | **ersetzt** (Vierter Offizieller) |
+| 585 | „1979 im Hummel-Trikot" → Tottenham. 1979 rüstete **Admiral** aus, Hummel erst ab 1985 (belegt) | **ersetzt** (Rückennummer des Mittelstürmers) |
+| 356 | „WM-Aus gegen Südkorea bei der WM 2002" — 2002 gewann Deutschland das Halbfinale 1:0; das 0:2 war die WM 2018 in Kasan. Zusätzlich Meta-Option „Es gibt keinen eigenen Namen" | **ersetzt** (Manndeckung) |
+| 631 | **Zusatzfund, nicht gemeldet:** `correct` zeigte auf Wayne Rooney, die eigene Erklärung nannte Alan Shearer. Zugleich Antwort-Dublette zu 63 und 443 | **ersetzt** (Süper Lig) |
+
+### Mehrdeutig — ein Distraktor war ebenfalls richtig
+
+| Idx | Befund | Behebung |
+|---|---|---|
+| 348 | „erste Nationalmannschaft außerhalb Europas und Südamerikas im WM-Halbfinale" → Südkorea; der Distraktor „USA (1930)" war sachlich korrekt | Frage auf „erste **asiatische** Mannschaft" eingeschränkt, Optionen auf asiatische Nationen umgestellt |
+| 408 | „mit 39 Jahren ein Länderspieltor, Altersrekord" → Ibrahimović; Roger Milla traf 1994 mit 42 Jahren und 39 Tagen (belegt) | Frage auf den tatsächlichen Rekord umgestellt: Milla als ältester WM-Torschütze, `correct` bleibt Position 0 |
+
+### Frage und Antwort passten nicht zusammen
+
+| Idx | Befund | Behebung |
+|---|---|---|
+| 588 | „Welches **Land** trägt Lila?" → Fiorentina, ein Verein. Alle vier Optionen trugen zudem eine erklärende Klammer | Frage auf Vereine umgestellt, Optionen ohne Klammern (Fiorentina / Real Betis / Anderlecht / Sampdoria) |
+| 518 | „Welcher deutsche **Verein**…" — die Antwort nannte zwei | Fragetext auf „Welche beiden deutschen Vereine…" korrigiert |
+| 333 | „Welcher Verein gewann die EM-Heimspiele 2024 ausrichtend?" — grammatisch defekt, fragte nach einem Verein, Optionen waren Ländersätze | **ersetzt** (Schienbeinschoner) |
+| 177 | falsche Prämisse „Bayern-Durststrecke von zwei Jahren" (Bayern war 2006 Meister, 2007 Stuttgart), Grammatikfehler und irreführende Erklärung; zugleich Dublette zu 248 | **ersetzt** (Handzeichen für den Videobeweis) |
+
+### Dubletten
+
+- **Bundesliga-Meister 2008** stand zweimal mit Antwort Bayern (177 und 248) — 177 ersetzt.
+- **San Siro / Giuseppe Meazza** war zweimal die richtige Antwort (604 und 609) — 604 ersetzt.
+- **„Trikothersteller → Adidas"** stand doppelt (610 und 612) — 610 ersetzt. Adidas ist damit
+  im Ausrüstungsfeld nur noch zweimal richtige Antwort (552 Schuhe, 612 Bayern).
+
+### Veraltet und Zweifelhaft
+
+| Idx | Befund | Behebung |
+|---|---|---|
+| 453 | Rooney „208 Tore, Zweiter der ewigen PL-Liste" | **Websuche:** Shearer 260, Kane 213, Rooney 208 → auf **Rang drei** korrigiert, Erklärung mit „Stand August 2026" datiert |
+| 615 | BVB-Ausrüster der 1990er war auf Adidas markiert | **Websuche:** Nike rüstete den BVB 1996–2000 aus, auch beim CL-Sieg 1997 → richtige Antwort auf **Nike** umgestellt, Frage auf 1997 präzisiert, `correct` bleibt Position 3 |
+| 604 | „Stadion mit rotierender Flutlichtanlage" — so etwas gibt es nicht, die Erklärung sprach selbst nur von runden Flutlichttürmen | **ersetzt** (FA-Cup-Finale in Wembley) |
+| 608 | Reals Auswärtstrikot „Schwarz" | **Websuche:** Violett ist neben Weiß die klassische Vereinsfarbe und prägte die Auswärtstrikots seit den 1940ern → auf **Lila** umgestellt, `correct` bleibt Position 0 |
+| 385 | „Schuss mit der **Innenseite**" → Antwort „Innenrist" — zwei verschiedene Stoßarten | Frage auf den Innenrist als Teil des Spanns umformuliert, Optionen auf Fußteile vereinheitlicht (Außenrist / Innenrist / Fußballen / Hacke); die Erklärung grenzt jetzt ausdrücklich gegen den Innenseitstoß ab |
+| 112 | „**Schöpfer** des Spitznamens 'El Ilusionista'" — Iniesta ist Träger, nicht Schöpfer | Fragetext auf „trug den Spitznamen" korrigiert |
+| 341 | Erklärung vermischte FIFA-Weltfußballer und Ballon d'Or und endete mit „einer der ersten Brasilianer", obwohl nach dem *ersten* gefragt war | Erklärung neu geschrieben: 1997 als **erster** Brasilianer, kurz nach Öffnung des Ballon d'Or für alle Nationen |
+| 334 | Schreibweise „Ole Gunnar Solskjaer" gegen „Solskjær" in 34 | auf **Solskjær** vereinheitlicht (Option und Erklärung) |
+
+### Neue Fragen
+
+Acht Ersetzungen, alle aus den vorgegebenen ungesättigten Feldern (Schiedsrichterwesen,
+Regeln, Ausrüstung, Taktik, Stadien, internationale Ligen). Vor jeder Ersetzung wurde
+geprüft, ob die richtige Antwort im Katalog schon einmal richtige Antwort zu einem
+ähnlichen Thema ist (Gruppierung nach `options[correct]`), und ob ein Schlüsselwort
+schon irgendwo vorkommt. Verworfen wurden dabei unter anderem: Arsenals Invincibles
+(365, 444), Hitzfeld als erster CL-Trainer mit zwei Klubs (519), Gegenpressing (339),
+Mittelfeldraute (394, 613), Eredivisie (549), Ballon d'Or der Frauen (317),
+Frauen-EM 2022 (278), Anfield (574), Old Firm (144), Old Trafford (146),
+Anzahl der PL-Vereine (305) und die Tormaße (39, 68) — alle bereits belegt.
+
+`correct` blieb bei jeder Ersetzung auf der Position der alten Frage, die Verteilung
+ist deshalb unverändert **169/172/171/172**.
+
+### Zweifelsfälle — bitte ansehen
+
+- **Befund 28 war teilweise falsch gemeldet.** Der Distraktor „Katenkick" steht nicht bei
+  der Innenrist-Frage, sondern in **376** („Total Football"). Das Wort ist kein
+  Phantasiewort — es bezeichnet umgangssprachlich primitives Bolzen —, aber es ist kein
+  Spielsystem und damit ein schwacher Distraktor in einer Systemfrage. **Nicht angefasst**,
+  weil außerhalb des Auftrags.
+- **413 ist unabhängig davon kaputt.** „Welches WM-Turnier war bisher das einzige ohne
+  Heimniederlage für alle Mannschaften?" hat mit „Keine WM" eine **Meta-Option**, die
+  Erklärung ist grammatisch defekt („setzten alle drei Gastgeber … keine Niederlage") und
+  spricht von **drei** Gastgebern, obwohl 2002 nur Japan und Südkorea ausrichteten.
+  Aufgefallen bei der Suche, **nicht behoben** — gehört in den nächsten Durchgang.
+- **63 und 443 sind faktisch dieselbe Frage** (PL-Rekordtorschütze → Alan Shearer, einmal
+  mit, einmal ohne Nennung der 260 Tore). Dazu kommt 630 (Shearer 1994/95). Der
+  Dublettencheck erfasst diese Antwort-Dubletten nicht. Ich habe nur 631 ersetzt, weil dort
+  zusätzlich die Markierung falsch war. **Eine von 63/443 sollte weichen.**
+- **Nike ist jetzt zweimal richtige Antwort im Ausrüstungsfeld** (606 spanische
+  Nationalmannschaft, 615 BVB 1997). Das ist derselbe Dublettentyp, den Befund 27 für Adidas
+  monierte. Die Faktenkorrektur hatte hier Vorrang; wenn es stören soll, müsste 606 weichen.
+- **631 (Süper Lig) ist die dritte Frage nach einem Liganamen** neben 543 (J1 League) und
+  549 (Eredivisie). Verschiedene Antworten, gleiches Frage-Muster; der Dublettencheck meldet
+  nichts. Bewusst so gelassen.
+- **669 und 468 sind beide La-Liga-Meisterfragen mit Antwort FC Barcelona** (2015/16 und
+  2024/25). Verschiedene Saisons, aber dieselbe Antwort im selben Feld. Die Alternative wäre
+  gewesen, 669 ganz zu ersetzen — das hätte aber einen korrekten Fakt aus dem Katalog
+  genommen, statt nur die falsche Markierung zu heilen.
+- **356 (Manndeckung, neu) und 616 (Raumdeckung)** bilden jetzt ein Gegensatzpaar; die
+  richtige Antwort von 616 ist ein Distraktor in 356. Das ist gewollt und kein Widerspruch,
+  fällt einem Leser beider Fragen aber auf.
+
+### Prüfungen nach der Charge
+
+- `check_questions.js fussball_mittel` — **0 Befunde** (unverändert)
+- `check_dubletten.js fussball_mittel --streng` — **0 Verdachtsfälle** (unverändert)
+- `check_laenge.js --alle` — **23/26/25/26, „längste" 22 %, 265 gleich lang**
+  (vorher 24/26/24/26, 23 %, 261 gleich lang — also leicht verbessert)
+- Anzahl **684**, Reihenfolge erhalten, `correct`-Verteilung 169/172/171/172 unverändert
+- Format geprüft: UTF-8 ohne BOM, LF, echte Umlaute, keine Unicode-Escapes, 2 Leerzeichen Einrückung
+
+## Inhaltsdurchlauf fussball_schwer — Befunde 7–16 aus dem Längendurchlauf (14.8.2026)
+
+Grundlage: `fussball_triage/befunde_laengenlauf.md`, Abschnitt „fussball_schwer" (Punkte
+7–16) plus die im Auftrag ergänzten Punkte (veraltete Antworten, Sieger/Verlierer-Dreher,
+Satzfragmente). Alle gemeldeten Fragen wurden über den Inhalt gefunden — **keine gemeldete
+Frage blieb unauffindbar**. Fragetexte waren in diesem Durchlauf ausdrücklich änderbar.
+Zeitabhängige Aussagen wurden per Websuche auf den Stand August 2026 geprüft.
+
+### Behoben (42 Fragen, Indizes 0-basiert)
+
+**Unlösbar / falsche Prämisse (Befunde 7–11)**
+
+- **457** — DFB-Pokal-Startrecht. „2. Hauptrunde" war markiert, keine Option war richtig.
+  Neue Frage nach der Sonderregel der 1. Hauptrunde (Amateurklub hat Heimrecht), belegt
+  über den DFB-Modus.
+- **340** — „erster Trainer mit zwei verschiedenen Nationalmannschaften Weltmeister" gibt
+  es nicht. Jetzt: Beckenbauer hieß 1990 „Teamchef", weil ihm die Trainerlizenz fehlte.
+  Optionen unverändert.
+- **369** — „Welcher *Verein* … mit *drei Treffern*". Jetzt: höchster Sieg in einem
+  EM-Endspiel (Spanien 2012, 4:0). Optionen unverändert.
+- **359** — „mehr als 60 Tore in *einer Qualifikationsrunde*". Jetzt: Ali Daei als erster
+  Spieler überhaupt mit 100 Länderspieltoren (2004). Bewusst *nicht* die 109-Tore-Formel,
+  weil **174** genau die schon stellt.
+- **454** — Kaiserslautern war 1996 **Absteiger**, nicht Aufsteiger ohne Bundesliga-Historie.
+  Neue Frage: Pokalsieg 1996 eine Woche nach dem Abstieg. Optionen ersetzt (der Jahreszusatz
+  „1996" in der richtigen Option war zusätzlich eine Bauform-Auffälligkeit).
+
+**Sachfehler (Befunde 12–16)**
+
+- **337** — Benzemas Treffer 2014 war offiziell ein Eigentor von Noel Valladares. Die Frage
+  fragt jetzt nach dem **Spiel** (Frankreich – Honduras) statt nach dem Torschützen; die
+  alte Option „Jan Oblak 2014" war ohnehin absurd.
+- **343** — Uwe Rahn ist **nicht** Rekordhalter. Rekordhalter ist Dominik Kohr mit neun
+  Platzverweisen (November 2025), davor Nowotny und Luiz Gustavo mit je acht. Frage und
+  Optionen komplett neu, alle vier Optionen exakt 12 Zeichen.
+- **425** — Barcelonas Triple unter Luis Enrique war **2014/15**. Jahr korrigiert, der
+  Wortsalat „La-Liga-Pokal-UCL-Triple" aufgelöst.
+- **475** — Ravanelli erzielte 1996 das **1:0**, nicht den Ausgleich. Frage umgedreht,
+  Litmanens Ausgleich steht jetzt in der Erklärung.
+- **528** — „Arena ArenA" war ein Fantasiename. Ersetzt durch „Stadion Galgenwaard";
+  zusätzlich „De Meer" (7 Zeichen) gegen „Philips Stadion" getauscht, damit die richtige
+  Option nicht mehr die alleinlängste ist.
+
+**Markierte Antwort war der Verlierer bzw. der Gegner**
+
+- **293** (Weltpokal 1983), **79** (Europapokal 1982), **205** (Europapokal 1988),
+  **208** (WM-Finale 1934). In allen vier Fällen fragte der Text nach dem Sieger, die
+  Optionen deckten aber nur den Gegner ab. Der Fragetext fragt jetzt jeweils genau das ab,
+  was in den Optionen steht; `correct` blieb überall auf der alten Position.
+
+**Zwei Dinge auf einmal gefragt / Satzfragmente**
+
+- **95** („Triple und welche Liga, FA Cup, CL?"), **106** („Verein … und welcher Spieler?"),
+  **224** („CL und welche Nation?"), **258** („Verein … und welcher deutsche Trainer?"),
+  **56** („Spieler … und welches Land?"), **314** („Welcher *Spieler* … beide Tore"),
+  **234** („… erzielte das einzige Tor nicht – … Wer schoss daneben?"), **352**
+  („Wie heißt das Debüt-Turnier?" mit Satzoptionen „Sie schlugen Italien"), **16**
+  („Wie viele Tore?" ohne Zahlenoptionen), **99** („Wie viele Minuten?" ohne Minutenangabe),
+  **200** („Welcher Dortmunder verschoss/vergab Chancen 2013?" mit der Option
+  „Bayern gewann durch Robben"), **423** (Frage nannte die Antwort bereits im Text; topic
+  von „La Liga" auf „Champions League" korrigiert), **603** (Nonsens „für Celtic Park 201
+  Tore in 201 Spielen", Erklärung sagte 35 in 26, dazu die Redaktionsnotiz „(Frage
+  überarbeitet in Nächstes Update)"), **637** („für drei verschiedene WM-Endspiele
+  torschütze war (1974, 1978)").
+- **362** — Erklärung nannte Neeskens und die 2. Minute und verriet damit die neue **637**.
+  Umformuliert, ohne den Namen.
+- **55** — „Wie viele Pflichtspiele blieb Bayern 2012/13 in der CL ungeschlagen" war doppelt
+  kaputt: die Optionen sind keine Zahlen, und Bayern verlor 2012/13 zu Hause 0:2 gegen
+  Arsenal. Ersetzt durch das erste rein englische CL-Endspiel (2008, Moskau) — alle vier
+  Optionen vierstellige Jahreszahlen.
+- **486** — Grammatik („das Abseitsregel").
+
+**Veraltete Antworten (alle per Websuche auf August 2026 geprüft)**
+
+- **133** — Rekordtorschütze für deutsche Klubs ist **Lewandowski** (17 für Dortmund + 69
+  für Bayern = 86 CL-Tore), nicht Gerd Müller (65/66 im Europapokal). Frage auf
+  „Champions-League-Tore für deutsche Klubs" präzisiert, `correct` von 1 auf 1 gehalten,
+  indem die Optionen umsortiert wurden.
+- **141** — Rekordtorschütze der Niederlande ist **Memphis Depay** (55 Tore, Stand August
+  2026); er löste van Persie 2025 ab. Depay als Option ergänzt.
+- **239** — Torwart mit den meisten Bundesliga-Spielen ist **Oliver Kahn** (557), nicht Eike
+  Immel. Kahn stand bereits als Distraktor drin. Manuel Neuer liegt mit 544 dahinter.
+- **260** — Manchester United und Liverpool stehen seit 2025 **beide bei 20** Titeln. Frage
+  auf „erster englischer Klub mit 20 Meistertiteln" umgestellt (United 2013), damit sie
+  wieder eindeutig ist.
+- **67** — Lewandowskis 109 CL-Tore sind Stand August 2026 weiterhin korrekt; nur die
+  Erklärung datiert.
+- **65** — „15 Titel (Stand 2024)" → „Stand August 2026". Real Madrid steht weiterhin bei
+  15; die Titel 2025 und 2026 gingen an Paris Saint-Germain.
+
+**Zusätzlich beim Suchen gefunden und behoben**
+
+- **81** — „Rekordtorschütze des FC Bayern in der Champions League → Thomas Müller" war
+  falsch (Lewandowski, 69). Lewandowski stand nicht einmal zur Auswahl, die Frage war also
+  unlösbar. Jetzt: meiste **CL-Einsätze** für den FC Bayern (Thomas Müller, 163) — ein
+  Rekord, den er tatsächlich hält.
+- **338** — „höchste Anzahl an Toren in einem CL-Spiel" hatte „Manchester City 9:0"
+  markiert, ein Ergebnis, das es nie gab; die Erklärung sprach von 7:0. Richtig ist
+  **Bayern 9:2 gegen Dinamo Zagreb** (September 2024), die erste Mannschaft mit neun Toren
+  in einem CL-Spiel.
+- **280** — Frage sagte „1992", Erklärung „1991". Sampdoria wurde **1990/91** Meister; Jahr
+  vereinheitlicht.
+- **569** — Frage („1987", „Rechtsstreit", „Handschlag im WM-Finale") widersprach der
+  eigenen Erklärung (Pelé markiert, Beckenbauer erklärt). Ersetzt durch den belegten
+  Puma-Pakt von 1970: Pelé ließ sich rund 120.000 Dollar dafür zahlen, vor dem Anpfiff die
+  Schuhe zu binden.
+- **635** — Xavi übernahm Barcelona im **November 2021**; markiert war 2022, obwohl die
+  Erklärung 2021 nannte. `correct` von 3 auf 2.
+
+### Zweifelsfälle — nicht geändert, bitte ansehen
+
+- **638** — „Wie nennt man die Statistik, wenn ein Spieler über 30 Tore und 20 Vorlagen
+  erreicht?" → „G/A-Rekord". Einen so benannten Fachbegriff gibt es nicht; die drei
+  Distraktoren („Superseason", „50+20-Club", „Scorerkönig") sind ebenso frei erfunden. Die
+  Frage ist damit faktisch nicht beantwortbar. **Nicht geändert**, weil sich keine korrekte
+  Fassung belegen lässt — sie sollte ersatzlos durch eine andere Frage ersetzt werden.
+- **461** — „Wie viele Teams qualifizieren sich durch den DFB-Pokal-Sieg für den UEFA Super
+  Cup?" → „Keines". Sachlich richtig, aber „Keines" ist funktional eine Meta-Option.
+- **217** — Seedorf-Frage. Optionen uneinheitlich benannt („Ajax, Inter, Milan" vs.
+  „Ajax, Real Madrid, AC Mailand"), und die Erklärung nennt den gesuchten Spieler gar nicht.
+  Inhaltlich richtig, stilistisch unschön.
+- **540 / 531 / 39** — drei Fragen zu Nottingham Forests Europapokalsiegen 1979/80; **540**
+  antwortet auf „In welchem Jahr" mit zwei Saisons. Der Dublettencheck meldet nichts.
+- **131** — „Aston Villa gewinnt die Europa League 2026 gegen den SC Freiburg" wurde bei
+  dieser Gelegenheit nachgeprüft: Endstand 3:0 in Istanbul, **stimmt**.
+
+### Prüfungen nach der Charge
+
+- `check_questions.js fussball_schwer --dir questionbank_katalog` — **0 Befunde**
+  (unverändert)
+- `check_dubletten.js fussball_schwer --streng --dir questionbank_katalog` — **0
+  Verdachtsfälle** (unverändert)
+- `check_laenge.js --alle --dir questionbank_katalog` — **22/27/26/24, „längste" 22 %,
+  261 gleich lang** (vorher 26/26/25/23, 23 %, 257 gleich lang). Rang 1 sinkt, weil bei
+  mehreren reparierten Fragen die richtige Antwort vorher die alleinlängste war (z. B. 528,
+  293, 454) und das nach Vorgabe aufgelöst wurde. Alle vier Ränge liegen weiter im Korridor
+  15–40 %, und die Ratequote „immer die längste anklicken" bleibt mit 22 % auf
+  Zufallsniveau.
+- Anzahl **640**, Reihenfolge erhalten. `correct`-Verteilung **160/162/161/157**
+  (vorher 160/162/160/158) — verschoben hat sich nur **635**, wo die markierte Option
+  schlicht falsch war.
+- Keine Meta-Optionen im Bestand (geprüft), keine Klammer-/Abkürzungs-Einzelgänger in den
+  neuen Optionssätzen.
+- Format geprüft: UTF-8 ohne BOM, LF, echte Umlaute, keine Unicode-Escapes, 2 Leerzeichen
+  Einrückung, kein abschließender Zeilenumbruch (wie zuvor).
