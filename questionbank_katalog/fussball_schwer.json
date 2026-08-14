@@ -520,7 +520,7 @@
     "options": [
       "4 WM-Titel",
       "4 Copa-Titel",
-      "4 Olympiasiege",
+      "2 WM-Titel + 2 Copa-Titel",
       "2 Olympiasiege + 2 WM-Titel"
     ],
     "correct": 3,
@@ -566,9 +566,9 @@
   {
     "question": "Welche Folge hatte Heysel 1985 für englische Klubs?",
     "options": [
-      "Geldstrafe",
-      "Punktabzug",
-      "Keine",
+      "Hohe Geldstrafe",
+      "Punktabzug in der Liga",
+      "Nur eine Verwarnung",
       "5 Jahre Europapokal-Sperre"
     ],
     "correct": 3,
@@ -1034,8 +1034,8 @@
   {
     "question": "Welcher Verein gewann 1987 als erster portugiesischer Klub seit Benfica den Europapokal?",
     "options": [
-      "Benfica",
-      "Sporting",
+      "SL Benfica",
+      "Sporting CP",
       "FC Porto",
       "Boavista"
     ],
@@ -2524,7 +2524,7 @@
     "options": [
       "Zwei Tore",
       "Vier Tore",
-      "Drei Tore in 6 Minuten",
+      "Drei Tore",
       "Ein Tor"
     ],
     "correct": 2,
@@ -3352,7 +3352,7 @@
     "options": [
       "Juventus",
       "Inter",
-      "Sampdoria",
+      "US Sampdoria",
       "SSC Neapel"
     ],
     "correct": 3,
@@ -3482,10 +3482,10 @@
   {
     "question": "Welcher Verein gewann 1960 den ersten interkontinentalen Pokal?",
     "options": [
-      "Peñarol",
-      "Santos",
+      "CA Peñarol",
+      "Santos FC",
       "Real Madrid",
-      "Benfica"
+      "SL Benfica"
     ],
     "correct": 2,
     "explanation": "Real Madrid gewann 1960 den ersten Weltpokal.",
@@ -4299,7 +4299,7 @@
     "question": "Welcher Bundesliga-Rekord wurde durch Torwart Sepp Maier gehalten?",
     "options": [
       "Meiste Länderspiele",
-      "Ältester Bundesliga-Debütant",
+      "Ältester Debütant der Bundesliga-Geschichte",
       "Meiste Bundesliga-Spiele ohne Gegentor in Folge",
       "Meiste Pokalendspieltore"
     ],
@@ -4596,12 +4596,12 @@
     "topic": "Europameisterschaft"
   },
   {
-    "question": "Welches Ergebnis stand im EM-Halbfinale 2020, als England Dänemark besiegte?",
+    "question": "Mit welchem Ergebnis besiegte England Dänemark im EM-Halbfinale 2020 nach Verlängerung?",
     "options": [
       "1:0",
       "3:1",
       "2:0",
-      "2:1 n.V."
+      "2:1"
     ],
     "correct": 3,
     "explanation": "England schlug Dänemark im Halbfinale 2020 mit 2:1 nach Verlängerung durch einen umstrittenen Elfmeter.",
@@ -6508,8 +6508,8 @@
     "options": [
       "Thierry Henry",
       "Miroslav Klose",
-      "Ronaldo (Brasilien)",
-      "Fernando Torres"
+      "Ronaldo Nazário",
+      "David Villa"
     ],
     "correct": 2,
     "explanation": "Ronaldo trug 2006 goldene Adidas-Schuhe, Miroslav Klose wurde aber mit 5 Toren Torschützenkönig.",
@@ -6782,10 +6782,10 @@
   {
     "question": "Welches Material wurde für den Adidas Telstar (WM 1970) als Außenhaut eingesetzt?",
     "options": [
-      "Naturleder",
-      "Synthetikleder (Polyurethan)",
-      "Gummi",
-      "Neopren"
+      "Naturleder aus Rindsleder",
+      "Synthetikleder aus Polyurethan",
+      "Vulkanisierter Gummi",
+      "Beschichtetes Neopren"
     ],
     "correct": 1,
     "explanation": "Der Telstar 1970 war bereits ein Kunstlederball aus Polyurethan, nicht aus Naturleder.",
@@ -6972,15 +6972,15 @@
     "topic": "Premier League"
   },
   {
-    "question": "Wie viele Spieltage gewann Arsenal in der 'Invincibles'-Saison 2003/04 ohne Unentschieden in Folge?",
+    "question": "In wie vielen Ligaspielen blieb Arsenal in der 'Invincibles'-Saison 2003/04 ungeschlagen?",
     "options": [
       "12",
-      "38 (die gesamte Saison)",
+      "38",
       "18",
       "26"
     ],
     "correct": 1,
-    "explanation": "Arsenal blieb in der Saison 2003/04 alle 38 Ligaspiele ungeschlagen (26 Siege, 12 Unentschieden).",
+    "explanation": "Arsenal blieb in der Saison 2003/04 in allen 38 Ligaspielen ungeschlagen: 26 Siege und 12 Unentschieden.",
     "topic": "Premier League"
   },
   {
@@ -7395,9 +7395,9 @@
     "question": "Welcher brasilianische Verteidiger erzielte das legendäre 4:1-Tor im WM-Finale 1970?",
     "options": [
       "Carlos Alberto",
+      "Brito Ruas",
       "Clodoaldo",
-      "Brito",
-      "Everaldo"
+      "Piazza"
     ],
     "correct": 0,
     "explanation": "Carlos Alberto Torres, Kapitän Brasiliens, erzielte nach einem langen Kombinationsangriff das 4:1 gegen Italien.",

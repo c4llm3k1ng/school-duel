@@ -4039,3 +4039,514 @@ Zeitabhängige Aussagen wurden per Websuche auf den Stand August 2026 geprüft.
   neuen Optionssätzen.
 - Format geprüft: UTF-8 ohne BOM, LF, echte Umlaute, keine Unicode-Escapes, 2 Leerzeichen
   Einrückung, kein abschließender Zeilenumbruch (wie zuvor).
+
+## 178. politik_schwer: Struktur-Verrat, Zeitstempel und Antwort-Dubletten (14.8.2026)
+
+Nachziehen der Regeln, die erst nach der Bearbeitung dieses Katalogs entstanden sind.
+Ausgangslage: **34 von 200 Fragen (17 %)** verrieten die richtige Antwort über die
+Bauform, **null** Fragen trugen einen Zeitstempel.
+
+### Struktur-Verrat: 34 → 0
+
+`check_struktur.js` meldete 34 Fragen, in denen genau die richtige Option ein Merkmal
+trug, das den anderen drei fehlte. Verteilung der Merkmale (Mehrfachnennung möglich):
+
+- **25 ×** einzige Option mit **Klammerzusatz** — z. B. 86 „(die vier Grundfreiheiten)",
+  90 „Art. 50 EUV (Austrittsklausel)", 92 „Wechselkursstabilität (EWS II)",
+  164 „(Ideologie, Partei, Terror, Propaganda, Mobilisierung)"
+- **8 ×** einzige Option mit **Jahreszahl** — z. B. 74 „löste 2008 Hare-Niemeyer ab",
+  98 „gegründet 2012 aus der Eurokrise", 189 „Keynes' Konzept von 1936"
+- **7 ×** einzige Option mit **Schrägstrich** — 45 „CDU/CSU", 72 „(CSU/Verteidigungs-
+  minister)", 74 „Sainte-Laguë/Schepers", 138 „China/Indien", 139 „Safeguards/
+  Inspektionen", 157 „Täter/Opfer", 178 „ab 2010/2011"
+
+Aufgelöst wurde durchgehend über den Weg **„Zusatz bei keiner Option"**: Der Klammer-
+oder Jahresinhalt wurde in den Fließtext der Option übernommen, wo er die Antwort
+eindeutig hält (86 „… als den vier Grundfreiheiten"), oder in die `explanation`
+verschoben, wo er nur Zusatzwissen war (74 die Jahreszahl 2008, 95 „mind. 15",
+98 das Gründungsjahr, 128 „1995"). Schrägstriche wurden ausgeschrieben
+(„China und Indien", „Safeguards und Inspektionen", „Union und SPD").
+
+Zwei Folgefehler wurden dabei kontrolliert:
+
+- **Kein verschobener Verrat.** Nach jeder Charge lief `check_struktur.js` erneut. In
+  keiner der 34 Fragen trägt jetzt ein *Distraktor* als einziger ein Merkmal. Wo Klammern
+  oder Jahreszahlen stehen bleiben (138, 139, 178), tragen sie **mindestens zwei** der
+  vier Optionen — dort gibt es keinen Ausreißer.
+- **Kein Kippen der Längenbalance.** Jede geänderte Option wurde auf ihren Längenrang
+  zurückgetrimmt. Wo das Streichen der Klammer die richtige Antwort zu kurz machte,
+  wurde der Inhalt ausformuliert statt gelöscht; wo sie zu lang wurde, wurde gekürzt
+  (bei 137 war die erste Fassung 295 Zeichen lang und damit mehr als das Anderthalbfache
+  der längsten anderen Option — nachgekürzt auf 276). Ergebnis siehe Prüfungen unten.
+
+### Zeitstempel: 0 → 24 Fragen
+
+Jede zeitabhängige Aussage wurde per Websuche geprüft und mit „Stand August 2026"
+datiert. Bestätigt und datiert:
+
+- **EU 27 Mitglieder**, kein Beitritt seit Kroatien 2013 (89, 86, 95)
+- **Schengen 29 Staaten**, Bulgarien und Rumänien seit 2025 voll dabei, **Zypern noch
+  nicht** (87)
+- **NATO 32 Mitglieder**, zuletzt Finnland 2023 und Schweden 2024 (149)
+- **UNO 193**, **Europarat 46**, **OSZE 57**, **CWÜ 193 Vertragsstaaten** (121, 150,
+  130, 136, 159)
+- **WTO 166 Mitglieder** — die Erklärung sagte vorher nur „über 160" (128)
+- **IWF**: von „rund 190" auf **191 Mitglieder** korrigiert (129)
+- **Von der Leyen** führt die Kommission seit 2019, zweite Amtszeit bis 2029 (84)
+- **WTO-Appellate-Body** weiterhin arbeitsunfähig; USA blockieren seit 2017, Quorum seit
+  Dezember 2019 weg (155)
+- **MFR**: laufender Rahmen 2021–2027, über 2028–2034 wird noch verhandelt (113)
+- **EDIS** (Einlagensicherung) weiter ohne Einigung (116), **CETA** weiter nicht von
+  allen Mitgliedsstaaten ratifiziert (119), **PESCO** 26 von 27 (115), **GAP** rund ein
+  Drittel des EU-Haushalts (97)
+- **SDGs**: nur rund ein Drittel der Zielvorgaben ist laut UN-Fortschrittsbericht auf
+  Kurs (194)
+
+Zwei Aussagen waren **sachlich überholt** und wurden korrigiert:
+
+- **181 (Demokratieabbau).** Die Option nannte „Ungarn, Polen (bis 2023), Türkei", die
+  Erklärung Orbán als Paradebeispiel. Bei der ungarischen Parlamentswahl am 12. April
+  2026 verlor Fidesz die Macht an Péter Magyars Tisza-Partei. Die Erklärung sagt das
+  jetzt und ordnet Polen ein: PiS-Umbau 2015–2023, Rücknahme unter Tusk seit Ende 2023,
+  Stand August 2026 durch das Veto von Präsident Nawrocki blockiert.
+- **151 (Stabilitäts- und Wachstumspakt).** Die Erklärung endete bei „2020 Aussetzung
+  wegen COVID". Die **reformierten Fiskalregeln gelten seit dem 30. April 2024** und
+  ersetzen starre Abbaupfade durch mehrjährige Ausgabenpfade je Land. Ergänzt.
+
+### Antwort-Dubletten: 2 echte Fälle
+
+`check_dubletten.js` meldet in diesem Katalog **0** Verdachtsfälle (streng) bzw. 2
+Fehlalarme (locker: 11/34 „Was enthält Art. 21/14 GG", 145/193 ASEAN/BRICS). Die
+manuelle Gruppierung nach der richtigen Antwort fand zwei Fälle, die das Skript
+prinzipiell nicht finden kann:
+
+- **1 / 40 — Ewigkeitsklausel.** „Was schützt die sogenannte Ewigkeitsklausel vor
+  Verfassungsänderungen?" gegen „Was schützt die sogenannte Ewigkeitsklausel des
+  Grundgesetzes?" — dieselbe Frage, dieselbe Antwort, nur anders formuliert. Die
+  Jaccard-Ähnlichkeit liegt bei 0,50 und damit unter der lockeren Schwelle von 0,60.
+  **40 ersetzt** durch „Was regelt Art. 146 GG?" (Ablösung des Grundgesetzes durch eine
+  vom Volk beschlossene Verfassung). Vorher geprüft: „146" kam im Katalog nirgends vor.
+- **3 / 78 — Zweidrittelmehrheit.** „Welche Mehrheit ist für eine Änderung des Grund-
+  gesetzes erforderlich?" → „Zweidrittelmehrheit in Bundestag und Bundesrat" gegen „Was
+  ist die politische Rolle des Bundesrates bei Verfassungsänderungen?" → „Der Bundesrat
+  muss mit zwei Dritteln seiner Stimmen zustimmen". Wer eine Frage kennt, hat die andere.
+  **78 ersetzt** durch „Wie wird der Präsident des Bundesrates bestimmt und welche
+  zusätzliche Aufgabe hat er?" (Königsteiner Vereinbarung, Vertretung des Bundes-
+  präsidenten nach Art. 57 GG). Vorher geprüft: „Art. 57", „Bundesratspräsident" und
+  „Königstein" kamen nirgends vor.
+
+Beide Ersatzfragen behalten `topic` und `correct`-Position der ersetzten Frage
+(40 → correct 0, 78 → correct 2), damit die 50/50/50/50-Verteilung erhalten bleibt.
+
+### Antwortverrat zwischen zwei Fragen (behoben)
+
+**125 / 149.** Frage 125 fragt, welche Staaten 1999 als erste ehemalige Warschauer-Pakt-
+Mitglieder der NATO beitraten (Antwort: Polen, Tschechien, Ungarn). Die richtige Option
+von 149 begann mit „Die NATO-Erweiterung um osteuropäische Länder seit 1999 mit Polen,
+Tschechien und Ungarn" — sie gab die Antwort von 125 offen aus, noch bevor der Spieler
+125 sieht. Die Länderaufzählung ist aus der Option entfernt („Die Aufnahme zahlreicher
+ost- und mitteleuropäischer Staaten in das Bündnis seit dem Ende des Kalten Krieges").
+In der `explanation` von 149 steht die Reihenfolge weiter — dort ist sie Lehrstoff und
+wird erst nach der Antwort gezeigt.
+
+### Zweifelsfälle — bewusst NICHT geändert
+
+- **13 / 71 — freies Mandat.** 13 fragt, was Art. 38 Abs. 1 Satz 2 GG sichert (freies
+  Mandat), 71 nach dem Verhältnis von Fraktionsdisziplin und freiem Mandat. Beide
+  richtigen Antworten enthalten „freies Mandat". Behalten, weil 71 den Konflikt und die
+  Rechtsfolge abfragt und nicht die Definition — aber es ist ein Grenzfall.
+- **22 / 85 — Subsidiaritätsprinzip** einmal im deutschen Föderalismus, einmal in
+  Art. 5 EUV. Nach dem Nutzerentscheid dürfen Grundbegriffe in zwei Formulierungen
+  stehen bleiben.
+- **92 / 151 — 3 % und 60 %.** 92 fragt die Maastricht-Konvergenzkriterien für den
+  Euro-Beitritt ab, 151 den Stabilitäts- und Wachstumspakt für die laufende Haushalts-
+  politik. Zwei verschiedene Instrumente, aber **dieselben zwei Zahlen** in beiden
+  richtigen Antworten. Wer eine kennt, erkennt die andere an „3 %" und „60 %".
+- **130 / 140 — Europarat.** 130 fragt nach dem EGMR, 140 nach dem Europarat; beide
+  richtigen Antworten transportieren „gehört nicht zur EU". Verschiedene Institutionen,
+  deshalb behalten.
+- **132 / 160 — Genfer Konventionen und humanitäres Völkerrecht.** Stark überlappende
+  Definitionen; nach dem Nutzerentscheid zulässig.
+- **30 / 36 — Art. 5 GG.** Frage 30 fragt, welcher Artikel Meinungs- und Pressefreiheit
+  enthält (Art. 5). Die richtige Option von 36 lautet „Art. 4 GG (Glaubens- und
+  Gewissensfreiheit) und Art. 5 GG (Meinungs- und Pressefreiheit)" — sie verrät die
+  Antwort von 30. Nicht geändert, weil die Aufzählung hier die Antwort selbst ist und
+  jede Kürzung die Frage unlösbar machen würde. **Offen für eine spätere Charge.**
+- **Sechs Altbefunde von `check_questions.js`** (Q44, Q56, Q64, Q113, Q117, Q129:
+  „richtige Antwort deutlich längste") bestanden schon vor diesem Durchlauf und wurden
+  bewusst nicht angefasst, um die Rangverteilung nicht zusätzlich zu bewegen. **Offen.**
+- **152** enthält in Option und Erklärung den englischen Fachbegriff „peacekeeping
+  operations", 155 „Appellate Body" und „MPIA". Bestand, nicht von dieser Charge
+  eingeführt.
+
+### Sachfehler nebenbei behoben
+
+**70 (Friedensnobelpreis Willy Brandt 1971).** Die richtige Option nannte als Begründung
+unter anderem den „Grundlagenvertrag mit der DDR" — der wurde aber erst **1972**
+geschlossen, also nach der Preisverleihung. Der Grundlagenvertrag steht jetzt nur noch
+in der Erklärung, ausdrücklich als das, was danach folgte.
+
+### Prüfungen nach der Charge
+
+- `check_struktur.js politik_schwer --dir questionbank_katalog` — **0 Fragen mit
+  Struktur-Verrat** (vorher 34)
+- `check_questions.js politik_schwer --dir questionbank_katalog` — **6 Befunde,
+  unverändert dieselben sechs wie vorher**, keine neuen
+- `check_dubletten.js politik_schwer --streng --dir questionbank_katalog` — **0
+  Verdachtsfälle**
+- `check_laenge.js --alle --dir questionbank_katalog` — politik_schwer **24/26/24/25,
+  „längste" 24 %, 14 gleich lang** (vorher 24/26/25/24, 24 %, 15 gleich lang). Alle vier
+  Ränge im Korridor 15–40 %.
+- Anzahl **200**, Reihenfolge erhalten, `correct`-Verteilung **50/50/50/50**
+  (unverändert)
+- Keine Meta-Optionen (geprüft), Feldstruktur in allen 200 Einträgen vollständig
+- Format geprüft: UTF-8 ohne BOM, LF, echte Umlaute, keine Unicode-Escapes, 2 Leerzeichen
+  Einrückung, abschließender Zeilenumbruch (wie zuvor)
+
+## 179. musik_* und fussball_*: Struktur-Verrat, Zeitstempel und Antwort-Dubletten (14.8.2026)
+
+Nachgezogene Prüfregel über sechs Kataloge: die richtige Antwort darf sich nicht über ihre
+**Bauform** verraten (einzige mit Klammer, Jahreszahl, Schrägstrich, Vor- und Nachnamen,
+Verbund). Grundsatz: **jeder Zusatz bei allen vier Optionen oder bei keiner.** Zusätzlich
+für `musik_leicht` die Zeitstempel und für alle drei Musik-Kataloge die Antwort-Dubletten
+(gleiches Faktum in anderer Formulierung — das findet `check_dubletten.js` prinzipiell nicht,
+weil es Wortähnlichkeit misst).
+
+### Struktur-Verrat: 39 → 0
+
+| Datei | vorher | nachher |
+| --- | --- | --- |
+| musik_leicht | 9 | 0 |
+| musik_mittel | 10 | 0 |
+| musik_schwer | 2 | 0 |
+| fussball_leicht | 1 | 0 |
+| fussball_mittel | 5 | 0 |
+| fussball_schwer | 12 | 0 |
+
+Die drei wiederkehrenden Muster und ihre Auflösung:
+
+- **„als einzige mehrwortig"** (21 Fälle) — die richtige Antwort war der einzige Zwei-Wort-Name
+  unter drei Ein-Wort-Namen. Aufgelöst, indem mindestens ein Distraktor ebenfalls zweiteilig
+  wurde, meist über die vollständige oder übliche Vereins-/Künstlerform: `Journey | Bon Jovi |
+  Foreigner | Europe` → `Journey | Bon Jovi | Def Leppard | Europe`; `Juventus | Inter |
+  Sampdoria | SSC Neapel` → `Juventus | Inter | US Sampdoria | SSC Neapel`;
+  `Peñarol | Santos | Real Madrid | Benfica` → `CA Peñarol | Santos FC | Real Madrid | SL Benfica`.
+- **„einzige mit Schrägstrich"** (5 Fälle, alle in musik_leicht) — vier Mal AC/DC, ein Mal
+  „Lateinamerika/Puerto Rico" und „Bass/Beat". Bei den Bandfragen war ein gleichartiger Zusatz
+  für alle vier Optionen nicht sinnvoll darstellbar (Bandnamen mit Schrägstrich gibt es sonst
+  praktisch nicht), deshalb wurde die Frage umgedreht: statt „Welche Gruppe sang 'Highway to
+  Hell'?" jetzt „Welches dieser Lieder stammt von AC/DC?" — der Schrägstrich steht in der Frage,
+  die Optionen sind gleich gebaut. Bei den Textoptionen wurde der Schrägstrich einfach aufgelöst.
+- **„einzige mit Klammer / Jahreszahl / Nicht-Zahl unter Zahlen"** (5 Fälle, fussball_schwer und
+  musik_mittel) — Klammerzusatz entfernt und der Inhalt in die Erklärung oder in die Frage
+  verschoben: `Ronaldo (Brasilien)` → `Ronaldo Nazário`; `38 (die gesamte Saison)` → `38` mit
+  neu formulierter Frage; `2:1 n.V.` → `2:1`, das „n. V." steht jetzt in der Frage.
+
+Der Kipp-Effekt wurde beachtet: nach jeder Optionsänderung wurde `check_struktur.js` erneut
+gelaufen, damit nicht bloß ein *anderer* Ausreißer entsteht.
+
+### Zeitstempel in musik_leicht: 0 → 2 datiert, 4 zeitlos umformuliert
+
+Alle zeitabhängigen Aussagen wurden per Websuche geprüft, nichts geraten.
+
+- **9 (Sänger von Rammstein).** Websuche bestätigt: Besetzung seit der Gründung 1994 unverändert,
+  Till Lindemann weiterhin Frontmann. Erklärung jetzt: „… seit der Bandgründung 1994 der
+  Leadsänger von Rammstein (Stand August 2026)."
+- **48 (Schlagerkönigin).** Websuche bestätigt Helene Fischer als erfolgreichste deutsche
+  Schlagersängerin (über 18 Mio. Tonträger, 8 Nummer-1-Alben). Erklärung jetzt: „gilt Stand
+  August 2026 als …".
+- **29 (Bob Marley).** „ist der bekannteste Reggae-Musiker weltweit" → „gilt weltweit als
+  bekanntester Vertreter des Reggae" (zeitlos).
+- **126 (Elvis Presley).** Frage „Welchen Beinamen trägt Elvis Presley **bis heute**?" → ohne
+  „bis heute".
+- **165 / 271.** „ist **heute** … populär" bzw. „der **aktuell** erfolgreichsten
+  Musikveröffentlichungen" zeitlos umformuliert (165 wurde ohnehin ersetzt, siehe unten).
+
+Nicht angefasst, weil zeitlos genug: „einer der bekanntesten Gitarristen/Cellisten der Welt"
+(116, 163) und die zahlreichen historischen Chartangaben, die bereits eine Jahreszahl tragen
+(„war 2015 ein weltweiter Nummer-1-Hit").
+
+### Antwort-Dubletten in den drei Musik-Katalogen: 14 Fälle
+
+Methode wie vorgegeben: alle Fragen je Datei nach der richtigen Antwort gruppiert, jede Gruppe
+mit mehr als einem Eintrag gelesen. Zusätzlich wurden **gespiegelte Paare** gesucht (Frage A
+nennt im Fragetext genau das, was Frage B als Antwort verlangt) — die fallen durch die
+Gruppierung, weil ihre richtigen Antworten verschieden sind.
+
+**musik_leicht — 6 ersetzt**
+
+- **15 / 130** „Wer sang 'Rolling in the Deep'?" — wortgleich doppelt. 130 → „Wer sang 'Back to
+  Black'?" (Amy Winehouse).
+- **25 / 209** „Highway to Hell" → AC/DC — doppelt. 209 → „Welche Band sang 'Sweet Child o'
+  Mine'?" (Guns N' Roses).
+- **44 / 128** „Shallow" → Lady Gaga & Bradley Cooper — doppelt (die Gruppierung übersah es, weil
+  einmal „und", einmal „&" geschrieben war). 128 → „Wer sang 'City of Stars' im Film 'La La
+  Land' (2016)?" (Ryan Gosling & Emma Stone).
+- **115 / 148** „Wer sang 'Firework'?" — wortgleich doppelt. 148 → „Wer sang 'Grenade'?"
+  (Bruno Mars).
+- **127 / 165** „Was ist 'Reggaeton'?" — wortgleich doppelt. 165 → „Was ist 'Disco'?".
+- **173 / 187** „Wer sang 'Counting Stars'?" — wortgleich doppelt. 187 → „Wer sang 'Someone You
+  Loved'?" (Lewis Capaldi).
+- **198** war zusätzlich die dritte AC/DC-Frage; sie fragt jetzt nach dem Herkunftsland der Band
+  (Australien), weil „Back in Black" in musik_mittel bereits zweifach vorkommt.
+
+**musik_mittel — 3 ersetzt**
+
+- **57 / 173** Rolling Stones, beide Antwort 1962 („erster Auftritt" bzw. „gegründet von Jagger
+  und Richards"). 173 → „In welchem Jahr gründete sich die Band Led Zeppelin?" (1968).
+- **98 / 203** Spice Girls, beide Antwort 1996 („Wannabe" bzw. „erstes Album"). 203 → „Welches
+  Mitglied verließ die Spice Girls 1998 als Erste?" (Geri Halliwell).
+- **37 / 99** „Back in Black" ↔ AC/DC, dasselbe Faktum in beide Richtungen gefragt. 99 → „Welche
+  Band veröffentlichte 1994 das Album 'Definitely Maybe'?" (Oasis).
+
+**musik_schwer — 5 ersetzt, 5 Fragetexte entschärft**
+
+- **32 / 147** Black Sabbath, beide über „Birmingham + Heavy-Metal-Pionier". 147 → „Welche Band
+  nahm 1969 das Doppelalbum 'Tommy' auf …?" (The Who).
+- **84 / 171** Schuberts „Unvollendete", zweimal dasselbe. 171 → „Welcher Komponist schrieb den
+  Orchesterzyklus 'Die Planeten'?" (Gustav Holst).
+- **179 / 248** „Mississippi Goddam" (1964) → Nina Simone, zweimal dasselbe. 248 → „Welche
+  Jazzsängerin nahm ab 1956 die berühmten 'Song Book'-Alben auf?" (Ella Fitzgerald).
+- **14 / 261** „What's Going On" → Marvin Gaye, einmal als Sänger, einmal als Produzent. 261 →
+  „Welcher Soulsänger starb 1967 bei einem Flugzeugabsturz …?" (Otis Redding).
+- **46 / 141** Bowies „Blackstar": 46 fragte das Jahr und nannte den Tod, 141 fragte den Sänger
+  und nannte das Album — dasselbe Faktum gespiegelt. 46 → „In welchem Jahr erschien Kate Bushs
+  Album 'Hounds of Love'?" (1985, per Websuche bestätigt).
+- **143 / 187** Beide fragten das Jahr eines Bowie-Albums der Berliner Trilogie (1977). 187 →
+  „In welchem Jahr erschien das Album 'Graceland' von Paul Simon?" (1986).
+- Fünf weitere Paare waren keine Dubletten, aber die eine Frage **verriet die Antwort der
+  anderen**. Statt zu ersetzen wurde der verräterische Zusatz aus dem Fragetext gestrichen:
+  **15** (Jahr 1988 raus, rettet 180), **25** („Clavinet-Riff" raus, rettet 170; auch die
+  Erklärung entschärft), **38** („der Beastie Boys" raus, rettet 214), **48** („der 1992 'The
+  Chronic' veröffentlichte" raus, rettet 217), **190** („(1959)" raus, rettet 91).
+
+Grundbegriffe und Definitionen blieben nach dem Nutzerentscheid doppelt stehen, etwa
+musik_leicht **21 / 193** („Was ist ein 'Refrain'?" in zwei Formulierungen) und die drei
+Gitarren- bzw. zwei Trompeten-Fragen (musik_leicht 101/116/269 und 51/79) — die fragen
+jeweils verschiedene Sachverhalte ab.
+
+Die drei Fussball-Kataloge waren bei den Antwort-Dubletten bereits abgearbeitet; dort wurde
+auftragsgemäß nur der Struktur-Verrat behoben.
+
+### Sachfehler nebenbei behoben
+
+**fussball_schwer 581.** Die Frage lautete „Wie viele Spieltage gewann Arsenal in der
+'Invincibles'-Saison 2003/04 ohne Unentschieden in Folge?" mit der Antwort „38 (die gesamte
+Saison)". Das ist in sich widersprüchlich — Arsenal hatte 2003/04 **26 Siege und 12
+Unentschieden** und war lediglich *ungeschlagen*. Die Frage lautet jetzt „In wie vielen
+Ligaspielen blieb Arsenal … ungeschlagen?", die Antwort ist schlicht „38", die Erklärung nennt
+26 Siege und 12 Unentschieden. Das löst zugleich den Klammer-Verrat.
+
+### Zweifelsfälle — bitte ansehen
+
+- **musik_leicht 127 / 165 waren wortgleich** („Was ist 'Reggaeton'?"). Der Nutzerentscheid
+  erlaubt Grundbegriffe und Definitionen in zwei Formulierungen — hier war es aber nicht
+  „zwei Formulierungen", sondern derselbe Satz zweimal. Ich habe deshalb ersetzt. Falls das zu
+  weit geht: 165 lautet jetzt „Was ist 'Disco'?".
+- **musik_mittel 98 / 203 (Spice Girls, beide 1996).** Streng genommen zwei verschiedene
+  Ereignisse — Single „Wannabe" im Juli 1996, Album „Spice" im November 1996. Wer eines weiß,
+  weiß aber auch das andere. Als Dublette behandelt und 203 ersetzt.
+- **musik_schwer 32 / 147 (Black Sabbath).** Formal zwei Fakten (Album 1970 / Gründung 1968),
+  inhaltlich derselbe Hinweisvorrat („Birmingham", „Heavy Metal"). Als Dublette behandelt.
+- **musik_schwer 14 / 261 (Marvin Gaye).** Dass Gaye „What's Going On" selbst produzierte, ist
+  ein eigener Fakt; der Hinweis „'What's Going On' → Marvin Gaye" ist aber identisch. Als
+  Dublette behandelt.
+- **musik_mittel 172 / 196 (Paul Simon / Simon & Garfunkel, 'The Sound of Silence').** Zwei
+  verschiedene Antworten auf zwei verschiedene Fragen (wer schrieb es / von welchem Duo stammt
+  das Original) — **nicht geändert**, aber grenzwertig nah beieinander.
+- **musik_mittel 32 / 253 ('Zombie').** 32 nennt „The Cranberries" im Fragetext und fragt nach
+  der Sängerin, 253 fragt nach der Band. 253 ist damit für jeden trivial, der 32 gesehen hat.
+  **Nicht geändert**, weil es zwei verschiedene Fakten sind.
+- **Kataloggrenzen überschritten:** „Wer gründete 1959 Motown?" → Berry Gordy steht in
+  musik_mittel 84 *und* musik_schwer 209, „At Last" → Etta James in musik_mittel 138 *und*
+  musik_schwer 168. Auftrag war die Entdopplung **je Datei**, deshalb **nicht angefasst**.
+  Wenn dieselbe Frage in zwei Schwierigkeitsstufen stören soll, wäre das eine eigene Charge.
+- **fussball_schwer 47.** Die Option „Keine" ist entfallen, weil sie als einzige einwortig war;
+  sie heißt jetzt „Nur eine Verwarnung". Damit ist die Antwortmöglichkeit „gar keine Folge"
+  nicht mehr im Angebot — inhaltlich unkritisch (Heysel hatte definitiv Folgen), aber eine
+  bewusste Änderung am Fragesinn.
+- **fussball_leicht 670.** Die erfundenen Distraktoren heißen jetzt „Europa Trophy",
+  „Kontinental Cup", „Atlantik Pokal" (ohne Bindestrich), damit „Nations League" nicht als
+  einzige zweiteilige Option auffällt. Rein kosmetisch.
+
+### Prüfungen nach der Charge
+
+- `check_struktur.js` je Datei — **0** in allen sechs (vorher 9 / 10 / 2 / 1 / 5 / 12)
+- `check_questions.js musik --dir questionbank_katalog` — **0 Befunde** (unverändert)
+- `check_questions.js fussball --dir questionbank_katalog` — **0 Befunde** (unverändert)
+- `check_dubletten.js <datei> --streng` — **0 Verdachtsfälle** in allen sechs
+- `check_laenge.js --alle --dir questionbank_katalog`, alle Ränge im Korridor 15–40 %:
+
+| Datei | vorher | nachher |
+| --- | --- | --- |
+| musik_leicht | 27/21/27/25, 24 % | **25/24/27/24, 23 %** |
+| musik_mittel | 25/25/25/25, 24 % | **23/27/26/24, 22 %** |
+| musik_schwer | 26/24/25/25, 24 % | **25/26/25/25, 23 %** |
+| fussball_leicht | 27/24/24/25, 25 % | **27/24/24/25, 25 %** |
+| fussball_mittel | 23/26/25/26, 22 % | **22/27/25/26, 22 %** |
+| fussball_schwer | 22/27/26/24, 21 % | **21/28/27/24, 21 %** |
+
+- Anzahl je Datei unverändert (273 / 286 / 286 / 683 / 684 / 640), Reihenfolge erhalten
+- `correct`-Index bei jeder geänderten Frage mitgeführt; Verteilung 69/68/68/68, 72/72/71/71,
+  72/72/71/71, 171/171/171/170, 169/172/171/172, 160/163/160/157
+- Keine neuen Meta-Optionen; die sieben vorhandenen Treffer („Alle 4 Jahre", „Keine Hand",
+  „Keiner" …) sind Bestand und stehen jeweils neben gleich gebauten Geschwistern, sind also
+  keine Verräter
+- Format geprüft: UTF-8 ohne BOM, LF, echte Umlaute, 2 Leerzeichen Einrückung, Feldstruktur
+  `question / options / correct / explanation / topic` in allen Einträgen vollständig
+
+## 180. anime_*: Struktur-Verrat, Zeitstempel und Antwort-Dubletten (14.8.2026)
+
+Nachziehen der Regeln, die erst nach der Bearbeitung der drei Anime-Kataloge entstanden sind:
+Struktur-Verrat (§121/§127), Zeitstempel („Stand August 2026"), Antwort-Dubletten desselben
+Faktums in anderer Formulierung. Reihenfolge und Anzahl der Fragen blieben unverändert
+(283 / 278 / 280), bei jeder geänderten Frage wurde der `correct`-Index mitgeführt.
+
+### Aufgabe 1 — Struktur-Verrat: 21 Fragen, jetzt 0
+
+`check_struktur.js` meldete 6 / 9 / 6. Aufgelöst wurde jeweils so, dass **alle vier** Optionen
+gleich gebaut sind — nicht, indem nur der Zusatz an der richtigen Antwort verschwindet.
+
+- **anime_leicht 55** (Urarakas Macke): Statt „Zero Gravity" gegen drei deutsche Einwortbegriffe
+  fragt die Frage jetzt nach der *Wirkung* der Macke; alle vier Optionen sind gleich gebaute
+  Sätze („Sie macht Berührtes …"). Der Quirk-Name „Zero Gravity" steht in der Erklärung —
+  das deutsche MHA-Wiki führt ihn ebenfalls unübersetzt.
+- **anime_leicht 126** (Ashs Rivale): „Gary Oak" → „Gary" (einwortig wie die Distraktoren) und
+  zugleich Namensfassung korrigiert: „Brock" → „Rocko", Erklärung nennt „Gary Eich, Enkel von
+  Professor Eich".
+- **anime_leicht 136** „Subaru Natsuki" → „Subaru"; 146 „Tenkaichi Budokai" → „Tenkaichi-Budokai"
+  (Bindestrich wie „Konoha-Arena"/„Jinchuriki-Arena"); 233 alle vier Optionen zweiteilige
+  Schurkennamen; 250 alle vier Optionen mehrteilige Serientitel.
+- **anime_mittel 3** (Tokoyamis Macke): alle vier Optionen sind jetzt echte, zweiteilige
+  Quirk-Namen (Zero Gravity / Earphone Jack / Fierce Wings / Dark Shadow).
+- **anime_mittel 5** „Central City" → „Central"; 117 (Naruto ohne Eltern) von der Ausreißer-Option
+  „Es gab keine" auf vier gleich gebaute Antwortsätze umgestellt; 120 alle vier Optionen sind
+  „Fate/…"-Titel, damit der Schrägstrich nicht mehr verrät; 166 alle vier Optionen „Der Engel …"
+  bzw. „Der Große Priester"; 170 alle vier Optionen mehrteilige Techniknamen; 210 alle vier
+  Optionen mehrteilige Musik-Anime-Titel; 229 alle vier Optionen mehrteilige Zanpakuto-Namen.
+- **anime_schwer 61** (Zorros Schwert): mit „Ame no Habakiri" ein zweiter mehrteiliger Schwertname;
+  173 alle vier Optionen zweiteilige Serientitel (Distraktoren bewusst **nicht** von Bones);
+  206 (Rei/Yui) die richtige Antwort von 10 auf 8 Wörter gekürzt und ein Distraktor verlängert;
+  268 mit „Hyouge Mono" ein zweiter mehrteiliger Titel; 273 „König Cold" → „Cold".
+- **anime_schwer 83** war strukturell auffällig *und* inhaltlich die Zwillingsfrage zu
+  anime_mittel 5 (beide: Hauptquartier des Militärs = Central City). Ersetzt durch eine
+  Frage nach dem Herkunftsland von Prinz Lin Yao (Xing).
+
+### Aufgabe 2 — Zeitstempel: vorher 0 Fragen, jetzt 12 datierte Aussagen
+
+Jede zeitabhängige Aussage wurde per Websuche geprüft; nichts wurde aus dem Gedächtnis datiert.
+
+| Datei / Index | Aussage | Recherche-Ergebnis | Fassung |
+| --- | --- | --- | --- |
+| leicht 46 | One Piece „wird von Oda geschrieben" | Manga läuft im August 2026 weiter, Elbaf-Arc, Finale angekündigt, aber nicht erschienen | „…; Stand August 2026 schreibt und zeichnet Eiichiro Oda die Serie weiter." |
+| leicht 267 | Detektiv Conan läuft | Serie läuft 2026 weiter, 30-Jahr-Jubiläum im Januar 2026 | „Stand August 2026 laufen in Japan weiter neue Folgen." |
+| mittel 155 | „One Piece bisher nicht enthüllt" | Laugh Tale im August 2026 noch nicht erreicht | Frage trägt jetzt „(Stand August 2026)", Erklärung ebenso |
+| mittel 219 | Elbaf-Arc „Stand 2025" | Anime-Umsetzung startete am 5. April 2026 (saisonale Ausstrahlung, zwei Cours pro Jahr) | „…; im Anime läuft er seit April 2026 (Stand August 2026)." |
+| schwer 1 | Nozawa spricht Goku „seit 1986" | weiterhin aktiv, keine Nachfolge angekündigt | „…und spricht die Rolle, Stand August 2026, weiterhin." |
+| schwer 14 | Mitsuishi „seit 1992" | Rolle seit 1992, Rückkehr für „Sailor Moon Crystal" | zeitlos umformuliert (kein „seit … bis heute" mehr) |
+| schwer 27 | Kohei Tanaka „schreibt seit 1999" | ist auch für die 2026er-Staffel als Komponist geführt | „…; Stand August 2026 ist er weiterhin ihr Komponist." |
+| schwer 139 | „Ruffys Mutter bis heute nicht enthüllt" | im August 2026 unverändert unbekannt (nur Fan-Theorien um Kapitel 1156) | Frage trägt „(Stand August 2026)" |
+| schwer 155 | Mayumi Tanaka „seit 1999 ohne Unterbrechung" | spricht Ruffy weiter, auch für das Wit-Remake bestätigt | „…und, Stand August 2026, weiterhin." |
+| schwer 197 | Horikawa „seit 1989" | weiterhin die Stimme Vegetas | „…und spricht ihn, Stand August 2026, weiterhin." |
+| schwer 205 | Araki „erzählt die Reihe bis heute weiter" | „The JOJOLands" erscheint 2026 weiter im Ultra Jump | „…Stand August 2026 setzt er die Reihe mit dem neunten Teil 'The JOJOLands' fort." |
+| schwer 159 (alt) | „Jujutsu Kaisen läuft seit März 2018" | **falsch** – der Manga endete am 29.9.2024 mit Kapitel 271 | Frage ersetzt (war ohnehin Dublette zu 13) |
+
+Nicht datiert, weil abgeschlossen und damit zeitfest: Episodenzahlen (DBZ 291, HxH 148,
+Naruto 220, Shippuden 500), Studiozuordnungen abgeschlossener Serien (Wit/MAPPA bei
+Attack on Titan), Oscar 2003, Erscheinungsjahre.
+
+### Aufgabe 3 — Antwort-Dubletten: 25 Fragen ersetzt
+
+`check_dubletten.js` misst Wortähnlichkeit und findet diese Klasse prinzipiell nicht. Dafür
+gruppiert das neue Werkzeug **`question-generator/check_antwortgruppen.js`** alle Fragen einer
+Datei nach der richtigen Antwort und zeigt jede Gruppe mit mehr als einem Eintrag
+(`node question-generator/check_antwortgruppen.js anime_leicht`). Die Auswertung erfolgte
+danach von Hand; die Umlaut-Normalisierung war nötig, weil „Shinkirō" und „Shinkiro" sonst
+als zwei Antworten durchgehen.
+
+**anime_leicht (15 Ersetzungen).** Gleiches Faktum, andere Formulierung: 140 (Usagi ≙ 30),
+153 (Armin ≙ 132), 173 (Rems Haarfarbe ≙ 135), 180 (Shield Hero ≙ 159), 187 (Gol D. Roger ≙ 162),
+193 (My Hero Academia ≙ 15/33), 205 (Chopper ≙ 131), 216 (Assassination Classroom ≙ 214),
+229 (Kuroko no Basket ≙ 272), 241 (Mewtwo ≙ 47), 258 (Nami ≙ 45), 277 (Orihime ≙ 235),
+179 (Liga der Schurken ≙ 127), 77 („Welt voller Superkräfte" ≙ 15 „Macken"),
+270 („Gummikräfte, will Piratenkönig werden" ≙ 38/10), 248 (Inosuke ≙ 209, identisch gebaut).
+Neu dafür u. a.: Sailor Mars, Erwin Smith, Emilia, KonoSuba, One-Punch Man, Spy x Family,
+The Promised Neverland, Team Rocket, Tsuyu Asui, Yowamushi Pedal, Lysop, Garp, Shanks,
+Uryu Ishida, Nico Robin, Tanjiros Holzkohle.
+
+**anime_mittel (10 Ersetzungen), danach 0 Mehrfachantworten in der Datei.** 49 (Full Cowl,
+fast wortgleich zu 30), 76 (Erased ≙ 52), 94 (Bones ≙ 58), 114 (Kokushibo ≙ 34),
+122 (Aizen ≙ 105), 72 (Mahouka ≙ 123), 177 (Violet Evergarden ≙ 87), 183 (Blue Lock ≙ 174),
+254 (Chainsaw Man ≙ 141), 264 (No Game No Life ≙ 188). Neu dafür: Gran Torino, Psycho-Pass,
+Sunrise, Blaue Spinnenlilie, Espada, Frieren – Nach dem Ende der Reise, Fruits Basket,
+Ping Pong the Animation, Dorohedoro, Ascendance of a Bookworm.
+
+**anime_schwer (7 Ersetzungen).** 64 (2014 ≙ 28, identisches Faktum), 89 (Madhouse ≙ 43),
+145 (Satoshi Kon ≙ 70), 159 (2018 ≙ 13), 199 (Shinkiro ≙ 103, nur durch die fehlende
+Makron-Schreibung getarnt), 255 (Eren Kruger ≙ 207), 266 (Hiroshi Kamiya ≙ 117, wortgleich).
+Neu dafür: Yoichi Shigaraki, Studio Pierrot, Tetsurō Araki, Monthly Shōnen Gangan,
+Orden der Schwarzen Ritter, Koloss-Titan (Armin), Junko Takeuchi.
+
+Bei jeder Ersatzfrage wurde vorher per Grep geprüft, ob die neue richtige Antwort schon
+Antwort einer anderen Frage ist und ob ein Schlüsselwort in einer anderen Frage oder Erklärung
+steht. Zwei Kreuzverräter sind dabei aufgefallen und mit korrigiert worden:
+anime_schwer 88 nannte in der Erklärung „König Cold" und verriet damit 273; die Erklärungen
+von schwer 1 und 197 verrieten sich gegenseitig (Nozawa/Goku, Horikawa/Vegeta).
+
+### Zweifelsfälle — bitte entscheiden
+
+1. **Namensfassung anime_schwer ist nicht konsistent** (nur gemeldet, nicht umgestellt):
+   - **47** verwendet die englischen Ghibli-Titel „Spirited Away", „Princess Mononoke",
+     „Howl's Moving Castle", **18** „Princess Mononoke"/„Nausicaä" — während **114** in
+     derselben Datei die deutschen Titel führt („Das Schloss im Himmel", „Mein Nachbar
+     Totoro", „Die letzten Glühwürmchen") und anime_leicht durchgehend deutsch ist.
+   - **Son Goku / Son-Goku / Goku** stehen nebeneinander (1, 19, 88, 261 vs. 108, 119 vs. 185, 241);
+     anime_leicht schreibt durchgehend „Goku".
+   - **14** nennt „Usagi Tsukino"; der deutsche Synchronname ist „Bunny Tsukino". Das betrifft
+     auch anime_leicht (30) und ist offenbar bewusst so belassen worden — bitte bestätigen,
+     dann kann es als Ausnahme dokumentiert werden.
+2. **anime_leicht 267** führt den Titel „Meitantei Conan"; deutscher Titel wäre „Detektiv Conan".
+   Nicht geändert, weil die Option zugleich die richtige Antwort ist und die Regel „deutsche
+   Synchronnamen" hier eine bewusste Entscheidung braucht.
+3. **Datei-übergreifende Dublette:** anime_schwer 47 (Oscar 2003) fragt dasselbe Faktum wie
+   anime_leicht 236. Innerhalb einer Datei sind beide sauber, über die Schwierigkeitsgrade
+   hinweg ist es dieselbe Frage. Ein Durchlauf „Dubletten über die drei Anime-Dateien hinweg"
+   ist bisher nirgends vorgesehen.
+4. **Verbleibende Mehrfachantworten in anime_leicht** (11 Gruppen, bewusst stehen gelassen,
+   weil jede Frage einen anderen Anhaltspunkt abfragt): My Hero Academia (15 Macken /
+   33 U.A. High / 168 Plus Ultra), Demon Slayer (80 Nichirin-Klingen / 129 Dämonenjäger-Welt /
+   209 Zenitsu), One Piece (38 Teufelsfrüchte / 46 Oda / 103 Schatzname), Hunter x Hunter
+   (34 Gon/Ging / 119 Nen / 149 Biscuit), Naruto (53 Kishimoto / 60 „Dattebayo" / 148 Sohn von
+   Minato), „Rot" (70 / 192 / 215 — drei verschiedene Serien), Fairy Tail, Satoru Gojo
+   (28 Lehrer / 87 stärkster Zauberer), Bisasam (44 Pokédex 001 / 138 Pflanzen-Starter),
+   Nami (45 Navigatorin / 68 Traum), Chihiros Reise (8 Badehaus / 236 Oscar). Wenn die Regel
+   strenger gemeint ist („eine Serie darf nur einmal die richtige Antwort sein"), müssten hier
+   rund 15 weitere Fragen ersetzt werden — das wäre eine eigene Charge.
+5. **anime_mittel 94 (neu):** Die Antwort „Sunrise" ist historisch korrekt (Gundam ab 1979,
+   Code Geass 2006). Das Studio firmiert seit 2022 unter Bandai Namco Filmworks, die Marke
+   Sunrise besteht weiter. Die Erklärung ist deshalb bewusst in der Vergangenheitsform
+   formuliert und nennt die Umfirmierung nicht.
+6. **anime_mittel 210:** Als Distraktor stand „Sound! Euphonium" zur Debatte — das ist der
+   Zweittitel von „Hibike! Euphonium", der Antwort von Frage 23. Ersetzt durch „Kids on the
+   Slope", damit dieselbe Serie nicht unter zwei Namen im Katalog steht.
+
+### Prüfungen nach der Charge
+
+- `check_struktur.js` je Datei — **0 / 0 / 0** (vorher 6 / 9 / 6)
+- `check_questions.js anime --dir questionbank_katalog` — **0 Befunde** (unverändert, keine neuen)
+- `check_dubletten.js <datei> --streng` — **0 Verdachtsfälle** in allen drei
+- `check_antwortgruppen.js` — leicht 11 Gruppen (siehe Zweifelsfall 4), mittel **0**, schwer 2
+  (die Jahreszahlen 1985 und 1997, jeweils zwei verschiedene Fakten)
+- `check_laenge.js --alle --dir questionbank_katalog`, alle Ränge im Korridor 15–40 %:
+
+| Datei | vorher | nachher |
+| --- | --- | --- |
+| anime_leicht | 26/24/26/24, 24 % | **25/24/25/26, 23 %** |
+| anime_mittel | 24/25/25/25, 23 % | **24/27/24/25, 23 %** |
+| anime_schwer | 24/23/26/26, 25 % | **23/24/26/27, 24 %** |
+
+- Anzahl je Datei unverändert (283 / 278 / 280), Reihenfolge erhalten
+- `correct`-Verteilung 71/71/71/70, 70/70/69/69, 70/70/70/70
+- Keine Meta-Optionen ergänzt; der Bestand bleibt frei davon
+- Format geprüft: UTF-8 ohne BOM, LF, echte Umlaute, 2 Leerzeichen Einrückung, Feldstruktur
+  `question / options / correct / explanation / topic` vollständig in allen 841 Einträgen
