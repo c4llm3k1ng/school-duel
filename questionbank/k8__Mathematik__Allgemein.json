@@ -1,19 +1,19 @@
 [
   {
     "correct": 0,
-    "explanation": "2 hoch 3 ist 2 * 2 * 2 = 8. 3 hoch 2 ist 3 * 3 = 9. Die Summe ist 8 + 9 = 17.",
+    "explanation": "2³ bedeutet 2 · 2 · 2 = 8. 3² bedeutet 3 · 3 = 9. Die Summe ist 8 + 9 = 17.",
     "options": [
       "17",
       "12",
       "15",
       "13"
     ],
-    "question": "Berechne den Wert des Terms: 2^3 + 3^2",
+    "question": "Berechne den Wert des Terms: 2³ + 3²",
     "topic": "Potenzen"
   },
   {
     "correct": 1,
-    "explanation": "Eine parallele Gerade hat die gleiche Steigung. Hier ist die Steigung m = 2. Die Funktion hat also die Form y = 2x + b. Setzt man den Punkt (1, 3) ein: 3 = 2*1 + b, also 3 = 2 + b, woraus b = 1 folgt. Die Gleichung ist y = 2x + 1. Die Geraden y = -2x + 5 und y = 0,5x + 2,5 gehen zwar durch den Punkt, haben aber die falsche Steigung; y = 2x - 1 ist parallel, geht aber nicht durch den Punkt.",
+    "explanation": "Eine parallele Gerade hat die gleiche Steigung. Hier ist die Steigung m = 2. Die Funktion hat also die Form y = 2x + b. Setzt man den Punkt (1, 3) ein: 3 = 2·1 + b, also 3 = 2 + b, woraus b = 1 folgt. Die Gleichung ist y = 2x + 1. Die Geraden y = -2x + 5 und y = 0,5x + 2,5 gehen zwar durch den Punkt, haben aber die falsche Steigung; y = 2x - 1 ist parallel, geht aber nicht durch den Punkt.",
     "options": [
       "y = -2x + 5",
       "y = 2x + 1",
@@ -25,14 +25,14 @@
   },
   {
     "correct": 2,
-    "explanation": "Addiert man die beiden Gleichungen (I + II), so erhält man (x + y) + (x - y) = 7 + 3, was zu 2x = 10 vereinfacht wird. Dividiert man durch 2, ergibt sich x = 5.",
+    "explanation": "Addiert man die beiden Gleichungen (I + II), fällt y weg: (2x + y) + (x - y) = 11 + 1, also 3x = 12. Dividiert man durch 3, ergibt sich x = 4.",
     "options": [
       "2",
       "3",
-      "5",
-      "4"
+      "4",
+      "5"
     ],
-    "question": "Löse das folgende Gleichungssystem: I) x + y = 7, II) x - y = 3. Was ist der Wert von x?",
+    "question": "Löse das folgende Gleichungssystem: I) 2x + y = 11, II) x - y = 1. Was ist der Wert von x?",
     "topic": "Lineare Gleichungssysteme"
   },
   {
@@ -45,7 +45,7 @@
       "4 Meter"
     ],
     "question": "Eine Leiter, die 5 Meter lang ist, lehnt an einer senkrechten Wand. Das untere Ende der Leiter steht 3 Meter von der Wand entfernt auf dem Boden. Wie hoch reicht die Leiter an der Wand hinauf?",
-    "topic": "Geometrie (Satz des Pythagoras)"
+    "topic": "Satz des Pythagoras"
   },
   {
     "correct": 0,
@@ -73,19 +73,19 @@
   },
   {
     "correct": 2,
-    "explanation": "Man zerlegt die Zahl unter der Wurzel so, dass ein Faktor eine Quadratzahl ist: 72 = 36 * 2. Also ist Wurzel(72) = Wurzel(36 * 2) = Wurzel(36) * Wurzel(2) = 6 * Wurzel(2). Bei 36 * Wurzel(2) wurde die Wurzel aus 36 vergessen, bei 2 * Wurzel(36) sind die Faktoren vertauscht, und 4 * Wurzel(3) ist Wurzel(48).",
+    "explanation": "Man zerlegt die Zahl unter der Wurzel so, dass ein Faktor eine Quadratzahl ist: 72 = 36 · 2. Also ist √72 = √36 · √2 = 6 · √2. Bei 36 · √2 wurde die Wurzel aus 36 vergessen, bei 2 · √36 sind die Faktoren vertauscht.",
     "options": [
-      "36 * Wurzel(2)",
-      "2 * Wurzel(36)",
-      "6 * Wurzel(2)",
-      "4 * Wurzel(3)"
+      "36 · √2",
+      "2 · √36",
+      "6 · √2",
+      "4 · √3"
     ],
-    "question": "Welcher der folgenden Ausdrücke ist gleich Wurzel(72)?",
+    "question": "Welcher der folgenden Ausdrücke ist gleich √72?",
     "topic": "Wurzelgesetze"
   },
   {
     "correct": 3,
-    "explanation": "Die Wahrscheinlichkeit, dass die erste Kugel rot ist, beträgt 5 (rote Kugeln) / 8 (Gesamtzahl der Kugeln) = 5/8. Nachdem eine rote Kugel gezogen wurde und nicht zurückgelegt wird, sind noch 4 rote Kugeln und insgesamt 7 Kugeln in der Urne. Die Wahrscheinlichkeit, dass die zweite Kugel ebenfalls rot ist, beträgt 4/7. Die Gesamtwahrscheinlichkeit für beide Ereignisse ist das Produkt der Einzelwahrscheinlichkeiten: (5/8) * (4/7) = 20/56. Gekürzt ergibt das 5/14.",
+    "explanation": "Die Wahrscheinlichkeit, dass die erste Kugel rot ist, beträgt 5 (rote Kugeln) / 8 (Gesamtzahl der Kugeln) = 5/8. Nachdem eine rote Kugel gezogen wurde und nicht zurückgelegt wird, sind noch 4 rote Kugeln und insgesamt 7 Kugeln in der Urne. Die Wahrscheinlichkeit, dass die zweite Kugel ebenfalls rot ist, beträgt 4/7. Die Gesamtwahrscheinlichkeit für beide Ereignisse ist das Produkt der Einzelwahrscheinlichkeiten: (5/8) · (4/7) = 20/56. Gekürzt ergibt das 5/14.",
     "options": [
       "25/64",
       "15/56",
@@ -109,7 +109,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Zuerst berechnen wir den Rabattbetrag: 20% von 25 Euro sind (20/100) * 25 Euro = 0,20 * 25 Euro = 5 Euro. Dann ziehen wir den Rabatt vom ursprünglichen Preis ab: 25 Euro - 5 Euro = 20 Euro.",
+    "explanation": "Zuerst berechnen wir den Rabattbetrag: 20% von 25 Euro sind (20/100) · 25 Euro = 0,20 · 25 Euro = 5 Euro. Dann ziehen wir den Rabatt vom ursprünglichen Preis ab: 25 Euro - 5 Euro = 20 Euro.",
     "options": [
       "5 Euro",
       "20 Euro",
@@ -121,27 +121,27 @@
   },
   {
     "correct": 2,
-    "explanation": "Die Steigung m wird mit der Formel m = (y2 - y1) / (x2 - x1) berechnet. Setzen wir die Koordinaten ein: m = (16 - 7) / (5 - 2) = 9 / 3 = 3.",
+    "explanation": "Die Steigung m wird mit der Formel m = (y₂ - y₁) / (x₂ - x₁) berechnet. Setzen wir die Koordinaten ein: m = (-4 - 4) / (3 - (-1)) = -8 / 4 = -2.",
     "options": [
-      "-3",
-      "9",
-      "3",
-      "1/3"
+      "-8",
+      "2",
+      "-2",
+      "-1/2"
     ],
-    "question": "Welchen Wert hat die Steigung einer Geraden, die durch die Punkte P(2 | 7) und Q(5 | 16) verläuft?",
+    "question": "Welchen Wert hat die Steigung einer Geraden, die durch die Punkte P(-1 | 4) und Q(3 | -4) verläuft?",
     "topic": "Lineare Funktionen"
   },
   {
     "correct": 3,
-    "explanation": "Beim Multiplizieren von Potenzen mit gleicher Basis werden die Exponenten addiert: 3^4 * 3^2 = 3^(4+2) = 3^6. Beim Dividieren werden die Exponenten subtrahiert: 3^6 / 3^3 = 3^(6-3) = 3^3.",
+    "explanation": "Beim Multiplizieren von Potenzen mit gleicher Basis werden die Exponenten addiert: 3⁴ · 3² = 3⁶, denn 4 + 2 = 6. Beim Dividieren werden sie subtrahiert: 3⁶ : 3³ = 3³, denn 6 - 3 = 3.",
     "options": [
-      "3^9",
-      "3^5",
-      "3^1",
-      "3^3"
+      "3⁹",
+      "3⁵",
+      "3¹",
+      "3³"
     ],
-    "question": "Vereinfache den Ausdruck: (3^4 * 3^2) / 3^3.",
-    "topic": "Potenzen und Potenzgesetze"
+    "question": "Vereinfache den Ausdruck: (3⁴ · 3²) / 3³.",
+    "topic": "Potenzgesetze"
   },
   {
     "correct": 0,
@@ -181,7 +181,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Die Formel für das Volumen eines Zylinders ist V = π * r² * h. Mit r = 4 cm und h = 10 cm sowie π ≈ 3,14 erhalten wir: V = 3,14 * (4 cm)² * 10 cm = 3,14 * 16 cm² * 10 cm = 3,14 * 160 cm³ = 502,4 cm³.",
+    "explanation": "Die Formel für das Volumen eines Zylinders ist V = π · r² · h. Mit r = 4 cm und h = 10 cm sowie π ≈ 3,14 erhalten wir: V = 3,14 · (4 cm)² · 10 cm = 3,14 · 16 cm² · 10 cm = 3,14 · 160 cm³ = 502,4 cm³.",
     "options": [
       "125,6 cm³",
       "1256 cm³",

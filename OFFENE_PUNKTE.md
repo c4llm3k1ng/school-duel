@@ -4550,3 +4550,254 @@ von schwer 1 und 197 verrieten sich gegenseitig (Nozawa/Goku, Horikawa/Vegeta).
 - Keine Meta-Optionen ergänzt; der Bestand bleibt frei davon
 - Format geprüft: UTF-8 ohne BOM, LF, echte Umlaute, 2 Leerzeichen Einrückung, Feldstruktur
   `question / options / correct / explanation / topic` vollständig in allen 841 Einträgen
+
+## 181. k9 Mathematik (Algebra, Allgemein, Bruchrechnung, Kopfrechnen): erster Inhaltsdurchlauf (14.8.2026)
+
+Erster fachlicher Durchlauf über die vier Dateien `k9__Mathematik__Algebra.json`,
+`k9__Mathematik__Allgemein.json`, `k9__Mathematik__Bruchrechnung.json` und
+`k9__Mathematik__Kopfrechnen.json` (je 16 Fragen, zusammen 64). Jede Aufgabe wurde
+nachgerechnet, die Zahlenwerte zusätzlich per Node-Skript gegengeprüft
+(arcsin, Zinseszins, Zylinder- und Pyramidenvolumen, Wurzelterme, Bruchprodukte).
+
+**Ergebnis: kein einziger Sachfehler.** Keine falsch markierte Antwort, keine
+Erklärung, die einen anderen Wert vorrechnet als die markierte Option, keine
+wertgleichen Distraktoren, keine unlösbare Frage, keine Meta-Option, kein
+Kreuzverrat, kein LaTeX-Markup, keine Umlaut-Ersatzschreibungen, alle `topic`-Felder
+passend. Die drei Änderungen betreffen ausschließlich die Lesbarkeit der Fragetexte:
+
+1. **Bruchrechnung 3:** Fragetext schrieb `(3/4)^(-2)` in Caret-Notation, die eigene
+   Erklärung dagegen `(3/4)⁻²`. Fragetext auf Unicode umgestellt.
+2. **Bruchrechnung 6:** „die gemischte Zahl 3 2/5" ist als Fließtext als 32/5 lesbar.
+   Ergänzt zu „3 2/5 (drei ganze und zwei Fünftel)".
+3. **Kopfrechnen 2:** „(3/4)² multipliziert mit 64 minus 10" lässt sich auch als
+   (3/4)²·(64−10) lesen (= 30,375, steht unter keiner Option). Umgeschrieben zu
+   „(3/4)² · 64 - 10".
+
+### Zweifelsfälle
+
+1. **Themen-Redundanz über die vier Dateien.** Vier sehr ähnliche Aufgaben zum
+   teilweisen Wurzelziehen: Algebra 3 (√18 + √8), Algebra 15 (√50 − √18),
+   Allgemein 14 (√72 − √18), Kopfrechnen 5 (√50 − √8). Ebenso drei
+   Scheitelpunkt-Aufgaben (Algebra 14, Allgemein 4 und 8), zwei identisch gebaute
+   Urnen-Aufgaben (Allgemein 6 und 12) und drei Prozentaufgaben (Kopfrechnen 3, 10, 14).
+   Fachlich ist keine davon falsch, und sie liegen in verschiedenen Kategorien, also
+   meist in verschiedenen Runden. Ob das trotzdem zu viel Wiederholung ist, entscheidet
+   der Nutzer — ein Austausch wäre eine eigene Charge.
+2. **Schreibweise der Rechenzeichen.** In `Kopfrechnen` steht in den Erklärungen
+   durchgehend `*` als Malzeichen (`14 * 14 = 196`), in den drei anderen Dateien `·`.
+   Innerhalb der Datei ist es konsistent, über die Klasse hinweg nicht. Nicht angefasst,
+   weil es keine der Fehlerklassen ist; eine Vereinheitlichung auf `·` wäre ein
+   eigener, dateiübergreifender Lauf.
+3. **Verbale statt symbolische Aufgabenstellung in `Kopfrechnen`.** Die meisten Fragen
+   sind ausformuliert („Die Quadratwurzel aus 196 addiert mit 5 hoch 3"), zwei
+   verwenden Symbole (12: `-5 * (8 - 3) + 10`, 15: `(3³ - √25) / 2 + 1`). Beides ist
+   eindeutig, der Stilbruch bleibt bestehen.
+
+### Prüfungen nach der Charge
+
+- `check_questions.js k9__Mathematik --dir questionbank --summary` — **0 Befunde**
+  (7 Dateien, 127 Fragen; die drei übrigen k9-Mathematik-Dateien liefen mit)
+- `check_struktur.js` je Datei — **0 / 0 / 0 / 0**
+- `check_laenge.js --alle` — alle vier innerhalb des Korridors, „längste gewinnt":
+  Algebra 19 %, Allgemein 18 %, Bruchrechnung 29 %, Kopfrechnen 9 %. Die
+  Rangverteilungen sind wegen der vielen Längengleichstände (15 / 13 / 12 / 13 von 16)
+  nicht aussagekräftig; keine Datei wird als auffällig gemeldet.
+- Anzahl je Datei unverändert (16 / 16 / 16 / 16), Reihenfolge erhalten,
+  `correct`-Verteilung je Datei 4/4/4/4
+- Format geprüft: UTF-8 ohne BOM, LF, 2 Leerzeichen Einrückung, Feldreihenfolge
+  `correct / explanation / options / question / topic` in allen 64 Einträgen
+
+## 182. k9 Mathematik (Geometrie, Gleichungen, Statistik): erster Inhaltsdurchlauf (14.8.2026)
+
+Alle 63 Fragen der drei Dateien wurden einzeln nachgerechnet (Pythagoras, Trigonometrie,
+Strahlensätze, Körperberechnungen, lineare/quadratische/Bruch-/Wurzel-/Betragsgleichungen,
+Lagemaße). **Kein einziger Rechenfehler und keine falsch markierte Antwort** — `correct`
+zeigte überall auf den Wert, den die eigene Erklärung vorrechnet. Gefunden und behoben
+wurden ausschließlich Verrats- und Eindeutigkeitsprobleme:
+
+- **Geometrie [8]** (Kreuzverrat): Die Frage „Katheten 6 cm und 8 cm, wie lang ist die
+  Hypotenuse?" wird in der Erklärung von Frage [5] (Kegel, r = 6, h = 8) Wort für Wort
+  vorgerechnet (`√(36 + 64) = 10`). Zahlen auf 9 cm / 12 cm → 15 cm umgestellt.
+- **Geometrie [15]** (Kreuzverrat): Die Erklärung rechnete exakt die Aufgabe von Frage [3]
+  vor (`4 / 10 = 6 / ZD`, also 15 cm — dort die richtige Antwort). Neue Zahlen:
+  SA = 4 cm, AB = 8 cm, SC = 6 cm → SD = 18 cm, CD = 12 cm.
+- **Gleichungen [7]** (Bauform-Verrat, auch von `check_struktur.js` gemeldet): Bei
+  „(x − 2)² = −9" war „keine reelle Lösung" die einzige Option im Singular und damit der
+  optische Ausreißer — und zugleich die richtige. Aufgabe zu „(x − 2)² = 9" gedreht;
+  richtig ist jetzt „genau zwei reelle Lösungen", der Ausreißer ist ein Distraktor. Der
+  Fall „rechts steht eine negative Zahl" steht weiterhin in der Erklärung.
+- **Gleichungen [15]** (wörtliche Dublette): war Zeichen für Zeichen dieselbe Aufgabe wie
+  [0] (`3x − 7 = 8`), nur mit anderem Frageeinstieg. Ersetzt durch `4x − 9 = 23` (x = 8).
+- **Gleichungen [25]** (wörtliche Dublette): dieselbe Gleichung wie [11]
+  (`x² − 6x + 8 = 0`, Lösungen 2 und 4). Ersetzt durch `x² − 7x + 10 = 0` (Lösungen 2 und 5).
+- **Gleichungen [23]** (Redundanz): fast baugleich mit [19] und mit derselben Lösung x = 0.
+  Zu `3(x − 2) + 8 = 2x + 5` (x = 3) geändert.
+- **Gleichungen [27]** (Kreuzverrat): Der Kontrollsatz der Erklärung nannte die
+  Lösungsmenge von Frage [3] („x² − 25 = 0 hätte die Lösungen 5 und −5"). Satzteil entfernt.
+- **Statistik [4]** (Distraktor war mitrichtig): Bei „9 Angestellte verdienen jeweils
+  3000 €, der Chef 15000 €" ist nicht nur der Median 3000 €, sondern auch der **Modus** —
+  die Erklärung räumte das selbst ein. Damit waren zwei Optionen richtig. Die Gehälter der
+  9 Angestellten sind jetzt paarweise verschieden (zwischen 2800 und 3200 €), es gibt also
+  keinen Modus mehr; der Median bleibt die einzige richtige Antwort.
+
+Nicht gefunden: LaTeX-Markup, Umlaut-Ersatzschreibungen, Meta-Optionen, falsche
+`topic`-Felder, Verweise auf „die vorherige Frage", englische Textreste, wertgleiche
+Distraktoren, unlösbare Fragen. Bei den quadratischen Gleichungen sind überall beide
+Lösungen angegeben, bei den Bruch- und Wurzelgleichungen ist die Definitionsmenge
+jeweils genannt.
+
+### Zweifelsfälle
+
+1. **Statistik [14] — Quartil hängt von der Definition ab.** Bei 7 Werten
+   (200, 205, 210, 215, 220, 225, 230) ergibt die in deutschen Schulen übliche Methode
+   (Median der unteren Hälfte ohne den Gesamtmedian, gleichbedeutend mit der
+   ⌈n/4⌉-Regel) Q1 = 205 cm — so ist die Frage markiert und erklärt. Die
+   einschließende Methode (Tukey, unterer Median mitgenommen) liefert 207,5 cm; dieser
+   Wert steht nicht zur Auswahl, die Frage bleibt also lösbar. Unangetastet gelassen,
+   weil 205 cm der Schulstandard ist. Wer es ganz sauber will, müsste die Anzahl der
+   Werte auf 8 erhöhen, dann stimmen beide Methoden überein.
+2. **Statistik [4] — Median nur als Spanne belegt.** Nach der Korrektur sind die neun
+   Gehälter nicht mehr einzeln beziffert („zwischen 2800 und 3200 €, jeder einen anderen
+   Betrag"). Die Frage fragt nach der geeigneten *Kenngröße*, nicht nach deren Wert, die
+   Erklärung nennt den Median deshalb als Spanne und das Mittel als „über 4000 €".
+   Fachlich korrekt, aber weniger konkret als vorher — falls konkrete Zahlen gewünscht
+   sind, müssten neun Einzelbeträge in den Fragetext.
+3. **Geometrie: drei Themen doppelt besetzt.** Bei nur 16 Fragen gibt es zweimal
+   Pythagoras im Dreieck ([0], [8]), zweimal die Raumdiagonale des Quaders ([6], [14])
+   und zweimal den Strahlensatz ([3], [15]) — jeweils mit anderen Zahlen und anderem
+   Rechenweg, also kein Fehler, aber sechs von 16 Fragen prüfen dasselbe Trio. Ein
+   Austausch wäre eine eigene Charge.
+4. **Gleichungen: „längste gewinnt" bei 14 %.** Unter dem Zielwert 25 %, aber bei
+   26 von 31 Fragen sind alle vier Optionen gleich lang (`x = 5`, `x = 3`, …), sodass nur
+   5 Fragen überhaupt in die Rangwertung eingehen. `check_laenge.js` meldet die Datei
+   folgerichtig nicht als auffällig. Ein „Verrat durch Kürze" ist bei reinen
+   Zahlenoptionen nicht zu befürchten; nichts geändert.
+
+### Prüfungen nach der Charge
+
+- `check_questions.js k9__Mathematik --dir questionbank --summary` — **0 Befunde**
+  (7 Dateien, 127 Fragen; die vier bereits geprüften k9-Mathematik-Dateien liefen mit)
+- `check_struktur.js` je Datei — **0 / 0 / 0** (vorher: 1 in `Gleichungen`)
+- `check_unloesbar.js --verbose` — keine der drei Dateien gemeldet
+- `check_dubletten.js` — `Geometrie` 0, `Statistik` 0, `Gleichungen` 4 Verdachtsfälle,
+  alle nachgesehen: gleicher Aufgabentyp mit anderen Zahlen und anderen Lösungen
+  (z. B. `√(x + 4) = 3` gegen `√(x + 3) = 4`), keine echten Dubletten mehr
+- `check_laenge.js --alle` — „längste gewinnt": Geometrie 23 %, Statistik 20 %,
+  Gleichungen 14 %; keine Datei wird als auffällig gemeldet (zu viele Längengleichstände
+  für eine belastbare Rangverteilung: 14 / 13 / 26 von 16 / 16 / 31)
+- Anzahl je Datei unverändert (16 / 31 / 16), Reihenfolge erhalten,
+  `correct`-Verteilung je Datei gleichmäßig 4/4/4/4 bzw. 8/8/8/7
+- Format geprüft: UTF-8 ohne BOM, LF, 2 Leerzeichen Einrückung, Feldreihenfolge
+  `correct / explanation / options / question / topic` in allen 63 Einträgen
+
+## 183. k8 Mathematik (Geometrie, Kopfrechnen, Statistik): erster Inhaltsdurchlauf (14.8.2026)
+
+Erster fachlicher Durchlauf über `k8__Mathematik__Geometrie.json` (31 Fragen),
+`k8__Mathematik__Kopfrechnen.json` (24) und `k8__Mathematik__Statistik.json` (16),
+zusammen 71 Fragen. Jede Aufgabe wurde nachgerechnet und die Zahlenwerte zusätzlich
+per Node-Skript gegengeprüft (Pythagoras, Trapez- und Kreisflächen, Zylindervolumen,
+Einheitenumrechnung, Mittelwert/Median/Spannweite, Prozentwerte).
+
+**Keine falsch markierte Antwort, kein Rechenfehler, keine unlösbare Frage, keine
+wertgleichen Distraktoren, keine Meta-Option, kein Verweis auf „die vorherige Frage",
+keine Umlaut-Ersatzschreibung.** Alle Befunde betreffen Kreuzverrat zwischen zwei
+Fragen derselben Datei, zwei Statistik-Datensätze ohne Prüfwirkung, ein falsches
+`topic`, unscharfe Fragetexte und Caret-Markup:
+
+**Geometrie**
+
+1. **[28] Kreuzverrat, ersetzt.** „Wie viele Symmetrieachsen besitzt ein Rechteck, das
+   kein Quadrat ist?" — Frage [7] fragt dasselbe Konzept, und ihre Erklärung nennt die
+   Antwort wörtlich („Ein Rechteck, das kein Quadrat ist, hat genau zwei
+   Symmetrieachsen"). Ersetzt durch das gleichschenklige (nicht gleichseitige) Dreieck,
+   Antwort 1; Optionen umsortiert, `correct` bleibt 0.
+2. **[27] Kreuzverrat, umgebaut.** Antwort war WSW, genau wie bei [10], deren Erklärung
+   die WSW-Bedingung wörtlich formuliert. Fragetext auf zwei Seiten mit eingeschlossenem
+   Winkel umgestellt (Antwort SWS), Optionen umsortiert statt Index gedreht,
+   `correct` bleibt 3.
+3. **[29] Kreuzverrat, Zahlen getauscht.** Nutzte dasselbe Dreieck wie [0]
+   (6 cm / 8 cm / 10 cm), dessen Erklärung die Rechnung vorgibt. Jetzt Kathete 8 cm,
+   Fläche 60 cm², Hypotenuse 17 cm.
+4. **[18] Dublette, Zahlen getauscht.** Identisches Trapez wie [1] (a = 8 cm, c = 12 cm),
+   nur mit anderer Höhe. Jetzt a = 5 cm, c = 11 cm, h = 7 cm, A = 56 cm²; die
+   Distraktoren bilden die typischen Fehler ab (fehlende Halbierung, nur a·h, nur c·h).
+5. **[26] Unscharfer Fragetext.** „Wenn ein Wechselwinkel 65° beträgt, wie groß ist der
+   entsprechende Stufenwinkel?" — Wechsel- und Stufenwinkel sind zwei verschiedene
+   Winkelpaare zu ein und demselben Winkel; „der entsprechende" war ohne Skizze nicht
+   definiert. Neu über die Schnittstellen formuliert. Zusätzlich nannte die Erklärung
+   von [19] die Stufenwinkelregel mit und verriet damit den Lösungsweg von [26] —
+   Klammerzusatz entfernt.
+6. **[21] `topic` falsch.** Stand auf „Flächenberechnung und Satz des Pythagoras im
+   Dreieck", gefragt sind aber Umfang und Höhe, keine Fläche → „Satz des Pythagoras im
+   gleichschenkligen Dreieck".
+7. **[6] Schreibweise.** `P(-2, 3)` mit ASCII-Bindestrich und Komma, während [30]
+   `P(2|1)` schreibt. Vereinheitlicht auf `P(−2|3)`.
+
+**Kopfrechnen**
+
+8. **[22] Kreuzverrat, umgebaut.** „Was ist 13²?" (Antwort 169) neben [5] „Was ist die
+   Quadratwurzel aus 169?", deren Erklärung „13 * 13 = 169" nennt. Umgestellt auf 15²,
+   Optionen 195 / 210 / 225 / 240 (alle Vielfache von 15), `correct` bleibt 2.
+9. **[18] Dublette, umgebaut.** „Wie viel sind 15% von 240?" war bis auf die Zahl
+   baugleich zu [9] „Wie viel sind 15% von 200?", samt identischer Erklärungslogik.
+   Auf die Umkehraufgabe umgestellt: „Wie viel Prozent sind 45 von 300?", `topic`
+   entsprechend „Prozentrechnung (Prozentsatz)".
+10. **[13] Caret-Markup.** „8^2 - Wurzel aus 81" → „8² - √81"; die Erklärung nutzte
+    bereits die Wurzel in Worten.
+
+**Statistik**
+
+11. **[1] Datensatz ohne Prüfwirkung.** Bei 8, 3, 12, 5, 10, 7 sind Median **und**
+    arithmetisches Mittel 7,5 — wer die falsche Kenngröße bildet, wird trotzdem
+    belohnt. 12 → 14 geändert: Median bleibt 7,5 (Antwort unverändert), das Mittel
+    liegt jetzt bei 7,83.
+12. **[10] Gleicher Fall.** Bei den acht Weitsprung-Weiten waren Mittelwert und Median
+    beide 3,85 m. Letzte Weite 4,20 → 4,60: Mittelwert jetzt 3,90 m, Median 3,85 m ist
+    damit ein sinnvoller Distraktor und wird in der Erklärung als solcher benannt.
+    Optionen umsortiert, `correct` bleibt 2.
+13. **[14] Unpräzise Erklärung.** „Der Median verschiebt sich damit nur um eine
+    Position" — gemeint ist der Wert. Ersetzt durch „Der Median steigt damit von 15
+    auf 18".
+
+### Zweifelsfälle
+
+1. **Themen-Redundanz in `Geometrie`.** Drei Zylindervolumen-Aufgaben ([2], [13], [17]),
+   davon zwei mit Umrechnung in Liter ([2] r = 1 m / h = 2 m, [17] r = 0,4 m /
+   h = 1,20 m). Ebenso fünf Pythagoras-Aufgaben ([0], [4], [15], [21], [29]) und je
+   zwei zu Winkeln an Parallelen, Kongruenzsätzen, Trapezflächen und Abständen im
+   Koordinatensystem. Zahlen und Fragestellungen sind nach dieser Charge überall
+   verschieden, keine Erklärung verrät eine andere Frage. Ob 31 Fragen mit dieser
+   Themendichte trotzdem zu wenig Breite haben (Ähnlichkeit, Oberflächen, Kreisteile,
+   Strahlensätze fehlen ganz bzw. kommen einmal vor), sollte der Nutzer entscheiden —
+   ein Austausch wäre eine eigene Charge.
+2. **Pythagoreische Tripel wiederholen sich.** [15] (Rechteck 5 m × 12 m → Diagonale
+   13 m) und [21] (Schenkel 13 cm, halbe Basis 5 cm → Höhe 12 cm) nutzen dasselbe
+   Tripel 5-12-13, [21] nennt es in der Erklärung. Nicht geändert, weil 5-12-13 und
+   3-4-5 in Klasse 8 Standardwissen sind und keine der beiden Fragen dadurch
+   ohne Rechnung lösbar wird.
+3. **Malzeichen `*` statt `·`.** `Kopfrechnen` und `Statistik` schreiben in Fragen und
+   Erklärungen durchgehend `*` (`8 * 8 = 64`), `Geometrie` und `Gleichungen` dagegen `·`.
+   Innerhalb jeder Datei konsistent, über die Klasse hinweg nicht. Nicht angefasst,
+   weil es keine der Fehlerklassen ist — dieselbe Beobachtung steht schon bei k9.
+   Eine Vereinheitlichung auf `·` wäre ein eigener, dateiübergreifender Lauf.
+4. **Rangverteilung der Antwortlängen nicht messbar.** In allen drei Dateien bestehen
+   die Optionen fast durchgehend aus gleich langen Zahlen (25 von 31, 20 von 24, 15 von
+   16 Fragen mit Längengleichstand). `check_laenge.js` wertet deshalb nur 6 / 4 / 1
+   Fragen, und der Korridor 15–40 % je Rang ist bei diesen Nennern rechnerisch nicht
+   erreichbar (bei 4 gewerteten Fragen sind nur 0/25/50/75/100 % möglich). Aussagekräftig
+   ist hier allein „längste gewinnt": 20 % / 24 % / 22 % gegen den Zielwert 25 %.
+   Optionen künstlich zu verlängern, nur um Ränge zu füllen, würde die Fragen
+   verschlechtern — bewusst nicht getan.
+
+### Prüfungen nach der Charge
+
+- `check_questions.js k8__Mathematik --dir questionbank --summary` — **0 Befunde**
+  (7 Dateien, 135 Fragen; die vier übrigen k8-Mathematik-Dateien liefen mit)
+- `check_struktur.js` je Datei — **0 / 0 / 0**
+- `check_laenge.js --alle` — „längste gewinnt" Geometrie 20 %, Kopfrechnen 24 %,
+  Statistik 22 %; keine der drei Dateien wird als auffällig gemeldet (siehe
+  Zweifelsfall 4)
+- Anzahl je Datei unverändert (31 / 24 / 16), Reihenfolge erhalten,
+  `correct`-Verteilung Geometrie 8/8/8/7, Kopfrechnen 6/6/6/6, Statistik 4/4/4/4
+- Format geprüft: UTF-8 ohne BOM, LF, 2 Leerzeichen Einrückung, Feldreihenfolge
+  `correct / explanation / options / question / topic` in allen 71 Einträgen

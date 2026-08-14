@@ -49,14 +49,14 @@
   },
   {
     "correct": 0,
-    "explanation": "Das arithmetische Mittel liegt bei (9 * 3000 + 15000) : 10 = 4200 Euro, obwohl außer dem Chef niemand so viel verdient. Der Median liegt bei 3000 Euro und beschreibt das typische Einkommen besser, weil er von einzelnen Ausreißern kaum beeinflusst wird. Der Modus wäre hier zwar ebenfalls 3000 Euro, ist aber bei vielen verschiedenen Werten unbrauchbar. Die Spannweite ist kein Lagemaß, sondern ein Streumaß.",
+    "explanation": "Das arithmetische Mittel wird vom Gehalt des Chefs nach oben gezogen und liegt über 4000 Euro, obwohl niemand außer ihm so viel verdient. Der Median liegt zwischen 2800 und 3200 Euro und beschreibt das typische Einkommen besser, weil ihn einzelne Ausreißer kaum beeinflussen. Einen Modus gibt es hier nicht, weil jeder Betrag nur einmal vorkommt. Die Spannweite ist kein Lagemaß, sondern ein Streumaß.",
     "options": [
       "Der Median",
       "Das arithmetische Mittel",
       "Der Modus",
       "Die Spannweite"
     ],
-    "question": "In einer kleinen Firma verdienen 9 Angestellte jeweils 3000 Euro pro Monat. Der Chef verdient 15000 Euro pro Monat. Welche Kenngröße beschreibt das 'typische' Einkommen in dieser Firma am besten, wenn man den Chef mitzählt?",
+    "question": "In einer kleinen Firma verdienen 9 Angestellte zwischen 2800 und 3200 Euro pro Monat, jeder einen anderen Betrag. Der Chef verdient 15000 Euro pro Monat. Welche Kenngröße beschreibt das 'typische' Einkommen in dieser Firma am besten, wenn man den Chef mitzählt?",
     "topic": "Lagemaße und Ausreißer"
   },
   {

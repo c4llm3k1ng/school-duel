@@ -85,14 +85,14 @@
   },
   {
     "correct": 3,
-    "explanation": "Das Quadrat einer reellen Zahl ist nie negativ, es gilt immer (x − 2)² ≥ 0. Eine Zahl, die quadriert −9 ergibt, gibt es in den reellen Zahlen nicht. Die Gleichung hat daher keine reelle Lösung.",
+    "explanation": "Ziehe auf beiden Seiten die Wurzel und beachte beide Vorzeichen: x − 2 = 3 oder x − 2 = −3. Daraus folgen x₁ = 5 und x₂ = −1, die Gleichung hat also genau zwei reelle Lösungen. Stünde rechts eine negative Zahl, gäbe es keine reelle Lösung, denn ein Quadrat ist nie negativ.",
     "options": [
       "genau eine reelle Lösung",
-      "genau zwei reelle Lösungen",
+      "keine reelle Lösung",
       "unendlich viele reelle Lösungen",
-      "keine reelle Lösung"
+      "genau zwei reelle Lösungen"
     ],
-    "question": "Wie viele reelle Lösungen hat die Gleichung (x - 2)² = -9?",
+    "question": "Wie viele reelle Lösungen hat die Gleichung (x - 2)² = 9?",
     "topic": "Anzahl der Lösungen von Gleichungen"
   },
   {
@@ -181,14 +181,14 @@
   },
   {
     "correct": 3,
-    "explanation": "Addiere zuerst auf beiden Seiten 7: 3x = 15. Teile dann beide Seiten durch 3: x = 5. Probe: 3 ⋅ 5 − 7 = 8.",
+    "explanation": "Addiere zuerst auf beiden Seiten 9: 4x = 23 + 9 = 32. Teile dann beide Seiten durch 4: x = 32 / 4 = 8. Probe: 4 ⋅ 8 − 9 = 32 − 9 = 23.",
     "options": [
-      "x = 3",
       "x = 4",
       "x = 6",
-      "x = 5"
+      "x = 9",
+      "x = 8"
     ],
-    "question": "Löse die Gleichung nach x auf: 3x - 7 = 8",
+    "question": "Löse die Gleichung nach x auf: 4x - 9 = 23",
     "topic": "Lineare Gleichung"
   },
   {
@@ -277,14 +277,14 @@
   },
   {
     "correct": 3,
-    "explanation": "Löse zuerst die Klammer auf: 3x − 6 + 5 = 2x − 1, also 3x − 1 = 2x − 1. Subtrahiere 2x und addiere 1 auf beiden Seiten: x = 0.",
+    "explanation": "Löse zuerst die Klammer auf: 3x − 6 + 8 = 2x + 5, also 3x + 2 = 2x + 5. Subtrahiere 2x auf beiden Seiten: x + 2 = 5. Subtrahiere 2: x = 3.",
     "options": [
-      "x = -2",
-      "x = 2",
-      "x = 4",
-      "x = 0"
+      "x = -3",
+      "x = 1",
+      "x = 5",
+      "x = 3"
     ],
-    "question": "Löse die Gleichung nach x auf: 3(x - 2) + 5 = 2x - 1",
+    "question": "Löse die Gleichung nach x auf: 3(x - 2) + 8 = 2x + 5",
     "topic": "Lineare Gleichungen"
   },
   {
@@ -301,14 +301,14 @@
   },
   {
     "correct": 1,
-    "explanation": "Die Gleichung steht in Normalform x² + px + q = 0 mit p = −6 und q = 8, deshalb ist die pq-Formel anwendbar: x = −p/2 ± √((p/2)² − q) = 3 ± √(9 − 8) = 3 ± 1. Die Lösungen sind x₁ = 2 und x₂ = 4.",
+    "explanation": "Die Gleichung steht in Normalform x² + px + q = 0 mit p = −7 und q = 10, deshalb ist die pq-Formel anwendbar: x = −p/2 ± √((p/2)² − q) = 3,5 ± √(12,25 − 10) = 3,5 ± 1,5. Die Lösungen sind x₁ = 2 und x₂ = 5.",
     "options": [
-      "x₁ = -2, x₂ = 4",
-      "x₁ = 2, x₂ = 4",
-      "x₁ = 1, x₂ = 8",
-      "x₁ = -4, x₂ = -2"
+      "x₁ = -2, x₂ = -5",
+      "x₁ = 2, x₂ = 5",
+      "x₁ = 1, x₂ = 10",
+      "x₁ = -1, x₂ = -10"
     ],
-    "question": "Gib die Lösungen der quadratischen Gleichung x² - 6x + 8 = 0 an.",
+    "question": "Gib die Lösungen der quadratischen Gleichung x² - 7x + 10 = 0 an.",
     "topic": "Quadratische Gleichungen"
   },
   {
@@ -325,7 +325,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Zur Lösung x₁ = 0 gehört der Faktor x, zur Lösung x₂ = −5 der Faktor (x + 5). Die Gleichung lautet also x(x + 5) = 0, ausmultipliziert x² + 5x = 0. Zur Kontrolle: x² − 5x = 0 hätte die Lösungen 0 und 5, x² − 25 = 0 die Lösungen 5 und −5.",
+    "explanation": "Zur Lösung x₁ = 0 gehört der Faktor x, zur Lösung x₂ = −5 der Faktor (x + 5). Die Gleichung lautet also x(x + 5) = 0, ausmultipliziert x² + 5x = 0. Zur Kontrolle: x² − 5x = 0 hätte die Lösungen 0 und 5.",
     "options": [
       "x² - 5x = 0",
       "x² + 25 = 0",

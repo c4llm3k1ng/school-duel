@@ -80,7 +80,7 @@
       "6 Einheiten",
       "8 Einheiten"
     ],
-    "question": "Welchen Abstand haben die Punkte P(-2, 3) und Q(4, 3) in einem Koordinatensystem voneinander?",
+    "question": "Welchen Abstand haben die Punkte P(−2|3) und Q(4|3) in einem Koordinatensystem voneinander?",
     "topic": "Abstand im Koordinatensystem"
   },
   {
@@ -217,19 +217,19 @@
   },
   {
     "correct": 2,
-    "explanation": "Für den Flächeninhalt eines Trapezes gilt A = ((a + c) / 2) · h. Eingesetzt: A = ((8 cm + 12 cm) / 2) · 6 cm = 10 cm · 6 cm = 60 cm².",
+    "explanation": "Für den Flächeninhalt eines Trapezes gilt A = ((a + c) / 2) · h. Eingesetzt: A = ((5 cm + 11 cm) / 2) · 7 cm = 8 cm · 7 cm = 56 cm².",
     "options": [
-      "120 cm²",
-      "48 cm²",
-      "60 cm²",
-      "72 cm²"
+      "112 cm²",
+      "35 cm²",
+      "56 cm²",
+      "77 cm²"
     ],
-    "question": "Ein Trapez hat die parallelen Seiten a = 8 cm und c = 12 cm. Die Höhe des Trapezes beträgt 6 cm. Welchen Flächeninhalt besitzt das Trapez?",
+    "question": "Ein Trapez hat die parallelen Seiten a = 5 cm und c = 11 cm. Die Höhe des Trapezes beträgt 7 cm. Welchen Flächeninhalt besitzt das Trapez?",
     "topic": "Flächeninhalt des Trapezes"
   },
   {
     "correct": 3,
-    "explanation": "An geschnittenen Parallelen sind Wechselwinkel gleich groß (ebenso Stufenwinkel). Der Wechselwinkel misst deshalb ebenfalls 70°. Nur der Nebenwinkel dazu wäre 180° − 70° = 110°.",
+    "explanation": "An geschnittenen Parallelen sind Wechselwinkel gleich groß. Der Wechselwinkel misst deshalb ebenfalls 70°. Nur der Nebenwinkel dazu wäre 180° − 70° = 110°.",
     "options": [
       "110°",
       "20°",
@@ -261,7 +261,7 @@
       "10 cm"
     ],
     "question": "Ein gleichschenkliges Dreieck hat eine Basis von 10 cm. Der gesamte Umfang des Dreiecks beträgt 36 cm. Wie lang ist die Höhe des Dreiecks zur Basis?",
-    "topic": "Flächenberechnung und Satz des Pythagoras im Dreieck"
+    "topic": "Satz des Pythagoras im gleichschenkligen Dreieck"
   },
   {
     "correct": 2,
@@ -313,50 +313,50 @@
   },
   {
     "correct": 2,
-    "explanation": "An geschnittenen Parallelen sind Wechselwinkel und Stufenwinkel jeweils gleich groß. Beträgt der Wechselwinkel 65°, so misst auch der Stufenwinkel 65°; der Nebenwinkel dazu wäre 115°.",
+    "explanation": "An geschnittenen Parallelen sind Stufenwinkel gleich groß. Der Stufenwinkel zu einem Winkel von 65° misst deshalb ebenfalls 65°. Der Nebenwinkel dazu wäre 180° − 65° = 115°.",
     "options": [
       "25°",
       "115°",
       "65°",
       "130°"
     ],
-    "question": "Zwei parallele Geraden werden von einer dritten Geraden geschnitten. Wenn ein Wechselwinkel 65° beträgt, wie groß ist der entsprechende Stufenwinkel?",
+    "question": "Zwei parallele Geraden werden von einer dritten Geraden geschnitten. Ein Winkel an der ersten Schnittstelle misst 65°. Wie groß ist sein Stufenwinkel an der zweiten Schnittstelle?",
     "topic": "Winkel an Parallelen und schneidenden Geraden"
   },
   {
     "correct": 3,
-    "explanation": "Gegeben sind die Seite AB und die beiden an ihr anliegenden Winkel. Genau das beschreibt der Kongruenzsatz WSW: Stimmen zwei Dreiecke in einer Seite und den beiden anliegenden Winkeln überein, sind sie kongruent.",
+    "explanation": "Gegeben sind zwei Seiten (AB und AC) und der von ihnen eingeschlossene Winkel BAC. Genau das beschreibt der Kongruenzsatz SWS: Stimmen zwei Dreiecke in zwei Seiten und dem eingeschlossenen Winkel überein, sind sie kongruent.",
     "options": [
       "SSS (Seite-Seite-Seite)",
-      "SWS (Seite-Winkel-Seite)",
+      "WSW (Winkel-Seite-Winkel)",
       "SsW (Seite-Seite-Winkel)",
-      "WSW (Winkel-Seite-Winkel)"
+      "SWS (Seite-Winkel-Seite)"
     ],
-    "question": "Zwei Dreiecke ABC und DEF haben folgende Eigenschaften: Die Strecke AB ist gleich der Strecke DE, der Winkel BAC ist gleich dem Winkel EDF und der Winkel ABC ist gleich dem Winkel DEF. Nach welchem Kongruenzsatz sind die Dreiecke kongruent?",
+    "question": "Zwei Dreiecke ABC und DEF haben folgende Eigenschaften: Die Strecke AB ist gleich der Strecke DE, die Strecke AC ist gleich der Strecke DF und der Winkel BAC ist gleich dem Winkel EDF. Nach welchem Kongruenzsatz sind die Dreiecke kongruent?",
     "topic": "Kongruenzsätze für Dreiecke"
   },
   {
     "correct": 0,
-    "explanation": "Ein Rechteck, das kein Quadrat ist, hat zwei Symmetrieachsen: eine durch die Mittelpunkte der längeren Seiten und eine durch die Mittelpunkte der kürzeren Seiten. Die Diagonalen sind hier keine Symmetrieachsen.",
+    "explanation": "Ein gleichschenkliges Dreieck hat genau eine Symmetrieachse: die Gerade durch die Spitze und den Mittelpunkt der Basis. Erst ein gleichseitiges Dreieck besitzt drei Achsen.",
     "options": [
-      "2",
-      "0",
       "1",
-      "4"
+      "0",
+      "2",
+      "3"
     ],
-    "question": "Wie viele Symmetrieachsen besitzt ein Rechteck, das kein Quadrat ist?",
+    "question": "Wie viele Symmetrieachsen besitzt ein gleichschenkliges Dreieck, das nicht gleichseitig ist?",
     "topic": "Achsensymmetrie"
   },
   {
     "correct": 1,
-    "explanation": "Im rechtwinkligen Dreieck gilt A = (1/2) · Kathete1 · Kathete2. Aus 24 cm² = (1/2) · 8 cm · b folgt b = 6 cm. Mit dem Satz des Pythagoras ist c² = 8² + 6² = 64 + 36 = 100, also c = 10 cm.",
+    "explanation": "Im rechtwinkligen Dreieck gilt A = (1/2) · Kathete1 · Kathete2. Aus 60 cm² = (1/2) · 8 cm · b folgt b = 15 cm. Mit dem Satz des Pythagoras ist c² = 8² + 15² = 64 + 225 = 289, also c = 17 cm.",
     "options": [
-      "6 cm",
-      "10 cm",
-      "12 cm",
-      "14 cm"
+      "15 cm",
+      "17 cm",
+      "20 cm",
+      "23 cm"
     ],
-    "question": "Ein rechtwinkliges Dreieck hat eine Kathete von 8 cm. Der Flächeninhalt beträgt 24 cm². Wie lang ist die Hypotenuse dieses Dreiecks?",
+    "question": "Ein rechtwinkliges Dreieck hat eine Kathete von 8 cm. Der Flächeninhalt beträgt 60 cm². Wie lang ist die Hypotenuse dieses Dreiecks?",
     "topic": "Satz des Pythagoras und Flächeninhalt"
   },
   {

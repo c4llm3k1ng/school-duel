@@ -13,14 +13,14 @@
   },
   {
     "correct": 1,
-    "explanation": "Zuerst werden die Werte der Größe nach geordnet: 3, 5, 7, 8, 10, 12. Bei einer geraden Anzahl von Werten ist der Median der Mittelwert der beiden mittleren Werte: (7 + 8) : 2 = 7,5.",
+    "explanation": "Zuerst werden die Werte der Größe nach geordnet: 3, 5, 7, 8, 10, 14. Bei einer geraden Anzahl von Werten ist der Median der Mittelwert der beiden mittleren Werte: (7 + 8) : 2 = 7,5.",
     "options": [
       "7",
       "7,5",
       "8",
       "8,5"
     ],
-    "question": "Bestimme den Median des folgenden Datensatzes: 8, 3, 12, 5, 10, 7.",
+    "question": "Bestimme den Median des folgenden Datensatzes: 8, 3, 14, 5, 10, 7.",
     "topic": "Median"
   },
   {
@@ -121,14 +121,14 @@
   },
   {
     "correct": 2,
-    "explanation": "Die Summe der Weiten beträgt 3,50 + 3,80 + 4,10 + 3,60 + 3,90 + 4,00 + 3,70 + 4,20 = 30,80 m. Geteilt durch die Anzahl 8 ergibt das 30,80 : 8 = 3,85 m.",
+    "explanation": "Die Summe der Weiten beträgt 3,50 + 3,80 + 4,10 + 3,60 + 3,90 + 4,00 + 3,70 + 4,60 = 31,20 m. Geteilt durch die Anzahl 8 ergibt das 31,20 : 8 = 3,90 m. Der Median dieser Reihe liegt dagegen bei 3,85 m.",
     "options": [
       "3,75 m",
       "3,80 m",
-      "3,85 m",
-      "3,90 m"
+      "3,90 m",
+      "3,85 m"
     ],
-    "question": "Acht Schülerinnen und Schüler haben bei einem Weitsprung-Wettbewerb folgende Weiten (in Meter) erzielt: 3,50; 3,80; 4,10; 3,60; 3,90; 4,00; 3,70; 4,20. Berechne den arithmetischen Mittelwert (Durchschnitt) der Weiten.",
+    "question": "Acht Schülerinnen und Schüler haben bei einem Weitsprung-Wettbewerb folgende Weiten (in Meter) erzielt: 3,50; 3,80; 4,10; 3,60; 3,90; 4,00; 3,70; 4,60. Berechne den arithmetischen Mittelwert (Durchschnitt) der Weiten.",
     "topic": "Lageparameter (Arithmetisches Mittel)"
   },
   {
@@ -169,7 +169,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Nach dem Austausch muss die Liste neu geordnet werden: 12, 15, 18, 20, 25. Bei fünf Werten ist der Median der dritte Wert, also 18. Der Median verschiebt sich damit nur um eine Position.",
+    "explanation": "Nach dem Austausch muss die Liste neu geordnet werden: 12, 15, 18, 20, 25. Bei fünf Werten ist der Median der dritte Wert der geordneten Reihe, also 18. Der Median steigt damit von 15 auf 18.",
     "options": [
       "Der Median bleibt 15.",
       "Der Median wird 16,5.",

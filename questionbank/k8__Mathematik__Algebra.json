@@ -25,26 +25,26 @@
   },
   {
     "correct": 2,
-    "explanation": "Es handelt sich um die 1. binomische Formel (a+b)^2 = a^2 + 2ab + b^2. Hier ist a = 3a und b = 4b. Also: (3a)^2 + 2 * (3a) * (4b) + (4b)^2 = 9a^2 + 24ab + 16b^2.",
+    "explanation": "Nach der 1. binomischen Formel (u + v)² = u² + 2uv + v² mit u = 3a und v = 4b gilt: (3a)² + 2 · 3a · 4b + (4b)² = 9a² + 24ab + 16b².",
     "options": [
-      "9a^2 + 16b^2",
-      "9a^2 + 12ab + 16b^2",
-      "9a^2 + 24ab + 16b^2",
-      "3a^2 + 24ab + 4b^2"
+      "9a² + 16b²",
+      "9a² + 12ab + 16b²",
+      "9a² + 24ab + 16b²",
+      "3a² + 24ab + 4b²"
     ],
-    "question": "Multipliziere den Term (3a + 4b)^2 aus.",
+    "question": "Multipliziere den Term (3a + 4b)² aus.",
     "topic": "Binomische Formeln"
   },
   {
     "correct": 3,
-    "explanation": "Man sucht den größten gemeinsamen Faktor von 12x^2y und 18xy^2. Dieser ist 6xy. Dann dividiert man jeden Term durch diesen Faktor: 12x^2y / (6xy) = 2x und -18xy^2 / (6xy) = -3y. Somit ergibt sich 6xy(2x - 3y). Der Ausdruck 6x(2xy - 3y^2) ist zwar auch gleich dem Ausgangsterm, aber nicht vollständig faktorisiert, weil in der Klammer noch y ausgeklammert werden kann.",
+    "explanation": "Der größte gemeinsame Faktor von 12x²y und 18xy² ist 6xy. Man teilt jeden Summanden durch 6xy: 12x²y : 6xy = 2x und -18xy² : 6xy = -3y. Also gilt 12x²y - 18xy² = 6xy(2x - 3y). Der Ausdruck 6x(2xy - 3y²) hat zwar denselben Wert, ist aber nicht vollständig faktorisiert, weil in der Klammer noch y ausgeklammert werden kann.",
     "options": [
       "6xy(2x + 3y)",
       "6xy(12x - 18y)",
-      "6x(2xy - 3y^2)",
+      "6x(2xy - 3y²)",
       "6xy(2x - 3y)"
     ],
-    "question": "Faktorisiere den Term 12x^2y - 18xy^2 vollständig.",
+    "question": "Faktorisiere den Term 12x²y - 18xy² vollständig.",
     "topic": "Ausklammern/Faktorisieren"
   },
   {
@@ -73,19 +73,19 @@
   },
   {
     "correct": 2,
-    "explanation": "Man sucht die größte Quadratzahl, die ein Faktor von 48 ist. 48 kann als 16 * 3 geschrieben werden. Also ist Wurzel(48) = Wurzel(16 * 3) = Wurzel(16) * Wurzel(3) = 4 * Wurzel(3).",
+    "explanation": "Man zerlegt 48 so, dass ein Faktor eine Quadratzahl ist: 48 = 16 · 3. Damit gilt √48 = √16 · √3 = 4 · √3.",
     "options": [
-      "16 Wurzel(3)",
-      "3 Wurzel(16)",
-      "4 Wurzel(3)",
-      "6 Wurzel(8)"
+      "16 · √3",
+      "3 · √16",
+      "4 · √3",
+      "6 · √8"
     ],
-    "question": "Vereinfache den Wurzelterm: Wurzel(48)",
+    "question": "Vereinfache den Wurzelterm: √48",
     "topic": "Wurzelterme vereinfachen"
   },
   {
     "correct": 3,
-    "explanation": "Um den Funktionswert für x = 4 zu bestimmen, setzt man 4 in die Funktion ein: f(4) = 2 * 4 - 5 = 8 - 5 = 3.",
+    "explanation": "Um den Funktionswert für x = 4 zu bestimmen, setzt man 4 in die Funktion ein: f(4) = 2 · 4 - 5 = 8 - 5 = 3.",
     "options": [
       "f(4) = 1",
       "f(4) = -1",
@@ -97,14 +97,14 @@
   },
   {
     "correct": 0,
-    "explanation": "Um den Term zu vereinfachen, lösen wir zuerst die Klammer auf. Da ein Minuszeichen vor der Klammer steht, ändern sich die Vorzeichen der Terme in der Klammer: 5x + 3y - 2x + y. Nun fassen wir gleiche Variablen zusammen: (5x - 2x) + (3y + y) = 3x + 4y.",
+    "explanation": "Vor der Klammer steht ein Minuszeichen, deshalb drehen sich beim Auflösen beide Vorzeichen in der Klammer um: 5a + 2b - 3a + 4b. Nun fasst man zusammen: (5a - 3a) + (2b + 4b) = 2a + 6b.",
     "options": [
-      "3x + 4y",
-      "3x + 2y",
-      "7x + 2y",
-      "7x + 4y"
+      "2a + 6b",
+      "2a - 2b",
+      "8a - 2b",
+      "8a + 6b"
     ],
-    "question": "Vereinfache den Term: 5x + 3y - (2x - y)",
+    "question": "Vereinfache den Term: 5a + 2b - (3a - 4b)",
     "topic": "Terme vereinfachen"
   },
   {
@@ -121,43 +121,43 @@
   },
   {
     "correct": 2,
-    "explanation": "Wir multiplizieren zuerst beide Seiten mit 2: 2A = h * (a + b). Da h die Höhe des Trapezes ist, gilt h > 0, wir dürfen also durch h teilen: 2A / h = a + b. Zum Schluss subtrahieren wir b: a = (2A / h) - b.",
+    "explanation": "Wir multiplizieren zuerst beide Seiten mit 2: 2A = h · (a + b). Da h die Höhe des Trapezes ist, gilt h > 0, wir dürfen also durch h teilen: 2A / h = a + b. Zum Schluss subtrahieren wir b: a = (2A / h) - b.",
     "options": [
-      "a = 2A * h - b",
+      "a = (2A · h) - b",
       "a = (A / (2h)) - b",
       "a = (2A / h) - b",
       "a = 2A / (h - b)"
     ],
-    "question": "Die Formel für den Flächeninhalt eines Trapezes lautet A = 0,5 * h * (a + b). Stelle diese Formel nach der Seite 'a' um.",
+    "question": "Die Formel für den Flächeninhalt eines Trapezes lautet A = 0,5 · h · (a + b). Stelle diese Formel nach der Seite 'a' um.",
     "topic": "Formeln umstellen"
   },
   {
     "correct": 3,
-    "explanation": "Setze die gegebenen Werte in den Term ein: 2 * (3^2) - 3 * 4. Berechne zuerst die Potenz: 3^2 = 9. Dann multipliziere: 2 * 9 - 3 * 4 = 18 - 12. Subtrahiere zum Schluss: 18 - 12 = 6.",
+    "explanation": "Setze die gegebenen Werte in den Term ein: 2 · 3² - 3 · 4. Berechne zuerst die Potenz: 3² = 9. Dann multipliziere: 2 · 9 = 18 und 3 · 4 = 12. Subtrahiere zum Schluss: 18 - 12 = 6.",
     "options": [
       "12",
       "18",
       "30",
       "6"
     ],
-    "question": "Berechne den Wert des Terms 2x^2 - 3y für x = 3 und y = 4.",
+    "question": "Berechne den Wert des Terms 2x² - 3y für x = 3 und y = 4.",
     "topic": "Termwerte berechnen"
   },
   {
     "correct": 0,
-    "explanation": "Dies ist die zweite binomische Formel (x - y)^2 = x^2 - 2xy + y^2. Hier ist x = 4a und y = 3b. Also: (4a)^2 - 2 * (4a) * (3b) + (3b)^2 = 16a^2 - 24ab + 9b^2.",
+    "explanation": "Nach der 2. binomischen Formel (u - v)² = u² - 2uv + v² mit u = 4a und v = 3b gilt: (4a)² - 2 · 4a · 3b + (3b)² = 16a² - 24ab + 9b².",
     "options": [
-      "16a^2 - 24ab + 9b^2",
-      "16a^2 - 9b^2",
-      "16a^2 + 24ab + 9b^2",
-      "16a^2 - 12ab + 9b^2"
+      "16a² - 24ab + 9b²",
+      "16a² - 9b²",
+      "16a² + 24ab + 9b²",
+      "16a² - 12ab + 9b²"
     ],
-    "question": "Vereinfache den Ausdruck (4a - 3b)^2 mithilfe einer binomischen Formel.",
+    "question": "Vereinfache den Ausdruck (4a - 3b)² mithilfe einer binomischen Formel.",
     "topic": "Binomische Formeln"
   },
   {
     "correct": 1,
-    "explanation": "Um die Brüche zu eliminieren, multiplizieren wir die gesamte Gleichung mit dem kleinsten gemeinsamen Vielfachen der Nenner (3 und 2), das ist 6: 6 * (x/3) + 6 * 1 = 6 * (x/2) - 6 * 1. Das ergibt: 2x + 6 = 3x - 6. Ziehe 2x von beiden Seiten ab: 6 = x - 6. Addiere 6 auf beiden Seiten: 12 = x.",
+    "explanation": "Um die Brüche zu eliminieren, multiplizieren wir die gesamte Gleichung mit dem kleinsten gemeinsamen Vielfachen der Nenner (3 und 2), das ist 6: 6 · (x/3) + 6 · 1 = 6 · (x/2) - 6 · 1. Das ergibt: 2x + 6 = 3x - 6. Ziehe 2x von beiden Seiten ab: 6 = x - 6. Addiere 6 auf beiden Seiten: 12 = x.",
     "options": [
       "x = 6",
       "x = 12",
@@ -169,7 +169,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Die Steigung m einer linearen Funktion zwischen zwei Punkten (x1 | y1) und (x2 | y2) berechnet sich mit der Formel m = (y2 - y1) / (x2 - x1). Hier ist (x1 | y1) = (2 | 7) und (x2 | y2) = (5 | 16). Also: m = (16 - 7) / (5 - 2) = 9 / 3 = 3.",
+    "explanation": "Die Steigung m einer linearen Funktion zwischen zwei Punkten (x₁ | y₁) und (x₂ | y₂) berechnet sich mit der Formel m = (y₂ - y₁) / (x₂ - x₁). Hier ist (x₁ | y₁) = (2 | 7) und (x₂ | y₂) = (5 | 16). Also: m = (16 - 7) / (5 - 2) = 9 / 3 = 3.",
     "options": [
       "m = 2",
       "m = 4",
@@ -181,14 +181,14 @@
   },
   {
     "correct": 3,
-    "explanation": "Wende zuerst das Potenzgesetz für die Multiplikation an (gleiche Basis, Exponenten addieren): a^5 * a^3 = a^(5+3) = a^8. Dann wende das Potenzgesetz für die Division an (gleiche Basis, Exponenten subtrahieren): a^8 / a^2 = a^(8-2) = a^6. Die Bedingung a ungleich 0 ist nötig, weil man sonst durch 0 teilen würde.",
+    "explanation": "Bei der Multiplikation von Potenzen mit gleicher Basis addiert man die Exponenten: a⁵ · a³ = a⁸, denn 5 + 3 = 8. Bei der Division subtrahiert man sie: a⁸ : a² = a⁶, denn 8 - 2 = 6. Die Bedingung a ungleich 0 ist nötig, weil man sonst durch 0 teilen würde.",
     "options": [
-      "a^4",
-      "a^8",
-      "a^10",
-      "a^6"
+      "a⁴",
+      "a⁸",
+      "a¹⁰",
+      "a⁶"
     ],
-    "question": "Vereinfache den Ausdruck (a^5 * a^3) / a^2 für a ungleich 0.",
+    "question": "Vereinfache den Ausdruck (a⁵ · a³) / a² für a ungleich 0.",
     "topic": "Potenzgesetze"
   }
 ]
