@@ -13,7 +13,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Beim Übergang in ein optisch dichteres Medium (größerer Brechungsindex) wird Licht zum Lot hin gebrochen, beim Übergang in ein dünneres Medium vom Lot weg. Ursache ist die geänderte Ausbreitungsgeschwindigkeit; die Frequenz bleibt dabei gleich.",
+    "explanation": "Beim Übergang in ein optisch dichteres Medium mit größerem Brechungsindex wird Licht zum Lot hin gebrochen, beim Übergang in ein dünneres Medium vom Lot weg. Ursache ist die geänderte Ausbreitungsgeschwindigkeit an der Grenzfläche.",
     "options": [
       "Reflexion an einer glatten Oberfläche, bei der Einfallswinkel und Ausfallswinkel gleich sind",
       "Richtungsänderung des Lichts beim Übergang zwischen zwei optisch unterschiedlich dichten Medien",
@@ -37,7 +37,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Totalreflexion tritt nur beim Übergang vom optisch dichteren ins dünnere Medium auf; für den Grenzwinkel gilt n₁·sin(α_Grenz) = n₂ mit n₁ > n₂. Anwendungen: Glasfaserkabel, Diamantschliff, Umlenkprisma im Fernglas.",
+    "explanation": "Totalreflexion tritt nur beim Übergang vom optisch dichteren ins dünnere Medium auf, also etwa von Glas in Luft. Unterhalb des Grenzwinkels wird das Licht teils gebrochen, teils reflektiert; oberhalb bleibt es vollständig im dichteren Medium. Anwendung: Umlenkprisma im Fernglas.",
     "options": [
       "Vollständige Absorption an der Grenzfläche, sobald der Einfallswinkel den Grenzwinkel überschreitet",
       "Vollständige Streuung an einer rauen Oberfläche oberhalb des Brewster-Winkels",
@@ -88,8 +88,8 @@
     "explanation": "Die Linsengleichung (Gaußsche Abbildungsgleichung) verknüpft Brennweite f, Gegenstandsweite g und Bildweite b. Sie gilt näherungsweise für dünne Linsen und achsennahe Strahlen; f ist positiv bei Sammel-, negativ bei Streulinsen.",
     "options": [
       "f = g + b, die Brennweite ist gleich der Summe aus Gegenstandsweite und Bildweite",
-      "f = g · b, die Brennweite ist gleich dem Produkt aus Gegenstandsweite und Bildweite",
-      "b = f − g, die Bildweite ist gleich der Differenz aus Brennweite und Gegenstandsweite",
+      "1/f = 1/g − 1/b, die Kehrwerte werden voneinander abgezogen",
+      "f = g/b, die Brennweite ist der Quotient aus Gegenstands- und Bildweite",
       "1/f = 1/g + 1/b, mit f = Brennweite, g = Gegenstandsweite, b = Bildweite"
     ],
     "question": "Was besagt die Linsengleichung?",
@@ -101,7 +101,7 @@
     "options": [
       "D = 1/f mit f in Metern, Einheit Dioptrie; Sammellinse D > 0, Streulinse D < 0",
       "Die Brennweite in Zentimetern; eine Linse mit 50 cm Brennweite hat die Brechkraft 50",
-      "D = f², das Quadrat der Brennweite in Metern; positive Werte kennzeichnen Sammellinsen",
+      "D = f/2, die halbe Brennweite in Metern; positive Werte kennzeichnen Sammellinsen",
       "D = n − 1, der Brechungsindex des Linsenmaterials vermindert um eins"
     ],
     "question": "Was ist die Brechkraft (Dioptrie) einer Linse?",
@@ -109,7 +109,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Interferenz ist die Superposition zweier Wellen: bei Phasendifferenz 0 verstärken sie sich (konstruktiv), bei π löschen sie sich aus (destruktiv). Voraussetzung für ein stabiles Muster sind kohärente Quellen mit gleicher Frequenz und fester Phasenbeziehung.",
+    "explanation": "Interferenz ist die Superposition zweier Wellen: Bei Phasengleichheit verstärken sie sich (konstruktiv), bei Gegenphase löschen sie sich aus (destruktiv). Ein ortsfestes Muster entsteht nur, wenn die Quellen kohärent sind.",
     "options": [
       "Absorption von Licht in einem Medium, wobei Strahlungsenergie in Wärme übergeht",
       "Überlagerung zweier Wellen: bei Phasengleichheit Verstärkung, bei Gegenphase Auslöschung",
@@ -145,12 +145,12 @@
   },
   {
     "correct": 0,
-    "explanation": "Nur Transversalwellen lassen sich polarisieren; natürliches Licht ist unpolarisiert, weil alle Schwingungsrichtungen gleich häufig vorkommen. Polarisationsfilter lassen nur eine Schwingungsrichtung durch. Anwendung: Sonnenbrillen, LC-Displays, 3D-Kino.",
+    "explanation": "Bei linear polarisiertem Licht schwingt das elektrische Feld nur in einer Ebene, während natürliches Licht alle Schwingungsrichtungen gleich häufig enthält. Ein Polarisationsfilter lässt nur eine Richtung durch, zwei gekreuzte Filter sperren das Licht ganz. Anwendung: Sonnenbrillen, LC-Displays, 3D-Kino.",
     "options": [
-      "Transversalwellen wie Licht schwingen bei linearer Polarisation nur in einer Ebene",
-      "Licht ist eine Longitudinalwelle und hat deshalb keine ausgezeichnete Schwingungsrichtung",
-      "Longitudinalwellen wie Schall lassen sich durch Filter auf eine Schwingungsrichtung begrenzen",
-      "Aufspaltung weißen Lichts durch ein Prisma in die sichtbaren Spektralfarben"
+      "Die Beschränkung der Schwingungsrichtung der Welle auf eine einzige Ebene",
+      "Die Beschränkung des Lichts auf eine einzige Wellenlänge durch ein Farbfilter",
+      "Die Bündelung aller Strahlen auf einen gemeinsamen Punkt hinter dem Filter",
+      "Die Aufspaltung weißen Lichts durch ein Prisma in die sichtbaren Spektralfarben"
     ],
     "question": "Was ist Polarisation von Licht?",
     "topic": "Wellenoptik"
@@ -219,10 +219,10 @@
     "correct": 2,
     "explanation": "Die numerische Apertur NA = n·sin(α) misst Lichtsammel- und Auflösungsvermögen eines Objektivs. Je größer NA, desto feinere Details werden getrennt; Ölimmersionsobjektive (n > 1) treiben NA über 1 hinaus.",
     "options": [
-      "Die Vergrößerung des Objektivs, also Bildgröße geteilt durch Gegenstandsgröße",
-      "Die Brennweite des Objektivs in Millimetern, gemessen ab der Hauptebene",
+      "Die Vergrößerung des Objektivs (Bildgröße geteilt durch Gegenstandsgröße)",
+      "Die Brennweite des Objektivs in Millimetern (gemessen ab der Hauptebene)",
       "NA = n·sin(α) mit α als halbem Öffnungswinkel des Objektivs",
-      "Die Brechkraft des Objektivs in Dioptrien, der Kehrwert der Brennweite in Metern"
+      "Die Brechkraft des Objektivs in Dioptrien (Kehrwert der Brennweite in Metern)"
     ],
     "question": "Was ist die numerische Apertur eines optischen Instruments?",
     "topic": "Optik"
@@ -243,7 +243,7 @@
     "correct": 0,
     "explanation": "Elektromagnetische Wellen brauchen kein Medium und laufen im Vakuum mit c = 3·10⁸ m/s. Das Spektrum reicht von Radiowellen (MHz) über Infrarot, sichtbares Licht und UV bis zu Röntgen- und Gammastrahlung (THz–PHz).",
     "options": [
-      "Gekoppelte elektrische und magnetische Felder, die sich im Vakuum mit c = 3·10⁸ m/s ausbreiten",
+      "Gekoppelte elektrische und magnetische Felder, die kein Trägermedium brauchen",
       "Schallwellen, die sich im Vakuum mit Lichtgeschwindigkeit als Druckschwankungen ausbreiten",
       "Mechanische Druckwellen in einem elastischen Medium, die Energie ohne Felder tragen",
       "Elektrischer Strom in einem Leiter, der ein Magnetfeld um den Draht aufbaut"
@@ -397,74 +397,74 @@
   },
   {
     "correct": 1,
-    "explanation": "c₀ ≈ 3·10⁸ m/s ist die obere Grenze; in Materie gilt c = c₀/n. In Glas mit n = 1,5 sind das 2·10⁸ m/s. Die Frequenz bleibt beim Eintritt gleich, die Wellenlänge wird kürzer – deshalb wird Licht im dichteren Medium gebrochen.",
+    "explanation": "Die Frequenz wird von der Lichtquelle vorgegeben und bleibt beim Eintritt erhalten. Weil sich das Licht im Glas langsamer ausbreitet, muss nach v = λ·f die Wellenlänge im selben Verhältnis schrumpfen. Genau darauf beruht die Brechung an der Grenzfläche.",
     "options": [
-      "Kein Unterschied: Licht läuft überall mit c₀, da Photonen keine Ruhemasse haben",
-      "Im Vakuum gilt c₀ ≈ 3·10⁸ m/s, in Materie ist Licht auf c = c₀/n verlangsamt",
-      "In Materie ist Licht schneller, weil Atome es durch stimulierte Emission antreiben",
-      "Die Geschwindigkeit bleibt c₀, dafür ändert sich beim Eintritt die Frequenz"
+      "Die Frequenz sinkt, während die Wellenlänge unverändert bleibt",
+      "Die Wellenlänge wird kürzer, die Frequenz bleibt unverändert",
+      "Frequenz und Wellenlänge bleiben beide völlig unverändert",
+      "Beide Größen wachsen, weil das Licht im Glas Energie aufnimmt"
     ],
-    "question": "Was ist der Unterschied zwischen Lichtgeschwindigkeit im Vakuum und in Materie?",
+    "question": "Was ändert sich, wenn Licht aus Luft in Glas übertritt?",
     "topic": "Optik"
   },
   {
     "correct": 2,
-    "explanation": "Brechungsgesetz: n₁·sin(α₁) = n₂·sin(α₂), gemessen zur Normalen. n ist der Brechungsindex (Vakuum 1, Wasser 1,33, Glas ca. 1,5). Beim Übergang ins optisch dichtere Medium bricht der Strahl zum Lot hin. Grundlage für Linsen, Prisma und Glasfaser.",
+    "explanation": "Konstruktive Interferenz tritt auf, wenn der Gangunterschied benachbarter Teilbündel ein ganzzahliges Vielfaches der Wellenlänge beträgt. Je kleiner die Gitterkonstante, desto weiter liegen die Maxima auseinander; aus Winkel und Ordnung lässt sich die Wellenlänge bestimmen.",
     "options": [
-      "Ein Reflexionsgesetz: n₁·cos(α₁) = n₂·cos(α₂) für den zurückgeworfenen Strahl",
-      "Ein Beugungsgesetz: n₁·tan(α₁) = n₂·tan(α₂) für das optische Gitter",
-      "n₁·sin(α₁) = n₂·sin(α₂) mit den Winkeln zur Normalen an der Grenzfläche",
-      "Ein Interferenzgesetz: n₁·α₁ = n₂·α₂ für überlagerte Wellen im Medium"
+      "d·cos(α) = k·λ, mit d als Gitterkonstante und k als Ordnung",
+      "d/λ = k·sin(α), mit d als Gitterkonstante und k als Ordnung",
+      "d·sin(α) = k·λ, mit d als Gitterkonstante und k als Ordnung",
+      "d·sin(α) = λ/k, mit d als Gitterkonstante und k als Ordnung"
     ],
-    "question": "Was ist das Brechungsgesetz (Snellius)?",
-    "topic": "Optik"
+    "question": "Wie lautet die Gittergleichung für die Maxima am optischen Gitter?",
+    "topic": "Wellenoptik"
   },
   {
     "correct": 3,
-    "explanation": "Die Konvexlinse (Sammellinse) hat einen reellen Brennpunkt und vergrößert, wenn der Gegenstand innerhalb der Brennweite liegt (Lupe). Die Konkavlinse (Zerstreuungslinse) hat einen virtuellen Brennpunkt und verkleinert immer. Kurzsichtige brauchen Konkav-, Weitsichtige Konvexlinsen.",
+    "explanation": "Achsenparallele Strahlen laufen nach der Reflexion am Konkavspiegel durch den Brennpunkt; dieser liegt auf halbem Weg zum Krümmungsmittelpunkt. Genutzt wird das in Scheinwerfern, Spiegelteleskopen und Schminkspiegeln. Der Wölbspiegel wirkt umgekehrt zerstreuend.",
     "options": [
-      "Die Tönung des Materials: Konvexlinsen bestehen aus blauem Kronglas, Konkavlinsen aus rotem Flintglas",
-      "Der Außendurchmesser: Konvexlinsen sind bei gleicher Stärke stets größer als Konkavlinsen",
-      "Das Material: Konvexlinsen aus Kronglas mit n = 1,52, Konkavlinsen nur aus Flintglas mit n = 1,70",
-      "Konvexlinsen sind in der Mitte dicker und bündeln, Konkavlinsen dünner und zerstreuen"
+      "Er streut es gleichmäßig in alle Richtungen des Halbraums",
+      "Er lenkt es auseinander, der Brennpunkt liegt scheinbar dahinter",
+      "Er wirft es unverändert parallel in die Einfallsrichtung zurück",
+      "Er bündelt es in einem Brennpunkt vor der Spiegelfläche"
     ],
-    "question": "Was unterscheidet Konvex- von Konkavlinse?",
+    "question": "Was macht ein Hohlspiegel mit achsenparallel einfallendem Licht?",
     "topic": "Optik"
   },
   {
     "correct": 0,
-    "explanation": "Interferenz belegt den Wellencharakter des Lichts; Young erzeugte 1801 im Doppelspaltversuch helle und dunkle Streifen. Auch das Schillern von CDs und die Farben von Seifenblasen entstehen durch Interferenz an dünnen Schichten.",
+    "explanation": "Bildschirme mischen Licht additiv aus Rot, Grün und Blau; überlagern sich alle drei mit gleicher Intensität, entsteht Weiß. Beim Drucken wird dagegen subtraktiv aus Cyan, Magenta und Gelb gemischt, weil dort Farbanteile aus dem weißen Licht herausgefiltert werden.",
     "options": [
-      "Überlagerung zweier Lichtwellen: Berg auf Berg ergibt Helligkeit, Berg auf Tal Dunkelheit",
-      "Reflexion an einer halbdurchlässigen Schicht, die einen Teil des Lichts durchlässt",
-      "Brechung beim Übergang ins optisch dichtere Medium, der Strahl kippt zum Lot hin",
-      "Emission von Photonen durch angeregte Atome beim Rückfall in den Grundzustand"
+      "Rot, Grün und Blau; gemeinsam ergeben sie weißes Licht",
+      "Cyan, Magenta und Gelb; gemeinsam ergeben sie weißes Licht",
+      "Rot, Gelb und Blau; gemeinsam ergeben sie weißes Licht",
+      "Rot, Grün und Orange; gemeinsam ergeben sie weißes Licht"
     ],
-    "question": "Was ist Lichtinterferenz?",
+    "question": "Welche Grundfarben verwendet die additive Farbmischung?",
     "topic": "Optik"
   },
   {
     "correct": 1,
-    "explanation": "Linsenformel 1/f = 1/g + 1/b, Vergrößerung V = b/g. f ist positiv bei der Sammellinse, negativ bei der Zerstreuungslinse. Beispiel: f = 10 cm und g = 30 cm ergeben b = 15 cm und V = 0,5, das Bild ist also verkleinert. Ein reelles Bild entsteht nur für g > f.",
+    "explanation": "Bewegt sich eine Lichtquelle vom Beobachter fort, verschiebt der Doppler-Effekt das empfangene Licht zu größeren Wellenlängen, also ins Rote. Hubble erkannte 1929, dass die Rotverschiebung mit der Entfernung wächst – der Beleg für die Expansion des Universums.",
     "options": [
-      "Die Lichtgeschwindigkeit im Linsenglas: c = c₀/n, abhängig vom Brechungsindex",
-      "1/f = 1/g + 1/b mit Brennweite f, Gegenstandsweite g und Bildweite b",
-      "Den Brechungsindex des Glases: n = sin(α₁)/sin(α₂)",
-      "Die Wellenlänge im Glas: λ_Glas = λ_Luft/n, abhängig vom Brechungsindex"
+      "Das Licht altert auf dem langen Weg und wird dabei röter",
+      "Die Wellenlänge wächst, weil sich die Quelle von uns entfernt",
+      "Rotes Licht durchdringt den Staub im All als einziges ungehindert",
+      "Die Galaxien senden von sich aus überwiegend rotes Licht aus"
     ],
-    "question": "Was beschreibt die Linsenformel?",
+    "question": "Wodurch entsteht die Rotverschiebung im Licht ferner Galaxien?",
     "topic": "Optik"
   },
   {
     "correct": 2,
-    "explanation": "Der Photoeffekt wurde von Hertz entdeckt und 1905 von Einstein mit Lichtquanten erklärt: E_Photon = h·f. Übersteigt diese Energie die Austrittsarbeit, wird ein Elektron emittiert; entscheidend ist die Frequenz, nicht die Helligkeit. Anwendung: Solarzellen und Fotozellen. Einstein erhielt dafür (nicht für die Relativitätstheorie) den Nobelpreis.",
+    "explanation": "Einstein deutete den Effekt 1905 mit Lichtquanten: E_kin = h·f − W_A. Eine höhere Frequenz bedeutet energiereichere Photonen und damit schnellere Elektronen; mehr Helligkeit liefert dagegen nur mehr Elektronen, nicht schnellere. Dafür erhielt Einstein 1921 den Nobelpreis.",
     "options": [
-      "Lichtaussendung durch stark erhitztes Metall, deren Farbe von der Temperatur abhängt",
-      "Beugung des Lichts am schmalen Spalt mit einem Muster auf dem Schirm",
-      "Herauslösen von Elektronen aus einer Metalloberfläche durch einfallendes Licht",
-      "Brechung an der Glasoberfläche, bei der das Licht seine Richtung ändert"
+      "Von der Helligkeit des Lichts, nicht von seiner Frequenz",
+      "Von der Bestrahlungsdauer, mit der Zeit steigt sie stetig an",
+      "Von der Lichtfrequenz, vermindert um die Austrittsarbeit",
+      "Vom Einfallswinkel des Lichts auf die Metalloberfläche"
     ],
-    "question": "Was ist der Photoelektrische Effekt?",
+    "question": "Wovon hängt beim Photoeffekt die Energie der ausgelösten Elektronen ab?",
     "topic": "Optik"
   }
 ]

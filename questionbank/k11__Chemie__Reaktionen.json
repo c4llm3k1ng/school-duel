@@ -37,7 +37,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Anode (Minuspol): Zn → Zn²⁺ + 2e⁻. Kathode (Pluspol): Cu²⁺ + 2e⁻ → Cu. Es gilt E° = 0,34 V − (−0,76 V) = 1,10 V; die Elektronen fließen im äußeren Leiter von der Anode zur Kathode.",
+    "explanation": "Anode (Minuspol): Zn → Zn²⁺ + 2 e⁻. Kathode (Pluspol): Cu²⁺ + 2 e⁻ → Cu. Die Elektronen fließen im äußeren Leiter vom Zink zum Kupfer, unter Standardbedingungen liegen dabei etwa 1,10 V an. Die Salzbrücke gleicht die entstehenden Ladungsüberschüsse aus und schließt so den Stromkreis.",
     "options": [
       "Eine Zelle, die Flüssigkeiten durch Stromfluss gleichmäßig erwärmt",
       "Ein elektrochemisches Bad zur elektrolytischen Abscheidung von Metallen",
@@ -49,7 +49,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Bei der Elektrolyse ist die Anode der Pluspol (Oxidation) und die Kathode der Minuspol (Reduktion). Anwendungen: Aluminiumherstellung, Galvanisieren, Chlor-Alkali-Elektrolyse.",
+    "explanation": "Bei der Elektrolyse zwingt eine äußere Stromquelle eine Redoxreaktion, die von selbst nicht abliefe; dafür muss elektrische Energie zugeführt werden. Die angelegte Spannung muss dabei mindestens die Zersetzungsspannung erreichen. Technisch steckt das Verfahren hinter der Aluminiumherstellung, dem Galvanisieren und der Chloralkali-Elektrolyse.",
     "options": [
       "Ein Vorgang, bei dem angelegter Strom eine nicht freiwillige Redoxreaktion erzwingt",
       "Eine freiwillig ablaufende Redoxreaktion, die ohne äußere Stromquelle auskommt",
@@ -61,7 +61,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Die Standard-Wasserstoffelektrode (25 °C, 1 mol/L, 1 bar) hat definitionsgemäß E° = 0 V. Aus den Tabellenwerten folgt die Zellspannung als E°_Zelle = E°_Kathode − E°_Anode.",
+    "explanation": "Als Bezugspunkt dient die Standard-Wasserstoffelektrode (25 °C, 1 mol/L, 1 bar), der man definitionsgemäß E° = 0 V zuweist. Jede andere Halbzelle wird gegen sie vermessen. Ein negatives Vorzeichen kennzeichnet ein unedles Redoxpaar, das leicht Elektronen abgibt, ein positives ein edles, das Elektronen aufnimmt.",
     "options": [
       "Die Gesamtspannung einer galvanischen Zelle aus zwei Halbzellen unter Standardbedingungen",
       "Die Spannung einer Halbzelle, gemessen gegen die Standard-Wasserstoffelektrode",
@@ -73,7 +73,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Oben stehen starke Reduktionsmittel mit negativem E° (Li, K, Na), unten starke Oxidationsmittel mit positivem E° (F₂, Cl₂, Au³⁺). Aus der Reihenfolge lässt sich vorhersagen, welche Redoxreaktion freiwillig abläuft.",
+    "explanation": "An dem einen Ende der Reihe stehen starke Reduktionsmittel mit stark negativem E° wie Lithium, Kalium und Natrium, am anderen starke Oxidationsmittel mit positivem E° wie F₂, Cl₂ und Au³⁺. Aus der Reihenfolge lässt sich ablesen, welche Redoxreaktion freiwillig abläuft: Das edlere Paar nimmt die Elektronen auf.",
     "options": [
       "Die Anordnung aller chemischen Elemente nach steigender relativer Atommasse im Periodensystem",
       "Eine Liste der Ionenradien aller Elemente, nach Hauptgruppen des Periodensystems geordnet",
@@ -109,11 +109,11 @@
   },
   {
     "correct": 1,
-    "explanation": "Brønsted 1923: HCl + H₂O → Cl⁻ + H₃O⁺; HCl gibt das Proton ab, Wasser nimmt es auf. Wasser kann beide Rollen einnehmen und ist damit ein Ampholyt.",
+    "explanation": "Brønsted 1923: HCl + H₂O → Cl⁻ + H₃O⁺; die Salzsäure gibt das Proton ab, das Wasser nimmt es auf. Ein Protonenübergang braucht immer zwei Partner, eine Säure allein kann kein Proton abgeben. Anders als bei älteren Definitionen ist dafür kein Sauerstoff und keine Hydroxidgruppe nötig.",
     "options": [
       "Säure gibt OH⁻ ab, Base nimmt OH⁻ auf, wie es Arrhenius beschrieb",
-      "Säure gibt H⁺ ab (Protonendonator), Base nimmt H⁺ auf (Protonenakzeptor)",
-      "Säure nimmt Elektronenpaare auf, Base gibt Elektronenpaare ab (nach Lewis)",
+      "Säure gibt H⁺ ab als Protonendonator, Base nimmt H⁺ auf als Akzeptor",
+      "Säure nimmt Elektronenpaare auf, Base gibt Elektronenpaare ab, wie bei Lewis",
       "Base gibt Elektronen ab, Säure nimmt Elektronen auf, also Redoxverhalten"
     ],
     "question": "Was ist die Säure-Base-Theorie nach Brønsted?",
@@ -133,7 +133,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Die Skala reicht von 0 (stark sauer) über 7 (neutral) bis 14 (stark basisch). In neutralem Wasser bei 25 °C ist [H₃O⁺] = 10⁻⁷ mol/L, also pH = 7.",
+    "explanation": "Der pH-Wert ist der negative dekadische Logarithmus der Oxonium-Konzentration. In neutralem Wasser ist [H₃O⁺] = 10⁻⁷ mol/L bei 25 °C, also pH = 7; kleinere Werte stehen für sauer, größere für basisch. Die übliche Skala von 0 bis 14 ist nur der Alltagsbereich: Sehr konzentrierte Säuren und Laugen erreichen auch Werte unter 0 und über 14.",
     "options": [
       "Die molare Konzentration der Hydroxid-Ionen in wässriger Lösung",
       "Die Säurekonstante K_s als Maß für den Dissoziationsgrad einer Säure HA",
@@ -270,7 +270,7 @@
       "Die Spannung ist dem Widerstand proportional, wie im Ohmschen Gesetz",
       "Die Energie eines Körpers ist Masse mal Lichtgeschwindigkeit hoch 2",
       "Die abgeschiedene Stoffmenge ist proportional zur geflossenen Ladung Q",
-      "Druck mal Volumen ist bei konstanter Temperatur konstant (Boyle)"
+      "Druck mal Volumen ist nach Boyle bei konstanter Temperatur konstant"
     ],
     "question": "Was ist das Faradaysche Gesetz der Elektrolyse?",
     "topic": "Elektrolyse"
@@ -397,15 +397,15 @@
   },
   {
     "correct": 1,
-    "explanation": "An der Kathode wird Wasser statt Na⁺ reduziert (2H₂O + 2e⁻ → H₂ + 2OH⁻), da sich Natrium aus Wasser nicht abscheiden lässt. An der Anode wird bei hoher Chlorid-Konzentration Cl⁻ zu Cl₂ oxidiert.",
+    "explanation": "Für eine Halbzelle gilt bei 25 °C E = E° + (0,059 V / z) · lg(c(Ox)/c(Red)). Verdünnt man die Metall-Ionen einer Ein-Elektronen-Halbzelle auf ein Zehntel, sinkt ihr Potenzial also um 0,059 V. Unter Standardbedingungen ist der Quotient 1, der Logarithmus wird null und es bleibt E = E°. Deshalb ändert sich die Spannung einer Batterie im Betrieb.",
     "options": [
-      "Kathode: Natrium; Anode: Chlor, das Metall scheidet sich ab",
-      "Kathode: Wasserstoff und Hydroxid-Ionen; Anode: Chlorgas",
-      "Kathode: Natrium; Anode: Sauerstoff statt Chlorgas",
-      "An beiden Elektroden entsteht direkt Natronlauge"
+      "Die Zahl der Elektronen, die pro Formelumsatz in einer Zelle übertragen werden",
+      "Die Abhängigkeit des Elektrodenpotenzials von der Konzentration der Ionen",
+      "Die Wärmemenge, die bei einer Redoxreaktion insgesamt frei wird",
+      "Die Geschwindigkeit, mit der sich das Gleichgewicht einer Zelle einstellt"
     ],
-    "question": "Welche Produkte entstehen an Kathode und Anode bei der Elektrolyse wässriger NaCl-Lösung?",
-    "topic": "Elektrolyse"
+    "question": "Was beschreibt die Nernst-Gleichung?",
+    "topic": "Elektrochemische Spannungsreihe"
   },
   {
     "correct": 2,
@@ -433,7 +433,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Salz aus schwacher Säure und starker Base, z. B. CH₃COONa: CH₃COO⁻ + H₂O → CH₃COOH + OH⁻, die Lösung reagiert alkalisch. Umgekehrt reagiert NH₄Cl aus starker Säure und schwacher Base sauer.",
+    "explanation": "Salz aus schwacher Säure und starker Base, zum Beispiel Natriumacetat: CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻, die Lösung reagiert alkalisch. Umgekehrt reagiert Ammoniumchlorid aus starker Säure und schwacher Base sauer. Salz aus starker Säure und starker Base wie NaCl lässt den pH-Wert dagegen unverändert.",
     "options": [
       "Reaktion von Salz-Ionen mit Wasser, die den pH-Wert verschiebt",
       "Das reine Lösen von Salz in Wasser ohne jede chemische Reaktion",

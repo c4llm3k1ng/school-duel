@@ -87,10 +87,10 @@
     "correct": 3,
     "explanation": "Arbeit W = F·s·cosα (wenn α = 0°: W = F·s). Einheit: Joule (1 J = 1 N·m).",
     "options": [
-      "W = m · v – Masse mal Geschwindigkeit des Körpers",
-      "W = F / s – Kraft dividiert durch den zurückgelegten Weg",
-      "W = m · a · v – Masse mal Beschleunigung mal Geschwindigkeit",
-      "W = F · s · cos(α) – Kraft mal Weg in Kraftrichtung"
+      "W = F · t – Kraft mal Zeitdauer (Einheit Newtonsekunde)",
+      "W = F / s – Kraft geteilt durch den Weg (Einheit Newton je Meter)",
+      "W = m · a · v – Masse mal Beschleunigung mal Geschwindigkeit (Einheit Watt)",
+      "W = F · s · cos(α) – Kraft mal Weg in Kraftrichtung (Einheit Joule)"
     ],
     "question": "Was ist mechanische Arbeit?",
     "topic": "Arbeit & Energie"
@@ -100,9 +100,9 @@
     "explanation": "Leistung P = W/t = F·v. Einheit: Watt (1 W = 1 J/s).",
     "options": [
       "P = W / t – verrichtete Arbeit pro Zeit",
-      "P = F · a – wirkende Kraft mal Beschleunigung des Körpers",
+      "P = F / a – wirkende Kraft geteilt durch die Beschleunigung",
       "P = W · t – verrichtete Arbeit mal vergangene Zeit",
-      "P = m · v² – Masse mal Geschwindigkeit zum Quadrat"
+      "P = m / v² – Masse geteilt durch Geschwindigkeitsquadrat"
     ],
     "question": "Was ist mechanische Leistung?",
     "topic": "Arbeit & Energie"
@@ -123,10 +123,10 @@
     "correct": 2,
     "explanation": "Im linearen Bereich gilt F = D·x (D = Federkonstante in N/m). Gilt nur bis zur Proportionalitätsgrenze.",
     "options": [
-      "F = m · a – Kraft ist gleich dem Produkt aus Masse und Beschleunigung",
-      "F = k · v – Kraft ist proportional zur Geschwindigkeit des Körpers",
-      "F = D · x – Federkraft ist proportional zur Auslenkung (im elastischen Bereich)",
-      "F = m · g – Kraft ist gleich dem Produkt aus Masse und Erdbeschleunigung"
+      "F = D / x – Federkraft nimmt mit wachsender Auslenkung ab (Kehrwertgesetz)",
+      "F = k · v – Kraft ist proportional zur Geschwindigkeit (Strömungswiderstand)",
+      "F = D · x – Federkraft ist proportional zur Auslenkung (elastischer Bereich)",
+      "F = m · g – Kraft ist gleich Masse mal Erdbeschleunigung (Gewichtskraft)"
     ],
     "question": "Was ist das Hookesche Gesetz?",
     "topic": "Elastizität"
@@ -157,12 +157,12 @@
   },
   {
     "correct": 1,
-    "explanation": "Schallwellen sind Longitudinalwellen (Druckwellen); Lichtwellen und Wasserwellen sind Transversalwellen.",
+    "explanation": "Bei Längswellen schwingen die Teilchen in Ausbreitungsrichtung, bei Querwellen senkrecht dazu. Schall in Luft ist eine Längswelle (Druckwelle), eine Seilwelle eine Querwelle.",
     "options": [
       "Längs- und Querwellen unterscheiden sich nur in der Frequenz, nicht in der Schwingungsrichtung",
-      "Längswellen: Teilchenauslenkung parallel zur Ausbreitung (Schall); Querwellen: senkrecht (Licht)",
+      "Bei Längswellen schwingen die Teilchen parallel zur Ausbreitung, bei Querwellen senkrecht",
       "Längswellen benötigen kein Medium und breiten sich daher auch im Vakuum problemlos aus",
-      "Querwellen können sich in Gasen und Flüssigkeiten nicht ausbreiten, wohl aber in Festkörpern"
+      "Bei Längswellen schwingen die Teilchen senkrecht zur Ausbreitung, bei Querwellen dagegen parallel"
     ],
     "question": "Was ist der Unterschied zwischen Längs- und Querwellen?",
     "topic": "Wellen"
@@ -183,10 +183,10 @@
     "correct": 3,
     "explanation": "Bei Lichtbrechung: sin(α₁)/sin(α₂) = n₂/n₁ = v₁/v₂. Licht bricht zum Lot hin in optisch dichterem Medium.",
     "options": [
-      "Einfallswinkel = Ausfallswinkel – das Licht wird ohne Winkeländerung an der Grenzfläche reflektiert",
-      "Beim Übergang in ein dichteres Medium biegt sich Licht stets vom Einfallslot weg ab",
-      "Die Lichtgeschwindigkeit bleibt beim Übergang in ein anderes Medium vollständig konstant",
-      "n₁·sin(α₁) = n₂·sin(α₂) – Verhältnis der Brechungsindizes bestimmt die Winkeländerung"
+      "Beim Übergang in ein anderes Medium ändert sich die Frequenz (also die Farbe) des Lichts",
+      "Beim Übergang in ein optisch dichteres Medium (größeres n) biegt Licht vom Lot weg",
+      "Die Lichtgeschwindigkeit bleibt in jedem Medium (auch in Glas) unverändert",
+      "n₁·sin(α₁) = n₂·sin(α₂) – das Verhältnis der Brechungsindizes (n) bestimmt die Winkeländerung"
     ],
     "question": "Was ist das Snelliussche Brechungsgesetz?",
     "topic": "Optik"
@@ -196,9 +196,9 @@
     "explanation": "Elementarladung e ≈ 1,6·10⁻¹⁹ C. Gleiche Ladungen stoßen sich ab, ungleiche ziehen sich an.",
     "options": [
       "Eine Grundeigenschaft von Materie; Einheit Coulomb (C); Elektronen tragen −e, Protonen +e",
-      "Eine Form von Energie, die in elektrischen Feldern und geladenen Kondensatoren gespeichert ist",
-      "Eine auf geladene Teilchen in Feldern wirkende Kraft mit der Einheit Newton (N)",
-      "Eine Geschwindigkeit, mit der Elektronen sich durch einen metallischen Leiter bewegen"
+      "Eine Form von Energie, die in geladenen Kondensatoren gespeichert ist; Einheit Joule (J)",
+      "Eine auf geladene Teilchen in Feldern wirkende Kraft; Einheit Newton (N)",
+      "Eine Geschwindigkeit, mit der Elektronen sich durch einen Leiter bewegen; Einheit Meter je Sekunde (m/s)"
     ],
     "question": "Was ist elektrische Ladung?",
     "topic": "Elektrostatik"
@@ -207,10 +207,10 @@
     "correct": 1,
     "explanation": "Coulombgesetz: F = k·q₁q₂/r². Coulombkonstante k ≈ 9·10⁹ N·m²/C².",
     "options": [
-      "F = q·v×B – Kraft auf eine bewegte Ladung im Magnetfeld, senkrecht zu Geschwindigkeit und Feld",
-      "F = k·q₁·q₂/r² – Kraft zwischen Ladungen proportional zu ihrem Produkt, umgekehrt zum Abstandsquadrat",
-      "F = q·E – Kraft auf eine ruhende Ladung im elektrischen Feld, parallel zur Feldrichtung",
-      "F = m·a – Kraft ist gleich dem Produkt aus Masse und Beschleunigung des Körpers"
+      "F = k·q₁·q₂/r – Kraft umgekehrt proportional zum Abstand der Ladungen",
+      "F = k·q₁·q₂/r² – Kraft umgekehrt proportional zum Abstandsquadrat",
+      "F = k·q₁/q₂ · r² – Kraft aus Ladungsverhältnis mal Abstandsquadrat",
+      "F = k·q₁·q₂/r³ – Kraft umgekehrt proportional zur dritten Potenz des Abstands"
     ],
     "question": "Was besagt das Coulombsche Gesetz?",
     "topic": "Elektrostatik"
@@ -219,10 +219,10 @@
     "correct": 2,
     "explanation": "Das elektrische Feld beschreibt, wie stark und in welche Richtung eine Ladung q eine Kraft F erfährt.",
     "options": [
-      "E = U·I – Spannung mal Stromstärke; Einheit Watt (W)",
-      "E = q·v – Ladung mal Geschwindigkeit; Einheit Coulomb·m/s",
-      "E = F/q – Kraft pro Ladungseinheit; Einheit V/m",
-      "E = Q/C – Ladung geteilt durch Kapazität; Einheit Volt (V)"
+      "E = U·d – Spannung mal Plattenabstand; Einheit Volt·Meter (V·m)",
+      "E = q/v – Ladung geteilt durch Geschwindigkeit; Einheit Coulombsekunde je Meter",
+      "E = F/q – Kraft pro Ladungseinheit; Einheit Volt pro Meter (V/m)",
+      "E = Q·r – Ladung mal Abstand; Einheit Coulomb·Meter (C·m)"
     ],
     "question": "Was ist elektrische Feldstärke E?",
     "topic": "Elektrik"
@@ -231,9 +231,9 @@
     "correct": 3,
     "explanation": "Spannung U = W/Q: Arbeit pro verschobener Ladungsmenge. 1 V = 1 J/C.",
     "options": [
-      "U = I·t – Stromstärke mal Zeit; Einheit Ampere·Sekunde",
-      "U = R/I – Widerstand geteilt durch Stromstärke; Einheit Ohm/Ampere",
-      "U = Q·t – Ladungsmenge mal Zeit; Einheit Coulomb·Sekunde",
+      "U = I·t – Stromstärke mal Zeit; Einheit Amperesekunde (A·s)",
+      "U = R/I – Widerstand pro Stromstärke; Einheit Ohm je Ampere (Ω/A)",
+      "U = Q·t – Ladungsmenge mal Zeit; Einheit Coulombsekunde (C·s)",
       "U = W/Q – Energie pro Ladungsmenge; Einheit Volt (V)"
     ],
     "question": "Was ist elektrische Spannung?",
@@ -256,7 +256,7 @@
     "explanation": "U = R·I (bzw. R = U/I). Gilt für ohmsche Widerstände bei konstanter Temperatur.",
     "options": [
       "R = U · I – Widerstand ist Produkt aus Spannung und Strom",
-      "U = R · I – Spannung ist proportional zum Strom",
+      "U = R · I – die Spannung ist dem fließenden Strom proportional",
       "I = U · R – Strom ist Produkt aus Spannung und Widerstand",
       "U = I / R – Spannung ist Strom dividiert durch Widerstand"
     ],
@@ -265,14 +265,14 @@
   },
   {
     "correct": 2,
-    "explanation": "In der Reihenschaltung fließt überall derselbe Strom; Widerstände addieren sich.",
+    "explanation": "In der Reihenschaltung addieren sich die Einzelwiderstände: R_ges = 10 Ω + 20 Ω + 30 Ω = 60 Ω. Durch alle drei fließt derselbe Strom, die Teilspannungen addieren sich zur Gesamtspannung.",
     "options": [
-      "1/R_ges = 1/R₁ + 1/R₂ (Kehrwerte der Widerstände addieren sich)",
-      "R_ges = R₁ · R₂ (Widerstände werden miteinander multipliziert)",
-      "R_ges = R₁ + R₂ + R₃ (Widerstände addieren sich direkt)",
-      "R_ges = R₁ / R₂ (erster Widerstand wird durch den zweiten dividiert)"
+      "5,5 Ω",
+      "20 Ω",
+      "60 Ω",
+      "600 Ω"
     ],
-    "question": "Wie berechnet sich der Gesamtwiderstand in einer Reihenschaltung?",
+    "question": "Drei Widerstände mit 10 Ω, 20 Ω und 30 Ω liegen in Reihe. Wie groß ist der Gesamtwiderstand?",
     "topic": "Schaltungen"
   },
   {
@@ -292,9 +292,9 @@
     "explanation": "P = U·I. Mit Ohm'schem Gesetz auch P = I²R oder P = U²/R.",
     "options": [
       "P = U · I – Spannung mal Stromstärke; Einheit Watt (W)",
-      "P = U / I – Spannung dividiert durch Stromstärke; Einheit Volt/Ampere",
-      "P = R · I – Widerstand mal Stromstärke; Einheit Ohm·Ampere",
-      "P = U + I – Summe aus Spannung und Stromstärke; Einheit Volt+Ampere"
+      "P = U / I – Spannung durch Stromstärke; Einheit Volt je Ampere (V/A)",
+      "P = R · I – Widerstand mal Stromstärke; Einheit Ohm·Ampere (Ω·A)",
+      "P = U + I – Summe aus Spannung und Stromstärke; Einheit Volt plus Ampere (V+A)"
     ],
     "question": "Was ist elektrische Leistung?",
     "topic": "Elektrik"
@@ -304,8 +304,8 @@
     "explanation": "F = qv×B: Lorentzkraft ist senkrecht zu Geschwindigkeit und Magnetfeld; Richtung per Rechte-Hand-Regel.",
     "options": [
       "Die elektrostatische Anziehungskraft zwischen zwei entgegengesetzt geladenen ruhenden Körpern",
-      "Die Kraft auf eine bewegte Ladung in einem Magnetfeld: F = q · v × B",
-      "Die Gewichtskraft, mit der ein Körper im Schwerefeld senkrecht nach unten gezogen wird",
+      "Die Kraft auf eine bewegte Ladung in einem Magnetfeld, senkrecht zu Bahn und Feld",
+      "Die Gewichtskraft, mit der ein Körper nach unten gezogen wird",
       "Die anziehende Kraft zwischen einem Permanentmagneten und einem ferromagnetischen Material"
     ],
     "question": "Was ist die Lorentzkraft?",
@@ -316,8 +316,8 @@
     "explanation": "Elektromagnetische Induktion (Faraday 1831): ändert sich der magnetische Fluss, entsteht eine induzierte Spannung.",
     "options": [
       "Jeder stromdurchflossene Leiter erzeugt ein kreisförmiges Magnetfeld in seiner unmittelbaren Umgebung",
-      "Elektrische Spannung ist stets proportional zum Widerstand des durchflossenen Stromkreises",
-      "Eine Änderung des magnetischen Flusses induziert eine elektrische Spannung: U_ind = −ΔΦ/Δt",
+      "Elektrische Spannung ist stets proportional zum Widerstand",
+      "Eine Änderung des magnetischen Flusses induziert in einem Leiter eine Spannung",
       "Elektrische Ladungen erzeugen in ihrer Umgebung ein radialsymmetrisches elektrisches Feld"
     ],
     "question": "Was besagt das Faradaysche Induktionsgesetz?",
@@ -328,7 +328,7 @@
     "explanation": "Übersetzungsverhältnis: U₁/U₂ = N₁/N₂ (N = Windungszahl). Gilt nur für Wechselstrom.",
     "options": [
       "Ein Bauelement, das Wechselstrom in Gleichstrom umwandelt durch eine Diodenbrückenschaltung",
-      "Ein Bauelement, das elektrische Ladung zwischen zwei leitenden Platten im E-Feld speichert",
+      "Ein Gerät, das die Frequenz einer Wechselspannung ändert, ohne ihren Wert zu ändern",
       "Ein Gerät, das mechanische Rotationsenergie in elektrische Energie durch Induktion umwandelt",
       "Ein Gerät, das Wechselspannung hoch- oder herunterspannt durch zwei induktiv gekoppelte Spulen"
     ],
@@ -339,7 +339,7 @@
     "correct": 0,
     "explanation": "Kondensator: zwei Leiterplatten getrennt durch Isolator. Kapazität C = Q/U; Einheit Farad (F).",
     "options": [
-      "Ein Bauelement, das elektrische Ladung und damit Energie im elektrischen Feld speichert",
+      "Ein Bauelement, das elektrische Ladung und damit Energie in einem elektrischen Feld speichert",
       "Ein Bauelement, das den elektrischen Strom in einem Stromkreis begrenzt und vermindert",
       "Ein Bauelement, das durch Selbstinduktion dem Wechselstrom einen Widerstand entgegensetzt",
       "Ein Bauelement, das Wechselstrom mithilfe von Dioden in Gleichstrom umwandelt"
@@ -351,10 +351,10 @@
     "correct": 1,
     "explanation": "1 Farad = 1 Coulomb pro Volt. Typische Werte: µF, nF, pF.",
     "options": [
-      "C = U/Q – angelegte Spannung pro Ladungsmenge; Einheit Volt/Coulomb",
+      "C = U/Q – Spannung pro Ladungsmenge; Einheit Volt je Coulomb (V/C)",
       "C = Q/U – gespeicherte Ladungsmenge pro Spannung; Einheit Farad (F)",
-      "C = U·I – Spannung mal Stromstärke; Einheit Volt·Ampere",
-      "C = I/t – Stromstärke pro Zeitdauer; Einheit Ampere/Sekunde"
+      "C = U·I – Spannung mal Stromstärke; Einheit Voltampere (V·A)",
+      "C = I/t – Stromstärke pro Zeitdauer; Einheit Ampere je Sekunde (A/s)"
     ],
     "question": "Was ist Kapazität eines Kondensators?",
     "topic": "Kondensator"
@@ -387,10 +387,10 @@
     "correct": 0,
     "explanation": "Für Leiter: Daumen zeigt Stromrichtung (technisch), Finger zeigen Richtung des B-Felds.",
     "options": [
-      "Zeigt die Richtung des Magnetfelds um einen stromdurchflossenen Leiter oder die Richtung der Lorentzkraft an",
+      "Zeigt die Richtung des Magnetfelds um einen stromdurchflossenen Leiter an",
       "Bestimmt die Ausbreitungsrichtung elektromagnetischer Wellen aus den Feldrichtungen von E und B",
       "Berechnet den Gesamtwiderstand eines Leiters aus Länge, Querschnitt und spezifischem Widerstand",
-      "Bestimmt die auf einem Kondensator gespeicherte Ladung aus der angelegten Spannung und Kapazität"
+      "Bestimmt die Richtung, in die sich eine Kompassnadel im Erdmagnetfeld einstellt"
     ],
     "question": "Was ist die Rechte-Hand-Regel?",
     "topic": "Magnetismus"
@@ -411,10 +411,10 @@
     "correct": 2,
     "explanation": "B in Tesla. F = q·v·B·sin(α) für die Lorentzkraft; F = I·l·B für einen stromdurchflossenen Leiter.",
     "options": [
-      "Maß für die Stärke eines elektrischen Felds an einem Ort; Einheit Volt pro Meter",
-      "Maß für die elektrische Ladung pro Volumeneinheit in einem Material; Einheit Coulomb/m³",
+      "Maß für die Stärke eines elektrischen Felds an einem Ort; Einheit Volt pro Meter (V/m)",
+      "Maß für die elektrische Ladung pro Volumen in einem Material; Einheit Coulomb pro Kubikmeter (C/m³)",
       "Maß für die Stärke eines Magnetfelds an einem Ort; Einheit Tesla (T)",
-      "Maß für die Anzahl magnetischer Schwingungen pro Sekunde an einem Ort; Einheit Hertz"
+      "Maß für magnetische Schwingungen je Sekunde; Einheit Hertz (Hz)"
     ],
     "question": "Was ist magnetische Flussdichte B?",
     "topic": "Magnetismus"
@@ -426,7 +426,7 @@
       "Licht biegt sich beim Übergang in ein anderes Medium und ändert dabei seine Ausbreitungsrichtung",
       "Licht wird von einem dunklen Medium vollständig aufgenommen und in Wärme umgewandelt",
       "Licht ändert beim Auftreffen auf eine Oberfläche seine Frequenz und damit seine Farbe",
-      "Einfallswinkel = Ausfallswinkel (Reflexionsgesetz); beide Winkel zur Normalen gemessen"
+      "Einfallswinkel und Ausfallswinkel sind gleich groß, beide zur Flächennormalen der Oberfläche gemessen"
     ],
     "question": "Was ist Reflexion von Licht?",
     "topic": "Optik"
@@ -450,7 +450,7 @@
       "Watt (W) = kg·m²/s³ = J/s = N·m/s",
       "Joule (J) = kg·m²/s² = N·m = W·s",
       "Newton (N) = kg·m/s² = J/m = Pa·m²",
-      "Pascal (Pa) = kg/(m·s²) = N/m² = J/m³"
+      "Pascal (Pa) = kg/(m·s²) = N/m²"
     ],
     "question": "Was ist die Einheit der Energie?",
     "topic": "Grundgrößen"
@@ -459,7 +459,7 @@
     "correct": 2,
     "explanation": "Reibung hängt vom Material (μ) und der Normalkraft ab, nicht von der Kontaktfläche.",
     "options": [
-      "Eine in Bewegungsrichtung wirkende Antriebskraft; F = m · a (Masse mal Beschleunigung des Körpers)",
+      "Eine in Bewegungsrichtung wirkende Antriebskraft; F_A = P / v (Leistung geteilt durch Geschwindigkeit)",
       "Eine der Schwerkraft entgegenwirkende Auftriebskraft; F = ρ · g · V (Dichte mal g mal Volumen)",
       "Eine der Bewegung entgegengesetzte Kraft; F_R = μ · F_N (μ = Reibungskoeffizient, F_N = Normalkraft)",
       "Eine auf geladene Teilchen wirkende Magnetkraft; F = q · v × B (Lorentzkraft im Magnetfeld)"
@@ -469,12 +469,12 @@
   },
   {
     "correct": 3,
-    "explanation": "Die Zentripetalkraft wirkt immer zum Kreismittelpunkt hin und wird z.B. durch Seilspannung, Gravitation oder Normalkraft bereitgestellt.",
+    "explanation": "Die Zentripetalkraft wirkt immer zum Kreismittelpunkt hin und wird z. B. durch Seilspannung, Gravitation oder Normalkraft bereitgestellt; ihr Betrag ist F_Z = m·v²/r.",
     "options": [
       "Eine nach außen gerichtete Kraft, die einen Körper in der Kreisbewegung vom Mittelpunkt wegdrängt",
       "Eine Trägheitskraft (Scheinkraft), die im rotierenden Bezugssystem scheinbar nach außen wirkt",
-      "Eine elektromagnetische Kraft, die auf geladene Teilchen in kreisförmigen Bahnen wirkt",
-      "Die radial nach innen gerichtete Kraft, die eine Kreisbewegung aufrechthält; F_Z = m·v²/r"
+      "Eine Kraft, die tangential zur Kreisbahn wirkt und den Körper dort beschleunigt",
+      "Die radial zum Kreismittelpunkt hin gerichtete Kraft, die eine Kreisbahn erzwingt"
     ],
     "question": "Was ist Zentripetalkraft?",
     "topic": "Kreisbewegung"

@@ -1,7 +1,7 @@
 [
   {
     "correct": 0,
-    "explanation": "Organische Chemie befasst sich mit Kohlenstoffverbindungen (ausgenommen CO₂, Carbonate, CO).",
+    "explanation": "Die organische Chemie untersucht die Verbindungen des Kohlenstoffs. Kohlenstoffmonoxid, Kohlenstoffdioxid, Carbonate und Cyanide rechnet man traditionell zur anorganischen Chemie. Seit Friedrich Wöhler 1828 aus dem anorganischen Ammoniumcyanat Harnstoff gewann, gilt die alte Trennung nach belebter und unbelebter Natur als überholt.",
     "options": [
       "Die Chemie der Kohlenstoffverbindungen",
       "Die Chemie aller natürlichen Stoffe",
@@ -13,7 +13,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Alkane: CₙH₂ₙ₊₂ (Methan CH₄, Ethan C₂H₆, Propan C₃H₈...). Gesättigt = nur Einfachbindungen.",
+    "explanation": "Alkane sind gesättigt: Zwischen den Kohlenstoffatomen liegen ausschließlich Einfachbindungen. Für offenkettige Alkane gilt CₙH₂ₙ₊₂, also Methan CH₄, Ethan C₂H₆, Propan C₃H₈. Weil keine Mehrfachbindung angegriffen werden kann, reagieren Alkane träge; unter Licht lassen sie sich mit Halogenen umsetzen.",
     "options": [
       "Ungesättigte Kohlenwasserstoffe mit einer C=C-Doppelbindung; allgemeine Formel CₙH₂ₙ",
       "Gesättigte Kohlenwasserstoffe mit Einfachbindungen; allgemeine Formel CₙH₂ₙ₊₂",
@@ -25,7 +25,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Alkene: CₙH₂ₙ. Einfachstes Alken: Ethen (C₂H₄) mit einer C=C-Doppelbindung.",
+    "explanation": "Alkene sind ungesättigt und enthalten mindestens eine C=C-Doppelbindung. Bei genau einer Doppelbindung und offener Kette gilt CₙH₂ₙ; das einfachste Alken ist Ethen C₂H₄. Die Doppelbindung ist die reaktive Stelle des Moleküls und lässt sich leicht öffnen.",
     "options": [
       "Gesättigte Kohlenwasserstoffe mit Einfachbindungen; allgemeine Formel CₙH₂ₙ₊₂",
       "Kohlenwasserstoffe mit mindestens einer C≡C-Dreifachbindung; allgemeine Formel CₙH₂ₙ₋₂",
@@ -37,7 +37,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Alkine: CₙH₂ₙ₋₂. Einfachstes Alkin: Ethin (C₂H₂) mit einer Dreifachbindung.",
+    "explanation": "Alkine enthalten mindestens eine C≡C-Dreifachbindung; bei genau einer Dreifachbindung und offener Kette gilt CₙH₂ₙ₋₂. Das einfachste Alkin ist Ethin C₂H₂, früher Acetylen genannt. Es verbrennt mit reinem Sauerstoff sehr heiß und wird deshalb zum Schweißen und Schneiden von Stahl genutzt.",
     "options": [
       "Kohlenwasserstoffe mit mindestens einer C=C-Doppelbindung; allgemeine Formel CₙH₂ₙ",
       "Gesättigte Kohlenwasserstoffe mit Einfachbindungen; allgemeine Formel CₙH₂ₙ₊₂",
@@ -49,19 +49,19 @@
   },
   {
     "correct": 0,
-    "explanation": "In der homologen Reihe steigen C-Atome um je 1 (+ CH₂); physikalische Eigenschaften ändern sich graduell.",
+    "explanation": "Jedes Glied der Reihe unterscheidet sich vom vorhergehenden um eine CH₂-Gruppe: Methan CH₄, Ethan C₂H₆, Propan C₃H₈, Butan C₄H₁₀. Die chemischen Eigenschaften bleiben dabei ähnlich, die physikalischen ändern sich schrittweise und lassen sich deshalb gut vorhersagen.",
     "options": [
-      "Methan, Ethan, Propan, Butan… – jedes Glied unterscheidet sich um CH₂",
-      "Methanol, Ethanol, Propanol… – homologe Reihe der Alkohole mit –OH-Gruppe",
-      "Ethen, Propen, Buten… – jedes Glied enthält eine C=C-Doppelbindung",
-      "Benzol, Toluol, Xylol… – aromatische Verbindungen mit delokalisierten π-Elektronen"
+      "Alkane, deren Glieder sich je um eine CH₂-Gruppe unterscheiden",
+      "Alkane, deren Glieder sich je um ein Wasserstoffmolekül unterscheiden",
+      "Alkane mit gleicher Summenformel, aber unterschiedlichem Molekülbau",
+      "Alkane, die trotz verschiedener Kettenlänge gleich hoch sieden"
     ],
     "question": "Was ist die homologe Reihe der Alkane?",
-    "topic": "Nomenklatur"
+    "topic": "Kohlenwasserstoffe"
   },
   {
     "correct": 1,
-    "explanation": "IUPAC-Namen basieren auf der längsten C-Kette (Stamm) plus Substituenten und funktionellen Gruppen.",
+    "explanation": "Die IUPAC hat ein weltweit einheitliches Regelwerk festgelegt. Man wählt die längste Kohlenstoffkette als Stammnamen, nummeriert sie so, dass die funktionelle Gruppe die kleinste Ziffer erhält, und nennt die Substituenten als Vorsilben. So gehört zu jeder Struktur genau ein Name und zu jedem Namen genau eine Struktur.",
     "options": [
       "Ein Abkürzungssystem für gebräuchliche Trivialnamen organischer Verbindungen",
       "Ein internationales Regelsystem zur systematischen Benennung organischer Verbindungen",
@@ -73,7 +73,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Butanisomere C₄H₁₀: n-Butan (Kette) und Isobutan (verzweigt) – gleiche Formel, verschiedene Struktur.",
+    "explanation": "Strukturisomere haben dieselbe Summenformel, ihre Atome sind aber anders miteinander verknüpft. Zu C₄H₁₀ gehören das unverzweigte Butan und das verzweigte 2-Methylpropan. Beide Stoffe unterscheiden sich messbar, etwa im Siedepunkt, weil die verzweigte Form eine kleinere Oberfläche besitzt.",
     "options": [
       "Verbindungen mit gleicher Summenformel und vollständig identischem Strukturaufbau",
       "Verbindungen mit gleicher Summenformel und identischer räumlicher Anordnung",
@@ -85,7 +85,7 @@
   },
   {
     "correct": 3,
-    "explanation": "–OH ist die charakteristische Gruppe der Alkohole; Ethanol (C₂H₅OH) ist das bekannteste Beispiel.",
+    "explanation": "Die Hydroxylgruppe –OH kennzeichnet die Alkohole, zum Beispiel Ethanol C₂H₅OH. Über diese Gruppe bilden Alkohole Wasserstoffbrücken. Deshalb sieden sie deutlich höher als Alkane ähnlicher Molekülmasse, und kurzkettige Alkohole mischen sich in jedem Verhältnis mit Wasser.",
     "options": [
       "Die funktionelle Gruppe der Aldehyde",
       "Die funktionelle Gruppe der Ester",
@@ -97,7 +97,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Aldehyde besitzen eine Aldehydgruppe –CHO am Ende der Kohlenstoffkette; Methanal (Formaldehyd) ist das einfachste.",
+    "explanation": "Aldehyde tragen die Gruppe –CHO: Die Carbonylgruppe C=O sitzt am Ende der Kette und trägt dort zusätzlich ein Wasserstoffatom. Das einfachste Aldehyd ist Methanal HCHO, im Handel als Formaldehyd bekannt. Wegen des H-Atoms an der Carbonylgruppe lassen sich Aldehyde leicht weiter oxidieren.",
     "options": [
       "–CHO (Carbonylgruppe am Kettenende)",
       "–OH (Hydroxylgruppe)",
@@ -109,10 +109,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Ketone: C=O inmitten der Kette. Einfachstes Keton: Propanon (Aceton, CH₃COCH₃).",
+    "explanation": "Bei Ketonen sitzt die Carbonylgruppe C=O an einem Kohlenstoffatom, das zwei weitere C-Atome trägt, also nicht am Kettenende. Ihr fehlt deshalb das Wasserstoffatom, das Aldehyde an dieser Stelle besitzen. Kurzkettige Ketone sind hervorragende Lösungsmittel und mit Wasser gut mischbar.",
     "options": [
       "Verbindungen mit einer –CHO-Gruppe am Ende der Kohlenstoffkette",
-      "Verbindungen mit einer C=O-Gruppe innerhalb der Kohlenstoffkette (nicht am Ende)",
+      "Verbindungen mit einer C=O-Gruppe mitten in der Kohlenstoffkette",
       "Verbindungen mit einer –COOH-Gruppe am Ende der Kohlenstoffkette",
       "Verbindungen mit einer –OH-Gruppe an der Kohlenstoffkette"
     ],
@@ -121,7 +121,7 @@
   },
   {
     "correct": 2,
-    "explanation": "–COOH ist sauer; einfachste Carbonsäure: Methansäure (Ameisensäure, HCOOH).",
+    "explanation": "Carbonsäuren tragen die Carboxylgruppe –COOH. Sie geben in Wasser ein Proton ab und reagieren deshalb sauer, gehören aber zu den schwachen Säuren. Die einfachste ist Methansäure HCOOH, die Ameisensäure; am bekanntesten ist Ethansäure CH₃COOH, die Essigsäure.",
     "options": [
       "Verbindungen mit der Aldehydgruppe –CHO",
       "Verbindungen mit der Hydroxylgruppe –OH",
@@ -133,21 +133,21 @@
   },
   {
     "correct": 3,
-    "explanation": "Veresterung: R-COOH + R'-OH ⇌ R-COO-R' + H₂O (Gleichgewichtsreaktion, Katalysator: H⁺).",
+    "explanation": "Carbonsäure und Alkohol reagieren zum Ester: R–COOH + R'–OH ⇌ R–COO–R' + H₂O. Die Reaktion ist ein Gleichgewicht und wird durch konzentrierte Schwefelsäure als Katalysator beschleunigt. Entzieht man das entstehende Wasser, verschiebt sich das Gleichgewicht auf die Seite des Esters. Viele Fruchtaromen sind kurzkettige Ester.",
     "options": [
-      "Durch Reaktion zweier Alkohole unter Abspaltung von Wasser (Dehydratation)",
-      "Durch Oxidation eines primären Alkohols mit Sauerstoff in Gegenwart eines Katalysators",
+      "Durch Reaktion zweier Alkohole unter Abspaltung von Wasser zu einem Ether",
+      "Durch Oxidation eines primären Alkohols mit Sauerstoff an einem Katalysator",
       "Durch Addition einer Carbonsäure an eine C=C-Doppelbindung eines Alkens",
-      "Durch Reaktion einer Carbonsäure mit einem Alkohol unter Abspaltung von Wasser (Veresterung)"
+      "Durch Reaktion einer Carbonsäure mit einem Alkohol unter Abspaltung von Wasser"
     ],
     "question": "Wie entstehen Ester?",
     "topic": "Reaktionstypen"
   },
   {
     "correct": 0,
-    "explanation": "Verseifung: Triglycerid + 3 NaOH → Glycerin + 3 Natrium-Carboxylate (Seifen).",
+    "explanation": "Kocht man Fett mit Natronlauge, werden alle drei Esterbindungen des Triglycerids gespalten. Es entstehen Glycerin und die Natriumsalze der Fettsäuren, also Seife. Anders als die saure Esterspaltung läuft die Verseifung vollständig ab, weil das gebildete Carboxylat-Ion nicht mehr zurückreagiert.",
     "options": [
-      "Die Hydrolyse von Fetten (Triglyceriden) mit NaOH zu Glycerin und Natrium-Fettsäuresalz (Seife)",
+      "Die alkalische Hydrolyse von Fetten zu Glycerin und Natrium-Fettsäuresalzen",
       "Die Herstellung von Estern aus Carbonsäure und Alkohol unter saurer Katalyse",
       "Die Oxidation von primären Alkoholen zu Aldehyden oder Carbonsäuren",
       "Die Reduktion von Aldehyden zu Alkoholen mit einem geeigneten Reduktionsmittel"
@@ -157,19 +157,19 @@
   },
   {
     "correct": 1,
-    "explanation": "Addition an Alkene: z. B. Brom addiert sich an Ethen (Br₂ + C₂H₄ → C₂H₄Br₂). Doppelbindung wird aufgebrochen.",
+    "explanation": "Bei der Addition wird eine Mehrfachbindung geöffnet, und beide Bruchstücke des angreifenden Moleküls lagern sich an die frei gewordenen Bindungsstellen an. Beispiel: Ethen und Chlorwasserstoff ergeben Chlorethan, C₂H₄ + HCl → C₂H₅Cl. Ein Nebenprodukt entsteht nicht, alle Atome der Ausgangsstoffe stecken im Produkt.",
     "options": [
       "Eine Verbindung zerfällt in zwei kleinere Teilmoleküle ohne Nebenprodukt",
-      "Zwei Moleküle verbinden sich; typisch für Verbindungen mit Mehrfachbindungen",
+      "Zwei Moleküle verbinden sich an einer Mehrfachbindung zu einem Produkt",
       "Ein Atom oder eine Gruppe ersetzt ein anderes Atom in einem Molekül",
-      "Ein kleines Molekül (z. B. H₂O oder HX) wird abgespalten, eine Doppelbindung entsteht"
+      "Ein kleines Molekül wird abgespalten, wobei eine Doppelbindung entsteht"
     ],
     "question": "Was ist eine Additionsreaktion?",
     "topic": "Reaktionstypen"
   },
   {
     "correct": 2,
-    "explanation": "Typisch für Alkane: radikalische Substitution (z. B. Chlorierung von Methan: CH₄ + Cl₂ → CH₃Cl + HCl).",
+    "explanation": "Bei der Substitution tritt ein Atom oder eine Atomgruppe an die Stelle eines anderen. Alkane reagieren auf diese Weise: Methan und Chlor ergeben unter Licht Chlormethan und Chlorwasserstoff, CH₄ + Cl₂ → CH₃Cl + HCl. Die Reaktion verläuft über Radikale und liefert meist ein Gemisch mehrfach substituierter Produkte.",
     "options": [
       "Zwei Moleküle vereinigen sich unter Öffnung einer Mehrfachbindung",
       "Ein Molekül zerfällt in zwei oder mehr kleinere Fragmente",
@@ -181,7 +181,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Alkene entfärben Bromwasser durch Addition: C=C + Br₂ → Dibromid (farblos).",
+    "explanation": "Brom lagert sich an eine C=C-Doppelbindung an, und das braune Bromwasser wird dabei farblos. Gesättigte Verbindungen wie Alkane zeigen diese Entfärbung im Dunkeln nicht, weil ihnen die reaktive Mehrfachbindung fehlt. Der Test ist deshalb ein einfacher Nachweis für ungesättigte Verbindungen.",
     "options": [
       "Nachweis von Alkoholen: Bromwasser reagiert durch Oxidation der –OH-Gruppe",
       "Nachweis von Aldehyden: Bromwasser wird durch Reduktion der Lösung entfärbt",
@@ -193,7 +193,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Benzol (C₆H₆): planarer Ring, π-Elektronen über alle 6 C delokalisiert; besondere Stabilität.",
+    "explanation": "Benzol C₆H₆ ist ein ebener Sechsring. Die sechs π-Elektronen gehören nicht einzelnen Bindungen, sondern sind über den ganzen Ring verteilt; alle C–C-Bindungen sind daher gleich lang. Diese Delokalisierung macht das Molekül ungewöhnlich stabil, weshalb Benzol lieber substituiert als addiert wird.",
     "options": [
       "Ein cyclischer, aromatischer Ring aus 6 C-Atomen mit delokalisierten π-Elektronen",
       "Ein cyclisches Alkan aus 6 C-Atomen mit ausschließlich Einfachbindungen",
@@ -205,7 +205,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Beim Cracken werden langkettige Alkane in Ethen, Propen und kurzkettige Alkane zerlegt (Grundstoff für Kunststoffe).",
+    "explanation": "Beim Cracken werden lange Kohlenwasserstoffketten thermisch oder an Katalysatoren in kürzere gespalten. Aus schwer verwertbarem Schweröl entstehen so Benzinbestandteile sowie Ethen und Propen. Nötig ist das Verfahren, weil die Nachfrage nach kurzkettigen Produkten ihren Anteil im Rohöl bei Weitem übersteigt.",
     "options": [
       "Destillation von Erdöl in Fraktionen unterschiedlicher Siedepunkte durch stufenweises Erhitzen",
       "Thermisches oder katalytisches Aufbrechen langer Kohlenwasserstoffketten in kürzere, wertvollere Produkte",
@@ -217,7 +217,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Polyethylen entsteht durch Polymerisation von Ethen: n(CH₂=CH₂) → –[CH₂–CH₂]ₙ–.",
+    "explanation": "Bei der Polymerisation lagern sich viele gleichartige Monomere mit C=C-Doppelbindung ohne Nebenprodukt aneinander. Aus Ethen entsteht so Polyethylen: n CH₂=CH₂ → –[CH₂–CH₂]ₙ–. Nach demselben Muster werden Propen zu Polypropylen und Styrol zu Polystyrol verarbeitet.",
     "options": [
       "Zerlegung von Polymeren in einzelne Monomerbausteine durch Hydrolyse",
       "Addition eines einzelnen Moleküls an eine reaktive Doppelbindung",
@@ -229,31 +229,31 @@
   },
   {
     "correct": 3,
-    "explanation": "Thermoplaste haben keine Quervernetzung; sie können mehrfach geschmolzen und neu geformt werden.",
+    "explanation": "Thermoplaste bestehen aus linearen oder verzweigten Ketten ohne Quervernetzung. Beim Erwärmen gleiten diese Ketten aneinander vorbei, der Werkstoff wird weich und lässt sich beliebig oft neu formen. Polyethylen, Polypropylen und PET gehören dazu und sind deshalb vergleichsweise gut recycelbar.",
     "options": [
-      "Kunststoffe, die sich bei Erwärmen nicht verformen, sondern zersetzen (z. B. Bakelit)",
+      "Kunststoffe, die sich beim Erwärmen nicht verformen, sondern zersetzen",
       "Elastische Kunststoffe, die sich dehnen lassen und in die Ausgangsform zurückkehren",
-      "Biologisch abbaubare Kunststoffe, die durch Mikroorganismen vollständig zersetzt werden",
-      "Kunststoffe, die beim Erwärmen schmelzen und formbar sind (z. B. PE, PP, PET)"
+      "Biologisch abbaubare Kunststoffe, die von Mikroorganismen vollständig zersetzt werden",
+      "Kunststoffe, die beim Erwärmen weich werden und sich neu formen lassen"
     ],
     "question": "Was sind Thermoplaste?",
     "topic": "Kunststoffe"
   },
   {
     "correct": 0,
-    "explanation": "Glucose ist der wichtigste Energielieferant der Zellen; sie wird in der Zellatmung zu CO₂ und H₂O oxidiert.",
+    "explanation": "Glucose ist ein Einfachzucker mit sechs Kohlenstoffatomen und der Summenformel C₆H₁₂O₆. In wässriger Lösung liegt sie überwiegend als Ring vor, zu einem kleinen Anteil offenkettig. Sie ist der wichtigste Energieträger der Zellen und wird in der Zellatmung zu Kohlenstoffdioxid und Wasser abgebaut.",
     "options": [
-      "Ein Monosaccharid (Einfachzucker) mit der Formel C₆H₁₂O₆",
-      "Ein Disaccharid (Zweifachzucker) aus zwei Monosaccharid-Einheiten",
-      "Ein Polysaccharid aus vielen verknüpften Monosaccharid-Einheiten",
-      "Eine Aminosäure mit einer Amino- und einer Carboxylgruppe"
+      "Ein Monosaccharid mit der Formel C₆H₁₂O₆",
+      "Ein Disaccharid aus zwei Monosaccharid-Einheiten",
+      "Ein Polysaccharid aus vielen Monosaccharid-Einheiten",
+      "Ein Zuckeralkohol mit der Formel C₆H₁₄O₆"
     ],
     "question": "Was ist Glucose?",
     "topic": "Biomoleküle"
   },
   {
     "correct": 1,
-    "explanation": "Fette: ein Glycerinmolekül verestert mit drei Fettsäuren. Gesättigte Fette sind bei Raumtemperatur fest.",
+    "explanation": "Fette sind Triglyceride, also Dreifachester aus einem Molekül Glycerin und drei Fettsäuren. Gesättigte Fettsäureketten lassen sich dicht packen, solche Fette sind bei Raumtemperatur fest. Doppelbindungen knicken die Ketten, die Moleküle liegen lockerer, und der Stoff ist als Öl flüssig.",
     "options": [
       "Polysaccharide: Polymere aus vielen verknüpften Glucosebausteinen",
       "Triglyceride: Ester aus Glycerin und drei Fettsäuren",
@@ -265,11 +265,11 @@
   },
   {
     "correct": 2,
-    "explanation": "Aminosäuren sind die Bausteine der Proteine; sie verknüpfen sich über Peptidbindungen.",
+    "explanation": "Aminosäuren tragen im selben Molekül eine basische Aminogruppe –NH₂ und eine saure Carboxylgruppe –COOH. Deshalb liegen sie im Kristall und in neutraler Lösung als Zwitterion vor und wirken je nach Umgebung als Säure oder als Base. Zwanzig von ihnen bauen die Proteine des menschlichen Körpers auf.",
     "options": [
-      "Organische Verbindungen nur mit einer Aminogruppe (–NH₂), aber ohne Carboxylgruppe",
-      "Organische Verbindungen nur mit einer Carboxylgruppe (–COOH), aber ohne Aminogruppe",
-      "Organische Verbindungen mit einer Aminogruppe (–NH₂) und einer Carboxylgruppe (–COOH)",
+      "Organische Verbindungen nur mit einer Aminogruppe –NH₂, aber ohne Carboxylgruppe",
+      "Organische Verbindungen nur mit einer Carboxylgruppe –COOH, aber ohne Aminogruppe",
+      "Organische Verbindungen mit einer Aminogruppe –NH₂ und einer Carboxylgruppe –COOH",
       "Organische Ester mit einem Stickstoffatom in der Seitenkette des Moleküls"
     ],
     "question": "Was sind Aminosäuren?",
@@ -277,7 +277,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Peptidbindung: –COOH + H₂N– → –CO–NH– + H₂O (Kondensationsreaktion).",
+    "explanation": "Die Carboxylgruppe der einen Aminosäure reagiert mit der Aminogruppe der anderen; dabei wird Wasser frei, und es bleibt die Gruppe –CO–NH– übrig. Diese Amidbindung ist wegen ihres teilweisen Doppelbindungscharakters starr und eben. Genau das bestimmt, wie sich eine Proteinkette falten kann.",
     "options": [
       "Eine Esterbindung –COO– zwischen Carbonsäure und Alkohol",
       "Eine ionische Bindung zwischen positiv und negativ geladenen Ionen",
@@ -289,7 +289,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Hydrolyse: z. B. Ester + H₂O → Alkohol + Carbonsäure; Proteine + H₂O → Aminosäuren.",
+    "explanation": "Bei einer Hydrolyse spaltet Wasser eine Bindung; –H und –OH verteilen sich dabei auf die beiden Bruchstücke. Ester zerfallen so wieder in Alkohol und Carbonsäure, Proteine in Aminosäuren, Stärke in Glucose. Im Körper beschleunigen Enzyme diese Spaltungen, sonst liefen sie viel zu langsam ab.",
     "options": [
       "Spaltung einer Bindung durch Reaktion mit Wasser",
       "Entzug von Wasser aus einem Molekül unter Bildung einer Doppelbindung",
@@ -301,10 +301,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Beispiele: Veresterung, Peptidbindungsbildung – beide setzen H₂O frei.",
+    "explanation": "Bei einer Kondensation verbinden sich zwei Moleküle, und dabei wird ein kleines Molekül frei, in der Regel Wasser. Nach diesem Muster entstehen Ester aus Säure und Alkohol und Peptide aus Aminosäuren. Auch Polyester und Polyamide werden so aus vielen Bausteinen aufgebaut.",
     "options": [
       "Addition zweier Moleküle ohne Abspaltung eines Nebenprodukts",
-      "Reaktion unter Abspaltung eines kleinen Moleküls (meist H₂O)",
+      "Reaktion, bei der ein kleines Molekül abgespalten wird",
       "Spaltung einer Bindung durch Reaktion mit Wasser",
       "Substitution eines Atoms durch ein Halogenatom"
     ],
@@ -313,43 +313,43 @@
   },
   {
     "correct": 2,
-    "explanation": "Längere Alkane haben größere Oberflächen und stärkere London-Dispersionskräfte, daher höhere Siedepunkte.",
+    "explanation": "Alkane sind unpolar; zwischen ihren Molekülen wirken nur schwache Van-der-Waals-Kräfte. Je länger die Kette, desto größer die Berührungsfläche zweier Moleküle und desto stärker diese Kräfte in der Summe. Deshalb ist Methan gasförmig, Hexan flüssig und Octadecan fest. Wasserstoffbrücken können Alkane mangels –OH-Gruppen nicht bilden.",
     "options": [
-      "Wegen stärkerer Wasserstoffbrücken",
-      "Weil mehr Sauerstoff enthalten ist",
+      "Mit steigender Kettenlänge bilden sich zusätzliche Wasserstoffbrücken aus",
+      "Mit steigender Kettenlänge nimmt der Sauerstoffanteil im Molekül zu",
       "Mit steigender Kettenlänge wachsen die Van-der-Waals-Kräfte",
-      "Wegen ionischer Wechselwirkungen"
+      "Mit steigender Kettenlänge entstehen ionische Wechselwirkungen"
     ],
     "question": "Warum steigen die Siedepunkte in der homologen Alkan-Reihe?",
     "topic": "Eigenschaften"
   },
   {
     "correct": 3,
-    "explanation": "Eliminierung: z. B. Alkohol + H₂SO₄ → Alken + H₂O. Dehydratation (Wasserabspaltung).",
+    "explanation": "Bei einer Eliminierung verlässt ein kleines Molekül das Ausgangsmolekül, und an der frei werdenden Stelle bildet sich eine Doppelbindung. Erhitzt man Ethanol mit konzentrierter Schwefelsäure, wird Wasser abgespalten und es entsteht Ethen. Die Eliminierung ist damit die Umkehrung der Addition.",
     "options": [
-      "Addition kleiner Moleküle an eine C=C-Doppelbindung",
-      "Substitution eines Wasserstoffatoms durch ein Halogenatom",
-      "Oxidation eines Alkohols zu einem Aldehyd oder einer Carbonsäure",
-      "Abspaltung kleiner Moleküle (z. B. H₂O oder HX) unter Bildung einer Doppelbindung"
+      "Anlagerung eines kleinen Moleküls an eine C=C-Doppelbindung im Alken",
+      "Ersatz eines Wasserstoffatoms durch ein Halogenatom in einem Alkanmolekül",
+      "Oxidation eines Alkohols zu einem Aldehyd oder zu einer Carbonsäure",
+      "Abspaltung eines kleinen Moleküls unter Bildung einer Doppelbindung"
     ],
     "question": "Was ist eine Eliminierungsreaktion?",
     "topic": "Reaktionstypen"
   },
   {
     "correct": 0,
-    "explanation": "Primärer Alkohol → Aldehyd (milde Oxidation) → Carbonsäure (starke Oxidation).",
+    "explanation": "Ein primärer Alkohol trägt die Hydroxylgruppe an einem endständigen Kohlenstoffatom. Bei milder Oxidation entsteht daraus zunächst ein Aldehyd; oxidiert man weiter, wird daraus eine Carbonsäure. Im Labor destilliert man den Aldehyd deshalb sofort ab, sonst reagiert er vollständig durch.",
     "options": [
-      "Erst Aldehyd, dann (bei weiterer Oxidation) Carbonsäure",
-      "Keton durch Oxidation der mittleren C=O-Gruppe",
-      "Ester durch Reaktion mit einer weiteren Alkohol-Einheit",
-      "Alkan durch vollständige Reduktion der Hydroxylgruppe"
+      "Zuerst ein Aldehyd, bei weiterer Oxidation eine Carbonsäure",
+      "Ein Keton mit der Carbonylgruppe in der Kettenmitte",
+      "Ein Ester durch Reaktion mit einer weiteren Alkohol-Einheit",
+      "Ein Alkan durch vollständige Reduktion der Hydroxylgruppe"
     ],
     "question": "Was entsteht bei der Oxidation eines primären Alkohols?",
     "topic": "Oxidation"
   },
   {
     "correct": 1,
-    "explanation": "Sekundäre Alkohole (R₂CHOH) werden zu Ketonen (R₂C=O) oxidiert; weitere Oxidation ist schwieriger.",
+    "explanation": "Sekundäre Alkohole tragen die Hydroxylgruppe an einem Kohlenstoffatom, das zwei weitere C-Atome bindet. Bei der Oxidation wird dort Wasserstoff entzogen, und es entsteht eine Carbonylgruppe mitten in der Kette. Weiter oxidieren lässt sich dieses Produkt nicht, ohne das Kohlenstoffgerüst zu zerbrechen.",
     "options": [
       "Aldehyd (C=O-Gruppe am Kettenende)",
       "Keton (C=O-Gruppe in der Kohlenstoffkette)",
@@ -361,11 +361,11 @@
   },
   {
     "correct": 2,
-    "explanation": "Aldehyde reduzieren Fehling-Lösung; Ketone reagieren nicht (wichtige Unterscheidung).",
+    "explanation": "Fehling-Lösung enthält Kupfer(II)-Ionen, die durch Tartrat in alkalischer Lösung gehalten werden, und ist tiefblau. Aldehyde reduzieren beim Erwärmen Cu²⁺ zu Cu⁺, dabei fällt ziegelrotes Kupfer(I)-oxid Cu₂O aus. Ketone reagieren nicht, weil ihrer Carbonylgruppe das Wasserstoffatom fehlt.",
     "options": [
-      "Ein Nachweis für C=C-Doppelbindungen: Bromwasser wird durch Addition entfärbt",
+      "Ein Nachweis für Halogenide: Silbernitrat erzeugt einen weißen Niederschlag",
       "Ein Nachweis für Alkohole: Farbumschlag durch Oxidation mit dem Reagenz",
-      "Ein Nachweis für Aldehyde: Cu²⁺ (blau) wird zu Cu₂O (ziegelrot) reduziert",
+      "Ein Nachweis für Aldehyde: blaues Cu²⁺ wird zu ziegelrotem Cu₂O reduziert",
       "Ein Nachweis für Carbonsäuren: pH-Indikator schlägt durch saure Reaktion um"
     ],
     "question": "Was ist das Fehling-Reagenz?",
@@ -373,7 +373,7 @@
   },
   {
     "correct": 3,
-    "explanation": "2 C-Atome → 'Eth-'; Alkohol (–OH) → '-ol'; Ethanol.",
+    "explanation": "Der Stamm hat zwei Kohlenstoffatome, daraus wird die Vorsilbe Eth-; die Hydroxylgruppe liefert die Endung -ol. Der systematische Name lautet damit Ethanol. Ein C-Atom ergäbe Methanol, drei C-Atome Propanol, und die Endung -an stünde für den reinen Kohlenwasserstoff ohne funktionelle Gruppe.",
     "options": [
       "Methanol",
       "Propanol",
@@ -385,35 +385,35 @@
   },
   {
     "correct": 0,
-    "explanation": "3 C-Atome, C=O in Position 2 → Propan-2-on. Trivialname: Aceton.",
+    "explanation": "Die längste Kette hat drei Kohlenstoffatome, das ergibt die Vorsilbe Prop-. Die Carbonylgruppe sitzt am mittleren C-Atom, daraus wird die Endung -2-on. Der systematische Name lautet also Propan-2-on, der Trivialname Aceton. Der Stoff ist ein wichtiges Lösungsmittel und mit Wasser in jedem Verhältnis mischbar.",
     "options": [
       "Propan-2-on (Aceton)",
-      "Propan-2-al (Propanal)",
-      "Propen-1-on (Acrolein)",
-      "Butan-2-on (Methylethylketon)"
+      "Propanal (Propionaldehyd)",
+      "Butan-2-on (Methylethylketon)",
+      "Propansäure (Propionsäure)"
     ],
     "question": "Was ist der IUPAC-Name von CH₃COCH₃?",
     "topic": "Nomenklatur"
   },
   {
     "correct": 1,
-    "explanation": "Stärke (Amylose + Amylopektin) ist ein Polysaccharid aus vielen Glucose-Einheiten; Speicherkohlenhydrat der Pflanzen.",
+    "explanation": "Stärke ist ein Vielfachzucker aus zahlreichen α-Glucose-Bausteinen und besteht aus der unverzweigten Amylose und dem verzweigten Amylopektin. Pflanzen speichern darin ihre Energie. Mit Iod-Kaliumiodid-Lösung färbt sich Stärke tiefblau, das ist ihr klassischer Nachweis.",
     "options": [
-      "Ein Monosaccharid (Einfachzucker) wie Glucose oder Fructose",
-      "Ein Polysaccharid aus α-Glucose-Einheiten",
-      "Ein Disaccharid aus zwei verknüpften Monosaccharid-Einheiten",
-      "Ein Fett (Triglycerid) aus Glycerin und drei Fettsäuren"
+      "Ein Monosaccharid wie Glucose oder Fructose",
+      "Ein Polysaccharid aus vielen α-Glucose-Einheiten",
+      "Ein Disaccharid aus zwei verknüpften Zuckerbausteinen",
+      "Ein Eiweißstoff aus vielen verknüpften Aminosäuren"
     ],
     "question": "Was ist Stärke chemisch?",
     "topic": "Biomoleküle"
   },
   {
     "correct": 2,
-    "explanation": "Duromere (Duroplaste) sind dauerhaft vernetzt; sie werden durch Hitze nicht verformbar, sondern zersetzen sich.",
+    "explanation": "Duroplaste sind über kovalente Bindungen engmaschig vernetzt, die Ketten können nicht mehr aneinander vorbeigleiten. Erwärmen macht sie deshalb nicht weich; bei zu hoher Temperatur zersetzen sie sich. Bakelit, Melaminharz und Epoxidharz sind typische Vertreter, sie sind hart und formbeständig.",
     "options": [
       "Ein schmelzbarer Kunststoff ohne Quervernetzung, der mehrfach umgeformt werden kann",
       "Ein elastischer Kunststoff mit schwacher Quervernetzung, der sich dehnen und erholen kann",
-      "Ein Kunststoff mit starker Quervernetzung, der nicht mehr schmelzbar ist (z. B. Bakelit)",
+      "Ein Kunststoff mit starker Quervernetzung, der nicht mehr schmelzbar ist",
       "Ein biologisch abbaubarer Kunststoff, der durch Mikroorganismen zersetzt werden kann"
     ],
     "question": "Was ist ein Duroplast?",
@@ -421,19 +421,19 @@
   },
   {
     "correct": 3,
-    "explanation": "Funktionelle Gruppen (–OH, –COOH, –CHO, –NH₂...) bestimmen Reaktivität, Siedepunkt und Löslichkeit.",
+    "explanation": "Funktionelle Gruppen wie –OH, –CHO, –COOH oder –NH₂ entscheiden darüber, wie eine Verbindung reagiert, wie hoch ihr Siedepunkt liegt und wie gut sie sich in Wasser löst. Das Kohlenstoffgerüst selbst ist dagegen reaktionsträge. Verbindungen mit derselben funktionellen Gruppe fasst man deshalb zu Stoffklassen zusammen.",
     "options": [
       "Ein einzelnes C-Atom, das die Kettenlänge einer organischen Verbindung festlegt",
       "Die Kohlenstoffkette, auf der alle Reaktionen einer organischen Verbindung ablaufen",
-      "Ein Reaktionskatalysator, der die Reaktionsgeschwindigkeit einer organischen Verbindung erhöht",
-      "Ein Atom oder eine Atomgruppe, die die charakteristischen Eigenschaften und Reaktionen einer organischen Verbindung bestimmt"
+      "Ein Reaktionskatalysator, der die Reaktionsgeschwindigkeit einer Verbindung erhöht",
+      "Ein Atom oder eine Atomgruppe, die die Eigenschaften eines Moleküls bestimmt"
     ],
     "question": "Was versteht man unter 'funktioneller Gruppe'?",
     "topic": "Grundlagen"
   },
   {
     "correct": 0,
-    "explanation": "Amine tragen eine Aminogruppe –NH₂; sie sind schwach basisch (Lewis-Base durch freies Elektronenpaar am N).",
+    "explanation": "Amine leiten sich vom Ammoniak ab: In R–NH₂ ist ein Wasserstoffatom des NH₃ durch einen Kohlenwasserstoffrest ersetzt. Das freie Elektronenpaar am Stickstoff kann ein Proton aufnehmen, deshalb reagieren Amine schwach basisch. Kurzkettige Amine riechen streng, sie entstehen unter anderem beim Verderben von Fisch.",
     "options": [
       "Amine",
       "Alkohole",
@@ -445,11 +445,11 @@
   },
   {
     "correct": 1,
-    "explanation": "Ether: R–O–R'. Bekanntes Beispiel: Diethylether (C₂H₅–O–C₂H₅). Wenig reaktiv.",
+    "explanation": "In einem Ether steht ein Sauerstoffatom zwischen zwei Kohlenstoffresten, kurz R–O–R'. Bekanntestes Beispiel ist Diethylether C₂H₅–O–C₂H₅. Untereinander können Ether keine Wasserstoffbrücken bilden und sieden deshalb viel niedriger als Alkohole gleicher Molekülmasse; chemisch sind sie sehr reaktionsträge.",
     "options": [
       "Eine C=O-Carbonylbindung zwischen Kohlenstoff und Sauerstoff",
-      "Eine C–O–C-Bindung zwischen zwei Kohlenstoffatomen",
-      "Eine O–H-Bindung der Hydroxylgruppe an ein Kohlenstoffatom",
+      "Ein Sauerstoffatom, das zwei Kohlenstoffatome verbrückt",
+      "Eine O–H-Gruppe, die an ein Kohlenstoffatom gebunden ist",
       "Eine C–N-Bindung zwischen einem Kohlenstoff- und einem Stickstoffatom"
     ],
     "question": "Was ist eine Etherbindung?",
@@ -457,11 +457,11 @@
   },
   {
     "correct": 2,
-    "explanation": "Cis-trans-Isomere haben dieselbe Strukturformel, unterscheiden sich aber räumlich – die eingeschränkte Rotation um die Doppelbindung verhindert freie Umwandlung.",
+    "explanation": "Um eine C=C-Doppelbindung lässt sich nicht frei drehen. Stehen zwei gleiche Substituenten auf derselben Seite der Doppelbindung, spricht man von der cis-Form, stehen sie einander gegenüber, von der trans-Form. Beide Formen haben dieselbe Strukturformel, unterscheiden sich aber in Schmelzpunkt und Dipolmoment.",
     "options": [
       "Verbindungen mit gleicher Molekülformel und vollständig identischer Struktur, also keine Isomere",
       "Eine Form der Kettenisomerie, bei der sich nur die Länge der Hauptkohlenstoffkette unterscheidet",
-      "Isomere, bei denen Substituenten räumlich verschieden an einer C=C-Doppelbindung angeordnet sind (cis = gleiche Seite, trans = gegenüber)",
+      "Isomere mit verschiedener räumlicher Anordnung an einer C=C-Doppelbindung",
       "Verbindungen mit verschiedener Summenformel und dadurch grundlegend unterschiedlicher Zusammensetzung"
     ],
     "question": "Was ist cis-trans-Isomerie (geometrische Isomerie)?",
@@ -469,14 +469,14 @@
   },
   {
     "correct": 3,
-    "explanation": "Veresterung: R-COOH + R-OH -> R-COO-R + H2O. Gleichgewichtsreaktion. Beschleunigt durch saure Katalyse. Fette sind Triester des Glycerins mit Fettsauren. Aspirin: Ester der Salicylsaure. Parfums nutzen Fruchtester.",
+    "explanation": "Trägt ein Kohlenstoffatom vier verschiedene Substituenten, heißt es asymmetrisch. Bild und Spiegelbild des Moleküls lassen sich dann nicht zur Deckung bringen, so wie linke und rechte Hand. Die beiden Formen heißen Enantiomere; sie stimmen in Schmelzpunkt und Löslichkeit überein und drehen die Ebene von polarisiertem Licht um denselben Betrag in entgegengesetzte Richtungen. Im Körper wirken sie oft völlig verschieden.",
     "options": [
-      "Eine Oxidationsreaktion, bei der ein Alkohol zu einem Aldehyd oder einer Säure reagiert",
-      "Eine Reduktionsreaktion, bei der ein Aldehyd zu einem primären Alkohol reduziert wird",
-      "Eine Additionsreaktion, bei der ein Molekül an eine C=C-Doppelbindung angelagert wird",
-      "Reaktion einer Carbonsäure mit einem Alkohol unter Abspaltung von Wasser zu einem Ester"
+      "Durch eine C=C-Doppelbindung, um die sich die Molekülteile nicht drehen können",
+      "Durch verschieden lange Hauptketten bei gleicher Summenformel des Moleküls",
+      "Durch die Stellung einer funktionellen Gruppe an unterschiedlichen C-Atomen",
+      "Durch ein Kohlenstoffatom mit vier verschiedenen Substituenten"
     ],
-    "question": "Was ist eine Veresterung in der organischen Chemie?",
-    "topic": "Funktionelle Gruppen"
+    "question": "Wodurch entstehen Enantiomere, also Bild und Spiegelbild eines Moleküls?",
+    "topic": "Isomerie"
   }
 ]

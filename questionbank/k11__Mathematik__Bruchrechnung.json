@@ -121,7 +121,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Wegen x² - 1 = (x - 1)(x + 1) ist der Hauptnenner x² - 1. Erweitern ergibt (x + 1)/(x² - 1) - 2/(x² - 1) + (x - 1)/(x² - 1). Die Zähler addieren sich zu x + 1 - 2 + x - 1 = 2x - 2, also (2x - 2)/(x² - 1). Faktorisieren des Zählers zu 2(x - 1) erlaubt das Kürzen mit (x - 1), es bleibt 2/(x + 1) für x ≠ 1 und x ≠ -1. Wer am Schluss nicht kürzt, bleibt bei 2x/(x² - 1) hängen.",
+    "explanation": "Wegen x² - 1 = (x - 1)(x + 1) ist der Hauptnenner x² - 1. Erweitern ergibt (x + 1)/(x² - 1) - 2/(x² - 1) + (x - 1)/(x² - 1). Die Zähler addieren sich zu x + 1 - 2 + x - 1 = 2x - 2, also (2x - 2)/(x² - 1). Faktorisieren des Zählers zu 2(x - 1) erlaubt das Kürzen mit (x - 1), es bleibt 2/(x + 1) für x ≠ 1 und x ≠ -1. Wer beim Zusammenfassen des Zählers die -2 übersieht, landet dagegen bei 2x/(x² - 1).",
     "options": [
       "2x / (x² - 1)",
       "2 / (x - 1)",

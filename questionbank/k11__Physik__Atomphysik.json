@@ -76,9 +76,9 @@
     "explanation": "De Broglie (1924): λ = h/p = h/(mv). Auch Materie hat Wellennatur – Elektronen erzeugen am Doppelspalt ein Interferenzmuster. Die Beziehung ist der Ausdruck des Welle-Teilchen-Dualismus.",
     "options": [
       "Die Wellenlänge des sichtbaren Lichts zwischen 400 und 700 nm",
-      "Die Zunahme der Wellenlänge bei der Streuung an Elektronen",
+      "Der Abstand zweier Wellenberge einer Röntgenwelle im Kristall",
       "Die einem Materieteilchen zugeordnete Wellenlänge λ = h/p",
-      "Die Wellenlänge eines Photons gleicher Energie wie das Teilchen"
+      "Die Wellenlänge λ = c/f eines Photons gleicher Energie wie das Teilchen"
     ],
     "question": "Was ist die de-Broglie-Wellenlänge?",
     "topic": "Quantenphysik"
@@ -145,7 +145,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Es gilt N(t) = N₀ · (1/2)^(t/T½). Halbwertszeiten reichen von Sekundenbruchteilen bis zu Milliarden Jahren (U-238: 4,5×10⁹ Jahre). Sie werden zur Altersbestimmung genutzt, etwa bei der Radiokarbonmethode.",
+    "explanation": "Nach jeder Halbwertszeit ist die Zahl der noch nicht zerfallenen Kerne auf die Hälfte gesunken: aus N₀ werden N₀/2, dann N₀/4, dann N₀/8. Halbwertszeiten reichen von Sekundenbruchteilen bis zu Milliarden Jahren (U-238: 4,5·10⁹ Jahre) und dienen der Altersbestimmung, etwa bei der Radiokarbonmethode.",
     "options": [
       "Die Zeit, in der die Hälfte der Kerne zerfallen ist",
       "Die Zeit, bis die Probe vollständig zerfallen ist",
@@ -161,8 +161,8 @@
     "options": [
       "Verbrennung von Kernbrennstoff bei extrem hohen Temperaturen",
       "Zerlegung schwerer Kerne durch Neutronen in zwei leichtere Kerne",
-      "Verschmelzung zweier leichter Kerne zu einem schweren Kern",
-      "Spontaner Zerfall schwerer Kerne unter Aussendung von Strahlung"
+      "Abbremsen schneller Neutronen im Moderator auf thermische Energie",
+      "Aufheizen eines Kerns durch Beschuss mit Elektronen, bis er zerfällt"
     ],
     "question": "Was ist Kernspaltung?",
     "topic": "Kernphysik"
@@ -183,8 +183,8 @@
     "correct": 3,
     "explanation": "Beispiel: D + T → ⁴He + n + 17,6 MeV. Die Fusion ist die Energiequelle der Sonne (Proton-Proton-Kette). Auf der Erde ist sie wegen der nötigen Temperaturen von Millionen Grad noch nicht als Kraftwerk nutzbar; der Versuchsreaktor ITER ist in Entwicklung.",
     "options": [
-      "Spaltung eines schweren Kerns durch Beschuss mit Neutronen",
-      "Zerfall eines instabilen Kerns unter Aussendung von Strahlung",
+      "Einfang eines Neutrons, wobei der Kern unverändert schwer bleibt",
+      "Einfang eines Elektrons aus der innersten Schale durch den Kern",
       "Beschleunigung von Kernen im Zyklotron ohne Kernreaktion",
       "Vereinigung leichter Kerne zu einem schwereren Kern"
     ],
@@ -301,7 +301,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Paarbildung ist die Umkehrung der Annihilation, etwa γ → e⁻ + e⁺. Das Photon braucht dafür mindestens E ≥ 2m_e·c² = 1,022 MeV. Der Vorgang läuft nur im Feld eines Atomkerns ab, weil dieser den Impuls aufnimmt.",
+    "explanation": "Ein energiereiches Photon verwandelt sich im Feld eines Atomkerns in ein Elektron und ein Positron: γ → e⁻ + e⁺. Dafür braucht es mindestens E ≥ 2m_e·c² = 1,022 MeV. Ohne den Kern, der den Impuls aufnimmt, ist der Vorgang nicht möglich.",
     "options": [
       "Zwei Photonen verschmelzen zu einem einzigen Lichtteilchen",
       "Aus einem Photon entsteht ein Paar aus Teilchen und Antiteilchen",
@@ -353,7 +353,7 @@
     "options": [
       "Eine Form des radioaktiven Zerfalls wie die α-Strahlung",
       "Energiereiche Strahlung, die abgebremste Elektronen aussenden",
-      "Gammastrahlung, die beim Zerfall des Atomkerns entsteht",
+      "Wärmestrahlung, die eine glühende Metallanode im Infraroten abgibt",
       "Sichtbares Licht besonders hoher Frequenz aus angeregten Atomen"
     ],
     "question": "Was ist Röntgenstrahlung und wie entsteht sie?",
@@ -409,38 +409,38 @@
   },
   {
     "correct": 2,
-    "explanation": "Heisenberg (1927): Δx · Δp ≥ h/(4π). Je genauer der Ort bestimmt wird, desto ungenauer ist der Impuls und umgekehrt. Es handelt sich um ein Naturgesetz und nicht um ein Problem der Messtechnik – der Abschied vom deterministischen Weltbild der klassischen Physik.",
+    "explanation": "Wolfgang Pauli formulierte 1925: In einem Atom dürfen zwei Elektronen nie in allen vier Quantenzahlen übereinstimmen. Deshalb fasst jedes Orbital höchstens zwei Elektronen, und daraus ergibt sich der schalenweise Aufbau des Periodensystems.",
     "options": [
-      "Jede Größe ist mit moderner Technik beliebig genau messbar",
-      "Licht breitet sich immer geradlinig und gleichförmig aus",
-      "Ort und Impuls sind nicht gleichzeitig scharf bestimmbar",
-      "Atome sind unteilbar und lassen sich nicht weiter zerlegen"
+      "Elektronen besetzen bevorzugt gemeinsam dasselbe Energieniveau",
+      "Die Elektronenzahl je Schale ist unbegrenzt und beliebig groß",
+      "Zwei Elektronen stimmen nie in allen Quantenzahlen überein",
+      "Alle Elektronen eines Atoms haben denselben Satz Quantenzahlen"
     ],
-    "question": "Was besagt die Heisenbergsche Unschärferelation?",
+    "question": "Was besagt das Pauli-Prinzip?",
     "topic": "Quantenphysik"
   },
   {
     "correct": 3,
-    "explanation": "Spaltung: Schwere Kerne wie Uran werden durch Neutronen zerlegt, eine Kettenreaktion ist möglich; Steuerstäbe halten sie im Kraftwerk unter Kontrolle. Problem ist der langlebige radioaktive Abfall. Fusion liefert pro Kilogramm Brennstoff mehr Energie und weniger Abfall, benötigt aber Temperaturen von Millionen Grad und ist als Kraftwerk noch nicht beherrschbar.",
+    "explanation": "In der Kernschreibweise gibt die Massenzahl A die Zahl aller Nukleonen an und die Kernladungszahl Z die Zahl der Protonen; die Neutronenzahl folgt aus N = A − Z. Beispiel Uran-235: 92 Protonen und 143 Neutronen. Z legt fest, um welches Element es sich handelt.",
     "options": [
-      "Beide Prozesse liefern nur Strahlung, aber keine nutzbare Energie",
-      "Nur die Fusion liefert Energie, die Spaltung verbraucht welche",
-      "Die Spaltung ist harmlos, da kein radioaktiver Abfall entsteht",
-      "Spaltung trennt schwere Kerne, Fusion vereinigt leichte Kerne"
+      "A ist die Zahl der Protonen im Kern, Z die Zahl der Neutronen",
+      "A gibt die Elektronenzahl an, Z die Ladung der Atomhülle",
+      "A ist die Kernmasse in Gramm, Z die Zahl der besetzten Schalen",
+      "A ist die Zahl aller Nukleonen, Z die Zahl der Protonen"
     ],
-    "question": "Was unterscheidet Kernspaltung von Kernfusion?",
+    "question": "Wofür stehen Massenzahl A und Kernladungszahl Z?",
     "topic": "Kernphysik"
   },
   {
     "correct": 0,
-    "explanation": "Energie wird nur beim Wechsel der Schale als Photon abgegeben oder aufgenommen; die erlaubten Bahnen legt eine Quantenbedingung fest. Grenze des Modells: Es rechnet nur bei Ein-Elektron-Systemen richtig. Genauer ist das Orbitalmodell aus der Schrödinger-Gleichung mit Wahrscheinlichkeitsverteilungen statt Bahnen.",
+    "explanation": "Der Spin ist ein Eigendrehimpuls ohne klassisches Gegenstück; das Elektron rotiert dabei nicht wirklich. Der Stern-Gerlach-Versuch wies ihn nach, weil ein Atomstrahl im Magnetfeld in genau zwei Teilstrahlen zerfällt. Auf dem Spin beruht der Magnetismus vieler Stoffe.",
     "options": [
-      "Elektronen kreisen auf erlaubten Schalen um den Atomkern",
-      "Das Atom ist eine kompakte Vollkugel ohne innere Struktur",
-      "Das Atom ist eine diffuse Wolke ohne einen festen Kern",
-      "Die Ladung ist gleichmäßig über das ganze Atomvolumen verteilt"
+      "Ein Eigendrehimpuls des Elektrons ohne klassisches Gegenstück",
+      "Die Umlaufgeschwindigkeit des Elektrons auf seiner Bahn um den Kern",
+      "Die Zahl der Umdrehungen, die ein Elektron je Sekunde ausführt",
+      "Die Drehrichtung, in der sich die ganze Atomhülle um den Kern bewegt"
     ],
-    "question": "Was ist das Bohr-Modell des Atoms?",
+    "question": "Was ist der Spin eines Elektrons?",
     "topic": "Atomphysik"
   },
   {

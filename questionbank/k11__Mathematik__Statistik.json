@@ -37,14 +37,14 @@
   },
   {
     "correct": 3,
-    "explanation": "Das arithmetische Mittel ist sehr empfindlich gegenüber Ausreißern (extremen Werten), während der Median als robust gegenüber Ausreißern gilt. Ein einzelnes extrem hohes Gehalt zieht das arithmetische Mittel stark nach oben, während der Median, der die Mitte der sortierten Datenreihe darstellt, nur geringfügig oder gar nicht verschoben wird, abhängig von der Anzahl der Daten.",
+    "explanation": "Das arithmetische Mittel berücksichtigt jeden einzelnen Wert und reagiert deshalb empfindlich auf Ausreißer: Es steigt von 4.000 Euro auf (10·4.000 + 20.000) : 11 ≈ 5.455 Euro. Der Median ist der sechstgrößte der elf Werte und liegt weiterhin bei rund 4.000 Euro.",
     "options": [
-      "Das arithmetische Mittel und der Median würden beide in ähnlichem Maße stark ansteigen.",
-      "Der Median würde stark steigen, während das arithmetische Mittel nur wenig beeinflusst wäre.",
-      "Beide Werte würden kaum beeinflusst, da es sich nur um eine einzelne Person handelt.",
-      "Das arithmetische Mittel würde stark steigen, während der Median nur wenig beeinflusst wäre."
+      "Das arithmetische Mittel und der Median steigen beide in ähnlichem Maße stark an.",
+      "Der Median steigt deutlich, während das arithmetische Mittel kaum beeinflusst wird.",
+      "Beide Werte bleiben nahezu unverändert, da nur eine einzige Person hinzukommt.",
+      "Das arithmetische Mittel steigt deutlich, während der Median fast gleich bleibt."
     ],
-    "question": "Ein Unternehmen gibt an, dass das durchschnittliche Gehalt seiner Mitarbeiter 4.000 Euro beträgt. Wenn jedoch ein neuer Geschäftsführer mit einem Gehalt von 20.000 Euro eingestellt wird, wie würde sich dies am ehesten auf das arithmetische Mittel und den Median der Gehälter auswirken?",
+    "question": "In einem Unternehmen verdienen zehn Mitarbeiter jeweils rund 4.000 Euro. Nun kommt ein Geschäftsführer mit einem Gehalt von 20.000 Euro hinzu. Wie wirkt sich das am ehesten auf das arithmetische Mittel und den Median der elf Gehälter aus?",
     "topic": "Lageparameter - Mittelwert und Ausreißer"
   },
   {
@@ -69,7 +69,7 @@
       "3/8"
     ],
     "question": "In einer Urne befinden sich 5 rote und 3 blaue Kugeln. Es werden zwei Kugeln nacheinander ohne Zurücklegen gezogen. Wie hoch ist die Wahrscheinlichkeit, dass die erste Kugel rot und die zweite Kugel blau ist?",
-    "topic": "Wahrscheinlichkeitsrechnung - Bedingte Wahrscheinlichkeit"
+    "topic": "Wahrscheinlichkeitsrechnung - Ziehen ohne Zurücklegen"
   },
   {
     "correct": 2,
@@ -85,14 +85,14 @@
   },
   {
     "correct": 3,
-    "explanation": "Die relative Häufigkeit berechnet sich, indem die absolute Häufigkeit (Anzahl der Schüler mit Mathematik als Lieblingsfach) durch die Gesamtzahl der Beobachtungen (Gesamtzahl der Schüler) geteilt wird. Hier: 5 / 25 = 0,2 = 20%.",
+    "explanation": "Die relative Häufigkeit ist die absolute Häufigkeit geteilt durch die Gesamtzahl der Beobachtungen. In der ersten Klasse sind das 5 : 25 = 0,20, in der zweiten 6 : 30 = 0,20. Die absoluten Häufigkeiten unterscheiden sich, die relativen Häufigkeiten stimmen dagegen überein.",
     "options": [
-      "5%",
-      "15%",
-      "25%",
-      "20%"
+      "In der ersten Klasse, weil dort insgesamt weniger Schüler befragt wurden",
+      "In der zweiten Klasse, weil dort 6 statt 5 Schüler Mathematik nennen",
+      "Ein Vergleich ist bei unterschiedlich großen Klassen gar nicht möglich",
+      "In beiden Klassen ist sie gleich groß, sie beträgt jeweils 0,20"
     ],
-    "question": "In einer Schulklasse mit 25 Schülern haben 5 Schüler Mathematik als Lieblingsfach. Welche relative Häufigkeit entspricht dies?",
+    "question": "In einer Klasse mit 25 Schülern nennen 5 Mathematik als Lieblingsfach, in einer zweiten Klasse mit 30 Schülern sind es 6. In welcher Klasse ist die relative Häufigkeit größer?",
     "topic": "Häufigkeiten"
   },
   {
@@ -109,15 +109,15 @@
   },
   {
     "correct": 1,
-    "explanation": "Die Standardabweichung ist ein Maß für die Streuung der Daten. Ein hoher Wert bedeutet, dass die Datenpunkte im Durchschnitt weit vom Mittelwert entfernt sind, also stark streuen.",
+    "explanation": "Zuerst werden die Abweichungen vom Mittelwert 5 quadriert und addiert: 9 + 1 + 1 + 1 + 0 + 0 + 4 + 16 = 32. Geteilt durch die Anzahl n = 8 ergibt das die Varianz 32 : 8 = 4. Die Standardabweichung ist die Wurzel der Varianz, also √4 = 2.",
     "options": [
-      "nah am Mittelwert liegen.",
-      "weit um den Mittelwert gestreut sind.",
-      "einen hohen Median haben.",
-      "immer normalverteilt sind."
+      "1,5",
+      "2",
+      "2,5",
+      "4"
     ],
-    "question": "Eine hohe Standardabweichung in einem Datensatz deutet darauf hin, dass die Datenpunkte...",
-    "topic": "Standardabweichung und Streuung"
+    "question": "Die acht Werte 2, 4, 4, 4, 5, 5, 7, 9 haben den Mittelwert 5. Wie groß ist ihre Standardabweichung, wenn durch die Anzahl n geteilt wird?",
+    "topic": "Standardabweichung berechnen"
   },
   {
     "correct": 2,
@@ -352,7 +352,7 @@
     "explanation": "Bernoulli-Experiment: genau zwei Ausgänge (Erfolg mit Wahrscheinlichkeit p, Misserfolg mit 1−p).",
     "options": [
       "Ein Zufallsexperiment mit genau drei verschiedenen möglichen Ausgängen",
-      "Ein Zufallsexperiment mit genau zwei möglichen Ausgängen (Treffer/Niete)",
+      "Ein Zufallsexperiment mit genau zwei Ausgängen, Treffer oder Niete",
       "Eine stetige Zufallsvariable mit unendlich vielen möglichen Ausprägungen",
       "Ein deterministisches Experiment, bei dem keine Wahrscheinlichkeiten auftreten"
     ],
@@ -364,8 +364,8 @@
     "explanation": "Das sichere Ereignis Ω tritt immer ein: P(Ω) = 1.",
     "options": [
       "Das Ereignis, das unter keinen Umständen eintreten kann (P = 0)",
-      "Ein Ereignis, das mit genau gleicher Wahrscheinlichkeit eintritt (P = 0,5)",
-      "Das Ereignis, das mit Sicherheit immer eintritt (P = 1)",
+      "Ein Ereignis, das genauso wahrscheinlich ist wie sein Gegenteil (P = 0,5)",
+      "Das Ereignis Ω, das bei jedem Versuch mit Sicherheit eintritt (P = 1)",
       "Ein einzelnes Elementarergebnis aus der gesamten Ergebnismenge"
     ],
     "question": "Was ist das sichere Ereignis?",
@@ -375,10 +375,10 @@
     "correct": 3,
     "explanation": "Das unmögliche Ereignis ∅ hat P(∅) = 0.",
     "options": [
-      "Ein Ereignis, das mit genau gleicher Wahrscheinlichkeit eintritt (P = 0,5)",
+      "Ein Ereignis, das genauso wahrscheinlich ist wie sein Gegenteil (P = 0,5)",
       "Das sichere Ereignis, das mit Wahrscheinlichkeit 1 immer eintritt",
       "Ein Ereignis, das aus mehreren Elementarergebnissen zusammengesetzt ist",
-      "Das Ereignis, das niemals eintreten kann (P = 0)"
+      "Das leere Ereignis ∅, das bei keinem Versuch eintreten kann (P = 0)"
     ],
     "question": "Was ist das unmögliche Ereignis?",
     "topic": "Grundbegriffe"
@@ -397,10 +397,10 @@
   },
   {
     "correct": 1,
-    "explanation": "Bei der Normalverteilung: ≈68% in [μ−σ, μ+σ], ≈95% in [μ−2σ, μ+2σ], ≈99,7% in [μ−3σ, μ+3σ].",
+    "explanation": "Bei einer Normalverteilung liegen rund 68% aller Werte zwischen μ−σ und μ+σ, rund 95% zwischen μ−2σ und μ+2σ und rund 99,7% zwischen μ−3σ und μ+3σ.",
     "options": [
       "Genau 68% aller Werte liegen oberhalb des Medians der Normalverteilung",
-      "68%/95%/99,7% aller Werte liegen innerhalb 1σ/2σ/3σ um den Erwartungswert",
+      "Rund 68%, 95% und 99,7% aller Werte liegen im 1σ-, 2σ- und 3σ-Bereich",
       "Exakt 95% aller Messwerte sind identisch mit dem Erwartungswert μ",
       "Rund 99,7% aller vorkommenden Datenwerte gelten als statistische Ausreißer"
     ],
@@ -509,7 +509,7 @@
     "options": [
       "Die Quadratwurzel aus dem berechneten Erwartungswert der Zufallsvariablen X",
       "Der Erwartungswert selbst, also der gewichtete Mittelwert der Verteilung",
-      "Die mittlere quadratische Abweichung aller Datenwerte vom Erwartungswert μ",
+      "Die mittlere quadratische Abweichung der Werte von X vom Erwartungswert μ",
       "Die größte auftretende Abweichung eines Einzelwertes vom Mittelwert μ"
     ],
     "question": "Was ist die Varianz einer Zufallsvariablen?",

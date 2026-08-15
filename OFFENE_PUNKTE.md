@@ -5234,3 +5234,1426 @@ Erlkönig 1782 (Singspiel „Die Fischerin"): de.wikipedia.org/wiki/Erlkönig_(B
 - **Hinweis:** Im Arbeitsverzeichnis liegen zusätzlich Änderungen an
   `k8__Mathematik__Bruchrechnung.json` und `k9__Geschichte__Allgemein.json`, die während
   dieser Sitzung entstanden, aber **nicht** aus dieser Nachprüfung stammen.
+
+# Nachtrag: 15. August 2026 — Inhaltsdurchlauf k11 Mathematik (4 Dateien)
+
+Geprüft: `k11__Mathematik__Allgemein`, `__Bruchrechnung`, `__Gleichungen`,
+`__Kopfrechnen` (je 16 Fragen, zusammen 64). Erster inhaltlicher Durchlauf über diese
+Dateien. Jede Aufgabe wurde von Hand nachgerechnet und danach ein zweites Mal
+unabhängig numerisch gegengeprüft (69 Einzelchecks: Ableitungen per
+Differenzenquotient, Optimierungen per Rasterminimum, Lösungen durch Einsetzen,
+Bruchterme durch Stichprobenwerte).
+
+**Ergebnis: keine einzige falsch markierte Antwort.** In allen 64 Fragen stimmt
+`correct` mit der Rechnung und mit der Erklärung überein. Auch die in den
+Erklärungen genannten Distraktor-Herleitungen ließen sich fast durchweg
+nachvollziehen. Das ist deutlich weniger Ausbeute als bei den bisherigen Chargen —
+die vier Dateien waren sachlich in gutem Zustand.
+
+## 60. Was korrigiert wurde
+
+- **Bruchrechnung, Index 10** — einziger echter Sachfehler. Der Schlusssatz der
+  Erklärung lautete „Wer am Schluss nicht kürzt, bleibt bei 2x/(x² - 1) hängen."
+  Das stimmt nicht: ungekürzt lautet das Ergebnis (2x - 2)/(x² - 1), und das ist
+  wertgleich mit der richtigen Antwort 2/(x + 1). Der Distraktor 2x/(x² - 1)
+  entsteht nicht durch fehlendes Kürzen, sondern durch einen Zählerfehler
+  (x + 1 - 2 + x - 1 fälschlich als 2x statt 2x - 2). Satz entsprechend ersetzt.
+  Wichtig: Der Distraktor selbst wurde **nicht** an die Erklärung angepasst — mit
+  (2x - 2)/(x² - 1) hätte die Frage zwei wertgleiche richtige Optionen und wäre
+  unlösbar geworden.
+- **Allgemein, Index 1** — Option „auf ganz R streng monoton steigend" schrieb die
+  reellen Zahlen als schlichtes „R", während alle übrigen Fragen dieser Kataloge ℝ
+  verwenden. Auf ℝ vereinheitlicht.
+- **Allgemein, Index 8** — Fragetext „f(x) = √(x - 3) / (x - 5)" ließ offen, ob die
+  Wurzel nur über den Zähler oder über den ganzen Bruch geht. Bei der zweiten
+  Lesart wäre die hinterlegte Antwort falsch (dann gälte x ≤ 3 oder x > 5, und
+  Option „x ≤ 3 und x ≠ 5" käme ins Spiel). Zu „(√(x - 3)) / (x - 5)" geklammert.
+- **Allgemein, Index 10** — „An welchen Stellen x hat die Funktion … lokale
+  Extrempunkte?" vermengte Stellen und Punkte. Neu: „Welche lokalen Extremstellen
+  hat die Funktion f(x) = x³ - 6x² + 9x - 2?" Antworten unverändert.
+
+## 61. Zweifelsfälle und Beobachtungen — bitte entscheiden
+
+- **Das LaTeX-Markup steckt woanders.** Der Auftrag verortete `$\frac{3x}{4}$` in
+  `k11__Mathematik__Gleichungen.json`. Dort ist nichts dergleichen; meine vier
+  Dateien sind vollständig frei von LaTeX. Betroffen ist
+  **`k11__Mathematik__Geometrie.json`** (u. a. `$\frac{5}{3}$`,
+  `$\frac{\sqrt{2}}{2}$`, ganze Erklärungen in `$…$`), gestreift auch
+  `k11__Mathematik__Algebra.json` (`lim_{h→0}`, `x_{n+1}`, `∫_a^∞`). Ich habe beide
+  **nicht** angefasst, weil sie nicht zu meinen Dateien gehören — das muss jemand
+  übernehmen.
+- **Gleichungen, Index 4** enthält echte Zeilenumbrüche im Fragetext (LGS über drei
+  Zeilen I/II/III). Projektweit machen das nur 22 von 8480 Fragen. Ob die App den
+  Umbruch rendert oder als Leerzeichen anzeigt, habe ich nicht verifiziert; lesbar
+  bleibt die Frage in beiden Fällen. Unverändert gelassen.
+- **Gleichungen: ein Muster über die Datei hinweg.** In den Indizes 7, 11, 14 und 15
+  gibt es jeweils eine Option, die beide rechnerischen Kandidaten nennt („x = 2 und
+  x = -1", „x = 0 und x = 4", „x = 1 und x = -3", „x = 4 und x = -2"), und sie ist
+  jedes Mal falsch, weil einer der Werte Scheinlösung ist. Wer den Katalog oft
+  spielt, kann daraus eine Rateregel machen. Zusätzlich sind die beiden
+  Wurzelgleichungen (Index 7 und 11) konzeptuell fast identisch: quadrieren,
+  quadratische Gleichung, eine Scheinlösung verwerfen. Beides ist kein Fehler und
+  keine Dublette im definierten Sinn — falls du es aufbrechen willst, wäre eine
+  Wurzelgleichung mit zwei echten Lösungen oder ganz ohne Lösung der Ersatz.
+- **Allgemein: zwei topic-Stile in einer Datei.** Die Indizes 0–7 schreiben
+  „Differentialrechnung – Ableitungsregeln" (Gedankenstrich), die Indizes 8–15
+  „Funktionen: Definitionsbereich" (Doppelpunkt). Sieht nach zwei Generierungschargen
+  aus. Inhaltlich passen alle topics; ich habe den Stil nicht angeglichen, um nicht
+  ungefragt an einem Feld zu drehen, das anderswo zur Gruppierung dienen könnte.
+- **Kopfrechnen enthält drei Ableitungsaufgaben** (Index 0, 7, 9). Für Klasse 11 sind
+  (x·e^x)', ln(3x)' und (√x)'(4) tatsächlich Kopfrechnen-Kaliber, insofern passend —
+  nur der Dateiname legt zunächst reine Zahlenrechnung nahe.
+- **Der `correct`-Zyklus 0-1-2-3** läuft in allen vier Dateien streng durch (wie in
+  allen k11-Mathematik-Katalogen). Die Verteilung ist damit perfekt gleichmäßig,
+  aber die Reihenfolge ist vorhersagbar, falls die App die Optionen einmal nicht
+  mischen sollte. Unangetastet gelassen.
+
+## 62. Prüfungen nach dem Durchlauf
+
+- `check_questions.js k11__Mathematik --dir questionbank` — meine vier Dateien
+  **ohne Befund** (der eine gemeldete Befund, „richtige Antwort deutlich längste",
+  liegt in `k11__Mathematik__Algebra.json`, Q104, und gehört nicht zu dieser Charge)
+- `check_struktur.js` je Datei — **0 / 0 / 0 / 0** (vorher ebenfalls 0)
+- Anzahl **16 / 16 / 16 / 16** unverändert, Reihenfolge erhalten
+- Format geprüft: UTF-8 ohne BOM, LF, 2 Leerzeichen Einrückung, Feldreihenfolge
+  `correct / explanation / options / question / topic` in allen 64 Einträgen; der
+  Round-Trip `JSON.stringify(…, null, 2)` ergibt die Datei byteweise identisch
+- Keine Umlaut-Ersatzschreibungen, keine Caret-Notation bei ganzzahligen Exponenten
+  (Bruch- und Variablenexponenten bleiben in der projektüblichen Form `x^(2/3)`,
+  `e^(2x)` — dafür gibt es keine Unicode-Entsprechung)
+- Kein Commit, kein Push — die Änderungen liegen unversioniert im Arbeitsverzeichnis
+
+
+---
+
+## Inhaltsdurchlauf 15.8.2026 — `k11__Mathematik__Algebra` Teil 1 (Fragen 1–68)
+
+Erste fachliche Prüfung dieser Fragen. Behoben wurde alles unter „Funde"; die folgenden
+Punkte blieben als **Zweifelsfälle** stehen und brauchen deine Entscheidung.
+
+### Themenzuordnung passt nicht zum Dateinamen
+
+Die Datei heißt **Algebra**, aber nur die Fragen 1–16 sind Algebra (Logarithmen,
+Potenzen, Wurzeln, Exponential- und Logarithmusgleichungen, Ungleichungen,
+Definitionsbereiche, Nullstellen, Asymptoten). Die **Fragen 17–68 sind Analysis**:
+Ableitungsregeln, Kurvendiskussion (Monotonie, Extrema, Wendepunkte, Tangente),
+Stammfunktionen, bestimmtes Integral, Hauptsatz. Die `topic`-Felder passen jeweils zur
+Frage, der Katalogname passt nicht zum Inhalt. Nicht angerührt, weil eine Verschiebung
+in einen Analysis-Katalog eine Katalogentscheidung ist, keine Frage-Korrektur.
+
+### Zwei Fragestile in einer Datei
+
+Fragen 1–16 sind mehrschrittige Rechenaufgaben (Text plus Rechenweg), Fragen 17–68 sind
+kurze Formel- und Begriffsabfragen („Was ist die Ableitung von …?"). Beides ist
+Klasse-11-Niveau, aber der Schwierigkeitssprung innerhalb einer Runde ist spürbar.
+
+### Spiegelpaare — verraten sich gegenseitig, wenn beide in dieselbe Runde geraten
+
+Jede Frage für sich ist korrekt, aber die Paare sind komplementär formuliert. Wer die
+eine beantwortet, kennt die andere:
+
+- 27 / 28 — `f'(x) > 0` steigend vs. `f'(x) < 0` fallend
+- 30 / 31 — lokales Maximum vs. lokales Minimum über `f''`
+- 43 / 44 — Hoch- vs. Tiefpunkt von `f(x) = x³ − 3x`
+- 60 / 61 — Stammfunktion von `sin` vs. `cos`
+
+Ob das stört, hängt daran, wie die App aus einem Katalog zieht (5 Fragen je Runde).
+
+### Grenzfall Frage 52 („Punkt mit waagerechter Tangente")
+
+Richtige Antwort ist „Stationärer Punkt". Der Distraktor „Wendepunkt" ist für den
+Sonderfall Sattelpunkt ebenfalls zutreffend — durchgängig korrekt ist aber nur
+„Stationärer Punkt", deshalb belassen.
+
+### Funde und Behebungen (Nummerierung wie oben: Frage = Index + 1)
+
+| Frage | Fund | Behebung |
+|---|---|---|
+| 30 | Erklärung nannte `f''(x₀) < 0` „Linkskrümmung" — fachlich falsch | auf Rechtskrümmung korrigiert |
+| 31 | Erklärung nannte `f''(x₀) > 0` „Rechtskrümmung" — fachlich falsch | auf Linkskrümmung korrigiert |
+| 53 | inhaltliche Dublette zu Frage 19 (beide: Ableitung einer Konstanten = 0) | ersetzt durch Ableitung von `f(x) = 4x` |
+| 54 | Antwort `1/x` identisch mit Frage 25 (`ln(x)`), nur mit Vorfaktor verpackt | ersetzt durch Ableitung von `f(x) = 2ˣ` |
+| 10 | fast identisch mit Frage 4 (beide Basis 3, Ergebnis 27) | auf `5^(2x-1) = 125` umgestellt |
+| 17 | Erklärung zitierte die Potenzregel wörtlich — das ist die Antwort von Frage 18 | Erklärung ohne Formel neu formuliert |
+| 57 | Erklärung zitierte die allgemeine Integrationsregel — Antwort von Frage 66 | Erklärung ohne Formel neu formuliert |
+| 48 | Erklärung nannte `x⁴` (Antwort von Frage 56) und `x³` (Antwort von Frage 45) | Beispiele entfernt, allgemein formuliert |
+| 43 / 44 | Erklärungen nannten jeweils beide Kandidaten `x = ±1` | je nur die eigene Stelle |
+| 16 | Distraktoren mit Begründungssatz, richtige Option ohne — Strukturverrat | alle vier Optionen gleich gebaut |
+| 62 / 65 | richtige Option deutlich kürzer als die Distraktoren | Optionen längenbalanciert |
+| 42 | Längenspreizung der Optionen | angeglichen |
+| 9–16 | Caret- und ASCII-Notation (`x^2`, `sqrt(...)`, `x_1`, `>=`, `!=`, `log_2`, `in R`) | auf Unicode umgestellt (² ³ √() x₁ ≥ ≠ log₂ ∈ ℝ) |
+| 5, 9 | Vereinfachungsaufgaben ohne „vollständig" | Fragetext präzisiert |
+| 2 | „könnte ein Faktor sein" — unnötig unscharf | „ist ein Linearfaktor" |
+
+Alle 68 Aufgaben wurden nachgerechnet; außer den genannten Punkten war `correct` überall
+korrekt gesetzt und mit der Erklärung konsistent. Anzahl 68 und Reihenfolge unverändert,
+`correct`-Verteilung 17/17/17/17. Kein Commit, kein Push, kein Merge.
+
+---
+
+## 186. k11 Chemie (Organische Chemie, Reaktionen, Allgemein): erster Inhaltsdurchlauf (15.8.2026)
+
+87 Fragen, alle erstmals fachlich geprüft. Rechnungen nachgerechnet, Reaktionsgleichungen
+ausgeglichen, Nomenklatur kontrolliert. `correct` war in allen 87 Fällen richtig gesetzt
+und mit der Erklärung konsistent — es gab keine einzige falsch markierte Antwort. Die
+Befunde lagen bei Bauform, Dubletten und Kreuzverrat.
+
+### `k11__Chemie__Organische_Chemie` (40 Fragen)
+
+Die mit Abstand schwächste der drei Dateien: acht Fragen verrieten sich über die Bauform,
+die Längenkennzahl lag bei 40 % (Ziel 25 %), und die Erklärungen waren durchgängig
+Stichwort-Fragmente statt begründender Sätze.
+
+| Index | Fund | Behebung |
+|---|---|---|
+| 39 | inhaltliche Dublette zu 11 (beide: Carbonsäure + Alkohol → Ester); zudem die einzige Frage der Datei ohne Umlaute („Fettsauren", „Salicylsaure") und mit ASCII-Formeln | ersetzt durch eine neue Frage zur Spiegelbildisomerie (Enantiomere, asymmetrisches C-Atom) |
+| 9 | Erklärung nannte „Propanon (Aceton, CH₃COCH₃)" — das ist wörtlich die Antwort von Frage 32 | Erklärung ohne Stoffnamen neu formuliert |
+| 30 | Distraktor 0 war wortgleich die richtige Antwort von Frage 15 (Bromwasser-Test) | ersetzt durch den Halogenid-Nachweis mit Silbernitrat |
+| 20 | Distraktor 3 („Aminosäure mit Amino- und Carboxylgruppe") gab die Antwort von Frage 22 preis | ersetzt durch „Zuckeralkohol mit der Formel C₆H₁₄O₆" |
+| 4 | nur eine der vier Optionen nannte überhaupt Alkane — ohne Fachwissen lösbar; `topic` „Nomenklatur" passte nicht | alle vier Optionen als Alkan-Aussagen gebaut, `topic` auf „Kohlenwasserstoffe" |
+| 9, 12, 25, 27, 28, 30, 34, 38 | Klammer-Verrat: die richtige Option war die einzige mit Klammerzusatz (`check_struktur` meldete acht Fälle) | Zusatz überall entfernt bzw. in die Erklärung verschoben |
+| 11, 13, 19, 20, 33 | Klammerzusatz nur in zwei oder drei der vier Optionen | vereinheitlicht |
+| 22 | drei von vier Optionen mit Klammer | Klammern in allen vier entfernt |
+| 26 | richtige Option war die einzige ausformulierte Begründung, die drei Distraktoren waren Halbsätze | alle vier auf „Mit steigender Kettenlänge …" gebaut |
+| 35, 38 | richtige Option deutlich die längste (124 bzw. 140 Zeichen gegen ~100) | gekürzt, Begründung in die Erklärung |
+| 32 | Distraktoren „Propan-2-al" und „Propen-1-on (Acrolein)" sind als Namen unsinnig: ein Aldehyd steht immer an Position 1, und Acrolein ist ein Propenal, kein Propenon | ersetzt durch „Propanal (Propionaldehyd)" und „Propansäure (Propionsäure)" |
+| 37 | „Eine C–O–C-Bindung zwischen zwei Kohlenstoffatomen" — schief, die Bindung besteht nicht zwischen den C-Atomen; Distraktor 2 „O–H-Bindung der Hydroxylgruppe an ein Kohlenstoffatom" ebenso | beide Optionen fachlich sauber formuliert |
+| 28 | „Keton durch Oxidation der mittleren C=O-Gruppe" — eine C=O-Gruppe wird nicht oxidiert, sie entsteht | auf „Ein Keton mit der Carbonylgruppe in der Kettenmitte" umgestellt |
+| alle 40 | Erklärungen waren Stichwortzeilen im Telegrammstil („Alkine: CₙH₂ₙ₋₂. Einfachstes Alkin: Ethin …") | durchgängig zu begründenden deutschen Sätzen ausgebaut, auf dem Niveau der beiden anderen Chemie-Dateien |
+
+### `k11__Chemie__Reaktionen` (39 Fragen)
+
+| Index | Fund | Behebung |
+|---|---|---|
+| 11 | Erklärung begrenzte die pH-Skala auf 0 bis 14 — derselbe Fehler, der schon einmal gemeldet war | ergänzt, dass 0–14 nur der Alltagsbereich ist und konzentrierte Säuren und Laugen darüber hinausgehen |
+| 33 | inhaltliche Dublette zu 29: „Welche Produkte entstehen an Kathode und Anode bei der NaCl-Elektrolyse?" ist dasselbe Faktum wie „Was ist die Chlor-Alkali-Elektrolyse?", und die Erklärung von 29 nannte die Antwort von 33 wörtlich | ersetzt durch eine neue Frage zur Nernst-Gleichung |
+| 3, 5 | beide Erklärungen rechneten `0,34 V − (−0,76 V) = 1,10 V` vor und verrieten damit die Antwort von Frage 18 (`E_Zelle = E°_Kathode − E°_Anode`) | Formel aus beiden Erklärungen entfernt, Spannungswert bleibt |
+| 4 | Erklärung nannte „Anode = Pluspol, Kathode = Minuspol" — das ist die Antwort von Frage 19 | durch Zersetzungsspannung und technische Anwendungen ersetzt |
+| 9 | Erklärung endete mit „Wasser … ist damit ein Ampholyt" — das ist die Antwort von Frage 26 | Schlusssatz ersetzt |
+| 6 | „Oben stehen starke Reduktionsmittel, unten starke Oxidationsmittel" — gilt nur für eine bestimmte Darstellung der Tabelle | auf „an dem einen Ende … am anderen …" umgestellt |
+| 36 | Salzhydrolyse als einseitiger Pfeil geschrieben, obwohl es ein Gleichgewicht ist | auf ⇌ korrigiert, Fall NaCl ergänzt |
+| 9, 22 | Klammerzusatz nur in zwei bzw. einer der vier Optionen | vereinheitlicht |
+
+### `k11__Chemie__Allgemein` (8 Fragen)
+
+Fachlich ohne Befund. Elektronenkonfiguration des Schwefels, Atomradius-Trend, HCl-Bindung,
+`m = n · M` mit 50 g, die Propan-Verbrennung `C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O`, Sulfat-Schwefel
+mit +VI, Zink als Reduktionsmittel und pH 2 für 0,01 mol/L Salzsäure sind alle korrekt.
+Einzige Änderung: Frage 5 gab die Optionen arabisch („+6") an, während die Erklärung
+römisch („+VI") schrieb — auf die schulübliche römische Schreibweise vereinheitlicht.
+
+### Zweifelsfälle für dich
+
+1. **`k11__Chemie__Allgemein` hat nur 8 Fragen.** Alle anderen k11-Kataloge haben 40. Bei
+   acht Fragen greift die Längenmessung nicht (das Skript wertet erst ab 10 eindeutigen
+   Fällen), die Datei erscheint deshalb nie als auffällig, ohne dass das etwas aussagt.
+   Ob sie auf 40 aufgefüllt oder in die beiden anderen Dateien aufgelöst wird, ist offen.
+
+2. **Niveau der beiden Ersatzfragen.** Die Nernst-Gleichung (`Reaktionen` 33) und die
+   Enantiomerie (`Organische Chemie` 39) sind in den meisten Bundesländern Q-Phasen-Stoff,
+   nicht Einführungsphase. Beide Dateien enthalten aber schon Löslichkeitsprodukt, pK_s
+   und Faradaysches Gesetz, insofern passt es zum vorhandenen Niveau. Wenn dir Klasse 11
+   enger gefasst lieber ist, sag Bescheid — dann ersetze ich beide durch leichtere Fragen.
+
+3. **Komplementäre Paare bleiben bestehen** (wie schon bei k11 Mathematik notiert): 19/4
+   Anode–Kathode, 24/25 Lewis–Arrhenius, 28/27 Löslichkeitsprodukt–Fällung, sowie in der
+   Organik 9/8 Keton–Aldehyd und 19/34 Thermoplast–Duroplast. Jede Frage ist für sich
+   korrekt, aber wer die eine kennt, kennt die andere. Ob das stört, hängt daran, wie die
+   App fünf Fragen aus einem Katalog zieht.
+
+### Prüfungen nach dem Durchlauf
+
+- `check_questions.js k11__Chemie --dir questionbank --summary` → 87 Fragen, 0 Befunde
+- `check_struktur.js` je Datei → 0 (vorher: Organische Chemie 8)
+- `check_laenge.js --alle --dir questionbank` → Organische Chemie 23/23/19/35, längste 23 %
+  (vorher 40/23/11/26 bei 40 %); Reaktionen 26/21/26/26 bei 26 %; beide im Korridor
+- Anzahl 40 / 39 / 8 unverändert, Reihenfolge unverändert, `correct`-Verteilung
+  10/10/10/10, 10/10/10/9 und 2/2/2/2 unverändert
+- Format unverändert: rohes JSON-Array, 2 Leerzeichen, LF, UTF-8 ohne BOM,
+  Feldreihenfolge `correct` / `explanation` / `options` / `question` / `topic`
+
+Kein Commit, kein Push.
+
+## 187. k11 Biologie (Evolution, Genetik, Botanik): erster Inhaltsdurchlauf (15.8.2026)
+
+88 Fragen aus `questionbank/k11__Biologie__Evolution.json` (40),
+`k11__Biologie__Genetik.json` (40) und `k11__Biologie__Botanik.json` (8), erstmals
+fachlich geprüft. Anzahl und Reihenfolge unverändert, `correct` in keiner Frage
+umgesetzt (alle drei Dateien liegen zyklisch 0/1/2/3, die Balance ist damit exakt
+erhalten); Korrekturen ausschließlich über Optionstexte und Erklärungen.
+
+### Zweifelsfälle — bitte entscheiden
+
+- **`k11__Biologie__Evolution.json` heißt Evolution, ist aber überwiegend Ökologie.**
+  Nur 15 der 40 Fragen tragen `topic: "Evolution"`; die übrigen sind Ökologie,
+  Nahrungsnetz, Energiefluss, Stoffkreisläufe, Fotosynthese, Zellatmung, Stoffwechsel
+  und Umwelt. Fachlich ist jede Frage in Ordnung und jedes `topic` passt zur Frage —
+  der **Dateiname** passt aber nicht zum Inhalt. Vorschlag: entweder umbenennen
+  (z. B. `k11__Biologie__Evolution_und_Oekologie`) oder in zwei Kataloge trennen.
+  Nicht eigenmächtig geändert, weil der Dateiname der Firebase-Zielpfad ist.
+- **`k11__Biologie__Botanik.json` hat nur 8 Fragen.** Bei 5 Fragen je Runde ist der
+  Katalog nach zwei Runden erschöpft und wiederholt sich fast vollständig. Inhaltlich
+  sind die 8 Fragen gut (Fotosynthese, Wasser- und Assimilattransport, Phototropismus,
+  Stomata, CAM, Kambium) — es fehlt schlicht Masse. Aufstocken auf 40 wäre sinnvoll.
+- **`k11__Biologie__Evolution.json` [13] Speziation und [39] adaptive Radiation**
+  liegen begrifflich nahe beieinander. Sie sind sauber getrennt (Artbildung allgemein
+  vs. rasche Auffächerung in freie Nischen) und teilen keine Option, könnten einem
+  Schüler aber als „dasselbe" erscheinen. Belassen, weil beide Begriffe im
+  Oberstufen-Lehrplan getrennt geführt werden.
+
+### Funde und Behebungen — `k11__Biologie__Evolution.json`
+
+| Index | Fund | Behebung |
+|---|---|---|
+| 39 | **Dublette zu [3]**: identische Frage („Was ist eine Anapassung (Adaptation) in der Biologie?" vs. „Was ist Adaptation?"), identische richtige Antwort, dazu Tippfehler „Anapassung" | ersetzt durch neue Frage „Was ist adaptive Radiation?" (`correct` bleibt 3) |
+| 1 | Kreuzverrat: Erklärung nannte „Gendrift" samt Definition — das ist die Antwort von [17] | Erklärung auf den Fortpflanzungserfolg umgestellt |
+| 4 | Kreuzverrat: „Ökosystem = Biozönose (Lebensgemeinschaft) + Biotop" verriet die Antwort von [5] | Erklärung ohne die Gleichsetzung neu formuliert |
+| 5 | Kreuzverrat: „Biozönose plus Biotop ergeben zusammen das Ökosystem" verriet die Antwort von [4] | Schlusssatz ersetzt |
+| 5 | Klammer-Verrat: nur eine Option trug einen Zusatz „(Biotop)" | Klammer entfernt |
+| 6 | Kreuzverrat: „Bakterien und Pilze Destruenten" verriet die Antwort von [7] | Erklärung auf die Produzenten selbst umgestellt |
+| 15 | Kreuzverrat: „Gleiche Funktion bei verschiedenem Bauplan ist dagegen Analogie" ist wörtlich die Antwort von [31] | durch den geerbten Grundbauplan der Wirbeltier-Vordergliedmaße ersetzt |
+| 18 | Kreuzverrat: „Nutzen auf Kosten des Partners Parasitismus" verriet die Antwort von [19] | Schlusssatz ersetzt |
+| 19 | Kreuzverrat: „Beiderseitiger Nutzen wäre Symbiose" verriet die Antwort von [18] | Schlusssatz ersetzt |
+| 21 | Kreuzverrat: „Sukzession läuft bis zur Klimaxgesellschaft" verriet die Antwort von [32] | Einleitungssatz ersetzt |
+| 28 | Kreuzverrat: „Das Gegenstück ist die K-Selektion" verwies auf [29], dessen Antwort als Distraktor danebenstand | Schlusssatz ersetzt |
+| 31 | Kreuzverrat: nannte „konvergente Evolution" ([14]) und „Homologie" ([15]) | Erklärung auf den konkreten Bau der beiden Flügel umgestellt |
+| 3 | Struktur-Verrat: als einzige Option ohne Artikel gebaut („Erbliches Merkmal, …") | auf „Ein erbliches Merkmal, …" angeglichen |
+| 12 | Unschärfe im biologischen Artbegriff: „miteinander fruchtbare Nachkommen erzeugen können" ließ die Fortpflanzungsgemeinschaft in freier Natur weg | „Individuen, die in der Natur fruchtbare Nachkommen zeugen können" |
+| 37 | Wertungswort „widerlegte" stand nur in der richtigen Option | „Die Annahme, dass im Leben erworbene Merkmale vererbt werden" |
+
+### Funde und Behebungen — `k11__Biologie__Genetik.json`
+
+| Index | Fund | Behebung |
+|---|---|---|
+| 7 | **Dublette zu [6]**: „Wie viele Basen codieren gemeinsam eine Aminosäure?" (Antwort 3) fragt dasselbe Faktum wie „Was ist ein Codon?" (Antwort „Drei Basen der mRNA, die eine Aminosäure festlegen") — jede der beiden Fragen verrät die andere | ersetzt durch „Wie wirkt sich der Einschub einer einzelnen Base mitten in einem Gen aus?" (Leserasterverschiebung, `correct` bleibt 3, `topic` auf „Mutation") |
+| 32 | **Sachfehler**: Erklärung ordnete den „Verlust eines vollständigen Chromosoms" den Chromosomenmutationen zu — das ist eine Genommutation | Zuordnung richtiggestellt |
+| 2 | Kreuzverrat: Erklärung definierte Transkription ([3]) und Translation ([4]) | auf das semikonservative Prinzip und Meselson/Stahl 1958 umgestellt |
+| 3 | Kreuzverrat: Erklärung definierte Translation ([4]) und Spleißen ([35]) | auf codogenen Strang und Leserichtung 5'→3' umgestellt |
+| 5 | Kreuzverrat: „eine Variante eines Gens das Allel" ist die Antwort von [27] | Schlusssatz ersetzt |
+| 9 | Kreuzverrat: „Halbierung und vier Keimzellen gehören zur Meiose" ist die Antwort von [10] | auf Wachstum/Gewebeersatz umgestellt |
+| 14 | Kreuzverrat: „Heterozygote (Aa) zeigen das Merkmal nicht" ist die Antwort von [20] | ohne den Begriff neu formuliert |
+| 15 | Kreuzverrat doppelt: Option 0 war **wörtlich** die richtige Antwort von [16], und die Erklärung nannte „Die 3 : 1-Aufspaltung beschreibt erst das 2. Gesetz" | Option ersetzt, Erklärung auf den intermediären Erbgang umgestellt |
+| 28 | Kreuzverrat: „die tRNA liefert die Aminosäuren an" ist die Antwort von [29] | Erklärung auf Reifung, Ablesen und Abbau der mRNA umgestellt |
+| 30 | Kreuzverrat: Option „UAA, das die Translation beendet" und der Erklärungssatz „UAA ist eines der drei Stoppcodons" verrieten [31] | Option auf „CCC, das für Prolin steht" getauscht, Erklärung angepasst |
+| 31 | Kreuzverrat: Option „AUG, AGU und UGA – sie starten die Translation" und „AUG ist das Startcodon" verrieten [30] | Option auf „UAU, UAC und UGC" getauscht, Erklärung auf Freisetzungsfaktoren umgestellt |
+| 11 | Struktur-Verrat (vom Skript gemeldet): einzige Option mit Klammer „(n) … (2n)" | „Haploid meint den einfachen, diploid den doppelten Satz" |
+| 20 | Struktur-Verrat (vom Skript gemeldet): einzige Option mit Klammer „(Aa)" | „… sind verschieden, etwa Aa" |
+| 19 | Klammern in zwei der vier Optionen („(z. B. Aa)", „(AA oder aa)") | beide Optionen ohne Klammer, Option 0 zusätzlich umformuliert, damit sie nicht wortgleich mit der richtigen Option von [20] ist |
+| 26 | Klammern nur in den falschen Optionen („(Turner)", „(Deletion)"), eine Option ohne Doppelpunkt-Bauform | alle vier Optionen parallel als „Begriff: Erklärung" ohne Klammern |
+| 14 | Unschärfe: „Ein Allel, das nur reinerbig sichtbar wird" trifft auf hemizygote Männer nicht zu | „Ein Allel, das sich nur ohne dominantes Partnerallel zeigt" |
+| 28 / 29 | Die Optionen nannten die ausgeschriebene Langform („Boten-RNA:", „Transfer-RNA:") — beide Fragen waren allein daraus lösbar und verrieten sich gegenseitig | Optionen ohne Langform neu gebaut („Sie bringt …", „Sie liefert …") |
+
+### Funde und Behebungen — `k11__Biologie__Botanik.json`
+
+| Index | Fund | Behebung |
+|---|---|---|
+| 6 | Frage und Antwort passten nicht zusammen: gefragt war der **Vorteil** des CAM-Stoffwechsels, alle vier Optionen beschreiben einen **Mechanismus** | Frage auf „Wodurch senken CAM-Pflanzen an sehr trockenen Standorten ihren Wasserverlust?" umgestellt |
+| 7 | Unschärfe: „das Korkkambium … das die Borke bildet" — das Korkkambium bildet Kork, die Borke entsteht aus den abgestorbenen äußeren Schichten | präzisiert |
+
+Fachlich geprüft und **ohne Befund** blieben unter anderem: die Fotosynthese- und
+Zellatmungsgleichungen (Evolution [10], [11]), die 10-%-Regel des Energieflusses
+(Evolution [8]), Gause und das Konkurrenzausschlussprinzip (Evolution [26]), der
+Chromosomensatz des Menschen und des Schimpansen (Genetik [8]), PCR/Mullis 1983
+(Genetik [24]), das 2. Mendelsche Gesetz mit 3 : 1 aus Aa × Aa (Genetik [16]),
+Kodominanz am AB0-System (Genetik [38]), 61 codierende Codons und 3 Stoppsignale
+(Genetik [37]) sowie sämtliche acht Botanik-Fragen inhaltlich (¹⁸O-Versuch,
+RuBisCO/Ribulose-1,5-bisphosphat, Kohäsions-Transpirations-Sog, Druckstromtheorie
+nach Münch, Auxin-Quertransport zur Schattenseite, Kalium-Einstrom der Schließzellen,
+CAM, Kambium).
+
+### Prüfungen nach dem Durchlauf
+
+- `node question-generator/check_questions.js k11__Biologie --dir questionbank --summary` → 0 Befunde
+- `node question-generator/check_struktur.js <datei> --dir questionbank` je Datei → 0
+- Anzahl unverändert: 40 / 40 / 8
+- `correct`-Verteilung unverändert 10/10/10/10, 10/10/10/10, 2/2/2/2
+- Längenrang der richtigen Antwort: Evolution 25/25/25/25 %, Genetik 25/28/28/19 %,
+  Botanik 43/29/0/29 % (bei nur 7 wertbaren Fragen statistisch ohne Aussage, das
+  QA-Gate wertet erst ab 12)
+- Kein Commit, kein Push.
+
+---
+
+## 188. k11 Mathematik (Geometrie, Statistik): erster Inhaltsdurchlauf (15.8.2026)
+
+Beide Dateien waren nie zuvor inhaltlich geprüft. Alle 113 Fragen wurden nachgerechnet
+(Abstände, Skalar- und Kreuzprodukt, Ebenen, Spat und Tetraeder; Kennzahlen, Urnen,
+Binomial- und Normalverteilung, Hypothesentest). **Kein einziges `correct` war falsch
+gesetzt** — alle Befunde lagen bei Dubletten, Notation, Prämissen und Bauform.
+Alle Indizes unten sind 0-basiert (wie im JSON-Array).
+
+### `k11__Mathematik__Geometrie` (56 Fragen)
+
+| Index | Fund | Behebung |
+|---|---|---|
+| 0 | „Wurzel(29)" als Ersatzschreibung in allen vier Optionen | auf √29, √17, √51, √61 umgestellt |
+| 1, 2 | `*` als Malzeichen, sonst im Katalog `·` | vereinheitlicht |
+| 8, 9, 11–15 | LaTeX-Rohtext (`\begin{pmatrix}`, `$\frac{5}{3}$`, `^2`) — wird in der App als Quelltext angezeigt | auf Unicode umgestellt: `(2, -1, 3)`, `²`, `√`, `°`, `·`, deutsches Dezimalkomma |
+| 9 | Erklärung kommentierte die Distraktoren („Eine der falschen Varianten nennt den Richtungsvektor mit vertauschten Vorzeichen…") — nach dem Mischen sinnlos | Satz gestrichen |
+| 10 | **wortgleiche Dublette zu Index 4**: beide „Normalenvektor der Ebene 2x − 3y + z = 7", beide mit derselben richtigen Antwort | ersetzt: Koordinatengleichung aus n = (1, -2, 2) und P(2\|1\|3) → x − 2y + 2z = 6 |
+| 11 | zweite Punkt-Ebene-Rechnung derselben Bauart wie Index 7 | ersetzt: Abstand P(4\|5\|6) zu g: x = (1, 0, 2) + t·(0, 1, 0) → d = 5 (über Kreuzprodukt, gegengerechnet über die Achsenparallelität) |
+| 12 | fragte wie Index 5 nur den Kosinus ab | fragt jetzt den Winkel selbst: cos α = ½ → α = 60° |
+| 13 | Distraktor „… = 0" (entartete Kugel, als Falschantwort wertlos) | „… = 14" (Abstand zum Ursprung — der typische Denkfehler) |
+| 28 | „Was ist die Koordinatenform **(Hessesche Normalform)** einer Ebene?" setzt beides gleich (schon in Abschnitt 40 gemeldet) | Frage heißt jetzt „Wie lautet die Koordinatenform einer Ebene?"; die Erklärung nennt die HNF als zusätzliche Division durch \|n\| |
+| 38 | „Wie sind zwei Vektoren linear abhängig?" — grammatisch schief | „Wann sind zwei Vektoren linear abhängig?" |
+| 44 | Frage („Was versteht man unter dem Schnitt einer Geraden mit einer Ebene?") passte nicht zur Antwort, die die drei Lagefälle aufzählt | „Welche Lagebeziehungen sind zwischen einer Geraden und einer Ebene möglich?" |
+| 18, 22, 39, 47 | Struktur-Verrat: Klammer bzw. Schrägstrich nur in der richtigen Option | Klammern in allen vier Optionen ergänzt; bei 39 der Bruch durch `½·(A + B)`, bei 47 durch den Einheitsvektor `b⁰` ersetzt, damit kein Schrägstrich mehr allein steht |
+
+### `k11__Mathematik__Statistik` (57 Fragen)
+
+| Index | Fund | Behebung |
+|---|---|---|
+| 3 | unvollständige Prämisse: ohne Betriebsgröße lässt sich „das Mittel steigt stark" nicht begründen (bei 500 Mitarbeitern steigt es um 32 €) | zehn Mitarbeiter mit je rund 4.000 € festgelegt; die Erklärung rechnet (10·4.000 + 20.000) : 11 ≈ 5.455 € vor und begründet den Median als sechstgrößten von elf Werten |
+| 5 | topic „Bedingte Wahrscheinlichkeit", gefragt ist die Pfadregel beim Ziehen ohne Zurücklegen | topic „Wahrscheinlichkeitsrechnung - Ziehen ohne Zurücklegen" |
+| 7 | dieselbe Rechnung wie Index 10 (absolute Häufigkeit geteilt durch Gesamtzahl), nur mit anderen Zahlen | ersetzt: Vergleich 5 von 25 gegen 6 von 30 → beide 0,20, also gleich groß |
+| 9 | dieselbe Aussage wie Index 4 (Standardabweichung = Streuung um den Mittelwert), nur anders verpackt | ersetzt durch die einzige Rechenaufgabe zur Streuung: 2, 4, 4, 4, 5, 5, 7, 9 mit Mittelwert 5 → Varianz 4, σ = 2 |
+| 30, 31 | „Ein Ereignis, das mit genau gleicher Wahrscheinlichkeit eintritt (P = 0,5)" ist inhaltsleer (gleich wie was?) | „genauso wahrscheinlich wie sein Gegenteil"; sicheres Ereignis als Ω, unmögliches als leeres Ereignis ∅ benannt |
+| 42 | Varianz als „mittlere quadratische Abweichung **aller Datenwerte**" — gefragt ist die Varianz einer Zufallsvariablen | „… der Werte von X vom Erwartungswert μ" |
+| 29, 33 | Struktur-Verrat: Klammer bzw. Schrägstriche nur in der richtigen Option | „(Treffer/Niete)" in Fließtext aufgelöst; die 68-95-99,7-Regel ohne Schrägstriche als „1σ-, 2σ- und 3σ-Bereich" formuliert |
+
+### Zweifelsfälle für dich
+
+1. **Konfidenzintervall (Statistik, Index 54).** „Ein Bereich, in dem der unbekannte
+   Parameter mit hoher Wahrscheinlichkeit liegt" ist die schulübliche Formulierung,
+   streng frequentistisch aber angreifbar: zufällig ist das Intervall, nicht der
+   Parameter. Die Frage trägt den Zusatz „(vereinfacht)", deshalb belassen.
+
+2. **Quartilskonvention (Statistik, Index 2).** Der IQA 25 ergibt sich sowohl mit der
+   in deutschen Schulbüchern üblichen Median-der-Hälften-Methode als auch mit der
+   n·0,25-Regel — hier zufällig identisch. Bei künftigen Quartilsaufgaben sollten die
+   Datensätze bewusst so gewählt werden, dass beide Konventionen dasselbe liefern,
+   sonst ist die Frage je nach Unterricht unterschiedlich zu beantworten.
+
+3. **Kreuzhinweis Statistik Index 20 → Index 48.** Index 20 (Additionsregel für nicht
+   disjunkte Ereignisse) führt als Distraktor „P(A∪B) = P(A) + P(B) (gilt nur für
+   disjunkte Ereignisse)" — das ist wörtlich die richtige Antwort von Index 48. Kein
+   Struktur-Verrat, aber wer beide in einer Runde zieht, bekommt die zweite geschenkt.
+   Belassen, weil der Distraktor didaktisch der beste ist, den es dort gibt.
+
+4. **Abstand paralleler Ebenen (Geometrie, Index 48).** Die Formel
+   |d₁ − d₂| / √(a²+b²+c²) gilt nur, wenn beide Gleichungen dieselben Koeffizienten
+   a, b, c haben. Der Klammerzusatz „beide in der Form ax+by+cz=d" sagt das, aber nur
+   knapp — wenn dir das zu implizit ist, formuliere ich es aus.
+
+5. **Zwei Fragestile je Datei** (wie schon für `k11__Mathematik__Algebra` in Abschnitt
+   „Inhaltsdurchlauf 15.8.2026" notiert): Index 0–15 sind in beiden Dateien Rechen- und
+   Anwendungsaufgaben mit Siezen („Bestimmen Sie…"), Index 16–55 bzw. 16–56 sind kurze
+   Definitionsfragen („Was ist ein Vektor?"). Nicht angetastet, weil beide Blöcke für
+   sich korrekt sind und ein Umbau die ganze Datei beträfe.
+
+6. **Verbliebene Nachbarpaare.** Geometrie 7 (Punkt-Ebene rechnen) und 30 (dieselbe
+   Formel abfragen), 11 (Punkt-Gerade rechnen) und 43 (dessen Formel), 4/52
+   (Normalenvektor konkret und begrifflich). Jede Frage ist für sich korrekt und prüft
+   etwas anderes (Rechnen gegen Wissen); ich habe sie deshalb nicht zusammengelegt.
+
+### Prüfungen nach dem Durchlauf
+
+- `check_questions.js k11__Mathematik --dir questionbank` → beide Dateien 0 Befunde
+  (der einzige verbleibende Befund im Präfix liegt in `k11__Mathematik__Algebra.json`,
+  Q104, und gehört nicht zu dieser Charge)
+- `check_struktur.js` je Datei → 0 (vorher: Geometrie 4, Statistik 2)
+- Längenrang Geometrie 31/26/23/20, Statistik 23/19/26/33 — beide im Korridor
+- Anzahl 56 / 57 und Reihenfolge unverändert; `correct`-Verteilung 14/14/14/14 und
+  15/14/14/14 unverändert (Korrekturen wären per Options-Umsortierung erfolgt, es war
+  aber keine nötig)
+- Format unverändert: rohes JSON-Array, 2 Leerzeichen, LF, UTF-8 ohne BOM,
+  Feldreihenfolge `correct` / `explanation` / `options` / `question` / `topic`
+- kein LaTeX, kein `^`, keine Umlaut-Ersatzschreibung mehr in beiden Dateien
+
+Kein Commit, kein Push.
+
+## Inhaltsdurchlauf 15.8.2026 — `k11__Mathematik__Algebra` Teil 2 (Fragen 69–136)
+
+Erste inhaltliche Prüfung der 68 Fragen aus `questionbank/_work/k11__Mathematik__Algebra##02.json`.
+Indizes unten sind 0-basiert **innerhalb von Teil 2** (Index 0 = Frage 69 der zusammengeführten Datei).
+
+### Zweifelsfälle für dich
+
+1. **Themenzuordnung passt nicht zum Dateinamen** (deckt sich mit dem Befund aus Teil 1).
+   Die Datei heißt `Algebra`, enthält aber fast ausschließlich Analysis. Dazu kommen
+   sieben Stochastik-Fragen (Index 54–60: Laplace, Erwartungswert, Binomial- und
+   Normalverteilung, bedingte Wahrscheinlichkeit, Additionssatz, Varianz) und zwei
+   Fragen zur linearen Algebra (61 Vektorraum, 62 lineare Gleichung). Fachlich sind sie
+   in Ordnung, aber ein Schüler, der „Mathematik – Algebra" wählt, erwartet sie nicht.
+   Ob sie in eigene Kataloge wandern, ist offen — ich habe nichts verschoben.
+
+2. **Zwei Fragestile in einer Datei.** Index 0–27 sind kurze Rechen- und Kurzdefinitions-
+   fragen, Index 28–67 sind lange Definitionsfragen mit ausführlichen Erklärungen. Auch
+   die Minus-Zeichen unterscheiden sich: vorne das echte Minus (−, U+2212), hinten der
+   Halbgeviertstrich (–, U+2013). Ich habe die Glyphen **nicht** vereinheitlicht, damit
+   Teil 1 und Teil 2 beim Zusammenführen nicht auseinanderlaufen. Wenn du willst, ziehe
+   ich das nach dem Merge in einem Rutsch über die ganze Datei durch.
+
+3. **Spiegelpaare bleiben bestehen.** Bei einigen Paaren ist die eine Frage der Distraktor
+   der anderen: 65/67 (Rotationsvolumen ↔ Bogenlänge), 55/60 (Erwartungswert ↔ Varianz),
+   52/53 (Substitution ↔ partielle Integration), 56/59 (Binomial- ↔ Normalverteilung).
+   Jede Frage ist für sich korrekt und eindeutig; wer beide in derselben Runde zieht,
+   hat es bei der zweiten leichter. Auflösen würde vier Fragen kosten — deine Entscheidung.
+
+4. **`correct` folgt exakt dem Muster 0,1,2,3,0,1,2,3 …** über alle 68 Fragen (Verteilung
+   17/17/17/17). Die Verteilung ist perfekt, die Reihenfolge aber vorhersagbar. Solange
+   die App die Optionen zur Laufzeit mischt, ist das folgenlos; ich habe das Muster
+   deshalb beim Ersetzen von Fragen bewusst erhalten, statt es zu durchbrechen.
+
+### Funde und Behebungen
+
+**Dubletten (4 Fragen ersetzt)**
+
+- Index 3 „Was bedeutet Kurvendiskussion?" war eine Dublette zu Index 36 „Was ist eine
+  Kurvendiskussion?" → ersetzt durch die Rechenaufgabe „Tiefpunkt von f(x) = x² − 6x + 5".
+- Index 20 „vollständige Kurvendiskussion für rationale Funktionen" gab dieselbe Antwort
+  auf dasselbe Faktum wie Index 36 → ersetzt durch „Wendestelle von f(x) = x³ − 3x²".
+- Index 12 „Was ist Partielle Integration für ∫u·v' dx?" war eine Dublette zu Index 53
+  „Was ist partielle Integration?" → ersetzt durch „Was ergibt ∫₀² (x² + 1) dx?".
+- Index 24 „Fläche zwischen zwei Kurven (mit f ≥ g)" war eine Dublette zu Index 41
+  „Flächeninhalt zwischen zwei Graphen" → ersetzt durch die Rechenaufgabe „Fläche
+  zwischen f(x) = x und g(x) = x² über [0; 1]" (= 1/6).
+
+**Fachliche und logische Fehler**
+
+- Index 1: Die richtige Option behauptete „jede Funktion hat unendlich viele Stamm-
+  funktionen" — nicht jede Funktion besitzt überhaupt eine. Umformuliert auf „jede
+  Stammfunktion liegt nur bis auf eine Konstante fest".
+- Index 5: Distraktor „f(0) = 0 für alle x im Definitionsbereich" war in sich sinnlos
+  (f(0) ist ein einzelner Wert) → „f(0) = 0 und f ist auf ganz ℝ stetig".
+- Index 6: Die Frage lautete „Wie berechnet man das Grenzverhalten …?", die Optionen
+  waren aber Ergebnisse → „Wie verhält sich f(x) = x³ − x für x → +∞?".
+- Index 19: „Was ist die Nullstelle von f(x) = x² − 4?" im Singular, obwohl es zwei gibt
+  und „x = 2" als eigene Option dastand → Plural, damit „x = ±2" eindeutig ist.
+- Index 22: Die Frage „Wie lautet die Substitutionsregel?" ließ auch „∫f(u)du" als
+  richtige Antwort zu → präzisiert auf „…, wenn F eine Stammfunktion von f ist".
+  Zusätzlich unterschieden sich zwei Optionen nur in der Groß-/Kleinschreibung
+  („F(g(x)) + C" gegen „f(g(x)) + C") — beim Mischen praktisch nicht unterscheidbar,
+  Optionen neu gesetzt.
+
+**Kreuzverrat**
+
+- Index 7: Die Erklärung zur senkrechten Asymptote erklärte die Polstelle mit — das ist
+  die Antwort von Index 17. Neu formuliert ohne den Begriff.
+- Index 53: Die Erklärung rechnete ∫x·eˣ dx vor, also genau die Aufgabe von Index 13.
+  Beispiel getauscht auf ∫x·sin(x) dx = −x·cos(x) + sin(x) + C.
+- Index 21: Die Erklärung schrieb die Stammfunktion −cos(x) aus, die Antwort von Index 9.
+  Auf die Auswertung an den Grenzen reduziert.
+- Index 48: Distraktor „Berechnung bestimmter Integrale über F(b) – F(a)" verriet die
+  Antwort von Index 39 (Hauptsatz) → auf die Trapezregel geändert.
+
+**Struktur- und Längenverrat**
+
+- Formel nur in der richtigen Option (Regel: bei allen vier oder keiner): Index 35, 39,
+  47, 48, 53, 66 — Distraktoren angeglichen bzw. die Formel aus der richtigen Option in
+  die Erklärung verlegt (Index 66).
+- Richtige Option deutlich am längsten: Index 36 (140 gegen 62 Zeichen), 39, 52, 56, 60,
+  64, 67 — gekürzt bzw. Distraktoren angehoben.
+- Richtige Option deutlich am kürzesten: Index 28, 29, 59 — ergänzt.
+- Auffällig kurze Distraktoren neben langer richtiger Option: Index 4, 42.
+
+**Notation**
+
+- Caret-Notation → Unicode: `e^(2x)` → `e²ˣ` (Index 11, dort auch der unlesbare Distraktor
+  `e^(2x²)` ersetzt), `x^(-2)`/`x^(-1)` → `x⁻²`/`x⁻¹` (Index 23), `(1–p)^(n–k)` → `(1–p)ⁿ⁻ᵏ`
+  (Index 56).
+- LaTeX-artige Indizes: `lim_{h→0}` → `lim(h→0)` (Index 29, 46), `x_{n+1} = x_n − …` →
+  `xₙ₊₁ = xₙ − …` (Index 48).
+- Integralgrenzen vereinheitlicht: `∫_a^b` → `∫ₐᵇ` (Index 37, 39, 41, 65, 66, 67).
+  Wo es kein Unicode-Pendant gibt (`∫₀^π`, `∫_1^∞`), ausgeschrieben: „von 0 bis π",
+  „zwischen 1 und b für b → ∞" (Index 21, 66).
+- Ableitungsstrich vereinheitlicht auf den ASCII-Apostroph (`f'(x)`), wie im übrigen
+  Katalog; das Zeichen U+2032 kommt nicht mehr vor.
+
+### Prüfungen nach dem Durchlauf
+
+- Eigenes Skript: 68 Fragen, je 4 Optionen, `options[correct]` existiert überall, keine
+  doppelten oder leeren Optionen, keine Fragen-Dubletten, kein LaTeX-Markup, keine
+  Caret-Notation, keine Umlaut-Ersatzschreibungen, kein Verweis auf Nachbarfragen,
+  keine Frage enthält ihre eigene Antwort im Fragetext.
+- Jede Rechenaufgabe nachgerechnet (Integrale, Stammfunktionen, Ableitungen, Extrem- und
+  Wendestellen, Flächen): kein einziges falsch gesetztes `correct` gefunden.
+- Anzahl 68 und Reihenfolge unverändert, `correct`-Verteilung 17/17/17/17 unverändert.
+- Format unverändert: rohes JSON-Array, 2 Leerzeichen, LF, UTF-8 ohne BOM, kein
+  Abschluss-Zeilenumbruch, Feldreihenfolge `correct` / `explanation` / `options` /
+  `question` / `topic`.
+- Nicht zusammengeführt, kein Commit, kein Push.
+
+## 187. k11 Biologie (Zellbiologie, 78 Fragen): erster Inhaltsdurchlauf (15.8.2026)
+
+Erste fachliche Prüfung aller 78 Fragen der Datei `k11__Biologie__Zellbiologie.json`.
+20 Fragen geändert, davon eine vollständig ersetzt.
+
+### Was korrigiert wurde
+
+**Fachliche Fehler**
+
+- **77 sekundäre Pflanzenstoffe:** Die Erklärung nannte „Salicylsäure aus der Weidenrinde".
+  Die Weidenrinde enthält das Glykosid **Salicin**; Salicylsäure entsteht erst im Körper
+  daraus. Auf „das Salicin der Weidenrinde als Vorbild der Acetylsalicylsäure" umgestellt.
+- **61 ökologischer Fußabdruck:** Die Erklärung nannte für Deutschland „rund 5 gha je Kopf".
+  Das Global Footprint Network weist 4,7 gha aus. Zahl korrigiert, Quelle genannt und nach
+  der stehenden Vorgabe datiert („Stand August 2026").
+- **27 Rezeptorpotenzial:** Die richtige Option definierte es als **Depolarisation**. Die
+  Fotorezeptoren der Wirbeltiere hyperpolarisieren bei Licht, die Aussage war also zu eng.
+  Jetzt „graduelle Änderung des Membranpotenzials"; die Erklärung nennt beide Fälle.
+- **10 Reflexbogen:** Die richtige Option schrieb das Rückenmark als Schaltstelle fest.
+  Hirnnervenreflexe (Lidschluss-, Pupillenreflex) werden im Hirnstamm verschaltet. Auf
+  „Verschaltung im ZNS" verallgemeinert, die Erklärung nennt beide Orte.
+- **5 Synapse:** Die richtige Option sagte, Signale würden „chemisch" übertragen. Elektrische
+  Synapsen über Gap Junctions gibt es aber, und Frage 7 nennt sie selbst als Distraktor.
+  Auf „meist chemisch" abgeschwächt, die Erklärung ergänzt die elektrische Synapse.
+- **16 Habituation:** Die Erklärung sprach vom „Schreckreiz bei Schnecken". Gemeint ist der
+  Kiemenrückzugsreflex der Meeresschnecke *Aplysia* — so jetzt benannt.
+
+**Dublette**
+
+- **37 war eine Dublette zu 8.** Frage 8 („Was ist das ZNS?") und Frage 37 („Was unterscheidet
+  das periphere vom zentralen Nervensystem?") prüften dasselbe Faktum: ZNS = Gehirn und
+  Rückenmark, PNS = alles andere. Frage 37 wurde durch **„Was ist die Refraktärzeit eines
+  Neurons?"** ersetzt (absolute/relative Refraktärzeit, Natriumkanal-Inaktivierung, Obergrenze
+  der Erregungsfrequenz, Einbahnrichtung der Erregung) — Thema `Membranpotenziale`, `correct`
+  bleibt 1, damit die Verteilung unverändert ist.
+
+**Kreuzverrat in Erklärungen**
+
+- **12 limbisches System** erklärte in einem Satz die Antworten von Frage 13 (Hippocampus =
+  Gedächtnisbildung) und Frage 14 (Amygdala = emotionale Bewertung). Neu geschrieben.
+- **15 Neuroplastizität** nannte in Klammern „(Langzeitpotenzierung)" mitsamt Definition —
+  das ist die Antwort von Frage 34. Entfernt.
+- **2 Aktionspotenzial** schloss mit „Es gilt das Alles-oder-Nichts-Prinzip – kleine
+  Aktionspotenziale gibt es nicht", also der Antwort von Frage 3. Ersetzt durch die Dauer.
+- **8 ZNS** erklärte gleich das PNS mit — das war die Antwort der damaligen Frage 37. Neu.
+- **53 ökologische Nische** gab mit dem Gause-Satz die Antwort von Frage 63 (interspezifische
+  Konkurrenz) vorweg. Entfernt; Gause bleibt in der Erklärung von 63.
+- **58 Chloroplast** schloss mit „die eigene DNA weist auf bakterielle Vorfahren hin" — das
+  ist der Kern von Frage 57 (Endosymbiontentheorie). Entfernt.
+
+**Verratsmuster in den Optionen**
+
+- **52 Räuber-Beute-Verhältnis:** „Räuber" und „Beute" standen nur in der richtigen Option,
+  die drei Distraktoren sprachen neutral von „Arten". Die richtige Option beschreibt jetzt
+  die zeitversetzte Schwankung, ohne die Begriffe der Frage zu wiederholen.
+- **53 ökologische Nische:** „Nische" stand nur in der richtigen Option (Fundamentalnische /
+  realisierte Nische), zudem war sie mit 145 Zeichen die mit Abstand längste. Beides behoben;
+  die Fachbegriffe stehen jetzt in der Erklärung.
+- **36 somatosensorisches System:** „somatosensorisch" stand nur in der richtigen Option.
+  Auf „verarbeitet im Scheitellappen (Parietallappen)" umgestellt.
+- **68 Ribosom:** „ribosomale RNA" war das einzige Vorkommen des Fragebegriffs. Auf „Komplex
+  aus RNA und Proteinen" geändert.
+- **29 adäquate Reize:** Die richtige Option wiederholte den Fragebegriff in Klammern
+  („(adäquater Reiz)"). Klammer gestrichen.
+
+**Sprache und Struktur**
+
+- **63:** Fragetext „interspecifische Konkurrenz" → „interspezifische Konkurrenz".
+- **24:** Fragetext „Unterschied zwischen Hormone und Neurotransmitter" (falscher Kasus) →
+  „Was unterscheidet Hormone und Neurotransmitter als Signalmoleküle?".
+- **33:** Fragestamm war fast wortgleich mit Frage 10 („Was ist ein Reflexbogen …?"). Jetzt
+  „Wie ist der Dehnungsreflex (Eigenreflex) verschaltet?".
+
+### Zweifelsfälle für dich
+
+1. **Der Dateiname passt nicht zum Inhalt.** In `k11__Biologie__Zellbiologie` sind nur rund
+   20 Fragen echte Zellbiologie. Der Rest ist Neurobiologie (Fragen 0–37), Verhaltensbiologie
+   (16–23), Ökologie (46–73, gut 25 Fragen) und Genetik (74/75). Wer den Katalog „Zellbiologie"
+   wählt, bekommt überwiegend etwas anderes. Ich habe die Reihenfolge und die Zahl 78 wie
+   vorgegeben unangetastet gelassen — ob die Datei aufgeteilt (z. B. in Neurobiologie und
+   Ökologie) oder umbenannt wird, ist eine Entscheidung für dich.
+
+2. **Fragen 50 und 51 teilen sich zwei wortgleiche Optionen.** Die Fotosynthesegleichung
+   `6CO₂ + 6H₂O + Licht → C₆H₁₂O₆ + 6O₂` ist in 50 die richtige Antwort und in 51 ein
+   Distraktor; die Gärungsgleichung steht in beiden als Distraktor. Fachlich ist das in
+   Ordnung, und wer die eine Frage löst, gewinnt bei der anderen nur eine Ausschlussmöglichkeit.
+   Ich habe es deshalb gelassen. Falls es dich stört, tausche ich in 51 den Distraktor aus.
+
+3. **Distraktoren sind im ganzen Katalog systematisch die richtigen Antworten anderer Fragen.**
+   Beispiele: 30/31 (Melatonin ↔ Cortisol), 42/43 (Osmose ↔ aktiver Transport), 46/47
+   (Ökosystem ↔ Nahrungskette), 41/60/68 (Golgi ↔ Lysosom ↔ Ribosom). Das ist kein Verrat im
+   Sinn der Regel — die verlangt, dass Fragetext und Erklärung nichts ausplaudern, und das
+   ist jetzt sauber. Aber es ist ein durchgehendes Bauprinzip dieser Datei, und wer mehrere
+   Fragen hintereinander zieht, kann Optionen wiedererkennen. Ein Umbau wäre ein eigener
+   Durchlauf über alle 78 × 4 Optionen.
+
+4. **Frage 9 (vegetatives Nervensystem)** definiert es nur über Sympathikus und
+   Parasympathikus. Das enterische Nervensystem gilt heute als dritter Teil. Die Option ist
+   nicht falsch, nur unvollständig, und die Zweiteilung ist die schulübliche Darstellung —
+   ich habe sie stehen lassen.
+
+5. **Frage 2 und Frage 3 überschneiden sich leicht.** Die richtige Option von 2 nennt das
+   Aktionspotenzial einen „stets gleich starken Spannungsimpuls", was der Sache nach das
+   Alles-oder-Nichts-Prinzip aus Frage 3 ist. Ohne dieses Merkmal ließe sich Option 2 aber
+   nicht mehr von Option 3 („Amplitude proportional zur Reizstärke") trennen — die Frage wäre
+   unlösbar. Ich habe nur den Verrat aus der Erklärung entfernt.
+
+### Prüfungen nach dem Durchlauf
+
+- `check_questions.js k11__Biologie__Zellbiologie --dir questionbank` → 78 Fragen, 0 Befunde
+- `check_struktur.js k11__Biologie__Zellbiologie --dir questionbank` → 0
+- `check_laenge.js --alle --dir questionbank` → 22/24/29/25, längste 22 %
+  (vorher 25/25/27/23 bei 24 %) — alle Ränge im Korridor 15–40 %
+- Anzahl 78 unverändert, Reihenfolge unverändert, `correct`-Verteilung 20/20/19/19 unverändert
+- Format unverändert: rohes JSON-Array, 2 Leerzeichen, LF, UTF-8 ohne BOM,
+  Feldreihenfolge `correct` / `explanation` / `options` / `question` / `topic`
+  (byteweiser Roundtrip-Vergleich bestätigt)
+
+Quellen: Global Footprint Network / Umweltbundesamt zum Fußabdruck Deutschlands (4,7 gha)
+und zur tragfähigen Grenze (rund 1,6 gha je Kopf); LWF Bayern und naturalproducts.wiki zu
+Salicin als Glykosid der Weidenrinde und seiner Umwandlung zu Salicylsäure.
+
+Kein Commit, kein Push.
+
+---
+
+## Inhaltsdurchlauf k11__Geschichte__Nachkriegszeit (80 Fragen, 15.8.2026)
+
+Erste fachliche Prüfung dieser Datei. Behoben: 3 Dubletten (ersetzt), 6 Struktur-Verrate,
+4 Kreuzverrate, mehrere sachliche Ungenauigkeiten, 2 zeitgebundene Formulierungen.
+
+### Zweifelsfälle
+
+1. **Frage 3 (Gründung der BRD, 23. Mai 1949).** Das Grundgesetz wurde am 23. Mai 1949
+   verkündet und trat am 24. Mai 1949 in Kraft. Die richtige Option nennt weiterhin den
+   23. Mai, weil das in allen Schulbüchern das Gründungsdatum ist; die Erklärung benennt
+   den Unterschied jetzt ausdrücklich. Wer streng auf das Inkrafttreten abstellt, könnte
+   die Frage als ungenau ansehen.
+
+2. **Frage 31 (Ostverträge).** Im engen Sinn sind das nur der Moskauer und der Warschauer
+   Vertrag von 1970 (und der Prager Vertrag 1973). Der Grundlagenvertrag mit der DDR von
+   1972 wird in Schulbüchern meist mitgezählt, in der Fachliteratur nicht immer. Ich habe
+   die schulübliche weite Fassung stehen lassen und nur die Jahreszahlen aus der Option
+   entfernt (Struktur-Verrat).
+
+3. **Frage 41 (Berliner Konferenz 1884/85).** Die Konferenz hat Afrika nicht selbst
+   aufgeteilt, sondern die Regeln dafür festgelegt; vollzogen wurde die Aufteilung
+   anschließend in bilateralen Verträgen. Option und Erklärung sind entsprechend
+   umformuliert — die verbreitete Kurzformel „hier wurde Afrika aufgeteilt" steht so
+   nicht mehr in der Datei.
+
+4. **Frage 72 (Ghana 1957).** Der Sudan wurde bereits am 1.1.1956 unabhängig. Ghana gilt
+   trotzdem als erste unabhängige Kolonie „südlich der Sahara", weil der Sudan
+   geografisch und kulturell als Übergangsregion zu Nordafrika eingeordnet wird. Die
+   Frage ist mit dieser Abgrenzung korrekt, hängt aber an ihr.
+
+5. **Fragen 61 und 62 (UN-Resolution 1514 / Selbstbestimmungsrecht) überschneiden sich
+   thematisch.** Sie bleiben unterscheidbar, weil 61 nach einem konkreten Beschluss und
+   62 nach dem Rechtsprinzip fragt. Ich habe sie stehen gelassen, aber vermerkt: bei einem
+   weiteren Durchlauf wäre eine der beiden ein Kandidat für den Austausch.
+
+6. **Frage 36 (Mauerschützenbefehl).** Es gab keinen einzelnen Befehl dieses Namens; der
+   Begriff ist die nachträgliche, umgangssprachliche Bezeichnung für die Befehlslage der
+   DDR-Grenztruppen. Die Erklärung spricht deshalb jetzt von der „Befehlslage" und nennt
+   belegte Opferzahlen statt eines vagen „Hunderte".
+
+### Ersetzte Fragen (Dubletten)
+
+- **[51]** war eine zweite Koreakrieg-Frage (identisch zu [27]) → jetzt NATO-Doppelbeschluss 1979
+- **[52]** war eine zweite Vietnamkrieg-Frage (identisch zu [30]) → jetzt Nürnberger Prozess 1945/46
+- **[63]** fragte nach dem Unterschied Entwicklungs-/Industrieländer und war damit
+  inhaltsgleich mit [76] (Nord-Süd-Gefälle) → jetzt Herkunft des Begriffs „Dritte Welt"
+
+### Prüfungen nach dem Durchlauf
+
+- `check_questions.js k11__Geschichte__Nachkriegszeit --dir questionbank` → 80 Fragen, 0 Befunde
+- `check_struktur.js k11__Geschichte__Nachkriegszeit --dir questionbank` → 0 (vorher 6)
+- `check_laenge.js --alle --dir questionbank` → 20/28/26/26, längste 20 %
+  (vorher 23/26/26/25 bei 24 %) — alle Ränge im Korridor 15–40 %
+- Anzahl 80 unverändert, Reihenfolge unverändert, `correct`-Verteilung 20/20/20/20 unverändert
+- Format unverändert: rohes JSON-Array, 2 Leerzeichen, LF, UTF-8 ohne BOM,
+  Feldreihenfolge `correct` / `explanation` / `options` / `question` / `topic`
+  (byteweiser Roundtrip-Vergleich bestätigt)
+
+Quellen: 1000dokumente.de und SPD-Geschichtswerkstatt zur Tutzinger Rede Egon Bahrs
+(„Wandel durch Annäherung", 15.7.1963); Stiftung Berliner Mauer / Chronik der Mauer und
+bpb zu den Todesopfern des DDR-Grenzregimes (mindestens 140 an der Berliner Mauer,
+mindestens 260 an der innerdeutschen Grenze); Memorium Nürnberger Prozesse und Bundestag
+zum Hauptkriegsverbrecherprozess (24 Angeklagte, Urteil 1.10.1946, 12 Todesurteile);
+Konrad-Adenauer-Stiftung, Bundestag und Wikipedia zum NATO-Doppelbeschluss vom 12.12.1979;
+Third World Quarterly / Global Intellectual History zu Alfred Sauvys „tiers monde" (1952);
+bpb zum „Jahr Afrikas" (17 Kolonien 1960) und zur Bandung-Konferenz (29 Staaten, 1955);
+Auswärtiges Amt und bpb zum IStGH (Stand August 2026: USA, Russland und China nicht Mitglied);
+Britannica zur Abgrenzung Ghana 1957 / Sudan 1956.
+
+Kein Commit, kein Push.
+
+## Inhaltsdurchlauf k11 Grammatik Deutsch + Englisch (80 Fragen, 15.8.2026)
+
+Erster fachlicher Durchlauf über `k11__Deutsch__Grammatik` (40) und
+`k11__Englisch__Grammatik` (40). Beide Dateien waren nie inhaltlich geprüft.
+
+### Zweifelsfälle für dich
+
+1. **Dateiname passt nicht zum Inhalt.** Beide Kataloge heißen „Grammatik", enthalten
+   aber überwiegend keine Grammatik im engeren Sinn. In `k11__Deutsch__Grammatik`
+   tragen nur 4 von 40 Fragen das topic `Grammatik` (Syntax, Morphologie, Phonologie,
+   Satzgliedanalyse); der Rest verteilt sich auf Textsorten, Argumentation, Stilmittel,
+   Semantik, Sprachvarietäten, Kommunikationsmodelle, Pragmatik, Erzähltechnik. In
+   `k11__Englisch__Grammatik` gehören 9 von 40 Fragen zu Writing Skills, Vocabulary
+   und Literary Devices. Ich habe die `topic`-Felder so gelassen, wie sie sind (sie
+   beschreiben den Inhalt korrekt), und nichts umverteilt. **Deine Entscheidung:**
+   Katalogzuschnitt so lassen, Dateien umbenennen, oder die fachfremden Fragen in
+   einen eigenen Katalog verschieben?
+
+2. **Begriffspaare als Distraktoren.** Mehrere Fragen bilden Paare, bei denen die
+   Definition des Partnerbegriffs als Distraktor auftaucht: Denotation/Konnotation
+   (DE 17/18), Deduktion/Induktion (DE 36/37), Neologismus/Archaismus (DE 12/13),
+   Soziolekt/Dialekt (DE 9/10), Conditional Typ 2/Typ 3 (EN 2/3). Wer beide Fragen
+   in derselben Runde bekommt, kann die zweite leichter eingrenzen. Ich habe nur den
+   **Erklärungs-Verrat** entfernt (Erklärung definierte den Partnerbegriff gleich mit),
+   die Distraktoren selbst aber gelassen — das sind die klassischen Schulbuch-Gegenbegriffe,
+   und ein Ersatz würde die Fragen didaktisch schlechter machen. Sag Bescheid, falls du
+   das strenger haben willst.
+
+3. **DE 1, Option „Beide Formen sind inhaltlich identisch …"** grenzt an eine
+   Meta-Option, bezieht sich aber auf die beiden im Fragetext genannten Erörterungsformen
+   und nicht auf die anderen Antwortoptionen. Nach dem Mischen bleibt sie verständlich.
+   Belassen.
+
+### Funde und Behebungen — `k11__Deutsch__Grammatik`
+
+- **[32] falsche Prämisse (schwerster Fund).** Frage lautete „Was ist ein Satzspiegel /
+  wie beschreibt man Satzstruktur?". Der Satzspiegel ist ein rein typografischer Begriff
+  (die bedruckte Fläche einer Seite) — die als falsch markierte Option „Das typografische
+  Layout einer Druckseite" war die einzige korrekte Antwort auf die gestellte Frage.
+  Zusätzlich führte die als richtig markierte Option das **Attribut als Satzglied**, was
+  fachlich falsch ist (Attribut = Gliedteil, kein Satzglied). Frage vollständig neu gefasst
+  als „Was untersucht die Satzgliedanalyse?" mit neuen Optionen und einer Erklärung, die
+  Umstell- und Ersatzprobe nennt und das Attribut ausdrücklich ausnimmt.
+- **[4] Kreuzverrat + Dublette.** Die Frage nannte im Fragetext selbst die Struktur
+  „Behauptung–Begründung–Beispiel" und beantwortete damit Frage [2] („Was ist ein
+  Argument in der Erörterung?"). Ersetzt durch eine eigenständige Frage zum
+  Ad-hominem-Argument (topic Argumentation, `correct` bleibt 0).
+- **[9] Kreuzverrat + zweite verteidigbare Option.** Die Erklärung definierte nebenbei
+  den Dialekt und verriet damit [10]. Option 2 („Fachsprache eines Berufsfelds") war
+  zudem von der Soziolekt-Definition der richtigen Option („nach Beruf, Alter oder
+  Milieu") mit abgedeckt. Erklärung auf den Soziolekt beschränkt, Option 2 durch die
+  Standardsprache ersetzt.
+- **[17] Kreuzverrat.** Erklärung definierte die Konnotation mit und beantwortete
+  damit [18]. Erklärung auf die Denotation beschränkt; Frage von „Was ist ein Denotat
+  (Denotation)?" auf „Was versteht man unter der Denotation eines Wortes?" präzisiert
+  (Denotat = das bezeichnete Objekt, Denotation = die Grundbedeutung).
+- **[25] fragwürdiges Beispiel.** Die Erklärung nutzte „Bank" (Sitzmöbel / Geldinstitut)
+  als Polysemie-Beispiel. Das ist der klassische Streitfall — die beiden Bedeutungen
+  gehen zwar auf dieselbe Wurzel zurück, werden synchron aber meist als Homonyme geführt
+  und kollidierten so mit der Homonymie-Definition in [26]. Ersetzt durch „Fuß"
+  (Mensch / Berg / Tisch).
+- **[13] falsches Beispiel.** „Weib" ist kein Archaismus, sondern eine stilistisch
+  markierte Form. Ersetzt durch „Oheim", „Base", „Maid".
+- **[3] Erklärung** enthielt die Zeichenkette „Fakten > Normen > Autoritäten > Analogien";
+  als Fließtext neu formuliert.
+- **[35] Erklärung** verwies unbestimmt auf „Brechts Bezug auf Shakespeare"; ersetzt durch
+  Thomas Manns Rückgriff auf die Faust-Sage in „Doktor Faustus".
+- **[39] Begriff.** „Gedankenprotokoll" ist kein Fachbegriff für den inneren Monolog;
+  Frage auf „Was ist ein innerer Monolog in der Literatur?" gekürzt.
+- **Bauform-Verrat** (vom Skript nicht erfasst, weil es nur Klammern, Jahreszahlen und
+  Schrägstriche prüft): [1] richtige Option als einzige im Telegrammstil mit Doppelpunkten;
+  [6] drei Distraktoren begannen einschränkend mit „Ausschließlich" / „Nur" / „Lediglich",
+  die richtige als einzige nicht; [8], [16], [39] richtige Option als einzige ohne
+  Artikel-Anfang; [28] richtige Option als einzige mit „z.B."-Einschub. Alle vier
+  Optionen der betroffenen Fragen auf dieselbe Bauform gebracht.
+- **[19]** zwei Distraktoren beschrieben denselben Sachverhalt (neutraler Bericht), wodurch
+  sich beide gegenseitig ausschlossen; einer auf den erklärenden Text umgestellt.
+
+### Funde und Behebungen — `k11__Englisch__Grammatik`
+
+- **[1] Selbstwiderspruch in zwei Distraktoren.** „will + past participle" war mit
+  „She will finish the project" bebildert (Grundform statt Partizip), „would + past
+  participle" mit „She would have gone" (would + have + Partizip). Beide Etiketten passten
+  nicht zu ihrem Beispiel. Zu „will + base form" bzw. „would + base form" korrigiert.
+- **[0] Kreuzverrat.** Ein Distraktor zeigte die Future-Perfect-Form („She will have left
+  by morning") und beantwortete damit [1]. Durch einen Future-Simple-Distraktor ersetzt.
+- **[31] zweite verteidigbare Option.** Bei „What is an ellipsis in grammar?" war Option 0
+  („Three dots …") die korrekte Definition des Satzzeichens gleichen Namens. Frage auf
+  „What is ellipsis as a grammatical structure?" eingegrenzt und der Distraktor durch die
+  Anapher-Definition ersetzt.
+- **[29] Fachfehler in der Erklärung.** Die Erklärung schrieb Pronomen, Synonyme und
+  Bindewörter der **Kohärenz** zu; das sind die Mittel der **Kohäsion**. Erklärung trennt
+  jetzt beides sauber.
+- **[2] fachliche Verengung.** Der Typ-2-Conditional galt laut Option nur für die
+  Gegenwart; er gilt für Gegenwart **und** Zukunft. Ergänzt.
+- **[20] und [37] Kreuzverrat.** Ein Distraktor bei [20] war die false-friends-Definition
+  aus [21], ein Distraktor bei [37] die simile-Definition aus [38]. Beide ersetzt.
+- **[8] Erklärung ergänzt:** im defining relative clause steht neben „who" auch „that".
+- **[23] Erklärung** löste zuvor die Formeln von Typ 2 und Typ 3 auf und verriet damit
+  [2] und [3]; jetzt ohne Formeln formuliert.
+- **Struktur-Verrat: 10 Fragen** meldete `check_struktur.js` ([1], [5], [14], [15], [20],
+  [22], [25], [32], [34], [35]) — richtige Option jeweils als einzige mit Klammer,
+  Jahreszahl oder Schrägstrich. Zusätzlich von Hand behoben: [6], [9], [11], [12], [13],
+  [16], [17], [18], [21], [23], [24], [26], [30], [36], [37] (Beispiele nur bei einem Teil
+  der Optionen, „e.g."-Form uneinheitlich, Doppelpunkt-Aufzählung nur in der richtigen
+  Option), sowie [22], [39] (Bauform: richtige Option als einzige nicht imperativisch bzw.
+  ohne Artikel-Anfang) und [28], [33] (richtige Option deutlich die kürzeste).
+- **Erklärungssprache:** alle 40 Erklärungen waren bereits durchgehend auf Deutsch.
+  **Null Übersetzungen nötig** — die frühere englische Erklärungssprache dieser Risiko-Datei
+  ist offenbar in einem vorherigen Durchlauf bereits behoben worden. Englische Fragetexte,
+  Optionen und Beispielsätze sind unverändert geblieben (so gewollt).
+
+### Prüfungen nach dem Durchlauf
+
+- `check_questions.js k11__Deutsch__Grammatik --dir questionbank` → 40 Fragen, 0 Befunde
+- `check_questions.js k11__Englisch__Grammatik --dir questionbank` → 40 Fragen, 0 Befunde
+- `check_struktur.js` je Datei → **0** (Deutsch vorher 0, Englisch vorher 10)
+- `check_laenge.js --dir questionbank`:
+  `k11__Deutsch__Grammatik` 21/24/26/29, längste 21 % (vorher 24/27/22/27 bei 23 %);
+  `k11__Englisch__Grammatik` 26/21/24/29, längste 25 % (vorher 25/25/25/25 bei 25 %)
+  — beide Dateien im Korridor 15–40 % je Rang
+- Anzahl 40/40 unverändert, Reihenfolge unverändert, `correct`-Verteilung je Datei
+  10/10/10/10 unverändert (alle Korrekturen per Options-Umsortierung bzw. Neufassung
+  ganzer Fragen unter Beibehaltung des Index)
+- Format unverändert: rohes JSON-Array, 2 Leerzeichen, LF, UTF-8 ohne BOM, Feldreihenfolge
+  `correct` / `explanation` / `options` / `question` / `topic` (Roundtrip-Vergleich bestätigt)
+- Keine Umlaut-Ersatzschreibungen, keine Meta-Optionen, keine Verweise auf Antwortpositionen
+  oder auf „die vorherige Frage"
+
+Kein Commit, kein Push.
+
+## 189. k11 Allgemeinwissen (Geographie, Musik/Kunst): erster Inhaltsdurchlauf (15.8.2026)
+
+Erster fachlicher Durchlauf über `k11__Allgemeinwissen__Geographie` (39) und
+`k11__Allgemeinwissen__Musik_Kunst` (39). Kein `correct`-Index gedreht, alle Korrekturen
+per Neufassung von Optionen bzw. ganzer Fragen unter Beibehaltung des Index.
+
+### Zweifelsfälle, bewusst so entschieden
+
+- **Urbanisierungsgrad ohne Prozentzahl** (`Geographie` [16]): die UN nennen im
+  *World Urbanization Prospects 2025* **45 %** „in cities" (neue DEGURBA-Methode), die
+  klassische Zählung nach nationalen Definitionen kommt auf **~58 %** „urban". Weil beide
+  Zahlen belegbar und beide üblich sind, ist die Erklärung bewusst als Größenordnung
+  formuliert („die Mehrheit … in Städten und stadtnahen Räumen, Stand August 2026").
+  Falls später eine Zahl gewünscht ist: Methode mit angeben.
+- **Megastädte** (`Geographie` [17]): Schwelle 10 Mio. ist Standard, aber die UN zählen
+  Ballungsräume, nicht Verwaltungsstädte. Die Erklärung nennt jetzt 33 Megastädte (2025),
+  19 in Asien, größte Jakarta mit knapp 42 Mio. — das veraltet ab dem nächsten UN-Bericht.
+- **Tropisches Klima** (`Geographie` [2]): „insgesamt hohe Niederschläge" war zu absolut
+  (Savannenklima hat eine ausgeprägte Trockenzeit), jetzt „meist hohe Jahresniederschläge".
+  Die Temperaturdefinition (kältester Monat über 18 °C) bleibt der harte Anker.
+- **Demographisches Übergangsmodell** (`Geographie` [14]): Lehrbücher gliedern in **vier
+  oder fünf** Phasen. Die feste Angabe „in vier Phasen" ist zu „in mehreren Phasen"
+  geändert, die Erklärung nennt beide Zählweisen.
+- **Plastik vs. Skulptur** (`Musik_Kunst` [22]): Distraktor 1 („Material bestimmt den
+  Fachbegriff") liegt nahe an der echten Fachunterscheidung *subtraktiv/additiv*. Er bleibt
+  falsch, weil er „ausschließlich Marmorarbeiten" behauptet; die korrekte Unterscheidung
+  steht jetzt in der Erklärung. Wenn die Frage später auffällt: Distraktor austauschen.
+- **Goldener Schnitt** (`Musik_Kunst` [25]): die Erklärung behauptete Parthenon und Mona
+  Lisa als Anwendungsbeispiele. Das ist kunsthistorisch umstritten und jetzt als umstritten
+  gekennzeichnet; die Mathematik (φ, Fibonacci, Euklid) bleibt.
+
+### Behobene Befunde `k11__Allgemeinwissen__Geographie` (39 Fragen)
+
+- **Dublette [4]/[37]** („Was ist El Niño?" doppelt, einmal ohne Tilde). [37] ersetzt durch
+  **„Was ist der Monsun?"** (topic Klimaphänomene, `correct` bleibt 1).
+- **Dublette [8]/[38]** („Was ist Desertifikation?" / „Was ist die Desertifikation?").
+  [38] ersetzt durch **„Was versteht man unter Feinstaub?"** (topic Umweltprobleme,
+  `correct` bleibt 2). Meeresversauerung und Bodenversalzung schieden als Ersatzthemen aus,
+  weil sie in [9] bzw. [24] bereits in Optionen ausgeschrieben stehen.
+- **Kreuzverrat [5] → [36]:** die richtige Option zum Treibhauseffekt zählte „CO₂ und
+  Methan" auf und lieferte damit die Antwort auf „Was sind Treibhausgase?". Umformuliert
+  auf „bestimmte Spurengase".
+- **Kreuzverrat [36] → [6]:** Distraktor 1 behauptete, CO₂ habe „den größten Anteil am
+  anthropogenen Klimawandel" — genau die Antwort von [6]. Umformuliert.
+- **Veralteter Stand [20]:** die Erklärung sprach von „fast allen Staaten" als aktuellem
+  Zustand. Ergänzt: USA zum **27. Januar 2026** ausgetreten, rund 194 Vertragsstaaten
+  bleiben gebunden.
+- **Antwort im Fragetext** ([3] „Diagramm", [14] „Übergang", [15] „Push/Pull", [20]
+  „Abkommen", [22] „Kreislauf", [33] „Hochwasser"): das Stichwort der Frage stand jeweils
+  nur in der richtigen Option. Distraktoren angeglichen bzw. richtige Option umformuliert.
+- **Längenausreißer [27]:** Distraktor 2 war deutlich der kürzeste; angeglichen.
+- **Rechtschreibung [21]:** „Bioproduktive" → „bioproduktive".
+- **Zeitstempel:** [16] und [17] auf „Stand August 2026" bzw. mit Jahresangabe 2025 datiert.
+
+### Behobene Befunde `k11__Allgemeinwissen__Musik_Kunst` (39 Fragen)
+
+- **Struktur-Verrat: 26 von 39 Fragen** meldete `check_struktur.js` — die richtige Option
+  war jeweils die einzige mit Klammer, Jahreszahl oder Schrägstrich: [0], [1], [4], [5],
+  [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [21], [22], [23], [26], [27],
+  [28], [30], [31], [33], [34], [35], [36]. Alle behoben (Klammerinhalte in den Fließtext
+  der Option oder in die Erklärung verschoben, Jahreszahlen durch Jahrhundertangaben
+  ersetzt, Schrägstriche ausgeschrieben). Danach **0**.
+- **Fünf Dubletten**, jeweils ersetzt unter Beibehaltung des `correct`-Index:
+  - [30] (Leitmotiv, Dublette zu [6]) → **„Was ist der Generalbass (Basso continuo)?"**
+  - [31] (Sonatenhauptsatzform, Dublette zu [0]) → **„Was ist eine Modulation in der Musik?"**
+  - [32] (Zwölftonmusik, Dublette zu [9]) → **„Was ist Minimal Music?"**
+  - [34] (Kubismus, Dublette zu [15]) → **„Was ist Dada?"**
+  - [35] (Surrealismus, Dublette zu [16]) → **„Was ist Land Art?"**
+- **Zweite richtige Option [18]:** Distraktor 1 begann mit „Abstrakte Kunst ohne erkennbare
+  Gegenstände" und war damit selbst eine gültige Definition abstrakter Kunst. Ersetzt durch
+  eine Beschreibung vereinfachender, aber gegenständlicher Malerei.
+- **Kreuzverrat [27] → [12]:** Distraktor 0 nannte „Zentralperspektive mit einem
+  Fluchtpunkt" und lieferte damit die Antwort auf „Was ist die Zentralperspektive?".
+  Ebenso [15] Distraktor 0 („zentralperspektivische Mittel"). Beide umformuliert.
+- **Kreuzverrat [5] → [9]:** die Erklärung zur Atonalität beschrieb bereits die
+  Zwölftontechnik („alle 12 Halbtöne gleichberechtigt, keine Tonika"). Neu gefasst auf
+  freie Atonalität, *Pierrot lunaire* und Zweite Wiener Schule.
+- **Antwort im Fragetext:** [5] („Atonalität") und [24] („Farbkontraste", zusätzlich als
+  einzige Option mit einer Ziffer beginnend) korrigiert.
+- **Kaputte Fragetexte:** [22] „Was ist Plastik/Skulptur vs. Relief?" →
+  „Worin unterscheiden sich Plastik beziehungsweise Skulptur und Relief?";
+  [29] „Was ist Epochenüberblick Barockmalerei?" →
+  „Wie lässt sich die Epoche der Barockmalerei einordnen?".
+- **Nichtwort [22]:** „von allen Seiten gesehbar" → „von allen Seiten zu betrachten".
+- **Umlaut-Ersatzschreibungen** behoben: „Zwolftonmusik/Dodekaphone", „Gruenewald",
+  „Oel-Lasuren", „Gewaender", „Farbauftraege", „Komplementaerkontrast", „Farbveraenderung",
+  „Nachtcafe", „A-cappella-Choere", „fliessende", „Persoenlichkeiten", „repraesentativem",
+  „einpraegbaren", „Musikpaedagogik", „dazugehoeriger", „liessen" sowie fehlende Akzente
+  („Andre Breton", „Dali", „Rene Magritte").
+- **Sachliche Präzisierungen:** [33] Ravels *Boléro* war als Beispiel für musikalischen
+  Impressionismus unglücklich, ersetzt durch *Jeux d'eau* bzw. Debussys *La Mer* und
+  *Prélude à l'après-midi d'un faune*, mit dem Hinweis, dass Debussy das Etikett ablehnte.
+  [36] Isenheimer Altar präzise auf 1512–1516 datiert. [29] Distraktor „gotische Malerei
+  ca. 1200–1300" auf 1200–1400 erweitert.
+- **Satzzeichen-Ausreißer:** in [33], [37], [38] endete nur die richtige Option mit einem
+  Punkt. Vereinheitlicht.
+
+### Prüfungen nach dem Durchlauf
+
+- `check_questions.js k11__Allgemeinwissen --dir questionbank --summary`
+  → 2 Dateien, 78 Fragen, **0 Befunde**
+- `check_struktur.js` je Datei → **0** (Geographie vorher 0, Musik/Kunst vorher **26**)
+- `check_laenge.js --alle --dir questionbank`:
+  `k11__Allgemeinwissen__Geographie` 27/22/22/30, längste 27 % (vorher 21/28/26/26 bei 21 %);
+  `k11__Allgemeinwissen__Musik_Kunst` 24/26/18/32, längste 23 % (vorher 28/22/25/25 bei 26 %)
+  — beide im Korridor 15–40 % je Rang
+- Anzahl **39/39** unverändert, Reihenfolge unverändert, `correct`-Verteilung je Datei
+  **10/10/10/9** unverändert
+- Format unverändert: rohes JSON-Array, 2 Leerzeichen, LF, UTF-8 ohne BOM, Feldreihenfolge
+  `correct` / `explanation` / `options` / `question` / `topic` (Roundtrip-Vergleich bestätigt)
+- 0 Fragen-Dubletten, 0 Antwort-Dubletten, keine Meta-Optionen, keine Umlaut-Ersatzschreibungen
+
+### Quellen
+
+- UN DESA, *World Urbanization Prospects 2025* — 33 Megastädte 2025, 19 in Asien, Jakarta
+  knapp 42 Mio., 45 % „in cities": https://www.un.org/en/desa/WUP-2025
+- US-Austritt aus dem Pariser Abkommen wirksam 27.1.2026:
+  https://ccca.ac.at/news/detail/klimakrise-ausstieg-der-usa-aus-pariser-klimaabkommen-tritt-in-kraft
+- Feinstaub PM10/PM2,5, Eindringtiefe und WHO-Bewertung, Umweltbundesamt:
+  https://www.umweltbundesamt.de/en/data/environmental-indicators/indicator-population-exposure-to-particulate-matter
+
+Kein Commit, kein Push.
+
+## Inhaltsdurchlauf k11__Deutsch__Literatur (79 Fragen), 15.8.2026
+
+Erste fachliche Prüfung dieser Datei. Indizes sind 0-basiert.
+
+### Behobene Sachfehler
+
+- **[25] Woyzeck falsch datiert:** Die Erklärung nannte „1837, postum" als Erscheinungsjahr.
+  Richtig: entstanden 1836/37, gedruckt erst **1879** durch Karl Emil Franzos, uraufgeführt
+  **1913** in München.
+- **[58] Der zerbrochne Krug:** Erklärung nannte nur „1811". Ergänzt: Uraufführung **1808**
+  in Weimar unter Goethe, vollständiger Erstdruck 1811.
+- **[75] Dreiakter/Freytag:** Die Erklärung stellte das Dreiakt-Schema als bloße
+  „Vereinfachung von Gustav Freytags Fünf-Akt-Pyramide" dar. Beide sind eigenständige
+  Modelle; umformuliert.
+- **[32] Heine:** „Romantik / Übergang zum Realismus" war schief. Jetzt „Späte Romantik /
+  Vormärz (Junges Deutschland)", belegt über den Bundestagsbeschluss vom 10.12.1835.
+- **[33] innerer Monolog:** Die Erklärung setzte ihn mit „stream of consciousness" gleich.
+  Innerer Monolog und Bewusstseinsstrom sind fachlich zwei Begriffe; getrennt.
+- **[51] Schillers Hauptwerke:** Optionsliste war fehlerhaft (drei bis fünf Titel je Option,
+  „Woyzeck (1837)" mit falschem Jahr, gemischte Autoren in einer Option). Frage ersetzt.
+
+### Ersetzte Fragen (13) — Dubletten und Kreuzverrat
+
+Die Datei fragte mehrere Sachverhalte doppelt oder dreifach ab. Ersetzt wurde jeweils die
+schwächere Fassung, `correct`-Index blieb erhalten:
+
+- Katharsis stand **dreimal** ([19], [42], [72]) → behalten [42]; [19] jetzt *Deus ex machina*,
+  [72] jetzt *Teichoskopie/Mauerschau*.
+- Episches Theater stand **dreimal** ([6], [34], [44]) → behalten [44]; [6] jetzt
+  *Mutter Courage / Dreißigjähriger Krieg*, [34] jetzt *Effi Briest / Fontane*.
+- Exposition doppelt ([18], [53]) → [53] jetzt *Haupttext und Nebentext*.
+- Novelle doppelt ([16], [57]) → [57] jetzt *Rahmenerzählung*.
+- Expressionismus doppelt ([36], [64]), zusätzlich **widersprüchliche Jahresangaben**
+  (1905–1925 gegen 1910–1925) → [64] jetzt *Stationendrama*.
+- Naturalismus doppelt ([35], [65]) → [65] jetzt *Trümmerliteratur*.
+- Romantik doppelt ([8], [66]), zusätzlich **widersprüchliche Jahresangaben**
+  (1795–1840 gegen 1795–1848) → [66] jetzt *blaue Blume / Novalis*.
+- Sturm und Drang doppelt ([0], [69]) → [69] jetzt *Namensherkunft (Klinger 1776)*.
+- Weimarer Klassik doppelt ([40], [70]) → [70] jetzt *Balladenjahr 1797*.
+- Woyzeck: [59] nannte den Autor in der Frage und verriet damit die Antwort von [25]
+  → [59] jetzt *analytisches Drama*.
+
+### Weitere Befunde
+
+- **Kreuzverrat [41]:** Die richtige Option zählte Ort, Zeit und Handlung auf — also die
+  Antwort von [17]. Auf „weitere Einheiten kamen erst in der französischen Klassik hinzu"
+  umgestellt.
+- **Kreuzverrat [61]:** Die Erklärung nannte „Kabale und Liebe" als bürgerliches Trauerspiel
+  und verriet damit die Antwort von [5]. Entfernt.
+- **Kreuzverrat [62]:** Erklärung nannte das Stationendrama, die Antwort von [64]. Entfernt.
+- **Kreuzverrat [60]:** Distraktor beschrieb erkennbar „Die Räuber" samt Autornennung
+  (Antwort von [4]). Autornennung gestrichen.
+- **Bauform-Verrat [39] und [77]:** Die richtige Option war jeweils die einzige, die der
+  Bauform der Distraktoren nicht folgte ([39] ganzer Satz statt Nominalphrase, [77] als
+  einzige mit den erfragten Begriffen, alle drei Distraktoren begannen mit „Zwei …").
+- **Struktur-Verrat [65]:** Jahreszahl zunächst nur in der richtigen Option; alle vier datiert.
+- **Längenverrat:** 9 Fragen, in denen die richtige Antwort deutlich die längste war
+  ([46], [49], [53], [57], [61], [65], [69], [73], [77]) — behoben, dazu 12 weitere Fragen
+  angeglichen, in denen die richtige Antwort auffällig die kürzeste war.
+- **Fragestellungen sprachlich repariert:** [0], [8], [9] („Welcher Epoche gehört die
+  Romantik an?" → Zeitraum), [23] („Was ist Hyperbel?"), [32], [52], [61], [68], [74], [77].
+- **Telegrammartige Erklärungen** ohne Begründung überarbeitet: [26], [46], [49], [63], [67].
+
+### Zweifelsfälle (bewusst so entschieden)
+
+- **Epochengrenzen sind Konvention, nicht Fakt.** Die Datei nutzt jetzt durchgängig
+  Sturm und Drang 1765–1785, Romantik 1795–1840, Realismus 1848–1890, Naturalismus
+  1880–1900, Expressionismus 1905–1925, Weimarer Klassik 1786–1805. Verbreitet sind auch
+  1767–1785, 1795–1848 und 1910–1925. Innerhalb der Datei ist es nun widerspruchsfrei; wer
+  andere Schulbuchgrenzen zugrunde legt, müsste alle betroffenen Fragen gemeinsam umstellen.
+- **[17] gegen [41]:** [17] fragt nach dem feststehenden Terminus „die drei aristotelischen
+  Einheiten" (Ort, Zeit, Handlung), [41] danach, was Aristoteles selbst forderte (vor allem
+  Einheit der Handlung). Kein Widerspruch, aber didaktisch heikel — beide Erklärungen weisen
+  jetzt ausdrücklich auf die französische Klassik als Quelle der Zuspitzung hin.
+- **[2] Werther als „Hauptwerk des Sturm und Drang von Goethe":** „Götz von Berlichingen"
+  wird ebenso oft so genannt. Da Götz nicht unter den Optionen steht, bleibt die Frage
+  eindeutig lösbar.
+- **[24] gegen [74]:** `check_dubletten` meldet 67 % Ähnlichkeit („Was ist Ironie?" /
+  „Was ist dramatische Ironie?"). Das sind zwei verschiedene Begriffe (verbale gegen
+  dramatische Ironie); keine Option der einen Frage passt auf die andere. Bewusst behalten.
+- **[44], [45], [73]:** episches Theater, V-Effekt und epischer Held sind inhaltlich eng
+  verwandt, fragen aber Konzept, Technik und Figurenbild getrennt ab. Behalten.
+- **[34] Effi Briest:** Die Buchausgabe wird je nach Quelle mit 1895 oder 1896 angegeben
+  (Titelblatt: 1896). Die Erklärung nennt deshalb nur die unstrittige Vorabveröffentlichung
+  „1894/95 in der Deutschen Rundschau".
+- **Topic „Syntax"** für [27] Parataxe und [28] Hypotaxe beibehalten — beschreibt den
+  Satzbau als Stilmittel korrekt.
+
+### Prüfungen nach dem Durchlauf
+
+- `check_questions.js k11__Deutsch__Literatur --dir questionbank` → **0 Befunde** (vorher 9)
+- `check_struktur.js k11__Deutsch__Literatur --dir questionbank` → **0** (vorher 1)
+- `check_laenge.js --dir questionbank` → Datei **nicht** in der Auffälligenliste;
+  `--alle`: 22/28/27/22, längste 22 % (vorher 26/26/23/26 bei 25 %) — im Korridor 15–40 %
+- `check_dubletten.js` → 2 Verdachtsfälle, beide geprüft und unbedenklich (siehe oben);
+  `check_antwortgruppen.js` → 1 Gruppe („Friedrich Schiller" bei [1] und [4]), zwei
+  verschiedene Fakten, unbedenklich
+- Anzahl **79** unverändert, Reihenfolge unverändert, `correct`-Verteilung **20/20/20/19**
+  unverändert
+- Format unverändert: rohes JSON-Array, 2 Leerzeichen, LF, UTF-8 ohne BOM, Feldreihenfolge
+  `correct` / `explanation` / `options` / `question` / `topic`
+- Keine Meta-Optionen, keine Umlaut-Ersatzschreibungen
+
+### Quellen
+
+- Woyzeck, Entstehung 1836/37, Erstdruck 1879 (Franzos), Uraufführung 8.11.1913 München:
+  https://dewiki.de/Lexikon/Woyzeck und https://100schaetze.klassik-stiftung.de/objekt/georg-buechner-woyzeck-fragmente-1836/1837/
+- Der zerbrochne Krug, Uraufführung 2.3.1808 Weimar unter Goethe, Erstdruck 1811 bei Reimer:
+  https://de.wikipedia.org/wiki/Der_zerbrochne_Krug
+- Klinger, „Wirrwarr" 1776, Titeländerung zu „Sturm und Drang" auf Anregung Christoph
+  Kaufmanns: https://de.wikipedia.org/wiki/Sturm_und_Drang_(Schauspiel)
+- Balladenjahr 1797, Wettstreit Goethe/Schiller, Schillers Brief vom 22.9.1797:
+  https://www.friedrich-schiller-archiv.de/inhaltsangaben/balladenjahr-goethe-schiller-1797/2/
+- Ständeklausel, Fallhöhe, Aufgabe durch das bürgerliche Trauerspiel:
+  https://www.kinderundjugendmedien.de/begriffe-und-termini/dramatik/1741-staendeklausel
+- Stationendrama, Strindberg als Vorbild, Kaiser „Von morgens bis mitternachts" (1912),
+  Toller „Die Wandlung" (1919): https://de.wikipedia.org/wiki/Stationendrama
+- Trümmerliteratur 1945–1950, Kahlschlag, Borchert „Draußen vor der Tür" (1947):
+  https://www.inhaltsangabe.de/wissen/literaturepochen/nachkriegsliteratur/
+- Mutter Courage, Dreißigjähriger Krieg, entstanden 1938/39, Uraufführung 19.4.1941 Zürich:
+  https://de.wikipedia.org/wiki/Mutter_Courage_und_ihre_Kinder
+- Effi Briest, Vorabdruck Deutsche Rundschau 1894/95, Buchausgabe 1895 bzw. 1896:
+  https://en.wikipedia.org/wiki/Effi_Briest
+- Bundestagsbeschluss vom 10.12.1835 gegen das Junge Deutschland, Heine namentlich genannt:
+  http://www.heinrich-heine-denkmal.de/dokumente/beschluss.shtml
+
+Kein Commit, kein Push.
+
+## Inhaltsdurchlauf k11__Geschichte__Weltkriege (77 Fragen, 15.8.2026)
+
+Erste fachliche Prüfung dieser Datei. Anzahl (77), Reihenfolge und `correct`-Verteilung
+(20/19/19/19) unverändert; Korrekturen ausschließlich über Umformulierung und
+Options-Umsortierung, nie über den Index.
+
+### Der große Befund: die Datei bestand zur Hälfte aus Dubletten
+
+Die Datei setzte sich aus zwei Chargen zusammen, die dieselbe Epoche zweimal abfragten —
+kurze Fassungen in [0]–[39], ausführliche in [40]–[76]. 21 Themen kamen doppelt, vier
+sogar dreifach vor (Ermächtigungsgesetz, Novemberpogrome, Reichstagsbrand, Nürnberger
+Prozesse). Gleichzeitig enthielt eine Datei mit dem Namen **Weltkriege** keine einzige
+Frage zum **Ersten Weltkrieg**.
+
+Behoben: 27 Fragen ersetzt, jeweils die schwächere Fassung eines Paares, bei gleichem
+`correct`-Index. Neu abgedeckt sind 13 Fragen zum Ersten Weltkrieg (Sarajevo,
+Schlieffen-Plan, Stellungskrieg, Verdun, Kriegseintritt der USA, Brest-Litowsk,
+Waffenstillstand von Compiègne, Steckrübenwinter, Matrosenaufstand, Opferzahlen, neue
+Waffen, Oberste Heeresleitung, Burgfrieden), sechs zum militärischen Verlauf des Zweiten
+Weltkriegs (Stalingrad, Pearl Harbor, D-Day, Luftschlacht um England, El Alamein,
+Kriegsende in Asien) sowie Einsatzgruppen, Warschauer Ghettoaufstand, Vierjahresplan,
+Bücherverbrennung, Zwangsarbeit, Rheinlandbesetzung 1936, Potsdamer Konferenz und
+Kommissarbefehl.
+
+### Sachfehler
+
+- **[24] zweite richtige Option:** Der Distraktor „Die Gründung des Völkerbunds und die
+  Regeln für internationale Zusammenarbeit" war bei der Frage „Was regelte der Versailler
+  Vertrag?" ebenfalls richtig — die Völkerbundsatzung bildete **Teil I des Vertrags**.
+  Ersetzt. Zugleich Artikel 231 präzisiert: Er wies Deutschland und seinen Verbündeten die
+  Verantwortung für **alle Kriegsschäden** zu; die Lesart „alleinige Kriegsschuld" ist die
+  zeitgenössische deutsche Deutung, nicht der Wortlaut.
+- **[43] Anachronismus:** „Ein extremer Verfall der **Deutschen Mark**" — 1923 galt die
+  (Papier-)Mark, die Deutsche Mark gibt es erst seit 1948. Korrigiert zu „der Mark".
+- **[58] „Das erste Konzentrationslager entstand 1933 in Dachau"** ist zu grob: 1933
+  entstanden zahlreiche frühe und „wilde" Lager; Dachau war das einzige von ihnen, das
+  dauerhaft betrieben wurde, und wurde zum Vorbild aller späteren Lager. Neu formuliert.
+- **[73] NS-Begriff präzisiert:** Das Blutschutzgesetz verbot Ehen nicht zwischen Juden und
+  „Nichtjuden", sondern zwischen Juden und „Staatsangehörigen deutschen oder artverwandten
+  Blutes". Ergänzt um die Bestimmung, wer über die Großeltern als Jude galt.
+- **[29]/[15] Datumswiderspruch:** Das Münchener Abkommen war einmal auf den 29., einmal
+  auf den 30. September datiert. Vereinheitlicht auf „in der Nacht vom 29. auf den
+  30. September 1938".
+- **[3] Artikel 48 präzisiert:** Der Artikel erlaubte Maßnahmen und das Aussetzen einzelner
+  Grundrechte bei Störung der öffentlichen Sicherheit — der Reichstag konnte solche
+  Verordnungen aufheben. „Ohne Reichstag regieren" war die Praxis ab 1930, nicht der
+  Wortlaut.
+- **[63] Frage existierte so nicht:** „Was war der Stab Weltanschauungspolitik
+  (Rassenideologie)?" — eine NS-Institution dieses Namens gibt es nicht. Neu gefasst als
+  „Worauf beruhte die nationalsozialistische Rassenideologie?".
+- **[46] kaputter Fragetext:** „Was war die Weltwirtschaftskrise (ab 1929) Auswirkung auf
+  Deutschland?" → „Wie wirkte sich die Weltwirtschaftskrise ab 1929 auf Deutschland aus?".
+
+### Kreuzverrat (Erklärungen, die die Antwort einer anderen Frage lieferten)
+
+- [27] Appeasement nannte „Münchener Abkommen 1938, das das Sudetenland an Deutschland
+  überließ" → Antwort auf [29]. Ebenso enthielt [15] den Distraktor „30. September 1938
+  (Münchener Abkommen über das Sudetenland)"; alle vier Optionen dort auf reine Daten
+  reduziert.
+- [62] Propaganda nannte in Option **und** Erklärung „das Ministerium von Goebbels" →
+  Antwort auf [26] „Wer war Reichspropagandaminister?". Ebenso [60] („Reichskulturkammer
+  unter Goebbels"). Beide entschärft.
+- [40], [46], [69] nannten „Notverordnungen nach Artikel 48" → Antwort auf [3]. Die
+  Verknüpfung Artikel 48 ↔ Notverordnungsrecht steht jetzt nur noch in [3] selbst.
+- [52] Holocaust nannte „Auf der Wannsee-Konferenz im Januar 1942 wurde der europaweite
+  Massenmord organisiert" → Antwort auf [53].
+- [65] Barbarossa nannte „die Wende brachte Stalingrad" → Antwort auf die neue Frage [21].
+- [72] Reichstagsbrand beschrieb die Wirkung der Reichstagsbrandverordnung → Antwort auf [39].
+- [66] Freikorps nannte den Spartakusaufstand → Antwort auf [23]. [41] Novemberrevolution
+  nannte Scheidemann → Antwort auf [1].
+
+### Struktur-Verrat (`check_struktur.js`: 7 → 0)
+
+[7], [23], [48], [49], [68], [72], [75] — die richtige Option war jeweils die einzige mit
+einer Jahreszahl bzw. einem Schrägstrich. Jahreszahlen aus den richtigen Optionen entfernt
+(sie stehen ohnehin im Fragetext), [7] und [48]/[49] ohnehin ersetzt.
+
+### Sprachliche Mängel
+
+- Erklärungen im Stichwort-Telegrammstil und im Präsens neu geschrieben: [47]
+  („Fehler: NSDAP ist stärkste Partei, Hitler nutzt Regierungsapparat …"), [38], [44], [25].
+- [1] und [2] wiederholten in der Erklärung nur den Fragetext, ohne zu begründen.
+
+### Zweifelsfälle und Beobachtungen — bitte ansehen
+
+1. **Opferzahlen durchgehend als Spanne formuliert**, nie als eine Zahl. Verwendet wurden:
+   Verdun „rund 300.000 Tote und etwa 400.000 Verwundete"; Erster Weltkrieg gesamt „etwa 15
+   bis 20 Millionen"; Hiroshima/Nagasaki „rund 150.000 bis über 200.000 bis Jahresende";
+   Einsatzgruppen „rund eine Million, alle Massenerschießungen zusammen 1,5 bis 2
+   Millionen"; Novemberpogrome „NS-Angabe 91 gilt als weit zu niedrig, neuere Forschung
+   weit über tausend"; Porajmos „220.000 bis eine halbe Million" (unverändert übernommen);
+   sowjetische Kriegsgefangene „etwa 5,7 Millionen, davon rund 3,3 Millionen gestorben";
+   Zwangsarbeit „über 13 Millionen insgesamt". Falls eine dieser Spannen im Unterricht
+   anders gelehrt wird, bitte melden.
+2. **Der Katalog heißt „Weltkriege", der Schwerpunkt liegt weiter beim NS-Staat** (29 von 77
+   Fragen `topic` NS-Zeit). Nach dem Durchlauf: Erster Weltkrieg 13, Weimarer Republik 16,
+   Zweiter Weltkrieg 6, Holocaust 4, Widerstand 3, NS-Ideologie 3, Nachkrieg 3. Wenn die
+   Datei ausgewogener werden soll, wären weitere Fragen zum Kriegsverlauf 1939–1945 der
+   nächste Schritt — dafür müssten aber weitere NS-Themen weichen.
+3. **`k10__Geschichte__Weltkriege` (15 Fragen) und `k12__Geschichte__Weltkriege` (50 Fragen)
+   behandeln dieselbe Epoche.** Ob die 27 neuen Fragen dort Entsprechungen haben, wurde
+   nicht geprüft — das wäre ein eigener, dateiübergreifender Durchlauf.
+4. **[39] und [75] beschreiben zwei verschiedene Gesetze mit ähnlichem Wortlaut**
+   (Reichstagsbrandverordnung / Ermächtigungsgesetz). Der Distraktor in [39] beschreibt
+   exakt das Ermächtigungsgesetz. Das ist bewusst so belassen — die Unterscheidung der
+   beiden ist genau der Lernzweck —, kann aber als verwirrend empfunden werden.
+
+### Prüfungen nach dem Durchlauf
+
+- `check_questions.js k11__Geschichte__Weltkriege --dir questionbank` → **0 Befunde**
+- `check_struktur.js k11__Geschichte__Weltkriege --dir questionbank` → **0** (vorher 7)
+- `check_laenge.js --alle --dir questionbank`: 21/31/26/22, „längste gewinnt" 19 %
+  (vorher 22/29/26/22 bei 21 %) — im Korridor 15–40 % je Rang
+- `check_dubletten.js` → 2 reine Titelähnlichkeiten ([40] gegen [66]/[69]), keine echten
+  Dubletten mehr
+- Anzahl **77** unverändert, Reihenfolge unverändert, `correct`-Verteilung **20/19/19/19**
+  unverändert
+- Format unverändert: rohes JSON-Array, 2 Leerzeichen, LF, UTF-8 ohne BOM, Feldreihenfolge
+  `correct` / `explanation` / `options` / `question` / `topic` (Roundtrip-Vergleich bestätigt)
+- keine Umlaut-Ersatzschreibungen, keine Meta-Optionen
+
+### Quellen
+
+- Verdun, Opferzahlen: https://www.dhm.de/lemo/kapitel/erster-weltkrieg/kriegsverlauf/verdun-1916
+- Erster Weltkrieg, Tote und Verwundete: https://www.dhm.de/lemo/kapitel/erster-weltkrieg/kriegsverlauf/tod-und-verwundung
+  und https://www.bpb.de/themen/erster-weltkrieg-weimar/ersterweltkrieg/155303/der-erste-weltkrieg-als-totaler-krieg/
+- Stalingrad, Eingeschlossene und Gefangene: https://www.dhm.de/lemo/kapitel/der-zweite-weltkrieg/kriegsverlauf/schlacht-um-stalingrad-194243
+- Hiroshima und Nagasaki, Opferschätzungen: https://www.icanw.org/hiroshima_and_nagasaki_bombings
+- Einsatzgruppen: https://dhm.de/lemo/kapitel/zweiter-weltkrieg/holocaust/einsatzgruppen
+  und https://encyclopedia.ushmm.org/content/en/article/mass-shootings-of-jews-during-the-holocaust
+- Sowjetische Kriegsgefangene: https://www.dhm.de/lemo/kapitel/der-zweite-weltkrieg/kriegsverlauf/kriegsgefangenschaft
+- Novemberpogrome, Todesopfer und zerstörte Synagogen: https://www.bpb.de/kurz-knapp/hintergrund-aktuell/542301/novemberpogrom-1938/
+  und https://www.dhm.de/lemo/kapitel/ns-regime/ausgrenzung-und-verfolgung/novemberpogrom-1938
+- Frühe Konzentrationslager und Dachau: https://www.kz-gedenkstaette-dachau.de/en/historical-site/dachau-concentration-camp-1933-1945/
+- Zwangsarbeit, Größenordnungen: https://www.bpb.de/themen/nationalsozialismus-zweiter-weltkrieg/ns-zwangsarbeit/222627/ueberblick-die-nationalsozialistische-zwangsarbeit/
+- Versailler Vertrag, Artikel 231 und Völkerbundsatzung als Teil I:
+  https://www.dhm.de/lemo/kapitel/weimarer-republik/innenpolitik/kriegsschuld
+
+Kein Commit, kein Push.
+
+## Inhaltsdurchlauf k11__Physik (156 Fragen in 4 Dateien, 15.8.2026)
+
+Erste inhaltliche Prüfung von `k11__Physik__Mechanik` (40), `__Elektrizitaet` (39),
+`__Optik` (39), `__Atomphysik` (38). Alle 156 Fragen einzeln nachgerechnet bzw.
+gegengeprüft.
+
+### Der Kernbefund: kein einziger Rechen- oder Formelfehler, aber elf Dubletten
+
+Fachlich waren die Dateien auffallend sauber. Nachgerechnet und bestätigt wurden
+u. a. ²³⁵U + n → ⁹²Kr + ¹⁴¹Ba + 3n (Massen- und Ordnungszahlbilanz stimmt),
+Grenzwinkel Glas–Luft arcsin(1/1,5) = 41,8°, rotes Licht 700 nm → 4,3·10¹⁴ Hz,
+Paarbildungsschwelle 1,022 MeV, 60 W bei 230 V → 0,26 A, 1 kWh = 3,6·10⁶ J,
+Nb T_c ≈ 9 K, YBCO ≈ 90 K, Quarkladungen uud = +1 und udd = 0, 17 Teilchen im
+Standardmodell. **Kein Fall der Klasse „Lichtgeschwindigkeit = 3000 m/s".**
+
+Die Fehler lagen eine Ebene höher — genau wie bei Klasse 8+9:
+
+**Wortgleiche bzw. Antwort-Dubletten (11 Fragen ersetzt):**
+
+| Datei | Index | Dublette zu | Ersetzt durch |
+|---|---|---|---|
+| Atomphysik | 34 | 7 (Unschärferelation, **wortgleicher Fragetext**) | Pauli-Prinzip |
+| Atomphysik | 36 | 1 (Bohr-Modell) | Spin des Elektrons |
+| Atomphysik | 35 | 13 + 15 (Vergleichsfrage lieferte beide Antworten) | Massenzahl A und Kernladungszahl Z |
+| Optik | 34 | 2 (Snellius, identische richtige Antwort) | Gittergleichung d·sin(α) = k·λ |
+| Optik | 37 | 7 (Linsengleichung, identische richtige Antwort) | Rotverschiebung / Doppler-Effekt |
+| Optik | 36 | 9 (Interferenz) | additive Farbmischung RGB |
+| Optik | 35 | 5 + 6 (Sammel-/Streulinse) | Hohlspiegel |
+| Optik | 33 | 4 (Brechungsindex n = c/v) | Was ändert sich beim Übertritt Luft → Glas |
+| Elektrizität | 34 | 12 (Induktion) | Faradayscher Käfig |
+| Elektrizität | 35 | 13 (Transformator, fast wortgleich) | Wirbelströme |
+| Elektrizität | 38 | 26 (Selbstinduktion, fast wortgleich) | piezoelektrischer Effekt |
+| Elektrizität | 32 | 6 (elektrische Energie W = P·t) | Spannungsteiler |
+
+Zwei weitere Fragen wurden umgebaut statt ersetzt: Optik 38 (Photoeffekt) fragt
+jetzt nach der **Energie** der Elektronen, weil die Definition schon in Frage 19
+(Grenzfrequenz) stand; Mechanik 22 (Reihenschaltung) ist jetzt eine
+**Rechenaufgabe** (10 Ω + 20 Ω + 30 Ω = 60 Ω), weil die alte Option 0 wortgleich
+die richtige Antwort von Frage 23 war — und weil die Datei sonst keine einzige
+Rechnung enthielt.
+
+### Zweitrichtige Option (Fehlerklasse 3)
+
+- **Mechanik 13** „Unterschied Längs-/Querwellen": Distraktor „Querwellen können
+  sich in Gasen und Flüssigkeiten nicht ausbreiten, wohl aber in Festkörpern" ist
+  für **mechanische** Querwellen fachlich richtig — die als richtig markierte
+  Option nennt aber ausgerechnet Licht als Querwelle. Die Frage hatte damit zwei
+  vertretbare Antworten. Distraktor durch die eindeutig falsche Spiegelaussage
+  ersetzt.
+
+### Kreuzverrat: der systematische Befund dieser Charge
+
+`k11__Physik__Elektrizitaet` war als **Definitions-Karussell** gebaut: Die
+Distraktoren einer Frage waren wortgleich die richtigen Antworten anderer Fragen
+derselben Datei. Wer Frage 1 (Spannung) richtig hatte, bekam die Antworten der
+Fragen 2, 3 und 5 mitgeliefert. Insgesamt **31 Distraktoren in 21 Fragen**
+ersetzt, darunter die Cluster:
+
+- Spannung / Stromstärke / Widerstand / Leistung / Energie (Fragen 1, 2, 3)
+- Coulombkraft ↔ Lorentzkraft (Fragen 8, 11, 24, 25)
+- elektrisches Feld ↔ Magnetfeld (Fragen 7, 10)
+- Kirchhoff Maschen- ↔ Knotenregel (Fragen 15, 16) — Frage 15 enthielt die
+  Knotenregel wörtlich als Distraktor und umgekehrt
+- Diode ↔ Transistor ↔ FET ↔ Kondensator ↔ Elektromagnet (Fragen 9, 13, 22, 23, 31)
+- Supraleiter ↔ Halbleiter (Fragen 20, 21)
+- Induktion ↔ Solarzelle ↔ Generator (Fragen 12, 30, 37)
+
+In den anderen Dateien einzeln behoben:
+
+- **Mechanik 15** (Snellius) hatte „Einfallswinkel = Ausfallswinkel" als
+  Distraktor — die richtige Antwort von Frage 35
+- **Mechanik 10, 38** enthielten „F = m · a", die richtige Antwort von Frage 1
+- **Mechanik 17** enthielt „F = q·v×B", die richtige Antwort von Frage 25
+- **Mechanik 27** enthielt die Kondensator-Definition (Frage 28), **Mechanik 18/32**
+  die Kapazitätsformel (Frage 29) bzw. P = U·I (Frage 24)
+- **Optik 3**: die Erklärung nannte Grenzwinkelformel (Frage 26) **und**
+  Glasfaserkabel als Anwendung (Frage 27) — beide gestrichen
+- **Optik 9**: die Erklärung definierte Kohärenz (Frage 31) mit
+- **Optik 12** (Polarisation): die richtige Antwort verriet, dass Licht eine
+  Transversalwelle ist — die Antwort von Frage 16. Frage 12 fragt jetzt nach der
+  Polarisation selbst, ohne den Wellentyp zu nennen
+- **Optik 1, 20**: Erklärung bzw. richtige Option verrieten die neue Frage 33
+- **Atomphysik 13/15**: Spaltung und Fusion enthielten gegenseitig die Antwort der
+  anderen sowie die des radioaktiven Zerfalls (Frage 8)
+- **Atomphysik 6, 25, 29**: Compton-Effekt (Frage 22), Annihilation (Frage 24) und
+  γ-Strahlung (Frage 11) standen als Distraktor bzw. in der Erklärung
+
+### Struktur-Verrat (`check_struktur.js`: 30 → 0)
+
+Mechanik 13, Elektrizität 11, Optik 5, Atomphysik 1 Fragen, bei denen **nur** die
+richtige Option eine Klammer, einen Schrägstrich oder eine Jahreszahl trug. Gelöst
+entweder durch Angleichen der Distraktoren oder — wo die Zusatzinformation
+sachlich in die Erklärung gehört — durch Streichen aus der Option (z. B.
+Mechanik 26 `U_ind = −ΔΦ/Δt`, Mechanik 39 `F_Z = m·v²/r`, Optik 20 `c = 3·10⁸ m/s`).
+
+### Sachliche und sprachliche Korrekturen
+
+- **Elektrizität 30**: Fragetext war grammatisch falsch („Was ist photoelektrischer
+  Effekt…"). Erklärung präzisiert auf den **inneren** Photoeffekt und der
+  Wirkungsgrad datiert: handelsübliche Silizium-Module rund 20–22 %,
+  Spitzenmodule etwa 25 % (Stand August 2026) — der alte Wert „~20 %" war zu tief.
+- **Elektrizität 37**: Fragetext „Was ist elektromagnetische Induktion in einem
+  Generator?" war fast identisch mit Frage 12 → „Wie erzeugt ein Generator
+  elektrische Spannung?"
+- **Mechanik 39**: „aufrechthält" → „erzwingt" (falsche Verbform).
+- **Atomphysik 12**: Caret-Schreibweise `(1/2)^(t/T½)` in der Erklärung durch die
+  ausgeschriebene Halbierungsfolge N₀ → N₀/2 → N₀/4 → N₀/8 ersetzt (Regel:
+  keine Caret-/LaTeX-Notation).
+
+### Zweifelsfälle (bewusst so entschieden) — bitte ansehen
+
+1. **Eisen-56 als stabilster Kern** (Atomphysik 17): Streng genommen hat **Nickel-62**
+   mit 8,7945 MeV die höchste Bindungsenergie je Nukleon, Fe-56 liegt mit
+   8,7903 MeV knapp dahinter. Der deutsche Schulkanon nennt durchgehend Fe-56;
+   ich habe die Frage deshalb unverändert gelassen. Falls das stören sollte, wäre
+   die Option auf „bei Eisen und Nickel" zu erweitern.
+2. **α-/β-/γ-Triade** (Atomphysik 9, 10, 11): Jede der drei Fragen führt die
+   beiden anderen Strahlungsarten als Distraktor. Das ist die didaktisch übliche
+   Bauform und die richtigen Antworten enthalten jeweils ein Detail, das der
+   Distraktor nicht hat (z. B. „aus einem Neutron entstehen"). Ich habe es
+   **nicht** angetastet — ein echter Verrat ist es nur, wenn der Distraktor die
+   andere Antwort wortgleich wiedergibt.
+3. **Totalreflexion (Optik 3) und Grenzwinkel (Optik 26)** überschneiden sich in
+   der Aussage „vom dichteren ins dünnere Medium". Unterscheidungsmerkmal ist bei
+   26 die arcsin-Formel, bei 3 die Abgrenzung gegen Absorption/Streuung/Brechung.
+   Beide behalten, Erklärung von 3 aber entschärft.
+4. **Dateiname vs. Inhalt**: `k11__Physik__Mechanik` enthält 24 von 40 Fragen zu
+   Elektrizität, Magnetismus und Optik (topic-Feld ist jeweils korrekt gesetzt,
+   nur der Dateiname passt nicht). Ebenso enthält `__Optik` Quantenphysik- und
+   `__Elektrizitaet` Halbleiter-Fragen. Inhaltlich unschädlich, aber wenn die App
+   je nach Datei ein Themengebiet anzeigt, ist der Name irreführend.
+   **Nicht geändert — das wäre eine Umsortierung über Dateigrenzen hinweg.**
+5. **Datei-übergreifende Dubletten nicht geprüft**: Ohmsches Gesetz, Coulomb,
+   Lorentzkraft, Transformator, Kondensator, Kapazität, Faraday und Photoeffekt
+   kommen sowohl in `__Mechanik` als auch in `__Elektrizitaet`/`__Optik` vor. Der
+   Auftrag lautete „Dubletten je Datei"; die App zieht aber vermutlich aus mehreren
+   Dateien. Sollte in einem eigenen Durchlauf angesehen werden.
+
+### Prüfungen nach dem Durchlauf
+
+- `check_questions.js k11__Physik --dir questionbank --summary` → **4 ohne Befund,
+  156 Fragen, 0 Befunde**
+- `check_struktur.js` je Datei → **0 / 0 / 0 / 0**
+- `check_laenge.js --alle --dir questionbank`: alle vier Dateien **im Korridor**
+  (Mechanik 28/28/22/22 bei 24 %, Elektrizität 26/23/20/31 bei 26 %,
+  Optik 22/28/25/25 bei 21 %, Atomphysik 26/18/24/32 bei 24 %).
+  Mechanik lag vorher mit Rang 3 = 13 % **außerhalb** und ist jetzt drin.
+- `check_dubletten.js` / `check_antwortgruppen.js`: verbliebene Treffer sind
+  Titelähnlichkeiten (Coulomb vs. Ohm, α-Strahlung vs. ionisierende Strahlung),
+  keine echten Dubletten.
+- Anzahl **40 / 39 / 39 / 38** unverändert, Reihenfolge unverändert,
+  `correct`-Verteilung **10/10/10/10**, **10/10/10/9**, **10/10/10/9**,
+  **10/10/9/9** unverändert (Korrekturen ausschließlich per Options-Umsortierung).
+- Format unverändert: rohes JSON-Array, 2 Leerzeichen, LF, UTF-8 ohne BOM,
+  Feldreihenfolge `correct` / `explanation` / `options` / `question` / `topic`
+  (Roundtrip-Vergleich bestätigt).
+- Keine Umlaut-Ersatzschreibungen, keine Caret-/LaTeX-Notation, keine Meta-Optionen.
+
+### Quellen
+
+- Wirkungsgrad handelsüblicher PV-Module 2026: https://solar.red/modulwirkungsgrad/
+  und https://priwatt.de/blog/solarzellen-hoechster-wirkungsgrad/
+
+Kein Commit, kein Push.

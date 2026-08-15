@@ -25,7 +25,7 @@
   },
   {
     "correct": 2,
-    "explanation": "Bei der Replikation werden die beiden Stränge getrennt; jeder dient als Matrize für einen neuen Komplementärstrang (semikonservativ). Das Umschreiben in mRNA ist die Transkription, der Aufbau von Proteinen die Translation.",
+    "explanation": "Bei der Replikation werden die beiden Stränge getrennt; jeder dient als Matrize für einen neuen Komplementärstrang. Jede Tochter-DNA besteht deshalb aus einem alten und einem neuen Strang – dieses semikonservative Prinzip wiesen Meselson und Stahl 1958 nach.",
     "options": [
       "Das Umschreiben eines DNA-Abschnitts in mRNA im Zellkern",
       "Der Aufbau von Proteinen aus Aminosäuren am Ribosom",
@@ -37,7 +37,7 @@
   },
   {
     "correct": 3,
-    "explanation": "Bei der Transkription schreibt die RNA-Polymerase einen DNA-Abschnitt in mRNA um; statt Thymin wird Uracil eingebaut. Das Ablesen am Ribosom ist die Translation, das Entfernen der Introns das Spleißen.",
+    "explanation": "Bei der Transkription schreibt die RNA-Polymerase einen DNA-Abschnitt in mRNA um; statt Thymin wird Uracil eingebaut. Als Vorlage dient nur einer der beiden Stränge, der codogene Strang; die RNA wächst dabei stets in Richtung 5' nach 3'.",
     "options": [
       "Das Ablesen der mRNA am Ribosom zum Aufbau eines Proteins",
       "Die semikonservative Verdopplung der DNA vor der Zellteilung",
@@ -61,7 +61,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Ein Gen ist eine funktionelle Einheit der DNA. Die Vorstellung 'ein Gen – ein Protein' ist überholt: durch alternatives Spleißen kann ein Gen für mehrere Proteine codieren, und viele Gene liefern nur RNA. Das fadenförmige Gebilde ist das Chromosom, eine Variante eines Gens das Allel.",
+    "explanation": "Ein Gen ist eine funktionelle Einheit der DNA. Die Vorstellung 'ein Gen – ein Protein' ist überholt: durch alternatives Spleißen kann ein Gen für mehrere Proteine codieren, und viele Gene liefern überhaupt kein Protein, sondern nur RNA. Das fadenförmige Gebilde aus DNA und Proteinen im Zellkern ist dagegen das Chromosom.",
     "options": [
       "Ein fadenförmiges Gebilde aus DNA und Proteinen im Zellkern",
       "Ein DNA-Abschnitt, der für RNA oder Protein codiert",
@@ -85,15 +85,15 @@
   },
   {
     "correct": 3,
-    "explanation": "3 aufeinanderfolgende Basen bilden ein Triplett (Codon) und legen eine Aminosäure fest. Mit nur 2 Basen ergäben sich lediglich 16 Kombinationen – zu wenig für die 20 proteinogenen Aminosäuren.",
+    "explanation": "Die mRNA wird ohne Trennzeichen von einem festen Startpunkt aus abgelesen. Fehlt eine Base oder kommt eine hinzu, verschiebt sich das Leseraster: Ab dieser Stelle erkennt das Ribosom völlig andere Codons, und meist bricht die Kette an einem vorzeitigen Stoppsignal ab. Solche Rastermutationen führen deshalb fast immer zu einem funktionslosen Protein.",
     "options": [
-      "2",
-      "4",
-      "1",
-      "3"
+      "Nur die Aminosäure an dieser Stelle wird durch eine andere ersetzt",
+      "Die Wirkung bleibt aus, weil mehrere Codons dieselbe Aminosäure meinen",
+      "Das Gen wird doppelt so schnell abgelesen wie zuvor",
+      "Das Leseraster verschiebt sich, alle folgenden Codons ändern sich"
     ],
-    "question": "Wie viele Basen codieren gemeinsam eine Aminosäure?",
-    "topic": "Genetischer Code"
+    "question": "Wie wirkt sich der Einschub einer einzelnen Base mitten in einem Gen aus?",
+    "topic": "Mutation"
   },
   {
     "correct": 0,
@@ -109,7 +109,7 @@
   },
   {
     "correct": 1,
-    "explanation": "Die Mitose verteilt die zuvor verdoppelten Schwesterchromatiden gleichmäßig; beide Tochterzellen tragen denselben Chromosomensatz wie die Mutterzelle. Halbierung und vier Keimzellen gehören zur Meiose, die DNA-Verdopplung zur Interphase.",
+    "explanation": "Die Mitose verteilt die zuvor verdoppelten Schwesterchromatiden gleichmäßig; beide Tochterzellen tragen denselben Chromosomensatz wie die Mutterzelle. Sie sorgt für Wachstum, Gewebeersatz und ungeschlechtliche Vermehrung. Die Verdopplung der DNA selbst findet schon vorher in der Interphase statt.",
     "options": [
       "Kernteilung, die den Chromosomensatz auf die Hälfte reduziert",
       "Kernteilung, bei der zwei genetisch identische Zellkerne entstehen",
@@ -138,7 +138,7 @@
       "Haploide Zellen enthalten stets mehr Chromosomen als diploide",
       "Beide Begriffe meinen dasselbe und sind austauschbar",
       "Diploid heißt Keimzelle, haploid heißt Körperzelle",
-      "Haploid = einfacher Satz (n), diploid = doppelter Satz (2n)"
+      "Haploid meint den einfachen, diploid den doppelten Satz"
     ],
     "question": "Was ist der Unterschied zwischen haploid und diploid?",
     "topic": "Chromosomen"
@@ -169,11 +169,11 @@
   },
   {
     "correct": 2,
-    "explanation": "Ein rezessives Allel prägt sich nur aus, wenn kein dominantes vorhanden ist – also im Genotyp aa. Heterozygote (Aa) zeigen das Merkmal nicht, geben das Allel aber weiter. Rezessiv heißt weder 'defekt' noch 'X-chromosomal'.",
+    "explanation": "Ein rezessives Allel prägt sich nur aus, wenn kein dominantes vorhanden ist – also im Genotyp aa. Wer daneben ein dominantes Allel trägt, zeigt das Merkmal nicht, gibt es aber an die Hälfte der Nachkommen weiter. Rezessiv heißt weder 'defekt' noch 'X-chromosomal'.",
     "options": [
       "Ein Allel, das sich in jedem Genotyp im Phänotyp zeigt",
       "Ein defektes Gen, von dem keine funktionierende Kopie existiert",
-      "Ein Allel, das nur reinerbig sichtbar wird",
+      "Ein Allel, das sich nur ohne dominantes Partnerallel zeigt",
       "Ein Allel, das ausschließlich auf dem X-Chromosom liegt"
     ],
     "question": "Was bedeutet 'rezessiv'?",
@@ -181,9 +181,9 @@
   },
   {
     "correct": 3,
-    "explanation": "Kreuzt man reinerbige Eltern (AA × aa), sind alle F1-Nachkommen Aa und damit im Genotyp wie im Phänotyp einheitlich. Die 3 : 1-Aufspaltung beschreibt erst das 2. Gesetz und zeigt sich in der F2.",
+    "explanation": "Kreuzt man reinerbige Eltern (AA × aa), sind alle F1-Nachkommen Aa und damit im Genotyp wie im Phänotyp einheitlich. Das gilt auch beim intermediären Erbgang: Dort sehen alle F1-Nachkommen gleich aus, nämlich in der Mittelform beider Eltern.",
     "options": [
-      "In der F2-Generation spalten die Merkmale im Verhältnis 3 : 1 auf",
+      "Schon die Nachkommen reinerbiger Eltern spalten sichtbar auf",
       "Alle Merkmale werden gleich häufig weitergegeben",
       "Gekoppelte Gene werden stets gemeinsam vererbt",
       "Alle F1-Nachkommen reinerbiger Eltern sehen gleich aus"
@@ -231,10 +231,10 @@
     "correct": 3,
     "explanation": "Homozygot (reinerbig) heißt: an einem Genort stehen zwei gleiche Allele, AA oder aa. Nur homozygot rezessive Individuen (aa) zeigen ein rezessives Merkmal. Liegt überhaupt nur ein Allel vor – etwa bei X-chromosomalen Genen des Mannes – spricht man von hemizygot.",
     "options": [
-      "Die beiden Allele eines Genorts sind verschieden (z. B. Aa)",
+      "An einem Genort stehen zwei verschiedene Allele",
       "An einem Genort liegen mehr als zwei Allelvarianten vor",
       "Von einem Genort ist nur ein einziges Allel vorhanden",
-      "Beide Allele eines Genorts sind gleich (AA oder aa)"
+      "Beide Allele eines Genorts sind gleich, also AA oder aa"
     ],
     "question": "Was ist Homozygotie?",
     "topic": "Grundbegriffe"
@@ -243,7 +243,7 @@
     "correct": 0,
     "explanation": "Heterozygot (mischerbig) bedeutet zwei verschiedene Allele an einem Genort, z. B. Aa. Bei vollständiger Dominanz zeigt sich der dominante Phänotyp; das rezessive Allel bleibt verdeckt und wird trotzdem an die Hälfte der Nachkommen weitergegeben.",
     "options": [
-      "Die beiden Allele eines Genorts sind verschieden (Aa)",
+      "Die beiden Allele eines Genorts sind verschieden, etwa Aa",
       "Beide Allele eines Genorts sind identisch, also AA oder aa",
       "An einem Genort liegen drei Allele gleichzeitig vor",
       "Die Chromosomenzahl weicht von der Norm ab"
@@ -315,10 +315,10 @@
     "correct": 2,
     "explanation": "Beim Down-Syndrom liegt Chromosom 21 dreifach vor – eine numerische Chromosomenaberration (Genommutation), keine Genmutation. Ursache ist meist eine Non-Disjunction in der Meiose; die Häufigkeit steigt mit dem Alter der Mutter.",
     "options": [
-      "Monosomie X: es fehlt ein Geschlechtschromosom (Turner)",
-      "Eine Punktmutation in einem Gen auf Chromosom 21",
-      "Trisomie 21: ein drittes Chromosom 21 in jeder Zelle",
-      "Ein Stück des Chromosoms 21 ist verloren gegangen (Deletion)"
+      "Monosomie X: es fehlt ein Geschlechtschromosom",
+      "Genmutation: eine Punktmutation in einem Gen auf Chromosom 21",
+      "Trisomie 21: Chromosom 21 liegt dreifach vor",
+      "Deletion: ein Stück von Chromosom 21 ist verloren gegangen"
     ],
     "question": "Was ist Down-Syndrom?",
     "topic": "Chromosomenmutation"
@@ -337,12 +337,12 @@
   },
   {
     "correct": 0,
-    "explanation": "Die mRNA (messenger RNA) entsteht bei der Transkription im Zellkern und trägt die Bauanleitung zum Ribosom, wo sie bei der Translation abgelesen wird. Die rRNA baut das Ribosom mit auf, die tRNA liefert die Aminosäuren an.",
+    "explanation": "Die mRNA (messenger RNA) entsteht bei der Transkription im Zellkern, wird dort zur reifen mRNA verarbeitet und wandert ins Cytoplasma. Am Ribosom wird sie bei der Translation Codon für Codon abgelesen. Weil sie rasch wieder abgebaut wird, lässt sich über ihre Menge die Proteinmenge steuern.",
     "options": [
-      "Boten-RNA: bringt die Information zum Ribosom",
-      "Ribosomale RNA: Hauptbestandteil der Ribosomen selbst",
-      "Transfer-RNA: bringt die Aminosäuren zum Ribosom",
-      "Regulatorische RNA, die einzelne Gene an- und abschaltet"
+      "Sie bringt die Bauanleitung zum Ribosom",
+      "Sie ist der Hauptbestandteil der Ribosomen selbst",
+      "Sie liefert die Aminosäuren an das Ribosom heran",
+      "Sie schaltet einzelne Gene an und ab"
     ],
     "question": "Was ist mRNA?",
     "topic": "RNA"
@@ -351,19 +351,19 @@
     "correct": 1,
     "explanation": "Jede tRNA trägt an einem Ende eine bestimmte Aminosäure, am anderen ein Anticodon aus drei Basen, das komplementär zum Codon der mRNA ist. So wird die Basenfolge in die richtige Reihenfolge der Aminosäuren übersetzt.",
     "options": [
-      "Boten-RNA: trägt die Kopie eines Gens aus dem Kern zum Ribosom",
-      "Transfer-RNA: bringt die passende Aminosäure zum Ribosom",
-      "Ribosomale RNA: Baustoff der Ribosomen",
-      "Regulatorische RNA ohne Rolle bei der Proteinsynthese"
+      "Sie trägt die Kopie eines Gens aus dem Kern zum Ribosom",
+      "Sie bringt die passende Aminosäure zum Ribosom",
+      "Sie ist der Baustoff der Ribosomen selbst",
+      "Sie schaltet Gene an und ab, ohne selbst abgelesen zu werden"
     ],
     "question": "Was ist tRNA?",
     "topic": "RNA"
   },
   {
     "correct": 2,
-    "explanation": "AUG ist das Startcodon der Translation und codiert Methionin; jede neu gebildete Kette beginnt daher mit Methionin, das später oft abgespalten wird. UAA ist eines der drei Stoppcodons, GGG codiert Glycin und UUU Phenylalanin.",
+    "explanation": "AUG ist das Startcodon der Translation und codiert Methionin; jede neu gebildete Kette beginnt daher mit Methionin, das später oft abgespalten wird. Bei Bakterien wird an dieser Stelle ein abgewandeltes Formylmethionin eingebaut. CCC codiert Prolin, GGG Glycin und UUU Phenylalanin.",
     "options": [
-      "UAA, das die Translation beendet",
+      "CCC, das für Prolin steht",
       "GGG, das für Glycin steht",
       "AUG, das für Methionin steht",
       "UUU, das für Phenylalanin steht"
@@ -373,9 +373,9 @@
   },
   {
     "correct": 3,
-    "explanation": "Die drei Stoppcodons UAA, UAG und UGA codieren keine Aminosäure; an ihnen löst sich die fertige Kette vom Ribosom. UGG codiert dagegen Tryptophan, und AUG ist das Startcodon.",
+    "explanation": "Die drei Stoppcodons UAA, UAG und UGA codieren keine Aminosäure; an ihnen bindet statt einer tRNA ein Freisetzungsfaktor, und die fertige Kette löst sich vom Ribosom. UGG codiert dagegen Tryptophan, UAU und UAC stehen für Tyrosin.",
     "options": [
-      "AUG, AGU und UGA – sie starten die Translation",
+      "UAU, UAC und UGC – sie beenden die Proteinsynthese",
       "UAA, UGA und UGG – drei Signale für Abbruch",
       "AAA, UUU und GGG – Codons ohne Aminosäure",
       "UAA, UAG und UGA – sie beenden die Proteinsynthese"
@@ -385,7 +385,7 @@
   },
   {
     "correct": 0,
-    "explanation": "Bei einer Punktmutation ist eine einzelne Base ausgetauscht (Substitution). Sie kann stumm bleiben, eine andere Aminosäure einbauen (Missense) oder ein vorzeitiges Stoppcodon erzeugen (Nonsense). Verlust, Verdopplung oder Umkehr ganzer Abschnitte sind dagegen Chromosomenmutationen.",
+    "explanation": "Bei einer Punktmutation ist eine einzelne Base ausgetauscht (Substitution). Sie kann stumm bleiben, eine andere Aminosäure einbauen (Missense) oder ein vorzeitiges Stoppcodon erzeugen (Nonsense). Verdopplung oder Umkehr ganzer Abschnitte sind dagegen Chromosomenmutationen, der Verlust eines vollständigen Chromosoms ist eine Genommutation.",
     "options": [
       "Der Austausch einer einzigen Base",
       "Der Verlust eines vollständigen Chromosoms",
