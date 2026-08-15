@@ -4801,3 +4801,436 @@ Fragen derselben Datei, zwei Statistik-Datensätze ohne Prüfwirkung, ein falsch
   `correct`-Verteilung Geometrie 8/8/8/7, Kopfrechnen 6/6/6/6, Statistik 4/4/4/4
 - Format geprüft: UTF-8 ohne BOM, LF, 2 Leerzeichen Einrückung, Feldreihenfolge
   `correct / explanation / options / question / topic` in allen 71 Einträgen
+
+## 184. k8 Mathematik (Algebra, Allgemein, Bruchrechnung, Gleichungen): Nachprüfung eines abgebrochenen Durchlaufs (15.8.2026)
+
+Der Bearbeiter dieser vier Dateien wurde vor seinem Abschlussbericht gestoppt. Nach der
+Projektregel gilt ein Teil ohne Bericht als ungeprüft, deshalb habe ich alle **64 Fragen
+neu gerechnet** und die volle Fehlerklassenliste durchgesehen.
+
+### Urteil über die Änderungen des Vorgängers: alle korrekt, der Durchlauf war fertig
+
+Sein Diff gegen `0e1f704` umfasst 47 geänderte Einträge. Nachgeprüft und bestätigt:
+
+- **Markup-Umstellung** (Algebra, Allgemein, Bruchrechnung): `^`-Caret → echte
+  Hochzahlen (`a⁵`, `3⁴`, `16a²`), `Wurzel(48)` → `√48`, `*` → `·`, `x1/y2` → `x₁/y₂`.
+  Kein Caret, kein LaTeX und kein `Wurzel(...)` mehr in den vier Dateien.
+- **Vier echte Dubletten aufgelöst**, jede mit korrekt neu gerechneter Erklärung:
+  - `Allgemein [2]` war dasselbe Gleichungssystem wie `Allgemein [14]`
+    (x + y = 7 / x − y = 3). Neu: 2x + y = 11, x − y = 1 → x = 4 (Probe: y = 3).
+    Die Optionen wurden **umsortiert statt der Index gedreht** — regelkonform.
+  - `Allgemein [10]` fragte die Steigung durch P(2 | 7) und Q(5 | 16) — dieselben
+    Punkte wie `Algebra [14]`. Neu: P(−1 | 4), Q(3 | −4) → m = −8/4 = −2. Richtig.
+  - `Gleichungen [8]` war wortgleich zu `Gleichungen [0]` (x + 12 = 25). Neu:
+    x + 19 = 46 → 27. Richtig.
+  - `Algebra [8]` hatte dieselbe Antwort wie `Algebra [0]` (3x + 4y) bei fast gleicher
+    Aufgabe. Neu: 5a + 2b − (3a − 4b) = 2a + 6b. Richtig, Distraktor „2a − 2b" trifft
+    genau den Vorzeichenfehler.
+- **Kreuzverrat entfernt:** Die Erklärung zu `Allgemein [6]` (√72) nannte vorher „und
+  4 · Wurzel(3) ist Wurzel(48)" — das ist die Aufgabe von `Algebra [6]`. Satz gestrichen.
+- **Struktur-Verrat behoben:** In `Algebra [10]` (Trapezformel) war die richtige Option
+  eine von dreien mit Klammer, die vierte hieß `a = 2A * h - b`. Jetzt `a = (2A · h) - b`
+  — alle vier gleich gebaut.
+- **Zwei falsche Proben korrigiert:** `Gleichungen [6]` rechnete „5 · 12 − 42" ohne
+  erkennbaren Bezug, `Gleichungen [15]` „3 · 10 = 30" ohne die Klammer zu zeigen. Beide
+  Proben sind jetzt vollständig und rechnerisch richtig.
+- **Zwei schwache Distraktoren ersetzt:** `Bruchrechnung [3]` „2 1/8" → „8"
+  (2 : 1/4, also die halbe Zahl vergessen), `Bruchrechnung [10]` „3/2" → „12".
+- **`Bruchrechnung [13]`** wurde von (1/2 + 1/3) · 6/5 = 1 auf (1/2 + 1/3) · 2/5 = 1/3
+  umgestellt. Nachgerechnet: 5/6 · 2/5 = 10/30 = 1/3. Richtig; „1/3" ist in der Datei
+  sonst keine richtige Antwort, die Regel aus §156 ist also eingehalten.
+- **Zwei `topic`-Felder** vereinheitlicht („Geometrie (Satz des Pythagoras)" → „Satz des
+  Pythagoras", „Potenzen und Potenzgesetze" → „Potenzgesetze").
+
+Alle 64 `correct`-Zeiger stimmen mit der jeweils richtigen Antwort **und** mit der in der
+Erklärung vorgerechneten Zahl überein. Keine unlösbare Frage, keine Meta-Option, kein
+Verweis auf „die vorherige Frage", kein durchgesickerter Gedankengang, keine Umlaut-
+Ersatzschreibung, kein englischer Rest, keine Frage- oder Options-Dublette.
+
+### Eigener Fund: 1 (behoben)
+
+- **`Bruchrechnung [2]` und `[3]` hatten beide die Antwort „10"** — „5/7 · 14" und
+  „2 1/2 : 1/4" stehen direkt nebeneinander. `[2]` auf **5/7 · 21 = 15** umgestellt,
+  Erklärung mitgezogen (105/7 = 15), Optionen `5/147 / 35 / 15 / 105`, `correct`
+  bleibt 2. Vorher nach §156 geprüft: „15" ist in der Datei sonst keine richtige
+  Antwort, „21" kommt in keiner anderen Frage oder Erklärung vor.
+
+### Zweifelsfälle (bewusst nicht angefasst)
+
+1. **`Gleichungen`: dreimal „5", zweimal „6", zweimal „9" als richtige Antwort.**
+   Nach §156 ist eine mehrfach belegte Antwort für sich kein Fehler, solange die Fragen
+   verschieden sind — und das sind sie (2(x + 3) = 16, eine Textaufgabe, 5x + 4 =
+   2x + 19). Die Datei ist als zwei parallele Hälften über acht Aufgabentypen gebaut,
+   bei ganzzahligen Lösungen unter 30 sind Wiederholungen kaum vermeidbar. Wer eine
+   Frage kennt, gewinnt bei der anderen nichts. Nur die direkt benachbarte, wortgleiche
+   Antwort „10" in `Bruchrechnung` habe ich aufgelöst.
+2. **`Algebra [3]`: wertgleicher Distraktor.** „6x(2xy − 3y²)" hat denselben Wert wie
+   die richtige Antwort „6xy(2x − 3y)". Der Fragetext verlangt aber ausdrücklich
+   **vollständig** zu faktorisieren, und die Erklärung begründet genau diesen
+   Unterschied. Damit ist die Frage eindeutig — der Distraktor ist hier didaktisch
+   gewollt und kein Fall der 4/6-neben-2/3-Klasse.
+3. **`Gleichungen [8]`: Distraktor „37" ohne Rechenlogik.** Er stammt aus der alten
+   Fassung (x + 12 = 25, dort 25 + 12 = 37) und passt zur neuen Gleichung x + 19 = 46
+   nicht mehr als Fehlertyp — 65 (addiert statt subtrahiert) und 46 (Zahl abgeschrieben)
+   tun es. „37" ist unauffällig gebaut und verrät nichts, deshalb belassen.
+4. **`Gleichungen`: Minuszeichen zweierlei.** Alle 24 Minuszeichen der Erklärungen sind
+   das typografische U+2212 („x = 25 − 12"), Fragen und Optionen nutzen ASCII-Minus.
+   Die drei anderen Dateien nutzen durchgehend ASCII. Innerhalb der Datei systematisch,
+   über die Klasse hinweg nicht — dieselbe Beobachtung wie bei `*` gegen `·` in §183.
+   Eine Vereinheitlichung wäre ein eigener, dateiübergreifender Lauf.
+5. **Zwei dateiübergreifende Bauformen-Paare.** `Allgemein [5]` („3x + 5y − x + 2y")
+   neben `Algebra [0]` („5x + 3y − 2x + y") und `Allgemein [11]` („(3⁴ · 3²) / 3³")
+   neben `Algebra [15]` („(a⁵ · a³) / a²") sind gleich gebaut, aber mit anderen Zahlen
+   und anderen Antworten. Innerhalb einer Datei wäre das eine Dublette; über zwei
+   Kataloge hinweg, die getrennt gezogen werden, habe ich es als Standardaufgabentyp
+   akzeptiert.
+
+### Prüfungen nach der Nachprüfung
+
+- `check_questions.js k8__Mathematik --dir questionbank --summary` — **0 Befunde**
+  (7 Dateien, 135 Fragen)
+- `check_struktur.js` je Datei — **0 / 0 / 0 / 0**
+- `check_laenge.js --dir questionbank` — keine der vier Dateien wird als außerhalb des
+  Korridors gemeldet
+- Anzahl **16 / 16 / 16 / 16** unverändert, Reihenfolge erhalten,
+  `correct`-Verteilung je Datei exakt 4/4/4/4
+- Format geprüft: UTF-8 ohne BOM, LF, 2 Leerzeichen Einrückung, Feldreihenfolge
+  `correct / explanation / options / question / topic` in allen 64 Einträgen
+- Kein Commit, kein Push — die Änderung liegt unversioniert im Arbeitsverzeichnis
+
+---
+
+## 185. k9 Sachfächer (Sport, Biologie, Chemie, Deutsch, Geschichte ×2): Nachprüfung des Inhaltsdurchlaufs (15.8.2026)
+
+Der Inhaltsdurchlauf vom 14.8. (Commit `a2c0f7f`) hat diese sechs Dateien angefasst,
+aber ohne Abschlussbericht geendet. Nach der Projektregel gilt ein Teil ohne Bericht als
+ungeprüft, deshalb wurden alle 52 Fragen unabhängig noch einmal komplett geprüft —
+fachlich, gegen die Fehlerklassen-Checkliste und gegen die Diffs des Vorgängers.
+
+Betroffen: `k9__Allgemeinwissen__Sport` (10), `k9__Biologie__oekologie` (8),
+`k9__Chemie__Saeuren_Basen` (8), `k9__Deutsch__Allgemein` (8),
+`k9__Geschichte__Allgemein` (10), `k9__Geschichte__Fruehe_Neuzeit` (8).
+
+### Befund und Behebung
+
+Ein einziger echter Fund in 52 Fragen:
+
+1. **[`k9__Geschichte__Allgemein`, 9] Die Frage enthielt die aufgelöste Abkürzung der
+   Antwort.** „Wie hieß die gefürchtete **Geheime Staatspolizei** im
+   nationalsozialistischen Deutschland?" mit der richtigen Option „Gestapo" — und
+   *Gestapo* ist genau die Kurzform von *Geheime Staatspolizei*. Wer die Auflösung kennt,
+   braucht kein Sachwissen über SA, SS oder Wehrmacht. `check_struktur.js` schlägt hier
+   nicht an, weil der Verrat nicht in Klammern, sondern im Fließtext der Frage steckt.
+   Frage umformuliert auf die Funktion statt den Namen: „Wie hieß die politische Polizei
+   im nationalsozialistischen Deutschland, die Regimegegner überwachte und ohne
+   Gerichtsurteil verschleppte?" `correct`, Optionen, Reihenfolge und Erklärung
+   unverändert; die Erklärung nennt die Auflösung weiterhin, dort gehört sie hin.
+   Auf die Optionslängen (7/2/2/9) hat die Änderung keinen Einfluss.
+
+Sonst nichts. Kein falsch markiertes `correct`, keine zweite richtige Option, keine
+unlösbare Frage, keine falsche Prämisse, kein Kategorienfehler, keine Meta-Option
+(„alle genannten", „keine der genannten"), kein Klammer- oder Struktur-Verrat, kein
+Kreuzverrat, keine Antwort-Dublette, keine Umlaut-Ersatzschreibung, kein englischer
+Rest und kein Modell-Gedankengang in einer Erklärung. Alle `topic`-Werte passen zur
+Frage.
+
+### Belegte Faktenprüfung (Stand August 2026)
+
+Die zeitabhängigen Aussagen wurden per Websuche belegt, nicht aus dem Gedächtnis
+bestätigt:
+
+- **Fußball-Rekordweltmeister.** Die WM 2026 (USA/Kanada/Mexiko) endete am 19.7.2026 mit
+  dem Sieg **Spaniens** 1:0 n.V. gegen Argentinien; für Spanien war es der zweite Titel.
+  Damit bleibt **Brasilien mit fünf Titeln alleiniger Rekordweltmeister**, Deutschland
+  und Italien folgen mit je vier, Argentinien mit drei. Die Frage ist eindeutig, und der
+  Zahlensatz in der Erklärung stimmt. **Damit ist Abschnitt 1, Zeile „Rekordweltmeister
+  Fußball" erledigt** — die Zahl war damals aus Vorsicht entfernt worden und ist vom
+  Vorgänger zu Recht wieder eingesetzt worden.
+- **100-m-Weltrekord der Männer.** Usain Bolts 9,58 s von Berlin 2009 stehen im August
+  2026 unverändert; 2026 gab es keine Freiluft-WM und keine schnellere gemessene Zeit.
+  **Damit ist Abschnitt 1, Zeile „100-m-Weltrekord" erledigt.**
+- **Führungstrikots im Radsport.** Tour de France gelb, Giro d'Italia rosa, Vuelta a
+  España rot — für die Saison 2026 bestätigt.
+- **ATP Finals.** Weiterhin Saisonabschluss der acht bestplatzierten Spieler (2026 in
+  Turin), also weiterhin kein Grand Slam.
+- **Reichsgründung.** Die „Verfassung des Deutschen Bundes" trat zum 1.1.1871 in Kraft,
+  die Bismarcksche Reichsverfassung erst zum 4.5.1871 — die Korrektur des Vorgängers ist
+  richtig.
+- **Gestapo.** 1933 in Preußen eingerichtet (Göring), ab Juni 1936 Himmler unterstellt,
+  ab September 1939 im Reichssicherheitshauptamt — die Erklärung stimmt in allen drei
+  Daten.
+
+### Urteil über die Änderungen des Vorgängers
+
+Insgesamt 14 Änderungen in den sechs Dateien, alle nachvollzogen. **13 davon sind
+richtig und sinnvoll**, keine hat einen neuen Fehler erzeugt:
+
+- **Richtige Sachkorrektur.** Reichsgründung (Verfassung des Deutschen Bundes statt
+  Reichsverfassung zum 1.1.1871); Bismarck-Nachfolger als „zunächst" gekennzeichnet, weil
+  nach Bethmann Hollweg noch Michaelis, Hertling und Max von Baden folgten; Kolumbus
+  landete auf einer Insel der **Bahamas**, die geografisch nicht zur Karibik gehören.
+- **Beseitigte zweite richtige Option.** `k9__Deutsch__Allgemein` [3]: „Ich lege das Buch
+  ___ den Tisch." hatte „an" als Distraktor — „an den Tisch" ist als Richtungsangabe
+  ebenfalls vertretbar. Ersetzt durch „seit", das mit Akkusativ gar nicht stehen kann.
+  Sauberer Fund.
+- **Beseitigte Sonderfall-Falle.** `k9__Chemie__Saeuren_Basen` [1]: „stark basisch" aus
+  der Frage entfernt (pH 10 ist basisch, aber nicht *stark* basisch), und die Erklärung
+  behauptet nicht mehr, die pH-Skala **reiche** von 0 bis 14, sondern nennt das als
+  übliche Angabe mit ausdrücklichem Hinweis auf Werte darunter und darüber. Genau der
+  Sonderfall, der auf der Checkliste steht.
+- **Längenbalance.** Bio [0] „Alle Pflanzen" → „Alle Pflanzen und Pilze" (58 → 67 Zeichen
+  gegen 73 der richtigen Option), Bio [3] „Bakterien" → „Bodenbakterien" (damit ist die
+  längste Option nicht mehr die richtige), Deutsch [5] „Roman" → „Kalendergeschichte"
+  (ebenso). Alle drei verbessern die Balance, ohne fachlich zu schaden.
+- **Erklärungen vervollständigt.** Olympia-Ausfälle 1916/1940/1944 statt „Kriege oder
+  Ausnahmefälle"; Pentathlon im Triathlon-Item ergänzt, damit alle drei Distraktoren
+  erklärt sind; „verdünnte Säuren wie Salzsäure" statt „Säuren" (konzentrierte
+  Salpetersäure reagiert mit Zink nicht unter Wasserstoffbildung); Habitat als „Gebiet"
+  statt „Ort" präzisiert.
+- **Zeitstempel.** „Stand August 2026" bei Rekordweltmeister und 100-m-Weltrekord — nach
+  Beleg beide korrekt.
+
+**Eine Änderung ist ein kleiner Rückschritt, aber kein Fehler** (nicht zurückgedreht):
+`k9__Geschichte__Fruehe_Neuzeit` [5] Hexenverfolgung, „rund drei Viertel davon Frauen" →
+„die große Mehrheit davon Frauen". Der Anteil von 75–80 % ist Forschungsstandard
+(Behringer, Levack) und war belegbar; die Vagheit ist unnötig. Weil die Aussage nicht
+falsch ist und ein Rückdrehen nur Diff-Lärm erzeugt, bleibt sie stehen.
+
+**Was der Vorgänger übersehen hat:** die Gestapo-Frage oben. Sonst nichts.
+
+### Zweifelsfälle
+
+1. **`k9__Deutsch__Allgemein` [5]: „Kalendergeschichte" als neuer Distraktor.** Die
+   Kalendergeschichte ist ebenfalls eine kurze Erzählung mit wenigen Figuren, sie endet
+   aber mit Pointe oder Lehre und gerade **nicht** mit unvermitteltem Anfang und offenem
+   Schluss — die Frage nennt den „abrupten Beginn oder Schluss" ausdrücklich, damit
+   bleibt die Kurzgeschichte eindeutig. Der Distraktor ist trotzdem deutlich schwerer als
+   das vorherige „Roman" und setzt voraus, dass die Kalendergeschichte im Unterricht
+   behandelt wurde (üblich ab Klasse 7/8). Bewusst stehen gelassen, weil er die
+   Längenbalance repariert; falls Klasse 9 zu hoch gegriffen ist, wäre „Novelle" oder
+   „Anekdote" eine gleich lange Alternative.
+2. **`k9__Chemie__Saeuren_Basen` [0] und [7] sind ein Komplementärpaar.** „Was ist laut
+   Arrhenius eine Säure?" und „Was ist laut Arrhenius eine Base?" nutzen denselben
+   Optionsbaukasten: die richtige Antwort der einen Frage ist ein Distraktor der anderen.
+   `check_dubletten.js` meldet 60 % Ähnlichkeit. Kein Kreuzverrat im engeren Sinn — keine
+   der beiden Erklärungen nennt die Antwort der anderen —, aber wenn beide in derselben
+   Runde gezogen werden (5 aus 8), löst die eine die andere per Ausschluss. Bei nur acht
+   Fragen in der Datei ist die Wahrscheinlichkeit dafür hoch. Nicht geändert, weil das
+   Säure-Base-Begriffspaar der Kern des Themas ist und ein Streichen die Datei unter acht
+   Fragen brächte. Entscheidung des Nutzers, ob eine der beiden ersetzt werden soll.
+3. **`k9__Biologie__oekologie` [1] und [7] teilen sich den Trophieebenen-Baukasten.**
+   Distraktor 2 der Produzenten-Frage („Sie zersetzen abgestorbenes Material zu
+   anorganischen Nährstoffen.") ist inhaltlich die richtige Antwort der
+   Destruenten-Frage. Schwächer als Fall 2, weil beide Aussagen dasselbe Schulwissen
+   sind und keine der Fragen dadurch ohne Kenntnis lösbar wird. Nicht geändert.
+4. **Schreibweise von Kohlenstoffdioxid uneinheitlich zwischen den Dateien.**
+   `k9__Chemie__Saeuren_Basen` schreibt „Kohlenstoffdioxid (CO₂)" mit tiefgestellter
+   Ziffer, `k9__Biologie__oekologie` schreibt „Kohlendioxid (CO2)" mit normaler Ziffer.
+   Innerhalb jeder Datei konsistent, über das Fach hinweg nicht. Nicht angefasst, weil es
+   keine der Fehlerklassen ist; eine Vereinheitlichung auf „Kohlenstoffdioxid (CO₂)" wäre
+   ein eigener, dateiübergreifender Lauf — dieselbe Art Beobachtung wie beim Malzeichen
+   `*` gegen `·` in den Mathematik-Dateien.
+5. **`k9__Biologie__oekologie` [2] trägt eine englische Glosse.** „Der Begriff
+   'Tragfähigkeit' (carrying capacity) in der Ökologie bezieht sich auf:". Die Glosse
+   steht im Fragetext, nicht in einer Option, verletzt also nicht die Regel „jeder Zusatz
+   bei allen vier Optionen oder keiner". Ob englische Fachbegriffe in deutschen
+   Fragetexten grundsätzlich erwünscht sind, ist eine Grundsatzentscheidung — im Blick
+   auf den geplanten i18n-Umbau eher nicht.
+6. **Dampfmaschinen-Frage weiterhin doppelt zu k8.** `k9__Geschichte__Allgemein` [0]
+   („Welches technische Gerät … revolutionierte die Produktion?") und
+   `k8__Geschichte__Allgemein` [6] („Welche Erfindung war eine wesentliche Antriebskraft
+   für die Industrielle Revolution?") haben beide „Die Dampfmaschine" als Antwort und
+   überschneiden sich zusätzlich im Distraktor „Buchdruck". Der Punkt steht schon oben in
+   der Liste und ist unverändert; klassenübergreifende Dubletten treffen einen Spieler
+   nur, wenn er beide Klassen spielt. **Gegenprobe zum ebenfalls dort genannten
+   Ludwig XIV.: das ist keine Dublette** — k8 fragt nach dem Herrschaftsmodell
+   („Absolutismus"), k9 nach der Person („Ludwig XIV."). Unterschiedliche Frage,
+   unterschiedliche Antwort, kann so bleiben.
+7. **Längenkorridor bei acht bis zehn Fragen nicht messbar** — dieselbe Einschränkung wie
+   in Abschnitt 183. `check_laenge.js` wertet je Datei nur 4 bis 7 Fragen, weil die
+   übrigen Optionen gleich lang sind; der Korridor 15–40 % je Rang ist bei diesen Nennern
+   rechnerisch nicht erreichbar. Aussagekräftig ist allein „längste gewinnt": Sport 8 %,
+   Geschichte Allgemein 10 %, Biologie 19 %, Frühe Neuzeit 19 %, Deutsch 25 %,
+   Chemie 25 % — alle auf oder unter dem Zielwert 25 %. Keine der sechs Dateien wird als
+   auffällig gemeldet.
+
+### Nicht von dieser Charge
+
+Während des Laufs wurde `questionbank/k8__Mathematik__Bruchrechnung.json` von außen
+verändert (Aufgabe „5/7 · 14" → „5/7 · 21", Optionen entsprechend). Die Datei gehört
+nicht zu dieser Charge und wurde weder angefasst noch zurückgedreht — offenbar läuft
+parallel eine zweite Sitzung. Vor dem nächsten Commit prüfen, wessen Änderung das ist.
+
+### Prüfungen nach der Charge
+
+- `check_questions.js k9__ --dir questionbank --summary` — **0 Befunde**
+  (13 Dateien, 179 Fragen; die sieben k9-Mathematik-Dateien liefen mit)
+- `check_struktur.js` je Datei — **0 / 0 / 0 / 0 / 0 / 0**
+- `check_dubletten.js` und `check_antwortgruppen.js` je Datei — 0 Antwort-Gruppen,
+  ein Ähnlichkeits-Hinweis (Arrhenius-Paar, siehe Zweifelsfall 2)
+- `check_unloesbar.js` — keine der sechs Dateien gemeldet
+- Anzahl je Datei unverändert (10 / 8 / 8 / 8 / 10 / 8, zusammen 52), Reihenfolge
+  erhalten, `correct`-Verteilung 3/3/2/2, 2/2/2/2, 2/2/2/2, 2/2/2/2, 3/3/2/2, 2/2/2/2
+- Format geprüft: UTF-8 ohne BOM, LF, 2 Leerzeichen Einrückung, Feldreihenfolge
+  `correct / explanation / options / question / topic` in allen 52 Einträgen, je vier
+  Optionen; die Dateien sind byteweise identisch mit `JSON.stringify(…, null, 2) + "\n"`
+- Kein Commit, kein Push
+
+### Quellen
+
+- WM 2026: NPR, „Spain is the 2026 World Cup champion, defeating Argentina for its 2nd
+  title" (19.7.2026); FIFA, Final tournament standings
+- 100 m: World Athletics Toplists 2026; FloTrack, „Men's 100M World Record In Track And
+  Field"
+- Reichsgründung: DHM/LeMO „Reichsverfassung 1871"; Wikipedia „Bismarcksche
+  Reichsverfassung"; bpb, „Vor 150 Jahren: Proklamation des Deutschen Kaiserreichs"
+- Gestapo: DHM/LeMO „Gestapo"; bpb, „Vor 85 Jahren: Nazis bauen Macht der Gestapo aus"
+- Kalendergeschichte: lehrerfortbildung-bw.de „Merkmale der Kalendergeschichte";
+  kapiert.de; wortwuchs.net
+- Radsport-Trikots: Wikipedia „Maillot Rojo"; radmarkt.com, „Wertungen und Trikots im
+  Profiradsport – Guide 2026"
+- ATP Finals: ATP Rulebook 2026, Kapitel 4 „World Championships"; nittoatpfinals.com,
+  „Rules And Format"
+
+---
+
+## 185. k8 Sachfächer (Allgemeinwissen ×2, Englisch, Geschichte ×2): Nachprüfung eines abgebrochenen Durchlaufs (15.8.2026)
+
+Der Vorgänger hatte vier der fünf Dateien geändert, wurde aber vor den Abschlussprüfungen
+gestoppt; nach der Projektregel galt der Teil damit als ungeprüft. Alle 60 Fragen wurden
+neu verifiziert, jede zeitabhängige oder unsichere Faktenaussage per Websuche belegt.
+
+### Behobene Befunde (2)
+
+1. **`k8__Allgemeinwissen__Geographie [9]`: Sachfehler in der Erklärung, vom Vorgänger
+   eingebaut.** Sein Zusatz lautete „…die größte heiße Wüste der Erde; noch größer ist
+   **nur** die Kältewüste der Antarktis." Das „nur" ist falsch: In der Rangliste der
+   größten Wüsten steht die Antarktis mit rund 14,2 Mio. km² auf Platz 1, die **arktische
+   Kältewüste** mit rund 13,9 Mio. km² auf Platz 2, die Sahara mit 9,2 Mio. km² erst auf
+   Platz 3. Neu: „…; größer sind nur die Kältewüsten der Antarktis und der Arktis."
+   Die richtige Antwort (Sahara) und die Fragestellung („größte **heiße** Wüste") waren
+   von Anfang an korrekt — der Fehler saß ausschließlich im Zusatz.
+
+2. **`k8__Geschichte__Nachkriegszeit [6]`: Struktur-Verrat, vom Vorgänger nicht gesehen.**
+   „Die Gründung der Montanunion (EGKS) 1951/52 in Paris" war die **einzige Option mit
+   Klammer und die einzige mit Schrägstrich** — `check_struktur.js` meldete die Frage.
+   Der Vorgänger hatte diese Option angefasst (vorher: „…(EGKS) in den Jahren 1951/52"),
+   beide verräterischen Merkmale aber stehen lassen. Neu: „Die Gründung der Montanunion
+   im Vertrag von Paris 1951". Alle vier Optionen sind jetzt **exakt 54 Zeichen** lang,
+   tragen eine Jahreszahl, und keine trägt Klammer oder Schrägstrich.
+   Beim selben Eintrag kam ein zweiter, vom Vorgänger neu erzeugter Mangel dazu: Er hatte
+   den Fragetext auf „**Bei welchem Zusammenschluss** stellten …" umgestellt, während die
+   Optionen Ereignisse benennen („Die Aufnahme diplomatischer Beziehungen zu Israel 1965"
+   ist kein Zusammenschluss). Neu: „**Welches Ereignis** stellte die Kohle- und
+   Stahlproduktion der Bundesrepublik, Frankreichs und vier weiterer Staaten unter eine
+   gemeinsame Behörde?" — damit passen Frage und Optionen wieder zueinander, und der
+   Sachhinweis, den der Vorgänger zu Recht ergänzt hatte, bleibt erhalten.
+
+### Zweifelsfälle — geprüft und bewusst belassen
+
+1. **`Allgemeinwissen__Allgemein [21]` und `Allgemeinwissen__Geographie [8]` fragen
+   beide die Donau ab** („fließt durch Wien, Bratislava und Budapest" / „fließt durch die
+   österreichische Hauptstadt Wien"). Sachlich dieselbe Auskunft, gleiche Klasse, gleiches
+   Fach — aber **verschiedene Unterkategorien**, die laut `_index.json` getrennt gezogen
+   werden. Nach der Linie aus §184.5 (dateiübergreifende Paare) belassen. Wenn eine Runde
+   je einmal aus „Allgemein" und „Geographie" ziehen kann, wäre das ein echter Fund;
+   dann müsste `Allgemein [21]` auf einen anderen Fluss umgestellt werden.
+
+2. **`Allgemeinwissen__Geographie`: „Asien" ist zweimal die richtige Antwort** ([0]
+   größter Kontinent, [6] Lage der Türkei). Nach §156 kein Fehler, solange die Fragen
+   verschieden sind — das sind sie. Zur Absicherung bankweit gemessen: 52 von 203 Dateien
+   haben mindestens eine mehrfach belegte richtige Antwort; eine reine Textwiederholung
+   ist in dieser Bank also nicht die Dubletten-Definition.
+
+3. **`Geschichte__Allgemein [7]` (Kongo-Konferenz) ist ohne Fachwissen lösbar.** Drei
+   Distraktoren sind innerdeutsche Ereignisse (Deutscher Bund, Ende des Deutsch-
+   Französischen Krieges, Kaiserproklamation), nur die richtige Option handelt von Afrika.
+   Sachlich ist alles korrekt und die Erklärung ist die beste der Datei (sie räumt sogar
+   den Irrtum aus, die Grenzen Afrikas seien auf der Konferenz gezogen worden) — deshalb
+   **nicht angefasst**, um an einer fehlerfreien Frage kein Risiko zu erzeugen. Wenn ein
+   Durchgang „zu leichte Distraktoren" als eigene Fehlerklasse führt, gehört sie dazu.
+   Naheliegender Ersatz wäre der Irrtum aus der Erklärung als Distraktor („Die Grenzen
+   aller afrikanischen Kolonien wurden festgelegt"). **Achtung dabei:** „Die Sklaverei
+   wurde abgeschafft" taugt *nicht* als Distraktor — die Kongoakte enthält tatsächlich
+   eine Erklärung gegen Sklavenhandel, das wäre eine zweite richtige Option.
+
+4. **`Allgemeinwissen__Allgemein`: zwei Paare mit identischer Optionsmenge.**
+   [4]/[14] teilen sich {Volt, Ampere, Watt, Ohm} (Antworten: Volt bzw. Ohm), [5]/[23]
+   teilen sich {Schiller, Goethe, Fontane, Heine} (Antworten: Goethe bzw. Schiller). Keine
+   Dublette, aber wer eine Frage kennt, schließt bei der anderen eine Option aus. Belassen,
+   weil beide Optionsmengen die fachlich naheliegenden sind.
+
+5. **`Allgemeinwissen__Allgemein [4]`: die Erklärung nennt nur drei der vier Optionen.**
+   „Ohm" fehlt bewusst — der Vorgänger hat es gestrichen, weil [14] genau danach fragt.
+   Das ist ein guter Griff gegen Kreuzverrat, lässt aber einen Distraktor unerklärt.
+   Beides ist nicht gleichzeitig zu haben; die Kreuzverrat-Vermeidung wiegt schwerer.
+
+6. **`Englisch__Allgemein`: die `topic`-Felder sind englisch mit Klammer**
+   („Grammar (Simple Past)", „Vocabulary (Food)"). Innerhalb der Datei einheitlich; über
+   die Bank hinweg gibt es drei Stile nebeneinander (k5 „Vocabulary: Animals", k6 „Schule",
+   k11 „Tenses"). Kein Verrat (topic wird nicht als Option gezeigt), aber ein Kandidat für
+   einen eigenen Vereinheitlichungslauf.
+
+7. **`Allgemeinwissen__Allgemein [10]` (Wahlalter 18) trägt keinen Zeitstempel.** Belegt
+   und aktuell (Stand August 2026, Bundestagswahl unverändert 18; das Wahlalter 16 gilt nur
+   für die Europawahl und einzelne Landes- und Kommunalwahlen). Als stehende Rechtslage
+   und nicht als zeitgebundenes Faktum eingeordnet — eine Absenkung bräuchte eine
+   Grundgesetzänderung. Wird über eine solche debattiert, gehört die Frage neu datiert.
+
+### Urteil über die Änderungen des Vorgängers
+
+Alle 20 Änderungen wurden einzeln nachgeprüft. **Fachlich zutreffend, mehrere davon
+echte Funde:** die Ersetzung der alten Faust-Frage in `Allgemeinwissen__Allgemein [12]`
+(sie hatte dieselbe richtige Antwort „Goethe" wie [5] — eine echte Antwort-Dublette),
+das Streichen von „Ohm" aus [4] gegen Kreuzverrat, die Entkopplung von [9] und [2]
+(„Dampfmaschine" aus dem Fragetext von [9] entfernt), die Korrektur „erstes **frei
+gewähltes**" → „erstes **gesamtdeutsches** Parlament" in `Geschichte__Allgemein [2]`
+(die Paulskirchenversammlung wurde indirekt gewählt), der Austausch des Distraktors
+„Mangel an deutschen Juristen" in `Nachkriegszeit [1]` (der war neben der richtigen
+Antwort ebenfalls zutreffend) und die Präzisierungen 278.000 Flüge / Ende September 1949,
+Pariser Verträge einen Tag vor dem NATO-Beitritt, Ostthrakien statt „westlich des
+Bosporus". Auch die Bereinigung der `topic`-Felder („Politik/Geschichte" → „Politik",
+„Deutsch/Literatur" → „Deutsch") ist richtig.
+**Unvollständig war er an zwei Stellen:** Er hat den Struktur-Verrat in
+`Nachkriegszeit [6]` nicht erkannt, obwohl er genau diese Option umformuliert hat, und
+er hat mit dem Sahara-Zusatz einen neuen Sachfehler eingebaut. Die Datei
+`Englisch__Allgemein` hat er nicht angefasst — sie war bei der vollständigen
+Nachprüfung tatsächlich fehlerfrei, insofern war das kein Versäumnis, sondern
+unbelegt geblieben.
+
+### Belege
+
+Wahlalter Bundestag: bpb.de · Sitz des Europäischen Parlaments (Protokoll Nr. 6):
+europarl.europa.eu, lto.de · Luftbrücke 277.569 Flüge, Ende 30.9.1949, Blockade bis
+12.5.1949: de.wikipedia.org/wiki/Berliner_Luftbrücke, thf-berlin.de · NSDAP rund 8,5 Mio.
+Mitglieder, Mitgliederkartei erhalten (BDC): bundesarchiv.de · Bayern 70.542 km² /
+Niedersachsen 47.710 km²: de.wikipedia.org (Liste der Bundesländer nach Fläche) · Donau
+zweitlängster Fluss Europas, zehn Anrainerstaaten: fgg-donau.bayern.de · Zugspitze 2962 m:
+alpenverein.de · Kongokonferenz 14 Teilnehmerstaaten, Grundsatz der effektiven Besetzung:
+de.wikipedia.org/wiki/Kongokonferenz, dhm.de/lemo · Müller-Armack prägte den Begriff 1946
+(Buch erschienen 1947): de.wikipedia.org/wiki/Alfred_Müller-Armack, kas.de · rund 12 Mio.
+Vertriebene, davon ca. 8 Mio. in den Westzonen, Lastenausgleichsgesetz 14.8.1952:
+konrad-adenauer.de, bundesarchiv.de · Pariser Verträge in Kraft 5.5.1955, NATO-Beitritt
+6.5.1955, Warschauer Pakt 14.5.1955: de.wikipedia.org/wiki/Pariser_Verträge, kas.de ·
+Sahara 9,2 Mio. km², Antarktis 14,2, Arktis 13,9: visualcapitalist.com,
+en.wikipedia.org/wiki/Sahara · Türkei rund 97 % in Asien, Ostthrakien in Europa:
+de.wikipedia.org/wiki/Türkei · Asien 44,6 Mio. km² / Afrika 30,3: de.statista.com ·
+Erlkönig 1782 (Singspiel „Die Fischerin"): de.wikipedia.org/wiki/Erlkönig_(Ballade) ·
+„Die Räuber", Uraufführung 13.1.1782 Mannheim: teachsam.de, damals.de
+
+### Prüfungen nach der Nachprüfung
+
+- `check_questions.js k8__ --dir questionbank --summary` — **0 Befunde** (12 Dateien,
+  195 Fragen; die fünf geprüften Dateien darin ohne Befund)
+- `check_struktur.js` je Datei — **0 / 0 / 0 / 0 / 0** (vorher 0 / 0 / 0 / 0 / **1**)
+- Anzahl **24 / 10 / 8 / 8 / 10** unverändert, Reihenfolge erhalten, `correct`-Zyklus
+  0-1-2-3 je Datei unangetastet, Zählstände decken sich mit `_index.json`
+- Format geprüft: UTF-8 ohne BOM, LF, 2 Leerzeichen Einrückung, Feldreihenfolge
+  `correct / explanation / options / question / topic` in allen 60 Einträgen; keine
+  Umlaut-Ersatzschreibungen, keine Mojibake
+- Erklärungen durchgehend Deutsch; in `Englisch__Allgemein` sind nur die zitierten
+  Beispielwörter und Wendungen englisch — regelkonform
+- Kein Commit, kein Push — die Änderung liegt unversioniert im Arbeitsverzeichnis
+- **Hinweis:** Im Arbeitsverzeichnis liegen zusätzlich Änderungen an
+  `k8__Mathematik__Bruchrechnung.json` und `k9__Geschichte__Allgemein.json`, die während
+  dieser Sitzung entstanden, aber **nicht** aus dieser Nachprüfung stammen.
