@@ -811,6 +811,16 @@
 </div>
 
 <!-- ═══════════════════════════ MODAL: CHALLENGER QUIT ═══════════════════════════ -->
+<div class="modal-backdrop hidden" id="modal-chal-review">
+  <div class="modal" style="max-width:520px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+      <h2 style="font-size:1rem;margin:0;" id="chal-review-title">Deine Fragen</h2>
+      <button class="btn btn-secondary" style="padding:6px 12px;font-size:.8rem;" onclick="chalCloseReview()">✕ Schließen</button>
+    </div>
+    <div id="chal-review-list" style="max-height:64vh;overflow-y:auto;display:flex;flex-direction:column;gap:12px;"></div>
+  </div>
+</div>
+
 <div class="modal-backdrop hidden" id="modal-chal-quit">
   <div class="modal" style="max-width:300px;text-align:center;">
     <div style="font-size:2rem;margin-bottom:8px;">🏳️</div>
@@ -2006,6 +2016,11 @@ Deutschland</p>
           <div class="mc-title" style="color:#818cf8;">Schulfragen</div>
           <div class="mc-desc">Bereits generierte Fragen aus der Bibliothek</div>
         </div>
+        <div class="mode-card" onclick="chalSelectSource('subject')" style="border-color:rgba(244,114,182,.35);background:radial-gradient(120% 120% at 0% 0%, rgba(244,114,182,.1), transparent 45%), linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,0) 40%), var(--glass);cursor:pointer;">
+          <div style="font-size:1.6rem;margin-bottom:6px;">🎓</div>
+          <div class="mc-title" style="color:#f472b6;">Schulfächer</div>
+          <div class="mc-desc">Ein Fach, alle Klassen gemischt</div>
+        </div>
         <div class="mode-card" onclick="chalSelectSource('catalog')" style="border-color:rgba(45,212,191,.35);background:radial-gradient(120% 120% at 0% 0%, rgba(45,212,191,.08), transparent 45%), linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,0) 40%), var(--glass);cursor:pointer;">
           <div style="font-size:1.6rem;margin-bottom:6px;">📚</div>
           <div class="mc-title" style="color:rgb(45,212,191);">Katalog</div>
@@ -2018,6 +2033,12 @@ Deutschland</p>
     <div id="chal-school-grade-select" style="display:none;">
       <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;" id="chal-school-grade-desc">Welche Klasse?</p>
       <div class="chal-submode-grid" id="chal-school-grade-list"></div>
+    </div>
+
+    <!-- Schritt 3c: Fachauswahl (nur bei Schulfächern) -->
+    <div id="chal-subject-select" style="display:none;">
+      <p style="font-size:.82rem;color:var(--muted);margin-bottom:20px;" id="chal-subject-desc">Welches Fach?</p>
+      <div class="chal-submode-grid" id="chal-subject-list"></div>
     </div>
 
     <!-- Schritt 3b: Katalog wählen (nur bei Katalog-Quelle) -->
@@ -2367,6 +2388,7 @@ Deutschland</p>
     <div id="chal-go-msg" style="font-size:.85rem;color:var(--muted);margin-bottom:18px;"></div>
     <div style="font-size:.75rem;color:var(--muted);font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:.06em;">Erreichtes Level</div>
     <div class="chal-gameover-level" id="chal-go-level">0</div>
+    <div id="chal-review-btns" style="display:flex;gap:10px;justify-content:center;margin-bottom:14px;"></div>
     <div id="chal-leaderboard" style="margin:20px 0;text-align:left;"></div>
     <button class="btn btn-primary" onclick="showChallengerSetup()" style="margin-bottom:10px;">Nochmal spielen</button>
     <button class="btn btn-secondary" onclick="showScreen('screen-home');switchTab('spielen')">Zum Hauptmenü</button>
@@ -6742,6 +6764,11 @@ const OCR_TAGESLIMIT = 20;   // Fotos pro Tag und Geraet ueber den Zentralkey.
 const OCR_MAX_KANTE  = 1600; // Bilder werden vorher verkleinert. Ein 12-MP-Foto
                              // kostet ein Vielfaches an Tokens, ohne dass die
                              // Erkennung besser wuerde.
+const OCR_PROXY_URL  = '';   // URL des Cloudflare-Workers (ocr-proxy/). Wenn
+                             // gesetzt, laeuft die Erkennung ueber den Proxy:
+                             // kein API-Schluessel im Browser, Limits prueft
+                             // der Server. Leer = alter Weg ueber den Zentralkey.
+                             // Ein eigener Key des Nutzers geht immer direkt.
 
 const OCR = { ctx: null, dataUrl: null, b64: null, cards: [], keyData: null, eigen: false };
 
@@ -6768,13 +6795,26 @@ async function ocrOpen(ctx) {
   OCR.ctx = ctx;
   // Schluessel gleich hier aufloesen, nicht erst nach dem Fotografieren -
   // sonst macht jemand erst ein Foto und erfaehrt dann, dass es nicht geht.
-  OCR.keyData = await getEffectiveApiKey();
-  if (!OCR.keyData) {
-    showToast('Dafür wird ein API-Schlüssel gebraucht', 'error');
-    openApiKeyModal();
-    return;
+  // Reihenfolge: eigener Key des Nutzers -> direkt (er zahlt selbst).
+  // Sonst, wenn ein Proxy konfiguriert ist -> Proxy, kein Key im Browser.
+  // Sonst der alte Weg ueber den Zentralkey.
+  const eigenerKey = localStorage.getItem('sd_api_key');
+  if (OCR_PROXY_URL && !eigenerKey) {
+    if (!currentUser || !fbAuth?.currentUser) {
+      showToast('Dafür musst du angemeldet sein', 'error');
+      return;
+    }
+    OCR.keyData = { proxy: true };
+    OCR.eigen = false;
+  } else {
+    OCR.keyData = await getEffectiveApiKey();
+    if (!OCR.keyData) {
+      showToast('Dafür wird ein API-Schlüssel gebraucht', 'error');
+      openApiKeyModal();
+      return;
+    }
+    OCR.eigen = OCR.keyData.key === eigenerKey;
   }
-  OCR.eigen = OCR.keyData.key === localStorage.getItem('sd_api_key');
   document.getElementById('ocr-target-hint').textContent =
     ctx.target === 'group' ? 'Die erkannten Fragen kommen in ein Quiz dieser Gruppe.'
                            : 'Die erkannten Fragen werden an den Katalog angehängt.';
@@ -6916,6 +6956,20 @@ async function ocrRecognize() {
 }
 
 async function ocrModellFragen(keyData, b64) {
+  // Proxy-Weg: nur Bild + Login-Token, der Schluessel bleibt auf dem Server.
+  // Der Server prueft auch die Tageslimits - sein 429 traegt die Meldung.
+  if (keyData?.proxy) {
+    const token = await fbAuth.currentUser.getIdToken();
+    const res = await fetch(OCR_PROXY_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + token },
+      body: JSON.stringify({ image: b64 }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(data?.error || 'Proxy-Fehler ' + res.status);
+    if (!data.text) throw new Error('Leere Antwort');
+    return data.text;
+  }
   const { key: apiKey, provider } = keyData;
   if (provider === 'gemini' || !provider) {
     const res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + apiKey, {
@@ -8748,7 +8802,7 @@ function chalModeKey() {
   if (CH.mode === 'groupquiz')        return 'group_' + CH.groupId + '_' + CH.quizId;
   if (CH.mode === 'general-class')    return 'general_class';
   if (CH.mode === 'general-weighted') return 'general_weighted';
-  if (CH.mode === 'subject')          return 'subject_' + (CH.subject || '').replace(/[^a-zA-Z0-9]/g, '_');
+  if (CH.mode === 'subject')          return 'subject_' + (CH.subject || '').replace(/[^a-zA-Z0-9]/g, '_') + (CH.hardMode ? '_hard' : '');
   if (CH.mode === 'catalog')          return 'catalog_' + (CH.grade || '').replace(/[^a-zA-Z0-9]/g, '_');
   if (CH.mode === 'school')           return CH.hardMode ? 'school_hard' : 'school_normal';
   return 'general_class';
@@ -8758,7 +8812,10 @@ function chalModeBadgeLabel() {
   if (CH.mode === 'groupquiz')        return (CH.quizName || 'GRUPPE').toUpperCase();
   if (CH.mode === 'general-class')    return 'KLASSENSTUFEN';
   if (CH.mode === 'general-weighted') return 'GEWICHTUNG';
-  if (CH.mode === 'subject')          return (CH.subject || '').toUpperCase();
+  if (CH.mode === 'subject') {
+    const label = (CH.subject || '').toUpperCase();
+    return CH.hardMode ? label + ' · HARD' : label;
+  }
   if (CH.mode === 'catalog') {
     const label = (CH.grade || 'Katalog').toUpperCase();
     return CH.hardMode ? label + ' · HARD' : label;
@@ -8954,6 +9011,7 @@ function chalAnswer(idx) {
 
   const q = CH.currentQ;
   const correct = idx === q.correct;
+  if (Array.isArray(CH.history)) CH.history.push({ q, chosen: idx, ok: correct });
   const btns = document.querySelectorAll('#chal-answers .answer-btn');
 
   btns.forEach((b, i) => {
@@ -9203,8 +9261,72 @@ async function chalGameOver() {
     : 'LEGENDÄR! Du bist kaum zu stoppen.';
   document.getElementById('chal-go-msg').textContent = msg;
 
+  // Review-Knoepfe: richtig und falsch getrennt, damit man sich auch nur die
+  // zwei Fehler ansehen kann, ohne durch hundert richtige zu scrollen.
+  const rb = document.getElementById('chal-review-btns');
+  if (rb) {
+    rb.innerHTML = '';
+    const hist = CH.history || [];
+    const nFalsch  = hist.filter(h => !h.ok).length;
+    const nRichtig = hist.length - nFalsch;
+    if (nFalsch > 0) {
+      const b = document.createElement('button');
+      b.className = 'btn btn-secondary';
+      b.style.cssText = 'padding:9px 14px;font-size:.8rem;border-color:rgba(248,113,113,.5);color:#f87171;';
+      b.textContent = '✗ Falsche ansehen (' + nFalsch + ')';
+      b.onclick = () => chalOpenReview(false);
+      rb.appendChild(b);
+    }
+    if (nRichtig > 0) {
+      const b = document.createElement('button');
+      b.className = 'btn btn-secondary';
+      b.style.cssText = 'padding:9px 14px;font-size:.8rem;border-color:rgba(74,222,128,.5);color:#4ade80;';
+      b.textContent = '✓ Richtige ansehen (' + nRichtig + ')';
+      b.onclick = () => chalOpenReview(true);
+      rb.appendChild(b);
+    }
+  }
+
   await chalSaveHighscore(level);
   await chalRenderLeaderboard(level);
+}
+
+// Review nach dem Run: Liste der beantworteten Fragen, gefiltert nach
+// richtig/falsch. Zeigt alle vier Optionen (richtige gruen, eigene falsche
+// Wahl rot) plus Erklaerung und Herkunft der Frage.
+function chalOpenReview(richtige) {
+  const eintraege = (CH.history || []).filter(h => h.ok === richtige);
+  document.getElementById('chal-review-title').textContent = richtige
+    ? '✓ Richtig beantwortet (' + eintraege.length + ')'
+    : '✗ Falsch beantwortet (' + eintraege.length + ')';
+  const list = document.getElementById('chal-review-list');
+  list.innerHTML = '';
+  eintraege.forEach((h, nr) => {
+    const q = h.q;
+    const karte = document.createElement('div');
+    karte.style.cssText = 'background:var(--glass);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:14px;';
+    const herkunft = [q._subj, q._subcat, q._grade && q._grade !== '?' ? 'Kl. ' + q._grade : ''].filter(Boolean).join(' · ');
+    let html = '<div style="font-size:.68rem;color:var(--muted);font-family:\'Space Mono\',monospace;margin-bottom:6px;">'
+             + (nr + 1) + (herkunft ? ' · ' + esc(herkunft) : '') + '</div>'
+             + '<div style="font-size:.88rem;font-weight:600;margin-bottom:10px;">' + esc(chalCleanQuestion(q.question)) + '</div>';
+    q.options.forEach((opt, i) => {
+      let stil = 'border:1px solid rgba(255,255,255,.08);color:var(--muted);';
+      let marker = '';
+      if (i === q.correct)               { stil = 'border:1px solid rgba(74,222,128,.55);color:#4ade80;';  marker = ' ✓'; }
+      else if (i === h.chosen && !h.ok)  { stil = 'border:1px solid rgba(248,113,113,.55);color:#f87171;'; marker = ' ✗ deine Antwort'; }
+      html += '<div style="border-radius:8px;padding:7px 10px;margin-bottom:6px;font-size:.8rem;' + stil + '">'
+            + esc(opt) + '<span style="font-size:.68rem;">' + marker + '</span></div>';
+    });
+    if (q.explanation) {
+      html += '<div style="font-size:.78rem;color:var(--muted);margin-top:8px;line-height:1.45;">💡 ' + esc(q.explanation) + '</div>';
+    }
+    karte.innerHTML = html;
+    list.appendChild(karte);
+  });
+  document.getElementById('modal-chal-review').classList.remove('hidden');
+}
+function chalCloseReview() {
+  document.getElementById('modal-chal-review').classList.add('hidden');
 }
 
 async function chalSaveHighscore(level) {
@@ -9360,6 +9482,7 @@ async function startChallenger(mode, subject, grade, hardMode) {
   CH.usedSet = new Set();
   CH.currentQ = null;
   CH.answered  = false;
+  CH.history   = []; // { q, chosen, ok } je beantworteter Frage - fuer das Review nach dem Run
 
   showScreen('screen-challenger-game');
   document.getElementById('chal-loading').style.display = 'block';
@@ -9396,14 +9519,18 @@ async function startChallenger(mode, subject, grade, hardMode) {
       } else if (mode === 'general-class' || mode === 'general-weighted') {
         gradeFilter = CHAL_GRADE_ORDER;
       } else if (mode === 'subject') {
+        // Fachgebunden ohne Klassenbezug (Nutzerentscheid: Klasse kommt spaeter).
+        // gradeFilter null = ALLE Klassen, auch 8/9, die in CHAL_GRADE_ORDER fehlen.
         subjFilter  = subject;
-        gradeFilter = CHAL_GRADE_ORDER;
+        gradeFilter = hardMode ? ['10','11','12'] : null;
       }
       await chalLoadBank(gradeFilter, subjFilter);
     }
 
     if (CH.pool.length === 0) {
-      showToast('Keine Fragen gefunden – bitte zuerst Fragen in die Bibliothek laden.', 'error');
+      showToast(mode === 'subject' && hardMode
+        ? 'Für dieses Fach gibt es noch keine Fragen aus Klasse 10–12 – probiere den normalen Modus.'
+        : 'Keine Fragen gefunden – bitte zuerst Fragen in die Bibliothek laden.', 'error');
       showChallengerSetup(); return;
     }
   } catch(e) {
@@ -9454,6 +9581,7 @@ function chalPopulateSetup() {
   document.getElementById('chal-mode-select').style.display = '';
   document.getElementById('chal-source-select').style.display = 'none';
   document.getElementById('chal-school-grade-select').style.display = 'none';
+  document.getElementById('chal-subject-select').style.display = 'none';
   document.getElementById('chal-catalog-section').style.display = 'none';
 }
 
@@ -9473,6 +9601,13 @@ function chalSelectSource(source) {
     chalPopulateSchoolGradeList(hard);
     document.getElementById('chal-source-select').style.display = 'none';
     document.getElementById('chal-school-grade-select').style.display = '';
+  } else if (source === 'subject') {
+    const hard = !!CH._pendingHard;
+    document.getElementById('chal-subject-desc').textContent =
+      hard ? '🔥 Hard – Welches Fach? (nur Klasse 10–12)' : '⭐ Challenger – Welches Fach?';
+    chalPopulateSubjectList(hard);
+    document.getElementById('chal-source-select').style.display = 'none';
+    document.getElementById('chal-subject-select').style.display = '';
   } else {
     document.getElementById('chal-catalog-desc').textContent =
       CH._pendingHard ? '🔥 Hard – Wähle einen Katalog.' : '⭐ Challenger – Wähle einen Katalog.';
@@ -9508,12 +9643,44 @@ function chalSelectSchoolGrade(gradeFilter) {
   startChallenger('school', null, gradeFilter, !!CH._pendingHard);
 }
 
+// Faecher der Fragenbank mit genug Bestand fuer einen Run (>= ~100 Fragen).
+// Der Schluessel ist der Firebase-Pfadname (questionBank/<Fach>/...), das
+// Label die Anzeige. Kleine Faecher (Ethik, Informatik, ... je ~40 Fragen)
+// kommen dazu, sobald ihr Bestand gewachsen ist.
+const CHAL_SUBJECTS = [
+  { fb: 'Mathematik',      label: 'Mathe',           icon: '🧮' },
+  { fb: 'Deutsch',         label: 'Deutsch',         icon: '📖' },
+  { fb: 'Englisch',        label: 'Englisch',        icon: '🇬🇧' },
+  { fb: 'Geschichte',      label: 'Geschichte',      icon: '🏛️' },
+  { fb: 'Biologie',        label: 'Biologie',        icon: '🧬' },
+  { fb: 'Chemie',          label: 'Chemie',          icon: '⚗️' },
+  { fb: 'Physik',          label: 'Physik',          icon: '⚛️' },
+  { fb: 'Geographie',      label: 'Geographie',      icon: '🌍' },
+  { fb: 'Allgemeinwissen', label: 'Allgemeinwissen', icon: '💡' },
+];
+
+function chalPopulateSubjectList(hard) {
+  const list = document.getElementById('chal-subject-list');
+  list.innerHTML = '';
+  CHAL_SUBJECTS.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'mode-card';
+    card.style.cssText = 'border-color:rgba(244,114,182,.35);background:radial-gradient(120% 120% at 0% 0%, rgba(244,114,182,.08), transparent 45%), var(--glass);cursor:pointer;';
+    card.innerHTML = `<div style="font-size:1.4rem;margin-bottom:6px;">${s.icon}</div><div class="mc-title" style="color:#f472b6;">${esc(s.label)}</div>`;
+    card.onclick = () => startChallenger('subject', s.fb, null, hard);
+    list.appendChild(card);
+  });
+}
+
 function chalHandleBack() {
   if (document.getElementById('chal-catalog-section').style.display !== 'none') {
     document.getElementById('chal-catalog-section').style.display = 'none';
     document.getElementById('chal-source-select').style.display = '';
   } else if (document.getElementById('chal-school-grade-select').style.display !== 'none') {
     document.getElementById('chal-school-grade-select').style.display = 'none';
+    document.getElementById('chal-source-select').style.display = '';
+  } else if (document.getElementById('chal-subject-select').style.display !== 'none') {
+    document.getElementById('chal-subject-select').style.display = 'none';
     document.getElementById('chal-source-select').style.display = '';
   } else if (document.getElementById('chal-source-select').style.display !== 'none') {
     chalPopulateSetup();
