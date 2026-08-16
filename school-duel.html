@@ -5585,6 +5585,28 @@ function saveCatalog() {
   if (idx >= 0) cats[idx] = editingCatalog; else cats.push(editingCatalog);
   saveCatalogs(cats);
   showToast('Katalog gespeichert ✓', 'success');
+
+  // Eingebaute Kataloge, gespeichert vom Owner: zusaetzlich nach Firebase
+  // veroeffentlichen, damit ALLE Geraete die Aenderung beim naechsten Start
+  // uebernehmen (ensureBuiltinCatalogs vergleicht updatedAt im _meta-Index).
+  // Bewusst nur questions/count/updatedAt per update() - name/desc/icon in
+  // Firebase sind die Quelle, die lokale Kopie traegt zusammengesetzte
+  // Anzeigenamen ("⚽ Fussball – Leicht"), die dort nichts verloren haben.
+  if (editingCatalog.builtin && isOwner() && initFirebase()) {
+    const jetzt  = Date.now();
+    const fragen = editingCatalog.questions;
+    fbDB.ref('catalogs/' + editingCatalog.id).update({ questions: fragen, count: fragen.length, updatedAt: jetzt })
+      .then(() => fbDB.ref('catalogs/_meta/' + editingCatalog.id).update({ count: fragen.length, updatedAt: jetzt }))
+      .then(() => {
+        // Lokale Kopie auf denselben Stand stempeln - sonst laedt dieses
+        // Geraet beim naechsten Start seine eigene Aenderung neu herunter.
+        const c2 = getCatalogs();
+        const i2 = c2.findIndex(c => c.id === editingCatalog.id);
+        if (i2 >= 0) { c2[i2].updatedAt = jetzt; saveCatalogs(c2); }
+        showToast('🌍 Für alle Geräte veröffentlicht ✓', 'success');
+      })
+      .catch(() => showToast('⚠️ Veröffentlichen fehlgeschlagen – Änderung ist nur lokal gespeichert', 'error'));
+  }
   // Dorthin zurueck, wo der Katalog jetzt liegt - sonst landet man auf der
   // Kategorienuebersicht und sucht sein eben gespeichertes Werk.
   if (istEigenerKatalog(editingCatalog)) catNav = { group: 'eigene', folder: editingCatalog.folder || null };
