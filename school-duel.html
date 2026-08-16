@@ -989,12 +989,6 @@ Deutschland</p>
       </div>
       <div id="chal-subcat-wrap"></div>
     </div>
-    <div class="label" style="margin-top:4px;">Schwierigkeit</div>
-    <div class="pill-row" id="chal-diff-pills">
-      <div class="pill" data-val="leicht">Leicht</div>
-      <div class="pill active" data-val="mittel">Mittel</div>
-      <div class="pill" data-val="schwer">Schwer</div>
-    </div>
     <div class="label" style="margin-top:4px;">Anzahl Runden</div>
     <div class="pill-row" id="chal-rounds-pills">
       <div class="pill active" data-val="1">1 Runde</div>
@@ -1422,7 +1416,7 @@ Deutschland</p>
         <div class="duel-type-card" onclick="showSoloType('schul')">
           <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <div class="dtc-title">Schulfragen</div>
-          <div class="dtc-desc">Klasse, Fach &amp; Schwierigkeit wählen</div>
+          <div class="dtc-desc">Klasse, Fach &amp; Thema wählen</div>
         </div>
         <div class="duel-type-card" onclick="showSoloType('catalog')">
           <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
@@ -1471,20 +1465,10 @@ Deutschland</p>
           </div>
         </div>
 
-        <div class="accordion-section" id="acc-solo-diff">
-          <div class="accordion-header" onclick="toggleAccordion('acc-solo-diff')">
-            <span class="accordion-label">Schwierigkeit</span>
-            <span class="accordion-value" id="acc-solo-diff-val">Mittel</span>
-            <span class="accordion-arrow">›</span>
-          </div>
-          <div class="accordion-body">
-            <div class="pill-row" id="diff-pills">
-              <div class="pill" data-val="leicht">Leicht</div>
-              <div class="pill active" data-val="mittel">Mittel</div>
-              <div class="pill" data-val="schwer">Schwer</div>
-            </div>
-          </div>
-        </div>
+        <!-- Schwierigkeitswahl entfernt (16.8.2026): Die Fragenbank ist nicht
+             nach Schwierigkeit organisiert - die Wahl hatte beim Spielen aus
+             der Bank keinerlei Wirkung. Die Klassenstufe traegt die
+             Schwierigkeit. Intern steht difficulty fest auf 'gemischt'. -->
 
         <div style="display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:12px;">
           <button class="all-random-btn" id="fragemix-btn-solo" onclick="toggleFrageMix('solo')">Fragenmix</button>
@@ -1579,7 +1563,7 @@ Deutschland</p>
 
     <!-- SCHULFRAGEN ONLINE -->
     <div id="qd-schul-online" style="display:none;">
-      <div style="font-size:.85rem;color:var(--muted);margin-bottom:14px;">Fordere einen Freund online heraus – Klasse, Fach und Schwierigkeit werden zufällig gewählt. Die Rundenzahl wählst du beim Herausfordern.</div>
+      <div style="font-size:.85rem;color:var(--muted);margin-bottom:14px;">Fordere einen Freund online heraus – Klasse und Fach werden zufällig gewählt. Die Rundenzahl wählst du beim Herausfordern.</div>
       <div id="qd-friends-list"><div class="loading-state"><div class="spinner"></div>Lade Freunde…</div></div>
     </div>
 
@@ -1666,7 +1650,7 @@ Deutschland</p>
         <div class="duel-type-card" onclick="showDuelType('schul')">
           <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <div class="dtc-title">Schulfragen-Duell</div>
-          <div class="dtc-desc">Klasse, Fach &amp; Schwierigkeit wählen</div>
+          <div class="dtc-desc">Klasse, Fach &amp; Thema wählen</div>
         </div>
         <div class="duel-type-card" onclick="showDuelType('catalog')">
           <div class="dtc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
@@ -1741,21 +1725,6 @@ Deutschland</p>
           </div>
         </div>
 
-        <div class="accordion-section" id="acc-duel-diff">
-          <div class="accordion-header" onclick="toggleAccordion('acc-duel-diff')">
-            <span class="accordion-label">Schwierigkeit</span>
-            <span class="accordion-value" id="acc-duel-diff-val">Mittel</span>
-            <span class="accordion-arrow">›</span>
-          </div>
-          <div class="accordion-body">
-            <div class="pill-row" id="duel-diff-pills">
-              <div class="pill" data-val="leicht">Leicht</div>
-              <div class="pill active" data-val="mittel">Mittel</div>
-              <div class="pill" data-val="schwer">Schwer</div>
-            </div>
-          </div>
-        </div>
-
         <div style="display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:12px;">
           <button class="all-random-btn" id="fragemix-btn-duel-local" onclick="toggleFrageMix('duel')">Fragenmix</button>
           <button class="all-random-btn" onclick="randomizeAll('duel')">Zufall</button>
@@ -1805,21 +1774,6 @@ Deutschland</p>
                 <div class="pill" data-val="Allgemeinwissen">🧠 Allgemeinwissen</div>
               </div>
               <div id="online-subcategory-wrap" style="display:none;"></div>
-            </div>
-          </div>
-
-          <div class="accordion-section" id="acc-online-diff">
-            <div class="accordion-header" onclick="toggleAccordion('acc-online-diff')">
-              <span class="accordion-label">Schwierigkeit</span>
-              <span class="accordion-value" id="acc-online-diff-val">Mittel</span>
-              <span class="accordion-arrow">›</span>
-            </div>
-            <div class="accordion-body">
-              <div class="pill-row" id="online-diff-pills">
-                <div class="pill" data-val="leicht">Leicht</div>
-                <div class="pill active" data-val="mittel">Mittel</div>
-                <div class="pill" data-val="schwer">Schwer</div>
-              </div>
             </div>
           </div>
 
@@ -2305,14 +2259,6 @@ Deutschland</p>
         <div class="pill pill-action mix" onclick="setMixedSubject('rp-subject-pills','dSubject','rp')">∼ Mix</div>
       </div>
       <div id="rp-subcategory-wrap"></div>
-      <div class="label">Schwierigkeit</div>
-      <div class="pill-row" id="rp-diff-pills">
-        <div class="pill" data-val="leicht">Leicht</div>
-        <div class="pill active" data-val="mittel">Mittel</div>
-        <div class="pill" data-val="schwer">Schwer</div>
-        <div class="pill pill-action dice" onclick="randomizePills('rp-diff-pills','dDifficulty')">🎲</div>
-        <div class="pill pill-action mix" onclick="setMixedDiff('rp-diff-pills','dDifficulty')">∼ Mix</div>
-      </div>
     </div>
     <div style="margin-top:16px;">
       <button class="btn btn-primary" id="rp-confirm-btn" onclick="confirmNextRound()">Runde <span id="rp-num">2</span> starten ⚔️</button>
@@ -2430,9 +2376,9 @@ let pwaPrompt = null;
 let G = {
   mode: 'solo',
   // solo settings
-  grade: null, subject: null, subcategory: null, difficulty: 'mittel', source: 'ai', catalogId: null,
+  grade: null, subject: null, subcategory: null, difficulty: 'gemischt', source: 'ai', catalogId: null,
   // duel settings
-  dGrade: null, dSubject: null, dSubcategory: null, dDifficulty: 'mittel', dSource: 'ai', dCatalogId: null,
+  dGrade: null, dSubject: null, dSubcategory: null, dDifficulty: 'gemischt', dSource: 'ai', dCatalogId: null,
   p1Name: 'Spieler 1', p2Name: 'Spieler 2',
   // multi-round
   totalRounds: 1, currentRound: 1, roundScores: [], usedInDuel: new Set(),
@@ -2905,12 +2851,11 @@ async function sendQuickChallenge(targetUid, targetUsername, roundsArg) {
   const totalRounds = parseInt(roundsArg, 10) || 1;
   const grades   = ['5','6','7','8','9','10','11','12','gemischt'];
   const subjects = Object.keys(SUBCATEGORIES);
-  const diffs    = ['leicht','mittel','schwer','gemischt'];
   const grade   = grades[Math.floor(Math.random() * grades.length)];
   const subject = subjects[Math.floor(Math.random() * subjects.length)];
   const subs    = SUBCATEGORIES[subject] || [];
   const subcat  = subs.length ? subs[Math.floor(Math.random() * subs.length)] : '';
-  const diff    = diffs[Math.floor(Math.random() * diffs.length)];
+  const diff    = 'gemischt';
 
   const myName = myDisplayName();
   const code   = generateRoomCode();
@@ -2950,12 +2895,11 @@ function startQuickDuel() {
   // Randomize all settings
   const grades    = ['5','6','7','8','9','10','11','12','gemischt'];
   const subjects  = Object.keys(SUBCATEGORIES);
-  const diffs     = ['leicht','mittel','schwer','gemischt'];
   const grade   = grades[Math.floor(Math.random() * grades.length)];
   const subject = subjects[Math.floor(Math.random() * subjects.length)];
   const subs    = SUBCATEGORIES[subject] || [];
   const subcat  = subs.length ? subs[Math.floor(Math.random() * subs.length)] : null;
-  const diff    = diffs[Math.floor(Math.random() * diffs.length)];
+  const diff    = 'gemischt';
 
   G.mode = 'duel';
   G.p1Name = p1; G.p2Name = p2;
@@ -3051,9 +2995,7 @@ function renderSubcategoryPills(wrapId, subjectVal, key, checkFn) {
 }
 
 setupPills('grade-pills',        'grade',       checkSoloReady);
-setupPills('diff-pills',         'difficulty',  checkSoloReady);
 setupPills('duel-grade-pills',   'dGrade',      checkDuelReady);
-setupPills('duel-diff-pills',    'dDifficulty', checkDuelReady);
 
 // Subject pills wired manually to also render subcategories
 document.querySelectorAll('#subject-pills .pill').forEach(p => {
@@ -3389,14 +3331,11 @@ function refreshAllAccordionVals() {
   [
     ['acc-solo-grade',    'grade-pills'],
     ['acc-solo-subject',  'subject-pills'],
-    ['acc-solo-diff',     'diff-pills'],
     ['acc-solo-source',   'source-pills'],
     ['acc-duel-grade',    'duel-grade-pills'],
     ['acc-duel-subject',  'duel-subject-pills'],
-    ['acc-duel-diff',     'duel-diff-pills'],
     ['acc-online-grade',  'online-grade-pills'],
     ['acc-online-subject','online-subject-pills'],
-    ['acc-online-diff',   'online-diff-pills'],
   ].forEach(([a, p]) => refreshAccordionVal(a, p));
 }
 
@@ -4239,11 +4178,10 @@ function startNextRound() {
   document.getElementById('rp-num').textContent   = nextRound;
 
   // Reset picker state
-  G.dGrade = null; G.dSubject = null; G.dSubcategory = null; G.dDifficulty = 'mittel'; G.dSource = 'ai'; G.dCatalogId = null;
+  G.dGrade = null; G.dSubject = null; G.dSubcategory = null; G.dDifficulty = 'gemischt'; G.dSource = 'ai'; G.dCatalogId = null;
   ['rp-grade-pills','rp-subject-pills'].forEach(id =>
     document.querySelectorAll('#' + id + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active')));
   document.querySelectorAll('#rp-grade-pills .pill[data-val="gemischt"], #rp-subject-pills .pill[data-val="gemischt"]').forEach(el => el.remove());
-  document.querySelectorAll('#rp-diff-pills .pill').forEach(p => p.classList.toggle('active', p.dataset.val === 'mittel'));
   document.getElementById('rp-subcategory-wrap').innerHTML = '';
   document.getElementById('rp-ai-wrap').style.display = '';
   document.getElementById('rp-catalog-wrap').style.display = 'none';
@@ -4441,7 +4379,7 @@ function _wrongQ(isCat, diff, subj, grade, topic) {
   return Object.values(getHistory()).filter(q => {
     if (!q.timesWrong) return false;
     if (_isCatQ(q) !== isCat) return false;
-    if (diff  !== undefined && diff  !== '' && (q.difficulty || '') !== diff)  return false;
+    if (diff  !== undefined && diff  !== '' && diff !== null && (q.difficulty || '') !== diff)  return false;
     if (subj  !== undefined && q.subject !== subj)  return false;
     if (grade !== undefined) {
       const qg = (q.grade && q.grade !== '–') ? String(q.grade) : '';
@@ -4559,45 +4497,24 @@ function renderPracticeTab() {
 }
 
 // ══ SCHULFRAGEN ══════════════════════════════════════════════
-// Level 1: Schwierigkeit
+// Die Schwierigkeits-Ebene entfaellt hier (16.8.2026): Die gewaehlte
+// Schwierigkeit hatte beim Spielen aus der Bank nie eine Wirkung, das
+// Etikett in der Historie war daher bedeutungslos. _pSelDiff = null heisst
+// in _wrongQ und den Filtern "alle Schwierigkeiten". Die Kataloge behalten
+// ihre Ebene - dort ist die Schwierigkeit real (Leicht/Mittel/Schwer-Kataloge).
+// Level 1: Fach
 function openSchulPractice() {
-  _pv = 'schulDiff'; _pSelDiff = '';
+  _pv = 'schulSubj'; _pSelDiff = null;
   const cont = _pCont();
-  const diffs = DIFF_ORDER.filter(d => {
-    return Object.values(getHistory()).some(q => !_isCatQ(q) && (q.difficulty||'') === d);
-  });
-  if (!diffs.length) { cont.innerHTML = '<div class="empty-state"><div class="es-icon">📭</div>Noch keine Schulfragen gespielt.</div>'; return; }
-
-  let html = _pBack('← Zurück zum vorherigen Punkt','renderPracticeTab()');
-  html += '<div class="label" style="margin-bottom:10px;">Schwierigkeit wählen</div><div class="topic-grid">';
-  diffs.forEach((d,i) => {
-    const wc = _wrongQ(false,d).length;
-    html += `<div class="topic-card" onclick="openSchulSubjects(${i})">
-      <span class="tc-icon">${DIFF_LABELS[d].split(' ')[0]}</span>
-      <span class="tc-label">${(DIFF_LABELS[d]||d).replace(/^.+ /,'')}</span>
-      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${wc>0?`<span style="color:var(--red);">${wc} falsch</span>`:'Keine Fehler'}</div>
-    </div>`;
-  });
-  html += '</div>';
-  cont.innerHTML = html;
-  // Store diffs list so index works
-  _pSubjects = diffs; // reuse array for diffs here
-}
-
-// Level 2: Fach
-function openSchulSubjects(diffIdx) {
-  const diff = _pSubjects[diffIdx]; _pSelDiff = diff;
-  const cont = _pCont();
-  const qs = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== diff);
+  const qs = Object.values(getHistory()).filter(q => !_isCatQ(q));
+  if (!qs.length) { cont.innerHTML = '<div class="empty-state"><div class="es-icon">📭</div>Noch keine Schulfragen gespielt.</div>'; return; }
   const subjSet = {};
   qs.forEach(q => { const s = q.subject||'Sonstiges'; if(!subjSet[s]) subjSet[s]=[]; subjSet[s].push(q); });
-  const subjs = Object.keys(subjSet).sort((a,b)=>a.localeCompare(b,'de'));
-  _pSubjects = subjs;
+  _pSubjects = Object.keys(subjSet).sort((a,b)=>a.localeCompare(b,'de'));
 
-  let html = _pBack('← Schwierigkeit','openSchulPractice()');
-  html += `<div style="font-weight:700;margin-bottom:14px;">${DIFF_LABELS[diff]||diff}</div>`;
+  let html = _pBack('← Zurück zum vorherigen Punkt','renderPracticeTab()');
   html += '<div class="label" style="margin-bottom:10px;">Fach wählen</div><div class="topic-grid">';
-  subjs.forEach((s,i) => {
+  _pSubjects.forEach((s,i) => {
     const wc = subjSet[s].filter(q=>q.timesWrong>0).length;
     html += `<div class="topic-card" onclick="openSchulGrades(${i})">
       <span class="tc-icon">${getPracticeIcon(s)}</span>
@@ -4608,39 +4525,12 @@ function openSchulSubjects(diffIdx) {
   html += '</div>'; cont.innerHTML = html;
 }
 
-// Level 3: Klasse
-function openSchulGrades(subjIdx) {
-  const subj = _pSubjects[subjIdx]; _pSelSubj = subj;
-  const cont = _pCont();
-  const qs = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== _pSelDiff && q.subject===subj);
-  const gradeSet = {};
-  qs.forEach(q => { const g=(q.grade&&q.grade!=='–')?String(q.grade):''; if(!gradeSet[g]) gradeSet[g]=[]; gradeSet[g].push(q); });
-  const grades = Object.keys(gradeSet).sort((a,b)=>(Number(a)||999)-(Number(b)||999));
-  _pGrades = grades;
-
-  // Nur eine Klasse? Direkt zu Themen
-  if (grades.length === 1) { openSchulTopics(0); return; }
-
-  let html = _pBack('← Fach','openSchulSubjects(-1)'); // -1: re-render from stored state
-  html += `<div style="font-weight:700;margin-bottom:14px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff} · ${getPracticeIcon(subj)} ${esc(subj)}</div>`;
-  html += '<div class="label" style="margin-bottom:10px;">Klasse wählen</div><div class="topic-grid">';
-  grades.forEach((g,i) => {
-    const wc = gradeSet[g].filter(q=>q.timesWrong>0).length;
-    const lbl = g?'Klasse '+g:'Allgemein';
-    html += `<div class="topic-card" onclick="openSchulTopics(${i})">
-      <span class="tc-icon">📚</span><span class="tc-label">${esc(lbl)}</span>
-      <div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${gradeSet[g].length} Fragen${wc>0?` · <span style="color:var(--red);">${wc} falsch</span>`:''}</div>
-    </div>`;
-  });
-  html += '</div>'; cont.innerHTML = html;
-}
-
 // Level 4: Themen + Fragen
 function openSchulTopics(gradeIdx) {
   const grade = _pGrades[gradeIdx]; _pSelGrade = grade;
   const cont  = _pCont();
   const qs    = _wrongQ(false, _pSelDiff, _pSelSubj, grade);
-  const all   = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== _pSelDiff && q.subject===_pSelSubj && ((q.grade&&q.grade!=='–')?String(q.grade):'')===grade);
+  const all   = Object.values(getHistory()).filter(q => !_isCatQ(q) && q.subject===_pSelSubj && ((q.grade&&q.grade!=='–')?String(q.grade):'')===grade);
 
   const topicMap = {};
   all.forEach(q => { const t=q.topic||q.subcategory||'Allgemein'; if(!topicMap[t]) topicMap[t]=[]; topicMap[t].push(q); });
@@ -4650,7 +4540,7 @@ function openSchulTopics(gradeIdx) {
   const gradeLbl = grade?(' · Klasse '+grade):'';
 
   let html = _pBack('← Zurück zum vorherigen Punkt', backFn);
-  html += `<div style="font-weight:700;margin-bottom:10px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff} · ${getPracticeIcon(_pSelSubj)} ${esc(_pSelSubj)}${esc(gradeLbl)}</div>`;
+  html += `<div style="font-weight:700;margin-bottom:10px;">${getPracticeIcon(_pSelSubj)} ${esc(_pSelSubj)}${esc(gradeLbl)}</div>`;
   if (qs.length>0) html += `<button class="btn btn-primary" style="margin-bottom:14px;padding:11px;" onclick="_startPQ(_wrongQ(false,_pSelDiff,_pSelSubj,_pSelGrade))">🔁 Alle falschen üben (${Math.min(8,qs.length)} von ${qs.length})</button>`;
   html += _topicAccordion(topicItems);
   cont.innerHTML = html;
@@ -4736,23 +4626,9 @@ function _startPQ(questions) {
 
 // Re-navigation Helpers (für Back-Buttons mit -1 Index)
 function openSchulSubjects(i) {
-  if (i === -1) {
-    // Rebuild aus gespeichertem State
-    const cont = _pCont();
-    const qs = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== _pSelDiff);
-    const subjSet = {};
-    qs.forEach(q => { const s=q.subject||'Sonstiges'; if(!subjSet[s]) subjSet[s]=[]; subjSet[s].push(q); });
-    _pSubjects = Object.keys(subjSet).sort((a,b)=>a.localeCompare(b,'de'));
-    let html = _pBack('← Schwierigkeit','openSchulPractice()');
-    html += `<div style="font-weight:700;margin-bottom:14px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff}</div>`;
-    html += '<div class="label" style="margin-bottom:10px;">Fach wählen</div><div class="topic-grid">';
-    _pSubjects.forEach((s,i) => {
-      const qs2 = qs.filter(q=>q.subject===s);
-      const wc = qs2.filter(q=>q.timesWrong>0).length;
-      html += `<div class="topic-card" onclick="openSchulGrades(${i})"><span class="tc-icon">${getPracticeIcon(s)}</span><span class="tc-label">${esc(s)}</span><div style="font-size:.7rem;color:var(--muted);margin-top:4px;">${qs2.length} Fragen${wc>0?` · <span style="color:var(--red);">${wc} falsch</span>`:''}</div></div>`;
-    });
-    html += '</div>'; cont.innerHTML = html; return;
-  }
+  // Die Fachliste IST inzwischen die Einstiegsebene - Rueckwaertsnavigation
+  // landet dort. (Frueher lag hier die Schwierigkeitsauswahl.)
+  if (i === -1) { openSchulPractice(); return; }
   openSchulGrades(i);
 }
 
@@ -4760,13 +4636,13 @@ function openSchulGrades(i) {
   if (i === -1) {
     // Re-show grades for current _pSelSubj
     const cont  = _pCont();
-    const qs    = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== _pSelDiff && q.subject===_pSelSubj);
+    const qs    = Object.values(getHistory()).filter(q => !_isCatQ(q) && q.subject===_pSelSubj);
     const gradeSet = {};
     qs.forEach(q => { const g=(q.grade&&q.grade!=='–')?String(q.grade):''; if(!gradeSet[g]) gradeSet[g]=[]; gradeSet[g].push(q); });
     _pGrades = Object.keys(gradeSet).sort((a,b)=>(Number(a)||999)-(Number(b)||999));
     if (_pGrades.length===1) { openSchulTopics(0); return; }
     let html = _pBack('← Fach','openSchulSubjects(-1)');
-    html += `<div style="font-weight:700;margin-bottom:14px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff} · ${getPracticeIcon(_pSelSubj)} ${esc(_pSelSubj)}</div>`;
+    html += `<div style="font-weight:700;margin-bottom:14px;">${getPracticeIcon(_pSelSubj)} ${esc(_pSelSubj)}</div>`;
     html += '<div class="label" style="margin-bottom:10px;">Klasse wählen</div><div class="topic-grid">';
     _pGrades.forEach((g,i) => {
       const wc = gradeSet[g].filter(q=>q.timesWrong>0).length;
@@ -4777,13 +4653,13 @@ function openSchulGrades(i) {
   // Normal: find subject from _pSubjects[i]
   _pSelSubj = _pSubjects[i];
   const cont = _pCont();
-  const qs = Object.values(getHistory()).filter(q => !_isCatQ(q) && (q.difficulty||'')=== _pSelDiff && q.subject===_pSelSubj);
+  const qs = Object.values(getHistory()).filter(q => !_isCatQ(q) && q.subject===_pSelSubj);
   const gradeSet = {};
   qs.forEach(q => { const g=(q.grade&&q.grade!=='–')?String(q.grade):''; if(!gradeSet[g]) gradeSet[g]=[]; gradeSet[g].push(q); });
   _pGrades = Object.keys(gradeSet).sort((a,b)=>(Number(a)||999)-(Number(b)||999));
   if (_pGrades.length===1) { openSchulTopics(0); return; }
   let html = _pBack('← Fach','openSchulSubjects(-1)');
-  html += `<div style="font-weight:700;margin-bottom:14px;">${DIFF_LABELS[_pSelDiff]||_pSelDiff} · ${getPracticeIcon(_pSelSubj)} ${esc(_pSelSubj)}</div>`;
+  html += `<div style="font-weight:700;margin-bottom:14px;">${getPracticeIcon(_pSelSubj)} ${esc(_pSelSubj)}</div>`;
   html += '<div class="label" style="margin-bottom:10px;">Klasse wählen</div><div class="topic-grid">';
   _pGrades.forEach((g,i) => {
     const wc = gradeSet[g].filter(q=>q.timesWrong>0).length;
@@ -6254,26 +6130,6 @@ function setMixed(pillsId, gKey) {
   if (gKey === 'dGrade') { checkDuelReady?.(); checkOnlineReady?.(); }
 }
 
-function setMixedDiff(pillsId, key) {
-  document.querySelectorAll('#' + pillsId + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active'));
-  let gPill = document.querySelector('#' + pillsId + ' .pill[data-val="gemischt"]');
-  if (!gPill) {
-    gPill = document.createElement('div');
-    gPill.className = 'pill';
-    gPill.dataset.val = 'gemischt';
-    gPill.textContent = '∼ Gemischt';
-    const firstAction = document.querySelector('#' + pillsId + ' .pill-action');
-    document.getElementById(pillsId).insertBefore(gPill, firstAction || null);
-    gPill.addEventListener('click', () => {
-      document.querySelectorAll('#' + pillsId + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active'));
-      gPill.classList.add('active');
-      G[key] = ['gemischt'];
-    });
-  }
-  gPill.classList.add('active');
-  G[key] = ['gemischt'];
-}
-
 function setMixedSubject(pillsId, key, mode) {
   document.querySelectorAll('#' + pillsId + ' .pill:not(.pill-action)').forEach(p => p.classList.remove('active'));
   let gPill = document.querySelector('#' + pillsId + ' .pill[data-val="gemischt"]');
@@ -6342,36 +6198,28 @@ function toggleFrageMix(mode) {
   const isSolo = mode === 'solo';
   const gradeKey = isSolo ? 'grade' : 'dGrade';
   const subjKey = isSolo ? 'subject' : 'dSubject';
-  const diffKey = isSolo ? 'difficulty' : 'dDifficulty';
   const btnId = isSolo ? 'fragemix-btn-solo' : ('fragemix-btn-duel-' + (mode === 'duel' ? 'local' : 'online'));
   const btn = document.getElementById(btnId);
 
   const isMixed = Array.isArray(G[gradeKey]) && G[gradeKey].includes('gemischt')
-    && Array.isArray(G[subjKey]) && G[subjKey].includes('gemischt')
-    && Array.isArray(G[diffKey]) && G[diffKey].includes('gemischt');
+    && Array.isArray(G[subjKey]) && G[subjKey].includes('gemischt');
 
   if (isMixed) {
     G[gradeKey] = null;
     G[subjKey] = null;
-    G[diffKey] = null;
     if (btn) btn.classList.remove('active');
   } else {
     G[gradeKey] = ['gemischt'];
     G[subjKey] = ['gemischt'];
-    G[diffKey] = ['gemischt'];
     if (btn) btn.classList.add('active');
-    const pillsToUpdate = [];
     if (isSolo) {
       document.querySelectorAll('#grade-pills .pill').forEach(p => p.classList.remove('active'));
       document.querySelectorAll('#subject-pills .pill').forEach(p => p.classList.remove('active'));
-      document.querySelectorAll('#diff-pills .pill').forEach(p => p.classList.remove('active'));
     } else {
       document.querySelectorAll('#duel-grade-pills .pill').forEach(p => p.classList.remove('active'));
       document.querySelectorAll('#duel-subject-pills .pill').forEach(p => p.classList.remove('active'));
-      document.querySelectorAll('#duel-diff-pills .pill').forEach(p => p.classList.remove('active'));
       document.querySelectorAll('#online-grade-pills .pill').forEach(p => p.classList.remove('active'));
       document.querySelectorAll('#online-subject-pills .pill').forEach(p => p.classList.remove('active'));
-      document.querySelectorAll('#online-diff-pills .pill').forEach(p => p.classList.remove('active'));
     }
   }
   if (isSolo) checkSoloReady();
@@ -6382,7 +6230,6 @@ function randomizeAll(mode) {
   if (mode === 'chal') {
     randomizePills('chal-grade-pills', '_chalGrade');
     randomizePills('chal-subject-pills', '_chalSubject');
-    randomizePills('chal-diff-pills', '_chalDiff');
     setTimeout(() => {
       const scRow = document.getElementById('chal-subcat-wrap-row');
       if (scRow) randomizeSubcat('chal-subcat-wrap-row', '_chalSubcat');
@@ -6392,7 +6239,6 @@ function randomizeAll(mode) {
   if (mode === 'rp') {
     randomizePills('rp-grade-pills', 'dGrade');
     randomizePills('rp-subject-pills', 'dSubject');
-    randomizePills('rp-diff-pills', 'dDifficulty');
     setTimeout(() => {
       const scRow = document.getElementById('rp-subcategory-wrap-row');
       if (scRow) randomizeSubcat('rp-subcategory-wrap-row', 'dSubcategory');
@@ -6409,7 +6255,6 @@ function randomizeAll(mode) {
   const readyCb  = isOnline ? checkOnlineReady : (isDuel ? checkDuelReady : checkSoloReady);
   randomizePills(gPrefix + 'grade-pills', gKey);
   randomizePills(gPrefix + 'subject-pills', sKey);
-  if (isDuel || mode === 'solo') randomizePills(gPrefix + 'diff-pills', isDuel ? 'dDifficulty' : 'difficulty');
   renderSubcategoryPills(scWrap, G[sKey], scKey, readyCb);
   setTimeout(() => {
     const scRow = document.getElementById(scWrap + '-row');
@@ -6581,7 +6426,6 @@ document.querySelectorAll('#chal-subject-pills .pill:not(.pill-action)').forEach
   });
 });
 setupPills('chal-grade-pills', '_chalGrade', () => {});
-setupPills('chal-diff-pills',  '_chalDiff',  () => {});
 // Rundenanzahl = Einzelauswahl (keine Mehrfachauswahl) in ALLEN Spielmodi
 setupSingleSelect('chal-rounds-pills');
 setupSingleSelect('duel-rounds-pills');
@@ -6593,7 +6437,6 @@ setupSingleSelect('dcat-rounds-pills');
 setupSingleSelect('dcat-online-rounds-pills');
 setupSingleSelect('qdr-rounds-pills');
 setupPills('rp-grade-pills',  'dGrade',      () => {});
-setupPills('rp-diff-pills',   'dDifficulty', () => {});
 document.querySelectorAll('#rp-subject-pills .pill:not(.pill-action)').forEach(p => {
   p.addEventListener('click', () => {
     document.querySelectorAll('#rp-subject-pills .pill').forEach(x => x.classList.remove('active'));
@@ -6631,13 +6474,12 @@ function openChallengeModal(targetUid, targetUsername) {
   // Reset pills
   document.querySelectorAll('#chal-grade-pills .pill').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('#chal-subject-pills .pill').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('#chal-diff-pills .pill').forEach(p => p.classList.toggle('active', p.dataset.val === 'mittel'));
   // Remove any injected gemischt pills from previous open
-  ['chal-grade-pills','chal-subject-pills','chal-diff-pills'].forEach(id => {
+  ['chal-grade-pills','chal-subject-pills'].forEach(id => {
     document.querySelectorAll('#' + id + ' .pill[data-val="gemischt"]').forEach(el => el.remove());
   });
   document.getElementById('chal-subcat-wrap').innerHTML = '';
-  G._chalGrade = ''; G._chalSubject = ''; G._chalSubcat = ''; G._chalDiff = 'mittel'; G._chalCatalogId = null;
+  G._chalGrade = ''; G._chalSubject = ''; G._chalSubcat = ''; G._chalDiff = 'gemischt'; G._chalCatalogId = null;
   // Reset source to AI
   document.querySelectorAll('#chal-source-pills .pill').forEach(p => p.classList.toggle('active', p.dataset.val === 'ai'));
   document.getElementById('chal-catalog-picker').style.display = 'none';
@@ -6651,7 +6493,7 @@ async function sendChallenge() {
   const grade     = document.querySelector('#chal-grade-pills .pill.active')?.dataset.val;
   const subject   = document.querySelector('#chal-subject-pills .pill.active')?.dataset.val;
   const subcat    = document.querySelector('#chal-subcat-wrap .pill.active')?.dataset.val;
-  const diff      = document.querySelector('#chal-diff-pills .pill.active')?.dataset.val || 'mittel';
+  const diff      = 'gemischt';
   const catalogId = G._chalCatalogId || '';
 
   if (source === 'catalog') {
@@ -6712,8 +6554,7 @@ function startChallengeListener() {
           + '<span style="color:var(--muted);font-size:.82rem;">Schwierigkeit: ' + esc(data.difficulty) + '</span>';
       } else {
         document.getElementById('inc-challenge-info').innerHTML =
-          '<strong>' + esc(data.subject) + '</strong> · ' + esc(data.subcategory) + ' · Klasse ' + data.grade + '<br>'
-          + '<span style="color:var(--muted);font-size:.82rem;">Schwierigkeit: ' + esc(data.difficulty) + '</span>';
+          '<strong>' + esc(data.subject) + '</strong> · ' + esc(data.subcategory) + ' · Klasse ' + data.grade;
       }
       document.getElementById('modal-challenge-incoming').classList.remove('hidden');
     }
@@ -7752,7 +7593,7 @@ async function gChallengeMember(uid, name) {
     const code = generateRoomCode();
     await fbDB.ref('rooms/' + code).set({
       status: 'waiting', hostName: myName, maxPlayers: 2,
-      grade: '', subject: '', subcategory: '', difficulty: 'mittel',
+      grade: '', subject: '', subcategory: '', difficulty: 'gemischt',
       source: 'groupquiz', catalogId: gQuizRef(g.id, qid),
       totalRounds: 1, currentRound: 1, roundScores: [],
       questions: [],
@@ -7766,7 +7607,7 @@ async function gChallengeMember(uid, name) {
     const cKey = fbDB.ref('challenges/' + uid).push().key;
     await fbDB.ref('challenges/' + uid + '/' + cKey).set({
       fromUid: currentUser?.uid, fromUsername: myName, roomCode: code,
-      grade: '', subject: '', subcategory: '', difficulty: 'mittel',
+      grade: '', subject: '', subcategory: '', difficulty: 'gemischt',
       source: 'groupquiz', catalogId: gQuizRef(g.id, qid),
       totalRounds: 1, status: 'pending', sentAt: Date.now(),
     });
@@ -7775,7 +7616,7 @@ async function gChallengeMember(uid, name) {
     onlineRoomCode = code; onlineRole = 'host'; onlineMySlot = 'p1'; onlineMaxPlayers = 2;
     onlineMyAnswers = []; onlineWaitingForOpponent = false;
     G.mode = 'duel'; G.p1Name = myName;
-    G.dGrade = ''; G.dSubject = ''; G.dSubcategory = ''; G.dDifficulty = 'mittel';
+    G.dGrade = ''; G.dSubject = ''; G.dSubcategory = ''; G.dDifficulty = 'gemischt';
     G.dSource = 'groupquiz'; G.dCatalogId = gQuizRef(g.id, qid);
     G.totalRounds = 1; G.currentRound = 1; G.roundScores = [];
     showOnlineWaitScreen(); startRoomListener();
@@ -7976,7 +7817,6 @@ document.querySelectorAll('#online-maxplayers-pills .pill').forEach(p => {
 
 // ── online pill setup ──
 setupPills('online-grade-pills',   'dGrade',      checkOnlineReady);
-setupPills('online-diff-pills',    'dDifficulty', checkOnlineReady);
 
 document.querySelectorAll('#online-source-pills .pill').forEach(p => {
   p.addEventListener('click', () => {
@@ -8293,11 +8133,10 @@ function openOnlineRoundPicker(room) {
   document.getElementById('rp-title').textContent = 'Runde ' + nextRound + ': ' + myName + ' wählt die Kategorien';
   document.getElementById('rp-num').textContent   = nextRound;
 
-  G.dGrade=null; G.dSubject=null; G.dSubcategory=null; G.dDifficulty='mittel'; G.dSource='ai'; G.dCatalogId=null;
+  G.dGrade=null; G.dSubject=null; G.dSubcategory=null; G.dDifficulty='gemischt'; G.dSource='ai'; G.dCatalogId=null;
   ['rp-grade-pills','rp-subject-pills'].forEach(id =>
     document.querySelectorAll('#'+id+' .pill:not(.pill-action)').forEach(p => p.classList.remove('active')));
   document.querySelectorAll('#rp-grade-pills .pill[data-val="gemischt"],#rp-subject-pills .pill[data-val="gemischt"]').forEach(el=>el.remove());
-  document.querySelectorAll('#rp-diff-pills .pill').forEach(p=>p.classList.toggle('active',p.dataset.val==='mittel'));
   document.getElementById('rp-subcategory-wrap').innerHTML='';
   document.getElementById('rp-ai-wrap').style.display='';
   document.getElementById('rp-catalog-wrap').style.display='none';
@@ -8322,7 +8161,7 @@ async function confirmOnlineRoundPick(room) {
   }
   document.getElementById('modal-round-pick').classList.add('hidden');
   const roundSettings={grade:G.dGrade||'',subject:G.dSubject||'',subcategory:G.dSubcategory||'',
-    difficulty:G.dDifficulty||'mittel',source:G.dSource,catalogId:G.dCatalogId||''};
+    difficulty:G.dDifficulty||'gemischt',source:G.dSource,catalogId:G.dCatalogId||''};
 
   if (onlineRole==='host') {
     G.currentRound=(room.currentRound||1)+1; G.roundScores=room.roundScores||[];
@@ -8752,7 +8591,7 @@ function toggleLibSubject(head) {
 function playFromBank(idx) {
   const { subj, subcat, grade } = libData[idx];
   G.mode = 'solo'; G.source = 'ai';
-  G.subject = subj; G.subcategory = subcat; G.grade = grade; G.difficulty = 'mittel';
+  G.subject = subj; G.subcategory = subcat; G.grade = grade; G.difficulty = 'gemischt';
   G.solo = { correct:0, points:0, answers:[] };
   startQuiz();
 }
@@ -8763,7 +8602,7 @@ async function addToBank(idx) {
   if (!apiKey) { openApiKeyModal(); return; }
   showToast('KI generiert ' + GEN_COUNT + ' neue Fragen…', '');
   try {
-    const newQs = await _fetchQuestions(grade, subj, subcat, 'mittel');
+    const newQs = await _fetchQuestions(grade, subj, subcat, 'gemischt');
     await saveToQuestionBank(grade, subj, subcat, newQs);
     showToast(newQs.length + ' Fragen generiert ✓', 'success');
     refreshLibrary();
